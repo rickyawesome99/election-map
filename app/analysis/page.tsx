@@ -69,6 +69,11 @@ export default function AnalysisPage() {
               <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Popular Vote</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>National vote margins and seats by office since 2016, and how presidential approval, direction of country and Gallup&apos;s third-quarter party ID anticipated the House and presidential vote, read forward to 2026.</p></div>
               <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
             </a>
+            <a href="/analysis/state-leg-models" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
+              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Utility</div>
+              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>State Legislature Model Comparison</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Our state legislative forecast against State Navigate&apos;s and ElectIndex&apos;s: toplines, agreement, every chamber&apos;s control odds and every district&apos;s three calls.</p></div>
+              <span className="text-sm" style={{ color: "var(--app-text-very-muted)" }}>→</span>
+            </a>
             <a href="/audit/state-leg-results" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Internal</div>
               <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>State Leg Results Audit</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Coverage and provenance of the 2016&ndash;2025 statewide chamber-year figures, plus the district-sum-vs-statewide reconciliation.</p></div>

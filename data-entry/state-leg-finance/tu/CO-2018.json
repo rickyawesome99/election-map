@@ -1,910 +1,4539 @@
 {
  "state": "CO",
  "cycle": 2018,
- "fetched": "2026-10-11",
- "dataThrough": "06/30/2026",
+ "fetched": "2026-10-12",
+ "dataThrough": "12/31/2018",
  "races": [
   {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-1-25557?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-10-25565?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-11-25566?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-12-25567?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-13-25568?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-14-25569?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-15-25570?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-16-25571?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-17-24714?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-18-25573?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-19-25574?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-2-25558?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-20-25575?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-21-25576?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-22-25577?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-23-25578?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-24-25579?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-25-24720?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-26-25581?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-27-25582?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-28-25583?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-29-25471?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-3-24713?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-30-24715?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-31-25586?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-32-25587?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-33-24716?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-34-24717?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-35-25590?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-36-25591?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-37-24721?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-38-25594?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-39-25595?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-4-25559?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-40-25596?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-41-25597?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-42-25598?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-43-24029?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-44-25600?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-45-25601?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-46-25602?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-47-25603?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-48-25604?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-49-25605?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-5-25560?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-50-25606?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-51-25607?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-52-24718?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-53-25609?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-54-25610?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-55-25611?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-56-25612?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-57-25613?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-58-25614?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-59-24719?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-6-25561?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-60-25616?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-61-25617?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-62-25618?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-63-25619?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-64-25620?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-65-25621?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-7-25562?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-8-25563?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-house-of-representatives-district-9-25564?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-1-11086?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "Colorado House of Representatives District 1",
+   "url": "/co/race/colorado-house-of-representatives-district-1-25557",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1379.0,
+   "totalExpenditures": 1808.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Alysia Padilla",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1379.0,
+       "expenditures": 0.0,
+       "status": "$1,807.57",
+       "url": "/co/candidate/alysia-padilla?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Alysia Padilla",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1379.0,
+       "expenditures": 0.0,
+       "status": "$1,807.57",
+       "url": "/co/candidate/alysia-padilla?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "Colorado House of Representatives District 10",
+   "url": "/co/race/colorado-house-of-representatives-district-10-25565",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 77725.0,
+   "totalExpenditures": 71968.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Edie Hooton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 76401.84,
+       "expenditures": 0.0,
+       "status": "$70,489.74",
+       "url": "/co/candidate/edie-hooton?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Murl Hendrickson IV",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1323.0,
+       "expenditures": 0.0,
+       "status": "$1,478.26",
+       "url": "/co/candidate/murl-hendrickson-iv?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Edie Hooton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 76401.84,
+       "expenditures": 0.0,
+       "status": "$70,489.74",
+       "url": "/co/candidate/edie-hooton?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Murl Hendrickson IV",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1323.0,
+       "expenditures": 0.0,
+       "status": "$1,478.26",
+       "url": "/co/candidate/murl-hendrickson-iv?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "Colorado House of Representatives District 11",
+   "url": "/co/race/colorado-house-of-representatives-district-11-25566",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 785.0,
+   "totalExpenditures": 777.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Brian O Donahue",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 784.99,
+       "expenditures": 0.0,
+       "status": "$776.68",
+       "url": "/co/candidate/brian-o-donahue?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Brian O Donahue",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 784.99,
+       "expenditures": 0.0,
+       "status": "$776.68",
+       "url": "/co/candidate/brian-o-donahue?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "Colorado House of Representatives District 12",
+   "url": "/co/race/colorado-house-of-representatives-district-12-25567",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 31954.0,
+   "totalExpenditures": 29784.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Sonya Lewis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27420.8,
+       "expenditures": 8000.0,
+       "status": "$25,703.51",
+       "url": "/co/candidate/sonya-lewis?cycle=2018-election-cycle"
+      },
+      {
+       "name": "David Ross",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 661.61,
+       "expenditures": 0.0,
+       "status": "$209.00",
+       "url": "/co/candidate/david-ross?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Theresa Stets",
+       "party": "Unaffiliated",
+       "incumbent": false,
+       "contributions": 3871.27,
+       "expenditures": 0.0,
+       "status": "$3,871.27",
+       "url": "/co/candidate/theresa-stets?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Sonya Lewis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27420.8,
+       "expenditures": 8000.0,
+       "status": "$25,703.51",
+       "url": "/co/candidate/sonya-lewis?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "David Ross",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 661.61,
+       "expenditures": 0.0,
+       "status": "$209.00",
+       "url": "/co/candidate/david-ross?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "Colorado House of Representatives District 13",
+   "url": "/co/race/colorado-house-of-representatives-district-13-25568",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 30020.0,
+   "totalExpenditures": 32524.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Kevin Sipple",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30019.77,
+       "expenditures": 2504.46,
+       "status": "$32,524.23",
+       "url": "/co/candidate/kevin-sipple?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Kevin Sipple",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30019.77,
+       "expenditures": 2504.46,
+       "status": "$32,524.23",
+       "url": "/co/candidate/kevin-sipple?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "Colorado House of Representatives District 14",
+   "url": "/co/race/colorado-house-of-representatives-district-14-25569",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Paul Haddick",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/paul-haddick?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Paul Haddick",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/paul-haddick?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Colorado House of Representatives District 15",
+   "url": "/co/race/colorado-house-of-representatives-district-15-25570",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 10650.0,
+   "totalExpenditures": 18627.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Brenda Krause",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10650.27,
+       "expenditures": 9198.0,
+       "status": "$18,626.59",
+       "url": "/co/candidate/brenda-krause?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Brenda Krause",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10650.27,
+       "expenditures": 9198.0,
+       "status": "$18,626.59",
+       "url": "/co/candidate/brenda-krause?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Colorado House of Representatives District 16",
+   "url": "/co/race/colorado-house-of-representatives-district-16-25571",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 64611.0,
+   "totalExpenditures": 49535.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Larry G Liston",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 62726.0,
+       "expenditures": 0.0,
+       "status": "$48,163.42",
+       "url": "/co/candidate/larry-g-liston?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Andrew Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1885.43,
+       "expenditures": 0.0,
+       "status": "$1,371.40",
+       "url": "/co/candidate/andrew-smith?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Andrew Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1885.43,
+       "expenditures": 0.0,
+       "status": "$1,371.40",
+       "url": "/co/candidate/andrew-smith?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Larry G Liston",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 62726.0,
+       "expenditures": 0.0,
+       "status": "$48,163.42",
+       "url": "/co/candidate/larry-g-liston?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Colorado House of Representatives District 17",
+   "url": "/co/race/colorado-house-of-representatives-district-17-24714",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 172648.0,
+   "totalExpenditures": 181280.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Thomas E Exum Sr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 140447.17,
+       "expenditures": 0.0,
+       "status": "$137,577.33",
+       "url": "/co/candidate/thomas-e-exum-sr?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Catherine Roupe",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 32200.75,
+       "expenditures": 0.0,
+       "status": "$43,703.12",
+       "url": "/co/candidate/catherine-roupe?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Thomas E Exum Sr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 140447.17,
+       "expenditures": 0.0,
+       "status": "$137,577.33",
+       "url": "/co/candidate/thomas-e-exum-sr?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Catherine Roupe",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 32200.75,
+       "expenditures": 0.0,
+       "status": "$43,703.12",
+       "url": "/co/candidate/catherine-roupe?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Colorado House of Representatives District 18",
+   "url": "/co/race/colorado-house-of-representatives-district-18-25573",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 218638.0,
+   "totalExpenditures": 225558.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Marc Snyder",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 133235.1,
+       "expenditures": 13500.0,
+       "status": "$137,853.10",
+       "url": "/co/candidate/marc-snyder?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mary Elizabeth Fabian",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22928.67,
+       "expenditures": 1213.01,
+       "status": "$24,141.68",
+       "url": "/co/candidate/mary-elizabeth-fabian?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Maile Foster",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 39864.02,
+       "expenditures": 0.0,
+       "status": "$38,848.87",
+       "url": "/co/candidate/maile-foster?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Marc Snyder",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 133235.1,
+       "expenditures": 13500.0,
+       "status": "$137,853.10",
+       "url": "/co/candidate/marc-snyder?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Terry P Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22610.0,
+       "expenditures": 2143.92,
+       "status": "$24,713.92",
+       "url": "/co/candidate/terry-p-martinez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Colorado House of Representatives District 19",
+   "url": "/co/race/colorado-house-of-representatives-district-19-25574",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 29779.0,
+   "totalExpenditures": 22990.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tim Geitner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26774.31,
+       "expenditures": 1550.0,
+       "status": "$20,652.83",
+       "url": "/co/candidate/tim-geitner?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Asia Zanders",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3004.76,
+       "expenditures": 300.0,
+       "status": "$2,337.57",
+       "url": "/co/candidate/asia-zanders?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Asia Zanders",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3004.76,
+       "expenditures": 300.0,
+       "status": "$2,337.57",
+       "url": "/co/candidate/asia-zanders?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Tim Geitner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26774.31,
+       "expenditures": 1550.0,
+       "status": "$20,652.83",
+       "url": "/co/candidate/tim-geitner?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Colorado House of Representatives District 2",
+   "url": "/co/race/colorado-house-of-representatives-district-2-25558",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Colorado House of Representatives District 20",
+   "url": "/co/race/colorado-house-of-representatives-district-20-25575",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 41881.0,
+   "totalExpenditures": 37283.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Terri Carver",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34175.0,
+       "expenditures": 0.0,
+       "status": "$29,703.63",
+       "url": "/co/candidate/terri-carver?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Kent Jarnig",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7706.35,
+       "expenditures": 1409.55,
+       "status": "$7,579.12",
+       "url": "/co/candidate/kent-jarnig?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Kent Jarnig",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7706.35,
+       "expenditures": 1409.55,
+       "status": "$7,579.12",
+       "url": "/co/candidate/kent-jarnig?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Terri Carver",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34175.0,
+       "expenditures": 0.0,
+       "status": "$29,703.63",
+       "url": "/co/candidate/terri-carver?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Colorado House of Representatives District 21",
+   "url": "/co/race/colorado-house-of-representatives-district-21-25576",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 55789.0,
+   "totalExpenditures": 62731.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Lois Landgraf",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 40621.31,
+       "expenditures": 0.0,
+       "status": "$49,404.28",
+       "url": "/co/candidate/lois-landgraf?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Liz Rosenbaum",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15168.07,
+       "expenditures": 0.0,
+       "status": "$13,326.77",
+       "url": "/co/candidate/liz-rosenbaum?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Liz Rosenbaum",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15168.07,
+       "expenditures": 0.0,
+       "status": "$13,326.77",
+       "url": "/co/candidate/liz-rosenbaum?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Lois Landgraf",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 40621.31,
+       "expenditures": 0.0,
+       "status": "$49,404.28",
+       "url": "/co/candidate/lois-landgraf?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Colorado House of Representatives District 22",
+   "url": "/co/race/colorado-house-of-representatives-district-22-25577",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 74064.0,
+   "totalExpenditures": 61900.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Colin Larson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57893.67,
+       "expenditures": 2000.0,
+       "status": "$46,930.04",
+       "url": "/co/candidate/colin-larson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Todd Kastetter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16170.65,
+       "expenditures": 0.0,
+       "status": "$14,970.14",
+       "url": "/co/candidate/todd-kastetter?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Todd Kastetter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16170.65,
+       "expenditures": 0.0,
+       "status": "$14,970.14",
+       "url": "/co/candidate/todd-kastetter?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Colin Larson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57893.67,
+       "expenditures": 2000.0,
+       "status": "$46,930.04",
+       "url": "/co/candidate/colin-larson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Colorado House of Representatives District 23",
+   "url": "/co/race/colorado-house-of-representatives-district-23-25578",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 110348.0,
+   "totalExpenditures": 112585.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Chris Kennedy",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 103744.27,
+       "expenditures": 0.0,
+       "status": "$105,877.71",
+       "url": "/co/candidate/chris-kennedy?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Joan Poston",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6603.92,
+       "expenditures": 0.0,
+       "status": "$6,707.47",
+       "url": "/co/candidate/joan-poston?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Chris Kennedy",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 103744.27,
+       "expenditures": 0.0,
+       "status": "$105,877.71",
+       "url": "/co/candidate/chris-kennedy?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Joan Poston",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6603.92,
+       "expenditures": 0.0,
+       "status": "$6,707.47",
+       "url": "/co/candidate/joan-poston?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Colorado House of Representatives District 24",
+   "url": "/co/race/colorado-house-of-representatives-district-24-25579",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 157715.0,
+   "totalExpenditures": 169832.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Monica Duran",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 120335.44,
+       "expenditures": 19400.0,
+       "status": "$133,415.97",
+       "url": "/co/candidate/monica-duran?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Art Erwin Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3274.91,
+       "expenditures": 200.0,
+       "status": "$3,542.85",
+       "url": "/co/candidate/art-erwin-jr?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Monica Duran",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 120335.44,
+       "expenditures": 19400.0,
+       "status": "$133,415.97",
+       "url": "/co/candidate/monica-duran?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Kristian Teegardin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34105.0,
+       "expenditures": 0.0,
+       "status": "$32,873.63",
+       "url": "/co/candidate/kristian-teegardin?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Art Erwin Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3274.91,
+       "expenditures": 200.0,
+       "status": "$3,542.85",
+       "url": "/co/candidate/art-erwin-jr?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Colorado House of Representatives District 25",
+   "url": "/co/race/colorado-house-of-representatives-district-25-24720",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 177773.0,
+   "totalExpenditures": 159367.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Lisa Ann Cutter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 114678.16,
+       "expenditures": 0.0,
+       "status": "$103,159.42",
+       "url": "/co/candidate/lisa-ann-cutter?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tim Leonard",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22178.39,
+       "expenditures": 0.0,
+       "status": "$15,291.44",
+       "url": "/co/candidate/tim-leonard?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Steven Szutenbach",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40916.06,
+       "expenditures": 0.0,
+       "status": "$40,916.06",
+       "url": "/co/candidate/steven-szutenbach?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Lisa Ann Cutter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 114678.16,
+       "expenditures": 0.0,
+       "status": "$103,159.42",
+       "url": "/co/candidate/lisa-ann-cutter?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Tim Leonard",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22178.39,
+       "expenditures": 0.0,
+       "status": "$15,291.44",
+       "url": "/co/candidate/tim-leonard?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Colorado House of Representatives District 26",
+   "url": "/co/race/colorado-house-of-representatives-district-26-25581",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 150668.0,
+   "totalExpenditures": 125825.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Dylan Roberts",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 102159.04,
+       "expenditures": 0.0,
+       "status": "$78,684.44",
+       "url": "/co/candidate/dylan-roberts?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Nicki Mills",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48409.29,
+       "expenditures": 0.0,
+       "status": "$46,577.11",
+       "url": "/co/candidate/nicki-mills?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Luke Bray",
+       "party": "Unaffiliated",
+       "incumbent": false,
+       "contributions": 100.0,
+       "expenditures": 0.0,
+       "status": "$563.48",
+       "url": "/co/candidate/luke-bray?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Dylan Roberts",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 102159.04,
+       "expenditures": 0.0,
+       "status": "$78,684.44",
+       "url": "/co/candidate/dylan-roberts?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Colorado House of Representatives District 27",
+   "url": "/co/race/colorado-house-of-representatives-district-27-25582",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 123491.0,
+   "totalExpenditures": 106793.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Brianna Caterina Titone",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 92647.62,
+       "expenditures": 0.0,
+       "status": "$76,803.61",
+       "url": "/co/candidate/brianna-caterina-titone?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Vicki C Pyne",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30843.34,
+       "expenditures": 0.0,
+       "status": "$29,989.65",
+       "url": "/co/candidate/vicki-c-pyne?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Brianna Caterina Titone",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 92647.62,
+       "expenditures": 0.0,
+       "status": "$76,803.61",
+       "url": "/co/candidate/brianna-caterina-titone?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Colorado House of Representatives District 28",
+   "url": "/co/race/colorado-house-of-representatives-district-28-25583",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 253349.0,
+   "totalExpenditures": 258962.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Kerry Tipper",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 180516.71,
+       "expenditures": 10000.0,
+       "status": "$187,459.09",
+       "url": "/co/candidate/kerry-tipper?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Kristina Joy Alley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37451.53,
+       "expenditures": 0.0,
+       "status": "$35,492.80",
+       "url": "/co/candidate/kristina-joy-alley?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ross Klopf",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$1,154.25",
+       "url": "/co/candidate/ross-klopf?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Paul Miller",
+       "party": "Unaffiliated",
+       "incumbent": false,
+       "contributions": 3268.56,
+       "expenditures": 0.0,
+       "status": "$3,251.46",
+       "url": "/co/candidate/paul-miller?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Kerry Tipper",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 180516.71,
+       "expenditures": 10000.0,
+       "status": "$187,459.09",
+       "url": "/co/candidate/kerry-tipper?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Nfn Shakti",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32112.67,
+       "expenditures": 346.67,
+       "status": "$31,604.00",
+       "url": "/co/candidate/nfn-shakti?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Kristina Joy Alley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37451.53,
+       "expenditures": 0.0,
+       "status": "$35,492.80",
+       "url": "/co/candidate/kristina-joy-alley?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Colorado House of Representatives District 29",
+   "url": "/co/race/colorado-house-of-representatives-district-29-25471",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 130462.0,
+   "totalExpenditures": 108734.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tracy Kraft-Tharp",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 130462.4,
+       "expenditures": 0.0,
+       "status": "$108,733.62",
+       "url": "/co/candidate/tracy-kraft-tharp?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Tracy Kraft-Tharp",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 130462.4,
+       "expenditures": 0.0,
+       "status": "$108,733.62",
+       "url": "/co/candidate/tracy-kraft-tharp?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Colorado House of Representatives District 3",
+   "url": "/co/race/colorado-house-of-representatives-district-3-24713",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 236829.0,
+   "totalExpenditures": 230142.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jeff Bridges",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 176301.36,
+       "expenditures": 0.0,
+       "status": "$175,694.09",
+       "url": "/co/candidate/jeff-bridges?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Toren G Mushovic",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 60527.95,
+       "expenditures": 0.0,
+       "status": "$54,447.99",
+       "url": "/co/candidate/toren-g-mushovic?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Jeff Bridges",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 176301.36,
+       "expenditures": 0.0,
+       "status": "$175,694.09",
+       "url": "/co/candidate/jeff-bridges?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Toren G Mushovic",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 60527.95,
+       "expenditures": 0.0,
+       "status": "$54,447.99",
+       "url": "/co/candidate/toren-g-mushovic?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Colorado House of Representatives District 30",
+   "url": "/co/race/colorado-house-of-representatives-district-30-24715",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 123827.0,
+   "totalExpenditures": 123799.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Dafna Michaelson Jenet",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113693.11,
+       "expenditures": 0.0,
+       "status": "$113,664.84",
+       "url": "/co/candidate/dafna-michaelson-jenet?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Susan Kochevar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10134.01,
+       "expenditures": 0.0,
+       "status": "$10,134.01",
+       "url": "/co/candidate/susan-kochevar?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Dafna Michaelson Jenet",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113693.11,
+       "expenditures": 0.0,
+       "status": "$113,664.84",
+       "url": "/co/candidate/dafna-michaelson-jenet?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Susan Kochevar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10134.01,
+       "expenditures": 0.0,
+       "status": "$10,134.01",
+       "url": "/co/candidate/susan-kochevar?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Colorado House of Representatives District 31",
+   "url": "/co/race/colorado-house-of-representatives-district-31-25586",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 133827.0,
+   "totalExpenditures": 130370.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Yadira Caraveo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 124448.78,
+       "expenditures": 1134.71,
+       "status": "$122,234.30",
+       "url": "/co/candidate/yadira-caraveo?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Enrico Figueroa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9377.89,
+       "expenditures": 0.0,
+       "status": "$8,136.15",
+       "url": "/co/candidate/enrico-figueroa?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Yadira Caraveo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 124448.78,
+       "expenditures": 1134.71,
+       "status": "$122,234.30",
+       "url": "/co/candidate/yadira-caraveo?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Enrico Figueroa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9377.89,
+       "expenditures": 0.0,
+       "status": "$8,136.15",
+       "url": "/co/candidate/enrico-figueroa?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "Colorado House of Representatives District 32",
+   "url": "/co/race/colorado-house-of-representatives-district-32-25587",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 11000.0,
+   "totalExpenditures": 8598.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Adrienne Benavidez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11000.0,
+       "expenditures": 0.0,
+       "status": "$8,598.15",
+       "url": "/co/candidate/adrienne-benavidez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Adrienne Benavidez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11000.0,
+       "expenditures": 0.0,
+       "status": "$8,598.15",
+       "url": "/co/candidate/adrienne-benavidez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "Colorado House of Representatives District 33",
+   "url": "/co/race/colorado-house-of-representatives-district-33-24716",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 171571.0,
+   "totalExpenditures": 170923.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Matt Gray",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 171324.89,
+       "expenditures": 0.0,
+       "status": "$170,755.27",
+       "url": "/co/candidate/matt-gray?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Kim Tavendale",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 246.18,
+       "expenditures": 0.0,
+       "status": "$167.52",
+       "url": "/co/candidate/kim-tavendale?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Matt Gray",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 171324.89,
+       "expenditures": 0.0,
+       "status": "$170,755.27",
+       "url": "/co/candidate/matt-gray?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "Colorado House of Representatives District 34",
+   "url": "/co/race/colorado-house-of-representatives-district-34-24717",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 164997.0,
+   "totalExpenditures": 157914.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Kyle Mullica",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 128830.47,
+       "expenditures": 0.0,
+       "status": "$126,554.60",
+       "url": "/co/candidate/kyle-mullica?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alexander 'Skinny' Winkler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 14293.7,
+       "expenditures": 611.23,
+       "status": "$9,123.00",
+       "url": "/co/candidate/alexander-skinny-winkler?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Kyle Mullica",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 128830.47,
+       "expenditures": 0.0,
+       "status": "$126,554.60",
+       "url": "/co/candidate/kyle-mullica?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jacque Phillips",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21872.65,
+       "expenditures": 0.0,
+       "status": "$22,236.80",
+       "url": "/co/candidate/jacque-phillips?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Alexander 'Skinny' Winkler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 14293.7,
+       "expenditures": 611.23,
+       "status": "$9,123.00",
+       "url": "/co/candidate/alexander-skinny-winkler?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "Colorado House of Representatives District 35",
+   "url": "/co/race/colorado-house-of-representatives-district-35-25590",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 115659.0,
+   "totalExpenditures": 112554.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Shannon Bird",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 110878.34,
+       "expenditures": 0.0,
+       "status": "$107,685.51",
+       "url": "/co/candidate/shannon-bird?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bruce Baker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4780.63,
+       "expenditures": 0.0,
+       "status": "$4,868.62",
+       "url": "/co/candidate/bruce-baker?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Shannon Bird",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 110878.34,
+       "expenditures": 0.0,
+       "status": "$107,685.51",
+       "url": "/co/candidate/shannon-bird?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Bruce Baker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4780.63,
+       "expenditures": 0.0,
+       "status": "$4,868.62",
+       "url": "/co/candidate/bruce-baker?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "Colorado House of Representatives District 36",
+   "url": "/co/race/colorado-house-of-representatives-district-36-25591",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 91123.0,
+   "totalExpenditures": 181443.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Mike Weissman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 90735.0,
+       "expenditures": 0.0,
+       "status": "$80,369.13",
+       "url": "/co/candidate/mike-weissman?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Richard J Bowman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 388.0,
+       "expenditures": 100000.0,
+       "status": "$101,074.11",
+       "url": "/co/candidate/richard-j-bowman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Mike Weissman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 90735.0,
+       "expenditures": 0.0,
+       "status": "$80,369.13",
+       "url": "/co/candidate/mike-weissman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Richard J Bowman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 388.0,
+       "expenditures": 100000.0,
+       "status": "$101,074.11",
+       "url": "/co/candidate/richard-j-bowman?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "Colorado House of Representatives District 37",
+   "url": "/co/race/colorado-house-of-representatives-district-37-24721",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 240563.0,
+   "totalExpenditures": 220198.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tom Sullivan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 153660.14,
+       "expenditures": 0.0,
+       "status": "$148,495.01",
+       "url": "/co/candidate/tom-sullivan?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Cole Wist",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 86902.37,
+       "expenditures": 0.0,
+       "status": "$71,703.08",
+       "url": "/co/candidate/cole-wist?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Tom Sullivan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 153660.14,
+       "expenditures": 0.0,
+       "status": "$148,495.01",
+       "url": "/co/candidate/tom-sullivan?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Cole Wist",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 86902.37,
+       "expenditures": 0.0,
+       "status": "$71,703.08",
+       "url": "/co/candidate/cole-wist?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "Colorado House of Representatives District 38",
+   "url": "/co/race/colorado-house-of-representatives-district-38-25594",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 100148.0,
+   "totalExpenditures": 97839.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Susan Beckman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38317.99,
+       "expenditures": 0.0,
+       "status": "$38,239.31",
+       "url": "/co/candidate/susan-beckman?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Chris Kolker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 61829.53,
+       "expenditures": 0.0,
+       "status": "$59,599.43",
+       "url": "/co/candidate/chris-kolker?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Chris Kolker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 61829.53,
+       "expenditures": 0.0,
+       "status": "$59,599.43",
+       "url": "/co/candidate/chris-kolker?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Susan Beckman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38317.99,
+       "expenditures": 0.0,
+       "status": "$38,239.31",
+       "url": "/co/candidate/susan-beckman?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "Colorado House of Representatives District 39",
+   "url": "/co/race/colorado-house-of-representatives-district-39-25595",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 9532.0,
+   "totalExpenditures": 10318.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Mark Baisley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9531.52,
+       "expenditures": 1100.0,
+       "status": "$10,318.03",
+       "url": "/co/candidate/mark-baisley?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Mark Baisley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9531.52,
+       "expenditures": 1100.0,
+       "status": "$10,318.03",
+       "url": "/co/candidate/mark-baisley?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "Colorado House of Representatives District 4",
+   "url": "/co/race/colorado-house-of-representatives-district-4-25559",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 179119.0,
+   "totalExpenditures": 168781.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Serena Gonzales-Gutierrez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 80935.86,
+       "expenditures": 4000.0,
+       "status": "$71,175.67",
+       "url": "/co/candidate/serena-gonzales-gutierrez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Serena Gonzales-Gutierrez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 80935.86,
+       "expenditures": 4000.0,
+       "status": "$71,175.67",
+       "url": "/co/candidate/serena-gonzales-gutierrez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Amy Beatie",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 98183.5,
+       "expenditures": 0.0,
+       "status": "$97,604.97",
+       "url": "/co/candidate/amy-beatie?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Colorado House of Representatives District 40",
+   "url": "/co/race/colorado-house-of-representatives-district-40-25596",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 73752.0,
+   "totalExpenditures": 69966.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Janet P Buckner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73752.49,
+       "expenditures": 0.0,
+       "status": "$69,965.67",
+       "url": "/co/candidate/janet-p-buckner?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Janet P Buckner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73752.49,
+       "expenditures": 0.0,
+       "status": "$69,965.67",
+       "url": "/co/candidate/janet-p-buckner?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "Colorado House of Representatives District 41",
+   "url": "/co/race/colorado-house-of-representatives-district-41-25597",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 24133.0,
+   "totalExpenditures": 26029.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Lynn Myers",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21365.28,
+       "expenditures": 1570.6,
+       "status": "$23,260.93",
+       "url": "/co/candidate/lynn-myers?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Dahlia Jean Weinstein",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2767.72,
+       "expenditures": 0.0,
+       "status": "$2,767.72",
+       "url": "/co/candidate/dahlia-jean-weinstein?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Dahlia Jean Weinstein",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2767.72,
+       "expenditures": 0.0,
+       "status": "$2,767.72",
+       "url": "/co/candidate/dahlia-jean-weinstein?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "Colorado House of Representatives District 42",
+   "url": "/co/race/colorado-house-of-representatives-district-42-25598",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 195.0,
+   "totalExpenditures": 415.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Mike Donald",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 195.0,
+       "expenditures": 0.0,
+       "status": "$415.42",
+       "url": "/co/candidate/mike-donald?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Mike Donald",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 195.0,
+       "expenditures": 0.0,
+       "status": "$415.42",
+       "url": "/co/candidate/mike-donald?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "Colorado House of Representatives District 43",
+   "url": "/co/race/colorado-house-of-representatives-district-43-24029",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 24221.0,
+   "totalExpenditures": 22088.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Barrett Rothe",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21489.04,
+       "expenditures": 562.85,
+       "status": "$20,689.40",
+       "url": "/co/candidate/barrett-rothe?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Scott D Wagner",
+       "party": "Unity",
+       "incumbent": false,
+       "contributions": 2732.24,
+       "expenditures": 0.0,
+       "status": "$1,398.10",
+       "url": "/co/candidate/scott-d-wagner?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Barrett Rothe",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21489.04,
+       "expenditures": 562.85,
+       "status": "$20,689.40",
+       "url": "/co/candidate/barrett-rothe?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "Colorado House of Representatives District 44",
+   "url": "/co/race/colorado-house-of-representatives-district-44-25600",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 20749.0,
+   "totalExpenditures": 25980.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Kim Ransom",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 14250.0,
+       "expenditures": 0.0,
+       "status": "$19,819.58",
+       "url": "/co/candidate/kim-ransom?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Simone Aiken",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6499.48,
+       "expenditures": 0.0,
+       "status": "$6,160.48",
+       "url": "/co/candidate/simone-aiken?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Simone Aiken",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6499.48,
+       "expenditures": 0.0,
+       "status": "$6,160.48",
+       "url": "/co/candidate/simone-aiken?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Kim Ransom",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 14250.0,
+       "expenditures": 0.0,
+       "status": "$19,819.58",
+       "url": "/co/candidate/kim-ransom?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "Colorado House of Representatives District 45",
+   "url": "/co/race/colorado-house-of-representatives-district-45-25601",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 12412.0,
+   "totalExpenditures": 20187.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Danielle Young-Kombo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9101.01,
+       "expenditures": 2361.19,
+       "status": "$14,811.94",
+       "url": "/co/candidate/danielle-young-kombo?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Danielle Young-Kombo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9101.01,
+       "expenditures": 2361.19,
+       "status": "$14,811.94",
+       "url": "/co/candidate/danielle-young-kombo?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Michael Hupp",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3311.0,
+       "expenditures": 2400.0,
+       "status": "$5,375.00",
+       "url": "/co/candidate/michael-hupp?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "Colorado House of Representatives District 46",
+   "url": "/co/race/colorado-house-of-representatives-district-46-25602",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 2715.0,
+   "totalExpenditures": 3025.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jonathan Ambler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2715.0,
+       "expenditures": 584.0,
+       "status": "$3,025.07",
+       "url": "/co/candidate/jonathan-ambler?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Jonathan Ambler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2715.0,
+       "expenditures": 584.0,
+       "status": "$3,025.07",
+       "url": "/co/candidate/jonathan-ambler?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "Colorado House of Representatives District 47",
+   "url": "/co/race/colorado-house-of-representatives-district-47-25603",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 8795.0,
+   "totalExpenditures": 8545.0,
+   "elections": [
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Judy Reyher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8795.0,
+       "expenditures": 0.0,
+       "status": "$8,545.00",
+       "url": "/co/candidate/judy-reyher?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "Colorado House of Representatives District 48",
+   "url": "/co/race/colorado-house-of-representatives-district-48-25604",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 7400.0,
+   "totalExpenditures": 9172.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Steve Humphrey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7400.0,
+       "expenditures": 0.0,
+       "status": "$9,172.11",
+       "url": "/co/candidate/steve-humphrey?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Steve Humphrey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7400.0,
+       "expenditures": 0.0,
+       "status": "$9,172.11",
+       "url": "/co/candidate/steve-humphrey?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "Colorado House of Representatives District 49",
+   "url": "/co/race/colorado-house-of-representatives-district-49-25605",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 23765.0,
+   "totalExpenditures": 24888.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Perry Buck",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16350.0,
+       "expenditures": 0.0,
+       "status": "$16,654.29",
+       "url": "/co/candidate/perry-buck?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Conor M Duffy",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7415.17,
+       "expenditures": 0.0,
+       "status": "$8,233.73",
+       "url": "/co/candidate/conor-m-duffy?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Conor M Duffy",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7415.17,
+       "expenditures": 0.0,
+       "status": "$8,233.73",
+       "url": "/co/candidate/conor-m-duffy?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Perry Buck",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16350.0,
+       "expenditures": 0.0,
+       "status": "$16,654.29",
+       "url": "/co/candidate/perry-buck?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "Colorado House of Representatives District 5",
+   "url": "/co/race/colorado-house-of-representatives-district-5-25560",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 284117.0,
+   "totalExpenditures": 298187.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Alex Valdez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 110188.29,
+       "expenditures": 16500.0,
+       "status": "$120,375.86",
+       "url": "/co/candidate/alex-valdez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Rory Lamberton",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/rory-lamberton?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Alex Valdez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 110188.29,
+       "expenditures": 16500.0,
+       "status": "$120,375.86",
+       "url": "/co/candidate/alex-valdez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Meghan Nutting",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 74607.5,
+       "expenditures": 0.0,
+       "status": "$76,103.84",
+       "url": "/co/candidate/meghan-nutting?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Nicky Yollick",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 99321.04,
+       "expenditures": 2545.96,
+       "status": "$101,707.00",
+       "url": "/co/candidate/nicky-yollick?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Colorado House of Representatives District 50",
+   "url": "/co/race/colorado-house-of-representatives-district-50-25606",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 198963.0,
+   "totalExpenditures": 196755.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Rochelle Galindo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 152123.39,
+       "expenditures": 0.0,
+       "status": "$150,149.86",
+       "url": "/co/candidate/rochelle-galindo?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Michael Thuener",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46839.12,
+       "expenditures": 0.0,
+       "status": "$46,605.50",
+       "url": "/co/candidate/michael-thuener?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Rochelle Galindo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 152123.39,
+       "expenditures": 0.0,
+       "status": "$150,149.86",
+       "url": "/co/candidate/rochelle-galindo?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Michael Thuener",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46839.12,
+       "expenditures": 0.0,
+       "status": "$46,605.50",
+       "url": "/co/candidate/michael-thuener?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "Colorado House of Representatives District 51",
+   "url": "/co/race/colorado-house-of-representatives-district-51-25607",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 43073.0,
+   "totalExpenditures": 31993.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Hugh Mckean",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 43053.0,
+       "expenditures": 0.0,
+       "status": "$31,960.41",
+       "url": "/co/candidate/hugh-mckean?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Benjamin Krueske",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 20.0,
+       "expenditures": 35.0,
+       "status": "$32.46",
+       "url": "/co/candidate/benjamin-krueske?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Hugh Mckean",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 43053.0,
+       "expenditures": 0.0,
+       "status": "$31,960.41",
+       "url": "/co/candidate/hugh-mckean?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "Colorado House of Representatives District 52",
+   "url": "/co/race/colorado-house-of-representatives-district-52-24718",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 42934.0,
+   "totalExpenditures": 41709.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Joann Ginal",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 32091.98,
+       "expenditures": 0.0,
+       "status": "$31,887.81",
+       "url": "/co/candidate/joann-ginal?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Donna Walter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10842.28,
+       "expenditures": 0.0,
+       "status": "$9,820.89",
+       "url": "/co/candidate/donna-walter?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Joann Ginal",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 32091.98,
+       "expenditures": 0.0,
+       "status": "$31,887.81",
+       "url": "/co/candidate/joann-ginal?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Donna Walter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10842.28,
+       "expenditures": 0.0,
+       "status": "$9,820.89",
+       "url": "/co/candidate/donna-walter?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "Colorado House of Representatives District 53",
+   "url": "/co/race/colorado-house-of-representatives-district-53-25609",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 35990.0,
+   "totalExpenditures": 30952.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jennifer Arndt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 35990.0,
+       "expenditures": 0.0,
+       "status": "$30,952.26",
+       "url": "/co/candidate/jennifer-arndt?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Jennifer Arndt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 35990.0,
+       "expenditures": 0.0,
+       "status": "$30,952.26",
+       "url": "/co/candidate/jennifer-arndt?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "Colorado House of Representatives District 54",
+   "url": "/co/race/colorado-house-of-representatives-district-54-25610",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 79220.0,
+   "totalExpenditures": 68863.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Matt Soper",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 42165.87,
+       "expenditures": 0.0,
+       "status": "$31,038.28",
+       "url": "/co/candidate/matt-soper?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Thea Chase",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 37054.09,
+       "expenditures": 0.0,
+       "status": "$37,824.94",
+       "url": "/co/candidate/thea-chase?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Matt Soper",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 42165.87,
+       "expenditures": 0.0,
+       "status": "$31,038.28",
+       "url": "/co/candidate/matt-soper?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "Colorado House of Representatives District 55",
+   "url": "/co/race/colorado-house-of-representatives-district-55-25611",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 49527.0,
+   "totalExpenditures": 35542.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Janice Rich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33765.72,
+       "expenditures": 0.0,
+       "status": "$20,001.02",
+       "url": "/co/candidate/janice-rich?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tanya Travis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15761.0,
+       "expenditures": 0.0,
+       "status": "$15,541.00",
+       "url": "/co/candidate/tanya-travis?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Tanya Travis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15761.0,
+       "expenditures": 0.0,
+       "status": "$15,541.00",
+       "url": "/co/candidate/tanya-travis?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Janice Rich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33765.72,
+       "expenditures": 0.0,
+       "status": "$20,001.02",
+       "url": "/co/candidate/janice-rich?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "Colorado House of Representatives District 56",
+   "url": "/co/race/colorado-house-of-representatives-district-56-25612",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 42790.0,
+   "totalExpenditures": 38749.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Rod Bockenfeld",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30055.0,
+       "expenditures": 0.0,
+       "status": "$26,936.48",
+       "url": "/co/candidate/rod-bockenfeld?cycle=2018-election-cycle"
+      },
+      {
+       "name": "David Rose",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11160.0,
+       "expenditures": 0.0,
+       "status": "$11,160.00",
+       "url": "/co/candidate/david-rose?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Kevin Lee Gulbranson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$26.99",
+       "url": "/co/candidate/kevin-lee-gulbranson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "David Rose",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11160.0,
+       "expenditures": 0.0,
+       "status": "$11,160.00",
+       "url": "/co/candidate/david-rose?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Rod Bockenfeld",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30055.0,
+       "expenditures": 0.0,
+       "status": "$26,936.48",
+       "url": "/co/candidate/rod-bockenfeld?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Philip Covarrubias",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1575.0,
+       "expenditures": 0.0,
+       "status": "$625.36",
+       "url": "/co/candidate/philip-covarrubias?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "Colorado House of Representatives District 57",
+   "url": "/co/race/colorado-house-of-representatives-district-57-25613",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "Colorado House of Representatives District 58",
+   "url": "/co/race/colorado-house-of-representatives-district-58-25614",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 25035.0,
+   "totalExpenditures": 11340.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Marcus W Catlin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25035.0,
+       "expenditures": 0.0,
+       "status": "$11,340.41",
+       "url": "/co/candidate/marcus-w-catlin?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Marcus W Catlin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25035.0,
+       "expenditures": 0.0,
+       "status": "$11,340.41",
+       "url": "/co/candidate/marcus-w-catlin?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "Colorado House of Representatives District 59",
+   "url": "/co/race/colorado-house-of-representatives-district-59-24719",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 162338.0,
+   "totalExpenditures": 159989.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Barbara Mclachlan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 133177.62,
+       "expenditures": 0.0,
+       "status": "$131,669.92",
+       "url": "/co/candidate/barbara-mclachlan?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Paul Jones",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 29160.21,
+       "expenditures": 0.0,
+       "status": "$28,319.12",
+       "url": "/co/candidate/paul-jones?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Barbara Mclachlan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 133177.62,
+       "expenditures": 0.0,
+       "status": "$131,669.92",
+       "url": "/co/candidate/barbara-mclachlan?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "Colorado House of Representatives District 6",
+   "url": "/co/race/colorado-house-of-representatives-district-6-25561",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 44028.0,
+   "totalExpenditures": 31745.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Chris Hansen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 44028.0,
+       "expenditures": 0.0,
+       "status": "$31,745.01",
+       "url": "/co/candidate/chris-hansen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Chris Hansen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 44028.0,
+       "expenditures": 0.0,
+       "status": "$31,745.01",
+       "url": "/co/candidate/chris-hansen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "Colorado House of Representatives District 60",
+   "url": "/co/race/colorado-house-of-representatives-district-60-25616",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "Colorado House of Representatives District 61",
+   "url": "/co/race/colorado-house-of-representatives-district-61-25617",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 98283.0,
+   "totalExpenditures": 86104.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Julie Lynn Mccluskie",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 96669.34,
+       "expenditures": 0.0,
+       "status": "$84,983.03",
+       "url": "/co/candidate/julie-lynn-mccluskie?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mike Mason",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1614.0,
+       "expenditures": 0.0,
+       "status": "$1,120.72",
+       "url": "/co/candidate/mike-mason?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Julie Lynn Mccluskie",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 96669.34,
+       "expenditures": 0.0,
+       "status": "$84,983.03",
+       "url": "/co/candidate/julie-lynn-mccluskie?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Mike Mason",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1614.0,
+       "expenditures": 0.0,
+       "status": "$1,120.72",
+       "url": "/co/candidate/mike-mason?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "Colorado House of Representatives District 62",
+   "url": "/co/race/colorado-house-of-representatives-district-62-25618",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 51799.0,
+   "totalExpenditures": 52723.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Donald Valdez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 33140.17,
+       "expenditures": 0.0,
+       "status": "$31,798.16",
+       "url": "/co/candidate/donald-valdez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Scott Honeycutt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18659.1,
+       "expenditures": 3204.08,
+       "status": "$20,924.62",
+       "url": "/co/candidate/scott-honeycutt?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Donald Valdez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 33140.17,
+       "expenditures": 0.0,
+       "status": "$31,798.16",
+       "url": "/co/candidate/donald-valdez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "Colorado House of Representatives District 63",
+   "url": "/co/race/colorado-house-of-representatives-district-63-25619",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 27172.0,
+   "totalExpenditures": 24107.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Lori Saine",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16240.0,
+       "expenditures": 0.0,
+       "status": "$13,175.04",
+       "url": "/co/candidate/lori-saine?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Brandon David Bobian",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10931.59,
+       "expenditures": 0.0,
+       "status": "$10,931.59",
+       "url": "/co/candidate/brandon-david-bobian?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Brandon David Bobian",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10931.59,
+       "expenditures": 0.0,
+       "status": "$10,931.59",
+       "url": "/co/candidate/brandon-david-bobian?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Lori Saine",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16240.0,
+       "expenditures": 0.0,
+       "status": "$13,175.04",
+       "url": "/co/candidate/lori-saine?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "Colorado House of Representatives District 64",
+   "url": "/co/race/colorado-house-of-representatives-district-64-25620",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 38512.0,
+   "totalExpenditures": 31388.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Kimmi Lewis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38512.0,
+       "expenditures": 1500.0,
+       "status": "$31,388.23",
+       "url": "/co/candidate/kimmi-lewis?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Teri Nilson Baird",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/teri-nilson-baird?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Teri Nilson Baird",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/teri-nilson-baird?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Kimmi Lewis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38512.0,
+       "expenditures": 1500.0,
+       "status": "$31,388.23",
+       "url": "/co/candidate/kimmi-lewis?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "Colorado House of Representatives District 65",
+   "url": "/co/race/colorado-house-of-representatives-district-65-25621",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 24320.0,
+   "totalExpenditures": 22368.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Rod Pelton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19245.48,
+       "expenditures": 0.0,
+       "status": "$17,359.05",
+       "url": "/co/candidate/rod-pelton?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bethleen Mccall",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5075.0,
+       "expenditures": 0.0,
+       "status": "$5,009.17",
+       "url": "/co/candidate/bethleen-mccall?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Bethleen Mccall",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5075.0,
+       "expenditures": 0.0,
+       "status": "$5,009.17",
+       "url": "/co/candidate/bethleen-mccall?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Rod Pelton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19245.48,
+       "expenditures": 0.0,
+       "status": "$17,359.05",
+       "url": "/co/candidate/rod-pelton?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "Colorado House of Representatives District 7",
+   "url": "/co/race/colorado-house-of-representatives-district-7-25562",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 33987.0,
+   "totalExpenditures": 26945.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "James Coleman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 33987.35,
+       "expenditures": 0.0,
+       "status": "$26,945.13",
+       "url": "/co/candidate/james-coleman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "James Coleman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 33987.35,
+       "expenditures": 0.0,
+       "status": "$26,945.13",
+       "url": "/co/candidate/james-coleman?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "Colorado House of Representatives District 8",
+   "url": "/co/race/colorado-house-of-representatives-district-8-25563",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 43653.0,
+   "totalExpenditures": 37153.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Leslie Herod",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 43652.74,
+       "expenditures": 0.0,
+       "status": "$37,153.08",
+       "url": "/co/candidate/leslie-herod?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Leslie Herod",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 43652.74,
+       "expenditures": 0.0,
+       "status": "$37,153.08",
+       "url": "/co/candidate/leslie-herod?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "Colorado House of Representatives District 9",
+   "url": "/co/race/colorado-house-of-representatives-district-9-25564",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 208121.0,
+   "totalExpenditures": 195599.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Emily Sirota",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 152506.74,
+       "expenditures": 0.0,
+       "status": "$137,426.06",
+       "url": "/co/candidate/emily-sirota?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bob Lane",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/bob-lane?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Emily Sirota",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 152506.74,
+       "expenditures": 0.0,
+       "status": "$137,426.06",
+       "url": "/co/candidate/emily-sirota?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ashley Wheeland",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 55369.44,
+       "expenditures": 0.0,
+       "status": "$55,369.44",
+       "url": "/co/candidate/ashley-wheeland?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Bob Lane",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/bob-lane?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Angel Saunders",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 244.35,
+       "expenditures": 0.0,
+       "status": "$2,803.32",
+       "url": "/co/candidate/angel-saunders?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "Colorado State Senate District 1",
+   "url": "/co/race/colorado-state-senate-district-1-11086",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "senate",
-   "district": null
+   "district": "1"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-11-5860?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 11",
+   "url": "/co/race/colorado-state-senate-district-11-5860",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 173797.0,
+   "totalExpenditures": 173725.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Sanford 'Pete' Lee",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 153355.55,
+       "expenditures": 0.0,
+       "status": "$153,834.48",
+       "url": "/co/candidate/sanford-pete-lee?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Patrick Mcintire",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20441.8,
+       "expenditures": 0.0,
+       "status": "$19,890.10",
+       "url": "/co/candidate/patrick-mcintire?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Sanford 'Pete' Lee",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 153355.55,
+       "expenditures": 0.0,
+       "status": "$153,834.48",
+       "url": "/co/candidate/sanford-pete-lee?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Patrick Mcintire",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20441.8,
+       "expenditures": 0.0,
+       "status": "$19,890.10",
+       "url": "/co/candidate/patrick-mcintire?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "11"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-13-13630?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 13",
+   "url": "/co/race/colorado-state-senate-district-13-13630",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 5549.0,
+   "totalExpenditures": 5761.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Phil Kelley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5549.0,
+       "expenditures": 550.0,
+       "status": "$5,761.44",
+       "url": "/co/candidate/phil-kelley?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Phil Kelley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5549.0,
+       "expenditures": 550.0,
+       "status": "$5,761.44",
+       "url": "/co/candidate/phil-kelley?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-15-25554?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 15",
+   "url": "/co/race/colorado-state-senate-district-15-25554",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 208609.0,
+   "totalExpenditures": 203800.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Rob Woodward",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 141883.37,
+       "expenditures": 0.0,
+       "status": "$140,027.09",
+       "url": "/co/candidate/rob-woodward?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Rebecca Cranston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 64405.28,
+       "expenditures": 0.0,
+       "status": "$61,452.66",
+       "url": "/co/candidate/rebecca-cranston?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Rebecca Cranston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 64405.28,
+       "expenditures": 0.0,
+       "status": "$61,452.66",
+       "url": "/co/candidate/rebecca-cranston?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Rob Woodward",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 141883.37,
+       "expenditures": 0.0,
+       "status": "$140,027.09",
+       "url": "/co/candidate/rob-woodward?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Nic Morse",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2320.0,
+       "expenditures": 0.0,
+       "status": "$2,320.00",
+       "url": "/co/candidate/nic-morse?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "15"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-16-12546?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 16",
+   "url": "/co/race/colorado-state-senate-district-16-12546",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 537524.0,
+   "totalExpenditures": 524953.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tammy Story",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 537524.35,
+       "expenditures": 0.0,
+       "status": "$524,952.61",
+       "url": "/co/candidate/tammy-story?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Tammy Story",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 537524.35,
+       "expenditures": 0.0,
+       "status": "$524,952.61",
+       "url": "/co/candidate/tammy-story?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "16"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-2-25551?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 2",
+   "url": "/co/race/colorado-state-senate-district-2-25551",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 15379.0,
+   "totalExpenditures": 10337.0,
+   "elections": [
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Stephanie Luck",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15379.37,
+       "expenditures": 450.0,
+       "status": "$10,337.09",
+       "url": "/co/candidate/stephanie-luck?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "2"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-20-24641?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 20",
+   "url": "/co/race/colorado-state-senate-district-20-24641",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 616706.0,
+   "totalExpenditures": 599110.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jessie Danielson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 455555.93,
+       "expenditures": 0.0,
+       "status": "$448,007.76",
+       "url": "/co/candidate/jessie-danielson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Christine Jensen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 160662.27,
+       "expenditures": 44731.76,
+       "status": "$150,702.46",
+       "url": "/co/candidate/christine-jensen?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Charles Messick",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 487.49,
+       "expenditures": 0.0,
+       "status": "$400.00",
+       "url": "/co/candidate/charles-messick?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Jessie Danielson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 455555.93,
+       "expenditures": 0.0,
+       "status": "$448,007.76",
+       "url": "/co/candidate/jessie-danielson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Christine Jensen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 160662.27,
+       "expenditures": 44731.76,
+       "status": "$150,702.46",
+       "url": "/co/candidate/christine-jensen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "20"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-22-24642?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 22",
+   "url": "/co/race/colorado-state-senate-district-22-24642",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 470386.0,
+   "totalExpenditures": 448035.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Brittany Pettersen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 339290.79,
+       "expenditures": 0.0,
+       "status": "$340,343.84",
+       "url": "/co/candidate/brittany-pettersen?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tony Sanchez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 131095.38,
+       "expenditures": 0.0,
+       "status": "$107,691.10",
+       "url": "/co/candidate/tony-sanchez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Brittany Pettersen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 339290.79,
+       "expenditures": 0.0,
+       "status": "$340,343.84",
+       "url": "/co/candidate/brittany-pettersen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Tony Sanchez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 131095.38,
+       "expenditures": 0.0,
+       "status": "$107,691.10",
+       "url": "/co/candidate/tony-sanchez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "22"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-24-5960?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 24",
+   "url": "/co/race/colorado-state-senate-district-24-5960",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 579255.0,
+   "totalExpenditures": 558147.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Faith Winter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 460312.61,
+       "expenditures": 0.0,
+       "status": "$458,949.01",
+       "url": "/co/candidate/faith-winter?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Beth Martinez Humenik",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 110774.56,
+       "expenditures": 1233.11,
+       "status": "$91,029.95",
+       "url": "/co/candidate/beth-martinez-humenik?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Adam Matkowsky",
+       "party": "Unaffiliated",
+       "incumbent": false,
+       "contributions": 8168.0,
+       "expenditures": 0.0,
+       "status": "$8,168.00",
+       "url": "/co/candidate/adam-matkowsky?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Faith Winter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 460312.61,
+       "expenditures": 0.0,
+       "status": "$458,949.01",
+       "url": "/co/candidate/faith-winter?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Beth Martinez Humenik",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 110774.56,
+       "expenditures": 1233.11,
+       "status": "$91,029.95",
+       "url": "/co/candidate/beth-martinez-humenik?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "24"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-3-6198?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 3",
+   "url": "/co/race/colorado-state-senate-district-3-6198",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 127323.0,
+   "totalExpenditures": 99905.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Leroy Garcia Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 124632.81,
+       "expenditures": 0.0,
+       "status": "$97,467.67",
+       "url": "/co/candidate/leroy-garcia-jr?cycle=2018-election-cycle"
+      },
+      {
+       "name": "John Pickerill",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 2690.0,
+       "expenditures": 0.0,
+       "status": "$2,437.28",
+       "url": "/co/candidate/john-pickerill?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Leroy Garcia Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 124632.81,
+       "expenditures": 0.0,
+       "status": "$97,467.67",
+       "url": "/co/candidate/leroy-garcia-jr?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "3"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-30-9133?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 30",
+   "url": "/co/race/colorado-state-senate-district-30-9133",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 208582.0,
+   "totalExpenditures": 148526.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Chris Holbert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 90669.08,
+       "expenditures": 0.0,
+       "status": "$93,904.12",
+       "url": "/co/candidate/chris-holbert?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Steve Peterson",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 117912.52,
+       "expenditures": 0.0,
+       "status": "$54,622.20",
+       "url": "/co/candidate/steve-peterson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Chris Holbert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 90669.08,
+       "expenditures": 0.0,
+       "status": "$93,904.12",
+       "url": "/co/candidate/chris-holbert?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "30"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-32-25555?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 32",
+   "url": "/co/race/colorado-state-senate-district-32-25555",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 370663.0,
+   "totalExpenditures": 397631.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Robert Rodriguez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 176520.37,
+       "expenditures": 33156.77,
+       "status": "$196,064.29",
+       "url": "/co/candidate/robert-rodriguez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mark Calonder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3661.53,
+       "expenditures": 0.0,
+       "status": "$3,661.53",
+       "url": "/co/candidate/mark-calonder?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Peter Smith",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 17890.0,
+       "expenditures": 0.0,
+       "status": "$17,595.09",
+       "url": "/co/candidate/peter-smith?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Robert Rodriguez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 176520.37,
+       "expenditures": 33156.77,
+       "status": "$196,064.29",
+       "url": "/co/candidate/robert-rodriguez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Hazel Gibson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33508.52,
+       "expenditures": 0.0,
+       "status": "$41,263.20",
+       "url": "/co/candidate/hazel-gibson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Zach Neumann",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 139082.16,
+       "expenditures": 0.0,
+       "status": "$139,047.13",
+       "url": "/co/candidate/zach-neumann?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Mark Calonder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3661.53,
+       "expenditures": 0.0,
+       "status": "$3,661.53",
+       "url": "/co/candidate/mark-calonder?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "32"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-34-25556?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 34",
+   "url": "/co/race/colorado-state-senate-district-34-25556",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 164652.0,
+   "totalExpenditures": 133173.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Julia C Gonzales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 105690.8,
+       "expenditures": 0.0,
+       "status": "$77,713.96",
+       "url": "/co/candidate/julia-c-gonzales?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Julia C Gonzales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 105690.8,
+       "expenditures": 0.0,
+       "status": "$77,713.96",
+       "url": "/co/candidate/julia-c-gonzales?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alan Kennedy-Shaffer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 40094.89,
+       "expenditures": 324.21,
+       "status": "$37,174.24",
+       "url": "/co/candidate/alan-kennedy-shaffer?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Edward 'Milo' Schwab",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18865.97,
+       "expenditures": 0.0,
+       "status": "$18,285.17",
+       "url": "/co/candidate/edward-milo-schwab?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "34"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-5-6026?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 5",
+   "url": "/co/race/colorado-state-senate-district-5-6026",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 268348.0,
+   "totalExpenditures": 190067.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Kerry Donovan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 232470.68,
+       "expenditures": 0.0,
+       "status": "$166,251.36",
+       "url": "/co/candidate/kerry-donovan?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Olen Lund",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35877.54,
+       "expenditures": 0.0,
+       "status": "$23,815.48",
+       "url": "/co/candidate/olen-lund?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Kerry Donovan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 232470.68,
+       "expenditures": 0.0,
+       "status": "$166,251.36",
+       "url": "/co/candidate/kerry-donovan?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Olen Lund",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35877.54,
+       "expenditures": 0.0,
+       "status": "$23,815.48",
+       "url": "/co/candidate/olen-lund?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "5"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-6-25552?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "Colorado State Senate District 6",
+   "url": "/co/race/colorado-state-senate-district-6-25552",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "senate",
-   "district": null
+   "district": "6"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-7-9492?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 7",
+   "url": "/co/race/colorado-state-senate-district-7-9492",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 125297.0,
+   "totalExpenditures": 141532.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Ray Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68695.0,
+       "expenditures": 0.0,
+       "status": "$67,851.16",
+       "url": "/co/candidate/ray-scott?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Ray Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68695.0,
+       "expenditures": 0.0,
+       "status": "$67,851.16",
+       "url": "/co/candidate/ray-scott?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Daniel R Thurlow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56601.69,
+       "expenditures": 0.0,
+       "status": "$73,680.57",
+       "url": "/co/candidate/daniel-r-thurlow?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "7"
   },
   {
-   "office": "",
-   "url": "/co/race/colorado-state-senate-district-9-25553?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Colorado State Senate District 9",
+   "url": "/co/race/colorado-state-senate-district-9-25553",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 57774.0,
+   "totalExpenditures": 48049.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Paul Lundeen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57774.03,
+       "expenditures": 0.0,
+       "status": "$48,049.35",
+       "url": "/co/candidate/paul-lundeen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 26, 2018",
+     "candidates": [
+      {
+       "name": "Paul Lundeen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57774.03,
+       "expenditures": 0.0,
+       "status": "$48,049.35",
+       "url": "/co/candidate/paul-lundeen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "9"
   }
  ]
 }

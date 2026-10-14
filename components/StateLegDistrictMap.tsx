@@ -176,7 +176,7 @@ export default function StateLegDistrictMap({
 
   const stateFips = ABBR_TO_FIPS[stateAbbr];
   const districtFill = darkMode ? "#3a4a72" : "#c3d0ea";
-  const districtStroke = darkMode ? "#0d1117" : "#f6f8fa";
+  const districtStroke = darkMode ? "#0d1117" : "#f9f8f5";
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
   const outlineFill = darkMode ? "#2a3550" : "#dbe3f0";
   const chamberLabel = isUnicameral ? "Legislature" : CHAMBER_LABEL[chamber];

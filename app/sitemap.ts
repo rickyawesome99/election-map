@@ -62,7 +62,6 @@ export default async function sitemap({ id }: { id: number | string | Promise<nu
   add("/states", states);
   paths.push("/legislatures");
   for (const s of states) {
-    paths.push(`/states/${s.id}/legislature`);
     // The district atlas: one page per chamber (Nebraska's unicameral body is its "senate").
     for (const chamber of s.id === "ne" ? ["senate"] : ["house", "senate"]) paths.push(`/states/${s.id}/legislature/${chamber}`);
   }

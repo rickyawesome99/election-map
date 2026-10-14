@@ -1,833 +1,3984 @@
 {
  "state": "WY",
  "cycle": 2018,
- "fetched": "2026-10-11",
- "dataThrough": "08/03/2026",
+ "fetched": "2026-10-12",
+ "dataThrough": "12/31/2018",
  "races": [
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-1-26877?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 1",
+   "url": "/wy/race/wyoming-house-of-representatives-district-1-26877",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 6205.0,
+   "totalExpenditures": 4274.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tyler Lindholm",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6205.12,
+       "expenditures": 0.0,
+       "status": "$4,273.78",
+       "url": "/wy/candidate/tyler-lindholm?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Tyler Lindholm",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6205.12,
+       "expenditures": 0.0,
+       "status": "$4,273.78",
+       "url": "/wy/candidate/tyler-lindholm?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "1"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-10-26886?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 10",
+   "url": "/wy/race/wyoming-house-of-representatives-district-10-26886",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 10745.0,
+   "totalExpenditures": 7283.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "John Eklund",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6725.0,
+       "expenditures": 0.0,
+       "status": "$3,741.05",
+       "url": "/wy/candidate/john-eklund?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jenefer Pasqua",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4020.0,
+       "expenditures": 0.0,
+       "status": "$3,542.40",
+       "url": "/wy/candidate/jenefer-pasqua?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Jenefer Pasqua",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4020.0,
+       "expenditures": 0.0,
+       "status": "$3,542.40",
+       "url": "/wy/candidate/jenefer-pasqua?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "John Eklund",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6725.0,
+       "expenditures": 0.0,
+       "status": "$3,741.05",
+       "url": "/wy/candidate/john-eklund?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Donn Edmunds",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/donn-edmunds?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "10"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-11-26887?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 11",
+   "url": "/wy/race/wyoming-house-of-representatives-district-11-26887",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 24079.0,
+   "totalExpenditures": 25286.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jared Olsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11096.19,
+       "expenditures": 5000.0,
+       "status": "$14,518.85",
+       "url": "/wy/candidate/jared-olsen?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Calob Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12982.45,
+       "expenditures": 0.0,
+       "status": "$10,767.34",
+       "url": "/wy/candidate/calob-taylor?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Calob Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12982.45,
+       "expenditures": 0.0,
+       "status": "$10,767.34",
+       "url": "/wy/candidate/calob-taylor?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Jared Olsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11096.19,
+       "expenditures": 5000.0,
+       "status": "$14,518.85",
+       "url": "/wy/candidate/jared-olsen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "11"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-12-26888?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 12",
+   "url": "/wy/race/wyoming-house-of-representatives-district-12-26888",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 6627.0,
+   "totalExpenditures": 4793.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Clarence L Styvar",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5055.0,
+       "expenditures": 0.0,
+       "status": "$3,821.62",
+       "url": "/wy/candidate/clarence-l-styvar?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Clarence L Styvar",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5055.0,
+       "expenditures": 0.0,
+       "status": "$3,821.62",
+       "url": "/wy/candidate/clarence-l-styvar?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Constance F Czarnecki",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1571.76,
+       "expenditures": 0.0,
+       "status": "$971.76",
+       "url": "/wy/candidate/constance-f-czarnecki?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "12"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-13-26889?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "Wyoming House of Representatives District 13",
+   "url": "/wy/race/wyoming-house-of-representatives-district-13-26889",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "house",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-14-26890?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "Wyoming House of Representatives District 14",
+   "url": "/wy/race/wyoming-house-of-representatives-district-14-26890",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 12577.0,
+   "totalExpenditures": 13323.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Dan Furphy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3225.0,
+       "expenditures": 1000.0,
+       "status": "$4,333.05",
+       "url": "/wy/candidate/dan-furphy?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Lorraine Saulino-Klein",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9351.96,
+       "expenditures": 500.0,
+       "status": "$8,990.23",
+       "url": "/wy/candidate/lorraine-saulino-klein?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Lorraine Saulino-Klein",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9351.96,
+       "expenditures": 500.0,
+       "status": "$8,990.23",
+       "url": "/wy/candidate/lorraine-saulino-klein?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Dan Furphy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3225.0,
+       "expenditures": 1000.0,
+       "status": "$4,333.05",
+       "url": "/wy/candidate/dan-furphy?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Wyoming House of Representatives District 15",
+   "url": "/wy/race/wyoming-house-of-representatives-district-15-26891",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 6205.0,
+   "totalExpenditures": 3599.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Donald E Burkhart Jr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6205.12,
+       "expenditures": 0.0,
+       "status": "$3,598.75",
+       "url": "/wy/candidate/donald-e-burkhart-jr?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Donald E Burkhart Jr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6205.12,
+       "expenditures": 0.0,
+       "status": "$3,598.75",
+       "url": "/wy/candidate/donald-e-burkhart-jr?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Wyoming House of Representatives District 16",
+   "url": "/wy/race/wyoming-house-of-representatives-district-16-26892",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 28375.0,
+   "totalExpenditures": 27484.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Mike Yin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13425.41,
+       "expenditures": 1500.0,
+       "status": "$12,650.52",
+       "url": "/wy/candidate/mike-yin?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Barbara Allen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14950.0,
+       "expenditures": 0.0,
+       "status": "$14,833.43",
+       "url": "/wy/candidate/barbara-allen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Mike Yin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13425.41,
+       "expenditures": 1500.0,
+       "status": "$12,650.52",
+       "url": "/wy/candidate/mike-yin?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Barbara Allen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14950.0,
+       "expenditures": 0.0,
+       "status": "$14,833.43",
+       "url": "/wy/candidate/barbara-allen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Wyoming House of Representatives District 17",
+   "url": "/wy/race/wyoming-house-of-representatives-district-17-26893",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 11625.0,
+   "totalExpenditures": 4910.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "JoAnn Dayton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11225.0,
+       "expenditures": 0.0,
+       "status": "$4,352.16",
+       "url": "/wy/candidate/joann-dayton?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Traci C Ciepiela",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 400.0,
+       "expenditures": 0.0,
+       "status": "$557.77",
+       "url": "/wy/candidate/traci-c-ciepiela?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "JoAnn Dayton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11225.0,
+       "expenditures": 0.0,
+       "status": "$4,352.16",
+       "url": "/wy/candidate/joann-dayton?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Traci C Ciepiela",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 400.0,
+       "expenditures": 0.0,
+       "status": "$557.77",
+       "url": "/wy/candidate/traci-c-ciepiela?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Wyoming House of Representatives District 18",
+   "url": "/wy/race/wyoming-house-of-representatives-district-18-26894",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3899.0,
+   "totalExpenditures": 3876.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Thomas Crank",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2084.25,
+       "expenditures": 0.0,
+       "status": "$2,056.00",
+       "url": "/wy/candidate/thomas-crank?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Thomas Crank",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2084.25,
+       "expenditures": 0.0,
+       "status": "$2,056.00",
+       "url": "/wy/candidate/thomas-crank?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Scott Heiner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1815.0,
+       "expenditures": 0.0,
+       "status": "$1,819.52",
+       "url": "/wy/candidate/scott-heiner?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Wyoming House of Representatives District 19",
+   "url": "/wy/race/wyoming-house-of-representatives-district-19-26895",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 10700.0,
+   "totalExpenditures": 7620.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Danny Eyre",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5847.0,
+       "expenditures": 0.0,
+       "status": "$2,767.10",
+       "url": "/wy/candidate/danny-eyre?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Danny Eyre",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5847.0,
+       "expenditures": 0.0,
+       "status": "$2,767.10",
+       "url": "/wy/candidate/danny-eyre?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Karl Allred",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4852.55,
+       "expenditures": 0.0,
+       "status": "$4,852.55",
+       "url": "/wy/candidate/karl-allred?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Wyoming House of Representatives District 2",
+   "url": "/wy/race/wyoming-house-of-representatives-district-2-26878",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 805.0,
+   "totalExpenditures": 574.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Hans Hunt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 805.12,
+       "expenditures": 0.0,
+       "status": "$574.20",
+       "url": "/wy/candidate/hans-hunt?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Hans Hunt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 805.12,
+       "expenditures": 0.0,
+       "status": "$574.20",
+       "url": "/wy/candidate/hans-hunt?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Wyoming House of Representatives District 20",
+   "url": "/wy/race/wyoming-house-of-representatives-district-20-26896",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 5000.0,
+   "totalExpenditures": 4045.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Albert Sommers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5000.0,
+       "expenditures": 0.0,
+       "status": "$4,045.40",
+       "url": "/wy/candidate/albert-sommers?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Albert Sommers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5000.0,
+       "expenditures": 0.0,
+       "status": "$4,045.40",
+       "url": "/wy/candidate/albert-sommers?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Wyoming House of Representatives District 21",
+   "url": "/wy/race/wyoming-house-of-representatives-district-21-26897",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1050.0,
+   "totalExpenditures": 880.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Evan J Simpson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1050.0,
+       "expenditures": 0.0,
+       "status": "$880.19",
+       "url": "/wy/candidate/evan-j-simpson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Evan J Simpson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1050.0,
+       "expenditures": 0.0,
+       "status": "$880.19",
+       "url": "/wy/candidate/evan-j-simpson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Wyoming House of Representatives District 22",
+   "url": "/wy/race/wyoming-house-of-representatives-district-22-26898",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 57444.0,
+   "totalExpenditures": 43428.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jim Roscoe",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 19919.0,
+       "expenditures": 0.0,
+       "status": "$16,444.92",
+       "url": "/wy/candidate/jim-roscoe?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Marti Halverson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31048.0,
+       "expenditures": 0.0,
+       "status": "$20,506.51",
+       "url": "/wy/candidate/marti-halverson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Marti Halverson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31048.0,
+       "expenditures": 0.0,
+       "status": "$20,506.51",
+       "url": "/wy/candidate/marti-halverson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bill Winney",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6477.05,
+       "expenditures": 0.0,
+       "status": "$6,477.05",
+       "url": "/wy/candidate/justin-william-winney-jr?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Wyoming House of Representatives District 23",
+   "url": "/wy/race/wyoming-house-of-representatives-district-23-26899",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 13525.0,
+   "totalExpenditures": 11626.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Andrew Schwartz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13525.0,
+       "expenditures": 0.0,
+       "status": "$11,625.74",
+       "url": "/wy/candidate/andrew-schwartz?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Andrew Schwartz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13525.0,
+       "expenditures": 0.0,
+       "status": "$11,625.74",
+       "url": "/wy/candidate/andrew-schwartz?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Wyoming House of Representatives District 24",
+   "url": "/wy/race/wyoming-house-of-representatives-district-24-26900",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 18030.0,
+   "totalExpenditures": 17156.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Sandy Newsome",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8191.41,
+       "expenditures": 0.0,
+       "status": "$6,099.04",
+       "url": "/wy/candidate/sandy-newsome?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Paul Fees",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4925.0,
+       "expenditures": 0.0,
+       "status": "$5,290.82",
+       "url": "/wy/candidate/paul-fees?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Paul Fees",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4925.0,
+       "expenditures": 0.0,
+       "status": "$5,290.82",
+       "url": "/wy/candidate/paul-fees?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Sandy Newsome",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8191.41,
+       "expenditures": 0.0,
+       "status": "$6,099.04",
+       "url": "/wy/candidate/sandy-newsome?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Richard B Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1300.0,
+       "expenditures": 1000.0,
+       "status": "$2,300.00",
+       "url": "/wy/candidate/richard-b-jones?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Denise Shirley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3614.07,
+       "expenditures": 0.0,
+       "status": "$3,466.07",
+       "url": "/wy/candidate/denise-shirley?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Wyoming House of Representatives District 25",
+   "url": "/wy/race/wyoming-house-of-representatives-district-25-26901",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 2005.0,
+   "totalExpenditures": 3423.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Dan Laursen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2005.12,
+       "expenditures": 647.42,
+       "status": "$3,422.79",
+       "url": "/wy/candidate/dan-laursen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Dan Laursen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2005.12,
+       "expenditures": 647.42,
+       "status": "$3,422.79",
+       "url": "/wy/candidate/dan-laursen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Wyoming House of Representatives District 26",
+   "url": "/wy/race/wyoming-house-of-representatives-district-26-26902",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1000.0,
+   "totalExpenditures": 1980.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jamie Flitner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1000.0,
+       "expenditures": 0.0,
+       "status": "$1,980.15",
+       "url": "/wy/candidate/jamie-flitner?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Jamie Flitner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1000.0,
+       "expenditures": 0.0,
+       "status": "$1,980.15",
+       "url": "/wy/candidate/jamie-flitner?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Wyoming House of Representatives District 27",
+   "url": "/wy/race/wyoming-house-of-representatives-district-27-26903",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 2850.0,
+   "totalExpenditures": 1237.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Mike Greear",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2850.0,
+       "expenditures": 0.0,
+       "status": "$1,236.71",
+       "url": "/wy/candidate/mike-greear?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Mike Greear",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2850.0,
+       "expenditures": 0.0,
+       "status": "$1,236.71",
+       "url": "/wy/candidate/mike-greear?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Wyoming House of Representatives District 28",
+   "url": "/wy/race/wyoming-house-of-representatives-district-28-26904",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 12930.0,
+   "totalExpenditures": 12127.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "John R Winter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2150.0,
+       "expenditures": 0.0,
+       "status": "$1,756.48",
+       "url": "/wy/candidate/john-r-winter?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Howard Samelson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9201.0,
+       "expenditures": 0.0,
+       "status": "$8,394.26",
+       "url": "/wy/candidate/howard-samelson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Howard Samelson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9201.0,
+       "expenditures": 0.0,
+       "status": "$8,394.26",
+       "url": "/wy/candidate/howard-samelson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "John R Winter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2150.0,
+       "expenditures": 0.0,
+       "status": "$1,756.48",
+       "url": "/wy/candidate/john-r-winter?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Timothy Morrison",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1579.0,
+       "expenditures": 0.0,
+       "status": "$1,976.38",
+       "url": "/wy/candidate/timothy-morrison?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Wyoming House of Representatives District 29",
+   "url": "/wy/race/wyoming-house-of-representatives-district-29-26905",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 19383.0,
+   "totalExpenditures": 17231.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Mark Kinner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10980.12,
+       "expenditures": 750.0,
+       "status": "$11,714.35",
+       "url": "/wy/candidate/mark-kinner?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Mark Kinner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10980.12,
+       "expenditures": 750.0,
+       "status": "$11,714.35",
+       "url": "/wy/candidate/mark-kinner?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Steve Cain",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8402.5,
+       "expenditures": 0.0,
+       "status": "$5,516.90",
+       "url": "/wy/candidate/steve-cain?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Wyoming House of Representatives District 3",
+   "url": "/wy/race/wyoming-house-of-representatives-district-3-26879",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 250.0,
+   "totalExpenditures": 245.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Eric Barlow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 250.12,
+       "expenditures": 0.0,
+       "status": "$245.00",
+       "url": "/wy/candidate/eric-barlow?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Eric Barlow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 250.12,
+       "expenditures": 0.0,
+       "status": "$245.00",
+       "url": "/wy/candidate/eric-barlow?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Wyoming House of Representatives District 30",
+   "url": "/wy/race/wyoming-house-of-representatives-district-30-26906",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 22050.0,
+   "totalExpenditures": 33776.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Mark Jennings",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12740.0,
+       "expenditures": 0.0,
+       "status": "$11,263.71",
+       "url": "/wy/candidate/mark-jennings?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Mark Jennings",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12740.0,
+       "expenditures": 0.0,
+       "status": "$11,263.71",
+       "url": "/wy/candidate/mark-jennings?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Gail Symons",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9310.0,
+       "expenditures": 12000.0,
+       "status": "$22,512.33",
+       "url": "/wy/candidate/gail-symons?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Wyoming House of Representatives District 31",
+   "url": "/wy/race/wyoming-house-of-representatives-district-31-26907",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 17508.0,
+   "totalExpenditures": 13169.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Scott Clem",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11660.12,
+       "expenditures": 0.0,
+       "status": "$8,022.85",
+       "url": "/wy/candidate/scott-clem?cycle=2018-election-cycle"
+      },
+      {
+       "name": "David Hardesty",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 5848.04,
+       "expenditures": 0.0,
+       "status": "$5,145.76",
+       "url": "/wy/candidate/david-hardesty?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Scott Clem",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11660.12,
+       "expenditures": 0.0,
+       "status": "$8,022.85",
+       "url": "/wy/candidate/scott-clem?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "Wyoming House of Representatives District 32",
+   "url": "/wy/race/wyoming-house-of-representatives-district-32-26908",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 6459.0,
+   "totalExpenditures": 5710.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Timothy P Hallinan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3219.43,
+       "expenditures": 3131.84,
+       "status": "$2,933.05",
+       "url": "/wy/candidate/timothy-p-hallinan?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Chad Trebby",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 3240.0,
+       "expenditures": 0.0,
+       "status": "$2,776.68",
+       "url": "/wy/candidate/chad-trebby?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Timothy P Hallinan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3219.43,
+       "expenditures": 3131.84,
+       "status": "$2,933.05",
+       "url": "/wy/candidate/timothy-p-hallinan?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "Wyoming House of Representatives District 33",
+   "url": "/wy/race/wyoming-house-of-representatives-district-33-26909",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 12068.0,
+   "totalExpenditures": 5553.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Andi Lebeau",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/andi-lebeau?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jim Allen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12068.0,
+       "expenditures": 0.0,
+       "status": "$5,552.87",
+       "url": "/wy/candidate/jim-allen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Andi Lebeau",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/andi-lebeau?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Jim Allen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12068.0,
+       "expenditures": 0.0,
+       "status": "$5,552.87",
+       "url": "/wy/candidate/jim-allen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "Wyoming House of Representatives District 34",
+   "url": "/wy/race/wyoming-house-of-representatives-district-34-26910",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 2000.0,
+   "totalExpenditures": 817.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tim Salazar",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2000.0,
+       "expenditures": 0.0,
+       "status": "$816.90",
+       "url": "/wy/candidate/tim-salazar?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Tim Salazar",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2000.0,
+       "expenditures": 0.0,
+       "status": "$816.90",
+       "url": "/wy/candidate/tim-salazar?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "Wyoming House of Representatives District 35",
+   "url": "/wy/race/wyoming-house-of-representatives-district-35-26911",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1255.0,
+   "totalExpenditures": 3389.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Joe Macguire",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1255.12,
+       "expenditures": 0.0,
+       "status": "$3,388.64",
+       "url": "/wy/candidate/joe-macguire?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Joe Macguire",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1255.12,
+       "expenditures": 0.0,
+       "status": "$3,388.64",
+       "url": "/wy/candidate/joe-macguire?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "Wyoming House of Representatives District 36",
+   "url": "/wy/race/wyoming-house-of-representatives-district-36-26912",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 23239.0,
+   "totalExpenditures": 15763.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Art Washut",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9060.0,
+       "expenditures": 400.0,
+       "status": "$7,562.32",
+       "url": "/wy/candidate/art-washut?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Debra Bovee",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 14179.39,
+       "expenditures": 0.0,
+       "status": "$8,200.61",
+       "url": "/wy/candidate/debra-bovee?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Debra Bovee",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 14179.39,
+       "expenditures": 0.0,
+       "status": "$8,200.61",
+       "url": "/wy/candidate/debra-bovee?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Art Washut",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9060.0,
+       "expenditures": 400.0,
+       "status": "$7,562.32",
+       "url": "/wy/candidate/art-washut?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "Wyoming House of Representatives District 37",
+   "url": "/wy/race/wyoming-house-of-representatives-district-37-26913",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 13131.0,
+   "totalExpenditures": 2912.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Steve Harshman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11450.0,
+       "expenditures": 0.0,
+       "status": "$2,911.80",
+       "url": "/wy/candidate/steve-harshman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Steve Harshman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11450.0,
+       "expenditures": 0.0,
+       "status": "$2,911.80",
+       "url": "/wy/candidate/steve-harshman?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Gregory Paul Flesvig",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1681.3,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/gregory-paul-flesvig?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "Wyoming House of Representatives District 38",
+   "url": "/wy/race/wyoming-house-of-representatives-district-38-26914",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3950.0,
+   "totalExpenditures": 3497.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tom Walters",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3950.0,
+       "expenditures": 0.0,
+       "status": "$3,497.17",
+       "url": "/wy/candidate/tom-walters?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Tom Walters",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3950.0,
+       "expenditures": 0.0,
+       "status": "$3,497.17",
+       "url": "/wy/candidate/tom-walters?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "Wyoming House of Representatives District 39",
+   "url": "/wy/race/wyoming-house-of-representatives-district-39-26915",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 4975.0,
+   "totalExpenditures": 2000.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Stan Blake",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4975.0,
+       "expenditures": 0.0,
+       "status": "$1,999.99",
+       "url": "/wy/candidate/stan-blake?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Stan Blake",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4975.0,
+       "expenditures": 0.0,
+       "status": "$1,999.99",
+       "url": "/wy/candidate/stan-blake?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "Wyoming House of Representatives District 4",
+   "url": "/wy/race/wyoming-house-of-representatives-district-4-26880",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3905.0,
+   "totalExpenditures": 346.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Dan R Kirkbride",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3905.12,
+       "expenditures": 0.0,
+       "status": "$345.54",
+       "url": "/wy/candidate/dan-r-kirkbride?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Dan R Kirkbride",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3905.12,
+       "expenditures": 0.0,
+       "status": "$345.54",
+       "url": "/wy/candidate/dan-r-kirkbride?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Wyoming House of Representatives District 40",
+   "url": "/wy/race/wyoming-house-of-representatives-district-40-26916",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 4956.0,
+   "totalExpenditures": 6286.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Richard L Tass",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4531.35,
+       "expenditures": 0.0,
+       "status": "$3,611.56",
+       "url": "/wy/candidate/richard-l-tass?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Chris Schock",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 425.0,
+       "expenditures": 0.0,
+       "status": "$2,674.09",
+       "url": "/wy/candidate/chris-schock?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Richard L Tass",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4531.35,
+       "expenditures": 0.0,
+       "status": "$3,611.56",
+       "url": "/wy/candidate/richard-l-tass?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "Wyoming House of Representatives District 41",
+   "url": "/wy/race/wyoming-house-of-representatives-district-41-26917",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 33871.0,
+   "totalExpenditures": 20852.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Bill Henderson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25395.6,
+       "expenditures": 9000.0,
+       "status": "$11,542.08",
+       "url": "/wy/candidate/bill-henderson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Sean Castaneda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8475.39,
+       "expenditures": 0.0,
+       "status": "$9,310.39",
+       "url": "/wy/candidate/sean-castaneda?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Sean Castaneda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8475.39,
+       "expenditures": 0.0,
+       "status": "$9,310.39",
+       "url": "/wy/candidate/sean-castaneda?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Bill Henderson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25395.6,
+       "expenditures": 9000.0,
+       "status": "$11,542.08",
+       "url": "/wy/candidate/bill-henderson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "Wyoming House of Representatives District 42",
+   "url": "/wy/race/wyoming-house-of-representatives-district-42-26918",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3600.0,
+   "totalExpenditures": 1936.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Juliet Daniels",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3600.0,
+       "expenditures": 0.0,
+       "status": "$1,936.43",
+       "url": "/wy/candidate/juliet-daniels?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Juliet Daniels",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3600.0,
+       "expenditures": 0.0,
+       "status": "$1,936.43",
+       "url": "/wy/candidate/juliet-daniels?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "Wyoming House of Representatives District 43",
+   "url": "/wy/race/wyoming-house-of-representatives-district-43-26919",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3775.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Dan Zwonitzer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3775.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/dan-zwonitzer?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Dan Zwonitzer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3775.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/dan-zwonitzer?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "Wyoming House of Representatives District 44",
+   "url": "/wy/race/wyoming-house-of-representatives-district-44-26920",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 35265.0,
+   "totalExpenditures": 42252.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Sara Burlingame",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10742.0,
+       "expenditures": 0.0,
+       "status": "$13,863.34",
+       "url": "/wy/candidate/sara-burlingame?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Paul Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24523.43,
+       "expenditures": 5000.0,
+       "status": "$28,388.43",
+       "url": "/wy/candidate/paul-johnson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Sara Burlingame",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10742.0,
+       "expenditures": 0.0,
+       "status": "$13,863.34",
+       "url": "/wy/candidate/sara-burlingame?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Floyd Esquibel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/floyd-esquibel?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Paul Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24523.43,
+       "expenditures": 5000.0,
+       "status": "$28,388.43",
+       "url": "/wy/candidate/paul-johnson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "John B Romero-Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/john-b-romero-martinez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "Wyoming House of Representatives District 45",
+   "url": "/wy/race/wyoming-house-of-representatives-district-45-26921",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 9640.0,
+   "totalExpenditures": 6198.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Charles Pelkey",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6230.49,
+       "expenditures": 0.0,
+       "status": "$4,461.70",
+       "url": "/wy/candidate/charles-pelkey?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Roxie Lee Hensley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3410.0,
+       "expenditures": 0.0,
+       "status": "$1,736.05",
+       "url": "/wy/candidate/roxie-lee-hensley?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Charles Pelkey",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6230.49,
+       "expenditures": 0.0,
+       "status": "$4,461.70",
+       "url": "/wy/candidate/charles-pelkey?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Roxie Lee Hensley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3410.0,
+       "expenditures": 0.0,
+       "status": "$1,736.05",
+       "url": "/wy/candidate/roxie-lee-hensley?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "Wyoming House of Representatives District 46",
+   "url": "/wy/race/wyoming-house-of-representatives-district-46-26922",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 17841.0,
+   "totalExpenditures": 19170.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Bill Haley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10870.12,
+       "expenditures": 0.0,
+       "status": "$9,669.71",
+       "url": "/wy/candidate/bill-haley?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jacqueline Grimes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6971.01,
+       "expenditures": 3550.0,
+       "status": "$9,500.43",
+       "url": "/wy/candidate/jacqueline-grimes?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Jacqueline Grimes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6971.01,
+       "expenditures": 3550.0,
+       "status": "$9,500.43",
+       "url": "/wy/candidate/jacqueline-grimes?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Bill Haley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10870.12,
+       "expenditures": 0.0,
+       "status": "$9,669.71",
+       "url": "/wy/candidate/bill-haley?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "Wyoming House of Representatives District 47",
+   "url": "/wy/race/wyoming-house-of-representatives-district-47-26923",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 15650.0,
+   "totalExpenditures": 12683.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jerry Paxton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5650.0,
+       "expenditures": 0.0,
+       "status": "$4,850.97",
+       "url": "/wy/candidate/jerry-paxton?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Jerry Paxton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5650.0,
+       "expenditures": 0.0,
+       "status": "$4,850.97",
+       "url": "/wy/candidate/jerry-paxton?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Julie Mccallister",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10000.0,
+       "expenditures": 0.0,
+       "status": "$7,832.00",
+       "url": "/wy/candidate/julie-mccallister?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "Wyoming House of Representatives District 48",
+   "url": "/wy/race/wyoming-house-of-representatives-district-48-26924",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3895.0,
+   "totalExpenditures": 1825.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Clark Stith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3895.03,
+       "expenditures": 0.0,
+       "status": "$1,825.00",
+       "url": "/wy/candidate/clark-stith?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Clark Stith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3895.03,
+       "expenditures": 0.0,
+       "status": "$1,825.00",
+       "url": "/wy/candidate/clark-stith?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "Wyoming House of Representatives District 49",
+   "url": "/wy/race/wyoming-house-of-representatives-district-49-26925",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "house",
-   "district": null
+   "district": "49"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-15-26891?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 5",
+   "url": "/wy/race/wyoming-house-of-representatives-district-5-26881",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 25355.0,
+   "totalExpenditures": 24777.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Shelly Duncan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10928.29,
+       "expenditures": 0.0,
+       "status": "$10,718.09",
+       "url": "/wy/candidate/shelly-duncan?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Joan Brinkley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 938.02,
+       "expenditures": 0.0,
+       "status": "$571.18",
+       "url": "/wy/candidate/joan-brinkley?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Joan Brinkley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 938.02,
+       "expenditures": 0.0,
+       "status": "$571.18",
+       "url": "/wy/candidate/joan-brinkley?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Shelly Duncan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10928.29,
+       "expenditures": 0.0,
+       "status": "$10,718.09",
+       "url": "/wy/candidate/shelly-duncan?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Roseanna Davison",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3494.98,
+       "expenditures": 0.0,
+       "status": "$3,494.61",
+       "url": "/wy/candidate/roseanna-davison?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ruth Van Mark",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9993.51,
+       "expenditures": 0.0,
+       "status": "$9,993.51",
+       "url": "/wy/candidate/ruth-van-mark?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "5"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-16-26892?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 50",
+   "url": "/wy/race/wyoming-house-of-representatives-district-50-26926",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 14026.0,
+   "totalExpenditures": 10583.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "David Northrup",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6075.0,
+       "expenditures": 0.0,
+       "status": "$2,631.32",
+       "url": "/wy/candidate/david-northrup?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Micheal Specht",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7951.19,
+       "expenditures": 0.0,
+       "status": "$7,951.19",
+       "url": "/wy/candidate/micheal-specht?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Micheal Specht",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7951.19,
+       "expenditures": 0.0,
+       "status": "$7,951.19",
+       "url": "/wy/candidate/micheal-specht?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "David Northrup",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6075.0,
+       "expenditures": 0.0,
+       "status": "$2,631.32",
+       "url": "/wy/candidate/david-northrup?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "50"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-17-26893?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 51",
+   "url": "/wy/race/wyoming-house-of-representatives-district-51-26927",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 27961.0,
+   "totalExpenditures": 21086.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Cyrus Western",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18450.0,
+       "expenditures": 0.0,
+       "status": "$13,298.95",
+       "url": "/wy/candidate/cyrus-western?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Cyrus Western",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18450.0,
+       "expenditures": 0.0,
+       "status": "$13,298.95",
+       "url": "/wy/candidate/cyrus-western?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bill Adsit",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6625.0,
+       "expenditures": 500.0,
+       "status": "$4,900.90",
+       "url": "/wy/candidate/bill-adsit?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Robert Griffin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2885.97,
+       "expenditures": 0.0,
+       "status": "$2,885.97",
+       "url": "/wy/candidate/robert-griffin?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "51"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-18-26894?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 52",
+   "url": "/wy/race/wyoming-house-of-representatives-district-52-26928",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1925.0,
+   "totalExpenditures": 1432.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Bill Pownall",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1925.0,
+       "expenditures": 0.0,
+       "status": "$1,431.55",
+       "url": "/wy/candidate/bill-pownall?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Bill Pownall",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1925.0,
+       "expenditures": 0.0,
+       "status": "$1,431.55",
+       "url": "/wy/candidate/bill-pownall?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "52"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-19-26895?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 53",
+   "url": "/wy/race/wyoming-house-of-representatives-district-53-26929",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 605.0,
+   "totalExpenditures": 25.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Roy Edwards",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 605.12,
+       "expenditures": 0.0,
+       "status": "$25.00",
+       "url": "/wy/candidate/roy-edwards?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Roy Edwards",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 605.12,
+       "expenditures": 0.0,
+       "status": "$25.00",
+       "url": "/wy/candidate/roy-edwards?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "53"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-2-26878?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 54",
+   "url": "/wy/race/wyoming-house-of-representatives-district-54-26930",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 11815.0,
+   "totalExpenditures": 8671.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Lloyd Charles Larsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8515.43,
+       "expenditures": 0.0,
+       "status": "$5,372.05",
+       "url": "/wy/candidate/lloyd-charles-larsen?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mark Dwight Calhoun",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3300.0,
+       "expenditures": 0.0,
+       "status": "$3,298.79",
+       "url": "/wy/candidate/mark-dwight-calhoun?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Lloyd Charles Larsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8515.43,
+       "expenditures": 0.0,
+       "status": "$5,372.05",
+       "url": "/wy/candidate/lloyd-charles-larsen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "54"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-20-26896?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 55",
+   "url": "/wy/race/wyoming-house-of-representatives-district-55-26931",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 14002.0,
+   "totalExpenditures": 11106.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "David Miller",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7550.0,
+       "expenditures": 0.0,
+       "status": "$4,853.80",
+       "url": "/wy/candidate/david-miller?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bethany Baldes",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 6451.85,
+       "expenditures": 0.0,
+       "status": "$6,251.85",
+       "url": "/wy/candidate/bethany-baldes?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "David Miller",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7550.0,
+       "expenditures": 0.0,
+       "status": "$4,853.80",
+       "url": "/wy/candidate/david-miller?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "55"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-21-26897?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 56",
+   "url": "/wy/race/wyoming-house-of-representatives-district-56-26932",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 6503.0,
+   "totalExpenditures": 4147.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jerry Obermueller",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6502.61,
+       "expenditures": 0.0,
+       "status": "$4,147.49",
+       "url": "/wy/candidate/jerry-obermueller?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Jerry Obermueller",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6502.61,
+       "expenditures": 0.0,
+       "status": "$4,147.49",
+       "url": "/wy/candidate/jerry-obermueller?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "56"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-22-26898?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 57",
+   "url": "/wy/race/wyoming-house-of-representatives-district-57-26933",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 73611.0,
+   "totalExpenditures": 68218.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Chuck Gray",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 64920.0,
+       "expenditures": 0.0,
+       "status": "$60,658.61",
+       "url": "/wy/candidate/chuck-gray?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jane Ifland",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4521.0,
+       "expenditures": 5000.0,
+       "status": "$5,987.39",
+       "url": "/wy/candidate/jane-ifland?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Jane Ifland",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4521.0,
+       "expenditures": 5000.0,
+       "status": "$5,987.39",
+       "url": "/wy/candidate/jane-ifland?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Chuck Gray",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 64920.0,
+       "expenditures": 0.0,
+       "status": "$60,658.61",
+       "url": "/wy/candidate/chuck-gray?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Daniel Sandoval",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4170.34,
+       "expenditures": 0.0,
+       "status": "$1,571.59",
+       "url": "/wy/candidate/daniel-sandoval?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "57"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-23-26899?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 58",
+   "url": "/wy/race/wyoming-house-of-representatives-district-58-26934",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 20885.0,
+   "totalExpenditures": 20240.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Patrick E Sweeney",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 18848.77,
+       "expenditures": 0.0,
+       "status": "$18,204.18",
+       "url": "/wy/candidate/patrick-e-sweeney?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Patrick E Sweeney",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 18848.77,
+       "expenditures": 0.0,
+       "status": "$18,204.18",
+       "url": "/wy/candidate/patrick-e-sweeney?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Charles Schoenwolf",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2036.18,
+       "expenditures": 0.0,
+       "status": "$2,036.18",
+       "url": "/wy/candidate/charles-schoenwolf?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "58"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-24-26900?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 59",
+   "url": "/wy/race/wyoming-house-of-representatives-district-59-26935",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 6700.0,
+   "totalExpenditures": 3671.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Carl Loucks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6675.0,
+       "expenditures": 0.0,
+       "status": "$3,645.79",
+       "url": "/wy/candidate/carl-loucks?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Laurie Longtine",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25.0,
+       "expenditures": 0.0,
+       "status": "$25.00",
+       "url": "/wy/candidate/laurie-longtine?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Laurie Longtine",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25.0,
+       "expenditures": 0.0,
+       "status": "$25.00",
+       "url": "/wy/candidate/laurie-longtine?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Carl Loucks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6675.0,
+       "expenditures": 0.0,
+       "status": "$3,645.79",
+       "url": "/wy/candidate/carl-loucks?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "59"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-25-26901?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 6",
+   "url": "/wy/race/wyoming-house-of-representatives-district-6-26882",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Aaron Clausen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/aaron-clausen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Aaron Clausen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/aaron-clausen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "6"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-26-26902?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 60",
+   "url": "/wy/race/wyoming-house-of-representatives-district-60-26936",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3350.0,
+   "totalExpenditures": 2584.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "John Freeman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3350.0,
+       "expenditures": 0.0,
+       "status": "$2,583.59",
+       "url": "/wy/candidate/john-freeman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "John Freeman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3350.0,
+       "expenditures": 0.0,
+       "status": "$2,583.59",
+       "url": "/wy/candidate/john-freeman?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "60"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-27-26903?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 7",
+   "url": "/wy/race/wyoming-house-of-representatives-district-7-26883",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 5803.0,
+   "totalExpenditures": 5803.0,
+   "elections": [
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "John Lyttle",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5802.88,
+       "expenditures": 0.0,
+       "status": "$5,802.88",
+       "url": "/wy/candidate/john-lyttle?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "7"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-28-26904?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 8",
+   "url": "/wy/race/wyoming-house-of-representatives-district-8-26884",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 10040.0,
+   "totalExpenditures": 8250.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Bob Nicholas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5150.0,
+       "expenditures": 0.0,
+       "status": "$3,405.64",
+       "url": "/wy/candidate/bob-nicholas?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mitch Guthrie",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4890.0,
+       "expenditures": 0.0,
+       "status": "$4,844.74",
+       "url": "/wy/candidate/mitch-guthrie?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Mitch Guthrie",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4890.0,
+       "expenditures": 0.0,
+       "status": "$4,844.74",
+       "url": "/wy/candidate/mitch-guthrie?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Bob Nicholas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5150.0,
+       "expenditures": 0.0,
+       "status": "$3,405.64",
+       "url": "/wy/candidate/bob-nicholas?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "8"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-29-26905?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming House of Representatives District 9",
+   "url": "/wy/race/wyoming-house-of-representatives-district-9-26885",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 2880.0,
+   "totalExpenditures": 313.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Landon Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2880.12,
+       "expenditures": 0.0,
+       "status": "$312.70",
+       "url": "/wy/candidate/landon-brown?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Landon Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2880.12,
+       "expenditures": 0.0,
+       "status": "$312.70",
+       "url": "/wy/candidate/landon-brown?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "9"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-3-26879?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-30-26906?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-31-26907?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-32-26908?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-33-26909?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-34-26910?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-35-26911?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-36-26912?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-37-26913?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-38-26914?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-39-26915?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-4-26880?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-40-26916?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-41-26917?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-42-26918?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-43-26919?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-44-26920?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-45-26921?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-46-26922?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-47-26923?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-48-26924?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-49-26925?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-5-26881?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-50-26926?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-51-26927?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-52-26928?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-53-26929?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-54-26930?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-55-26931?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-56-26932?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-57-26933?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-58-26934?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-59-26935?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-6-26882?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-60-26936?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-7-26883?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-8-26884?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-house-of-representatives-district-9-26885?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-1-17791?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 1",
+   "url": "/wy/race/wyoming-state-senate-district-1-17791",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 24498.0,
+   "totalExpenditures": 31723.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Ogden Driskill",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11500.0,
+       "expenditures": 0.0,
+       "status": "$17,027.67",
+       "url": "/wy/candidate/ogden-driskill?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Ogden Driskill",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11500.0,
+       "expenditures": 0.0,
+       "status": "$17,027.67",
+       "url": "/wy/candidate/ogden-driskill?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Judy Mccullough",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5857.0,
+       "expenditures": 0.0,
+       "status": "$9,519.86",
+       "url": "/wy/candidate/judy-mccullough?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Lenard D Seeley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7140.99,
+       "expenditures": 0.0,
+       "status": "$5,175.41",
+       "url": "/wy/candidate/lenard-d-seeley?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "1"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-11-5004?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 11",
+   "url": "/wy/race/wyoming-state-senate-district-11-5004",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 13264.0,
+   "totalExpenditures": 9341.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Larry Hicks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6020.46,
+       "expenditures": 0.0,
+       "status": "$2,302.59",
+       "url": "/wy/candidate/larry-hicks?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Lee Ann Stephenson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7244.0,
+       "expenditures": 0.0,
+       "status": "$7,038.21",
+       "url": "/wy/candidate/lee-ann-stephenson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Lee Ann Stephenson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7244.0,
+       "expenditures": 0.0,
+       "status": "$7,038.21",
+       "url": "/wy/candidate/lee-ann-stephenson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Larry Hicks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6020.46,
+       "expenditures": 0.0,
+       "status": "$2,302.59",
+       "url": "/wy/candidate/larry-hicks?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "11"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-13-18507?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 13",
+   "url": "/wy/race/wyoming-state-senate-district-13-18507",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 31481.0,
+   "totalExpenditures": 21767.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tom James",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12121.35,
+       "expenditures": 0.0,
+       "status": "$4,773.25",
+       "url": "/wy/candidate/tom-james?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Dennis Hastert",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 12650.0,
+       "expenditures": 0.0,
+       "status": "$10,033.34",
+       "url": "/wy/candidate/dennis-hastert?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ted L Barney",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 6709.5,
+       "expenditures": 0.0,
+       "status": "$6,960.23",
+       "url": "/wy/candidate/ted-l-barney?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Dennis Hastert",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 12650.0,
+       "expenditures": 0.0,
+       "status": "$10,033.34",
+       "url": "/wy/candidate/dennis-hastert?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Tom James",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12121.35,
+       "expenditures": 0.0,
+       "status": "$4,773.25",
+       "url": "/wy/candidate/tom-james?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-15-5486?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 15",
+   "url": "/wy/race/wyoming-state-senate-district-15-5486",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 26650.0,
+   "totalExpenditures": 35647.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Wendy Davis Schuler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2150.0,
+       "expenditures": 3542.4,
+       "status": "$4,602.40",
+       "url": "/wy/candidate/wendy-davis-schuler?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Wendy Davis Schuler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2150.0,
+       "expenditures": 3542.4,
+       "status": "$4,602.40",
+       "url": "/wy/candidate/wendy-davis-schuler?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Paul R Barnard",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 950.0,
+       "expenditures": 0.0,
+       "status": "$3,063.85",
+       "url": "/wy/candidate/paul-r-barnard?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jaraun Dennis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$1,416.94",
+       "url": "/wy/candidate/jaraun-dennis?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Eugene Joyce",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20000.0,
+       "expenditures": 0.0,
+       "status": "$22,076.63",
+       "url": "/wy/candidate/eugene-joyce?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Shaun Sims",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3550.0,
+       "expenditures": 0.0,
+       "status": "$4,486.78",
+       "url": "/wy/candidate/shaun-sims?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "15"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-17-20027?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 17",
+   "url": "/wy/race/wyoming-state-senate-district-17-20027",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 26480.0,
+   "totalExpenditures": 22432.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Mike Gierau",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26480.0,
+       "expenditures": 0.0,
+       "status": "$22,432.24",
+       "url": "/wy/candidate/mike-gierau?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Mike Gierau",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26480.0,
+       "expenditures": 0.0,
+       "status": "$22,432.24",
+       "url": "/wy/candidate/mike-gierau?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "17"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-19-20757?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 19",
+   "url": "/wy/race/wyoming-state-senate-district-19-20757",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 12630.0,
+   "totalExpenditures": 10478.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Reynolds John Kost",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4279.81,
+       "expenditures": 0.0,
+       "status": "$4,279.81",
+       "url": "/wy/candidate/reynolds-john-kost?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Reynolds John Kost",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4279.81,
+       "expenditures": 0.0,
+       "status": "$4,279.81",
+       "url": "/wy/candidate/reynolds-john-kost?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ray R Peterson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8350.0,
+       "expenditures": 0.0,
+       "status": "$6,198.68",
+       "url": "/wy/candidate/ray-r-peterson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "19"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-21-15087?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 21",
+   "url": "/wy/race/wyoming-state-senate-district-21-15087",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 40599.0,
+   "totalExpenditures": 31081.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Bo Biteman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22877.29,
+       "expenditures": 0.0,
+       "status": "$14,868.39",
+       "url": "/wy/candidate/bo-biteman?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Hollis Hackman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13275.58,
+       "expenditures": 0.0,
+       "status": "$12,906.26",
+       "url": "/wy/candidate/hollis-hackman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Hollis Hackman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13275.58,
+       "expenditures": 0.0,
+       "status": "$12,906.26",
+       "url": "/wy/candidate/hollis-hackman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Bo Biteman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22877.29,
+       "expenditures": 0.0,
+       "status": "$14,868.39",
+       "url": "/wy/candidate/bo-biteman?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Dave Clarendon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4350.0,
+       "expenditures": 0.0,
+       "status": "$3,209.83",
+       "url": "/wy/candidate/dave-clarendon?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Dustin Looper",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96.39,
+       "expenditures": 0.0,
+       "status": "$96.39",
+       "url": "/wy/candidate/dustin-looper?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "21"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-23-15304?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 23",
+   "url": "/wy/race/wyoming-state-senate-district-23-15304",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 14495.0,
+   "totalExpenditures": 19152.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jeff Wasserburger",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7845.46,
+       "expenditures": 0.0,
+       "status": "$5,206.50",
+       "url": "/wy/candidate/jeff-wasserburger?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Jeff Wasserburger",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7845.46,
+       "expenditures": 0.0,
+       "status": "$5,206.50",
+       "url": "/wy/candidate/jeff-wasserburger?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jeff Raney",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6650.0,
+       "expenditures": 0.0,
+       "status": "$13,945.98",
+       "url": "/wy/candidate/jeff-raney?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "23"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-25-806?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 25",
+   "url": "/wy/race/wyoming-state-senate-district-25-806",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 15166.0,
+   "totalExpenditures": 2548.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Cale Case",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7300.0,
+       "expenditures": 0.0,
+       "status": "$2,548.06",
+       "url": "/wy/candidate/cale-case?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Sergio A Maldonado Sr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7866.05,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/sergio-a-maldonado-sr?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Sergio A Maldonado Sr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7866.05,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/sergio-a-maldonado-sr?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Cale Case",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7300.0,
+       "expenditures": 0.0,
+       "status": "$2,548.06",
+       "url": "/wy/candidate/cale-case?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "25"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-27-6565?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 27",
+   "url": "/wy/race/wyoming-state-senate-district-27-6565",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 5270.0,
+   "totalExpenditures": 1941.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Bill Landen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5270.46,
+       "expenditures": 0.0,
+       "status": "$1,940.66",
+       "url": "/wy/candidate/bill-landen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Bill Landen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 5270.46,
+       "expenditures": 0.0,
+       "status": "$1,940.66",
+       "url": "/wy/candidate/bill-landen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "27"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-29-18667?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 29",
+   "url": "/wy/race/wyoming-state-senate-district-29-18667",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 14128.0,
+   "totalExpenditures": 4748.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Drew Perkins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 14127.75,
+       "expenditures": 0.0,
+       "status": "$4,748.25",
+       "url": "/wy/candidate/drew-perkins?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Drew Perkins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 14127.75,
+       "expenditures": 0.0,
+       "status": "$4,748.25",
+       "url": "/wy/candidate/drew-perkins?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "29"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-3-15536?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 3",
+   "url": "/wy/race/wyoming-state-senate-district-3-15536",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 21702.0,
+   "totalExpenditures": 26161.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Cheri Steinmetz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17147.75,
+       "expenditures": 0.0,
+       "status": "$13,873.24",
+       "url": "/wy/candidate/cheri-steinmetz?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Marcella R Shaver",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3954.56,
+       "expenditures": 0.0,
+       "status": "$3,954.56",
+       "url": "/wy/candidate/marcella-r-shaver?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Marcella R Shaver",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3954.56,
+       "expenditures": 0.0,
+       "status": "$3,954.56",
+       "url": "/wy/candidate/marcella-r-shaver?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Cheri Steinmetz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17147.75,
+       "expenditures": 0.0,
+       "status": "$13,873.24",
+       "url": "/wy/candidate/cheri-steinmetz?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Martin Gubbels",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 600.0,
+       "expenditures": 19800.0,
+       "status": "$8,333.31",
+       "url": "/wy/candidate/martin-gubbels?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "3"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-5-20025?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 5",
+   "url": "/wy/race/wyoming-state-senate-district-5-20025",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 32243.0,
+   "totalExpenditures": 30390.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Lynn Hutchings",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16792.98,
+       "expenditures": 0.0,
+       "status": "$12,549.23",
+       "url": "/wy/candidate/lynn-hutchings?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Lynn Hutchings",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16792.98,
+       "expenditures": 0.0,
+       "status": "$12,549.23",
+       "url": "/wy/candidate/lynn-hutchings?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Fred Emerich",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 15450.0,
+       "expenditures": 0.0,
+       "status": "$17,840.61",
+       "url": "/wy/candidate/fred-emerich?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "5"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-7-4195?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 7",
+   "url": "/wy/race/wyoming-state-senate-district-7-4195",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 4550.0,
+   "totalExpenditures": 480.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Stephan Andrew Pappas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 4550.0,
+       "expenditures": 0.0,
+       "status": "$479.76",
+       "url": "/wy/candidate/stephan-andrew-pappas?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Stephan Andrew Pappas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 4550.0,
+       "expenditures": 0.0,
+       "status": "$479.76",
+       "url": "/wy/candidate/stephan-andrew-pappas?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "7"
   },
   {
-   "office": "",
-   "url": "/wy/race/wyoming-state-senate-district-9-20029?cycle=2018-election-cycle",
-   "dataThrough": "08/03/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Wyoming State Senate District 9",
+   "url": "/wy/race/wyoming-state-senate-district-9-20029",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 500.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Chris Rothfuss",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$500.00",
+       "url": "/wy/candidate/chris-rothfuss?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 21, 2018",
+     "candidates": [
+      {
+       "name": "Chris Rothfuss",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$500.00",
+       "url": "/wy/candidate/chris-rothfuss?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "9"
   }
  ]
 }

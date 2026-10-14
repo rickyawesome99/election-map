@@ -226,8 +226,9 @@
    "candidates": [
     {
      "canceledGeneral": true,
-     "name": "General election canceled",
-     "party": "O"
+     "incumbent": true,
+     "name": "Adrian Tam",
+     "party": "D"
     }
    ]
   },
@@ -416,8 +417,9 @@
    "candidates": [
     {
      "canceledGeneral": true,
-     "name": "General election canceled",
-     "party": "O"
+     "incumbent": true,
+     "name": "Trish La Chica",
+     "party": "D"
     }
    ]
   },
@@ -806,8 +808,9 @@
    "candidates": [
     {
      "canceledGeneral": true,
-     "name": "General election canceled",
-     "party": "O"
+     "incumbent": true,
+     "name": "Chris Lee",
+     "party": "D"
     }
    ]
   },

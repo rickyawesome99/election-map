@@ -6,7 +6,7 @@ import type { Chamber, Incumbent } from "@/data/stateLegDistricts";
 import type { Demographics } from "@/data/demographics";
 import type { StateLegDistrictResult } from "@/data/stateLegResults";
 import type { StateLegRedistrictingEntry } from "@/data/stateLegRedistricting";
-import type { StateLegDistrictCandidates2026 } from "@/data/stateLegCandidates2026";
+import type { StateLegCandidate2026, StateLegDistrictCandidates2026 } from "@/data/stateLegCandidates2026";
 import type { StateLegOutgoing2026 } from "@/data/stateLegOutgoing2026";
 
 export type AtlasPresVote = { demPct: number; repPct: number; margin: number; totalVotes: number | null; estimated?: boolean };
@@ -68,19 +68,48 @@ export type AtlasProjection = {
   sigma: number;
   pD: number | null;
   rating: string | null;
-  contest: "contested" | "uncontested-D" | "uncontested-R" | "none" | "other" | "not-up";
+  contest: "contested" | "uncontested-D" | "uncontested-R" | "independent" | "split" | "none" | "other" | "not-up";
   seats: number;
+  /** Seats a party cannot lose because the other fields too few nominees (a multi-member district or a post with one party). */
+  guaranteed?: { dem: number; rep: number };
+  /** Seats actually drawn on the margin: `seats` less the guaranteed ones. */
+  contestedSeats?: number;
   rows: AtlasProjectionRow[];
+  /** P(an independent wins): the modeled independent, or 1 where no major party is on the ballot. */
+  pI?: number | null;
+  /** The independent-vs-party contest (lib/stateLegForecast.ts IndependentContest, as shipped). */
+  indep?: AtlasIndependent | null;
 };
+
+export type AtlasIndependent = {
+  name: string;
+  partyLabel: string;
+  slot: "D" | "R";
+  opponent: string | null;
+  basis: "incumbent" | "record" | "endorsed";
+  endorsedBy: "D" | "R" | null;
+  note: string | null;
+  record: { year: number; opponentParty: "D" | "R"; share: number; advantage: number; expected: number; residual: number }[];
+  personal: number;
+  advantage: number;
+  seats: number;
+  sameElectorate: boolean;
+};
+
+/** "O" where the modeled independent is favored, for map fills and seat tallies. */
+export function independentWinner(pr: Pick<AtlasProjection, "contest" | "pI">): "O" | null {
+  return pr.contest === "independent" && pr.pI != null && pr.pI >= 0.5 ? "O" : null;
+}
 
 export type AtlasChamberProjection = {
   year: number;
   totalSeats: number | null;
   seatsUp: number;
   holdover: { dem: number; rep: number; oth: number };
-  decided: { dem: number; rep: number };
+  decided: { dem: number; rep: number; oth?: number };
   expectedDem: number;
   expectedRep: number;
+  expectedOth?: number;
   lo80: number;
   hi80: number;
   majority: number | null;
@@ -177,10 +206,49 @@ export function resultMargin(r: StateLegDistrictResult): number | null {
   return ((r.repVotes - r.demVotes) / r.totalVotes) * 100;
 }
 
+/** "Calvin R. Schrage" and "Calvin Schrage" match: first initial + surname, nicknames and suffixes dropped. */
+export function personKey(name: string): string {
+  const parts = name.toLowerCase().replace(/["“”(][^"“”)]*["“”)]/g, " ").replace(/[^a-z\s-]/g, " ").split(/\s+/)
+    .filter((x) => x && !["jr", "sr", "ii", "iii", "iv"].includes(x));
+  return parts.length ? `${parts[0][0]} ${parts[parts.length - 1]}` : name.toLowerCase();
+}
+
+export type FieldPerson = StateLegCandidate2026 & {
+  /** Every ballot line the person holds (Oregon and Vermont cross-nominate; New York fuses). */
+  lines: ("D" | "R" | "O")[];
+};
+
+/**
+ * The field as people rather than ballot lines: a candidate nominated by both major parties is one
+ * nominee, in the party they sit for (the roster) or, for a newcomer, the party holding the seat;
+ * with neither known they count for no major party.
+ */
+export function fieldPersons(c: StateLegDistrictCandidates2026, sitting: { name: string; party: string }[] = []): FieldPerson[] {
+  const byKey = new Map<string, FieldPerson>();
+  for (const x of c.candidates) {
+    const k = `${personKey(x.name)}|${x.post ?? ""}|${x.writeIn ? "w" : ""}`;
+    const cur = byKey.get(k);
+    if (!cur) { byKey.set(k, { ...x, lines: [x.party] }); continue; }
+    cur.lines.push(x.party);
+    cur.incumbent = cur.incumbent || x.incumbent;
+    // Keep the major-party line as the person's party and the longest label for the others.
+    if (cur.party === "O" && x.party !== "O") { cur.party = x.party; cur.partyLabel = x.partyLabel ?? cur.partyLabel; }
+    else if (x.party === "O" && x.partyLabel && (!cur.partyLabel || x.partyLabel.length > cur.partyLabel.length)) cur.partyLabel = x.partyLabel;
+  }
+  const heldBy = [...new Set(sitting.map((s) => s.party))];
+  for (const p of byKey.values()) {
+    if (!(p.lines.includes("D") && p.lines.includes("R"))) continue;
+    const mine = sitting.find((s) => personKey(s.name) === personKey(p.name))?.party;
+    p.party = mine === "D" || mine === "R" ? mine : heldBy.length === 1 && (heldBy[0] === "D" || heldBy[0] === "R") ? heldBy[0] : "O";
+    if (p.party === "O") p.partyLabel = "Democratic and Republican lines";
+  }
+  return [...byKey.values()];
+}
+
 /** How a 2026 field reads for the selector and the header: who is in it and whether both majors are. */
-export function contest2026(c: StateLegDistrictCandidates2026 | undefined): { label: string; status: "contested" | "uncontested-D" | "uncontested-R" | "none" | "other"; open: boolean } | null {
+export function contest2026(c: StateLegDistrictCandidates2026 | undefined, sitting: { name: string; party: string }[] = []): { label: string; status: "contested" | "uncontested-D" | "uncontested-R" | "none" | "other"; open: boolean } | null {
   if (!c) return null;
-  const real = c.candidates.filter((x) => !x.writeIn);
+  const real = fieldPersons(c, sitting).filter((x) => !x.writeIn);
   const parties = new Set(real.map((x) => x.party));
   const open = !c.candidates.some((x) => x.incumbent);
   if (real.some((x) => x.canceledGeneral)) {
@@ -191,10 +259,13 @@ export function contest2026(c: StateLegDistrictCandidates2026 | undefined): { la
     if (p === "R") return { label: `${who} (R), general canceled`, status: "uncontested-R", open };
     return { label: "General election canceled", status: "none", open };
   }
-  const names = (p: "D" | "R" | "O") => real.filter((x) => x.party === p).map((x) => x.name.split(" ").slice(-1)[0] + (x.incumbent ? " (inc.)" : ""));
+  const names = (p: "D" | "R" | "O") => real.filter((x) => x.party === p).map((x) => x.name.split(" ").slice(-1)[0] + (x.incumbent ? " (inc.)" : "") + (x.lines.includes("D") && x.lines.includes("R") ? " (both lines)" : ""));
   if (parties.has("D") && parties.has("R")) return { label: `${names("D").join(", ")} (D) vs ${names("R").join(", ")} (R)`, status: "contested", open };
   if (parties.has("D")) return { label: `${names("D").join(", ")} (D), no Republican`, status: "uncontested-D", open };
   if (parties.has("R")) return { label: `${names("R").join(", ")} (R), no Democrat`, status: "uncontested-R", open };
   if (real.length) return { label: real.map((x) => `${x.name} (${x.partyLabel ?? "Other"})`).join(", "), status: "other", open };
+  // Nobody on the printed ballot and only non-major write-ins (Tennessee's 93rd): an independent wins.
+  const writeIns = c.candidates.filter((x) => x.writeIn);
+  if (writeIns.length && writeIns.every((x) => x.party === "O")) return { label: `${writeIns.length} independent write-in${writeIns.length > 1 ? "s" : ""}, no major-party nominee`, status: "other", open };
   return { label: "No candidates listed", status: "none", open };
 }

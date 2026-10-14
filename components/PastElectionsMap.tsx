@@ -167,7 +167,7 @@ export default function PastElectionsMap({
     return () => ro.disconnect();
   }, [measure]);
 
-  const mapStroke = darkMode ? "#0d1117" : "#f6f8fa";
+  const mapStroke = darkMode ? "#0d1117" : "#f9f8f5";
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
 

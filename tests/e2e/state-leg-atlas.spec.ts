@@ -28,10 +28,14 @@ test("the chamber atlas opens a district from the hash and from a box", async ({
   await expect(page.getByText(/of 99 districts/)).toBeVisible();
 });
 
-test("the legislature overview links into the atlas and Nebraska has one chamber", async ({ page }) => {
+test("the state page's legislature section links into the atlas and Nebraska has one chamber", async ({ page }) => {
+  // The legislature overview folded into the state page; its old URL forwards there.
   await page.goto("/states/oh/legislature");
-  await page.locator("table tbody tr").first().getByRole("link").first().click();
-  await expect(page).toHaveURL(/\/states\/oh\/legislature\/house#hd-/);
+  await expect(page).toHaveURL(/\/states\/oh#legislature$/);
+  await page.getByRole("link", { name: /^Explore 99 districts/ }).click();
+  await expect(page).toHaveURL(/\/states\/oh\/legislature\/house$/);
+  await page.goto("/states/oh/legislature#senate");
+  await expect(page).toHaveURL(/\/states\/oh\/legislature\/senate$/);
 
   const missing = await page.goto("/states/ne/legislature/house");
   expect(missing?.status()).toBe(404);

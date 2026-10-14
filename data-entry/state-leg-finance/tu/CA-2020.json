@@ -1,1108 +1,6071 @@
 {
  "state": "CA",
  "cycle": 2020,
- "fetched": "2026-10-11",
- "dataThrough": "06/30/2026",
+ "fetched": "2026-10-12",
+ "dataThrough": "12/31/2020",
  "races": [
   {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-1-46191?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-10-46200?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-11-46201?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-12-46202?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-13-46203?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-14-46204?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-15-46205?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-16-46206?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-17-46207?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-18-46208?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-19-46209?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-2-46192?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-20-46210?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-21-46211?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-22-46212?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-23-46213?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-24-46214?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-25-46215?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-26-46216?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-27-46217?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-28-46218?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-29-46219?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-3-46193?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-30-46220?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-31-46221?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-32-46222?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-33-46223?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-34-46224?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-35-46225?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-36-46226?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-37-46227?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-38-46228?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-39-46229?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-4-46194?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-40-46230?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-41-46231?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-42-46232?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-43-46233?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-44-46234?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-45-46235?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-46-46236?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-47-46237?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-48-46238?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-49-46239?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-5-46195?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-50-46240?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-51-46241?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-52-46242?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-53-46243?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-54-44697?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-55-46244?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-56-46245?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-57-46246?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-58-46247?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-59-46248?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-6-46196?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-60-46249?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-61-46250?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-62-46251?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-63-46252?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-64-46253?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-65-46254?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-66-46255?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-67-46256?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-68-46257?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-69-46258?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-7-46197?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-70-46259?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-71-46260?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-72-46261?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-73-46262?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-74-46263?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-75-46264?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-76-46265?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-77-46266?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-78-46267?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-79-46268?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-8-46198?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-80-46269?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-9-46199?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-1-46270?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Assembly District 1",
+   "url": "/ca/race/california-state-assembly-district-1-46191",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1811841.0,
+   "totalExpenditures": 2327616.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Megan Dahle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 833143.98,
+       "expenditures": 70100.0,
+       "status": "$1,090,301.37",
+       "url": "/ca/candidate/megan-dahle?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Elizabeth Betancourt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 479724.23,
+       "expenditures": 0.0,
+       "status": "$567,725.62",
+       "url": "/ca/candidate/elizabeth-betancourt?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Megan Dahle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 833143.98,
+       "expenditures": 70100.0,
+       "status": "$1,090,301.37",
+       "url": "/ca/candidate/megan-dahle?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Elizabeth Betancourt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 479724.23,
+       "expenditures": 0.0,
+       "status": "$567,725.62",
+       "url": "/ca/candidate/elizabeth-betancourt?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Pk Paul Dhanuka",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 498973.0,
+       "expenditures": 100000.0,
+       "status": "$669,588.56",
+       "url": "/ca/candidate/pk-paul-dhanuka?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "California State Assembly District 10",
+   "url": "/ca/race/california-state-assembly-district-10-46200",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 472301.0,
+   "totalExpenditures": 2155987.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Marc Levine",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 471353.0,
+       "expenditures": 0.0,
+       "status": "$2,148,311.95",
+       "url": "/ca/candidate/marc-levine?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Veronica Jacobi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 947.7,
+       "expenditures": 5220.0,
+       "status": "$7,674.62",
+       "url": "/ca/candidate/veronica-jacobi?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Marc Levine",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 471353.0,
+       "expenditures": 0.0,
+       "status": "$2,148,311.95",
+       "url": "/ca/candidate/marc-levine?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Veronica Jacobi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 947.7,
+       "expenditures": 5220.0,
+       "status": "$7,674.62",
+       "url": "/ca/candidate/veronica-jacobi?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "California State Assembly District 11",
+   "url": "/ca/race/california-state-assembly-district-11-46201",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1002957.0,
+   "totalExpenditures": 1174743.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jim Frazier",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1002956.61,
+       "expenditures": 0.0,
+       "status": "$1,174,742.59",
+       "url": "/ca/candidate/jim-frazier?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Jim Frazier",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1002956.61,
+       "expenditures": 0.0,
+       "status": "$1,174,742.59",
+       "url": "/ca/candidate/jim-frazier?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "California State Assembly District 12",
+   "url": "/ca/race/california-state-assembly-district-12-46202",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 945235.0,
+   "totalExpenditures": 1045276.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Heath Flora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 945235.11,
+       "expenditures": 0.0,
+       "status": "$1,045,276.14",
+       "url": "/ca/candidate/heath-flora?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Paul Akinjo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/paul-akinjo?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Heath Flora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 945235.11,
+       "expenditures": 0.0,
+       "status": "$1,045,276.14",
+       "url": "/ca/candidate/heath-flora?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Paul Akinjo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/paul-akinjo?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "California State Assembly District 13",
+   "url": "/ca/race/california-state-assembly-district-13-46203",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1467109.0,
+   "totalExpenditures": 1744342.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Carlos Villapudua",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 404765.8,
+       "expenditures": 0.0,
+       "status": "$454,628.18",
+       "url": "/ca/candidate/carlos-villapudua?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kathy Miller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 803755.22,
+       "expenditures": 0.0,
+       "status": "$948,198.32",
+       "url": "/ca/candidate/kathy-miller?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Kathy Miller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 803755.22,
+       "expenditures": 0.0,
+       "status": "$948,198.32",
+       "url": "/ca/candidate/kathy-miller?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Carlos Villapudua",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 404765.8,
+       "expenditures": 0.0,
+       "status": "$454,628.18",
+       "url": "/ca/candidate/carlos-villapudua?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Christina Fugazi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 258587.55,
+       "expenditures": 6000.0,
+       "status": "$341,515.87",
+       "url": "/ca/candidate/christina-fugazi?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "California State Assembly District 14",
+   "url": "/ca/race/california-state-assembly-district-14-46204",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1041242.0,
+   "totalExpenditures": 1772137.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Tim Grayson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1024869.16,
+       "expenditures": 0.0,
+       "status": "$1,753,761.40",
+       "url": "/ca/candidate/tim-grayson?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Janell Proctor",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16373.18,
+       "expenditures": 0.0,
+       "status": "$18,375.20",
+       "url": "/ca/candidate/janell-proctor?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Tim Grayson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1024869.16,
+       "expenditures": 0.0,
+       "status": "$1,753,761.40",
+       "url": "/ca/candidate/tim-grayson?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Janell Proctor",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16373.18,
+       "expenditures": 0.0,
+       "status": "$18,375.20",
+       "url": "/ca/candidate/janell-proctor?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "California State Assembly District 15",
+   "url": "/ca/race/california-state-assembly-district-15-46205",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 862388.0,
+   "totalExpenditures": 962908.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Buffy Wicks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 860491.76,
+       "expenditures": 0.0,
+       "status": "$960,638.98",
+       "url": "/ca/candidate/buffy-wicks?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Buffy Wicks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 860491.76,
+       "expenditures": 0.0,
+       "status": "$960,638.98",
+       "url": "/ca/candidate/buffy-wicks?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jeanne Solnordal",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1895.79,
+       "expenditures": 750.0,
+       "status": "$2,268.59",
+       "url": "/ca/candidate/jeanne-solnordal?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "California State Assembly District 16",
+   "url": "/ca/race/california-state-assembly-district-16-46206",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1149192.0,
+   "totalExpenditures": 1558803.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Rebecca Bauer-Kahan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1138701.37,
+       "expenditures": 0.0,
+       "status": "$1,414,608.82",
+       "url": "/ca/candidate/rebecca-bauer-kahan?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joe Rubay",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10490.49,
+       "expenditures": 81000.0,
+       "status": "$144,194.32",
+       "url": "/ca/candidate/joe-rubay?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Rebecca Bauer-Kahan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1138701.37,
+       "expenditures": 0.0,
+       "status": "$1,414,608.82",
+       "url": "/ca/candidate/rebecca-bauer-kahan?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joe Rubay",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10490.49,
+       "expenditures": 81000.0,
+       "status": "$144,194.32",
+       "url": "/ca/candidate/joe-rubay?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "California State Assembly District 17",
+   "url": "/ca/race/california-state-assembly-district-17-46207",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1175454.0,
+   "totalExpenditures": 3001861.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "David Chiu",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1175454.4,
+       "expenditures": 0.0,
+       "status": "$3,001,861.25",
+       "url": "/ca/candidate/david-chiu?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "David Chiu",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1175454.4,
+       "expenditures": 0.0,
+       "status": "$3,001,861.25",
+       "url": "/ca/candidate/david-chiu?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "California State Assembly District 18",
+   "url": "/ca/race/california-state-assembly-district-18-46208",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1429493.0,
+   "totalExpenditures": 3791496.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Rob Bonta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1429492.51,
+       "expenditures": 0.0,
+       "status": "$3,791,495.60",
+       "url": "/ca/candidate/rob-bonta?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Steve Slauson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/steve-slauson?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Rob Bonta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1429492.51,
+       "expenditures": 0.0,
+       "status": "$3,791,495.60",
+       "url": "/ca/candidate/rob-bonta?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Steve Slauson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/steve-slauson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "California State Assembly District 19",
+   "url": "/ca/race/california-state-assembly-district-19-46209",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1741356.0,
+   "totalExpenditures": 2174415.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Phil Ting",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1729098.16,
+       "expenditures": 0.0,
+       "status": "$2,161,771.14",
+       "url": "/ca/candidate/phil-ting?cycle=2020-election-cycle"
+      },
+      {
+       "name": "John McDonnell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12258.12,
+       "expenditures": 9450.0,
+       "status": "$12,644.32",
+       "url": "/ca/candidate/john-mcdonnell?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Phil Ting",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1729098.16,
+       "expenditures": 0.0,
+       "status": "$2,161,771.14",
+       "url": "/ca/candidate/phil-ting?cycle=2020-election-cycle"
+      },
+      {
+       "name": "John McDonnell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12258.12,
+       "expenditures": 9450.0,
+       "status": "$12,644.32",
+       "url": "/ca/candidate/john-mcdonnell?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "California State Assembly District 2",
+   "url": "/ca/race/california-state-assembly-district-2-46192",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 861606.0,
+   "totalExpenditures": 1198743.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jim Wood",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 861605.77,
+       "expenditures": 0.0,
+       "status": "$1,198,743.29",
+       "url": "/ca/candidate/jim-wood?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Jim Wood",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 861605.77,
+       "expenditures": 0.0,
+       "status": "$1,198,743.29",
+       "url": "/ca/candidate/jim-wood?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "California State Assembly District 20",
+   "url": "/ca/race/california-state-assembly-district-20-46210",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 921264.0,
+   "totalExpenditures": 1097906.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Bill Quirk",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 844933.42,
+       "expenditures": 0.0,
+       "status": "$1,024,807.31",
+       "url": "/ca/candidate/bill-quirk?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Alexis Villalobos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5478.4,
+       "expenditures": 0.0,
+       "status": "$4,948.58",
+       "url": "/ca/candidate/alexis-villalobos?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Bill Quirk",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 844933.42,
+       "expenditures": 0.0,
+       "status": "$1,024,807.31",
+       "url": "/ca/candidate/bill-quirk?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Alexis Villalobos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5478.4,
+       "expenditures": 0.0,
+       "status": "$4,948.58",
+       "url": "/ca/candidate/alexis-villalobos?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Vipan Bajwa",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 70852.13,
+       "expenditures": 42100.0,
+       "status": "$68,149.80",
+       "url": "/ca/candidate/vipan-bajwa?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "California State Assembly District 21",
+   "url": "/ca/race/california-state-assembly-district-21-46211",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1092017.0,
+   "totalExpenditures": 2244833.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Adam Gray",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1092016.63,
+       "expenditures": 0.0,
+       "status": "$2,244,833.20",
+       "url": "/ca/candidate/adam-gray?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joel Campos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/joel-campos?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Adam Gray",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1092016.63,
+       "expenditures": 0.0,
+       "status": "$2,244,833.20",
+       "url": "/ca/candidate/adam-gray?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joel Campos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/joel-campos?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "California State Assembly District 22",
+   "url": "/ca/race/california-state-assembly-district-22-46212",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 680716.0,
+   "totalExpenditures": 1168123.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Kevin Mullin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 663622.11,
+       "expenditures": 0.0,
+       "status": "$1,148,398.91",
+       "url": "/ca/candidate/kevin-mullin?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Kevin Mullin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 663622.11,
+       "expenditures": 0.0,
+       "status": "$1,148,398.91",
+       "url": "/ca/candidate/kevin-mullin?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bridget Mahoney",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17093.59,
+       "expenditures": 1000.0,
+       "status": "$19,723.76",
+       "url": "/ca/candidate/bridget-mahoney?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "California State Assembly District 23",
+   "url": "/ca/race/california-state-assembly-district-23-46213",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 625853.0,
+   "totalExpenditures": 687764.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jim Patterson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 625852.76,
+       "expenditures": 0.0,
+       "status": "$687,764.34",
+       "url": "/ca/candidate/jim-patterson?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Jim Patterson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 625852.76,
+       "expenditures": 0.0,
+       "status": "$687,764.34",
+       "url": "/ca/candidate/jim-patterson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "California State Assembly District 24",
+   "url": "/ca/race/california-state-assembly-district-24-46214",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 815071.0,
+   "totalExpenditures": 1085550.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Marc Berman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 792527.21,
+       "expenditures": 0.0,
+       "status": "$1,060,472.37",
+       "url": "/ca/candidate/marc-berman?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Peter Ohtaki",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22543.97,
+       "expenditures": 18900.0,
+       "status": "$25,077.72",
+       "url": "/ca/candidate/peter-ohtaki?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Marc Berman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 792527.21,
+       "expenditures": 0.0,
+       "status": "$1,060,472.37",
+       "url": "/ca/candidate/marc-berman?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Peter Ohtaki",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22543.97,
+       "expenditures": 18900.0,
+       "status": "$25,077.72",
+       "url": "/ca/candidate/peter-ohtaki?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "California State Assembly District 25",
+   "url": "/ca/race/california-state-assembly-district-25-46215",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1033981.0,
+   "totalExpenditures": 1142754.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Alex Lee",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 365062.73,
+       "expenditures": 4900.0,
+       "status": "$153,966.97",
+       "url": "/ca/candidate/alex-lee?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bob Brunton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10270.98,
+       "expenditures": 1310.0,
+       "status": "$10,904.35",
+       "url": "/ca/candidate/bob-brunton?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Alex Lee",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 365062.73,
+       "expenditures": 4900.0,
+       "status": "$153,966.97",
+       "url": "/ca/candidate/alex-lee?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bob Brunton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10270.98,
+       "expenditures": 1310.0,
+       "status": "$10,904.35",
+       "url": "/ca/candidate/bob-brunton?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jim Canova",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 30946.34,
+       "expenditures": 0.0,
+       "status": "$36,352.97",
+       "url": "/ca/candidate/jim-canova?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Natasha Gupta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33653.04,
+       "expenditures": 0.0,
+       "status": "$29,392.69",
+       "url": "/ca/candidate/natasha-gupta?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Anna Kepner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 369109.73,
+       "expenditures": 62000.0,
+       "status": "$605,560.91",
+       "url": "/ca/candidate/anna-kepner?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Carmen Montano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 43175.0,
+       "expenditures": 5050.0,
+       "status": "$43,931.79",
+       "url": "/ca/candidate/carmen-montano?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Anthony Phan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 72234.6,
+       "expenditures": 25000.0,
+       "status": "$94,774.48",
+       "url": "/ca/candidate/anthony-phan?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Roman Reed",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/roman-reed?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Anna Song",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 109528.37,
+       "expenditures": 0.0,
+       "status": "$167,869.73",
+       "url": "/ca/candidate/anna-song?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "California State Assembly District 26",
+   "url": "/ca/race/california-state-assembly-district-26-46216",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 889617.0,
+   "totalExpenditures": 1164702.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Devon Mathis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 599130.11,
+       "expenditures": 0.0,
+       "status": "$645,254.35",
+       "url": "/ca/candidate/devon-mathis?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Drew Phelps",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 290487.18,
+       "expenditures": 70000.0,
+       "status": "$519,447.69",
+       "url": "/ca/candidate/drew-phelps?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Devon Mathis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 599130.11,
+       "expenditures": 0.0,
+       "status": "$645,254.35",
+       "url": "/ca/candidate/devon-mathis?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Drew Phelps",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 290487.18,
+       "expenditures": 70000.0,
+       "status": "$519,447.69",
+       "url": "/ca/candidate/drew-phelps?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "California State Assembly District 27",
+   "url": "/ca/race/california-state-assembly-district-27-46217",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 650559.0,
+   "totalExpenditures": 839311.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Ash Kalra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 650558.5,
+       "expenditures": 0.0,
+       "status": "$839,311.36",
+       "url": "/ca/candidate/ash-kalra?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Ash Kalra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 650558.5,
+       "expenditures": 0.0,
+       "status": "$839,311.36",
+       "url": "/ca/candidate/ash-kalra?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "California State Assembly District 28",
+   "url": "/ca/race/california-state-assembly-district-28-46218",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1785181.0,
+   "totalExpenditures": 3665013.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Evan Low",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1785181.29,
+       "expenditures": 0.0,
+       "status": "$3,665,012.86",
+       "url": "/ca/candidate/evan-low?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Evan Low",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1785181.29,
+       "expenditures": 0.0,
+       "status": "$3,665,012.86",
+       "url": "/ca/candidate/evan-low?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "California State Assembly District 29",
+   "url": "/ca/race/california-state-assembly-district-29-46219",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 377759.0,
+   "totalExpenditures": 397289.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Mark Stone",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 374133.5,
+       "expenditures": 0.0,
+       "status": "$393,664.02",
+       "url": "/ca/candidate/mark-stone?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Shomir Banerjee",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3625.0,
+       "expenditures": 120.0,
+       "status": "$3,625.00",
+       "url": "/ca/candidate/shomir-banerjee?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Mark Stone",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 374133.5,
+       "expenditures": 0.0,
+       "status": "$393,664.02",
+       "url": "/ca/candidate/mark-stone?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Shomir Banerjee",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3625.0,
+       "expenditures": 120.0,
+       "status": "$3,625.00",
+       "url": "/ca/candidate/shomir-banerjee?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "California State Assembly District 3",
+   "url": "/ca/race/california-state-assembly-district-3-46193",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 912813.0,
+   "totalExpenditures": 1171580.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "James Gallagher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 912812.86,
+       "expenditures": 0.0,
+       "status": "$1,171,580.32",
+       "url": "/ca/candidate/james-gallagher?cycle=2020-election-cycle"
+      },
+      {
+       "name": "James Henson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/james-henson?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "James Gallagher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 912812.86,
+       "expenditures": 0.0,
+       "status": "$1,171,580.32",
+       "url": "/ca/candidate/james-gallagher?cycle=2020-election-cycle"
+      },
+      {
+       "name": "James Henson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/james-henson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "California State Assembly District 30",
+   "url": "/ca/race/california-state-assembly-district-30-46220",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 912891.0,
+   "totalExpenditures": 967725.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Robert Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 911857.16,
+       "expenditures": 0.0,
+       "status": "$966,690.82",
+       "url": "/ca/candidate/robert-rivas?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Gregory Swett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1034.3,
+       "expenditures": 1000.0,
+       "status": "$1,034.30",
+       "url": "/ca/candidate/gregory-swett?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Robert Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 911857.16,
+       "expenditures": 0.0,
+       "status": "$966,690.82",
+       "url": "/ca/candidate/robert-rivas?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Gregory Swett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1034.3,
+       "expenditures": 1000.0,
+       "status": "$1,034.30",
+       "url": "/ca/candidate/gregory-swett?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "California State Assembly District 31",
+   "url": "/ca/race/california-state-assembly-district-31-46221",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 706684.0,
+   "totalExpenditures": 1491973.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Joaquin Arambula",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 706684.31,
+       "expenditures": 0.0,
+       "status": "$1,491,973.47",
+       "url": "/ca/candidate/joaquin-arambula?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Joaquin Arambula",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 706684.31,
+       "expenditures": 0.0,
+       "status": "$1,491,973.47",
+       "url": "/ca/candidate/joaquin-arambula?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "California State Assembly District 32",
+   "url": "/ca/race/california-state-assembly-district-32-46222",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1373653.0,
+   "totalExpenditures": 969912.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Rudy Salas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1307176.29,
+       "expenditures": 0.0,
+       "status": "$879,687.71",
+       "url": "/ca/candidate/rudy-salas?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Todd Cotta",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 66476.86,
+       "expenditures": 1500.0,
+       "status": "$90,224.39",
+       "url": "/ca/candidate/todd-cotta?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Rudy Salas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1307176.29,
+       "expenditures": 0.0,
+       "status": "$879,687.71",
+       "url": "/ca/candidate/rudy-salas?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Todd Cotta",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 66476.86,
+       "expenditures": 1500.0,
+       "status": "$90,224.39",
+       "url": "/ca/candidate/todd-cotta?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "California State Assembly District 33",
+   "url": "/ca/race/california-state-assembly-district-33-46223",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 269906.0,
+   "totalExpenditures": 386142.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Thurston Smitty Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 196217.53,
+       "expenditures": 10000.0,
+       "status": "$267,866.11",
+       "url": "/ca/candidate/thurston-smitty-smith?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Rick Herrick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 73688.0,
+       "expenditures": 9300.0,
+       "status": "$118,276.14",
+       "url": "/ca/candidate/rick-herrick?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Rick Herrick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 73688.0,
+       "expenditures": 9300.0,
+       "status": "$118,276.14",
+       "url": "/ca/candidate/rick-herrick?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Thurston Smitty Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 196217.53,
+       "expenditures": 10000.0,
+       "status": "$267,866.11",
+       "url": "/ca/candidate/thurston-smitty-smith?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "California State Assembly District 34",
+   "url": "/ca/race/california-state-assembly-district-34-46224",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 966797.0,
+   "totalExpenditures": 1096547.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Vince Fong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 966796.73,
+       "expenditures": 0.0,
+       "status": "$1,096,546.75",
+       "url": "/ca/candidate/vince-fong?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Vince Fong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 966796.73,
+       "expenditures": 0.0,
+       "status": "$1,096,546.75",
+       "url": "/ca/candidate/vince-fong?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "California State Assembly District 35",
+   "url": "/ca/race/california-state-assembly-district-35-46225",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 3380524.0,
+   "totalExpenditures": 4673043.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jordan Cunningham",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1613696.85,
+       "expenditures": 0.0,
+       "status": "$2,726,827.73",
+       "url": "/ca/candidate/jordan-cunningham?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Dawn Addis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1766827.29,
+       "expenditures": 0.0,
+       "status": "$1,946,214.90",
+       "url": "/ca/candidate/dawn-addis?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Jordan Cunningham",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1613696.85,
+       "expenditures": 0.0,
+       "status": "$2,726,827.73",
+       "url": "/ca/candidate/jordan-cunningham?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Dawn Addis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1766827.29,
+       "expenditures": 0.0,
+       "status": "$1,946,214.90",
+       "url": "/ca/candidate/dawn-addis?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "California State Assembly District 36",
+   "url": "/ca/race/california-state-assembly-district-36-46226",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1488735.0,
+   "totalExpenditures": 2309222.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Thomas Lackey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1196395.73,
+       "expenditures": 0.0,
+       "status": "$1,950,116.06",
+       "url": "/ca/candidate/thomas-lackey?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Steve Fox",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 95747.32,
+       "expenditures": 50000.0,
+       "status": "$141,336.05",
+       "url": "/ca/candidate/steve-fox?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Thomas Lackey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1196395.73,
+       "expenditures": 0.0,
+       "status": "$1,950,116.06",
+       "url": "/ca/candidate/thomas-lackey?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Steve Fox",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 95747.32,
+       "expenditures": 50000.0,
+       "status": "$141,336.05",
+       "url": "/ca/candidate/steve-fox?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Johnathon Ervin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 151851.86,
+       "expenditures": 34979.86,
+       "status": "$176,827.05",
+       "url": "/ca/candidate/johnathon-ervin?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Diedra Greenaway",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21586.0,
+       "expenditures": 11500.0,
+       "status": "$17,335.00",
+       "url": "/ca/candidate/diedra-greenaway?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ollie McCaulley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23154.07,
+       "expenditures": 21400.0,
+       "status": "$23,608.31",
+       "url": "/ca/candidate/ollie-mccaulley?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Eric Ohlsen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/eric-ohlsen?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "California State Assembly District 37",
+   "url": "/ca/race/california-state-assembly-district-37-46227",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1159662.0,
+   "totalExpenditures": 1476487.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Stephen Bennett",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 674616.78,
+       "expenditures": 0.0,
+       "status": "$820,788.41",
+       "url": "/ca/candidate/stephen-bennett?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Stephen Bennett",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 674616.78,
+       "expenditures": 0.0,
+       "status": "$820,788.41",
+       "url": "/ca/candidate/stephen-bennett?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jonathan Abboud",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 114490.02,
+       "expenditures": 0.0,
+       "status": "$135,017.40",
+       "url": "/ca/candidate/jonathan-abboud?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jason Dominguez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 46225.0,
+       "expenditures": 14100.0,
+       "status": "$53,275.01",
+       "url": "/ca/candidate/jason-dominguez?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Elsa Granados",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 58600.0,
+       "expenditures": 0.0,
+       "status": "$65,718.82",
+       "url": "/ca/candidate/elsa-granados?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Cathy Murillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 265729.99,
+       "expenditures": 0.0,
+       "status": "$401,687.61",
+       "url": "/ca/candidate/cathy-murillo?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "California State Assembly District 38",
+   "url": "/ca/race/california-state-assembly-district-38-46228",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 887281.0,
+   "totalExpenditures": 1133606.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Suzette Martinez Valladares",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 593066.66,
+       "expenditures": 100.0,
+       "status": "$787,659.33",
+       "url": "/ca/candidate/suzette-martinez-valladares?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Lucie Volotzky",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15850.43,
+       "expenditures": 95.0,
+       "status": "$13,477.02",
+       "url": "/ca/candidate/lucie-volotzky?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Suzette Martinez Valladares",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 593066.66,
+       "expenditures": 100.0,
+       "status": "$787,659.33",
+       "url": "/ca/candidate/suzette-martinez-valladares?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Lucie Volotzky",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15850.43,
+       "expenditures": 95.0,
+       "status": "$13,477.02",
+       "url": "/ca/candidate/lucie-volotzky?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Dina Cervantes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 80748.38,
+       "expenditures": 0.0,
+       "status": "$112,529.89",
+       "url": "/ca/candidate/dina-cervantes?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Annie Cho",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 96430.44,
+       "expenditures": 0.0,
+       "status": "$96,412.00",
+       "url": "/ca/candidate/annie-cho?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Susan Christopher",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11504.59,
+       "expenditures": 0.0,
+       "status": "$10,400.00",
+       "url": "/ca/candidate/susan-christopher?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kelvin Driscoll",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 81191.0,
+       "expenditures": 0.0,
+       "status": "$97,165.18",
+       "url": "/ca/candidate/kelvin-driscoll?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Brandii Grace",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8489.0,
+       "expenditures": 11000.0,
+       "status": "$15,962.24",
+       "url": "/ca/candidate/brandii-grace?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "California State Assembly District 39",
+   "url": "/ca/race/california-state-assembly-district-39-46229",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 748664.0,
+   "totalExpenditures": 654296.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Luz Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 748664.01,
+       "expenditures": 0.0,
+       "status": "$654,296.23",
+       "url": "/ca/candidate/luz-rivas?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Luz Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 748664.01,
+       "expenditures": 0.0,
+       "status": "$654,296.23",
+       "url": "/ca/candidate/luz-rivas?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "California State Assembly District 4",
+   "url": "/ca/race/california-state-assembly-district-4-46194",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 975452.0,
+   "totalExpenditures": 1733876.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Cecilia Aguiar-Curry",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 961281.7,
+       "expenditures": 0.0,
+       "status": "$1,721,756.33",
+       "url": "/ca/candidate/cecilia-aguiar-curry?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Matthew Nelson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14170.0,
+       "expenditures": 100.0,
+       "status": "$12,119.97",
+       "url": "/ca/candidate/matthew-nelson?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Cecilia Aguiar-Curry",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 961281.7,
+       "expenditures": 0.0,
+       "status": "$1,721,756.33",
+       "url": "/ca/candidate/cecilia-aguiar-curry?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Matthew Nelson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14170.0,
+       "expenditures": 100.0,
+       "status": "$12,119.97",
+       "url": "/ca/candidate/matthew-nelson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "California State Assembly District 40",
+   "url": "/ca/race/california-state-assembly-district-40-46230",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1775783.0,
+   "totalExpenditures": 1543570.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "James Ramos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1767755.43,
+       "expenditures": 0.0,
+       "status": "$1,506,068.92",
+       "url": "/ca/candidate/james-ramos?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jennifer Tullius",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8027.23,
+       "expenditures": 25750.0,
+       "status": "$37,501.17",
+       "url": "/ca/candidate/jennifer-tullius?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "James Ramos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1767755.43,
+       "expenditures": 0.0,
+       "status": "$1,506,068.92",
+       "url": "/ca/candidate/james-ramos?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jennifer Tullius",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8027.23,
+       "expenditures": 25750.0,
+       "status": "$37,501.17",
+       "url": "/ca/candidate/jennifer-tullius?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "California State Assembly District 41",
+   "url": "/ca/race/california-state-assembly-district-41-46231",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 955609.0,
+   "totalExpenditures": 1148498.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Chris Holden",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 955609.0,
+       "expenditures": 0.0,
+       "status": "$1,148,498.45",
+       "url": "/ca/candidate/chris-holden?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Chris Holden",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 955609.0,
+       "expenditures": 0.0,
+       "status": "$1,148,498.45",
+       "url": "/ca/candidate/chris-holden?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "California State Assembly District 42",
+   "url": "/ca/race/california-state-assembly-district-42-46232",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1947274.0,
+   "totalExpenditures": 2875439.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Chad Mayes",
+       "party": "Independent",
+       "incumbent": true,
+       "contributions": 1350901.0,
+       "expenditures": 0.0,
+       "status": "$2,260,433.56",
+       "url": "/ca/candidate/chad-mayes?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Andrew Kotyuk",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 493403.2,
+       "expenditures": 13700.0,
+       "status": "$552,636.13",
+       "url": "/ca/candidate/andrew-kotyuk?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Chad Mayes",
+       "party": "Independent",
+       "incumbent": true,
+       "contributions": 1350901.0,
+       "expenditures": 0.0,
+       "status": "$2,260,433.56",
+       "url": "/ca/candidate/chad-mayes?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Andrew Kotyuk",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 493403.2,
+       "expenditures": 13700.0,
+       "status": "$552,636.13",
+       "url": "/ca/candidate/andrew-kotyuk?cycle=2020-election-cycle"
+      },
+      {
+       "name": "DeniAntoinette Mazingo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 102969.5,
+       "expenditures": 0.0,
+       "status": "$62,369.50",
+       "url": "/ca/candidate/deniantoinette-mazingo?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "California State Assembly District 43",
+   "url": "/ca/race/california-state-assembly-district-43-46233",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 738422.0,
+   "totalExpenditures": 1157198.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Laura Friedman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 738422.36,
+       "expenditures": 0.0,
+       "status": "$1,157,198.30",
+       "url": "/ca/candidate/laura-friedman?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Laura Friedman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 738422.36,
+       "expenditures": 0.0,
+       "status": "$1,157,198.30",
+       "url": "/ca/candidate/laura-friedman?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "California State Assembly District 44",
+   "url": "/ca/race/california-state-assembly-district-44-46234",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1018203.0,
+   "totalExpenditures": 2258016.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jacqui Irwin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 994464.48,
+       "expenditures": 0.0,
+       "status": "$2,222,750.42",
+       "url": "/ca/candidate/jacqui-irwin?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Denise Pedrow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23738.61,
+       "expenditures": 6013.93,
+       "status": "$35,266.04",
+       "url": "/ca/candidate/denise-pedrow?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Jacqui Irwin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 994464.48,
+       "expenditures": 0.0,
+       "status": "$2,222,750.42",
+       "url": "/ca/candidate/jacqui-irwin?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Denise Pedrow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23738.61,
+       "expenditures": 6013.93,
+       "status": "$35,266.04",
+       "url": "/ca/candidate/denise-pedrow?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "California State Assembly District 45",
+   "url": "/ca/race/california-state-assembly-district-45-46235",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1332065.0,
+   "totalExpenditures": 2023733.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jesse Gabriel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1317406.69,
+       "expenditures": 0.0,
+       "status": "$2,009,840.54",
+       "url": "/ca/candidate/jesse-gabriel?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jeffi Girgenti",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14658.0,
+       "expenditures": 400.0,
+       "status": "$13,892.73",
+       "url": "/ca/candidate/jeffi-girgenti?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Jesse Gabriel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1317406.69,
+       "expenditures": 0.0,
+       "status": "$2,009,840.54",
+       "url": "/ca/candidate/jesse-gabriel?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jeffi Girgenti",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14658.0,
+       "expenditures": 400.0,
+       "status": "$13,892.73",
+       "url": "/ca/candidate/jeffi-girgenti?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Denise Feldman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/denise-feldman?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "California State Assembly District 46",
+   "url": "/ca/race/california-state-assembly-district-46-46236",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 738830.0,
+   "totalExpenditures": 1000050.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Adrin Nazarian",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 737107.68,
+       "expenditures": 0.0,
+       "status": "$998,780.61",
+       "url": "/ca/candidate/adrin-nazarian?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Lanira Murphy",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1722.65,
+       "expenditures": 0.0,
+       "status": "$1,269.55",
+       "url": "/ca/candidate/lanira-murphy?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Adrin Nazarian",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 737107.68,
+       "expenditures": 0.0,
+       "status": "$998,780.61",
+       "url": "/ca/candidate/adrin-nazarian?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Lanira Murphy",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1722.65,
+       "expenditures": 0.0,
+       "status": "$1,269.55",
+       "url": "/ca/candidate/lanira-murphy?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "California State Assembly District 47",
+   "url": "/ca/race/california-state-assembly-district-47-46237",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 805605.0,
+   "totalExpenditures": 1459546.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Eloise Reyes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 794453.31,
+       "expenditures": 0.0,
+       "status": "$1,449,499.76",
+       "url": "/ca/candidate/eloise-reyes?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Matt Gordon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11151.27,
+       "expenditures": 0.0,
+       "status": "$10,046.68",
+       "url": "/ca/candidate/matt-gordon?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Eloise Reyes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 794453.31,
+       "expenditures": 0.0,
+       "status": "$1,449,499.76",
+       "url": "/ca/candidate/eloise-reyes?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Matt Gordon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11151.27,
+       "expenditures": 0.0,
+       "status": "$10,046.68",
+       "url": "/ca/candidate/matt-gordon?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "California State Assembly District 48",
+   "url": "/ca/race/california-state-assembly-district-48-46238",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1460258.0,
+   "totalExpenditures": 1615323.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Blanca Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1460257.7,
+       "expenditures": 0.0,
+       "status": "$1,615,323.16",
+       "url": "/ca/candidate/blanca-rubio?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Blanca Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1460257.7,
+       "expenditures": 0.0,
+       "status": "$1,615,323.16",
+       "url": "/ca/candidate/blanca-rubio?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "California State Assembly District 49",
+   "url": "/ca/race/california-state-assembly-district-49-46239",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 439458.0,
+   "totalExpenditures": 572195.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Ed Chau",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 390507.75,
+       "expenditures": 0.0,
+       "status": "$510,623.32",
+       "url": "/ca/candidate/ed-chau?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Burton Brink",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48950.14,
+       "expenditures": 6500.0,
+       "status": "$61,571.30",
+       "url": "/ca/candidate/burton-brink?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Ed Chau",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 390507.75,
+       "expenditures": 0.0,
+       "status": "$510,623.32",
+       "url": "/ca/candidate/ed-chau?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Burton Brink",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48950.14,
+       "expenditures": 6500.0,
+       "status": "$61,571.30",
+       "url": "/ca/candidate/burton-brink?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "California State Assembly District 5",
+   "url": "/ca/race/california-state-assembly-district-5-46195",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 889496.0,
+   "totalExpenditures": 611579.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Frank Bigelow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 889496.43,
+       "expenditures": 0.0,
+       "status": "$611,579.41",
+       "url": "/ca/candidate/frank-bigelow?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Frank Bigelow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 889496.43,
+       "expenditures": 0.0,
+       "status": "$611,579.41",
+       "url": "/ca/candidate/frank-bigelow?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "California State Assembly District 50",
+   "url": "/ca/race/california-state-assembly-district-50-46240",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 624490.0,
+   "totalExpenditures": 611693.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Richard Bloom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 624490.0,
+       "expenditures": 3000.0,
+       "status": "$611,692.76",
+       "url": "/ca/candidate/richard-bloom?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Richard Bloom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 624490.0,
+       "expenditures": 3000.0,
+       "status": "$611,692.76",
+       "url": "/ca/candidate/richard-bloom?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "California State Assembly District 51",
+   "url": "/ca/race/california-state-assembly-district-51-46241",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 722992.0,
+   "totalExpenditures": 872684.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Wendy Carrillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 722992.22,
+       "expenditures": 0.0,
+       "status": "$872,683.55",
+       "url": "/ca/candidate/wendy-carrillo?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Wendy Carrillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 722992.22,
+       "expenditures": 0.0,
+       "status": "$872,683.55",
+       "url": "/ca/candidate/wendy-carrillo?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "California State Assembly District 52",
+   "url": "/ca/race/california-state-assembly-district-52-46242",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 805987.0,
+   "totalExpenditures": 959219.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Freddie Rodriguez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 805986.57,
+       "expenditures": 0.0,
+       "status": "$959,218.71",
+       "url": "/ca/candidate/freddie-rodriguez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Freddie Rodriguez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 805986.57,
+       "expenditures": 0.0,
+       "status": "$959,218.71",
+       "url": "/ca/candidate/freddie-rodriguez?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "California State Assembly District 53",
+   "url": "/ca/race/california-state-assembly-district-53-46243",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1623668.0,
+   "totalExpenditures": 2098059.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Miguel Santiago",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1409645.22,
+       "expenditures": 0.0,
+       "status": "$1,844,006.57",
+       "url": "/ca/candidate/miguel-santiago?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Godfrey Santos Plata",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 214022.59,
+       "expenditures": 0.0,
+       "status": "$254,052.69",
+       "url": "/ca/candidate/godfrey-santos-plata?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Miguel Santiago",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1409645.22,
+       "expenditures": 0.0,
+       "status": "$1,844,006.57",
+       "url": "/ca/candidate/miguel-santiago?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Godfrey Santos Plata",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 214022.59,
+       "expenditures": 0.0,
+       "status": "$254,052.69",
+       "url": "/ca/candidate/godfrey-santos-plata?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "California State Assembly District 54",
+   "url": "/ca/race/california-state-assembly-district-54-44697",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1305758.0,
+   "totalExpenditures": 1537593.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Sydney Kamlager- Dove",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1305758.09,
+       "expenditures": 0.0,
+       "status": "$1,537,592.50",
+       "url": "/ca/candidate/sydney-kamlager-dove?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Sydney Kamlager- Dove",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1305758.09,
+       "expenditures": 0.0,
+       "status": "$1,537,592.50",
+       "url": "/ca/candidate/sydney-kamlager-dove?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "California State Assembly District 55",
+   "url": "/ca/race/california-state-assembly-district-55-46244",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 4076230.0,
+   "totalExpenditures": 4174723.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Phillip Chen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1650225.96,
+       "expenditures": 0.0,
+       "status": "$1,612,413.27",
+       "url": "/ca/candidate/phillip-chen?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Andrew Rodriguez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2426004.17,
+       "expenditures": 1800.0,
+       "status": "$2,562,310.10",
+       "url": "/ca/candidate/andrew-rodriguez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Phillip Chen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1650225.96,
+       "expenditures": 0.0,
+       "status": "$1,612,413.27",
+       "url": "/ca/candidate/phillip-chen?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Andrew Rodriguez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2426004.17,
+       "expenditures": 1800.0,
+       "status": "$2,562,310.10",
+       "url": "/ca/candidate/andrew-rodriguez?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "California State Assembly District 56",
+   "url": "/ca/race/california-state-assembly-district-56-46245",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 661596.0,
+   "totalExpenditures": 1024945.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Eduardo Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 647607.53,
+       "expenditures": 0.0,
+       "status": "$1,009,073.75",
+       "url": "/ca/candidate/eduardo-garcia?cycle=2020-election-cycle"
+      },
+      {
+       "name": "America Figueroa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13988.0,
+       "expenditures": 0.0,
+       "status": "$15,871.06",
+       "url": "/ca/candidate/america-figueroa?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Eduardo Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 647607.53,
+       "expenditures": 0.0,
+       "status": "$1,009,073.75",
+       "url": "/ca/candidate/eduardo-garcia?cycle=2020-election-cycle"
+      },
+      {
+       "name": "America Figueroa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13988.0,
+       "expenditures": 0.0,
+       "status": "$15,871.06",
+       "url": "/ca/candidate/america-figueroa?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "California State Assembly District 57",
+   "url": "/ca/race/california-state-assembly-district-57-46246",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1463158.0,
+   "totalExpenditures": 1843432.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Lisa Calderon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 944532.0,
+       "expenditures": 0.0,
+       "status": "$991,199.94",
+       "url": "/ca/candidate/lisa-calderon?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jessica Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jessica-martinez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Lisa Calderon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 944532.0,
+       "expenditures": 0.0,
+       "status": "$991,199.94",
+       "url": "/ca/candidate/lisa-calderon?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jessica Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jessica-martinez?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Josue Alvarado",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9926.15,
+       "expenditures": 4839.9,
+       "status": "$10,228.12",
+       "url": "/ca/candidate/josue-alvarado?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Primo Castro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13319.0,
+       "expenditures": 0.0,
+       "status": "$5,543.57",
+       "url": "/ca/candidate/primo-castro?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Sylvia Rubio",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 390039.73,
+       "expenditures": 0.0,
+       "status": "$697,525.28",
+       "url": "/ca/candidate/sylvia-rubio?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Dora Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10619.0,
+       "expenditures": 2000.0,
+       "status": "$11,420.43",
+       "url": "/ca/candidate/dora-sandoval?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Vanessa Tyson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 88721.97,
+       "expenditures": 10000.0,
+       "status": "$119,253.87",
+       "url": "/ca/candidate/vanessa-tyson?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Oscar Valladares",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6000.0,
+       "expenditures": 3850.0,
+       "status": "$8,260.94",
+       "url": "/ca/candidate/oscar-valladares?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "California State Assembly District 58",
+   "url": "/ca/race/california-state-assembly-district-58-46247",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 596284.0,
+   "totalExpenditures": 491867.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Cristina Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 596284.18,
+       "expenditures": 0.0,
+       "status": "$491,866.97",
+       "url": "/ca/candidate/cristina-garcia?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Cristina Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 596284.18,
+       "expenditures": 0.0,
+       "status": "$491,866.97",
+       "url": "/ca/candidate/cristina-garcia?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "California State Assembly District 59",
+   "url": "/ca/race/california-state-assembly-district-59-46248",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 3818564.0,
+   "totalExpenditures": 4292784.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Reginald Byron Jones-Sawyer Sr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3184473.47,
+       "expenditures": 3000.0,
+       "status": "$2,710,202.15",
+       "url": "/ca/candidate/reginald-byron-jones-sawyer-sr?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Efren Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 634090.63,
+       "expenditures": 424999.0,
+       "status": "$1,582,582.12",
+       "url": "/ca/candidate/efren-martinez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Reginald Byron Jones-Sawyer Sr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3184473.47,
+       "expenditures": 3000.0,
+       "status": "$2,710,202.15",
+       "url": "/ca/candidate/reginald-byron-jones-sawyer-sr?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Efren Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 634090.63,
+       "expenditures": 424999.0,
+       "status": "$1,582,582.12",
+       "url": "/ca/candidate/efren-martinez?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "California State Assembly District 6",
+   "url": "/ca/race/california-state-assembly-district-6-46196",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 2002808.0,
+   "totalExpenditures": 3080260.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Kevin Kiley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1773352.03,
+       "expenditures": 0.0,
+       "status": "$2,789,744.90",
+       "url": "/ca/candidate/kevin-kiley?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jackie Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 229456.37,
+       "expenditures": 20000.0,
+       "status": "$290,515.27",
+       "url": "/ca/candidate/jackie-smith?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Kevin Kiley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1773352.03,
+       "expenditures": 0.0,
+       "status": "$2,789,744.90",
+       "url": "/ca/candidate/kevin-kiley?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jackie Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 229456.37,
+       "expenditures": 20000.0,
+       "status": "$290,515.27",
+       "url": "/ca/candidate/jackie-smith?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "California State Assembly District 60",
+   "url": "/ca/race/california-state-assembly-district-60-46249",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 2549133.0,
+   "totalExpenditures": 1605265.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Sabrina Cervantes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2517306.43,
+       "expenditures": 0.0,
+       "status": "$1,574,176.12",
+       "url": "/ca/candidate/sabrina-cervantes?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Chris Raahauge",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31826.2,
+       "expenditures": 0.0,
+       "status": "$31,089.20",
+       "url": "/ca/candidate/chris-raahauge?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Sabrina Cervantes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2517306.43,
+       "expenditures": 0.0,
+       "status": "$1,574,176.12",
+       "url": "/ca/candidate/sabrina-cervantes?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Chris Raahauge",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31826.2,
+       "expenditures": 0.0,
+       "status": "$31,089.20",
+       "url": "/ca/candidate/chris-raahauge?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "California State Assembly District 61",
+   "url": "/ca/race/california-state-assembly-district-61-46250",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 832935.0,
+   "totalExpenditures": 762267.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jose Medina",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 687105.7,
+       "expenditures": 0.0,
+       "status": "$690,093.16",
+       "url": "/ca/candidate/jose-medina?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ali Mazarei",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 145829.59,
+       "expenditures": 63020.2,
+       "status": "$72,173.71",
+       "url": "/ca/candidate/ali-mazarei?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Jose Medina",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 687105.7,
+       "expenditures": 0.0,
+       "status": "$690,093.16",
+       "url": "/ca/candidate/jose-medina?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ali Mazarei",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 145829.59,
+       "expenditures": 63020.2,
+       "status": "$72,173.71",
+       "url": "/ca/candidate/ali-mazarei?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "California State Assembly District 62",
+   "url": "/ca/race/california-state-assembly-district-62-46251",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1171578.0,
+   "totalExpenditures": 1075054.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Autumn Burke",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1169637.68,
+       "expenditures": 0.0,
+       "status": "$1,073,114.15",
+       "url": "/ca/candidate/autumn-burke?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Robert Steele",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1940.0,
+       "expenditures": 560.0,
+       "status": "$1,940.00",
+       "url": "/ca/candidate/robert-steele?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Autumn Burke",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1169637.68,
+       "expenditures": 0.0,
+       "status": "$1,073,114.15",
+       "url": "/ca/candidate/autumn-burke?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Robert Steele",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1940.0,
+       "expenditures": 560.0,
+       "status": "$1,940.00",
+       "url": "/ca/candidate/robert-steele?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "California State Assembly District 63",
+   "url": "/ca/race/california-state-assembly-district-63-46252",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 2003866.0,
+   "totalExpenditures": 4339841.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Anthony Rendon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1996037.98,
+       "expenditures": 0.0,
+       "status": "$4,330,766.94",
+       "url": "/ca/candidate/anthony-rendon?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Maria Estrada",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7828.11,
+       "expenditures": 1808.45,
+       "status": "$9,074.37",
+       "url": "/ca/candidate/maria-estrada?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Anthony Rendon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1996037.98,
+       "expenditures": 0.0,
+       "status": "$4,330,766.94",
+       "url": "/ca/candidate/anthony-rendon?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Maria Estrada",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7828.11,
+       "expenditures": 1808.45,
+       "status": "$9,074.37",
+       "url": "/ca/candidate/maria-estrada?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "California State Assembly District 64",
+   "url": "/ca/race/california-state-assembly-district-64-46253",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1868482.0,
+   "totalExpenditures": 2805183.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Mike Gipson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1398877.93,
+       "expenditures": 0.0,
+       "status": "$2,099,688.35",
+       "url": "/ca/candidate/mike-gipson?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Fatima Iqbal-Zubair",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 469604.26,
+       "expenditures": 98665.0,
+       "status": "$705,494.97",
+       "url": "/ca/candidate/fatima-iqbal-zubair?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Mike Gipson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1398877.93,
+       "expenditures": 0.0,
+       "status": "$2,099,688.35",
+       "url": "/ca/candidate/mike-gipson?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Fatima Iqbal-Zubair",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 469604.26,
+       "expenditures": 98665.0,
+       "status": "$705,494.97",
+       "url": "/ca/candidate/fatima-iqbal-zubair?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "California State Assembly District 65",
+   "url": "/ca/race/california-state-assembly-district-65-46254",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 891703.0,
+   "totalExpenditures": 752621.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Sharon Quirk- Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 891702.82,
+       "expenditures": 0.0,
+       "status": "$752,620.67",
+       "url": "/ca/candidate/sharon-quirk-silva?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Sharon Quirk- Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 891702.82,
+       "expenditures": 0.0,
+       "status": "$752,620.67",
+       "url": "/ca/candidate/sharon-quirk-silva?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "California State Assembly District 66",
+   "url": "/ca/race/california-state-assembly-district-66-46255",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 532075.0,
+   "totalExpenditures": 692198.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Al Muratsuchi",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 525139.26,
+       "expenditures": 0.0,
+       "status": "$682,762.23",
+       "url": "/ca/candidate/al-muratsuchi?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Arthur Schaper",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6935.34,
+       "expenditures": 0.0,
+       "status": "$9,435.34",
+       "url": "/ca/candidate/arthur-schaper?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Al Muratsuchi",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 525139.26,
+       "expenditures": 0.0,
+       "status": "$682,762.23",
+       "url": "/ca/candidate/al-muratsuchi?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Arthur Schaper",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6935.34,
+       "expenditures": 0.0,
+       "status": "$9,435.34",
+       "url": "/ca/candidate/arthur-schaper?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "California State Assembly District 67",
+   "url": "/ca/race/california-state-assembly-district-67-46256",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 386289.0,
+   "totalExpenditures": 443198.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Kelly Seyarto",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 212333.72,
+       "expenditures": 0.0,
+       "status": "$270,438.05",
+       "url": "/ca/candidate/kelly-seyarto?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jerry Carlos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jerry-carlos?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Jerry Carlos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jerry-carlos?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kelly Seyarto",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 212333.72,
+       "expenditures": 0.0,
+       "status": "$270,438.05",
+       "url": "/ca/candidate/kelly-seyarto?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Steve Manos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 74332.16,
+       "expenditures": 0.0,
+       "status": "$70,873.00",
+       "url": "/ca/candidate/steve-manos?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Nick Pardue",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5440.0,
+       "expenditures": 0.0,
+       "status": "$4,674.35",
+       "url": "/ca/candidate/nick-pardue?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jeremy Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 94183.43,
+       "expenditures": 84400.0,
+       "status": "$97,212.27",
+       "url": "/ca/candidate/jeremy-smith?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "California State Assembly District 68",
+   "url": "/ca/race/california-state-assembly-district-68-46257",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 4450664.0,
+   "totalExpenditures": 4756708.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Steven Choi",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1443953.86,
+       "expenditures": 0.0,
+       "status": "$1,619,558.80",
+       "url": "/ca/candidate/steven-choi?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Melissa Fox",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2841770.17,
+       "expenditures": 1400.0,
+       "status": "$2,893,792.81",
+       "url": "/ca/candidate/melissa-fox?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Steven Choi",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1443953.86,
+       "expenditures": 0.0,
+       "status": "$1,619,558.80",
+       "url": "/ca/candidate/steven-choi?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Melissa Fox",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2841770.17,
+       "expenditures": 1400.0,
+       "status": "$2,893,792.81",
+       "url": "/ca/candidate/melissa-fox?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Eugene Fields",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4277.25,
+       "expenditures": 1050.0,
+       "status": "$6,459.92",
+       "url": "/ca/candidate/eugene-fields?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Benjamin Yu",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 160662.63,
+       "expenditures": 100000.0,
+       "status": "$236,896.70",
+       "url": "/ca/candidate/benjamin-yu?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "California State Assembly District 69",
+   "url": "/ca/race/california-state-assembly-district-69-46258",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1142454.0,
+   "totalExpenditures": 1654965.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Tom Daly",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1142453.72,
+       "expenditures": 0.0,
+       "status": "$1,654,965.13",
+       "url": "/ca/candidate/tom-daly?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Tom Daly",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1142453.72,
+       "expenditures": 0.0,
+       "status": "$1,654,965.13",
+       "url": "/ca/candidate/tom-daly?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "California State Assembly District 7",
+   "url": "/ca/race/california-state-assembly-district-7-46197",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 641507.0,
+   "totalExpenditures": 879962.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Kevin McCarty",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 639797.04,
+       "expenditures": 0.0,
+       "status": "$878,426.18",
+       "url": "/ca/candidate/kevin-mccarty?cycle=2020-election-cycle"
+      },
+      {
+       "name": "James Just",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 1710.0,
+       "expenditures": 0.0,
+       "status": "$1,536.00",
+       "url": "/ca/candidate/james-just?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Kevin McCarty",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 639797.04,
+       "expenditures": 0.0,
+       "status": "$878,426.18",
+       "url": "/ca/candidate/kevin-mccarty?cycle=2020-election-cycle"
+      },
+      {
+       "name": "James Just",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 1710.0,
+       "expenditures": 0.0,
+       "status": "$1,536.00",
+       "url": "/ca/candidate/james-just?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "California State Assembly District 70",
+   "url": "/ca/race/california-state-assembly-district-70-46259",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1067324.0,
+   "totalExpenditures": 1328946.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Patrick O'Donnell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1067324.27,
+       "expenditures": 0.0,
+       "status": "$1,328,945.62",
+       "url": "/ca/candidate/patrick-odonnell?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Patrick O'Donnell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1067324.27,
+       "expenditures": 0.0,
+       "status": "$1,328,945.62",
+       "url": "/ca/candidate/patrick-odonnell?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "California State Assembly District 71",
+   "url": "/ca/race/california-state-assembly-district-71-46260",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 272506.0,
+   "totalExpenditures": 311246.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Randy Voepel",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 219745.16,
+       "expenditures": 0.0,
+       "status": "$233,088.78",
+       "url": "/ca/candidate/randy-voepel?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Elizabeth Lavertu",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52761.19,
+       "expenditures": 0.0,
+       "status": "$78,157.46",
+       "url": "/ca/candidate/elizabeth-lavertu?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Randy Voepel",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 219745.16,
+       "expenditures": 0.0,
+       "status": "$233,088.78",
+       "url": "/ca/candidate/randy-voepel?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Elizabeth Lavertu",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52761.19,
+       "expenditures": 0.0,
+       "status": "$78,157.46",
+       "url": "/ca/candidate/elizabeth-lavertu?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "71"
+  },
+  {
+   "office": "California State Assembly District 72",
+   "url": "/ca/race/california-state-assembly-district-72-46261",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 4781260.0,
+   "totalExpenditures": 4536632.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Janet Nguyen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1800492.49,
+       "expenditures": 0.0,
+       "status": "$2,241,008.85",
+       "url": "/ca/candidate/janet-nguyen?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Diedre Thu-Ha Nguyen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2204405.04,
+       "expenditures": 0.0,
+       "status": "$1,187,168.73",
+       "url": "/ca/candidate/diedre-thu-ha-nguyen?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Diedre Thu-Ha Nguyen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2204405.04,
+       "expenditures": 0.0,
+       "status": "$1,187,168.73",
+       "url": "/ca/candidate/diedre-thu-ha-nguyen?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Janet Nguyen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1800492.49,
+       "expenditures": 0.0,
+       "status": "$2,241,008.85",
+       "url": "/ca/candidate/janet-nguyen?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Tyler Diep",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 767135.02,
+       "expenditures": 0.0,
+       "status": "$1,094,783.20",
+       "url": "/ca/candidate/tyler-diep-1?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bijan Mohseni",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9227.2,
+       "expenditures": 0.0,
+       "status": "$13,671.05",
+       "url": "/ca/candidate/bijan-mohseni?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "72"
+  },
+  {
+   "office": "California State Assembly District 73",
+   "url": "/ca/race/california-state-assembly-district-73-46262",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 895623.0,
+   "totalExpenditures": 1290369.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Laurie Davies",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 345784.59,
+       "expenditures": 4750.0,
+       "status": "$411,655.28",
+       "url": "/ca/candidate/laurie-davies?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Scott Rhinehart",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 131916.65,
+       "expenditures": 76532.0,
+       "status": "$127,315.36",
+       "url": "/ca/candidate/scott-rhinehart?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Scott Rhinehart",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 131916.65,
+       "expenditures": 76532.0,
+       "status": "$127,315.36",
+       "url": "/ca/candidate/scott-rhinehart?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Laurie Davies",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 345784.59,
+       "expenditures": 4750.0,
+       "status": "$411,655.28",
+       "url": "/ca/candidate/laurie-davies?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bill Brough",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 268012.35,
+       "expenditures": 0.0,
+       "status": "$537,460.98",
+       "url": "/ca/candidate/bill-brough?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Chris Duncan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54651.49,
+       "expenditures": 20000.0,
+       "status": "$75,216.64",
+       "url": "/ca/candidate/chris-duncan?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ed Sachs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 95258.06,
+       "expenditures": 27500.0,
+       "status": "$138,720.72",
+       "url": "/ca/candidate/ed-sachs?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "73"
+  },
+  {
+   "office": "California State Assembly District 74",
+   "url": "/ca/race/california-state-assembly-district-74-46263",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 4739153.0,
+   "totalExpenditures": 6316355.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Cottie Petrie-Norris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3553791.49,
+       "expenditures": 0.0,
+       "status": "$4,743,295.07",
+       "url": "/ca/candidate/cottie-petrie-norris?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Diane Dixon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 988366.06,
+       "expenditures": 24043.5,
+       "status": "$1,313,269.66",
+       "url": "/ca/candidate/diane-dixon?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Cottie Petrie-Norris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3553791.49,
+       "expenditures": 0.0,
+       "status": "$4,743,295.07",
+       "url": "/ca/candidate/cottie-petrie-norris?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Diane Dixon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 988366.06,
+       "expenditures": 24043.5,
+       "status": "$1,313,269.66",
+       "url": "/ca/candidate/diane-dixon?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kelly Ernby",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 196995.93,
+       "expenditures": 0.0,
+       "status": "$259,790.75",
+       "url": "/ca/candidate/kelly-ernby?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "74"
+  },
+  {
+   "office": "California State Assembly District 75",
+   "url": "/ca/race/california-state-assembly-district-75-46264",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 993302.0,
+   "totalExpenditures": 1370443.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Marie Waldron",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 993302.12,
+       "expenditures": 100.0,
+       "status": "$1,370,443.30",
+       "url": "/ca/candidate/marie-waldron?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Marie Waldron",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 993302.12,
+       "expenditures": 100.0,
+       "status": "$1,370,443.30",
+       "url": "/ca/candidate/marie-waldron?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "75"
+  },
+  {
+   "office": "California State Assembly District 76",
+   "url": "/ca/race/california-state-assembly-district-76-46265",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 3057518.0,
+   "totalExpenditures": 2172986.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Tasha Boerner Horvath",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2875272.47,
+       "expenditures": 0.0,
+       "status": "$1,980,485.45",
+       "url": "/ca/candidate/tasha-boerner-horvath?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Melanie Burkholder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 182245.65,
+       "expenditures": 4700.0,
+       "status": "$192,500.38",
+       "url": "/ca/candidate/melanie-burkholder?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Tasha Boerner Horvath",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2875272.47,
+       "expenditures": 0.0,
+       "status": "$1,980,485.45",
+       "url": "/ca/candidate/tasha-boerner-horvath?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Melanie Burkholder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 182245.65,
+       "expenditures": 4700.0,
+       "status": "$192,500.38",
+       "url": "/ca/candidate/melanie-burkholder?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "76"
+  },
+  {
+   "office": "California State Assembly District 77",
+   "url": "/ca/race/california-state-assembly-district-77-46266",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 2374572.0,
+   "totalExpenditures": 3367142.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Brian Maienschein",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1824537.58,
+       "expenditures": 0.0,
+       "status": "$2,620,079.18",
+       "url": "/ca/candidate/brian-maienschein?cycle=2020-election-cycle"
+      },
+      {
+       "name": "June Yang Cutter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 550034.78,
+       "expenditures": 0.0,
+       "status": "$747,062.72",
+       "url": "/ca/candidate/june-yang-cutter?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Brian Maienschein",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1824537.58,
+       "expenditures": 0.0,
+       "status": "$2,620,079.18",
+       "url": "/ca/candidate/brian-maienschein?cycle=2020-election-cycle"
+      },
+      {
+       "name": "June Yang Cutter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 550034.78,
+       "expenditures": 0.0,
+       "status": "$747,062.72",
+       "url": "/ca/candidate/june-yang-cutter?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "77"
+  },
+  {
+   "office": "California State Assembly District 78",
+   "url": "/ca/race/california-state-assembly-district-78-46267",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1320281.0,
+   "totalExpenditures": 1733533.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Chris Ward",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1136604.76,
+       "expenditures": 0.0,
+       "status": "$1,508,846.03",
+       "url": "/ca/candidate/chris-ward?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Sarah Davis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 145444.97,
+       "expenditures": 4000.0,
+       "status": "$167,035.30",
+       "url": "/ca/candidate/sarah-davis?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Sarah Davis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 145444.97,
+       "expenditures": 4000.0,
+       "status": "$167,035.30",
+       "url": "/ca/candidate/sarah-davis?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Chris Ward",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1136604.76,
+       "expenditures": 0.0,
+       "status": "$1,508,846.03",
+       "url": "/ca/candidate/chris-ward?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Micah Perlin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 38231.0,
+       "expenditures": 0.0,
+       "status": "$57,651.48",
+       "url": "/ca/candidate/micah-perlin?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "78"
+  },
+  {
+   "office": "California State Assembly District 79",
+   "url": "/ca/race/california-state-assembly-district-79-46268",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 460992.0,
+   "totalExpenditures": 727632.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Shirley Weber",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 457085.7,
+       "expenditures": 0.0,
+       "status": "$724,861.47",
+       "url": "/ca/candidate/shirley-weber?cycle=2020-election-cycle"
+      },
+      {
+       "name": "John Moore",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/john-moore?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Shirley Weber",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 457085.7,
+       "expenditures": 0.0,
+       "status": "$724,861.47",
+       "url": "/ca/candidate/shirley-weber?cycle=2020-election-cycle"
+      },
+      {
+       "name": "John Moore",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/john-moore?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Carmelita Larrabaster",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3905.96,
+       "expenditures": 0.0,
+       "status": "$2,771.00",
+       "url": "/ca/candidate/carmelita-larrabaster?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "79"
+  },
+  {
+   "office": "California State Assembly District 8",
+   "url": "/ca/race/california-state-assembly-district-8-46198",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 547220.0,
+   "totalExpenditures": 824823.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Ken Cooley",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 523820.0,
+       "expenditures": 0.0,
+       "status": "$806,069.03",
+       "url": "/ca/candidate/ken-cooley?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Cathy Cook",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23400.01,
+       "expenditures": 5000.0,
+       "status": "$18,753.57",
+       "url": "/ca/candidate/cathy-cook?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Ken Cooley",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 523820.0,
+       "expenditures": 0.0,
+       "status": "$806,069.03",
+       "url": "/ca/candidate/ken-cooley?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Cathy Cook",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23400.01,
+       "expenditures": 5000.0,
+       "status": "$18,753.57",
+       "url": "/ca/candidate/cathy-cook?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "California State Assembly District 80",
+   "url": "/ca/race/california-state-assembly-district-80-46269",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 22638.0,
+   "totalExpenditures": 21181.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "John Vogel Garcia",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22637.72,
+       "expenditures": 0.0,
+       "status": "$21,180.80",
+       "url": "/ca/candidate/john-vogel?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "John Vogel Garcia",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22637.72,
+       "expenditures": 0.0,
+       "status": "$21,180.80",
+       "url": "/ca/candidate/john-vogel?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "80"
+  },
+  {
+   "office": "California State Assembly District 9",
+   "url": "/ca/race/california-state-assembly-district-9-46199",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 2095411.0,
+   "totalExpenditures": 3030065.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jim Cooper",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1971995.09,
+       "expenditures": 500000.0,
+       "status": "$2,867,121.58",
+       "url": "/ca/candidate/jim-cooper?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Eric Rigard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5816.5,
+       "expenditures": 0.0,
+       "status": "$5,088.71",
+       "url": "/ca/candidate/eric-rigard?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Jim Cooper",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1971995.09,
+       "expenditures": 500000.0,
+       "status": "$2,867,121.58",
+       "url": "/ca/candidate/jim-cooper?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Eric Rigard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5816.5,
+       "expenditures": 0.0,
+       "status": "$5,088.71",
+       "url": "/ca/candidate/eric-rigard?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Tracie Stafford",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 117599.31,
+       "expenditures": 3850.0,
+       "status": "$157,854.73",
+       "url": "/ca/candidate/tracie-stafford?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "California State Senate District 1",
+   "url": "/ca/race/california-state-senate-district-1-46270",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1880487.0,
+   "totalExpenditures": 3076205.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Brian Dahle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1761352.5,
+       "expenditures": 0.0,
+       "status": "$2,916,005.50",
+       "url": "/ca/candidate/brian-dahle?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Pamela Swartz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 119134.5,
+       "expenditures": 2500.0,
+       "status": "$160,199.68",
+       "url": "/ca/candidate/pamela-swartz?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Brian Dahle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1761352.5,
+       "expenditures": 0.0,
+       "status": "$2,916,005.50",
+       "url": "/ca/candidate/brian-dahle?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Pamela Swartz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 119134.5,
+       "expenditures": 2500.0,
+       "status": "$160,199.68",
+       "url": "/ca/candidate/pamela-swartz?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "1"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-11-46275?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 11",
+   "url": "/ca/race/california-state-senate-district-11-46275",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 3013348.0,
+   "totalExpenditures": 5300823.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Scott Wiener",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2219616.1,
+       "expenditures": 0.0,
+       "status": "$4,175,708.60",
+       "url": "/ca/candidate/scott-wiener?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jackie Fielder",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 793731.44,
+       "expenditures": 0.0,
+       "status": "$1,125,114.44",
+       "url": "/ca/candidate/jackie-fielder?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Scott Wiener",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2219616.1,
+       "expenditures": 0.0,
+       "status": "$4,175,708.60",
+       "url": "/ca/candidate/scott-wiener?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jackie Fielder",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 793731.44,
+       "expenditures": 0.0,
+       "status": "$1,125,114.44",
+       "url": "/ca/candidate/jackie-fielder?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "11"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-13-46276?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 13",
+   "url": "/ca/race/california-state-senate-district-13-46276",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 3537907.0,
+   "totalExpenditures": 5822369.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Josh Becker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1426254.69,
+       "expenditures": 10500.0,
+       "status": "$2,654,244.01",
+       "url": "/ca/candidate/josh-becker?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Alex Glew",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7682.38,
+       "expenditures": 1500.0,
+       "status": "$11,723.28",
+       "url": "/ca/candidate/alex-glew?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Josh Becker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1426254.69,
+       "expenditures": 10500.0,
+       "status": "$2,654,244.01",
+       "url": "/ca/candidate/josh-becker?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Alex Glew",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7682.38,
+       "expenditures": 1500.0,
+       "status": "$11,723.28",
+       "url": "/ca/candidate/alex-glew?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Mike Brownrigg",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 805295.72,
+       "expenditures": 50000.0,
+       "status": "$1,282,503.11",
+       "url": "/ca/candidate/mike-brownrigg?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Sally Lieber",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 311147.85,
+       "expenditures": 200000.0,
+       "status": "$515,545.59",
+       "url": "/ca/candidate/sally-lieber?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Shelly Masur",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 554948.84,
+       "expenditures": 0.0,
+       "status": "$778,880.35",
+       "url": "/ca/candidate/shelly-masur?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Annie Oliva",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 432577.06,
+       "expenditures": 0.0,
+       "status": "$579,472.69",
+       "url": "/ca/candidate/annie-oliva?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-15-46277?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 15",
+   "url": "/ca/race/california-state-senate-district-15-46277",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 4204667.0,
+   "totalExpenditures": 5404497.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Dave Cortese",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2090439.58,
+       "expenditures": 84700.0,
+       "status": "$2,185,146.06",
+       "url": "/ca/candidate/dave-cortese?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ann Ravel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1309143.73,
+       "expenditures": 11309.24,
+       "status": "$1,893,869.31",
+       "url": "/ca/candidate/ann-ravel?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Dave Cortese",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2090439.58,
+       "expenditures": 84700.0,
+       "status": "$2,185,146.06",
+       "url": "/ca/candidate/dave-cortese?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ann Ravel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1309143.73,
+       "expenditures": 11309.24,
+       "status": "$1,893,869.31",
+       "url": "/ca/candidate/ann-ravel?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Nora Campos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 316586.54,
+       "expenditures": 750.0,
+       "status": "$557,781.02",
+       "url": "/ca/candidate/nora-campos?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Robert Howell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/robert-howell?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Johnny Khamis",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 488496.92,
+       "expenditures": 0.0,
+       "status": "$767,700.30",
+       "url": "/ca/candidate/johnny-khamis?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "15"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-17-46278?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 17",
+   "url": "/ca/race/california-state-senate-district-17-46278",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1433742.0,
+   "totalExpenditures": 1544588.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "John Laird",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1210672.08,
+       "expenditures": 0.0,
+       "status": "$1,318,465.74",
+       "url": "/ca/candidate/john-laird?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Vicki Nohrden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 172946.47,
+       "expenditures": 10060.0,
+       "status": "$162,493.73",
+       "url": "/ca/candidate/vicki-nohrden?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "John Laird",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1210672.08,
+       "expenditures": 0.0,
+       "status": "$1,318,465.74",
+       "url": "/ca/candidate/john-laird?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Vicki Nohrden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 172946.47,
+       "expenditures": 10060.0,
+       "status": "$162,493.73",
+       "url": "/ca/candidate/vicki-nohrden?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Maria Cadenas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50123.06,
+       "expenditures": 0.0,
+       "status": "$63,628.46",
+       "url": "/ca/candidate/maria-cadenas?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "17"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-19-46279?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 19",
+   "url": "/ca/race/california-state-senate-district-19-46279",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1249063.0,
+   "totalExpenditures": 1671956.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "S Monique Limon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1238935.84,
+       "expenditures": 0.0,
+       "status": "$1,663,361.40",
+       "url": "/ca/candidate/s-monique-limon?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "S Monique Limon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1238935.84,
+       "expenditures": 0.0,
+       "status": "$1,663,361.40",
+       "url": "/ca/candidate/s-monique-limon?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Anastasia Stone",
+       "party": "Unaffiliated",
+       "incumbent": false,
+       "contributions": 10127.0,
+       "expenditures": 0.0,
+       "status": "$8,594.13",
+       "url": "/ca/candidate/anastasia-stone?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "19"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-21-46280?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 21",
+   "url": "/ca/race/california-state-senate-district-21-46280",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 3895671.0,
+   "totalExpenditures": 4388782.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Scott Wilk",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2058052.38,
+       "expenditures": 0.0,
+       "status": "$2,733,255.75",
+       "url": "/ca/candidate/scott-wilk?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kip Mueller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1834573.91,
+       "expenditures": 0.0,
+       "status": "$1,652,656.01",
+       "url": "/ca/candidate/kip-mueller?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Scott Wilk",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2058052.38,
+       "expenditures": 0.0,
+       "status": "$2,733,255.75",
+       "url": "/ca/candidate/scott-wilk?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kip Mueller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1834573.91,
+       "expenditures": 0.0,
+       "status": "$1,652,656.01",
+       "url": "/ca/candidate/kip-mueller?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Warren Heaton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/warren-heaton?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Steve Hill",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3045.0,
+       "expenditures": 500.0,
+       "status": "$2,870.00",
+       "url": "/ca/candidate/steve-hill?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Dana LaMon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/dana-lamon?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "21"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-23-46281?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 23",
+   "url": "/ca/race/california-state-senate-district-23-46281",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 2954935.0,
+   "totalExpenditures": 2799991.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Rosilicie Ochoa Bogh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1214110.01,
+       "expenditures": 2500.0,
+       "status": "$1,059,734.70",
+       "url": "/ca/candidate/rosilicie-ochoa-bogh?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Abigail Medina",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1241282.08,
+       "expenditures": 0.0,
+       "status": "$1,036,627.21",
+       "url": "/ca/candidate/abigail-medina?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Abigail Medina",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1241282.08,
+       "expenditures": 0.0,
+       "status": "$1,036,627.21",
+       "url": "/ca/candidate/abigail-medina?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Rosilicie Ochoa Bogh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1214110.01,
+       "expenditures": 2500.0,
+       "status": "$1,059,734.70",
+       "url": "/ca/candidate/rosilicie-ochoa-bogh?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kris Goodfellow",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 311562.2,
+       "expenditures": 50000.0,
+       "status": "$486,590.20",
+       "url": "/ca/candidate/kris-goodfellow?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Cristina Puraci",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25252.99,
+       "expenditures": 6000.0,
+       "status": "$25,947.24",
+       "url": "/ca/candidate/cristina-puraci?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Lloyd White",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 162727.87,
+       "expenditures": 25000.0,
+       "status": "$191,091.47",
+       "url": "/ca/candidate/lloyd-white?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "23"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-25-46282?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 25",
+   "url": "/ca/race/california-state-senate-district-25-46282",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1533489.0,
+   "totalExpenditures": 784624.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Anthony Portantino",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1533489.08,
+       "expenditures": 0.0,
+       "status": "$784,624.35",
+       "url": "/ca/candidate/anthony-portantino?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Anthony Portantino",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1533489.08,
+       "expenditures": 0.0,
+       "status": "$784,624.35",
+       "url": "/ca/candidate/anthony-portantino?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "25"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-27-46283?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 27",
+   "url": "/ca/race/california-state-senate-district-27-46283",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 873104.0,
+   "totalExpenditures": 872263.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Henry Stern",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 805663.21,
+       "expenditures": 0.0,
+       "status": "$795,912.33",
+       "url": "/ca/candidate/henry-stern?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Houman Salem",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 67441.13,
+       "expenditures": 0.0,
+       "status": "$76,351.00",
+       "url": "/ca/candidate/houman-salem?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Henry Stern",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 805663.21,
+       "expenditures": 0.0,
+       "status": "$795,912.33",
+       "url": "/ca/candidate/henry-stern?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Houman Salem",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 67441.13,
+       "expenditures": 0.0,
+       "status": "$76,351.00",
+       "url": "/ca/candidate/houman-salem?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "27"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-29-46284?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 29",
+   "url": "/ca/race/california-state-senate-district-29-46284",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 6416675.0,
+   "totalExpenditures": 6271088.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Josh Newman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4362395.7,
+       "expenditures": 0.0,
+       "status": "$3,766,953.18",
+       "url": "/ca/candidate/josh-newman?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ling Ling Chang",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2054279.57,
+       "expenditures": 100000.0,
+       "status": "$2,138,794.28",
+       "url": "/ca/candidate/ling-ling-chang?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Ling Ling Chang",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2054279.57,
+       "expenditures": 100000.0,
+       "status": "$2,138,794.28",
+       "url": "/ca/candidate/ling-ling-chang?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Josh Newman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4362395.7,
+       "expenditures": 0.0,
+       "status": "$3,766,953.18",
+       "url": "/ca/candidate/josh-newman?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joseph Cho",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 365560.0,
+       "status": "$365,340.72",
+       "url": "/ca/candidate/joseph-cho?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "29"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-3-46271?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 3",
+   "url": "/ca/race/california-state-senate-district-3-46271",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 2507847.0,
+   "totalExpenditures": 2121508.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Bill Dodd",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2504496.98,
+       "expenditures": 0.0,
+       "status": "$2,116,207.76",
+       "url": "/ca/candidate/bill-dodd?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Carlos Santamaria",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3349.94,
+       "expenditures": 1250.0,
+       "status": "$5,299.94",
+       "url": "/ca/candidate/carlos-santamaria?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Bill Dodd",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2504496.98,
+       "expenditures": 0.0,
+       "status": "$2,116,207.76",
+       "url": "/ca/candidate/bill-dodd?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Carlos Santamaria",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3349.94,
+       "expenditures": 1250.0,
+       "status": "$5,299.94",
+       "url": "/ca/candidate/carlos-santamaria?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "3"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-31-46285?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 31",
+   "url": "/ca/race/california-state-senate-district-31-46285",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 749595.0,
+   "totalExpenditures": 571023.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Richard Roth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 749594.66,
+       "expenditures": 20000.0,
+       "status": "$571,023.09",
+       "url": "/ca/candidate/richard-roth?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Richard Roth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 749594.66,
+       "expenditures": 20000.0,
+       "status": "$571,023.09",
+       "url": "/ca/candidate/richard-roth?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "31"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-33-46286?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 33",
+   "url": "/ca/race/california-state-senate-district-33-46286",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1569856.0,
+   "totalExpenditures": 1942828.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Lena Gonzalez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1569855.5,
+       "expenditures": 0.0,
+       "status": "$1,942,828.10",
+       "url": "/ca/candidate/lena-gonzalez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Lena Gonzalez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1569855.5,
+       "expenditures": 0.0,
+       "status": "$1,942,828.10",
+       "url": "/ca/candidate/lena-gonzalez?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "33"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-35-46287?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 35",
+   "url": "/ca/race/california-state-senate-district-35-46287",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1118682.0,
+   "totalExpenditures": 1256184.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Steven Bradford",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1086899.5,
+       "expenditures": 0.0,
+       "status": "$1,230,317.89",
+       "url": "/ca/candidate/steven-bradford?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Anthony Perry",
+       "party": "American Independent of California",
+       "incumbent": false,
+       "contributions": 31782.88,
+       "expenditures": 4500.0,
+       "status": "$25,866.22",
+       "url": "/ca/candidate/anthony-perry?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Steven Bradford",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1086899.5,
+       "expenditures": 0.0,
+       "status": "$1,230,317.89",
+       "url": "/ca/candidate/steven-bradford?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Anthony Perry",
+       "party": "American Independent of California",
+       "incumbent": false,
+       "contributions": 31782.88,
+       "expenditures": 4500.0,
+       "status": "$25,866.22",
+       "url": "/ca/candidate/anthony-perry?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "35"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-37-46288?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 37",
+   "url": "/ca/race/california-state-senate-district-37-46288",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 6163548.0,
+   "totalExpenditures": 6586840.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Dave Min",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3145156.26,
+       "expenditures": 25000.0,
+       "status": "$3,056,666.00",
+       "url": "/ca/candidate/dave-min?cycle=2020-election-cycle"
+      },
+      {
+       "name": "John Moorlach",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2399507.34,
+       "expenditures": 0.0,
+       "status": "$2,680,066.30",
+       "url": "/ca/candidate/john-moorlach?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "John Moorlach",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2399507.34,
+       "expenditures": 0.0,
+       "status": "$2,680,066.30",
+       "url": "/ca/candidate/john-moorlach?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Dave Min",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3145156.26,
+       "expenditures": 25000.0,
+       "status": "$3,056,666.00",
+       "url": "/ca/candidate/dave-min?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Katrina Foley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 618884.57,
+       "expenditures": 0.0,
+       "status": "$850,107.22",
+       "url": "/ca/candidate/katrina-foley?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "37"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-39-46289?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 39",
+   "url": "/ca/race/california-state-senate-district-39-46289",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1737060.0,
+   "totalExpenditures": 1624575.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Toni Atkins",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1662802.5,
+       "expenditures": 0.0,
+       "status": "$1,551,467.98",
+       "url": "/ca/candidate/toni-atkins?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Linda Blankenship",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 74257.19,
+       "expenditures": 0.0,
+       "status": "$73,107.00",
+       "url": "/ca/candidate/linda-blankenship?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Toni Atkins",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1662802.5,
+       "expenditures": 0.0,
+       "status": "$1,551,467.98",
+       "url": "/ca/candidate/toni-atkins?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Linda Blankenship",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 74257.19,
+       "expenditures": 0.0,
+       "status": "$73,107.00",
+       "url": "/ca/candidate/linda-blankenship?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "39"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-5-46272?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 5",
+   "url": "/ca/race/california-state-senate-district-5-46272",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 4088891.0,
+   "totalExpenditures": 6451332.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Susan Eggman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3188468.76,
+       "expenditures": 0.0,
+       "status": "$4,311,717.09",
+       "url": "/ca/candidate/susan-eggman?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jim Ridenour",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 64925.9,
+       "expenditures": 0.0,
+       "status": "$64,638.13",
+       "url": "/ca/candidate/jim-ridenour?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Susan Eggman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3188468.76,
+       "expenditures": 0.0,
+       "status": "$4,311,717.09",
+       "url": "/ca/candidate/susan-eggman?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jim Ridenour",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 64925.9,
+       "expenditures": 0.0,
+       "status": "$64,638.13",
+       "url": "/ca/candidate/jim-ridenour?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Mani Grewal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 643900.74,
+       "expenditures": 75000.0,
+       "status": "$1,887,159.65",
+       "url": "/ca/candidate/mani-grewal?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jesus Andrade",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 191595.48,
+       "expenditures": 0.0,
+       "status": "$187,817.27",
+       "url": "/ca/candidate/jesus-andrade?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "5"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-7-46273?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 7",
+   "url": "/ca/race/california-state-senate-district-7-46273",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1517562.0,
+   "totalExpenditures": 832432.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Steven Glazer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1242611.22,
+       "expenditures": 0.0,
+       "status": "$464,289.31",
+       "url": "/ca/candidate/steven-glazer?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Julie Mobley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17488.96,
+       "expenditures": 1000.0,
+       "status": "$23,314.05",
+       "url": "/ca/candidate/julie-mobley?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Steven Glazer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1242611.22,
+       "expenditures": 0.0,
+       "status": "$464,289.31",
+       "url": "/ca/candidate/steven-glazer?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Julie Mobley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17488.96,
+       "expenditures": 1000.0,
+       "status": "$23,314.05",
+       "url": "/ca/candidate/julie-mobley?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Marisol Rubio",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 257462.19,
+       "expenditures": 600.0,
+       "status": "$344,829.08",
+       "url": "/ca/candidate/marisol-rubio?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "7"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-9-46274?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 9",
+   "url": "/ca/race/california-state-senate-district-9-46274",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1038986.0,
+   "totalExpenditures": 685189.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Nancy Skinner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1038986.39,
+       "expenditures": 0.0,
+       "status": "$685,188.95",
+       "url": "/ca/candidate/nancy-skinner?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jamie Dluzak",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jamie-dluzak?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 3, 2020",
+     "candidates": [
+      {
+       "name": "Nancy Skinner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1038986.39,
+       "expenditures": 0.0,
+       "status": "$685,188.95",
+       "url": "/ca/candidate/nancy-skinner?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jamie Dluzak",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jamie-dluzak?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "9"
   }
  ]
 }

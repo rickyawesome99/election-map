@@ -15490,8 +15490,9 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "canceledGeneral": true,
-      "name": "General election canceled",
-      "party": "O"
+      "incumbent": true,
+      "name": "Adrian Tam",
+      "party": "D"
      }
     ]
    },
@@ -15666,8 +15667,9 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "canceledGeneral": true,
-      "name": "General election canceled",
-      "party": "O"
+      "incumbent": true,
+      "name": "Trish La Chica",
+      "party": "D"
      }
     ]
    },
@@ -16016,8 +16018,9 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "canceledGeneral": true,
-      "name": "General election canceled",
-      "party": "O"
+      "incumbent": true,
+      "name": "Chris Lee",
+      "party": "D"
      }
     ]
    }

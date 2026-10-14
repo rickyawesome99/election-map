@@ -10,7 +10,7 @@ import type { RaceType } from "@/data/forecastData";
 
 export const SHARE_CARD_SIZE = { width: 1200, height: 630 };
 
-const INK = "#1f2328", MUTED = "#656d76", BG = "#f6f8fa", RULE = "#d0d7de";
+const INK = "#1f2328", MUTED = "#656d76", BG = "#f9f8f5", RULE = "#d0d7de";
 const DEM = "#1b408c", REP = "#be1c29";
 
 const pct = (p: number) => (p < 0.01 ? "<1%" : p > 0.99 ? ">99%" : `${Math.round(p * 100)}%`);

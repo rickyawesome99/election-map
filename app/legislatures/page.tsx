@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { electionYear, stateLegData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
-import { UNICAMERAL_STATES } from "@/data/stateLegDistricts";
+import { stateLegDistricts, UNICAMERAL_STATES } from "@/data/stateLegDistricts";
 import { projectAllChambers, STATE_LEG_FORECAST_CONSTANTS } from "@/lib/stateLegForecast";
 import { latestChamberSeats } from "@/lib/stateLegSeats";
 import { getNationalEnvironment } from "@/lib/tplCompute";
@@ -35,6 +35,43 @@ export default function LegislaturesPage() {
   const demHeld = rows.filter((r) => r.currentDemControl === true).length;
   const repHeld = rows.filter((r) => r.currentDemControl === false).length;
   const expectedDemAfter = rows.reduce((s, r) => s + (r.c.pDemControl ?? (r.currentDemControl ? 1 : 0)), 0);
+
+  // Seat totals across every race on the ballot: projected seats exclude holdovers, and a flip is a
+  // seat whose favored winner (P ≥ 50%) is of a different party than its sitting member. Each
+  // district compares its favored winners with its sitting members as a set, so a vacant seat or a
+  // seat with no projection counts toward no flip, and a seat an independent holds or gains is
+  // counted apart from the D/R flips.
+  const seatTotals = { forecast: 0, dem: 0, rep: 0, oth: 0, flipD: 0, flipR: 0, gainI: 0 };
+  for (const c of chambers) {
+    seatTotals.forecast += c.seatsUp - c.unprojected;
+    seatTotals.dem += c.expectedDem - c.holdover.dem;
+    seatTotals.rep += c.expectedRep - c.holdover.rep;
+    seatTotals.oth += c.expectedOth - c.holdover.oth;
+    const roster = stateLegDistricts[c.abbr]?.[c.chamber] ?? [];
+    c.districts.forEach((d, i) => {
+      const winners: string[] = [];
+      if (d.contest === "independent" && d.indep && d.pI != null) {
+        const party = d.indep.slot === "D" ? "R" : "D";
+        winners.push(d.pI >= 0.5 ? "O" : party, ...Array(d.seats - d.indep.seats).fill(party));
+      } else if (d.contest === "other" && d.pI === 1) winners.push(...Array(d.seats).fill("O"));
+      else if (d.contest === "split") winners.push(...Array(d.guaranteed.dem).fill("D"), ...Array(d.guaranteed.rep).fill("R"));
+      else if (d.pD != null) winners.push(...Array(d.guaranteed.dem).fill("D"), ...Array(d.guaranteed.rep).fill("R"), ...Array(d.contestedSeats).fill(d.pD >= 0.5 ? "D" : "R"));
+      if (!winners.length) return;
+      // Sitting party per seat from the roster, which files fusion-ticket members (New York,
+      // Connecticut, Vermont) under "O": those take the major party their own 2026 listing carries.
+      const rd = roster[i];
+      const fieldParty = new Map<string, string>();
+      for (const x of d.candidates2026?.candidates ?? []) if (x.party === "D" || x.party === "R") fieldParty.set(x.name, x.party);
+      const sitting = (rd?.incumbents ?? []).filter((inc) => (inc.nextElection ?? rd.nextElection) === c.year)
+        .map((inc) => (inc.party === "D" || inc.party === "R" ? inc.party : fieldParty.get(inc.name) ?? "O")).slice(0, d.seats);
+      const n = (xs: string[], p: string) => xs.filter((x) => x === p).length;
+      const gain = (p: string) => Math.max(0, n(winners, p) - n(sitting, p));
+      const loss = (p: string) => Math.max(0, n(sitting, p) - n(winners, p));
+      seatTotals.flipD += Math.min(gain("D"), loss("R"));
+      seatTotals.flipR += Math.min(gain("R"), loss("D"));
+      seatTotals.gainI += Math.min(gain("O"), loss("D") + loss("R"));
+    });
+  }
 
   // Map rows: every state, both chambers — including chambers with no election this cycle, which keep
   // today's composition in the projected view.
@@ -73,7 +110,23 @@ export default function LegislaturesPage() {
           <p className="mt-3 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
             {chambers.length} chambers are on the ballot. Each is simulated seat by seat from the district atlas: a district&apos;s lean on today&apos;s lines, the national environment (E {env.eHat >= 0 ? "R" : "D"}+{Math.abs(env.eHat).toFixed(1)}, σ {env.sigmaE.toFixed(1)}), incumbency, and the {electionYear} field. Seats not on the ballot hold their sitting member. Method: <Link href="/methodology/state-leg" className="underline underline-offset-2">Legislative atlas</Link>.
           </p>
-          <div className="mt-6 pt-4 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
+          <div className="mt-6 pt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
+            {[
+              { label: "Seats forecast", value: seatTotals.forecast.toLocaleString(), sub: "state legislative seats on the ballot", color: undefined },
+              { label: "Projected Democratic seats", value: Math.round(seatTotals.dem).toLocaleString(), sub: "expected wins, all races", color: "var(--party-dem)" },
+              { label: "Projected Republican seats", value: Math.round(seatTotals.rep).toLocaleString(), sub: "expected wins, all races", color: "var(--party-rep)" },
+              { label: "Projected independent seats", value: Math.round(seatTotals.oth).toLocaleString(), sub: seatTotals.gainI ? `incl. ${seatTotals.gainI} gain${seatTotals.gainI > 1 ? "s" : ""} from a party` : "independents and third parties", color: "var(--party-ind)" },
+              { label: "Projected D flips", value: seatTotals.flipD.toLocaleString(), sub: "R-held seats favoring a Democrat", color: "var(--party-dem)" },
+              { label: "Projected R flips", value: seatTotals.flipR.toLocaleString(), sub: "D-held seats favoring a Republican", color: "var(--party-rep)" },
+            ].map((s) => (
+              <div key={s.label} className="min-w-0">
+                <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>{s.label}</div>
+                <div className="text-2xl font-bold tabular-nums leading-tight" style={{ color: s.color }}>{s.value}</div>
+                <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{s.sub}</div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 pt-4 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
             {[
               { label: "Chambers on the ballot", value: chambers.length, sub: `${demHeld} Democratic-held · ${repHeld} Republican-held` },
               { label: "In play", value: competitive.length, sub: "either party ≥ 20% to control" },
@@ -123,7 +176,7 @@ export default function LegislaturesPage() {
                     <td className="py-2 pr-3 text-right font-semibold" style={{ color: c.pDemControl != null && c.pDemControl >= 0.5 ? "var(--party-dem)" : "var(--app-text-muted)" }}>{pct(c.pDemControl)}</td>
                     <td className="py-2 pr-3 text-right font-semibold" style={{ color: c.pRepControl != null && c.pRepControl >= 0.5 ? "var(--party-rep)" : "var(--app-text-muted)" }}>{pct(c.pRepControl)}</td>
                     <td className="py-2 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{superP == null ? "—" : superP < 0.005 ? "<1%" : `${superWho} ${Math.round(superP * 100)}%`}</td>
-                    <td className="py-2 pr-0 text-right" style={{ color: "var(--app-text-muted)" }}>{c.decided.dem + c.decided.rep}{c.unprojected ? <span title="seats with no projection"> · {c.unprojected} n/p</span> : null}</td>
+                    <td className="py-2 pr-0 text-right" style={{ color: "var(--app-text-muted)" }}>{c.decided.dem + c.decided.rep + c.decided.oth}{c.unprojected ? <span title="seats with no projection"> · {c.unprojected} n/p</span> : null}</td>
                   </tr>
                 );
               })}

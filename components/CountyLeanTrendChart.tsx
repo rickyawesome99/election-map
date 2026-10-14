@@ -60,7 +60,11 @@ function WrsTooltip({ active, payload }: { active?: boolean; payload?: { payload
   );
 }
 
-export default function CountyLeanTrendChart({ yearAggregations }: { yearAggregations: YearAggregation[] }) {
+/**
+ * Each cycle's weighted lean (WRS), the per-year input the TPL blends. `reference` draws the
+ * blended figure itself as a dashed line, so the eye can see which cycles pull it where.
+ */
+export default function CountyLeanTrendChart({ yearAggregations, reference, height = 140, fitAxis = false }: { yearAggregations: YearAggregation[]; reference?: { value: number; label: string }; height?: number; /** Fit the axis to the data instead of anchoring it at Even. */ fitAxis?: boolean }) {
   const [chartReady, setChartReady] = useState(false);
   const chartHostRef = useRef<HTMLDivElement | null>(null);
   const [chartSize, setChartSize] = useState({ width: 0, height: 0 });
@@ -105,11 +109,11 @@ export default function CountyLeanTrendChart({ yearAggregations }: { yearAggrega
   if (chartPoints.length === 0) return null;
 
   const vals = chartPoints.map((p) => p.wrs).filter((v): v is number => v != null);
-  const axisConfig = niceAxisConfig(vals);
+  const axisConfig = niceAxisConfig(reference ? [...vals, reference.value] : vals, { includeZero: !fitAxis });
   const { chartData, segments } = buildSegmentLines(chartPoints);
 
   return (
-    <div ref={chartHostRef} className="min-w-0" style={{ height: 140 }}>
+    <div ref={chartHostRef} className="min-w-0" style={{ height }}>
       {chartReady && chartSize.width > 0 && chartSize.height > 0 && (
         <LineChart width={chartSize.width} height={chartSize.height} data={chartData} margin={{ top: 8, right: 10, bottom: 0, left: 0 }}>
           <XAxis
@@ -130,6 +134,16 @@ export default function CountyLeanTrendChart({ yearAggregations }: { yearAggrega
           />
           <CartesianGrid vertical={false} stroke="var(--app-border)" strokeOpacity={0.42} strokeDasharray="2 5" />
           <ReferenceLine y={0} stroke="var(--app-text-muted)" strokeOpacity={0.55} strokeDasharray="4 3" strokeWidth={1.25} />
+          {reference && (
+            <ReferenceLine
+              y={reference.value}
+              stroke={marginColor(reference.value)}
+              strokeOpacity={0.8}
+              strokeDasharray="6 4"
+              strokeWidth={1.5}
+              label={{ value: reference.label, position: "insideTopRight", fontSize: 10, fill: marginColor(reference.value) }}
+            />
+          )}
           <Tooltip content={<WrsTooltip />} cursor={{ stroke: "var(--app-border)", strokeWidth: 1 }} />
           {segments.map(({ key, stroke }) => (
             <Line

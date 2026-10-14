@@ -81,7 +81,7 @@ export default function StateDistrictMap({
     return () => ro.disconnect();
   }, [measure]);
 
-  const mapStroke = darkMode ? "#0d1117" : "#f6f8fa";
+  const mapStroke = darkMode ? "#0d1117" : "#f9f8f5";
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
 
   // Build lookup by race id; also alias Census at-large GEOIDs (end in "00") → our new "01" ids

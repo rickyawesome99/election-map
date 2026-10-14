@@ -66,7 +66,7 @@ export default function StatesSelectedCard({
             )}
 
             <Link
-              href={mode === "legislature" ? `/states/${row.id}/legislature` : `/states/${row.id}`}
+              href={mode === "legislature" ? `/states/${row.id}#legislature` : `/states/${row.id}`}
               className="mt-2 flex items-center gap-1 text-xs font-bold hover:underline"
               style={{ color: "var(--app-text-primary)" }}
             >

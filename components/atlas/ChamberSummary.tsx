@@ -62,7 +62,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
         {projection && projTotal && (
           <section>
             {heading(`${electionYear} projection`)}
-            <SeatLine dem={projection.expectedDem.toFixed(0)} rep={projection.expectedRep.toFixed(0)} />
+            <SeatLine dem={projection.expectedDem.toFixed(0)} rep={projection.expectedRep.toFixed(0)} oth={Math.round(projection.expectedOth)} />
             <SeatBar dem={projection.expectedDem} rep={projection.expectedRep} total={projTotal} />
             <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
               {projection.pDemControl == null ? `${projection.unprojected} seats unprojected` : (

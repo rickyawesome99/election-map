@@ -1,1108 +1,6007 @@
 {
  "state": "CA",
  "cycle": 2018,
- "fetched": "2026-10-11",
- "dataThrough": "06/30/2026",
+ "fetched": "2026-10-12",
+ "dataThrough": "12/31/2018",
  "races": [
   {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-1-1790?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-10-2188?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-11-1142?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-12-9312?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-13-8099?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-14-8829?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-15-1866?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-16-348?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-17-4042?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-18-4465?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-19-1209?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-2-14179?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-20-6051?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-21-3819?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-22-11354?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-23-12735?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-24-1150?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-25-4360?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-26-2036?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-27-6612?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-28-2604?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-29-13306?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-3-3803?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-30-2602?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-31-3655?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-32-6062?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-33-15006?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-34-7336?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-35-3520?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-36-3450?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-37-240?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-38-8443?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-39-1168?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-4-5802?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-40-4298?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-41-890?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-42-8778?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-43-11239?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-44-4104?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-45-1493?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-46-5514?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-47-22?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-48-7036?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-49-1823?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-5-2429?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-50-14763?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-51-7137?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-52-3288?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-53-5998?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-54-2916?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-55-3109?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-56-9586?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-57-3650?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-58-7639?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-59-2943?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-6-5057?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-60-6471?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-61-2215?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-62-4668?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-63-13549?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-64-15663?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-65-6091?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-66-582?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-67-6957?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-68-2898?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-69-2069?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-7-7773?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-70-9186?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-71-3548?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-72-11257?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-73-4054?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-74-1596?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-75-5284?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-76-1059?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-77-3342?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-78-1178?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-79-2582?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-8-5101?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-80-6302?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-assembly-district-9-4638?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-10-4463?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Assembly District 1",
+   "url": "/ca/race/california-state-assembly-district-1-1790",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 2045933.0,
+   "totalExpenditures": 1746410.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Brian Dahle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2023499.17,
+       "expenditures": 58800.0,
+       "status": "$1,727,488.53",
+       "url": "/ca/candidate/brian-dahle?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Caleen Sisk",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22433.94,
+       "expenditures": 0.0,
+       "status": "$18,921.61",
+       "url": "/ca/candidate/caleen-sisk?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Brian Dahle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2023499.17,
+       "expenditures": 58800.0,
+       "status": "$1,727,488.53",
+       "url": "/ca/candidate/brian-dahle?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Caleen Sisk",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22433.94,
+       "expenditures": 0.0,
+       "status": "$18,921.61",
+       "url": "/ca/candidate/caleen-sisk?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "California State Assembly District 10",
+   "url": "/ca/race/california-state-assembly-district-10-2188",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 783203.0,
+   "totalExpenditures": 3006845.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Marc Levine",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 725413.0,
+       "expenditures": 0.0,
+       "status": "$2,952,990.10",
+       "url": "/ca/candidate/marc-levine?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Dan Monte",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 57789.79,
+       "expenditures": 5000.0,
+       "status": "$53,855.34",
+       "url": "/ca/candidate/dan-monte?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Marc Levine",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 725413.0,
+       "expenditures": 0.0,
+       "status": "$2,952,990.10",
+       "url": "/ca/candidate/marc-levine?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Dan Monte",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 57789.79,
+       "expenditures": 5000.0,
+       "status": "$53,855.34",
+       "url": "/ca/candidate/dan-monte?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "California State Assembly District 11",
+   "url": "/ca/race/california-state-assembly-district-11-1142",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1125822.0,
+   "totalExpenditures": 1530805.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jim Frazier",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1118313.98,
+       "expenditures": 0.0,
+       "status": "$1,524,519.93",
+       "url": "/ca/candidate/jim-frazier?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Lisa Romero",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7508.36,
+       "expenditures": 400.36,
+       "status": "$6,285.56",
+       "url": "/ca/candidate/lisa-romero?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jim Frazier",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1118313.98,
+       "expenditures": 0.0,
+       "status": "$1,524,519.93",
+       "url": "/ca/candidate/jim-frazier?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Lisa Romero",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7508.36,
+       "expenditures": 400.36,
+       "status": "$6,285.56",
+       "url": "/ca/candidate/lisa-romero?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "California State Assembly District 12",
+   "url": "/ca/race/california-state-assembly-district-12-9312",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 677804.0,
+   "totalExpenditures": 737731.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Heath Flora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 677803.83,
+       "expenditures": 2500.0,
+       "status": "$737,730.66",
+       "url": "/ca/candidate/heath-flora?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Robert Chase",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/robert-chase?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Heath Flora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 677803.83,
+       "expenditures": 2500.0,
+       "status": "$737,730.66",
+       "url": "/ca/candidate/heath-flora?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Robert Chase",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/robert-chase?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "California State Assembly District 13",
+   "url": "/ca/race/california-state-assembly-district-13-8099",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 924984.0,
+   "totalExpenditures": 1831445.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Susan Eggman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 857108.63,
+       "expenditures": 0.0,
+       "status": "$1,766,120.54",
+       "url": "/ca/candidate/susan-eggman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Susan Eggman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 857108.63,
+       "expenditures": 0.0,
+       "status": "$1,766,120.54",
+       "url": "/ca/candidate/susan-eggman?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Carlos Villapudua",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 67874.99,
+       "expenditures": 0.0,
+       "status": "$65,324.74",
+       "url": "/ca/candidate/carlos-villapudua?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "California State Assembly District 14",
+   "url": "/ca/race/california-state-assembly-district-14-8829",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1215649.0,
+   "totalExpenditures": 1042918.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tim Grayson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1215649.4,
+       "expenditures": 0.0,
+       "status": "$1,042,918.39",
+       "url": "/ca/candidate/tim-grayson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Tim Grayson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1215649.4,
+       "expenditures": 0.0,
+       "status": "$1,042,918.39",
+       "url": "/ca/candidate/tim-grayson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "California State Assembly District 15",
+   "url": "/ca/race/california-state-assembly-district-15-1866",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 2846999.0,
+   "totalExpenditures": 3459526.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Buffy Wicks",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1482669.18,
+       "expenditures": 0.0,
+       "status": "$1,872,206.61",
+       "url": "/ca/candidate/buffy-wicks?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jovanka Beckles",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 542224.24,
+       "expenditures": 0.0,
+       "status": "$486,350.14",
+       "url": "/ca/candidate/jovanka-beckles?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jovanka Beckles",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 542224.24,
+       "expenditures": 0.0,
+       "status": "$486,350.14",
+       "url": "/ca/candidate/jovanka-beckles?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Buffy Wicks",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1482669.18,
+       "expenditures": 0.0,
+       "status": "$1,872,206.61",
+       "url": "/ca/candidate/buffy-wicks?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Judy Appel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 286160.75,
+       "expenditures": 15000.0,
+       "status": "$308,217.72",
+       "url": "/ca/candidate/judy-appel?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ben Bartlett",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 199569.81,
+       "expenditures": 350.0,
+       "status": "$243,197.68",
+       "url": "/ca/candidate/ben-bartlett?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Dan Kalb",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 234009.92,
+       "expenditures": 58250.0,
+       "status": "$379,571.02",
+       "url": "/ca/candidate/dan-kalb?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Andy Katz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 100166.96,
+       "expenditures": 65000.0,
+       "status": "$163,583.65",
+       "url": "/ca/candidate/andy-katz?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Rochelle Pardue-Okimoto",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 100.0,
+       "expenditures": 0.0,
+       "status": "$4,800.74",
+       "url": "/ca/candidate/rochelle-pardue-okimoto?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Pranav Jandhyala",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2098.45,
+       "expenditures": 215.03,
+       "status": "$1,598.45",
+       "url": "/ca/candidate/pranav-jandhyala?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "California State Assembly District 16",
+   "url": "/ca/race/california-state-assembly-district-16-348",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 4612485.0,
+   "totalExpenditures": 5843062.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Rebecca Bauer-Kahan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1904007.28,
+       "expenditures": 0.0,
+       "status": "$2,035,672.10",
+       "url": "/ca/candidate/rebecca-bauer-kahan?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Catharine Baker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2708477.48,
+       "expenditures": 0.0,
+       "status": "$3,807,389.98",
+       "url": "/ca/candidate/catharine-baker?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Catharine Baker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2708477.48,
+       "expenditures": 0.0,
+       "status": "$3,807,389.98",
+       "url": "/ca/candidate/catharine-baker?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Rebecca Bauer-Kahan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1904007.28,
+       "expenditures": 0.0,
+       "status": "$2,035,672.10",
+       "url": "/ca/candidate/rebecca-bauer-kahan?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "California State Assembly District 17",
+   "url": "/ca/race/california-state-assembly-district-17-4042",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1305187.0,
+   "totalExpenditures": 1388765.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "David Chiu",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1305186.79,
+       "expenditures": 0.0,
+       "status": "$1,388,765.02",
+       "url": "/ca/candidate/david-chiu?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alejandro Fernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/alejandro-fernandez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "David Chiu",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1305186.79,
+       "expenditures": 0.0,
+       "status": "$1,388,765.02",
+       "url": "/ca/candidate/david-chiu?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alejandro Fernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/alejandro-fernandez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "California State Assembly District 18",
+   "url": "/ca/race/california-state-assembly-district-18-4465",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1639264.0,
+   "totalExpenditures": 3340432.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Rob Bonta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1636590.42,
+       "expenditures": 0.0,
+       "status": "$3,336,891.04",
+       "url": "/ca/candidate/rob-bonta?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Steve Slauson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2673.16,
+       "expenditures": 400.0,
+       "status": "$3,540.53",
+       "url": "/ca/candidate/steve-slauson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Rob Bonta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1636590.42,
+       "expenditures": 0.0,
+       "status": "$3,336,891.04",
+       "url": "/ca/candidate/rob-bonta?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Steve Slauson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2673.16,
+       "expenditures": 400.0,
+       "status": "$3,540.53",
+       "url": "/ca/candidate/steve-slauson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "California State Assembly District 19",
+   "url": "/ca/race/california-state-assembly-district-19-1209",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1337781.0,
+   "totalExpenditures": 1695155.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Phil Ting",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1320449.64,
+       "expenditures": 0.0,
+       "status": "$1,679,528.78",
+       "url": "/ca/candidate/phil-ting?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Keith Bogdon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17331.72,
+       "expenditures": 2500.0,
+       "status": "$15,626.67",
+       "url": "/ca/candidate/keith-bogdon?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Phil Ting",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1320449.64,
+       "expenditures": 0.0,
+       "status": "$1,679,528.78",
+       "url": "/ca/candidate/phil-ting?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Keith Bogdon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17331.72,
+       "expenditures": 2500.0,
+       "status": "$15,626.67",
+       "url": "/ca/candidate/keith-bogdon?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "California State Assembly District 2",
+   "url": "/ca/race/california-state-assembly-district-2-14179",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 962763.0,
+   "totalExpenditures": 1196600.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jim Wood",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 944070.11,
+       "expenditures": 0.0,
+       "status": "$1,174,978.50",
+       "url": "/ca/candidate/jim-wood?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mathew Heath",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18692.39,
+       "expenditures": 0.0,
+       "status": "$21,621.19",
+       "url": "/ca/candidate/mathew-heath?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jim Wood",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 944070.11,
+       "expenditures": 0.0,
+       "status": "$1,174,978.50",
+       "url": "/ca/candidate/jim-wood?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mathew Heath",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18692.39,
+       "expenditures": 0.0,
+       "status": "$21,621.19",
+       "url": "/ca/candidate/mathew-heath?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "California State Assembly District 20",
+   "url": "/ca/race/california-state-assembly-district-20-6051",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 695225.0,
+   "totalExpenditures": 875182.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Bill Quirk",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 695224.63,
+       "expenditures": 0.0,
+       "status": "$875,181.69",
+       "url": "/ca/candidate/bill-quirk?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Bill Quirk",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 695224.63,
+       "expenditures": 0.0,
+       "status": "$875,181.69",
+       "url": "/ca/candidate/bill-quirk?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "California State Assembly District 21",
+   "url": "/ca/race/california-state-assembly-district-21-3819",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1654582.0,
+   "totalExpenditures": 1501974.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Adam Gray",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1649906.93,
+       "expenditures": 0.0,
+       "status": "$1,497,333.19",
+       "url": "/ca/candidate/adam-gray?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Justin Quigley",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 4675.0,
+       "expenditures": 825.0,
+       "status": "$4,640.48",
+       "url": "/ca/candidate/justin-quigley?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Adam Gray",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1649906.93,
+       "expenditures": 0.0,
+       "status": "$1,497,333.19",
+       "url": "/ca/candidate/adam-gray?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Justin Quigley",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 4675.0,
+       "expenditures": 825.0,
+       "status": "$4,640.48",
+       "url": "/ca/candidate/justin-quigley?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "California State Assembly District 22",
+   "url": "/ca/race/california-state-assembly-district-22-11354",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 721396.0,
+   "totalExpenditures": 1132397.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Kevin Mullin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 714614.39,
+       "expenditures": 0.0,
+       "status": "$1,124,368.69",
+       "url": "/ca/candidate/kevin-mullin?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Christina Laskowski",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6781.89,
+       "expenditures": 200.0,
+       "status": "$8,028.15",
+       "url": "/ca/candidate/christina-laskowski?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Kevin Mullin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 714614.39,
+       "expenditures": 0.0,
+       "status": "$1,124,368.69",
+       "url": "/ca/candidate/kevin-mullin?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Christina Laskowski",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6781.89,
+       "expenditures": 200.0,
+       "status": "$8,028.15",
+       "url": "/ca/candidate/christina-laskowski?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "California State Assembly District 23",
+   "url": "/ca/race/california-state-assembly-district-23-12735",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 791901.0,
+   "totalExpenditures": 1076803.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jim Patterson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 762005.27,
+       "expenditures": 0.0,
+       "status": "$1,049,869.14",
+       "url": "/ca/candidate/jim-patterson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Aileen Rizo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29895.97,
+       "expenditures": 0.0,
+       "status": "$26,934.02",
+       "url": "/ca/candidate/aileen-rizo?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jim Patterson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 762005.27,
+       "expenditures": 0.0,
+       "status": "$1,049,869.14",
+       "url": "/ca/candidate/jim-patterson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Aileen Rizo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29895.97,
+       "expenditures": 0.0,
+       "status": "$26,934.02",
+       "url": "/ca/candidate/aileen-rizo?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "California State Assembly District 24",
+   "url": "/ca/race/california-state-assembly-district-24-1150",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 958288.0,
+   "totalExpenditures": 879996.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Marc Berman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 942701.8,
+       "expenditures": 0.0,
+       "status": "$866,476.83",
+       "url": "/ca/candidate/marc-berman?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alex Glew",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15585.88,
+       "expenditures": 250.0,
+       "status": "$13,519.37",
+       "url": "/ca/candidate/alex-glew?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Marc Berman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 942701.8,
+       "expenditures": 0.0,
+       "status": "$866,476.83",
+       "url": "/ca/candidate/marc-berman?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alex Glew",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15585.88,
+       "expenditures": 250.0,
+       "status": "$13,519.37",
+       "url": "/ca/candidate/alex-glew?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "California State Assembly District 25",
+   "url": "/ca/race/california-state-assembly-district-25-4360",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 686476.0,
+   "totalExpenditures": 651547.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Kansen Chu",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 684370.64,
+       "expenditures": 1000.0,
+       "status": "$649,422.83",
+       "url": "/ca/candidate/kansen-chu?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bob Brunton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2105.0,
+       "expenditures": 0.0,
+       "status": "$2,124.48",
+       "url": "/ca/candidate/bob-brunton?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Kansen Chu",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 684370.64,
+       "expenditures": 1000.0,
+       "status": "$649,422.83",
+       "url": "/ca/candidate/kansen-chu?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bob Brunton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2105.0,
+       "expenditures": 0.0,
+       "status": "$2,124.48",
+       "url": "/ca/candidate/bob-brunton?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Carmen Montano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/carmen-montano?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Robert Imhoff",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/robert-imhoff?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "California State Assembly District 26",
+   "url": "/ca/race/california-state-assembly-district-26-2036",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 945045.0,
+   "totalExpenditures": 1103011.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Devon Mathis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 518355.56,
+       "expenditures": 1475.0,
+       "status": "$617,247.19",
+       "url": "/ca/candidate/devon-mathis?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jose Sigala",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 77592.16,
+       "expenditures": 0.0,
+       "status": "$75,554.00",
+       "url": "/ca/candidate/jose-sigala?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Devon Mathis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 518355.56,
+       "expenditures": 1475.0,
+       "status": "$617,247.19",
+       "url": "/ca/candidate/devon-mathis?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jose Sigala",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 77592.16,
+       "expenditures": 0.0,
+       "status": "$75,554.00",
+       "url": "/ca/candidate/jose-sigala?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Warren Gubler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 225120.88,
+       "expenditures": 50000.0,
+       "status": "$269,387.88",
+       "url": "/ca/candidate/gubler?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jack Lavers",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 123976.0,
+       "expenditures": 20000.0,
+       "status": "$140,821.99",
+       "url": "/ca/candidate/jack-lavers?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "California State Assembly District 27",
+   "url": "/ca/race/california-state-assembly-district-27-6612",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 672119.0,
+   "totalExpenditures": 662150.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Ash Kalra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 672119.0,
+       "expenditures": 0.0,
+       "status": "$662,150.39",
+       "url": "/ca/candidate/ash-kalra?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Ash Kalra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 672119.0,
+       "expenditures": 0.0,
+       "status": "$662,150.39",
+       "url": "/ca/candidate/ash-kalra?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "California State Assembly District 28",
+   "url": "/ca/race/california-state-assembly-district-28-2604",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1653983.0,
+   "totalExpenditures": 2589471.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Evan Low",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1645453.19,
+       "expenditures": 0.0,
+       "status": "$2,577,198.72",
+       "url": "/ca/candidate/evan-low?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Michael Snyder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8529.36,
+       "expenditures": 200.0,
+       "status": "$12,272.00",
+       "url": "/ca/candidate/michael-snyder?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Evan Low",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1645453.19,
+       "expenditures": 0.0,
+       "status": "$2,577,198.72",
+       "url": "/ca/candidate/evan-low?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Michael Snyder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8529.36,
+       "expenditures": 200.0,
+       "status": "$12,272.00",
+       "url": "/ca/candidate/michael-snyder?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "California State Assembly District 29",
+   "url": "/ca/race/california-state-assembly-district-29-13306",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 443950.0,
+   "totalExpenditures": 597171.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Mark Stone",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 405779.14,
+       "expenditures": 0.0,
+       "status": "$560,066.95",
+       "url": "/ca/candidate/mark-stone?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Vicki Nohrden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38170.57,
+       "expenditures": 8000.0,
+       "status": "$37,104.13",
+       "url": "/ca/candidate/vicki-nohrden?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Mark Stone",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 405779.14,
+       "expenditures": 0.0,
+       "status": "$560,066.95",
+       "url": "/ca/candidate/mark-stone?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Vicki Nohrden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38170.57,
+       "expenditures": 8000.0,
+       "status": "$37,104.13",
+       "url": "/ca/candidate/vicki-nohrden?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "California State Assembly District 3",
+   "url": "/ca/race/california-state-assembly-district-3-3803",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 983134.0,
+   "totalExpenditures": 1080161.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "James Gallagher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 940086.45,
+       "expenditures": 0.0,
+       "status": "$1,019,062.67",
+       "url": "/ca/candidate/james-gallagher?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Sonia Aery",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 43047.63,
+       "expenditures": 10621.33,
+       "status": "$61,098.48",
+       "url": "/ca/candidate/sonia-aery?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "James Gallagher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 940086.45,
+       "expenditures": 0.0,
+       "status": "$1,019,062.67",
+       "url": "/ca/candidate/james-gallagher?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Sonia Aery",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 43047.63,
+       "expenditures": 10621.33,
+       "status": "$61,098.48",
+       "url": "/ca/candidate/sonia-aery?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "California State Assembly District 30",
+   "url": "/ca/race/california-state-assembly-district-30-2602",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1024425.0,
+   "totalExpenditures": 1715084.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Robert Rivas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 829708.89,
+       "expenditures": 0.0,
+       "status": "$1,182,125.35",
+       "url": "/ca/candidate/robert-rivas?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Robert Rivas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 829708.89,
+       "expenditures": 0.0,
+       "status": "$1,182,125.35",
+       "url": "/ca/candidate/robert-rivas?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Trina Coffman- Gomez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/trina-coffman-gomez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Peter Leroe-Munoz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 67949.95,
+       "expenditures": 40000.0,
+       "status": "$293,383.90",
+       "url": "/ca/candidate/peter-leroe-munoz?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bill Lipe",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 126766.38,
+       "expenditures": 85000.0,
+       "status": "$239,574.45",
+       "url": "/ca/candidate/bill-lipe?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "California State Assembly District 31",
+   "url": "/ca/race/california-state-assembly-district-31-3655",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 990808.0,
+   "totalExpenditures": 886059.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Joaquin Arambula",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 958436.13,
+       "expenditures": 0.0,
+       "status": "$856,046.15",
+       "url": "/ca/candidate/joaquin-arambula?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Lupe Espinoza",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 32372.0,
+       "expenditures": 0.0,
+       "status": "$30,012.58",
+       "url": "/ca/candidate/lupe-espinoza?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Joaquin Arambula",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 958436.13,
+       "expenditures": 0.0,
+       "status": "$856,046.15",
+       "url": "/ca/candidate/joaquin-arambula?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Lupe Espinoza",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 32372.0,
+       "expenditures": 0.0,
+       "status": "$30,012.58",
+       "url": "/ca/candidate/lupe-espinoza?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "California State Assembly District 32",
+   "url": "/ca/race/california-state-assembly-district-32-6062",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3736333.0,
+   "totalExpenditures": 5396398.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Rudy Salas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2239033.35,
+       "expenditures": 0.0,
+       "status": "$3,653,499.23",
+       "url": "/ca/candidate/rudy-salas?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Justin Mendes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1497299.64,
+       "expenditures": 0.0,
+       "status": "$1,742,899.05",
+       "url": "/ca/candidate/justin-mendes?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Rudy Salas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2239033.35,
+       "expenditures": 0.0,
+       "status": "$3,653,499.23",
+       "url": "/ca/candidate/rudy-salas?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Justin Mendes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1497299.64,
+       "expenditures": 0.0,
+       "status": "$1,742,899.05",
+       "url": "/ca/candidate/justin-mendes?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "California State Assembly District 33",
+   "url": "/ca/race/california-state-assembly-district-33-15006",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 554734.0,
+   "totalExpenditures": 742447.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jay Obernolte",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 547446.32,
+       "expenditures": 0.0,
+       "status": "$727,842.05",
+       "url": "/ca/candidate/jay-obernolte?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jay Obernolte",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 547446.32,
+       "expenditures": 0.0,
+       "status": "$727,842.05",
+       "url": "/ca/candidate/jay-obernolte?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Scott Markovich",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7287.34,
+       "expenditures": 4000.0,
+       "status": "$14,604.99",
+       "url": "/ca/candidate/scott-markovich?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "California State Assembly District 34",
+   "url": "/ca/race/california-state-assembly-district-34-7336",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1220704.0,
+   "totalExpenditures": 1337516.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Vince Fong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1220703.7,
+       "expenditures": 0.0,
+       "status": "$1,337,515.76",
+       "url": "/ca/candidate/vince-fong?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Vince Fong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1220703.7,
+       "expenditures": 0.0,
+       "status": "$1,337,515.76",
+       "url": "/ca/candidate/vince-fong?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "California State Assembly District 35",
+   "url": "/ca/race/california-state-assembly-district-35-3520",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1418109.0,
+   "totalExpenditures": 1823763.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jordan Cunningham",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1276403.45,
+       "expenditures": 0.0,
+       "status": "$1,685,727.64",
+       "url": "/ca/candidate/jordan-cunningham?cycle=2018-election-cycle"
+      },
+      {
+       "name": "William Ostrander",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 141705.71,
+       "expenditures": 0.0,
+       "status": "$138,035.08",
+       "url": "/ca/candidate/william-ostrander?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jordan Cunningham",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1276403.45,
+       "expenditures": 0.0,
+       "status": "$1,685,727.64",
+       "url": "/ca/candidate/jordan-cunningham?cycle=2018-election-cycle"
+      },
+      {
+       "name": "William Ostrander",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 141705.71,
+       "expenditures": 0.0,
+       "status": "$138,035.08",
+       "url": "/ca/candidate/william-ostrander?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "California State Assembly District 36",
+   "url": "/ca/race/california-state-assembly-district-36-3450",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 814874.0,
+   "totalExpenditures": 969714.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Thomas Lackey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 743881.64,
+       "expenditures": 0.0,
+       "status": "$901,639.40",
+       "url": "/ca/candidate/thomas-lackey?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Steve Fox",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 70992.0,
+       "expenditures": 0.0,
+       "status": "$68,075.06",
+       "url": "/ca/candidate/steve-fox?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Thomas Lackey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 743881.64,
+       "expenditures": 0.0,
+       "status": "$901,639.40",
+       "url": "/ca/candidate/thomas-lackey?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Steve Fox",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 70992.0,
+       "expenditures": 0.0,
+       "status": "$68,075.06",
+       "url": "/ca/candidate/steve-fox?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "California State Assembly District 37",
+   "url": "/ca/race/california-state-assembly-district-37-240",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 791354.0,
+   "totalExpenditures": 1176737.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "S Monique Limon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 791354.28,
+       "expenditures": 0.0,
+       "status": "$1,176,737.43",
+       "url": "/ca/candidate/s-monique-limon?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "S Monique Limon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 791354.28,
+       "expenditures": 0.0,
+       "status": "$1,176,737.43",
+       "url": "/ca/candidate/s-monique-limon?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "California State Assembly District 38",
+   "url": "/ca/race/california-state-assembly-district-38-8443",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3960713.0,
+   "totalExpenditures": 4158208.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Christy Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2290435.62,
+       "expenditures": 0.0,
+       "status": "$2,162,079.12",
+       "url": "/ca/candidate/christy-smith?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Dante Acosta",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1670277.29,
+       "expenditures": 0.0,
+       "status": "$1,996,128.47",
+       "url": "/ca/candidate/dante-acosta?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Dante Acosta",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1670277.29,
+       "expenditures": 0.0,
+       "status": "$1,996,128.47",
+       "url": "/ca/candidate/dante-acosta?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Christy Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2290435.62,
+       "expenditures": 0.0,
+       "status": "$2,162,079.12",
+       "url": "/ca/candidate/christy-smith?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "California State Assembly District 39",
+   "url": "/ca/race/california-state-assembly-district-39-1168",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1420323.0,
+   "totalExpenditures": 1853074.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Luz Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 990408.29,
+       "expenditures": 0.0,
+       "status": "$1,283,883.48",
+       "url": "/ca/candidate/luz-rivas?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Luz Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 990408.29,
+       "expenditures": 0.0,
+       "status": "$1,283,883.48",
+       "url": "/ca/candidate/luz-rivas?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Patty Lopez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48004.99,
+       "expenditures": 0.0,
+       "status": "$54,128.45",
+       "url": "/ca/candidate/patty-lopez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Antonio Sanchez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 381909.5,
+       "expenditures": 0.0,
+       "status": "$515,061.65",
+       "url": "/ca/candidate/antonio-sanchez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "California State Assembly District 4",
+   "url": "/ca/race/california-state-assembly-district-4-5802",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 929279.0,
+   "totalExpenditures": 1207385.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Cecilia Aguiar-Curry",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 924200.72,
+       "expenditures": 0.0,
+       "status": "$1,202,400.09",
+       "url": "/ca/candidate/cecilia-aguiar-curry?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Brandon Nelson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 5078.39,
+       "expenditures": 0.0,
+       "status": "$4,985.00",
+       "url": "/ca/candidate/brandon-nelson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Cecilia Aguiar-Curry",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 924200.72,
+       "expenditures": 0.0,
+       "status": "$1,202,400.09",
+       "url": "/ca/candidate/cecilia-aguiar-curry?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Brandon Nelson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 5078.39,
+       "expenditures": 0.0,
+       "status": "$4,985.00",
+       "url": "/ca/candidate/brandon-nelson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "California State Assembly District 40",
+   "url": "/ca/race/california-state-assembly-district-40-4298",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3142386.0,
+   "totalExpenditures": 4142903.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "James Ramos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2816855.68,
+       "expenditures": 0.0,
+       "status": "$3,747,882.09",
+       "url": "/ca/candidate/james-ramos?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Henry Nickel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 325529.88,
+       "expenditures": 0.0,
+       "status": "$395,021.16",
+       "url": "/ca/candidate/henry-nickel?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "James Ramos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2816855.68,
+       "expenditures": 0.0,
+       "status": "$3,747,882.09",
+       "url": "/ca/candidate/james-ramos?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Henry Nickel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 325529.88,
+       "expenditures": 0.0,
+       "status": "$395,021.16",
+       "url": "/ca/candidate/henry-nickel?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "California State Assembly District 41",
+   "url": "/ca/race/california-state-assembly-district-41-890",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 931832.0,
+   "totalExpenditures": 1010897.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Chris Holden",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 931400.36,
+       "expenditures": 0.0,
+       "status": "$1,007,851.67",
+       "url": "/ca/candidate/chris-holden?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Chris Holden",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 931400.36,
+       "expenditures": 0.0,
+       "status": "$1,007,851.67",
+       "url": "/ca/candidate/chris-holden?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Kenny Rotter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 432.0,
+       "expenditures": 0.0,
+       "status": "$3,045.32",
+       "url": "/ca/candidate/kenny-rotter?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "California State Assembly District 42",
+   "url": "/ca/race/california-state-assembly-district-42-8778",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1811789.0,
+   "totalExpenditures": 2487974.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Chad Mayes",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1347711.31,
+       "expenditures": 0.0,
+       "status": "$1,906,841.65",
+       "url": "/ca/candidate/chad-mayes?cycle=2018-election-cycle"
+      },
+      {
+       "name": "DeniAntoinette Mazingo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 86297.44,
+       "expenditures": 900.0,
+       "status": "$43,151.30",
+       "url": "/ca/candidate/deniantoinette-mazingo?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Chad Mayes",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1347711.31,
+       "expenditures": 0.0,
+       "status": "$1,906,841.65",
+       "url": "/ca/candidate/chad-mayes?cycle=2018-election-cycle"
+      },
+      {
+       "name": "DeniAntoinette Mazingo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 86297.44,
+       "expenditures": 900.0,
+       "status": "$43,151.30",
+       "url": "/ca/candidate/deniantoinette-mazingo?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Gary Jeandron",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 85542.04,
+       "expenditures": 105000.0,
+       "status": "$128,884.96",
+       "url": "/ca/candidate/gary-jeandron?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Andrew Kotyuk",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 292238.05,
+       "expenditures": 9000.0,
+       "status": "$409,096.48",
+       "url": "/ca/candidate/andrew-kotyuk?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "California State Assembly District 43",
+   "url": "/ca/race/california-state-assembly-district-43-11239",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 884656.0,
+   "totalExpenditures": 928937.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Laura Friedman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 884655.53,
+       "expenditures": 0.0,
+       "status": "$928,936.50",
+       "url": "/ca/candidate/laura-friedman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Laura Friedman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 884655.53,
+       "expenditures": 0.0,
+       "status": "$928,936.50",
+       "url": "/ca/candidate/laura-friedman?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "California State Assembly District 44",
+   "url": "/ca/race/california-state-assembly-district-44-4104",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1210867.0,
+   "totalExpenditures": 1274389.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jacqui Irwin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1210867.16,
+       "expenditures": 0.0,
+       "status": "$1,274,388.63",
+       "url": "/ca/candidate/jacqui-irwin?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jacqui Irwin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1210867.16,
+       "expenditures": 0.0,
+       "status": "$1,274,388.63",
+       "url": "/ca/candidate/jacqui-irwin?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "California State Assembly District 45",
+   "url": "/ca/race/california-state-assembly-district-45-1493",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1900715.0,
+   "totalExpenditures": 2539397.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jesse Gabriel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1616689.93,
+       "expenditures": 50000.0,
+       "status": "$2,269,570.55",
+       "url": "/ca/candidate/jesse-gabriel?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Justin Clark",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/justin-clark?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jesse Gabriel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1616689.93,
+       "expenditures": 50000.0,
+       "status": "$2,269,570.55",
+       "url": "/ca/candidate/jesse-gabriel?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Justin Clark",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/justin-clark?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ray Bishop",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 20108.0,
+       "expenditures": 0.0,
+       "status": "$28,295.20",
+       "url": "/ca/candidate/ray-bishop?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Daniel Brin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/daniel-brin?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tricia Robbins Kasson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 203479.34,
+       "expenditures": 4000.0,
+       "status": "$210,241.02",
+       "url": "/ca/candidate/tricia-robbins-kasson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ankur Patel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 53087.93,
+       "expenditures": 0.0,
+       "status": "$30,150.35",
+       "url": "/ca/candidate/ankur-patel?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Dennis Zine",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 7350.0,
+       "expenditures": 0.0,
+       "status": "$1,139.93",
+       "url": "/ca/candidate/dennis-zine?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "California State Assembly District 46",
+   "url": "/ca/race/california-state-assembly-district-46-5514",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 696217.0,
+   "totalExpenditures": 957589.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Adrin Nazarian",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 664927.72,
+       "expenditures": 0.0,
+       "status": "$928,450.02",
+       "url": "/ca/candidate/adrin-nazarian?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Roxanne Hoge",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31289.65,
+       "expenditures": 0.0,
+       "status": "$29,139.03",
+       "url": "/ca/candidate/roxanne-hoge?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Adrin Nazarian",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 664927.72,
+       "expenditures": 0.0,
+       "status": "$928,450.02",
+       "url": "/ca/candidate/adrin-nazarian?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Roxanne Hoge",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31289.65,
+       "expenditures": 0.0,
+       "status": "$29,139.03",
+       "url": "/ca/candidate/roxanne-hoge?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "California State Assembly District 47",
+   "url": "/ca/race/california-state-assembly-district-47-22",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 769906.0,
+   "totalExpenditures": 460019.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Eloise Reyes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 769906.0,
+       "expenditures": 0.0,
+       "status": "$460,018.61",
+       "url": "/ca/candidate/eloise-reyes?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Eloise Reyes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 769906.0,
+       "expenditures": 0.0,
+       "status": "$460,018.61",
+       "url": "/ca/candidate/eloise-reyes?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "California State Assembly District 48",
+   "url": "/ca/race/california-state-assembly-district-48-7036",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1310988.0,
+   "totalExpenditures": 1638067.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Blanca Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1310988.15,
+       "expenditures": 0.0,
+       "status": "$1,638,066.97",
+       "url": "/ca/candidate/blanca-rubio?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Blanca Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1310988.15,
+       "expenditures": 0.0,
+       "status": "$1,638,066.97",
+       "url": "/ca/candidate/blanca-rubio?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "California State Assembly District 49",
+   "url": "/ca/race/california-state-assembly-district-49-1823",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 473677.0,
+   "totalExpenditures": 780276.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Ed Chau",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 424560.0,
+       "expenditures": 0.0,
+       "status": "$723,563.42",
+       "url": "/ca/candidate/ed-chau?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Burton Brink",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49116.61,
+       "expenditures": 1500.0,
+       "status": "$56,712.30",
+       "url": "/ca/candidate/burton-brink?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Ed Chau",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 424560.0,
+       "expenditures": 0.0,
+       "status": "$723,563.42",
+       "url": "/ca/candidate/ed-chau?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Burton Brink",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49116.61,
+       "expenditures": 1500.0,
+       "status": "$56,712.30",
+       "url": "/ca/candidate/burton-brink?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "California State Assembly District 5",
+   "url": "/ca/race/california-state-assembly-district-5-2429",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1012433.0,
+   "totalExpenditures": 1572680.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Frank Bigelow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1012156.62,
+       "expenditures": 0.0,
+       "status": "$1,572,404.05",
+       "url": "/ca/candidate/frank-bigelow?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Carla Neal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 276.0,
+       "expenditures": 400.0,
+       "status": "$276.00",
+       "url": "/ca/candidate/carla-neal?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Frank Bigelow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1012156.62,
+       "expenditures": 0.0,
+       "status": "$1,572,404.05",
+       "url": "/ca/candidate/frank-bigelow?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Carla Neal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 276.0,
+       "expenditures": 400.0,
+       "status": "$276.00",
+       "url": "/ca/candidate/carla-neal?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "California State Assembly District 50",
+   "url": "/ca/race/california-state-assembly-district-50-14763",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 850871.0,
+   "totalExpenditures": 862030.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Richard Bloom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 850870.7,
+       "expenditures": 0.0,
+       "status": "$862,030.20",
+       "url": "/ca/candidate/richard-bloom?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Richard Bloom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 850870.7,
+       "expenditures": 0.0,
+       "status": "$862,030.20",
+       "url": "/ca/candidate/richard-bloom?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "California State Assembly District 51",
+   "url": "/ca/race/california-state-assembly-district-51-7137",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1034517.0,
+   "totalExpenditures": 935507.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Wendy Carrillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1034517.07,
+       "expenditures": 400.0,
+       "status": "$935,506.59",
+       "url": "/ca/candidate/wendy-carrillo?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Wendy Carrillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1034517.07,
+       "expenditures": 400.0,
+       "status": "$935,506.59",
+       "url": "/ca/candidate/wendy-carrillo?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "California State Assembly District 52",
+   "url": "/ca/race/california-state-assembly-district-52-3288",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 993436.0,
+   "totalExpenditures": 1101311.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Freddie Rodriguez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 991911.26,
+       "expenditures": 0.0,
+       "status": "$1,100,213.09",
+       "url": "/ca/candidate/freddie-rodriguez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Freddie Rodriguez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 991911.26,
+       "expenditures": 0.0,
+       "status": "$1,100,213.09",
+       "url": "/ca/candidate/freddie-rodriguez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Frank Guzman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1525.0,
+       "expenditures": 400.0,
+       "status": "$1,098.00",
+       "url": "/ca/candidate/frank-guzman?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "California State Assembly District 53",
+   "url": "/ca/race/california-state-assembly-district-53-5998",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1712304.0,
+   "totalExpenditures": 1787661.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Miguel Santiago",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1692241.19,
+       "expenditures": 0.0,
+       "status": "$1,757,702.63",
+       "url": "/ca/candidate/miguel-santiago?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Kevin Jang",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 20062.8,
+       "expenditures": 0.0,
+       "status": "$19,958.32",
+       "url": "/ca/candidate/kevin-jang?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Miguel Santiago",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1692241.19,
+       "expenditures": 0.0,
+       "status": "$1,757,702.63",
+       "url": "/ca/candidate/miguel-santiago?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Kevin Jang",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 20062.8,
+       "expenditures": 0.0,
+       "status": "$19,958.32",
+       "url": "/ca/candidate/kevin-jang?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Michael Lewis",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$10,000.00",
+       "url": "/ca/candidate/michael-lewis?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "California State Assembly District 54",
+   "url": "/ca/race/california-state-assembly-district-54-2916",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1484299.0,
+   "totalExpenditures": 1811591.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Sydney Kamlager- Dove",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1242938.23,
+       "expenditures": 0.0,
+       "status": "$1,478,452.61",
+       "url": "/ca/candidate/sydney-kamlager-dove?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Michelle Piquado",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 157045.3,
+       "expenditures": 26000.0,
+       "status": "$243,446.39",
+       "url": "/ca/candidate/michelle-piquado?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Sydney Kamlager- Dove",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1242938.23,
+       "expenditures": 0.0,
+       "status": "$1,478,452.61",
+       "url": "/ca/candidate/sydney-kamlager-dove?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Michelle Piquado",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 157045.3,
+       "expenditures": 26000.0,
+       "status": "$243,446.39",
+       "url": "/ca/candidate/michelle-piquado?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Steve Dunwoody",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 78327.37,
+       "expenditures": 2250.0,
+       "status": "$84,317.69",
+       "url": "/ca/candidate/steve-dunwoody?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Lamar Lyons",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/lamar-lyons?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ashlee Marie Preston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5988.2,
+       "expenditures": 0.0,
+       "status": "$5,373.92",
+       "url": "/ca/candidate/ashlee-marie-preston?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mike Schaefer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/mike-schaefer?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "California State Assembly District 55",
+   "url": "/ca/race/california-state-assembly-district-55-3109",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 873571.0,
+   "totalExpenditures": 889157.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Phillip Chen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 871592.79,
+       "expenditures": 0.0,
+       "status": "$852,255.43",
+       "url": "/ca/candidate/phillip-chen?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Gregg Fritchle",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/gregg-fritchle?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Phillip Chen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 871592.79,
+       "expenditures": 0.0,
+       "status": "$852,255.43",
+       "url": "/ca/candidate/phillip-chen?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Gregg Fritchle",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/gregg-fritchle?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Melissa Fazli",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1478.35,
+       "expenditures": 0.0,
+       "status": "$3,528.85",
+       "url": "/ca/candidate/melissa-fazli?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Scott Lebda",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 500.0,
+       "expenditures": 50000.0,
+       "status": "$33,372.68",
+       "url": "/ca/candidate/scott-lebda?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "California State Assembly District 56",
+   "url": "/ca/race/california-state-assembly-district-56-9586",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 851901.0,
+   "totalExpenditures": 1162905.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Eduardo Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 776798.96,
+       "expenditures": 0.0,
+       "status": "$1,073,076.63",
+       "url": "/ca/candidate/eduardo-garcia?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jeff Gonzalez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 71901.71,
+       "expenditures": 0.0,
+       "status": "$86,628.71",
+       "url": "/ca/candidate/jeff-gonzalez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Eduardo Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 776798.96,
+       "expenditures": 0.0,
+       "status": "$1,073,076.63",
+       "url": "/ca/candidate/eduardo-garcia?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jeff Gonzalez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 71901.71,
+       "expenditures": 0.0,
+       "status": "$86,628.71",
+       "url": "/ca/candidate/jeff-gonzalez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jonathan Reiss",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3200.0,
+       "expenditures": 1601.0,
+       "status": "$3,200.00",
+       "url": "/ca/candidate/jonathan-reiss?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "California State Assembly District 57",
+   "url": "/ca/race/california-state-assembly-district-57-3650",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1151354.0,
+   "totalExpenditures": 1490910.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Ian Calderon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1151354.36,
+       "expenditures": 0.0,
+       "status": "$1,490,909.56",
+       "url": "/ca/candidate/ian-calderon?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jessica Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jessica-martinez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Ian Calderon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1151354.36,
+       "expenditures": 0.0,
+       "status": "$1,490,909.56",
+       "url": "/ca/candidate/ian-calderon?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jessica Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jessica-martinez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "California State Assembly District 58",
+   "url": "/ca/race/california-state-assembly-district-58-7639",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1335376.0,
+   "totalExpenditures": 1906605.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Cristina Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 766676.55,
+       "expenditures": 0.0,
+       "status": "$1,182,587.44",
+       "url": "/ca/candidate/cristina-garcia?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mike Simpfenderfer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18508.63,
+       "expenditures": 0.0,
+       "status": "$8,244.84",
+       "url": "/ca/candidate/mike-simpfenderfer?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Cristina Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 766676.55,
+       "expenditures": 0.0,
+       "status": "$1,182,587.44",
+       "url": "/ca/candidate/cristina-garcia?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mike Simpfenderfer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18508.63,
+       "expenditures": 0.0,
+       "status": "$8,244.84",
+       "url": "/ca/candidate/mike-simpfenderfer?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Pedro Aceituno",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 187186.93,
+       "expenditures": 65300.0,
+       "status": "$276,490.84",
+       "url": "/ca/candidate/pedro-aceituno?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ivan Altamirano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 279620.0,
+       "expenditures": 18500.0,
+       "status": "$351,662.38",
+       "url": "/ca/candidate/ivan-altamirano?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Frine Medrano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 67193.0,
+       "expenditures": 0.0,
+       "status": "$76,197.53",
+       "url": "/ca/candidate/frine-medrano?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Karla Salazar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16191.06,
+       "expenditures": 1000.0,
+       "status": "$11,421.50",
+       "url": "/ca/candidate/karla-salazar?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "California State Assembly District 59",
+   "url": "/ca/race/california-state-assembly-district-59-2943",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 644888.0,
+   "totalExpenditures": 758251.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Reginald Byron Jones-Sawyer Sr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 644887.58,
+       "expenditures": 3000.0,
+       "status": "$758,251.01",
+       "url": "/ca/candidate/reginald-byron-jones-sawyer-sr?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Reginald Byron Jones-Sawyer Sr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 644887.58,
+       "expenditures": 3000.0,
+       "status": "$758,251.01",
+       "url": "/ca/candidate/reginald-byron-jones-sawyer-sr?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "California State Assembly District 6",
+   "url": "/ca/race/california-state-assembly-district-6-5057",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 998798.0,
+   "totalExpenditures": 577473.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Kevin Kiley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 819682.0,
+       "expenditures": 0.0,
+       "status": "$330,965.61",
+       "url": "/ca/candidate/kevin-kiley?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jackie Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 179115.73,
+       "expenditures": 0.0,
+       "status": "$246,507.62",
+       "url": "/ca/candidate/jackie-smith?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Kevin Kiley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 819682.0,
+       "expenditures": 0.0,
+       "status": "$330,965.61",
+       "url": "/ca/candidate/kevin-kiley?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jackie Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 179115.73,
+       "expenditures": 0.0,
+       "status": "$246,507.62",
+       "url": "/ca/candidate/jackie-smith?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "California State Assembly District 60",
+   "url": "/ca/race/california-state-assembly-district-60-6471",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 5238229.0,
+   "totalExpenditures": 6407607.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Sabrina Cervantes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3821263.33,
+       "expenditures": 0.0,
+       "status": "$4,821,142.88",
+       "url": "/ca/candidate/sabrina-cervantes?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bill Essayli",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1416965.31,
+       "expenditures": 0.0,
+       "status": "$1,586,464.05",
+       "url": "/ca/candidate/bill-essayli?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Sabrina Cervantes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3821263.33,
+       "expenditures": 0.0,
+       "status": "$4,821,142.88",
+       "url": "/ca/candidate/sabrina-cervantes?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bill Essayli",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1416965.31,
+       "expenditures": 0.0,
+       "status": "$1,586,464.05",
+       "url": "/ca/candidate/bill-essayli?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "California State Assembly District 61",
+   "url": "/ca/race/california-state-assembly-district-61-2215",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 818793.0,
+   "totalExpenditures": 1025859.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jose Medina",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 667007.86,
+       "expenditures": 0.0,
+       "status": "$892,019.31",
+       "url": "/ca/candidate/jose-medina?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ali Mazarei",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 151785.25,
+       "expenditures": 46000.0,
+       "status": "$133,839.51",
+       "url": "/ca/candidate/ali-mazarei?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jose Medina",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 667007.86,
+       "expenditures": 0.0,
+       "status": "$892,019.31",
+       "url": "/ca/candidate/jose-medina?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ali Mazarei",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 151785.25,
+       "expenditures": 46000.0,
+       "status": "$133,839.51",
+       "url": "/ca/candidate/ali-mazarei?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "California State Assembly District 62",
+   "url": "/ca/race/california-state-assembly-district-62-4668",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1246400.0,
+   "totalExpenditures": 1899038.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Autumn Burke",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1246400.4,
+       "expenditures": 0.0,
+       "status": "$1,899,037.65",
+       "url": "/ca/candidate/autumn-burke?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Autumn Burke",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1246400.4,
+       "expenditures": 0.0,
+       "status": "$1,899,037.65",
+       "url": "/ca/candidate/autumn-burke?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "California State Assembly District 63",
+   "url": "/ca/race/california-state-assembly-district-63-13549",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 2315199.0,
+   "totalExpenditures": 4194388.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Anthony Rendon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2306853.62,
+       "expenditures": 0.0,
+       "status": "$4,181,433.52",
+       "url": "/ca/candidate/anthony-rendon?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Maria Estrada",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8345.1,
+       "expenditures": 0.0,
+       "status": "$12,954.84",
+       "url": "/ca/candidate/maria-estrada?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Anthony Rendon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2306853.62,
+       "expenditures": 0.0,
+       "status": "$4,181,433.52",
+       "url": "/ca/candidate/anthony-rendon?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Maria Estrada",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8345.1,
+       "expenditures": 0.0,
+       "status": "$12,954.84",
+       "url": "/ca/candidate/maria-estrada?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "California State Assembly District 64",
+   "url": "/ca/race/california-state-assembly-district-64-15663",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1093276.0,
+   "totalExpenditures": 1162633.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Mike Gipson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1089788.33,
+       "expenditures": 75500.0,
+       "status": "$1,159,145.61",
+       "url": "/ca/candidate/mike-gipson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Theresa Sanford",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3487.72,
+       "expenditures": 4500.0,
+       "status": "$3,487.72",
+       "url": "/ca/candidate/theresa-sanford?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Mike Gipson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1089788.33,
+       "expenditures": 75500.0,
+       "status": "$1,159,145.61",
+       "url": "/ca/candidate/mike-gipson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Theresa Sanford",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3487.72,
+       "expenditures": 4500.0,
+       "status": "$3,487.72",
+       "url": "/ca/candidate/theresa-sanford?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "California State Assembly District 65",
+   "url": "/ca/race/california-state-assembly-district-65-6091",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3003508.0,
+   "totalExpenditures": 3340019.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Sharon Quirk- Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2698738.43,
+       "expenditures": 0.0,
+       "status": "$3,016,253.71",
+       "url": "/ca/candidate/sharon-quirk-silva?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alexandria Coronado",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 304769.54,
+       "expenditures": 0.0,
+       "status": "$323,764.82",
+       "url": "/ca/candidate/alexandria-coronado?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Sharon Quirk- Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2698738.43,
+       "expenditures": 0.0,
+       "status": "$3,016,253.71",
+       "url": "/ca/candidate/sharon-quirk-silva?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alexandria Coronado",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 304769.54,
+       "expenditures": 0.0,
+       "status": "$323,764.82",
+       "url": "/ca/candidate/alexandria-coronado?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "California State Assembly District 66",
+   "url": "/ca/race/california-state-assembly-district-66-582",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3404203.0,
+   "totalExpenditures": 3368708.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Al Muratsuchi",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2365870.6,
+       "expenditures": 0.0,
+       "status": "$2,272,744.90",
+       "url": "/ca/candidate/al-muratsuchi?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Frank Scotto",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1037872.76,
+       "expenditures": 0.0,
+       "status": "$1,090,636.45",
+       "url": "/ca/candidate/frank-scotto?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Al Muratsuchi",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2365870.6,
+       "expenditures": 0.0,
+       "status": "$2,272,744.90",
+       "url": "/ca/candidate/al-muratsuchi?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Frank Scotto",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1037872.76,
+       "expenditures": 0.0,
+       "status": "$1,090,636.45",
+       "url": "/ca/candidate/frank-scotto?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Caney Arnold",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 459.37,
+       "expenditures": 4933.36,
+       "status": "$5,327.06",
+       "url": "/ca/candidate/caney-arnold?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "California State Assembly District 67",
+   "url": "/ca/race/california-state-assembly-district-67-6957",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 361395.0,
+   "totalExpenditures": 704512.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Melissa Melendez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 319529.91,
+       "expenditures": 0.0,
+       "status": "$651,328.61",
+       "url": "/ca/candidate/melissa-melendez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Michelle Singleton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41864.97,
+       "expenditures": 0.0,
+       "status": "$53,183.57",
+       "url": "/ca/candidate/michelle-singleton?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Melissa Melendez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 319529.91,
+       "expenditures": 0.0,
+       "status": "$651,328.61",
+       "url": "/ca/candidate/melissa-melendez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Michelle Singleton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41864.97,
+       "expenditures": 0.0,
+       "status": "$53,183.57",
+       "url": "/ca/candidate/michelle-singleton?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "California State Assembly District 68",
+   "url": "/ca/race/california-state-assembly-district-68-2898",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 360536.0,
+   "totalExpenditures": 291956.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Steven Choi",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 327085.94,
+       "expenditures": 65000.0,
+       "status": "$256,369.88",
+       "url": "/ca/candidate/steven-choi?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Michelle Duman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33450.48,
+       "expenditures": 0.0,
+       "status": "$35,586.52",
+       "url": "/ca/candidate/michelle-duman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Steven Choi",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 327085.94,
+       "expenditures": 65000.0,
+       "status": "$256,369.88",
+       "url": "/ca/candidate/steven-choi?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Michelle Duman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33450.48,
+       "expenditures": 0.0,
+       "status": "$35,586.52",
+       "url": "/ca/candidate/michelle-duman?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "California State Assembly District 69",
+   "url": "/ca/race/california-state-assembly-district-69-2069",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1219228.0,
+   "totalExpenditures": 1641832.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tom Daly",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1212439.69,
+       "expenditures": 0.0,
+       "status": "$1,638,784.27",
+       "url": "/ca/candidate/tom-daly?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Autumn Browne",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 6788.54,
+       "expenditures": 2334.0,
+       "status": "$3,047.74",
+       "url": "/ca/candidate/autumn-browne?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Tom Daly",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1212439.69,
+       "expenditures": 0.0,
+       "status": "$1,638,784.27",
+       "url": "/ca/candidate/tom-daly?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Autumn Browne",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 6788.54,
+       "expenditures": 2334.0,
+       "status": "$3,047.74",
+       "url": "/ca/candidate/autumn-browne?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "California State Assembly District 7",
+   "url": "/ca/race/california-state-assembly-district-7-7773",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 613365.0,
+   "totalExpenditures": 752952.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Kevin McCarty",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 613365.16,
+       "expenditures": 0.0,
+       "status": "$752,951.55",
+       "url": "/ca/candidate/kevin-mccarty?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Kevin McCarty",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 613365.16,
+       "expenditures": 0.0,
+       "status": "$752,951.55",
+       "url": "/ca/candidate/kevin-mccarty?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "California State Assembly District 70",
+   "url": "/ca/race/california-state-assembly-district-70-9186",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 961090.0,
+   "totalExpenditures": 1186406.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Patrick O'Donnell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 961089.5,
+       "expenditures": 0.0,
+       "status": "$1,186,405.75",
+       "url": "/ca/candidate/patrick-odonnell?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Honor Mimi Robson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/honor-mimi-robson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Patrick O'Donnell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 961089.5,
+       "expenditures": 0.0,
+       "status": "$1,186,405.75",
+       "url": "/ca/candidate/patrick-odonnell?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Honor Mimi Robson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/honor-mimi-robson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "California State Assembly District 71",
+   "url": "/ca/race/california-state-assembly-district-71-3548",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 265971.0,
+   "totalExpenditures": 304920.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Randy Voepel",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 204197.49,
+       "expenditures": 0.0,
+       "status": "$210,856.85",
+       "url": "/ca/candidate/randy-voepel?cycle=2018-election-cycle"
+      },
+      {
+       "name": "James Elia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47713.46,
+       "expenditures": 7000.0,
+       "status": "$82,909.56",
+       "url": "/ca/candidate/james-elia?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Randy Voepel",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 204197.49,
+       "expenditures": 0.0,
+       "status": "$210,856.85",
+       "url": "/ca/candidate/randy-voepel?cycle=2018-election-cycle"
+      },
+      {
+       "name": "James Elia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47713.46,
+       "expenditures": 7000.0,
+       "status": "$82,909.56",
+       "url": "/ca/candidate/james-elia?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Larry Wilske",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14060.0,
+       "expenditures": 0.0,
+       "status": "$11,154.01",
+       "url": "/ca/candidate/larry-wilske?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "71"
+  },
+  {
+   "office": "California State Assembly District 72",
+   "url": "/ca/race/california-state-assembly-district-72-11257",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 4297593.0,
+   "totalExpenditures": 5203224.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tyler Diep",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1284601.81,
+       "expenditures": 0.0,
+       "status": "$1,829,526.42",
+       "url": "/ca/candidate/tyler-diep-1?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Josh Lowenthal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2665346.2,
+       "expenditures": 0.0,
+       "status": "$2,762,370.33",
+       "url": "/ca/candidate/josh-lowenthal?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Josh Lowenthal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2665346.2,
+       "expenditures": 0.0,
+       "status": "$2,762,370.33",
+       "url": "/ca/candidate/josh-lowenthal?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tyler Diep",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1284601.81,
+       "expenditures": 0.0,
+       "status": "$1,829,526.42",
+       "url": "/ca/candidate/tyler-diep-1?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Greg Haskin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 347645.3,
+       "expenditures": 100000.0,
+       "status": "$611,327.42",
+       "url": "/ca/candidate/greg-haskin?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "72"
+  },
+  {
+   "office": "California State Assembly District 73",
+   "url": "/ca/race/california-state-assembly-district-73-4054",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 657995.0,
+   "totalExpenditures": 640168.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Bill Brough",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 600358.34,
+       "expenditures": 0.0,
+       "status": "$590,298.50",
+       "url": "/ca/candidate/bill-brough?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Scott Rhinehart",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 57636.27,
+       "expenditures": 31627.57,
+       "status": "$49,869.36",
+       "url": "/ca/candidate/scott-rhinehart?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Bill Brough",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 600358.34,
+       "expenditures": 0.0,
+       "status": "$590,298.50",
+       "url": "/ca/candidate/bill-brough?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Scott Rhinehart",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 57636.27,
+       "expenditures": 31627.57,
+       "status": "$49,869.36",
+       "url": "/ca/candidate/scott-rhinehart?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ed Sachs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/ed-sachs?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "73"
+  },
+  {
+   "office": "California State Assembly District 74",
+   "url": "/ca/race/california-state-assembly-district-74-1596",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 695819.0,
+   "totalExpenditures": 462755.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Cottie Petrie-Norris",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9286.87,
+       "expenditures": 0.0,
+       "status": "$835.49",
+       "url": "/ca/candidate/cottie-petrie-norris?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Matthew Harper",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 682137.29,
+       "expenditures": 0.0,
+       "status": "$437,720.38",
+       "url": "/ca/candidate/matthew-harper?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Matthew Harper",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 682137.29,
+       "expenditures": 0.0,
+       "status": "$437,720.38",
+       "url": "/ca/candidate/matthew-harper?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Cottie Petrie-Norris",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9286.87,
+       "expenditures": 0.0,
+       "status": "$835.49",
+       "url": "/ca/candidate/cottie-petrie-norris?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ryan Ta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4395.0,
+       "expenditures": 30000.0,
+       "status": "$24,199.56",
+       "url": "/ca/candidate/ryan-ta?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "74"
+  },
+  {
+   "office": "California State Assembly District 75",
+   "url": "/ca/race/california-state-assembly-district-75-5284",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 519113.0,
+   "totalExpenditures": 976696.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Marie Waldron",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 447767.91,
+       "expenditures": 0.0,
+       "status": "$838,878.86",
+       "url": "/ca/candidate/marie-waldron?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alan Geraci",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 71345.37,
+       "expenditures": 99059.0,
+       "status": "$137,817.09",
+       "url": "/ca/candidate/alan-geraci?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Marie Waldron",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 447767.91,
+       "expenditures": 0.0,
+       "status": "$838,878.86",
+       "url": "/ca/candidate/marie-waldron?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alan Geraci",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 71345.37,
+       "expenditures": 99059.0,
+       "status": "$137,817.09",
+       "url": "/ca/candidate/alan-geraci?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "75"
+  },
+  {
+   "office": "California State Assembly District 76",
+   "url": "/ca/race/california-state-assembly-district-76-1059",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1137833.0,
+   "totalExpenditures": 1672810.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tasha Boerner Horvath",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 593281.13,
+       "expenditures": 5000.0,
+       "status": "$882,014.01",
+       "url": "/ca/candidate/tasha-boerner-horvath?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Elizabeth Warren",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 117224.65,
+       "expenditures": 4152.0,
+       "status": "$114,491.60",
+       "url": "/ca/candidate/elizabeth-warren?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Tasha Boerner Horvath",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 593281.13,
+       "expenditures": 5000.0,
+       "status": "$882,014.01",
+       "url": "/ca/candidate/tasha-boerner-horvath?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Elizabeth Warren",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 117224.65,
+       "expenditures": 4152.0,
+       "status": "$114,491.60",
+       "url": "/ca/candidate/elizabeth-warren?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Phil Graham",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 355991.79,
+       "expenditures": 0.0,
+       "status": "$595,990.33",
+       "url": "/ca/candidate/phil-graham?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Thomas Krouse",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11276.2,
+       "expenditures": 11000.0,
+       "status": "$17,724.46",
+       "url": "/ca/candidate/thomas-krouse?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Amanda Rigby",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26600.0,
+       "expenditures": 19000.0,
+       "status": "$29,288.01",
+       "url": "/ca/candidate/amanda-rigby?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jerome Stocks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33459.46,
+       "expenditures": 22500.0,
+       "status": "$33,301.87",
+       "url": "/ca/candidate/jerome-stocks?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "76"
+  },
+  {
+   "office": "California State Assembly District 77",
+   "url": "/ca/race/california-state-assembly-district-77-3342",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 2402898.0,
+   "totalExpenditures": 2997761.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Brian Maienschein",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 778710.12,
+       "expenditures": 0.0,
+       "status": "$1,573,321.66",
+       "url": "/ca/candidate/brian-maienschein?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Sunday Gover",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1624187.6,
+       "expenditures": 600.0,
+       "status": "$1,424,439.15",
+       "url": "/ca/candidate/sunday-gover?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Brian Maienschein",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 778710.12,
+       "expenditures": 0.0,
+       "status": "$1,573,321.66",
+       "url": "/ca/candidate/brian-maienschein?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Sunday Gover",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1624187.6,
+       "expenditures": 600.0,
+       "status": "$1,424,439.15",
+       "url": "/ca/candidate/sunday-gover?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "77"
+  },
+  {
+   "office": "California State Assembly District 78",
+   "url": "/ca/race/california-state-assembly-district-78-1178",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 876006.0,
+   "totalExpenditures": 936410.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Todd Gloria",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 860605.76,
+       "expenditures": 0.0,
+       "status": "$926,029.02",
+       "url": "/ca/candidate/todd-gloria?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Maggie Campbell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15400.68,
+       "expenditures": 0.0,
+       "status": "$10,380.59",
+       "url": "/ca/candidate/maggie-campbell?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Todd Gloria",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 860605.76,
+       "expenditures": 0.0,
+       "status": "$926,029.02",
+       "url": "/ca/candidate/todd-gloria?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Maggie Campbell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15400.68,
+       "expenditures": 0.0,
+       "status": "$10,380.59",
+       "url": "/ca/candidate/maggie-campbell?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "78"
+  },
+  {
+   "office": "California State Assembly District 79",
+   "url": "/ca/race/california-state-assembly-district-79-2582",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 442319.0,
+   "totalExpenditures": 512934.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Shirley Weber",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 442319.02,
+       "expenditures": 0.0,
+       "status": "$512,933.71",
+       "url": "/ca/candidate/shirley-weber?cycle=2018-election-cycle"
+      },
+      {
+       "name": "John Moore",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/john-moore?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Shirley Weber",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 442319.02,
+       "expenditures": 0.0,
+       "status": "$512,933.71",
+       "url": "/ca/candidate/shirley-weber?cycle=2018-election-cycle"
+      },
+      {
+       "name": "John Moore",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/john-moore?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "79"
+  },
+  {
+   "office": "California State Assembly District 8",
+   "url": "/ca/race/california-state-assembly-district-8-5101",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 783197.0,
+   "totalExpenditures": 813671.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Ken Cooley",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 751984.65,
+       "expenditures": 0.0,
+       "status": "$772,291.66",
+       "url": "/ca/candidate/ken-cooley?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Melinda Avey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31212.82,
+       "expenditures": 0.0,
+       "status": "$41,379.79",
+       "url": "/ca/candidate/melinda-avey?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Ken Cooley",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 751984.65,
+       "expenditures": 0.0,
+       "status": "$772,291.66",
+       "url": "/ca/candidate/ken-cooley?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Melinda Avey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31212.82,
+       "expenditures": 0.0,
+       "status": "$41,379.79",
+       "url": "/ca/candidate/melinda-avey?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "California State Assembly District 80",
+   "url": "/ca/race/california-state-assembly-district-80-6302",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "80"
+  },
+  {
+   "office": "California State Assembly District 9",
+   "url": "/ca/race/california-state-assembly-district-9-4638",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1469957.0,
+   "totalExpenditures": 2989370.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jim Cooper",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1425313.21,
+       "expenditures": 0.0,
+       "status": "$2,942,839.12",
+       "url": "/ca/candidate/jim-cooper?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Harry He",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44644.0,
+       "expenditures": 30500.0,
+       "status": "$46,530.81",
+       "url": "/ca/candidate/harry-he?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jim Cooper",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1425313.21,
+       "expenditures": 0.0,
+       "status": "$2,942,839.12",
+       "url": "/ca/candidate/jim-cooper?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Harry He",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44644.0,
+       "expenditures": 30500.0,
+       "status": "$46,530.81",
+       "url": "/ca/candidate/harry-he?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "California State Senate District 10",
+   "url": "/ca/race/california-state-senate-district-10-4463",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 602141.0,
+   "totalExpenditures": 636367.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Robert Wieckowski",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 598284.01,
+       "expenditures": 0.0,
+       "status": "$631,337.29",
+       "url": "/ca/candidate/robert-wieckowski?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Victor San Vicente",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3857.46,
+       "expenditures": 200.0,
+       "status": "$5,029.46",
+       "url": "/ca/candidate/victor-san-vicente?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Robert Wieckowski",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 598284.01,
+       "expenditures": 0.0,
+       "status": "$631,337.29",
+       "url": "/ca/candidate/robert-wieckowski?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Victor San Vicente",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3857.46,
+       "expenditures": 200.0,
+       "status": "$5,029.46",
+       "url": "/ca/candidate/victor-san-vicente?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ali Sarsak",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/ali-sarsak?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "10"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-12-2647?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 12",
+   "url": "/ca/race/california-state-senate-district-12-2647",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 8927651.0,
+   "totalExpenditures": 5083197.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Anna Caballero",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4484742.65,
+       "expenditures": 0.0,
+       "status": "$2,512,150.01",
+       "url": "/ca/candidate/anna-caballero?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Robert Poythress",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4340518.31,
+       "expenditures": 100000.0,
+       "status": "$2,420,492.90",
+       "url": "/ca/candidate/robert-poythress?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Anna Caballero",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4484742.65,
+       "expenditures": 0.0,
+       "status": "$2,512,150.01",
+       "url": "/ca/candidate/anna-caballero?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Robert Poythress",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4340518.31,
+       "expenditures": 100000.0,
+       "status": "$2,420,492.90",
+       "url": "/ca/candidate/robert-poythress?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Daniel Parra",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16505.0,
+       "expenditures": 15800.0,
+       "status": "$50,711.90",
+       "url": "/ca/candidate/daniel-parra?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Johnny Tacherra",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 85885.0,
+       "expenditures": 0.0,
+       "status": "$99,842.11",
+       "url": "/ca/candidate/johnny-tacherra?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "12"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-14-3207?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 14",
+   "url": "/ca/race/california-state-senate-district-14-3207",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 2405588.0,
+   "totalExpenditures": 3050357.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Melissa Hurtado",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2378271.89,
+       "expenditures": 0.0,
+       "status": "$3,030,551.05",
+       "url": "/ca/candidate/melissa-hurtado?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Melissa Hurtado",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2378271.89,
+       "expenditures": 0.0,
+       "status": "$3,030,551.05",
+       "url": "/ca/candidate/melissa-hurtado?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ruben Macareno",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1291.25,
+       "expenditures": 0.0,
+       "status": "$450.00",
+       "url": "/ca/candidate/ruben-macareno?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Abigail Solis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26024.54,
+       "expenditures": 0.0,
+       "status": "$19,355.69",
+       "url": "/ca/candidate/abigail-solis?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "14"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-16-4678?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 16",
+   "url": "/ca/race/california-state-senate-district-16-4678",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 947440.0,
+   "totalExpenditures": 1363666.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Shannon Grove",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 928455.56,
+       "expenditures": 0.0,
+       "status": "$1,358,583.65",
+       "url": "/ca/candidate/shannon-grove?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ruth Musser-Lopez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18984.19,
+       "expenditures": 1449.0,
+       "status": "$5,081.95",
+       "url": "/ca/candidate/ruth-musser-lopez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Ruth Musser-Lopez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18984.19,
+       "expenditures": 1449.0,
+       "status": "$5,081.95",
+       "url": "/ca/candidate/ruth-musser-lopez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Shannon Grove",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 928455.56,
+       "expenditures": 0.0,
+       "status": "$1,358,583.65",
+       "url": "/ca/candidate/shannon-grove?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "16"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-18-16120?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 18",
+   "url": "/ca/race/california-state-senate-district-18-16120",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1146149.0,
+   "totalExpenditures": 1695527.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Robert Hertzberg",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1146148.7,
+       "expenditures": 0.0,
+       "status": "$1,695,527.45",
+       "url": "/ca/candidate/robert-hertzberg?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Robert Hertzberg",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1146148.7,
+       "expenditures": 0.0,
+       "status": "$1,695,527.45",
+       "url": "/ca/candidate/robert-hertzberg?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "18"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-2-4573?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 2",
+   "url": "/ca/race/california-state-senate-district-2-4573",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 901847.0,
+   "totalExpenditures": 1372098.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Mike McGuire",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 898643.24,
+       "expenditures": 0.0,
+       "status": "$1,346,855.31",
+       "url": "/ca/candidate/mike-mcguire?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Veronica Jacobi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3204.0,
+       "expenditures": 27025.0,
+       "status": "$25,242.67",
+       "url": "/ca/candidate/veronica-jacobi?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Mike McGuire",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 898643.24,
+       "expenditures": 0.0,
+       "status": "$1,346,855.31",
+       "url": "/ca/candidate/mike-mcguire?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Veronica Jacobi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3204.0,
+       "expenditures": 27025.0,
+       "status": "$25,242.67",
+       "url": "/ca/candidate/veronica-jacobi?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "2"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-20-14738?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 20",
+   "url": "/ca/race/california-state-senate-district-20-14738",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 970603.0,
+   "totalExpenditures": 1332021.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Connie Leyva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 970602.89,
+       "expenditures": 0.0,
+       "status": "$1,332,021.17",
+       "url": "/ca/candidate/connie-leyva?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Connie Leyva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 970602.89,
+       "expenditures": 0.0,
+       "status": "$1,332,021.17",
+       "url": "/ca/candidate/connie-leyva?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "20"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-22-2606?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 22",
+   "url": "/ca/race/california-state-senate-district-22-2606",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3197221.0,
+   "totalExpenditures": 5045908.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Susan Rubio",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1063554.12,
+       "expenditures": 0.0,
+       "status": "$1,327,668.10",
+       "url": "/ca/candidate/susan-rubio?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mike Eng",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2133666.51,
+       "expenditures": 55000.0,
+       "status": "$3,718,239.44",
+       "url": "/ca/candidate/mike-eng?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Mike Eng",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2133666.51,
+       "expenditures": 55000.0,
+       "status": "$3,718,239.44",
+       "url": "/ca/candidate/mike-eng?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Susan Rubio",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1063554.12,
+       "expenditures": 0.0,
+       "status": "$1,327,668.10",
+       "url": "/ca/candidate/susan-rubio?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "22"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-24-353?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 24",
+   "url": "/ca/race/california-state-senate-district-24-353",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1298468.0,
+   "totalExpenditures": 1222108.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Maria Durazo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1285241.72,
+       "expenditures": 0.0,
+       "status": "$1,202,608.45",
+       "url": "/ca/candidate/maria-durazo?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Peter Choi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13226.0,
+       "expenditures": 0.0,
+       "status": "$19,499.59",
+       "url": "/ca/candidate/peter-choi?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Peter Choi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13226.0,
+       "expenditures": 0.0,
+       "status": "$19,499.59",
+       "url": "/ca/candidate/peter-choi?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Maria Durazo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1285241.72,
+       "expenditures": 0.0,
+       "status": "$1,202,608.45",
+       "url": "/ca/candidate/maria-durazo?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "24"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-26-2170?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 28",
+   "url": "/ca/race/california-state-senate-district-28-3165",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1826140.0,
+   "totalExpenditures": 1950722.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jeff Stone",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 595126.01,
+       "expenditures": 0.0,
+       "status": "$788,294.57",
+       "url": "/ca/candidate/jeff-stone?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Joy Silver",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1231013.95,
+       "expenditures": 50275.0,
+       "status": "$1,162,427.55",
+       "url": "/ca/candidate/joy-silver?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jeff Stone",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 595126.01,
+       "expenditures": 0.0,
+       "status": "$788,294.57",
+       "url": "/ca/candidate/jeff-stone?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Joy Silver",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1231013.95,
+       "expenditures": 50275.0,
+       "status": "$1,162,427.55",
+       "url": "/ca/candidate/joy-silver?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "28"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-28-3165?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 30",
+   "url": "/ca/race/california-state-senate-district-30-1019",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 940029.0,
+   "totalExpenditures": 848532.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Holly Mitchell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 940028.52,
+       "expenditures": 0.0,
+       "status": "$848,531.59",
+       "url": "/ca/candidate/holly-mitchell?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Holly Mitchell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 940028.52,
+       "expenditures": 0.0,
+       "status": "$848,531.59",
+       "url": "/ca/candidate/holly-mitchell?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "30"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-30-1019?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 32",
+   "url": "/ca/race/california-state-senate-district-32-22430",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 2546620.0,
+   "totalExpenditures": 3454066.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Bob Archuleta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 760413.22,
+       "expenditures": 71000.0,
+       "status": "$845,163.38",
+       "url": "/ca/candidate/bob-archuleta?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Rita Topalian",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 184699.14,
+       "expenditures": 57000.0,
+       "status": "$172,486.20",
+       "url": "/ca/candidate/rita-topalian?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Bob Archuleta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 760413.22,
+       "expenditures": 71000.0,
+       "status": "$845,163.38",
+       "url": "/ca/candidate/bob-archuleta?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Rita Topalian",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 184699.14,
+       "expenditures": 57000.0,
+       "status": "$172,486.20",
+       "url": "/ca/candidate/rita-topalian?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Rudy Bermudez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 158705.94,
+       "expenditures": 0.0,
+       "status": "$210,924.66",
+       "url": "/ca/candidate/rudy-bermudez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Vanessa Delgado",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 362256.17,
+       "expenditures": 0.0,
+       "status": "$449,398.86",
+       "url": "/ca/candidate/vanessa-delgado?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tony Mendoza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 540889.13,
+       "expenditures": 125000.0,
+       "status": "$989,673.28",
+       "url": "/ca/candidate/tony-mendoza?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Vivian Romero",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 147536.27,
+       "expenditures": 0.0,
+       "status": "$185,783.91",
+       "url": "/ca/candidate/vivian-romero?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Vicky Santana",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 91871.42,
+       "expenditures": 70000.0,
+       "status": "$219,674.78",
+       "url": "/ca/candidate/vicky-santana?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ali Taj",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 300249.0,
+       "expenditures": 20000.0,
+       "status": "$380,961.18",
+       "url": "/ca/candidate/ali-taj?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "32"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-32-22430?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 34",
+   "url": "/ca/race/california-state-senate-district-34-5217",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 3425515.0,
+   "totalExpenditures": 3742941.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tom Umberg",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1716988.98,
+       "expenditures": 0.0,
+       "status": "$1,185,273.98",
+       "url": "/ca/candidate/tom-umberg?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Janet Nguyen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1692306.39,
+       "expenditures": 0.0,
+       "status": "$2,542,019.13",
+       "url": "/ca/candidate/janet-nguyen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Janet Nguyen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1692306.39,
+       "expenditures": 0.0,
+       "status": "$2,542,019.13",
+       "url": "/ca/candidate/janet-nguyen?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tom Umberg",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1716988.98,
+       "expenditures": 0.0,
+       "status": "$1,185,273.98",
+       "url": "/ca/candidate/tom-umberg?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Akash Hawkins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16219.5,
+       "expenditures": 0.0,
+       "status": "$15,648.32",
+       "url": "/ca/candidate/akash-hawkins?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "34"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-34-5217?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 36",
+   "url": "/ca/race/california-state-senate-district-36-11741",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1575287.0,
+   "totalExpenditures": 2256050.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Pat Bates",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1207288.85,
+       "expenditures": 0.0,
+       "status": "$1,995,437.24",
+       "url": "/ca/candidate/pat-bates?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Marggie Castellano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 367998.25,
+       "expenditures": 0.0,
+       "status": "$260,612.78",
+       "url": "/ca/candidate/marggie-castellano?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Pat Bates",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1207288.85,
+       "expenditures": 0.0,
+       "status": "$1,995,437.24",
+       "url": "/ca/candidate/pat-bates?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Marggie Castellano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 367998.25,
+       "expenditures": 0.0,
+       "status": "$260,612.78",
+       "url": "/ca/candidate/marggie-castellano?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "36"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-36-11741?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 38",
+   "url": "/ca/race/california-state-senate-district-38-2612",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 613131.0,
+   "totalExpenditures": 789669.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Brian Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 568241.19,
+       "expenditures": 0.0,
+       "status": "$734,877.81",
+       "url": "/ca/candidate/brian-jones?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jeff Griffith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44890.0,
+       "expenditures": 0.0,
+       "status": "$54,791.00",
+       "url": "/ca/candidate/jeff-griffith?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jeff Griffith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44890.0,
+       "expenditures": 0.0,
+       "status": "$54,791.00",
+       "url": "/ca/candidate/jeff-griffith?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Brian Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 568241.19,
+       "expenditures": 0.0,
+       "status": "$734,877.81",
+       "url": "/ca/candidate/brian-jones?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "38"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-38-2612?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 4",
+   "url": "/ca/race/california-state-senate-district-4-8420",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 654651.0,
+   "totalExpenditures": 747374.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jim Nielsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 654651.22,
+       "expenditures": 0.0,
+       "status": "$747,373.86",
+       "url": "/ca/candidate/jim-nielsen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jim Nielsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 654651.22,
+       "expenditures": 0.0,
+       "status": "$747,373.86",
+       "url": "/ca/candidate/jim-nielsen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "4"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-4-8420?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 40",
+   "url": "/ca/race/california-state-senate-district-40-6107",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 696723.0,
+   "totalExpenditures": 940098.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Ben Hueso",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 688124.26,
+       "expenditures": 0.0,
+       "status": "$939,026.03",
+       "url": "/ca/candidate/ben-hueso?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Luis Vargas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8598.42,
+       "expenditures": 0.0,
+       "status": "$1,072.42",
+       "url": "/ca/candidate/luis-vargas?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Ben Hueso",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 688124.26,
+       "expenditures": 0.0,
+       "status": "$939,026.03",
+       "url": "/ca/candidate/ben-hueso?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Luis Vargas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8598.42,
+       "expenditures": 0.0,
+       "status": "$1,072.42",
+       "url": "/ca/candidate/luis-vargas?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "40"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-40-6107?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 6",
+   "url": "/ca/race/california-state-senate-district-6-11260",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 1045092.0,
+   "totalExpenditures": 818719.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Richard Pan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1008042.16,
+       "expenditures": 0.0,
+       "status": "$783,164.79",
+       "url": "/ca/candidate/richard-pan?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Eric Frame",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 8439.0,
+       "expenditures": 500.0,
+       "status": "$8,233.49",
+       "url": "/ca/candidate/eric-frame?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Richard Pan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1008042.16,
+       "expenditures": 0.0,
+       "status": "$783,164.79",
+       "url": "/ca/candidate/richard-pan?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Eric Frame",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 8439.0,
+       "expenditures": 500.0,
+       "status": "$8,233.49",
+       "url": "/ca/candidate/eric-frame?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Janine Derose",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 28610.86,
+       "expenditures": 160.0,
+       "status": "$27,320.80",
+       "url": "/ca/candidate/janine-derose?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "6"
   },
   {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-6-11260?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "California State Senate District 8",
+   "url": "/ca/race/california-state-senate-district-8-2610",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 989234.0,
+   "totalExpenditures": 685913.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Andreas Borgeas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 959787.26,
+       "expenditures": 0.0,
+       "status": "$634,582.70",
+       "url": "/ca/candidate/andreas-borgeas?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Paulina Miranda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/paulina-miranda?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Paulina Miranda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/paulina-miranda?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Andreas Borgeas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 959787.26,
+       "expenditures": 0.0,
+       "status": "$634,582.70",
+       "url": "/ca/candidate/andreas-borgeas?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tom Pratt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29233.08,
+       "expenditures": 15000.0,
+       "status": "$39,811.36",
+       "url": "/ca/candidate/tom-pratt?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mark Belden",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 214.0,
+       "expenditures": 15000.0,
+       "status": "$11,519.00",
+       "url": "/ca/candidate/mark-belden?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/ca/race/california-state-senate-district-8-2610?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "senate",
-   "district": null
+   "district": "8"
   }
  ]
 }

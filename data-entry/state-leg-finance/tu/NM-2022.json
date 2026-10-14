@@ -1,778 +1,3638 @@
 {
  "state": "NM",
  "cycle": 2022,
- "fetched": "2026-10-11",
- "dataThrough": "06/27/2026",
+ "fetched": "2026-10-12",
+ "dataThrough": "12/31/2022",
  "races": [
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-1-59572?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-10-59573?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-11-59574?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-12-59575?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-13-59576?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-14-59577?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-15-59578?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-16-59579?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-17-59580?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-18-59581?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-19-59582?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-2-59583?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-20-59584?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-21-59585?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-22-59586?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-23-59587?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-24-59588?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-25-59589?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-26-59590?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-27-59591?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-28-59592?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-29-59593?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-3-59594?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-30-59595?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-31-59596?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-32-59597?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-33-59598?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-34-59599?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-35-59600?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-36-59601?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-37-59602?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-38-59603?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-39-59604?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-4-59605?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-40-59606?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-41-59607?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-42-59608?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-43-59609?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-44-59610?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-45-59611?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-46-59612?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-47-59613?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-48-59614?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-49-59615?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-5-59616?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-50-59617?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-51-59618?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-52-59619?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-53-59620?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-54-59621?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-55-59622?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-56-59623?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-57-59624?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-58-59625?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-59-59626?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-6-59627?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-60-59628?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-61-59629?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-62-59630?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-63-59631?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-64-59632?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-65-59633?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-66-59634?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-67-59635?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-68-59636?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-69-59637?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-7-59638?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-70-59639?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-8-59640?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-9-59641?cycle=2022-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
+   "office": "New Mexico House of Representatives District 1",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-1-59572",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 107703.0,
+   "totalExpenditures": 75169.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Rodney D Montoya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 107702.88,
+       "expenditures": 0.0,
+       "status": "$75,169.25",
+       "url": "/nm/candidate/rodney-d-montoya?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Rodney D Montoya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 107702.88,
+       "expenditures": 0.0,
+       "status": "$75,169.25",
+       "url": "/nm/candidate/rodney-d-montoya?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "New Mexico House of Representatives District 10",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-10-59573",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 48603.0,
+   "totalExpenditures": 10619.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "G Andres Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48603.26,
+       "expenditures": 5125.91,
+       "status": "$10,619.08",
+       "url": "/nm/candidate/g-andres-romero?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "G Andres Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48603.26,
+       "expenditures": 5125.91,
+       "status": "$10,619.08",
+       "url": "/nm/candidate/g-andres-romero?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "New Mexico House of Representatives District 11",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-11-59574",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 508768.0,
+   "totalExpenditures": 362343.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Javier I Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 506575.02,
+       "expenditures": 0.0,
+       "status": "$362,343.09",
+       "url": "/nm/candidate/javier-i-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Javier I Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 506575.02,
+       "expenditures": 0.0,
+       "status": "$362,343.09",
+       "url": "/nm/candidate/javier-i-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Adrian A Trujillo Sr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2192.58,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/adrian-a-trujillo-sr?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "New Mexico House of Representatives District 12",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-12-59575",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 120095.0,
+   "totalExpenditures": 70789.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Art De La Cruz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 120094.93,
+       "expenditures": 0.0,
+       "status": "$70,789.49",
+       "url": "/nm/candidate/art-de-la-cruz?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Art De La Cruz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 120094.93,
+       "expenditures": 0.0,
+       "status": "$70,789.49",
+       "url": "/nm/candidate/art-de-la-cruz?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "New Mexico House of Representatives District 13",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-13-59576",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 30810.0,
+   "totalExpenditures": 10761.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Patricia Roybal Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 30809.87,
+       "expenditures": 2592.44,
+       "status": "$10,760.72",
+       "url": "/nm/candidate/patricia-roybal-caballero?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Patricia Roybal Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 30809.87,
+       "expenditures": 2592.44,
+       "status": "$10,760.72",
+       "url": "/nm/candidate/patricia-roybal-caballero?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "New Mexico House of Representatives District 14",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-14-59577",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 64548.0,
+   "totalExpenditures": 50138.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Miguel P Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 40888.16,
+       "expenditures": 0.0,
+       "status": "$29,628.77",
+       "url": "/nm/candidate/miguel-p-garcia?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Solomon Pena",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23659.83,
+       "expenditures": 0.0,
+       "status": "$20,509.51",
+       "url": "/nm/candidate/solomon-pena?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Miguel P Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 40888.16,
+       "expenditures": 0.0,
+       "status": "$29,628.77",
+       "url": "/nm/candidate/miguel-p-garcia?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Solomon Pena",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23659.83,
+       "expenditures": 0.0,
+       "status": "$20,509.51",
+       "url": "/nm/candidate/solomon-pena?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "New Mexico House of Representatives District 15",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-15-59578",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 196620.0,
+   "totalExpenditures": 156110.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Day M Hochman-Vigil",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 196620.12,
+       "expenditures": 17000.0,
+       "status": "$156,110.04",
+       "url": "/nm/candidate/day-m-hochman-vigil?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Day M Hochman-Vigil",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 196620.12,
+       "expenditures": 17000.0,
+       "status": "$156,110.04",
+       "url": "/nm/candidate/day-m-hochman-vigil?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "New Mexico House of Representatives District 16",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-16-59579",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 222319.0,
+   "totalExpenditures": 77344.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Antonio Moe Maestas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 222319.36,
+       "expenditures": 2088.02,
+       "status": "$77,344.35",
+       "url": "/nm/candidate/antonio-moe-maestas?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Antonio Moe Maestas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 222319.36,
+       "expenditures": 2088.02,
+       "status": "$77,344.35",
+       "url": "/nm/candidate/antonio-moe-maestas?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "New Mexico House of Representatives District 17",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-17-59580",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 325679.0,
+   "totalExpenditures": 257058.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Cynthia D Borrego",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 255403.45,
+       "expenditures": 6220.0,
+       "status": "$189,634.00",
+       "url": "/nm/candidate/cynthia-d-borrego?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Cynthia D Borrego",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 255403.45,
+       "expenditures": 6220.0,
+       "status": "$189,634.00",
+       "url": "/nm/candidate/cynthia-d-borrego?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Darrell Deaguero",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 62701.77,
+       "expenditures": 0.0,
+       "status": "$59,850.28",
+       "url": "/nm/candidate/darrell-deaguero?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Joshua T Neal",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7573.31,
+       "expenditures": 0.0,
+       "status": "$7,573.31",
+       "url": "/nm/candidate/joshua-t-neal?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "New Mexico House of Representatives District 18",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-18-59581",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2919.0,
+   "totalExpenditures": 1833.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Scott T Cannon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2919.09,
+       "expenditures": 0.0,
+       "status": "$1,833.17",
+       "url": "/nm/candidate/scott-t-cannon?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Scott T Cannon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2919.09,
+       "expenditures": 0.0,
+       "status": "$1,833.17",
+       "url": "/nm/candidate/scott-t-cannon?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "New Mexico House of Representatives District 19",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-19-59582",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 147446.0,
+   "totalExpenditures": 128795.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Janelle Anyanonu",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 144124.89,
+       "expenditures": 5000.0,
+       "status": "$118,183.82",
+       "url": "/nm/candidate/janelle-anyanonu?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Janelle Anyanonu",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 144124.89,
+       "expenditures": 5000.0,
+       "status": "$118,183.82",
+       "url": "/nm/candidate/janelle-anyanonu?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Colton Dean",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3321.21,
+       "expenditures": 7289.95,
+       "status": "$10,611.16",
+       "url": "/nm/candidate/colton-dean?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "New Mexico House of Representatives District 2",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-2-59583",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 21650.0,
+   "totalExpenditures": 22471.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Mark Duncan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21650.0,
+       "expenditures": 8535.58,
+       "status": "$22,470.87",
+       "url": "/nm/candidate/mark-duncan?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Mark Duncan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21650.0,
+       "expenditures": 8535.58,
+       "status": "$22,470.87",
+       "url": "/nm/candidate/mark-duncan?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "New Mexico House of Representatives District 20",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-20-59584",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 497967.0,
+   "totalExpenditures": 301398.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Meredith A Dixon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 430676.13,
+       "expenditures": 0.0,
+       "status": "$287,573.64",
+       "url": "/nm/candidate/meredith-a-dixon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Robert Salazar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 67290.52,
+       "expenditures": 184.94,
+       "status": "$13,824.16",
+       "url": "/nm/candidate/robert-salazar?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Meredith A Dixon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 430676.13,
+       "expenditures": 0.0,
+       "status": "$287,573.64",
+       "url": "/nm/candidate/meredith-a-dixon?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Robert Salazar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 67290.52,
+       "expenditures": 184.94,
+       "status": "$13,824.16",
+       "url": "/nm/candidate/robert-salazar?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "New Mexico House of Representatives District 21",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-21-59585",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 40970.0,
+   "totalExpenditures": 20454.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Debra M Sarinana",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 40970.18,
+       "expenditures": 0.0,
+       "status": "$20,453.58",
+       "url": "/nm/candidate/debra-m-sarinana?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Debra M Sarinana",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 40970.18,
+       "expenditures": 0.0,
+       "status": "$20,453.58",
+       "url": "/nm/candidate/debra-m-sarinana?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "New Mexico House of Representatives District 22",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-22-59586",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 196052.0,
+   "totalExpenditures": 150860.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Stefani Lord",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 141199.3,
+       "expenditures": 350.0,
+       "status": "$101,138.75",
+       "url": "/nm/candidate/stefani-lord?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Augustine N Montoya",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54853.17,
+       "expenditures": 0.0,
+       "status": "$49,721.18",
+       "url": "/nm/candidate/augustine-n-montoya?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Augustine N Montoya",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54853.17,
+       "expenditures": 0.0,
+       "status": "$49,721.18",
+       "url": "/nm/candidate/augustine-n-montoya?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Stefani Lord",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 141199.3,
+       "expenditures": 350.0,
+       "status": "$101,138.75",
+       "url": "/nm/candidate/stefani-lord?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "New Mexico House of Representatives District 23",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-23-59587",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 92400.0,
+   "totalExpenditures": 44500.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Alan Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 92400.24,
+       "expenditures": 143.09,
+       "status": "$44,500.05",
+       "url": "/nm/candidate/alan-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Alan Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 92400.24,
+       "expenditures": 143.09,
+       "status": "$44,500.05",
+       "url": "/nm/candidate/alan-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "New Mexico House of Representatives District 24",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-24-59588",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 161252.0,
+   "totalExpenditures": 67446.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Elizabeth L Thomson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 161251.86,
+       "expenditures": 0.0,
+       "status": "$67,446.19",
+       "url": "/nm/candidate/elizabeth-l-thomson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Elizabeth L Thomson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 161251.86,
+       "expenditures": 0.0,
+       "status": "$67,446.19",
+       "url": "/nm/candidate/elizabeth-l-thomson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "New Mexico House of Representatives District 25",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-25-59589",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 29465.0,
+   "totalExpenditures": 4367.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Christine M Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29465.19,
+       "expenditures": 0.0,
+       "status": "$4,367.25",
+       "url": "/nm/candidate/christine-m-trujillo?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Christine M Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29465.19,
+       "expenditures": 0.0,
+       "status": "$4,367.25",
+       "url": "/nm/candidate/christine-m-trujillo?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "New Mexico House of Representatives District 26",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-26-59590",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 156938.0,
+   "totalExpenditures": 116899.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Eleanor Chavez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 87842.77,
+       "expenditures": 2500.0,
+       "status": "$60,737.13",
+       "url": "/nm/candidate/eleanor-chavez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Patrick B Sais",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1121.0,
+       "expenditures": 0.0,
+       "status": "$1,093.49",
+       "url": "/nm/candidate/patrick-b-sais?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Eleanor Chavez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 87842.77,
+       "expenditures": 2500.0,
+       "status": "$60,737.13",
+       "url": "/nm/candidate/eleanor-chavez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cherise Quezada",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 67973.97,
+       "expenditures": 2176.57,
+       "status": "$55,068.85",
+       "url": "/nm/candidate/cherise-quezada?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Patrick B Sais",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1121.0,
+       "expenditures": 0.0,
+       "status": "$1,093.49",
+       "url": "/nm/candidate/patrick-b-sais?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "New Mexico House of Representatives District 27",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-27-59591",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 370988.0,
+   "totalExpenditures": 211049.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Marian Matthews",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 276405.1,
+       "expenditures": 1000.0,
+       "status": "$173,699.78",
+       "url": "/nm/candidate/marian-matthews?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Robert S Godshall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 94582.57,
+       "expenditures": 0.0,
+       "status": "$37,349.03",
+       "url": "/nm/candidate/robert-s-godshall?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Marian Matthews",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 276405.1,
+       "expenditures": 1000.0,
+       "status": "$173,699.78",
+       "url": "/nm/candidate/marian-matthews?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Robert S Godshall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 94582.57,
+       "expenditures": 0.0,
+       "status": "$37,349.03",
+       "url": "/nm/candidate/robert-s-godshall?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "New Mexico House of Representatives District 28",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-28-59592",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 677257.0,
+   "totalExpenditures": 387259.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Pamelya Herndon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 419012.73,
+       "expenditures": 5180.96,
+       "status": "$229,363.29",
+       "url": "/nm/candidate/pamelya-herndon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nicole Chavez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 258243.85,
+       "expenditures": 0.0,
+       "status": "$157,895.34",
+       "url": "/nm/candidate/nicole-chavez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Pamelya Herndon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 419012.73,
+       "expenditures": 5180.96,
+       "status": "$229,363.29",
+       "url": "/nm/candidate/pamelya-herndon?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Nicole Chavez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 258243.85,
+       "expenditures": 0.0,
+       "status": "$157,895.34",
+       "url": "/nm/candidate/nicole-chavez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "New Mexico House of Representatives District 29",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-29-59593",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 554064.0,
+   "totalExpenditures": 344761.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Joy Garratt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 348757.44,
+       "expenditures": 0.0,
+       "status": "$189,798.71",
+       "url": "/nm/candidate/joy-garratt?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gregory Cunningham",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 198394.63,
+       "expenditures": 5500.0,
+       "status": "$144,341.87",
+       "url": "/nm/candidate/gregory-cunningham?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Joy Garratt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 348757.44,
+       "expenditures": 0.0,
+       "status": "$189,798.71",
+       "url": "/nm/candidate/joy-garratt?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Gregory Cunningham",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 198394.63,
+       "expenditures": 5500.0,
+       "status": "$144,341.87",
+       "url": "/nm/candidate/gregory-cunningham?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Adelious D Stith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6912.27,
+       "expenditures": 6500.0,
+       "status": "$10,620.18",
+       "url": "/nm/candidate/adelious-d-stith?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "New Mexico House of Representatives District 3",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-3-59594",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 91741.0,
+   "totalExpenditures": 61174.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "T Ryan Lane",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 91741.01,
+       "expenditures": 0.0,
+       "status": "$61,174.11",
+       "url": "/nm/candidate/t-ryan-lane?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "T Ryan Lane",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 91741.01,
+       "expenditures": 0.0,
+       "status": "$61,174.11",
+       "url": "/nm/candidate/t-ryan-lane?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "New Mexico House of Representatives District 30",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-30-59595",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 566876.0,
+   "totalExpenditures": 335218.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Natalie R Figueroa",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 291059.61,
+       "expenditures": 0.0,
+       "status": "$140,002.20",
+       "url": "/nm/candidate/natalie-r-figueroa?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kurstin S Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 275816.14,
+       "expenditures": 0.0,
+       "status": "$195,215.75",
+       "url": "/nm/candidate/kurstin-s-johnson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Natalie R Figueroa",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 291059.61,
+       "expenditures": 0.0,
+       "status": "$140,002.20",
+       "url": "/nm/candidate/natalie-r-figueroa?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Kurstin S Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 275816.14,
+       "expenditures": 0.0,
+       "status": "$195,215.75",
+       "url": "/nm/candidate/kurstin-s-johnson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "New Mexico House of Representatives District 31",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-31-59596",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 162272.0,
+   "totalExpenditures": 83778.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "William R Rehm",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 118283.46,
+       "expenditures": 0.0,
+       "status": "$51,356.32",
+       "url": "/nm/candidate/william-r-rehm?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Athena Christodoulou",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 43988.84,
+       "expenditures": 1500.0,
+       "status": "$32,421.94",
+       "url": "/nm/candidate/athena-christodoulou?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Athena Christodoulou",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 43988.84,
+       "expenditures": 1500.0,
+       "status": "$32,421.94",
+       "url": "/nm/candidate/athena-christodoulou?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "William R Rehm",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 118283.46,
+       "expenditures": 0.0,
+       "status": "$51,356.32",
+       "url": "/nm/candidate/william-r-rehm?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "New Mexico House of Representatives District 32",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-32-59597",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 452490.0,
+   "totalExpenditures": 317533.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jenifer M Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 181278.73,
+       "expenditures": 258.13,
+       "status": "$135,880.63",
+       "url": "/nm/candidate/jenifer-m-jones?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Candie G Sweetser",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 271210.97,
+       "expenditures": 0.0,
+       "status": "$181,652.57",
+       "url": "/nm/candidate/candie-g-sweetser?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Candie G Sweetser",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 271210.97,
+       "expenditures": 0.0,
+       "status": "$181,652.57",
+       "url": "/nm/candidate/candie-g-sweetser?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Jenifer M Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 181278.73,
+       "expenditures": 258.13,
+       "status": "$135,880.63",
+       "url": "/nm/candidate/jenifer-m-jones?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "New Mexico House of Representatives District 33",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-33-59598",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 104281.0,
+   "totalExpenditures": 48782.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Micaela Lara Cadena",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101728.31,
+       "expenditures": 0.0,
+       "status": "$47,485.31",
+       "url": "/nm/candidate/micaela-lara-cadena?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Charles R Wendler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2552.52,
+       "expenditures": 0.0,
+       "status": "$1,296.23",
+       "url": "/nm/candidate/charles-r-wendler?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Micaela Lara Cadena",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101728.31,
+       "expenditures": 0.0,
+       "status": "$47,485.31",
+       "url": "/nm/candidate/micaela-lara-cadena?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Charles R Wendler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2552.52,
+       "expenditures": 0.0,
+       "status": "$1,296.23",
+       "url": "/nm/candidate/charles-r-wendler?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "New Mexico House of Representatives District 34",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-34-59599",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 66050.0,
+   "totalExpenditures": 49307.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Ray Lara",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 66049.74,
+       "expenditures": 0.0,
+       "status": "$49,307.17",
+       "url": "/nm/candidate/ray-lara?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Ray Lara",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 66049.74,
+       "expenditures": 0.0,
+       "status": "$49,307.17",
+       "url": "/nm/candidate/ray-lara?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "New Mexico House of Representatives District 35",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-35-59600",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 108947.0,
+   "totalExpenditures": 54547.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Angelica Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 35323.85,
+       "expenditures": 0.0,
+       "status": "$19,866.85",
+       "url": "/nm/candidate/angelica-rubio?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Richelle Peugh-Swafford",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 73622.93,
+       "expenditures": 200.0,
+       "status": "$34,680.24",
+       "url": "/nm/candidate/richelle-peugh-swafford?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Angelica Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 35323.85,
+       "expenditures": 0.0,
+       "status": "$19,866.85",
+       "url": "/nm/candidate/angelica-rubio?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Richelle Peugh-Swafford",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 73622.93,
+       "expenditures": 200.0,
+       "status": "$34,680.24",
+       "url": "/nm/candidate/richelle-peugh-swafford?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "New Mexico House of Representatives District 36",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-36-59601",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 520085.0,
+   "totalExpenditures": 390663.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Nathan Small",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 313144.09,
+       "expenditures": 0.0,
+       "status": "$206,980.28",
+       "url": "/nm/candidate/nathan-small?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kimberly Skaggs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 206941.37,
+       "expenditures": 21984.75,
+       "status": "$183,682.53",
+       "url": "/nm/candidate/kimberly-skaggs?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Nathan Small",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 313144.09,
+       "expenditures": 0.0,
+       "status": "$206,980.28",
+       "url": "/nm/candidate/nathan-small?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Kimberly Skaggs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 206941.37,
+       "expenditures": 21984.75,
+       "status": "$183,682.53",
+       "url": "/nm/candidate/kimberly-skaggs?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "New Mexico House of Representatives District 37",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-37-59602",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 132189.0,
+   "totalExpenditures": 86103.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Joanne J Ferrary",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 132188.52,
+       "expenditures": 0.0,
+       "status": "$86,103.26",
+       "url": "/nm/candidate/joanne-j-ferrary?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Joanne J Ferrary",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 132188.52,
+       "expenditures": 0.0,
+       "status": "$86,103.26",
+       "url": "/nm/candidate/joanne-j-ferrary?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Ronnie A Sisneros",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/ronnie-a-sisneros?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "New Mexico House of Representatives District 38",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-38-59603",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 436206.0,
+   "totalExpenditures": 272514.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tara Jaramillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 309038.24,
+       "expenditures": 0.0,
+       "status": "$188,569.24",
+       "url": "/nm/candidate/tara-jaramillo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sandra K Hammack",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 127167.89,
+       "expenditures": 0.0,
+       "status": "$83,944.50",
+       "url": "/nm/candidate/sandra-k-hammack?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Tara Jaramillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 309038.24,
+       "expenditures": 0.0,
+       "status": "$188,569.24",
+       "url": "/nm/candidate/tara-jaramillo?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Sandra K Hammack",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 127167.89,
+       "expenditures": 0.0,
+       "status": "$83,944.50",
+       "url": "/nm/candidate/sandra-k-hammack?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "New Mexico House of Representatives District 39",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-39-59604",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 494251.0,
+   "totalExpenditures": 264592.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Luis M Terrazas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 245966.74,
+       "expenditures": 0.0,
+       "status": "$131,930.62",
+       "url": "/nm/candidate/luis-m-terrazas?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rodolpho S Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 248284.31,
+       "expenditures": 15000.0,
+       "status": "$132,661.71",
+       "url": "/nm/candidate/rodolpho-s-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Rodolpho S Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 248284.31,
+       "expenditures": 15000.0,
+       "status": "$132,661.71",
+       "url": "/nm/candidate/rodolpho-s-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Luis M Terrazas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 245966.74,
+       "expenditures": 0.0,
+       "status": "$131,930.62",
+       "url": "/nm/candidate/luis-m-terrazas?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "New Mexico House of Representatives District 4",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-4-59605",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 90761.0,
+   "totalExpenditures": 47625.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Anthony Allison",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 88160.62,
+       "expenditures": 0.0,
+       "status": "$45,329.58",
+       "url": "/nm/candidate/anthony-allison?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Anthony Allison",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 88160.62,
+       "expenditures": 0.0,
+       "status": "$45,329.58",
+       "url": "/nm/candidate/anthony-allison?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Christina J Aspaas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2600.0,
+       "expenditures": 2295.15,
+       "status": "$2,295.15",
+       "url": "/nm/candidate/christina-j-aspaas?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "New Mexico House of Representatives District 40",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-40-59606",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 262902.0,
+   "totalExpenditures": 192695.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Joseph L Sanchez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 167474.17,
+       "expenditures": 0.0,
+       "status": "$107,849.47",
+       "url": "/nm/candidate/joseph-l-sanchez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Joseph L Sanchez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 167474.17,
+       "expenditures": 0.0,
+       "status": "$107,849.47",
+       "url": "/nm/candidate/joseph-l-sanchez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Roger E Montoya",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 95427.92,
+       "expenditures": 0.0,
+       "status": "$84,845.41",
+       "url": "/nm/candidate/roger-e-montoya?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "New Mexico House of Representatives District 41",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-41-59607",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 121616.0,
+   "totalExpenditures": 107663.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Susan K Herrera",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 121615.75,
+       "expenditures": 800.0,
+       "status": "$107,663.38",
+       "url": "/nm/candidate/susan-k-herrera?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Susan K Herrera",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 121615.75,
+       "expenditures": 800.0,
+       "status": "$107,663.38",
+       "url": "/nm/candidate/susan-k-herrera?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "New Mexico House of Representatives District 42",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-42-59608",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 171544.0,
+   "totalExpenditures": 117426.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Kristina Ortez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 171543.55,
+       "expenditures": 0.0,
+       "status": "$117,425.72",
+       "url": "/nm/candidate/kristina-ortez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Kristina Ortez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 171543.55,
+       "expenditures": 0.0,
+       "status": "$117,425.72",
+       "url": "/nm/candidate/kristina-ortez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "New Mexico House of Representatives District 43",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-43-59609",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 97326.0,
+   "totalExpenditures": 46378.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Christine Chandler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97326.21,
+       "expenditures": 0.0,
+       "status": "$46,378.22",
+       "url": "/nm/candidate/christine-chandler?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Christine Chandler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97326.21,
+       "expenditures": 0.0,
+       "status": "$46,378.22",
+       "url": "/nm/candidate/christine-chandler?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "New Mexico House of Representatives District 44",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-44-59610",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 100114.0,
+   "totalExpenditures": 62908.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Kathleen M Cates",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 86293.73,
+       "expenditures": 2054.64,
+       "status": "$49,087.90",
+       "url": "/nm/candidate/kathleen-m-cates?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Kathleen M Cates",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 86293.73,
+       "expenditures": 2054.64,
+       "status": "$49,087.90",
+       "url": "/nm/candidate/kathleen-m-cates?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Frida S Vasquez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13820.0,
+       "expenditures": 1120.0,
+       "status": "$13,820.00",
+       "url": "/nm/candidate/frida-s-vasquez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "New Mexico House of Representatives District 45",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-45-59611",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 42862.0,
+   "totalExpenditures": 18758.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Linda M Serrato",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 42861.65,
+       "expenditures": 8838.28,
+       "status": "$18,757.78",
+       "url": "/nm/candidate/linda-m-serrato?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Linda M Serrato",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 42861.65,
+       "expenditures": 8838.28,
+       "status": "$18,757.78",
+       "url": "/nm/candidate/linda-m-serrato?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "New Mexico House of Representatives District 46",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-46-59612",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 160275.0,
+   "totalExpenditures": 121299.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Andrea D Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 157757.62,
+       "expenditures": 0.0,
+       "status": "$118,781.04",
+       "url": "/nm/candidate/andrea-d-romero?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Andrea D Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 157757.62,
+       "expenditures": 0.0,
+       "status": "$118,781.04",
+       "url": "/nm/candidate/andrea-d-romero?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ryan Salazar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2517.81,
+       "expenditures": 0.0,
+       "status": "$2,517.81",
+       "url": "/nm/candidate/ryan-salazar?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "New Mexico House of Representatives District 47",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-47-59613",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 124289.0,
+   "totalExpenditures": 63976.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Reena C Szczepanski",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 124289.16,
+       "expenditures": 0.0,
+       "status": "$63,975.50",
+       "url": "/nm/candidate/reena-c-szczepanski?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Reena C Szczepanski",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 124289.16,
+       "expenditures": 0.0,
+       "status": "$63,975.50",
+       "url": "/nm/candidate/reena-c-szczepanski?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "New Mexico House of Representatives District 48",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-48-59614",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 55946.0,
+   "totalExpenditures": 15997.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tara Lujan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 55945.73,
+       "expenditures": 0.0,
+       "status": "$15,997.25",
+       "url": "/nm/candidate/tara-lujan?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Tara Lujan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 55945.73,
+       "expenditures": 0.0,
+       "status": "$15,997.25",
+       "url": "/nm/candidate/tara-lujan?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "New Mexico House of Representatives District 49",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-49-59615",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 159104.0,
+   "totalExpenditures": 110026.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Gail Missy Armstrong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 159104.28,
+       "expenditures": 0.0,
+       "status": "$110,025.72",
+       "url": "/nm/candidate/gail-missy-armstrong?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Gail Missy Armstrong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 159104.28,
+       "expenditures": 0.0,
+       "status": "$110,025.72",
+       "url": "/nm/candidate/gail-missy-armstrong?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "New Mexico House of Representatives District 5",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-5-59616",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 97935.0,
+   "totalExpenditures": 37204.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Doreen Wonda Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97934.84,
+       "expenditures": 0.0,
+       "status": "$37,204.24",
+       "url": "/nm/candidate/doreen-wonda-johnson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Doreen Wonda Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97934.84,
+       "expenditures": 0.0,
+       "status": "$37,204.24",
+       "url": "/nm/candidate/doreen-wonda-johnson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "New Mexico House of Representatives District 50",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-50-59617",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 55987.0,
+   "totalExpenditures": 37813.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Matthew Mcqueen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 55987.04,
+       "expenditures": 0.0,
+       "status": "$37,813.43",
+       "url": "/nm/candidate/matthew-mcqueen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Matthew Mcqueen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 55987.04,
+       "expenditures": 0.0,
+       "status": "$37,813.43",
+       "url": "/nm/candidate/matthew-mcqueen?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "New Mexico House of Representatives District 51",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-51-59618",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 39837.0,
+   "totalExpenditures": 32565.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "John Block",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37848.29,
+       "expenditures": 12000.0,
+       "status": "$31,788.15",
+       "url": "/nm/candidate/john-block?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sharonlee Cummins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1988.23,
+       "expenditures": 0.0,
+       "status": "$776.63",
+       "url": "/nm/candidate/sharonlee-cummins?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Sharonlee Cummins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1988.23,
+       "expenditures": 0.0,
+       "status": "$776.63",
+       "url": "/nm/candidate/sharonlee-cummins?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "John Block",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37848.29,
+       "expenditures": 12000.0,
+       "status": "$31,788.15",
+       "url": "/nm/candidate/john-block?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "New Mexico House of Representatives District 52",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-52-59619",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 388089.0,
+   "totalExpenditures": 141798.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Doreen Y Gallegos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 291102.32,
+       "expenditures": 0.0,
+       "status": "$89,186.05",
+       "url": "/nm/candidate/doreen-y-gallegos?cycle=2022-election-cycle"
+      },
+      {
+       "name": "John Foreman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96986.24,
+       "expenditures": 1000.0,
+       "status": "$52,611.57",
+       "url": "/nm/candidate/john-foreman?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Doreen Y Gallegos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 291102.32,
+       "expenditures": 0.0,
+       "status": "$89,186.05",
+       "url": "/nm/candidate/doreen-y-gallegos?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "John Foreman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96986.24,
+       "expenditures": 1000.0,
+       "status": "$52,611.57",
+       "url": "/nm/candidate/john-foreman?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "New Mexico House of Representatives District 53",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-53-59620",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 264689.0,
+   "totalExpenditures": 165817.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Willie Madrid",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 185553.11,
+       "expenditures": 0.0,
+       "status": "$113,476.94",
+       "url": "/nm/candidate/willie-madrid?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Liz Winterrowd",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 76229.11,
+       "expenditures": 1626.27,
+       "status": "$49,433.37",
+       "url": "/nm/candidate/liz-winterrowd?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Willie Madrid",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 185553.11,
+       "expenditures": 0.0,
+       "status": "$113,476.94",
+       "url": "/nm/candidate/willie-madrid?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Liz Winterrowd",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 76229.11,
+       "expenditures": 1626.27,
+       "status": "$49,433.37",
+       "url": "/nm/candidate/liz-winterrowd?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ricky L Little",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2906.95,
+       "expenditures": 0.0,
+       "status": "$2,906.95",
+       "url": "/nm/candidate/ricky-l-little?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "New Mexico House of Representatives District 54",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-54-59621",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 221036.0,
+   "totalExpenditures": 150053.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "James G Townsend",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 221036.19,
+       "expenditures": 0.0,
+       "status": "$150,053.12",
+       "url": "/nm/candidate/james-g-townsend?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "James G Townsend",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 221036.19,
+       "expenditures": 0.0,
+       "status": "$150,053.12",
+       "url": "/nm/candidate/james-g-townsend?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "New Mexico House of Representatives District 55",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-55-59622",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 56453.0,
+   "totalExpenditures": 43186.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Cathrynn Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 56453.21,
+       "expenditures": 0.0,
+       "status": "$43,186.02",
+       "url": "/nm/candidate/cathrynn-brown?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Cathrynn Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 56453.21,
+       "expenditures": 0.0,
+       "status": "$43,186.02",
+       "url": "/nm/candidate/cathrynn-brown?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "New Mexico House of Representatives District 56",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-56-59623",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 63744.0,
+   "totalExpenditures": 44551.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Harlan Vincent",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 63744.23,
+       "expenditures": 0.0,
+       "status": "$44,550.50",
+       "url": "/nm/candidate/harlan-vincent?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Harlan Vincent",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 63744.23,
+       "expenditures": 0.0,
+       "status": "$44,550.50",
+       "url": "/nm/candidate/harlan-vincent?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "New Mexico House of Representatives District 57",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-57-59624",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Michelle E Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/michelle-e-sandoval?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Michelle E Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/michelle-e-sandoval?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "New Mexico House of Representatives District 58",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-58-59625",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 49061.0,
+   "totalExpenditures": 35058.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Candy Spence Ezzell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49060.8,
+       "expenditures": 0.0,
+       "status": "$35,057.51",
+       "url": "/nm/candidate/candy-spence-ezzell?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Candy Spence Ezzell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49060.8,
+       "expenditures": 0.0,
+       "status": "$35,057.51",
+       "url": "/nm/candidate/candy-spence-ezzell?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "New Mexico House of Representatives District 59",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-59-59626",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 136762.0,
+   "totalExpenditures": 42528.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Greg Nibert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 136761.84,
+       "expenditures": 0.0,
+       "status": "$42,527.95",
+       "url": "/nm/candidate/greg-nibert?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Greg Nibert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 136761.84,
+       "expenditures": 0.0,
+       "status": "$42,527.95",
+       "url": "/nm/candidate/greg-nibert?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tracy De La Rosa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/tracy-de-la-rosa?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "New Mexico House of Representatives District 6",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-6-59627",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 107528.0,
+   "totalExpenditures": 88534.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Eliseo L Alcon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 107528.38,
+       "expenditures": 0.0,
+       "status": "$88,190.30",
+       "url": "/nm/candidate/eliseo-l-alcon-1?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Eliseo L Alcon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 107528.38,
+       "expenditures": 0.0,
+       "status": "$88,190.30",
+       "url": "/nm/candidate/eliseo-l-alcon-1?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Priscilla Benally",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/priscilla-benally?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Daniel Rogers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$343.72",
+       "url": "/nm/candidate/daniel-rogers?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "New Mexico House of Representatives District 60",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-60-59628",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 86883.0,
+   "totalExpenditures": 49116.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Joshua Hernandez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 86883.13,
+       "expenditures": 43.17,
+       "status": "$49,116.07",
+       "url": "/nm/candidate/joshua-hernandez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Joshua Hernandez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 86883.13,
+       "expenditures": 43.17,
+       "status": "$49,116.07",
+       "url": "/nm/candidate/joshua-hernandez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "New Mexico House of Representatives District 61",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-61-59629",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 145841.0,
+   "totalExpenditures": 107711.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Randall T Pettigrew",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 145841.49,
+       "expenditures": 0.0,
+       "status": "$107,710.51",
+       "url": "/nm/candidate/randall-t-pettigrew?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Randall T Pettigrew",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 145841.49,
+       "expenditures": 0.0,
+       "status": "$107,710.51",
+       "url": "/nm/candidate/randall-t-pettigrew?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "New Mexico House of Representatives District 62",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-62-59630",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 170186.0,
+   "totalExpenditures": 157517.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Larry R Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 132936.07,
+       "expenditures": 1180.88,
+       "status": "$120,266.82",
+       "url": "/nm/candidate/larry-r-scott?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Larry R Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 132936.07,
+       "expenditures": 1180.88,
+       "status": "$120,266.82",
+       "url": "/nm/candidate/larry-r-scott?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Elaine Sena Cortez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37250.0,
+       "expenditures": 0.0,
+       "status": "$37,250.00",
+       "url": "/nm/candidate/elaine-sena-cortez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "New Mexico House of Representatives District 63",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-63-59631",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Martin R Zamora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/martin-r-zamora-1?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Martin R Zamora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/martin-r-zamora-1?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "New Mexico House of Representatives District 64",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-64-59632",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 86878.0,
+   "totalExpenditures": 78579.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Andrea R Reeb",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 67846.8,
+       "expenditures": 0.0,
+       "status": "$55,155.52",
+       "url": "/nm/candidate/andrea-r-reeb?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David M Lansford",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 19031.03,
+       "expenditures": 10000.0,
+       "status": "$23,423.66",
+       "url": "/nm/candidate/david-m-lansford?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Andrea R Reeb",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 67846.8,
+       "expenditures": 0.0,
+       "status": "$55,155.52",
+       "url": "/nm/candidate/andrea-r-reeb?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "New Mexico House of Representatives District 65",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-65-59633",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 87109.0,
+   "totalExpenditures": 64712.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Derrick J Lente",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 87108.77,
+       "expenditures": 0.0,
+       "status": "$64,712.02",
+       "url": "/nm/candidate/derrick-j-lente?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Derrick J Lente",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 87108.77,
+       "expenditures": 0.0,
+       "status": "$64,712.02",
+       "url": "/nm/candidate/derrick-j-lente?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "New Mexico House of Representatives District 66",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-66-59634",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 37746.0,
+   "totalExpenditures": 22474.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jimmy G Mason",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 36945.7,
+       "expenditures": 0.0,
+       "status": "$21,739.88",
+       "url": "/nm/candidate/jimmy-g-mason?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Andrew Kennedy",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 800.0,
+       "expenditures": 0.0,
+       "status": "$734.55",
+       "url": "/nm/candidate/andrew-kennedy?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Andrew Kennedy",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 800.0,
+       "expenditures": 0.0,
+       "status": "$734.55",
+       "url": "/nm/candidate/andrew-kennedy?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Jimmy G Mason",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 36945.7,
+       "expenditures": 0.0,
+       "status": "$21,739.88",
+       "url": "/nm/candidate/jimmy-g-mason?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "New Mexico House of Representatives District 67",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-67-59635",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 44326.0,
+   "totalExpenditures": 13001.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jackey O Chatfield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 44326.0,
+       "expenditures": 0.0,
+       "status": "$13,000.91",
+       "url": "/nm/candidate/jackey-o-chatfield?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Jackey O Chatfield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 44326.0,
+       "expenditures": 0.0,
+       "status": "$13,000.91",
+       "url": "/nm/candidate/jackey-o-chatfield?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "New Mexico House of Representatives District 68",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-68-59636",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 426596.0,
+   "totalExpenditures": 235634.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Charlotte Little",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 289605.2,
+       "expenditures": 0.0,
+       "status": "$174,639.02",
+       "url": "/nm/candidate/charlotte-little?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Robert Moss",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 136990.51,
+       "expenditures": 0.0,
+       "status": "$60,994.85",
+       "url": "/nm/candidate/robert-moss?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Charlotte Little",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 289605.2,
+       "expenditures": 0.0,
+       "status": "$174,639.02",
+       "url": "/nm/candidate/charlotte-little?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Robert Moss",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 136990.51,
+       "expenditures": 0.0,
+       "status": "$60,994.85",
+       "url": "/nm/candidate/robert-moss?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "New Mexico House of Representatives District 69",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-69-59637",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 92713.0,
+   "totalExpenditures": 34746.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Harry Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 92712.7,
+       "expenditures": 0.0,
+       "status": "$34,746.16",
+       "url": "/nm/candidate/harry-garcia?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Harry Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 92712.7,
+       "expenditures": 0.0,
+       "status": "$34,746.16",
+       "url": "/nm/candidate/harry-garcia?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "New Mexico House of Representatives District 7",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-7-59638",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 152048.0,
+   "totalExpenditures": 80183.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tanya Mirabal Moya",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 118713.1,
+       "expenditures": 0.0,
+       "status": "$52,679.79",
+       "url": "/nm/candidate/tanya-mirabal-moya?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Danny Bernal Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33335.1,
+       "expenditures": 0.0,
+       "status": "$27,502.72",
+       "url": "/nm/candidate/danny-bernal-jr?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Danny Bernal Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33335.1,
+       "expenditures": 0.0,
+       "status": "$27,502.72",
+       "url": "/nm/candidate/danny-bernal-jr?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Tanya Mirabal Moya",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 118713.1,
+       "expenditures": 0.0,
+       "status": "$52,679.79",
+       "url": "/nm/candidate/tanya-mirabal-moya?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "New Mexico House of Representatives District 70",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-70-59639",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 206130.0,
+   "totalExpenditures": 180581.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Ambrose Castellano",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 172166.39,
+       "expenditures": 0.0,
+       "status": "$152,746.88",
+       "url": "/nm/candidate/ambrose-castellano?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Ambrose Castellano",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 172166.39,
+       "expenditures": 0.0,
+       "status": "$152,746.88",
+       "url": "/nm/candidate/ambrose-castellano?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Anita Gonzales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33964.05,
+       "expenditures": 0.0,
+       "status": "$27,833.93",
+       "url": "/nm/candidate/anita-gonzales?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "New Mexico House of Representatives District 8",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-8-59640",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 39450.0,
+   "totalExpenditures": 9341.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Brian G Baca",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39450.0,
+       "expenditures": 0.0,
+       "status": "$9,340.97",
+       "url": "/nm/candidate/brian-g-baca?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Brian G Baca",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39450.0,
+       "expenditures": 0.0,
+       "status": "$9,340.97",
+       "url": "/nm/candidate/brian-g-baca?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "New Mexico House of Representatives District 9",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-9-59641",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 362419.0,
+   "totalExpenditures": 203503.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Patty A Lundstrom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 362418.64,
+       "expenditures": 0.0,
+       "status": "$203,503.17",
+       "url": "/nm/candidate/patty-a-lundstrom?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Patty A Lundstrom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 362418.64,
+       "expenditures": 0.0,
+       "status": "$203,503.17",
+       "url": "/nm/candidate/patty-a-lundstrom?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
   }
  ]
 }

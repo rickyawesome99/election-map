@@ -1,591 +1,2667 @@
 {
  "state": "NV",
  "cycle": 2018,
- "fetched": "2026-10-11",
- "dataThrough": "06/30/2026",
+ "fetched": "2026-10-12",
+ "dataThrough": "12/31/2018",
  "races": [
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-1-22096?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 1",
+   "url": "/nv/race/nevada-state-assembly-district-1-22096",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 193195.0,
+   "totalExpenditures": 134286.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Daniele Monroe-Moreno",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 193194.53,
+       "expenditures": 134286.48,
+       "status": "Won",
+       "url": "/nv/candidate/daniele-monroe-moreno?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Daniele Monroe-Moreno",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 193194.53,
+       "expenditures": 134286.48,
+       "status": "Advanced",
+       "url": "/nv/candidate/daniele-monroe-moreno?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "1"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-10-22105?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 10",
+   "url": "/nv/race/nevada-state-assembly-district-10-22105",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 202917.0,
+   "totalExpenditures": 153960.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Chris Brooks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 202917.14,
+       "expenditures": 153959.58,
+       "status": "Won",
+       "url": "/nv/candidate/chris-brooks?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Chris Brooks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 202917.14,
+       "expenditures": 153959.58,
+       "status": "Advanced",
+       "url": "/nv/candidate/chris-brooks?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "10"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-11-22106?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 11",
+   "url": "/nv/race/nevada-state-assembly-district-11-22106",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Gianna Miceli",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/gianna-miceli?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Gianna Miceli",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/gianna-miceli?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "11"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-12-22107?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 12",
+   "url": "/nv/race/nevada-state-assembly-district-12-22107",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 74812.0,
+   "totalExpenditures": 71286.0,
+   "elections": [
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Brandon Casutt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29950.0,
+       "expenditures": 30694.0,
+       "status": "Lost",
+       "url": "/nv/candidate/brandon-casutt?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Anat Levy",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26589.58,
+       "expenditures": 22331.48,
+       "status": "Lost",
+       "url": "/nv/candidate/anat-levy?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Cinthia Moore",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17250.0,
+       "expenditures": 17237.63,
+       "status": "Lost",
+       "url": "/nv/candidate/cinthia-moore?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Gregory York",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1022.88,
+       "expenditures": 1022.65,
+       "status": "Lost",
+       "url": "/nv/candidate/gregory-york?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "12"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-13-22108?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 13",
+   "url": "/nv/race/nevada-state-assembly-district-13-22108",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 150368.0,
+   "totalExpenditures": 104693.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tom Roberts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 147968.75,
+       "expenditures": 103677.95,
+       "status": "Won",
+       "url": "/nv/candidate/tom-roberts?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Tom Roberts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 147968.75,
+       "expenditures": 103677.95,
+       "status": "Advanced",
+       "url": "/nv/candidate/tom-roberts?cycle=2018-election-cycle"
+      },
+      {
+       "name": "James Kemp",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2399.0,
+       "expenditures": 1014.8,
+       "status": "Lost",
+       "url": "/nv/candidate/james-kemp?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-14-22109?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "Nevada State Assembly District 14",
+   "url": "/nv/race/nevada-state-assembly-district-14-22109",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "house",
-   "district": null
+   "district": "14"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-15-22110?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "Nevada State Assembly District 15",
+   "url": "/nv/race/nevada-state-assembly-district-15-22110",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 134079.0,
+   "totalExpenditures": 92550.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Howard Watts III",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 121563.54,
+       "expenditures": 81763.32,
+       "status": "Won",
+       "url": "/nv/candidate/howard-watts-iii?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Stan Vaughan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/stan-vaughan?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Howard Watts III",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 121563.54,
+       "expenditures": 81763.32,
+       "status": "Advanced",
+       "url": "/nv/candidate/howard-watts-iii?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Juan Chavez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11407.34,
+       "expenditures": 9188.32,
+       "status": "Lost",
+       "url": "/nv/candidate/juan-chavez?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Andrew Spivak",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1108.0,
+       "expenditures": 1598.25,
+       "status": "Lost",
+       "url": "/nv/candidate/andrew-spivak?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Stan Vaughan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/stan-vaughan?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Nevada State Assembly District 16",
+   "url": "/nv/race/nevada-state-assembly-district-16-22111",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 65222.0,
+   "totalExpenditures": 52268.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Heidi Swank",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65221.57,
+       "expenditures": 52267.74,
+       "status": "Won",
+       "url": "/nv/candidate/heidi-swank?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Heidi Swank",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65221.57,
+       "expenditures": 52267.74,
+       "status": "Advanced",
+       "url": "/nv/candidate/heidi-swank?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Nevada State Assembly District 17",
+   "url": "/nv/race/nevada-state-assembly-district-17-22112",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "house",
-   "district": null
+   "district": "17"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-16-22111?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "Nevada State Assembly District 18",
+   "url": "/nv/race/nevada-state-assembly-district-18-22113",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 107508.0,
+   "totalExpenditures": 106393.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Richard Carrillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 105507.71,
+       "expenditures": 105543.13,
+       "status": "Won",
+       "url": "/nv/candidate/richard-carrillo?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Matt Sadler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2000.0,
+       "expenditures": 850.1,
+       "status": "Lost",
+       "url": "/nv/candidate/matt-sadler?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Richard Carrillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 105507.71,
+       "expenditures": 105543.13,
+       "status": "Advanced",
+       "url": "/nv/candidate/richard-carrillo?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Matt Sadler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2000.0,
+       "expenditures": 850.1,
+       "status": "Advanced",
+       "url": "/nv/candidate/matt-sadler?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Nevada State Assembly District 19",
+   "url": "/nv/race/nevada-state-assembly-district-19-22114",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 60746.0,
+   "totalExpenditures": 67150.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Christopher Edwards",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60746.0,
+       "expenditures": 67150.07,
+       "status": "Won",
+       "url": "/nv/candidate/christopher-edwards?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Christopher Edwards",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60746.0,
+       "expenditures": 67150.07,
+       "status": "Advanced",
+       "url": "/nv/candidate/christopher-edwards?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Nevada State Assembly District 2",
+   "url": "/nv/race/nevada-state-assembly-district-2-22097",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 250111.0,
+   "totalExpenditures": 229220.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "John Hambrick",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 104435.7,
+       "expenditures": 83188.36,
+       "status": "Won",
+       "url": "/nv/candidate/john-hambrick?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jennie Sherwood",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 103569.52,
+       "expenditures": 103950.94,
+       "status": "Lost",
+       "url": "/nv/candidate/jennie-sherwood?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Jennie Sherwood",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 103569.52,
+       "expenditures": 103950.94,
+       "status": "Advanced",
+       "url": "/nv/candidate/jennie-sherwood?cycle=2018-election-cycle"
+      },
+      {
+       "name": "David Orentlicher",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 42105.91,
+       "expenditures": 42080.87,
+       "status": "Lost",
+       "url": "/nv/candidate/david-orentlicher?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "John Hambrick",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 104435.7,
+       "expenditures": 83188.36,
+       "status": "Advanced",
+       "url": "/nv/candidate/john-hambrick?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Nevada State Assembly District 20",
+   "url": "/nv/race/nevada-state-assembly-district-20-22115",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 185834.0,
+   "totalExpenditures": 80683.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Ellen Spiegel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 185834.14,
+       "expenditures": 80682.96,
+       "status": "Won",
+       "url": "/nv/candidate/ellen-spiegel?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alexander Cheyenne Bacon",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/alexander-cheyenne-bacon?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Ellen Spiegel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 185834.14,
+       "expenditures": 80682.96,
+       "status": "Advanced",
+       "url": "/nv/candidate/ellen-spiegel?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Nevada State Assembly District 21",
+   "url": "/nv/race/nevada-state-assembly-district-21-22116",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 59203.0,
+   "totalExpenditures": 46022.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Cherlyn Arrington",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28120.0,
+       "expenditures": 19896.88,
+       "status": "Lost",
+       "url": "/nv/candidate/cherlyn-arrington?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Cherlyn Arrington",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28120.0,
+       "expenditures": 19896.88,
+       "status": "Advanced",
+       "url": "/nv/candidate/cherlyn-arrington?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Garo Atamian",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31083.39,
+       "expenditures": 26125.08,
+       "status": "Lost",
+       "url": "/nv/candidate/garo-atamian?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Nevada State Assembly District 22",
+   "url": "/nv/race/nevada-state-assembly-district-22-22117",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 258182.0,
+   "totalExpenditures": 199745.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Melissa Hardy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 258182.4,
+       "expenditures": 199745.48,
+       "status": "Won",
+       "url": "/nv/candidate/melissa-hardy?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Melissa Hardy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 258182.4,
+       "expenditures": 199745.48,
+       "status": "Advanced",
+       "url": "/nv/candidate/melissa-hardy?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Nevada State Assembly District 23",
+   "url": "/nv/race/nevada-state-assembly-district-23-22118",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 218718.0,
+   "totalExpenditures": 155542.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Glen Leavitt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 218717.58,
+       "expenditures": 155541.56,
+       "status": "Won",
+       "url": "/nv/candidate/glen-leavitt?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Glen Leavitt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 218717.58,
+       "expenditures": 155541.56,
+       "status": "Advanced",
+       "url": "/nv/candidate/glen-leavitt?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Nevada State Assembly District 24",
+   "url": "/nv/race/nevada-state-assembly-district-24-22119",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 169164.0,
+   "totalExpenditures": 123445.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Sarah Peters",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 87315.96,
+       "expenditures": 39591.34,
+       "status": "Won",
+       "url": "/nv/candidate/sarah-peters?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Sarah Peters",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 87315.96,
+       "expenditures": 39591.34,
+       "status": "Advanced",
+       "url": "/nv/candidate/sarah-peters?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Edward Coleman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1000.0,
+       "expenditures": 767.52,
+       "status": "Lost",
+       "url": "/nv/candidate/edward-coleman?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Deonne Contine",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 80847.71,
+       "expenditures": 83086.29,
+       "status": "Lost",
+       "url": "/nv/candidate/deonne-contine?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Nevada State Assembly District 25",
+   "url": "/nv/race/nevada-state-assembly-district-25-22120",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 6994.0,
+   "totalExpenditures": 7147.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Gregory Shorts",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6994.18,
+       "expenditures": 7146.87,
+       "status": "Lost",
+       "url": "/nv/candidate/gregory-shorts?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Gregory Shorts",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6994.18,
+       "expenditures": 7146.87,
+       "status": "Advanced",
+       "url": "/nv/candidate/gregory-shorts?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Nevada State Assembly District 26",
+   "url": "/nv/race/nevada-state-assembly-district-26-22121",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 153155.0,
+   "totalExpenditures": 158541.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Lisa Krasner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 126765.17,
+       "expenditures": 137653.79,
+       "status": "Won",
+       "url": "/nv/candidate/lisa-krasner?cycle=2018-election-cycle"
+      },
+      {
+       "name": "June Joseph",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26390.25,
+       "expenditures": 20886.74,
+       "status": "Lost",
+       "url": "/nv/candidate/june-joseph?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "June Joseph",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26390.25,
+       "expenditures": 20886.74,
+       "status": "Advanced",
+       "url": "/nv/candidate/june-joseph?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Lisa Krasner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 126765.17,
+       "expenditures": 137653.79,
+       "status": "Advanced",
+       "url": "/nv/candidate/lisa-krasner?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Nevada State Assembly District 27",
+   "url": "/nv/race/nevada-state-assembly-district-27-22122",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "house",
-   "district": null
+   "district": "27"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-17-22112?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "Nevada State Assembly District 28",
+   "url": "/nv/race/nevada-state-assembly-district-28-22123",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 133354.0,
+   "totalExpenditures": 87828.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Edgar Flores",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 133353.57,
+       "expenditures": 87827.94,
+       "status": "Won",
+       "url": "/nv/candidate/edgar-flores?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Edgar Flores",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 133353.57,
+       "expenditures": 87827.94,
+       "status": "Advanced",
+       "url": "/nv/candidate/edgar-flores?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Nevada State Assembly District 29",
+   "url": "/nv/race/nevada-state-assembly-district-29-22124",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 208011.0,
+   "totalExpenditures": 179328.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Lesley Cohen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 207756.33,
+       "expenditures": 178785.47,
+       "status": "Won",
+       "url": "/nv/candidate/lesley-cohen?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bruce James-Newman",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 254.39,
+       "expenditures": 542.31,
+       "status": "Lost",
+       "url": "/nv/candidate/bruce-james-newman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Lesley Cohen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 207756.33,
+       "expenditures": 178785.47,
+       "status": "Advanced",
+       "url": "/nv/candidate/lesley-cohen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Nevada State Assembly District 3",
+   "url": "/nv/race/nevada-state-assembly-district-3-22098",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 93935.0,
+   "totalExpenditures": 46096.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Selena Torres",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 93935.39,
+       "expenditures": 46095.98,
+       "status": "Won",
+       "url": "/nv/candidate/selena-torres?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Selena Torres",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 93935.39,
+       "expenditures": 46095.98,
+       "status": "Advanced",
+       "url": "/nv/candidate/selena-torres?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Nevada State Assembly District 30",
+   "url": "/nv/race/nevada-state-assembly-district-30-22125",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "house",
-   "district": null
+   "district": "30"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-18-22113?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "Nevada State Assembly District 31",
+   "url": "/nv/race/nevada-state-assembly-district-31-22126",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 366371.0,
+   "totalExpenditures": 322243.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Richard Daly",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 155171.0,
+       "expenditures": 156391.92,
+       "status": "Won",
+       "url": "/nv/candidate/richard-daly?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jill Dickman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 211200.13,
+       "expenditures": 165850.8,
+       "status": "Lost",
+       "url": "/nv/candidate/jill-dickman?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Richard Daly",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 155171.0,
+       "expenditures": 156391.92,
+       "status": "Advanced",
+       "url": "/nv/candidate/richard-daly?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Jill Dickman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 211200.13,
+       "expenditures": 165850.8,
+       "status": "Advanced",
+       "url": "/nv/candidate/jill-dickman?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "Nevada State Assembly District 32",
+   "url": "/nv/race/nevada-state-assembly-district-32-22127",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 63056.0,
+   "totalExpenditures": 17109.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Alexis Hansen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 63056.24,
+       "expenditures": 17109.19,
+       "status": "Won",
+       "url": "/nv/candidate/alexis-hansen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Alexis Hansen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 63056.24,
+       "expenditures": 17109.19,
+       "status": "Advanced",
+       "url": "/nv/candidate/alexis-hansen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "Nevada State Assembly District 33",
+   "url": "/nv/race/nevada-state-assembly-district-33-22128",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 185154.0,
+   "totalExpenditures": 122190.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "John Ellison",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 184129.03,
+       "expenditures": 108810.82,
+       "status": "Won",
+       "url": "/nv/candidate/john-ellison?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "John Ellison",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 184129.03,
+       "expenditures": 108810.82,
+       "status": "Advanced",
+       "url": "/nv/candidate/john-ellison?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Chris Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1025.0,
+       "expenditures": 13379.0,
+       "status": "Lost",
+       "url": "/nv/candidate/chris-johnson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "Nevada State Assembly District 34",
+   "url": "/nv/race/nevada-state-assembly-district-34-22129",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 159669.0,
+   "totalExpenditures": 139104.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Shannon Bilbray-Axelrod",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 115359.36,
+       "expenditures": 96111.64,
+       "status": "Won",
+       "url": "/nv/candidate/shannon-bilbray-axelrod?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Janice Wesen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 42509.9,
+       "expenditures": 42864.54,
+       "status": "Lost",
+       "url": "/nv/candidate/janice-wesen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Shannon Bilbray-Axelrod",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 115359.36,
+       "expenditures": 96111.64,
+       "status": "Advanced",
+       "url": "/nv/candidate/shannon-bilbray-axelrod?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Janice Wesen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 42509.9,
+       "expenditures": 42864.54,
+       "status": "Advanced",
+       "url": "/nv/candidate/janice-wesen?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Anthony Laurie",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1800.0,
+       "expenditures": 128.27,
+       "status": "Lost",
+       "url": "/nv/candidate/anthony-laurie?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "Nevada State Assembly District 35",
+   "url": "/nv/race/nevada-state-assembly-district-35-22130",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 431493.0,
+   "totalExpenditures": 398560.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Michelle Gorelow",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 174336.85,
+       "expenditures": 150726.17,
+       "status": "Won",
+       "url": "/nv/candidate/michelle-gorelow?cycle=2018-election-cycle"
+      },
+      {
+       "name": "David Schoen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 116235.71,
+       "expenditures": 108454.09,
+       "status": "Lost",
+       "url": "/nv/candidate/david-schoen?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Daniel Hofstein",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 119818.76,
+       "expenditures": 120310.76,
+       "status": "Lost",
+       "url": "/nv/candidate/daniel-hofstein?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Michelle Gorelow",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 174336.85,
+       "expenditures": 150726.17,
+       "status": "Advanced",
+       "url": "/nv/candidate/michelle-gorelow?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "David Schoen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 116235.71,
+       "expenditures": 108454.09,
+       "status": "Advanced",
+       "url": "/nv/candidate/david-schoen?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Aimee Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21101.82,
+       "expenditures": 19069.34,
+       "status": "Lost",
+       "url": "/nv/candidate/aimee-jones?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "Nevada State Assembly District 36",
+   "url": "/nv/race/nevada-state-assembly-district-36-22131",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 452543.0,
+   "totalExpenditures": 538099.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Dennis Hof",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 242816.3,
+       "expenditures": 313235.57,
+       "status": "Won",
+       "url": "/nv/candidate/dennis-hof?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Dennis Hof",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 242816.3,
+       "expenditures": 313235.57,
+       "status": "Advanced",
+       "url": "/nv/candidate/dennis-hof?cycle=2018-election-cycle"
+      },
+      {
+       "name": "James Oscarson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 209726.73,
+       "expenditures": 224862.97,
+       "status": "Lost",
+       "url": "/nv/candidate/james-oscarson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "Nevada State Assembly District 37",
+   "url": "/nv/race/nevada-state-assembly-district-37-22132",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 347814.0,
+   "totalExpenditures": 251124.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Shea Backus",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 152402.52,
+       "expenditures": 110820.84,
+       "status": "Won",
+       "url": "/nv/candidate/shea-backus?cycle=2018-election-cycle"
+      },
+      {
+       "name": "James Marchant",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 195411.87,
+       "expenditures": 140302.66,
+       "status": "Lost",
+       "url": "/nv/candidate/james-marchant?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Shea Backus",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 152402.52,
+       "expenditures": 110820.84,
+       "status": "Advanced",
+       "url": "/nv/candidate/shea-backus?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "James Marchant",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 195411.87,
+       "expenditures": 140302.66,
+       "status": "Advanced",
+       "url": "/nv/candidate/james-marchant?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "Nevada State Assembly District 38",
+   "url": "/nv/race/nevada-state-assembly-district-38-22133",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 45700.0,
+   "totalExpenditures": 66474.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Robin Titus",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45700.0,
+       "expenditures": 66474.19,
+       "status": "Won",
+       "url": "/nv/candidate/robin-titus?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Robin Titus",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45700.0,
+       "expenditures": 66474.19,
+       "status": "Advanced",
+       "url": "/nv/candidate/robin-titus?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "Nevada State Assembly District 39",
+   "url": "/nv/race/nevada-state-assembly-district-39-22134",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 512996.0,
+   "totalExpenditures": 369047.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jim Wheeler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 512996.0,
+       "expenditures": 369047.4,
+       "status": "Won",
+       "url": "/nv/candidate/jim-wheeler?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Jim Wheeler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 512996.0,
+       "expenditures": 369047.4,
+       "status": "Advanced",
+       "url": "/nv/candidate/jim-wheeler?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "Nevada State Assembly District 4",
+   "url": "/nv/race/nevada-state-assembly-district-4-22099",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 254334.0,
+   "totalExpenditures": 181984.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Connie Munk",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 154331.14,
+       "expenditures": 108028.15,
+       "status": "Won",
+       "url": "/nv/candidate/connie-munk?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Richard Mcarthur",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 86700.0,
+       "expenditures": 60886.46,
+       "status": "Lost",
+       "url": "/nv/candidate/richard-mcarthur?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Connie Munk",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 154331.14,
+       "expenditures": 108028.15,
+       "status": "Advanced",
+       "url": "/nv/candidate/connie-munk?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tony Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13302.81,
+       "expenditures": 13069.5,
+       "status": "Lost",
+       "url": "/nv/candidate/tony-smith?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Richard Mcarthur",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 86700.0,
+       "expenditures": 60886.46,
+       "status": "Advanced",
+       "url": "/nv/candidate/richard-mcarthur?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Nevada State Assembly District 40",
+   "url": "/nv/race/nevada-state-assembly-district-40-22135",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 99295.0,
+   "totalExpenditures": 72941.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Alvin Kramer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 72220.0,
+       "expenditures": 51332.44,
+       "status": "Won",
+       "url": "/nv/candidate/alvin-kramer?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Autumn Zemke",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27074.64,
+       "expenditures": 21609.01,
+       "status": "Lost",
+       "url": "/nv/candidate/autumn-zemke?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Autumn Zemke",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27074.64,
+       "expenditures": 21609.01,
+       "status": "Advanced",
+       "url": "/nv/candidate/autumn-zemke?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Alvin Kramer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 72220.0,
+       "expenditures": 51332.44,
+       "status": "Advanced",
+       "url": "/nv/candidate/alvin-kramer?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "Nevada State Assembly District 41",
+   "url": "/nv/race/nevada-state-assembly-district-41-22136",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 187714.0,
+   "totalExpenditures": 149707.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Sandra Jauregui",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 187713.91,
+       "expenditures": 149706.92,
+       "status": "Won",
+       "url": "/nv/candidate/sandra-jauregui?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Sandra Jauregui",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 187713.91,
+       "expenditures": 149706.92,
+       "status": "Advanced",
+       "url": "/nv/candidate/sandra-jauregui?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "Nevada State Assembly District 42",
+   "url": "/nv/race/nevada-state-assembly-district-42-22137",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 129396.0,
+   "totalExpenditures": 101616.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Alexander Assefa",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 129395.61,
+       "expenditures": 101615.73,
+       "status": "Won",
+       "url": "/nv/candidate/alexander-assefa?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Alexander Assefa",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 129395.61,
+       "expenditures": 101615.73,
+       "status": "Advanced",
+       "url": "/nv/candidate/alexander-assefa?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "Nevada State Assembly District 5",
+   "url": "/nv/race/nevada-state-assembly-district-5-22100",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 180285.0,
+   "totalExpenditures": 163713.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Brittney Miller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 152912.88,
+       "expenditures": 150930.06,
+       "status": "Won",
+       "url": "/nv/candidate/brittney-miller?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jason Burke",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11599.75,
+       "expenditures": 1100.0,
+       "status": "Lost",
+       "url": "/nv/candidate/jason-burke?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Brittney Miller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 152912.88,
+       "expenditures": 150930.06,
+       "status": "Advanced",
+       "url": "/nv/candidate/brittney-miller?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Jason Burke",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11599.75,
+       "expenditures": 1100.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/jason-burke?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mack Miller",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15772.01,
+       "expenditures": 11683.1,
+       "status": "Lost",
+       "url": "/nv/candidate/mack-miller?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Nevada State Assembly District 6",
+   "url": "/nv/race/nevada-state-assembly-district-6-22101",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "house",
-   "district": null
+   "district": "6"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-19-22114?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 7",
+   "url": "/nv/race/nevada-state-assembly-district-7-22102",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 115684.0,
+   "totalExpenditures": 60999.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Dina Neal",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 115683.57,
+       "expenditures": 60999.34,
+       "status": "Won",
+       "url": "/nv/candidate/dina-neal?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Dina Neal",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 115683.57,
+       "expenditures": 60999.34,
+       "status": "Advanced",
+       "url": "/nv/candidate/dina-neal?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "7"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-2-22097?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 8",
+   "url": "/nv/race/nevada-state-assembly-district-8-22103",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 846229.0,
+   "totalExpenditures": 588572.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jason Frierson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 792054.12,
+       "expenditures": 538631.8,
+       "status": "Won",
+       "url": "/nv/candidate/jason-frierson?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tina Peetris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54175.0,
+       "expenditures": 49940.38,
+       "status": "Lost",
+       "url": "/nv/candidate/tina-peetris?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Jason Frierson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 792054.12,
+       "expenditures": 538631.8,
+       "status": "Advanced",
+       "url": "/nv/candidate/jason-frierson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Tina Peetris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54175.0,
+       "expenditures": 49940.38,
+       "status": "Advanced",
+       "url": "/nv/candidate/tina-peetris?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "8"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-20-22115?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 9",
+   "url": "/nv/race/nevada-state-assembly-district-9-22104",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 397463.0,
+   "totalExpenditures": 251035.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Steve Yeager",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 397462.65,
+       "expenditures": 251035.13,
+       "status": "Won",
+       "url": "/nv/candidate/steve-yeager?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Steve Yeager",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 397462.65,
+       "expenditures": 251035.13,
+       "status": "Advanced",
+       "url": "/nv/candidate/steve-yeager?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Barry Keller",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/barry-keller?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "9"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-21-22116?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-22-22117?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-23-22118?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-24-22119?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-25-22120?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-26-22121?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-27-22122?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-28-22123?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-29-22124?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-3-22098?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-30-22125?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-31-22126?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-32-22127?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-33-22128?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-34-22129?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-35-22130?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-36-22131?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-37-22132?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-38-22133?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-39-22134?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-4-22099?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-40-22135?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-41-22136?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-42-22137?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-5-22100?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-6-22101?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-7-22102?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-8-22103?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-9-22104?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-10-22206?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 10",
+   "url": "/nv/race/nevada-state-senate-district-10-22206",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 6057.0,
+   "totalExpenditures": 8404.0,
+   "elections": [
+    {
+     "label": "Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Bryce Henderson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6057.0,
+       "expenditures": 8403.6,
+       "status": "Lost",
+       "url": "/nv/candidate/bryce-henderson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "10"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-12-22207?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 12",
+   "url": "/nv/race/nevada-state-senate-district-12-22207",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 439550.0,
+   "totalExpenditures": 360176.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Joe Hardy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 439550.0,
+       "expenditures": 360176.48,
+       "status": "Won",
+       "url": "/nv/candidate/joe-hardy?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Joe Hardy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 439550.0,
+       "expenditures": 360176.48,
+       "status": "Advanced",
+       "url": "/nv/candidate/joe-hardy?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "12"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-13-22208?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 13",
+   "url": "/nv/race/nevada-state-senate-district-13-22208",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 398074.0,
+   "totalExpenditures": 370325.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Julia Ratti",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 396059.0,
+       "expenditures": 364145.96,
+       "status": "Won",
+       "url": "/nv/candidate/julia-ratti?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Charlene Young",
+       "party": "Independent American",
+       "incumbent": false,
+       "contributions": 2015.0,
+       "expenditures": 6179.3,
+       "status": "Lost",
+       "url": "/nv/candidate/charlene-young?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Julia Ratti",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 396059.0,
+       "expenditures": 364145.96,
+       "status": "Advanced",
+       "url": "/nv/candidate/julia-ratti?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-14-22209?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 14",
+   "url": "/nv/race/nevada-state-senate-district-14-22209",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 122740.0,
+   "totalExpenditures": 56794.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Ira Hansen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 122740.0,
+       "expenditures": 56794.2,
+       "status": "Won",
+       "url": "/nv/candidate/ira-hansen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Ira Hansen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 122740.0,
+       "expenditures": 56794.2,
+       "status": "Advanced",
+       "url": "/nv/candidate/ira-hansen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "14"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-16-22210?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 16",
+   "url": "/nv/race/nevada-state-senate-district-16-22210",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 428578.0,
+   "totalExpenditures": 326499.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Ben Kieckhefer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 428578.06,
+       "expenditures": 246148.75,
+       "status": "Won",
+       "url": "/nv/candidate/ben-kieckhefer?cycle=2018-election-cycle"
+      },
+      {
+       "name": "John Wagner",
+       "party": "Independent American",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/john-wagner?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Ben Kieckhefer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 428578.06,
+       "expenditures": 246148.75,
+       "status": "Advanced",
+       "url": "/nv/candidate/ben-kieckhefer?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Gary Schmidt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 80350.72,
+       "status": "Lost",
+       "url": "/nv/candidate/gary-schmidt?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "16"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-17-22211?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 17",
+   "url": "/nv/race/nevada-state-senate-district-17-22211",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 331352.0,
+   "totalExpenditures": 236054.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "James Settelmeyer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 318084.75,
+       "expenditures": 227397.91,
+       "status": "Won",
+       "url": "/nv/candidate/james-settelmeyer?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Curtis Cannon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13267.11,
+       "expenditures": 8656.42,
+       "status": "Lost",
+       "url": "/nv/candidate/curtis-cannon?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "James Settelmeyer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 318084.75,
+       "expenditures": 227397.91,
+       "status": "Advanced",
+       "url": "/nv/candidate/james-settelmeyer?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Curtis Cannon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13267.11,
+       "expenditures": 8656.42,
+       "status": "Advanced",
+       "url": "/nv/candidate/curtis-cannon?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "17"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-2-22205?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 2",
+   "url": "/nv/race/nevada-state-senate-district-2-22205",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 284516.0,
+   "totalExpenditures": 176352.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Moises Denis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 283010.71,
+       "expenditures": 176352.03,
+       "status": "Won",
+       "url": "/nv/candidate/moises-denis?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Calvin Border",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1504.8,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/calvin-border?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Moises Denis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 283010.71,
+       "expenditures": 176352.03,
+       "status": "Advanced",
+       "url": "/nv/candidate/moises-denis?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Calvin Border",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1504.8,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/calvin-border?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "2"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-20-22212?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 20",
+   "url": "/nv/race/nevada-state-senate-district-20-22212",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 976869.0,
+   "totalExpenditures": 883088.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Julie Pazina",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 904802.87,
+       "expenditures": 859444.61,
+       "status": "Lost",
+       "url": "/nv/candidate/julie-pazina?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Julie Pazina",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 904802.87,
+       "expenditures": 859444.61,
+       "status": "Advanced",
+       "url": "/nv/candidate/julie-pazina?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Byron Brooks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 72066.57,
+       "expenditures": 23643.07,
+       "status": "Lost",
+       "url": "/nv/candidate/byron-brooks?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "20"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-21-22213?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 21",
+   "url": "/nv/race/nevada-state-senate-district-21-22213",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 297581.0,
+   "totalExpenditures": 279699.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "James Ohrenschall",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 271721.7,
+       "expenditures": 255510.77,
+       "status": "Won",
+       "url": "/nv/candidate/james-ohrenschall?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "James Ohrenschall",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 271721.7,
+       "expenditures": 255510.77,
+       "status": "Advanced",
+       "url": "/nv/candidate/james-ohrenschall?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jay Craddock",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25739.7,
+       "expenditures": 24188.22,
+       "status": "Lost",
+       "url": "/nv/candidate/jay-craddock?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Christine Glazer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 120.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/christine-glazer?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "21"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-8-4958?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 8",
+   "url": "/nv/race/nevada-state-senate-district-8-4958",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 730734.0,
+   "totalExpenditures": 668404.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Marilyn Dondero Loop",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 479023.85,
+       "expenditures": 413907.4,
+       "status": "Won",
+       "url": "/nv/candidate/marilyn-dondero-loop?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Garrett Leduff",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/garrett-leduff?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Marilyn Dondero Loop",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 479023.85,
+       "expenditures": 413907.4,
+       "status": "Advanced",
+       "url": "/nv/candidate/marilyn-dondero-loop?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Elizabeth Helgelien",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33444.12,
+       "expenditures": 35441.59,
+       "status": "Lost",
+       "url": "/nv/candidate/elizabeth-helgelien?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Daniel Rodimer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 218266.14,
+       "expenditures": 219055.44,
+       "status": "Lost",
+       "url": "/nv/candidate/daniel-rodimer?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "8"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-9-5492?cycle=2018-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 9",
+   "url": "/nv/race/nevada-state-senate-district-9-5492",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 650847.0,
+   "totalExpenditures": 584940.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Melanie Scheible",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 484923.88,
+       "expenditures": 418186.14,
+       "status": "Won",
+       "url": "/nv/candidate/melanie-scheible?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tiffany Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 165540.84,
+       "expenditures": 166370.95,
+       "status": "Lost",
+       "url": "/nv/candidate/tiffany-jones?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 12, 2018",
+     "candidates": [
+      {
+       "name": "Melanie Scheible",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 484923.88,
+       "expenditures": 418186.14,
+       "status": "Advanced",
+       "url": "/nv/candidate/melanie-scheible?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Tiffany Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 165540.84,
+       "expenditures": 166370.95,
+       "status": "Advanced",
+       "url": "/nv/candidate/tiffany-jones?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Brandon West",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 382.64,
+       "expenditures": 382.64,
+       "status": "Lost",
+       "url": "/nv/candidate/brandon-west?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "9"
   }
  ]
 }

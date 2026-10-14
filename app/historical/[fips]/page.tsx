@@ -285,7 +285,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
             : "var(--app-bg)",
         }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pb-10">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pb-10">
           <div className="mb-5 -ml-2">
             <BackButton />
           </div>
@@ -370,7 +370,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         </div>
       </div>
 
-      <main className="max-w-7xl mx-auto px-4 pb-10 sm:px-6">
+      <main className="max-w-3xl mx-auto px-4 pb-10 sm:px-6">
 
         {/* County Map */}
         <section className="mb-10">

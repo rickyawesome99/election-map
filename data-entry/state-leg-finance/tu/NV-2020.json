@@ -1,580 +1,3091 @@
 {
  "state": "NV",
  "cycle": 2020,
- "fetched": "2026-10-11",
- "dataThrough": "06/30/2026",
+ "fetched": "2026-10-12",
+ "dataThrough": "12/31/2020",
  "races": [
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-1-45255?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 1",
+   "url": "/nv/race/nevada-state-assembly-district-1-45255",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 225810.0,
+   "totalExpenditures": 179172.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Daniele Monroe-Moreno",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 225809.96,
+       "expenditures": 179171.83,
+       "status": "Won",
+       "url": "/nv/candidate/daniele-monroe-moreno?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Daniele Monroe-Moreno",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 225809.96,
+       "expenditures": 179171.83,
+       "status": "Advanced",
+       "url": "/nv/candidate/daniele-monroe-moreno?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "1"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-10-45264?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 10",
+   "url": "/nv/race/nevada-state-assembly-district-10-45264",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 171834.0,
+   "totalExpenditures": 108620.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Rochelle Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 157803.57,
+       "expenditures": 95839.82,
+       "status": "Won",
+       "url": "/nv/candidate/rochelle-nguyen?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Christopher Hisgen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5645.0,
+       "expenditures": 4395.0,
+       "status": "Lost",
+       "url": "/nv/candidate/christopher-hisgen?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Rochelle Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 157803.57,
+       "expenditures": 95839.82,
+       "status": "Advanced",
+       "url": "/nv/candidate/rochelle-nguyen?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jesse \"Jake\" Holder",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8385.67,
+       "expenditures": 8385.67,
+       "status": "Lost",
+       "url": "/nv/candidate/jesse-jake-holder?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Christopher Hisgen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5645.0,
+       "expenditures": 4395.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/christopher-hisgen?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "10"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-11-45265?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 11",
+   "url": "/nv/race/nevada-state-assembly-district-11-45265",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 38093.0,
+   "totalExpenditures": 26418.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Beatrice Duran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 38093.29,
+       "expenditures": 26417.89,
+       "status": "Won",
+       "url": "/nv/candidate/beatrice-duran?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Eric Krattiger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/eric-krattiger?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Beatrice Duran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 38093.29,
+       "expenditures": 26417.89,
+       "status": "Advanced",
+       "url": "/nv/candidate/beatrice-duran?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Eric Krattiger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/eric-krattiger?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "11"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-12-45266?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 12",
+   "url": "/nv/race/nevada-state-assembly-district-12-45266",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1167.0,
+   "totalExpenditures": 438.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "John Gerhardt",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 1166.5,
+       "expenditures": 437.5,
+       "status": "Lost",
+       "url": "/nv/candidate/john-gerhardt?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "12"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-13-45267?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 13",
+   "url": "/nv/race/nevada-state-assembly-district-13-45267",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 256155.0,
+   "totalExpenditures": 188460.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Tom Roberts",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 256155.0,
+       "expenditures": 188460.17,
+       "status": "Won",
+       "url": "/nv/candidate/tom-roberts?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Tom Roberts",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 256155.0,
+       "expenditures": 188460.17,
+       "status": "Advanced",
+       "url": "/nv/candidate/tom-roberts?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-14-45268?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 14",
+   "url": "/nv/race/nevada-state-assembly-district-14-45268",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 3083.0,
+   "elections": [
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "James Fennell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 3083.12,
+       "status": "Lost",
+       "url": "/nv/candidate/james-fennell?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "14"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-15-45269?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 15",
+   "url": "/nv/race/nevada-state-assembly-district-15-45269",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 127250.0,
+   "totalExpenditures": 88928.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Howard Watts III",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 124524.67,
+       "expenditures": 86202.94,
+       "status": "Won",
+       "url": "/nv/candidate/howard-watts-iii?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Stan Vaughan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/stan-vaughan?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Howard Watts III",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 124524.67,
+       "expenditures": 86202.94,
+       "status": "Advanced",
+       "url": "/nv/candidate/howard-watts-iii?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Burke Andersson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2725.0,
+       "expenditures": 2725.0,
+       "status": "Lost",
+       "url": "/nv/candidate/burke-andersson?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Stan Vaughan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/stan-vaughan?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "15"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-16-45270?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 16",
+   "url": "/nv/race/nevada-state-assembly-district-16-45270",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 82904.0,
+   "totalExpenditures": 67684.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Cecelia Gonzalez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47449.82,
+       "expenditures": 32254.18,
+       "status": "Won",
+       "url": "/nv/candidate/cecelia-gonzalez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Cecelia Gonzalez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47449.82,
+       "expenditures": 32254.18,
+       "status": "Advanced",
+       "url": "/nv/candidate/cecelia-gonzalez?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Geoffrey Vanderpal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 35454.5,
+       "expenditures": 35429.5,
+       "status": "Lost",
+       "url": "/nv/candidate/geoffrey-vanderpal?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "16"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-17-45271?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 17",
+   "url": "/nv/race/nevada-state-assembly-district-17-45271",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 12945.0,
+   "totalExpenditures": 6258.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jack Polcyn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12944.68,
+       "expenditures": 6258.28,
+       "status": "Lost",
+       "url": "/nv/candidate/jack-polcyn?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Jack Polcyn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12944.68,
+       "expenditures": 6258.28,
+       "status": "Advanced",
+       "url": "/nv/candidate/jack-polcyn?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "17"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-18-45272?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 18",
+   "url": "/nv/race/nevada-state-assembly-district-18-45272",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 114507.0,
+   "totalExpenditures": 85078.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Venicia Considine",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 106006.97,
+       "expenditures": 69401.0,
+       "status": "Won",
+       "url": "/nv/candidate/venicia-considine?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Heather Florian",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/heather-florian?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Venicia Considine",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 106006.97,
+       "expenditures": 69401.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/venicia-considine?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Clarence Dortch",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/clarence-dortch?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Char Frost",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8500.0,
+       "expenditures": 15676.97,
+       "status": "Lost",
+       "url": "/nv/candidate/char-frost?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Heather Florian",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/heather-florian?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "18"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-19-45273?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 19",
+   "url": "/nv/race/nevada-state-assembly-district-19-45273",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 225162.0,
+   "totalExpenditures": 256420.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Annie Black-Guedry",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 189916.0,
+       "expenditures": 107224.33,
+       "status": "Won",
+       "url": "/nv/candidate/annie-black-guedry?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Annie Black-Guedry",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 189916.0,
+       "expenditures": 107224.33,
+       "status": "Advanced",
+       "url": "/nv/candidate/annie-black-guedry?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Christopher Edwards",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35246.0,
+       "expenditures": 149195.56,
+       "status": "Lost",
+       "url": "/nv/candidate/christopher-edwards?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "19"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-2-45256?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 2",
+   "url": "/nv/race/nevada-state-assembly-district-2-45256",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 437999.0,
+   "totalExpenditures": 427407.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Heidi Kasama",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 325840.93,
+       "expenditures": 320168.35,
+       "status": "Won",
+       "url": "/nv/candidate/heidi-kasama?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Garrett Leduff",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/garrett-leduff?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Eva Littman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25000.0,
+       "expenditures": 23972.34,
+       "status": "Lost",
+       "url": "/nv/candidate/eva-littman?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jennie Sherwood",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10003.57,
+       "expenditures": 9628.75,
+       "status": "Lost",
+       "url": "/nv/candidate/jennie-sherwood?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Heidi Kasama",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 325840.93,
+       "expenditures": 320168.35,
+       "status": "Advanced",
+       "url": "/nv/candidate/heidi-kasama?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Christian Morehead",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/christian-morehead?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Erik Sexton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 77154.98,
+       "expenditures": 73637.39,
+       "status": "Lost",
+       "url": "/nv/candidate/erik-sexton?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "2"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-20-45274?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 20",
+   "url": "/nv/race/nevada-state-assembly-district-20-45274",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 123365.0,
+   "totalExpenditures": 87614.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "David Orentlicher",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 85538.75,
+       "expenditures": 51740.05,
+       "status": "Won",
+       "url": "/nv/candidate/david-orentlicher?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "David Orentlicher",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 85538.75,
+       "expenditures": 51740.05,
+       "status": "Advanced",
+       "url": "/nv/candidate/david-orentlicher?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Zachary Logan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/zachary-logan?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Emily Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37825.79,
+       "expenditures": 35873.49,
+       "status": "Lost",
+       "url": "/nv/candidate/emily-smith?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Darren Welsh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/darren-welsh?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "20"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-21-45275?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 21",
+   "url": "/nv/race/nevada-state-assembly-district-21-45275",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 232166.0,
+   "totalExpenditures": 160167.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Elaine Marzola",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 175891.13,
+       "expenditures": 142048.75,
+       "status": "Won",
+       "url": "/nv/candidate/elaine-marzola?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Cherlyn Arrington",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35275.0,
+       "expenditures": 17118.59,
+       "status": "Lost",
+       "url": "/nv/candidate/cherlyn-arrington?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Elaine Marzola",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 175891.13,
+       "expenditures": 142048.75,
+       "status": "Advanced",
+       "url": "/nv/candidate/elaine-marzola?cycle=2020-election-cycle"
+      },
+      {
+       "name": "David Bagley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21000.0,
+       "expenditures": 1000.0,
+       "status": "Lost",
+       "url": "/nv/candidate/david-bagley?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Cherlyn Arrington",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35275.0,
+       "expenditures": 17118.59,
+       "status": "Advanced",
+       "url": "/nv/candidate/cherlyn-arrington?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "21"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-22-45276?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 22",
+   "url": "/nv/race/nevada-state-assembly-district-22-45276",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 98015.0,
+   "totalExpenditures": 51395.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Melissa Hardy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98015.0,
+       "expenditures": 51394.93,
+       "status": "Won",
+       "url": "/nv/candidate/melissa-hardy?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Melissa Hardy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98015.0,
+       "expenditures": 51394.93,
+       "status": "Advanced",
+       "url": "/nv/candidate/melissa-hardy?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "22"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-23-45277?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 23",
+   "url": "/nv/race/nevada-state-assembly-district-23-45277",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 128911.0,
+   "totalExpenditures": 115664.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Glen Leavitt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 128810.64,
+       "expenditures": 115564.11,
+       "status": "Won",
+       "url": "/nv/candidate/glen-leavitt?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Brent Foutz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 100.0,
+       "expenditures": 100.0,
+       "status": "Lost",
+       "url": "/nv/candidate/brent-foutz?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bill Hoge",
+       "party": "Independent American",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/bill-hoge?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Brent Foutz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 100.0,
+       "expenditures": 100.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/brent-foutz?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Glen Leavitt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 128810.64,
+       "expenditures": 115564.11,
+       "status": "Advanced",
+       "url": "/nv/candidate/glen-leavitt?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "23"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-24-45278?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 24",
+   "url": "/nv/race/nevada-state-assembly-district-24-45278",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 59350.0,
+   "totalExpenditures": 36552.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Sarah Peters",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59350.0,
+       "expenditures": 36551.99,
+       "status": "Won",
+       "url": "/nv/candidate/sarah-peters?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Sarah Peters",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59350.0,
+       "expenditures": 36551.99,
+       "status": "Advanced",
+       "url": "/nv/candidate/sarah-peters?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "24"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-25-45279?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "Nevada State Assembly District 25",
+   "url": "/nv/race/nevada-state-assembly-district-25-45279",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "house",
-   "district": null
+   "district": "25"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-26-45280?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 26",
+   "url": "/nv/race/nevada-state-assembly-district-26-45280",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 136577.0,
+   "totalExpenditures": 94112.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Lisa Krasner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 133595.2,
+       "expenditures": 92580.22,
+       "status": "Won",
+       "url": "/nv/candidate/lisa-krasner?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Vance Alm",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2981.87,
+       "expenditures": 1531.87,
+       "status": "Lost",
+       "url": "/nv/candidate/vance-alm?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Vance Alm",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2981.87,
+       "expenditures": 1531.87,
+       "status": "Advanced",
+       "url": "/nv/candidate/vance-alm?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Lisa Krasner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 133595.2,
+       "expenditures": 92580.22,
+       "status": "Advanced",
+       "url": "/nv/candidate/lisa-krasner?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Dale Conner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/dale-conner?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "26"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-27-45281?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 27",
+   "url": "/nv/race/nevada-state-assembly-district-27-45281",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 19155.0,
+   "totalExpenditures": 10561.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Barb Hawn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19154.99,
+       "expenditures": 10561.44,
+       "status": "Lost",
+       "url": "/nv/candidate/barb-hawn?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Barb Hawn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19154.99,
+       "expenditures": 10561.44,
+       "status": "Advanced",
+       "url": "/nv/candidate/barb-hawn?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "27"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-28-45282?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 28",
+   "url": "/nv/race/nevada-state-assembly-district-28-45282",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 140441.0,
+   "totalExpenditures": 125948.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Edgar Flores",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 140441.21,
+       "expenditures": 125947.66,
+       "status": "Won",
+       "url": "/nv/candidate/edgar-flores?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Edgar Flores",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 140441.21,
+       "expenditures": 125947.66,
+       "status": "Advanced",
+       "url": "/nv/candidate/edgar-flores?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "28"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-29-45283?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 29",
+   "url": "/nv/race/nevada-state-assembly-district-29-45283",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 451468.0,
+   "totalExpenditures": 404769.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Lesley Cohen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 205980.71,
+       "expenditures": 155942.61,
+       "status": "Won",
+       "url": "/nv/candidate/lesley-cohen?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Steven Delisle",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 245287.58,
+       "expenditures": 248626.67,
+       "status": "Lost",
+       "url": "/nv/candidate/steven-delisle?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Lesley Cohen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 205980.71,
+       "expenditures": 155942.61,
+       "status": "Advanced",
+       "url": "/nv/candidate/lesley-cohen?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Bruce James-Newman",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 200.0,
+       "expenditures": 200.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/bruce-james-newman?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Steven Delisle",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 245287.58,
+       "expenditures": 248626.67,
+       "status": "Advanced",
+       "url": "/nv/candidate/steven-delisle?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Troy Archer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/troy-archer?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "29"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-3-45257?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 3",
+   "url": "/nv/race/nevada-state-assembly-district-3-45257",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 50375.0,
+   "totalExpenditures": 58750.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Selena Torres",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 50375.35,
+       "expenditures": 58750.3,
+       "status": "Won",
+       "url": "/nv/candidate/selena-torres?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Selena Torres",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 50375.35,
+       "expenditures": 58750.3,
+       "status": "Advanced",
+       "url": "/nv/candidate/selena-torres?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "3"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-30-45284?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 30",
+   "url": "/nv/race/nevada-state-assembly-district-30-45284",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 106450.0,
+   "totalExpenditures": 74560.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Natha Anderson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 106449.59,
+       "expenditures": 74559.58,
+       "status": "Won",
+       "url": "/nv/candidate/natha-anderson?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Charlene Young",
+       "party": "Independent American",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/charlene-young?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Natha Anderson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 106449.59,
+       "expenditures": 74559.58,
+       "status": "Advanced",
+       "url": "/nv/candidate/natha-anderson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "30"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-31-45285?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 31",
+   "url": "/nv/race/nevada-state-assembly-district-31-45285",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 292279.0,
+   "totalExpenditures": 366819.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jill Dickman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 116737.97,
+       "expenditures": 195119.52,
+       "status": "Won",
+       "url": "/nv/candidate/jill-dickman?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Richard Daly",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 156690.0,
+       "expenditures": 153106.51,
+       "status": "Lost",
+       "url": "/nv/candidate/richard-daly?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Richard Daly",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 156690.0,
+       "expenditures": 153106.51,
+       "status": "Advanced",
+       "url": "/nv/candidate/richard-daly?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Jill Dickman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 116737.97,
+       "expenditures": 195119.52,
+       "status": "Advanced",
+       "url": "/nv/candidate/jill-dickman?cycle=2020-election-cycle"
+      },
+      {
+       "name": "David Espinosa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18851.38,
+       "expenditures": 18592.92,
+       "status": "Lost",
+       "url": "/nv/candidate/david-espinosa?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "31"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-32-45286?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 32",
+   "url": "/nv/race/nevada-state-assembly-district-32-45286",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 66250.0,
+   "totalExpenditures": 38631.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Alexis Hansen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66250.0,
+       "expenditures": 38630.98,
+       "status": "Won",
+       "url": "/nv/candidate/alexis-hansen?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Alexis Hansen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66250.0,
+       "expenditures": 38630.98,
+       "status": "Advanced",
+       "url": "/nv/candidate/alexis-hansen?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "32"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-33-45287?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 33",
+   "url": "/nv/race/nevada-state-assembly-district-33-45287",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 67745.0,
+   "totalExpenditures": 38221.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "John Ellison",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 67745.0,
+       "expenditures": 38220.64,
+       "status": "Won",
+       "url": "/nv/candidate/john-ellison?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "John Ellison",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 67745.0,
+       "expenditures": 38220.64,
+       "status": "Advanced",
+       "url": "/nv/candidate/john-ellison?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "33"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-34-45288?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 34",
+   "url": "/nv/race/nevada-state-assembly-district-34-45288",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 98944.0,
+   "totalExpenditures": 47621.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Shannon Bilbray-Axelrod",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 98944.47,
+       "expenditures": 47620.7,
+       "status": "Won",
+       "url": "/nv/candidate/shannon-bilbray-axelrod?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jay Carlson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/jay-carlson?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Shannon Bilbray-Axelrod",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 98944.47,
+       "expenditures": 47620.7,
+       "status": "Advanced",
+       "url": "/nv/candidate/shannon-bilbray-axelrod?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Jay Carlson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/jay-carlson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "34"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-35-45289?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 35",
+   "url": "/nv/race/nevada-state-assembly-district-35-45289",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 162561.0,
+   "totalExpenditures": 102546.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Michelle Gorelow",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 155234.75,
+       "expenditures": 92133.96,
+       "status": "Won",
+       "url": "/nv/candidate/michelle-gorelow?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jay Calhoun",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1000.0,
+       "expenditures": 254.45,
+       "status": "Lost",
+       "url": "/nv/candidate/jay-calhoun?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Felipe Paleracio",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 5826.06,
+       "expenditures": 10157.12,
+       "status": "Withdrew",
+       "url": "/nv/candidate/felipe-paleracio?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Michelle Gorelow",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 155234.75,
+       "expenditures": 92133.96,
+       "status": "Advanced",
+       "url": "/nv/candidate/michelle-gorelow?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Jay Calhoun",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1000.0,
+       "expenditures": 254.45,
+       "status": "Advanced",
+       "url": "/nv/candidate/jay-calhoun?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Claudia Kintigh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 500.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/claudia-kintigh?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "35"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-36-45290?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 36",
+   "url": "/nv/race/nevada-state-assembly-district-36-45290",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 154715.0,
+   "totalExpenditures": 130072.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Gregory Hafen II",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 154715.48,
+       "expenditures": 130072.4,
+       "status": "Won",
+       "url": "/nv/candidate/gregory-hafen-ii?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Gregory Hafen II",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 154715.48,
+       "expenditures": 130072.4,
+       "status": "Advanced",
+       "url": "/nv/candidate/gregory-hafen-ii?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "36"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-37-45291?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 37",
+   "url": "/nv/race/nevada-state-assembly-district-37-45291",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 718403.0,
+   "totalExpenditures": 604126.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Andrew Matthews",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 443673.32,
+       "expenditures": 392188.63,
+       "status": "Won",
+       "url": "/nv/candidate/andrew-matthews?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Shea Backus",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 252586.26,
+       "expenditures": 190568.28,
+       "status": "Lost",
+       "url": "/nv/candidate/shea-backus?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Shea Backus",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 252586.26,
+       "expenditures": 190568.28,
+       "status": "Advanced",
+       "url": "/nv/candidate/shea-backus?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Andrew Matthews",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 443673.32,
+       "expenditures": 392188.63,
+       "status": "Advanced",
+       "url": "/nv/candidate/andrew-matthews?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jacob Deaville",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22143.1,
+       "expenditures": 21368.77,
+       "status": "Lost",
+       "url": "/nv/candidate/jacob-deaville?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "37"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-38-45292?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 38",
+   "url": "/nv/race/nevada-state-assembly-district-38-45292",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 168075.0,
+   "totalExpenditures": 140819.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Robin Titus",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 167575.0,
+       "expenditures": 140561.74,
+       "status": "Won",
+       "url": "/nv/candidate/robin-titus?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Robin Titus",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 167575.0,
+       "expenditures": 140561.74,
+       "status": "Advanced",
+       "url": "/nv/candidate/robin-titus?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jeff Ulrich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 500.0,
+       "expenditures": 257.7,
+       "status": "Lost",
+       "url": "/nv/candidate/jeff-ulrich?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "38"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-39-45293?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 39",
+   "url": "/nv/race/nevada-state-assembly-district-39-45293",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 109243.0,
+   "totalExpenditures": 93963.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jim Wheeler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 102304.86,
+       "expenditures": 88347.32,
+       "status": "Won",
+       "url": "/nv/candidate/jim-wheeler?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Deborah Chang",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6937.76,
+       "expenditures": 5615.49,
+       "status": "Lost",
+       "url": "/nv/candidate/deborah-chang?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Deborah Chang",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6937.76,
+       "expenditures": 5615.49,
+       "status": "Advanced",
+       "url": "/nv/candidate/deborah-chang?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Jim Wheeler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 102304.86,
+       "expenditures": 88347.32,
+       "status": "Advanced",
+       "url": "/nv/candidate/jim-wheeler?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "39"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-4-45258?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 4",
+   "url": "/nv/race/nevada-state-assembly-district-4-45258",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 443287.0,
+   "totalExpenditures": 486991.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Richard Mcarthur",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 53300.0,
+       "expenditures": 61304.68,
+       "status": "Won",
+       "url": "/nv/candidate/richard-mcarthur?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Connie Munk",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 206702.32,
+       "expenditures": 242207.44,
+       "status": "Lost",
+       "url": "/nv/candidate/connie-munk?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Connie Munk",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 206702.32,
+       "expenditures": 242207.44,
+       "status": "Advanced",
+       "url": "/nv/candidate/connie-munk?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Richard Mcarthur",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 53300.0,
+       "expenditures": 61304.68,
+       "status": "Advanced",
+       "url": "/nv/candidate/richard-mcarthur?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Donnie Gibson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 183284.83,
+       "expenditures": 183478.41,
+       "status": "Lost",
+       "url": "/nv/candidate/donnie-gibson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "4"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-40-45294?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 40",
+   "url": "/nv/race/nevada-state-assembly-district-40-45294",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 138251.0,
+   "totalExpenditures": 158902.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Philip O'Neill",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 105160.0,
+       "expenditures": 66529.21,
+       "status": "Won",
+       "url": "/nv/candidate/philip-oneill?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Derek Morgan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2064.0,
+       "expenditures": 1870.43,
+       "status": "Lost",
+       "url": "/nv/candidate/derek-morgan?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Philip O'Neill",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 105160.0,
+       "expenditures": 66529.21,
+       "status": "Advanced",
+       "url": "/nv/candidate/philip-oneill?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Alvin Kramer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11850.0,
+       "expenditures": 73988.87,
+       "status": "Withdrew",
+       "url": "/nv/candidate/alvin-kramer?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Day Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19176.88,
+       "expenditures": 16513.3,
+       "status": "Lost",
+       "url": "/nv/candidate/day-williams?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "40"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-41-45295?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 41",
+   "url": "/nv/race/nevada-state-assembly-district-41-45295",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 175812.0,
+   "totalExpenditures": 161850.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Sandra Jauregui",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 172012.0,
+       "expenditures": 161146.71,
+       "status": "Won",
+       "url": "/nv/candidate/sandra-jauregui?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Erika Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3800.0,
+       "expenditures": 703.51,
+       "status": "Lost",
+       "url": "/nv/candidate/erika-smith?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Victoria Kay DaCosta",
+       "party": "Independent American",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/victoria-kay-dacosta?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Sandra Jauregui",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 172012.0,
+       "expenditures": 161146.71,
+       "status": "Advanced",
+       "url": "/nv/candidate/sandra-jauregui?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Erika Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3800.0,
+       "expenditures": 703.51,
+       "status": "Advanced",
+       "url": "/nv/candidate/erika-smith?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "41"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-42-45296?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 42",
+   "url": "/nv/race/nevada-state-assembly-district-42-45296",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 213419.0,
+   "totalExpenditures": 154196.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Alexander Assefa",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 201918.56,
+       "expenditures": 141798.95,
+       "status": "Won",
+       "url": "/nv/candidate/alexander-assefa?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Sayed Zaidi",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 11500.0,
+       "expenditures": 12397.31,
+       "status": "Lost",
+       "url": "/nv/candidate/sayed-zaidi?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Alexander Assefa",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 201918.56,
+       "expenditures": 141798.95,
+       "status": "Advanced",
+       "url": "/nv/candidate/alexander-assefa?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "42"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-5-45259?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 5",
+   "url": "/nv/race/nevada-state-assembly-district-5-45259",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 125465.0,
+   "totalExpenditures": 101165.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Brittney Miller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 103708.46,
+       "expenditures": 88680.4,
+       "status": "Won",
+       "url": "/nv/candidate/brittney-miller?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Mack Miller",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21756.38,
+       "expenditures": 12484.99,
+       "status": "Lost",
+       "url": "/nv/candidate/mack-miller?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Brittney Miller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 103708.46,
+       "expenditures": 88680.4,
+       "status": "Advanced",
+       "url": "/nv/candidate/brittney-miller?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Mack Miller",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21756.38,
+       "expenditures": 12484.99,
+       "status": "Advanced",
+       "url": "/nv/candidate/mack-miller?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "5"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-6-45260?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 6",
+   "url": "/nv/race/nevada-state-assembly-district-6-45260",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 118608.0,
+   "totalExpenditures": 80440.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Shondra Summers-Armstrong",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 93295.92,
+       "expenditures": 57224.51,
+       "status": "Won",
+       "url": "/nv/candidate/shondra-summers-armstrong?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Katherine Duncan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23787.4,
+       "expenditures": 21784.08,
+       "status": "Lost",
+       "url": "/nv/candidate/katherine-duncan?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Shondra Summers-Armstrong",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 93295.92,
+       "expenditures": 57224.51,
+       "status": "Advanced",
+       "url": "/nv/candidate/shondra-summers-armstrong?cycle=2020-election-cycle"
+      },
+      {
+       "name": "William Robinson II",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1525.0,
+       "expenditures": 1431.84,
+       "status": "Lost",
+       "url": "/nv/candidate/william-robinson-ii?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Katherine Duncan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23787.4,
+       "expenditures": 21784.08,
+       "status": "Advanced",
+       "url": "/nv/candidate/katherine-duncan?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Geraldine Lewis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/geraldine-lewis?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "6"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-7-45261?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 7",
+   "url": "/nv/race/nevada-state-assembly-district-7-45261",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 146229.0,
+   "totalExpenditures": 111050.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Cameron Miller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 138997.14,
+       "expenditures": 102934.0,
+       "status": "Won",
+       "url": "/nv/candidate/cameron-miller?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Anthony Palmer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7231.82,
+       "expenditures": 8116.28,
+       "status": "Lost",
+       "url": "/nv/candidate/anthony-palmer?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Cameron Miller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 138997.14,
+       "expenditures": 102934.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/cameron-miller?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Anthony Palmer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7231.82,
+       "expenditures": 8116.28,
+       "status": "Advanced",
+       "url": "/nv/candidate/anthony-palmer?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "7"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-8-45262?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 8",
+   "url": "/nv/race/nevada-state-assembly-district-8-45262",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 704927.0,
+   "totalExpenditures": 503595.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jason Frierson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 696603.61,
+       "expenditures": 495438.53,
+       "status": "Won",
+       "url": "/nv/candidate/jason-frierson?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Eddie Facey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8323.56,
+       "expenditures": 8156.35,
+       "status": "Lost",
+       "url": "/nv/candidate/eddie-facey?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Jason Frierson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 696603.61,
+       "expenditures": 495438.53,
+       "status": "Advanced",
+       "url": "/nv/candidate/jason-frierson?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Eddie Facey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8323.56,
+       "expenditures": 8156.35,
+       "status": "Advanced",
+       "url": "/nv/candidate/eddie-facey?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "8"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-9-45263?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 9",
+   "url": "/nv/race/nevada-state-assembly-district-9-45263",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 280079.0,
+   "totalExpenditures": 220193.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Steve Yeager",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 277753.57,
+       "expenditures": 216567.27,
+       "status": "Won",
+       "url": "/nv/candidate/steve-yeager?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Barbara Altman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2325.0,
+       "expenditures": 3625.58,
+       "status": "Lost",
+       "url": "/nv/candidate/barbara-altman?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Steve Yeager",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 277753.57,
+       "expenditures": 216567.27,
+       "status": "Advanced",
+       "url": "/nv/candidate/steve-yeager?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Barbara Altman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2325.0,
+       "expenditures": 3625.58,
+       "status": "Advanced",
+       "url": "/nv/candidate/barbara-altman?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "9"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-1-45297?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 1",
+   "url": "/nv/race/nevada-state-senate-district-1-45297",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 196071.0,
+   "totalExpenditures": 133470.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Patricia Spearman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 196071.33,
+       "expenditures": 133469.66,
+       "status": "Won",
+       "url": "/nv/candidate/patricia-spearman?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Patricia Spearman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 196071.33,
+       "expenditures": 133469.66,
+       "status": "Advanced",
+       "url": "/nv/candidate/patricia-spearman?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "1"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-11-45303?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 11",
+   "url": "/nv/race/nevada-state-senate-district-11-45303",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 238907.0,
+   "totalExpenditures": 230523.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Dallas Harris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 168542.21,
+       "expenditures": 163791.65,
+       "status": "Won",
+       "url": "/nv/candidate/dallas-harris?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joshua Dowden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 63365.0,
+       "expenditures": 59646.65,
+       "status": "Lost",
+       "url": "/nv/candidate/joshua-dowden?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Dallas Harris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 168542.21,
+       "expenditures": 163791.65,
+       "status": "Advanced",
+       "url": "/nv/candidate/dallas-harris?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Joshua Dowden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 63365.0,
+       "expenditures": 59646.65,
+       "status": "Advanced",
+       "url": "/nv/candidate/joshua-dowden?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Edgar Miron Galindo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7000.0,
+       "expenditures": 7085.0,
+       "status": "Lost",
+       "url": "/nv/candidate/edgar-miron-galindo?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "11"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-15-45304?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 15",
+   "url": "/nv/race/nevada-state-senate-district-15-45304",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1262778.0,
+   "totalExpenditures": 1291125.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Heidi Gansert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 890333.82,
+       "expenditures": 923949.4,
+       "status": "Won",
+       "url": "/nv/candidate/heidi-gansert?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Wendy Jauregui-Jackins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 372344.58,
+       "expenditures": 367075.67,
+       "status": "Lost",
+       "url": "/nv/candidate/wendy-jauregui-jackins?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Catana Barnes",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 100.0,
+       "expenditures": 100.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/catana-barnes?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Wendy Jauregui-Jackins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 372344.58,
+       "expenditures": 367075.67,
+       "status": "Advanced",
+       "url": "/nv/candidate/wendy-jauregui-jackins?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Heidi Gansert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 890333.82,
+       "expenditures": 923949.4,
+       "status": "Advanced",
+       "url": "/nv/candidate/heidi-gansert?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "15"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-18-45305?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 18",
+   "url": "/nv/race/nevada-state-senate-district-18-45305",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 499418.0,
+   "totalExpenditures": 404041.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Scott Hammond",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 405035.0,
+       "expenditures": 314185.87,
+       "status": "Won",
+       "url": "/nv/candidate/scott-hammond?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Liz Becker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 94240.58,
+       "expenditures": 88354.32,
+       "status": "Lost",
+       "url": "/nv/candidate/liz-becker?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Liz Becker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 94240.58,
+       "expenditures": 88354.32,
+       "status": "Advanced",
+       "url": "/nv/candidate/liz-becker?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ronald Bilodeau",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 142.49,
+       "expenditures": 1500.44,
+       "status": "Lost",
+       "url": "/nv/candidate/ronald-bilodeau?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Scott Hammond",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 405035.0,
+       "expenditures": 314185.87,
+       "status": "Advanced",
+       "url": "/nv/candidate/scott-hammond?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "18"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-19-45306?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 19",
+   "url": "/nv/race/nevada-state-senate-district-19-45306",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 87550.0,
+   "totalExpenditures": 84662.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Pete Goicoechea",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 87550.0,
+       "expenditures": 84662.38,
+       "status": "Won",
+       "url": "/nv/candidate/pete-goicoechea?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Pete Goicoechea",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 87550.0,
+       "expenditures": 84662.38,
+       "status": "Advanced",
+       "url": "/nv/candidate/pete-goicoechea?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "19"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-3-45298?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 3",
+   "url": "/nv/race/nevada-state-senate-district-3-45298",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 188717.0,
+   "totalExpenditures": 234759.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Chris Brooks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 188717.14,
+       "expenditures": 234758.78,
+       "status": "Won",
+       "url": "/nv/candidate/chris-brooks?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Chris Brooks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 188717.14,
+       "expenditures": 234758.78,
+       "status": "Advanced",
+       "url": "/nv/candidate/chris-brooks?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "3"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-4-45299?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 4",
+   "url": "/nv/race/nevada-state-senate-district-4-45299",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 165509.0,
+   "totalExpenditures": 122257.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Dina Neal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 164958.57,
+       "expenditures": 121382.46,
+       "status": "Won",
+       "url": "/nv/candidate/dina-neal?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Esper Hickman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 550.0,
+       "expenditures": 874.43,
+       "status": "Lost",
+       "url": "/nv/candidate/esper-hickman?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Dina Neal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 164958.57,
+       "expenditures": 121382.46,
+       "status": "Advanced",
+       "url": "/nv/candidate/dina-neal?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Esper Hickman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 550.0,
+       "expenditures": 874.43,
+       "status": "Advanced",
+       "url": "/nv/candidate/esper-hickman?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "4"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-5-45300?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 5",
+   "url": "/nv/race/nevada-state-senate-district-5-45300",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 490279.0,
+   "totalExpenditures": 386437.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Carrie Buck",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 490279.0,
+       "expenditures": 386436.92,
+       "status": "Won",
+       "url": "/nv/candidate/carrie-buck?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Carrie Buck",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 490279.0,
+       "expenditures": 386436.92,
+       "status": "Advanced",
+       "url": "/nv/candidate/carrie-buck?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "5"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-6-45301?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 6",
+   "url": "/nv/race/nevada-state-senate-district-6-45301",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1957957.0,
+   "totalExpenditures": 1957860.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Nicole Cannizzaro",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1068163.02,
+       "expenditures": 1182729.08,
+       "status": "Won",
+       "url": "/nv/candidate/nicole-cannizzaro?cycle=2020-election-cycle"
+      },
+      {
+       "name": "April Becker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 889794.45,
+       "expenditures": 775130.86,
+       "status": "Lost",
+       "url": "/nv/candidate/april-becker?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Nicole Cannizzaro",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1068163.02,
+       "expenditures": 1182729.08,
+       "status": "Advanced",
+       "url": "/nv/candidate/nicole-cannizzaro?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "April Becker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 889794.45,
+       "expenditures": 775130.86,
+       "status": "Advanced",
+       "url": "/nv/candidate/april-becker?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "6"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-7-45302?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 7",
+   "url": "/nv/race/nevada-state-senate-district-7-45302",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 382012.0,
+   "totalExpenditures": 440589.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Roberta Lange",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 227086.79,
+       "expenditures": 177821.03,
+       "status": "Won",
+       "url": "/nv/candidate/roberta-lange?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 9, 2020",
+     "candidates": [
+      {
+       "name": "Roberta Lange",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 227086.79,
+       "expenditures": 177821.03,
+       "status": "Advanced",
+       "url": "/nv/candidate/roberta-lange?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Richard Carrillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37000.0,
+       "expenditures": 86287.81,
+       "status": "Lost",
+       "url": "/nv/candidate/richard-carrillo?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ellen Spiegel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 117925.24,
+       "expenditures": 176479.73,
+       "status": "Lost",
+       "url": "/nv/candidate/ellen-spiegel?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "7"
   }
  ]
 }

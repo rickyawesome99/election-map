@@ -8,13 +8,16 @@ import { contest2026 } from "@/lib/stateLegAtlas";
 import { buildPresByEraAuditRows } from "@/lib/stateLegPresByEraAudit";
 import { STATE_LEG_FORECAST_CONSTANTS as SC, projectAllChambers } from "@/lib/stateLegForecast";
 import { STATE_LEG_VALIDATION } from "@/data/stateLegValidation";
+import { STATE_LEG_INDEPENDENT_VALIDATION as IV } from "@/data/stateLegIndependentValidation";
+import { STATE_LEG_TYPE_WEIGHT_SWEEP as SW } from "@/data/stateLegTypeWeightSweep";
 import { getNationalEnvironment } from "@/lib/tplCompute";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, N, P, Section, type ConstantRow } from "./kit";
 
 // Every STATE_LEG_FORECAST_CONSTANTS key and where it is documented on this tab.
 const DOCUMENTED_IN = {
-  TYPE_WEIGHTS: "state-leg#projection", INCUMBENCY_PTS: "state-leg#projection", SIGMA: "state-leg#projection", STATE_SHOCK: "state-leg#projection",
+  TYPE_WEIGHTS: "state-leg#projection", RECENT_SEAT_BOOST: "state-leg#projection", INCUMBENCY_PTS: "state-leg#projection", SIGMA: "state-leg#projection", STATE_SHOCK: "state-leg#projection",
   MIN_COVERAGE: "state-leg#projection", SIMS: "state-leg#projection",
+  IND_RECORD_SHARE: "state-leg#projection", IND_PRIOR_PTS: "state-leg#projection", IND_SHRINK_K: "state-leg#projection", IND_SIGMA: "state-leg#projection",
 } satisfies Record<keyof typeof SC, string>;
 void DOCUMENTED_IN;
 
@@ -164,22 +167,57 @@ export default function StateLegMethodology() {
             "           margin − β*(state) × E(year)                                           presidential rows on today's lines (2016, 2020, 2024)",
             "relocate = Σ share_i × margin_i / coverage  +  [pres(today) − Σ share_i × pres_i / coverage]   a race on a superseded map, through the crosswalk",
             "lean     = Σ_years YEAR_WEIGHT × coverage × [ Σ_types TYPE_WEIGHT × mean NM ] / Σ YEAR_WEIGHT × coverage     two-pass Huber on seat rows",
+            "           in the latest year with a seat row, that row's TYPE_WEIGHT × RECENT_SEAT_BOOST (L 0.2 → 0.6: half of that year's lean)",
           ]} note="share_i is the population share of today's district that was in old district i (dataset C); coverage is the share covered by contested old districts, and a row below MIN_COVERAGE is dropped. The presidential delta is taken in the presidential year nearest the race." />
         </Block>
         <Block label="Forward">
           <Formula lines={[
             "margin = lean + β*(state) × E(2026) + INCUMBENCY_PTS × incumbent sign      incumbent sign from the 2026 field's marked incumbent",
             "σ²     = SIGMA² + STATE_SHOCK² + (β* × σ_E)²        P(D) = Φ(−margin / σ)",
-            "chamber: 5,000 draws of a shared national shock N(0, σ_E) × β*, a shared chamber shock N(0, STATE_SHOCK), and N(0, SIGMA) per seat; seats not up hold their member; a field with one major party is decided",
-          ]} note="Multi-member districts draw each seat on the district's margin. The chamber shock is what makes a chamber's seats move together beyond the national swing: a state-wide miss (a governor's race on the same ballot, a state issue, a redistricting the lean has not caught up with) lands on every seat at once, so chamber ranges are wider than independent seats would give. A seat with no major-party field (Nebraska's nonpartisan ballot, an empty list) has no projection, and a chamber whose unprojected seats could decide control reports no control odds." />
+            "chamber: 5,000 draws of a shared national shock N(0, σ_E) × β*, a shared chamber shock N(0, STATE_SHOCK), and N(0, SIGMA) per seat; seats not up hold their member; a field with one major party is decided unless a credible independent is on it (below)",
+            "decided seats: in a multi-member district a party keeps max(0, seats − the other party's nominees); a post (Idaho's A/B, Washington's 1/2) with one party's nominee is that party's; only the remaining seats are drawn",
+          ]} note="Multi-member districts draw each seat left after the decided ones on the district's margin. A nominee on both major lines (Oregon and Vermont cross-nominate, New York fuses) is one person, in the party they sit for — or, for a newcomer, the party holding the seat — and a past race with one person on both lines is no D-vs-R contest and contributes no seat row. The chamber shock is what makes a chamber's seats move together beyond the national swing: a state-wide miss (a governor's race on the same ballot, a state issue, a redistricting the lean has not caught up with) lands on every seat at once, so chamber ranges are wider than independent seats would give. A seat with no major-party field (Nebraska's nonpartisan ballot, an empty list) has no projection, and a chamber whose unprojected seats could decide control reports no control odds." />
           <Constants rows={[
-            { name: "TYPE_WEIGHTS", value: `P ${SC.TYPE_WEIGHTS.P} / L ${SC.TYPE_WEIGHTS.L}`, meaning: "Presidential rows against the seat's own races, renormalised over the types present in a year — the District TPL's President/House ratio.", basis: "designed" },
-            { name: "INCUMBENCY_PTS", value: SC.INCUMBENCY_PTS, meaning: "Points a sitting state legislator is worth. The holdout fits 2.4 (2024) and 4.0 (2022); set at their rounded mean.", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
-            { name: "SIGMA", value: SC.SIGMA, meaning: "Seat-level noise beyond the national and chamber shocks: the holdout residual spread after the chamber shock is taken out (7.0 in 2024, 7.2 in 2022; the total spread is 8.0 and 8.2, robust 5.5–6.2, so the tails are heavy and the full spread is kept).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
-            { name: "STATE_SHOCK", value: SC.STATE_SHOCK, meaning: "Chamber-level shock shared by every seat of a chamber in a year: the spread of chamber-mean residuals less what independent seat noise alone would put there (method of moments over chambers with 10+ contested seats; 3.8 in both 2024 and 2022).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "TYPE_WEIGHTS", value: `P ${SC.TYPE_WEIGHTS.P} / L ${SC.TYPE_WEIGHTS.L}`, meaning: "Presidential rows against the seat's own races, renormalised over the types present in a year — the District TPL's President/House ratio. The sweep below finds the holdout flat between a 0.25 and a 0.40 seat share once the latest race is boosted, so the designed ratio is kept.", basis: "designed" },
+            { name: "RECENT_SEAT_BOOST", value: `×${SC.RECENT_SEAT_BOOST}`, meaning: "The seat row's type weight in the latest year that has one, so the seat's most recent race carries half of that year's lean. State Navigate's emphasis on the last legislative result, tested here: MAE after incumbency 5.85 → 5.74 (2022) and 5.39 → 5.18 (2024), better than any uniform reweighting, flat from ×2 to ×3, worse by ×5.", basis: "calibrated", source: "scripts/stateLegBacktest.ts --sweep" },
+            { name: "INCUMBENCY_PTS", value: SC.INCUMBENCY_PTS, meaning: "Points a sitting state legislator is worth. The holdout fits 3.6 (2022) and 1.8 (2024); set at their rounded mean.", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "SIGMA", value: SC.SIGMA, meaning: "Seat-level noise beyond the national and chamber shocks: the holdout residual spread after the chamber shock is taken out (7.2 in 2022, 6.9 in 2024; the total spread is 8.0 and 7.7, robust 6.2 and 5.2, so the tails are heavy and the full spread is kept).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "STATE_SHOCK", value: SC.STATE_SHOCK, meaning: "Chamber-level shock shared by every seat of a chamber in a year: the spread of chamber-mean residuals less what independent seat noise alone would put there (method of moments over chambers with 10+ contested seats; 3.3 in 2022 and 3.5 in 2024).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
             { name: "MIN_COVERAGE", value: SC.MIN_COVERAGE, meaning: "A relocated row needs contested old districts covering this share of today's population.", basis: "designed" },
             { name: "SIMS", value: SC.SIMS, meaning: "Draws per chamber.", basis: "fixed" },
           ] satisfies ConstantRow[]} />
+        </Block>
+        <Block label="Independents">
+          {(() => {
+            const all = projectAllChambers();
+            const modeled = all.flatMap((c) => c.districts.filter((d) => d.indep).map((d) => ({ c, d })));
+            const outright = all.reduce((s, c) => s + c.decided.oth, 0);
+            return <P>A ballot with one major party is usually decided, but not where an established independent is the real opponent. <N>{modeled.length}</N> such races are modeled this cycle ({modeled.filter((x) => x.d.indep!.basis === "incumbent").length} sitting independents, {modeled.filter((x) => x.d.indep!.basis === "record").length} with a strong last race, {modeled.filter((x) => x.d.indep!.basis === "endorsed").length} backed by a major party), and <N>{outright}</N> seats have no major party on the ballot and go to an independent outright. Nebraska&apos;s nonpartisan ballot stays unprojected.</P>;
+          })()}
+          <Formula lines={[
+            "credible   = sitting  |  ≥ IND_RECORD_SHARE in their last head-to-head in the seat  |  backed by the absent party (data/stateLegIndependents.ts)",
+            "advantage  = ± (lean + β*(state) × E(2026))  +  INCUMBENCY_PTS × (inc_I − inc_opp)  +  personal       sign: the independent takes the absent party's place",
+            "personal   = (Σ_last two residual + IND_SHRINK_K × prior) / (n + IND_SHRINK_K)      prior = IND_PRIOR_PTS, or 0 for a backed newcomer",
+            "residual   = past advantage − [± (lean + β* × E(year)) + INCUMBENCY_PTS × (inc_I − inc_opp)]      head-to-heads against the same party, on today's lines",
+            "P(I)       = Φ(advantage / √(σ² + IND_SIGMA²))",
+          ]} note="A party that backs an independent over its own nominee (Alaska's Senate S, where the Democrats list Bryce Edgmon above their nominee and ranked choice transfers the nominee's votes) puts the independent in its place. An appointed incumbent counts as sitting but gets no incumbency, the federal forecast's rule. In a multi-member district where the party fields a nominee for every seat (Vermont's Chittenden-15), the independent is racing that party's last nominee inside one electorate: lean and environment drop out, only incumbency and noise remain, and the other seats go to the party. Independents on a ballot with both major parties and no backing are not modeled." />
+          <Constants rows={[
+            { name: "IND_RECORD_SHARE", value: `${SC.IND_RECORD_SHARE}%`, meaning: "A non-incumbent independent is modeled when they took this share of their last head-to-head in the seat; below it, a perennial candidate.", basis: "designed" },
+            { name: "IND_PRIOR_PTS", value: SC.IND_PRIOR_PTS, meaning: `How far a sitting or proven independent runs ahead of a generic nominee of the party they stand in for, before their own record. The holdout's median gap is ${IV.medianGap}; the mean is pulled higher by Alyse Galvin and John Mark Windle.`, basis: "calibrated", source: "scripts/stateLegIndependentBacktest.ts" },
+            { name: "IND_SHRINK_K", value: SC.IND_SHRINK_K, meaning: "Pseudo-races of the prior in the personal effect: one head-to-head on record counts half.", basis: "calibrated", source: "scripts/stateLegIndependentBacktest.ts" },
+            { name: "IND_SIGMA", value: SC.IND_SIGMA, meaning: `Extra seat noise in an independent's race: the holdout's robust residual spread (${IV.live.robustSd}) net of SIGMA and STATE_SHOCK — within them, so none.`, basis: "calibrated", source: "scripts/stateLegIndependentBacktest.ts" },
+          ] satisfies ConstantRow[]} />
+        </Block>
+        <Block label="Independents holdout" meta={`generated ${IV.generatedAt} · scripts/stateLegIndependentBacktest.ts --emit`}>
+          <P>Every past general on today&apos;s lines where an independent the rule would model faced exactly one major party (<N>{IV.cases}</N> races, 2018–2024), predicted from the lean before that year, the year&apos;s fitted environment, incumbency and the independent&apos;s earlier record. Small sample: the prior is set at the median gap rather than the grid&apos;s best fit, which leans on two outliers.</P>
+          <DataTable align="rrrrrr" head={["Prior", "K", "RMSE", "Bias", "σ (robust)", "Winners"]} rows={IV.grid.map((g) => [g.prior, g.k, g.rmse.toFixed(1), (g.bias >= 0 ? "+" : "") + g.bias.toFixed(1), g.robustSd.toFixed(1), `${g.winners}/${g.n}`])} maxWidth="max-w-xl" />
+        </Block>
+        <Block label="Weight sweep" meta={`generated ${SW.generatedAt} · scripts/stateLegBacktest.ts --sweep --emit`}>
+          <P>Two questions put to the holdout after the State Navigate comparison (their lean leans on the last legislative result): how much of the lean the seat&apos;s own races should carry, and whether the most recent of them deserves extra weight. Left: the seat share with no boost, where 0.25 is the live ratio. Right: the latest seat row&apos;s weight × k at the live ratio and at a 0.40 share. The boost beats every uniform reweighting; ×{SC.RECENT_SEAT_BOOST} is adopted.</P>
+          <div className="grid gap-6 lg:grid-cols-2">
+            <DataTable align="lrrrrr" head={["Year", "Seat share", "MAE (inc.)", "Bias", "Inc. pts", "σ (robust)"]} rows={SW.typeWeights.map((r) => [r.year, r.lShare.toFixed(2), r.maeAfterIncumbency.toFixed(2), (r.bias >= 0 ? "+" : "") + r.bias.toFixed(2), r.incumbencyPts.toFixed(2), r.sigmaRobust.toFixed(2)])} />
+            <DataTable align="lrrrrr" head={["Year", "Seat share", "Boost", "MAE (inc.)", "Bias", "σ (robust)"]} rows={SW.recency.map((r) => [r.year, r.lShare.toFixed(2), `×${r.boost}`, r.maeAfterIncumbency.toFixed(2), (r.bias >= 0 ? "+" : "") + r.bias.toFixed(2), r.sigmaRobust.toFixed(2)])} />
+          </div>
         </Block>
         <Block label="Holdout" meta={`generated ${STATE_LEG_VALIDATION.generatedAt} · scripts/stateLegBacktest.ts --emit`}>
           <P>Each district&apos;s lean is built from the years before Y and projected into Y with the fitted environment and the race&apos;s actual incumbent, then scored against the contested districts on today&apos;s lines. Incumbency is fitted from the residuals and σ is their spread after it. The worst states are the multi-member and ranked-choice ones (Vermont, Washington, Arizona, Alaska) and Nebraska, where a seat&apos;s own margin is a poor measure of the district.</P>
@@ -202,6 +240,7 @@ export default function StateLegMethodology() {
             { path: "data-entry/state-leg-redistricting/<ST>.json", role: "dataset C, per state: chamber → era redrawn into → district → record" },
             { path: "data/stateLegPresByEra.ts · stateLegResults.ts · stateLegRedistricting.ts", role: "server-only modules built from the three above" },
             { path: "data-entry/state-leg-candidates-2026/<ST>.json", role: "dataset D, per state: chamber → district → {seats, candidates}" },
+            { path: "data/stateLegIndependents.ts", role: "hand-curated independents: major-party backing (with sources), backing over a party's own nominee, appointed incumbents, exclusions" },
             { path: "data-entry/state-leg-outgoing-2026/<ST>.json", role: "outgoing members with reasons, per state: chamber → district → [{name, party, category, reason}]" },
             { path: "data-entry/state-leg-finance/{tu,ftm}/<ST>-<cycle>.json", role: "dataset E, per state and cycle: every legislative race's candidates with contributions and expenditures" },
             { path: "public/state-leg-atlas/<chamber>/<ST>.json", role: "the per-chamber slice a chamber page fetches, assembled from every module" },
@@ -215,6 +254,8 @@ export default function StateLegMethodology() {
             { cmd: "python3 scripts/fetch-state-leg-finance-tu.py --cycle 2026 [ST] · fetch-state-leg-finance-ftm.py --cycle 2024 [ST] · node scripts/build-state-leg-finance.mjs", does: "dataset E: one cycle of Transparency USA (slow, polite crawl) or FollowTheMoney, then the module" },
             { cmd: "node scripts/build-state-leg-pres-by-era.mjs · build-state-leg-results.mjs · split-state-leg-results.mjs · build-state-leg-redistricting.mjs", does: "rebuild the modules and the legislature page's result slices" },
             { cmd: "npx tsx --conditions=react-server scripts/stateLegBacktest.ts --emit", does: "the projection holdout; writes data/stateLegValidation.ts" },
+            { cmd: "npx tsx --conditions=react-server scripts/stateLegBacktest.ts --sweep --emit", does: "the seat-share and recent-row weight sweeps; writes data/stateLegTypeWeightSweep.ts" },
+            { cmd: "npx tsx --conditions=react-server scripts/stateLegIndependentBacktest.ts --emit", does: "the independent rule's holdout; writes data/stateLegIndependentValidation.ts" },
             { cmd: "npx tsx --conditions=react-server scripts/buildStateLegAtlasSlices.ts [ST]", does: "rebuild the chamber slices the atlas pages read (projection included)" },
           ]}
         />

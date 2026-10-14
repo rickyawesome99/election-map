@@ -28,7 +28,7 @@ export function chamberSummary(abbr: string, stateName: string, chamber: Chamber
   const projection = projectChamber(abbr, chamber);
   const field = stateLegCandidates2026[abbr]?.[chamber];
   const fieldStats = field ? (() => {
-    const list = Object.values(field).map((c) => contest2026(c)!);
+    const list = Object.entries(field).map(([key, c]) => contest2026(c, roster.find((d) => d.number === key)?.incumbents ?? [])!);
     return { districts: list.length, contested: list.filter((c) => c.status === "contested").length, open: list.filter((c) => c.open).length };
   })() : null;
 

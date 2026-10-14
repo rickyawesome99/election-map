@@ -44,6 +44,11 @@ const fmtMargin = (m: number) => (Math.abs(m) < 0.05 ? "Even" : `${m > 0 ? "R" :
 const marginColor = (m: number) => (m > 0 ? "var(--party-rep)" : "var(--party-dem)");
 const NOT_A_CANDIDATE = /write.?in|scatter|blank|void|under.?vote|over.?vote|none of/i;
 
+/** An independent's margin over the major-party nominee: "I+4.2" or "R+4.2". */
+function fmtIndep(advantage: number, opp: "D" | "R"): string {
+  return Math.abs(advantage) < 0.05 ? "Even" : `${advantage > 0 ? "I" : opp}+${Math.abs(advantage).toFixed(1)}`;
+}
+
 /** The box grid's hover card for one district under the current color mode. */
 function boxTip(d: AtlasDistrict, mode: ColorMode, year: number | null, electionYear: number): BoxTip {
   const heading = d.label;
@@ -55,12 +60,19 @@ function boxTip(d: AtlasDistrict, mode: ColorMode, year: number | null, election
       ? field.map((c) => ({ label: c.name, color: PARTY_TEXT[c.party], sub: [c.post ? `pos. ${c.post}` : "", c.incumbent ? "inc." : "", c.writeIn ? "write-in" : ""].filter(Boolean).join(" · ") || undefined, value: c.party === "O" ? (c.partyLabel ?? "Other").replace(/ Party$/, "") : c.party }))
       : [{ label: "No candidates listed yet" }];
     if (pr.contest === "contested" && pr.margin != null) {
-      return { heading, lines, total: { label: `Projected${pr.rating ? ` · ${pr.rating}` : ""}`, value: fmtMargin(pr.margin), color: marginColor(pr.margin) }, note: pr.pD != null ? `P(Democratic) ${Math.round(pr.pD * 100)}% · P(Republican) ${Math.round((1 - pr.pD) * 100)}%` : undefined };
+      const g = pr.guaranteed && (pr.guaranteed.dem || pr.guaranteed.rep) ? ` · decided by the field: ${[pr.guaranteed.dem ? `${pr.guaranteed.dem} D` : "", pr.guaranteed.rep ? `${pr.guaranteed.rep} R` : ""].filter(Boolean).join(", ")}` : "";
+      return { heading, lines, total: { label: `Projected${pr.rating ? ` · ${pr.rating}` : ""}`, value: fmtMargin(pr.margin), color: marginColor(pr.margin) }, note: pr.pD != null ? `P(Democratic) ${Math.round(pr.pD * 100)}% · P(Republican) ${Math.round((1 - pr.pD) * 100)}%${g}` : undefined };
     }
     if (pr.contest === "uncontested-D" || pr.contest === "uncontested-R") {
       const dem = pr.contest === "uncontested-D";
       return { heading, lines, total: { label: dem ? "No Republican on the ballot" : "No Democrat on the ballot", value: dem ? "D hold/gain" : "R hold/gain", color: dem ? "var(--party-dem)" : "var(--party-rep)" } };
     }
+    if (pr.contest === "independent" && pr.indep && pr.pI != null) {
+      const opp = pr.indep.slot === "D" ? "R" : "D";
+      return { heading, lines, total: { label: `${pr.indep.name} vs ${opp}`, value: fmtIndep(pr.indep.advantage, opp), color: pr.pI >= 0.5 ? "var(--party-ind)" : PARTY_TEXT[opp] }, note: `P(${pr.indep.name}) ${Math.round(pr.pI * 100)}% · P(${opp === "D" ? "Democratic" : "Republican"}) ${Math.round((1 - pr.pI) * 100)}%` };
+    }
+    if (pr.contest === "other" && pr.pI === 1) return { heading, lines, total: { label: "No major party on the ballot", value: "Independent", color: "var(--party-ind)" } };
+    if (pr.contest === "split" && pr.guaranteed) return { heading, lines, total: { label: "Every seat decided by the field", value: `${pr.guaranteed.dem} D · ${pr.guaranteed.rep} R`, color: "var(--app-text-primary)" } };
     return { heading, lines, note: "No projection: no major-party contest" };
   }
   if (mode === "seats") {
@@ -268,8 +280,8 @@ export default function LegislativeAtlas({
   const passes = useCallback((d: AtlasDistrict) => {
     if (filter === "up" && !isUp(d)) return false;
     if (filter === "competitive") { const m = d.presCurrent["2024"]?.margin; if (m == null || Math.abs(m) >= 10) return false; }
-    if (filter === "open") { const c = contest2026(d.candidates2026); if (!c || !c.open) return false; }
-    if (filter === "unopposed") { const c = contest2026(d.candidates2026); if (!c || c.status === "contested") return false; }
+    if (filter === "open") { const c = contest2026(d.candidates2026, d.incumbents); if (!c || !c.open) return false; }
+    if (filter === "unopposed") { const c = contest2026(d.candidates2026, d.incumbents); if (!c || c.status === "contested") return false; }
     if (query) {
       const q = query.toLowerCase();
       if (!d.key.toLowerCase().includes(q) && !d.label.toLowerCase().includes(q) && !d.incumbents.some((i) => i.name.toLowerCase().includes(q))) return false;
@@ -286,6 +298,9 @@ export default function LegislativeAtlas({
           if (pr?.contest === "contested" && pr.margin != null) { fill = getRaceColor(pr.margin); darkText = Math.abs(pr.margin) < 10; }
           else if (pr?.contest === "uncontested-D") { fill = PARTY_FILL.D; darkText = false; }
           else if (pr?.contest === "uncontested-R") { fill = PARTY_FILL.R; darkText = false; }
+          else if (pr?.contest === "independent" && pr.margin != null) { fill = (pr.pI ?? 0) >= 0.5 ? PARTY_FILL.I : getRaceColor(pr.margin); darkText = (pr.pI ?? 0) < 0.5 && Math.abs(pr.margin) < 10; }
+          else if (pr?.contest === "other" && pr.pI === 1) { fill = PARTY_FILL.I; darkText = false; }
+          else if (pr?.contest === "split") { fill = "#4B0082"; darkText = false; }
         } else if (mode === "seats") {
           const parties = new Set(d.incumbents.map((i) => i.party));
           if (parties.size === 1) { fill = PARTY_FILL[[...parties][0]] ?? NO_DATA; darkText = false; }
@@ -302,7 +317,7 @@ export default function LegislativeAtlas({
         }
         const inc = d.incumbents.map((i) => `${i.name} (${i.party})`).join(", ") || "vacant";
         const p = d.presCurrent["2024"]?.margin ?? null;
-        const c = contest2026(d.candidates2026);
+        const c = contest2026(d.candidates2026, d.incumbents);
         return {
           key: d.key,
           fill,
@@ -334,8 +349,20 @@ export default function LegislativeAtlas({
       const total = d.seats ?? Math.max(d.incumbents.length, 1);
       const up = !pr || pr.contest === "not-up" ? 0 : Math.min(pr.seats, total);
       if (up > 0) {
-        const winner = pr!.contest === "uncontested-D" ? "D" : pr!.contest === "uncontested-R" ? "R" : pr!.contest === "contested" && pr!.margin != null ? (pr!.margin <= 0 ? "D" : "R") : null;
-        if (winner) out[winner] += up;
+        const winner = pr!.contest === "uncontested-D" ? "D" : pr!.contest === "uncontested-R" ? "R" : pr!.contest === "contested" && pr!.margin != null ? (pr!.margin <= 0 ? "D" : "R")
+          : pr!.contest === "other" && pr!.pI === 1 ? "I" : null;
+        const g = pr!.guaranteed ?? { dem: 0, rep: 0 };
+        if (pr!.contest === "split" || (pr!.contest === "contested" && (g.dem || g.rep))) {
+          // Seats the field decides go to their party; the rest follow the margin.
+          out.D += Math.min(up, g.dem); out.R += Math.min(up - Math.min(up, g.dem), g.rep);
+          const rest = Math.max(0, up - g.dem - g.rep);
+          if (rest) { if (winner) out[winner] += rest; else out.none += rest; }
+        } else if (pr!.contest === "independent" && pr!.indep && pr!.pI != null) {
+          // The independent's one seat; a multi-member district's others go to the party's nominees.
+          const party = pr!.indep.slot === "D" ? "R" : "D";
+          out[pr!.pI >= 0.5 ? "I" : party] += Math.min(up, pr!.indep.seats);
+          out[party] += Math.max(0, up - pr!.indep.seats);
+        } else if (winner) out[winner] += up;
         else out.none += up;
       }
       // Seats not on the ballot (the whole district, or a staggered share of a multi-member one).
@@ -357,12 +384,26 @@ export default function LegislativeAtlas({
           { label: "Projected margin", value: fmtM(pr.margin), color: pr.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" },
           { label: "Rating", value: pr.rating ?? "" },
           { label: "P(Democratic)", value: `${Math.round(pr.pD * 100)}%` },
-          ...(d.candidates2026 ? [{ label: "Field", value: contest2026(d.candidates2026)?.label ?? "" }] : []),
+          ...(d.candidates2026 ? [{ label: "Field", value: contest2026(d.candidates2026, d.incumbents)?.label ?? "" }] : []),
         ];
       } else if (pr.contest === "uncontested-D" || pr.contest === "uncontested-R") {
         const dem = pr.contest === "uncontested-D";
         fill[d.key] = dem ? PARTY_FILL.D : PARTY_FILL.R;
         tip[d.key] = [{ label: dem ? "No Republican on the ballot" : "No Democrat on the ballot", value: dem ? "Democratic hold/gain" : "Republican hold/gain", color: dem ? "var(--party-dem)" : "var(--party-rep)" }, ...(pr.lean != null ? [{ label: "Lean", value: fmtM(pr.lean) }] : [])];
+      } else if (pr.contest === "independent" && pr.indep && pr.pI != null && pr.margin != null) {
+        const opp = pr.indep.slot === "D" ? "R" : "D";
+        fill[d.key] = pr.pI >= 0.5 ? PARTY_FILL.I : getRaceColor(pr.margin);
+        tip[d.key] = [
+          { label: "Projected margin", value: fmtIndep(pr.indep.advantage, opp), color: pr.pI >= 0.5 ? "var(--party-ind)" : PARTY_TEXT[opp] },
+          { label: `P(${pr.indep.name})`, value: `${Math.round(pr.pI * 100)}%` },
+          ...(d.candidates2026 ? [{ label: "Field", value: contest2026(d.candidates2026, d.incumbents)?.label ?? "" }] : []),
+        ];
+      } else if (pr.contest === "other" && pr.pI === 1) {
+        fill[d.key] = PARTY_FILL.I;
+        tip[d.key] = [{ label: "No major party on the ballot", value: "Independent", color: "var(--party-ind)" }];
+      } else if (pr.contest === "split" && pr.guaranteed) {
+        fill[d.key] = "#4B0082";
+        tip[d.key] = [{ label: "Every seat decided by the field", value: `${pr.guaranteed.dem} D · ${pr.guaranteed.rep} R` }, ...(pr.lean != null ? [{ label: "Lean", value: fmtM(pr.lean) }] : [])];
       } else {
         tip[d.key] = [{ label: "No projection", value: pr.contest === "other" ? "nonpartisan or no major-party field" : "no candidates listed" }];
       }
@@ -524,7 +565,7 @@ export default function LegislativeAtlas({
                 <div className="h-24 rounded" style={{ background: "var(--app-tab-bg)" }} />
               )}
               <p className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-                {mode === "projection" && `Color is the projected ${electionYear} margin; a solid party colour means only one major party is on the ballot; grey means no projection.`}
+                {mode === "projection" && `Color is the projected ${electionYear} margin; a solid party colour means only one major party is on the ballot; dark grey is an independent favored (or no major party on the ballot); purple means every seat is decided by the field, split between the parties; light grey means no projection.`}
                 {mode === "seats" && "Color is the sitting member's party; purple = members of both parties."}
                 {mode === "president" && "Color is the 2024 presidential margin on today's lines."}
                 {mode === "results" && `Color is the ${activeYear} result for each district number${historicalVintage ? `, on the ${activeYear} lines (which may cover different ground than today's district)` : ""}.`}

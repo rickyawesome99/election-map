@@ -20,22 +20,45 @@ export type StatewideHistoryEntry = {
 
 type ChartResult = { year: number; race: string; demPct: number; repPct: number; label?: string };
 
-function ResultCard({ entry }: { entry: StatewideHistoryEntry }) {
+/**
+ * One statewide result. With `onSelect` the card is a control: on the state page, selecting a year
+ * puts that election on the county map, and `active` marks the one being drawn.
+ */
+export function ResultCard({ entry, active = false, onSelect }: { entry: StatewideHistoryEntry; active?: boolean; onSelect?: () => void }) {
   const winner = entry.demPct > entry.repPct ? "D" : "R";
   const margin = Math.abs(entry.demPct - entry.repPct).toFixed(1);
   const labelClass = "min-w-0 truncate text-xs font-semibold";
-
+  // A div with a button role rather than a <button>: the card carries candidate and election links,
+  // which can't nest inside a real button.
   return (
-    <div className="py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
+    <div
+      {...(onSelect ? {
+        role: "button",
+        tabIndex: 0,
+        onClick: onSelect,
+        onKeyDown: (e: React.KeyboardEvent) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelect(); } },
+        "aria-current": active,
+      } : {})}
+      className={`block w-full py-4 pl-2.5 pr-1 text-left${onSelect ? " cursor-pointer" : ""}`}
+      style={{
+        borderBottom: "1px solid var(--app-border)",
+        // The same inset whether or not the card is a control, so a grid of them lines up.
+        borderLeft: `2px solid ${onSelect && active ? "var(--app-text-primary)" : "transparent"}`,
+        background: onSelect && active ? "var(--app-tab-bg)" : undefined,
+      }}
+    >
       <div className="mb-2 flex items-baseline justify-between gap-2">
         <div className="flex min-w-0 items-baseline gap-2">
           <span className="shrink-0 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", fontWeight: 700, color: "var(--app-text-primary)" }}>
             {entry.year}
           </span>
           {entry.href ? (
-            <a href={entry.href} className={`${labelClass} hover:underline`} style={{ color: "var(--app-text-muted)" }}>{entry.label}</a>
+            <a href={entry.href} onClick={(e) => e.stopPropagation()} className={`${labelClass} hover:underline`} style={{ color: "var(--app-text-muted)" }}>{entry.label}</a>
           ) : (
             <span className={labelClass} style={{ color: "var(--app-text-muted)" }}>{entry.label}</span>
+          )}
+          {active && (
+            <span className="shrink-0 text-[9px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>On map</span>
           )}
         </div>
         <span

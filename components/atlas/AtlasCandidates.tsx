@@ -3,7 +3,7 @@
 import Image from "next/image";
 import type { AtlasDistrict } from "@/lib/stateLegAtlas";
 import type { StateLegCandidate2026 } from "@/data/stateLegCandidates2026";
-import { contest2026, fmtMoney } from "@/lib/stateLegAtlas";
+import { contest2026, fieldPersons, fmtMoney } from "@/lib/stateLegAtlas";
 import { candidateSlug } from "@/lib/candidateSlug";
 
 type Party = "D" | "R" | "I" | "O";
@@ -57,14 +57,18 @@ function Portrait({ party }: { party: Party }) {
 export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDistrict; abbr: string }) {
   const field = district.candidates2026;
   if (!field) return null;
-  const c = contest2026(field)!;
+  const c = contest2026(field, district.incumbents)!;
   const pr = district.projection;
   const margin = pr?.contest === "contested" ? pr.margin : null;
   const canceled = field.candidates.some((x) => x.canceledGeneral);
+  // One row per person: a fusion nominee (Oregon, Vermont, New York) holds several lines.
+  const persons = fieldPersons(field, district.incumbents);
+  const g = pr?.guaranteed ?? { dem: 0, rep: 0 };
+  const guaranteedPills = [g.dem ? `${g.dem} Democratic seat${g.dem > 1 ? "s" : ""} decided by the field` : "", g.rep ? `${g.rep} Republican seat${g.rep > 1 ? "s" : ""} decided by the field` : ""].filter(Boolean);
 
   // Idaho's seat A/B and Washington's position 1/2 are separate races inside one district.
-  const posts = [...new Set(field.candidates.map((x) => x.post ?? ""))];
-  const groups = posts.map((post) => ({ post, cands: field.candidates.filter((x) => (x.post ?? "") === post) }));
+  const posts = [...new Set(persons.map((x) => x.post ?? ""))];
+  const groups = posts.map((post) => ({ post, cands: persons.filter((x) => (x.post ?? "") === post) }));
 
   const shareFor = (x: StateLegCandidate2026, cands: StateLegCandidate2026[]): number | null => {
     if (margin == null || x.writeIn) return null;
@@ -75,11 +79,13 @@ export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDist
 
   return (
     <div>
-      {(c.open && field.candidates.length > 0) || c.status === "uncontested-D" || c.status === "uncontested-R" || canceled ? (
+      {(c.open && field.candidates.length > 0) || c.status === "uncontested-D" || c.status === "uncontested-R" || canceled || pr?.indep || guaranteedPills.length ? (
         <div className="flex flex-wrap gap-1.5 mb-1">
           {c.open && field.candidates.length > 0 && <Pill>Open seat</Pill>}
           {c.status === "uncontested-D" && <Pill>No Republican</Pill>}
           {c.status === "uncontested-R" && <Pill>No Democrat</Pill>}
+          {guaranteedPills.map((t) => <Pill key={t}>{t}</Pill>)}
+          {pr?.indep && <Pill>{pr.indep.name}: modeled in the {pr.indep.slot === "D" ? "Democrats'" : "Republicans'"} place{pr.indep.endorsedBy ? ` (${pr.indep.endorsedBy}-backed)` : ""}</Pill>}
           {canceled && <Pill>General canceled</Pill>}
         </div>
       ) : null}
@@ -108,7 +114,7 @@ export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDist
                       {x.incumbent && <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: `color-mix(in srgb, ${color} 14%, transparent)`, color }}>Inc.</span>}
                       {x.writeIn && <Pill>Write-in</Pill>}
                     </div>
-                    <div className="text-sm font-medium mt-0.5" style={{ color }}>{partyName(x.party, x.partyLabel)}</div>
+                    <div className="text-sm font-medium mt-0.5" style={{ color }}>{partyName(x.party, x.partyLabel)}{x.lines.length > 1 && <span className="font-normal" style={{ color: "var(--app-text-very-muted)" }}> · {x.lines.length} ballot lines{x.lines.includes("D") && x.lines.includes("R") ? " (Democratic and Republican)" : ""}</span>}</div>
                   </div>
                 </div>
                 {share != null && (

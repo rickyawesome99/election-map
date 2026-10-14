@@ -2,16 +2,16 @@
 
 :root {
   /* App theme — light (default) */
-  --app-bg: #f6f8fa;
+  --app-bg: #f9f8f5;
   --app-panel: #ffffff;
   --app-border: #d0d7de;
-  --app-tab-bg: #eaeef2;
+  --app-tab-bg: #efede8;
   --app-text-primary: #1f2328;
   --app-text-muted: #656d76;
   --app-text-very-muted: #949ea6;
   --browser-chrome-bg: var(--app-bg);
   --map-unfilled: #c8cdd3;
-  --map-legend-bg: rgba(246,248,250,0.92);
+  --map-legend-bg: rgba(249,248,245,0.92);
 
   /* Party colors — text (change in dark mode) */
   --party-dem: #1b408c;

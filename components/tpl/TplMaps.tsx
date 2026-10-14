@@ -56,7 +56,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
 }) {
   const isDark = useDarkMode();
   const mapUnfilled   = isDark ? "#1e2530" : "#c8cdd3";
-  const mapStroke     = isDark ? "#0d1117" : "#f6f8fa";
+  const mapStroke     = isDark ? "#0d1117" : "#f9f8f5";
   const hoverStroke   = isDark ? "#ffffff" : "#000000";
   const hoverUnfilled = isDark ? "#2a3441" : "#dde2e7";
 

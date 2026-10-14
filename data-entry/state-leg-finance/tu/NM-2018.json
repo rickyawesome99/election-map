@@ -1,778 +1,2933 @@
 {
  "state": "NM",
  "cycle": 2018,
- "fetched": "2026-10-11",
- "dataThrough": "06/27/2026",
+ "fetched": "2026-10-12",
+ "dataThrough": "12/31/2018",
  "races": [
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-1-21221?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-10-21230?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-11-21231?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-12-21232?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-13-21233?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-14-21234?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-15-21235?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-16-21236?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-17-21237?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-18-21238?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-19-21239?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-2-21222?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-20-21240?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-21-21241?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-22-21242?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-23-21243?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-24-21244?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-25-21245?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-26-21246?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-27-21247?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-28-21248?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-29-21249?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-3-21223?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-30-21250?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-31-21251?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-32-21252?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-33-21253?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-34-21254?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-35-21255?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-36-21256?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-37-21257?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-38-21258?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-39-21259?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-4-21224?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-40-21260?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-41-21261?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-42-21262?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-43-21263?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-44-21264?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-45-21265?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-46-21266?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-47-21267?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-48-21268?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-49-21269?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-5-21225?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-50-21270?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-51-21271?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-52-21272?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-53-21273?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-54-21274?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-55-21275?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-56-21276?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-57-21277?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-58-21278?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-59-21279?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-6-21226?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-60-21280?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-61-21281?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-62-21282?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-63-21283?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-64-21284?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-65-21285?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-66-21286?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-67-21287?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-68-21288?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-69-21289?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-7-21227?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-70-21290?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-8-21228?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-9-21229?cycle=2018-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
+   "office": "New Mexico House of Representatives District 1",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-1-21221",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Rodney D Montoya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/rodney-d-montoya?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Rodney D Montoya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/rodney-d-montoya?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "New Mexico House of Representatives District 10",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-10-21230",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "G Andres Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/g-andres-romero?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "G Andres Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/g-andres-romero?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "New Mexico House of Representatives District 11",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-11-21231",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Javier I Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/javier-i-martinez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Javier I Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/javier-i-martinez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "New Mexico House of Representatives District 12",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-12-21232",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "New Mexico House of Representatives District 13",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-13-21233",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Patricia Roybal Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/patricia-roybal-caballero?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Patricia Roybal Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/patricia-roybal-caballero?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "New Mexico House of Representatives District 14",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-14-21234",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Miguel P Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/miguel-p-garcia?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Miguel P Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/miguel-p-garcia?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "New Mexico House of Representatives District 15",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-15-21235",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Day M Hochman-Vigil",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/day-m-hochman-vigil?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Day M Hochman-Vigil",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/day-m-hochman-vigil?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "New Mexico House of Representatives District 16",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-16-21236",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Antonio Moe Maestas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/antonio-moe-maestas?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Antonio Moe Maestas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/antonio-moe-maestas?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "New Mexico House of Representatives District 17",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-17-21237",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Deborah A Armstrong",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/deborah-a-armstrong?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Deborah A Armstrong",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/deborah-a-armstrong?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "New Mexico House of Representatives District 18",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-18-21238",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "New Mexico House of Representatives District 19",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-19-21239",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Sheryl M Williams Stapleton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/sheryl-m-williams-stapleton?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Sheryl M Williams Stapleton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/sheryl-m-williams-stapleton?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "New Mexico House of Representatives District 2",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-2-21222",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "James R Strickler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/james-r-strickler?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "James R Strickler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/james-r-strickler?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "New Mexico House of Representatives District 20",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-20-21240",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Abbas A Akhil",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/abbas-a-akhil?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "New Mexico House of Representatives District 21",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-21-21241",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Debra M Sarinana",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/debra-m-sarinana?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Debra M Sarinana",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/debra-m-sarinana?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "New Mexico House of Representatives District 22",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-22-21242",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Gregg W Schmedes",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/gregg-w-schmedes?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Jessica P Velasquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/jessica-p-velasquez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jessica P Velasquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/jessica-p-velasquez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Gregg W Schmedes",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/gregg-w-schmedes?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Merritt H Allen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/merritt-h-allen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "New Mexico House of Representatives District 23",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-23-21243",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Daymon B Ely",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/daymon-b-ely?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Daymon B Ely",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/daymon-b-ely?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "New Mexico House of Representatives District 24",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-24-21244",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Elizabeth L Thomson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/elizabeth-l-thomson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Elizabeth L Thomson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/elizabeth-l-thomson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "New Mexico House of Representatives District 25",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-25-21245",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Christine M Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/christine-m-trujillo?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Christine M Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/christine-m-trujillo?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "New Mexico House of Representatives District 26",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-26-21246",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Georgene Louis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/georgene-louis?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Georgene Louis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/georgene-louis?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "New Mexico House of Representatives District 27",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-27-21247",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Robert S Godshall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/robert-s-godshall?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "New Mexico House of Representatives District 28",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-28-21248",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "New Mexico House of Representatives District 29",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-29-21249",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Joy Garratt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/joy-garratt?cycle=2018-election-cycle"
+      },
+      {
+       "name": "David Adkins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/david-adkins?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Joy Garratt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/joy-garratt?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "David Adkins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/david-adkins?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "New Mexico House of Representatives District 3",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-3-21223",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Paul C Bandy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/paul-c-bandy?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Mary Schildmeyer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/mary-schildmeyer?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Mary Schildmeyer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/mary-schildmeyer?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Paul C Bandy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/paul-c-bandy?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "New Mexico House of Representatives District 30",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-30-21250",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Natalie R Figueroa",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/natalie-r-figueroa?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Natalie R Figueroa",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/natalie-r-figueroa?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "New Mexico House of Representatives District 31",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-31-21251",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "William R Rehm",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/william-r-rehm?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "William R Rehm",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/william-r-rehm?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "New Mexico House of Representatives District 32",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-32-21252",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Candie G Sweetser",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/candie-g-sweetser?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Candie G Sweetser",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/candie-g-sweetser?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "New Mexico House of Representatives District 33",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-33-21253",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Micaela Lara Cadena",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/micaela-lara-cadena?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Charles R Wendler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/charles-r-wendler?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Micaela Lara Cadena",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/micaela-lara-cadena?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Guenevere R McMahon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/guenevere-r-mcmahon?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Charles R Wendler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/charles-r-wendler?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "New Mexico House of Representatives District 34",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-34-21254",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Ray Lara",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/ray-lara?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Ray Lara",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/ray-lara?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Bealquin Bill Gomez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/bealquin-bill-gomez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "New Mexico House of Representatives District 35",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-35-21255",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Angelica Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/angelica-rubio?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Angelica Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/angelica-rubio?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "New Mexico House of Representatives District 36",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-36-21256",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Nathan Small",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/nathan-small?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Dave Tofsted",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/dave-tofsted?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Nathan Small",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/nathan-small?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Dave Tofsted",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/dave-tofsted?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "New Mexico House of Representatives District 37",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-37-21257",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Joanne J Ferrary",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/joanne-j-ferrary?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Joanne J Ferrary",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/joanne-j-ferrary?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "New Mexico House of Representatives District 38",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-38-21258",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Rebecca L Dow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/rebecca-l-dow?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Rebecca L Dow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/rebecca-l-dow?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "New Mexico House of Representatives District 39",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-39-21259",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Rodolpho S Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/rodolpho-s-martinez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Rodolpho S Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/rodolpho-s-martinez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "New Mexico House of Representatives District 4",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-4-21224",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Anthony Allison",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/anthony-allison?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Sharon E Clahchischilliage",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/sharon-e-clahchischilliage?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Anthony Allison",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/anthony-allison?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Sharon E Clahchischilliage",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/sharon-e-clahchischilliage?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "New Mexico House of Representatives District 40",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-40-21260",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Joseph L Sanchez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/joseph-l-sanchez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Joseph L Sanchez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/joseph-l-sanchez?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "New Mexico House of Representatives District 41",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-41-21261",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Susan K Herrera",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/susan-k-herrera?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Susan K Herrera",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/susan-k-herrera?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Debbie A Rodella",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/debbie-a-rodella?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "New Mexico House of Representatives District 42",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-42-21262",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Roberto Bobby Jesse Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/roberto-bobby-jesse-gonzales?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Roberto Bobby Jesse Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/roberto-bobby-jesse-gonzales?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "New Mexico House of Representatives District 43",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-43-21263",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Christine Chandler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/christine-chandler?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Lisa Shin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/lisa-shin?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Christine Chandler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/christine-chandler?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Lisa Shin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/lisa-shin?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "New Mexico House of Representatives District 44",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-44-21264",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "New Mexico House of Representatives District 45",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-45-21265",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jim R Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/jim-r-trujillo?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jim R Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/jim-r-trujillo?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "New Mexico House of Representatives District 46",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-46-21266",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Andrea D Romero",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/andrea-d-romero?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Andrea D Romero",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/andrea-d-romero?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Carl Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/carl-trujillo?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "New Mexico House of Representatives District 47",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-47-21267",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Brian Egolf",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/brian-egolf?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Brian Egolf",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/brian-egolf?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "New Mexico House of Representatives District 48",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-48-21268",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Linda M Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/linda-m-trujillo?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Linda M Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/linda-m-trujillo?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "New Mexico House of Representatives District 49",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-49-21269",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Gail Missy Armstrong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/gail-missy-armstrong?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Gail Missy Armstrong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/gail-missy-armstrong?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "New Mexico House of Representatives District 5",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-5-21225",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Doreen Wonda Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/doreen-wonda-johnson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Doreen Wonda Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/doreen-wonda-johnson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "New Mexico House of Representatives District 50",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-50-21270",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Matthew Mcqueen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/matthew-mcqueen?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Matthew Mcqueen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/matthew-mcqueen?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "New Mexico House of Representatives District 51",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-51-21271",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jeff Swanson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/jeff-swanson?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jeff Swanson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/jeff-swanson?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "New Mexico House of Representatives District 52",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-52-21272",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Doreen Y Gallegos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/doreen-y-gallegos?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Doreen Y Gallegos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/doreen-y-gallegos?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "New Mexico House of Representatives District 53",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-53-21273",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Willie Madrid",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/willie-madrid?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Ricky L Little",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/ricky-l-little?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Willie Madrid",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/willie-madrid?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Javier Gonzalez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/javier-gonzalez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Ricky L Little",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/ricky-l-little?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "New Mexico House of Representatives District 54",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-54-21274",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "James G Townsend",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/james-g-townsend?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "James G Townsend",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/james-g-townsend?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "New Mexico House of Representatives District 55",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-55-21275",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Cathrynn Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/cathrynn-brown?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Cathrynn Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/cathrynn-brown?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "New Mexico House of Representatives District 56",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-56-21276",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Zach J Cook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/zach-j-cook?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Zach J Cook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/zach-j-cook?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "New Mexico House of Representatives District 57",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-57-21277",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Billie Ann Helean",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/billie-ann-helean?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Billie Ann Helean",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/billie-ann-helean?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "New Mexico House of Representatives District 58",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-58-21278",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Candy Spence Ezzell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/candy-spence-ezzell?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Candy Spence Ezzell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/candy-spence-ezzell?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "New Mexico House of Representatives District 59",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-59-21279",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Greg Nibert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/greg-nibert?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Greg Nibert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/greg-nibert?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "New Mexico House of Representatives District 6",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-6-21226",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Eliseo L Alcon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/eliseo-l-alcon-1?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Eliseo L Alcon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/eliseo-l-alcon-1?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "New Mexico House of Representatives District 60",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-60-21280",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Tim D Lewis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/tim-d-lewis?cycle=2018-election-cycle"
+      },
+      {
+       "name": "Alexis Jimenez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/alexis-jimenez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Alexis Jimenez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/alexis-jimenez?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Tim D Lewis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/tim-d-lewis?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "New Mexico House of Representatives District 61",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-61-21281",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "David M Gallegos",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/david-m-gallegos?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "David M Gallegos",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/david-m-gallegos?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "New Mexico House of Representatives District 62",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-62-21282",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Larry R Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/larry-r-scott?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Larry R Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/larry-r-scott?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "New Mexico House of Representatives District 63",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-63-21283",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Martin R Zamora",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/martin-r-zamora-1?cycle=2018-election-cycle"
+      },
+      {
+       "name": "George Dodge",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/george-dodge?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "George Dodge",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/george-dodge?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Martin R Zamora",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/martin-r-zamora-1?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "New Mexico House of Representatives District 64",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-64-21284",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "New Mexico House of Representatives District 65",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-65-21285",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Derrick J Lente",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/derrick-j-lente?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Derrick J Lente",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/derrick-j-lente?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "New Mexico House of Representatives District 66",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-66-21286",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "New Mexico House of Representatives District 67",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-67-21287",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Jackey O Chatfield",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/jackey-o-chatfield?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Jackey O Chatfield",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/jackey-o-chatfield?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "New Mexico House of Representatives District 68",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-68-21288",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "New Mexico House of Representatives District 69",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-69-21289",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Harry Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/harry-garcia?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Harry Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/harry-garcia?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "New Mexico House of Representatives District 7",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-7-21227",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "New Mexico House of Representatives District 70",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-70-21290",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "New Mexico House of Representatives District 8",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-8-21228",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Alonzo Baldonado",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/alonzo-baldonado?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Alonzo Baldonado",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/alonzo-baldonado?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "New Mexico House of Representatives District 9",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-9-21229",
+   "dataThrough": "12/31/2018",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 6, 2018",
+     "candidates": [
+      {
+       "name": "Patty A Lundstrom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/patty-a-lundstrom?cycle=2018-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 5, 2018",
+     "candidates": [
+      {
+       "name": "Patty A Lundstrom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/patty-a-lundstrom?cycle=2018-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
   }
  ]
 }

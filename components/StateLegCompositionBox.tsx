@@ -119,8 +119,11 @@ function EntryCard({
   majorityInfo,
   net = null,
   seatsUp = null,
+  newMap = false,
 }: {
   entry: CompositionEntry;
+  /** First election on a redrawn map — the point past which seat splits stop comparing cleanly. */
+  newMap?: boolean;
   /** True where this year's district results exist, so the card can put them on the map. */
   selectable?: boolean;
   active?: boolean;
@@ -164,6 +167,11 @@ function EntryCard({
               {chamberSize != null && seatsUp >= chamberSize ? `all ${seatsUp} up` : `${seatsUp}${chamberSize != null ? ` of ${chamberSize}` : ""} up`}
             </span>
           )}
+          {newMap && (
+            <span className="shrink-0 text-[9px] font-bold uppercase tracking-wider" style={{ color: "var(--redistrict-cd)" }}>
+              New map
+            </span>
+          )}
         </span>
         {winner && margin ? (
           <span
@@ -178,7 +186,7 @@ function EntryCard({
       </div>
 
       {hasSeats && (
-        <div className="mb-1.5 flex items-baseline gap-1.5 whitespace-nowrap text-lg font-bold leading-none tabular-nums">
+        <div className="mb-1.5 flex flex-wrap items-baseline gap-x-1.5 gap-y-1 text-lg font-bold leading-none tabular-nums">
           <span style={{ color: "var(--party-dem)" }}>{entry.demSeats}D</span>
           <span style={{ color: "var(--app-text-very-muted)" }}>–</span>
           <span style={{ color: "var(--party-rep)" }}>{entry.repSeats}R</span>
@@ -261,7 +269,20 @@ export default function StateLegCompositionBox({
   upcomingActive = false,
   onSelectUpcoming,
   seatsUpByYear = null,
+  title,
+  titleRight,
+  newMapYears,
+  layout = "column",
 }: {
+  /** "grid": the cards flow in a responsive grid with no heading, tabs or scrollbox — the state
+   *  page's office tabs, where one office is on screen at a time and the page scrolls instead. */
+  layout?: "column" | "grid";
+  /** Replaces the default "Legislative Composition · Since 2016" heading. */
+  title?: React.ReactNode;
+  /** Fine print on the heading's right, e.g. the chamber's size. */
+  titleRight?: React.ReactNode;
+  /** Years whose card gets a "New map" tag. */
+  newMapYears?: number[];
   federalEntries?: HouseDelegationEntry[];
   houseEntries: StateLegEntry[];
   senateEntries: StateLegEntry[];
@@ -330,15 +351,56 @@ export default function StateLegCompositionBox({
     ...(!isUnicameral && hasSenate ? [{ key: "state-senate" as const, label: "State Senate" }] : []),
   ];
 
+  const cards = (
+    <>
+      {upcoming && chamber && (
+        <UpcomingCard upcoming={upcoming} active={upcomingActive} onSelect={onSelectUpcoming} />
+      )}
+      {entries.map((entry) => {
+        const selectable = !!onSelectYear && !!selectableYears?.includes(entry.year);
+        // The nearest earlier cycle on this list, found by year rather than by position so
+        // the comparison holds however the entries happen to be ordered. The oldest card
+        // has nothing behind it and so carries no net.
+        const prev = entries.reduce<CompositionEntry | undefined>(
+          (best, other) =>
+            other.year < entry.year && (!best || other.year > best.year) ? other : best,
+          undefined,
+        );
+        return (
+          <EntryCard
+            key={`${entry.year}-${"type" in entry ? entry.type : "US House"}`}
+            entry={entry}
+            selectable={selectable}
+            active={selectable && entry.year === activeYear}
+            onSelect={selectable ? () => onSelectYear?.(entry.year) : undefined}
+            majorityInfo={chamber ? majorityInfo : null}
+            net={netChange(entry, prev)}
+            seatsUp={chamber ? seatsUpByYear?.[entry.year] ?? null : null}
+            newMap={newMapYears?.includes(entry.year) ?? false}
+          />
+        );
+      })}
+    </>
+  );
+
+  if (layout === "grid") {
+    return <div className="grid grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">{cards}</div>;
+  }
+
   return (
     <section className={`flex min-w-0 flex-col${visibleCards ? "" : " h-[25rem] md:h-full"}`}>
       <div className="mb-3 flex shrink-0 flex-col items-start gap-3">
-        <h2
-          className="text-[11px] uppercase tracking-wider font-bold"
-          style={{ color: "var(--app-text-muted)" }}
-        >
-          Legislative Composition · Since 2016
-        </h2>
+        <div className="flex w-full items-baseline justify-between gap-2">
+          <h2
+            className="text-[11px] uppercase tracking-wider font-bold"
+            style={{ color: "var(--app-text-muted)" }}
+          >
+            {title ?? "Legislative Composition · Since 2016"}
+          </h2>
+          {titleRight && (
+            <span className="shrink-0 text-xs tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{titleRight}</span>
+          )}
+        </div>
 
         {chamberTabs.length > 1 && !chamber ? (
           <div className="flex items-end gap-4 w-full" style={{ borderBottom: "1px solid var(--app-border)" }}>
@@ -363,34 +425,7 @@ export default function StateLegCompositionBox({
           className="stateleg-scroll overflow-x-hidden overflow-y-auto pr-1"
           style={visibleCards ? { height: capHeight ?? visibleCards * 152 } : { height: "100%" }}
         >
-          <div ref={listRef} className="flex flex-col">
-            {upcoming && chamber && (
-              <UpcomingCard upcoming={upcoming} active={upcomingActive} onSelect={onSelectUpcoming} />
-            )}
-            {entries.map((entry) => {
-              const selectable = !!onSelectYear && !!selectableYears?.includes(entry.year);
-              // The nearest earlier cycle on this list, found by year rather than by position so
-              // the comparison holds however the entries happen to be ordered. The oldest card
-              // has nothing behind it and so carries no net.
-              const prev = entries.reduce<CompositionEntry | undefined>(
-                (best, other) =>
-                  other.year < entry.year && (!best || other.year > best.year) ? other : best,
-                undefined,
-              );
-              return (
-                <EntryCard
-                  key={`${entry.year}-${"type" in entry ? entry.type : "US House"}`}
-                  entry={entry}
-                  selectable={selectable}
-                  active={selectable && entry.year === activeYear}
-                  onSelect={selectable ? () => onSelectYear?.(entry.year) : undefined}
-                  majorityInfo={chamber ? majorityInfo : null}
-                  net={netChange(entry, prev)}
-                  seatsUp={chamber ? seatsUpByYear?.[entry.year] ?? null : null}
-                />
-              );
-            })}
-          </div>
+          <div ref={listRef} className="flex flex-col">{cards}</div>
         </div>
         <div
           aria-hidden

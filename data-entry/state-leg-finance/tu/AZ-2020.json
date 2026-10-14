@@ -1,668 +1,4751 @@
 {
  "state": "AZ",
  "cycle": 2020,
- "fetched": "2026-10-11",
- "dataThrough": "06/30/2026",
+ "fetched": "2026-10-12",
+ "dataThrough": "12/31/2020",
  "races": [
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-1-44928?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 1",
+   "url": "/az/race/arizona-house-of-representatives-district-1-44928",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 319138.0,
+   "totalExpenditures": 291686.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Judy Burges",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33037.94,
+       "expenditures": 33552.03,
+       "status": "Won",
+       "url": "/az/candidate/judy-burges-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Quang Nguyen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48904.0,
+       "expenditures": 36024.05,
+       "status": "Won",
+       "url": "/az/candidate/quang-nguyen-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Judy Stahl",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 149012.26,
+       "expenditures": 134452.87,
+       "status": "Lost",
+       "url": "/az/candidate/judy-stahl-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Judy Stahl",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 149012.26,
+       "expenditures": 134452.87,
+       "status": "Advanced",
+       "url": "/az/candidate/judy-stahl-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Judy Burges",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33037.94,
+       "expenditures": 33552.03,
+       "status": "Advanced",
+       "url": "/az/candidate/judy-burges-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Quang Nguyen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48904.0,
+       "expenditures": 36024.05,
+       "status": "Advanced",
+       "url": "/az/candidate/quang-nguyen-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Selina Bliss",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 43357.67,
+       "expenditures": 43341.87,
+       "status": "Lost",
+       "url": "/az/candidate/selina-bliss-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ed Cocchiola",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28943.82,
+       "expenditures": 28433.1,
+       "status": "Lost",
+       "url": "/az/candidate/ed-cocchiola-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Steven Sensmeier",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15881.89,
+       "expenditures": 15881.89,
+       "status": "Lost",
+       "url": "/az/candidate/steven-sensmeier-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "1"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-10-44937?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 10",
+   "url": "/az/race/arizona-house-of-representatives-district-10-44937",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 276163.0,
+   "totalExpenditures": 269919.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Domingo S Degrazia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 85924.43,
+       "expenditures": 92070.99,
+       "status": "Won",
+       "url": "/az/candidate/domingo-s-degrazia-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Stephanie Stahl Hamilton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 99478.64,
+       "expenditures": 88366.65,
+       "status": "Won",
+       "url": "/az/candidate/stephanie-stahl-hamilton-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Mabelle Gummere",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48572.38,
+       "expenditures": 48600.72,
+       "status": "Lost",
+       "url": "/az/candidate/mabelle-gummere-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Michael Hicks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7964.62,
+       "expenditures": 7602.65,
+       "status": "Lost",
+       "url": "/az/candidate/michael-hicks?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Domingo S Degrazia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 85924.43,
+       "expenditures": 92070.99,
+       "status": "Advanced",
+       "url": "/az/candidate/domingo-s-degrazia-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Stephanie Stahl Hamilton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 99478.64,
+       "expenditures": 88366.65,
+       "status": "Advanced",
+       "url": "/az/candidate/stephanie-stahl-hamilton-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Paul Stapleton Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34223.28,
+       "expenditures": 33277.79,
+       "status": "Lost",
+       "url": "/az/candidate/paul-stapleton-smith-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Mabelle Gummere",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48572.38,
+       "expenditures": 48600.72,
+       "status": "Advanced",
+       "url": "/az/candidate/mabelle-gummere-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Michael Hicks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7964.62,
+       "expenditures": 7602.65,
+       "status": "Advanced",
+       "url": "/az/candidate/michael-hicks?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "10"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-11-44938?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 11",
+   "url": "/az/race/arizona-house-of-representatives-district-11-44938",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 274769.0,
+   "totalExpenditures": 269260.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Mark Finchem",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 73659.0,
+       "expenditures": 75976.73,
+       "status": "Won",
+       "url": "/az/candidate/mark-finchem-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bret Roberts",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49282.68,
+       "expenditures": 47531.29,
+       "status": "Won",
+       "url": "/az/candidate/bret-roberts-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Felipe Perez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 151827.38,
+       "expenditures": 145752.05,
+       "status": "Lost",
+       "url": "/az/candidate/felipe-reyes-perez-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Felipe Perez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 151827.38,
+       "expenditures": 145752.05,
+       "status": "Advanced",
+       "url": "/az/candidate/felipe-reyes-perez-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Mark Finchem",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 73659.0,
+       "expenditures": 75976.73,
+       "status": "Advanced",
+       "url": "/az/candidate/mark-finchem-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bret Roberts",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49282.68,
+       "expenditures": 47531.29,
+       "status": "Advanced",
+       "url": "/az/candidate/bret-roberts-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "11"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-12-44939?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 12",
+   "url": "/az/race/arizona-house-of-representatives-district-12-44939",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 233096.0,
+   "totalExpenditures": 101353.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Travis Grantham",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68156.86,
+       "expenditures": 58282.33,
+       "status": "Won",
+       "url": "/az/candidate/travis-grantham-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jake Hoffman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 139597.75,
+       "expenditures": 26425.13,
+       "status": "Won",
+       "url": "/az/candidate/jake-hoffman-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kristin Clark",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3252.75,
+       "expenditures": 2621.3,
+       "status": "Lost",
+       "url": "/az/candidate/kristin-clark?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Travis Grantham",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68156.86,
+       "expenditures": 58282.33,
+       "status": "Advanced",
+       "url": "/az/candidate/travis-grantham-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jake Hoffman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 139597.75,
+       "expenditures": 26425.13,
+       "status": "Advanced",
+       "url": "/az/candidate/jake-hoffman-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Mark Boesen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22089.1,
+       "expenditures": 14023.78,
+       "status": "Withdrew",
+       "url": "/az/candidate/mark-boesen-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "12"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-13-44940?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 13",
+   "url": "/az/race/arizona-house-of-representatives-district-13-44940",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 371270.0,
+   "totalExpenditures": 410555.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Timothy Dunn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 134211.15,
+       "expenditures": 136590.66,
+       "status": "Won",
+       "url": "/az/candidate/timothy-dunn-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joanne W Osborne",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 89425.0,
+       "expenditures": 87453.62,
+       "status": "Won",
+       "url": "/az/candidate/joanne-w-osborne-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Mariana Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 51043.0,
+       "expenditures": 51031.84,
+       "status": "Lost",
+       "url": "/az/candidate/mariana-sandoval-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Mariana Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 51043.0,
+       "expenditures": 51031.84,
+       "status": "Advanced",
+       "url": "/az/candidate/mariana-sandoval-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Timothy Dunn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 134211.15,
+       "expenditures": 136590.66,
+       "status": "Advanced",
+       "url": "/az/candidate/timothy-dunn-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joanne W Osborne",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 89425.0,
+       "expenditures": 87453.62,
+       "status": "Advanced",
+       "url": "/az/candidate/joanne-w-osborne-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Steve Montenegro",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96590.56,
+       "expenditures": 135478.58,
+       "status": "Lost",
+       "url": "/az/candidate/steve-montenegro-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-14-44941?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 14",
+   "url": "/az/race/arizona-house-of-representatives-district-14-44941",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 183241.0,
+   "totalExpenditures": 165106.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Gail Griffin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 73639.19,
+       "expenditures": 71704.28,
+       "status": "Won",
+       "url": "/az/candidate/gail-griffin-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Becky Nutt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 56822.59,
+       "expenditures": 40803.64,
+       "status": "Won",
+       "url": "/az/candidate/becky-ann-nutt-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ronnie Maestas Condos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4761.04,
+       "expenditures": 4761.04,
+       "status": "Lost",
+       "url": "/az/candidate/ronnie-maestas-condos-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kimberly Moschetti",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48018.0,
+       "expenditures": 47836.59,
+       "status": "Lost",
+       "url": "/az/candidate/kimberly-isabelle-moschetti-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Ronnie Maestas Condos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4761.04,
+       "expenditures": 4761.04,
+       "status": "Advanced",
+       "url": "/az/candidate/ronnie-maestas-condos-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kimberly Moschetti",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48018.0,
+       "expenditures": 47836.59,
+       "status": "Advanced",
+       "url": "/az/candidate/kimberly-isabelle-moschetti-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Gail Griffin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 73639.19,
+       "expenditures": 71704.28,
+       "status": "Advanced",
+       "url": "/az/candidate/gail-griffin-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Becky Nutt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 56822.59,
+       "expenditures": 40803.64,
+       "status": "Advanced",
+       "url": "/az/candidate/becky-ann-nutt-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "14"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-15-44942?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 15",
+   "url": "/az/race/arizona-house-of-representatives-district-15-44942",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 349814.0,
+   "totalExpenditures": 337549.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Steve Kaiser",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58192.01,
+       "expenditures": 51561.13,
+       "status": "Won",
+       "url": "/az/candidate/steve-kaiser-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Justin Wilmeth",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 62076.66,
+       "expenditures": 60324.71,
+       "status": "Won",
+       "url": "/az/candidate/justin-wilmeth-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kristin Dybvig Pawelko",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 137163.28,
+       "expenditures": 129923.98,
+       "status": "Lost",
+       "url": "/az/candidate/kristin-dybvig-pawelko-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Kristin Dybvig Pawelko",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 137163.28,
+       "expenditures": 129923.98,
+       "status": "Advanced",
+       "url": "/az/candidate/kristin-dybvig-pawelko-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Steve Kaiser",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58192.01,
+       "expenditures": 51561.13,
+       "status": "Advanced",
+       "url": "/az/candidate/steve-kaiser-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Justin Wilmeth",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 62076.66,
+       "expenditures": 60324.71,
+       "status": "Advanced",
+       "url": "/az/candidate/justin-wilmeth-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jarret Hamstreet",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 92382.54,
+       "expenditures": 95739.12,
+       "status": "Lost",
+       "url": "/az/candidate/jarret-hamstreet-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "15"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-16-44943?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 16",
+   "url": "/az/race/arizona-house-of-representatives-district-16-44943",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 151516.0,
+   "totalExpenditures": 129830.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "John Fillmore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37271.12,
+       "expenditures": 28566.21,
+       "status": "Won",
+       "url": "/az/candidate/john-fillmore-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jacqueline Parker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45332.05,
+       "expenditures": 32067.34,
+       "status": "Won",
+       "url": "/az/candidate/jacqueline-parker-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Helen Hunter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6163.27,
+       "expenditures": 5749.26,
+       "status": "Lost",
+       "url": "/az/candidate/helen-hunter?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Helen Hunter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6163.27,
+       "expenditures": 5749.26,
+       "status": "Advanced",
+       "url": "/az/candidate/helen-hunter?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "John Fillmore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37271.12,
+       "expenditures": 28566.21,
+       "status": "Advanced",
+       "url": "/az/candidate/john-fillmore-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jacqueline Parker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45332.05,
+       "expenditures": 32067.34,
+       "status": "Advanced",
+       "url": "/az/candidate/jacqueline-parker-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Lisa Godzich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30460.0,
+       "expenditures": 31157.38,
+       "status": "Lost",
+       "url": "/az/candidate/lisa-godzich-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Forest John Moriarty",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 32290.0,
+       "expenditures": 32290.0,
+       "status": "Lost",
+       "url": "/az/candidate/forest-john-moriarty-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "16"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-17-44944?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 17",
+   "url": "/az/race/arizona-house-of-representatives-district-17-44944",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 623394.0,
+   "totalExpenditures": 554934.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jennifer Pawlik",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 275245.61,
+       "expenditures": 251819.33,
+       "status": "Won",
+       "url": "/az/candidate/jennifer-lynn-pawlik-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jeff Weninger",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 248196.09,
+       "expenditures": 229501.97,
+       "status": "Won",
+       "url": "/az/candidate/jeff-weninger-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Liz Harris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 97010.5,
+       "expenditures": 69301.33,
+       "status": "Lost",
+       "url": "/az/candidate/liz-harris-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Jennifer Pawlik",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 275245.61,
+       "expenditures": 251819.33,
+       "status": "Advanced",
+       "url": "/az/candidate/jennifer-lynn-pawlik-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Jeff Weninger",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 248196.09,
+       "expenditures": 229501.97,
+       "status": "Advanced",
+       "url": "/az/candidate/jeff-weninger-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Liz Harris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 97010.5,
+       "expenditures": 69301.33,
+       "status": "Advanced",
+       "url": "/az/candidate/liz-harris-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Nora Ellen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2941.7,
+       "expenditures": 4311.17,
+       "status": "Withdrew",
+       "url": "/az/candidate/nora-ellen-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "17"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-18-44945?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 18",
+   "url": "/az/race/arizona-house-of-representatives-district-18-44945",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 279643.0,
+   "totalExpenditures": 232241.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Denise Mitzi Epstein",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 116545.5,
+       "expenditures": 99569.23,
+       "status": "Won",
+       "url": "/az/candidate/denise-mitzi-epstein-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jennifer Jermaine",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 120887.59,
+       "expenditures": 91866.72,
+       "status": "Won",
+       "url": "/az/candidate/jennifer-jermaine-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Don Hawker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5454.47,
+       "expenditures": 4841.0,
+       "status": "Lost",
+       "url": "/az/candidate/don-hawker?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bob Robson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 36185.0,
+       "expenditures": 35393.44,
+       "status": "Lost",
+       "url": "/az/candidate/bob-robson-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Denise Mitzi Epstein",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 116545.5,
+       "expenditures": 99569.23,
+       "status": "Advanced",
+       "url": "/az/candidate/denise-mitzi-epstein-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jennifer Jermaine",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 120887.59,
+       "expenditures": 91866.72,
+       "status": "Advanced",
+       "url": "/az/candidate/jennifer-jermaine-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Bob Robson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 36185.0,
+       "expenditures": 35393.44,
+       "status": "Advanced",
+       "url": "/az/candidate/bob-robson-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Don Hawker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5454.47,
+       "expenditures": 4841.0,
+       "status": "Advanced",
+       "url": "/az/candidate/don-hawker?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Alyssa Sheahan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 570.81,
+       "expenditures": 570.81,
+       "status": "Withdrew",
+       "url": "/az/candidate/alyssa-sheahan-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "18"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-19-44946?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 19",
+   "url": "/az/race/arizona-house-of-representatives-district-19-44946",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 215626.0,
+   "totalExpenditures": 170436.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Diego Espinoza",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 96990.0,
+       "expenditures": 76427.44,
+       "status": "Won",
+       "url": "/az/candidate/jose-diego-espinoza-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Lorenzo Sierra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 88378.8,
+       "expenditures": 64014.93,
+       "status": "Won",
+       "url": "/az/candidate/lorenzo-sierra-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Diego Espinoza",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 96990.0,
+       "expenditures": 76427.44,
+       "status": "Advanced",
+       "url": "/az/candidate/jose-diego-espinoza-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Lorenzo Sierra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 88378.8,
+       "expenditures": 64014.93,
+       "status": "Advanced",
+       "url": "/az/candidate/lorenzo-sierra-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Arturo Ramirez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1775.0,
+       "expenditures": 1775.0,
+       "status": "Withdrew",
+       "url": "/az/candidate/arturo-ramirez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Leezah Sun",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 28482.0,
+       "expenditures": 28218.88,
+       "status": "Lost",
+       "url": "/az/candidate/leezah-sun-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "19"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-2-44929?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 2",
+   "url": "/az/race/arizona-house-of-representatives-district-2-44929",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 348182.0,
+   "totalExpenditures": 357475.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Daniel Hernandez Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 138398.29,
+       "expenditures": 148108.46,
+       "status": "Won",
+       "url": "/az/candidate/daniel-hernandez-jr-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Andrea Dalessandro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56005.0,
+       "expenditures": 55788.76,
+       "status": "Won",
+       "url": "/az/candidate/andrea-dalessandro-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Deborah McEwen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 47772.57,
+       "expenditures": 47716.82,
+       "status": "Lost",
+       "url": "/az/candidate/deborah-ann-mcewen-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Daniel Hernandez Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 138398.29,
+       "expenditures": 148108.46,
+       "status": "Advanced",
+       "url": "/az/candidate/daniel-hernandez-jr-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Andrea Dalessandro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56005.0,
+       "expenditures": 55788.76,
+       "status": "Advanced",
+       "url": "/az/candidate/andrea-dalessandro-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Luis Parra",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33667.0,
+       "expenditures": 33667.0,
+       "status": "Lost",
+       "url": "/az/candidate/luis-parra?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Billy Peard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 72339.45,
+       "expenditures": 72194.18,
+       "status": "Lost",
+       "url": "/az/candidate/william-billy-bradford-peard-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Deborah McEwen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 47772.57,
+       "expenditures": 47716.82,
+       "status": "Advanced",
+       "url": "/az/candidate/deborah-ann-mcewen-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "2"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-20-44947?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 20",
+   "url": "/az/race/arizona-house-of-representatives-district-20-44947",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1015286.0,
+   "totalExpenditures": 949008.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Shawnna Bolick",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 241164.77,
+       "expenditures": 243721.65,
+       "status": "Won",
+       "url": "/az/candidate/shawnna-bolick-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Judy Schwiebert",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 584814.77,
+       "expenditures": 524194.24,
+       "status": "Won",
+       "url": "/az/candidate/judy-schwiebert-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Anthony T Kern",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 189306.66,
+       "expenditures": 181091.89,
+       "status": "Lost",
+       "url": "/az/candidate/anthony-t-kern-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Judy Schwiebert",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 584814.77,
+       "expenditures": 524194.24,
+       "status": "Advanced",
+       "url": "/az/candidate/judy-schwiebert-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Shawnna Bolick",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 241164.77,
+       "expenditures": 243721.65,
+       "status": "Advanced",
+       "url": "/az/candidate/shawnna-bolick-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Anthony T Kern",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 189306.66,
+       "expenditures": 181091.89,
+       "status": "Advanced",
+       "url": "/az/candidate/anthony-t-kern-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "20"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-21-44948?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 21",
+   "url": "/az/race/arizona-house-of-representatives-district-21-44948",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 509540.0,
+   "totalExpenditures": 466111.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Kevin Payne",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 83769.37,
+       "expenditures": 83478.98,
+       "status": "Won",
+       "url": "/az/candidate/kevin-payne-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Beverly Pingerelli",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49179.21,
+       "expenditures": 48675.45,
+       "status": "Won",
+       "url": "/az/candidate/beverly-pingerelli-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kathy Knecht",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 370449.51,
+       "expenditures": 327815.03,
+       "status": "Lost",
+       "url": "/az/candidate/kathy-knecht-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Kathy Knecht",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 370449.51,
+       "expenditures": 327815.03,
+       "status": "Advanced",
+       "url": "/az/candidate/kathy-knecht-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Kevin Payne",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 83769.37,
+       "expenditures": 83478.98,
+       "status": "Advanced",
+       "url": "/az/candidate/kevin-payne-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Beverly Pingerelli",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49179.21,
+       "expenditures": 48675.45,
+       "status": "Advanced",
+       "url": "/az/candidate/beverly-pingerelli-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Randy Miller",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6141.74,
+       "expenditures": 6141.74,
+       "status": "Lost",
+       "url": "/az/candidate/randy-miller-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "21"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-22-44949?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 22",
+   "url": "/az/race/arizona-house-of-representatives-district-22-44949",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 208640.0,
+   "totalExpenditures": 154916.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Frank Carroll",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23070.0,
+       "expenditures": 14120.94,
+       "status": "Won",
+       "url": "/az/candidate/frank-carroll-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Benjamin Toma",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 77914.11,
+       "expenditures": 33685.14,
+       "status": "Won",
+       "url": "/az/candidate/benjamin-toma-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Wendy L Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47993.0,
+       "expenditures": 47543.0,
+       "status": "Lost",
+       "url": "/az/candidate/wendy-l-garcia-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Mary Honne",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 59663.31,
+       "expenditures": 59567.31,
+       "status": "Lost",
+       "url": "/az/candidate/mary-kathleen-honne-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Wendy L Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47993.0,
+       "expenditures": 47543.0,
+       "status": "Advanced",
+       "url": "/az/candidate/wendy-l-garcia-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Mary Honne",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 59663.31,
+       "expenditures": 59567.31,
+       "status": "Advanced",
+       "url": "/az/candidate/mary-kathleen-honne-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Frank Carroll",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23070.0,
+       "expenditures": 14120.94,
+       "status": "Advanced",
+       "url": "/az/candidate/frank-carroll-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Benjamin Toma",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 77914.11,
+       "expenditures": 33685.14,
+       "status": "Advanced",
+       "url": "/az/candidate/benjamin-toma-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "22"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-23-44950?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 23",
+   "url": "/az/race/arizona-house-of-representatives-district-23-44950",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 617111.0,
+   "totalExpenditures": 643537.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "John Kavanagh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 57122.51,
+       "expenditures": 104720.41,
+       "status": "Won",
+       "url": "/az/candidate/john-kavanagh-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joseph Chaplik",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 224902.76,
+       "expenditures": 221553.19,
+       "status": "Won",
+       "url": "/az/candidate/joseph-chaplik-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Eric Kurland",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 279493.44,
+       "expenditures": 264180.51,
+       "status": "Lost",
+       "url": "/az/candidate/eric-kurland-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joe Romack",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1000.0,
+       "expenditures": 809.83,
+       "status": "Lost",
+       "url": "/az/candidate/joe-romack?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Eric Kurland",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 279493.44,
+       "expenditures": 264180.51,
+       "status": "Advanced",
+       "url": "/az/candidate/eric-kurland-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "John Kavanagh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 57122.51,
+       "expenditures": 104720.41,
+       "status": "Advanced",
+       "url": "/az/candidate/john-kavanagh-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joseph Chaplik",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 224902.76,
+       "expenditures": 221553.19,
+       "status": "Advanced",
+       "url": "/az/candidate/joseph-chaplik-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jay A Lawrence",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 54237.0,
+       "expenditures": 51917.97,
+       "status": "Lost",
+       "url": "/az/candidate/jay-a-lawrence-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jacqueline Fox",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 355.0,
+       "expenditures": 355.0,
+       "status": "Withdrew",
+       "url": "/az/candidate/jacqueline-fox-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "23"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-24-44951?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 24",
+   "url": "/az/race/arizona-house-of-representatives-district-24-44951",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 189820.0,
+   "totalExpenditures": 158338.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jennifer Longdon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 95027.69,
+       "expenditures": 89222.93,
+       "status": "Won",
+       "url": "/az/candidate/jennifer-longdon-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Amish Shah",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 91856.65,
+       "expenditures": 67209.97,
+       "status": "Won",
+       "url": "/az/candidate/amish-shah-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "David Alger Sr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1234.8,
+       "expenditures": 550.0,
+       "status": "Lost",
+       "url": "/az/candidate/david-michael-alger-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Robyn Cushman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1701.33,
+       "expenditures": 1355.41,
+       "status": "Lost",
+       "url": "/az/candidate/robyn-cushman?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Jennifer Longdon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 95027.69,
+       "expenditures": 89222.93,
+       "status": "Advanced",
+       "url": "/az/candidate/jennifer-longdon-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Amish Shah",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 91856.65,
+       "expenditures": 67209.97,
+       "status": "Advanced",
+       "url": "/az/candidate/amish-shah-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "David Alger Sr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1234.8,
+       "expenditures": 550.0,
+       "status": "Advanced",
+       "url": "/az/candidate/david-michael-alger-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Robyn Cushman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1701.33,
+       "expenditures": 1355.41,
+       "status": "Advanced",
+       "url": "/az/candidate/robyn-cushman?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "24"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-25-44952?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 25",
+   "url": "/az/race/arizona-house-of-representatives-district-25-44952",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 389920.0,
+   "totalExpenditures": 334190.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Russell Bowers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 225813.7,
+       "expenditures": 176206.43,
+       "status": "Won",
+       "url": "/az/candidate/russell-w-rusty-bowers-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Michelle Udall",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 72484.0,
+       "expenditures": 75684.34,
+       "status": "Won",
+       "url": "/az/candidate/michelle-udall-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Suzanne Hug",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 72133.06,
+       "expenditures": 62887.05,
+       "status": "Lost",
+       "url": "/az/candidate/suzanne-hug-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Suzanne Hug",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 72133.06,
+       "expenditures": 62887.05,
+       "status": "Advanced",
+       "url": "/az/candidate/suzanne-hug-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Russell Bowers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 225813.7,
+       "expenditures": 176206.43,
+       "status": "Advanced",
+       "url": "/az/candidate/russell-w-rusty-bowers-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Michelle Udall",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 72484.0,
+       "expenditures": 75684.34,
+       "status": "Advanced",
+       "url": "/az/candidate/michelle-udall-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kathy Pearce",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19489.35,
+       "expenditures": 19412.0,
+       "status": "Lost",
+       "url": "/az/candidate/kathy-pearce?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "25"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-26-44953?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 26",
+   "url": "/az/race/arizona-house-of-representatives-district-26-44953",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 249202.0,
+   "totalExpenditures": 222996.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Athena Salman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52119.05,
+       "expenditures": 52119.05,
+       "status": "Won",
+       "url": "/az/candidate/athena-salman-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Melody Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50365.73,
+       "expenditures": 45546.52,
+       "status": "Won",
+       "url": "/az/candidate/melody-savannah-hernandez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bill \"Wjl\" Loughrige",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27296.64,
+       "expenditures": 27296.64,
+       "status": "Lost",
+       "url": "/az/candidate/bill-wjl-loughrige-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Seth Sifuentes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 47338.22,
+       "expenditures": 47192.9,
+       "status": "Lost",
+       "url": "/az/candidate/seth-marcus-sifuentes-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Athena Salman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52119.05,
+       "expenditures": 52119.05,
+       "status": "Advanced",
+       "url": "/az/candidate/athena-salman-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Melody Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50365.73,
+       "expenditures": 45546.52,
+       "status": "Advanced",
+       "url": "/az/candidate/melody-savannah-hernandez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Patrick Morales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18097.0,
+       "expenditures": 18050.27,
+       "status": "Lost",
+       "url": "/az/candidate/patrick-morales-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Debbie Nez Manuel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 53985.81,
+       "expenditures": 32790.79,
+       "status": "Lost",
+       "url": "/az/candidate/debbie-nez-manuel-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Bill \"Wjl\" Loughrige",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27296.64,
+       "expenditures": 27296.64,
+       "status": "Advanced",
+       "url": "/az/candidate/bill-wjl-loughrige-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Seth Sifuentes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 47338.22,
+       "expenditures": 47192.9,
+       "status": "Advanced",
+       "url": "/az/candidate/seth-marcus-sifuentes-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "26"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-27-44954?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 27",
+   "url": "/az/race/arizona-house-of-representatives-district-27-44954",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 199297.0,
+   "totalExpenditures": 188091.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Reginald Bolding",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 75027.45,
+       "expenditures": 71885.21,
+       "status": "Won",
+       "url": "/az/candidate/reginald-bolding-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Diego Rodriguez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 47709.69,
+       "expenditures": 39849.7,
+       "status": "Won",
+       "url": "/az/candidate/diego-rodriguez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Tatiana Pena",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51897.25,
+       "expenditures": 51693.0,
+       "status": "Lost",
+       "url": "/az/candidate/tatiana-pena-m-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Reginald Bolding",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 75027.45,
+       "expenditures": 71885.21,
+       "status": "Advanced",
+       "url": "/az/candidate/reginald-bolding-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Diego Rodriguez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 47709.69,
+       "expenditures": 39849.7,
+       "status": "Advanced",
+       "url": "/az/candidate/diego-rodriguez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Catherine H Miranda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 24663.0,
+       "expenditures": 24663.0,
+       "status": "Lost",
+       "url": "/az/candidate/catherine-miranda-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Tatiana Pena",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51897.25,
+       "expenditures": 51693.0,
+       "status": "Advanced",
+       "url": "/az/candidate/tatiana-pena-m-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "27"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-28-44955?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 28",
+   "url": "/az/race/arizona-house-of-representatives-district-28-44955",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 567207.0,
+   "totalExpenditures": 456481.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Kelli Butler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 221055.37,
+       "expenditures": 159687.84,
+       "status": "Won",
+       "url": "/az/candidate/kelli-butler-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Aaron Lieberman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 293384.09,
+       "expenditures": 243710.74,
+       "status": "Won",
+       "url": "/az/candidate/aaron-lieberman-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kenneth Bowers Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 950.0,
+       "expenditures": 1335.42,
+       "status": "Lost",
+       "url": "/az/candidate/kenneth-robinson-bowers-jr-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jana Jackson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51817.1,
+       "expenditures": 51747.1,
+       "status": "Lost",
+       "url": "/az/candidate/jana-jackson-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Kelli Butler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 221055.37,
+       "expenditures": 159687.84,
+       "status": "Advanced",
+       "url": "/az/candidate/kelli-butler-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Aaron Lieberman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 293384.09,
+       "expenditures": 243710.74,
+       "status": "Advanced",
+       "url": "/az/candidate/aaron-lieberman-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Kenneth Bowers Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 950.0,
+       "expenditures": 1335.42,
+       "status": "Advanced",
+       "url": "/az/candidate/kenneth-robinson-bowers-jr-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jana Jackson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51817.1,
+       "expenditures": 51747.1,
+       "status": "Advanced",
+       "url": "/az/candidate/jana-jackson-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "28"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-29-44956?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 29",
+   "url": "/az/race/arizona-house-of-representatives-district-29-44956",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 282405.0,
+   "totalExpenditures": 274715.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Richard Andrade",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 70042.03,
+       "expenditures": 70331.36,
+       "status": "Won",
+       "url": "/az/candidate/richard-andrade-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Cesar Chavez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 99598.0,
+       "expenditures": 100076.71,
+       "status": "Won",
+       "url": "/az/candidate/cesar-chavez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Billy Bragg Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46783.0,
+       "expenditures": 47373.0,
+       "status": "Lost",
+       "url": "/az/candidate/billy-bragg-jr-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Helen Fokszanskyj Conti",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46847.28,
+       "expenditures": 47192.28,
+       "status": "Lost",
+       "url": "/az/candidate/helen-fokszanskyj-conti-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Richard Andrade",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 70042.03,
+       "expenditures": 70331.36,
+       "status": "Advanced",
+       "url": "/az/candidate/richard-andrade-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Cesar Chavez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 99598.0,
+       "expenditures": 100076.71,
+       "status": "Advanced",
+       "url": "/az/candidate/cesar-chavez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Teddy Castro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19125.0,
+       "expenditures": 9741.2,
+       "status": "Lost",
+       "url": "/az/candidate/teddy-castro?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Billy Bragg Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46783.0,
+       "expenditures": 47373.0,
+       "status": "Advanced",
+       "url": "/az/candidate/billy-bragg-jr-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Helen Fokszanskyj Conti",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46847.28,
+       "expenditures": 47192.28,
+       "status": "Advanced",
+       "url": "/az/candidate/helen-fokszanskyj-conti-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Alysia McMillan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/alysia-mcmillan?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "29"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-3-44930?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 3",
+   "url": "/az/race/arizona-house-of-representatives-district-3-44930",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 260022.0,
+   "totalExpenditures": 237746.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Andres Cano",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 88103.23,
+       "expenditures": 88267.05,
+       "status": "Won",
+       "url": "/az/candidate/andres-cano-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Alma C Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 154196.97,
+       "expenditures": 133099.52,
+       "status": "Won",
+       "url": "/az/candidate/alma-c-hernandez-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Andres Cano",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 88103.23,
+       "expenditures": 88267.05,
+       "status": "Advanced",
+       "url": "/az/candidate/andres-cano-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Alma C Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 154196.97,
+       "expenditures": 133099.52,
+       "status": "Advanced",
+       "url": "/az/candidate/alma-c-hernandez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Javier R Soto",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17722.25,
+       "expenditures": 16379.12,
+       "status": "Lost",
+       "url": "/az/candidate/javier-r-soto-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "3"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-30-44957?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 30",
+   "url": "/az/race/arizona-house-of-representatives-district-30-44957",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 134114.0,
+   "totalExpenditures": 103897.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Robert Meza",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 74129.45,
+       "expenditures": 67518.89,
+       "status": "Won",
+       "url": "/az/candidate/robert-meza-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Raquel Teran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59984.12,
+       "expenditures": 36378.25,
+       "status": "Won",
+       "url": "/az/candidate/raquel-teran-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Robert Meza",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 74129.45,
+       "expenditures": 67518.89,
+       "status": "Advanced",
+       "url": "/az/candidate/robert-meza-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Raquel Teran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59984.12,
+       "expenditures": 36378.25,
+       "status": "Advanced",
+       "url": "/az/candidate/raquel-teran-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Gary Spears",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/gary-spears?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "30"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-4-44931?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 4",
+   "url": "/az/race/arizona-house-of-representatives-district-4-44931",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 339771.0,
+   "totalExpenditures": 289317.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Charlene R Fernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 159170.13,
+       "expenditures": 127800.04,
+       "status": "Won",
+       "url": "/az/candidate/charlene-r-fernandez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joel John",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 88683.24,
+       "expenditures": 84538.58,
+       "status": "Won",
+       "url": "/az/candidate/joel-dee-john-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Geraldine Peten",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 91917.42,
+       "expenditures": 76978.85,
+       "status": "Lost",
+       "url": "/az/candidate/geraldine-peten-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Charlene R Fernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 159170.13,
+       "expenditures": 127800.04,
+       "status": "Advanced",
+       "url": "/az/candidate/charlene-r-fernandez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Geraldine Peten",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 91917.42,
+       "expenditures": 76978.85,
+       "status": "Advanced",
+       "url": "/az/candidate/geraldine-peten-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Joel John",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 88683.24,
+       "expenditures": 84538.58,
+       "status": "Advanced",
+       "url": "/az/candidate/joel-dee-john-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "4"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-5-44932?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 5",
+   "url": "/az/race/arizona-house-of-representatives-district-5-44932",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 149268.0,
+   "totalExpenditures": 107675.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Leo Biasiucci",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31895.0,
+       "expenditures": 11341.49,
+       "status": "Won",
+       "url": "/az/candidate/leo-biasiucci-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Regina Cobb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 117373.07,
+       "expenditures": 96333.66,
+       "status": "Won",
+       "url": "/az/candidate/regina-cobb-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Leo Biasiucci",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31895.0,
+       "expenditures": 11341.49,
+       "status": "Advanced",
+       "url": "/az/candidate/leo-biasiucci-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Regina Cobb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 117373.07,
+       "expenditures": 96333.66,
+       "status": "Advanced",
+       "url": "/az/candidate/regina-cobb-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "5"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-6-44933?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 6",
+   "url": "/az/race/arizona-house-of-representatives-district-6-44933",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1087758.0,
+   "totalExpenditures": 1058708.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Walter Blackman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 134338.32,
+       "expenditures": 146061.66,
+       "status": "Won",
+       "url": "/az/candidate/walt-blackman-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Brenda Barton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57115.98,
+       "expenditures": 58110.78,
+       "status": "Won",
+       "url": "/az/candidate/brenda-barton-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Coral Evans",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 813792.21,
+       "expenditures": 753258.41,
+       "status": "Lost",
+       "url": "/az/candidate/coral-evans-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Art Babbott",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 82511.62,
+       "expenditures": 101276.86,
+       "status": "Lost",
+       "url": "/az/candidate/art-babbott-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Coral Evans",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 813792.21,
+       "expenditures": 753258.41,
+       "status": "Advanced",
+       "url": "/az/candidate/coral-evans-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Walter Blackman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 134338.32,
+       "expenditures": 146061.66,
+       "status": "Advanced",
+       "url": "/az/candidate/walt-blackman-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Brenda Barton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57115.98,
+       "expenditures": 58110.78,
+       "status": "Advanced",
+       "url": "/az/candidate/brenda-barton-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "6"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-7-44934?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 7",
+   "url": "/az/race/arizona-house-of-representatives-district-7-44934",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 93639.0,
+   "totalExpenditures": 90056.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Arlando Teller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29358.0,
+       "expenditures": 26121.24,
+       "status": "Won",
+       "url": "/az/candidate/arlando-sean-teller-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Myron Tsosie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 250.0,
+       "expenditures": 7.85,
+       "status": "Won",
+       "url": "/az/candidate/myron-tsosie-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "James Randall Parks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14192.18,
+       "expenditures": 14192.18,
+       "status": "Lost",
+       "url": "/az/candidate/james-randall-parks-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "David Peelman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49839.0,
+       "expenditures": 49735.16,
+       "status": "Lost",
+       "url": "/az/candidate/david-peelman-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Arlando Teller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29358.0,
+       "expenditures": 26121.24,
+       "status": "Advanced",
+       "url": "/az/candidate/arlando-sean-teller-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Myron Tsosie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 250.0,
+       "expenditures": 7.85,
+       "status": "Advanced",
+       "url": "/az/candidate/myron-tsosie-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "James Randall Parks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14192.18,
+       "expenditures": 14192.18,
+       "status": "Advanced",
+       "url": "/az/candidate/james-randall-parks-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "David Peelman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49839.0,
+       "expenditures": 49735.16,
+       "status": "Advanced",
+       "url": "/az/candidate/david-peelman-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "7"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-8-44935?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 8",
+   "url": "/az/race/arizona-house-of-representatives-district-8-44935",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 312223.0,
+   "totalExpenditures": 345470.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "David Cook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 112762.08,
+       "expenditures": 144036.55,
+       "status": "Won",
+       "url": "/az/candidate/david-cook-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Frank Pratt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 66426.03,
+       "expenditures": 69651.17,
+       "status": "Won",
+       "url": "/az/candidate/frank-pratt-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Sharon Girard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 108863.73,
+       "expenditures": 107510.78,
+       "status": "Lost",
+       "url": "/az/candidate/sharon-girard-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Sharon Girard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 108863.73,
+       "expenditures": 107510.78,
+       "status": "Advanced",
+       "url": "/az/candidate/sharon-girard-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "David Cook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 112762.08,
+       "expenditures": 144036.55,
+       "status": "Advanced",
+       "url": "/az/candidate/david-cook-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Frank Pratt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 66426.03,
+       "expenditures": 69651.17,
+       "status": "Advanced",
+       "url": "/az/candidate/frank-pratt-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Neal Carter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24171.63,
+       "expenditures": 24271.63,
+       "status": "Lost",
+       "url": "/az/candidate/neal-carter-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "8"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-house-of-representatives-district-9-44936?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona House of Representatives District 9",
+   "url": "/az/race/arizona-house-of-representatives-district-9-44936",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 302678.0,
+   "totalExpenditures": 286837.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Randall Friese",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 71613.31,
+       "expenditures": 70455.45,
+       "status": "Won",
+       "url": "/az/candidate/randall-s-friese-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Pamela Powers Hannley",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53233.36,
+       "expenditures": 53299.36,
+       "status": "Won",
+       "url": "/az/candidate/pamela-powers-hannley-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Brendan Lyons",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 177806.0,
+       "expenditures": 163057.27,
+       "status": "Lost",
+       "url": "/az/candidate/brendan-timothy-lyons-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Randall Friese",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 71613.31,
+       "expenditures": 70455.45,
+       "status": "Advanced",
+       "url": "/az/candidate/randall-s-friese-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Pamela Powers Hannley",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53233.36,
+       "expenditures": 53299.36,
+       "status": "Advanced",
+       "url": "/az/candidate/pamela-powers-hannley-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Steven Robert Remus",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 25.0,
+       "expenditures": 25.0,
+       "status": "Withdrew",
+       "url": "/az/candidate/steven-robert-remus-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Brendan Lyons",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 177806.0,
+       "expenditures": 163057.27,
+       "status": "Advanced",
+       "url": "/az/candidate/brendan-timothy-lyons-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "9"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-1-44958?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 1",
+   "url": "/az/race/arizona-state-senate-district-1-44958",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 172738.0,
+   "totalExpenditures": 92156.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Karen Fann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 172737.93,
+       "expenditures": 92155.6,
+       "status": "Won",
+       "url": "/az/candidate/karen-fann-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Karen Fann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 172737.93,
+       "expenditures": 92155.6,
+       "status": "Advanced",
+       "url": "/az/candidate/karen-fann-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "1"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-10-44967?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 10",
+   "url": "/az/race/arizona-state-senate-district-10-44967",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 146405.0,
+   "totalExpenditures": 162180.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Kirsten Engel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 97736.57,
+       "expenditures": 114049.02,
+       "status": "Won",
+       "url": "/az/candidate/kirsten-engel-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Justine L Wadsack",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48668.0,
+       "expenditures": 48131.01,
+       "status": "Lost",
+       "url": "/az/candidate/justine-l-wadsack-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Kirsten Engel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 97736.57,
+       "expenditures": 114049.02,
+       "status": "Advanced",
+       "url": "/az/candidate/kirsten-engel-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Justine L Wadsack",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48668.0,
+       "expenditures": 48131.01,
+       "status": "Advanced",
+       "url": "/az/candidate/justine-l-wadsack-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "10"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-11-44968?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 11",
+   "url": "/az/race/arizona-state-senate-district-11-44968",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 364828.0,
+   "totalExpenditures": 360099.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Vince Leach",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 117887.22,
+       "expenditures": 120900.04,
+       "status": "Won",
+       "url": "/az/candidate/venden-vince-w-leach-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Joanna Mendoza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 221246.67,
+       "expenditures": 213505.34,
+       "status": "Lost",
+       "url": "/az/candidate/joanna-mendoza-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Joanna Mendoza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 221246.67,
+       "expenditures": 213505.34,
+       "status": "Advanced",
+       "url": "/az/candidate/joanna-mendoza-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Linda Patterson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25693.7,
+       "expenditures": 25693.7,
+       "status": "Lost",
+       "url": "/az/candidate/linda-darece-patterson-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Vince Leach",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 117887.22,
+       "expenditures": 120900.04,
+       "status": "Advanced",
+       "url": "/az/candidate/venden-vince-w-leach-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "11"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-12-44969?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 12",
+   "url": "/az/race/arizona-state-senate-district-12-44969",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 112086.0,
+   "totalExpenditures": 81721.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Warren Petersen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 60970.0,
+       "expenditures": 30605.27,
+       "status": "Won",
+       "url": "/az/candidate/warren-petersen-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Lynsey Robinson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 51116.17,
+       "expenditures": 51116.17,
+       "status": "Lost",
+       "url": "/az/candidate/lynsey-w-robinson-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Lynsey Robinson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 51116.17,
+       "expenditures": 51116.17,
+       "status": "Advanced",
+       "url": "/az/candidate/lynsey-w-robinson-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Warren Petersen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 60970.0,
+       "expenditures": 30605.27,
+       "status": "Advanced",
+       "url": "/az/candidate/warren-petersen-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "12"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-13-44970?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 13",
+   "url": "/az/race/arizona-state-senate-district-13-44970",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 60925.0,
+   "totalExpenditures": 21387.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Sine Kerr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60925.0,
+       "expenditures": 21387.08,
+       "status": "Won",
+       "url": "/az/candidate/sine-kerr-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Brent Backus",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/brent-backus?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Sine Kerr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60925.0,
+       "expenditures": 21387.08,
+       "status": "Advanced",
+       "url": "/az/candidate/sine-kerr-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-14-44971?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 14",
+   "url": "/az/race/arizona-state-senate-district-14-44971",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 146368.0,
+   "totalExpenditures": 95122.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "David Gowan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 93380.64,
+       "expenditures": 41682.98,
+       "status": "Won",
+       "url": "/az/candidate/david-gowan-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bob Karp",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52987.54,
+       "expenditures": 53439.19,
+       "status": "Lost",
+       "url": "/az/candidate/bob-karp-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Bob Karp",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52987.54,
+       "expenditures": 53439.19,
+       "status": "Advanced",
+       "url": "/az/candidate/bob-karp-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "David Gowan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 93380.64,
+       "expenditures": 41682.98,
+       "status": "Advanced",
+       "url": "/az/candidate/david-gowan-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "14"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-15-44972?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 15",
+   "url": "/az/race/arizona-state-senate-district-15-44972",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 627556.0,
+   "totalExpenditures": 635050.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Nancy K Barto",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 226859.26,
+       "expenditures": 222609.61,
+       "status": "Won",
+       "url": "/az/candidate/nancy-kay-barto-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Nancy K Barto",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 226859.26,
+       "expenditures": 222609.61,
+       "status": "Advanced",
+       "url": "/az/candidate/nancy-kay-barto-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Heather Carter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 400696.48,
+       "expenditures": 412440.59,
+       "status": "Lost",
+       "url": "/az/candidate/heather-carter-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "15"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-16-44973?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 16",
+   "url": "/az/race/arizona-state-senate-district-16-44973",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 50690.0,
+   "totalExpenditures": 53577.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Kelly Townsend",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45286.77,
+       "expenditures": 49640.55,
+       "status": "Won",
+       "url": "/az/candidate/kelly-townsend-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Nick Fierro",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 5402.89,
+       "expenditures": 3936.19,
+       "status": "Lost",
+       "url": "/az/candidate/nick-fierro-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Kelly Townsend",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45286.77,
+       "expenditures": 49640.55,
+       "status": "Advanced",
+       "url": "/az/candidate/kelly-townsend-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "16"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-17-44974?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 17",
+   "url": "/az/race/arizona-state-senate-district-17-44974",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 787519.0,
+   "totalExpenditures": 715568.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "JD Mesnard",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 297615.25,
+       "expenditures": 295557.1,
+       "status": "Won",
+       "url": "/az/candidate/jd-mesnard-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ajlan Kurdoglu",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 489904.1,
+       "expenditures": 420011.2,
+       "status": "Lost",
+       "url": "/az/candidate/ajlan-kurdoglu-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Ajlan Kurdoglu",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 489904.1,
+       "expenditures": 420011.2,
+       "status": "Advanced",
+       "url": "/az/candidate/ajlan-kurdoglu-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "JD Mesnard",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 297615.25,
+       "expenditures": 295557.1,
+       "status": "Advanced",
+       "url": "/az/candidate/jd-mesnard-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "17"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-18-44975?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 18",
+   "url": "/az/race/arizona-state-senate-district-18-44975",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 276788.0,
+   "totalExpenditures": 259677.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Sean Bowie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 216085.45,
+       "expenditures": 211007.1,
+       "status": "Won",
+       "url": "/az/candidate/sean-bowie-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Suzanne Sharer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 60702.67,
+       "expenditures": 48669.54,
+       "status": "Lost",
+       "url": "/az/candidate/suzanne-sharer-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Sean Bowie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 216085.45,
+       "expenditures": 211007.1,
+       "status": "Advanced",
+       "url": "/az/candidate/sean-bowie-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Suzanne Sharer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 60702.67,
+       "expenditures": 48669.54,
+       "status": "Advanced",
+       "url": "/az/candidate/suzanne-sharer-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "18"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-19-44976?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 19",
+   "url": "/az/race/arizona-state-senate-district-19-44976",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 62165.0,
+   "totalExpenditures": 51589.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Guadalupe Chavira Contreras",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 62165.0,
+       "expenditures": 51588.63,
+       "status": "Won",
+       "url": "/az/candidate/guadalupe-chavira-contreras-mr-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Guadalupe Chavira Contreras",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 62165.0,
+       "expenditures": 51588.63,
+       "status": "Advanced",
+       "url": "/az/candidate/guadalupe-chavira-contreras-mr-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Steven Robinson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/steven-robinson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "19"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-2-44959?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 2",
+   "url": "/az/race/arizona-state-senate-district-2-44959",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 95523.0,
+   "totalExpenditures": 77536.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Rosanna Gabaldon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44730.0,
+       "expenditures": 26743.54,
+       "status": "Won",
+       "url": "/az/candidate/rosanna-gabaldon-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Mark Workman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 50792.5,
+       "expenditures": 50792.5,
+       "status": "Lost",
+       "url": "/az/candidate/mark-workman-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Rosanna Gabaldon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44730.0,
+       "expenditures": 26743.54,
+       "status": "Advanced",
+       "url": "/az/candidate/rosanna-gabaldon-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Mark Workman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 50792.5,
+       "expenditures": 50792.5,
+       "status": "Advanced",
+       "url": "/az/candidate/mark-workman-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "2"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-20-44977?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 20",
+   "url": "/az/race/arizona-state-senate-district-20-44977",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 575915.0,
+   "totalExpenditures": 535574.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Paul Boyer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 208459.23,
+       "expenditures": 222560.65,
+       "status": "Won",
+       "url": "/az/candidate/paul-boyer-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Douglas Ervin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 367456.19,
+       "expenditures": 313012.94,
+       "status": "Lost",
+       "url": "/az/candidate/douglas-ervin-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Douglas Ervin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 367456.19,
+       "expenditures": 313012.94,
+       "status": "Advanced",
+       "url": "/az/candidate/douglas-ervin-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Paul Boyer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 208459.23,
+       "expenditures": 222560.65,
+       "status": "Advanced",
+       "url": "/az/candidate/paul-boyer-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "20"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-21-44978?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 21",
+   "url": "/az/race/arizona-state-senate-district-21-44978",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 87248.0,
+   "totalExpenditures": 161717.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Rick Gray",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 84263.37,
+       "expenditures": 78126.53,
+       "status": "Won",
+       "url": "/az/candidate/rick-gray-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Brian Whitman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2678.79,
+       "expenditures": 2678.79,
+       "status": "Withdrew",
+       "url": "/az/candidate/brian-whitman-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Brian Whitman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2678.79,
+       "expenditures": 2678.79,
+       "status": "Advanced",
+       "url": "/az/candidate/brian-whitman-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Rick Gray",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 84263.37,
+       "expenditures": 78126.53,
+       "status": "Advanced",
+       "url": "/az/candidate/rick-gray-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ryan Eldridge",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 306.01,
+       "expenditures": 80911.88,
+       "status": "Lost",
+       "url": "/az/candidate/ryan-eldridge?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "21"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-22-44979?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 22",
+   "url": "/az/race/arizona-state-senate-district-22-44979",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 117928.0,
+   "totalExpenditures": 107253.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "David A Livingston",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 64535.79,
+       "expenditures": 58769.47,
+       "status": "Won",
+       "url": "/az/candidate/david-alan-livingston-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Sarah Tyree",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49177.68,
+       "expenditures": 45110.62,
+       "status": "Lost",
+       "url": "/az/candidate/sarah-tyree-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Sarah Tyree",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49177.68,
+       "expenditures": 45110.62,
+       "status": "Advanced",
+       "url": "/az/candidate/sarah-tyree-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "David A Livingston",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 64535.79,
+       "expenditures": 58769.47,
+       "status": "Advanced",
+       "url": "/az/candidate/david-alan-livingston-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Van Dicarlo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 637.0,
+       "expenditures": 637.0,
+       "status": "Lost",
+       "url": "/az/candidate/van-anthony-dicarlo-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Hop Nguyen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3577.09,
+       "expenditures": 2735.53,
+       "status": "Lost",
+       "url": "/az/candidate/hop-h-nguyen-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "22"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-23-44980?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 23",
+   "url": "/az/race/arizona-state-senate-district-23-44980",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 463907.0,
+   "totalExpenditures": 466520.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Michelle Ugenti Rita",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 126759.14,
+       "expenditures": 127863.92,
+       "status": "Won",
+       "url": "/az/candidate/michelle-ugenti-rita-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Seth Blattman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 137877.75,
+       "expenditures": 131667.5,
+       "status": "Lost",
+       "url": "/az/candidate/seth-blattman-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Seth Blattman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 137877.75,
+       "expenditures": 131667.5,
+       "status": "Advanced",
+       "url": "/az/candidate/seth-blattman-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Michelle Ugenti Rita",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 126759.14,
+       "expenditures": 127863.92,
+       "status": "Advanced",
+       "url": "/az/candidate/michelle-ugenti-rita-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Alexander Kolodin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 148899.38,
+       "expenditures": 148899.38,
+       "status": "Lost",
+       "url": "/az/candidate/alexander-kolodin-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Adam Kwasman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 50371.07,
+       "expenditures": 58089.07,
+       "status": "Withdrew",
+       "url": "/az/candidate/adam-kwasman?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "23"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-24-44981?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 24",
+   "url": "/az/race/arizona-state-senate-district-24-44981",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 188861.0,
+   "totalExpenditures": 181642.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Lela Alston",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 154530.09,
+       "expenditures": 147660.9,
+       "status": "Won",
+       "url": "/az/candidate/lela-alston-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ray Michaels",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1198.91,
+       "expenditures": 849.0,
+       "status": "Lost",
+       "url": "/az/candidate/ray-michaels?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Lela Alston",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 154530.09,
+       "expenditures": 147660.9,
+       "status": "Advanced",
+       "url": "/az/candidate/lela-alston-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ryan Starzyk",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33132.0,
+       "expenditures": 33132.0,
+       "status": "Lost",
+       "url": "/az/candidate/ryan-starzyk-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Ray Michaels",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1198.91,
+       "expenditures": 849.0,
+       "status": "Advanced",
+       "url": "/az/candidate/ray-michaels?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "24"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-25-44982?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 25",
+   "url": "/az/race/arizona-state-senate-district-25-44982",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 222669.0,
+   "totalExpenditures": 205771.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Tyler Pace",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 174975.0,
+       "expenditures": 158060.05,
+       "status": "Won",
+       "url": "/az/candidate/tyler-pace-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Paul Weigel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47693.66,
+       "expenditures": 47710.98,
+       "status": "Lost",
+       "url": "/az/candidate/paul-weigel-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Paul Weigel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47693.66,
+       "expenditures": 47710.98,
+       "status": "Advanced",
+       "url": "/az/candidate/paul-weigel-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Tyler Pace",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 174975.0,
+       "expenditures": 158060.05,
+       "status": "Advanced",
+       "url": "/az/candidate/tyler-pace-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "25"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-26-44983?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 26",
+   "url": "/az/race/arizona-state-senate-district-26-44983",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 115584.0,
+   "totalExpenditures": 113252.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Juan Mendez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53278.25,
+       "expenditures": 53248.18,
+       "status": "Won",
+       "url": "/az/candidate/juan-jose-mendez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jae Chin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16550.0,
+       "expenditures": 14746.22,
+       "status": "Lost",
+       "url": "/az/candidate/jae-man-chin-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Juan Mendez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53278.25,
+       "expenditures": 53248.18,
+       "status": "Advanced",
+       "url": "/az/candidate/juan-jose-mendez-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Isela Blanc",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 740.0,
+       "expenditures": 1479.8,
+       "status": "Withdrew",
+       "url": "/az/candidate/isela-blanc?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jana Granillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 45016.0,
+       "expenditures": 43778.17,
+       "status": "Lost",
+       "url": "/az/candidate/jana-lynn-granillo-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Jae Chin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16550.0,
+       "expenditures": 14746.22,
+       "status": "Advanced",
+       "url": "/az/candidate/jae-man-chin-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "26"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-27-44984?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 27",
+   "url": "/az/race/arizona-state-senate-district-27-44984",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 81710.0,
+   "totalExpenditures": 40840.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Rebecca Rios",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48775.0,
+       "expenditures": 28744.8,
+       "status": "Won",
+       "url": "/az/candidate/rebecca-rios-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Garland Shreves",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 32935.15,
+       "expenditures": 12095.0,
+       "status": "Lost",
+       "url": "/az/candidate/garland-patrick-shreves-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Rebecca Rios",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48775.0,
+       "expenditures": 28744.8,
+       "status": "Advanced",
+       "url": "/az/candidate/rebecca-rios-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Garland Shreves",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 32935.15,
+       "expenditures": 12095.0,
+       "status": "Advanced",
+       "url": "/az/candidate/garland-patrick-shreves-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "27"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-28-44985?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 28",
+   "url": "/az/race/arizona-state-senate-district-28-44985",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1352891.0,
+   "totalExpenditures": 1341253.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Christine Marsh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 640374.14,
+       "expenditures": 623746.42,
+       "status": "Won",
+       "url": "/az/candidate/christine-porter-marsh-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kate Brophy McGee",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 712517.35,
+       "expenditures": 717506.89,
+       "status": "Lost",
+       "url": "/az/candidate/kate-brophy-mcgee-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Christine Marsh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 640374.14,
+       "expenditures": 623746.42,
+       "status": "Advanced",
+       "url": "/az/candidate/christine-porter-marsh-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Kate Brophy McGee",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 712517.35,
+       "expenditures": 717506.89,
+       "status": "Advanced",
+       "url": "/az/candidate/kate-brophy-mcgee-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "28"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-29-44986?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 29",
+   "url": "/az/race/arizona-state-senate-district-29-44986",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 38666.0,
+   "totalExpenditures": 39157.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Martin J Quezada",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 38066.48,
+       "expenditures": 38556.91,
+       "status": "Won",
+       "url": "/az/candidate/martin-j-quezada-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "John Wilson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 600.0,
+       "expenditures": 600.0,
+       "status": "Lost",
+       "url": "/az/candidate/john-wilson-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Martin J Quezada",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 38066.48,
+       "expenditures": 38556.91,
+       "status": "Advanced",
+       "url": "/az/candidate/martin-j-quezada-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "John Wilson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 600.0,
+       "expenditures": 600.0,
+       "status": "Advanced",
+       "url": "/az/candidate/john-wilson-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "29"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-3-44960?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 3",
+   "url": "/az/race/arizona-state-senate-district-3-44960",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 4900.0,
+   "totalExpenditures": 3831.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Sally Ann Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4900.0,
+       "expenditures": 3830.51,
+       "status": "Won",
+       "url": "/az/candidate/sally-ann-gonzales-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Sally Ann Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4900.0,
+       "expenditures": 3830.51,
+       "status": "Advanced",
+       "url": "/az/candidate/sally-ann-gonzales-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "3"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-30-44987?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 30",
+   "url": "/az/race/arizona-state-senate-district-30-44987",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 46884.0,
+   "totalExpenditures": 48992.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Tony Navarrete",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 46884.0,
+       "expenditures": 48992.4,
+       "status": "Won",
+       "url": "/az/candidate/otoniel-navarrete-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Tony Navarrete",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 46884.0,
+       "expenditures": 48992.4,
+       "status": "Advanced",
+       "url": "/az/candidate/otoniel-navarrete-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "30"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-4-44961?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 4",
+   "url": "/az/race/arizona-state-senate-district-4-44961",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 103730.0,
+   "totalExpenditures": 101212.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Lisa Otondo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52640.9,
+       "expenditures": 50123.54,
+       "status": "Won",
+       "url": "/az/candidate/lisa-otondo-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Travis Angry",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51088.6,
+       "expenditures": 51088.6,
+       "status": "Lost",
+       "url": "/az/candidate/travis-angry-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Gary Garcia Snyder",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/az/candidate/gary-garcia-snyder?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Lisa Otondo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52640.9,
+       "expenditures": 50123.54,
+       "status": "Advanced",
+       "url": "/az/candidate/lisa-otondo-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Travis Angry",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51088.6,
+       "expenditures": 51088.6,
+       "status": "Advanced",
+       "url": "/az/candidate/travis-angry-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "4"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-5-44962?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 5",
+   "url": "/az/race/arizona-state-senate-district-5-44962",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 51890.0,
+   "totalExpenditures": 19528.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Sonny Borrelli",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 51890.0,
+       "expenditures": 19528.29,
+       "status": "Won",
+       "url": "/az/candidate/sonny-borrelli-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Sonny Borrelli",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 51890.0,
+       "expenditures": 19528.29,
+       "status": "Advanced",
+       "url": "/az/candidate/sonny-borrelli-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "5"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-6-44963?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 6",
+   "url": "/az/race/arizona-state-senate-district-6-44963",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1993929.0,
+   "totalExpenditures": 2034981.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Wendy Rogers",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1171490.68,
+       "expenditures": 1161376.97,
+       "status": "Won",
+       "url": "/az/candidate/wendy-rogers-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Felicia French",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 674768.01,
+       "expenditures": 700830.86,
+       "status": "Lost",
+       "url": "/az/candidate/felicia-french-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Felicia French",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 674768.01,
+       "expenditures": 700830.86,
+       "status": "Advanced",
+       "url": "/az/candidate/felicia-french-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Wendy Rogers",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1171490.68,
+       "expenditures": 1161376.97,
+       "status": "Advanced",
+       "url": "/az/candidate/wendy-rogers-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Sylvia Allen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 136596.76,
+       "expenditures": 149233.47,
+       "status": "Lost",
+       "url": "/az/candidate/sylvia-tenney-allen-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Robert J Thorpe",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11073.89,
+       "expenditures": 23539.28,
+       "status": "Withdrew",
+       "url": "/az/candidate/robert-j-thorpe?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "6"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-7-44964?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 7",
+   "url": "/az/race/arizona-state-senate-district-7-44964",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 12800.0,
+   "totalExpenditures": 12708.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jamescita Peshlakai",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 12800.0,
+       "expenditures": 12708.47,
+       "status": "Won",
+       "url": "/az/candidate/jamescita-mae-peshlakai-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Jamescita Peshlakai",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 12800.0,
+       "expenditures": 12708.47,
+       "status": "Advanced",
+       "url": "/az/candidate/jamescita-mae-peshlakai-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "7"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-8-44965?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 8",
+   "url": "/az/race/arizona-state-senate-district-8-44965",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 160778.0,
+   "totalExpenditures": 139605.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Thomas J Shope Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 113400.0,
+       "expenditures": 92227.11,
+       "status": "Won",
+       "url": "/az/candidate/thomas-shope-jr-can?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Barbara Mcguire",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47377.63,
+       "expenditures": 47377.63,
+       "status": "Lost",
+       "url": "/az/candidate/barbara-mcguire-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Barbara Mcguire",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47377.63,
+       "expenditures": 47377.63,
+       "status": "Advanced",
+       "url": "/az/candidate/barbara-mcguire-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Thomas J Shope Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 113400.0,
+       "expenditures": 92227.11,
+       "status": "Advanced",
+       "url": "/az/candidate/thomas-shope-jr-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "8"
   },
   {
-   "office": "",
-   "url": "/az/race/arizona-state-senate-district-9-44966?cycle=2020-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Arizona State Senate District 9",
+   "url": "/az/race/arizona-state-senate-district-9-44966",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 46477.0,
+   "totalExpenditures": 33087.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Victoria L Steele",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 46477.0,
+       "expenditures": 33086.52,
+       "status": "Won",
+       "url": "/az/candidate/victoria-l-steele-can?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 4, 2020",
+     "candidates": [
+      {
+       "name": "Victoria L Steele",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 46477.0,
+       "expenditures": 33086.52,
+       "status": "Advanced",
+       "url": "/az/candidate/victoria-l-steele-can?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "9"
   }
  ]
 }

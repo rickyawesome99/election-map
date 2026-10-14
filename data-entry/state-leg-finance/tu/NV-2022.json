@@ -1,591 +1,4199 @@
 {
  "state": "NV",
  "cycle": 2022,
- "fetched": "2026-10-11",
- "dataThrough": "06/30/2026",
+ "fetched": "2026-10-12",
+ "dataThrough": "12/31/2022",
  "races": [
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-1-59302?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 1",
+   "url": "/nv/race/nevada-state-assembly-district-1-59302",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 892825.0,
+   "totalExpenditures": 765022.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Daniele Monroe-Moreno",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 875918.52,
+       "expenditures": 745959.0,
+       "status": "Won",
+       "url": "/nv/candidate/daniele-monroe-moreno?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Garland Brinkley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4699.31,
+       "expenditures": 7688.14,
+       "status": "Lost",
+       "url": "/nv/candidate/garland-brinkley?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Patrick Mcatee-Macrae",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 8736.43,
+       "expenditures": 7495.27,
+       "status": "Lost",
+       "url": "/nv/candidate/patrick-mcatee-macrae?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Daniele Monroe-Moreno",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 875918.52,
+       "expenditures": 745959.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/daniele-monroe-moreno?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Garland Brinkley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4699.31,
+       "expenditures": 7688.14,
+       "status": "Advanced",
+       "url": "/nv/candidate/garland-brinkley?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Matthew Clendenen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3471.2,
+       "expenditures": 3879.84,
+       "status": "Lost",
+       "url": "/nv/candidate/matthew-clendenen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Chris Dyer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/chris-dyer?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "1"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-10-59303?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 10",
+   "url": "/nv/race/nevada-state-assembly-district-10-59303",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 400083.0,
+   "totalExpenditures": 352430.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Rochelle Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 392777.96,
+       "expenditures": 346880.98,
+       "status": "Won",
+       "url": "/nv/candidate/rochelle-nguyen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sandie Hernandez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7305.0,
+       "expenditures": 5548.81,
+       "status": "Lost",
+       "url": "/nv/candidate/sandie-hernandez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Rochelle Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 392777.96,
+       "expenditures": 346880.98,
+       "status": "Advanced",
+       "url": "/nv/candidate/rochelle-nguyen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Sandie Hernandez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7305.0,
+       "expenditures": 5548.81,
+       "status": "Advanced",
+       "url": "/nv/candidate/sandie-hernandez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "10"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-11-59304?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 11",
+   "url": "/nv/race/nevada-state-assembly-district-11-59304",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 32358.0,
+   "totalExpenditures": 28589.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Beatrice Duran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 30738.07,
+       "expenditures": 27174.71,
+       "status": "Won",
+       "url": "/nv/candidate/beatrice-duran?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Eric Krattiger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 500.0,
+       "expenditures": 313.99,
+       "status": "Lost",
+       "url": "/nv/candidate/eric-krattiger?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Beatrice Duran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 30738.07,
+       "expenditures": 27174.71,
+       "status": "Advanced",
+       "url": "/nv/candidate/beatrice-duran?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Eric Krattiger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 500.0,
+       "expenditures": 313.99,
+       "status": "Advanced",
+       "url": "/nv/candidate/eric-krattiger?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bernadine Kamai-Fernandez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1120.0,
+       "expenditures": 1100.0,
+       "status": "Lost",
+       "url": "/nv/candidate/bernadine-kamai-fernandez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Charles Suval",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/charles-suval?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "11"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-12-59305?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 12",
+   "url": "/nv/race/nevada-state-assembly-district-12-59305",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 516835.0,
+   "totalExpenditures": 514040.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Max Carter II",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 346690.88,
+       "expenditures": 340841.04,
+       "status": "Won",
+       "url": "/nv/candidate/max-carter-ii?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Flemming Larsen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 162315.34,
+       "expenditures": 163997.37,
+       "status": "Lost",
+       "url": "/nv/candidate/flemming-larsen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stefania Moore",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/stefania-moore?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Max Carter II",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 346690.88,
+       "expenditures": 340841.04,
+       "status": "Advanced",
+       "url": "/nv/candidate/max-carter-ii?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Abraham Camejo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6960.0,
+       "expenditures": 7040.73,
+       "status": "Lost",
+       "url": "/nv/candidate/abraham-camejo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Angelo Casino",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 768.43,
+       "expenditures": 768.43,
+       "status": "Lost",
+       "url": "/nv/candidate/angelo-casino?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Flemming Larsen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 162315.34,
+       "expenditures": 163997.37,
+       "status": "Advanced",
+       "url": "/nv/candidate/flemming-larsen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Bolliger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 112.9,
+       "status": "Lost",
+       "url": "/nv/candidate/david-bolliger?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rudy Clai",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 100.0,
+       "expenditures": 100.0,
+       "status": "Lost",
+       "url": "/nv/candidate/rudy-clai?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Al Rojas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 1180.0,
+       "status": "Lost",
+       "url": "/nv/candidate/al-rojas?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kevin Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/kevin-williams?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "12"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-13-59306?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 13",
+   "url": "/nv/race/nevada-state-assembly-district-13-59306",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 339659.0,
+   "totalExpenditures": 325196.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Brian Hibbetts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 132701.44,
+       "expenditures": 130457.74,
+       "status": "Won",
+       "url": "/nv/candidate/brian-hibbetts?cycle=2022-election-cycle"
+      },
+      {
+       "name": "William Rucker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41825.93,
+       "expenditures": 25990.84,
+       "status": "Lost",
+       "url": "/nv/candidate/william-rucker?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "William Rucker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41825.93,
+       "expenditures": 25990.84,
+       "status": "Advanced",
+       "url": "/nv/candidate/william-rucker?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Daniel Andrews",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1520.06,
+       "expenditures": 1649.83,
+       "status": "Lost",
+       "url": "/nv/candidate/daniel-andrews?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Brian Hibbetts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 132701.44,
+       "expenditures": 130457.74,
+       "status": "Advanced",
+       "url": "/nv/candidate/brian-hibbetts?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steven Delisle",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 137651.0,
+       "expenditures": 136962.0,
+       "status": "Lost",
+       "url": "/nv/candidate/steven-delisle?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Vem Miller",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16609.22,
+       "expenditures": 21208.36,
+       "status": "Lost",
+       "url": "/nv/candidate/vem-miller?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nancy Weiss",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9351.0,
+       "expenditures": 8927.23,
+       "status": "Lost",
+       "url": "/nv/candidate/nancy-weiss?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-14-59307?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 14",
+   "url": "/nv/race/nevada-state-assembly-district-14-59307",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 173336.0,
+   "totalExpenditures": 112486.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Erica Mosca",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 173336.26,
+       "expenditures": 112485.59,
+       "status": "Won",
+       "url": "/nv/candidate/erica-mosca?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Shawn Stamper",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/shawn-stamper?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Erica Mosca",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 173336.26,
+       "expenditures": 112485.59,
+       "status": "Advanced",
+       "url": "/nv/candidate/erica-mosca?cycle=2022-election-cycle"
+      },
+      {
+       "name": "James Fennell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/james-fennell?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Shawn Stamper",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/shawn-stamper?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "14"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-15-59308?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 15",
+   "url": "/nv/race/nevada-state-assembly-district-15-59308",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 241026.0,
+   "totalExpenditures": 170754.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Howard Watts III",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 241026.15,
+       "expenditures": 170754.39,
+       "status": "Won",
+       "url": "/nv/candidate/howard-watts-iii?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steven Bang",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/steven-bang?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Howard Watts III",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 241026.15,
+       "expenditures": 170754.39,
+       "status": "Advanced",
+       "url": "/nv/candidate/howard-watts-iii?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kyle Greenwood",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/kyle-greenwood?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Steven Bang",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/steven-bang?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "15"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-16-59309?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 16",
+   "url": "/nv/race/nevada-state-assembly-district-16-59309",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 116867.0,
+   "totalExpenditures": 121195.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Cecelia Gonzalez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 55166.64,
+       "expenditures": 60223.54,
+       "status": "Won",
+       "url": "/nv/candidate/cecelia-gonzalez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jesse \"Jake\" Holder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5600.46,
+       "expenditures": 4660.6,
+       "status": "Lost",
+       "url": "/nv/candidate/jesse-jake-holder?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Cecelia Gonzalez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 55166.64,
+       "expenditures": 60223.54,
+       "status": "Advanced",
+       "url": "/nv/candidate/cecelia-gonzalez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Charles Short",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56100.0,
+       "expenditures": 56311.35,
+       "status": "Lost",
+       "url": "/nv/candidate/charles-short?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Jesse \"Jake\" Holder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5600.46,
+       "expenditures": 4660.6,
+       "status": "Advanced",
+       "url": "/nv/candidate/jesse-jake-holder?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Benjamin Donlon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/benjamin-donlon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Greg Van Houten",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/greg-van-houten?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "16"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-17-59310?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 17",
+   "url": "/nv/race/nevada-state-assembly-district-17-59310",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 83.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Eugene Pawley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 83.44,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/eugene-pawley?cycle=2022-election-cycle"
+      },
+      {
+       "name": "D'Anthony Brim",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/danthony-brim?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Eugene Pawley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 83.44,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/eugene-pawley?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "17"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-18-59311?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 18",
+   "url": "/nv/race/nevada-state-assembly-district-18-59311",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 120694.0,
+   "totalExpenditures": 93140.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Venicia Considine",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 116944.03,
+       "expenditures": 89318.95,
+       "status": "Won",
+       "url": "/nv/candidate/venicia-considine?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Christine Decorte",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3750.0,
+       "expenditures": 3821.06,
+       "status": "Lost",
+       "url": "/nv/candidate/christine-decorte?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Venicia Considine",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 116944.03,
+       "expenditures": 89318.95,
+       "status": "Advanced",
+       "url": "/nv/candidate/venicia-considine?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Christine Decorte",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3750.0,
+       "expenditures": 3821.06,
+       "status": "Advanced",
+       "url": "/nv/candidate/christine-decorte?cycle=2022-election-cycle"
+      },
+      {
+       "name": "J.W. Vogelsang",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/jw-vogelsang?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "18"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-19-59312?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 19",
+   "url": "/nv/race/nevada-state-assembly-district-19-59312",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 386714.0,
+   "totalExpenditures": 324387.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Thaddeus Yurek III",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 292682.75,
+       "expenditures": 237901.24,
+       "status": "Won",
+       "url": "/nv/candidate/thaddeus-yurek-iii?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Thaddeus Yurek III",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 292682.75,
+       "expenditures": 237901.24,
+       "status": "Advanced",
+       "url": "/nv/candidate/thaddeus-yurek-iii?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Charlie De La Paz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 69031.02,
+       "expenditures": 63475.01,
+       "status": "Lost",
+       "url": "/nv/candidate/charlie-de-la-paz?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Amy Groves",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25000.0,
+       "expenditures": 23010.58,
+       "status": "Lost",
+       "url": "/nv/candidate/amy-groves?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gerald Swanson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/gerald-swanson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "19"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-2-59313?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 2",
+   "url": "/nv/race/nevada-state-assembly-district-2-59313",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 384485.0,
+   "totalExpenditures": 243434.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Heidi Kasama",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 374765.39,
+       "expenditures": 236649.85,
+       "status": "Won",
+       "url": "/nv/candidate/heidi-kasama?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nick Christenson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9719.23,
+       "expenditures": 6784.03,
+       "status": "Lost",
+       "url": "/nv/candidate/nick-christenson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jason Bednarz",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/jason-bednarz?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Nick Christenson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9719.23,
+       "expenditures": 6784.03,
+       "status": "Advanced",
+       "url": "/nv/candidate/nick-christenson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Heidi Kasama",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 374765.39,
+       "expenditures": 236649.85,
+       "status": "Advanced",
+       "url": "/nv/candidate/heidi-kasama?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Erin Gomez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/erin-gomez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "2"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-20-59314?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 20",
+   "url": "/nv/race/nevada-state-assembly-district-20-59314",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 71930.0,
+   "totalExpenditures": 89110.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "David Orentlicher",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 69459.07,
+       "expenditures": 86938.84,
+       "status": "Won",
+       "url": "/nv/candidate/david-orentlicher?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stan Vaughan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/stan-vaughan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Josiah Larow",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 700.0,
+       "expenditures": 674.7,
+       "status": "Lost",
+       "url": "/nv/candidate/josiah-larow?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "David Orentlicher",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 69459.07,
+       "expenditures": 86938.84,
+       "status": "Advanced",
+       "url": "/nv/candidate/david-orentlicher?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Trish Marsh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1771.37,
+       "expenditures": 1496.91,
+       "status": "Lost",
+       "url": "/nv/candidate/trish-marsh?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Stan Vaughan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/stan-vaughan?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "20"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-21-59315?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 21",
+   "url": "/nv/race/nevada-state-assembly-district-21-59315",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 730283.0,
+   "totalExpenditures": 727028.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Elaine Marzola",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 460242.5,
+       "expenditures": 477815.24,
+       "status": "Won",
+       "url": "/nv/candidate/elaine-marzola?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jon Petrick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 270040.88,
+       "expenditures": 248509.93,
+       "status": "Lost",
+       "url": "/nv/candidate/jon-petrick?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Elaine Marzola",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 460242.5,
+       "expenditures": 477815.24,
+       "status": "Advanced",
+       "url": "/nv/candidate/elaine-marzola?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Jon Petrick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 270040.88,
+       "expenditures": 248509.93,
+       "status": "Advanced",
+       "url": "/nv/candidate/jon-petrick?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rachel Puaina",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 703.27,
+       "status": "Lost",
+       "url": "/nv/candidate/rachel-puaina?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "21"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-22-59316?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 22",
+   "url": "/nv/race/nevada-state-assembly-district-22-59316",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 203261.0,
+   "totalExpenditures": 199227.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Melissa Hardy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 185196.51,
+       "expenditures": 182662.57,
+       "status": "Won",
+       "url": "/nv/candidate/melissa-hardy?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rick Ramos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18064.72,
+       "expenditures": 16564.72,
+       "status": "Lost",
+       "url": "/nv/candidate/rick-ramos?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Rick Ramos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18064.72,
+       "expenditures": 16564.72,
+       "status": "Advanced",
+       "url": "/nv/candidate/rick-ramos?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Melissa Hardy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 185196.51,
+       "expenditures": 182662.57,
+       "status": "Advanced",
+       "url": "/nv/candidate/melissa-hardy?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "22"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-23-59317?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 23",
+   "url": "/nv/race/nevada-state-assembly-district-23-59317",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 232303.0,
+   "totalExpenditures": 171983.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Danielle Gallant",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144101.41,
+       "expenditures": 99675.29,
+       "status": "Won",
+       "url": "/nv/candidate/danielle-gallant?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Elizabeth Brickfield",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 28008.03,
+       "expenditures": 22256.75,
+       "status": "Lost",
+       "url": "/nv/candidate/elizabeth-brickfield?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mercy Manley",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/mercy-manley?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Elizabeth Brickfield",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 28008.03,
+       "expenditures": 22256.75,
+       "status": "Advanced",
+       "url": "/nv/candidate/elizabeth-brickfield?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Danielle Gallant",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144101.41,
+       "expenditures": 99675.29,
+       "status": "Advanced",
+       "url": "/nv/candidate/danielle-gallant?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Denise Ashurst",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38215.61,
+       "expenditures": 28701.61,
+       "status": "Lost",
+       "url": "/nv/candidate/denise-ashurst?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dan Lier",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21977.64,
+       "expenditures": 21349.24,
+       "status": "Lost",
+       "url": "/nv/candidate/dan-lier?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "23"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-24-59318?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 24",
+   "url": "/nv/race/nevada-state-assembly-district-24-59318",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 137258.0,
+   "totalExpenditures": 67382.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Sarah Peters",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 117344.73,
+       "expenditures": 55814.5,
+       "status": "Won",
+       "url": "/nv/candidate/sarah-peters?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dorzell King Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19332.81,
+       "expenditures": 10891.18,
+       "status": "Lost",
+       "url": "/nv/candidate/dorzell-king-jr?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Sarah Peters",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 117344.73,
+       "expenditures": 55814.5,
+       "status": "Advanced",
+       "url": "/nv/candidate/sarah-peters?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jose Vasquez-Maldonado",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 580.0,
+       "expenditures": 675.94,
+       "status": "Lost",
+       "url": "/nv/candidate/jose-vasquez-maldonado?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Dorzell King Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19332.81,
+       "expenditures": 10891.18,
+       "status": "Advanced",
+       "url": "/nv/candidate/dorzell-king-jr?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "24"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-25-59319?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 25",
+   "url": "/nv/race/nevada-state-assembly-district-25-59319",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 353814.0,
+   "totalExpenditures": 321137.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Selena La Rue Hatch",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 99619.23,
+       "expenditures": 64065.63,
+       "status": "Won",
+       "url": "/nv/candidate/selena-la-rue-hatch?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sam Kumar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 127465.57,
+       "expenditures": 126466.15,
+       "status": "Lost",
+       "url": "/nv/candidate/sam-kumar?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Selena La Rue Hatch",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 99619.23,
+       "expenditures": 64065.63,
+       "status": "Advanced",
+       "url": "/nv/candidate/selena-la-rue-hatch?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Alex Goff",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50333.0,
+       "expenditures": 55111.81,
+       "status": "Lost",
+       "url": "/nv/candidate/alex-goff?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Sam Kumar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 127465.57,
+       "expenditures": 126466.15,
+       "status": "Advanced",
+       "url": "/nv/candidate/sam-kumar?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Greg Batchelder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3000.0,
+       "expenditures": 2008.11,
+       "status": "Lost",
+       "url": "/nv/candidate/greg-batchelder?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jacob Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 73396.58,
+       "expenditures": 73485.17,
+       "status": "Lost",
+       "url": "/nv/candidate/jacob-williams?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "25"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-26-59320?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 26",
+   "url": "/nv/race/nevada-state-assembly-district-26-59320",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 482087.0,
+   "totalExpenditures": 387544.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Richard Delong",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 212900.36,
+       "expenditures": 116832.4,
+       "status": "Won",
+       "url": "/nv/candidate/richard-delong?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Reed Mitchell II",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 310.0,
+       "expenditures": 200.0,
+       "status": "Lost",
+       "url": "/nv/candidate/reed-mitchell-ii?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Richard Delong",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 212900.36,
+       "expenditures": 116832.4,
+       "status": "Advanced",
+       "url": "/nv/candidate/richard-delong?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tom Daly",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 55532.27,
+       "expenditures": 52057.4,
+       "status": "Lost",
+       "url": "/nv/candidate/tom-daly?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bret Delaire",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15000.0,
+       "expenditures": 14605.82,
+       "status": "Lost",
+       "url": "/nv/candidate/bret-delaire?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jay Dixon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 121014.76,
+       "expenditures": 125841.58,
+       "status": "Lost",
+       "url": "/nv/candidate/jay-dixon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gregory Juhl",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 77329.96,
+       "expenditures": 78007.18,
+       "status": "Lost",
+       "url": "/nv/candidate/gregory-juhl?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "26"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-27-59321?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 27",
+   "url": "/nv/race/nevada-state-assembly-district-27-59321",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 485180.0,
+   "totalExpenditures": 488588.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Angela Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 274169.66,
+       "expenditures": 272868.86,
+       "status": "Won",
+       "url": "/nv/candidate/angela-taylor?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Carmen Ortiz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7339.73,
+       "expenditures": 6944.65,
+       "status": "Lost",
+       "url": "/nv/candidate/carmen-ortiz?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Angela Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 274169.66,
+       "expenditures": 272868.86,
+       "status": "Advanced",
+       "url": "/nv/candidate/angela-taylor?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Brian Lee",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 203670.66,
+       "expenditures": 208774.51,
+       "status": "Lost",
+       "url": "/nv/candidate/brian-lee?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Carmen Ortiz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7339.73,
+       "expenditures": 6944.65,
+       "status": "Advanced",
+       "url": "/nv/candidate/carmen-ortiz?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Richard Kirkham",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/richard-kirkham?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "27"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-28-59322?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 28",
+   "url": "/nv/race/nevada-state-assembly-district-28-59322",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 159682.0,
+   "totalExpenditures": 102574.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Reuben D'Silva",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 122864.28,
+       "expenditures": 65470.07,
+       "status": "Won",
+       "url": "/nv/candidate/reuben-dsilva?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Clint Brown",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 800.0,
+       "expenditures": 210.0,
+       "status": "Lost",
+       "url": "/nv/candidate/clint-brown?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Reuben D'Silva",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 122864.28,
+       "expenditures": 65470.07,
+       "status": "Advanced",
+       "url": "/nv/candidate/reuben-dsilva?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Aaron Bautista",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2538.0,
+       "expenditures": 4056.61,
+       "status": "Lost",
+       "url": "/nv/candidate/aaron-bautista?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Antonio Bowen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3300.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/antonio-bowen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cindi Rivera",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 30180.0,
+       "expenditures": 32837.35,
+       "status": "Lost",
+       "url": "/nv/candidate/cindi-rivera?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Clint Brown",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 800.0,
+       "expenditures": 210.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/clint-brown?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "28"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-29-59323?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 29",
+   "url": "/nv/race/nevada-state-assembly-district-29-59323",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 472501.0,
+   "totalExpenditures": 554568.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lesley Cohen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 340024.7,
+       "expenditures": 435121.31,
+       "status": "Won",
+       "url": "/nv/candidate/lesley-cohen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rhonda Knightly",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 50727.02,
+       "expenditures": 49357.66,
+       "status": "Lost",
+       "url": "/nv/candidate/rhonda-knightly?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Lesley Cohen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 340024.7,
+       "expenditures": 435121.31,
+       "status": "Advanced",
+       "url": "/nv/candidate/lesley-cohen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joseph Dalia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 73363.0,
+       "expenditures": 66277.53,
+       "status": "Lost",
+       "url": "/nv/candidate/joseph-dalia?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Rhonda Knightly",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 50727.02,
+       "expenditures": 49357.66,
+       "status": "Advanced",
+       "url": "/nv/candidate/rhonda-knightly?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Natalie Thomas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8386.7,
+       "expenditures": 3811.15,
+       "status": "Lost",
+       "url": "/nv/candidate/natalie-thomas?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "29"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-3-59324?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 3",
+   "url": "/nv/race/nevada-state-assembly-district-3-59324",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 145176.0,
+   "totalExpenditures": 154685.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Selena Torres",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 142776.05,
+       "expenditures": 151798.33,
+       "status": "Won",
+       "url": "/nv/candidate/selena-torres?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joshua Lemack",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2400.0,
+       "expenditures": 2886.28,
+       "status": "Lost",
+       "url": "/nv/candidate/joshua-lemack?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Selena Torres",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 142776.05,
+       "expenditures": 151798.33,
+       "status": "Advanced",
+       "url": "/nv/candidate/selena-torres?cycle=2022-election-cycle"
+      },
+      {
+       "name": "LaJuana Clark",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/lajuana-clark?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Joshua Lemack",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2400.0,
+       "expenditures": 2886.28,
+       "status": "Advanced",
+       "url": "/nv/candidate/joshua-lemack?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "3"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-30-59325?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 30",
+   "url": "/nv/race/nevada-state-assembly-district-30-59325",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 165403.0,
+   "totalExpenditures": 159252.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Natha Anderson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 120759.93,
+       "expenditures": 123011.54,
+       "status": "Won",
+       "url": "/nv/candidate/natha-anderson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ricci Rodriguez-Elkins",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 44642.8,
+       "expenditures": 36240.25,
+       "status": "Lost",
+       "url": "/nv/candidate/ricci-rodriguez-elkins?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Garrett McGeein",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/garrett-mcgeein?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Natha Anderson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 120759.93,
+       "expenditures": 123011.54,
+       "status": "Advanced",
+       "url": "/nv/candidate/natha-anderson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Ricci Rodriguez-Elkins",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 44642.8,
+       "expenditures": 36240.25,
+       "status": "Advanced",
+       "url": "/nv/candidate/ricci-rodriguez-elkins?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "30"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-31-59326?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 31",
+   "url": "/nv/race/nevada-state-assembly-district-31-59326",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 48852.0,
+   "totalExpenditures": 20808.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jill Dickman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 48851.55,
+       "expenditures": 20808.24,
+       "status": "Won",
+       "url": "/nv/candidate/jill-dickman?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Jill Dickman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 48851.55,
+       "expenditures": 20808.24,
+       "status": "Advanced",
+       "url": "/nv/candidate/jill-dickman?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "31"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-32-59327?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 32",
+   "url": "/nv/race/nevada-state-assembly-district-32-59327",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 92750.0,
+   "totalExpenditures": 90749.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Alexis Hansen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 92750.0,
+       "expenditures": 90748.81,
+       "status": "Won",
+       "url": "/nv/candidate/alexis-hansen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Alexis Hansen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 92750.0,
+       "expenditures": 90748.81,
+       "status": "Advanced",
+       "url": "/nv/candidate/alexis-hansen?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "32"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-33-59328?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 33",
+   "url": "/nv/race/nevada-state-assembly-district-33-59328",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 173306.0,
+   "totalExpenditures": 110773.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Bert Gurr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 168656.08,
+       "expenditures": 106182.88,
+       "status": "Won",
+       "url": "/nv/candidate/bert-gurr?cycle=2022-election-cycle"
+      },
+      {
+       "name": "John Garrard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4650.0,
+       "expenditures": 4590.55,
+       "status": "Lost",
+       "url": "/nv/candidate/john-garrard?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "John Garrard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4650.0,
+       "expenditures": 4590.55,
+       "status": "Advanced",
+       "url": "/nv/candidate/john-garrard?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Bert Gurr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 168656.08,
+       "expenditures": 106182.88,
+       "status": "Advanced",
+       "url": "/nv/candidate/bert-gurr?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nicole Sirotek",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Disqualified",
+       "url": "/nv/candidate/nicole-sirotek?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "33"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-34-59329?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 34",
+   "url": "/nv/race/nevada-state-assembly-district-34-59329",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 209981.0,
+   "totalExpenditures": 245633.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Shannon Bilbray-Axelrod",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 114333.07,
+       "expenditures": 148429.43,
+       "status": "Won",
+       "url": "/nv/candidate/shannon-bilbray-axelrod?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stacy Butler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 87905.39,
+       "expenditures": 90742.17,
+       "status": "Lost",
+       "url": "/nv/candidate/stacy-butler?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Shannon Bilbray-Axelrod",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 114333.07,
+       "expenditures": 148429.43,
+       "status": "Advanced",
+       "url": "/nv/candidate/shannon-bilbray-axelrod?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Stacy Butler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 87905.39,
+       "expenditures": 90742.17,
+       "status": "Advanced",
+       "url": "/nv/candidate/stacy-butler?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Shannon Churchwell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1250.0,
+       "expenditures": 869.57,
+       "status": "Lost",
+       "url": "/nv/candidate/shannon-churchwell?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mary Lim",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6492.08,
+       "expenditures": 5592.08,
+       "status": "Lost",
+       "url": "/nv/candidate/mary-lim?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "34"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-35-59330?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 35",
+   "url": "/nv/race/nevada-state-assembly-district-35-59330",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 461293.0,
+   "totalExpenditures": 567517.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Michelle Gorelow",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 349694.59,
+       "expenditures": 458497.87,
+       "status": "Won",
+       "url": "/nv/candidate/michelle-gorelow?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tiffany Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 104226.47,
+       "expenditures": 98093.91,
+       "status": "Lost",
+       "url": "/nv/candidate/tiffany-jones?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mindy Robinson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 7372.16,
+       "expenditures": 10925.58,
+       "status": "Lost",
+       "url": "/nv/candidate/mindy-robinson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Michelle Gorelow",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 349694.59,
+       "expenditures": 458497.87,
+       "status": "Advanced",
+       "url": "/nv/candidate/michelle-gorelow?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Tiffany Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 104226.47,
+       "expenditures": 98093.91,
+       "status": "Advanced",
+       "url": "/nv/candidate/tiffany-jones?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Julie Connors",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/julie-connors?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "35"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-36-59331?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 36",
+   "url": "/nv/race/nevada-state-assembly-district-36-59331",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 257285.0,
+   "totalExpenditures": 213648.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Gregory Hafen II",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 236408.69,
+       "expenditures": 200158.35,
+       "status": "Won",
+       "url": "/nv/candidate/gregory-hafen-ii?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Gregory Hafen II",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 236408.69,
+       "expenditures": 200158.35,
+       "status": "Advanced",
+       "url": "/nv/candidate/gregory-hafen-ii?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Matt Sadler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20875.9,
+       "expenditures": 13489.17,
+       "status": "Lost",
+       "url": "/nv/candidate/matt-sadler?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "36"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-37-59332?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 37",
+   "url": "/nv/race/nevada-state-assembly-district-37-59332",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 969308.0,
+   "totalExpenditures": 1059179.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Shea Backus",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 303146.11,
+       "expenditures": 397413.21,
+       "status": "Won",
+       "url": "/nv/candidate/shea-backus?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jacob Deaville",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 227971.48,
+       "expenditures": 224918.31,
+       "status": "Lost",
+       "url": "/nv/candidate/jacob-deaville?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Marc Tedoff",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 500.0,
+       "expenditures": 356.72,
+       "status": "Lost",
+       "url": "/nv/candidate/marc-tedoff?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Shea Backus",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 303146.11,
+       "expenditures": 397413.21,
+       "status": "Advanced",
+       "url": "/nv/candidate/shea-backus?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Jacob Deaville",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 227971.48,
+       "expenditures": 224918.31,
+       "status": "Advanced",
+       "url": "/nv/candidate/jacob-deaville?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Flippo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 93320.0,
+       "expenditures": 93320.0,
+       "status": "Lost",
+       "url": "/nv/candidate/david-flippo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Albert Hansen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 344370.38,
+       "expenditures": 343170.56,
+       "status": "Lost",
+       "url": "/nv/candidate/albert-hansen?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "37"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-38-59333?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 38",
+   "url": "/nv/race/nevada-state-assembly-district-38-59333",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 67722.0,
+   "totalExpenditures": 42141.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Gregory Koenig",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41425.0,
+       "expenditures": 18042.63,
+       "status": "Won",
+       "url": "/nv/candidate/gregory-koenig?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Gregory Koenig",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41425.0,
+       "expenditures": 18042.63,
+       "status": "Advanced",
+       "url": "/nv/candidate/gregory-koenig?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Vida Keller",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26296.73,
+       "expenditures": 24098.7,
+       "status": "Lost",
+       "url": "/nv/candidate/vida-keller?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "38"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-39-59334?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 39",
+   "url": "/nv/race/nevada-state-assembly-district-39-59334",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 178732.0,
+   "totalExpenditures": 167685.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Ken Gray",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 82358.52,
+       "expenditures": 68628.6,
+       "status": "Won",
+       "url": "/nv/candidate/ken-gray?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Janice Noble",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12262.0,
+       "expenditures": 15862.13,
+       "status": "Lost",
+       "url": "/nv/candidate/janice-noble?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Charles Holt",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 737.5,
+       "status": "Withdrew",
+       "url": "/nv/candidate/charles-holt?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Janice Noble",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12262.0,
+       "expenditures": 15862.13,
+       "status": "Advanced",
+       "url": "/nv/candidate/janice-noble?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Ken Gray",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 82358.52,
+       "expenditures": 68628.6,
+       "status": "Advanced",
+       "url": "/nv/candidate/ken-gray?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Blayne Osborn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 84111.55,
+       "expenditures": 82456.55,
+       "status": "Lost",
+       "url": "/nv/candidate/blayne-osborn?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "39"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-4-59335?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 4",
+   "url": "/nv/race/nevada-state-assembly-district-4-59335",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 32600.0,
+   "totalExpenditures": 23055.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Richard Mcarthur",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27600.0,
+       "expenditures": 23054.5,
+       "status": "Won",
+       "url": "/nv/candidate/richard-mcarthur?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Darby Burns",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 5000.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/darby-burns?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Richard Mcarthur",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27600.0,
+       "expenditures": 23054.5,
+       "status": "Advanced",
+       "url": "/nv/candidate/richard-mcarthur?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "4"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-40-59336?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 40",
+   "url": "/nv/race/nevada-state-assembly-district-40-59336",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 139827.0,
+   "totalExpenditures": 148279.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Philip O'Neill",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127098.11,
+       "expenditures": 122220.53,
+       "status": "Won",
+       "url": "/nv/candidate/philip-oneill?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Shannon Mcdaniel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12728.64,
+       "expenditures": 6993.34,
+       "status": "Lost",
+       "url": "/nv/candidate/shannon-mcdaniel?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sam Toll",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/sam-toll?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Shannon Mcdaniel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12728.64,
+       "expenditures": 6993.34,
+       "status": "Advanced",
+       "url": "/nv/candidate/shannon-mcdaniel?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Philip O'Neill",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127098.11,
+       "expenditures": 122220.53,
+       "status": "Advanced",
+       "url": "/nv/candidate/philip-oneill?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gary Schmidt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 19065.5,
+       "status": "Lost",
+       "url": "/nv/candidate/gary-schmidt?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "40"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-41-59337?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 41",
+   "url": "/nv/race/nevada-state-assembly-district-41-59337",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 633291.0,
+   "totalExpenditures": 614008.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Sandra Jauregui",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 606694.1,
+       "expenditures": 584644.21,
+       "status": "Won",
+       "url": "/nv/candidate/sandra-jauregui?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Paul Bodine",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26596.69,
+       "expenditures": 28659.32,
+       "status": "Lost",
+       "url": "/nv/candidate/paul-bodine?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sean McNamara",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/sean-mcnamara?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Sandra Jauregui",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 606694.1,
+       "expenditures": 584644.21,
+       "status": "Advanced",
+       "url": "/nv/candidate/sandra-jauregui?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Paul Bodine",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26596.69,
+       "expenditures": 28659.32,
+       "status": "Advanced",
+       "url": "/nv/candidate/paul-bodine?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Guadalupe Reyes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 704.11,
+       "status": "Lost",
+       "url": "/nv/candidate/guadalupe-reyes?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tawny Rittenbaugh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/tawny-rittenbaugh?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joel Shamie",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/joel-shamie?cycle=2022-election-cycle"
+      },
+      {
+       "name": "James Slater",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/james-slater?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "41"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-42-59338?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 42",
+   "url": "/nv/race/nevada-state-assembly-district-42-59338",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 207638.0,
+   "totalExpenditures": 156031.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tracy Brown-May",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 170288.44,
+       "expenditures": 131908.0,
+       "status": "Won",
+       "url": "/nv/candidate/tracy-brown-may?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Eddie Facey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9950.01,
+       "expenditures": 9784.9,
+       "status": "Lost",
+       "url": "/nv/candidate/eddie-facey?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Tracy Brown-May",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 170288.44,
+       "expenditures": 131908.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/tracy-brown-may?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sayed Zaidi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5200.0,
+       "expenditures": 5187.43,
+       "status": "Lost",
+       "url": "/nv/candidate/sayed-zaidi?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Eddie Facey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9950.01,
+       "expenditures": 9784.9,
+       "status": "Advanced",
+       "url": "/nv/candidate/eddie-facey?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Katrin Ivanoff",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22200.0,
+       "expenditures": 9150.52,
+       "status": "Lost",
+       "url": "/nv/candidate/katrin-ivanoff?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "42"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-5-59339?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 5",
+   "url": "/nv/race/nevada-state-assembly-district-5-59339",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 316995.0,
+   "totalExpenditures": 309541.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Brittney Miller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 284996.48,
+       "expenditures": 280502.99,
+       "status": "Won",
+       "url": "/nv/candidate/brittney-miller?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kelly Quinn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24121.0,
+       "expenditures": 21021.7,
+       "status": "Lost",
+       "url": "/nv/candidate/kelly-quinn?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ronald Morgan",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/ronald-morgan?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Brittney Miller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 284996.48,
+       "expenditures": 280502.99,
+       "status": "Advanced",
+       "url": "/nv/candidate/brittney-miller?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Kelly Quinn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24121.0,
+       "expenditures": 21021.7,
+       "status": "Advanced",
+       "url": "/nv/candidate/kelly-quinn?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Alan Hedrick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7877.18,
+       "expenditures": 8015.87,
+       "status": "Lost",
+       "url": "/nv/candidate/alan-hedrick?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "5"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-6-59340?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 6",
+   "url": "/nv/race/nevada-state-assembly-district-6-59340",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 64568.0,
+   "totalExpenditures": 65075.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Shondra Summers-Armstrong",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 64567.83,
+       "expenditures": 65074.73,
+       "status": "Won",
+       "url": "/nv/candidate/shondra-summers-armstrong?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kathryn Rios",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/kathryn-rios?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Shondra Summers-Armstrong",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 64567.83,
+       "expenditures": 65074.73,
+       "status": "Advanced",
+       "url": "/nv/candidate/shondra-summers-armstrong?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Kathryn Rios",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/kathryn-rios?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "6"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-7-59341?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 7",
+   "url": "/nv/race/nevada-state-assembly-district-7-59341",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 90103.0,
+   "totalExpenditures": 84968.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Cameron Miller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 90103.07,
+       "expenditures": 84377.19,
+       "status": "Won",
+       "url": "/nv/candidate/cameron-miller?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Anthony Palmer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 591.25,
+       "status": "Lost",
+       "url": "/nv/candidate/anthony-palmer?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Cameron Miller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 90103.07,
+       "expenditures": 84377.19,
+       "status": "Advanced",
+       "url": "/nv/candidate/cameron-miller?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Anthony Palmer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 591.25,
+       "status": "Advanced",
+       "url": "/nv/candidate/anthony-palmer?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "7"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-8-59342?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 8",
+   "url": "/nv/race/nevada-state-assembly-district-8-59342",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 272068.0,
+   "totalExpenditures": 262297.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Duy Nguyen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 238757.35,
+       "expenditures": 226856.83,
+       "status": "Won",
+       "url": "/nv/candidate/duy-nguyen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jenann Logan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24110.38,
+       "expenditures": 25740.71,
+       "status": "Lost",
+       "url": "/nv/candidate/jenann-logan?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Duy Nguyen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 238757.35,
+       "expenditures": 226856.83,
+       "status": "Advanced",
+       "url": "/nv/candidate/duy-nguyen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Jenann Logan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24110.38,
+       "expenditures": 25740.71,
+       "status": "Advanced",
+       "url": "/nv/candidate/jenann-logan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Claudia Kintigh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/claudia-kintigh?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Patricia Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9200.0,
+       "expenditures": 9699.25,
+       "status": "Lost",
+       "url": "/nv/candidate/patricia-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "8"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-assembly-district-9-59343?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Assembly District 9",
+   "url": "/nv/race/nevada-state-assembly-district-9-59343",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 922967.0,
+   "totalExpenditures": 920525.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Steve Yeager",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 900849.1,
+       "expenditures": 900047.88,
+       "status": "Won",
+       "url": "/nv/candidate/steve-yeager?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ryan Fleming",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21817.51,
+       "expenditures": 20411.4,
+       "status": "Lost",
+       "url": "/nv/candidate/ryan-fleming?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Steve Yeager",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 900849.1,
+       "expenditures": 900047.88,
+       "status": "Advanced",
+       "url": "/nv/candidate/steve-yeager?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Ryan Fleming",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21817.51,
+       "expenditures": 20411.4,
+       "status": "Advanced",
+       "url": "/nv/candidate/ryan-fleming?cycle=2022-election-cycle"
+      },
+      {
+       "name": "John Gonzalez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 300.0,
+       "expenditures": 65.28,
+       "status": "Lost",
+       "url": "/nv/candidate/john-gonzalez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "house",
-   "district": null
+   "district": "9"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-10-59294?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 10",
+   "url": "/nv/race/nevada-state-senate-district-10-59294",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 286054.0,
+   "totalExpenditures": 217934.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Fabian Donate",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 220883.57,
+       "expenditures": 153367.72,
+       "status": "Won",
+       "url": "/nv/candidate/fabian-donate?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Phillip Graviet",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 275.7,
+       "expenditures": 240.0,
+       "status": "Lost",
+       "url": "/nv/candidate/phillip-graviet?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Chris Cunningham",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 225.0,
+       "expenditures": 63.54,
+       "status": "Lost",
+       "url": "/nv/candidate/chris-cunningham?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Fabian Donate",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 220883.57,
+       "expenditures": 153367.72,
+       "status": "Advanced",
+       "url": "/nv/candidate/fabian-donate?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jack \"Jt\" Absher",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 64670.0,
+       "expenditures": 64262.93,
+       "status": "Lost",
+       "url": "/nv/candidate/jack-jt-absher?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Phillip Graviet",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 275.7,
+       "expenditures": 240.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/phillip-graviet?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "10"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-12-59295?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 12",
+   "url": "/nv/race/nevada-state-senate-district-12-59295",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 885086.0,
+   "totalExpenditures": 825368.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Julie Pazina",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 630865.43,
+       "expenditures": 526897.41,
+       "status": "Won",
+       "url": "/nv/candidate/julie-pazina?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cherlyn Arrington",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 129006.25,
+       "expenditures": 129095.5,
+       "status": "Lost",
+       "url": "/nv/candidate/cherlyn-arrington?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Julie Pazina",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 630865.43,
+       "expenditures": 526897.41,
+       "status": "Advanced",
+       "url": "/nv/candidate/julie-pazina?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Lisa Guzman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12315.0,
+       "expenditures": 12065.0,
+       "status": "Lost",
+       "url": "/nv/candidate/lisa-guzman?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Cherlyn Arrington",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 129006.25,
+       "expenditures": 129095.5,
+       "status": "Advanced",
+       "url": "/nv/candidate/cherlyn-arrington?cycle=2022-election-cycle"
+      },
+      {
+       "name": "April Arndt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 67807.0,
+       "expenditures": 67501.1,
+       "status": "Lost",
+       "url": "/nv/candidate/april-arndt?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Glen Leavitt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45092.16,
+       "expenditures": 89808.98,
+       "status": "Withdrew",
+       "url": "/nv/candidate/glen-leavitt?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Justin Minton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/justin-minton?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "12"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-13-59296?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 13",
+   "url": "/nv/race/nevada-state-senate-district-13-59296",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 331406.0,
+   "totalExpenditures": 328815.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Richard Daly",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 261927.46,
+       "expenditures": 263474.8,
+       "status": "Won",
+       "url": "/nv/candidate/richard-daly?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Matthew Buehler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 68831.09,
+       "expenditures": 65040.47,
+       "status": "Lost",
+       "url": "/nv/candidate/matthew-buehler?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Richard Daly",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 261927.46,
+       "expenditures": 263474.8,
+       "status": "Advanced",
+       "url": "/nv/candidate/richard-daly?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mark Miranda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 647.03,
+       "expenditures": 299.97,
+       "status": "Lost",
+       "url": "/nv/candidate/mark-miranda?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Matthew Buehler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 68831.09,
+       "expenditures": 65040.47,
+       "status": "Advanced",
+       "url": "/nv/candidate/matthew-buehler?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-14-59297?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 14",
+   "url": "/nv/race/nevada-state-senate-district-14-59297",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 79514.0,
+   "totalExpenditures": 67748.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Ira Hansen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79100.0,
+       "expenditures": 67608.61,
+       "status": "Won",
+       "url": "/nv/candidate/ira-hansen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Lance West",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 414.36,
+       "expenditures": 139.3,
+       "status": "Withdrew",
+       "url": "/nv/candidate/lance-west?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Ira Hansen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79100.0,
+       "expenditures": 67608.61,
+       "status": "Advanced",
+       "url": "/nv/candidate/ira-hansen?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "14"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-16-59298?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 16",
+   "url": "/nv/race/nevada-state-senate-district-16-59298",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 748552.0,
+   "totalExpenditures": 668123.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lisa Krasner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 269662.28,
+       "expenditures": 186089.13,
+       "status": "Won",
+       "url": "/nv/candidate/lisa-krasner?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Aaron Sims",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23875.25,
+       "expenditures": 20703.66,
+       "status": "Lost",
+       "url": "/nv/candidate/aaron-sims?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Aaron Sims",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23875.25,
+       "expenditures": 20703.66,
+       "status": "Advanced",
+       "url": "/nv/candidate/aaron-sims?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Lisa Krasner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 269662.28,
+       "expenditures": 186089.13,
+       "status": "Advanced",
+       "url": "/nv/candidate/lisa-krasner?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Donald Tatro",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 272898.03,
+       "expenditures": 264476.88,
+       "status": "Lost",
+       "url": "/nv/candidate/donald-tatro?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Timothy Duvall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 99241.28,
+       "expenditures": 99323.29,
+       "status": "Lost",
+       "url": "/nv/candidate/timothy-duvall?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Monica Stabbert",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 82875.24,
+       "expenditures": 97529.92,
+       "status": "Lost",
+       "url": "/nv/candidate/monica-stabbert?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "16"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-17-59299?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 17",
+   "url": "/nv/race/nevada-state-senate-district-17-59299",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 314865.0,
+   "totalExpenditures": 368453.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Robin Titus",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 244200.69,
+       "expenditures": 261518.4,
+       "status": "Won",
+       "url": "/nv/candidate/robin-titus?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Robin Titus",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 244200.69,
+       "expenditures": 261518.4,
+       "status": "Advanced",
+       "url": "/nv/candidate/robin-titus?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jim Wheeler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 70664.02,
+       "expenditures": 106934.55,
+       "status": "Lost",
+       "url": "/nv/candidate/jim-wheeler?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "17"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-2-59291?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 2",
+   "url": "/nv/race/nevada-state-senate-district-2-59291",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 262582.0,
+   "totalExpenditures": 219535.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Edgar Flores",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 251693.0,
+       "expenditures": 207472.08,
+       "status": "Won",
+       "url": "/nv/candidate/edgar-flores?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Leonel Henderson Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3159.31,
+       "expenditures": 4157.1,
+       "status": "Lost",
+       "url": "/nv/candidate/leonel-henderson-jr?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Edgar Flores",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 251693.0,
+       "expenditures": 207472.08,
+       "status": "Advanced",
+       "url": "/nv/candidate/edgar-flores?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Leonel Henderson Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3159.31,
+       "expenditures": 4157.1,
+       "status": "Advanced",
+       "url": "/nv/candidate/leonel-henderson-jr?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Gomez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7730.0,
+       "expenditures": 7906.02,
+       "status": "Lost",
+       "url": "/nv/candidate/david-gomez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "2"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-20-59300?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 20",
+   "url": "/nv/race/nevada-state-senate-district-20-59300",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 337786.0,
+   "totalExpenditures": 301483.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jeff Stone",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 283865.0,
+       "expenditures": 203129.11,
+       "status": "Won",
+       "url": "/nv/candidate/jeff-stone?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Brent Foutz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/brent-foutz?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Brandon Mills",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/brandon-mills?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Daniel Patterson",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 8828.57,
+       "expenditures": 8544.48,
+       "status": "Withdrew",
+       "url": "/nv/candidate/daniel-patterson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Brent Foutz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/brent-foutz?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Jeff Stone",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 283865.0,
+       "expenditures": 203129.11,
+       "status": "Advanced",
+       "url": "/nv/candidate/jeff-stone?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Glen Leavitt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45092.16,
+       "expenditures": 89808.98,
+       "status": "Withdrew",
+       "url": "/nv/candidate/glen-leavitt?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "20"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-21-59301?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 21",
+   "url": "/nv/race/nevada-state-senate-district-21-59301",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 380258.0,
+   "totalExpenditures": 379663.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "James Ohrenschall",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 192617.14,
+       "expenditures": 188794.66,
+       "status": "Won",
+       "url": "/nv/candidate/james-ohrenschall?cycle=2022-election-cycle"
+      },
+      {
+       "name": "April Larsen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 187641.25,
+       "expenditures": 190868.68,
+       "status": "Lost",
+       "url": "/nv/candidate/april-larsen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "James Ohrenschall",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 192617.14,
+       "expenditures": 188794.66,
+       "status": "Advanced",
+       "url": "/nv/candidate/james-ohrenschall?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jacqueline Alvidrez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/jacqueline-alvidrez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "April Larsen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 187641.25,
+       "expenditures": 190868.68,
+       "status": "Advanced",
+       "url": "/nv/candidate/april-larsen?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "21"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-8-59292?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 8",
+   "url": "/nv/race/nevada-state-senate-district-8-59292",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1406771.0,
+   "totalExpenditures": 1217761.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Marilyn Dondero Loop",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 698514.6,
+       "expenditures": 604939.63,
+       "status": "Won",
+       "url": "/nv/candidate/marilyn-dondero-loop?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joey Paulos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 473720.1,
+       "expenditures": 474170.8,
+       "status": "Lost",
+       "url": "/nv/candidate/joey-paulos?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Marilyn Dondero Loop",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 698514.6,
+       "expenditures": 604939.63,
+       "status": "Advanced",
+       "url": "/nv/candidate/marilyn-dondero-loop?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Joey Paulos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 473720.1,
+       "expenditures": 474170.8,
+       "status": "Advanced",
+       "url": "/nv/candidate/joey-paulos?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joshua Dowden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144495.08,
+       "expenditures": 33808.06,
+       "status": "Lost",
+       "url": "/nv/candidate/joshua-dowden?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jennifer Fawzy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18814.9,
+       "expenditures": 8958.09,
+       "status": "Lost",
+       "url": "/nv/candidate/jennifer-fawzy?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jeff Gordon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/jeff-gordon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kevin Mann",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/kevin-mann?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Raja Mourey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 53130.0,
+       "expenditures": 54805.0,
+       "status": "Lost",
+       "url": "/nv/candidate/raja-mourey?cycle=2022-election-cycle"
+      },
+      {
+       "name": "John Schmitz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1686.28,
+       "expenditures": 1598.73,
+       "status": "Lost",
+       "url": "/nv/candidate/john-schmitz?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mark Shaffer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16410.0,
+       "expenditures": 39480.31,
+       "status": "Lost",
+       "url": "/nv/candidate/mark-shaffer?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "8"
   },
   {
-   "office": "",
-   "url": "/nv/race/nevada-state-senate-district-9-59293?cycle=2022-election-cycle",
-   "dataThrough": "06/30/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "Nevada State Senate District 9",
+   "url": "/nv/race/nevada-state-senate-district-9-59293",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 734442.0,
+   "totalExpenditures": 596498.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Melanie Scheible",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 634442.19,
+       "expenditures": 553478.79,
+       "status": "Won",
+       "url": "/nv/candidate/melanie-scheible?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ana Usma",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/ana-usma?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Melanie Scheible",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 634442.19,
+       "expenditures": 553478.79,
+       "status": "Advanced",
+       "url": "/nv/candidate/melanie-scheible?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 14, 2022",
+     "candidates": [
+      {
+       "name": "Tina Peetris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 100000.0,
+       "expenditures": 43019.16,
+       "status": "Lost",
+       "url": "/nv/candidate/tina-peetris?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "9"
   }
  ]
 }

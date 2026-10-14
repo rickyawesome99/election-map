@@ -1,7 +1,7 @@
 "use client";
 
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
-import type { AtlasDistrict, AtlasEra } from "@/lib/stateLegAtlas";
+import type { AtlasDistrict, AtlasEra, AtlasIndependent } from "@/lib/stateLegAtlas";
 import { projectedMarginColor } from "@/lib/colorScale";
 
 /** Margin text in the site's standard party colors (not the Safe/Likely/Lean shade scale). */
@@ -16,6 +16,75 @@ function signed(v: number, digits = 1): string {
   return `${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.abs(v).toFixed(digits)}`;
 }
 
+/** "I+4.2" or "R+4.2": an independent's margin over the major-party nominee. */
+function fmtI(advantage: number, opp: "D" | "R"): string {
+  return Math.abs(advantage) < 0.05 ? "Even" : `${advantage > 0 ? "I" : opp}+${Math.abs(advantage).toFixed(1)}`;
+}
+
+const BASIS: Record<AtlasIndependent["basis"], string> = {
+  incumbent: "sitting independent",
+  record: "strong last race in the seat",
+  endorsed: "backed by a major party",
+};
+
+/** The independent-vs-party sum that replaces the two-party one (lib/stateLegForecast.ts step 7). */
+function IndependentSum({ indep, lean, envPts, beta, pI, electionYear }: { indep: AtlasIndependent; lean: number; envPts: number; beta: number; pI: number | null; electionYear: number }) {
+  const opp = indep.slot === "D" ? "R" : "D";
+  const flip = indep.slot === "R" ? 1 : -1;   // the generic absent-party nominee's advantage is ± the R-positive margin
+  const inc = indep.sameElectorate ? indep.advantage : indep.advantage - flip * (lean + envPts) - indep.personal;
+  const lines = indep.sameElectorate
+    ? [{ label: "One electorate", note: `racing the ${opp === "D" ? "Democrats'" : "Republicans'"} last nominee for the district's final seat: no lean or environment`, value: "0.0" },
+       { label: "+ Incumbency", note: inc === 0 ? "neither or both sitting" : inc > 0 ? "the independent is sitting" : "the nominee is sitting", value: signed(inc) }]
+    : [
+      { label: `Generic ${indep.slot === "D" ? "Democrat" : "Republican"}`, note: `the absent party's nominee: lean ${fmtM(lean)} + ${electionYear} environment (β* ${beta.toFixed(2)})`, value: signed(flip * (lean + envPts)) },
+      { label: "+ Incumbency", note: inc === 0 ? "neither or both sitting (appointed: none)" : inc > 0 ? "the independent is sitting" : "the nominee is sitting", value: signed(inc) },
+      { label: "+ Personal", note: indep.record.length ? `last ${Math.min(2, indep.record.length)} race${indep.record.length > 1 ? "s" : ""} above, shrunk toward the prior` : indep.basis === "endorsed" ? "no record here: the backing party's generic nominee" : "no record here: the prior for a sitting or proven independent", value: signed(indep.personal) },
+    ];
+  return (
+    <div className="mt-4">
+      <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>
+        <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{indep.name}</span> ({indep.partyLabel}, {BASIS[indep.basis]}{indep.endorsedBy ? `, ${indep.endorsedBy === "D" ? "Democratic" : "Republican"}-backed` : ""}) {indep.sameElectorate ? `races the ${opp === "D" ? "Democrats'" : "Republicans'"} ${indep.opponent ?? "nominees"} for one of the district's seats; the others go to the party.` : `takes the place of the absent ${indep.slot === "D" ? "Democrat" : "Republican"} against ${indep.opponent ?? `the ${opp}`}.`}{indep.note ? ` ${indep.note}` : ""}
+      </p>
+      {indep.record.length > 0 && (
+        <table className="mt-3 w-full max-w-md text-xs" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
+          <thead>
+            <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
+              {["Race", "Share", "Margin", "Expected", "Residual"].map((h, i) => (
+                <th key={h} className={`py-1.5 pr-3 text-[10px] uppercase tracking-wider font-semibold ${i ? "text-right" : "text-left"}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {[...indep.record].reverse().map((r) => (
+              <tr key={r.year} style={{ borderBottom: "1px solid var(--app-border)" }}>
+                <td className="py-1.5 pr-3 font-semibold">{r.year} vs {r.opponentParty}</td>
+                <td className="py-1.5 pr-3 text-right">{r.share.toFixed(1)}%</td>
+                <td className="py-1.5 pr-3 text-right">{fmtI(r.advantage, r.opponentParty)}</td>
+                <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{signed(r.expected)}</td>
+                <td className="py-1.5 pr-0 text-right font-semibold">{signed(r.residual)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+      <div className="mt-3 max-w-md text-sm" style={{ fontVariantNumeric: "tabular-nums" }}>
+        {lines.map((l) => (
+          <div key={l.label} className="flex items-baseline gap-3 py-1" style={{ borderBottom: "1px solid var(--app-border)" }}>
+            <span className="font-semibold whitespace-nowrap">{l.label}</span>
+            <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{l.note}</span>
+            <span className="ml-auto">{l.value}</span>
+          </div>
+        ))}
+        <div className="flex items-baseline gap-3 py-1.5" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+          <span className="font-bold">= Projected margin</span>
+          <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{pI != null ? `P(${indep.name}) ${Math.round(pI * 100)}%` : ""}</span>
+          <span className="ml-auto font-bold" style={{ color: indep.advantage > 0 ? "var(--party-ind)" : opp === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>{fmtI(indep.advantage, opp)}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 /**
  * The district's 2026 outlook: the headline, the lean ledger (every row, with its relocation,
  * incumbency and environment strips), and the forward sum. Mirrors the race pages' Forecast
@@ -25,14 +94,21 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
   const pr = district.projection;
   if (!pr) return null;
   const eraLabel = (key: string) => (key === "current" ? "today's lines" : `${eras.find((e) => e.key === key)?.label ?? key} map`);
-  const decided = pr.contest === "uncontested-D" || pr.contest === "uncontested-R";
+  const decided = pr.contest === "uncontested-D" || pr.contest === "uncontested-R" || pr.contest === "split";
+  const g = pr.guaranteed ?? { dem: 0, rep: 0 };
+  const guaranteedNote = g.dem || g.rep ? `${[g.dem ? `${g.dem} Democratic` : "", g.rep ? `${g.rep} Republican` : ""].filter(Boolean).join(" and ")} seat${g.dem + g.rep > 1 ? "s" : ""} decided by the field` : null;
   const headline = pr.contest === "not-up"
     ? `Not on the ${electionYear} ballot`
     : pr.contest === "uncontested-D" ? "Democratic seat: no Republican on the ballot"
     : pr.contest === "uncontested-R" ? "Republican seat: no Democrat on the ballot"
     : pr.contest === "contested" && pr.margin != null ? fmtM(pr.margin)
+    : pr.contest === "independent" && pr.indep ? `${pr.indep.name} vs ${pr.indep.slot === "D" ? "R" : "D"}: ${fmtI(pr.indep.advantage, pr.indep.slot === "D" ? "R" : "D")}`
+    : pr.contest === "other" && pr.pI === 1 ? "Independent seat: no major party on the ballot"
+    : pr.contest === "split" ? `Every seat decided by the field: ${g.dem} D, ${g.rep} R`
     : "No projection";
-  const headColor = pr.contest === "uncontested-D" ? "var(--party-dem)" : pr.contest === "uncontested-R" ? "var(--party-rep)" : pr.margin != null && pr.contest === "contested" ? marginText(pr.margin) : "var(--app-text-muted)";
+  const headColor = pr.contest === "uncontested-D" ? "var(--party-dem)" : pr.contest === "uncontested-R" ? "var(--party-rep)" : pr.margin != null && pr.contest === "contested" ? marginText(pr.margin)
+    : pr.contest === "independent" && pr.indep ? (pr.indep.advantage > 0 ? "var(--party-ind)" : pr.indep.slot === "D" ? "var(--party-rep)" : "var(--party-dem)")
+    : pr.contest === "other" && pr.pI === 1 ? "var(--party-ind)" : "var(--app-text-muted)";
 
   return (
     <section>
@@ -43,7 +119,7 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
           <span style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.2rem, 2.5vw, 1.6rem)", fontWeight: 700, color: headColor, lineHeight: 1 }}>{headline}</span>
         </div>
       )}
-      {pr.seats > 1 && pr.contest === "contested" && <p className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{pr.seats} seats, each drawn on the same margin.</p>}
+      {pr.seats > 1 && pr.contest === "contested" && <p className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{guaranteedNote ? `${guaranteedNote}; the other ${pr.contestedSeats ?? pr.seats - g.dem - g.rep} drawn on the margin.` : `${pr.seats} seats, each drawn on the same margin.`}</p>}
 
       {pr.contest !== "not-up" && pr.lean != null && (
         <>
@@ -74,6 +150,9 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
               </tbody>
             </table>
           </div>
+          {pr.contest === "independent" && pr.indep ? (
+            <IndependentSum indep={pr.indep} lean={pr.lean} envPts={pr.envPts} beta={pr.beta} pI={pr.pI ?? null} electionYear={electionYear} />
+          ) : (
           <div className="mt-3 max-w-md text-sm" style={{ fontVariantNumeric: "tabular-nums" }}>
             {[
               { label: "Structural lean", note: "weighted neutral margins above", value: fmtM(pr.lean) },
@@ -92,6 +171,7 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
               <span className="ml-auto font-bold" style={{ color: pr.margin != null ? marginText(pr.margin) : undefined }}>{fmtM(pr.margin)}</span>
             </div>
           </div>
+          )}
         </>
       )}
       {pr.contest === "not-up" && district.nextElection && (

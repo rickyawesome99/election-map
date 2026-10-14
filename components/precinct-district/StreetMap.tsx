@@ -63,7 +63,7 @@ export default function StreetMap({ fc, unitOf, colorFor, isDimmed, selectedUnit
   live.current = { onSelect, tooltipHtml, selectedUnit };
 
   const styled = useMemo<FeatureCollection<Geometry, StyledProps>>(() => {
-    const baseStroke = darkMode ? "#0d1117" : "#f6f8fa";
+    const baseStroke = darkMode ? "#0d1117" : "#f9f8f5";
     return {
       type: "FeatureCollection",
       features: fc.features.map((f, i) => {

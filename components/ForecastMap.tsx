@@ -77,17 +77,17 @@ export const DARK_THEME = {
 };
 
 export const LIGHT_THEME = {
-  bg: "#f6f8fa",
+  bg: "#f9f8f5",
   panel: "#ffffff",
   border: "#d0d7de",
-  tabBg: "#eaeef2",
+  tabBg: "#efede8",
   textPrimary: "#1f2328",
   textMuted: "#656d76",
   textVeryMuted: "#949ea6",
   hoverUnfilled: "#dde2e7",
   mapUnfilled: "#c8cdd3",
   noElection: "#8b929b",
-  mapStroke: "#f6f8fa",
+  mapStroke: "#f9f8f5",
   hoverStroke: "#000000",
   legendBg: "rgba(255,255,255,0.92)",
   badgeBg: "rgba(255,255,255,0.92)",

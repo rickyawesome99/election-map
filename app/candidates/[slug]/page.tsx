@@ -11,7 +11,8 @@ import { WAR_BAD, WAR_GOOD, careerWar } from "@/components/tpl/format";
 import { findStateLegCandidate, getStateLegCandidatePage, type StateLegCandidatePage, type StateLegRace } from "@/lib/stateLegCandidateIndex";
 import { StateLegCurrentRow, StateLegPastRow, type LegProjection, type RaceMoney } from "@/components/candidates/StateLegRaceRow";
 import { stateLegMoney } from "@/lib/stateLegMoney";
-import { projectDistrict } from "@/lib/stateLegForecast";
+import { personKey, projectDistrict } from "@/lib/stateLegForecast";
+import { fieldPersons } from "@/lib/stateLegAtlas";
 import { stateLegDistricts } from "@/data/stateLegDistricts";
 
 // ~1,100 federal and ~38,000 state legislative candidate pages: rendered on first request and
@@ -59,12 +60,17 @@ function legMoney(race: StateLegRace, name: string): RaceMoney {
   return { contributions: mine.contributions, opponents: others.length ? others.reduce((s, c) => s + (c.contributions ?? 0), 0) : null, dataThrough: m.dataThrough, source: m.source };
 }
 
-function legProjection(race: StateLegRace): LegProjection {
+function legProjection(race: StateLegRace, name: string): LegProjection {
   if (!race.isCurrent) return null;
   const d = stateLegDistricts[race.abbr]?.[race.chamber]?.find((x) => x.number === race.district);
   if (!d) return null;
   const p = projectDistrict(race.abbr, race.chamber, d);
-  return { margin: p.margin, rating: p.rating, pD: p.pD, contest: p.contest };
+  const indep = p.indep ? {
+    isMe: personKey(p.indep.name) === personKey(name), name: p.indep.name, opp: (p.indep.slot === "D" ? "R" : "D") as "D" | "R",
+    advantage: p.indep.advantage, pI: p.pI ?? 0, sameElectorate: p.indep.sameElectorate,
+  } : null;
+  const persons = p.candidates2026 ? fieldPersons(p.candidates2026, d.incumbents ?? []).filter((x) => !x.writeIn) : [];
+  return { margin: p.margin, rating: p.rating, pD: p.pD, contest: p.contest, indep, pI: p.pI, guaranteed: p.guaranteed, nominees: { dem: persons.filter((x) => x.party === "D").length, rep: persons.filter((x) => x.party === "R").length } };
 }
 
 function partyLabel(party: "D" | "R" | "I") {
@@ -176,7 +182,7 @@ export default async function CandidatePage({
 
   // One timeline: federal and state legislative races interleaved, newest first.
   type Item = { year: number; order: number; node: React.ReactNode };
-  const legProjections = new Map(legCurrent.map((r) => [r, legProjection(r)]));
+  const legProjections = new Map(legCurrent.map((r) => [r, legProjection(r, legName(r))]));
   const hasCurrent = !!candidate.currentRace || legCurrent.length > 0;
   const totalPast = pastEntries.length + legPast.length;
 

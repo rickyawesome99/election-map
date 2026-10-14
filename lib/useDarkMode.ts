@@ -3,7 +3,7 @@
 import { useSyncExternalStore } from "react";
 
 const THEME_STORAGE_KEY = "darkMode";
-const LIGHT_APP_BG = "#f6f8fa";
+const LIGHT_APP_BG = "#f9f8f5";
 const DARK_APP_BG = "#0d1117";
 
 function syncMeta(name: string, content: string, options: { removeMedia?: boolean } = {}): void {

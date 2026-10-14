@@ -111,6 +111,12 @@ export default function AtlasDistrictDetail({
     : pr.contest === "uncontested-D" ? { label: "Projected", value: "Safe D", color: "var(--party-dem)" }
     : pr.contest === "uncontested-R" ? { label: "Projected", value: "Safe R", color: "var(--party-rep)" }
     : pr.contest === "contested" && pr.margin != null ? { label: "Projected Margin", value: fmtMargin(pr.margin), color: marginText(pr.margin) }
+    : pr.contest === "independent" && pr.indep ? (() => {
+      const opp = pr.indep.slot === "D" ? "R" : "D", a = pr.indep.advantage;
+      return { label: `Projected · ${pr.indep.name} vs ${opp}`, value: Math.abs(a) < 0.05 ? "Even" : `${a > 0 ? "I" : opp}+${Math.abs(a).toFixed(1)}`, color: a > 0 ? "var(--party-ind)" : opp === "D" ? "var(--party-dem)" : "var(--party-rep)" };
+    })()
+    : pr.contest === "other" && pr.pI === 1 ? { label: "Projected", value: "Independent", color: "var(--party-ind)" }
+    : pr.contest === "split" && pr.guaranteed ? { label: "Projected · decided by the field", value: `${pr.guaranteed.dem} D · ${pr.guaranteed.rep} R`, color: "var(--app-text-primary)" }
     : null;
   const parties = new Set(district.incumbents.map((i) => i.party));
   const heldBy = district.incumbents.length === 0 ? "Vacant" : parties.size === 1 ? `${[...parties][0] === "D" ? "Dem" : [...parties][0] === "R" ? "GOP" : "Ind."} held` : "Split delegation";
@@ -121,11 +127,25 @@ export default function AtlasDistrictDetail({
   const stats = [
     pr?.contest === "contested" && pr.pD != null
       ? { label: "Win Prob.", value: `${Math.round(Math.max(pr.pD, 1 - pr.pD) * 100)}% ${pr.pD >= 0.5 ? "D" : "R"}`, color: pr.pD >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }
+      : pr?.contest === "independent" && pr.indep && pr.pI != null
+        ? { label: "Win Prob.", value: `${Math.round(Math.max(pr.pI, 1 - pr.pI) * 100)}% ${pr.pI >= 0.5 ? "I" : pr.indep.slot === "D" ? "R" : "D"}`, color: pr.pI >= 0.5 ? "var(--party-ind)" : pr.indep.slot === "D" ? "var(--party-rep)" : "var(--party-dem)" }
+      : pr?.contest === "other" && pr.pI === 1
+        ? { label: "Win Prob.", value: "100% I", color: "var(--party-ind)" }
+      : pr?.contest === "split"
+        ? { label: "Win Prob.", value: "Decided", color: muted }
       : pr?.contest === "not-up" && pr.lean != null
         ? { label: "TPL Lean", value: fmtMargin(pr.lean), color: marginText(pr.lean) }
         : { label: "Win Prob.", value: pr?.contest === "uncontested-D" ? "100% D" : pr?.contest === "uncontested-R" ? "100% R" : "—", color: pr?.contest === "uncontested-D" ? "var(--party-dem)" : pr?.contest === "uncontested-R" ? "var(--party-rep)" : muted },
     { label: "2024 President", value: fmtMargin(pres24), color: pres24 == null ? muted : marginText(pres24) },
-    { label: lastResult ? `${lastResult.year} Result` : "Last Result", value: lastResult?.uncontested && lastMargin != null ? `Unopposed ${lastMargin > 0 ? "R" : "D"}` : fmtMargin(lastMargin), color: lastMargin == null ? muted : marginText(lastMargin) },
+    (() => {
+      // A race an independent won: their margin over the runner-up, not the two-party one.
+      const top = [...(lastResult?.candidates ?? [])].filter((c) => c.votes != null).sort((a, b) => (b.votes ?? 0) - (a.votes ?? 0));
+      if (lastResult?.totalVotes && top[0]?.party === "O" && top.length > 1) {
+        const m = (((top[0].votes ?? 0) - (top[1].votes ?? 0)) / lastResult.totalVotes) * 100;
+        return { label: `${lastResult.year} Result`, value: `I+${m.toFixed(1)}`, color: "var(--party-ind)" };
+      }
+      return { label: lastResult ? `${lastResult.year} Result` : "Last Result", value: lastResult?.uncontested && lastMargin != null ? `Unopposed ${lastMargin > 0 ? "R" : "D"}` : fmtMargin(lastMargin), color: lastMargin == null ? muted : marginText(lastMargin) };
+    })(),
   ];
 
   return (

@@ -317,10 +317,21 @@ def main():
                         for cell, col in zip(pc[0], pc[1]):
                             cl = col.lower()
                             party = "D" if "democrat" in cl else "R" if "republican" in cl else "O"
-                            pcands.extend([c for c in parse_candidates(cell, party) if not c.get("canceled")])
+                            found = [c for c in parse_candidates(cell, party) if not c.get("canceled")]
+                            checked = {normalize(strip(m)) for m in re.findall(r'<span class="candidate">\s*<img[^>]*Green_check_mark[^>]*>(.*?)</span>', cell, re.S)}
+                            for c in found:
+                                if any(normalize(c["name"]) and checked_name.startswith(normalize(c["name"])) for checked_name in checked):
+                                    c["primaryWinner"] = True
+                            pcands.extend(found)
                     parties = {c["party"] for c in pcands}
+                    # Hawaii cancels a general when one party's primary is the only contest left: the
+                    # primary winners (Ballotpedia's green check mark) are elected.
+                    winners = [c for c in pcands if c.get("primaryWinner")]
+                    elected = lambda cs: [{**{k: v for k, v in c.items() if k != "primaryWinner"}, "canceledGeneral": True} for c in cs]
                     if len(parties) == 1 and pcands:
-                        cands = [{**c, "canceledGeneral": True} for c in pcands]
+                        cands = elected(pcands)
+                    elif winners and len({c["party"] for c in winners}) == 1:
+                        cands = elected(winners)
                     else:
                         cands = [{"name": "General election canceled", "party": "O", "canceledGeneral": True}]
                     rec = out.setdefault(key, {"candidates": []})

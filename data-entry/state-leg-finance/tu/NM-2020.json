@@ -1,1240 +1,5889 @@
 {
  "state": "NM",
  "cycle": 2020,
- "fetched": "2026-10-11",
- "dataThrough": "06/27/2026",
+ "fetched": "2026-10-12",
+ "dataThrough": "12/31/2020",
  "races": [
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-1-45535?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-10-45544?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-11-45545?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-12-45546?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-13-45547?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-14-45548?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-15-45549?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-16-45550?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-17-45551?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-18-45552?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-19-45553?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-2-45536?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-20-45554?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-21-45555?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-22-45556?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-23-45557?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-24-45558?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-25-45559?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-26-45560?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-27-45561?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-28-45562?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-29-45563?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-3-45537?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-30-45564?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-31-45565?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-32-45566?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-33-45567?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-34-45568?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-35-45569?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-36-45570?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-37-45571?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-38-45572?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-39-45573?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-4-45538?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-40-45574?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-41-45575?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-42-45576?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-43-45577?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-44-45578?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-45-45579?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-46-45580?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-47-45581?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-48-45582?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-49-45583?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-5-45539?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-50-45584?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-51-45585?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-52-45586?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-53-45587?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-54-45588?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-55-45589?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-56-45590?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-57-45591?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-58-45592?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-59-45593?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-6-45540?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-60-45594?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-61-45595?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-62-45596?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-63-45597?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-64-45598?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-65-45599?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-66-45600?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-67-45601?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-68-45602?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-69-45603?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-7-45541?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-70-45604?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-8-45542?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-house-of-representatives-district-9-45543?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "house",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-1-45605?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "New Mexico House of Representatives District 1",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-1-45535",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 45380.0,
+   "totalExpenditures": 66734.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Rodney D Montoya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45380.0,
+       "expenditures": 0.0,
+       "status": "$66,733.77",
+       "url": "/nm/candidate/rodney-d-montoya?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Rodney D Montoya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45380.0,
+       "expenditures": 0.0,
+       "status": "$66,733.77",
+       "url": "/nm/candidate/rodney-d-montoya?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "New Mexico House of Representatives District 10",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-10-45544",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 56351.0,
+   "totalExpenditures": 68749.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "G Andres Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 15670.35,
+       "expenditures": 1402.38,
+       "status": "$31,073.84",
+       "url": "/nm/candidate/g-andres-romero?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Dinah G Vargas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40680.8,
+       "expenditures": 0.0,
+       "status": "$37,675.27",
+       "url": "/nm/candidate/dinah-g-vargas?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "G Andres Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 15670.35,
+       "expenditures": 1402.38,
+       "status": "$31,073.84",
+       "url": "/nm/candidate/g-andres-romero?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Dinah G Vargas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40680.8,
+       "expenditures": 0.0,
+       "status": "$37,675.27",
+       "url": "/nm/candidate/dinah-g-vargas?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "New Mexico House of Representatives District 11",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-11-45545",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 93674.0,
+   "totalExpenditures": 160093.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Javier I Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 85586.28,
+       "expenditures": 0.0,
+       "status": "$153,711.84",
+       "url": "/nm/candidate/javier-i-martinez?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Adrian A Trujillo Sr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8087.82,
+       "expenditures": 0.0,
+       "status": "$6,380.75",
+       "url": "/nm/candidate/adrian-a-trujillo-sr?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Javier I Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 85586.28,
+       "expenditures": 0.0,
+       "status": "$153,711.84",
+       "url": "/nm/candidate/javier-i-martinez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Adrian A Trujillo Sr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8087.82,
+       "expenditures": 0.0,
+       "status": "$6,380.75",
+       "url": "/nm/candidate/adrian-a-trujillo-sr?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "New Mexico House of Representatives District 12",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-12-45546",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 127129.0,
+   "totalExpenditures": 105083.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Brittney Barreras",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 55991.71,
+       "expenditures": 0.0,
+       "status": "$47,931.91",
+       "url": "/nm/candidate/brittney-barreras?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Art De La Cruz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 71137.56,
+       "expenditures": 5000.0,
+       "status": "$57,151.28",
+       "url": "/nm/candidate/art-de-la-cruz?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "New Mexico House of Representatives District 13",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-13-45547",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 17167.0,
+   "totalExpenditures": 16035.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Patricia Roybal Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 17166.82,
+       "expenditures": 0.0,
+       "status": "$16,034.97",
+       "url": "/nm/candidate/patricia-roybal-caballero?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Patricia Roybal Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 17166.82,
+       "expenditures": 0.0,
+       "status": "$16,034.97",
+       "url": "/nm/candidate/patricia-roybal-caballero?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "New Mexico House of Representatives District 14",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-14-45548",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 8380.0,
+   "totalExpenditures": 16376.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Miguel P Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8379.68,
+       "expenditures": 0.0,
+       "status": "$16,375.61",
+       "url": "/nm/candidate/miguel-p-garcia?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Miguel P Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8379.68,
+       "expenditures": 0.0,
+       "status": "$16,375.61",
+       "url": "/nm/candidate/miguel-p-garcia?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "New Mexico House of Representatives District 15",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-15-45549",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 161805.0,
+   "totalExpenditures": 172848.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Day M Hochman-Vigil",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 127898.53,
+       "expenditures": 0.0,
+       "status": "$141,545.47",
+       "url": "/nm/candidate/day-m-hochman-vigil?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ali Ennenga",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33906.25,
+       "expenditures": 0.0,
+       "status": "$31,302.77",
+       "url": "/nm/candidate/ali-ennenga?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Day M Hochman-Vigil",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 127898.53,
+       "expenditures": 0.0,
+       "status": "$141,545.47",
+       "url": "/nm/candidate/day-m-hochman-vigil?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Ali Ennenga",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33906.25,
+       "expenditures": 0.0,
+       "status": "$31,302.77",
+       "url": "/nm/candidate/ali-ennenga?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "New Mexico House of Representatives District 16",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-16-45550",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 78559.0,
+   "totalExpenditures": 138026.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Antonio Moe Maestas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 74086.11,
+       "expenditures": 0.0,
+       "status": "$135,239.43",
+       "url": "/nm/candidate/antonio-moe-maestas?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Antoinette B Taft",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4472.56,
+       "expenditures": 0.0,
+       "status": "$2,786.48",
+       "url": "/nm/candidate/antoinette-b-taft?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Antonio Moe Maestas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 74086.11,
+       "expenditures": 0.0,
+       "status": "$135,239.43",
+       "url": "/nm/candidate/antonio-moe-maestas?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Antoinette B Taft",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4472.56,
+       "expenditures": 0.0,
+       "status": "$2,786.48",
+       "url": "/nm/candidate/antoinette-b-taft?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "New Mexico House of Representatives District 17",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-17-45551",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 40716.0,
+   "totalExpenditures": 41420.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Deborah A Armstrong",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 40715.83,
+       "expenditures": 0.0,
+       "status": "$41,420.43",
+       "url": "/nm/candidate/deborah-a-armstrong?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Deborah A Armstrong",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 40715.83,
+       "expenditures": 0.0,
+       "status": "$41,420.43",
+       "url": "/nm/candidate/deborah-a-armstrong?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "New Mexico House of Representatives District 18",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-18-45552",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "New Mexico House of Representatives District 19",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-19-45553",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 43876.0,
+   "totalExpenditures": 18685.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Sheryl M Williams Stapleton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39727.2,
+       "expenditures": 0.0,
+       "status": "$15,683.08",
+       "url": "/nm/candidate/sheryl-m-williams-stapleton?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Stephen J Cecco",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4148.85,
+       "expenditures": 0.0,
+       "status": "$3,001.73",
+       "url": "/nm/candidate/stephen-j-cecco?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Sheryl M Williams Stapleton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39727.2,
+       "expenditures": 0.0,
+       "status": "$15,683.08",
+       "url": "/nm/candidate/sheryl-m-williams-stapleton?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Stephen J Cecco",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4148.85,
+       "expenditures": 0.0,
+       "status": "$3,001.73",
+       "url": "/nm/candidate/stephen-j-cecco?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "New Mexico House of Representatives District 2",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-2-45536",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 11900.0,
+   "totalExpenditures": 27150.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "James R Strickler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11900.0,
+       "expenditures": 0.0,
+       "status": "$27,149.83",
+       "url": "/nm/candidate/james-r-strickler?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "James R Strickler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11900.0,
+       "expenditures": 0.0,
+       "status": "$27,149.83",
+       "url": "/nm/candidate/james-r-strickler?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "New Mexico House of Representatives District 20",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-20-45554",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 159895.0,
+   "totalExpenditures": 188393.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Meredith A Dixon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 159895.09,
+       "expenditures": 0.0,
+       "status": "$188,392.92",
+       "url": "/nm/candidate/meredith-a-dixon?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Meredith A Dixon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 159895.09,
+       "expenditures": 0.0,
+       "status": "$188,392.92",
+       "url": "/nm/candidate/meredith-a-dixon?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "New Mexico House of Representatives District 21",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-21-45555",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 25904.0,
+   "totalExpenditures": 32247.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Debra M Sarinana",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 25904.38,
+       "expenditures": 0.0,
+       "status": "$32,247.19",
+       "url": "/nm/candidate/debra-m-sarinana?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Debra M Sarinana",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 25904.38,
+       "expenditures": 0.0,
+       "status": "$32,247.19",
+       "url": "/nm/candidate/debra-m-sarinana?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "New Mexico House of Representatives District 22",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-22-45556",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 209982.0,
+   "totalExpenditures": 215900.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Stefani Lord",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 61771.5,
+       "expenditures": 0.0,
+       "status": "$38,042.88",
+       "url": "/nm/candidate/stefani-lord?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jessica P Velasquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 148210.36,
+       "expenditures": 0.0,
+       "status": "$177,857.13",
+       "url": "/nm/candidate/jessica-p-velasquez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Jessica P Velasquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 148210.36,
+       "expenditures": 0.0,
+       "status": "$177,857.13",
+       "url": "/nm/candidate/jessica-p-velasquez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Stefani Lord",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 61771.5,
+       "expenditures": 0.0,
+       "status": "$38,042.88",
+       "url": "/nm/candidate/stefani-lord?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "New Mexico House of Representatives District 23",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-23-45557",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 70958.0,
+   "totalExpenditures": 112440.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Daymon B Ely",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 70933.06,
+       "expenditures": 0.0,
+       "status": "$109,830.54",
+       "url": "/nm/candidate/daymon-b-ely?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Daymon B Ely",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 70933.06,
+       "expenditures": 0.0,
+       "status": "$109,830.54",
+       "url": "/nm/candidate/daymon-b-ely?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Audrey D Mendonca-Trujillo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25.0,
+       "expenditures": 0.0,
+       "status": "$2,609.07",
+       "url": "/nm/candidate/audrey-d-mendonca-trujillo?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "New Mexico House of Representatives District 24",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-24-45558",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 52526.0,
+   "totalExpenditures": 73593.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Elizabeth L Thomson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52526.11,
+       "expenditures": 0.0,
+       "status": "$73,592.85",
+       "url": "/nm/candidate/elizabeth-l-thomson?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Elizabeth L Thomson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52526.11,
+       "expenditures": 0.0,
+       "status": "$73,592.85",
+       "url": "/nm/candidate/elizabeth-l-thomson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "New Mexico House of Representatives District 25",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-25-45559",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 20228.0,
+   "totalExpenditures": 15698.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Christine M Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13959.38,
+       "expenditures": 0.0,
+       "status": "$11,240.00",
+       "url": "/nm/candidate/christine-m-trujillo?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Sarah Rich-Jackson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5965.0,
+       "expenditures": 0.0,
+       "status": "$2,574.87",
+       "url": "/nm/candidate/sarah-rich-jackson?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Stephen Verchinski",
+       "party": "Green",
+       "incumbent": false,
+       "contributions": 304.12,
+       "expenditures": 1540.0,
+       "status": "$1,882.72",
+       "url": "/nm/candidate/stephen-verchinski?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Christine M Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13959.38,
+       "expenditures": 0.0,
+       "status": "$11,240.00",
+       "url": "/nm/candidate/christine-m-trujillo?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Sarah Rich-Jackson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5965.0,
+       "expenditures": 0.0,
+       "status": "$2,574.87",
+       "url": "/nm/candidate/sarah-rich-jackson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "New Mexico House of Representatives District 26",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-26-45560",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 11073.0,
+   "totalExpenditures": 9112.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Georgene Louis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11073.03,
+       "expenditures": 0.0,
+       "status": "$9,112.34",
+       "url": "/nm/candidate/georgene-louis?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Georgene Louis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11073.03,
+       "expenditures": 0.0,
+       "status": "$9,112.34",
+       "url": "/nm/candidate/georgene-louis?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "New Mexico House of Representatives District 27",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-27-45561",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 204336.0,
+   "totalExpenditures": 186244.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Marian Matthews",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 169388.18,
+       "expenditures": 0.0,
+       "status": "$144,997.53",
+       "url": "/nm/candidate/marian-matthews?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Robert S Godshall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 34729.69,
+       "expenditures": 0.0,
+       "status": "$40,754.35",
+       "url": "/nm/candidate/robert-s-godshall?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jason M Barker",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 218.35,
+       "expenditures": 0.0,
+       "status": "$193.73",
+       "url": "/nm/candidate/jason-m-barker?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Marian Matthews",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 169388.18,
+       "expenditures": 0.0,
+       "status": "$144,997.53",
+       "url": "/nm/candidate/marian-matthews?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Robert S Godshall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 34729.69,
+       "expenditures": 0.0,
+       "status": "$40,754.35",
+       "url": "/nm/candidate/robert-s-godshall?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jill M Michel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$298.85",
+       "url": "/nm/candidate/jill-m-michel?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "New Mexico House of Representatives District 28",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-28-45562",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 20799.0,
+   "totalExpenditures": 18701.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Thomas R Stull",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20798.56,
+       "expenditures": 4000.0,
+       "status": "$18,701.17",
+       "url": "/nm/candidate/thomas-r-stull?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Robert Jason Vaillancourt",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/robert-jason-vaillancourt?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Robert Jason Vaillancourt",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/robert-jason-vaillancourt?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Thomas R Stull",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20798.56,
+       "expenditures": 4000.0,
+       "status": "$18,701.17",
+       "url": "/nm/candidate/thomas-r-stull?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "New Mexico House of Representatives District 29",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-29-45563",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 211630.0,
+   "totalExpenditures": 206677.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Joy Garratt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 171168.2,
+       "expenditures": 0.0,
+       "status": "$166,927.89",
+       "url": "/nm/candidate/joy-garratt?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Adelious D Stith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40461.76,
+       "expenditures": 0.0,
+       "status": "$39,749.57",
+       "url": "/nm/candidate/adelious-d-stith?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Joy Garratt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 171168.2,
+       "expenditures": 0.0,
+       "status": "$166,927.89",
+       "url": "/nm/candidate/joy-garratt?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Adelious D Stith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40461.76,
+       "expenditures": 0.0,
+       "status": "$39,749.57",
+       "url": "/nm/candidate/adelious-d-stith?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "New Mexico House of Representatives District 3",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-3-45537",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 6900.0,
+   "totalExpenditures": 13569.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "T Ryan Lane",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6900.0,
+       "expenditures": 0.0,
+       "status": "$13,568.90",
+       "url": "/nm/candidate/t-ryan-lane?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "T Ryan Lane",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6900.0,
+       "expenditures": 0.0,
+       "status": "$13,568.90",
+       "url": "/nm/candidate/t-ryan-lane?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "New Mexico House of Representatives District 30",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-30-45564",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 52893.0,
+   "totalExpenditures": 99138.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Natalie R Figueroa",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52893.01,
+       "expenditures": 0.0,
+       "status": "$99,138.02",
+       "url": "/nm/candidate/natalie-r-figueroa?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Natalie R Figueroa",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52893.01,
+       "expenditures": 0.0,
+       "status": "$99,138.02",
+       "url": "/nm/candidate/natalie-r-figueroa?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "New Mexico House of Representatives District 31",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-31-45565",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 35868.0,
+   "totalExpenditures": 83000.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "William R Rehm",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35828.8,
+       "expenditures": 0.0,
+       "status": "$82,768.11",
+       "url": "/nm/candidate/william-r-rehm?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Steven Penhall",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 38.84,
+       "expenditures": 0.0,
+       "status": "$231.79",
+       "url": "/nm/candidate/steven-penhall?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Steven Penhall",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 38.84,
+       "expenditures": 0.0,
+       "status": "$231.79",
+       "url": "/nm/candidate/steven-penhall?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "William R Rehm",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35828.8,
+       "expenditures": 0.0,
+       "status": "$82,768.11",
+       "url": "/nm/candidate/william-r-rehm?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "New Mexico House of Representatives District 32",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-32-45566",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 149833.0,
+   "totalExpenditures": 127818.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Candie G Sweetser",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113324.96,
+       "expenditures": 0.0,
+       "status": "$92,461.97",
+       "url": "/nm/candidate/candie-g-sweetser?cycle=2020-election-cycle"
+      },
+      {
+       "name": "J Scott Chandler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 36508.0,
+       "expenditures": 0.0,
+       "status": "$35,355.67",
+       "url": "/nm/candidate/j-scott-chandler?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Candie G Sweetser",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113324.96,
+       "expenditures": 0.0,
+       "status": "$92,461.97",
+       "url": "/nm/candidate/candie-g-sweetser?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "J Scott Chandler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 36508.0,
+       "expenditures": 0.0,
+       "status": "$35,355.67",
+       "url": "/nm/candidate/j-scott-chandler?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "New Mexico House of Representatives District 33",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-33-45567",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 53367.0,
+   "totalExpenditures": 65683.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Micaela Lara Cadena",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 36570.25,
+       "expenditures": 0.0,
+       "status": "$48,165.41",
+       "url": "/nm/candidate/micaela-lara-cadena?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Beth E Miller",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16796.94,
+       "expenditures": 300.0,
+       "status": "$17,517.83",
+       "url": "/nm/candidate/beth-e-miller?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Micaela Lara Cadena",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 36570.25,
+       "expenditures": 0.0,
+       "status": "$48,165.41",
+       "url": "/nm/candidate/micaela-lara-cadena?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Beth E Miller",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16796.94,
+       "expenditures": 300.0,
+       "status": "$17,517.83",
+       "url": "/nm/candidate/beth-e-miller?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "New Mexico House of Representatives District 34",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-34-45568",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 26178.0,
+   "totalExpenditures": 31292.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Ray Lara",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11751.25,
+       "expenditures": 0.0,
+       "status": "$21,923.53",
+       "url": "/nm/candidate/ray-lara?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Dawn E Ladd",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14426.4,
+       "expenditures": 0.0,
+       "status": "$7,127.07",
+       "url": "/nm/candidate/dawn-e-ladd?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Ray Lara",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11751.25,
+       "expenditures": 0.0,
+       "status": "$21,923.53",
+       "url": "/nm/candidate/ray-lara?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Bealquin Bill Gomez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$2,241.08",
+       "url": "/nm/candidate/bealquin-bill-gomez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Dawn E Ladd",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14426.4,
+       "expenditures": 0.0,
+       "status": "$7,127.07",
+       "url": "/nm/candidate/dawn-e-ladd?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "New Mexico House of Representatives District 35",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-35-45569",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 41815.0,
+   "totalExpenditures": 30092.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Angelica Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13347.92,
+       "expenditures": 0.0,
+       "status": "$14,545.22",
+       "url": "/nm/candidate/angelica-rubio?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Richelle Ponder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28466.89,
+       "expenditures": 0.0,
+       "status": "$15,546.28",
+       "url": "/nm/candidate/richelle-ponder?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Angelica Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13347.92,
+       "expenditures": 0.0,
+       "status": "$14,545.22",
+       "url": "/nm/candidate/angelica-rubio?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Richelle Ponder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28466.89,
+       "expenditures": 0.0,
+       "status": "$15,546.28",
+       "url": "/nm/candidate/richelle-ponder?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "New Mexico House of Representatives District 36",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-36-45570",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 75562.0,
+   "totalExpenditures": 90124.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Nathan Small",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 63852.4,
+       "expenditures": 0.0,
+       "status": "$81,703.31",
+       "url": "/nm/candidate/nathan-small?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Brandi Polanco",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11709.6,
+       "expenditures": 0.0,
+       "status": "$8,421.03",
+       "url": "/nm/candidate/brandi-polanco?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Nathan Small",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 63852.4,
+       "expenditures": 0.0,
+       "status": "$81,703.31",
+       "url": "/nm/candidate/nathan-small?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Brandi Polanco",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11709.6,
+       "expenditures": 0.0,
+       "status": "$8,421.03",
+       "url": "/nm/candidate/brandi-polanco?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "New Mexico House of Representatives District 37",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-37-45571",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 162048.0,
+   "totalExpenditures": 185745.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Joanne J Ferrary",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65538.6,
+       "expenditures": 0.0,
+       "status": "$100,695.42",
+       "url": "/nm/candidate/joanne-j-ferrary?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Isabella Solis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96509.75,
+       "expenditures": 0.0,
+       "status": "$85,049.16",
+       "url": "/nm/candidate/isabella-solis?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Joanne J Ferrary",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65538.6,
+       "expenditures": 0.0,
+       "status": "$100,695.42",
+       "url": "/nm/candidate/joanne-j-ferrary?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Isabella Solis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96509.75,
+       "expenditures": 0.0,
+       "status": "$85,049.16",
+       "url": "/nm/candidate/isabella-solis?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "New Mexico House of Representatives District 38",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-38-45572",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 104496.0,
+   "totalExpenditures": 141629.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Rebecca L Dow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 104496.42,
+       "expenditures": 0.0,
+       "status": "$141,629.14",
+       "url": "/nm/candidate/rebecca-l-dow?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Rebecca L Dow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 104496.42,
+       "expenditures": 0.0,
+       "status": "$141,629.14",
+       "url": "/nm/candidate/rebecca-l-dow?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "New Mexico House of Representatives District 39",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-39-45573",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 134134.0,
+   "totalExpenditures": 179411.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Luis M Terrazas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 72565.61,
+       "expenditures": 2500.0,
+       "status": "$99,971.89",
+       "url": "/nm/candidate/luis-m-terrazas?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Rodolpho S Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 61568.13,
+       "expenditures": 0.0,
+       "status": "$79,438.91",
+       "url": "/nm/candidate/rodolpho-s-martinez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Rodolpho S Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 61568.13,
+       "expenditures": 0.0,
+       "status": "$79,438.91",
+       "url": "/nm/candidate/rodolpho-s-martinez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Luis M Terrazas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 72565.61,
+       "expenditures": 2500.0,
+       "status": "$99,971.89",
+       "url": "/nm/candidate/luis-m-terrazas?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "New Mexico House of Representatives District 4",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-4-45538",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 129345.0,
+   "totalExpenditures": 105854.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Anthony Allison",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 105595.38,
+       "expenditures": 0.0,
+       "status": "$73,147.27",
+       "url": "/nm/candidate/anthony-allison?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Mark Duncan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23749.29,
+       "expenditures": 0.0,
+       "status": "$32,706.45",
+       "url": "/nm/candidate/mark-duncan?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Anthony Allison",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 105595.38,
+       "expenditures": 0.0,
+       "status": "$73,147.27",
+       "url": "/nm/candidate/anthony-allison?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Mark Duncan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23749.29,
+       "expenditures": 0.0,
+       "status": "$32,706.45",
+       "url": "/nm/candidate/mark-duncan?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "New Mexico House of Representatives District 40",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-40-45574",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 98259.0,
+   "totalExpenditures": 88347.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Roger E Montoya",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 98258.85,
+       "expenditures": 0.0,
+       "status": "$88,347.27",
+       "url": "/nm/candidate/roger-e-montoya?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Roger E Montoya",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 98258.85,
+       "expenditures": 0.0,
+       "status": "$88,347.27",
+       "url": "/nm/candidate/roger-e-montoya?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "New Mexico House of Representatives District 41",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-41-45575",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 12706.0,
+   "totalExpenditures": 18193.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Susan K Herrera",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 12705.72,
+       "expenditures": 0.0,
+       "status": "$18,192.51",
+       "url": "/nm/candidate/susan-k-herrera?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Susan K Herrera",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 12705.72,
+       "expenditures": 0.0,
+       "status": "$18,192.51",
+       "url": "/nm/candidate/susan-k-herrera?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "New Mexico House of Representatives District 42",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-42-45576",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 27145.0,
+   "totalExpenditures": 43626.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Kristina Ortez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27145.34,
+       "expenditures": 0.0,
+       "status": "$43,625.83",
+       "url": "/nm/candidate/kristina-ortez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Kristina Ortez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27145.34,
+       "expenditures": 0.0,
+       "status": "$43,625.83",
+       "url": "/nm/candidate/kristina-ortez?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "New Mexico House of Representatives District 43",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-43-45577",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 48861.0,
+   "totalExpenditures": 91319.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Christine Chandler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39550.68,
+       "expenditures": 0.0,
+       "status": "$86,102.47",
+       "url": "/nm/candidate/christine-chandler?cycle=2020-election-cycle"
+      },
+      {
+       "name": "David Hampton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9310.76,
+       "expenditures": 0.0,
+       "status": "$5,216.59",
+       "url": "/nm/candidate/david-hampton?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Christine Chandler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39550.68,
+       "expenditures": 0.0,
+       "status": "$86,102.47",
+       "url": "/nm/candidate/christine-chandler?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "David Hampton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9310.76,
+       "expenditures": 0.0,
+       "status": "$5,216.59",
+       "url": "/nm/candidate/david-hampton?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "New Mexico House of Representatives District 44",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-44-45578",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 34770.0,
+   "totalExpenditures": 29895.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Gary J Tripp",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34769.99,
+       "expenditures": 0.0,
+       "status": "$29,894.52",
+       "url": "/nm/candidate/gary-j-tripp?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Gary J Tripp",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34769.99,
+       "expenditures": 0.0,
+       "status": "$29,894.52",
+       "url": "/nm/candidate/gary-j-tripp?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "New Mexico House of Representatives District 45",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-45-45579",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 15117.0,
+   "totalExpenditures": 18031.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Linda M Serrato",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 14716.94,
+       "expenditures": 551.8,
+       "status": "$17,631.31",
+       "url": "/nm/candidate/linda-m-serrato?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Helen M Milenski",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 400.0,
+       "expenditures": 0.0,
+       "status": "$400.00",
+       "url": "/nm/candidate/helen-m-milenski?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Linda M Serrato",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 14716.94,
+       "expenditures": 551.8,
+       "status": "$17,631.31",
+       "url": "/nm/candidate/linda-m-serrato?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Helen M Milenski",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 400.0,
+       "expenditures": 0.0,
+       "status": "$400.00",
+       "url": "/nm/candidate/helen-m-milenski?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "New Mexico House of Representatives District 46",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-46-45580",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 20450.0,
+   "totalExpenditures": 35123.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Andrea D Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 20450.33,
+       "expenditures": 0.0,
+       "status": "$35,122.83",
+       "url": "/nm/candidate/andrea-d-romero?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Andrea D Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 20450.33,
+       "expenditures": 0.0,
+       "status": "$35,122.83",
+       "url": "/nm/candidate/andrea-d-romero?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "New Mexico House of Representatives District 47",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-47-45581",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 130501.0,
+   "totalExpenditures": 137677.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Brian Egolf",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 130501.15,
+       "expenditures": 0.0,
+       "status": "$137,677.22",
+       "url": "/nm/candidate/brian-egolf?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Brian Egolf",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 130501.15,
+       "expenditures": 0.0,
+       "status": "$137,677.22",
+       "url": "/nm/candidate/brian-egolf?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "New Mexico House of Representatives District 48",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-48-45582",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 5979.0,
+   "totalExpenditures": 8109.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Tara Lujan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 5979.45,
+       "expenditures": 0.0,
+       "status": "$5,600.00",
+       "url": "/nm/candidate/tara-lujan?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Linda M Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$2,508.96",
+       "url": "/nm/candidate/linda-m-trujillo?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Linda M Trujillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$2,508.96",
+       "url": "/nm/candidate/linda-m-trujillo?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "New Mexico House of Representatives District 49",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-49-45583",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 25975.0,
+   "totalExpenditures": 89038.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Gail Missy Armstrong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25975.32,
+       "expenditures": 0.0,
+       "status": "$89,037.67",
+       "url": "/nm/candidate/gail-missy-armstrong?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Gail Missy Armstrong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25975.32,
+       "expenditures": 0.0,
+       "status": "$89,037.67",
+       "url": "/nm/candidate/gail-missy-armstrong?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "New Mexico House of Representatives District 5",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-5-45539",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 3800.0,
+   "totalExpenditures": 36576.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Doreen Wonda Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3800.0,
+       "expenditures": 0.0,
+       "status": "$36,575.98",
+       "url": "/nm/candidate/doreen-wonda-johnson?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Doreen Wonda Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3800.0,
+       "expenditures": 0.0,
+       "status": "$36,575.98",
+       "url": "/nm/candidate/doreen-wonda-johnson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "New Mexico House of Representatives District 50",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-50-45584",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 36597.0,
+   "totalExpenditures": 56496.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Matthew Mcqueen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 22735.63,
+       "expenditures": 0.0,
+       "status": "$52,482.92",
+       "url": "/nm/candidate/matthew-mcqueen?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Christina Estrada",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13861.78,
+       "expenditures": 259.45,
+       "status": "$4,013.47",
+       "url": "/nm/candidate/christina-estrada?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Jerry D Gage",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/jerry-d-gage?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Matthew Mcqueen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 22735.63,
+       "expenditures": 0.0,
+       "status": "$52,482.92",
+       "url": "/nm/candidate/matthew-mcqueen?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Jerry D Gage",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/jerry-d-gage?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Christina Estrada",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13861.78,
+       "expenditures": 259.45,
+       "status": "$4,013.47",
+       "url": "/nm/candidate/christina-estrada?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "New Mexico House of Representatives District 51",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-51-45585",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 1400.0,
+   "totalExpenditures": 1649.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jeff Swanson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1400.0,
+       "expenditures": 0.0,
+       "status": "$1,648.84",
+       "url": "/nm/candidate/jeff-swanson?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Jeff Swanson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1400.0,
+       "expenditures": 0.0,
+       "status": "$1,648.84",
+       "url": "/nm/candidate/jeff-swanson?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "New Mexico House of Representatives District 52",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-52-45586",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 93683.0,
+   "totalExpenditures": 179210.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Doreen Y Gallegos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65781.37,
+       "expenditures": 0.0,
+       "status": "$143,926.22",
+       "url": "/nm/candidate/doreen-y-gallegos?cycle=2020-election-cycle"
+      },
+      {
+       "name": "John Foreman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27901.25,
+       "expenditures": 580.0,
+       "status": "$35,283.77",
+       "url": "/nm/candidate/john-foreman?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Doreen Y Gallegos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65781.37,
+       "expenditures": 0.0,
+       "status": "$143,926.22",
+       "url": "/nm/candidate/doreen-y-gallegos?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "John Foreman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27901.25,
+       "expenditures": 580.0,
+       "status": "$35,283.77",
+       "url": "/nm/candidate/john-foreman?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "New Mexico House of Representatives District 53",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-53-45587",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 89838.0,
+   "totalExpenditures": 145639.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Willie Madrid",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48864.88,
+       "expenditures": 0.0,
+       "status": "$94,357.79",
+       "url": "/nm/candidate/willie-madrid?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ricky L Little",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40973.04,
+       "expenditures": 0.0,
+       "status": "$51,281.67",
+       "url": "/nm/candidate/ricky-l-little?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Willie Madrid",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48864.88,
+       "expenditures": 0.0,
+       "status": "$94,357.79",
+       "url": "/nm/candidate/willie-madrid?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Ricky L Little",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40973.04,
+       "expenditures": 0.0,
+       "status": "$51,281.67",
+       "url": "/nm/candidate/ricky-l-little?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "New Mexico House of Representatives District 54",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-54-45588",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 77500.0,
+   "totalExpenditures": 131687.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "James G Townsend",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 77499.5,
+       "expenditures": 0.0,
+       "status": "$131,687.21",
+       "url": "/nm/candidate/james-g-townsend?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "James G Townsend",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 77499.5,
+       "expenditures": 0.0,
+       "status": "$131,687.21",
+       "url": "/nm/candidate/james-g-townsend?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "New Mexico House of Representatives District 55",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-55-45589",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 17665.0,
+   "totalExpenditures": 41536.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Cathrynn Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17665.0,
+       "expenditures": 0.0,
+       "status": "$41,535.91",
+       "url": "/nm/candidate/cathrynn-brown?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Cathrynn Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17665.0,
+       "expenditures": 0.0,
+       "status": "$41,535.91",
+       "url": "/nm/candidate/cathrynn-brown?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "New Mexico House of Representatives District 56",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-56-45590",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 20000.0,
+   "totalExpenditures": 6410.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Zach J Cook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20000.0,
+       "expenditures": 0.0,
+       "status": "$6,409.69",
+       "url": "/nm/candidate/zach-j-cook?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Zach J Cook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20000.0,
+       "expenditures": 0.0,
+       "status": "$6,409.69",
+       "url": "/nm/candidate/zach-j-cook?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "New Mexico House of Representatives District 57",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-57-45591",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 143583.0,
+   "totalExpenditures": 109049.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Billie Ann Helean",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 143583.28,
+       "expenditures": 0.0,
+       "status": "$109,048.61",
+       "url": "/nm/candidate/billie-ann-helean?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Billie Ann Helean",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 143583.28,
+       "expenditures": 0.0,
+       "status": "$109,048.61",
+       "url": "/nm/candidate/billie-ann-helean?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "New Mexico House of Representatives District 58",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-58-45592",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 12131.0,
+   "totalExpenditures": 25107.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Candy Spence Ezzell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12131.1,
+       "expenditures": 0.0,
+       "status": "$25,107.34",
+       "url": "/nm/candidate/candy-spence-ezzell?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Candy Spence Ezzell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12131.1,
+       "expenditures": 0.0,
+       "status": "$25,107.34",
+       "url": "/nm/candidate/candy-spence-ezzell?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "New Mexico House of Representatives District 59",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-59-45593",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 38305.0,
+   "totalExpenditures": 80892.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Greg Nibert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38305.0,
+       "expenditures": 0.0,
+       "status": "$80,891.63",
+       "url": "/nm/candidate/greg-nibert?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Greg Nibert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38305.0,
+       "expenditures": 0.0,
+       "status": "$80,891.63",
+       "url": "/nm/candidate/greg-nibert?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "New Mexico House of Representatives District 6",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-6-45540",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 26694.0,
+   "totalExpenditures": 36833.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Eliseo L Alcon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 26693.68,
+       "expenditures": 0.0,
+       "status": "$36,833.22",
+       "url": "/nm/candidate/eliseo-l-alcon-1?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Eliseo L Alcon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 26693.68,
+       "expenditures": 0.0,
+       "status": "$36,833.22",
+       "url": "/nm/candidate/eliseo-l-alcon-1?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "New Mexico House of Representatives District 60",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-60-45594",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 10082.0,
+   "totalExpenditures": 14294.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Joshua Hernandez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9332.06,
+       "expenditures": 43.17,
+       "status": "$8,263.17",
+       "url": "/nm/candidate/joshua-hernandez?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Tim D Lewis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 750.0,
+       "expenditures": 0.0,
+       "status": "$6,030.76",
+       "url": "/nm/candidate/tim-d-lewis?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Tim D Lewis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 750.0,
+       "expenditures": 0.0,
+       "status": "$6,030.76",
+       "url": "/nm/candidate/tim-d-lewis?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "New Mexico House of Representatives District 61",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-61-45595",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 16195.0,
+   "totalExpenditures": 18517.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Randall T Pettigrew",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16194.6,
+       "expenditures": 540.76,
+       "status": "$16,707.19",
+       "url": "/nm/candidate/randall-t-pettigrew?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Randall T Pettigrew",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16194.6,
+       "expenditures": 540.76,
+       "status": "$16,707.19",
+       "url": "/nm/candidate/randall-t-pettigrew?cycle=2020-election-cycle"
+      },
+      {
+       "name": "David B Snider",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$1,810.04",
+       "url": "/nm/candidate/david-b-snider?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "New Mexico House of Representatives District 62",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-62-45596",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 41700.0,
+   "totalExpenditures": 53852.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Larry R Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 41700.0,
+       "expenditures": 0.0,
+       "status": "$53,852.14",
+       "url": "/nm/candidate/larry-r-scott?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Larry R Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 41700.0,
+       "expenditures": 0.0,
+       "status": "$53,852.14",
+       "url": "/nm/candidate/larry-r-scott?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "New Mexico House of Representatives District 63",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-63-45597",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 79653.0,
+   "totalExpenditures": 108137.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Martin R Zamora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79652.92,
+       "expenditures": 0.0,
+       "status": "$108,136.83",
+       "url": "/nm/candidate/martin-r-zamora-1?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Martin R Zamora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79652.92,
+       "expenditures": 0.0,
+       "status": "$108,136.83",
+       "url": "/nm/candidate/martin-r-zamora-1?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "New Mexico House of Representatives District 64",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-64-45598",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "New Mexico House of Representatives District 65",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-65-45599",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 9522.0,
+   "totalExpenditures": 27205.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Derrick J Lente",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 9522.2,
+       "expenditures": 0.0,
+       "status": "$27,204.90",
+       "url": "/nm/candidate/derrick-j-lente?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Derrick J Lente",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 9522.2,
+       "expenditures": 0.0,
+       "status": "$27,204.90",
+       "url": "/nm/candidate/derrick-j-lente?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "New Mexico House of Representatives District 66",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-66-45600",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "New Mexico House of Representatives District 67",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-67-45601",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 8414.0,
+   "totalExpenditures": 18982.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jackey O Chatfield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8414.03,
+       "expenditures": 0.0,
+       "status": "$18,982.37",
+       "url": "/nm/candidate/jackey-o-chatfield?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Jackey O Chatfield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8414.03,
+       "expenditures": 0.0,
+       "status": "$18,982.37",
+       "url": "/nm/candidate/jackey-o-chatfield?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "New Mexico House of Representatives District 68",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-68-45602",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 61452.0,
+   "totalExpenditures": 71738.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Giovanni Coppola",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 61452.1,
+       "expenditures": 7327.26,
+       "status": "$71,738.17",
+       "url": "/nm/candidate/giovanni-coppola?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Giovanni Coppola",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 61452.1,
+       "expenditures": 7327.26,
+       "status": "$71,738.17",
+       "url": "/nm/candidate/giovanni-coppola?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "New Mexico House of Representatives District 69",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-69-45603",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 24801.0,
+   "totalExpenditures": 43353.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Harry Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 21213.14,
+       "expenditures": 0.0,
+       "status": "$38,503.19",
+       "url": "/nm/candidate/harry-garcia?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Roy Randall Ryan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3588.0,
+       "expenditures": 0.0,
+       "status": "$4,849.49",
+       "url": "/nm/candidate/roy-randall-ryan?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Harry Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 21213.14,
+       "expenditures": 0.0,
+       "status": "$38,503.19",
+       "url": "/nm/candidate/harry-garcia?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Roy Randall Ryan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3588.0,
+       "expenditures": 0.0,
+       "status": "$4,849.49",
+       "url": "/nm/candidate/roy-randall-ryan?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "New Mexico House of Representatives District 7",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-7-45541",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 22936.0,
+   "totalExpenditures": 19617.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Santos Griego",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22935.94,
+       "expenditures": 0.0,
+       "status": "$19,616.72",
+       "url": "/nm/candidate/santos-griego?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Santos Griego",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22935.94,
+       "expenditures": 0.0,
+       "status": "$19,616.72",
+       "url": "/nm/candidate/santos-griego?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "New Mexico House of Representatives District 70",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-70-45604",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 32775.0,
+   "totalExpenditures": 42096.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Ambrose Castellano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32775.0,
+       "expenditures": 0.0,
+       "status": "$37,820.75",
+       "url": "/nm/candidate/ambrose-castellano?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Ambrose Castellano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32775.0,
+       "expenditures": 0.0,
+       "status": "$37,820.75",
+       "url": "/nm/candidate/ambrose-castellano?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Robert A Anaya",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$1,321.98",
+       "url": "/nm/candidate/robert-a-anaya?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Anita Gonzales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$2,952.83",
+       "url": "/nm/candidate/anita-gonzales?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "New Mexico House of Representatives District 8",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-8-45542",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 36692.0,
+   "totalExpenditures": 36546.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Alonzo Baldonado",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 36692.22,
+       "expenditures": 0.0,
+       "status": "$36,546.39",
+       "url": "/nm/candidate/alonzo-baldonado?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Alonzo Baldonado",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 36692.22,
+       "expenditures": 0.0,
+       "status": "$36,546.39",
+       "url": "/nm/candidate/alonzo-baldonado?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "New Mexico House of Representatives District 9",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-9-45543",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 80286.0,
+   "totalExpenditures": 203482.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Patty A Lundstrom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 80286.3,
+       "expenditures": 0.0,
+       "status": "$203,482.45",
+       "url": "/nm/candidate/patty-a-lundstrom?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Patty A Lundstrom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 80286.3,
+       "expenditures": 0.0,
+       "status": "$203,482.45",
+       "url": "/nm/candidate/patty-a-lundstrom?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "New Mexico State Senate District 1",
+   "url": "/nm/race/new-mexico-state-senate-district-1-45605",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 25255.0,
+   "totalExpenditures": 32543.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "William E Sharer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25254.8,
+       "expenditures": 0.0,
+       "status": "$32,542.66",
+       "url": "/nm/candidate/william-e-sharer?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "William E Sharer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25254.8,
+       "expenditures": 0.0,
+       "status": "$32,542.66",
+       "url": "/nm/candidate/william-e-sharer?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "1"
+  },
+  {
+   "office": "New Mexico State Senate District 10",
+   "url": "/nm/race/new-mexico-state-senate-district-10-45614",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 344674.0,
+   "totalExpenditures": 389323.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Katy M Duhigg",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 203314.36,
+       "expenditures": 0.0,
+       "status": "$177,107.51",
+       "url": "/nm/candidate/katy-m-duhigg?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Candace Gould",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 141360.04,
+       "expenditures": 0.0,
+       "status": "$212,215.85",
+       "url": "/nm/candidate/candace-gould?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Katy M Duhigg",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 203314.36,
+       "expenditures": 0.0,
+       "status": "$177,107.51",
+       "url": "/nm/candidate/katy-m-duhigg?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Candace Gould",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 141360.04,
+       "expenditures": 0.0,
+       "status": "$212,215.85",
+       "url": "/nm/candidate/candace-gould?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "10"
+  },
+  {
+   "office": "New Mexico State Senate District 11",
+   "url": "/nm/race/new-mexico-state-senate-district-11-45615",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 24998.0,
+   "totalExpenditures": 19716.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Linda M Lopez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 24998.2,
+       "expenditures": 0.0,
+       "status": "$19,716.38",
+       "url": "/nm/candidate/linda-m-lopez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Linda M Lopez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 24998.2,
+       "expenditures": 0.0,
+       "status": "$19,716.38",
+       "url": "/nm/candidate/linda-m-lopez?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "office": "New Mexico State Senate District 12",
+   "url": "/nm/race/new-mexico-state-senate-district-12-45616",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "senate",
-   "district": null
+   "district": "12"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-10-45614?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 13",
+   "url": "/nm/race/new-mexico-state-senate-district-13-45617",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 34289.0,
+   "totalExpenditures": 35015.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Bill B O'Neill",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 31919.0,
+       "expenditures": 0.0,
+       "status": "$32,644.69",
+       "url": "/nm/candidate/bill-b-oneill?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Frederick J Snoy II",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 2369.92,
+       "expenditures": 1500.0,
+       "status": "$2,369.92",
+       "url": "/nm/candidate/frederick-j-snoy-ii?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Bill B O'Neill",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 31919.0,
+       "expenditures": 0.0,
+       "status": "$32,644.69",
+       "url": "/nm/candidate/bill-b-oneill?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Frederick J Snoy II",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 2369.92,
+       "expenditures": 1500.0,
+       "status": "$2,369.92",
+       "url": "/nm/candidate/frederick-j-snoy-ii?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "13"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-11-45615?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 14",
+   "url": "/nm/race/new-mexico-state-senate-district-14-45618",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 57222.0,
+   "totalExpenditures": 84488.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Michael Padilla",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 57222.23,
+       "expenditures": 0.0,
+       "status": "$84,488.14",
+       "url": "/nm/candidate/michael-padilla?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Michael Padilla",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 57222.23,
+       "expenditures": 0.0,
+       "status": "$84,488.14",
+       "url": "/nm/candidate/michael-padilla?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "14"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-12-45616?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 15",
+   "url": "/nm/race/new-mexico-state-senate-district-15-45619",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 136705.0,
+   "totalExpenditures": 127664.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Daniel A Ivey-Soto",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 109212.66,
+       "expenditures": 0.0,
+       "status": "$100,186.80",
+       "url": "/nm/candidate/daniel-a-ivey-soto?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Sandy Rausch",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27492.62,
+       "expenditures": 0.0,
+       "status": "$27,477.31",
+       "url": "/nm/candidate/sandy-rausch?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Daniel A Ivey-Soto",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 109212.66,
+       "expenditures": 0.0,
+       "status": "$100,186.80",
+       "url": "/nm/candidate/daniel-a-ivey-soto?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Sandy Rausch",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27492.62,
+       "expenditures": 0.0,
+       "status": "$27,477.31",
+       "url": "/nm/candidate/sandy-rausch?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "15"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-13-45617?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 16",
+   "url": "/nm/race/new-mexico-state-senate-district-16-45620",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 25618.0,
+   "totalExpenditures": 21874.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Antoinette Sedillo Lopez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 19682.98,
+       "expenditures": 0.0,
+       "status": "$16,585.64",
+       "url": "/nm/candidate/antoinette-sedillo-lopez?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Chelsea A Flanders",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5934.88,
+       "expenditures": 0.0,
+       "status": "$5,288.74",
+       "url": "/nm/candidate/chelsea-a-flanders?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Antoinette Sedillo Lopez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 19682.98,
+       "expenditures": 0.0,
+       "status": "$16,585.64",
+       "url": "/nm/candidate/antoinette-sedillo-lopez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Chelsea A Flanders",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5934.88,
+       "expenditures": 0.0,
+       "status": "$5,288.74",
+       "url": "/nm/candidate/chelsea-a-flanders?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "16"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-14-45618?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 17",
+   "url": "/nm/race/new-mexico-state-senate-district-17-45621",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 90212.0,
+   "totalExpenditures": 81840.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Mimi Stewart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 87560.23,
+       "expenditures": 0.0,
+       "status": "$81,804.40",
+       "url": "/nm/candidate/mimi-stewart?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Rodney Deskin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2652.1,
+       "expenditures": 1224.03,
+       "status": "$35.15",
+       "url": "/nm/candidate/rodney-deskin?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Mimi Stewart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 87560.23,
+       "expenditures": 0.0,
+       "status": "$81,804.40",
+       "url": "/nm/candidate/mimi-stewart?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Rodney Deskin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2652.1,
+       "expenditures": 1224.03,
+       "status": "$35.15",
+       "url": "/nm/candidate/rodney-deskin?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "17"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-15-45619?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 18",
+   "url": "/nm/race/new-mexico-state-senate-district-18-45622",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 249358.0,
+   "totalExpenditures": 229168.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Bill Tallman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 167501.59,
+       "expenditures": 0.0,
+       "status": "$134,204.90",
+       "url": "/nm/candidate/bill-tallman?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ryan Chavez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 81856.62,
+       "expenditures": 0.0,
+       "status": "$94,963.46",
+       "url": "/nm/candidate/ryan-chavez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Bill Tallman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 167501.59,
+       "expenditures": 0.0,
+       "status": "$134,204.90",
+       "url": "/nm/candidate/bill-tallman?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Ryan Chavez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 81856.62,
+       "expenditures": 0.0,
+       "status": "$94,963.46",
+       "url": "/nm/candidate/ryan-chavez?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "18"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-16-45620?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 19",
+   "url": "/nm/race/new-mexico-state-senate-district-19-45623",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 215758.0,
+   "totalExpenditures": 208677.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Gregg W Schmedes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58789.3,
+       "expenditures": 0.0,
+       "status": "$57,243.06",
+       "url": "/nm/candidate/gregg-w-schmedes?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Claudia M Risner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 155968.39,
+       "expenditures": 0.0,
+       "status": "$149,337.51",
+       "url": "/nm/candidate/claudia-m-risner?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Claudia M Risner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 155968.39,
+       "expenditures": 0.0,
+       "status": "$149,337.51",
+       "url": "/nm/candidate/claudia-m-risner?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Gregg W Schmedes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58789.3,
+       "expenditures": 0.0,
+       "status": "$57,243.06",
+       "url": "/nm/candidate/gregg-w-schmedes?cycle=2020-election-cycle"
+      },
+      {
+       "name": "James White",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1000.0,
+       "expenditures": 0.0,
+       "status": "$2,096.26",
+       "url": "/nm/candidate/james-white?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "19"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-17-45621?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 2",
+   "url": "/nm/race/new-mexico-state-senate-district-2-45606",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 34700.0,
+   "totalExpenditures": 49193.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Steven P Neville",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34700.0,
+       "expenditures": 0.0,
+       "status": "$49,192.52",
+       "url": "/nm/candidate/steven-p-neville?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Steven P Neville",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34700.0,
+       "expenditures": 0.0,
+       "status": "$49,192.52",
+       "url": "/nm/candidate/steven-p-neville?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "2"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-18-45622?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 20",
+   "url": "/nm/race/new-mexico-state-senate-district-20-45624",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 266399.0,
+   "totalExpenditures": 193350.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Martin E Hickey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 192241.96,
+       "expenditures": 0.0,
+       "status": "$132,495.54",
+       "url": "/nm/candidate/martin-e-hickey?cycle=2020-election-cycle"
+      },
+      {
+       "name": "John C Morton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 74156.96,
+       "expenditures": 0.0,
+       "status": "$60,386.12",
+       "url": "/nm/candidate/john-c-morton?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Martin E Hickey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 192241.96,
+       "expenditures": 0.0,
+       "status": "$132,495.54",
+       "url": "/nm/candidate/martin-e-hickey?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Idalia Lechuga-Tena",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 73.12,
+       "status": "$468.61",
+       "url": "/nm/candidate/idalia-lechuga-tena?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "John C Morton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 74156.96,
+       "expenditures": 0.0,
+       "status": "$60,386.12",
+       "url": "/nm/candidate/john-c-morton?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "20"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-19-45623?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 21",
+   "url": "/nm/race/new-mexico-state-senate-district-21-45625",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 19959.0,
+   "totalExpenditures": 26018.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Athena Christodoulou",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19958.55,
+       "expenditures": 7000.0,
+       "status": "$26,018.26",
+       "url": "/nm/candidate/athena-christodoulou?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Athena Christodoulou",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19958.55,
+       "expenditures": 7000.0,
+       "status": "$26,018.26",
+       "url": "/nm/candidate/athena-christodoulou?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "21"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-2-45606?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 22",
+   "url": "/nm/race/new-mexico-state-senate-district-22-45626",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 41959.0,
+   "totalExpenditures": 39142.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Benny Shendo Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 37816.11,
+       "expenditures": 0.0,
+       "status": "$37,025.03",
+       "url": "/nm/candidate/benny-shendo-jr?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Susan E Aguayo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4142.4,
+       "expenditures": 0.0,
+       "status": "$2,117.21",
+       "url": "/nm/candidate/susan-e-aguayo?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Benny Shendo Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 37816.11,
+       "expenditures": 0.0,
+       "status": "$37,025.03",
+       "url": "/nm/candidate/benny-shendo-jr?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Susan E Aguayo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4142.4,
+       "expenditures": 0.0,
+       "status": "$2,117.21",
+       "url": "/nm/candidate/susan-e-aguayo?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "22"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-20-45624?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 23",
+   "url": "/nm/race/new-mexico-state-senate-district-23-45627",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 281190.0,
+   "totalExpenditures": 248769.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Harold J Pope Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 203140.43,
+       "expenditures": 0.0,
+       "status": "$142,319.26",
+       "url": "/nm/candidate/harold-j-pope-jr?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Sander Rue",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 78049.67,
+       "expenditures": 0.0,
+       "status": "$106,450.06",
+       "url": "/nm/candidate/sander-rue?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Harold J Pope Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 203140.43,
+       "expenditures": 0.0,
+       "status": "$142,319.26",
+       "url": "/nm/candidate/harold-j-pope-jr?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Sander Rue",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 78049.67,
+       "expenditures": 0.0,
+       "status": "$106,450.06",
+       "url": "/nm/candidate/sander-rue?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "23"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-21-45625?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
+   "office": "New Mexico State Senate District 24",
+   "url": "/nm/race/new-mexico-state-senate-district-24-45628",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
    "elections": [],
    "chamber": "senate",
-   "district": null
+   "district": "24"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-22-45626?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 25",
+   "url": "/nm/race/new-mexico-state-senate-district-25-45629",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 80041.0,
+   "totalExpenditures": 95701.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Peter Wirth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 77941.15,
+       "expenditures": 0.0,
+       "status": "$94,649.01",
+       "url": "/nm/candidate/peter-wirth?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Ricardo Arturo Vargas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2100.0,
+       "expenditures": 0.0,
+       "status": "$1,052.44",
+       "url": "/nm/candidate/ricardo-arturo-vargas?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Peter Wirth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 77941.15,
+       "expenditures": 0.0,
+       "status": "$94,649.01",
+       "url": "/nm/candidate/peter-wirth?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Ricardo Arturo Vargas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2100.0,
+       "expenditures": 0.0,
+       "status": "$1,052.44",
+       "url": "/nm/candidate/ricardo-arturo-vargas?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "25"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-23-45627?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 26",
+   "url": "/nm/race/new-mexico-state-senate-district-26-45630",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 63153.0,
+   "totalExpenditures": 62340.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jacob R Candelaria",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 56608.8,
+       "expenditures": 0.0,
+       "status": "$46,782.85",
+       "url": "/nm/candidate/jacob-r-candelaria?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Manuel Lardizabal",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6544.06,
+       "expenditures": 0.0,
+       "status": "$15,557.07",
+       "url": "/nm/candidate/manuel-lardizabal?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Jacob R Candelaria",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 56608.8,
+       "expenditures": 0.0,
+       "status": "$46,782.85",
+       "url": "/nm/candidate/jacob-r-candelaria?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Manuel Lardizabal",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6544.06,
+       "expenditures": 0.0,
+       "status": "$15,557.07",
+       "url": "/nm/candidate/manuel-lardizabal?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "26"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-24-45628?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 27",
+   "url": "/nm/race/new-mexico-state-senate-district-27-45631",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 69017.0,
+   "totalExpenditures": 73527.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Stuart Ingle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 69017.0,
+       "expenditures": 0.0,
+       "status": "$73,526.51",
+       "url": "/nm/candidate/stuart-ingle?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Stuart Ingle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 69017.0,
+       "expenditures": 0.0,
+       "status": "$73,526.51",
+       "url": "/nm/candidate/stuart-ingle?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "27"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-25-45629?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 28",
+   "url": "/nm/race/new-mexico-state-senate-district-28-45632",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 329368.0,
+   "totalExpenditures": 267729.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Siah Correa Hemphill",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 252152.61,
+       "expenditures": 0.0,
+       "status": "$174,554.07",
+       "url": "/nm/candidate/siah-correa-hemphill?cycle=2020-election-cycle"
+      },
+      {
+       "name": "James S Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 76598.15,
+       "expenditures": 2411.02,
+       "status": "$88,262.15",
+       "url": "/nm/candidate/james-s-williams?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Siah Correa Hemphill",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 252152.61,
+       "expenditures": 0.0,
+       "status": "$174,554.07",
+       "url": "/nm/candidate/siah-correa-hemphill?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Gabriel J Ramos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 617.48,
+       "expenditures": 0.0,
+       "status": "$4,912.91",
+       "url": "/nm/candidate/gabriel-j-ramos?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "James S Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 76598.15,
+       "expenditures": 2411.02,
+       "status": "$88,262.15",
+       "url": "/nm/candidate/james-s-williams?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "28"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-26-45630?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 29",
+   "url": "/nm/race/new-mexico-state-senate-district-29-45633",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 80669.0,
+   "totalExpenditures": 105606.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Gregory A Baca",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 80669.26,
+       "expenditures": 0.0,
+       "status": "$105,605.62",
+       "url": "/nm/candidate/gregory-a-baca?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Gregory A Baca",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 80669.26,
+       "expenditures": 0.0,
+       "status": "$105,605.62",
+       "url": "/nm/candidate/gregory-a-baca?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "29"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-27-45631?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 3",
+   "url": "/nm/race/new-mexico-state-senate-district-3-45607",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 21011.0,
+   "totalExpenditures": 31055.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Shannon D Pinto",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 18461.18,
+       "expenditures": 0.0,
+       "status": "$26,763.33",
+       "url": "/nm/candidate/shannon-d-pinto?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Arthur P Allison",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2550.0,
+       "expenditures": 0.0,
+       "status": "$4,291.43",
+       "url": "/nm/candidate/arthur-p-allison?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Shannon D Pinto",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 18461.18,
+       "expenditures": 0.0,
+       "status": "$26,763.33",
+       "url": "/nm/candidate/shannon-d-pinto?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Arthur P Allison",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2550.0,
+       "expenditures": 0.0,
+       "status": "$4,291.43",
+       "url": "/nm/candidate/arthur-p-allison?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "3"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-28-45632?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 30",
+   "url": "/nm/race/new-mexico-state-senate-district-30-45634",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 56434.0,
+   "totalExpenditures": 50965.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Joshua A Sanchez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56433.89,
+       "expenditures": 0.0,
+       "status": "$41,156.97",
+       "url": "/nm/candidate/joshua-a-sanchez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Clemente Sanchez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$9,808.28",
+       "url": "/nm/candidate/clemente-sanchez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Joshua A Sanchez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56433.89,
+       "expenditures": 0.0,
+       "status": "$41,156.97",
+       "url": "/nm/candidate/joshua-a-sanchez?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "30"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-29-45633?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 31",
+   "url": "/nm/race/new-mexico-state-senate-district-31-45635",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 74199.0,
+   "totalExpenditures": 31489.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Joseph Cervantes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 68509.8,
+       "expenditures": 0.0,
+       "status": "$26,051.40",
+       "url": "/nm/candidate/joseph-cervantes?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Joseph Cervantes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 68509.8,
+       "expenditures": 0.0,
+       "status": "$26,051.40",
+       "url": "/nm/candidate/joseph-cervantes?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Arturo E Terrazas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5689.2,
+       "expenditures": 0.0,
+       "status": "$5,437.40",
+       "url": "/nm/candidate/arturo-e-terrazas?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "31"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-3-45607?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 32",
+   "url": "/nm/race/new-mexico-state-senate-district-32-45636",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 34350.0,
+   "totalExpenditures": 32598.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Cliff Pirtle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34350.0,
+       "expenditures": 0.0,
+       "status": "$32,598.10",
+       "url": "/nm/candidate/cliff-pirtle?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Cliff Pirtle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34350.0,
+       "expenditures": 0.0,
+       "status": "$32,598.10",
+       "url": "/nm/candidate/cliff-pirtle?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "32"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-30-45634?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 33",
+   "url": "/nm/race/new-mexico-state-senate-district-33-45637",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 34873.0,
+   "totalExpenditures": 37198.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "William F Burt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28286.2,
+       "expenditures": 0.0,
+       "status": "$32,900.69",
+       "url": "/nm/candidate/william-f-burt?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Denise A Lang-Browne",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6587.0,
+       "expenditures": 0.0,
+       "status": "$4,297.21",
+       "url": "/nm/candidate/denise-a-lang-browne?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Denise A Lang-Browne",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6587.0,
+       "expenditures": 0.0,
+       "status": "$4,297.21",
+       "url": "/nm/candidate/denise-a-lang-browne?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "William F Burt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28286.2,
+       "expenditures": 0.0,
+       "status": "$32,900.69",
+       "url": "/nm/candidate/william-f-burt?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "33"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-31-45635?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 34",
+   "url": "/nm/race/new-mexico-state-senate-district-34-45638",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 40218.0,
+   "totalExpenditures": 38300.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Ron Griggs",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 40217.84,
+       "expenditures": 0.0,
+       "status": "$36,760.21",
+       "url": "/nm/candidate/ron-griggs-1?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Darren Kugler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$1,540.00",
+       "url": "/nm/candidate/darren-kugler?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Darren Kugler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$1,540.00",
+       "url": "/nm/candidate/darren-kugler?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Ron Griggs",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 40217.84,
+       "expenditures": 0.0,
+       "status": "$36,760.21",
+       "url": "/nm/candidate/ron-griggs-1?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "34"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-32-45636?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 35",
+   "url": "/nm/race/new-mexico-state-senate-district-35-45639",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 59626.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Crystal D Brantley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/crystal-d-brantley?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "John Arthur Smith",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$59,626.03",
+       "url": "/nm/candidate/john-arthur-smith?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Crystal D Brantley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/crystal-d-brantley?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "35"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-33-45637?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 36",
+   "url": "/nm/race/new-mexico-state-senate-district-36-45640",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 160498.0,
+   "totalExpenditures": 144282.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Jeff Steinborn",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 56708.1,
+       "expenditures": 0.0,
+       "status": "$53,419.55",
+       "url": "/nm/candidate/jeff-steinborn?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Kimberly Skaggs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 103790.16,
+       "expenditures": 4505.1,
+       "status": "$90,550.46",
+       "url": "/nm/candidate/kimberly-skaggs?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Jeff Steinborn",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 56708.1,
+       "expenditures": 0.0,
+       "status": "$53,419.55",
+       "url": "/nm/candidate/jeff-steinborn?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Kimberly Skaggs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 103790.16,
+       "expenditures": 4505.1,
+       "status": "$90,550.46",
+       "url": "/nm/candidate/kimberly-skaggs?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Roger M Baker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$311.83",
+       "url": "/nm/candidate/roger-m-baker?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "36"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-34-45638?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 37",
+   "url": "/nm/race/new-mexico-state-senate-district-37-45641",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 112864.0,
+   "totalExpenditures": 93972.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "William Soules",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97683.37,
+       "expenditures": 0.0,
+       "status": "$75,288.40",
+       "url": "/nm/candidate/william-soules?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Dave Gallus",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15180.95,
+       "expenditures": 0.0,
+       "status": "$18,683.26",
+       "url": "/nm/candidate/dave-gallus?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "William Soules",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97683.37,
+       "expenditures": 0.0,
+       "status": "$75,288.40",
+       "url": "/nm/candidate/william-soules?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Dave Gallus",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15180.95,
+       "expenditures": 0.0,
+       "status": "$18,683.26",
+       "url": "/nm/candidate/dave-gallus?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "37"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-35-45639?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 38",
+   "url": "/nm/race/new-mexico-state-senate-district-38-45642",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 48213.0,
+   "totalExpenditures": 22426.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Carrie Hamblen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44634.97,
+       "expenditures": 0.0,
+       "status": "$14,779.28",
+       "url": "/nm/candidate/carrie-hamblen?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Charles R Wendler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3578.0,
+       "expenditures": 0.0,
+       "status": "$7,646.33",
+       "url": "/nm/candidate/charles-r-wendler?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Carrie Hamblen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44634.97,
+       "expenditures": 0.0,
+       "status": "$14,779.28",
+       "url": "/nm/candidate/carrie-hamblen?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Charles R Wendler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3578.0,
+       "expenditures": 0.0,
+       "status": "$7,646.33",
+       "url": "/nm/candidate/charles-r-wendler?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "38"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-36-45640?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 39",
+   "url": "/nm/race/new-mexico-state-senate-district-39-45643",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 125285.0,
+   "totalExpenditures": 161973.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Liz Stefanics",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 125284.78,
+       "expenditures": 0.0,
+       "status": "$157,085.03",
+       "url": "/nm/candidate/liz-stefanics?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Liz Stefanics",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 125284.78,
+       "expenditures": 0.0,
+       "status": "$157,085.03",
+       "url": "/nm/candidate/liz-stefanics?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Susan K Vescovo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$4,888.43",
+       "url": "/nm/candidate/susan-k-vescovo?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "39"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-37-45641?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 4",
+   "url": "/nm/race/new-mexico-state-senate-district-4-45608",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 53813.0,
+   "totalExpenditures": 78027.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "George K Munoz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 50886.17,
+       "expenditures": 0.0,
+       "status": "$74,961.74",
+       "url": "/nm/candidate/george-k-munoz?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Angela R Olive",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2927.2,
+       "expenditures": 0.0,
+       "status": "$3,065.63",
+       "url": "/nm/candidate/angela-r-olive?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "George K Munoz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 50886.17,
+       "expenditures": 0.0,
+       "status": "$74,961.74",
+       "url": "/nm/candidate/george-k-munoz?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Angela R Olive",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2927.2,
+       "expenditures": 0.0,
+       "status": "$3,065.63",
+       "url": "/nm/candidate/angela-r-olive?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "4"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-38-45642?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 40",
+   "url": "/nm/race/new-mexico-state-senate-district-40-45644",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 69477.0,
+   "totalExpenditures": 59349.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Craig W Brandt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 69477.24,
+       "expenditures": 0.0,
+       "status": "$59,348.51",
+       "url": "/nm/candidate/craig-w-brandt?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Craig W Brandt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 69477.24,
+       "expenditures": 0.0,
+       "status": "$59,348.51",
+       "url": "/nm/candidate/craig-w-brandt?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "40"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-39-45643?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 41",
+   "url": "/nm/race/new-mexico-state-senate-district-41-45645",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 34495.0,
+   "totalExpenditures": 41107.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "David M Gallegos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 34494.61,
+       "expenditures": 1198.12,
+       "status": "$41,106.57",
+       "url": "/nm/candidate/david-m-gallegos?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "David M Gallegos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 34494.61,
+       "expenditures": 1198.12,
+       "status": "$41,106.57",
+       "url": "/nm/candidate/david-m-gallegos?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "41"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-4-45608?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 42",
+   "url": "/nm/race/new-mexico-state-senate-district-42-45646",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 80035.0,
+   "totalExpenditures": 75595.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Gay G Kernan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 80035.33,
+       "expenditures": 0.0,
+       "status": "$75,595.22",
+       "url": "/nm/candidate/gay-g-kernan?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Gay G Kernan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 80035.33,
+       "expenditures": 0.0,
+       "status": "$75,595.22",
+       "url": "/nm/candidate/gay-g-kernan?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "42"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-40-45644?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 5",
+   "url": "/nm/race/new-mexico-state-senate-district-5-45609",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 35249.0,
+   "totalExpenditures": 49692.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Leo Jaramillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29188.7,
+       "expenditures": 0.0,
+       "status": "$36,483.47",
+       "url": "/nm/candidate/leo-jaramillo?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Diamantina P Storment",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5552.25,
+       "expenditures": 0.0,
+       "status": "$6,424.48",
+       "url": "/nm/candidate/diamantina-p-storment?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Leo Jaramillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29188.7,
+       "expenditures": 0.0,
+       "status": "$36,483.47",
+       "url": "/nm/candidate/leo-jaramillo?cycle=2020-election-cycle"
+      },
+      {
+       "name": "Richard C Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 507.65,
+       "expenditures": 0.0,
+       "status": "$6,783.72",
+       "url": "/nm/candidate/richard-c-martinez?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Diamantina P Storment",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5552.25,
+       "expenditures": 0.0,
+       "status": "$6,424.48",
+       "url": "/nm/candidate/diamantina-p-storment?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "5"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-41-45645?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 6",
+   "url": "/nm/race/new-mexico-state-senate-district-6-45610",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 23300.0,
+   "totalExpenditures": 16490.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Roberto Bobby Jesse Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23300.0,
+       "expenditures": 0.0,
+       "status": "$16,490.02",
+       "url": "/nm/candidate/roberto-bobby-jesse-gonzales?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Roberto Bobby Jesse Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23300.0,
+       "expenditures": 0.0,
+       "status": "$16,490.02",
+       "url": "/nm/candidate/roberto-bobby-jesse-gonzales?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "6"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-42-45646?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 7",
+   "url": "/nm/race/new-mexico-state-senate-district-7-45611",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 46981.0,
+   "totalExpenditures": 43651.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Pat Woods",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 46981.1,
+       "expenditures": 2000.0,
+       "status": "$43,650.73",
+       "url": "/nm/candidate/pat-woods?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Pat Woods",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 46981.1,
+       "expenditures": 2000.0,
+       "status": "$43,650.73",
+       "url": "/nm/candidate/pat-woods?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "7"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-5-45609?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 8",
+   "url": "/nm/race/new-mexico-state-senate-district-8-45612",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 45100.0,
+   "totalExpenditures": 30476.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Pete Campos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 45099.95,
+       "expenditures": 0.0,
+       "status": "$30,476.39",
+       "url": "/nm/candidate/pete-campos?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Pete Campos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 45099.95,
+       "expenditures": 0.0,
+       "status": "$30,476.39",
+       "url": "/nm/candidate/pete-campos?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
+   "district": "8"
   },
   {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-6-45610?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
+   "office": "New Mexico State Senate District 9",
+   "url": "/nm/race/new-mexico-state-senate-district-9-45613",
+   "dataThrough": "12/31/2020",
+   "stage": "Results Final",
+   "totalContributions": 245833.0,
+   "totalExpenditures": 162506.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2020",
+     "candidates": [
+      {
+       "name": "Brenda Grace Mckenna",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 245833.05,
+       "expenditures": 0.0,
+       "status": "$162,305.87",
+       "url": "/nm/candidate/brenda-grace-mckenna?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Brenda Grace Mckenna",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 245833.05,
+       "expenditures": 0.0,
+       "status": "$162,305.87",
+       "url": "/nm/candidate/brenda-grace-mckenna?cycle=2020-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2020",
+     "candidates": [
+      {
+       "name": "Bridget E Condon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$200.00",
+       "url": "/nm/candidate/bridget-e-condon?cycle=2020-election-cycle"
+      }
+     ]
+    }
+   ],
    "chamber": "senate",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-7-45611?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "senate",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-8-45612?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "senate",
-   "district": null
-  },
-  {
-   "office": "",
-   "url": "/nm/race/new-mexico-state-senate-district-9-45613?cycle=2020-election-cycle",
-   "dataThrough": "06/27/2026",
-   "stage": null,
-   "totalContributions": null,
-   "totalExpenditures": null,
-   "elections": [],
-   "chamber": "senate",
-   "district": null
+   "district": "9"
   }
  ]
 }

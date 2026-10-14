@@ -140,7 +140,9 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
       if (pr) {
         out.projection = {
           lean: pr.lean, beta: pr.beta, envPts: pr.envPts, incSign: pr.incSign, incPts: pr.incPts, margin: pr.margin, sigma: pr.sigma, pD: pr.pD,
-          rating: pr.rating, contest: pr.contest, seats: pr.seats,
+          rating: pr.rating, contest: pr.contest, seats: pr.seats, guaranteed: pr.guaranteed, contestedSeats: pr.contestedSeats,
+          ...(pr.pI != null ? { pI: pr.pI } : {}),
+          ...(pr.indep ? { indep: { ...pr.indep, personal: +pr.indep.personal.toFixed(2), advantage: +pr.indep.advantage.toFixed(2), record: pr.indep.record.map((r) => ({ ...r, share: +r.share.toFixed(1), advantage: +r.advantage.toFixed(2), expected: +r.expected.toFixed(2), residual: +r.residual.toFixed(2) })) } } : {}),
           rows: pr.rows.map((r) => ({ ...r, raw: +r.raw.toFixed(2), presDelta: +r.presDelta.toFixed(2), incSign: +r.incSign.toFixed(2), incPts: +r.incPts.toFixed(2), envPts: +r.envPts.toFixed(2), NM: +r.NM.toFixed(2), huber: +r.huber.toFixed(3), weight: +r.weight.toFixed(4), coverage: +r.coverage.toFixed(3) })),
         };
       }
@@ -154,7 +156,7 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
     ...(candidates2026 ? { candidates2026Fetched: stateLegCandidates2026Fetched } : {}),
     ...(chamberProjection ? { projection: {
       year: chamberProjection.year, totalSeats: chamberProjection.totalSeats, seatsUp: chamberProjection.seatsUp, holdover: chamberProjection.holdover, decided: chamberProjection.decided,
-      expectedDem: +chamberProjection.expectedDem.toFixed(1), expectedRep: +chamberProjection.expectedRep.toFixed(1), lo80: chamberProjection.lo80, hi80: chamberProjection.hi80,
+      expectedDem: +chamberProjection.expectedDem.toFixed(1), expectedRep: +chamberProjection.expectedRep.toFixed(1), expectedOth: +chamberProjection.expectedOth.toFixed(1), lo80: chamberProjection.lo80, hi80: chamberProjection.hi80,
       majority: chamberProjection.majority, supermajority: chamberProjection.supermajority, pDemControl: chamberProjection.pDemControl, pRepControl: chamberProjection.pRepControl,
       pDemSuper: chamberProjection.pDemSuper, pRepSuper: chamberProjection.pRepSuper, unprojected: chamberProjection.unprojected,
       eHat: +getNationalEnvironment().eHat.toFixed(2), sigmaE: +getNationalEnvironment().sigmaE.toFixed(2),

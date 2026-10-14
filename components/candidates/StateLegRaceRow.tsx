@@ -107,11 +107,27 @@ export function StateLegPastRow({ race, money = null, last }: { race: StateLegRa
   );
 }
 
-export type LegProjection = { margin: number | null; rating: string | null; pD: number | null; contest: string } | null;
+export type LegProjection = {
+  margin: number | null; rating: string | null; pD: number | null; contest: string;
+  /** The modeled independent-vs-party race, and whether this candidate is the independent. */
+  indep?: { isMe: boolean; name: string; opp: "D" | "R"; advantage: number; pI: number; sameElectorate: boolean } | null;
+  pI?: number | null;
+  /** Seats the field decides for each party, and each party's nominee count: a party with as many decided seats as nominees is in. */
+  guaranteed?: { dem: number; rep: number };
+  nominees?: { dem: number; rep: number };
+} | null;
 
 export function StateLegCurrentRow({ race, projection, money = null, last }: { race: StateLegRace; projection: LegProjection; money?: RaceMoney; last: boolean }) {
   const accent = PARTY_COLOR[race.party];
-  const decided = race.canceledGeneral ? "General election canceled: elected as the sole filer" : projection?.contest === "uncontested-D" ? "No Republican on the ballot" : projection?.contest === "uncontested-R" ? "No Democrat on the ballot" : null;
+  const decided = race.canceledGeneral ? "General election canceled: elected as the sole filer" : projection?.contest === "uncontested-D" ? "No Republican on the ballot" : projection?.contest === "uncontested-R" ? "No Democrat on the ballot"
+    : projection?.contest === "other" && projection.pI === 1 ? "No major party on the ballot"
+    : (projection?.contest === "contested" || projection?.contest === "split") && projection.guaranteed && projection.nominees && (race.party === "D" || race.party === "R")
+      && projection.guaranteed[race.party === "D" ? "dem" : "rep"] >= projection.nominees[race.party === "D" ? "dem" : "rep"] && projection.guaranteed[race.party === "D" ? "dem" : "rep"] > 0
+      ? "Seat decided by the field: the other party fields too few nominees" : null;
+  const guaranteedMine = decided?.startsWith("Seat decided by the field") ?? false;
+  const ind = projection?.contest === "independent" ? projection.indep ?? null : null;
+  // This candidate's side of an independent's race: the independent, or the nominee they face.
+  const indSide = ind && (ind.isMe || (race.party === ind.opp && !ind.sameElectorate)) ? { mine: ind.isMe ? ind.pI : 1 - ind.pI, adv: ind.isMe ? ind.advantage : -ind.advantage } : null;
   const rating = projection?.rating ? getRatingColors(projection.rating) : null;
   return (
     <div className="py-5" style={{ borderBottom: last ? "none" : "1px solid var(--app-border)" }}>
@@ -127,7 +143,7 @@ export function StateLegCurrentRow({ race, projection, money = null, last }: { r
           <Opponents race={race} />
           <MoneyLine money={money} />
         </div>
-        {projection && projection.contest === "contested" && projection.margin != null && (
+        {projection && projection.contest === "contested" && projection.margin != null && !guaranteedMine && (
           <div className="text-right shrink-0">
             <div className="tabular-nums font-extrabold" style={{ fontSize: "1.4rem", lineHeight: 1, color: getRaceColor(projection.margin) }}>{fmtLegMargin(projection.margin)}</div>
             {rating && projection.rating && (
@@ -140,7 +156,15 @@ export function StateLegCurrentRow({ race, projection, money = null, last }: { r
             )}
           </div>
         )}
-        {decided && (race.canceledGeneral || projection?.contest === `uncontested-${race.party}`) && (
+        {ind && indSide && (
+          <div className="text-right shrink-0">
+            <div className="tabular-nums font-extrabold" style={{ fontSize: "1.4rem", lineHeight: 1, color: indSide.adv > 0 ? accent : "var(--app-text-muted)" }}>
+              {Math.abs(indSide.adv) < 0.05 ? "Even" : `${indSide.adv > 0 ? "+" : "−"}${Math.abs(indSide.adv).toFixed(1)}`}
+            </div>
+            <div className="mt-1 text-[11px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>P(win) {Math.round(indSide.mine * 100)}% · vs {ind.isMe ? ind.opp : ind.name}</div>
+          </div>
+        )}
+        {decided && (race.canceledGeneral || projection?.contest === `uncontested-${race.party}` || (projection?.contest === "other" && race.party === "O") || guaranteedMine) && (
           <div className="text-right shrink-0">
             <span className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap" style={{ background: PARTY_SUBTLE[race.party], color: accent }}>Decided</span>
           </div>

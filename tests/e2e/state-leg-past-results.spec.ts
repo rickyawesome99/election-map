@@ -9,10 +9,10 @@ test("the state legislature year selector swaps results and the map era together
     if (url.startsWith("/state-leg-districts")) boundaryRequests.push(url);
   });
 
-  await page.goto("/states/nc/legislature");
+  await page.goto("/states/nc/legislature/house");
   await expect(page.getByRole("heading", { name: "State House Districts" })).toBeVisible();
 
-  await page.getByRole("button", { name: "Past results" }).click();
+  await page.getByRole("tab", { name: "Past results" }).click();
   await expect(page.getByRole("heading", { name: "2024 State House Results" })).toBeVisible();
 
   // The most recent election was held on the map the page already shows, so no historical file.
@@ -43,8 +43,8 @@ test("the state legislature year selector swaps results and the map era together
 // Oklahoma declares unopposed candidates elected without printing the race, so 70 of its 2022
 // House districts have a seat and no ballots — the case that must never render as an exact tie.
 test("a chamber with no published count shows it as such rather than as a tie", async ({ page }) => {
-  await page.goto("/states/ok/legislature");
-  await page.getByRole("button", { name: "Past results" }).click();
+  await page.goto("/states/ok/legislature/house");
+  await page.getByRole("tab", { name: "Past results" }).click();
   await page.getByRole("button", { name: /^2022\b/ }).click();
   await expect(page.getByRole("heading", { name: "2022 State House Results" })).toBeVisible();
   await expect(page.getByText("No vote count published").first()).toBeVisible();
