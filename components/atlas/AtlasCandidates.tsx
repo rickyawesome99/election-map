@@ -132,56 +132,59 @@ export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDist
   );
 }
 
-/** Cycle-to-date contributions for the 2026 field, one row per candidate with a share bar, as on the House pages. */
+/** Cycle-to-date contributions for the 2026 field as one split bar (D left, R right), matching the federal race pages. */
 export function AtlasFundraisingSection({ district, electionYear }: { district: AtlasDistrict; electionYear: number }) {
   const m = district.money?.find((x) => x.year === electionYear);
   if (!m) {
     return <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Fundraising TBD — no {electionYear} campaign-finance records on file for this state yet.</p>;
   }
-  const rows = [...m.candidates].sort((a, b) => (b.contributions ?? -1) - (a.contributions ?? -1));
+  const sideOrder: Record<string, number> = { D: 0, I: 1, O: 1, R: 2 };
+  const rows = [...m.candidates].sort((a, b) => sideOrder[a.party] - sideOrder[b.party] || (b.contributions ?? -1) - (a.contributions ?? -1));
   const total = rows.reduce((s, r) => s + (r.matched ? r.contributions ?? 0 : 0), 0);
+  const shareOf = (r: (typeof rows)[number]) => (r.matched && total > 0 ? ((r.contributions ?? 0) / total) * 100 : null);
   const lead = m.demTotal != null && m.repTotal != null && m.demTotal !== m.repTotal ? (m.demTotal > m.repTotal ? "D" : "R") : null;
+  const twoSided = rows.length === 2;
+
+  const label = (r: (typeof rows)[number], i: number, alignRight: boolean) => {
+    const share = shareOf(r);
+    return (
+      <div key={`${r.name}-${i}`} className={`min-w-0 ${alignRight ? "text-right" : ""}`}>
+        <div className="text-xs truncate" style={{ color: "var(--app-text-muted)" }}>{r.name} ({r.party === "O" ? "I" : r.party})</div>
+        <div className="text-lg font-bold tabular-nums leading-tight" style={{ color: r.matched ? PARTY_COLOR[r.party] : "var(--app-text-very-muted)" }}>
+          {r.matched ? fmtMoney(r.contributions) : <span className="text-sm font-normal italic">no filings found</span>}
+          {share != null && <span className="ml-1.5 text-xs font-medium" style={{ color: "var(--app-text-very-muted)" }}>{share.toFixed(0)}%</span>}
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div>
-      {rows.map((r, i) => {
-        const color = PARTY_COLOR[r.party];
-        const share = r.matched && total > 0 ? ((r.contributions ?? 0) / total) * 100 : null;
-        return (
-          <div key={`${r.name}-${i}`} className="py-3.5" style={{ borderBottom: i === rows.length - 1 ? "none" : "1px solid var(--app-border)" }}>
-            <div className="flex items-baseline justify-between gap-4">
-              <div className="min-w-0">
-                <div className="truncate" style={{ fontFamily: "var(--font-serif)", fontSize: "1.15rem", fontWeight: 700, color }}>{r.name}</div>
-                <div className="text-xs mt-0.5" style={{ color: "var(--app-text-muted)" }}>{partyName(r.party)}</div>
-              </div>
-              <div className="shrink-0 text-2xl font-extrabold tabular-nums" style={{ color: r.matched ? color : "var(--app-text-very-muted)" }}>
-                {r.matched ? fmtMoney(r.contributions) : <span className="text-sm font-normal italic">no filings found</span>}
-              </div>
-            </div>
-            {share != null && (
-              <div className="mt-2.5 flex items-center gap-2.5">
-                <div className="h-1.5 flex-1 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
-                  <div className="h-full rounded-full" style={{ width: `${share}%`, background: color }} />
-                </div>
-                <span className="shrink-0 text-[11px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{share.toFixed(0)}%</span>
-              </div>
-            )}
-          </div>
-        );
-      })}
-      <div className="flex flex-wrap gap-x-6 gap-y-1.5 pt-3.5 text-xs" style={{ borderTop: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
-        <span>Total raised <b className="tabular-nums" style={{ color: "var(--app-text-primary)" }}>{fmtMoney(total)}</b></span>
+      <div className={twoSided ? "flex items-end justify-between gap-4" : "flex flex-wrap gap-x-6 gap-y-2"}>
+        {rows.map((r, i) => label(r, i, twoSided && i === 1))}
+      </div>
+      {total > 0 && (
+        <div className="mt-2 flex h-2.5 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
+          {rows.map((r, i) => {
+            const share = shareOf(r);
+            return share ? <div key={`${r.name}-${i}`} title={`${r.name}: ${fmtMoney(r.contributions)}`} style={{ width: `${share}%`, background: PARTY_COLOR[r.party], borderLeft: i > 0 ? "1px solid var(--app-bg)" : undefined }} /> : null;
+          })}
+        </div>
+      )}
+      <p className="mt-3 text-xs" style={{ color: "var(--app-text-muted)" }}>
+        <b className="tabular-nums" style={{ color: "var(--app-text-primary)" }}>{fmtMoney(total)}</b> raised
         {m.demTotal != null && m.repTotal != null && (
-          <span>
-            Advantage{" "}
+          <>
+            {" · "}
             <b className="tabular-nums" style={{ color: lead ? PARTY_COLOR[lead] : "var(--app-text-primary)" }}>
               {lead ? `${lead}+${fmtMoney(Math.abs(m.demTotal - m.repTotal))}` : "Even"}
             </b>
-            {m.gapPct != null && <> · a {Math.abs(m.gapPct).toFixed(0)}-point gap in the two-party money</>}
-          </span>
+            {lead && " advantage"}
+            {m.gapPct != null && <> · {Math.abs(m.gapPct).toFixed(0)}-point gap in two-party money</>}
+          </>
         )}
-      </div>
-      <p className="mt-2.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+      </p>
+      <p className="mt-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
         Contributions per {m.source}, through {m.dataThrough ?? "the latest report"}. Not yet a term in the projection.
       </p>
     </div>

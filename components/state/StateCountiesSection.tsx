@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import StateCountyMap from "@/components/StateCountyMap";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import type { CountyLayer, CountyRow } from "@/lib/statePage";
@@ -46,6 +46,15 @@ export default function StateCountiesSection({
   onLayer: (key: string) => void;
 }) {
   const [showAll, setShowAll] = useState(false);
+  // Side by side, the table box is as tall as the map column; whether its rows overflow decides the toggle.
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [overflows, setOverflows] = useState(false);
+  // Where the expanded box is scrolled, for the header shadow and the "more below" fade.
+  const [scrollPos, setScrollPos] = useState({ top: false, end: false });
+  const onScroll = () => {
+    const el = scrollRef.current;
+    if (el) setScrollPos({ top: el.scrollTop > 0, end: el.scrollTop + el.clientHeight >= el.scrollHeight - 1 });
+  };
   const [sort, setSort] = useState<{ key: SortKey; dir: 1 | -1 }>({ key: "votes2024", dir: -1 });
   const layer = layers.find((l) => l.key === activeLayer) ?? null;
 
@@ -62,7 +71,17 @@ export default function StateCountiesSection({
     });
     return list;
   }, [rows, sort]);
-  const visible = showAll ? sorted : sorted.slice(0, SHOW_FIRST);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const check = () => setOverflows(el.scrollHeight > el.clientHeight + 1);
+    const ro = new ResizeObserver(check);
+    ro.observe(el);
+    if (el.firstElementChild) ro.observe(el.firstElementChild);
+    check();
+    return () => ro.disconnect();
+  }, []);
 
   const chip = (key: string, label: string) => (
     <button
@@ -80,7 +99,7 @@ export default function StateCountiesSection({
   const header = (key: SortKey, label: string, align: "left" | "right" = "right") => {
     const active = sort.key === key;
     return (
-      <th className={`pb-2 ${align === "left" ? "text-left" : "text-right"} text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap`} style={{ color: active ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
+      <th className={`pb-2 ${align === "left" ? "text-left" : "text-right"} text-[10px] uppercase tracking-wider font-semibold align-bottom md:whitespace-nowrap`} style={{ color: active ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
         <button type="button" className="hover:underline" onClick={() => setSort((s) => ({ key, dir: s.key === key ? (s.dir === 1 ? -1 : 1) : key === "name" ? 1 : -1 }))}>
           {label}{active ? (sort.dir === -1 ? " ↓" : " ↑") : ""}
         </button>
@@ -114,16 +133,35 @@ export default function StateCountiesSection({
               demParty={layer.demParty}
               repParty={layer.repParty}
               height={340}
+              reservePanel
               caption={layer.caption ? <div className="px-1 pt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>{layer.caption}</div> : undefined}
             />
           ) : (
-            <StateCountyMap stateAbbr={stateAbbr} stateName={stateName} showTpl showLabel={false} countyTpl={countyTpl} height={340} />
+            <StateCountyMap stateAbbr={stateAbbr} stateName={stateName} showTpl showLabel={false} countyTpl={countyTpl} height={340} reservePanel />
           )}
         </div>
 
-        <div className="min-w-0 overflow-x-auto">
-          <table className="w-full text-[11px] md:text-sm">
-            <thead>
+        {/* Side by side, every row is rendered in a box that ends with the map column (the map plus
+            the county panel's reserved space): collapsed it clips, "Show all" only lets it scroll. Stacked on phones there is
+            no map to match, so the list shows SHOW_FIRST rows and grows. Fixed column widths and a
+            reserved scrollbar gutter keep the columns still either way. */}
+        <div className="min-w-0 md:relative">
+          <div
+            ref={scrollRef}
+            className={`scrollbar-visible overflow-x-auto md:absolute md:inset-x-0 md:top-0 md:bottom-9 ${showAll ? "md:overflow-y-auto" : "md:overflow-y-hidden"}`}
+            onScroll={onScroll}
+            style={{ scrollbarGutter: "stable" }}
+          >
+          <table className="w-full table-fixed text-[11px] md:text-sm">
+            <colgroup>
+              <col style={{ width: "26%" }} />
+              <col style={{ width: "15%" }} />
+              <col style={{ width: "15%" }} />
+              <col style={{ width: "16%" }} />
+              <col style={{ width: "15%" }} />
+              <col style={{ width: "13%" }} />
+            </colgroup>
+            <thead className="sticky top-0 z-10" style={{ background: "var(--app-bg)", boxShadow: showAll && scrollPos.top ? "0 6px 6px -6px rgba(0,0,0,0.25)" : undefined }}>
               <tr>
                 {header("name", areaLabel, "left")}
                 {header("tpl", "County TPL")}
@@ -134,8 +172,8 @@ export default function StateCountiesSection({
               </tr>
             </thead>
             <tbody>
-              {visible.map((r) => (
-                <tr key={r.fips} style={{ borderBottom: "1px solid var(--app-border)" }}>
+              {sorted.map((r, i) => (
+                <tr key={r.fips} className={!showAll && i >= SHOW_FIRST ? "hidden md:table-row" : undefined} style={{ borderBottom: "1px solid var(--app-border)" }}>
                   <td className="py-2 pr-2 text-left font-semibold">
                     <a href={`/historical/${r.fips}`} className="hover:underline" style={{ color: "var(--app-text-primary)" }}>{r.name}</a>
                   </td>
@@ -148,11 +186,23 @@ export default function StateCountiesSection({
               ))}
             </tbody>
           </table>
-          {rows.length > SHOW_FIRST && (
+          </div>
+          {showAll && overflows && !scrollPos.end && (
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-x-0 bottom-9 hidden h-12 md:block"
+              style={{ background: "linear-gradient(to bottom, transparent, var(--app-bg))", marginRight: 8 }}
+            />
+          )}
+          {(rows.length > SHOW_FIRST || overflows) && (
             <button
               type="button"
-              onClick={() => setShowAll((v) => !v)}
-              className="mt-3 text-xs font-semibold hover:underline"
+              onClick={() => {
+                if (showAll) scrollRef.current?.scrollTo({ top: 0 });
+                setScrollPos({ top: false, end: false });
+                setShowAll((v) => !v);
+              }}
+              className={`mt-3 text-xs font-semibold hover:underline md:absolute md:bottom-0 md:left-0 ${rows.length > SHOW_FIRST ? "" : "hidden md:inline"} ${overflows || showAll ? "" : "md:hidden"}`}
               style={{ color: "var(--app-text-primary)" }}
             >
               {showAll ? "Show fewer" : `Show all ${rows.length} ↓`}

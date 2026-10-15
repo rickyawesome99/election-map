@@ -150,6 +150,24 @@ body {
   display: none;
 }
 
+/* A thin scrollbar that stays drawn (macOS overlay scrollbars otherwise hide until scrolled),
+   so a box that has become scrollable looks it. The gutter is the same width either way. */
+.scrollbar-visible {
+  scrollbar-width: thin;
+  scrollbar-color: var(--app-border) transparent;
+}
+.scrollbar-visible::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-visible::-webkit-scrollbar-thumb {
+  background: var(--app-border);
+  border-radius: 3px;
+}
+.scrollbar-visible::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .states-ledger-scroll {
   max-height: 26rem;
   overflow-x: hidden;

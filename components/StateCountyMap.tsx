@@ -73,6 +73,7 @@ export default function StateCountyMap({
   showTpl = false,
   showLabel = true,
   countyTpl,
+  reservePanel = false,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -82,9 +83,12 @@ export default function StateCountyMap({
   showLabel?: boolean;
   /** fips → county TPL, from lib/countyTpl.ts on the server; required when showTpl is on. */
   countyTpl?: Record<string, number | null>;
+  /** Keep the selected-county panel's space even when nothing is selected (an invisible stand-in). */
+  reservePanel?: boolean;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelected] = useState<County | null>(null);
+  const panel: County | null = selected ?? (reservePanel ? { fips: "00000", name: stateName, tpl: 0 } : null);
   const tip = useMapTooltip(12, 8);
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -250,32 +254,33 @@ export default function StateCountyMap({
       </div>
 
       {/* Selected county info panel */}
-      {selected && (
+      {panel && (
         <div
           className="px-4 py-3"
-          style={{ borderTop: "1px solid var(--app-border)" }}
+          style={{ borderTop: "1px solid var(--app-border)", visibility: selected ? undefined : "hidden" }}
+          aria-hidden={!selected}
         >
           <div className="flex items-start justify-between gap-2">
             <div>
               <div className="font-semibold text-sm" style={{ color: "var(--app-text-primary)" }}>
-                {selected.name} {areaLabel}
+                {panel.name} {areaLabel}
               </div>
               <div className="text-xs mt-0.5" style={{ color: "var(--app-text-muted)" }}>
-                {stateName} · FIPS {selected.fips}
+                {stateName} · FIPS {panel.fips}
               </div>
               <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
                 {!showTpl ? (
                   "Election data coming soon"
-                ) : selected.tpl == null ? (
+                ) : panel.tpl == null ? (
                   "TPL unavailable"
                 ) : (
                   <>
-                    TPL: <span className="font-semibold" style={{ color: tplColor(selected.tpl) }}>{formatTplValue(selected.tpl)}</span>
+                    TPL: <span className="font-semibold" style={{ color: tplColor(panel.tpl) }}>{formatTplValue(panel.tpl)}</span>
                   </>
                 )}
               </div>
               <a
-                href={`/historical/${selected.fips}`}
+                href={`/historical/${panel.fips}`}
                 className="mt-2 inline-block text-xs font-semibold hover:underline"
                 style={{ color: "var(--app-text-primary)" }}
               >

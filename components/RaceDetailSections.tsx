@@ -795,79 +795,83 @@ export function FundraisingLedgerSection({
   }
 
   const total = dem + rep;
-  const rows = [
-    { party: "D" as const, name: demName ?? "Democrat", amount: dem },
-    { party: "R" as const, name: repName ?? "Republican", amount: rep },
-  ];
+  const demShare = total > 0 ? (dem / total) * 100 : 50;
   const leader = dem === rep ? null : dem > rep ? "D" : "R";
   const gap = Math.abs(dem - rep);
   const ffPts = fundraisingPts ?? null;
   const ffDisplay = ffPts == null ? null
     : Math.abs(ffPts) < 0.05 ? "None"
     : `${ffPts > 0 ? "R" : "D"}+${Math.abs(ffPts).toFixed(1)}`;
+  // The typical gap (R share − D share) as a D-share position on the split bar.
+  const typicalDemShare = typicalGapPct == null ? null : Math.min(100, Math.max(0, 50 - typicalGapPct / 2));
+  const sides = [
+    { party: "D" as const, name: demName ?? "Democrat", amount: dem, share: demShare },
+    { party: "R" as const, name: repName ?? "Republican", amount: rep, share: 100 - demShare },
+  ];
 
   return (
     <div>
-      {rows.map((row, i) => {
-        const accentColor = partyAccent(row.party);
-        const share = total > 0 ? (row.amount / total) * 100 : 50;
-        return (
-          <div
-            key={row.party}
-            className="py-3.5"
-            style={{ borderBottom: i === rows.length - 1 ? "none" : "1px solid var(--app-border)" }}
-          >
-            <div className="flex items-baseline justify-between gap-4">
-              <div className="min-w-0">
-                <div className="truncate" style={{ fontFamily: "var(--font-serif)", fontSize: "1.15rem", fontWeight: 700, color: accentColor }}>
-                  {row.name}
-                </div>
-                <div className="text-xs mt-0.5" style={{ color: "var(--app-text-muted)" }}>
-                  {partyLabel(row.party)}
-                </div>
-              </div>
-              <div
-                className="shrink-0 text-2xl font-extrabold tabular-nums"
-                style={{ color: accentColor }}
-                title={`$${row.amount.toLocaleString()}`}
-              >
-                {formatReceipts(row.amount)}
-              </div>
+      {/* One split bar instead of a row per candidate, so it doesn't read like the candidates section. */}
+      <div className="flex items-end justify-between gap-4">
+        {sides.map((side) => (
+          <div key={side.party} className={`min-w-0 ${side.party === "R" ? "text-right" : ""}`}>
+            <div className="text-xs truncate" style={{ color: "var(--app-text-muted)" }}>
+              {side.name} ({side.party})
             </div>
-            <div className="mt-2.5 flex items-center gap-2.5">
-              <div className="h-1.5 flex-1 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
-                <div className="h-full rounded-full" style={{ width: `${share}%`, background: accentColor }} />
-              </div>
-              <span className="shrink-0 text-[11px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
-                {share.toFixed(0)}%
-              </span>
+            <div className="text-lg font-bold tabular-nums leading-tight" style={{ color: partyAccent(side.party) }} title={`$${side.amount.toLocaleString()}`}>
+              {formatReceipts(side.amount)}
+              <span className="ml-1.5 text-xs font-medium" style={{ color: "var(--app-text-very-muted)" }}>{side.share.toFixed(0)}%</span>
             </div>
           </div>
-        );
-      })}
+        ))}
+      </div>
 
-      <div className="flex flex-wrap gap-x-6 gap-y-1.5 pt-3.5" style={{ borderTop: "1px solid var(--app-border)" }}>
-        <div className="text-xs" style={{ color: "var(--app-text-muted)" }}>
-          Total raised <span className="font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{formatReceipts(total)}</span>
+      <div className="relative mt-2">
+        <div className="flex h-2.5 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
+          <div style={{ width: `${demShare}%`, background: partyAccent("D") }} />
+          <div style={{ width: `${100 - demShare}%`, background: partyAccent("R") }} />
         </div>
-        <div className="text-xs" style={{ color: "var(--app-text-muted)" }}>
-          Advantage{" "}
-          <span className="font-bold tabular-nums" style={{ color: leader ? partyAccent(leader) : "var(--app-text-primary)" }}>
-            {leader ? `${leader}+${formatReceipts(gap)}` : "Even"}
+        {typicalDemShare != null && (
+          <div
+            className="absolute -top-1 -bottom-1 w-0.5 rounded-full"
+            style={{ left: `calc(${typicalDemShare}% - 1px)`, background: "var(--app-text-primary)" }}
+            title={`Typical split for a race like this: ${typical}`}
+          />
+        )}
+      </div>
+      {typicalDemShare != null && (
+        <div className="relative h-4 mt-1">
+          <span
+            className="absolute text-[10px] whitespace-nowrap"
+            style={{
+              left: `${typicalDemShare}%`,
+              transform: `translateX(${typicalDemShare < 15 ? "0" : typicalDemShare > 85 ? "-100%" : "-50%"})`,
+              color: "var(--app-text-very-muted)",
+            }}
+          >
+            typical ({typical})
           </span>
         </div>
+      )}
+
+      <p className="mt-2 text-xs" style={{ color: "var(--app-text-muted)" }}>
+        <span className="font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{formatReceipts(total)}</span> raised
+        {" · "}
+        <span className="font-bold tabular-nums" style={{ color: leader ? partyAccent(leader) : "var(--app-text-primary)" }}>
+          {leader ? `${leader}+${formatReceipts(gap)}` : "Even"}
+        </span>
+        {leader && " advantage"}
         {ffDisplay && (
-          <div className="text-xs" style={{ color: "var(--app-text-muted)" }}>
-            Forecast adjustment{" "}
+          <>
+            {" · Forecast "}
             <span className="font-bold tabular-nums" style={{ color: ffPts && Math.abs(ffPts) >= 0.05 ? partyAccent(ffPts > 0 ? "R" : "D") : "var(--app-text-primary)" }}>
               {ffDisplay}
             </span>
-            {typical && <span> · measured against the typical gap for a race like this ({typical})</span>}
-          </div>
+            {typical && " vs. the typical gap"}
+          </>
         )}
-      </div>
-
-      <p className="mt-2.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+      </p>
+      <p className="mt-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
         Candidate-committee receipts, cycle to date{source ? ` · ${source}` : ""}.
         {(dem === 0 || rep === 0) && " $0 means no filings on record."}
       </p>

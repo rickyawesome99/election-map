@@ -31,7 +31,7 @@ function PviBadge({ pvi }: { pvi: number }) {
  * district's account of how its lines moved. Clicking a district on either map marks its card
  * and brings it into view; clicking the card marks it on the maps.
  */
-export default function RedistrictingYearBlock({ stateAbbr, stateFips, year }: { stateAbbr: string; stateFips: string; year: RedistrictingYear }) {
+export default function RedistrictingYearBlock({ stateAbbr, stateFips, year, last = false }: { stateAbbr: string; stateFips: string; year: RedistrictingYear; last?: boolean }) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const cardRefs = useRef<Map<string, HTMLDivElement>>(new Map());
   const fromMap = useRef(false);
@@ -43,7 +43,7 @@ export default function RedistrictingYearBlock({ stateAbbr, stateFips, year }: {
   }, [selectedId]);
 
   return (
-    <div className="py-5" style={{ borderBottom: "1px solid var(--app-border)" }}>
+    <div className="py-5" style={{ borderBottom: last ? "none" : "1px solid var(--app-border)" }}>
       <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-4">
         <span className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.5rem", fontWeight: 700, color: "var(--app-text-primary)" }}>{year.year}</span>
         {year.events.map((e) => (

@@ -75,6 +75,7 @@ export default function PastElectionCountyMap({
   repParty = "R",
   height = 300,
   caption,
+  reservePanel = false,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -86,6 +87,8 @@ export default function PastElectionCountyMap({
   height?: number;
   /** Rendered between the map and the selected-county panel. */
   caption?: ReactNode;
+  /** Keep the selected-county panel's space even when nothing is selected (an invisible stand-in). */
+  reservePanel?: boolean;
 }) {
   const byFips = useMemo(() => new Map(counties.map((c) => [c.fips, c.result])), [counties]);
   // A same-party contest (CA 2016/2018 Senate: two Democrats) is shaded in that party's colour
@@ -100,6 +103,7 @@ export default function PastElectionCountyMap({
 
   const [hovered, setHovered] = useState<Hovered | null>(null);
   const [selected, setSelected] = useState<Hovered | null>(null);
+  const panel: Hovered | null = selected ?? (reservePanel && counties[0] ? counties[0] : null);
   const { onMouseMove: onTooltipMove, tooltipRef } = useMapTooltip(12, 8);
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -204,14 +208,14 @@ export default function PastElectionCountyMap({
       </div>
 
       {caption}
-      {selected && (
-        <div className="mt-2 px-1 py-3" style={{ borderTop: "1px solid var(--app-border)" }}>
+      {panel && (
+        <div className="mt-2 px-1 py-3" style={{ borderTop: "1px solid var(--app-border)", visibility: selected ? undefined : "hidden" }} aria-hidden={!selected}>
           <div className="flex items-start justify-between gap-2">
             <div className="min-w-0 flex-1">
-              <div className="font-semibold text-sm" style={{ color: "var(--app-text-primary)" }}>{selected.name} {areaLabel}</div>
-              <div className="text-xs mt-0.5" style={{ color: "var(--app-text-muted)" }}>{stateName} · FIPS {selected.fips}</div>
-              <div className="text-xs">{detail(selected)}</div>
-              <a href={`/historical/${selected.fips}`} className="mt-2 inline-block text-xs font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>
+              <div className="font-semibold text-sm" style={{ color: "var(--app-text-primary)" }}>{panel.name} {areaLabel}</div>
+              <div className="text-xs mt-0.5" style={{ color: "var(--app-text-muted)" }}>{stateName} · FIPS {panel.fips}</div>
+              <div className="text-xs">{detail(panel)}</div>
+              <a href={`/historical/${panel.fips}`} className="mt-2 inline-block text-xs font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>
                 Go to county page →
               </a>
             </div>
