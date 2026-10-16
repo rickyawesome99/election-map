@@ -13,8 +13,10 @@
     "export:county-tpl": "npx tsx --conditions=react-server scripts/exportCountyTplCsv.ts",
     "snapshot": "tsx --conditions=react-server scripts/saveForecastSnapshot.ts",
     "history": "tsx --conditions=react-server scripts/buildForecastHistory.ts",
-    "prebuild": "npm run history",
-    "predev": "npm run history"
+    "chamber-margins": "tsx --conditions=react-server scripts/buildChamberMargins.ts",
+    "share-card": "tsx --conditions=react-server scripts/buildSiteShareCard.tsx",
+    "prebuild": "npm run chamber-margins && npm run history",
+    "predev": "npm run chamber-margins && npm run history"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

@@ -6,7 +6,7 @@ import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
 import { computeTrumpApprovalAverage } from "@/lib/trumpApprovalAverage";
 import { calculateStateTpl } from "@/lib/tplCompute";
 import { getForecastHistory } from "@/lib/forecastHistory";
-import { governorForecasts, houseForecasts, senateForecasts, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecast";
+import { forecastsFor, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecast";
 
 function seatTotals(data: { margin: number }[], holdover: { dem: number; rep: number }) {
   return {
@@ -25,9 +25,9 @@ export default function OverviewPage() {
   const gb = computeGenericBallotAverage(now);
   const approval = computeTrumpApprovalAverage(now);
   const withType = [
-    ...senateForecasts.map((race) => ({ race, type: "senate" as const })),
-    ...governorForecasts.map((race) => ({ race, type: "governor" as const })),
-    ...houseForecasts.map((race) => ({ race, type: "house" as const })),
+    ...forecastsFor("senate").map((race) => ({ race, type: "senate" as const })),
+    ...forecastsFor("governor").map((race) => ({ race, type: "governor" as const })),
+    ...forecastsFor("house").map((race) => ({ race, type: "house" as const })),
   ];
   const keyRaces = withType
     .sort((a, b) => Math.abs(a.race.margin) - Math.abs(b.race.margin))
@@ -39,9 +39,9 @@ export default function OverviewPage() {
     genericBallot: { diff: gb.diff, dem: gb.dem, rep: gb.rep },
     approvalDiff: approval.diff,
     seats: {
-      house: seatTotals(houseForecasts, SEAT_HOLDOVERS.house),
-      senate: seatTotals(senateForecasts, SEAT_HOLDOVERS.senate),
-      governor: seatTotals(governorForecasts, SEAT_HOLDOVERS.governor),
+      house: seatTotals(forecastsFor("house"), SEAT_HOLDOVERS.house),
+      senate: seatTotals(forecastsFor("senate"), SEAT_HOLDOVERS.senate),
+      governor: seatTotals(forecastsFor("governor"), SEAT_HOLDOVERS.governor),
     },
     totalSeats: TOTAL_SEATS_BY_TYPE,
     sims: getChamberSimulations(),

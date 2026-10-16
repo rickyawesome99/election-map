@@ -32,7 +32,7 @@ test("robots.txt points at the sitemap and keeps crawlers out of the audit pages
 });
 
 test("pages carry share cards: the site card by default, a race card on race pages", async ({ page, request }) => {
-  for (const [path, card] of [["/overview", "/opengraph-image"], ["/senate/ga", "/senate/ga/opengraph-image"], ["/house/az-06", "/house/az-06/opengraph-image"]]) {
+  for (const [path, card] of [["/overview", "/opengraph-image.png"], ["/senate/ga", "/senate/ga/opengraph-image"], ["/house/az-06", "/house/az-06/opengraph-image"]]) {
     await page.goto(path);
     const image = await page.locator('meta[property="og:image"]').getAttribute("content");
     expect(new URL(image!).pathname).toBe(card);

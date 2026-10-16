@@ -14,7 +14,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
-import { senateForecasts, governorForecasts, houseForecasts, getChamberSimulations, type ForecastedRace } from "@/lib/forecast";
+import { forecastsFor, getChamberSimulations, type ForecastedRace } from "@/lib/forecast";
 import { getNationalEnvironment } from "@/lib/tplCompute";
 import { racePollsMeta } from "@/data/racePolls";
 import { genericBallotPolls } from "@/data/genericBallotPolls";
@@ -52,9 +52,9 @@ const add = (type: string, list: ForecastedRace[], slug: (r: ForecastedRace) => 
     races[`${type}/${slug(r)}`] = { m: r1(r.margin), p: r3(r.probability), r: r.rating, poll: r.pollMargin == null ? null : r1(r.pollMargin), n: r.pollCount };
   }
 };
-add("senate", senateForecasts, (r) => r.id.toLowerCase().replace(/-2$/, "2"));
-add("governor", governorForecasts, (r) => r.id.toLowerCase());
-add("house", houseForecasts, (r) => r.name.toLowerCase());
+add("senate", forecastsFor("senate"), (r) => r.id.toLowerCase().replace(/-2$/, "2"));
+add("governor", forecastsFor("governor"), (r) => r.id.toLowerCase());
+add("house", forecastsFor("house"), (r) => r.name.toLowerCase());
 
 const snapshot = {
   date: day,

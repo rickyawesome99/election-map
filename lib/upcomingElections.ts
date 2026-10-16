@@ -1,5 +1,5 @@
 import { electionYear, governorData, houseData, senateData, type RaceForecast } from "@/data/forecastData";
-import { senateForecasts, governorForecasts } from "@/lib/forecast";
+import { forecastsFor } from "@/lib/forecast";
 import { raceCalendarYears, type RaceClass, type RaceKind } from "@/data/raceCalendar";
 
 /**
@@ -65,7 +65,7 @@ function add(state: string, slot: UpcomingSlot) {
   (byState[state] ??= []).push(slot);
 }
 
-for (const race of senateForecasts) {
+for (const race of forecastsFor("senate")) {
   add(stateOf(race), {
     kind: "S",
     raceClass: (race.electionType ?? "").toLowerCase().includes("special") ? "Special" : "Regular",
@@ -80,7 +80,7 @@ for (const race of senateForecasts) {
   });
 }
 
-for (const race of governorForecasts) {
+for (const race of forecastsFor("governor")) {
   add(stateOf(race), {
     kind: "G",
     raceClass: "Regular",

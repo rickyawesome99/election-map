@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from "react";
 import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps";
 import { geoCentroid } from "d3-geo";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
@@ -27,6 +27,23 @@ function pviLabel(pvi: number | null): string {
 function districtNumber(geoid: string, atLarge: boolean): string {
   if (atLarge) return "AL";
   return String(parseInt(geoid.slice(2), 10));
+}
+
+/** True once the element has come within 300px of the viewport; stays true. A state page shows a
+ *  before/after pair per redraw and each pair is a national boundary file (250-860 KB), so the maps
+ *  wait for the reader to reach them instead of all downloading on page load. */
+function useNearViewport(ref: RefObject<HTMLElement | null>): boolean {
+  const [near, setNear] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (near || !el) return;
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) { setNear(true); io.disconnect(); }
+    }, { rootMargin: "300px 0px" });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [ref, near]);
+  return near;
 }
 
 /**
@@ -60,6 +77,7 @@ function MapPanel({
   const [autoProj, setAutoProj] = useState<ProjectionConfig | null>(null);
   const [hovered, setHovered] = useState<{ geoid: string; name: string; pvi: number | null } | null>(null);
   const { onMouseMove: onTooltipMove, tooltipRef } = useMapTooltip(12, 8);
+  const near = useNearViewport(containerRef);
 
   const measure = useCallback(() => {
     const el = containerRef.current;
@@ -100,7 +118,7 @@ function MapPanel({
             </div>
           </div>
         )}
-        <ComposableMap
+        {near && <ComposableMap
           width={viewport.width}
           height={viewport.height}
           projection="geoMercator"
@@ -152,7 +170,7 @@ function MapPanel({
               );
             }}
           </Geographies>
-        </ComposableMap>
+        </ComposableMap>}
       </div>
     </div>
   );

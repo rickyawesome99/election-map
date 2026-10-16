@@ -6,7 +6,7 @@ import { stateLegCandidates2026 } from "@/data/stateLegCandidates2026";
 import { contest2026 } from "@/lib/stateLegAtlas";
 import { projectChamber } from "@/lib/stateLegForecast";
 import { latestChamberSeats } from "@/lib/stateLegSeats";
-import { getChamberMargins } from "@/lib/stateLegChamberMargin";
+import { getChamberMargins } from "@/lib/chamberMargins";
 import { summarizeUpcoming } from "@/lib/stateLegUpcoming";
 
 /**

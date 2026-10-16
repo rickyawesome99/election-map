@@ -7,7 +7,7 @@
 
 import { writeFileSync } from "fs";
 import { join } from "path";
-import { senateForecasts, governorForecasts, houseForecasts, type ForecastedRace } from "@/lib/forecast";
+import { forecastsFor, type ForecastedRace } from "@/lib/forecast";
 import { calculateDistrictTpl, calculateStateTpl, effectiveEnvironment, computeIncumbentPts, raceMoneyTerm, raceFundraising2026, candidateQuality } from "@/lib/tplCompute";
 import { alignedParty } from "@/data/raceEligibility";
 
@@ -80,9 +80,9 @@ function row(r: ForecastedRace): Record<string, string | number> {
 
 const byId = (a: ForecastedRace, b: ForecastedRace) => a.stateAbbr.localeCompare(b.stateAbbr) || a.name.localeCompare(b.name, undefined, { numeric: true });
 const rows = [
-  ...[...senateForecasts].sort(byId),
-  ...[...governorForecasts].sort(byId),
-  ...[...houseForecasts].sort(byId),
+  ...[...forecastsFor("senate")].sort(byId),
+  ...[...forecastsFor("governor")].sort(byId),
+  ...[...forecastsFor("house")].sort(byId),
 ].map(row);
 
 const header = Object.keys(rows[0]);

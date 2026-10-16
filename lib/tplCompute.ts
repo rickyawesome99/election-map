@@ -30,7 +30,7 @@ import { racePolls } from "@/data/racePolls";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { forecastNow } from "@/lib/forecastClock";
 import { classifyEligibility, alignedParty, type RaceEligibility } from "@/data/raceEligibility";
-import { getChamberMargins } from "@/lib/stateLegChamberMargin";
+import { getChamberMargins } from "@/lib/chamberMargins";
 
 // ── Race stub type ────────────────────────────────────────────────────────────
 

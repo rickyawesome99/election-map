@@ -4,14 +4,16 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from "react";
 
-const TABS: { key: string; label: string; href?: string }[] = [
+// prefetch: false on the heaviest pages (their RSC payloads are 100-250 KB each) so every page
+// view does not download them for links the reader may never click.
+const TABS: { key: string; label: string; href?: string; prefetch?: false }[] = [
   { key: "overview",         label: "Overview" },
   { key: "forecast",         label: "Forecast" },
-  { key: "legislatures",     label: "Legislatures" },
+  { key: "legislatures",     label: "Legislatures", prefetch: false },
   { key: "historical",       label: "Historical" },
-  { key: "model",            label: "TPL" },
+  { key: "model",            label: "TPL", prefetch: false },
   { key: "analysis",         label: "Analysis",        href: "/analysis" },
-  { key: "methodology",      label: "Methodology" },
+  { key: "methodology",      label: "Methodology", prefetch: false },
   { key: "district-finder",  label: "District Finder" },
 ];
 
@@ -155,7 +157,7 @@ export default function SubNavBar() {
           />
         )}
 
-        {TABS.map(({ key, label, href }) => {
+        {TABS.map(({ key, label, href, prefetch }) => {
           const isActive = activeTab === key;
 
           const setRef = (el: HTMLElement | null) => {
@@ -175,6 +177,7 @@ export default function SubNavBar() {
               key={key}
               ref={setRef}
               href={targetHref}
+              prefetch={prefetch}
               onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
               className={commonClass}
               style={style}

@@ -5,7 +5,7 @@ import "server-only";
 
 import { statesData } from "@/data/statesData";
 import { governorNoElection, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
-import { governorForecasts, houseForecasts, type ForecastedRace } from "@/lib/forecast";
+import { forecastsFor, type ForecastedRace } from "@/lib/forecast";
 import type { StateRow } from "@/components/StatesOverviewMap";
 
 function racePartyOverview(race: ForecastedRace): "D" | "R" | "I" {
@@ -19,7 +19,7 @@ let cache: StateRow[] | null = null;
 export function buildStateRows(): StateRow[] {
   if (cache) return cache;
   cache = statesData.map((state) => {
-    const govRace = governorForecasts.find((r) => r.id === state.abbr);
+    const govRace = forecastsFor("governor").find((r) => r.id === state.abbr);
     const govNoEl = !govRace ? governorNoElection.find((e) => e.abbr === state.abbr) : null;
     const govParty: "D" | "R" | "I" | null = govRace ? racePartyOverview(govRace) : (govNoEl?.party ?? null);
     const [senSeat1, senSeat2] = senateCurrent[state.abbr] ?? ["R", "R"];
@@ -27,7 +27,7 @@ export function buildStateRows(): StateRow[] {
     const senateDem = seats.filter((p) => p === "D").length;
     const senateRep = seats.filter((p) => p === "R").length;
     const senateInd = seats.filter((p) => p === "I").length;
-    const houseRaces = houseForecasts.filter((r) => r.state === state.name);
+    const houseRaces = forecastsFor("house").filter((r) => r.state === state.name);
     const del2024 = (houseDelegationHistory[state.name] ?? []).find((e) => e.year === 2024);
     const houseDem = del2024 ? del2024.demSeats : houseRaces.filter((r) => racePartyOverview(r) === "D").length;
     const houseRep = del2024 ? del2024.repSeats : houseRaces.filter((r) => racePartyOverview(r) === "R").length;

@@ -6,7 +6,7 @@ import { racePolls } from "@/data/racePolls";
 import { pollWeight } from "@/lib/racePollAverage";
 import { genericBallotPolls } from "@/data/genericBallotPolls";
 import { ALIGNED_INDEPENDENTS } from "@/data/raceEligibility";
-import { senateForecasts, governorForecasts, houseForecasts, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
+import { forecastsFor, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
 import {
   getTplFit, getEnvironmentModel, getNationalEnvironment, getWarMoneyModel, incumbentAdvantage, liveHouseEffects,
   calculateStateTpl, calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, raceMoneyTerm, candidateQuality,
@@ -47,8 +47,8 @@ export default function ForecastMethodology() {
   const inc = incumbentAdvantage();
   const money = getWarMoneyModel();
   const sims = getChamberSimulations();
-  const all = [...senateForecasts, ...governorForecasts, ...houseForecasts];
-  const byOffice = { H: houseForecasts, S: senateForecasts, G: governorForecasts };
+  const all = [...forecastsFor("senate"), ...forecastsFor("governor"), ...forecastsFor("house")];
+  const byOffice = { H: forecastsFor("house"), S: forecastsFor("senate"), G: forecastsFor("governor") };
   const polled = (rs: ForecastedRace[]) => rs.filter((r) => r.pollMargin != null).length;
   const decided = all.filter((r) => r.contest !== "contested");
   const withQuality = (rs: ForecastedRace[]) => rs.filter((r) => Math.abs(candidateQuality(r).pts) > 1e-9).length;
@@ -59,7 +59,7 @@ export default function ForecastMethodology() {
   const effects = computeCandidateEffects();
 
   // Worked example: the closest polled Senate race.
-  const example = [...senateForecasts].filter((r) => r.contest === "contested" && r.pollMargin != null).sort((a, b) => Math.abs(a.margin) - Math.abs(b.margin))[0] ?? senateForecasts[0];
+  const example = [...forecastsFor("senate")].filter((r) => r.contest === "contested" && r.pollMargin != null).sort((a, b) => Math.abs(a.margin) - Math.abs(b.margin))[0] ?? forecastsFor("senate")[0];
   const ex = ledgerOf(example);
   const wPoll = example.pollWeight, wModel = 1 - wPoll;
   const partyPts = (v: number) => (Math.abs(v) < 0.05 ? <span style={{ color: "var(--app-text-very-muted)" }}>0</span> : <M v={v} />);

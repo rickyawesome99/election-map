@@ -2,10 +2,10 @@
 // poll refresh to print what moved.
 // Run:  npx tsx --conditions=react-server scripts/forecastSnapshot.ts > snapshot.json
 
-import { senateForecasts, governorForecasts, houseForecasts, getChamberSimulations } from "@/lib/forecast";
+import { forecastsFor, getChamberSimulations } from "@/lib/forecast";
 
 const races: Record<string, { name: string; margin: number; rating: string; pollMargin: number | null; pollCount: number }> = {};
-for (const [type, list] of [["senate", senateForecasts], ["governor", governorForecasts], ["house", houseForecasts]] as const) {
+for (const [type, list] of [["senate", forecastsFor("senate")], ["governor", forecastsFor("governor")], ["house", forecastsFor("house")]] as const) {
   for (const r of list) {
     races[`${type}:${r.id}`] = { name: `${type === "house" ? "" : `${r.state} `}${type === "house" ? r.name : type === "senate" ? "Senate" : "Governor"}`, margin: r.margin, rating: r.rating, pollMargin: r.pollMargin, pollCount: r.pollCount };
   }

@@ -134,15 +134,14 @@ export function forecastRace<T extends RaceForecast>(race: T): T & ForecastField
   };
 }
 
-// Computed once per process; the TPL fit behind them is cached inside tplCompute.
-export const senateForecasts: ForecastedRace[] = senateData.map(forecastRace);
-export const governorForecasts: ForecastedRace[] = governorData.map(forecastRace);
-export const houseForecasts: ForecastedRace[] = houseData.map(forecastRace);
+const RACE_DATA: Record<RaceType, RaceForecast[]> = { house: houseData, senate: senateData, governor: governorData };
+const forecastCache: Partial<Record<RaceType, ForecastedRace[]>> = {};
 
+/** Every race of a type, forecast once per process on first use. Not at import: projecting all
+ *  ~500 races at module load cost ~0.6 s of every server cold start, on routes that render one
+ *  race (or none). The TPL fit behind them is cached inside tplCompute. */
 export function forecastsFor(raceType: RaceType): ForecastedRace[] {
-  if (raceType === "senate") return senateForecasts;
-  if (raceType === "governor") return governorForecasts;
-  return houseForecasts;
+  return (forecastCache[raceType] ??= RACE_DATA[raceType].map(forecastRace));
 }
 
 export function findForecast(raceType: RaceType, id: string): ForecastedRace | undefined {
