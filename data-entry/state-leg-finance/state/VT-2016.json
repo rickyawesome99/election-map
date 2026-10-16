@@ -640,22 +640,6 @@
     "expenditures": 0
    }
   ],
-  "Windsor-5": [
-   {
-    "name": "CAPPELLINI, KEITH THOMAS",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 3023.48,
-    "expenditures": 2737
-   },
-   {
-    "name": "KIMBELL, CHARLES A",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 7513.33,
-    "expenditures": 7167.95
-   }
-  ],
   "Rutland-6": [
    {
     "name": "CARR, STEPHEN",
@@ -1223,29 +1207,6 @@
     "expenditures": 10790.23
    }
   ],
-  "Orleans-2": [
-   {
-    "name": "HOLLAND, ROBERT RONALD",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 1475,
-    "expenditures": 959.43
-   },
-   {
-    "name": "MARCOTTE, MICHAEL J",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 1900,
-    "expenditures": 1642.34
-   },
-   {
-    "name": "VIENS, GARY GEORGE",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 3750,
-    "expenditures": 3958.08
-   }
-  ],
   "Washington-4": [
    {
     "name": "HOOPER, MARY S.",
@@ -1308,6 +1269,15 @@
     "incumbent": true,
     "contributions": 0,
     "expenditures": 0
+   }
+  ],
+  "Windsor-5": [
+   {
+    "name": "KIMBELL, CHARLES A",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7513.33,
+    "expenditures": 7167.95
    }
   ],
   "Washington-2": [
@@ -1432,6 +1402,22 @@
     "incumbent": true,
     "contributions": 680,
     "expenditures": 569.55
+   }
+  ],
+  "Orleans-2": [
+   {
+    "name": "MARCOTTE, MICHAEL J",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1900,
+    "expenditures": 1642.34
+   },
+   {
+    "name": "VIENS, GARY GEORGE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3750,
+    "expenditures": 3958.08
    }
   ],
   "Caledonia-1": [

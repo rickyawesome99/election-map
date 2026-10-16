@@ -35,6 +35,8 @@ async function exportYear(ctx, year, office) {
     await p.waitForTimeout(2000);
     const m = (await p.innerText("body")).match(/[0-9,]+ items? in [0-9,]+ pages?|No Results/);
     console.log(`AK ${year} ${office}: ${m ? m[0] : "?"}`);
+    // Every election year has legislative income; "No Results" is the site timing out, not data.
+    if (!m || m[0] === "No Results") throw new Error("search returned no results");
     await Promise.all([p.waitForNavigation({ timeout: 900000 }).catch(() => {}), p.click(P + "btnExport")]);
     await p.waitForSelector("[id$=ExportDialog_hlAllCSV]", { timeout: 300000 });
     const href = await p.getAttribute("[id$=ExportDialog_hlAllCSV]", "href");

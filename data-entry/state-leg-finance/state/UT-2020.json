@@ -6,11 +6,11 @@
  "house": {
   "1": [
    {
-    "name": "Ferry, Johnny",
+    "name": "Ferry, Joel",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 45222.73,
-    "expenditures": 65287.16
+    "contributions": 31251,
+    "expenditures": 52382.43
    },
    {
     "name": "Hardy, Amber",
@@ -239,13 +239,6 @@
   ],
   "16": [
    {
-    "name": "Handy, Stephen G.",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 22831,
-    "expenditures": 33994.58
-   },
-   {
     "name": "Nunn, Cheryl",
     "party": "Democratic",
     "incumbent": false,
@@ -306,15 +299,6 @@
     "incumbent": true,
     "contributions": 16550,
     "expenditures": 32014.79
-   }
-  ],
-  "20": [
-   {
-    "name": "Graves, Phillip",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 2170,
-    "expenditures": 2476.53
    }
   ],
   "21": [
@@ -712,13 +696,6 @@
     "incumbent": false,
     "contributions": 21515.94,
     "expenditures": 26722.46
-   },
-   {
-    "name": "Christiansen, Stephen",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 51952.53,
-    "expenditures": 56073.99
    }
   ],
   "48": [
@@ -928,13 +905,6 @@
   ],
   "63": [
    {
-    "name": "Rakuita, Jennafer",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 3232.06,
-    "expenditures": 2222.07
-   },
-   {
     "name": "Robertson, Adam",
     "party": "Republican",
     "incumbent": true,
@@ -947,15 +917,6 @@
     "incumbent": false,
     "contributions": 3067.78,
     "expenditures": 2117.78
-   }
-  ],
-  "64": [
-   {
-    "name": "Thurston, Norman",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 13266.5,
-    "expenditures": 24986.92
    }
   ],
   "65": [
@@ -1033,15 +994,6 @@
     "expenditures": 82.06
    }
   ],
-  "71": [
-   {
-    "name": "Last, Bradley G.",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 84841.19,
-    "expenditures": 97500.41
-   }
-  ],
   "72": [
    {
     "name": "Manesse, Piper",
@@ -1063,15 +1015,6 @@
     "incumbent": false,
     "contributions": 1525,
     "expenditures": 1602.99
-   }
-  ],
-  "73": [
-   {
-    "name": "Lyman, Phillip",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 16026,
-    "expenditures": 15807
    }
   ],
   "74": [
@@ -1197,15 +1140,6 @@
     "incumbent": true,
     "contributions": 142790.42,
     "expenditures": 161055.63
-   }
-  ],
-  "16": [
-   {
-    "name": "Bramble, Curtis S",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 214184.19,
-    "expenditures": 130241.55
    }
   ],
   "19": [

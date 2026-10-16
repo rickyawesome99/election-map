@@ -73,12 +73,12 @@ def main(cycles):
     for cycle in cycles:
         rows = [x for x in items if x.get("filingYear") == str(cycle) and x.get("office") in CHAMBER]
         out = [{"name": x["filerName"], "party": x.get("politicalParty"), "chamber": CHAMBER[x["office"]], "district": x.get("officeDistrictName"),
-                "contributions": round(money.get(str(x["filerEntityID"]), 0.0), 2), "expenditures": x.get("totalSpent")} for x in rows]
+                "contributions": (round(money[str(x["filerEntityID"])], 2) if str(x["filerEntityID"]) in money else None), "expenditures": x.get("totalSpent")} for x in rows]
         body = {"state": "AR", "cycle": cycle, "source": SOURCE, "fetched": TODAY.isoformat(),
                 "dataThrough": TODAY.strftime("%m/%d/%Y") if cycle >= TODAY.year - 1 else f"12/31/{cycle}", "candidates": out}
         os.makedirs(OUT_DIR, exist_ok=True)
         json.dump(body, open(os.path.join(OUT_DIR, f"AR-{cycle}.json"), "w"), indent=1)
-        print(f"AR {cycle}: {len(out)} legislative registrations, ${sum(o['contributions'] for o in out):,.0f}")
+        print(f"AR {cycle}: {len(out)} legislative registrations, ${sum(o['contributions'] or 0 for o in out):,.0f}")
 
 
 if __name__ == "__main__":

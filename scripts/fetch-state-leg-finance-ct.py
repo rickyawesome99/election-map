@@ -80,7 +80,7 @@ def fetch(cycle):
             total[cid] += float(str(r["Amount"]).replace(",", "").replace("$", ""))
         except ValueError:
             pass
-    out = [{"name": n, "chamber": ch, "district": d, "committee": cid, "contributions": round(total.get(cid, 0.0), 2)} for cid, (n, ch, d) in who.items()]
+    out = [{"name": n, "chamber": ch, "district": d, "committee": cid, "contributions": (round(total[cid], 2) if cid in total else None)} for cid, (n, ch, d) in who.items()]
     body = {"state": "CT", "cycle": cycle, "source": SOURCE, "fetched": TODAY.isoformat(),
             "dataThrough": TODAY.strftime("%m/%d/%Y") if cycle >= TODAY.year else f"12/31/{cycle}", "candidates": out}
     os.makedirs(OUT_DIR, exist_ok=True)

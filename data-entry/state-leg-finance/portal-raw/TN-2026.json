@@ -1,0 +1,2257 @@
+{
+ "state": "TN",
+ "cycle": 2026,
+ "source": "Tennessee Registry of Election Finance (total contributions per report)",
+ "fetched": "2026-10-16",
+ "dataThrough": "10/16/2026",
+ "candidates": [
+  {
+   "name": "JULIAN A. MCTIZIC, SR.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "80",
+   "contributions": 74609.0,
+   "reports": 5
+  },
+  {
+   "name": "BO MITCHELL",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 55835.7,
+   "reports": 6
+  },
+  {
+   "name": "ELLIOTT J. SCHUCHARDT",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 7273.5,
+   "reports": 6
+  },
+  {
+   "name": "JEREMY FAISON",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 110227.04,
+   "reports": 4
+  },
+  {
+   "name": "CHARLIE BAUM",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 84200.0,
+   "reports": 6
+  },
+  {
+   "name": "VINCENT CUEVAS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "92",
+   "contributions": 1411.45,
+   "reports": 5
+  },
+  {
+   "name": "JOHN LOUALLEN",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 66535.72,
+   "reports": 6
+  },
+  {
+   "name": "JASON POWELL",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 31797.19,
+   "reports": 6
+  },
+  {
+   "name": "GLORIA JOHNSON",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "90",
+   "contributions": 22803.5,
+   "reports": 5
+  },
+  {
+   "name": "WILLIAM BROCK MARTIN",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "79",
+   "contributions": 131920.2,
+   "reports": 6
+  },
+  {
+   "name": "ANTONIO '2 SHAY' PARKINSON",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "98",
+   "contributions": 26884.0,
+   "reports": 6
+  },
+  {
+   "name": "G. A. HARDAWAY",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "93",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "TOMMY L. STINNETT",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 65925.0,
+   "reports": 6
+  },
+  {
+   "name": "KIRK HASTON",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "72",
+   "contributions": 30252.4,
+   "reports": 6
+  },
+  {
+   "name": "HILARY TRUDELL",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 6437.3,
+   "reports": 4
+  },
+  {
+   "name": "KENNY CODY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 83347.59,
+   "reports": 4
+  },
+  {
+   "name": "RANDY DEBORD",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "89",
+   "contributions": 0.0,
+   "reports": 3
+  },
+  {
+   "name": "DONALD LEE BRITT, JR.",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "5",
+   "contributions": null,
+   "reports": 1
+  },
+  {
+   "name": "KIP CAPLEY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "71",
+   "contributions": 101610.6,
+   "reports": 6
+  },
+  {
+   "name": "MICHELE RENEAU",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 187426.26,
+   "reports": 6
+  },
+  {
+   "name": "KELLY KEISLING",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 70650.0,
+   "reports": 6
+  },
+  {
+   "name": "DOMINIC HOWARD",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 2640.87,
+   "reports": 4
+  },
+  {
+   "name": "CATHERINE BACON",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 745.87,
+   "reports": 3
+  },
+  {
+   "name": "MANDY COOK",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 35457.02,
+   "reports": 4
+  },
+  {
+   "name": "KYLER GILKEY",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "84",
+   "contributions": 21962.0,
+   "reports": 4
+  },
+  {
+   "name": "DAN HOWELL",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 141900.0,
+   "reports": 6
+  },
+  {
+   "name": "BRAD BATT",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 1811.39,
+   "reports": 4
+  },
+  {
+   "name": "CRAIG D'APOLITO",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "64",
+   "contributions": 489.1,
+   "reports": 4
+  },
+  {
+   "name": "JENNY FOWLER",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 15500.32,
+   "reports": 4
+  },
+  {
+   "name": "KEITH NOLAN",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "31",
+   "contributions": null,
+   "reports": 4
+  },
+  {
+   "name": "NOAH SMITH",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 121775.0,
+   "reports": 4
+  },
+  {
+   "name": "RONNIE L. GLYNN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "67",
+   "contributions": 135334.93,
+   "reports": 6
+  },
+  {
+   "name": "CADE COTHREN",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "71",
+   "contributions": 6075.0,
+   "reports": 2
+  },
+  {
+   "name": "TANDY DARBY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "76",
+   "contributions": 62000.0,
+   "reports": 6
+  },
+  {
+   "name": "LANCE LOFTIS",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 539.24,
+   "reports": 4
+  },
+  {
+   "name": "WILLIAM SLATER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 95574.29,
+   "reports": 6
+  },
+  {
+   "name": "SUSAN LYNN",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "57",
+   "contributions": 24020.2,
+   "reports": 6
+  },
+  {
+   "name": "ADAM STALLINGS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "2",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "GREGORY BRYAN TERRY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 105745.2,
+   "reports": 6
+  },
+  {
+   "name": "LARRY LOWELL RUSSELL",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 80610.09,
+   "reports": 6
+  },
+  {
+   "name": "JEFF BURKHART",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "75",
+   "contributions": 39150.0,
+   "reports": 2
+  },
+  {
+   "name": "MELISSA BROWDER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 42095.0,
+   "reports": 3
+  },
+  {
+   "name": "RODGER BROADWATER",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 1130.98,
+   "reports": 4
+  },
+  {
+   "name": "PHILIP P. BARNES",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 4638.71,
+   "reports": 4
+  },
+  {
+   "name": "JUSTIN LAFFERTY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "89",
+   "contributions": 53690.0,
+   "reports": 6
+  },
+  {
+   "name": "KELLY MCCAMPBELL",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 2667.19,
+   "reports": 4
+  },
+  {
+   "name": "BRYAN GOLDBERG",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 193071.73,
+   "reports": 4
+  },
+  {
+   "name": "JOHN GREER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 4900.0,
+   "reports": 2
+  },
+  {
+   "name": "JEFFREY CURTIS FANCHER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 4790.0,
+   "reports": 4
+  },
+  {
+   "name": "MARK PROCTOR",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 362381.21,
+   "reports": 5
+  },
+  {
+   "name": "MARY LITTLETON",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 48050.0,
+   "reports": 4
+  },
+  {
+   "name": "FRED ATCHLEY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 70750.0,
+   "reports": 6
+  },
+  {
+   "name": "JOHN GILLESPIE",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 176750.0,
+   "reports": 6
+  },
+  {
+   "name": "GREG VITAL",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 137550.0,
+   "reports": 6
+  },
+  {
+   "name": "ANGIE LAWLESS",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 84102.42,
+   "reports": 4
+  },
+  {
+   "name": "PAUL SHERRELL",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 68845.2,
+   "reports": 6
+  },
+  {
+   "name": "ED BUTLER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 111370.0,
+   "reports": 6
+  },
+  {
+   "name": "PAUL SUAREZ",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 2800.0,
+   "reports": 4
+  },
+  {
+   "name": "JOHNNY GARRETT",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 27820.0,
+   "reports": 4
+  },
+  {
+   "name": "LARRY JEREMIAH BROWN",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 360.22,
+   "reports": 3
+  },
+  {
+   "name": "SHEILA MCMAHAN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 20220.27,
+   "reports": 5
+  },
+  {
+   "name": "RALPH JASON GOODMAN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 2815.87,
+   "reports": 4
+  },
+  {
+   "name": "BILL HANCOCK",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 289168.52,
+   "reports": 5
+  },
+  {
+   "name": "PAIGE QUIRIN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "27",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "LARRY MILLER",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "88",
+   "contributions": 30700.0,
+   "reports": 5
+  },
+  {
+   "name": "ELAINE DAVIS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 154803.41,
+   "reports": 6
+  },
+  {
+   "name": "DEMETRUS COONROD",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "28",
+   "contributions": null,
+   "reports": 2
+  },
+  {
+   "name": "DAVID HAWK",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 86000.0,
+   "reports": 6
+  },
+  {
+   "name": "CALVIN LACY",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "93",
+   "contributions": 0.0,
+   "reports": 1
+  },
+  {
+   "name": "JOHNNY SHAW",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "80",
+   "contributions": 11525.0,
+   "reports": 4
+  },
+  {
+   "name": "JENNIFER J. BARTON",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "44",
+   "contributions": null,
+   "reports": 3
+  },
+  {
+   "name": "ANDREW ELLIS FARMER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 64770.2,
+   "reports": 6
+  },
+  {
+   "name": "SHAUNDELLE BROOKS",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 51971.95,
+   "reports": 6
+  },
+  {
+   "name": "MICHELLE FOREMAN",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 14776.59,
+   "reports": 4
+  },
+  {
+   "name": "BETH WEST",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 68351.05,
+   "reports": 5
+  },
+  {
+   "name": "GARFIELD SCOTT",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 1381.56,
+   "reports": 3
+  },
+  {
+   "name": "JOHN RAY CLEMMONS",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "55",
+   "contributions": 170950.0,
+   "reports": 6
+  },
+  {
+   "name": "JEROME F. MOON",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 24025.0,
+   "reports": 5
+  },
+  {
+   "name": "DENNIS POWERS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 135131.7,
+   "reports": 5
+  },
+  {
+   "name": "CODY COX",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 200.0,
+   "reports": 2
+  },
+  {
+   "name": "TIFFANY GRAY",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "86",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "MATT BURCHFIELD (DUPLICATE)",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "57",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "DEREK HAWN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 0.0,
+   "reports": 3
+  },
+  {
+   "name": "MARK WHITE",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "83",
+   "contributions": 143225.2,
+   "reports": 6
+  },
+  {
+   "name": "HEATH SCOTT",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "57",
+   "contributions": null,
+   "reports": 3
+  },
+  {
+   "name": "BRIEANNA L. AKERS",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "62",
+   "contributions": 4711.17,
+   "reports": 4
+  },
+  {
+   "name": "OWEN FARNSWORTH",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 5085.81,
+   "reports": 4
+  },
+  {
+   "name": "MITCHELL MORRISON",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "93",
+   "contributions": 2197.7,
+   "reports": 1
+  },
+  {
+   "name": "TOM LEATHERWOOD",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 72730.2,
+   "reports": 6
+  },
+  {
+   "name": "SARAH JAYNE DELLA VECCHIA",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 5336.92,
+   "reports": 4
+  },
+  {
+   "name": "T.J. HARDAWAY",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "93",
+   "contributions": 250.0,
+   "reports": 2
+  },
+  {
+   "name": "RENEA JONES",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 83518.0,
+   "reports": 6
+  },
+  {
+   "name": "BRANDON D. WASHINGTON",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "93",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "EUGENE N. (GINO) BULSO, JR.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "61",
+   "contributions": 26750.0,
+   "reports": 6
+  },
+  {
+   "name": "GREG MARTIN",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 171595.2,
+   "reports": 6
+  },
+  {
+   "name": "RYAN WILLIAMS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 141570.2,
+   "reports": 6
+  },
+  {
+   "name": "SHIVAM R. ZAVERI",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "14",
+   "contributions": null,
+   "reports": 4
+  },
+  {
+   "name": "TAYLOR MITCHELL WRIGHT",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "89",
+   "contributions": null,
+   "reports": 3
+  },
+  {
+   "name": "MICHELE CARRINGER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 126870.2,
+   "reports": 6
+  },
+  {
+   "name": "RICK ELDRIDGE",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 105800.0,
+   "reports": 6
+  },
+  {
+   "name": "JUSTIN J. PEARSON",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "86",
+   "contributions": 11268.22,
+   "reports": 6
+  },
+  {
+   "name": "BETHANY MILLER",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "80",
+   "contributions": 17524.0,
+   "reports": 5
+  },
+  {
+   "name": "KEVIN D. RAPER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 46425.41,
+   "reports": 6
+  },
+  {
+   "name": "CONNIE CASHA",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 20188.1,
+   "reports": 3
+  },
+  {
+   "name": "DANIEL T. HAWTHORNE",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 2111.75,
+   "reports": 4
+  },
+  {
+   "name": "LORI LOVE",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 2755.79,
+   "reports": 4
+  },
+  {
+   "name": "ALLIE PHILLIPS",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "75",
+   "contributions": 258537.89,
+   "reports": 5
+  },
+  {
+   "name": "WILLIAM G. LAMBERTH, II",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 226395.25,
+   "reports": 6
+  },
+  {
+   "name": "JEREMY BROMWELL",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 7575.82,
+   "reports": 4
+  },
+  {
+   "name": "AMBER MILLS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 43516.84,
+   "reports": 4
+  },
+  {
+   "name": "JOSEPH M. BARRETT",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 42096.6,
+   "reports": 6
+  },
+  {
+   "name": "YUSUF A. HAKEEM",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 28001.0,
+   "reports": 5
+  },
+  {
+   "name": "TONY HULLENDER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 67340.7,
+   "reports": 4
+  },
+  {
+   "name": "TIM HICKS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 63970.2,
+   "reports": 6
+  },
+  {
+   "name": "RON TRAVIS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 5020.2,
+   "reports": 6
+  },
+  {
+   "name": "ESTHER HELTON-HAYNES",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 107581.31,
+   "reports": 6
+  },
+  {
+   "name": "MICHAEL WOODLEE",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 10694.3,
+   "reports": 5
+  },
+  {
+   "name": "JACOB MCCALMON",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 119693.24,
+   "reports": 6
+  },
+  {
+   "name": "CAMERON SEXTON",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 357845.0,
+   "reports": 7
+  },
+  {
+   "name": "TRENTON STRODE",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 5212.8,
+   "reports": 3
+  },
+  {
+   "name": "LINDSAY YOUNG HONAKER",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 24504.47,
+   "reports": 4
+  },
+  {
+   "name": "MAC PICKLE",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 0.0,
+   "reports": 2
+  },
+  {
+   "name": "BOB FREEMAN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 162310.21,
+   "reports": 6
+  },
+  {
+   "name": "CHRIS HURT",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "82",
+   "contributions": 25596.06,
+   "reports": 6
+  },
+  {
+   "name": "DANIEL F. JONES",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 0.0,
+   "reports": 3
+  },
+  {
+   "name": "KAREN CAMPER",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "87",
+   "contributions": 45720.2,
+   "reports": 6
+  },
+  {
+   "name": "VINCENT DIXIE",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 36125.0,
+   "reports": 5
+  },
+  {
+   "name": "JACK L. STOCKTON",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 99568.27,
+   "reports": 4
+  },
+  {
+   "name": "WILLIAM BOLTON",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 11373.4,
+   "reports": 4
+  },
+  {
+   "name": "SABI (DOC) KUMAR",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "66",
+   "contributions": 56020.2,
+   "reports": 6
+  },
+  {
+   "name": "KEVIN VAUGHAN",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "95",
+   "contributions": 118600.0,
+   "reports": 6
+  },
+  {
+   "name": "LATOYA HOLCOMB",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 931.0,
+   "reports": 3
+  },
+  {
+   "name": "TORREY HARRIS",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "91",
+   "contributions": 8154.07,
+   "reports": 6
+  },
+  {
+   "name": "MATTHEW SZALAJ",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "84",
+   "contributions": 100.0,
+   "reports": 1
+  },
+  {
+   "name": "TERI MAI",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "92",
+   "contributions": 18093.09,
+   "reports": 5
+  },
+  {
+   "name": "LINDA STRONG",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "98",
+   "contributions": null,
+   "reports": 1
+  },
+  {
+   "name": "HAROLD MCCAWLEY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 4089.25,
+   "reports": 2
+  },
+  {
+   "name": "REBECCA KEEFAUVER ALEXANDER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 52050.0,
+   "reports": 5
+  },
+  {
+   "name": "JEFF \"COG\" COGGIN",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 0.0,
+   "reports": 4
+  },
+  {
+   "name": "MATT BURCHFIELD",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "57",
+   "contributions": 13643.06,
+   "reports": 4
+  },
+  {
+   "name": "BRETT WINDROW",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 30878.34,
+   "reports": 5
+  },
+  {
+   "name": "AFTYN BEHN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 77008.15,
+   "reports": 6
+  },
+  {
+   "name": "GARY STIDHAM",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 32750.0,
+   "reports": 4
+  },
+  {
+   "name": "MARGARET PRICE",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "83",
+   "contributions": 6083.99,
+   "reports": 3
+  },
+  {
+   "name": "PERRY KEENAN",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 114156.87,
+   "reports": 5
+  },
+  {
+   "name": "LEE REEVES",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 204662.2,
+   "reports": 6
+  },
+  {
+   "name": "TAMARA BAVENDAM",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "66",
+   "contributions": 27961.11,
+   "reports": 4
+  },
+  {
+   "name": "ALI SIMPSON",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 19732.94,
+   "reports": 5
+  },
+  {
+   "name": "RON GANT",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "94",
+   "contributions": 140843.79,
+   "reports": 6
+  },
+  {
+   "name": "CHADWICK L. WHITE",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "92",
+   "contributions": 1060.0,
+   "reports": 3
+  },
+  {
+   "name": "JESSICA MEANS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 78255.16,
+   "reports": 4
+  },
+  {
+   "name": "JASON ZACHARY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 104500.0,
+   "reports": 6
+  },
+  {
+   "name": "ROBERT STEVENS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 85765.0,
+   "reports": 6
+  },
+  {
+   "name": "JAY D. REEDY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "74",
+   "contributions": 20600.0,
+   "reports": 6
+  },
+  {
+   "name": "RUSTY GRILLS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "77",
+   "contributions": 86100.0,
+   "reports": 6
+  },
+  {
+   "name": "KAREN GERTZ",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 2342.75,
+   "reports": 3
+  },
+  {
+   "name": "JORDAN HENDERSON",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 79008.54,
+   "reports": 6
+  },
+  {
+   "name": "JUSTIN JONES",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 83344.84,
+   "reports": 6
+  },
+  {
+   "name": "JOHNNY HORNE",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 0.0,
+   "reports": 4
+  },
+  {
+   "name": "VAN HARRIS",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 70.0,
+   "reports": 2
+  },
+  {
+   "name": "BRETT GIANNINI",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 33575.7,
+   "reports": 4
+  },
+  {
+   "name": "LASHANTA RUDD",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "93",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "JASON HITT",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 0.0,
+   "reports": 3
+  },
+  {
+   "name": "ANDREW SWAFFORD",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 68021.27,
+   "reports": 4
+  },
+  {
+   "name": "MIKE STEIN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 5986.57,
+   "reports": 4
+  },
+  {
+   "name": "SHELIA L. GODWIN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "80",
+   "contributions": 0.0,
+   "reports": 4
+  },
+  {
+   "name": "MICHAEL HALE",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 108595.9,
+   "reports": 6
+  },
+  {
+   "name": "BRITNEY THORNTON",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "93",
+   "contributions": 1200.0,
+   "reports": 2
+  },
+  {
+   "name": "RYAN SCOFIELD",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 1070.3,
+   "reports": 4
+  },
+  {
+   "name": "MONICA MOWDY",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 15221.36,
+   "reports": 4
+  },
+  {
+   "name": "TELISA FRANKLIN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 17017.0,
+   "reports": 4
+  },
+  {
+   "name": "JOHN CRAWFORD",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 167080.0,
+   "reports": 6
+  },
+  {
+   "name": "ARRIELL GIPSON-MARTIN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "91",
+   "contributions": 4037.0,
+   "reports": 2
+  },
+  {
+   "name": "JOHN WARD",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "35",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "KIRK D. CARTER",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "79",
+   "contributions": 0.0,
+   "reports": 3
+  },
+  {
+   "name": "JESSE HUSETH",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 201770.18,
+   "reports": 5
+  },
+  {
+   "name": "ANIYA FARMER",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 2099.99,
+   "reports": 3
+  },
+  {
+   "name": "BOBBY CLARK KING",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "12",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "BECCA RIPLEY",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "61",
+   "contributions": 5896.33,
+   "reports": 3
+  },
+  {
+   "name": "HILLARY CAPES-GWINN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "78",
+   "contributions": null,
+   "reports": 2
+  },
+  {
+   "name": "CHRIS HUGHES",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 21985.0,
+   "reports": 5
+  },
+  {
+   "name": "JULIAN PIERRE-GRIFFIN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 8989.49,
+   "reports": 4
+  },
+  {
+   "name": "BRENT JONES",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 76710.0,
+   "reports": 3
+  },
+  {
+   "name": "DEBRA MOODY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 8270.2,
+   "reports": 4
+  },
+  {
+   "name": "JESSE POWELL",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 2000.0,
+   "reports": 4
+  },
+  {
+   "name": "CALEB HEMMER",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 20266.2,
+   "reports": 4
+  },
+  {
+   "name": "FRANCINE JOHNSON",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "94",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "TAMMY ALBRIGHT",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "5",
+   "contributions": null,
+   "reports": 2
+  },
+  {
+   "name": "CLAY DOGGETT",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "70",
+   "contributions": 59490.4,
+   "reports": 6
+  },
+  {
+   "name": "PAT MARSH",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "62",
+   "contributions": 74750.0,
+   "reports": 6
+  },
+  {
+   "name": "MATT DAY",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "71",
+   "contributions": 10389.19,
+   "reports": 4
+  },
+  {
+   "name": "NATHAN B. DENTON",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "26",
+   "contributions": null,
+   "reports": 1
+  },
+  {
+   "name": "CHRISTOPHER TODD",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "73",
+   "contributions": 62910.0,
+   "reports": 6
+  },
+  {
+   "name": "ALFRED JASON FLEMING",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 18073.33,
+   "reports": 4
+  },
+  {
+   "name": "LUCIAN LAFAE",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 0.0,
+   "reports": 3
+  },
+  {
+   "name": "TONY JAY CRISP",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 146623.0,
+   "reports": 5
+  },
+  {
+   "name": "GABBY SALINAS",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 77267.01,
+   "reports": 5
+  },
+  {
+   "name": "JOHN BRADLEY",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "93",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "MICHELE VETTER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 13634.2,
+   "reports": 4
+  },
+  {
+   "name": "SCOTT CEPICKY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "64",
+   "contributions": 70591.8,
+   "reports": 6
+  },
+  {
+   "name": "MARLAYNA TREGO",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 2646.6,
+   "reports": 3
+  },
+  {
+   "name": "JESSE CHISM",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "85",
+   "contributions": 68741.16,
+   "reports": 6
+  },
+  {
+   "name": "ERIN JERROD REID",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "77",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "MICHAEL LANKFORD",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "75",
+   "contributions": 119820.0,
+   "reports": 5
+  },
+  {
+   "name": "CLARK BOYD",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 174250.0,
+   "reports": 6
+  },
+  {
+   "name": "TOMMY BREWINGTON",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "93",
+   "contributions": null,
+   "reports": 1
+  },
+  {
+   "name": "JAYLA THOMAS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "55",
+   "contributions": 16637.87,
+   "reports": 4
+  },
+  {
+   "name": "ANDREA BOND JOHNSON",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "80",
+   "contributions": 62490.0,
+   "reports": 5
+  },
+  {
+   "name": "RAYANNE MOOS",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "70",
+   "contributions": 2715.87,
+   "reports": 4
+  },
+  {
+   "name": "SETH MCMILLAN",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 5821.44,
+   "reports": 4
+  },
+  {
+   "name": "RANDY SHARP",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "31",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "RICK SCARBROUGH",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 133403.0,
+   "reports": 6
+  },
+  {
+   "name": "KEITH CANADY",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "19",
+   "contributions": null,
+   "reports": 1
+  },
+  {
+   "name": "MICHAEL SPARKS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 41280.0,
+   "reports": 6
+  },
+  {
+   "name": "TODD WARNER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "92",
+   "contributions": 36240.4,
+   "reports": 6
+  },
+  {
+   "name": "IRIS RUDDER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 57320.2,
+   "reports": 6
+  },
+  {
+   "name": "MARK COCHRAN",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 196029.19,
+   "reports": 6
+  },
+  {
+   "name": "ART RYMER",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 2590.87,
+   "reports": 3
+  },
+  {
+   "name": "HAROLD M. LOVE, JR.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "58",
+   "contributions": 18000.0,
+   "reports": 6
+  },
+  {
+   "name": "MARTEZ COLEMAN",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 500.0,
+   "reports": 4
+  },
+  {
+   "name": "TIM RUDD",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 65113.89,
+   "reports": 6
+  },
+  {
+   "name": "JOHN ANTHONY GENTRY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 5116.0,
+   "reports": 3
+  },
+  {
+   "name": "ANNE BACKUS",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 22615.21,
+   "reports": 5
+  },
+  {
+   "name": "DAVE WRIGHT",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 33050.0,
+   "reports": 6
+  },
+  {
+   "name": "WILLIAM P. MOUZON",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 0.0,
+   "reports": 3
+  },
+  {
+   "name": "HAROLD (DEWAYNE) HOWARD",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 1676.03,
+   "reports": 5
+  },
+  {
+   "name": "SAMANTHA PETIT",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 5327.4,
+   "reports": 4
+  },
+  {
+   "name": "JOE TOWNS, JR.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "84",
+   "contributions": 0.0,
+   "reports": 2
+  },
+  {
+   "name": "RUSH BRICKEN",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 35800.0,
+   "reports": 6
+  },
+  {
+   "name": "CHRIS LANIER",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "67",
+   "contributions": 49700.58,
+   "reports": 4
+  },
+  {
+   "name": "MATT H. FERRY",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 5563.45,
+   "reports": 4
+  },
+  {
+   "name": "CHRISTOPHER BRIAN STEWART",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 107820.56,
+   "reports": 5
+  },
+  {
+   "name": "ELIZA BOLES",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 6698.91,
+   "reports": 3
+  },
+  {
+   "name": "MONTY FRITTS",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 0.0,
+   "reports": 6
+  },
+  {
+   "name": "GARY HICKS, JR.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 216270.2,
+   "reports": 6
+  },
+  {
+   "name": "SAM MCKENZIE",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 37840.2,
+   "reports": 6
+  },
+  {
+   "name": "EVA ROMERO",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 107362.38,
+   "reports": 4
+  },
+  {
+   "name": "RACHAEL MURRAY",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 4055.87,
+   "reports": 3
+  },
+  {
+   "name": "MARY ANN YOUNG",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 4865.64,
+   "reports": 4
+  },
+  {
+   "name": "TIMOTHY HILL",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 73170.2,
+   "reports": 6
+  },
+  {
+   "name": "ARON MABERRY",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 130718.37,
+   "reports": 6
+  },
+  {
+   "name": "DAVID PAGE",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "86",
+   "contributions": 0.0,
+   "reports": 3
+  },
+  {
+   "name": "REGGIE WILLIAM HALL",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "87",
+   "contributions": 0.0,
+   "reports": 1
+  },
+  {
+   "name": "RICK EWING",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 93379.0,
+   "reports": 5
+  },
+  {
+   "name": "LONDON LAMAR",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 159829.04,
+   "reports": 7
+  },
+  {
+   "name": "GARY HUMBLE",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 51861.33,
+   "reports": 3
+  },
+  {
+   "name": "BUTCH BAKER",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 62525.0,
+   "reports": 5
+  },
+  {
+   "name": "DAN POHLGEERS",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 145068.0,
+   "reports": 4
+  },
+  {
+   "name": "DAWN WHITE",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 329420.2,
+   "reports": 10
+  },
+  {
+   "name": "MARK PODY",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 731111.93,
+   "reports": 10
+  },
+  {
+   "name": "TERESA D. CONGIOLOSO",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 14805.0,
+   "reports": 5
+  },
+  {
+   "name": "BO WATSON",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 692729.82,
+   "reports": 10
+  },
+  {
+   "name": "KENT A. MORRELL",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 46443.95,
+   "reports": 6
+  },
+  {
+   "name": "ANGELA WYNN",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 15929.13,
+   "reports": 4
+  },
+  {
+   "name": "TIM ROBERTS",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 6849.01,
+   "reports": 4
+  },
+  {
+   "name": "RICHARD BRIGGS",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 571504.58,
+   "reports": 10
+  },
+  {
+   "name": "BRYAN LANGAN",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 2421.45,
+   "reports": 4
+  },
+  {
+   "name": "J. ADAM LOWE",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 348225.0,
+   "reports": 10
+  },
+  {
+   "name": "JEFF YARBRO",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 155375.95,
+   "reports": 9
+  },
+  {
+   "name": "RUEBEN DOCKERY",
+   "party": "Independent",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "RUSTY CROWE",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 384094.2,
+   "reports": 10
+  },
+  {
+   "name": "TRENTON STRODE",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": null,
+   "reports": 0
+  },
+  {
+   "name": "DENNIS H. BEAVERS",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 12900.0,
+   "reports": 5
+  },
+  {
+   "name": "KERRY ROBERTS",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 147550.0,
+   "reports": 10
+  },
+  {
+   "name": "LINDSEY PATRICK-WRIGHT",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 86260.08,
+   "reports": 5
+  },
+  {
+   "name": "CHARLANE OLIVER",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 226260.75,
+   "reports": 10
+  },
+  {
+   "name": "PAUL BAILEY",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 855500.0,
+   "reports": 10
+  },
+  {
+   "name": "JONI COCHRAN",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 28882.44,
+   "reports": 5
+  },
+  {
+   "name": "JACK JOHNSON",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 1076900.21,
+   "reports": 10
+  },
+  {
+   "name": "STEVE SOUTHERLAND",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 246514.77,
+   "reports": 10
+  },
+  {
+   "name": "BRENT TAYLOR",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 565603.1,
+   "reports": 10
+  },
+  {
+   "name": "DAVID MILLER",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 24267.67,
+   "reports": 5
+  },
+  {
+   "name": "TAMIKA L. ABRUM",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 60.0,
+   "reports": 4
+  },
+  {
+   "name": "RAUMESH AKBARI",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 143350.0,
+   "reports": 9
+  },
+  {
+   "name": "EDWARD S. JACKSON",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 229365.2,
+   "reports": 10
+  },
+  {
+   "name": "MORGAN HARDY",
+   "party": "Independent",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 0.0,
+   "reports": 3
+  },
+  {
+   "name": "RANDY MCNALLY",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 212000.0,
+   "reports": 9
+  },
+  {
+   "name": "DAVID WEATHERSPOON",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 93359.74,
+   "reports": 4
+  },
+  {
+   "name": "DAVID LEE MARCUM",
+   "party": "Independent",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 0.0,
+   "reports": 3
+  },
+  {
+   "name": "JIMMY MATLOCK",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 179097.87,
+   "reports": 4
+  },
+  {
+   "name": "DAVID HARDY",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 8757.89,
+   "reports": 4
+  }
+ ]
+}

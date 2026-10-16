@@ -232,13 +232,6 @@
   ],
   "16": [
    {
-    "name": "Handy, Stephen G.",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 32077,
-    "expenditures": 48639.48
-   },
-   {
     "name": "Nunn, Cheryl",
     "party": "Democratic",
     "incumbent": false,
@@ -665,13 +658,6 @@
     "incumbent": false,
     "contributions": 13296.77,
     "expenditures": 4433.61
-   },
-   {
-    "name": "Walston, Stephen",
-    "party": "Other",
-    "incumbent": false,
-    "contributions": 5600,
-    "expenditures": 13598.15
    }
   ],
   "42": [
@@ -964,13 +950,6 @@
   ],
   "60": [
    {
-    "name": "Daw, Bradley M",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 21711.19,
-    "expenditures": 21725.27
-   },
-   {
     "name": "Keele, Alan",
     "party": "Democratic",
     "incumbent": false,
@@ -1026,13 +1005,6 @@
     "incumbent": false,
     "contributions": 31805,
     "expenditures": 31799.59
-   },
-   {
-    "name": "Thurston, Norman",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 16022.78,
-    "expenditures": 31462.17
    }
   ],
   "65": [
@@ -1138,13 +1110,6 @@
     "incumbent": false,
     "contributions": 1715,
     "expenditures": 2201.18
-   },
-   {
-    "name": "Last, Bradley G.",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 50653.7,
-    "expenditures": 68492.62
    }
   ],
   "72": [
@@ -1170,13 +1135,6 @@
     "incumbent": false,
     "contributions": 50363.54,
     "expenditures": 47494.7
-   },
-   {
-    "name": "Lyman, Phillip",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 19876,
-    "expenditures": 16249.62
    }
   ],
   "74": [
@@ -1249,11 +1207,11 @@
   ],
   "5": [
    {
-    "name": "Allen, Kathie",
+    "name": "Allen, Kimdyl",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 6035.64,
-    "expenditures": 6035.64
+    "contributions": 0,
+    "expenditures": 111.43
    },
    {
     "name": "Mayne, Karen",

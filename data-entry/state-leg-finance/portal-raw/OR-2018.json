@@ -1,0 +1,486 @@
+{
+ "state": "OR",
+ "cycle": 2018,
+ "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+ "fetched": "2026-10-16",
+ "dataThrough": "12/31/2018",
+ "candidates": [
+  {
+   "name": "Friends for Floyd Prozanski",
+   "candidate": "Prozanski, Floyd",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "1686",
+   "contributions": 130682.11
+  },
+  {
+   "name": "Committee to Re-Elect Greg Smith",
+   "candidate": "Smith, Gregory",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "57",
+   "committee": "3420",
+   "contributions": 192444.83
+  },
+  {
+   "name": "Committee to Elect Betsy Johnson",
+   "candidate": "Johnson, Elizabeth (Betsy)",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "3591",
+   "contributions": 440232.61
+  },
+  {
+   "name": "Friends of Tina Kotek",
+   "candidate": "Kotek, Tina",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "44",
+   "committee": "4792",
+   "contributions": 600827.35
+  },
+  {
+   "name": "Friends of Kim Thatcher",
+   "candidate": "Thatcher, Kim",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "4871",
+   "contributions": 193597.95
+  },
+  {
+   "name": "Brad Witt for State Representative",
+   "candidate": "Witt, Bradley",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "19",
+   "committee": "5079",
+   "contributions": 183963.87
+  },
+  {
+   "name": "Oregonians for Clem",
+   "candidate": "Clem, Brian",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "21",
+   "committee": "5133",
+   "contributions": 118728.41
+  },
+  {
+   "name": "Friends of Nancy Nathanson",
+   "candidate": "Nathanson, Nancy",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "13",
+   "committee": "5152",
+   "contributions": 196817.68
+  },
+  {
+   "name": "Friends of Sherrie Sprenger",
+   "candidate": "Sprenger, Sherrie",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "17",
+   "committee": "12916",
+   "contributions": 76250.83
+  },
+  {
+   "name": "Friends of Dan Rayfield",
+   "candidate": "Rayfield, Daniel",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "16",
+   "committee": "14046",
+   "contributions": 281138.47
+  },
+  {
+   "name": "Donohue For Representative District 10",
+   "candidate": "Donohue, Thomas",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "10",
+   "committee": "14299",
+   "contributions": 14843.37
+  },
+  {
+   "name": "Friends of Chris Gorsek",
+   "candidate": "Gorsek, Christopher",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "14515",
+   "contributions": 68663.11
+  },
+  {
+   "name": "Committee to Elect Shemia Fagan",
+   "candidate": "Fagan, Shemia",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "14993",
+   "contributions": 423168.63
+  },
+  {
+   "name": "Gomberg for State Rep",
+   "candidate": "Gomberg, David",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "10",
+   "committee": "15348",
+   "contributions": 113578.67
+  },
+  {
+   "name": "Friends of David Brock Smith",
+   "candidate": "Smith, David Brock",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "1",
+   "committee": "15377",
+   "contributions": 148013.14
+  },
+  {
+   "name": "Friends of John Lively",
+   "candidate": "Lively, John",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "7",
+   "committee": "15519",
+   "contributions": 73427.89
+  },
+  {
+   "name": "Reardon for Oregon",
+   "candidate": "Reardon, Michael",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "48",
+   "committee": "15621",
+   "contributions": 72061.47
+  },
+  {
+   "name": "Friends of Jeff Helfrich",
+   "candidate": "Helfrich, Jeff",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "15984",
+   "contributions": 700418.14
+  },
+  {
+   "name": "Friends of Rob Nosse",
+   "candidate": "Nosse, Rob",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "42",
+   "committee": "16459",
+   "contributions": 155562.53
+  },
+  {
+   "name": "Friends of Paul Evans",
+   "candidate": "Evans, Paul",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "20",
+   "committee": "16508",
+   "contributions": 916561.77
+  },
+  {
+   "name": "Hayden for Oregon",
+   "candidate": "Hayden, Cedric",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "16541",
+   "contributions": 180459.0
+  },
+  {
+   "name": "Terrence of Oregon",
+   "candidate": "Taylor, Terrence",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "20",
+   "committee": "16659",
+   "contributions": 1180.0
+  },
+  {
+   "name": "Friends of Mark Meek",
+   "candidate": "Meek, Mark",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "16719",
+   "contributions": 420562.44
+  },
+  {
+   "name": "Ken Helm for Oregon",
+   "candidate": "Helm, Kenneth",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "27",
+   "committee": "16738",
+   "contributions": 78959.68
+  },
+  {
+   "name": "Kathleen Taylor for Oregon",
+   "candidate": "Taylor, Kathleen",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "21",
+   "committee": "16757",
+   "contributions": 79132.0
+  },
+  {
+   "name": "Nearman4Oregon",
+   "candidate": "Nearman, Mike",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "23",
+   "committee": "16767",
+   "contributions": 94409.66
+  },
+  {
+   "name": "Friends of Susan McLain",
+   "candidate": "McLain, Susan",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "29",
+   "committee": "16812",
+   "contributions": 157727.23
+  },
+  {
+   "name": "Committee to Elect Rick Lewis",
+   "candidate": "Lewis, Rick",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "18",
+   "committee": "17017",
+   "contributions": 63591.79
+  },
+  {
+   "name": "Boddie For Bend",
+   "candidate": "Boddie, Nathan",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "54",
+   "committee": "17097",
+   "contributions": 65511.55
+  },
+  {
+   "name": "Friends of Julie Fahey",
+   "candidate": "Fahey, Julianne",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "14",
+   "committee": "17469",
+   "contributions": 107301.37
+  },
+  {
+   "name": "Tawna Sanchez for Oregon",
+   "candidate": "Sanchez, Tawna",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "43",
+   "committee": "17625",
+   "contributions": 36057.57
+  },
+  {
+   "name": "Friends of Teresa Alonso Leon",
+   "candidate": "Alonso Leon, Teresa",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "11",
+   "committee": "17643",
+   "contributions": 249014.65
+  },
+  {
+   "name": "Committee to Elect Pam Marsh",
+   "candidate": "Marsh, Pam",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "5",
+   "committee": "17668",
+   "contributions": 73344.59
+  },
+  {
+   "name": "Committee to Elect Janelle Bynum",
+   "candidate": "Bynum, Janelle",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "39",
+   "committee": "17847",
+   "contributions": 894158.25
+  },
+  {
+   "name": "Friends of Janeen Sollman",
+   "candidate": "Sollman, Janeen",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "17890",
+   "contributions": 64960.96
+  },
+  {
+   "name": "Werner for Oregon",
+   "candidate": "Reschke, E Werner",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "55",
+   "committee": "17892",
+   "contributions": 104027.69
+  },
+  {
+   "name": "Friends of Kim Wallan",
+   "candidate": "Wallan, Kimberly",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "6",
+   "committee": "18284",
+   "contributions": 127012.06
+  },
+  {
+   "name": "Friends of Rob Wagner",
+   "candidate": "Wagner, Robert",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "18396",
+   "contributions": 205151.72
+  },
+  {
+   "name": "Friends of Rich Cunningham",
+   "candidate": "Cunningham, Richard",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "14",
+   "committee": "18683",
+   "contributions": 8514.35
+  },
+  {
+   "name": "Friends of Denyc Boles",
+   "candidate": "Boles, Denyc",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "18816",
+   "contributions": 214606.03
+  },
+  {
+   "name": "Friends of Deb Patterson",
+   "candidate": "Patterson, Deborah",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "18821",
+   "contributions": 124459.97
+  },
+  {
+   "name": "Committee to Elect Jeff Golden",
+   "candidate": "Golden, Jeff",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "18895",
+   "contributions": 215496.92
+  },
+  {
+   "name": "Jack Zika for State Representative",
+   "candidate": "Zika, Joseph (Jack)",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "53",
+   "committee": "18905",
+   "contributions": 189561.21
+  },
+  {
+   "name": "Committee to Elect Daniel Bonham",
+   "candidate": "Bonham, Daniel",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "18925",
+   "contributions": 102712.63
+  },
+  {
+   "name": "Chrissy for Oregon",
+   "candidate": "Reitz, Chrissy",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "18950",
+   "contributions": 735553.45
+  },
+  {
+   "name": "Friends of Dave McCall",
+   "candidate": "McCall, David",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "21",
+   "committee": "18997",
+   "contributions": 30410.4
+  },
+  {
+   "name": "Cheri Helt for State Representative",
+   "candidate": "Helt, Cheri",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "54",
+   "committee": "19022",
+   "contributions": 543346.09
+  },
+  {
+   "name": "Eileen Kiely for Oregon",
+   "candidate": "Kiely, Eileen",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "27",
+   "committee": "19025",
+   "contributions": 52818.25
+  },
+  {
+   "name": "Friends of Christine Drazan",
+   "candidate": "Drazan, Christine",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "51",
+   "committee": "19050",
+   "contributions": 210768.83
+  },
+  {
+   "name": "Stout for State Rep",
+   "candidate": "Stout, Brian",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "31",
+   "committee": "19073",
+   "contributions": 23564.78
+  },
+  {
+   "name": "Friends of Jessica Gomez",
+   "candidate": "Gomez, Jessica",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "19144",
+   "contributions": 570066.88
+  },
+  {
+   "name": "Friends of Shelly Boshart Davis",
+   "candidate": "Boshart Davis, Shelly",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "15",
+   "committee": "19151",
+   "contributions": 176134.51
+  },
+  {
+   "name": "Friends of Courtney Neron",
+   "candidate": "Neron, Courtney",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "19466",
+   "contributions": 48688.31
+  }
+ ]
+}

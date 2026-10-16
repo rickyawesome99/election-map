@@ -313,7 +313,7 @@
     "name": "Greer, Gordon K.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -343,7 +343,7 @@
     "name": "Schneider, Benjamin",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -423,7 +423,7 @@
     "name": "Alvarez, Andrew J",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -979,7 +979,7 @@
     "name": "Williams, Leatha Glee",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -1248,7 +1248,7 @@
     "name": "Lockard, Michael S",
     "party": "Other",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -1465,17 +1465,17 @@
     "expenditures": null
    },
    {
-    "name": "White, Justin",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 11549.2,
-    "expenditures": null
-   },
-   {
     "name": "Frich, Cindy",
     "party": "Republican",
     "incumbent": false,
     "contributions": 9060.19,
+    "expenditures": null
+   },
+   {
+    "name": "White, Justin",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11549.2,
     "expenditures": null
    }
   ],

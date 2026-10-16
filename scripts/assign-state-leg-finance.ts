@@ -17,8 +17,8 @@
  * candidates (stateLegResults; the Ballotpedia 2026 field for the current cycle). A record with a
  * chamber + district looks inside that district first, where the surname alone may decide (also as a
  * word of a committee name); without
- * one, it needs a unique statewide hit on the full name, then first + last, then initial + surname
- * (same party when the record has one). Ambiguous and unmatched records are dropped and counted.
+ * one, it needs a unique statewide (or chamber-wide) hit on the full name, then first + last, then the
+ * surname parts run together. Ambiguous and unmatched records are dropped and counted.
  * Two records on one candidate (a renamed committee) keep the larger figure, never the sum.
  */
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from "fs";
@@ -111,7 +111,9 @@ function assign(file: string) {
     if (!found) {
       const scope = r.chamber ? people.filter((p) => p.chamber === r.chamber) : people;
       tie = false;
-      for (const k of ["full", "loose", "squash", "initial"] as const) pick(scope, k);
+      // No initial-only match statewide: "J. Landry" would take Governor Jeff Landry's committee for
+      // House candidate Jacob Landry. Inside a district (above) it is safe.
+      for (const k of ["full", "loose", "squash"] as const) pick(scope, k);
     }
     if (!found) { if (tie) ambiguous += 1; else unmatched += 1; continue; }
     const prev = hits.get(found);

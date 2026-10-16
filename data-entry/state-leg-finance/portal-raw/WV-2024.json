@@ -6,6 +6,34 @@
  "dataThrough": "12/31/2025",
  "candidates": [
   {
+   "name": "Woodrum, Jack David",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 62134.4
+  },
+  {
+   "name": "Smith, Randy",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 130747.61
+  },
+  {
+   "name": "Weld, Ryan W.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 256841.16
+  },
+  {
+   "name": "Blair, Craig",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 431780.27
+  },
+  {
    "name": "Phillips, Rupert Jr.",
    "party": "Republican",
    "chamber": "senate",
@@ -136,21 +164,21 @@
    "party": "Republican",
    "chamber": "house",
    "district": "88",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Warner, Debbie",
    "party": "Republican",
    "chamber": "house",
    "district": "82",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Stephens, Jason",
    "party": "Republican",
    "chamber": "house",
    "district": "28",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Pushkin, Mike",
@@ -213,7 +241,7 @@
    "party": "Democrat",
    "chamber": "senate",
    "district": "6",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Leavitt, Tristan",
@@ -472,7 +500,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "57",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Winzenreid, Diana",
@@ -521,7 +549,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "19",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Beach-Burge, Amanda",
@@ -570,7 +598,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "28",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Burns, Terry Joe",
@@ -724,7 +752,7 @@
    "party": "Republican",
    "chamber": "senate",
    "district": "5",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Willis, Thomas Edward II",
@@ -745,7 +773,7 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "56",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Ridenour, William Earl II",
@@ -976,7 +1004,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "48",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Hartley, Summer Dawn",
@@ -1011,14 +1039,14 @@
    "party": "Republican",
    "chamber": "house",
    "district": "79",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Cimino, Clay David",
    "party": "Republican",
    "chamber": "house",
    "district": "74",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Roush, Adam Lee Joseph",
@@ -1389,7 +1417,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "54",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Bodie, Linda",
@@ -1403,7 +1431,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "68",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Thacker, Dallas K.",
@@ -1417,7 +1445,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "6",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Marion, Jim",
@@ -1480,7 +1508,7 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "45",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Haught, Jonathan \"Johnny\"",
@@ -1564,7 +1592,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "14",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Jones, Trey Ryan",
@@ -1578,7 +1606,7 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "18",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Mosteller, Michael II",
@@ -1641,7 +1669,7 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "47",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Allen, Jerry L.",
@@ -1655,14 +1683,14 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "51",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Blevins, Ernest E.",
    "party": "Republican",
    "chamber": "house",
    "district": "57",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Kerner, Matthew",
@@ -1676,7 +1704,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "69",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Wolfe, Richard Allen",
@@ -1732,7 +1760,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "96",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Anderson, Osmund Antonio",
@@ -1746,7 +1774,7 @@
    "party": "Non Partisan",
    "chamber": "senate",
    "district": "10",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Griffith, Ric",
@@ -1774,35 +1802,35 @@
    "party": "Republican",
    "chamber": "house",
    "district": "34",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Howes, George",
    "party": "Democrat",
    "chamber": "house",
    "district": "33",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Kincaid, Robyn",
    "party": "Democrat",
    "chamber": "house",
    "district": "51",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Estep, April Dawn",
    "party": "Democrat",
    "chamber": "house",
    "district": "32",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Prato, Anthony",
    "party": "Republican",
    "chamber": "house",
    "district": "85",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Lewis, Hollis Tarry",
@@ -1872,7 +1900,7 @@
    "party": "Write-In",
    "chamber": "house",
    "district": "66",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Sartin, David Wayne",
@@ -1880,34 +1908,6 @@
    "chamber": "senate",
    "district": "6",
    "contributions": 826.43
-  },
-  {
-   "name": "Woodrum, Jack David",
-   "party": "Republican",
-   "chamber": "senate",
-   "district": "10",
-   "contributions": 62134.4
-  },
-  {
-   "name": "Smith, Randy",
-   "party": "Republican",
-   "chamber": "senate",
-   "district": "14",
-   "contributions": 130747.61
-  },
-  {
-   "name": "Weld, Ryan W.",
-   "party": "Republican",
-   "chamber": "senate",
-   "district": "1",
-   "contributions": 256841.16
-  },
-  {
-   "name": "Blair, Craig",
-   "party": "Republican",
-   "chamber": "senate",
-   "district": "8",
-   "contributions": 431780.27
   }
  ]
 }

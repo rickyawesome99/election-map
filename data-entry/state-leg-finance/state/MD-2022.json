@@ -107,7 +107,7 @@
     "name": "NEWTON, WILLIAM T.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -123,7 +123,7 @@
     "name": "GOETZ, RUTH E.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -354,13 +354,6 @@
     "incumbent": false,
     "contributions": 941373.93,
     "expenditures": null
-   },
-   {
-    "name": "SAAB, SAID A.",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 336123,
-    "expenditures": null
    }
   ],
   "34": [
@@ -398,13 +391,6 @@
    }
   ],
   "37": [
-   {
-    "name": "MAUTZ, JOHN F.",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 323058.13,
-    "expenditures": null
-   },
    {
     "name": "HYMAN, NAOMI M.",
     "party": "Democratic",
@@ -519,13 +505,6 @@
     "expenditures": null
    },
    {
-    "name": "FAIR, KRISTOPHER G.",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 62909.52,
-    "expenditures": null
-   },
-   {
     "name": "KERR, KENNETH P.",
     "party": "Democratic",
     "incumbent": true,
@@ -609,13 +588,6 @@
   ],
   "6": [
    {
-    "name": "METZGAR, RICHARD W.",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 75280.65,
-    "expenditures": null
-   },
-   {
     "name": "LONG, ROBERT",
     "party": "Republican",
     "incumbent": true,
@@ -646,24 +618,10 @@
     "expenditures": null
    },
    {
-    "name": "JACKSON, CHIQUITA",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 45,
-    "expenditures": null
-   },
-   {
     "name": "GEELHAAR, GLEN A.",
     "party": "Republican",
     "incumbent": false,
     "contributions": 22632.11,
-    "expenditures": null
-   },
-   {
-    "name": "BHANDARI, HIR B.",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 245895.58,
     "expenditures": null
    },
    {
@@ -686,7 +644,7 @@
     "name": "POROMPYAE, JORDAN F.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -844,13 +802,6 @@
     "expenditures": null
    },
    {
-    "name": "CULLISON, BONITA L.",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 71607,
-    "expenditures": null
-   },
-   {
     "name": "STEWART, VAUGHN M.",
     "party": "Democratic",
     "incumbent": true,
@@ -987,7 +938,7 @@
     "name": "FISHER, JOANN Y.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -1038,7 +989,7 @@
     "name": "HALL, TYRONE R.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -1096,13 +1047,6 @@
    }
   ],
   "36": [
-   {
-    "name": "GHRIST, JEFFERSON L.",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 15900,
-    "expenditures": null
-   },
    {
     "name": "JACOBS, JAY A.",
     "party": "Republican",
@@ -1175,13 +1119,6 @@
   ],
   "45": [
    {
-    "name": "ADDISON, JACQUELINE T.",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 46983.39,
-    "expenditures": null
-   },
-   {
     "name": "SMITH, STEPHANIE D.",
     "party": "Democratic",
     "incumbent": true,
@@ -1215,7 +1152,7 @@
     "name": "WATERS, PETER",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -1284,7 +1221,7 @@
     "name": "BUTLER, GWENDOLYN O.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -1307,7 +1244,7 @@
     "name": "SEYFFERTH, ROBERT L.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -1442,7 +1379,7 @@
     "name": "STIFF, TYLER A.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -1638,13 +1575,6 @@
     "incumbent": false,
     "contributions": 77760,
     "expenditures": null
-   },
-   {
-    "name": "SZELIGA, KATHRYN Y.",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 399526.3,
-    "expenditures": null
    }
   ],
   "29C": [
@@ -1660,15 +1590,6 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 83222.25,
-    "expenditures": null
-   }
-  ],
-  "43B": [
-   {
-    "name": "FORBES, CATHERINE M.",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 103007.98,
     "expenditures": null
    }
   ],

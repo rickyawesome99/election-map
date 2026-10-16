@@ -149,6 +149,9 @@ def fetch(cycle):
         print(f"MO {cycle} {chamber}: {len(cands)} committees")
         for c in cands:
             total = sum(committee_year(c["committee"], y) for y in (cycle - 1, cycle) if y <= TODAY.year)
+            # No itemized row in either year ("Full Disclosure Reports (0)": a committee under the
+            # limited-activity threshold, or one filing under another name) is unknown, not $0.
+            total = total or None
             out.append({"name": c["name"], "party": c["party"], "chamber": chamber, "district": c["district"], "committee": c["committee"], "contributions": total})
     body = {"state": "MO", "cycle": cycle, "source": SOURCE, "fetched": TODAY.isoformat(),
             "dataThrough": TODAY.strftime("%m/%d/%Y") if cycle >= TODAY.year else f"12/31/{cycle}", "candidates": out}

@@ -683,13 +683,6 @@
     "incumbent": false,
     "contributions": 10508.1,
     "expenditures": 4877.67
-   },
-   {
-    "name": "WILSON, ANNA LOIS",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 3033,
-    "expenditures": 1736
    }
   ],
   "Rutland-10": [
@@ -726,15 +719,6 @@
     "expenditures": 5397.74
    }
   ],
-  "Washington-5": [
-   {
-    "name": "CHAPIN, ELA",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 2155,
-    "expenditures": 1652.99
-   }
-  ],
   "Windsor-Windham": [
    {
     "name": "CHARLTON, THOMAS",
@@ -749,52 +733,6 @@
     "incumbent": false,
     "contributions": 10183.71,
     "expenditures": 6340.66
-   }
-  ],
-  "Bennington-4": [
-   {
-    "name": "CLAYTON, ALFORD EDWIN",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 4044.8,
-    "expenditures": 1608
-   },
-   {
-    "name": "FERNANDEZ, MICHAEL",
-    "party": "Other",
-    "incumbent": false,
-    "contributions": 0,
-    "expenditures": 0
-   },
-   {
-    "name": "HUNTER, ROBERT ALAN",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 1860,
-    "expenditures": 541.21
-   },
-   {
-    "name": "WEST, THOMAS",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 8467.5,
-    "expenditures": 6371.61
-   }
-  ],
-  "Windsor-2": [
-   {
-    "name": "COFFIN, VORANUS",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 2800,
-    "expenditures": 0
-   },
-   {
-    "name": "YUENGLING, MARK DARREN",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 4306.09,
-    "expenditures": 2602.15
    }
   ],
   "Windham-Windsor-Bennington": [
@@ -862,15 +800,6 @@
    },
    {
     "name": "JEWETT, CHARLES EDWARD",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 0,
-    "expenditures": 0
-   }
-  ],
-  "Orange-3": [
-   {
-    "name": "COVEY, FRANCIS CLAYTON",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1104,29 +1033,29 @@
     "incumbent": true,
     "contributions": 4103.11,
     "expenditures": 2884.72
-   },
+   }
+  ],
+  "Bennington-4": [
    {
-    "name": "STERN, JUDITH",
-    "party": "Republican",
+    "name": "FERNANDEZ, MICHAEL",
+    "party": "Other",
     "incumbent": false,
     "contributions": 0,
     "expenditures": 0
-   }
-  ],
-  "Windsor-Orange-2": [
-   {
-    "name": "GISH, DIEDRE (\"DEE\")",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 7966,
-    "expenditures": 6157.5
    },
    {
-    "name": "RHIM, LAUREN MORANDO",
+    "name": "HUNTER, ROBERT ALAN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1860,
+    "expenditures": 541.21
+   },
+   {
+    "name": "WEST, THOMAS",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 10548.23,
-    "expenditures": 10383.47
+    "contributions": 8467.5,
+    "expenditures": 6371.61
    }
   ],
   "Windham-9": [
@@ -1747,6 +1676,15 @@
     "expenditures": 5450
    }
   ],
+  "Windsor-Orange-2": [
+   {
+    "name": "RHIM, LAUREN MORANDO",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10548.23,
+    "expenditures": 10383.47
+   }
+  ],
   "Addison-1": [
    {
     "name": "ROY, MIKE",
@@ -1871,6 +1809,15 @@
     "contributions": 969.43,
     "expenditures": 122.43
    }
+  ],
+  "Windsor-2": [
+   {
+    "name": "YUENGLING, MARK DARREN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4306.09,
+    "expenditures": 2602.15
+   }
   ]
  },
  "senate": {
@@ -1973,13 +1920,6 @@
     "incumbent": false,
     "contributions": 100,
     "expenditures": 7.12
-   },
-   {
-    "name": "WHITMIRE, LAWRE EUGENE",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 12938.4,
-    "expenditures": 3969.12
    },
    {
     "name": "WILLIAMS, JOSH",

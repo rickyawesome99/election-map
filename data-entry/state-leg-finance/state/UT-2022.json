@@ -120,18 +120,11 @@
     "expenditures": 904.64
    },
    {
-    "name": "Johnson, John",
+    "name": "Johnson, Jacob",
     "party": "Other",
     "incumbent": false,
-    "contributions": 33450,
-    "expenditures": 24961.51
-   },
-   {
-    "name": "Musselman, Calvin",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 38126,
-    "expenditures": 58203.81
+    "contributions": 830.85,
+    "expenditures": 200
    }
   ],
   "10": [
@@ -148,15 +141,6 @@
     "incumbent": false,
     "contributions": 152407.53,
     "expenditures": 146472.03
-   }
-  ],
-  "11": [
-   {
-    "name": "Hall, Katrina",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 26194,
-    "expenditures": 17130.7
    }
   ],
   "12": [
@@ -211,13 +195,6 @@
   ],
   "16": [
    {
-    "name": "Handy, Stephen G.",
-    "party": "Other",
-    "incumbent": true,
-    "contributions": 116292.18,
-    "expenditures": 124975.83
-   },
-   {
     "name": "Lee, Trevor",
     "party": "Republican",
     "incumbent": false,
@@ -257,15 +234,6 @@
     "incumbent": true,
     "contributions": 92168.71,
     "expenditures": 102583.5
-   }
-  ],
-  "20": [
-   {
-    "name": "Graves, Phillip",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 804.01,
-    "expenditures": 100
    }
   ],
   "21": [
@@ -603,13 +571,6 @@
   ],
   "44": [
    {
-    "name": "Grey, Derick",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 6714.02,
-    "expenditures": 4136.12
-   },
-   {
     "name": "Teuscher, Jordan",
     "party": "Republican",
     "incumbent": true,
@@ -652,13 +613,6 @@
    }
   ],
   "48": [
-   {
-    "name": "Cobb, James",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 20900.27,
-    "expenditures": 10668.19
-   },
    {
     "name": "Olson, Katherine",
     "party": "Democratic",
@@ -826,13 +780,6 @@
     "incumbent": false,
     "contributions": 29509.41,
     "expenditures": 28303.27
-   },
-   {
-    "name": "Thurston, Norman",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 24605.37,
-    "expenditures": 42193.47
    }
   ],
   "63": [
@@ -904,13 +851,6 @@
    }
   ],
   "69": [
-   {
-    "name": "Lyman, Phillip",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 40511,
-    "expenditures": 42117.62
-   },
    {
     "name": "Smith, Davina",
     "party": "Democratic",

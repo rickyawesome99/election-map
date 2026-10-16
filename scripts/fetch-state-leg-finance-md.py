@@ -95,12 +95,12 @@ def fetch(cycle):
                 except (ValueError, KeyError):
                     pass
     out = [{"name": c["candidateName"], "party": c.get("partyAffiliation"), "chamber": CHAMBER[c["officeSought"]], "committee": fid,
-            "contributions": round(total.get(fid, 0.0), 2)} for fid, c in ids.items()]
+            "contributions": (round(total[fid], 2) if fid in total else None)} for fid, c in ids.items()]
     body = {"state": "MD", "cycle": cycle, "source": SOURCES[cycle], "fetched": TODAY.isoformat(),
             "dataThrough": TODAY.strftime("%m/%d/%Y") if cycle >= TODAY.year else f"12/31/{cycle}", "candidates": out}
     os.makedirs(OUT_DIR, exist_ok=True)
     json.dump(body, open(os.path.join(OUT_DIR, f"MD-{cycle}.json"), "w"), indent=1)
-    print(f"MD {cycle}: {len(out)} legislative committees, ${sum(o['contributions'] for o in out):,.0f}")
+    print(f"MD {cycle}: {len(out)} legislative committees, ${sum(o['contributions'] or 0 for o in out):,.0f}")
 
 
 if __name__ == "__main__":

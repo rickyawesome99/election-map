@@ -9,7 +9,7 @@ Report year = election year; it holds the Year Start report (prior-year activity
 year-end report. Per candidate (the "Name" column, filer type Candidate), every income row except
 bank interest, bank fees and "Future Campaign Account" carry-overs. No district or party:
 scripts/assign-state-leg-finance.ts matches the name within the chamber.
-Cathy Giessel, Senate E, 2022: $111,116.53 in all rows, $110,296.95 net of interest and carry-over.
+Cathy Giessel, Senate E, 2022: $111,116.53 in all rows, $110,692.57 without the $423.96 bank interest.
 
 Output: data-entry/state-leg-finance/portal-raw/AK-{year}.json.
 """

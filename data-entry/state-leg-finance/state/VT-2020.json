@@ -747,92 +747,6 @@
     "expenditures": 1628.26
    }
   ],
-  "Chittenden-6": [
-   {
-    "name": "BLUEMLE, TIFFANY W",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 21182.21,
-    "expenditures": 18218.2
-   },
-   {
-    "name": "CINA, BRIAN",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 150.4,
-    "expenditures": 425.25
-   },
-   {
-    "name": "COLBURN, SELENE",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 250,
-    "expenditures": 701.08
-   },
-   {
-    "name": "COLSTON, HAL",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 903,
-    "expenditures": 2246.3
-   },
-   {
-    "name": "HOOPER, ROBERT JEFFERY",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 1326.54,
-    "expenditures": 832.15
-   },
-   {
-    "name": "KROWINSKI, JILL",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 961.38,
-    "expenditures": 481.4
-   },
-   {
-    "name": "MCCORMACK, CURT ALLAN",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 0,
-    "expenditures": 110
-   },
-   {
-    "name": "MULVANEY-STANAK, EMMA",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 10960.26,
-    "expenditures": 10332.34
-   },
-   {
-    "name": "ODE, CAROL",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 4100,
-    "expenditures": 2897.41
-   },
-   {
-    "name": "RACHELSON, BARBARA",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 2168.32,
-    "expenditures": 1340.44
-   },
-   {
-    "name": "SMALL, TAYLOR",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 16332.56,
-    "expenditures": 8735.62
-   },
-   {
-    "name": "STEBBINS, GABRIELLE ANNA",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 9576.67,
-    "expenditures": 9360.98
-   }
-  ],
   "Windsor-3": [
    {
     "name": "BOCK, THOMAS",
@@ -1044,6 +958,85 @@
     "incumbent": true,
     "contributions": 4225,
     "expenditures": 4225
+   }
+  ],
+  "Chittenden-6": [
+   {
+    "name": "CINA, BRIAN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 150.4,
+    "expenditures": 425.25
+   },
+   {
+    "name": "COLBURN, SELENE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 250,
+    "expenditures": 701.08
+   },
+   {
+    "name": "COLSTON, HAL",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 903,
+    "expenditures": 2246.3
+   },
+   {
+    "name": "HOOPER, ROBERT JEFFERY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1326.54,
+    "expenditures": 832.15
+   },
+   {
+    "name": "KROWINSKI, JILL",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 961.38,
+    "expenditures": 481.4
+   },
+   {
+    "name": "MCCORMACK, CURT ALLAN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 110
+   },
+   {
+    "name": "MULVANEY-STANAK, EMMA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10960.26,
+    "expenditures": 10332.34
+   },
+   {
+    "name": "ODE, CAROL",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4100,
+    "expenditures": 2897.41
+   },
+   {
+    "name": "RACHELSON, BARBARA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2168.32,
+    "expenditures": 1340.44
+   },
+   {
+    "name": "SMALL, TAYLOR",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 16332.56,
+    "expenditures": 8735.62
+   },
+   {
+    "name": "STEBBINS, GABRIELLE ANNA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9576.67,
+    "expenditures": 9360.98
    }
   ],
   "Caledonia-2": [

@@ -1,0 +1,209 @@
+{
+ "state": "AR",
+ "cycle": 2020,
+ "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+ "dataThrough": "12/31/2020",
+ "senate": {
+  "1": [
+   {
+    "name": "Hester, Bart",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 80175.01,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "Hendren, James Paul",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 21333.85,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Beckham, Charles Edward , III",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 96695,
+    "expenditures": null
+   },
+   {
+    "name": "Maloch, Bruce",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Garner, Trent Chancey",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 4146.95,
+    "expenditures": null
+   }
+  ]
+ },
+ "house": {
+  "5": [
+   {
+    "name": "McDowell, Chase Owen",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6250,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Jones, Christia (Chris)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "McGrew, Richard",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 29040.23,
+    "expenditures": null
+   },
+   {
+    "name": "Bowers, Judy Ann",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 750.7,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "Scott, Jamie",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4718.74,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "Lowery, Mark Dale",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 43800,
+    "expenditures": null
+   }
+  ],
+  "62": [
+   {
+    "name": "Gray, Michelle",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 12050,
+    "expenditures": null
+   }
+  ],
+  "64": [
+   {
+    "name": "payton, john russell",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5600,
+    "expenditures": null
+   }
+  ],
+  "65": [
+   {
+    "name": "NORMAN, DAVID",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 35297.2,
+    "expenditures": null
+   }
+  ],
+  "68": [
+   {
+    "name": "Berry, Stan J",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 40947.09,
+    "expenditures": null
+   }
+  ],
+  "74": [
+   {
+    "name": "Eubanks, Jon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 84432.9,
+    "expenditures": null
+   },
+   {
+    "name": "Anteski, June A",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6492.5,
+    "expenditures": null
+   }
+  ],
+  "76": [
+   {
+    "name": "Harwell, Caleb D",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1325,
+    "expenditures": null
+   }
+  ],
+  "79": [
+   {
+    "name": "Deffenbaugh, Gary",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6600,
+    "expenditures": null
+   }
+  ],
+  "87": [
+   {
+    "name": "Lundstrum, Robin Dale Hall",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 100571.5,
+    "expenditures": null
+   }
+  ],
+  "94": [
+   {
+    "name": "Carr, John P",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 47585.58,
+    "expenditures": null
+   }
+  ],
+  "96": [
+   {
+    "name": "Bryant, Joshua Paul",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 14123.5,
+    "expenditures": null
+   },
+   {
+    "name": "Bryant, Jill",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ]
+ }
+}

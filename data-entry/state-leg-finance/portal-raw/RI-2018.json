@@ -1,0 +1,1269 @@
+{
+ "state": "RI",
+ "cycle": 2018,
+ "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
+ "fetched": "2026-10-16",
+ "dataThrough": "12/31/2018",
+ "candidates": [
+  {
+   "name": "MARVIN L ABNEY",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "5004",
+   "contributions": 74917.9
+  },
+  {
+   "name": "MIA A ACKERMAN",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6184",
+   "contributions": 21515.54
+  },
+  {
+   "name": "EDITH H AJELLO",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "2169",
+   "contributions": 11772.34
+  },
+  {
+   "name": "Dorinne L. Albright",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "6206",
+   "contributions": 28.48
+  },
+  {
+   "name": "DENNIS L ALGIERE",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "891",
+   "contributions": 9570.0
+  },
+  {
+   "name": "JOSEPH SILVA ALMEIDA JR.",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "4479",
+   "contributions": 10038.89
+  },
+  {
+   "name": "KAREN ALZATE",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8678",
+   "contributions": 9065.0
+  },
+  {
+   "name": "GREGG MICHAEL AMORE",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7732",
+   "contributions": 40950.0
+  },
+  {
+   "name": "Stephen R Archambault",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "6353",
+   "contributions": 57095.0
+  },
+  {
+   "name": "LAUFTON ASCENCAO",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8682",
+   "contributions": 30649.64
+  },
+  {
+   "name": "DAVID A AUCOIN",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8945",
+   "contributions": 2499.0
+  },
+  {
+   "name": "SAMUEL A AZZINARO",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "913",
+   "contributions": 12580.0
+  },
+  {
+   "name": "RUFUS R BAILEY JR.",
+   "party": "Moderate",
+   "chamber": "house",
+   "org": "7721",
+   "contributions": 699.0
+  },
+  {
+   "name": "JEAN P BARROS",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "4859",
+   "contributions": 47080.0
+  },
+  {
+   "name": "Brandon S Bell",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "6290",
+   "contributions": 13661.71
+  },
+  {
+   "name": "SAMUEL W BELL",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "7857",
+   "contributions": 51958.13
+  },
+  {
+   "name": "DAVID A BENNETT",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6813",
+   "contributions": 23960.0
+  },
+  {
+   "name": "Christopher R Blazejewski",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7030",
+   "contributions": 39150.0
+  },
+  {
+   "name": "MARK BOURGET",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "6376",
+   "contributions": 2146.4
+  },
+  {
+   "name": "JULIE CAIOZZO",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8645",
+   "contributions": 4066.83
+  },
+  {
+   "name": "JUSTINE CALDWELL",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8572",
+   "contributions": 24001.309999999998
+  },
+  {
+   "name": "STEPHANIE CALISE WESTGATE",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "7948",
+   "contributions": 3100.0
+  },
+  {
+   "name": "JEANINE CALKIN",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8241",
+   "contributions": 26042.399999999998
+  },
+  {
+   "name": "DENNIS M CANARIO",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "5822",
+   "contributions": 11404.3
+  },
+  {
+   "name": "SANDRA C CANO",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "7576",
+   "contributions": 46984.92
+  },
+  {
+   "name": "LAUREN H CARSON",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7868",
+   "contributions": 17560.0
+  },
+  {
+   "name": "STEPHEN M CASEY",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7521",
+   "contributions": 29700.0
+  },
+  {
+   "name": "JULIE A CASIMIRO",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7889",
+   "contributions": 18762.0
+  },
+  {
+   "name": "LIANA CASSAR",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8607",
+   "contributions": 45321.86
+  },
+  {
+   "name": "BILLY JOE CHARETTE",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8222",
+   "contributions": 8667.58
+  },
+  {
+   "name": "MICHAEL W CHIPPENDALE",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "6999",
+   "contributions": 12214.0
+  },
+  {
+   "name": "FRANK A CICCONE III",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "5221",
+   "contributions": 68205.0
+  },
+  {
+   "name": "TAMMY L COLLINS",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "5969",
+   "contributions": 2768.4
+  },
+  {
+   "name": "WILLIAM J CONLEY JR.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "6992",
+   "contributions": 59031.0
+  },
+  {
+   "name": "SCOTT COPLEY",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8225",
+   "contributions": 4255.0
+  },
+  {
+   "name": "TERRI-DENISE CORTVRIEND",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "5823",
+   "contributions": 25602.75
+  },
+  {
+   "name": "ARTHUR J CORVESE",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "1082",
+   "contributions": 30880.0
+  },
+  {
+   "name": "GREGORY J COSTANTINO",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7176",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROBERT EMMETT CRAVEN SR.",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "3063",
+   "contributions": 99624.0
+  },
+  {
+   "name": "ELIZABETH A CROWLEY",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "2931",
+   "contributions": 10680.0
+  },
+  {
+   "name": "JOHN J CULLEN",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "org": "391",
+   "contributions": 375.0
+  },
+  {
+   "name": "WILLIAM DEGNAN",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8781",
+   "contributions": 2552.54
+  },
+  {
+   "name": "ALANA M DIMARIO",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8800",
+   "contributions": 5245.0
+  },
+  {
+   "name": "LOUIS P DIPALMA",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "5802",
+   "contributions": 32790.0
+  },
+  {
+   "name": "Grace Diaz",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "5749",
+   "contributions": 37025.0
+  },
+  {
+   "name": "MICHAEL DISNEY",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "2806",
+   "contributions": null
+  },
+  {
+   "name": "SUSAN R DONOVAN",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8004",
+   "contributions": 28196.27
+  },
+  {
+   "name": "JENNIFER C DOUGLAS",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8784",
+   "contributions": 4301.18
+  },
+  {
+   "name": "GLENN F DUSABLON",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8764",
+   "contributions": 0.0
+  },
+  {
+   "name": "EWA M DZWIERZYNSKI",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "org": "8240",
+   "contributions": 25985.0
+  },
+  {
+   "name": "JOHN G EDWARDS",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "5628",
+   "contributions": 43109.3
+  },
+  {
+   "name": "DAN ELLIOTT",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8221",
+   "contributions": 6053.22
+  },
+  {
+   "name": "DAWN M EUER",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8551",
+   "contributions": 92391.70999999999
+  },
+  {
+   "name": "WALTER S FELAG JR.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "1203",
+   "contributions": 28775.0
+  },
+  {
+   "name": "Deborah A Fellela",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6385",
+   "contributions": 8875.0
+  },
+  {
+   "name": "BLAKE ANTHONY FILIPPI",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8006",
+   "contributions": 2000.0
+  },
+  {
+   "name": "MICHAEL D FINE",
+   "party": "Unaffiliated",
+   "chamber": "senate",
+   "org": "8794",
+   "contributions": 4100.6
+  },
+  {
+   "name": "KATHLEEN A FOGARTY",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "5435",
+   "contributions": 21310.0
+  },
+  {
+   "name": "STEVEN FRIAS",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "2137",
+   "contributions": 14122.640000000001
+  },
+  {
+   "name": "PETER S FRIEDRICHS",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "org": "8776",
+   "contributions": 1325.0
+  },
+  {
+   "name": "Douglas W Gablinske",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "org": "6410",
+   "contributions": 26700.25
+  },
+  {
+   "name": "David F Gaipo",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "5971",
+   "contributions": 268.0
+  },
+  {
+   "name": "HANNA M GALLO",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "4227",
+   "contributions": 37555.0
+  },
+  {
+   "name": "RICHARD L GARREPY",
+   "party": "Unaffiliated",
+   "chamber": "senate",
+   "org": "8910",
+   "contributions": 100.0
+  },
+  {
+   "name": "MICHAEL JAMES GEARY",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "org": "8309",
+   "contributions": 2645.0
+  },
+  {
+   "name": "DANA W GEE",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8699",
+   "contributions": 11109.0
+  },
+  {
+   "name": "ANTONIO GIARRUSSO",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "7597",
+   "contributions": 32452.54
+  },
+  {
+   "name": "GAYLE L GOLDIN",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "7517",
+   "contributions": 19322.0
+  },
+  {
+   "name": "MARYELLEN GOODWIN",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "22",
+   "contributions": 106670.0
+  },
+  {
+   "name": "DARYL W. GOULD",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "org": "8340",
+   "contributions": null
+  },
+  {
+   "name": "SCOTT J GUTHRIE",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "4980",
+   "contributions": 1050.0
+  },
+  {
+   "name": "MICHAEL GUZMAN",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8628",
+   "contributions": null
+  },
+  {
+   "name": "ARTHUR HANDY",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "5066",
+   "contributions": 3200.0
+  },
+  {
+   "name": "Bernard A Hawkins",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "5992",
+   "contributions": 15495.0
+  },
+  {
+   "name": "KEVIN D HEITKE",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "6571",
+   "contributions": 15175.0
+  },
+  {
+   "name": "RHONDA F HOLMES",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8669",
+   "contributions": 6000.14
+  },
+  {
+   "name": "Raymond A Hull",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7021",
+   "contributions": 32510.0
+  },
+  {
+   "name": "WILLIAM JAMES HUNT",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "org": "8342",
+   "contributions": 4479.98
+  },
+  {
+   "name": "PAUL V JABOUR",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "450",
+   "contributions": 0.0
+  },
+  {
+   "name": "JAMES B JACKSON",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8896",
+   "contributions": 28220.0
+  },
+  {
+   "name": "ROBERT B JACQUARD",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "2008",
+   "contributions": 30364.0
+  },
+  {
+   "name": "RAYMOND H JOHNSTON JR.",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6984",
+   "contributions": 11015.0
+  },
+  {
+   "name": "RICHARD R KARSULAVITCH",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8605",
+   "contributions": 990.0
+  },
+  {
+   "name": "KATHERINE S KAZARIAN",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7741",
+   "contributions": 34435.0
+  },
+  {
+   "name": "CALE PATRICK KEABLE",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7046",
+   "contributions": 51925.0
+  },
+  {
+   "name": "JONATHAN JOSEPH KEITH",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "7960",
+   "contributions": 5608.3
+  },
+  {
+   "name": "BRIAN PATRICK KENNEDY",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "1364",
+   "contributions": 23925.0
+  },
+  {
+   "name": "REBECCA KISLAK",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8587",
+   "contributions": 59864.83
+  },
+  {
+   "name": "JASON PATRICK KNIGHT",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8229",
+   "contributions": 28694.5
+  },
+  {
+   "name": "ROBERT B LANCIA",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "6438",
+   "contributions": 28702.77
+  },
+  {
+   "name": "DENNIS LAVALLEE",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8393",
+   "contributions": 20880.8
+  },
+  {
+   "name": "VALARIE J LAWSON",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8590",
+   "contributions": 60268.53
+  },
+  {
+   "name": "CHARLENE LIMA",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "2191",
+   "contributions": 45140.0
+  },
+  {
+   "name": "JOHN JOSEPH LOMBARDI",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "476",
+   "contributions": 85801.0
+  },
+  {
+   "name": "Frank S Lombardi",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "6215",
+   "contributions": 53775.0
+  },
+  {
+   "name": "FRANK LOMBARDO III",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "7253",
+   "contributions": 34800.0
+  },
+  {
+   "name": "RONALD A LOPARTO",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "5203",
+   "contributions": 0.0
+  },
+  {
+   "name": "NATHAN T LUCIANO",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "org": "8606",
+   "contributions": 3005.0
+  },
+  {
+   "name": "JOHN W LYLE JR.",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "30",
+   "contributions": 15096.16
+  },
+  {
+   "name": "SHELBY MALDONADO",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7827",
+   "contributions": 14965.0
+  },
+  {
+   "name": "ALEX D MARSZALKOWSKI",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8224",
+   "contributions": 28719.7
+  },
+  {
+   "name": "VINCENT MARZULLO",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "org": "8381",
+   "contributions": 3370.0
+  },
+  {
+   "name": "Nicholas Anthony Mattiello",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6218",
+   "contributions": 598119.3300000001
+  },
+  {
+   "name": "MICHAEL J MCCAFFREY",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "2908",
+   "contributions": 166660.0
+  },
+  {
+   "name": "CAROL HAGAN MCENTEE",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "2834",
+   "contributions": 28210.0
+  },
+  {
+   "name": "MARK P MCKENNEY",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8492",
+   "contributions": 55573.0
+  },
+  {
+   "name": "DANIEL P MCKIERNAN",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8066",
+   "contributions": 33559.65
+  },
+  {
+   "name": "James Norman McLaughlin",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6298",
+   "contributions": 7455.0
+  },
+  {
+   "name": "JOSEPH M MCNAMARA",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "2859",
+   "contributions": 33845.0
+  },
+  {
+   "name": "MARIO MENDEZ",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8643",
+   "contributions": 12493.42
+  },
+  {
+   "name": "KENNETH J. MENDONCA",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8206",
+   "contributions": 13511.970000000001
+  },
+  {
+   "name": "MARY DUFFY MESSIER",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6929",
+   "contributions": 18040.0
+  },
+  {
+   "name": "HAROLD M METTS",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "98",
+   "contributions": 28005.0
+  },
+  {
+   "name": "CHRISTOPHER T MILLEA",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8502",
+   "contributions": 18925.0
+  },
+  {
+   "name": "JOSHUA MILLER",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "6110",
+   "contributions": 37011.0
+  },
+  {
+   "name": "JENNIFER R MOFFAT",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8882",
+   "contributions": 2470.0
+  },
+  {
+   "name": "JOHN B MONK",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "org": "8855",
+   "contributions": 200.0
+  },
+  {
+   "name": "Elaine J Morgan",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "6763",
+   "contributions": 10385.49
+  },
+  {
+   "name": "MICHAEL A MORIN",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7522",
+   "contributions": 29275.0
+  },
+  {
+   "name": "WILLIAM W MURPHY",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8746",
+   "contributions": 525.0
+  },
+  {
+   "name": "LUCAS MURRAY",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8703",
+   "contributions": 15824.0
+  },
+  {
+   "name": "MELISSA A MURRAY",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "7832",
+   "contributions": 25675.29
+  },
+  {
+   "name": "ERNEST J NARDOLILLO",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8829",
+   "contributions": 12594.99
+  },
+  {
+   "name": "GEORGE A NARDONE",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8610",
+   "contributions": 4938.45
+  },
+  {
+   "name": "DONNA M NESSELBUSH",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "2267",
+   "contributions": 25429.17
+  },
+  {
+   "name": "BRIAN C NEWBERRY",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "5624",
+   "contributions": 16080.24
+  },
+  {
+   "name": "THOMAS NORET",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8698",
+   "contributions": 13175.0
+  },
+  {
+   "name": "WILLIAM W O'BRIEN",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7072",
+   "contributions": 22830.0
+  },
+  {
+   "name": "JOHN FRANCIS PACHECO III",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "7630",
+   "contributions": 530.0
+  },
+  {
+   "name": "RUTH M PAGE",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8883",
+   "contributions": 1411.0
+  },
+  {
+   "name": "THOMAS PAOLINO",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8395",
+   "contributions": 7020.0
+  },
+  {
+   "name": "RYAN WILLIAM PEARSON",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "6606",
+   "contributions": 58405.0
+  },
+  {
+   "name": "Laura Perez",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6432",
+   "contributions": 0.0
+  },
+  {
+   "name": "RAMON A PEREZ",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6914",
+   "contributions": 10527.0
+  },
+  {
+   "name": "MATTHEW P PERRY",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8636",
+   "contributions": 1700.0
+  },
+  {
+   "name": "JACK R PETERS",
+   "party": "Unaffiliated",
+   "chamber": "senate",
+   "org": "8922",
+   "contributions": 2330.0
+  },
+  {
+   "name": "ROBERT D PHILLIPS",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6102",
+   "contributions": 13305.0
+  },
+  {
+   "name": "ROGER A PICARD",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "2131",
+   "contributions": 30508.0
+  },
+  {
+   "name": "DAVID J PLACE",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "6988",
+   "contributions": 6862.0
+  },
+  {
+   "name": "RICHARD A POIRIER",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "517",
+   "contributions": 1400.0
+  },
+  {
+   "name": "JUSTIN K PRICE",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "7861",
+   "contributions": 4225.51
+  },
+  {
+   "name": "ROBERT J QUATTROCCHI",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8124",
+   "contributions": 6407.87
+  },
+  {
+   "name": "Ana B Quezada",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "6919",
+   "contributions": 11625.0
+  },
+  {
+   "name": "DAVID A QUIROA",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "6042",
+   "contributions": 370.0
+  },
+  {
+   "name": "DAVID A QUIROA",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8856",
+   "contributions": 0.0
+  },
+  {
+   "name": "LEONIDAS P RAPTAKIS",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "2385",
+   "contributions": 33835.0
+  },
+  {
+   "name": "FRANK T RICCI",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8939",
+   "contributions": 0.0
+  },
+  {
+   "name": "SHERRY ROBERTS",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "7882",
+   "contributions": 13436.810000000001
+  },
+  {
+   "name": "Gordon E Rogers",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "6260",
+   "contributions": 10315.0
+  },
+  {
+   "name": "PAUL A ROSELLI",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8577",
+   "contributions": 12840.05
+  },
+  {
+   "name": "JENNIFER TYRENE ROURKE",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8618",
+   "contributions": 9317.86
+  },
+  {
+   "name": "DEBORAH L ROWLEY",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8804",
+   "contributions": 9881.0
+  },
+  {
+   "name": "Dominick J Ruggerio",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "44",
+   "contributions": 480043.27
+  },
+  {
+   "name": "DEBORAH RUGGIERO",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6528",
+   "contributions": 64559.89
+  },
+  {
+   "name": "JAMES SAFFORD",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8734",
+   "contributions": 1360.0
+  },
+  {
+   "name": "ADAM J SATCHELL",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "7689",
+   "contributions": 20155.0
+  },
+  {
+   "name": "REBECCA L SCHIFF",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8376",
+   "contributions": 160727.0
+  },
+  {
+   "name": "JOSE R SERODIO",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8925",
+   "contributions": 20460.0
+  },
+  {
+   "name": "PATRICIA A SERPA",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "4961",
+   "contributions": 36455.0
+  },
+  {
+   "name": "JAMES A SEVENEY",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "4776",
+   "contributions": 18739.3
+  },
+  {
+   "name": "EVAN PATRICK SHANLEY",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8207",
+   "contributions": 51945.0
+  },
+  {
+   "name": "JAMES C SHEEHAN",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "4665",
+   "contributions": 22811.96
+  },
+  {
+   "name": "K Joseph Shekarchi",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6824",
+   "contributions": 375965.0
+  },
+  {
+   "name": "JOHN P SILVAGGIO",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8237",
+   "contributions": null
+  },
+  {
+   "name": "SCOTT A SLATER",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6912",
+   "contributions": 34270.0
+  },
+  {
+   "name": "JOSEPH J SOLOMON JR.",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7303",
+   "contributions": 38245.0
+  },
+  {
+   "name": "V SUSAN SOSNOWSKI",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "3951",
+   "contributions": 27370.0
+  },
+  {
+   "name": "MICHAEL C STEINER",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "8595",
+   "contributions": 8361.2
+  },
+  {
+   "name": "TERESA TANZI",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6892",
+   "contributions": 40811.59
+  },
+  {
+   "name": "Carlos E Tobon",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "6591",
+   "contributions": 27625.0
+  },
+  {
+   "name": "GREGORY JAMES TOCCO",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8045",
+   "contributions": 3200.0
+  },
+  {
+   "name": "Stephen G Tocco",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "5996",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEPHEN R UCCI",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "5707",
+   "contributions": 129040.0
+  },
+  {
+   "name": "MICHAEL LYNN UNDERWOOD",
+   "party": "Republican",
+   "chamber": "house",
+   "org": "8227",
+   "contributions": 2185.0
+  },
+  {
+   "name": "JONATHAN VALLECILLA",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "7871",
+   "contributions": 3580.0
+  },
+  {
+   "name": "BRIDGET GERACI VALVERDE",
+   "party": "Democratic",
+   "chamber": "senate",
+   "org": "8611",
+   "contributions": 45570.69
+  },
+  {
+   "name": "LUIS A. VARGAS RIVERA",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "org": "8070",
+   "contributions": 3096.0
+  },
+  {
+   "name": "AMY E VERI",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8432",
+   "contributions": 1150.0
+  },
+  {
+   "name": "MICHAEL A VERI",
+   "party": "Republican",
+   "chamber": "senate",
+   "org": "8914",
+   "contributions": 4923.14
+  },
+  {
+   "name": "ANASTACIA P WILLIAMS",
+   "party": "Democratic",
+   "chamber": "house",
+   "org": "2184",
+   "contributions": 30720.0
+  }
+ ]
+}

@@ -6,13 +6,6 @@
  "house": {
   "3": [
    {
-    "name": "FAIR, KRISTOPHER G.",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 67436.4,
-    "expenditures": null
-   },
-   {
     "name": "KERR, KENNETH P.",
     "party": "Democratic",
     "incumbent": true,
@@ -73,13 +66,6 @@
   ],
   "5": [
    {
-    "name": "WHISLER, STEPHEN D.",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 57246.73,
-    "expenditures": null
-   },
-   {
     "name": "ROSE, APRIL R.",
     "party": "Republican",
     "incumbent": true,
@@ -111,18 +97,11 @@
     "name": "Welch, Courtney A.",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
   "6": [
-   {
-    "name": "METZGAR, RICHARD W.",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 78560,
-    "expenditures": null
-   },
    {
     "name": "LONG, ROBERT",
     "party": "Republican",
@@ -164,7 +143,7 @@
     "name": "Riemer, Steven J.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -172,13 +151,6 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 41862.28,
-    "expenditures": null
-   },
-   {
-    "name": "BHANDARI, HIR B.",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 118556,
     "expenditures": null
    },
    {
@@ -440,7 +412,7 @@
     "name": "Simmons Robinson, Kimberly",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -509,7 +481,7 @@
     "name": "Fisher, JoAnn",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -592,7 +564,7 @@
     "name": "McEvers, Colin P.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -606,7 +578,7 @@
     "name": "Phelps, Mary",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -618,13 +590,6 @@
    }
   ],
   "36": [
-   {
-    "name": "GHRIST, JEFFERSON L.",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 40400.02,
-    "expenditures": null
-   },
    {
     "name": "JACOBS, JAY A.",
     "party": "Republican",
@@ -643,7 +608,7 @@
     "name": "Crouse, Nevin",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -725,13 +690,6 @@
     "expenditures": null
    },
    {
-    "name": "ADDISON, JACQUELINE T.",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 84007.33,
-    "expenditures": null
-   },
-   {
     "name": "BROWN, RENAUD D.",
     "party": "Other",
     "incumbent": false,
@@ -796,13 +754,6 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 410406.16,
-    "expenditures": null
-   },
-   {
-    "name": "SZELIGA, KATHRYN Y.",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 408428.63,
     "expenditures": null
    }
   ],
@@ -923,13 +874,6 @@
     "incumbent": false,
     "contributions": 28778.82,
     "expenditures": null
-   },
-   {
-    "name": "TAYLOR, JAKOB D.",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 72165.87,
-    "expenditures": null
    }
   ],
   "12A": [
@@ -944,7 +888,7 @@
     "name": "Glover, Frank",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -976,14 +920,14 @@
     "name": "Leonard, John D.",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
     "name": "Thompson, Brandon",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -1054,7 +998,7 @@
     "name": "Gordon, John  C.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -1086,23 +1030,7 @@
     "name": "Brannock, Blair",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
-    "expenditures": null
-   }
-  ],
-  "44A": [
-   {
-    "name": "Linton, Chikongola SR",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 0,
-    "expenditures": null
-   },
-   {
-    "name": "EBERSOLE, ERIC D.",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 106556,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -1282,7 +1210,7 @@
     "name": "Eckels, Michael",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -1296,7 +1224,7 @@
     "name": "Anderson, Gregory",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -1325,21 +1253,12 @@
     "expenditures": null
    }
   ],
-  "43B": [
-   {
-    "name": "FORBES, CATHERINE M.",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 84968.3,
-    "expenditures": null
-   }
-  ],
   "27A": [
    {
     "name": "CRAWFORD, JAMES H.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -1356,6 +1275,15 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 170900.9,
+    "expenditures": null
+   }
+  ],
+  "44A": [
+   {
+    "name": "EBERSOLE, ERIC D.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 106556,
     "expenditures": null
    }
   ],
@@ -1441,7 +1369,7 @@
     "name": "ALOI, SHELLEY M.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -1511,13 +1439,6 @@
     "incumbent": false,
     "contributions": 17147.2,
     "expenditures": null
-   },
-   {
-    "name": "HESTER, KATHRYN F.",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 558727.33,
-    "expenditures": null
    }
   ],
   "10": [
@@ -1534,7 +1455,7 @@
     "name": "Simpson, James",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -1647,7 +1568,7 @@
     "name": "Wass, James K.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -1656,7 +1577,7 @@
     "name": "Amah, James A.",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -1715,7 +1636,7 @@
     "name": "Gallucci, Justin",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    },
    {
@@ -1743,13 +1664,6 @@
    }
   ],
   "34": [
-   {
-    "name": "JAMES, MARYDULANY D.",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 145239.58,
-    "expenditures": null
-   },
    {
     "name": "Goel, Raj",
     "party": "Republican",
@@ -1780,22 +1694,6 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6210.67,
-    "expenditures": null
-   }
-  ],
-  "37": [
-   {
-    "name": "MAUTZ, JOHN F.",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 464830.32,
-    "expenditures": null
-   },
-   {
-    "name": "Clendaniel, Kathleen G.",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 43784.07,
     "expenditures": null
    }
   ],

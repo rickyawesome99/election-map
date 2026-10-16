@@ -6,20 +6,6 @@
  "dataThrough": "10/16/2026",
  "candidates": [
   {
-   "name": "Citizens For Colin Bonini",
-   "committee": "01000023",
-   "chamber": "senate",
-   "district": "16",
-   "contributions": 0.0
-  },
-  {
-   "name": "Friends of Mara Gorman",
-   "committee": "01006115",
-   "chamber": "house",
-   "district": "23",
-   "contributions": 36293.82
-  },
-  {
    "name": "Friends of Kendra Johnson",
    "committee": "01004213",
    "chamber": "house",
@@ -41,11 +27,25 @@
    "contributions": 96010.43
   },
   {
+   "name": "Citizens For Colin Bonini",
+   "committee": "01000023",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": null
+  },
+  {
+   "name": "Friends of Mara Gorman",
+   "committee": "01006115",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 36293.82
+  },
+  {
    "name": "Committee to Elect Victor Setting",
    "committee": "01005578",
    "chamber": "senate",
    "district": "08",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Shay Frisby for Delaware",
@@ -76,18 +76,18 @@
    "contributions": 5562.98
   },
   {
+   "name": "Carl Phelps",
+   "committee": "01005553",
+   "chamber": "house",
+   "district": "14",
+   "contributions": null
+  },
+  {
    "name": "Committee to Elect Riley Figliola",
    "committee": "01006218",
    "chamber": "senate",
    "district": "01",
    "contributions": 632.0
-  },
-  {
-   "name": "Carl Phelps",
-   "committee": "01005553",
-   "chamber": "house",
-   "district": "14",
-   "contributions": 0.0
   },
   {
    "name": "Krista Griffith For Delaware",
@@ -115,7 +115,7 @@
    "committee": "01005600",
    "chamber": "house",
    "district": "10",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Nikki Miller for Delaware",
@@ -123,6 +123,13 @@
    "chamber": "house",
    "district": "20",
    "contributions": 103258.17
+  },
+  {
+   "name": "Kim Williams for State Representative",
+   "committee": "01001986",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 87790.0
   },
   {
    "name": "Citizens for Frank Cooke",
@@ -139,13 +146,6 @@
    "contributions": 31940.52
   },
   {
-   "name": "Kim Williams for State Representative",
-   "committee": "01001986",
-   "chamber": "house",
-   "district": "19",
-   "contributions": 87790.0
-  },
-  {
    "name": "Friends of Alonna Berry",
    "committee": "01006426",
    "chamber": "house",
@@ -157,7 +157,7 @@
    "committee": "01006133",
    "chamber": "house",
    "district": "36",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Friends of Mark Pugh for Senate",
@@ -192,7 +192,7 @@
    "committee": "01005536",
    "chamber": "house",
    "district": "32",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Friends of Cyndie Romer",
@@ -206,7 +206,7 @@
    "committee": "01006128",
    "chamber": "house",
    "district": "08",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Friends of Ron Gray",
@@ -216,18 +216,18 @@
    "contributions": 3800.0
   },
   {
+   "name": "Elect Robert Sebastiano for Delaware Senate 14",
+   "committee": "01005530",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": null
+  },
+  {
    "name": "Spiros Mantzavinos for the 7th",
    "committee": "01004772",
    "chamber": "senate",
    "district": "07",
    "contributions": 114253.0
-  },
-  {
-   "name": "Elect Robert Sebastiano for Delaware Senate 14",
-   "committee": "01005530",
-   "chamber": "senate",
-   "district": "14",
-   "contributions": 0.0
   },
   {
    "name": "Jacki Slonin Finance Campaign",
@@ -325,7 +325,7 @@
    "committee": "01005851",
    "chamber": "house",
    "district": "41",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Friends of Matt Bucher",
@@ -356,18 +356,18 @@
    "contributions": 26075.0
   },
   {
+   "name": "Friends of Mike Simpler",
+   "committee": "01006159",
+   "chamber": "house",
+   "district": "14",
+   "contributions": null
+  },
+  {
    "name": "Friends of Rich Collins",
    "committee": "01002739",
    "chamber": "house",
    "district": "41",
    "contributions": 7600.0
-  },
-  {
-   "name": "Friends of Mike Simpler",
-   "committee": "01006159",
-   "chamber": "house",
-   "district": "14",
-   "contributions": 0.0
   },
   {
    "name": "Mike Smith for Delaware",
@@ -381,7 +381,7 @@
    "committee": "01004237",
    "chamber": "house",
    "district": "29",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Richardson for State Senate",
@@ -430,7 +430,7 @@
    "committee": "01002091",
    "chamber": "house",
    "district": "37",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Committee to Elect Bryan Shupe",
@@ -451,14 +451,14 @@
    "committee": "01005845",
    "chamber": "house",
    "district": "21",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "FRIENDS OF MARC WIENNER",
    "committee": "01005512",
    "chamber": "house",
    "district": "29",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Friends of Elizabeth Lockman",
@@ -587,11 +587,25 @@
    "contributions": 26720.0
   },
   {
+   "name": "Friends of Ryan Stuckey",
+   "committee": "01006453",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 15549.78
+  },
+  {
    "name": "Friends of Nnamdi Chukwuocha - State Representative 1st",
    "committee": "01004439",
    "chamber": "house",
    "district": "01",
    "contributions": 79023.0
+  },
+  {
+   "name": "Friends Of David Hansberger",
+   "committee": "01006124",
+   "chamber": "house",
+   "district": "25",
+   "contributions": null
   },
   {
    "name": "Walsh for the 9th",
@@ -601,25 +615,11 @@
    "contributions": 47386.21
   },
   {
-   "name": "Friends of Ryan Stuckey",
-   "committee": "01006453",
-   "chamber": "house",
-   "district": "41",
-   "contributions": 15549.78
-  },
-  {
-   "name": "Friends Of David Hansberger",
-   "committee": "01006124",
-   "chamber": "house",
-   "district": "25",
-   "contributions": 0.0
-  },
-  {
    "name": "Monique Johns",
    "committee": "01003800",
    "chamber": "house",
    "district": "09",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Sokola For Senate",
@@ -710,14 +710,14 @@
    "committee": "01005293",
    "chamber": "house",
    "district": "09",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Elect Luann DAgostino",
    "committee": "01004765",
    "chamber": "house",
    "district": "22",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Friends for Gary Taylor",
@@ -920,7 +920,7 @@
    "committee": "01006692",
    "chamber": "house",
    "district": "03",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "HarryGold4Delaware",
@@ -976,7 +976,7 @@
    "committee": "01006737",
    "chamber": "house",
    "district": "35",
-   "contributions": 0.0
+   "contributions": null
   },
   {
    "name": "Tim Conrad for Delaware",

@@ -298,22 +298,6 @@
     "expenditures": 1631.58
    }
   ],
-  "Chittenden-13": [
-   {
-    "name": "BLUEMLE, TIFFANY W",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 12154.62,
-    "expenditures": 9878.88
-   },
-   {
-    "name": "KLEPPNER, BRAM",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 14548,
-    "expenditures": 10540.13
-   }
-  ],
   "Caledonia-3": [
    {
     "name": "BOLAND, EILEEN",
@@ -658,15 +642,6 @@
     "expenditures": 981.81
    }
   ],
-  "Washington-5": [
-   {
-    "name": "CHAPIN, ELA",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 3148.77,
-    "expenditures": 3036.33
-   }
-  ],
   "Windsor-Windham": [
    {
     "name": "CHARLTON, THOMAS",
@@ -729,22 +704,6 @@
     "incumbent": true,
     "contributions": 175.41,
     "expenditures": 1757.9
-   }
-  ],
-  "Windsor-2": [
-   {
-    "name": "COFFIN, VORANUS",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 3220,
-    "expenditures": 3723.46
-   },
-   {
-    "name": "YUENGLING, MARK DARREN",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 4758,
-    "expenditures": 4397.33
    }
   ],
   "Addison-2": [
@@ -1122,13 +1081,6 @@
     "incumbent": true,
     "contributions": 3732.08,
     "expenditures": 4496.28
-   },
-   {
-    "name": "LASKEVICH, CYNTHIA R",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 2150,
-    "expenditures": 0
    }
   ],
   "Rutland-4": [
@@ -1170,13 +1122,6 @@
     "incumbent": true,
     "contributions": 5651.8,
     "expenditures": 7732.92
-   },
-   {
-    "name": "NIELSEN, TODD",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 6747,
-    "expenditures": 5443.67
    }
   ],
   "Essex-Caledonia": [
@@ -1211,6 +1156,15 @@
     "incumbent": true,
     "contributions": 3120,
     "expenditures": 659.56
+   }
+  ],
+  "Chittenden-13": [
+   {
+    "name": "KLEPPNER, BRAM",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14548,
+    "expenditures": 10540.13
    }
   ],
   "Windham-7": [
@@ -1670,6 +1624,15 @@
     "incumbent": true,
     "contributions": 2085,
     "expenditures": 999.59
+   }
+  ],
+  "Windsor-2": [
+   {
+    "name": "YUENGLING, MARK DARREN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4758,
+    "expenditures": 4397.33
    }
   ]
  },

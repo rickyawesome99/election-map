@@ -360,22 +360,6 @@
     "expenditures": 1605.78
    }
   ],
-  "Chittenden-13": [
-   {
-    "name": "BLUEMLE, TIFFANY W",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 6740,
-    "expenditures": 3580.46
-   },
-   {
-    "name": "STEBBINS, GABRIELLE ANNA",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 1127.15,
-    "expenditures": 1576.07
-   }
-  ],
   "Caledonia-3": [
    {
     "name": "BOLAND, EILEEN",
@@ -1072,29 +1056,6 @@
     "expenditures": 374.8
    }
   ],
-  "Orange-Washington-Addison": [
-   {
-    "name": "KLAR, JACQUELINE A",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 3426,
-    "expenditures": 1085.64
-   },
-   {
-    "name": "SATCOWITZ, LAWRENCE",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 950,
-    "expenditures": 441.62
-   },
-   {
-    "name": "TOWNSEND, WAYNE D.",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 2532.37,
-    "expenditures": 2529.37
-   }
-  ],
   "Windham-7": [
    {
     "name": "KORNHEISER, EMILIE KATHERINE",
@@ -1102,15 +1063,6 @@
     "incumbent": true,
     "contributions": 5208.74,
     "expenditures": 3065.61
-   }
-  ],
-  "Chittenden-9": [
-   {
-    "name": "KRASNOW, EMILIE",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 12976.58,
-    "expenditures": 8341.85
    }
   ],
   "Chittenden-16": [
@@ -1370,13 +1322,6 @@
     "incumbent": true,
     "contributions": 704.25,
     "expenditures": 1067.43
-   },
-   {
-    "name": "STONE, MARY-KATHERINE",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 800,
-    "expenditures": 276
    }
   ],
   "Windham-6": [
@@ -1386,6 +1331,22 @@
     "incumbent": false,
     "contributions": 12600,
     "expenditures": 11506.12
+   }
+  ],
+  "Orange-Washington-Addison": [
+   {
+    "name": "SATCOWITZ, LAWRENCE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 950,
+    "expenditures": 441.62
+   },
+   {
+    "name": "TOWNSEND, WAYNE D.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2532.37,
+    "expenditures": 2529.37
    }
   ],
   "Addison-1": [
@@ -1445,6 +1406,15 @@
     "expenditures": 20310.24
    }
   ],
+  "Chittenden-13": [
+   {
+    "name": "STEBBINS, GABRIELLE ANNA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1127.15,
+    "expenditures": 1576.07
+   }
+  ],
   "Washington-Chittenden": [
    {
     "name": "STEVENS, THOMAS",
@@ -1452,13 +1422,6 @@
     "incumbent": true,
     "contributions": 2575,
     "expenditures": 1722.33
-   },
-   {
-    "name": "TARRANT, KATHLEEN M",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 1892.06,
-    "expenditures": 2605.32
    },
    {
     "name": "WOOD, THERESA A. M.",

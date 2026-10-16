@@ -172,17 +172,17 @@
   ],
   "14": [
    {
-    "name": "Orndoff-Sayers, Elizabeth \"Betsy\" Wertz",
-    "party": "Other",
-    "incumbent": false,
-    "contributions": 1624.33,
-    "expenditures": null
-   },
-   {
     "name": "Smith, Randy",
     "party": "Republican",
     "incumbent": true,
     "contributions": 130747.61,
+    "expenditures": null
+   },
+   {
+    "name": "Orndoff-Sayers, Elizabeth \"Betsy\" Wertz",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 1624.33,
     "expenditures": null
    }
   ],
@@ -400,7 +400,7 @@
     "name": "Foggin, Dave",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -450,7 +450,7 @@
     "name": "Meadows, Andrea",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -851,7 +851,7 @@
     "name": "McCoy, Kayla M.",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -970,7 +970,7 @@
     "name": "Aklei, Julien",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": null,
     "expenditures": null
    }
   ],

@@ -1,0 +1,240 @@
+{
+ "state": "OR",
+ "cycle": 2016,
+ "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+ "dataThrough": "12/31/2016",
+ "house": {
+  "1": [
+   {
+    "name": "Committee to Elect Tamie Kaufman",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 8431.18,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Committee to Elect Pam Marsh",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 74382.27,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Donohue For Representative District 10",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4986,
+    "expenditures": null
+   },
+   {
+    "name": "Gomberg for State Rep",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 99545.13,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Friends of Nancy Nathanson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 219811.83,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Friends of Julie Fahey",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 280165.83,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Friends of Andy Olson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 133373,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Friends of Dan Rayfield",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 203799.58,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "Friends of Sherrie Sprenger",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 69600.15,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Friends of Paul Evans",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 568288.2,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Oregonians for Clem",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 158528.45,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Nearman4Oregon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 223076.77,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Friends of Susan McLain",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 245861.71,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Friends of Ann Lininger",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 228248.56,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "Friends of Rob Nosse",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 151571.65,
+    "expenditures": null
+   }
+  ],
+  "43": [
+   {
+    "name": "Tawna Sanchez for Oregon",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 113865.32,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "Friends of Tina Kotek",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 588716.62,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "Reardon for Oregon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 66083.72,
+    "expenditures": null
+   },
+   {
+    "name": "Crawley for Oregon",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 12,
+    "expenditures": null
+   }
+  ],
+  "53": [
+   {
+    "name": "Committee to Elect Gene Whisnant",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 83984.23,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "9": [
+   {
+    "name": "Friends of Fred Girod",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 122202.3,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Boquist Leadership Fund",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 257916.15,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Kathleen Taylor for Oregon",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 90905.85,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Friends of Lew Frederick",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 94190.49,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Tim Knopp for State Senate",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 468257.76,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Committee to Elect Dennis Linthicum",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 73824.23,
+    "expenditures": null
+   }
+  ]
+ }
+}

@@ -84,7 +84,7 @@ def fetch(cycle):
         if not m:
             continue
         out.append({"name": names[cid], "committee": cid, "chamber": "house" if m.group(2) == "Representative" else "senate", "district": m.group(1),
-                    "contributions": round(total.get(cid, 0.0), 2)})
+                    "contributions": (round(total[cid], 2) if cid in total else None)})
     body = {"state": "DE", "cycle": cycle, "source": SOURCE, "fetched": TODAY.isoformat(),
             "dataThrough": TODAY.strftime("%m/%d/%Y") if cycle >= TODAY.year else f"12/31/{cycle}", "candidates": out}
     os.makedirs(OUT_DIR, exist_ok=True)

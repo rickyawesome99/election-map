@@ -87,8 +87,12 @@ async function exportTx(ctx, id, cycle) {
     await Promise.all([p.waitForNavigation({ waitUntil: "networkidle", timeout: 180000 }), p.click("input[name=search] >> nth=0")]);
     fs.mkdirSync(path.dirname(file), { recursive: true });
     if (!(await p.$('a:has-text("Export To Excel Format")'))) {
-      fs.writeFileSync(file, ""); // no transactions in the window
-      return;
+      // Only a results page that says so is "no transactions"; anything else (a lapsed session, the
+      // F5 challenge again) must not be cached as $0.
+      const body = await p.innerText("body");
+      if (/\b0 records found|No records found/i.test(body)) { fs.writeFileSync(file, ""); return; }
+      if (/request has been blocked/i.test(body)) { await sleep(600000); throw new Error("blocked (403): waited 10 min"); }
+      throw new Error("no export link and no 'no records' message");
     }
     const [dl] = await Promise.all([p.waitForEvent("download", { timeout: 180000 }), p.click('a:has-text("Export To Excel Format") >> nth=0')]);
     await dl.saveAs(file);
@@ -101,8 +105,9 @@ async function exportTx(ctx, id, cycle) {
   const pool = JSON.parse(fs.readFileSync(process.argv[2], "utf8"));
   const cycles = process.argv.slice(3).map(Number);
   const b = await chromium.launch({ headless: true, channel: "chromium" });
-  const ctx = await b.newContext({ acceptDownloads: true, userAgent: UA });
+  let ctx = await b.newContext({ acceptDownloads: true, userAgent: UA });
   const comms = await committees(ctx);
+  let used = 0;
   console.log(`OR: ${comms.length} legislative candidate committees`);
   for (const cycle of cycles.length ? cycles : [2016, 2018, 2020, 2022, 2024, 2026]) {
     const names = new Set(pool.filter((c) => c.year === cycle).map((c) => surname(c.name)));
@@ -110,9 +115,16 @@ async function exportTx(ctx, id, cycle) {
     console.log(`OR ${cycle}: ${todo.length} committees to export`);
     for (const [i, c] of todo.entries()) {
       for (let attempt = 0; attempt < 3; attempt++) {
-        try { await exportTx(ctx, c.id, cycle); break; } catch (e) { console.log(`  retry ${c.id} ${cycle}: ${e.message.split("\n")[0]}`); await sleep(15000); }
+        // A long-lived session stops returning results: a fresh context every 25 exports and on any failure.
+        if (used++ >= 25) { await ctx.close(); ctx = await b.newContext({ acceptDownloads: true, userAgent: UA }); used = 0; }
+        try { await exportTx(ctx, c.id, cycle); break; } catch (e) {
+          console.log(`  retry ${c.id} ${cycle}: ${e.message.split("\n")[0]}`);
+          await ctx.close(); ctx = await b.newContext({ acceptDownloads: true, userAgent: UA }); used = 0;
+          await sleep(15000);
+        }
       }
       if (i % 25 === 0) console.log(`OR ${cycle}: ${i}/${todo.length}`);
+      await sleep(10000); // ORESTAR answers 403 "request blocked" after a few hundred quick searches
     }
   }
   await b.close();
