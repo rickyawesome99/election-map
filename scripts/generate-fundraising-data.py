@@ -16,9 +16,14 @@ Also emits fundraisingSources: a short, display-ready source label per CYCLE_YEA
 race, for the Fundraising section on the race detail pages. Only the current
 cycle is emitted — nothing displays the source of a historical row.
 
+Also emits fundraisingDetails from data-entry/fundraising_details_2026.csv (written by
+scripts/fetch-fec-race-finance.py): per-nominee cash on hand, spending, outside spending
+and small-dollar share for the live cycle's House/Senate races. Display only — the
+forecast reads receipts alone.
+
 Run from project root: python3 scripts/generate-fundraising-data.py
 """
-import csv, os
+import csv, json, os
 
 CYCLE_YEAR = "2026"
 
@@ -39,6 +44,7 @@ def source_label(raw):
     return raw
 
 SRC = os.path.join(os.path.dirname(__file__), "../data-entry/fundraising_2016_2026.csv")
+DETAILS = os.path.join(os.path.dirname(__file__), "../data-entry/fundraising_details_2026.csv")
 DST = os.path.join(os.path.dirname(__file__), "../data/fundraisingData.ts")
 
 def num(v):
@@ -79,5 +85,35 @@ with open(DST, "w") as f:
     f.write("export const fundraisingSources: Record<string, string> = {\n")
     for key, label in sources:
         f.write(f'  "{key}": "{label}",\n')
+    f.write("};\n")
+
+    # ── Live-cycle detail (FEC House/Senate nominees) ──
+    details = {}
+    if os.path.exists(DETAILS):
+        with open(DETAILS) as df:
+            for r in csv.DictReader(df):
+                if r["office"] == "H":
+                    key = f'H:{r["race"]}:{CYCLE_YEAR}'
+                else:
+                    key = f'S:{r["state"]}:{CYCLE_YEAR}:{"Special" if r["election_type"] == "Special" else "Regular"}'
+                indiv, unitem = num(r["indiv_contrib"]), num(r["indiv_unitemized"])
+                side = {
+                    "cashOnHand": num(r["cash_on_hand"]),
+                    "spent": num(r["disbursements"]),
+                    "smallDollarShare": round(unitem / indiv, 3) if indiv and unitem is not None and indiv > 0 else None,
+                    "ieFor": num(r["ie_for"]) or 0,
+                    "ieAgainst": num(r["ie_against"]) or 0,
+                    "coverageEnd": r["coverage_end"] or None,
+                }
+                d = details.setdefault(key, {"ieThrough": r["ie_through"] or None})
+                d["dem" if r["party"] == "D" else "rep"] = side
+    f.write("\n// Live-cycle detail per nominee (FEC): cash on hand at the latest report, total disbursements,\n")
+    f.write("// unitemized ÷ individual contributions, and independent expenditures supporting (ieFor) /\n")
+    f.write("// opposing (ieAgainst) the candidate from the 24/48-hour reports. Display only.\n")
+    f.write("export interface CandidateFinanceDetail {\n  cashOnHand: number | null;\n  spent: number | null;\n  smallDollarShare: number | null;\n  ieFor: number;\n  ieAgainst: number;\n  coverageEnd: string | null;\n}\n")
+    f.write("export interface RaceFinanceDetail {\n  dem?: CandidateFinanceDetail;\n  rep?: CandidateFinanceDetail;\n  ieThrough: string | null;\n}\n")
+    f.write("export const fundraisingDetails: Record<string, RaceFinanceDetail> = {\n")
+    for key in sorted(details):
+        f.write(f'  "{key}": {json.dumps(details[key], separators=(",", ":"), ensure_ascii=False)},\n')
     f.write("};\n")
 print(f"wrote {len(entries)} entries and {len(sources)} source labels to {DST}")

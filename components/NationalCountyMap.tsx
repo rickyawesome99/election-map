@@ -1,6 +1,8 @@
 "use client";
 
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import { countyDisplayName } from "@/lib/countyName";
+import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import type { Theme } from "./ForecastMap";
@@ -11,7 +13,7 @@ import {
   type MapLevel, type MapOffice, type MapSlice, type NormalizedResult,
 } from "@/lib/mapSliceTypes";
 import { useStaticJson } from "@/lib/useStaticJson";
-import { getRaceColor, marginToRating, getRatingColors } from "@/lib/colorScale";
+import { getRaceColor } from "@/lib/colorScale";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { normalizeGeographyWinding, type WindableGeography } from "@/lib/geoWinding";
@@ -97,12 +99,6 @@ type DistrictGeoFeature = WindableGeography & {
 // every render, i.e. on every hover.
 const parseDistrictGeographies = (geographies: DistrictGeoFeature[]) => geographies.map(normalizeGeographyWinding);
 
-function getAreaLabel(abbr: string): string {
-  if (abbr === "LA") return "Parish";
-  if (abbr === "AK") return "Borough";
-  return "County";
-}
-
 function marginLabel(margin: number): string {
   return margin <= 0 ? `D+${Math.abs(margin).toFixed(1)}` : `R+${margin.toFixed(1)}`;
 }
@@ -128,52 +124,6 @@ const StateOutlines = memo(function StateOutlines({ t }: { t: Theme }) {
     </Geographies>
   );
 });
-
-/** Dem/Rep rows + votes line (or a no-data message). Margin itself is rendered by the
- * caller, since the hover tooltip and selected panel put it in different spots. */
-function ResultDetails({
-  sel, isPresident, raceLabel, year, t, showVotesInRows,
-}: {
-  sel: Selection; isPresident: boolean; raceLabel: string; year: number; t: Theme; showVotesInRows: boolean;
-}) {
-  const { result, hasElection } = sel;
-  if (!result) {
-    const msg = isPresident ? `No ${year} data` : hasElection ? `${raceLabel} data coming soon` : `No ${raceLabel} election in ${year}`;
-    return <div className="text-[9px]" style={{ color: t.textVeryMuted }}>{msg}</div>;
-  }
-  const votesKnown = result.votesKnown !== false;
-  // A same-party race (see SAME_PARTY_STATEWIDE_RACES / applyHouseSamePartyResult) means
-  // one slot's candidate is actually the OTHER party — that row keeps its own real vote
-  // count (never merged into the other row), but reads/colors as its true party instead,
-  // matching how /senate/ca colors/labels both Feinstein and de León blue.
-  const demColor = result.demIsRep ? t.repText : t.demText;
-  const demLabel = result.demIsRep ? "Rep" : "Dem";
-  const repColor = result.repIsDem ? t.demText : t.repText;
-  const repLabel = result.repIsDem ? "Dem" : "Rep";
-  return (
-    <>
-      <div>
-        <div className="flex justify-between items-baseline">
-          <span style={{ color: demColor, fontSize: 10 }}>{demLabel}</span>
-          <span className="font-semibold" style={{ color: demColor, fontSize: 10 }}>
-            {showVotesInRows && votesKnown ? `${result.demVotes.toLocaleString()} · ` : ""}{result.demPct.toFixed(1)}%
-          </span>
-        </div>
-        <div className="flex justify-between items-baseline">
-          <span style={{ color: repColor, fontSize: 10 }}>{repLabel}</span>
-          <span className="font-semibold" style={{ color: repColor, fontSize: 10 }}>
-            {showVotesInRows && votesKnown ? `${result.repVotes.toLocaleString()} · ` : ""}{result.repPct.toFixed(1)}%
-          </span>
-        </div>
-      </div>
-      <div className="mt-0.5 text-[9px]" style={{ color: votesKnown ? t.textMuted : t.textVeryMuted }}>
-        {votesKnown
-          ? `${result.totalVotes.toLocaleString()} ${showVotesInRows ? "total " : ""}votes (${year})`
-          : `Uncontested — vote count not available (${year})`}
-      </div>
-    </>
-  );
-}
 
 // ── Memoized geography layer ─────────────────────────────────────────────────
 // One <Geography> per feature, rendered through React.memo so that the parent's hover /
@@ -240,7 +190,7 @@ const GeoLayer = memo(function GeoLayer({
           hasElection = hasElectionInState(raceType, year, stateInfo?.abbr ?? "", specialOnly);
           sel = {
             key,
-            title: `${(geo as GeoFeature).properties?.name ?? ""} ${getAreaLabel(stateInfo?.abbr ?? "")}`,
+            title: countyDisplayName(key, (geo as GeoFeature).properties?.name ?? ""),
             subtitle: `${stateInfo?.name ?? ""} · FIPS ${key}`,
             hasElection,
             result,
@@ -386,6 +336,31 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   const onSelect = useCallback((sel: Selection) => setSelected((cur) => (cur?.key === sel.key ? null : sel)), []);
   const selectedKey = selected?.key ?? null;
 
+  // One description of the hovered/selected area, drawn as the hover popup and as the panels.
+  const card = (sel: Selection): CountyTooltipProps => {
+    const base = { title: sel.title, subtitle: sel.subtitle || undefined };
+    const r = sel.result;
+    if (!r) {
+      const msg = isPresident ? `No ${year} data` : sel.hasElection ? `${raceLabel} data coming soon` : `No ${raceLabel} election in ${year}`;
+      return { ...base, kind: "message", message: msg };
+    }
+    // A same-party race (SAME_PARTY_STATEWIDE_RACES / applyHouseSamePartyResult) puts the other
+    // party's candidate in one slot: that row reads and colours as its true party.
+    const demParty = r.demIsRep ? "R" : "D";
+    const repParty = r.repIsDem ? "D" : "R";
+    const partyWord = (p: "D" | "R") => (p === "D" ? "Democrat" : "Republican");
+    if (r.votesKnown === false || r.totalVotes === 0) {
+      const winner = r.margin > 0 ? repParty : demParty;
+      return { ...base, kind: "message", headline: { text: "Uncontested", party: winner }, message: `The ${partyWord(winner)} ran unopposed in ${year}, so no vote count was reported.` };
+    }
+    return {
+      ...base, kind: "result",
+      dem: { name: partyWord(demParty), party: demParty, pct: r.demPct, votes: r.demVotes },
+      rep: { name: partyWord(repParty), party: repParty, pct: r.repPct, votes: r.repVotes },
+      margin: r.margin, totalVotes: r.totalVotes,
+    };
+  };
+
   return (
     <div className="flex w-full flex-col gap-3">
 
@@ -519,36 +494,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         onMouseMove={tip.onMouseMove}
       >
         {/* Hover tooltip */}
-        {hovered && (() => {
-          const tipW = hovered.result ? 168 : 180;
-          return (
-            <div ref={tip.tooltipRef}
-              className="hidden md:block absolute z-20 pointer-events-none rounded-lg"
-              style={{
-                width: tipW,
-                padding: "6px 8px",
-                background: t.panel,
-                border: `1px solid ${t.border}`,
-                boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
-              }}
-            >
-              <div className="flex items-start justify-between gap-1">
-                <span className="font-bold text-[11px]">{hovered.title}</span>
-                {hovered.result && (
-                  <span className="font-bold shrink-0" style={{ fontSize: 15, color: hovered.result.margin <= 0 ? t.demText : t.repText }}>
-                    {marginLabel(hovered.result.margin)}
-                  </span>
-                )}
-              </div>
-              {hovered.subtitle && (
-                <div className="text-[9px] mt-0.5" style={{ color: t.textMuted }}>{hovered.subtitle}</div>
-              )}
-              <div className="mt-1">
-                <ResultDetails sel={hovered} isPresident={isPresident} raceLabel={raceLabel} year={year} t={t} showVotesInRows={false} />
-              </div>
-            </div>
-          );
-        })()}
+        {hovered && <CountyTooltip {...card(hovered)} boxRef={tip.tooltipRef} className="absolute z-20 hidden md:block" />}
 
         <ComposableMap
           width={975}
@@ -744,45 +690,15 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         {/* ── Desktop floating selected panel (bottom-right) ── */}
         {selected && (
           <div
-            className="hidden md:block absolute z-20 rounded-xl p-2.5 backdrop-blur-sm"
-            style={{ bottom: "1rem", right: "1rem", width: 220, background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 12px 28px rgba(0,0,0,0.25)" }}
+            className="hidden md:block absolute z-20 rounded-xl backdrop-blur-sm"
+            style={{ bottom: "1rem", right: "1rem", width: 228, padding: "10px 12px", background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 12px 28px rgba(0,0,0,0.25)" }}
           >
-            <div className="mb-1.5 flex items-start justify-between gap-2 pb-1.5" style={{ borderBottom: `1px solid ${t.border}` }}>
-              <div className="min-w-0">
-                <div className="truncate text-sm font-bold leading-tight" style={{ color: t.textPrimary }}>{selected.title}</div>
-                {selected.subtitle && <div className="mt-0.5 truncate text-[10px]" style={{ color: t.textMuted }}>{selected.subtitle}</div>}
-              </div>
-              <div className="flex shrink-0 items-center gap-1.5">
-                {selected.result && (() => {
-                  const rating = marginToRating(selected.result.margin);
-                  const { bg, text } = getRatingColors(rating);
-                  return (
-                    <span className="rounded-full px-1.5 py-0.5 text-[9px] font-bold" style={{ background: bg, color: text }}>
-                      {rating}
-                    </span>
-                  );
-                })()}
-                <button onClick={() => setSelected(null)} aria-label="Close selection" style={{ color: t.textVeryMuted }}>
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            {selected.result && (
-              <div className="mb-1 text-lg font-extrabold leading-tight" style={{ fontFamily: "var(--font-serif)", color: selected.result.margin <= 0 ? t.demText : t.repText }}>
-                {marginLabel(selected.result.margin)}
-              </div>
-            )}
-            <ResultDetails sel={selected} isPresident={isPresident} raceLabel={raceLabel} year={year} t={t} showVotesInRows />
-            {selected.moreInfoHref && (
-              <a href={selected.moreInfoHref} className="mt-1.5 inline-flex items-center gap-1 text-[10px] font-bold" style={{ color: t.textPrimary }}>
-                More Info
-                <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            )}
+            <CountyTooltip
+              {...card(selected)}
+              variant="card"
+              aside={<CountyCardClose onClick={() => setSelected(null)} label="Close selection" />}
+              footer={selected.moreInfoHref ? <CountyCardLink href={selected.moreInfoHref}>More info →</CountyCardLink> : undefined}
+            />
           </div>
         )}
       </div>
@@ -800,35 +716,12 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
       {/* ── Mobile selected geography (compact) ── */}
       {selected && (
         <div className="md:hidden">
-          <div className="flex items-start justify-between gap-2">
-            <div className="min-w-0">
-              <div className="truncate text-[13px] font-bold leading-tight" style={{ color: t.textPrimary }}>{selected.title}</div>
-              {selected.subtitle && <div className="mt-0.5 truncate text-[9px]" style={{ color: t.textMuted }}>{selected.subtitle}</div>}
-            </div>
-            <div className="flex shrink-0 items-center gap-1.5">
-              {selected.result && (
-                <span className="text-sm font-bold" style={{ fontFamily: "var(--font-serif)", color: selected.result.margin <= 0 ? t.demText : t.repText }}>
-                  {marginLabel(selected.result.margin)}
-                </span>
-              )}
-              <button onClick={() => setSelected(null)} className="-m-1 p-1" style={{ color: t.textVeryMuted }} aria-label="Close selection">
-                <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div className="mt-1.5">
-            <ResultDetails sel={selected} isPresident={isPresident} raceLabel={raceLabel} year={year} t={t} showVotesInRows={false} />
-          </div>
-          {selected.moreInfoHref && (
-            <a href={selected.moreInfoHref} className="mt-1.5 inline-flex items-center gap-1 text-[10px] font-bold" style={{ color: t.textPrimary }}>
-              More Info
-              <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          )}
+          <CountyTooltip
+            {...card(selected)}
+            variant="panel"
+            aside={<CountyCardClose onClick={() => setSelected(null)} label="Close selection" />}
+            footer={selected.moreInfoHref ? <CountyCardLink href={selected.moreInfoHref}>More info →</CountyCardLink> : undefined}
+          />
         </div>
       )}
 

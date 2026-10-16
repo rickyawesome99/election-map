@@ -57,6 +57,7 @@ export default function StateCountiesSection({
   };
   const [sort, setSort] = useState<{ key: SortKey; dir: 1 | -1 }>({ key: "votes2024", dir: -1 });
   const layer = layers.find((l) => l.key === activeLayer) ?? null;
+  const countyVotes = useMemo(() => Object.fromEntries(rows.map((r) => [r.fips, r.votes2024])), [rows]);
 
   const sorted = useMemo(() => {
     const list = [...rows];
@@ -137,7 +138,7 @@ export default function StateCountiesSection({
               caption={layer.caption ? <div className="px-1 pt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>{layer.caption}</div> : undefined}
             />
           ) : (
-            <StateCountyMap stateAbbr={stateAbbr} stateName={stateName} showTpl showLabel={false} countyTpl={countyTpl} height={340} reservePanel />
+            <StateCountyMap stateAbbr={stateAbbr} stateName={stateName} showTpl showLabel={false} countyTpl={countyTpl} countyVotes={countyVotes} height={340} reservePanel />
           )}
         </div>
 

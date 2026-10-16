@@ -21,7 +21,8 @@ const fmtProb = (p: number | null) => (p == null ? "—" : p < 0.005 ? "<1%" : p
 const fmtMargin = (m: number) => `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`;
 const marginColor = (m: number) => (m <= 0 ? "var(--party-dem)" : "var(--party-rep)");
 const partyColor = (p: string) => (p === "D" ? "var(--party-dem)" : p === "R" ? "var(--party-rep)" : "var(--party-ind)");
-const partyWord = (p: string) => (p === "D" ? "Dem" : p === "R" ? "Rep" : "Ind");
+// One party/incumbency tag everywhere on the page: (D), (R), (D Inc), (R Inc).
+const partyTag = (p: string, incumbent?: boolean) => `(${p}${incumbent ? " Inc" : ""})`;
 
 function SectionHead({ id, title, right, children }: { id?: string; title: string; right?: ReactNode; children?: ReactNode }) {
   return (
@@ -83,7 +84,7 @@ function RaceRow({ race }: { race: BallotRace }) {
                   <CandidateLink name={c.name} className="relative pointer-events-auto truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: partyColor(c.party) }}>
                     {c.name}
                   </CandidateLink>
-                  <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({c.party}{c.incumbent ? ", inc." : ""})</span>
+                  <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{partyTag(c.party, c.incumbent)}</span>
                 </div>
               ))}
             </div>
@@ -93,7 +94,7 @@ function RaceRow({ race }: { race: BallotRace }) {
         </div>
         <div className="shrink-0 text-right">
           <div className="tabular-nums font-extrabold" style={{ fontSize: "1.75rem", lineHeight: 1, color: marginColor(race.margin) }}>{fmtMargin(race.margin)}</div>
-          <div className="text-xs font-bold mt-1.5" style={{ color: "var(--app-text-muted)" }}>{race.rating}</div>
+          <div className="mt-2 flex justify-end"><RatingPill rating={race.rating} /></div>
         </div>
       </div>
     </div>
@@ -109,7 +110,7 @@ function HoldoverRow({ seat }: { seat: BallotHoldover }) {
           <div className="text-[11px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>{seat.label}</div>
           <div className="flex items-baseline gap-2 min-w-0">
             <span className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: partyColor(seat.party) }}>{seat.name}</span>
-            <span className="text-xs font-semibold shrink-0" style={{ color: "var(--app-text-muted)" }}>({partyWord(seat.party)})</span>
+            <span className="text-xs font-semibold shrink-0" style={{ color: "var(--app-text-very-muted)" }}>{partyTag(seat.party, true)}</span>
           </div>
         </div>
         <div className="shrink-0 text-right text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>
@@ -132,7 +133,7 @@ function SenateHoldoverLine({ seats }: { seats: BallotHoldover[] }) {
             {seats.map((s) => (
               <span key={s.href} className="flex items-baseline gap-1.5">
                 <a href={s.href} className="hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.05rem", fontWeight: 700, color: partyColor(s.party) }}>{s.name}</a>
-                <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>({s.party}) · next {s.nextElection}</span>
+                <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{partyTag(s.party, true)} · next {s.nextElection}</span>
               </span>
             ))}
           </div>
@@ -168,21 +169,15 @@ function HouseRowButton({ row, active, onSelect }: { row: HouseRow; active: bool
   );
 }
 
-function ChamberBlockCard({ block, active, onSelect, electionYear }: { block: ChamberBlock; active: boolean; onSelect: () => void; electionYear: number }) {
+function ChamberBlockCard({ block, electionYear }: { block: ChamberBlock; electionYear: number }) {
   const hasProj = block.expectedDem != null && block.expectedRep != null && block.projTotal;
   return (
     <div
-      role="button"
-      tabIndex={0}
-      onClick={onSelect}
-      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelect(); } }}
-      aria-current={active}
-      className="min-w-0 cursor-pointer py-4 pl-2.5 pr-1"
-      style={{ borderBottom: "1px solid var(--app-border)", borderLeft: `2px solid ${active ? "var(--app-text-primary)" : "transparent"}`, background: active ? "var(--app-tab-bg)" : undefined }}
+      className="min-w-0 py-4 pl-2.5 pr-1"
+      style={{ borderBottom: "1px solid var(--app-border)", borderLeft: "2px solid transparent" }}
     >
       <div className="text-[11px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
         {block.label}{block.upText ? ` · ${block.upText}` : block.totalSeats ? ` · ${block.totalSeats} seats` : ""}
-        {active && <span className="ml-2 text-[9px] font-bold" style={{ color: "var(--app-text-muted)" }}>On map</span>}
       </div>
       {hasProj ? (
         <>
@@ -210,7 +205,7 @@ function ChamberBlockCard({ block, active, onSelect, electionYear }: { block: Ch
       ) : (
         <div className="mt-2 text-base font-bold" style={{ color: "var(--app-text-muted)" }}>Not on the {electionYear} ballot</div>
       )}
-      <Link href={block.exploreHref} onClick={(e) => e.stopPropagation()} className="mt-2.5 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>
+      <Link href={block.exploreHref} className="mt-2.5 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>
         Explore {block.map.roster.length} districts →
       </Link>
     </div>
@@ -269,9 +264,8 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
 
   const senateHoldovers = data.senate.filter((s): s is BallotHoldover => s.kind === "holdover");
   const senateRaces = data.senate.filter((s): s is BallotRace => s.kind === "race");
-  const houseYears = useMemo(() => layerYears("house", housePastResults, houseRaces, chamberData), [housePastResults, houseRaces, chamberData]);
   const officeTabs: { key: ResultsOffice; label: string; right?: string }[] = [
-    { key: "statewide", label: "Statewide", right: "by county, below" },
+    { key: "statewide", label: "Statewide" },
     ...(results.federal.length ? [{ key: "federal" as const, label: "U.S. House", right: houseRaces.length ? `${houseRaces.length} seats` : undefined }] : []),
     ...(results.stateHouse.length ? [{ key: "stateHouse" as const, label: results.isUnicameral ? "Legislature" : "State House", right: blockOf("house")?.totalSeats ? `${blockOf("house")!.totalSeats} seats` : undefined }] : []),
     ...(!results.isUnicameral && results.stateSenate.length ? [{ key: "stateSenate" as const, label: "State Senate", right: blockOf("senate")?.totalSeats ? `${blockOf("senate")!.totalSeats} seats` : undefined }] : []),
@@ -352,9 +346,12 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                     <div className="flex flex-col gap-0.5">
                       {[r.candidates.dem, r.candidates.rep].map((c, i) => (
                         <div key={c.name + i} className="flex items-baseline justify-between gap-2">
-                          <CandidateLink name={c.name} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
-                            {c.name}{c.incumbent ? " (Inc.)" : ""}
-                          </CandidateLink>
+                          <span className="flex min-w-0 items-baseline gap-2">
+                            <CandidateLink name={c.name} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
+                              {c.name}
+                            </CandidateLink>
+                            <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{partyTag(c.party, c.incumbent)}</span>
+                          </span>
                           <span className="shrink-0 text-sm font-bold tabular-nums" style={{ color: partyColor(c.party) }}>{(i === 0 ? demPct : 100 - demPct).toFixed(1)}%</span>
                         </div>
                       ))}
@@ -383,7 +380,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                     {(legDistrict.incumbents ?? []).map((inc) => (
                       <div key={inc.name} className="flex items-baseline gap-2">
                         <CandidateLink name={inc.name} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(inc.party) }}>{inc.name}</CandidateLink>
-                        <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({inc.party})</span>
+                        <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{partyTag(inc.party, true)}</span>
                       </div>
                     ))}
                   </div>
@@ -444,10 +441,10 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
 
             {chambers.length > 0 && (
               <>
-                <SubHead id="legislature" right="click a chamber to see it on the map">State Legislature</SubHead>
+                <SubHead id="legislature">State Legislature</SubHead>
                 <div className={`grid grid-cols-1 gap-x-6 ${chambers.length > 1 ? "lg:grid-cols-2" : ""}`}>
                   {chambers.map((c) => (
-                    <ChamberBlockCard key={c.chamber} block={c} electionYear={electionYear} active={layer === layerOf(c.chamber)} onSelect={() => show(layerOf(c.chamber))} />
+                    <ChamberBlockCard key={c.chamber} block={c} electionYear={electionYear} />
                   ))}
                 </div>
               </>
@@ -459,7 +456,6 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
       <section id="results" className="mt-10">
         <SectionHead title="Results since 2016" right={
           <span className="flex items-center gap-3">
-            <span className="hidden sm:inline">pick a year to put it on the map</span>
             <span className="flex items-center gap-2">
               {(["cards", "graph"] as const).map((v) => (
                 <button key={v} type="button" onClick={() => setResultsView(v)} className="text-xs font-semibold" style={{ color: resultsView === v ? "var(--app-text-primary)" : "var(--app-text-muted)", textDecoration: resultsView === v ? "underline" : "none", textUnderlineOffset: 3 }}>
@@ -496,12 +492,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
             {officeTab.key === "statewide" && (
               <div className="grid grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
                 {results.statewide.map((entry) => (
-                  <ResultCard
-                    key={entry.key}
-                    entry={entry}
-                    active={entry.countyLayer != null && countyLayer === entry.countyLayer}
-                    onSelect={entry.countyLayer ? () => setCountyLayer(entry.countyLayer!) : undefined}
-                  />
+                  <ResultCard key={entry.key} entry={entry} />
                 ))}
               </div>
             )}
@@ -511,9 +502,6 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                 federalEntries={results.federal}
                 houseEntries={[]}
                 senateEntries={[]}
-                activeYear={layer === "house" ? activeYear : null}
-                selectableYears={houseYears}
-                onSelectYear={(y) => show("house", y)}
                 newMapYears={results.newMapYears.federal}
               />
             )}
@@ -525,14 +513,9 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                 federalEntries={[]}
                 houseEntries={results.stateHouse}
                 senateEntries={results.stateSenate}
-                activeYear={layer === "stateHouse" ? activeYear : null}
-                selectableYears={chamberData.house?.electionYears ?? []}
-                onSelectYear={(y) => show("stateHouse", y)}
                 majorityInfo={results.majority.house ?? null}
                 seatsUpByYear={results.seatsUpByYear.house ?? null}
                 upcoming={results.upcoming.house ?? null}
-                upcomingActive={layer === "stateHouse" && activeYear === electionYear}
-                onSelectUpcoming={() => show("stateHouse")}
                 newMapYears={results.newMapYears.house}
               />
             )}
@@ -543,14 +526,9 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                 federalEntries={[]}
                 houseEntries={results.stateHouse}
                 senateEntries={results.stateSenate}
-                activeYear={layer === "stateSenate" ? activeYear : null}
-                selectableYears={chamberData.senate?.electionYears ?? []}
-                onSelectYear={(y) => show("stateSenate", y)}
                 majorityInfo={results.majority.senate ?? null}
                 seatsUpByYear={results.seatsUpByYear.senate ?? null}
                 upcoming={results.upcoming.senate ?? null}
-                upcomingActive={layer === "stateSenate" && activeYear === electionYear}
-                onSelectUpcoming={() => show("stateSenate")}
                 newMapYears={results.newMapYears.senate}
               />
             )}

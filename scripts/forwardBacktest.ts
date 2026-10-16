@@ -1052,12 +1052,14 @@ if (EMIT) {
 
 if (DUMP) {
   const file = path.join(os.tmpdir(), "forwardBacktest_predictions.csv");
-  const lines = ["year,office,race,actual,lean,beta,E_struct,inc,ff,quality,pred,resid"];
+  // money = the live money term inside pred; gap / sg = receipts gap % and structural gap % behind it.
+  const lines = ["year,office,race,actual,lean,beta,E_struct,inc,ff,quality,pred,resid,money,gap,sg,inc_sign"];
   for (const Y of YEARS) {
     const E = envEstimate("struct", Y) ?? 0;
     for (const x of predsByYear.get(Y)!) {
       const pred = predOf(x, E);
-      lines.push([Y, x.office, x.key, x.actual.toFixed(2), x.lean.toFixed(2), x.beta.toFixed(3), E.toFixed(2), x.inc.toFixed(2), x.ff.toFixed(2), x.quality.toFixed(2), pred.toFixed(2), (x.actual - pred).toFixed(2)].join(","));
+      lines.push([Y, x.office, x.key, x.actual.toFixed(2), x.lean.toFixed(2), x.beta.toFixed(3), E.toFixed(2), x.inc.toFixed(2), x.ff.toFixed(2), x.quality.toFixed(2), pred.toFixed(2), (x.actual - pred).toFixed(2),
+        ffOf(x, E).toFixed(2), x.gap == null ? "" : x.gap.toFixed(2), sgOf(x, E)?.toFixed(2) ?? "", x.incSign].join(","));
     }
   }
   fs.writeFileSync(file, lines.join("\n"));

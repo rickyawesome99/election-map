@@ -1,6 +1,9 @@
 "use client";
 
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import { filterMapZoomEvent } from "@/lib/mapZoom";
+import { countyDisplayName } from "@/lib/countyName";
+import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
 import { useState, useRef, useEffect, useCallback } from "react";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { getRaceColor } from "@/lib/colorScale";
@@ -10,13 +13,6 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 // a state page only fetches its own counties instead of every state's (previously 3.0 MB
 // national file on every load).
 const countiesUrl = (stateAbbr: string) => `/state-counties/${stateAbbr}.json`;
-
-// Parish in Louisiana, Borough in Alaska, everything else is County
-function getAreaLabel(abbr: string): string {
-  if (abbr === "LA") return "Parish";
-  if (abbr === "AK") return "Borough";
-  return "County";
-}
 
 // Same projection table as StateDistrictMap
 const STATE_PROJ: Record<string, [number, number, number]> = {
@@ -45,18 +41,6 @@ type County = {
   tpl: number | null;
 };
 
-function formatTplValue(tpl: number | null): string {
-  if (tpl == null) return "unavailable";
-  if (Math.abs(tpl) < 0.05) return "EVEN";
-  return `${tpl > 0 ? "R" : "D"}+${Math.abs(tpl).toFixed(1)}`;
-}
-
-function tplColor(tpl: number | null): string {
-  if (tpl == null) return "var(--app-text-very-muted)";
-  if (Math.abs(tpl) < 0.05) return "var(--app-text-primary)";
-  return tpl > 0 ? "var(--party-rep)" : "var(--party-dem)";
-}
-
 type CountyGeometry = {
   rsmKey: string;
   id?: string | number;
@@ -73,6 +57,7 @@ export default function StateCountyMap({
   showTpl = false,
   showLabel = true,
   countyTpl,
+  countyVotes,
   reservePanel = false,
 }: {
   stateAbbr: string;
@@ -83,12 +68,16 @@ export default function StateCountyMap({
   showLabel?: boolean;
   /** fips → county TPL, from lib/countyTpl.ts on the server; required when showTpl is on. */
   countyTpl?: Record<string, number | null>;
+  /** fips → the county's 2024 presidential ballots, shown beside the TPL in the hover popup. */
+  countyVotes?: Record<string, number | null>;
   /** Keep the selected-county panel's space even when nothing is selected (an invisible stand-in). */
   reservePanel?: boolean;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelected] = useState<County | null>(null);
-  const panel: County | null = selected ?? (reservePanel ? { fips: "00000", name: stateName, tpl: 0 } : null);
+  // With reservePanel an invisible stand-in holds the panel's space, stacked in the same grid
+  // cell as the real panel so a selection can grow the space but never shrink it.
+  const standIn: County | null = reservePanel ? { fips: "00000", name: stateName, tpl: 0 } : null;
   const tip = useMapTooltip(12, 8);
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -119,12 +108,18 @@ export default function StateCountyMap({
   }, [measure]);
 
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
-  const areaLabel = getAreaLabel(stateAbbr);
 
   const mapStroke = "var(--app-bg)";
   const hoverStroke = "var(--app-text-primary)";
   const defaultFill = "var(--map-unfilled)";
   const highlightFill = "#eab308";
+
+  // One description of a county, drawn as the hover popup and as the click panel. Without the
+  // TPL layer (the county page's locator map) it is just the name and FIPS.
+  const card = (c: County): CountyTooltipProps => {
+    const base = { title: countyDisplayName(c.fips, c.name), subtitle: `${stateName} · FIPS ${c.fips}` };
+    return showTpl ? { ...base, kind: "tpl", tpl: c.tpl, votes: countyVotes?.[c.fips] ?? null } : { ...base, kind: "message" };
+  };
 
   return (
     <div>
@@ -135,39 +130,7 @@ export default function StateCountyMap({
         onMouseMove={tip.onMouseMove}
       >
         {/* Hover tooltip */}
-        {hovered && (() => {
-          const tipW = 150;
-          return (
-            <div ref={tip.tooltipRef}
-              className="absolute z-20 hidden pointer-events-none rounded-lg md:block"
-              style={{
-                width: tipW,
-                padding: "8px 10px",
-                background: "var(--app-panel)",
-                border: "1px solid var(--app-border)",
-                boxShadow: "0 4px 16px rgba(0,0,0,0.2)",
-              }}
-            >
-              <div className="font-bold text-xs" style={{ color: "var(--app-text-primary)" }}>
-                {hovered.name} {areaLabel}
-              </div>
-              <div className="text-[10px] mt-0.5" style={{ color: "var(--app-text-muted)" }}>
-                {stateName} · {hovered.fips}
-              </div>
-              {showTpl && (
-                <div className="text-[10px] mt-0.5 font-semibold" style={{ color: "var(--app-text-primary)" }}>
-                  {hovered.tpl == null ? (
-                    <span style={{ color: "var(--app-text-very-muted)" }}>TPL unavailable</span>
-                  ) : (
-                    <>
-                      TPL: <span style={{ color: tplColor(hovered.tpl) }}>{formatTplValue(hovered.tpl)}</span>
-                    </>
-                  )}
-                </div>
-              )}
-            </div>
-          );
-        })()}
+        {hovered && <CountyTooltip {...card(hovered)} boxRef={tip.tooltipRef} className="absolute z-20 hidden md:block" />}
 
         <ComposableMap
           width={mapViewport.width}
@@ -176,7 +139,7 @@ export default function StateCountyMap({
           projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
           style={{ width: "100%", height: "100%" }}
         >
-          <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
+          <ZoomableGroup key={mapKey} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
           <Geographies geography={countiesUrl(stateAbbr)}>
             {({ geographies }: { geographies: CountyGeometry[] }) =>
               geographies
@@ -254,48 +217,22 @@ export default function StateCountyMap({
       </div>
 
       {/* Selected county info panel */}
-      {panel && (
+      {(selected || standIn) && (
         <div
-          className="px-4 py-3"
+          className="grid px-4 py-3"
           style={{ borderTop: "1px solid var(--app-border)", visibility: selected ? undefined : "hidden" }}
           aria-hidden={!selected}
         >
-          <div className="flex items-start justify-between gap-2">
-            <div>
-              <div className="font-semibold text-sm" style={{ color: "var(--app-text-primary)" }}>
-                {panel.name} {areaLabel}
-              </div>
-              <div className="text-xs mt-0.5" style={{ color: "var(--app-text-muted)" }}>
-                {stateName} · FIPS {panel.fips}
-              </div>
-              <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-                {!showTpl ? (
-                  "Election data coming soon"
-                ) : panel.tpl == null ? (
-                  "TPL unavailable"
-                ) : (
-                  <>
-                    TPL: <span className="font-semibold" style={{ color: tplColor(panel.tpl) }}>{formatTplValue(panel.tpl)}</span>
-                  </>
-                )}
-              </div>
-              <a
-                href={`/historical/${panel.fips}`}
-                className="mt-2 inline-block text-xs font-semibold hover:underline"
-                style={{ color: "var(--app-text-primary)" }}
-              >
-                Go to county page →
-              </a>
+          {[standIn, selected].map((c, i) => c && (
+            <div key={i} className={`col-start-1 row-start-1${i === 0 ? " invisible" : ""}`} aria-hidden={i === 0 || undefined}>
+              <CountyTooltip
+                {...card(c)}
+                variant="panel"
+                aside={<CountyCardClose onClick={() => setSelected(null)} />}
+                footer={<CountyCardLink href={`/historical/${c.fips}`} />}
+              />
             </div>
-            <button
-              onClick={() => setSelected(null)}
-              className="shrink-0 flex h-9 w-9 items-center justify-center rounded text-xl leading-none"
-              aria-label="Close county details"
-              style={{ color: "var(--app-text-muted)", background: "var(--app-bg)" }}
-            >
-              ×
-            </button>
-          </div>
+          ))}
         </div>
       )}
     </div>

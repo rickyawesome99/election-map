@@ -11,7 +11,7 @@ import { stateLegMapInfo, type ChamberMapInfo } from "@/data/stateLegMapInfo";
 import { stateLegCalendar } from "@/data/stateLegCalendar";
 import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
-import { countySenateData } from "@/data/countySenateData";
+import { countySenateData, type CountyYearResult } from "@/data/countySenateData";
 import { countyGovernorData } from "@/data/countyGovernorData";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { senateCandidatesByYear } from "@/data/senateCandidatesByYear";
@@ -450,29 +450,39 @@ export function buildStatePage(state: StateInfo): StatePageData {
       demName: row?.demCandidate ?? "Democrat", repName: row?.repCandidate ?? "Republican", demParty: "D", repParty: "R",
     });
   }
-  const latestYear = (data: Record<string, { state: string; years: Partial<Record<number, unknown>> }>) => {
+  // Every Senate and governor year since 2016 with county results, newest first, after the
+  // presidential layers. A same-year special Senate election gets its own layer.
+  const yearsOf = (data: Record<string, { state: string; years: Partial<Record<number, unknown>> }>, field: "years" | "specialYears" = "years") => {
     const years = new Set<number>();
-    for (const f of Object.keys(data)) if (data[f].state === abbr) for (const y of Object.keys(data[f].years)) if (Number(y) >= 2016) years.add(Number(y));
-    return years.size ? Math.max(...years) : null;
+    for (const f of Object.keys(data)) {
+      const c = data[f] as { state: string } & Partial<Record<"years" | "specialYears", Partial<Record<number, unknown>>>>;
+      if (c.state === abbr) for (const y of Object.keys(c[field] ?? {})) if (Number(y) >= 2016) years.add(Number(y));
+    }
+    return [...years].sort((x, y) => y - x);
   };
-  const senY = latestYear(countySenateData);
-  if (senY) {
-    const names = senateCandidatesByYear[abbr]?.[senY];
-    const row = senatePast.find((r) => r.year === senY && !isSpecialElection(r.electionType));
-    layers.push({
-      key: `senate-${senY}`, label: `${senY} Senate`,
-      entries: Object.keys(countySenateData).flatMap((f) => { const c = countySenateData[f]; const r = c.state === abbr ? c.years[senY] : undefined; return r ? [{ fips: f, name: c.countyName, result: { demVotes: r.demVotes, repVotes: r.repVotes, totalVotes: r.totalVotes, demPct: r.demPct, repPct: r.repPct, margin: r.margin } }] : []; }),
-      demName: names?.dem ?? row?.demCandidate ?? "Democrat", repName: names?.rep ?? row?.repCandidate ?? "Republican",
-      demParty: row?.demParty ?? "D", repParty: row?.repParty ?? "R",
-    });
+  const countyEntries = <T extends { state: string; countyName: string }>(data: Record<string, T>, pick: (c: T) => CountyYearResult | undefined) =>
+    Object.keys(data).flatMap((f) => { const c = data[f]; const r = c.state === abbr ? pick(c) : undefined; return r ? [{ fips: f, name: c.countyName, result: { demVotes: r.demVotes, repVotes: r.repVotes, totalVotes: r.totalVotes, demPct: r.demPct, repPct: r.repPct, margin: r.margin } }] : []; });
+  const senateLayers: (CountyLayer & { year: number })[] = [];
+  for (const special of [false, true]) {
+    for (const y of yearsOf(countySenateData, special ? "specialYears" : "years")) {
+      const names = special ? undefined : senateCandidatesByYear[abbr]?.[y];
+      const row = senatePast.find((r) => r.year === y && isSpecialElection(r.electionType) === special);
+      senateLayers.push({
+        year: y,
+        key: `senate-${special ? "special-" : ""}${y}`, label: `${y} Senate${special ? " Sp." : ""}`,
+        entries: countyEntries(countySenateData, (c) => (special ? c.specialYears : c.years)[y]),
+        demName: names?.dem ?? row?.demCandidate ?? "Democrat", repName: names?.rep ?? row?.repCandidate ?? "Republican",
+        demParty: row?.demParty ?? "D", repParty: row?.repParty ?? "R",
+      });
+    }
   }
-  const govY = latestYear(countyGovernorData);
-  if (govY) {
-    const names = governorCandidatesByYear[abbr]?.[govY];
-    const row = govPast.find((r) => r.year === govY);
+  for (const l of senateLayers.sort((x, y) => x.year === y.year ? 0 : y.year - x.year)) layers.push(l);
+  for (const y of yearsOf(countyGovernorData)) {
+    const names = governorCandidatesByYear[abbr]?.[y];
+    const row = govPast.find((r) => r.year === y);
     layers.push({
-      key: `governor-${govY}`, label: `${govY} Gov.`,
-      entries: Object.keys(countyGovernorData).flatMap((f) => { const c = countyGovernorData[f]; const r = c.state === abbr ? c.years[govY] : undefined; return r ? [{ fips: f, name: c.countyName, result: { demVotes: r.demVotes, repVotes: r.repVotes, totalVotes: r.totalVotes, demPct: r.demPct, repPct: r.repPct, margin: r.margin } }] : []; }),
+      key: `governor-${y}`, label: `${y} Gov.`,
+      entries: countyEntries(countyGovernorData, (c) => c.years[y]),
       demName: names?.dem ?? row?.demCandidate ?? "Democrat", repName: names?.rep ?? row?.repCandidate ?? "Republican",
       demParty: row?.demParty ?? "D", repParty: row?.repParty ?? "R",
     });

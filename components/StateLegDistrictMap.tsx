@@ -109,6 +109,7 @@ export default function StateLegDistrictMap({
   onSelect,
   overlay = null,
   custom = null,
+  hideLegend = false,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -139,6 +140,8 @@ export default function StateLegDistrictMap({
    * legend and footnote. When set it replaces the view-mode fill, tooltip body and legend.
    */
   custom?: { fill: Record<string, string>; tip: Record<string, { label: string; value: string; color?: string }[]>; legend: { label: string; bg: string }[]; note?: string } | null;
+  /** Drop the legend and the fine print under it (projection note, boundary/source line). */
+  hideLegend?: boolean;
 }) {
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -595,6 +598,7 @@ export default function StateLegDistrictMap({
           only turns invisible. Same for the "no count published" chip, which otherwise changes the
           wrap within results view from one year to the next. Height is then identical in all three
           views at every width. */}
+      {!hideLegend && (
       <div className="mt-2 grid">
       <div
         className={`col-start-1 row-start-1 flex h-5 items-center gap-x-3 overflow-x-auto scrollbar-none md:h-auto md:flex-wrap md:gap-y-1${showMarginLegend ? "" : " invisible"}`}
@@ -634,6 +638,7 @@ export default function StateLegDistrictMap({
         ))}
       </div>
       </div>
+      )}
 
       {/* Every variant of the fine print stacked in one grid cell: the one for the current view is
           visible, the rest are laid out invisibly behind it. The block is therefore always as tall
@@ -643,7 +648,7 @@ export default function StateLegDistrictMap({
           there is no dead space beyond the real worst case and no note is ever clipped. The
           mobile min-height is a floor under the one thing the stack cannot measure ahead of
           time: a past year's source string, which only exists once that year has been fetched. */}
-      {hasDistricts && (
+      {hasDistricts && !hideLegend && (
         <div className="mt-2 grid min-h-[3.4rem] md:min-h-0">
           {NOTE_VARIANTS.map((variant) => {
             const active = variant === (isResultsView ? "results" : viewMode === "president" || viewMode === "upcoming" ? viewMode : "seats");

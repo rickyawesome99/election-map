@@ -1,6 +1,6 @@
 import Link from "next/link";
-import BackButton from "@/components/BackButton";
 import type { HeroBody } from "@/lib/statePage";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
 
 /**
  * One body as a short seat bar: Democrats fill from the left, Republicans from the right, anyone
@@ -64,11 +64,7 @@ export default function StateHero({
           : "var(--app-bg)",
       }}
     >
-      <div className="max-w-[60rem] mx-auto px-4 sm:px-6 pt-3 pb-6 sm:pb-8">
-        <div className="mb-5 -ml-2">
-          <BackButton />
-        </div>
-
+      <div className={`${PAGE_CONTAINER} pt-6 pb-6 sm:pb-8`}>
         <div className="flex flex-row items-start justify-between gap-4 sm:gap-6">
           <div className="min-w-0">
             <div className="flex items-center gap-3">

@@ -1,18 +1,22 @@
 import Image from "next/image";
-import BackLink from "@/components/BackLink";
 import CandidateLink from "@/components/CandidateLink";
 import ReplaceLink from "@/components/ReplaceLink";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
+import { lastName } from "@/lib/personName";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import HouseDistrictCountyMap from "@/components/HouseDistrictCountyMap";
+import ExpandableTbody from "@/components/ExpandableTbody";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
 import type { PastElection, PastElectionCandidate } from "@/lib/pastElections";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { SeatCrumbs } from "@/components/SeatBreadcrumb";
 
 // The one shared renderer for /senate/[id]/[year] and /governor/[id]/[year]. The top block is
 // composed to be captured as a single screenshot: eyebrow, headline, candidates, county map,
-// three post-analysis tiles and a source line, with nothing else in the frame. The county
-// table and related links follow below it.
+// three post-analysis tiles, with nothing else in the frame. The county
+// table, related links and the source line follow below it.
 
+// Set like the seat's year links opposite it: serif, muted, underlined on hover.
 function partyColor(party: "D" | "R" | "I"): string {
   return party === "R" ? "var(--party-rep)" : party === "I" ? "var(--party-ind)" : "var(--party-dem)";
 }
@@ -25,13 +29,6 @@ function partyName(party: "D" | "R" | "I"): string {
   return party === "R" ? "Republican" : party === "I" ? "Independent" : "Democratic";
 }
 
-function lastName(name: string): string {
-  const cleaned = name.replace(/\s*\([A-Z]\)\s*$/, "").replace(/,?\s+(Jr\.|Sr\.|II|III|IV)$/i, "");
-  const parts = cleaned.trim().split(/\s+/);
-  const last = parts[parts.length - 1] ?? name;
-  const particle = parts.length > 2 ? parts[parts.length - 2] : "";
-  return /^(de|da|di|du|del|della|la|le|van|von|der|den|bin|al)$/i.test(particle) ? `${particle} ${last}` : last;
-}
 
 function fmtInt(n: number | null | undefined): string {
   return n == null ? "—" : n.toLocaleString("en-US");
@@ -175,60 +172,55 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
   const repShare = e.rep.pct;
   const otherShare = e.otherPct ?? Math.max(0, 100 - demShare - repShare);
   const counted = e.counties.length;
-  const wonByDem = e.counties.filter((c) => c.result.margin < 0).length;
-  const wonByRep = counted - wonByDem;
   const areaSingular = e.stateAbbr === "LA" ? "parish" : e.stateAbbr === "AK" ? "borough" : "county";
   const areaWord = e.stateAbbr === "LA" ? "parishes" : e.stateAbbr === "AK" ? "boroughs" : "counties";
   const cap = (w: string) => w[0].toUpperCase() + w.slice(1);
+  // The state and district are in the breadcrumb above, so the eyebrow leaves them out and fits
+  // on one line.
   const eyebrow = [
-    e.stateName,
     e.officeLabel,
     e.seatClass != null ? `Class ${e.seatClass}` : null,
-    e.house ? `District ${e.house.district}` : null,
     e.electoralVotes != null ? `${e.electoralVotes} electoral votes` : null,
     e.isSpecial ? "Special election" : null,
     e.dateLabel,
   ].filter(Boolean).join(" · ");
   const seatEls = e.seatElections;
-  const idx = seatEls.findIndex((s) => s.year === e.year);
-  const prev = idx > 0 ? seatEls[idx - 1] : null;
-  const next = idx >= 0 && idx < seatEls.length - 1 ? seatEls[idx + 1] : null;
 
   const residualLabel = e.model ? fmtMargin(e.model.residual) : null;
   const overLabel = e.model
     ? `${lastName(winner.name)} ${winner.war != null ? `WAR ${winner.war > 0 ? "+" : ""}${winner.war.toFixed(1)}` : ""}${loser.war != null ? ` · ${lastName(loser.name)} ${loser.war > 0 ? "+" : ""}${loser.war.toFixed(1)}` : ""}`
     : "";
 
+  // Under the map: the colour key only, so a clicked county's panel sits close to the map. The
+  // data-quality notes that used to follow it are in the source line at the foot of the page.
   const mapCaption = (
-    <>
-      <div className="mt-1 flex items-baseline justify-between gap-2 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
-        <span>
-          {e.house
-            ? `Margin by ${areaSingular} on the ${e.house.mapYear} map · ${counted} ${counted === 1 ? areaSingular : areaWord}${e.house.splitCounties ? `, ${e.house.splitCounties} shared with other districts (hatched)` : ""}`
-            : `Margin by ${areaSingular} · ${counted} of ${e.countiesInState} ${areaWord}`}
-        </span>
-        <span className="flex items-center gap-px" aria-hidden="true">
-          {[-20, -10, -3, -0.5, 0.5, 3, 10, 20].map((m) => <i key={m} className="block h-2 w-3.5" style={{ background: getSwatch(m) }} />)}
-        </span>
-      </div>
-      <div className="mt-1 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
-        {counted > 0 && <>{lastName(e.dem.name)} won {wonByDem} {areaWord === "counties" ? (wonByDem === 1 ? "county" : "counties") : areaWord}, {lastName(e.rep.name)} {wonByRep}.</>}
-        {e.house && e.house.gaps.length > 0 && <> No district breakdown on file for {e.house.gaps.map((g) => g.name).join(", ")}.</>}
-        {e.house?.status === "exact" && <> {houseSourceLabel(e.house.source)}; the rows sum to the certified district total.</>}
-        {e.house?.status === "close" && <> {houseSourceLabel(e.house.source)}; the rows come within 2.5% of the certified district total.</>}
-        {e.house?.status === "final-round" && <> {houseSourceLabel(e.house.source)}; ranked-choice final round. Overseas ballots and a few unorganized townships cannot be assigned to a county, so the rows fall just short of the certified total.</>}
-        {e.house?.status === "first-round" && <> {houseSourceLabel(e.house.source)}; ranked-choice first-round counts, so they do not sum to the certified final-round total.</>}
-        {e.house?.status === "unverified" && <> {houseSourceLabel(e.house.source)}; the rows do not sum to the certified district total, so treat them as incomplete.</>}
-      </div>
-    </>
+    <div className="mt-1 flex justify-end" aria-hidden="true">
+      <span className="flex items-center gap-px">
+        {[-20, -10, -3, -0.5, 0.5, 3, 10, 20].map((m) => <i key={m} className="block h-2 w-3.5" style={{ background: getSwatch(m) }} />)}
+      </span>
+    </div>
   );
+  const countyNote = e.house ? [
+    e.house.gaps.length > 0 ? `No district breakdown on file for ${e.house.gaps.map((g) => g.name).join(", ")}.` : "",
+    e.house.status === "exact" ? `${houseSourceLabel(e.house.source)}; the rows sum to the certified district total.` : "",
+    e.house.status === "close" ? `${houseSourceLabel(e.house.source)}; the rows come within 2.5% of the certified district total.` : "",
+    e.house.status === "final-round" ? `${houseSourceLabel(e.house.source)}; ranked-choice final round. Overseas ballots and a few unorganized townships cannot be assigned to a county, so the rows fall just short of the certified total.` : "",
+    e.house.status === "first-round" ? `${houseSourceLabel(e.house.source)}; ranked-choice first-round counts, so they do not sum to the certified final-round total.` : "",
+    e.house.status === "unverified" ? `${houseSourceLabel(e.house.source)}; the rows do not sum to the certified district total, so treat them as incomplete.` : "",
+    e.house.splitCounties ? `Counties shared with other districts are hatched on the map.` : "",
+  ].filter(Boolean).join(" ") : "";
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div className="mx-auto max-w-4xl px-4 pt-3 pb-12 sm:px-6">
-        {/* Seat context: back link + this seat's other elections */}
+      <div className={`${PAGE_CONTAINER} pt-3 pb-12`}>
+        {/* Seat context: links up to the seat and the state + this seat's other elections */}
         <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
-          <BackLink fallbackHref={e.seatHref} label={e.seatLabel} />
+          <SeatCrumbs
+            crumbs={[
+              ...(e.office !== "president" ? [{ label: e.stateName, href: `/states/${e.stateAbbr.toLowerCase()}` }] : []),
+              { label: e.seatLabel, href: e.seatHref },
+            ]}
+          />
           <nav aria-label="Other elections for this seat" className="flex items-baseline gap-3 overflow-x-auto">
             <span className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>This seat</span>
             {seatEls.map((s) => s.year === e.year ? (
@@ -244,7 +236,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
         </div>
 
         {/* ── Share block ─────────────────────────────────────────────────── */}
-        <section className="mt-5" style={{ borderTop: "2px solid var(--app-text-primary)", paddingTop: "1.25rem" }} aria-label="Result">
+        <section className="mt-2" style={{ borderTop: "2px solid var(--app-text-primary)", paddingTop: "1.25rem" }} aria-label="Result">
           <div className="grid gap-x-8 gap-y-6 md:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)]">
             <div className="min-w-0">
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{eyebrow}</div>
@@ -294,7 +286,11 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
               </div>
             </div>
 
-            <div className="min-w-0">
+            {/* On desktop the map column adds no height of its own: it fills the row the left
+                column sets, so opening a county's panel shrinks the map a little instead of
+                pushing the rule below down. */}
+            <div className="min-w-0 md:relative">
+              <div className="md:absolute md:inset-0">
               {counted > 0 || e.house ? (
                 <>
                   {e.house ? (
@@ -310,6 +306,8 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                       repParty={e.rep.party}
                       height={300}
                       caption={mapCaption}
+                      panelSize="small"
+                      fill
                     />
                   ) : (
                     <PastElectionCountyMap
@@ -322,6 +320,8 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                       repParty={e.rep.party}
                       height={300}
                       caption={mapCaption}
+                      panelSize="small"
+                      fill
                     />
                   )}
                 </>
@@ -330,6 +330,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                   No county-level results on file for this election.
                 </div>
               )}
+              </div>
             </div>
           </div>
 
@@ -360,11 +361,6 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
               ) : e.year < 2018 && e.office !== "president" ? "The poll archive starts with the 2018 cycle." : "No polls of this race in the archive."}
             </Tile>
           </div>
-
-          <div className="mt-4 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-            <span className="tabular-nums">{e.href}</span>
-            <span>{e.sources.join(" · ")}</span>
-          </div>
         </section>
 
         {/* ── Counties ────────────────────────────────────────────────────── */}
@@ -382,8 +378,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                     <th className="py-1.5 pl-3 text-right font-bold" style={{ borderBottom: "1px solid var(--app-border)" }}>{e.previous ? `vs ${e.previous.year}${e.house?.linesChanged ? "*" : ""}` : ""}</th>
                   </tr>
                 </thead>
-                <tbody>
-                  {e.counties.map((c) => {
+                <ExpandableTbody colSpan={5} noun={areaWord} rows={e.counties.map((c) => {
                     const shift = c.previous ? c.result.margin - c.previous.margin : null;
                     return (
                       <tr key={c.fips} style={{ borderBottom: "1px solid var(--app-border)" }}>
@@ -397,8 +392,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                         <td className="py-1.5 pl-3 text-right" style={{ color: shift != null ? marginColor(shift) : "var(--app-text-very-muted)" }}>{shift != null ? fmtMargin(shift) : "—"}</td>
                       </tr>
                     );
-                  })}
-                </tbody>
+                  })} />
               </table>
             </div>
             {e.house?.linesChanged && e.previous && (
@@ -408,15 +402,26 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
         )}
 
         {/* ── Related ─────────────────────────────────────────────────────── */}
-        <section className="mt-10">
-          <LedgerSectionHead label="Related" />
-          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-            <li><a href={e.seatHref} className="font-semibold hover:underline">{e.seatLabel} →</a></li>
-            {e.office !== "president" && <li><a href={`/states/${e.stateAbbr.toLowerCase()}`} className="font-semibold hover:underline">{e.stateName} →</a></li>}
-            {prev && <li><ReplaceLink href={prev.href} className="hover:underline" style={{ color: "var(--app-text-muted)" }}>← {prev.year}{prev.isSpecial ? " special" : ""}</ReplaceLink></li>}
-            {next && <li><ReplaceLink href={next.href} className="hover:underline" style={{ color: "var(--app-text-muted)" }}>{next.year}{next.isSpecial ? " special" : ""} →</ReplaceLink></li>}
-          </ul>
-        </section>
+        {/* Same office, same year, nearest first; the seat, the state and this seat's other years
+            are all linked from the top of the page. */}
+        {e.related.items.length > 0 && (
+          <section className="mt-10">
+            <LedgerSectionHead label={e.related.title} />
+            <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2">
+              {e.related.items.map((r) => (
+                <a key={r.href} href={r.href} className="group flex items-baseline justify-between gap-3 py-2 min-w-0" style={{ borderBottom: "1px solid var(--app-border)" }}>
+                  <span className="flex min-w-0 items-baseline gap-2">
+                    <span className="whitespace-nowrap text-sm font-bold group-hover:underline" style={{ color: "var(--app-text-primary)" }}>{r.label}</span>
+                    {r.winner && <span className="truncate text-xs" style={{ color: "var(--app-text-very-muted)" }}>{lastName(r.winner)} ({r.winnerParty})</span>}
+                  </span>
+                  <span className="shrink-0 text-sm font-bold tabular-nums" style={{ color: marginColor(r.margin) }}>{fmtMargin(r.margin)}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <p className="mt-3 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Sources: {e.sources.join(" · ")}{countyNote && <> · {countyNote}</>}</p>
       </div>
     </div>
   );

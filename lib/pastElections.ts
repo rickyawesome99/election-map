@@ -13,6 +13,7 @@ import { raceCalendar } from "@/data/raceCalendar";
 import { computeWarTable } from "@/lib/tplCompute";
 import { historicalRacePolls, historicalPresidentPolls, type HistoricalRacePoll } from "@/lib/racePollsHistory";
 import { candidatePhotos } from "@/lib/candidatePhotos";
+import { stateRings } from "@/lib/stateNeighbors";
 
 // One page per past election, nested under its seat: /senate/pa2/2022, /governor/pa/2022,
 // /president/pa/2020 (a state's presidential result; its "seat page" is the state page).
@@ -124,8 +125,12 @@ export type PastElection = {
   polling: PastElectionPolling | null;
   /** Every election of this seat that has a page, oldest first. */
   seatElections: { year: number; href: string; isSpecial: boolean }[];
+  /** Same-office races from the same year, nearest first: see relatedElections(). */
+  related: { title: string; items: RelatedElection[] };
   sources: string[];
 };
+
+export type RelatedElection = { href: string; label: string; winner: string; winnerParty: Party; margin: number };
 
 // ── Seats ─────────────────────────────────────────────────────────────────────
 
@@ -574,6 +579,58 @@ export function getPastElection(office: PastElectionOffice, seatIdRaw: string, y
     model,
     polling: buildPolling(office, seat.stateAbbr, year, isSpecial, override?.label === "Jungle primary, decided outright" ? decidedOn : generalDay, margin, runoff, seatName),
     seatElections,
+    related: relatedElections(office, seat, year, `/${office}/${seat.seatId}/${year}`),
     sources,
   };
+}
+
+// ── Related ───────────────────────────────────────────────────────────────────
+
+const RELATED_MAX: Record<PastElectionOffice, number> = { house: 12, senate: 8, governor: 8, president: 8 };
+
+/**
+ * The same office's other races that year, nearest first. House: the state's other districts,
+ * by distance in district number (adjacent numbers usually border); an at-large state, which has
+ * none, gets its neighbours' districts instead, at most two per state so one big neighbour can't
+ * fill the list. Statewide offices: the state's other Senate race that year, if any, then states
+ * outward ring by ring across borders. Capped at RELATED_MAX.
+ */
+function relatedElections(office: PastElectionOffice, seat: Seat, year: number, selfHref: string): { title: string; items: RelatedElection[] } {
+  const rings = stateRings(seat.stateAbbr);
+  const ranked: { ring: number; tie: number; name: string; item: RelatedElection }[] = [];
+  for (const other of seatsFor(office).values()) {
+    const r = other.results.find((x) => x.year === year);
+    if (!r || !hasPage(r)) continue;
+    const href = `/${office}/${other.seatId}/${year}`;
+    if (href === selfHref) continue;
+    const margin = r.margin ?? parseFloat((r.repPct - r.demPct).toFixed(2));
+    const demWon = margin < 0;
+    const name = (demWon ? r.demCandidate : r.repCandidate) ?? "";
+    const special = isSpecialType(r.electionType);
+    const label = office === "house" ? other.seatId.toUpperCase() : `${other.stateName}${special ? " (special)" : ""}`;
+    ranked.push({
+      ring: rings.get(other.stateAbbr) ?? 99,
+      tie: office === "house" && other.stateAbbr === seat.stateAbbr ? Math.abs((other.district ?? 1) - (seat.district ?? 1)) : 0,
+      name: office === "house" ? other.seatId : other.stateName,
+      item: { href, label, winner: name, winnerParty: (demWon ? r.demParty ?? "D" : r.repParty ?? "R"), margin },
+    });
+  }
+  ranked.sort((a, b) => a.ring - b.ring || a.tie - b.tie || a.name.localeCompare(b.name));
+  let pool = ranked;
+  if (office === "house") {
+    const inState = ranked.filter((x) => x.ring === 0);
+    const perState = new Map<string, number>();
+    pool = inState.length ? inState : ranked.filter((x) => {
+      if (x.ring !== 1) return false;
+      const st = x.name.slice(0, 2);
+      perState.set(st, (perState.get(st) ?? 0) + 1);
+      return perState.get(st)! <= 2;
+    });
+  }
+  const items = pool.slice(0, RELATED_MAX[office]).map((x) => x.item);
+  const officeWord = office === "senate" ? "Senate" : office === "governor" ? "governor" : office === "president" ? "presidential" : "House";
+  const title = items.length && pool.slice(0, items.length).every((x) => x.ring === 0)
+    ? `Other ${seat.stateName} ${officeWord} races, ${year}`
+    : `Nearby ${officeWord} races, ${year}`;
+  return { title, items };
 }

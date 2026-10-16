@@ -101,6 +101,7 @@ export default function StateLayerMap({
         upcomingYear={electionYear}
         selectedKey={selectedLegKey}
         onSelect={onSelectLeg}
+        hideLegend
       />
     );
   }

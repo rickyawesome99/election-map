@@ -11,6 +11,9 @@ import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { usePanZoom } from "@/lib/usePanZoom";
 import type { CountyMapEntry, CountyMapResult } from "@/components/PastElectionCountyMap";
+import { isRealName } from "@/lib/personName";
+import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
+import { countyDisplayName } from "@/lib/countyName";
 
 // County map of ONE House district on the map in force that year. Counties the district shares
 // with a neighbour are drawn split at the district line: the district's share is painted by its
@@ -27,15 +30,6 @@ type Hovered = { fips: string; name: string; inDistrict: boolean; otherDistrict:
 const zoomBtn = "flex h-6 w-6 items-center justify-center rounded-md text-sm font-semibold leading-none";
 const zoomBtnStyle = { background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", opacity: 0.92 };
 
-function partyColor(party: string): string {
-  return party === "R" ? "var(--party-rep)" : party === "I" ? "var(--party-ind)" : "var(--party-dem)";
-}
-
-function fmtSigned(margin: number, demParty: string, repParty: string): string {
-  if (Math.abs(margin) < 0.05) return "EVEN";
-  return `${margin > 0 ? repParty : demParty}+${Math.abs(margin).toFixed(1)}`;
-}
-
 export default function HouseDistrictCountyMap({
   piecesUrl,
   district,
@@ -48,6 +42,8 @@ export default function HouseDistrictCountyMap({
   repParty = "R",
   height = 300,
   caption,
+  panelSize = "compact",
+  fill = false,
 }: {
   piecesUrl: string;
   district: number;
@@ -61,6 +57,12 @@ export default function HouseDistrictCountyMap({
   height?: number;
   /** Rendered between the map and the selected-county panel. */
   caption?: ReactNode;
+  /** The click panel's layout: "wide" where the map has the page's full width (race pages). */
+  panelSize?: "compact" | "wide" | "small";
+  /** Desktop only: fill a parent of fixed height (a flex column) instead of setting it. The map
+   *  takes `height` when there's room and gives up space down to 180px when the selected
+   *  county's panel needs it, so opening a panel never makes the column taller. */
+  fill?: boolean;
 }) {
   const { data: topo, failed } = useStaticJson<PiecesTopology>(piecesUrl);
   const byFips = useMemo(() => new Map(counties.map((c) => [c.fips, c.result])), [counties]);
@@ -125,35 +127,26 @@ export default function HouseDistrictCountyMap({
     result: p.properties.d === district ? byFips.get(p.properties.c) ?? null : null,
   });
 
-  const detail = (h: Hovered) => {
-    if (!h.inDistrict) {
-      return <div className="mt-1 text-[10px]" style={{ color: "var(--app-text-muted)" }}>Part of this county is in {stateAbbr}-{String(h.otherDistrict).padStart(2, "0")}, not {districtLabel}.</div>;
-    }
-    if (!h.result) return <div className="mt-1 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>No result on file for this county&apos;s share of the district.</div>;
+  // One description of a county piece, drawn as the hover popup and as the click panel.
+  const card = (h: Hovered): CountyTooltipProps => {
+    const title = countyDisplayName(h.fips, h.name);
+    if (!h.inDistrict) return { kind: "message", title, message: `Part of this county is in ${stateAbbr}-${String(h.otherDistrict).padStart(2, "0")}, not ${districtLabel}.` };
+    if (!h.result) return { kind: "message", title, message: "No result on file for this county's share of the district." };
     const r = h.result;
-    return (
-      <>
-        <div className="mt-1 text-[11px] font-semibold tabular-nums" style={{ color: partyColor(r.margin > 0 ? repParty : demParty) }}>{fmtSigned(r.margin, demParty, repParty)}</div>
-        <div className="mt-0.5 text-[10px] tabular-nums" style={{ color: "var(--app-text-muted)" }}>
-          <div className="flex justify-between gap-3" style={{ color: partyColor(demParty) }}><span className="truncate">{demName}</span><span>{r.demPct.toFixed(1)}% · {r.demVotes.toLocaleString()}</span></div>
-          <div className="flex justify-between gap-3" style={{ color: partyColor(repParty) }}><span className="truncate">{repName}</span><span>{r.repPct.toFixed(1)}% · {r.repVotes.toLocaleString()}</span></div>
-        </div>
-      </>
-    );
+    return {
+      kind: "result", title,
+      dem: { name: demName, link: isRealName(demName), party: demParty, pct: r.demPct, votes: r.demVotes },
+      rep: { name: repName, link: isRealName(repName), party: repParty, pct: r.repPct, votes: r.repVotes },
+      margin: r.margin, totalVotes: r.totalVotes,
+    };
   };
 
   const patternId = `hatch-${stateAbbr}-${district}`;
 
   return (
-    <div>
-      <div ref={containerRef} className="relative" style={{ height, background: "var(--app-bg)" }} onMouseMove={onMouseMove}>
-        {hovered && (
-          <div ref={tooltipRef} className="absolute z-20 hidden pointer-events-none rounded-lg md:block"
-            style={{ width: 210, padding: "8px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.2)" }}>
-            <div className="font-bold text-xs" style={{ color: "var(--app-text-primary)" }}>{hovered.name} {stateAbbr === "LA" ? "Parish" : stateAbbr === "AK" ? "Borough" : "County"}</div>
-            {detail(hovered)}
-          </div>
-        )}
+    <div className={fill ? "md:flex md:h-full md:flex-col" : undefined}>
+      <div ref={containerRef} className={`relative${fill ? " md:min-h-[180px] md:shrink" : ""}`} style={{ height, background: "var(--app-bg)" }} onMouseMove={onMouseMove}>
+        {hovered && <CountyTooltip {...card(hovered)} boxRef={tooltipRef} className="absolute z-20 hidden md:block" />}
         {failed && <div className="absolute inset-0 flex items-center justify-center text-xs" style={{ color: "var(--app-text-very-muted)" }}>Map unavailable.</div>}
         {scene && (
           <svg width={size.width} height={size.height} viewBox={`0 0 ${size.width} ${size.height}`} role="img" aria-label={`${districtLabel} results by county`} {...zoom.svgProps}>
@@ -196,15 +189,14 @@ export default function HouseDistrictCountyMap({
       </div>
       {caption}
       {selected && (
-        <div className="mt-2 px-1 py-3" style={{ borderTop: "1px solid var(--app-border)" }}>
-          <div className="flex items-start justify-between gap-2">
-            <div className="min-w-0 flex-1">
-              <div className="font-semibold text-sm" style={{ color: "var(--app-text-primary)" }}>{selected.name} {stateAbbr === "LA" ? "Parish" : stateAbbr === "AK" ? "Borough" : "County"}</div>
-              <div className="text-xs">{detail(selected)}</div>
-              <a href={`/historical/${selected.fips}`} className="mt-2 inline-block text-xs font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>Go to county page →</a>
-            </div>
-            <button onClick={() => setSelected(null)} className="shrink-0 flex h-9 w-9 items-center justify-center rounded text-xl leading-none" aria-label="Close county details" style={{ color: "var(--app-text-muted)", background: "var(--app-bg)" }}>×</button>
-          </div>
+        <div className={`px-1 ${panelSize === "small" ? "mt-1 pt-2" : "mt-2 py-3"}`} style={{ borderTop: "1px solid var(--app-border)" }}>
+          <CountyTooltip
+            {...card(selected)}
+            variant="panel"
+            size={panelSize}
+            aside={<CountyCardClose onClick={() => setSelected(null)} />}
+            footer={<CountyCardLink href={`/historical/${selected.fips}`} />}
+          />
         </div>
       )}
     </div>

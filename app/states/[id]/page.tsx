@@ -8,6 +8,7 @@ import StateExplorer from "@/components/state/StateExplorer";
 import StateDemographicsSection from "@/components/StateDemographicsSection";
 import StateTplTrendSection from "@/components/state/StateTplTrendSection";
 import StateRedistrictingSection from "@/components/state/StateRedistrictingSection";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
 
 export async function generateStaticParams() {
   return statesData.map((s) => ({ id: s.id }));
@@ -40,7 +41,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <StateHero name={state.name} abbr={state.abbr} tpl={data.tpl} ballotSentence={data.ballotSentence} bodies={data.bodies} />
 
-      <main className="max-w-[60rem] mx-auto px-4 pt-2 pb-8 sm:px-6">
+      <main className={`${PAGE_CONTAINER} pt-2 pb-8`}>
         <StateExplorer data={data} electionYear={electionYear} generalElection={GENERAL_ELECTION} />
 
         {stateDemographics[state.abbr] && (

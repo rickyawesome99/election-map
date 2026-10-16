@@ -16,7 +16,7 @@ import { statesData } from "@/data/statesData";
 import { candidateOffices } from "@/data/candidateOffices";
 import { TPL_GLOBAL_CONSTANTS as G, FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
-import { fundraisingData, fundraisingSources } from "@/data/fundraisingData";
+import { fundraisingData, fundraisingSources, fundraisingDetails, type RaceFinanceDetail } from "@/data/fundraisingData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { presByBoundaryVintage, boundaryVintageForHouseYear } from "@/data/presByBoundaryVintage";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
@@ -228,6 +228,14 @@ export function raceFundraising2026(raceType: string, raceId: string): { dem: nu
   for (const key of fundraising2026Keys(raceType, raceId)) {
     const entry = fundraisingData[key];
     if (entry?.dem != null && entry.rep != null) return { dem: entry.dem, rep: entry.rep };
+  }
+  return null;
+}
+
+// Cash on hand / spending / outside spending / small-dollar share (FEC House/Senate only).
+export function raceFinanceDetail2026(raceType: string, raceId: string): RaceFinanceDetail | null {
+  for (const key of fundraising2026Keys(raceType, raceId)) {
+    if (fundraisingDetails[key]) return fundraisingDetails[key];
   }
   return null;
 }

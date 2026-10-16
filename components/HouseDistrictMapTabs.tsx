@@ -47,6 +47,7 @@ export default function HouseDistrictMapTabs({ raceId, stateAbbr, margin, bounda
       )}
       {tab === "projection" && projection ? (
         <HouseDistrictCountyMap
+          panelSize="wide"
           piecesUrl={projection.piecesUrl}
           district={projection.district}
           districtLabel={projection.districtLabel}

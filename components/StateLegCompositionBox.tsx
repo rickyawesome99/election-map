@@ -74,12 +74,11 @@ function UpcomingCard({
           : null,
   ].filter(Boolean).join(" · ");
 
+  const Tag = onSelect ? "button" : "div";
   return (
-    <button
-      type="button"
-      onClick={onSelect}
-      aria-current={active}
-      className="stateleg-year block w-full py-4 pl-2.5 pr-1 text-left"
+    <Tag
+      {...(onSelect ? { type: "button" as const, onClick: onSelect, "aria-current": active } : {})}
+      className={`block w-full py-4 pl-2.5 pr-1 text-left${onSelect ? " stateleg-year" : ""}`}
       style={{
         borderBottom: "1px solid var(--app-border)",
         borderLeft: `2px solid ${active ? "var(--app-text-primary)" : "transparent"}`,
@@ -107,7 +106,7 @@ function UpcomingCard({
       {detail && (
         <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{detail}</div>
       )}
-    </button>
+    </Tag>
   );
 }
 

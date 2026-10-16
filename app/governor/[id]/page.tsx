@@ -13,8 +13,9 @@ import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace } from "@/lib/forecast";
 import { alignedParty } from "@/data/raceEligibility";
-import BackButton from "@/components/BackButton";
 import { pastElectionHref } from "@/lib/pastElections";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { StatePill, OfficePill, HeldPill, PILL } from "@/components/RaceHeroPills";
 
 const GENERAL_ELECTION = "November 3, 2026";
 
@@ -77,24 +78,21 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
           minHeight: "300px",
         }}
       >
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pb-10">
-          <div className="mb-5 -ml-2">
-            <BackButton />
-          </div>
+        <div className={`${PAGE_CONTAINER} pt-6 pb-8 sm:pb-10`}>
 
           <div className="flex flex-row items-start justify-between gap-4 sm:gap-6">
             <div className="min-w-0">
-              <div className="flex items-center gap-3 flex-wrap">
-                <a href={`/states/${entry.abbr.toLowerCase()}`} aria-label={`View ${entry.state} state page`} className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 hover:underline" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-                  {entry.abbr}
-                </a>
-                <h1
-                  className="whitespace-nowrap"
-                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
-                >
-                  {entry.state}
-                </h1>
+              <div className="flex items-center gap-2 flex-wrap">
+                <StatePill name={entry.state} abbr={entry.abbr} />
+                <OfficePill office="governor" />
+                <HeldPill party={entry.party} />
               </div>
+              <h1
+                className="mt-2"
+                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", textWrap: "balance", color: "var(--app-text-primary)" }}
+              >
+                {entry.state} Governor
+              </h1>
               <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>Gubernatorial Office · No Election This Cycle</div>
               <div className="mt-4 text-sm" style={{ color: "var(--app-text-muted)" }}>
                 Not on the ballot in {electionYear} — next election scheduled for <strong style={{ color: "var(--app-text-primary)" }}>{entry.nextElection}</strong>.
@@ -106,7 +104,7 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
         </div>
       </div>
 
-      <main className="max-w-3xl mx-auto px-4 pb-10 sm:px-6">
+      <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
           <section>
             <LedgerSectionHead label="About this Seat" />
@@ -212,27 +210,24 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
           minHeight: "300px",
         }}
       >
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pb-10">
-          <div className="mb-5 -ml-2">
-            <BackButton />
-          </div>
+        <div className={`${PAGE_CONTAINER} pt-6 pb-8 sm:pb-10`}>
 
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             <div className="min-w-0">
-              <div className="flex items-center gap-3 flex-wrap">
-                <a href={`/states/${id.toLowerCase()}`} aria-label={`View ${race.name} state page`} className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 hover:underline" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-                  {id.toUpperCase()}
-                </a>
-                <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full shrink-0" style={{ background: bg, color: text }}>
+              <div className="flex items-center gap-2 flex-wrap">
+                <StatePill name={race.name} abbr={id} />
+                <OfficePill office="governor" />
+                <span className={PILL} style={{ background: bg, color: text }}>
                   {forecastRating}
                 </span>
-                <h1
-                  className="whitespace-nowrap"
-                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
-                >
-                  {race.name}
-                </h1>
+                <HeldPill party={currentGovernorParty} />
               </div>
+              <h1
+                className="mt-2"
+                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", textWrap: "balance", color: "var(--app-text-primary)" }}
+              >
+                {race.name} Governor
+              </h1>
               <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
                 {electionYear} Gubernatorial Race · General {GENERAL_ELECTION}
               </div>
@@ -288,7 +283,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
         </div>
       </div>
 
-      <main className="max-w-3xl mx-auto px-4 pb-10 sm:px-6">
+      <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
 
           <section>
@@ -368,6 +363,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             <LedgerSectionHead label="Projected County Results" meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {countyProjection ? (
               <PastElectionCountyMap
+                panelSize="wide"
                 stateAbbr={id.toUpperCase()}
                 stateName={race.name}
                 counties={projectedCountyMapEntries(countyProjection)}

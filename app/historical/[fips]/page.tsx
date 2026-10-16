@@ -19,6 +19,7 @@ import CountyCompareCard from "@/components/CountyCompareCard";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import CountyLeanTrendChart from "@/components/CountyLeanTrendChart";
 import { AboutRaceCard, LedgerSectionHead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
 
 const YEARS = [2008, 2012, 2016, 2020, 2024] as const;
 
@@ -285,7 +286,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
             : "var(--app-bg)",
         }}
       >
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pb-10">
+        <div className={`${PAGE_CONTAINER} pt-3 pb-8 sm:pb-10`}>
           <div className="mb-5 -ml-2">
             <BackButton />
           </div>
@@ -370,7 +371,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         </div>
       </div>
 
-      <main className="max-w-3xl mx-auto px-4 pb-10 sm:px-6">
+      <main className={`${PAGE_CONTAINER} pb-10`}>
 
         {/* County Map */}
         <section className="mb-10">

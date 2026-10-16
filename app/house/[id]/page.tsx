@@ -12,13 +12,14 @@ import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE, TRACT_ESTIMATED_DISTRI
 import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
+import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace } from "@/lib/forecast";
 import { alignedParty } from "@/data/raceEligibility";
-import BackButton from "@/components/BackButton";
 import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { pastElectionHref } from "@/lib/pastElections";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { StatePill, OfficePill, HeldPill, SeatArrows, PILL } from "@/components/RaceHeroPills";
 
 const GENERAL_ELECTION = "November 3, 2026";
 
@@ -120,6 +121,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const incumbentPts = computeIncumbentPts("H", incumbentParty, incumbentCandidate?.appointed ?? false);
   const fundraising = raceFundraising2026("house", race.id);
   const fundraisingSource = raceFundraisingSource2026("house", race.id);
+  const financeDetail = raceFinanceDetail2026("house", race.id);
   const moneyTerm = raceMoneyTerm(race);
   const fundraisingPts = moneyTerm.pts;
   const gb = effectiveEnvironment(stateAbbr);
@@ -140,7 +142,6 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const repVoteShare = useProjectedShares ? countyProjection.shares.rep : parseFloat(((100 + projectedMargin) / 2).toFixed(1));
   const demPhoto = race.candidates ? (candidatePhotos[race.candidates.dem.name] ?? null) : null;
   const repPhoto = race.candidates ? (candidatePhotos[race.candidates.rep.name] ?? null) : null;
-  const heldLabel = currentRepParty === "R" ? "Republican-held" : currentRepParty === "D" ? "Democratic-held" : "Open Seat";
 
   // Prediction-market win probability (Dem share) — averages Polymarket/Kalshi when both exist.
   const marketDemProb = race.polyDem != null && race.kalshiDem != null
@@ -209,6 +210,20 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
       };
     });
 
+  // The state's previous and next districts, by number, for the arrows beside the pills. The list
+  // wraps (the last district's "next" is the first), so every district gets both arrows; a
+  // two-district state gets one arrow, since both would lead to the same place.
+  const stateDistricts = houseData
+    .filter((r) => r.state === race.state)
+    .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));
+  const districtIdx = stateDistricts.findIndex((r) => r.name === race.name);
+  const nDistricts = stateDistricts.length;
+  const navTo = (r: (typeof houseData)[number] | undefined) => (r && r.name !== race.name ? { href: `/house/${r.name.toLowerCase()}`, label: r.name } : null);
+  const districtNav = {
+    prev: nDistricts > 2 ? navTo(stateDistricts[(districtIdx - 1 + nDistricts) % nDistricts]) : null,
+    next: navTo(stateDistricts[(districtIdx + 1) % nDistricts]),
+  };
+
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
@@ -218,30 +233,25 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
           background: `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
         }}
       >
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-7">
-          <div className="mb-5 -ml-2">
-            <BackButton />
-          </div>
+        <div className={`${PAGE_CONTAINER} pt-6 pb-7`}>
 
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             <div className="min-w-0">
               <div className="flex items-center gap-2 flex-wrap">
-                <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full shrink-0" style={{ background: bg, color: text }}>
+                <StatePill name={race.state} abbr={stateAbbr} />
+                <OfficePill office="house" />
+                <span className={PILL} style={{ background: bg, color: text }}>
                   {forecastRating}
                 </span>
-                <span className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-                  {heldLabel}
-                </span>
+                <HeldPill party={currentRepParty} />
               </div>
-              <div className="mt-2 flex items-center gap-3 flex-wrap">
-                <a href={`/states/${stateAbbr.toLowerCase()}`} aria-label={`View ${race.state} state page`} className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 hover:underline" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-                  {stateAbbr}
-                </a>
+              <div className="mt-2">
                 <h1
-                  className="whitespace-nowrap"
+                  className="inline whitespace-nowrap"
                   style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
                 >
                   {race.name}
+                  <SeatArrows prev={districtNav.prev} next={districtNav.next} label="Neighbouring districts" />
                 </h1>
               </div>
               <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
@@ -299,7 +309,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
         </div>
       </div>
 
-      <main className="max-w-3xl mx-auto px-4 pb-10 sm:px-6">
+      <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
 
           <section>
@@ -361,6 +371,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               pendingNote={`no ${electionYear} FEC filings on record for this race yet`}
               fundraisingPts={fundraisingPts}
               typicalGapPct={moneyTerm.structuralGapPct}
+              detail={financeDetail}
             />
           </section>
 

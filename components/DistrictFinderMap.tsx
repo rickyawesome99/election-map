@@ -77,6 +77,8 @@ export default function DistrictFinderMap({
       dragRotate: false,
       pitchWithRotate: false,
       maxPitch: 0,
+      // Double-click / double-tap zoom off, as on every other map on the site.
+      doubleClickZoom: false,
     });
     mapRef.current = map;
     map.touchZoomRotate.disableRotation();

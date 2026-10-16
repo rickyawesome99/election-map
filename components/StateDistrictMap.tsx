@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
+import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
@@ -177,7 +178,7 @@ export default function StateDistrictMap({
           projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
           style={{ width: "100%", height: "100%" }}
         >
-          <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
+          <ZoomableGroup key={mapKey} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
           <Geographies geography={districtsUrl(stateAbbr)}>
             {({ geographies }: { geographies: DistrictGeometry[] }) =>
               geographies.map((geo) => {

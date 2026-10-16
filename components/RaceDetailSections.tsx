@@ -6,6 +6,7 @@ import CandidateLink from "@/components/CandidateLink";
 import { FORECAST_CONSTANTS } from "@/data/tplModelData";
 import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
+import type { RaceFinanceDetail } from "@/data/fundraisingData";
 import { formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { getNationalEnvironment, incumbentAdvantage, type RacePolling, type RaceMoneyTerm } from "@/lib/tplCompute";
 
@@ -762,6 +763,7 @@ export function FundraisingLedgerSection({
   pendingNote,
   fundraisingPts,
   typicalGapPct,
+  detail,
 }: {
   // Whole dollars raised; null on either side = not yet sourced.
   dem: number | null;
@@ -776,6 +778,8 @@ export function FundraisingLedgerSection({
   // The receipts gap a generic pair of nominees in this situation would have (R-positive %);
   // the forecast pays points only on the gap beyond it (see raceMoneyTerm).
   typicalGapPct?: number | null;
+  // FEC cash on hand / spending / outside spending / small-dollar share (House/Senate only).
+  detail?: RaceFinanceDetail | null;
 }) {
   const typical = typicalGapPct == null ? null : Math.abs(typicalGapPct) < 0.5 ? "an even split" : `${typicalGapPct > 0 ? "R" : "D"}+${Math.abs(typicalGapPct).toFixed(0)}%`;
   if (dem == null || rep == null) {
@@ -871,9 +875,62 @@ export function FundraisingLedgerSection({
           </>
         )}
       </p>
+      {detail && <FinanceDetailRows detail={detail} />}
       <p className="mt-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
         Candidate-committee receipts, cycle to date{source ? ` · ${source}` : ""}.
         {(dem === 0 || rep === 0) && " $0 means no filings on record."}
+      </p>
+    </div>
+  );
+}
+
+function formatAsOf(iso: string | null): string | null {
+  if (!iso) return null;
+  const d = new Date(`${iso}T00:00:00Z`);
+  return d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
+}
+
+// Cash on hand, spending, outside spending and small-dollar share, D · R per row. Outside
+// spending on a side = independent expenditures supporting that candidate plus those opposing
+// the opponent, so the two columns read as "help" for each side.
+function FinanceDetailRows({ detail }: { detail: RaceFinanceDetail }) {
+  const d = detail.dem, r = detail.rep;
+  const help = (own?: RaceFinanceDetail["dem"], opp?: RaceFinanceDetail["dem"]) =>
+    own || opp ? (own?.ieFor ?? 0) + (opp?.ieAgainst ?? 0) : null;
+  const pct = (v: number | null | undefined) => (v == null ? null : `${Math.round(v * 100)}%`);
+  const money = (v: number | null | undefined) => (v == null ? null : formatReceipts(v));
+  const rows: { label: string; tip: string; dem: string | null; rep: string | null }[] = [
+    { label: "Cash on hand", tip: "Cash in the bank at the end of each campaign's latest FEC report.", dem: money(d?.cashOnHand), rep: money(r?.cashOnHand) },
+    { label: "Spent", tip: "Campaign disbursements this cycle to date.", dem: money(d?.spent), rep: money(r?.spent) },
+    {
+      label: "Outside spending",
+      tip: "Independent expenditures by super PACs, parties and other groups that support the candidate or oppose their opponent, from 24/48-hour FEC reports (whole cycle, primaries included).",
+      dem: money(help(d, r)), rep: money(help(r, d)),
+    },
+    { label: "Small-dollar share", tip: "Share of individual contributions given in amounts under $200 (unitemized).", dem: pct(d?.smallDollarShare), rep: pct(r?.smallDollarShare) },
+  ];
+  const visible = rows.filter((row) => row.dem != null || row.rep != null);
+  if (!visible.length) return null;
+  // Campaigns file on their own schedules, so the two sides' reports can end on different dates.
+  const dEnd = formatAsOf(d?.coverageEnd ?? null), rEnd = formatAsOf(r?.coverageEnd ?? null);
+  const reportThrough = dEnd && rEnd && dEnd !== rEnd ? `${dEnd} (D) and ${rEnd} (R)` : dEnd ?? rEnd;
+  const ieThrough = formatAsOf(detail.ieThrough);
+  return (
+    <div className="mt-3" style={{ borderTop: "1px solid var(--app-border)" }}>
+      {visible.map((row) => (
+        <div key={row.label} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={LEDGER_ROW_STYLE}>
+          <InfoTooltip label={row.label}>{row.tip}</InfoTooltip>
+          <span className="text-sm font-bold tabular-nums whitespace-nowrap">
+            <span style={{ color: partyAccent("D") }}>{row.dem ?? "—"}</span>
+            <span className="mx-1.5" style={{ color: "var(--app-text-very-muted)" }}>·</span>
+            <span style={{ color: partyAccent("R") }}>{row.rep ?? "—"}</span>
+          </span>
+        </div>
+      ))}
+      <p className="mt-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+        {reportThrough && `Campaign reports through ${reportThrough}`}
+        {reportThrough && ieThrough && " · "}
+        {ieThrough && `outside spending filed through ${ieThrough}`}.
       </p>
     </div>
   );

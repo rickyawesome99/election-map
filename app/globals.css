@@ -438,3 +438,8 @@ body {
    only used from inline color-mix() styles. */
 .poll-swatch[data-vs="better"] { background: color-mix(in srgb, var(--poll-better) 38%, transparent); }
 .poll-swatch[data-vs="worse"] { background: color-mix(in srgb, var(--poll-worse) 38%, transparent); }
+
+/* Map surfaces: no browser double-tap page zoom (pinch and the maps' own gestures still work). */
+.rsm-svg, .maplibregl-canvas-container {
+  touch-action: manipulation;
+}

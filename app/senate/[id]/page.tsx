@@ -10,15 +10,27 @@ import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProje
 import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
+import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace } from "@/lib/forecast";
 import { alignedParty } from "@/data/raceEligibility";
-import BackButton from "@/components/BackButton";
 import { pastElectionHref } from "@/lib/pastElections";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { StatePill, OfficePill, HeldPill, SeatArrows, PILL, type SeatNavLink } from "@/components/RaceHeroPills";
 
 const GENERAL_ELECTION = "November 3, 2026";
 
 // seatUrlId is the seat's URL id ("pa" / "pa2"); each row links to its /senate/[id]/[year] page when one exists.
+// The party the incumbent ran under at their latest win. senateNoElection/senateHoldovers store
+// the caucus party (King, Sanders → D) because the seat counts need it; the held pill shows
+// the senator's own label.
+function incumbentOwnParty(incumbent: string, caucusParty: "D" | "R" | "I", pastResults: PastResult[] | undefined): "D" | "R" | "I" {
+  for (const r of [...(pastResults ?? [])].sort((a, b) => b.year - a.year)) {
+    if (r.demCandidate === incumbent && r.demParty) return r.demParty;
+    if (r.repCandidate === incumbent && r.repParty) return r.repParty;
+  }
+  return caucusParty;
+}
+
 function enrichSenateResults(pastResults: PastResult[] | undefined, seatUrlId: string): DetailPastResult[] {
   if (!pastResults?.length) return [];
   const sorted = [...pastResults].sort((a, b) => a.year - b.year);
@@ -42,10 +54,7 @@ function isSpecialElection(electionType?: string) {
 
 function SpecialBadge() {
   return (
-    <span
-      className="text-xs font-semibold px-2 py-0.5 rounded-full whitespace-nowrap"
-      style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}
-    >
+    <span className={`${PILL} whitespace-nowrap`} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
       Special
     </span>
   );
@@ -53,6 +62,19 @@ function SpecialBadge() {
 
 function senateUrlId(id: string): string {
   return id.toLowerCase().replace(/-2$/, "2");
+}
+
+/** The state's other Senate seat page (seat 1 ↔ seat 2), for the arrows beside the title. Null
+ *  when that seat has no page (a state with only one seat on file). */
+function otherSenateSeat(id: string): { prev: SeatNavLink | null; next: SeatNavLink | null } {
+  const lc = id.toLowerCase();
+  const seat2 = /2$/.test(lc);
+  const otherId = seat2 ? lc.slice(0, -1) : `${lc}2`;
+  const exists = senateData.some((r) => senateUrlId(r.id) === otherId)
+    || (seat2 ? senateNoElection.some((e) => e.abbr.toLowerCase() === otherId) : senateHoldovers.some((e) => `${e.abbr.toLowerCase()}2` === otherId));
+  if (!exists) return { prev: null, next: null };
+  const link = { href: `/senate/${otherId}`, label: seat2 ? "Seat 1" : "Seat 2" };
+  return seat2 ? { prev: link, next: null } : { prev: null, next: link };
 }
 
 export async function generateStaticParams() {
@@ -94,9 +116,12 @@ function NoElectionPage({
   nextElection,
   termLength,
   seatLabel,
+  heldParty,
   raceDesc,
   pastResults,
+  pageId,
 }: {
+  pageId: string;
   state: string;
   abbr: string;
   incumbent: string;
@@ -104,6 +129,8 @@ function NoElectionPage({
   nextElection: number;
   termLength?: number;
   seatLabel: string;
+  // The incumbent's own label (King and Sanders are I here; `party` keeps their D caucus alignment).
+  heldParty: "D" | "R" | "I";
   raceDesc?: string;
   pastResults?: DetailPastResult[];
 }) {
@@ -122,22 +149,25 @@ function NoElectionPage({
           minHeight: "300px",
         }}
       >
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pb-10">
-          <div className="mb-5 -ml-2">
-            <BackButton />
-          </div>
+        <div className={`${PAGE_CONTAINER} pt-6 pb-8 sm:pb-10`}>
 
           <div className="flex flex-row items-start justify-between gap-4 sm:gap-6">
             <div className="min-w-0">
-              <div className="flex items-center gap-3 flex-wrap">
-                <a href={`/states/${abbr.toLowerCase()}`} aria-label={`View ${state} state page`} className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 hover:underline" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-                  {abbr}
-                </a>
+              <div className="flex items-center gap-2 flex-wrap">
+                <StatePill name={state} abbr={abbr} />
+                <OfficePill office="senate" />
+                <HeldPill party={heldParty} />
+              </div>
+              <div className="mt-2">
                 <h1
-                  className="whitespace-nowrap"
-                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
+                  className="inline"
+                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", textWrap: "balance", color: "var(--app-text-primary)" }}
                 >
-                  {state}
+                  {state} U.S.{" "}
+                  <span className="whitespace-nowrap">
+                    Senate
+                    <SeatArrows {...otherSenateSeat(pageId)} label="Other Senate seat" />
+                  </span>
                 </h1>
               </div>
               <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>{seatLabel}</div>
@@ -151,7 +181,7 @@ function NoElectionPage({
         </div>
       </div>
 
-      <main className="max-w-3xl mx-auto px-4 pb-10 sm:px-6">
+      <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
           <section>
             <LedgerSectionHead label="About this Seat" />
@@ -221,6 +251,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
     if (holdover) {
       return (
         <NoElectionPage
+          pageId={id}
           state={holdover.state}
           abbr={holdover.abbr}
           incumbent={holdover.incumbent}
@@ -228,6 +259,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           nextElection={holdover.nextElection}
           termLength={holdover.termLength}
           seatLabel={`U.S. Senate · Seat 2 · Not Up in ${electionYear}`}
+          heldParty={incumbentOwnParty(holdover.incumbent, holdover.party, holdover.pastResults)}
           raceDesc={holdover.raceDesc}
           pastResults={enrichSenateResults(holdover.pastResults, `${holdover.abbr.toLowerCase()}2`)}
         />
@@ -239,6 +271,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
     if (noEl) {
       return (
         <NoElectionPage
+          pageId={id}
           state={noEl.state}
           abbr={noEl.abbr}
           incumbent={noEl.incumbent}
@@ -246,6 +279,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           nextElection={noEl.nextElection}
           termLength={noEl.termLength}
           seatLabel={`U.S. Senate · No Election in ${electionYear}`}
+          heldParty={incumbentOwnParty(noEl.incumbent, noEl.party, noEl.pastResults)}
           raceDesc={noEl.raceDesc}
           pastResults={enrichSenateResults(noEl.pastResults, noEl.abbr.toLowerCase())}
         />
@@ -265,6 +299,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
   const incumbentPts = computeIncumbentPts("S", incumbentParty, incumbent?.appointed ?? false);
   const fundraising = raceFundraising2026("senate", race.id);
   const fundraisingSource = raceFundraisingSource2026("senate", race.id);
+  const financeDetail = raceFinanceDetail2026("senate", race.id);
   const moneyTerm = raceMoneyTerm(race);
   const fundraisingPts = moneyTerm.pts;
   const gb = effectiveEnvironment(abbr);
@@ -302,26 +337,29 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           minHeight: "300px",
         }}
       >
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pb-10">
-          <div className="mb-5 -ml-2">
-            <BackButton />
-          </div>
+        <div className={`${PAGE_CONTAINER} pt-6 pb-8 sm:pb-10`}>
 
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             <div className="min-w-0">
-              <div className="flex items-center gap-3 flex-wrap">
-                <a href={`/states/${abbr.toLowerCase()}`} aria-label={`View ${race.name} state page`} className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 hover:underline" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-                  {abbr}
-                </a>
-                <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full shrink-0" style={{ background: bg, color: text }}>
+              <div className="flex items-center gap-2 flex-wrap">
+                <StatePill name={race.name} abbr={abbr} />
+                <OfficePill office="senate" />
+                <span className={PILL} style={{ background: bg, color: text }}>
                   {forecastRating}
                 </span>
                 {isSpecialElection(race.electionType) && <SpecialBadge />}
+                <HeldPill party={currentSenatorParty} />
+              </div>
+              <div className="mt-2">
                 <h1
-                  className="whitespace-nowrap"
-                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
+                  className="inline"
+                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", textWrap: "balance", color: "var(--app-text-primary)" }}
                 >
-                  {race.name}
+                  {race.name} U.S.{" "}
+                  <span className="whitespace-nowrap">
+                    Senate
+                    <SeatArrows {...otherSenateSeat(id)} label="Other Senate seat" />
+                  </span>
                 </h1>
               </div>
               <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
@@ -379,7 +417,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
         </div>
       </div>
 
-      <main className="max-w-3xl mx-auto px-4 pb-10 sm:px-6">
+      <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
 
           <section>
@@ -424,6 +462,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               pendingNote={`no ${electionYear} FEC filings on record for this race yet`}
               fundraisingPts={fundraisingPts}
               typicalGapPct={moneyTerm.structuralGapPct}
+              detail={financeDetail}
             />
           </section>
 
@@ -459,6 +498,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
             <LedgerSectionHead label="Projected County Results" meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {countyProjection ? (
               <PastElectionCountyMap
+                panelSize="wide"
                 stateAbbr={abbr}
                 stateName={race.name}
                 counties={projectedCountyMapEntries(countyProjection)}

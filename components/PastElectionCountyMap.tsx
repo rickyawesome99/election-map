@@ -1,11 +1,15 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { getRaceColor } from "@/lib/colorScale";
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import { countyDisplayName } from "@/lib/countyName";
+import { isRealName } from "@/lib/personName";
+import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
 
 // County choropleth of ONE past statewide election. Results arrive as props from the server
 // page (never imported here — the county data files are server-only), the geometry is the
@@ -25,12 +29,6 @@ export type CountyMapResult = {
 export type CountyMapEntry = { fips: string; name: string; result: CountyMapResult };
 
 const countiesUrl = (stateAbbr: string) => `/state-counties/${stateAbbr}.json`;
-
-function areaLabelFor(abbr: string): string {
-  if (abbr === "LA") return "Parish";
-  if (abbr === "AK") return "Borough";
-  return "County";
-}
 
 const STATE_PROJ: Record<string, [number, number, number]> = {
   AL: [-86.8, 32.8, 4800],  AK: [-153.0, 64.0, 900],   AZ: [-111.7, 34.3, 3600],
@@ -55,16 +53,6 @@ const STATE_PROJ: Record<string, [number, number, number]> = {
 type CountyGeometry = { rsmKey: string; id?: string | number; properties?: { name?: string } };
 type Hovered = { fips: string; name: string; result: CountyMapResult | null };
 
-function partyColor(party: string): string {
-  return party === "R" ? "var(--party-rep)" : party === "I" ? "var(--party-ind)" : "var(--party-dem)";
-}
-
-function fmtSigned(margin: number, demParty: string, repParty: string): string {
-  if (Math.abs(margin) < 0.05) return "EVEN";
-  const letter = margin > 0 ? repParty : demParty;
-  return `${letter}+${Math.abs(margin).toFixed(1)}`;
-}
-
 export default function PastElectionCountyMap({
   stateAbbr,
   stateName,
@@ -76,6 +64,8 @@ export default function PastElectionCountyMap({
   height = 300,
   caption,
   reservePanel = false,
+  panelSize = "compact",
+  fill = false,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -89,6 +79,12 @@ export default function PastElectionCountyMap({
   caption?: ReactNode;
   /** Keep the selected-county panel's space even when nothing is selected (an invisible stand-in). */
   reservePanel?: boolean;
+  /** The click panel's layout: "wide" where the map has the page's full width (race pages). */
+  panelSize?: "compact" | "wide" | "small";
+  /** Desktop only: fill a parent of fixed height (a flex column) instead of setting it. The map
+   *  takes `height` when there's room and gives up space down to 180px when the selected
+   *  county's panel needs it, so opening a panel never makes the column taller. */
+  fill?: boolean;
 }) {
   const byFips = useMemo(() => new Map(counties.map((c) => [c.fips, c.result])), [counties]);
   // A same-party contest (CA 2016/2018 Senate: two Democrats) is shaded in that party's colour
@@ -103,7 +99,13 @@ export default function PastElectionCountyMap({
 
   const [hovered, setHovered] = useState<Hovered | null>(null);
   const [selected, setSelected] = useState<Hovered | null>(null);
-  const panel: Hovered | null = selected ?? (reservePanel && counties[0] ? counties[0] : null);
+  // With reservePanel the panel's space is held open by an invisible stand-in stacked in the
+  // same grid cell as the real panel, so opening a county can grow the space but never shrink
+  // it (the state page sizes its counties table to this column). The stand-in is the tallest
+  // shape there is: a county with an Other row.
+  const standIn: Hovered | null = reservePanel
+    ? counties.find((c) => c.result.totalVotes - c.result.demVotes - c.result.repVotes > 0) ?? counties[0] ?? null
+    : null;
   const { onMouseMove: onTooltipMove, tooltipRef } = useMapTooltip(12, 8);
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -128,37 +130,25 @@ export default function PastElectionCountyMap({
   }, [measure]);
 
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
-  const areaLabel = areaLabelFor(stateAbbr);
   const mapStroke = "var(--app-bg)";
   const hoverStroke = "var(--app-text-primary)";
 
-  const detail = (c: Hovered) => c.result ? (
-    <>
-      <div className="mt-1 text-[11px] font-semibold tabular-nums" style={{ color: partyColor(c.result.margin > 0 ? repParty : demParty) }}>
-        {fmtSigned(c.result.margin, demParty, repParty)}
-      </div>
-      <div className="mt-0.5 text-[10px] tabular-nums" style={{ color: "var(--app-text-muted)" }}>
-        <div className="flex justify-between gap-3" style={{ color: partyColor(demParty) }}><span className="truncate">{demName}</span><span>{c.result.demPct.toFixed(1)}% · {c.result.demVotes.toLocaleString()}</span></div>
-        <div className="flex justify-between gap-3" style={{ color: partyColor(repParty) }}><span className="truncate">{repName}</span><span>{c.result.repPct.toFixed(1)}% · {c.result.repVotes.toLocaleString()}</span></div>
-      </div>
-    </>
-  ) : (
-    <div className="mt-1 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>No county result on file</div>
-  );
+  // One description of a county, drawn as the hover popup and as the click panel.
+  const card = (c: Hovered): CountyTooltipProps => {
+    const title = countyDisplayName(c.fips, c.name);
+    if (!c.result) return { kind: "message", title, message: "No county result on file." };
+    return {
+      kind: "result", title,
+      dem: { name: demName, link: isRealName(demName), party: demParty, pct: c.result.demPct, votes: c.result.demVotes },
+      rep: { name: repName, link: isRealName(repName), party: repParty, pct: c.result.repPct, votes: c.result.repVotes },
+      margin: c.result.margin, totalVotes: c.result.totalVotes,
+    };
+  };
 
   return (
-    <div>
-      <div ref={containerRef} className="relative" style={{ height, background: "var(--app-bg)" }} onMouseMove={onTooltipMove}>
-        {hovered && (
-          <div
-            ref={tooltipRef}
-            className="absolute z-20 hidden pointer-events-none rounded-lg md:block"
-            style={{ width: 200, padding: "8px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.2)" }}
-          >
-            <div className="font-bold text-xs" style={{ color: "var(--app-text-primary)" }}>{hovered.name} {areaLabel}</div>
-            {detail(hovered)}
-          </div>
-        )}
+    <div className={fill ? "md:flex md:h-full md:flex-col" : undefined}>
+      <div ref={containerRef} className={`relative${fill ? " md:min-h-[180px] md:shrink" : ""}`} style={{ height, background: "var(--app-bg)" }} onMouseMove={onTooltipMove}>
+        {hovered && <CountyTooltip {...card(hovered)} boxRef={tooltipRef} className="absolute z-20 hidden md:block" />}
 
         <ComposableMap
           width={mapViewport.width}
@@ -167,7 +157,15 @@ export default function PastElectionCountyMap({
           projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
           style={{ width: "100%", height: "100%" }}
         >
-          <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
+          {/* Keyed on the viewport too: when the map resizes (a panel opening under a `fill` map,
+              a window resize) the zoom layer keeps its old transform and the state lands off-screen,
+              so it starts fresh at the new size instead. Only a move the reader made (a d3 event
+              with a sourceEvent) offers Reset; the remount's own move does not. */}
+          <ZoomableGroup
+            key={`${mapKey}:${mapViewport.width}x${mapViewport.height}`}
+            filterZoomEvent={filterMapZoomEvent}
+            onMoveEnd={(_: unknown, e?: { sourceEvent?: unknown }) => { if (e?.sourceEvent) setViewChanged(true); }}
+          >
             <Geographies geography={countiesUrl(stateAbbr)}>
               {({ geographies }: { geographies: CountyGeometry[] }) =>
                 geographies.map((geo) => {
@@ -208,26 +206,20 @@ export default function PastElectionCountyMap({
       </div>
 
       {caption}
-      {panel && (
-        <div className="mt-2 px-1 py-3" style={{ borderTop: "1px solid var(--app-border)", visibility: selected ? undefined : "hidden" }} aria-hidden={!selected}>
-          <div className="flex items-start justify-between gap-2">
-            <div className="min-w-0 flex-1">
-              <div className="font-semibold text-sm" style={{ color: "var(--app-text-primary)" }}>{panel.name} {areaLabel}</div>
-              <div className="text-xs mt-0.5" style={{ color: "var(--app-text-muted)" }}>{stateName} · FIPS {panel.fips}</div>
-              <div className="text-xs">{detail(panel)}</div>
-              <a href={`/historical/${panel.fips}`} className="mt-2 inline-block text-xs font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>
-                Go to county page →
-              </a>
+      {(selected || standIn) && (
+        <div className={`grid px-1 ${panelSize === "small" ? "mt-1 pt-2" : "mt-2 py-3"}`} style={{ borderTop: "1px solid var(--app-border)", visibility: selected ? undefined : "hidden" }} aria-hidden={!selected}>
+          {[standIn, selected].map((c, i) => c && (
+            <div key={i} className={`col-start-1 row-start-1${i === 0 ? " invisible" : ""}`} aria-hidden={i === 0 || undefined}>
+              <CountyTooltip
+                {...card(c)}
+                variant="panel"
+                size={panelSize}
+                subtitle={`${stateName} · FIPS ${c.fips}`}
+                aside={<CountyCardClose onClick={() => setSelected(null)} />}
+                footer={<CountyCardLink href={`/historical/${c.fips}`} />}
+              />
             </div>
-            <button
-              onClick={() => setSelected(null)}
-              className="shrink-0 flex h-9 w-9 items-center justify-center rounded text-xl leading-none"
-              aria-label="Close county details"
-              style={{ color: "var(--app-text-muted)", background: "var(--app-bg)" }}
-            >
-              ×
-            </button>
-          </div>
+          ))}
         </div>
       )}
     </div>
