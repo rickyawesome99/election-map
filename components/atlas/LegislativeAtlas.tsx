@@ -10,10 +10,11 @@ import AtlasDistrictDetail from "./AtlasDistrictDetail";
 import { LocatorMap } from "./AtlasEraMaps";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { useStateLegResults } from "@/lib/useStateLegResults";
-import { atlasSliceUrl, contest2026, districtHash, keyFromHash, resultMargin, shortDistrictName, type AtlasChamber, type AtlasDistrict } from "@/lib/stateLegAtlas";
+import { atlasSliceUrl, contest2026, projectedSeatWinners, districtHash, keyFromHash, resultMargin, shortDistrictName, type AtlasChamber, type AtlasDistrict } from "@/lib/stateLegAtlas";
 import { summarizeUpcoming } from "@/lib/stateLegUpcoming";
 import { candidateSlug } from "@/lib/candidateSlug";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
+import { flipBackground, flipFill } from "@/components/FlipStripes";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
 import type { ChamberMapInfo } from "@/data/stateLegMapInfo";
 import type { StateLegCalendar } from "@/data/stateLegCalendar";
@@ -49,6 +50,26 @@ function fmtIndep(advantage: number, opp: "D" | "R"): string {
   return Math.abs(advantage) < 0.05 ? "Even" : `${advantage > 0 ? "I" : opp}+${Math.abs(advantage).toFixed(1)}`;
 }
 
+/** A seat projected to change hands in the projection view: every sitting member is of one party
+ *  and the projected winner (the map's colour) is another. Vacant seats, mixed delegations and
+ *  districts not on the ballot are never marked; margin 0 counts as D, as on the forecast maps. */
+function projectedFlip(d: AtlasDistrict): { from: "D" | "R" | "I"; to: "D" | "R" | "I" } | null {
+  const pr = d.projection;
+  if (!pr) return null;
+  const parties = new Set(d.incumbents.map((i) => (i.party === "O" ? "I" : i.party)));
+  if (parties.size !== 1) return null;
+  const from = [...parties][0];
+  const byMargin = (m: number) => (m <= 0 ? "D" : "R") as "D" | "R";
+  let to: "D" | "R" | "I" | null = null;
+  if (pr.contest === "contested" && pr.margin != null) to = byMargin(pr.margin);
+  else if (pr.contest === "uncontested-D") to = "D";
+  else if (pr.contest === "uncontested-R") to = "R";
+  else if (pr.contest === "independent" && pr.pI != null && pr.margin != null) to = pr.pI >= 0.5 ? "I" : byMargin(pr.margin);
+  else if (pr.contest === "other" && pr.pI === 1) to = "I";
+  return to && to !== from ? { from, to } : null;
+}
+const FLIP_LEGEND = { label: "Projected flip", bg: flipBackground("#6e7781") };
+
 /** The box grid's hover card for one district under the current color mode. */
 function boxTip(d: AtlasDistrict, mode: ColorMode, year: number | null, electionYear: number): BoxTip {
   const heading = d.label;
@@ -59,6 +80,8 @@ function boxTip(d: AtlasDistrict, mode: ColorMode, year: number | null, election
     const lines: BoxTipLine[] = field.length
       ? field.map((c) => ({ label: c.name, color: PARTY_TEXT[c.party], sub: [c.post ? `pos. ${c.post}` : "", c.incumbent ? "inc." : "", c.writeIn ? "write-in" : ""].filter(Boolean).join(" · ") || undefined, value: c.party === "O" ? (c.partyLabel ?? "Other").replace(/ Party$/, "") : c.party }))
       : [{ label: "No candidates listed yet" }];
+    const flip = projectedFlip(d);
+    if (flip) lines.push({ label: "Projected flip", value: `${flip.from} → ${flip.to}`, color: PARTY_TEXT[flip.to] });
     if (pr.contest === "contested" && pr.margin != null) {
       const g = pr.guaranteed && (pr.guaranteed.dem || pr.guaranteed.rep) ? ` · decided by the field: ${[pr.guaranteed.dem ? `${pr.guaranteed.dem} D` : "", pr.guaranteed.rep ? `${pr.guaranteed.rep} R` : ""].filter(Boolean).join(", ")}` : "";
       return { heading, lines, total: { label: `Projected${pr.rating ? ` · ${pr.rating}` : ""}`, value: fmtMargin(pr.margin), color: marginColor(pr.margin) }, note: pr.pD != null ? `P(Democratic) ${Math.round(pr.pD * 100)}% · P(Republican) ${Math.round((1 - pr.pD) * 100)}%${g}` : undefined };
@@ -323,6 +346,7 @@ export default function LegislativeAtlas({
           fill,
           darkText,
           dimmed: !passes(d),
+          flip: mode === "projection" && fill !== NO_DATA && !!projectedFlip(d),
           tip: boxTip(d, mode, activeYear, electionYear),
           title: `${d.label} · ${inc}${p != null ? ` · 2024 pres ${p > 0 ? "R" : "D"}+${Math.abs(p).toFixed(1)}` : ""}${c ? ` · ${electionYear}: ${c.label}` : isUp(d) ? ` · up in ${electionYear}` : ""}`,
         };
@@ -341,35 +365,7 @@ export default function LegislativeAtlas({
   // The counter in the projection view: each district's seats go to its projected leader (the
   // map's colour), an uncontested seat to the only major party on the ballot, and seats not up
   // to their sitting member. Whole chamber, like the other counters.
-  const projectedSeats = useMemo((): ProjectedSeats | null => {
-    if (mode !== "projection") return null;
-    const out: ProjectedSeats = { D: 0, R: 0, I: 0, O: 0, none: 0 };
-    for (const d of districts) {
-      const pr = d.projection;
-      const total = d.seats ?? Math.max(d.incumbents.length, 1);
-      const up = !pr || pr.contest === "not-up" ? 0 : Math.min(pr.seats, total);
-      if (up > 0) {
-        const winner = pr!.contest === "uncontested-D" ? "D" : pr!.contest === "uncontested-R" ? "R" : pr!.contest === "contested" && pr!.margin != null ? (pr!.margin <= 0 ? "D" : "R")
-          : pr!.contest === "other" && pr!.pI === 1 ? "I" : null;
-        const g = pr!.guaranteed ?? { dem: 0, rep: 0 };
-        if (pr!.contest === "split" || (pr!.contest === "contested" && (g.dem || g.rep))) {
-          // Seats the field decides go to their party; the rest follow the margin.
-          out.D += Math.min(up, g.dem); out.R += Math.min(up - Math.min(up, g.dem), g.rep);
-          const rest = Math.max(0, up - g.dem - g.rep);
-          if (rest) { if (winner) out[winner] += rest; else out.none += rest; }
-        } else if (pr!.contest === "independent" && pr!.indep && pr!.pI != null) {
-          // The independent's one seat; a multi-member district's others go to the party's nominees.
-          const party = pr!.indep.slot === "D" ? "R" : "D";
-          out[pr!.pI >= 0.5 ? "I" : party] += Math.min(up, pr!.indep.seats);
-          out[party] += Math.max(0, up - pr!.indep.seats);
-        } else if (winner) out[winner] += up;
-        else out.none += up;
-      }
-      // Seats not on the ballot (the whole district, or a staggered share of a multi-member one).
-      for (const inc of d.incumbents.slice(0, total - up)) out[inc.party as keyof ProjectedSeats] = (out[inc.party as keyof ProjectedSeats] ?? 0) + 1;
-    }
-    return out;
-  }, [mode, districts]);
+  const projectedSeats = useMemo((): ProjectedSeats | null => (mode === "projection" ? projectedSeatWinners(districts) : null), [mode, districts]);
   const fmtM = (m: number) => (Math.abs(m) < 0.05 ? "Even" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
   const customShading = useMemo(() => {
     if (mode !== "projection") return null;
@@ -408,8 +404,17 @@ export default function LegislativeAtlas({
         tip[d.key] = [{ label: "No projection", value: pr.contest === "other" ? "nonpartisan or no major-party field" : "no candidates listed" }];
       }
     }
-    const legend = ["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map((label) => ({ label, bg: getRatingColors(label).bg }));
-    return { fill, tip, legend, note: `${electionYear} projection: lean on today's lines + national environment + incumbency; solid party colour = only one major party on the ballot.` };
+    // Stripe the seats projected to change hands over their projected colour.
+    const flipColors: string[] = [];
+    for (const d of districts) {
+      const flip = fill[d.key] ? projectedFlip(d) : null;
+      if (!flip) continue;
+      flipColors.push(fill[d.key]);
+      fill[d.key] = flipFill(fill[d.key]);
+      tip[d.key].push({ label: "Projected flip", value: `${flip.from} → ${flip.to}`, color: PARTY_TEXT[flip.to] });
+    }
+    const legend = [...["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map((label) => ({ label, bg: getRatingColors(label).bg })), FLIP_LEGEND];
+    return { fill, tip, legend, flipColors, note: `${electionYear} projection: lean on today's lines + national environment + incumbency; solid party colour = only one major party on the ballot; stripes = projected to change hands.` };
   }, [mode, districts, electionYear]);
 
   // ── District view navigation: ‹ › step through the filtered set when the district is in it ──
@@ -565,7 +570,7 @@ export default function LegislativeAtlas({
                 <div className="h-24 rounded" style={{ background: "var(--app-tab-bg)" }} />
               )}
               <p className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-                {mode === "projection" && `Color is the projected ${electionYear} margin; a solid party colour means only one major party is on the ballot; dark grey is an independent favored (or no major party on the ballot); purple means every seat is decided by the field, split between the parties; light grey means no projection.`}
+                {mode === "projection" && `Color is the projected ${electionYear} margin; stripes mark a seat projected to change hands; a solid party colour means only one major party is on the ballot; dark grey is an independent favored (or no major party on the ballot); purple means every seat is decided by the field, split between the parties; light grey means no projection.`}
                 {mode === "seats" && "Color is the sitting member's party; purple = members of both parties."}
                 {mode === "president" && "Color is the 2024 presidential margin on today's lines."}
                 {mode === "results" && `Color is the ${activeYear} result for each district number${historicalVintage ? `, on the ${activeYear} lines (which may cover different ground than today's district)` : ""}.`}

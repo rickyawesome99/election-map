@@ -79,6 +79,8 @@ export type AtlasProjection = {
   pI?: number | null;
   /** The independent-vs-party contest (lib/stateLegForecast.ts IndependentContest, as shipped). */
   indep?: AtlasIndependent | null;
+  /** Projected votes cast in the race as the ballot stands (lib/stateLegPopularVote.ts raw split); absent where the state prints no count. */
+  votes?: { total: number; dem: number; rep: number; oth: number };
 };
 
 export type AtlasIndependent = {
@@ -95,6 +97,62 @@ export type AtlasIndependent = {
   seats: number;
   sameElectorate: boolean;
 };
+
+/** Seats by projected winner: D, R, independents (I where modeled or the only field, O a sitting
+ *  member of a minor party), and seats on the ballot with no projection. */
+export type SeatWinners = { D: number; R: number; I: number; O: number; none: number };
+
+/** The minimum a district needs for {@link projectedSeatWinners}: its projection (the server's
+ *  DistrictProjection or the atlas slice's AtlasProjection) plus its seat count and sitting members. */
+export type SeatWinnerDistrict = {
+  seats?: number;
+  incumbents: { party: string }[];
+  projection?: {
+    contest: AtlasProjection["contest"];
+    seats: number;
+    margin: number | null;
+    pI?: number | null;
+    guaranteed?: { dem: number; rep: number };
+    indep?: { slot: "D" | "R"; seats: number } | null;
+  } | null;
+};
+
+/**
+ * The chamber after the election as the sum of each seat's projected winner — the count the
+ * chamber map and the projection headline both show. A contested seat goes to the side of its
+ * margin (0 counts as D), an uncontested one to the only major party on the ballot, seats the
+ * field decides to their party, a modeled independent's seat to whoever is favored, and seats
+ * not on the ballot (the whole district, or a staggered share of one) to their sitting members.
+ */
+export function projectedSeatWinners(districts: SeatWinnerDistrict[]): SeatWinners {
+  const out: SeatWinners = { D: 0, R: 0, I: 0, O: 0, none: 0 };
+  const add = (k: string, n: number) => { const key = (k in out ? k : "O") as keyof SeatWinners; out[key] += n; };
+  for (const d of districts) {
+    const pr = d.projection;
+    const total = d.seats ?? Math.max(d.incumbents.length, 1);
+    const up = !pr || pr.contest === "not-up" ? 0 : Math.min(pr.seats, total);
+    if (pr && up > 0) {
+      const winner = pr.contest === "uncontested-D" ? "D" : pr.contest === "uncontested-R" ? "R" : pr.contest === "contested" && pr.margin != null ? (pr.margin <= 0 ? "D" : "R")
+        : pr.contest === "other" && pr.pI === 1 ? "I" : null;
+      const g = pr.guaranteed ?? { dem: 0, rep: 0 };
+      if (pr.contest === "split" || (pr.contest === "contested" && (g.dem || g.rep))) {
+        // Seats the field decides go to their party; the rest follow the margin.
+        out.D += Math.min(up, g.dem); out.R += Math.min(up - Math.min(up, g.dem), g.rep);
+        const rest = Math.max(0, up - g.dem - g.rep);
+        if (rest) { if (winner) out[winner] += rest; else out.none += rest; }
+      } else if (pr.contest === "independent" && pr.indep && pr.pI != null) {
+        // The independent's one seat; a multi-member district's others go to the party's nominees.
+        const party = pr.indep.slot === "D" ? "R" : "D";
+        out[pr.pI >= 0.5 ? "I" : party] += Math.min(up, pr.indep.seats);
+        out[party] += Math.max(0, up - pr.indep.seats);
+      } else if (winner) out[winner] += up;
+      else out.none += up;
+    }
+    // Seats not on the ballot (the whole district, or a staggered share of a multi-member one).
+    for (const inc of d.incumbents.slice(0, total - up)) add(inc.party, 1);
+  }
+  return out;
+}
 
 /** "O" where the modeled independent is favored, for map fills and seat tallies. */
 export function independentWinner(pr: Pick<AtlasProjection, "contest" | "pI">): "O" | null {

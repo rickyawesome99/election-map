@@ -1,0 +1,832 @@
+{
+ "state": "ND",
+ "cycle": 2024,
+ "source": "North Dakota Secretary of State (year-end statements)",
+ "dataThrough": "12/31/2024",
+ "house": {
+  "2": [
+   {
+    "name": "Anderson, Bert",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 22314.46,
+    "expenditures": null
+   },
+   {
+    "name": "Dhuyvetter, Betty",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Longmuir, Donald",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 25562.94,
+    "expenditures": null
+   },
+   {
+    "name": "Nygaard, Gene",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1281,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Anderson, Dick",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 19700,
+    "expenditures": null
+   },
+   {
+    "name": "VOLLMER, DANIEL",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 12748.48,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Berg, Mike",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 47763,
+    "expenditures": null
+   },
+   {
+    "name": "Olson, SuAnn",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6045.73,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Dakane, Hamida",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 29721.81,
+    "expenditures": null
+   },
+   {
+    "name": "Hendrix, Jared",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 91812.08,
+    "expenditures": null
+   },
+   {
+    "name": "Swiontek, Steven",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 202412.54,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Ostlie, Mitchell",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 8073.48,
+    "expenditures": null
+   },
+   {
+    "name": "Satrom, Bernie",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5250,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Hawkes, Jessica",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1075,
+    "expenditures": null
+   },
+   {
+    "name": "Jelsing, Catherine",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3736.8,
+    "expenditures": null
+   },
+   {
+    "name": "Nelson, Jon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 25200,
+    "expenditures": null
+   },
+   {
+    "name": "weisz, robin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 34200,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Koppelman, Ben",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 74448.48,
+    "expenditures": null
+   },
+   {
+    "name": "Marschall, Andrew",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11048.48,
+    "expenditures": null
+   },
+   {
+    "name": "Weiss, Phil",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4093.5,
+    "expenditures": null
+   },
+   {
+    "name": "West, Julie",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13400,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Adams, Mary",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9970.55,
+    "expenditures": null
+   },
+   {
+    "name": "Christianson, Nels",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 16758.48,
+    "expenditures": null
+   },
+   {
+    "name": "Nelson, Scott",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2540.27,
+    "expenditures": null
+   },
+   {
+    "name": "Vetter, Steve",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 36562,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Beltz, Michael",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 13443.98,
+    "expenditures": null
+   },
+   {
+    "name": "HAGERT, JARED",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11700,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Hansen, Darrell",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12494,
+    "expenditures": null
+   },
+   {
+    "name": "Pyle, Brandy",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 19533.16,
+    "expenditures": null
+   },
+   {
+    "name": "Warrey, Jonathan",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15022,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Farnham, Nancy",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14802.23,
+    "expenditures": null
+   },
+   {
+    "name": "Johnston Sr, Daniel",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15804.49,
+    "expenditures": null
+   },
+   {
+    "name": "kiefert, dwight",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15132.24,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Maki, Roger",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 8271.24,
+    "expenditures": null
+   },
+   {
+    "name": "Olson, Jeremy",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 49217.18,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Brandenburg, Michael",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 35100,
+    "expenditures": null
+   },
+   {
+    "name": "Dux, Sara",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 296.05,
+    "expenditures": null
+   },
+   {
+    "name": "grueneich, jim",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 12000,
+    "expenditures": null
+   },
+   {
+    "name": "Schlosser, Mary",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1517.21,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Bosch, Glenn",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 41809.91,
+    "expenditures": null
+   },
+   {
+    "name": "nathe, mike",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 42004.2,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Heinert, Patrick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 23041,
+    "expenditures": null
+   },
+   {
+    "name": "Meier, Lisa",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 21764.48,
+    "expenditures": null
+   },
+   {
+    "name": "Orser, Shari",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11958.54,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Porter, Todd",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 33408.48,
+    "expenditures": null
+   },
+   {
+    "name": "Toman, Nathan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 23464.48,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "Dressler, Ty",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3448.48,
+    "expenditures": null
+   },
+   {
+    "name": "Hauck, Dori",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5448.48,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Hermosillo, Lisa",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6500,
+    "expenditures": null
+   },
+   {
+    "name": "Ruby, Dan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 19900.48,
+    "expenditures": null
+   },
+   {
+    "name": "Wolff, Christina",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6233.48,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Bolinske, Macy",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 13411.29,
+    "expenditures": null
+   },
+   {
+    "name": "Deufel, Alexandra",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11703,
+    "expenditures": null
+   },
+   {
+    "name": "Ruby, Matthew",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 13950,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "Grossbauer, Sarah",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11677,
+    "expenditures": null
+   },
+   {
+    "name": "Hagen, Carol",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13557.99,
+    "expenditures": null
+   },
+   {
+    "name": "O'Brien, Emily",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 110603.16,
+    "expenditures": null
+   },
+   {
+    "name": "Osowski, Douglas",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 20205.14,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "Foss, Austin",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9860.93,
+    "expenditures": null
+   },
+   {
+    "name": "Hanson, Karla",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 27192.4,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "Kasper, Jim",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 84078,
+    "expenditures": null
+   },
+   {
+    "name": "Morton, Desiree",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 29333.48,
+    "expenditures": null
+   },
+   {
+    "name": "Reisenauer, Todd",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 28330,
+    "expenditures": null
+   },
+   {
+    "name": "Thompson, Will",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12379.89,
+    "expenditures": null
+   }
+  ],
+  "4A": [
+   {
+    "name": "Brugh, Ronald",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1900,
+    "expenditures": null
+   },
+   {
+    "name": "Deville, Lisa",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13399.24,
+    "expenditures": null
+   }
+  ],
+  "4B": [
+   {
+    "name": "Fegley, clayton",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5323.48,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "2": [
+   {
+    "name": "Enget, Mark",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 50298,
+    "expenditures": null
+   },
+   {
+    "name": "Tanberg, Rosemary",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3680,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Walen, Charles",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6050,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Thomas, Paul",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 39208.48,
+    "expenditures": null
+   },
+   {
+    "name": "Tolar, Robert",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 1030.26,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Magrum, Jeffery",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3545,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Braunberger, Ryan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16073.66,
+    "expenditures": null
+   },
+   {
+    "name": "Roughead, George",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 39395,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Conley, Cole",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 37998.48,
+    "expenditures": null
+   },
+   {
+    "name": "Schloegel, Olivia",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20427,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Klein, Jerry",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 49450.48,
+    "expenditures": null
+   },
+   {
+    "name": "Nelson, Mark",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1205,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Clemens, David",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15298.48,
+    "expenditures": null
+   },
+   {
+    "name": "Tyulyandin, Heather",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6818.84,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Meyer, Scott",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 42768.48,
+    "expenditures": null
+   },
+   {
+    "name": "Thorson, Kyle",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 16694.38,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Lemm, Randy",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 14450,
+    "expenditures": null
+   },
+   {
+    "name": "Pederson, John",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Weber, Mark",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11831.81,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Gjovik, Knut",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6789,
+    "expenditures": null
+   },
+   {
+    "name": "Wobbema, Michael",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 28871.67,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Patten, Dale",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 32348.48,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Erbele, Robert",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 18950,
+    "expenditures": null
+   },
+   {
+    "name": "Schlosser, Richard",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2267.21,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Larson, Diane",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 37102.68,
+    "expenditures": null
+   },
+   {
+    "name": "Zimny, Matthew",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7880,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Dever, Dick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17889.48,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Gerhardt, Justin",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 28839.48,
+    "expenditures": null
+   },
+   {
+    "name": "Johnson, Joshua",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8062.9,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "van Oosting, Desiree",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3298.48,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "hogue, david",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 19150,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Castaneda, Jose",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 12952.95,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "Cory, Claire",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 48150.7,
+    "expenditures": null
+   },
+   {
+    "name": "Gigstad, Rodney",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9874.64,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "Boschee, Joshua",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 26792.26,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "Arneson, Jessica",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14025,
+    "expenditures": null
+   },
+   {
+    "name": "Powers, Michelle",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 20900,
+    "expenditures": null
+   }
+  ]
+ }
+}

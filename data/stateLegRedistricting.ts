@@ -37562,1365 +37562,34 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
   }
  },
  "DE": {
-  "house": {
-   "current": {
-    "1": {
-     "contributors": [
-      {
-       "areaPct": 89.4,
-       "key": "1",
-       "popPct": 86.1
-      },
-      {
-       "areaPct": 10.6,
-       "key": "4",
-       "popPct": 13.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 21827,
-     "pres2020New": -80.2,
-     "pres2020Old": -81.3,
-     "retainedAreaPct": 89.4,
-     "retainedPopPct": 86.1,
-     "text": "Kept 86% of its population from the 2016–2020 HD-1; gained the rest from the old HD-4 (14%). Entirely in New Castle County. 2020 presidential margin D+81.3 on the 2016–2020 lines → D+80.2 on the current lines.",
-     "toEra": "current"
-    },
-    "2": {
-     "contributors": [
-      {
-       "areaPct": 94.7,
-       "key": "2",
-       "popPct": 88.4
-      },
-      {
-       "areaPct": 1,
-       "key": "4",
-       "popPct": 5.2
-      },
-      {
-       "areaPct": 0.8,
-       "key": "1",
-       "popPct": 3.6
-      },
-      {
-       "areaPct": 3.5,
-       "key": "13",
-       "popPct": 2.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 24787,
-     "pres2020New": -77.5,
-     "pres2020Old": -80.8,
-     "retainedAreaPct": 94.7,
-     "retainedPopPct": 88.4,
-     "text": "Kept 88% of its population from the 2016–2020 HD-2; gained the rest from the old HD-4 (5%), the old HD-1 (4%), the old HD-13 (3%). Entirely in New Castle County. 2020 presidential margin D+80.8 on the 2016–2020 lines → D+77.5 on the current lines.",
-     "toEra": "current"
-    },
-    "3": {
-     "contributors": [
-      {
-       "areaPct": 82.9,
-       "key": "3",
-       "popPct": 88.2
-      },
-      {
-       "areaPct": 13.4,
-       "key": "4",
-       "popPct": 10.1
-      },
-      {
-       "areaPct": 2.1,
-       "key": "13",
-       "popPct": 1
-      },
-      {
-       "areaPct": 1.6,
-       "key": "2",
-       "popPct": 0.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 22928,
-     "pres2020New": -70.5,
-     "pres2020Old": -71.9,
-     "retainedAreaPct": 82.9,
-     "retainedPopPct": 88.2,
-     "text": "Kept 88% of its population from the 2016–2020 HD-3; gained the rest from the old HD-4 (10%), the old HD-13 (1%), the old HD-2 (1%). Entirely in New Castle County. 2020 presidential margin D+71.9 on the 2016–2020 lines → D+70.5 on the current lines.",
-     "toEra": "current"
-    },
-    "4": {
-     "contributors": [
-      {
-       "areaPct": 55.9,
-       "key": "37",
-       "popPct": 65.1
-      },
-      {
-       "areaPct": 22.8,
-       "key": "14",
-       "popPct": 20.5
-      },
-      {
-       "areaPct": 14.2,
-       "key": "41",
-       "popPct": 8.9
-      },
-      {
-       "areaPct": 7.1,
-       "key": "20",
-       "popPct": 5.5
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "fromEra": "2020",
-     "pop2020": 23956,
-     "pres2020New": 8.7,
-     "pres2020Old": -41.8,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 HD-4; it draws from the old HD-37 (65%), the old HD-14 (20%), the old HD-41 (9%) and 1 more. Counties: gained Sussex (100%); lost New Castle. 2020 presidential margin D+41.8 on the 2016–2020 lines → R+8.7 on the current lines.",
-     "toEra": "current"
-    },
-    "5": {
-     "contributors": [
-      {
-       "areaPct": 98.9,
-       "key": "5",
-       "popPct": 98.9
-      },
-      {
-       "areaPct": 0.8,
-       "key": "15",
-       "popPct": 0.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23444,
-     "pres2020New": -62.7,
-     "pres2020Old": -63,
-     "retainedAreaPct": 98.9,
-     "retainedPopPct": 98.9,
-     "text": "Kept 99% of its population from the 2016–2020 HD-5; gained the rest from the old HD-15 (1%). Entirely in New Castle County. 2020 presidential margin D+63.0 on the 2016–2020 lines → D+62.7 on the current lines.",
-     "toEra": "current"
-    },
-    "6": {
-     "contributors": [
-      {
-       "areaPct": 89.9,
-       "key": "6",
-       "popPct": 92.6
-      },
-      {
-       "areaPct": 8.7,
-       "key": "1",
-       "popPct": 7
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 22902,
-     "pres2020New": -37.5,
-     "pres2020Old": -36.4,
-     "retainedAreaPct": 89.9,
-     "retainedPopPct": 92.6,
-     "text": "Kept 93% of its population from the 2016–2020 HD-6; gained the rest from the old HD-1 (7%). Entirely in New Castle County. 2020 presidential margin D+36.4 on the 2016–2020 lines → D+37.5 on the current lines.",
-     "toEra": "current"
-    },
-    "7": {
-     "contributors": [
-      {
-       "areaPct": 49.4,
-       "key": "7",
-       "popPct": 72.4
-      },
-      {
-       "areaPct": 33.8,
-       "key": "10",
-       "popPct": 21
-      },
-      {
-       "areaPct": 16.8,
-       "key": "6",
-       "popPct": 6.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23261,
-     "pres2020New": -41.9,
-     "pres2020Old": -37.4,
-     "retainedAreaPct": 49.4,
-     "retainedPopPct": 72.4,
-     "text": "Kept 72% of its population from the 2016–2020 HD-7; gained the rest from the old HD-10 (21%), the old HD-6 (7%). Entirely in New Castle County. 2020 presidential margin D+37.4 on the 2016–2020 lines → D+41.9 on the current lines.",
-     "toEra": "current"
-    },
-    "8": {
-     "contributors": [
-      {
-       "areaPct": 79.5,
-       "key": "8",
-       "popPct": 89
-      },
-      {
-       "areaPct": 20.5,
-       "key": "9",
-       "popPct": 11
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 25168,
-     "pres2020New": -26.1,
-     "pres2020Old": -24.4,
-     "retainedAreaPct": 79.5,
-     "retainedPopPct": 89,
-     "text": "Kept 89% of its population from the 2016–2020 HD-8; gained the rest from the old HD-9 (11%). Entirely in New Castle County. 2020 presidential margin D+24.4 on the 2016–2020 lines → D+26.1 on the current lines.",
-     "toEra": "current"
-    },
-    "9": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "9",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 99.7
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 27745,
-     "pres2020New": -13.8,
-     "pres2020Old": -11.6,
-     "retainedAreaPct": 100,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in New Castle County.",
-     "toEra": "current"
-    },
-    "10": {
-     "contributors": [
-      {
-       "areaPct": 60.5,
-       "key": "10",
-       "popPct": 74.8
-      },
-      {
-       "areaPct": 21,
-       "key": "7",
-       "popPct": 23.5
-      },
-      {
-       "areaPct": 18.6,
-       "key": "12",
-       "popPct": 1.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23420,
-     "pres2020New": -28.2,
-     "pres2020Old": -31.5,
-     "retainedAreaPct": 60.5,
-     "retainedPopPct": 74.8,
-     "text": "Kept 75% of its population from the 2016–2020 HD-10; gained the rest from the old HD-7 (24%), the old HD-12 (2%). Entirely in New Castle County. 2020 presidential margin D+31.5 on the 2016–2020 lines → D+28.2 on the current lines.",
-     "toEra": "current"
-    },
-    "11": {
-     "contributors": [
-      {
-       "areaPct": 87.3,
-       "key": "11",
-       "popPct": 90.7
-      },
-      {
-       "areaPct": 5.6,
-       "key": "29",
-       "popPct": 6.7
-      },
-      {
-       "areaPct": 7.1,
-       "key": "9",
-       "popPct": 2.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Kent",
-       "popPct": 60.2
-      },
-      {
-       "county": "New Castle",
-       "popPct": 39.8
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 28873,
-     "pres2020New": 9.1,
-     "pres2020Old": 10.7,
-     "retainedAreaPct": 87.3,
-     "retainedPopPct": 90.7,
-     "text": "Kept 91% of its population from the 2016–2020 HD-11; gained the rest from the old HD-29 (7%), the old HD-9 (3%). Spans Kent, New Castle counties. 2020 presidential margin R+10.7 on the 2016–2020 lines → R+9.1 on the current lines.",
-     "toEra": "current"
-    },
-    "12": {
-     "contributors": [
-      {
-       "areaPct": 79.7,
-       "key": "12",
-       "popPct": 62.5
-      },
-      {
-       "areaPct": 20.2,
-       "key": "4",
-       "popPct": 37.5
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 26449,
-     "pres2020New": -29.9,
-     "pres2020Old": -22.9,
-     "retainedAreaPct": 79.7,
-     "retainedPopPct": 62.5,
-     "text": "Kept 62% of its population from the 2016–2020 HD-12; gained the rest from the old HD-4 (38%). Entirely in New Castle County. 2020 presidential margin D+22.9 on the 2016–2020 lines → D+29.9 on the current lines.",
-     "toEra": "current"
-    },
-    "13": {
-     "contributors": [
-      {
-       "areaPct": 72.5,
-       "key": "13",
-       "popPct": 88.7
-      },
-      {
-       "areaPct": 24.8,
-       "key": "4",
-       "popPct": 9.7
-      },
-      {
-       "areaPct": 2.7,
-       "key": "19",
-       "popPct": 1.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 25517,
-     "pres2020New": -34,
-     "pres2020Old": -34.3,
-     "retainedAreaPct": 72.5,
-     "retainedPopPct": 88.7,
-     "text": "Kept 89% of its population from the 2016–2020 HD-13; gained the rest from the old HD-4 (10%), the old HD-19 (2%). Entirely in New Castle County. 2020 presidential margin D+34.3 on the 2016–2020 lines → D+34.0 on the current lines.",
-     "toEra": "current"
-    },
-    "14": {
-     "contributors": [
-      {
-       "areaPct": 98.5,
-       "key": "14",
-       "popPct": 97.3
-      },
-      {
-       "areaPct": 1.5,
-       "key": "20",
-       "popPct": 2.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 22598,
-     "pres2020New": -19.1,
-     "pres2020Old": -16.1,
-     "retainedAreaPct": 98.5,
-     "retainedPopPct": 97.3,
-     "text": "Kept 97% of its population from the 2016–2020 HD-14; gained the rest from the old HD-20 (3%). Entirely in Sussex County. 2020 presidential margin D+16.1 on the 2016–2020 lines → D+19.1 on the current lines.",
-     "toEra": "current"
-    },
-    "15": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "15",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23404,
-     "pres2020New": -39.7,
-     "pres2020Old": -36,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in New Castle County.",
-     "toEra": "current"
-    },
-    "16": {
-     "contributors": [
-      {
-       "areaPct": 62.2,
-       "key": "16",
-       "popPct": 87.4
-      },
-      {
-       "areaPct": 36.7,
-       "key": "17",
-       "popPct": 12.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23820,
-     "pres2020New": -60.9,
-     "pres2020Old": -63.8,
-     "retainedAreaPct": 62.2,
-     "retainedPopPct": 87.4,
-     "text": "Kept 87% of its population from the 2016–2020 HD-16; gained the rest from the old HD-17 (13%). Entirely in New Castle County. 2020 presidential margin D+63.8 on the 2016–2020 lines → D+60.9 on the current lines.",
-     "toEra": "current"
-    },
-    "17": {
-     "contributors": [
-      {
-       "areaPct": 55.9,
-       "key": "17",
-       "popPct": 82.1
-      },
-      {
-       "areaPct": 42.6,
-       "key": "15",
-       "popPct": 10.5
-      },
-      {
-       "areaPct": 1.4,
-       "key": "18",
-       "popPct": 7.2
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 25409,
-     "pres2020New": -40.3,
-     "pres2020Old": -45.5,
-     "retainedAreaPct": 55.9,
-     "retainedPopPct": 82.1,
-     "text": "Kept 82% of its population from the 2016–2020 HD-17; gained the rest from the old HD-15 (10%), the old HD-18 (7%). Entirely in New Castle County. 2020 presidential margin D+45.5 on the 2016–2020 lines → D+40.3 on the current lines.",
-     "toEra": "current"
-    },
-    "18": {
-     "contributors": [
-      {
-       "areaPct": 89.6,
-       "key": "18",
-       "popPct": 87.2
-      },
-      {
-       "areaPct": 8.9,
-       "key": "21",
-       "popPct": 11.7
-      },
-      {
-       "areaPct": 1.4,
-       "key": "26",
-       "popPct": 1.1
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 24857,
-     "pres2020New": -45.4,
-     "pres2020Old": -46.3,
-     "retainedAreaPct": 89.6,
-     "retainedPopPct": 87.2,
-     "text": "Kept 87% of its population from the 2016–2020 HD-18; gained the rest from the old HD-21 (12%), the old HD-26 (1%). Entirely in New Castle County. 2020 presidential margin D+46.3 on the 2016–2020 lines → D+45.4 on the current lines.",
-     "toEra": "current"
-    },
-    "19": {
-     "contributors": [
-      {
-       "areaPct": 83.4,
-       "key": "19",
-       "popPct": 91
-      },
-      {
-       "areaPct": 13.7,
-       "key": "4",
-       "popPct": 6.7
-      },
-      {
-       "areaPct": 2.9,
-       "key": "21",
-       "popPct": 2.3
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 24430,
-     "pres2020New": -22.7,
-     "pres2020Old": -22.8,
-     "retainedAreaPct": 83.4,
-     "retainedPopPct": 91,
-     "text": "Kept 91% of its population from the 2016–2020 HD-19; gained the rest from the old HD-4 (7%), the old HD-21 (2%). Entirely in New Castle County. 2020 presidential margin D+22.8 on the 2016–2020 lines → D+22.7 on the current lines.",
-     "toEra": "current"
-    },
-    "20": {
-     "contributors": [
-      {
-       "areaPct": 97.4,
-       "key": "20",
-       "popPct": 97.5
-      },
-      {
-       "areaPct": 2.6,
-       "key": "36",
-       "popPct": 2.5
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 22598,
-     "pres2020New": -6.8,
-     "pres2020Old": -3.9,
-     "retainedAreaPct": 97.4,
-     "retainedPopPct": 97.5,
-     "text": "Kept 98% of its population from the 2016–2020 HD-20; gained the rest from the old HD-36 (2%). Entirely in Sussex County. 2020 presidential margin D+3.9 on the 2016–2020 lines → D+6.8 on the current lines.",
-     "toEra": "current"
-    },
-    "21": {
-     "contributors": [
-      {
-       "areaPct": 87.1,
-       "key": "21",
-       "popPct": 82.9
-      },
-      {
-       "areaPct": 12.8,
-       "key": "22",
-       "popPct": 17.1
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23786,
-     "pres2020New": -22.9,
-     "pres2020Old": -23.3,
-     "retainedAreaPct": 87.1,
-     "retainedPopPct": 82.9,
-     "text": "Kept 83% of its population from the 2016–2020 HD-21; gained the rest from the old HD-22 (17%). Entirely in New Castle County. 2020 presidential margin D+23.3 on the 2016–2020 lines → D+22.9 on the current lines.",
-     "toEra": "current"
-    },
-    "22": {
-     "contributors": [
-      {
-       "areaPct": 62.7,
-       "key": "22",
-       "popPct": 65.3
-      },
-      {
-       "areaPct": 30.6,
-       "key": "12",
-       "popPct": 27
-      },
-      {
-       "areaPct": 6.7,
-       "key": "4",
-       "popPct": 7.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 24360,
-     "pres2020New": -20.5,
-     "pres2020Old": -20.5,
-     "retainedAreaPct": 62.7,
-     "retainedPopPct": 65.3,
-     "text": "Kept 65% of its population from the 2016–2020 HD-22; gained the rest from the old HD-12 (27%), the old HD-4 (8%). Entirely in New Castle County. 2020 presidential margin D+20.5 on the 2016–2020 lines → D+20.5 on the current lines.",
-     "toEra": "current"
-    },
-    "23": {
-     "contributors": [
-      {
-       "areaPct": 80.7,
-       "key": "23",
-       "popPct": 81.3
-      },
-      {
-       "areaPct": 11.7,
-       "key": "22",
-       "popPct": 12.4
-      },
-      {
-       "areaPct": 4.8,
-       "key": "25",
-       "popPct": 5.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 24151,
-     "pres2020New": -32.8,
-     "pres2020Old": -36.2,
-     "retainedAreaPct": 80.7,
-     "retainedPopPct": 81.3,
-     "text": "Kept 81% of its population from the 2016–2020 HD-23; gained the rest from the old HD-22 (12%), the old HD-25 (6%). Entirely in New Castle County. 2020 presidential margin D+36.2 on the 2016–2020 lines → D+32.8 on the current lines.",
-     "toEra": "current"
-    },
-    "24": {
-     "contributors": [
-      {
-       "areaPct": 93.4,
-       "key": "24",
-       "popPct": 93.3
-      },
-      {
-       "areaPct": 6.3,
-       "key": "25",
-       "popPct": 6.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 25805,
-     "pres2020New": -33.5,
-     "pres2020Old": -33.3,
-     "retainedAreaPct": 93.4,
-     "retainedPopPct": 93.3,
-     "text": "Kept 93% of its population from the 2016–2020 HD-24; gained the rest from the old HD-25 (7%). Entirely in New Castle County. 2020 presidential margin D+33.3 on the 2016–2020 lines → D+33.5 on the current lines.",
-     "toEra": "current"
-    },
-    "25": {
-     "contributors": [
-      {
-       "areaPct": 76.5,
-       "key": "25",
-       "popPct": 87
-      },
-      {
-       "areaPct": 23.5,
-       "key": "27",
-       "popPct": 12.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23147,
-     "pres2020New": -34.9,
-     "pres2020Old": -36.4,
-     "retainedAreaPct": 76.5,
-     "retainedPopPct": 87,
-     "text": "Kept 87% of its population from the 2016–2020 HD-25; gained the rest from the old HD-27 (13%). Entirely in New Castle County. 2020 presidential margin D+36.4 on the 2016–2020 lines → D+34.9 on the current lines.",
-     "toEra": "current"
-    },
-    "26": {
-     "contributors": [
-      {
-       "areaPct": 98.7,
-       "key": "26",
-       "popPct": 99.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23074,
-     "pres2020New": -47.3,
-     "pres2020Old": -47.3,
-     "retainedAreaPct": 98.7,
-     "retainedPopPct": 99.7,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in New Castle County.",
-     "toEra": "current"
-    },
-    "27": {
-     "contributors": [
-      {
-       "areaPct": 65.5,
-       "key": "27",
-       "popPct": 81.3
-      },
-      {
-       "areaPct": 18.3,
-       "key": "8",
-       "popPct": 11.3
-      },
-      {
-       "areaPct": 13.7,
-       "key": "9",
-       "popPct": 5.3
-      },
-      {
-       "areaPct": 2.5,
-       "key": "15",
-       "popPct": 2.2
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 25502,
-     "pres2020New": -22.8,
-     "pres2020Old": -29.3,
-     "retainedAreaPct": 65.5,
-     "retainedPopPct": 81.3,
-     "text": "Kept 81% of its population from the 2016–2020 HD-27; gained the rest from the old HD-8 (11%), the old HD-9 (5%), the old HD-15 (2%). Entirely in New Castle County. 2020 presidential margin D+29.3 on the 2016–2020 lines → D+22.8 on the current lines.",
-     "toEra": "current"
-    },
-    "28": {
-     "contributors": [
-      {
-       "areaPct": 97.2,
-       "key": "28",
-       "popPct": 98.3
-      },
-      {
-       "areaPct": 2.8,
-       "key": "9",
-       "popPct": 1.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Kent",
-       "popPct": 87.7
-      },
-      {
-       "county": "New Castle",
-       "popPct": 12.3
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 25820,
-     "pres2020New": -18.6,
-     "pres2020Old": -19,
-     "retainedAreaPct": 97.2,
-     "retainedPopPct": 98.3,
-     "text": "Kept 98% of its population from the 2016–2020 HD-28; gained the rest from the old HD-9 (2%). Spans Kent, New Castle counties. 2020 presidential margin D+19.0 on the 2016–2020 lines → D+18.6 on the current lines.",
-     "toEra": "current"
-    },
-    "29": {
-     "contributors": [
-      {
-       "areaPct": 95.6,
-       "key": "29",
-       "popPct": 89.8
-      },
-      {
-       "areaPct": 3,
-       "key": "31",
-       "popPct": 9.6
-      },
-      {
-       "areaPct": 1.4,
-       "key": "11",
-       "popPct": 0.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Kent",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 20353,
-     "pres2020New": -13.1,
-     "pres2020Old": -7.8,
-     "retainedAreaPct": 95.6,
-     "retainedPopPct": 89.8,
-     "text": "Kept 90% of its population from the 2016–2020 HD-29; gained the rest from the old HD-31 (10%), the old HD-11 (1%). Entirely in Kent County. 2020 presidential margin D+7.8 on the 2016–2020 lines → D+13.1 on the current lines.",
-     "toEra": "current"
-    },
-    "30": {
-     "contributors": [
-      {
-       "areaPct": 88.1,
-       "key": "30",
-       "popPct": 83.3
-      },
-      {
-       "areaPct": 8.2,
-       "key": "11",
-       "popPct": 9.3
-      },
-      {
-       "areaPct": 2.5,
-       "key": "29",
-       "popPct": 4.9
-      },
-      {
-       "areaPct": 1.1,
-       "key": "34",
-       "popPct": 2.5
-      }
-     ],
-     "counties": [
-      {
-       "county": "Kent",
-       "popPct": 99.9
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 27008,
-     "pres2020New": 31,
-     "pres2020Old": 31.4,
-     "retainedAreaPct": 88.1,
-     "retainedPopPct": 83.3,
-     "text": "Kept 83% of its population from the 2016–2020 HD-30; gained the rest from the old HD-11 (9%), the old HD-29 (5%), the old HD-34 (2%). Entirely in Kent County. 2020 presidential margin R+31.4 on the 2016–2020 lines → R+31.0 on the current lines.",
-     "toEra": "current"
-    },
-    "31": {
-     "contributors": [
-      {
-       "areaPct": 98.5,
-       "key": "31",
-       "popPct": 98.1
-      },
-      {
-       "areaPct": 1.5,
-       "key": "32",
-       "popPct": 1.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Kent",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23890,
-     "pres2020New": -37,
-     "pres2020Old": -36.6,
-     "retainedAreaPct": 98.5,
-     "retainedPopPct": 98.1,
-     "text": "Kept 98% of its population from the 2016–2020 HD-31; gained the rest from the old HD-32 (2%). Entirely in Kent County. 2020 presidential margin D+36.6 on the 2016–2020 lines → D+37.0 on the current lines.",
-     "toEra": "current"
-    },
-    "32": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "32",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Kent",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 20681,
-     "pres2020New": -25.3,
-     "pres2020Old": -25.4,
-     "retainedAreaPct": 100,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Kent County.",
-     "toEra": "current"
-    },
-    "33": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "33",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Kent",
-       "popPct": 99.6
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23221,
-     "pres2020New": 11,
-     "pres2020Old": 11,
-     "retainedAreaPct": 100,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Kent County.",
-     "toEra": "current"
-    },
-    "34": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "34",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Kent",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23500,
-     "pres2020New": -6.8,
-     "pres2020Old": -6.2,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Kent County.",
-     "toEra": "current"
-    },
-    "35": {
-     "contributors": [
-      {
-       "areaPct": 98.6,
-       "key": "35",
-       "popPct": 95.5
-      },
-      {
-       "areaPct": 1.2,
-       "key": "36",
-       "popPct": 4.3
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 99.9
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23019,
-     "pres2020New": 25.7,
-     "pres2020Old": 25.5,
-     "retainedAreaPct": 98.6,
-     "retainedPopPct": 95.5,
-     "text": "Kept 96% of its population from the 2016–2020 HD-35; gained the rest from the old HD-36 (4%). Entirely in Sussex County. 2020 presidential margin R+25.5 on the 2016–2020 lines → R+25.7 on the current lines.",
-     "toEra": "current"
-    },
-    "36": {
-     "contributors": [
-      {
-       "areaPct": 98.2,
-       "key": "36",
-       "popPct": 96.6
-      },
-      {
-       "areaPct": 0.8,
-       "key": "20",
-       "popPct": 2.6
-      },
-      {
-       "areaPct": 1,
-       "key": "35",
-       "popPct": 0.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 98.4
-      },
-      {
-       "county": "Kent",
-       "popPct": 1.6
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 22992,
-     "pres2020New": 11.9,
-     "pres2020Old": 12.3,
-     "retainedAreaPct": 98.2,
-     "retainedPopPct": 96.6,
-     "text": "Kept 97% of its population from the 2016–2020 HD-36; gained the rest from the old HD-20 (3%), the old HD-35 (1%). Spans Sussex, Kent counties. 2020 presidential margin R+12.3 on the 2016–2020 lines → R+11.9 on the current lines.",
-     "toEra": "current"
-    },
-    "37": {
-     "contributors": [
-      {
-       "areaPct": 38.8,
-       "key": "37",
-       "popPct": 54.6
-      },
-      {
-       "areaPct": 21.8,
-       "key": "20",
-       "popPct": 21.4
-      },
-      {
-       "areaPct": 13.3,
-       "key": "41",
-       "popPct": 14.7
-      },
-      {
-       "areaPct": 25.6,
-       "key": "40",
-       "popPct": 9.2
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 26316,
-     "pres2020New": 11.7,
-     "pres2020Old": 11.6,
-     "retainedAreaPct": 38.8,
-     "retainedPopPct": 54.6,
-     "text": "Kept 55% of its population from the 2016–2020 HD-37; gained the rest from the old HD-20 (21%), the old HD-41 (15%), the old HD-40 (9%). Entirely in Sussex County. 2020 presidential margin R+11.6 on the 2016–2020 lines → R+11.7 on the current lines.",
-     "toEra": "current"
-    },
-    "38": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "38",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 23617,
-     "pres2020New": 15.9,
-     "pres2020Old": 18.4,
-     "retainedAreaPct": 100,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Sussex County.",
-     "toEra": "current"
-    },
-    "39": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "39",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 24103,
-     "pres2020New": 19.8,
-     "pres2020Old": 19.8,
-     "retainedAreaPct": 100,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Sussex County.",
-     "toEra": "current"
-    },
-    "40": {
-     "contributors": [
-      {
-       "areaPct": 97.8,
-       "key": "40",
-       "popPct": 98.6
-      },
-      {
-       "areaPct": 2.2,
-       "key": "41",
-       "popPct": 1.4
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 22389,
-     "pres2020New": 37,
-     "pres2020Old": 37.2,
-     "retainedAreaPct": 97.8,
-     "retainedPopPct": 98.6,
-     "text": "Kept 99% of its population from the 2016–2020 HD-40; gained the rest from the old HD-41 (1%). Entirely in Sussex County. 2020 presidential margin R+37.2 on the 2016–2020 lines → R+37.0 on the current lines.",
-     "toEra": "current"
-    },
-    "41": {
-     "contributors": [
-      {
-       "areaPct": 83.6,
-       "key": "41",
-       "popPct": 74.8
-      },
-      {
-       "areaPct": 16.2,
-       "key": "38",
-       "popPct": 24.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 25823,
-     "pres2020New": 24.8,
-     "pres2020Old": 21.2,
-     "retainedAreaPct": 83.6,
-     "retainedPopPct": 74.8,
-     "text": "Kept 75% of its population from the 2016–2020 HD-41; gained the rest from the old HD-38 (25%). Entirely in Sussex County. 2020 presidential margin R+21.2 on the 2016–2020 lines → R+24.8 on the current lines.",
-     "toEra": "current"
-    }
-   }
-  },
   "senate": {
    "current": {
     "1": {
      "contributors": [
       {
-       "areaPct": 57.9,
-       "key": "6",
-       "popPct": 39.8
-      },
-      {
-       "areaPct": 12.2,
+       "areaPct": 60,
        "key": "1",
-       "popPct": 23.8
+       "popPct": 64.5
       },
       {
-       "areaPct": 21.6,
-       "key": "4",
-       "popPct": 23.8
+       "areaPct": 22.8,
+       "key": "5",
+       "popPct": 21.3
       },
       {
-       "areaPct": 7,
-       "key": "7",
-       "popPct": 10.3
-      },
-      {
-       "areaPct": 1.2,
+       "areaPct": 3,
        "key": "2",
-       "popPct": 2.3
+       "popPct": 8.2
+      },
+      {
+       "areaPct": 13.3,
+       "key": "4",
+       "popPct": 3.5
+      },
+      {
+       "areaPct": 0.9,
+       "key": "3",
+       "popPct": 2.5
       }
      ],
      "counties": [
@@ -38932,40 +37601,35 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      "countiesGained": [],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 43476,
+     "pop2020": 43479,
      "pres2020New": -48.4,
-     "pres2020Old": -81.3,
-     "retainedAreaPct": 12.2,
-     "retainedPopPct": 23.8,
-     "text": "A new footprint: only 24% of its population was in the 2016–2020 SD-1; it draws from the old SD-6 (40%), the old SD-4 (24%), the old SD-7 (10%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+81.3 on the 2016–2020 lines → D+48.4 on the current lines.",
+     "pres2020Old": -50.1,
+     "retainedAreaPct": 60,
+     "retainedPopPct": 64.5,
+     "text": "Kept 64% of its population from the 2016–2020 SD-1; gained the rest from the old SD-5 (21%), the old SD-2 (8%), the old SD-4 (4%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+50.1 on the 2016–2020 lines → D+48.4 on the current lines.",
      "toEra": "current"
     },
     "2": {
      "contributors": [
       {
-       "areaPct": 35.2,
-       "key": "16",
-       "popPct": 36.4
-      },
-      {
-       "areaPct": 4.7,
-       "key": "1",
-       "popPct": 22.8
-      },
-      {
-       "areaPct": 30.7,
-       "key": "17",
-       "popPct": 20.6
-      },
-      {
-       "areaPct": 25.3,
+       "areaPct": 81.5,
        "key": "2",
-       "popPct": 17.6
+       "popPct": 75.5
       },
       {
-       "areaPct": 4,
-       "key": "6",
-       "popPct": 2.6
+       "areaPct": 15.2,
+       "key": "12",
+       "popPct": 15.1
+      },
+      {
+       "areaPct": 2.7,
+       "key": "13",
+       "popPct": 5.6
+      },
+      {
+       "areaPct": 0.5,
+       "key": "3",
+       "popPct": 3.7
       }
      ],
      "counties": [
@@ -38977,652 +37641,483 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      "countiesGained": [],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 48075,
+     "pop2020": 48073,
      "pres2020New": -69.2,
-     "pres2020Old": -80.8,
-     "retainedAreaPct": 25.3,
-     "retainedPopPct": 17.6,
-     "text": "A new footprint: only 18% of its population was in the 2016–2020 SD-2; it draws from the old SD-16 (36%), the old SD-1 (23%), the old SD-17 (21%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+80.8 on the 2016–2020 lines → D+69.2 on the current lines.",
+     "pres2020Old": -78.1,
+     "retainedAreaPct": 81.5,
+     "retainedPopPct": 75.5,
+     "text": "Kept 76% of its population from the 2016–2020 SD-2; gained the rest from the old SD-12 (15%), the old SD-13 (6%), the old SD-3 (4%). Entirely in New Castle County. 2020 presidential margin D+78.1 on the 2016–2020 lines → D+69.2 on the current lines.",
      "toEra": "current"
     },
     "3": {
      "contributors": [
       {
-       "areaPct": 16.9,
+       "areaPct": 61.4,
        "key": "3",
-       "popPct": 45.1
+       "popPct": 85.4
       },
       {
-       "areaPct": 29.8,
-       "key": "2",
-       "popPct": 28.2
-      },
-      {
-       "areaPct": 16.4,
-       "key": "13",
-       "popPct": 13.3
-      },
-      {
-       "areaPct": 6,
-       "key": "4",
-       "popPct": 8
-      },
-      {
-       "areaPct": 26.9,
-       "key": "16",
-       "popPct": 3.9
-      },
-      {
-       "areaPct": 4,
-       "key": "17",
-       "popPct": 1.5
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 44842,
-     "pres2020New": -66.1,
-     "pres2020Old": -71.9,
-     "retainedAreaPct": 16.9,
-     "retainedPopPct": 45.1,
-     "text": "A new footprint: only 45% of its population was in the 2016–2020 SD-3; it draws from the old SD-2 (28%), the old SD-13 (13%), the old SD-4 (8%) and 2 more. Entirely in New Castle County. 2020 presidential margin D+71.9 on the 2016–2020 lines → D+66.1 on the current lines.",
-     "toEra": "current"
-    },
-    "4": {
-     "contributors": [
-      {
-       "areaPct": 72.1,
-       "key": "12",
-       "popPct": 44.4
-      },
-      {
-       "areaPct": 13.6,
-       "key": "22",
-       "popPct": 29.8
-      },
-      {
-       "areaPct": 3,
-       "key": "21",
-       "popPct": 12.2
-      },
-      {
-       "areaPct": 9.1,
-       "key": "4",
-       "popPct": 8.1
-      },
-      {
-       "areaPct": 1.7,
-       "key": "10",
-       "popPct": 4.4
-      },
-      {
-       "areaPct": 0.4,
-       "key": "6",
-       "popPct": 1.1
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 45088,
-     "pres2020New": -24.3,
-     "pres2020Old": -41.8,
-     "retainedAreaPct": 9.1,
-     "retainedPopPct": 8.1,
-     "text": "A new footprint: only 8% of its population was in the 2016–2020 SD-4; it draws from the old SD-12 (44%), the old SD-22 (30%), the old SD-21 (12%) and 2 more. Entirely in New Castle County. 2020 presidential margin D+41.8 on the 2016–2020 lines → D+24.3 on the current lines.",
-     "toEra": "current"
-    },
-    "5": {
-     "contributors": [
-      {
-       "areaPct": 49.3,
-       "key": "10",
-       "popPct": 45.1
-      },
-      {
-       "areaPct": 36.4,
+       "areaPct": 5.6,
        "key": "7",
-       "popPct": 39.5
+       "popPct": 6.2
       },
       {
-       "areaPct": 9.5,
-       "key": "6",
-       "popPct": 8.1
-      },
-      {
-       "areaPct": 4.8,
-       "key": "12",
-       "popPct": 7.3
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 45275,
-     "pres2020New": -35.2,
-     "pres2020Old": -63,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-5; it draws from the old SD-10 (45%), the old SD-7 (40%), the old SD-6 (8%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+63.0 on the 2016–2020 lines → D+35.2 on the current lines.",
-     "toEra": "current"
-    },
-    "6": {
-     "contributors": [
-      {
-       "areaPct": 36.3,
-       "key": "14",
-       "popPct": 49
-      },
-      {
-       "areaPct": 29.1,
-       "key": "20",
-       "popPct": 47.2
-      },
-      {
-       "areaPct": 34.6,
-       "key": "36",
-       "popPct": 3.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "fromEra": "2020",
-     "pop2020": 48697,
-     "pres2020New": -12.7,
-     "pres2020Old": -36.4,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-6; it draws from the old SD-14 (49%), the old SD-20 (47%), the old SD-36 (4%). Counties: gained Sussex (100%); lost New Castle. 2020 presidential margin D+36.4 on the 2016–2020 lines → D+12.7 on the current lines.",
-     "toEra": "current"
-    },
-    "7": {
-     "contributors": [
-      {
-       "areaPct": 23.4,
+       "areaPct": 30.9,
        "key": "13",
-       "popPct": 40.9
+       "popPct": 5.4
       },
       {
-       "areaPct": 36.1,
-       "key": "19",
-       "popPct": 36.7
-      },
-      {
-       "areaPct": 22.3,
-       "key": "4",
-       "popPct": 11.6
-      },
-      {
-       "areaPct": 9.7,
-       "key": "21",
-       "popPct": 7.1
-      },
-      {
-       "areaPct": 7.5,
-       "key": "22",
-       "popPct": 3.3
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 42983,
-     "pres2020New": -24.6,
-     "pres2020Old": -37.4,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-7; it draws from the old SD-13 (41%), the old SD-19 (37%), the old SD-4 (12%) and 2 more. Entirely in New Castle County. 2020 presidential margin D+37.4 on the 2016–2020 lines → D+24.6 on the current lines.",
-     "toEra": "current"
-    },
-    "8": {
-     "contributors": [
-      {
-       "areaPct": 52.1,
-       "key": "23",
-       "popPct": 43.1
-      },
-      {
-       "areaPct": 26.1,
-       "key": "25",
-       "popPct": 38.4
-      },
-      {
-       "areaPct": 17.1,
-       "key": "22",
-       "popPct": 17.9
-      },
-      {
-       "areaPct": 4.6,
-       "key": "21",
-       "popPct": 0.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 45570,
-     "pres2020New": -30.2,
-     "pres2020Old": -24.4,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-8; it draws from the old SD-23 (43%), the old SD-25 (38%), the old SD-22 (18%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+24.4 on the 2016–2020 lines → D+30.2 on the current lines.",
-     "toEra": "current"
-    },
-    "9": {
-     "contributors": [
-      {
-       "areaPct": 20.9,
-       "key": "24",
-       "popPct": 32.2
-      },
-      {
-       "areaPct": 28.5,
-       "key": "21",
-       "popPct": 31
-      },
-      {
-       "areaPct": 22.5,
-       "key": "18",
-       "popPct": 20.7
-      },
-      {
-       "areaPct": 11.7,
-       "key": "19",
-       "popPct": 14.7
-      },
-      {
-       "areaPct": 15.7,
-       "key": "17",
-       "popPct": 0.8
-      },
-      {
-       "areaPct": 0.6,
-       "key": "26",
-       "popPct": 0.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 46751,
-     "pres2020New": -29.6,
-     "pres2020Old": -11.6,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-9; it draws from the old SD-24 (32%), the old SD-21 (31%), the old SD-18 (21%) and 3 more. Entirely in New Castle County. 2020 presidential margin D+11.6 on the 2016–2020 lines → D+29.6 on the current lines.",
-     "toEra": "current"
-    },
-    "10": {
-     "contributors": [
-      {
-       "areaPct": 46.2,
-       "key": "8",
-       "popPct": 53.7
-      },
-      {
-       "areaPct": 17,
-       "key": "27",
-       "popPct": 23.9
-      },
-      {
-       "areaPct": 25.9,
-       "key": "9",
-       "popPct": 16.7
-      },
-      {
-       "areaPct": 10.9,
-       "key": "11",
-       "popPct": 5.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 46955,
-     "pres2020New": -22.7,
-     "pres2020Old": -31.5,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-10; it draws from the old SD-8 (54%), the old SD-27 (24%), the old SD-9 (17%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+31.5 on the 2016–2020 lines → D+22.7 on the current lines.",
-     "toEra": "current"
-    },
-    "11": {
-     "contributors": [
-      {
-       "areaPct": 35.1,
-       "key": "26",
-       "popPct": 47.6
-      },
-      {
-       "areaPct": 14.6,
-       "key": "24",
-       "popPct": 18.7
-      },
-      {
-       "areaPct": 20.9,
-       "key": "25",
-       "popPct": 12
-      },
-      {
-       "areaPct": 23.8,
-       "key": "27",
-       "popPct": 9.9
-      },
-      {
-       "areaPct": 3.4,
-       "key": "15",
-       "popPct": 7.7
-      },
-      {
-       "areaPct": 2.1,
-       "key": "5",
-       "popPct": 4.1
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [
-      {
-       "county": "Kent",
-       "popPct": 63
-      }
-     ],
-     "fromEra": "2020",
-     "pop2020": 48436,
-     "pres2020New": -43.7,
-     "pres2020Old": 10.7,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-11; it draws from the old SD-26 (48%), the old SD-24 (19%), the old SD-25 (12%) and 3 more. Counties: lost Kent. 2020 presidential margin R+10.7 on the 2016–2020 lines → D+43.7 on the current lines.",
-     "toEra": "current"
-    },
-    "12": {
-     "contributors": [
-      {
-       "areaPct": 33.5,
-       "key": "15",
-       "popPct": 36.2
-      },
-      {
-       "areaPct": 45.5,
-       "key": "9",
-       "popPct": 28.3
-      },
-      {
-       "areaPct": 13.8,
-       "key": "17",
-       "popPct": 16.4
-      },
-      {
-       "areaPct": 6.8,
-       "key": "27",
-       "popPct": 15.8
-      },
-      {
-       "areaPct": 0.4,
-       "key": "16",
-       "popPct": 3.3
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 48646,
-     "pres2020New": -30.1,
-     "pres2020Old": -22.9,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-12; it draws from the old SD-15 (36%), the old SD-9 (28%), the old SD-17 (16%) and 2 more. Entirely in New Castle County. 2020 presidential margin D+22.9 on the 2016–2020 lines → D+30.1 on the current lines.",
-     "toEra": "current"
-    },
-    "13": {
-     "contributors": [
-      {
-       "areaPct": 30.5,
-       "key": "5",
-       "popPct": 46.6
-      },
-      {
-       "areaPct": 23,
-       "key": "18",
-       "popPct": 30.4
-      },
-      {
-       "areaPct": 15.2,
-       "key": "15",
-       "popPct": 12.1
-      },
-      {
-       "areaPct": 31.2,
-       "key": "17",
-       "popPct": 10.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 45466,
-     "pres2020New": -51.7,
-     "pres2020Old": -34.3,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-13; it draws from the old SD-5 (47%), the old SD-18 (30%), the old SD-15 (12%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+34.3 on the 2016–2020 lines → D+51.7 on the current lines.",
-     "toEra": "current"
-    },
-    "14": {
-     "contributors": [
-      {
-       "areaPct": 49.1,
-       "key": "28",
-       "popPct": 44.1
-      },
-      {
-       "areaPct": 26.7,
-       "key": "9",
-       "popPct": 26.1
-      },
-      {
-       "areaPct": 20.5,
-       "key": "11",
-       "popPct": 17.7
-      },
-      {
-       "areaPct": 3.7,
-       "key": "29",
-       "popPct": 12
-      }
-     ],
-     "counties": [
-      {
-       "county": "Kent",
-       "popPct": 50.2
-      },
-      {
-       "county": "New Castle",
-       "popPct": 49.8
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Kent",
-       "popPct": 50.2
-      },
-      {
-       "county": "New Castle",
-       "popPct": 49.8
-      }
-     ],
-     "countiesLost": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "fromEra": "2020",
-     "pop2020": 43938,
-     "pres2020New": -9.7,
-     "pres2020Old": -16.1,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-14; it draws from the old SD-28 (44%), the old SD-9 (26%), the old SD-11 (18%) and 1 more. Counties: gained Kent (50%), New Castle (50%); lost Sussex. 2020 presidential margin D+16.1 on the 2016–2020 lines → D+9.7 on the current lines.",
-     "toEra": "current"
-    },
-    "15": {
-     "contributors": [
-      {
-       "areaPct": 56.5,
-       "key": "30",
-       "popPct": 36.2
-      },
-      {
-       "areaPct": 28.2,
-       "key": "11",
-       "popPct": 31
-      },
-      {
-       "areaPct": 9.6,
-       "key": "29",
-       "popPct": 21.5
-      },
-      {
-       "areaPct": 2.5,
-       "key": "34",
-       "popPct": 8.5
-      },
-      {
-       "areaPct": 3.1,
-       "key": "33",
+       "areaPct": 1.8,
+       "key": "1",
        "popPct": 2.8
       }
      ],
      "counties": [
       {
-       "county": "Kent",
-       "popPct": 99.6
+       "county": "New Castle",
+       "popPct": 100
       }
      ],
-     "countiesGained": [
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 44848,
+     "pres2020New": -66.1,
+     "pres2020Old": -71.8,
+     "retainedAreaPct": 61.4,
+     "retainedPopPct": 85.4,
+     "text": "Kept 85% of its population from the 2016–2020 SD-3; gained the rest from the old SD-7 (6%), the old SD-13 (5%), the old SD-1 (3%). Entirely in New Castle County. 2020 presidential margin D+71.8 on the 2016–2020 lines → D+66.1 on the current lines.",
+     "toEra": "current"
+    },
+    "4": {
+     "contributors": [
       {
-       "county": "Kent",
-       "popPct": 99.6
+       "areaPct": 87.8,
+       "key": "4",
+       "popPct": 81.3
+      },
+      {
+       "areaPct": 9.9,
+       "key": "8",
+       "popPct": 13.2
+      },
+      {
+       "areaPct": 2.2,
+       "key": "5",
+       "popPct": 5.6
       }
      ],
-     "countiesLost": [
+     "counties": [
       {
        "county": "New Castle",
        "popPct": 100
       }
      ],
+     "countiesGained": [],
+     "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 59394,
+     "pop2020": 45084,
+     "pres2020New": -24.3,
+     "pres2020Old": -23.6,
+     "retainedAreaPct": 87.8,
+     "retainedPopPct": 81.3,
+     "text": "Kept 81% of its population from the 2016–2020 SD-4; gained the rest from the old SD-8 (13%), the old SD-5 (6%). Entirely in New Castle County. 2020 presidential margin D+23.6 on the 2016–2020 lines → D+24.3 on the current lines.",
+     "toEra": "current"
+    },
+    "5": {
+     "contributors": [
+      {
+       "areaPct": 57.7,
+       "key": "5",
+       "popPct": 65.7
+      },
+      {
+       "areaPct": 42.3,
+       "key": "1",
+       "popPct": 34.3
+      }
+     ],
+     "counties": [
+      {
+       "county": "New Castle",
+       "popPct": 100
+      }
+     ],
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 45272,
+     "pres2020New": -35.2,
+     "pres2020Old": -30.7,
+     "retainedAreaPct": 57.7,
+     "retainedPopPct": 65.7,
+     "text": "Kept 66% of its population from the 2016–2020 SD-5; gained the rest from the old SD-1 (34%). Entirely in New Castle County. 2020 presidential margin D+30.7 on the 2016–2020 lines → D+35.2 on the current lines.",
+     "toEra": "current"
+    },
+    "6": {
+     "contributors": [
+      {
+       "areaPct": 64.1,
+       "key": "6",
+       "popPct": 95.5
+      },
+      {
+       "areaPct": 35.9,
+       "key": "18",
+       "popPct": 4.5
+      }
+     ],
+     "counties": [
+      {
+       "county": "Sussex",
+       "popPct": 100
+      }
+     ],
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 48694,
+     "pres2020New": -12.7,
+     "pres2020Old": -10.2,
+     "retainedAreaPct": 64.1,
+     "retainedPopPct": 95.5,
+     "text": "Kept 96% of its population from the 2016–2020 SD-6; gained the rest from the old SD-18 (4%). Entirely in Sussex County. 2020 presidential margin D+10.2 on the 2016–2020 lines → D+12.7 on the current lines.",
+     "toEra": "current"
+    },
+    "7": {
+     "contributors": [
+      {
+       "areaPct": 83.5,
+       "key": "7",
+       "popPct": 91.6
+      },
+      {
+       "areaPct": 7.8,
+       "key": "9",
+       "popPct": 4.8
+      },
+      {
+       "areaPct": 8.7,
+       "key": "4",
+       "popPct": 3.7
+      }
+     ],
+     "counties": [
+      {
+       "county": "New Castle",
+       "popPct": 100
+      }
+     ],
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 42995,
+     "pres2020New": -24.6,
+     "pres2020Old": -25.7,
+     "retainedAreaPct": 83.5,
+     "retainedPopPct": 91.6,
+     "text": "Kept 92% of its population from the 2016–2020 SD-7; gained the rest from the old SD-9 (5%), the old SD-4 (4%). Entirely in New Castle County. 2020 presidential margin D+25.7 on the 2016–2020 lines → D+24.6 on the current lines.",
+     "toEra": "current"
+    },
+    "8": {
+     "contributors": [
+      {
+       "areaPct": 85.3,
+       "key": "8",
+       "popPct": 79.8
+      },
+      {
+       "areaPct": 11,
+       "key": "10",
+       "popPct": 13.5
+      },
+      {
+       "areaPct": 3.6,
+       "key": "4",
+       "popPct": 6.7
+      }
+     ],
+     "counties": [
+      {
+       "county": "New Castle",
+       "popPct": 100
+      }
+     ],
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 45571,
+     "pres2020New": -30.2,
+     "pres2020Old": -30.3,
+     "retainedAreaPct": 85.3,
+     "retainedPopPct": 79.8,
+     "text": "Kept 80% of its population from the 2016–2020 SD-8; gained the rest from the old SD-10 (14%), the old SD-4 (7%). Entirely in New Castle County. 2020 presidential margin D+30.3 on the 2016–2020 lines → D+30.2 on the current lines.",
+     "toEra": "current"
+    },
+    "9": {
+     "contributors": [
+      {
+       "areaPct": 91.2,
+       "key": "9",
+       "popPct": 83.4
+      },
+      {
+       "areaPct": 8.4,
+       "key": "11",
+       "popPct": 16.1
+      }
+     ],
+     "counties": [
+      {
+       "county": "New Castle",
+       "popPct": 100
+      }
+     ],
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 46734,
+     "pres2020New": -29.6,
+     "pres2020Old": -29.2,
+     "retainedAreaPct": 91.2,
+     "retainedPopPct": 83.4,
+     "text": "Kept 83% of its population from the 2016–2020 SD-9; gained the rest from the old SD-11 (16%). Entirely in New Castle County. 2020 presidential margin D+29.2 on the 2016–2020 lines → D+29.6 on the current lines.",
+     "toEra": "current"
+    },
+    "10": {
+     "contributors": [
+      {
+       "areaPct": 58.5,
+       "key": "10",
+       "popPct": 64.9
+      },
+      {
+       "areaPct": 36.3,
+       "key": "14",
+       "popPct": 29.6
+      },
+      {
+       "areaPct": 5.2,
+       "key": "12",
+       "popPct": 5.5
+      }
+     ],
+     "counties": [
+      {
+       "county": "New Castle",
+       "popPct": 100
+      }
+     ],
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 46951,
+     "pres2020New": -22.7,
+     "pres2020Old": -23.5,
+     "retainedAreaPct": 58.5,
+     "retainedPopPct": 64.9,
+     "text": "Kept 65% of its population from the 2016–2020 SD-10; gained the rest from the old SD-14 (30%), the old SD-12 (6%). Entirely in New Castle County. 2020 presidential margin D+23.5 on the 2016–2020 lines → D+22.7 on the current lines.",
+     "toEra": "current"
+    },
+    "11": {
+     "contributors": [
+      {
+       "areaPct": 49.7,
+       "key": "11",
+       "popPct": 66.9
+      },
+      {
+       "areaPct": 44.7,
+       "key": "10",
+       "popPct": 21.9
+      },
+      {
+       "areaPct": 3.4,
+       "key": "12",
+       "popPct": 7.7
+      },
+      {
+       "areaPct": 2.1,
+       "key": "9",
+       "popPct": 3.6
+      }
+     ],
+     "counties": [
+      {
+       "county": "New Castle",
+       "popPct": 100
+      }
+     ],
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 48438,
+     "pres2020New": -43.7,
+     "pres2020Old": -44.5,
+     "retainedAreaPct": 49.7,
+     "retainedPopPct": 66.9,
+     "text": "Kept 67% of its population from the 2016–2020 SD-11; gained the rest from the old SD-10 (22%), the old SD-12 (8%), the old SD-9 (4%). Entirely in New Castle County. 2020 presidential margin D+44.5 on the 2016–2020 lines → D+43.7 on the current lines.",
+     "toEra": "current"
+    },
+    "12": {
+     "contributors": [
+      {
+       "areaPct": 61,
+       "key": "12",
+       "popPct": 84.9
+      },
+      {
+       "areaPct": 37.7,
+       "key": "14",
+       "popPct": 14.2
+      },
+      {
+       "areaPct": 1.3,
+       "key": "10",
+       "popPct": 0.9
+      }
+     ],
+     "counties": [
+      {
+       "county": "New Castle",
+       "popPct": 100
+      }
+     ],
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 48658,
+     "pres2020New": -30.1,
+     "pres2020Old": -36.2,
+     "retainedAreaPct": 61,
+     "retainedPopPct": 84.9,
+     "text": "Kept 85% of its population from the 2016–2020 SD-12; gained the rest from the old SD-14 (14%), the old SD-10 (1%). Entirely in New Castle County. 2020 presidential margin D+36.2 on the 2016–2020 lines → D+30.1 on the current lines.",
+     "toEra": "current"
+    },
+    "13": {
+     "contributors": [
+      {
+       "areaPct": 85.7,
+       "key": "13",
+       "popPct": 85.5
+      },
+      {
+       "areaPct": 5.4,
+       "key": "11",
+       "popPct": 9.7
+      },
+      {
+       "areaPct": 8.8,
+       "key": "12",
+       "popPct": 4.7
+      }
+     ],
+     "counties": [
+      {
+       "county": "New Castle",
+       "popPct": 100
+      }
+     ],
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 45459,
+     "pres2020New": -51.7,
+     "pres2020Old": -50.7,
+     "retainedAreaPct": 85.7,
+     "retainedPopPct": 85.5,
+     "text": "Kept 86% of its population from the 2016–2020 SD-13; gained the rest from the old SD-11 (10%), the old SD-12 (5%). Entirely in New Castle County. 2020 presidential margin D+50.7 on the 2016–2020 lines → D+51.7 on the current lines.",
+     "toEra": "current"
+    },
+    "14": {
+     "contributors": [
+      {
+       "areaPct": 94.9,
+       "key": "14",
+       "popPct": 86.2
+      },
+      {
+       "areaPct": 5.1,
+       "key": "15",
+       "popPct": 13.8
+      }
+     ],
+     "counties": [
+      {
+       "county": "Kent",
+       "popPct": 50.2
+      },
+      {
+       "county": "New Castle",
+       "popPct": 49.8
+      }
+     ],
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 43942,
+     "pres2020New": -9.7,
+     "pres2020Old": -13.5,
+     "retainedAreaPct": 94.9,
+     "retainedPopPct": 86.2,
+     "text": "Kept 86% of its population from the 2016–2020 SD-14; gained the rest from the old SD-15 (14%). Spans Kent, New Castle counties. 2020 presidential margin D+13.5 on the 2016–2020 lines → D+9.7 on the current lines.",
+     "toEra": "current"
+    },
+    "15": {
+     "contributors": [
+      {
+       "areaPct": 73.7,
+       "key": "15",
+       "popPct": 71.1
+      },
+      {
+       "areaPct": 23.3,
+       "key": "18",
+       "popPct": 19
+      },
+      {
+       "areaPct": 3,
+       "key": "16",
+       "popPct": 9.9
+      }
+     ],
+     "counties": [
+      {
+       "county": "Kent",
+       "popPct": 99.6
+      }
+     ],
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 59376,
      "pres2020New": 16.2,
-     "pres2020Old": -36,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-15; it draws from the old SD-30 (36%), the old SD-11 (31%), the old SD-29 (22%) and 2 more. Counties: gained Kent (100%); lost New Castle. 2020 presidential margin D+36.0 on the 2016–2020 lines → R+16.2 on the current lines.",
+     "pres2020Old": 10.8,
+     "retainedAreaPct": 73.7,
+     "retainedPopPct": 71.1,
+     "text": "Kept 71% of its population from the 2016–2020 SD-15; gained the rest from the old SD-18 (19%), the old SD-16 (10%). Entirely in Kent County. 2020 presidential margin R+10.8 on the 2016–2020 lines → R+16.2 on the current lines.",
      "toEra": "current"
     },
     "16": {
      "contributors": [
       {
-       "areaPct": 27.1,
-       "key": "32",
-       "popPct": 32.6
+       "areaPct": 96,
+       "key": "16",
+       "popPct": 92.7
       },
       {
-       "areaPct": 51.4,
-       "key": "33",
-       "popPct": 31.5
+       "areaPct": 0.7,
+       "key": "17",
+       "popPct": 3.6
       },
       {
-       "areaPct": 4.8,
-       "key": "34",
-       "popPct": 29.5
-      },
-      {
-       "areaPct": 15.8,
-       "key": "28",
-       "popPct": 4.9
+       "areaPct": 2.3,
+       "key": "18",
+       "popPct": 2.2
       },
       {
        "areaPct": 1,
-       "key": "30",
+       "key": "15",
        "popPct": 1.4
       }
      ],
@@ -39632,53 +38127,33 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
        "popPct": 99.9
       }
      ],
-     "countiesGained": [
-      {
-       "county": "Kent",
-       "popPct": 99.9
-      }
-     ],
-     "countiesLost": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
+     "countiesGained": [],
+     "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 51160,
+     "pop2020": 51162,
      "pres2020New": -4.4,
-     "pres2020Old": -63.8,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-16; it draws from the old SD-32 (33%), the old SD-33 (32%), the old SD-34 (30%) and 2 more. Counties: gained Kent (100%); lost New Castle. 2020 presidential margin D+63.8 on the 2016–2020 lines → D+4.4 on the current lines.",
+     "pres2020Old": -4.3,
+     "retainedAreaPct": 96,
+     "retainedPopPct": 92.7,
+     "text": "Kept 93% of its population from the 2016–2020 SD-16; gained the rest from the old SD-17 (4%), the old SD-18 (2%), the old SD-15 (1%). Entirely in Kent County. 2020 presidential margin D+4.3 on the 2016–2020 lines → D+4.4 on the current lines.",
      "toEra": "current"
     },
     "17": {
      "contributors": [
       {
-       "areaPct": 46,
-       "key": "31",
-       "popPct": 62.2
+       "areaPct": 88,
+       "key": "17",
+       "popPct": 97.7
       },
       {
-       "areaPct": 10.2,
-       "key": "32",
-       "popPct": 10.9
+       "areaPct": 3.4,
+       "key": "15",
+       "popPct": 1.1
       },
       {
-       "areaPct": 9.6,
-       "key": "34",
-       "popPct": 9.9
-      },
-      {
-       "areaPct": 19.1,
-       "key": "28",
-       "popPct": 8.5
-      },
-      {
-       "areaPct": 15.1,
-       "key": "29",
-       "popPct": 8.5
+       "areaPct": 0.7,
+       "key": "16",
+       "popPct": 0.9
       }
      ],
      "counties": [
@@ -39687,48 +38162,33 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
        "popPct": 100
       }
      ],
-     "countiesGained": [
-      {
-       "county": "Kent",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
+     "countiesGained": [],
+     "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 40831,
+     "pop2020": 40841,
      "pres2020New": -31.5,
-     "pres2020Old": -45.5,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-17; it draws from the old SD-31 (62%), the old SD-32 (11%), the old SD-34 (10%) and 2 more. Counties: gained Kent (100%); lost New Castle. 2020 presidential margin D+45.5 on the 2016–2020 lines → D+31.5 on the current lines.",
+     "pres2020Old": -32.4,
+     "retainedAreaPct": 88,
+     "retainedPopPct": 97.7,
+     "text": "Kept 98% of its population from the 2016–2020 SD-17; gained the rest from the old SD-15 (1%), the old SD-16 (1%). Entirely in Kent County. 2020 presidential margin D+32.4 on the 2016–2020 lines → D+31.5 on the current lines.",
      "toEra": "current"
     },
     "18": {
      "contributors": [
       {
-       "areaPct": 41.1,
-       "key": "36",
-       "popPct": 46.8
+       "areaPct": 67,
+       "key": "18",
+       "popPct": 71.2
       },
       {
-       "areaPct": 53.8,
-       "key": "35",
-       "popPct": 41
-      },
-      {
-       "areaPct": 4.3,
-       "key": "33",
-       "popPct": 11.5
+       "areaPct": 32.3,
+       "key": "19",
+       "popPct": 27.6
       },
       {
        "areaPct": 0.7,
-       "key": "30",
-       "popPct": 0.5
+       "key": "6",
+       "popPct": 1.2
       }
      ],
      "counties": [
@@ -39741,112 +38201,38 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
        "popPct": 12.8
       }
      ],
-     "countiesGained": [
-      {
-       "county": "Sussex",
-       "popPct": 87.2
-      },
-      {
-       "county": "Kent",
-       "popPct": 12.8
-      }
-     ],
-     "countiesLost": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
+     "countiesGained": [],
+     "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 46793,
+     "pop2020": 46813,
      "pres2020New": 18,
-     "pres2020Old": -46.3,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-18; it draws from the old SD-36 (47%), the old SD-35 (41%), the old SD-33 (12%) and 1 more. Counties: gained Sussex (87%), Kent (13%); lost New Castle. 2020 presidential margin D+46.3 on the 2016–2020 lines → R+18.0 on the current lines.",
+     "pres2020Old": 20.1,
+     "retainedAreaPct": 67,
+     "retainedPopPct": 71.2,
+     "text": "Kept 71% of its population from the 2016–2020 SD-18; gained the rest from the old SD-19 (28%), the old SD-6 (1%). Spans Sussex, Kent counties. 2020 presidential margin R+20.1 on the 2016–2020 lines → R+18.0 on the current lines.",
      "toEra": "current"
     },
     "19": {
      "contributors": [
       {
-       "areaPct": 33.4,
-       "key": "37",
-       "popPct": 53
+       "areaPct": 63.7,
+       "key": "19",
+       "popPct": 68.2
       },
       {
-       "areaPct": 16.6,
-       "key": "20",
-       "popPct": 15.1
-      },
-      {
-       "areaPct": 9.4,
-       "key": "41",
-       "popPct": 10.2
+       "areaPct": 17.1,
+       "key": "6",
+       "popPct": 19.6
       },
       {
        "areaPct": 4.8,
-       "key": "14",
-       "popPct": 6.3
+       "key": "20",
+       "popPct": 6.9
       },
       {
-       "areaPct": 18.7,
-       "key": "35",
-       "popPct": 6.1
-      },
-      {
-       "areaPct": 13.9,
-       "key": "40",
-       "popPct": 5
-      },
-      {
-       "areaPct": 2.9,
-       "key": "39",
-       "popPct": 4.1
-      }
-     ],
-     "counties": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Sussex",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
-     "fromEra": "2020",
-     "pop2020": 48045,
-     "pres2020New": 12.5,
-     "pres2020Old": -22.8,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-19; it draws from the old SD-37 (53%), the old SD-20 (15%), the old SD-41 (10%) and 4 more. Counties: gained Sussex (100%); lost New Castle. 2020 presidential margin D+22.8 on the 2016–2020 lines → R+12.5 on the current lines.",
-     "toEra": "current"
-    },
-    "20": {
-     "contributors": [
-      {
-       "areaPct": 68.9,
-       "key": "38",
-       "popPct": 67.2
-      },
-      {
-       "areaPct": 25.8,
-       "key": "41",
-       "popPct": 22.5
-      },
-      {
-       "areaPct": 5.3,
-       "key": "37",
-       "popPct": 10.4
+       "areaPct": 14.5,
+       "key": "21",
+       "popPct": 5.3
       }
      ],
      "counties": [
@@ -39858,30 +38244,25 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      "countiesGained": [],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 44672,
-     "pres2020New": 17.1,
-     "pres2020Old": -3.9,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-20; it draws from the old SD-38 (67%), the old SD-41 (22%), the old SD-37 (10%). Entirely in Sussex County. 2020 presidential margin D+3.9 on the 2016–2020 lines → R+17.1 on the current lines.",
+     "pop2020": 48032,
+     "pres2020New": 12.5,
+     "pres2020Old": 17.3,
+     "retainedAreaPct": 63.7,
+     "retainedPopPct": 68.2,
+     "text": "Kept 68% of its population from the 2016–2020 SD-19; gained the rest from the old SD-6 (20%), the old SD-20 (7%), the old SD-21 (5%). Entirely in Sussex County. 2020 presidential margin R+17.3 on the 2016–2020 lines → R+12.5 on the current lines.",
      "toEra": "current"
     },
-    "21": {
+    "20": {
      "contributors": [
       {
-       "areaPct": 22.4,
-       "key": "39",
-       "popPct": 40.3
+       "areaPct": 99.3,
+       "key": "20",
+       "popPct": 98.7
       },
       {
-       "areaPct": 51.9,
-       "key": "40",
-       "popPct": 40.2
-      },
-      {
-       "areaPct": 25.7,
-       "key": "41",
-       "popPct": 19.4
+       "areaPct": 0.6,
+       "key": "19",
+       "popPct": 1.3
       }
      ],
      "counties": [
@@ -39890,25 +38271,50 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
        "popPct": 100
       }
      ],
-     "countiesGained": [
+     "countiesGained": [],
+     "countiesLost": [],
+     "fromEra": "2020",
+     "pop2020": 44675,
+     "pres2020New": 17.1,
+     "pres2020Old": 16.6,
+     "retainedAreaPct": 99.3,
+     "retainedPopPct": 98.7,
+     "text": "Kept 99% of its population from the 2016–2020 SD-20; gained the rest from the old SD-19 (1%). Entirely in Sussex County. 2020 presidential margin R+16.6 on the 2016–2020 lines → R+17.1 on the current lines.",
+     "toEra": "current"
+    },
+    "21": {
+     "contributors": [
+      {
+       "areaPct": 80.3,
+       "key": "21",
+       "popPct": 79.6
+      },
+      {
+       "areaPct": 10.8,
+       "key": "20",
+       "popPct": 12.7
+      },
+      {
+       "areaPct": 9,
+       "key": "19",
+       "popPct": 7.7
+      }
+     ],
+     "counties": [
       {
        "county": "Sussex",
        "popPct": 100
       }
      ],
-     "countiesLost": [
-      {
-       "county": "New Castle",
-       "popPct": 100
-      }
-     ],
+     "countiesGained": [],
+     "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 54855,
+     "pop2020": 54850,
      "pres2020New": 28.7,
-     "pres2020Old": -23.3,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 SD-21; it draws from the old SD-39 (40%), the old SD-40 (40%), the old SD-41 (19%). Counties: gained Sussex (100%); lost New Castle. 2020 presidential margin D+23.3 on the 2016–2020 lines → R+28.7 on the current lines.",
+     "pres2020Old": 31.3,
+     "retainedAreaPct": 80.3,
+     "retainedPopPct": 79.6,
+     "text": "Kept 80% of its population from the 2016–2020 SD-21; gained the rest from the old SD-20 (13%), the old SD-19 (8%). Entirely in Sussex County. 2020 presidential margin R+31.3 on the 2016–2020 lines → R+28.7 on the current lines.",
      "toEra": "current"
     }
    }
@@ -341426,3568 +339832,19 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
   }
  },
  "VT": {
-  "house": {
-   "current": {
-    "Addison-1": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Addison-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Addison",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8761,
-     "pres2020New": -63.4,
-     "pres2020Old": -63.4,
-     "retainedAreaPct": 99.8,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Addison County.",
-     "toEra": "current"
-    },
-    "Addison-2": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Addison-2",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Addison",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4329,
-     "pres2020New": -38.2,
-     "pres2020Old": -37.4,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Addison County.",
-     "toEra": "current"
-    },
-    "Addison-3": {
-     "contributors": [
-      {
-       "areaPct": 91,
-       "key": "Addison-3",
-       "popPct": 93
-      },
-      {
-       "areaPct": 9,
-       "key": "Addison-5",
-       "popPct": 7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Addison",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8236,
-     "pres2020New": -31.2,
-     "pres2020Old": -31.4,
-     "retainedAreaPct": 91,
-     "retainedPopPct": 93,
-     "text": "Kept 93% of its population from the 2016–2020 Addison-3; gained the rest from the old Addison-5 (7%). Entirely in Addison County. 2020 presidential margin D+31.4 on the 2016–2020 lines → D+31.2 on the current lines.",
-     "toEra": "current"
-    },
-    "Addison-4": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Addison-4",
-       "popPct": 99.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "Addison",
-       "popPct": 99.1
-      },
-      {
-       "county": "Chittenden",
-       "popPct": 0.9
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8942,
-     "pres2020New": -38.6,
-     "pres2020Old": -38.5,
-     "retainedAreaPct": 99.8,
-     "retainedPopPct": 99.9,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Addison, Chittenden counties.",
-     "toEra": "current"
-    },
-    "Addison-5": {
-     "contributors": [
-      {
-       "areaPct": 98,
-       "key": "Addison-5",
-       "popPct": 88.7
-      },
-      {
-       "areaPct": 1.8,
-       "key": "Addison-1",
-       "popPct": 11
-      }
-     ],
-     "counties": [
-      {
-       "county": "Addison",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 3543,
-     "pres2020New": -36.8,
-     "pres2020Old": -33.6,
-     "retainedAreaPct": 98,
-     "retainedPopPct": 88.7,
-     "text": "Kept 89% of its population from the 2016–2020 Addison-5; gained the rest from the old Addison-1 (11%). Entirely in Addison County. 2020 presidential margin D+33.6 on the 2016–2020 lines → D+36.8 on the current lines.",
-     "toEra": "current"
-    },
-    "Addison-Rutland": {
-     "contributors": [
-      {
-       "areaPct": 68.3,
-       "key": "Addison-Rutland",
-       "popPct": 69.5
-      },
-      {
-       "areaPct": 17.8,
-       "key": "Rutland-3",
-       "popPct": 17.4
-      },
-      {
-       "areaPct": 13.8,
-       "key": "Rutland-6",
-       "popPct": 13
-      }
-     ],
-     "counties": [
-      {
-       "county": "Addison",
-       "popPct": 69.5
-      },
-      {
-       "county": "Rutland",
-       "popPct": 30.5
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4177,
-     "pres2020New": -15.6,
-     "pres2020Old": -8.3,
-     "retainedAreaPct": 68.3,
-     "retainedPopPct": 69.5,
-     "text": "Kept 70% of its population from the 2016–2020 Addison-Rutland; gained the rest from the old Rutland-3 (17%), the old Rutland-6 (13%). Spans Addison, Rutland counties. 2020 presidential margin D+8.3 on the 2016–2020 lines → D+15.6 on the current lines.",
-     "toEra": "current"
-    },
-    "Bennington-1": {
-     "contributors": [
-      {
-       "areaPct": 46.4,
-       "key": "Bennington-1",
-       "popPct": 63.4
-      },
-      {
-       "areaPct": 53.5,
-       "key": "Windham-Bennington",
-       "popPct": 36.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Bennington",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4598,
-     "pres2020New": -0.7,
-     "pres2020Old": -3,
-     "retainedAreaPct": 46.4,
-     "retainedPopPct": 63.4,
-     "text": "Kept 63% of its population from the 2016–2020 Bennington-1; gained the rest from the old Windham-Bennington (37%). Entirely in Bennington County. 2020 presidential margin D+3.0 on the 2016–2020 lines → D+0.7 on the current lines.",
-     "toEra": "current"
-    },
-    "Bennington-2": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Bennington-2-1",
-       "popPct": 99.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Bennington",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Bennington",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 7830,
-     "pres2020New": -29.1,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Bennington-2; it draws from the old Bennington-2-1 (100%). Counties: gained Bennington (100%).",
-     "toEra": "current"
-    },
-    "Bennington-3": {
-     "contributors": [
-      {
-       "areaPct": 99.3,
-       "key": "Bennington-3",
-       "popPct": 99.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Bennington",
-       "popPct": 99.9
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4526,
-     "pres2020New": -23.4,
-     "pres2020Old": -23.4,
-     "retainedAreaPct": 99.3,
-     "retainedPopPct": 99.6,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Bennington County.",
-     "toEra": "current"
-    },
-    "Bennington-4": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Bennington-4",
-       "popPct": 99.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Bennington",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 7462,
-     "pres2020New": -37.8,
-     "pres2020Old": -37.8,
-     "retainedAreaPct": 99.8,
-     "retainedPopPct": 99.8,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Bennington County.",
-     "toEra": "current"
-    },
-    "Bennington-5": {
-     "contributors": [
-      {
-       "areaPct": 45.9,
-       "key": "Bennington-2-2",
-       "popPct": 91.5
-      },
-      {
-       "areaPct": 54,
-       "key": "Bennington-1",
-       "popPct": 8.5
-      }
-     ],
-     "counties": [
-      {
-       "county": "Bennington",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Bennington",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8202,
-     "pres2020New": -22.3,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Bennington-5; it draws from the old Bennington-2-2 (92%), the old Bennington-1 (8%). Counties: gained Bennington (100%).",
-     "toEra": "current"
-    },
-    "Bennington-Rutland": {
-     "contributors": [
-      {
-       "areaPct": 99.7,
-       "key": "Bennington-Rutland",
-       "popPct": 99.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Bennington",
-       "popPct": 65.3
-      },
-      {
-       "county": "Rutland",
-       "popPct": 34.3
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4349,
-     "pres2020New": -28.7,
-     "pres2020Old": -28.8,
-     "retainedAreaPct": 99.7,
-     "retainedPopPct": 99.7,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Bennington, Rutland counties.",
-     "toEra": "current"
-    },
-    "Caledonia-1": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Caledonia-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Caledonia",
-       "popPct": 99.7
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4096,
-     "pres2020New": -9.8,
-     "pres2020Old": -9.8,
-     "retainedAreaPct": 99.8,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Caledonia County.",
-     "toEra": "current"
-    },
-    "Caledonia-2": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Caledonia-2",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Caledonia",
-       "popPct": 99.8
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4084,
-     "pres2020New": -24.3,
-     "pres2020Old": -24.3,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Caledonia County.",
-     "toEra": "current"
-    },
-    "Caledonia-3": {
-     "contributors": [
-      {
-       "areaPct": 41.5,
-       "key": "Caledonia-4",
-       "popPct": 75.8
-      },
-      {
-       "areaPct": 38.6,
-       "key": "Orleans-Caledonia",
-       "popPct": 17.3
-      },
-      {
-       "areaPct": 19.8,
-       "key": "Essex-Caledonia-Orleans",
-       "popPct": 6.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "Caledonia",
-       "popPct": 99.7
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8448,
-     "pres2020New": -2.9,
-     "pres2020Old": -24.1,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Caledonia-3; it draws from the old Caledonia-4 (76%), the old Orleans-Caledonia (17%), the old Essex-Caledonia-Orleans (7%). Entirely in Caledonia County. 2020 presidential margin D+24.1 on the 2016–2020 lines → D+2.9 on the current lines.",
-     "toEra": "current"
-    },
-    "Caledonia-Essex": {
-     "contributors": [
-      {
-       "areaPct": 32,
-       "key": "Caledonia-3",
-       "popPct": 81.1
-      },
-      {
-       "areaPct": 68,
-       "key": "Essex-Caledonia",
-       "popPct": 18.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "Caledonia",
-       "popPct": 87.2
-      },
-      {
-       "county": "Essex",
-       "popPct": 12.8
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Caledonia",
-       "popPct": 87.2
-      },
-      {
-       "county": "Essex",
-       "popPct": 12.8
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 9080,
-     "pres2020New": -18.3,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Caledonia-Essex; it draws from the old Caledonia-3 (81%), the old Essex-Caledonia (19%). Counties: gained Caledonia (87%), Essex (13%).",
-     "toEra": "current"
-    },
-    "Caledonia-Washington": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Caledonia-Washington",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Caledonia",
-       "popPct": 67.8
-      },
-      {
-       "county": "Washington",
-       "popPct": 32.2
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4493,
-     "pres2020New": -26.9,
-     "pres2020Old": -26.9,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Caledonia, Washington counties.",
-     "toEra": "current"
-    },
-    "Chittenden-1": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Chittenden-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4167,
-     "pres2020New": -58.4,
-     "pres2020Old": -58.4,
-     "retainedAreaPct": 99.8,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Chittenden County.",
-     "toEra": "current"
-    },
-    "Chittenden-10": {
-     "contributors": [
-      {
-       "areaPct": 98.3,
-       "key": "Chittenden-7-4",
-       "popPct": 97.4
-      },
-      {
-       "areaPct": 1.1,
-       "key": "Chittenden-7-3",
-       "popPct": 2.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4525,
-     "pres2020New": -53.4,
-     "pres2020Old": -11.8,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-10; it draws from the old Chittenden-7-4 (97%), the old Chittenden-7-3 (3%). Entirely in Chittenden County. 2020 presidential margin D+11.8 on the 2016–2020 lines → D+53.4 on the current lines.",
-     "toEra": "current"
-    },
-    "Chittenden-11": {
-     "contributors": [
-      {
-       "areaPct": 99.4,
-       "key": "Chittenden-7-3",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4641,
-     "pres2020New": -65.3,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-11; it draws from the old Chittenden-7-3 (100%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-12": {
-     "contributors": [
-      {
-       "areaPct": 99.2,
-       "key": "Chittenden-7-1",
-       "popPct": 98.5
-      },
-      {
-       "areaPct": 0.3,
-       "key": "Chittenden-6-2",
-       "popPct": 1.5
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4564,
-     "pres2020New": -68.3,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-12; it draws from the old Chittenden-7-1 (98%), the old Chittenden-6-2 (2%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-13": {
-     "contributors": [
-      {
-       "areaPct": 54.6,
-       "key": "Chittenden-6-5",
-       "popPct": 71
-      },
-      {
-       "areaPct": 45.3,
-       "key": "Chittenden-6-2",
-       "popPct": 29
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 10387,
-     "pres2020New": -81.1,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-13; it draws from the old Chittenden-6-5 (71%), the old Chittenden-6-2 (29%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-14": {
-     "contributors": [
-      {
-       "areaPct": 51.5,
-       "key": "Chittenden-6-6",
-       "popPct": 50.2
-      },
-      {
-       "areaPct": 16.4,
-       "key": "Chittenden-6-4",
-       "popPct": 26.6
-      },
-      {
-       "areaPct": 20.1,
-       "key": "Chittenden-6-5",
-       "popPct": 12.1
-      },
-      {
-       "areaPct": 11.9,
-       "key": "Chittenden-6-3",
-       "popPct": 11.2
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 6347,
-     "pres2020New": -83.1,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-14; it draws from the old Chittenden-6-6 (50%), the old Chittenden-6-4 (27%), the old Chittenden-6-5 (12%) and 1 more. Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-15": {
-     "contributors": [
-      {
-       "areaPct": 78,
-       "key": "Chittenden-6-4",
-       "popPct": 78.4
-      },
-      {
-       "areaPct": 15.2,
-       "key": "Chittenden-6-7",
-       "popPct": 15.3
-      },
-      {
-       "areaPct": 4.6,
-       "key": "Chittenden-6-6",
-       "popPct": 4.6
-      },
-      {
-       "areaPct": 2.2,
-       "key": "Chittenden-6-3",
-       "popPct": 1.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 6637,
-     "pres2020New": -84.3,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-15; it draws from the old Chittenden-6-4 (78%), the old Chittenden-6-7 (15%), the old Chittenden-6-6 (5%) and 1 more. Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-16": {
-     "contributors": [
-      {
-       "areaPct": 82,
-       "key": "Chittenden-6-3",
-       "popPct": 86.2
-      },
-      {
-       "areaPct": 17.8,
-       "key": "Chittenden-6-2",
-       "popPct": 13.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 2770,
-     "pres2020New": -80.2,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-16; it draws from the old Chittenden-6-3 (86%), the old Chittenden-6-2 (14%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-17": {
-     "contributors": [
-      {
-       "areaPct": 98.7,
-       "key": "Chittenden-6-2",
-       "popPct": 98.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 14839,
-     "pres2020New": -71.3,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-17; it draws from the old Chittenden-6-2 (99%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-18": {
-     "contributors": [
-      {
-       "areaPct": 99.1,
-       "key": "Chittenden-6-1",
-       "popPct": 99.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 3522,
-     "pres2020New": -63.5,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-18; it draws from the old Chittenden-6-1 (100%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-19": {
-     "contributors": [
-      {
-       "areaPct": 94.8,
-       "key": "Chittenden-9-2",
-       "popPct": 96.5
-      },
-      {
-       "areaPct": 1.4,
-       "key": "Chittenden-7-1",
-       "popPct": 1.4
-      },
-      {
-       "areaPct": 0.1,
-       "key": "Chittenden-6-2",
-       "popPct": 0.7
-      },
-      {
-       "areaPct": 0,
-       "key": "Chittenden-6-7",
-       "popPct": 0.5
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 9390,
-     "pres2020New": -38.8,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-19; it draws from the old Chittenden-9-2 (96%), the old Chittenden-7-1 (1%), the old Chittenden-6-2 (1%) and 1 more. Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-2": {
-     "contributors": [
-      {
-       "areaPct": 99.7,
-       "key": "Chittenden-2",
-       "popPct": 99.5
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 7815,
-     "pres2020New": -47.5,
-     "pres2020Old": -47.5,
-     "retainedAreaPct": 99.7,
-     "retainedPopPct": 99.5,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Chittenden County.",
-     "toEra": "current"
-    },
-    "Chittenden-20": {
-     "contributors": [
-      {
-       "areaPct": 99.1,
-       "key": "Chittenden-9-1",
-       "popPct": 99.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8530,
-     "pres2020New": -37.4,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-20; it draws from the old Chittenden-9-1 (100%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-21": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Chittenden-6-7",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 7951,
-     "pres2020New": -65.4,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-21; it draws from the old Chittenden-6-7 (100%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-22": {
-     "contributors": [
-      {
-       "areaPct": 98.8,
-       "key": "Chittenden-8-2",
-       "popPct": 99.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 9052,
-     "pres2020New": -49.4,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-22; it draws from the old Chittenden-8-2 (100%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-23": {
-     "contributors": [
-      {
-       "areaPct": 92.5,
-       "key": "Chittenden-8-1",
-       "popPct": 79.2
-      },
-      {
-       "areaPct": 7.4,
-       "key": "Chittenden-8-2",
-       "popPct": 20.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 6053,
-     "pres2020New": -44.8,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-23; it draws from the old Chittenden-8-1 (79%), the old Chittenden-8-2 (21%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-24": {
-     "contributors": [
-      {
-       "areaPct": 25.3,
-       "key": "Chittenden-8-1",
-       "popPct": 66.2
-      },
-      {
-       "areaPct": 74.5,
-       "key": "Chittenden-8-3",
-       "popPct": 33.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 6983,
-     "pres2020New": -42.6,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-24; it draws from the old Chittenden-8-1 (66%), the old Chittenden-8-3 (34%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-25": {
-     "contributors": [
-      {
-       "areaPct": 27.5,
-       "key": "Chittenden-10",
-       "popPct": 55.8
-      },
-      {
-       "areaPct": 72.4,
-       "key": "Chittenden-8-3",
-       "popPct": 44.2
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 99.8
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 99.8
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4669,
-     "pres2020New": -25,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-25; it draws from the old Chittenden-10 (56%), the old Chittenden-8-3 (44%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-3": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Chittenden-3",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 97.9
-      },
-      {
-       "county": "Lamoille",
-       "popPct": 2.1
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8233,
-     "pres2020New": -48.6,
-     "pres2020Old": -48.6,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Chittenden, Lamoille counties.",
-     "toEra": "current"
-    },
-    "Chittenden-4": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Chittenden-4-2",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 99
-      },
-      {
-       "county": "Addison",
-       "popPct": 1
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 99
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4445,
-     "pres2020New": -48.8,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-4; it draws from the old Chittenden-4-2 (100%). Counties: gained Chittenden (99%).",
-     "toEra": "current"
-    },
-    "Chittenden-5": {
-     "contributors": [
-      {
-       "areaPct": 97.7,
-       "key": "Chittenden-4-1",
-       "popPct": 96.6
-      },
-      {
-       "areaPct": 2.3,
-       "key": "Chittenden-4-2",
-       "popPct": 3.4
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 98.3
-      },
-      {
-       "county": "Addison",
-       "popPct": 1.7
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 98.3
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4167,
-     "pres2020New": -60.7,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-5; it draws from the old Chittenden-4-1 (97%), the old Chittenden-4-2 (3%). Counties: gained Chittenden (98%).",
-     "toEra": "current"
-    },
-    "Chittenden-6": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Chittenden-5-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 5614,
-     "pres2020New": -62.8,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-6; it draws from the old Chittenden-5-1 (100%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-7": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Chittenden-5-2",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 2895,
-     "pres2020New": -57.4,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-7; it draws from the old Chittenden-5-2 (100%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-8": {
-     "contributors": [
-      {
-       "areaPct": 41.3,
-       "key": "Chittenden-7-2",
-       "popPct": 62.7
-      },
-      {
-       "areaPct": 58.6,
-       "key": "Chittenden-2",
-       "popPct": 37.3
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 6272,
-     "pres2020New": -54.7,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-8; it draws from the old Chittenden-7-2 (63%), the old Chittenden-2 (37%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-9": {
-     "contributors": [
-      {
-       "areaPct": 80.5,
-       "key": "Chittenden-7-2",
-       "popPct": 61.4
-      },
-      {
-       "areaPct": 12.4,
-       "key": "Chittenden-7-3",
-       "popPct": 31.6
-      },
-      {
-       "areaPct": 7,
-       "key": "Chittenden-7-4",
-       "popPct": 7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 2511,
-     "pres2020New": -60.4,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-9; it draws from the old Chittenden-7-2 (61%), the old Chittenden-7-3 (32%), the old Chittenden-7-4 (7%). Counties: gained Chittenden (100%).",
-     "toEra": "current"
-    },
-    "Chittenden-Franklin": {
-     "contributors": [
-      {
-       "areaPct": 89.4,
-       "key": "Chittenden-10",
-       "popPct": 93.3
-      },
-      {
-       "areaPct": 10.6,
-       "key": "Franklin-1",
-       "popPct": 6.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Chittenden",
-       "popPct": 93.2
-      },
-      {
-       "county": "Franklin",
-       "popPct": 6.8
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Chittenden",
-       "popPct": 93.2
-      },
-      {
-       "county": "Franklin",
-       "popPct": 6.8
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 3083,
-     "pres2020New": -11.6,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden-Franklin; it draws from the old Chittenden-10 (93%), the old Franklin-1 (7%). Counties: gained Chittenden (93%), Franklin (7%).",
-     "toEra": "current"
-    },
-    "Essex-Caledonia": {
-     "contributors": [
-      {
-       "areaPct": 57,
-       "key": "Essex-Caledonia",
-       "popPct": 47.6
-      },
-      {
-       "areaPct": 8.8,
-       "key": "Caledonia-4",
-       "popPct": 40.2
-      },
-      {
-       "areaPct": 34.2,
-       "key": "Essex-Caledonia-Orleans",
-       "popPct": 12.2
-      }
-     ],
-     "counties": [
-      {
-       "county": "Essex",
-       "popPct": 59.8
-      },
-      {
-       "county": "Caledonia",
-       "popPct": 40.2
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4110,
-     "pres2020New": 0.8,
-     "pres2020Old": 9.2,
-     "retainedAreaPct": 57,
-     "retainedPopPct": 47.6,
-     "text": "A new footprint: only 48% of its population was in the 2016–2020 Essex-Caledonia; it draws from the old Caledonia-4 (40%), the old Essex-Caledonia-Orleans (12%). Spans Essex, Caledonia counties. 2020 presidential margin R+9.2 on the 2016–2020 lines → R+0.8 on the current lines.",
-     "toEra": "current"
-    },
-    "Essex-Orleans": {
-     "contributors": [
-      {
-       "areaPct": 70.9,
-       "key": "Essex-Caledonia-Orleans",
-       "popPct": 50.3
-      },
-      {
-       "areaPct": 29.1,
-       "key": "Orleans-1",
-       "popPct": 49.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Essex",
-       "popPct": 50.4
-      },
-      {
-       "county": "Orleans",
-       "popPct": 49.6
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Essex",
-       "popPct": 50.4
-      },
-      {
-       "county": "Orleans",
-       "popPct": 49.6
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4610,
-     "pres2020New": 9.5,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Essex-Orleans; it draws from the old Essex-Caledonia-Orleans (50%), the old Orleans-1 (50%). Counties: gained Essex (50%), Orleans (50%).",
-     "toEra": "current"
-    },
-    "Franklin-1": {
-     "contributors": [
-      {
-       "areaPct": 48.1,
-       "key": "Franklin-2",
-       "popPct": 52
-      },
-      {
-       "areaPct": 51.7,
-       "key": "Franklin-1",
-       "popPct": 48
-      }
-     ],
-     "counties": [
-      {
-       "county": "Franklin",
-       "popPct": 99.9
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 9651,
-     "pres2020New": -11,
-     "pres2020Old": -7.6,
-     "retainedAreaPct": 51.7,
-     "retainedPopPct": 48,
-     "text": "A new footprint: only 48% of its population was in the 2016–2020 Franklin-1; it draws from the old Franklin-2 (52%). Entirely in Franklin County. 2020 presidential margin D+7.6 on the 2016–2020 lines → D+11.0 on the current lines.",
-     "toEra": "current"
-    },
-    "Franklin-2": {
-     "contributors": [
-      {
-       "areaPct": 99.5,
-       "key": "Franklin-3-2",
-       "popPct": 99.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Franklin",
-       "popPct": 95.9
-      },
-      {
-       "county": "Grand Isle",
-       "popPct": 4.1
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Grand Isle",
-       "popPct": 4.1
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 6764,
-     "pres2020New": -15.1,
-     "pres2020Old": -14,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Franklin-2; it draws from the old Franklin-3-2 (100%). Counties: gained Grand Isle (4%). 2020 presidential margin D+14.0 on the 2016–2020 lines → D+15.1 on the current lines.",
-     "toEra": "current"
-    },
-    "Franklin-3": {
-     "contributors": [
-      {
-       "areaPct": 99.4,
-       "key": "Franklin-3-1",
-       "popPct": 99.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Franklin",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Franklin",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4574,
-     "pres2020New": -33.8,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Franklin-3; it draws from the old Franklin-3-1 (100%). Counties: gained Franklin (100%).",
-     "toEra": "current"
-    },
-    "Franklin-4": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Franklin-4",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Franklin",
-       "popPct": 98
-      },
-      {
-       "county": "Grand Isle",
-       "popPct": 2
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8829,
-     "pres2020New": 1.8,
-     "pres2020Old": 1.8,
-     "retainedAreaPct": 99.8,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Franklin, Grand Isle counties.",
-     "toEra": "current"
-    },
-    "Franklin-5": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Franklin-5",
-       "popPct": 99.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "Franklin",
-       "popPct": 99.8
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8736,
-     "pres2020New": 12.8,
-     "pres2020Old": 12.8,
-     "retainedAreaPct": 99.8,
-     "retainedPopPct": 99.9,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Franklin County.",
-     "toEra": "current"
-    },
-    "Franklin-6": {
-     "contributors": [
-      {
-       "areaPct": 99.7,
-       "key": "Franklin-6",
-       "popPct": 99.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Franklin",
-       "popPct": 99.4
-      },
-      {
-       "county": "Lamoille",
-       "popPct": 0.6
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4679,
-     "pres2020New": -17.9,
-     "pres2020Old": -17.9,
-     "retainedAreaPct": 99.7,
-     "retainedPopPct": 99.7,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Franklin, Lamoille counties.",
-     "toEra": "current"
-    },
-    "Franklin-7": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Franklin-7",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Franklin",
-       "popPct": 99.7
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 3990,
-     "pres2020New": -10.8,
-     "pres2020Old": -10.8,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Franklin County.",
-     "toEra": "current"
-    },
-    "Franklin-8": {
-     "contributors": [
-      {
-       "areaPct": 94.5,
-       "key": "Franklin-3-1",
-       "popPct": 98.7
-      },
-      {
-       "areaPct": 5.5,
-       "key": "Franklin-3-2",
-       "popPct": 1.3
-      }
-     ],
-     "counties": [
-      {
-       "county": "Franklin",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Franklin",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 2538,
-     "pres2020New": -31.3,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Franklin-8; it draws from the old Franklin-3-1 (99%), the old Franklin-3-2 (1%). Counties: gained Franklin (100%).",
-     "toEra": "current"
-    },
-    "Grand Isle-Chittenden": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "Grand-Isle-Chittenden",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Grand Isle",
-       "popPct": 59.3
-      },
-      {
-       "county": "Chittenden",
-       "popPct": 40.5
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Grand Isle",
-       "popPct": 59.3
-      },
-      {
-       "county": "Chittenden",
-       "popPct": 40.5
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 12485,
-     "pres2020New": -18.4,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Grand Isle-Chittenden; it draws from the old Grand-Isle-Chittenden (100%). Counties: gained Grand Isle (59%), Chittenden (40%).",
-     "toEra": "current"
-    },
-    "Lamoille-1": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Lamoille-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Lamoille",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4954,
-     "pres2020New": -61.8,
-     "pres2020Old": -61.8,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Lamoille County.",
-     "toEra": "current"
-    },
-    "Lamoille-2": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Lamoille-2",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Lamoille",
-       "popPct": 99.6
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8539,
-     "pres2020New": -29.6,
-     "pres2020Old": -29.6,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Lamoille County.",
-     "toEra": "current"
-    },
-    "Lamoille-3": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Lamoille-3",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Lamoille",
-       "popPct": 99.2
-      },
-      {
-       "county": "Franklin",
-       "popPct": 0.8
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4509,
-     "pres2020New": -36,
-     "pres2020Old": -35.9,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Lamoille, Franklin counties.",
-     "toEra": "current"
-    },
-    "Lamoille-Washington": {
-     "contributors": [
-      {
-       "areaPct": 97.7,
-       "key": "Lamoille-Washington",
-       "popPct": 96.8
-      },
-      {
-       "areaPct": 2.2,
-       "key": "Lamoille-1",
-       "popPct": 3.2
-      }
-     ],
-     "counties": [
-      {
-       "county": "Lamoille",
-       "popPct": 77.8
-      },
-      {
-       "county": "Washington",
-       "popPct": 22.2
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8481,
-     "pres2020New": -45.2,
-     "pres2020Old": -44.6,
-     "retainedAreaPct": 97.7,
-     "retainedPopPct": 96.8,
-     "text": "Kept 97% of its population from the 2016–2020 Lamoille-Washington; gained the rest from the old Lamoille-1 (3%). Spans Lamoille, Washington counties. 2020 presidential margin D+44.6 on the 2016–2020 lines → D+45.2 on the current lines.",
-     "toEra": "current"
-    },
-    "Orange-1": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "Orange-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Orange",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4207,
-     "pres2020New": -8.1,
-     "pres2020Old": -5,
-     "retainedAreaPct": 100,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Orange County.",
-     "toEra": "current"
-    },
-    "Orange-2": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Orange-2",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Orange",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4399,
-     "pres2020New": -29.2,
-     "pres2020Old": -29,
-     "retainedAreaPct": 99.8,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Orange County.",
-     "toEra": "current"
-    },
-    "Orange-3": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "Orange-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Orange",
-       "popPct": 99.8
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Orange",
-       "popPct": 99.8
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4386,
-     "pres2020New": -2.6,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Orange-3; it draws from the old Orange-1 (100%). Counties: gained Orange (100%).",
-     "toEra": "current"
-    },
-    "Orange-Caledonia": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Orange-Caledonia",
-       "popPct": 99.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "Orange",
-       "popPct": 77.9
-      },
-      {
-       "county": "Caledonia",
-       "popPct": 21.9
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4481,
-     "pres2020New": -3.6,
-     "pres2020Old": -3.5,
-     "retainedAreaPct": 99.8,
-     "retainedPopPct": 99.9,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Orange, Caledonia counties.",
-     "toEra": "current"
-    },
-    "Orange-Washington-Addison": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Orange-Washington-Addison",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Orange",
-       "popPct": 88.1
-      },
-      {
-       "county": "Washington",
-       "popPct": 8.3
-      },
-      {
-       "county": "Addison",
-       "popPct": 3.5
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8194,
-     "pres2020New": -31.7,
-     "pres2020Old": -31.7,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Orange, Washington, Addison counties.",
-     "toEra": "current"
-    },
-    "Orleans-1": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "Orleans-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Orleans",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4579,
-     "pres2020New": 4.5,
-     "pres2020Old": 7,
-     "retainedAreaPct": 100,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Orleans County.",
-     "toEra": "current"
-    },
-    "Orleans-2": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Orleans-2",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Orleans",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4455,
-     "pres2020New": -15,
-     "pres2020Old": 0.2,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Orleans County.",
-     "toEra": "current"
-    },
-    "Orleans-3": {
-     "contributors": [
-      {
-       "areaPct": 40.2,
-       "key": "Orleans-Caledonia",
-       "popPct": 67.1
-      },
-      {
-       "areaPct": 25.7,
-       "key": "Orleans-1",
-       "popPct": 24.5
-      },
-      {
-       "areaPct": 34,
-       "key": "Essex-Caledonia-Orleans",
-       "popPct": 8.4
-      }
-     ],
-     "counties": [
-      {
-       "county": "Orleans",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Orleans",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4253,
-     "pres2020New": -4.7,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Orleans-3; it draws from the old Orleans-Caledonia (67%), the old Orleans-1 (24%), the old Essex-Caledonia-Orleans (8%). Counties: gained Orleans (100%).",
-     "toEra": "current"
-    },
-    "Orleans-4": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "Orleans-Caledonia",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Orleans",
-       "popPct": 99.2
-      },
-      {
-       "county": "Lamoille",
-       "popPct": 0.6
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Orleans",
-       "popPct": 99.2
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4244,
-     "pres2020New": -34,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Orleans-4; it draws from the old Orleans-Caledonia (100%). Counties: gained Orleans (99%).",
-     "toEra": "current"
-    },
-    "Orleans-Lamoille": {
-     "contributors": [
-      {
-       "areaPct": 37.6,
-       "key": "Orleans-2",
-       "popPct": 52.4
-      },
-      {
-       "areaPct": 62.3,
-       "key": "Orleans-Lamoille",
-       "popPct": 47.5
-      }
-     ],
-     "counties": [
-      {
-       "county": "Orleans",
-       "popPct": 84.7
-      },
-      {
-       "county": "Lamoille",
-       "popPct": 15.1
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8895,
-     "pres2020New": 7.2,
-     "pres2020Old": 2.1,
-     "retainedAreaPct": 62.3,
-     "retainedPopPct": 47.5,
-     "text": "A new footprint: only 48% of its population was in the 2016–2020 Orleans-Lamoille; it draws from the old Orleans-2 (52%). Spans Orleans, Lamoille counties. 2020 presidential margin R+2.1 on the 2016–2020 lines → R+7.2 on the current lines.",
-     "toEra": "current"
-    },
-    "Rutland-1": {
-     "contributors": [
-      {
-       "areaPct": 88,
-       "key": "Rutland-1",
-       "popPct": 87.8
-      },
-      {
-       "areaPct": 11.8,
-       "key": "Rutland-Bennington",
-       "popPct": 11.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 3855,
-     "pres2020New": -2.3,
-     "pres2020Old": -4.6,
-     "retainedAreaPct": 88,
-     "retainedPopPct": 87.8,
-     "text": "Kept 88% of its population from the 2016–2020 Rutland-1; gained the rest from the old Rutland-Bennington (12%). Entirely in Rutland County. 2020 presidential margin D+4.6 on the 2016–2020 lines → D+2.3 on the current lines.",
-     "toEra": "current"
-    },
-    "Rutland-10": {
-     "contributors": [
-      {
-       "areaPct": 51.1,
-       "key": "Rutland-3",
-       "popPct": 75.4
-      },
-      {
-       "areaPct": 48.9,
-       "key": "Addison-Rutland",
-       "popPct": 24.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 3953,
-     "pres2020New": 3,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Rutland-10; it draws from the old Rutland-3 (75%), the old Addison-Rutland (25%). Counties: gained Rutland (100%).",
-     "toEra": "current"
-    },
-    "Rutland-11": {
-     "contributors": [
-      {
-       "areaPct": 88.2,
-       "key": "Rutland-Windsor-1",
-       "popPct": 87.9
-      },
-      {
-       "areaPct": 11.6,
-       "key": "Windsor-Rutland",
-       "popPct": 11.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 99.2
-      },
-      {
-       "county": "Windsor",
-       "popPct": 0.8
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Rutland",
-       "popPct": 99.2
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4318,
-     "pres2020New": -23.3,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Rutland-11; it draws from the old Rutland-Windsor-1 (88%), the old Windsor-Rutland (12%). Counties: gained Rutland (99%).",
-     "toEra": "current"
-    },
-    "Rutland-2": {
-     "contributors": [
-      {
-       "areaPct": 88.8,
-       "key": "Rutland-2",
-       "popPct": 73.8
-      },
-      {
-       "areaPct": 11,
-       "key": "Rutland-4",
-       "popPct": 26
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 9138,
-     "pres2020New": -2.1,
-     "pres2020Old": -1.1,
-     "retainedAreaPct": 88.8,
-     "retainedPopPct": 73.8,
-     "text": "Kept 74% of its population from the 2016–2020 Rutland-2; gained the rest from the old Rutland-4 (26%). Entirely in Rutland County. 2020 presidential margin D+1.1 on the 2016–2020 lines → D+2.1 on the current lines.",
-     "toEra": "current"
-    },
-    "Rutland-3": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Rutland-3",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4449,
-     "pres2020New": -0.7,
-     "pres2020Old": -0.7,
-     "retainedAreaPct": 99.8,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Rutland County.",
-     "toEra": "current"
-    },
-    "Rutland-4": {
-     "contributors": [
-      {
-       "areaPct": 10.1,
-       "key": "Rutland-5-1",
-       "popPct": 54.7
-      },
-      {
-       "areaPct": 88.9,
-       "key": "Rutland-4",
-       "popPct": 42.2
-      },
-      {
-       "areaPct": 0.5,
-       "key": "Rutland-5-4",
-       "popPct": 2
-      },
-      {
-       "areaPct": 0.3,
-       "key": "Rutland-5-3",
-       "popPct": 1.2
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 3820,
-     "pres2020New": -19.6,
-     "pres2020Old": -13.7,
-     "retainedAreaPct": 88.9,
-     "retainedPopPct": 42.2,
-     "text": "A new footprint: only 42% of its population was in the 2016–2020 Rutland-4; it draws from the old Rutland-5-1 (55%), the old Rutland-5-4 (2%), the old Rutland-5-3 (1%). Entirely in Rutland County. 2020 presidential margin D+13.7 on the 2016–2020 lines → D+19.6 on the current lines.",
-     "toEra": "current"
-    },
-    "Rutland-5": {
-     "contributors": [
-      {
-       "areaPct": 63.6,
-       "key": "Rutland-5-2",
-       "popPct": 66.6
-      },
-      {
-       "areaPct": 36.3,
-       "key": "Rutland-5-1",
-       "popPct": 33.4
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4862,
-     "pres2020New": -22.6,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Rutland-5; it draws from the old Rutland-5-2 (67%), the old Rutland-5-1 (33%). Counties: gained Rutland (100%).",
-     "toEra": "current"
-    },
-    "Rutland-6": {
-     "contributors": [
-      {
-       "areaPct": 87,
-       "key": "Rutland-5-3",
-       "popPct": 83
-      },
-      {
-       "areaPct": 11.6,
-       "key": "Rutland-5-2",
-       "popPct": 15.6
-      },
-      {
-       "areaPct": 0.9,
-       "key": "Rutland-5-1",
-       "popPct": 1.1
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4317,
-     "pres2020New": -18.5,
-     "pres2020Old": -12.8,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Rutland-6; it draws from the old Rutland-5-3 (83%), the old Rutland-5-2 (16%), the old Rutland-5-1 (1%). Entirely in Rutland County. 2020 presidential margin D+12.8 on the 2016–2020 lines → D+18.5 on the current lines.",
-     "toEra": "current"
-    },
-    "Rutland-7": {
-     "contributors": [
-      {
-       "areaPct": 86.9,
-       "key": "Rutland-5-4",
-       "popPct": 84.6
-      },
-      {
-       "areaPct": 5.6,
-       "key": "Rutland-5-1",
-       "popPct": 7.6
-      },
-      {
-       "areaPct": 7.1,
-       "key": "Rutland-5-3",
-       "popPct": 7.5
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4344,
-     "pres2020New": -18,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Rutland-7; it draws from the old Rutland-5-4 (85%), the old Rutland-5-1 (8%), the old Rutland-5-3 (8%). Counties: gained Rutland (100%).",
-     "toEra": "current"
-    },
-    "Rutland-8": {
-     "contributors": [
-      {
-       "areaPct": 85.1,
-       "key": "Rutland-6",
-       "popPct": 62.3
-      },
-      {
-       "areaPct": 14.8,
-       "key": "Rutland-2",
-       "popPct": 37.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Rutland",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4612,
-     "pres2020New": -9.4,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Rutland-8; it draws from the old Rutland-6 (62%), the old Rutland-2 (38%). Counties: gained Rutland (100%).",
-     "toEra": "current"
-    },
-    "Rutland-9": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Rutland-6",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 98.5
-      },
-      {
-       "county": "Addison",
-       "popPct": 1.5
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Rutland",
-       "popPct": 98.5
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4116,
-     "pres2020New": -14.5,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Rutland-9; it draws from the old Rutland-6 (100%). Counties: gained Rutland (98%).",
-     "toEra": "current"
-    },
-    "Rutland-Bennington": {
-     "contributors": [
-      {
-       "areaPct": 96.4,
-       "key": "Rutland-Bennington",
-       "popPct": 97.6
-      },
-      {
-       "areaPct": 3.4,
-       "key": "Rutland-2",
-       "popPct": 2.4
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 83.2
-      },
-      {
-       "county": "Bennington",
-       "popPct": 16.8
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4226,
-     "pres2020New": -10.1,
-     "pres2020Old": -8,
-     "retainedAreaPct": 96.4,
-     "retainedPopPct": 97.6,
-     "text": "Kept 98% of its population from the 2016–2020 Rutland-Bennington; gained the rest from the old Rutland-2 (2%). Spans Rutland, Bennington counties. 2020 presidential margin D+8.0 on the 2016–2020 lines → D+10.1 on the current lines.",
-     "toEra": "current"
-    },
-    "Rutland-Windsor": {
-     "contributors": [
-      {
-       "areaPct": 99.6,
-       "key": "Rutland-Windsor-2",
-       "popPct": 99.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Rutland",
-       "popPct": 53.2
-      },
-      {
-       "county": "Windsor",
-       "popPct": 46.8
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Rutland",
-       "popPct": 53.2
-      },
-      {
-       "county": "Windsor",
-       "popPct": 46.8
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4654,
-     "pres2020New": -16.2,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Rutland-Windsor; it draws from the old Rutland-Windsor-2 (100%). Counties: gained Rutland (53%), Windsor (47%).",
-     "toEra": "current"
-    },
-    "Washington-1": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Washington-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Washington",
-       "popPct": 98
-      },
-      {
-       "county": "Orange",
-       "popPct": 2
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8776,
-     "pres2020New": -27.8,
-     "pres2020Old": -28,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Washington, Orange counties.",
-     "toEra": "current"
-    },
-    "Washington-2": {
-     "contributors": [
-      {
-       "areaPct": 99.4,
-       "key": "Washington-7",
-       "popPct": 99.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Washington",
-       "popPct": 98.7
-      },
-      {
-       "county": "Addison",
-       "popPct": 1
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8359,
-     "pres2020New": -61.5,
-     "pres2020Old": -8.9,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Washington-2; it draws from the old Washington-7 (100%). Spans Washington, Addison counties. 2020 presidential margin D+8.9 on the 2016–2020 lines → D+61.5 on the current lines.",
-     "toEra": "current"
-    },
-    "Washington-3": {
-     "contributors": [
-      {
-       "areaPct": 99,
-       "key": "Washington-3",
-       "popPct": 99.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Washington",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8443,
-     "pres2020New": -28.4,
-     "pres2020Old": -28.4,
-     "retainedAreaPct": 99,
-     "retainedPopPct": 99.6,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Washington County.",
-     "toEra": "current"
-    },
-    "Washington-4": {
-     "contributors": [
-      {
-       "areaPct": 99.7,
-       "key": "Washington-4",
-       "popPct": 99.9
-      }
-     ],
-     "counties": [
-      {
-       "county": "Washington",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8065,
-     "pres2020New": -79.2,
-     "pres2020Old": -79.3,
-     "retainedAreaPct": 99.7,
-     "retainedPopPct": 99.9,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Washington County.",
-     "toEra": "current"
-    },
-    "Washington-5": {
-     "contributors": [
-      {
-       "areaPct": 99.7,
-       "key": "Washington-5",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Washington",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4377,
-     "pres2020New": -55.5,
-     "pres2020Old": -55.5,
-     "retainedAreaPct": 99.7,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Washington County.",
-     "toEra": "current"
-    },
-    "Washington-6": {
-     "contributors": [
-      {
-       "areaPct": 99.7,
-       "key": "Washington-6",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Washington",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4475,
-     "pres2020New": -46.3,
-     "pres2020Old": -46.3,
-     "retainedAreaPct": 99.7,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Washington County.",
-     "toEra": "current"
-    },
-    "Washington-Chittenden": {
-     "contributors": [
-      {
-       "areaPct": 99.8,
-       "key": "Washington-Chittenden",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Washington",
-       "popPct": 60.6
-      },
-      {
-       "county": "Chittenden",
-       "popPct": 37.3
-      },
-      {
-       "county": "Lamoille",
-       "popPct": 1.6
-      },
-      {
-       "county": "Addison",
-       "popPct": 0.5
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8581,
-     "pres2020New": -56.5,
-     "pres2020Old": -56.5,
-     "retainedAreaPct": 99.8,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Washington, Chittenden, Lamoille, Addison counties.",
-     "toEra": "current"
-    },
-    "Washington-Orange": {
-     "contributors": [
-      {
-       "areaPct": 87.9,
-       "key": "Washington-2",
-       "popPct": 95.3
-      },
-      {
-       "areaPct": 12,
-       "key": "Orange-1",
-       "popPct": 4.3
-      }
-     ],
-     "counties": [
-      {
-       "county": "Washington",
-       "popPct": 95.4
-      },
-      {
-       "county": "Orange",
-       "popPct": 4.6
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Washington",
-       "popPct": 95.4
-      },
-      {
-       "county": "Orange",
-       "popPct": 4.6
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8332,
-     "pres2020New": -8.4,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Washington-Orange; it draws from the old Washington-2 (95%), the old Orange-1 (4%). Counties: gained Washington (95%), Orange (5%).",
-     "toEra": "current"
-    },
-    "Windham-1": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "Windham-1",
-       "popPct": 99.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windham",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4312,
-     "pres2020New": -30.2,
-     "pres2020Old": -30.1,
-     "retainedAreaPct": 100,
-     "retainedPopPct": 99.8,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Windham County.",
-     "toEra": "current"
-    },
-    "Windham-2": {
-     "contributors": [
-      {
-       "areaPct": 49,
-       "key": "Windham-Bennington",
-       "popPct": 64.8
-      },
-      {
-       "areaPct": 50.9,
-       "key": "Windham-Bennington-Windsor",
-       "popPct": 35
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windham",
-       "popPct": 99.8
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Windham",
-       "popPct": 99.8
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4126,
-     "pres2020New": -35.8,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windham-2; it draws from the old Windham-Bennington (65%), the old Windham-Bennington-Windsor (35%). Counties: gained Windham (100%).",
-     "toEra": "current"
-    },
-    "Windham-3": {
-     "contributors": [
-      {
-       "areaPct": 55,
-       "key": "Windham-3",
-       "popPct": 64.3
-      },
-      {
-       "areaPct": 45,
-       "key": "Windham-4",
-       "popPct": 35.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windham",
-       "popPct": 99.7
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8395,
-     "pres2020New": -42.7,
-     "pres2020Old": -36.8,
-     "retainedAreaPct": 55,
-     "retainedPopPct": 64.3,
-     "text": "Kept 64% of its population from the 2016–2020 Windham-3; gained the rest from the old Windham-4 (36%). Entirely in Windham County. 2020 presidential margin D+36.8 on the 2016–2020 lines → D+42.7 on the current lines.",
-     "toEra": "current"
-    },
-    "Windham-4": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Windham-4",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windham",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4475,
-     "pres2020New": -61,
-     "pres2020Old": -56.3,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Windham County.",
-     "toEra": "current"
-    },
-    "Windham-5": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Windham-5",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windham",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4653,
-     "pres2020New": -53.9,
-     "pres2020Old": -53.8,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Windham County.",
-     "toEra": "current"
-    },
-    "Windham-6": {
-     "contributors": [
-      {
-       "areaPct": 95.7,
-       "key": "Windham-6",
-       "popPct": 96.1
-      },
-      {
-       "areaPct": 4.2,
-       "key": "Windham-Bennington",
-       "popPct": 3.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windham",
-       "popPct": 99.7
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4384,
-     "pres2020New": -24.1,
-     "pres2020Old": -24.9,
-     "retainedAreaPct": 95.7,
-     "retainedPopPct": 96.1,
-     "text": "Kept 96% of its population from the 2016–2020 Windham-6; gained the rest from the old Windham-Bennington (4%). Entirely in Windham County. 2020 presidential margin D+24.9 on the 2016–2020 lines → D+24.1 on the current lines.",
-     "toEra": "current"
-    },
-    "Windham-7": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Windham-2-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windham",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Windham",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 3948,
-     "pres2020New": -55.8,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windham-7; it draws from the old Windham-2-1 (100%). Counties: gained Windham (100%).",
-     "toEra": "current"
-    },
-    "Windham-8": {
-     "contributors": [
-      {
-       "areaPct": 59.7,
-       "key": "Windham-2-2",
-       "popPct": 94.4
-      },
-      {
-       "areaPct": 40.2,
-       "key": "Windham-2-1",
-       "popPct": 5.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windham",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Windham",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4072,
-     "pres2020New": -68.7,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windham-8; it draws from the old Windham-2-2 (94%), the old Windham-2-1 (6%). Counties: gained Windham (100%).",
-     "toEra": "current"
-    },
-    "Windham-9": {
-     "contributors": [
-      {
-       "areaPct": 83.6,
-       "key": "Windham-2-3",
-       "popPct": 94.6
-      },
-      {
-       "areaPct": 16.3,
-       "key": "Windham-2-1",
-       "popPct": 5.4
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windham",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Windham",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4156,
-     "pres2020New": -71.7,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windham-9; it draws from the old Windham-2-3 (95%), the old Windham-2-1 (5%). Counties: gained Windham (100%).",
-     "toEra": "current"
-    },
-    "Windham-Windsor-Bennington": {
-     "contributors": [
-      {
-       "areaPct": 79.8,
-       "key": "Windham-Bennington-Windsor",
-       "popPct": 86.7
-      },
-      {
-       "areaPct": 19.9,
-       "key": "Windsor-3-1",
-       "popPct": 13.2
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windham",
-       "popPct": 44.6
-      },
-      {
-       "county": "Bennington",
-       "popPct": 27.7
-      },
-      {
-       "county": "Windsor",
-       "popPct": 27.4
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Windham",
-       "popPct": 44.6
-      },
-      {
-       "county": "Bennington",
-       "popPct": 27.7
-      },
-      {
-       "county": "Windsor",
-       "popPct": 27.4
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4287,
-     "pres2020New": -37.8,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windham-Windsor-Bennington; it draws from the old Windham-Bennington-Windsor (87%), the old Windsor-3-1 (13%). Counties: gained Windham (45%), Bennington (28%), Windsor (27%).",
-     "toEra": "current"
-    },
-    "Windsor-1": {
-     "contributors": [
-      {
-       "areaPct": 100,
-       "key": "Windsor-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windsor",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8349,
-     "pres2020New": -41.1,
-     "pres2020Old": -41.1,
-     "retainedAreaPct": 100,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Windsor County.",
-     "toEra": "current"
-    },
-    "Windsor-2": {
-     "contributors": [
-      {
-       "areaPct": 94.5,
-       "key": "Windsor-2",
-       "popPct": 94.7
-      },
-      {
-       "areaPct": 5.3,
-       "key": "Windsor-3-1",
-       "popPct": 5.1
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windsor",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4471,
-     "pres2020New": -16.6,
-     "pres2020Old": -17.8,
-     "retainedAreaPct": 94.5,
-     "retainedPopPct": 94.7,
-     "text": "Kept 95% of its population from the 2016–2020 Windsor-2; gained the rest from the old Windsor-3-1 (5%). Entirely in Windsor County. 2020 presidential margin D+17.8 on the 2016–2020 lines → D+16.6 on the current lines.",
-     "toEra": "current"
-    },
-    "Windsor-3": {
-     "contributors": [
-      {
-       "areaPct": 97.4,
-       "key": "Windsor-3-2",
-       "popPct": 97.4
-      },
-      {
-       "areaPct": 2.6,
-       "key": "Windsor-3-1",
-       "popPct": 2.6
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windsor",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Windsor",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 9062,
-     "pres2020New": -18.1,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windsor-3; it draws from the old Windsor-3-2 (97%), the old Windsor-3-1 (3%). Counties: gained Windsor (100%).",
-     "toEra": "current"
-    },
-    "Windsor-4": {
-     "contributors": [
-      {
-       "areaPct": 67.7,
-       "key": "Windsor-4-1",
-       "popPct": 80
-      },
-      {
-       "areaPct": 32.2,
-       "key": "Rutland-Windsor-1",
-       "popPct": 20
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windsor",
-       "popPct": 99.9
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Windsor",
-       "popPct": 99.9
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4504,
-     "pres2020New": -41.7,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windsor-4; it draws from the old Windsor-4-1 (80%), the old Rutland-Windsor-1 (20%). Counties: gained Windsor (100%).",
-     "toEra": "current"
-    },
-    "Windsor-5": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Windsor-5",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windsor",
-       "popPct": 99.8
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4331,
-     "pres2020New": -54.1,
-     "pres2020Old": -54.1,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Entirely in Windsor County.",
-     "toEra": "current"
-    },
-    "Windsor-6": {
-     "contributors": [
-      {
-       "areaPct": 73.1,
-       "key": "Windsor-4-2",
-       "popPct": 90.7
-      },
-      {
-       "areaPct": 26.8,
-       "key": "Windsor-4-1",
-       "popPct": 9.3
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windsor",
-       "popPct": 100
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Windsor",
-       "popPct": 100
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 8984,
-     "pres2020New": -48,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windsor-6; it draws from the old Windsor-4-2 (91%), the old Windsor-4-1 (9%). Counties: gained Windsor (100%).",
-     "toEra": "current"
-    },
-    "Windsor-Addison": {
-     "contributors": [
-      {
-       "areaPct": 79,
-       "key": "Windsor-Rutland",
-       "popPct": 91
-      },
-      {
-       "areaPct": 20.6,
-       "key": "Addison-2",
-       "popPct": 8.7
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windsor",
-       "popPct": 88.6
-      },
-      {
-       "county": "Addison",
-       "popPct": 9.1
-      },
-      {
-       "county": "Orange",
-       "popPct": 1.6
-      },
-      {
-       "county": "Rutland",
-       "popPct": 0.7
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Windsor",
-       "popPct": 88.6
-      },
-      {
-       "county": "Addison",
-       "popPct": 9.1
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4125,
-     "pres2020New": -37.6,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windsor-Addison; it draws from the old Windsor-Rutland (91%), the old Addison-2 (9%). Counties: gained Windsor (89%), Addison (9%).",
-     "toEra": "current"
-    },
-    "Windsor-Orange-1": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Windsor-Orange-1",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windsor",
-       "popPct": 66.7
-      },
-      {
-       "county": "Orange",
-       "popPct": 33.3
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4087,
-     "pres2020New": -27.2,
-     "pres2020Old": -27.2,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Windsor, Orange counties.",
-     "toEra": "current"
-    },
-    "Windsor-Orange-2": {
-     "contributors": [
-      {
-       "areaPct": 99.9,
-       "key": "Windsor-Orange-2",
-       "popPct": 100
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windsor",
-       "popPct": 56
-      },
-      {
-       "county": "Orange",
-       "popPct": 44
-      }
-     ],
-     "countiesGained": [],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 9041,
-     "pres2020New": -64.6,
-     "pres2020Old": -64.6,
-     "retainedAreaPct": 99.9,
-     "retainedPopPct": 100,
-     "text": "Lines unchanged from the 2016–2020 map. Spans Windsor, Orange counties.",
-     "toEra": "current"
-    },
-    "Windsor-Windham": {
-     "contributors": [
-      {
-       "areaPct": 41.6,
-       "key": "Windsor-3-1",
-       "popPct": 67
-      },
-      {
-       "areaPct": 58.2,
-       "key": "Windham-3",
-       "popPct": 32.8
-      }
-     ],
-     "counties": [
-      {
-       "county": "Windsor",
-       "popPct": 67.1
-      },
-      {
-       "county": "Windham",
-       "popPct": 32.9
-      }
-     ],
-     "countiesGained": [
-      {
-       "county": "Windsor",
-       "popPct": 67.1
-      },
-      {
-       "county": "Windham",
-       "popPct": 32.9
-      }
-     ],
-     "countiesLost": [],
-     "fromEra": "2020",
-     "pop2020": 4484,
-     "pres2020New": -27.9,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windsor-Windham; it draws from the old Windsor-3-1 (67%), the old Windham-3 (33%). Counties: gained Windsor (67%), Windham (33%).",
-     "toEra": "current"
-    }
-   }
-  },
   "senate": {
    "current": {
     "Addison": {
      "contributors": [
       {
-       "areaPct": 4.4,
-       "key": "Addison-1 State House District",
-       "popPct": 22.6
-      },
-      {
-       "areaPct": 18.6,
-       "key": "Addison-4 State House District",
-       "popPct": 22.1
-      },
-      {
-       "areaPct": 15.9,
-       "key": "Addison-3 State House District",
-       "popPct": 18.9
-      },
-      {
-       "areaPct": 20.8,
-       "key": "Addison-2 State House District",
-       "popPct": 11.6
-      },
-      {
-       "areaPct": 11.6,
-       "key": "Addison-5 State House District",
-       "popPct": 9.2
-      },
-      {
-       "areaPct": 12.1,
-       "key": "Addison-Rutland State House District",
-       "popPct": 7.2
-      },
-      {
-       "areaPct": 4.8,
-       "key": "Washington-Chittenden State House District",
-       "popPct": 4.9
+       "areaPct": 93.7,
+       "key": "Addison",
+       "popPct": 97.3
       },
       {
        "areaPct": 6.3,
-       "key": "Windsor-Rutland State House District",
+       "key": "Windsor",
        "popPct": 2.7
-      },
-      {
-       "areaPct": 5.6,
-       "key": "Orange-Washington-Addison State House District",
-       "popPct": 0.8
       }
      ],
      "counties": [
@@ -345006,79 +339863,36 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      ],
      "countiesGained": [
       {
-       "county": "Addison",
-       "popPct": 92.3
-      },
-      {
-       "county": "Chittenden",
-       "popPct": 4.9
-      },
-      {
        "county": "Windsor",
        "popPct": 2.6
       }
      ],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 40439,
+     "pop2020": 40437,
      "pres2020New": -40.4,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Addison; it draws from the old Addison-1 State House District (23%), the old Addison-4 State House District (22%), the old Addison-3 State House District (19%) and 6 more. Counties: gained Addison (92%), Chittenden (5%), Windsor (3%).",
+     "pres2020Old": -40.2,
+     "retainedAreaPct": 93.7,
+     "retainedPopPct": 97.3,
+     "text": "Kept 97% of its population from the 2016–2020 Addison; gained the rest from the old Windsor (3%). Counties: gained Windsor (3%). 2020 presidential margin D+40.2 on the 2016–2020 lines → D+40.4 on the current lines.",
      "toEra": "current"
     },
     "Bennington": {
      "contributors": [
       {
-       "areaPct": 4,
-       "key": "Bennington-2-1 State House District",
-       "popPct": 18.6
+       "areaPct": 86.7,
+       "key": "Bennington",
+       "popPct": 94.4
       },
       {
-       "areaPct": 1,
-       "key": "Bennington-2-2 State House District",
-       "popPct": 18
+       "areaPct": 4.3,
+       "key": "Windsor",
+       "popPct": 4.6
       },
       {
-       "areaPct": 16,
-       "key": "Bennington-4 State House District",
-       "popPct": 17.8
-      },
-      {
-       "areaPct": 15.3,
-       "key": "Bennington-3 State House District",
-       "popPct": 10.8
-      },
-      {
-       "areaPct": 11.4,
-       "key": "Bennington-1 State House District",
-       "popPct": 8.6
-      },
-      {
-       "areaPct": 15.3,
-       "key": "Windham-Bennington-Windsor State House District",
-       "popPct": 8.4
-      },
-      {
-       "areaPct": 11.3,
-       "key": "Bennington-Rutland State House District",
-       "popPct": 6.8
-      },
-      {
-       "areaPct": 5.1,
-       "key": "Windham-6 State House District",
-       "popPct": 5.4
-      },
-      {
-       "areaPct": 15.1,
-       "key": "Windham-Bennington State House District",
-       "popPct": 4
-      },
-      {
-       "areaPct": 5.4,
-       "key": "Rutland-Bennington State House District",
-       "popPct": 1.7
+       "areaPct": 9,
+       "key": "Windham",
+       "popPct": 1.1
       }
      ],
      "counties": [
@@ -345091,57 +339905,23 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
        "popPct": 11
       }
      ],
-     "countiesGained": [
-      {
-       "county": "Bennington",
-       "popPct": 89
-      },
-      {
-       "county": "Windham",
-       "popPct": 11
-      }
-     ],
+     "countiesGained": [],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 41960,
+     "pop2020": 41959,
      "pres2020New": -28.3,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Bennington; it draws from the old Bennington-2-1 State House District (19%), the old Bennington-2-2 State House District (18%), the old Bennington-4 State House District (18%) and 7 more. Counties: gained Bennington (89%), Windham (11%).",
+     "pres2020Old": -27.9,
+     "retainedAreaPct": 86.7,
+     "retainedPopPct": 94.4,
+     "text": "Kept 94% of its population from the 2016–2020 Bennington; gained the rest from the old Windsor (5%), the old Windham (1%). Spans Bennington, Windham counties. 2020 presidential margin D+27.9 on the 2016–2020 lines → D+28.3 on the current lines.",
      "toEra": "current"
     },
     "Caledonia": {
      "contributors": [
       {
-       "areaPct": 7.1,
-       "key": "Caledonia-3 State House District",
-       "popPct": 32.5
-      },
-      {
-       "areaPct": 23.3,
-       "key": "Caledonia-1 State House District",
-       "popPct": 18.1
-      },
-      {
-       "areaPct": 17.5,
-       "key": "Caledonia-2 State House District",
-       "popPct": 18
-      },
-      {
-       "areaPct": 23.2,
-       "key": "Orange-Caledonia State House District",
-       "popPct": 14.5
-      },
-      {
-       "areaPct": 21.1,
-       "key": "Caledonia-Washington State House District",
-       "popPct": 13.5
-      },
-      {
-       "areaPct": 7.7,
-       "key": "Orleans-Caledonia State House District",
-       "popPct": 3.4
+       "areaPct": 100,
+       "key": "Caledonia",
+       "popPct": 100
       }
      ],
      "counties": [
@@ -345154,77 +339934,28 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
        "popPct": 10.2
       }
      ],
-     "countiesGained": [
-      {
-       "county": "Caledonia",
-       "popPct": 89.7
-      },
-      {
-       "county": "Orange",
-       "popPct": 10.2
-      }
-     ],
+     "countiesGained": [],
      "countiesLost": [],
      "fromEra": "2020",
      "pop2020": 22635,
      "pres2020New": -18.8,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Caledonia; it draws from the old Caledonia-3 State House District (32%), the old Caledonia-1 State House District (18%), the old Caledonia-2 State House District (18%) and 3 more. Counties: gained Caledonia (90%), Orange (10%).",
+     "pres2020Old": -15.3,
+     "retainedAreaPct": 100,
+     "retainedPopPct": 100,
+     "text": "Lines unchanged from the 2016–2020 map. Spans Caledonia, Orange counties.",
      "toEra": "current"
     },
     "Chittenden Central": {
      "contributors": [
       {
-       "areaPct": 25.7,
-       "key": "Chittenden-6-2 State House District",
-       "popPct": 26.2
+       "areaPct": 95.7,
+       "key": "Chittenden",
+       "popPct": 99.3
       },
       {
-       "areaPct": 18.1,
-       "key": "Chittenden-8-2 State House District",
-       "popPct": 17.8
-      },
-      {
-       "areaPct": 6.6,
-       "key": "Chittenden-6-7 State House District",
-       "popPct": 15.7
-      },
-      {
-       "areaPct": 4,
-       "key": "Chittenden-6-4 State House District",
-       "popPct": 12
-      },
-      {
-       "areaPct": 27.9,
-       "key": "Chittenden-8-1 State House District",
-       "popPct": 8.4
-      },
-      {
-       "areaPct": 8.9,
-       "key": "Chittenden-6-1 State House District",
-       "popPct": 6.2
-      },
-      {
-       "areaPct": 1.3,
-       "key": "Chittenden-6-6 State House District",
-       "popPct": 6.1
-      },
-      {
-       "areaPct": 2.5,
-       "key": "Chittenden-6-3 State House District",
-       "popPct": 5.7
-      },
-      {
-       "areaPct": 0.4,
-       "key": "Chittenden-6-5 State House District",
-       "popPct": 1.3
-      },
-      {
-       "areaPct": 3.8,
-       "key": "Chittenden-9-1 State House District",
-       "popPct": 0.5
+       "areaPct": 4.3,
+       "key": "Grand-Isle-Chittenden",
+       "popPct": 0.7
       }
      ],
      "counties": [
@@ -345241,40 +339972,25 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      ],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 57506,
+     "pop2020": 57505,
      "pres2020New": -64.8,
      "pres2020Old": null,
      "retainedAreaPct": 0,
      "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden Central; it draws from the old Chittenden-6-2 State House District (26%), the old Chittenden-8-2 State House District (18%), the old Chittenden-6-7 State House District (16%) and 7 more. Counties: gained Chittenden (100%).",
+     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden Central; it draws from the old Chittenden (99%), the old Grand-Isle-Chittenden (1%). Counties: gained Chittenden (100%).",
      "toEra": "current"
     },
     "Chittenden North": {
      "contributors": [
       {
-       "areaPct": 18.6,
-       "key": "Chittenden-10 State House District",
-       "popPct": 22.1
-      },
-      {
-       "areaPct": 17.7,
-       "key": "Grand-Isle-Chittenden State House District",
-       "popPct": 21.1
+       "areaPct": 75.9,
+       "key": "Chittenden",
+       "popPct": 79.7
       },
       {
        "areaPct": 24,
-       "key": "Franklin-2 State House District",
+       "key": "Franklin",
        "popPct": 20.3
-      },
-      {
-       "areaPct": 4.1,
-       "key": "Chittenden-8-1 State House District",
-       "popPct": 18.6
-      },
-      {
-       "areaPct": 35.5,
-       "key": "Chittenden-8-3 State House District",
-       "popPct": 17.9
       }
      ],
      "counties": [
@@ -345303,85 +340019,20 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      ],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 24740,
+     "pop2020": 24738,
      "pres2020New": -24,
      "pres2020Old": null,
      "retainedAreaPct": 0,
      "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden North; it draws from the old Chittenden-10 State House District (22%), the old Grand-Isle-Chittenden State House District (21%), the old Franklin-2 State House District (20%) and 2 more. Counties: gained Chittenden (79%), Franklin (20%).",
+     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden North; it draws from the old Chittenden (80%), the old Franklin (20%). Counties: gained Chittenden (79%), Franklin (20%).",
      "toEra": "current"
     },
     "Chittenden South East": {
      "contributors": [
       {
-       "areaPct": 8.5,
-       "key": "Chittenden-2 State House District",
-       "popPct": 14.1
-      },
-      {
-       "areaPct": 23.8,
-       "key": "Chittenden-3 State House District",
-       "popPct": 11.5
-      },
-      {
-       "areaPct": 0.6,
-       "key": "Chittenden-6-5 State House District",
-       "popPct": 10.3
-      },
-      {
-       "areaPct": 9,
-       "key": "Chittenden-5-1 State House District",
-       "popPct": 7.8
-      },
-      {
-       "areaPct": 0.6,
-       "key": "Chittenden-7-3 State House District",
-       "popPct": 7.8
-      },
-      {
-       "areaPct": 1.9,
-       "key": "Chittenden-7-2 State House District",
-       "popPct": 7.7
-      },
-      {
-       "areaPct": 10.6,
-       "key": "Chittenden-4-2 State House District",
-       "popPct": 6.4
-      },
-      {
-       "areaPct": 1.2,
-       "key": "Chittenden-7-4 State House District",
-       "popPct": 6.4
-      },
-      {
-       "areaPct": 4.3,
-       "key": "Chittenden-7-1 State House District",
-       "popPct": 6.3
-      },
-      {
-       "areaPct": 9,
-       "key": "Chittenden-1 State House District",
-       "popPct": 5.8
-      },
-      {
-       "areaPct": 14.1,
-       "key": "Chittenden-4-1 State House District",
-       "popPct": 5.6
-      },
-      {
-       "areaPct": 0.5,
-       "key": "Chittenden-6-2 State House District",
-       "popPct": 4.3
-      },
-      {
-       "areaPct": 4.4,
-       "key": "Chittenden-5-2 State House District",
-       "popPct": 4
-      },
-      {
-       "areaPct": 11.5,
-       "key": "Washington-Chittenden State House District",
-       "popPct": 1.8
+       "areaPct": 99.9,
+       "key": "Chittenden",
+       "popPct": 100
       }
      ],
      "counties": [
@@ -345398,40 +340049,25 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      ],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 71553,
+     "pop2020": 71589,
      "pres2020New": -58.8,
      "pres2020Old": null,
      "retainedAreaPct": 0,
      "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden South East; it draws from the old Chittenden-2 State House District (14%), the old Chittenden-3 State House District (12%), the old Chittenden-6-5 State House District (10%) and 11 more. Counties: gained Chittenden (100%).",
+     "text": "A new footprint: none of its population was in the 2016–2020 Chittenden South East; it draws from the old Chittenden (100%). Counties: gained Chittenden (100%).",
      "toEra": "current"
     },
     "Essex": {
      "contributors": [
       {
-       "areaPct": 14.9,
-       "key": "Orleans-1 State House District",
-       "popPct": 26.3
+       "areaPct": 92.6,
+       "key": "Essex-Orleans",
+       "popPct": 72.8
       },
       {
-       "areaPct": 4.5,
-       "key": "Caledonia-4 State House District",
-       "popPct": 24.6
-      },
-      {
-       "areaPct": 0.9,
-       "key": "Orleans-2 State House District",
-       "popPct": 19.9
-      },
-      {
-       "areaPct": 33.8,
-       "key": "Essex-Caledonia State House District",
-       "popPct": 16.5
-      },
-      {
-       "areaPct": 45.9,
-       "key": "Essex-Caledonia-Orleans State House District",
-       "popPct": 12.7
+       "areaPct": 7.4,
+       "key": "Caledonia",
+       "popPct": 27.2
       }
      ],
      "counties": [
@@ -345469,50 +340105,20 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      "pres2020Old": null,
      "retainedAreaPct": 0,
      "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Essex; it draws from the old Orleans-1 State House District (26%), the old Caledonia-4 State House District (25%), the old Orleans-2 State House District (20%) and 2 more. Counties: gained Orleans (46%), Caledonia (27%), Essex (27%).",
+     "text": "A new footprint: none of its population was in the 2016–2020 Essex; it draws from the old Essex-Orleans (73%), the old Caledonia (27%). Counties: gained Orleans (46%), Caledonia (27%), Essex (27%).",
      "toEra": "current"
     },
     "Franklin": {
      "contributors": [
       {
-       "areaPct": 16.7,
-       "key": "Franklin-4 State House District",
-       "popPct": 19.8
+       "areaPct": 92.7,
+       "key": "Franklin",
+       "popPct": 94.7
       },
       {
-       "areaPct": 30.8,
-       "key": "Franklin-5 State House District",
-       "popPct": 19.6
-      },
-      {
-       "areaPct": 0.7,
-       "key": "Franklin-3-1 State House District",
-       "popPct": 15.9
-      },
-      {
-       "areaPct": 9.7,
-       "key": "Franklin-3-2 State House District",
-       "popPct": 15.3
-      },
-      {
-       "areaPct": 7.5,
-       "key": "Franklin-1 State House District",
-       "popPct": 10.9
-      },
-      {
-       "areaPct": 18.4,
-       "key": "Franklin-6 State House District",
-       "popPct": 7.4
-      },
-      {
-       "areaPct": 8,
-       "key": "Franklin-7 State House District",
-       "popPct": 6.3
-      },
-      {
-       "areaPct": 8.2,
-       "key": "Grand-Isle-Chittenden State House District",
-       "popPct": 4.8
+       "areaPct": 7.2,
+       "key": "Essex-Orleans",
+       "popPct": 5.3
       }
      ],
      "counties": [
@@ -345525,47 +340131,28 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
        "popPct": 5.7
       }
      ],
-     "countiesGained": [
-      {
-       "county": "Franklin",
-       "popPct": 94.2
-      },
-      {
-       "county": "Grand Isle",
-       "popPct": 5.7
-      }
-     ],
+     "countiesGained": [],
      "countiesLost": [],
      "fromEra": "2020",
      "pop2020": 44532,
      "pres2020New": -7.1,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Franklin; it draws from the old Franklin-4 State House District (20%), the old Franklin-5 State House District (20%), the old Franklin-3-1 State House District (16%) and 5 more. Counties: gained Franklin (94%), Grand Isle (6%).",
+     "pres2020Old": -9,
+     "retainedAreaPct": 92.7,
+     "retainedPopPct": 94.7,
+     "text": "Kept 95% of its population from the 2016–2020 Franklin; gained the rest from the old Essex-Orleans (5%). Spans Franklin, Grand Isle counties. 2020 presidential margin D+9.0 on the 2016–2020 lines → D+7.1 on the current lines.",
      "toEra": "current"
     },
     "Grand Isle": {
      "contributors": [
       {
-       "areaPct": 14.7,
-       "key": "Chittenden-9-2 State House District",
-       "popPct": 39.8
+       "areaPct": 99.6,
+       "key": "Grand-Isle-Chittenden",
+       "popPct": 98.7
       },
       {
-       "areaPct": 13.5,
-       "key": "Chittenden-9-1 State House District",
-       "popPct": 36.2
-      },
-      {
-       "areaPct": 71.5,
-       "key": "Grand-Isle-Chittenden State House District",
-       "popPct": 22.9
-      },
-      {
-       "areaPct": 0.2,
-       "key": "Chittenden-7-1 State House District",
-       "popPct": 0.6
+       "areaPct": 0.4,
+       "key": "Chittenden",
+       "popPct": 1.3
       }
      ],
      "counties": [
@@ -345590,39 +340177,29 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      ],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 22746,
+     "pop2020": 22713,
      "pres2020New": -35.2,
      "pres2020Old": null,
      "retainedAreaPct": 0,
      "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Grand Isle; it draws from the old Chittenden-9-2 State House District (40%), the old Chittenden-9-1 State House District (36%), the old Grand-Isle-Chittenden State House District (23%) and 1 more. Counties: gained Chittenden (77%), Grand Isle (22%).",
+     "text": "A new footprint: none of its population was in the 2016–2020 Grand Isle; it draws from the old Grand-Isle-Chittenden (99%), the old Chittenden (1%). Counties: gained Chittenden (77%), Grand Isle (22%).",
      "toEra": "current"
     },
     "Lamoille": {
      "contributors": [
       {
-       "areaPct": 36.9,
-       "key": "Lamoille-2 State House District",
-       "popPct": 38.7
+       "areaPct": 82.1,
+       "key": "Lamoille",
+       "popPct": 86.3
       },
       {
-       "areaPct": 21,
-       "key": "Lamoille-Washington State House District",
-       "popPct": 28.6
-      },
-      {
-       "areaPct": 18.4,
-       "key": "Lamoille-3 State House District",
-       "popPct": 20.5
+       "areaPct": 9.1,
+       "key": "Essex-Orleans",
+       "popPct": 7.6
       },
       {
        "areaPct": 8.8,
-       "key": "Franklin-6 State House District",
-       "popPct": 6.1
-      },
-      {
-       "areaPct": 14.8,
-       "key": "Orleans-Lamoille State House District",
+       "key": "Franklin",
        "popPct": 6.1
       }
      ],
@@ -345638,55 +340215,31 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      ],
      "countiesGained": [
       {
-       "county": "Lamoille",
-       "popPct": 93.6
-      },
-      {
        "county": "Franklin",
        "popPct": 6.4
       }
      ],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 22054,
+     "pop2020": 22055,
      "pres2020New": -33.8,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Lamoille; it draws from the old Lamoille-2 State House District (39%), the old Lamoille-Washington State House District (29%), the old Lamoille-3 State House District (20%) and 2 more. Counties: gained Lamoille (94%), Franklin (6%).",
+     "pres2020Old": -41.4,
+     "retainedAreaPct": 82.1,
+     "retainedPopPct": 86.3,
+     "text": "Kept 86% of its population from the 2016–2020 Lamoille; gained the rest from the old Essex-Orleans (8%), the old Franklin (6%). Counties: gained Franklin (6%). 2020 presidential margin D+41.4 on the 2016–2020 lines → D+33.8 on the current lines.",
      "toEra": "current"
     },
     "Orange": {
      "contributors": [
       {
-       "areaPct": 40.4,
-       "key": "Orange-1 State House District",
-       "popPct": 36
+       "areaPct": 75.7,
+       "key": "Orange",
+       "popPct": 74.5
       },
       {
-       "areaPct": 17.7,
-       "key": "Orange-Washington-Addison State House District",
-       "popPct": 27.4
-      },
-      {
-       "areaPct": 14.6,
-       "key": "Orange-2 State House District",
-       "popPct": 20
-      },
-      {
-       "areaPct": 8.9,
-       "key": "Windsor-Orange-1 State House District",
-       "popPct": 6.1
-      },
-      {
-       "areaPct": 9.7,
-       "key": "Orange-Caledonia State House District",
-       "popPct": 5.5
-      },
-      {
-       "areaPct": 8.8,
-       "key": "Windsor-Orange-2 State House District",
-       "popPct": 5
+       "areaPct": 24.3,
+       "key": "Caledonia",
+       "popPct": 25.5
       }
      ],
      "counties": [
@@ -345695,58 +340248,28 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
        "popPct": 99.9
       }
      ],
-     "countiesGained": [
-      {
-       "county": "Orange",
-       "popPct": 99.9
-      }
-     ],
+     "countiesGained": [],
      "countiesLost": [],
      "fromEra": "2020",
      "pop2020": 21954,
      "pres2020New": -21.9,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Orange; it draws from the old Orange-1 State House District (36%), the old Orange-Washington-Addison State House District (27%), the old Orange-2 State House District (20%) and 3 more. Counties: gained Orange (100%).",
+     "pres2020Old": -27.6,
+     "retainedAreaPct": 75.7,
+     "retainedPopPct": 74.5,
+     "text": "Kept 74% of its population from the 2016–2020 Orange; gained the rest from the old Caledonia (26%). Entirely in Orange County. 2020 presidential margin D+27.6 on the 2016–2020 lines → D+21.9 on the current lines.",
      "toEra": "current"
     },
     "Orleans": {
      "contributors": [
       {
-       "areaPct": 29.9,
-       "key": "Orleans-Caledonia State House District",
-       "popPct": 35.3
+       "areaPct": 81.8,
+       "key": "Essex-Orleans",
+       "popPct": 82.7
       },
       {
-       "areaPct": 16.5,
-       "key": "Orleans-2 State House District",
-       "popPct": 21.1
-      },
-      {
-       "areaPct": 19.1,
-       "key": "Orleans-Lamoille State House District",
-       "popPct": 13.1
-      },
-      {
-       "areaPct": 9.2,
-       "key": "Caledonia-4 State House District",
-       "popPct": 11.6
-      },
-      {
-       "areaPct": 8.5,
-       "key": "Orleans-1 State House District",
-       "popPct": 9.3
-      },
-      {
-       "areaPct": 7.2,
-       "key": "Franklin-7 State House District",
-       "popPct": 5.4
-      },
-      {
-       "areaPct": 9.6,
-       "key": "Essex-Caledonia-Orleans State House District",
-       "popPct": 4.3
+       "areaPct": 18.1,
+       "key": "Caledonia",
+       "popPct": 17.3
       }
      ],
      "counties": [
@@ -345784,80 +340307,20 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      "pres2020Old": null,
      "retainedAreaPct": 0,
      "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Orleans; it draws from the old Orleans-Caledonia State House District (35%), the old Orleans-2 State House District (21%), the old Orleans-Lamoille State House District (13%) and 4 more. Counties: gained Orleans (77%), Caledonia (17%), Franklin (5%).",
+     "text": "A new footprint: none of its population was in the 2016–2020 Orleans; it draws from the old Essex-Orleans (83%), the old Caledonia (17%). Counties: gained Orleans (77%), Caledonia (17%), Franklin (5%).",
      "toEra": "current"
     },
     "Rutland": {
      "contributors": [
       {
-       "areaPct": 11.4,
-       "key": "Rutland-2 State House District",
-       "popPct": 14.3
+       "areaPct": 94.5,
+       "key": "Rutland",
+       "popPct": 97.7
       },
       {
-       "areaPct": 12.8,
-       "key": "Rutland-3 State House District",
-       "popPct": 13.6
-      },
-      {
-       "areaPct": 11.4,
-       "key": "Rutland-6 State House District",
-       "popPct": 12.6
-      },
-      {
-       "areaPct": 0.2,
-       "key": "Rutland-5-1 State House District",
-       "popPct": 6.8
-      },
-      {
-       "areaPct": 2.1,
-       "key": "Rutland-4 State House District",
-       "popPct": 6.7
-      },
-      {
-       "areaPct": 0.2,
-       "key": "Rutland-5-3 State House District",
-       "popPct": 6.6
-      },
-      {
-       "areaPct": 0.2,
-       "key": "Rutland-5-2 State House District",
-       "popPct": 6.5
-      },
-      {
-       "areaPct": 12.2,
-       "key": "Rutland-Bennington State House District",
-       "popPct": 6.5
-      },
-      {
-       "areaPct": 0.2,
-       "key": "Rutland-5-4 State House District",
-       "popPct": 6.3
-      },
-      {
-       "areaPct": 17.2,
-       "key": "Rutland-Windsor-1 State House District",
-       "popPct": 6.3
-      },
-      {
-       "areaPct": 7.1,
-       "key": "Rutland-1 State House District",
-       "popPct": 5.6
-      },
-      {
-       "areaPct": 10.8,
-       "key": "Rutland-Windsor-2 State House District",
-       "popPct": 4.1
-      },
-      {
-       "areaPct": 9.3,
-       "key": "Bennington-Rutland State House District",
-       "popPct": 2.5
-      },
-      {
-       "areaPct": 4.9,
-       "key": "Addison-Rutland State House District",
-       "popPct": 1.6
+       "areaPct": 5.5,
+       "key": "Windsor",
+       "popPct": 2.3
       }
      ],
      "counties": [
@@ -345866,87 +340329,37 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
        "popPct": 99.8
       }
      ],
-     "countiesGained": [
-      {
-       "county": "Rutland",
-       "popPct": 99.8
-      }
-     ],
+     "countiesGained": [],
      "countiesLost": [],
      "fromEra": "2020",
      "pop2020": 60086,
      "pres2020New": -10.3,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Rutland; it draws from the old Rutland-2 State House District (14%), the old Rutland-3 State House District (14%), the old Rutland-6 State House District (13%) and 11 more. Counties: gained Rutland (100%).",
+     "pres2020Old": -10.5,
+     "retainedAreaPct": 94.5,
+     "retainedPopPct": 97.7,
+     "text": "Kept 98% of its population from the 2016–2020 Rutland; gained the rest from the old Windsor (2%). Entirely in Rutland County. 2020 presidential margin D+10.5 on the 2016–2020 lines → D+10.3 on the current lines.",
      "toEra": "current"
     },
     "Washington": {
      "contributors": [
       {
-       "areaPct": 9.6,
-       "key": "Washington-1 State House District",
-       "popPct": 13.1
-      },
-      {
-       "areaPct": 0.5,
-       "key": "Washington-3 State House District",
-       "popPct": 12.5
-      },
-      {
-       "areaPct": 21.9,
-       "key": "Washington-7 State House District",
-       "popPct": 12.4
-      },
-      {
-       "areaPct": 1.2,
-       "key": "Washington-4 State House District",
-       "popPct": 12
-      },
-      {
-       "areaPct": 3.6,
-       "key": "Washington-2 State House District",
-       "popPct": 11.9
-      },
-      {
-       "areaPct": 5.9,
-       "key": "Washington-Chittenden State House District",
-       "popPct": 7.9
+       "areaPct": 82.1,
+       "key": "Washington",
+       "popPct": 88.9
       },
       {
        "areaPct": 8.6,
-       "key": "Lamoille-1 State House District",
+       "key": "Lamoille",
        "popPct": 7.8
       },
       {
-       "areaPct": 12.2,
-       "key": "Washington-6 State House District",
-       "popPct": 6.7
-      },
-      {
-       "areaPct": 8.5,
-       "key": "Washington-5 State House District",
-       "popPct": 6.5
-      },
-      {
-       "areaPct": 9.2,
-       "key": "Lamoille-Washington State House District",
-       "popPct": 2.8
-      },
-      {
-       "areaPct": 9.5,
-       "key": "Orange-Washington-Addison State House District",
-       "popPct": 2.8
+       "areaPct": 4.6,
+       "key": "Orange",
+       "popPct": 1.8
       },
       {
        "areaPct": 4.6,
-       "key": "Caledonia-Washington State House District",
-       "popPct": 2.1
-      },
-      {
-       "areaPct": 4.6,
-       "key": "Orange-1 State House District",
+       "key": "Caledonia",
        "popPct": 1.6
       }
      ],
@@ -345966,10 +340379,6 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      ],
      "countiesGained": [
       {
-       "county": "Washington",
-       "popPct": 88.2
-      },
-      {
        "county": "Lamoille",
        "popPct": 8
       },
@@ -345980,65 +340389,20 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      ],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 67266,
+     "pop2020": 67265,
      "pres2020New": -46.1,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Washington; it draws from the old Washington-1 State House District (13%), the old Washington-3 State House District (12%), the old Washington-7 State House District (12%) and 10 more. Counties: gained Washington (88%), Lamoille (8%), Orange (4%).",
+     "pres2020Old": -46,
+     "retainedAreaPct": 82.1,
+     "retainedPopPct": 88.9,
+     "text": "Kept 89% of its population from the 2016–2020 Washington; gained the rest from the old Lamoille (8%), the old Orange (2%), the old Caledonia (2%). Counties: gained Lamoille (8%), Orange (4%). 2020 presidential margin D+46.0 on the 2016–2020 lines → D+46.1 on the current lines.",
      "toEra": "current"
     },
     "Windham": {
      "contributors": [
       {
-       "areaPct": 15.9,
-       "key": "Windham-4 State House District",
-       "popPct": 18.1
-      },
-      {
-       "areaPct": 20.7,
-       "key": "Windham-3 State House District",
-       "popPct": 16.6
-      },
-      {
-       "areaPct": 19.1,
-       "key": "Windham-5 State House District",
-       "popPct": 11.3
-      },
-      {
-       "areaPct": 3.8,
-       "key": "Windham-2-1 State House District",
-       "popPct": 10.7
-      },
-      {
-       "areaPct": 9.3,
-       "key": "Windham-1 State House District",
-       "popPct": 10.4
-      },
-      {
-       "areaPct": 1,
-       "key": "Windham-2-3 State House District",
-       "popPct": 9.5
-      },
-      {
-       "areaPct": 0.3,
-       "key": "Windham-2-2 State House District",
-       "popPct": 9.3
-      },
-      {
-       "areaPct": 10.8,
-       "key": "Windham-Bennington State House District",
-       "popPct": 6.8
-      },
-      {
-       "areaPct": 11.5,
-       "key": "Windham-6 State House District",
-       "popPct": 4.7
-      },
-      {
-       "areaPct": 7.7,
-       "key": "Windham-Bennington-Windsor State House District",
-       "popPct": 2.4
+       "areaPct": 100,
+       "key": "Windham",
+       "popPct": 100
       }
      ],
      "counties": [
@@ -346047,88 +340411,33 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
        "popPct": 99.9
       }
      ],
-     "countiesGained": [
-      {
-       "county": "Windham",
-       "popPct": 99.9
-      }
-     ],
+     "countiesGained": [],
      "countiesLost": [],
      "fromEra": "2020",
-     "pop2020": 41287,
+     "pop2020": 41289,
      "pres2020New": -48.5,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windham; it draws from the old Windham-4 State House District (18%), the old Windham-3 State House District (17%), the old Windham-5 State House District (11%) and 7 more. Counties: gained Windham (100%).",
+     "pres2020Old": -48.3,
+     "retainedAreaPct": 100,
+     "retainedPopPct": 100,
+     "text": "Lines unchanged from the 2016–2020 map. Entirely in Windham County.",
      "toEra": "current"
     },
     "Windsor": {
      "contributors": [
       {
-       "areaPct": 4.9,
-       "key": "Windsor-3-2 State House District",
-       "popPct": 14.7
+       "areaPct": 93.4,
+       "key": "Windsor",
+       "popPct": 94.5
       },
       {
-       "areaPct": 9.1,
-       "key": "Windsor-1 State House District",
-       "popPct": 13.9
-      },
-      {
-       "areaPct": 2.2,
-       "key": "Windsor-4-2 State House District",
-       "popPct": 13.6
-      },
-      {
-       "areaPct": 13.1,
-       "key": "Windsor-Orange-2 State House District",
-       "popPct": 13.3
-      },
-      {
-       "areaPct": 11.4,
-       "key": "Windsor-4-1 State House District",
-       "popPct": 7.4
-      },
-      {
-       "areaPct": 13.6,
-       "key": "Windsor-5 State House District",
-       "popPct": 7.2
-      },
-      {
-       "areaPct": 8.5,
-       "key": "Windsor-2 State House District",
-       "popPct": 7.1
-      },
-      {
-       "areaPct": 9.2,
-       "key": "Windsor-3-1 State House District",
-       "popPct": 6.7
-      },
-      {
-       "areaPct": 11.4,
-       "key": "Windsor-Rutland State House District",
-       "popPct": 5.3
-      },
-      {
-       "areaPct": 4.2,
-       "key": "Windsor-Orange-1 State House District",
+       "areaPct": 4.5,
+       "key": "Orange",
        "popPct": 4.6
       },
       {
-       "areaPct": 3.6,
-       "key": "Rutland-Windsor-2 State House District",
-       "popPct": 3.6
-      },
-      {
-       "areaPct": 5.1,
-       "key": "Rutland-Windsor-1 State House District",
-       "popPct": 1.5
-      },
-      {
-       "areaPct": 3.6,
-       "key": "Windham-Bennington-Windsor State House District",
-       "popPct": 1
+       "areaPct": 2.1,
+       "key": "Rutland",
+       "popPct": 0.8
       }
      ],
      "counties": [
@@ -346147,22 +340456,23 @@ export const stateLegRedistricting: Record<string, Partial<Record<Chamber, State
      ],
      "countiesGained": [
       {
-       "county": "Windsor",
-       "popPct": 94.1
-      },
-      {
        "county": "Orange",
        "popPct": 4.9
       }
      ],
-     "countiesLost": [],
+     "countiesLost": [
+      {
+       "county": "Windham",
+       "popPct": 3.1
+      }
+     ],
      "fromEra": "2020",
-     "pop2020": 59922,
+     "pop2020": 59923,
      "pres2020New": -39.4,
-     "pres2020Old": null,
-     "retainedAreaPct": 0,
-     "retainedPopPct": 0,
-     "text": "A new footprint: none of its population was in the 2016–2020 Windsor; it draws from the old Windsor-3-2 State House District (15%), the old Windsor-1 State House District (14%), the old Windsor-4-2 State House District (14%) and 10 more. Counties: gained Windsor (94%), Orange (5%).",
+     "pres2020Old": -38.1,
+     "retainedAreaPct": 93.4,
+     "retainedPopPct": 94.5,
+     "text": "Kept 94% of its population from the 2016–2020 Windsor; gained the rest from the old Orange (5%), the old Rutland (1%). Counties: gained Orange (5%); lost Windham. 2020 presidential margin D+38.1 on the 2016–2020 lines → D+39.4 on the current lines.",
      "toEra": "current"
     }
    }

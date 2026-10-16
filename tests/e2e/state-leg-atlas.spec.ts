@@ -59,4 +59,7 @@ test("the 2026 outlook and the State Legislatures board agree on a chamber", asy
   await ohio.getByRole("link", { name: "Ohio" }).click();
   await expect(page).toHaveURL(/\/states\/oh\/legislature\/house$/);
   await expect(page.getByText("2026 projection").first()).toBeVisible();
+  // The header carries the projected popular vote beside the corrected chamber margin.
+  await expect(page.getByText("2026 popular vote")).toBeVisible();
+  await expect(page.getByText(/Adjusted imputes \d+ seats without both parties/)).toBeVisible();
 });

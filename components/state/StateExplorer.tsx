@@ -170,7 +170,7 @@ function HouseRowButton({ row, active, onSelect }: { row: HouseRow; active: bool
 }
 
 function ChamberBlockCard({ block, electionYear }: { block: ChamberBlock; electionYear: number }) {
-  const hasProj = block.expectedDem != null && block.expectedRep != null && block.projTotal;
+  const hasProj = block.projDem != null && block.projRep != null && block.projTotal;
   return (
     <div
       className="min-w-0 py-4 pl-2.5 pr-1"
@@ -182,12 +182,12 @@ function ChamberBlockCard({ block, electionYear }: { block: ChamberBlock; electi
       {hasProj ? (
         <>
           <div className="mt-2 text-xl font-bold tabular-nums leading-tight">
-            <span style={{ color: "var(--party-dem)" }}>D {block.expectedDem!.toFixed(0)}</span>
+            <span style={{ color: "var(--party-dem)" }}>D {block.projDem!.toFixed(0)}</span>
             <span style={{ color: "var(--app-text-very-muted)" }}> · </span>
-            <span style={{ color: "var(--party-rep)" }}>R {block.expectedRep!.toFixed(0)}</span>
+            <span style={{ color: "var(--party-rep)" }}>R {block.projRep!.toFixed(0)}</span>
             <span className="ml-2 text-xs font-semibold" style={{ color: "var(--app-text-muted)" }}>projected</span>
           </div>
-          <SeatBar dem={block.expectedDem!} rep={block.expectedRep!} total={block.projTotal!} />
+          <SeatBar dem={block.projDem!} rep={block.projRep!} total={block.projTotal!} />
           <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
             {block.pDem == null
               ? `${block.unprojected} seats unprojected`

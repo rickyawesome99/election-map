@@ -36,8 +36,10 @@ BOUNDARY_CODE_OVERRIDES = {
     ("MA", "house"): lambda p: re.sub(r"\s+District$", "", p.get("NAMELSAD") or ""),
     ("MA", "senate"): lambda p: re.sub(r"\s+District$", "", p.get("NAMELSAD") or ""),
     ("AK", "senate"): lambda p: (p.get("NAMELSAD") or "").strip().split()[-1] if p.get("NAMELSAD") else None,
-    ("VT", "house"): lambda p: re.sub(r"\s+State House District$", "", p.get("NAMELSAD") or ""),
-    ("VT", "senate"): lambda p: re.sub(r"\s+Senatorial District$", "", p.get("NAMELSAD") or ""),
+    # The 2020-era TIGER files say "State House District" / "State Senate District"; the current
+    # files say "House District" / "Senatorial District" (lib/stateLegBoundaryCode.ts has the same two).
+    ("VT", "house"): lambda p: re.sub(r"\s+(State\s+)?House District$", "", p.get("NAMELSAD") or ""),
+    ("VT", "senate"): lambda p: re.sub(r"\s+((State\s+)?Senate|Senatorial) District$", "", p.get("NAMELSAD") or ""),
 }
 
 

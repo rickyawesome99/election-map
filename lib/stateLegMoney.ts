@@ -55,22 +55,25 @@ function tokens(name: string): string[] {
   return s.split(/[\s-]+/).filter((t) => t && !SUFFIXES.has(t));
 }
 const canon = (t: string) => NICK[t] ?? t;
-function keys(name: string): { full: string; loose: string; last: string; initial: string } {
+/** The name keys the join compares, loosest last (also used by scripts/assign-state-leg-finance.ts). */
+export function nameKeys(name: string): { full: string; loose: string; squash: string; last: string; initial: string } {
   const t = tokens(name);
-  if (t.length === 0) return { full: "", loose: "", last: "", initial: "" };
+  if (t.length === 0) return { full: "", loose: "", squash: "", last: "", initial: "" };
   const first = canon(t[0].length === 1 && t.length > 2 ? t[1] : t[0]);
   const last = t[t.length - 1];
-  return { full: t.map(canon).join(" "), loose: `${first} ${last}`, last, initial: `${first[0]} ${last}` };
+  // "Dailey-Provost" vs a results file's "Daileyprovost": the surname parts run together.
+  const squash = `${first} ${t.slice(1).filter((x) => x.length > 1 && canon(x) !== first).join("")}`;
+  return { full: t.map(canon).join(" "), loose: `${first} ${last}`, squash, last, initial: `${first[0]} ${last}` };
 }
 
 type Target = { name: string; party: "D" | "R" | "O"; incumbent: boolean };
 
 function match(targets: Target[], records: StateLegFinanceCandidate[]): { pairs: Map<number, number>; unmatched: StateLegFinanceCandidate[] } {
-  const tk = targets.map((t) => keys(t.name));
-  const rk = records.map((r) => keys(r.name));
+  const tk = targets.map((t) => nameKeys(t.name));
+  const rk = records.map((r) => nameKeys(r.name));
   const pairs = new Map<number, number>();
   const used = new Set<number>();
-  const tryKey = (k: keyof ReturnType<typeof keys>, sameParty: boolean) => {
+  const tryKey = (k: keyof ReturnType<typeof nameKeys>, sameParty: boolean) => {
     targets.forEach((t, i) => {
       if (pairs.has(i) || !tk[i][k]) return;
       const hits = records.map((r, j) => j).filter((j) => !used.has(j) && rk[j][k] === tk[i][k] && (!sameParty || records[j].party === t.party || records[j].party === "O" || t.party === "O"));
@@ -79,6 +82,7 @@ function match(targets: Target[], records: StateLegFinanceCandidate[]): { pairs:
   };
   tryKey("full", false);
   tryKey("loose", false);
+  tryKey("squash", false);
   tryKey("initial", true);
   tryKey("last", true);
   return { pairs, unmatched: records.filter((_, j) => !used.has(j)) };

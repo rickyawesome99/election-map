@@ -5,6 +5,7 @@ import { stateLegCalendar } from "@/data/stateLegCalendar";
 import { stateLegCandidates2026 } from "@/data/stateLegCandidates2026";
 import { contest2026 } from "@/lib/stateLegAtlas";
 import { projectChamber } from "@/lib/stateLegForecast";
+import { projectChamberPopularVote } from "@/lib/stateLegPopularVote";
 import { latestChamberSeats } from "@/lib/stateLegSeats";
 import { getChamberMargins } from "@/lib/chamberMargins";
 import { summarizeUpcoming } from "@/lib/stateLegUpcoming";
@@ -12,7 +13,8 @@ import { summarizeUpcoming } from "@/lib/stateLegUpcoming";
 /**
  * Everything the chamber header (/states/[id]/legislature/[chamber]) and the chamber cards on the
  * legislature landing page say about one chamber: seats now, the 2026 projection, the corrected
- * chamber margin, what's up this cycle and the current map. Server-only (projectChamber).
+ * chamber margin, the projected popular vote, what's up this cycle and the current map. Server-only
+ * (projectChamber, projectChamberPopularVote).
  */
 export function chamberSummary(abbr: string, stateName: string, chamber: Chamber) {
   const unicameral = UNICAMERAL_STATES.has(abbr);
@@ -45,7 +47,21 @@ export function chamberSummary(abbr: string, stateName: string, chamber: Chamber
     return null;
   })();
 
-  return { unicameral, roster, mapInfo, calendar, seats, totalSeats, upcoming, currentEra, projection, fieldStats, margin };
+  // The projected popular vote of the seats on the ballot: raw (as the ballot stands) and adjusted
+  // (every one-party seat imputed as a contested race), lib/stateLegPopularVote.ts.
+  const popularVote = (() => {
+    const p = projection ? projectChamberPopularVote(abbr, chamber) : null;
+    if (!p || p.raw.margin == null) return null;
+    return {
+      raw: p.raw.margin, adjusted: p.adjusted.margin,
+      dem: p.raw.dem, rep: p.raw.rep, oth: p.raw.oth, votes: p.raw.votes, low: p.low, high: p.high,
+      uncounted: p.raw.uncounted, imputed: p.adjusted.imputed, skipped: p.adjusted.skipped,
+      /** Multi-member districts where each voter casts several votes, so the total runs past the ballots cast. */
+      multiVote: p.chamberFactor > 1.15,
+    };
+  })();
+
+  return { unicameral, roster, mapInfo, calendar, seats, totalSeats, upcoming, currentEra, projection, fieldStats, margin, popularVote };
 }
 
 export type ChamberSummaryData = ReturnType<typeof chamberSummary>;

@@ -1,0 +1,626 @@
+{
+ "state": "DE",
+ "cycle": 2020,
+ "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+ "dataThrough": "12/31/2020",
+ "house": {
+  "1": [
+   {
+    "name": "Friends of Nnamdi Chukwuocha - State Representative 1st",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 14250,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "Friends Of Stephanie T. Bolden",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 11595,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "People For Brady",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 57472.5,
+    "expenditures": null
+   },
+   {
+    "name": "Jordan Nally for Delaware",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 12895,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Friends of Kendra Johnson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16374.5,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Friends for Debra Heffernan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 31100,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Larry Lambert for State Representative",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 51597.05,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of James W. Haubrich",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6569.01,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Friends for Dan Zitofsky",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 21769.18,
+    "expenditures": null
+   },
+   {
+    "name": "Neighbors for Moore",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 33538.67,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Committee to Elect Debbie Harrington",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 51310.92,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Kevin Hensley",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 56530,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Friends of Sean Matthews",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 33100,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Friends for Jeff Spiegelman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 18802.43,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Krista Griffith For Delaware",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 79731.01,
+    "expenditures": null
+   },
+   {
+    "name": "Friends to Elect Jeff Cragg",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2600,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "FRIENDS OF LARRY MITCHELL",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 26475,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Friends for Pete Schwartzkopf",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 74225.01,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Friends of Valerie Longhurst",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 43025,
+    "expenditures": null
+   },
+   {
+    "name": "Higgin",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4100,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Citizens for Frank Cooke",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 8468,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Committee to Elect David Bentz",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 21027.3,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Kim Williams for State Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 19200,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Friends of Steve Smyk",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 23453.27,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Friends for Mike Ramone",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 97617.96,
+    "expenditures": null
+   },
+   {
+    "name": "Friends For Stephanie Barry",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 54768.27,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Mike Smith for Delaware",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 75286.73,
+    "expenditures": null
+   },
+   {
+    "name": "Elect Luann DAgostino",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15255.66,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Committee to Elect Paul Baumbach",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 24585,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Campaign to Elect Osienski",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15650,
+    "expenditures": null
+   },
+   {
+    "name": "Citizens for Wilps",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2310.54,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Committee to Elect Kowalko",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 12324.34,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Tim Conrad for Delaware",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5321,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Friends of Eric Morrison",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 91676.16,
+    "expenditures": null
+   },
+   {
+    "name": "Friends for Tripp Keister",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 13212,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Committee to Elect Bill Carson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 25440,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Friends of Robin R. Hayes",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 21116.3,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of William Bush",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 100804.02,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Friends for Morris",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 46900.92,
+    "expenditures": null
+   },
+   {
+    "name": "Friends to elect Chuck Groce",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1550,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "Friends of Sean Lynn",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 20626,
+    "expenditures": null
+   },
+   {
+    "name": "Friends Of Richard Harpster",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 13888.43,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Friends of Cheryl Precourt",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7735,
+    "expenditures": null
+   },
+   {
+    "name": "Committee to Elect Andria Bennett",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 24225,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "Friends for Charles Postles",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 19160,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Rachael King",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 19048.73,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Yearick for Delaware",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 39747.99,
+    "expenditures": null
+   },
+   {
+    "name": "People for Ade Kuforiji",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6141.13,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "Friends For Vanderwende",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 23250,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Darrynn Harris",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3923.23,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "Committee to Elect Bryan Shupe",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 27780,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Greg Fuller",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 36403.36,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Friends of Ron Gray",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 10350,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "Friends to Elect Danny Short",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 20385.13,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Tim Dukes for State Representative",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17325,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "Friends of Rich Collins",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 14725,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "1": [
+   {
+    "name": "Friends of Sarah McBride",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 297915.92,
+    "expenditures": null
+   },
+   {
+    "name": "Friends to Elect Steve Washington",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 21926.88,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Citizens For Cathy Cloutier",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 59787.23,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Kyle Evans Gay",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 180115.58,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Delcollo for Delaware LLC",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 94685.35,
+    "expenditures": null
+   },
+   {
+    "name": "Spiros Mantzavinos for the 7th",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 153817,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Sokola For Senate",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 21579.27,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Walsh for the 9th",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 49915.65,
+    "expenditures": null
+   },
+   {
+    "name": "Neighbors of Todd Ruckle",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6456.16,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Friends of Nicole Poore",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 97957.49,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Friends of Marie Pinkney",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 59079.08,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Alexander Homich",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1595.3,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Friends of Craig Pugh",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 58860.38,
+    "expenditures": null
+   },
+   {
+    "name": "Ennis Senate Campaign Committee",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 50339.03,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Friends of Jaci Hugg",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 61669.97,
+    "expenditures": null
+   },
+   {
+    "name": "Friends for Dave Lawson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 62286.37,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Friends for Brian Pettyjohn",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 26240.78,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Friends To Elect Gerald Hocker",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15300,
+    "expenditures": null
+   }
+  ]
+ }
+}

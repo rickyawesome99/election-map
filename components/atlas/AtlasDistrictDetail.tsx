@@ -79,6 +79,21 @@ function Raised({ r, money }: { r: AtlasResult; money: AtlasMoney | undefined })
   );
 }
 
+/** Which filings the Raised column comes from, by cycle: sources differ by state and year, and some undercount. */
+function MoneySources({ money }: { money: AtlasMoney[] }) {
+  const bySource = new Map<string, number[]>();
+  for (const m of money) bySource.set(m.source, [...(bySource.get(m.source) ?? []), m.year]);
+  return (
+    <p className="mt-1 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+      Raised: each candidate&rsquo;s contributions for the cycle, per{" "}
+      {[...bySource].map(([source, years], i) => (
+        <span key={source}>{i > 0 && "; "}{source} ({[...years].sort((a, b) => a - b).join(", ")})</span>
+      ))}
+      . A dash is a candidate with no filing on record.
+    </p>
+  );
+}
+
 export default function AtlasDistrictDetail({
   abbr,
   chamber,
@@ -247,7 +262,7 @@ export default function AtlasDistrictDetail({
       {district.candidates2026 && (
         <>
           <section>
-            <LedgerSectionHead label={`${electionYear} Candidates`} meta={`Ballotpedia list${district.candidates2026.seats && district.candidates2026.seats > 1 ? ` · ${district.candidates2026.seats} seats` : ""}`} />
+            <LedgerSectionHead label={district.projection?.votes ? `${electionYear} Projected Vote` : `${electionYear} Candidates`} meta={`${district.projection?.votes ? `${district.projection.votes.total.toLocaleString("en-US")} estimated votes · ` : ""}Ballotpedia list${district.candidates2026.seats && district.candidates2026.seats > 1 ? ` · ${district.candidates2026.seats} seats` : ""}`} />
             <AtlasCandidatesSection district={district} abbr={abbr} />
           </section>
           <section>
@@ -297,6 +312,7 @@ export default function AtlasDistrictDetail({
                 Rows on a superseded map are the race held under this district number on those lines, which may cover different ground than today&rsquo;s district. See Redistricting history.
               </p>
             )}
+            {hasMoney && <MoneySources money={district.money ?? []} />}
           </div>
         )}
       </section>

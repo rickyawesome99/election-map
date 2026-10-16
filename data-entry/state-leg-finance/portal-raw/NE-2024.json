@@ -1,0 +1,505 @@
+{
+ "state": "NE",
+ "cycle": 2024,
+ "source": "Nebraska Accountability and Disclosure Commission (race totals)",
+ "fetched": "2026-10-16",
+ "dataThrough": "12/31/2024",
+ "candidates": [
+  {
+   "name": "BOB HALLSTROM",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 368674.79,
+   "expenditures": 316467.25,
+   "status": "Active"
+  },
+  {
+   "name": "DENNIS SCHAARDT",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 89525.7,
+   "expenditures": 89555.86,
+   "status": "Active"
+  },
+  {
+   "name": "GLENDA WILLNERD",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 23575.5,
+   "expenditures": 23575.5,
+   "status": "Terminated"
+  },
+  {
+   "name": "BENJAMIN FELIX UNGERMAN",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 303812.18,
+   "expenditures": 303812.18,
+   "status": "Terminated"
+  },
+  {
+   "name": "VICTOR ROUNTREE",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 292789.86,
+   "expenditures": 275841.9,
+   "status": "Active"
+  },
+  {
+   "name": "GILBERT AYALA",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 15243.0,
+   "expenditures": 14349.54,
+   "status": "Active"
+  },
+  {
+   "name": "MARGO JUAREZ",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 105335.29,
+   "expenditures": 88028.83,
+   "status": "Active"
+  },
+  {
+   "name": "DUNIXI GUERECA",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 221447.19,
+   "expenditures": 203508.17,
+   "status": "Active"
+  },
+  {
+   "name": "TIM PENDRELL",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 82750.73,
+   "expenditures": 82750.73,
+   "status": "Terminated"
+  },
+  {
+   "name": "JOHN CAVANAUGH",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 201119.01,
+   "expenditures": 175473.92,
+   "status": "Active"
+  },
+  {
+   "name": "JULIA PALZER",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 132295.4,
+   "expenditures": 132295.4,
+   "status": "Terminated"
+  },
+  {
+   "name": "CALANDRA COOPER",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 5250.26,
+   "expenditures": 5436.72,
+   "status": "Terminated"
+  },
+  {
+   "name": "TERRELL M MCKINNEY",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 186489.54,
+   "expenditures": 177627.22,
+   "status": "Active"
+  },
+  {
+   "name": "ASHLEI SPIVEY",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 1035932.72,
+   "expenditures": 1749839.52,
+   "status": "Active"
+  },
+  {
+   "name": "MATTHEW CLOUGH",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 20611.3,
+   "expenditures": 20601.29,
+   "status": "Active"
+  },
+  {
+   "name": "NICK BATTER",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 238484.94,
+   "expenditures": 233627.52,
+   "status": "Active"
+  },
+  {
+   "name": "TRACY HIGHTOWER-HENNE",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 180981.23,
+   "expenditures": 180988.73,
+   "status": "Terminated"
+  },
+  {
+   "name": "DAVE WORDEKEMPER",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 213930.23,
+   "expenditures": 197684.4,
+   "status": "Active"
+  },
+  {
+   "name": "ROXIE KRACL",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 179225.55,
+   "expenditures": 174409.31,
+   "status": "Active"
+  },
+  {
+   "name": "CYNTHIA C KAI",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 30721.73,
+   "expenditures": 22869.95,
+   "status": "Active"
+  },
+  {
+   "name": "GLEN MEYER",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 99012.0,
+   "expenditures": 97596.16,
+   "status": "Active"
+  },
+  {
+   "name": "MIKE ALBRECHT",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 59199.44,
+   "expenditures": 59199.44,
+   "status": "Terminated"
+  },
+  {
+   "name": "JEANNE REIGLE",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 223796.03,
+   "expenditures": 224226.17,
+   "status": "Terminated"
+  },
+  {
+   "name": "ROBERT DOVER",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 389821.81,
+   "expenditures": 367202.52,
+   "status": "Active"
+  },
+  {
+   "name": "MELISSA CAROLINE TEMPLE",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 31549.11,
+   "expenditures": 29134.82,
+   "status": "Active"
+  },
+  {
+   "name": "BEAU BALLARD",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 399031.5,
+   "expenditures": 342549.55,
+   "status": "Active"
+  },
+  {
+   "name": "SETH DERNER",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 288654.84,
+   "expenditures": 288754.84,
+   "status": "Terminated"
+  },
+  {
+   "name": "ALLEGRA FRENCH",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 12732.35,
+   "expenditures": 12399.8,
+   "status": "Active"
+  },
+  {
+   "name": "DENNIS FUJAN",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 80925.15,
+   "expenditures": 80925.15,
+   "status": "Terminated"
+  },
+  {
+   "name": "JARED STORM",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 170087.95,
+   "expenditures": 161726.6,
+   "status": "Active"
+  },
+  {
+   "name": "JACOB WOLFF",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 15925.19,
+   "expenditures": 15925.19,
+   "status": "Terminated"
+  },
+  {
+   "name": "ALAN ZAVODNY",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 32468.9,
+   "expenditures": 32468.9,
+   "status": "Terminated"
+  },
+  {
+   "name": "CAROLYN BOSN",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 441211.82,
+   "expenditures": 394171.86,
+   "status": "Active"
+  },
+  {
+   "name": "NICKI BEHMER POPP",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 262175.22,
+   "expenditures": 256038.77,
+   "status": "Active"
+  },
+  {
+   "name": "ANNA WISHART",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 39786.18,
+   "expenditures": 46768.39,
+   "status": "Terminated"
+  },
+  {
+   "name": "DAWN LIPHARDT",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 124072.39,
+   "expenditures": 123890.07,
+   "status": "Active"
+  },
+  {
+   "name": "JASON PROKOP",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 423034.28,
+   "expenditures": 379853.79,
+   "status": "Active"
+  },
+  {
+   "name": "ELIOT BOSTAR",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 550680.25,
+   "expenditures": 193394.87,
+   "status": "Active"
+  },
+  {
+   "name": "KATHLEEN KAUTH",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 531944.48,
+   "expenditures": 516498.39,
+   "status": "Active"
+  },
+  {
+   "name": "MARY ANN FOLCHERT",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 234294.27,
+   "expenditures": 198337.17,
+   "status": "Active"
+  },
+  {
+   "name": "JOSHUA FREDERICK",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 10342.49,
+   "expenditures": 10680.49,
+   "status": "Terminated"
+  },
+  {
+   "name": "PAUL HAMELINK",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 22932.44,
+   "expenditures": 28393.96,
+   "status": "Active"
+  },
+  {
+   "name": "DAN LONOWSKI",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 105800.94,
+   "expenditures": 84711.31,
+   "status": "Active"
+  },
+  {
+   "name": "MICHELLE R SMITH",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 138140.97,
+   "expenditures": 138555.47,
+   "status": "Terminated"
+  },
+  {
+   "name": "DAN QUICK",
+   "chamber": "senate",
+   "district": "35",
+   "contributions": 404471.14,
+   "expenditures": 377823.36,
+   "status": "Active"
+  },
+  {
+   "name": "RAY AGUILAR",
+   "chamber": "senate",
+   "district": "35",
+   "contributions": 382588.33,
+   "expenditures": 383117.91,
+   "status": "Terminated"
+  },
+  {
+   "name": "STANLEY CLOUSE",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 168587.33,
+   "expenditures": 137397.0,
+   "status": "Active"
+  },
+  {
+   "name": "LANA LEE PEISTER",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 79906.73,
+   "expenditures": 79906.73,
+   "status": "Terminated"
+  },
+  {
+   "name": "ALLISON HEIMES",
+   "chamber": "senate",
+   "district": "39",
+   "contributions": 291445.46,
+   "expenditures": 291445.46,
+   "status": "Terminated"
+  },
+  {
+   "name": "TONY SORRENTINO",
+   "chamber": "senate",
+   "district": "39",
+   "contributions": 321189.2,
+   "expenditures": 306026.93,
+   "status": "Active"
+  },
+  {
+   "name": "NADINE BANE",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 5009.11,
+   "expenditures": 5013.11,
+   "status": "Terminated"
+  },
+  {
+   "name": "ETHAN CLARK",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 185655.5,
+   "expenditures": 153390.14,
+   "status": "Active"
+  },
+  {
+   "name": "DANIEL D MCKEON",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 63052.51,
+   "expenditures": 69062.67,
+   "status": "Active"
+  },
+  {
+   "name": "DONALD TANGWALL",
+   "chamber": "senate",
+   "district": "43",
+   "contributions": 56045.62,
+   "expenditures": 56045.62,
+   "status": "Terminated"
+  },
+  {
+   "name": "TANYA D STORER",
+   "chamber": "senate",
+   "district": "43",
+   "contributions": 550269.75,
+   "expenditures": 769186.0,
+   "status": "Active"
+  },
+  {
+   "name": "RITA SANDERS",
+   "chamber": "senate",
+   "district": "45",
+   "contributions": 269037.44,
+   "expenditures": 249011.99,
+   "status": "Active"
+  },
+  {
+   "name": "SARAH CENTINEO",
+   "chamber": "senate",
+   "district": "45",
+   "contributions": 116907.82,
+   "expenditures": 108964.15,
+   "status": "Active"
+  },
+  {
+   "name": "LARRY BOLINGER",
+   "chamber": "senate",
+   "district": "47",
+   "contributions": 5398.42,
+   "expenditures": 5557.16,
+   "status": "Terminated"
+  },
+  {
+   "name": "PAUL STROMMEN",
+   "chamber": "senate",
+   "district": "47",
+   "contributions": 201055.82,
+   "expenditures": 137664.62,
+   "status": "Active"
+  },
+  {
+   "name": "BOB ANDERSEN",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 224974.0,
+   "expenditures": 206314.34,
+   "status": "Active"
+  },
+  {
+   "name": "JEN DAY",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 403132.31,
+   "expenditures": 421785.33,
+   "status": "Terminated"
+  },
+  {
+   "name": "CALEB MUHS",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 45947.08,
+   "expenditures": 45947.08,
+   "status": "Terminated"
+  }
+ ]
+}

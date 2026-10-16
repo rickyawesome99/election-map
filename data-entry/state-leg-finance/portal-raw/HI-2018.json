@@ -1,0 +1,1066 @@
+{
+ "state": "HI",
+ "cycle": 2018,
+ "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+ "fetched": "2026-10-16",
+ "dataThrough": "12/31/2018",
+ "candidates": [
+  {
+   "name": "Leau, Rebecca",
+   "chamber": "house",
+   "reg": "CC10759",
+   "period": "2016-2018",
+   "contributions": 1405.16
+  },
+  {
+   "name": "Onishi, Richard",
+   "chamber": "house",
+   "reg": "CC10965",
+   "period": "2016-2018",
+   "contributions": 47468.2
+  },
+  {
+   "name": "Pregitzer, Micah",
+   "chamber": "house",
+   "reg": "CC11401",
+   "period": "2016-2018",
+   "contributions": 8467.61
+  },
+  {
+   "name": "Schafer, Jacob",
+   "chamber": "house",
+   "reg": "CC11384",
+   "period": "2016-2018",
+   "contributions": 9103.15
+  },
+  {
+   "name": "Radke, Maurice",
+   "chamber": "house",
+   "reg": "CC11344",
+   "period": "2016-2018",
+   "contributions": 6350.0
+  },
+  {
+   "name": "Mizuno, John",
+   "chamber": "house",
+   "reg": "CC10241",
+   "period": "2016-2018",
+   "contributions": 40750.0
+  },
+  {
+   "name": "Hazama, Dean",
+   "chamber": "house",
+   "reg": "CC11416",
+   "period": "2016-2018",
+   "contributions": 19900.0
+  },
+  {
+   "name": "Riviere, Gil",
+   "chamber": "senate",
+   "reg": "CC10386",
+   "period": "2014-2018",
+   "contributions": 59128.0
+  },
+  {
+   "name": "Gonce, Randy",
+   "chamber": "house",
+   "reg": "CC11247",
+   "period": "2016-2018",
+   "contributions": 12052.0
+  },
+  {
+   "name": "Smart, Mary",
+   "chamber": "house",
+   "reg": "CC11460",
+   "period": "2016-2018",
+   "contributions": 3844.2
+  },
+  {
+   "name": "Matayoshi, Scot",
+   "chamber": "house",
+   "reg": "CC11339",
+   "period": "2016-2018",
+   "contributions": 79403.82
+  },
+  {
+   "name": "Arakaki, Tracy",
+   "chamber": "house",
+   "reg": "CC11026",
+   "period": "2016-2018",
+   "contributions": 19525.0
+  },
+  {
+   "name": "Quinlan, Sean",
+   "chamber": "house",
+   "reg": "CC11250",
+   "period": "2016-2018",
+   "contributions": 34500.0
+  },
+  {
+   "name": "Ohno, Takashi",
+   "chamber": "house",
+   "reg": "CC10808",
+   "period": "2016-2018",
+   "contributions": 39199.87
+  },
+  {
+   "name": "Timoteo, Sailau",
+   "chamber": "house",
+   "reg": "CC11358",
+   "period": "2016-2018",
+   "contributions": 4277.0
+  },
+  {
+   "name": "Lee, Christopher",
+   "chamber": "house",
+   "reg": "CC10395",
+   "period": "2016-2018",
+   "contributions": 34431.0
+  },
+  {
+   "name": "Say, Calvin",
+   "chamber": "house",
+   "reg": "CC10230",
+   "period": "2016-2018",
+   "contributions": 51250.0
+  },
+  {
+   "name": "Kobayashi, Bertrand",
+   "chamber": "house",
+   "reg": "CC10881",
+   "period": "2016-2018",
+   "contributions": 17475.0
+  },
+  {
+   "name": "Ward, Gene",
+   "chamber": "house",
+   "reg": "CC10209",
+   "period": "2016-2018",
+   "contributions": 44891.0
+  },
+  {
+   "name": "Tarnas, David",
+   "chamber": "house",
+   "reg": "CC11188",
+   "period": "2016-2018",
+   "contributions": 47130.0
+  },
+  {
+   "name": "Rodden, Benton",
+   "chamber": "house",
+   "reg": "CC11352",
+   "period": "2016-2018",
+   "contributions": 16548.56
+  },
+  {
+   "name": "Jeremiah, Bryan",
+   "chamber": "house",
+   "reg": "CC11092",
+   "period": "2016-2018",
+   "contributions": 63.0
+  },
+  {
+   "name": "LoPresti, Matthew",
+   "chamber": "senate",
+   "reg": "CC10794",
+   "period": "2016-2018",
+   "contributions": 47351.0
+  },
+  {
+   "name": "Aquino, Henry",
+   "chamber": "house",
+   "reg": "CC10375",
+   "period": "2016-2018",
+   "contributions": 42725.0
+  },
+  {
+   "name": "Tsuji, Clifton",
+   "chamber": "house",
+   "reg": "CC10217",
+   "period": "2016-2018",
+   "contributions": 150.0
+  },
+  {
+   "name": "Agustin, Jaci",
+   "chamber": "house",
+   "reg": "CC11062",
+   "period": "2016-2018",
+   "contributions": 1988.91
+  },
+  {
+   "name": "Harimoto, Breene",
+   "chamber": "senate",
+   "reg": "CC10700",
+   "period": "2014-2018",
+   "contributions": 9895.0
+  },
+  {
+   "name": "Kanuha, Dru",
+   "chamber": "senate",
+   "reg": "CC10842",
+   "period": "2016-2018",
+   "contributions": 43210.0
+  },
+  {
+   "name": "Wildberger, Tina",
+   "chamber": "house",
+   "reg": "CC11356",
+   "period": "2016-2018",
+   "contributions": 29778.53
+  },
+  {
+   "name": "Matsumoto, Lauren",
+   "chamber": "house",
+   "reg": "CC10863",
+   "period": "2016-2018",
+   "contributions": 21650.0
+  },
+  {
+   "name": "Brower, Tom",
+   "chamber": "house",
+   "reg": "CC10290",
+   "period": "2016-2018",
+   "contributions": 20850.0
+  },
+  {
+   "name": "Fukumoto, Elton",
+   "chamber": "house",
+   "reg": "CC11422",
+   "period": "2016-2018",
+   "contributions": 22500.0
+  },
+  {
+   "name": "Thielen, Cynthia",
+   "chamber": "house",
+   "reg": "CC10205",
+   "period": "2016-2018",
+   "contributions": 30100.0
+  },
+  {
+   "name": "Batangan, Kelson",
+   "chamber": "house",
+   "reg": "CC11374",
+   "period": "2016-2018",
+   "contributions": 19940.0
+  },
+  {
+   "name": "Jordan, Jo",
+   "chamber": "house",
+   "reg": "CC10803",
+   "period": "2016-2018",
+   "contributions": 1600.0
+  },
+  {
+   "name": "Riley, Timothy",
+   "chamber": "senate",
+   "reg": "CC11462",
+   "period": "2014-2018",
+   "contributions": 1567.94
+  },
+  {
+   "name": "Johanson, Aaron",
+   "chamber": "house",
+   "reg": "CC10612",
+   "period": "2016-2018",
+   "contributions": 63043.64
+  },
+  {
+   "name": "McDermott, Bob",
+   "chamber": "house",
+   "reg": "CC10923",
+   "period": "2016-2018",
+   "contributions": 38901.0
+  },
+  {
+   "name": "Nishimoto, Scott",
+   "chamber": "house",
+   "reg": "CC10190",
+   "period": "2016-2018",
+   "contributions": 77760.91
+  },
+  {
+   "name": "Saiki, Scott",
+   "chamber": "house",
+   "reg": "CC10197",
+   "period": "2016-2018",
+   "contributions": 152530.15
+  },
+  {
+   "name": "Hashimoto, Troy",
+   "chamber": "house",
+   "reg": "CC11404",
+   "period": "2016-2018",
+   "contributions": 36270.0
+  },
+  {
+   "name": "Ing, Mark",
+   "chamber": "house",
+   "reg": "CC10809",
+   "period": "2016-2018",
+   "contributions": 3901.0
+  },
+  {
+   "name": "Awana, Karen",
+   "chamber": "house",
+   "reg": "CC11000",
+   "period": "2016-2018",
+   "contributions": 120.0
+  },
+  {
+   "name": "Kidani, Michelle",
+   "chamber": "senate",
+   "reg": "CC10494",
+   "period": "2014-2018",
+   "contributions": 289332.05
+  },
+  {
+   "name": "Wagner, Mary",
+   "chamber": "house",
+   "reg": "CC11407",
+   "period": "2016-2018",
+   "contributions": 7600.0
+  },
+  {
+   "name": "Hussey-Burdick, Natalia",
+   "chamber": "house",
+   "reg": "CC11347",
+   "period": "2016-2018",
+   "contributions": 24562.0
+  },
+  {
+   "name": "Belatti, Della",
+   "chamber": "house",
+   "reg": "CC10269",
+   "period": "2016-2018",
+   "contributions": 48750.0
+  },
+  {
+   "name": "Ford, Brenda",
+   "chamber": "senate",
+   "reg": "CC11343",
+   "period": "2014-2018",
+   "contributions": 10011.58
+  },
+  {
+   "name": "Eli, Stacelynn",
+   "chamber": "house",
+   "reg": "CC11184",
+   "period": "2016-2018",
+   "contributions": 10975.87
+  },
+  {
+   "name": "Rozembersky, Stefan",
+   "chamber": "senate",
+   "reg": "CC11354",
+   "period": "2014-2018",
+   "contributions": 615.57
+  },
+  {
+   "name": "Paik-Mander, Esther",
+   "chamber": "house",
+   "reg": "CC11457",
+   "period": "2016-2018",
+   "contributions": 6486.47
+  },
+  {
+   "name": "Kitagawa, Lisa",
+   "chamber": "house",
+   "reg": "CC11341",
+   "period": "2016-2018",
+   "contributions": 55197.26
+  },
+  {
+   "name": "Holt, Daniel",
+   "chamber": "house",
+   "reg": "CC11268",
+   "period": "2016-2018",
+   "contributions": 36289.29
+  },
+  {
+   "name": "Nishihara, Clarence",
+   "chamber": "senate",
+   "reg": "CC10159",
+   "period": "2014-2018",
+   "contributions": 50000.0
+  },
+  {
+   "name": "Keohokalole, Jarrett",
+   "chamber": "senate",
+   "reg": "CC11056",
+   "period": "2016-2018",
+   "contributions": 108879.89
+  },
+  {
+   "name": "English, John-Bull",
+   "chamber": "house",
+   "reg": "CC11349",
+   "period": "2016-2018",
+   "contributions": 1360.0
+  },
+  {
+   "name": "Inouye, Lorraine",
+   "chamber": "senate",
+   "reg": "CC10148",
+   "period": "2014-2018",
+   "contributions": 223571.74
+  },
+  {
+   "name": "Cabanilla, Rida",
+   "chamber": "house",
+   "reg": "CC10296",
+   "period": "2016-2018",
+   "contributions": 7550.0
+  },
+  {
+   "name": "Har, Sharon",
+   "chamber": "house",
+   "reg": "CC10243",
+   "period": "2016-2018",
+   "contributions": 32124.35
+  },
+  {
+   "name": "Garrett, Andrew",
+   "chamber": "house",
+   "reg": "CC11350",
+   "period": "2016-2018",
+   "contributions": 29836.53
+  },
+  {
+   "name": "Tengan, Michael",
+   "chamber": "senate",
+   "reg": "CC11365",
+   "period": "2014-2018",
+   "contributions": 4033.81
+  },
+  {
+   "name": "Nakamura, Nadine",
+   "chamber": "house",
+   "reg": "CC10590",
+   "period": "2016-2018",
+   "contributions": 30401.91
+  },
+  {
+   "name": "Kane, Dain",
+   "chamber": "house",
+   "reg": "CC11197",
+   "period": "2016-2018",
+   "contributions": 22404.13
+  },
+  {
+   "name": "Woodson, Justin",
+   "chamber": "house",
+   "reg": "CC10993",
+   "period": "2016-2018",
+   "contributions": 42200.0
+  },
+  {
+   "name": "Solis, Anthony",
+   "chamber": "senate",
+   "reg": "CC11485",
+   "period": "2014-2018",
+   "contributions": 2820.0
+  },
+  {
+   "name": "Armstrong, Dylan",
+   "chamber": "house",
+   "reg": "CC11364",
+   "period": "2016-2018",
+   "contributions": 4350.0
+  },
+  {
+   "name": "Creagan, Richard",
+   "chamber": "house",
+   "reg": "CC11027",
+   "period": "2016-2018",
+   "contributions": 17900.0
+  },
+  {
+   "name": "DeCoite, Lynn",
+   "chamber": "house",
+   "reg": "CC11179",
+   "period": "2016-2018",
+   "contributions": 70957.99
+  },
+  {
+   "name": "Cullen, Ty",
+   "chamber": "house",
+   "reg": "CC10466",
+   "period": "2016-2018",
+   "contributions": 75450.0
+  },
+  {
+   "name": "Wooley, Jessica",
+   "chamber": "house",
+   "reg": "CC10358",
+   "period": "2016-2018",
+   "contributions": 16250.0
+  },
+  {
+   "name": "Hashem, Mark",
+   "chamber": "house",
+   "reg": "CC10626",
+   "period": "2016-2018",
+   "contributions": 18450.0
+  },
+  {
+   "name": "Cachola, Romy",
+   "chamber": "house",
+   "reg": "CC10137",
+   "period": "2016-2018",
+   "contributions": 11250.0
+  },
+  {
+   "name": "Pratt, Bruce",
+   "chamber": "house",
+   "reg": "CC11290",
+   "period": "2016-2018",
+   "contributions": 421.73
+  },
+  {
+   "name": "Iona, Stephanie",
+   "chamber": "house",
+   "reg": "CC11472",
+   "period": "2016-2018",
+   "contributions": 9404.37
+  },
+  {
+   "name": "Perruso, Amy",
+   "chamber": "house",
+   "reg": "CC11345",
+   "period": "2016-2018",
+   "contributions": 25426.0
+  },
+  {
+   "name": "Learmont, Lei",
+   "chamber": "house",
+   "reg": "CC11360",
+   "period": "2016-2018",
+   "contributions": 10766.0
+  },
+  {
+   "name": "Henski, Kathryn",
+   "chamber": "house",
+   "reg": "CC11232",
+   "period": "2016-2018",
+   "contributions": 2407.9
+  },
+  {
+   "name": "Tokioka, James",
+   "chamber": "house",
+   "reg": "CC10278",
+   "period": "2016-2018",
+   "contributions": 43400.0
+  },
+  {
+   "name": "Lee, Marilyn",
+   "chamber": "house",
+   "reg": "CC11405",
+   "period": "2016-2018",
+   "contributions": 21701.0
+  },
+  {
+   "name": "Kahele, Kaialii",
+   "chamber": "senate",
+   "reg": "CC11209",
+   "period": "2016-2018",
+   "contributions": 127110.37
+  },
+  {
+   "name": "Bolo, Patrocinio",
+   "chamber": "house",
+   "reg": "CC11434",
+   "period": "2016-2018",
+   "contributions": 200.0
+  },
+  {
+   "name": "Kimball, Heather",
+   "chamber": "senate",
+   "reg": "CC11255",
+   "period": "2016-2018",
+   "contributions": 39235.46
+  },
+  {
+   "name": "Chock, Coby",
+   "chamber": "house",
+   "reg": "CC11464",
+   "period": "2016-2018",
+   "contributions": 3247.59
+  },
+  {
+   "name": "Robinson-Onderko, Lynn",
+   "chamber": "senate",
+   "reg": "CC11394",
+   "period": "2014-2018",
+   "contributions": 8089.9
+  },
+  {
+   "name": "Napeahi, Terri",
+   "chamber": "house",
+   "reg": "CC11373",
+   "period": "2016-2018",
+   "contributions": 2171.0
+  },
+  {
+   "name": "Moriwaki, Sharon",
+   "chamber": "senate",
+   "reg": "CC11387",
+   "period": "2014-2018",
+   "contributions": 47947.66
+  },
+  {
+   "name": "Mariano, Lynn",
+   "chamber": "senate",
+   "reg": "CC11442",
+   "period": "2014-2018",
+   "contributions": 10267.0
+  },
+  {
+   "name": "Whiting, Raina",
+   "chamber": "house",
+   "reg": "CC11257",
+   "period": "2016-2018",
+   "contributions": 11147.85
+  },
+  {
+   "name": "Shiratori, Miles",
+   "chamber": "house",
+   "reg": "CC11433",
+   "period": "2016-2018",
+   "contributions": 600.0
+  },
+  {
+   "name": "Mather, Jennifer",
+   "chamber": "house",
+   "reg": "CC11449",
+   "period": "2016-2018",
+   "contributions": 2630.0
+  },
+  {
+   "name": "Ready, Boyd",
+   "chamber": "house",
+   "reg": "CC11429",
+   "period": "2016-2018",
+   "contributions": 3800.0
+  },
+  {
+   "name": "Fale, Richard",
+   "chamber": "house",
+   "reg": "CC10394",
+   "period": "2016-2018",
+   "contributions": 6500.0
+  },
+  {
+   "name": "Bukoski, Kika",
+   "chamber": "house",
+   "reg": "CC11375",
+   "period": "2016-2018",
+   "contributions": 41435.54
+  },
+  {
+   "name": "Kong, Samuel",
+   "chamber": "house",
+   "reg": "CC11102",
+   "period": "2016-2018",
+   "contributions": 15611.0
+  },
+  {
+   "name": "Morikawa, Daynette",
+   "chamber": "house",
+   "reg": "CC10631",
+   "period": "2016-2018",
+   "contributions": 42446.0
+  },
+  {
+   "name": "Yamane, Ryan",
+   "chamber": "house",
+   "reg": "CC10235",
+   "period": "2016-2018",
+   "contributions": 50750.0
+  },
+  {
+   "name": "Garcia, Diamond",
+   "chamber": "senate",
+   "reg": "CC11430",
+   "period": "2014-2018",
+   "contributions": 18770.0
+  },
+  {
+   "name": "Maluafiti, Alicia",
+   "chamber": "senate",
+   "reg": "CC11439",
+   "period": "2016-2018",
+   "contributions": 51200.0
+  },
+  {
+   "name": "Kamihara, Myron",
+   "chamber": "house",
+   "reg": "CC11351",
+   "period": "2016-2018",
+   "contributions": 3125.29
+  },
+  {
+   "name": "English, Kalani",
+   "chamber": "senate",
+   "reg": "CC10140",
+   "period": "2014-2018",
+   "contributions": 213125.63
+  },
+  {
+   "name": "Ching, Eric",
+   "chamber": "house",
+   "reg": "CC11180",
+   "period": "2016-2018",
+   "contributions": 200.0
+  },
+  {
+   "name": "Duzon, Veronica",
+   "chamber": "senate",
+   "reg": "CC11465",
+   "period": "2016-2018",
+   "contributions": 1480.81
+  },
+  {
+   "name": "Hee, Clayton",
+   "chamber": "senate",
+   "reg": "CC10144",
+   "period": "2014-2018",
+   "contributions": 64198.25
+  },
+  {
+   "name": "Hughey, Justin",
+   "chamber": "house",
+   "reg": "CC10637",
+   "period": "2016-2018",
+   "contributions": 5196.09
+  },
+  {
+   "name": "Ito, Ken",
+   "chamber": "senate",
+   "reg": "CC10180",
+   "period": "2016-2018",
+   "contributions": 74725.0
+  },
+  {
+   "name": "Takumi, Roy",
+   "chamber": "house",
+   "reg": "CC10246",
+   "period": "2016-2018",
+   "contributions": 49237.92
+  },
+  {
+   "name": "Aki, Zurishaddai",
+   "chamber": "house",
+   "reg": "CC11230",
+   "period": "2016-2018",
+   "contributions": 2894.43
+  },
+  {
+   "name": "Lawrence, Tiare",
+   "chamber": "house",
+   "reg": "CC11226",
+   "period": "2016-2018",
+   "contributions": 30508.05
+  },
+  {
+   "name": "Clemente, Roger",
+   "chamber": "senate",
+   "reg": "CC11150",
+   "period": "2016-2018",
+   "contributions": 200.0
+  },
+  {
+   "name": "Fevella, Kurt*",
+   "chamber": "senate",
+   "reg": "CC11359",
+   "period": "2016-2018",
+   "contributions": 17895.0
+  },
+  {
+   "name": "Luke, Sylvia",
+   "chamber": "house",
+   "reg": "CC10186",
+   "period": "2016-2018",
+   "contributions": 230762.04
+  },
+  {
+   "name": "Yamashita, Kyle",
+   "chamber": "house",
+   "reg": "CC10232",
+   "period": "2016-2018",
+   "contributions": 69554.92
+  },
+  {
+   "name": "Allen, Julia",
+   "chamber": "house",
+   "reg": "CC10322",
+   "period": "2016-2018",
+   "contributions": 3410.0
+  },
+  {
+   "name": "Lowen, Nicole",
+   "chamber": "house",
+   "reg": "CC10861",
+   "period": "2016-2018",
+   "contributions": 15150.0
+  },
+  {
+   "name": "McKelvey, Angus",
+   "chamber": "house",
+   "reg": "CC10264",
+   "period": "2016-2018",
+   "contributions": 17200.0
+  },
+  {
+   "name": "Gates, Cedric",
+   "chamber": "house",
+   "reg": "CC11146",
+   "period": "2016-2018",
+   "contributions": 41782.93
+  },
+  {
+   "name": "Ichiyama, Linda",
+   "chamber": "house",
+   "reg": "CC10561",
+   "period": "2016-2018",
+   "contributions": 17050.0
+  },
+  {
+   "name": "Souki, Joseph",
+   "chamber": "house",
+   "reg": "CC10259",
+   "period": "2016-2018",
+   "contributions": 43475.0
+  },
+  {
+   "name": "Evans, Cindy",
+   "chamber": "house",
+   "reg": "CC10236",
+   "period": "2016-2018",
+   "contributions": 19000.0
+  },
+  {
+   "name": "Miller, John",
+   "chamber": "house",
+   "reg": "CC11377",
+   "period": "2016-2018",
+   "contributions": 10711.56
+  },
+  {
+   "name": "Nakashima, Mark",
+   "chamber": "house",
+   "reg": "CC10352",
+   "period": "2016-2018",
+   "contributions": 46576.21
+  },
+  {
+   "name": "Logue, James",
+   "chamber": "house",
+   "reg": "CC11262",
+   "period": "2016-2018",
+   "contributions": 8607.87
+  },
+  {
+   "name": "Shimabukuro, Maile",
+   "chamber": "senate",
+   "reg": "CC10201",
+   "period": "2014-2018",
+   "contributions": 55028.73
+  },
+  {
+   "name": "Souza, Ronette",
+   "chamber": "house",
+   "reg": "CC11409",
+   "period": "2016-2018",
+   "contributions": 9251.0
+  },
+  {
+   "name": "Oshiro, Marcus",
+   "chamber": "house",
+   "reg": "CC10191",
+   "period": "2016-2018",
+   "contributions": 2150.0
+  },
+  {
+   "name": "Matsushita, David",
+   "chamber": "house",
+   "reg": "CC11337",
+   "period": "2016-2018",
+   "contributions": 24879.83
+  },
+  {
+   "name": "Ku, Tercia",
+   "chamber": "senate",
+   "reg": "CC10503",
+   "period": "2014-2018",
+   "contributions": 111.0
+  },
+  {
+   "name": "Coakley, Jeffrey",
+   "chamber": "house",
+   "reg": "CC11223",
+   "period": "2016-2018",
+   "contributions": 650.0
+  },
+  {
+   "name": "Kobayashi, Dale",
+   "chamber": "house",
+   "reg": "CC11231",
+   "period": "2016-2018",
+   "contributions": 44073.24
+  },
+  {
+   "name": "San Buenaventura, Joy",
+   "chamber": "house",
+   "reg": "CC11014",
+   "period": "2016-2018",
+   "contributions": 20275.0
+  },
+  {
+   "name": "Ganaden, Ernesto",
+   "chamber": "house",
+   "reg": "CC11369",
+   "period": "2016-2018",
+   "contributions": 17710.0
+  },
+  {
+   "name": "Takayama, Gregg",
+   "chamber": "house",
+   "reg": "CC10914",
+   "period": "2016-2018",
+   "contributions": 14400.0
+  },
+  {
+   "name": "Galuteria, Brickwood",
+   "chamber": "senate",
+   "reg": "CC10321",
+   "period": "2014-2018",
+   "contributions": 83315.35
+  },
+  {
+   "name": "Shishido, Melissah",
+   "chamber": "senate",
+   "reg": "CC11487",
+   "period": "2014-2018",
+   "contributions": 500.0
+  },
+  {
+   "name": "Kapela, Jeanne",
+   "chamber": "house",
+   "reg": "CC11353",
+   "period": "2016-2018",
+   "contributions": 21356.0
+  },
+  {
+   "name": "Galeai, Noe",
+   "chamber": "house",
+   "reg": "CC11398",
+   "period": "2016-2018",
+   "contributions": 14978.68
+  },
+  {
+   "name": "La Chica, Mae Patricia",
+   "chamber": "house",
+   "reg": "CC11408",
+   "period": "2016-2018",
+   "contributions": 6010.13
+  },
+  {
+   "name": "Henski, Kathryn",
+   "chamber": "house",
+   "reg": "CC11440",
+   "period": "2016-2018",
+   "contributions": 5292.45
+  },
+  {
+   "name": "Manipol-Larson, Grace",
+   "chamber": "house",
+   "reg": "CC11496",
+   "period": "2016-2018",
+   "contributions": 500.0
+  },
+  {
+   "name": "Yim, Alan",
+   "chamber": "house",
+   "reg": "CC11403",
+   "period": "2016-2018",
+   "contributions": 2000.0
+  },
+  {
+   "name": "Amato, Terez",
+   "chamber": "senate",
+   "reg": "CC11005",
+   "period": "2014-2018",
+   "contributions": 31279.62
+  },
+  {
+   "name": "Martinez, Rosebella",
+   "chamber": "house",
+   "reg": "CC10788",
+   "period": "2016-2018",
+   "contributions": 3150.0
+  },
+  {
+   "name": "Fidelibus, Christopher",
+   "chamber": "house",
+   "reg": "CC11486",
+   "period": "2016-2018",
+   "contributions": 23873.97
+  },
+  {
+   "name": "Dalire, Kaui",
+   "chamber": "house",
+   "reg": "CC11418",
+   "period": "2016-2018",
+   "contributions": 2950.0
+  },
+  {
+   "name": "Bonk, Keiko",
+   "chamber": "house",
+   "reg": "CC10930",
+   "period": "2016-2018",
+   "contributions": 100.0
+  },
+  {
+   "name": "Okimoto, Val",
+   "chamber": "house",
+   "reg": "CC11410",
+   "period": "2016-2018",
+   "contributions": 40051.27
+  },
+  {
+   "name": "Kealoha-Lindsey, Mela",
+   "chamber": "house",
+   "reg": "CC11446",
+   "period": "2016-2018",
+   "contributions": 3034.5
+  },
+  {
+   "name": "Todd, Christopher",
+   "chamber": "house",
+   "reg": "CC11336",
+   "period": "2016-2018",
+   "contributions": 48756.75
+  },
+  {
+   "name": "Kahele, Gilbert",
+   "chamber": "senate",
+   "reg": "CC10801",
+   "period": "2014-2018",
+   "contributions": 22894.22
+  },
+  {
+   "name": "Baker, Rosalyn",
+   "chamber": "senate",
+   "reg": "CC10135",
+   "period": "2014-2018",
+   "contributions": 220920.37
+  },
+  {
+   "name": "Couch, Don",
+   "chamber": "house",
+   "reg": "CC10368",
+   "period": "2016-2018",
+   "contributions": 26600.0
+  }
+ ]
+}

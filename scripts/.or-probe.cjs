@@ -1,0 +1,26 @@
+const { chromium } = require('playwright');
+const fs = require('fs');
+(async () => {
+  const out = process.argv[2];
+  const b = await chromium.launch({ headless: true, channel: 'chromium' });
+  const ctx = await b.newContext({ acceptDownloads: true, userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36' });
+  const p = await ctx.newPage();
+  await p.goto('https://secure.sos.state.or.us/orestar/GotoSearchByElection.do', { waitUntil: 'networkidle' });
+  await p.waitForSelector('select[name=yearActive]', { timeout: 60000 });
+  await p.selectOption('select[name=yearActive]', '2022');
+  await p.waitForTimeout(3000);
+  const el = await p.$$eval('select[name=election] option', os => os.map(o => o.value + '=' + o.textContent.trim()));
+  console.log(el.slice(0, 20));
+  const gen = el.find(s => /General/i.test(s) && /11\/0/.test(s)) || el.find(s => /General/i.test(s));
+  console.log('gen', gen);
+  await p.selectOption('select[name=election]', gen.split('=')[0]);
+  await p.selectOption('select[name=filerType]', 'CANDALL');
+  await p.waitForTimeout(1500);
+  const offs = await p.$$eval('select[name=committeeOffice] option', os => os.map(o => o.value + '=' + o.textContent.trim()).filter(s => /State/.test(s)));
+  console.log(offs);
+  await p.selectOption('select[name=committeeOffice]', 'SR');
+  await Promise.all([p.waitForNavigation({ waitUntil: 'networkidle', timeout: 120000 }), p.click('input[name=search]')]);
+  fs.writeFileSync(out + '/byelec-res.html', await p.content());
+  console.log((await p.content()).length);
+  await b.close();
+})();

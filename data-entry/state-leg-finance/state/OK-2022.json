@@ -1,0 +1,1373 @@
+{
+ "state": "OK",
+ "cycle": 2022,
+ "source": "Oklahoma Ethics Commission (race totals, monetary + in-kind)",
+ "dataThrough": "12/31/2022",
+ "house": {
+  "1": [
+   {
+    "name": "DEMPSEY, JAMES",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 110417.92,
+    "expenditures": 70509.79
+   }
+  ],
+  "2": [
+   {
+    "name": "OLSEN, JIM",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 18519.41,
+    "expenditures": 7320.27
+   }
+  ],
+  "3": [
+   {
+    "name": "WEST, RICK",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11101.8,
+    "expenditures": 7289.05
+   }
+  ],
+  "4": [
+   {
+    "name": "ARNALL, CHARLES RAY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1286,
+    "expenditures": 200
+   },
+   {
+    "name": "CULVER, BOB ED",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 101431.32,
+    "expenditures": 84090.57
+   }
+  ],
+  "5": [
+   {
+    "name": "WEST, JOSH",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 139003.91,
+    "expenditures": 83872.55
+   }
+  ],
+  "6": [
+   {
+    "name": "CORNWELL, RUSTY",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 23519.45,
+    "expenditures": 26043.62
+   }
+  ],
+  "7": [
+   {
+    "name": "BASHORE, STEVE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 162064.53,
+    "expenditures": 115402.25
+   }
+  ],
+  "8": [
+   {
+    "name": "GANN, TOM",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 7376.29,
+    "expenditures": 7376.29
+   }
+  ],
+  "9": [
+   {
+    "name": "KENNEDY, ANN MARIE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 627.76,
+    "expenditures": 627.76
+   },
+   {
+    "name": "LEPAK, MARK PAUL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 92718.04,
+    "expenditures": 41659.77
+   }
+  ],
+  "10": [
+   {
+    "name": "STROM, JUDD",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 51450.93,
+    "expenditures": 20070.21
+   }
+  ],
+  "11": [
+   {
+    "name": "KANE, JOHN B",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 147956.08000000002,
+    "expenditures": 132781.46
+   }
+  ],
+  "12": [
+   {
+    "name": "LAGRONE, CRYSTAL",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9928.5,
+    "expenditures": 9651
+   },
+   {
+    "name": "MCDUGLE, KEVIN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 81249.34,
+    "expenditures": 50071.18
+   }
+  ],
+  "13": [
+   {
+    "name": "HALEY, JIMMY WILLIAM",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 21403,
+    "expenditures": 20903
+   },
+   {
+    "name": "HAYS, WILLIAM NEIL",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 61139.13,
+    "expenditures": 90580.6
+   }
+  ],
+  "14": [
+   {
+    "name": "SNEED, CHRIS",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 93547.43,
+    "expenditures": 69364.28
+   }
+  ],
+  "15": [
+   {
+    "name": "RANDLEMAN, RANDY",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 86415.1,
+    "expenditures": 64748.18
+   }
+  ],
+  "16": [
+   {
+    "name": "FETGATTER, SCOTT",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 49721,
+    "expenditures": 36286.97
+   }
+  ],
+  "17": [
+   {
+    "name": "GREGO, JAMES GERARD",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 25016.22,
+    "expenditures": 21366.09
+   }
+  ],
+  "18": [
+   {
+    "name": "SMITH, DAVID",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 39400,
+    "expenditures": 10067.1
+   }
+  ],
+  "19": [
+   {
+    "name": "HUMPHREY, JUSTIN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 23236.22,
+    "expenditures": 16755.57
+   }
+  ],
+  "20": [
+   {
+    "name": "CONLEY, SHERRIE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 54656.33,
+    "expenditures": 54656.33
+   }
+  ],
+  "21": [
+   {
+    "name": "MAYNARD, CODY",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 115571.08,
+    "expenditures": 89758.07
+   }
+  ],
+  "22": [
+   {
+    "name": "MCCALL, CHARLES",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 463314.89,
+    "expenditures": 362717.9
+   }
+  ],
+  "23": [
+   {
+    "name": "YOUNG, SUSAN CARLE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 34822.67,
+    "expenditures": 53935.17
+   }
+  ],
+  "24": [
+   {
+    "name": "BANNING, CHRIS LEE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 35851.23,
+    "expenditures": 220530.3
+   }
+  ],
+  "25": [
+   {
+    "name": "JOHNS, RONNY",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 26500,
+    "expenditures": 26500
+   }
+  ],
+  "26": [
+   {
+    "name": "HARDIN, GREGORY, II",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 19323.92,
+    "expenditures": 7730.43
+   },
+   {
+    "name": "KERBS, DELL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 123752.13,
+    "expenditures": 102133.66
+   }
+  ],
+  "27": [
+   {
+    "name": "STERLING, DANNY",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 60320.24,
+    "expenditures": 45021.99
+   }
+  ],
+  "28": [
+   {
+    "name": "WILLIAMS, DANNY",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 24041.7,
+    "expenditures": 19945.48
+   }
+  ],
+  "29": [
+   {
+    "name": "HILBERT, KYLE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 290237.76,
+    "expenditures": 190981.22
+   }
+  ],
+  "30": [
+   {
+    "name": "LAWSON, MARK",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 49407.17,
+    "expenditures": 32920.96
+   }
+  ],
+  "31": [
+   {
+    "name": "DUEL, COLLIN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 115203.45,
+    "expenditures": 98596.01
+   }
+  ],
+  "32": [
+   {
+    "name": "WALLACE, KEVIN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 449120.92,
+    "expenditures": 271407.11
+   }
+  ],
+  "33": [
+   {
+    "name": "TALLEY, JOHN T",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 66501.32,
+    "expenditures": 74159.85
+   }
+  ],
+  "34": [
+   {
+    "name": "BAUGHMAN, MICHAEL KELLY",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9727.39,
+    "expenditures": 8727.39
+   },
+   {
+    "name": "RANSON, TRISH",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 168132.24,
+    "expenditures": 143462.39
+   }
+  ],
+  "35": [
+   {
+    "name": "BURNS, TY D",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 100093.76,
+    "expenditures": 61472.55
+   },
+   {
+    "name": "JENNINGS, SAM",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4902.84,
+    "expenditures": 4902.84
+   }
+  ],
+  "36": [
+   {
+    "name": "GEORGE, JOHN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 146841.36,
+    "expenditures": 121155.07
+   }
+  ],
+  "37": [
+   {
+    "name": "LUTTRELL, KEN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 103467.25,
+    "expenditures": 37751.51
+   }
+  ],
+  "38": [
+   {
+    "name": "PFEIFFER, JOHN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 116511.18,
+    "expenditures": 26996.01
+   }
+  ],
+  "39": [
+   {
+    "name": "MARTINEZ, RYAN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 62893.4,
+    "expenditures": 62893.4
+   }
+  ],
+  "40": [
+   {
+    "name": "CALDWELL, CHAD DAVID",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 60817.35,
+    "expenditures": 55499.95
+   },
+   {
+    "name": "PAYNE, NICHOLAS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4196.8099999999995,
+    "expenditures": 1610.11
+   }
+  ],
+  "41": [
+   {
+    "name": "BOCKUS, MIKE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8036.15,
+    "expenditures": 5837.54
+   },
+   {
+    "name": "CROSSWHITE HADER, DENISE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 73513.35,
+    "expenditures": 34573.63
+   }
+  ],
+  "42": [
+   {
+    "name": "JARMAN, STEPHEN GRANT",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12431.78,
+    "expenditures": 13905.5
+   },
+   {
+    "name": "ROE, CYNTHIA JO",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 121558.18,
+    "expenditures": 116440.12
+   }
+  ],
+  "43": [
+   {
+    "name": "KINET, CASSIE",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 858.18,
+    "expenditures": 1002.5
+   },
+   {
+    "name": "STEAGALL, JAY W",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 60304.29,
+    "expenditures": 32437.19
+   }
+  ],
+  "44": [
+   {
+    "name": "DECK, JARED",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 138359.53,
+    "expenditures": 121001.31
+   },
+   {
+    "name": "HARRIS, RJ",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3190.77,
+    "expenditures": 3190.77
+   }
+  ],
+  "45": [
+   {
+    "name": "MENZ, ANNIE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 70982.78,
+    "expenditures": 54158.94
+   },
+   {
+    "name": "STERLING, TERESA",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 61243.1,
+    "expenditures": 70513.1
+   }
+  ],
+  "46": [
+   {
+    "name": "ROSECRANTS, JACOB",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 164652.91,
+    "expenditures": 153181.74
+   },
+   {
+    "name": "WESSON, KENDRA",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 96207.24,
+    "expenditures": 78848.08
+   }
+  ],
+  "47": [
+   {
+    "name": "HILL, SAMUEL BRIAN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 53278.46,
+    "expenditures": 49276.83
+   }
+  ],
+  "48": [
+   {
+    "name": "TOWNLEY, TAMMY C",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 106692.73,
+    "expenditures": 104618.48
+   }
+  ],
+  "49": [
+   {
+    "name": "CANTRELL, JOSHUA AARON",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 37832.58,
+    "expenditures": 31322.5
+   }
+  ],
+  "50": [
+   {
+    "name": "MCENTIRE, MARCUS",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 231995.43,
+    "expenditures": 231995.43
+   }
+  ],
+  "51": [
+   {
+    "name": "BOLES, BRAD",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 132248.58,
+    "expenditures": 80238.32
+   }
+  ],
+  "52": [
+   {
+    "name": "KENDRIX, GERRID EARL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 53930.92,
+    "expenditures": 24378.14
+   }
+  ],
+  "53": [
+   {
+    "name": "MCBRIDE, MARK",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 139439.24,
+    "expenditures": 148811.19
+   }
+  ],
+  "54": [
+   {
+    "name": "WEST, KEVIN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 32064.1,
+    "expenditures": 10710.45
+   }
+  ],
+  "55": [
+   {
+    "name": "ARCHER, NICK",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 77648.75,
+    "expenditures": 110579.66
+   }
+  ],
+  "56": [
+   {
+    "name": "LOWE, DICK",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 68295.58,
+    "expenditures": 19478.91
+   }
+  ],
+  "57": [
+   {
+    "name": "MOORE, ANTHONY",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 286299.93,
+    "expenditures": 269325.18
+   }
+  ],
+  "58": [
+   {
+    "name": "NEWTON, CARL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 88412.99,
+    "expenditures": 29769.29
+   }
+  ],
+  "59": [
+   {
+    "name": "DOBRINSKI, MIKE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 94414.32,
+    "expenditures": 52863.99
+   }
+  ],
+  "60": [
+   {
+    "name": "BAKER, RHONDA",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 163719.05,
+    "expenditures": 120660.53
+   }
+  ],
+  "61": [
+   {
+    "name": "PATZKOWSKY, KENTON",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 45150.97,
+    "expenditures": 7182.97
+   }
+  ],
+  "62": [
+   {
+    "name": "PAE, DANIEL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 47185.44,
+    "expenditures": 21393.27
+   }
+  ],
+  "63": [
+   {
+    "name": "CALDWELL, HURCHEL E, III",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 121287.22,
+    "expenditures": 99421.68
+   },
+   {
+    "name": "SMITH, SHYKIRA M",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 26692.13,
+    "expenditures": 21703.13
+   }
+  ],
+  "64": [
+   {
+    "name": "MERAZ, KYLE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 24318.62,
+    "expenditures": 19318.62
+   },
+   {
+    "name": "WORTHEN, RANDE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 83130.19,
+    "expenditures": 83130.19
+   }
+  ],
+  "65": [
+   {
+    "name": "HASENBECK, TONI",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 33923.26,
+    "expenditures": 10100
+   }
+  ],
+  "66": [
+   {
+    "name": "RANKIN, JAMES DAVID",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 22532.7,
+    "expenditures": 22532.7
+   },
+   {
+    "name": "STAIRES, DONALD CLAY",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 112337.55,
+    "expenditures": 101273.26
+   }
+  ],
+  "67": [
+   {
+    "name": "BOATMAN, JEFF",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 65870.46,
+    "expenditures": 26085.78
+   }
+  ],
+  "68": [
+   {
+    "name": "SIMS, LONNIE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 70936.45999999999,
+    "expenditures": 51052.5
+   }
+  ],
+  "69": [
+   {
+    "name": "TEDFORD, MARK",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 29855,
+    "expenditures": 122951.49
+   }
+  ],
+  "70": [
+   {
+    "name": "BANKS, BRAD STEPHEN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 49455.01,
+    "expenditures": 49455.01
+   },
+   {
+    "name": "SCHREIBER, SUZANNE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 322844.57,
+    "expenditures": 298920.29
+   }
+  ],
+  "71": [
+   {
+    "name": "MASTERS, MICHAEL THOMAS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1500,
+    "expenditures": 1500
+   },
+   {
+    "name": "SWOPE, AMANDA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 87917.49,
+    "expenditures": 83603.57
+   }
+  ],
+  "72": [
+   {
+    "name": "NICHOLS, MONROE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 27998.52,
+    "expenditures": 27170.69
+   }
+  ],
+  "73": [
+   {
+    "name": "GOODWIN, REGINA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 42710.93,
+    "expenditures": 4598.9
+   }
+  ],
+  "74": [
+   {
+    "name": "VANCUREN, MARK",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 52518.48,
+    "expenditures": 18047.56
+   }
+  ],
+  "75": [
+   {
+    "name": "MARTI, T.J.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 81060.17,
+    "expenditures": 47284.7
+   }
+  ],
+  "76": [
+   {
+    "name": "FORD, ROSS N",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 113615.86,
+    "expenditures": 70758.82
+   }
+  ],
+  "77": [
+   {
+    "name": "WALDRON, JOHN CHARLES",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 135405.01,
+    "expenditures": 61932.43
+   }
+  ],
+  "78": [
+   {
+    "name": "BLANCETT, MELOYDE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 39241.09,
+    "expenditures": 19268.09
+   }
+  ],
+  "79": [
+   {
+    "name": "HASSINK, PAUL",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 50879.68,
+    "expenditures": 90242.03
+   },
+   {
+    "name": "PROVENZANO, MELISSA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 226079.91,
+    "expenditures": 201904.58
+   }
+  ],
+  "80": [
+   {
+    "name": "MAY, STAN JOSEPH",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 39686.71,
+    "expenditures": 21849.11
+   }
+  ],
+  "81": [
+   {
+    "name": "OSBURN, MIKE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 122930.9,
+    "expenditures": 63330.06
+   }
+  ],
+  "82": [
+   {
+    "name": "MILLER, NICOLE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 145186.46000000002,
+    "expenditures": 52182.81
+   }
+  ],
+  "83": [
+   {
+    "name": "CLYDE, GREG",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 89204.84,
+    "expenditures": 72704.84
+   },
+   {
+    "name": "ROBERTS, ERIC",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 148407.83,
+    "expenditures": 126422.87
+   }
+  ],
+  "84": [
+   {
+    "name": "LAMB, JEREMY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 83860,
+    "expenditures": 69860
+   },
+   {
+    "name": "WEST, TAMMY",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 163005.29,
+    "expenditures": 142469.1
+   }
+  ],
+  "85": [
+   {
+    "name": "MUNSON, CYNDI",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 261415.47,
+    "expenditures": 225494.79
+   },
+   {
+    "name": "RICE-JOHNSON, DONNA",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 22432.53,
+    "expenditures": 22072.53
+   }
+  ],
+  "86": [
+   {
+    "name": "HARDIN, DAVID",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 12554.49,
+    "expenditures": 6472
+   }
+  ],
+  "87": [
+   {
+    "name": "BANISTER, GLORIA A",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 33435.71,
+    "expenditures": 37114.21
+   },
+   {
+    "name": "HEFNER, ELLYN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 73928.51,
+    "expenditures": 70290.52
+   }
+  ],
+  "88": [
+   {
+    "name": "TURNER, MAUREE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 24145,
+    "expenditures": 24488.27
+   }
+  ],
+  "89": [
+   {
+    "name": "ALONSO, ARTURO",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 47409.13,
+    "expenditures": 40288.46
+   }
+  ],
+  "90": [
+   {
+    "name": "DANKWA, NANA ABRAM",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14545,
+    "expenditures": 22135.53
+   },
+   {
+    "name": "ECHOLS, JONATHAN DAVID",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 421798.66,
+    "expenditures": 261136.4
+   }
+  ],
+  "91": [
+   {
+    "name": "KANNADY, CHRISTOPHER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 419480.44,
+    "expenditures": 109278.43
+   }
+  ],
+  "92": [
+   {
+    "name": "BENNETT, FORREST",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 32378.16,
+    "expenditures": 25875.71
+   }
+  ],
+  "93": [
+   {
+    "name": "DOLLENS, MICKEY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 40060.6,
+    "expenditures": 37997.05
+   }
+  ],
+  "94": [
+   {
+    "name": "FUGATE, ANDY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 43657.37,
+    "expenditures": 24797
+   }
+  ],
+  "95": [
+   {
+    "name": "MALONE, TEGAN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 66495.67,
+    "expenditures": 49342.3
+   },
+   {
+    "name": "WOLFLEY, MAX",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 66026.25,
+    "expenditures": 54267.11
+   }
+  ],
+  "96": [
+   {
+    "name": "STINSON, PRESTON",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30648,
+    "expenditures": 17097.61
+   }
+  ],
+  "97": [
+   {
+    "name": "LOWE, JASON E",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 53723.740000000005,
+    "expenditures": 52005.87
+   }
+  ],
+  "98": [
+   {
+    "name": "DAVIS, DEAN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 46339.85,
+    "expenditures": 19278.9
+   }
+  ],
+  "99": [
+   {
+    "name": "PITTMAN, AJAY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 24451.51,
+    "expenditures": 24242.09
+   }
+  ],
+  "100": [
+   {
+    "name": "GILMORE, WESUI C",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 21107.33,
+    "expenditures": 16626.48
+   },
+   {
+    "name": "STARK, MARILYN M",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 62567.55,
+    "expenditures": 58813.11
+   }
+  ],
+  "101": [
+   {
+    "name": "MANGER, ROBERT",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 45564.03,
+    "expenditures": 23124.42
+   }
+  ]
+ },
+ "senate": {
+  "2": [
+   {
+    "name": "ESAU, JENNIFER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 55872.83,
+    "expenditures": 55075.33
+   },
+   {
+    "name": "SEIFRIED, ALLY",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 479574.62,
+    "expenditures": 337644.87
+   }
+  ],
+  "4": [
+   {
+    "name": "WOODS, TOM",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 201379.96,
+    "expenditures": 250040.48
+   }
+  ],
+  "6": [
+   {
+    "name": "BULLARD, DAVID J",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 140354.63,
+    "expenditures": 108800.27
+   }
+  ],
+  "8": [
+   {
+    "name": "THOMPSON, ROGER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 367400.07999999996,
+    "expenditures": 362682.23
+   }
+  ],
+  "10": [
+   {
+    "name": "COLEMAN, BILL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 158456.38,
+    "expenditures": 139603.16
+   }
+  ],
+  "12": [
+   {
+    "name": "GOLLIHARE, TODD",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 165503.96,
+    "expenditures": 150417.13
+   }
+  ],
+  "14": [
+   {
+    "name": "ALVORD, JERRY",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 195080.09,
+    "expenditures": 76483.91
+   }
+  ],
+  "16": [
+   {
+    "name": "BOREN, MARY BROWN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 68084.52,
+    "expenditures": 67369.52
+   }
+  ],
+  "18": [
+   {
+    "name": "STEWART, JACK",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 90824.56,
+    "expenditures": 59578.87
+   }
+  ],
+  "20": [
+   {
+    "name": "HALL, CHUCK",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 365934.92,
+    "expenditures": 202739.39
+   }
+  ],
+  "22": [
+   {
+    "name": "AGUIRRE, BLAKE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15445.710000000001,
+    "expenditures": 13356.61
+   },
+   {
+    "name": "THOMPSON, KRISTEN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 361958.61000000004,
+    "expenditures": 361894.4
+   }
+  ],
+  "24": [
+   {
+    "name": "WEAVER, DARRELL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 170558.88,
+    "expenditures": 26443.71
+   }
+  ],
+  "26": [
+   {
+    "name": "JECH, DARCY ALLEN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 396758.42,
+    "expenditures": 354762.87
+   }
+  ],
+  "28": [
+   {
+    "name": "GREEN, GRANT",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 312407.72000000003,
+    "expenditures": 335440.83
+   },
+   {
+    "name": "RACKLEY, KAREN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3699.71,
+    "expenditures": 3699.71
+   }
+  ],
+  "30": [
+   {
+    "name": "CALLAHAN, LORI ANN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 44781.86,
+    "expenditures": 43700
+   },
+   {
+    "name": "KIRT, JULIA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 396280.72000000003,
+    "expenditures": 374266.88
+   }
+  ],
+  "32": [
+   {
+    "name": "JERNIGAN, JOHNNY MACK, JR",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1880,
+    "expenditures": 1880
+   },
+   {
+    "name": "MONTGOMERY, JOHN MICHAEL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 138340.13999999998,
+    "expenditures": 118467.2
+   }
+  ],
+  "34": [
+   {
+    "name": "DOSSETT, J.J.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 154101.88,
+    "expenditures": 138755.15
+   },
+   {
+    "name": "PRIETO, DANA",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 41843.3,
+    "expenditures": 43982.26
+   }
+  ],
+  "36": [
+   {
+    "name": "HASTE, JOHN MICHAEL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 305982.98,
+    "expenditures": 215626.33
+   }
+  ],
+  "38": [
+   {
+    "name": "HOWARD, BRENT",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 191232.05,
+    "expenditures": 132197.71
+   }
+  ],
+  "40": [
+   {
+    "name": "DALY, MARIAM",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 105265.31,
+    "expenditures": 104579.28
+   },
+   {
+    "name": "HICKS, CARRI",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 361038.23,
+    "expenditures": 355491.51
+   }
+  ],
+  "42": [
+   {
+    "name": "STANLEY, BRENDA",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 243918.21,
+    "expenditures": 173960.04
+   }
+  ],
+  "44": [
+   {
+    "name": "BROOKS, MICHAEL",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 128041.46,
+    "expenditures": 111202.45
+   }
+  ],
+  "46": [
+   {
+    "name": "FLOYD, KAY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 234968.52,
+    "expenditures": 234968.52
+   }
+  ],
+  "48": [
+   {
+    "name": "YOUNG, GEORGE EDWIN, SR",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 96749.39,
+    "expenditures": 86310.66
+   }
+  ]
+ }
+}

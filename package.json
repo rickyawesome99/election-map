@@ -14,9 +14,10 @@
     "snapshot": "tsx --conditions=react-server scripts/saveForecastSnapshot.ts",
     "history": "tsx --conditions=react-server scripts/buildForecastHistory.ts",
     "chamber-margins": "tsx --conditions=react-server scripts/buildChamberMargins.ts",
+    "candidate-pages": "tsx --conditions=react-server scripts/buildCandidatePages.ts",
     "share-card": "tsx --conditions=react-server scripts/buildSiteShareCard.tsx",
-    "prebuild": "npm run chamber-margins && npm run history",
-    "predev": "npm run chamber-margins && npm run history"
+    "prebuild": "npm run chamber-margins && npm run candidate-pages && npm run history",
+    "predev": "npm run chamber-margins && npm run candidate-pages && npm run history"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

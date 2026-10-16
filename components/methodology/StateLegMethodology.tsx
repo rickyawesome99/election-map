@@ -8,6 +8,9 @@ import { contest2026 } from "@/lib/stateLegAtlas";
 import { buildPresByEraAuditRows } from "@/lib/stateLegPresByEraAudit";
 import { STATE_LEG_FORECAST_CONSTANTS as SC, projectAllChambers } from "@/lib/stateLegForecast";
 import { STATE_LEG_VALIDATION } from "@/data/stateLegValidation";
+import { STATE_LEG_POPVOTE_VALIDATION as PV } from "@/data/stateLegPopularVoteValidation";
+import { STATE_LEG_POPVOTE_CONSTANTS as PC, projectAllChamberPopularVotes } from "@/lib/stateLegPopularVote";
+import { MIDTERM_WEIGHTS } from "@/lib/turnoutModel";
 import { STATE_LEG_INDEPENDENT_VALIDATION as IV } from "@/data/stateLegIndependentValidation";
 import { STATE_LEG_TYPE_WEIGHT_SWEEP as SW } from "@/data/stateLegTypeWeightSweep";
 import { getNationalEnvironment } from "@/lib/tplCompute";
@@ -20,6 +23,13 @@ const DOCUMENTED_IN = {
   IND_RECORD_SHARE: "state-leg#projection", IND_PRIOR_PTS: "state-leg#projection", IND_SHRINK_K: "state-leg#projection", IND_SIGMA: "state-leg#projection",
 } satisfies Record<keyof typeof SC, string>;
 void DOCUMENTED_IN;
+const DOCUMENTED_IN_PV = {
+  BASIS_WEIGHTS: "state-leg#popular-vote", DROPOFF_SHRINK_VOTES: "state-leg#popular-vote", UNOPPOSED_TURNOUT: "state-leg#popular-vote", OTHER_SHRINK_RACES: "state-leg#popular-vote",
+} satisfies Record<keyof typeof PC, string>;
+void DOCUMENTED_IN_PV;
+
+const fmtM = (m: number | null) => (m == null ? "—" : Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
+const signedPct = (v: number) => `${v >= 0 ? "+" : ""}${v.toFixed(1)}%`;
 
 function coverage() {
   let districts = 0, named = 0, winners = 0, incumbents = 0, uncontested = 0, noCount = 0;
@@ -175,14 +185,15 @@ export default function StateLegMethodology() {
             "margin = lean + β*(state) × E(2026) + INCUMBENCY_PTS × incumbent sign      incumbent sign from the 2026 field's marked incumbent",
             "σ²     = SIGMA² + STATE_SHOCK² + (β* × σ_E)²        P(D) = Φ(−margin / σ)",
             "chamber: 5,000 draws of a shared national shock N(0, σ_E) × β*, a shared chamber shock N(0, STATE_SHOCK), and N(0, SIGMA) per seat; seats not up hold their member; a field with one major party is decided unless a credible independent is on it (below)",
+            "headline seats = each seat's projected winner, summed (the chamber map's count); the 80% range and the control odds come from the draws",
             "decided seats: in a multi-member district a party keeps max(0, seats − the other party's nominees); a post (Idaho's A/B, Washington's 1/2) with one party's nominee is that party's; only the remaining seats are drawn",
           ]} note="Multi-member districts draw each seat left after the decided ones on the district's margin. A nominee on both major lines (Oregon and Vermont cross-nominate, New York fuses) is one person, in the party they sit for — or, for a newcomer, the party holding the seat — and a past race with one person on both lines is no D-vs-R contest and contributes no seat row. The chamber shock is what makes a chamber's seats move together beyond the national swing: a state-wide miss (a governor's race on the same ballot, a state issue, a redistricting the lean has not caught up with) lands on every seat at once, so chamber ranges are wider than independent seats would give. A seat with no major-party field (Nebraska's nonpartisan ballot, an empty list) has no projection, and a chamber whose unprojected seats could decide control reports no control odds." />
           <Constants rows={[
             { name: "TYPE_WEIGHTS", value: `P ${SC.TYPE_WEIGHTS.P} / L ${SC.TYPE_WEIGHTS.L}`, meaning: "Presidential rows against the seat's own races, renormalised over the types present in a year — the District TPL's President/House ratio. The sweep below finds the holdout flat between a 0.25 and a 0.40 seat share once the latest race is boosted, so the designed ratio is kept.", basis: "designed" },
             { name: "RECENT_SEAT_BOOST", value: `×${SC.RECENT_SEAT_BOOST}`, meaning: "The seat row's type weight in the latest year that has one, so the seat's most recent race carries half of that year's lean. State Navigate's emphasis on the last legislative result, tested here: MAE after incumbency 5.85 → 5.74 (2022) and 5.39 → 5.18 (2024), better than any uniform reweighting, flat from ×2 to ×3, worse by ×5.", basis: "calibrated", source: "scripts/stateLegBacktest.ts --sweep" },
-            { name: "INCUMBENCY_PTS", value: SC.INCUMBENCY_PTS, meaning: "Points a sitting state legislator is worth. The holdout fits 3.6 (2022) and 1.8 (2024); set at their rounded mean.", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
-            { name: "SIGMA", value: SC.SIGMA, meaning: "Seat-level noise beyond the national and chamber shocks: the holdout residual spread after the chamber shock is taken out (7.2 in 2022, 6.9 in 2024; the total spread is 8.0 and 7.7, robust 6.2 and 5.2, so the tails are heavy and the full spread is kept).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
-            { name: "STATE_SHOCK", value: SC.STATE_SHOCK, meaning: "Chamber-level shock shared by every seat of a chamber in a year: the spread of chamber-mean residuals less what independent seat noise alone would put there (method of moments over chambers with 10+ contested seats; 3.3 in 2022 and 3.5 in 2024).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "INCUMBENCY_PTS", value: SC.INCUMBENCY_PTS, meaning: "Points a sitting state legislator is worth. The holdout fits 3.7 (2022) and 1.8 (2024); set at their rounded mean.", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "SIGMA", value: SC.SIGMA, meaning: "Seat-level noise beyond the national and chamber shocks: the holdout residual spread after the chamber shock is taken out (7.4 in 2022, 6.9 in 2024; the total spread is 8.1 and 7.8, robust 6.3 and 5.2, so the tails are heavy and the full spread is kept).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "STATE_SHOCK", value: SC.STATE_SHOCK, meaning: "Chamber-level shock shared by every seat of a chamber in a year: the spread of chamber-mean residuals less what independent seat noise alone would put there (method of moments over chambers with 10+ contested seats; 3.4 in 2022 and 3.5 in 2024).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
             { name: "MIN_COVERAGE", value: SC.MIN_COVERAGE, meaning: "A relocated row needs contested old districts covering this share of today's population.", basis: "designed" },
             { name: "SIMS", value: SC.SIMS, meaning: "Draws per chamber.", basis: "fixed" },
           ] satisfies ConstantRow[]} />
@@ -232,6 +243,51 @@ export default function StateLegMethodology() {
         </Block>
       </Section>
 
+      <Section id="popular-vote" kicker="The model" title="The 2026 chamber popular vote"
+        lede={(() => {
+          const all = projectAllChamberPopularVotes();
+          const votes = all.reduce((s, c) => s + c.raw.votes, 0);
+          const imputed = all.reduce((s, c) => s + c.adjusted.imputed, 0);
+          const seats = all.reduce((s, c) => s + c.districts.length, 0);
+          return <>Each seat on the ballot gets a projected vote count, split between the parties by its district projection, and the chamber&apos;s seats add up two ways: <N>raw</N>, the aggregate the certified results will print, and <N>adjusted</N>, with every seat that lacks a major party imputed as the contested race it would have been — the rule the corrected past chamber margins apply with the presidential vote, here applied with the projection. Today: <N>{(votes / 1e6).toFixed(1)}M</N> votes over <N>{seats.toLocaleString()}</N> districts in <N>{all.length}</N> chambers, <N>{imputed.toLocaleString()}</N> of them imputed in the adjusted figure. Both numbers head every chamber page beside the corrected chamber margin.</>;
+        })()}>
+        <Block label="Votes">
+          <Formula lines={[
+            "level     = the state's 2026 top-of-the-ticket votes from the turnout estimate (/methodology/turnout: CVAP × blended midterm rates, ticket and competitiveness terms)",
+            "share_d   = the district's share of the chamber's 2024 presidential vote on today's lines (dataset A)",
+            "factor_d  = votes cast in the seat's race per seat per expected top-race vote: leg votes ÷ [seats × top votes(year) × share_d(that cycle's presidential election)]",
+            "            measured in each basis midterm from the seat's own contested race; on a superseded map, the population-weighted mean of the old districts (dataset C, coverage ≥ MIN_COVERAGE)",
+            "            blended on BASIS_WEIGHTS, shrunk toward the chamber's contested mean: (pres votes_d × own + DROPOFF_SHRINK_VOTES × mean) / (pres votes_d + DROPOFF_SHRINK_VOTES)",
+            "V_d       = level × share_d × factor_d × seats up      × UNOPPOSED_TURNOUT for a printed unopposed race or two nominees of one party; 0 where the state prints no count (FL, HI, OK, TX)",
+          ]} note="A multi-member district's votes are candidate votes, as the certified aggregates are: each voter casts several, so a chamber like Arizona's House or New Hampshire's runs past the ballots cast, and its factor says so. A seat with no contested race in either basis midterm takes the chamber mean per seat. The level is the turnout estimate's, so its range (each basis midterm alone) carries through to the chamber total." />
+        </Block>
+        <Block label="Split and sums">
+          <Formula lines={[
+            "contested    R = (100 − other + margin) / 2 · D = (100 − other − margin) / 2       margin = the district projection's (lean + β*·E + incumbency), points of the full vote",
+            "other        the chamber's other-party share over its last two elections in races of the same kind (a minor candidate on the ballot or not; one party with a minor candidate), shrunk toward the national figure with OTHER_SHRINK_RACES pseudo-races",
+            "one party    all but the other share to it; a modeled independent takes the absent party's place on their projected advantage",
+            "multi-member each seat's share of the district's votes on its own contest: a post with one party, a guaranteed seat, the rest on the margin",
+            "raw          Σ counted districts                 adjusted = Σ every seat as a contested two-party race: V_d at contested turnout, the projection's margin, the chamber's no-minor-candidate other share",
+          ]} note="The adjusted figure is the chamber's preference, not its ballot: Massachusetts prints D+58 in a House where 120 seats have no Republican, and the imputed sum lands near its lean. A seat with no lean (no presidential figure on its lines) stays as its raw race in both sums; a nonpartisan chamber (Nebraska) has no popular vote to project." />
+          <Constants rows={[
+            { name: "BASIS_WEIGHTS", value: Object.entries(PC.BASIS_WEIGHTS).sort((a, b) => Number(b[0]) - Number(a[0])).map(([y, w]) => `${y} ${w}`).join(" / "), meaning: `The turnout estimate's midterm weights (${Object.entries(MIDTERM_WEIGHTS).sort((a, b) => Number(b[0]) - Number(a[0])).map(([y, w]) => `${y} ${w}`).join(" / ")}): a seat's turnout factor from the last two midterms. Adding the 2020 presidential-year race to the 2022 holdout basis changed district error by less than 0.1 point, so the midterm basis is kept.`, basis: "designed" },
+            { name: "DROPOFF_SHRINK_VOTES", value: PC.DROPOFF_SHRINK_VOTES.toLocaleString(), meaning: "Presidential votes of the chamber mean a seat's own factor is weighed against. The 2022-from-2018 holdout's district-share error is lowest here (7.28% against 7.33% with no shrink and 8.18% with the chamber mean alone); chamber totals barely move.", basis: "calibrated", source: "scripts/stateLegPopularVoteBacktest.ts" },
+            { name: "UNOPPOSED_TURNOUT", value: PC.UNOPPOSED_TURNOUT, meaning: `Votes cast per seat in a printed unopposed race relative to a contested one in the same chamber-year: the median over ${PV.unopposed.chamberYears} chamber-years 2018–2024 with both kinds (${PV.unopposed.median}; mean ${PV.unopposed.mean}; Alaska near 1, Delaware's and Connecticut's 2022 near 0.65).`, basis: "calibrated", source: "scripts/stateLegPopularVoteBacktest.ts" },
+            { name: "OTHER_SHRINK_RACES", value: PC.OTHER_SHRINK_RACES, meaning: "Pseudo-races of the national other-share mean in each chamber's own figure, so a chamber with two such races does not set its own.", basis: "designed" },
+          ] satisfies ConstantRow[]} />
+        </Block>
+        <Block label="Holdout" meta={`generated ${PV.generatedAt} · scripts/stateLegPopularVoteBacktest.ts --emit`}>
+          <P>2022 predicted from 2018 alone on the chambers whose 2022 election ran on today&apos;s lines: the level from the turnout estimate&apos;s own backtest configuration, every seat&apos;s factor from its 2018 race relocated onto the 2022 lines, the split from the district projection with rows before 2022 and the fitted E(2022) on the year&apos;s actual ballot. The first row is the whole model; the second takes the actual top-of-the-ticket vote as the level and so measures the factor model alone — the gap between them is the turnout estimate&apos;s 2018→2022 miss. The 2024 row uses the live basis weights with the actual presidential vote as the level. Margin error is the raw chamber popular-vote margin against the certified aggregate; the worst of it is the projection&apos;s 2022 Florida miss, a chamber shock the margins share.</P>
+          <DataTable align="lrrrrrrrrr" head={["Basis → target", "Level", "Chambers", "Districts", "Votes MAPE (bias)", "Share MAPE", "Chamber MAPE (bias)", "Margin MAE (bias)", "Total MAPE (bias)"]} rows={[PV.live, ...PV.grid.filter((g) => g.shrink === PC.DROPOFF_SHRINK_VOTES && g.level === "actual"), PV.year2024].map((r) => [r.label.replace(/,.*$/, ""), r.level === "model" ? "turnout estimate" : "actual", r.chambers, r.districts.toLocaleString(), `${r.voteMape.toFixed(1)}% (${signedPct(r.voteBias)})`, `${r.shareMape.toFixed(1)}%`, `${r.chamberMape.toFixed(1)}% (${signedPct(r.chamberBias)})`, `${r.marginMae.toFixed(1)} (${r.marginBias >= 0 ? "+" : ""}${r.marginBias.toFixed(1)})`, `${r.totalMape.toFixed(1)}% (${signedPct(r.totalBias)})`])} maxWidth="max-w-5xl" />
+          <P>The shrink grid, 2022 from 2018 with the turnout estimate&apos;s level: how far a seat&apos;s own 2018 factor is trusted against the chamber mean.</P>
+          <DataTable align="rrrrr" head={["Shrink (pres votes)", "Votes MAPE", "Share MAPE", "Chamber MAPE", "Margin MAE"]} rows={PV.grid.filter((g) => g.level === "model").map((g) => [g.shrink >= 1e9 ? "chamber mean only" : g.shrink.toLocaleString(), `${g.voteMape.toFixed(2)}%`, `${g.shareMape.toFixed(2)}%`, `${g.chamberMape.toFixed(2)}%`, g.marginMae.toFixed(2)])} maxWidth="max-w-2xl" />
+          <P>Today&apos;s widest raw-to-adjusted gaps: {(() => {
+            const all = projectAllChamberPopularVotes().filter((c) => c.raw.margin != null && c.adjusted.margin != null);
+            return all.sort((a, b) => Math.abs(b.raw.margin! - b.adjusted.margin!) - Math.abs(a.raw.margin! - a.adjusted.margin!)).slice(0, 5).map((c) => `${c.abbr} ${c.chamber === "house" ? "House" : "Senate"} ${fmtM(c.raw.margin)} → ${fmtM(c.adjusted.margin)}`).join(" · ");
+          })()}.</P>
+        </Block>
+      </Section>
+
       <Section id="files" kicker="Reproducing it" title="Files and commands">
         <FilesAndCommands
           files={[
@@ -256,6 +312,7 @@ export default function StateLegMethodology() {
             { cmd: "npx tsx --conditions=react-server scripts/stateLegBacktest.ts --emit", does: "the projection holdout; writes data/stateLegValidation.ts" },
             { cmd: "npx tsx --conditions=react-server scripts/stateLegBacktest.ts --sweep --emit", does: "the seat-share and recent-row weight sweeps; writes data/stateLegTypeWeightSweep.ts" },
             { cmd: "npx tsx --conditions=react-server scripts/stateLegIndependentBacktest.ts --emit", does: "the independent rule's holdout; writes data/stateLegIndependentValidation.ts" },
+            { cmd: "npx tsx --conditions=react-server scripts/stateLegPopularVoteBacktest.ts --emit", does: "the chamber popular vote's holdout and the unopposed-turnout measurement; writes data/stateLegPopularVoteValidation.ts" },
             { cmd: "npx tsx --conditions=react-server scripts/buildStateLegAtlasSlices.ts [ST]", does: "rebuild the chamber slices the atlas pages read (projection included)" },
           ]}
         />

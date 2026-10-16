@@ -1,0 +1,1343 @@
+{
+ "state": "AR",
+ "cycle": 2026,
+ "source": "Arkansas Secretary of State ethics disclosures (itemized + non-itemized contributions)",
+ "dataThrough": "10/16/2026",
+ "house": {
+  "1": [
+   {
+    "name": "Nichols, Mark",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 14100,
+    "expenditures": 51823.39
+   }
+  ],
+  "2": [
+   {
+    "name": "Steimel, Trey",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 12124.8,
+    "expenditures": 31493.71
+   }
+  ],
+  "3": [
+   {
+    "name": "Huddleston, Carrie M.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 875,
+    "expenditures": 1497.65
+   },
+   {
+    "name": "Painter, Representative. Stetson C.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 31024.46,
+    "expenditures": 20422.3
+   }
+  ],
+  "4": [
+   {
+    "name": "Nazarenko, State Representative. Jason",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 29613.47,
+    "expenditures": 15399.31
+   }
+  ],
+  "5": [
+   {
+    "name": "Bishop, Mike",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 45540,
+    "expenditures": 33765.97
+   }
+  ],
+  "6": [
+   {
+    "name": "Rogers, Cody B.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18368.56,
+    "expenditures": 71351.49
+   }
+  ],
+  "7": [
+   {
+    "name": "McKenzie, Mr. . Brit",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 47630.46,
+    "expenditures": 48227.8
+   }
+  ],
+  "8": [
+   {
+    "name": "Armas, Brian D.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 35823.62,
+    "expenditures": 23321.62
+   }
+  ],
+  "9": [
+   {
+    "name": "Goff, Matthew M.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6650,
+    "expenditures": 16163.83
+   },
+   {
+    "name": "Gonzales Worthen, State Representative. Diana",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 51629.57,
+    "expenditures": 58633.71
+   }
+  ],
+  "10": [
+   {
+    "name": "Allen, Jacob D.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 16190.08,
+    "expenditures": 22443.68
+   },
+   {
+    "name": "McAlindon, Melinda \"Mindy\"",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 23312.68,
+    "expenditures": 37985.06
+   }
+  ],
+  "11": [
+   {
+    "name": "Hernandez, Rey",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7176,
+    "expenditures": 0
+   },
+   {
+    "name": "Burkes, Rebecca",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 14819.17,
+    "expenditures": 17167.72
+   }
+  ],
+  "12": [
+   {
+    "name": "Duke, Kimberly H.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17708.77,
+    "expenditures": 10942.95
+   }
+  ],
+  "13": [
+   {
+    "name": "Smith, Mitchell",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11425.01,
+    "expenditures": 9283.94
+   },
+   {
+    "name": "Richardson, Robert S.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 4700,
+    "expenditures": 19774.85
+   }
+  ],
+  "14": [
+   {
+    "name": "Heron, Timothy J., Jr",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 880,
+    "expenditures": 1068.6
+   },
+   {
+    "name": "Burkes, Nicholas \"Nick\"",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 4491.26,
+    "expenditures": 12499
+   }
+  ],
+  "15": [
+   {
+    "name": "Holtmeyer, Daniel",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 51048.97,
+    "expenditures": 26768.65
+   },
+   {
+    "name": "Carr, State Representative. John P.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 14033.73,
+    "expenditures": 8266.64
+   }
+  ],
+  "16": [
+   {
+    "name": "Hinds, Letisha",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3626.55,
+    "expenditures": 2309.29
+   },
+   {
+    "name": "Underwood, Mr. Kendon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 55085.2,
+    "expenditures": 26777.34
+   }
+  ],
+  "17": [
+   {
+    "name": "Torres, Randy K.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 46977.22,
+    "expenditures": 33394.24
+   }
+  ],
+  "18": [
+   {
+    "name": "Lundstrum, State Representative. Robin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 128907.75,
+    "expenditures": 10109.59
+   }
+  ],
+  "19": [
+   {
+    "name": "Atkinson, James R.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 63703.2,
+    "expenditures": 51976.58
+   },
+   {
+    "name": "Unger, Representative. Steve",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 71989,
+    "expenditures": 13954
+   }
+  ],
+  "20": [
+   {
+    "name": "Deitchler, Max",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 83453.08,
+    "expenditures": 6970.2
+   }
+  ],
+  "21": [
+   {
+    "name": "Clowney, Nicole",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 54338.46,
+    "expenditures": 3331.25
+   }
+  ],
+  "22": [
+   {
+    "name": "Whitaker, Representative. David",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16225.61,
+    "expenditures": 14921.25
+   }
+  ],
+  "23": [
+   {
+    "name": "Marsh, Laura",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 200,
+    "expenditures": 938.55
+   },
+   {
+    "name": "Moore, State Representative. Kendra A.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 32915.71,
+    "expenditures": 7599.37
+   }
+  ],
+  "24": [
+   {
+    "name": "Intchauspe, Mr. Ryan N.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2066.45,
+    "expenditures": 7188.89
+   },
+   {
+    "name": "Fite, Edna C.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 14400,
+    "expenditures": 38141.2
+   }
+  ],
+  "25": [
+   {
+    "name": "King, Courtney A.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6439.95,
+    "expenditures": 6187.7
+   },
+   {
+    "name": "Puryear, State Representative. Chad",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 49478.73,
+    "expenditures": 21264.8
+   }
+  ],
+  "26": [
+   {
+    "name": "Eaton, James P.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 29238.64,
+    "expenditures": 7366.71
+   }
+  ],
+  "27": [
+   {
+    "name": "Walker, Steven",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 2700,
+    "expenditures": 4930
+   }
+  ],
+  "28": [
+   {
+    "name": "Schulz, Mr. . Bart",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 37539.79,
+    "expenditures": 49688.86
+   }
+  ],
+  "29": [
+   {
+    "name": "Morgan, Deonna",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 100,
+    "expenditures": 498
+   },
+   {
+    "name": "McClure, Mr. Rick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 23277.82,
+    "expenditures": 20321.57
+   }
+  ],
+  "30": [
+   {
+    "name": "Longmire, Joshua R.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 59593.9,
+    "expenditures": 61206.57
+   }
+  ],
+  "31": [
+   {
+    "name": "Gazaway, Mr. . Jimmy",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 31803.97,
+    "expenditures": 13577.4
+   }
+  ],
+  "32": [
+   {
+    "name": "Askeland, Erika J.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13853.52,
+    "expenditures": 11210.74
+   },
+   {
+    "name": "Ladyman, Jack R.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30016.61,
+    "expenditures": 33181.6
+   }
+  ],
+  "33": [
+   {
+    "name": "Milligan, Jon R.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17923.55,
+    "expenditures": 0
+   }
+  ],
+  "34": [
+   {
+    "name": "Middlebrook, Rev. Michael L.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1050,
+    "expenditures": 73402.98
+   },
+   {
+    "name": "Carr, Joey L.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 117199.27,
+    "expenditures": 28895.45
+   }
+  ],
+  "35": [
+   {
+    "name": "Willis, Mrs. Audrey P.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 40139.31,
+    "expenditures": 29057.12
+   },
+   {
+    "name": "Thorne Jr, Mr. Robert E.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 14250,
+    "expenditures": 10829.95
+   }
+  ],
+  "36": [
+   {
+    "name": "Rye , Johnny",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 14110.99,
+    "expenditures": 9239.96
+   },
+   {
+    "name": "Carter, Shamal C.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8805.13,
+    "expenditures": 13441.77
+   }
+  ],
+  "37": [
+   {
+    "name": "Hollowell, Representative. Steve",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 63492.48,
+    "expenditures": 13805.53
+   }
+  ],
+  "38": [
+   {
+    "name": "Tosh, Crandall D.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 73938.34,
+    "expenditures": 7392.32
+   }
+  ],
+  "39": [
+   {
+    "name": "Long, Wayne",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 38119.74,
+    "expenditures": 38730
+   }
+  ],
+  "40": [
+   {
+    "name": "Pearce, Shad",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 25078.06,
+    "expenditures": 21137.24
+   }
+  ],
+  "41": [
+   {
+    "name": "Brown, Alyssa R.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 21714.55,
+    "expenditures": 10096.12
+   }
+  ],
+  "42": [
+   {
+    "name": "Riddle, Jeremy",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 120994.81,
+    "expenditures": 153636.03
+   }
+  ],
+  "43": [
+   {
+    "name": "Beck, Rick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 22392.83,
+    "expenditures": 10230
+   }
+  ],
+  "44": [
+   {
+    "name": "Teeter, Bill",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 27895.23,
+    "expenditures": 6166.92
+   }
+  ],
+  "45": [
+   {
+    "name": "Hobbs, Debra M.",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 4535.4,
+    "expenditures": 1260.42
+   },
+   {
+    "name": "Pilkington, State Representative. Aaron M.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17052.77,
+    "expenditures": 10778.32
+   }
+  ],
+  "46": [
+   {
+    "name": "Fletcher, Tonya M.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 26491.17,
+    "expenditures": 16643.65
+   }
+  ],
+  "47": [
+   {
+    "name": "Johnson, Mr. . Lee",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 32922.49,
+    "expenditures": 27051.2
+   }
+  ],
+  "48": [
+   {
+    "name": "Rose, State Representative. Ryan A.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 93733.43,
+    "expenditures": 30342.7
+   }
+  ],
+  "49": [
+   {
+    "name": "Richardson, James \"Jay\" D.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 32899.83,
+    "expenditures": 6129.4
+   }
+  ],
+  "50": [
+   {
+    "name": "Peer, Wendy",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7325,
+    "expenditures": 6419.79
+   },
+   {
+    "name": "Gramlich, Zachary E.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 56700.96,
+    "expenditures": 69149.89
+   }
+  ],
+  "51": [
+   {
+    "name": "Crawford, Cindy",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 33578.39,
+    "expenditures": 26011.76
+   },
+   {
+    "name": "Udouj-Kutchka, Mrs. Jane-Ellen",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3488.35,
+    "expenditures": 7371.31
+   }
+  ],
+  "52": [
+   {
+    "name": "Montgomery, Brent",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 68506.45,
+    "expenditures": 8767.62
+   }
+  ],
+  "53": [
+   {
+    "name": "Lewter, Dr. Jennifer",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4488.85,
+    "expenditures": 2403.87
+   },
+   {
+    "name": "Duffield, Mr. . Matt",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 336546.09,
+    "expenditures": 259943.35
+   }
+  ],
+  "54": [
+   {
+    "name": "Corbitt, Mr. Douglas D.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 850,
+    "expenditures": 3300
+   },
+   {
+    "name": "Bentley, State Representative. Mary",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 24897.98,
+    "expenditures": 33683.42
+   }
+  ],
+  "55": [
+   {
+    "name": "Nations, Cynthia A.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20713.73,
+    "expenditures": 12686.02
+   },
+   {
+    "name": "Brown, Matthew",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 107996.64,
+    "expenditures": 135835.23
+   }
+  ],
+  "56": [
+   {
+    "name": "Magie, Stephen K.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 30076.91,
+    "expenditures": 4490.21
+   },
+   {
+    "name": "Brannan, Mark G.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18141.89,
+    "expenditures": 21773.04
+   }
+  ],
+  "57": [
+   {
+    "name": "Cooper, Cameron",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11573,
+    "expenditures": 45724.45
+   }
+  ],
+  "58": [
+   {
+    "name": "Fry , Jocelyn  J.",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "Eaves, Mr. . Les",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 68853.62,
+    "expenditures": 48141.37
+   }
+  ],
+  "59": [
+   {
+    "name": "Wooten, Jim",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15500,
+    "expenditures": 32571.03
+   }
+  ],
+  "60": [
+   {
+    "name": "Keown, Beverly C.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9323.55,
+    "expenditures": 6774.33
+   },
+   {
+    "name": "Medlin, Quendy G.",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 21829.85,
+    "expenditures": 19896.38
+   },
+   {
+    "name": "Lynch, Representative. Roger D.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6000,
+    "expenditures": 8832.54
+   }
+  ],
+  "61": [
+   {
+    "name": "Sheeks, Garrett",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 2350,
+    "expenditures": 557.96
+   },
+   {
+    "name": "Moore, Mr. . Jeremiah",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 55984.47,
+    "expenditures": 26912.32
+   }
+  ],
+  "62": [
+   {
+    "name": "Miller, DEXTER R.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2200,
+    "expenditures": 5302.98
+   },
+   {
+    "name": "McElroy, Mark D.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 22022.45,
+    "expenditures": 25353.81
+   }
+  ],
+  "63": [
+   {
+    "name": "Barnett, Hon. Lincoln  E.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5798.36,
+    "expenditures": 0
+   }
+  ],
+  "64": [
+   {
+    "name": "Ferguson, Representative. Kenneth B.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 48902.05,
+    "expenditures": 22170.34
+   }
+  ],
+  "65": [
+   {
+    "name": "Barnes, Glenn D., Sr",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 14026,
+    "expenditures": 1100
+   }
+  ],
+  "66": [
+   {
+    "name": "Perry, Mark W.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 27910.07,
+    "expenditures": 12275
+   }
+  ],
+  "67": [
+   {
+    "name": "Eberly, Andrew C.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 39264.49,
+    "expenditures": 11786.28
+   },
+   {
+    "name": "Brown, Representative. Karilyn",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 66368.69,
+    "expenditures": 23510.69
+   }
+  ],
+  "68": [
+   {
+    "name": "Evans, Representative. Brian S.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 139926.15,
+    "expenditures": 57531.89
+   }
+  ],
+  "69": [
+   {
+    "name": "Hunter, Joel D.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "Ray, David",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 160484,
+    "expenditures": 35426.35
+   }
+  ],
+  "70": [
+   {
+    "name": "Renshaw, Bryan",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 104656.68,
+    "expenditures": 52675.78
+   },
+   {
+    "name": "Holladay, Alexander B.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 74030.83,
+    "expenditures": 33703.47
+   }
+  ],
+  "71": [
+   {
+    "name": "Early-Mayes, Mrs. Cassandra D.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20050,
+    "expenditures": 24953.1
+   },
+   {
+    "name": "Bright, Stephen  D.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 36269.03,
+    "expenditures": 12889.53
+   }
+  ],
+  "72": [
+   {
+    "name": "Dokes, Dr. Talesha",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9116.01,
+    "expenditures": 2697.87
+   }
+  ],
+  "73": [
+   {
+    "name": "Collins, Andrew",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 170797.81,
+    "expenditures": 52571.61
+   }
+  ],
+  "74": [
+   {
+    "name": "McCullough, Tippi",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 76519.94,
+    "expenditures": 22371.76
+   }
+  ],
+  "75": [
+   {
+    "name": "Sadler, Hunter",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 66900.89,
+    "expenditures": 14459.07
+   },
+   {
+    "name": "Hudson, Representative. Ashley",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 73543.32,
+    "expenditures": 58857.13
+   }
+  ],
+  "76": [
+   {
+    "name": "Ceja, Isbac I.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "Springer, Representative . Joy C.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15670.85,
+    "expenditures": 9466.73
+   }
+  ],
+  "77": [
+   {
+    "name": "Person, Steven",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 27354,
+    "expenditures": 13395.3
+   }
+  ],
+  "78": [
+   {
+    "name": "Brooks, State Representative. Keith",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 20052.32,
+    "expenditures": 27300.89
+   }
+  ],
+  "79": [
+   {
+    "name": "Mason, Michael D.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17275,
+    "expenditures": 12340.69
+   }
+  ],
+  "80": [
+   {
+    "name": "Ennett, State Representative. Denise J.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 17805.63,
+    "expenditures": 26984.48
+   }
+  ],
+  "81": [
+   {
+    "name": "Thomas-Littlejohn, Gina R.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2948.63,
+    "expenditures": 1812.45
+   },
+   {
+    "name": "Hawk, Mr. . Robert J., II",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 52217.45,
+    "expenditures": 40694.97
+   }
+  ],
+  "82": [
+   {
+    "name": "Furman, Representative. Tony",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 33863.2,
+    "expenditures": 74071.34
+   }
+  ],
+  "83": [
+   {
+    "name": "Childress, State Representative. Paul A.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 128176.43,
+    "expenditures": 4662
+   }
+  ],
+  "84": [
+   {
+    "name": "Warren, Les A.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 84369.79,
+    "expenditures": 42173.59
+   }
+  ],
+  "85": [
+   {
+    "name": "McGrew, Representative. Richard",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 16954.06,
+    "expenditures": 9272.41
+   }
+  ],
+  "86": [
+   {
+    "name": "Maddox, Mr. . John",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 32088.76,
+    "expenditures": 29710.34
+   }
+  ],
+  "87": [
+   {
+    "name": "Vaught, DeAnn",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 46685.09,
+    "expenditures": 57157.02
+   }
+  ],
+  "88": [
+   {
+    "name": "Henley, Mrs. Dolly",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 65119.85,
+    "expenditures": 43775.06
+   }
+  ],
+  "89": [
+   {
+    "name": "Gonzales, Mr. . Justin R.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 27186.55,
+    "expenditures": 20200.63
+   }
+  ],
+  "90": [
+   {
+    "name": "womack, william r.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 8277.39,
+    "expenditures": 3709
+   }
+  ],
+  "91": [
+   {
+    "name": "Cozart, State Representative. Bruce A.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 50772.28,
+    "expenditures": 11092.15
+   }
+  ],
+  "92": [
+   {
+    "name": "Creekmore, Dawn",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6775,
+    "expenditures": 54923.55
+   }
+  ],
+  "93": [
+   {
+    "name": "Holcomb, Mike",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 16949,
+    "expenditures": 12165.2
+   }
+  ],
+  "94": [
+   {
+    "name": "Day, Dr. John  K., Ph.D.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 87773.02,
+    "expenditures": 131148.82
+   }
+  ],
+  "95": [
+   {
+    "name": "Beaty, Honorable. Howard M., Jr.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 36962.26,
+    "expenditures": 59808.48
+   }
+  ],
+  "96": [
+   {
+    "name": "Barker, Sonia E.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 22343.16,
+    "expenditures": 11786
+   }
+  ],
+  "97": [
+   {
+    "name": "Andrews, Mr. Jim F., Jr.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 66495,
+    "expenditures": 40241.81
+   }
+  ],
+  "98": [
+   {
+    "name": "Andrews, Representative. Wade",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 27999.53,
+    "expenditures": 14189.73
+   }
+  ],
+  "99": [
+   {
+    "name": "Rankin Baker, Dr. . Beth A.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 47200,
+    "expenditures": 3306
+   }
+  ],
+  "100": [
+   {
+    "name": "Dalby, Carol",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 81417.29,
+    "expenditures": 18653.67
+   }
+  ]
+ },
+ "senate": {
+  "2": [
+   {
+    "name": "Stone, Mr. Matthew T.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 81375,
+    "expenditures": 71942.74
+   }
+  ],
+  "7": [
+   {
+    "name": "Clark, Alan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 60262,
+    "expenditures": 112059.69
+   }
+  ],
+  "9": [
+   {
+    "name": "Phillips, MR. Kenneth F., JR",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18835.85,
+    "expenditures": 24283.65
+   },
+   {
+    "name": "McGruder, Mr . Jessie",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 39912.84,
+    "expenditures": 4253.22
+   }
+  ],
+  "10": [
+   {
+    "name": "Caldwell, Ronald",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 269575,
+    "expenditures": 384507.67
+   }
+  ],
+  "11": [
+   {
+    "name": "Hill, Mr. . Hiram R., JR",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 115593.14,
+    "expenditures": 105484.62
+   }
+  ],
+  "13": [
+   {
+    "name": "Grigsby Sweatman, Allison",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 44975.82,
+    "expenditures": 35060.89
+   },
+   {
+    "name": "ACHOR, BRANDON",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 310948.63,
+    "expenditures": 409345.74
+   }
+  ],
+  "14": [
+   {
+    "name": "Tucker, Everett C.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 35165.93,
+    "expenditures": 99277.37
+   }
+  ],
+  "15": [
+   {
+    "name": "Shephard, State Representative. Tara",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 42270.52,
+    "expenditures": 78542.48
+   }
+  ],
+  "16": [
+   {
+    "name": "Wright, Rodney",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 76058.76,
+    "expenditures": 74471.2
+   },
+   {
+    "name": "Irby, Joshua P.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5975.37,
+    "expenditures": 3839.41
+   }
+  ],
+  "21": [
+   {
+    "name": "Wooldridge, Jeremy",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 468437.64,
+    "expenditures": 504484.61
+   }
+  ],
+  "24": [
+   {
+    "name": "Irvin, Melissa T.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 57429.45,
+    "expenditures": 47646.26
+   }
+  ],
+  "27": [
+   {
+    "name": "Guzman, Mr. Eduardo",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15162.11,
+    "expenditures": 9549.61
+   },
+   {
+    "name": "Boyd, Mr. Phillip \"Justin\"",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 35850,
+    "expenditures": 122523.11
+   }
+  ],
+  "28": [
+   {
+    "name": "King, Bryan B.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 117817,
+    "expenditures": 127504.27
+   }
+  ],
+  "30": [
+   {
+    "name": "Garner, Mrs. Denise F.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 38950,
+    "expenditures": 14070.11
+   }
+  ],
+  "31": [
+   {
+    "name": "Penzo, Mr. Clinton J.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 7500,
+    "expenditures": 24081.29
+   }
+  ],
+  "32": [
+   {
+    "name": "Bryant, Mr. . Joshua P.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6300,
+    "expenditures": 42403.13
+   }
+  ],
+  "35": [
+   {
+    "name": "Dees, Senator. Tyler",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 52901.63,
+    "expenditures": 70331.62
+   }
+  ]
+ }
+}

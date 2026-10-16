@@ -1,0 +1,336 @@
+{
+ "state": "NE",
+ "cycle": 2018,
+ "source": "Nebraska Accountability and Disclosure Commission legacy data (receipts per campaign statement)",
+ "dataThrough": "12/31/2018",
+ "senate": {
+  "2": [
+   {
+    "name": "ROBERT CLEMENTS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 119386.84,
+    "expenditures": null
+   },
+   {
+    "name": "SUSAN LORENCE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 77788.26,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "ROBERT HILKEMANN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 108424.2,
+    "expenditures": null
+   },
+   {
+    "name": "SHANNON CORYELL",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 21023.9,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "MACHAELA CAVANAUGH",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 190862.39,
+    "expenditures": null
+   },
+   {
+    "name": "THERESA THIBODEAU",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 272010.73,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "MINA DAVIS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 19707.47,
+    "expenditures": null
+   },
+   {
+    "name": "MEGAN HUNT",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 135072.26,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "WENDY DEBOER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 185230.53,
+    "expenditures": null
+   },
+   {
+    "name": "MATTHEW DEAVER",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 173303.51,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "STEVEN LATHROP",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 364302.94,
+    "expenditures": null
+   },
+   {
+    "name": "MERV RIEPE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 258984.51,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "JEFFREY PARRIS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 35196.75,
+    "expenditures": null
+   },
+   {
+    "name": "JOHN ARCH",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 146771.8,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "CHUCK HASSEBROOK",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 250328.03,
+    "expenditures": null
+   },
+   {
+    "name": "BENJAMIN HANSEN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 224908.22,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "BRETT LINDSTROM",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 214097.69,
+    "expenditures": null
+   },
+   {
+    "name": "SCOTT WINKLER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 86416.89,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "JOHN MCCOLLISTER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 221866.8,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "MICHAEL MOSER",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 115731.31,
+    "expenditures": null
+   },
+   {
+    "name": "DOUGLAS OERTWICH",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 38022,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "MARK KOLTERMAN",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 108568.52,
+    "expenditures": null
+   },
+   {
+    "name": "STEPHANIE NANTKES",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15117.64,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "MATTHEW HANSEN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 113072.84,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "PATRICIA PANSING BROOKS",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 131987.63,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "MYRON DORN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 86512.73,
+    "expenditures": null
+   },
+   {
+    "name": "DONALD SCHULLER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 80724.26,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "LAURA EBKE",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 319302.98,
+    "expenditures": null
+   },
+   {
+    "name": "THOMAS BRANDT",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 111540.5,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "CURTIS FRIESEN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 49879.29,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "MATTHEW WILLIAMS",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 108674.84,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "MARSHA FANGMEYER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 77097.65,
+    "expenditures": null
+   },
+   {
+    "name": "DAVID MURMAN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 80320,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "KEITH KUBE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 44528,
+    "expenditures": null
+   },
+   {
+    "name": "TIMOTHY GRAGERT",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 49126.99,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "MICHAEL GROENE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 65020.71,
+    "expenditures": null
+   },
+   {
+    "name": "JUDY PEDERSON",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 114393.09,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "DANIEL HUGHES",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 102497.51,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "ADAM MORFELD",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 115498.76,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "JOHN STINNER",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 107500.87,
+    "expenditures": null
+   }
+  ]
+ }
+}

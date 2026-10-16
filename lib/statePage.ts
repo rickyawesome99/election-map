@@ -114,8 +114,8 @@ export type ChamberBlock = {
   /** "All 203 seats up", "25 of 50 seats up · even-numbered districts", or null when nothing is on the ballot. */
   upText: string | null;
   upcoming: UpcomingChamber | null;
-  expectedDem: number | null;
-  expectedRep: number | null;
+  projDem: number | null;
+  projRep: number | null;
   projTotal: number | null;
   pDem: number | null;
   unprojected: number;
@@ -264,8 +264,9 @@ function chamberBlock(state: StateInfo, chamber: Chamber, unicameral: boolean): 
     totalSeats: s.totalSeats,
     upText,
     upcoming: u,
-    expectedDem: p ? p.expectedDem : null,
-    expectedRep: p ? p.expectedRep : null,
+    // The headline count: each seat's projected winner, summed (as on the chamber map).
+    projDem: p ? p.favored.dem : null,
+    projRep: p ? p.favored.rep : null,
     projTotal,
     pDem: p?.pDemControl ?? null,
     unprojected: p?.unprojected ?? 0,

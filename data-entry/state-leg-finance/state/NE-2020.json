@@ -1,0 +1,359 @@
+{
+ "state": "NE",
+ "cycle": 2020,
+ "source": "Nebraska Accountability and Disclosure Commission legacy data (receipts per campaign statement)",
+ "dataThrough": "12/31/2020",
+ "senate": {
+  "1": [
+   {
+    "name": "JANET PALMTAG",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 256998.46,
+    "expenditures": null
+   },
+   {
+    "name": "JULIE SLAMA",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 252989.1,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "CAROL BLOOD",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 216072.19,
+    "expenditures": null
+   },
+   {
+    "name": "RICHARD HOLDCROFT",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 140934,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "MICHAEL MCDONNELL",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 148754.41,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "ANTHONY (TONY) VARGAS",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 249258.65,
+    "expenditures": null
+   },
+   {
+    "name": "JORGE SOTOLONGO",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 22487.31,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "MARQUE SNOW",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 160956.08,
+    "expenditures": null
+   },
+   {
+    "name": "JOHN CAVANAUGH",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 141915.67,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "FREDDIE (FRED) CONLEY",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 80072.81,
+    "expenditures": null
+   },
+   {
+    "name": "TERRELL MCKINNEY",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 72492.91,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "JUSTIN WAYNE",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 68234.8,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "DAVID ROGERS",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 32022.34,
+    "expenditures": null
+   },
+   {
+    "name": "LYNNE WALZ",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 206753.5,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "SHERYL LINDAU",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 41859.53,
+    "expenditures": null
+   },
+   {
+    "name": "JONI ALBRECHT",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 136797.83,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "MICHAEL FLOOD",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 263386.53,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "MICHAEL HILGERS",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 267127.86,
+    "expenditures": null
+   },
+   {
+    "name": "BRODEY WEBER",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 100430.66,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "BRUCE BOSTELMAN",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 155491.82,
+    "expenditures": null
+   },
+   {
+    "name": "HELEN RAIKES",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 179898.19,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "SUZANNE GEIST",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 201779.31,
+    "expenditures": null
+   },
+   {
+    "name": "STEPHANY PLEASANT",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 21527.09,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "ANNA WISHART",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 215899.96,
+    "expenditures": null
+   },
+   {
+    "name": "BRENDA BICKFORD",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 33108.76,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "ELIOT J BOSTAR",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 497797.22,
+    "expenditures": null
+   },
+   {
+    "name": "JACOB CAMPBELL",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 283182.54,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "RICHARD PAHLS",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 160409.03,
+    "expenditures": null
+   },
+   {
+    "name": "TIMOTHY ROYERS",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 138364,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "JOHN (STEVE) HALLORAN",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 23787.73,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "RAYMOND AGUILAR",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 165850.95,
+    "expenditures": null
+   },
+   {
+    "name": "DANIEL QUICK",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 292873.46,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "JOHN LOWE",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 128701.63,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "LOU ANN LINEHAN",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 285723.03,
+    "expenditures": null
+   },
+   {
+    "name": "ALLISON HEIMES",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 62638.04,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "THOMAS BRIESE",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 19214.97,
+    "expenditures": null
+   }
+  ],
+  "43": [
+   {
+    "name": "THOMAS BREWER",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 223233.16,
+    "expenditures": null
+   },
+   {
+    "name": "TANYA STORER",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 82018.27,
+    "expenditures": null
+   }
+  ],
+  "45": [
+   {
+    "name": "RITA SANDERS",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 208759.63,
+    "expenditures": null
+   },
+   {
+    "name": "SUSAN HESTER",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 185322.11,
+    "expenditures": null
+   }
+  ],
+  "47": [
+   {
+    "name": "(HENRY) STEVE ERDMAN",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 24520.76,
+    "expenditures": null
+   }
+  ],
+  "49": [
+   {
+    "name": "JENNIFER DAY",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 166147.64,
+    "expenditures": null
+   },
+   {
+    "name": "ANDREW LA GRONE",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 342774.09,
+    "expenditures": null
+   }
+  ]
+ }
+}

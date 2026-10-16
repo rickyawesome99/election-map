@@ -1,0 +1,614 @@
+{
+ "state": "DE",
+ "cycle": 2024,
+ "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+ "dataThrough": "12/31/2024",
+ "house": {
+  "1": [
+   {
+    "name": "Friends of Nnamdi Chukwuocha - State Representative 1st",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 13585,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "Friends Of Stephanie T. Bolden",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 32572.5,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "Committee to Elect Josue Ortega",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 21868.45,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Friends to Elect Jeff Hilovsky",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30280,
+    "expenditures": null
+   },
+   {
+    "name": "Lindner4Delaware",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13036,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Friends of Kendra Johnson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 18937.07,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Friends for Debra Heffernan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 80624.23,
+    "expenditures": null
+   },
+   {
+    "name": "Citizens for Michael Krawczuk",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 17963.73,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Larry Lambert for State Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 14054.98,
+    "expenditures": null
+   },
+   {
+    "name": "Shane Stoneman for District 7 State Representative",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2359.68,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Neighbors for Moore",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16226.55,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Chris Beronio",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 19152.79,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Friends of Kevin Hensley",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 93635.44,
+    "expenditures": null
+   },
+   {
+    "name": "Terrell A. Williams for Delaware",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 18650,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Friends of Melanie Ross Levin",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 90503,
+    "expenditures": null
+   },
+   {
+    "name": "Burdge for Change",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15075.64,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Friends for Jeff Spiegelman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 14895.5,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Krista Griffith For Delaware",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 75266.4,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Steve Pickering",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18005.71,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "DeShanna Neal for District 13",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 20458.36,
+    "expenditures": null
+   },
+   {
+    "name": "Daniel Rappa for Delaware",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 21299.15,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Friends of Claire Snyder-Hall for Delaware",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 96681.82,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Mike Simpler",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 36252.72,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Citizens for Frank Cooke",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 8200,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "Minor-Brown for 17th District",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 36544.4,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Friends of Sophie Phillips",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16732.33,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Kim Williams for State Representative",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 53610,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Friends For Stell Parker Selby",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 54486.68,
+    "expenditures": null
+   },
+   {
+    "name": "Nikki Miller for Delaware",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 45665,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Elect Frank Burns Change for the 21st",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 62648.99,
+    "expenditures": null
+   },
+   {
+    "name": "Brenda Mennella For House",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18767.96,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Friends of Monica Beard",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 67148.12,
+    "expenditures": null
+   },
+   {
+    "name": "Mike Smith for Delaware",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 87843,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Friends of Mara Gorman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 29383,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Friends For Joan Godwin",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9558.78,
+    "expenditures": null
+   },
+   {
+    "name": "Campaign to Elect Osienski",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 35730,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Friends of Cyndie Romer",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 37722.01,
+    "expenditures": null
+   },
+   {
+    "name": "Friends Of David Hansberger",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3504.1,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Committee to Elect Madinah Wilson-Anton",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 75287.69,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Friends of Eric Morrison",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 55170.56,
+    "expenditures": null
+   },
+   {
+    "name": "Griffing For Delaware",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6593.66,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Committee to Elect Bill Carson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 56672,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Friends of William Bush",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 134978,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Anthony Egipciaco Jr",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 13404.1,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Friends for Morris",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7850,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "Friends of Sean Lynn",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7695,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Friends of Kerri Evelyn Harris",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 38958,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Amy Spampinato",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 13505,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "Friends for Charles Postles",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 10940,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Yearick for Delaware",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 67894.62,
+    "expenditures": null
+   },
+   {
+    "name": "Commitee to Elect Tracey Miller",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 42897.9,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "Friends For Vanderwende",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 7450,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "Committee to Elect Bryan Shupe",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 39335,
+    "expenditures": null
+   },
+   {
+    "name": "Rony Baltazar-Lopez for Delaware",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 31211,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "Committee To Elect Valerie Jones Giltner",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 39906,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Friends of Ron Gray",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 10050,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "Friends to Elect Danny Short",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6695,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Tim Dukes for State Representative",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 9350,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "Friends of Tom Brett",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 24420.49,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Rich Collins",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 34776.36,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "2": [
+   {
+    "name": "Darius Brown for State Senate",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 24850,
+    "expenditures": null
+   },
+   {
+    "name": "Jon Roe for senate district 2",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 350,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "Friends of Elizabeth Lockman",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 38175.66,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Friends of Laura Sturgeon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 63170,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Friends For Kim Hoey Stevenson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 95186.06,
+    "expenditures": null
+   },
+   {
+    "name": "Friends For Russ Huxtable",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 135489.24,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Friends for Hansen",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 18917.98,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Townsend for Delaware Senate",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 120556.66,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Eric Buckson for State Senate",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 40344.24,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "Committee To Elect Paradee",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 49100,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Friends to Elect Dave Wilson II",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 40195,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Richardson for State Senate",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 8144.01,
+    "expenditures": null
+   }
+  ]
+ }
+}

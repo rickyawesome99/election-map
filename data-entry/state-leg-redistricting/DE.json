@@ -1,1337 +1,6 @@
 {
- "house": {
-  "current": {
-   "1": {
-    "contributors": [
-     {
-      "areaPct": 89.4,
-      "key": "1",
-      "popPct": 86.1
-     },
-     {
-      "areaPct": 10.6,
-      "key": "4",
-      "popPct": 13.9
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 21827,
-    "pres2020New": -80.2,
-    "pres2020Old": -81.3,
-    "retainedAreaPct": 89.4,
-    "retainedPopPct": 86.1,
-    "text": "Kept 86% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-4 (14%). Entirely in New Castle County. 2020 presidential margin D+81.3 on the 2016\u20132020 lines \u2192 D+80.2 on the current lines.",
-    "toEra": "current"
-   },
-   "10": {
-    "contributors": [
-     {
-      "areaPct": 60.5,
-      "key": "10",
-      "popPct": 74.8
-     },
-     {
-      "areaPct": 21.0,
-      "key": "7",
-      "popPct": 23.5
-     },
-     {
-      "areaPct": 18.6,
-      "key": "12",
-      "popPct": 1.7
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23420,
-    "pres2020New": -28.2,
-    "pres2020Old": -31.5,
-    "retainedAreaPct": 60.5,
-    "retainedPopPct": 74.8,
-    "text": "Kept 75% of its population from the 2016\u20132020 HD-10; gained the rest from the old HD-7 (24%), the old HD-12 (2%). Entirely in New Castle County. 2020 presidential margin D+31.5 on the 2016\u20132020 lines \u2192 D+28.2 on the current lines.",
-    "toEra": "current"
-   },
-   "11": {
-    "contributors": [
-     {
-      "areaPct": 87.3,
-      "key": "11",
-      "popPct": 90.7
-     },
-     {
-      "areaPct": 5.6,
-      "key": "29",
-      "popPct": 6.7
-     },
-     {
-      "areaPct": 7.1,
-      "key": "9",
-      "popPct": 2.6
-     }
-    ],
-    "counties": [
-     {
-      "county": "Kent",
-      "popPct": 60.2
-     },
-     {
-      "county": "New Castle",
-      "popPct": 39.8
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 28873,
-    "pres2020New": 9.1,
-    "pres2020Old": 10.7,
-    "retainedAreaPct": 87.3,
-    "retainedPopPct": 90.7,
-    "text": "Kept 91% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-29 (7%), the old HD-9 (3%). Spans Kent, New Castle counties. 2020 presidential margin R+10.7 on the 2016\u20132020 lines \u2192 R+9.1 on the current lines.",
-    "toEra": "current"
-   },
-   "12": {
-    "contributors": [
-     {
-      "areaPct": 79.7,
-      "key": "12",
-      "popPct": 62.5
-     },
-     {
-      "areaPct": 20.2,
-      "key": "4",
-      "popPct": 37.5
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 26449,
-    "pres2020New": -29.9,
-    "pres2020Old": -22.9,
-    "retainedAreaPct": 79.7,
-    "retainedPopPct": 62.5,
-    "text": "Kept 62% of its population from the 2016\u20132020 HD-12; gained the rest from the old HD-4 (38%). Entirely in New Castle County. 2020 presidential margin D+22.9 on the 2016\u20132020 lines \u2192 D+29.9 on the current lines.",
-    "toEra": "current"
-   },
-   "13": {
-    "contributors": [
-     {
-      "areaPct": 72.5,
-      "key": "13",
-      "popPct": 88.7
-     },
-     {
-      "areaPct": 24.8,
-      "key": "4",
-      "popPct": 9.7
-     },
-     {
-      "areaPct": 2.7,
-      "key": "19",
-      "popPct": 1.6
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 25517,
-    "pres2020New": -34.0,
-    "pres2020Old": -34.3,
-    "retainedAreaPct": 72.5,
-    "retainedPopPct": 88.7,
-    "text": "Kept 89% of its population from the 2016\u20132020 HD-13; gained the rest from the old HD-4 (10%), the old HD-19 (2%). Entirely in New Castle County. 2020 presidential margin D+34.3 on the 2016\u20132020 lines \u2192 D+34.0 on the current lines.",
-    "toEra": "current"
-   },
-   "14": {
-    "contributors": [
-     {
-      "areaPct": 98.5,
-      "key": "14",
-      "popPct": 97.3
-     },
-     {
-      "areaPct": 1.5,
-      "key": "20",
-      "popPct": 2.7
-     }
-    ],
-    "counties": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 22598,
-    "pres2020New": -19.1,
-    "pres2020Old": -16.1,
-    "retainedAreaPct": 98.5,
-    "retainedPopPct": 97.3,
-    "text": "Kept 97% of its population from the 2016\u20132020 HD-14; gained the rest from the old HD-20 (3%). Entirely in Sussex County. 2020 presidential margin D+16.1 on the 2016\u20132020 lines \u2192 D+19.1 on the current lines.",
-    "toEra": "current"
-   },
-   "15": {
-    "contributors": [
-     {
-      "areaPct": 99.9,
-      "key": "15",
-      "popPct": 100.0
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23404,
-    "pres2020New": -39.7,
-    "pres2020Old": -36.0,
-    "retainedAreaPct": 99.9,
-    "retainedPopPct": 100.0,
-    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Castle County.",
-    "toEra": "current"
-   },
-   "16": {
-    "contributors": [
-     {
-      "areaPct": 62.2,
-      "key": "16",
-      "popPct": 87.4
-     },
-     {
-      "areaPct": 36.7,
-      "key": "17",
-      "popPct": 12.6
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23820,
-    "pres2020New": -60.9,
-    "pres2020Old": -63.8,
-    "retainedAreaPct": 62.2,
-    "retainedPopPct": 87.4,
-    "text": "Kept 87% of its population from the 2016\u20132020 HD-16; gained the rest from the old HD-17 (13%). Entirely in New Castle County. 2020 presidential margin D+63.8 on the 2016\u20132020 lines \u2192 D+60.9 on the current lines.",
-    "toEra": "current"
-   },
-   "17": {
-    "contributors": [
-     {
-      "areaPct": 55.9,
-      "key": "17",
-      "popPct": 82.1
-     },
-     {
-      "areaPct": 42.6,
-      "key": "15",
-      "popPct": 10.5
-     },
-     {
-      "areaPct": 1.4,
-      "key": "18",
-      "popPct": 7.2
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 25409,
-    "pres2020New": -40.3,
-    "pres2020Old": -45.5,
-    "retainedAreaPct": 55.9,
-    "retainedPopPct": 82.1,
-    "text": "Kept 82% of its population from the 2016\u20132020 HD-17; gained the rest from the old HD-15 (10%), the old HD-18 (7%). Entirely in New Castle County. 2020 presidential margin D+45.5 on the 2016\u20132020 lines \u2192 D+40.3 on the current lines.",
-    "toEra": "current"
-   },
-   "18": {
-    "contributors": [
-     {
-      "areaPct": 89.6,
-      "key": "18",
-      "popPct": 87.2
-     },
-     {
-      "areaPct": 8.9,
-      "key": "21",
-      "popPct": 11.7
-     },
-     {
-      "areaPct": 1.4,
-      "key": "26",
-      "popPct": 1.1
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 24857,
-    "pres2020New": -45.4,
-    "pres2020Old": -46.3,
-    "retainedAreaPct": 89.6,
-    "retainedPopPct": 87.2,
-    "text": "Kept 87% of its population from the 2016\u20132020 HD-18; gained the rest from the old HD-21 (12%), the old HD-26 (1%). Entirely in New Castle County. 2020 presidential margin D+46.3 on the 2016\u20132020 lines \u2192 D+45.4 on the current lines.",
-    "toEra": "current"
-   },
-   "19": {
-    "contributors": [
-     {
-      "areaPct": 83.4,
-      "key": "19",
-      "popPct": 91.0
-     },
-     {
-      "areaPct": 13.7,
-      "key": "4",
-      "popPct": 6.7
-     },
-     {
-      "areaPct": 2.9,
-      "key": "21",
-      "popPct": 2.3
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 24430,
-    "pres2020New": -22.7,
-    "pres2020Old": -22.8,
-    "retainedAreaPct": 83.4,
-    "retainedPopPct": 91.0,
-    "text": "Kept 91% of its population from the 2016\u20132020 HD-19; gained the rest from the old HD-4 (7%), the old HD-21 (2%). Entirely in New Castle County. 2020 presidential margin D+22.8 on the 2016\u20132020 lines \u2192 D+22.7 on the current lines.",
-    "toEra": "current"
-   },
-   "2": {
-    "contributors": [
-     {
-      "areaPct": 94.7,
-      "key": "2",
-      "popPct": 88.4
-     },
-     {
-      "areaPct": 1.0,
-      "key": "4",
-      "popPct": 5.2
-     },
-     {
-      "areaPct": 0.8,
-      "key": "1",
-      "popPct": 3.6
-     },
-     {
-      "areaPct": 3.5,
-      "key": "13",
-      "popPct": 2.8
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 24787,
-    "pres2020New": -77.5,
-    "pres2020Old": -80.8,
-    "retainedAreaPct": 94.7,
-    "retainedPopPct": 88.4,
-    "text": "Kept 88% of its population from the 2016\u20132020 HD-2; gained the rest from the old HD-4 (5%), the old HD-1 (4%), the old HD-13 (3%). Entirely in New Castle County. 2020 presidential margin D+80.8 on the 2016\u20132020 lines \u2192 D+77.5 on the current lines.",
-    "toEra": "current"
-   },
-   "20": {
-    "contributors": [
-     {
-      "areaPct": 97.4,
-      "key": "20",
-      "popPct": 97.5
-     },
-     {
-      "areaPct": 2.6,
-      "key": "36",
-      "popPct": 2.5
-     }
-    ],
-    "counties": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 22598,
-    "pres2020New": -6.8,
-    "pres2020Old": -3.9,
-    "retainedAreaPct": 97.4,
-    "retainedPopPct": 97.5,
-    "text": "Kept 98% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-36 (2%). Entirely in Sussex County. 2020 presidential margin D+3.9 on the 2016\u20132020 lines \u2192 D+6.8 on the current lines.",
-    "toEra": "current"
-   },
-   "21": {
-    "contributors": [
-     {
-      "areaPct": 87.1,
-      "key": "21",
-      "popPct": 82.9
-     },
-     {
-      "areaPct": 12.8,
-      "key": "22",
-      "popPct": 17.1
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23786,
-    "pres2020New": -22.9,
-    "pres2020Old": -23.3,
-    "retainedAreaPct": 87.1,
-    "retainedPopPct": 82.9,
-    "text": "Kept 83% of its population from the 2016\u20132020 HD-21; gained the rest from the old HD-22 (17%). Entirely in New Castle County. 2020 presidential margin D+23.3 on the 2016\u20132020 lines \u2192 D+22.9 on the current lines.",
-    "toEra": "current"
-   },
-   "22": {
-    "contributors": [
-     {
-      "areaPct": 62.7,
-      "key": "22",
-      "popPct": 65.3
-     },
-     {
-      "areaPct": 30.6,
-      "key": "12",
-      "popPct": 27.0
-     },
-     {
-      "areaPct": 6.7,
-      "key": "4",
-      "popPct": 7.6
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 24360,
-    "pres2020New": -20.5,
-    "pres2020Old": -20.5,
-    "retainedAreaPct": 62.7,
-    "retainedPopPct": 65.3,
-    "text": "Kept 65% of its population from the 2016\u20132020 HD-22; gained the rest from the old HD-12 (27%), the old HD-4 (8%). Entirely in New Castle County. 2020 presidential margin D+20.5 on the 2016\u20132020 lines \u2192 D+20.5 on the current lines.",
-    "toEra": "current"
-   },
-   "23": {
-    "contributors": [
-     {
-      "areaPct": 80.7,
-      "key": "23",
-      "popPct": 81.3
-     },
-     {
-      "areaPct": 11.7,
-      "key": "22",
-      "popPct": 12.4
-     },
-     {
-      "areaPct": 4.8,
-      "key": "25",
-      "popPct": 5.9
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 24151,
-    "pres2020New": -32.8,
-    "pres2020Old": -36.2,
-    "retainedAreaPct": 80.7,
-    "retainedPopPct": 81.3,
-    "text": "Kept 81% of its population from the 2016\u20132020 HD-23; gained the rest from the old HD-22 (12%), the old HD-25 (6%). Entirely in New Castle County. 2020 presidential margin D+36.2 on the 2016\u20132020 lines \u2192 D+32.8 on the current lines.",
-    "toEra": "current"
-   },
-   "24": {
-    "contributors": [
-     {
-      "areaPct": 93.4,
-      "key": "24",
-      "popPct": 93.3
-     },
-     {
-      "areaPct": 6.3,
-      "key": "25",
-      "popPct": 6.6
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 25805,
-    "pres2020New": -33.5,
-    "pres2020Old": -33.3,
-    "retainedAreaPct": 93.4,
-    "retainedPopPct": 93.3,
-    "text": "Kept 93% of its population from the 2016\u20132020 HD-24; gained the rest from the old HD-25 (7%). Entirely in New Castle County. 2020 presidential margin D+33.3 on the 2016\u20132020 lines \u2192 D+33.5 on the current lines.",
-    "toEra": "current"
-   },
-   "25": {
-    "contributors": [
-     {
-      "areaPct": 76.5,
-      "key": "25",
-      "popPct": 87.0
-     },
-     {
-      "areaPct": 23.5,
-      "key": "27",
-      "popPct": 12.9
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23147,
-    "pres2020New": -34.9,
-    "pres2020Old": -36.4,
-    "retainedAreaPct": 76.5,
-    "retainedPopPct": 87.0,
-    "text": "Kept 87% of its population from the 2016\u20132020 HD-25; gained the rest from the old HD-27 (13%). Entirely in New Castle County. 2020 presidential margin D+36.4 on the 2016\u20132020 lines \u2192 D+34.9 on the current lines.",
-    "toEra": "current"
-   },
-   "26": {
-    "contributors": [
-     {
-      "areaPct": 98.7,
-      "key": "26",
-      "popPct": 99.7
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23074,
-    "pres2020New": -47.3,
-    "pres2020Old": -47.3,
-    "retainedAreaPct": 98.7,
-    "retainedPopPct": 99.7,
-    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Castle County.",
-    "toEra": "current"
-   },
-   "27": {
-    "contributors": [
-     {
-      "areaPct": 65.5,
-      "key": "27",
-      "popPct": 81.3
-     },
-     {
-      "areaPct": 18.3,
-      "key": "8",
-      "popPct": 11.3
-     },
-     {
-      "areaPct": 13.7,
-      "key": "9",
-      "popPct": 5.3
-     },
-     {
-      "areaPct": 2.5,
-      "key": "15",
-      "popPct": 2.2
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 25502,
-    "pres2020New": -22.8,
-    "pres2020Old": -29.3,
-    "retainedAreaPct": 65.5,
-    "retainedPopPct": 81.3,
-    "text": "Kept 81% of its population from the 2016\u20132020 HD-27; gained the rest from the old HD-8 (11%), the old HD-9 (5%), the old HD-15 (2%). Entirely in New Castle County. 2020 presidential margin D+29.3 on the 2016\u20132020 lines \u2192 D+22.8 on the current lines.",
-    "toEra": "current"
-   },
-   "28": {
-    "contributors": [
-     {
-      "areaPct": 97.2,
-      "key": "28",
-      "popPct": 98.3
-     },
-     {
-      "areaPct": 2.8,
-      "key": "9",
-      "popPct": 1.7
-     }
-    ],
-    "counties": [
-     {
-      "county": "Kent",
-      "popPct": 87.7
-     },
-     {
-      "county": "New Castle",
-      "popPct": 12.3
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 25820,
-    "pres2020New": -18.6,
-    "pres2020Old": -19.0,
-    "retainedAreaPct": 97.2,
-    "retainedPopPct": 98.3,
-    "text": "Kept 98% of its population from the 2016\u20132020 HD-28; gained the rest from the old HD-9 (2%). Spans Kent, New Castle counties. 2020 presidential margin D+19.0 on the 2016\u20132020 lines \u2192 D+18.6 on the current lines.",
-    "toEra": "current"
-   },
-   "29": {
-    "contributors": [
-     {
-      "areaPct": 95.6,
-      "key": "29",
-      "popPct": 89.8
-     },
-     {
-      "areaPct": 3.0,
-      "key": "31",
-      "popPct": 9.6
-     },
-     {
-      "areaPct": 1.4,
-      "key": "11",
-      "popPct": 0.6
-     }
-    ],
-    "counties": [
-     {
-      "county": "Kent",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 20353,
-    "pres2020New": -13.1,
-    "pres2020Old": -7.8,
-    "retainedAreaPct": 95.6,
-    "retainedPopPct": 89.8,
-    "text": "Kept 90% of its population from the 2016\u20132020 HD-29; gained the rest from the old HD-31 (10%), the old HD-11 (1%). Entirely in Kent County. 2020 presidential margin D+7.8 on the 2016\u20132020 lines \u2192 D+13.1 on the current lines.",
-    "toEra": "current"
-   },
-   "3": {
-    "contributors": [
-     {
-      "areaPct": 82.9,
-      "key": "3",
-      "popPct": 88.2
-     },
-     {
-      "areaPct": 13.4,
-      "key": "4",
-      "popPct": 10.1
-     },
-     {
-      "areaPct": 2.1,
-      "key": "13",
-      "popPct": 1.0
-     },
-     {
-      "areaPct": 1.6,
-      "key": "2",
-      "popPct": 0.7
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 22928,
-    "pres2020New": -70.5,
-    "pres2020Old": -71.9,
-    "retainedAreaPct": 82.9,
-    "retainedPopPct": 88.2,
-    "text": "Kept 88% of its population from the 2016\u20132020 HD-3; gained the rest from the old HD-4 (10%), the old HD-13 (1%), the old HD-2 (1%). Entirely in New Castle County. 2020 presidential margin D+71.9 on the 2016\u20132020 lines \u2192 D+70.5 on the current lines.",
-    "toEra": "current"
-   },
-   "30": {
-    "contributors": [
-     {
-      "areaPct": 88.1,
-      "key": "30",
-      "popPct": 83.3
-     },
-     {
-      "areaPct": 8.2,
-      "key": "11",
-      "popPct": 9.3
-     },
-     {
-      "areaPct": 2.5,
-      "key": "29",
-      "popPct": 4.9
-     },
-     {
-      "areaPct": 1.1,
-      "key": "34",
-      "popPct": 2.5
-     }
-    ],
-    "counties": [
-     {
-      "county": "Kent",
-      "popPct": 99.9
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 27008,
-    "pres2020New": 31.0,
-    "pres2020Old": 31.4,
-    "retainedAreaPct": 88.1,
-    "retainedPopPct": 83.3,
-    "text": "Kept 83% of its population from the 2016\u20132020 HD-30; gained the rest from the old HD-11 (9%), the old HD-29 (5%), the old HD-34 (2%). Entirely in Kent County. 2020 presidential margin R+31.4 on the 2016\u20132020 lines \u2192 R+31.0 on the current lines.",
-    "toEra": "current"
-   },
-   "31": {
-    "contributors": [
-     {
-      "areaPct": 98.5,
-      "key": "31",
-      "popPct": 98.1
-     },
-     {
-      "areaPct": 1.5,
-      "key": "32",
-      "popPct": 1.8
-     }
-    ],
-    "counties": [
-     {
-      "county": "Kent",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23890,
-    "pres2020New": -37.0,
-    "pres2020Old": -36.6,
-    "retainedAreaPct": 98.5,
-    "retainedPopPct": 98.1,
-    "text": "Kept 98% of its population from the 2016\u20132020 HD-31; gained the rest from the old HD-32 (2%). Entirely in Kent County. 2020 presidential margin D+36.6 on the 2016\u20132020 lines \u2192 D+37.0 on the current lines.",
-    "toEra": "current"
-   },
-   "32": {
-    "contributors": [
-     {
-      "areaPct": 100.0,
-      "key": "32",
-      "popPct": 100.0
-     }
-    ],
-    "counties": [
-     {
-      "county": "Kent",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 20681,
-    "pres2020New": -25.3,
-    "pres2020Old": -25.4,
-    "retainedAreaPct": 100.0,
-    "retainedPopPct": 100.0,
-    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Kent County.",
-    "toEra": "current"
-   },
-   "33": {
-    "contributors": [
-     {
-      "areaPct": 100.0,
-      "key": "33",
-      "popPct": 100.0
-     }
-    ],
-    "counties": [
-     {
-      "county": "Kent",
-      "popPct": 99.6
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23221,
-    "pres2020New": 11.0,
-    "pres2020Old": 11.0,
-    "retainedAreaPct": 100.0,
-    "retainedPopPct": 100.0,
-    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Kent County.",
-    "toEra": "current"
-   },
-   "34": {
-    "contributors": [
-     {
-      "areaPct": 99.9,
-      "key": "34",
-      "popPct": 100.0
-     }
-    ],
-    "counties": [
-     {
-      "county": "Kent",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23500,
-    "pres2020New": -6.8,
-    "pres2020Old": -6.2,
-    "retainedAreaPct": 99.9,
-    "retainedPopPct": 100.0,
-    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Kent County.",
-    "toEra": "current"
-   },
-   "35": {
-    "contributors": [
-     {
-      "areaPct": 98.6,
-      "key": "35",
-      "popPct": 95.5
-     },
-     {
-      "areaPct": 1.2,
-      "key": "36",
-      "popPct": 4.3
-     }
-    ],
-    "counties": [
-     {
-      "county": "Sussex",
-      "popPct": 99.9
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23019,
-    "pres2020New": 25.7,
-    "pres2020Old": 25.5,
-    "retainedAreaPct": 98.6,
-    "retainedPopPct": 95.5,
-    "text": "Kept 96% of its population from the 2016\u20132020 HD-35; gained the rest from the old HD-36 (4%). Entirely in Sussex County. 2020 presidential margin R+25.5 on the 2016\u20132020 lines \u2192 R+25.7 on the current lines.",
-    "toEra": "current"
-   },
-   "36": {
-    "contributors": [
-     {
-      "areaPct": 98.2,
-      "key": "36",
-      "popPct": 96.6
-     },
-     {
-      "areaPct": 0.8,
-      "key": "20",
-      "popPct": 2.6
-     },
-     {
-      "areaPct": 1.0,
-      "key": "35",
-      "popPct": 0.8
-     }
-    ],
-    "counties": [
-     {
-      "county": "Sussex",
-      "popPct": 98.4
-     },
-     {
-      "county": "Kent",
-      "popPct": 1.6
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 22992,
-    "pres2020New": 11.9,
-    "pres2020Old": 12.3,
-    "retainedAreaPct": 98.2,
-    "retainedPopPct": 96.6,
-    "text": "Kept 97% of its population from the 2016\u20132020 HD-36; gained the rest from the old HD-20 (3%), the old HD-35 (1%). Spans Sussex, Kent counties. 2020 presidential margin R+12.3 on the 2016\u20132020 lines \u2192 R+11.9 on the current lines.",
-    "toEra": "current"
-   },
-   "37": {
-    "contributors": [
-     {
-      "areaPct": 38.8,
-      "key": "37",
-      "popPct": 54.6
-     },
-     {
-      "areaPct": 21.8,
-      "key": "20",
-      "popPct": 21.4
-     },
-     {
-      "areaPct": 13.3,
-      "key": "41",
-      "popPct": 14.7
-     },
-     {
-      "areaPct": 25.6,
-      "key": "40",
-      "popPct": 9.2
-     }
-    ],
-    "counties": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 26316,
-    "pres2020New": 11.7,
-    "pres2020Old": 11.6,
-    "retainedAreaPct": 38.8,
-    "retainedPopPct": 54.6,
-    "text": "Kept 55% of its population from the 2016\u20132020 HD-37; gained the rest from the old HD-20 (21%), the old HD-41 (15%), the old HD-40 (9%). Entirely in Sussex County. 2020 presidential margin R+11.6 on the 2016\u20132020 lines \u2192 R+11.7 on the current lines.",
-    "toEra": "current"
-   },
-   "38": {
-    "contributors": [
-     {
-      "areaPct": 100.0,
-      "key": "38",
-      "popPct": 100.0
-     }
-    ],
-    "counties": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23617,
-    "pres2020New": 15.9,
-    "pres2020Old": 18.4,
-    "retainedAreaPct": 100.0,
-    "retainedPopPct": 100.0,
-    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Sussex County.",
-    "toEra": "current"
-   },
-   "39": {
-    "contributors": [
-     {
-      "areaPct": 100.0,
-      "key": "39",
-      "popPct": 100.0
-     }
-    ],
-    "counties": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 24103,
-    "pres2020New": 19.8,
-    "pres2020Old": 19.8,
-    "retainedAreaPct": 100.0,
-    "retainedPopPct": 100.0,
-    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Sussex County.",
-    "toEra": "current"
-   },
-   "4": {
-    "contributors": [
-     {
-      "areaPct": 55.9,
-      "key": "37",
-      "popPct": 65.1
-     },
-     {
-      "areaPct": 22.8,
-      "key": "14",
-      "popPct": 20.5
-     },
-     {
-      "areaPct": 14.2,
-      "key": "41",
-      "popPct": 8.9
-     },
-     {
-      "areaPct": 7.1,
-      "key": "20",
-      "popPct": 5.5
-     }
-    ],
-    "counties": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesLost": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "fromEra": "2020",
-    "pop2020": 23956,
-    "pres2020New": 8.7,
-    "pres2020Old": -41.8,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-4; it draws from the old HD-37 (65%), the old HD-14 (20%), the old HD-41 (9%) and 1 more. Counties: gained Sussex (100%); lost New Castle. 2020 presidential margin D+41.8 on the 2016\u20132020 lines \u2192 R+8.7 on the current lines.",
-    "toEra": "current"
-   },
-   "40": {
-    "contributors": [
-     {
-      "areaPct": 97.8,
-      "key": "40",
-      "popPct": 98.6
-     },
-     {
-      "areaPct": 2.2,
-      "key": "41",
-      "popPct": 1.4
-     }
-    ],
-    "counties": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 22389,
-    "pres2020New": 37.0,
-    "pres2020Old": 37.2,
-    "retainedAreaPct": 97.8,
-    "retainedPopPct": 98.6,
-    "text": "Kept 99% of its population from the 2016\u20132020 HD-40; gained the rest from the old HD-41 (1%). Entirely in Sussex County. 2020 presidential margin R+37.2 on the 2016\u20132020 lines \u2192 R+37.0 on the current lines.",
-    "toEra": "current"
-   },
-   "41": {
-    "contributors": [
-     {
-      "areaPct": 83.6,
-      "key": "41",
-      "popPct": 74.8
-     },
-     {
-      "areaPct": 16.2,
-      "key": "38",
-      "popPct": 24.7
-     }
-    ],
-    "counties": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 25823,
-    "pres2020New": 24.8,
-    "pres2020Old": 21.2,
-    "retainedAreaPct": 83.6,
-    "retainedPopPct": 74.8,
-    "text": "Kept 75% of its population from the 2016\u20132020 HD-41; gained the rest from the old HD-38 (25%). Entirely in Sussex County. 2020 presidential margin R+21.2 on the 2016\u20132020 lines \u2192 R+24.8 on the current lines.",
-    "toEra": "current"
-   },
-   "5": {
-    "contributors": [
-     {
-      "areaPct": 98.9,
-      "key": "5",
-      "popPct": 98.9
-     },
-     {
-      "areaPct": 0.8,
-      "key": "15",
-      "popPct": 0.8
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23444,
-    "pres2020New": -62.7,
-    "pres2020Old": -63.0,
-    "retainedAreaPct": 98.9,
-    "retainedPopPct": 98.9,
-    "text": "Kept 99% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-15 (1%). Entirely in New Castle County. 2020 presidential margin D+63.0 on the 2016\u20132020 lines \u2192 D+62.7 on the current lines.",
-    "toEra": "current"
-   },
-   "6": {
-    "contributors": [
-     {
-      "areaPct": 89.9,
-      "key": "6",
-      "popPct": 92.6
-     },
-     {
-      "areaPct": 8.7,
-      "key": "1",
-      "popPct": 7.0
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 22902,
-    "pres2020New": -37.5,
-    "pres2020Old": -36.4,
-    "retainedAreaPct": 89.9,
-    "retainedPopPct": 92.6,
-    "text": "Kept 93% of its population from the 2016\u20132020 HD-6; gained the rest from the old HD-1 (7%). Entirely in New Castle County. 2020 presidential margin D+36.4 on the 2016\u20132020 lines \u2192 D+37.5 on the current lines.",
-    "toEra": "current"
-   },
-   "7": {
-    "contributors": [
-     {
-      "areaPct": 49.4,
-      "key": "7",
-      "popPct": 72.4
-     },
-     {
-      "areaPct": 33.8,
-      "key": "10",
-      "popPct": 21.0
-     },
-     {
-      "areaPct": 16.8,
-      "key": "6",
-      "popPct": 6.6
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 23261,
-    "pres2020New": -41.9,
-    "pres2020Old": -37.4,
-    "retainedAreaPct": 49.4,
-    "retainedPopPct": 72.4,
-    "text": "Kept 72% of its population from the 2016\u20132020 HD-7; gained the rest from the old HD-10 (21%), the old HD-6 (7%). Entirely in New Castle County. 2020 presidential margin D+37.4 on the 2016\u20132020 lines \u2192 D+41.9 on the current lines.",
-    "toEra": "current"
-   },
-   "8": {
-    "contributors": [
-     {
-      "areaPct": 79.5,
-      "key": "8",
-      "popPct": 89.0
-     },
-     {
-      "areaPct": 20.5,
-      "key": "9",
-      "popPct": 11.0
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 25168,
-    "pres2020New": -26.1,
-    "pres2020Old": -24.4,
-    "retainedAreaPct": 79.5,
-    "retainedPopPct": 89.0,
-    "text": "Kept 89% of its population from the 2016\u20132020 HD-8; gained the rest from the old HD-9 (11%). Entirely in New Castle County. 2020 presidential margin D+24.4 on the 2016\u20132020 lines \u2192 D+26.1 on the current lines.",
-    "toEra": "current"
-   },
-   "9": {
-    "contributors": [
-     {
-      "areaPct": 100.0,
-      "key": "9",
-      "popPct": 100.0
-     }
-    ],
-    "counties": [
-     {
-      "county": "New Castle",
-      "popPct": 99.7
-     }
-    ],
-    "countiesGained": [],
-    "countiesLost": [],
-    "fromEra": "2020",
-    "pop2020": 27745,
-    "pres2020New": -13.8,
-    "pres2020Old": -11.6,
-    "retainedAreaPct": 100.0,
-    "retainedPopPct": 100.0,
-    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Castle County.",
-    "toEra": "current"
-   }
-  }
- },
  "meta": {
-  "built": "2026-10-10",
+  "built": "2026-10-16",
   "minSharePct": 0.5
  },
  "senate": {
@@ -1339,29 +8,29 @@
    "1": {
     "contributors": [
      {
-      "areaPct": 57.9,
-      "key": "6",
-      "popPct": 39.8
-     },
-     {
-      "areaPct": 12.2,
+      "areaPct": 60.0,
       "key": "1",
-      "popPct": 23.8
+      "popPct": 64.5
      },
      {
-      "areaPct": 21.6,
-      "key": "4",
-      "popPct": 23.8
+      "areaPct": 22.8,
+      "key": "5",
+      "popPct": 21.3
      },
      {
-      "areaPct": 7.0,
-      "key": "7",
-      "popPct": 10.3
-     },
-     {
-      "areaPct": 1.2,
+      "areaPct": 3.0,
       "key": "2",
-      "popPct": 2.3
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 13.3,
+      "key": "4",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 0.9,
+      "key": "3",
+      "popPct": 2.5
      }
     ],
     "counties": [
@@ -1373,35 +42,30 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 43476,
+    "pop2020": 43479,
     "pres2020New": -48.4,
-    "pres2020Old": -81.3,
-    "retainedAreaPct": 12.2,
-    "retainedPopPct": 23.8,
-    "text": "A new footprint: only 24% of its population was in the 2016\u20132020 SD-1; it draws from the old SD-6 (40%), the old SD-4 (24%), the old SD-7 (10%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+81.3 on the 2016\u20132020 lines \u2192 D+48.4 on the current lines.",
+    "pres2020Old": -50.1,
+    "retainedAreaPct": 60.0,
+    "retainedPopPct": 64.5,
+    "text": "Kept 64% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-5 (21%), the old SD-2 (8%), the old SD-4 (4%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+50.1 on the 2016\u20132020 lines \u2192 D+48.4 on the current lines.",
     "toEra": "current"
    },
    "10": {
     "contributors": [
      {
-      "areaPct": 46.2,
-      "key": "8",
-      "popPct": 53.7
+      "areaPct": 58.5,
+      "key": "10",
+      "popPct": 64.9
      },
      {
-      "areaPct": 17.0,
-      "key": "27",
-      "popPct": 23.9
+      "areaPct": 36.3,
+      "key": "14",
+      "popPct": 29.6
      },
      {
-      "areaPct": 25.9,
-      "key": "9",
-      "popPct": 16.7
-     },
-     {
-      "areaPct": 10.9,
-      "key": "11",
-      "popPct": 5.7
+      "areaPct": 5.2,
+      "key": "12",
+      "popPct": 5.5
      }
     ],
     "counties": [
@@ -1413,45 +77,35 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 46955,
+    "pop2020": 46951,
     "pres2020New": -22.7,
-    "pres2020Old": -31.5,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-10; it draws from the old SD-8 (54%), the old SD-27 (24%), the old SD-9 (17%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+31.5 on the 2016\u20132020 lines \u2192 D+22.7 on the current lines.",
+    "pres2020Old": -23.5,
+    "retainedAreaPct": 58.5,
+    "retainedPopPct": 64.9,
+    "text": "Kept 65% of its population from the 2016\u20132020 SD-10; gained the rest from the old SD-14 (30%), the old SD-12 (6%). Entirely in New Castle County. 2020 presidential margin D+23.5 on the 2016\u20132020 lines \u2192 D+22.7 on the current lines.",
     "toEra": "current"
    },
    "11": {
     "contributors": [
      {
-      "areaPct": 35.1,
-      "key": "26",
-      "popPct": 47.6
+      "areaPct": 49.7,
+      "key": "11",
+      "popPct": 66.9
      },
      {
-      "areaPct": 14.6,
-      "key": "24",
-      "popPct": 18.7
-     },
-     {
-      "areaPct": 20.9,
-      "key": "25",
-      "popPct": 12.0
-     },
-     {
-      "areaPct": 23.8,
-      "key": "27",
-      "popPct": 9.9
+      "areaPct": 44.7,
+      "key": "10",
+      "popPct": 21.9
      },
      {
       "areaPct": 3.4,
-      "key": "15",
+      "key": "12",
       "popPct": 7.7
      },
      {
       "areaPct": 2.1,
-      "key": "5",
-      "popPct": 4.1
+      "key": "9",
+      "popPct": 3.6
      }
     ],
     "counties": [
@@ -1461,47 +115,32 @@
      }
     ],
     "countiesGained": [],
-    "countiesLost": [
-     {
-      "county": "Kent",
-      "popPct": 63.0
-     }
-    ],
+    "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 48436,
+    "pop2020": 48438,
     "pres2020New": -43.7,
-    "pres2020Old": 10.7,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-11; it draws from the old SD-26 (48%), the old SD-24 (19%), the old SD-25 (12%) and 3 more. Counties: lost Kent. 2020 presidential margin R+10.7 on the 2016\u20132020 lines \u2192 D+43.7 on the current lines.",
+    "pres2020Old": -44.5,
+    "retainedAreaPct": 49.7,
+    "retainedPopPct": 66.9,
+    "text": "Kept 67% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-10 (22%), the old SD-12 (8%), the old SD-9 (4%). Entirely in New Castle County. 2020 presidential margin D+44.5 on the 2016\u20132020 lines \u2192 D+43.7 on the current lines.",
     "toEra": "current"
    },
    "12": {
     "contributors": [
      {
-      "areaPct": 33.5,
-      "key": "15",
-      "popPct": 36.2
+      "areaPct": 61.0,
+      "key": "12",
+      "popPct": 84.9
      },
      {
-      "areaPct": 45.5,
-      "key": "9",
-      "popPct": 28.3
+      "areaPct": 37.7,
+      "key": "14",
+      "popPct": 14.2
      },
      {
-      "areaPct": 13.8,
-      "key": "17",
-      "popPct": 16.4
-     },
-     {
-      "areaPct": 6.8,
-      "key": "27",
-      "popPct": 15.8
-     },
-     {
-      "areaPct": 0.4,
-      "key": "16",
-      "popPct": 3.3
+      "areaPct": 1.3,
+      "key": "10",
+      "popPct": 0.9
      }
     ],
     "counties": [
@@ -1513,35 +152,30 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 48646,
+    "pop2020": 48658,
     "pres2020New": -30.1,
-    "pres2020Old": -22.9,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-12; it draws from the old SD-15 (36%), the old SD-9 (28%), the old SD-17 (16%) and 2 more. Entirely in New Castle County. 2020 presidential margin D+22.9 on the 2016\u20132020 lines \u2192 D+30.1 on the current lines.",
+    "pres2020Old": -36.2,
+    "retainedAreaPct": 61.0,
+    "retainedPopPct": 84.9,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-12; gained the rest from the old SD-14 (14%), the old SD-10 (1%). Entirely in New Castle County. 2020 presidential margin D+36.2 on the 2016\u20132020 lines \u2192 D+30.1 on the current lines.",
     "toEra": "current"
    },
    "13": {
     "contributors": [
      {
-      "areaPct": 30.5,
-      "key": "5",
-      "popPct": 46.6
+      "areaPct": 85.7,
+      "key": "13",
+      "popPct": 85.5
      },
      {
-      "areaPct": 23.0,
-      "key": "18",
-      "popPct": 30.4
+      "areaPct": 5.4,
+      "key": "11",
+      "popPct": 9.7
      },
      {
-      "areaPct": 15.2,
-      "key": "15",
-      "popPct": 12.1
-     },
-     {
-      "areaPct": 31.2,
-      "key": "17",
-      "popPct": 10.9
+      "areaPct": 8.8,
+      "key": "12",
+      "popPct": 4.7
      }
     ],
     "counties": [
@@ -1553,35 +187,25 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 45466,
+    "pop2020": 45459,
     "pres2020New": -51.7,
-    "pres2020Old": -34.3,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-13; it draws from the old SD-5 (47%), the old SD-18 (30%), the old SD-15 (12%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+34.3 on the 2016\u20132020 lines \u2192 D+51.7 on the current lines.",
+    "pres2020Old": -50.7,
+    "retainedAreaPct": 85.7,
+    "retainedPopPct": 85.5,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-13; gained the rest from the old SD-11 (10%), the old SD-12 (5%). Entirely in New Castle County. 2020 presidential margin D+50.7 on the 2016\u20132020 lines \u2192 D+51.7 on the current lines.",
     "toEra": "current"
    },
    "14": {
     "contributors": [
      {
-      "areaPct": 49.1,
-      "key": "28",
-      "popPct": 44.1
+      "areaPct": 94.9,
+      "key": "14",
+      "popPct": 86.2
      },
      {
-      "areaPct": 26.7,
-      "key": "9",
-      "popPct": 26.1
-     },
-     {
-      "areaPct": 20.5,
-      "key": "11",
-      "popPct": 17.7
-     },
-     {
-      "areaPct": 3.7,
-      "key": "29",
-      "popPct": 12.0
+      "areaPct": 5.1,
+      "key": "15",
+      "popPct": 13.8
      }
     ],
     "counties": [
@@ -1594,57 +218,33 @@
       "popPct": 49.8
      }
     ],
-    "countiesGained": [
-     {
-      "county": "Kent",
-      "popPct": 50.2
-     },
-     {
-      "county": "New Castle",
-      "popPct": 49.8
-     }
-    ],
-    "countiesLost": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
+    "countiesGained": [],
+    "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 43938,
+    "pop2020": 43942,
     "pres2020New": -9.7,
-    "pres2020Old": -16.1,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-14; it draws from the old SD-28 (44%), the old SD-9 (26%), the old SD-11 (18%) and 1 more. Counties: gained Kent (50%), New Castle (50%); lost Sussex. 2020 presidential margin D+16.1 on the 2016\u20132020 lines \u2192 D+9.7 on the current lines.",
+    "pres2020Old": -13.5,
+    "retainedAreaPct": 94.9,
+    "retainedPopPct": 86.2,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-15 (14%). Spans Kent, New Castle counties. 2020 presidential margin D+13.5 on the 2016\u20132020 lines \u2192 D+9.7 on the current lines.",
     "toEra": "current"
    },
    "15": {
     "contributors": [
      {
-      "areaPct": 56.5,
-      "key": "30",
-      "popPct": 36.2
+      "areaPct": 73.7,
+      "key": "15",
+      "popPct": 71.1
      },
      {
-      "areaPct": 28.2,
-      "key": "11",
-      "popPct": 31.0
+      "areaPct": 23.3,
+      "key": "18",
+      "popPct": 19.0
      },
      {
-      "areaPct": 9.6,
-      "key": "29",
-      "popPct": 21.5
-     },
-     {
-      "areaPct": 2.5,
-      "key": "34",
-      "popPct": 8.5
-     },
-     {
-      "areaPct": 3.1,
-      "key": "33",
-      "popPct": 2.8
+      "areaPct": 3.0,
+      "key": "16",
+      "popPct": 9.9
      }
     ],
     "counties": [
@@ -1653,52 +253,37 @@
       "popPct": 99.6
      }
     ],
-    "countiesGained": [
-     {
-      "county": "Kent",
-      "popPct": 99.6
-     }
-    ],
-    "countiesLost": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
+    "countiesGained": [],
+    "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 59394,
+    "pop2020": 59376,
     "pres2020New": 16.2,
-    "pres2020Old": -36.0,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-15; it draws from the old SD-30 (36%), the old SD-11 (31%), the old SD-29 (22%) and 2 more. Counties: gained Kent (100%); lost New Castle. 2020 presidential margin D+36.0 on the 2016\u20132020 lines \u2192 R+16.2 on the current lines.",
+    "pres2020Old": 10.8,
+    "retainedAreaPct": 73.7,
+    "retainedPopPct": 71.1,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-18 (19%), the old SD-16 (10%). Entirely in Kent County. 2020 presidential margin R+10.8 on the 2016\u20132020 lines \u2192 R+16.2 on the current lines.",
     "toEra": "current"
    },
    "16": {
     "contributors": [
      {
-      "areaPct": 27.1,
-      "key": "32",
-      "popPct": 32.6
+      "areaPct": 96.0,
+      "key": "16",
+      "popPct": 92.7
      },
      {
-      "areaPct": 51.4,
-      "key": "33",
-      "popPct": 31.5
+      "areaPct": 0.7,
+      "key": "17",
+      "popPct": 3.6
      },
      {
-      "areaPct": 4.8,
-      "key": "34",
-      "popPct": 29.5
-     },
-     {
-      "areaPct": 15.8,
-      "key": "28",
-      "popPct": 4.9
+      "areaPct": 2.3,
+      "key": "18",
+      "popPct": 2.2
      },
      {
       "areaPct": 1.0,
-      "key": "30",
+      "key": "15",
       "popPct": 1.4
      }
     ],
@@ -1708,53 +293,33 @@
       "popPct": 99.9
      }
     ],
-    "countiesGained": [
-     {
-      "county": "Kent",
-      "popPct": 99.9
-     }
-    ],
-    "countiesLost": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
+    "countiesGained": [],
+    "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 51160,
+    "pop2020": 51162,
     "pres2020New": -4.4,
-    "pres2020Old": -63.8,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-16; it draws from the old SD-32 (33%), the old SD-33 (32%), the old SD-34 (30%) and 2 more. Counties: gained Kent (100%); lost New Castle. 2020 presidential margin D+63.8 on the 2016\u20132020 lines \u2192 D+4.4 on the current lines.",
+    "pres2020Old": -4.3,
+    "retainedAreaPct": 96.0,
+    "retainedPopPct": 92.7,
+    "text": "Kept 93% of its population from the 2016\u20132020 SD-16; gained the rest from the old SD-17 (4%), the old SD-18 (2%), the old SD-15 (1%). Entirely in Kent County. 2020 presidential margin D+4.3 on the 2016\u20132020 lines \u2192 D+4.4 on the current lines.",
     "toEra": "current"
    },
    "17": {
     "contributors": [
      {
-      "areaPct": 46.0,
-      "key": "31",
-      "popPct": 62.2
+      "areaPct": 88.0,
+      "key": "17",
+      "popPct": 97.7
      },
      {
-      "areaPct": 10.2,
-      "key": "32",
-      "popPct": 10.9
+      "areaPct": 3.4,
+      "key": "15",
+      "popPct": 1.1
      },
      {
-      "areaPct": 9.6,
-      "key": "34",
-      "popPct": 9.9
-     },
-     {
-      "areaPct": 19.1,
-      "key": "28",
-      "popPct": 8.5
-     },
-     {
-      "areaPct": 15.1,
-      "key": "29",
-      "popPct": 8.5
+      "areaPct": 0.7,
+      "key": "16",
+      "popPct": 0.9
      }
     ],
     "counties": [
@@ -1763,48 +328,33 @@
       "popPct": 100.0
      }
     ],
-    "countiesGained": [
-     {
-      "county": "Kent",
-      "popPct": 100.0
-     }
-    ],
-    "countiesLost": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
+    "countiesGained": [],
+    "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 40831,
+    "pop2020": 40841,
     "pres2020New": -31.5,
-    "pres2020Old": -45.5,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-17; it draws from the old SD-31 (62%), the old SD-32 (11%), the old SD-34 (10%) and 2 more. Counties: gained Kent (100%); lost New Castle. 2020 presidential margin D+45.5 on the 2016\u20132020 lines \u2192 D+31.5 on the current lines.",
+    "pres2020Old": -32.4,
+    "retainedAreaPct": 88.0,
+    "retainedPopPct": 97.7,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-15 (1%), the old SD-16 (1%). Entirely in Kent County. 2020 presidential margin D+32.4 on the 2016\u20132020 lines \u2192 D+31.5 on the current lines.",
     "toEra": "current"
    },
    "18": {
     "contributors": [
      {
-      "areaPct": 41.1,
-      "key": "36",
-      "popPct": 46.8
+      "areaPct": 67.0,
+      "key": "18",
+      "popPct": 71.2
      },
      {
-      "areaPct": 53.8,
-      "key": "35",
-      "popPct": 41.0
-     },
-     {
-      "areaPct": 4.3,
-      "key": "33",
-      "popPct": 11.5
+      "areaPct": 32.3,
+      "key": "19",
+      "popPct": 27.6
      },
      {
       "areaPct": 0.7,
-      "key": "30",
-      "popPct": 0.5
+      "key": "6",
+      "popPct": 1.2
      }
     ],
     "counties": [
@@ -1817,67 +367,38 @@
       "popPct": 12.8
      }
     ],
-    "countiesGained": [
-     {
-      "county": "Sussex",
-      "popPct": 87.2
-     },
-     {
-      "county": "Kent",
-      "popPct": 12.8
-     }
-    ],
-    "countiesLost": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
+    "countiesGained": [],
+    "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 46793,
+    "pop2020": 46813,
     "pres2020New": 18.0,
-    "pres2020Old": -46.3,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-18; it draws from the old SD-36 (47%), the old SD-35 (41%), the old SD-33 (12%) and 1 more. Counties: gained Sussex (87%), Kent (13%); lost New Castle. 2020 presidential margin D+46.3 on the 2016\u20132020 lines \u2192 R+18.0 on the current lines.",
+    "pres2020Old": 20.1,
+    "retainedAreaPct": 67.0,
+    "retainedPopPct": 71.2,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-18; gained the rest from the old SD-19 (28%), the old SD-6 (1%). Spans Sussex, Kent counties. 2020 presidential margin R+20.1 on the 2016\u20132020 lines \u2192 R+18.0 on the current lines.",
     "toEra": "current"
    },
    "19": {
     "contributors": [
      {
-      "areaPct": 33.4,
-      "key": "37",
-      "popPct": 53.0
+      "areaPct": 63.7,
+      "key": "19",
+      "popPct": 68.2
      },
      {
-      "areaPct": 16.6,
-      "key": "20",
-      "popPct": 15.1
-     },
-     {
-      "areaPct": 9.4,
-      "key": "41",
-      "popPct": 10.2
+      "areaPct": 17.1,
+      "key": "6",
+      "popPct": 19.6
      },
      {
       "areaPct": 4.8,
-      "key": "14",
-      "popPct": 6.3
+      "key": "20",
+      "popPct": 6.9
      },
      {
-      "areaPct": 18.7,
-      "key": "35",
-      "popPct": 6.1
-     },
-     {
-      "areaPct": 13.9,
-      "key": "40",
-      "popPct": 5.0
-     },
-     {
-      "areaPct": 2.9,
-      "key": "39",
-      "popPct": 4.1
+      "areaPct": 14.5,
+      "key": "21",
+      "popPct": 5.3
      }
     ],
     "counties": [
@@ -1886,53 +407,38 @@
       "popPct": 100.0
      }
     ],
-    "countiesGained": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesLost": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
+    "countiesGained": [],
+    "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 48045,
+    "pop2020": 48032,
     "pres2020New": 12.5,
-    "pres2020Old": -22.8,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-19; it draws from the old SD-37 (53%), the old SD-20 (15%), the old SD-41 (10%) and 4 more. Counties: gained Sussex (100%); lost New Castle. 2020 presidential margin D+22.8 on the 2016\u20132020 lines \u2192 R+12.5 on the current lines.",
+    "pres2020Old": 17.3,
+    "retainedAreaPct": 63.7,
+    "retainedPopPct": 68.2,
+    "text": "Kept 68% of its population from the 2016\u20132020 SD-19; gained the rest from the old SD-6 (20%), the old SD-20 (7%), the old SD-21 (5%). Entirely in Sussex County. 2020 presidential margin R+17.3 on the 2016\u20132020 lines \u2192 R+12.5 on the current lines.",
     "toEra": "current"
    },
    "2": {
     "contributors": [
      {
-      "areaPct": 35.2,
-      "key": "16",
-      "popPct": 36.4
-     },
-     {
-      "areaPct": 4.7,
-      "key": "1",
-      "popPct": 22.8
-     },
-     {
-      "areaPct": 30.7,
-      "key": "17",
-      "popPct": 20.6
-     },
-     {
-      "areaPct": 25.3,
+      "areaPct": 81.5,
       "key": "2",
-      "popPct": 17.6
+      "popPct": 75.5
      },
      {
-      "areaPct": 4.0,
-      "key": "6",
-      "popPct": 2.6
+      "areaPct": 15.2,
+      "key": "12",
+      "popPct": 15.1
+     },
+     {
+      "areaPct": 2.7,
+      "key": "13",
+      "popPct": 5.6
+     },
+     {
+      "areaPct": 0.5,
+      "key": "3",
+      "popPct": 3.7
      }
     ],
     "counties": [
@@ -1944,30 +450,25 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 48075,
+    "pop2020": 48073,
     "pres2020New": -69.2,
-    "pres2020Old": -80.8,
-    "retainedAreaPct": 25.3,
-    "retainedPopPct": 17.6,
-    "text": "A new footprint: only 18% of its population was in the 2016\u20132020 SD-2; it draws from the old SD-16 (36%), the old SD-1 (23%), the old SD-17 (21%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+80.8 on the 2016\u20132020 lines \u2192 D+69.2 on the current lines.",
+    "pres2020Old": -78.1,
+    "retainedAreaPct": 81.5,
+    "retainedPopPct": 75.5,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-12 (15%), the old SD-13 (6%), the old SD-3 (4%). Entirely in New Castle County. 2020 presidential margin D+78.1 on the 2016\u20132020 lines \u2192 D+69.2 on the current lines.",
     "toEra": "current"
    },
    "20": {
     "contributors": [
      {
-      "areaPct": 68.9,
-      "key": "38",
-      "popPct": 67.2
+      "areaPct": 99.3,
+      "key": "20",
+      "popPct": 98.7
      },
      {
-      "areaPct": 25.8,
-      "key": "41",
-      "popPct": 22.5
-     },
-     {
-      "areaPct": 5.3,
-      "key": "37",
-      "popPct": 10.4
+      "areaPct": 0.6,
+      "key": "19",
+      "popPct": 1.3
      }
     ],
     "counties": [
@@ -1979,30 +480,30 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 44672,
+    "pop2020": 44675,
     "pres2020New": 17.1,
-    "pres2020Old": -3.9,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-20; it draws from the old SD-38 (67%), the old SD-41 (22%), the old SD-37 (10%). Entirely in Sussex County. 2020 presidential margin D+3.9 on the 2016\u20132020 lines \u2192 R+17.1 on the current lines.",
+    "pres2020Old": 16.6,
+    "retainedAreaPct": 99.3,
+    "retainedPopPct": 98.7,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-19 (1%). Entirely in Sussex County. 2020 presidential margin R+16.6 on the 2016\u20132020 lines \u2192 R+17.1 on the current lines.",
     "toEra": "current"
    },
    "21": {
     "contributors": [
      {
-      "areaPct": 22.4,
-      "key": "39",
-      "popPct": 40.3
+      "areaPct": 80.3,
+      "key": "21",
+      "popPct": 79.6
      },
      {
-      "areaPct": 51.9,
-      "key": "40",
-      "popPct": 40.2
+      "areaPct": 10.8,
+      "key": "20",
+      "popPct": 12.7
      },
      {
-      "areaPct": 25.7,
-      "key": "41",
-      "popPct": 19.4
+      "areaPct": 9.0,
+      "key": "19",
+      "popPct": 7.7
      }
     ],
     "counties": [
@@ -2011,58 +512,38 @@
       "popPct": 100.0
      }
     ],
-    "countiesGained": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesLost": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
+    "countiesGained": [],
+    "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 54855,
+    "pop2020": 54850,
     "pres2020New": 28.7,
-    "pres2020Old": -23.3,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-21; it draws from the old SD-39 (40%), the old SD-40 (40%), the old SD-41 (19%). Counties: gained Sussex (100%); lost New Castle. 2020 presidential margin D+23.3 on the 2016\u20132020 lines \u2192 R+28.7 on the current lines.",
+    "pres2020Old": 31.3,
+    "retainedAreaPct": 80.3,
+    "retainedPopPct": 79.6,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-20 (13%), the old SD-19 (8%). Entirely in Sussex County. 2020 presidential margin R+31.3 on the 2016\u20132020 lines \u2192 R+28.7 on the current lines.",
     "toEra": "current"
    },
    "3": {
     "contributors": [
      {
-      "areaPct": 16.9,
+      "areaPct": 61.4,
       "key": "3",
-      "popPct": 45.1
+      "popPct": 85.4
      },
      {
-      "areaPct": 29.8,
-      "key": "2",
-      "popPct": 28.2
+      "areaPct": 5.6,
+      "key": "7",
+      "popPct": 6.2
      },
      {
-      "areaPct": 16.4,
+      "areaPct": 30.9,
       "key": "13",
-      "popPct": 13.3
+      "popPct": 5.4
      },
      {
-      "areaPct": 6.0,
-      "key": "4",
-      "popPct": 8.0
-     },
-     {
-      "areaPct": 26.9,
-      "key": "16",
-      "popPct": 3.9
-     },
-     {
-      "areaPct": 4.0,
-      "key": "17",
-      "popPct": 1.5
+      "areaPct": 1.8,
+      "key": "1",
+      "popPct": 2.8
      }
     ],
     "counties": [
@@ -2074,45 +555,30 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 44842,
+    "pop2020": 44848,
     "pres2020New": -66.1,
-    "pres2020Old": -71.9,
-    "retainedAreaPct": 16.9,
-    "retainedPopPct": 45.1,
-    "text": "A new footprint: only 45% of its population was in the 2016\u20132020 SD-3; it draws from the old SD-2 (28%), the old SD-13 (13%), the old SD-4 (8%) and 2 more. Entirely in New Castle County. 2020 presidential margin D+71.9 on the 2016\u20132020 lines \u2192 D+66.1 on the current lines.",
+    "pres2020Old": -71.8,
+    "retainedAreaPct": 61.4,
+    "retainedPopPct": 85.4,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-7 (6%), the old SD-13 (5%), the old SD-1 (3%). Entirely in New Castle County. 2020 presidential margin D+71.8 on the 2016\u20132020 lines \u2192 D+66.1 on the current lines.",
     "toEra": "current"
    },
    "4": {
     "contributors": [
      {
-      "areaPct": 72.1,
-      "key": "12",
-      "popPct": 44.4
-     },
-     {
-      "areaPct": 13.6,
-      "key": "22",
-      "popPct": 29.8
-     },
-     {
-      "areaPct": 3.0,
-      "key": "21",
-      "popPct": 12.2
-     },
-     {
-      "areaPct": 9.1,
+      "areaPct": 87.8,
       "key": "4",
-      "popPct": 8.1
+      "popPct": 81.3
      },
      {
-      "areaPct": 1.7,
-      "key": "10",
-      "popPct": 4.4
+      "areaPct": 9.9,
+      "key": "8",
+      "popPct": 13.2
      },
      {
-      "areaPct": 0.4,
-      "key": "6",
-      "popPct": 1.1
+      "areaPct": 2.2,
+      "key": "5",
+      "popPct": 5.6
      }
     ],
     "counties": [
@@ -2124,35 +590,25 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 45088,
+    "pop2020": 45084,
     "pres2020New": -24.3,
-    "pres2020Old": -41.8,
-    "retainedAreaPct": 9.1,
-    "retainedPopPct": 8.1,
-    "text": "A new footprint: only 8% of its population was in the 2016\u20132020 SD-4; it draws from the old SD-12 (44%), the old SD-22 (30%), the old SD-21 (12%) and 2 more. Entirely in New Castle County. 2020 presidential margin D+41.8 on the 2016\u20132020 lines \u2192 D+24.3 on the current lines.",
+    "pres2020Old": -23.6,
+    "retainedAreaPct": 87.8,
+    "retainedPopPct": 81.3,
+    "text": "Kept 81% of its population from the 2016\u20132020 SD-4; gained the rest from the old SD-8 (13%), the old SD-5 (6%). Entirely in New Castle County. 2020 presidential margin D+23.6 on the 2016\u20132020 lines \u2192 D+24.3 on the current lines.",
     "toEra": "current"
    },
    "5": {
     "contributors": [
      {
-      "areaPct": 49.3,
-      "key": "10",
-      "popPct": 45.1
+      "areaPct": 57.7,
+      "key": "5",
+      "popPct": 65.7
      },
      {
-      "areaPct": 36.4,
-      "key": "7",
-      "popPct": 39.5
-     },
-     {
-      "areaPct": 9.5,
-      "key": "6",
-      "popPct": 8.1
-     },
-     {
-      "areaPct": 4.8,
-      "key": "12",
-      "popPct": 7.3
+      "areaPct": 42.3,
+      "key": "1",
+      "popPct": 34.3
      }
     ],
     "counties": [
@@ -2164,30 +620,25 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 45275,
+    "pop2020": 45272,
     "pres2020New": -35.2,
-    "pres2020Old": -63.0,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-5; it draws from the old SD-10 (45%), the old SD-7 (40%), the old SD-6 (8%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+63.0 on the 2016\u20132020 lines \u2192 D+35.2 on the current lines.",
+    "pres2020Old": -30.7,
+    "retainedAreaPct": 57.7,
+    "retainedPopPct": 65.7,
+    "text": "Kept 66% of its population from the 2016\u20132020 SD-5; gained the rest from the old SD-1 (34%). Entirely in New Castle County. 2020 presidential margin D+30.7 on the 2016\u20132020 lines \u2192 D+35.2 on the current lines.",
     "toEra": "current"
    },
    "6": {
     "contributors": [
      {
-      "areaPct": 36.3,
-      "key": "14",
-      "popPct": 49.0
+      "areaPct": 64.1,
+      "key": "6",
+      "popPct": 95.5
      },
      {
-      "areaPct": 29.1,
-      "key": "20",
-      "popPct": 47.2
-     },
-     {
-      "areaPct": 34.6,
-      "key": "36",
-      "popPct": 3.9
+      "areaPct": 35.9,
+      "key": "18",
+      "popPct": 4.5
      }
     ],
     "counties": [
@@ -2196,53 +647,33 @@
       "popPct": 100.0
      }
     ],
-    "countiesGained": [
-     {
-      "county": "Sussex",
-      "popPct": 100.0
-     }
-    ],
-    "countiesLost": [
-     {
-      "county": "New Castle",
-      "popPct": 100.0
-     }
-    ],
+    "countiesGained": [],
+    "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 48697,
+    "pop2020": 48694,
     "pres2020New": -12.7,
-    "pres2020Old": -36.4,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-6; it draws from the old SD-14 (49%), the old SD-20 (47%), the old SD-36 (4%). Counties: gained Sussex (100%); lost New Castle. 2020 presidential margin D+36.4 on the 2016\u20132020 lines \u2192 D+12.7 on the current lines.",
+    "pres2020Old": -10.2,
+    "retainedAreaPct": 64.1,
+    "retainedPopPct": 95.5,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-6; gained the rest from the old SD-18 (4%). Entirely in Sussex County. 2020 presidential margin D+10.2 on the 2016\u20132020 lines \u2192 D+12.7 on the current lines.",
     "toEra": "current"
    },
    "7": {
     "contributors": [
      {
-      "areaPct": 23.4,
-      "key": "13",
-      "popPct": 40.9
+      "areaPct": 83.5,
+      "key": "7",
+      "popPct": 91.6
      },
      {
-      "areaPct": 36.1,
-      "key": "19",
-      "popPct": 36.7
+      "areaPct": 7.8,
+      "key": "9",
+      "popPct": 4.8
      },
      {
-      "areaPct": 22.3,
+      "areaPct": 8.7,
       "key": "4",
-      "popPct": 11.6
-     },
-     {
-      "areaPct": 9.7,
-      "key": "21",
-      "popPct": 7.1
-     },
-     {
-      "areaPct": 7.5,
-      "key": "22",
-      "popPct": 3.3
+      "popPct": 3.7
      }
     ],
     "counties": [
@@ -2254,35 +685,30 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 42983,
+    "pop2020": 42995,
     "pres2020New": -24.6,
-    "pres2020Old": -37.4,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-7; it draws from the old SD-13 (41%), the old SD-19 (37%), the old SD-4 (12%) and 2 more. Entirely in New Castle County. 2020 presidential margin D+37.4 on the 2016\u20132020 lines \u2192 D+24.6 on the current lines.",
+    "pres2020Old": -25.7,
+    "retainedAreaPct": 83.5,
+    "retainedPopPct": 91.6,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-7; gained the rest from the old SD-9 (5%), the old SD-4 (4%). Entirely in New Castle County. 2020 presidential margin D+25.7 on the 2016\u20132020 lines \u2192 D+24.6 on the current lines.",
     "toEra": "current"
    },
    "8": {
     "contributors": [
      {
-      "areaPct": 52.1,
-      "key": "23",
-      "popPct": 43.1
+      "areaPct": 85.3,
+      "key": "8",
+      "popPct": 79.8
      },
      {
-      "areaPct": 26.1,
-      "key": "25",
-      "popPct": 38.4
+      "areaPct": 11.0,
+      "key": "10",
+      "popPct": 13.5
      },
      {
-      "areaPct": 17.1,
-      "key": "22",
-      "popPct": 17.9
-     },
-     {
-      "areaPct": 4.6,
-      "key": "21",
-      "popPct": 0.6
+      "areaPct": 3.6,
+      "key": "4",
+      "popPct": 6.7
      }
     ],
     "counties": [
@@ -2294,45 +720,25 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 45570,
+    "pop2020": 45571,
     "pres2020New": -30.2,
-    "pres2020Old": -24.4,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-8; it draws from the old SD-23 (43%), the old SD-25 (38%), the old SD-22 (18%) and 1 more. Entirely in New Castle County. 2020 presidential margin D+24.4 on the 2016\u20132020 lines \u2192 D+30.2 on the current lines.",
+    "pres2020Old": -30.3,
+    "retainedAreaPct": 85.3,
+    "retainedPopPct": 79.8,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-8; gained the rest from the old SD-10 (14%), the old SD-4 (7%). Entirely in New Castle County. 2020 presidential margin D+30.3 on the 2016\u20132020 lines \u2192 D+30.2 on the current lines.",
     "toEra": "current"
    },
    "9": {
     "contributors": [
      {
-      "areaPct": 20.9,
-      "key": "24",
-      "popPct": 32.2
+      "areaPct": 91.2,
+      "key": "9",
+      "popPct": 83.4
      },
      {
-      "areaPct": 28.5,
-      "key": "21",
-      "popPct": 31.0
-     },
-     {
-      "areaPct": 22.5,
-      "key": "18",
-      "popPct": 20.7
-     },
-     {
-      "areaPct": 11.7,
-      "key": "19",
-      "popPct": 14.7
-     },
-     {
-      "areaPct": 15.7,
-      "key": "17",
-      "popPct": 0.8
-     },
-     {
-      "areaPct": 0.6,
-      "key": "26",
-      "popPct": 0.6
+      "areaPct": 8.4,
+      "key": "11",
+      "popPct": 16.1
      }
     ],
     "counties": [
@@ -2344,12 +750,12 @@
     "countiesGained": [],
     "countiesLost": [],
     "fromEra": "2020",
-    "pop2020": 46751,
+    "pop2020": 46734,
     "pres2020New": -29.6,
-    "pres2020Old": -11.6,
-    "retainedAreaPct": 0.0,
-    "retainedPopPct": 0.0,
-    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-9; it draws from the old SD-24 (32%), the old SD-21 (31%), the old SD-18 (21%) and 3 more. Entirely in New Castle County. 2020 presidential margin D+11.6 on the 2016\u20132020 lines \u2192 D+29.6 on the current lines.",
+    "pres2020Old": -29.2,
+    "retainedAreaPct": 91.2,
+    "retainedPopPct": 83.4,
+    "text": "Kept 83% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-11 (16%). Entirely in New Castle County. 2020 presidential margin D+29.2 on the 2016\u20132020 lines \u2192 D+29.6 on the current lines.",
     "toEra": "current"
    }
   }

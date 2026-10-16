@@ -45540,1274 +45540,654 @@ export const stateLegPresByEra: Record<string, Partial<Record<Chamber, StateLegP
    "2020": {
     "1": {
      "2016": {
-      "demPct": 87.3,
-      "demVotes": 9180,
-      "margin": -77.7,
-      "othVotes": 320,
-      "repPct": 9.6,
-      "repVotes": 1014,
-      "totalVotes": 10514
+      "demPct": 68,
+      "demVotes": 15026,
+      "margin": -41.3,
+      "othVotes": 1169,
+      "repPct": 26.7,
+      "repVotes": 5890,
+      "totalVotes": 22085
      },
      "2020": {
-      "demPct": 90.1,
-      "demVotes": 9848,
-      "margin": -81.3,
-      "othVotes": 120,
-      "repPct": 8.8,
-      "repVotes": 962,
-      "totalVotes": 10930
+      "demPct": 74.3,
+      "demVotes": 17851,
+      "margin": -50.1,
+      "othVotes": 366,
+      "repPct": 24.2,
+      "repVotes": 5816,
+      "totalVotes": 24033
      },
      "2024": {
-      "demPct": 88.3,
-      "demVotes": 8728,
-      "margin": -77.9,
-      "othVotes": 131,
-      "repPct": 10.4,
-      "repVotes": 1024,
-      "totalVotes": 9883
+      "demPct": 73.2,
+      "demVotes": 16644,
+      "margin": -48,
+      "othVotes": 374,
+      "repPct": 25.2,
+      "repVotes": 5735,
+      "totalVotes": 22753
      },
-     "pop2020": 21298,
-     "splitPct": 43.6
+     "pop2020": 44827,
+     "splitPct": 48.1
     },
     "2": {
      "2016": {
-      "demPct": 88.7,
-      "demVotes": 6498,
-      "margin": -80.4,
-      "othVotes": 217,
-      "repPct": 8.3,
-      "repVotes": 608,
-      "totalVotes": 7323
+      "demPct": 87.4,
+      "demVotes": 14822,
+      "margin": -77.4,
+      "othVotes": 450,
+      "repPct": 10,
+      "repVotes": 1696,
+      "totalVotes": 16968
      },
      "2020": {
-      "demPct": 90,
-      "demVotes": 6875,
-      "margin": -80.8,
-      "othVotes": 64,
-      "repPct": 9.2,
-      "repVotes": 702,
-      "totalVotes": 7641
+      "demPct": 88.6,
+      "demVotes": 15649,
+      "margin": -78.1,
+      "othVotes": 152,
+      "repPct": 10.5,
+      "repVotes": 1859,
+      "totalVotes": 17660
      },
      "2024": {
-      "demPct": 86.5,
-      "demVotes": 6058,
-      "margin": -74.4,
-      "othVotes": 95,
-      "repPct": 12.1,
-      "repVotes": 849,
-      "totalVotes": 7002
+      "demPct": 85.3,
+      "demVotes": 13499,
+      "margin": -71.9,
+      "othVotes": 204,
+      "repPct": 13.4,
+      "repVotes": 2121,
+      "totalVotes": 15824
      },
-     "pop2020": 22074,
-     "splitPct": 72.4
+     "pop2020": 39898,
+     "splitPct": 53.9
     },
     "3": {
      "2016": {
-      "demPct": 84.6,
-      "demVotes": 6183,
-      "margin": -72,
-      "othVotes": 206,
-      "repPct": 12.6,
-      "repVotes": 922,
-      "totalVotes": 7311
+      "demPct": 83.4,
+      "demVotes": 12180,
+      "margin": -70.2,
+      "othVotes": 497,
+      "repPct": 13.2,
+      "repVotes": 1924,
+      "totalVotes": 14601
      },
      "2020": {
-      "demPct": 85.5,
-      "demVotes": 6060,
-      "margin": -71.9,
-      "othVotes": 65,
+      "demPct": 85.4,
+      "demVotes": 12833,
+      "margin": -71.8,
+      "othVotes": 150,
       "repPct": 13.6,
-      "repVotes": 961,
-      "totalVotes": 7086
+      "repVotes": 2046,
+      "totalVotes": 15029
      },
      "2024": {
-      "demPct": 82.7,
-      "demVotes": 5214,
-      "margin": -66.8,
-      "othVotes": 90,
-      "repPct": 15.9,
-      "repVotes": 1000,
-      "totalVotes": 6304
+      "demPct": 82,
+      "demVotes": 11038,
+      "margin": -65.5,
+      "othVotes": 205,
+      "repPct": 16.5,
+      "repVotes": 2225,
+      "totalVotes": 13468
      },
-     "pop2020": 20227,
-     "splitPct": 33.9
+     "pop2020": 41180,
+     "splitPct": 61.7
     },
     "4": {
      "2016": {
-      "demPct": 62.9,
-      "demVotes": 7816,
-      "margin": -31.5,
-      "othVotes": 704,
-      "repPct": 31.4,
-      "repVotes": 3902,
-      "totalVotes": 12422
+      "demPct": 53.5,
+      "demVotes": 13181,
+      "margin": -12.4,
+      "othVotes": 1321,
+      "repPct": 41.1,
+      "repVotes": 10139,
+      "totalVotes": 24641
      },
      "2020": {
-      "demPct": 70.2,
-      "demVotes": 9713,
-      "margin": -41.8,
-      "othVotes": 191,
-      "repPct": 28.4,
-      "repVotes": 3938,
-      "totalVotes": 13842
+      "demPct": 61.1,
+      "demVotes": 16590,
+      "margin": -23.6,
+      "othVotes": 399,
+      "repPct": 37.5,
+      "repVotes": 10181,
+      "totalVotes": 27170
      },
      "2024": {
-      "demPct": 69.4,
-      "demVotes": 9148,
-      "margin": -40.5,
-      "othVotes": 218,
-      "repPct": 28.9,
-      "repVotes": 3813,
-      "totalVotes": 13179
+      "demPct": 59.7,
+      "demVotes": 15611,
+      "margin": -21,
+      "othVotes": 428,
+      "repPct": 38.7,
+      "repVotes": 10125,
+      "totalVotes": 26164
      },
-     "pop2020": 22597,
-     "splitPct": 58.6
+     "pop2020": 42863,
+     "splitPct": 46.8
     },
     "5": {
      "2016": {
-      "demPct": 78.5,
-      "demVotes": 7842,
-      "margin": -60.2,
-      "othVotes": 327,
-      "repPct": 18.3,
-      "repVotes": 1825,
-      "totalVotes": 9994
+      "demPct": 57.6,
+      "demVotes": 14141,
+      "margin": -20.7,
+      "othVotes": 1338,
+      "repPct": 36.9,
+      "repVotes": 9061,
+      "totalVotes": 24540
      },
      "2020": {
-      "demPct": 81,
-      "demVotes": 8613,
-      "margin": -63,
-      "othVotes": 105,
-      "repPct": 18,
-      "repVotes": 1913,
-      "totalVotes": 10631
+      "demPct": 64.6,
+      "demVotes": 17037,
+      "margin": -30.7,
+      "othVotes": 385,
+      "repPct": 33.9,
+      "repVotes": 8931,
+      "totalVotes": 26353
      },
      "2024": {
-      "demPct": 78.3,
-      "demVotes": 7683,
-      "margin": -57.7,
-      "othVotes": 109,
-      "repPct": 20.6,
-      "repVotes": 2018,
-      "totalVotes": 9810
+      "demPct": 63.1,
+      "demVotes": 15900,
+      "margin": -27.9,
+      "othVotes": 419,
+      "repPct": 35.2,
+      "repVotes": 8866,
+      "totalVotes": 25185
      },
-     "pop2020": 23180,
-     "splitPct": 83.8
+     "pop2020": 41508,
+     "splitPct": 17.9
     },
     "6": {
      "2016": {
-      "demPct": 60.5,
-      "demVotes": 7712,
-      "margin": -26.4,
-      "othVotes": 688,
-      "repPct": 34.1,
-      "repVotes": 4343,
-      "totalVotes": 12743
+      "demPct": 46.7,
+      "demVotes": 14084,
+      "margin": 3,
+      "othVotes": 1097,
+      "repPct": 49.7,
+      "repVotes": 14994,
+      "totalVotes": 30175
      },
      "2020": {
-      "demPct": 67.4,
-      "demVotes": 9289,
-      "margin": -36.4,
-      "othVotes": 220,
-      "repPct": 31,
-      "repVotes": 4265,
-      "totalVotes": 13774
+      "demPct": 54.6,
+      "demVotes": 20982,
+      "margin": -10.2,
+      "othVotes": 368,
+      "repPct": 44.4,
+      "repVotes": 17083,
+      "totalVotes": 38433
      },
      "2024": {
-      "demPct": 66.2,
-      "demVotes": 8776,
-      "margin": -34,
-      "othVotes": 214,
-      "repPct": 32.2,
-      "repVotes": 4262,
-      "totalVotes": 13252
+      "demPct": 55.5,
+      "demVotes": 25264,
+      "margin": -12.1,
+      "othVotes": 516,
+      "repPct": 43.4,
+      "repVotes": 19763,
+      "totalVotes": 45543
      },
-     "pop2020": 22755,
-     "splitPct": 36.7
+     "pop2020": 56456,
+     "splitPct": 2.2
     },
     "7": {
      "2016": {
-      "demPct": 61.7,
-      "demVotes": 7153,
-      "margin": -28.8,
-      "othVotes": 620,
-      "repPct": 32.9,
-      "repVotes": 3815,
-      "totalVotes": 11588
+      "demPct": 55.3,
+      "demVotes": 10923,
+      "margin": -16.2,
+      "othVotes": 1106,
+      "repPct": 39.1,
+      "repVotes": 7719,
+      "totalVotes": 19748
      },
      "2020": {
-      "demPct": 68,
-      "demVotes": 8600,
-      "margin": -37.4,
-      "othVotes": 177,
-      "repPct": 30.6,
-      "repVotes": 3877,
-      "totalVotes": 12654
-     },
-     "2024": {
-      "demPct": 66.6,
-      "demVotes": 7824,
-      "margin": -34.8,
-      "othVotes": 185,
-      "repPct": 31.8,
-      "repVotes": 3742,
-      "totalVotes": 11751
-     },
-     "pop2020": 22367,
-     "splitPct": 54.7
-    },
-    "8": {
-     "2016": {
-      "demPct": 54.7,
-      "demVotes": 6324,
-      "margin": -14.3,
-      "othVotes": 569,
-      "repPct": 40.4,
-      "repVotes": 4676,
-      "totalVotes": 11569
-     },
-     "2020": {
-      "demPct": 61.4,
-      "demVotes": 8398,
-      "margin": -24.4,
-      "othVotes": 216,
-      "repPct": 37,
-      "repVotes": 5068,
-      "totalVotes": 13682
-     },
-     "2024": {
-      "demPct": 60,
-      "demVotes": 8373,
-      "margin": -21.6,
-      "othVotes": 224,
-      "repPct": 38.4,
-      "repVotes": 5354,
-      "totalVotes": 13951
-     },
-     "pop2020": 25260,
-     "splitPct": 34.5
-    },
-    "9": {
-     "2016": {
-      "demPct": 46.5,
-      "demVotes": 6233,
-      "margin": 1.6,
-      "othVotes": 716,
-      "repPct": 48.1,
-      "repVotes": 6451,
-      "totalVotes": 13400
-     },
-     "2020": {
-      "demPct": 55.1,
-      "demVotes": 10165,
-      "margin": -11.6,
-      "othVotes": 266,
-      "repPct": 43.5,
-      "repVotes": 8019,
-      "totalVotes": 18450
-     },
-     "2024": {
-      "demPct": 55.2,
-      "demVotes": 11654,
-      "margin": -11.9,
-      "othVotes": 305,
-      "repPct": 43.3,
-      "repVotes": 9149,
-      "totalVotes": 21108
-     },
-     "pop2020": 33047,
-     "splitPct": 24.4
-    },
-    "10": {
-     "2016": {
-      "demPct": 58.3,
-      "demVotes": 6622,
-      "margin": -21.8,
-      "othVotes": 586,
-      "repPct": 36.5,
-      "repVotes": 4141,
-      "totalVotes": 11349
-     },
-     "2020": {
-      "demPct": 65.1,
-      "demVotes": 7881,
-      "margin": -31.5,
-      "othVotes": 165,
-      "repPct": 33.6,
-      "repVotes": 4066,
-      "totalVotes": 12112
-     },
-     "2024": {
-      "demPct": 62.6,
-      "demVotes": 7261,
-      "margin": -26.9,
-      "othVotes": 205,
-      "repPct": 35.7,
-      "repVotes": 4141,
-      "totalVotes": 11607
-     },
-     "pop2020": 22377,
-     "splitPct": 54.6
-    },
-    "11": {
-     "2016": {
-      "demPct": 37.9,
-      "demVotes": 4602,
-      "margin": 18.8,
-      "othVotes": 653,
-      "repPct": 56.7,
-      "repVotes": 6874,
-      "totalVotes": 12129
-     },
-     "2020": {
-      "demPct": 43.9,
-      "demVotes": 6544,
-      "margin": 10.7,
-      "othVotes": 228,
-      "repPct": 54.6,
-      "repVotes": 8144,
-      "totalVotes": 14916
-     },
-     "2024": {
-      "demPct": 43.3,
-      "demVotes": 6755,
-      "margin": 11.7,
-      "othVotes": 251,
-      "repPct": 55,
-      "repVotes": 8580,
-      "totalVotes": 15586
-     },
-     "pop2020": 28843,
-     "splitPct": 54.9
-    },
-    "12": {
-     "2016": {
-      "demPct": 53,
-      "demVotes": 7672,
-      "margin": -11.5,
-      "othVotes": 799,
-      "repPct": 41.5,
-      "repVotes": 6005,
-      "totalVotes": 14476
-     },
-     "2020": {
-      "demPct": 60.8,
-      "demVotes": 9669,
-      "margin": -22.9,
-      "othVotes": 208,
-      "repPct": 37.9,
-      "repVotes": 6034,
-      "totalVotes": 15911
-     },
-     "2024": {
-      "demPct": 59.2,
-      "demVotes": 8972,
-      "margin": -20,
-      "othVotes": 245,
-      "repPct": 39.2,
-      "repVotes": 5939,
-      "totalVotes": 15156
-     },
-     "pop2020": 23520,
-     "splitPct": 30.8
-    },
-    "13": {
-     "2016": {
-      "demPct": 59.7,
-      "demVotes": 5707,
-      "margin": -24.7,
-      "othVotes": 507,
-      "repPct": 35,
-      "repVotes": 3346,
-      "totalVotes": 9560
-     },
-     "2020": {
-      "demPct": 66.3,
-      "demVotes": 6908,
-      "margin": -34.3,
-      "othVotes": 180,
-      "repPct": 32,
-      "repVotes": 3330,
-      "totalVotes": 10418
-     },
-     "2024": {
-      "demPct": 61.8,
-      "demVotes": 5899,
-      "margin": -25.3,
-      "othVotes": 163,
-      "repPct": 36.5,
-      "repVotes": 3488,
-      "totalVotes": 9550
-     },
-     "pop2020": 23545,
-     "splitPct": 32.2
-    },
-    "14": {
-     "2016": {
-      "demPct": 50.1,
-      "demVotes": 7436,
-      "margin": -3.3,
-      "othVotes": 463,
-      "repPct": 46.8,
-      "repVotes": 6950,
-      "totalVotes": 14849
-     },
-     "2020": {
-      "demPct": 57.6,
-      "demVotes": 10637,
-      "margin": -16.1,
-      "othVotes": 165,
-      "repPct": 41.5,
-      "repVotes": 7676,
-      "totalVotes": 18478
-     },
-     "2024": {
-      "demPct": 58.5,
-      "demVotes": 12830,
-      "margin": -18.1,
-      "othVotes": 226,
-      "repPct": 40.4,
-      "repVotes": 8867,
-      "totalVotes": 21923
-     },
-     "pop2020": 26889,
-     "splitPct": 18.9
-    },
-    "15": {
-     "2016": {
-      "demPct": 61.8,
-      "demVotes": 7501,
-      "margin": -28.1,
-      "othVotes": 546,
-      "repPct": 33.7,
-      "repVotes": 4087,
-      "totalVotes": 12134
-     },
-     "2020": {
-      "demPct": 67.3,
-      "demVotes": 9428,
-      "margin": -36,
-      "othVotes": 204,
-      "repPct": 31.3,
-      "repVotes": 4382,
-      "totalVotes": 14014
-     },
-     "2024": {
-      "demPct": 65,
-      "demVotes": 8854,
-      "margin": -31.6,
-      "othVotes": 211,
-      "repPct": 33.4,
-      "repVotes": 4550,
-      "totalVotes": 13615
-     },
-     "pop2020": 26803,
-     "splitPct": 21.3
-    },
-    "16": {
-     "2016": {
-      "demPct": 79.7,
-      "demVotes": 7139,
-      "margin": -62.6,
-      "othVotes": 288,
-      "repPct": 17.1,
-      "repVotes": 1529,
-      "totalVotes": 8956
-     },
-     "2020": {
-      "demPct": 81.4,
-      "demVotes": 7706,
-      "margin": -63.8,
-      "othVotes": 99,
-      "repPct": 17.6,
-      "repVotes": 1663,
-      "totalVotes": 9468
-     },
-     "2024": {
-      "demPct": 78,
-      "demVotes": 6874,
-      "margin": -57.2,
-      "othVotes": 107,
-      "repPct": 20.8,
-      "repVotes": 1832,
-      "totalVotes": 8813
-     },
-     "pop2020": 20848,
-     "splitPct": 56
-    },
-    "17": {
-     "2016": {
-      "demPct": 67.6,
-      "demVotes": 6653,
-      "margin": -39.5,
-      "othVotes": 433,
-      "repPct": 28.1,
-      "repVotes": 2763,
-      "totalVotes": 9849
-     },
-     "2020": {
-      "demPct": 72.1,
-      "demVotes": 7885,
-      "margin": -45.5,
-      "othVotes": 134,
-      "repPct": 26.6,
-      "repVotes": 2910,
-      "totalVotes": 10929
-     },
-     "2024": {
-      "demPct": 69.7,
-      "demVotes": 7014,
-      "margin": -40.7,
-      "othVotes": 131,
-      "repPct": 29,
-      "repVotes": 2919,
-      "totalVotes": 10064
-     },
-     "pop2020": 23884,
-     "splitPct": 32.3
-    },
-    "18": {
-     "2016": {
-      "demPct": 66.8,
-      "demVotes": 6340,
-      "margin": -38.6,
-      "othVotes": 477,
-      "repPct": 28.2,
-      "repVotes": 2675,
-      "totalVotes": 9492
-     },
-     "2020": {
-      "demPct": 72.5,
-      "demVotes": 7476,
-      "margin": -46.3,
-      "othVotes": 134,
-      "repPct": 26.2,
-      "repVotes": 2707,
-      "totalVotes": 10317
-     },
-     "2024": {
-      "demPct": 69.9,
-      "demVotes": 6724,
-      "margin": -41.1,
-      "othVotes": 125,
-      "repPct": 28.8,
-      "repVotes": 2771,
-      "totalVotes": 9620
-     },
-     "pop2020": 23526,
-     "splitPct": 55.6
-    },
-    "19": {
-     "2016": {
-      "demPct": 54.3,
-      "demVotes": 5458,
-      "margin": -14.1,
-      "othVotes": 547,
-      "repPct": 40.2,
-      "repVotes": 4043,
-      "totalVotes": 10048
-     },
-     "2020": {
-      "demPct": 60.5,
-      "demVotes": 6435,
-      "margin": -22.8,
-      "othVotes": 187,
-      "repPct": 37.7,
-      "repVotes": 4006,
-      "totalVotes": 10628
-     },
-     "2024": {
-      "demPct": 57.1,
-      "demVotes": 5688,
-      "margin": -16,
-      "othVotes": 177,
-      "repPct": 41.1,
-      "repVotes": 4096,
-      "totalVotes": 9961
-     },
-     "pop2020": 22644,
-     "splitPct": 37.7
-    },
-    "20": {
-     "2016": {
-      "demPct": 42.9,
-      "demVotes": 6698,
-      "margin": 10.1,
-      "othVotes": 651,
-      "repPct": 53,
-      "repVotes": 8271,
-      "totalVotes": 15620
-     },
-     "2020": {
-      "demPct": 51.4,
-      "demVotes": 10400,
-      "margin": -3.9,
-      "othVotes": 207,
-      "repPct": 47.5,
-      "repVotes": 9607,
-      "totalVotes": 20214
-     },
-     "2024": {
-      "demPct": 52.3,
-      "demVotes": 12445,
-      "margin": -5.8,
-      "othVotes": 292,
-      "repPct": 46.5,
-      "repVotes": 11071,
-      "totalVotes": 23808
-     },
-     "pop2020": 30197,
-     "splitPct": 24.6
-    },
-    "21": {
-     "2016": {
-      "demPct": 53.8,
-      "demVotes": 6490,
-      "margin": -13.5,
-      "othVotes": 720,
-      "repPct": 40.3,
-      "repVotes": 4858,
-      "totalVotes": 12068
-     },
-     "2020": {
-      "demPct": 60.7,
-      "demVotes": 7885,
-      "margin": -23.3,
-      "othVotes": 242,
-      "repPct": 37.4,
-      "repVotes": 4860,
-      "totalVotes": 12987
+      "demPct": 62,
+      "demVotes": 13095,
+      "margin": -25.7,
+      "othVotes": 368,
+      "repPct": 36.3,
+      "repVotes": 7659,
+      "totalVotes": 21122
      },
      "2024": {
       "demPct": 58.4,
-      "demVotes": 7272,
-      "margin": -18.6,
-      "othVotes": 223,
-      "repPct": 39.8,
-      "repVotes": 4950,
-      "totalVotes": 12445
-     },
-     "pop2020": 23334,
-     "splitPct": 72
-    },
-    "22": {
-     "2016": {
-      "demPct": 51.5,
-      "demVotes": 7153,
-      "margin": -8.2,
-      "othVotes": 723,
-      "repPct": 43.3,
-      "repVotes": 6008,
-      "totalVotes": 13884
-     },
-     "2020": {
-      "demPct": 59.4,
-      "demVotes": 8956,
-      "margin": -20.5,
-      "othVotes": 250,
-      "repPct": 38.9,
-      "repVotes": 5867,
-      "totalVotes": 15073
-     },
-     "2024": {
-      "demPct": 57.2,
-      "demVotes": 8223,
-      "margin": -16.3,
-      "othVotes": 266,
-      "repPct": 40.9,
-      "repVotes": 5878,
-      "totalVotes": 14367
-     },
-     "pop2020": 22983,
-     "splitPct": 56.9
-    },
-    "23": {
-     "2016": {
-      "demPct": 59.9,
-      "demVotes": 5218,
-      "margin": -26.5,
-      "othVotes": 587,
-      "repPct": 33.4,
-      "repVotes": 2912,
-      "totalVotes": 8717
-     },
-     "2020": {
-      "demPct": 67.1,
-      "demVotes": 6213,
-      "margin": -36.2,
-      "othVotes": 189,
-      "repPct": 30.9,
-      "repVotes": 2857,
-      "totalVotes": 9259
-     },
-     "2024": {
-      "demPct": 66.4,
-      "demVotes": 5735,
-      "margin": -34.6,
-      "othVotes": 155,
-      "repPct": 31.8,
-      "repVotes": 2745,
-      "totalVotes": 8635
-     },
-     "pop2020": 19631,
-     "splitPct": 13.2
-    },
-    "24": {
-     "2016": {
-      "demPct": 59.7,
-      "demVotes": 5885,
-      "margin": -25.6,
-      "othVotes": 606,
-      "repPct": 34.1,
-      "repVotes": 3363,
-      "totalVotes": 9854
-     },
-     "2020": {
-      "demPct": 65.7,
-      "demVotes": 7058,
-      "margin": -33.3,
-      "othVotes": 204,
-      "repPct": 32.4,
-      "repVotes": 3483,
-      "totalVotes": 10745
-     },
-     "2024": {
-      "demPct": 62.1,
-      "demVotes": 6056,
-      "margin": -26.3,
-      "othVotes": 202,
-      "repPct": 35.8,
-      "repVotes": 3497,
-      "totalVotes": 9755
-     },
-     "pop2020": 24080,
-     "splitPct": 53.6
-    },
-    "25": {
-     "2016": {
-      "demPct": 59.4,
-      "demVotes": 4617,
-      "margin": -25.2,
-      "othVotes": 496,
-      "repPct": 34.2,
-      "repVotes": 2656,
-      "totalVotes": 7769
-     },
-     "2020": {
-      "demPct": 67.1,
-      "demVotes": 5518,
-      "margin": -36.4,
-      "othVotes": 179,
-      "repPct": 30.7,
-      "repVotes": 2527,
-      "totalVotes": 8224
-     },
-     "2024": {
-      "demPct": 65.8,
-      "demVotes": 5043,
-      "margin": -33.2,
-      "othVotes": 127,
-      "repPct": 32.6,
-      "repVotes": 2496,
-      "totalVotes": 7666
-     },
-     "pop2020": 23348,
-     "splitPct": 21.9
-    },
-    "26": {
-     "2016": {
-      "demPct": 67.8,
-      "demVotes": 6510,
-      "margin": -40.6,
-      "othVotes": 480,
-      "repPct": 27.2,
-      "repVotes": 2606,
-      "totalVotes": 9596
-     },
-     "2020": {
-      "demPct": 72.9,
-      "demVotes": 7385,
-      "margin": -47.3,
-      "othVotes": 153,
-      "repPct": 25.6,
-      "repVotes": 2594,
-      "totalVotes": 10132
-     },
-     "2024": {
-      "demPct": 70.4,
-      "demVotes": 6554,
-      "margin": -42.3,
-      "othVotes": 140,
-      "repPct": 28.1,
-      "repVotes": 2620,
-      "totalVotes": 9314
-     },
-     "pop2020": 23320,
-     "splitPct": 66.3
-    },
-    "27": {
-     "2016": {
-      "demPct": 56.6,
-      "demVotes": 6803,
+      "demVotes": 11584,
       "margin": -18.5,
-      "othVotes": 631,
-      "repPct": 38.1,
-      "repVotes": 4575,
-      "totalVotes": 12009
+      "othVotes": 348,
+      "repPct": 39.9,
+      "repVotes": 7916,
+      "totalVotes": 19848
+     },
+     "pop2020": 42203,
+     "splitPct": 60
+    },
+    "8": {
+     "2016": {
+      "demPct": 56.5,
+      "demVotes": 10112,
+      "margin": -19.2,
+      "othVotes": 1108,
+      "repPct": 37.3,
+      "repVotes": 6663,
+      "totalVotes": 17883
      },
      "2020": {
-      "demPct": 63.9,
-      "demVotes": 8438,
-      "margin": -29.3,
-      "othVotes": 200,
-      "repPct": 34.6,
-      "repVotes": 4562,
-      "totalVotes": 13200
+      "demPct": 64.2,
+      "demVotes": 12148,
+      "margin": -30.3,
+      "othVotes": 360,
+      "repPct": 33.9,
+      "repVotes": 6404,
+      "totalVotes": 18912
      },
      "2024": {
-      "demPct": 61.5,
-      "demVotes": 7918,
-      "margin": -24.7,
-      "othVotes": 218,
-      "repPct": 36.8,
-      "repVotes": 4747,
-      "totalVotes": 12883
+      "demPct": 62.6,
+      "demVotes": 11051,
+      "margin": -27,
+      "othVotes": 325,
+      "repPct": 35.6,
+      "repVotes": 6284,
+      "totalVotes": 17660
      },
-     "pop2020": 23726,
-     "splitPct": 10.9
+     "pop2020": 42356,
+     "splitPct": 28.5
     },
-    "28": {
+    "9": {
      "2016": {
-      "demPct": 52.6,
-      "demVotes": 5556,
-      "margin": -10.2,
-      "othVotes": 531,
-      "repPct": 42.4,
-      "repVotes": 4482,
-      "totalVotes": 10569
+      "demPct": 57.3,
+      "demVotes": 10529,
+      "margin": -20.2,
+      "othVotes": 1028,
+      "repPct": 37.1,
+      "repVotes": 6815,
+      "totalVotes": 18372
      },
      "2020": {
-      "demPct": 58.6,
-      "demVotes": 7159,
-      "margin": -19,
-      "othVotes": 211,
-      "repPct": 39.6,
-      "repVotes": 4842,
-      "totalVotes": 12212
+      "demPct": 63.7,
+      "demVotes": 12687,
+      "margin": -29.2,
+      "othVotes": 352,
+      "repPct": 34.5,
+      "repVotes": 6880,
+      "totalVotes": 19919
      },
      "2024": {
-      "demPct": 58.2,
-      "demVotes": 7111,
-      "margin": -18,
-      "othVotes": 196,
-      "repPct": 40.2,
-      "repVotes": 4921,
-      "totalVotes": 12228
+      "demPct": 60.9,
+      "demVotes": 11284,
+      "margin": -23.6,
+      "othVotes": 332,
+      "repPct": 37.3,
+      "repVotes": 6922,
+      "totalVotes": 18538
      },
-     "pop2020": 25392,
-     "splitPct": 45.6
+     "pop2020": 42753,
+     "splitPct": 53.4
     },
-    "29": {
+    "10": {
      "2016": {
-      "demPct": 47.3,
-      "demVotes": 4480,
-      "margin": 0.7,
-      "othVotes": 442,
-      "repPct": 48,
-      "repVotes": 4543,
-      "totalVotes": 9465
+      "demPct": 53.9,
+      "demVotes": 12629,
+      "margin": -13.3,
+      "othVotes": 1290,
+      "repPct": 40.6,
+      "repVotes": 9500,
+      "totalVotes": 23419
      },
      "2020": {
-      "demPct": 53.1,
-      "demVotes": 6057,
-      "margin": -7.8,
-      "othVotes": 180,
-      "repPct": 45.3,
-      "repVotes": 5173,
-      "totalVotes": 11410
+      "demPct": 60.9,
+      "demVotes": 16142,
+      "margin": -23.5,
+      "othVotes": 461,
+      "repPct": 37.4,
+      "repVotes": 9902,
+      "totalVotes": 26505
      },
      "2024": {
-      "demPct": 53.5,
-      "demVotes": 6517,
-      "margin": -8.5,
-      "othVotes": 177,
-      "repPct": 45,
-      "repVotes": 5480,
-      "totalVotes": 12174
+      "demPct": 58.9,
+      "demVotes": 15583,
+      "margin": -19.5,
+      "othVotes": 460,
+      "repPct": 39.4,
+      "repVotes": 10428,
+      "totalVotes": 26471
      },
-     "pop2020": 21528,
-     "splitPct": 56.6
+     "pop2020": 47640,
+     "splitPct": 33.9
     },
-    "30": {
+    "11": {
      "2016": {
-      "demPct": 28.4,
-      "demVotes": 2787,
-      "margin": 38.3,
-      "othVotes": 483,
-      "repPct": 66.7,
-      "repVotes": 6541,
-      "totalVotes": 9811
+      "demPct": 66.5,
+      "demVotes": 12207,
+      "margin": -38.4,
+      "othVotes": 994,
+      "repPct": 28.1,
+      "repVotes": 5163,
+      "totalVotes": 18364
      },
      "2020": {
-      "demPct": 33.5,
-      "demVotes": 3799,
-      "margin": 31.4,
-      "othVotes": 184,
-      "repPct": 64.9,
-      "repVotes": 7368,
-      "totalVotes": 11351
+      "demPct": 71.5,
+      "demVotes": 14055,
+      "margin": -44.5,
+      "othVotes": 304,
+      "repPct": 27,
+      "repVotes": 5310,
+      "totalVotes": 19669
      },
      "2024": {
-      "demPct": 31.2,
-      "demVotes": 3676,
-      "margin": 35.9,
-      "othVotes": 200,
-      "repPct": 67.1,
-      "repVotes": 7903,
-      "totalVotes": 11779
+      "demPct": 68.8,
+      "demVotes": 12397,
+      "margin": -39.2,
+      "othVotes": 279,
+      "repPct": 29.6,
+      "repVotes": 5333,
+      "totalVotes": 18009
      },
-     "pop2020": 22501,
-     "splitPct": 34.9
+     "pop2020": 44298,
+     "splitPct": 51.7
     },
-    "31": {
+    "12": {
      "2016": {
-      "demPct": 60.4,
-      "demVotes": 5406,
-      "margin": -26.7,
-      "othVotes": 526,
-      "repPct": 33.7,
-      "repVotes": 3012,
-      "totalVotes": 8944
+      "demPct": 62.4,
+      "demVotes": 15683,
+      "margin": -29.1,
+      "othVotes": 1086,
+      "repPct": 33.3,
+      "repVotes": 8376,
+      "totalVotes": 25145
      },
      "2020": {
       "demPct": 67.4,
-      "demVotes": 6896,
-      "margin": -36.6,
-      "othVotes": 182,
-      "repPct": 30.8,
-      "repVotes": 3151,
-      "totalVotes": 10229
+      "demVotes": 20228,
+      "margin": -36.2,
+      "othVotes": 416,
+      "repPct": 31.2,
+      "repVotes": 9376,
+      "totalVotes": 30020
      },
      "2024": {
-      "demPct": 67.7,
-      "demVotes": 6362,
-      "margin": -37.1,
-      "othVotes": 160,
-      "repPct": 30.6,
-      "repVotes": 2871,
-      "totalVotes": 9393
+      "demPct": 65.3,
+      "demVotes": 19813,
+      "margin": -32.1,
+      "othVotes": 428,
+      "repPct": 33.2,
+      "repVotes": 10079,
+      "totalVotes": 30320
      },
-     "pop2020": 25390,
-     "splitPct": 76.2
+     "pop2020": 57011,
+     "splitPct": 32.2
     },
-    "32": {
+    "13": {
      "2016": {
-      "demPct": 54.5,
-      "demVotes": 3917,
-      "margin": -14.8,
-      "othVotes": 412,
-      "repPct": 39.7,
-      "repVotes": 2854,
-      "totalVotes": 7183
+      "demPct": 70.6,
+      "demVotes": 12865,
+      "margin": -45.4,
+      "othVotes": 767,
+      "repPct": 25.2,
+      "repVotes": 4594,
+      "totalVotes": 18226
      },
      "2020": {
-      "demPct": 61.8,
-      "demVotes": 5049,
-      "margin": -25.4,
-      "othVotes": 153,
-      "repPct": 36.4,
-      "repVotes": 2971,
-      "totalVotes": 8173
+      "demPct": 74.8,
+      "demVotes": 14694,
+      "margin": -50.7,
+      "othVotes": 221,
+      "repPct": 24.1,
+      "repVotes": 4735,
+      "totalVotes": 19650
      },
      "2024": {
-      "demPct": 59.6,
-      "demVotes": 4523,
-      "margin": -20.8,
-      "othVotes": 123,
-      "repPct": 38.8,
-      "repVotes": 2942,
-      "totalVotes": 7588
+      "demPct": 71.8,
+      "demVotes": 13109,
+      "margin": -44.8,
+      "othVotes": 219,
+      "repPct": 27,
+      "repVotes": 4919,
+      "totalVotes": 18247
      },
-     "pop2020": 21120,
-     "splitPct": 95.8
+     "pop2020": 44198,
+     "splitPct": 55
     },
-    "33": {
+    "14": {
      "2016": {
-      "demPct": 38,
-      "demVotes": 3710,
-      "margin": 18.9,
-      "othVotes": 499,
-      "repPct": 56.9,
-      "repVotes": 5555,
-      "totalVotes": 9764
-     },
-     "2020": {
-      "demPct": 43.7,
-      "demVotes": 5085,
-      "margin": 11,
-      "othVotes": 179,
-      "repPct": 54.7,
-      "repVotes": 6366,
-      "totalVotes": 11630
-     },
-     "2024": {
-      "demPct": 43,
-      "demVotes": 5217,
-      "margin": 12.4,
-      "othVotes": 188,
-      "repPct": 55.4,
-      "repVotes": 6718,
-      "totalVotes": 12123
-     },
-     "pop2020": 23222,
-     "splitPct": 36.7
-    },
-    "34": {
-     "2016": {
-      "demPct": 43.5,
-      "demVotes": 4693,
-      "margin": 7.2,
-      "othVotes": 621,
-      "repPct": 50.7,
-      "repVotes": 5474,
-      "totalVotes": 10788
-     },
-     "2020": {
-      "demPct": 52.2,
-      "demVotes": 6588,
-      "margin": -6.2,
-      "othVotes": 230,
+      "demPct": 48.9,
+      "demVotes": 12151,
+      "margin": -2.9,
+      "othVotes": 1277,
       "repPct": 46,
-      "repVotes": 5800,
-      "totalVotes": 12618
-     },
-     "2024": {
-      "demPct": 51.4,
-      "demVotes": 6557,
-      "margin": -4.7,
-      "othVotes": 245,
-      "repPct": 46.7,
-      "repVotes": 5950,
-      "totalVotes": 12752
-     },
-     "pop2020": 24168,
-     "splitPct": 70.9
-    },
-    "35": {
-     "2016": {
-      "demPct": 32.2,
-      "demVotes": 3016,
-      "margin": 32.1,
-      "othVotes": 321,
-      "repPct": 64.3,
-      "repVotes": 6019,
-      "totalVotes": 9356
+      "repVotes": 11416,
+      "totalVotes": 24844
      },
      "2020": {
-      "demPct": 36.6,
-      "demVotes": 3918,
-      "margin": 25.5,
-      "othVotes": 140,
-      "repPct": 62.1,
-      "repVotes": 6647,
-      "totalVotes": 10705
+      "demPct": 56,
+      "demVotes": 17200,
+      "margin": -13.5,
+      "othVotes": 456,
+      "repPct": 42.5,
+      "repVotes": 13053,
+      "totalVotes": 30709
      },
      "2024": {
-      "demPct": 33.7,
-      "demVotes": 3724,
-      "margin": 31.4,
-      "othVotes": 126,
-      "repPct": 65.1,
-      "repVotes": 7196,
-      "totalVotes": 11046
+      "demPct": 55.7,
+      "demVotes": 17914,
+      "margin": -12.8,
+      "othVotes": 473,
+      "repPct": 42.9,
+      "repVotes": 13787,
+      "totalVotes": 32174
      },
-     "pop2020": 22181,
-     "splitPct": 0.1
+     "pop2020": 58800,
+     "splitPct": 30
     },
-    "36": {
+    "15": {
      "2016": {
-      "demPct": 36.1,
-      "demVotes": 3497,
-      "margin": 23.4,
-      "othVotes": 423,
-      "repPct": 59.5,
-      "repVotes": 5770,
-      "totalVotes": 9690
+      "demPct": 38.1,
+      "demVotes": 8178,
+      "margin": 18.9,
+      "othVotes": 1047,
+      "repPct": 57,
+      "repVotes": 12252,
+      "totalVotes": 21477
      },
      "2020": {
-      "demPct": 43.1,
-      "demVotes": 4933,
-      "margin": 12.3,
-      "othVotes": 173,
-      "repPct": 55.4,
-      "repVotes": 6341,
-      "totalVotes": 11447
+      "demPct": 43.8,
+      "demVotes": 11278,
+      "margin": 10.8,
+      "othVotes": 411,
+      "repPct": 54.6,
+      "repVotes": 14071,
+      "totalVotes": 25760
      },
      "2024": {
-      "demPct": 43,
-      "demVotes": 5592,
-      "margin": 12.5,
-      "othVotes": 198,
-      "repPct": 55.5,
-      "repVotes": 7211,
-      "totalVotes": 13001
-     },
-     "pop2020": 23797,
-     "splitPct": 26.4
-    },
-    "37": {
-     "2016": {
-      "demPct": 37.6,
-      "demVotes": 4209,
-      "margin": 21.4,
-      "othVotes": 372,
-      "repPct": 59,
-      "repVotes": 6601,
-      "totalVotes": 11182
-     },
-     "2020": {
       "demPct": 43.7,
-      "demVotes": 6152,
-      "margin": 11.6,
-      "othVotes": 151,
-      "repPct": 55.3,
-      "repVotes": 7790,
-      "totalVotes": 14093
+      "demVotes": 12048,
+      "margin": 11,
+      "othVotes": 443,
+      "repPct": 54.7,
+      "repVotes": 15081,
+      "totalVotes": 27572
      },
-     "2024": {
-      "demPct": 43.6,
-      "demVotes": 7361,
-      "margin": 11.6,
-      "othVotes": 198,
-      "repPct": 55.2,
-      "repVotes": 9326,
-      "totalVotes": 16885
-     },
-     "pop2020": 30081,
-     "splitPct": 9.4
+     "pop2020": 49505,
+     "splitPct": 42.8
     },
-    "38": {
+    "16": {
      "2016": {
-      "demPct": 32.8,
-      "demVotes": 5131,
-      "margin": 31.4,
-      "othVotes": 475,
-      "repPct": 64.2,
-      "repVotes": 10055,
-      "totalVotes": 15661
+      "demPct": 43.7,
+      "demVotes": 9548,
+      "margin": 6.9,
+      "othVotes": 1229,
+      "repPct": 50.6,
+      "repVotes": 11051,
+      "totalVotes": 21828
      },
      "2020": {
-      "demPct": 40.4,
-      "demVotes": 8416,
-      "margin": 18.4,
-      "othVotes": 186,
-      "repPct": 58.8,
-      "repVotes": 12253,
-      "totalVotes": 20855
+      "demPct": 51.3,
+      "demVotes": 13128,
+      "margin": -4.3,
+      "othVotes": 440,
+      "repPct": 47,
+      "repVotes": 12043,
+      "totalVotes": 25611
      },
      "2024": {
-      "demPct": 41.7,
-      "demVotes": 10363,
-      "margin": 15.5,
-      "othVotes": 267,
-      "repPct": 57.2,
-      "repVotes": 14207,
-      "totalVotes": 24837
+      "demPct": 50,
+      "demVotes": 12880,
+      "margin": -1.8,
+      "othVotes": 449,
+      "repPct": 48.2,
+      "repVotes": 12414,
+      "totalVotes": 25743
      },
-     "pop2020": 30003,
-     "splitPct": 0
+     "pop2020": 53639,
+     "splitPct": 33.4
     },
-    "39": {
+    "17": {
+     "2016": {
+      "demPct": 58.3,
+      "demVotes": 9215,
+      "margin": -22.3,
+      "othVotes": 903,
+      "repPct": 36,
+      "repVotes": 5681,
+      "totalVotes": 15799
+     },
+     "2020": {
+      "demPct": 65.3,
+      "demVotes": 11686,
+      "margin": -32.4,
+      "othVotes": 327,
+      "repPct": 32.9,
+      "repVotes": 5896,
+      "totalVotes": 17909
+     },
+     "2024": {
+      "demPct": 65,
+      "demVotes": 10745,
+      "margin": -31.6,
+      "othVotes": 279,
+      "repPct": 33.4,
+      "repVotes": 5517,
+      "totalVotes": 16541
+     },
+     "pop2020": 41774,
+     "splitPct": 42.1
+    },
+    "18": {
+     "2016": {
+      "demPct": 33.6,
+      "demVotes": 6745,
+      "margin": 28.3,
+      "othVotes": 899,
+      "repPct": 61.9,
+      "repVotes": 12403,
+      "totalVotes": 20047
+     },
+     "2020": {
+      "demPct": 39.2,
+      "demVotes": 9117,
+      "margin": 20.1,
+      "othVotes": 357,
+      "repPct": 59.3,
+      "repVotes": 13785,
+      "totalVotes": 23259
+     },
+     "2024": {
+      "demPct": 38,
+      "demVotes": 9460,
+      "margin": 22.5,
+      "othVotes": 375,
+      "repPct": 60.5,
+      "repVotes": 15067,
+      "totalVotes": 24902
+     },
+     "pop2020": 47963,
+     "splitPct": 8.7
+    },
+    "19": {
+     "2016": {
+      "demPct": 35.1,
+      "demVotes": 6903,
+      "margin": 26.3,
+      "othVotes": 696,
+      "repPct": 61.4,
+      "repVotes": 12094,
+      "totalVotes": 19693
+     },
+     "2020": {
+      "demPct": 40.8,
+      "demVotes": 9560,
+      "margin": 17.3,
+      "othVotes": 272,
+      "repPct": 58.1,
+      "repVotes": 13616,
+      "totalVotes": 23448
+     },
+     "2024": {
+      "demPct": 39.5,
+      "demVotes": 10219,
+      "margin": 19.8,
+      "othVotes": 317,
+      "repPct": 59.3,
+      "repVotes": 15358,
+      "totalVotes": 25894
+     },
+     "pop2020": 50446,
+     "splitPct": 19.2
+    },
+    "20": {
      "2016": {
       "demPct": 34.5,
-      "demVotes": 3215,
-      "margin": 26.9,
-      "othVotes": 391,
-      "repPct": 61.4,
-      "repVotes": 5725,
-      "totalVotes": 9331
+      "demVotes": 8742,
+      "margin": 27.8,
+      "othVotes": 805,
+      "repPct": 62.3,
+      "repVotes": 15768,
+      "totalVotes": 25315
      },
      "2020": {
-      "demPct": 39.3,
-      "demVotes": 3974,
-      "margin": 19.8,
-      "othVotes": 161,
-      "repPct": 59.1,
-      "repVotes": 5974,
-      "totalVotes": 10109
+      "demPct": 41.2,
+      "demVotes": 13707,
+      "margin": 16.6,
+      "othVotes": 312,
+      "repPct": 57.8,
+      "repVotes": 19216,
+      "totalVotes": 33235
      },
      "2024": {
-      "demPct": 38.1,
-      "demVotes": 3930,
-      "margin": 22.4,
-      "othVotes": 142,
-      "repPct": 60.5,
-      "repVotes": 6243,
-      "totalVotes": 10315
+      "demPct": 41.6,
+      "demVotes": 16301,
+      "margin": 15.7,
+      "othVotes": 454,
+      "repPct": 57.3,
+      "repVotes": 22467,
+      "totalVotes": 39222
      },
-     "pop2020": 24151,
-     "splitPct": 12
+     "pop2020": 54405,
+     "splitPct": 7.3
     },
-    "40": {
+    "21": {
      "2016": {
-      "demPct": 26.7,
-      "demVotes": 2613,
-      "margin": 42.4,
-      "othVotes": 402,
-      "repPct": 69.1,
-      "repVotes": 6755,
-      "totalVotes": 9770
+      "demPct": 29.6,
+      "demVotes": 5290,
+      "margin": 36.7,
+      "othVotes": 729,
+      "repPct": 66.3,
+      "repVotes": 11863,
+      "totalVotes": 17882
      },
      "2020": {
-      "demPct": 30.8,
-      "demVotes": 3298,
-      "margin": 37.2,
-      "othVotes": 127,
-      "repPct": 68,
-      "repVotes": 7271,
-      "totalVotes": 10696
-     },
-     "2024": {
-      "demPct": 27.5,
-      "demVotes": 3179,
-      "margin": 43.7,
-      "othVotes": 145,
-      "repPct": 71.2,
-      "repVotes": 8226,
-      "totalVotes": 11550
-     },
-     "pop2020": 24497,
-     "splitPct": 0
-    },
-    "41": {
-     "2016": {
       "demPct": 33.7,
-      "demVotes": 3479,
-      "margin": 28.9,
-      "othVotes": 378,
-      "repPct": 62.6,
-      "repVotes": 6458,
-      "totalVotes": 10315
-     },
-     "2020": {
-      "demPct": 38.9,
-      "demVotes": 4961,
-      "margin": 21.2,
-      "othVotes": 130,
-      "repPct": 60.1,
-      "repVotes": 7676,
-      "totalVotes": 12767
+      "demVotes": 6601,
+      "margin": 31.3,
+      "othVotes": 262,
+      "repPct": 65,
+      "repVotes": 12741,
+      "totalVotes": 19604
      },
      "2024": {
-      "demPct": 37.2,
-      "demVotes": 5246,
-      "margin": 24.3,
-      "othVotes": 180,
-      "repPct": 61.5,
-      "repVotes": 8670,
-      "totalVotes": 14096
+      "demPct": 31.8,
+      "demVotes": 6589,
+      "margin": 35.1,
+      "othVotes": 253,
+      "repPct": 66.9,
+      "repVotes": 13855,
+      "totalVotes": 20697
      },
-     "pop2020": 25614,
-     "splitPct": 0
+     "pop2020": 46225,
+     "splitPct": 12
     }
    },
    "current": {
@@ -419854,3228 +419234,407 @@ export const stateLegPresByEra: Record<string, Partial<Record<Chamber, StateLegP
   },
   "senate": {
    "2020": {
-    "Addison-1 State House District": {
+    "Addison": {
      "2016": {
-      "demPct": 73.1,
-      "demVotes": 2682,
-      "margin": -56.9,
-      "othVotes": 390,
-      "repPct": 16.2,
-      "repVotes": 595,
-      "totalVotes": 3667
-     },
-     "2020": {
-      "demPct": 80.3,
-      "demVotes": 3479,
-      "margin": -63.4,
-      "othVotes": 120,
-      "repPct": 16.9,
-      "repVotes": 732,
-      "totalVotes": 4331
-     },
-     "2024": {
-      "demPct": 77,
-      "demVotes": 3388,
-      "margin": -57.8,
-      "othVotes": 169,
-      "repPct": 19.2,
-      "repVotes": 845,
-      "totalVotes": 4402
-     },
-     "pop2020": 9152,
-     "splitPct": 0
-    },
-    "Addison-2 State House District": {
-     "2016": {
-      "demPct": 58.8,
-      "demVotes": 1411,
-      "margin": -30.2,
-      "othVotes": 304,
-      "repPct": 28.6,
-      "repVotes": 686,
-      "totalVotes": 2401
-     },
-     "2020": {
-      "demPct": 66.7,
-      "demVotes": 1824,
-      "margin": -37.4,
-      "othVotes": 110,
-      "repPct": 29.3,
-      "repVotes": 800,
-      "totalVotes": 2734
-     },
-     "2024": {
-      "demPct": 65.7,
-      "demVotes": 1895,
-      "margin": -34.7,
-      "othVotes": 96,
-      "repPct": 31,
-      "repVotes": 893,
-      "totalVotes": 2884
-     },
-     "pop2020": 4688,
-     "splitPct": 0
-    },
-    "Addison-3 State House District": {
-     "2016": {
-      "demPct": 53.3,
-      "demVotes": 2248,
-      "margin": -20.7,
-      "othVotes": 593,
-      "repPct": 32.6,
-      "repVotes": 1373,
-      "totalVotes": 4214
-     },
-     "2020": {
-      "demPct": 64,
-      "demVotes": 3150,
-      "margin": -31.4,
-      "othVotes": 167,
-      "repPct": 32.6,
-      "repVotes": 1607,
-      "totalVotes": 4924
-     },
-     "2024": {
-      "demPct": 62.9,
-      "demVotes": 3182,
-      "margin": -30.4,
-      "othVotes": 231,
-      "repPct": 32.5,
-      "repVotes": 1644,
-      "totalVotes": 5057
-     },
-     "pop2020": 7656,
-     "splitPct": 0
-    },
-    "Addison-4 State House District": {
-     "2016": {
-      "demPct": 57.2,
-      "demVotes": 2774,
-      "margin": -29.1,
-      "othVotes": 714,
-      "repPct": 28.1,
-      "repVotes": 1362,
-      "totalVotes": 4850
-     },
-     "2020": {
-      "demPct": 67.5,
-      "demVotes": 3801,
-      "margin": -38.5,
-      "othVotes": 199,
-      "repPct": 29,
-      "repVotes": 1630,
-      "totalVotes": 5630
-     },
-     "2024": {
-      "demPct": 65,
-      "demVotes": 3788,
-      "margin": -33.8,
-      "othVotes": 221,
-      "repPct": 31.2,
-      "repVotes": 1821,
-      "totalVotes": 5830
-     },
-     "pop2020": 8940,
-     "splitPct": 0
-    },
-    "Addison-5 State House District": {
-     "2016": {
-      "demPct": 57.7,
-      "demVotes": 1301,
-      "margin": -27.2,
-      "othVotes": 266,
-      "repPct": 30.5,
-      "repVotes": 689,
-      "totalVotes": 2256
-     },
-     "2020": {
-      "demPct": 65.1,
-      "demVotes": 1641,
-      "margin": -33.6,
-      "othVotes": 86,
-      "repPct": 31.5,
-      "repVotes": 795,
-      "totalVotes": 2522
-     },
-     "2024": {
-      "demPct": 61.5,
-      "demVotes": 1556,
-      "margin": -26.9,
-      "othVotes": 97,
-      "repPct": 34.6,
-      "repVotes": 876,
-      "totalVotes": 2529
-     },
-     "pop2020": 3722,
-     "splitPct": 0
-    },
-    "Addison-Rutland State House District": {
-     "2016": {
-      "demPct": 46.8,
-      "demVotes": 937,
-      "margin": -7.1,
-      "othVotes": 271,
-      "repPct": 39.7,
-      "repVotes": 795,
-      "totalVotes": 2003
-     },
-     "2020": {
-      "demPct": 52,
-      "demVotes": 1194,
-      "margin": -8.3,
-      "othVotes": 98,
-      "repPct": 43.7,
-      "repVotes": 1003,
-      "totalVotes": 2295
-     },
-     "2024": {
-      "demPct": 50.8,
-      "demVotes": 1205,
-      "margin": -5.6,
-      "othVotes": 93,
-      "repPct": 45.2,
-      "repVotes": 1072,
-      "totalVotes": 2370
-     },
-     "pop2020": 3878,
-     "splitPct": 0
-    },
-    "Bennington-1 State House District": {
-     "2016": {
-      "demPct": 47.4,
-      "demVotes": 855,
-      "margin": -6,
-      "othVotes": 203,
-      "repPct": 41.4,
-      "repVotes": 747,
-      "totalVotes": 1805
-     },
-     "2020": {
-      "demPct": 50,
-      "demVotes": 987,
-      "margin": -3,
-      "othVotes": 60,
-      "repPct": 47,
-      "repVotes": 927,
-      "totalVotes": 1974
-     },
-     "2024": {
-      "demPct": 46,
-      "demVotes": 940,
-      "margin": 5.2,
-      "othVotes": 56,
-      "repPct": 51.2,
-      "repVotes": 1046,
-      "totalVotes": 2042
-     },
-     "pop2020": 3613,
-     "splitPct": 0
-    },
-    "Bennington-2-1 State House District": {
-     "2016": {
-      "demPct": 57.9,
-      "demVotes": 1764,
-      "margin": -26.1,
-      "othVotes": 312,
-      "repPct": 31.8,
-      "repVotes": 970,
-      "totalVotes": 3046
-     },
-     "2020": {
-      "demPct": 62.7,
-      "demVotes": 2226,
-      "margin": -29.1,
-      "othVotes": 130,
-      "repPct": 33.6,
-      "repVotes": 1193,
-      "totalVotes": 3549
-     },
-     "2024": {
-      "demPct": 61.3,
-      "demVotes": 2157,
-      "margin": -26.1,
-      "othVotes": 120,
-      "repPct": 35.2,
-      "repVotes": 1239,
-      "totalVotes": 3516
-     },
-     "pop2020": 7795,
-     "splitPct": 0
-    },
-    "Bennington-2-2 State House District": {
-     "2016": {
-      "demPct": 53.6,
-      "demVotes": 1597,
-      "margin": -20.7,
-      "othVotes": 403,
-      "repPct": 32.9,
-      "repVotes": 979,
-      "totalVotes": 2979
-     },
-     "2020": {
-      "demPct": 60.4,
-      "demVotes": 2143,
-      "margin": -24.3,
-      "othVotes": 124,
-      "repPct": 36.1,
-      "repVotes": 1280,
-      "totalVotes": 3547
-     },
-     "2024": {
-      "demPct": 56.8,
-      "demVotes": 2078,
-      "margin": -17.2,
-      "othVotes": 132,
-      "repPct": 39.6,
-      "repVotes": 1451,
-      "totalVotes": 3661
-     },
-     "pop2020": 7538,
-     "splitPct": 0
-    },
-    "Bennington-3 State House District": {
-     "2016": {
-      "demPct": 52.8,
-      "demVotes": 1195,
-      "margin": -16.5,
-      "othVotes": 247,
-      "repPct": 36.3,
-      "repVotes": 820,
-      "totalVotes": 2262
-     },
-     "2020": {
-      "demPct": 60.2,
-      "demVotes": 1680,
-      "margin": -23.4,
-      "othVotes": 84,
-      "repPct": 36.8,
-      "repVotes": 1026,
-      "totalVotes": 2790
-     },
-     "2024": {
-      "demPct": 58.8,
-      "demVotes": 1655,
-      "margin": -20.4,
-      "othVotes": 78,
-      "repPct": 38.4,
-      "repVotes": 1080,
-      "totalVotes": 2813
-     },
-     "pop2020": 4522,
-     "splitPct": 20.4
-    },
-    "Bennington-4 State House District": {
-     "2016": {
-      "demPct": 57,
-      "demVotes": 2251,
-      "margin": -25.1,
-      "othVotes": 436,
-      "repPct": 31.9,
-      "repVotes": 1261,
-      "totalVotes": 3948
-     },
-     "2020": {
-      "demPct": 67.5,
-      "demVotes": 3113,
-      "margin": -37.8,
-      "othVotes": 126,
-      "repPct": 29.7,
-      "repVotes": 1371,
-      "totalVotes": 4610
-     },
-     "2024": {
-      "demPct": 65.3,
-      "demVotes": 3050,
-      "margin": -34,
-      "othVotes": 159,
-      "repPct": 31.3,
-      "repVotes": 1464,
-      "totalVotes": 4673
-     },
-     "pop2020": 7469,
-     "splitPct": 1.9
-    },
-    "Bennington-Rutland State House District": {
-     "2016": {
-      "demPct": 56.4,
-      "demVotes": 1274,
-      "margin": -23.7,
-      "othVotes": 246,
-      "repPct": 32.7,
-      "repVotes": 739,
-      "totalVotes": 2259
-     },
-     "2020": {
-      "demPct": 62.9,
-      "demVotes": 1709,
-      "margin": -28.8,
-      "othVotes": 83,
-      "repPct": 34.1,
-      "repVotes": 927,
-      "totalVotes": 2719
-     },
-     "2024": {
-      "demPct": 60.9,
-      "demVotes": 1673,
-      "margin": -26,
-      "othVotes": 114,
-      "repPct": 34.9,
-      "repVotes": 958,
-      "totalVotes": 2745
-     },
-     "pop2020": 4335,
-     "splitPct": 0
-    },
-    "Caledonia-1 State House District": {
-     "2016": {
-      "demPct": 46.1,
-      "demVotes": 1029,
-      "margin": -4.2,
-      "othVotes": 269,
-      "repPct": 41.9,
-      "repVotes": 935,
-      "totalVotes": 2233
-     },
-     "2020": {
-      "demPct": 53.4,
-      "demVotes": 1374,
-      "margin": -9.8,
-      "othVotes": 78,
-      "repPct": 43.6,
-      "repVotes": 1122,
-      "totalVotes": 2574
-     },
-     "2024": {
-      "demPct": 51.4,
-      "demVotes": 1360,
-      "margin": -6.6,
-      "othVotes": 102,
-      "repPct": 44.8,
-      "repVotes": 1185,
-      "totalVotes": 2647
-     },
-     "pop2020": 4096,
-     "splitPct": 0
-    },
-    "Caledonia-2 State House District": {
-     "2016": {
-      "demPct": 47.9,
-      "demVotes": 955,
-      "margin": -13.3,
-      "othVotes": 349,
-      "repPct": 34.6,
-      "repVotes": 691,
-      "totalVotes": 1995
-     },
-     "2020": {
-      "demPct": 59.9,
-      "demVotes": 1365,
-      "margin": -24.3,
-      "othVotes": 101,
-      "repPct": 35.6,
-      "repVotes": 811,
-      "totalVotes": 2277
-     },
-     "2024": {
-      "demPct": 57.7,
-      "demVotes": 1317,
-      "margin": -20.1,
-      "othVotes": 108,
-      "repPct": 37.6,
-      "repVotes": 858,
-      "totalVotes": 2283
-     },
-     "pop2020": 4084,
-     "splitPct": 0
-    },
-    "Caledonia-3 State House District": {
-     "2016": {
-      "demPct": 48.8,
-      "demVotes": 1469,
-      "margin": -11.9,
-      "othVotes": 431,
-      "repPct": 36.9,
-      "repVotes": 1110,
-      "totalVotes": 3010
-     },
-     "2020": {
-      "demPct": 60.2,
-      "demVotes": 2034,
-      "margin": -24.1,
-      "othVotes": 125,
-      "repPct": 36.1,
-      "repVotes": 1218,
-      "totalVotes": 3377
-     },
-     "2024": {
-      "demPct": 58.2,
-      "demVotes": 2021,
-      "margin": -21.4,
-      "othVotes": 176,
-      "repPct": 36.8,
-      "repVotes": 1277,
-      "totalVotes": 3474
-     },
-     "pop2020": 7364,
-     "splitPct": 0
-    },
-    "Caledonia-4 State House District": {
-     "2016": {
-      "demPct": 41.6,
-      "demVotes": 1376,
-      "margin": 1.9,
-      "othVotes": 496,
-      "repPct": 43.5,
-      "repVotes": 1439,
-      "totalVotes": 3311
-     },
-     "2020": {
-      "demPct": 50.9,
-      "demVotes": 1986,
-      "margin": -5.4,
-      "othVotes": 140,
-      "repPct": 45.5,
-      "repVotes": 1777,
-      "totalVotes": 3903
-     },
-     "2024": {
-      "demPct": 49,
-      "demVotes": 1998,
-      "margin": -2.2,
-      "othVotes": 170,
-      "repPct": 46.8,
-      "repVotes": 1909,
-      "totalVotes": 4077
-     },
-     "pop2020": 8055,
-     "splitPct": 0
-    },
-    "Caledonia-Washington State House District": {
-     "2016": {
-      "demPct": 51.7,
-      "demVotes": 1330,
-      "margin": -18.3,
-      "othVotes": 385,
-      "repPct": 33.4,
-      "repVotes": 859,
-      "totalVotes": 2574
-     },
-     "2020": {
-      "demPct": 61.5,
-      "demVotes": 1770,
-      "margin": -26.9,
-      "othVotes": 114,
-      "repPct": 34.6,
-      "repVotes": 996,
-      "totalVotes": 2880
-     },
-     "2024": {
-      "demPct": 60,
-      "demVotes": 1770,
-      "margin": -24.4,
-      "othVotes": 128,
-      "repPct": 35.6,
-      "repVotes": 1050,
-      "totalVotes": 2948
-     },
-     "pop2020": 4493,
-     "splitPct": 0
-    },
-    "Chittenden-1 State House District": {
-     "2016": {
-      "demPct": 67.1,
-      "demVotes": 1694,
-      "margin": -46.7,
-      "othVotes": 315,
-      "repPct": 20.4,
-      "repVotes": 515,
-      "totalVotes": 2524
-     },
-     "2020": {
-      "demPct": 77.8,
-      "demVotes": 2287,
-      "margin": -58.4,
-      "othVotes": 82,
-      "repPct": 19.4,
-      "repVotes": 572,
-      "totalVotes": 2941
-     },
-     "2024": {
-      "demPct": 76.8,
-      "demVotes": 2203,
-      "margin": -57.4,
-      "othVotes": 110,
-      "repPct": 19.4,
-      "repVotes": 557,
-      "totalVotes": 2870
-     },
-     "pop2020": 4167,
-     "splitPct": 0
-    },
-    "Chittenden-10 State House District": {
-     "2016": {
-      "demPct": 44.6,
-      "demVotes": 1155,
-      "margin": -3.5,
-      "othVotes": 370,
-      "repPct": 41.1,
-      "repVotes": 1065,
-      "totalVotes": 2590
-     },
-     "2020": {
-      "demPct": 54.2,
-      "demVotes": 1708,
-      "margin": -11.8,
-      "othVotes": 108,
-      "repPct": 42.4,
-      "repVotes": 1335,
-      "totalVotes": 3151
-     },
-     "2024": {
-      "demPct": 52.7,
-      "demVotes": 1703,
-      "margin": -8.9,
-      "othVotes": 113,
-      "repPct": 43.8,
-      "repVotes": 1417,
-      "totalVotes": 3233
-     },
-     "pop2020": 5478,
-     "splitPct": 100
-    },
-    "Chittenden-2 State House District": {
-     "2016": {
-      "demPct": 62.6,
-      "demVotes": 3527,
-      "margin": -36.2,
-      "othVotes": 617,
-      "repPct": 26.4,
-      "repVotes": 1488,
-      "totalVotes": 5632
-     },
-     "2020": {
-      "demPct": 72.2,
-      "demVotes": 4988,
-      "margin": -47.5,
-      "othVotes": 214,
-      "repPct": 24.7,
-      "repVotes": 1707,
-      "totalVotes": 6909
-     },
-     "2024": {
-      "demPct": 73,
-      "demVotes": 5056,
-      "margin": -49.2,
-      "othVotes": 220,
-      "repPct": 23.8,
-      "repVotes": 1652,
-      "totalVotes": 6928
-     },
-     "pop2020": 10162,
-     "splitPct": 0.5
-    },
-    "Chittenden-3 State House District": {
-     "2016": {
-      "demPct": 61.5,
-      "demVotes": 3255,
-      "margin": -35.1,
-      "othVotes": 640,
-      "repPct": 26.4,
-      "repVotes": 1394,
-      "totalVotes": 5289
-     },
-     "2020": {
-      "demPct": 72.9,
-      "demVotes": 4290,
-      "margin": -48.6,
-      "othVotes": 165,
-      "repPct": 24.3,
-      "repVotes": 1431,
-      "totalVotes": 5886
-     },
-     "2024": {
-      "demPct": 72.7,
-      "demVotes": 4239,
-      "margin": -48.9,
-      "othVotes": 203,
-      "repPct": 23.8,
-      "repVotes": 1388,
-      "totalVotes": 5830
-     },
-     "pop2020": 8233,
-     "splitPct": 0
-    },
-    "Chittenden-4-1 State House District": {
-     "2016": {
-      "demPct": 69.8,
-      "demVotes": 1836,
-      "margin": -49.8,
-      "othVotes": 266,
-      "repPct": 20,
-      "repVotes": 527,
-      "totalVotes": 2629
-     },
-     "2020": {
-      "demPct": 79,
-      "demVotes": 2340,
-      "margin": -61.1,
-      "othVotes": 92,
-      "repPct": 17.9,
-      "repVotes": 529,
-      "totalVotes": 2961
-     },
-     "2024": {
-      "demPct": 78.2,
-      "demVotes": 2263,
-      "margin": -60.2,
-      "othVotes": 111,
-      "repPct": 18,
-      "repVotes": 520,
-      "totalVotes": 2894
-     },
-     "pop2020": 4026,
-     "splitPct": 2.5
-    },
-    "Chittenden-4-2 State House District": {
-     "2016": {
-      "demPct": 64.8,
-      "demVotes": 1684,
-      "margin": -41.4,
-      "othVotes": 307,
-      "repPct": 23.4,
-      "repVotes": 608,
-      "totalVotes": 2599
-     },
-     "2020": {
-      "demPct": 73.1,
-      "demVotes": 2199,
-      "margin": -48.8,
-      "othVotes": 79,
-      "repPct": 24.3,
-      "repVotes": 731,
-      "totalVotes": 3009
-     },
-     "2024": {
-      "demPct": 73.8,
-      "demVotes": 2266,
-      "margin": -50.7,
-      "othVotes": 97,
-      "repPct": 23.1,
-      "repVotes": 709,
-      "totalVotes": 3072
-     },
-     "pop2020": 4584,
-     "splitPct": 100
-    },
-    "Chittenden-5-1 State House District": {
-     "2016": {
-      "demPct": 70.8,
-      "demVotes": 2467,
-      "margin": -51.1,
-      "othVotes": 331,
-      "repPct": 19.7,
-      "repVotes": 685,
-      "totalVotes": 3483
-     },
-     "2020": {
-      "demPct": 80.4,
-      "demVotes": 3171,
-      "margin": -62.8,
-      "othVotes": 79,
-      "repPct": 17.6,
-      "repVotes": 694,
-      "totalVotes": 3944
-     },
-     "2024": {
-      "demPct": 80.5,
-      "demVotes": 3254,
-      "margin": -64,
-      "othVotes": 122,
-      "repPct": 16.5,
-      "repVotes": 666,
-      "totalVotes": 4042
-     },
-     "pop2020": 5616,
-     "splitPct": 100
-    },
-    "Chittenden-5-2 State House District": {
-     "2016": {
-      "demPct": 67.6,
-      "demVotes": 1123,
-      "margin": -45.6,
-      "othVotes": 172,
-      "repPct": 22,
-      "repVotes": 366,
-      "totalVotes": 1661
-     },
-     "2020": {
-      "demPct": 77.6,
-      "demVotes": 1497,
-      "margin": -57.3,
-      "othVotes": 41,
-      "repPct": 20.3,
-      "repVotes": 391,
-      "totalVotes": 1929
-     },
-     "2024": {
-      "demPct": 76.5,
-      "demVotes": 1522,
-      "margin": -56.3,
-      "othVotes": 65,
-      "repPct": 20.2,
-      "repVotes": 402,
-      "totalVotes": 1989
-     },
-     "pop2020": 2895,
-     "splitPct": 76.9
-    },
-    "Chittenden-6-1 State House District": {
-     "2016": {
-      "demPct": 69.4,
-      "demVotes": 1325,
-      "margin": -51.7,
-      "othVotes": 245,
-      "repPct": 17.7,
-      "repVotes": 338,
-      "totalVotes": 1908
-     },
-     "2020": {
-      "demPct": 80.3,
-      "demVotes": 1775,
-      "margin": -63.6,
-      "othVotes": 65,
-      "repPct": 16.7,
-      "repVotes": 370,
-      "totalVotes": 2210
-     },
-     "2024": {
-      "demPct": 78.8,
-      "demVotes": 1681,
-      "margin": -61.4,
-      "othVotes": 81,
-      "repPct": 17.4,
-      "repVotes": 370,
-      "totalVotes": 2132
-     },
-     "pop2020": 3600,
-     "splitPct": 100
-    },
-    "Chittenden-6-2 State House District": {
-     "2016": {
-      "demPct": 74.4,
-      "demVotes": 6561,
-      "margin": -62,
-      "othVotes": 1164,
-      "repPct": 12.4,
-      "repVotes": 1096,
-      "totalVotes": 8821
-     },
-     "2020": {
-      "demPct": 85.1,
-      "demVotes": 8632,
-      "margin": -73.3,
-      "othVotes": 316,
-      "repPct": 11.8,
-      "repVotes": 1199,
-      "totalVotes": 10147
-     },
-     "2024": {
-      "demPct": 82.8,
-      "demVotes": 8084,
-      "margin": -70.4,
-      "othVotes": 467,
-      "repPct": 12.4,
-      "repVotes": 1212,
-      "totalVotes": 9763
-     },
-     "pop2020": 18207,
-     "splitPct": 100
-    },
-    "Chittenden-6-3 State House District": {
-     "2016": {
-      "demPct": 78.3,
-      "demVotes": 1043,
-      "margin": -70.2,
-      "othVotes": 181,
-      "repPct": 8.1,
-      "repVotes": 108,
-      "totalVotes": 1332
-     },
-     "2020": {
-      "demPct": 88.8,
-      "demVotes": 1338,
-      "margin": -81,
-      "othVotes": 51,
-      "repPct": 7.8,
-      "repVotes": 118,
-      "totalVotes": 1507
-     },
-     "2024": {
-      "demPct": 85.3,
-      "demVotes": 1160,
-      "margin": -76.5,
-      "othVotes": 81,
-      "repPct": 8.8,
-      "repVotes": 119,
-      "totalVotes": 1360
-     },
-     "pop2020": 3253,
-     "splitPct": 100
-    },
-    "Chittenden-6-4 State House District": {
-     "2016": {
-      "demPct": 83.2,
-      "demVotes": 1561,
-      "margin": -76.9,
-      "othVotes": 196,
-      "repPct": 6.3,
-      "repVotes": 119,
-      "totalVotes": 1876
-     },
-     "2020": {
-      "demPct": 90.7,
-      "demVotes": 2134,
-      "margin": -84.4,
-      "othVotes": 71,
-      "repPct": 6.3,
-      "repVotes": 148,
-      "totalVotes": 2353
-     },
-     "2024": {
-      "demPct": 88.1,
-      "demVotes": 2050,
-      "margin": -82,
-      "othVotes": 135,
-      "repPct": 6.1,
-      "repVotes": 142,
-      "totalVotes": 2327
-     },
-     "pop2020": 6888,
-     "splitPct": 100
-    },
-    "Chittenden-6-5 State House District": {
-     "2016": {
-      "demPct": 79.9,
-      "demVotes": 2783,
-      "margin": -71,
-      "othVotes": 389,
-      "repPct": 8.9,
-      "repVotes": 310,
-      "totalVotes": 3482
-     },
-     "2020": {
-      "demPct": 89.1,
-      "demVotes": 3791,
-      "margin": -81.2,
-      "othVotes": 129,
-      "repPct": 7.9,
-      "repVotes": 335,
-      "totalVotes": 4255
-     },
-     "2024": {
-      "demPct": 87.3,
-      "demVotes": 3167,
-      "margin": -79.6,
-      "othVotes": 181,
-      "repPct": 7.7,
-      "repVotes": 278,
-      "totalVotes": 3626
-     },
-     "pop2020": 8135,
-     "splitPct": 100
-    },
-    "Chittenden-6-6 State House District": {
-     "2016": {
-      "demPct": 82.5,
-      "demVotes": 987,
-      "margin": -75.4,
-      "othVotes": 125,
-      "repPct": 7.1,
-      "repVotes": 85,
-      "totalVotes": 1197
-     },
-     "2020": {
-      "demPct": 90,
-      "demVotes": 1183,
-      "margin": -83.2,
-      "othVotes": 42,
-      "repPct": 6.8,
-      "repVotes": 90,
-      "totalVotes": 1315
-     },
-     "2024": {
-      "demPct": 87.2,
-      "demVotes": 872,
-      "margin": -80.4,
-      "othVotes": 60,
-      "repPct": 6.8,
-      "repVotes": 68,
-      "totalVotes": 1000
-     },
-     "pop2020": 3494,
-     "splitPct": 100
-    },
-    "Chittenden-6-7 State House District": {
-     "2016": {
-      "demPct": 69.8,
-      "demVotes": 2321,
-      "margin": -53.2,
-      "othVotes": 454,
-      "repPct": 16.6,
-      "repVotes": 552,
-      "totalVotes": 3327
-     },
-     "2020": {
-      "demPct": 82,
-      "demVotes": 3334,
-      "margin": -67,
-      "othVotes": 122,
-      "repPct": 15,
-      "repVotes": 608,
-      "totalVotes": 4064
-     },
-     "2024": {
-      "demPct": 79.9,
-      "demVotes": 3187,
-      "margin": -65,
-      "othVotes": 208,
-      "repPct": 14.9,
-      "repVotes": 595,
-      "totalVotes": 3990
-     },
-     "pop2020": 9047,
-     "splitPct": 8.9
-    },
-    "Chittenden-7-1 State House District": {
-     "2016": {
-      "demPct": 73.5,
-      "demVotes": 1904,
-      "margin": -56.7,
-      "othVotes": 251,
-      "repPct": 16.8,
-      "repVotes": 434,
-      "totalVotes": 2589
-     },
-     "2020": {
-      "demPct": 82.9,
-      "demVotes": 2520,
-      "margin": -68.3,
-      "othVotes": 75,
-      "repPct": 14.6,
-      "repVotes": 444,
-      "totalVotes": 3039
-     },
-     "2024": {
-      "demPct": 82.1,
-      "demVotes": 2448,
-      "margin": -67.6,
-      "othVotes": 100,
-      "repPct": 14.5,
-      "repVotes": 433,
-      "totalVotes": 2981
-     },
-     "pop2020": 4641,
-     "splitPct": 0.3
-    },
-    "Chittenden-7-2 State House District": {
-     "2016": {
-      "demPct": 68.9,
-      "demVotes": 2067,
-      "margin": -47.1,
-      "othVotes": 280,
-      "repPct": 21.8,
-      "repVotes": 653,
-      "totalVotes": 3000
-     },
-     "2020": {
-      "demPct": 78.1,
-      "demVotes": 2888,
-      "margin": -59,
-      "othVotes": 102,
-      "repPct": 19.1,
-      "repVotes": 707,
-      "totalVotes": 3697
-     },
-     "2024": {
-      "demPct": 78.6,
-      "demVotes": 2910,
-      "margin": -60.3,
-      "othVotes": 112,
-      "repPct": 18.3,
-      "repVotes": 678,
-      "totalVotes": 3700
-     },
-     "pop2020": 5479,
-     "splitPct": 100
-    },
-    "Chittenden-7-3 State House District": {
-     "2016": {
-      "demPct": 72.5,
-      "demVotes": 1802,
-      "margin": -55.5,
-      "othVotes": 261,
-      "repPct": 17,
-      "repVotes": 422,
-      "totalVotes": 2485
-     },
-     "2020": {
-      "demPct": 81.2,
-      "demVotes": 2556,
-      "margin": -65.2,
-      "othVotes": 87,
-      "repPct": 16,
-      "repVotes": 503,
-      "totalVotes": 3146
-     },
-     "2024": {
-      "demPct": 81.2,
-      "demVotes": 2503,
-      "margin": -65.5,
-      "othVotes": 94,
-      "repPct": 15.7,
-      "repVotes": 484,
-      "totalVotes": 3081
-     },
-     "pop2020": 5548,
-     "splitPct": 100
-    },
-    "Chittenden-7-4 State House District": {
-     "2016": {
-      "demPct": 63.3,
-      "demVotes": 1464,
-      "margin": -39.7,
-      "othVotes": 302,
-      "repPct": 23.6,
-      "repVotes": 547,
-      "totalVotes": 2313
-     },
-     "2020": {
-      "demPct": 75.1,
-      "demVotes": 2081,
-      "margin": -53,
-      "othVotes": 77,
-      "repPct": 22.1,
-      "repVotes": 613,
-      "totalVotes": 2771
-     },
-     "2024": {
-      "demPct": 74.4,
-      "demVotes": 2099,
-      "margin": -52.8,
-      "othVotes": 112,
-      "repPct": 21.6,
-      "repVotes": 609,
-      "totalVotes": 2820
-     },
-     "pop2020": 4598,
-     "splitPct": 100
-    },
-    "Chittenden-8-1 State House District": {
-     "2016": {
-      "demPct": 60.1,
-      "demVotes": 2860,
-      "margin": -33.2,
-      "othVotes": 622,
-      "repPct": 26.9,
-      "repVotes": 1279,
-      "totalVotes": 4761
-     },
-     "2020": {
-      "demPct": 70.3,
-      "demVotes": 3998,
-      "margin": -43.5,
-      "othVotes": 165,
-      "repPct": 26.8,
-      "repVotes": 1524,
-      "totalVotes": 5687
-     },
-     "2024": {
-      "demPct": 69.7,
-      "demVotes": 4029,
-      "margin": -43,
-      "othVotes": 213,
-      "repPct": 26.7,
-      "repVotes": 1542,
-      "totalVotes": 5784
-     },
-     "pop2020": 9445,
-     "splitPct": 0.5
-    },
-    "Chittenden-8-2 State House District": {
-     "2016": {
-      "demPct": 60.4,
-      "demVotes": 3039,
-      "margin": -34.1,
-      "othVotes": 668,
-      "repPct": 26.3,
-      "repVotes": 1323,
-      "totalVotes": 5030
-     },
-     "2020": {
-      "demPct": 73,
-      "demVotes": 4440,
-      "margin": -49.4,
-      "othVotes": 209,
-      "repPct": 23.6,
-      "repVotes": 1436,
-      "totalVotes": 6085
-     },
-     "2024": {
-      "demPct": 71.9,
-      "demVotes": 4294,
-      "margin": -47.1,
-      "othVotes": 201,
-      "repPct": 24.8,
-      "repVotes": 1479,
-      "totalVotes": 5974
-     },
-     "pop2020": 10268,
-     "splitPct": 100
-    },
-    "Chittenden-8-3 State House District": {
-     "2016": {
-      "demPct": 57.7,
-      "demVotes": 1545,
-      "margin": -28,
-      "othVotes": 337,
-      "repPct": 29.7,
-      "repVotes": 796,
-      "totalVotes": 2678
+      "demPct": 59.3,
+      "demVotes": 12015,
+      "margin": -32,
+      "othVotes": 2726,
+      "repPct": 27.3,
+      "repVotes": 5529,
+      "totalVotes": 20270
      },
      "2020": {
       "demPct": 68.4,
-      "demVotes": 2091,
-      "margin": -40.1,
-      "othVotes": 100,
-      "repPct": 28.3,
-      "repVotes": 865,
-      "totalVotes": 3056
-     },
-     "2024": {
-      "demPct": 68.5,
-      "demVotes": 2051,
-      "margin": -40.3,
-      "othVotes": 96,
+      "demVotes": 16014,
+      "margin": -40.2,
+      "othVotes": 809,
       "repPct": 28.2,
-      "repVotes": 845,
-      "totalVotes": 2992
+      "repVotes": 6604,
+      "totalVotes": 23427
      },
-     "pop2020": 4424,
+     "2024": {
+      "demPct": 66.1,
+      "demVotes": 15852,
+      "margin": -36.2,
+      "othVotes": 953,
+      "repPct": 29.9,
+      "repVotes": 7169,
+      "totalVotes": 23974
+     },
+     "pop2020": 39326,
      "splitPct": 0
     },
-    "Chittenden-9-1 State House District": {
+    "Bennington": {
      "2016": {
-      "demPct": 57.7,
-      "demVotes": 2181,
-      "margin": -26.5,
-      "othVotes": 416,
-      "repPct": 31.2,
-      "repVotes": 1180,
-      "totalVotes": 3777
-     },
-     "2020": {
-      "demPct": 67.2,
-      "demVotes": 3138,
-      "margin": -37.5,
-      "othVotes": 142,
-      "repPct": 29.7,
-      "repVotes": 1387,
-      "totalVotes": 4667
-     },
-     "2024": {
-      "demPct": 66.6,
-      "demVotes": 3115,
-      "margin": -36.8,
-      "othVotes": 167,
-      "repPct": 29.8,
-      "repVotes": 1393,
-      "totalVotes": 4675
-     },
-     "pop2020": 8525,
-     "splitPct": 100
-    },
-    "Chittenden-9-2 State House District": {
-     "2016": {
-      "demPct": 57.9,
-      "demVotes": 2340,
-      "margin": -26.9,
-      "othVotes": 446,
-      "repPct": 31,
-      "repVotes": 1254,
-      "totalVotes": 4040
-     },
-     "2020": {
-      "demPct": 67.4,
-      "demVotes": 3362,
-      "margin": -37.8,
-      "othVotes": 151,
-      "repPct": 29.6,
-      "repVotes": 1474,
-      "totalVotes": 4987
-     },
-     "2024": {
-      "demPct": 66.8,
-      "demVotes": 3335,
-      "margin": -37.2,
-      "othVotes": 179,
-      "repPct": 29.6,
-      "repVotes": 1480,
-      "totalVotes": 4994
-     },
-     "pop2020": 9103,
-     "splitPct": 100
-    },
-    "Essex-Caledonia State House District": {
-     "2016": {
-      "demPct": 33.7,
-      "demVotes": 607,
-      "margin": 17.5,
-      "othVotes": 273,
-      "repPct": 51.2,
-      "repVotes": 923,
-      "totalVotes": 1803
-     },
-     "2020": {
-      "demPct": 43.7,
-      "demVotes": 905,
-      "margin": 9.2,
-      "othVotes": 72,
-      "repPct": 52.9,
-      "repVotes": 1096,
-      "totalVotes": 2073
-     },
-     "2024": {
-      "demPct": 43,
-      "demVotes": 911,
-      "margin": 10.6,
-      "othVotes": 73,
-      "repPct": 53.6,
-      "repVotes": 1137,
-      "totalVotes": 2121
-     },
-     "pop2020": 3674,
-     "splitPct": 0
-    },
-    "Essex-Caledonia-Orleans State House District": {
-     "2016": {
-      "demPct": 40.5,
-      "demVotes": 770,
-      "margin": 6.2,
-      "othVotes": 244,
-      "repPct": 46.7,
-      "repVotes": 888,
-      "totalVotes": 1902
-     },
-     "2020": {
-      "demPct": 46.2,
-      "demVotes": 985,
-      "margin": 3.9,
-      "othVotes": 78,
-      "repPct": 50.1,
-      "repVotes": 1067,
-      "totalVotes": 2130
-     },
-     "2024": {
-      "demPct": 41.8,
-      "demVotes": 930,
-      "margin": 9.5,
-      "othVotes": 152,
-      "repPct": 51.3,
-      "repVotes": 1141,
-      "totalVotes": 2223
-     },
-     "pop2020": 3762,
-     "splitPct": 0
-    },
-    "Franklin-1 State House District": {
-     "2016": {
-      "demPct": 42.5,
-      "demVotes": 1019,
-      "margin": 0.2,
-      "othVotes": 355,
-      "repPct": 42.7,
-      "repVotes": 1023,
-      "totalVotes": 2397
-     },
-     "2020": {
-      "demPct": 52,
-      "demVotes": 1517,
-      "margin": -7.6,
-      "othVotes": 105,
-      "repPct": 44.4,
-      "repVotes": 1295,
-      "totalVotes": 2917
-     },
-     "2024": {
-      "demPct": 50,
-      "demVotes": 1501,
-      "margin": -3.2,
-      "othVotes": 97,
-      "repPct": 46.8,
-      "repVotes": 1403,
-      "totalVotes": 3001
-     },
-     "pop2020": 4845,
-     "splitPct": 0
-    },
-    "Franklin-2 State House District": {
-     "2016": {
-      "demPct": 44.9,
-      "demVotes": 1063,
-      "margin": -4.9,
-      "othVotes": 355,
-      "repPct": 40,
-      "repVotes": 947,
-      "totalVotes": 2365
-     },
-     "2020": {
       "demPct": 55,
-      "demVotes": 1648,
-      "margin": -14,
-      "othVotes": 119,
-      "repPct": 41,
-      "repVotes": 1229,
-      "totalVotes": 2996
+      "demVotes": 10130,
+      "margin": -21,
+      "othVotes": 2034,
+      "repPct": 34,
+      "repVotes": 6263,
+      "totalVotes": 18427
+     },
+     "2020": {
+      "demPct": 62.4,
+      "demVotes": 13494,
+      "margin": -27.9,
+      "othVotes": 669,
+      "repPct": 34.5,
+      "repVotes": 7455,
+      "totalVotes": 21618
      },
      "2024": {
-      "demPct": 54,
-      "demVotes": 1658,
-      "margin": -12.1,
-      "othVotes": 125,
-      "repPct": 41.9,
-      "repVotes": 1288,
-      "totalVotes": 3071
+      "demPct": 59.9,
+      "demVotes": 13100,
+      "margin": -23,
+      "othVotes": 716,
+      "repPct": 36.9,
+      "repVotes": 8072,
+      "totalVotes": 21888
      },
-     "pop2020": 5014,
+     "pop2020": 39602,
      "splitPct": 0
     },
-    "Franklin-3-1 State House District": {
-     "2016": {
-      "demPct": 51.1,
-      "demVotes": 1327,
-      "margin": -18.5,
-      "othVotes": 423,
-      "repPct": 32.6,
-      "repVotes": 848,
-      "totalVotes": 2598
-     },
-     "2020": {
-      "demPct": 64.4,
-      "demVotes": 2042,
-      "margin": -33,
-      "othVotes": 132,
-      "repPct": 31.4,
-      "repVotes": 996,
-      "totalVotes": 3170
-     },
-     "2024": {
-      "demPct": 61.7,
-      "demVotes": 1969,
-      "margin": -27,
-      "othVotes": 117,
-      "repPct": 34.7,
-      "repVotes": 1107,
-      "totalVotes": 3193
-     },
-     "pop2020": 7070,
-     "splitPct": 65.1
-    },
-    "Franklin-3-2 State House District": {
-     "2016": {
-      "demPct": 45.5,
-      "demVotes": 1376,
-      "margin": -4.9,
-      "othVotes": 418,
-      "repPct": 40.6,
-      "repVotes": 1228,
-      "totalVotes": 3022
-     },
-     "2020": {
-      "demPct": 56.1,
-      "demVotes": 2066,
-      "margin": -15.2,
-      "othVotes": 108,
-      "repPct": 40.9,
-      "repVotes": 1507,
-      "totalVotes": 3681
-     },
-     "2024": {
-      "demPct": 54.1,
-      "demVotes": 2003,
-      "margin": -11.6,
-      "othVotes": 126,
-      "repPct": 42.5,
-      "repVotes": 1572,
-      "totalVotes": 3701
-     },
-     "pop2020": 6795,
-     "splitPct": 100
-    },
-    "Franklin-4 State House District": {
-     "2016": {
-      "demPct": 40.3,
-      "demVotes": 1406,
-      "margin": 4.7,
-      "othVotes": 510,
-      "repPct": 45,
-      "repVotes": 1569,
-      "totalVotes": 3485
-     },
-     "2020": {
-      "demPct": 47.2,
-      "demVotes": 2001,
-      "margin": 1.8,
-      "othVotes": 164,
-      "repPct": 49,
-      "repVotes": 2078,
-      "totalVotes": 4243
-     },
-     "2024": {
-      "demPct": 43.6,
-      "demVotes": 1969,
-      "margin": 9.4,
-      "othVotes": 150,
-      "repPct": 53,
-      "repVotes": 2394,
-      "totalVotes": 4513
-     },
-     "pop2020": 8837,
-     "splitPct": 0
-    },
-    "Franklin-5 State House District": {
-     "2016": {
-      "demPct": 35.8,
-      "demVotes": 1236,
-      "margin": 13.2,
-      "othVotes": 523,
-      "repPct": 49,
-      "repVotes": 1691,
-      "totalVotes": 3450
-     },
-     "2020": {
-      "demPct": 42,
-      "demVotes": 1734,
-      "margin": 12.8,
-      "othVotes": 135,
-      "repPct": 54.8,
-      "repVotes": 2264,
-      "totalVotes": 4133
-     },
-     "2024": {
-      "demPct": 38,
-      "demVotes": 1661,
-      "margin": 20.6,
-      "othVotes": 150,
-      "repPct": 58.6,
-      "repVotes": 2564,
-      "totalVotes": 4375
-     },
-     "pop2020": 8728,
-     "splitPct": 0
-    },
-    "Franklin-6 State House District": {
-     "2016": {
-      "demPct": 50,
-      "demVotes": 1120,
-      "margin": -14.9,
-      "othVotes": 335,
-      "repPct": 35.1,
-      "repVotes": 787,
-      "totalVotes": 2242
-     },
-     "2020": {
-      "demPct": 56.9,
-      "demVotes": 1514,
-      "margin": -17.9,
-      "othVotes": 109,
-      "repPct": 39,
-      "repVotes": 1037,
-      "totalVotes": 2660
-     },
-     "2024": {
-      "demPct": 54,
-      "demVotes": 1501,
-      "margin": -12.4,
-      "othVotes": 122,
-      "repPct": 41.6,
-      "repVotes": 1158,
-      "totalVotes": 2781
-     },
-     "pop2020": 4663,
-     "splitPct": 0
-    },
-    "Franklin-7 State House District": {
-     "2016": {
-      "demPct": 43.4,
-      "demVotes": 804,
-      "margin": -7.8,
-      "othVotes": 389,
-      "repPct": 35.6,
-      "repVotes": 660,
-      "totalVotes": 1853
-     },
-     "2020": {
-      "demPct": 53.6,
-      "demVotes": 1089,
-      "margin": -10.8,
-      "othVotes": 73,
-      "repPct": 42.8,
-      "repVotes": 868,
-      "totalVotes": 2030
-     },
-     "2024": {
-      "demPct": 48.3,
-      "demVotes": 1018,
-      "margin": -0.7,
-      "othVotes": 86,
-      "repPct": 47.6,
-      "repVotes": 1004,
-      "totalVotes": 2108
-     },
-     "pop2020": 3994,
-     "splitPct": 0
-    },
-    "Grand-Isle-Chittenden State House District": {
-     "2016": {
-      "demPct": 48.6,
-      "demVotes": 3199,
-      "margin": -10.6,
-      "othVotes": 883,
-      "repPct": 38,
-      "repVotes": 2507,
-      "totalVotes": 6589
-     },
-     "2020": {
-      "demPct": 57.7,
-      "demVotes": 4541,
-      "margin": -18.5,
-      "othVotes": 240,
-      "repPct": 39.2,
-      "repVotes": 3088,
-      "totalVotes": 7869
-     },
-     "2024": {
-      "demPct": 56.4,
-      "demVotes": 4570,
-      "margin": -16.3,
-      "othVotes": 277,
-      "repPct": 40.1,
-      "repVotes": 3250,
-      "totalVotes": 8097
-     },
-     "pop2020": 12538,
-     "splitPct": 38.1
-    },
-    "Lamoille-1 State House District": {
-     "2016": {
-      "demPct": 69.5,
-      "demVotes": 1974,
-      "margin": -49.8,
-      "othVotes": 308,
-      "repPct": 19.7,
-      "repVotes": 559,
-      "totalVotes": 2841
-     },
-     "2020": {
-      "demPct": 79.4,
-      "demVotes": 2706,
-      "margin": -61.8,
-      "othVotes": 101,
-      "repPct": 17.6,
-      "repVotes": 599,
-      "totalVotes": 3406
-     },
-     "2024": {
-      "demPct": 78,
-      "demVotes": 2395,
-      "margin": -59.1,
-      "othVotes": 95,
-      "repPct": 18.9,
-      "repVotes": 579,
-      "totalVotes": 3069
-     },
-     "pop2020": 5223,
-     "splitPct": 0
-    },
-    "Lamoille-2 State House District": {
-     "2016": {
-      "demPct": 50.6,
-      "demVotes": 1929,
-      "margin": -18.3,
-      "othVotes": 649,
-      "repPct": 32.3,
-      "repVotes": 1231,
-      "totalVotes": 3809
-     },
-     "2020": {
-      "demPct": 62.9,
-      "demVotes": 2780,
-      "margin": -29.6,
-      "othVotes": 166,
-      "repPct": 33.3,
-      "repVotes": 1473,
-      "totalVotes": 4419
-     },
-     "2024": {
-      "demPct": 59.4,
-      "demVotes": 2696,
-      "margin": -22.3,
-      "othVotes": 159,
-      "repPct": 37.1,
-      "repVotes": 1686,
-      "totalVotes": 4541
-     },
-     "pop2020": 8539,
-     "splitPct": 0
-    },
-    "Lamoille-3 State House District": {
-     "2016": {
-      "demPct": 53.3,
-      "demVotes": 1228,
-      "margin": -24.4,
-      "othVotes": 409,
-      "repPct": 28.9,
-      "repVotes": 666,
-      "totalVotes": 2303
-     },
-     "2020": {
-      "demPct": 65.9,
-      "demVotes": 1748,
-      "margin": -35.9,
-      "othVotes": 109,
-      "repPct": 30,
-      "repVotes": 796,
-      "totalVotes": 2653
-     },
-     "2024": {
-      "demPct": 63.5,
-      "demVotes": 1683,
-      "margin": -31.4,
-      "othVotes": 119,
-      "repPct": 32.1,
-      "repVotes": 850,
-      "totalVotes": 2652
-     },
-     "pop2020": 4525,
-     "splitPct": 0
-    },
-    "Lamoille-Washington State House District": {
-     "2016": {
-      "demPct": 58,
-      "demVotes": 2534,
-      "margin": -31.5,
-      "othVotes": 676,
-      "repPct": 26.5,
-      "repVotes": 1159,
-      "totalVotes": 4369
-     },
-     "2020": {
-      "demPct": 70.6,
-      "demVotes": 3539,
-      "margin": -44.6,
-      "othVotes": 173,
-      "repPct": 26,
-      "repVotes": 1303,
-      "totalVotes": 5015
-     },
-     "2024": {
-      "demPct": 69,
-      "demVotes": 3525,
-      "margin": -42.3,
-      "othVotes": 218,
-      "repPct": 26.7,
-      "repVotes": 1366,
-      "totalVotes": 5109
-     },
-     "pop2020": 8212,
-     "splitPct": 0
-    },
-    "Orange-1 State House District": {
-     "2016": {
-      "demPct": 42.4,
-      "demVotes": 1831,
-      "margin": -0.3,
-      "othVotes": 666,
-      "repPct": 42.1,
-      "repVotes": 1819,
-      "totalVotes": 4316
-     },
-     "2020": {
-      "demPct": 50.4,
-      "demVotes": 2553,
-      "margin": -5,
-      "othVotes": 212,
-      "repPct": 45.4,
-      "repVotes": 2298,
-      "totalVotes": 5063
-     },
-     "2024": {
-      "demPct": 46.9,
-      "demVotes": 2465,
-      "margin": 1.3,
-      "othVotes": 257,
-      "repPct": 48.2,
-      "repVotes": 2534,
-      "totalVotes": 5256
-     },
-     "pop2020": 8957,
-     "splitPct": 0
-    },
-    "Orange-2 State House District": {
-     "2016": {
-      "demPct": 55.1,
-      "demVotes": 1135,
-      "margin": -23.3,
-      "othVotes": 269,
-      "repPct": 31.8,
-      "repVotes": 655,
-      "totalVotes": 2059
-     },
-     "2020": {
-      "demPct": 62.8,
-      "demVotes": 1553,
-      "margin": -29,
-      "othVotes": 84,
-      "repPct": 33.8,
-      "repVotes": 834,
-      "totalVotes": 2471
-     },
-     "2024": {
-      "demPct": 60.3,
-      "demVotes": 1528,
-      "margin": -24.2,
-      "othVotes": 92,
-      "repPct": 36.1,
-      "repVotes": 915,
-      "totalVotes": 2535
-     },
-     "pop2020": 4397,
-     "splitPct": 14.5
-    },
-    "Orange-Caledonia State House District": {
-     "2016": {
-      "demPct": 43,
-      "demVotes": 913,
-      "margin": 0,
-      "othVotes": 297,
-      "repPct": 43,
-      "repVotes": 911,
-      "totalVotes": 2121
-     },
-     "2020": {
-      "demPct": 49.9,
-      "demVotes": 1203,
-      "margin": -3.5,
-      "othVotes": 88,
-      "repPct": 46.4,
-      "repVotes": 1118,
-      "totalVotes": 2409
-     },
-     "2024": {
-      "demPct": 47.5,
-      "demVotes": 1191,
-      "margin": 0.9,
-      "othVotes": 101,
-      "repPct": 48.4,
-      "repVotes": 1213,
-      "totalVotes": 2505
-     },
-     "pop2020": 4476,
-     "splitPct": 0
-    },
-    "Orange-Washington-Addison State House District": {
-     "2016": {
-      "demPct": 50.9,
-      "demVotes": 2095,
-      "margin": -18.6,
-      "othVotes": 692,
-      "repPct": 32.3,
-      "repVotes": 1332,
-      "totalVotes": 4119
-     },
-     "2020": {
-      "demPct": 63.9,
-      "demVotes": 3042,
-      "margin": -31.7,
-      "othVotes": 183,
-      "repPct": 32.2,
-      "repVotes": 1532,
-      "totalVotes": 4757
-     },
-     "2024": {
-      "demPct": 62.2,
-      "demVotes": 3083,
-      "margin": -29,
-      "othVotes": 229,
-      "repPct": 33.2,
-      "repVotes": 1647,
-      "totalVotes": 4959
-     },
-     "pop2020": 8204,
-     "splitPct": 0
-    },
-    "Orleans-1 State House District": {
-     "2016": {
-      "demPct": 38,
-      "demVotes": 1399,
-      "margin": 10.4,
-      "othVotes": 501,
-      "repPct": 48.4,
-      "repVotes": 1781,
-      "totalVotes": 3681
-     },
-     "2020": {
-      "demPct": 45.2,
-      "demVotes": 1946,
-      "margin": 7,
-      "othVotes": 115,
-      "repPct": 52.2,
-      "repVotes": 2249,
-      "totalVotes": 4310
-     },
-     "2024": {
-      "demPct": 41.7,
-      "demVotes": 1906,
-      "margin": 13.6,
-      "othVotes": 135,
-      "repPct": 55.3,
-      "repVotes": 2527,
-      "totalVotes": 4568
-     },
-     "pop2020": 7925,
-     "splitPct": 0.1
-    },
-    "Orleans-2 State House District": {
-     "2016": {
-      "demPct": 41,
-      "demVotes": 1478,
-      "margin": 3.6,
-      "othVotes": 518,
-      "repPct": 44.6,
-      "repVotes": 1610,
-      "totalVotes": 3606
-     },
-     "2020": {
-      "demPct": 48.4,
-      "demVotes": 2045,
-      "margin": 0.2,
-      "othVotes": 126,
-      "repPct": 48.6,
-      "repVotes": 2052,
-      "totalVotes": 4223
-     },
-     "2024": {
-      "demPct": 44.6,
-      "demVotes": 1994,
-      "margin": 7.2,
-      "othVotes": 158,
-      "repPct": 51.8,
-      "repVotes": 2314,
-      "totalVotes": 4466
-     },
-     "pop2020": 9103,
-     "splitPct": 51.7
-    },
-    "Orleans-Caledonia State House District": {
-     "2016": {
-      "demPct": 50.4,
-      "demVotes": 1971,
-      "margin": -15.8,
-      "othVotes": 587,
-      "repPct": 34.6,
-      "repVotes": 1356,
-      "totalVotes": 3914
-     },
-     "2020": {
-      "demPct": 59.4,
-      "demVotes": 2730,
-      "margin": -22.3,
-      "othVotes": 160,
-      "repPct": 37.1,
-      "repVotes": 1703,
-      "totalVotes": 4593
-     },
-     "2024": {
-      "demPct": 56.5,
-      "demVotes": 2668,
-      "margin": -17.3,
-      "othVotes": 199,
-      "repPct": 39.2,
-      "repVotes": 1852,
-      "totalVotes": 4719
-     },
-     "pop2020": 8557,
-     "splitPct": 0
-    },
-    "Orleans-Lamoille State House District": {
-     "2016": {
-      "demPct": 38.2,
-      "demVotes": 721,
-      "margin": 7.7,
-      "othVotes": 300,
-      "repPct": 45.9,
-      "repVotes": 866,
-      "totalVotes": 1887
-     },
-     "2020": {
-      "demPct": 47.3,
-      "demVotes": 1036,
-      "margin": 2.1,
-      "othVotes": 72,
-      "repPct": 49.4,
-      "repVotes": 1081,
-      "totalVotes": 2189
-     },
-     "2024": {
-      "demPct": 43.5,
-      "demVotes": 999,
-      "margin": 8.8,
-      "othVotes": 95,
-      "repPct": 52.3,
-      "repVotes": 1201,
-      "totalVotes": 2295
-     },
-     "pop2020": 4229,
-     "splitPct": 19.1
-    },
-    "Rutland-1 State House District": {
-     "2016": {
-      "demPct": 44.8,
-      "demVotes": 754,
-      "margin": -3.1,
-      "othVotes": 228,
-      "repPct": 41.7,
-      "repVotes": 702,
-      "totalVotes": 1684
-     },
-     "2020": {
-      "demPct": 50.6,
-      "demVotes": 974,
-      "margin": -4.6,
-      "othVotes": 67,
-      "repPct": 46,
-      "repVotes": 885,
-      "totalVotes": 1926
-     },
-     "2024": {
-      "demPct": 47.7,
-      "demVotes": 952,
-      "margin": 1.7,
-      "othVotes": 56,
-      "repPct": 49.4,
-      "repVotes": 986,
-      "totalVotes": 1994
-     },
-     "pop2020": 3388,
-     "splitPct": 0
-    },
-    "Rutland-2 State House District": {
-     "2016": {
-      "demPct": 41.8,
-      "demVotes": 1793,
-      "margin": 5,
-      "othVotes": 489,
-      "repPct": 46.8,
-      "repVotes": 2006,
-      "totalVotes": 4288
-     },
-     "2020": {
-      "demPct": 49.2,
-      "demVotes": 2433,
-      "margin": -1.1,
-      "othVotes": 137,
-      "repPct": 48.1,
-      "repVotes": 2379,
-      "totalVotes": 4949
-     },
-     "2024": {
-      "demPct": 46,
-      "demVotes": 2263,
-      "margin": 5,
-      "othVotes": 150,
-      "repPct": 51,
-      "repVotes": 2507,
-      "totalVotes": 4920
-     },
-     "pop2020": 8614,
-     "splitPct": 20.6
-    },
-    "Rutland-3 State House District": {
-     "2016": {
-      "demPct": 43.8,
-      "demVotes": 1517,
-      "margin": 1.1,
-      "othVotes": 389,
-      "repPct": 44.9,
-      "repVotes": 1556,
-      "totalVotes": 3462
-     },
-     "2020": {
-      "demPct": 48.9,
-      "demVotes": 1979,
-      "margin": -0.7,
-      "othVotes": 118,
-      "repPct": 48.2,
-      "repVotes": 1950,
-      "totalVotes": 4047
-     },
-     "2024": {
-      "demPct": 46.3,
-      "demVotes": 1890,
-      "margin": 4.7,
-      "othVotes": 113,
-      "repPct": 51,
-      "repVotes": 2082,
-      "totalVotes": 4085
-     },
-     "pop2020": 8168,
-     "splitPct": 0
-    },
-    "Rutland-4 State House District": {
-     "2016": {
-      "demPct": 46.4,
-      "demVotes": 1083,
-      "margin": -3.9,
-      "othVotes": 260,
-      "repPct": 42.5,
-      "repVotes": 993,
-      "totalVotes": 2336
-     },
-     "2020": {
-      "demPct": 55.4,
-      "demVotes": 1401,
-      "margin": -13.7,
-      "othVotes": 73,
-      "repPct": 41.7,
-      "repVotes": 1056,
-      "totalVotes": 2530
-     },
-     "2024": {
-      "demPct": 56,
-      "demVotes": 1456,
-      "margin": -15.9,
-      "othVotes": 100,
-      "repPct": 40.1,
-      "repVotes": 1043,
-      "totalVotes": 2599
-     },
-     "pop2020": 4014,
-     "splitPct": 100
-    },
-    "Rutland-5-1 State House District": {
-     "2016": {
-      "demPct": 51.8,
-      "demVotes": 1150,
-      "margin": -14.2,
-      "othVotes": 236,
-      "repPct": 37.6,
-      "repVotes": 836,
-      "totalVotes": 2222
-     },
-     "2020": {
-      "demPct": 60.6,
-      "demVotes": 1488,
-      "margin": -24.6,
-      "othVotes": 85,
-      "repPct": 36,
-      "repVotes": 884,
-      "totalVotes": 2457
-     },
-     "2024": {
-      "demPct": 57.9,
-      "demVotes": 1249,
-      "margin": -18.6,
-      "othVotes": 59,
-      "repPct": 39.3,
-      "repVotes": 848,
-      "totalVotes": 2156
-     },
-     "pop2020": 4068,
-     "splitPct": 100
-    },
-    "Rutland-5-2 State House District": {
-     "2016": {
-      "demPct": 49.4,
-      "demVotes": 908,
-      "margin": -11.2,
-      "othVotes": 227,
-      "repPct": 38.2,
-      "repVotes": 702,
-      "totalVotes": 1837
-     },
-     "2020": {
-      "demPct": 59,
-      "demVotes": 1200,
-      "margin": -21.4,
-      "othVotes": 69,
-      "repPct": 37.6,
-      "repVotes": 764,
-      "totalVotes": 2033
-     },
-     "2024": {
-      "demPct": 56.4,
-      "demVotes": 1140,
-      "margin": -16.1,
-      "othVotes": 66,
-      "repPct": 40.3,
-      "repVotes": 815,
-      "totalVotes": 2021
-     },
-     "pop2020": 3922,
-     "splitPct": 100
-    },
-    "Rutland-5-3 State House District": {
-     "2016": {
-      "demPct": 43.7,
-      "demVotes": 583,
-      "margin": -2.3,
-      "othVotes": 199,
-      "repPct": 41.4,
-      "repVotes": 552,
-      "totalVotes": 1334
-     },
-     "2020": {
-      "demPct": 56.7,
-      "demVotes": 859,
-      "margin": -17.6,
-      "othVotes": 63,
-      "repPct": 39.1,
-      "repVotes": 593,
-      "totalVotes": 1515
-     },
-     "2024": {
-      "demPct": 53.2,
-      "demVotes": 894,
-      "margin": -9.8,
-      "othVotes": 57,
-      "repPct": 43.4,
-      "repVotes": 728,
-      "totalVotes": 1679
-     },
-     "pop2020": 3946,
-     "splitPct": 100
-    },
-    "Rutland-5-4 State House District": {
-     "2016": {
-      "demPct": 50.2,
-      "demVotes": 834,
-      "margin": -12.4,
-      "othVotes": 201,
-      "repPct": 37.8,
-      "repVotes": 628,
-      "totalVotes": 1663
-     },
-     "2020": {
-      "demPct": 56.7,
-      "demVotes": 1105,
-      "margin": -17.3,
-      "othVotes": 76,
-      "repPct": 39.4,
-      "repVotes": 767,
-      "totalVotes": 1948
-     },
-     "2024": {
-      "demPct": 54.9,
-      "demVotes": 957,
-      "margin": -13.4,
-      "othVotes": 62,
-      "repPct": 41.5,
-      "repVotes": 724,
-      "totalVotes": 1743
-     },
-     "pop2020": 3777,
-     "splitPct": 100
-    },
-    "Rutland-6 State House District": {
-     "2016": {
-      "demPct": 47.2,
-      "demVotes": 1757,
-      "margin": -6.5,
-      "othVotes": 449,
-      "repPct": 40.7,
-      "repVotes": 1516,
-      "totalVotes": 3722
-     },
-     "2020": {
-      "demPct": 54.8,
-      "demVotes": 2364,
-      "margin": -12.8,
-      "othVotes": 140,
-      "repPct": 42,
-      "repVotes": 1810,
-      "totalVotes": 4314
-     },
-     "2024": {
-      "demPct": 51.2,
-      "demVotes": 2321,
-      "margin": -5.8,
-      "othVotes": 154,
-      "repPct": 45.4,
-      "repVotes": 2058,
-      "totalVotes": 4533
-     },
-     "pop2020": 7546,
-     "splitPct": 0.1
-    },
-    "Rutland-Bennington State House District": {
+    "Caledonia": {
      "2016": {
       "demPct": 46.5,
-      "demVotes": 1136,
-      "margin": -4,
-      "othVotes": 269,
-      "repPct": 42.5,
-      "repVotes": 1040,
-      "totalVotes": 2445
+      "demVotes": 8520,
+      "margin": -7.6,
+      "othVotes": 2658,
+      "repPct": 38.9,
+      "repVotes": 7131,
+      "totalVotes": 18309
      },
      "2020": {
-      "demPct": 52.8,
-      "demVotes": 1527,
-      "margin": -8,
-      "othVotes": 70,
-      "repPct": 44.8,
-      "repVotes": 1297,
-      "totalVotes": 2894
+      "demPct": 55.8,
+      "demVotes": 11780,
+      "margin": -15.3,
+      "othVotes": 775,
+      "repPct": 40.5,
+      "repVotes": 8555,
+      "totalVotes": 21110
      },
      "2024": {
-      "demPct": 50.5,
-      "demVotes": 1498,
-      "margin": -4.9,
-      "othVotes": 115,
-      "repPct": 45.6,
-      "repVotes": 1352,
-      "totalVotes": 2965
+      "demPct": 53.7,
+      "demVotes": 11667,
+      "margin": -11.7,
+      "othVotes": 922,
+      "repPct": 42,
+      "repVotes": 9129,
+      "totalVotes": 21718
      },
-     "pop2020": 4581,
-     "splitPct": 9.8
+     "pop2020": 39170,
+     "splitPct": 1.7
     },
-    "Rutland-Windsor-1 State House District": {
+    "Chittenden": {
      "2016": {
-      "demPct": 50.2,
-      "demVotes": 1291,
-      "margin": -12.4,
-      "othVotes": 309,
-      "repPct": 37.8,
-      "repVotes": 972,
-      "totalVotes": 2572
-     },
-     "2020": {
-      "demPct": 60.3,
-      "demVotes": 1850,
-      "margin": -23.7,
-      "othVotes": 96,
-      "repPct": 36.6,
-      "repVotes": 1124,
-      "totalVotes": 3070
-     },
-     "2024": {
-      "demPct": 58,
-      "demVotes": 1706,
-      "margin": -19.6,
-      "othVotes": 105,
-      "repPct": 38.4,
-      "repVotes": 1130,
-      "totalVotes": 2941
-     },
-     "pop2020": 4696,
-     "splitPct": 0
-    },
-    "Rutland-Windsor-2 State House District": {
-     "2016": {
-      "demPct": 47.7,
-      "demVotes": 1200,
-      "margin": -8.1,
-      "othVotes": 318,
-      "repPct": 39.6,
-      "repVotes": 997,
-      "totalVotes": 2515
-     },
-     "2020": {
-      "demPct": 56.4,
-      "demVotes": 1565,
-      "margin": -16.2,
-      "othVotes": 94,
-      "repPct": 40.2,
-      "repVotes": 1116,
-      "totalVotes": 2775
-     },
-     "2024": {
-      "demPct": 53.1,
-      "demVotes": 1491,
-      "margin": -10.4,
-      "othVotes": 119,
-      "repPct": 42.7,
-      "repVotes": 1198,
-      "totalVotes": 2808
-     },
-     "pop2020": 4653,
-     "splitPct": 0
-    },
-    "Washington-1 State House District": {
-     "2016": {
-      "demPct": 50.7,
-      "demVotes": 1780,
-      "margin": -17.6,
-      "othVotes": 571,
-      "repPct": 33.1,
-      "repVotes": 1163,
-      "totalVotes": 3514
-     },
-     "2020": {
-      "demPct": 61.8,
-      "demVotes": 2480,
-      "margin": -28,
-      "othVotes": 174,
-      "repPct": 33.8,
-      "repVotes": 1358,
-      "totalVotes": 4012
-     },
-     "2024": {
-      "demPct": 58.9,
-      "demVotes": 2519,
-      "margin": -21.9,
-      "othVotes": 177,
-      "repPct": 37,
-      "repVotes": 1580,
-      "totalVotes": 4276
-     },
-     "pop2020": 8788,
-     "splitPct": 0.3
-    },
-    "Washington-2 State House District": {
-     "2016": {
-      "demPct": 42.3,
-      "demVotes": 1770,
-      "margin": 2.3,
-      "othVotes": 549,
-      "repPct": 44.6,
-      "repVotes": 1869,
-      "totalVotes": 4188
-     },
-     "2020": {
-      "demPct": 52.8,
-      "demVotes": 2527,
-      "margin": -8.9,
-      "othVotes": 162,
-      "repPct": 43.9,
-      "repVotes": 2101,
-      "totalVotes": 4790
-     },
-     "2024": {
-      "demPct": 52.5,
-      "demVotes": 2558,
-      "margin": -8.6,
-      "othVotes": 175,
-      "repPct": 43.9,
-      "repVotes": 2137,
-      "totalVotes": 4870
-     },
-     "pop2020": 7977,
-     "splitPct": 0.5
-    },
-    "Washington-3 State House District": {
-     "2016": {
-      "demPct": 51.4,
-      "demVotes": 1643,
-      "margin": -17.5,
-      "othVotes": 469,
-      "repPct": 33.9,
-      "repVotes": 1084,
-      "totalVotes": 3196
-     },
-     "2020": {
-      "demPct": 62.5,
-      "demVotes": 2365,
-      "margin": -28.4,
-      "othVotes": 128,
-      "repPct": 34.1,
-      "repVotes": 1290,
-      "totalVotes": 3783
-     },
-     "2024": {
-      "demPct": 60.7,
-      "demVotes": 2258,
-      "margin": -25.9,
-      "othVotes": 166,
-      "repPct": 34.8,
-      "repVotes": 1293,
-      "totalVotes": 3717
-     },
-     "pop2020": 8437,
-     "splitPct": 32.2
-    },
-    "Washington-4 State House District": {
-     "2016": {
-      "demPct": 77.5,
-      "demVotes": 3686,
-      "margin": -67.2,
-      "othVotes": 579,
-      "repPct": 10.3,
-      "repVotes": 490,
-      "totalVotes": 4755
-     },
-     "2020": {
-      "demPct": 88.3,
-      "demVotes": 4561,
-      "margin": -79.3,
-      "othVotes": 141,
-      "repPct": 9,
-      "repVotes": 466,
-      "totalVotes": 5168
-     },
-     "2024": {
-      "demPct": 86,
-      "demVotes": 4345,
-      "margin": -76.3,
-      "othVotes": 217,
-      "repPct": 9.7,
-      "repVotes": 489,
-      "totalVotes": 5051
-     },
-     "pop2020": 8047,
-     "splitPct": 59.4
-    },
-    "Washington-5 State House District": {
-     "2016": {
-      "demPct": 64.4,
-      "demVotes": 1754,
-      "margin": -43,
-      "othVotes": 386,
+      "demPct": 66.6,
+      "demVotes": 49491,
+      "margin": -45.2,
+      "othVotes": 8927,
       "repPct": 21.4,
-      "repVotes": 584,
-      "totalVotes": 2724
-     },
-     "2020": {
-      "demPct": 76.2,
-      "demVotes": 2295,
-      "margin": -55.5,
-      "othVotes": 93,
-      "repPct": 20.7,
-      "repVotes": 622,
-      "totalVotes": 3010
-     },
-     "2024": {
-      "demPct": 73.7,
-      "demVotes": 2213,
-      "margin": -51.7,
-      "othVotes": 131,
-      "repPct": 22,
-      "repVotes": 660,
-      "totalVotes": 3004
-     },
-     "pop2020": 4383,
-     "splitPct": 0.1
-    },
-    "Washington-6 State House District": {
-     "2016": {
-      "demPct": 59.7,
-      "demVotes": 1529,
-      "margin": -35.9,
-      "othVotes": 423,
-      "repPct": 23.8,
-      "repVotes": 608,
-      "totalVotes": 2560
-     },
-     "2020": {
-      "demPct": 71,
-      "demVotes": 2078,
-      "margin": -46.3,
-      "othVotes": 125,
-      "repPct": 24.7,
-      "repVotes": 723,
-      "totalVotes": 2926
-     },
-     "2024": {
-      "demPct": 67.6,
-      "demVotes": 1964,
-      "margin": -41.3,
-      "othVotes": 178,
-      "repPct": 26.3,
-      "repVotes": 763,
-      "totalVotes": 2905
-     },
-     "pop2020": 4480,
-     "splitPct": 0
-    },
-    "Washington-7 State House District": {
-     "2016": {
-      "demPct": 65.8,
-      "demVotes": 3172,
-      "margin": -46.2,
-      "othVotes": 700,
-      "repPct": 19.6,
-      "repVotes": 946,
-      "totalVotes": 4818
-     },
-     "2020": {
-      "demPct": 79.4,
-      "demVotes": 4432,
-      "margin": -61.6,
-      "othVotes": 155,
-      "repPct": 17.8,
-      "repVotes": 995,
-      "totalVotes": 5582
-     },
-     "2024": {
-      "demPct": 78.5,
-      "demVotes": 4299,
-      "margin": -60.9,
-      "othVotes": 214,
-      "repPct": 17.6,
-      "repVotes": 966,
-      "totalVotes": 5479
-     },
-     "pop2020": 8351,
-     "splitPct": 0
-    },
-    "Washington-Chittenden State House District": {
-     "2016": {
-      "demPct": 65,
-      "demVotes": 3220,
-      "margin": -44.2,
-      "othVotes": 704,
-      "repPct": 20.8,
-      "repVotes": 1029,
-      "totalVotes": 4953
-     },
-     "2020": {
-      "demPct": 76.8,
-      "demVotes": 4362,
-      "margin": -56.5,
-      "othVotes": 168,
-      "repPct": 20.3,
-      "repVotes": 1151,
-      "totalVotes": 5681
-     },
-     "2024": {
-      "demPct": 75.5,
-      "demVotes": 4296,
-      "margin": -55,
-      "othVotes": 228,
-      "repPct": 20.5,
-      "repVotes": 1164,
-      "totalVotes": 5688
-     },
-     "pop2020": 8595,
-     "splitPct": 0.2
-    },
-    "Windham-1 State House District": {
-     "2016": {
-      "demPct": 53,
-      "demVotes": 1211,
-      "margin": -19.8,
-      "othVotes": 316,
-      "repPct": 33.2,
-      "repVotes": 760,
-      "totalVotes": 2287
-     },
-     "2020": {
-      "demPct": 63.8,
-      "demVotes": 1693,
-      "margin": -30.1,
-      "othVotes": 67,
-      "repPct": 33.7,
-      "repVotes": 894,
-      "totalVotes": 2654
-     },
-     "2024": {
-      "demPct": 59.8,
-      "demVotes": 1602,
-      "margin": -24.2,
-      "othVotes": 125,
-      "repPct": 35.6,
-      "repVotes": 953,
-      "totalVotes": 2680
-     },
-     "pop2020": 4312,
-     "splitPct": 0
-    },
-    "Windham-2-1 State House District": {
-     "2016": {
-      "demPct": 69.5,
-      "demVotes": 1494,
-      "margin": -49.6,
-      "othVotes": 229,
-      "repPct": 19.9,
-      "repVotes": 427,
-      "totalVotes": 2150
+      "repVotes": 15934,
+      "totalVotes": 74352
      },
      "2020": {
       "demPct": 76.7,
-      "demVotes": 1839,
-      "margin": -55.8,
-      "othVotes": 58,
-      "repPct": 20.9,
-      "repVotes": 501,
-      "totalVotes": 2398
-     },
-     "2024": {
-      "demPct": 73.7,
-      "demVotes": 1717,
-      "margin": -51.6,
-      "othVotes": 97,
-      "repPct": 22.1,
-      "repVotes": 516,
-      "totalVotes": 2330
-     },
-     "pop2020": 4415,
-     "splitPct": 0.3
-    },
-    "Windham-2-2 State House District": {
-     "2016": {
-      "demPct": 73.2,
-      "demVotes": 1351,
-      "margin": -61.7,
-      "othVotes": 281,
-      "repPct": 11.5,
-      "repVotes": 213,
-      "totalVotes": 1845
-     },
-     "2020": {
-      "demPct": 83.1,
-      "demVotes": 1743,
-      "margin": -69.6,
-      "othVotes": 70,
-      "repPct": 13.5,
-      "repVotes": 284,
-      "totalVotes": 2097
-     },
-     "2024": {
-      "demPct": 79.3,
-      "demVotes": 1555,
-      "margin": -63.7,
-      "othVotes": 100,
-      "repPct": 15.6,
-      "repVotes": 306,
-      "totalVotes": 1961
-     },
-     "pop2020": 3850,
-     "splitPct": 100
-    },
-    "Windham-2-3 State House District": {
-     "2016": {
-      "demPct": 77.3,
-      "demVotes": 1502,
-      "margin": -66,
-      "othVotes": 221,
-      "repPct": 11.3,
-      "repVotes": 219,
-      "totalVotes": 1942
-     },
-     "2020": {
-      "demPct": 84.9,
-      "demVotes": 1841,
-      "margin": -72.5,
-      "othVotes": 59,
-      "repPct": 12.4,
-      "repVotes": 268,
-      "totalVotes": 2168
-     },
-     "2024": {
-      "demPct": 82.6,
-      "demVotes": 1796,
-      "margin": -69.6,
-      "othVotes": 95,
-      "repPct": 13,
-      "repVotes": 283,
-      "totalVotes": 2174
-     },
-     "pop2020": 3918,
-     "splitPct": 100
-    },
-    "Windham-3 State House District": {
-     "2016": {
-      "demPct": 58.6,
-      "demVotes": 1927,
-      "margin": -30.7,
-      "othVotes": 441,
-      "repPct": 27.9,
-      "repVotes": 918,
-      "totalVotes": 3286
-     },
-     "2020": {
-      "demPct": 66.4,
-      "demVotes": 2501,
-      "margin": -36.8,
-      "othVotes": 149,
-      "repPct": 29.6,
-      "repVotes": 1114,
-      "totalVotes": 3764
-     },
-     "2024": {
-      "demPct": 63.7,
-      "demVotes": 2458,
-      "margin": -31.6,
-      "othVotes": 159,
-      "repPct": 32.1,
-      "repVotes": 1239,
-      "totalVotes": 3856
-     },
-     "pop2020": 6871,
-     "splitPct": 0.4
-    },
-    "Windham-4 State House District": {
-     "2016": {
-      "demPct": 69.6,
-      "demVotes": 2782,
-      "margin": -51.2,
-      "othVotes": 479,
-      "repPct": 18.4,
-      "repVotes": 737,
-      "totalVotes": 3998
-     },
-     "2020": {
-      "demPct": 76.6,
-      "demVotes": 3561,
-      "margin": -56.3,
-      "othVotes": 144,
+      "demVotes": 67406,
+      "margin": -56.4,
+      "othVotes": 2598,
       "repPct": 20.3,
-      "repVotes": 941,
-      "totalVotes": 4646
+      "repVotes": 17842,
+      "totalVotes": 87846
      },
      "2024": {
-      "demPct": 73.8,
-      "demVotes": 3383,
-      "margin": -52.1,
-      "othVotes": 209,
-      "repPct": 21.7,
-      "repVotes": 995,
-      "totalVotes": 4587
+      "demPct": 75.6,
+      "demVotes": 65225,
+      "margin": -55,
+      "othVotes": 3323,
+      "repPct": 20.6,
+      "repVotes": 17734,
+      "totalVotes": 86282
      },
-     "pop2020": 7473,
-     "splitPct": 38.4
+     "pop2020": 148710,
+     "splitPct": 10.3
     },
-    "Windham-5 State House District": {
+    "Essex-Orleans": {
      "2016": {
-      "demPct": 66.5,
-      "demVotes": 1496,
-      "margin": -45.5,
-      "othVotes": 280,
-      "repPct": 21,
-      "repVotes": 473,
-      "totalVotes": 2249
+      "demPct": 41.9,
+      "demVotes": 7227,
+      "margin": 1.9,
+      "othVotes": 2467,
+      "repPct": 43.8,
+      "repVotes": 7560,
+      "totalVotes": 17254
      },
      "2020": {
-      "demPct": 75.2,
-      "demVotes": 1923,
-      "margin": -53.8,
-      "othVotes": 87,
-      "repPct": 21.4,
-      "repVotes": 546,
-      "totalVotes": 2556
+      "demPct": 50.1,
+      "demVotes": 10024,
+      "margin": -3.4,
+      "othVotes": 634,
+      "repPct": 46.7,
+      "repVotes": 9347,
+      "totalVotes": 20005
      },
      "2024": {
-      "demPct": 72.9,
-      "demVotes": 1833,
-      "margin": -50.6,
-      "othVotes": 119,
-      "repPct": 22.3,
-      "repVotes": 561,
-      "totalVotes": 2513
+      "demPct": 46.7,
+      "demVotes": 9754,
+      "margin": 2.6,
+      "othVotes": 829,
+      "repPct": 49.3,
+      "repVotes": 10311,
+      "totalVotes": 20894
      },
-     "pop2020": 4658,
+     "pop2020": 38513,
      "splitPct": 0
     },
-    "Windham-6 State House District": {
+    "Franklin": {
      "2016": {
-      "demPct": 51,
-      "demVotes": 1043,
-      "margin": -13.2,
-      "othVotes": 230,
-      "repPct": 37.8,
-      "repVotes": 773,
-      "totalVotes": 2046
+      "demPct": 43.7,
+      "demVotes": 9097,
+      "margin": -2.7,
+      "othVotes": 3185,
+      "repPct": 41,
+      "repVotes": 8532,
+      "totalVotes": 20814
      },
      "2020": {
-      "demPct": 60.6,
-      "demVotes": 1413,
-      "margin": -24.9,
-      "othVotes": 86,
-      "repPct": 35.7,
-      "repVotes": 834,
-      "totalVotes": 2333
+      "demPct": 52.7,
+      "demVotes": 13278,
+      "margin": -9,
+      "othVotes": 916,
+      "repPct": 43.7,
+      "repVotes": 11017,
+      "totalVotes": 25211
      },
      "2024": {
-      "demPct": 58.6,
-      "demVotes": 1415,
-      "margin": -20.2,
-      "othVotes": 73,
-      "repPct": 38.4,
-      "repVotes": 928,
-      "totalVotes": 2416
+      "demPct": 49.7,
+      "demVotes": 12944,
+      "margin": -2.9,
+      "othVotes": 929,
+      "repPct": 46.8,
+      "repVotes": 12197,
+      "totalVotes": 26070
      },
-     "pop2020": 4214,
-     "splitPct": 28.8
-    },
-    "Windham-Bennington State House District": {
-     "2016": {
-      "demPct": 47.6,
-      "demVotes": 1029,
-      "margin": -6.1,
-      "othVotes": 236,
-      "repPct": 41.5,
-      "repVotes": 896,
-      "totalVotes": 2161
-     },
-     "2020": {
-      "demPct": 57.3,
-      "demVotes": 1469,
-      "margin": -17.9,
-      "othVotes": 85,
-      "repPct": 39.4,
-      "repVotes": 1010,
-      "totalVotes": 2564
-     },
-     "2024": {
-      "demPct": 53.9,
-      "demVotes": 1384,
-      "margin": -10.7,
-      "othVotes": 75,
-      "repPct": 43.2,
-      "repVotes": 1110,
-      "totalVotes": 2569
-     },
-     "pop2020": 4518,
-     "splitPct": 3.5
-    },
-    "Windham-Bennington-Windsor State House District": {
-     "2016": {
-      "demPct": 58.1,
-      "demVotes": 1459,
-      "margin": -28.3,
-      "othVotes": 304,
-      "repPct": 29.8,
-      "repVotes": 749,
-      "totalVotes": 2512
-     },
-     "2020": {
-      "demPct": 68.7,
-      "demVotes": 2074,
-      "margin": -40.2,
-      "othVotes": 86,
-      "repPct": 28.5,
-      "repVotes": 859,
-      "totalVotes": 3019
-     },
-     "2024": {
-      "demPct": 65.2,
-      "demVotes": 1965,
-      "margin": -34.2,
-      "othVotes": 112,
-      "repPct": 31,
-      "repVotes": 935,
-      "totalVotes": 3012
-     },
-     "pop2020": 5169,
+     "pop2020": 48522,
      "splitPct": 0
     },
-    "Windsor-1 State House District": {
+    "Grand-Isle-Chittenden": {
      "2016": {
-      "demPct": 59.9,
-      "demVotes": 2591,
-      "margin": -32.3,
-      "othVotes": 542,
-      "repPct": 27.6,
-      "repVotes": 1193,
-      "totalVotes": 4326
+      "demPct": 56.6,
+      "demVotes": 6249,
+      "margin": -24.7,
+      "othVotes": 1274,
+      "repPct": 31.9,
+      "repVotes": 3523,
+      "totalVotes": 11046
      },
      "2020": {
-      "demPct": 68.9,
-      "demVotes": 3395,
-      "margin": -41.1,
-      "othVotes": 166,
-      "repPct": 27.8,
-      "repVotes": 1368,
-      "totalVotes": 4929
-     },
-     "2024": {
-      "demPct": 66.7,
-      "demVotes": 3271,
-      "margin": -37.2,
-      "othVotes": 186,
-      "repPct": 29.5,
-      "repVotes": 1444,
-      "totalVotes": 4901
-     },
-     "pop2020": 8349,
-     "splitPct": 0
-    },
-    "Windsor-2 State House District": {
-     "2016": {
-      "demPct": 46.4,
-      "demVotes": 1051,
-      "margin": -6.2,
-      "othVotes": 303,
-      "repPct": 40.2,
-      "repVotes": 909,
-      "totalVotes": 2263
-     },
-     "2020": {
-      "demPct": 57.4,
-      "demVotes": 1484,
-      "margin": -17.8,
-      "othVotes": 78,
-      "repPct": 39.6,
-      "repVotes": 1022,
-      "totalVotes": 2584
-     },
-     "2024": {
-      "demPct": 53.5,
-      "demVotes": 1418,
-      "margin": -10.7,
-      "othVotes": 97,
-      "repPct": 42.8,
-      "repVotes": 1133,
-      "totalVotes": 2648
-     },
-     "pop2020": 4234,
-     "splitPct": 0
-    },
-    "Windsor-3-1 State House District": {
-     "2016": {
-      "demPct": 51.9,
-      "demVotes": 1092,
-      "margin": -16.9,
-      "othVotes": 277,
-      "repPct": 35,
-      "repVotes": 736,
-      "totalVotes": 2105
-     },
-     "2020": {
-      "demPct": 59.9,
-      "demVotes": 1435,
-      "margin": -23.6,
-      "othVotes": 93,
-      "repPct": 36.3,
-      "repVotes": 869,
-      "totalVotes": 2397
-     },
-     "2024": {
-      "demPct": 57,
-      "demVotes": 1360,
-      "margin": -17.1,
-      "othVotes": 73,
-      "repPct": 39.9,
-      "repVotes": 951,
-      "totalVotes": 2384
-     },
-     "pop2020": 4037,
-     "splitPct": 4.9
-    },
-    "Windsor-3-2 State House District": {
-     "2016": {
-      "demPct": 47.4,
-      "demVotes": 1824,
-      "margin": -9.2,
-      "othVotes": 555,
-      "repPct": 38.2,
-      "repVotes": 1471,
-      "totalVotes": 3850
-     },
-     "2020": {
-      "demPct": 57.2,
-      "demVotes": 2516,
-      "margin": -18.1,
-      "othVotes": 161,
-      "repPct": 39.1,
-      "repVotes": 1722,
-      "totalVotes": 4399
-     },
-     "2024": {
-      "demPct": 55.1,
-      "demVotes": 2447,
-      "margin": -13.6,
-      "othVotes": 151,
-      "repPct": 41.5,
-      "repVotes": 1842,
-      "totalVotes": 4440
-     },
-     "pop2020": 8827,
-     "splitPct": 100
-    },
-    "Windsor-4-1 State House District": {
-     "2016": {
-      "demPct": 61.4,
-      "demVotes": 1478,
-      "margin": -33.9,
-      "othVotes": 268,
-      "repPct": 27.5,
-      "repVotes": 662,
-      "totalVotes": 2408
-     },
-     "2020": {
-      "demPct": 70.8,
-      "demVotes": 2029,
-      "margin": -44.9,
-      "othVotes": 95,
-      "repPct": 25.9,
-      "repVotes": 742,
-      "totalVotes": 2866
-     },
-     "2024": {
-      "demPct": 71.3,
-      "demVotes": 1968,
-      "margin": -46.3,
-      "othVotes": 101,
-      "repPct": 25,
-      "repVotes": 690,
-      "totalVotes": 2759
-     },
-     "pop2020": 4445,
-     "splitPct": 0.4
-    },
-    "Windsor-4-2 State House District": {
-     "2016": {
-      "demPct": 62.9,
-      "demVotes": 2446,
-      "margin": -38.6,
-      "othVotes": 499,
-      "repPct": 24.3,
-      "repVotes": 945,
-      "totalVotes": 3890
-     },
-     "2020": {
-      "demPct": 72.9,
-      "demVotes": 3461,
-      "margin": -48.6,
-      "othVotes": 130,
-      "repPct": 24.3,
-      "repVotes": 1155,
-      "totalVotes": 4746
-     },
-     "2024": {
-      "demPct": 69.8,
-      "demVotes": 3335,
-      "margin": -43.4,
-      "othVotes": 179,
-      "repPct": 26.4,
-      "repVotes": 1263,
-      "totalVotes": 4777
-     },
-     "pop2020": 8149,
-     "splitPct": 100
-    },
-    "Windsor-5 State House District": {
-     "2016": {
-      "demPct": 66.2,
-      "demVotes": 1723,
-      "margin": -42.9,
-      "othVotes": 273,
-      "repPct": 23.3,
-      "repVotes": 605,
-      "totalVotes": 2601
-     },
-     "2020": {
-      "demPct": 75.5,
-      "demVotes": 2208,
-      "margin": -54.1,
-      "othVotes": 91,
-      "repPct": 21.4,
-      "repVotes": 626,
-      "totalVotes": 2925
-     },
-     "2024": {
-      "demPct": 73.8,
-      "demVotes": 2137,
-      "margin": -51,
-      "othVotes": 98,
-      "repPct": 22.8,
-      "repVotes": 659,
-      "totalVotes": 2894
-     },
-     "pop2020": 4333,
-     "splitPct": 0
-    },
-    "Windsor-Orange-1 State House District": {
-     "2016": {
-      "demPct": 51.9,
-      "demVotes": 1047,
-      "margin": -19.8,
-      "othVotes": 324,
-      "repPct": 32.1,
-      "repVotes": 648,
-      "totalVotes": 2019
-     },
-     "2020": {
-      "demPct": 61.5,
-      "demVotes": 1444,
-      "margin": -27.2,
-      "othVotes": 99,
-      "repPct": 34.3,
-      "repVotes": 806,
-      "totalVotes": 2349
-     },
-     "2024": {
-      "demPct": 61.2,
-      "demVotes": 1490,
-      "margin": -27.1,
-      "othVotes": 114,
-      "repPct": 34.1,
-      "repVotes": 829,
-      "totalVotes": 2433
-     },
-     "pop2020": 4087,
-     "splitPct": 0
-    },
-    "Windsor-Orange-2 State House District": {
-     "2016": {
-      "demPct": 74.9,
-      "demVotes": 4055,
-      "margin": -59.4,
-      "othVotes": 522,
-      "repPct": 15.5,
-      "repVotes": 837,
-      "totalVotes": 5414
-     },
-     "2020": {
-      "demPct": 81.1,
-      "demVotes": 5005,
-      "margin": -64.6,
-      "othVotes": 153,
-      "repPct": 16.5,
-      "repVotes": 1016,
-      "totalVotes": 6174
-     },
-     "2024": {
-      "demPct": 79.5,
-      "demVotes": 4940,
-      "margin": -62.4,
-      "othVotes": 207,
-      "repPct": 17.1,
-      "repVotes": 1065,
-      "totalVotes": 6212
-     },
-     "pop2020": 9041,
-     "splitPct": 0
-    },
-    "Windsor-Rutland State House District": {
-     "2016": {
-      "demPct": 55.3,
-      "demVotes": 1305,
-      "margin": -25,
-      "othVotes": 340,
-      "repPct": 30.3,
-      "repVotes": 715,
-      "totalVotes": 2360
-     },
-     "2020": {
-      "demPct": 67,
-      "demVotes": 1801,
-      "margin": -37,
-      "othVotes": 80,
-      "repPct": 30,
-      "repVotes": 807,
-      "totalVotes": 2688
-     },
-     "2024": {
       "demPct": 66,
-      "demVotes": 1700,
-      "margin": -36.4,
-      "othVotes": 114,
-      "repPct": 29.6,
-      "repVotes": 762,
-      "totalVotes": 2576
+      "demVotes": 8863,
+      "margin": -34.9,
+      "othVotes": 399,
+      "repPct": 31.1,
+      "repVotes": 4174,
+      "totalVotes": 13436
      },
-     "pop2020": 4263,
+     "2024": {
+      "demPct": 65.4,
+      "demVotes": 8900,
+      "margin": -34.3,
+      "othVotes": 479,
+      "repPct": 31.1,
+      "repVotes": 4225,
+      "totalVotes": 13604
+     },
+     "pop2020": 22837,
+     "splitPct": 0.5
+    },
+    "Lamoille": {
+     "2016": {
+      "demPct": 57.2,
+      "demVotes": 6844,
+      "margin": -29.7,
+      "othVotes": 1826,
+      "repPct": 27.5,
+      "repVotes": 3294,
+      "totalVotes": 11964
+     },
+     "2020": {
+      "demPct": 69,
+      "demVotes": 9651,
+      "margin": -41.4,
+      "othVotes": 484,
+      "repPct": 27.6,
+      "repVotes": 3857,
+      "totalVotes": 13992
+     },
+     "2024": {
+      "demPct": 66.4,
+      "demVotes": 9218,
+      "margin": -36.5,
+      "othVotes": 519,
+      "repPct": 29.9,
+      "repVotes": 4153,
+      "totalVotes": 13890
+     },
+     "pop2020": 24275,
+     "splitPct": 0
+    },
+    "Orange": {
+     "2016": {
+      "demPct": 52.5,
+      "demVotes": 5466,
+      "margin": -19.8,
+      "othVotes": 1538,
+      "repPct": 32.7,
+      "repVotes": 3410,
+      "totalVotes": 10414
+     },
+     "2020": {
+      "demPct": 61.9,
+      "demVotes": 7535,
+      "margin": -27.6,
+      "othVotes": 463,
+      "repPct": 34.3,
+      "repVotes": 4183,
+      "totalVotes": 12181
+     },
+     "2024": {
+      "demPct": 59.8,
+      "demVotes": 7530,
+      "margin": -24.2,
+      "othVotes": 576,
+      "repPct": 35.6,
+      "repVotes": 4481,
+      "totalVotes": 12587
+     },
+     "pop2020": 20340,
+     "splitPct": 0
+    },
+    "Rutland": {
+     "2016": {
+      "demPct": 46.1,
+      "demVotes": 13298,
+      "margin": -4,
+      "othVotes": 3399,
+      "repPct": 42.1,
+      "repVotes": 12154,
+      "totalVotes": 28851
+     },
+     "2020": {
+      "demPct": 53.7,
+      "demVotes": 17778,
+      "margin": -10.5,
+      "othVotes": 1047,
+      "repPct": 43.2,
+      "repVotes": 14297,
+      "totalVotes": 33122
+     },
+     "2024": {
+      "demPct": 51,
+      "demVotes": 16927,
+      "margin": -5.3,
+      "othVotes": 1111,
+      "repPct": 45.7,
+      "repVotes": 15179,
+      "totalVotes": 33217
+     },
+     "pop2020": 59187,
+     "splitPct": 0
+    },
+    "Washington": {
+     "2016": {
+      "demPct": 59.8,
+      "demVotes": 18594,
+      "margin": -34.1,
+      "othVotes": 4499,
+      "repPct": 25.7,
+      "repVotes": 7993,
+      "totalVotes": 31086
+     },
+     "2020": {
+      "demPct": 71.3,
+      "demVotes": 25191,
+      "margin": -46,
+      "othVotes": 1188,
+      "repPct": 25.3,
+      "repVotes": 8928,
+      "totalVotes": 35307
+     },
+     "2024": {
+      "demPct": 69.3,
+      "demVotes": 24527,
+      "margin": -42.9,
+      "othVotes": 1515,
+      "repPct": 26.4,
+      "repVotes": 9327,
+      "totalVotes": 35369
+     },
+     "pop2020": 59807,
+     "splitPct": 0
+    },
+    "Windham": {
+     "2016": {
+      "demPct": 64.1,
+      "demVotes": 13232,
+      "margin": -40.8,
+      "othVotes": 2601,
+      "repPct": 23.3,
+      "repVotes": 4813,
+      "totalVotes": 20646
+     },
+     "2020": {
+      "demPct": 72.5,
+      "demVotes": 17234,
+      "margin": -48.3,
+      "othVotes": 775,
+      "repPct": 24.2,
+      "repVotes": 5752,
+      "totalVotes": 23761
+     },
+     "2024": {
+      "demPct": 69.5,
+      "demVotes": 16404,
+      "margin": -43.4,
+      "othVotes": 1038,
+      "repPct": 26.1,
+      "repVotes": 6173,
+      "totalVotes": 23615
+     },
+     "pop2020": 41731,
+     "splitPct": 0
+    },
+    "Windsor": {
+     "2016": {
+      "demPct": 58.2,
+      "demVotes": 18410,
+      "margin": -29,
+      "othVotes": 3991,
+      "repPct": 29.2,
+      "repVotes": 9233,
+      "totalVotes": 31634
+     },
+     "2020": {
+      "demPct": 67.5,
+      "demVotes": 24572,
+      "margin": -38.1,
+      "othVotes": 1147,
+      "repPct": 29.4,
+      "repVotes": 10693,
+      "totalVotes": 36412
+     },
+     "2024": {
+      "demPct": 65.4,
+      "demVotes": 23743,
+      "margin": -34.4,
+      "othVotes": 1326,
+      "repPct": 31,
+      "repVotes": 11245,
+      "totalVotes": 36314
+     },
+     "pop2020": 61057,
      "splitPct": 0
     }
    },

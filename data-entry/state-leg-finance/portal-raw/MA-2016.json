@@ -1,0 +1,2705 @@
+{
+ "state": "MA",
+ "cycle": 2016,
+ "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
+ "fetched": "2026-10-16",
+ "dataThrough": "12/31/2016",
+ "candidates": [
+  {
+   "name": "Whelan, Timothy R.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1st Barnstable",
+   "contributions": 73782.31,
+   "expenditures": 26033.28
+  },
+  {
+   "name": "Crocker, William L.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "2nd Barnstable",
+   "contributions": 126419.15,
+   "expenditures": 96990.96
+  },
+  {
+   "name": "Kanzer, Aaron",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Barnstable",
+   "contributions": 24657.55,
+   "expenditures": 19111.75
+  },
+  {
+   "name": "Weber, Margaret",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Barnstable",
+   "contributions": 19753.02,
+   "expenditures": 17171.64
+  },
+  {
+   "name": "Blanton, Michael A.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Barnstable",
+   "contributions": 12768.33,
+   "expenditures": 11730.74
+  },
+  {
+   "name": "Patrick, Matthew C.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Barnstable",
+   "contributions": 48743.34,
+   "expenditures": 44859.71
+  },
+  {
+   "name": "Vieira, David T.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3rd Barnstable",
+   "contributions": 76942.05,
+   "expenditures": 52067.66
+  },
+  {
+   "name": "Peake, Sarah",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "4th Barnstable",
+   "contributions": 36477.42,
+   "expenditures": 36579.08
+  },
+  {
+   "name": "Hunt, Randy",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "5th Barnstable",
+   "contributions": 22695.0,
+   "expenditures": 19349.82
+  },
+  {
+   "name": "Fernandes, Dylan",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "Barnstable, Dukes & Nantucket",
+   "contributions": 72604.77,
+   "expenditures": 68475.85
+  },
+  {
+   "name": "Ferry, Jacob N.",
+   "party": "",
+   "chamber": "house",
+   "district": "Barnstable, Dukes & Nantucket",
+   "contributions": 79.0,
+   "expenditures": 50.0
+  },
+  {
+   "name": "Glidden, Tobias B.",
+   "party": "",
+   "chamber": "house",
+   "district": "Barnstable, Dukes & Nantucket",
+   "contributions": 60128.0,
+   "expenditures": 59463.57
+  },
+  {
+   "name": "Heylin, Michael",
+   "party": "Unenrolled",
+   "chamber": "house",
+   "district": "Barnstable, Dukes & Nantucket",
+   "contributions": null,
+   "expenditures": null
+  },
+  {
+   "name": "Hopkins, T. Ewell",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "Barnstable, Dukes & Nantucket",
+   "contributions": 16947.13,
+   "expenditures": 11318.02
+  },
+  {
+   "name": "Lambert, Jessica G.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "Barnstable, Dukes & Nantucket",
+   "contributions": 5491.8,
+   "expenditures": 3221.8
+  },
+  {
+   "name": "Soverino, Timothy M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "Barnstable, Dukes & Nantucket",
+   "contributions": 3640.0,
+   "expenditures": 3737.62
+  },
+  {
+   "name": "Cariddi, Gailanne M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "1st Berkshire",
+   "contributions": 3252.4,
+   "expenditures": 6102.18
+  },
+  {
+   "name": "Mark, Paul",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Berkshire",
+   "contributions": 42998.38,
+   "expenditures": 46135.07
+  },
+  {
+   "name": "Bloomberg, Michael Eric",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Berkshire",
+   "contributions": 21019.02,
+   "expenditures": 20089.01
+  },
+  {
+   "name": "Connell, Christopher James",
+   "party": "",
+   "chamber": "house",
+   "district": "3rd Berkshire",
+   "contributions": 13409.0,
+   "expenditures": 13048.86
+  },
+  {
+   "name": "Farley-Bouvier, Tricia",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Berkshire",
+   "contributions": 58496.19,
+   "expenditures": 54802.97
+  },
+  {
+   "name": "Pignatelli, William",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "4th Berkshire",
+   "contributions": 67795.0,
+   "expenditures": 58768.48
+  },
+  {
+   "name": "Barrows, Fred J.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1st Bristol",
+   "contributions": 40236.36,
+   "expenditures": 30200.54
+  },
+  {
+   "name": "Toole, Michael E.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "1st Bristol",
+   "contributions": 18784.0,
+   "expenditures": 15941.23
+  },
+  {
+   "name": "Heroux, Paul",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Bristol",
+   "contributions": 32086.61,
+   "expenditures": 19245.27
+  },
+  {
+   "name": "Borges, Estele",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Bristol",
+   "contributions": 36938.42,
+   "expenditures": 42132.33
+  },
+  {
+   "name": "O'Connell, Shaunna",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3rd Bristol",
+   "contributions": 170543.82,
+   "expenditures": 140337.6
+  },
+  {
+   "name": "Howitt, Steven",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "4th Bristol",
+   "contributions": 116725.57,
+   "expenditures": 60396.38
+  },
+  {
+   "name": "Jacques, Paul William",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "4th Bristol",
+   "contributions": 66606.11,
+   "expenditures": 65296.28
+  },
+  {
+   "name": "Haddad, Patricia A.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "5th Bristol",
+   "contributions": 68898.3,
+   "expenditures": 77878.97
+  },
+  {
+   "name": "Fiola, Carole",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "6th Bristol",
+   "contributions": 106114.95,
+   "expenditures": 56825.78
+  },
+  {
+   "name": "Silvia, Alan",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Bristol",
+   "contributions": 51787.92,
+   "expenditures": 48163.57
+  },
+  {
+   "name": "Schmid, Paul A.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "8th Bristol",
+   "contributions": 83310.0,
+   "expenditures": 34893.23
+  },
+  {
+   "name": "Markey, Christopher",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "9th Bristol",
+   "contributions": 31123.08,
+   "expenditures": 36179.35
+  },
+  {
+   "name": "Straus, William M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "10th Bristol",
+   "contributions": 51541.95,
+   "expenditures": 31652.36
+  },
+  {
+   "name": "Koczera, Robert M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "11th Bristol",
+   "contributions": 8108.81,
+   "expenditures": 4582.74
+  },
+  {
+   "name": "Orrall, Keiko",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "12th Bristol",
+   "contributions": 32129.0,
+   "expenditures": 20067.59
+  },
+  {
+   "name": "Cabral, Antonio F. D.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "13th Bristol",
+   "contributions": 56520.0,
+   "expenditures": 27071.58
+  },
+  {
+   "name": "Dubuc, Scott P.",
+   "party": "",
+   "chamber": "house",
+   "district": "14th Bristol",
+   "contributions": 4620.0,
+   "expenditures": 4571.76
+  },
+  {
+   "name": "Poirier, Elizabeth A.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "14th Bristol",
+   "contributions": 43267.2,
+   "expenditures": 29228.56
+  },
+  {
+   "name": "Kelcourse, James M.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1st Essex",
+   "contributions": 138373.18,
+   "expenditures": 91512.29
+  },
+  {
+   "name": "Sullivan, Brianna R.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "1st Essex",
+   "contributions": 31434.7,
+   "expenditures": 30772.88
+  },
+  {
+   "name": "Mirra, Leonard",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "2nd Essex",
+   "contributions": 4111.5,
+   "expenditures": 2524.8
+  },
+  {
+   "name": "Dempsey, Brian S.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Essex",
+   "contributions": 406932.34,
+   "expenditures": 249233.45
+  },
+  {
+   "name": "Hill, Bradford R.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "4th Essex",
+   "contributions": 29195.25,
+   "expenditures": 21718.62
+  },
+  {
+   "name": "Ferrante, Ann-Margaret",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "5th Essex",
+   "contributions": 78735.47,
+   "expenditures": 53051.08
+  },
+  {
+   "name": "Fishman, Daniel",
+   "party": "Libertarian",
+   "chamber": "house",
+   "district": "6th Essex",
+   "contributions": 7069.52,
+   "expenditures": 7069.52
+  },
+  {
+   "name": "Parisella, Jerald",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "6th Essex",
+   "contributions": 47896.2,
+   "expenditures": 35391.27
+  },
+  {
+   "name": "Tucker, Paul F.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Essex",
+   "contributions": 48518.22,
+   "expenditures": 27389.5
+  },
+  {
+   "name": "Ehrlich, Lori",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "8th Essex",
+   "contributions": 15001.0,
+   "expenditures": 16827.68
+  },
+  {
+   "name": "Migliore, Jennifer",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "9th Essex",
+   "contributions": 97590.95,
+   "expenditures": 86369.85
+  },
+  {
+   "name": "Rizzuto, Saritin",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "9th Essex",
+   "contributions": 56917.33,
+   "expenditures": 51481.54
+  },
+  {
+   "name": "Wong, Donald H.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "9th Essex",
+   "contributions": 93959.17,
+   "expenditures": 78964.92
+  },
+  {
+   "name": "Cahill, Daniel F.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "10th Essex",
+   "contributions": 38517.85,
+   "expenditures": 36557.3
+  },
+  {
+   "name": "Crighton, Brendan Peter",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "11th Essex",
+   "contributions": 48260.37,
+   "expenditures": 30781.66
+  },
+  {
+   "name": "Walsh, Thomas P.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "12th Essex",
+   "contributions": 50249.6,
+   "expenditures": 43831.48
+  },
+  {
+   "name": "Croce, Robert A.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "13th Essex",
+   "contributions": 17350.0,
+   "expenditures": 16520.77
+  },
+  {
+   "name": "Speliotis, Theodore C.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "13th Essex",
+   "contributions": 56963.0,
+   "expenditures": 54382.13
+  },
+  {
+   "name": "DiZoglio, Diana",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "14th Essex",
+   "contributions": 71789.23,
+   "expenditures": 33156.4
+  },
+  {
+   "name": "Jones, Phyllis",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "14th Essex",
+   "contributions": 8732.75,
+   "expenditures": 5708.82
+  },
+  {
+   "name": "Campbell, Linda Dean",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "15th Essex",
+   "contributions": 34853.92,
+   "expenditures": 31382.62
+  },
+  {
+   "name": "Katsoulis, Christopher J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "15th Essex",
+   "contributions": 6100.4,
+   "expenditures": 3604.06
+  },
+  {
+   "name": "Torresi, Nicholas",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "15th Essex",
+   "contributions": 803.0,
+   "expenditures": 791.99
+  },
+  {
+   "name": "Devers, Marcos A.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "16th Essex",
+   "contributions": 39725.0,
+   "expenditures": 36099.47
+  },
+  {
+   "name": "Matias, Juana",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "16th Essex",
+   "contributions": 45319.89,
+   "expenditures": 42123.97
+  },
+  {
+   "name": "Pascual, Juan",
+   "party": "",
+   "chamber": "house",
+   "district": "16th Essex",
+   "contributions": 16125.23,
+   "expenditures": 15047.0
+  },
+  {
+   "name": "Moran, Frank",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "17th Essex",
+   "contributions": 36825.0,
+   "expenditures": 23924.28
+  },
+  {
+   "name": "Camargo, Oscar",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "18th Essex",
+   "contributions": 30794.08,
+   "expenditures": 26369.34
+  },
+  {
+   "name": "Lyons, James J.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "18th Essex",
+   "contributions": 112537.18,
+   "expenditures": 102835.33
+  },
+  {
+   "name": "Kulik, Stephen",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "1st Franklin",
+   "contributions": 41977.4,
+   "expenditures": 31338.61
+  },
+  {
+   "name": "Andrews, Denise",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Franklin",
+   "contributions": 11291.73,
+   "expenditures": 19576.39
+  },
+  {
+   "name": "Whipps, Susannah M.",
+   "party": "Unenrolled",
+   "chamber": "house",
+   "district": "2nd Franklin",
+   "contributions": 41740.92,
+   "expenditures": 30884.18
+  },
+  {
+   "name": "Smola, Todd M.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1st Hampden",
+   "contributions": 49357.0,
+   "expenditures": 28931.25
+  },
+  {
+   "name": "Ashe, Brian M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Hampden",
+   "contributions": 19235.0,
+   "expenditures": 9980.2
+  },
+  {
+   "name": "Starks, Sidney Moore",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "2nd Hampden",
+   "contributions": 3634.11,
+   "expenditures": 3452.5
+  },
+  {
+   "name": "Boldyga, Nick",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3rd Hampden",
+   "contributions": 46408.72,
+   "expenditures": 34535.94
+  },
+  {
+   "name": "Sandlin, Rosemary",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Hampden",
+   "contributions": 25817.52,
+   "expenditures": 24355.3
+  },
+  {
+   "name": "Velis, John Christopher",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "4th Hampden",
+   "contributions": 52614.97,
+   "expenditures": 25500.66
+  },
+  {
+   "name": "Vega, Aaron",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "5th Hampden",
+   "contributions": 72532.23,
+   "expenditures": 71894.59
+  },
+  {
+   "name": "Finn, Michael J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "6th Hampden",
+   "contributions": 75351.33,
+   "expenditures": 76565.3
+  },
+  {
+   "name": "Petrolati, Thomas M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Hampden",
+   "contributions": 48554.76,
+   "expenditures": 59073.95
+  },
+  {
+   "name": "Wagner, Joseph F.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "8th Hampden",
+   "contributions": 79340.1,
+   "expenditures": 66820.86
+  },
+  {
+   "name": "Tosado, Jose F.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "9th Hampden",
+   "contributions": 46375.0,
+   "expenditures": 25992.29
+  },
+  {
+   "name": "Underwood, Robert",
+   "party": "Unenrolled",
+   "chamber": "house",
+   "district": "9th Hampden",
+   "contributions": 1500.0,
+   "expenditures": 1375.44
+  },
+  {
+   "name": "Gonzalez, Carlos",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "10th Hampden",
+   "contributions": 11020.0,
+   "expenditures": 9305.58
+  },
+  {
+   "name": "Barnett, Kenneth Emanuel",
+   "party": "Unenrolled",
+   "chamber": "house",
+   "district": "11th Hampden",
+   "contributions": 1171.27,
+   "expenditures": 1017.89
+  },
+  {
+   "name": "Jones, Michael Keith",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "11th Hampden",
+   "contributions": 1154.29,
+   "expenditures": 1154.29
+  },
+  {
+   "name": "Lawson, Larry",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "11th Hampden",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Swan, Benjamin",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "11th Hampden",
+   "contributions": 27383.05,
+   "expenditures": 25519.07
+  },
+  {
+   "name": "Williams, Bud L.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "11th Hampden",
+   "contributions": 32327.5,
+   "expenditures": 44893.7
+  },
+  {
+   "name": "Puppolo, Angelo",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "12th Hampden",
+   "contributions": 86594.99,
+   "expenditures": 71201.7
+  },
+  {
+   "name": "Kocot, Peter V.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "1st Hampshire",
+   "contributions": 52805.0,
+   "expenditures": 50988.25
+  },
+  {
+   "name": "Scibak, John W.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Hampshire",
+   "contributions": 62819.14,
+   "expenditures": 82666.0
+  },
+  {
+   "name": "Douangmany Cage, Viraphanh",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Hampshire",
+   "contributions": 8179.0,
+   "expenditures": 8263.38
+  },
+  {
+   "name": "Goldstein-Rose, Solomon",
+   "party": "",
+   "chamber": "house",
+   "district": "3rd Hampshire",
+   "contributions": 27245.31,
+   "expenditures": 25629.97
+  },
+  {
+   "name": "LaCour, Sarah Collins",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Hampshire",
+   "contributions": 15398.0,
+   "expenditures": 14271.2
+  },
+  {
+   "name": "MacCracken, Bonnie",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Hampshire",
+   "contributions": 10889.96,
+   "expenditures": 10302.37
+  },
+  {
+   "name": "Nakajima, Eric T.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Hampshire",
+   "contributions": 12163.86,
+   "expenditures": 11287.17
+  },
+  {
+   "name": "O'Brien, Lawrence Edward",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Hampshire",
+   "contributions": 3932.15,
+   "expenditures": 3932.15
+  },
+  {
+   "name": "Harrington, Sheila C.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1st Middlesex",
+   "contributions": 10344.53,
+   "expenditures": 13739.33
+  },
+  {
+   "name": "Meneghini, Matthew T.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "1st Middlesex",
+   "contributions": 2735.98,
+   "expenditures": 864.56
+  },
+  {
+   "name": "Arciero, Jim",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Middlesex",
+   "contributions": 91840.12,
+   "expenditures": 51597.91
+  },
+  {
+   "name": "Hogan, Kate",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Middlesex",
+   "contributions": 55010.32,
+   "expenditures": 37464.94
+  },
+  {
+   "name": "Ferro, Paul",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "4th Middlesex",
+   "contributions": 42100.64,
+   "expenditures": 24248.4
+  },
+  {
+   "name": "Gregoire, Danielle W.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "4th Middlesex",
+   "contributions": 44162.27,
+   "expenditures": 29073.25
+  },
+  {
+   "name": "Ossing, Michael H.",
+   "party": "",
+   "chamber": "house",
+   "district": "4th Middlesex",
+   "contributions": 2175.35,
+   "expenditures": 2175.35
+  },
+  {
+   "name": "Linsky, David",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "5th Middlesex",
+   "contributions": 6484.14,
+   "expenditures": 10826.67
+  },
+  {
+   "name": "Walsh, Chris",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "6th Middlesex",
+   "contributions": 25735.0,
+   "expenditures": 24459.99
+  },
+  {
+   "name": "Greaves, Yolanda",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "7th Middlesex",
+   "contributions": 25814.12,
+   "expenditures": 15664.83
+  },
+  {
+   "name": "Jack, Philip C.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Middlesex",
+   "contributions": 39352.52,
+   "expenditures": 35852.69
+  },
+  {
+   "name": "Lewis, Jack",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Middlesex",
+   "contributions": 43330.32,
+   "expenditures": 39155.16
+  },
+  {
+   "name": "Walker, Brett",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Middlesex",
+   "contributions": 33203.13,
+   "expenditures": 27554.3
+  },
+  {
+   "name": "Wilson, Clifford T. C.",
+   "party": "",
+   "chamber": "house",
+   "district": "7th Middlesex",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Dykema, Carolyn Coyne",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "8th Middlesex",
+   "contributions": 25353.03,
+   "expenditures": 15728.24
+  },
+  {
+   "name": "Gallagher Tully, Stacey",
+   "party": "",
+   "chamber": "house",
+   "district": "9th Middlesex",
+   "contributions": 14395.25,
+   "expenditures": 13926.28
+  },
+  {
+   "name": "Stanley, Thomas M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "9th Middlesex",
+   "contributions": 156154.45,
+   "expenditures": 214201.82
+  },
+  {
+   "name": "Lawn, John",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "10th Middlesex",
+   "contributions": 44792.1,
+   "expenditures": 46921.69
+  },
+  {
+   "name": "Khan, Kay S.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "11th Middlesex",
+   "contributions": 8283.24,
+   "expenditures": 15707.09
+  },
+  {
+   "name": "Balser, Ruth B.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "12th Middlesex",
+   "contributions": 25995.51,
+   "expenditures": 20088.2
+  },
+  {
+   "name": "Gentile, Carmine",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "13th Middlesex",
+   "contributions": 17785.03,
+   "expenditures": 2655.57
+  },
+  {
+   "name": "Atkins, Cory",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "14th Middlesex",
+   "contributions": 75787.49,
+   "expenditures": 89693.04
+  },
+  {
+   "name": "Brady, Helen",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "14th Middlesex",
+   "contributions": 34540.38,
+   "expenditures": 24084.45
+  },
+  {
+   "name": "Factor, Daniel L.",
+   "party": "Other",
+   "chamber": "house",
+   "district": "14th Middlesex",
+   "contributions": 2110.61,
+   "expenditures": 1838.94
+  },
+  {
+   "name": "Kaufman, Jay R.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "15th Middlesex",
+   "contributions": 5725.0,
+   "expenditures": 11170.11
+  },
+  {
+   "name": "Golden, Thomas A.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "16th Middlesex",
+   "contributions": 147914.93,
+   "expenditures": 115566.22
+  },
+  {
+   "name": "Nangle, David M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "17th Middlesex",
+   "contributions": 116265.0,
+   "expenditures": 116395.21
+  },
+  {
+   "name": "Kay, Kamara",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "18th Middlesex",
+   "contributions": 11871.0,
+   "expenditures": 6768.51
+  },
+  {
+   "name": "Khim, Cheth",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "18th Middlesex",
+   "contributions": 5116.25,
+   "expenditures": 5166.29
+  },
+  {
+   "name": "Mom, Rady",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "18th Middlesex",
+   "contributions": 73860.0,
+   "expenditures": 72729.54
+  },
+  {
+   "name": "Ouellette, David Michael",
+   "party": "Unenrolled",
+   "chamber": "house",
+   "district": "18th Middlesex",
+   "contributions": 8673.07,
+   "expenditures": 8232.22
+  },
+  {
+   "name": "Miceli, James R.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "19th Middlesex",
+   "contributions": 38130.55,
+   "expenditures": 33070.99
+  },
+  {
+   "name": "Jones, Bradley H.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "20th Middlesex",
+   "contributions": 121256.3,
+   "expenditures": 74028.19
+  },
+  {
+   "name": "Girouard, Paul",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "21st Middlesex",
+   "contributions": 49474.36,
+   "expenditures": 29102.74
+  },
+  {
+   "name": "Gordon, Kenneth I.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "21st Middlesex",
+   "contributions": 68055.06,
+   "expenditures": 67489.89
+  },
+  {
+   "name": "Lombardo, Marc",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "22nd Middlesex",
+   "contributions": 59754.72,
+   "expenditures": 45708.67
+  },
+  {
+   "name": "Simolaris, George",
+   "party": "Unenrolled",
+   "chamber": "house",
+   "district": "22nd Middlesex",
+   "contributions": 12695.81,
+   "expenditures": 7325.26
+  },
+  {
+   "name": "Garballey, Sean",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "23rd Middlesex",
+   "contributions": 16682.0,
+   "expenditures": 15969.8
+  },
+  {
+   "name": "Rogers, David M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "24th Middlesex",
+   "contributions": 26225.0,
+   "expenditures": 12092.73
+  },
+  {
+   "name": "Decker, Marjorie C.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "25th Middlesex",
+   "contributions": 51195.0,
+   "expenditures": 56332.14
+  },
+  {
+   "name": "Phillips, Lesley R.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "25th Middlesex",
+   "contributions": 3801.0,
+   "expenditures": 778.26
+  },
+  {
+   "name": "Connolly, Michael L.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "26th Middlesex",
+   "contributions": 118478.25,
+   "expenditures": 116905.74
+  },
+  {
+   "name": "Toomey, Timothy J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "26th Middlesex",
+   "contributions": 130592.87,
+   "expenditures": 147908.85
+  },
+  {
+   "name": "James, Aaron Joshua",
+   "party": "",
+   "chamber": "house",
+   "district": "27th Middlesex",
+   "contributions": 1047.72,
+   "expenditures": 917.71
+  },
+  {
+   "name": "Provost, Denise",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "27th Middlesex",
+   "contributions": 19357.42,
+   "expenditures": 13243.12
+  },
+  {
+   "name": "Adrien, Gerly",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "28th Middlesex",
+   "contributions": 22949.3,
+   "expenditures": 21838.55
+  },
+  {
+   "name": "McGonagle, Joseph",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "28th Middlesex",
+   "contributions": 53185.0,
+   "expenditures": 50031.99
+  },
+  {
+   "name": "Hecht, Jonathan",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "29th Middlesex",
+   "contributions": 86.0,
+   "expenditures": 4991.58
+  },
+  {
+   "name": "Devine, John Patrick",
+   "party": "",
+   "chamber": "house",
+   "district": "30th Middlesex",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Dwyer, James",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "30th Middlesex",
+   "contributions": 38931.0,
+   "expenditures": 51355.26
+  },
+  {
+   "name": "Colarusso, Caroline",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "31st Middlesex",
+   "contributions": 106235.58,
+   "expenditures": 81969.46
+  },
+  {
+   "name": "Day, Michael",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "31st Middlesex",
+   "contributions": 148682.65,
+   "expenditures": 110073.25
+  },
+  {
+   "name": "Brodeur, Paul",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "32nd Middlesex",
+   "contributions": 49865.0,
+   "expenditures": 23246.58
+  },
+  {
+   "name": "Ultrino, Steven",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "33rd Middlesex",
+   "contributions": 32978.4,
+   "expenditures": 25802.05
+  },
+  {
+   "name": "Barber, Christine P.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "34th Middlesex",
+   "contributions": 35537.36,
+   "expenditures": 14634.41
+  },
+  {
+   "name": "Donato, Paul J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "35th Middlesex",
+   "contributions": 126852.97,
+   "expenditures": 106178.47
+  },
+  {
+   "name": "Garry, Colleen M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "36th Middlesex",
+   "contributions": 13620.0,
+   "expenditures": 9152.17
+  },
+  {
+   "name": "Benson, Jennifer",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "37th Middlesex",
+   "contributions": 96960.63,
+   "expenditures": 58294.45
+  },
+  {
+   "name": "Ayers, Bruce J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "1st Norfolk",
+   "contributions": 77281.08,
+   "expenditures": 47933.38
+  },
+  {
+   "name": "Chan, Tackey",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Norfolk",
+   "contributions": 78552.0,
+   "expenditures": 32667.61
+  },
+  {
+   "name": "Mariano, Ronald",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Norfolk",
+   "contributions": 158200.0,
+   "expenditures": 152929.93
+  },
+  {
+   "name": "Murphy, James",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "4th Norfolk",
+   "contributions": 38374.0,
+   "expenditures": 38641.11
+  },
+  {
+   "name": "Cusack, Mark James",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "5th Norfolk",
+   "contributions": 79875.0,
+   "expenditures": 80396.76
+  },
+  {
+   "name": "Galvin, William C.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "6th Norfolk",
+   "contributions": 25690.0,
+   "expenditures": 27894.44
+  },
+  {
+   "name": "Adams, Jason R.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Norfolk",
+   "contributions": 11529.12,
+   "expenditures": 11519.61
+  },
+  {
+   "name": "Burgess, James F.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Norfolk",
+   "contributions": 23716.66,
+   "expenditures": 16836.09
+  },
+  {
+   "name": "Driscoll, William J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Norfolk",
+   "contributions": 24932.36,
+   "expenditures": 19712.41
+  },
+  {
+   "name": "Farrington, Anthony Joseph",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Norfolk",
+   "contributions": 43850.49,
+   "expenditures": 43091.41
+  },
+  {
+   "name": "Roberson, Kerby",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Norfolk",
+   "contributions": 29770.86,
+   "expenditures": 27981.99
+  },
+  {
+   "name": "Swenson, Denise",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Norfolk",
+   "contributions": 34163.38,
+   "expenditures": 32443.84
+  },
+  {
+   "name": "Zullas, Michael",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Norfolk",
+   "contributions": 51755.0,
+   "expenditures": 51137.37
+  },
+  {
+   "name": "Kafka, Louis L.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "8th Norfolk",
+   "contributions": 44732.0,
+   "expenditures": 37756.97
+  },
+  {
+   "name": "Dooley, Shawn C.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "9th Norfolk",
+   "contributions": 102974.86,
+   "expenditures": 54661.11
+  },
+  {
+   "name": "Hamlin, Brian",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "9th Norfolk",
+   "contributions": 13579.05,
+   "expenditures": 13385.42
+  },
+  {
+   "name": "Roy, Jeffrey",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "10th Norfolk",
+   "contributions": 32215.9,
+   "expenditures": 20052.97
+  },
+  {
+   "name": "McMurtry, Paul",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "11th Norfolk",
+   "contributions": 77817.87,
+   "expenditures": 45687.03
+  },
+  {
+   "name": "Hempton, Tim",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "12th Norfolk",
+   "contributions": 7155.0,
+   "expenditures": 3119.39
+  },
+  {
+   "name": "Rogers, John H.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "12th Norfolk",
+   "contributions": 81262.24,
+   "expenditures": 36824.9
+  },
+  {
+   "name": "Garlick, Denise",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "13th Norfolk",
+   "contributions": 80696.75,
+   "expenditures": 65948.24
+  },
+  {
+   "name": "Negron, Patricia Ann",
+   "party": "",
+   "chamber": "house",
+   "district": "13th Norfolk",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Peisch, Alice Hanlon",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "14th Norfolk",
+   "contributions": 44790.82,
+   "expenditures": 25857.8
+  },
+  {
+   "name": "Smizik, Frank I.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "15th Norfolk",
+   "contributions": 8957.95,
+   "expenditures": 4573.74
+  },
+  {
+   "name": "Mahoney, John T.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "1st Plymouth",
+   "contributions": 40013.9,
+   "expenditures": 38226.66
+  },
+  {
+   "name": "Muratore, Mathew",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1st Plymouth",
+   "contributions": 80542.91,
+   "expenditures": 58627.5
+  },
+  {
+   "name": "Palmer, Stephen",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "1st Plymouth",
+   "contributions": 14989.2,
+   "expenditures": 2588.2
+  },
+  {
+   "name": "Hewins, Sarah G.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Plymouth",
+   "contributions": 45100.0,
+   "expenditures": 43406.95
+  },
+  {
+   "name": "Williams-Gifford, Susan",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "2nd Plymouth",
+   "contributions": 36893.83,
+   "expenditures": 37918.83
+  },
+  {
+   "name": "Arute, Kristen Gail",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3rd Plymouth",
+   "contributions": 48474.18,
+   "expenditures": 26964.55
+  },
+  {
+   "name": "Brannan, John C.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3rd Plymouth",
+   "contributions": 35559.87,
+   "expenditures": 24407.18
+  },
+  {
+   "name": "Burm, Stephen",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Plymouth",
+   "contributions": 23985.0,
+   "expenditures": 19787.19
+  },
+  {
+   "name": "Meschino, Joan",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Plymouth",
+   "contributions": 153029.84,
+   "expenditures": 149096.35
+  },
+  {
+   "name": "Thompson, Keri",
+   "party": "United Independent Party",
+   "chamber": "house",
+   "district": "3rd Plymouth",
+   "contributions": 4745.0,
+   "expenditures": 4745.0
+  },
+  {
+   "name": "Cantwell, James M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "4th Plymouth",
+   "contributions": 203422.61,
+   "expenditures": 65603.78
+  },
+  {
+   "name": "White, Michael F.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "4th Plymouth",
+   "contributions": 17809.1,
+   "expenditures": 11058.97
+  },
+  {
+   "name": "DeCoste, David F.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "5th Plymouth",
+   "contributions": 94918.8,
+   "expenditures": 76158.08
+  },
+  {
+   "name": "Moody, Paul Francis",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "5th Plymouth",
+   "contributions": 32650.0,
+   "expenditures": 32309.57
+  },
+  {
+   "name": "Nyman, Kara",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "5th Plymouth",
+   "contributions": 44178.0,
+   "expenditures": 41575.23
+  },
+  {
+   "name": "Cogliano, Vincent Anthony",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "6th Plymouth",
+   "contributions": 52410.38,
+   "expenditures": 37065.61
+  },
+  {
+   "name": "Cutler, Josh",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "6th Plymouth",
+   "contributions": 85210.42,
+   "expenditures": 23354.84
+  },
+  {
+   "name": "Diehl, Geoffrey",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "7th Plymouth",
+   "contributions": 258969.75,
+   "expenditures": 199411.1
+  },
+  {
+   "name": "D'Emilia, Angelo L.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "8th Plymouth",
+   "contributions": 54463.0,
+   "expenditures": 16300.17
+  },
+  {
+   "name": "Cassidy, Gerard J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "9th Plymouth",
+   "contributions": 49033.43,
+   "expenditures": 35342.82
+  },
+  {
+   "name": "Yoon, Danny J.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "9th Plymouth",
+   "contributions": 1410.0,
+   "expenditures": 23.36
+  },
+  {
+   "name": "DuBois, Michelle Marie",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "10th Plymouth",
+   "contributions": 16635.0,
+   "expenditures": 15852.51
+  },
+  {
+   "name": "Cronin, Claire",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "11th Plymouth",
+   "contributions": 136603.64,
+   "expenditures": 115447.34
+  },
+  {
+   "name": "Locke, Joseph S.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "11th Plymouth",
+   "contributions": 759.2,
+   "expenditures": 801.61
+  },
+  {
+   "name": "Boncek, Peter J.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "12th Plymouth",
+   "contributions": 12473.17,
+   "expenditures": 10637.84
+  },
+  {
+   "name": "Calter, Thomas J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "12th Plymouth",
+   "contributions": 102820.0,
+   "expenditures": 99595.42
+  },
+  {
+   "name": "Cowett, Michael",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "12th Plymouth",
+   "contributions": 35770.69,
+   "expenditures": 27864.29
+  },
+  {
+   "name": "Murphy, Ian F.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "12th Plymouth",
+   "contributions": 351.0,
+   "expenditures": 189.0
+  },
+  {
+   "name": "Madaro, Adrian",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "1st Suffolk",
+   "contributions": 268695.37,
+   "expenditures": 266203.49
+  },
+  {
+   "name": "Ryan, Daniel Joseph",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Suffolk",
+   "contributions": 85270.3,
+   "expenditures": 81812.78
+  },
+  {
+   "name": "Michlewitz, Aaron",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Suffolk",
+   "contributions": 395490.2,
+   "expenditures": 226062.17
+  },
+  {
+   "name": "Collins, Nicholas P.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "4th Suffolk",
+   "contributions": 334983.99,
+   "expenditures": 260676.58
+  },
+  {
+   "name": "Carvalho, Evandro C.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "5th Suffolk",
+   "contributions": 63426.05,
+   "expenditures": 45993.42
+  },
+  {
+   "name": "Garrison, Althea",
+   "party": "",
+   "chamber": "house",
+   "district": "5th Suffolk",
+   "contributions": 2569.94,
+   "expenditures": 2069.94
+  },
+  {
+   "name": "Stewart, Melinda",
+   "party": "",
+   "chamber": "house",
+   "district": "5th Suffolk",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Holmes, Russell",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "6th Suffolk",
+   "contributions": 3659.78,
+   "expenditures": 2978.76
+  },
+  {
+   "name": "Cannon, Monica Monique",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Suffolk",
+   "contributions": 19678.26,
+   "expenditures": 17704.24
+  },
+  {
+   "name": "Tuitt, Marydith E.",
+   "party": "",
+   "chamber": "house",
+   "district": "7th Suffolk",
+   "contributions": 13648.21,
+   "expenditures": 13962.77
+  },
+  {
+   "name": "Tyler, Chynah",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "7th Suffolk",
+   "contributions": 37474.44,
+   "expenditures": 30772.68
+  },
+  {
+   "name": "Livingstone, Jay",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "8th Suffolk",
+   "contributions": 221067.59,
+   "expenditures": 231047.78
+  },
+  {
+   "name": "Rushing, Byron",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "9th Suffolk",
+   "contributions": 2300.0,
+   "expenditures": 723.0
+  },
+  {
+   "name": "Coppinger, Edward F.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "10th Suffolk",
+   "contributions": 99122.46,
+   "expenditures": 68737.17
+  },
+  {
+   "name": "Bedell, Stephen Charles",
+   "party": "",
+   "chamber": "house",
+   "district": "11th Suffolk",
+   "contributions": 2373.75,
+   "expenditures": 2347.5
+  },
+  {
+   "name": "Clemons Muhammad, Charles",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "11th Suffolk",
+   "contributions": 9751.53,
+   "expenditures": 10155.08
+  },
+  {
+   "name": "Malia, Elizabeth",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "11th Suffolk",
+   "contributions": 32725.0,
+   "expenditures": 29968.09
+  },
+  {
+   "name": "Cullinane, Dan",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "12th Suffolk",
+   "contributions": 101480.89,
+   "expenditures": 97549.59
+  },
+  {
+   "name": "Lacet, Jovan",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "12th Suffolk",
+   "contributions": 15252.0,
+   "expenditures": 14616.66
+  },
+  {
+   "name": "Williams, Carlotta M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "12th Suffolk",
+   "contributions": 800.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Hunt, Daniel J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "13th Suffolk",
+   "contributions": 108379.55,
+   "expenditures": 108563.73
+  },
+  {
+   "name": "Scaccia, Angelo M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "14th Suffolk",
+   "contributions": 37747.18,
+   "expenditures": 46675.5
+  },
+  {
+   "name": "Solimine, Anthony J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "14th Suffolk",
+   "contributions": 4158.22,
+   "expenditures": 3849.26
+  },
+  {
+   "name": "Uy, Virak",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "14th Suffolk",
+   "contributions": 7805.0,
+   "expenditures": 7784.1
+  },
+  {
+   "name": "Sanchez, Jeffrey",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "15th Suffolk",
+   "contributions": 126660.36,
+   "expenditures": 98551.66
+  },
+  {
+   "name": "Vincent, Roselee",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "16th Suffolk",
+   "contributions": 40906.17,
+   "expenditures": 20608.16
+  },
+  {
+   "name": "Honan, Kevin G.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "17th Suffolk",
+   "contributions": 86500.37,
+   "expenditures": 82568.1
+  },
+  {
+   "name": "Moran, Michael J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "18th Suffolk",
+   "contributions": 161754.69,
+   "expenditures": 153647.61
+  },
+  {
+   "name": "DeLeo, Robert A.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "19th Suffolk",
+   "contributions": 1114406.69,
+   "expenditures": 823411.89
+  },
+  {
+   "name": "Ferguson, Kimberly",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1st Worcester",
+   "contributions": 15315.0,
+   "expenditures": 10212.58
+  },
+  {
+   "name": "Zlotnik, Jonathan D.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "2nd Worcester",
+   "contributions": 33564.09,
+   "expenditures": 4314.4
+  },
+  {
+   "name": "Hay, Stephan",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Worcester",
+   "contributions": 41841.0,
+   "expenditures": 42972.85
+  },
+  {
+   "name": "Maxwell, Kimatra",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3rd Worcester",
+   "contributions": 15375.94,
+   "expenditures": 15364.37
+  },
+  {
+   "name": "Ardinger, Thomas F.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "4th Worcester",
+   "contributions": 43329.19,
+   "expenditures": 20012.81
+  },
+  {
+   "name": "Higgins, Natalie Marie",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "4th Worcester",
+   "contributions": 40391.89,
+   "expenditures": 36568.73
+  },
+  {
+   "name": "Marchand, Richard Maurice",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "4th Worcester",
+   "contributions": 15010.34,
+   "expenditures": 15010.34
+  },
+  {
+   "name": "Sanderski, Joshua",
+   "party": "United Independent Party",
+   "chamber": "house",
+   "district": "4th Worcester",
+   "contributions": 3217.9,
+   "expenditures": 1981.06
+  },
+  {
+   "name": "Berthiaume, Donald R.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "5th Worcester",
+   "contributions": 14460.0,
+   "expenditures": 9225.1
+  },
+  {
+   "name": "Durant, Peter J.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "6th Worcester",
+   "contributions": 14300.0,
+   "expenditures": 4140.65
+  },
+  {
+   "name": "Dotson, Terry Burke",
+   "party": "Unenrolled",
+   "chamber": "house",
+   "district": "7th Worcester",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Frost, Paul K.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "7th Worcester",
+   "contributions": 47452.52,
+   "expenditures": 40849.52
+  },
+  {
+   "name": "Kuros, Kevin J.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "8th Worcester",
+   "contributions": 35779.0,
+   "expenditures": 32195.62
+  },
+  {
+   "name": "Muradian, David",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "9th Worcester",
+   "contributions": 91981.0,
+   "expenditures": 43615.55
+  },
+  {
+   "name": "Biagetti, Sandra E. Slattery",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "10th Worcester",
+   "contributions": 53427.67,
+   "expenditures": 30508.69
+  },
+  {
+   "name": "Edmondson, Susan",
+   "party": "",
+   "chamber": "house",
+   "district": "10th Worcester",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Murray, Brian W.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "10th Worcester",
+   "contributions": 43066.06,
+   "expenditures": 39303.31
+  },
+  {
+   "name": "Kane, Hannah",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "11th Worcester",
+   "contributions": 168784.74,
+   "expenditures": 151414.22
+  },
+  {
+   "name": "DiCalogero, Charlene Rose",
+   "party": "Green-Rainbow Party",
+   "chamber": "house",
+   "district": "12th Worcester",
+   "contributions": 2695.0,
+   "expenditures": 1379.32
+  },
+  {
+   "name": "Naughton, Harold P.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "12th Worcester",
+   "contributions": 129695.22,
+   "expenditures": 126083.94
+  },
+  {
+   "name": "Mahoney, John J.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "13th Worcester",
+   "contributions": 81995.0,
+   "expenditures": 64524.88
+  },
+  {
+   "name": "O'Day, James",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "14th Worcester",
+   "contributions": 56430.42,
+   "expenditures": 57558.42
+  },
+  {
+   "name": "Keefe, Mary S.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "15th Worcester",
+   "contributions": 27274.34,
+   "expenditures": 22446.67
+  },
+  {
+   "name": "Perez, Ralph",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "15th Worcester",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Donahue, Daniel M.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "16th Worcester",
+   "contributions": 68029.87,
+   "expenditures": 57089.63
+  },
+  {
+   "name": "Fresolo, John",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "16th Worcester",
+   "contributions": 12614.61,
+   "expenditures": 17486.71
+  },
+  {
+   "name": "Belanger, Douglas A.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "17th Worcester",
+   "contributions": 23147.76,
+   "expenditures": 17596.93
+  },
+  {
+   "name": "Campanale, Kate",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "17th Worcester",
+   "contributions": 76559.11,
+   "expenditures": 38886.08
+  },
+  {
+   "name": "Dixon, Moses S.",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "17th Worcester",
+   "contributions": 55966.21,
+   "expenditures": 50630.0
+  },
+  {
+   "name": "McKenna, Joseph D.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "18th Worcester",
+   "contributions": 25671.65,
+   "expenditures": 11565.76
+  },
+  {
+   "name": "Canning, Christine M.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "Berkshire, Hampshire, Franklin & Hampden",
+   "contributions": 9129.34,
+   "expenditures": 6343.33
+  },
+  {
+   "name": "Delgallo, Rinaldo",
+   "party": "",
+   "chamber": "senate",
+   "district": "Berkshire, Hampshire, Franklin & Hampden",
+   "contributions": 760.0,
+   "expenditures": 599.87
+  },
+  {
+   "name": "Harrington, Andrea",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Berkshire, Hampshire, Franklin & Hampden",
+   "contributions": 48474.0,
+   "expenditures": 46677.13
+  },
+  {
+   "name": "Hinds, Adam Gray",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Berkshire, Hampshire, Franklin & Hampden",
+   "contributions": 121000.93,
+   "expenditures": 113246.96
+  },
+  {
+   "name": "Timilty, James E.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Bristol & Norfolk",
+   "contributions": 77299.0,
+   "expenditures": 70203.5
+  },
+  {
+   "name": "Rodrigues, Michael J.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "1st Bristol & Plymouth",
+   "contributions": 203141.25,
+   "expenditures": 157340.41
+  },
+  {
+   "name": "Montigny, Mark",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "2nd Bristol & Plymouth",
+   "contributions": 29232.34,
+   "expenditures": 100611.86
+  },
+  {
+   "name": "Crocker, James H.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "Cape & Islands",
+   "contributions": 216786.16,
+   "expenditures": 165604.53
+  },
+  {
+   "name": "Cyr, Julian Andre",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Cape & Islands",
+   "contributions": 313871.67,
+   "expenditures": 290966.35
+  },
+  {
+   "name": "Lyons, Sheila",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Cape & Islands",
+   "contributions": 127063.96,
+   "expenditures": 128189.62
+  },
+  {
+   "name": "Mannal, Brian Richard",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Cape & Islands",
+   "contributions": 14049.36,
+   "expenditures": 16356.87
+  },
+  {
+   "name": "Schiavi, Anthony Edward",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "Cape & Islands",
+   "contributions": 224091.43,
+   "expenditures": 139092.32
+  },
+  {
+   "name": "Martino, Adele F.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "1st Essex",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "O'Connor Ives, Kathleen A.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "1st Essex",
+   "contributions": 73062.31,
+   "expenditures": 68951.0
+  },
+  {
+   "name": "Lovely, Joan",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "2nd Essex",
+   "contributions": 80803.57,
+   "expenditures": 56570.48
+  },
+  {
+   "name": "McGee, Thomas M.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "3rd Essex",
+   "contributions": 113053.91,
+   "expenditures": 76550.49
+  },
+  {
+   "name": "Tarr, Bruce",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "1st Essex & Middlesex",
+   "contributions": 160547.46,
+   "expenditures": 65915.61
+  },
+  {
+   "name": "Harrington, James P.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "1st Hampden & Hampshire",
+   "contributions": 90642.48,
+   "expenditures": 62442.34
+  },
+  {
+   "name": "Laplante, Susan",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "2nd Essex & Middlesex",
+   "contributions": 60688.51,
+   "expenditures": 24559.48
+  },
+  {
+   "name": "Lesser, Eric",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "1st Hampden & Hampshire",
+   "contributions": 434954.17,
+   "expenditures": 292859.85
+  },
+  {
+   "name": "L'Italien, Barbara",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "2nd Essex & Middlesex",
+   "contributions": 208766.19,
+   "expenditures": 202751.19
+  },
+  {
+   "name": "Humason, Donald F.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "2nd Hampden & Hampshire",
+   "contributions": 96425.06,
+   "expenditures": 70499.67
+  },
+  {
+   "name": "Parker-O'Grady, Jerome David",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "2nd Hampden & Hampshire",
+   "contributions": 35316.56,
+   "expenditures": 34572.13
+  },
+  {
+   "name": "Welch, James T.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Hampden",
+   "contributions": 93842.45,
+   "expenditures": 73451.44
+  },
+  {
+   "name": "Peltier, Donald",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "Hampshire, Franklin & Worcester",
+   "contributions": 1000.0,
+   "expenditures": 566.57
+  },
+  {
+   "name": "Rosenberg, Stanley C.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Hampshire, Franklin & Worcester",
+   "contributions": 862180.28,
+   "expenditures": 587256.89
+  },
+  {
+   "name": "Creem, Cynthia S.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "1st Middlesex & Norfolk",
+   "contributions": 29670.42,
+   "expenditures": 23580.98
+  },
+  {
+   "name": "Donoghue, Eileen",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "1st Middlesex",
+   "contributions": 89502.79,
+   "expenditures": 76778.91
+  },
+  {
+   "name": "Binnall, Jacob",
+   "party": "",
+   "chamber": "senate",
+   "district": "2nd Middlesex & Norfolk",
+   "contributions": 2200.0,
+   "expenditures": 2174.23
+  },
+  {
+   "name": "Cheung, Leland",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "2nd Middlesex",
+   "contributions": 207683.74,
+   "expenditures": 131082.22
+  },
+  {
+   "name": "Jehlen, Patricia D.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "2nd Middlesex",
+   "contributions": 152024.21,
+   "expenditures": 158908.18
+  },
+  {
+   "name": "Spilka, Karen",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "2nd Middlesex & Norfolk",
+   "contributions": 354443.51,
+   "expenditures": 162251.51
+  },
+  {
+   "name": "Barrett, Michael J.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "3rd Middlesex",
+   "contributions": 83755.94,
+   "expenditures": 38093.44
+  },
+  {
+   "name": "Donnelly, Kenneth",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "4th Middlesex",
+   "contributions": 97586.3,
+   "expenditures": 60831.08
+  },
+  {
+   "name": "Dixon, Vincent Lawrence",
+   "party": "",
+   "chamber": "senate",
+   "district": "5th Middlesex",
+   "contributions": 725.0,
+   "expenditures": 935.06
+  },
+  {
+   "name": "Lewis, Jason",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "5th Middlesex",
+   "contributions": 122167.07,
+   "expenditures": 45123.33
+  },
+  {
+   "name": "DiDomenico, Sal N.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Middlesex & Suffolk",
+   "contributions": 162161.69,
+   "expenditures": 186473.12
+  },
+  {
+   "name": "Busiek, Edward Caleb Coates",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "Middlesex & Worcester",
+   "contributions": 4601.0,
+   "expenditures": 3666.63
+  },
+  {
+   "name": "Eldridge, James",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Middlesex & Worcester",
+   "contributions": 116593.13,
+   "expenditures": 100088.82
+  },
+  {
+   "name": "Friedrichs, Terra",
+   "party": "",
+   "chamber": "senate",
+   "district": "Middlesex & Worcester",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Keenan, John F.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Norfolk & Plymouth",
+   "contributions": 52335.0,
+   "expenditures": 32372.61
+  },
+  {
+   "name": "Mendez, Alexander",
+   "party": "",
+   "chamber": "senate",
+   "district": "Norfolk & Plymouth",
+   "contributions": 5549.26,
+   "expenditures": 5519.95
+  },
+  {
+   "name": "Rush, Michael",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Norfolk & Suffolk",
+   "contributions": 97044.73,
+   "expenditures": 79117.35
+  },
+  {
+   "name": "Aleksov, Kristopher Khan",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Norfolk, Bristol & Middlesex",
+   "contributions": 8426.0,
+   "expenditures": 6439.89
+  },
+  {
+   "name": "Ross, Richard",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "Norfolk, Bristol & Middlesex",
+   "contributions": 24705.28,
+   "expenditures": 43455.51
+  },
+  {
+   "name": "deMacedo, Vinny",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "Plymouth & Barnstable",
+   "contributions": 108723.04,
+   "expenditures": 67335.79
+  },
+  {
+   "name": "Harrington, Nora",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Norfolk, Bristol & Plymouth",
+   "contributions": 129081.82,
+   "expenditures": 122969.07
+  },
+  {
+   "name": "Lott, Jonathan David",
+   "party": "",
+   "chamber": "senate",
+   "district": "Norfolk, Bristol & Plymouth",
+   "contributions": 1356.27,
+   "expenditures": 1176.0
+  },
+  {
+   "name": "Timilty, Walter F.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Norfolk, Bristol & Plymouth",
+   "contributions": 358900.63,
+   "expenditures": 397709.58
+  },
+  {
+   "name": "Pacheco, Marc",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "1st Plymouth & Bristol",
+   "contributions": 170133.44,
+   "expenditures": 182812.79
+  },
+  {
+   "name": "Wright, Sandra M.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "1st Plymouth & Bristol",
+   "contributions": 8835.15,
+   "expenditures": 8572.79
+  },
+  {
+   "name": "Brady, Michael D.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "2nd Plymouth & Bristol",
+   "contributions": 166895.89,
+   "expenditures": 151922.38
+  },
+  {
+   "name": "Forry, Linda Dorcena",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "1st Suffolk",
+   "contributions": 250074.58,
+   "expenditures": 172119.84
+  },
+  {
+   "name": "Chang-D\u00edaz, Sonia",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "2nd Suffolk",
+   "contributions": 38910.0,
+   "expenditures": 14608.51
+  },
+  {
+   "name": "Cook, Brian R.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Plymouth & Norfolk",
+   "contributions": 26261.65,
+   "expenditures": 17125.76
+  },
+  {
+   "name": "Gannon, Paul J.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Plymouth & Norfolk",
+   "contributions": 108699.0,
+   "expenditures": 100158.7
+  },
+  {
+   "name": "Gill, Stephen",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Plymouth & Norfolk",
+   "contributions": 1260.0,
+   "expenditures": 1154.93
+  },
+  {
+   "name": "O'Connor, Patrick",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "Plymouth & Norfolk",
+   "contributions": 216594.81,
+   "expenditures": 196825.97
+  },
+  {
+   "name": "Owens, Roy",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "2nd Suffolk",
+   "contributions": 400.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Boncore, Joseph Angelo",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "1st Suffolk & Middlesex",
+   "contributions": 256558.91,
+   "expenditures": 256825.14
+  },
+  {
+   "name": "Pimentel, Sarah Genova",
+   "party": "None",
+   "chamber": "senate",
+   "district": "1st Suffolk & Middlesex",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "Brownsberger, William N.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "2nd Suffolk & Middlesex",
+   "contributions": 104862.47,
+   "expenditures": 38168.61
+  },
+  {
+   "name": "Chandler, Harriette L.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "1st Worcester",
+   "contributions": 119383.15,
+   "expenditures": 80052.54
+  },
+  {
+   "name": "Beshir, Mesfin",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "2nd Worcester",
+   "contributions": 1105.75,
+   "expenditures": 1104.98
+  },
+  {
+   "name": "Moore, Michael",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "2nd Worcester",
+   "contributions": 172742.76,
+   "expenditures": 135292.75
+  },
+  {
+   "name": "Flanagan, Jennifer L.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Worcester & Middlesex",
+   "contributions": 116027.2,
+   "expenditures": 119117.79
+  },
+  {
+   "name": "Fattman, Ryan",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "Worcester & Norfolk",
+   "contributions": 165203.52,
+   "expenditures": 40399.01
+  },
+  {
+   "name": "Ehrhard, James P.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "Worcester, Hampden, Hampshire & Middlesex",
+   "contributions": 112945.44,
+   "expenditures": 44001.9
+  },
+  {
+   "name": "Gobi, Anne M.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "Worcester, Hampden, Hampshire & Middlesex",
+   "contributions": 48763.53,
+   "expenditures": 54898.32
+  }
+ ]
+}

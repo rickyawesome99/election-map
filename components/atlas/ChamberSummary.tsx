@@ -4,6 +4,7 @@ import type { ChamberSummaryData } from "@/lib/stateLegChamberSummary";
 export const fmtChamberMargin = (m: number) => (Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
 const marginColor = (m: number) => (Math.abs(m) < 0.05 ? "var(--app-text-primary)" : m > 0 ? "var(--party-rep)" : "var(--party-dem)");
 export const fmtProb = (p: number | null) => (p == null ? "—" : p < 0.005 ? "<1%" : p > 0.995 ? ">99%" : `${Math.round(p * 100)}%`);
+const fmtVotes = (v: number) => (v >= 1e6 ? `${(v / 1e6).toFixed(2)}M` : v >= 1e4 ? `${Math.round(v / 1e3)}k` : Math.round(v).toLocaleString("en-US"));
 
 /** Horizontal seat bar: D from the left, R from the right, other/vacant between; notch at the majority line. */
 export function SeatBar({ dem, rep, total }: { dem: number; rep: number; total: number }) {
@@ -28,9 +29,9 @@ export function SeatLine({ dem, rep, oth, size = "text-2xl" }: { dem: React.Reac
   );
 }
 
-/** The chamber's headline numbers: seats now, the 2026 projection, the corrected chamber margin, then the facts row. */
+/** The chamber's headline numbers: seats now, the 2026 projection, the corrected chamber margin, the projected popular vote, then the facts row. */
 export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryData; electionYear: number }) {
-  const { seats, totalSeats, projection, margin, upcoming, fieldStats, mapInfo, calendar, currentEra } = s;
+  const { seats, totalSeats, projection, margin, popularVote, upcoming, fieldStats, mapInfo, calendar, currentEra } = s;
   const heading = (label: React.ReactNode) => (
     <div className="text-[10px] uppercase tracking-wider font-semibold pb-1.5 mb-2" style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>{label}</div>
   );
@@ -48,7 +49,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
 
   return (
     <div>
-      <div className="grid gap-x-10 gap-y-6 md:grid-cols-3">
+      <div className={`grid gap-x-10 gap-y-6 md:grid-cols-2 ${popularVote ? "xl:grid-cols-4" : "lg:grid-cols-3"}`}>
         {seats && (
           <section>
             {heading("Current")}
@@ -62,8 +63,10 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
         {projection && projTotal && (
           <section>
             {heading(`${electionYear} projection`)}
-            <SeatLine dem={projection.expectedDem.toFixed(0)} rep={projection.expectedRep.toFixed(0)} oth={Math.round(projection.expectedOth)} />
-            <SeatBar dem={projection.expectedDem} rep={projection.expectedRep} total={projTotal} />
+            {/* Each seat's projected winner, summed: the count the chamber map shows. The range and the
+                control odds below come from the simulation. */}
+            <SeatLine dem={projection.favored.dem} rep={projection.favored.rep} oth={projection.favored.oth} />
+            <SeatBar dem={projection.favored.dem} rep={projection.favored.rep} total={projTotal} />
             <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
               {projection.pDemControl == null ? `${projection.unprojected} seats unprojected` : (
                 <>80% range D {projection.lo80}–{projection.hi80} · <span style={{ color: "var(--app-text-muted)" }}>P(D control) {fmtProb(projection.pDemControl)}</span>
@@ -86,6 +89,30 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
             <div className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
               Corrected fills {margin.imputed} uncontested seat{margin.imputed === 1 ? "" : "s"} with the presidential vote ·{" "}
               <Link href="/methodology/state-tpl" className="underline underline-offset-2 hover:opacity-80">Methodology</Link>
+            </div>
+          </section>
+        )}
+        {popularVote && (
+          <section>
+            {heading(`${electionYear} popular vote`)}
+            <div className="text-2xl font-bold tabular-nums leading-tight">
+              <span className="text-base font-semibold" style={{ color: "var(--app-text-very-muted)" }}>raw </span>
+              <span style={{ color: "var(--app-text-muted)" }}>{fmtChamberMargin(popularVote.raw)}</span>
+              {popularVote.adjusted != null && <>
+                <span style={{ color: "var(--app-text-very-muted)" }}> → </span>
+                <span style={{ color: marginColor(popularVote.adjusted) }}>{fmtChamberMargin(popularVote.adjusted)}</span>
+              </>}
+            </div>
+            <div className="mt-1.5 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+              <span style={{ color: "var(--party-dem)" }}>D {fmtVotes(popularVote.dem)}</span> · <span style={{ color: "var(--party-rep)" }}>R {fmtVotes(popularVote.rep)}</span> · {fmtVotes(popularVote.votes)} votes
+            </div>
+            <div className="mt-1 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+              {popularVote.imputed > 0
+                ? <>Adjusted imputes {popularVote.imputed} seat{popularVote.imputed === 1 ? "" : "s"} without both parties as contested</>
+                : <>Every seat has both parties on the ballot</>}
+              {popularVote.uncounted > 0 && <> · {popularVote.uncounted} unopposed seat{popularVote.uncounted === 1 ? "" : "s"} with no count in the raw</>}
+              {popularVote.multiVote && <> · multi-member districts: voters cast more than one vote</>}
+              {" · "}<Link href="/methodology/state-leg#popular-vote" className="underline underline-offset-2 hover:opacity-80">Methodology</Link>
             </div>
           </section>
         )}

@@ -1,0 +1,2481 @@
+{
+ "state": "OK",
+ "cycle": 2026,
+ "source": "Oklahoma Ethics Commission (race totals, monetary + in-kind)",
+ "fetched": "2026-10-16",
+ "dataThrough": "10/16/2026",
+ "candidates": [
+  {
+   "name": "LOARD, AUSTIN",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 7777.5,
+   "expenditures": 6434.08,
+   "status": "Active"
+  },
+  {
+   "name": "PHIPPS, GEORGE",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 13957.4,
+   "expenditures": 15191.11,
+   "status": "Active"
+  },
+  {
+   "name": "WATSON, WES",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 13310.71,
+   "expenditures": 2911.97,
+   "status": "Terminated"
+  },
+  {
+   "name": "WHITE, CHRISTOPHER MARK",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 16130.1,
+   "expenditures": 9068.84,
+   "status": "Active"
+  },
+  {
+   "name": "OLSEN, JIM",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 11898.22,
+   "expenditures": 2078.41,
+   "status": "Active"
+  },
+  {
+   "name": "GLINSKI, STEVE",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 4562.8,
+   "expenditures": 2870.92,
+   "status": "Active"
+  },
+  {
+   "name": "STALEY, DALTON",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 1491.18,
+   "expenditures": 1491.18,
+   "status": "Terminated"
+  },
+  {
+   "name": "WEST, RICK L",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 9820.15,
+   "expenditures": 5633.33,
+   "status": "Active"
+  },
+  {
+   "name": "CULVER, BOB ED",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 75531.1,
+   "expenditures": 20515.4,
+   "status": "Active"
+  },
+  {
+   "name": "WIER, CHRISTOPHER WILLIAM",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 1279.0,
+   "expenditures": 413.1,
+   "status": "Active"
+  },
+  {
+   "name": "WEST, JOSH",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 238732.81,
+   "expenditures": 64258.34,
+   "status": "Active"
+  },
+  {
+   "name": "CORNWELL, RUSTY",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 46641.0,
+   "expenditures": 43619.61,
+   "status": "Active"
+  },
+  {
+   "name": "GORDON, CODY D",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 575.08,
+   "expenditures": 575.08,
+   "status": "Terminated"
+  },
+  {
+   "name": "RICHARD, ELI",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 1652.62,
+   "expenditures": 639.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "BASHORE, STEVE",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 150207.58,
+   "expenditures": 100555.07,
+   "status": "Active"
+  },
+  {
+   "name": "GANN, TOM",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 24451.43,
+   "expenditures": 26820.19,
+   "status": "Active"
+  },
+  {
+   "name": "RICE, TODD",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 50675.58,
+   "expenditures": 40973.04,
+   "status": "Active"
+  },
+  {
+   "name": "BISCARDI, ANDREA",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 3203.36,
+   "expenditures": 952.33,
+   "status": "Active"
+  },
+  {
+   "name": "BUTTERFIELD, NATHANIEL",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 33525.850000000006,
+   "expenditures": 112725.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "CAMPBELL, CRYSTAL D",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 68150.0,
+   "expenditures": 67676.43,
+   "status": "Active"
+  },
+  {
+   "name": "LONG, DEBBIE",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 68029.82,
+   "expenditures": 68313.5,
+   "status": "Terminated"
+  },
+  {
+   "name": "STOKES, SCOTTY",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 18845.620000000003,
+   "expenditures": 12328.13,
+   "status": "Active"
+  },
+  {
+   "name": "WHITE, DAVID",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 20498.91,
+   "expenditures": 33218.4,
+   "status": "Terminated"
+  },
+  {
+   "name": "BAIR, JAKE",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 12287.9,
+   "expenditures": 10463.0,
+   "status": "Active"
+  },
+  {
+   "name": "MATTOX, ISAAC",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 590.33,
+   "expenditures": 90.33,
+   "status": "Terminated"
+  },
+  {
+   "name": "MATTOX, ISAAC",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 148.0,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "STROM, JUDD",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 33851.3,
+   "expenditures": 32409.98,
+   "status": "Active"
+  },
+  {
+   "name": "KANE, JOHN BURKS",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 211241.21,
+   "expenditures": 124142.46,
+   "status": "Active"
+  },
+  {
+   "name": "STEARMAN, WENDI",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 3991.35,
+   "expenditures": 2710.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "CHAPMAN, MARK",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 76751.3,
+   "expenditures": 89030.15,
+   "status": "Active"
+  },
+  {
+   "name": "HODGES, SANDRA MARIE",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 23664.15,
+   "expenditures": 23153.62,
+   "status": "Active"
+  },
+  {
+   "name": "PRATER, TIFFANY",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 2037.17,
+   "expenditures": 869.18,
+   "status": "Active"
+  },
+  {
+   "name": "HAYS, WILLIAM",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 46000.04,
+   "expenditures": 34596.8,
+   "status": "Active"
+  },
+  {
+   "name": "GANTZ, JEREMIAH",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 7578.62,
+   "expenditures": 4452.12,
+   "status": "Active"
+  },
+  {
+   "name": "SNEED, CHRIS",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 97092.62,
+   "expenditures": 78446.4,
+   "status": "Active"
+  },
+  {
+   "name": "TIMMONS, ROY",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 14294.8,
+   "expenditures": 11612.38,
+   "status": "Active"
+  },
+  {
+   "name": "TURNER, TIMOTHY WAYNE",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 94937.25,
+   "expenditures": 35142.42,
+   "status": "Active"
+  },
+  {
+   "name": "LYNCH, ROSE \"ROSIE\"",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 4000.0,
+   "expenditures": 2480.42,
+   "status": "Active"
+  },
+  {
+   "name": "NELSON, DAVID",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 19309.75,
+   "expenditures": 3827.26,
+   "status": "Active"
+  },
+  {
+   "name": "GREGO, JAMES G",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 16241.73,
+   "expenditures": 6316.11,
+   "status": "Active"
+  },
+  {
+   "name": "FOSTER, SHELTON",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 10615.99,
+   "expenditures": 10615.99,
+   "status": "Terminated"
+  },
+  {
+   "name": "GORDON, PAMELA",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 34788.78,
+   "expenditures": 28703.17,
+   "status": "Active"
+  },
+  {
+   "name": "SMITH, DAVID",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 68397.01,
+   "expenditures": 56673.92,
+   "status": "Active"
+  },
+  {
+   "name": "BABCOCK, RUBEN, JR",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 7821.0,
+   "expenditures": 6821.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "BRITTINGHAM, MICHAEL",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 65435.9,
+   "expenditures": 40155.63,
+   "status": "Active"
+  },
+  {
+   "name": "DEVORE, ANTHONY",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 33842.75,
+   "expenditures": 19097.69,
+   "status": "Active"
+  },
+  {
+   "name": "PORTER, DEREK",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 29200.0,
+   "expenditures": 117878.95,
+   "status": "Terminated"
+  },
+  {
+   "name": "FULLERTON, MICHAEL A",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 1488.55,
+   "expenditures": 1488.55,
+   "status": "Terminated"
+  },
+  {
+   "name": "JACOB, MITCHELL",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 3013.34,
+   "expenditures": 3026.91,
+   "status": "Terminated"
+  },
+  {
+   "name": "MAY, CHRIS",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 5818.17,
+   "expenditures": 3442.65,
+   "status": "Active"
+  },
+  {
+   "name": "WILK, JONATHAN",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 101300.04000000001,
+   "expenditures": 70143.77,
+   "status": "Active"
+  },
+  {
+   "name": "MAYNARD, CODY",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 91942.38,
+   "expenditures": 30314.73,
+   "status": "Active"
+  },
+  {
+   "name": "EAVES, RYAN",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 79295.04,
+   "expenditures": 41625.88,
+   "status": "Active"
+  },
+  {
+   "name": "HILDEBRANT, DERRICK",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 10508.61,
+   "expenditures": 596.0,
+   "status": "Active"
+  },
+  {
+   "name": "PETERS, CATHERINE",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 3534.24,
+   "expenditures": 450.74,
+   "status": "Active"
+  },
+  {
+   "name": "BANNING, CHRIS LEE",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 42283.33,
+   "expenditures": 35920.23,
+   "status": "Active"
+  },
+  {
+   "name": "JOHNS, RONNY",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 5433.97,
+   "expenditures": 9525.0,
+   "status": "Active"
+  },
+  {
+   "name": "LONGEST, LEAH",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 21600.0,
+   "expenditures": 26401.3,
+   "status": "Active"
+  },
+  {
+   "name": "ODNEAL, CHRIS",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 14820.17,
+   "expenditures": 13457.91,
+   "status": "Active"
+  },
+  {
+   "name": "LEWIS, ROBERTA E",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 1650.88,
+   "expenditures": 865.36,
+   "status": "Active"
+  },
+  {
+   "name": "QUALLS, SHONEY",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 7500.0,
+   "expenditures": 13500.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "STERLING, DANNY",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 117391.12,
+   "expenditures": 76941.02,
+   "status": "Active"
+  },
+  {
+   "name": "TAYLOR, MEMORY",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 350.0,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "CUMMINGS, JOHNNY BLAKE",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 2006.0,
+   "expenditures": 1430.93,
+   "status": "Active"
+  },
+  {
+   "name": "WILLIAMS, DANIEL J",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 27198.83,
+   "expenditures": 4764.9,
+   "status": "Active"
+  },
+  {
+   "name": "HILBERT, KYLE",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 531525.3600000001,
+   "expenditures": 310738.05,
+   "status": "Active"
+  },
+  {
+   "name": "AMLING, SONYA",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 850.0,
+   "expenditures": 1126.5,
+   "status": "Active"
+  },
+  {
+   "name": "LAWSON, MARK",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 125070.14,
+   "expenditures": 36380.25,
+   "status": "Active"
+  },
+  {
+   "name": "DUEL, COLLIN",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 130019.05,
+   "expenditures": 111700.44,
+   "status": "Active"
+  },
+  {
+   "name": "GRIDER, KARMIN",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 11355.7,
+   "expenditures": 10839.1,
+   "status": "Active"
+  },
+  {
+   "name": "BROWN, ANDY",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 306.5,
+   "expenditures": 7014.05,
+   "status": "Active"
+  },
+  {
+   "name": "SHAW, JIM",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 40688.5,
+   "expenditures": 114911.26,
+   "status": "Active"
+  },
+  {
+   "name": "VAUGHAN, JACK",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 59232.92,
+   "expenditures": 70732.27,
+   "status": "Active"
+  },
+  {
+   "name": "BURCHETT, DR. MAX EUGENE, JR",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 1100.0,
+   "expenditures": 833.5,
+   "status": "Active"
+  },
+  {
+   "name": "JENKINS, MOLLY",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 110782.58,
+   "expenditures": 47962.64,
+   "status": "Active"
+  },
+  {
+   "name": "ROBERSON, B.J.",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 58324.38,
+   "expenditures": 60815.75,
+   "status": "Terminated"
+  },
+  {
+   "name": "SIEMAN, CHRISTOPHER M",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 0,
+   "expenditures": 0.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "MEANS, AARON RALPH MEANS",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 4500.0,
+   "expenditures": 2837.3,
+   "status": "Active"
+  },
+  {
+   "name": "RANSON, TRISH",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 118829.29,
+   "expenditures": 49249.62,
+   "status": "Active"
+  },
+  {
+   "name": "RILEY, TED",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 630.0,
+   "expenditures": 630.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "TRAVIS, DILLON BO",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 74880.8,
+   "expenditures": 37002.02,
+   "status": "Active"
+  },
+  {
+   "name": "WRIGHT, KEVIN",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 21455.38,
+   "expenditures": 21455.38,
+   "status": "Terminated"
+  },
+  {
+   "name": "GEORGE, JOHN",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 150398.09999999998,
+   "expenditures": 119957.17,
+   "status": "Active"
+  },
+  {
+   "name": "HELLEBUYCK, LESLIE",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 1186.24,
+   "expenditures": 993.18,
+   "status": "Active"
+  },
+  {
+   "name": "WHITE, JENNI",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 12317.41,
+   "expenditures": 8597.99,
+   "status": "Terminated"
+  },
+  {
+   "name": "GRACE, SPENCER",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 85785.0,
+   "expenditures": 82153.38,
+   "status": "Active"
+  },
+  {
+   "name": "SACKET, JEREMY DAVID",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 31100.0,
+   "expenditures": 15620.01,
+   "status": "Active"
+  },
+  {
+   "name": "BOLAY, MADISON",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 69180.0,
+   "expenditures": 56439.51,
+   "status": "Active"
+  },
+  {
+   "name": "CALLIHAN, SUZANNE",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 27786.46,
+   "expenditures": 30710.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "DETERDING, DANIELLE ANNA",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 33308.03,
+   "expenditures": 121400.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "FASHIK, DALTON",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 0,
+   "expenditures": 0.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "HOBBS, BRIAN",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 6910.99,
+   "expenditures": 10241.16,
+   "status": "Active"
+  },
+  {
+   "name": "LEWIS, DOYLE",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 100.0,
+   "expenditures": 627.5,
+   "status": "Active"
+  },
+  {
+   "name": "NEAL, JIM",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 14985.25,
+   "expenditures": 12165.0,
+   "status": "Active"
+  },
+  {
+   "name": "NORMAN, MICHAEL",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 20154.96,
+   "expenditures": 20130.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "HARRIS, ERICK",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 194535.56,
+   "expenditures": 82641.99,
+   "status": "Active"
+  },
+  {
+   "name": "PETERSON, RONDA",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 21055.7,
+   "expenditures": 17310.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "HICKS, CARRI",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 0,
+   "expenditures": 0.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "JORDAN, KINSLEY",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 27975.0,
+   "expenditures": 35562.44,
+   "status": "Active"
+  },
+  {
+   "name": "TURNBOW, TORRY",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 107382.8,
+   "expenditures": 124500.06,
+   "status": "Active"
+  },
+  {
+   "name": "BOCKUS, MIKE",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 235.31,
+   "expenditures": 3.27,
+   "status": "Active"
+  },
+  {
+   "name": "CROSSWHITE HADER, DENISE",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 56947.36,
+   "expenditures": 11551.68,
+   "status": "Active"
+  },
+  {
+   "name": "KEITH, KAITY",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 22575.4,
+   "expenditures": 14612.96,
+   "status": "Active"
+  },
+  {
+   "name": "ROE, CYNTHIA JO",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 69399.5,
+   "expenditures": 44895.01,
+   "status": "Active"
+  },
+  {
+   "name": "STEAGALL, JAY WESLEY",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 15093.08,
+   "expenditures": 6610.03,
+   "status": "Active"
+  },
+  {
+   "name": "BROOKS, MICHAEL",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 0,
+   "expenditures": 0.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "DECK, JARED",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 25508.2,
+   "expenditures": 16445.86,
+   "status": "Active"
+  },
+  {
+   "name": "MENZ, ANNIE",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 34318.13,
+   "expenditures": 23361.85,
+   "status": "Active"
+  },
+  {
+   "name": "SHEPHERD, EVAN NATHANIEL",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 1457.78,
+   "expenditures": 1113.07,
+   "status": "Active"
+  },
+  {
+   "name": "WOMACK-BIELICH, CAROLYN",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 15256.8,
+   "expenditures": 14443.05,
+   "status": "Active"
+  },
+  {
+   "name": "ROSECRANTS, JACOB",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 30160.99,
+   "expenditures": 14080.26,
+   "status": "Active"
+  },
+  {
+   "name": "GENTRY, KEVAN",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 64808.49,
+   "expenditures": 58857.19,
+   "status": "Active"
+  },
+  {
+   "name": "OLIVER, INDIGO",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 23110.25,
+   "expenditures": 11648.66,
+   "status": "Active"
+  },
+  {
+   "name": "SIMONS, KEVIN",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 3193.7,
+   "expenditures": 3193.7,
+   "status": "Terminated"
+  },
+  {
+   "name": "THOMPSON, TOBY DEAN",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 32035.0,
+   "expenditures": 49639.31,
+   "status": "Active"
+  },
+  {
+   "name": "WARNEMUENDE, KEVIN LAWRENCE",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 8177.6900000000005,
+   "expenditures": 12152.85,
+   "status": "Active"
+  },
+  {
+   "name": "TOWNLEY, TAMMY",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 25591.5,
+   "expenditures": 14215.29,
+   "status": "Active"
+  },
+  {
+   "name": "CANTRELL, JOSHUA",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 10328.92,
+   "expenditures": 6323.52,
+   "status": "Active"
+  },
+  {
+   "name": "JONES, DUSTY JO",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 3756.0200000000004,
+   "expenditures": 771.99,
+   "status": "Active"
+  },
+  {
+   "name": "ADAMS, STACY JO",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 22837.05,
+   "expenditures": 8731.58,
+   "status": "Active"
+  },
+  {
+   "name": "ELLIOTT, MARK CODY",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 16020.0,
+   "expenditures": 35923.88,
+   "status": "Active"
+  },
+  {
+   "name": "STEVENS, COLE",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 81189.67,
+   "expenditures": 102355.96,
+   "status": "Active"
+  },
+  {
+   "name": "KENDRIX, GERRID",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 70956.61,
+   "expenditures": 22502.78,
+   "status": "Active"
+  },
+  {
+   "name": "ASSEO, CARROLL S",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 14794.82,
+   "expenditures": 8867.01,
+   "status": "Active"
+  },
+  {
+   "name": "BLAIR, JASON",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 45360.21,
+   "expenditures": 16001.55,
+   "status": "Active"
+  },
+  {
+   "name": "ABRAM-GARCIA, CRYSTAL",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 2050.0,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "KELLEY, JORDAN",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 1642.83,
+   "expenditures": 1642.83,
+   "status": "Terminated"
+  },
+  {
+   "name": "KUFAHL, HEATH",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 41240.0,
+   "expenditures": 46634.58,
+   "status": "Active"
+  },
+  {
+   "name": "LANCASTER, PHILIP CHARLES, II",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 1039.2,
+   "expenditures": 915.9,
+   "status": "Active"
+  },
+  {
+   "name": "TORVI, ALEXANDER WILLIAM",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 14001.630000000001,
+   "expenditures": 55682.34,
+   "status": "Active"
+  },
+  {
+   "name": "ARCHER, NICK",
+   "chamber": "house",
+   "district": "55",
+   "contributions": 87471.65,
+   "expenditures": 34461.54,
+   "status": "Active"
+  },
+  {
+   "name": "LOWE, DICK",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 82113.88,
+   "expenditures": 7914.76,
+   "status": "Active"
+  },
+  {
+   "name": "PEDRO, LINDA",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 603.0,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "MOORE, ANTHONY",
+   "chamber": "house",
+   "district": "57",
+   "contributions": 246950.40999999997,
+   "expenditures": 125225.23,
+   "status": "Active"
+  },
+  {
+   "name": "NEWTON, CARL",
+   "chamber": "house",
+   "district": "58",
+   "contributions": 58375.83,
+   "expenditures": 21255.34,
+   "status": "Active"
+  },
+  {
+   "name": "DOBRINSKI, MIKE",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 59265.76,
+   "expenditures": 27354.84,
+   "status": "Active"
+  },
+  {
+   "name": "KELLEY, MICHAEL DEAN",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 154058.56999999998,
+   "expenditures": 24106.65,
+   "status": "Active"
+  },
+  {
+   "name": "RENFRO, KADE",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 3378.63,
+   "expenditures": 3278.63,
+   "status": "Terminated"
+  },
+  {
+   "name": "TAYLOR, SHARON KAY",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 0,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "PATZKOWSKY, KENTON",
+   "chamber": "house",
+   "district": "61",
+   "contributions": 53643.8,
+   "expenditures": 3600.0,
+   "status": "Active"
+  },
+  {
+   "name": "MUNOZ, BLAKE J",
+   "chamber": "house",
+   "district": "62",
+   "contributions": 810.05,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "PAE, DANIEL",
+   "chamber": "house",
+   "district": "62",
+   "contributions": 49340.64,
+   "expenditures": 12608.52,
+   "status": "Active"
+  },
+  {
+   "name": "CALDWELL, TREY",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 248255.34,
+   "expenditures": 74177.23,
+   "status": "Active"
+  },
+  {
+   "name": "JACKSON, LOUIS SAMUEL",
+   "chamber": "house",
+   "district": "64",
+   "contributions": 91195.0,
+   "expenditures": 23091.35,
+   "status": "Active"
+  },
+  {
+   "name": "SUTTLES, KATHY L",
+   "chamber": "house",
+   "district": "64",
+   "contributions": 26424.15,
+   "expenditures": 6392.75,
+   "status": "Active"
+  },
+  {
+   "name": "HASENBECK, TONI LEA",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 0,
+   "expenditures": 0.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "MITCHELL, SAM",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 52359.51,
+   "expenditures": 24323.91,
+   "status": "Active"
+  },
+  {
+   "name": "WEAVER, CARLA BLUE",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 16680.0,
+   "expenditures": 19056.58,
+   "status": "Active"
+  },
+  {
+   "name": "BLEVINS, KENNY",
+   "chamber": "house",
+   "district": "66",
+   "contributions": 0,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "STAIRES, DONALD CLAY",
+   "chamber": "house",
+   "district": "66",
+   "contributions": 15615.82,
+   "expenditures": 7830.89,
+   "status": "Active"
+  },
+  {
+   "name": "HALL, ROB",
+   "chamber": "house",
+   "district": "67",
+   "contributions": 32923.39,
+   "expenditures": 11234.51,
+   "status": "Active"
+  },
+  {
+   "name": "LAFLEUR, MICHELLE",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 920.0,
+   "expenditures": 161.16,
+   "status": "Active"
+  },
+  {
+   "name": "LAY, MIKE",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 39873.4,
+   "expenditures": 58692.26,
+   "status": "Active"
+  },
+  {
+   "name": "WATKINS, ERICA",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 0,
+   "expenditures": 0.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "DEWEESE, CARRIE",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 35653.86,
+   "expenditures": 41520.57,
+   "status": "Active"
+  },
+  {
+   "name": "DILLS, SHEILA",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 72645.98,
+   "expenditures": 53831.27,
+   "status": "Active"
+  },
+  {
+   "name": "NICHOLS, CODY",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 2573.1400000000003,
+   "expenditures": 527.1,
+   "status": "Active"
+  },
+  {
+   "name": "STROHM, ANGELA",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 26740.09,
+   "expenditures": 33275.04,
+   "status": "Terminated"
+  },
+  {
+   "name": "TEDFORD, MARK",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 71697.76999999999,
+   "expenditures": 91555.37,
+   "status": "Terminated"
+  },
+  {
+   "name": "SCHREIBER, SUZANNE",
+   "chamber": "house",
+   "district": "70",
+   "contributions": 107408.18,
+   "expenditures": 51743.01,
+   "status": "Active"
+  },
+  {
+   "name": "CLINTON, AMANDA",
+   "chamber": "house",
+   "district": "71",
+   "contributions": 49919.38,
+   "expenditures": 14073.73,
+   "status": "Active"
+  },
+  {
+   "name": "MARTIN, ADAM",
+   "chamber": "house",
+   "district": "72",
+   "contributions": 2150.0,
+   "expenditures": 3134.28,
+   "status": "Active"
+  },
+  {
+   "name": "MCCANE, MICHELLE",
+   "chamber": "house",
+   "district": "72",
+   "contributions": 16529.96,
+   "expenditures": 11460.86,
+   "status": "Active"
+  },
+  {
+   "name": "ROSS, EDWARD",
+   "chamber": "house",
+   "district": "73",
+   "contributions": 8141.66,
+   "expenditures": 16364.17,
+   "status": "Active"
+  },
+  {
+   "name": "STEWART, RONALD, JR",
+   "chamber": "house",
+   "district": "73",
+   "contributions": 75437.64,
+   "expenditures": 60744.41,
+   "status": "Active"
+  },
+  {
+   "name": "NORWOOD, KEVIN WAYNE",
+   "chamber": "house",
+   "district": "74",
+   "contributions": 116014.5,
+   "expenditures": 69133.51,
+   "status": "Active"
+  },
+  {
+   "name": "VANCUREN, SHEILA",
+   "chamber": "house",
+   "district": "74",
+   "contributions": 19295.71,
+   "expenditures": 519.3,
+   "status": "Active"
+  },
+  {
+   "name": "MARTI, T.J.",
+   "chamber": "house",
+   "district": "75",
+   "contributions": 76887.54,
+   "expenditures": 9538.45,
+   "status": "Active"
+  },
+  {
+   "name": "TART, YOLANDA",
+   "chamber": "house",
+   "district": "75",
+   "contributions": 127.5,
+   "expenditures": 0.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "WATKINS, JOSEPH A",
+   "chamber": "house",
+   "district": "75",
+   "contributions": 14705.66,
+   "expenditures": 3322.39,
+   "status": "Active"
+  },
+  {
+   "name": "FORD, ROSS N",
+   "chamber": "house",
+   "district": "76",
+   "contributions": 81864.8,
+   "expenditures": 12082.19,
+   "status": "Active"
+  },
+  {
+   "name": "TINSLEY, MICHAEL",
+   "chamber": "house",
+   "district": "76",
+   "contributions": 977.5,
+   "expenditures": 895.37,
+   "status": "Active"
+  },
+  {
+   "name": "GABRIEL, KRISTINA ELIZABETH",
+   "chamber": "house",
+   "district": "77",
+   "contributions": 46588.25,
+   "expenditures": 26040.69,
+   "status": "Active"
+  },
+  {
+   "name": "WALDRON, JOHN",
+   "chamber": "house",
+   "district": "77",
+   "contributions": 50990.87,
+   "expenditures": 14117.39,
+   "status": "Active"
+  },
+  {
+   "name": "BLANCETT, MELOYDE",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 31660.7,
+   "expenditures": 6930.41,
+   "status": "Active"
+  },
+  {
+   "name": "HASSINK, JOSEPH PAUL",
+   "chamber": "house",
+   "district": "79",
+   "contributions": 1821.85,
+   "expenditures": 3146.61,
+   "status": "Active"
+  },
+  {
+   "name": "PROVENZANO, MELISSA",
+   "chamber": "house",
+   "district": "79",
+   "contributions": 117177.98,
+   "expenditures": 62515.08,
+   "status": "Active"
+  },
+  {
+   "name": "FOUNDS, JEREMY",
+   "chamber": "house",
+   "district": "80",
+   "contributions": 810.0,
+   "expenditures": 127.5,
+   "status": "Active"
+  },
+  {
+   "name": "MAY, STAN",
+   "chamber": "house",
+   "district": "80",
+   "contributions": 55353.81,
+   "expenditures": 2600.0,
+   "status": "Active"
+  },
+  {
+   "name": "CANARY, AMBER",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 1717.36,
+   "expenditures": 2756.43,
+   "status": "Active"
+  },
+  {
+   "name": "HORNBEEK ALLEN, MEGAN",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 34748.07,
+   "expenditures": 23877.48,
+   "status": "Active"
+  },
+  {
+   "name": "LANKFORD, JASON",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 12241.26,
+   "expenditures": 11641.26,
+   "status": "Terminated"
+  },
+  {
+   "name": "OSBURN, MIKE",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 63405.42,
+   "expenditures": 52048.33,
+   "status": "Active"
+  },
+  {
+   "name": "RAINS, STEPHEN RUSSELL",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 36740.1,
+   "expenditures": 34227.49,
+   "status": "Active"
+  },
+  {
+   "name": "TALLEY, TROY",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 31002.6,
+   "expenditures": 26550.86,
+   "status": "Active"
+  },
+  {
+   "name": "BECK, WILLIAM EVAN SCOTT",
+   "chamber": "house",
+   "district": "82",
+   "contributions": 0,
+   "expenditures": 0.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "HEADD, TRAVIS LAMONT",
+   "chamber": "house",
+   "district": "82",
+   "contributions": 250.0,
+   "expenditures": 8.82,
+   "status": "Active"
+  },
+  {
+   "name": "MILLER, NICOLE",
+   "chamber": "house",
+   "district": "82",
+   "contributions": 106216.32,
+   "expenditures": 8025.69,
+   "status": "Active"
+  },
+  {
+   "name": "GAU, DALTON CONNOR",
+   "chamber": "house",
+   "district": "83",
+   "contributions": 26136.48,
+   "expenditures": 10626.02,
+   "status": "Active"
+  },
+  {
+   "name": "ROBERTS, ERIC",
+   "chamber": "house",
+   "district": "83",
+   "contributions": 56138.28,
+   "expenditures": 15597.16,
+   "status": "Active"
+  },
+  {
+   "name": "PEREZ, JEFFREY",
+   "chamber": "house",
+   "district": "84",
+   "contributions": 4934.47,
+   "expenditures": 3558.78,
+   "status": "Active"
+  },
+  {
+   "name": "WEST, TAMMY",
+   "chamber": "house",
+   "district": "84",
+   "contributions": 39892.05,
+   "expenditures": 1885.51,
+   "status": "Active"
+  },
+  {
+   "name": "BANKS, BRAXTON",
+   "chamber": "house",
+   "district": "85",
+   "contributions": 5857.31,
+   "expenditures": 5579.48,
+   "status": "Active"
+  },
+  {
+   "name": "BRANHAM, CHELSEY",
+   "chamber": "house",
+   "district": "85",
+   "contributions": 60233.0,
+   "expenditures": 46159.85,
+   "status": "Active"
+  },
+  {
+   "name": "FALLIN, JOE",
+   "chamber": "house",
+   "district": "85",
+   "contributions": 47143.1,
+   "expenditures": 39344.48,
+   "status": "Active"
+  },
+  {
+   "name": "GRUENSTEIN, ESTEFANIA",
+   "chamber": "house",
+   "district": "85",
+   "contributions": 6138.55,
+   "expenditures": 6138.55,
+   "status": "Terminated"
+  },
+  {
+   "name": "HARRIS-TILL, JOSHUA",
+   "chamber": "house",
+   "district": "85",
+   "contributions": 200.0,
+   "expenditures": 200.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "JONES, BRIAN",
+   "chamber": "house",
+   "district": "85",
+   "contributions": 0,
+   "expenditures": 0.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "COLE, HANNAH K",
+   "chamber": "house",
+   "district": "86",
+   "contributions": 9158.81,
+   "expenditures": 6965.07,
+   "status": "Active"
+  },
+  {
+   "name": "HARDIN, DAVID MITCHELL",
+   "chamber": "house",
+   "district": "86",
+   "contributions": 107029.73,
+   "expenditures": 21289.69,
+   "status": "Active"
+  },
+  {
+   "name": "MARTIN, RYAN",
+   "chamber": "house",
+   "district": "86",
+   "contributions": 3453.52,
+   "expenditures": 3062.09,
+   "status": "Active"
+  },
+  {
+   "name": "HEFNER, ELLYN",
+   "chamber": "house",
+   "district": "87",
+   "contributions": 43270.27,
+   "expenditures": 28312.85,
+   "status": "Active"
+  },
+  {
+   "name": "POGEMILLER, ELLEN",
+   "chamber": "house",
+   "district": "88",
+   "contributions": 53890.2,
+   "expenditures": 30243.7,
+   "status": "Active"
+  },
+  {
+   "name": "ALONSO, ARTURO",
+   "chamber": "house",
+   "district": "89",
+   "contributions": 16949.41,
+   "expenditures": 10918.65,
+   "status": "Active"
+  },
+  {
+   "name": "GISE, EMILY",
+   "chamber": "house",
+   "district": "90",
+   "contributions": 80521.0,
+   "expenditures": 29465.94,
+   "status": "Active"
+  },
+  {
+   "name": "FLEMING, BRUCE",
+   "chamber": "house",
+   "district": "91",
+   "contributions": 2215.0,
+   "expenditures": 3521.63,
+   "status": "Active"
+  },
+  {
+   "name": "FOWLER, CHRIS",
+   "chamber": "house",
+   "district": "91",
+   "contributions": 46060.36,
+   "expenditures": 19799.2,
+   "status": "Active"
+  },
+  {
+   "name": "FREEMAN, MICHAEL",
+   "chamber": "house",
+   "district": "91",
+   "contributions": 12240.0,
+   "expenditures": 12459.91,
+   "status": "Active"
+  },
+  {
+   "name": "SEDA, ROBERTO LUIS",
+   "chamber": "house",
+   "district": "91",
+   "contributions": 55021.39,
+   "expenditures": 33159.59,
+   "status": "Active"
+  },
+  {
+   "name": "SHULTZ, DEBBIE LEEANN",
+   "chamber": "house",
+   "district": "91",
+   "contributions": 860.0,
+   "expenditures": 832.36,
+   "status": "Active"
+  },
+  {
+   "name": "STERLING, TERESA",
+   "chamber": "house",
+   "district": "91",
+   "contributions": 61715.5,
+   "expenditures": 39536.94,
+   "status": "Active"
+  },
+  {
+   "name": "WARGIN GRIMALDO, SAM",
+   "chamber": "house",
+   "district": "92",
+   "contributions": 25339.0,
+   "expenditures": 17408.51,
+   "status": "Active"
+  },
+  {
+   "name": "WERNEKE, VICKI RUTH",
+   "chamber": "house",
+   "district": "92",
+   "contributions": 15390.0,
+   "expenditures": 11925.75,
+   "status": "Active"
+  },
+  {
+   "name": "DOLLENS, MICKEY",
+   "chamber": "house",
+   "district": "93",
+   "contributions": 7453.55,
+   "expenditures": 5006.53,
+   "status": "Active"
+  },
+  {
+   "name": "FUGATE, ANDY",
+   "chamber": "house",
+   "district": "94",
+   "contributions": 15824.24,
+   "expenditures": 13355.99,
+   "status": "Active"
+  },
+  {
+   "name": "GARDNER, RYAN",
+   "chamber": "house",
+   "district": "95",
+   "contributions": 917.6,
+   "expenditures": 262.29,
+   "status": "Active"
+  },
+  {
+   "name": "MALONE, TEGAN M",
+   "chamber": "house",
+   "district": "95",
+   "contributions": 8995.46,
+   "expenditures": 8400.63,
+   "status": "Active"
+  },
+  {
+   "name": "RINEHART, BRENT",
+   "chamber": "house",
+   "district": "95",
+   "contributions": 22652.95,
+   "expenditures": 5750.0,
+   "status": "Active"
+  },
+  {
+   "name": "WOLFLEY, MAX",
+   "chamber": "house",
+   "district": "95",
+   "contributions": 48264.84,
+   "expenditures": 21782.81,
+   "status": "Active"
+  },
+  {
+   "name": "BACHMAN, JOHN",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 29427.0,
+   "expenditures": 86590.01,
+   "status": "Active"
+  },
+  {
+   "name": "MASSAD, PHILLIP",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 2600.0,
+   "expenditures": 0.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "REAMS, AUSTIN",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 5751.0,
+   "expenditures": 5751.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "SMITH, ASHTYN ALYSON",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 6223.49,
+   "expenditures": 5504.49,
+   "status": "Active"
+  },
+  {
+   "name": "STINSON, PRESTON",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 245620.41,
+   "expenditures": 202220.49,
+   "status": "Active"
+  },
+  {
+   "name": "GRANT, TAMARIA CHIMERE",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 780.0,
+   "expenditures": 1780.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "HARRISON, JEKIA",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 51898.67,
+   "expenditures": 51898.67,
+   "status": "Terminated"
+  },
+  {
+   "name": "JONES, AUSTIN T",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 642.5,
+   "expenditures": 0.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "LOWE, JASON",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 7312.46,
+   "expenditures": 7312.46,
+   "status": "Terminated"
+  },
+  {
+   "name": "TIMMONS, ALETIA HAYNES",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 53743.380000000005,
+   "expenditures": 58340.08,
+   "status": "Terminated"
+  },
+  {
+   "name": "TIMMONS, ALETIA HAYNES",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 33509.42,
+   "expenditures": 30958.67,
+   "status": "Active"
+  },
+  {
+   "name": "DAVIS, DEAN FENTON",
+   "chamber": "house",
+   "district": "98",
+   "contributions": 13670.45,
+   "expenditures": 4801.07,
+   "status": "Active"
+  },
+  {
+   "name": "SMYTHE, CATHY",
+   "chamber": "house",
+   "district": "98",
+   "contributions": 5833.15,
+   "expenditures": 2718.64,
+   "status": "Active"
+  },
+  {
+   "name": "WOOLLEY, GABE",
+   "chamber": "house",
+   "district": "98",
+   "contributions": 27019.21,
+   "expenditures": 18576.84,
+   "status": "Active"
+  },
+  {
+   "name": "BROWN, HERSCHEL L",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 33789.0,
+   "expenditures": 59632.62,
+   "status": "Active"
+  },
+  {
+   "name": "DAVIS, STEVE",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 200.0,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "LATHAM, MELVIN",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 805.0,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "ROBINSON, CARLOS MIGUEL",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 16416.9,
+   "expenditures": 14248.28,
+   "status": "Active"
+  },
+  {
+   "name": "SIER, DERRICK",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 37973.99,
+   "expenditures": 38323.99,
+   "status": "Terminated"
+  },
+  {
+   "name": "WASHINGTON, ALAN",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 9664.93,
+   "expenditures": 10304.93,
+   "status": "Terminated"
+  },
+  {
+   "name": "GILMORE, CHAUNT\u00c9",
+   "chamber": "house",
+   "district": "100",
+   "contributions": 23884.08,
+   "expenditures": 6316.94,
+   "status": "Active"
+  },
+  {
+   "name": "STARK, MARILYN",
+   "chamber": "house",
+   "district": "100",
+   "contributions": 25264.08,
+   "expenditures": 958.01,
+   "status": "Active"
+  },
+  {
+   "name": "MANGER, ROBERT",
+   "chamber": "house",
+   "district": "101",
+   "contributions": 73642.32,
+   "expenditures": 19400.0,
+   "status": "Active"
+  },
+  {
+   "name": "COWLING, RANDY",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 5452.5,
+   "expenditures": 5255.81,
+   "status": "Active"
+  },
+  {
+   "name": "PEPIN, PAYTON",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 18345.19,
+   "expenditures": 18675.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "SEIFRIED, ALLY",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 296150.60000000003,
+   "expenditures": 128782.56,
+   "status": "Active"
+  },
+  {
+   "name": "SMITH, KENNY",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 30560.29,
+   "expenditures": 27774.95,
+   "status": "Active"
+  },
+  {
+   "name": "WOODS, TOM CALVIN",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 188890.14,
+   "expenditures": 208231.26,
+   "status": "Active"
+  },
+  {
+   "name": "BULLARD, DAVID JESSE",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 69129.36,
+   "expenditures": 29562.8,
+   "status": "Active"
+  },
+  {
+   "name": "SOUTHERLAND, PATRICK HENRY",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 0,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "BREWER, NATHAN",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 8390.95,
+   "expenditures": 4455.4,
+   "status": "Active"
+  },
+  {
+   "name": "LOGAN, BRYAN KEITH",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 36004.58,
+   "expenditures": 14870.71,
+   "status": "Active"
+  },
+  {
+   "name": "COLEMAN, BILL",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 230250.43000000002,
+   "expenditures": 204893.75,
+   "status": "Active"
+  },
+  {
+   "name": "MOORE, CHAYELYNN R",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 4852.91,
+   "expenditures": 2893.13,
+   "status": "Active"
+  },
+  {
+   "name": "TERRAZAS, JADAN A",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 56656.94,
+   "expenditures": 52571.2,
+   "status": "Terminated"
+  },
+  {
+   "name": "GOLLIHARE, TODD",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 227562.91,
+   "expenditures": 188446.87,
+   "status": "Active"
+  },
+  {
+   "name": "STUMP, WILLIAM CRAIG",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 4105.1,
+   "expenditures": 10276.09,
+   "status": "Active"
+  },
+  {
+   "name": "WATKINS, ERICA",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 250.0,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "ALVORD, JERRY",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 173885.14,
+   "expenditures": 35003.26,
+   "status": "Active"
+  },
+  {
+   "name": "BOREN, MARY BROWN",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 56978.22,
+   "expenditures": 29823.33,
+   "status": "Active"
+  },
+  {
+   "name": "HERRING, TYLER",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 40020.0,
+   "expenditures": 122024.58,
+   "status": "Active"
+  },
+  {
+   "name": "MCGINNIS, MEREDITH",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 20837.78,
+   "expenditures": 5344.4,
+   "status": "Active"
+  },
+  {
+   "name": "STEWART, JACK",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 65651.79,
+   "expenditures": 50174.43,
+   "status": "Active"
+  },
+  {
+   "name": "GRIDER, KARMIN",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 3853.62,
+   "expenditures": 3555.65,
+   "status": "Terminated"
+  },
+  {
+   "name": "HALL, CHUCK",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 461385.89,
+   "expenditures": 332599.36,
+   "status": "Active"
+  },
+  {
+   "name": "LEMARR, MARK",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 19602.19,
+   "expenditures": 41057.22,
+   "status": "Terminated"
+  },
+  {
+   "name": "KEMPER, KENNY",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 8577.0,
+   "expenditures": 4972.08,
+   "status": "Active"
+  },
+  {
+   "name": "THOMPSON, KRISTEN",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 285089.04,
+   "expenditures": 56339.9,
+   "status": "Active"
+  },
+  {
+   "name": "APEL, CHRIS",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 21754.0,
+   "expenditures": 36355.69,
+   "status": "Active"
+  },
+  {
+   "name": "BOSS, HEATHER",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 23270.14,
+   "expenditures": 18933.9,
+   "status": "Terminated"
+  },
+  {
+   "name": "DIDLOT, TAMMI EARLENE",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 60292.03,
+   "expenditures": 64106.73,
+   "status": "Terminated"
+  },
+  {
+   "name": "ELDER, MELISSA R",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 5218.28,
+   "expenditures": 4626.73,
+   "status": "Active"
+  },
+  {
+   "name": "HUSTED, JAMES BRYAN",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 41594.060000000005,
+   "expenditures": 48503.69,
+   "status": "Active"
+  },
+  {
+   "name": "KEYES, ROBERT",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 16061.51,
+   "expenditures": 439813.63,
+   "status": "Active"
+  },
+  {
+   "name": "MORALES, JONATHAN",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 400.0,
+   "expenditures": 0.0,
+   "status": "Active"
+  },
+  {
+   "name": "MORRISON, ERIN",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 1714.0,
+   "expenditures": 16714.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "PAINTER, JON",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 54291.6,
+   "expenditures": 64288.25,
+   "status": "Active"
+  },
+  {
+   "name": "STULL, CODY",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 13228.02,
+   "expenditures": 12126.0,
+   "status": "Terminated"
+  },
+  {
+   "name": "BUTLER, BRADY TODD",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 31823.489999999998,
+   "expenditures": 27813.16,
+   "status": "Terminated"
+  },
+  {
+   "name": "KOCH, RICK LOYD",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 110860.66,
+   "expenditures": 356271.67,
+   "status": "Active"
+  },
+  {
+   "name": "WINEGEART, JESSICA RAE",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 68645.0,
+   "expenditures": 55093.16,
+   "status": "Active"
+  },
+  {
+   "name": "CONNOR, KEVIN",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 1115.27,
+   "expenditures": 1392.69,
+   "status": "Active"
+  },
+  {
+   "name": "GREEN, GRANT",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 360425.49,
+   "expenditures": 337779.38,
+   "status": "Active"
+  },
+  {
+   "name": "TRIMBLE, ROBERT WAYNE",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 36801.4,
+   "expenditures": 198972.96,
+   "status": "Active"
+  },
+  {
+   "name": "KIRT, JULIA",
+   "chamber": "senate",
+   "district": "30",
+   "contributions": 149174.86,
+   "expenditures": 61241.94,
+   "status": "Active"
+  },
+  {
+   "name": "DEEVERS, DUSTIN J",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 58574.93,
+   "expenditures": 51240.31,
+   "status": "Active"
+  },
+  {
+   "name": "ERWIN, CURTIS WAYNE",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 75176.6,
+   "expenditures": 43264.28,
+   "status": "Active"
+  },
+  {
+   "name": "HAUSHEER, JEAN",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 173925.51,
+   "expenditures": 158105.13,
+   "status": "Active"
+  },
+  {
+   "name": "NEWTON, BOOKER T",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 7775.16,
+   "expenditures": 2532.43,
+   "status": "Active"
+  },
+  {
+   "name": "PENA, VALENTIN A",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 877.5,
+   "expenditures": 877.5,
+   "status": "Active"
+  },
+  {
+   "name": "DRISKILL, BRENT",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 41534.719999999994,
+   "expenditures": 53628.24,
+   "status": "Active"
+  },
+  {
+   "name": "FORST, AARON",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 30635.82,
+   "expenditures": 32651.34,
+   "status": "Active"
+  },
+  {
+   "name": "HOSSAIN, AMY",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 11999.37,
+   "expenditures": 8071.06,
+   "status": "Active"
+  },
+  {
+   "name": "PRIETO, DANA",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 39118.88,
+   "expenditures": 27593.28,
+   "status": "Active"
+  },
+  {
+   "name": "TAYLOR, KENT",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 65411.92,
+   "expenditures": 74158.5,
+   "status": "Terminated"
+  },
+  {
+   "name": "HASTE, JOHN",
+   "chamber": "senate",
+   "district": "36",
+   "contributions": 342955.57,
+   "expenditures": 250700.7,
+   "status": "Active"
+  },
+  {
+   "name": "LARSEN, RICHARD BRENT, JR",
+   "chamber": "senate",
+   "district": "36",
+   "contributions": 1765.34,
+   "expenditures": 1471.47,
+   "status": "Active"
+  },
+  {
+   "name": "BUCHANAN, JOE",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 54950.0,
+   "expenditures": 53803.11,
+   "status": "Active"
+  },
+  {
+   "name": "CHRISTIAN, BARRY",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 11650.0,
+   "expenditures": 28540.9,
+   "status": "Terminated"
+  },
+  {
+   "name": "VERNON, RICK",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 94590.0,
+   "expenditures": 72278.6,
+   "status": "Active"
+  },
+  {
+   "name": "HICKS, CARRI",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": 115786.23,
+   "expenditures": 55688.32,
+   "status": "Active"
+  },
+  {
+   "name": "BRACHT, MALANA",
+   "chamber": "senate",
+   "district": "42",
+   "contributions": 20884.730000000003,
+   "expenditures": 21165.3,
+   "status": "Active"
+  },
+  {
+   "name": "JONES, CHRISTOPHER",
+   "chamber": "senate",
+   "district": "42",
+   "contributions": 2048.09,
+   "expenditures": 796.08,
+   "status": "Active"
+  },
+  {
+   "name": "STANLEY, BRENDA",
+   "chamber": "senate",
+   "district": "42",
+   "contributions": 296794.17,
+   "expenditures": 194770.51,
+   "status": "Active"
+  },
+  {
+   "name": "BROOKS, MICHAEL",
+   "chamber": "senate",
+   "district": "44",
+   "contributions": 69986.88,
+   "expenditures": 35267.52,
+   "status": "Active"
+  },
+  {
+   "name": "MANN, MARK",
+   "chamber": "senate",
+   "district": "46",
+   "contributions": 256499.66,
+   "expenditures": 243171.63,
+   "status": "Terminated"
+  },
+  {
+   "name": "MANN, MARK",
+   "chamber": "senate",
+   "district": "46",
+   "contributions": 43398.0,
+   "expenditures": 26775.64,
+   "status": "Active"
+  },
+  {
+   "name": "POGEMILLER, ELLEN",
+   "chamber": "senate",
+   "district": "46",
+   "contributions": 46103.34,
+   "expenditures": 45503.34,
+   "status": "Terminated"
+  },
+  {
+   "name": "WARGIN GRIMALDO, SAM",
+   "chamber": "senate",
+   "district": "46",
+   "contributions": 65431.58,
+   "expenditures": 65404.42,
+   "status": "Terminated"
+  },
+  {
+   "name": "NICE, NIKKI",
+   "chamber": "senate",
+   "district": "48",
+   "contributions": 18569.870000000003,
+   "expenditures": 6501.46,
+   "status": "Active"
+  }
+ ]
+}

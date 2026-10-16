@@ -1,0 +1,1199 @@
+{
+ "state": "DE",
+ "cycle": 2018,
+ "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+ "fetched": "2026-10-16",
+ "dataThrough": "12/31/2018",
+ "candidates": [
+  {
+   "name": "Friends for Charles Postles",
+   "committee": "01003148",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 18290.0
+  },
+  {
+   "name": "Friends for Hansen",
+   "committee": "01003898",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 540502.55
+  },
+  {
+   "name": "Friends of John Marino",
+   "committee": "01003894",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 155827.38
+  },
+  {
+   "name": "Walsh for the 9th",
+   "committee": "01003818",
+   "chamber": "senate",
+   "district": "09",
+   "contributions": 20585.0
+  },
+  {
+   "name": "Friends of Joe Lanzendorfer",
+   "committee": "01003953",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 2344.55
+  },
+  {
+   "name": "The Committee to Elect Brian Bushweller",
+   "committee": "01000334",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 2925.0
+  },
+  {
+   "name": "Committee to Elect Ted Yacucci",
+   "committee": "01002644",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 1651.22
+  },
+  {
+   "name": "Committee To ReElect Dave McBride",
+   "committee": "01000020",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 46185.0
+  },
+  {
+   "name": "Committee to Elect Bryon Short",
+   "committee": "01001546",
+   "chamber": "house",
+   "district": "07",
+   "contributions": 13500.0
+  },
+  {
+   "name": "Friends of Quinn Johnson",
+   "committee": "01001763",
+   "chamber": "house",
+   "district": "08",
+   "contributions": 34825.0
+  },
+  {
+   "name": "Kim Williams for State Representative",
+   "committee": "01001986",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 31477.0
+  },
+  {
+   "name": "People for Paradee",
+   "committee": "01001577",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 3400.0
+  },
+  {
+   "name": "Friends of Jordan Hines",
+   "committee": "01004139",
+   "chamber": "senate",
+   "district": "03",
+   "contributions": 29135.06
+  },
+  {
+   "name": "Friends of Rachel Blumenfeld",
+   "committee": "01004145",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 30778.6
+  },
+  {
+   "name": "Jason Stewart for Senate",
+   "committee": "01004127",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 731.89
+  },
+  {
+   "name": "Citizens For Lavelle",
+   "committee": "01000196",
+   "chamber": "senate",
+   "district": "04",
+   "contributions": 184485.32
+  },
+  {
+   "name": "Krista Griffith For Delaware",
+   "committee": "01004153",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 76958.58
+  },
+  {
+   "name": "Committee to Elect Meredith Chapman",
+   "committee": "01003795",
+   "chamber": "senate",
+   "district": "08",
+   "contributions": 10939.84
+  },
+  {
+   "name": "Friends for Jaques",
+   "committee": "01001341",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 18975.0
+  },
+  {
+   "name": "Friends To Elect Jack Peterman",
+   "committee": "01000093",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 0.0
+  },
+  {
+   "name": "Committee to Elect Bill Carson",
+   "committee": "01001609",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 45498.25
+  },
+  {
+   "name": "Friends of Morgan Hudson",
+   "committee": "01003689",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Elizabeth Lockman",
+   "committee": "01004150",
+   "chamber": "senate",
+   "district": "03",
+   "contributions": 92025.16
+  },
+  {
+   "name": "Lopez for Senate",
+   "committee": "01002575",
+   "chamber": "senate",
+   "district": "06",
+   "contributions": 84352.32
+  },
+  {
+   "name": "Friends of Ron Gray",
+   "committee": "01002711",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 26793.0
+  },
+  {
+   "name": "Porter for Delaware",
+   "committee": "01003057",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 0.38
+  },
+  {
+   "name": "Friends to Elect Harvey R. Kenton",
+   "committee": "01002144",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 5656.12
+  },
+  {
+   "name": "Potter for State Representative",
+   "committee": "01002568",
+   "chamber": "house",
+   "district": "01",
+   "contributions": 19248.4
+  },
+  {
+   "name": "Friends for Jeff Spiegelman",
+   "committee": "01002700",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 25373.15
+  },
+  {
+   "name": "Tim Dukes for State Representative",
+   "committee": "01002690",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 12325.0
+  },
+  {
+   "name": "Committee to Elect Brad Bennett",
+   "committee": "01001491",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 88.44
+  },
+  {
+   "name": "Friends for Ruth Briggs King",
+   "committee": "01002091",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 24070.47
+  },
+  {
+   "name": "Citizens For Cathy Cloutier",
+   "committee": "01000123",
+   "chamber": "senate",
+   "district": "05",
+   "contributions": 5600.08
+  },
+  {
+   "name": "Friends of Nicole Poore",
+   "committee": "01002709",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 29925.0
+  },
+  {
+   "name": "Friends of James Burton",
+   "committee": "01003796",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 0.0
+  },
+  {
+   "name": "Outtens Campaign",
+   "committee": "01000413",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 4473.0
+  },
+  {
+   "name": "Friends of Gary Wolfe",
+   "committee": "01003860",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 0.0
+  },
+  {
+   "name": "Citizens to Elect James J.J. Johnson",
+   "committee": "01000396",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 2500.0
+  },
+  {
+   "name": "Ennis Senate Campaign Committee",
+   "committee": "01001605",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 11365.2
+  },
+  {
+   "name": "Friends of Kevin Hensley",
+   "committee": "01003129",
+   "chamber": "house",
+   "district": "09",
+   "contributions": 53435.0
+  },
+  {
+   "name": "Friends of Laura Sturgeon",
+   "committee": "01004053",
+   "chamber": "senate",
+   "district": "04",
+   "contributions": 166899.16
+  },
+  {
+   "name": "Friends for Pete Schwartzkopf",
+   "committee": "01000275",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 83300.02
+  },
+  {
+   "name": "Friends of Bob Marshall",
+   "committee": "01000011",
+   "chamber": "senate",
+   "district": "03",
+   "contributions": 900.0
+  },
+  {
+   "name": "Committee To Elect John Viola",
+   "committee": "01000122",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 23725.0
+  },
+  {
+   "name": "Committee to Elect Kowalko",
+   "committee": "01000444",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 24136.65
+  },
+  {
+   "name": "Don Peterson For A Change",
+   "committee": "01003697",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Dan Cruce",
+   "committee": "01004140",
+   "chamber": "senate",
+   "district": "04",
+   "contributions": 24944.0
+  },
+  {
+   "name": "Friends of David Neilson",
+   "committee": "01003831",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 379.65
+  },
+  {
+   "name": "Campaign to Elect Justin King",
+   "committee": "01004156",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 54485.97
+  },
+  {
+   "name": "Friends of Sean Lynn",
+   "committee": "01003091",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 28951.0
+  },
+  {
+   "name": "Committee to Elect Dave Wilson",
+   "committee": "01001873",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 8511.0
+  },
+  {
+   "name": "People For McDowell",
+   "committee": "01000009",
+   "chamber": "senate",
+   "district": "01",
+   "contributions": 12800.0
+  },
+  {
+   "name": "Friends for Weeks",
+   "committee": "01002221",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 4.12
+  },
+  {
+   "name": "Hudson Campaign Committee",
+   "committee": "01000039",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 46918.3
+  },
+  {
+   "name": "Campaign to Elect Osienski",
+   "committee": "01002132",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 29270.0
+  },
+  {
+   "name": "Committee to Elect Paul Baumbach",
+   "committee": "01002735",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 34984.97
+  },
+  {
+   "name": "FRIENDS OF LARRY MITCHELL",
+   "committee": "01001316",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 11520.0
+  },
+  {
+   "name": "Friends of Rich Collins",
+   "committee": "01002739",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 28041.8
+  },
+  {
+   "name": "Friends of Melanie George",
+   "committee": "01000293",
+   "chamber": "house",
+   "district": "05",
+   "contributions": 250.0
+  },
+  {
+   "name": "Committee to Elect John Atkins",
+   "committee": "01000316",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends to elect Gary Simpson",
+   "committee": "01000127",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 408.67
+  },
+  {
+   "name": "Friends of Erin Wienner",
+   "committee": "01004135",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 28693.44
+  },
+  {
+   "name": "Committee To Elect Miro",
+   "committee": "01000070",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 3550.0
+  },
+  {
+   "name": "Friends for Mike Ramone",
+   "committee": "01001285",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 68312.66
+  },
+  {
+   "name": "Yearick for Delaware",
+   "committee": "01003090",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 35438.44
+  },
+  {
+   "name": "Friends of David Henderson",
+   "committee": "01003716",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends for Debra Heffernan",
+   "committee": "01002175",
+   "chamber": "house",
+   "district": "06",
+   "contributions": 53586.0
+  },
+  {
+   "name": "Citizens For Colin Bonini",
+   "committee": "01000023",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 57507.76
+  },
+  {
+   "name": "Friends To Elect Gerald Hocker",
+   "committee": "01000408",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 9500.0
+  },
+  {
+   "name": "Friends of Steve Smyk",
+   "committee": "01002679",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 45603.89
+  },
+  {
+   "name": "Friends of Valerie Longhurst",
+   "committee": "01000298",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 33675.0
+  },
+  {
+   "name": "Friends for Dave Lawson",
+   "committee": "01002283",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 14240.54
+  },
+  {
+   "name": "Townsend for Delaware Senate",
+   "committee": "01002581",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 75763.0
+  },
+  {
+   "name": "Committee to Elect Timothy Conrad",
+   "committee": "01003849",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 93.94
+  },
+  {
+   "name": "Committee To Re-Elect Mulrooney",
+   "committee": "01000120",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 13105.0
+  },
+  {
+   "name": "Committee To Elect Paradee",
+   "committee": "01004148",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 133082.0
+  },
+  {
+   "name": "Friends Of Stephanie T. Bolden",
+   "committee": "01000078",
+   "chamber": "house",
+   "district": "02",
+   "contributions": 36789.0
+  },
+  {
+   "name": "Friends of Sean Matthews",
+   "committee": "01002578",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 31940.0
+  },
+  {
+   "name": "Richardson for State Senate",
+   "committee": "01002741",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 41889.48
+  },
+  {
+   "name": "Friends Of Margaret Rose Henry",
+   "committee": "01000010",
+   "chamber": "senate",
+   "district": "02",
+   "contributions": 9060.0
+  },
+  {
+   "name": "Friends to Elect Danny Short",
+   "committee": "01001340",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 23075.0
+  },
+  {
+   "name": "Sokola For Senate",
+   "committee": "01000015",
+   "chamber": "senate",
+   "district": "08",
+   "contributions": 7926.22
+  },
+  {
+   "name": "Friends of William Bush",
+   "committee": "01004162",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 54549.0
+  },
+  {
+   "name": "Committee to Elect Laura Brown for 17th State Representative District",
+   "committee": "01002795",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 75.0
+  },
+  {
+   "name": "Committee To Elect Keeley",
+   "committee": "01000033",
+   "chamber": "house",
+   "district": "03",
+   "contributions": 12780.0
+  },
+  {
+   "name": "Committee to Elect Denise Bowers",
+   "committee": "01003695",
+   "chamber": "senate",
+   "district": "05",
+   "contributions": 5100.33
+  },
+  {
+   "name": "Friends of Cheryl Precourt",
+   "committee": "01004161",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 16471.25
+  },
+  {
+   "name": "Committee to Elect David Bentz",
+   "committee": "01003513",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 19523.3
+  },
+  {
+   "name": "Friends for Brian Pettyjohn",
+   "committee": "01002827",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 7375.0
+  },
+  {
+   "name": "Donald Ayotte For Representative",
+   "committee": "01003135",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 0.0
+  },
+  {
+   "name": "Delcollo for Delaware LLC",
+   "committee": "01003530",
+   "chamber": "senate",
+   "district": "07",
+   "contributions": 5950.0
+  },
+  {
+   "name": "Committee to Elect Andria Bennett",
+   "committee": "01002779",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 22605.0
+  },
+  {
+   "name": "People For Brady",
+   "committee": "01001020",
+   "chamber": "house",
+   "district": "04",
+   "contributions": 24250.0
+  },
+  {
+   "name": "Friends of Donyale Hall",
+   "committee": "01004149",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 14309.0
+  },
+  {
+   "name": "Monique Johns",
+   "committee": "01003800",
+   "chamber": "house",
+   "district": "09",
+   "contributions": 13543.0
+  },
+  {
+   "name": "Friends For Jan Gallagher",
+   "committee": "01003850",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Jean Dowding",
+   "committee": "01003821",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 0.0
+  },
+  {
+   "name": "Renee Taschner for Delaware",
+   "committee": "01004222",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 32227.09
+  },
+  {
+   "name": "Committee to Elect Baker",
+   "committee": "01004202",
+   "chamber": "senate",
+   "district": "06",
+   "contributions": 70719.31
+  },
+  {
+   "name": "Jean Dowding for State Representative",
+   "committee": "01004323",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 2664.0
+  },
+  {
+   "name": "Committee to Elect Bryan Shupe",
+   "committee": "01004274",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 38425.0
+  },
+  {
+   "name": "38th District for Meghan Kelly Esq",
+   "committee": "01004350",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 2649.66
+  },
+  {
+   "name": "Friends of Charlotte Middleton",
+   "committee": "01004388",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 10602.26
+  },
+  {
+   "name": "Lee Murphy 2018",
+   "committee": "01004137",
+   "chamber": "house",
+   "district": "06",
+   "contributions": 490.0
+  },
+  {
+   "name": "Committee to Elect William Resto",
+   "committee": "01004364",
+   "chamber": "house",
+   "district": "05",
+   "contributions": 3947.89
+  },
+  {
+   "name": "Allan for Delaware",
+   "committee": "01004186",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 44927.5
+  },
+  {
+   "name": "Citizens for Frank Cooke",
+   "committee": "01004371",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 17396.0
+  },
+  {
+   "name": "Holloway Jr. for Senate",
+   "committee": "01004419",
+   "chamber": "senate",
+   "district": "02",
+   "contributions": 600.0
+  },
+  {
+   "name": "Bryan Rash for House",
+   "committee": "01004381",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 29323.32
+  },
+  {
+   "name": "Committee to Elect Jim Miller",
+   "committee": "01004436",
+   "chamber": "house",
+   "district": "03",
+   "contributions": 16872.45
+  },
+  {
+   "name": "Scott Gesty for Delaware",
+   "committee": "01004387",
+   "chamber": "house",
+   "district": "07",
+   "contributions": 200.0
+  },
+  {
+   "name": "Minor-Brown for 17th District",
+   "committee": "01004342",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 13931.99
+  },
+  {
+   "name": "Ajawavi Ajavon Democrat for State Representative",
+   "committee": "01004229",
+   "chamber": "house",
+   "district": "05",
+   "contributions": 9221.63
+  },
+  {
+   "name": "Friends of Nnamdi Chukwuocha - State Representative 1st",
+   "committee": "01004439",
+   "chamber": "house",
+   "district": "01",
+   "contributions": 40164.0
+  },
+  {
+   "name": "Dorsey Walker for DE",
+   "committee": "01004443",
+   "chamber": "house",
+   "district": "03",
+   "contributions": 23815.0
+  },
+  {
+   "name": "Friends For Vanderwende",
+   "committee": "01004236",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 41840.0
+  },
+  {
+   "name": "Friends of Jeff Olmstead",
+   "committee": "01004420",
+   "chamber": "house",
+   "district": "06",
+   "contributions": 23854.29
+  },
+  {
+   "name": "Committee to elect Ray Seigfried",
+   "committee": "01004353",
+   "chamber": "house",
+   "district": "07",
+   "contributions": 30163.09
+  },
+  {
+   "name": "Friends for Morris",
+   "committee": "01004210",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 37243.0
+  },
+  {
+   "name": "Friends for Paul Falkowski",
+   "committee": "01004422",
+   "chamber": "house",
+   "district": "03",
+   "contributions": 1015.0
+  },
+  {
+   "name": "Izzo For The People",
+   "committee": "01004417",
+   "chamber": "house",
+   "district": "07",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Kendra Johnson",
+   "committee": "01004213",
+   "chamber": "house",
+   "district": "05",
+   "contributions": 16495.0
+  },
+  {
+   "name": "Citizens for Daigle",
+   "committee": "01003619",
+   "chamber": "house",
+   "district": "07",
+   "contributions": 5767.0
+  },
+  {
+   "name": "Darius Brown for State Senate",
+   "committee": "01004370",
+   "chamber": "senate",
+   "district": "02",
+   "contributions": 30659.49
+  },
+  {
+   "name": "Friends of Mike Burns",
+   "committee": "01004421",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 13021.41
+  },
+  {
+   "name": "Friends of Jakim Mohammed",
+   "committee": "01004324",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 4792.6
+  },
+  {
+   "name": "Cummings for Senate",
+   "committee": "01004325",
+   "chamber": "senate",
+   "district": "02",
+   "contributions": 22078.0
+  },
+  {
+   "name": "Committee to Elect Dave Roberts",
+   "committee": "01004424",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 4250.0
+  },
+  {
+   "name": "Friends of Cathy Imburgia",
+   "committee": "01004433",
+   "chamber": "house",
+   "district": "07",
+   "contributions": 1365.0
+  },
+  {
+   "name": "Citizens to Elect Robert Mitchell",
+   "committee": "01003624",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 9592.5
+  },
+  {
+   "name": "Campaign for Kathy Beard",
+   "committee": "01004354",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 4472.04
+  },
+  {
+   "name": "Friends To Elect UGundi Jacobs Sr",
+   "committee": "01004446",
+   "chamber": "house",
+   "district": "02",
+   "contributions": 192.02
+  },
+  {
+   "name": "Friends of Kapitanic for 11th District Senate",
+   "committee": "01004442",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 4739.09
+  },
+  {
+   "name": "Friends of Linwood Jackson",
+   "committee": "01004334",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 1970.0
+  },
+  {
+   "name": "Guillermina Gonzalez for Delaware",
+   "committee": "01004194",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 63277.74
+  },
+  {
+   "name": "Friends to Elect Ralph Taylor",
+   "committee": "01004393",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 10624.2
+  },
+  {
+   "name": "Friends of Sam Guy",
+   "committee": "01004200",
+   "chamber": "senate",
+   "district": "02",
+   "contributions": 16954.0
+  },
+  {
+   "name": "Friends of Jim Ryan",
+   "committee": "01004309",
+   "chamber": "house",
+   "district": "09",
+   "contributions": 20805.61
+  },
+  {
+   "name": "Committee to Elect Debbie Harrington",
+   "committee": "01004212",
+   "chamber": "house",
+   "district": "09",
+   "contributions": 11474.33
+  },
+  {
+   "name": "Committee to elect David Anderson",
+   "committee": "01004217",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 21756.96
+  },
+  {
+   "name": "Mike Smith for Delaware",
+   "committee": "01003160",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 80864.1
+  },
+  {
+   "name": "Larry Lambert for State Representative",
+   "committee": "01004369",
+   "chamber": "house",
+   "district": "07",
+   "contributions": 5492.23
+  },
+  {
+   "name": "Friends of Robin R. Hayes",
+   "committee": "01004237",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 24033.89
+  },
+  {
+   "name": "Friends of Paul Thornburg",
+   "committee": "01004455",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 13634.65
+  },
+  {
+   "name": "Phillips for Senate 16",
+   "committee": "01004453",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 22813.46
+  },
+  {
+   "name": "Friends to elect Chuck Groce",
+   "committee": "01003852",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 10203.41
+  },
+  {
+   "name": "Friends of Todd Webb",
+   "committee": "01004465",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 7755.07
+  },
+  {
+   "name": "Vote Bill Hinds",
+   "committee": "01004450",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 1100.0
+  },
+  {
+   "name": "People to Elect Bill Dilks",
+   "committee": "01004171",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 2905.43
+  },
+  {
+   "name": "Friends Of Bob Wheatley",
+   "committee": "01004343",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 56655.0
+  },
+  {
+   "name": "Friends of Eric Braunstein",
+   "committee": "01004390",
+   "chamber": "house",
+   "district": "07",
+   "contributions": 11835.0
+  },
+  {
+   "name": "Metzing For Delaware",
+   "committee": "01004377",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 36685.33
+  },
+  {
+   "name": "People for Ade Kuforiji",
+   "committee": "01004321",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 5650.0
+  },
+  {
+   "name": "Friends For Stephanie Barry",
+   "committee": "01004399",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 31576.99
+  },
+  {
+   "name": "Justin Cruice for Delaware",
+   "committee": "01004416",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 9481.52
+  },
+  {
+   "name": "Citizens for Purcell",
+   "committee": "01004461",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 6725.0
+  },
+  {
+   "name": "The Friends to Elect Al Ament",
+   "committee": "01004384",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 600.0
+  },
+  {
+   "name": "Friends for Dan Zitofsky",
+   "committee": "01004423",
+   "chamber": "house",
+   "district": "08",
+   "contributions": 22066.1
+  },
+  {
+   "name": "Friends to Elect Dave Wilson II",
+   "committee": "01004288",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 32617.0
+  },
+  {
+   "name": "Committee to Elect James DeMartino",
+   "committee": "01003760",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 13478.06
+  },
+  {
+   "name": "FRIENDS OF BRAD CONNOR",
+   "committee": "01003819",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 16321.0
+  },
+  {
+   "name": "Friends of Jack Bucchioni",
+   "committee": "01004184",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 15845.0
+  },
+  {
+   "name": "Friends of Jim Startzman",
+   "committee": "01003212",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 6188.44
+  },
+  {
+   "name": "Friends of James Spadola",
+   "committee": "01003581",
+   "chamber": "senate",
+   "district": "01",
+   "contributions": 0.0
+  },
+  {
+   "name": "friends of harry r smouse",
+   "committee": "01004474",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 141.0
+  },
+  {
+   "name": "Commitee to Elect Cody McNutt",
+   "committee": "01004434",
+   "chamber": "house",
+   "district": "08",
+   "contributions": 1300.0
+  },
+  {
+   "name": "Committee to Elect Will McVay",
+   "committee": "01004447",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 82.25
+  },
+  {
+   "name": "Committee to Elect Mike Tedesco",
+   "committee": "01002314",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 0.0
+  },
+  {
+   "name": "James Christina District 13",
+   "committee": "01004445",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 0.01
+  },
+  {
+   "name": "Committee to Elect Megan ODonnell",
+   "committee": "01004355",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 940.0
+  }
+ ]
+}

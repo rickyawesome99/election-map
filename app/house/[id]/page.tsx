@@ -13,13 +13,15 @@ import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, Fundra
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
-import { forecastRace } from "@/lib/forecast";
+import { forecastRace, forecastsFor } from "@/lib/forecast";
 import { alignedParty } from "@/data/raceEligibility";
 import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { pastElectionHref } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
-import { StatePill, OfficePill, HeldPill, SeatArrows, PILL } from "@/components/RaceHeroPills";
+import { StatePill, OfficePill, HeldPill, PILL } from "@/components/RaceHeroPills";
+import HouseDistrictSwitcher, { type SwitcherDistrict } from "@/components/HouseDistrictSwitcher";
+import { ABBR_TO_FIPS } from "@/lib/fips";
 
 const GENERAL_ELECTION = "November 3, 2026";
 
@@ -210,19 +212,24 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
       };
     });
 
-  // The state's previous and next districts, by number, for the arrows beside the pills. The list
-  // wraps (the last district's "next" is the first), so every district gets both arrows; a
-  // two-district state gets one arrow, since both would lead to the same place.
-  const stateDistricts = houseData
+  // The state's districts, by number, for the switcher above "Projected Vote": each labelled with
+  // who holds the seat and colored on the locator map by its forecast rating (one district = none).
+  const stateFips = ABBR_TO_FIPS[stateAbbr];
+  const houseForecasts = new Map(forecastsFor("house").map((f) => [f.id, f]));
+  const switcherDistricts: SwitcherDistrict[] = houseData
     .filter((r) => r.state === race.state)
-    .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));
-  const districtIdx = stateDistricts.findIndex((r) => r.name === race.name);
-  const nDistricts = stateDistricts.length;
-  const navTo = (r: (typeof houseData)[number] | undefined) => (r && r.name !== race.name ? { href: `/house/${r.name.toLowerCase()}`, label: r.name } : null);
-  const districtNav = {
-    prev: nDistricts > 2 ? navTo(stateDistricts[(districtIdx - 1 + nDistricts) % nDistricts]) : null,
-    next: navTo(stateDistricts[(districtIdx + 1) % nDistricts]),
-  };
+    .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }))
+    .map((r) => {
+      const num = r.name.split("-")[1];
+      const holder = [r.candidates?.dem, r.candidates?.rep].find((c) => c?.incumbent) ?? (r.seatHolder ? { name: r.seatHolder, party: r.seatParty } : inferCurrentHouseSeatFromPastResults(r));
+      const rating = houseForecasts.get(r.id)?.rating;
+      return {
+        name: r.name,
+        label: `${r.name} · ${holder ? `${holder.name}${holder.party ? ` (${holder.party})` : ""}` : "Open seat"}`,
+        geoid: `${stateFips}${num === "AL" ? "00" : num.padStart(2, "0")}`,
+        fill: rating ? getRatingColors(rating).bg : "var(--app-tab-bg)",
+      };
+    });
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -251,7 +258,6 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                   style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
                 >
                   {race.name}
-                  <SeatArrows prev={districtNav.prev} next={districtNav.next} label="Neighbouring districts" />
                 </h1>
               </div>
               <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
@@ -311,6 +317,10 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
 
       <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
+
+          {switcherDistricts.length > 1 && (
+            <HouseDistrictSwitcher stateAbbr={stateAbbr} districts={switcherDistricts} current={race.name} mapNote={`map colored by ${electionYear} forecast rating`} />
+          )}
 
           <section>
             <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />

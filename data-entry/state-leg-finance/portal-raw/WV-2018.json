@@ -1,0 +1,2557 @@
+{
+ "state": "WV",
+ "cycle": 2018,
+ "source": "West Virginia Secretary of State CFRS (itemized contributions)",
+ "fetched": "2026-10-16",
+ "dataThrough": "12/31/2019",
+ "candidates": [
+  {
+   "name": "Maynard, Mark R.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 56998.97
+  },
+  {
+   "name": "Sypolt, David C.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 31350.0
+  },
+  {
+   "name": "Woelfel, Mike",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 74215.0
+  },
+  {
+   "name": "Walker, Carlos Everett",
+   "party": "Libertarian",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 1669.81
+  },
+  {
+   "name": "Dinges, David M",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "66",
+   "contributions": 6325.0
+  },
+  {
+   "name": "Kelly, John R.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 42945.0
+  },
+  {
+   "name": "Butler, Jim",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 23663.11
+  },
+  {
+   "name": "Howell, Gary G.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 35365.0
+  },
+  {
+   "name": "Hansen, Evan",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 60708.69
+  },
+  {
+   "name": "Pushkin, Michael Ari",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 44512.54
+  },
+  {
+   "name": "Lucas, Lissa",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 93257.56
+  },
+  {
+   "name": "Cannon, Jarred",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 5534.48
+  },
+  {
+   "name": "May, Kenneth",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "",
+   "contributions": 0.0
+  },
+  {
+   "name": "Stratton, Christopher",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 0.0
+  },
+  {
+   "name": "Shuttlesworth, Roger",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 1600.0
+  },
+  {
+   "name": "Jeffries, Joseph (Joe)",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 9447.18
+  },
+  {
+   "name": "Ross, Paul David",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 951.0
+  },
+  {
+   "name": "Maynard, Zach",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 35150.0
+  },
+  {
+   "name": "Boggs, Brent",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 27295.18
+  },
+  {
+   "name": "Dillon, Gavin",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hanna, Caleb",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 15588.42
+  },
+  {
+   "name": "Haynes, Austin",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 6325.0
+  },
+  {
+   "name": "Dean, Mark",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 14450.0
+  },
+  {
+   "name": "Spurlock, Matt",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 16698.08
+  },
+  {
+   "name": "Dodds, Jon",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 1821.88
+  },
+  {
+   "name": "Moore, Riley",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "67",
+   "contributions": 118827.54
+  },
+  {
+   "name": "Tull, Thomas",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 22653.85
+  },
+  {
+   "name": "Blankenship, Wesley",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 850.0
+  },
+  {
+   "name": "Barker, Kaylen",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 0.0
+  },
+  {
+   "name": "Harshbarger, Jason S.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 30608.26
+  },
+  {
+   "name": "Brewer, Scott",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 69678.18
+  },
+  {
+   "name": "Riggs Huffman, Melissa",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 26263.45
+  },
+  {
+   "name": "Vickers, Selina",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 8598.91
+  },
+  {
+   "name": "Barrett, Jason",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "61",
+   "contributions": 23640.41
+  },
+  {
+   "name": "Hartman, Bill",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 25350.0
+  },
+  {
+   "name": "Pritt, David Elliott",
+   "party": "Mountain",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 3184.0
+  },
+  {
+   "name": "Bates, Mick",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 20377.0
+  },
+  {
+   "name": "Palmer, Andrew",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jones, Davy",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 1625.29
+  },
+  {
+   "name": "Hess Crouse, Kathie",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 0.0
+  },
+  {
+   "name": "Peters, James S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kelly, Matt",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "",
+   "contributions": 0.0
+  },
+  {
+   "name": "Westfall, Steve",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 63680.0
+  },
+  {
+   "name": "Davidson, James Edward II",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 7.0
+  },
+  {
+   "name": "Morris, Ethan",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 1979.99
+  },
+  {
+   "name": "Evans Fleischauer, Barbara",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 78956.94
+  },
+  {
+   "name": "Canestraro, Joe",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 55895.89
+  },
+  {
+   "name": "Magnone, Diana",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 14040.39
+  },
+  {
+   "name": "Lynch, Dana L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 18600.0
+  },
+  {
+   "name": "Folk, Michael",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 50277.53
+  },
+  {
+   "name": "Bray, Ashton",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 0.0
+  },
+  {
+   "name": "Isner, Phillip S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 13801.7
+  },
+  {
+   "name": "Ambler, George Boogie",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 21925.0
+  },
+  {
+   "name": "Karnes, Robert",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 31890.0
+  },
+  {
+   "name": "Finch, Laura M.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 13484.5
+  },
+  {
+   "name": "Pethtel, David",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 42355.0
+  },
+  {
+   "name": "Colangelo, Cal",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hess, Michael",
+   "party": "Libertarian",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 773.15
+  },
+  {
+   "name": "Haas, Dalton",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 15650.4
+  },
+  {
+   "name": "Hughart, Christopher",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 0.0
+  },
+  {
+   "name": "Nelson, Dakota",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 6209.74
+  },
+  {
+   "name": "Blankenship, Ronnie L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 0.0
+  },
+  {
+   "name": "Cowles, Daryl",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "58",
+   "contributions": 43275.0
+  },
+  {
+   "name": "Worrell, Evan",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 17300.0
+  },
+  {
+   "name": "Pyles, Rodney A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 23867.0
+  },
+  {
+   "name": "O'Neal IV, John D.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 7240.0
+  },
+  {
+   "name": "Beckwith, Margaret Kerr",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 278.25
+  },
+  {
+   "name": "O'Dell, Paul Jr.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 9250.0
+  },
+  {
+   "name": "Miller, Rodney A",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 25825.0
+  },
+  {
+   "name": "Walters, Ronald N.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 0.0
+  },
+  {
+   "name": "Marchal, Robert",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 0.0
+  },
+  {
+   "name": "Brown, Sam",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 22002.5
+  },
+  {
+   "name": "Martin, Jeff",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 2888.94
+  },
+  {
+   "name": "Armstead, Tim",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 5640.0
+  },
+  {
+   "name": "Romano, Mike",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 94286.0
+  },
+  {
+   "name": "Doyle, John",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "67",
+   "contributions": 40682.52
+  },
+  {
+   "name": "Lovejoy, Chad",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 73873.84
+  },
+  {
+   "name": "Cook, Adam",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 0.0
+  },
+  {
+   "name": "Espinosa, Paul",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "66",
+   "contributions": 25695.0
+  },
+  {
+   "name": "Elam, James",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 1208.82
+  },
+  {
+   "name": "Rowsey, Jeanette M",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 19796.03
+  },
+  {
+   "name": "Swartzmiller, Randy",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 46220.18
+  },
+  {
+   "name": "Upson, Jill",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 27333.48
+  },
+  {
+   "name": "Capito, Moore",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 125813.5
+  },
+  {
+   "name": "Ferns, Ryan",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 287583.84
+  },
+  {
+   "name": "Baldwin, Stephen",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 80962.22
+  },
+  {
+   "name": "Cooper, Roy",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 11300.0
+  },
+  {
+   "name": "Williams, John",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 52271.0
+  },
+  {
+   "name": "Sammons, Charles",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 15650.0
+  },
+  {
+   "name": "Lunsford, Larry Brooke",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 8225.0
+  },
+  {
+   "name": "Caputo, Mike",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 51744.74
+  },
+  {
+   "name": "Criss, Vernon",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 21350.0
+  },
+  {
+   "name": "Roebuck Claytor, Mary Ann",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 10913.13
+  },
+  {
+   "name": "Campbell, Jeff",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 33634.47
+  },
+  {
+   "name": "Stephens, Jason A.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 6425.0
+  },
+  {
+   "name": "Drennan, Mark",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 14595.0
+  },
+  {
+   "name": "Cocchiaro, Angelo J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 0.0
+  },
+  {
+   "name": "Zatezalo, Mark P.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 32851.21
+  },
+  {
+   "name": "Farley, Cynthia",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 10211.21
+  },
+  {
+   "name": "Graves, Diana",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 29782.26
+  },
+  {
+   "name": "Nelson, Eric",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 160762.5
+  },
+  {
+   "name": "Cork II, Waymond D.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 9500.0
+  },
+  {
+   "name": "Blair, Saira",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hamrick, Danny",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 18415.0
+  },
+  {
+   "name": "Hollen, Ray",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 11125.0
+  },
+  {
+   "name": "Hornbuckle, Sean",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 39121.18
+  },
+  {
+   "name": "McGeehan, Pat",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 11180.0
+  },
+  {
+   "name": "Trump IV, Charles S.",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 72858.97
+  },
+  {
+   "name": "Thompson, Robert",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 21720.0
+  },
+  {
+   "name": "Kerner, Matthew",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 6548.82
+  },
+  {
+   "name": "Longstreth, Linda",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 22425.0
+  },
+  {
+   "name": "Sypolt, Terri",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 11144.31
+  },
+  {
+   "name": "Rohrbach, Matthew A.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 0.0
+  },
+  {
+   "name": "Walker, Danielle",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 37247.89
+  },
+  {
+   "name": "Lavender-Bowe, Cynthia",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 54835.33
+  },
+  {
+   "name": "Jarman, George Frank",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 1116.74
+  },
+  {
+   "name": "Rowan, Ruth",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "57",
+   "contributions": 5350.0
+  },
+  {
+   "name": "Criado, John Michael",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 313.6
+  },
+  {
+   "name": "Statler, Joe",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 34678.52
+  },
+  {
+   "name": "Linville, Daniel",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 36280.0
+  },
+  {
+   "name": "Nestor, William  (Ty) T.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 14300.16
+  },
+  {
+   "name": "Worth, Wayne",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hicks, Ken",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 22904.0
+  },
+  {
+   "name": "Fast, Tom",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 16700.0
+  },
+  {
+   "name": "Hill, Jordan",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 12350.0
+  },
+  {
+   "name": "Carden Arvon, Lynne",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 2500.0
+  },
+  {
+   "name": "Barnhart, Trevor",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 336.99
+  },
+  {
+   "name": "Hunt, Mark A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 12496.73
+  },
+  {
+   "name": "Paynter, Tony",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 15783.0
+  },
+  {
+   "name": "Brown, Nathan D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 10137.04
+  },
+  {
+   "name": "Zuchowski, Austin",
+   "party": "Libertarian",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 0.0
+  },
+  {
+   "name": "Garcia, Robert",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 17275.0
+  },
+  {
+   "name": "Steele, Brandon",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 32569.9
+  },
+  {
+   "name": "Moore, Sr., Lonnie L.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 0.0
+  },
+  {
+   "name": "Vannoy, Roger",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 1034.45
+  },
+  {
+   "name": "Takubo, Tom",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 67499.0
+  },
+  {
+   "name": "Jennings, D R Buck",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 7500.0
+  },
+  {
+   "name": "Romine, C. E. Chuck",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ward, Guy",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 20281.07
+  },
+  {
+   "name": "Kessinger, Kayla Ann",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 26351.21
+  },
+  {
+   "name": "Evans, Andrew",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 23392.46
+  },
+  {
+   "name": "Lardieri, Allen",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Patrick, Richard L.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 2319.3
+  },
+  {
+   "name": "Gaunch, Ed",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 149345.03
+  },
+  {
+   "name": "Zukoff, Lisa",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 38101.36
+  },
+  {
+   "name": "Dodrill, Matthew",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 777.38
+  },
+  {
+   "name": "Marcum, Barry",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 9490.31
+  },
+  {
+   "name": "Kump, Larry D.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 9686.76
+  },
+  {
+   "name": "King, Alexander",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 4843.62
+  },
+  {
+   "name": "Mullins, Jeff",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 0.0
+  },
+  {
+   "name": "Tarr, Eric",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 104777.31
+  },
+  {
+   "name": "Stollings, Ron",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 71455.79
+  },
+  {
+   "name": "Evans, Edward (Ed)",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 14740.36
+  },
+  {
+   "name": "Azinger, Michael",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 53043.57
+  },
+  {
+   "name": "Summers, Amy",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 22270.7
+  },
+  {
+   "name": "Morris, Missy Sue",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 25347.0
+  },
+  {
+   "name": "Thompson, Cody Hansbrough",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 32181.18
+  },
+  {
+   "name": "Martin, Carl Robert",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 12600.0
+  },
+  {
+   "name": "Meador, Zachary Michael",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jones, Carla",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 2063.4
+  },
+  {
+   "name": "Pore, Renate",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 54501.73
+  },
+  {
+   "name": "Erlandson, James Allen",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 1550.0
+  },
+  {
+   "name": "Cantley, Ronald Bee II",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 3346.79
+  },
+  {
+   "name": "Swatts, James Michael",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 14230.49
+  },
+  {
+   "name": "Bragg, Duane Ray",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kelly, David Lee",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 8987.23
+  },
+  {
+   "name": "Meadows, Phoebe Jeffries",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 9592.91
+  },
+  {
+   "name": "Miller, Vera Marie",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 4850.0
+  },
+  {
+   "name": "Davis, Steven J",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 200.0
+  },
+  {
+   "name": "Dornbos, Andrew Scott",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 2000.0
+  },
+  {
+   "name": "Toney, Christopher Wayne",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 3591.29
+  },
+  {
+   "name": "McCourt, Don Edward",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 0.0
+  },
+  {
+   "name": "Adkins, Chanda Danielle",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 4160.05
+  },
+  {
+   "name": "Longwell, Dennis Franklin",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 42595.0
+  },
+  {
+   "name": "Hamilton, Bill",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 72732.5
+  },
+  {
+   "name": "Wright, Samson",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 165.0
+  },
+  {
+   "name": "Bailey, Carol",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 6644.22
+  },
+  {
+   "name": "Marcum, Justin J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 5670.0
+  },
+  {
+   "name": "Robinette, James Paul",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 15150.05
+  },
+  {
+   "name": "Jarrett, Matthew Hunter",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 447.83
+  },
+  {
+   "name": "Rowe, Larry L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 38500.48
+  },
+  {
+   "name": "Sponaugle, Isaac III",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "55",
+   "contributions": 29813.36
+  },
+  {
+   "name": "Angelucci, Michael Joseph II",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 15458.0
+  },
+  {
+   "name": "Larry, Ed",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 14171.0
+  },
+  {
+   "name": "Clabaugh, Reese L Jr.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "66",
+   "contributions": 1344.11
+  },
+  {
+   "name": "Waxman, Terry",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 48363.4
+  },
+  {
+   "name": "Shaw, Sandra Lee",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 24355.14
+  },
+  {
+   "name": "Snuffer, Richard Vinson II",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 14033.65
+  },
+  {
+   "name": "Thompson, Logan Michael",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 0.0
+  },
+  {
+   "name": "Roberts, Rollan A",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 26490.0
+  },
+  {
+   "name": "Bowen, Jason Israel",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 1209.79
+  },
+  {
+   "name": "Hough, Justin Lee",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 3723.63
+  },
+  {
+   "name": "Faircloth, Larry",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 2662.36
+  },
+  {
+   "name": "McKenzie, Luke Wayne",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 1363.35
+  },
+  {
+   "name": "Stanley, Phoebe Rose",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 1215.0
+  },
+  {
+   "name": "Oliverio, Michael A II",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 98405.0
+  },
+  {
+   "name": "Johngrass, Gary Lee",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 37.6
+  },
+  {
+   "name": "Deem, John Franklin",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 9187.44
+  },
+  {
+   "name": "Lawhorn, Zane Rene",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 11771.73
+  },
+  {
+   "name": "Chase, Cory",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 44343.35
+  },
+  {
+   "name": "Burger, Christopher Lee",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 915.0
+  },
+  {
+   "name": "Shamblin, Ronald Clinton",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 7800.0
+  },
+  {
+   "name": "Hof, Jon F",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "55",
+   "contributions": 4312.42
+  },
+  {
+   "name": "Bibby, Tom",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "62",
+   "contributions": 10752.73
+  },
+  {
+   "name": "Bird, Wendy J.G.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "64",
+   "contributions": 2875.0
+  },
+  {
+   "name": "Bland, David",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 28345.0
+  },
+  {
+   "name": "Isner, John Michael",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 18170.24
+  },
+  {
+   "name": "Wiley, Phillip Warren",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 3050.0
+  },
+  {
+   "name": "Bryant, Billy Ray",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 0.0
+  },
+  {
+   "name": "Canterbury, Denny",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 5384.9
+  },
+  {
+   "name": "Foster, Geoff",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 16150.0
+  },
+  {
+   "name": "Cadle, Scott",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 7285.0
+  },
+  {
+   "name": "Ellis, Terrell",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 141804.65
+  },
+  {
+   "name": "Freeman, Harry",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 3866.02
+  },
+  {
+   "name": "Hahn, Bibi",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "58",
+   "contributions": 11845.57
+  },
+  {
+   "name": "Hardy, John",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 9247.48
+  },
+  {
+   "name": "Holmes, David \"Woody\"",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 26703.22
+  },
+  {
+   "name": "Hott, John Paul II",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 10600.0
+  },
+  {
+   "name": "Hylton, Tyler James",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 652.2
+  },
+  {
+   "name": "Iaquinta, RIchard J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 22750.0
+  },
+  {
+   "name": "Jeffries, Dean",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 14142.81
+  },
+  {
+   "name": "Kessler, Mel",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 2650.0
+  },
+  {
+   "name": "Malcolm, Sharon Lewis",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 8126.9
+  },
+  {
+   "name": "Marion, Jim",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 6200.0
+  },
+  {
+   "name": "Nance, Karen",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 12210.91
+  },
+  {
+   "name": "Pickens, James Alan",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 1972.7
+  },
+  {
+   "name": "Ryan, Timothy",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 1950.0
+  },
+  {
+   "name": "Shott, John H.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 45775.0
+  },
+  {
+   "name": "Skehan, Will",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 2217.34
+  },
+  {
+   "name": "Staggers, Margaret Anne",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 25378.04
+  },
+  {
+   "name": "Tinnel, Nelson E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 831.85
+  },
+  {
+   "name": "Stutler, Caleb B.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 627.29
+  },
+  {
+   "name": "Vance, Andy",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 5270.18
+  },
+  {
+   "name": "Vanover, Jennifer Ann",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wooton, William R \"Bill\"",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 48505.4
+  },
+  {
+   "name": "Zucker, Stephanie",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 44951.24
+  },
+  {
+   "name": "Shrieves, Debra S.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 500.0
+  },
+  {
+   "name": "Funkhouser, Keith",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 10322.29
+  },
+  {
+   "name": "Tawney, Kenneth Eugene",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 11005.21
+  },
+  {
+   "name": "Moye, Ricky Duane",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 18355.0
+  },
+  {
+   "name": "House, Ralph Michael",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 1558.0
+  },
+  {
+   "name": "Porterfield, Eric Earl",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 17109.7
+  },
+  {
+   "name": "Grady, Amy Nichole",
+   "party": "Independent",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 2981.93
+  },
+  {
+   "name": "Mullins, Todd",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 1732.77
+  },
+  {
+   "name": "Warner, Debbie L",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 48754.15
+  },
+  {
+   "name": "Horton, Casey Wade",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 250.0
+  },
+  {
+   "name": "Reed, Tally Ranels",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 11310.06
+  },
+  {
+   "name": "Deitzler, Harry",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 39915.0
+  },
+  {
+   "name": "Wilson, S. Marshall",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 9885.84
+  },
+  {
+   "name": "Bridges, Jordan Ray",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 950.0
+  },
+  {
+   "name": "Lane, Charlotte R",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 60256.5
+  },
+  {
+   "name": "Ihlenfeld, William J II",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 205515.74
+  },
+  {
+   "name": "Prim, Brian",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 57050.0
+  },
+  {
+   "name": "Williams, Wayne",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 1320.0
+  },
+  {
+   "name": "Unger, John",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 36955.0
+  },
+  {
+   "name": "Fluharty, Shawn",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 57605.0
+  },
+  {
+   "name": "Storch, Erikka",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 29600.0
+  },
+  {
+   "name": "Tighe, Larry",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 0.0
+  },
+  {
+   "name": "Daniel, Andy",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 35683.76
+  },
+  {
+   "name": "Hastings, Bryan",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 0.0
+  },
+  {
+   "name": "Fattaleh, David",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 0.0
+  },
+  {
+   "name": "Shelton Perry, Susan",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 5393.51
+  },
+  {
+   "name": "Stone, Aaron",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 2525.0
+  },
+  {
+   "name": "Hanshaw, Roger",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 94076.0
+  },
+  {
+   "name": "Walker, David A",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 31023.89
+  },
+  {
+   "name": "Skaff, Doug Jr.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 34630.0
+  },
+  {
+   "name": "Casto, Clint",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 811.28
+  },
+  {
+   "name": "Estep-Burton, Amanda",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 37738.81
+  },
+  {
+   "name": "Daniels, Barbara",
+   "party": "Mountain",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hart, Derek H.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 0.0
+  },
+  {
+   "name": "Phillips, Chris",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 13573.87
+  },
+  {
+   "name": "McIntyre, Derek",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 12530.0
+  },
+  {
+   "name": "Kincaid, Robert James",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 281.1
+  },
+  {
+   "name": "Miley, Tim",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 64225.0
+  },
+  {
+   "name": "Frich, Cindy",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 26255.0
+  },
+  {
+   "name": "Hagel, Charles Von",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 0.0
+  },
+  {
+   "name": "Von Hagel, Charles",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 0.0
+  },
+  {
+   "name": "Vitale, Anthony J",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "61",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jackson, Theresa Ann",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 2175.0
+  },
+  {
+   "name": "Tester, Ima",
+   "party": "No Affiliation",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 0.0
+  },
+  {
+   "name": "Armentrout, Jason",
+   "party": "No Affiliation",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 2045.0
+  },
+  {
+   "name": "Hargus, Simon",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 11698.9
+  },
+  {
+   "name": "Brown, Samantha",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 29912.2
+  },
+  {
+   "name": "Johnson, Robert L",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 150.0
+  },
+  {
+   "name": "Urban, Michael Alexander",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 7979.34
+  },
+  {
+   "name": "Malcomb, Steve",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 11840.62
+  },
+  {
+   "name": "Lively, Luke",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 17600.0
+  },
+  {
+   "name": "Lindsay, Richard",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 91196.66
+  },
+  {
+   "name": "Higginbotham, Joshua K.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 24335.0
+  },
+  {
+   "name": "Pack, Jeffrey",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 19265.0
+  },
+  {
+   "name": "Stultz, Bob",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 14809.0
+  },
+  {
+   "name": "Rohrbach, Matthew",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 43190.0
+  },
+  {
+   "name": "Clements, Charles Houston",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 50674.95
+  },
+  {
+   "name": "Quesenberry, John",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 4075.0
+  },
+  {
+   "name": "Beach, Bob",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 57856.51
+  },
+  {
+   "name": "Salisbury, Justin  \"Dick\"",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 16.98
+  },
+  {
+   "name": "Diserio, Phillip W",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 36725.0
+  },
+  {
+   "name": "Reynolds, Charlie",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 6200.0
+  },
+  {
+   "name": "Ross, Mark",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Tomblin, Tim",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 6100.0
+  },
+  {
+   "name": "Burgess, Edward R",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 300.0
+  },
+  {
+   "name": "Robinson, Andrew",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 100747.0
+  },
+  {
+   "name": "Lasky-Setchell, Maureen",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 220.0
+  },
+  {
+   "name": "Queen, Ben",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 44230.8
+  },
+  {
+   "name": "Abel, George Allen",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 8199.48
+  },
+  {
+   "name": "Kennedy, Cory B",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 0.0
+  },
+  {
+   "name": "Householder, Eric",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "64",
+   "contributions": 27995.0
+  },
+  {
+   "name": "Brush, Pam",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 174.0
+  },
+  {
+   "name": "Ellington, Joe C Jr.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 26400.0
+  },
+  {
+   "name": "Solomon, Brianne",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 39420.03
+  },
+  {
+   "name": "McCallister, Gary",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 37451.75
+  },
+  {
+   "name": "Addington, Monica Denese",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 974.2
+  },
+  {
+   "name": "Atkinson, Martin III",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 17775.0
+  },
+  {
+   "name": "Cox, David Gail",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 3024.99
+  },
+  {
+   "name": "Bolen, Kevin Sr.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 0.0
+  },
+  {
+   "name": "Byrd, Andrew D",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 54444.0
+  },
+  {
+   "name": "Mallow, Phil Wayne",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 7160.88
+  },
+  {
+   "name": "Utterback, Andrew Perry",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 0.0
+  },
+  {
+   "name": "Martin, Patrick Stephen",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 28855.2
+  },
+  {
+   "name": "Zuchowski, Austin Ray",
+   "party": "Libertarian",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 0.0
+  },
+  {
+   "name": "Tighe, Jerry Albert",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 745.04
+  },
+  {
+   "name": "Schneider, Benjamin J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rogers, Brett David",
+   "party": "Libertarian",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 2941.08
+  },
+  {
+   "name": "Oliver, Jack",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 3798.96
+  },
+  {
+   "name": "Mandt, John F. Jr.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 20770.0
+  },
+  {
+   "name": "Anderson, Bill",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 29400.0
+  },
+  {
+   "name": "Davis, Steve",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 4400.0
+  },
+  {
+   "name": "Marcum, Justin J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 0.0
+  },
+  {
+   "name": "White, Phyllis M",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 9450.0
+  },
+  {
+   "name": "Moore, Clayton Derrick",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 200.0
+  },
+  {
+   "name": "Frankenberry, Barbara McDonald",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "64",
+   "contributions": 14415.18
+  },
+  {
+   "name": "Combs, Thomas Christopher",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 9702.0
+  },
+  {
+   "name": "Pritt, Christopher Todd",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 27101.29
+  },
+  {
+   "name": "Rodighiero, Ralph M",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 15555.0
+  },
+  {
+   "name": "Holland, Joyce W.",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 4222.0
+  },
+  {
+   "name": "Leach, J Morgan Esq.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 17350.0
+  },
+  {
+   "name": "Leach, James R. Esq.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 29550.61
+  },
+  {
+   "name": "Swisher, Daniel Scott",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "67",
+   "contributions": 100.0
+  },
+  {
+   "name": "Toodle, Cynthia D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "62",
+   "contributions": 945.0
+  },
+  {
+   "name": "Karnes, Elijah",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 630.8
+  },
+  {
+   "name": "Hill, Robert Danny",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 42700.0
+  },
+  {
+   "name": "Howes, George",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 1560.0
+  },
+  {
+   "name": "Davis, Grace Ann",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 0.0
+  },
+  {
+   "name": "Watson, Eugene Lacy III",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 0.0
+  },
+  {
+   "name": "McCumbee, Kent \"Brooks\" A.",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "58",
+   "contributions": 249.42
+  },
+  {
+   "name": "Guthrie, Buddy A.",
+   "party": "Libertarian",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 150.0
+  },
+  {
+   "name": "Ferrell, Dana J.",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 3900.0
+  },
+  {
+   "name": "Hyman, William Joseph",
+   "party": "Libertarian",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 1397.77
+  },
+  {
+   "name": "Johnson, Jesse",
+   "party": "Mountain",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 0.0
+  },
+  {
+   "name": "Riley, Clay",
+   "party": "No Affiliation",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 20450.0
+  },
+  {
+   "name": "Bertram, Harry",
+   "party": "No Affiliation",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 2255.44
+  },
+  {
+   "name": "Duncan, Sarah Elizabeth",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 16894.2
+  },
+  {
+   "name": "Metz, Aaron",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 0.0
+  },
+  {
+   "name": "Knotts, Gary",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 8550.0
+  },
+  {
+   "name": "White, Karen Denise",
+   "party": "Mountain",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 100.0
+  },
+  {
+   "name": "Eldridge, Jeff",
+   "party": "No Affiliation",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 650.0
+  },
+  {
+   "name": "Uhlly, Rebecca",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 1040.0
+  },
+  {
+   "name": "Vanover, Edwin Ray",
+   "party": "Write-In",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 0.0
+  },
+  {
+   "name": "Davidson, James E II",
+   "party": "Write-In",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 0.0
+  },
+  {
+   "name": "Brady, Elizabeth C",
+   "party": "Write-In",
+   "chamber": "house",
+   "district": "57",
+   "contributions": 771.19
+  },
+  {
+   "name": "Beaver, J. Scott",
+   "party": "Independent",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 0.0
+  },
+  {
+   "name": "Azinger, Thomas Albert",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 8100.0
+  },
+  {
+   "name": "Johnson, Bill",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 0.0
+  },
+  {
+   "name": "von Hagel, Charles David",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 0.0
+  }
+ ]
+}

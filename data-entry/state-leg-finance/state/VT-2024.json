@@ -1,0 +1,2060 @@
+{
+ "state": "VT",
+ "cycle": 2024,
+ "source": "Vermont Secretary of State campaign finance (total raised)",
+ "dataThrough": "12/31/2024",
+ "house": {
+  "Chittenden-17": [
+   {
+    "name": "ALOISI, MISSA",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 12975.45,
+    "expenditures": 12343.81
+   },
+   {
+    "name": "DUKE, ABBEY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15034.73,
+    "expenditures": 14366.2
+   }
+  ],
+  "Chittenden-25": [
+   {
+    "name": "ANDREWS, JULIA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6710.37,
+    "expenditures": 5007
+   },
+   {
+    "name": "STEADY, BRENDA K",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5819.22,
+    "expenditures": 4601.61
+   }
+  ],
+  "Chittenden-2": [
+   {
+    "name": "ARSENAULT, ANGELA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1885,
+    "expenditures": 2383.34
+   },
+   {
+    "name": "BRADY, ERIN MCGUIRE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1075,
+    "expenditures": 2333.64
+   }
+  ],
+  "Chittenden-19": [
+   {
+    "name": "AUSTIN, SARITA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4833,
+    "expenditures": 3188.16
+   },
+   {
+    "name": "CRITCHLOW, WENDY ADAMS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 500,
+    "expenditures": 913.28
+   },
+   {
+    "name": "GAZO, LELAND A",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18010,
+    "expenditures": 12144.19
+   }
+  ],
+  "Lamoille-2": [
+   {
+    "name": "BAILEY, RICHARD",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2925,
+    "expenditures": 1622.58
+   },
+   {
+    "name": "NOYES, DANIEL",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2559,
+    "expenditures": 730.21
+   },
+   {
+    "name": "RYAN, JIM",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2360,
+    "expenditures": 1618.65
+   },
+   {
+    "name": "TEALE, MALCOLM",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1150,
+    "expenditures": 1531.38
+   }
+  ],
+  "Addison-3": [
+   {
+    "name": "BAKER, JOSEPH",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2065,
+    "expenditures": 2652.29
+   },
+   {
+    "name": "BIRONG, MATTHEW",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4245,
+    "expenditures": 4212.03
+   },
+   {
+    "name": "LANPHER, DIANE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4860,
+    "expenditures": 4893.78
+   },
+   {
+    "name": "NORTH, ROB",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7438.06,
+    "expenditures": 7288.26
+   }
+  ],
+  "Windham-6": [
+   {
+    "name": "BAKER, PAM",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1773.22,
+    "expenditures": 1745.16
+   },
+   {
+    "name": "CARRIS DUNCAN, EMILY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4140,
+    "expenditures": 2313.28
+   }
+  ],
+  "Windsor-1": [
+   {
+    "name": "BARTHOLOMEW, JOHN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 400,
+    "expenditures": 575.34
+   },
+   {
+    "name": "BURROWS, ELIZABETH CORNELL",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 0
+   }
+  ],
+  "Franklin-1": [
+   {
+    "name": "BARTLEY, ASHLEY R",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 2421,
+    "expenditures": 2536.45
+   },
+   {
+    "name": "BRANAGAN, CAROLYN",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 1600,
+    "expenditures": 1875.55
+   }
+  ],
+  "Washington-Orange": [
+   {
+    "name": "BATTAH, MELISSA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2747,
+    "expenditures": 2568.34
+   },
+   {
+    "name": "GALFETTI, GINA",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5607.14,
+    "expenditures": 5082.25
+   },
+   {
+    "name": "MCFAUN, FRANCIS \"TOPPER\"",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 5074.31,
+    "expenditures": 3953.73
+   }
+  ],
+  "Chittenden-21": [
+   {
+    "name": "BERBECO, DAISY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 970,
+    "expenditures": 282
+   },
+   {
+    "name": "TOMLINSON, CHLOE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6947.5,
+    "expenditures": 5861.39
+   }
+  ],
+  "Chittenden-20": [
+   {
+    "name": "BISHOP, DOUGLAS K.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13340,
+    "expenditures": 12330.06
+   },
+   {
+    "name": "CROPP, JOSHUA",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "PEZZO, GAYLE SUSAN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7155,
+    "expenditures": 7313.76
+   },
+   {
+    "name": "WOOD, DOUG W",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7530,
+    "expenditures": 5469.41
+   }
+  ],
+  "Chittenden-24": [
+   {
+    "name": "BLACK, ALYSSA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3399,
+    "expenditures": 768.03
+   },
+   {
+    "name": "LAWRENCE, RONALD W",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   }
+  ],
+  "Windsor-Orange-2": [
+   {
+    "name": "BLAKEMAN, KEVIN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "FLANDERS, LISA",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2350,
+    "expenditures": 1278.37
+   },
+   {
+    "name": "HOLCOMBE, REBECCA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1376.34,
+    "expenditures": 811.58
+   },
+   {
+    "name": "MASLAND, JIM",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 550,
+    "expenditures": 1631.58
+   }
+  ],
+  "Chittenden-13": [
+   {
+    "name": "BLUEMLE, TIFFANY W",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 12154.62,
+    "expenditures": 9878.88
+   },
+   {
+    "name": "KLEPPNER, BRAM",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14548,
+    "expenditures": 10540.13
+   }
+  ],
+  "Caledonia-3": [
+   {
+    "name": "BOLAND, EILEEN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5153.34,
+    "expenditures": 5406.23
+   },
+   {
+    "name": "FELTUS, MARTHA \"MARTY\"",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 2535.64,
+    "expenditures": 2132.8
+   },
+   {
+    "name": "LABOUNTY, DENNIS R",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4310,
+    "expenditures": 5844.79
+   },
+   {
+    "name": "QUIMBY, BETH MARIE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3410,
+    "expenditures": 3634.7
+   }
+  ],
+  "Chittenden-Franklin": [
+   {
+    "name": "BONGES III, HENRY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "MICKLUS, ANTHONY WAYNE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9446.06,
+    "expenditures": 9180.62
+   },
+   {
+    "name": "POLAND, LONNIE LEA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12526.95,
+    "expenditures": 11845.91
+   },
+   {
+    "name": "TAYLOR, CHRISTOPHER ADAM",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 14136.05,
+    "expenditures": 10554.06
+   }
+  ],
+  "Windham-3": [
+   {
+    "name": "BOS-LUN, MICHELLE CHRISTINE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8262.34,
+    "expenditures": 7544.72
+   },
+   {
+    "name": "COTA, CASEY K.",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 6237.25,
+    "expenditures": 4764.73
+   },
+   {
+    "name": "GOLDMAN, LESLIE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4564,
+    "expenditures": 4229.87
+   }
+  ],
+  "Rutland-2": [
+   {
+    "name": "BOSCH, DAVID A.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 8441.52,
+    "expenditures": 7884.5
+   },
+   {
+    "name": "POTTER, DAVE EARLE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4263.66,
+    "expenditures": 4374.54
+   }
+  ],
+  "Washington-3": [
+   {
+    "name": "BOUTIN, MICHAEL ALLEN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11375.44,
+    "expenditures": 10406.01
+   },
+   {
+    "name": "DAWES, CAROL",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 9720,
+    "expenditures": 8970
+   },
+   {
+    "name": "WASZAZAK, EDWARD \"TEDDY\" (TEDDY)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9966,
+    "expenditures": 8554.72
+   },
+   {
+    "name": "WILLIAMS, JONATHAN LISLE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6325.88,
+    "expenditures": 6042.06
+   }
+  ],
+  "Lamoille-3": [
+   {
+    "name": "BOYDEN, LUCY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2276,
+    "expenditures": 1949.01
+   },
+   {
+    "name": "SCIORTINO, PAUL",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2295,
+    "expenditures": 2037.85
+   }
+  ],
+  "Chittenden-1": [
+   {
+    "name": "BROWN, JANA MICHELLE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 825,
+    "expenditures": 769.92
+   }
+  ],
+  "Windham-8": [
+   {
+    "name": "BURKE, MOLLIE SULLIVAN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 323.39,
+    "expenditures": 944.08
+   },
+   {
+    "name": "HARVEY, WILLIAM",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   }
+  ],
+  "Chittenden-8": [
+   {
+    "name": "BURKHARDT, BRIDGET MARIE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1995,
+    "expenditures": 1475.35
+   }
+  ],
+  "Lamoille-Washington": [
+   {
+    "name": "BURNHAM, CHARLES DAVIS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2740,
+    "expenditures": 2740
+   },
+   {
+    "name": "LAMONT, SAUDIA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7581.11,
+    "expenditures": 6209.12
+   },
+   {
+    "name": "LOPEZ, NICK ANTHONY",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2862.5,
+    "expenditures": 999.69
+   },
+   {
+    "name": "YACOVONE, DAVID WARREN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6285,
+    "expenditures": 3769.24
+   }
+  ],
+  "Washington-2": [
+   {
+    "name": "BURNS, JOHN",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 2191.76
+   },
+   {
+    "name": "TORRE, DARA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4644,
+    "expenditures": 5858.73
+   },
+   {
+    "name": "WHITE, CANDICE E",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8530,
+    "expenditures": 6783.46
+   }
+  ],
+  "Caledonia-Washington": [
+   {
+    "name": "BURTT, GREG",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11103.24,
+    "expenditures": 11032.08
+   },
+   {
+    "name": "ZIOBROWSKI, THOMAS FRANK",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7970,
+    "expenditures": 5799.55
+   }
+  ],
+  "Bennington-1": [
+   {
+    "name": "BUSA, BRUCE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "COOPER, JONATHAN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7592.34,
+    "expenditures": 3355.3
+   }
+  ],
+  "Caledonia-Essex": [
+   {
+    "name": "CAMPBELL, SCOTT",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5785.96,
+    "expenditures": 6274.09
+   },
+   {
+    "name": "DOLGIN, DEBORAH CORDZ",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9664.89,
+    "expenditures": 5793.94
+   },
+   {
+    "name": "EMPSALL, FRANK",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 300,
+    "expenditures": 1213
+   }
+  ],
+  "Rutland-10": [
+   {
+    "name": "CANFIELD, WILLIAM PAUL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1310,
+    "expenditures": 100
+   }
+  ],
+  "Bennington-5": [
+   {
+    "name": "CARROLL, JAMES THOMAS",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "MORRISSEY, MARY ANN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "NIGRO, MICHAEL",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1518.23,
+    "expenditures": 1518.23
+   }
+  ],
+  "Washington-4": [
+   {
+    "name": "CASEY, CONOR OWEN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 250,
+    "expenditures": 0
+   },
+   {
+    "name": "MCCANN, KATHERINE ANNE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 555,
+    "expenditures": 56.4
+   }
+  ],
+  "Addison-Rutland": [
+   {
+    "name": "CASEY, JIM",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1500,
+    "expenditures": 981.81
+   }
+  ],
+  "Washington-5": [
+   {
+    "name": "CHAPIN, ELA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3148.77,
+    "expenditures": 3036.33
+   }
+  ],
+  "Windsor-Windham": [
+   {
+    "name": "CHARLTON, THOMAS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 8642,
+    "expenditures": 8503.73
+   },
+   {
+    "name": "CHASE, HEATHER C",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 9894.65,
+    "expenditures": 11951.42
+   }
+  ],
+  "Rutland-Bennington": [
+   {
+    "name": "CHESNUT-TANGERMAN, ROBIN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11045.28,
+    "expenditures": 11448.56
+   },
+   {
+    "name": "PRITCHARD, CHRIS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9355,
+    "expenditures": 5353.96
+   }
+  ],
+  "Windsor-6": [
+   {
+    "name": "CHRISTIE, KEVIN COACH",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "COLE, ESME",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 160,
+    "expenditures": 140
+   }
+  ],
+  "Chittenden-15": [
+   {
+    "name": "CINA, BRIAN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0.82,
+    "expenditures": 33.9
+   },
+   {
+    "name": "HEADRICK, TROY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 175.41,
+    "expenditures": 1757.9
+   }
+  ],
+  "Windsor-2": [
+   {
+    "name": "COFFIN, VORANUS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3220,
+    "expenditures": 3723.46
+   },
+   {
+    "name": "YUENGLING, MARK DARREN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4758,
+    "expenditures": 4397.33
+   }
+  ],
+  "Addison-2": [
+   {
+    "name": "CONLON, PETER",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "STONE, CHRISTINE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2970,
+    "expenditures": 4987.3
+   }
+  ],
+  "Bennington-2": [
+   {
+    "name": "COOK, ANTHONY ALAN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1171.45,
+    "expenditures": 1243.95
+   },
+   {
+    "name": "GREER, WILLIAM G",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3008,
+    "expenditures": 3982.38
+   }
+  ],
+  "Addison-4": [
+   {
+    "name": "CORDES, MARI",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "HILL, CHANIN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2065,
+    "expenditures": 4190.5
+   },
+   {
+    "name": "MCGUINNESS, RENEE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6005.19,
+    "expenditures": 5309.99
+   },
+   {
+    "name": "OLSON, HERB",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12132.25,
+    "expenditures": 12375.2
+   }
+  ],
+  "Orleans-4": [
+   {
+    "name": "DANIELS, ANTHONY PAUL",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3675,
+    "expenditures": 3622.93
+   },
+   {
+    "name": "HARPLE, LEANNE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13192.25,
+    "expenditures": 12580.13
+   }
+  ],
+  "Franklin-7": [
+   {
+    "name": "DEMAR, ALLEN R",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3024,
+    "expenditures": 1136.95
+   },
+   {
+    "name": "MOORE, HEATHER M",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6893,
+    "expenditures": 5913.64
+   }
+  ],
+  "Orange-1": [
+   {
+    "name": "DEMROW, CARL",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 9581.56,
+    "expenditures": 10350.57
+   },
+   {
+    "name": "TAGLIAVIA, MICHAEL",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6611.19,
+    "expenditures": 5097.54
+   }
+  ],
+  "Franklin-2": [
+   {
+    "name": "DICKINSON, EILEEN",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 653.52,
+    "expenditures": 0
+   }
+  ],
+  "Orange-3": [
+   {
+    "name": "DOBROVICH, JOSHUA",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 62.86,
+    "expenditures": 0
+   }
+  ],
+  "Chittenden-23": [
+   {
+    "name": "DODGE, LEONORA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4065,
+    "expenditures": 4258.76
+   },
+   {
+    "name": "GAROFANO, GOLRANG",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4759.11,
+    "expenditures": 4296.3
+   },
+   {
+    "name": "SMITH, LYNN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3958.83,
+    "expenditures": 3446.71
+   }
+  ],
+  "Chittenden-22": [
+   {
+    "name": "DOLAN, KAREN NICOLE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1504.5,
+    "expenditures": 1130.74
+   },
+   {
+    "name": "HOUGHTON, LORI",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1332.5,
+    "expenditures": 1071.78
+   }
+  ],
+  "Washington-1": [
+   {
+    "name": "DONAHUE, ANNE B",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 1195,
+    "expenditures": 1420.5
+   },
+   {
+    "name": "GOSLANT, KENNETH W",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6910,
+    "expenditures": 4240.17
+   },
+   {
+    "name": "HERRING, LUCAS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "RAPACZ, DAVID",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3015.66,
+    "expenditures": 2534.01
+   }
+  ],
+  "Bennington-3": [
+   {
+    "name": "DURFEE, DAVID K.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 667.74,
+    "expenditures": 699.46
+   }
+  ],
+  "Windham-1": [
+   {
+    "name": "EASTES, ZON",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20841.74,
+    "expenditures": 14883.83
+   },
+   {
+    "name": "GASSETT, NANCY L",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2781,
+    "expenditures": 2781
+   }
+  ],
+  "Windsor-3": [
+   {
+    "name": "EMMONS, ALICE MARIE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1213.65,
+    "expenditures": 1097.91
+   },
+   {
+    "name": "MORRIS, KRISTI C",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1912.98,
+    "expenditures": 1259.73
+   }
+  ],
+  "Caledonia-1": [
+   {
+    "name": "FARLICE-RUBIO, BOBBY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5855.34,
+    "expenditures": 5646.28
+   },
+   {
+    "name": "POWERS, DEBRA LYNN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9351.19,
+    "expenditures": 8094.42
+   }
+  ],
+  "Windham-9": [
+   {
+    "name": "GOODNOW, IAN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5886.76,
+    "expenditures": 5133.53
+   }
+  ],
+  "Chittenden-3": [
+   {
+    "name": "GRANING, EDYE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1957,
+    "expenditures": 546.61
+   },
+   {
+    "name": "SQUIRRELL, TREVOR",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 200,
+    "expenditures": 0
+   }
+  ],
+  "Franklin-6": [
+   {
+    "name": "GREGOIRE, JAMES",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 3495,
+    "expenditures": 100
+   }
+  ],
+  "Washington-Chittenden": [
+   {
+    "name": "GRIFFIN, JONATHAN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 8885,
+    "expenditures": 5474.32
+   },
+   {
+    "name": "HADDAD, JAMES ROBERT",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 978.35,
+    "expenditures": 1027.55
+   },
+   {
+    "name": "STEVENS, THOMAS",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16139.51,
+    "expenditures": 15691.4
+   },
+   {
+    "name": "WOOD, THERESA A. M.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 12790,
+    "expenditures": 4071.76
+   }
+  ],
+  "Franklin-5": [
+   {
+    "name": "HANGO, LISA A",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 700,
+    "expenditures": 1000
+   }
+  ],
+  "Rutland-11": [
+   {
+    "name": "HARRISON, JAMES",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 2820,
+    "expenditures": 2925.06
+   }
+  ],
+  "Orleans-Lamoille": [
+   {
+    "name": "HIGLEY, MARK ALFRED",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1060,
+    "expenditures": 200
+   },
+   {
+    "name": "MARCOTTE, MICHAEL J",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1350,
+    "expenditures": 2000
+   }
+  ],
+  "Chittenden-18": [
+   {
+    "name": "HOOPER, ROBERT JEFFERY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 400.78,
+    "expenditures": 279.9
+   },
+   {
+    "name": "ODE, CAROL",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 160,
+    "expenditures": 543.5
+   }
+  ],
+  "Rutland-6": [
+   {
+    "name": "HOWARD, MARY ELENA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3732.08,
+    "expenditures": 4496.28
+   },
+   {
+    "name": "LASKEVICH, CYNTHIA R",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2150,
+    "expenditures": 0
+   }
+  ],
+  "Rutland-4": [
+   {
+    "name": "HOWLAND, CHRISTOPHER KING",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7273.09,
+    "expenditures": 7140.84
+   },
+   {
+    "name": "TADIO, ANNA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3010,
+    "expenditures": 1525.89
+   }
+  ],
+  "Bennington-4": [
+   {
+    "name": "HUNTER, ROBERT ALAN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2675,
+    "expenditures": 2903.4
+   },
+   {
+    "name": "JAMES, KATHLEEN COLLIER",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 11055,
+    "expenditures": 10653.95
+   }
+  ],
+  "Rutland-9": [
+   {
+    "name": "JEROME, STEPHANIE ZAK",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5651.8,
+    "expenditures": 7732.92
+   },
+   {
+    "name": "NIELSEN, TODD",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6747,
+    "expenditures": 5443.67
+   }
+  ],
+  "Essex-Caledonia": [
+   {
+    "name": "KASCENSKA, JOHN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2210,
+    "expenditures": 2911.23
+   }
+  ],
+  "Rutland-7": [
+   {
+    "name": "KEYSER, CHRISTOPHER",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9450,
+    "expenditures": 9660.25
+   },
+   {
+    "name": "NOTTE, WILLIAM JOSEPH",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2982.33,
+    "expenditures": 17.33
+   }
+  ],
+  "Windsor-5": [
+   {
+    "name": "KIMBELL, CHARLES A",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3120,
+    "expenditures": 659.56
+   }
+  ],
+  "Windham-7": [
+   {
+    "name": "KORNHEISER, EMILIE KATHERINE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 34629,
+    "expenditures": 22784.08
+   },
+   {
+    "name": "MURRAY, SUSAN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 350,
+    "expenditures": 325
+   }
+  ],
+  "Chittenden-9": [
+   {
+    "name": "KRASNOW, EMILIE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 8994.23,
+    "expenditures": 6300.86
+   }
+  ],
+  "Chittenden-16": [
+   {
+    "name": "KROWINSKI, JILL",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4170,
+    "expenditures": 2645.8
+   }
+  ],
+  "Essex-Orleans": [
+   {
+    "name": "LABOR, LARRY LEE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 701.87,
+    "expenditures": 1197.28
+   }
+  ],
+  "Chittenden-12": [
+   {
+    "name": "LALONDE, MARTIN JAMES",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 522,
+    "expenditures": 280.01
+   }
+  ],
+  "Grand Isle-Chittenden": [
+   {
+    "name": "LEAVITT, JOSIE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16470.78,
+    "expenditures": 14228.14
+   },
+   {
+    "name": "MORGAN, LELAND",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 16620,
+    "expenditures": 15418.65
+   },
+   {
+    "name": "MORGAN, MICHAEL RONALD",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 18070,
+    "expenditures": 14621.15
+   },
+   {
+    "name": "RICHTER, LUKE WILLIAM",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   }
+  ],
+  "Lamoille-1": [
+   {
+    "name": "LIPSKY, JED",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 4130,
+    "expenditures": 4.3
+   }
+  ],
+  "Franklin-3": [
+   {
+    "name": "LUNEAU, JOSEPH D",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 24919.02,
+    "expenditures": 26849.17
+   },
+   {
+    "name": "MCCARTHY, MIKE D",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 12054,
+    "expenditures": 12015.15
+   }
+  ],
+  "Rutland-5": [
+   {
+    "name": "MAGUIRE, ERIC M",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 750,
+    "expenditures": 0
+   }
+  ],
+  "Rutland-8": [
+   {
+    "name": "MALAY, ALICIA LYNNE",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 671.59,
+    "expenditures": 500.85
+   }
+  ],
+  "Chittenden-6": [
+   {
+    "name": "MAYFIELD, DEB",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2280.67,
+    "expenditures": 77.08
+   }
+  ],
+  "Rutland-1": [
+   {
+    "name": "MCCOY, PATRICIA ANN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 950,
+    "expenditures": 700
+   }
+  ],
+  "Orange-Caledonia": [
+   {
+    "name": "MERRIAM, JAMES P.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1119.27,
+    "expenditures": 1028.85
+   },
+   {
+    "name": "PARSONS, JOSEPH",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1200,
+    "expenditures": 1025.96
+   }
+  ],
+  "Washington-6": [
+   {
+    "name": "MIHALY, MARC BRAMER",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 465,
+    "expenditures": 2.58
+   }
+  ],
+  "Chittenden-11": [
+   {
+    "name": "MINIER, BRIAN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 522,
+    "expenditures": 0
+   }
+  ],
+  "Caledonia-2": [
+   {
+    "name": "MORRISON, SABRINA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2435,
+    "expenditures": 2680.55
+   },
+   {
+    "name": "SOUTHWORTH, MICHAEL JAMES",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3285.64,
+    "expenditures": 2935
+   }
+  ],
+  "Windham-Windsor-Bennington": [
+   {
+    "name": "MORROW, CHRISTOPHER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10540,
+    "expenditures": 10038.14
+   },
+   {
+    "name": "PAYNE, JANET",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2185,
+    "expenditures": 1300.85
+   }
+  ],
+  "Windham-4": [
+   {
+    "name": "MROWICKI, MIKE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3040.2,
+    "expenditures": 2551.19
+   },
+   {
+    "name": "WILKINS, LYNNE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 793.13,
+    "expenditures": 1047.88
+   }
+  ],
+  "Orleans-1": [
+   {
+    "name": "NELSON, RICHARD M",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 825,
+    "expenditures": 678.4
+   }
+  ],
+  "Chittenden-10": [
+   {
+    "name": "NUGENT, KATE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 365,
+    "expenditures": 666
+   }
+  ],
+  "Windsor-Orange-1": [
+   {
+    "name": "O'BRIEN, JOHN KENNETH",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 300,
+    "expenditures": 338.7
+   },
+   {
+    "name": "POST, BRUCE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2907.15,
+    "expenditures": 482.37
+   }
+  ],
+  "Franklin-4": [
+   {
+    "name": "OLIVER, THOMAS",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "WALKER, MATTHEW EDWIN",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 0
+   }
+  ],
+  "Orleans-2": [
+   {
+    "name": "PAGE, WOODMAN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 3
+   }
+  ],
+  "Bennington-Rutland": [
+   {
+    "name": "PINSONAULT, SANDRA",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15837,
+    "expenditures": 11517.3
+   },
+   {
+    "name": "RICE, MIKE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 26069,
+    "expenditures": 23638.67
+   }
+  ],
+  "Chittenden-4": [
+   {
+    "name": "POUECH, PHIL RAYMOND",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 0
+   }
+  ],
+  "Orange-2": [
+   {
+    "name": "PRIESTLEY, MONIQUE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3195,
+    "expenditures": 1246.85
+   }
+  ],
+  "Chittenden-14": [
+   {
+    "name": "RACHELSON, BARBARA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 404.45,
+    "expenditures": 1548.21
+   },
+   {
+    "name": "STONE, MARY-KATHERINE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3155,
+    "expenditures": 1236.67
+   }
+  ],
+  "Rutland-Windsor": [
+   {
+    "name": "RAYMOND, ADRIENNE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3690,
+    "expenditures": 2449.98
+   },
+   {
+    "name": "WINTER, KEVIN C",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 8380,
+    "expenditures": 5420.19
+   }
+  ],
+  "Orange-Washington-Addison": [
+   {
+    "name": "SATCOWITZ, LAWRENCE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1850,
+    "expenditures": 1794.7
+   },
+   {
+    "name": "SIKORA, KENNETH ROB",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2781.44,
+    "expenditures": 2066.69
+   },
+   {
+    "name": "TOWNSEND, WAYNE D",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1933.59,
+    "expenditures": 1214.83
+   }
+  ],
+  "Franklin-8": [
+   {
+    "name": "SCHEFFLER, ZACH",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8983,
+    "expenditures": 6752.41
+   },
+   {
+    "name": "TOOF, CASEY JOSEPH",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3040,
+    "expenditures": 262
+   }
+  ],
+  "Addison-1": [
+   {
+    "name": "SCHEU, ROBIN P",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1370.75,
+    "expenditures": 1062.49
+   },
+   {
+    "name": "SHELDON, AMY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 550,
+    "expenditures": 395.75
+   }
+  ],
+  "Windham-2": [
+   {
+    "name": "SIBILIA, LAURA",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 10931.65,
+    "expenditures": 5662.31
+   }
+  ],
+  "Windsor-4": [
+   {
+    "name": "SURPRENANT, HEATHER",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 0
+   }
+  ],
+  "Chittenden-7": [
+   {
+    "name": "SWEENEY, SHAWN J",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10946.29,
+    "expenditures": 9494.06
+   }
+  ],
+  "Chittenden-5": [
+   {
+    "name": "WATERS EVANS, CHEA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   }
+  ],
+  "Orleans-3": [
+   {
+    "name": "WELLS, KENNETH LANCE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2373.5,
+    "expenditures": 2314.25
+   }
+  ],
+  "Windsor-Addison": [
+   {
+    "name": "WHITE, KIRK",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2085,
+    "expenditures": 999.59
+   }
+  ]
+ },
+ "senate": {
+  "Chittenden Central": [
+   {
+    "name": "BARUTH, PHILIP EDWARD",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 17025,
+    "expenditures": 16990.61
+   },
+   {
+    "name": "GULICK, MARTINE LAROCQUE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 24531,
+    "expenditures": 24290.67
+   },
+   {
+    "name": "VYHOVSKY, TANYA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 23853.7,
+    "expenditures": 16837.72
+   }
+  ],
+  "Caledonia": [
+   {
+    "name": "BECK, SCOTT LAWRENCE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 65282.43,
+    "expenditures": 64094.26
+   },
+   {
+    "name": "COCHRANE, AMANDA ELIZABETH",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 43554.27,
+    "expenditures": 41258.59
+   }
+  ],
+  "Bennington": [
+   {
+    "name": "BONGARTZ, SETH",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 29590.75,
+    "expenditures": 29586.82
+   },
+   {
+    "name": "BROWNING, CYNTHIA MADELEINE",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 4672,
+    "expenditures": 2676.83
+   },
+   {
+    "name": "GERVAIS, JOSEPH LOUIS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 27259.92,
+    "expenditures": 27259.92
+   },
+   {
+    "name": "PLUNKETT, ROBERT FRANCIS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 18929,
+    "expenditures": 18913.17
+   },
+   {
+    "name": "WHITMIRE, LAWRENCE SPIKE",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 12702.49,
+    "expenditures": 12683.12
+   }
+  ],
+  "Addison": [
+   {
+    "name": "BRAY, CHRISTOPHER A",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 42608,
+    "expenditures": 47836.66
+   },
+   {
+    "name": "COCHRAN, LANDEL JAMES",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 17395.54,
+    "expenditures": 22601.42
+   },
+   {
+    "name": "HARDY, RUTH",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 22749,
+    "expenditures": 23948.98
+   },
+   {
+    "name": "HEFFERNAN, STEVEN P",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 50427.37,
+    "expenditures": 50241.24
+   }
+  ],
+  "Grand Isle": [
+   {
+    "name": "BRENNAN, PATRICK MICHAEL",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 77087.06,
+    "expenditures": 81591.72
+   },
+   {
+    "name": "JULOW, ANDY JOSEPH",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 55040.06,
+    "expenditures": 58527.55
+   }
+  ],
+  "Franklin": [
+   {
+    "name": "BROCK, RANDY",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 6590,
+    "expenditures": 7303.99
+   },
+   {
+    "name": "NORRIS, ROBERT WAYNE",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 2850,
+    "expenditures": 2393.43
+   }
+  ],
+  "Rutland": [
+   {
+    "name": "CASSEL, MARSHA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17168.58,
+    "expenditures": 17723.42
+   },
+   {
+    "name": "COLLAMORE, BRIAN PAUL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 7553,
+    "expenditures": 22445.06
+   },
+   {
+    "name": "RICHARDS, ROBERT JOSEPH",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "WEEKS, DAVID HART",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 8900,
+    "expenditures": 10307.57
+   },
+   {
+    "name": "WILLIAMS, TERRY K",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5770,
+    "expenditures": 4430.26
+   }
+  ],
+  "Chittenden South East": [
+   {
+    "name": "CHITTENDEN, THOMAS IRA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 11832.8,
+    "expenditures": 6110.87
+   },
+   {
+    "name": "LYONS, VIRGINIA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3870,
+    "expenditures": 2728.66
+   },
+   {
+    "name": "RAM HINSDALE, KESHA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 28628.46,
+    "expenditures": 26243.52
+   },
+   {
+    "name": "ROY, BRUCE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 22686.37,
+    "expenditures": 21750.2
+   }
+  ],
+  "Windsor": [
+   {
+    "name": "CLARKSON, ALISON",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 22418.33,
+    "expenditures": 27920.82
+   },
+   {
+    "name": "GLEASON, JONATHAN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 800,
+    "expenditures": 3667.15
+   },
+   {
+    "name": "MAJOR, JOE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 18064.41,
+    "expenditures": 17690.17
+   },
+   {
+    "name": "MURRAY, ANDREA",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 41618.85,
+    "expenditures": 41618.85
+   },
+   {
+    "name": "WHITE, REBECCA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 13922.8,
+    "expenditures": 15385.51
+   },
+   {
+    "name": "WILLIAMS, JACK",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1045,
+    "expenditures": 0
+   }
+  ],
+  "Washington": [
+   {
+    "name": "CUMMINGS, ANN E.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5345,
+    "expenditures": 5780.65
+   },
+   {
+    "name": "DEERING II, MICHAEL BRUCE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 528.93,
+    "expenditures": 0
+   },
+   {
+    "name": "KOCH, DONALD TIMOTHY",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 13222.46,
+    "expenditures": 13580.98
+   },
+   {
+    "name": "PERCHLIK, ANDREW",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3101,
+    "expenditures": 3584.76
+   },
+   {
+    "name": "WATSON, ANNE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6199.11,
+    "expenditures": 6213.79
+   }
+  ],
+  "Orleans": [
+   {
+    "name": "DOUGLASS, SAMUEL ADAM",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 41641.18,
+    "expenditures": 27460.18
+   },
+   {
+    "name": "SIMS, KATHERINE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 76212.22,
+    "expenditures": 73734.45
+   }
+  ],
+  "Windham": [
+   {
+    "name": "GASSETT, DALE L",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1132.51,
+    "expenditures": 1132.51
+   },
+   {
+    "name": "HARRISON, WENDY K",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2906.02,
+    "expenditures": 2201.46
+   },
+   {
+    "name": "HASHIM, NADER AHMED",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2374,
+    "expenditures": 1376.54
+   },
+   {
+    "name": "MORTON, RICHARD CHARLES",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 400,
+    "expenditures": 139.7
+   }
+  ],
+  "Orange": [
+   {
+    "name": "HART, LARRY WAYNE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 35357.92,
+    "expenditures": 32782.38
+   },
+   {
+    "name": "MACDONALD, MARK",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 10740.14,
+    "expenditures": 803.36
+   }
+  ],
+  "Lamoille": [
+   {
+    "name": "HECK, MAUREEN ANN",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   }
+  ],
+  "Essex": [
+   {
+    "name": "INGALLS, RUSSELL H",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3130.24,
+    "expenditures": 1220.13
+   }
+  ],
+  "Chittenden North": [
+   {
+    "name": "MATTOS, CHRIS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 45704,
+    "expenditures": 42071.19
+   },
+   {
+    "name": "WRENNER, IRENE AVA",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 23920.33,
+    "expenditures": 19354.56
+   }
+  ]
+ }
+}

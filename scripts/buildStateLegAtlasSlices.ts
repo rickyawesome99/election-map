@@ -9,7 +9,7 @@
  * (the react-server condition because the projection module is server-only)
  * Rerun after any of its inputs change: stateLegDistricts, stateLegDemographics, stateLegPres2024,
  * stateLegPresByEra, stateLegResults, stateLegRedistricting, stateLegHistoricalMaps, stateLegCalendar,
- * stateLegCandidates2026, stateLegOutgoing2026, stateLegFinance.
+ * stateLegCandidates2026, stateLegOutgoing2026, stateLegFinance, and the turnout inputs behind lib/stateLegPopularVote.ts.
  */
 import { mkdirSync, writeFileSync } from "fs";
 import { join } from "path";
@@ -24,6 +24,7 @@ import { stateLegCalendar } from "../data/stateLegCalendar";
 import { stateLegCandidates2026, stateLegCandidates2026Fetched } from "../data/stateLegCandidates2026";
 import { stateLegOutgoing2026 } from "../data/stateLegOutgoing2026";
 import { projectChamber, projectDistrict } from "../lib/stateLegForecast";
+import { projectChamberPopularVote } from "../lib/stateLegPopularVote";
 import { stateLegMoneyHistory } from "../lib/stateLegMoney";
 import { getNationalEnvironment } from "../lib/tplCompute";
 import { compareDistrictKeys, type AtlasChamber, type AtlasDistrict, type AtlasEra, type AtlasPresVote, type AtlasResult } from "../lib/stateLegAtlas";
@@ -54,6 +55,8 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
   const chamberProjection = projectChamber(abbr, chamber);
   // A chamber with nothing on the 2026 ballot has no chamber projection, but every district still
   // gets its lean ledger (contest "not-up") for the district page's lean trend.
+  const popularVote = projectChamberPopularVote(abbr, chamber);
+  const votesByKey = new Map((popularVote?.districts ?? []).filter((d) => d.counted).map((d) => [d.key, { total: Math.round(d.votes), dem: Math.round(d.dem), rep: Math.round(d.rep), oth: Math.round(d.oth) }]));
   const projectionByKey = new Map((chamberProjection?.districts ?? (UNICAMERAL_STATES.has(abbr) && chamber === "house" ? [] : roster.map((d) => projectDistrict(abbr, chamber, d)))).map((d) => [d.key, d]));
 
   // Era list: superseded vintages oldest first, then the current map.
@@ -142,6 +145,7 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
           lean: pr.lean, beta: pr.beta, envPts: pr.envPts, incSign: pr.incSign, incPts: pr.incPts, margin: pr.margin, sigma: pr.sigma, pD: pr.pD,
           rating: pr.rating, contest: pr.contest, seats: pr.seats, guaranteed: pr.guaranteed, contestedSeats: pr.contestedSeats,
           ...(pr.pI != null ? { pI: pr.pI } : {}),
+          ...(votesByKey.has(key) ? { votes: votesByKey.get(key)! } : {}),
           ...(pr.indep ? { indep: { ...pr.indep, personal: +pr.indep.personal.toFixed(2), advantage: +pr.indep.advantage.toFixed(2), record: pr.indep.record.map((r) => ({ ...r, share: +r.share.toFixed(1), advantage: +r.advantage.toFixed(2), expected: +r.expected.toFixed(2), residual: +r.residual.toFixed(2) })) } } : {}),
           rows: pr.rows.map((r) => ({ ...r, raw: +r.raw.toFixed(2), presDelta: +r.presDelta.toFixed(2), incSign: +r.incSign.toFixed(2), incPts: +r.incPts.toFixed(2), envPts: +r.envPts.toFixed(2), NM: +r.NM.toFixed(2), huber: +r.huber.toFixed(3), weight: +r.weight.toFixed(4), coverage: +r.coverage.toFixed(3) })),
         };

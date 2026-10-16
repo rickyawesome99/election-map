@@ -1,24 +1,23 @@
-import { getCandidatePage, type CandidateHistoryEntry } from "@/lib/candidateIndex";
+import type { CandidateHistoryEntry } from "@/lib/candidateIndex";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import { getRatingColors, fmtMargin, marginColor } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";
 import BackLink from "@/components/BackLink";
-import { pastElectionHref } from "@/lib/pastElections";
-import { warForCandidate, type WarSlim } from "@/lib/modelSlices";
+import type { WarSlim } from "@/lib/modelSlices";
 import { WAR_BAD, WAR_GOOD, careerWar } from "@/components/tpl/format";
-import { findStateLegCandidate, getStateLegCandidatePage, type StateLegCandidatePage, type StateLegRace } from "@/lib/stateLegCandidateIndex";
-import { StateLegCurrentRow, StateLegPastRow, type LegProjection, type RaceMoney } from "@/components/candidates/StateLegRaceRow";
-import { stateLegMoney } from "@/lib/stateLegMoney";
-import { personKey, projectDistrict } from "@/lib/stateLegForecast";
-import { fieldPersons } from "@/lib/stateLegAtlas";
-import { stateLegDistricts } from "@/data/stateLegDistricts";
+import type { StateLegRace } from "@/lib/stateLegCandidateIndex";
+import { StateLegCurrentRow, StateLegPastRow } from "@/components/candidates/StateLegRaceRow";
+import { getCandidatePagePayload } from "@/lib/candidatePages";
 
-// ~1,100 federal and ~38,000 state legislative candidate pages: rendered on first request and
+// ~3,500 federal and ~37,000 state legislative candidate pages: rendered on first request and
 // cached until the next deploy rather than prebuilt, the same arrangement as the county pages.
 // A person with both records (a state legislator who ran for Congress) gets one page: the two
-// indexes are joined on name and state, and either index's slug resolves to it.
+// indexes are joined on name and state, and either index's slug resolves to it. The join and
+// every figure on the page are precomputed into data/generated/candidate-pages/ by
+// scripts/buildCandidatePages.ts (lib/candidatePageBuild.ts holds the computation), so this route
+// imports no model and parses one state's shard on its first request.
 export const dynamicParams = true;
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -27,50 +26,14 @@ export async function generateStaticParams() {
   return [];
 }
 
-/** Both records behind one slug, in either order. */
-function resolve(slug: string): { federal: ReturnType<typeof getCandidatePage>; leg: StateLegCandidatePage | null } {
-  const federal = getCandidatePage(slug);
-  let leg = getStateLegCandidatePage(slug);
-  if (federal && !leg) leg = findStateLegCandidate(federal.name, federal.state);
-  let fed = federal;
-  if (leg && !fed) {
-    const f = getCandidatePage(candidateSlugOf(leg.name));
-    if (f && f.state === leg.stateName) fed = f;
-  }
-  return { federal: fed, leg };
-}
-const candidateSlugOf = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { federal, leg } = resolve(slug);
-  if (!federal && !leg) return { title: "Candidate Not Found" };
+  const page = getCandidatePagePayload(slug);
+  if (!page) return { title: "Candidate Not Found" };
+  const { federal, leg } = page;
   const name = federal?.name ?? leg!.name;
   const canonical = federal ? `/candidates/${federal.slug}` : `/candidates/${leg!.slug}`;
   return { title: `${name} — Candidate Profile`, alternates: { canonical } };
-}
-
-/** The candidate's own contributions in a race, and everyone else's, from the state filings. */
-function legMoney(race: StateLegRace, name: string): RaceMoney {
-  const m = stateLegMoney(race.abbr, race.chamber, race.district, race.year);
-  if (!m) return null;
-  const mine = m.candidates.find((c) => c.name === name) ?? m.candidates.find((c) => c.matched && c.party === race.party && race.others.every((o) => o.name !== c.name));
-  if (!mine?.matched) return null;
-  const others = m.candidates.filter((c) => c !== mine && c.matched && c.contributions != null);
-  return { contributions: mine.contributions, opponents: others.length ? others.reduce((s, c) => s + (c.contributions ?? 0), 0) : null, dataThrough: m.dataThrough, source: m.source };
-}
-
-function legProjection(race: StateLegRace, name: string): LegProjection {
-  if (!race.isCurrent) return null;
-  const d = stateLegDistricts[race.abbr]?.[race.chamber]?.find((x) => x.number === race.district);
-  if (!d) return null;
-  const p = projectDistrict(race.abbr, race.chamber, d);
-  const indep = p.indep ? {
-    isMe: personKey(p.indep.name) === personKey(name), name: p.indep.name, opp: (p.indep.slot === "D" ? "R" : "D") as "D" | "R",
-    advantage: p.indep.advantage, pI: p.pI ?? 0, sameElectorate: p.indep.sameElectorate,
-  } : null;
-  const persons = p.candidates2026 ? fieldPersons(p.candidates2026, d.incumbents ?? []).filter((x) => !x.writeIn) : [];
-  return { margin: p.margin, rating: p.rating, pD: p.pD, contest: p.contest, indep, pI: p.pI, guaranteed: p.guaranteed, nominees: { dem: persons.filter((x) => x.party === "D").length, rep: persons.filter((x) => x.party === "R").length } };
 }
 
 function partyLabel(party: "D" | "R" | "I") {
@@ -87,13 +50,6 @@ function partySubtle(party: "D" | "R" | "I") {
   if (party === "R") return "var(--party-rep-subtle)";
   if (party === "I") return "var(--party-ind-subtle)";
   return "var(--party-dem-subtle)";
-}
-
-// A past Senate or Governor row opens that election's own page; everything else opens the seat page.
-function historyHref(entry: CandidateHistoryEntry): string {
-  if (entry.isCurrent || entry.raceType === "president") return entry.racePath;
-  const seatId = entry.racePath.split("/").pop() ?? "";
-  return pastElectionHref(entry.raceType, seatId, entry.year) ?? entry.racePath;
 }
 
 const WAR_OFFICE = { house: "H", senate: "S", governor: "G", president: "P" } as const;
@@ -138,8 +94,9 @@ export default async function CandidatePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const { federal, leg } = resolve(slug);
-  if (!federal && !leg) notFound();
+  const page = getCandidatePagePayload(slug);
+  if (!page) notFound();
+  const { federal, leg } = page;
 
   // The federal record leads the profile where there is one; the state legislative record fills in.
   const legParty: "D" | "R" | "I" = leg?.party === "D" || leg?.party === "R" ? leg.party : "I";
@@ -154,11 +111,11 @@ export default async function CandidatePage({
   const legCurrent = (leg?.races ?? []).filter((r) => r.isCurrent);
   const legPast = (leg?.races ?? []).filter((r) => !r.isCurrent);
   const legPositionHref = leg?.positionHref ?? legCurrent[0]?.href ?? legPast[0]?.href;
-  // The race's own spelling of this person (the finance join is keyed on the atlas's list for that year).
-  const legName = (race: StateLegRace) => {
-    const m = stateLegMoney(race.abbr, race.chamber, race.district, race.year);
-    return m?.candidates.find((c) => leg!.spellings.includes(c.name))?.name ?? leg!.name;
-  };
+  // Precomputed per race, aligned with leg.races (lib/candidatePageBuild.ts).
+  const legRace = (race: StateLegRace) => page.legRaces[leg!.races.indexOf(race)];
+  const legMoney = (race: StateLegRace) => legRace(race)?.money ?? null;
+  // A past Senate or Governor row opens that election's own page; everything else opens the seat page.
+  const historyHref = (entry: CandidateHistoryEntry) => page.historyHrefs[candidate.history.indexOf(entry)] ?? entry.racePath;
 
   const backHref = candidate.currentRace?.racePath ?? (federal ? (candidate.tab === "president" ? "/analysis/popular-vote" : `/${candidate.tab}`) : legPositionHref ?? "/legislatures");
   const raceTypeSuffix = candidate.tab === "house" ? " House" : candidate.tab === "senate" ? " Senate" : candidate.tab === "governor" ? " Governor" : " President";
@@ -182,12 +139,12 @@ export default async function CandidatePage({
 
   // One timeline: federal and state legislative races interleaved, newest first.
   type Item = { year: number; order: number; node: React.ReactNode };
-  const legProjections = new Map(legCurrent.map((r) => [r, legProjection(r, legName(r))]));
+  const legProjections = new Map(legCurrent.map((r) => [r, legRace(r)?.projection ?? null]));
   const hasCurrent = !!candidate.currentRace || legCurrent.length > 0;
   const totalPast = pastEntries.length + legPast.length;
 
   // Wins Above Replacement, the same numbers as the TPL tab's candidate record (/model/candidates).
-  const war = warForCandidate(candidate.name);
+  const war: WarSlim[] = page.war;
   const career = careerWar(war);
   const isPresidential = war.some((r) => r.office === "P");
   const lastWar = war[war.length - 1];
@@ -374,7 +331,7 @@ export default async function CandidatePage({
                       </a>
                     ))}
                     {legCurrent.map((race, i) => (
-                      <StateLegCurrentRow key={`${race.chamber}-${race.district}-${i}`} race={race} projection={legProjections.get(race) ?? null} money={legMoney(race, legName(race))} last={i === legCurrent.length - 1} />
+                      <StateLegCurrentRow key={`${race.chamber}-${race.district}-${i}`} race={race} projection={legProjections.get(race) ?? null} money={legMoney(race)} last={i === legCurrent.length - 1} />
                     ))}
                   </section>
                 );
@@ -397,7 +354,7 @@ export default async function CandidatePage({
                 ) : (
                   ([
                     ...pastEntries.map((entry, i): Item => ({ year: entry.year, order: 0, node: renderFederal(entry, i) })),
-                    ...legPast.map((race, i): Item => ({ year: race.year, order: 1, node: <StateLegPastRow key={`leg-${i}`} race={race} money={legMoney(race, legName(race))} last /> })),
+                    ...legPast.map((race, i): Item => ({ year: race.year, order: 1, node: <StateLegPastRow key={`leg-${i}`} race={race} money={legMoney(race)} last /> })),
                   ] as Item[]).sort((a, b) => b.year - a.year || a.order - b.order).map((item, i, all) => (
                     <div key={i} style={{ borderBottom: i < all.length - 1 ? "1px solid var(--app-border)" : "none" }}>{item.node}</div>
                   ))

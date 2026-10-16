@@ -1,0 +1,3465 @@
+{
+ "state": "VT",
+ "cycle": 2026,
+ "source": "Vermont Secretary of State campaign finance (total raised)",
+ "fetched": "2026-10-16",
+ "dataThrough": "10/16/2026",
+ "candidates": [
+  {
+   "name": "ALBERT, JEANNE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Lincoln",
+   "contributions": 6078.0,
+   "expenditures": 3474.6
+  },
+  {
+   "name": "ALLEN-PENNEBAKER, ELIZABETH LOUISE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "ALLEN-PENNEBAKER, ELIZABETH LOUISE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 1566.41,
+   "expenditures": 1449.16
+  },
+  {
+   "name": "ALOISI, MISSA",
+   "party": "Progressive/Democratic",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "ANDREWS, JULIA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Westford",
+   "contributions": 14333.0,
+   "expenditures": 10401.54
+  },
+  {
+   "name": "ANJUM, RUBAINA",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Burlington",
+   "contributions": 1910.0,
+   "expenditures": 704.43
+  },
+  {
+   "name": "ARRISON, JOHN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Weathersfield",
+   "contributions": 0.0,
+   "expenditures": 312.0
+  },
+  {
+   "name": "ARSENAULT, ANGELA",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Williston",
+   "contributions": 1200.0,
+   "expenditures": 784.0
+  },
+  {
+   "name": "AUSTIN, SARITA",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Colchester",
+   "contributions": 4395.0,
+   "expenditures": 3873.96
+  },
+  {
+   "name": "AZARIA, DALE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 0.0,
+   "expenditures": 91.21
+  },
+  {
+   "name": "BACH, ERIC J",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Danville",
+   "contributions": 11303.1,
+   "expenditures": 6591.5
+  },
+  {
+   "name": "BAILEY, RICHARD",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hyde Park",
+   "contributions": 6425.0,
+   "expenditures": 1306.23
+  },
+  {
+   "name": "BAKER, JOSEPH",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Ferrisburgh",
+   "contributions": 5134.0,
+   "expenditures": 4795.68
+  },
+  {
+   "name": "BARTHOLOMEW, JOHN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hartland",
+   "contributions": 0.0,
+   "expenditures": 841.38
+  },
+  {
+   "name": "BARTLEY, ASHLEY R",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Fairfax",
+   "contributions": 3024.0,
+   "expenditures": 1569.71
+  },
+  {
+   "name": "BARTLEY, ASHLEY R",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Fairfax",
+   "contributions": 52593.74,
+   "expenditures": 40273.03
+  },
+  {
+   "name": "BARUTH, PHILIP EDWARD",
+   "party": "Democratic/Progressive",
+   "chamber": "senate",
+   "town": "Burlington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "BATHALON, GASTON",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Troy",
+   "contributions": 6117.55,
+   "expenditures": 2409.1
+  },
+  {
+   "name": "BATTAH, MELISSA",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Barre Town",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "BECK, SCOTT LAWRENCE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Saint Johnsbury",
+   "contributions": 19550.32,
+   "expenditures": 18637.2
+  },
+  {
+   "name": "BECKAGE, PEARL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Town",
+   "contributions": 3283.62,
+   "expenditures": 1868.67
+  },
+  {
+   "name": "BENSON, JOHN",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Brookfield",
+   "contributions": 74394.63,
+   "expenditures": 43049.69
+  },
+  {
+   "name": "BERBECO, DAISY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Winooski",
+   "contributions": 1060.0,
+   "expenditures": 325.16
+  },
+  {
+   "name": "BEZIO, BILL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Colchester",
+   "contributions": 999.7,
+   "expenditures": 734.66
+  },
+  {
+   "name": "BIELAWSKI-BRANCH, AMY ELIZABETH",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 13513.5,
+   "expenditures": 11913.5
+  },
+  {
+   "name": "BIENVENUE, LESLEY J",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Leicester",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "BILLADO, KEITH ANDREW",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Fairfax",
+   "contributions": 4110.0,
+   "expenditures": 3440.98
+  },
+  {
+   "name": "BIRONG, MATTHEW",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Vergennes",
+   "contributions": 0.0,
+   "expenditures": 2156.35
+  },
+  {
+   "name": "BISHOP, DOUGLAS K.",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": null,
+   "contributions": 11490.0,
+   "expenditures": 6451.93
+  },
+  {
+   "name": "BLACK, ALYSSA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Town",
+   "contributions": 3268.1,
+   "expenditures": 4804.05
+  },
+  {
+   "name": "BLAKELY, THOMAS F",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bennington",
+   "contributions": 5422.3,
+   "expenditures": 3709.93
+  },
+  {
+   "name": "BLUEMLE, TIFFANY W",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 3.46,
+   "expenditures": 3160.82
+  },
+  {
+   "name": "BOBELLA, ALEXANDER",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Saint Albans City",
+   "contributions": 15276.57,
+   "expenditures": 7960.4
+  },
+  {
+   "name": "BOERGER, BRENT",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Junction City",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "BOLLES, ARIEL WOOD",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Ferrisburgh",
+   "contributions": 11240.0,
+   "expenditures": 8008.16
+  },
+  {
+   "name": "BONGARTZ, SETH",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Manchester",
+   "contributions": 17612.5,
+   "expenditures": 11069.18
+  },
+  {
+   "name": "BONGES, HENRY A",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Milton",
+   "contributions": 2638.22,
+   "expenditures": 1681.0
+  },
+  {
+   "name": "BOS-LUN, MICHELLE CHRISTINE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Westminster",
+   "contributions": 7606.0,
+   "expenditures": 5988.48
+  },
+  {
+   "name": "BOSCH, DAVID A.",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Clarendon",
+   "contributions": 2520.0,
+   "expenditures": 855.17
+  },
+  {
+   "name": "BOSLEY, BENJAMIN JOHN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 3518.0,
+   "expenditures": 2731.04
+  },
+  {
+   "name": "BOUCHARD, TAMAR",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Swanton",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "BOUTIN, MICHAEL ALLEN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Barre City",
+   "contributions": 14712.68,
+   "expenditures": 5923.89
+  },
+  {
+   "name": "BOYDEN, LUCY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Cambridge",
+   "contributions": 0.0,
+   "expenditures": 577.3
+  },
+  {
+   "name": "BRADLEY, BRANDOLYN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Johnsbury",
+   "contributions": 4534.94,
+   "expenditures": 2573.06
+  },
+  {
+   "name": "BRADY, ERIN MCGUIRE",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Williston",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "BRANAGAN, CAROLYN",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Georgia",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "BRANAGAN, CAROLYN WHITNEY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Georgia",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "BRENNAN, DEVIN G.",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Royalton",
+   "contributions": 773.85,
+   "expenditures": 633.13
+  },
+  {
+   "name": "BRENNAN, PATRICK MICHAEL",
+   "party": "Republican",
+   "chamber": "senate",
+   "town": "Colchester",
+   "contributions": 67192.8,
+   "expenditures": 18245.73
+  },
+  {
+   "name": "BRICKNER, BENJAMIN",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Pomfret",
+   "contributions": 69900.29,
+   "expenditures": 52291.19
+  },
+  {
+   "name": "BRIGHAM, JOHN \"JACK\"",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Albans Town",
+   "contributions": 5100.0,
+   "expenditures": 4100.0
+  },
+  {
+   "name": "BRIGHT, CAROLINE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Georgia",
+   "contributions": 6064.89,
+   "expenditures": 3009.36
+  },
+  {
+   "name": "BROCK, RANDY",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Swanton",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "BROWN, CHRIS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Castleton",
+   "contributions": 1690.0,
+   "expenditures": 1412.68
+  },
+  {
+   "name": "BROWN, JANA MICHELLE",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Richmond",
+   "contributions": 0.0,
+   "expenditures": 488.0
+  },
+  {
+   "name": "BURDITT, THOMAS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "West Rutland",
+   "contributions": 6001.62,
+   "expenditures": 1985.13
+  },
+  {
+   "name": "BURKE, MOLLIE SULLIVAN",
+   "party": "Progressive/Democratic",
+   "chamber": "house",
+   "town": "Brattleboro",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "BURKHARDT, BRIDGET MARIE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "South Burlington",
+   "contributions": 3174.6,
+   "expenditures": 1868.07
+  },
+  {
+   "name": "BURNHAM, SUSANNA GUTHMANN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Morristown",
+   "contributions": 7590.0,
+   "expenditures": 4516.44
+  },
+  {
+   "name": "BURNS, JOHN",
+   "party": "Independent",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "BURROWS, ELIZABETH CORNELL",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "West Windsor",
+   "contributions": 18690.0,
+   "expenditures": 16700.5
+  },
+  {
+   "name": "BURTT, GREG",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Cabot",
+   "contributions": 9385.51,
+   "expenditures": 8354.4
+  },
+  {
+   "name": "BYKER, TANYA S",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Cornwall",
+   "contributions": 10508.1,
+   "expenditures": 4877.67
+  },
+  {
+   "name": "CAMPBELL, SCOTT",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Johnsbury",
+   "contributions": 0.0,
+   "expenditures": 437.04
+  },
+  {
+   "name": "CAMPION, BRIAN",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Bennington",
+   "contributions": 0.0,
+   "expenditures": 1500.0
+  },
+  {
+   "name": "CANFIELD, WILLIAM PAUL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Fair Haven",
+   "contributions": 2535.0,
+   "expenditures": 1950.74
+  },
+  {
+   "name": "CANNON, LISA MAUREEN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "CARRIS DUNCAN, EMILY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Whitingham",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "CASEY, CONOR OWEN",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Montpelier",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "CASEY, JIM",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hubbardton",
+   "contributions": 5040.0,
+   "expenditures": 1857.4
+  },
+  {
+   "name": "CASHEN, NATALIE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Milton",
+   "contributions": 3956.55,
+   "expenditures": 1698.73
+  },
+  {
+   "name": "CASSEL, MARSHA",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Rutland Town",
+   "contributions": 0.0,
+   "expenditures": 2566.09
+  },
+  {
+   "name": "CASSEL, MARSHA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Rutland Town",
+   "contributions": 2578.57,
+   "expenditures": 0.0
+  },
+  {
+   "name": "CHAPIN, ELA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": null,
+   "contributions": 2155.0,
+   "expenditures": 1652.99
+  },
+  {
+   "name": "CHARLTON, THOMAS",
+   "party": "Republican",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "CHARLTON, THOMAS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Chester",
+   "contributions": 4373.0,
+   "expenditures": 2872.32
+  },
+  {
+   "name": "CHASE, HEATHER",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Windsor",
+   "contributions": 31745.83,
+   "expenditures": 31745.83
+  },
+  {
+   "name": "CHASE, HEATHER C",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Chester",
+   "contributions": 1002.29,
+   "expenditures": 2942.55
+  },
+  {
+   "name": "CHESNUT-TANGERMAN, ROBIN",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Middletown Springs",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "CHITTENDEN, THOMAS IRA",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "South Burlington",
+   "contributions": 17143.2,
+   "expenditures": 22338.26
+  },
+  {
+   "name": "CHURCHILL, BRENDA KAI",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bakersfield",
+   "contributions": 0.0,
+   "expenditures": 422.58
+  },
+  {
+   "name": "CINA, BRIAN",
+   "party": "Democratic/Progressive",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 47.6,
+   "expenditures": 46.59
+  },
+  {
+   "name": "CLARKSON, ALISON",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Woodstock",
+   "contributions": 50.0,
+   "expenditures": 7337.72
+  },
+  {
+   "name": "CLAYTON, ALFORD EDWIN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Sandgate",
+   "contributions": 4044.8,
+   "expenditures": 1608.0
+  },
+  {
+   "name": "COCHRANE, AMANDA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Johnsbury",
+   "contributions": 11108.0,
+   "expenditures": 10332.57
+  },
+  {
+   "name": "COFFIN, VORANUS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Cavendish",
+   "contributions": 2800.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "COLE, ESME",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hartford",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "COLEMAN, BILL MATTHEWS",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Newark",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "COLEMAN, E. STUART",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Winhall",
+   "contributions": 15389.01,
+   "expenditures": 11097.96
+  },
+  {
+   "name": "COLEMAN, JAMES ROBERT",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hartford",
+   "contributions": 779.94,
+   "expenditures": 702.59
+  },
+  {
+   "name": "COLLAMORE, BRIAN PAUL",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Rutland Town",
+   "contributions": 8626.66,
+   "expenditures": 6178.28
+  },
+  {
+   "name": "COOK, ANTHONY ALAN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bennington",
+   "contributions": 250.0,
+   "expenditures": 239.16
+  },
+  {
+   "name": "COOPER, JONATHAN",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "COOPER, JONATHAN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Pownal",
+   "contributions": 7307.22,
+   "expenditures": 5410.35
+  },
+  {
+   "name": "CORCORAN, TIMOTHY R",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bennington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "CORDES, MARI",
+   "party": "Progressive/Democratic",
+   "chamber": "house",
+   "town": "Lincoln",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "COTA, NICOLE AMANDA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Rockingham",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "COVEY, FRANCIS CLAYTON",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Williamstown",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "COYNE, RYAN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Rockingham",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "CRITCHLOW, WENDY ADAMS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Colchester",
+   "contributions": 453.72,
+   "expenditures": 0.0
+  },
+  {
+   "name": "CULP, SUSAN KRISTINE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Newbury",
+   "contributions": 2787.99,
+   "expenditures": 1492.63
+  },
+  {
+   "name": "CUMMINGS, ANN E.",
+   "party": "Democratic",
+   "chamber": "senate",
+   "town": "Montpelier",
+   "contributions": 4600.02,
+   "expenditures": 5455.13
+  },
+  {
+   "name": "CYPES, MITCHEL SCOTT",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "South Burlington",
+   "contributions": 1192.0,
+   "expenditures": 1162.75
+  },
+  {
+   "name": "DAVILA, AALIYAH GISELE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "DEMAR, ALLEN R",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Enosburgh",
+   "contributions": 465.0,
+   "expenditures": 1044.0
+  },
+  {
+   "name": "DEMROW, CARL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Corinth",
+   "contributions": 0.0,
+   "expenditures": 900.0
+  },
+  {
+   "name": "DIAMONDSTONE, IAN GARTH",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Putney",
+   "contributions": 660.0,
+   "expenditures": 271.0
+  },
+  {
+   "name": "DICKINSON, EILEEN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Albans Town",
+   "contributions": 5230.0,
+   "expenditures": 3394.8
+  },
+  {
+   "name": "DIENG, ALI N",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 4335.73,
+   "expenditures": 3931.22
+  },
+  {
+   "name": "DIKE, LYNN MARIE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bristol",
+   "contributions": 5086.0,
+   "expenditures": 3356.89
+  },
+  {
+   "name": "DILORENZO, NICHOLAS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bradford",
+   "contributions": 3803.8,
+   "expenditures": 3092.42
+  },
+  {
+   "name": "DO, TRANG THU",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 2282.31,
+   "expenditures": 884.59
+  },
+  {
+   "name": "DOBROVICH, JOSHUA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Williamstown",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "DODGE, LEONORA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Town",
+   "contributions": 1924.95,
+   "expenditures": 2400.92
+  },
+  {
+   "name": "DOERING, KEVIN P",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Randolph",
+   "contributions": 2581.5,
+   "expenditures": 1941.5
+  },
+  {
+   "name": "DOLAN, KAREN NICOLE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Junction City",
+   "contributions": 4837.05,
+   "expenditures": 3938.37
+  },
+  {
+   "name": "DOLAN, KARI",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Waitsfield",
+   "contributions": 0.0,
+   "expenditures": 1738.22
+  },
+  {
+   "name": "DOLGIN, DEBORAH CORDZ",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Johnsbury",
+   "contributions": 9366.83,
+   "expenditures": 10069.35
+  },
+  {
+   "name": "DOLGIN, STEVEN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Johnsbury",
+   "contributions": 3105.92,
+   "expenditures": 2920.65
+  },
+  {
+   "name": "DONAHUE, ANNE B",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Northfield",
+   "contributions": 0.0,
+   "expenditures": 54.71
+  },
+  {
+   "name": "DONNALLY, KATE MAY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hyde Park",
+   "contributions": 0.0,
+   "expenditures": 1549.9
+  },
+  {
+   "name": "DOUGLASS, SAMUEL ADAM",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Troy",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "DUBE, CHRISTOPHER MICHAEL",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Hartford",
+   "contributions": 4876.48,
+   "expenditures": 0.0
+  },
+  {
+   "name": "DUCHESNEAU, GENEVIEVE K",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Proctor",
+   "contributions": 2120.55,
+   "expenditures": 1620.91
+  },
+  {
+   "name": "DUKE, ABBEY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "DUKE, ABBEY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 100.0,
+   "expenditures": 9.8
+  },
+  {
+   "name": "DUNKLE, ROBERT ALEXANDER",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Tunbridge",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "DURFEE, DAVID K.",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Shaftsbury",
+   "contributions": 5146.71,
+   "expenditures": 2945.34
+  },
+  {
+   "name": "DUVAL, JARED",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Montpelier",
+   "contributions": 17184.21,
+   "expenditures": 16989.67
+  },
+  {
+   "name": "DYBVIG, OWEN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Randolph",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "EASTES, ZON",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Guilford",
+   "contributions": 7548.21,
+   "expenditures": 11499.85
+  },
+  {
+   "name": "EDELSON, ASHER DAVID",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Bennington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "EMMONS, ALICE MARIE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Springfield",
+   "contributions": 6009.66,
+   "expenditures": 1215.8
+  },
+  {
+   "name": "EMPSALL, FRANK",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Johnsbury",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "FARLICE-RUBIO, BOBBY",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Barnet",
+   "contributions": 370.0,
+   "expenditures": 796.36
+  },
+  {
+   "name": "FAY, KEN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Brattleboro",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "FELTUS, MARTHA \"MARTY\"",
+   "party": "Republican",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 402.84
+  },
+  {
+   "name": "FERNANDEZ, MICHAEL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Arlington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "FILIBERTI, JULIE ANNE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Fairfax",
+   "contributions": 6750.26,
+   "expenditures": 5127.55
+  },
+  {
+   "name": "FLANDERS, LISA",
+   "party": "Republican",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "FRANZ, ADAM KARL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 2266.0,
+   "expenditures": 1837.08
+  },
+  {
+   "name": "GALFETTI, GINA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Barre Town",
+   "contributions": 8963.12,
+   "expenditures": 5084.74
+  },
+  {
+   "name": "GAROFANO, GOLRANG",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Town",
+   "contributions": 5192.53,
+   "expenditures": 5243.59
+  },
+  {
+   "name": "GASSETT, DALE L",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Vernon",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "GASSETT, NANCY L",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Vernon",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "GILE, MATT",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Winooski",
+   "contributions": 13104.18,
+   "expenditures": 9346.22
+  },
+  {
+   "name": "GISH, DIEDRE (\"DEE\")",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Sharon",
+   "contributions": 7966.0,
+   "expenditures": 6157.5
+  },
+  {
+   "name": "GLEASON, JONATHAN",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Ludlow",
+   "contributions": 4187.42,
+   "expenditures": 2298.26
+  },
+  {
+   "name": "GLEASON, KIM",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Grand Isle",
+   "contributions": 31978.77,
+   "expenditures": 13109.7
+  },
+  {
+   "name": "GOLDMAN, LESLIE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Rockingham",
+   "contributions": 20.52,
+   "expenditures": 660.0
+  },
+  {
+   "name": "GOODNOW, IAN",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Brattleboro",
+   "contributions": 65.0,
+   "expenditures": 518.32
+  },
+  {
+   "name": "GOSLANT, KENNETH W",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Northfield",
+   "contributions": 0.0,
+   "expenditures": 500.0
+  },
+  {
+   "name": "GOYAL, NIKHIL",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Burlington",
+   "contributions": 166895.57,
+   "expenditures": 113067.82
+  },
+  {
+   "name": "GRANING, EDYE",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Jericho",
+   "contributions": 700.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "GRANT, AUDREY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hardwick",
+   "contributions": 10351.58,
+   "expenditures": 2679.52
+  },
+  {
+   "name": "GRAY, RANDY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Springfield",
+   "contributions": 3765.0,
+   "expenditures": 3093.51
+  },
+  {
+   "name": "GREER, WILLIAM G",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bennington",
+   "contributions": 1625.0,
+   "expenditures": 645.0
+  },
+  {
+   "name": "GREGOIRE, JAMES",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Fairfield",
+   "contributions": 3715.0,
+   "expenditures": 6141.0
+  },
+  {
+   "name": "GROSSMAN, JOANNA GADE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Burlington",
+   "contributions": 30604.98,
+   "expenditures": 23585.09
+  },
+  {
+   "name": "GULICK, MARTINE LAROCQUE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Burlington",
+   "contributions": 21801.05,
+   "expenditures": 17370.2
+  },
+  {
+   "name": "HADDAD, JAMES ROBERT",
+   "party": "Independent",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "HAESSLY, CHRISTOPHER",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "HANEY, ELAINE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Essex Junction City",
+   "contributions": 61509.96,
+   "expenditures": 58137.15
+  },
+  {
+   "name": "HANGO, LISA A",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Berkshire",
+   "contributions": 700.0,
+   "expenditures": 1045.0
+  },
+  {
+   "name": "HANSEN, KYLE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Pomfret",
+   "contributions": 1289.22,
+   "expenditures": 1090.89
+  },
+  {
+   "name": "HARDY, RUTH",
+   "party": "Democratic",
+   "chamber": "senate",
+   "town": "Middlebury",
+   "contributions": 51311.66,
+   "expenditures": 32755.01
+  },
+  {
+   "name": "HARPLE, LEANNE",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Glover",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "HARPLE, LEANNE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Glover",
+   "contributions": 4698.62,
+   "expenditures": 3384.99
+  },
+  {
+   "name": "HARRISON, JAMES",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Chittenden",
+   "contributions": 0.0,
+   "expenditures": 1168.89
+  },
+  {
+   "name": "HARRISON, WENDY K",
+   "party": "Democratic",
+   "chamber": "senate",
+   "town": "Brattleboro",
+   "contributions": 2882.38,
+   "expenditures": 3307.4
+  },
+  {
+   "name": "HART, LARRY WAYNE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Orange",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "HARTNETT, DAVE M",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 13660.0,
+   "expenditures": 5139.27
+  },
+  {
+   "name": "HARTY, THOMAS JAMES",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Randolph",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "HARVEY, WILLIAM",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Brattleboro",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "HARWOOD, VICTOR KYRLE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Shaftsbury",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "HASHIM, NADER AHMED",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Dummerston",
+   "contributions": 1705.0,
+   "expenditures": 2646.21
+  },
+  {
+   "name": "HAYLON, JEFF",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Brandon",
+   "contributions": 20853.11,
+   "expenditures": 9470.88
+  },
+  {
+   "name": "HEADRICK, TROY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 1532.2,
+   "expenditures": 1541.06
+  },
+  {
+   "name": "HECKER, EMILY BANKS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Milton",
+   "contributions": 0.0,
+   "expenditures": 1356.62
+  },
+  {
+   "name": "HEFFERNAN, STEVEN P",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Bristol",
+   "contributions": 35.0,
+   "expenditures": 690.72
+  },
+  {
+   "name": "HEFFERNAN, STEVEN P",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Bristol",
+   "contributions": 81349.32,
+   "expenditures": 67283.51
+  },
+  {
+   "name": "HENRY, JOSIE J",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Alburgh",
+   "contributions": 20533.5,
+   "expenditures": 11825.29
+  },
+  {
+   "name": "HERRING, LUCAS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Northfield",
+   "contributions": 25.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "HESCOCK, JONATHAN E",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Shoreham",
+   "contributions": 6597.55,
+   "expenditures": 5397.74
+  },
+  {
+   "name": "HIGLEY, MARK ALFRED",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Lowell",
+   "contributions": 1645.0,
+   "expenditures": 950.0
+  },
+  {
+   "name": "HILL, CHANIN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bristol",
+   "contributions": 2975.0,
+   "expenditures": 2868.95
+  },
+  {
+   "name": "HILL-EUBANKS, LAURA",
+   "party": "Democratic/Progressive",
+   "chamber": "house",
+   "town": "Northfield",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "HINSDALE, KESHA RAM",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Shelburne",
+   "contributions": 32388.94,
+   "expenditures": 39535.22
+  },
+  {
+   "name": "HOLCOMBE, REBECCA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Norwich",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "HOOPER, ROBERT JEFFERY",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 250.0,
+   "expenditures": 1412.87
+  },
+  {
+   "name": "HOSER, WILLIAM KENNETH",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Chester",
+   "contributions": 10183.71,
+   "expenditures": 6340.66
+  },
+  {
+   "name": "HOUGHTON, LORI",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Junction City",
+   "contributions": 2665.5,
+   "expenditures": 2390.4
+  },
+  {
+   "name": "HOWARD, ADAM BREWSTER",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Cambridge",
+   "contributions": 3685.77,
+   "expenditures": 161.74
+  },
+  {
+   "name": "HOWARD, MARY ELENA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Rutland City",
+   "contributions": 5305.0,
+   "expenditures": 2256.71
+  },
+  {
+   "name": "HOWLAND, CHRISTOPHER KING",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Rutland Town",
+   "contributions": 1295.0,
+   "expenditures": 546.8
+  },
+  {
+   "name": "HOYT, MICHAEL NICHOLSON",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hartford",
+   "contributions": 1000.0,
+   "expenditures": 463.23
+  },
+  {
+   "name": "HUNT, ELIZABETH ANN",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Charlotte",
+   "contributions": 33320.5,
+   "expenditures": 31648.93
+  },
+  {
+   "name": "HUNTER, ROBERT ALAN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Manchester",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "HUNTER, ROBERT ALAN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Manchester",
+   "contributions": 1860.0,
+   "expenditures": 541.21
+  },
+  {
+   "name": "INGALLS, RUSSELL H",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Newport City",
+   "contributions": 10923.64,
+   "expenditures": 8166.6
+  },
+  {
+   "name": "IZZO, JOSEPH LOUIS",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Springfield",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "JACOBS, DAVID M",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Holland",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "JACOBS, DAVID M",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Holland",
+   "contributions": 500.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "JAMES, KATHLEEN COLLIER",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Manchester",
+   "contributions": 3703.0,
+   "expenditures": 6563.39
+  },
+  {
+   "name": "JENSEN, SYLVIA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Isle LaMotte",
+   "contributions": 4679.0,
+   "expenditures": 3368.65
+  },
+  {
+   "name": "JEROME, STEPHANIE ZAK",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Brandon",
+   "contributions": 250.0,
+   "expenditures": 950.0
+  },
+  {
+   "name": "JEWETT, CHARLES EDWARD",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bennington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "JEWETT, CHARLES EDWARD",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bennington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "JOHNSON, LEON",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bennington",
+   "contributions": 950.0,
+   "expenditures": 982.71
+  },
+  {
+   "name": "JULOW, ANDY JOSEPH",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "North Hero",
+   "contributions": 0.0,
+   "expenditures": 164.37
+  },
+  {
+   "name": "KANE, MICHAEL LADDIE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Vergennes",
+   "contributions": 5837.28,
+   "expenditures": 5332.34
+  },
+  {
+   "name": "KASCENSKA, JOHN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burke",
+   "contributions": 1110.0,
+   "expenditures": 1068.0
+  },
+  {
+   "name": "KENYON, SUZANNE DIANA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Albans City",
+   "contributions": 4611.06,
+   "expenditures": 3040.67
+  },
+  {
+   "name": "KEYSER, CHRISTOPHER",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Rutland City",
+   "contributions": 2580.0,
+   "expenditures": 1082.61
+  },
+  {
+   "name": "KIMBELL, CHARLES A",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Woodstock",
+   "contributions": 1736.7,
+   "expenditures": 1738.83
+  },
+  {
+   "name": "KINGSTON, JOHN W",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hinesburg",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "KINGSTON, JOHN W",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hinesburg",
+   "contributions": 6928.47,
+   "expenditures": 5480.87
+  },
+  {
+   "name": "KLEIN, ANDREW B",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "New Haven",
+   "contributions": 65568.21,
+   "expenditures": 56261.82
+  },
+  {
+   "name": "KLEPPNER, BRAM",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 3329.66,
+   "expenditures": 3957.04
+  },
+  {
+   "name": "KLEPPNER, BRAM",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 3170.86,
+   "expenditures": 3945.58
+  },
+  {
+   "name": "KOCH, DONALD TIMOTHY",
+   "party": "Republican",
+   "chamber": "senate",
+   "town": null,
+   "contributions": 10.0,
+   "expenditures": 129.04
+  },
+  {
+   "name": "KOHN, PELIN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Montpelier",
+   "contributions": 3890.0,
+   "expenditures": 1987.57
+  },
+  {
+   "name": "KORNHEISER, EMILIE KATHERINE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Brattleboro",
+   "contributions": 3787.0,
+   "expenditures": 5665.8
+  },
+  {
+   "name": "KRASNOW, EMILIE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "South Burlington",
+   "contributions": 7718.0,
+   "expenditures": 1664.07
+  },
+  {
+   "name": "KROWINSKI, JILL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 25.0,
+   "expenditures": 5594.16
+  },
+  {
+   "name": "LABOR, LARRY LEE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Morgan",
+   "contributions": 1.51,
+   "expenditures": 645.0
+  },
+  {
+   "name": "LABOUNTY, DENNIS R",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Lyndon",
+   "contributions": 1994.55,
+   "expenditures": 508.5
+  },
+  {
+   "name": "LACLAIR, ROBERT B",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Montpelier",
+   "contributions": 20315.28,
+   "expenditures": 2362.03
+  },
+  {
+   "name": "LAJEUNESSE, GABRIEL LAJEUNESSE,",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Montpelier",
+   "contributions": 8455.8,
+   "expenditures": 8008.76
+  },
+  {
+   "name": "LALLEY, CATHERINE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Shelburne",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "LALLEY, CATHERINE ELIZABETH",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Shelburne",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "LALLEY, KATE A",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Shelburne",
+   "contributions": 160.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "LALONDE, MARTIN JAMES",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "South Burlington",
+   "contributions": 200.0,
+   "expenditures": 250.0
+  },
+  {
+   "name": "LAMONT, SAUDIA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Morristown",
+   "contributions": 1739.91,
+   "expenditures": 2123.52
+  },
+  {
+   "name": "LAROCHE, WAYNE ALAN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Franklin",
+   "contributions": 265.73,
+   "expenditures": 265.73
+  },
+  {
+   "name": "LASKEVICH, CYNTHIA R",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Rutland City",
+   "contributions": 3440.0,
+   "expenditures": 2336.09
+  },
+  {
+   "name": "LAVALLEE, ERIK RANDY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Sheffield",
+   "contributions": 2212.0,
+   "expenditures": 637.86
+  },
+  {
+   "name": "LEAVITT, JOSIE",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Grand Isle",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "LEDBETTER, STEWART",
+   "party": "Democratic",
+   "chamber": "senate",
+   "town": "Winooski",
+   "contributions": 0.0,
+   "expenditures": 3536.87
+  },
+  {
+   "name": "LEWACK, LARRY",
+   "party": "Democratic/Progressive",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 15.0
+  },
+  {
+   "name": "LIPINSKI, JAMES R",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hyde Park",
+   "contributions": 1756.68,
+   "expenditures": 1142.91
+  },
+  {
+   "name": "LIPSKY, JED",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Stowe",
+   "contributions": 645.0,
+   "expenditures": 500.0
+  },
+  {
+   "name": "LISAIUS, KATARINA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bolton",
+   "contributions": 5645.23,
+   "expenditures": 3692.15
+  },
+  {
+   "name": "LONG, EMILY J",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Newfane",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "LONG, KUMULIA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Milton",
+   "contributions": 7772.91,
+   "expenditures": 3695.89
+  },
+  {
+   "name": "LOPEZ, NICK ANTHONY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Morristown",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "LUCENTI, ROSE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Randolph",
+   "contributions": 11337.07,
+   "expenditures": 8395.0
+  },
+  {
+   "name": "LUEDERS, KAREN A",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Lincoln",
+   "contributions": 3610.0,
+   "expenditures": 1860.59
+  },
+  {
+   "name": "LUNDBERG, CHRIS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Rockingham",
+   "contributions": 4480.0,
+   "expenditures": 3358.8
+  },
+  {
+   "name": "LUNEAU, JOSEPH D",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Saint Albans City",
+   "contributions": 27850.0,
+   "expenditures": 19833.1
+  },
+  {
+   "name": "LYONS, VIRGINIA",
+   "party": "Democratic",
+   "chamber": "senate",
+   "town": "Williston",
+   "contributions": 5710.52,
+   "expenditures": 4446.69
+  },
+  {
+   "name": "MACK, STEPHANIE FROBEL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Town",
+   "contributions": 16379.41,
+   "expenditures": 13635.76
+  },
+  {
+   "name": "MAGUIRE, ERIC M",
+   "party": "Republican",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MAGUIRE, ERIC MICHAEL",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Rutland City",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MAJOR, JOE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Hartford",
+   "contributions": 13208.64,
+   "expenditures": 4380.53
+  },
+  {
+   "name": "MALAY, ALICIA LYNNE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Pittsford",
+   "contributions": 3300.0,
+   "expenditures": 1797.62
+  },
+  {
+   "name": "MANLEY, SETH ADAM",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Junction City",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MANNO, LOUIS (LOUIE) MANNO ANGELLO",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Burlington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MARCOTTE, MICHAEL J",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Coventry",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MASLAND, JIM",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Thetford",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MATTHEIS, EMERY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Randolph",
+   "contributions": 4849.43,
+   "expenditures": 3018.7
+  },
+  {
+   "name": "MATTOS, CHRIS",
+   "party": "Republican",
+   "chamber": "senate",
+   "town": "Milton",
+   "contributions": 0.0,
+   "expenditures": 308.0
+  },
+  {
+   "name": "MAYETTE, CARMELA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Sheldon",
+   "contributions": 269.55,
+   "expenditures": 146.02
+  },
+  {
+   "name": "MAYFIELD, DEB",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Shelburne",
+   "contributions": 3883.6,
+   "expenditures": 2187.04
+  },
+  {
+   "name": "MCCANN, KATHERINE ANNE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Montpelier",
+   "contributions": 3439.0,
+   "expenditures": 1620.96
+  },
+  {
+   "name": "MCCARTHY, PAM",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Albans Town",
+   "contributions": 10364.98,
+   "expenditures": 6557.17
+  },
+  {
+   "name": "MCCOY, PATRICIA ANN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Poultney",
+   "contributions": 2315.0,
+   "expenditures": 2057.8
+  },
+  {
+   "name": "MCFAUN, FRANCIS \"TOPPER\"",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Barre Town",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MCFAUN, FRANCIS \"TOPPER\"",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Barre Town",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MCGILL, ADRIEL JUBILEE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bridport",
+   "contributions": 1345.0,
+   "expenditures": 1634.96
+  },
+  {
+   "name": "MCGUINNESS, RENEE",
+   "party": "Republican",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 695.1
+  },
+  {
+   "name": "MENON, PRANEET",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Coventry",
+   "contributions": 3619.76,
+   "expenditures": 2165.31
+  },
+  {
+   "name": "MERRIAM, JAMES P.",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Newbury",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MICKLUS, ANTHONY WAYNE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Milton",
+   "contributions": 7690.0,
+   "expenditures": 3847.81
+  },
+  {
+   "name": "MIHALY, MARC",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Calais",
+   "contributions": 695.0,
+   "expenditures": 801.98
+  },
+  {
+   "name": "MILLAR, ROBERT",
+   "party": "Progressive",
+   "chamber": "house",
+   "town": "Winooski",
+   "contributions": 237.78,
+   "expenditures": 63.83
+  },
+  {
+   "name": "MILLS, LANCE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Fairlee",
+   "contributions": 2865.57,
+   "expenditures": 1767.61
+  },
+  {
+   "name": "MINIER, BRIAN",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "South Burlington",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MOORE, AMY DANIELLE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Pownal",
+   "contributions": 6007.24,
+   "expenditures": 4220.75
+  },
+  {
+   "name": "MOORE, HEATHER M",
+   "party": "Progressive/Democratic",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MORGAN, LELAND",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Milton",
+   "contributions": 500.0,
+   "expenditures": 1451.35
+  },
+  {
+   "name": "MORGAN, LELAND",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Milton",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MORGAN, MICHAEL RONALD",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Milton",
+   "contributions": 30526.35,
+   "expenditures": 13653.35
+  },
+  {
+   "name": "MORLEY III, JOHN S.",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Orleans",
+   "contributions": 4183.0,
+   "expenditures": 1410.71
+  },
+  {
+   "name": "MORRIS, KRISTI C",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Springfield",
+   "contributions": 4103.11,
+   "expenditures": 2884.72
+  },
+  {
+   "name": "MORRISSEY, MARY ANN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bennington",
+   "contributions": 507.56,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MORROW, CHRIS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Weston",
+   "contributions": 12860.66,
+   "expenditures": 8356.03
+  },
+  {
+   "name": "MORROW, CHRISTOPHER",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Weston",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MORSE, DYLAN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hartland",
+   "contributions": 6776.7,
+   "expenditures": 5805.35
+  },
+  {
+   "name": "MORTON, RICHARD CHARLES",
+   "party": "Republican",
+   "chamber": "senate",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 357.35
+  },
+  {
+   "name": "MROWICKI, MIKE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Putney",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "MURRAY, ANDREA",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Weathersfield",
+   "contributions": 28100.37,
+   "expenditures": 11406.96
+  },
+  {
+   "name": "NEDDO, CHRISTOPHER ALLEN",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Barre Town",
+   "contributions": 2229.22,
+   "expenditures": 1007.06
+  },
+  {
+   "name": "NELSON, RICHARD M",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Derby",
+   "contributions": 6200.0,
+   "expenditures": 2437.8
+  },
+  {
+   "name": "NEVIL, DEBORAH JO",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Cambridge",
+   "contributions": 1100.0,
+   "expenditures": 28.25
+  },
+  {
+   "name": "NIELSEN, AIDA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Brandon",
+   "contributions": 8726.89,
+   "expenditures": 5984.6
+  },
+  {
+   "name": "NIELSEN, TODD",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Brandon",
+   "contributions": 0.0,
+   "expenditures": 1053.33
+  },
+  {
+   "name": "NIGRO, MICHAEL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bennington",
+   "contributions": 150.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "NORRIS, ROBERT WAYNE",
+   "party": "Republican",
+   "chamber": "senate",
+   "town": "Sheldon",
+   "contributions": 10323.02,
+   "expenditures": 8703.99
+  },
+  {
+   "name": "NORTH, ROB",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Ferrisburgh",
+   "contributions": 16273.39,
+   "expenditures": 7690.47
+  },
+  {
+   "name": "NOYES, DANIEL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Wolcott",
+   "contributions": 1640.0,
+   "expenditures": 138.57
+  },
+  {
+   "name": "NUGENT, KATE",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "South Burlington",
+   "contributions": 308.12,
+   "expenditures": 529.92
+  },
+  {
+   "name": "O'BRIEN, JOHN KENNETH",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Tunbridge",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "ODE, CAROL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 6875.0,
+   "expenditures": 7220.82
+  },
+  {
+   "name": "OJIBWAY, ALANNA C",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hartford",
+   "contributions": 5170.0,
+   "expenditures": 4518.22
+  },
+  {
+   "name": "OLIVER, THOMAS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Sheldon",
+   "contributions": 4100.0,
+   "expenditures": 296.8
+  },
+  {
+   "name": "OLSON, HERB",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Starksboro",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "OTTERMAN, AIDEN BOYD",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Topsham",
+   "contributions": 9722.7,
+   "expenditures": 6508.87
+  },
+  {
+   "name": "OTTERMAN, THOMAS CLARK",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Topsham",
+   "contributions": 4030.8,
+   "expenditures": 1682.74
+  },
+  {
+   "name": "O\u2019BRIEN, JOHN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Tunbridge",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "PAGE, WOODMAN",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Newport City",
+   "contributions": 2550.0,
+   "expenditures": 1754.6
+  },
+  {
+   "name": "PASTERIS, KELSEY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hinesburg",
+   "contributions": 5865.96,
+   "expenditures": 3844.07
+  },
+  {
+   "name": "PAUL, KAREN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 4767.0,
+   "expenditures": 881.44
+  },
+  {
+   "name": "PERCHLIK, ANDREW",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Marshfield",
+   "contributions": 10720.1,
+   "expenditures": 4944.47
+  },
+  {
+   "name": "PETERSON, JEFFREY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 10690.5,
+   "expenditures": 3858.74
+  },
+  {
+   "name": "PEZZO, GAYLE SUSAN",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Colchester",
+   "contributions": 4455.0,
+   "expenditures": 2343.59
+  },
+  {
+   "name": "PINSONAULT, SANDRA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Dorset",
+   "contributions": 16855.0,
+   "expenditures": 12727.99
+  },
+  {
+   "name": "PITRE, REBECCA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": null,
+   "contributions": 2635.0,
+   "expenditures": 1412.61
+  },
+  {
+   "name": "PLUNKETT, ROBERT FRANCIS",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Bennington",
+   "contributions": 18017.5,
+   "expenditures": 10385.39
+  },
+  {
+   "name": "POLAND, LONNIE LEA",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 353.47
+  },
+  {
+   "name": "POST, BRUCE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Royalton",
+   "contributions": 4000.0,
+   "expenditures": 4621.2
+  },
+  {
+   "name": "POST, ERIK",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Town",
+   "contributions": 25.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "POTTER, DAVID EARLE",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "POUECH, PHIL RAYMOND",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Hinesburg",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "POWERS, DEBRA LYNN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Waterford",
+   "contributions": 13860.0,
+   "expenditures": 13223.04
+  },
+  {
+   "name": "PRIESTLEY, MONIQUE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bradford",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "PRIESTLEY, MONIQUE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Bradford",
+   "contributions": 64948.12,
+   "expenditures": 45478.12
+  },
+  {
+   "name": "PRITCHARD, CHRIS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Pawlet",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "QUIMBY, BETH MARIE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Lyndon",
+   "contributions": 3147.6,
+   "expenditures": 2473.42
+  },
+  {
+   "name": "QUIPP, DANIEL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Brattleboro",
+   "contributions": 6201.49,
+   "expenditures": 4496.86
+  },
+  {
+   "name": "RACHELSON, BARBARA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 33.24,
+   "expenditures": 1480.24
+  },
+  {
+   "name": "RAINVILLE, A GREGORY",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Georgia",
+   "contributions": 12323.56,
+   "expenditures": 7307.95
+  },
+  {
+   "name": "RAY, JEAN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Rutland City",
+   "contributions": 885.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "RAYMOND, ADRIENNE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Shrewsbury",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "RHIM, LAUREN MORANDO",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Norwich",
+   "contributions": 10548.23,
+   "expenditures": 10383.47
+  },
+  {
+   "name": "RICE, MIKE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Dorset",
+   "contributions": 21660.0,
+   "expenditures": 10808.99
+  },
+  {
+   "name": "ROTH, DAVID",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Saint Johnsbury",
+   "contributions": 22715.0,
+   "expenditures": 10687.44
+  },
+  {
+   "name": "ROY, BRUCE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Williston",
+   "contributions": 38133.16,
+   "expenditures": 19733.47
+  },
+  {
+   "name": "ROY, MIKE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Middlebury",
+   "contributions": 6550.0,
+   "expenditures": 4012.34
+  },
+  {
+   "name": "RUSSELL, CHARLES WILLIAM",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Randolph",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "RYAN, JIM",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "RYAN, LANCE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Roxbury",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "RYAN, LANCE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Roxbury",
+   "contributions": 1229.53,
+   "expenditures": 0.0
+  },
+  {
+   "name": "SAGE, RUSTY EARL",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Brattleboro",
+   "contributions": 2530.74,
+   "expenditures": 2188.14
+  },
+  {
+   "name": "SANTORELLO, JOHN GERARD",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Barre City",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "SATCOWITZ, LAWRENCE",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Randolph",
+   "contributions": 6078.0,
+   "expenditures": 5241.0
+  },
+  {
+   "name": "SCHEFFLER, ZACH",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Albans City",
+   "contributions": 10666.04,
+   "expenditures": 7050.03
+  },
+  {
+   "name": "SCHEU, ROBIN P",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Middlebury",
+   "contributions": 1136.0,
+   "expenditures": 1597.93
+  },
+  {
+   "name": "SCHMEECKLE, PETER N",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Stowe",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "SCHMITT, MICHAEL ROBERT",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Springfield",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "SCHOVILLE, JUSTIN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Barnard",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "SCIORTINO, PAUL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Cambridge",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "SEARS, JAVEN",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "South Burlington",
+   "contributions": 26045.58,
+   "expenditures": 5057.44
+  },
+  {
+   "name": "SESSIONS, HANNAH DOTON",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Leicester",
+   "contributions": 77130.0,
+   "expenditures": 48467.29
+  },
+  {
+   "name": "SHAW, RACHEL",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Bennington",
+   "contributions": 100.0,
+   "expenditures": 7.12
+  },
+  {
+   "name": "SHELDON, AMY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Middlebury",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "SHERMAN, SPENCER",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Colchester",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "SIBILIA, LAURA",
+   "party": "Independent",
+   "chamber": "house",
+   "town": "Dover",
+   "contributions": 590.0,
+   "expenditures": 5439.09
+  },
+  {
+   "name": "SILISKI, CHRISTOPHER",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Rutland City",
+   "contributions": 3306.82,
+   "expenditures": 3306.82
+  },
+  {
+   "name": "SILK, RYAN FARBER",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Woodbury",
+   "contributions": 100.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "SIMS, KATHERINE",
+   "party": "Democratic",
+   "chamber": "senate",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "SKINNER, DAVID D",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Grand Isle",
+   "contributions": 11955.0,
+   "expenditures": 6656.83
+  },
+  {
+   "name": "SMITH, AARON R",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Brattleboro",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "SMITH, LYNN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Town",
+   "contributions": 0.0,
+   "expenditures": 30.0
+  },
+  {
+   "name": "SMITH, LYNN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Town",
+   "contributions": 637.5,
+   "expenditures": 307.5
+  },
+  {
+   "name": "SOUCY, DAVID",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Barre Town",
+   "contributions": 9260.23,
+   "expenditures": 8440.9
+  },
+  {
+   "name": "SOUTHWORTH, MICHAEL JAMES",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Walden",
+   "contributions": 1851.0,
+   "expenditures": 449.11
+  },
+  {
+   "name": "SPAULDING, SONYA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Barre City",
+   "contributions": 12382.5,
+   "expenditures": 11033.67
+  },
+  {
+   "name": "SQUIRRELL, TREVOR",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Underhill",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "STEADY, BRENDA K",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Milton",
+   "contributions": 9321.49,
+   "expenditures": 5757.3
+  },
+  {
+   "name": "STEADY, BRENDA K",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Milton",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "STEBBINS, ROBERT W",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Franklin",
+   "contributions": 10628.99,
+   "expenditures": 8578.93
+  },
+  {
+   "name": "STERN, JUDITH",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Springfield",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "STEVENS, THOMAS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Waterbury",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "STEVENS, XAVIER",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Newport City",
+   "contributions": 2973.83,
+   "expenditures": 2120.91
+  },
+  {
+   "name": "STONE, CHRISTINE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Leicester",
+   "contributions": 0.0,
+   "expenditures": 131.3
+  },
+  {
+   "name": "STONE, MARY-KATHERINE",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Burlington",
+   "contributions": 1125.0,
+   "expenditures": 1537.96
+  },
+  {
+   "name": "STROUP, JOHN THOMAS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Vergennes",
+   "contributions": 27188.24,
+   "expenditures": 12917.07
+  },
+  {
+   "name": "SWEENEY, SHAWN J",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Shelburne",
+   "contributions": 2580.0,
+   "expenditures": 553.76
+  },
+  {
+   "name": "TADIO, ANNA",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "TAGLIAVIA, MICHAEL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Corinth",
+   "contributions": 7569.85,
+   "expenditures": 3208.96
+  },
+  {
+   "name": "TANSEY, JOHN GREGORY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Windsor",
+   "contributions": 13825.0,
+   "expenditures": 11632.29
+  },
+  {
+   "name": "TAYLOR, CHRISTOPHER ADAM",
+   "party": "Republican",
+   "chamber": "house",
+   "town": "Milton",
+   "contributions": 0.0,
+   "expenditures": 250.0
+  },
+  {
+   "name": "TAYLOR, VALORIE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "TEALE, MALCOLM",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Hyde Park",
+   "contributions": 1925.0,
+   "expenditures": 1957.82
+  },
+  {
+   "name": "THIBAULT, ALEX R",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Colchester",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "THIBAULT, ALEX R",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Colchester",
+   "contributions": 1450.0,
+   "expenditures": 695.5
+  },
+  {
+   "name": "THOMAS, RICHARD PAUL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Windsor",
+   "contributions": 598.69,
+   "expenditures": 336.69
+  },
+  {
+   "name": "THOMPSON, ADELBERT ALLEN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bridport",
+   "contributions": 1600.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "THOMPSON, JASON PATRICK",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Woodbury",
+   "contributions": 1200.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "TOMLINSON, CHLOE",
+   "party": "Progressive/Democratic",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 234.0
+  },
+  {
+   "name": "TOOF, CASEY JOSEPH",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Albans Town",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "TORRE, DARA",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Moretown",
+   "contributions": 943.99,
+   "expenditures": 501.17
+  },
+  {
+   "name": "TOWLE, MATTHEW PARKER",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Essex Junction City",
+   "contributions": 600.0,
+   "expenditures": 375.33
+  },
+  {
+   "name": "TOWNSEND, WAYNE D",
+   "party": "Republican",
+   "chamber": "house",
+   "town": null,
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "TREADWAY, ANDREA",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Orwell",
+   "contributions": 5360.17,
+   "expenditures": 4758.45
+  },
+  {
+   "name": "TUCKER, DAVID",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Waterford",
+   "contributions": 11511.02,
+   "expenditures": 8156.46
+  },
+  {
+   "name": "TUCKER, PHOEBE ANNE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Ludlow",
+   "contributions": 9345.33,
+   "expenditures": 4642.8
+  },
+  {
+   "name": "TURKOS, AL",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Winooski",
+   "contributions": 5033.0,
+   "expenditures": 3397.59
+  },
+  {
+   "name": "VAN OORT, JESSICA CHRISTINE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Pawlet",
+   "contributions": 9209.92,
+   "expenditures": 5450.0
+  },
+  {
+   "name": "VYHOVSKY, TANYA",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Essex Town",
+   "contributions": 25855.08,
+   "expenditures": 17398.83
+  },
+  {
+   "name": "WALKER, MATTHEW EDWIN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Swanton",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "WASZAZAK, EDWARD",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Barre City",
+   "contributions": 4924.0,
+   "expenditures": 613.61
+  },
+  {
+   "name": "WATERS EVANS, CHEA",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Charlotte",
+   "contributions": 900.0,
+   "expenditures": 765.05
+  },
+  {
+   "name": "WATSON, ANNE",
+   "party": "Democratic",
+   "chamber": "senate",
+   "town": "Montpelier",
+   "contributions": 6063.0,
+   "expenditures": 6491.89
+  },
+  {
+   "name": "WEBSTER, STEPHEN W.",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Randolph",
+   "contributions": 1800.82,
+   "expenditures": 0.0
+  },
+  {
+   "name": "WEEKS, DAVID HART",
+   "party": "Republican",
+   "chamber": "senate",
+   "town": "Proctor",
+   "contributions": 13476.82,
+   "expenditures": 9661.67
+  },
+  {
+   "name": "WELLS, KENNETH LANCE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Brownington",
+   "contributions": 2300.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "WEST, THOMAS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Manchester",
+   "contributions": 8467.5,
+   "expenditures": 6371.61
+  },
+  {
+   "name": "WESTMAN, RICHARD A.",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Cambridge",
+   "contributions": 15833.9,
+   "expenditures": 14263.83
+  },
+  {
+   "name": "WHEELER REYNOLDS, EMILY",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Barre Town",
+   "contributions": 10073.22,
+   "expenditures": 10857.68
+  },
+  {
+   "name": "WHITE, CANDICE E",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Waitsfield",
+   "contributions": 7664.76,
+   "expenditures": 4884.44
+  },
+  {
+   "name": "WHITE, KIRK",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Bethel",
+   "contributions": 4168.66,
+   "expenditures": 1564.04
+  },
+  {
+   "name": "WHITE, MICHAEL JONATHAN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Bethel",
+   "contributions": 969.43,
+   "expenditures": 122.43
+  },
+  {
+   "name": "WHITE, REBECCA",
+   "party": "Democratic",
+   "chamber": "senate",
+   "town": "Hartford",
+   "contributions": 18744.0,
+   "expenditures": 15099.26
+  },
+  {
+   "name": "WHITMIRE, LAWRE EUGENE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Shaftsbury",
+   "contributions": 12938.4,
+   "expenditures": 3969.12
+  },
+  {
+   "name": "WILKINS, LYNNE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Putney",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "WILLIAMS, JACK",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Weathersfield",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "WILLIAMS, JONATHAN LISLE",
+   "party": "Democratic",
+   "chamber": "house",
+   "town": "Barre City",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "WILLIAMS, JOSH",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Bennington",
+   "contributions": 18135.44,
+   "expenditures": 6005.61
+  },
+  {
+   "name": "WILLIAMS, TERRY K",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Poultney",
+   "contributions": 2154.0,
+   "expenditures": 400.0
+  },
+  {
+   "name": "WILLIAMS, TERRY K",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Poultney",
+   "contributions": 0.0,
+   "expenditures": 0.0
+  },
+  {
+   "name": "WILSON, ANNA LOIS",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Cornwall",
+   "contributions": 3033.0,
+   "expenditures": 1736.0
+  },
+  {
+   "name": "WILSON, GREGORY VAN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Vershire",
+   "contributions": 3065.0,
+   "expenditures": 2566.93
+  },
+  {
+   "name": "WINTER, KEVIN C",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Ludlow",
+   "contributions": 6490.0,
+   "expenditures": 2384.76
+  },
+  {
+   "name": "WOLK, DAVE",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Rutland",
+   "contributions": 18779.0,
+   "expenditures": 11365.61
+  },
+  {
+   "name": "WOOD, DOUG W",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Colchester",
+   "contributions": 5017.92,
+   "expenditures": 3607.33
+  },
+  {
+   "name": "WOOD, THERESA A. M.",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Waterbury",
+   "contributions": 100.0,
+   "expenditures": 3814.82
+  },
+  {
+   "name": "WRENNER, IRENE AVA",
+   "party": "Non-Partisan",
+   "chamber": "senate",
+   "town": "Essex Town",
+   "contributions": 21100.4,
+   "expenditures": 16093.13
+  },
+  {
+   "name": "YACOVONE, DAVID WARREN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Morristown",
+   "contributions": 4950.0,
+   "expenditures": 1928.33
+  },
+  {
+   "name": "YOUNG, HEATHER WHITEMORE",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Saint Johnsbury",
+   "contributions": 2446.35,
+   "expenditures": 938.54
+  },
+  {
+   "name": "YUENGLING, MARK DARREN",
+   "party": "Non-Partisan",
+   "chamber": "house",
+   "town": "Weathersfield",
+   "contributions": 4306.09,
+   "expenditures": 2602.15
+  }
+ ]
+}

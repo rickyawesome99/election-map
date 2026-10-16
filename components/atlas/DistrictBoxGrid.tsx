@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import type { Chamber } from "@/data/stateLegDistricts";
 import { shortDistrictName } from "@/lib/stateLegAtlas";
+import { flipBackground } from "@/components/FlipStripes";
 
 export type BoxItem = {
   key: string;
@@ -12,6 +13,8 @@ export type BoxItem = {
   darkText?: boolean;
   title: string;
   dimmed?: boolean;
+  /** Projected to change hands: drawn with the flip stripes over `fill`. */
+  flip?: boolean;
   /** Hover card content for the current color mode. */
   tip?: BoxTip;
 };
@@ -74,7 +77,7 @@ export default function DistrictBoxGrid({
             onBlur={() => setHovered(null)}
             className="h-[26px] rounded-[3px] text-[10px] font-semibold tabular-nums truncate px-0.5 transition-opacity"
             style={{
-              background: it.fill,
+              background: it.flip ? flipBackground(it.fill) : it.fill,
               color: it.darkText ? "#1d1f22" : "#fff",
               opacity: it.dimmed ? 0.22 : 1,
               outline: selected || it.key === hovered ? "2px solid var(--app-text-primary)" : "none",

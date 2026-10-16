@@ -1,0 +1,2487 @@
+{
+ "state": "CT",
+ "cycle": 2024,
+ "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
+ "fetched": "2026-10-16",
+ "dataThrough": "12/31/2024",
+ "candidates": [
+  {
+   "name": "Timothy Ackert",
+   "chamber": "house",
+   "district": "8",
+   "committee": "13743",
+   "contributions": 4035.0
+  },
+  {
+   "name": "Anthony Acri",
+   "chamber": "house",
+   "district": "97",
+   "committee": "13782",
+   "contributions": 6430.0
+  },
+  {
+   "name": "Aimee Berger-Girvalo",
+   "chamber": "house",
+   "district": "111",
+   "committee": "13708",
+   "contributions": 6315.0
+  },
+  {
+   "name": "David Alexander",
+   "chamber": "house",
+   "district": "58",
+   "committee": "13663",
+   "contributions": 6169.0
+  },
+  {
+   "name": "Alexandra Thomas",
+   "chamber": "house",
+   "district": "67",
+   "committee": "13726",
+   "contributions": 6678.0
+  },
+  {
+   "name": "Amanda Wallace",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "13901",
+   "contributions": 100.0
+  },
+  {
+   "name": "Amanda Veneziano",
+   "chamber": "house",
+   "district": "55",
+   "committee": "13786",
+   "contributions": 7170.0
+  },
+  {
+   "name": "Amy Morrin Bello",
+   "chamber": "house",
+   "district": "28",
+   "committee": "13587",
+   "contributions": 6325.0
+  },
+  {
+   "name": "Anabel Figueroa",
+   "chamber": "house",
+   "district": "148",
+   "committee": "13859",
+   "contributions": 6510.0
+  },
+  {
+   "name": "Andrew Rasmussen-Tuller",
+   "chamber": "house",
+   "district": "77",
+   "committee": "13564",
+   "contributions": 1330.0
+  },
+  {
+   "name": "Christopher Aniskovich",
+   "chamber": "house",
+   "district": "35",
+   "committee": "13821",
+   "contributions": 6295.0
+  },
+  {
+   "name": "Anne Weisberg",
+   "chamber": "house",
+   "district": "108",
+   "committee": "13911",
+   "contributions": 6920.3
+  },
+  {
+   "name": "Silvana Apicella",
+   "chamber": "house",
+   "district": "115",
+   "committee": "13597",
+   "contributions": 5785.0
+  },
+  {
+   "name": "Aram Ayalon",
+   "chamber": "house",
+   "district": "26",
+   "committee": "13816",
+   "contributions": 6393.0
+  },
+  {
+   "name": "Aundre Bumgardner",
+   "chamber": "house",
+   "district": "41",
+   "committee": "13633",
+   "contributions": 7700.0
+  },
+  {
+   "name": "Ayana Taylor",
+   "chamber": "senate",
+   "district": "2",
+   "committee": "13578",
+   "contributions": 18983.0
+  },
+  {
+   "name": "Barbara Breor",
+   "chamber": "house",
+   "district": "64",
+   "committee": "13798",
+   "contributions": 6745.0
+  },
+  {
+   "name": "Barbara Marino",
+   "chamber": "house",
+   "district": "26",
+   "committee": "13954",
+   "contributions": 6295.0
+  },
+  {
+   "name": "Jill Barry",
+   "chamber": "house",
+   "district": "31",
+   "committee": "13744",
+   "contributions": 2890.0
+  },
+  {
+   "name": "Beloved-Grace Carter",
+   "chamber": "house",
+   "district": "39",
+   "committee": "13921",
+   "contributions": 1337.33
+  },
+  {
+   "name": "Elizabeth Cliff",
+   "chamber": "house",
+   "district": "112",
+   "committee": "13886",
+   "contributions": 8640.0
+  },
+  {
+   "name": "Patrick Biggins",
+   "chamber": "house",
+   "district": "11",
+   "committee": "13985",
+   "contributions": 6311.0
+  },
+  {
+   "name": "William Davidson",
+   "chamber": "house",
+   "district": "28",
+   "committee": "13974",
+   "contributions": 4661.0
+  },
+  {
+   "name": "Patricia Billie Miller",
+   "chamber": "senate",
+   "district": "27",
+   "committee": "13640",
+   "contributions": 20891.0
+  },
+  {
+   "name": "Robert Hendrickson",
+   "chamber": "house",
+   "district": "58",
+   "committee": "13706",
+   "contributions": 5975.0
+  },
+  {
+   "name": "John Bolton",
+   "chamber": "house",
+   "district": "136",
+   "committee": "13929",
+   "contributions": 4660.0
+  },
+  {
+   "name": "Ann Bonney",
+   "chamber": "house",
+   "district": "53",
+   "committee": "13858",
+   "contributions": 7365.0
+  },
+  {
+   "name": "Aaron Bowman",
+   "chamber": "house",
+   "district": "54",
+   "committee": "13854",
+   "contributions": 7035.0
+  },
+  {
+   "name": "Patrick Boyd",
+   "chamber": "house",
+   "district": "50",
+   "committee": "13748",
+   "contributions": 7565.81
+  },
+  {
+   "name": "Brenda Santopolo Hefferon",
+   "chamber": "house",
+   "district": "109",
+   "committee": "14000",
+   "contributions": 9880.0
+  },
+  {
+   "name": "Brian Lanoue",
+   "chamber": "house",
+   "district": "45",
+   "committee": "13791",
+   "contributions": 6435.0
+  },
+  {
+   "name": "Seth Bronko",
+   "chamber": "house",
+   "district": "70",
+   "committee": "13559",
+   "contributions": 6890.0
+  },
+  {
+   "name": "William Buckbee",
+   "chamber": "house",
+   "district": "67",
+   "committee": "13742",
+   "contributions": 6042.0
+  },
+  {
+   "name": "Scott Burns",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "13917",
+   "contributions": 18735.0
+  },
+  {
+   "name": "Larry Butler",
+   "chamber": "house",
+   "district": "72",
+   "committee": "13766",
+   "contributions": 6590.0
+  },
+  {
+   "name": "Jorge Cabrera",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "13641",
+   "contributions": 21475.0
+  },
+  {
+   "name": "Jane Wisialowski",
+   "chamber": "house",
+   "district": "23",
+   "committee": "13890",
+   "contributions": 5990.0
+  },
+  {
+   "name": "Juan Candelaria",
+   "chamber": "house",
+   "district": "95",
+   "committee": "13695",
+   "contributions": 13408.02
+  },
+  {
+   "name": "Vincent Candelora",
+   "chamber": "house",
+   "district": "86",
+   "committee": "13853",
+   "contributions": 4520.0
+  },
+  {
+   "name": "Joseph Canino",
+   "chamber": "house",
+   "district": "65",
+   "committee": "13869",
+   "contributions": 6553.39
+  },
+  {
+   "name": "Cara Pavalock-D'Amato",
+   "chamber": "house",
+   "district": "77",
+   "committee": "13567",
+   "contributions": 6125.0
+  },
+  {
+   "name": "Elain Cariati",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "13790",
+   "contributions": 18320.0
+  },
+  {
+   "name": "Carleton Giles",
+   "chamber": "house",
+   "district": "140",
+   "committee": "13849",
+   "contributions": 8000.0
+  },
+  {
+   "name": "Devin Carney",
+   "chamber": "house",
+   "district": "23",
+   "committee": "13787",
+   "contributions": 7330.0
+  },
+  {
+   "name": "Christie Carpino",
+   "chamber": "house",
+   "district": "32",
+   "committee": "13614",
+   "contributions": 9260.0
+  },
+  {
+   "name": "Christopher Carrena",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "13905",
+   "contributions": 18595.0
+  },
+  {
+   "name": "Jay Case",
+   "chamber": "house",
+   "district": "63",
+   "committee": "13568",
+   "contributions": 6935.0
+  },
+  {
+   "name": "Nicholas Casiano",
+   "chamber": "house",
+   "district": "46",
+   "committee": "13934",
+   "contributions": 3167.0
+  },
+  {
+   "name": "David Cassetti",
+   "chamber": "house",
+   "district": "104",
+   "committee": "13819",
+   "contributions": 10656.11
+  },
+  {
+   "name": "Brandon Chafee",
+   "chamber": "house",
+   "district": "33",
+   "committee": "13767",
+   "contributions": 6929.0
+  },
+  {
+   "name": "Edward Charamut",
+   "chamber": "house",
+   "district": "29",
+   "committee": "13980",
+   "contributions": 6600.0
+  },
+  {
+   "name": "Holly Cheeseman",
+   "chamber": "house",
+   "district": "37",
+   "committee": "13797",
+   "contributions": 9500.0
+  },
+  {
+   "name": "Christopher Tierinni",
+   "chamber": "house",
+   "district": "10",
+   "committee": "13833",
+   "contributions": 6480.0
+  },
+  {
+   "name": "Mary Mushinsky",
+   "chamber": "house",
+   "district": "85",
+   "committee": "13654",
+   "contributions": 6697.0
+  },
+  {
+   "name": "Richard Leborious",
+   "chamber": "house",
+   "district": "59",
+   "committee": "13679",
+   "contributions": 8920.0
+  },
+  {
+   "name": "David Spruance",
+   "chamber": "house",
+   "district": "47",
+   "committee": "13864",
+   "contributions": 6435.0
+  },
+  {
+   "name": "Michelle Coelho",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "13711",
+   "contributions": 24355.0
+  },
+  {
+   "name": "Christine Cohen",
+   "chamber": "senate",
+   "district": "12",
+   "committee": "13607",
+   "contributions": 18675.0
+  },
+  {
+   "name": "Colette Kabasakalian",
+   "chamber": "house",
+   "district": "111",
+   "committee": "13915",
+   "contributions": 6716.0
+  },
+  {
+   "name": "Tremell Collins",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "13661",
+   "contributions": 10950.0
+  },
+  {
+   "name": "Raymond Collins",
+   "chamber": "house",
+   "district": "117",
+   "committee": "13757",
+   "contributions": 8225.0
+  },
+  {
+   "name": "Alphonse Paolillo",
+   "chamber": "house",
+   "district": "97",
+   "committee": "13678",
+   "contributions": 6237.0
+  },
+  {
+   "name": "Bradley Koltz",
+   "chamber": "house",
+   "district": "2",
+   "committee": "13952",
+   "contributions": 2315.03
+  },
+  {
+   "name": "Mark Anderson",
+   "chamber": "house",
+   "district": "62",
+   "committee": "13620",
+   "contributions": 6388.67
+  },
+  {
+   "name": "Ernest Newton",
+   "chamber": "senate",
+   "district": "23",
+   "committee": "13828",
+   "contributions": 34410.0
+  },
+  {
+   "name": "Minnie Gonzalez",
+   "chamber": "house",
+   "district": "3",
+   "committee": "13771",
+   "contributions": 6250.0
+  },
+  {
+   "name": "John Kissel",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "13636",
+   "contributions": 17865.0
+  },
+  {
+   "name": "Julio Concepcion",
+   "chamber": "house",
+   "district": "4",
+   "committee": "13735",
+   "contributions": 4845.0
+  },
+  {
+   "name": "Christine Conley",
+   "chamber": "house",
+   "district": "40",
+   "committee": "13575",
+   "contributions": 6370.0
+  },
+  {
+   "name": "Michelle Cook",
+   "chamber": "house",
+   "district": "65",
+   "committee": "13723",
+   "contributions": 6905.0
+  },
+  {
+   "name": "Francis Cooley",
+   "chamber": "house",
+   "district": "22",
+   "committee": "13699",
+   "contributions": 7885.0
+  },
+  {
+   "name": "Corey Paris",
+   "chamber": "house",
+   "district": "145",
+   "committee": "13682",
+   "contributions": 7874.0
+  },
+  {
+   "name": "Robert Cormier",
+   "chamber": "house",
+   "district": "12",
+   "committee": "13887",
+   "contributions": 6179.0
+  },
+  {
+   "name": "Cristin McCarthy Vahey",
+   "chamber": "house",
+   "district": "133",
+   "committee": "13546",
+   "contributions": 6930.0
+  },
+  {
+   "name": "Jeffrey Currey",
+   "chamber": "house",
+   "district": "11",
+   "committee": "13632",
+   "contributions": 975.0
+  },
+  {
+   "name": "Daniel Garrett",
+   "chamber": "house",
+   "district": "88",
+   "committee": "13843",
+   "contributions": 3987.0
+  },
+  {
+   "name": "Laura Dancho",
+   "chamber": "house",
+   "district": "120",
+   "committee": "13749",
+   "contributions": 7120.0
+  },
+  {
+   "name": "David Michel",
+   "chamber": "house",
+   "district": "146",
+   "committee": "13755",
+   "contributions": 12779.4
+  },
+  {
+   "name": "lisa Deane",
+   "chamber": "house",
+   "district": "101",
+   "committee": "13839",
+   "contributions": 7700.0
+  },
+  {
+   "name": "Mark DeCaprio",
+   "chamber": "house",
+   "district": "48",
+   "committee": "13626",
+   "contributions": 6406.0
+  },
+  {
+   "name": "David DeFronzo",
+   "chamber": "house",
+   "district": "26",
+   "committee": "13837",
+   "contributions": 7751.0
+  },
+  {
+   "name": "Tom Delnicki",
+   "chamber": "house",
+   "district": "14",
+   "committee": "13777",
+   "contributions": 8760.0
+  },
+  {
+   "name": "Michael Demicco",
+   "chamber": "house",
+   "district": "21",
+   "committee": "13764",
+   "contributions": 9094.0
+  },
+  {
+   "name": "Jeffrey Desmarais",
+   "chamber": "senate",
+   "district": "32",
+   "committee": "13554",
+   "contributions": 19047.0
+  },
+  {
+   "name": "Michael DiGiovancarlo",
+   "chamber": "house",
+   "district": "74",
+   "committee": "13637",
+   "contributions": 7370.0
+  },
+  {
+   "name": "Donna Veach",
+   "chamber": "house",
+   "district": "30",
+   "committee": "13665",
+   "contributions": 6295.0
+  },
+  {
+   "name": "Donna Meier",
+   "chamber": "house",
+   "district": "13",
+   "committee": "13998",
+   "contributions": 2025.0
+  },
+  {
+   "name": "JASON DOUCETTE",
+   "chamber": "house",
+   "district": "13",
+   "committee": "13838",
+   "contributions": 6620.0
+  },
+  {
+   "name": "Doug Dubitsky",
+   "chamber": "house",
+   "district": "47",
+   "committee": "13785",
+   "contributions": 7680.0
+  },
+  {
+   "name": "Jeffrey Duigou",
+   "chamber": "senate",
+   "district": "33",
+   "committee": "13625",
+   "contributions": 19816.0
+  },
+  {
+   "name": "Jennifer Dzen",
+   "chamber": "house",
+   "district": "57",
+   "committee": "13571",
+   "contributions": 7560.0
+  },
+  {
+   "name": "Edwin Cady",
+   "chamber": "house",
+   "district": "69",
+   "committee": "13740",
+   "contributions": 10038.2
+  },
+  {
+   "name": "Edward Edelson",
+   "chamber": "house",
+   "district": "69",
+   "committee": "13572",
+   "contributions": 8418.0
+  },
+  {
+   "name": "Elizabeth (Eilish) Main",
+   "chamber": "house",
+   "district": "146",
+   "committee": "13857",
+   "contributions": 7709.0
+  },
+  {
+   "name": "Cynthia Mangini",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "13773",
+   "contributions": 19550.0
+  },
+  {
+   "name": "Anne Dauphinais",
+   "chamber": "house",
+   "district": "44",
+   "committee": "13609",
+   "contributions": 5940.0
+  },
+  {
+   "name": "Mae Flexer",
+   "chamber": "senate",
+   "district": "29",
+   "committee": "13893",
+   "contributions": 18617.09
+  },
+  {
+   "name": "Chris Stewart",
+   "chamber": "house",
+   "district": "51",
+   "committee": "13758",
+   "contributions": 6048.0
+  },
+  {
+   "name": "Susan Johnson",
+   "chamber": "house",
+   "district": "49",
+   "committee": "13691",
+   "contributions": 7535.0
+  },
+  {
+   "name": "Katherine Courpas",
+   "chamber": "house",
+   "district": "149",
+   "committee": "13775",
+   "contributions": 7045.0
+  },
+  {
+   "name": "Hector Arzeno",
+   "chamber": "house",
+   "district": "151",
+   "committee": "13573",
+   "contributions": 6933.0
+  },
+  {
+   "name": "Eric Berthel",
+   "chamber": "senate",
+   "district": "32",
+   "committee": "13547",
+   "contributions": 19786.0
+  },
+  {
+   "name": "Etan Hirsch",
+   "chamber": "house",
+   "district": "119",
+   "committee": "13784",
+   "contributions": 7625.18
+  },
+  {
+   "name": "Tammy Exum",
+   "chamber": "house",
+   "district": "19",
+   "committee": "13669",
+   "contributions": 7878.0
+  },
+  {
+   "name": "Farley Santos",
+   "chamber": "house",
+   "district": "109",
+   "committee": "13613",
+   "contributions": 8230.0
+  },
+  {
+   "name": "Jerry Farrell",
+   "chamber": "house",
+   "district": "85",
+   "committee": "13588",
+   "contributions": 49072.26
+  },
+  {
+   "name": "Ryan Fazio",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "13741",
+   "contributions": 20740.0
+  },
+  {
+   "name": "Antonio Felipe",
+   "chamber": "house",
+   "district": "130",
+   "committee": "13675",
+   "contributions": 1490.0
+  },
+  {
+   "name": "Mary Rydingsward",
+   "chamber": "house",
+   "district": "77",
+   "committee": "14009",
+   "contributions": 2485.0
+  },
+  {
+   "name": "William Finch",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "13904",
+   "contributions": 23556.0
+  },
+  {
+   "name": "Craig Fishbein",
+   "chamber": "house",
+   "district": "90",
+   "committee": "13616",
+   "contributions": 7335.0
+  },
+  {
+   "name": "Martin Foncello",
+   "chamber": "house",
+   "district": "107",
+   "committee": "13576",
+   "contributions": 6645.0
+  },
+  {
+   "name": "John Fonfara",
+   "chamber": "senate",
+   "district": "1",
+   "committee": "13899",
+   "contributions": 1275.0
+  },
+  {
+   "name": "Jaime Foster",
+   "chamber": "house",
+   "district": "57",
+   "committee": "13728",
+   "contributions": 6778.0
+  },
+  {
+   "name": "Ellen Fox",
+   "chamber": "house",
+   "district": "131",
+   "committee": "13806",
+   "contributions": 7425.0
+  },
+  {
+   "name": "Bob Duff",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "13674",
+   "contributions": 22564.0
+  },
+  {
+   "name": "Catherine Osten",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "13696",
+   "contributions": 20124.0
+  },
+  {
+   "name": "Derell Wilson",
+   "chamber": "house",
+   "district": "46",
+   "committee": "13618",
+   "contributions": 6875.0
+  },
+  {
+   "name": "Dominique Johnson",
+   "chamber": "house",
+   "district": "143",
+   "committee": "13672",
+   "contributions": 7666.24
+  },
+  {
+   "name": "James Maroney",
+   "chamber": "senate",
+   "district": "14",
+   "committee": "13681",
+   "contributions": 20168.0
+  },
+  {
+   "name": "John-Michael Parker",
+   "chamber": "house",
+   "district": "101",
+   "committee": "13694",
+   "contributions": 7810.0
+  },
+  {
+   "name": "Kerry Wood",
+   "chamber": "house",
+   "district": "29",
+   "committee": "13605",
+   "contributions": 8010.0
+  },
+  {
+   "name": "Robert Hoggard",
+   "chamber": "house",
+   "district": "33",
+   "committee": "13960",
+   "contributions": 2025.63
+  },
+  {
+   "name": "Matthew Lesser",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "13714",
+   "contributions": 18596.0
+  },
+  {
+   "name": "Merry Garrett",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "13720",
+   "contributions": 18510.0
+  },
+  {
+   "name": "Patricia Dillon",
+   "chamber": "house",
+   "district": "92",
+   "committee": "13562",
+   "contributions": 6359.0
+  },
+  {
+   "name": "Michael Quinn",
+   "chamber": "house",
+   "district": "82",
+   "committee": "13713",
+   "contributions": 6860.0
+  },
+  {
+   "name": "Robin Comey",
+   "chamber": "house",
+   "district": "102",
+   "committee": "13733",
+   "contributions": 7055.0
+  },
+  {
+   "name": "Travis Simms",
+   "chamber": "house",
+   "district": "140",
+   "committee": "13621",
+   "contributions": 6361.0
+  },
+  {
+   "name": "Gary Winfield",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "13556",
+   "contributions": 21609.0
+  },
+  {
+   "name": "Henry Genga",
+   "chamber": "house",
+   "district": "10",
+   "committee": "13537",
+   "contributions": 6414.06
+  },
+  {
+   "name": "Geoffrey Luxenberg",
+   "chamber": "house",
+   "district": "12",
+   "committee": "13730",
+   "contributions": 6046.0
+  },
+  {
+   "name": "George Austin",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "13813",
+   "contributions": 5157.0
+  },
+  {
+   "name": "Manju Gerber",
+   "chamber": "house",
+   "district": "17",
+   "committee": "13841",
+   "contributions": 6240.0
+  },
+  {
+   "name": "Bobby Gibson",
+   "chamber": "house",
+   "district": "15",
+   "committee": "13543",
+   "contributions": 8502.0
+  },
+  {
+   "name": "Jillian Gilchrest",
+   "chamber": "house",
+   "district": "18",
+   "committee": "13586",
+   "contributions": 6594.0
+  },
+  {
+   "name": "Bob Godfrey",
+   "chamber": "house",
+   "district": "110",
+   "committee": "13868",
+   "contributions": 6695.0
+  },
+  {
+   "name": "Joseph Gresko",
+   "chamber": "house",
+   "district": "121",
+   "committee": "13557",
+   "contributions": 8330.0
+  },
+  {
+   "name": "Kenneth Gucker",
+   "chamber": "house",
+   "district": "138",
+   "committee": "13644",
+   "contributions": 6382.0
+  },
+  {
+   "name": "Gregory Haddad",
+   "chamber": "house",
+   "district": "54",
+   "committee": "13635",
+   "contributions": 6827.0
+  },
+  {
+   "name": "Nancy Hammarstrom",
+   "chamber": "house",
+   "district": "8",
+   "committee": "13846",
+   "contributions": 6148.0
+  },
+  {
+   "name": "Stephen Harding",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "13604",
+   "contributions": 18865.0
+  },
+  {
+   "name": "Alexis Harrison",
+   "chamber": "house",
+   "district": "132",
+   "committee": "13850",
+   "contributions": 6770.0
+  },
+  {
+   "name": "Joan Hartley",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "13677",
+   "contributions": 4200.0
+  },
+  {
+   "name": "William Heffernan",
+   "chamber": "house",
+   "district": "115",
+   "committee": "13914",
+   "contributions": 6415.0
+  },
+  {
+   "name": "William Heffernan",
+   "chamber": "house",
+   "district": "115",
+   "committee": "13594",
+   "contributions": 5670.0
+  },
+  {
+   "name": "Hubert Delany",
+   "chamber": "house",
+   "district": "144",
+   "committee": "13655",
+   "contributions": 6490.0
+  },
+  {
+   "name": "Tony Hwang",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "13591",
+   "contributions": 22137.0
+  },
+  {
+   "name": "Rebecca Hyland",
+   "chamber": "house",
+   "district": "90",
+   "committee": "13630",
+   "contributions": 6094.0
+  },
+  {
+   "name": "Yoshiyahv Yisrael",
+   "chamber": "house",
+   "district": "124",
+   "committee": "13994",
+   "contributions": 2611.9
+  },
+  {
+   "name": "Raymond Ingraham",
+   "chamber": "house",
+   "district": "102",
+   "committee": "13577",
+   "contributions": 6250.0
+  },
+  {
+   "name": "Jonathan Fazzino",
+   "chamber": "house",
+   "district": "83",
+   "committee": "13693",
+   "contributions": 6085.0
+  },
+  {
+   "name": "Jamie Vaughan",
+   "chamber": "house",
+   "district": "25",
+   "committee": "13683",
+   "contributions": 7175.0
+  },
+  {
+   "name": "Jan Hochadel",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "13670",
+   "contributions": 17819.0
+  },
+  {
+   "name": "Jane Garibay",
+   "chamber": "house",
+   "district": "60",
+   "committee": "13710",
+   "contributions": 6403.0
+  },
+  {
+   "name": "Jason Bennett",
+   "chamber": "house",
+   "district": "125",
+   "committee": "13995",
+   "contributions": 7860.0
+  },
+  {
+   "name": "Jason Buchsbaum",
+   "chamber": "house",
+   "district": "69",
+   "committee": "13549",
+   "contributions": 7460.0
+  },
+  {
+   "name": "Jason Guidone",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "13840",
+   "contributions": 18883.0
+  },
+  {
+   "name": "Jeffrey Litke",
+   "chamber": "house",
+   "district": "70",
+   "committee": "13815",
+   "contributions": 6765.0
+  },
+  {
+   "name": "Jeffrey Gordon",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "13539",
+   "contributions": 19585.0
+  },
+  {
+   "name": "Jennifer Pope",
+   "chamber": "house",
+   "district": "91",
+   "committee": "13789",
+   "contributions": 6716.0
+  },
+  {
+   "name": "Jennifer Leeper",
+   "chamber": "house",
+   "district": "132",
+   "committee": "13702",
+   "contributions": 9750.0
+  },
+  {
+   "name": "Jennifer Marshall-Nealy",
+   "chamber": "house",
+   "district": "15",
+   "committee": "13900",
+   "contributions": 6610.0
+  },
+  {
+   "name": "Arnold Jensen",
+   "chamber": "house",
+   "district": "131",
+   "committee": "13759",
+   "contributions": 7130.0
+  },
+  {
+   "name": "James Malerba",
+   "chamber": "house",
+   "district": "146",
+   "committee": "13976",
+   "contributions": 7395.0
+  },
+  {
+   "name": "Joseph Accettullo",
+   "chamber": "house",
+   "district": "91",
+   "committee": "13860",
+   "contributions": 666.0
+  },
+  {
+   "name": "Joe Hoxha",
+   "chamber": "house",
+   "district": "78",
+   "committee": "13700",
+   "contributions": 6565.0
+  },
+  {
+   "name": "Joseph Young",
+   "chamber": "house",
+   "district": "12",
+   "committee": "13799",
+   "contributions": 60.0
+  },
+  {
+   "name": "Steven Johnstone",
+   "chamber": "senate",
+   "district": "14",
+   "committee": "13845",
+   "contributions": 18603.0
+  },
+  {
+   "name": "Steven Johnstone",
+   "chamber": "house",
+   "district": "117",
+   "committee": "13783",
+   "contributions": 50.0
+  },
+  {
+   "name": "Jonathan Jacobson",
+   "chamber": "house",
+   "district": "148",
+   "committee": "13865",
+   "contributions": 7660.0
+  },
+  {
+   "name": "Joshua Elliott",
+   "chamber": "house",
+   "district": "88",
+   "committee": "13772",
+   "contributions": 7567.0
+  },
+  {
+   "name": "Julie Kushner",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "13608",
+   "contributions": 18091.0
+  },
+  {
+   "name": "Kai Juanna Belton",
+   "chamber": "house",
+   "district": "100",
+   "committee": "13596",
+   "contributions": 6658.72
+  },
+  {
+   "name": "Kami Evans",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "13982",
+   "contributions": 21160.0
+  },
+  {
+   "name": "Kara Rochelle",
+   "chamber": "house",
+   "district": "104",
+   "committee": "13653",
+   "contributions": 6343.0
+  },
+  {
+   "name": "Kate Farrar",
+   "chamber": "house",
+   "district": "20",
+   "committee": "13615",
+   "contributions": 7296.6
+  },
+  {
+   "name": "Kathy Kennedy",
+   "chamber": "house",
+   "district": "119",
+   "committee": "13563",
+   "contributions": 6055.0
+  },
+  {
+   "name": "Sarah Keitt",
+   "chamber": "house",
+   "district": "134",
+   "committee": "13701",
+   "contributions": 6719.0
+  },
+  {
+   "name": "Kevin Kelly",
+   "chamber": "senate",
+   "district": "21",
+   "committee": "13747",
+   "contributions": 12580.0
+  },
+  {
+   "name": "Kevin Brown",
+   "chamber": "house",
+   "district": "56",
+   "committee": "13617",
+   "contributions": 6235.0
+  },
+  {
+   "name": "Maryam Khan",
+   "chamber": "house",
+   "district": "5",
+   "committee": "13580",
+   "contributions": 6883.0
+  },
+  {
+   "name": "Kieran Ahern",
+   "chamber": "house",
+   "district": "87",
+   "committee": "13877",
+   "contributions": 1970.0
+  },
+  {
+   "name": "Kimberly Becker",
+   "chamber": "house",
+   "district": "62",
+   "committee": "13763",
+   "contributions": 8211.6
+  },
+  {
+   "name": "Kim Healy",
+   "chamber": "house",
+   "district": "42",
+   "committee": "13872",
+   "contributions": 6305.0
+  },
+  {
+   "name": "Steven King",
+   "chamber": "house",
+   "district": "14",
+   "committee": "13770",
+   "contributions": 6901.0
+  },
+  {
+   "name": "Richard Knotek",
+   "chamber": "house",
+   "district": "34",
+   "committee": "13909",
+   "contributions": 12110.0
+  },
+  {
+   "name": "Kristin Hoffman",
+   "chamber": "senate",
+   "district": "2",
+   "committee": "13885",
+   "contributions": 6163.0
+  },
+  {
+   "name": "Roland Lemar",
+   "chamber": "house",
+   "district": "96",
+   "committee": "13574",
+   "contributions": 7192.0
+  },
+  {
+   "name": "Dorothy Lerner",
+   "chamber": "house",
+   "district": "122",
+   "committee": "13874",
+   "contributions": 6932.22
+  },
+  {
+   "name": "Cinzia Lettieri",
+   "chamber": "house",
+   "district": "35",
+   "committee": "13685",
+   "contributions": 6880.0
+  },
+  {
+   "name": "Liz Linehan",
+   "chamber": "house",
+   "district": "103",
+   "committee": "13671",
+   "contributions": 6652.0
+  },
+  {
+   "name": "Lisa Seminara",
+   "chamber": "senate",
+   "district": "8",
+   "committee": "13550",
+   "contributions": 20493.0
+  },
+  {
+   "name": "Melissa Longo",
+   "chamber": "house",
+   "district": "134",
+   "committee": "13762",
+   "contributions": 6240.0
+  },
+  {
+   "name": "Rick Lopes",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "13599",
+   "contributions": 18100.0
+  },
+  {
+   "name": "Lucia \"Lucy\" Dathan",
+   "chamber": "house",
+   "district": "142",
+   "committee": "13732",
+   "contributions": 6705.0
+  },
+  {
+   "name": "Mark Macchio",
+   "chamber": "house",
+   "district": "118",
+   "committee": "13964",
+   "contributions": 6137.0
+  },
+  {
+   "name": "Cecilia Maher",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "13662",
+   "contributions": 20770.0
+  },
+  {
+   "name": "Gwen Samuel",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "13933",
+   "contributions": 2742.0
+  },
+  {
+   "name": "Brandi Mandato",
+   "chamber": "senate",
+   "district": "34",
+   "committee": "13871",
+   "contributions": 20275.0
+  },
+  {
+   "name": "Manny Sanchez",
+   "chamber": "house",
+   "district": "24",
+   "committee": "13600",
+   "contributions": 7745.0
+  },
+  {
+   "name": "Marek Kozikowski",
+   "chamber": "house",
+   "district": "14",
+   "committee": "13818",
+   "contributions": 1355.0
+  },
+  {
+   "name": "Maria Horn",
+   "chamber": "house",
+   "district": "64",
+   "committee": "13623",
+   "contributions": 7706.0
+  },
+  {
+   "name": "Marie Pyznar",
+   "chamber": "house",
+   "district": "58",
+   "committee": "13756",
+   "contributions": 6125.0
+  },
+  {
+   "name": "Mark Adams",
+   "chamber": "house",
+   "district": "139",
+   "committee": "13809",
+   "contributions": 6444.0
+  },
+  {
+   "name": "Martin Looney",
+   "chamber": "senate",
+   "district": "11",
+   "committee": "13561",
+   "contributions": 19676.0
+  },
+  {
+   "name": "Eneida Martinez",
+   "chamber": "house",
+   "district": "124",
+   "committee": "13802",
+   "contributions": 6815.0
+  },
+  {
+   "name": "Martha Marx",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "13660",
+   "contributions": 17939.0
+  },
+  {
+   "name": "Mary Fortier",
+   "chamber": "house",
+   "district": "79",
+   "committee": "13548",
+   "contributions": 6695.0
+  },
+  {
+   "name": "Gale Mastrofrancesco",
+   "chamber": "house",
+   "district": "80",
+   "committee": "13622",
+   "contributions": 7180.0
+  },
+  {
+   "name": "Matthew Blumenthal",
+   "chamber": "house",
+   "district": "147",
+   "committee": "13745",
+   "contributions": 7140.0
+  },
+  {
+   "name": "Matt Siracusa",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "13808",
+   "contributions": 19522.11
+  },
+  {
+   "name": "Kathleen McCarty",
+   "chamber": "house",
+   "district": "38",
+   "committee": "13920",
+   "contributions": 8210.01
+  },
+  {
+   "name": "Douglas McCrory",
+   "chamber": "senate",
+   "district": "2",
+   "committee": "13612",
+   "contributions": 21714.0
+  },
+  {
+   "name": "Johnnie McFadden",
+   "chamber": "house",
+   "district": "95",
+   "committee": "13658",
+   "contributions": 10495.0
+  },
+  {
+   "name": "Ben McGorty",
+   "chamber": "house",
+   "district": "122",
+   "committee": "13725",
+   "contributions": 6785.0
+  },
+  {
+   "name": "MD Masudur Rahman",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "13684",
+   "contributions": 10144.7
+  },
+  {
+   "name": "Melissa Santana",
+   "chamber": "house",
+   "district": "110",
+   "committee": "13916",
+   "contributions": 7621.0
+  },
+  {
+   "name": "Nick Menapace",
+   "chamber": "house",
+   "district": "37",
+   "committee": "13664",
+   "contributions": 6469.65
+  },
+  {
+   "name": "Michael Hinton",
+   "chamber": "house",
+   "district": "45",
+   "committee": "13836",
+   "contributions": 325.0
+  },
+  {
+   "name": "Michelle Embree Ku",
+   "chamber": "house",
+   "district": "106",
+   "committee": "13795",
+   "contributions": 7250.0
+  },
+  {
+   "name": "Michael Schulitz",
+   "chamber": "house",
+   "district": "16",
+   "committee": "13879",
+   "contributions": 7600.0
+  },
+  {
+   "name": "Michael Malloy",
+   "chamber": "house",
+   "district": "61",
+   "committee": "13968",
+   "contributions": 9671.14
+  },
+  {
+   "name": "Mitch Bolinsky",
+   "chamber": "house",
+   "district": "106",
+   "committee": "13624",
+   "contributions": 7840.0
+  },
+  {
+   "name": "Moira Rader",
+   "chamber": "house",
+   "district": "98",
+   "committee": "13645",
+   "contributions": 6945.0
+  },
+  {
+   "name": "Juan Montalvo",
+   "chamber": "house",
+   "district": "82",
+   "committee": "13822",
+   "contributions": 375.0
+  },
+  {
+   "name": "Austin Monteiro",
+   "chamber": "house",
+   "district": "110",
+   "committee": "13943",
+   "contributions": 7205.0
+  },
+  {
+   "name": "Marilyn Moore",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "13751",
+   "contributions": 100.01
+  },
+  {
+   "name": "Nyrell Moore",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "13780",
+   "contributions": 3975.0
+  },
+  {
+   "name": "James Morelli",
+   "chamber": "house",
+   "district": "81",
+   "committee": "13768",
+   "contributions": 7992.0
+  },
+  {
+   "name": "Brian Motola",
+   "chamber": "house",
+   "district": "56",
+   "committee": "13589",
+   "contributions": 6955.0
+  },
+  {
+   "name": "Ronald Napoli",
+   "chamber": "house",
+   "district": "73",
+   "committee": "13689",
+   "contributions": 7165.0
+  },
+  {
+   "name": "Nicholas Gauthier",
+   "chamber": "house",
+   "district": "38",
+   "committee": "13722",
+   "contributions": 6413.0
+  },
+  {
+   "name": "Nicholas Simmons",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "13717",
+   "contributions": 338195.04
+  },
+  {
+   "name": "Nigel Macon-Wilson",
+   "chamber": "house",
+   "district": "100",
+   "committee": "13922",
+   "contributions": 7235.0
+  },
+  {
+   "name": "Nicole Klarides-Ditria",
+   "chamber": "house",
+   "district": "105",
+   "committee": "13729",
+   "contributions": 5010.0
+  },
+  {
+   "name": "Anthony Nolan",
+   "chamber": "house",
+   "district": "39",
+   "committee": "13801",
+   "contributions": 8053.0
+  },
+  {
+   "name": "Norman Needleman",
+   "chamber": "senate",
+   "district": "33",
+   "committee": "13680",
+   "contributions": 13605.0
+  },
+  {
+   "name": "Tammy Nuccio",
+   "chamber": "house",
+   "district": "53",
+   "committee": "13579",
+   "contributions": 7010.0
+  },
+  {
+   "name": "Edward O'Brien",
+   "chamber": "house",
+   "district": "115",
+   "committee": "13602",
+   "contributions": 1660.0
+  },
+  {
+   "name": "Olga Anastos",
+   "chamber": "house",
+   "district": "148",
+   "committee": "13975",
+   "contributions": 7220.0
+  },
+  {
+   "name": "Steven Orosco",
+   "chamber": "senate",
+   "district": "11",
+   "committee": "13781",
+   "contributions": 17870.0
+  },
+  {
+   "name": "Melissa Osborne",
+   "chamber": "house",
+   "district": "16",
+   "committee": "13553",
+   "contributions": 7905.0
+  },
+  {
+   "name": "Abdul Osmanu",
+   "chamber": "house",
+   "district": "94",
+   "committee": "13908",
+   "contributions": 7710.0
+  },
+  {
+   "name": "Andrew Parrella",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "13848",
+   "contributions": 1879.0
+  },
+  {
+   "name": "Paul Crisci",
+   "chamber": "senate",
+   "district": "12",
+   "committee": "13889",
+   "contributions": 2355.0
+  },
+  {
+   "name": "Paul Honig",
+   "chamber": "senate",
+   "district": "8",
+   "committee": "13590",
+   "contributions": 19408.25
+  },
+  {
+   "name": "Paul Cicarella",
+   "chamber": "senate",
+   "district": "34",
+   "committee": "13666",
+   "contributions": 20342.0
+  },
+  {
+   "name": "Patrick Callahan",
+   "chamber": "house",
+   "district": "108",
+   "committee": "13631",
+   "contributions": 6977.0
+  },
+  {
+   "name": "Jason Perillo",
+   "chamber": "house",
+   "district": "113",
+   "committee": "13834",
+   "contributions": 6865.0
+  },
+  {
+   "name": "Christopher Peritore",
+   "chamber": "house",
+   "district": "135",
+   "committee": "13861",
+   "contributions": 7015.0
+  },
+  {
+   "name": "Peter Bang",
+   "chamber": "house",
+   "district": "143",
+   "committee": "13942",
+   "contributions": 1465.0
+  },
+  {
+   "name": "Paul Cappiali",
+   "chamber": "house",
+   "district": "150",
+   "committee": "13945",
+   "contributions": 7418.0
+  },
+  {
+   "name": "Abigail Pizarro",
+   "chamber": "house",
+   "district": "73",
+   "committee": "13855",
+   "contributions": 6545.0
+  },
+  {
+   "name": "William Pizzuto",
+   "chamber": "house",
+   "district": "71",
+   "committee": "13705",
+   "contributions": 6965.0
+  },
+  {
+   "name": "Joe Polletta",
+   "chamber": "house",
+   "district": "68",
+   "committee": "13760",
+   "contributions": 6665.0
+  },
+  {
+   "name": "Justin Potter",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "13778",
+   "contributions": 19921.0
+  },
+  {
+   "name": "Christopher Poulos",
+   "chamber": "house",
+   "district": "81",
+   "committee": "13565",
+   "contributions": 8181.0
+  },
+  {
+   "name": "Quentin Johnson",
+   "chamber": "house",
+   "district": "15",
+   "committee": "13881",
+   "contributions": 858.45
+  },
+  {
+   "name": "Sheila Quinn",
+   "chamber": "house",
+   "district": "141",
+   "committee": "13878",
+   "contributions": 7005.0
+  },
+  {
+   "name": "Rachel Khanna",
+   "chamber": "house",
+   "district": "149",
+   "committee": "13856",
+   "contributions": 18663.32
+  },
+  {
+   "name": "Rachel Chaleski",
+   "chamber": "house",
+   "district": "138",
+   "committee": "13555",
+   "contributions": 6270.0
+  },
+  {
+   "name": "Rafael Irizarry",
+   "chamber": "house",
+   "district": "121",
+   "committee": "13959",
+   "contributions": 6300.0
+  },
+  {
+   "name": "Raghib Allie-Brennan",
+   "chamber": "house",
+   "district": "2",
+   "committee": "13842",
+   "contributions": 6120.0
+  },
+  {
+   "name": "Marcus Brown",
+   "chamber": "house",
+   "district": "127",
+   "committee": "13646",
+   "contributions": 6475.0
+  },
+  {
+   "name": "Carol Hall",
+   "chamber": "house",
+   "district": "59",
+   "committee": "13697",
+   "contributions": 6884.0
+  },
+  {
+   "name": "Andre Baker",
+   "chamber": "house",
+   "district": "124",
+   "committee": "13715",
+   "contributions": 7225.0
+  },
+  {
+   "name": "David Yaccarino",
+   "chamber": "house",
+   "district": "87",
+   "committee": "13651",
+   "contributions": 7605.0
+  },
+  {
+   "name": "Herron Gaston",
+   "chamber": "senate",
+   "district": "23",
+   "committee": "13724",
+   "contributions": 20295.0
+  },
+  {
+   "name": "Gregory Howard",
+   "chamber": "house",
+   "district": "43",
+   "committee": "13688",
+   "contributions": 6940.0
+  },
+  {
+   "name": "Irene Haines",
+   "chamber": "house",
+   "district": "34",
+   "committee": "13647",
+   "contributions": 7180.0
+  },
+  {
+   "name": "John Piscopo",
+   "chamber": "house",
+   "district": "76",
+   "committee": "13753",
+   "contributions": 6440.0
+  },
+  {
+   "name": "Kevin Ryan",
+   "chamber": "house",
+   "district": "139",
+   "committee": "13737",
+   "contributions": 6479.0
+  },
+  {
+   "name": "Henri Martin",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "13692",
+   "contributions": 19425.0
+  },
+  {
+   "name": "Fred Gee",
+   "chamber": "house",
+   "district": "126",
+   "committee": "13736",
+   "contributions": 3610.0
+  },
+  {
+   "name": "Trenee McGee",
+   "chamber": "house",
+   "district": "116",
+   "committee": "13687",
+   "contributions": 6575.02
+  },
+  {
+   "name": "Joseph Zullo",
+   "chamber": "house",
+   "district": "99",
+   "committee": "13707",
+   "contributions": 5845.0
+  },
+  {
+   "name": "Rebecca Martinez",
+   "chamber": "house",
+   "district": "22",
+   "committee": "13826",
+   "contributions": 6225.0
+  },
+  {
+   "name": "Karen Reddington-Hughes",
+   "chamber": "house",
+   "district": "66",
+   "committee": "13627",
+   "contributions": 6566.0
+  },
+  {
+   "name": "Christopher Reddy",
+   "chamber": "senate",
+   "district": "29",
+   "committee": "13883",
+   "contributions": 19000.0
+  },
+  {
+   "name": "Renee LaPalme-Waldron",
+   "chamber": "house",
+   "district": "51",
+   "committee": "13876",
+   "contributions": 7835.0
+  },
+  {
+   "name": "Anne Hughes",
+   "chamber": "house",
+   "district": "135",
+   "committee": "13649",
+   "contributions": 6865.0
+  },
+  {
+   "name": "Geraldo Reyes",
+   "chamber": "house",
+   "district": "75",
+   "committee": "13731",
+   "contributions": 9155.5
+  },
+  {
+   "name": "Matthew Ritter",
+   "chamber": "house",
+   "district": "1",
+   "committee": "13603",
+   "contributions": 12245.0
+  },
+  {
+   "name": "Christopher Rivers",
+   "chamber": "house",
+   "district": "48",
+   "committee": "13642",
+   "contributions": 6535.0
+  },
+  {
+   "name": "Rodolfo Settimi",
+   "chamber": "house",
+   "district": "147",
+   "committee": "13978",
+   "contributions": 8180.0
+  },
+  {
+   "name": "Robert Blanchard",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "13634",
+   "contributions": 17999.24
+  },
+  {
+   "name": "Kadeem Roberts",
+   "chamber": "house",
+   "district": "137",
+   "committee": "13746",
+   "contributions": 7039.0
+  },
+  {
+   "name": "Christopher Robertson",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "13774",
+   "contributions": 18849.0
+  },
+  {
+   "name": "Jason Rojas",
+   "chamber": "house",
+   "district": "9",
+   "committee": "13638",
+   "contributions": 8385.0
+  },
+  {
+   "name": "Christopher Rosario",
+   "chamber": "house",
+   "district": "128",
+   "committee": "13598",
+   "contributions": 9285.0
+  },
+  {
+   "name": "Rose Fisch",
+   "chamber": "house",
+   "district": "11",
+   "committee": "13971",
+   "contributions": 1235.0
+  },
+  {
+   "name": "Kathryn Russell",
+   "chamber": "house",
+   "district": "36",
+   "committee": "13910",
+   "contributions": 6620.0
+  },
+  {
+   "name": "Alden Russell",
+   "chamber": "house",
+   "district": "24",
+   "committee": "13754",
+   "contributions": 6950.0
+  },
+  {
+   "name": "David Rutigliano",
+   "chamber": "house",
+   "district": "123",
+   "committee": "13765",
+   "contributions": 6529.78
+  },
+  {
+   "name": "Salema Davis",
+   "chamber": "house",
+   "district": "11",
+   "committee": "13990",
+   "contributions": 6045.0
+  },
+  {
+   "name": "Samantha Derenthal",
+   "chamber": "house",
+   "district": "44",
+   "committee": "13984",
+   "contributions": 6260.0
+  },
+  {
+   "name": "Rob Sampson",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "13560",
+   "contributions": 24575.0
+  },
+  {
+   "name": "Bobby Sanchez",
+   "chamber": "house",
+   "district": "25",
+   "committee": "13601",
+   "contributions": 6050.0
+  },
+  {
+   "name": "JAMES Sanchez",
+   "chamber": "house",
+   "district": "6",
+   "committee": "13657",
+   "contributions": 7695.0
+  },
+  {
+   "name": "John Santanella",
+   "chamber": "house",
+   "district": "58",
+   "committee": "13686",
+   "contributions": 6045.0
+  },
+  {
+   "name": "Hilda Santiago",
+   "chamber": "house",
+   "district": "84",
+   "committee": "13810",
+   "contributions": 7395.0
+  },
+  {
+   "name": "Saud Anwar",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "13522",
+   "contributions": 22650.0
+  },
+  {
+   "name": "Savet Constantine",
+   "chamber": "house",
+   "district": "42",
+   "committee": "13824",
+   "contributions": 6925.0
+  },
+  {
+   "name": "David Schrager",
+   "chamber": "house",
+   "district": "79",
+   "committee": "13804",
+   "contributions": 6471.0
+  },
+  {
+   "name": "Kaitlyn Shake",
+   "chamber": "house",
+   "district": "120",
+   "committee": "13862",
+   "contributions": 7430.2
+  },
+  {
+   "name": "Michael Shannon",
+   "chamber": "house",
+   "district": "117",
+   "committee": "13719",
+   "contributions": 7440.0
+  },
+  {
+   "name": "Shaun Mastroianni",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "13873",
+   "contributions": 20435.0
+  },
+  {
+   "name": "Shellye Davis",
+   "chamber": "senate",
+   "district": "2",
+   "committee": "13709",
+   "contributions": 19509.0
+  },
+  {
+   "name": "Sharon Botelle-Sherman",
+   "chamber": "house",
+   "district": "66",
+   "committee": "13977",
+   "contributions": 7136.0
+  },
+  {
+   "name": "Stephen Simonin",
+   "chamber": "house",
+   "district": "76",
+   "committee": "13829",
+   "contributions": 1080.0
+  },
+  {
+   "name": "Derek Slap",
+   "chamber": "senate",
+   "district": "5",
+   "committee": "13676",
+   "contributions": 20198.0
+  },
+  {
+   "name": "Frank Smith",
+   "chamber": "house",
+   "district": "118",
+   "committee": "13629",
+   "contributions": 6535.0
+  },
+  {
+   "name": "Heather Somers",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "13750",
+   "contributions": 21070.0
+  },
+  {
+   "name": "Steven Stafstrom",
+   "chamber": "house",
+   "district": "129",
+   "committee": "13667",
+   "contributions": 6390.0
+  },
+  {
+   "name": "Jonathan Steinberg",
+   "chamber": "house",
+   "district": "136",
+   "committee": "13690",
+   "contributions": 7905.0
+  },
+  {
+   "name": "Stephanie Weintraub",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "13718",
+   "contributions": 2525.0
+  },
+  {
+   "name": "Stephen Ellis",
+   "chamber": "house",
+   "district": "27",
+   "committee": "14007",
+   "contributions": 395.06
+  },
+  {
+   "name": "Steven Winter",
+   "chamber": "house",
+   "district": "94",
+   "committee": "13898",
+   "contributions": 7952.5
+  },
+  {
+   "name": "Stephen Meskers",
+   "chamber": "house",
+   "district": "150",
+   "committee": "13927",
+   "contributions": 7330.0
+  },
+  {
+   "name": "Stephen Weir",
+   "chamber": "house",
+   "district": "55",
+   "committee": "13721",
+   "contributions": 6565.0
+  },
+  {
+   "name": "Sujata Gadkar-Wilcox",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "13897",
+   "contributions": 18449.0
+  },
+  {
+   "name": "Morris Sumpter",
+   "chamber": "house",
+   "district": "92",
+   "committee": "13970",
+   "contributions": 20.0
+  },
+  {
+   "name": "Susan Deane-Shinbrot",
+   "chamber": "house",
+   "district": "40",
+   "committee": "13827",
+   "contributions": 920.0
+  },
+  {
+   "name": "Susanne Witkowski",
+   "chamber": "senate",
+   "district": "29",
+   "committee": "13566",
+   "contributions": 18215.0
+  },
+  {
+   "name": "Laurie Sweet",
+   "chamber": "house",
+   "district": "91",
+   "committee": "13832",
+   "contributions": 18099.03
+  },
+  {
+   "name": "Martin Tagliaferro",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "13937",
+   "contributions": 8506.0
+  },
+  {
+   "name": "Tarolyn Moore",
+   "chamber": "house",
+   "district": "94",
+   "committee": "13928",
+   "contributions": 6089.88
+  },
+  {
+   "name": "Eleni Kavros DeGraw",
+   "chamber": "house",
+   "district": "17",
+   "committee": "13643",
+   "contributions": 6880.0
+  },
+  {
+   "name": "Gary Turco",
+   "chamber": "house",
+   "district": "27",
+   "committee": "13585",
+   "contributions": 7744.51
+  },
+  {
+   "name": "Thomas O'Dea",
+   "chamber": "house",
+   "district": "125",
+   "committee": "14013",
+   "contributions": 28230.0
+  },
+  {
+   "name": "Thomas Tesoro",
+   "chamber": "house",
+   "district": "123",
+   "committee": "13938",
+   "contributions": 6780.0
+  },
+  {
+   "name": "Tony Scott",
+   "chamber": "house",
+   "district": "112",
+   "committee": "13558",
+   "contributions": 6215.0
+  },
+  {
+   "name": "Tracy Marra",
+   "chamber": "house",
+   "district": "141",
+   "committee": "13811",
+   "contributions": 9145.0
+  },
+  {
+   "name": "Trevor Crow",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "13544",
+   "contributions": 18510.74
+  },
+  {
+   "name": "Christopher Turkington",
+   "chamber": "house",
+   "district": "36",
+   "committee": "13769",
+   "contributions": 1030.0
+  },
+  {
+   "name": "Tyler Mack",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "13884",
+   "contributions": 21444.0
+  },
+  {
+   "name": "Tami Zawistowski",
+   "chamber": "house",
+   "district": "61",
+   "committee": "13611",
+   "contributions": 7095.0
+  },
+  {
+   "name": "Christopher Verras",
+   "chamber": "house",
+   "district": "133",
+   "committee": "13820",
+   "contributions": 3045.0
+  },
+  {
+   "name": "Joseph Vollano",
+   "chamber": "house",
+   "district": "83",
+   "committee": "13888",
+   "contributions": 6135.0
+  },
+  {
+   "name": "Layne Rodney",
+   "chamber": "house",
+   "district": "144",
+   "committee": "13955",
+   "contributions": 3790.0
+  },
+  {
+   "name": "Tod Laudonia",
+   "chamber": "house",
+   "district": "151",
+   "committee": "13902",
+   "contributions": 17666.32
+  },
+  {
+   "name": "Mary Renee LaMark Muir",
+   "chamber": "house",
+   "district": "36",
+   "committee": "13712",
+   "contributions": 6543.0
+  },
+  {
+   "name": "Kurt Vail",
+   "chamber": "house",
+   "district": "52",
+   "committee": "13582",
+   "contributions": 6475.0
+  },
+  {
+   "name": "Toni Walker",
+   "chamber": "house",
+   "district": "93",
+   "committee": "13652",
+   "contributions": 7924.6
+  },
+  {
+   "name": "Lenworth Walker",
+   "chamber": "house",
+   "district": "60",
+   "committee": "13570",
+   "contributions": 7486.0
+  },
+  {
+   "name": "Lamar Terrell",
+   "chamber": "house",
+   "district": "82",
+   "committee": "13983",
+   "contributions": 2740.0
+  },
+  {
+   "name": "Mary Welander",
+   "chamber": "house",
+   "district": "114",
+   "committee": "13704",
+   "contributions": 7335.83
+  },
+  {
+   "name": "Ethan Werstler",
+   "chamber": "house",
+   "district": "52",
+   "committee": "13852",
+   "contributions": 7345.0
+  },
+  {
+   "name": "Nathan Wolliston",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "13863",
+   "contributions": 12743.0
+  },
+  {
+   "name": "Aaron Zimmer",
+   "chamber": "house",
+   "district": "107",
+   "committee": "13796",
+   "contributions": 7060.69
+  },
+  {
+   "name": "Kyla Zimmermann",
+   "chamber": "senate",
+   "district": "5",
+   "committee": "13803",
+   "contributions": 9505.0
+  },
+  {
+   "name": "Andrea Zola",
+   "chamber": "house",
+   "district": "96",
+   "committee": "13831",
+   "contributions": 2945.0
+  },
+  {
+   "name": "Lezlye Zupkus",
+   "chamber": "house",
+   "district": "89",
+   "committee": "13734",
+   "contributions": 6485.0
+  }
+ ]
+}

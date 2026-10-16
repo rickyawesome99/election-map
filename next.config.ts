@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // The candidate route reads one generated shard per state by a computed name, which file tracing
+  // cannot follow on its own; list the directory so Vercel ships it with that function.
+  outputFileTracingIncludes: {
+    "/candidates/[slug]": ["./data/generated/candidate-pages/*.json.gz"],
+  },
   images: {
     remotePatterns: [
       {

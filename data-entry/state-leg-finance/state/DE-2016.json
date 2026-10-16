@@ -1,0 +1,591 @@
+{
+ "state": "DE",
+ "cycle": 2016,
+ "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+ "dataThrough": "12/31/2016",
+ "senate": {
+  "1": [
+   {
+    "name": "People For McDowell",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 89660,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of James Spadola",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 42101.99,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Citizens For Cathy Cloutier",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 69112.21,
+    "expenditures": null
+   },
+   {
+    "name": "Committee to Elect Denise Bowers",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8005,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Committee to Elect Patricia Blevins",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 102452,
+    "expenditures": null
+   },
+   {
+    "name": "Delcollo for Delaware LLC",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 77536,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Sokola For Senate",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 58991.14,
+    "expenditures": null
+   },
+   {
+    "name": "Committee to Elect Meredith Chapman",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 62810.67,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Walsh for the 9th",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 44101.57,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Friends of Nicole Poore",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 53671.99,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Committee To ReElect Dave McBride",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 50576.95,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Ennis Senate Campaign Committee",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 58674.85,
+    "expenditures": null
+   },
+   {
+    "name": "Friends for Carl Pace",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 35565.44,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Friends for Dave Lawson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 57695.95,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Friends for Brian Pettyjohn",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30519.8,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Friends To Elect Gerald Hocker",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 25361,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Perry Mitchell",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10024.32,
+    "expenditures": null
+   }
+  ]
+ },
+ "house": {
+  "1": [
+   {
+    "name": "Potter for State Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 21195.13,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "Friends Of Stephanie T. Bolden",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 17525,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "Committee To Elect Keeley",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 27600,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "People For Brady",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 28390.05,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Friends for Debra Heffernan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 34250,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Committee to Elect Bryon Short",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 49583.23,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Friends of Kevin Hensley",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 39505,
+    "expenditures": null
+   },
+   {
+    "name": "Monique Johns",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14515,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Friends of Sean Matthews",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 28500,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Judy Travis",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 21342,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Friends for Jeff Spiegelman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 41203.4,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of David Neilson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14420,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Hudson Campaign Committee",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 21163.45,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "FRIENDS OF LARRY MITCHELL",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 11425,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Friends for Pete Schwartzkopf",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 136962.91,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Friends of Valerie Longhurst",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 56143.99,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Citizens to Elect James J.J. Johnson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 9950,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "Committee To Re-Elect Mulrooney",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 18125,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Committee to Elect David Bentz",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 60759.89,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Kim Williams for State Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 32843.49,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Jim Startzman",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 14269.19,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Friends of Steve Smyk",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 51770.56,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Barbara Vaughan",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 18091.24,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Friends for Mike Ramone",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 46069.4,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Committee To Elect Miro",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30290,
+    "expenditures": null
+   },
+   {
+    "name": "Friends For Lanette Edwards",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20820,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Committee to Elect Paul Baumbach",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 22889,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Campaign to Elect Osienski",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 28060,
+    "expenditures": null
+   },
+   {
+    "name": "Committee to Elect Timothy Conrad",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2695,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Committee to Elect Kowalko",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 25698,
+    "expenditures": null
+   },
+   {
+    "name": "Citizens for Michael Nagorski",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2815,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Committee To Elect John Viola",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 19800,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Friends for Jaques",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16750,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Committee to Elect Bill Carson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 41062.5,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "People for Paradee",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 52407.5,
+    "expenditures": null
+   },
+   {
+    "name": "Friends For Jan Gallagher",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9104,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Friends to elect Chuck Groce",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9178.45,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "Friends of Sean Lynn",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 40122.68,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Jean Dowding",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7876,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Committee to Elect Andria Bennett",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 42429,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "Friends for Charles Postles",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 27500,
+    "expenditures": null
+   },
+   {
+    "name": "Friends to Elect Karen Williams",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 28035.78,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Yearick for Delaware",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 37262.37,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of David Henderson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14445,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "Committee to Elect Dave Wilson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 38304,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Gary Wolfe",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 200,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "Friends to Elect Harvey R. Kenton",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 16367.47,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "Rappa for Representative",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11316,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Friends of Ron Gray",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 20183,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "Friends to Elect Danny Short",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 35417,
+    "expenditures": null
+   },
+   {
+    "name": "Friends to Elect James Brittingham",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 750,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "Friends of Rich Collins",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 38130,
+    "expenditures": null
+   }
+  ]
+ }
+}

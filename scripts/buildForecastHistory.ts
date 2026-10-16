@@ -41,7 +41,9 @@ for (let d = new Date(`${start}T12:00:00Z`); d.toISOString().slice(0, 10) <= tod
 // The days are split across worker processes (each refits the model once, ~4 s, then ~0.2 s a day).
 // A worker is this script with --part i/n, printing its share of the series as JSON on stdout.
 const part = process.argv.find((a) => a.startsWith("--part="))?.slice(7);
-const WORKERS = Math.max(1, Math.min(4, os.cpus().length - 1));
+// All cores, not cores-1: the parent only waits for the workers, and a 2-vCPU build machine
+// (Vercel's default) would otherwise run every day in one process.
+const WORKERS = Math.max(1, Math.min(4, os.cpus().length));
 
 const r1 = (x: number) => Math.round(x * 10) / 10;
 const r3 = (x: number) => Math.round(x * 1000) / 1000;

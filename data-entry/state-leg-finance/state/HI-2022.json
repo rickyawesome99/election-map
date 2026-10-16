@@ -1,0 +1,1063 @@
+{
+ "state": "HI",
+ "cycle": 2022,
+ "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+ "dataThrough": "12/31/2022",
+ "house": {
+  "1": [
+   {
+    "name": "Nakashima, Mark",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 54300,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "Onishi, Richard",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 47350,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "Todd, Christopher",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 31188,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Ho, Keikilani",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 900,
+    "expenditures": null
+   },
+   {
+    "name": "Ilagan, Greggor",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 34489.2,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Kapela, Jeanne",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15900,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Kahaloa, Kirstin",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 51525.2,
+    "expenditures": null
+   },
+   {
+    "name": "Kennealy, Jonathan",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1667,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Lowen, Nicole",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 14050,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Perreira, Monique",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1800,
+    "expenditures": null
+   },
+   {
+    "name": "Tarnas, David",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 36230,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Woodson, Justin",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 27200,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Hashimoto, Troy",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 76293.52,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Amato, Terez",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 23294.18,
+    "expenditures": null
+   },
+   {
+    "name": "Cantere, Shekinah",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 10427,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Johnson, Dan",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2740,
+    "expenditures": null
+   },
+   {
+    "name": "Yamashita, Kyle",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 103277.93,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Adam, Scott",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6402,
+    "expenditures": null
+   },
+   {
+    "name": "Poepoe, Mahinamalamalama",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 19004.18,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Cochran, Elle",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 28917.92,
+    "expenditures": null
+   },
+   {
+    "name": "Armstrong, Kelly",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 500,
+    "expenditures": null
+   },
+   {
+    "name": "Nakoa, Leonard",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 200,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Bentley, Greg",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 735.95,
+    "expenditures": null
+   },
+   {
+    "name": "Nakamura, Nadine",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 33439.74,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Tokioka, James",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 30150,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "Morikawa, Daynette",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 12850,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Ward, Gene",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 36061.87,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Hashem, Mark",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 31125,
+    "expenditures": null
+   },
+   {
+    "name": "Texeira, Theresa",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3914.04,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Caiazzo, Jessica",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1875,
+    "expenditures": null
+   },
+   {
+    "name": "Kobayashi, Bertrand",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 21350,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Sayama, Jackson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 33906.2,
+    "expenditures": null
+   },
+   {
+    "name": "Allen, Julia",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 400,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Garrett, Andrew",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 72669.2,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Nishimoto, Scott",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 41625,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Tam, Adrian",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 70026,
+    "expenditures": null
+   },
+   {
+    "name": "Anderson, Jillian",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11118.24,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Novak, Robert",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 500,
+    "expenditures": null
+   },
+   {
+    "name": "Saiki, Scott",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 220839.52,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Rosecrans, Charlotte",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4457.15,
+    "expenditures": null
+   },
+   {
+    "name": "Belatti, Della",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 87325,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Takenouchi, Jenna",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 75848.08,
+    "expenditures": null
+   },
+   {
+    "name": "Lim, Margaret",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4552.86,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Holt, Daniel",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 46516.66,
+    "expenditures": null
+   },
+   {
+    "name": "Caravalho, Ernest",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 1150,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Mizuno, John",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 25425,
+    "expenditures": null
+   },
+   {
+    "name": "Kaapu, Carole",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11350.78,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Ganaden, Ernesto",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5800,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "Ichiyama, Linda",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 27450,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Shimizu, Garner",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 21421.29,
+    "expenditures": null
+   },
+   {
+    "name": "Aiu, Micah",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 40400,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "Kong, Samuel",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 11250,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Takayama, Gregg",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 22025,
+    "expenditures": null
+   },
+   {
+    "name": "Allen, Theodene",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1350,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "Chun, Cory",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 35827.66,
+    "expenditures": null
+   },
+   {
+    "name": "Araki, Josiah",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 784.75,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "Lautaha, Veamoniti",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 13405.05,
+    "expenditures": null
+   },
+   {
+    "name": "Lamosao, Rachele",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 73851.81,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "Detwiler, Jamie",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9581.81,
+    "expenditures": null
+   },
+   {
+    "name": "Yamane, Ryan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 92975,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Lee, Michael",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 38442.67,
+    "expenditures": null
+   },
+   {
+    "name": "Matsumoto, Lauren",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 39929.48,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "Rosenlee, Corey",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 21890,
+    "expenditures": null
+   },
+   {
+    "name": "Pierick, Elijah",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 16859.48,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Martinez, Rosebella",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3290,
+    "expenditures": null
+   },
+   {
+    "name": "Gueso, Janie",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 21293.29,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "Alcos, David",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 38199.48,
+    "expenditures": null
+   },
+   {
+    "name": "LoPresti, Matthew",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 18138.99,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "Har, Sharon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 54100,
+    "expenditures": null
+   },
+   {
+    "name": "Garcia, Diamond",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 23103.33,
+    "expenditures": null
+   }
+  ],
+  "43": [
+   {
+    "name": "Eli, Stacelynn",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 41908.6,
+    "expenditures": null
+   },
+   {
+    "name": "Souza, Kanani",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9500,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "Kopetseg, Kimberly",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1000,
+    "expenditures": null
+   },
+   {
+    "name": "Kila, Darius",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 58900.2,
+    "expenditures": null
+   }
+  ],
+  "45": [
+   {
+    "name": "Wilbur, Tiana",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11693.42,
+    "expenditures": null
+   },
+   {
+    "name": "Gates, Cedric",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 27435.92,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "Perruso, Amy",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 13975,
+    "expenditures": null
+   },
+   {
+    "name": "Miller, John",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 10109.91,
+    "expenditures": null
+   }
+  ],
+  "47": [
+   {
+    "name": "Talaeai, Mark",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3500,
+    "expenditures": null
+   },
+   {
+    "name": "Quinlan, Sean",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 21475,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "Elento, Wendell",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3604.47,
+    "expenditures": null
+   },
+   {
+    "name": "Kitagawa, Lisa",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 50599,
+    "expenditures": null
+   }
+  ],
+  "49": [
+   {
+    "name": "Matayoshi, Scot",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 63527.97,
+    "expenditures": null
+   }
+  ],
+  "50": [
+   {
+    "name": "Thurston, Kathleen",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 25149.48,
+    "expenditures": null
+   },
+   {
+    "name": "Hussey-Burdick, Natalia",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 53824,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "Marten, Lisa",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 11900,
+    "expenditures": null
+   },
+   {
+    "name": "Kama-Toth, Kukana",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5508.2,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "1": [
+   {
+    "name": "Inouye, Lorraine",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 214255.3,
+    "expenditures": null
+   },
+   {
+    "name": "Tupai, Helen",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2935,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "San Buenaventura, Joy",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 36300,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "Kanuha, Dru",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 73832.87,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Richards, Herbert",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 63300,
+    "expenditures": null
+   },
+   {
+    "name": "Tancheff, Nicholas",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 958.2,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "McKelvey, Angus",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 47647.92,
+    "expenditures": null
+   },
+   {
+    "name": "Walker, Sheila",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 20083.69,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "McKay, Tamara",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7428,
+    "expenditures": null
+   },
+   {
+    "name": "DeCoite, Lynn",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 153260,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Kouchi, Ron",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 111624,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Chang, Stanley",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 60299.89,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Ihara, Les",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1000,
+    "expenditures": null
+   },
+   {
+    "name": "Soon, Leilani",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 12349.48,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Fukunaga, Carol",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 65548.95,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Boyd, Blake",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6824.48,
+    "expenditures": null
+   },
+   {
+    "name": "Moriwaki, Sharon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 154274.39,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Souza, Kapono",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 3200,
+    "expenditures": null
+   },
+   {
+    "name": "Tinay, Matthew",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3731.84,
+    "expenditures": null
+   },
+   {
+    "name": "Rhoads, Karl",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 51463.61,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Rzonca, Cheryl",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2426.22,
+    "expenditures": null
+   },
+   {
+    "name": "Kim, Donna",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 97855,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Wakai, Glenn",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 112975,
+    "expenditures": null
+   },
+   {
+    "name": "Godfrey, Lorene",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1200,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Beekman, Patricia",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 724.61,
+    "expenditures": null
+   },
+   {
+    "name": "Elefante, Brandon",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 174716.74,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "Hudson, Anna",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3179,
+    "expenditures": null
+   },
+   {
+    "name": "Dela Cruz, Donovan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 280114.22,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Smart, Mary",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4958.2,
+    "expenditures": null
+   },
+   {
+    "name": "Kidani, Michelle",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 172495.1,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Aquino, Henry",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 65100,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Fevella, Kurt*",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 48250,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Khan, Matthew",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1924.48,
+    "expenditures": null
+   },
+   {
+    "name": "Gabbard, Mike",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 908.33,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "DeCorte, Samantha",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 60276,
+    "expenditures": null
+   },
+   {
+    "name": "Shimabukuro, Maile",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 35259.15,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Awa, Brenton",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 20500.33,
+    "expenditures": null
+   },
+   {
+    "name": "Riviere, Gil",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 49990.31,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Fernandez, Antionette",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 200,
+    "expenditures": null
+   },
+   {
+    "name": "Keohokalole, Jarrett",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 182318.87,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Lee, Christopher",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 42724,
+    "expenditures": null
+   },
+   {
+    "name": "Lauro, Brian",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2041.08,
+    "expenditures": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,1329 @@
+{
+ "state": "NJ",
+ "cycle": 2019,
+ "source": "New Jersey ELEC 20-day post-election report (cumulative receipts; joint slates split evenly)",
+ "fetched": "2026-10-16",
+ "dataThrough": "20 days after the 2019 general",
+ "candidates": [
+  {
+   "name": "ANDRZEJCZAK, BOB",
+   "party": "D",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 432021.0,
+   "slateShare": 391789.0
+  },
+  {
+   "name": "TESTA, MIKE",
+   "party": "R",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 603404.0,
+   "slateShare": null
+  },
+  {
+   "name": "LAND, R BRUCE",
+   "party": "D",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 406481.0,
+   "slateShare": 391789.0
+  },
+  {
+   "name": "MILAM, MATTHEW W",
+   "party": "D",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 405381.0,
+   "slateShare": 391789.0
+  },
+  {
+   "name": "ARMATO, JOHN",
+   "party": "D",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 352085.0,
+   "slateShare": 236435.0
+  },
+  {
+   "name": "GUENTHER, PHILIP J",
+   "party": "R",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 117264.5,
+   "slateShare": 57168.5
+  },
+  {
+   "name": "MAZZEO, VINCENT",
+   "party": "D",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 371293.0,
+   "slateShare": 236435.0
+  },
+  {
+   "name": "RISLEY, JOHN W JR",
+   "party": "R",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 119928.5,
+   "slateShare": 57168.5
+  },
+  {
+   "name": "BURZICHELLI, JOHN J",
+   "party": "D",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 680766.5,
+   "slateShare": 224152.5
+  },
+  {
+   "name": "DURR, EDWARD JR",
+   "party": "R",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 1793.0,
+   "slateShare": null
+  },
+  {
+   "name": "SAWYER, BETH",
+   "party": "R",
+   "chamber": "house",
+   "district": "3",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "TALIAFERRO, ADAM",
+   "party": "D",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 475143.5,
+   "slateShare": 224152.5
+  },
+  {
+   "name": "MORIARTY, PAUL D",
+   "party": "D",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 193853.0,
+   "slateShare": null
+  },
+  {
+   "name": "MOSQUERA, GABRIELA M",
+   "party": "D",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 108868.0,
+   "slateShare": null
+  },
+  {
+   "name": "MOEN, WILLIAM F JR",
+   "party": "D",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 57448.0,
+   "slateShare": null
+  },
+  {
+   "name": "SPEARMAN, WILLIAM W",
+   "party": "D",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 88776.0,
+   "slateShare": null
+  },
+  {
+   "name": "GREENWALD, LOUIS D",
+   "party": "D",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 373332.0,
+   "slateShare": null
+  },
+  {
+   "name": "LAMPITT, PAMELA R",
+   "party": "D",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 107414.0,
+   "slateShare": null
+  },
+  {
+   "name": "PAPEIKA, JOHN",
+   "party": "R",
+   "chamber": "house",
+   "district": "6",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "PLUCINSKI, CYNTHIA",
+   "party": "R",
+   "chamber": "house",
+   "district": "6",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "CONAWAY, HERB",
+   "party": "D",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 103983.0,
+   "slateShare": null
+  },
+  {
+   "name": "COOLEY, KATHLEEN",
+   "party": "I",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 10125.0,
+   "slateShare": null
+  },
+  {
+   "name": "MILLER, PETER H",
+   "party": "R",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 25260.0,
+   "slateShare": null
+  },
+  {
+   "name": "MURPHY, CAROL",
+   "party": "D",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 129323.0,
+   "slateShare": null
+  },
+  {
+   "name": "GIANGIULIO, TOM JR",
+   "party": "I",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 970.0,
+   "slateShare": null
+  },
+  {
+   "name": "LAPLACA, GINA",
+   "party": "D",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 425697.5,
+   "slateShare": 291734.5
+  },
+  {
+   "name": "NATALE, MARK",
+   "party": "D",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 379598.5,
+   "slateShare": 291734.5
+  },
+  {
+   "name": "PETERS, RYAN",
+   "party": "R",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 298170.0,
+   "slateShare": null
+  },
+  {
+   "name": "STANFIELD, JEAN",
+   "party": "R",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 219604.0,
+   "slateShare": null
+  },
+  {
+   "name": "COLLINS, SARAH J",
+   "party": "D",
+   "chamber": "house",
+   "district": "9",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "LAVALLE, BLAYNE JOSEPH",
+   "party": "I",
+   "chamber": "house",
+   "district": "9",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "LEWIS, WAYNE",
+   "party": "D",
+   "chamber": "house",
+   "district": "9",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "BARRELLA, VINCENT R",
+   "party": "I",
+   "chamber": "house",
+   "district": "10",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "CATALANO, JOHN",
+   "party": "R",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 39266.5,
+   "slateShare": 19815.5
+  },
+  {
+   "name": "DELLA VOLLE, EILEEN",
+   "party": "D",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 79348.0,
+   "slateShare": null
+  },
+  {
+   "name": "HOLMES, IAN",
+   "party": "I",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 234.0,
+   "slateShare": null
+  },
+  {
+   "name": "MCGUCKIN, GREGORY P",
+   "party": "R",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 78380.5,
+   "slateShare": 19815.5
+  },
+  {
+   "name": "WHEELER, ERIN",
+   "party": "D",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 19478.0,
+   "slateShare": null
+  },
+  {
+   "name": "AMOROSO, MICHAEL",
+   "party": "R",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 37388.0,
+   "slateShare": null
+  },
+  {
+   "name": "DOWNEY, JOANN",
+   "party": "D",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 667974.5,
+   "slateShare": 400752.5
+  },
+  {
+   "name": "HOUGHTALING, ERIC",
+   "party": "D",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 758508.5,
+   "slateShare": 400752.5
+  },
+  {
+   "name": "WOOLLEY, MATTHEW C",
+   "party": "R",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 74471.0,
+   "slateShare": null
+  },
+  {
+   "name": "CLIFTON, ROBERT D",
+   "party": "R",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 32075.0,
+   "slateShare": null
+  },
+  {
+   "name": "DANCER, RONALD S",
+   "party": "R",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 321122.0,
+   "slateShare": null
+  },
+  {
+   "name": "GUHA, MALINI",
+   "party": "D",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 13642.0,
+   "slateShare": null
+  },
+  {
+   "name": "LANDE, DAVID H",
+   "party": "D",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 44891.0,
+   "slateShare": null
+  },
+  {
+   "name": "DIMASO, SERENA",
+   "party": "R",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 68435.0,
+   "slateShare": null
+  },
+  {
+   "name": "SCHARFENBERGER, GERARD",
+   "party": "R",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 107474.0,
+   "slateShare": null
+  },
+  {
+   "name": "BENSON, DANIEL R",
+   "party": "D",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 277796.0,
+   "slateShare": null
+  },
+  {
+   "name": "BOLLENTIN, MICHAEL",
+   "party": "I",
+   "chamber": "house",
+   "district": "14",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "CALABRESE, THOMAS",
+   "party": "R",
+   "chamber": "house",
+   "district": "14",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "DEANGELO, WAYNE P",
+   "party": "D",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 482999.0,
+   "slateShare": null
+  },
+  {
+   "name": "SHAH, BINA",
+   "party": "R",
+   "chamber": "house",
+   "district": "14",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "FORCHION, EDWARD",
+   "party": "I",
+   "chamber": "house",
+   "district": "15",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "HAMILTON, AYESHA KRISHNAN",
+   "party": "D",
+   "chamber": "house",
+   "district": "15",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "REYNOLDS JACKSON, VERLINA",
+   "party": "D",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 83868.0,
+   "slateShare": null
+  },
+  {
+   "name": "VERRELLI, ANTHONY S",
+   "party": "D",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 284845.0,
+   "slateShare": null
+  },
+  {
+   "name": "WILLIAMS, DIOH",
+   "party": "I",
+   "chamber": "house",
+   "district": "15",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "WILLIAMS, JENNIFER",
+   "party": "R",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 17122.0,
+   "slateShare": null
+  },
+  {
+   "name": "CALIGUIRE, MARK",
+   "party": "R",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 85856.5,
+   "slateShare": 21081.5
+  },
+  {
+   "name": "FREIMAN, ROY",
+   "party": "D",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 625269.5,
+   "slateShare": 359272.5
+  },
+  {
+   "name": "ZWICKER, ANDREW",
+   "party": "D",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 607455.5,
+   "slateShare": 359272.5
+  },
+  {
+   "name": "BADOVINAC, PATRICIA",
+   "party": "R",
+   "chamber": "house",
+   "district": "17",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "CONCEPCION POWELL, MARIA",
+   "party": "R",
+   "chamber": "house",
+   "district": "17",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "DANIELSEN, JOE",
+   "party": "D",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 163564.0,
+   "slateShare": null
+  },
+  {
+   "name": "EGAN, JOSEPH V",
+   "party": "D",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 483332.0,
+   "slateShare": null
+  },
+  {
+   "name": "BENGIVENGA, ROBERT A JR",
+   "party": "R",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 11815.0,
+   "slateShare": null
+  },
+  {
+   "name": "BROWN, JEFFREY R",
+   "party": "R",
+   "chamber": "house",
+   "district": "18",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "KARABINCHAK, ROBERT",
+   "party": "D",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 222955.0,
+   "slateShare": null
+  },
+  {
+   "name": "PINKIN, NANCY",
+   "party": "D",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 158865.0,
+   "slateShare": null
+  },
+  {
+   "name": "COUGHLIN, CRAIG J",
+   "party": "D",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 683281.0,
+   "slateShare": null
+  },
+  {
+   "name": "CRUZ, WILLIAM",
+   "party": "I",
+   "chamber": "house",
+   "district": "19",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "LOPEZ, YVONNE M",
+   "party": "D",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 185028.0,
+   "slateShare": null
+  },
+  {
+   "name": "DONNELLY, CHARLES",
+   "party": "R",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 4200.0,
+   "slateShare": null
+  },
+  {
+   "name": "HANNA, ASHRAF",
+   "party": "R",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 0,
+   "slateShare": null
+  },
+  {
+   "name": "HOLLEY, JAMEL C",
+   "party": "D",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 71468.5,
+   "slateShare": 10.5
+  },
+  {
+   "name": "QUIJANO, ANNETTE",
+   "party": "D",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 309585.5,
+   "slateShare": 10.5
+  },
+  {
+   "name": "BRAMNICK, JON",
+   "party": "R",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 832329.0,
+   "slateShare": null
+  },
+  {
+   "name": "GUNDERMAN, STACEY",
+   "party": "D",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 421947.5,
+   "slateShare": 350442.5
+  },
+  {
+   "name": "MANDELBLATT, LISA",
+   "party": "D",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 532651.5,
+   "slateShare": 350442.5
+  },
+  {
+   "name": "MUNOZ, NANCY",
+   "party": "R",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 246236.0,
+   "slateShare": null
+  },
+  {
+   "name": "CARTER, LINDA",
+   "party": "D",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 96749.0,
+   "slateShare": null
+  },
+  {
+   "name": "KENNEDY, JAMES",
+   "party": "D",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 107781.0,
+   "slateShare": null
+  },
+  {
+   "name": "QUATTROCCHI, PATRICIA",
+   "party": "R",
+   "chamber": "house",
+   "district": "22",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "DIMAIO, JOHN",
+   "party": "R",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 59427.5,
+   "slateShare": 16057.5
+  },
+  {
+   "name": "PETERSON, ERIK",
+   "party": "R",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 36173.5,
+   "slateShare": 16057.5
+  },
+  {
+   "name": "LYKINS, DEANA",
+   "party": "D",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 39982.0,
+   "slateShare": 2094.0
+  },
+  {
+   "name": "SPACE, F PARKER",
+   "party": "R",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 39783.0,
+   "slateShare": null
+  },
+  {
+   "name": "WIRTHS, HAROLD J",
+   "party": "R",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 149705.0,
+   "slateShare": null
+  },
+  {
+   "name": "BERGEN, BRIAN",
+   "party": "R",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 97457.5,
+   "slateShare": 52573.5
+  },
+  {
+   "name": "BHIMANI, LISA",
+   "party": "D",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 315466.0,
+   "slateShare": 307266.0
+  },
+  {
+   "name": "BUCCO, ANTHONY M",
+   "party": "R",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 468010.5,
+   "slateShare": 52573.5
+  },
+  {
+   "name": "DRAEGER, DARCY",
+   "party": "D",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 326991.0,
+   "slateShare": 307266.0
+  },
+  {
+   "name": "CLARKE, CHRISTINE",
+   "party": "D",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 58774.0,
+   "slateShare": null
+  },
+  {
+   "name": "DECROCE, BETTYLOU",
+   "party": "R",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 163865.0,
+   "slateShare": null
+  },
+  {
+   "name": "FORTGANG, LAURA",
+   "party": "D",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 201514.0,
+   "slateShare": null
+  },
+  {
+   "name": "WEBBER, JAY",
+   "party": "R",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 276731.0,
+   "slateShare": null
+  },
+  {
+   "name": "DAILEY, MICHAEL",
+   "party": "R",
+   "chamber": "house",
+   "district": "27",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "JASEY, MILA M",
+   "party": "D",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 202235.0,
+   "slateShare": 35701.0
+  },
+  {
+   "name": "MCKEON, JOHN F",
+   "party": "D",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 373491.0,
+   "slateShare": 35701.0
+  },
+  {
+   "name": "TUCCI, MAURO G JR",
+   "party": "R",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 7382.0,
+   "slateShare": null
+  },
+  {
+   "name": "BEMBRY FREEMAN, JOY",
+   "party": "R",
+   "chamber": "house",
+   "district": "28",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "CAPUTO, RALPH R",
+   "party": "D",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 298769.0,
+   "slateShare": null
+  },
+  {
+   "name": "PIRES, ANTONIO",
+   "party": "R",
+   "chamber": "house",
+   "district": "28",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "ROSS, DERRICK",
+   "party": "I",
+   "chamber": "house",
+   "district": "28",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "TUCKER, CLEOPATRA",
+   "party": "D",
+   "chamber": "house",
+   "district": "28",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "ANELLO, JOHN",
+   "party": "R",
+   "chamber": "house",
+   "district": "29",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "DAVIS SPEIGHT, SHANIQUE",
+   "party": "D",
+   "chamber": "house",
+   "district": "29",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "PINTOR MARIN, ELIANA",
+   "party": "D",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 274240.0,
+   "slateShare": null
+  },
+  {
+   "name": "VERAS, JEANNETTE",
+   "party": "R",
+   "chamber": "house",
+   "district": "29",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "CELIK, YASIN JASON",
+   "party": "D",
+   "chamber": "house",
+   "district": "30",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "FARKAS, STEVEN",
+   "party": "D",
+   "chamber": "house",
+   "district": "30",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "KEAN, SEAN T",
+   "party": "R",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 80854.0,
+   "slateShare": null
+  },
+  {
+   "name": "SCHROEDER, HANK",
+   "party": "I",
+   "chamber": "house",
+   "district": "30",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "THOMSON, EDWARD H",
+   "party": "R",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 74897.0,
+   "slateShare": null
+  },
+  {
+   "name": "CHIARAVALLOTI, NICHOLAS A",
+   "party": "D",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 79789.0,
+   "slateShare": null
+  },
+  {
+   "name": "MCKNIGHT, ANGELA V",
+   "party": "D",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 37117.0,
+   "slateShare": null
+  },
+  {
+   "name": "MUSHNICK, JASON TODD",
+   "party": "R",
+   "chamber": "house",
+   "district": "31",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "PALANGE, MARY KAY",
+   "party": "R",
+   "chamber": "house",
+   "district": "31",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "CARLETTA, ANN",
+   "party": "R",
+   "chamber": "house",
+   "district": "32",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "CURRELI, FRANCESCA",
+   "party": "R",
+   "chamber": "house",
+   "district": "32",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "JIMENEZ, ANGELICA M",
+   "party": "D",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 63127.0,
+   "slateShare": null
+  },
+  {
+   "name": "MEJIA, PEDRO",
+   "party": "D",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 35716.0,
+   "slateShare": null
+  },
+  {
+   "name": "SHERMAN, LEA",
+   "party": "I",
+   "chamber": "house",
+   "district": "32",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "CHAPARRO, ANNETTE",
+   "party": "D",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 48030.0,
+   "slateShare": null
+  },
+  {
+   "name": "LUCYK, HOLLY",
+   "party": "R",
+   "chamber": "house",
+   "district": "33",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "MUKHERJI, RAJ",
+   "party": "D",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 225728.0,
+   "slateShare": null
+  },
+  {
+   "name": "ROHENA, FABIAN",
+   "party": "R",
+   "chamber": "house",
+   "district": "33",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "CHILDRESS, CLENARD HOWARD JR",
+   "party": "I",
+   "chamber": "house",
+   "district": "34",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "DEVITA, IRENE",
+   "party": "R",
+   "chamber": "house",
+   "district": "34",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "GIBLIN, THOMAS P",
+   "party": "D",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 228984.0,
+   "slateShare": null
+  },
+  {
+   "name": "RANA, BHARAT T",
+   "party": "R",
+   "chamber": "house",
+   "district": "34",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "TIMBERLAKE, BRITNEE N",
+   "party": "D",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 74659.0,
+   "slateShare": null
+  },
+  {
+   "name": "CARTALEMI, ROBERT",
+   "party": "R",
+   "chamber": "house",
+   "district": "35",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "MAMKEJ, TAMER",
+   "party": "R",
+   "chamber": "house",
+   "district": "35",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "SUMTER, SHAVONDA E",
+   "party": "D",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 206323.0,
+   "slateShare": null
+  },
+  {
+   "name": "WIMBERLY, BENJIE E",
+   "party": "D",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 90949.0,
+   "slateShare": null
+  },
+  {
+   "name": "ANDROWIS, KHALDOUN",
+   "party": "R",
+   "chamber": "house",
+   "district": "36",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "CALABRESE, CLINTON",
+   "party": "D",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 276864.0,
+   "slateShare": null
+  },
+  {
+   "name": "LOWE, FOSTER",
+   "party": "R",
+   "chamber": "house",
+   "district": "36",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "SCHAER, GARY S",
+   "party": "D",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 631235.0,
+   "slateShare": null
+  },
+  {
+   "name": "BELUSIC, CLAUDIO",
+   "party": "I",
+   "chamber": "house",
+   "district": "37",
+   "contributions": null,
+   "slateShare": null
+  },
+  {
+   "name": "JOHNSON, GORDON M",
+   "party": "D",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 112701.0,
+   "slateShare": null
+  },
+  {
+   "name": "VAINIERI HUTTLE, VALERIE",
+   "party": "D",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 134905.0,
+   "slateShare": null
+  },
+  {
+   "name": "DIPIAZZA, CHRISTOPHER",
+   "party": "R",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 50265.0,
+   "slateShare": 11843.0
+  },
+  {
+   "name": "KAZIMIR, MICHAEL A",
+   "party": "R",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 16608.0,
+   "slateShare": 11843.0
+  },
+  {
+   "name": "SWAIN, LISA",
+   "party": "D",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 296487.5,
+   "slateShare": 204593.5
+  },
+  {
+   "name": "TULLY, CHRISTOPHER",
+   "party": "D",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 286341.5,
+   "slateShare": 204593.5
+  },
+  {
+   "name": "AUTH, ROBERT J",
+   "party": "R",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 126150.0,
+   "slateShare": null
+  },
+  {
+   "name": "BIRKNER, JOHN JR",
+   "party": "D",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 153331.0,
+   "slateShare": 153056.0
+  },
+  {
+   "name": "FALOTICO, GERALD",
+   "party": "D",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 156156.0,
+   "slateShare": 153056.0
+  },
+  {
+   "name": "SCHEPISI, HOLLY T",
+   "party": "R",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 229587.0,
+   "slateShare": null
+  },
+  {
+   "name": "DEPHILLIPS, CHRISTOPHER P",
+   "party": "R",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 101460.0,
+   "slateShare": 47904.0
+  },
+  {
+   "name": "MARTINI CORDONNIER, MARIA",
+   "party": "D",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 38010.0,
+   "slateShare": null
+  },
+  {
+   "name": "ROONEY, KEVIN J",
+   "party": "R",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 105142.0,
+   "slateShare": 47904.0
+  },
+  {
+   "name": "Dilks",
+   "party": "R",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 12286.0,
+   "slateShare": 12286.0
+  },
+  {
+   "name": "Pakradooni",
+   "party": "R",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 12286.0,
+   "slateShare": 12286.0
+  },
+  {
+   "name": "Rumpf",
+   "party": "R",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 29431.0,
+   "slateShare": 29431.0
+  },
+  {
+   "name": "Gove",
+   "party": "R",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 29431.0,
+   "slateShare": 29431.0
+  },
+  {
+   "name": "Madrid",
+   "party": "R",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 21081.5,
+   "slateShare": 21081.5
+  },
+  {
+   "name": "Marks",
+   "party": "I",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 8946.0,
+   "slateShare": 8946.0
+  },
+  {
+   "name": "Pappas",
+   "party": "I",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 8946.0,
+   "slateShare": 8946.0
+  },
+  {
+   "name": "King",
+   "party": "D",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 14409.5,
+   "slateShare": 14409.5
+  },
+  {
+   "name": "Trofimov",
+   "party": "D",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 14409.5,
+   "slateShare": 14409.5
+  },
+  {
+   "name": "Smith",
+   "party": "D",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 2094.0,
+   "slateShare": 2094.0
+  }
+ ]
+}

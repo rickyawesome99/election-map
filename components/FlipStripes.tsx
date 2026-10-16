@@ -13,7 +13,7 @@ export function FlipPatternDefs({ colors }: { colors: string[] }) {
     <defs>
       {[...new Set(colors)].map((color) => (
         <pattern key={color} id={flipPatternId(color)} patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
-          <rect width="6" height="6" fill={color} />
+          <rect width="6" height="6" style={{ fill: color }} />
           <rect width="2.5" height="6" fill={STRIPE} />
         </pattern>
       ))}
@@ -21,12 +21,15 @@ export function FlipPatternDefs({ colors }: { colors: string[] }) {
   );
 }
 
+/** The same stripes as a CSS background, for HTML swatches and boxes (no pattern needed). */
+export const flipBackground = (color: string) => `repeating-linear-gradient(45deg, ${STRIPE} 0 1.5px, transparent 1.5px 4px), ${color}`;
+
 /** Legend swatch (plain CSS, so it needs no pattern in the document). */
 export function FlipSwatch({ size = 12, color = "#6e7781" }: { size?: number; color?: string }) {
   return (
     <span
       className="inline-block rounded-sm shrink-0"
-      style={{ width: size, height: size, background: `repeating-linear-gradient(45deg, ${STRIPE} 0 1.5px, transparent 1.5px 4px), ${color}` }}
+      style={{ width: size, height: size, background: flipBackground(color) }}
     />
   );
 }

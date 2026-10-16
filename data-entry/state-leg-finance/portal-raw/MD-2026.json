@@ -1,0 +1,2795 @@
+{
+ "state": "MD",
+ "cycle": 2026,
+ "source": "Maryland SBE MDCRIS (itemized contributions, 2023 on)",
+ "fetched": "2026-10-16",
+ "dataThrough": "10/16/2026",
+ "candidates": [
+  {
+   "name": "CHAPAGAIN, SATISH",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018865",
+   "contributions": 19475.18
+  },
+  {
+   "name": "CAROZZA, MARY E.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1009263",
+   "contributions": 357461.07
+  },
+  {
+   "name": "MCCOMAS, SUSAN K.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1000976",
+   "contributions": 1150.0
+  },
+  {
+   "name": "KECKLER, JASON E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015553",
+   "contributions": 27346.06
+  },
+  {
+   "name": "BARNES, BENJAMIN S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1002885",
+   "contributions": 385399.9
+  },
+  {
+   "name": "MCCASKILL, ALETHEIA R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011798",
+   "contributions": 44342.05
+  },
+  {
+   "name": "GALLION, JASON C.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1011663",
+   "contributions": 125210.0
+  },
+  {
+   "name": "Nieves, Ashley A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018594",
+   "contributions": 0.0
+  },
+  {
+   "name": "SALLING, JOHNNY R.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1009412",
+   "contributions": 49325.83
+  },
+  {
+   "name": "PATTERSON, EDITH J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1003123",
+   "contributions": 17900.0
+  },
+  {
+   "name": "Dove, John JR",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018749",
+   "contributions": 2650.0
+  },
+  {
+   "name": "GHRIST, JEFFERSON L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1009488",
+   "contributions": 40400.02
+  },
+  {
+   "name": "WALDSTREICHER, JEFFREY D.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1003393",
+   "contributions": 729608.15
+  },
+  {
+   "name": "RHODA, SPENCER",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018293",
+   "contributions": 12130.0
+  },
+  {
+   "name": "BROOKS, AMY R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013794",
+   "contributions": 23894.82
+  },
+  {
+   "name": "MCFARLAND, JORDAN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018706",
+   "contributions": 10.01
+  },
+  {
+   "name": "THOMPSON, ANTOINE MAURICE",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018367",
+   "contributions": 110844.12
+  },
+  {
+   "name": "ATTAR, DALYA",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1011638",
+   "contributions": 259455.67
+  },
+  {
+   "name": "WELCH, TIFFANY L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015583",
+   "contributions": 121352.56
+  },
+  {
+   "name": "PRICE, FRED M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015369",
+   "contributions": 6675.0
+  },
+  {
+   "name": "EMBRY, ELIZABETH M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011234",
+   "contributions": 74514.5
+  },
+  {
+   "name": "JONES, DANA C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013476",
+   "contributions": 206440.43
+  },
+  {
+   "name": "MOFOR, FITZGERALD A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015030",
+   "contributions": 32270.79
+  },
+  {
+   "name": "JOHNSTON, MATTHEW E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015495",
+   "contributions": 44592.65
+  },
+  {
+   "name": "Muldrow, Adrian M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015692",
+   "contributions": 0.0
+  },
+  {
+   "name": "Washington, Alonzo T.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1006981",
+   "contributions": 225916.87
+  },
+  {
+   "name": "LYON, ANTHONY W.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015489",
+   "contributions": 28778.82
+  },
+  {
+   "name": "HILL, TERRI L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009157",
+   "contributions": 76276.31
+  },
+  {
+   "name": "SHEPHERD, BRETT E.",
+   "party": null,
+   "chamber": "house",
+   "committee": "1015651",
+   "contributions": 0.0
+  },
+  {
+   "name": "HASTINGS, JOSHUA A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009805",
+   "contributions": 90942.49
+  },
+  {
+   "name": "BRANCH, CHANEL A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013219",
+   "contributions": 35585.97
+  },
+  {
+   "name": "FELDMAN, BRIAN J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1000676",
+   "contributions": 551103.0
+  },
+  {
+   "name": "ANGEL, ANGELA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015300",
+   "contributions": 0.0
+  },
+  {
+   "name": "WHISLER, STEPHEN D.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1013979",
+   "contributions": 57246.73
+  },
+  {
+   "name": "STEVENSON, JACQUELINE H.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018701",
+   "contributions": 2734.0
+  },
+  {
+   "name": "JACOBS, JAY A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1005284",
+   "contributions": 28425.0
+  },
+  {
+   "name": "Lowe, Lisa",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018589",
+   "contributions": 0.0
+  },
+  {
+   "name": "MCDONALD, KRISTOPHER R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015454",
+   "contributions": 360.0
+  },
+  {
+   "name": "Hightower, Benjamin C.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16017155",
+   "contributions": 17147.2
+  },
+  {
+   "name": "Wu, Robert",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015677",
+   "contributions": 32144.13
+  },
+  {
+   "name": "STINNETT, SEAN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015439",
+   "contributions": 73534.21
+  },
+  {
+   "name": "Leonard, John D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018675",
+   "contributions": 0.0
+  },
+  {
+   "name": "KAUFMAN, AARON M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009327",
+   "contributions": 119697.0
+  },
+  {
+   "name": "LEAHY, AMY H.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16018746",
+   "contributions": 20358.39
+  },
+  {
+   "name": "DOERFLINGER, MEGAN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011610",
+   "contributions": 3242.11
+  },
+  {
+   "name": "ARIKAN, LAUREN C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1011796",
+   "contributions": 12444.0
+  },
+  {
+   "name": "Amah, James A.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16018870",
+   "contributions": 0.0
+  },
+  {
+   "name": "WESTDORP, LARA L.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1015642",
+   "contributions": 79059.47
+  },
+  {
+   "name": "WU, CHAO",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1014026",
+   "contributions": 110127.14
+  },
+  {
+   "name": "POPESCU, STEPHANIE C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018832",
+   "contributions": 76984.5
+  },
+  {
+   "name": "MUKUNDA, AMAR R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015533",
+   "contributions": 147565.37
+  },
+  {
+   "name": "Chiawah, Tambei",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015647",
+   "contributions": 17777.74
+  },
+  {
+   "name": "FORD, KEVIN C.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1015391",
+   "contributions": 156854.58
+  },
+  {
+   "name": "CHARLES, NICHOLAS P.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1009308",
+   "contributions": 315835.85
+  },
+  {
+   "name": "PARKER, CRYSTAL J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013784",
+   "contributions": 13820.01
+  },
+  {
+   "name": "SAMPLE-HUGHES, SHEREE L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1005816",
+   "contributions": 42831.83
+  },
+  {
+   "name": "Sorrel, Gabriel",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018513",
+   "contributions": 790.66
+  },
+  {
+   "name": "HERSHEY, STEPHEN S.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1006817",
+   "contributions": 397026.0
+  },
+  {
+   "name": "GUYTON, MICHELE J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012223",
+   "contributions": 155419.44
+  },
+  {
+   "name": "Emerick, Ashley",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018816",
+   "contributions": 9797.41
+  },
+  {
+   "name": "VAN BUREN, ERIC M.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1015592",
+   "contributions": 5373.19
+  },
+  {
+   "name": "CARDIN, JON S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011884",
+   "contributions": 147231.61
+  },
+  {
+   "name": "Glover, Frank",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018736",
+   "contributions": 0.0
+  },
+  {
+   "name": "HARLAN, ALEXANDER M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015437",
+   "contributions": 47143.15
+  },
+  {
+   "name": "BARTLETT, JUANITA S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1006033",
+   "contributions": 94894.45
+  },
+  {
+   "name": "FERGUSON, WILLIAM C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1005740",
+   "contributions": 2309058.19
+  },
+  {
+   "name": "JONES, ADRIENNE A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1006880",
+   "contributions": 1002353.85
+  },
+  {
+   "name": "Geibler, William R.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018772",
+   "contributions": 4776.67
+  },
+  {
+   "name": "MESSMER, STEVEN",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018573",
+   "contributions": 1854.33
+  },
+  {
+   "name": "JAMES, MARYDULANY D.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1007218",
+   "contributions": 145239.58
+  },
+  {
+   "name": "TROXLER, PATRICK DEVON.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018517",
+   "contributions": 0.0
+  },
+  {
+   "name": "Natesan, Krishnan",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018869",
+   "contributions": 22696.1
+  },
+  {
+   "name": "FRASER, STANFORD D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013557",
+   "contributions": 56992.7
+  },
+  {
+   "name": "READY, JUSTIN D.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1005302",
+   "contributions": 360214.32
+  },
+  {
+   "name": "KIMATHI, AYO H.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015502",
+   "contributions": 3378.11
+  },
+  {
+   "name": "Crosby, Clifton JR",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16017172",
+   "contributions": 9799.51
+  },
+  {
+   "name": "Goel, Raj",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16018357",
+   "contributions": 187411.41
+  },
+  {
+   "name": "Gallucci, Justin",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16018290",
+   "contributions": 0.0
+  },
+  {
+   "name": "ADDISON, JACQUELINE T.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013346",
+   "contributions": 84007.33
+  },
+  {
+   "name": "Wood, Adam",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1015768",
+   "contributions": 58976.8
+  },
+  {
+   "name": "MORENO, GABRIEL M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015496",
+   "contributions": 28581.11
+  },
+  {
+   "name": "TURNER, VERONICA L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1000687",
+   "contributions": 18655.0
+  },
+  {
+   "name": "FAIR, KRISTOPHER G.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013663",
+   "contributions": 67436.4
+  },
+  {
+   "name": "ALLEN, NICHOLAS J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013578",
+   "contributions": 88676.0
+  },
+  {
+   "name": "Norris, Kristin M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018996",
+   "contributions": 375.0
+  },
+  {
+   "name": "LEWIS, ROBBYN T.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011568",
+   "contributions": 86377.09
+  },
+  {
+   "name": "Dixon, Spencer",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015751",
+   "contributions": 78903.04
+  },
+  {
+   "name": "Barrett, Edmund J. JR",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018780",
+   "contributions": 18012.0
+  },
+  {
+   "name": "RUTH, SHEILA S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012068",
+   "contributions": 40165.27
+  },
+  {
+   "name": "Riemer, Steven J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015749",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROSE, APRIL R.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1011144",
+   "contributions": 59161.44
+  },
+  {
+   "name": "Ravert, Michelle",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018716",
+   "contributions": 3137.0
+  },
+  {
+   "name": "CRUTCHFIELD, CHARLOTTE A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009645",
+   "contributions": 50791.0
+  },
+  {
+   "name": "MILLER, APRIL F.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1013726",
+   "contributions": 13855.49
+  },
+  {
+   "name": "JACKSON, DELBERT D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015481",
+   "contributions": 12075.0
+  },
+  {
+   "name": "SIMMONS, GARY",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013860",
+   "contributions": 86628.31
+  },
+  {
+   "name": "HEARD, JOSHUA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015627",
+   "contributions": 10988.99
+  },
+  {
+   "name": "AUGUSTINE, MALCOLM L.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1009533",
+   "contributions": 341133.44
+  },
+  {
+   "name": "Katz, Daniel E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018450",
+   "contributions": 14566.97
+  },
+  {
+   "name": "ROBERTS, DENISE G.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012872",
+   "contributions": 103777.61
+  },
+  {
+   "name": "ROBERSON, KENT",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1010953",
+   "contributions": 51890.68
+  },
+  {
+   "name": "King, Nancy J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1007453",
+   "contributions": 413147.72
+  },
+  {
+   "name": "SMITH, STEPHANIE D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011572",
+   "contributions": 139385.22
+  },
+  {
+   "name": "MCKAY, MICHAEL W.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1007148",
+   "contributions": 165444.75
+  },
+  {
+   "name": "HETTLEMAN, MICHELLE L.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1009520",
+   "contributions": 218333.25
+  },
+  {
+   "name": "Reed, Christopher S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018525",
+   "contributions": 2688.18
+  },
+  {
+   "name": "Abney, Jason W.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018737",
+   "contributions": 3945.0
+  },
+  {
+   "name": "Carpenter, Crystal",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018269",
+   "contributions": 10906.0
+  },
+  {
+   "name": "LOVE, SARA N.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1011746",
+   "contributions": 136205.99
+  },
+  {
+   "name": "AFFUMMCALLISTER, ABENA Y.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012966",
+   "contributions": 39752.75
+  },
+  {
+   "name": "Henderson, Paul",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018657",
+   "contributions": 2735.0
+  },
+  {
+   "name": "Shaban, Ryan K.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015773",
+   "contributions": 5807.39
+  },
+  {
+   "name": "Linton, Chikongola SR",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018489",
+   "contributions": 0.0
+  },
+  {
+   "name": "WOORMAN, TERESA S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1014728",
+   "contributions": 50520.55
+  },
+  {
+   "name": "DUGGAN, DANIEL P.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015644",
+   "contributions": 23301.0
+  },
+  {
+   "name": "JOHNSON, SHANEKA T.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1013197",
+   "contributions": 131727.19
+  },
+  {
+   "name": "Wintermute, Blake R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018651",
+   "contributions": 311.9
+  },
+  {
+   "name": "MATHIS, ADRIANNE M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015543",
+   "contributions": 27616.06
+  },
+  {
+   "name": "STOLZ, THOMAS J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015433",
+   "contributions": 0.0
+  },
+  {
+   "name": "HERNEKER, ELLIOTT J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018774",
+   "contributions": 2136.25
+  },
+  {
+   "name": "BAGNALL TUDBALL, HEATHER A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012107",
+   "contributions": 164354.09
+  },
+  {
+   "name": "TAYLOR, JAKOB D.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1014175",
+   "contributions": 72165.87
+  },
+  {
+   "name": "JONES, RACHEL R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013632",
+   "contributions": 13692.0
+  },
+  {
+   "name": "Davidson, Jennifer M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018815",
+   "contributions": 2519.62
+  },
+  {
+   "name": "BOAFO, ADRIAN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1014106",
+   "contributions": 90490.0
+  },
+  {
+   "name": "MORGAN, JAMES M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1005642",
+   "contributions": 256129.5
+  },
+  {
+   "name": "HUTCHISON, AAMINA",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015733",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOHNSON, GEORGE W.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011158",
+   "contributions": 1.0
+  },
+  {
+   "name": "Jennings, Cornelius A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018992",
+   "contributions": 0.0
+  },
+  {
+   "name": "VALDERRAMA-LOBO, KRISELDA",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011179",
+   "contributions": 234790.0
+  },
+  {
+   "name": "Gordon, John  C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018508",
+   "contributions": 0.0
+  },
+  {
+   "name": "PATTEN, ALEXANDER S.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015265",
+   "contributions": 53375.5
+  },
+  {
+   "name": "Konka, Paul V.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018543",
+   "contributions": 0.0
+  },
+  {
+   "name": "BEAUCHAMP, BARRY S.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015333",
+   "contributions": 94918.28
+  },
+  {
+   "name": "LAPIN, ROBERT C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1015742",
+   "contributions": 241241.94
+  },
+  {
+   "name": "Cager, Chezia",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018421",
+   "contributions": 67135.0
+  },
+  {
+   "name": "BAILEY, JOHN D.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1012595",
+   "contributions": 371222.09
+  },
+  {
+   "name": "JACOBS, DARRIN M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015609",
+   "contributions": 25450.0
+  },
+  {
+   "name": "Garcia, Marco A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018581",
+   "contributions": 0.0
+  },
+  {
+   "name": "MAUTZ, JOHN F.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1009384",
+   "contributions": 464830.32
+  },
+  {
+   "name": "Thompson, Brandon",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018741",
+   "contributions": 0.0
+  },
+  {
+   "name": "Buckel, Jason C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1006366",
+   "contributions": 173335.0
+  },
+  {
+   "name": "LOPEZ, LESLEY J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011564",
+   "contributions": 35522.2
+  },
+  {
+   "name": "METZGAR, RICHARD W.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1003390",
+   "contributions": 78560.0
+  },
+  {
+   "name": "JOHNSON, STEVEN C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012453",
+   "contributions": 43198.97
+  },
+  {
+   "name": "HALL, WILLIAM R.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1013983",
+   "contributions": 43245.86
+  },
+  {
+   "name": "KAGAN, CHERYL C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1003533",
+   "contributions": 144692.79
+  },
+  {
+   "name": "SMITH, WILLIAM C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1009241",
+   "contributions": 471890.99
+  },
+  {
+   "name": "HARRISON, ANDREA C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1004996",
+   "contributions": 285099.13
+  },
+  {
+   "name": "PIPPY, JESSE T.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1009636",
+   "contributions": 255556.48
+  },
+  {
+   "name": "Wass, James K.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16018751",
+   "contributions": 0.0
+  },
+  {
+   "name": "MURPHY, CHARLES E. 3RD",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018817",
+   "contributions": 15703.8
+  },
+  {
+   "name": "BROOKS, BENJAMIN T.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1006069",
+   "contributions": 130585.65
+  },
+  {
+   "name": "TURNER, ALONZO E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015479",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hart, Candace",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018671",
+   "contributions": 1383.13
+  },
+  {
+   "name": "Meister, Helene F.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16018993",
+   "contributions": 1245.09
+  },
+  {
+   "name": "McQueen, James S. SR",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018371",
+   "contributions": 3018.85
+  },
+  {
+   "name": "GEELHAAR, GLEN A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1011595",
+   "contributions": 41862.28
+  },
+  {
+   "name": "EDWARDS, JULIAN D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015574",
+   "contributions": 15091.97
+  },
+  {
+   "name": "GILE, DAWN D.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1013694",
+   "contributions": 555125.3
+  },
+  {
+   "name": "KERR, KENNETH P.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011306",
+   "contributions": 94925.59
+  },
+  {
+   "name": "ADAMS, CHRISTOPHER T.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1009465",
+   "contributions": 39925.0
+  },
+  {
+   "name": "Fechtmann, Michael C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018757",
+   "contributions": 520.0
+  },
+  {
+   "name": "BAKER, OCEWANA E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015620",
+   "contributions": 0.0
+  },
+  {
+   "name": "Flaherty , Sean K.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018652",
+   "contributions": 1108.8
+  },
+  {
+   "name": "HOLLAND, JENNIFER A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013678",
+   "contributions": 55360.71
+  },
+  {
+   "name": "BROWN, RENAUD D.",
+   "party": "Green",
+   "chamber": "house",
+   "committee": "1014168",
+   "contributions": 5545.95
+  },
+  {
+   "name": "AHMED, RAAHEELA S.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1011338",
+   "contributions": 104534.15
+  },
+  {
+   "name": "CHISHOLM, BRIAN A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1011935",
+   "contributions": 73920.32
+  },
+  {
+   "name": "Immler, Eric F.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018710",
+   "contributions": 100.0
+  },
+  {
+   "name": "Chan, Peter",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018553",
+   "contributions": 300.0
+  },
+  {
+   "name": "BAKER, TERRY L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1010036",
+   "contributions": 10721.0
+  },
+  {
+   "name": "Whitmire Terrell, Tarinna N.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018826",
+   "contributions": 0.0
+  },
+  {
+   "name": "Howell, Derek J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018473",
+   "contributions": 31050.0
+  },
+  {
+   "name": "ZUCKER, CRAIG J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1000745",
+   "contributions": 646468.44
+  },
+  {
+   "name": "BHANDARI, HIR B.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009852",
+   "contributions": 118556.0
+  },
+  {
+   "name": "Heyssel, Eric R.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018546",
+   "contributions": 0.0
+  },
+  {
+   "name": "THOMAS, DAN L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018424",
+   "contributions": 2168.62
+  },
+  {
+   "name": "ROSS, KIM L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015503",
+   "contributions": 34635.0
+  },
+  {
+   "name": "McEvers, Colin P.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018619",
+   "contributions": 0.0
+  },
+  {
+   "name": "TREMINIO-LOPEZ, ROCIO C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1014665",
+   "contributions": 15957.03
+  },
+  {
+   "name": "HOWARD, SETH A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1005354",
+   "contributions": 103590.0
+  },
+  {
+   "name": "PHILLIPS, NORMAN S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013885",
+   "contributions": 134130.18
+  },
+  {
+   "name": "TOMLINSON, CHRISTOPHER L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1012402",
+   "contributions": 88030.0
+  },
+  {
+   "name": "Watts, Shaara",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018828",
+   "contributions": 1459.62
+  },
+  {
+   "name": "LONG, ROBERT",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1006170",
+   "contributions": 17769.9
+  },
+  {
+   "name": "Brown, Michael  T. SR",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018763",
+   "contributions": 3672.8
+  },
+  {
+   "name": "MOON, DAVID H.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009206",
+   "contributions": 137995.21
+  },
+  {
+   "name": "JACKSON, MICHAEL A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1009796",
+   "contributions": 226704.34
+  },
+  {
+   "name": "SNIPES, MARCUS D. JR",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018534",
+   "contributions": 300.0
+  },
+  {
+   "name": "MCCOY, ANBREA D.",
+   "party": "Other",
+   "chamber": "house",
+   "committee": "16019019",
+   "contributions": 1450.0
+  },
+  {
+   "name": "Coley, Derrick L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018247",
+   "contributions": 24530.0
+  },
+  {
+   "name": "SOLOMON, JARED S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011780",
+   "contributions": 139470.22
+  },
+  {
+   "name": "STEIN, DANA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1003061",
+   "contributions": 164939.75
+  },
+  {
+   "name": "NORTH, BERNICE D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013541",
+   "contributions": 92587.96
+  },
+  {
+   "name": "LEWIS YOUNG, KAREN",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1009704",
+   "contributions": 134696.66
+  },
+  {
+   "name": "WOODS, JAMILA J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1010912",
+   "contributions": 35742.22
+  },
+  {
+   "name": "STEWART, VAUGHN M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011567",
+   "contributions": 114090.93
+  },
+  {
+   "name": "YOUNG, CAYLIN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012274",
+   "contributions": 97967.0
+  },
+  {
+   "name": "HAYES, ANTONIO L.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1009546",
+   "contributions": 683371.04
+  },
+  {
+   "name": "BERGE, ERICA",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015474",
+   "contributions": 43144.73
+  },
+  {
+   "name": "SCHINDLER, MATTHEW J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015395",
+   "contributions": 24989.18
+  },
+  {
+   "name": "Howlett, Timothy H. SR",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018453",
+   "contributions": 0.0
+  },
+  {
+   "name": "LEHMAN, MARY A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1005192",
+   "contributions": 77524.21
+  },
+  {
+   "name": "Clark, Winfield W. JR",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018836",
+   "contributions": 2300.0
+  },
+  {
+   "name": "QI, HONG",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011939",
+   "contributions": 158935.86
+  },
+  {
+   "name": "MOORE-KING, DANIELLE E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015447",
+   "contributions": 112285.84
+  },
+  {
+   "name": "Eckels, Michael",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018778",
+   "contributions": 0.0
+  },
+  {
+   "name": "WATSON, MARY C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1000890",
+   "contributions": 149295.42
+  },
+  {
+   "name": "Clendaniel, Kathleen G.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018633",
+   "contributions": 43784.07
+  },
+  {
+   "name": "Contreras-Donello, Alicia",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16017212",
+   "contributions": 35441.94
+  },
+  {
+   "name": "BAYSMORE, ZULIEKA A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1013407",
+   "contributions": 2639.4
+  },
+  {
+   "name": "CONAWAY, FRANK M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1003439",
+   "contributions": 2775.0
+  },
+  {
+   "name": "Berger, Bobby A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018586",
+   "contributions": 7500.0
+  },
+  {
+   "name": "Anderson, Shannice",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018457",
+   "contributions": 4824.0
+  },
+  {
+   "name": "Stone, Alec",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018647",
+   "contributions": 56018.0
+  },
+  {
+   "name": "STANLEY, ALLERIA A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015617",
+   "contributions": 39558.14
+  },
+  {
+   "name": "Robinson, Rayneika S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018695",
+   "contributions": 10828.0
+  },
+  {
+   "name": "Mercado Garcia, Rocio C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018768",
+   "contributions": 0.0
+  },
+  {
+   "name": "Tillett, Stephen",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1015674",
+   "contributions": 57979.66
+  },
+  {
+   "name": "Puzon, Daniel  I.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018289",
+   "contributions": 0.0
+  },
+  {
+   "name": "CORDERMAN, PAUL D.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1012103",
+   "contributions": 156629.0
+  },
+  {
+   "name": "MCCRAY, CORY",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1007182",
+   "contributions": 563369.05
+  },
+  {
+   "name": "Havis, Andrew",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16018588",
+   "contributions": 8219.51
+  },
+  {
+   "name": "ARMAH BLACKWELL, JEROBOAM Y.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1015571",
+   "contributions": 0.0
+  },
+  {
+   "name": "MATIN, ABDUN N.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16017183",
+   "contributions": 11356.0
+  },
+  {
+   "name": "Maldon, Shawn",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018665",
+   "contributions": 5379.0
+  },
+  {
+   "name": "ROSENBERG, SAMUEL I.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1006977",
+   "contributions": 173030.4
+  },
+  {
+   "name": "TOLES, KAREN R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1005415",
+   "contributions": 143013.0
+  },
+  {
+   "name": "COOK, CHARLES",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012368",
+   "contributions": 257181.52
+  },
+  {
+   "name": "Dasgupta, Sunil",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018441",
+   "contributions": 11041.0
+  },
+  {
+   "name": "West, Destiny D.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1015741",
+   "contributions": 33420.77
+  },
+  {
+   "name": "KORMAN, MARC A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1005474",
+   "contributions": 374915.96
+  },
+  {
+   "name": "HENRY, BOBBY G.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1010039",
+   "contributions": 19728.22
+  },
+  {
+   "name": "Phelps, Mary",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018945",
+   "contributions": 0.0
+  },
+  {
+   "name": "WASHINGTON, MARY L.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1002865",
+   "contributions": 141027.13
+  },
+  {
+   "name": "WATSON, RONALD L.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1009921",
+   "contributions": 386907.13
+  },
+  {
+   "name": "FOLDEN, WILLIAM G.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1010125",
+   "contributions": 175821.35
+  },
+  {
+   "name": "KRAMER, BENJAMIN FRED.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1003206",
+   "contributions": 101619.99
+  },
+  {
+   "name": "Stein, Kathryn",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018965",
+   "contributions": 18375.0
+  },
+  {
+   "name": "Johnson, Nivek",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018509",
+   "contributions": 6210.67
+  },
+  {
+   "name": "MOORE LEE, YONELLE",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16017233",
+   "contributions": 30442.08
+  },
+  {
+   "name": "Scipio, Sherry L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015788",
+   "contributions": 10390.0
+  },
+  {
+   "name": "KAISER, ANNE R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1001304",
+   "contributions": 100830.19
+  },
+  {
+   "name": "Brannock, Blair",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018738",
+   "contributions": 0.0
+  },
+  {
+   "name": "Crouse, Nevin",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018688",
+   "contributions": 0.0
+  },
+  {
+   "name": "BROWN, LYDIA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1014695",
+   "contributions": 48921.0
+  },
+  {
+   "name": "DIGMAN, EMMANUEL M.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1014743",
+   "contributions": 582.41
+  },
+  {
+   "name": "Amason, Jeremy",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015665",
+   "contributions": 2100.0
+  },
+  {
+   "name": "CLEMONS, EDWARD E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015509",
+   "contributions": 7113.39
+  },
+  {
+   "name": "Rudolph, Alison",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018334",
+   "contributions": 11594.2
+  },
+  {
+   "name": "CALDWELL-NKONGOLO, LATOYA M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015012",
+   "contributions": 96299.54
+  },
+  {
+   "name": "Cressotti, Lino V.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018972",
+   "contributions": 33140.66
+  },
+  {
+   "name": "MOHAN, JYOTI",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015614",
+   "contributions": 55219.41
+  },
+  {
+   "name": "FOLEY, LINDA K.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013804",
+   "contributions": 70552.01
+  },
+  {
+   "name": "CLANCY, JENNIFER L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015550",
+   "contributions": 59945.9
+  },
+  {
+   "name": "FORBES, CATHERINE M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013267",
+   "contributions": 84968.3
+  },
+  {
+   "name": "CRAWFORD, JAMES H.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1012508",
+   "contributions": 0.0
+  },
+  {
+   "name": "Quander-Mosley, Le Shaun",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018843",
+   "contributions": 7867.46
+  },
+  {
+   "name": "ZIEGLER, NATALIE C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013889",
+   "contributions": 67674.88
+  },
+  {
+   "name": "PALAKOVICH CARR, JULIE A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011754",
+   "contributions": 56333.6
+  },
+  {
+   "name": "HOLMES, MARVIN E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1005678",
+   "contributions": 29480.0
+  },
+  {
+   "name": "WARD, LATASHA R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009989",
+   "contributions": 7064.29
+  },
+  {
+   "name": "Johnson, Michele W.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018722",
+   "contributions": 12715.91
+  },
+  {
+   "name": "HARVEY, ROBIN L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013595",
+   "contributions": 37185.27
+  },
+  {
+   "name": "JENNINGS, JONATHAN B.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1002339",
+   "contributions": 311041.09
+  },
+  {
+   "name": "CHAPMAN, BISHOP B.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011959",
+   "contributions": 2987.56
+  },
+  {
+   "name": "POST, MATTHEW L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015569",
+   "contributions": 208098.6
+  },
+  {
+   "name": "Fisher, JoAnn",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018844",
+   "contributions": 0.0
+  },
+  {
+   "name": "CORBIN, AARON E. 2ND",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018547",
+   "contributions": 0.0
+  },
+  {
+   "name": "Smith, Evan S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018724",
+   "contributions": 13790.0
+  },
+  {
+   "name": "DUCK, ANDREW J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1014156",
+   "contributions": 11581.25
+  },
+  {
+   "name": "JAMES, KEENON M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013971",
+   "contributions": 18652.04
+  },
+  {
+   "name": "DRIVER, ANTONIO M.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1015341",
+   "contributions": 0.0
+  },
+  {
+   "name": "JEAN, ANDERSON A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015374",
+   "contributions": 8449.05
+  },
+  {
+   "name": "BEHLER, DYLAN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012248",
+   "contributions": 105170.0
+  },
+  {
+   "name": "PRUSKI, ANDREW C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009333",
+   "contributions": 170900.9
+  },
+  {
+   "name": "Johnson, Sebastian",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018964",
+   "contributions": 77924.07
+  },
+  {
+   "name": "Tichy, Christa",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015774",
+   "contributions": 108526.3
+  },
+  {
+   "name": "KIPKE, NICHOLAUS R.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1002783",
+   "contributions": 347171.26
+  },
+  {
+   "name": "TAYLOR, SALLIE B.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015423",
+   "contributions": 38412.9
+  },
+  {
+   "name": "SYDNOR, CHARLES E.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1009219",
+   "contributions": 224282.2
+  },
+  {
+   "name": "RUFF, MALCOLM P.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1015037",
+   "contributions": 691045.21
+  },
+  {
+   "name": "FENNELL, DIANA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009492",
+   "contributions": 73748.43
+  },
+  {
+   "name": "SHETTY, EMILY K.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009284",
+   "contributions": 102266.74
+  },
+  {
+   "name": "EBERSOLE, ERIC D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009298",
+   "contributions": 106556.0
+  },
+  {
+   "name": "TAVERAS, DENI L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009366",
+   "contributions": 80454.07
+  },
+  {
+   "name": "EDELSON, MARK",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011129",
+   "contributions": 255174.37
+  },
+  {
+   "name": "LARSEN, ALBERT D.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "1014656",
+   "contributions": 5314.8
+  },
+  {
+   "name": "Brittingham, Laurie A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018984",
+   "contributions": 0.0
+  },
+  {
+   "name": "Sanders, Nickalus",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018729",
+   "contributions": 17480.0
+  },
+  {
+   "name": "THIAM, BRENDA J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015448",
+   "contributions": 1892.92
+  },
+  {
+   "name": "JACKSON, CARL W.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1011751",
+   "contributions": 247051.21
+  },
+  {
+   "name": "Eisenhart, Daniel",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16018435",
+   "contributions": 1303.2
+  },
+  {
+   "name": "AMOS, ROBERT",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018788",
+   "contributions": 601.51
+  },
+  {
+   "name": "COOK, PHILIP Z.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018834",
+   "contributions": 3614.24
+  },
+  {
+   "name": "CHARKOUDIAN, LORIG",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011532",
+   "contributions": 167371.64
+  },
+  {
+   "name": "ASHBURN, JAMES E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1012286",
+   "contributions": 300.0
+  },
+  {
+   "name": "TILGHMAN, ANTHONY B.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1014207",
+   "contributions": 14030.0
+  },
+  {
+   "name": "NOVAK, LARRY A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16017169",
+   "contributions": 0.0
+  },
+  {
+   "name": "Thomas, Steven J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018861",
+   "contributions": 65979.03
+  },
+  {
+   "name": "Stallworth, Rebecca M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018707",
+   "contributions": 25.0
+  },
+  {
+   "name": "CLIPPINGER, LUKE",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1005215",
+   "contributions": 164701.01
+  },
+  {
+   "name": "Bergman, Dayana",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16017144",
+   "contributions": 14782.61
+  },
+  {
+   "name": "Nelson, Anthony",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015570",
+   "contributions": 2666.0
+  },
+  {
+   "name": "BOYCE, REGINA T.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011904",
+   "contributions": 191905.43
+  },
+  {
+   "name": "TAYLOR, KYM D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013731",
+   "contributions": 103445.93
+  },
+  {
+   "name": "Christman, Michelle K.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015659",
+   "contributions": 2500.0
+  },
+  {
+   "name": "JOHNSON, ANDRE V.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012049",
+   "contributions": 83671.41
+  },
+  {
+   "name": "SPIEGEL, RYAN S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1002907",
+   "contributions": 74131.47
+  },
+  {
+   "name": "MUSE, CHARLES A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1013975",
+   "contributions": 97570.86
+  },
+  {
+   "name": "HARRIS, KEVIN M.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1011626",
+   "contributions": 228467.85
+  },
+  {
+   "name": "YOUSEFI, SHEARIAH",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015446",
+   "contributions": 125039.4
+  },
+  {
+   "name": "CAMPBELL, BRIAN A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1013845",
+   "contributions": 0.6
+  },
+  {
+   "name": "VALENTINE, WILLIAM M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1013808",
+   "contributions": 16946.0
+  },
+  {
+   "name": "Hayes, Craig J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018765",
+   "contributions": 42094.03
+  },
+  {
+   "name": "BRILEY-SAVAGE, MARSHA A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015480",
+   "contributions": 11275.17
+  },
+  {
+   "name": "Huffman, Artus W.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018593",
+   "contributions": 525.0
+  },
+  {
+   "name": "HARTMAN, WAYNE A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1012122",
+   "contributions": 134150.3
+  },
+  {
+   "name": "Simpson, James",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16019059",
+   "contributions": 0.0
+  },
+  {
+   "name": "REILLY, TERESA E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1005751",
+   "contributions": 9859.87
+  },
+  {
+   "name": "Martin, Reginald",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018810",
+   "contributions": 5560.0
+  },
+  {
+   "name": "Bance, Michael",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018743",
+   "contributions": 2175.0
+  },
+  {
+   "name": "FOWLER, JASON T.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1011540",
+   "contributions": 21888.0
+  },
+  {
+   "name": "Foote, Gary E.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018914",
+   "contributions": 2372.39
+  },
+  {
+   "name": "HORNBERGER, KEVIN B.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1009749",
+   "contributions": 53318.26
+  },
+  {
+   "name": "ODOM, DARRELL C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1014455",
+   "contributions": 11882.15
+  },
+  {
+   "name": "Ciezkowski, Henry J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018712",
+   "contributions": 10465.88
+  },
+  {
+   "name": "Jobe, Jason M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018515",
+   "contributions": 501.0
+  },
+  {
+   "name": "HESTER, KATHRYN F.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1011813",
+   "contributions": 558727.33
+  },
+  {
+   "name": "ROSAPEPE, JAMES C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1000076",
+   "contributions": 207028.0
+  },
+  {
+   "name": "Legacy, Kevin D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018425",
+   "contributions": 0.0
+  },
+  {
+   "name": "Roche, Connor P.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015723",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROGERS, MICHAEL J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012145",
+   "contributions": 266265.0
+  },
+  {
+   "name": "JALISI, HASAN M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1006687",
+   "contributions": 60825.0
+  },
+  {
+   "name": "WELLS, MELISSA R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011775",
+   "contributions": 126741.0
+  },
+  {
+   "name": "ALOI, SHELLEY M.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16018699",
+   "contributions": 0.0
+  },
+  {
+   "name": "LONG, JEFFRIE E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1013584",
+   "contributions": 106207.0
+  },
+  {
+   "name": "QUEEN, JOHN M. 3RD",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018600",
+   "contributions": 6036.0
+  },
+  {
+   "name": "Hingston, Ann",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018709",
+   "contributions": 11472.84
+  },
+  {
+   "name": "Pena-Melnyk, Joseline A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1003236",
+   "contributions": 774982.87
+  },
+  {
+   "name": "ACEVERO, GABRIEL",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011650",
+   "contributions": 56278.84
+  },
+  {
+   "name": "Reynolds , Cleveland  M. JR",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018863",
+   "contributions": 0.0
+  },
+  {
+   "name": "Marshall, Carroll L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018505",
+   "contributions": 16386.03
+  },
+  {
+   "name": "PALMER, DIANNA C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018790",
+   "contributions": 1483.51
+  },
+  {
+   "name": "RIKER, MICHAEL W.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015294",
+   "contributions": 3905.6
+  },
+  {
+   "name": "GUZZONE, GUY J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1006627",
+   "contributions": 1120210.15
+  },
+  {
+   "name": "FELDMARK, JESSICA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012725",
+   "contributions": 507631.82
+  },
+  {
+   "name": "NAWROCKI, RYAN M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1011915",
+   "contributions": 410406.16
+  },
+  {
+   "name": "FORD, KEVIN M.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1014899",
+   "contributions": 281809.8
+  },
+  {
+   "name": "Fox, Matthew B.",
+   "party": null,
+   "chamber": "senate",
+   "committee": "16017166",
+   "contributions": 14035.0
+  },
+  {
+   "name": "MORGAN, TODD B.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1005782",
+   "contributions": 98824.27
+  },
+  {
+   "name": "SCHMIDT, HEIDI J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015436",
+   "contributions": 44772.74
+  },
+  {
+   "name": "MCDONALD, JEFFRY K.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018802",
+   "contributions": 18357.0
+  },
+  {
+   "name": "SIMPSON, KAREN P.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012530",
+   "contributions": 41324.0
+  },
+  {
+   "name": "DAVIS, DEBRA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1005737",
+   "contributions": 34360.0
+  },
+  {
+   "name": "WIVELL, WILLIAM J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1007466",
+   "contributions": 30806.0
+  },
+  {
+   "name": "SCHMIDT, STUART M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1013981",
+   "contributions": 79269.61
+  },
+  {
+   "name": "MARTINEZ, ASHANTI F.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011261",
+   "contributions": 49672.45
+  },
+  {
+   "name": "WOODWARD, CRYSTAL C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018522",
+   "contributions": 7721.36
+  },
+  {
+   "name": "DONALD, JERRY D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1009817",
+   "contributions": 34402.99
+  },
+  {
+   "name": "FISHER, MARK",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018857",
+   "contributions": 1250.0
+  },
+  {
+   "name": "ADAMS, ANDREW G.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1013756",
+   "contributions": 0.0
+  },
+  {
+   "name": "STOKES, ROBERT R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1007316",
+   "contributions": 140300.88
+  },
+  {
+   "name": "THOMAS, TIMOTHY E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1013791",
+   "contributions": 0.0
+  },
+  {
+   "name": "BEIDLE, PAMELA",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1007193",
+   "contributions": 753683.86
+  },
+  {
+   "name": "Gilligan, Paul",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018625",
+   "contributions": 350.0
+  },
+  {
+   "name": "ALTAMIRANO, ALICIA V.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015524",
+   "contributions": 6868.99
+  },
+  {
+   "name": "IVEY, ROBERT J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1011767",
+   "contributions": 124680.0
+  },
+  {
+   "name": "GANT, TRACY RENE.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018726",
+   "contributions": 13605.46
+  },
+  {
+   "name": "MENTER, MATTHEW J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015504",
+   "contributions": 0.0
+  },
+  {
+   "name": "Chang, Mark S.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1003586",
+   "contributions": 177401.7
+  },
+  {
+   "name": "Baker, Thomas D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018852",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lluberes, George G.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015712",
+   "contributions": 13019.99
+  },
+  {
+   "name": "Welch, Courtney A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018420",
+   "contributions": 0.0
+  },
+  {
+   "name": "SZELIGA, KATHRYN Y.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1005251",
+   "contributions": 408428.63
+  },
+  {
+   "name": "WILKINS, JHEANELLE K.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1010421",
+   "contributions": 359002.51
+  },
+  {
+   "name": "LAM, CLARENCE K.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1009170",
+   "contributions": 360418.53
+  },
+  {
+   "name": "Courpas, Corynne B.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018302",
+   "contributions": 44883.57
+  },
+  {
+   "name": "Simmons Robinson, Kimberly",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "16018514",
+   "contributions": 0.0
+  },
+  {
+   "name": "GRIFFITH, CHRISTOPHER M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1013454",
+   "contributions": 267234.84
+  },
+  {
+   "name": "JONES, JOHN D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015471",
+   "contributions": 0.0
+  },
+  {
+   "name": "Beckwitt, Asher E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018687",
+   "contributions": 0.0
+  },
+  {
+   "name": "Tolbert, Joseph III",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018422",
+   "contributions": 3355.0
+  },
+  {
+   "name": "AHMAD, TAZEEN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015500",
+   "contributions": 108877.35
+  },
+  {
+   "name": "Anderson, Gregory",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "16018545",
+   "contributions": 0.0
+  },
+  {
+   "name": "FISHER, MARK N.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1005685",
+   "contributions": 136868.91
+  },
+  {
+   "name": "Simpson, James M.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "16018962",
+   "contributions": 0.0
+  },
+  {
+   "name": "HUTCHINSON, THOMAS S.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1014454",
+   "contributions": 64281.94
+  },
+  {
+   "name": "ARENTZ, STEVEN J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1009611",
+   "contributions": 30136.43
+  },
+  {
+   "name": "BOWEN, LANCE D.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1015420",
+   "contributions": 5344.0
+  },
+  {
+   "name": "PASTEUR, CHERYL E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1012059",
+   "contributions": 67604.33
+  },
+  {
+   "name": "ONEAL, BRADLEY K.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015635",
+   "contributions": 2419.54
+  },
+  {
+   "name": "TURNER, RYAN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "1015536",
+   "contributions": 79517.06
+  },
+  {
+   "name": "MILLER, BLANE H.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "1013990",
+   "contributions": 2929.33
+  },
+  {
+   "name": "Bartolo, Lou J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "16018620",
+   "contributions": 3750.0
+  },
+  {
+   "name": "MCDONALD, NICHOLE L.",
+   "party": "Other",
+   "chamber": "house",
+   "committee": "16019029",
+   "contributions": 0.0
+  },
+  {
+   "name": "GRAMMER, ROBIN L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "1009216",
+   "contributions": 55391.66
+  }
+ ]
+}

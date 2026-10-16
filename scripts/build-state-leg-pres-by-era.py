@@ -102,9 +102,14 @@ def eras_for(abbr, chamber, index):
 
 
 def topo_to_geo(path, cache_dir):
-    """mapshaper converts the TopoJSON era file to GeoJSON; cached by file name + mtime."""
+    """mapshaper converts the TopoJSON era file to GeoJSON; cached by chamber + file name + mtime.
+
+    The chamber (the file's parent directory) is part of the key: house/DE-2020.json and
+    senate/DE-2020.json share a basename, and keying on the name alone once handed the Senate the
+    House's districts (Delaware's and Vermont's 2020-era Senate blocks, found 2026-10-16)."""
     stamp = int(os.path.getmtime(path))
-    out = os.path.join(cache_dir, "_geo", f"{os.path.basename(path)}.{stamp}.geojson")
+    chamber = os.path.basename(os.path.dirname(path))
+    out = os.path.join(cache_dir, "_geo", f"{chamber}-{os.path.basename(path)}.{stamp}.geojson")
     if not os.path.exists(out):
         os.makedirs(os.path.dirname(out), exist_ok=True)
         subprocess.run(["mapshaper", path, "-o", out, "format=geojson"], check=True, capture_output=True)

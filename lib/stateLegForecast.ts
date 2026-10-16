@@ -13,7 +13,7 @@ import { stateLegCalendar } from "@/data/stateLegCalendar";
 import { getTplFit, getNationalEnvironment, winProbabilityD } from "@/lib/tplCompute";
 import { indexByNormalizedKey, isUnassignedResultKey, lookupByDistrictCode } from "@/lib/stateLegDistrictKey";
 import { seatsUpIn } from "@/lib/stateLegUpcoming";
-import { contest2026, fieldPersons, personKey } from "@/lib/stateLegAtlas";
+import { contest2026, fieldPersons, personKey, projectedSeatWinners } from "@/lib/stateLegAtlas";
 export { personKey };
 import { marginToRating } from "@/lib/colorScale";
 import { stateLegIndependents } from "@/data/stateLegIndependents";
@@ -60,9 +60,9 @@ import { stateLegIndependents } from "@/data/stateLegIndependents";
 export const STATE_LEG_FORECAST_CONSTANTS = {
   TYPE_WEIGHTS: { P: 0.6, L: 0.2 } as Record<"P" | "L", number>, // the District TPL's P/H ratio: a seat's own race is to its district what a House race is to a congressional district
   RECENT_SEAT_BOOST: 3,  // the seat row's type weight × this in the latest year that has one (L 0.2 → 0.6, half that year's lean): the backtest's sweep (2026-10-14), MAE 5.85 → 5.74 (2022) and 5.39 → 5.18 (2024)
-  INCUMBENCY_PTS: 3.0,   // fitted by scripts/stateLegBacktest.ts: 3.6 (2022) / 1.8 (2024) with RECENT_SEAT_BOOST (2026-10-14), set at their rounded mean
-  SIGMA: 7.0,            // seat-level noise beyond the national and chamber shocks, fitted by the backtest (holdout residual spread after τ: 7.2 / 6.9)
-  STATE_SHOCK: 3.5,      // chamber-level shock τ shared by every seat of a chamber in a year, fitted by the backtest (chamber-mean residual spread: 3.3 / 3.5 with RECENT_SEAT_BOOST, 2026-10-14)
+  INCUMBENCY_PTS: 3.0,   // fitted by scripts/stateLegBacktest.ts: 3.7 (2022) / 1.8 (2024) with RECENT_SEAT_BOOST (2026-10-16 re-run), set at their rounded mean
+  SIGMA: 7.0,            // seat-level noise beyond the national and chamber shocks, fitted by the backtest (holdout residual spread after τ: 7.4 / 6.9)
+  STATE_SHOCK: 3.5,      // chamber-level shock τ shared by every seat of a chamber in a year, fitted by the backtest (chamber-mean residual spread: 3.4 / 3.5 with RECENT_SEAT_BOOST, 2026-10-16 re-run)
   MIN_COVERAGE: 0.5,     // a relocated row needs contested old districts covering this share of today's population
   IND_RECORD_SHARE: 40,  // a non-incumbent independent is modeled when they took this share of their last head-to-head in the seat
   IND_PRIOR_PTS: 14,     // a modeled independent runs this far ahead of a generic nominee of the absent party before their own record: the median of the 16 head-to-heads 2022-24 (scripts/stateLegIndependentBacktest.ts)
@@ -163,6 +163,9 @@ export interface ChamberProjection {
   expectedRep: number;
   /** Independents and third parties: holdovers, decided seats and modeled independent wins. */
   expectedOth: number;
+  /** The sum of each seat's projected winner (lib/stateLegAtlas.ts projectedSeatWinners): the
+   *  headline count, the same one the chamber map shows. `expected*` stay the simulation means. */
+  favored: { dem: number; rep: number; oth: number; none: number };
   lo80: number;
   hi80: number;
   majority: number | null;
@@ -631,10 +634,11 @@ export function projectChamber(abbr: string, chamber: Chamber, year: number = el
   const supermajority = info?.supermajoritySeats ?? null;
   const meanDem = counts.reduce((a, b) => a + b, 0) / sims;
   const meanRep = repCounts.reduce((a, b) => a + b, 0) / sims;
+  const winners = projectedSeatWinners(roster.map((d, i) => ({ seats: d.seats, incumbents: d.incumbents ?? [], projection: districts[i] })));
   const share = (pred: (k: number) => boolean) => { let n = 0; for (let k = 0; k < sims; k += 1) if (pred(k)) n += 1; return n / sims; };
   const out: ChamberProjection = {
     abbr, chamber, year, districts, totalSeats, seatsUp, holdover, decided,
-    expectedDem: meanDem, expectedRep: meanRep, expectedOth: othSum / sims, lo80: q(0.1), hi80: q(0.9),
+    expectedDem: meanDem, expectedRep: meanRep, expectedOth: othSum / sims, favored: { dem: winners.D, rep: winners.R, oth: winners.I + winners.O, none: winners.none }, lo80: q(0.1), hi80: q(0.9),
     majority, supermajority,
     pDemControl: majority == null || !controlKnown ? null : share((k) => counts[k] >= majority),
     pRepControl: majority == null || !controlKnown ? null : share((k) => repCounts[k] >= majority),

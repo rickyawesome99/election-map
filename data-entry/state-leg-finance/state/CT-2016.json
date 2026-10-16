@@ -1,0 +1,2495 @@
+{
+ "state": "CT",
+ "cycle": 2016,
+ "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
+ "dataThrough": "12/31/2016",
+ "house": {
+  "1": [
+   {
+    "name": "Matthew Ritter",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 9130,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "Raghib Allie-Brennan",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5285,
+    "expenditures": null
+   },
+   {
+    "name": "William Duff",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5710,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "Minnie Gonzalez",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5351,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Angel Arce",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6941,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Paul Panos",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5205,
+    "expenditures": null
+   },
+   {
+    "name": "Brandon McGee",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5183,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Edwin Vargas",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5490,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Giselle Jacobs",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 5335,
+    "expenditures": null
+   },
+   {
+    "name": "Douglas McCrory",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 25,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Timothy Ackert",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5960,
+    "expenditures": null
+   },
+   {
+    "name": "Thomas Currier",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5052,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Jason Rojas",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5375,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Henry Genga",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5191,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Jeffrey Currey",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5290,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Kelly Luxenberg",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5375,
+    "expenditures": null
+   },
+   {
+    "name": "John Topping",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5760,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Joseph Diminico",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5330,
+    "expenditures": null
+   },
+   {
+    "name": "Mark Tweedie",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5795,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Tom Delnicki",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5645,
+    "expenditures": null
+   },
+   {
+    "name": "Saud Anwar",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6270,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "David Baram",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6675,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "John Hampton",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7551,
+    "expenditures": null
+   },
+   {
+    "name": "Lydia Tedone",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6525,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "Timothy LeGeyt",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 4710,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Robert Levine",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5586,
+    "expenditures": null
+   },
+   {
+    "name": "Andrew Fleischmann",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7274,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Christopher Barnes",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5975,
+    "expenditures": null
+   },
+   {
+    "name": "Derek Slap",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8117,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Joe Verrengia",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5366,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Michael Demicco",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5623,
+    "expenditures": null
+   },
+   {
+    "name": "Christopher Forster",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5455,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Elizabeth \"Betty\" Boukus",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5325,
+    "expenditures": null
+   },
+   {
+    "name": "William Petit",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5215,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Devin Carney",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6635,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Rick Lopes",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5675,
+    "expenditures": null
+   },
+   {
+    "name": "James Sanders",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5368,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Richard Gadomski",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 175,
+    "expenditures": null
+   },
+   {
+    "name": "Robert Sanchez",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5360,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Desiree Agosto",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1845,
+    "expenditures": null
+   },
+   {
+    "name": "Peter Tercyak",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5355,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Gary Byron",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5345,
+    "expenditures": null
+   },
+   {
+    "name": "Joshua Shulman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5790,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Russell Morin",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5235,
+    "expenditures": null
+   },
+   {
+    "name": "Mike Hurley",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5545,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Antonio \"Tony\" Guerrera",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5610,
+    "expenditures": null
+   },
+   {
+    "name": "Todd Brown",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 960,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Joseph Aresimowicz",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6750,
+    "expenditures": null
+   },
+   {
+    "name": "Christopher Morelli",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5408,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "Prasad Srinivasan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6086,
+    "expenditures": null
+   },
+   {
+    "name": "Matthew Saunig",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6030,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Christie Carpino",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6966,
+    "expenditures": null
+   },
+   {
+    "name": "Myron Johnson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 235,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "Joseph Serra",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6255,
+    "expenditures": null
+   },
+   {
+    "name": "Linda Szynkowicz",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5255,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Melissa Ziobron",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 7585,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "Mary Ellen Dahlgren",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5960,
+    "expenditures": null
+   },
+   {
+    "name": "Jesse MacLachlan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5325,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "Philip Miller",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5810,
+    "expenditures": null
+   },
+   {
+    "name": "Robert Siegrist",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5255,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "Holly Cheeseman",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6635,
+    "expenditures": null
+   },
+   {
+    "name": "Beth Hogan",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5475,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Kathleen McCarty",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5515,
+    "expenditures": null
+   },
+   {
+    "name": "Sharon Palmer",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9200,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "Andrew Lockwood",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 5070,
+    "expenditures": null
+   },
+   {
+    "name": "Ronna Stuller",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 710,
+    "expenditures": null
+   },
+   {
+    "name": "Christian Soto",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5322,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Christine Conley",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6220,
+    "expenditures": null
+   },
+   {
+    "name": "John Scott",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5804.88,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "Aundre Bumgardner",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6860,
+    "expenditures": null
+   },
+   {
+    "name": "Joseph de la Cruz",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5296,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "Mike France",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3105,
+    "expenditures": null
+   }
+  ],
+  "43": [
+   {
+    "name": "Diana Urban",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6196,
+    "expenditures": null
+   },
+   {
+    "name": "Nicholas Mullane",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2859,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "Anne Dauphinais",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5000,
+    "expenditures": null
+   }
+  ],
+  "45": [
+   {
+    "name": "Kevin Skulczyck",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5259,
+    "expenditures": null
+   },
+   {
+    "name": "Tracey Hanson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5411,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "Bonnie Hong",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 2705,
+    "expenditures": null
+   },
+   {
+    "name": "Robert Dempsky",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5570,
+    "expenditures": null
+   },
+   {
+    "name": "Emmett Riley",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7365,
+    "expenditures": null
+   }
+  ],
+  "47": [
+   {
+    "name": "Doug Dubitsky",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5375,
+    "expenditures": null
+   },
+   {
+    "name": "Kate Donnelly",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5764,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "Evan Evans",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5257,
+    "expenditures": null
+   },
+   {
+    "name": "Linda Orange",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5405,
+    "expenditures": null
+   }
+  ],
+  "49": [
+   {
+    "name": "Susan Johnson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1045,
+    "expenditures": null
+   },
+   {
+    "name": "Tony Fantoli",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5325,
+    "expenditures": null
+   }
+  ],
+  "50": [
+   {
+    "name": "Patrick Boyd",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8486.33,
+    "expenditures": null
+   },
+   {
+    "name": "Nora Valentine",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5026,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "Brian Lynch",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5385,
+    "expenditures": null
+   },
+   {
+    "name": "Daniel Rovero",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6014.77,
+    "expenditures": null
+   }
+  ],
+  "52": [
+   {
+    "name": "Kathleen Bachiochi",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5219,
+    "expenditures": null
+   },
+   {
+    "name": "Kurt Vail",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5120,
+    "expenditures": null
+   }
+  ],
+  "53": [
+   {
+    "name": "Sam Belsito",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 4990,
+    "expenditures": null
+   },
+   {
+    "name": "Susan Eastwood",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5435,
+    "expenditures": null
+   }
+  ],
+  "54": [
+   {
+    "name": "Gregory Haddad",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6556,
+    "expenditures": null
+   },
+   {
+    "name": "Mark Sargent",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4055,
+    "expenditures": null
+   }
+  ],
+  "55": [
+   {
+    "name": "Robin Green",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2535,
+    "expenditures": null
+   }
+  ],
+  "56": [
+   {
+    "name": "James Tedford",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5317,
+    "expenditures": null
+   },
+   {
+    "name": "Michael Winkler",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5636,
+    "expenditures": null
+   }
+  ],
+  "57": [
+   {
+    "name": "Christopher Davis",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3906,
+    "expenditures": null
+   }
+  ],
+  "58": [
+   {
+    "name": "David Alexander",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5675,
+    "expenditures": null
+   },
+   {
+    "name": "Gregory Stokes",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5165,
+    "expenditures": null
+   }
+  ],
+  "59": [
+   {
+    "name": "Anthony DiPace",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5149,
+    "expenditures": null
+   },
+   {
+    "name": "Carol Hall",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5155,
+    "expenditures": null
+   }
+  ],
+  "60": [
+   {
+    "name": "Tim Curtis",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5195,
+    "expenditures": null
+   },
+   {
+    "name": "Scott Storms",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5190,
+    "expenditures": null
+   }
+  ],
+  "61": [
+   {
+    "name": "Tami Zawistowski",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6040,
+    "expenditures": null
+   },
+   {
+    "name": "Michael Malloy",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5487,
+    "expenditures": null
+   }
+  ],
+  "62": [
+   {
+    "name": "William Simanski",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5740,
+    "expenditures": null
+   }
+  ],
+  "63": [
+   {
+    "name": "Jay Case",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5355,
+    "expenditures": null
+   }
+  ],
+  "64": [
+   {
+    "name": "Brian Ohler",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5135,
+    "expenditures": null
+   },
+   {
+    "name": "William Riiska",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5367.02,
+    "expenditures": null
+   }
+  ],
+  "65": [
+   {
+    "name": "Michelle Cook",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5386.25,
+    "expenditures": null
+   },
+   {
+    "name": "Todd Schaller",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5875,
+    "expenditures": null
+   }
+  ],
+  "66": [
+   {
+    "name": "David Wilson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5245,
+    "expenditures": null
+   },
+   {
+    "name": "Gayle Carr",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5631,
+    "expenditures": null
+   }
+  ],
+  "67": [
+   {
+    "name": "William Buckbee",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5412,
+    "expenditures": null
+   },
+   {
+    "name": "Mary Lundgren",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6110,
+    "expenditures": null
+   }
+  ],
+  "68": [
+   {
+    "name": "Eric Berthel",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5665,
+    "expenditures": null
+   }
+  ],
+  "72": [
+   {
+    "name": "Larry Butler",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5333,
+    "expenditures": null
+   },
+   {
+    "name": "Vernon Matthews",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 1245,
+    "expenditures": null
+   }
+  ],
+  "73": [
+   {
+    "name": "Jeffrey Berger",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 8335,
+    "expenditures": null
+   },
+   {
+    "name": "Steven Giacomi",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6795,
+    "expenditures": null
+   }
+  ],
+  "74": [
+   {
+    "name": "Stephanie Cummings",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5825,
+    "expenditures": null
+   },
+   {
+    "name": "Wendy Tyson-Wood",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5197,
+    "expenditures": null
+   }
+  ],
+  "75": [
+   {
+    "name": "Geraldo Reyes",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5752,
+    "expenditures": null
+   },
+   {
+    "name": "Raymond Work",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5327,
+    "expenditures": null
+   }
+  ],
+  "76": [
+   {
+    "name": "Myrna Watanabe",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5706,
+    "expenditures": null
+   },
+   {
+    "name": "John Piscopo",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5550,
+    "expenditures": null
+   }
+  ],
+  "77": [
+   {
+    "name": "Laura Bartok",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5645,
+    "expenditures": null
+   },
+   {
+    "name": "Cara Pavalock",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5505,
+    "expenditures": null
+   }
+  ],
+  "78": [
+   {
+    "name": "Whit Betts",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6605,
+    "expenditures": null
+   },
+   {
+    "name": "Krystal Myers",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5535,
+    "expenditures": null
+   }
+  ],
+  "79": [
+   {
+    "name": "Peter Del Mastro",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5310,
+    "expenditures": null
+   },
+   {
+    "name": "Christopher Ziogas",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5080,
+    "expenditures": null
+   }
+  ],
+  "80": [
+   {
+    "name": "Rob Sampson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5679.03,
+    "expenditures": null
+   }
+  ],
+  "81": [
+   {
+    "name": "John Fusco",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5725,
+    "expenditures": null
+   },
+   {
+    "name": "David Zoni",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6720,
+    "expenditures": null
+   }
+  ],
+  "82": [
+   {
+    "name": "Emil \"Buddy\" Altobello",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3085,
+    "expenditures": null
+   }
+  ],
+  "83": [
+   {
+    "name": "Catherine Abercrombie",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5262,
+    "expenditures": null
+   },
+   {
+    "name": "Joseph Vollano",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5780,
+    "expenditures": null
+   }
+  ],
+  "84": [
+   {
+    "name": "Hilda Santiago",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5315,
+    "expenditures": null
+   }
+  ],
+  "85": [
+   {
+    "name": "Mary Mushinsky",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5735,
+    "expenditures": null
+   },
+   {
+    "name": "Serge Mihaly",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5184.98,
+    "expenditures": null
+   }
+  ],
+  "86": [
+   {
+    "name": "Vincent Candelora",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 750,
+    "expenditures": null
+   },
+   {
+    "name": "Vincent Mase",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 5280,
+    "expenditures": null
+   }
+  ],
+  "87": [
+   {
+    "name": "David Yaccarino",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 7100,
+    "expenditures": null
+   },
+   {
+    "name": "Stephen Gifford",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2670,
+    "expenditures": null
+   }
+  ],
+  "88": [
+   {
+    "name": "Joshua Elliott",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5885.25,
+    "expenditures": null
+   },
+   {
+    "name": "Marjorie Bonadies",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5630,
+    "expenditures": null
+   }
+  ],
+  "89": [
+   {
+    "name": "Lezlye Zupkus",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 7620,
+    "expenditures": null
+   }
+  ],
+  "90": [
+   {
+    "name": "Craig Fishbein",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7147,
+    "expenditures": null
+   },
+   {
+    "name": "Patrick Reynolds",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5387,
+    "expenditures": null
+   }
+  ],
+  "91": [
+   {
+    "name": "James Lynch",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 470.43,
+    "expenditures": null
+   }
+  ],
+  "92": [
+   {
+    "name": "Patricia Dillon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6780,
+    "expenditures": null
+   }
+  ],
+  "93": [
+   {
+    "name": "Toni Walker",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6195,
+    "expenditures": null
+   }
+  ],
+  "94": [
+   {
+    "name": "Robyn Porter",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5276,
+    "expenditures": null
+   }
+  ],
+  "95": [
+   {
+    "name": "Juan Candelaria",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6885,
+    "expenditures": null
+   }
+  ],
+  "96": [
+   {
+    "name": "Roland Lemar",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3300,
+    "expenditures": null
+   }
+  ],
+  "97": [
+   {
+    "name": "Alphonse Paolillo",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1050,
+    "expenditures": null
+   }
+  ],
+  "98": [
+   {
+    "name": "Sean Scanlon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6605,
+    "expenditures": null
+   }
+  ],
+  "99": [
+   {
+    "name": "James Albis",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7540,
+    "expenditures": null
+   },
+   {
+    "name": "Steven Tracey",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5290,
+    "expenditures": null
+   }
+  ],
+  "100": [
+   {
+    "name": "Matthew Lesser",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5405,
+    "expenditures": null
+   },
+   {
+    "name": "Anthony Moran",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 875,
+    "expenditures": null
+   }
+  ],
+  "101": [
+   {
+    "name": "Noreen Kokoruda",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6139.88,
+    "expenditures": null
+   }
+  ],
+  "102": [
+   {
+    "name": "Lonnie Reed",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6585,
+    "expenditures": null
+   },
+   {
+    "name": "Christopher Kelly",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6260,
+    "expenditures": null
+   }
+  ],
+  "103": [
+   {
+    "name": "Andrew Falvey",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5345,
+    "expenditures": null
+   },
+   {
+    "name": "Liz Linehan",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6182,
+    "expenditures": null
+   }
+  ],
+  "104": [
+   {
+    "name": "Linda Gentile",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5565,
+    "expenditures": null
+   },
+   {
+    "name": "Joseph Jaumann",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5365,
+    "expenditures": null
+   }
+  ],
+  "105": [
+   {
+    "name": "Nicole Klarides-Ditria",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6815,
+    "expenditures": null
+   },
+   {
+    "name": "Theresa Conroy",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6195,
+    "expenditures": null
+   }
+  ],
+  "106": [
+   {
+    "name": "Eva Bermudez Zimmerman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6187,
+    "expenditures": null
+   },
+   {
+    "name": "Mitch Bolinsky",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5710,
+    "expenditures": null
+   }
+  ],
+  "107": [
+   {
+    "name": "Stephen Harding",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5410,
+    "expenditures": null
+   }
+  ],
+  "108": [
+   {
+    "name": "Richard Smith",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1309.88,
+    "expenditures": null
+   }
+  ],
+  "109": [
+   {
+    "name": "David Arconti",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5980,
+    "expenditures": null
+   },
+   {
+    "name": "Veasna Roeun",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5590,
+    "expenditures": null
+   }
+  ],
+  "110": [
+   {
+    "name": "Emanuela Palmares",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5650,
+    "expenditures": null
+   },
+   {
+    "name": "Bob Godfrey",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5250,
+    "expenditures": null
+   }
+  ],
+  "111": [
+   {
+    "name": "Joseph Dowdell",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5777.72,
+    "expenditures": null
+   },
+   {
+    "name": "John Frey",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6155,
+    "expenditures": null
+   }
+  ],
+  "112": [
+   {
+    "name": "JP Sredzinski",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3867,
+    "expenditures": null
+   }
+  ],
+  "113": [
+   {
+    "name": "Adam Heller",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5075,
+    "expenditures": null
+   },
+   {
+    "name": "Jason Perillo",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5745,
+    "expenditures": null
+   }
+  ],
+  "114": [
+   {
+    "name": "Themis Klarides",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 7245,
+    "expenditures": null
+   }
+  ],
+  "115": [
+   {
+    "name": "Stephen Dargan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5190,
+    "expenditures": null
+   }
+  ],
+  "116": [
+   {
+    "name": "Richard DePalma",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5155,
+    "expenditures": null
+   },
+   {
+    "name": "Michael DiMassa",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5630,
+    "expenditures": null
+   }
+  ],
+  "117": [
+   {
+    "name": "Charles Ferraro",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5805,
+    "expenditures": null
+   },
+   {
+    "name": "Sean Ronan",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5385,
+    "expenditures": null
+   }
+  ],
+  "118": [
+   {
+    "name": "Kim Rose",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5416,
+    "expenditures": null
+   },
+   {
+    "name": "Rick Varrone",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5137,
+    "expenditures": null
+   }
+  ],
+  "119": [
+   {
+    "name": "Benjamin Gettinger",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6840,
+    "expenditures": null
+   },
+   {
+    "name": "Pam Staneski",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5375,
+    "expenditures": null
+   }
+  ],
+  "120": [
+   {
+    "name": "Laura Hoydick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5305,
+    "expenditures": null
+   },
+   {
+    "name": "Frederick Streets",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5675,
+    "expenditures": null
+   }
+  ],
+  "121": [
+   {
+    "name": "Joseph Gresko",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5230,
+    "expenditures": null
+   }
+  ],
+  "122": [
+   {
+    "name": "Ben McGorty",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5548,
+    "expenditures": null
+   }
+  ],
+  "123": [
+   {
+    "name": "Lino Costantini",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5165,
+    "expenditures": null
+   },
+   {
+    "name": "David Rutigliano",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5260,
+    "expenditures": null
+   }
+  ],
+  "124": [
+   {
+    "name": "Andre Baker",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5373,
+    "expenditures": null
+   }
+  ],
+  "126": [
+   {
+    "name": "Charlie Stallworth",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6180,
+    "expenditures": null
+   }
+  ],
+  "127": [
+   {
+    "name": "John (Jack) Hennessy",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1255,
+    "expenditures": null
+   }
+  ],
+  "128": [
+   {
+    "name": "Ethan Book",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5660,
+    "expenditures": null
+   },
+   {
+    "name": "Christopher Rosario",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5160,
+    "expenditures": null
+   }
+  ],
+  "129": [
+   {
+    "name": "Steven Stafstrom",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5904,
+    "expenditures": null
+   }
+  ],
+  "130": [
+   {
+    "name": "Ezequiel Santiago",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 300,
+    "expenditures": null
+   }
+  ],
+  "131": [
+   {
+    "name": "Scott Flaherty",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5580,
+    "expenditures": null
+   },
+   {
+    "name": "David Labriola",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5592,
+    "expenditures": null
+   }
+  ],
+  "132": [
+   {
+    "name": "Dru Georgiadis",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6025,
+    "expenditures": null
+   },
+   {
+    "name": "Brenda Kupchick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6570,
+    "expenditures": null
+   }
+  ],
+  "133": [
+   {
+    "name": "Cristin McCarthy Vahey",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5493,
+    "expenditures": null
+   },
+   {
+    "name": "Ray Neuberger",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5960,
+    "expenditures": null
+   }
+  ],
+  "134": [
+   {
+    "name": "Frederick Garrity",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5795,
+    "expenditures": null
+   },
+   {
+    "name": "Laura Devlin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5375,
+    "expenditures": null
+   }
+  ],
+  "135": [
+   {
+    "name": "Adam Dunsby",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6690,
+    "expenditures": null
+   },
+   {
+    "name": "Bonnie Troy",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5664,
+    "expenditures": null
+   }
+  ],
+  "136": [
+   {
+    "name": "Catherine Walsh",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5885,
+    "expenditures": null
+   },
+   {
+    "name": "Jonathan Steinberg",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5804.88,
+    "expenditures": null
+   }
+  ],
+  "137": [
+   {
+    "name": "Chris Perone",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5823,
+    "expenditures": null
+   },
+   {
+    "name": "Darline Perpignan",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5390,
+    "expenditures": null
+   }
+  ],
+  "138": [
+   {
+    "name": "Michael Ferguson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5990,
+    "expenditures": null
+   },
+   {
+    "name": "Jeffrey Tomchik",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5945,
+    "expenditures": null
+   }
+  ],
+  "139": [
+   {
+    "name": "Joseph Mark Taraya",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4305,
+    "expenditures": null
+   },
+   {
+    "name": "Kevin Ryan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5350,
+    "expenditures": null
+   }
+  ],
+  "140": [
+   {
+    "name": "Bruce Morris",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2290,
+    "expenditures": null
+   }
+  ],
+  "141": [
+   {
+    "name": "Randell Klein",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6895,
+    "expenditures": null
+   },
+   {
+    "name": "Terrie Wood",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5800,
+    "expenditures": null
+   }
+  ],
+  "142": [
+   {
+    "name": "Fred Wilms",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6465,
+    "expenditures": null
+   }
+  ],
+  "143": [
+   {
+    "name": "Gail Lavielle",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 9990,
+    "expenditures": null
+   }
+  ],
+  "144": [
+   {
+    "name": "Caroline Simmons",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5675,
+    "expenditures": null
+   }
+  ],
+  "145": [
+   {
+    "name": "Patricia Billie Miller",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5304,
+    "expenditures": null
+   }
+  ],
+  "146": [
+   {
+    "name": "Terry Adams",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5849,
+    "expenditures": null
+   }
+  ],
+  "147": [
+   {
+    "name": "William Tong",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6116,
+    "expenditures": null
+   }
+  ],
+  "148": [
+   {
+    "name": "Daniel Fox",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6120,
+    "expenditures": null
+   },
+   {
+    "name": "Philip Balestriere",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3865,
+    "expenditures": null
+   }
+  ],
+  "150": [
+   {
+    "name": "Mike Bocchino",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3495,
+    "expenditures": null
+   }
+  ],
+  "151": [
+   {
+    "name": "Mudita Bhargava",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 49089,
+    "expenditures": null
+   },
+   {
+    "name": "Fred Camillo",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5765,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "1": [
+   {
+    "name": "John Fonfara",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16930.16,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "Eric Coleman",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16759,
+    "expenditures": null
+   },
+   {
+    "name": "Theresa Tillett",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1110,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "Timothy Larson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16795,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Stephen Cassano",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15935,
+    "expenditures": null
+   },
+   {
+    "name": "Lorraine Marchetti",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15705,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Beth Bye",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 18351,
+    "expenditures": null
+   },
+   {
+    "name": "Mark Merritt",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15662,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Sharon Beloin-Saavedra",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 12404,
+    "expenditures": null
+   },
+   {
+    "name": "Charles Paonessa",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 10152,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Annie Hornish",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15403,
+    "expenditures": null
+   },
+   {
+    "name": "John Kissel",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15554,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "David Pena",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 16740,
+    "expenditures": null
+   },
+   {
+    "name": "Kevin Witkos",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17224,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Paul Doyle",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16075,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Gary Winfield",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1973,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Martin Looney",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 17325,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Bruce Wilson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15845,
+    "expenditures": null
+   },
+   {
+    "name": "Edward Kennedy",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17525,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Dante Bartolomeo",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15825,
+    "expenditures": null
+   },
+   {
+    "name": "Len Suzio",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15265,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Gayle Slossberg",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15941,
+    "expenditures": null
+   },
+   {
+    "name": "Patricia Libero",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15385,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Joan Hartley",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 29660,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Joseph Markley",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15841,
+    "expenditures": null
+   },
+   {
+    "name": "Ryan Rogers",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15786,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "Joseph Crisco",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16560,
+    "expenditures": null
+   },
+   {
+    "name": "George Logan",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 16415,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Timothy Bowles",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15538,
+    "expenditures": null
+   },
+   {
+    "name": "Heather Somers",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 19715,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Catherine Osten",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 17770,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Paul Formica",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17337,
+    "expenditures": null
+   },
+   {
+    "name": "Ryan Henowitz",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15600.95,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Kevin Kelly",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 16072,
+    "expenditures": null
+   },
+   {
+    "name": "Prez Palmer",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1445,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Elaine Hammers",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 13074,
+    "expenditures": null
+   },
+   {
+    "name": "Marilyn Moore",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15809,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Edwin Gomes",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15706,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Kenneth Gucker",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15786,
+    "expenditures": null
+   },
+   {
+    "name": "Michael McLachlan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15465,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Gregory Ehlers",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 16174,
+    "expenditures": null
+   },
+   {
+    "name": "Bob Duff",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 19465,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Toni Boucher",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 19640,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Gino Bottino",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6170,
+    "expenditures": null
+   },
+   {
+    "name": "Carlo Leone",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 17877,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Anthony Hwang",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17290,
+    "expenditures": null
+   },
+   {
+    "name": "Philip Dwyer",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15773,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Mae Flexer",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15720,
+    "expenditures": null
+   },
+   {
+    "name": "John French",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15715,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Craig Miner",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 16170,
+    "expenditures": null
+   },
+   {
+    "name": "David Lawson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 16429.99,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "Michael Nicastro",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15945.16,
+    "expenditures": null
+   },
+   {
+    "name": "Henri Martin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15405,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Gregory Cava",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15815,
+    "expenditures": null
+   },
+   {
+    "name": "Robert Kane",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17640,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "Norman Needleman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 18530,
+    "expenditures": null
+   },
+   {
+    "name": "Art Linares",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17555,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Leonard Fasano",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 4300,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "Arlene Avery",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 18003,
+    "expenditures": null
+   },
+   {
+    "name": "Tony Guglielmo",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15960,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "John Blankley",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15684,
+    "expenditures": null
+   }
+  ]
+ }
+}

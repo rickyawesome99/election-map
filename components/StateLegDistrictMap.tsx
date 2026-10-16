@@ -9,6 +9,7 @@ import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { normalizeGeographyWinding } from "@/lib/geoWinding";
 import { ABBR_TO_FIPS } from "@/lib/fips";
 import { getRaceColor, getRatingColors, fmtMargin } from "@/lib/colorScale";
+import { FlipPatternDefs } from "@/components/FlipStripes";
 import { districtDisplayLabel, indexByNormalizedKey, lookupByDistrictCode } from "@/lib/stateLegDistrictKey";
 import { extractDistrictCode } from "@/lib/stateLegBoundaryCode";
 import { districtResultMargin } from "@/lib/useStateLegResults";
@@ -139,7 +140,7 @@ export default function StateLegDistrictMap({
    * A caller-defined shading (the atlas's 2026 projection): per-district fill, tooltip lines,
    * legend and footnote. When set it replaces the view-mode fill, tooltip body and legend.
    */
-  custom?: { fill: Record<string, string>; tip: Record<string, { label: string; value: string; color?: string }[]>; legend: { label: string; bg: string }[]; note?: string } | null;
+  custom?: { fill: Record<string, string>; tip: Record<string, { label: string; value: string; color?: string }[]>; legend: { label: string; bg: string }[]; note?: string; flipColors?: string[] } | null;
   /** Drop the legend and the fine print under it (projection note, boundary/source line). */
   hideLegend?: boolean;
 }) {
@@ -511,6 +512,7 @@ export default function StateLegDistrictMap({
           projectionConfig={autoProj ?? undefined}
           style={{ width: "100%", height: "100%" }}
         >
+          {custom?.flipColors?.length ? <FlipPatternDefs colors={custom.flipColors} /> : null}
           <ZoomableGroup key={mapKey} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
             {/* Sourced district boundaries, when available for this state/chamber */}
             {districtsLayer}

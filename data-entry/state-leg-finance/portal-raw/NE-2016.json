@@ -1,0 +1,926 @@
+{
+ "state": "NE",
+ "cycle": 2016,
+ "source": "Nebraska Accountability and Disclosure Commission legacy data (receipts per campaign statement)",
+ "fetched": "2026-10-16",
+ "dataThrough": "12/31/2016",
+ "candidates": [
+  {
+   "name": "KATHY CAMPBELL",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "07CAC01062",
+   "contributions": 864.39
+  },
+  {
+   "name": "JOHN MCCOLLISTER",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "13CAC01840",
+   "contributions": 81253.41
+  },
+  {
+   "name": "SPENCER MORRISSEY",
+   "chamber": "senate",
+   "district": "1",
+   "committee": "99CAC00287",
+   "contributions": 0.0
+  },
+  {
+   "name": "RAMON JANSSEN",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "99CAC00321",
+   "contributions": 1.36
+  },
+  {
+   "name": "PAUL SCHUMACHER",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "99CAC00328",
+   "contributions": 0.0
+  },
+  {
+   "name": "ALBERT DAVIS",
+   "chamber": "senate",
+   "district": "43",
+   "committee": "12CAC01650",
+   "contributions": 164899.34
+  },
+  {
+   "name": "WENDALL GASTON",
+   "chamber": "senate",
+   "district": "47",
+   "committee": "15CAC02115",
+   "contributions": 17868.85
+  },
+  {
+   "name": "THOMAS BAKER",
+   "chamber": "senate",
+   "district": "44",
+   "committee": "99CAC00025",
+   "contributions": 0.0
+  },
+  {
+   "name": "RORIC PAULMAN",
+   "chamber": "senate",
+   "district": "42",
+   "committee": "13CAC01813",
+   "contributions": 2450.62
+  },
+  {
+   "name": "MARIAN PRICE",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "99CAC00085",
+   "contributions": 194.56
+  },
+  {
+   "name": "PAMELA REDFIELD",
+   "chamber": "senate",
+   "district": "12",
+   "committee": "99CAC00088",
+   "contributions": 0.0
+  },
+  {
+   "name": "BOB TWISS",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "08CAC01137",
+   "contributions": 0.0
+  },
+  {
+   "name": "DEBRA FISCHER",
+   "chamber": "senate",
+   "district": "43",
+   "committee": "99CAC00648",
+   "contributions": 0.0
+  },
+  {
+   "name": "DANIEL WATERMEIER",
+   "chamber": "senate",
+   "district": "1",
+   "committee": "12CAC01657",
+   "contributions": 60421.76
+  },
+  {
+   "name": "RONALD NOLTE",
+   "chamber": "senate",
+   "district": "2",
+   "committee": "14CAC01863",
+   "contributions": 77801.13
+  },
+  {
+   "name": "GALEN HADLEY",
+   "chamber": "senate",
+   "district": "37",
+   "committee": "08CAC01111",
+   "contributions": 1664.57
+  },
+  {
+   "name": "MICHAEL FLOOD",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "12CAC01694",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOHN SYNOWIECKI",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "15CAC02082",
+   "contributions": 105334.03
+  },
+  {
+   "name": "LESLIE SPRY",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "15CAC02083",
+   "contributions": 80915.14
+  },
+  {
+   "name": "THOMAS HANSEN",
+   "chamber": "senate",
+   "district": "42",
+   "committee": "05CAC00763",
+   "contributions": 1.99
+  },
+  {
+   "name": "MICHAEL MEISTER",
+   "chamber": "senate",
+   "district": "48",
+   "committee": "13CAC01836",
+   "contributions": 0.0
+  },
+  {
+   "name": "CHRISTOPHER LANGEMEIER",
+   "chamber": "senate",
+   "district": "23",
+   "committee": "99CAC00670",
+   "contributions": 0.0
+  },
+  {
+   "name": "JAMES SCHEER",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "12CAC01641",
+   "contributions": 71763.94
+  },
+  {
+   "name": "BENJAMIN THOMPSON",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "99CAC00669",
+   "contributions": 0.0
+  },
+  {
+   "name": "DANIEL MARVIN",
+   "chamber": "senate",
+   "district": "27",
+   "committee": "07CAC01043",
+   "contributions": 0.0
+  },
+  {
+   "name": "GERALD RYAN",
+   "chamber": "senate",
+   "district": "45",
+   "committee": "99CAC00698",
+   "contributions": 0.0
+  },
+  {
+   "name": "GREG ADAMS",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "05CAC00729",
+   "contributions": 901.0
+  },
+  {
+   "name": "ANNETTE DUBAS",
+   "chamber": "senate",
+   "district": "34",
+   "committee": "15CAC02095",
+   "contributions": 0.0
+  },
+  {
+   "name": "MARK CHRISTENSEN",
+   "chamber": "senate",
+   "district": "44",
+   "committee": "05CAC00762",
+   "contributions": 1.62
+  },
+  {
+   "name": "DANIELLE CONRAD",
+   "chamber": "senate",
+   "district": "46",
+   "committee": "05CAC00744",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEVEN LATHROP",
+   "chamber": "senate",
+   "district": "12",
+   "committee": "13CAC01806",
+   "contributions": 0.0
+  },
+  {
+   "name": "CAROL BLOOD",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "13CAC01839",
+   "contributions": 57149.01
+  },
+  {
+   "name": "CURTIS FRIESEN",
+   "chamber": "senate",
+   "district": "34",
+   "committee": "13CAC01843",
+   "contributions": 9400.0
+  },
+  {
+   "name": "JOHN WIGHTMAN",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "05CAC00757",
+   "contributions": 0.0
+  },
+  {
+   "name": "(HENRY) STEVE ERDMAN",
+   "chamber": "senate",
+   "district": "47",
+   "committee": "16CAC02131",
+   "contributions": 53681.6
+  },
+  {
+   "name": "THOMAS WHITE",
+   "chamber": "senate",
+   "district": "8",
+   "committee": "05CAC00739",
+   "contributions": 0.32
+  },
+  {
+   "name": "JOHN HARMS",
+   "chamber": "senate",
+   "district": "48",
+   "committee": "06CAC00767",
+   "contributions": 0.0
+  },
+  {
+   "name": "NORMAN WALLMAN",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "06CAC00832",
+   "contributions": 0.0
+  },
+  {
+   "name": "BEAU MCCOY",
+   "chamber": "senate",
+   "district": "39",
+   "committee": "15CAC02069",
+   "contributions": 7258.03
+  },
+  {
+   "name": "COLBY COASH",
+   "chamber": "senate",
+   "district": "27",
+   "committee": "07CAC01045",
+   "contributions": 250.0
+  },
+  {
+   "name": "REX MOATS",
+   "chamber": "senate",
+   "district": "39",
+   "committee": "07CAC01050",
+   "contributions": 0.0
+  },
+  {
+   "name": "JUSTIN WAYNE",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "16CAC02143",
+   "contributions": 92143.27
+  },
+  {
+   "name": "DANIEL HUGHES",
+   "chamber": "senate",
+   "district": "44",
+   "committee": "13CAC01825",
+   "contributions": 24412.59
+  },
+  {
+   "name": "SCOTT LAUTENBAUGH",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "08CAC01096",
+   "contributions": 0.0
+  },
+  {
+   "name": "MICHAEL GLOOR",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "07CAC01052",
+   "contributions": 1138.95
+  },
+  {
+   "name": "HEATH MELLO",
+   "chamber": "senate",
+   "district": "5",
+   "committee": "07CAC01063",
+   "contributions": 82770.23
+  },
+  {
+   "name": "TANYA COOK",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "07CAC01061",
+   "contributions": 10242.9
+  },
+  {
+   "name": "DALE MICHELS",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "15CAC02099",
+   "contributions": 37793.9
+  },
+  {
+   "name": "KENNETH HAAR",
+   "chamber": "senate",
+   "district": "21",
+   "committee": "08CAC01089",
+   "contributions": 10138.81
+  },
+  {
+   "name": "GREGORY NEUHAUS",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "16CAC02140",
+   "contributions": 116328.19
+  },
+  {
+   "name": "KATHLEEN SULLIVAN",
+   "chamber": "senate",
+   "district": "41",
+   "committee": "08CAC01069",
+   "contributions": 200.0
+  },
+  {
+   "name": "SCOTT PRICE",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "08CAC01118",
+   "contributions": -1000.0
+  },
+  {
+   "name": "BRENT SMOYER",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "14CAC01871",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOHN KUEHN",
+   "chamber": "senate",
+   "district": "38",
+   "committee": "13CAC01855",
+   "contributions": 8125.0
+  },
+  {
+   "name": "NATALIE NOWAK",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "07CAC01037",
+   "contributions": 0.0
+  },
+  {
+   "name": "KENNETH SCHILZ",
+   "chamber": "senate",
+   "district": "47",
+   "committee": "08CAC01080",
+   "contributions": 39895.0
+  },
+  {
+   "name": "JEREMIAH NORDQUIST",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "07CAC01035",
+   "contributions": 8053.15
+  },
+  {
+   "name": "TYSON LARSON",
+   "chamber": "senate",
+   "district": "40",
+   "committee": "10CAC01406",
+   "contributions": 47742.57
+  },
+  {
+   "name": "LYDIA BRASCH",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "10CAC01440",
+   "contributions": 3750.0
+  },
+  {
+   "name": "BURKE HARR",
+   "chamber": "senate",
+   "district": "8",
+   "committee": "10CAC01392",
+   "contributions": 58645.12
+  },
+  {
+   "name": "JIM SMITH",
+   "chamber": "senate",
+   "district": "14",
+   "committee": "10CAC01410",
+   "contributions": 141632.33
+  },
+  {
+   "name": "DAVID BLOOMFIELD",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "11CAC01555",
+   "contributions": 11414.47
+  },
+  {
+   "name": "ANNA WISHART",
+   "chamber": "senate",
+   "district": "27",
+   "committee": "15CAC02071",
+   "contributions": 145340.56
+  },
+  {
+   "name": "JOHN MURANTE",
+   "chamber": "senate",
+   "district": "49",
+   "committee": "11CAC01588",
+   "contributions": 104173.08
+  },
+  {
+   "name": "KATE BOLZ",
+   "chamber": "senate",
+   "district": "29",
+   "committee": "11CAC01596",
+   "contributions": 118075.61
+  },
+  {
+   "name": "BROOK CURTISS",
+   "chamber": "senate",
+   "district": "41",
+   "committee": "12CAC01670",
+   "contributions": 0.0
+  },
+  {
+   "name": "LES SEILER",
+   "chamber": "senate",
+   "district": "33",
+   "committee": "12CAC01621",
+   "contributions": 102732.7
+  },
+  {
+   "name": "SUE CRAWFORD",
+   "chamber": "senate",
+   "district": "45",
+   "committee": "12CAC01609",
+   "contributions": 183314.62
+  },
+  {
+   "name": "MICHAEL PETERSEN",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "12CAC01634",
+   "contributions": 0.0
+  },
+  {
+   "name": "MELVIN LUETCHENS",
+   "chamber": "senate",
+   "district": "2",
+   "committee": "12CAC01660",
+   "contributions": 109.48
+  },
+  {
+   "name": "ACELA TURCO",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "11CAC01585",
+   "contributions": 0.0
+  },
+  {
+   "name": "MICHAEL GROENE",
+   "chamber": "senate",
+   "district": "42",
+   "committee": "14CAC01907",
+   "contributions": 550.0
+  },
+  {
+   "name": "SARA HOWARD",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "11CAC01592",
+   "contributions": 134792.91
+  },
+  {
+   "name": "MICHAEL HILGERS",
+   "chamber": "senate",
+   "district": "21",
+   "committee": "15CAC02093",
+   "contributions": 261816.28
+  },
+  {
+   "name": "GERALD JOHNSON",
+   "chamber": "senate",
+   "district": "23",
+   "committee": "12CAC01605",
+   "contributions": 113249.94
+  },
+  {
+   "name": "RICHARD KOLOWSKI",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "11CAC01603",
+   "contributions": 190489.96
+  },
+  {
+   "name": "ROBERT LAMMERS",
+   "chamber": "senate",
+   "district": "37",
+   "committee": "15CAC02084",
+   "contributions": 97629.49
+  },
+  {
+   "name": "KARL ELMSHAEUSER",
+   "chamber": "senate",
+   "district": "47",
+   "committee": "15CAC02101",
+   "contributions": 78789.0
+  },
+  {
+   "name": "MARK KOLTERMAN",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "13CAC01784",
+   "contributions": 20531.93
+  },
+  {
+   "name": "JILL BROWN",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "16CAC02122",
+   "contributions": 131441.51
+  },
+  {
+   "name": "DENNIS BERRY",
+   "chamber": "senate",
+   "district": "44",
+   "committee": "13CAC01786",
+   "contributions": 0.0
+  },
+  {
+   "name": "ADAM MORFELD",
+   "chamber": "senate",
+   "district": "46",
+   "committee": "13CAC01816",
+   "contributions": 59914.1
+  },
+  {
+   "name": "LAURA EBKE",
+   "chamber": "senate",
+   "district": "32",
+   "committee": "13CAC01827",
+   "contributions": 13905.24
+  },
+  {
+   "name": "JOHN STINNER",
+   "chamber": "senate",
+   "district": "48",
+   "committee": "14CAC01858",
+   "contributions": 21183.38
+  },
+  {
+   "name": "MATTHEW HANSEN",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "14CAC01869",
+   "contributions": 26721.96
+  },
+  {
+   "name": "JAMES BOWERS",
+   "chamber": "senate",
+   "district": "46",
+   "committee": "14CAC01876",
+   "contributions": 25030.94
+  },
+  {
+   "name": "MATTHEW LATHROP",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "14CAC01883",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEVEN STROUP",
+   "chamber": "senate",
+   "district": "44",
+   "committee": "13CAC01834",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEVE HOWARD",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "14CAC01860",
+   "contributions": -1452.53
+  },
+  {
+   "name": "STACY RYAN",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "14CAC01878",
+   "contributions": 106167.21
+  },
+  {
+   "name": "DALLAS JONES",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "13CAC01820",
+   "contributions": 123349.21
+  },
+  {
+   "name": "BRETT LINDSTROM",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "13CAC01826",
+   "contributions": 48521.53
+  },
+  {
+   "name": "ROBERT HILKEMANN",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "13CAC01830",
+   "contributions": 13496.73
+  },
+  {
+   "name": "MERV RIEPE",
+   "chamber": "senate",
+   "district": "12",
+   "committee": "13CAC01832",
+   "contributions": 30835.0
+  },
+  {
+   "name": "MATTHEW WILLIAMS",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "13CAC01841",
+   "contributions": 47803.57
+  },
+  {
+   "name": "LARRY WEIXELMAN",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "14CAC01885",
+   "contributions": 4765.0
+  },
+  {
+   "name": "PHILIP HARDENBURGER",
+   "chamber": "senate",
+   "district": "32",
+   "committee": "14CAC01868",
+   "contributions": 80180.89
+  },
+  {
+   "name": "TOMMY GARRETT",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "14CAC01865",
+   "contributions": 96477.09
+  },
+  {
+   "name": "PATRICIA PANSING BROOKS",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "13CAC01803",
+   "contributions": 9053.0
+  },
+  {
+   "name": "JONI CRAIGHEAD",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "13CAC01815",
+   "contributions": 30318.63
+  },
+  {
+   "name": "ROY BAKER",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "13CAC01842",
+   "contributions": 12130.74
+  },
+  {
+   "name": "JOHN STALNAKER",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "13CAC01854",
+   "contributions": 0.0
+  },
+  {
+   "name": "LUIS SOTELO",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "14CAC01949",
+   "contributions": 3755653.0
+  },
+  {
+   "name": "KEITH KUBE",
+   "chamber": "senate",
+   "district": "40",
+   "committee": "14CAC01969",
+   "contributions": 13039.0
+  },
+  {
+   "name": "DAVID SCHNOOR",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "15CAC02103",
+   "contributions": 63558.8
+  },
+  {
+   "name": "PATRICK BORCHERS",
+   "chamber": "senate",
+   "district": "39",
+   "committee": "15CAC02075",
+   "contributions": 91376.54
+  },
+  {
+   "name": "IAN SWANSON",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "15CAC02081",
+   "contributions": 96853.56
+  },
+  {
+   "name": "LOU ANN LINEHAN",
+   "chamber": "senate",
+   "district": "39",
+   "committee": "16CAC02119",
+   "contributions": 256286.55
+  },
+  {
+   "name": "JONI ALBRECHT",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "16CAC02128",
+   "contributions": 76668.99
+  },
+  {
+   "name": "LOUIS BENSCOTER",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "16CAC02129",
+   "contributions": 584.49
+  },
+  {
+   "name": "LAWRENCE ROLAND",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "16CAC02145",
+   "contributions": 22890.95
+  },
+  {
+   "name": "JOHN (STEVE) HALLORAN",
+   "chamber": "senate",
+   "district": "33",
+   "committee": "15CAC02096",
+   "contributions": 51153.06
+  },
+  {
+   "name": "SUZANNE GEIST",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "15CAC02097",
+   "contributions": 152452.06
+  },
+  {
+   "name": "JAMES GORDON",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "15CAC02104",
+   "contributions": 215287.31
+  },
+  {
+   "name": "ARDEL BENGTSON",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "15CAC02110",
+   "contributions": 49864.62
+  },
+  {
+   "name": "WILLIAM ARMBRUST",
+   "chamber": "senate",
+   "district": "39",
+   "committee": "16CAC02125",
+   "contributions": 48744.36
+  },
+  {
+   "name": "CHARLES (DICK) CLARK, II",
+   "chamber": "senate",
+   "district": "27",
+   "committee": "15CAC02100",
+   "contributions": 26194.35
+  },
+  {
+   "name": "BRUCE BOSTELMAN",
+   "chamber": "senate",
+   "district": "23",
+   "committee": "16CAC02146",
+   "contributions": 49658.23
+  },
+  {
+   "name": "THOMAS BREWER",
+   "chamber": "senate",
+   "district": "43",
+   "committee": "16CAC02142",
+   "contributions": 74484.73
+  },
+  {
+   "name": "MICHAEL MCDONNELL",
+   "chamber": "senate",
+   "district": "5",
+   "committee": "15CAC02086",
+   "contributions": 173947.76
+  },
+  {
+   "name": "NICOLE FOX",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "15CAC02105",
+   "contributions": 52229.85
+  },
+  {
+   "name": "LYNNE WALZ",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "15CAC02102",
+   "contributions": 84442.66
+  },
+  {
+   "name": "ANTHONY (TONY) VARGAS",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "15CAC02109",
+   "contributions": 184782.61
+  },
+  {
+   "name": "JOHN LOWE",
+   "chamber": "senate",
+   "district": "37",
+   "committee": "16CAC02135",
+   "contributions": 92924.36
+  },
+  {
+   "name": "PEGGY POPPS",
+   "chamber": "senate",
+   "district": "47",
+   "committee": "15CAC02106",
+   "contributions": 62325.32
+  },
+  {
+   "name": "RICK VEST",
+   "chamber": "senate",
+   "district": "21",
+   "committee": "15CAC02111",
+   "contributions": 11903.0
+  },
+  {
+   "name": "MICHAEL COOK",
+   "chamber": "senate",
+   "district": "45",
+   "committee": "16CAC02186",
+   "contributions": 36377.36
+  },
+  {
+   "name": "DANIEL QUICK",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "15CAC02090",
+   "contributions": 152470.96
+  },
+  {
+   "name": "THOMAS BRIESE",
+   "chamber": "senate",
+   "district": "41",
+   "committee": "15CAC02091",
+   "contributions": 58172.88
+  },
+  {
+   "name": "ZACHARY ZOUL",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "15CAC02092",
+   "contributions": 18498.06
+  },
+  {
+   "name": "LARRY SCHERER",
+   "chamber": "senate",
+   "district": "21",
+   "committee": "15CAC02085",
+   "contributions": 157507.92
+  }
+ ]
+}
