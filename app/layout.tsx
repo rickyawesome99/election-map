@@ -1,20 +1,25 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import AppShell from "@/components/AppShell";
 import SiteFooter from "@/components/SiteFooter";
 import { SITE_URL } from "@/lib/siteUrl";
 
-const ibmPlexSans = IBM_Plex_Sans({
+// Self-hosted copies of the Google Fonts files (app/fonts/README.md): a build that downloads
+// them from Google fails whenever that fetch does.
+const ibmPlexSans = localFont({
   variable: "--font-ibm-plex-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  src: "./fonts/IBMPlexSans-Variable.woff2",
+  weight: "100 700",
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
+const ibmPlexMono = localFont({
   variable: "--font-ibm-plex-mono",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  src: [
+    { path: "./fonts/IBMPlexMono-400.woff2", weight: "400" },
+    { path: "./fonts/IBMPlexMono-500.woff2", weight: "500" },
+    { path: "./fonts/IBMPlexMono-600.woff2", weight: "600" },
+  ],
 });
 
 // NOTE: Update year here manually when changing election cycle (all other references use electionYear from forecastData)
