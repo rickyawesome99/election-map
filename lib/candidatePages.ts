@@ -30,6 +30,20 @@ function shard(name: string): CandidatePageShard | null {
   return s;
 }
 
+let aliases: Record<string, string> | null = null;
+
+/** The page slug an alternate spelling's slug resolves to (written by scripts/buildCandidatePages.ts), or null. */
+export function candidateSlugAlias(slug: string): string | null {
+  if (!aliases) {
+    try {
+      aliases = JSON.parse(gunzipSync(fs.readFileSync(join(DIR, "aliases.json.gz"))).toString("utf8")) as Record<string, string>;
+    } catch {
+      aliases = {};
+    }
+  }
+  return aliases[slug] ?? null;
+}
+
 export function getCandidatePagePayload(slug: string): CandidatePagePayload | null {
   const m = /-([a-z]{2})$/.exec(slug);
   if (m) {

@@ -10,7 +10,9 @@ The search (year, general-election candidates, district contests) lists every le
 with party and "Delegate District 1" / "Senatorial District 17"; each candidate page lists the reports
 (P1–P3 primary, G1–G3 general, A17 annual) as machine-generated PDFs with a text layer, whose
 "TOTAL CONTRIBUTIONS ELECTION YEAR-TO-DATE" is cumulative for the CALENDAR election year — so the
-largest of them is the year's total. Activity in the year before (2015) is not included.
+largest of them is the year's total. Activity in the year before (2015) is not included. About half the
+candidates filed on paper: those reports are handwritten scans with no text layer, and their figures
+are left out (null), not read by OCR.
 Pat McGeehan, HD-1, 2016: $14,795.
 
 Output: data-entry/state-leg-finance/portal-raw/WV-{year}.json. Pages cached in scratch portal-cache/wv-legacy/.

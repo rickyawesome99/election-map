@@ -288,6 +288,16 @@ export function pastElectionHref(office: PastElectionOffice, seatId: string, yea
   return `/${office}/${seat.seatId}/${year}`;
 }
 
+/** Every House past-election page in one state, keyed `${geoid}:${year}` for client maps that can't call pastElectionHref. */
+export function housePastElectionHrefs(stateFips: string): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const seat of seatsFor("house").values()) {
+    if (!seat.geoid?.startsWith(stateFips)) continue;
+    for (const r of seat.results) if (hasPage(r)) out[`${seat.geoid}:${r.year}`] = `/house/${seat.seatId}/${r.year}`;
+  }
+  return out;
+}
+
 // ── Dates ─────────────────────────────────────────────────────────────────────
 
 /** First Tuesday after the first Monday in November. */

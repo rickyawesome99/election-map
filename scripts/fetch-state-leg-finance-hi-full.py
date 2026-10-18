@@ -8,8 +8,9 @@ report pages (csc.hawaii.gov/CFSPublic), cycles 2016–2026.
   python3 scripts/fetch-state-leg-finance-hi-full.py /tmp/hi.json [CYCLE ...]
 
 report_list/ (Scriptcase; one "rows per page" ajax call puts all ~2,000 candidates on one page) → each
-House/Senate candidate whose surname is on our list → report_detail/ (the same trick lists every report)
-→ for each cycle Y, the Disclosure whose reporting period ends last within Y-1..Y (a later filing of the
+candidate (any current office) whose surname is on our list → report_detail/ (the same trick lists every report)
+→ for each cycle Y, the Disclosure whose reporting period ends last between Jan 1 of Y-1 and election
+day (Nov 10) of Y (a later filing of the
 same period, an amendment, wins) → its static DIS.html page, line 12 "Total Contributions", Column B
 "election period total to date". Election periods run two years for the House and often four for the
 Senate. Della Au Belatti, House, 2014–2016 election period: $56,780 (her itemized sum was ~20% lower).
@@ -113,21 +114,25 @@ def main(cands_file, cycles):
     init = re.search(r'name="script_case_init" value="(\d+)"', s).group(1)
     s = all_rows("report_list", init)
     rows = re.findall(r"nm_gp_submit5\('/CFSPublic/report_detail/', '/CFSPublic/report_list/', '([^']*)'[^>]*>([^<]*)</a>\s*</TD>\s*<TD[^>]*>(?:<[^>]*>)*([^<]*)", s)
-    cands = [(p, html.unescape(n).strip(), o.strip()) for p, n, o in rows if o.strip() in ("House", "Senate")]
+    # The list shows each candidate's CURRENT office (Della Au Belatti reads "Lt. Governor" now), so every
+    # office is kept for the surnames on our list; House/Senate only sets the chamber hint.
+    cands = [(p, html.unescape(n).strip(), o.strip()) for p, n, o in rows]
     cands = [c for c in cands if re.sub(r"[^a-z]", "", c[1].split(",")[0].lower()) in surnames]
-    print(f"HI: {len(rows)} candidates listed, {len(cands)} House/Senate on our list")
+    print(f"HI: {len(rows)} candidates listed, {len(cands)} with a surname on our list")
     results = {y: [] for y in cycles}
     for parms, name, office in cands:
         reps = reports(parms, init, re.sub(r"\W", "_", name + "_" + office))
         for y in cycles:
-            inside = [r for r in reps if r["end"] and f"{y - 1}-01-01" <= r["end"] <= f"{y}-12-31"]
+            # the election period ends with the general (early November): a later supplemental already
+            # belongs to the next period, whose to-date total starts again at zero
+            inside = [r for r in reps if r["end"] and f"{y - 1}-01-01" <= r["end"] <= f"{y}-11-10"]
             if not inside:
                 continue
             last = max(inside, key=lambda r: (r["end"], r["url"]))  # the URL embeds the filing timestamp: an amendment sorts last
             v = to_date(last["url"])
             if v is not None:
                 ln, _, fn = name.partition(",")
-                results[y].append({"name": f"{fn.strip()} {ln.strip()}", "chamber": "house" if office == "House" else "senate", "contributions": v})
+                results[y].append({"name": f"{fn.strip()} {ln.strip()}", "chamber": {"House": "house", "Senate": "senate"}.get(office), "contributions": v})
     for y, out in results.items():
         body = {"state": "HI", "cycle": y, "source": SOURCE, "fetched": TODAY.isoformat(),
                 "dataThrough": TODAY.strftime("%m/%d/%Y") if y >= TODAY.year else f"12/31/{y}", "candidates": out}

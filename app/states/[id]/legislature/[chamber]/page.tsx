@@ -8,6 +8,8 @@ import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";
 import { chamberName, chamberShortLabel, chamberSummary } from "@/lib/stateLegChamberSummary";
 import LegislativeAtlas from "@/components/atlas/LegislativeAtlas";
 import ChamberSummary from "@/components/atlas/ChamberSummary";
+import { PILL, StatePill } from "@/components/RaceHeroPills";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
 
 const CHAMBERS: Chamber[] = ["house", "senate"];
 
@@ -43,6 +45,11 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
   if (s.roster.length === 0) notFound();
   const entries = stateLegData[state.name] ?? [];
 
+  // Control pill, as the race pages' held pill: the party holding the most seats now (Nebraska's
+  // nonpartisan members counted by caucus). An even split shows as tied.
+  const holder = s.seats ? (s.seats.dem > s.seats.rep ? "D" : s.seats.rep > s.seats.dem ? "R" : null) : null;
+  const controlLabel = holder === "D" ? "Democratic-held" : holder === "R" ? "Republican-held" : s.seats ? "Tied" : null;
+
   const tab = (c: Chamber, active: boolean) => (
     <Link
       key={c}
@@ -57,13 +64,15 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <div style={{ background: "linear-gradient(135deg, var(--app-tab-bg) 0%, var(--app-bg) 65%)" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6">
-          <div className="flex items-center gap-3">
-            <span className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>{state.abbr}</span>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.75rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>{state.name} Legislature</h1>
+        <div className={`${PAGE_CONTAINER} pt-6`}>
+          <div className="flex flex-wrap items-center gap-2 mb-3">
+            <StatePill name={state.name} abbr={state.abbr} />
+            {controlLabel && (
+              <span className={PILL} style={holder ? { background: holder === "D" ? "var(--party-dem)" : "var(--party-rep)", color: "#fff" } : { background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>{controlLabel}</span>
+            )}
           </div>
-          <div className="mt-2 text-sm">
-            <Link href={`/states/${state.id}`} className="hover:underline font-semibold" style={{ color: "var(--app-text-primary)" }}>← {state.name} overview</Link>
+          <div className="flex items-center gap-3">
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.75rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>{state.name} Legislature</h1>
           </div>
           <nav className="mt-5 flex items-end gap-5" style={{ borderBottom: "1px solid var(--app-border)" }} aria-label="Chamber">
             {unicameral ? tab("senate", true) : CHAMBERS.map((c) => tab(c, c === chamber))}
@@ -71,7 +80,7 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
         </div>
       </div>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-12">
+      <main className={`${PAGE_CONTAINER} pt-6 pb-12`}>
         <LegislativeAtlas
           abbr={state.abbr}
           stateName={state.name}

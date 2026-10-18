@@ -1,982 +1,859 @@
 {
  "state": "HI",
  "cycle": 2016,
- "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
- "fetched": "2026-10-16",
+ "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+ "fetched": "2026-10-17",
  "dataThrough": "12/31/2016",
  "candidates": [
   {
-   "name": "Pratt, Bruce",
+   "name": "Jaci Agustin",
    "chamber": "house",
-   "reg": "CC11290",
-   "period": "2014-2016",
-   "contributions": 1300.0
+   "contributions": 27855.12
   },
   {
-   "name": "Slom, Sam",
+   "name": "Julia Allen",
+   "chamber": "house",
+   "contributions": 8907.0
+  },
+  {
+   "name": "Terez Amato",
+   "chamber": "house",
+   "contributions": 846.22
+  },
+  {
+   "name": "Kaui Amsterdam",
    "chamber": "senate",
-   "reg": "CC10287",
-   "period": "2012-2016",
-   "contributions": 25771.9
+   "contributions": 0.0
   },
   {
-   "name": "Franks, Victoria",
-   "chamber": "house",
-   "reg": "CC11138",
-   "period": "2014-2016",
-   "contributions": 3139.31
+   "name": "Ikaika Anderson",
+   "chamber": null,
+   "contributions": 309800.0
   },
   {
-   "name": "DeCoite, Lynn",
-   "chamber": "house",
-   "reg": "CC11179",
-   "period": "2014-2016",
-   "contributions": 78519.13
-  },
-  {
-   "name": "Fukumoto, Beth",
-   "chamber": "house",
-   "reg": "CC10645",
-   "period": "2014-2016",
-   "contributions": 37224.5
-  },
-  {
-   "name": "Pouha, Feki",
-   "chamber": "house",
-   "reg": "CC11013",
-   "period": "2014-2016",
-   "contributions": 16510.0
-  },
-  {
-   "name": "Ilagan, Greggor",
+   "name": "Henry Aquino",
    "chamber": "senate",
-   "reg": "CC10819",
-   "period": "2014-2016",
-   "contributions": 44413.32
+   "contributions": 50220.0
   },
   {
-   "name": "Tippens, Michelle",
+   "name": "Gregory Arianoff",
    "chamber": "house",
-   "reg": "CC11214",
-   "period": "2014-2016",
-   "contributions": 5900.0
+   "contributions": 0.0
   },
   {
-   "name": "Tokioka, James",
-   "chamber": "house",
-   "reg": "CC10278",
-   "period": "2014-2016",
-   "contributions": 52700.0
-  },
-  {
-   "name": "Ward, Gene",
-   "chamber": "house",
-   "reg": "CC10209",
-   "period": "2014-2016",
-   "contributions": 36601.0
-  },
-  {
-   "name": "Har, Sharon",
-   "chamber": "house",
-   "reg": "CC10243",
-   "period": "2014-2016",
-   "contributions": 30350.0
-  },
-  {
-   "name": "Choy, Isaac",
-   "chamber": "house",
-   "reg": "CC10504",
-   "period": "2014-2016",
-   "contributions": 45350.0
-  },
-  {
-   "name": "Logue, James",
-   "chamber": "house",
-   "reg": "CC11262",
-   "period": "2014-2016",
-   "contributions": 3692.9
-  },
-  {
-   "name": "Gonce, Randy",
-   "chamber": "house",
-   "reg": "CC11247",
-   "period": "2014-2016",
-   "contributions": 7972.0
-  },
-  {
-   "name": "Pisciotta, Kealoha",
-   "chamber": "house",
-   "reg": "CC11260",
-   "period": "2014-2016",
-   "contributions": 3240.0
-  },
-  {
-   "name": "Farrell, David",
+   "name": "Kimberly Arianoff",
    "chamber": "senate",
-   "reg": "CC11313",
-   "period": "2012-2016",
-   "contributions": 720.15
+   "contributions": 0.0
   },
   {
-   "name": "Luke, Sylvia",
-   "chamber": "house",
-   "reg": "CC10186",
-   "period": "2014-2016",
-   "contributions": 206232.03
+   "name": "Kurtleigh Baker",
+   "chamber": null,
+   "contributions": 0.0
   },
   {
-   "name": "Fevella, Kurt",
+   "name": "Rosalyn Baker",
    "chamber": "senate",
-   "reg": "CC11240",
-   "period": "2012-2016",
-   "contributions": 2200.0
+   "contributions": 81666.62
   },
   {
-   "name": "Lowen, Nicole",
+   "name": "Ernest Balinbin",
    "chamber": "house",
-   "reg": "CC10861",
-   "period": "2014-2016",
-   "contributions": 37181.0
+   "contributions": 4780.0
   },
   {
-   "name": "Evans, Cindy",
+   "name": "Della Belatti",
+   "chamber": null,
+   "contributions": 56780.0
+  },
+  {
+   "name": "Stephen Bischoff",
    "chamber": "house",
-   "reg": "CC10236",
-   "period": "2014-2016",
-   "contributions": 31220.0
+   "contributions": 755.0
   },
   {
-   "name": "Souki, Joseph",
+   "name": "Tom Brower",
    "chamber": "house",
-   "reg": "CC10259",
-   "period": "2014-2016",
-   "contributions": 118228.0
+   "contributions": 34000.0
   },
   {
-   "name": "San Buenaventura, Joy",
+   "name": "Romy Cachola",
    "chamber": "house",
-   "reg": "CC11014",
-   "period": "2014-2016",
-   "contributions": 19550.0
+   "contributions": 19060.0
   },
   {
-   "name": "Grace, Janet",
+   "name": "Ernest Caravalho",
    "chamber": "house",
-   "reg": "CC11015",
-   "period": "2014-2016",
-   "contributions": 3825.0
-  },
-  {
-   "name": "Higa, Anthony",
-   "chamber": "house",
-   "reg": "CC11009",
-   "period": "2014-2016",
-   "contributions": 6600.0
-  },
-  {
-   "name": "Shea, Patrick",
-   "chamber": "house",
-   "reg": "CC11202",
-   "period": "2014-2016",
-   "contributions": 24397.57
-  },
-  {
-   "name": "Mizuno, John",
-   "chamber": "house",
-   "reg": "CC10241",
-   "period": "2014-2016",
-   "contributions": 40395.0
-  },
-  {
-   "name": "Kouchi, Ron",
-   "chamber": "senate",
-   "reg": "CC10226",
-   "period": "2012-2016",
-   "contributions": 211201.77
-  },
-  {
-   "name": "Allen, Julia",
-   "chamber": "house",
-   "reg": "CC10322",
-   "period": "2014-2016",
-   "contributions": 4487.0
-  },
-  {
-   "name": "Eli, Stacelynn",
-   "chamber": "house",
-   "reg": "CC11184",
-   "period": "2014-2016",
-   "contributions": 31052.38
-  },
-  {
-   "name": "Kupukaa, Katherine",
-   "chamber": "house",
-   "reg": "CC11300",
-   "period": "2014-2016",
-   "contributions": 500.0
-  },
-  {
-   "name": "Keohokalole, Jarrett",
-   "chamber": "house",
-   "reg": "CC11056",
-   "period": "2014-2016",
-   "contributions": 28995.0
-  },
-  {
-   "name": "Yamane, Ryan",
-   "chamber": "house",
-   "reg": "CC10235",
-   "period": "2014-2016",
-   "contributions": 46175.0
-  },
-  {
-   "name": "Aquino, Henry",
-   "chamber": "house",
-   "reg": "CC10375",
-   "period": "2014-2016",
-   "contributions": 44185.0
-  },
-  {
-   "name": "Marshall, Eric",
-   "chamber": "house",
-   "reg": "CC10743",
-   "period": "2014-2016",
-   "contributions": 716.33
-  },
-  {
-   "name": "Ruderman, Russell",
-   "chamber": "senate",
-   "reg": "CC10860",
-   "period": "2012-2016",
-   "contributions": 25044.2
-  },
-  {
-   "name": "Mataafa, Toagaifasa",
-   "chamber": "house",
-   "reg": "CC11275",
-   "period": "2014-2016",
-   "contributions": 200.0
-  },
-  {
-   "name": "Hussey, Ikaika",
-   "chamber": "house",
-   "reg": "CC11311",
-   "period": "2014-2016",
-   "contributions": 8050.0
-  },
-  {
-   "name": "Cullen, Ty",
-   "chamber": "house",
-   "reg": "CC10466",
-   "period": "2014-2016",
-   "contributions": 50705.0
-  },
-  {
-   "name": "Wakai, Glenn",
-   "chamber": "senate",
-   "reg": "CC10208",
-   "period": "2012-2016",
-   "contributions": 83129.52
-  },
-  {
-   "name": "Young, Byron",
-   "chamber": "house",
-   "reg": "CC11309",
-   "period": "2014-2016",
-   "contributions": 994.0
-  },
-  {
-   "name": "Hood, Joan",
-   "chamber": "house",
-   "reg": "CC11017",
-   "period": "2014-2016",
-   "contributions": 8733.85
-  },
-  {
-   "name": "Woodson, Justin",
-   "chamber": "house",
-   "reg": "CC10993",
-   "period": "2014-2016",
-   "contributions": 33400.0
-  },
-  {
-   "name": "Agustin, Jaci",
-   "chamber": "house",
-   "reg": "CC11062",
-   "period": "2014-2016",
-   "contributions": 21625.0
-  },
-  {
-   "name": "Ozols, Harry",
-   "chamber": "senate",
-   "reg": "CC11212",
-   "period": "2012-2016",
-   "contributions": 220.83
-  },
-  {
-   "name": "McDermott, Bob",
-   "chamber": "house",
-   "reg": "CC10923",
-   "period": "2014-2016",
-   "contributions": 37035.97
-  },
-  {
-   "name": "Nakoa, Keone",
-   "chamber": "senate",
-   "reg": "CC11229",
-   "period": "2012-2016",
-   "contributions": 46958.48
-  },
-  {
-   "name": "Arakaki, Tracy",
-   "chamber": "house",
-   "reg": "CC11026",
-   "period": "2014-2016",
-   "contributions": 8944.0
-  },
-  {
-   "name": "Ross, Karlen",
-   "chamber": "house",
-   "reg": "CC11291",
-   "period": "2014-2016",
-   "contributions": 6098.0
-  },
-  {
-   "name": "Martinez, Rosebella",
-   "chamber": "house",
-   "reg": "CC10788",
-   "period": "2014-2016",
-   "contributions": 4440.0
-  },
-  {
-   "name": "Awana, Karen",
-   "chamber": "house",
-   "reg": "CC11000",
-   "period": "2014-2016",
-   "contributions": 3700.0
-  },
-  {
-   "name": "Kapoi, Cranston",
-   "chamber": "house",
-   "reg": "CC11058",
-   "period": "2014-2016",
-   "contributions": 500.0
-  },
-  {
-   "name": "Ihara, Les",
-   "chamber": "senate",
-   "reg": "CC10178",
-   "period": "2012-2016",
-   "contributions": 12903.0
-  },
-  {
-   "name": "Tegarden, Deidre",
-   "chamber": "house",
-   "reg": "CC11192",
-   "period": "2014-2016",
-   "contributions": 88809.88
-  },
-  {
-   "name": "Espero, William",
-   "chamber": "senate",
-   "reg": "CC10229",
-   "period": "2012-2016",
-   "contributions": 49045.0
-  },
-  {
-   "name": "Oshiro, Marcus",
-   "chamber": "house",
-   "reg": "CC10191",
-   "period": "2014-2016",
-   "contributions": 21800.0
-  },
-  {
-   "name": "Kahele, Kaialii",
-   "chamber": "senate",
-   "reg": "CC11209",
-   "period": "2014-2016",
-   "contributions": 151559.0
-  },
-  {
-   "name": "LoPresti, Matthew",
-   "chamber": "house",
-   "reg": "CC10794",
-   "period": "2014-2016",
-   "contributions": 36308.0
-  },
-  {
-   "name": "Rebolledo, Gilbert",
-   "chamber": "house",
-   "reg": "CC11304",
-   "period": "2014-2016",
-   "contributions": 430.0
-  },
-  {
-   "name": "Naniole, Alexander",
-   "chamber": "house",
-   "reg": "CC11239",
-   "period": "2014-2016",
-   "contributions": 25750.0
-  },
-  {
-   "name": "Wong, Jonathan",
-   "chamber": "house",
-   "reg": "CC11203",
-   "period": "2014-2016",
-   "contributions": 16960.0
-  },
-  {
-   "name": "Kobayashi, Dale",
-   "chamber": "house",
-   "reg": "CC11231",
-   "period": "2014-2016",
-   "contributions": 63005.19
-  },
-  {
-   "name": "Lawrence, Tiare",
-   "chamber": "house",
-   "reg": "CC11226",
-   "period": "2014-2016",
-   "contributions": 20809.92
-  },
-  {
-   "name": "Oi, Thomas",
-   "chamber": "house",
-   "reg": "CC11332",
-   "period": "2014-2016",
-   "contributions": 6700.0
-  },
-  {
-   "name": "Tarnas, David",
-   "chamber": "house",
-   "reg": "CC11188",
-   "period": "2014-2016",
-   "contributions": 37888.17
-  },
-  {
-   "name": "Takayama, Gregg",
-   "chamber": "house",
-   "reg": "CC10914",
-   "period": "2014-2016",
-   "contributions": 26925.0
-  },
-  {
-   "name": "Jeremiah, Bryan",
-   "chamber": "house",
-   "reg": "CC11092",
-   "period": "2014-2016",
-   "contributions": 12804.33
-  },
-  {
-   "name": "Jordan, Jo",
-   "chamber": "house",
-   "reg": "CC10803",
-   "period": "2014-2016",
-   "contributions": 26210.0
-  },
-  {
-   "name": "Chang, Stanley",
-   "chamber": "senate",
-   "reg": "CC10525",
-   "period": "2012-2016",
-   "contributions": 135747.22
-  },
-  {
-   "name": "Kobayashi, Bertrand",
-   "chamber": "house",
-   "reg": "CC10881",
-   "period": "2014-2016",
-   "contributions": 11600.0
-  },
-  {
-   "name": "Nishimoto, Scott",
-   "chamber": "house",
-   "reg": "CC10190",
-   "period": "2014-2016",
-   "contributions": 39514.11
-  },
-  {
-   "name": "Fale, Richard",
-   "chamber": "senate",
-   "reg": "CC10394",
-   "period": "2014-2016",
    "contributions": 250.0
   },
   {
-   "name": "Rhoads, Karl",
+   "name": "Dickie Chang",
+   "chamber": null,
+   "contributions": 0.0
+  },
+  {
+   "name": "Lester Chang",
+   "chamber": null,
+   "contributions": 20.0
+  },
+  {
+   "name": "Stanley Chang",
    "chamber": "senate",
-   "reg": "CC10195",
-   "period": "2014-2016",
-   "contributions": 125687.62
+   "contributions": 151421.87
   },
   {
-   "name": "Haller, Alexander",
+   "name": "Corinne Ching",
    "chamber": "house",
-   "reg": "CC11196",
-   "period": "2014-2016",
-   "contributions": 8614.95
+   "contributions": 0.0
   },
   {
-   "name": "Lee, Christopher",
+   "name": "Eric Ching",
    "chamber": "house",
-   "reg": "CC10395",
-   "period": "2014-2016",
-   "contributions": 42995.84
+   "contributions": 11572.8
   },
   {
-   "name": "Coakley, Kaiwiola",
+   "name": "Isaac Choy",
    "chamber": "house",
-   "reg": "CC11317",
-   "period": "2014-2016",
-   "contributions": 4500.0
+   "contributions": 57112.8
   },
   {
-   "name": "Rosenstiel, Fern",
-   "chamber": "house",
-   "reg": "CC11243",
-   "period": "2014-2016",
-   "contributions": 8488.95
-  },
-  {
-   "name": "Onishi, Richard",
-   "chamber": "house",
-   "reg": "CC10965",
-   "period": "2014-2016",
-   "contributions": 29444.01
-  },
-  {
-   "name": "Iwamoto, Kim Coco",
+   "name": "Roger Clemente",
    "chamber": "senate",
-   "reg": "CC11265",
-   "period": "2012-2016",
-   "contributions": 46945.22
+   "contributions": 1205.0
   },
   {
-   "name": "Tsuji, Clifton",
+   "name": "Jeffrey Coakley",
    "chamber": "house",
-   "reg": "CC10217",
-   "period": "2014-2016",
-   "contributions": 39901.97
+   "contributions": 3385.0
   },
   {
-   "name": "Rodriguez, Cody",
+   "name": "Kaiwiola Coakley",
    "chamber": "house",
-   "reg": "CC11320",
-   "period": "2014-2016",
-   "contributions": 325.35
+   "contributions": 5980.0
   },
   {
-   "name": "Gates, Cedric",
+   "name": "Elle Cochran",
+   "chamber": null,
+   "contributions": 4602.0
+  },
+  {
+   "name": "Sandra Combs",
    "chamber": "house",
-   "reg": "CC11146",
-   "period": "2014-2016",
-   "contributions": 33499.69
+   "contributions": 29160.0
   },
   {
-   "name": "Nikhilananda, Nick",
+   "name": "Richard Creagan",
    "chamber": "house",
-   "reg": "CC11142",
-   "period": "2014-2016",
-   "contributions": 950.0
+   "contributions": 17300.0
   },
   {
-   "name": "Ichiyama, Linda",
+   "name": "Sy Cullen",
+   "chamber": null,
+   "contributions": 20.0
+  },
+  {
+   "name": "Ty Cullen",
    "chamber": "house",
-   "reg": "CC10561",
-   "period": "2014-2016",
-   "contributions": 26350.0
+   "contributions": 58170.0
   },
   {
-   "name": "Ito, Ken",
-   "chamber": "house",
-   "reg": "CC10180",
-   "period": "2014-2016",
-   "contributions": 30225.0
-  },
-  {
-   "name": "Belatti, Della",
-   "chamber": "house",
-   "reg": "CC10269",
-   "period": "2014-2016",
-   "contributions": 47265.0
-  },
-  {
-   "name": "Ohno, Takashi",
-   "chamber": "house",
-   "reg": "CC10808",
-   "period": "2014-2016",
-   "contributions": 29777.75
-  },
-  {
-   "name": "Combs, Sandra",
-   "chamber": "house",
-   "reg": "CC11245",
-   "period": "2014-2016",
-   "contributions": 28450.0
-  },
-  {
-   "name": "Pekus, Daniel",
-   "chamber": "house",
-   "reg": "CC11273",
-   "period": "2014-2016",
-   "contributions": 1635.0
-  },
-  {
-   "name": "Holt, Daniel",
-   "chamber": "house",
-   "reg": "CC11268",
-   "period": "2014-2016",
-   "contributions": 35989.74
-  },
-  {
-   "name": "Keith-Agaran, Gilbert",
+   "name": "Lynn DeCoite",
    "chamber": "senate",
-   "reg": "CC10537",
-   "period": "2014-2016",
-   "contributions": 104228.87
+   "contributions": 91674.13
   },
   {
-   "name": "Lee, Marilyn",
+   "name": "Donovan Dela Cruz",
+   "chamber": "senate",
+   "contributions": 256075.73
+  },
+  {
+   "name": "Efrain Delacruz",
+   "chamber": null,
+   "contributions": 0.0
+  },
+  {
+   "name": "Brandon Elefante",
+   "chamber": "senate",
+   "contributions": 15389.78
+  },
+  {
+   "name": "Stacelynn Eli",
    "chamber": "house",
-   "reg": "CC11238",
-   "period": "2014-2016",
+   "contributions": 0.0
+  },
+  {
+   "name": "Stacelynn Eli",
+   "chamber": "senate",
+   "contributions": 33464.11
+  },
+  {
+   "name": "Kalani English",
+   "chamber": "senate",
+   "contributions": 76185.41
+  },
+  {
+   "name": "Jason Espero",
+   "chamber": null,
+   "contributions": 2100.0
+  },
+  {
+   "name": "William Espero",
+   "chamber": null,
+   "contributions": 79490.0
+  },
+  {
+   "name": "Cindy Evans",
+   "chamber": "house",
+   "contributions": 36435.0
+  },
+  {
+   "name": "Richard Fale",
+   "chamber": "house",
+   "contributions": 250.0
+  },
+  {
+   "name": "Larry Fenton",
+   "chamber": "house",
+   "contributions": 806.01
+  },
+  {
+   "name": "Kurt Fevella",
+   "chamber": "senate",
+   "contributions": 2500.0
+  },
+  {
+   "name": "Christopher Fidelibus",
+   "chamber": "senate",
+   "contributions": 5600.0
+  },
+  {
+   "name": "Frederick Fogel",
+   "chamber": "senate",
+   "contributions": 0.0
+  },
+  {
+   "name": "Brenda Ford",
+   "chamber": null,
+   "contributions": 5000.0
+  },
+  {
+   "name": "Lori Ford",
+   "chamber": "house",
+   "contributions": 0.0
+  },
+  {
+   "name": "Victoria Franks",
+   "chamber": null,
+   "contributions": 4355.43
+  },
+  {
+   "name": "Victoria Franks",
+   "chamber": null,
+   "contributions": 4355.43
+  },
+  {
+   "name": "Beth Fukumoto",
+   "chamber": "senate",
+   "contributions": 50409.5
+  },
+  {
+   "name": "Carol Fukunaga",
+   "chamber": "senate",
+   "contributions": 25950.0
+  },
+  {
+   "name": "Mike Gabbard",
+   "chamber": "senate",
+   "contributions": 47971.2
+  },
+  {
+   "name": "Cedric Gates",
+   "chamber": "senate",
+   "contributions": 36541.69
+  },
+  {
+   "name": "Sharon Har",
+   "chamber": "house",
+   "contributions": 37562.8
+  },
+  {
+   "name": "Breene Harimoto",
+   "chamber": "senate",
+   "contributions": 9162.5
+  },
+  {
+   "name": "Mark Hashem",
+   "chamber": "house",
+   "contributions": 32320.0
+  },
+  {
+   "name": "Kathryn Henski",
+   "chamber": "house",
+   "contributions": 7249.05
+  },
+  {
+   "name": "Kathryn Henski",
+   "chamber": "house",
+   "contributions": 7249.05
+  },
+  {
+   "name": "Anthony Higa",
+   "chamber": "house",
+   "contributions": 6150.0
+  },
+  {
+   "name": "Creighton Higa",
+   "chamber": "house",
+   "contributions": 0.0
+  },
+  {
+   "name": "Daniel Holt",
+   "chamber": "senate",
+   "contributions": 41354.74
+  },
+  {
+   "name": "Joan Hood",
+   "chamber": "house",
+   "contributions": 10930.43
+  },
+  {
+   "name": "Ikaika Hussey",
+   "chamber": "house",
+   "contributions": 10798.82
+  },
+  {
+   "name": "Linda Ichiyama",
+   "chamber": "house",
+   "contributions": 39125.0
+  },
+  {
+   "name": "Greggor Ilagan",
+   "chamber": "house",
+   "contributions": 45961.1
+  },
+  {
+   "name": "Mark Ing",
+   "chamber": "house",
+   "contributions": 75567.17
+  },
+  {
+   "name": "Lorraine Inouye",
+   "chamber": "senate",
+   "contributions": 58050.0
+  },
+  {
+   "name": "Ken Ito",
+   "chamber": "senate",
+   "contributions": 39405.0
+  },
+  {
+   "name": "Kim Coco Iwamoto",
+   "chamber": "house",
+   "contributions": 49586.59
+  },
+  {
+   "name": "Bryan Jeremiah",
+   "chamber": "house",
+   "contributions": 16053.72
+  },
+  {
+   "name": "Aaron Johanson",
+   "chamber": null,
+   "contributions": 59445.0
+  },
+  {
+   "name": "Gabriel Johnson",
+   "chamber": null,
+   "contributions": 1921.5
+  },
+  {
+   "name": "Luana Jones",
+   "chamber": "house",
+   "contributions": 270.0
+  },
+  {
+   "name": "Gilbert Kahele",
+   "chamber": "senate",
+   "contributions": 28100.57
+  },
+  {
+   "name": "Kaialii Kahele",
+   "chamber": null,
+   "contributions": 168699.0
+  },
+  {
+   "name": "Daniel Kalinowski",
+   "chamber": "senate",
+   "contributions": 125.0
+  },
+  {
+   "name": "Dru Kanuha",
+   "chamber": "senate",
+   "contributions": 12525.0
+  },
+  {
+   "name": "Gilbert Keith-Agaran",
+   "chamber": "senate",
+   "contributions": 112283.87
+  },
+  {
+   "name": "Jarrett Keohokalole",
+   "chamber": "senate",
+   "contributions": 35520.0
+  },
+  {
+   "name": "Michelle Kidani",
+   "chamber": "senate",
+   "contributions": 108639.62
+  },
+  {
+   "name": "Dennis Kim",
+   "chamber": "senate",
+   "contributions": 0.0
+  },
+  {
+   "name": "Donna Kim",
+   "chamber": "senate",
+   "contributions": 238788.49
+  },
+  {
+   "name": "Richard Kim",
+   "chamber": null,
+   "contributions": 0.0
+  },
+  {
+   "name": "Richard Kim",
+   "chamber": null,
+   "contributions": 0.0
+  },
+  {
+   "name": "Ann Kobayashi",
+   "chamber": null,
+   "contributions": 148764.0
+  },
+  {
+   "name": "Bertrand Kobayashi",
+   "chamber": "house",
    "contributions": 13900.0
   },
   {
-   "name": "Yamashita, Kyle",
+   "name": "Dale Kobayashi",
    "chamber": "house",
-   "reg": "CC10232",
-   "period": "2014-2016",
-   "contributions": 32825.0
+   "contributions": 70202.75
   },
   {
-   "name": "Chun Oakland, Suzanne",
+   "name": "Ron Kouchi",
    "chamber": "senate",
-   "reg": "CC10169",
-   "period": "2012-2016",
-   "contributions": 650.0
+   "contributions": 313274.37
   },
   {
-   "name": "Aki, Zurishaddai",
+   "name": "Katherine Kupukaa",
    "chamber": "house",
-   "reg": "CC11230",
-   "period": "2014-2016",
-   "contributions": 7140.01
+   "contributions": 550.0
   },
   {
-   "name": "Manipol-Larson, Grace",
+   "name": "Michael Last",
    "chamber": "house",
-   "reg": "CC11328",
-   "period": "2014-2016",
-   "contributions": 825.0
+   "contributions": 0.0
   },
   {
-   "name": "Morikawa, Daynette",
+   "name": "Michael Last",
    "chamber": "house",
-   "reg": "CC10631",
-   "period": "2014-2016",
-   "contributions": 26800.0
+   "contributions": 0.0
   },
   {
-   "name": "Takumi, Roy",
+   "name": "Michael Last",
    "chamber": "house",
-   "reg": "CC10246",
-   "period": "2014-2016",
-   "contributions": 15395.0
+   "contributions": 0.0
   },
   {
-   "name": "Dela Cruz, Donovan",
+   "name": "Christopher Lee",
    "chamber": "senate",
-   "reg": "CC10171",
-   "period": "2012-2016",
-   "contributions": 220633.56
+   "contributions": 48655.84
   },
   {
-   "name": "Ahuna, Kanoe",
+   "name": "Marilyn Lee",
+   "chamber": "house",
+   "contributions": 19523.0
+  },
+  {
+   "name": "Marilyn Lee",
+   "chamber": "house",
+   "contributions": 19523.0
+  },
+  {
+   "name": "Marilyn Lee",
+   "chamber": "house",
+   "contributions": 19523.0
+  },
+  {
+   "name": "Marilyn Lee",
+   "chamber": "house",
+   "contributions": 19523.0
+  },
+  {
+   "name": "Matthew LoPresti",
+   "chamber": "house",
+   "contributions": 41834.88
+  },
+  {
+   "name": "Nicole Lowen",
+   "chamber": "house",
+   "contributions": 44189.0
+  },
+  {
+   "name": "Sylvia Luke",
+   "chamber": null,
+   "contributions": 215642.03
+  },
+  {
+   "name": "Ernest Martin",
    "chamber": "senate",
-   "reg": "CC11305",
-   "period": "2012-2016",
-   "contributions": 8037.39
+   "contributions": 342363.69
   },
   {
-   "name": "Kossow, Bronsten-Glenn",
+   "name": "Rosebella Martinez",
    "chamber": "house",
-   "reg": "CC11217",
-   "period": "2014-2016",
-   "contributions": 1203.49
+   "contributions": 10124.0
   },
   {
-   "name": "Coakley, Jeffrey",
+   "name": "Lauren Matsumoto",
    "chamber": "house",
-   "reg": "CC11223",
-   "period": "2014-2016",
-   "contributions": 2350.0
+   "contributions": 37385.0
   },
   {
-   "name": "Nagamine, Robert",
+   "name": "Bob McDermott",
+   "chamber": "house",
+   "contributions": 51655.97
+  },
+  {
+   "name": "Angus McKelvey",
    "chamber": "senate",
-   "reg": "CC11297",
-   "period": "2012-2016",
-   "contributions": 8990.95
+   "contributions": 53387.09
   },
   {
-   "name": "Paaluhi, Marcus",
+   "name": "Vanessa Medeiros",
+   "chamber": null,
+   "contributions": 7225.74
+  },
+  {
+   "name": "Dennis Miller",
    "chamber": "house",
-   "reg": "CC11187",
-   "period": "2014-2016",
-   "contributions": 12740.0
+   "contributions": 77.0
   },
   {
-   "name": "Ing, Mark",
+   "name": "Steven Miller",
+   "chamber": null,
+   "contributions": 0.0
+  },
+  {
+   "name": "John Mizuno",
    "chamber": "house",
-   "reg": "CC10809",
-   "period": "2014-2016",
-   "contributions": 59741.32
+   "contributions": 50140.0
   },
   {
-   "name": "Creagan, Richard",
+   "name": "Joje May Mizuno",
+   "chamber": null,
+   "contributions": 0.0
+  },
+  {
+   "name": "Daynette Morikawa",
    "chamber": "house",
-   "reg": "CC11027",
-   "period": "2014-2016",
-   "contributions": 16050.0
+   "contributions": 31600.0
   },
   {
-   "name": "Kim, Donna",
+   "name": "Robert Nagamine",
    "chamber": "senate",
-   "reg": "CC10254",
-   "period": "2012-2016",
-   "contributions": 125850.0
+   "contributions": 11882.05
   },
   {
-   "name": "Brower, Tom",
+   "name": "Nadine Nakamura",
    "chamber": "house",
-   "reg": "CC10290",
-   "period": "2014-2016",
-   "contributions": 31050.0
+   "contributions": 54619.59
   },
   {
-   "name": "Gabbard, Mike",
+   "name": "Mark Nakashima",
+   "chamber": "house",
+   "contributions": 62818.51
+  },
+  {
+   "name": "Nick Nikhilananda",
+   "chamber": "house",
+   "contributions": 4221.21
+  },
+  {
+   "name": "Nick Nikhilananda",
+   "chamber": "house",
+   "contributions": 4221.21
+  },
+  {
+   "name": "Clarence Nishihara",
    "chamber": "senate",
-   "reg": "CC10279",
-   "period": "2012-2016",
-   "contributions": 38356.2
+   "contributions": 13800.0
   },
   {
-   "name": "Thielen, Cynthia",
+   "name": "Scott Nishimoto",
+   "chamber": null,
+   "contributions": 47114.11
+  },
+  {
+   "name": "Scott Noltie",
    "chamber": "house",
-   "reg": "CC10205",
-   "period": "2014-2016",
-   "contributions": 33782.0
+   "contributions": 0.0
   },
   {
-   "name": "Fidelibus, Christopher",
+   "name": "Takashi Ohno",
+   "chamber": "house",
+   "contributions": 38129.33
+  },
+  {
+   "name": "Dennis Onishi",
+   "chamber": null,
+   "contributions": 16167.45
+  },
+  {
+   "name": "Richard Onishi",
+   "chamber": "house",
+   "contributions": 42432.74
+  },
+  {
+   "name": "Blake Oshiro",
+   "chamber": "house",
+   "contributions": 0.0
+  },
+  {
+   "name": "Marcus Oshiro",
+   "chamber": "house",
+   "contributions": 26877.0
+  },
+  {
+   "name": "Trevor Ozawa",
+   "chamber": null,
+   "contributions": 177533.7
+  },
+  {
+   "name": "Marcus Paaluhi",
+   "chamber": null,
+   "contributions": 17967.41
+  },
+  {
+   "name": "Daniel Pekus",
+   "chamber": "house",
+   "contributions": 3505.0
+  },
+  {
+   "name": "Kealoha Pisciotta",
+   "chamber": "house",
+   "contributions": 5665.0
+  },
+  {
+   "name": "Feki Pouha",
+   "chamber": "house",
+   "contributions": 19700.0
+  },
+  {
+   "name": "Bruce Pratt",
+   "chamber": "house",
+   "contributions": 2112.0
+  },
+  {
+   "name": "Sean Quinlan",
+   "chamber": "house",
+   "contributions": 37015.31
+  },
+  {
+   "name": "Gilbert Rebolledo",
+   "chamber": "house",
+   "contributions": 1750.2
+  },
+  {
+   "name": "Karl Rhoads",
    "chamber": "senate",
-   "reg": "CC11307",
-   "period": "2012-2016",
-   "contributions": 5150.0
+   "contributions": 132539.61
   },
   {
-   "name": "Stump, Christopher",
-   "chamber": "house",
-   "reg": "CC11031",
-   "period": "2014-2016",
-   "contributions": 534.67
-  },
-  {
-   "name": "Henski, Kathryn",
-   "chamber": "house",
-   "reg": "CC11232",
-   "period": "2014-2016",
-   "contributions": 5926.05
-  },
-  {
-   "name": "Nakashima, Mark",
-   "chamber": "house",
-   "reg": "CC10352",
-   "period": "2014-2016",
-   "contributions": 54683.51
-  },
-  {
-   "name": "Quinlan, Sean",
-   "chamber": "house",
-   "reg": "CC11250",
-   "period": "2014-2016",
-   "contributions": 35060.31
-  },
-  {
-   "name": "Perez-Garreaud, Nicola",
-   "chamber": "house",
-   "reg": "CC11178",
-   "period": "2014-2016",
-   "contributions": 500.0
-  },
-  {
-   "name": "Matsumoto, Lauren",
-   "chamber": "house",
-   "reg": "CC10863",
-   "period": "2014-2016",
-   "contributions": 28270.0
-  },
-  {
-   "name": "McKelvey, Angus",
-   "chamber": "house",
-   "reg": "CC10264",
-   "period": "2014-2016",
-   "contributions": 46542.34
-  },
-  {
-   "name": "Onishi, Dennis",
+   "name": "Herbert Richards",
    "chamber": "senate",
-   "reg": "CC10373",
-   "period": "2014-2016",
-   "contributions": 9462.45
+   "contributions": 36013.28
   },
   {
-   "name": "Tam, Rodney",
+   "name": "Gil Riviere",
    "chamber": "senate",
-   "reg": "CC11299",
-   "period": "2012-2016",
-   "contributions": 6909.79
+   "contributions": 7882.5
   },
   {
-   "name": "Tupola, Andria",
+   "name": "Karlen Ross",
    "chamber": "house",
-   "reg": "CC10995",
-   "period": "2014-2016",
-   "contributions": 42786.0
+   "contributions": 7970.0
   },
   {
-   "name": "Kimball, Heather",
-   "chamber": "house",
-   "reg": "CC11255",
-   "period": "2014-2016",
-   "contributions": 7014.52
-  },
-  {
-   "name": "Dionne, Valerie",
-   "chamber": "house",
-   "reg": "CC11316",
-   "period": "2014-2016",
-   "contributions": 2300.0
-  },
-  {
-   "name": "Bischoff, Stephen",
-   "chamber": "house",
-   "reg": "CC11281",
-   "period": "2014-2016",
-   "contributions": 200.0
-  },
-  {
-   "name": "Sequin, Tamiko",
-   "chamber": "house",
-   "reg": "CC11210",
-   "period": "2014-2016",
-   "contributions": 4270.0
-  },
-  {
-   "name": "Phillips, Arnold",
+   "name": "Russell Ruderman",
    "chamber": "senate",
-   "reg": "CC11213",
-   "period": "2012-2016",
-   "contributions": 12982.63
+   "contributions": 41761.86
   },
   {
-   "name": "Say, Calvin",
+   "name": "Pohai Ryan",
+   "chamber": null,
+   "contributions": 0.0
+  },
+  {
+   "name": "Scott Saiki",
    "chamber": "house",
-   "reg": "CC10230",
-   "period": "2014-2016",
-   "contributions": 61050.0
+   "contributions": 84804.15
   },
   {
-   "name": "Thielen, Laura",
+   "name": "Joy San Buenaventura",
    "chamber": "senate",
-   "reg": "CC10867",
-   "period": "2012-2016",
-   "contributions": 31510.5
+   "contributions": 29840.0
   },
   {
-   "name": "Taniguchi, Brian",
+   "name": "Calvin Say",
+   "chamber": null,
+   "contributions": 79310.6
+  },
+  {
+   "name": "Maile Shimabukuro",
    "chamber": "senate",
-   "reg": "CC10204",
-   "period": "2012-2016",
-   "contributions": 45155.0
+   "contributions": 14507.5
   },
   {
-   "name": "Dayao, Firmo",
-   "chamber": "house",
-   "reg": "CC11303",
-   "period": "2014-2016",
-   "contributions": 4225.0
+   "name": "Lorraine Shin",
+   "chamber": null,
+   "contributions": 0.0
   },
   {
-   "name": "Ching, Eric",
-   "chamber": "house",
-   "reg": "CC11180",
-   "period": "2014-2016",
-   "contributions": 9968.8
-  },
-  {
-   "name": "Saiki, Scott",
-   "chamber": "house",
-   "reg": "CC10197",
-   "period": "2014-2016",
-   "contributions": 80209.15
-  },
-  {
-   "name": "Campagna, Carl",
+   "name": "Sam Slom",
    "chamber": "senate",
-   "reg": "CC11186",
-   "period": "2012-2016",
-   "contributions": 5213.37
+   "contributions": 46388.21
   },
   {
-   "name": "Johanson, Aaron",
-   "chamber": "house",
-   "reg": "CC10612",
-   "period": "2014-2016",
-   "contributions": 45595.0
-  },
-  {
-   "name": "Robinson, Kaloa",
+   "name": "Malama Solomon",
    "chamber": "senate",
-   "reg": "CC11233",
-   "period": "2014-2016",
-   "contributions": 11520.09
+   "contributions": 0.0
   },
   {
-   "name": "Velasco, Marcelino",
+   "name": "Joseph Souki",
    "chamber": "house",
-   "reg": "CC11331",
-   "period": "2014-2016",
+   "contributions": 135043.0
+  },
+  {
+   "name": "Moke Stephens",
+   "chamber": "house",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gregg Takayama",
+   "chamber": "house",
+   "contributions": 35705.0
+  },
+  {
+   "name": "Roy Takumi",
+   "chamber": "house",
+   "contributions": 20170.0
+  },
+  {
+   "name": "Rod Tam",
+   "chamber": "senate",
+   "contributions": 900.0
+  },
+  {
+   "name": "Rodney Tam",
+   "chamber": "senate",
+   "contributions": 8824.79
+  },
+  {
+   "name": "Brian Taniguchi",
+   "chamber": "senate",
+   "contributions": 100000.0
+  },
+  {
+   "name": "David Tarnas",
+   "chamber": "house",
+   "contributions": 45027.17
+  },
+  {
+   "name": "Cynthia Thielen",
+   "chamber": "house",
+   "contributions": 34707.0
+  },
+  {
+   "name": "Laura Thielen",
+   "chamber": "senate",
+   "contributions": 37314.05
+  },
+  {
+   "name": "Michelle Tippens",
+   "chamber": "house",
+   "contributions": 6098.0
+  },
+  {
+   "name": "James Tokioka",
+   "chamber": "house",
+   "contributions": 61122.8
+  },
+  {
+   "name": "Clifton Tsuji",
+   "chamber": "house",
+   "contributions": 56095.89
+  },
+  {
+   "name": "Andria Tupola",
+   "chamber": null,
+   "contributions": 57261.16
+  },
+  {
+   "name": "Richard Turbin",
+   "chamber": null,
+   "contributions": 0.0
+  },
+  {
+   "name": "Marcelino Velasco",
+   "chamber": "house",
    "contributions": 250.0
   },
   {
-   "name": "Cachola, Romy",
+   "name": "Nicole Velasco",
    "chamber": "house",
-   "reg": "CC10137",
-   "period": "2014-2016",
-   "contributions": 15125.0
+   "contributions": 0.0
   },
   {
-   "name": "Hashem, Mark",
-   "chamber": "house",
-   "reg": "CC10626",
-   "period": "2014-2016",
-   "contributions": 26930.0
+   "name": "Glenn Wakai",
+   "chamber": "senate",
+   "contributions": 107024.52
   },
   {
-   "name": "Fenton, Larry",
+   "name": "Gene Ward",
    "chamber": "house",
-   "reg": "CC11252",
-   "period": "2014-2016",
-   "contributions": 756.01
+   "contributions": 45006.0
   },
   {
-   "name": "Golojuch, Michael",
+   "name": "Justin Woodson",
    "chamber": "house",
-   "reg": "CC11100",
-   "period": "2014-2016",
-   "contributions": 200.0
+   "contributions": 36275.0
+  },
+  {
+   "name": "Ryan Yamane",
+   "chamber": "house",
+   "contributions": 54535.0
+  },
+  {
+   "name": "Kyle Yamashita",
+   "chamber": "house",
+   "contributions": 41600.0
+  },
+  {
+   "name": "Steven Yoder",
+   "chamber": "house",
+   "contributions": 0.0
+  },
+  {
+   "name": "Steven Yoder",
+   "chamber": "house",
+   "contributions": 0.0
+  },
+  {
+   "name": "Byron Young",
+   "chamber": "house",
+   "contributions": 994.0
   }
  ]
 }

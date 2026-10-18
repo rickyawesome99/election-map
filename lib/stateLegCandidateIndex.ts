@@ -482,6 +482,13 @@ export function findStateLegCandidate(name: string, stateName: string): StateLeg
   return getStateLegCandidatePage(stateLegCandidateSlug(name, state.abbr));
 }
 
+/** Every slug that resolves to a page under another slug (an alternate spelling, a merged name): alias -> page slug. */
+export function getStateLegCandidateSlugAliases(): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const [alias, slug] of index.bySlug) if (alias !== slug && index.pages.has(slug)) out[alias] = slug;
+  return out;
+}
+
 export function getAllStateLegCandidateSlugs(): string[] {
   return [...index.pages.keys()];
 }

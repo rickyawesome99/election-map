@@ -158037,6 +158037,4388 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   }
  },
  "MN": {
+  "2016": {
+   "house": {
+    "1A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Fabian, Daniel E",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67625,
+       "expenditures": null
+      },
+      {
+       "name": "Bass, George Nyakasi",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5595.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "1B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kiel, Debra (Deb) L",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42360.99,
+       "expenditures": null
+      },
+      {
+       "name": "Moore, Michael (Mike)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20831,
+       "expenditures": null
+      }
+     ]
+    },
+    "2A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Grossell, Matthew (Matt) J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 21380.96,
+       "expenditures": null
+      },
+      {
+       "name": "Loud, Jerald (Jerry)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16326,
+       "expenditures": null
+      }
+     ]
+    },
+    "2B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Green, Steve",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29753.51,
+       "expenditures": null
+      },
+      {
+       "name": "Klabunde, Bryan A",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 43812.74,
+       "expenditures": null
+      }
+     ]
+    },
+    "3A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ecklund, Robert",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 34770,
+       "expenditures": null
+      },
+      {
+       "name": "Long, Tom",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "3B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Murphy, Mary C",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 16588,
+       "expenditures": null
+      },
+      {
+       "name": "Brandon, Timothy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6151.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "4A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lien, Benjamin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 23490,
+       "expenditures": null
+      },
+      {
+       "name": "Idso, Jordan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3326.94,
+       "expenditures": null
+      }
+     ]
+    },
+    "4B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Marquart, Paul",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 28830,
+       "expenditures": null
+      },
+      {
+       "name": "Grimsley, Ben",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15239,
+       "expenditures": null
+      }
+     ]
+    },
+    "5A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bliss, Matt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 22614,
+       "expenditures": null
+      },
+      {
+       "name": "Persell, John S",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 23957,
+       "expenditures": null
+      }
+     ]
+    },
+    "5B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Anzelc, Thomas E",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 43144.8,
+       "expenditures": null
+      },
+      {
+       "name": "Layman, Sandy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 57863.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "6A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Farnsworth, Robert (Rob)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16772.17,
+       "expenditures": null
+      },
+      {
+       "name": "Sandstede, Julie",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 33546,
+       "expenditures": null
+      }
+     ]
+    },
+    "6B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Matasich, Matt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3585,
+       "expenditures": null
+      },
+      {
+       "name": "Metsa, Jason I",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 32070,
+       "expenditures": null
+      }
+     ]
+    },
+    "7A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Schultz, Jennifer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 24672,
+       "expenditures": null
+      },
+      {
+       "name": "Raddant, Dylan C",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "7B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Barringer, Cody",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 488,
+       "expenditures": null
+      },
+      {
+       "name": "Olson, Elizabeth (Liz)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 29566.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "8A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Holl, C J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12382.74,
+       "expenditures": null
+      },
+      {
+       "name": "Nornes, Larry (Bud)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13958,
+       "expenditures": null
+      }
+     ]
+    },
+    "8B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Franson, Mary D",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 63027.31,
+       "expenditures": null
+      },
+      {
+       "name": "Kulp, Gail L",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22974.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "9A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Litts, Meg E",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6541,
+       "expenditures": null
+      },
+      {
+       "name": "Poston, John M",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 24273.23,
+       "expenditures": null
+      }
+     ]
+    },
+    "9B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kresha, Ronald",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29245,
+       "expenditures": null
+      },
+      {
+       "name": "Simmonds, Dustin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6516,
+       "expenditures": null
+      }
+     ]
+    },
+    "10A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Heintzeman, Joshua",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42870,
+       "expenditures": null
+      },
+      {
+       "name": "Nystrom, Quinn",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 38872.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "10B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lueck, Dale K",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 25674,
+       "expenditures": null
+      },
+      {
+       "name": "Wagner, Erin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 27579.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "11A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sundin, Mike",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22560,
+       "expenditures": null
+      },
+      {
+       "name": "Line, Michael J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7800,
+       "expenditures": null
+      }
+     ]
+    },
+    "11B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Rarick, Jason",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40969,
+       "expenditures": null
+      },
+      {
+       "name": "Jones, Thomas E",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 25515.23,
+       "expenditures": null
+      }
+     ]
+    },
+    "12A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Backer, Jeff W, Jr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 86948.93,
+       "expenditures": null
+      },
+      {
+       "name": "McNamar, Jay",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 39711.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "12B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Anderson, Paul H",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 25135.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "13A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Howe, Jeffrey R",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 23245,
+       "expenditures": null
+      },
+      {
+       "name": "Buckvold, Anne",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 23598.64,
+       "expenditures": null
+      }
+     ]
+    },
+    "13B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Crouse, Matthew Franklin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4455,
+       "expenditures": null
+      }
+     ]
+    },
+    "14A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Theis, Tama L",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 45838.28,
+       "expenditures": null
+      },
+      {
+       "name": "Putnam, Aric",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22446.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "14B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dorholt, Zachary (Zach)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 71627.99,
+       "expenditures": null
+      },
+      {
+       "name": "Knoblach, Jim",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 147332.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "15A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Erickson, Sondra",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26480,
+       "expenditures": null
+      },
+      {
+       "name": "Lestrud, Kent",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11916.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "15B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Newberger, Jim W",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29840.25,
+       "expenditures": null
+      },
+      {
+       "name": "Scapanski, Karla Jean",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9835,
+       "expenditures": null
+      }
+     ]
+    },
+    "16A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Swedzinski, Chris",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34877.5,
+       "expenditures": null
+      },
+      {
+       "name": "Kruse, Allen (Al)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10401.98,
+       "expenditures": null
+      }
+     ]
+    },
+    "16B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Torkelson, Paul M",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41865,
+       "expenditures": null
+      },
+      {
+       "name": "Grossenburg, Austin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5945,
+       "expenditures": null
+      }
+     ]
+    },
+    "17A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Falk, Andrew J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 63368,
+       "expenditures": null
+      },
+      {
+       "name": "Miller, Tim A",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 57439,
+       "expenditures": null
+      }
+     ]
+    },
+    "17B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Baker, David (Dave)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 77597.16,
+       "expenditures": null
+      },
+      {
+       "name": "Sawatzky, Mary M",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 68347,
+       "expenditures": null
+      }
+     ]
+    },
+    "18A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Urdahl, Dean L",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27645,
+       "expenditures": null
+      }
+     ]
+    },
+    "18B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gruenhagen, Glenn H",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37489.62,
+       "expenditures": null
+      },
+      {
+       "name": "Mosel, Darrel H",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14344.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "19A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Johnson, Clark P",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 34185,
+       "expenditures": null
+      },
+      {
+       "name": "Spears, Kim W",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9448.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "19B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Considine, Jack (John)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22775,
+       "expenditures": null
+      },
+      {
+       "name": "Isakson, Adam",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1986.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "20A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Vogel, Bob",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28540,
+       "expenditures": null
+      },
+      {
+       "name": "Connelly, James (Jim) D",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11525,
+       "expenditures": null
+      }
+     ]
+    },
+    "20B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bly, David H",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 34582,
+       "expenditures": null
+      },
+      {
+       "name": "Wells, Aramis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18341.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "21A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bayley, Lisa Pritchard",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 68057,
+       "expenditures": null
+      },
+      {
+       "name": "Haley, Barbara Ann May",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 58281,
+       "expenditures": null
+      }
+     ]
+    },
+    "21B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Drazkowski, Steven J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30091,
+       "expenditures": null
+      },
+      {
+       "name": "Diesslin, Elise",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9200,
+       "expenditures": null
+      }
+     ]
+    },
+    "22A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Schomacker, Joe",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34912.5,
+       "expenditures": null
+      },
+      {
+       "name": "Woods, Laura",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2865,
+       "expenditures": null
+      }
+     ]
+    },
+    "22B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hamilton, Rod",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24605,
+       "expenditures": null
+      },
+      {
+       "name": "Kruse, Kirby G",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9043.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "23A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gunther, Robert C",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 38170,
+       "expenditures": null
+      },
+      {
+       "name": "Huntley, Zac",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9580,
+       "expenditures": null
+      }
+     ]
+    },
+    "23B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cornish, Anthony (Tony) J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37285,
+       "expenditures": null
+      },
+      {
+       "name": "Haseman, Joshua",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16078.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "24A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cashman, Beverly J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 44863.5,
+       "expenditures": null
+      },
+      {
+       "name": "Petersburg, John",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37106.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "24B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Daniels, Brian T",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 43075.94,
+       "expenditures": null
+      },
+      {
+       "name": "Fritz, Patti",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 36080,
+       "expenditures": null
+      }
+     ]
+    },
+    "25A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Quam, Duane R, Jr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12606.18,
+       "expenditures": null
+      },
+      {
+       "name": "Walbruch, Linda (Wally)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11080.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "25B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sauke, Duane",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 33360,
+       "expenditures": null
+      },
+      {
+       "name": "Bradley, Fran",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 43781,
+       "expenditures": null
+      }
+     ]
+    },
+    "26A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Liebling, Tina",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 30771,
+       "expenditures": null
+      },
+      {
+       "name": "Waggoner, Will",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4955,
+       "expenditures": null
+      }
+     ]
+    },
+    "26B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pierson, Nels T, III",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20881,
+       "expenditures": null
+      },
+      {
+       "name": "Austinson, John Wayne",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21329.34,
+       "expenditures": null
+      }
+     ]
+    },
+    "27A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bennett, Peggy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 60799.4,
+       "expenditures": null
+      },
+      {
+       "name": "Schindler, Gary",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 24323.56,
+       "expenditures": null
+      }
+     ]
+    },
+    "27B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Poppe, Jeanne E",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 29112.12,
+       "expenditures": null
+      },
+      {
+       "name": "Schminke, Dennis R",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17720,
+       "expenditures": null
+      }
+     ]
+    },
+    "28A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pelowski Jr, Gene P",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 26065,
+       "expenditures": null
+      },
+      {
+       "name": "Pace, Adam",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "28B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Davids, Gregory M",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 106287,
+       "expenditures": null
+      },
+      {
+       "name": "Trehus, Thomas",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 45255,
+       "expenditures": null
+      }
+     ]
+    },
+    "29A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "McDonald, Joseph (Joe)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22865,
+       "expenditures": null
+      },
+      {
+       "name": "Phillips, Cortney",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8364.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "29B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kilburn, Steve",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6675.72,
+       "expenditures": null
+      }
+     ]
+    },
+    "30A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Zerwas, Nicholas",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 46040,
+       "expenditures": null
+      },
+      {
+       "name": "Hamlin, Sarah L",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3532.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "30B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lucero, Eric",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34422.84,
+       "expenditures": null
+      },
+      {
+       "name": "Fernandez, Margaret",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7483.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "31A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Daudt, Kurt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 98885,
+       "expenditures": null
+      },
+      {
+       "name": "Udvig, Sarah R",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15710,
+       "expenditures": null
+      }
+     ]
+    },
+    "31B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bahr, Calvin (Cal) K",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27031.82,
+       "expenditures": null
+      },
+      {
+       "name": "Larson, Susan (Sue) L",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3190,
+       "expenditures": null
+      }
+     ]
+    },
+    "32A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gammel, Paul",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10006.82,
+       "expenditures": null
+      },
+      {
+       "name": "Johnson, Brian L",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27040,
+       "expenditures": null
+      }
+     ]
+    },
+    "33A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hertaus, Jerome Allan (Jerry)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16256.67,
+       "expenditures": null
+      },
+      {
+       "name": "Thomas, Norrie A",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16846,
+       "expenditures": null
+      }
+     ]
+    },
+    "33B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pugh, Cynthia (Cindy) L",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13885,
+       "expenditures": null
+      },
+      {
+       "name": "Brothen, Brad",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6440,
+       "expenditures": null
+      }
+     ]
+    },
+    "34A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Peppin, Joyce",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40407.75,
+       "expenditures": null
+      },
+      {
+       "name": "Craig, Dave",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4054.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "34B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Smith, Dennis J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 56043,
+       "expenditures": null
+      },
+      {
+       "name": "Bahner, Kristin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5570,
+       "expenditures": null
+      }
+     ]
+    },
+    "35A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hillebregt, Andy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5915,
+       "expenditures": null
+      },
+      {
+       "name": "Whelan, Abigail",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19329.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "35B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Scott, Peggy Sue",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27853,
+       "expenditures": null
+      },
+      {
+       "name": "Volkenant, Wesley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13382.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "36A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Uglem, Mark W",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19085,
+       "expenditures": null
+      },
+      {
+       "name": "Parker, Kevin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9870,
+       "expenditures": null
+      }
+     ]
+    },
+    "36B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Crema, Peter L, Jr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23425,
+       "expenditures": null
+      },
+      {
+       "name": "Hortman, Melissa",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 70331.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "37A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Koegel, Erin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28123.34,
+       "expenditures": null
+      },
+      {
+       "name": "McCormick, Brian",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Wilder, Anthony",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8144.59,
+       "expenditures": null
+      }
+     ]
+    },
+    "37B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Witt, Susan D",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 47685,
+       "expenditures": null
+      },
+      {
+       "name": "West, Nolan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20398.42,
+       "expenditures": null
+      }
+     ]
+    },
+    "38A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Runbeck, Linda",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34110,
+       "expenditures": null
+      },
+      {
+       "name": "Fogarty, Kevin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8908.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "38B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dean, Matthew",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 57840,
+       "expenditures": null
+      },
+      {
+       "name": "Wazlawik, Ami",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16465.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "39A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dettmer, Bob P",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9060,
+       "expenditures": null
+      },
+      {
+       "name": "Anderson, Jody W",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11721,
+       "expenditures": null
+      }
+     ]
+    },
+    "39B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lohmer, Kathleen M",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 46687.72,
+       "expenditures": null
+      },
+      {
+       "name": "Kantrud, (Hugh) Alan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 36630.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "40A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Nelson, Michael V",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 23670,
+       "expenditures": null
+      }
+     ]
+    },
+    "40B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hilstrom, Debra",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 33380,
+       "expenditures": null
+      },
+      {
+       "name": "Marvin, Mali",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3048,
+       "expenditures": null
+      }
+     ]
+    },
+    "41A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bernardy, Connie",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 21066.63,
+       "expenditures": null
+      },
+      {
+       "name": "Evanson, Ryan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "41B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kunesh-Podein, Mary",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20410.12,
+       "expenditures": null
+      },
+      {
+       "name": "Pike, Camden J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6568.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "42A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jessup, Randy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 29642,
+       "expenditures": null
+      },
+      {
+       "name": "Yarusso, Barbara (Barb)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 32045,
+       "expenditures": null
+      }
+     ]
+    },
+    "42B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Becker-Finn, Jamie",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 44480.99,
+       "expenditures": null
+      },
+      {
+       "name": "Nelson, Tracy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4928.57,
+       "expenditures": null
+      }
+     ]
+    },
+    "43A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Fischer, Peter M",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 37572,
+       "expenditures": null
+      },
+      {
+       "name": "Cardinal, Robert (Bob) J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10975,
+       "expenditures": null
+      }
+     ]
+    },
+    "43B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lillie, Leon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 16050,
+       "expenditures": null
+      },
+      {
+       "name": "Hansen, Nathan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "44A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Anderson, Sarah L",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 36347,
+       "expenditures": null
+      },
+      {
+       "name": "Klevorn, Virginia",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 68066,
+       "expenditures": null
+      }
+     ]
+    },
+    "44B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Applebaum, Jon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 94940,
+       "expenditures": null
+      },
+      {
+       "name": "Meier, Patti",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 33108.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "45A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Carlson, Lyndon R",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 35843,
+       "expenditures": null
+      },
+      {
+       "name": "Lieberman, Richard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8945,
+       "expenditures": null
+      }
+     ]
+    },
+    "45B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Freiberg, Mike",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 26070.9,
+       "expenditures": null
+      },
+      {
+       "name": "Wetzker, Alma J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2677.34,
+       "expenditures": null
+      }
+     ]
+    },
+    "46A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Flanagan, Peggy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 38935.9,
+       "expenditures": null
+      },
+      {
+       "name": "Taylor, Anne",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9985,
+       "expenditures": null
+      }
+     ]
+    },
+    "46B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Youakim, Cheryl",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 30480,
+       "expenditures": null
+      },
+      {
+       "name": "Bjornson, Bryan P",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 125,
+       "expenditures": null
+      }
+     ]
+    },
+    "47A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Nash, Jim",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41398,
+       "expenditures": null
+      },
+      {
+       "name": "White, Sean",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3895,
+       "expenditures": null
+      }
+     ]
+    },
+    "47B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hoppe, Joe",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21950,
+       "expenditures": null
+      },
+      {
+       "name": "Montemayor, Jane",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1895,
+       "expenditures": null
+      }
+     ]
+    },
+    "48A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pryor, Laurie",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 79569.99,
+       "expenditures": null
+      },
+      {
+       "name": "Shapiro, Mary M",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 29614,
+       "expenditures": null
+      }
+     ]
+    },
+    "48B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Loon, Jenifer W",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27405,
+       "expenditures": null
+      },
+      {
+       "name": "Sherlock, Ben",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7475,
+       "expenditures": null
+      }
+     ]
+    },
+    "49A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Anselmo, Dario Arthur",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 95518,
+       "expenditures": null
+      },
+      {
+       "name": "Erhardt, Ronnie (Ron) P",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 90230.39,
+       "expenditures": null
+      }
+     ]
+    },
+    "49B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Rosenthal, Paul",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 50505,
+       "expenditures": null
+      },
+      {
+       "name": "Rymer, Maxwell (Max)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 55408.97,
+       "expenditures": null
+      }
+     ]
+    },
+    "50A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Slocum, Linda J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 10290,
+       "expenditures": null
+      },
+      {
+       "name": "Johnson, Tim",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "50B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Anderson, Chad D",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23791,
+       "expenditures": null
+      },
+      {
+       "name": "Carlson, (Robert) Andrew",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28015,
+       "expenditures": null
+      }
+     ]
+    },
+    "51A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Masin, Sandra A",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 37977,
+       "expenditures": null
+      },
+      {
+       "name": "Gerten, Brad",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4197,
+       "expenditures": null
+      }
+     ]
+    },
+    "51B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Halverson, Laurie",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 43560,
+       "expenditures": null
+      },
+      {
+       "name": "Hammond, Pat",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4045.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "52A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hansen, Richard (Rick) J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 35299.85,
+       "expenditures": null
+      },
+      {
+       "name": "Sachi, Larry",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "52B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Barr, Regina",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 33265,
+       "expenditures": null
+      }
+     ]
+    },
+    "53A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ward, JoAnn",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 32582,
+       "expenditures": null
+      },
+      {
+       "name": "Turonie, Andrew (Andy)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7805,
+       "expenditures": null
+      }
+     ]
+    },
+    "53B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Fenton, Kelly A",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44353,
+       "expenditures": null
+      },
+      {
+       "name": "Gillespie, Alberder",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28291.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "54A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Franke, Keith J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12510,
+       "expenditures": null
+      },
+      {
+       "name": "Peterson, Jennifer (Jen) E",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 25947,
+       "expenditures": null
+      }
+     ]
+    },
+    "54B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Slaten, Donald (Don)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 38674.5,
+       "expenditures": null
+      },
+      {
+       "name": "Jurgens, Tony",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 37950.23,
+       "expenditures": null
+      }
+     ]
+    },
+    "55A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Loonan, Robert (Bob) J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29585,
+       "expenditures": null
+      },
+      {
+       "name": "Hernandez, Mary",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18466,
+       "expenditures": null
+      }
+     ]
+    },
+    "55B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Albright, Tony",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18420,
+       "expenditures": null
+      },
+      {
+       "name": "Haakenson, Cecilia (Ceci)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7305,
+       "expenditures": null
+      }
+     ]
+    },
+    "56A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Christensen, Drew (Andrew)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26000.99,
+       "expenditures": null
+      },
+      {
+       "name": "Christiansen, Jared Gary",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6228.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "56B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Peterson, Roz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67014.6,
+       "expenditures": null
+      },
+      {
+       "name": "Port, Lindsey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 91077.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "57A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Maye Quade, Erin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 68615.02,
+       "expenditures": null
+      },
+      {
+       "name": "Jimenez-Hopper, Ali",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25060,
+       "expenditures": null
+      }
+     ]
+    },
+    "57B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Wills, Anna Christa",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 50598,
+       "expenditures": null
+      },
+      {
+       "name": "Huot, John Duffy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 25140.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "58A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Koznick, Jon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37228,
+       "expenditures": null
+      },
+      {
+       "name": "Weikle, LeAnn",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16269,
+       "expenditures": null
+      }
+     ]
+    },
+    "58B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Garofalo, Patrick",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44592,
+       "expenditures": null
+      },
+      {
+       "name": "Vagts, Marla",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13052,
+       "expenditures": null
+      }
+     ]
+    },
+    "59A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lee, Fue",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 54848.5,
+       "expenditures": null
+      },
+      {
+       "name": "Newville, Jessica",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10960,
+       "expenditures": null
+      }
+     ]
+    },
+    "59B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dehn, Raymond",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 23551,
+       "expenditures": null
+      },
+      {
+       "name": "Martin, Margaret E",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4784.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "60A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Loeffler, Diane",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 11415,
+       "expenditures": null
+      },
+      {
+       "name": "Barnett, Gabe",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "60B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Askar, Abdimalik Mohamed",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 389,
+       "expenditures": null
+      },
+      {
+       "name": "Omar, Ilhan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 123121.68,
+       "expenditures": null
+      }
+     ]
+    },
+    "61A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hornstein, Frank",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 16935,
+       "expenditures": null
+      },
+      {
+       "name": "Rosenblatt, Brian",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1010,
+       "expenditures": null
+      }
+     ]
+    },
+    "61B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Thissen, Paul C",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 125719.17,
+       "expenditures": null
+      },
+      {
+       "name": "Gallagher, Tom",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "62A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Clark, Karen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 18021,
+       "expenditures": null
+      },
+      {
+       "name": "Leiter, Claire",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2308,
+       "expenditures": null
+      }
+     ]
+    },
+    "62B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Allen, Susan L",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3600,
+       "expenditures": null
+      }
+     ]
+    },
+    "63A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Davnie, Jim",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7945,
+       "expenditures": null
+      },
+      {
+       "name": "Bragg, Kyle",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 730,
+       "expenditures": null
+      }
+     ]
+    },
+    "63B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Wagenius, Jean",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 10012.66,
+       "expenditures": null
+      },
+      {
+       "name": "Pafko, Frank",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "64A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Murphy, Erin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 120518,
+       "expenditures": null
+      },
+      {
+       "name": "Horan, Riley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3909.34,
+       "expenditures": null
+      }
+     ]
+    },
+    "64B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pinto, David P",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 44534,
+       "expenditures": null
+      },
+      {
+       "name": "Dively, Emory K",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 575,
+       "expenditures": null
+      }
+     ]
+    },
+    "65A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Moran, Rena L",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 29670,
+       "expenditures": null
+      },
+      {
+       "name": "Giordana, Monique",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5531,
+       "expenditures": null
+      }
+     ]
+    },
+    "65B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mariani, Carlos",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 9750,
+       "expenditures": null
+      },
+      {
+       "name": "Stokely, Margaret Mary",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "66A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hausman, Alice",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 15505,
+       "expenditures": null
+      },
+      {
+       "name": "Heyer, Jon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4415,
+       "expenditures": null
+      }
+     ]
+    },
+    "66B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lesch, John",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 15806,
+       "expenditures": null
+      }
+     ]
+    },
+    "67A": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mahoney, Timothy C",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22700,
+       "expenditures": null
+      },
+      {
+       "name": "Livingston, Andrew",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 920,
+       "expenditures": null
+      }
+     ]
+    },
+    "67B": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Johnson, Sheldon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 17125,
+       "expenditures": null
+      },
+      {
+       "name": "Thompson, Lisa",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3729,
+       "expenditures": null
+      },
+      {
+       "name": "Weverka, Joseph",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Fontaine, Kip O'dean",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 49670,
+       "expenditures": null
+      },
+      {
+       "name": "Johnson, Mark T",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 37299.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Skoe, Rod",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 48500,
+       "expenditures": null
+      },
+      {
+       "name": "Utke, Paul J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 22530.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bakk, Thomas M",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 99110,
+       "expenditures": null
+      },
+      {
+       "name": "Havlick, Jennifer L",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 150,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Eken, Kent",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 65490,
+       "expenditures": null
+      },
+      {
+       "name": "Leiman, James",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 28182.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Saxhaug, Tom",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 41055,
+       "expenditures": null
+      },
+      {
+       "name": "Eichorn, Justin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14750,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tomassoni, David J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 72115.22,
+       "expenditures": null
+      },
+      {
+       "name": "Tomczak, Skeeter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8486,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bergstrom, Donna",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9881.05,
+       "expenditures": null
+      },
+      {
+       "name": "Simonson, Erik",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 26996.83,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ingebrigtsen, William (Bill) G",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 46515,
+       "expenditures": null
+      },
+      {
+       "name": "Olson, Shawn",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17719.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gazelka, Paul",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 58486.43,
+       "expenditures": null
+      },
+      {
+       "name": "Weinerman, Jason",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10716,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ruud, Carrie",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26465,
+       "expenditures": null
+      },
+      {
+       "name": "Stenglein, Tiffany E",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 23511.74,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lourey, Anthony",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 35587,
+       "expenditures": null
+      },
+      {
+       "name": "Cummins, Michael",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1215,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Westrom, Torrey N",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 77064.24,
+       "expenditures": null
+      },
+      {
+       "name": "Hinrichs, Russ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22710,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Fischbach, Michelle",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19703.21,
+       "expenditures": null
+      },
+      {
+       "name": "Willemsen, Michael",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10605.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Wolgamott, Daniel (Dan)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 61775.16,
+       "expenditures": null
+      },
+      {
+       "name": "Relph, Jerry O",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 52560,
+       "expenditures": null
+      },
+      {
+       "name": "Zilberg, Steven",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Brown, Chilah",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7097,
+       "expenditures": null
+      },
+      {
+       "name": "Mathews, Andrew",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20876,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dahms, Gary H",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 69104.07,
+       "expenditures": null
+      },
+      {
+       "name": "Kanne, James",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15108.99,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Koenen, Lyle J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 46788.88,
+       "expenditures": null
+      },
+      {
+       "name": "Lang, Andrew R",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 36642.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Newman, Scott J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 45342.35,
+       "expenditures": null
+      },
+      {
+       "name": "Wilde, Amy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14372.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dailey, Willa",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 22370,
+       "expenditures": null
+      },
+      {
+       "name": "Frentz, Nick Andrew",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 73098,
+       "expenditures": null
+      },
+      {
+       "name": "Wernsing, Shane",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dahle, Kevin L",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 55232.8,
+       "expenditures": null
+      },
+      {
+       "name": "Draheim, Rich",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 44153,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Goggin, Michael P",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 39550,
+       "expenditures": null
+      },
+      {
+       "name": "Schmit, Matt P",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 52520,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Weber, Bill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41627.5,
+       "expenditures": null
+      },
+      {
+       "name": "Abrahamson, Brian",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10983.37,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Rosen, Julie A",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37190,
+       "expenditures": null
+      },
+      {
+       "name": "Lake, Barbara Ann (Barb)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4452.83,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jensen, Vicki",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 62193.02,
+       "expenditures": null
+      },
+      {
+       "name": "Jasinski, John R",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 56259.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Senjem, David H",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 52761.8,
+       "expenditures": null
+      },
+      {
+       "name": "Amorosia, Dale",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6614.72,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Nelson, Carla J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 72976.25,
+       "expenditures": null
+      },
+      {
+       "name": "Wright, Richard (Rich)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 41458.66,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sparks, Daniel",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 40233,
+       "expenditures": null
+      },
+      {
+       "name": "Dornink, Gene",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27096.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Miller, Jeremy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39290,
+       "expenditures": null
+      },
+      {
+       "name": "Pieper, Jon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17329.76,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Anderson, Bruce D",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20933.75,
+       "expenditures": null
+      },
+      {
+       "name": "Kittok, Janice Holter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14945.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kiffmeyer, Mary",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39720,
+       "expenditures": null
+      },
+      {
+       "name": "LaCroix, P J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1210,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Benson, Michelle R",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24267.01,
+       "expenditures": null
+      },
+      {
+       "name": "Englund, Ricky",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10723,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Koran, Mark",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25458,
+       "expenditures": null
+      },
+      {
+       "name": "Nelson, Tim",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 86109.76,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Osmek, David",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 46780,
+       "expenditures": null
+      },
+      {
+       "name": "Nygard, Jay",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Pugh, Sherrie",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 23020,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Limmer, Warren",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 33040,
+       "expenditures": null
+      },
+      {
+       "name": "Westlin, Bonnie S",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20222,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Abeler, Jim",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 58900.96,
+       "expenditures": null
+      },
+      {
+       "name": "Johnson, Roger",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6822.37,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hoffman, John A",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 74208.17,
+       "expenditures": null
+      },
+      {
+       "name": "Lunde, Jeffrey J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26690,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sanford, Brad",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15899,
+       "expenditures": null
+      },
+      {
+       "name": "Newton, Jerry",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 66691.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Chamberlain, Roger C",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27982,
+       "expenditures": null
+      },
+      {
+       "name": "Davern, Patrick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14624.29,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Housley, Karin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 69860,
+       "expenditures": null
+      },
+      {
+       "name": "Hakanson, Sten",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12370.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Eaton, Chris A",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 25950,
+       "expenditures": null
+      },
+      {
+       "name": "Marvin, Robert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5930,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Laine, Carolyn",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 39528.54,
+       "expenditures": null
+      },
+      {
+       "name": "Johnson, Gary R",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sina, Candice (Candy) M",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23545,
+       "expenditures": null
+      },
+      {
+       "name": "Isaacson, Jason (Ike)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 43832.11,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Wiger, Charles (Chuck) W",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 42060,
+       "expenditures": null
+      },
+      {
+       "name": "Belflower, Christopher",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1996.8,
+       "expenditures": null
+      },
+      {
+       "name": "Zick, Robert (Bob) S",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2302.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Anderson, Paul",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 112227,
+       "expenditures": null
+      },
+      {
+       "name": "Calvert, Deborah (Deb)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 86290,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Rest, Ann H",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 39370,
+       "expenditures": null
+      },
+      {
+       "name": "Bruins, Roxana",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8550,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Latz, Ronald S",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 41886,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jensen, Scott",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 77262,
+       "expenditures": null
+      },
+      {
+       "name": "Scarborough, Darryl",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4627.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hann, David",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 84965.8,
+       "expenditures": null
+      },
+      {
+       "name": "Cwodzinski, Steve",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 78719.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Franzen, Melisa Lopez",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 79831.66,
+       "expenditures": null
+      },
+      {
+       "name": "Lehmann, Michael (Mike) E",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 30302,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Wiklund, Melissa Halvorson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 36665,
+       "expenditures": null
+      },
+      {
+       "name": "Johnson, Kirsten",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Carlson, James",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 63551.33,
+       "expenditures": null
+      },
+      {
+       "name": "Lake, Victor",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 35982.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Klein, Matthew D",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 58897.5,
+       "expenditures": null
+      },
+      {
+       "name": "Misukanis, Mark",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15670,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kent, Susan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 50338.88,
+       "expenditures": null
+      },
+      {
+       "name": "Wahlgren, Sharna A",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 42584.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "54": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Holmstadt, Leilani",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14020,
+       "expenditures": null
+      },
+      {
+       "name": "Schoen, Dan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 41029.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pratt, Eric",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44155,
+       "expenditures": null
+      },
+      {
+       "name": "Ali, Ali C",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5370,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hall, Dan D",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 52178,
+       "expenditures": null
+      },
+      {
+       "name": "Sterner, Phillip M",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 41903.17,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Campbell, Cory",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25953,
+       "expenditures": null
+      },
+      {
+       "name": "Clausen, Greg",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 55940,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Little, Matt",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 90931.22,
+       "expenditures": null
+      },
+      {
+       "name": "Pitcher, Tim",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 47222.13,
+       "expenditures": null
+      }
+     ]
+    },
+    "59": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Champion, Bobby Joe",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 53673.33,
+       "expenditures": null
+      },
+      {
+       "name": "Carnahan, Jennifer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15831,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dziedzic, Kari (Karen)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 40644,
+       "expenditures": null
+      },
+      {
+       "name": "Super, Martin J",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1298,
+       "expenditures": null
+      }
+     ]
+    },
+    "61": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dibble, D Scott",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 48942,
+       "expenditures": null
+      },
+      {
+       "name": "Carney Jr, Bob Again",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "62": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hayden, Jeffrey (Jeff)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 55953.33,
+       "expenditures": null
+      },
+      {
+       "name": "Lundeen, Bruce",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "63": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ray, Patricia Torres",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 14990,
+       "expenditures": null
+      },
+      {
+       "name": "Moey, Ron",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "64": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cohen, Richard J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 64025,
+       "expenditures": null
+      },
+      {
+       "name": "Baird, Ian",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 370,
+       "expenditures": null
+      }
+     ]
+    },
+    "65": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pappas, Sandra L",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22975,
+       "expenditures": null
+      },
+      {
+       "name": "Delmont, Jason",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "66": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Marty, John J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 24287,
+       "expenditures": null
+      },
+      {
+       "name": "Jass, Carolyn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2248,
+       "expenditures": null
+      }
+     ]
+    },
+    "67": {
+     "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hawj, Foung",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 127674.1,
+       "expenditures": null
+      },
+      {
+       "name": "Weidell, Krysia",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
   "2018": {
    "house": {
     "10A": {
@@ -441274,877 +445656,801 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2016": {
    "house": {
     "1": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Young, Byron",
+       "name": "Mark Nakashima",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 62818.51,
+       "expenditures": null
+      },
+      {
+       "name": "Byron Young",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 994,
        "expenditures": null
-      },
-      {
-       "name": "Nakashima, Mark",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 54683.51,
-       "expenditures": null
       }
      ]
     },
     "2": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Tsuji, Clifton",
+       "name": "Clifton Tsuji",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 39901.97,
-       "expenditures": null
-      },
-      {
-       "name": "Manipol-Larson, Grace",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 825,
+       "contributions": 56095.89,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Pisciotta, Kealoha",
+       "name": "Gregory Arianoff",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 3240,
+       "contributions": 0,
        "expenditures": null
       },
       {
-       "name": "Onishi, Richard",
+       "name": "Richard Onishi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 29444.01,
+       "contributions": 42432.74,
+       "expenditures": null
+      },
+      {
+       "name": "Kealoha Pisciotta",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 5665,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "San Buenaventura, Joy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 19550,
+       "name": "Luana Jones",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 270,
+       "expenditures": null
+      },
+      {
+       "name": "Moke Stephens",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Creagan, Richard",
+       "name": "Richard Creagan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 16050,
+       "contributions": 17300,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Last",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Pratt, Bruce",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 1300,
-       "expenditures": null
-      },
-      {
-       "name": "Lowen, Nicole",
+       "name": "Nicole Lowen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 37181,
+       "contributions": 44189,
+       "expenditures": null
+      },
+      {
+       "name": "Bruce Pratt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2112,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Evans, Cindy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 31220,
-       "expenditures": null
-      },
-      {
-       "name": "Coakley, Jeffrey",
+       "name": "Jeffrey Coakley",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 2350,
+       "contributions": 3385,
+       "expenditures": null
+      },
+      {
+       "name": "Cindy Evans",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 36435,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Souki, Joseph",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 118228,
-       "expenditures": null
-      },
-      {
-       "name": "Rebolledo, Gilbert",
+       "name": "Gilbert Rebolledo",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 430,
+       "contributions": 1750.2,
+       "expenditures": null
+      },
+      {
+       "name": "Joseph Souki",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 135043,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Woodson, Justin",
+       "name": "Justin Woodson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 33400,
-       "expenditures": null
-      }
-     ]
-    },
-    "10": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "McKelvey, Angus",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 46542.34,
+       "contributions": 36275,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Pekus, Daniel",
+       "name": "Daniel Pekus",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1635,
+       "contributions": 3505,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Yamashita, Kyle",
+       "name": "Kyle Yamashita",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 32825,
+       "contributions": 41600,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "DeCoite, Lynn",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 78519.13,
-       "expenditures": null
-      },
-      {
-       "name": "Nikhilananda, Nick",
+       "name": "Nick Nikhilananda",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 950,
+       "contributions": 4221.21,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Combs, Sandra",
+       "name": "Sandra Combs",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 28450,
+       "contributions": 29160,
+       "expenditures": null
+      },
+      {
+       "name": "Nadine Nakamura",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 54619.59,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Tokioka, James",
+       "name": "James Tokioka",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 52700,
+       "contributions": 61122.8,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Franks, Victoria",
+       "name": "Victoria Franks",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3139.31,
+       "contributions": 4355.43,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Ward, Gene",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 36601,
+       "name": "Karlen Ross",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7970,
        "expenditures": null
       },
       {
-       "name": "Ross, Karlen",
+       "name": "Gene Ward",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 45006,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mark Hashem",
        "party": "D",
        "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 32320,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Stephen Bischoff",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 755,
+       "expenditures": null
+      },
+      {
+       "name": "Anthony Higa",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 6150,
+       "expenditures": null
+      },
+      {
+       "name": "Bertrand Kobayashi",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 13900,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Julia Allen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8907,
+       "expenditures": null
+      },
+      {
+       "name": "Calvin Say",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 79310.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Scott Nishimoto",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 47114.11,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tom Brower",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 34000,
+       "expenditures": null
+      },
+      {
+       "name": "Kathryn Henski",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7249.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Isaac Choy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 57112.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Della Belatti",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 56780,
+       "expenditures": null
+      },
+      {
+       "name": "Larry Fenton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 806.01,
+       "expenditures": null
+      },
+      {
+       "name": "Michelle Tippens",
+       "party": "O",
+       "partyLabel": "Other",
        "incumbent": false,
        "contributions": 6098,
        "expenditures": null
       }
      ]
     },
-    "18": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Hashem, Mark",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 26930,
-       "expenditures": null
-      }
-     ]
-    },
-    "19": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Higa, Anthony",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 6600,
-       "expenditures": null
-      },
-      {
-       "name": "Kobayashi, Bertrand",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 11600,
-       "expenditures": null
-      },
-      {
-       "name": "Bischoff, Stephen",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 200,
-       "expenditures": null
-      }
-     ]
-    },
-    "20": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Allen, Julia",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 4487,
-       "expenditures": null
-      },
-      {
-       "name": "Say, Calvin",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 61050,
-       "expenditures": null
-      }
-     ]
-    },
-    "21": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Nishimoto, Scott",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 39514.11,
-       "expenditures": null
-      }
-     ]
-    },
-    "22": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Brower, Tom",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 31050,
-       "expenditures": null
-      },
-      {
-       "name": "Henski, Kathryn",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 5926.05,
-       "expenditures": null
-      }
-     ]
-    },
-    "23": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Choy, Isaac",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 45350,
-       "expenditures": null
-      }
-     ]
-    },
-    "24": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Tippens, Michelle",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 5900,
-       "expenditures": null
-      },
-      {
-       "name": "Belatti, Della",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 47265,
-       "expenditures": null
-      },
-      {
-       "name": "Fenton, Larry",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 756.01,
-       "expenditures": null
-      }
-     ]
-    },
     "25": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Luke, Sylvia",
+       "name": "Sylvia Luke",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 206232.03,
+       "contributions": 215642.03,
        "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Saiki, Scott",
+       "name": "Scott Saiki",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 80209.15,
+       "contributions": 84804.15,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Ohno, Takashi",
+       "name": "Takashi Ohno",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 29777.75,
+       "contributions": 38129.33,
        "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Mizuno, John",
+       "name": "John Mizuno",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 40395,
+       "contributions": 50140,
        "expenditures": null
       }
      ]
     },
     "29": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Coakley, Kaiwiola",
+       "name": "Kaiwiola Coakley",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 4500,
-       "expenditures": null
-      },
-      {
-       "name": "Holt, Daniel",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 35989.74,
+       "contributions": 5980,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Cachola, Romy",
+       "name": "Romy Cachola",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 15125,
+       "contributions": 19060,
        "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Ching, Eric",
+       "name": "Eric Ching",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 9968.8,
+       "contributions": 11572.8,
        "expenditures": null
       },
       {
-       "name": "Johanson, Aaron",
+       "name": "Aaron Johanson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 45595,
+       "contributions": 59445,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Ichiyama, Linda",
+       "name": "Linda Ichiyama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 26350,
+       "contributions": 39125,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Agustin, Jaci",
+       "name": "Jaci Agustin",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 21625,
+       "contributions": 27855.12,
        "expenditures": null
       },
       {
-       "name": "Takayama, Gregg",
+       "name": "Gregg Takayama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 26925,
+       "contributions": 35705,
        "expenditures": null
       }
      ]
     },
     "35": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Takumi, Roy",
+       "name": "Roy Takumi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 15395,
+       "contributions": 20170,
        "expenditures": null
       }
      ]
     },
     "36": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Fukumoto, Beth",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 37224.5,
-       "expenditures": null
-      },
-      {
-       "name": "Lee, Marilyn",
+       "name": "Marilyn Lee",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 13900,
+       "contributions": 19523,
        "expenditures": null
       }
      ]
     },
     "37": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Kupukaa, Katherine",
+       "name": "Katherine Kupukaa",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 500,
+       "contributions": 550,
        "expenditures": null
       },
       {
-       "name": "Yamane, Ryan",
+       "name": "Ryan Yamane",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 46175,
-       "expenditures": null
-      }
-     ]
-    },
-    "38": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Aquino, Henry",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 44185,
+       "contributions": 54535,
        "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Cullen, Ty",
+       "name": "Ty Cullen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 50705,
+       "contributions": 58170,
        "expenditures": null
       }
      ]
     },
     "40": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "McDermott, Bob",
+       "name": "Bob McDermott",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 37035.97,
+       "contributions": 51655.97,
        "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "LoPresti, Matthew",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 36308,
-       "expenditures": null
-      },
-      {
-       "name": "Jeremiah, Bryan",
+       "name": "Bryan Jeremiah",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 12804.33,
+       "contributions": 16053.72,
+       "expenditures": null
+      },
+      {
+       "name": "Matthew LoPresti",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 41834.88,
        "expenditures": null
       }
      ]
     },
     "42": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Har, Sharon",
+       "name": "Sharon Har",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 30350,
+       "contributions": 37562.8,
        "expenditures": null
       }
      ]
     },
     "43": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Eli, Stacelynn",
+       "name": "Stacelynn Eli",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 31052.38,
+       "contributions": 0,
        "expenditures": null
       },
       {
-       "name": "Tupola, Andria",
+       "name": "Andria Tupola",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 42786,
-       "expenditures": null
-      }
-     ]
-    },
-    "44": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Gates, Cedric",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 33499.69,
+       "contributions": 57261.16,
        "expenditures": null
       }
      ]
     },
     "45": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Matsumoto, Lauren",
+       "name": "Lauren Matsumoto",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 28270,
+       "contributions": 37385,
        "expenditures": null
       }
      ]
     },
     "46": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Oshiro, Marcus",
+       "name": "Scott Noltie",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Marcus Oshiro",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 21800,
+       "contributions": 26877,
        "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Pouha, Feki",
+       "name": "Feki Pouha",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 16510,
+       "contributions": 19700,
        "expenditures": null
       },
       {
-       "name": "Quinlan, Sean",
+       "name": "Sean Quinlan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 35060.31,
-       "expenditures": null
-      }
-     ]
-    },
-    "48": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Keohokalole, Jarrett",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 28995,
-       "expenditures": null
-      }
-     ]
-    },
-    "49": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Ito, Ken",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 30225,
+       "contributions": 37015.31,
        "expenditures": null
       }
      ]
     },
     "50": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Thielen, Cynthia",
+       "name": "Cynthia Thielen",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 33782,
-       "expenditures": null
-      }
-     ]
-    },
-    "51": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Lee, Christopher",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 42995.84,
+       "contributions": 34707,
        "expenditures": null
       }
      ]
@@ -442152,201 +446458,203 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "2": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Ruderman, Russell",
+       "name": "Frederick Fogel",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Russell Ruderman",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 25044.2,
+       "contributions": 41761.86,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Kouchi, Ron",
+       "name": "Ron Kouchi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 211201.77,
+       "contributions": 313274.37,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Slom, Sam",
+       "name": "Stanley Chang",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 151421.87,
+       "expenditures": null
+      },
+      {
+       "name": "Sam Slom",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 25771.9,
-       "expenditures": null
-      },
-      {
-       "name": "Chang, Stanley",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 135747.22,
-       "expenditures": null
-      }
-     ]
-    },
-    "10": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2016",
-     "candidates": [
-      {
-       "name": "Ihara, Les",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 12903,
-       "expenditures": null
-      },
-      {
-       "name": "Phillips, Arnold",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 12982.63,
+       "contributions": 46388.21,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Taniguchi, Brian",
+       "name": "Kaui Amsterdam",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Brian Taniguchi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 45155,
+       "contributions": 100000,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Rhoads, Karl",
+       "name": "Karl Rhoads",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 125687.62,
+       "contributions": 132539.61,
+       "expenditures": null
+      },
+      {
+       "name": "Rod Tam",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 900,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Kim, Donna",
+       "name": "Donna Kim",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 125850,
+       "contributions": 238788.49,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Wakai, Glenn",
+       "name": "Glenn Wakai",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 83129.52,
+       "contributions": 107024.52,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Fevella, Kurt",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 2200,
-       "expenditures": null
-      },
-      {
-       "name": "Espero, William",
+       "name": "William Espero",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 49045,
+       "contributions": 79490,
+       "expenditures": null
+      },
+      {
+       "name": "Kurt Fevella",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2500,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Gabbard, Mike",
+       "name": "Mike Gabbard",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 38356.2,
+       "contributions": 47971.2,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Dela Cruz, Donovan",
+       "name": "Donovan Dela Cruz",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 220633.56,
+       "contributions": 256075.73,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Nagamine, Robert",
+       "name": "Robert Nagamine",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 8990.95,
+       "contributions": 11882.05,
        "expenditures": null
       },
       {
-       "name": "Thielen, Laura",
+       "name": "Laura Thielen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 31510.5,
+       "contributions": 37314.05,
        "expenditures": null
       }
      ]
@@ -442356,259 +446664,231 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2018": {
    "house": {
     "1": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Nakashima, Mark",
+       "name": "Mark Nakashima",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 46576.21,
+       "contributions": 54936.21,
        "expenditures": null
       }
      ]
     },
     "2": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Manipol-Larson, Grace",
+       "name": "Grace Manipol-Larson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 500,
+       "contributions": 600,
        "expenditures": null
       },
       {
-       "name": "Todd, Christopher",
+       "name": "Christopher Todd",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 48756.75,
+       "contributions": 58760.74,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Onishi, Richard",
+       "name": "Richard Onishi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 47468.2,
-       "expenditures": null
-      }
-     ]
-    },
-    "4": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2018",
-     "candidates": [
-      {
-       "name": "San Buenaventura, Joy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 20275,
+       "contributions": 51523.2,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Creagan, Richard",
+       "name": "Richard Creagan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 17900,
+       "contributions": 19540,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Lowen, Nicole",
+       "name": "Nicole Lowen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 15150,
+       "contributions": 18236.22,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Tarnas, David",
-       "party": "D",
-       "partyLabel": "Democratic",
+       "name": "Thomas Belekanich",
+       "party": "R",
+       "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 47130,
+       "contributions": 0,
        "expenditures": null
-      }
-     ]
-    },
-    "8": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2018",
-     "candidates": [
+      },
       {
-       "name": "Hashimoto, Troy",
+       "name": "David Tarnas",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 36270,
+       "contributions": 54366,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Woodson, Justin",
+       "name": "Justin Woodson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 42200,
+       "contributions": 45225,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Mather, Jennifer",
+       "name": "Jennifer Mather",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 2630,
-       "expenditures": null
-      },
-      {
-       "name": "McKelvey, Angus",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 17200,
+       "contributions": 4704,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Wildberger, Tina",
+       "name": "Tina Wildberger",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 29778.53,
+       "contributions": 33505.29,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Yamashita, Kyle",
+       "name": "Kyle Yamashita",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 69554.92,
+       "contributions": 84035.91,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "DeCoite, Lynn",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 70957.99,
+       "name": "Nick Nikhilananda",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Nakamura, Nadine",
+       "name": "Nadine Nakamura",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 30401.91,
+       "contributions": 41950.91,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Tokioka, James",
+       "name": "James Tokioka",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 43400,
+       "contributions": 47475,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Morikawa, Daynette",
+       "name": "Daynette Morikawa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 42446,
+       "contributions": 47237,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Ward, Gene",
+       "name": "Gene Ward",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 44891,
+       "contributions": 47947,
        "expenditures": null
       },
       {
-       "name": "Yim, Alan",
+       "name": "Alan Yim",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
@@ -442618,365 +446898,323 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "18": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Hashem, Mark",
+       "name": "Mark Hashem",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 18450,
+       "contributions": 23120,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Kobayashi, Bertrand",
+       "name": "Bertrand Kobayashi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 17475,
+       "contributions": 19725,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Say, Calvin",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 51250,
-       "expenditures": null
-      },
-      {
-       "name": "Allen, Julia",
+       "name": "Julia Allen",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3410,
+       "contributions": 7990.5,
+       "expenditures": null
+      },
+      {
+       "name": "Calvin Say",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 56650,
        "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Nishimoto, Scott",
+       "name": "Scott Nishimoto",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 77760.91,
+       "contributions": 81209.91,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Brower, Tom",
+       "name": "Tom Brower",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 20850,
+       "contributions": 22900,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Kobayashi, Dale",
+       "name": "Dale Kobayashi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 44073.24,
+       "contributions": 51878.77,
        "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Belatti, Della",
+       "name": "Della Belatti",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 48750,
+       "contributions": 57725,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Luke, Sylvia",
+       "name": "Sylvia Luke",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 230762.04,
+       "contributions": 233872.04,
        "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Saiki, Scott",
+       "name": "Scott Saiki",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 152530.15,
+       "contributions": 153880.15,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Ohno, Takashi",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 39199.87,
-       "expenditures": null
-      },
-      {
-       "name": "Kealoha-Lindsey, Mela",
+       "name": "Mela Kealoha-Lindsey",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3034.5,
+       "contributions": 4774.51,
+       "expenditures": null
+      },
+      {
+       "name": "Takashi Ohno",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 43769.87,
        "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Mizuno, John",
+       "name": "John Mizuno",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 40750,
-       "expenditures": null
-      }
-     ]
-    },
-    "29": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2018",
-     "candidates": [
-      {
-       "name": "Holt, Daniel",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 36289.29,
+       "contributions": 49200,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Cachola, Romy",
+       "name": "Romy Cachola",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 11250,
+       "contributions": 14016,
        "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Johanson, Aaron",
+       "name": "Aaron Johanson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 63043.64,
+       "contributions": 67068.64,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Ichiyama, Linda",
+       "name": "Linda Ichiyama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 17050,
-       "expenditures": null
-      }
-     ]
-    },
-    "33": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2018",
-     "candidates": [
-      {
-       "name": "Kong, Samuel",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 15611,
+       "contributions": 23308.52,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Takayama, Gregg",
+       "name": "Gregg Takayama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 14400,
+       "contributions": 22205,
        "expenditures": null
       }
      ]
     },
     "35": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Takumi, Roy",
+       "name": "Roy Takumi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 49237.92,
+       "contributions": 54182.92,
        "expenditures": null
       }
      ]
     },
     "36": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Lee, Marilyn",
+       "name": "Marilyn Lee",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 21701,
+       "contributions": 150,
        "expenditures": null
       },
       {
-       "name": "Okimoto, Val",
+       "name": "Val Okimoto",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 40051.27,
+       "contributions": 46080.27,
        "expenditures": null
       }
      ]
     },
     "37": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Smart, Mary",
+       "name": "Mary Smart",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3844.2,
+       "contributions": 5455.4,
        "expenditures": null
       },
       {
-       "name": "Yamane, Ryan",
+       "name": "Ryan Yamane",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 50750,
-       "expenditures": null
-      }
-     ]
-    },
-    "38": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2018",
-     "candidates": [
-      {
-       "name": "Aquino, Henry",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 42725,
+       "contributions": 57505,
        "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Cullen, Ty",
+       "name": "Ty Cullen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 75450,
+       "contributions": 81935,
        "expenditures": null
       }
      ]
     },
     "40": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "McDermott, Bob",
+       "name": "Bob McDermott",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 38901,
+       "contributions": 44974.24,
        "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Fidelibus, Christopher",
+       "name": "Christopher Fidelibus",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -442986,173 +447224,129 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "42": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Har, Sharon",
+       "name": "Sharon Har",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 32124.35,
-       "expenditures": null
-      }
-     ]
-    },
-    "43": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2018",
-     "candidates": [
-      {
-       "name": "Eli, Stacelynn",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 10975.87,
-       "expenditures": null
-      }
-     ]
-    },
-    "44": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2018",
-     "candidates": [
-      {
-       "name": "Gates, Cedric",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 41782.93,
+       "contributions": 36634.35,
        "expenditures": null
       }
      ]
     },
     "45": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Matsumoto, Lauren",
+       "name": "Lauren Matsumoto",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 21650,
+       "contributions": 27695,
        "expenditures": null
       }
      ]
     },
     "46": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Perruso, Amy",
+       "name": "Amy Perruso",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 25426,
-       "expenditures": null
-      },
-      {
-       "name": "Miller, John",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 10711.56,
+       "contributions": 30052,
        "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Quinlan, Sean",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 34500,
-       "expenditures": null
-      },
-      {
-       "name": "Fale, Richard",
+       "name": "Richard Fale",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 6500,
+       "contributions": 6600,
+       "expenditures": null
+      },
+      {
+       "name": "Sean Quinlan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 36850,
        "expenditures": null
       }
      ]
     },
     "48": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Kitagawa, Lisa",
+       "name": "Lisa Kitagawa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 55197.26,
+       "contributions": 63578.26,
        "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Matayoshi, Scot",
+       "name": "Scot Matayoshi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 79403.82,
+       "contributions": 95213.04,
        "expenditures": null
       }
      ]
     },
     "50": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Pregitzer, Micah",
+       "name": "Micah Pregitzer",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 8467.61,
+       "contributions": 9282.61,
        "expenditures": null
       },
       {
-       "name": "Thielen, Cynthia",
+       "name": "Cynthia Thielen",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 30100,
+       "contributions": 31231.22,
        "expenditures": null
       }
      ]
     },
     "51": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Lee, Christopher",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 34431,
-       "expenditures": null
-      },
-      {
-       "name": "Galeai, Noe",
+       "name": "Noe Galeai",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 14978.68,
+       "contributions": 17106.65,
        "expenditures": null
       }
      ]
@@ -443160,201 +447354,201 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "1": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Kahele, Kaialii",
+       "name": "Kimberly Arianoff",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Kaialii Kahele",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 127110.37,
+       "contributions": 132305.38,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Kanuha, Dru",
+       "name": "Dru Kanuha",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 43210,
+       "contributions": 47253.5,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Inouye, Lorraine",
+       "name": "Lorraine Inouye",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 223571.74,
+       "contributions": 236300.74,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Shishido, Melissah",
+       "name": "Melissah Shishido",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 500,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "English, Kalani",
+       "name": "Kalani English",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 213125.63,
+       "contributions": 215505.64,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Moriwaki, Sharon",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 47947.66,
-       "expenditures": null
-      },
-      {
-       "name": "Mariano, Lynn",
+       "name": "Lynn Mariano",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 10267,
+       "contributions": 14837,
+       "expenditures": null
+      },
+      {
+       "name": "Sharon Moriwaki",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 56727.88,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Harimoto, Breene",
+       "name": "Breene Harimoto",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 9895,
+       "contributions": 12487.5,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Nishihara, Clarence",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 50000,
-       "expenditures": null
-      },
-      {
-       "name": "Clemente, Roger",
+       "name": "Roger Clemente",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 200,
        "expenditures": null
+      },
+      {
+       "name": "Clarence Nishihara",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 57250,
+       "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Kidani, Michelle",
+       "name": "Michelle Kidani",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 289332.05,
+       "contributions": 300452.05,
        "expenditures": null
       },
       {
-       "name": "Solis, Anthony",
+       "name": "Anthony Solis",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 2820,
+       "contributions": 3295,
        "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Garcia, Diamond",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 18770,
-       "expenditures": null
-      },
-      {
-       "name": "Shimabukuro, Maile",
+       "name": "Maile Shimabukuro",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 55028.73,
+       "contributions": 61464.48,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Riviere, Gil",
+       "name": "Gil Riviere",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 59128,
+       "contributions": 68341.5,
        "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Keohokalole, Jarrett",
+       "name": "Jarrett Keohokalole",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 108879.89,
+       "contributions": 128656,
        "expenditures": null
       }
      ]
@@ -443364,185 +447558,147 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2020": {
    "house": {
     "1": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Nakashima, Mark",
+       "name": "Mark Nakashima",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 29085.22,
+       "contributions": 31050.22,
        "expenditures": null
       },
       {
-       "name": "Shin, Lorraine",
+       "name": "Lorraine Shin",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 6470,
+       "contributions": 8664,
        "expenditures": null
       }
      ]
     },
     "2": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Todd, Christopher",
+       "name": "Christopher Todd",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 24125,
-       "expenditures": null
-      },
-      {
-       "name": "McMackin, Devin",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 934,
+       "contributions": 26475,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Hughes, Susan",
+       "name": "Susan Hughes",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 130,
+       "contributions": 1889,
        "expenditures": null
       },
       {
-       "name": "Onishi, Richard",
+       "name": "Richard Onishi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 39250,
+       "contributions": 41950,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Haumea, Desmon",
+       "name": "Desmon Haumea",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 1550,
+       "contributions": 2172.79,
        "expenditures": null
       },
       {
-       "name": "Cermelj, Hope",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 200,
-       "expenditures": null
-      },
-      {
-       "name": "Ilagan, Greggor",
+       "name": "Greggor Ilagan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 40102,
+       "contributions": 42197,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Kapela, Jeanne",
+       "name": "Jeanne Kapela",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 29175,
+       "contributions": 31726.8,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Lowen, Nicole",
+       "name": "Nicole Lowen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 18520.2,
+       "contributions": 20365.2,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Tarnas, David",
+       "name": "David Tarnas",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 33205,
-       "expenditures": null
-      }
-     ]
-    },
-    "8": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Hashimoto, Troy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 71180,
+       "contributions": 36060,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Woodson, Justin",
+       "name": "Justin Woodson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 35225,
+       "contributions": 35819.07,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "McKelvey, Angus",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 22680,
-       "expenditures": null
-      },
-      {
-       "name": "Gyldstrand, Travis",
+       "name": "Travis Gyldstrand",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
@@ -443552,735 +447708,683 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "11": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Wildberger, Tina",
+       "name": "Howard Greenberg",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Tina Wildberger",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 33983.93,
+       "contributions": 38135.24,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Yamashita, Kyle",
+       "name": "Kyle Yamashita",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 68425.33,
+       "contributions": 76919.64,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "DeCoite, Lynn",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 136700,
+       "name": "Robin Vanderpool",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Nakamura, Nadine",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 31675,
-       "expenditures": null
-      },
-      {
-       "name": "Monas, Steve",
+       "name": "Steve Monas",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 200,
+       "contributions": 1282,
+       "expenditures": null
+      },
+      {
+       "name": "Nadine Nakamura",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 42583,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Tokioka, James",
+       "name": "James Tokioka",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 34500,
-       "expenditures": null
-      },
-      {
-       "name": "Yoder, Steven",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 7910,
+       "contributions": 36700,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Morikawa, Daynette",
+       "name": "Daynette Morikawa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 21075,
+       "contributions": 22605,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Kogachi, Keith",
+       "name": "Keith Kogachi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 2400,
+       "contributions": 3402.02,
        "expenditures": null
       },
       {
-       "name": "Ward, Gene",
+       "name": "Gene Ward",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 31925,
+       "contributions": 35900,
        "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Hashem, Mark",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 12175,
-       "expenditures": null
-      },
-      {
-       "name": "Ford, Lori",
+       "name": "Lori Ford",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1650,
+       "contributions": 2835,
+       "expenditures": null
+      },
+      {
+       "name": "Mark Hashem",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 15740,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Kobayashi, Bertrand",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 6200,
-       "expenditures": null
-      },
-      {
-       "name": "Parrish, Michael",
+       "name": "Wayne Chen",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 700,
+       "contributions": 114.65,
+       "expenditures": null
+      },
+      {
+       "name": "Bertrand Kobayashi",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7900,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Allen, Julia",
+       "name": "Julia Allen",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 6091.47,
-       "expenditures": null
-      },
-      {
-       "name": "Sayama, Jackson",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 60621.52,
+       "contributions": 9841.13,
        "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Nishimoto, Scott",
+       "name": "Scott Nishimoto",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 50450,
+       "contributions": 52950,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Ochs, Nicholas",
+       "name": "Nicholas Ochs",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3150,
+       "contributions": 5225.64,
        "expenditures": null
       },
       {
-       "name": "Tam, Adrian",
+       "name": "Adrian Tam",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 52890,
+       "contributions": 62135.23,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Kobayashi, Dale",
+       "name": "Dale Kobayashi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 23876,
+       "contributions": 26276,
        "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Belatti, Della",
+       "name": "Della Belatti",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 49750,
+       "contributions": 51185,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Luke, Sylvia",
+       "name": "Sylvia Luke",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 210460,
+       "contributions": 213010,
        "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Saiki, Scott",
+       "name": "Scott Saiki",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 156390.12,
+       "contributions": 157815.12,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Ohno, Takashi",
+       "name": "Takashi Ohno",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 33450,
+       "contributions": 36437.44,
        "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Mizuno, John",
+       "name": "John Mizuno",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 40700,
-       "expenditures": null
-      }
-     ]
-    },
-    "29": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Holt, Daniel",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 35670,
+       "contributions": 44460,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Ganaden, Ernesto",
+       "name": "Ernesto Ganaden",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11150,
+       "contributions": 17010.5,
        "expenditures": null
       },
       {
-       "name": "Quilingking, Tess",
+       "name": "Tess Quilingking",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3088.61,
+       "contributions": 4901.34,
        "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Johanson, Aaron",
+       "name": "Aaron Johanson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 40750,
+       "contributions": 43205,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Ichiyama, Linda",
+       "name": "Linda Ichiyama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 23525,
+       "contributions": 29920,
        "expenditures": null
       }
      ]
     },
     "33": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Boyette, Jennifer",
+       "name": "Jennifer Boyette",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 2695,
-       "expenditures": null
-      },
-      {
-       "name": "Kong, Samuel",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 15400,
+       "contributions": 3370,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Takayama, Gregg",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 19790.12,
-       "expenditures": null
-      },
-      {
-       "name": "Simon, Keone",
+       "name": "Keone Simon",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 7680,
+       "contributions": 10090,
+       "expenditures": null
+      },
+      {
+       "name": "Gregg Takayama",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 27665.12,
        "expenditures": null
       }
      ]
     },
     "35": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Takumi, Roy",
+       "name": "Carl Hood",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Roy Takumi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 38925,
+       "contributions": 40625,
        "expenditures": null
       }
      ]
     },
     "36": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Okimoto, Val",
+       "name": "Val Okimoto",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 45800,
+       "contributions": 55733.81,
        "expenditures": null
       }
      ]
     },
     "37": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Yamane, Ryan",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 65000,
+       "name": "Emil* Svrcina",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6810,
        "expenditures": null
-      }
-     ]
-    },
-    "38": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
+      },
       {
-       "name": "Aquino, Henry",
+       "name": "Ryan Yamane",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 31870,
+       "contributions": 68525,
        "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Cullen, Ty",
+       "name": "Ty Cullen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 64670,
+       "contributions": 68195,
        "expenditures": null
       },
       {
-       "name": "Maglinti, Austin",
+       "name": "Austin Maglinti",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5010,
+       "contributions": 6690,
        "expenditures": null
       }
      ]
     },
     "40": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "McDermott, Bob",
+       "name": "Bob McDermott",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 48712.58,
+       "contributions": 54402.58,
        "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Alcos, David",
+       "name": "David Alcos",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 20227.72,
+       "contributions": 21357.72,
        "expenditures": null
       },
       {
-       "name": "LoPresti, Matthew",
+       "name": "Matthew LoPresti",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 15101,
+       "contributions": 20972.27,
        "expenditures": null
       }
      ]
     },
     "42": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Har, Sharon",
+       "name": "Sharon Har",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 32205.35,
+       "contributions": 34005.35,
        "expenditures": null
       }
      ]
     },
     "43": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Garcia, Diamond",
+       "name": "Diamond Garcia",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 41053.27,
+       "contributions": 43603.27,
        "expenditures": null
       },
       {
-       "name": "Eli, Stacelynn",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 70549.56,
-       "expenditures": null
-      },
-      {
-       "name": "Hoohuli, Shaena",
+       "name": "Shaena Hoohuli",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 5643.66,
+       "contributions": 6192.18,
        "expenditures": null
       }
      ]
     },
     "44": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Gates, Cedric",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 33204,
-       "expenditures": null
-      },
-      {
-       "name": "Aldeguer, Maysana",
+       "name": "Maysana Aldeguer",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 2516,
-       "expenditures": null
-      },
-      {
-       "name": "Simpliciano, Joseph",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 50,
+       "contributions": 3456,
        "expenditures": null
       }
      ]
     },
     "45": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Chapman, Michael",
+       "name": "Michael Chapman",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 15905,
+       "contributions": 17410.5,
        "expenditures": null
       },
       {
-       "name": "Matsumoto, Lauren",
+       "name": "Lauren Matsumoto",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 25641,
+       "contributions": 35075,
        "expenditures": null
       }
      ]
     },
     "46": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Perruso, Amy",
+       "name": "Amy Perruso",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 22553.11,
+       "contributions": 27361.61,
        "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Quinlan, Sean",
+       "name": "Sean Quinlan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 25100,
+       "contributions": 26600,
        "expenditures": null
       },
       {
-       "name": "Ready, Boyd",
+       "name": "Boyd Ready",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 18859,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "48": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Kitagawa, Lisa",
+       "name": "Lisa Kitagawa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 75135.06,
+       "contributions": 80079,
        "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Matayoshi, Scot",
+       "name": "Scot Matayoshi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 42334.69,
+       "contributions": 46121.79,
        "expenditures": null
       }
      ]
     },
     "50": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Souza, Kanani",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 5325.64,
-       "expenditures": null
-      },
-      {
-       "name": "Branco, Patrick",
+       "name": "Patrick Branco",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 73468.26,
+       "contributions": 85346.83,
+       "expenditures": null
+      },
+      {
+       "name": "Kanani Souza",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6375.64,
        "expenditures": null
       }
      ]
     },
     "51": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Marten, Lisa",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 27975,
-       "expenditures": null
-      },
-      {
-       "name": "Kama-Toth, Kukana",
+       "name": "Kukana Kama-Toth",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 10850,
+       "contributions": 14325,
+       "expenditures": null
+      },
+      {
+       "name": "Lisa Marten",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 29679.01,
        "expenditures": null
       }
      ]
@@ -444288,201 +448392,195 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "2": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "San Buenaventura, Joy",
+       "name": "Ron Ka-Ipo",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Joy San Buenaventura",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 47250,
+       "contributions": 50655,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Kouchi, Ron",
+       "name": "Ron Kouchi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 339586.88,
+       "contributions": 347210.13,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Slom, Sam",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 14168.82,
+       "name": "Stanley Chang",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 189127.91,
        "expenditures": null
       },
       {
-       "name": "Chang, Stanley",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 173906.17,
-       "expenditures": null
-      }
-     ]
-    },
-    "10": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Ihara, Les",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 2150,
+       "name": "Sam Slom",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16087.73,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Taniguchi, Brian",
+       "name": "Brian Taniguchi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 71025,
+       "contributions": 89284,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Rhoads, Karl",
+       "name": "Karl Rhoads",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 117121.95,
+       "contributions": 121389.7,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Kim, Donna",
+       "name": "Donna Kim",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 51600,
+       "contributions": 51825,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Wakai, Glenn",
+       "name": "Glenn Wakai",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 190823.07,
+       "contributions": 199948.07,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Fevella, Kurt*",
+       "name": "Kurt* Fevella",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 54850,
+       "contributions": 56025,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Bonoan, Feena",
+       "name": "Feena Bonoan",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 18811.68,
+       "contributions": 20341.68,
        "expenditures": null
       },
       {
-       "name": "Gabbard, Mike",
+       "name": "Mike Gabbard",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 3400,
+       "contributions": 4290,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Miller, John",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 6170.31,
-       "expenditures": null
-      },
-      {
-       "name": "Dela Cruz, Donovan",
+       "name": "Donovan Dela Cruz",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 747020.98,
+       "contributions": 757641.78,
+       "expenditures": null
+      },
+      {
+       "name": "John Miller",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7985.31,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Kim-Marshall, Kristina",
+       "name": "Kristina Kim-Marshall",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 19700,
+       "contributions": 21675,
        "expenditures": null
       },
       {
-       "name": "Lee, Christopher",
+       "name": "Christopher Lee",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 49035.01,
+       "contributions": 54288.5,
        "expenditures": null
       }
      ]
@@ -444492,53 +448590,53 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2022": {
    "house": {
     "1": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Nakashima, Mark",
+       "name": "Mark Nakashima",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 54300,
+       "contributions": 55400,
        "expenditures": null
       }
      ]
     },
     "2": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Onishi, Richard",
+       "name": "Richard Onishi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 47350,
+       "contributions": 48149,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Todd, Christopher",
+       "name": "Christopher Todd",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 31188,
+       "contributions": 37118,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Ho, Keikilani",
+       "name": "Keikilani Ho",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -444546,925 +448644,859 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Ilagan, Greggor",
+       "name": "Greggor Ilagan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 34489.2,
+       "contributions": 39026.53,
+       "expenditures": null
+      },
+      {
+       "name": "Brian Ley",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Kapela, Jeanne",
+       "name": "Jeanne Kapela",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 15900,
+       "contributions": 18602.05,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Kahaloa, Kirstin",
+       "name": "Kirstin Kahaloa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 51525.2,
+       "contributions": 54308.1,
        "expenditures": null
       },
       {
-       "name": "Kennealy, Jonathan",
+       "name": "Jonathan Kennealy",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1667,
+       "contributions": 2717,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Lowen, Nicole",
+       "name": "Nicole Lowen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 14050,
+       "contributions": 15151.55,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Perreira, Monique",
+       "name": "Monique Perreira",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1800,
+       "contributions": 2620,
        "expenditures": null
       },
       {
-       "name": "Tarnas, David",
+       "name": "David Tarnas",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 36230,
+       "contributions": 37500,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Woodson, Justin",
+       "name": "Justin Woodson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 27200,
-       "expenditures": null
-      }
-     ]
-    },
-    "10": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Hashimoto, Troy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 76293.52,
+       "contributions": 31812.39,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Amato, Terez",
+       "name": "Terez Amato",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 23294.18,
+       "contributions": 26269.18,
        "expenditures": null
       },
       {
-       "name": "Cantere, Shekinah",
+       "name": "Shekinah Cantere",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 10427,
+       "contributions": 12687,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Johnson, Dan",
+       "name": "Dan Johnson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 2740,
+       "contributions": 3233.61,
        "expenditures": null
       },
       {
-       "name": "Yamashita, Kyle",
+       "name": "Summer Starr",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Kyle Yamashita",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 103277.93,
+       "contributions": 111722.93,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Adam, Scott",
+       "name": "Scott Adam",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 6402,
+       "contributions": 8773.5,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Cochran, Elle",
+       "name": "Elle Cochran",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 28917.92,
-       "expenditures": null
-      },
-      {
-       "name": "Armstrong, Kelly",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 500,
-       "expenditures": null
-      },
-      {
-       "name": "Nakoa, Leonard",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 200,
+       "contributions": 31271.52,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Bentley, Greg",
+       "name": "Greg Bentley",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 735.95,
+       "contributions": 1277.25,
        "expenditures": null
       },
       {
-       "name": "Nakamura, Nadine",
+       "name": "Nadine Nakamura",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 33439.74,
+       "contributions": 40965.55,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Tokioka, James",
+       "name": "James Tokioka",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 30150,
+       "contributions": 30744,
+       "expenditures": null
+      },
+      {
+       "name": "Steve Yoder",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 450,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Morikawa, Daynette",
+       "name": "Daynette Morikawa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 12850,
+       "contributions": 13305,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Wilson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Ward, Gene",
+       "name": "Gene Ward",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 36061.87,
+       "contributions": 39231.87,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Hashem, Mark",
+       "name": "Mark Hashem",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 31125,
+       "contributions": 34902.6,
        "expenditures": null
       },
       {
-       "name": "Texeira, Theresa",
+       "name": "Theresa Texeira",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3914.04,
+       "contributions": 5066.39,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Caiazzo, Jessica",
+       "name": "Jessica Caiazzo",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1875,
+       "contributions": 3460.12,
        "expenditures": null
       },
       {
-       "name": "Kobayashi, Bertrand",
+       "name": "Bertrand Kobayashi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 21350,
+       "contributions": 22600,
        "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Sayama, Jackson",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 33906.2,
-       "expenditures": null
-      },
-      {
-       "name": "Allen, Julia",
+       "name": "Julia Allen",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 400,
+       "contributions": 1203.06,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Garrett, Andrew",
+       "name": "Andrew Garrett",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 72669.2,
+       "contributions": 79262.25,
+       "expenditures": null
+      },
+      {
+       "name": "Jeffrey Imamura",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Nishimoto, Scott",
+       "name": "Scott Nishimoto",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 41625,
+       "contributions": 42550,
        "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Tam, Adrian",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 70026,
-       "expenditures": null
-      },
-      {
-       "name": "Anderson, Jillian",
+       "name": "Jillian Anderson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 11118.24,
+       "contributions": 12111.47,
+       "expenditures": null
+      },
+      {
+       "name": "Adrian Tam",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 79346.71,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Novak, Robert",
+       "name": "Robert Novak",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 500,
+       "contributions": 998.34,
        "expenditures": null
       },
       {
-       "name": "Saiki, Scott",
+       "name": "Scott Saiki",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 220839.52,
+       "contributions": 222270.52,
        "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Rosecrans, Charlotte",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 4457.15,
-       "expenditures": null
-      },
-      {
-       "name": "Belatti, Della",
+       "name": "Della Belatti",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 87325,
+       "contributions": 90595,
+       "expenditures": null
+      },
+      {
+       "name": "Charlotte Rosecrans",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5385.12,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Takenouchi, Jenna",
+       "name": "Jenna Takenouchi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 75848.08,
-       "expenditures": null
-      },
-      {
-       "name": "Lim, Margaret",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 4552.86,
+       "contributions": 84131.33,
        "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Holt, Daniel",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 46516.66,
-       "expenditures": null
-      },
-      {
-       "name": "Caravalho, Ernest",
+       "name": "Ernest Caravalho",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 1150,
+       "contributions": 1365,
        "expenditures": null
       }
      ]
     },
     "29": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Mizuno, John",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 25425,
-       "expenditures": null
-      },
-      {
-       "name": "Kaapu, Carole",
+       "name": "Carole Kaapu",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 11350.78,
+       "contributions": 14206.75,
+       "expenditures": null
+      },
+      {
+       "name": "John Mizuno",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 28717.6,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Ganaden, Ernesto",
+       "name": "P.M.* Azinga",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Ernesto Ganaden",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 5800,
+       "contributions": 7475,
        "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Ichiyama, Linda",
+       "name": "Linda Ichiyama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 27450,
+       "contributions": 30394,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Shimizu, Garner",
-       "party": "R",
-       "partyLabel": "Republican",
+       "name": "Micah Aiu",
+       "party": "D",
+       "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 21421.29,
+       "contributions": 44758.31,
        "expenditures": null
       },
       {
-       "name": "Aiu, Micah",
-       "party": "D",
-       "partyLabel": "Democratic",
+       "name": "Garner Shimizu",
+       "party": "R",
+       "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 40400,
-       "expenditures": null
-      }
-     ]
-    },
-    "33": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Kong, Samuel",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 11250,
+       "contributions": 26244.29,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Takayama, Gregg",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 22025,
-       "expenditures": null
-      },
-      {
-       "name": "Allen, Theodene",
+       "name": "Theodene Allen",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1350,
+       "contributions": 2610,
+       "expenditures": null
+      },
+      {
+       "name": "Gregg Takayama",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 26890.05,
        "expenditures": null
       }
      ]
     },
     "35": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Chun, Cory",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 35827.66,
-       "expenditures": null
-      },
-      {
-       "name": "Araki, Josiah",
+       "name": "Josiah Araki",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 784.75,
+       "contributions": 959.75,
+       "expenditures": null
+      },
+      {
+       "name": "Cory Chun",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 37690.21,
        "expenditures": null
       }
      ]
     },
     "36": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Lautaha, Veamoniti",
+       "name": "Veamoniti Lautaha",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 13405.05,
-       "expenditures": null
-      },
-      {
-       "name": "Lamosao, Rachele",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 73851.81,
+       "contributions": 13652.35,
        "expenditures": null
       }
      ]
     },
     "37": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Detwiler, Jamie",
+       "name": "Jamie Detwiler",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 9581.81,
+       "contributions": 14872.42,
        "expenditures": null
       },
       {
-       "name": "Yamane, Ryan",
+       "name": "Ryan Yamane",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 92975,
+       "contributions": 94199,
        "expenditures": null
       }
      ]
     },
     "38": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Lee, Marilyn",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 12350,
-       "expenditures": null
-      },
-      {
-       "name": "Matsumoto, Lauren",
+       "name": "Lauren Matsumoto",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 39929.48,
+       "contributions": 46560.48,
        "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Rosenlee, Corey",
+       "name": "Corey Rosenlee",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 21890,
-       "expenditures": null
-      },
-      {
-       "name": "Pierick, Elijah",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 16859.48,
+       "contributions": 27520,
        "expenditures": null
       }
      ]
     },
     "40": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Gueso, Janie",
+       "name": "Janie Gueso",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 21293.29,
+       "contributions": 22513.29,
        "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Alcos, David",
+       "name": "David Alcos",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 38199.48,
+       "contributions": 39849.48,
        "expenditures": null
       },
       {
-       "name": "LoPresti, Matthew",
+       "name": "Matthew LoPresti",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 18138.99,
+       "contributions": 22758.04,
        "expenditures": null
       }
      ]
     },
     "42": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Har, Sharon",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 54100,
-       "expenditures": null
-      },
-      {
-       "name": "Garcia, Diamond",
+       "name": "Diamond Garcia",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 23103.33,
+       "contributions": 24433.89,
+       "expenditures": null
+      },
+      {
+       "name": "Sharon Har",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 54800,
        "expenditures": null
       }
      ]
     },
     "43": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Eli, Stacelynn",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 41908.6,
-       "expenditures": null
-      },
-      {
-       "name": "Souza, Kanani",
+       "name": "Kanani Souza",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 9500,
+       "contributions": 9850,
        "expenditures": null
       }
      ]
     },
     "44": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Kopetseg, Kimberly",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 1000,
-       "expenditures": null
-      },
-      {
-       "name": "Kila, Darius",
+       "name": "Darius Kila",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 58900.2,
+       "contributions": 59669.51,
+       "expenditures": null
+      },
+      {
+       "name": "Kimberly Kopetseg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1050,
        "expenditures": null
       }
      ]
     },
     "45": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Wilbur, Tiana",
+       "name": "Tiana Wilbur",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 11693.42,
-       "expenditures": null
-      },
-      {
-       "name": "Gates, Cedric",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 27435.92,
+       "contributions": 12695.92,
        "expenditures": null
       }
      ]
     },
     "46": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Perruso, Amy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 13975,
-       "expenditures": null
-      },
-      {
-       "name": "Miller, John",
+       "name": "John Miller",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 10109.91,
+       "contributions": 11503.12,
+       "expenditures": null
+      },
+      {
+       "name": "Amy Perruso",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 17477.16,
        "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Talaeai, Mark",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 3500,
-       "expenditures": null
-      },
-      {
-       "name": "Quinlan, Sean",
+       "name": "Sean Quinlan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 21475,
+       "contributions": 22847.6,
+       "expenditures": null
+      },
+      {
+       "name": "Mark Talaeai",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3550,
        "expenditures": null
       }
      ]
     },
     "48": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Elento, Wendell",
+       "name": "Wendell Elento",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3604.47,
+       "contributions": 5004.29,
        "expenditures": null
       },
       {
-       "name": "Kitagawa, Lisa",
+       "name": "Lisa Kitagawa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 50599,
+       "contributions": 51828,
        "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Matayoshi, Scot",
+       "name": "Kilomana Danner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Scot Matayoshi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 63527.97,
-       "expenditures": null
-      }
-     ]
-    },
-    "50": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Hussey-Burdick, Natalia",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 53824,
+       "contributions": 69121.66,
        "expenditures": null
       }
      ]
     },
     "51": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Marten, Lisa",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 11900,
-       "expenditures": null
-      },
-      {
-       "name": "Kama-Toth, Kukana",
+       "name": "Kukana Kama-Toth",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5508.2,
+       "contributions": 5653.79,
+       "expenditures": null
+      },
+      {
+       "name": "Lisa Marten",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 12430.2,
        "expenditures": null
       }
      ]
@@ -445472,481 +449504,513 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "1": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Inouye, Lorraine",
+       "name": "Lorraine Inouye",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 214255.3,
+       "contributions": 223886.3,
        "expenditures": null
       },
       {
-       "name": "Tupai, Helen",
+       "name": "Helen Tupai",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 2935,
+       "contributions": 4190,
        "expenditures": null
       }
      ]
     },
     "2": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "San Buenaventura, Joy",
+       "name": "Holly Osborn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 155,
+       "expenditures": null
+      },
+      {
+       "name": "Joy San Buenaventura",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 36300,
+       "contributions": 37427.6,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Kanuha, Dru",
+       "name": "Dru Kanuha",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 73832.87,
+       "contributions": 77659.87,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Richards, Herbert",
+       "name": "Herbert Richards",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 63300,
+       "contributions": 64574,
        "expenditures": null
       },
       {
-       "name": "Tancheff, Nicholas",
+       "name": "Nicholas Tancheff",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 958.2,
+       "contributions": 1304.26,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "McKelvey, Angus",
+       "name": "Angus McKelvey",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 47647.92,
+       "contributions": 48342.92,
        "expenditures": null
       },
       {
-       "name": "Walker, Sheila",
-       "party": "R",
-       "partyLabel": "Republican",
+       "name": "Melissah Shishido",
+       "party": "O",
+       "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 20083.69,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "McKay, Tamara",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 7428,
-       "expenditures": null
-      },
-      {
-       "name": "DeCoite, Lynn",
+       "name": "Lynn DeCoite",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 153260,
+       "contributions": 157144,
+       "expenditures": null
+      },
+      {
+       "name": "Tamara McKay",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8308,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Kouchi, Ron",
+       "name": "Ron Kouchi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 111624,
+       "contributions": 112902.1,
+       "expenditures": null
+      },
+      {
+       "name": "Kapana Thronas-Kahoonei",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Chang, Stanley",
+       "name": "Stanley Chang",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 60299.89,
+       "contributions": 62847.24,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Parrish",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Ihara, Les",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 1000,
-       "expenditures": null
-      },
-      {
-       "name": "Soon, Leilani",
+       "name": "Leilani Soon",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 12349.48,
+       "contributions": 15254.18,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Fukunaga, Carol",
+       "name": "Carol Fukunaga",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 65548.95,
+       "contributions": 66841.95,
+       "expenditures": null
+      },
+      {
+       "name": "Benjamin Sakai",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Boyd, Blake",
+       "name": "Blake Boyd",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 6824.48,
+       "contributions": 6924.48,
        "expenditures": null
       },
       {
-       "name": "Moriwaki, Sharon",
+       "name": "Sharon Moriwaki",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 154274.39,
+       "contributions": 164722.84,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Souza, Kapono",
+       "name": "Michelle Kwock",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 3200,
+       "contributions": 0,
        "expenditures": null
       },
       {
-       "name": "Tinay, Matthew",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 3731.84,
-       "expenditures": null
-      },
-      {
-       "name": "Rhoads, Karl",
+       "name": "Karl Rhoads",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 51463.61,
+       "contributions": 52841.76,
+       "expenditures": null
+      },
+      {
+       "name": "Kapono Souza",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 4045,
+       "expenditures": null
+      },
+      {
+       "name": "Matthew Tinay",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3781.84,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Rzonca, Cheryl",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 2426.22,
-       "expenditures": null
-      },
-      {
-       "name": "Kim, Donna",
+       "name": "Donna Kim",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 97855,
+       "contributions": 100531.11,
+       "expenditures": null
+      },
+      {
+       "name": "Cheryl Rzonca",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2776.22,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Wakai, Glenn",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 112975,
-       "expenditures": null
-      },
-      {
-       "name": "Godfrey, Lorene",
+       "name": "Lorene Godfrey",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 1200,
        "expenditures": null
+      },
+      {
+       "name": "Glenn Wakai",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 114375,
+       "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Beekman, Patricia",
+       "name": "Patricia Beekman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 724.61,
+       "contributions": 1579.95,
        "expenditures": null
       },
       {
-       "name": "Elefante, Brandon",
+       "name": "Brandon Elefante",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 174716.74,
+       "contributions": 185456.26,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Hudson, Anna",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 3179,
-       "expenditures": null
-      },
-      {
-       "name": "Dela Cruz, Donovan",
+       "name": "Donovan Dela Cruz",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 280114.22,
+       "contributions": 286274.22,
+       "expenditures": null
+      },
+      {
+       "name": "Anna Hudson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4264,
        "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Smart, Mary",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 4958.2,
-       "expenditures": null
-      },
-      {
-       "name": "Kidani, Michelle",
+       "name": "Michelle Kidani",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 172495.1,
+       "contributions": 174639.1,
+       "expenditures": null
+      },
+      {
+       "name": "Mary Smart",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5815.58,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Aquino, Henry",
+       "name": "Henry Aquino",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 65100,
+       "contributions": 70469.6,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Fevella, Kurt*",
+       "name": "Kurt* Fevella",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 48250,
+       "contributions": 46595,
        "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Khan, Matthew",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 1924.48,
-       "expenditures": null
-      },
-      {
-       "name": "Gabbard, Mike",
+       "name": "Mike Gabbard",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 908.33,
+       "contributions": 1283.33,
+       "expenditures": null
+      },
+      {
+       "name": "Matthew Khan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2115.54,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "DeCorte, Samantha",
+       "name": "Samantha DeCorte",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 60276,
+       "contributions": 69229.95,
        "expenditures": null
       },
       {
-       "name": "Shimabukuro, Maile",
+       "name": "Maile Shimabukuro",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 35259.15,
+       "contributions": 36432.2,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Awa, Brenton",
+       "name": "Brenton Awa",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 20500.33,
+       "contributions": 24990.33,
        "expenditures": null
       },
       {
-       "name": "Riviere, Gil",
+       "name": "Gil Riviere",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 49990.31,
+       "contributions": 57363.14,
        "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Fernandez, Antionette",
+       "name": "Antionette Fernandez",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 200,
+       "contributions": 230,
        "expenditures": null
       },
       {
-       "name": "Keohokalole, Jarrett",
+       "name": "Jarrett Keohokalole",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 182318.87,
+       "contributions": 191162.87,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Lee, Christopher",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 42724,
-       "expenditures": null
-      },
-      {
-       "name": "Lauro, Brian",
+       "name": "Brian Lauro",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 2041.08,
+       "contributions": 3499.14,
+       "expenditures": null
+      },
+      {
+       "name": "Christopher Lee",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 45079,
        "expenditures": null
       }
      ]
@@ -445956,571 +450020,625 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2024": {
    "house": {
     "3": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Todd, Christopher",
+       "name": "Austin Martin",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Christopher Todd",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 46040,
+       "contributions": 52315,
+       "expenditures": null
+      },
+      {
+       "name": "Kanoa Wilson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Ho, Keikilani",
+       "name": "Keikilani Ho",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1009.42,
+       "contributions": 1562.42,
        "expenditures": null
       },
       {
-       "name": "Ilagan, Greggor",
+       "name": "Greggor Ilagan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 44950,
+       "contributions": 50065,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Oyama, Ashley",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 4704.45,
-       "expenditures": null
-      },
-      {
-       "name": "Kapela, Jeanne",
+       "name": "Jeanne Kapela",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 18095,
+       "contributions": 21334.28,
+       "expenditures": null
+      },
+      {
+       "name": "Ashley Oyama",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5534.83,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Kahaloa, Kirstin",
+       "name": "Kirstin Kahaloa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 60543.62,
+       "contributions": 65968.62,
        "expenditures": null
       },
       {
-       "name": "Madison, Sylvie",
+       "name": "Sylvie Madison",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5417.93,
+       "contributions": 6018.07,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Dalhouse, Tim",
+       "name": "Tim Dalhouse",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 10610.53,
+       "contributions": 10886.48,
        "expenditures": null
       },
       {
-       "name": "Lowen, Nicole",
+       "name": "Nicole Lowen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 31150,
+       "contributions": 34360,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Tarnas, David",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 56775,
-       "expenditures": null
-      },
-      {
-       "name": "Perreira, Monique",
+       "name": "Monique Perreira",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5384.08,
+       "contributions": 5771.97,
+       "expenditures": null
+      },
+      {
+       "name": "David Tarnas",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 58059.43,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Acain, Aileen",
+       "name": "Aileen Acain",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 500,
+       "contributions": 1915,
        "expenditures": null
       },
       {
-       "name": "Amato, Terez",
+       "name": "Terez Amato",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 24779.07,
+       "contributions": 27043.07,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Johnson, Dan",
+       "name": "Dan Johnson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 850,
+       "contributions": 1734.92,
        "expenditures": null
       },
       {
-       "name": "Yamashita, Kyle",
+       "name": "Rita Ryan",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 100,
+       "expenditures": null
+      },
+      {
+       "name": "Kyle Yamashita",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 150805.07,
+       "contributions": 162936.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Scott Adam",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 39.57,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Cochran, Elle",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 2054,
-       "expenditures": null
-      },
-      {
-       "name": "Armstrong, Kelly",
+       "name": "Kelly Armstrong",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 100,
+       "contributions": 4375,
+       "expenditures": null
+      },
+      {
+       "name": "Elle Cochran",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1449,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Nakamura, Nadine",
+       "name": "David Moranz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Nadine Nakamura",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 69298.83,
+       "contributions": 76326.83,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Yoder, Steve",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 8600,
-       "expenditures": null
-      },
-      {
-       "name": "Evslin, Luke",
+       "name": "Luke Evslin",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 19600,
+       "contributions": 21545,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Jauch, Michael",
+       "name": "Michael Jauch",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 500,
+       "contributions": 600,
        "expenditures": null
       },
       {
-       "name": "Morikawa, Daynette",
+       "name": "Daynette Morikawa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 24708.67,
+       "contributions": 25558.67,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Solomon, Corinne",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 5450,
-       "expenditures": null
-      },
-      {
-       "name": "Grandinetti, Tina",
+       "name": "Tina Grandinetti",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 41068.59,
+       "contributions": 55391.05,
+       "expenditures": null
+      },
+      {
+       "name": "Corinne Solomon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6657,
        "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Sayama, Jackson",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 43110,
+       "name": "Joelle Seashell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2.5,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Garrett, Andrew",
+       "name": "Andrew Garrett",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 63874,
+       "contributions": 69730.02,
+       "expenditures": null
+      },
+      {
+       "name": "Jeffrey Imamura",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Tam, Adrian",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 58561,
-       "expenditures": null
-      },
-      {
-       "name": "Anderson, Jillian",
+       "name": "Jillian Anderson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 2815.38,
+       "contributions": 3115.38,
+       "expenditures": null
+      },
+      {
+       "name": "Adrian Tam",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 61935,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Takenouchi, Jenna",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 45620,
-       "expenditures": null
-      },
-      {
-       "name": "Lim, Margaret",
+       "name": "Margaret Lim",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 4126.4,
+       "contributions": 4486.29,
+       "expenditures": null
+      },
+      {
+       "name": "Jenna Takenouchi",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 50915,
        "expenditures": null
       }
      ]
     },
     "29": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Kaapu, Carole",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 11300,
-       "expenditures": null
-      },
-      {
-       "name": "Hussey, Ikaika",
+       "name": "Ikaika Hussey",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 17757.93,
+       "contributions": 22081.14,
+       "expenditures": null
+      },
+      {
+       "name": "Carole Kaapu",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 13010,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Templo, Shirley",
+       "name": "P.M.* Azinga",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Shirley Templo",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11434.6,
+       "contributions": 13100.01,
        "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Ichiyama, Linda",
+       "name": "Linda Ichiyama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 56300,
+       "contributions": 63043.33,
        "expenditures": null
       },
       {
-       "name": "Valdez, Nancy",
+       "name": "Nancy Valdez",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 330,
+       "contributions": 1817.96,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Aiu, Micah",
+       "name": "Micah Aiu",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 70656,
+       "contributions": 76606,
        "expenditures": null
       },
       {
-       "name": "Shimizu, Garner",
+       "name": "Garner Shimizu",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 38860.32,
+       "contributions": 47823.04,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Takayama, Gregg",
+       "name": "Gaius II Dupio",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Gregg Takayama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 28550,
+       "contributions": 32700,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Taylor Kaaumoana",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "38": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Ozawa, Alexander",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 10591.83,
-       "expenditures": null
-      },
-      {
-       "name": "Matsumoto, Lauren",
+       "name": "Lauren Matsumoto",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 64875.21,
+       "contributions": 74757.37,
+       "expenditures": null
+      },
+      {
+       "name": "Alexander Ozawa",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15172.17,
        "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Pierick, Elijah",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 37467.38,
-       "expenditures": null
-      },
-      {
-       "name": "Rosenlee, Corey",
+       "name": "Corey Rosenlee",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 25475,
-       "expenditures": null
-      }
-     ]
-    },
-    "40": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2024",
-     "candidates": [
-      {
-       "name": "Reyes Oda, Julie",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 11474.61,
+       "contributions": 31585.34,
        "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Clark, John",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 6392.45,
-       "expenditures": null
-      },
-      {
-       "name": "Alcos, David",
+       "name": "David Alcos",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 13441.7,
+       "contributions": 14710,
+       "expenditures": null
+      },
+      {
+       "name": "John Clark",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6416.46,
        "expenditures": null
       }
      ]
     },
     "42": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Garcia, Diamond",
+       "name": "Diamond Garcia",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 29165.7,
+       "contributions": 31015.7,
        "expenditures": null
       },
       {
-       "name": "Paris, Anthony",
+       "name": "Anthony Paris",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 36260,
+       "contributions": 42869.85,
        "expenditures": null
       }
      ]
     },
     "45": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "DeSoto, Desire",
+       "name": "Desire DeSoto",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 38750,
+       "contributions": 41000,
        "expenditures": null
       },
       {
-       "name": "Muraoka, Chris",
+       "name": "Chris Muraoka",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 55453.33,
+       "contributions": 57495.44,
        "expenditures": null
       }
      ]
     },
     "46": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Gabriel, Daniel",
+       "name": "Daniel Gabriel",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -446528,65 +450646,73 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Perruso, Amy",
+       "name": "Amy Perruso",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 25913.12,
+       "contributions": 29260.73,
        "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Quinlan, Sean",
+       "name": "John Aguirre",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 285,
+       "expenditures": null
+      },
+      {
+       "name": "Sean Quinlan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 32082.83,
+       "contributions": 36132.83,
        "expenditures": null
       }
      ]
     },
     "48": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Daily, Asheemo",
+       "name": "Asheemo Daily",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 1675.4,
+       "contributions": 1769.4,
        "expenditures": null
       },
       {
-       "name": "Kitagawa, Lisa",
+       "name": "Lisa Kitagawa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 71850,
+       "contributions": 73954.42,
        "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Matayoshi, Scot",
+       "name": "Scot Matayoshi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 89964.14,
+       "contributions": 93854.57,
        "expenditures": null
       },
       {
-       "name": "Ubando, Josiah",
+       "name": "Josiah Ubando",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -446596,23 +450722,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "50": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Connelly, Timothy",
+       "name": "Timothy Connelly",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 11333.95,
+       "contributions": 12419.93,
        "expenditures": null
       },
       {
-       "name": "Lee, Michael",
+       "name": "Michael Lee",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 83737.85,
+       "contributions": 89617.85,
        "expenditures": null
       }
      ]
@@ -446620,145 +450746,153 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "3": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Kanuha, Dru",
+       "name": "Dru Kanuha",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 52473.67,
+       "contributions": 53073.67,
+       "expenditures": null
+      },
+      {
+       "name": "Kurt Sullivan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "McKelvey, Angus",
+       "name": "Angus McKelvey",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 45753.99,
-       "expenditures": null
-      },
-      {
-       "name": "Walker, Sheila",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 21002.47,
+       "contributions": 46368.99,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "DeCoite, Lynn",
+       "name": "Lynn DeCoite",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 172869.07,
+       "contributions": 175379.07,
+       "expenditures": null
+      },
+      {
+       "name": "Gabby Macaraeg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Dabbs, Shotaro",
+       "name": "Shotaro Dabbs",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5776.33,
+       "contributions": 5848.45,
        "expenditures": null
       },
       {
-       "name": "Moriwaki, Sharon",
+       "name": "Sharon Moriwaki",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 155625.35,
+       "contributions": 159911.4,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Elefante, Brandon",
+       "name": "Brandon Elefante",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 87279,
+       "contributions": 94733.8,
        "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Kidani, Michelle",
+       "name": "Michelle Kidani",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 110193.67,
+       "contributions": 114703.67,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Gates, Cedric",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 144053.55,
-       "expenditures": null
-      },
-      {
-       "name": "DeCorte, Samantha",
+       "name": "Samantha DeCorte",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 45581.74,
+       "contributions": 49097.69,
+       "expenditures": null
+      },
+      {
+       "name": "Cedric Gates",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 147852.55,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Shafer, Benjamin",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 67841.26,
-       "expenditures": null
-      },
-      {
-       "name": "Awa, Brenton",
+       "name": "Brenton Awa",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 2000,
+       "contributions": 2026,
+       "expenditures": null
+      },
+      {
+       "name": "Benjamin Shafer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 72711.26,
        "expenditures": null
       }
      ]
@@ -446768,635 +450902,599 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2026": {
    "house": {
     "1": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Kusch, Matthias",
+       "name": "Matthias Kusch",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 33575,
+       "contributions": 39557.05,
        "expenditures": null
       }
      ]
     },
     "2": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Lee Loy, Susan",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 42091.89,
-       "expenditures": null
-      },
-      {
-       "name": "Kennealy, Jonathan*",
+       "name": "Jonathan* Kennealy",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 484.64,
+       "contributions": 584.64,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Todd, Christopher",
+       "name": "Austin Martin",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Christopher Todd",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 74614.22,
+       "contributions": 79169.22,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Wittenhagen, Zak",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 200,
-       "expenditures": null
-      },
-      {
-       "name": "Ilagan, Greggor",
+       "name": "Greggor Ilagan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 44457.39,
+       "contributions": 50667.39,
+       "expenditures": null
+      },
+      {
+       "name": "Zak Wittenhagen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 220,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Kapela, Jeanne",
+       "name": "Jeanne Kapela",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 33026.87,
+       "contributions": 36997.03,
        "expenditures": null
       },
       {
-       "name": "McCormick, Dalene",
+       "name": "Dalene McCormick",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1684.35,
+       "contributions": 2202.59,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Kahaloa, Kirstin",
+       "name": "Kirstin Kahaloa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 48774.22,
+       "contributions": 51959.22,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Lowen, Nicole",
+       "name": "Nicole Lowen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 17324.22,
+       "contributions": 18599.22,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Perreira, Monique",
+       "name": "Monique Perreira",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 304.1,
-       "expenditures": null
-      },
-      {
-       "name": "Tarnas, David",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 50498.86,
+       "contributions": 407.18,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Woodson, Justin",
+       "name": "Justin Woodson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 21350,
+       "contributions": 22635,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Bumanglag, Travis",
+       "name": "Travis Bumanglag",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 425,
+       "contributions": 985,
        "expenditures": null
       },
       {
-       "name": "Miyake, Tyson",
+       "name": "Tyson Miyake",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 88899.02,
+       "contributions": 102541.22,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Amato, Terez",
+       "name": "Terez Amato",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 14906.45,
+       "contributions": 16177.45,
        "expenditures": null
       },
       {
-       "name": "Walker, Sheila",
+       "name": "Sheila Walker",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 7065,
+       "contributions": 8185,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Johnson, Dan",
+       "name": "Dan Johnson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1992,
+       "contributions": 2222,
        "expenditures": null
       },
       {
-       "name": "Yamashita, Kyle",
+       "name": "Kyle Yamashita",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 69700,
+       "contributions": 81127.2,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Patel, Sne",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 62121.35,
-       "expenditures": null
-      },
-      {
-       "name": "Cochran, Elle",
+       "name": "Elle Cochran",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 500,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Sne Patel",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 62871.21,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Nakamura, Nadine",
+       "name": "Nadine Nakamura",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 121001.04,
+       "contributions": 124016.04,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Evslin, Luke",
+       "name": "Luke Evslin",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 33050,
-       "expenditures": null
-      },
-      {
-       "name": "Hazlebeck, David",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 7009.52,
+       "contributions": 36325,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Cluett, Misty",
+       "name": "Misty Cluett",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 4380,
+       "contributions": 5915,
        "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Gedeon, Joe",
+       "name": "Joe Gedeon",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 75786.6,
+       "contributions": 78076.6,
        "expenditures": null
       },
       {
-       "name": "Wataru, James",
+       "name": "James Wataru",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 74500,
+       "contributions": 79450,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Pacarro, Kahi",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 33612,
-       "expenditures": null
-      },
-      {
-       "name": "Hashem, Mark",
+       "name": "Mark Hashem",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 34814.49,
+       "contributions": 39614.49,
+       "expenditures": null
+      },
+      {
+       "name": "Kahi Pacarro",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 43597.25,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Grandinetti, Tina",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 17595,
-       "expenditures": null
-      },
-      {
-       "name": "Asing, David",
+       "name": "David Asing",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 400,
+       "contributions": 600,
+       "expenditures": null
+      },
+      {
+       "name": "Tina Grandinetti",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 21356.3,
        "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Phomsouvanh, Andrew",
+       "name": "Ranell Asuega-Fualaau",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 29950,
+       "contributions": 1778.12,
        "expenditures": null
       },
       {
-       "name": "Asuega-Fualaau, Ranell",
+       "name": "Jake Morrow",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 1578.12,
+       "contributions": 13974.95,
        "expenditures": null
       },
       {
-       "name": "Morrow, Jake",
+       "name": "Andrew Phomsouvanh",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10574.7,
+       "contributions": 35728,
        "expenditures": null
       },
       {
-       "name": "Turbin, Derek",
+       "name": "Derek Turbin",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 78964.92,
+       "contributions": 81656.91,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Garrett, Andrew",
+       "name": "Andrew Garrett",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 42100,
+       "contributions": 44674,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Olds, Ikaika",
+       "name": "Victor Muh",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 152.05,
+       "expenditures": null
+      },
+      {
+       "name": "Ikaika Olds",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 27740.97,
+       "contributions": 29922.22,
        "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Tam, Adrian",
+       "name": "Adrian Tam",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 75045,
+       "contributions": 78641.02,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Iwamoto, Kim Coco",
+       "name": "Kim Coco Iwamoto",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 11510,
+       "contributions": 19126.75,
        "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Ross, Ian",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 52407.49,
-       "expenditures": null
-      },
-      {
-       "name": "Silva, Anthony",
+       "name": "Anthony Silva",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 8565,
+       "contributions": 9202.76,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Takenouchi, Jenna",
+       "name": "Jenna Takenouchi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 42850,
+       "contributions": 45850,
        "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Alves, Nadia",
+       "name": "Reno Abihai",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 24602,
+       "contributions": 37338.87,
        "expenditures": null
       },
       {
-       "name": "Nagatani, Anthony",
+       "name": "Nadia Alves",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 35550,
+       "contributions": 30164.75,
        "expenditures": null
       },
       {
-       "name": "Abihai, Reno",
+       "name": "Ernest Caravalho",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 36264.75,
+       "contributions": 1105,
        "expenditures": null
       },
       {
-       "name": "Ratcliffe, Michael",
+       "name": "Anthony Nagatani",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 41773.74,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Ratcliffe",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 12610,
-       "expenditures": null
-      },
-      {
-       "name": "Caravalho, Ernest",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 1000,
-       "expenditures": null
-      }
-     ]
-    },
-    "29": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
-     "candidates": [
-      {
-       "name": "Hussey, Ikaika",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 6500,
+       "contributions": 14820,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Templo, Shirley",
+       "name": "Shirley Templo",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 15463.75,
+       "contributions": 19897.95,
+       "expenditures": null
+      },
+      {
+       "name": "Amanda Ybanez",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Ichiyama, Linda",
+       "name": "Linda Ichiyama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 59250,
+       "contributions": 65325,
        "expenditures": null
       },
       {
-       "name": "Valdez, Nancy",
+       "name": "Nancy Valdez",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5650,
+       "contributions": 8492.05,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Aiu, Micah",
+       "name": "Micah Aiu",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 85548.76,
+       "contributions": 86487.64,
        "expenditures": null
       },
       {
-       "name": "Shimizu, Garner",
+       "name": "Garner Shimizu",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 53760,
-       "expenditures": null
-      }
-     ]
-    },
-    "33": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
-     "candidates": [
-      {
-       "name": "Kong, Samuel",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 20225,
+       "contributions": 62325.12,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Dupio, Gaius II",
+       "name": "Gaius II Dupio",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -447404,315 +451502,293 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Takayama, Gregg",
+       "name": "Gregg Takayama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 31350,
+       "contributions": 35050,
        "expenditures": null
       }
      ]
     },
     "35": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Chun, Cory",
+       "name": "Cory Chun",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 33910,
+       "contributions": 36385,
        "expenditures": null
       }
      ]
     },
     "36": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Barsatan, Eric",
+       "name": "Eric Barsatan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 1200,
+       "contributions": 1300,
        "expenditures": null
       },
       {
-       "name": "Hartsfield, Daisy",
+       "name": "Daisy Hartsfield",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 33550,
+       "contributions": 37170,
        "expenditures": null
       },
       {
-       "name": "Morita, Maurice",
+       "name": "Maurice Morita",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 1400,
+       "contributions": 2250,
        "expenditures": null
       }
      ]
     },
     "38": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Matsumoto, Lauren",
+       "name": "Lauren Matsumoto",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 30655,
+       "contributions": 35653.5,
        "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Rosenlee, Corey",
-       "party": "D",
-       "partyLabel": "Democratic",
+       "name": "Danny de Gracia",
+       "party": "R",
+       "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 23650,
+       "contributions": 26474,
        "expenditures": null
       },
       {
-       "name": "de Gracia, Danny",
-       "party": "R",
-       "partyLabel": "Republican",
+       "name": "Corey Rosenlee",
+       "party": "D",
+       "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 25169,
-       "expenditures": null
-      }
-     ]
-    },
-    "40": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
-     "candidates": [
-      {
-       "name": "Reyes Oda, Julie",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 24435.77,
+       "contributions": 29141.9,
        "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Alcos, David",
+       "name": "David Alcos",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 14075,
+       "contributions": 16529.59,
        "expenditures": null
       }
      ]
     },
     "42": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Paris, Anthony",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 14250,
-       "expenditures": null
-      },
-      {
-       "name": "Garcia, Diamond",
+       "name": "Diamond Garcia",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 31514.05,
+       "contributions": 34959.05,
+       "expenditures": null
+      },
+      {
+       "name": "Anthony Paris",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14970,
        "expenditures": null
       }
      ]
     },
     "43": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Souza, Kanani",
+       "name": "Kanani Souza",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 9500,
-       "expenditures": null
-      },
-      {
-       "name": "Medeiros, Sheila",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 14012.69,
+       "contributions": 9525,
        "expenditures": null
       }
      ]
     },
     "44": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Weaver, Charla",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 49773.21,
-       "expenditures": null
-      },
-      {
-       "name": "Kila, Darius",
+       "name": "Darius Kila",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 134941.06,
+       "contributions": 139301.06,
+       "expenditures": null
+      },
+      {
+       "name": "Charla Weaver",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 53279.11,
        "expenditures": null
       }
      ]
     },
     "45": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Muraoka, Chris",
+       "name": "Chris Muraoka",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 36918.44,
+       "contributions": 38506.65,
        "expenditures": null
       }
      ]
     },
     "46": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Gabriel, Daniel",
+       "name": "Daniel Gabriel",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 9610,
+       "contributions": 9910,
        "expenditures": null
       },
       {
-       "name": "Perruso, Amy",
+       "name": "Amy Perruso",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 17520,
+       "contributions": 19628.25,
        "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Quinlan, Sean",
+       "name": "Sean Quinlan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 44100,
+       "contributions": 44750,
        "expenditures": null
       },
       {
-       "name": "Talaeai, Mark",
+       "name": "Mark Talaeai",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 20359.14,
+       "contributions": 21321.44,
        "expenditures": null
       }
      ]
     },
     "48": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Kitagawa, Lisa",
+       "name": "Lisa Kitagawa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 42000,
+       "contributions": 44488.88,
        "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Matayoshi, Scot",
+       "name": "Scot Matayoshi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 116215,
+       "contributions": 119865,
        "expenditures": null
       }
      ]
     },
     "50": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Lee, Michael",
+       "name": "Michael Lee",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 49550,
-       "expenditures": null
-      },
-      {
-       "name": "Fitzgerald, Jesse",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 2650,
+       "contributions": 52493.88,
        "expenditures": null
       }
      ]
     },
     "51": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Marten, Lisa",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 12300,
-       "expenditures": null
-      },
-      {
-       "name": "Kalama, Micah",
+       "name": "Steve Haumschild",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6830,
+       "contributions": 3535.65,
+       "expenditures": null
+      },
+      {
+       "name": "Micah Kalama",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9100,
+       "expenditures": null
+      },
+      {
+       "name": "Lisa Marten",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 13950,
        "expenditures": null
       }
      ]
@@ -447720,217 +451796,231 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "2": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "San Buenaventura, Joy",
+       "name": "Frederick* Fogel",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Joy San Buenaventura",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 118762.22,
+       "contributions": 125647.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Troy Hashimoto",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 144767.2,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Kouchi, Ron",
+       "name": "Ron Kouchi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 270646.33,
+       "contributions": 271746.33,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Chang, Stanley",
+       "name": "Stanley Chang",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 147783.46,
+       "contributions": 149478.46,
        "expenditures": null
       },
       {
-       "name": "Croswell, David",
+       "name": "David Croswell",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 7431.15,
+       "contributions": 7561.15,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Sayama, Jackson",
+       "name": "Jackson Sayama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 72925,
-       "expenditures": null
-      },
-      {
-       "name": "Ihara, Les",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 1000,
+       "contributions": 77530,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Fukunaga, Carol",
+       "name": "Carol Fukunaga",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 38850,
+       "contributions": 39300,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Nakamatsu, Tricia",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 120137.11,
-       "expenditures": null
-      },
-      {
-       "name": "Christian, Wallyn",
+       "name": "Wallyn Christian",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 9554.65,
+       "contributions": 13048.33,
+       "expenditures": null
+      },
+      {
+       "name": "Tricia Nakamatsu",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 127646.5,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "MacPherson, Christy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 64303.57,
-       "expenditures": null
-      },
-      {
-       "name": "Kim, Donna",
+       "name": "Donna Kim",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 180032.54,
+       "contributions": 185142.54,
+       "expenditures": null
+      },
+      {
+       "name": "Christy MacPherson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 75479.57,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Wakai, Glenn",
+       "name": "Glenn Wakai",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 159850,
+       "contributions": 161425,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Dela Cruz, Donovan",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 454495.18,
-       "expenditures": null
-      },
-      {
-       "name": "Brown, Nani",
+       "name": "Nani Brown",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 5191,
+       "contributions": 11230.26,
+       "expenditures": null
+      },
+      {
+       "name": "Donovan Dela Cruz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 462665.18,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "McDermott, Bob",
+       "name": "Bob McDermott",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 11329.31,
+       "contributions": 12258.31,
        "expenditures": null
       },
       {
-       "name": "Owens, Mark",
+       "name": "Mark Owens",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 2900,
+       "contributions": 4023.25,
        "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Gabbard, Mike",
+       "name": "Mike Gabbard",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 1416.96,
+       "contributions": 1616.96,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Lee, Christopher",
+       "name": "Christopher Lee",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 62303,
+       "contributions": 65996.33,
        "expenditures": null
       }
      ]
@@ -588534,6 +592624,9256 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    }
   }
  },
+ "SD": {
+  "2016": {
+   "house": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Susan Wismer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 700,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lana Greenfield",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6311.84,
+       "expenditures": null
+      },
+      {
+       "name": "Burt Tulson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9268.48,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dan Kaiser",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15229,
+       "expenditures": null
+      },
+      {
+       "name": "Brooks Briscoe",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Drew Dennert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 22065,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Peggy Schuelke",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5546.77,
+       "expenditures": null
+      },
+      {
+       "name": "Matt Rosdahl",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5145,
+       "expenditures": null
+      },
+      {
+       "name": "John Mills",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 24031.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hugh Bartels",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20498,
+       "expenditures": null
+      },
+      {
+       "name": "Michele Alvine",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4292.61,
+       "expenditures": null
+      },
+      {
+       "name": "Nancy York",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 11773.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Herman Otten",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15765,
+       "expenditures": null
+      },
+      {
+       "name": "Kyle Rogers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1161.1,
+       "expenditures": null
+      },
+      {
+       "name": "Clara Hart",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 82687.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Spencer Hawley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 17009,
+       "expenditures": null
+      },
+      {
+       "name": "Linda Brandt",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7770,
+       "expenditures": null
+      },
+      {
+       "name": "Tim Reed",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15500,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mathew Wollmann",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1468.77,
+       "expenditures": null
+      },
+      {
+       "name": "Leslie Heinemann",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30517.75,
+       "expenditures": null
+      },
+      {
+       "name": "Jason Unger",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1000,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michael Saba",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28526,
+       "expenditures": null
+      },
+      {
+       "name": "Wayne Steinhauer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 29750,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Clark",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2180,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Don Haggar",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19455,
+       "expenditures": null
+      },
+      {
+       "name": "Dean Kurtz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Paul Vanderlinde",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2300,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Chris Karr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6430,
+       "expenditures": null
+      },
+      {
+       "name": "Paul Schipper",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4090,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Arch Beal",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27562.4,
+       "expenditures": null
+      },
+      {
+       "name": "Greg Jamison",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14337.5,
+       "expenditures": null
+      },
+      {
+       "name": "Susan Randall",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9236.84,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Larry Zikmund",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30210,
+       "expenditures": null
+      },
+      {
+       "name": "Valerie Loudenback",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1457.62,
+       "expenditures": null
+      },
+      {
+       "name": "JR LaPlante",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6091.13,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Karen Soli",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 13080,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ann Tornberg",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20766.09,
+       "expenditures": null
+      },
+      {
+       "name": "David Anderson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8000,
+       "expenditures": null
+      },
+      {
+       "name": "Kevin Jensen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10832.5,
+       "expenditures": null
+      },
+      {
+       "name": "Ted Curry",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2987.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mark Winegar",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8300.01,
+       "expenditures": null
+      },
+      {
+       "name": "Debbie Pease",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10211.74,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jean Hunhoff",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16121.84,
+       "expenditures": null
+      },
+      {
+       "name": "Mike Stevens",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18570,
+       "expenditures": null
+      },
+      {
+       "name": "David Allen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 200,
+       "expenditures": null
+      },
+      {
+       "name": "Peter Rossiter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2075,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kyle Schoenfish",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14880,
+       "expenditures": null
+      },
+      {
+       "name": "Kent Peterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13200,
+       "expenditures": null
+      },
+      {
+       "name": "Melissa Mentele",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 235,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lee Qualm",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15250,
+       "expenditures": null
+      },
+      {
+       "name": "Gary Burrus",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7985.06,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bob Glanzer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25152,
+       "expenditures": null
+      },
+      {
+       "name": "Carmen Dannenbring",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Roger Chase",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12506,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Lake",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9650,
+       "expenditures": null
+      },
+      {
+       "name": "Spencer Gosch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2650,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mary Duvall",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3300,
+       "expenditures": null
+      },
+      {
+       "name": "Tim Rounds",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 4349,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dan Ahlers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15680,
+       "expenditures": null
+      },
+      {
+       "name": "Roger Hunt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9000,
+       "expenditures": null
+      },
+      {
+       "name": "Tom Pischke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9152.94,
+       "expenditures": null
+      },
+      {
+       "name": "David Haagenson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3860.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Elizabeth May",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 250,
+       "expenditures": null
+      },
+      {
+       "name": "Steve Livermont",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7120,
+       "expenditures": null
+      },
+      {
+       "name": "Red Dawn Foster",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4150,
+       "expenditures": null
+      },
+      {
+       "name": "Everette McKinley",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tom Brunner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1950,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sandra Arseneault Arseneault",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10057,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Timothy Johns",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7950,
+       "expenditures": null
+      },
+      {
+       "name": "Charles Turbiville",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6450,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kristin Conzet",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21659.84,
+       "expenditures": null
+      },
+      {
+       "name": "Sean Mcpherson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12652,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Taffy Howard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20488.69,
+       "expenditures": null
+      },
+      {
+       "name": "James Hadd",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8457,
+       "expenditures": null
+      },
+      {
+       "name": "Ethan Marsland",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Steve Stenson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1250,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lynne DiSanto",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10384.84,
+       "expenditures": null
+      },
+      {
+       "name": "Dave Freytag",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1650,
+       "expenditures": null
+      },
+      {
+       "name": "Blaine \"Chip\" Campbell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7125,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Hanson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1967,
+       "expenditures": null
+      }
+     ]
+    },
+    "28A": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Oren Lesmeister",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1800,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jason Frerichs",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 4150,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Al Novstrup",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 38457.32,
+       "expenditures": null
+      },
+      {
+       "name": "Cory Heidelberger",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20747.36,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kathy Tyler",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 25167.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Neal Tapio",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3300,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ernie Otten",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9650,
+       "expenditures": null
+      },
+      {
+       "name": "Kyle Boese",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6601.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Larry Tidemann",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32135,
+       "expenditures": null
+      },
+      {
+       "name": "Mary Perpich",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5681.28,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jordan Youngberg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 31639,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Deb Peters",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44138.77,
+       "expenditures": null
+      },
+      {
+       "name": "John Koch",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5720,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jim Powers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15675,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jim Stalzer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 11691.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "R. Blake Curd",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10000,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Deb Soholt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30026.84,
+       "expenditures": null
+      },
+      {
+       "name": "Tyler Swanger",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 8612,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Reynold Nesiba",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15234.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Chad Skiles",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1100,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Arthur Rusch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16238,
+       "expenditures": null
+      },
+      {
+       "name": "Shane Merrill",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13702.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Craig Kennedy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4010,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Joshua Klumb",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23155,
+       "expenditures": null
+      },
+      {
+       "name": "Quinten Burg",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 24295,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Billie Sutton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 46611.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jim White",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27366.8,
+       "expenditures": null
+      },
+      {
+       "name": "Eric Bliss",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 191,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kris Langer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 32526.39,
+       "expenditures": null
+      },
+      {
+       "name": "Jeff Barth",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19140.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Troy Heinert",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2850,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ryan Maher",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10400,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gary Cammack",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17800,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Robert Ewing",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "David Hubbard",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2939,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Haven Stuck",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 32924,
+       "expenditures": null
+      },
+      {
+       "name": "Phil Jensen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26874.46,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jeffrey Partridge",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 39555.6,
+       "expenditures": null
+      },
+      {
+       "name": "Jay Shultz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1370,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
+  "2018": {
+   "house": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "H Paul Dennert",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6315,
+       "expenditures": null
+      },
+      {
+       "name": "Tamara StJohn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9173,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Lana Greenfield",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6001.78,
+       "expenditures": null
+      },
+      {
+       "name": "Jenae Hansen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20546.99,
+       "expenditures": null
+      },
+      {
+       "name": "Mike McHugh",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8458,
+       "expenditures": null
+      },
+      {
+       "name": "Kaleb Weis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9013.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Brooks Briscoe",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1020,
+       "expenditures": null
+      },
+      {
+       "name": "Drew Dennert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16852,
+       "expenditures": null
+      },
+      {
+       "name": "Carl Perry",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10470.66,
+       "expenditures": null
+      },
+      {
+       "name": "Justin Roemmick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7638,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Kathy Tyler",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11923.1,
+       "expenditures": null
+      },
+      {
+       "name": "Fred Deutsch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 29412.63,
+       "expenditures": null
+      },
+      {
+       "name": "John Mills",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18593,
+       "expenditures": null
+      },
+      {
+       "name": "Jim Chilson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4385,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Hugh Bartels",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16079,
+       "expenditures": null
+      },
+      {
+       "name": "Nancy York",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9051.78,
+       "expenditures": null
+      },
+      {
+       "name": "Brett Ries",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6076,
+       "expenditures": null
+      },
+      {
+       "name": "Diana Hane",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Isaac Latterell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 981.3,
+       "expenditures": null
+      },
+      {
+       "name": "Kyle Boese",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8120,
+       "expenditures": null
+      },
+      {
+       "name": "Aaron Aylward",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 4073.39,
+       "expenditures": null
+      },
+      {
+       "name": "Nancy Kirstein",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3226.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Tim Reed",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14632,
+       "expenditures": null
+      },
+      {
+       "name": "Cory Ann Ellis",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 15997.89,
+       "expenditures": null
+      },
+      {
+       "name": "Doug Post",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12900,
+       "expenditures": null
+      },
+      {
+       "name": "Zachary Kovach",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jason Unger",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11440.11,
+       "expenditures": null
+      },
+      {
+       "name": "Chris Francis",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3578,
+       "expenditures": null
+      },
+      {
+       "name": "Randy Gross",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20440,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Deb Peters",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 24204.61,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Clark",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5250,
+       "expenditures": null
+      },
+      {
+       "name": "Toni Miller",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18465.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Dean Kurtz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Mark Willadsen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14356.3,
+       "expenditures": null
+      },
+      {
+       "name": "Chris Karr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13035.97,
+       "expenditures": null
+      },
+      {
+       "name": "Sheryl Johnson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8953,
+       "expenditures": null
+      },
+      {
+       "name": "Margaret Kuipers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2913,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Arch Beal",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24925.3,
+       "expenditures": null
+      },
+      {
+       "name": "Jeff Hayward",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18570.19,
+       "expenditures": null
+      },
+      {
+       "name": "Manny Steele",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14416.69,
+       "expenditures": null
+      },
+      {
+       "name": "Scott Petersen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 29750.97,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Sue Peterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 56838.13,
+       "expenditures": null
+      },
+      {
+       "name": "Kelly Sullivan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14191.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Larry Zikmund",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18660,
+       "expenditures": null
+      },
+      {
+       "name": "Valerie Loudenback",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9497.04,
+       "expenditures": null
+      },
+      {
+       "name": "Erin Healy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16210.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Linda Duba",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4234.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "David Anderson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 4500,
+       "expenditures": null
+      },
+      {
+       "name": "Kevin Jensen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6900,
+       "expenditures": null
+      },
+      {
+       "name": "Mike Steinbrecher",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1605,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Nancy Rasmussen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13525,
+       "expenditures": null
+      },
+      {
+       "name": "Gregory Baldwin",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 711.87,
+       "expenditures": null
+      },
+      {
+       "name": "John Gors",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15113.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jean Hunhoff",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11275,
+       "expenditures": null
+      },
+      {
+       "name": "Ryan Cwach",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 34265.95,
+       "expenditures": null
+      },
+      {
+       "name": "Max Farver",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18264.28,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Kyle Schoenfish",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14876.3,
+       "expenditures": null
+      },
+      {
+       "name": "Kent Peterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29001.3,
+       "expenditures": null
+      },
+      {
+       "name": "John Koch",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 25,
+       "expenditures": null
+      },
+      {
+       "name": "Alison Bowers",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "roger hofer",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 3891.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Lance Koth",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14082.17,
+       "expenditures": null
+      },
+      {
+       "name": "Paul Miskimins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14471,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Lee Qualm",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22806.3,
+       "expenditures": null
+      },
+      {
+       "name": "Caleb Finck",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 11506.3,
+       "expenditures": null
+      },
+      {
+       "name": "Anna Kerner Andersson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15695.45,
+       "expenditures": null
+      },
+      {
+       "name": "Faith Spotted Eagle",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1200,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Bob Glanzer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8120,
+       "expenditures": null
+      },
+      {
+       "name": "Roger Chase",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8675,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "John Lake",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7350,
+       "expenditures": null
+      },
+      {
+       "name": "Spencer Gosch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10088.42,
+       "expenditures": null
+      },
+      {
+       "name": "Eleanor Iverson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Mary Duvall",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14851.78,
+       "expenditures": null
+      },
+      {
+       "name": "Tim Rounds",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13352,
+       "expenditures": null
+      },
+      {
+       "name": "Terry Keller",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 300,
+       "expenditures": null
+      },
+      {
+       "name": "Brian Watterson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 150,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Dan Ahlers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 16920,
+       "expenditures": null
+      },
+      {
+       "name": "Tom Pischke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17389.23,
+       "expenditures": null
+      },
+      {
+       "name": "Jon Hansen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20327.77,
+       "expenditures": null
+      },
+      {
+       "name": "BJ Motley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6350,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Elizabeth May",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8379,
+       "expenditures": null
+      },
+      {
+       "name": "Steve Livermont",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5350,
+       "expenditures": null
+      },
+      {
+       "name": "Peri Pourier",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5403,
+       "expenditures": null
+      },
+      {
+       "name": "Margaret Ross",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4080.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Tom Brunner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6950,
+       "expenditures": null
+      },
+      {
+       "name": "Jade Addison",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1622.5,
+       "expenditures": null
+      },
+      {
+       "name": "Kirk Chaffee",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3600,
+       "expenditures": null
+      },
+      {
+       "name": "Michael McManus",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 155,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Julie Frye-Mueller",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1501.3,
+       "expenditures": null
+      },
+      {
+       "name": "Whitney Raver",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5806,
+       "expenditures": null
+      },
+      {
+       "name": "Karen McGregor",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14934.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Timothy Johns",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8606.29,
+       "expenditures": null
+      },
+      {
+       "name": "Charles Turbiville",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8950,
+       "expenditures": null
+      },
+      {
+       "name": "Wyatt Osthus",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3849.81,
+       "expenditures": null
+      },
+      {
+       "name": "Naveen Malik",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20591.35,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Susan Kelts",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 27881,
+       "expenditures": null
+      },
+      {
+       "name": "Scyller Borglum",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16803,
+       "expenditures": null
+      },
+      {
+       "name": "William Knight",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2172,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "David Johnson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13200,
+       "expenditures": null
+      },
+      {
+       "name": "Taffy Howard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26786.78,
+       "expenditures": null
+      },
+      {
+       "name": "Lilias Jarding",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10354.48,
+       "expenditures": null
+      },
+      {
+       "name": "Nick Reid",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 5680,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jess Olson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18299.66,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Diedrich",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 21200,
+       "expenditures": null
+      },
+      {
+       "name": "George Nelson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7407.23,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Tina Mulally",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6904.78,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Hanson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 275,
+       "expenditures": null
+      },
+      {
+       "name": "Tony Randolph",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7153.86,
+       "expenditures": null
+      }
+     ]
+    },
+    "28A": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Oren Lesmeister",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2400,
+       "expenditures": null
+      }
+     ]
+    },
+    "26A": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Shawn Bordeaux",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1000,
+       "expenditures": null
+      }
+     ]
+    },
+    "28B": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Sam Marty",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 2450,
+       "expenditures": null
+      },
+      {
+       "name": "Jason Hill",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 100,
+       "expenditures": null
+      }
+     ]
+    },
+    "26B": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Debra Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3330,
+       "expenditures": null
+      },
+      {
+       "name": "Rebecca Reimer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14345,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Susan Wismer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3997.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Paul Register",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 24.01,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Al Novstrup",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16220,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "John Wiik",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24014.26,
+       "expenditures": null
+      },
+      {
+       "name": "Dennis Evenson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17376,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Lee Schoenbeck",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8036.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Ernie Otten",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11900,
+       "expenditures": null
+      },
+      {
+       "name": "Teresa Robbins",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3544.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Mary Perpich",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 4399.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jordan Youngberg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 36286.47,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Wayne Steinhauer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14202,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Rachel Willson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6905.55,
+       "expenditures": null
+      },
+      {
+       "name": "Margaret Sutton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6563.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jim Stalzer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9672.36,
+       "expenditures": null
+      },
+      {
+       "name": "Kevin Elsing",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2803,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "R. Blake Curd",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18200,
+       "expenditures": null
+      },
+      {
+       "name": "Kasey Olivier",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 36985,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Melissa Hiatt",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14820.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Deb Soholt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32195,
+       "expenditures": null
+      },
+      {
+       "name": "Justyn Hauck",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3556.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Reynold Nesiba",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1912.64,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Elizabeth Merrigan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 991.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Arthur Rusch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11977,
+       "expenditures": null
+      },
+      {
+       "name": "Howard Grinager",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4677.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Craig Kennedy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 13995,
+       "expenditures": null
+      },
+      {
+       "name": "Roger Meyer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 21855,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Ardon Wek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13284,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Joshua Klumb",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13847.45,
+       "expenditures": null
+      },
+      {
+       "name": "Daniel Miller",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1500,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Julie Bartling",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17655,
+       "expenditures": null
+      },
+      {
+       "name": "Rocky Blare",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14800,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jim White",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15225,
+       "expenditures": null
+      },
+      {
+       "name": "Eric Bliss",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2866,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Justin Cronin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12050,
+       "expenditures": null
+      },
+      {
+       "name": "Joseph Yracheta",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 543,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jeff Monroe",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7250,
+       "expenditures": null
+      },
+      {
+       "name": "Amanda Bachmann",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1200,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Kris Langer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18183.08,
+       "expenditures": null
+      },
+      {
+       "name": "Peter Klebanoff",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 5217.6,
+       "expenditures": null
+      },
+      {
+       "name": "Brian Wirth",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1860,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Troy Heinert",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 13820,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Bill Hines",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4430.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Ryan Maher",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15850,
+       "expenditures": null
+      },
+      {
+       "name": "Alli Moran",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 300,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Gary Cammack",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18275,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Lance Russell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20580,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Sherry Bea Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13703.89,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Alan Solano",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15150,
+       "expenditures": null
+      },
+      {
+       "name": "Ayla Rodriguez",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1500,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Phil Jensen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17850,
+       "expenditures": null
+      },
+      {
+       "name": "RYAN RYDER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4821.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jeffrey Partridge",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19800,
+       "expenditures": null
+      },
+      {
+       "name": "Zach Van Wyk",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3405,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Lynne DiSanto",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15045,
+       "expenditures": null
+      },
+      {
+       "name": "Pat Cromwell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7760,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
+  "2020": {
+   "house": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Tamara StJohn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10378.2,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Lana Greenfield",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1996.87,
+       "expenditures": null
+      },
+      {
+       "name": "Kaleb Weis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 818.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Drew Dennert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 25535,
+       "expenditures": null
+      },
+      {
+       "name": "Carl Perry",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14305,
+       "expenditures": null
+      },
+      {
+       "name": "Justin Roemmick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11529.26,
+       "expenditures": null
+      },
+      {
+       "name": "Leslie McLaughlin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10783.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Fred Deutsch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13945,
+       "expenditures": null
+      },
+      {
+       "name": "John Mills",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13500,
+       "expenditures": null
+      },
+      {
+       "name": "Becky Holtquist",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3040.86,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Hugh Bartels",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13580,
+       "expenditures": null
+      },
+      {
+       "name": "Nancy York",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6846.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Ernie Otten",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23670,
+       "expenditures": null
+      },
+      {
+       "name": "Aaron Aylward",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12905.3,
+       "expenditures": null
+      },
+      {
+       "name": "Cody Ingle",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1209,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Larry Tidemann",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25672.55,
+       "expenditures": null
+      },
+      {
+       "name": "Tim Reed",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22804.49,
+       "expenditures": null
+      },
+      {
+       "name": "Bill Adamson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2000,
+       "expenditures": null
+      },
+      {
+       "name": "Louise Snodgrass",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21380.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Randy Gross",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 2289.33,
+       "expenditures": null
+      },
+      {
+       "name": "John Kessinger",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 450,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Michael Saba",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2000,
+       "expenditures": null
+      },
+      {
+       "name": "Toni Miller",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6628.08,
+       "expenditures": null
+      },
+      {
+       "name": "Bethany Soye",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 24609.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Michelle Hentschel",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18172.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Mark Willadsen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13845,
+       "expenditures": null
+      },
+      {
+       "name": "Chris Karr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19388.48,
+       "expenditures": null
+      },
+      {
+       "name": "Sheryl Johnson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17059.72,
+       "expenditures": null
+      },
+      {
+       "name": "Margaret Kuipers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5175,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Arch Beal",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26375,
+       "expenditures": null
+      },
+      {
+       "name": "Greg Jamison",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 13300,
+       "expenditures": null
+      },
+      {
+       "name": "Erin Royer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14787.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Sue Peterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41881.87,
+       "expenditures": null
+      },
+      {
+       "name": "Kelly Sullivan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 23507.1,
+       "expenditures": null
+      },
+      {
+       "name": "Richard Thomason",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 19313.13,
+       "expenditures": null
+      },
+      {
+       "name": "Norman Bliss",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17352.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Erin Healy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 48450,
+       "expenditures": null
+      },
+      {
+       "name": "Taylor Rehfeldt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 57388.54,
+       "expenditures": null
+      },
+      {
+       "name": "Mike Huber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9616.1,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Linda Duba",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 29832.68,
+       "expenditures": null
+      },
+      {
+       "name": "Matthew Rosburg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3911,
+       "expenditures": null
+      },
+      {
+       "name": "Cole Heisey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15249.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Kevin Jensen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9225,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Richard Vasgaard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20081.53,
+       "expenditures": null
+      },
+      {
+       "name": "Al Leber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1500,
+       "expenditures": null
+      },
+      {
+       "name": "Sydney Davis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 34825.4,
+       "expenditures": null
+      },
+      {
+       "name": "Caitlin Collier",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9095.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Mike Stevens",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5946.96,
+       "expenditures": null
+      },
+      {
+       "name": "Ryan Cwach",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 20371,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Kent Peterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42750,
+       "expenditures": null
+      },
+      {
+       "name": "Marty Overweg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10400,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Lance Koth",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6400,
+       "expenditures": null
+      },
+      {
+       "name": "Paul Miskimins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13039.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Caleb Finck",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12900,
+       "expenditures": null
+      },
+      {
+       "name": "Jessica Hegge",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10767.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Roger Chase",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14435.5,
+       "expenditures": null
+      },
+      {
+       "name": "Lynn Schneider",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27338.72,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Charles Hoffman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 11810.75,
+       "expenditures": null
+      },
+      {
+       "name": "Spencer Gosch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13412.06,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Amanda Bachmann",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 477.08,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Weisgram",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 33655.03,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Tom Pischke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11103.19,
+       "expenditures": null
+      },
+      {
+       "name": "Jon Hansen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17245,
+       "expenditures": null
+      },
+      {
+       "name": "Jeffrey Barth",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12370.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Elizabeth May",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6755.82,
+       "expenditures": null
+      },
+      {
+       "name": "Peri Pourier",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1584.1,
+       "expenditures": null
+      },
+      {
+       "name": "Ernest Weston Jr",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2390,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Jade Addison",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Kirk Chaffee",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16000,
+       "expenditures": null
+      },
+      {
+       "name": "Dean Wink",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9775,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Timothy Goodwin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9750,
+       "expenditures": null
+      },
+      {
+       "name": "Trish Ladner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4400,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Mary Fitzgerald",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12519.87,
+       "expenditures": null
+      },
+      {
+       "name": "SCOTT ODENBACH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26200,
+       "expenditures": null
+      },
+      {
+       "name": "Brooke Abdallah",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8131.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "James Preston",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7705.32,
+       "expenditures": null
+      },
+      {
+       "name": "Chris Johnson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1600,
+       "expenditures": null
+      },
+      {
+       "name": "Becky Drury",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15316.73,
+       "expenditures": null
+      },
+      {
+       "name": "Toni Diamond",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3579,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Taffy Howard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13081.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "David Anderson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 27700,
+       "expenditures": null
+      },
+      {
+       "name": "Jess Olson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28940,
+       "expenditures": null
+      },
+      {
+       "name": "Mike Derby",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 31130,
+       "expenditures": null
+      },
+      {
+       "name": "Rick Stracqualursi",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28528.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Tina Mulally",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9804.54,
+       "expenditures": null
+      },
+      {
+       "name": "Tony Randolph",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 4518.99,
+       "expenditures": null
+      },
+      {
+       "name": "David Hubbard",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4206.61,
+       "expenditures": null
+      },
+      {
+       "name": "Pat Cromwell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1250,
+       "expenditures": null
+      }
+     ]
+    },
+    "28A": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Oren Lesmeister",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7701.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "26A": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Shawn Bordeaux",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3700,
+       "expenditures": null
+      }
+     ]
+    },
+    "28B": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Sam Marty",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "26B": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Rebecca Reimer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12335,
+       "expenditures": null
+      },
+      {
+       "name": "Tim Feliciano",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 360,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Susan Wismer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 18818.89,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Rohl",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 28500,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Al Novstrup",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7150,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "John Wiik",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13450,
+       "expenditures": null
+      },
+      {
+       "name": "Daryl Root",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Lee Schoenbeck",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 86519.12,
+       "expenditures": null
+      },
+      {
+       "name": "Adam Jewell",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 466.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Nancy Kirstein",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1152.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Casey Crabtree",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27350,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Wayne Steinhauer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22325,
+       "expenditures": null
+      },
+      {
+       "name": "Suzanne \"Suzie\" Jones Pranger",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 31461.57,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Margaret Sutton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20079,
+       "expenditures": null
+      },
+      {
+       "name": "Nichole Cauwels",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17366.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Jim Stalzer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17750,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "R. Blake Curd",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12450,
+       "expenditures": null
+      },
+      {
+       "name": "Jessica Meyers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18468.59,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Elizabeth \"Liz\" Larson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9484.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Larry Zikmund",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 33905,
+       "expenditures": null
+      },
+      {
+       "name": "Timothy Reed",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3830,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Reynold Nesiba",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 41785.44,
+       "expenditures": null
+      },
+      {
+       "name": "Thor Bardon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3388,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Arthur Rusch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16050,
+       "expenditures": null
+      },
+      {
+       "name": "Ailee johns",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 150,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Jean Hunhoff",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 22271.95,
+       "expenditures": null
+      },
+      {
+       "name": "Jordan Foos",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12581.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Kyle Schoenfish",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5445,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Joshua Klumb",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10200,
+       "expenditures": null
+      },
+      {
+       "name": "Alexander Martin",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 99.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Erin Tobin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 22275,
+       "expenditures": null
+      },
+      {
+       "name": "Dan Kerner Andersson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8783.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "David Wheeler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6048.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Bryan Breitling",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 19667.88,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Mary Duvall",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5641.94,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Rick Knobe",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 23166.5,
+       "expenditures": null
+      },
+      {
+       "name": "Marsha Symens",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16086,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Troy Heinert",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 17237,
+       "expenditures": null
+      },
+      {
+       "name": "Joel Koskan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7398.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Red Dawn Foster",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 8741.98,
+       "expenditures": null
+      },
+      {
+       "name": "Judd Schomp",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5976.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Ryan Maher",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5000,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Gary Cammack",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24750,
+       "expenditures": null
+      },
+      {
+       "name": "Kent Wilsey",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1575,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Julie Frye-Mueller",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9785,
+       "expenditures": null
+      },
+      {
+       "name": "A. Oakes",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 10672.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Timothy Johns",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15500,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Helene Duhamel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 33014,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Calabrese",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5841.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "RYAN RYDER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6490,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Michael Diedrich",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20657.22,
+       "expenditures": null
+      },
+      {
+       "name": "George Nelson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4715.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Jessica Castleberry",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 39358.64,
+       "expenditures": null
+      },
+      {
+       "name": "Brian Gentry",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 15538.34,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
+  "2022": {
+   "house": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Tamara StJohn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9000,
+       "expenditures": null
+      },
+      {
+       "name": "Joe Donnell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 38525,
+       "expenditures": null
+      },
+      {
+       "name": "Kay Nikolas",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12126.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "John Sjaarda",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26325.6,
+       "expenditures": null
+      },
+      {
+       "name": "Gary Leighton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8151.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Carl Perry",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21159,
+       "expenditures": null
+      },
+      {
+       "name": "Brandei Schaefbauer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 28213.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Fred Deutsch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16895,
+       "expenditures": null
+      },
+      {
+       "name": "STEPHANIE SAUDER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20882.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Hugh Bartels",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 31555,
+       "expenditures": null
+      },
+      {
+       "name": "Byron Callies",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7288.34,
+       "expenditures": null
+      },
+      {
+       "name": "Kahden Mooney",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17287,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Ernie Otten",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3150,
+       "expenditures": null
+      },
+      {
+       "name": "Aaron Aylward",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 4300,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Mellissa Heermann",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 28000,
+       "expenditures": null
+      },
+      {
+       "name": "Roger DeGroot",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 22770,
+       "expenditures": null
+      },
+      {
+       "name": "Cole Sartell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2690.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "John Mills",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6150,
+       "expenditures": null
+      },
+      {
+       "name": "Tim Reisch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 40265.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Bethany Soye",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20528.56,
+       "expenditures": null
+      },
+      {
+       "name": "Ken Teunissen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27366.39,
+       "expenditures": null
+      },
+      {
+       "name": "Nicholas Winkler",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3058,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Erin Healy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 38088,
+       "expenditures": null
+      },
+      {
+       "name": "Kameron Nelson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 35310.51,
+       "expenditures": null
+      },
+      {
+       "name": "John Mogen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6010,
+       "expenditures": null
+      },
+      {
+       "name": "Tom Sutton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8772.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Chris Karr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18243.72,
+       "expenditures": null
+      },
+      {
+       "name": "Margaret Kuipers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3810,
+       "expenditures": null
+      },
+      {
+       "name": "Kimberly Parke",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6187.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Greg Jamison",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24625,
+       "expenditures": null
+      },
+      {
+       "name": "Erin Royer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 27274.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Sue Peterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 52438.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Mike Huber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16005.66,
+       "expenditures": null
+      },
+      {
+       "name": "Tyler Tordsen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 61046,
+       "expenditures": null
+      },
+      {
+       "name": "Wendy Mamer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 39224.39,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Linda Duba",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 31211.85,
+       "expenditures": null
+      },
+      {
+       "name": "Matthew Rosburg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2200,
+       "expenditures": null
+      },
+      {
+       "name": "Kadyn Wittman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 29662.28,
+       "expenditures": null
+      },
+      {
+       "name": "Joni Tschetter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14916.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Kevin Jensen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21008.64,
+       "expenditures": null
+      },
+      {
+       "name": "Karla Lems",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 31637.23,
+       "expenditures": null
+      },
+      {
+       "name": "Matthew Ness",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 701.74,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "William Shorma",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15268,
+       "expenditures": null
+      },
+      {
+       "name": "Rebecca \"Bekki\" Engquist-Schroeder",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15468.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Mike Stevens",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28225,
+       "expenditures": null
+      },
+      {
+       "name": "Ryan Cwach",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 37602.47,
+       "expenditures": null
+      },
+      {
+       "name": "Julie Auch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 30209.21,
+       "expenditures": null
+      },
+      {
+       "name": "Jay Williams",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3617,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Drew Peterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 49120,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Lance Koth",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14301,
+       "expenditures": null
+      },
+      {
+       "name": "Ben Krohmer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20090,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Marty Overweg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 2350,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Roger Chase",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17505,
+       "expenditures": null
+      },
+      {
+       "name": "Lynn Schneider",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11465,
+       "expenditures": null
+      },
+      {
+       "name": "Shane Milne",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4455,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "James Wangsness",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9100,
+       "expenditures": null
+      },
+      {
+       "name": "Scott Moore",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10614.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Michael Weisgram",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40430,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Dan Ahlers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 38620.45,
+       "expenditures": null
+      },
+      {
+       "name": "Jon Hansen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27864.99,
+       "expenditures": null
+      },
+      {
+       "name": "Randy Gross",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13755,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Elizabeth May",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10303.33,
+       "expenditures": null
+      },
+      {
+       "name": "Peri Pourier",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 26892.6,
+       "expenditures": null
+      },
+      {
+       "name": "Bud May",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2800,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Gary Cammack",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23275,
+       "expenditures": null
+      },
+      {
+       "name": "Kirk Chaffee",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22025,
+       "expenditures": null
+      },
+      {
+       "name": "Sean Natchke",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Trish Ladner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20841.16,
+       "expenditures": null
+      },
+      {
+       "name": "Dennis Krull",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17103.33,
+       "expenditures": null
+      },
+      {
+       "name": "Bret Swanson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8700,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Mary Fitzgerald",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10436,
+       "expenditures": null
+      },
+      {
+       "name": "SCOTT ODENBACH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16565.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Becky Drury",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 25703.57,
+       "expenditures": null
+      },
+      {
+       "name": "Christine Stephenson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 34842.79,
+       "expenditures": null
+      },
+      {
+       "name": "Steve Duffy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 47127.33,
+       "expenditures": null
+      },
+      {
+       "name": "jonathan old horse",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4095,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Curt Massie",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 21253.33,
+       "expenditures": null
+      },
+      {
+       "name": "Vince Vidal",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13787.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Jess Olson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 43968.9,
+       "expenditures": null
+      },
+      {
+       "name": "Mike Derby",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 51435,
+       "expenditures": null
+      },
+      {
+       "name": "Darla Drew",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18368,
+       "expenditures": null
+      },
+      {
+       "name": "Jay Shultz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Tina Mulally",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21056.23,
+       "expenditures": null
+      },
+      {
+       "name": "Tony Randolph",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11948.33,
+       "expenditures": null
+      },
+      {
+       "name": "David Hubbard",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3121.49,
+       "expenditures": null
+      },
+      {
+       "name": "Pat Cromwell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 600,
+       "expenditures": null
+      }
+     ]
+    },
+    "28A": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Oren Lesmeister",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 16375,
+       "expenditures": null
+      },
+      {
+       "name": "Ralph Lyon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5900,
+       "expenditures": null
+      }
+     ]
+    },
+    "26B": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Rebecca Reimer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9454.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "28B": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Neal Pinnow",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 21480,
+       "expenditures": null
+      },
+      {
+       "name": "Calvin Reilly",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 2000,
+       "expenditures": null
+      }
+     ]
+    },
+    "26A": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Joyce Glynn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2500,
+       "expenditures": null
+      },
+      {
+       "name": "Eric Emery",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3715,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Susan Wismer",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 35402.03,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Rohl",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 90223.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Steve Kolbeck",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 30476.56,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Al Novstrup",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20020,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "John Wiik",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6200,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Lee Schoenbeck",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 108560,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Tim Reed",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 33150,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Casey Crabtree",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 49003,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Brent Hoffman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26370,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Margaret Sutton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27704.83,
+       "expenditures": null
+      },
+      {
+       "name": "Elizabeth \"Liz\" Larson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 67466.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Jim Stalzer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17925,
+       "expenditures": null
+      },
+      {
+       "name": "Sheryl Johnson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19861,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Arch Beal",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 49750,
+       "expenditures": null
+      },
+      {
+       "name": "Jessica Meyers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 32663.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Lora Hubbel",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 4000,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Larry Zikmund",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41375,
+       "expenditures": null
+      },
+      {
+       "name": "Matthew Tysdal",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 40655.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Reynold Nesiba",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 67081.93,
+       "expenditures": null
+      },
+      {
+       "name": "Brenda Lawrence",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 11500,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Donn Larson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10704.19,
+       "expenditures": null
+      },
+      {
+       "name": "Brian Burge",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 2938.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Sydney Davis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 19913.78,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Frederick Bender",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6594,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Kyle Schoenfish",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11250,
+       "expenditures": null
+      },
+      {
+       "name": "Russell Graeff",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 389.03,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Joshua Klumb",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3250,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Erin Tobin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29410.43,
+       "expenditures": null
+      },
+      {
+       "name": "Dan Kerner Andersson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1684.94,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "David Wheeler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6300,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Bryan Breitling",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10913.57,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Jim Mehlhaff",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15589,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Shawn Bordeaux",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14760,
+       "expenditures": null
+      },
+      {
+       "name": "Joel Koskan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Red Dawn Foster",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 25266.85,
+       "expenditures": null
+      },
+      {
+       "name": "David Jones",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 21500,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Ryan Maher",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3250,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Julie Frye-Mueller",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7661,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Randy Deibert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 19823,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Helene Duhamel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44997.42,
+       "expenditures": null
+      },
+      {
+       "name": "Nicole Heenan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 800.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "David Johnson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 45491.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Jessica Castleberry",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26035,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
+  "2024": {
+   "house": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Logan Manhart",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 31612.4,
+       "expenditures": null
+      },
+      {
+       "name": "Christopher Reder",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17200,
+       "expenditures": null
+      },
+      {
+       "name": "Josh Dennert",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 2053.97,
+       "expenditures": null
+      },
+      {
+       "name": "Tamara Lesnar",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 313,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "John Sjaarda",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21256,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Al Novstrup",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 13183,
+       "expenditures": null
+      },
+      {
+       "name": "Brandei Schaefbauer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22915.77,
+       "expenditures": null
+      },
+      {
+       "name": "Erin Rudner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 52216.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Kent Roe",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12480.17,
+       "expenditures": null
+      },
+      {
+       "name": "Dylan Jordan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3400,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Matt Roby",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 78458.03,
+       "expenditures": null
+      },
+      {
+       "name": "Josephine Garcia",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23470.27,
+       "expenditures": null
+      },
+      {
+       "name": "Amy Rambow",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Diane Drake",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Aaron Aylward",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11400,
+       "expenditures": null
+      },
+      {
+       "name": "Garret Campbell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 41,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Mellissa Heermann",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 35221.11,
+       "expenditures": null
+      },
+      {
+       "name": "Roger DeGroot",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30810,
+       "expenditures": null
+      },
+      {
+       "name": "Blake Stevens",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3480,
+       "expenditures": null
+      },
+      {
+       "name": "Fedora Sutton-Butler",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5658.48,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Tim Reisch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37725,
+       "expenditures": null
+      },
+      {
+       "name": "Tim Walburg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20351.98,
+       "expenditures": null
+      },
+      {
+       "name": "Greg Zimmerman",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Bethany Soye",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18799.83,
+       "expenditures": null
+      },
+      {
+       "name": "Beverly Johnson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Tesa Schwans",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 13080.27,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Erin Healy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 19610.15,
+       "expenditures": null
+      },
+      {
+       "name": "Kameron Nelson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 19664.71,
+       "expenditures": null
+      },
+      {
+       "name": "Bobbi Andera",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6005.52,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Brian Mulder",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18310,
+       "expenditures": null
+      },
+      {
+       "name": "Aaron Matson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28928.24,
+       "expenditures": null
+      },
+      {
+       "name": "Sonja Mentzer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12453.5,
+       "expenditures": null
+      },
+      {
+       "name": "Keri Weems",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 28134,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Greg Jamison",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37175,
+       "expenditures": null
+      },
+      {
+       "name": "Erin Royer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5859.1,
+       "expenditures": null
+      },
+      {
+       "name": "Amber Arlint",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 55450,
+       "expenditures": null
+      },
+      {
+       "name": "JR Anderson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 946.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "John Hughes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 57569.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Taylor Rehfeldt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 101717.89,
+       "expenditures": null
+      },
+      {
+       "name": "Tony Kayser",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16966.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Kadyn Wittman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 31156.87,
+       "expenditures": null
+      },
+      {
+       "name": "Joni Tschetter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16761.76,
+       "expenditures": null
+      },
+      {
+       "name": "Brad Lindwurm",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14019.51,
+       "expenditures": null
+      },
+      {
+       "name": "Erik Muckey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 54242.67,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Richard Vasgaard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26675,
+       "expenditures": null
+      },
+      {
+       "name": "Karla Lems",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27630.98,
+       "expenditures": null
+      },
+      {
+       "name": "Matthew Ness",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "William Shorma",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15700,
+       "expenditures": null
+      },
+      {
+       "name": "Ray Ring",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8005.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Mike Stevens",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 57135,
+       "expenditures": null
+      },
+      {
+       "name": "Julie Auch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39391,
+       "expenditures": null
+      },
+      {
+       "name": "Paul Harens",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 65229.91,
+       "expenditures": null
+      },
+      {
+       "name": "Sarah Mechtenberg",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Drew Peterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 55306.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Jeff Bathke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7214,
+       "expenditures": null
+      },
+      {
+       "name": "Kaley Nolz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1250,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Marty Overweg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12240,
+       "expenditures": null
+      },
+      {
+       "name": "James Halverson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20440,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Lana Greenfield",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10300,
+       "expenditures": null
+      },
+      {
+       "name": "Kevin Van Diepen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10460,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Scott Moore",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15350,
+       "expenditures": null
+      },
+      {
+       "name": "Spencer Gosch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13975,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Will Mortenson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 38085,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Weisgram",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12800,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Elizabeth May",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3125,
+       "expenditures": null
+      },
+      {
+       "name": "Peri Pourier",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2000,
+       "expenditures": null
+      },
+      {
+       "name": "Elsie Meeks",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10147,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Kathy Rice",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17975,
+       "expenditures": null
+      },
+      {
+       "name": "Terri Jorgenson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8099,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Trish Ladner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28155.83,
+       "expenditures": null
+      },
+      {
+       "name": "Susan Scheirbeck",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8905.83,
+       "expenditures": null
+      },
+      {
+       "name": "Tim Goodwin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22750,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Mary Fitzgerald",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32273.27,
+       "expenditures": null
+      },
+      {
+       "name": "SCOTT ODENBACH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21920,
+       "expenditures": null
+      },
+      {
+       "name": "Victoria Greenlee",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 8966.38,
+       "expenditures": null
+      },
+      {
+       "name": "Shana McVickers",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1248,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Steve Duffy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 61540.54,
+       "expenditures": null
+      },
+      {
+       "name": "Brook Kaufman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 53450,
+       "expenditures": null
+      },
+      {
+       "name": "Nicole Uhre-Balk",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30618.55,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Curt Massie",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7850,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Mike Derby",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 59973.13,
+       "expenditures": null
+      },
+      {
+       "name": "Heather Baxter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18633.13,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Tina Mulally",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 117141.27,
+       "expenditures": null
+      },
+      {
+       "name": "Tony Randolph",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5995.99,
+       "expenditures": null
+      },
+      {
+       "name": "Pat Cromwell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "26B": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Rebecca Reimer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32390,
+       "expenditures": null
+      },
+      {
+       "name": "David Reis",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 9684.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "26A": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Eric Emery",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 6375,
+       "expenditures": null
+      },
+      {
+       "name": "Ronald Frederick",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 500,
+       "expenditures": null
+      },
+      {
+       "name": "William Lafferty",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "28A": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Jana Hunt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18551,
+       "expenditures": null
+      },
+      {
+       "name": "CARL PETERSEN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9984.78,
+       "expenditures": null
+      }
+     ]
+    },
+    "28B": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Travis Ismay",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3192.99,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Michael Rohl",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26050,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Steve Kolbeck",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16880.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Carl Perry",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 41669.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Ernie Otten",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2750,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Tim Reed",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24360,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Casey Crabtree",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 89100,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Joy Hohn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 24433.98,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Elizabeth \"Liz\" Larson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 18796.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Chris Karr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26660.37,
+       "expenditures": null
+      },
+      {
+       "name": "Steve Natz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Arch Beal",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 52750,
+       "expenditures": null
+      },
+      {
+       "name": "Clay Hoffman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 69292.74,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Sue Peterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 91730.27,
+       "expenditures": null
+      },
+      {
+       "name": "Ali Horsted",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 37422,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Larry Zikmund",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42305,
+       "expenditures": null
+      },
+      {
+       "name": "Sandra Henry",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 64866,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Brenda Lawrence",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4945,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Kevin Jensen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16323.48,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Sydney Davis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 51098.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Lauren Nelson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 44267,
+       "expenditures": null
+      },
+      {
+       "name": "Sarah Carda",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28432.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Kyle Schoenfish",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28550,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Miller",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 2650,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Paul Miskimins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12075,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Dan Kerner Andersson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 450,
+       "expenditures": null
+      },
+      {
+       "name": "Mykala Voita",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17695.27,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "David Wheeler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9200,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Mark Lapka",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Jim Mehlhaff",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12700,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Tom Pischke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32886.75,
+       "expenditures": null
+      },
+      {
+       "name": "Brian Wirth",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 750,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Shawn Bordeaux",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3700,
+       "expenditures": null
+      },
+      {
+       "name": "Tamara Grove",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 19600,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Red Dawn Foster",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 29569,
+       "expenditures": null
+      },
+      {
+       "name": "Anthony Kathol",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25294.56,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Dean Schrempp",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Shane Farlee",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "John Carley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7798.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Amber Hulse",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2981.81,
+       "expenditures": null
+      },
+      {
+       "name": "Bret Swanson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30720.56,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Randy Deibert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24050,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Helene Duhamel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 81867.65,
+       "expenditures": null
+      },
+      {
+       "name": "Karen McNeal",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 20625,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Curt Voight",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17001.36,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Taffy Howard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 66065.27,
+       "expenditures": null
+      },
+      {
+       "name": "Kehala Two Bulls",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 31547,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Greg Blanc",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 19580.73,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
+  "2026": {
+   "house": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Nicholas Fosness",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24900,
+       "expenditures": null
+      },
+      {
+       "name": "Danny Kjos",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16790.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Adam Long",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26615,
+       "expenditures": null
+      },
+      {
+       "name": "Manuel Luschas",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17099.39,
+       "expenditures": null
+      },
+      {
+       "name": "Blake Rife",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Erin Rudner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8137.27,
+       "expenditures": null
+      },
+      {
+       "name": "Spencer Sommers",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 52999.08,
+       "expenditures": null
+      },
+      {
+       "name": "Timothy Hanigan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 52110.03,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Fred Deutsch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23116.97,
+       "expenditures": null
+      },
+      {
+       "name": "Samuel Froehlke",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 2500,
+       "expenditures": null
+      },
+      {
+       "name": "Ryan Kohl",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12210,
+       "expenditures": null
+      },
+      {
+       "name": "Emelia Enquist",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2887.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Byron Callies",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2000,
+       "expenditures": null
+      },
+      {
+       "name": "Matt Roby",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22600,
+       "expenditures": null
+      },
+      {
+       "name": "Neal Tapio",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Garret Campbell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 767.42,
+       "expenditures": null
+      },
+      {
+       "name": "Austin Wolf",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1106.15,
+       "expenditures": null
+      },
+      {
+       "name": "Elliott Neff",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12349,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Mellissa Heermann",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16215.15,
+       "expenditures": null
+      },
+      {
+       "name": "Roger DeGroot",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20530,
+       "expenditures": null
+      },
+      {
+       "name": "Blake Stevens",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 225,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Todd Wilkinson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26620,
+       "expenditures": null
+      },
+      {
+       "name": "Jon Nelson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 28740.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Tesa Schwans",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11029.93,
+       "expenditures": null
+      },
+      {
+       "name": "Amanda Potter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7298.21,
+       "expenditures": null
+      },
+      {
+       "name": "Megan Tschetter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3567.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Adam Bair",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3317.65,
+       "expenditures": null
+      },
+      {
+       "name": "Kimberly Petterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6825.13,
+       "expenditures": null
+      },
+      {
+       "name": "Kathleen Brudvig",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28762,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Brian Mulder",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24880,
+       "expenditures": null
+      },
+      {
+       "name": "Sonja Mentzer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2341.82,
+       "expenditures": null
+      },
+      {
+       "name": "Keri Weems",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20068.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Amber Arlint",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 58300,
+       "expenditures": null
+      },
+      {
+       "name": "Kerry Loudenslager",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 28107.51,
+       "expenditures": null
+      },
+      {
+       "name": "Stephanie Arne",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3428,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "John Hughes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 23106.79,
+       "expenditures": null
+      },
+      {
+       "name": "Ali Horsted",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5438.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Taylor Rehfeldt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 64706.79,
+       "expenditures": null
+      },
+      {
+       "name": "Tyler Tordsen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 43037,
+       "expenditures": null
+      },
+      {
+       "name": "Erinn Williams",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 41957.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Kadyn Wittman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 6526.89,
+       "expenditures": null
+      },
+      {
+       "name": "Joni Tschetter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 100,
+       "expenditures": null
+      },
+      {
+       "name": "June CopperStad",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1140,
+       "expenditures": null
+      },
+      {
+       "name": "Andre Zachariahs",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 439.96,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "John Shubeck",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14050,
+       "expenditures": null
+      },
+      {
+       "name": "Lisa Bogue",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 19534.25,
+       "expenditures": null
+      },
+      {
+       "name": "Tim Rhead",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10208.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Austin Brunick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1344.14,
+       "expenditures": null
+      },
+      {
+       "name": "Leslie Gerrish",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11216.73,
+       "expenditures": null
+      },
+      {
+       "name": "Troy Redler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23248.03,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Mike Stevens",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 52035,
+       "expenditures": null
+      },
+      {
+       "name": "John Marquardt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27900,
+       "expenditures": null
+      },
+      {
+       "name": "Karen Springer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11932.14,
+       "expenditures": null
+      },
+      {
+       "name": "Jarod Holcomb",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 450,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Drew Peterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 33549,
+       "expenditures": null
+      },
+      {
+       "name": "Heidi Hora",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1600,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Jeff Bathke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6800,
+       "expenditures": null
+      },
+      {
+       "name": "Terry Sabers",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5650,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Marty Overweg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11560,
+       "expenditures": null
+      },
+      {
+       "name": "James Halverson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 23894.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Lana Greenfield",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1600,
+       "expenditures": null
+      },
+      {
+       "name": "Kevin Van Diepen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10900,
+       "expenditures": null
+      },
+      {
+       "name": "Cully Williams",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2910.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Spencer Gosch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 950,
+       "expenditures": null
+      },
+      {
+       "name": "Dick Werner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4550,
+       "expenditures": null
+      },
+      {
+       "name": "Garett Heinz",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Michael Weisgram",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 48800,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Carrie Sanderson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 28359.45,
+       "expenditures": null
+      },
+      {
+       "name": "Nick Buchholz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8560,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Elizabeth May",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1100,
+       "expenditures": null
+      },
+      {
+       "name": "Joe Flood",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 197.98,
+       "expenditures": null
+      },
+      {
+       "name": "Elizabeth Lone Eagle",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Jay Yohner",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Gary Cammack",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20350,
+       "expenditures": null
+      },
+      {
+       "name": "Gary Deering",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 28517.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Trish Ladner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10865.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Mary Fitzgerald",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1500,
+       "expenditures": null
+      },
+      {
+       "name": "SCOTT ODENBACH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 4600,
+       "expenditures": null
+      },
+      {
+       "name": "Morgan Plucker",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5762.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Steve Duffy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26022.89,
+       "expenditures": null
+      },
+      {
+       "name": "Nicole Uhre-Balk",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 14111,
+       "expenditures": null
+      },
+      {
+       "name": "Zachary Martin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 150,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Curt Massie",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27353.71,
+       "expenditures": null
+      },
+      {
+       "name": "Kari Hall",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1459.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Becky Drury",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 31585,
+       "expenditures": null
+      },
+      {
+       "name": "Mike Derby",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42110.94,
+       "expenditures": null
+      },
+      {
+       "name": "Victor Dominquez",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 638.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Dale Bartscher",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27035,
+       "expenditures": null
+      },
+      {
+       "name": "Ken Jeakins",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 515.14,
+       "expenditures": null
+      },
+      {
+       "name": "Jason Fleming",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 11556,
+       "expenditures": null
+      }
+     ]
+    },
+    "26A": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Eric Emery",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1974,
+       "expenditures": null
+      }
+     ]
+    },
+    "28A": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Jana Hunt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3100,
+       "expenditures": null
+      }
+     ]
+    },
+    "28B": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Travis Ismay",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6823.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "26B": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Angi Hanzlik",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 24586.5,
+       "expenditures": null
+      },
+      {
+       "name": "Lewis GrassRope",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 512.14,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Michael Rohl",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5250,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "John Sjaarda",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18921.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Katherine Washnok",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 65818,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Ernie Otten",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5277.1,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Tim Reed",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3800,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Casey Crabtree",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12050,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Joy Hohn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15437.97,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Elizabeth \"Liz\" Larson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7964.65,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Dupic",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2030.55,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Chris Karr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22800,
+       "expenditures": null
+      },
+      {
+       "name": "Aaron Matson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9394.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Kari Shanard-Koenders",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1200,
+       "expenditures": null
+      },
+      {
+       "name": "Joseph Zweifel",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3531,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Sue Peterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29385,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Larry Zikmund",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26584,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Brenda Lawrence",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Erik Muckey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20598.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Kevin Jensen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 2819.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Sydney Davis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 57981.48,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Lauren Nelson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 31455,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Kyle Schoenfish",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13200,
+       "expenditures": null
+      },
+      {
+       "name": "Russell Graeff",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Paul Miskimins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1850,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Dan Kerner Andersson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Mykala Voita",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17300,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Brandon Wipf",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22370.12,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Mark Lapka",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1150,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Jim Mehlhaff",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34886.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Bryan Breitling",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 37925,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Shawn Bordeaux",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3400,
+       "expenditures": null
+      },
+      {
+       "name": "Rebecca Reimer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 36615.06,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Peri Pourier",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1500,
+       "expenditures": null
+      },
+      {
+       "name": "Anthony Kathol",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2051.83,
+       "expenditures": null
+      },
+      {
+       "name": "Celestine Stadnick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "William Meirose",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 31012,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Amber Hulse",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 47981.07,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Randy Deibert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20321,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Helene Duhamel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44596.15,
+       "expenditures": null
+      },
+      {
+       "name": "Jeff Shelton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3277.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Christopher Baumgartner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1842.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Taffy Howard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 51953.5,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Calabrese",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1257.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+     "dataThrough": "10/17/2026",
+     "candidates": [
+      {
+       "name": "Greg Blanc",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8547,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  }
+ },
  "TN": {
   "2016": {
    "house": {
@@ -628107,6 +641447,2358 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   }
  },
  "WV": {
+  "2016": {
+   "house": {
+    "1": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "RONNIE D. JONES",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18900,
+       "expenditures": null
+      },
+      {
+       "name": "PAT MCGEEHAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14795,
+       "expenditures": null
+      },
+      {
+       "name": "MARK ZATEZALO",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "ROBERT \"CHIC\" DICICCIO",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1000,
+       "expenditures": null
+      },
+      {
+       "name": "PHILLIP W DISERIO",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 46648.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "SHAWN FLUHARTY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 56934.6,
+       "expenditures": null
+      },
+      {
+       "name": "SCOTT REED",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 30947.74,
+       "expenditures": null
+      },
+      {
+       "name": "ERIKKA STORCH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 45522.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JOE CANESTRARO",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 35674.17,
+       "expenditures": null
+      },
+      {
+       "name": "DAVID A. EVANS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20632.37,
+       "expenditures": null
+      },
+      {
+       "name": "MIKE FERRO",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "DEL T. KELLEY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "DAVE PETHTEL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "PHILLIP W. WILEY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "T. CHRIS COMBS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5014.98,
+       "expenditures": null
+      },
+      {
+       "name": "WM. ROGER ROMINE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MARK HARPER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11023.12,
+       "expenditures": null
+      },
+      {
+       "name": "JASON S. HARSHBARGER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7300,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "BILL ANDERSON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "DAVID BLAND",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "RAY HOLLEN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JIM MARION",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7200,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "VERNON CRISS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "ANDY DANIEL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "FRANK DEEM",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JOHN R. KELLY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "BILL MERRIMAN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MARTIN \"RICK\" ATKINSON III",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JAMES L. (JIM) CROWDER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MISSY MORRIS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 25097.04,
+       "expenditures": null
+      },
+      {
+       "name": "STEVE WESTFALL",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32120,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "SCOTT BREWER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 79714.95,
+       "expenditures": null
+      },
+      {
+       "name": "JOSHUA KURT HIGGINBOTHAM",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 13974.01,
+       "expenditures": null
+      },
+      {
+       "name": "MICHAEL IHLE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11207.24,
+       "expenditures": null
+      },
+      {
+       "name": "ROSALEE JUBA-PLUMLEY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JIM BUTLER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "SAMANTHA ANN FOOCE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 27210.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "GEOFF FOSTER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30865.84,
+       "expenditures": null
+      },
+      {
+       "name": "JEFFERY SMITH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JOE AKERS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "DALE ANDERSON II",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "\"NAOMI SPENCER\" DALY",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "SEAN HORNBUCKLE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "CAROL MILLER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "C. E. \"CHUCK\" ROMINE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "MATT SPURLOCK",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10363.2,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "ANNE BROCKUS DANDELET",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JOE M. FINCHAM",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7157.97,
+       "expenditures": null
+      },
+      {
+       "name": "CHAD LOVEJOY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 84858.75,
+       "expenditures": null
+      },
+      {
+       "name": "MATTHEW ROHRBACH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "BILLY J. CHAFFIN II",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "KELLI SOBONYA",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JOHN D. CREAMER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3030,
+       "expenditures": null
+      },
+      {
+       "name": "DERRICK EVANS",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "KEN HICKS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 26260,
+       "expenditures": null
+      },
+      {
+       "name": "MARK ROSS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "ROBERT THOMPSON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14175,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MICHAEL J. BAISDEN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JUSTIN J. MARCUM",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MARK DEAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "PHYLLIS RIFFE WHITE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JEFF ELDRIDGE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "ZACK MAYNARD",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "GARY MCCALLISTER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 48800.37,
+       "expenditures": null
+      },
+      {
+       "name": "MICHEL G. MOFFATT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9725,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "DANIEL BELCHER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "RODNEY A. MILLER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 23631.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "RUPERT \"RUPIE\" PHILLIPS JR",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "RALPH RODIGHIERO",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "AARON STONE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1765.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRANK \"BUCKY\" BLACKWELL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "TONY PAYNTER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "ED EVANS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "BRIAN HARRISON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CAROL B. BAILEY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JOE C. ELLINGTON, JR",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "MARTY GEARHEART",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JOHN H. SHOTT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "SABRINA SHRADER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 31382.52,
+       "expenditures": null
+      },
+      {
+       "name": "LACY WATSON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "ROY G. COOPER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JOHN DAVID O'NEAL IV",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 97142.62,
+       "expenditures": null
+      },
+      {
+       "name": "WAYNE WILLIAMS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "RICKY MOYE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "GREG WOOD",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MICK BATES",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "TODD A. KIRBY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6358.04,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "LYNNE ARVON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "KRISTEN E. ROSS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "TOM FAST",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10555,
+       "expenditures": null
+      },
+      {
+       "name": "AUSTIN HAYNES",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "KAYLA KESSINGER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "MR. SHIRLEY LOVE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JOHN PINO",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "TRAVIS SIMMS",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "MARGARET ANNE STAGGERS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "ROGER HANSHAW",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 54987.54,
+       "expenditures": null
+      },
+      {
+       "name": "DAVID A WALKER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "BRENT BOGGS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "BEN ADAMS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 49754.14,
+       "expenditures": null
+      },
+      {
+       "name": "ANDREW D. BYRD",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 59808.4,
+       "expenditures": null
+      },
+      {
+       "name": "MOORE CAPITO",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 143799.8,
+       "expenditures": null
+      },
+      {
+       "name": "THORNTON COOPER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "CHARLOTTE R. LANE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "ERIC NELSON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "KEITH PAULEY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "BENJAMIN M. SHERIDAN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "NANCY GUTHRIE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 45000.14,
+       "expenditures": null
+      },
+      {
+       "name": "ADAM MARCUM",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 137.69,
+       "expenditures": null
+      },
+      {
+       "name": "ELIZABETH RHULE",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "ANDREW ROBINSON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 181210.62,
+       "expenditures": null
+      },
+      {
+       "name": "LARRY L. ROWE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 50079.1,
+       "expenditures": null
+      },
+      {
+       "name": "CHELSEA WALKER-GASKINS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16260.99,
+       "expenditures": null
+      },
+      {
+       "name": "BRAD WHITE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "THOMAS W. GOODMAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8935,
+       "expenditures": null
+      },
+      {
+       "name": "MIKE PUSHKIN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 61822.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "NANCY REAGAN FOSTER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 40328.64,
+       "expenditures": null
+      },
+      {
+       "name": "TOM TULL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21260,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "WES HOLDEN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 32192,
+       "expenditures": null
+      },
+      {
+       "name": "RON WALTERS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "TIM ARMSTEAD",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 92570.6,
+       "expenditures": null
+      },
+      {
+       "name": "MELISSA RIGGS HUFFMAN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 31394.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JORDAN HILL",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13300,
+       "expenditures": null
+      },
+      {
+       "name": "ADAM R. YOUNG",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22775,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "GEORGE BOOGIE AMBLER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16190.96,
+       "expenditures": null
+      },
+      {
+       "name": "STEPHEN BALDWIN, JR.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21495.21,
+       "expenditures": null
+      },
+      {
+       "name": "RAY CANTERBURY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "ALAN BALOGH",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "BILL HARTMAN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "PHIL ISNER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "PHILLIPS BRUCE KOLSUN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2392.94,
+       "expenditures": null
+      },
+      {
+       "name": "CLAYTON D. MOORE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "DUANE BORCHERS, SR",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "BARBARA DANIELS",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "DANA L LYNCH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 14800,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "BILL HAMILTON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "TOM THACKER",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "PATRICK S. MARTIN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "PEGGY DONALDSON SMITH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "KEN AUVIL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "DANNY WAGNER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "DANNY HAMRICK",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28970,
+       "expenditures": null
+      },
+      {
+       "name": "RICHARD J. IAQUINTA",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "DEREK MCINTYRE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 32319.52,
+       "expenditures": null
+      },
+      {
+       "name": "TIM MILEY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 74837,
+       "expenditures": null
+      },
+      {
+       "name": "BEN QUEEN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "TERRY WAXMAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "RICHARD A \"RICK\" WOLFE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "WAYNE WORTH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "DAVE GOBEL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "AMY SUMMERS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MIKE CAPUTO",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JON DODDS",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "LINDA LONGSTRETH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "PHIL MALLOW",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "TIM MANCHIN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "BOBBIE DAMON TRIPLETT II",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "GUY WARD",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MICHAEL ACEVEDO",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "ERIC FINCH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2680,
+       "expenditures": null
+      },
+      {
+       "name": "BARBARA EVANS FLEISCHAUER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 83288.3,
+       "expenditures": null
+      },
+      {
+       "name": "CINDY FRICH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "EVAN HANSEN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 84901.71,
+       "expenditures": null
+      },
+      {
+       "name": "NANCY JAMISON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22466,
+       "expenditures": null
+      },
+      {
+       "name": "RODNEY A. PYLES",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "ROGER SHUTTLESWORTH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JOE STATLER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 49896.11,
+       "expenditures": null
+      },
+      {
+       "name": "EDDIE WAGONER",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JOHN WILLIAMS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 48022.06,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "STEVE SHAFFER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20900,
+       "expenditures": null
+      },
+      {
+       "name": "TERRI FUNK SYPOLT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 13132.03,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "TONY J. LEWIS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "AL TOMSON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12837.98,
+       "expenditures": null
+      }
+     ]
+    },
+    "54": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "ALLEN V. EVANS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "TONYA PERSINGER",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "STEPHEN G. SMITH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "ISAAC SPONAUGLE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "GARY G. HOWELL",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19045.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "BEVERLY COOKMAN KEADLE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "RUTH ROWAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "DARYL E. COWLES",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "59": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "SAIRA BLAIR",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13114.48,
+       "expenditures": null
+      },
+      {
+       "name": "CAT WEBSTER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13290.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "GARY \"PEANUT\" COLLIS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "61": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JASON BARRETT",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20520.32,
+       "expenditures": null
+      },
+      {
+       "name": "TRAVIS BISHOP",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4180,
+       "expenditures": null
+      }
+     ]
+    },
+    "62": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JOHN OVERINGTON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17370.06,
+       "expenditures": null
+      },
+      {
+       "name": "CHRISTY SANTANA",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7882.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "63": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MICHAEL \"MIKE\" FOLK",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11072.22,
+       "expenditures": null
+      },
+      {
+       "name": "KENNETH (KENNY) LEMASTER, JR.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "64": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "BARBARA \"BARBY\" FRANKENBERRY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 32784.07,
+       "expenditures": null
+      },
+      {
+       "name": "ERIC LEE HOUSEHOLDER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 31756,
+       "expenditures": null
+      }
+     ]
+    },
+    "65": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "SAMMI BROWN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "JILL UPSON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 31660.64,
+       "expenditures": null
+      }
+     ]
+    },
+    "66": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "DAVID M. DINGES",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12811.3,
+       "expenditures": null
+      },
+      {
+       "name": "PAUL A. ESPINOSA",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32175,
+       "expenditures": null
+      }
+     ]
+    },
+    "67": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "RILEY MOORE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 133323.09,
+       "expenditures": null
+      },
+      {
+       "name": "ROD SNYDER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 95070.34,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "RYAN W. WELD",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 77439.46,
+       "expenditures": null
+      },
+      {
+       "name": "JACK YOST",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 113541.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MIKE MARONEY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "H JOHN ROGERS",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "LISA ZUKOFF",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 91694.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MITCH B. CARMICHAEL",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 158056,
+       "expenditures": null
+      },
+      {
+       "name": "BRIAN PRIM",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 93972,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "ROBERT H. \"BOB\" PLYMALE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "TYSON SMITH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "ROCKWELL \"ROCKY\" SEAY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 34860,
+       "expenditures": null
+      },
+      {
+       "name": "CHANDLER SWOPE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JORDAN RAY BRIDGES",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10492,
+       "expenditures": null
+      },
+      {
+       "name": "RICHARD N. OJEDA II",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30821.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "GLENN JEFFRIES",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "CHRIS WALTERS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "SUE CLINE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 48999.34,
+       "expenditures": null
+      },
+      {
+       "name": "D. MICHAEL \"MIKE\" GOODE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 61520,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "KENNY W. MANN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 19322.3,
+       "expenditures": null
+      },
+      {
+       "name": "DAVE PERRY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "GREG BOSO",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 87381,
+       "expenditures": null
+      },
+      {
+       "name": "DENISE CAMPBELL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 84369,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRANKLIN D. CORNETTE, II",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "DOUG FACEMIRE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 82523.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "BARRY BLEDSOE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 551,
+       "expenditures": null
+      },
+      {
+       "name": "ROMAN W. PREZIOSO, JR.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "RANDY E SMITH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 123680.68,
+       "expenditures": null
+      },
+      {
+       "name": "BOB WILLIAMS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 136588.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CRAIG P. BLAIR",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 47032.75,
+       "expenditures": null
+      },
+      {
+       "name": "BRAD NOLL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15385,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "PATRICIA RUCKER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 104037.8,
+       "expenditures": null
+      },
+      {
+       "name": "STEPHEN SKINNER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 213453.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COREY PALUMBO",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 272079.74,
+       "expenditures": null
+      },
+      {
+       "name": "CHRIS STANSBURY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 95272.68,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
   "2018": {
    "house": {
     "1": {

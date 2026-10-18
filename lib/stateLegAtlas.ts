@@ -303,6 +303,31 @@ export function fieldPersons(c: StateLegDistrictCandidates2026, sitting: { name:
   return [...byKey.values()];
 }
 
+/**
+ * A 2026 nominee's projected share, as the atlas and the state page show it. Where the race is one
+ * nominee per party on the ballot, each takes their party's slice of the projected votes (the chamber
+ * popular vote's raw split) and the share is of all votes cast; where only a two-party margin applies
+ * (a post, several nominees of one party), the two-party share alone. Null for write-ins and any
+ * field the projection doesn't split.
+ */
+export function projectedNomineeShare(
+  x: StateLegCandidate2026,
+  cands: StateLegCandidate2026[],
+  multiPost: boolean,
+  margin: number | null,
+  votes: { total: number; dem: number; rep: number; oth: number } | undefined,
+): { share: number; votes: number | null } | null {
+  if (x.writeIn) return null;
+  const real = cands.filter((y) => !y.writeIn);
+  const count = (p: string) => real.filter((y) => y.party === p).length;
+  if (votes && votes.total > 0 && !multiPost && count("D") <= 1 && count("R") <= 1 && count("O") <= 1) {
+    const v = x.party === "D" ? votes.dem : x.party === "R" ? votes.rep : votes.oth;
+    if (v > 0) return { share: (v / votes.total) * 100, votes: v };
+  }
+  if (margin == null || real.length !== 2 || count("D") !== 1 || count("R") !== 1) return null;
+  return x.party === "D" ? { share: 50 - margin / 2, votes: null } : x.party === "R" ? { share: 50 + margin / 2, votes: null } : null;
+}
+
 /** How a 2026 field reads for the selector and the header: who is in it and whether both majors are. */
 export function contest2026(c: StateLegDistrictCandidates2026 | undefined, sitting: { name: string; party: string }[] = []): { label: string; status: "contested" | "uncontested-D" | "uncontested-R" | "none" | "other"; open: boolean } | null {
   if (!c) return null;

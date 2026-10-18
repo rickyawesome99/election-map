@@ -6,19 +6,23 @@ import type { Chamber } from "@/data/stateLegDistricts";
 import type { ForecastedRace } from "@/lib/forecast";
 import type { BallotHoldover, BallotRace, ChamberBlock, HouseRow, StatePageData, TurnoutStat } from "@/lib/statePage";
 import { chamberDistrictHref } from "@/lib/statePageLinks";
+import { districtResultMargin, useStateLegResults } from "@/lib/useStateLegResults";
+import { districtDisplayLabel, indexByNormalizedKey, lookupByDistrictCode } from "@/lib/stateLegDistrictKey";
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import CandidateLink from "@/components/CandidateLink";
 import StateLegCompositionBox from "@/components/StateLegCompositionBox";
-import StateVoteHistoryChart from "@/components/StateVoteHistoryChart";
 import { ResultCard } from "@/components/StatewideVoteHistoryPanel";
 import { SeatBar } from "@/components/atlas/ChamberSummary";
 import StateLayerMap, { chamberOfLayer, layerYears, type MapLayer } from "./StateLayerMap";
 import StateCountiesSection, { TPL_LAYER } from "./StateCountiesSection";
+import StateResultsGraph, { bodyEntriesFromDelegation, bodyEntriesFromStateLeg } from "./StateResultsGraph";
 
 const fmtProb = (p: number | null) => (p == null ? "—" : p < 0.005 ? "<1%" : p > 0.995 ? ">99%" : `${Math.round(p * 100)}%`);
 // Never "Even": the forecast always leans one way (margin <= 0 is D, as everywhere on the site), so a
 // rounded-to-zero margin reads D+0.0 or R+0.0.
 const fmtMargin = (m: number) => `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`;
+// Ballot counts: 1.23M at a million and up, 262K below.
+const fmtBallots = (v: number) => (v >= 999_500 ? `${(v / 1e6).toFixed(2)}M` : `${Math.round(v / 1e3)}K`);
 const marginColor = (m: number) => (m <= 0 ? "var(--party-dem)" : "var(--party-rep)");
 const partyColor = (p: string) => (p === "D" ? "var(--party-dem)" : p === "R" ? "var(--party-rep)" : "var(--party-ind)");
 // One party/incumbency tag everywhere on the page: (D), (R), (D Inc), (R Inc).
@@ -58,7 +62,7 @@ function TurnoutRow({ stats }: { stats: TurnoutStat[] }) {
         <div key={s.label}>
           <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>{s.label}</div>
           <div className="text-base font-bold tabular-nums leading-tight" style={{ color: "var(--app-text-primary)" }}>
-            {(s.votes / 1e6).toFixed(2)}M ballots
+            {fmtBallots(s.votes)} ballots
           </div>
           <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
             {s.rate != null ? `${s.rate.toFixed(1)}% of citizen adults · ` : ""}{s.sub}
@@ -220,7 +224,7 @@ function ChamberBlockCard({ block, electionYear }: { block: ChamberBlock; electi
 type ResultsOffice = "statewide" | "federal" | "stateHouse" | "stateSenate";
 
 export default function StateExplorer({ data, electionYear, generalElection }: { data: StatePageData; electionYear: number; generalElection: string }) {
-  const { state, stateFips, houseRaces, housePastResults, chambers, results } = data;
+  const { state, stateFips, houseRaces, housePastResults, housePastHrefs, chambers, results } = data;
   const chamberData = useMemo(() => Object.fromEntries(chambers.map((c) => [c.chamber, c.map])) as Partial<Record<Chamber, ChamberBlock["map"]>>, [chambers]);
   const blockOf = (chamber: Chamber) => chambers.find((c) => c.chamber === chamber);
   const layerOf = (chamber: Chamber): MapLayer => (chamber === "house" ? "stateHouse" : "stateSenate");
@@ -261,6 +265,18 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
   const legData = legChamber ? chamberData[legChamber] : undefined;
   const legDistrict = legData && selectedLegKey ? legData.roster.find((d) => d.number === selectedLegKey) ?? null : null;
   const legProj = legData && selectedLegKey ? legData.projByKey[selectedLegKey] : undefined;
+  // A past year's chip: the panel shows that election in the selected district, on the lines it
+  // ran on. Same per-state file and cache the map already fetched, so no second request.
+  const legPastYear = !!legChamber && activeYear !== electionYear;
+  const { data: legResultsData, loading: legResultsLoading } = useStateLegResults(state.abbr, legPastYear);
+  const legPastIndex = useMemo(() => {
+    const districts = legPastYear && legChamber ? legResultsData?.[String(activeYear)]?.[legChamber]?.districts : undefined;
+    return districts ? indexByNormalizedKey(districts) : null;
+  }, [legPastYear, legChamber, legResultsData, activeYear]);
+  const legPastResult = legPastIndex && legChamber && selectedLegKey ? lookupByDistrictCode(legPastIndex, state.abbr, legChamber, selectedLegKey) : undefined;
+  // Superseded lines reuse numbers for different places, so the current roster's label and page
+  // only apply when the year ran on today's map.
+  const legPastOnCurrentLines = legPastYear && !!legData && legData.historicalMaps[String(activeYear)] == null;
 
   const senateHoldovers = data.senate.filter((s): s is BallotHoldover => s.kind === "holdover");
   const senateRaces = data.senate.filter((s): s is BallotRace => s.kind === "race");
@@ -271,6 +287,46 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
     ...(!results.isUnicameral && results.stateSenate.length ? [{ key: "stateSenate" as const, label: "State Senate", right: blockOf("senate")?.totalSeats ? `${blockOf("senate")!.totalSeats} seats` : undefined }] : []),
   ];
   const officeTab = officeTabs.find((t) => t.key === resultsOffice) ?? officeTabs[0];
+
+  // The graph view of the same tab. Keyed by office so switching tabs replays the draw-in.
+  const presidentialMargins = results.statewide.filter((e) => e.group === "president" && e.label === "Presidential").map((e) => ({ year: e.year, margin: Math.round((e.repPct - e.demPct) * 10) / 10 }));
+  const chamberProjection = (chamber: Chamber) => {
+    const b = blockOf(chamber);
+    return b?.upText && b.projDem != null && b.projRep != null ? { year: electionYear, dem: b.projDem, rep: b.projRep, total: b.projTotal } : null;
+  };
+  // Nebraska's one chamber is filed as the Senate block but shown under the "Legislature" tab.
+  const graphChamber: Chamber = officeTab.key === "stateHouse" && !results.isUnicameral ? "house" : "senate";
+  const resultsGraph = officeTab.key === "statewide" ? (
+    <StateResultsGraph
+      key="statewide"
+      kind="statewide"
+      entries={results.statewide}
+      forecasts={[...senateRaces, ...(data.governor?.kind === "race" ? [data.governor] : [])].map((r) => ({ year: electionYear, label: r.label, margin: r.margin, href: r.href }))}
+    />
+  ) : officeTab.key === "federal" ? (
+    <StateResultsGraph
+      key="federal"
+      kind="body"
+      label="U.S. House"
+      entries={bodyEntriesFromDelegation(results.federal)}
+      presidential={presidentialMargins}
+      majority={null}
+      halfLine
+      newMapYears={results.newMapYears.federal ?? []}
+      projection={houseRaces.length > 1 ? { year: electionYear, dem: data.house.demProj, rep: data.house.repProj, total: houseRaces.length } : null}
+    />
+  ) : (
+    <StateResultsGraph
+      key={officeTab.key}
+      kind="body"
+      label={officeTab.label}
+      entries={bodyEntriesFromStateLeg(officeTab.key === "stateHouse" ? results.stateHouse : results.stateSenate)}
+      presidential={presidentialMargins}
+      majority={results.majority[graphChamber] ?? null}
+      newMapYears={results.newMapYears[graphChamber] ?? []}
+      projection={chamberProjection(graphChamber)}
+    />
+  );
 
   const chip = (label: string, on: boolean, onClick: () => void, key: string) => (
     <button
@@ -320,6 +376,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
           year={activeYear}
           houseRaces={houseRaces}
           housePastResults={housePastResults}
+          housePastHrefs={housePastHrefs}
           chambers={chamberData}
           selectedHouse={selectedHouse}
           onSelectHouse={setSelectedHouse}
@@ -336,7 +393,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
           return (
             <div className="mt-3 pt-3" style={{ borderTop: "1px solid var(--app-border)" }}>
               <div className="flex items-start justify-between gap-4">
-                <div className="min-w-0">
+                <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2 flex-wrap mb-1.5">
                     <span className="text-base font-bold" style={{ color: "var(--app-text-primary)" }}>{r.name}</span>
                     <span className="text-xs font-semibold px-2 py-0.5 rounded-full" style={{ background: bg, color: text }}>{rating}</span>
@@ -366,16 +423,105 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
             </div>
           );
         })()}
-        {legChamber && legDistrict && (
+        {legChamber && legPastYear && selectedLegKey && (() => {
+          const label = (legPastOnCurrentLines ? legDistrict?.label : undefined) ?? districtDisplayLabel(selectedLegKey, blockOf(legChamber)?.label ?? "");
+          const r = legPastResult;
+          const margin = districtResultMargin(r);
+          const total = r?.totalVotes ?? 0;
+          const pct = (v: number | null) => (v != null && total > 0 ? `${((v / total) * 100).toFixed(1)}%` : "");
+          const candidates = (r?.candidates ?? []).filter((c) => c.votes == null || c.votes > 0);
+          const partyRows = r
+            ? ([["Democratic", "D", r.demVotes], ["Republican", "R", r.repVotes], ["Other", "O", r.othVotes]] as const).filter(([, , v]) => !!v)
+            : [];
+          return (
+            <div className="mt-3 pt-3" style={{ borderTop: "1px solid var(--app-border)" }}>
+              <div className="flex items-start justify-between gap-4">
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-2 flex-wrap mb-1.5">
+                    <span className="text-base font-bold" style={{ color: "var(--app-text-primary)" }}>{label}</span>
+                    <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{activeYear} result{r?.uncontested ? " · unopposed" : ""}</span>
+                    <button type="button" onClick={() => setSelectedLegKey(null)} className="text-xs" style={{ color: "var(--app-text-very-muted)" }} aria-label="Clear selection">×</button>
+                  </div>
+                  {!r ? (
+                    <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>
+                      {legResultsLoading ? `Loading ${activeYear} results…` : `No ${activeYear} result for this district`}
+                    </div>
+                  ) : candidates.length > 0 ? (
+                    <div className="flex flex-col gap-0.5">
+                      {candidates.map((c, i) => (
+                        <div key={c.name + i} className="flex items-baseline justify-between gap-2">
+                          <span className="flex min-w-0 items-baseline gap-2">
+                            <CandidateLink name={c.name} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
+                              {c.name}
+                            </CandidateLink>
+                            <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>
+                              {partyTag(c.party === "O" ? "I" : c.party, c.incumbent)}{c.winner ? " ✓" : ""}{c.post ? ` · ${c.post}` : ""}
+                            </span>
+                          </span>
+                          <span className="shrink-0 text-sm tabular-nums" style={{ color: partyColor(c.party) }}>
+                            {c.votes == null ? "—" : <><span className="font-bold">{pct(c.votes)}</span> <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{c.votes.toLocaleString()}</span></>}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  ) : margin == null ? (
+                    <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Seat filled, no vote count published</div>
+                  ) : (
+                    <div className="flex flex-col gap-0.5">
+                      {partyRows.map(([name, party, v]) => (
+                        <div key={party} className="flex items-baseline justify-between gap-2">
+                          <span className="text-sm font-semibold" style={{ color: partyColor(party) }}>{name}</span>
+                          <span className="shrink-0 text-sm tabular-nums" style={{ color: partyColor(party) }}>
+                            <span className="font-bold">{pct(v)}</span> <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{v!.toLocaleString()}</span>
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {legPastOnCurrentLines && legDistrict && (
+                    <a href={chamberDistrictHref(state.id, legChamber, legDistrict.number)} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View district →</a>
+                  )}
+                </div>
+                {margin != null && (
+                  <div className="tabular-nums font-extrabold shrink-0" style={{ fontSize: "1.75rem", lineHeight: 1, color: marginColor(margin) }}>{fmtMargin(margin)}</div>
+                )}
+              </div>
+            </div>
+          );
+        })()}
+        {legChamber && !legPastYear && legDistrict && (
           <div className="mt-3 pt-3" style={{ borderTop: "1px solid var(--app-border)" }}>
             <div className="flex items-start justify-between gap-4">
-              <div className="min-w-0">
+              <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2 flex-wrap mb-1.5">
                   <span className="text-base font-bold" style={{ color: "var(--app-text-primary)" }}>{legDistrict.label}</span>
                   {legProj?.rating && activeYear === electionYear && (() => { const { bg, text } = getRatingColors(legProj.rating!); return <span className="text-xs font-semibold px-2 py-0.5 rounded-full" style={{ background: bg, color: text }}>{legProj.rating}</span>; })()}
                   <button type="button" onClick={() => setSelectedLegKey(null)} className="text-xs" style={{ color: "var(--app-text-very-muted)" }} aria-label="Clear selection">×</button>
                 </div>
-                {(legDistrict.incumbents ?? []).length > 0 ? (
+                {legProj?.field && legProj.field.length > 0 ? (
+                  // The 2026 field, laid out like the U.S. House projection: projected share per
+                  // nominee, with projected votes where the race splits them (lib/stateLegAtlas.ts).
+                  <div className="flex flex-col gap-0.5">
+                    {legProj.field.map((c, i) => (
+                      <div key={c.name + i} className="flex items-baseline justify-between gap-2">
+                        <span className="flex min-w-0 items-baseline gap-2">
+                          <CandidateLink name={c.name} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>{c.name}</CandidateLink>
+                          <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>
+                            {partyTag(c.party === "O" ? "I" : c.party, c.incumbent)}{c.writeIn ? " · write-in" : ""}{c.post ? ` · ${state.abbr === "ID" ? "Seat" : "Pos."} ${c.post}` : ""}
+                          </span>
+                        </span>
+                        {c.share != null ? (
+                          <span className="shrink-0 text-sm tabular-nums" style={{ color: partyColor(c.party) }}>
+                            <span className="font-bold">{c.share.toFixed(1)}%</span>
+                            {c.votes != null && <> <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{c.votes.toLocaleString()}</span></>}
+                          </span>
+                        ) : (legProj.contest === "uncontested-D" || legProj.contest === "uncontested-R") && !c.writeIn ? (
+                          <span className="shrink-0 text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>unopposed</span>
+                        ) : null}
+                      </div>
+                    ))}
+                  </div>
+                ) : (legDistrict.incumbents ?? []).length > 0 ? (
                   <div className="flex flex-col gap-0.5">
                     {(legDistrict.incumbents ?? []).map((inc) => (
                       <div key={inc.name} className="flex items-baseline gap-2">
@@ -388,8 +534,11 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                   <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Vacant</div>
                 )}
                 <div className="mt-1 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-                  {legDistrict.nextElection ? `Next election ${legDistrict.nextElection}` : ""}
-                  {legProj && legProj.pD != null && legProj.contest === "contested" ? ` · P(D) ${fmtProb(legProj.pD)}` : ""}
+                  {[
+                    legProj?.contest === "not-up" || !legProj ? (legDistrict.nextElection ? `Not up until ${legDistrict.nextElection}` : "") : legProj.field ? "" : legDistrict.nextElection ? `Next election ${legDistrict.nextElection}` : "",
+                    legProj?.votes ? `${legProj.votes.toLocaleString()} projected votes` : "",
+                    legProj && legProj.pD != null && legProj.contest === "contested" ? `P(D) ${fmtProb(legProj.pD)}` : "",
+                  ].filter(Boolean).join(" · ")}
                 </div>
                 <a href={chamberDistrictHref(state.id, legChamber, legDistrict.number)} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View district →</a>
               </div>
@@ -466,10 +615,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
           </span>
         } />
 
-        {resultsView === "graph" ? (
-          <div className="mt-3"><StateVoteHistoryChart results={results.chart} bare /></div>
-        ) : (
-          <>
+        <>
             <div className="mt-3 flex items-end justify-between gap-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
               <div className="flex flex-wrap items-end gap-x-4 gap-y-1 sm:gap-x-5 min-w-0">
                 {officeTabs.map((t) => (
@@ -488,6 +634,11 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
               </div>
               {officeTab.right && <span className="hidden sm:inline shrink-0 pb-2.5 text-xs tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{officeTab.right}</span>}
             </div>
+
+            {resultsView === "graph" ? (
+              <div className="mt-5">{resultsGraph}</div>
+            ) : (
+            <>
 
             {officeTab.key === "statewide" && (
               <div className="grid grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -532,8 +683,9 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                 newMapYears={results.newMapYears.senate}
               />
             )}
-          </>
-        )}
+            </>
+            )}
+        </>
 
         {/* Map vintage: when each body's lines were last drawn, which is where a seat split stops comparing cleanly. */}
         {results.vintage.length > 0 && (

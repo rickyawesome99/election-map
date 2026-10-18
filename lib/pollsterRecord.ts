@@ -57,7 +57,8 @@ const stateName = (abbr: string) => STATE_NAME.get(abbr) ?? abbr;
 const district = (loc: string) => loc.replace(/^([A-Z]{2})-(\d+)$/, (_, st, n) => `${st}-${String(n).padStart(2, "0")}`);
 
 let senateHrefs: Map<string, string> | null = null;
-function pastHref(type: string, loc: string, code: string, year: number): string | null {
+/** The past-election page for a graded-poll race key (type P/S/G/H, location, race code like "Sen-GS"), or null. */
+export function gradedRaceHref(type: string, loc: string, code: string, year: number): string | null {
   const office = PASTOFFICE[type];
   if (!office || loc === "US" || SPLIT_PRES[loc]) return null;
   if (type === "H") return pastElectionHref("house", district(loc).toLowerCase(), year) ?? null;
@@ -74,7 +75,7 @@ function pastRows(id: string): PollsterPollRow[] {
     const raceCode = code.split("-")[1] ?? "G";
     const race = type === "GB" || loc === "US" ? "National" : type === "H" ? district(loc) : SPLIT_PRES[loc] ?? stateName(loc);
     return {
-      cycle: cycleOf(year), year, office: OFFICE[type], race, stage: STAGE[raceCode] ?? null, href: pastHref(type, loc, code, year),
+      cycle: cycleOf(year), year, office: OFFICE[type], race, stage: STAGE[raceCode] ?? null, href: gradedRaceHref(type, loc, code, year),
       date, daysOut: days, sample, population: null, partisan, methodology, poll, result, error, oriented: oriented === 1,
       graded: excess != null || days <= 21, excess,
       calledWinner: poll === 0 ? null : Math.sign(poll) === Math.sign(result), url: url ?? null,

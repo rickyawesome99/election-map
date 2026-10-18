@@ -23,7 +23,7 @@ import { generateStaticParams as methodologyPages } from "@/app/methodology/[[..
 const STATIC = [
   "/overview", "/house", "/senate", "/governor", "/historical", "/model", "/model/candidates",
   "/analysis", "/analysis/calendar", "/analysis/delegation", "/analysis/forecasts", "/analysis/markets",
-  "/analysis/pollsters", "/analysis/popular-vote", "/analysis/turnout",
+  "/analysis/polling-misses", "/analysis/pollsters", "/analysis/popular-vote", "/analysis/turnout",
   "/district-finder", "/about",
 ];
 

@@ -59,7 +59,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
 
   return (
     <div>
-      <div className={`grid gap-x-10 gap-y-6 md:grid-cols-2 ${popularVote ? "xl:grid-cols-4" : "lg:grid-cols-3"}`}>
+      <div className="grid gap-x-10 gap-y-6 md:grid-cols-2">
         {seats && (
           <section>
             {heading("Current")}
@@ -104,7 +104,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
         )}
         {popularVote && (
           <section>
-            {heading(`${electionYear} popular vote`)}
+            {heading(`${electionYear} projected vote`)}
             <div className="text-2xl font-bold tabular-nums leading-tight">
               <span className="text-base font-semibold" style={{ color: "var(--app-text-very-muted)" }}>raw </span>
               <span style={{ color: "var(--app-text-muted)" }}>{fmtChamberMargin(popularVote.raw)}</span>

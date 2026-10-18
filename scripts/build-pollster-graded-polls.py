@@ -104,9 +104,18 @@ for name in ARCHIVE:
     for r in csv.DictReader(open(ARCH[name])):
         if int(r["cycle"]) < 2023 or r["stage"] != "general" or r.get("hypothetical") == "true" or not r["election_date"]: continue
         if r.get("ranked_choice_round") not in (None, "", "1"): continue
-        q = questions.setdefault((office, r["question_id"]), {"r": r, "ans": {}})
-        if office == "GB": q["ans"] = {"__dem": float(r["dem"] or 0), "__rep": float(r["rep"] or 0)}
-        else: q["ans"][surname(r["candidate_name"])] = float(r["pct"])
+        q = questions.setdefault((office, r["question_id"]), {"r": r, "ans": []})
+        # one (surname, party, pct) per answer row — a dict keyed by surname alone let the Republican overwrite
+        # the Democrat when both nominees shared a name (SD-01 2024, Dusty vs Sheryl Johnson, graded as a tie)
+        if office == "GB": q["ans"] = [("__dem", "DEM", float(r["dem"] or 0)), ("__rep", "REP", float(r["rep"] or 0))]
+        else: q["ans"].append((surname(r["candidate_name"]), r["party"], float(r["pct"])))
+
+def answer(ans, name, party):
+    """The share for the nominee with this surname: unique surname wins outright (the results file's party slot
+    sometimes holds an independent), otherwise the same-surname answer from the expected party."""
+    hits = [a for a in ans if a[0] == name]
+    if len(hits) > 1: hits = [a for a in hits if a[1] == party]
+    return hits[0][2] if len(hits) == 1 else None
 
 polls = collections.OrderedDict()  # (office, poll_id, race key) → questions
 for (office, _), q in questions.items():
@@ -118,7 +127,7 @@ for (office, _), q in questions.items():
         loc = f"{st}-{max(1, int(r['seat_number'] or 1)):02d}" if office == "H" else st
         res = results.get((office, year, loc, r["seat_name"] if office == "S" else ""))
     if not res or res[2] is None: stats[f"skip: no result {office}"] += 1; continue
-    d, p = q["ans"].get(res[0]), q["ans"].get(res[1])
+    d, p = answer(q["ans"], res[0], "DEM"), answer(q["ans"], res[1], "REP")
     if d is None or p is None: stats["skip: top two not both named"] += 1; continue
     mid = date(r["start_date"]) + (date(r["end_date"]) - date(r["start_date"])) / 2
     days = (el - mid).days

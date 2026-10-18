@@ -51,7 +51,7 @@ op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
 op_noredir = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar), NoRedirect)
 
 
-def get(url, data=None, opener=op, referer=None):
+def get(url, data=None, opener=op, referer=None, required=True):
     req = urllib.request.Request(url, data=urllib.parse.urlencode(data).encode() if data else None, headers={"User-Agent": UA, "Referer": referer or url})
     for attempt in range(4):
         try:
@@ -62,6 +62,8 @@ def get(url, data=None, opener=op, referer=None):
             time.sleep(10 * (attempt + 1))
         except Exception:  # noqa: BLE001
             time.sleep(10 * (attempt + 1))
+    if not required:
+        return None
     sys.exit(f"GA: failed {url}")
 
 
@@ -136,7 +138,10 @@ def candidate_total(f, year):
         if not m:
             continue
         q = urllib.parse.urlencode({"NameID": f["nid"], "FilerID": f["fid"], "CDRID": m.group(1), "Name": "x", "Year": yr, "Report": rep})
-        t = text(get(BASE + "CCDR_Report_Summary.aspx?" + q).read().decode("utf-8", "replace"))
+        page = get(BASE + "CCDR_Report_Summary.aspx?" + q, required=False)
+        if page is None:
+            continue  # one summary that will not load: the candidate's other reports still count
+        t = text(page.read().decode("utf-8", "replace"))
         mm = re.search(r"Total contributions reported this period.*?\$([\d,.]+) \$([\d,.]+)", t)
         if mm:
             total += sum(float(x.replace(",", "")) for x in mm.groups())
@@ -155,16 +160,26 @@ def main(cands_file, years):
         people = [c for c in pool if c["year"] == year]
         out, seen = [], set()
         for last in sorted({c["name"].replace(",", " ").split()[-1] for c in people if c["name"].split()}):
-            firsts = {c["name"].split()[0].lower().strip(".") for c in people if c["name"].replace(",", " ").split()[-1] == last}
+            ours = [c for c in people if c["name"].replace(",", " ").split()[-1] == last]
             for f in search(last):
-                # the registration of one of OUR candidates with this surname (first name or initial agrees)
-                fn = (f["name"].split() or [""])[0].lower().strip(".")
-                if f["fid"] in seen or not any(fn == x or (fn[:1] == x[:1] and (len(fn) == 1 or len(x) == 1)) for x in firsts):
+                if f["fid"] in seen:
+                    continue
+                # the registration of one of OUR candidates: any part of the registered name (first, middle,
+                # quoted nickname: "Othel \"Trey\" Doyle Kelley III") agrees with our first name, or one is the
+                # other's short form ("Matt" / "Matthew")
+                toks = [t for t in re.sub(r"[^a-z ]", " ", f["name"].lower()).split() if len(t) > 1]
+                hits = []
+                for c in ours:
+                    first = re.sub(r"[^a-z]", "", c["name"].split()[0].lower())
+                    if first and any(t == first or (min(len(t), len(first)) >= 3 and (t.startswith(first) or first.startswith(t))) for t in toks[:-1]):
+                        hits.append(c)
+                if len(hits) != 1:
                     continue
                 seen.add(f["fid"])
                 r = candidate_total(f, year)
                 if r["total"] is not None:
-                    out.append({"name": f["name"], "district": None, "committee": f["fid"], "contributions": r["total"]})
+                    c = hits[0]
+                    out.append({"name": c["name"], "registered": f["name"], "chamber": c["chamber"], "district": c["district"], "committee": f["fid"], "contributions": r["total"]})
         body = {"state": "GA", "cycle": year, "source": SOURCE, "fetched": datetime.date.today().isoformat(), "dataThrough": f"12/31/{year}", "candidates": out}
         os.makedirs(OUT_DIR, exist_ok=True)
         json.dump(body, open(os.path.join(OUT_DIR, f"GA-{year}.json"), "w"), indent=1)

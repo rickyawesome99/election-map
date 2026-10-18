@@ -1,7 +1,7 @@
 import type { CandidateHistoryEntry } from "@/lib/candidateIndex";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import { getRatingColors, fmtMargin, marginColor } from "@/lib/colorScale";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";
 import BackLink from "@/components/BackLink";
@@ -9,7 +9,7 @@ import type { WarSlim } from "@/lib/modelSlices";
 import { WAR_BAD, WAR_GOOD, careerWar } from "@/components/tpl/format";
 import type { StateLegRace } from "@/lib/stateLegCandidateIndex";
 import { StateLegCurrentRow, StateLegPastRow } from "@/components/candidates/StateLegRaceRow";
-import { getCandidatePagePayload } from "@/lib/candidatePages";
+import { candidateSlugAlias, getCandidatePagePayload } from "@/lib/candidatePages";
 
 // ~3,500 federal and ~37,000 state legislative candidate pages: rendered on first request and
 // cached until the next deploy rather than prebuilt, the same arrangement as the county pages.
@@ -95,7 +95,12 @@ export default async function CandidatePage({
 }) {
   const { slug } = await params;
   const page = getCandidatePagePayload(slug);
-  if (!page) notFound();
+  if (!page) {
+    // An alternate spelling of a merged person ("timi-brownpowers-ia"): send it to the page.
+    const alias = candidateSlugAlias(slug);
+    if (alias) permanentRedirect(`/candidates/${alias}`);
+    notFound();
+  }
   const { federal, leg } = page;
 
   // The federal record leads the profile where there is one; the state legislative record fills in.

@@ -6,6 +6,43 @@ export const metadata = {
   description: `${electionYear} U.S. election analysis`,
 };
 
+type Entry = { href: string; kicker: string; title: string; description: string };
+
+const SECTIONS: { title: string; entries: Entry[] }[] = [
+  {
+    title: "Forecasting & Polling",
+    entries: [
+      { href: "/analysis/forecasts", kicker: "Forecasts", title: "Forecast Comparison", description: "How our House, Senate and governor forecasts line up against the major published models and race ratings: chamber toplines, how often each agrees with ours, and every race with every call." },
+      { href: "/analysis/markets", kicker: "Markets", title: "Prediction Markets", description: `Polymarket\u2019s current price on every ${electionYear} Senate, governor and House race, bucketed and mapped, then what the markets were charging on election eve in 2018, 2020, 2022 and 2024, which favorites won, and every race they got wrong.` },
+      { href: "/analysis/pollsters", kicker: "Polling", title: "Pollster Ratings", description: "How accurate each pollster has been since 2008, by cycle and by region, which way each one leans this cycle, and what a good record is worth." },
+      { href: "/analysis/polling-misses", kicker: "Polling", title: "Polling Misses by State", description: "How far the final polls of every presidential, Senate and governor race since 2016 missed the result in each state, and which party kept beating its polls, on a map and race by race." },
+      { href: "/analysis/popular-vote", kicker: "National", title: "Popular Vote", description: "National vote margins and seats by office since 2016, and how presidential approval, direction of country and Gallup\u2019s third-quarter party ID anticipated the House and presidential vote, read forward to 2026." },
+    ],
+  },
+  {
+    title: "Voters & Turnout",
+    entries: [
+      { href: "/analysis/turnout", kicker: "Turnout", title: "Turnout Analysis", description: `Who votes, where, and in which races: turnout in every general election since 2016 by state, House district and county, presidential against midterm electorates, drop-off down the ticket, and a county-by-county estimate of ${electionYear} turnout for every Senate, governor and House race.` },
+      { href: "/analysis/districts/oh-hd-31", kicker: "State House", title: "OH-31 Precinct Analysis", description: "Ohio House District 31 precinct by precinct: results and swings since 2016 on today\u2019s lines, demographics, targeting metrics, and the 2026 outlook." },
+    ],
+  },
+  {
+    title: "Reference",
+    entries: [
+      { href: "/analysis/delegation", kicker: "Seats", title: "Current Seat Delegation", description: "Which party holds each state\u2019s governorship, Senate seats, House seats, and legislative chambers today, on a map or cartogram." },
+      { href: "/analysis/calendar", kicker: "Calendar", title: "Election & Race Calendar", description: "Which offices were on the ballot in each state and year since 2012, and the candidates, votes, share, and margin behind every race." },
+    ],
+  },
+  {
+    title: "Internal",
+    entries: [
+      { href: "/analysis/state-leg-models", kicker: "Models", title: "State Legislature Model Comparison", description: "Our state legislative forecast against State Navigate\u2019s and ElectIndex\u2019s: toplines, agreement, every chamber\u2019s control odds and every district\u2019s three calls." },
+      { href: "/audit/state-leg-results", kicker: "Audit", title: "State Leg Results Audit", description: "Coverage and provenance of the 2016\u20132025 statewide chamber-year figures, plus the district-sum-vs-statewide reconciliation." },
+      { href: "/audit/state-leg-pres2024", kicker: "Audit", title: "State Leg 2024 President Audit", description: "Temporary sanity check comparing aggregated state legislative district votes to official state totals." },
+    ],
+  },
+];
+
 export default function AnalysisPage() {
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -22,69 +59,21 @@ export default function AnalysisPage() {
         </section>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-14">
-          <section className="pt-6 sm:pt-7">
-            <div className="pb-3 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)", borderBottom: "2px solid var(--app-text-primary)" }}>Latest Analysis</div>
-            <a href="/analysis/turnout" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-2 sm:gap-8 items-start py-6" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Turnout</div>
-              <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Turnout Analysis</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Who votes, where, and in which races: turnout in every general election since 2016 by state, House district and county, presidential against midterm electorates, drop-off down the ticket, and a county-by-county estimate of {electionYear} turnout for every Senate, governor and House race.</p></div>
-              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
-            </a>
-            <a href="/legislatures" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Legislatures</div>
-              <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>State Legislatures</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Every chamber on the 2026 ballot, simulated seat by seat from the district atlas: projected composition, control odds and the chambers in play.</p></div>
-              <span className="text-sm" style={{ color: "var(--app-text-very-muted)" }}>→</span>
-            </a>
-            <a href="/analysis/forecasts" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Forecasts</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Forecast Comparison</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>How our House, Senate and governor forecasts line up against the major published models and race ratings: chamber toplines, how often each agrees with ours, and every race with every call.</p></div>
-              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
-            </a>
-            <a href="/analysis/markets" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Markets</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Prediction Markets</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Polymarket&rsquo;s current price on every 2026 Senate, governor and House race, bucketed and mapped, then what the markets were charging on election eve in 2018, 2020, 2022 and 2024, which favorites won, and every race they got wrong.</p></div>
-              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
-            </a>
-            <a href="/analysis/delegation" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Reference</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Current Seat Delegation</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Which party holds each state&apos;s governorship, Senate seats, House seats, and legislative chambers today, on a map or cartogram.</p></div>
-              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
-            </a>
-            <a href="/analysis/pollsters" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Polling</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Pollster Ratings</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>How accurate each pollster has been since 2008, by cycle and by region, which way each one leans this cycle, and what a good record is worth.</p></div>
-              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
-            </a>
-            <a href="/analysis/calendar" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Reference</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Election &amp; Race Calendar</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Which offices were on the ballot in each state and year since 2012, and the candidates, votes, share, and margin behind every race.</p></div>
-              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
-            </a>
-            <Link href="/analysis/districts/oh-hd-31" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>State House</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>OH-31 Precinct Analysis</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Ohio House District 31 precinct by precinct: results and swings since 2016 on today&apos;s lines, demographics, targeting metrics, and the 2026 outlook.</p></div>
-              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
-            </Link>
-            <a href="/analysis/popular-vote" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>National</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Popular Vote</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>National vote margins and seats by office since 2016, and how presidential approval, direction of country and Gallup&apos;s third-quarter party ID anticipated the House and presidential vote, read forward to 2026.</p></div>
-              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
-            </a>
-            <a href="/analysis/state-leg-models" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Utility</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>State Legislature Model Comparison</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Our state legislative forecast against State Navigate&apos;s and ElectIndex&apos;s: toplines, agreement, every chamber&apos;s control odds and every district&apos;s three calls.</p></div>
-              <span className="text-sm" style={{ color: "var(--app-text-very-muted)" }}>→</span>
-            </a>
-            <a href="/audit/state-leg-results" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Internal</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>State Leg Results Audit</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Coverage and provenance of the 2016&ndash;2025 statewide chamber-year figures, plus the district-sum-vs-statewide reconciliation.</p></div>
-              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
-            </a>
-            <a href="/audit/state-leg-pres2024" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Internal</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>State Leg 2024 President Audit</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Temporary sanity check comparing aggregated state legislative district votes to official state totals.</p></div>
-              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
-            </a>
-          </section>
+          {SECTIONS.map((section) => (
+            <section key={section.title} className="pt-8 sm:pt-10 first:pt-6 sm:first:pt-7">
+              <h2 className="pb-3 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)", borderBottom: "2px solid var(--app-text-primary)" }}>{section.title}</h2>
+              {section.entries.map((e) => (
+                <Link key={e.href} href={e.href} prefetch={false} className="group grid grid-cols-1 sm:grid-cols-[6.5rem_minmax(0,1fr)_auto] gap-1 sm:gap-4 items-baseline py-3.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
+                  <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{e.kicker}</div>
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-bold leading-snug group-hover:underline" style={{ fontFamily: "var(--font-serif)" }}>{e.title}</h3>
+                    <p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>{e.description}</p>
+                  </div>
+                  <span className="hidden sm:block text-sm font-bold whitespace-nowrap" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
+                </Link>
+              ))}
+            </section>
+          ))}
         </div>
       </main>
     </div>

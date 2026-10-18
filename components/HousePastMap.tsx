@@ -9,6 +9,7 @@ import type { RaceForecast, PastResult } from "@/data/forecastData";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
+import CandidateLink from "@/components/CandidateLink";
 
 const STATE_PROJ: Record<string, [number, number, number]> = {
   AL: [-86.8, 32.8, 4800],  AK: [-153.0, 64.0, 900],   AZ: [-111.7, 34.3, 3600],
@@ -94,12 +95,15 @@ function normalizeDistrictGeography(geo: DistrictGeo): DistrictGeo {
 export default function HousePastMap({
   houseRaces,
   historicalResults,
+  pastHrefs = {},
   stateAbbr,
   stateFips,
   selectedYear,
 }: {
   houseRaces: RaceForecast[];
   historicalResults: Record<string, PastResult[]>;
+  /** `${geoid}:${year}` -> that race's past-election page, from lib/pastElections (server-only). */
+  pastHrefs?: Record<string, string>;
   stateAbbr: string;
   stateFips: string;
   selectedYear: number;
@@ -307,66 +311,52 @@ export default function HousePastMap({
         )}
       </div>
 
-      {/* Selected district panel */}
+      {/* Selected district panel — same layout as the state page's projection and legislature panels. */}
       {selected && (() => {
         const { district, result } = selected;
         const margin = result.repPct - result.demPct;
         const marginLabel = margin <= 0 ? `D+${Math.abs(margin).toFixed(1)}` : `R+${margin.toFixed(1)}`;
-        const marginColor = margin <= 0 ? "var(--party-dem)" : "var(--party-rep)";
-        const hasVotes = result.demVotes != null && result.repVotes != null;
+        const partyColor = (p: string) => (p === "D" ? "var(--party-dem)" : p === "R" ? "var(--party-rep)" : "var(--party-ind)");
+        const href = pastHrefs[`${district.id}:${selectedYear}`];
+        const rows = [
+          { name: result.demCandidate, party: result.demParty ?? "D", incumbent: result.demIncumbent, pct: result.demPct, votes: result.demVotes },
+          { name: result.repCandidate, party: result.repParty ?? "R", incumbent: result.repIncumbent, pct: result.repPct, votes: result.repVotes },
+        ];
         return (
-          <div className="px-3 py-3" style={{ borderTop: "1px solid var(--app-border)" }}>
-            <div className="flex items-start justify-between gap-2 mb-2">
-              <div>
-                <div className="text-[10px] uppercase tracking-wider font-semibold mb-0.5" style={{ color: "var(--app-text-muted)" }}>
-                  Selected District
+          <div className="mt-3 pt-3" style={{ borderTop: "1px solid var(--app-border)" }}>
+            <div className="flex items-start justify-between gap-4">
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-2 flex-wrap mb-1.5">
+                  <span className="text-base font-bold" style={{ color: "var(--app-text-primary)" }}>{district.name}</span>
+                  <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{selectedYear} result</span>
+                  <button type="button" onClick={() => setSelected(null)} className="text-xs" style={{ color: "var(--app-text-very-muted)" }} aria-label="Clear selection">×</button>
                 </div>
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{district.name}</span>
-                  <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>{selectedYear} House</span>
+                <div className="flex flex-col gap-0.5">
+                  {rows.map((c, i) => (
+                    <div key={i} className="flex items-baseline justify-between gap-2">
+                      <span className="flex min-w-0 items-baseline gap-2">
+                        {c.name ? (
+                          <CandidateLink name={c.name} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
+                            {c.name}
+                          </CandidateLink>
+                        ) : (
+                          <span className="text-sm font-semibold" style={{ color: partyColor(c.party) }}>{c.party === "D" ? "Democratic" : c.party === "R" ? "Republican" : "Independent"}</span>
+                        )}
+                        {c.name && <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({c.party}{c.incumbent ? " Inc" : ""})</span>}
+                      </span>
+                      <span className="shrink-0 text-sm tabular-nums" style={{ color: partyColor(c.party) }}>
+                        <span className="font-bold">{c.pct.toFixed(1)}%</span>
+                        {c.votes != null && <> <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{c.votes.toLocaleString()}</span></>}
+                      </span>
+                    </div>
+                  ))}
                 </div>
-              </div>
-              <div className="flex items-center gap-2 shrink-0">
-                <span className="font-bold text-lg" style={{ color: marginColor }}>{marginLabel}</span>
-                <button onClick={() => setSelected(null)} style={{ color: "var(--app-text-very-muted)" }}>
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            {(result.demCandidate || result.repCandidate) && (
-              <div className="flex flex-col gap-0.5 mb-2 text-xs">
-                {result.demCandidate && (
-                  <div className="flex justify-between">
-                    <span style={{ color: "var(--party-dem)" }}>{result.demCandidate}{result.demIncumbent ? " (inc.)" : ""}</span>
-                    <span className="font-semibold" style={{ color: "var(--party-dem)" }}>{result.demPct.toFixed(1)}%</span>
-                  </div>
-                )}
-                {result.repCandidate && (
-                  <div className="flex justify-between">
-                    <span style={{ color: "var(--party-rep)" }}>{result.repCandidate}{result.repIncumbent ? " (inc.)" : ""}</span>
-                    <span className="font-semibold" style={{ color: "var(--party-rep)" }}>{result.repPct.toFixed(1)}%</span>
-                  </div>
+                {href && (
+                  <a href={href} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View {selectedYear} race →</a>
                 )}
               </div>
-            )}
-            {!result.demCandidate && !result.repCandidate && (
-              <div className="flex justify-between text-xs font-semibold mb-1.5">
-                <span style={{ color: "var(--party-dem)" }}>D {result.demPct.toFixed(1)}%</span>
-                <span style={{ color: "var(--party-rep)" }}>R {result.repPct.toFixed(1)}%</span>
-              </div>
-            )}
-            <div className="flex h-2.5 rounded-full overflow-hidden mb-2" style={{ background: "var(--app-tab-bg)" }}>
-              <div style={{ width: `${result.demPct}%`, background: "#1b408c" }} />
-              <div style={{ width: `${result.repPct}%`, background: "#be1c29" }} />
+              <div className="tabular-nums font-extrabold shrink-0" style={{ fontSize: "1.75rem", lineHeight: 1, color: margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>{marginLabel}</div>
             </div>
-            {hasVotes && (
-              <div className="flex justify-between text-[11px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
-                <span>{result.demVotes!.toLocaleString()} votes</span>
-                <span>{result.repVotes!.toLocaleString()} votes</span>
-              </div>
-            )}
           </div>
         );
       })()}

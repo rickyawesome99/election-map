@@ -13,7 +13,7 @@ import type { RacePoll } from "@/data/racePolls";
 
 export type HistoricalRacePoll = RacePoll & { year: number };
 
-function splitCsvLine(line: string): string[] {
+export function splitCsvLine(line: string): string[] {
   const out: string[] = [];
   let cur = "";
   let quoted = false;

@@ -42,6 +42,7 @@ export default function StateLayerMap({
   year,
   houseRaces,
   housePastResults,
+  housePastHrefs,
   chambers,
   selectedHouse,
   onSelectHouse,
@@ -56,6 +57,7 @@ export default function StateLayerMap({
   year: number;
   houseRaces: ForecastedRace[];
   housePastResults: Record<string, PastResult[]>;
+  housePastHrefs: Record<string, string>;
   chambers: Partial<Record<Chamber, ChamberMapData>>;
   selectedHouse: ForecastedRace | null;
   onSelectHouse: (race: ForecastedRace | null) => void;
@@ -122,6 +124,7 @@ export default function StateLayerMap({
       key={year}
       houseRaces={houseRaces}
       historicalResults={housePastResults}
+      pastHrefs={housePastHrefs}
       stateAbbr={stateAbbr}
       stateFips={stateFips}
       selectedYear={year}

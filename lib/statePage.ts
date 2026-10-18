@@ -19,9 +19,11 @@ import { forecastRace, type ForecastedRace } from "@/lib/forecast";
 import { calculateStateModel, type YearAggregation } from "@/lib/tplCompute";
 import { redistrictingByState, type RedistrictEvent } from "@/lib/redistrictingCalendar";
 import { countyTplForState } from "@/lib/countyTpl";
-import { pastElectionHref } from "@/lib/pastElections";
+import { housePastElectionHrefs, pastElectionHref } from "@/lib/pastElections";
 import { latestChamberSeats } from "@/lib/stateLegSeats";
 import { chamberSummary } from "@/lib/stateLegChamberSummary";
+import { projectChamberPopularVote } from "@/lib/stateLegPopularVote";
+import { fieldPersons, projectedNomineeShare } from "@/lib/stateLegAtlas";
 import { stateEntry } from "@/lib/turnout";
 import { projectionStateSlice } from "@/lib/turnoutModel";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
@@ -103,7 +105,13 @@ export type ChamberMapData = {
   eras: { firstYear: number; lastYear: number | null; electionYears: number[]; source?: string }[];
   custom: CustomShading;
   /** Per-district 2026 projection, for the selected-district card. */
-  projByKey: Record<string, { margin: number | null; rating: string | null; pD: number | null; contest: string }>;
+  projByKey: Record<string, {
+    margin: number | null; rating: string | null; pD: number | null; contest: string;
+    /** The 2026 field with each nominee's projected share (and votes where the race splits them), as on the atlas page. */
+    field: { name: string; party: "D" | "R" | "O"; partyLabel?: string; incumbent?: boolean; writeIn?: boolean; post?: string; share: number | null; votes: number | null }[] | null;
+    /** Projected votes cast in the race; absent where the state prints no count. */
+    votes: number | null;
+  }>;
 };
 
 export type ChamberBlock = {
@@ -178,6 +186,8 @@ export type StatePageData = {
   chambers: ChamberBlock[];
   houseRaces: ForecastedRace[];
   housePastResults: Record<string, PastResult[]>;
+  /** `${geoid}:${year}` -> that House race's past-election page. */
+  housePastHrefs: Record<string, string>;
   results: {
     statewide: (StatewideHistoryEntry & { countyLayer: string | null })[];
     federal: HouseDelegationEntry[];
@@ -256,7 +266,23 @@ function chamberBlock(state: StateInfo, chamber: Chamber, unicameral: boolean): 
   const calendar = s.calendar ?? null;
   const electionYears = [...(calendar?.electionYears ?? [])].sort((a, b) => b - a);
   const projByKey: ChamberMapData["projByKey"] = {};
-  for (const d of p?.districts ?? []) projByKey[d.key] = { margin: d.margin, rating: d.rating, pD: d.pD, contest: d.contest };
+  const popularVote = p ? projectChamberPopularVote(state.abbr, chamber) : null;
+  const votesByKey = new Map((popularVote?.districts ?? []).filter((d) => d.counted).map((d) => [d.key, { total: Math.round(d.votes), dem: Math.round(d.dem), rep: Math.round(d.rep), oth: Math.round(d.oth) }]));
+  const rosterByKey = new Map(s.roster.map((d) => [d.number, d]));
+  for (const d of p?.districts ?? []) {
+    const votes = votesByKey.get(d.key);
+    let field: ChamberMapData["projByKey"][string]["field"] = null;
+    if (d.candidates2026) {
+      const persons = fieldPersons(d.candidates2026, rosterByKey.get(d.key)?.incumbents ?? []);
+      const multiPost = new Set(persons.map((x) => x.post ?? "")).size > 1;
+      field = persons.map((x) => {
+        const cands = persons.filter((y) => (y.post ?? "") === (x.post ?? ""));
+        const proj = projectedNomineeShare(x, cands, multiPost, d.contest === "contested" ? d.margin : null, votes);
+        return { name: x.name, party: x.party, partyLabel: x.partyLabel, incumbent: x.incumbent, writeIn: x.writeIn, post: x.post, share: proj?.share ?? null, votes: proj?.votes ?? null };
+      });
+    }
+    projByKey[d.key] = { margin: d.margin, rating: d.rating, pD: d.pD, contest: d.contest, field, votes: votes?.total ?? null };
+  }
   return {
     chamber,
     label,
@@ -647,6 +673,7 @@ export function buildStatePage(state: StateInfo): StatePageData {
     chambers,
     houseRaces,
     housePastResults: housePast,
+    housePastHrefs: stateFips ? housePastElectionHrefs(stateFips) : {},
     results: {
       statewide,
       federal: delegation,

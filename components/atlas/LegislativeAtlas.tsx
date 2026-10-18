@@ -36,6 +36,22 @@ function subscribeHash(onChange: () => void) {
 
 const PARTY_FILL: Record<string, string> = { D: "var(--party-dem)", R: "var(--party-rep)", I: "var(--party-ind)", O: "var(--party-ind)" };
 const NO_DATA = "var(--app-tab-bg)";
+const SPLIT_FILL = "#4B0082";
+
+/** A one-line swatch legend under the box grid (rounded squares, matching the boxes). */
+function BoxLegend({ items }: { items: { label: string; bg: string }[] }) {
+  if (items.length === 0) return null;
+  return (
+    <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs" style={{ color: "var(--app-text-muted)" }}>
+      {items.map((it) => (
+        <span key={it.label} className="inline-flex items-center gap-1.5">
+          <span className="inline-block h-3 w-3 rounded-sm" style={{ background: it.bg, border: "1px solid var(--app-border)" }} />
+          {it.label}
+        </span>
+      ))}
+    </div>
+  );
+}
 
 const pill = (on: boolean) => ({ background: on ? "var(--app-text-primary)" : "var(--app-tab-bg)", color: on ? "var(--app-bg)" : "var(--app-text-muted)", fontWeight: 600 });
 
@@ -323,11 +339,11 @@ export default function LegislativeAtlas({
           else if (pr?.contest === "uncontested-R") { fill = PARTY_FILL.R; darkText = false; }
           else if (pr?.contest === "independent" && pr.margin != null) { fill = (pr.pI ?? 0) >= 0.5 ? PARTY_FILL.I : getRaceColor(pr.margin); darkText = (pr.pI ?? 0) < 0.5 && Math.abs(pr.margin) < 10; }
           else if (pr?.contest === "other" && pr.pI === 1) { fill = PARTY_FILL.I; darkText = false; }
-          else if (pr?.contest === "split") { fill = "#4B0082"; darkText = false; }
+          else if (pr?.contest === "split") { fill = SPLIT_FILL; darkText = false; }
         } else if (mode === "seats") {
           const parties = new Set(d.incumbents.map((i) => i.party));
           if (parties.size === 1) { fill = PARTY_FILL[[...parties][0]] ?? NO_DATA; darkText = false; }
-          else if (parties.size > 1) { fill = "#4B0082"; darkText = false; }
+          else if (parties.size > 1) { fill = SPLIT_FILL; darkText = false; }
         } else if (mode === "president") {
           const m = d.presCurrent["2024"]?.margin ?? null;
           if (m != null) { fill = getRaceColor(m); darkText = Math.abs(m) < 10; }
@@ -353,6 +369,29 @@ export default function LegislativeAtlas({
       }),
     [districts, mode, passes, isUp, electionYear, activeYear],
   );
+  // The grid's own colours beyond the margin scale the map legend already shows, listed only when
+  // some box in this view uses them.
+  const boxLegend = useMemo(() => {
+    const used = new Set(boxes.map((b) => b.fill));
+    const out: { label: string; bg: string }[] = [];
+    if (mode === "projection") {
+      if (used.has(PARTY_FILL.D) || used.has(PARTY_FILL.R)) out.push({ label: "Unopposed", bg: `linear-gradient(135deg, ${PARTY_FILL.D} 50%, ${PARTY_FILL.R} 50%)` });
+      if (used.has(PARTY_FILL.I)) out.push({ label: "Independent favored", bg: PARTY_FILL.I });
+      if (used.has(SPLIT_FILL)) out.push({ label: "Split by the field", bg: SPLIT_FILL });
+      if (boxes.some((b) => b.flip)) out.push(FLIP_LEGEND);
+      if (used.has(NO_DATA)) out.push({ label: "No projection", bg: NO_DATA });
+    } else if (mode === "seats") {
+      if (used.has(PARTY_FILL.D)) out.push({ label: "Democrat", bg: PARTY_FILL.D });
+      if (used.has(PARTY_FILL.R)) out.push({ label: "Republican", bg: PARTY_FILL.R });
+      if (used.has(PARTY_FILL.I)) out.push({ label: "Independent", bg: PARTY_FILL.I });
+      if (used.has(SPLIT_FILL)) out.push({ label: "Both parties", bg: SPLIT_FILL });
+      if (used.has(NO_DATA)) out.push({ label: "Vacant", bg: NO_DATA });
+    } else {
+      if (mode === "results" && boxes.some((b) => b.fill === PARTY_FILL.D || b.fill === PARTY_FILL.R)) out.push({ label: "Unopposed, no count", bg: `linear-gradient(135deg, ${PARTY_FILL.D} 50%, ${PARTY_FILL.R} 50%)` });
+      if (used.has(NO_DATA)) out.push({ label: mode === "results" ? "No result" : "No data", bg: NO_DATA });
+    }
+    return out;
+  }, [boxes, mode]);
   const fills = useMemo(() => Object.fromEntries(boxes.filter((b) => b.fill !== NO_DATA).map((b) => [b.key, b.fill])), [boxes]);
 
   const shown = districts.filter(passes).length;
@@ -398,7 +437,7 @@ export default function LegislativeAtlas({
         fill[d.key] = PARTY_FILL.I;
         tip[d.key] = [{ label: "No major party on the ballot", value: "Independent", color: "var(--party-ind)" }];
       } else if (pr.contest === "split" && pr.guaranteed) {
-        fill[d.key] = "#4B0082";
+        fill[d.key] = SPLIT_FILL;
         tip[d.key] = [{ label: "Every seat decided by the field", value: `${pr.guaranteed.dem} D · ${pr.guaranteed.rep} R` }, ...(pr.lean != null ? [{ label: "Lean", value: fmtM(pr.lean) }] : [])];
       } else {
         tip[d.key] = [{ label: "No projection", value: pr.contest === "other" ? "nonpartisan or no major-party field" : "no candidates listed" }];
@@ -569,18 +608,13 @@ export default function LegislativeAtlas({
               ) : (
                 <div className="h-24 rounded" style={{ background: "var(--app-tab-bg)" }} />
               )}
-              <p className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-                {mode === "projection" && `Color is the projected ${electionYear} margin; stripes mark a seat projected to change hands; a solid party colour means only one major party is on the ballot; dark grey is an independent favored (or no major party on the ballot); purple means every seat is decided by the field, split between the parties; light grey means no projection.`}
-                {mode === "seats" && "Color is the sitting member's party; purple = members of both parties."}
-                {mode === "president" && "Color is the 2024 presidential margin on today's lines."}
-                {mode === "results" && `Color is the ${activeYear} result for each district number${historicalVintage ? `, on the ${activeYear} lines (which may cover different ground than today's district)` : ""}.`}
-                {" "}Click a box, the map or a table row to open the district.
-              </p>
+              <BoxLegend items={boxLegend} />
             </div>
           </div>
         </section>
 
-        <div className="grid gap-8 grid-cols-1 lg:grid-cols-[minmax(0,3fr)_minmax(260px,2fr)]">
+        {/* Stacked: in the page's 4xl column the table needs the full width for its seven columns. */}
+        <div className="grid gap-8 grid-cols-1">
           <section className="flex h-[25rem] min-w-0 flex-col md:h-[34rem]">
             <div className="mb-2 flex shrink-0 items-baseline justify-between gap-3 pb-2" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
               <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>

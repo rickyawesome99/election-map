@@ -1,0 +1,1941 @@
+{
+ "state": "SD",
+ "cycle": 2024,
+ "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
+ "fetched": "2026-10-17",
+ "dataThrough": "12/31/2024",
+ "candidates": [
+  {
+   "name": "Al Novstrup",
+   "chamber": "house",
+   "district": "13",
+   "committee": 24,
+   "contributions": 13183.0
+  },
+  {
+   "name": "Kyle Schoenfish",
+   "chamber": "senate",
+   "district": null,
+   "committee": 88,
+   "contributions": 28550.0
+  },
+  {
+   "name": "Larry Tidemann",
+   "chamber": "house",
+   "district": "7",
+   "committee": 136,
+   "contributions": 0.0
+  },
+  {
+   "name": "Ernie Otten",
+   "chamber": "senate",
+   "district": null,
+   "committee": 207,
+   "contributions": 2750.0
+  },
+  {
+   "name": "Oren Lesmeister",
+   "chamber": "house",
+   "district": "28",
+   "committee": 281,
+   "contributions": 0.0
+  },
+  {
+   "name": "Larry Zikmund",
+   "chamber": "senate",
+   "district": "13",
+   "committee": 284,
+   "contributions": 42305.0
+  },
+  {
+   "name": "Joshua Klumb",
+   "chamber": "senate",
+   "district": null,
+   "committee": 285,
+   "contributions": 0.0
+  },
+  {
+   "name": "Gary Cammack",
+   "chamber": "house",
+   "district": "30",
+   "committee": 286,
+   "contributions": 18150.0
+  },
+  {
+   "name": "Alan Solano",
+   "chamber": "senate",
+   "district": null,
+   "committee": 291,
+   "contributions": 0.0
+  },
+  {
+   "name": "John Wiik",
+   "chamber": "senate",
+   "district": null,
+   "committee": 311,
+   "contributions": 2624.55
+  },
+  {
+   "name": "Mary Duvall",
+   "chamber": "senate",
+   "district": null,
+   "committee": 322,
+   "contributions": 0.0
+  },
+  {
+   "name": "Darrell Raschke",
+   "chamber": "house",
+   "district": null,
+   "committee": 329,
+   "contributions": 0.0
+  },
+  {
+   "name": "Julie Frye-Mueller",
+   "chamber": "senate",
+   "district": null,
+   "committee": 330,
+   "contributions": 9819.7
+  },
+  {
+   "name": "Arch Beal",
+   "chamber": "senate",
+   "district": null,
+   "committee": 347,
+   "contributions": 52750.0
+  },
+  {
+   "name": "Kris Langer",
+   "chamber": "senate",
+   "district": null,
+   "committee": 363,
+   "contributions": 0.0
+  },
+  {
+   "name": "Jean Hunhoff",
+   "chamber": "senate",
+   "district": null,
+   "committee": 366,
+   "contributions": 0.0
+  },
+  {
+   "name": "Lana Greenfield",
+   "chamber": "house",
+   "district": "4",
+   "committee": 370,
+   "contributions": 10300.0
+  },
+  {
+   "name": "Shawn Bordeaux",
+   "chamber": "senate",
+   "district": null,
+   "committee": 371,
+   "contributions": 3700.0
+  },
+  {
+   "name": "R. Blake Curd",
+   "chamber": "senate",
+   "district": null,
+   "committee": 374,
+   "contributions": 0.0
+  },
+  {
+   "name": "Phil Jensen",
+   "chamber": "senate",
+   "district": null,
+   "committee": 397,
+   "contributions": 1300.0
+  },
+  {
+   "name": "Kevin Jensen",
+   "chamber": "senate",
+   "district": "4",
+   "committee": 408,
+   "contributions": 16323.48
+  },
+  {
+   "name": "Mike Stevens",
+   "chamber": "house",
+   "district": "13",
+   "committee": 416,
+   "contributions": 57135.0
+  },
+  {
+   "name": "Deb Soholt",
+   "chamber": "senate",
+   "district": "14",
+   "committee": 423,
+   "contributions": 0.0
+  },
+  {
+   "name": "Lee Qualm",
+   "chamber": "house",
+   "district": null,
+   "committee": 424,
+   "contributions": 9100.0
+  },
+  {
+   "name": "Nancy Rasmussen",
+   "chamber": "senate",
+   "district": "17",
+   "committee": 432,
+   "contributions": 0.0
+  },
+  {
+   "name": "Todd Schlekeway",
+   "chamber": "senate",
+   "district": "13",
+   "committee": 438,
+   "contributions": 0.0
+  },
+  {
+   "name": "Dan Ahlers",
+   "chamber": "house",
+   "district": "30",
+   "committee": 441,
+   "contributions": 0.0
+  },
+  {
+   "name": "Elizabeth May",
+   "chamber": "house",
+   "district": null,
+   "committee": 458,
+   "contributions": 3125.0
+  },
+  {
+   "name": "Mark Willadsen",
+   "chamber": "senate",
+   "district": null,
+   "committee": 466,
+   "contributions": 23875.0
+  },
+  {
+   "name": "Blaine \"Chip\" Campbell",
+   "chamber": "house",
+   "district": null,
+   "committee": 474,
+   "contributions": 0.0
+  },
+  {
+   "name": "Isaac Latterell",
+   "chamber": "senate",
+   "district": null,
+   "committee": 484,
+   "contributions": 0.0
+  },
+  {
+   "name": "Ryan Maher",
+   "chamber": "house",
+   "district": null,
+   "committee": 551,
+   "contributions": 16600.0
+  },
+  {
+   "name": "Reynold Nesiba",
+   "chamber": "senate",
+   "district": null,
+   "committee": 565,
+   "contributions": 1555.0
+  },
+  {
+   "name": "Jim Stalzer",
+   "chamber": "senate",
+   "district": "13",
+   "committee": 568,
+   "contributions": 700.0
+  },
+  {
+   "name": "Shane Merrill",
+   "chamber": "senate",
+   "district": null,
+   "committee": 574,
+   "contributions": 0.0
+  },
+  {
+   "name": "Taffy Howard",
+   "chamber": "senate",
+   "district": null,
+   "committee": 580,
+   "contributions": 66065.27
+  },
+  {
+   "name": "Tom Pischke",
+   "chamber": "senate",
+   "district": null,
+   "committee": 605,
+   "contributions": 32886.75
+  },
+  {
+   "name": "Chris Karr",
+   "chamber": "senate",
+   "district": null,
+   "committee": 614,
+   "contributions": 26660.37
+  },
+  {
+   "name": "Russell Graeff",
+   "chamber": "senate",
+   "district": null,
+   "committee": 625,
+   "contributions": 0.0
+  },
+  {
+   "name": "Chad Skiles",
+   "chamber": "senate",
+   "district": null,
+   "committee": 626,
+   "contributions": 0.0
+  },
+  {
+   "name": "James Smith",
+   "chamber": "senate",
+   "district": null,
+   "committee": 644,
+   "contributions": 91806.61
+  },
+  {
+   "name": "Tim Reed",
+   "chamber": "senate",
+   "district": "7",
+   "committee": 646,
+   "contributions": 24360.0
+  },
+  {
+   "name": "Tina Mulally",
+   "chamber": "house",
+   "district": "35",
+   "committee": 657,
+   "contributions": 117141.27
+  },
+  {
+   "name": "Greg Jamison",
+   "chamber": "house",
+   "district": null,
+   "committee": 664,
+   "contributions": 37175.0
+  },
+  {
+   "name": "Roger Chase",
+   "chamber": "house",
+   "district": "19",
+   "committee": 669,
+   "contributions": 1350.0
+  },
+  {
+   "name": "Red Dawn Foster",
+   "chamber": "senate",
+   "district": null,
+   "committee": 673,
+   "contributions": 29569.0
+  },
+  {
+   "name": "Sue Peterson",
+   "chamber": "senate",
+   "district": "13",
+   "committee": 701,
+   "contributions": 91730.27
+  },
+  {
+   "name": "Erin Healy",
+   "chamber": "house",
+   "district": null,
+   "committee": 762,
+   "contributions": 19610.15
+  },
+  {
+   "name": "Jenae Hansen",
+   "chamber": "house",
+   "district": null,
+   "committee": 764,
+   "contributions": 0.0
+  },
+  {
+   "name": "Michael Boyle",
+   "chamber": "house",
+   "district": null,
+   "committee": 765,
+   "contributions": 0.0
+  },
+  {
+   "name": "James Preston",
+   "chamber": "house",
+   "district": null,
+   "committee": 772,
+   "contributions": 0.0
+  },
+  {
+   "name": "Brett Ries",
+   "chamber": "house",
+   "district": null,
+   "committee": 774,
+   "contributions": 0.0
+  },
+  {
+   "name": "Ryan Cwach",
+   "chamber": "house",
+   "district": null,
+   "committee": 782,
+   "contributions": 0.0
+  },
+  {
+   "name": "Carl Perry",
+   "chamber": "senate",
+   "district": "8",
+   "committee": 785,
+   "contributions": 41669.65
+  },
+  {
+   "name": "Byron Callies",
+   "chamber": "house",
+   "district": null,
+   "committee": 791,
+   "contributions": 13337.5
+  },
+  {
+   "name": "Lance Koth",
+   "chamber": "house",
+   "district": null,
+   "committee": 798,
+   "contributions": 0.0
+  },
+  {
+   "name": "Spencer Wrightsman",
+   "chamber": "senate",
+   "district": null,
+   "committee": 799,
+   "contributions": 0.0
+  },
+  {
+   "name": "Paul Miskimins",
+   "chamber": "senate",
+   "district": null,
+   "committee": 804,
+   "contributions": 12075.0
+  },
+  {
+   "name": "Michael Diedrich",
+   "chamber": "senate",
+   "district": null,
+   "committee": 809,
+   "contributions": 0.0
+  },
+  {
+   "name": "Kasey Olivier",
+   "chamber": "senate",
+   "district": null,
+   "committee": 819,
+   "contributions": 0.0
+  },
+  {
+   "name": "Tony Randolph",
+   "chamber": "house",
+   "district": null,
+   "committee": 821,
+   "contributions": 5995.99
+  },
+  {
+   "name": "Justin Roemmick",
+   "chamber": "house",
+   "district": null,
+   "committee": 827,
+   "contributions": 0.0
+  },
+  {
+   "name": "Rebecca Reimer",
+   "chamber": "house",
+   "district": null,
+   "committee": 834,
+   "contributions": 32390.0
+  },
+  {
+   "name": "Kaleb Weis",
+   "chamber": "house",
+   "district": null,
+   "committee": 845,
+   "contributions": 0.0
+  },
+  {
+   "name": "Margaret Sutton",
+   "chamber": "senate",
+   "district": null,
+   "committee": 850,
+   "contributions": 0.0
+  },
+  {
+   "name": "Peri Pourier",
+   "chamber": "house",
+   "district": null,
+   "committee": 860,
+   "contributions": 2000.0
+  },
+  {
+   "name": "Rocky Blare",
+   "chamber": "senate",
+   "district": null,
+   "committee": 861,
+   "contributions": 1350.0
+  },
+  {
+   "name": "Tamara StJohn",
+   "chamber": "house",
+   "district": "1",
+   "committee": 863,
+   "contributions": 15225.0
+  },
+  {
+   "name": "Linda Duba",
+   "chamber": "house",
+   "district": "15",
+   "committee": 869,
+   "contributions": 0.0
+  },
+  {
+   "name": "Amanda Bachmann",
+   "chamber": "house",
+   "district": null,
+   "committee": 881,
+   "contributions": 0.0
+  },
+  {
+   "name": "Bill Adamson",
+   "chamber": "house",
+   "district": null,
+   "committee": 882,
+   "contributions": 0.0
+  },
+  {
+   "name": "William Knight",
+   "chamber": "house",
+   "district": "32",
+   "committee": 939,
+   "contributions": 0.0
+  },
+  {
+   "name": "Randy Gross",
+   "chamber": "house",
+   "district": "13",
+   "committee": 954,
+   "contributions": 250.0
+  },
+  {
+   "name": "Marli Wiese",
+   "chamber": "house",
+   "district": null,
+   "committee": 962,
+   "contributions": 0.0
+  },
+  {
+   "name": "Kirk Chaffee",
+   "chamber": "senate",
+   "district": null,
+   "committee": 964,
+   "contributions": 26350.0
+  },
+  {
+   "name": "David Johnson",
+   "chamber": "senate",
+   "district": null,
+   "committee": 997,
+   "contributions": 22455.0
+  },
+  {
+   "name": "Will Mortenson",
+   "chamber": "house",
+   "district": null,
+   "committee": 1002,
+   "contributions": 38085.0
+  },
+  {
+   "name": "Bethany Soye",
+   "chamber": "house",
+   "district": "9",
+   "committee": 1014,
+   "contributions": 18799.83
+  },
+  {
+   "name": "Aaron Aylward",
+   "chamber": "house",
+   "district": "6",
+   "committee": 1017,
+   "contributions": 11400.0
+  },
+  {
+   "name": "Michael Weisgram",
+   "chamber": "house",
+   "district": null,
+   "committee": 1019,
+   "contributions": 12800.0
+  },
+  {
+   "name": "David Wheeler",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1023,
+   "contributions": 9200.0
+  },
+  {
+   "name": "Rhonda Milstead",
+   "chamber": "house",
+   "district": null,
+   "committee": 1025,
+   "contributions": 0.0
+  },
+  {
+   "name": "Helene Duhamel",
+   "chamber": "senate",
+   "district": "34",
+   "committee": 1027,
+   "contributions": 81867.65
+  },
+  {
+   "name": "Mary Fitzgerald",
+   "chamber": "house",
+   "district": "31",
+   "committee": 1031,
+   "contributions": 32273.27
+  },
+  {
+   "name": "Becky Drury",
+   "chamber": "house",
+   "district": "34",
+   "committee": 1038,
+   "contributions": 35626.5
+  },
+  {
+   "name": "Richard Vasgaard",
+   "chamber": "house",
+   "district": null,
+   "committee": 1043,
+   "contributions": 26675.0
+  },
+  {
+   "name": "Mike Derby",
+   "chamber": "house",
+   "district": "34",
+   "committee": 1044,
+   "contributions": 59973.13
+  },
+  {
+   "name": "Jessica Castleberry",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1049,
+   "contributions": 0.0
+  },
+  {
+   "name": "James Wangsness",
+   "chamber": "house",
+   "district": null,
+   "committee": 1050,
+   "contributions": 37537.17
+  },
+  {
+   "name": "Bryan Breitling",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1053,
+   "contributions": 400.0
+  },
+  {
+   "name": "Taylor Rehfeldt",
+   "chamber": "house",
+   "district": null,
+   "committee": 1056,
+   "contributions": 101717.89
+  },
+  {
+   "name": "Marty Overweg",
+   "chamber": "house",
+   "district": "11",
+   "committee": 1063,
+   "contributions": 12240.0
+  },
+  {
+   "name": "Jacob Sigurdson",
+   "chamber": "house",
+   "district": null,
+   "committee": 1065,
+   "contributions": 0.0
+  },
+  {
+   "name": "Sydney Davis",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1069,
+   "contributions": 51098.91
+  },
+  {
+   "name": "Erin Royer",
+   "chamber": "house",
+   "district": null,
+   "committee": 1070,
+   "contributions": 5859.1
+  },
+  {
+   "name": "Michael Rohl",
+   "chamber": "senate",
+   "district": "16",
+   "committee": 1072,
+   "contributions": 26050.0
+  },
+  {
+   "name": "Charles Kludt",
+   "chamber": "house",
+   "district": null,
+   "committee": 1073,
+   "contributions": 0.0
+  },
+  {
+   "name": "Jennifer Keintz",
+   "chamber": "house",
+   "district": "1",
+   "committee": 1075,
+   "contributions": 3352.56
+  },
+  {
+   "name": "Erin Tobin",
+   "chamber": "senate",
+   "district": "6",
+   "committee": 1076,
+   "contributions": 16250.0
+  },
+  {
+   "name": "Janet Jensen",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1078,
+   "contributions": 0.0
+  },
+  {
+   "name": "Dean Wink",
+   "chamber": "house",
+   "district": null,
+   "committee": 1079,
+   "contributions": 0.0
+  },
+  {
+   "name": "SCOTT ODENBACH",
+   "chamber": "house",
+   "district": "7",
+   "committee": 1084,
+   "contributions": 21920.0
+  },
+  {
+   "name": "Jessica Hegge",
+   "chamber": "house",
+   "district": null,
+   "committee": 1088,
+   "contributions": 0.0
+  },
+  {
+   "name": "Jessica Meyers",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1089,
+   "contributions": 0.0
+  },
+  {
+   "name": "Casey Crabtree",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1090,
+   "contributions": 89100.0
+  },
+  {
+   "name": "Brooke Abdallah",
+   "chamber": "house",
+   "district": null,
+   "committee": 1094,
+   "contributions": 0.0
+  },
+  {
+   "name": "Trish Ladner",
+   "chamber": "house",
+   "district": null,
+   "committee": 1102,
+   "contributions": 28155.83
+  },
+  {
+   "name": "Dan Kerner Andersson",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1110,
+   "contributions": 450.0
+  },
+  {
+   "name": "Ernest Weston Jr",
+   "chamber": "house",
+   "district": null,
+   "committee": 1116,
+   "contributions": 0.0
+  },
+  {
+   "name": "Kwinn Neff",
+   "chamber": "house",
+   "district": "30",
+   "committee": 1118,
+   "contributions": 0.0
+  },
+  {
+   "name": "Jordan Foos",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1150,
+   "contributions": 0.0
+  },
+  {
+   "name": "Elizabeth \"Liz\" Larson",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1158,
+   "contributions": 18796.25
+  },
+  {
+   "name": "Brian Mulder",
+   "chamber": "house",
+   "district": "11",
+   "committee": 1199,
+   "contributions": 18310.0
+  },
+  {
+   "name": "Tyler Tordsen",
+   "chamber": "house",
+   "district": null,
+   "committee": 1200,
+   "contributions": 30729.0
+  },
+  {
+   "name": "Jake Schoenbeck",
+   "chamber": "house",
+   "district": null,
+   "committee": 1201,
+   "contributions": 43509.9
+  },
+  {
+   "name": "Kahden Mooney",
+   "chamber": "house",
+   "district": null,
+   "committee": 1210,
+   "contributions": 0.0
+  },
+  {
+   "name": "Kameron Nelson",
+   "chamber": "house",
+   "district": null,
+   "committee": 1211,
+   "contributions": 19664.71
+  },
+  {
+   "name": "Jesse Fonkert",
+   "chamber": "house",
+   "district": null,
+   "committee": 1212,
+   "contributions": 0.0
+  },
+  {
+   "name": "Kadyn Wittman",
+   "chamber": "house",
+   "district": null,
+   "committee": 1215,
+   "contributions": 31156.87
+  },
+  {
+   "name": "Rachel Dix",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1218,
+   "contributions": 0.0
+  },
+  {
+   "name": "Jim Mehlhaff",
+   "chamber": "senate",
+   "district": "24",
+   "committee": 1220,
+   "contributions": 12700.0
+  },
+  {
+   "name": "Richard Rylance",
+   "chamber": "house",
+   "district": null,
+   "committee": 1221,
+   "contributions": 0.0
+  },
+  {
+   "name": "Matthew Doyle",
+   "chamber": "house",
+   "district": null,
+   "committee": 1224,
+   "contributions": 20.0
+  },
+  {
+   "name": "John Sjaarda",
+   "chamber": "house",
+   "district": "9",
+   "committee": 1225,
+   "contributions": 21256.0
+  },
+  {
+   "name": "Karla Lems",
+   "chamber": "house",
+   "district": "11",
+   "committee": 1227,
+   "contributions": 27630.98
+  },
+  {
+   "name": "Curt Massie",
+   "chamber": "house",
+   "district": null,
+   "committee": 1228,
+   "contributions": 7850.0
+  },
+  {
+   "name": "Amber Arlint",
+   "chamber": "house",
+   "district": null,
+   "committee": 1230,
+   "contributions": 55450.0
+  },
+  {
+   "name": "Ben Krohmer",
+   "chamber": "house",
+   "district": "4",
+   "committee": 1234,
+   "contributions": 8617.5
+  },
+  {
+   "name": "Patrick Baumann",
+   "chamber": "house",
+   "district": null,
+   "committee": 1235,
+   "contributions": 14235.03
+  },
+  {
+   "name": "Drew Peterson",
+   "chamber": "house",
+   "district": "19",
+   "committee": 1240,
+   "contributions": 55306.51
+  },
+  {
+   "name": "Vince Vidal",
+   "chamber": "house",
+   "district": null,
+   "committee": 1242,
+   "contributions": 0.0
+  },
+  {
+   "name": "Mellissa Heermann",
+   "chamber": "house",
+   "district": "7",
+   "committee": 1243,
+   "contributions": 35221.11
+  },
+  {
+   "name": "Randy Deibert",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1244,
+   "contributions": 24050.0
+  },
+  {
+   "name": "Steve Kolbeck",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1246,
+   "contributions": 16880.75
+  },
+  {
+   "name": "Neal Pinnow",
+   "chamber": "house",
+   "district": null,
+   "committee": 1249,
+   "contributions": 0.0
+  },
+  {
+   "name": "William Shorma",
+   "chamber": "house",
+   "district": null,
+   "committee": 1253,
+   "contributions": 15700.0
+  },
+  {
+   "name": "Kathy Rice",
+   "chamber": "house",
+   "district": "29",
+   "committee": 1254,
+   "contributions": 17975.0
+  },
+  {
+   "name": "Valentine (Val) Rausch",
+   "chamber": "house",
+   "district": null,
+   "committee": 1255,
+   "contributions": 0.0
+  },
+  {
+   "name": "Mary Weinheimer",
+   "chamber": "house",
+   "district": "24",
+   "committee": 1260,
+   "contributions": 0.0
+  },
+  {
+   "name": "Gary Leighton",
+   "chamber": "house",
+   "district": null,
+   "committee": 1261,
+   "contributions": 0.0
+  },
+  {
+   "name": "Matthew Tysdal",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1262,
+   "contributions": 0.0
+  },
+  {
+   "name": "Brandei Schaefbauer",
+   "chamber": "house",
+   "district": "6",
+   "committee": 1269,
+   "contributions": 22915.77
+  },
+  {
+   "name": "Penny BayBridge",
+   "chamber": "house",
+   "district": null,
+   "committee": 1273,
+   "contributions": 4703.0
+  },
+  {
+   "name": "Tim Reisch",
+   "chamber": "house",
+   "district": null,
+   "committee": 1274,
+   "contributions": 37725.0
+  },
+  {
+   "name": "Joni Tschetter",
+   "chamber": "house",
+   "district": "15",
+   "committee": 1277,
+   "contributions": 16761.76
+  },
+  {
+   "name": "Steve Duffy",
+   "chamber": "house",
+   "district": null,
+   "committee": 1278,
+   "contributions": 61540.54
+  },
+  {
+   "name": "Jeff Bathke",
+   "chamber": "house",
+   "district": "20",
+   "committee": 1279,
+   "contributions": 7214.0
+  },
+  {
+   "name": "Julie Auch",
+   "chamber": "house",
+   "district": null,
+   "committee": 1282,
+   "contributions": 39391.0
+  },
+  {
+   "name": "John Carley",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1283,
+   "contributions": 7798.45
+  },
+  {
+   "name": "Jamie Giedd",
+   "chamber": "house",
+   "district": null,
+   "committee": 1284,
+   "contributions": 0.0
+  },
+  {
+   "name": "Nicole Heenan",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1285,
+   "contributions": 0.0
+  },
+  {
+   "name": "Roger DeGroot",
+   "chamber": "house",
+   "district": "6",
+   "committee": 1286,
+   "contributions": 30810.0
+  },
+  {
+   "name": "Heather DeVries",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1291,
+   "contributions": 0.0
+  },
+  {
+   "name": "Larry Larson",
+   "chamber": "house",
+   "district": "35",
+   "committee": 1293,
+   "contributions": 0.0
+  },
+  {
+   "name": "Scott Moore",
+   "chamber": "house",
+   "district": "19",
+   "committee": 1294,
+   "contributions": 15350.0
+  },
+  {
+   "name": "David Kills A Hundred",
+   "chamber": "house",
+   "district": "25",
+   "committee": 1299,
+   "contributions": 0.0
+  },
+  {
+   "name": "TRAVIS PAULSON",
+   "chamber": "house",
+   "district": null,
+   "committee": 1306,
+   "contributions": 0.0
+  },
+  {
+   "name": "John Mogen",
+   "chamber": "house",
+   "district": "10",
+   "committee": 1308,
+   "contributions": 0.0
+  },
+  {
+   "name": "Tom Sutton",
+   "chamber": "house",
+   "district": null,
+   "committee": 1309,
+   "contributions": 0.0
+  },
+  {
+   "name": "Joe Donnell",
+   "chamber": "house",
+   "district": "1",
+   "committee": 1310,
+   "contributions": 0.0
+  },
+  {
+   "name": "Brenda Lawrence",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1311,
+   "contributions": 4945.0
+  },
+  {
+   "name": "Leslie \"Doc\" Heinemann",
+   "chamber": "house",
+   "district": null,
+   "committee": 1314,
+   "contributions": 6825.0
+  },
+  {
+   "name": "Eric Emery",
+   "chamber": "house",
+   "district": null,
+   "committee": 1324,
+   "contributions": 6375.0
+  },
+  {
+   "name": "Mistie Caldwell",
+   "chamber": "house",
+   "district": "31",
+   "committee": 1325,
+   "contributions": 0.0
+  },
+  {
+   "name": "Brian Burge",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1331,
+   "contributions": 1216.5
+  },
+  {
+   "name": "Kay Nikolas",
+   "chamber": "house",
+   "district": "1",
+   "committee": 1360,
+   "contributions": 0.0
+  },
+  {
+   "name": "jonathan old horse",
+   "chamber": "house",
+   "district": null,
+   "committee": 1374,
+   "contributions": 0.0
+  },
+  {
+   "name": "Susan Peterson",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1401,
+   "contributions": 19496.38
+  },
+  {
+   "name": "Aaron Matson",
+   "chamber": "house",
+   "district": null,
+   "committee": 1407,
+   "contributions": 28928.24
+  },
+  {
+   "name": "Jordan Youngberg",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1409,
+   "contributions": 29700.0
+  },
+  {
+   "name": "Fred Deutsch",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1411,
+   "contributions": 44565.21
+  },
+  {
+   "name": "Brad Lindwurm",
+   "chamber": "house",
+   "district": null,
+   "committee": 1415,
+   "contributions": 14019.51
+  },
+  {
+   "name": "Matt Roby",
+   "chamber": "house",
+   "district": null,
+   "committee": 1416,
+   "contributions": 78458.03
+  },
+  {
+   "name": "Katherine Washnok",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1420,
+   "contributions": 92484.82
+  },
+  {
+   "name": "Anthony Kathol",
+   "chamber": "senate",
+   "district": "27",
+   "committee": 1428,
+   "contributions": 25294.56
+  },
+  {
+   "name": "Matthew Monfore",
+   "chamber": "house",
+   "district": null,
+   "committee": 1429,
+   "contributions": 1713.2
+  },
+  {
+   "name": "Brad Jankord",
+   "chamber": "house",
+   "district": null,
+   "committee": 1431,
+   "contributions": 7504.48
+  },
+  {
+   "name": "Terry Nebelsick",
+   "chamber": "house",
+   "district": null,
+   "committee": 1433,
+   "contributions": 13517.0
+  },
+  {
+   "name": "Rick Weible",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1438,
+   "contributions": 6236.0
+  },
+  {
+   "name": "Greg Blanc",
+   "chamber": "senate",
+   "district": "35",
+   "committee": 1439,
+   "contributions": 19580.73
+  },
+  {
+   "name": "Matt Wagner",
+   "chamber": "house",
+   "district": null,
+   "committee": 1440,
+   "contributions": 22490.0
+  },
+  {
+   "name": "JR Anderson",
+   "chamber": "house",
+   "district": null,
+   "committee": 1443,
+   "contributions": 946.79
+  },
+  {
+   "name": "Erik Muckey",
+   "chamber": "house",
+   "district": null,
+   "committee": 1444,
+   "contributions": 54242.67
+  },
+  {
+   "name": "Sonja Mentzer",
+   "chamber": "house",
+   "district": null,
+   "committee": 1445,
+   "contributions": 12453.5
+  },
+  {
+   "name": "Amber Hulse",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1446,
+   "contributions": 2981.81
+  },
+  {
+   "name": "Tim Walburg",
+   "chamber": "house",
+   "district": null,
+   "committee": 1448,
+   "contributions": 20351.98
+  },
+  {
+   "name": "Logan Manhart",
+   "chamber": "house",
+   "district": null,
+   "committee": 1449,
+   "contributions": 31612.4
+  },
+  {
+   "name": "Kent Roe",
+   "chamber": "house",
+   "district": "4",
+   "committee": 1450,
+   "contributions": 12480.17
+  },
+  {
+   "name": "Kevin Van Diepen",
+   "chamber": "house",
+   "district": null,
+   "committee": 1452,
+   "contributions": 10460.0
+  },
+  {
+   "name": "Heather Baxter",
+   "chamber": "house",
+   "district": null,
+   "committee": 1453,
+   "contributions": 18633.13
+  },
+  {
+   "name": "Garret Campbell",
+   "chamber": "house",
+   "district": null,
+   "committee": 1454,
+   "contributions": 41.0
+  },
+  {
+   "name": "Steve Natz",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1455,
+   "contributions": 0.0
+  },
+  {
+   "name": "Sandra Henry",
+   "chamber": "senate",
+   "district": "15",
+   "committee": 1456,
+   "contributions": 64866.0
+  },
+  {
+   "name": "Jeffrey Church",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1460,
+   "contributions": 6680.92
+  },
+  {
+   "name": "Beverly Johnson",
+   "chamber": "house",
+   "district": null,
+   "committee": 1461,
+   "contributions": 0.0
+  },
+  {
+   "name": "Stephen Saint",
+   "chamber": "house",
+   "district": "30",
+   "committee": 1463,
+   "contributions": 5296.4
+  },
+  {
+   "name": "Curtis Nupen",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1464,
+   "contributions": 6000.0
+  },
+  {
+   "name": "Matthew Smith",
+   "chamber": "house",
+   "district": "30",
+   "committee": 1465,
+   "contributions": 9428.02
+  },
+  {
+   "name": "James Halverson",
+   "chamber": "house",
+   "district": null,
+   "committee": 1467,
+   "contributions": 20440.0
+  },
+  {
+   "name": "Kristi Golden",
+   "chamber": "house",
+   "district": null,
+   "committee": 1469,
+   "contributions": 33472.4
+  },
+  {
+   "name": "Jana Hunt",
+   "chamber": "house",
+   "district": null,
+   "committee": 1470,
+   "contributions": 18551.0
+  },
+  {
+   "name": "Paul Harens",
+   "chamber": "house",
+   "district": null,
+   "committee": 1471,
+   "contributions": 65229.91
+  },
+  {
+   "name": "Jeff Struwe",
+   "chamber": "house",
+   "district": "4",
+   "committee": 1472,
+   "contributions": 3608.98
+  },
+  {
+   "name": "Mykala Voita",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1474,
+   "contributions": 17695.27
+  },
+  {
+   "name": "Forrest Foster",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1475,
+   "contributions": 1600.0
+  },
+  {
+   "name": "Tamara Grove",
+   "chamber": "senate",
+   "district": "26",
+   "committee": 1477,
+   "contributions": 19600.0
+  },
+  {
+   "name": "Bret Swanson",
+   "chamber": "senate",
+   "district": "30",
+   "committee": 1480,
+   "contributions": 30720.56
+  },
+  {
+   "name": "Mark Lapka",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1481,
+   "contributions": 0.0
+  },
+  {
+   "name": "Wendi Hogan",
+   "chamber": "house",
+   "district": "6",
+   "committee": 1483,
+   "contributions": 3150.0
+  },
+  {
+   "name": "John Hughes",
+   "chamber": "house",
+   "district": "13",
+   "committee": 1484,
+   "contributions": 57569.33
+  },
+  {
+   "name": "Ali Horsted",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1486,
+   "contributions": 37422.0
+  },
+  {
+   "name": "Tony Kayser",
+   "chamber": "house",
+   "district": null,
+   "committee": 1487,
+   "contributions": 16966.92
+  },
+  {
+   "name": "Clay Hoffman",
+   "chamber": "senate",
+   "district": "15",
+   "committee": 1488,
+   "contributions": 69292.74
+  },
+  {
+   "name": "Christopher Reder",
+   "chamber": "house",
+   "district": null,
+   "committee": 1490,
+   "contributions": 17200.0
+  },
+  {
+   "name": "Susan Scheirbeck",
+   "chamber": "house",
+   "district": "30",
+   "committee": 1491,
+   "contributions": 8905.83
+  },
+  {
+   "name": "Lauren Nelson",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1492,
+   "contributions": 44267.0
+  },
+  {
+   "name": "Terri Jorgenson",
+   "chamber": "house",
+   "district": null,
+   "committee": 1493,
+   "contributions": 8099.0
+  },
+  {
+   "name": "Josephine Garcia",
+   "chamber": "house",
+   "district": null,
+   "committee": 1495,
+   "contributions": 23470.27
+  },
+  {
+   "name": "Joy Hohn",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1496,
+   "contributions": 24433.98
+  },
+  {
+   "name": "John Kunnari",
+   "chamber": "house",
+   "district": null,
+   "committee": 1497,
+   "contributions": 9620.16
+  },
+  {
+   "name": "Travis Ismay",
+   "chamber": "house",
+   "district": null,
+   "committee": 1499,
+   "contributions": 3192.99
+  },
+  {
+   "name": "Dennis Menke Menke",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1500,
+   "contributions": 0.0
+  },
+  {
+   "name": "Erin Rudner",
+   "chamber": "house",
+   "district": null,
+   "committee": 1501,
+   "contributions": 52216.75
+  },
+  {
+   "name": "Steven Mettler",
+   "chamber": "house",
+   "district": null,
+   "committee": 1502,
+   "contributions": 10181.47
+  },
+  {
+   "name": "Kate Crowley Johnson",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1504,
+   "contributions": 4250.0
+  },
+  {
+   "name": "John James",
+   "chamber": "house",
+   "district": null,
+   "committee": 1505,
+   "contributions": 3698.78
+  },
+  {
+   "name": "Amy Rambow",
+   "chamber": "house",
+   "district": "5",
+   "committee": 1506,
+   "contributions": 0.0
+  },
+  {
+   "name": "CARL PETERSEN",
+   "chamber": "house",
+   "district": null,
+   "committee": 1507,
+   "contributions": 9984.78
+  },
+  {
+   "name": "Barbara Guenette",
+   "chamber": "house",
+   "district": null,
+   "committee": 1508,
+   "contributions": 8850.0
+  },
+  {
+   "name": "Vanessa Namken",
+   "chamber": "house",
+   "district": "4",
+   "committee": 1509,
+   "contributions": 4803.0
+  },
+  {
+   "name": "Bill Linsenmeyer",
+   "chamber": "house",
+   "district": null,
+   "committee": 1510,
+   "contributions": 3091.67
+  },
+  {
+   "name": "Tesa Schwans",
+   "chamber": "house",
+   "district": "9",
+   "committee": 1511,
+   "contributions": 13080.27
+  },
+  {
+   "name": "Keri Weems",
+   "chamber": "house",
+   "district": null,
+   "committee": 1512,
+   "contributions": 28134.0
+  },
+  {
+   "name": "Matthew Ness",
+   "chamber": "house",
+   "district": "16",
+   "committee": 1513,
+   "contributions": 0.0
+  },
+  {
+   "name": "Curt Voight",
+   "chamber": "senate",
+   "district": "33",
+   "committee": 1514,
+   "contributions": 17001.36
+  },
+  {
+   "name": "Brook Kaufman",
+   "chamber": "house",
+   "district": "34",
+   "committee": 1515,
+   "contributions": 53450.0
+  },
+  {
+   "name": "Nicole Uhre-Balk",
+   "chamber": "house",
+   "district": null,
+   "committee": 1516,
+   "contributions": 30618.55
+  },
+  {
+   "name": "Brian Wirth",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1517,
+   "contributions": 750.0
+  },
+  {
+   "name": "Mark Mowry",
+   "chamber": "house",
+   "district": null,
+   "committee": 1518,
+   "contributions": 3495.0
+  },
+  {
+   "name": "Carson Merkwan",
+   "chamber": "house",
+   "district": null,
+   "committee": 1519,
+   "contributions": 0.0
+  },
+  {
+   "name": "Spencer Gosch",
+   "chamber": "house",
+   "district": null,
+   "committee": 1520,
+   "contributions": 13975.0
+  },
+  {
+   "name": "Ray Ring",
+   "chamber": "house",
+   "district": null,
+   "committee": 1521,
+   "contributions": 8005.63
+  },
+  {
+   "name": "Travis Martin",
+   "chamber": "house",
+   "district": null,
+   "committee": 1522,
+   "contributions": 11798.0
+  },
+  {
+   "name": "Bobbi Andera",
+   "chamber": "house",
+   "district": null,
+   "committee": 1523,
+   "contributions": 6005.52
+  },
+  {
+   "name": "Cole Sartell",
+   "chamber": "house",
+   "district": null,
+   "committee": 1527,
+   "contributions": 0.0
+  },
+  {
+   "name": "Pat Cromwell",
+   "chamber": "house",
+   "district": null,
+   "committee": 1528,
+   "contributions": 0.0
+  },
+  {
+   "name": "Dylan Jordan",
+   "chamber": "house",
+   "district": null,
+   "committee": 1529,
+   "contributions": 3400.0
+  },
+  {
+   "name": "Sarah Mechtenberg",
+   "chamber": "house",
+   "district": null,
+   "committee": 1530,
+   "contributions": 0.0
+  },
+  {
+   "name": "Bruce Whalen",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1531,
+   "contributions": 850.0
+  },
+  {
+   "name": "Michael Calabrese",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1532,
+   "contributions": 0.0
+  },
+  {
+   "name": "Diane Drake",
+   "chamber": "house",
+   "district": null,
+   "committee": 1533,
+   "contributions": 0.0
+  },
+  {
+   "name": "Tim Goodwin",
+   "chamber": "house",
+   "district": null,
+   "committee": 1536,
+   "contributions": 22750.0
+  },
+  {
+   "name": "Elsie Meeks",
+   "chamber": "house",
+   "district": null,
+   "committee": 1537,
+   "contributions": 10147.0
+  },
+  {
+   "name": "Don Schmidt",
+   "chamber": "house",
+   "district": "20",
+   "committee": 1538,
+   "contributions": 0.0
+  },
+  {
+   "name": "Dana Pulfrey",
+   "chamber": "house",
+   "district": null,
+   "committee": 1540,
+   "contributions": 0.0
+  },
+  {
+   "name": "Michael Walsh",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1541,
+   "contributions": 41750.0
+  },
+  {
+   "name": "Ronald Frederick",
+   "chamber": "house",
+   "district": "26A",
+   "committee": 1542,
+   "contributions": 500.0
+  },
+  {
+   "name": "Russell Ronke",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1545,
+   "contributions": 0.0
+  },
+  {
+   "name": "Patricia Bacon",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1546,
+   "contributions": 0.0
+  },
+  {
+   "name": "Russell Ronke",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1547,
+   "contributions": 0.0
+  },
+  {
+   "name": "Dean Schrempp",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1550,
+   "contributions": 0.0
+  },
+  {
+   "name": "Shane Farlee",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1554,
+   "contributions": 0.0
+  },
+  {
+   "name": "Michael Miller",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1555,
+   "contributions": 2650.0
+  },
+  {
+   "name": "David Reis",
+   "chamber": "house",
+   "district": null,
+   "committee": 1556,
+   "contributions": 9684.6
+  },
+  {
+   "name": "Karen McNeal",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1557,
+   "contributions": 20625.0
+  },
+  {
+   "name": "Victoria Greenlee",
+   "chamber": "house",
+   "district": "31",
+   "committee": 1559,
+   "contributions": 8966.38
+  },
+  {
+   "name": "Josh Dennert",
+   "chamber": "house",
+   "district": null,
+   "committee": 1571,
+   "contributions": 2053.97
+  },
+  {
+   "name": "Greg Zimmerman",
+   "chamber": "house",
+   "district": "8",
+   "committee": 1572,
+   "contributions": 0.0
+  },
+  {
+   "name": "Sarah Carda",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1576,
+   "contributions": 28432.63
+  },
+  {
+   "name": "Tamara Lesnar",
+   "chamber": "house",
+   "district": "1",
+   "committee": 1582,
+   "contributions": 313.0
+  },
+  {
+   "name": "Blake Stevens",
+   "chamber": "house",
+   "district": "07",
+   "committee": 1583,
+   "contributions": 3480.0
+  },
+  {
+   "name": "Fedora Sutton-Butler",
+   "chamber": "house",
+   "district": "07",
+   "committee": 1585,
+   "contributions": 5658.48
+  },
+  {
+   "name": "Kehala Two Bulls",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1586,
+   "contributions": 31547.0
+  },
+  {
+   "name": "Kaley Nolz",
+   "chamber": "house",
+   "district": null,
+   "committee": 1588,
+   "contributions": 1250.0
+  },
+  {
+   "name": "Shana McVickers",
+   "chamber": "house",
+   "district": "31",
+   "committee": 1590,
+   "contributions": 1248.0
+  },
+  {
+   "name": "William Lafferty",
+   "chamber": "house",
+   "district": null,
+   "committee": 1594,
+   "contributions": 0.0
+  }
+ ]
+}

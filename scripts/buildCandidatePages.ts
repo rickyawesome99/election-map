@@ -12,6 +12,7 @@ import path from "node:path";
 import { gzipSync } from "node:zlib";
 import { allCandidateSlugs, buildCandidatePayload } from "@/lib/candidatePageBuild";
 import type { CandidatePageShard } from "@/lib/candidatePagePayload";
+import { getStateLegCandidateSlugAliases } from "@/lib/stateLegCandidateIndex";
 
 const DIR = path.join(process.cwd(), "data", "generated", "candidate-pages");
 const t0 = performance.now();
@@ -37,5 +38,10 @@ for (const [name, s] of shards) {
   fs.writeFileSync(file, gzipSync(JSON.stringify(s), { level: 9 }));
   bytes += fs.statSync(file).size;
 }
+// Alternate spellings merged into one person (lib/stateLegCandidateIndex.ts): the route redirects
+// these to the page's own slug, so a link built from any spelling on file still lands on the page.
+const aliases = Object.fromEntries(Object.entries(getStateLegCandidateSlugAliases()).filter(([alias, slug]) => alias !== slug && shards.get(slug.slice(-2).toUpperCase())?.[slug] && !shards.get(alias.slice(-2).toUpperCase())?.[alias]));
+fs.writeFileSync(path.join(DIR, "aliases.json.gz"), gzipSync(JSON.stringify(aliases), { level: 9 }));
+console.log(`Candidate slug aliases: ${Object.keys(aliases).length}`);
 const biggest = [...shards].map(([n, s]) => [n, JSON.stringify(s).length] as const).sort((a, b) => b[1] - a[1])[0];
 console.log(`Candidate pages: ${pages} pages in ${shards.size} shards, ${(bytes / 1048576).toFixed(1)} MB gzipped (largest ${biggest[0]} ${(biggest[1] / 1048576).toFixed(1)} MB raw) in ${((performance.now() - t0) / 1000).toFixed(0)}s → ${path.relative(process.cwd(), DIR)}/`);

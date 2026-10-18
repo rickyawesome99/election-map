@@ -83,12 +83,22 @@ def report_income(doc):
     if not pdf.startswith(b"%PDF"):
         return None
     t = subprocess.run(["pdftotext", "-layout", os.path.join(CACHE, "d", f"{doc}.pdf"), "-"], capture_output=True).stdout.decode("utf-8", "replace")
-    amt = lambda label: (lambda m: float(m.group(1).replace(",", "")) if m else 0.0)(re.search(re.escape(label) + r":?\s+\$\s*([\d,]+\.\d\d)", t))
-    if "TOTAL of Income" not in t:
+    def amt(*labels):
+        for label in labels:  # the first amount on the label's line ("$   $11,111.84" on the older form)
+            m = re.search(re.escape(label) + r"[^\n]*?([\d,]+\.\d\d)", t)
+            if m:
+                return float(m.group(1).replace(",", ""))
+        return 0.0
+
+    if "TOTAL of Income" not in t and "TOTAL of cash Income" not in t:
         return None
     district = re.search(r"District\s*:?\s*(\d+[AB]?)", t)
-    return {"contributions": amt("TOTAL of Income") - amt("TOTAL of all Other Income") + amt("TOTAL of all Donated Goods or Services"),
-            "district": district.group(1) if district else None}
+    office = re.search(r"Office Sought:\s*SD (House|Senate)", t)
+    # the 2015–2017 form says "TOTAL of cash Income" and "estimated In-Kind Contributions"
+    return {"contributions": amt("TOTAL of Income", "TOTAL of cash Income") - amt("TOTAL of all Other Income")
+            + amt("TOTAL of all Donated Goods or Services", "TOTAL of all estimated In-Kind Contributions"),
+            "district": district.group(1) if district else None,
+            "chamber": ("house" if office.group(1) == "House" else "senate") if office else None}
 
 
 def main(cycles):
@@ -96,16 +106,14 @@ def main(cycles):
     if os.path.exists(index):
         comms = json.load(open(index))
     else:
-        comms, misses, cid = [], 0, 1
-        while misses < 150:  # ids run contiguously; stop after a long run of empty pages
-            h = get(f"Search/SearchResults.aspx?cid={cid}", f"c/{cid}.html")
-            if b"Committee Type" not in h:
-                misses += 1
-            else:
-                misses = 0
-                c = committee(cid)
-                if c:
-                    comms.append(c)
+        comms, since, cid = [], 0, 1
+        while since < 1000:  # every id answers with a page; stop 1,000 ids past the last legislative committee
+            get(f"Search/SearchResults.aspx?cid={cid}", f"c/{cid}.html")
+            c = committee(cid)
+            since += 1
+            if c:
+                comms.append(c)
+                since = 0
             if cid % 200 == 0:
                 print(f"SD: committee id {cid}, {len(comms)} legislative")
             cid += 1
@@ -127,7 +135,9 @@ def main(cycles):
             if not known:
                 continue
             district = next((p["district"] for p in known if p["district"]), None)
-            out.append({"name": c["name"], "chamber": c["chamber"], "district": district, "committee": c["cid"],
+            # the committee page does not name the chamber; the reports' "Office Sought" does
+            chamber = next((p["chamber"] for p in known if p.get("chamber")), None)
+            out.append({"name": c["name"], "chamber": chamber, "district": district, "committee": c["cid"],
                         "contributions": round(sum(p["contributions"] for p in known), 2)})
         body = {"state": "SD", "cycle": cycle, "source": SOURCE, "fetched": TODAY.isoformat(),
                 "dataThrough": TODAY.strftime("%m/%d/%Y") if cycle >= TODAY.year else f"12/31/{cycle}", "candidates": out}

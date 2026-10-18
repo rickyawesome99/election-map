@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import type { AtlasDistrict } from "@/lib/stateLegAtlas";
-import type { StateLegCandidate2026 } from "@/data/stateLegCandidates2026";
-import { contest2026, fieldPersons, fmtMoney } from "@/lib/stateLegAtlas";
+import { contest2026, fieldPersons, fmtMoney, projectedNomineeShare } from "@/lib/stateLegAtlas";
 import { candidateSlug } from "@/lib/candidateSlug";
 
 type Party = "D" | "R" | "I" | "O";
@@ -70,26 +69,7 @@ export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDist
   const posts = [...new Set(persons.map((x) => x.post ?? ""))];
   const groups = posts.map((post) => ({ post, cands: persons.filter((x) => (x.post ?? "") === post) }));
 
-  const shareFor = (x: StateLegCandidate2026, cands: StateLegCandidate2026[]): number | null => {
-    if (margin == null || x.writeIn) return null;
-    const real = cands.filter((y) => !y.writeIn);
-    if (real.length !== 2 || !real.some((y) => y.party === "D") || !real.some((y) => y.party === "R")) return null;
-    return x.party === "D" ? 50 - margin / 2 : x.party === "R" ? 50 + margin / 2 : null;
-  };
-  // The projected votes (the chamber popular vote's raw split), as the House race pages show them
-  // under each share: where the race is one nominee per party on the ballot, each takes their party's
-  // votes and the share is of all votes cast. A multi-post district or a party with several nominees
-  // keeps the two-party share alone.
   const votes = pr?.votes;
-  const votesFor = (x: StateLegCandidate2026, cands: StateLegCandidate2026[]): { votes: number; share: number } | null => {
-    if (!votes || votes.total <= 0 || x.writeIn || posts.length > 1) return null;
-    const real = cands.filter((y) => !y.writeIn);
-    const count = (p: string) => real.filter((y) => y.party === p).length;
-    if (count("D") > 1 || count("R") > 1 || count("O") > 1) return null;
-    const v = x.party === "D" ? votes.dem : x.party === "R" ? votes.rep : votes.oth;
-    if (v <= 0) return null;
-    return { votes: v, share: (v / votes.total) * 100 };
-  };
 
   return (
     <div>
@@ -113,8 +93,9 @@ export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDist
           )}
           {cands.map((x, i) => {
             const color = PARTY_COLOR[x.party];
-            const v = votesFor(x, cands);
-            const share = v ? v.share : shareFor(x, cands);
+            const p = projectedNomineeShare(x, cands, posts.length > 1, margin, votes);
+            const share = p?.share ?? null;
+            const v = p?.votes != null ? { votes: p.votes } : null;
             return (
               <div
                 key={`${x.name}-${i}`}

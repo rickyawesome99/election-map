@@ -443,3 +443,18 @@ body {
 .rsm-svg, .maplibregl-canvas-container {
   touch-action: manipulation;
 }
+
+/* State page results graph (components/state/StateResultsGraph.tsx): lines draw in left to right,
+   bars grow from the baseline, points pop in staggered by year. */
+@keyframes rg-reveal { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes rg-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes rg-pop { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: scale(1); } }
+@keyframes rg-fade { from { opacity: 0; } to { opacity: 1; } }
+.rg-reveal { animation: rg-reveal 900ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.rg-grow { animation: rg-grow 620ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.rg-pop { animation: rg-pop 380ms cubic-bezier(0.34, 1.4, 0.64, 1) both; transform-box: fill-box; transform-origin: center; }
+.rg-fade { animation: rg-fade 500ms ease-out 500ms both; }
+.rg-tip { transition: left 120ms ease-out, right 120ms ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .rg-reveal, .rg-grow, .rg-pop, .rg-fade { animation: none; }
+}

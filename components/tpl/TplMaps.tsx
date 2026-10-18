@@ -50,9 +50,13 @@ export function MapLegend() {
 
 // colorOf / formatValue / valueColor default to the TPL margin scale; /analysis/markets passes a
 // price-bucket scale to draw the same map by win probability.
-export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor }: {
+export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor, onSelect, zoomable = true }: {
   mode: "states" | "districts"; rows: MapRow[]; valueLabel: string; linkLabel: string;
   colorOf?: (value: number) => string; formatValue?: (value: number) => string; valueColor?: (value: number) => string;
+  /** Fired when a place is picked (click/tap) or the panel is closed (null) — /analysis/polling-misses filters its table with it. */
+  onSelect?: (row: MapRow | null) => void;
+  /** false = a fixed view: no wheel/pinch/drag zoom and no Reset button (/analysis/polling-misses). */
+  zoomable?: boolean;
 }) {
   const isDark = useDarkMode();
   const mapUnfilled   = isDark ? "#1e2530" : "#c8cdd3";
@@ -61,7 +65,8 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   const hoverUnfilled = isDark ? "#2a3441" : "#dde2e7";
 
   const [hovered, setHovered]   = useState<MapRow | null>(null);
-  const [selected, setSelected] = useState<MapRow | null>(null);
+  const [selected, setSelectedState] = useState<MapRow | null>(null);
+  const setSelected = (row: MapRow | null) => { setSelectedState(row); onSelect?.(row); };
   const { onMouseMove: onTipMove, tooltipRef } = useMapTooltip(14, 8);
   const [mapKey, setMapKey]     = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -114,8 +119,8 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
       );
     };
 
-    return (
-      <ZoomableGroup key={`${mode}-${mapKey}`} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
+    const content = (
+      <>
         {!statesTopo ? null : mode === "states" ? (
           <Geographies geography={statesTopo}>
             {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
@@ -136,9 +141,13 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
             </Geographies>}
           </>
         )}
-      </ZoomableGroup>
+      </>
     );
-  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, stateLinesTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled, colorOf]);
+    return zoomable
+      ? <ZoomableGroup key={`${mode}-${mapKey}`} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>{content}</ZoomableGroup>
+      : <g key={mode}>{content}</g>;
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- setSelected is a stable wrapper over state + onSelect
+  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, stateLinesTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled, colorOf, onSelect, zoomable]);
 
   const closeButton = (
     <button type="button" onClick={() => setSelected(null)} className="flex h-4 w-4 shrink-0 items-center justify-center rounded" style={{ color: "var(--app-text-very-muted)" }} aria-label="Close">
