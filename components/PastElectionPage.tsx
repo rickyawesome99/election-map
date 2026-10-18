@@ -128,12 +128,34 @@ function PollStrip({ e }: { e: PastElection }) {
   const p = e.polling;
   if (!p) return null;
   const w = 260, h = 56, pad = 12;
-  const x = (v: number) => pad + ((Math.max(-12, Math.min(12, v)) + 12) / 24) * (w - pad * 2);
   const actualDem = -e.margin;
+  // Axis spans at least R+12…D+12 and widens (in steps of 5) to fit every poll and the result,
+  // so a lopsided race's markers are not all pinned to one edge.
+  const values = [...p.polls.map((poll) => poll.dem - poll.rep), p.avgDemMargin, ...(e.runoff ? [] : [actualDem])];
+  const lo = Math.min(-12, Math.floor((Math.min(...values) - 1) / 5) * 5);
+  const hi = Math.max(12, Math.ceil((Math.max(...values) + 1) / 5) * 5);
+  const x = (v: number) => pad + ((Math.max(lo, Math.min(hi, v)) - lo) / (hi - lo)) * (w - pad * 2);
+  const step = hi - lo <= 30 ? 5 : hi - lo <= 60 ? 10 : 20;
+  const ticks: number[] = [];
+  for (let v = Math.ceil(lo / step) * step; v <= hi; v += step) ticks.push(v);
+
+  // Labels sit on the outer side of each line, clamped inside the chart and kept from overlapping.
+  const pollsLabel = `polls ${fmtDemPositive(p.avgDemMargin)}`;
+  const resultLabel = `result ${fmtMargin(e.margin)}`;
+  const textW = (s: string, bold = false) => s.length * (bold ? 5.6 : 5.2);
+  const pollsLeft = p.avgDemMargin <= actualDem;
+  const place = (lineX: number, width: number, toLeft: boolean) =>
+    Math.max(0, Math.min(w - width, toLeft ? lineX - 3 - width : lineX + 3));
+  let pollsX = place(x(p.avgDemMargin), textW(pollsLabel), pollsLeft);
+  let resultX = place(x(actualDem), textW(resultLabel, true), !pollsLeft);
+  if (!e.runoff) {
+    if (pollsLeft) resultX = Math.min(w - textW(resultLabel, true), Math.max(resultX, pollsX + textW(pollsLabel) + 6));
+    else pollsX = Math.min(w - textW(pollsLabel), Math.max(pollsX, resultX + textW(resultLabel, true) + 6));
+  }
   return (
     <svg viewBox={`0 0 ${w} ${h}`} className="mt-2 block w-full max-w-[300px]" role="img" aria-label="Late polls compared with the result">
-      <line x1={x(-12)} x2={x(12)} y1={30} y2={30} stroke="var(--app-border)" />
-      {[-10, -5, 0, 5, 10].map((v) => (
+      <line x1={x(lo)} x2={x(hi)} y1={30} y2={30} stroke="var(--app-border)" />
+      {ticks.map((v) => (
         <g key={v}>
           <line x1={x(v)} x2={x(v)} y1={27} y2={33} stroke="var(--app-border)" />
           <text x={x(v)} y={50} textAnchor="middle" fontSize={9} fill="var(--app-text-very-muted)">{v === 0 ? "Even" : `${v < 0 ? "R" : "D"}+${Math.abs(v)}`}</text>
@@ -144,11 +166,11 @@ function PollStrip({ e }: { e: PastElection }) {
         return <circle key={i} cx={x(m)} cy={30 + ((i % 3) - 1) * 4.5} r={3} fill={m < 0 ? "var(--party-rep)" : "var(--party-dem)"} fillOpacity={0.55} />;
       })}
       <line x1={x(p.avgDemMargin)} x2={x(p.avgDemMargin)} y1={14} y2={40} stroke="var(--app-text-primary)" strokeWidth={1.5} strokeDasharray="3 2" />
-      <text x={x(p.avgDemMargin)} y={10} textAnchor={p.avgDemMargin <= actualDem ? "end" : "start"} dx={p.avgDemMargin <= actualDem ? -3 : 3} fontSize={9} fill="var(--app-text-muted)">polls {fmtDemPositive(p.avgDemMargin)}</text>
+      <text x={pollsX} y={10} fontSize={9} fill="var(--app-text-muted)">{pollsLabel}</text>
       {!e.runoff && (
         <>
           <line x1={x(actualDem)} x2={x(actualDem)} y1={14} y2={40} stroke={marginColor(e.margin)} strokeWidth={2} />
-          <text x={x(actualDem)} y={10} textAnchor={p.avgDemMargin <= actualDem ? "start" : "end"} dx={p.avgDemMargin <= actualDem ? 3 : -3} fontSize={9} fontWeight={700} fill={marginColor(e.margin)}>result {fmtMargin(e.margin)}</text>
+          <text x={resultX} y={10} fontSize={9} fontWeight={700} fill={marginColor(e.margin)}>{resultLabel}</text>
         </>
       )}
     </svg>
@@ -368,28 +390,28 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
           <section className="mt-10">
             <LedgerSectionHead label={cap(areaWord)} meta={`${counted} · sorted by ballots cast`} />
             <div className="overflow-x-auto">
-              <table className="w-full text-[13px] tabular-nums" style={{ borderCollapse: "collapse" }}>
+              <table className="w-full text-[12px] tabular-nums sm:text-[13px]" style={{ borderCollapse: "collapse" }}>
                 <thead>
                   <tr className="text-left text-[10.5px] uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
                     <th className="py-1.5 font-bold" style={{ borderBottom: "1px solid var(--app-border)" }}>{cap(areaSingular)}</th>
-                    <th className="py-1.5 pl-3 text-right font-bold" style={{ borderBottom: "1px solid var(--app-border)", color: partyColor(e.dem.party) }}>{lastName(e.dem.name)}</th>
-                    <th className="py-1.5 pl-3 text-right font-bold" style={{ borderBottom: "1px solid var(--app-border)", color: partyColor(e.rep.party) }}>{lastName(e.rep.name)}</th>
-                    <th className="py-1.5 pl-3 text-right font-bold" style={{ borderBottom: "1px solid var(--app-border)" }}>Margin</th>
-                    <th className="py-1.5 pl-3 text-right font-bold" style={{ borderBottom: "1px solid var(--app-border)" }}>{e.previous ? `vs ${e.previous.year}${e.house?.linesChanged ? "*" : ""}` : ""}</th>
+                    <th className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3 font-bold" style={{ borderBottom: "1px solid var(--app-border)", color: partyColor(e.dem.party) }}>{lastName(e.dem.name)}</th>
+                    <th className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3 font-bold" style={{ borderBottom: "1px solid var(--app-border)", color: partyColor(e.rep.party) }}>{lastName(e.rep.name)}</th>
+                    <th className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3 font-bold" style={{ borderBottom: "1px solid var(--app-border)" }}>Margin</th>
+                    <th className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3 font-bold" style={{ borderBottom: "1px solid var(--app-border)" }}>{e.previous ? `vs ${e.previous.year}${e.house?.linesChanged ? "*" : ""}` : ""}</th>
                   </tr>
                 </thead>
                 <ExpandableTbody colSpan={5} noun={areaWord} rows={e.counties.map((c) => {
                     const shift = c.previous ? c.result.margin - c.previous.margin : null;
                     return (
                       <tr key={c.fips} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                        <td className="py-1.5">
+                        <td className="whitespace-nowrap py-1.5">
                           <a href={`/historical/${c.fips}`} className="hover:underline">{c.name}</a>
                           {c.houseSplit && <span className="ml-1.5 text-[10px]" style={{ color: "var(--app-text-very-muted)" }} title="This county is shared with another district; the row is this district's share">split</span>}
                         </td>
-                        <td className="py-1.5 pl-3 text-right">{fmtInt(c.result.demVotes)} <span className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{c.result.demPct.toFixed(1)}%</span></td>
-                        <td className="py-1.5 pl-3 text-right">{fmtInt(c.result.repVotes)} <span className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{c.result.repPct.toFixed(1)}%</span></td>
-                        <td className="py-1.5 pl-3 text-right font-semibold" style={{ color: marginColor(c.result.margin) }}>{fmtMargin(c.result.margin)}</td>
-                        <td className="py-1.5 pl-3 text-right" style={{ color: shift != null ? marginColor(shift) : "var(--app-text-very-muted)" }}>{shift != null ? fmtMargin(shift) : "—"}</td>
+                        <td className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3">{fmtInt(c.result.demVotes)} <span className="text-[10px] sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{c.result.demPct.toFixed(1)}%</span></td>
+                        <td className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3">{fmtInt(c.result.repVotes)} <span className="text-[10px] sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{c.result.repPct.toFixed(1)}%</span></td>
+                        <td className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3 font-semibold" style={{ color: marginColor(c.result.margin) }}>{fmtMargin(c.result.margin)}</td>
+                        <td className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3" style={{ color: shift != null ? marginColor(shift) : "var(--app-text-very-muted)" }}>{shift != null ? fmtMargin(shift) : "—"}</td>
                       </tr>
                     );
                   })} />

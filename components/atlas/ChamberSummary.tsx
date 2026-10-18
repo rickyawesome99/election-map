@@ -18,13 +18,23 @@ export function SeatBar({ dem, rep, total }: { dem: number; rep: number; total: 
   );
 }
 
-export function SeatLine({ dem, rep, oth, size = "text-2xl" }: { dem: React.ReactNode; rep: React.ReactNode; oth?: number; size?: string }) {
+/** Seats gained against a baseline, named for the party with the bigger gain (the history cards' rule). */
+export function netSeats(now: { dem: number; rep: number }, base: { dem: number; rep: number }): { party: "D" | "R"; seats: number } | null {
+  const demNet = now.dem - base.dem;
+  const repNet = now.rep - base.rep;
+  if (demNet > repNet && demNet > 0) return { party: "D", seats: demNet };
+  if (repNet > demNet && repNet > 0) return { party: "R", seats: repNet };
+  return null;
+}
+
+export function SeatLine({ dem, rep, oth, net, size = "text-2xl" }: { dem: React.ReactNode; rep: React.ReactNode; oth?: number; net?: { party: "D" | "R"; seats: number } | null; size?: string }) {
   return (
     <div className={`${size} font-bold tabular-nums leading-tight`}>
       <span style={{ color: "var(--party-dem)" }}>D {dem}</span>
       <span style={{ color: "var(--app-text-very-muted)" }}> · </span>
       <span style={{ color: "var(--party-rep)" }}>R {rep}</span>
       {oth ? <><span style={{ color: "var(--app-text-very-muted)" }}> · </span><span style={{ color: "var(--party-ind)" }}>I {oth}</span></> : null}
+      {net ? <><span style={{ color: "var(--app-text-very-muted)" }}> · </span><span style={{ color: net.party === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>Net +{net.seats} {net.party}</span></> : null}
     </div>
   );
 }
@@ -65,7 +75,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
             {heading(`${electionYear} projection`)}
             {/* Each seat's projected winner, summed: the count the chamber map shows. The range and the
                 control odds below come from the simulation. */}
-            <SeatLine dem={projection.favored.dem} rep={projection.favored.rep} oth={projection.favored.oth} />
+            <SeatLine dem={projection.favored.dem} rep={projection.favored.rep} oth={projection.favored.oth} net={seats ? netSeats(projection.favored, seats) : null} />
             <SeatBar dem={projection.favored.dem} rep={projection.favored.rep} total={projTotal} />
             <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
               {projection.pDemControl == null ? `${projection.unprojected} seats unprojected` : (

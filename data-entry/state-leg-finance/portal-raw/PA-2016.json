@@ -1,0 +1,4225 @@
+{
+ "state": "PA",
+ "cycle": 2016,
+ "source": "Pennsylvania Department of State campaign finance exports (itemized + unitemized contributions)",
+ "fetched": "2026-10-17",
+ "dataThrough": "12/31/2016",
+ "candidates": [
+  {
+   "name": "FRIENDS OF MIKE CARROLL FOR STATE REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "118",
+   "committee": "2006121",
+   "contributions": 303275.0
+  },
+  {
+   "name": "DERMODY, FRANK FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "33",
+   "committee": "9000164",
+   "contributions": 1180022.59
+  },
+  {
+   "name": "FRIENDS OF PAUL MULLEN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "161",
+   "committee": "20150206",
+   "contributions": 714587.3
+  },
+  {
+   "name": "FRIENDS OF NICK MICCARELLI",
+   "party": "REP",
+   "chamber": "house",
+   "district": "162",
+   "committee": "2008072",
+   "contributions": 29490.0
+  },
+  {
+   "name": "PENNSYLVANIANS FOR REPRESENTATIVE MARK COHEN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "202",
+   "committee": "8000074",
+   "contributions": 173331.65
+  },
+  {
+   "name": "FRIENDS OF KATE HARPER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "61",
+   "committee": "2000127",
+   "contributions": 134084.1
+  },
+  {
+   "name": "FRIENDS OF DAVE HICKERNELL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "98",
+   "committee": "2001259",
+   "contributions": 52134.17
+  },
+  {
+   "name": "COMMITTEE TO ELECT MARIO SCAVELLO",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "40",
+   "committee": "2002024",
+   "contributions": 117113.75
+  },
+  {
+   "name": "FRIENDS OF MATT GABLER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "75",
+   "committee": "2008225",
+   "contributions": 131606.24
+  },
+  {
+   "name": "HELM, SUE FOR ST HOUSE COM                                  ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "104",
+   "committee": "2005302",
+   "contributions": 74650.0
+  },
+  {
+   "name": "CITIZENS TO ELECT PAYNE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "106",
+   "committee": "2002358",
+   "contributions": 27780.0
+  },
+  {
+   "name": "DELUCA FOR LEGISLATIVE COMMITTEE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "32",
+   "committee": "8200289",
+   "contributions": 35090.38
+  },
+  {
+   "name": "FRIENDS OF DUANE MILNE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "167",
+   "committee": "2006131",
+   "contributions": 120769.03
+  },
+  {
+   "name": "VOTE DAILEY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "174",
+   "committee": "20150178",
+   "contributions": 25386.01
+  },
+  {
+   "name": "FRIENDS OF MIKE DRISCOLL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "173",
+   "committee": "20140205",
+   "contributions": 17050.0
+  },
+  {
+   "name": "DEL RICCI, SARAH  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "170",
+   "committee": "2015c0007",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAVID HENDERSON / COMMITTEE TO ELECT HENDERSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "194",
+   "committee": "20140104",
+   "contributions": 9900.0
+  },
+  {
+   "name": "BULLOCK,DONNA ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "195",
+   "committee": "2015C0415",
+   "contributions": 125.0
+  },
+  {
+   "name": "KRUEGER-BRANEKY, LEANNE  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "161",
+   "committee": "2015C0409",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Donna Bullock",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "195",
+   "committee": "20150218",
+   "contributions": 182904.88
+  },
+  {
+   "name": "DUANE MORRIS GOVT COM                                       ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "37",
+   "committee": "7900289",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF BOB CHARLES",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "87",
+   "committee": "20150220",
+   "contributions": 19850.12
+  },
+  {
+   "name": "HANNA, MIKE FRIENDS OF                                      ",
+   "party": "R/D",
+   "chamber": "house",
+   "district": "76",
+   "committee": "9000068",
+   "contributions": 355247.42
+  },
+  {
+   "name": "FRIENDS FOR SHERYL DELOZIER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "88",
+   "committee": "2008014",
+   "contributions": 10306.75
+  },
+  {
+   "name": "ROBERT TOMMY\" TOMLINSON FOR SENATE\"",
+   "party": "",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "9400191",
+   "contributions": 244550.0
+  },
+  {
+   "name": "KAUFER NOW COMMITTEE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "",
+   "committee": "20120022",
+   "contributions": 3950.0
+  },
+  {
+   "name": "FRIENDS OF ANDY DINNIMAN",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "2006193",
+   "contributions": 645610.78
+  },
+  {
+   "name": "FRIENDS OF FARNESE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "1",
+   "committee": "2006008",
+   "contributions": 571650.0
+  },
+  {
+   "name": "FRIENDS OF GREG ROTHMAN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "87",
+   "committee": "20150209",
+   "contributions": 307367.87
+  },
+  {
+   "name": "FRIENDS OF GUY",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "37",
+   "committee": "20150239",
+   "contributions": 1369227.55
+  },
+  {
+   "name": "ADAM FOR STATE REPRESENTATIVE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "195",
+   "committee": "20150235",
+   "contributions": 3716.72
+  },
+  {
+   "name": "FRIENDS OF CHARLES WILKINS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "191",
+   "committee": "20150231",
+   "contributions": 5570.34
+  },
+  {
+   "name": "GORDON,TRACEY ",
+   "party": "TGP",
+   "chamber": "house",
+   "district": "191",
+   "committee": "2015C0417",
+   "contributions": 4945.0
+  },
+  {
+   "name": "FRIENDS OF TODD STEPHENS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "151",
+   "committee": "2008016",
+   "contributions": 225444.91
+  },
+  {
+   "name": "CLARION CNTY REP CMTTE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "",
+   "committee": "8000622",
+   "contributions": 5405.0
+  },
+  {
+   "name": "FRIENDS OF MICHELLE BROWNLEE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "195",
+   "committee": "2009456",
+   "contributions": 500.0
+  },
+  {
+   "name": "Heather for Harrisburg",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "37",
+   "committee": "20150234",
+   "contributions": 615980.2
+  },
+  {
+   "name": "FRIENDS OF KATHY WATSON",
+   "party": "REP",
+   "chamber": "house",
+   "district": "144",
+   "committee": "2000134",
+   "contributions": 39565.0
+  },
+  {
+   "name": "FRIENDS OF CHERELLE L. PARKER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "200",
+   "committee": "2005137",
+   "contributions": 5730.51
+  },
+  {
+   "name": "FRIENDS TO ELECT TINA TARTAGLIONE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "2",
+   "committee": "9200098",
+   "contributions": 41750.0
+  },
+  {
+   "name": "ARGALL, DAVID VOLUNTEERS FOR",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "29",
+   "committee": "8400088",
+   "contributions": 297923.0
+  },
+  {
+   "name": "FRIENDS OF MARCY TOEPEL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "147",
+   "committee": "2010004",
+   "contributions": 64800.71
+  },
+  {
+   "name": "SCHOTT, ANN FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "13",
+   "committee": "20140144",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF MARGO DAVIDSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "164",
+   "committee": "2010081",
+   "contributions": 184086.5
+  },
+  {
+   "name": "CITIZENS FOR BISHOP",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "192",
+   "committee": "8800182",
+   "contributions": 0.0
+  },
+  {
+   "name": "HANSEN FOR SEANTE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "20140174",
+   "contributions": 67.15
+  },
+  {
+   "name": "FRIENDS OF MARTINA WHITE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "170",
+   "committee": "20150043",
+   "contributions": 542957.37
+  },
+  {
+   "name": "MARTINA WHITE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "170",
+   "committee": "2015C0008",
+   "contributions": 2300.0
+  },
+  {
+   "name": "COOK-ARTIS, TONYELLE FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "200",
+   "committee": "20150343",
+   "contributions": 54459.5
+  },
+  {
+   "name": "FRIENDS OF JESSE TOPPER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "78",
+   "committee": "20130283",
+   "contributions": 24070.0
+  },
+  {
+   "name": "FRIENDS OF CHUCK MCILHINNEY",
+   "party": "",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "9700298",
+   "contributions": 140885.18
+  },
+  {
+   "name": "PHILADELPHIA FRIENDS FOR ROSS FEINBERG",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "5",
+   "committee": "20150337",
+   "contributions": 6171.8
+  },
+  {
+   "name": "RE-ELECT ANGEL CRUZ FOR THE 180TH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "180",
+   "committee": "2000085",
+   "contributions": 10602.0
+  },
+  {
+   "name": "JOHN GALLOWAY FOR STATE REP",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "140",
+   "committee": "2006251",
+   "contributions": 134198.82
+  },
+  {
+   "name": "SAINATO, CHRIS FOR STATE REP",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "9",
+   "committee": "9400015",
+   "contributions": 52155.0
+  },
+  {
+   "name": "ROBBINS FOR SENATE COMMITTEE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "50",
+   "committee": "8200157",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF ANTHONY PUGLIESE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "92",
+   "committee": "20150318",
+   "contributions": 102778.58
+  },
+  {
+   "name": "FRIENDS OF PAT HARKINS C/O TREASURER SUSAN M. KOWALSKI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "1",
+   "committee": "2005299",
+   "contributions": 18402.2
+  },
+  {
+   "name": "HENNESSEY, TIM FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "26",
+   "committee": "9200177",
+   "contributions": 56585.0
+  },
+  {
+   "name": "FRIENDS OF BILL ADOLPH JR.",
+   "party": "REP",
+   "chamber": "house",
+   "district": "165",
+   "committee": "8800106",
+   "contributions": 342986.05
+  },
+  {
+   "name": "FRIENDS OF LESLIE ALTIERI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "138",
+   "committee": "20120159",
+   "contributions": 100.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT PAUL SCHEMEL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "90",
+   "committee": "20140050",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Senator Don White",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "41",
+   "committee": "2000115",
+   "contributions": 479177.19
+  },
+  {
+   "name": "EVANKOVICH, ELI FRIENDS OF                                   ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "54",
+   "committee": "2010002",
+   "contributions": 152359.26
+  },
+  {
+   "name": "EMILIO A. VAZQUEZ FOR THE 179TH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "179",
+   "committee": "2004090",
+   "contributions": 0.0
+  },
+  {
+   "name": "CARPENTERS&#39; LEG PROG OF GREATER PA                          ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "37",
+   "committee": "9500250",
+   "contributions": 0.0
+  },
+  {
+   "name": "DEL RICCI, SARAH COMMITTEE TO ELECT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "170",
+   "committee": "20150068",
+   "contributions": 79483.2
+  },
+  {
+   "name": "MCCARTER, STEVE FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "154",
+   "committee": "20120190",
+   "contributions": 87771.19
+  },
+  {
+   "name": "SUPPORTERS OF DAVE ZIMMERMAN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "99",
+   "committee": "20140093",
+   "contributions": 26629.08
+  },
+  {
+   "name": "FRIENDS OF FRED KELLER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "85",
+   "committee": "2010098",
+   "contributions": 44614.99
+  },
+  {
+   "name": "ADAM LANG",
+   "party": "REP",
+   "chamber": "house",
+   "district": "195",
+   "committee": "2015C0416",
+   "contributions": 3311.72
+  },
+  {
+   "name": "BOB CHARLES",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "87",
+   "committee": "2015C0407",
+   "contributions": 0.0
+  },
+  {
+   "name": "BREWSTER, JIM COMMITTEE TO ELECT                            ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "45",
+   "committee": "2010389",
+   "contributions": 199699.23
+  },
+  {
+   "name": "LONGIETTI, MARK FRIENDS OF                                  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "7",
+   "committee": "2005203",
+   "contributions": 39182.56
+  },
+  {
+   "name": "FRIENDS OF JON RITCHIE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "20150339",
+   "contributions": 297363.11
+  },
+  {
+   "name": "CITIZENS FOR GREENLEAF",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "12",
+   "committee": "8400397",
+   "contributions": 99495.0
+  },
+  {
+   "name": "FRIENDS FOR DONNA OBERLANDER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "63",
+   "committee": "2008041",
+   "contributions": 96211.71
+  },
+  {
+   "name": "FRIENDS OF BOB MENSCH",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "2006061",
+   "contributions": 21985.8
+  },
+  {
+   "name": "AARON BERNSTINE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "10",
+   "committee": "2016C0393",
+   "contributions": 0.0
+  },
+  {
+   "name": "CITIZENS FOR NATE CURTIS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "104",
+   "committee": "2016C0610",
+   "contributions": 4925.0
+  },
+  {
+   "name": "LANGERHOLC, WAYNE FOR SENATE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "20150366",
+   "contributions": 639456.75
+  },
+  {
+   "name": "IEZZI, LINDA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "57",
+   "committee": "20160050",
+   "contributions": 36142.7
+  },
+  {
+   "name": "IEZZI,LINDA L ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "57",
+   "committee": "2016C0665",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Diane Cornman-Levy",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "168",
+   "committee": "20160059",
+   "contributions": 39582.92
+  },
+  {
+   "name": "MARK E AMSDELL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "71",
+   "committee": "2016C0580",
+   "contributions": 0.0
+  },
+  {
+   "name": "DEAN, MADELEINE FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "153",
+   "committee": "20120101",
+   "contributions": 86150.16
+  },
+  {
+   "name": "Friends of Ed Gainey",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "24",
+   "committee": "2005155",
+   "contributions": 47685.0
+  },
+  {
+   "name": "MENTZER, STEVE FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "97",
+   "committee": "20120380",
+   "contributions": 65141.26
+  },
+  {
+   "name": "MARSHALL, JIM FRIENDS OF                                    ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "",
+   "committee": "2006026",
+   "contributions": 48352.49
+  },
+  {
+   "name": "FLYNN,MARTIN B II",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "113",
+   "committee": "2016C0172",
+   "contributions": 0.0
+  },
+  {
+   "name": "HALL, ALLAN FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "111",
+   "committee": "20160084",
+   "contributions": 7286.13
+  },
+  {
+   "name": "HALL, ALAN M ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "111",
+   "committee": "2016C0331",
+   "contributions": 1800.0
+  },
+  {
+   "name": "FRIENDS OF SCOTT CONKLIN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "77",
+   "committee": "2006317",
+   "contributions": 15085.16
+  },
+  {
+   "name": "MOVITA JOHNSON-HARRELL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "190",
+   "committee": "2016C0726",
+   "contributions": 14485.0
+  },
+  {
+   "name": "DAVID G. ARGALL",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "29",
+   "committee": "2016C0258",
+   "contributions": 4039.33
+  },
+  {
+   "name": "KELLER, MARK FRIENDS OF                                     ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "86",
+   "committee": "2004018",
+   "contributions": 41856.4
+  },
+  {
+   "name": "MADDEN, MAUREEN FRIENDS OF FOR STATE REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "115",
+   "committee": "20120140",
+   "contributions": 98863.78
+  },
+  {
+   "name": "YOUNGBLOOD, ROSITA COM TO ELECT                             ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "198",
+   "committee": "9400089",
+   "contributions": 7650.0
+  },
+  {
+   "name": "MACKENZIE, RYAN CITIZENS FOR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "134",
+   "committee": "20120083",
+   "contributions": 82552.39
+  },
+  {
+   "name": "ZAHALSKY, ANDREW J ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "40",
+   "committee": "2016C0813",
+   "contributions": 52122.96
+  },
+  {
+   "name": "BOBACK, KAREN FRIENDS OF                                    ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "117",
+   "committee": "2006044",
+   "contributions": 47063.0
+  },
+  {
+   "name": "DEAN, NANCY FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "13",
+   "committee": "20160138",
+   "contributions": 4116.22
+  },
+  {
+   "name": "KAUFFMAN, ROB COM TO ELECT                                  ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "89",
+   "committee": "2004044",
+   "contributions": 27595.5
+  },
+  {
+   "name": "RADER, JACK JR BIPARTISAN COMMITTEE TO ELECT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "176",
+   "committee": "20140004",
+   "contributions": 31532.53
+  },
+  {
+   "name": "CHIRA SMITH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "149",
+   "committee": "2016C0960",
+   "contributions": 14473.18
+  },
+  {
+   "name": "ROSEMARY BROWN FOR STATE REP",
+   "party": "REP",
+   "chamber": "house",
+   "district": "189",
+   "committee": "2010237",
+   "contributions": 110629.16
+  },
+  {
+   "name": "FRIENDS OF INDER BAINS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "164",
+   "committee": "20160125",
+   "contributions": 28201.0
+  },
+  {
+   "name": "INDERJIT SINGH BAINS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "164",
+   "committee": "2016C0893",
+   "contributions": 19334.74
+  },
+  {
+   "name": "MCDOWELL, LATRYSE FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "200",
+   "committee": "20160019",
+   "contributions": 1931.75
+  },
+  {
+   "name": "ROHANNA MCCLURE,ELIZABETH L ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "50",
+   "committee": "2016C0575",
+   "contributions": 2740.0
+  },
+  {
+   "name": "JOE SZPARA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "46",
+   "committee": "2016C0801",
+   "contributions": 0.0
+  },
+  {
+   "name": "CAROLYN T. COMITTA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "156",
+   "committee": "2016C0460",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOHN KLUCK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "64",
+   "committee": "2016C1218",
+   "contributions": 0.0
+  },
+  {
+   "name": "TROY MORROW CLAWSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "65",
+   "committee": "2016C1219",
+   "contributions": 1743.62
+  },
+  {
+   "name": "DUANE MILNE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "167",
+   "committee": "2016C0721",
+   "contributions": 0.0
+  },
+  {
+   "name": "ANITA ASTORINO KULIK",
+   "party": "D/R",
+   "chamber": "house",
+   "district": "45",
+   "committee": "2016C0301",
+   "contributions": 0.0
+  },
+  {
+   "name": "PETER T. KOBYLINSKI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "39",
+   "committee": "2016C0838",
+   "contributions": 1609.14
+  },
+  {
+   "name": "JAY NOTARIANNI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "75",
+   "committee": "2016C0368",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOHN LAWRENCE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "13",
+   "committee": "2016C0831",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOSEPH W. BILLOTTE II",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "63",
+   "committee": "2016C1217",
+   "contributions": 0.0
+  },
+  {
+   "name": "COMMITTEE TO RE ELECT FRANK BURNS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "72",
+   "committee": "2008210",
+   "contributions": 82352.83
+  },
+  {
+   "name": "BRIAN SIMS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "182",
+   "committee": "2016C0396",
+   "contributions": 2677.02
+  },
+  {
+   "name": "RABB, CHRISTOPHER M ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "200",
+   "committee": "2016C0459",
+   "contributions": 10194.98
+  },
+  {
+   "name": "MICHAEL J. CIACH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "159",
+   "committee": "2016C0609",
+   "contributions": 0.0
+  },
+  {
+   "name": "CAMERA FOR SENATE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "46",
+   "committee": "20150230",
+   "contributions": 84055.0
+  },
+  {
+   "name": "FRIENDS OF CHRIS QUINN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "168",
+   "committee": "20160052",
+   "contributions": 355131.89
+  },
+  {
+   "name": "DONALD BUD COOK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "49",
+   "committee": "2016C0324",
+   "contributions": 0.0
+  },
+  {
+   "name": "PIOFORPA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "172",
+   "committee": "20150249",
+   "contributions": 153922.59
+  },
+  {
+   "name": "FRIENDS OF ALEX CHARLTON",
+   "party": "REP",
+   "chamber": "house",
+   "district": "165",
+   "committee": "20160085",
+   "contributions": 509663.41
+  },
+  {
+   "name": "LAUGHLIN, DAN COMMITTEE TO ELECT",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "49",
+   "committee": "20160119",
+   "contributions": 890532.3
+  },
+  {
+   "name": "ROB TEPLITZ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "2016C0291",
+   "contributions": 36.5
+  },
+  {
+   "name": "BARBIN, BRYAN FOR PENNSYLVANIA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "71",
+   "committee": "20160166",
+   "contributions": 106120.0
+  },
+  {
+   "name": "WEAVER, LINDA J ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "150",
+   "committee": "2016C0945",
+   "contributions": 614789.84
+  },
+  {
+   "name": "DAVID H ZIMMERMAN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "99",
+   "committee": "2016C0709",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF ISABELLA FITZGERALD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "203",
+   "committee": "2016C0570",
+   "contributions": 3380.0
+  },
+  {
+   "name": "RUN WITH ROSSI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "15",
+   "committee": "2016C0803",
+   "contributions": 11685.16
+  },
+  {
+   "name": "FRIENDS OF MARCIA HAHN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "138",
+   "committee": "2016C0348",
+   "contributions": 17430.0
+  },
+  {
+   "name": "MARK B. COHEN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "202",
+   "committee": "2016C0861",
+   "contributions": 920.23
+  },
+  {
+   "name": "GENE YAW",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "23",
+   "committee": "2016C0335",
+   "contributions": 15000.0
+  },
+  {
+   "name": "FRIENDS OF BOB MCDONALD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "120",
+   "committee": "20160237",
+   "contributions": 11356.0
+  },
+  {
+   "name": "STEVE MCCARTER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "154",
+   "committee": "2016C0341",
+   "contributions": 3000.0
+  },
+  {
+   "name": "R. LEE JAMES",
+   "party": "REP",
+   "chamber": "house",
+   "district": "64",
+   "committee": "2016C0706",
+   "contributions": 1843.06
+  },
+  {
+   "name": "LOU JASIKOFF",
+   "party": "IND",
+   "chamber": "house",
+   "district": "117",
+   "committee": "2016C1263",
+   "contributions": 3670.0
+  },
+  {
+   "name": "WILEY, SEAN D FRIENDS OF",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "49",
+   "committee": "20120058",
+   "contributions": 400705.0
+  },
+  {
+   "name": "MATTHEW J. DARRAGH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "170",
+   "committee": "20150349",
+   "contributions": 972780.6
+  },
+  {
+   "name": "CITIZENS FOR GARY GREGORY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "116",
+   "committee": "20160163",
+   "contributions": 8500.0
+  },
+  {
+   "name": "HAHN, MARCIA FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "138",
+   "committee": "2010054",
+   "contributions": 27455.0
+  },
+  {
+   "name": "WHEATLEY, JAKE CITIZENS FOR                                 ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "19",
+   "committee": "2002093",
+   "contributions": 28975.0
+  },
+  {
+   "name": "TRUITT, DAN FRIENDS OF                                      ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "156",
+   "committee": "2009359",
+   "contributions": 267826.88
+  },
+  {
+   "name": "KAMPF, WARREN FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "157",
+   "committee": "2009450",
+   "contributions": 447965.98
+  },
+  {
+   "name": "JOHN D. RITTER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "25",
+   "committee": "2016C0822",
+   "contributions": 1000.0
+  },
+  {
+   "name": "FRIENDS OF GREG LUCAS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "3",
+   "committee": "20160102",
+   "contributions": 59928.97
+  },
+  {
+   "name": "EICH, ED FOR SENATE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "37",
+   "committee": "20160169",
+   "contributions": 2500.0
+  },
+  {
+   "name": "SCARNATI,JOSEPH  B.  III",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "2016C0230",
+   "contributions": 1246.86
+  },
+  {
+   "name": "NELSON, ERIC FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "57",
+   "committee": "20150361",
+   "contributions": 0.0
+  },
+  {
+   "name": "PASHINSKI, EDDIE DAY COM TO ELECT                           ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "121",
+   "committee": "2006195",
+   "contributions": 49843.2
+  },
+  {
+   "name": "ALLOWAY, RICH FRIENDS OF                                    ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "33",
+   "committee": "2008062",
+   "contributions": 216436.67
+  },
+  {
+   "name": "KUZNIK, MARYBETH FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "56",
+   "committee": "20120094",
+   "contributions": 0.0
+  },
+  {
+   "name": "MAXWELL, JOSH COMMITTEE TO ELECT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "74",
+   "committee": "20160143",
+   "contributions": 933.48
+  },
+  {
+   "name": "REESE, MIKE FRIENDS OF COM                                  ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "59",
+   "committee": "2008047",
+   "contributions": 37505.0
+  },
+  {
+   "name": "BOOKER, TERRI FRIENDS AND FAMILY OF",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "37",
+   "committee": "20170133",
+   "contributions": 409489.99
+  },
+  {
+   "name": "COSTA, DOM FRIENDS OF                                       ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "21",
+   "committee": "2008044",
+   "contributions": 64964.05
+  },
+  {
+   "name": "GROVE, SETH CITIZENS FOR                                    ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "196",
+   "committee": "2008325",
+   "contributions": 49598.87
+  },
+  {
+   "name": "EVANKOVICH, ELI  ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "54",
+   "committee": "2016C0155",
+   "contributions": 0.0
+  },
+  {
+   "name": "ZIMMER, PETER FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "6",
+   "committee": "20160118",
+   "contributions": 5967.0
+  },
+  {
+   "name": "ELLIS, BRIAN COM TO ELECT                                   ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "11",
+   "committee": "2002077",
+   "contributions": 95800.0
+  },
+  {
+   "name": "REGAN, MIKE FOR SENATE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "20150185",
+   "contributions": 446334.95
+  },
+  {
+   "name": "GORDNER, JOHN FRIENDS OF                                    ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "27",
+   "committee": "9200382",
+   "contributions": 52800.0
+  },
+  {
+   "name": "HARRIS, C ADAM FOR REP                                      ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "82",
+   "committee": "2002017",
+   "contributions": 23843.8
+  },
+  {
+   "name": "KRUEGER-BRANEKY,LEANNE T ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "161",
+   "committee": "2016C0667",
+   "contributions": 0.0
+  },
+  {
+   "name": "BARBIN,BRYAN E ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "71",
+   "committee": "2016c0411",
+   "contributions": 0.0
+  },
+  {
+   "name": "WOZNIAK, JOHN N COM TO ELECT                                ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "8200105",
+   "contributions": 48775.0
+  },
+  {
+   "name": "MAHER, JOHN COM TO ELECT                                    ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "40",
+   "committee": "9700213",
+   "contributions": 135800.0
+  },
+  {
+   "name": "REED, DAVE FRIENDS OF                                       ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "62",
+   "committee": "2001025",
+   "contributions": 489527.23
+  },
+  {
+   "name": "SNYDER, PAMELA  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "50",
+   "committee": "2016C0126",
+   "contributions": 0.0
+  },
+  {
+   "name": "DELORETO, TONY FRIENDS OF",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "41",
+   "committee": "20160090",
+   "contributions": 37829.47
+  },
+  {
+   "name": "Friends of Jim Butt",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "162",
+   "committee": "20160046",
+   "contributions": 75080.36
+  },
+  {
+   "name": "DELISSIO, PAMELA STATE HOUSE CAMPAIGN                       ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "194",
+   "committee": "2010034",
+   "contributions": 8020.0
+  },
+  {
+   "name": "BLOOM, STEPHEN FOR THE 199TH COM                            ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "199",
+   "committee": "2010108",
+   "contributions": 49174.33
+  },
+  {
+   "name": "LONG, JAKE FOR THE 102",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "102",
+   "committee": "20140244",
+   "contributions": 25485.05
+  },
+  {
+   "name": "Committee to Elect William Keller",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "184",
+   "committee": "9200057",
+   "contributions": 27400.0
+  },
+  {
+   "name": "HAMBY, DALE  ALLEN ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "100",
+   "committee": "2016C0502",
+   "contributions": 2750.0
+  },
+  {
+   "name": "HAMBY, DALE ELECT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "100",
+   "committee": "20160074",
+   "contributions": 15735.99
+  },
+  {
+   "name": "MCNEILL, DAN FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "133",
+   "committee": "20120381",
+   "contributions": 37973.66
+  },
+  {
+   "name": "MAHONEY, TIMOTHY S ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "51",
+   "committee": "2016C0150",
+   "contributions": 0.0
+  },
+  {
+   "name": "KEVIN HAGGERTY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "112",
+   "committee": "2016C0917",
+   "contributions": 8000.0
+  },
+  {
+   "name": "Friends of Sid Michaels Kavulich",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "114",
+   "committee": "2010101",
+   "contributions": 78295.0
+  },
+  {
+   "name": "KAVULICH, MICHAEL GEORGE ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "114",
+   "committee": "2016C0414",
+   "contributions": 5363.89
+  },
+  {
+   "name": "EVERETT, GARTH FRIENDS OF                                   ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "84",
+   "committee": "2006067",
+   "contributions": 27742.89
+  },
+  {
+   "name": "Jay Costa Jr for State Senate",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "43",
+   "committee": "9600029",
+   "contributions": 646983.08
+  },
+  {
+   "name": "COX, JIM FRIENDS OF                                         ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "129",
+   "committee": "2006014",
+   "contributions": 8150.0
+  },
+  {
+   "name": "WARREN, PERRY S JR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "31",
+   "committee": "2016C0295",
+   "contributions": 0.0
+  },
+  {
+   "name": "PEIFER, MIKE FRIENDS OF                                     ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "139",
+   "committee": "2006030",
+   "contributions": 8100.0
+  },
+  {
+   "name": "BRETT R. MILLER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "41",
+   "committee": "2016C0144",
+   "contributions": 0.0
+  },
+  {
+   "name": "BARBIN, BRYAN CITIZENS TO RE-ELECT                          ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "71",
+   "committee": "2009381",
+   "contributions": 0.0
+  },
+  {
+   "name": "WARD, JUDITH F ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "80",
+   "committee": "2016C0679",
+   "contributions": 809.43
+  },
+  {
+   "name": "PETRARCA, JOSEPH ELECTION COM                               ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "55",
+   "committee": "9400098",
+   "contributions": 66724.34
+  },
+  {
+   "name": "FOLMER, MIKE FOR STATE SEN         ",
+   "party": "",
+   "chamber": "senate",
+   "district": "48",
+   "committee": "2005315",
+   "contributions": 18110.0
+  },
+  {
+   "name": "Tim Briggs for State Representative",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "149",
+   "committee": "2008161",
+   "contributions": 25775.0
+  },
+  {
+   "name": "RZUCIDLO, SUSAN F ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "158",
+   "committee": "2016C0303",
+   "contributions": 5331.6
+  },
+  {
+   "name": "FITZGERALD, ISABELLA FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "203",
+   "committee": "20150346",
+   "contributions": 5450.0
+  },
+  {
+   "name": "Mike Turzai",
+   "party": "REP",
+   "chamber": "house",
+   "district": "28",
+   "committee": "2016C0469",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF MIKE TURZAI",
+   "party": "REP",
+   "chamber": "house",
+   "district": "28",
+   "committee": "2001144",
+   "contributions": 331184.88
+  },
+  {
+   "name": "REGAN,MICHAEL R ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "2016c0492",
+   "contributions": 0.0
+  },
+  {
+   "name": "Committee to Elect John Taylor",
+   "party": "REP",
+   "chamber": "house",
+   "district": "177",
+   "committee": "8400117",
+   "contributions": 377539.06
+  },
+  {
+   "name": "FLYNN, MARTY FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "113",
+   "committee": "20120098",
+   "contributions": 104611.23
+  },
+  {
+   "name": "BOYLE, KEVIN FRIENDS OF                                     ",
+   "party": "",
+   "chamber": "house",
+   "district": "172",
+   "committee": "2010138",
+   "contributions": 49791.4
+  },
+  {
+   "name": "Committee to Elect Pam Snyder",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "50",
+   "committee": "20120378",
+   "contributions": 298918.48
+  },
+  {
+   "name": "MOVING FRANKFORD FORWARD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "179",
+   "committee": "20130207",
+   "contributions": 6363.0
+  },
+  {
+   "name": "Friends of Mary Jo Daley",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "148",
+   "committee": "20120373",
+   "contributions": 76562.66
+  },
+  {
+   "name": "CEPHAS, MORGAN FRIENDS FOR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "192",
+   "committee": "20150357",
+   "contributions": 220610.77
+  },
+  {
+   "name": "AUMENT FOR SENATE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "20140011",
+   "contributions": 51350.0
+  },
+  {
+   "name": "COLE, VERA FRIENDS OF ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "145",
+   "committee": "20160049",
+   "contributions": 29533.13
+  },
+  {
+   "name": "DAVIS, TINA FRIENDS OF                                       ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "141",
+   "committee": "2010095",
+   "contributions": 104694.3
+  },
+  {
+   "name": "BROWN, VANESSA FRIENDS TO ELECT                             ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "190",
+   "committee": "2008264",
+   "contributions": 700.0
+  },
+  {
+   "name": "SCHLOSSBERG, MIKE FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "132",
+   "committee": "20120115",
+   "contributions": 96456.65
+  },
+  {
+   "name": "Killion Victory Committee",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "2003196",
+   "contributions": 1936425.12
+  },
+  {
+   "name": "BOYLE, KEVIN J ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "172",
+   "committee": "2016C0863",
+   "contributions": 0.0
+  },
+  {
+   "name": "MASSER, KURT FRIENDS OF                                     ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "107",
+   "committee": "2010223",
+   "contributions": 120285.53
+  },
+  {
+   "name": "PERRY WARREN FOR STATE REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "31",
+   "committee": "20160014",
+   "contributions": 159941.79
+  },
+  {
+   "name": "GIBBONS, JARET FRIENDS OF                                   ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "10",
+   "committee": "2006084",
+   "contributions": 527160.06
+  },
+  {
+   "name": "TOOHIL,TARAH COM TO ELECT                                   ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "116",
+   "committee": "2010027",
+   "contributions": 33256.0
+  },
+  {
+   "name": "CLEARY, DAVID G ",
+   "party": "IND",
+   "chamber": "house",
+   "district": "160",
+   "committee": "2016C1240",
+   "contributions": 2365.22
+  },
+  {
+   "name": "BAGDES-CANNING, MICHAEL 2016",
+   "party": "GRN",
+   "chamber": "house",
+   "district": "64",
+   "committee": "20160208",
+   "contributions": 3394.01
+  },
+  {
+   "name": "FRED KELLER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "85",
+   "committee": "2016C0432",
+   "contributions": 0.0
+  },
+  {
+   "name": "NEALE DOUGHERTY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "178",
+   "committee": "2016C0234",
+   "contributions": 30025.0
+  },
+  {
+   "name": "FRIENDS OF BARRY JOZWIAK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "5",
+   "committee": "20140117",
+   "contributions": 33876.0
+  },
+  {
+   "name": "TEAM GILLESPIE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "47",
+   "committee": "2002013",
+   "contributions": 10720.0
+  },
+  {
+   "name": "MILLARD, DAVID, COMMITTEE TO ELECT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "109",
+   "committee": "2003319",
+   "contributions": 5750.0
+  },
+  {
+   "name": "Solomon, Jared Friends of",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "202",
+   "committee": "20130202",
+   "contributions": 154451.06
+  },
+  {
+   "name": "READSHAW, HARRY FOR LEG                                     ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "36",
+   "committee": "9400057",
+   "contributions": 41150.0
+  },
+  {
+   "name": "SHERYL DELOZIER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "88",
+   "committee": "2016C0371",
+   "contributions": 0.0
+  },
+  {
+   "name": "MANDERINO, JIM II CAMPAIGN COMMITTEE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "58",
+   "committee": "20160092",
+   "contributions": 8059.65
+  },
+  {
+   "name": "JAMES JOHN MANDERINO II",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "58",
+   "committee": "2016C0640",
+   "contributions": 320.0
+  },
+  {
+   "name": "RUSS DIAMOND",
+   "party": "REP",
+   "chamber": "house",
+   "district": "102",
+   "committee": "2016C0326",
+   "contributions": 10500.0
+  },
+  {
+   "name": "KUNKEL, STEPHEN 2016",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "143",
+   "committee": "20160072",
+   "contributions": 11929.4
+  },
+  {
+   "name": "RODGERS-MORRISETTE, PATTI FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "161",
+   "committee": "20160054",
+   "contributions": 121704.13
+  },
+  {
+   "name": "MULLERY, GERALD CITIZENS FOR                                ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "119",
+   "committee": "2010090",
+   "contributions": 46934.9
+  },
+  {
+   "name": "CUTLER, BRYAN FRIENDS OF                                    ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "100",
+   "committee": "2005289",
+   "contributions": 109188.45
+  },
+  {
+   "name": "COSTA, PAUL FOR ST REP                                      ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "34",
+   "committee": "9800084",
+   "contributions": 41812.5
+  },
+  {
+   "name": "DUNBAR, GEORGE FRIENDS OF                                   ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "56",
+   "committee": "2010084",
+   "contributions": 14723.81
+  },
+  {
+   "name": "RABB, CHRIS FOR STATE REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "200",
+   "committee": "20160033",
+   "contributions": 108370.4
+  },
+  {
+   "name": "FAGAN, JIMMY J JR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "151",
+   "committee": "2016C0948",
+   "contributions": 0.0
+  },
+  {
+   "name": "FAGAN, JIMMY FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "151",
+   "committee": "20160117",
+   "contributions": 35731.75
+  },
+  {
+   "name": "SIVIY WELDON, DENISE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "91",
+   "committee": "20160055",
+   "contributions": 19784.22
+  },
+  {
+   "name": "HOUTZ,THOMAS M ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "102",
+   "committee": "2016C0314",
+   "contributions": 3721.07
+  },
+  {
+   "name": "BARRAR, STEPHEN FRIENDS OF                                  ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "160",
+   "committee": "9500237",
+   "contributions": 92102.47
+  },
+  {
+   "name": "CORBIN, BECKY FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "155",
+   "committee": "20110307",
+   "contributions": 74141.77
+  },
+  {
+   "name": "MAHONEY, TIM FRIENDS OF                                     ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "51",
+   "committee": "2005209",
+   "contributions": 96495.0
+  },
+  {
+   "name": "SONNEY, CURT COM TO ELECT                                   ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "4",
+   "committee": "2004106",
+   "contributions": 12350.0
+  },
+  {
+   "name": "KUNKEL, STEPHEN FAGER ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "143",
+   "committee": "2016C0296",
+   "contributions": 0.0
+  },
+  {
+   "name": "GREGORY,GARY ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "116",
+   "committee": "2016C0540",
+   "contributions": 2492.4
+  },
+  {
+   "name": "H TEAM, THE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "76",
+   "committee": "20110243",
+   "contributions": 297425.0
+  },
+  {
+   "name": "NESBIT, TEDD ELECT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "8",
+   "committee": "20140001",
+   "contributions": 40536.35
+  },
+  {
+   "name": "NESBIT,TEDD  C ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "8",
+   "committee": "2016c0598",
+   "contributions": 3671.0
+  },
+  {
+   "name": "MCCLINTON, JOANNA FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "191",
+   "committee": "20150217",
+   "contributions": 36308.0
+  },
+  {
+   "name": "MARSICO, RON FRIENDS OF COM                                 ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "105",
+   "committee": "8800071",
+   "contributions": 62945.0
+  },
+  {
+   "name": "CIRESI, JOE FRIEND OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "146",
+   "committee": "20150334",
+   "contributions": 174468.1
+  },
+  {
+   "name": "MARI, JAMES FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "52",
+   "committee": "20160114",
+   "contributions": 39745.21
+  },
+  {
+   "name": "MARI, JAMES M ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "52",
+   "committee": "2016C0151",
+   "contributions": 850.0
+  },
+  {
+   "name": "MAKO, ZACHARY FOR PA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "183",
+   "committee": "20160115",
+   "contributions": 135838.77
+  },
+  {
+   "name": "TOLBERT, CHRISTINE FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "89",
+   "committee": "20160135",
+   "contributions": 4868.0
+  },
+  {
+   "name": "BOSCOLA, LISA FRIENDS OF                                    ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "9400092",
+   "contributions": 101500.0
+  },
+  {
+   "name": "SNYDER, MARNI PHILLY FOR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "182",
+   "committee": "20150326",
+   "contributions": 46259.16
+  },
+  {
+   "name": "FRIENDS OF ALBERT J. DERMOVSESIAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "152",
+   "committee": "20150365",
+   "contributions": 5708.14
+  },
+  {
+   "name": "GARAY, BRENDAN ANTHONY ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "49",
+   "committee": "2016C0807",
+   "contributions": 500.0
+  },
+  {
+   "name": "GARAY, BRENDAN FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "49",
+   "committee": "20160042",
+   "contributions": 4441.0
+  },
+  {
+   "name": "PAULSON, GREGORY FOR PA SENATE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "20160005",
+   "contributions": 16169.42
+  },
+  {
+   "name": "SAVAGE, LYNWOOD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "192",
+   "committee": "2016C1187",
+   "contributions": 0.0
+  },
+  {
+   "name": "JONATHAN DAVID KEELER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "106",
+   "committee": "2016C0819",
+   "contributions": 20201.16
+  },
+  {
+   "name": "TOBASH FOR A BETTER 125TH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "125",
+   "committee": "2010060",
+   "contributions": 20875.0
+  },
+  {
+   "name": "BRICE ARNDT",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "2016C0762",
+   "contributions": 0.0
+  },
+  {
+   "name": "SCHREIBER FOR YORK",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "20130066",
+   "contributions": 4160.0
+  },
+  {
+   "name": "THOMAS LUKASEWICZ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "112",
+   "committee": "2016C0441",
+   "contributions": 4200.0
+  },
+  {
+   "name": "STEVEN BURDA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "150",
+   "committee": "2016C1056",
+   "contributions": 90.0
+  },
+  {
+   "name": "CECILIA HOUSER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "72",
+   "committee": "2016C0444",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF ED FLOCCO",
+   "party": "REP",
+   "chamber": "house",
+   "district": "148",
+   "committee": "20140247",
+   "contributions": 1744.54
+  },
+  {
+   "name": "ALAN BENYAK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "49",
+   "committee": "2016C0280",
+   "contributions": 1127.38
+  },
+  {
+   "name": "JOEL SEARS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "95",
+   "committee": "2016C0577",
+   "contributions": 0.0
+  },
+  {
+   "name": "WINCK, DWIGHT JR FOR PA SENATE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "20160136",
+   "contributions": 5480.0
+  },
+  {
+   "name": "HAGGERTY, KEVIN COM TO ELECT                                ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "112",
+   "committee": "2009451",
+   "contributions": 39619.0
+  },
+  {
+   "name": "FRIENDS OF STEVE ELLIOTT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "43",
+   "committee": "20150243",
+   "contributions": 4300.45
+  },
+  {
+   "name": "VITALI, GREGORY VOTE COM                                    ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "166",
+   "committee": "9200290",
+   "contributions": 26510.0
+  },
+  {
+   "name": "MUSTIO, MARK FRIENDS OF                                     ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "44",
+   "committee": "2003193",
+   "contributions": 231583.59
+  },
+  {
+   "name": "People to Elect Matt Baker",
+   "party": "",
+   "chamber": "house",
+   "district": "68",
+   "committee": "9100275",
+   "contributions": 13930.0
+  },
+  {
+   "name": "WINCK, DWIGHT A JR",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "2016C0902",
+   "contributions": 1582.0
+  },
+  {
+   "name": "FARINA, FRANK FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "112",
+   "committee": "20120052",
+   "contributions": 24090.0
+  },
+  {
+   "name": "LENHART, LESTER L",
+   "party": "REP",
+   "chamber": "house",
+   "district": "6",
+   "committee": "2016C1179",
+   "contributions": 2939.2
+  },
+  {
+   "name": "FRIENDS TO ELECT ANTHONY SCALFARO",
+   "party": "REP",
+   "chamber": "house",
+   "district": "153",
+   "committee": "20160060",
+   "contributions": 5673.45
+  },
+  {
+   "name": "SCALFARO,ANTHONY M III",
+   "party": "REP",
+   "chamber": "house",
+   "district": "153",
+   "committee": "2016C0413",
+   "contributions": 0.0
+  },
+  {
+   "name": "ERIC NELSON",
+   "party": "REP",
+   "chamber": "house",
+   "district": "57",
+   "committee": "2016C0471",
+   "contributions": 5000.0
+  },
+  {
+   "name": "ELECT PARKE WENTLING",
+   "party": "REP",
+   "chamber": "house",
+   "district": "17",
+   "committee": "20140099",
+   "contributions": 15459.4
+  },
+  {
+   "name": "PARKE H. WENTLING",
+   "party": "REP",
+   "chamber": "house",
+   "district": "17",
+   "committee": "2016C0179",
+   "contributions": 0.0
+  },
+  {
+   "name": "MATTHEW DOWLING",
+   "party": "REP",
+   "chamber": "house",
+   "district": "51",
+   "committee": "2016C0704",
+   "contributions": 400.0
+  },
+  {
+   "name": "BIRMELIN, JERRY FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "111",
+   "committee": "20160023",
+   "contributions": 24047.86
+  },
+  {
+   "name": "MARC J. GRAMMES",
+   "party": "REP",
+   "chamber": "house",
+   "district": "183",
+   "committee": "2016C0431",
+   "contributions": 1000.0
+  },
+  {
+   "name": "EDWARD JOSEPH DENHAM, DO, JD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "167",
+   "committee": "2016C0712",
+   "contributions": 0.0
+  },
+  {
+   "name": "THOMAS J. QUIGLEY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "146",
+   "committee": "2016C0239",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROBERT L. KEPICS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "46",
+   "committee": "2016C0851",
+   "contributions": 1600.0
+  },
+  {
+   "name": "FRIENDS OF TOM MEHAFFIE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "106",
+   "committee": "20160008",
+   "contributions": 184249.39
+  },
+  {
+   "name": "TOM MEHAFFIE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "106",
+   "committee": "2016C0215",
+   "contributions": 0.0
+  },
+  {
+   "name": "CITIZENS FOR MARK AMSDELL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "71",
+   "committee": "20160036",
+   "contributions": 10599.96
+  },
+  {
+   "name": "DEMME, ETHAN FRIENDS OF",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "20150340",
+   "contributions": 19603.25
+  },
+  {
+   "name": "RICHARD S. IRVIN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "81",
+   "committee": "2016C0489",
+   "contributions": 0.0
+  },
+  {
+   "name": "HANNA,MICHAEL  K SR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "76",
+   "committee": "2016C0320",
+   "contributions": 10889.23
+  },
+  {
+   "name": "MCGINNIS, JOHN FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "79",
+   "committee": "20120121",
+   "contributions": 40541.32
+  },
+  {
+   "name": "WHITE, JESSE COM TO ELECT                                   ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "46",
+   "committee": "2006053",
+   "contributions": 3250.0
+  },
+  {
+   "name": "PACE, MICHAEL COMMITTEE TO ELECT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "2",
+   "committee": "20160127",
+   "contributions": 2560.0
+  },
+  {
+   "name": "BYELICH, MARK FRIENDS OF ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "178",
+   "committee": "20150360",
+   "contributions": 1051.15
+  },
+  {
+   "name": "PACE, MICHAEL P ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "2",
+   "committee": "2016C0825",
+   "contributions": 39.03
+  },
+  {
+   "name": "JOHNSON, JESTINE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "192",
+   "committee": "2016C0516",
+   "contributions": 11226.45
+  },
+  {
+   "name": "EICHELBERGER, JOHN - I LIKE EICH                            ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "2005249",
+   "contributions": 44026.0
+  },
+  {
+   "name": "ENGLISH, HAL FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "30",
+   "committee": "20120382",
+   "contributions": 53925.0
+  },
+  {
+   "name": "LAUGHLIN,DANIEL J ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "49",
+   "committee": "2016c0816",
+   "contributions": 0.0
+  },
+  {
+   "name": "MCGRAW, KATE  ",
+   "party": "KMI",
+   "chamber": "house",
+   "district": "92",
+   "committee": "2016C1242",
+   "contributions": 8493.42
+  },
+  {
+   "name": "SIMMONS, JUSTIN FRIENDS OF                                  ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "131",
+   "committee": "2010036",
+   "contributions": 156224.51
+  },
+  {
+   "name": "DONATUCCI, MARIA P FRIENDS OF                               ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "185",
+   "committee": "2010482",
+   "contributions": 21000.0
+  },
+  {
+   "name": "SCARNATI, JOSEPH FRIENDS OF                                 ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "",
+   "committee": "9600087",
+   "contributions": 1198629.05
+  },
+  {
+   "name": "JOSEPH P. CIRESI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "146",
+   "committee": "2016C0418",
+   "contributions": 0.0
+  },
+  {
+   "name": "MILLER, BRETT VICTORY COMMITTEE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "41",
+   "committee": "20140095",
+   "contributions": 53936.71
+  },
+  {
+   "name": "ROZZI, MARK FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "126",
+   "committee": "20120071",
+   "contributions": 17075.0
+  },
+  {
+   "name": "REAMES, ANDRE  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "115",
+   "committee": "2016c0991",
+   "contributions": 4199.0
+  },
+  {
+   "name": "CIACH, MICHAEL J FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "159",
+   "committee": "20140249",
+   "contributions": 8225.0
+  },
+  {
+   "name": "FRIENDS OF RUSS DIAMOND",
+   "party": "REP",
+   "chamber": "house",
+   "district": "102",
+   "committee": "20140386",
+   "contributions": 19208.91
+  },
+  {
+   "name": "DENHAM, JOE COMMITTEE TO ELECT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "167",
+   "committee": "20160134",
+   "contributions": 61973.25
+  },
+  {
+   "name": "SALKA, ROD FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "38",
+   "committee": "20160145",
+   "contributions": 2295.72
+  },
+  {
+   "name": "Neilson for the Northeast",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "174",
+   "committee": "20120111",
+   "contributions": 17925.0
+  },
+  {
+   "name": "MCDONALD, ROBERT JOHN ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "120",
+   "committee": "2016C0668",
+   "contributions": 37907.29
+  },
+  {
+   "name": "REBARCHAK , JODY FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "104",
+   "committee": "20160056",
+   "contributions": 25312.64
+  },
+  {
+   "name": "SCHAEFER, ELAINE PAUL ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "165",
+   "committee": "2016C0379",
+   "contributions": 0.0
+  },
+  {
+   "name": "PICKETT, TINA FRIENDS OF                                    ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "110",
+   "committee": "2000143",
+   "contributions": 39880.0
+  },
+  {
+   "name": "Friends of Linda Weaver",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "150",
+   "committee": "20160103",
+   "contributions": 43127.02
+  },
+  {
+   "name": "KELLER, MARK K ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "86",
+   "committee": "2016C0137",
+   "contributions": 0.0
+  },
+  {
+   "name": "KEFFER, BARBARANN  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "163",
+   "committee": "2016C0922",
+   "contributions": 0.0
+  },
+  {
+   "name": "ARMSTRONG, PHILLIPS M. SR.",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "183",
+   "committee": "2016C0347",
+   "contributions": 0.0
+  },
+  {
+   "name": "ARMSTRONG, PHILLIPS FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "183",
+   "committee": "20160029",
+   "contributions": 16490.02
+  },
+  {
+   "name": "SAVAGE, LYNWOOD FRIENDS FOR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "192",
+   "committee": "20160058",
+   "contributions": 30368.68
+  },
+  {
+   "name": "LEONARD, SUZAN FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "61",
+   "committee": "20140163",
+   "contributions": 1590.81
+  },
+  {
+   "name": "BRADFORD, MATTHEW D ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "70",
+   "committee": "2016C0942",
+   "contributions": 5166.67
+  },
+  {
+   "name": "SCHLEGEL-CULVER, LYNDA CITIZENS FOR                         ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "108",
+   "committee": "2010130",
+   "contributions": 51055.1
+  },
+  {
+   "name": "Friends of Kim Ward",
+   "party": "D/R",
+   "chamber": "senate",
+   "district": "39",
+   "committee": "2008336",
+   "contributions": 71550.0
+  },
+  {
+   "name": "MURT, TOM FRIENDS OF                                        ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "152",
+   "committee": "2005296",
+   "contributions": 58989.1
+  },
+  {
+   "name": "STEVENS, SEAN FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "194",
+   "committee": "20150311",
+   "contributions": 4135.0
+  },
+  {
+   "name": "RIEGER, CHRISTIAN M ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "12",
+   "committee": "2016C0659",
+   "contributions": 0.0
+  },
+  {
+   "name": "RIEGER, CHRISTIAN FOR PENNSYLVANIA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "12",
+   "committee": "20160012",
+   "contributions": 4335.0
+  },
+  {
+   "name": "Friends of Brandon Neuman",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "48",
+   "committee": "2010217",
+   "contributions": 70510.0
+  },
+  {
+   "name": "BILL KORTZ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "38",
+   "committee": "2016C0128",
+   "contributions": 0.0
+  },
+  {
+   "name": "ELECT BILL KORTZ COMMITTEE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "38",
+   "committee": "2006101",
+   "contributions": 57877.32
+  },
+  {
+   "name": "LYNDA J SCHLEGEL CULVER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "108",
+   "committee": "2016C0266",
+   "contributions": 0.0
+  },
+  {
+   "name": "KINSEY, STEPHEN FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "201",
+   "committee": "20120202",
+   "contributions": 29806.0
+  },
+  {
+   "name": "SALKA,ROD A JR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "38",
+   "committee": "2016C0829",
+   "contributions": 0.0
+  },
+  {
+   "name": "COX,JAMES A JR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "129",
+   "committee": "2016C0261",
+   "contributions": 1.0
+  },
+  {
+   "name": "HUGHES, CHRIS FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "84",
+   "committee": "20160233",
+   "contributions": 0.0
+  },
+  {
+   "name": "HOUTZ, THOMAS FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "102",
+   "committee": "20160083",
+   "contributions": 27440.06
+  },
+  {
+   "name": "SPRINGER, CHARLES E JR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "70",
+   "committee": "2016C0834",
+   "contributions": 1625.0
+  },
+  {
+   "name": "FULLER, PATRICK FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "2",
+   "committee": "20160079",
+   "contributions": 3398.83
+  },
+  {
+   "name": "POPOVICH, MARY FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "58",
+   "committee": "20160071",
+   "contributions": 866737.83
+  },
+  {
+   "name": "FULLER,PATRICK J ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "2",
+   "committee": "2016C0604",
+   "contributions": 200.0
+  },
+  {
+   "name": "GIBBONS, JARET A. ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "10",
+   "committee": "2016C0198",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRAD ROAE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "6",
+   "committee": "2016C0153",
+   "contributions": 0.0
+  },
+  {
+   "name": "DISANTO, GIOVANNI M ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "2016C0330",
+   "contributions": 0.0
+  },
+  {
+   "name": "JACKSON, JOANNE FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "131",
+   "committee": "20160176",
+   "contributions": 8995.16
+  },
+  {
+   "name": "DISANTO FOR SENATE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "20150203",
+   "contributions": 1234315.89
+  },
+  {
+   "name": "NEUMAN, BRANDON P ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "48",
+   "committee": "2016C0536",
+   "contributions": 0.0
+  },
+  {
+   "name": "POUNDS, BILL FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "194",
+   "committee": "20130257",
+   "contributions": 4083.58
+  },
+  {
+   "name": "LEWIS, ANDREW FRIENDS OF",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "20150270",
+   "contributions": 89236.04
+  },
+  {
+   "name": "HENDRICKS, RACHEL LYNN ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "147",
+   "committee": "2016C0952",
+   "contributions": 2250.83
+  },
+  {
+   "name": "WARNER, RYAN JAMES ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "52",
+   "committee": "2016c0716",
+   "contributions": 0.0
+  },
+  {
+   "name": "WARNER, RYAN FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "52",
+   "committee": "20140201",
+   "contributions": 27428.0
+  },
+  {
+   "name": "LANGERHOLC,WAYNE JR",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "2016C0205",
+   "contributions": 0.0
+  },
+  {
+   "name": "SANDERS, EDWARD FRIENDS FOR STATE REP",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "109",
+   "committee": "20160201",
+   "contributions": 12042.24
+  },
+  {
+   "name": "4 WE THE PEOPLE-COOK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "49",
+   "committee": "20140110",
+   "contributions": 59518.57
+  },
+  {
+   "name": "HOHENSTEIN, JOE ELECT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "177",
+   "committee": "20150356",
+   "contributions": 355570.38
+  },
+  {
+   "name": "VAN MOL, HANS FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "157",
+   "committee": "20160165",
+   "contributions": 22304.48
+  },
+  {
+   "name": "SAVAGE, DANNY FRIENDS OF",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "2",
+   "committee": "20130221",
+   "contributions": 6524.0
+  },
+  {
+   "name": "DIGIROLAMO, GENE FRIENDS OF                                 ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "18",
+   "committee": "9400126",
+   "contributions": 69451.44
+  },
+  {
+   "name": "ELLIS, BRIAN L. ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "11",
+   "committee": "2016C0268",
+   "contributions": 0.0
+  },
+  {
+   "name": "LONDON, JACK SAMUEL ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "2016C0382",
+   "contributions": 2400.0
+  },
+  {
+   "name": "MUHA, MICHAEL T FRIENDS OF",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "50",
+   "committee": "20130216",
+   "contributions": 150.0
+  },
+  {
+   "name": "CINTRON, HECTOR FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "176",
+   "committee": "20160037",
+   "contributions": 1067.0
+  },
+  {
+   "name": "ROBERT MARCOCCIO",
+   "party": "NOA",
+   "chamber": "house",
+   "district": "169",
+   "committee": "2016C1265",
+   "contributions": 0.0
+  },
+  {
+   "name": "BROWNE, PATRICK CITIZENS FOR                                ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "9400028",
+   "contributions": 366680.57
+  },
+  {
+   "name": "MOLONY, DAVE FRIENDS OF                                     ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "133",
+   "committee": "2009353",
+   "contributions": 8025.0
+  },
+  {
+   "name": "BRADFORD, MATT FRIENDS OF                                   ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "70",
+   "committee": "2008319",
+   "contributions": 97003.0
+  },
+  {
+   "name": "BEDIO,DENISE ",
+   "party": "IND",
+   "chamber": "house",
+   "district": "109",
+   "committee": "2016c1266",
+   "contributions": 0.0
+  },
+  {
+   "name": "MATZIE, ROBERT PEOPLE FOR                                   ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "16",
+   "committee": "2008095",
+   "contributions": 43650.0
+  },
+  {
+   "name": "MCCLURE, ROHANNA TEAM",
+   "party": "REP",
+   "chamber": "house",
+   "district": "50",
+   "committee": "20150363",
+   "contributions": 58459.6
+  },
+  {
+   "name": "CHRISTIANA, JIM CITIZENS FOR                                ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "15",
+   "committee": "2008219",
+   "contributions": 168763.48
+  },
+  {
+   "name": "FRIENDS OF DAN MOUL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "91",
+   "committee": "2006331",
+   "contributions": 11805.0
+  },
+  {
+   "name": "FRIENDS OF JEFF C. WHEELAND",
+   "party": "REP",
+   "chamber": "house",
+   "district": "83",
+   "committee": "20130292",
+   "contributions": 12050.0
+  },
+  {
+   "name": "JUSTIN M. WALSH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "58",
+   "committee": "2016C0386",
+   "contributions": 2100.0
+  },
+  {
+   "name": "FRIENDS FOR JUSTIN WALSH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "58",
+   "committee": "20160091",
+   "contributions": 300056.9
+  },
+  {
+   "name": "GREG LUCAS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "3",
+   "committee": "2016C0742",
+   "contributions": 3646.33
+  },
+  {
+   "name": "JORDAN HARRIS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "186",
+   "committee": "2016C0114",
+   "contributions": 4333.0
+  },
+  {
+   "name": "Friends of Elaine Schaefer",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "165",
+   "committee": "20160026",
+   "contributions": 290770.9
+  },
+  {
+   "name": "WARD, JUDY FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "80",
+   "committee": "20130305",
+   "contributions": 20060.0
+  },
+  {
+   "name": "GODSHALL, ROBERT FRIENDS OF                                 ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "53",
+   "committee": "8200085",
+   "contributions": 152050.49
+  },
+  {
+   "name": "Friends of Neil",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "122",
+   "committee": "20150263",
+   "contributions": 219041.71
+  },
+  {
+   "name": "MOLLOY, MARTIN W II",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "2016c0670",
+   "contributions": 0.0
+  },
+  {
+   "name": "SAMUELSON, STEVE FRIENDS OF                                 ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "135",
+   "committee": "9800098",
+   "contributions": 1183.0
+  },
+  {
+   "name": "STEFANO, PAT FRIENDS OF",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "32",
+   "committee": "20140023",
+   "contributions": 23725.0
+  },
+  {
+   "name": "POPOVICH,MARY E ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "58",
+   "committee": "2016C0912",
+   "contributions": 6000.0
+  },
+  {
+   "name": "Friends of Martin Molloy",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "20160002",
+   "contributions": 752862.47
+  },
+  {
+   "name": "LONDON, JACK FRIENDS OF",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "20150163",
+   "contributions": 570304.12
+  },
+  {
+   "name": "KATE KLUNK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "169",
+   "committee": "2016C0306",
+   "contributions": 0.0
+  },
+  {
+   "name": "BUGGEY, STANLEY  ",
+   "party": "USM",
+   "chamber": "senate",
+   "district": "41",
+   "committee": "2016C1251",
+   "contributions": 1249.0
+  },
+  {
+   "name": "GEHOSKY, KENNETH ELECT SENATOR COMMITTEE",
+   "party": "NOP",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "20160234",
+   "contributions": 4865.0
+  },
+  {
+   "name": "FRITZ, JONATHAN FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "111",
+   "committee": "20160035",
+   "contributions": 1000.0
+  },
+  {
+   "name": "JONATHAN A. FRITZ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "111",
+   "committee": "2016C0534",
+   "contributions": 0.0
+  },
+  {
+   "name": "KULIK, ASTORINO ANITA FRIENDS OF",
+   "party": "D/R",
+   "chamber": "house",
+   "district": "45",
+   "committee": "20150355",
+   "contributions": 54078.82
+  },
+  {
+   "name": "THOMAS P. MURT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "152",
+   "committee": "2016C0229",
+   "contributions": 3535.0
+  },
+  {
+   "name": "COOK-ARTIS, TONYELLE  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "200",
+   "committee": "2016C1189",
+   "contributions": 0.0
+  },
+  {
+   "name": "Nelson, Eric R",
+   "party": "REP",
+   "chamber": "house",
+   "district": "57",
+   "committee": "2016C1191",
+   "contributions": 0.0
+  },
+  {
+   "name": "SHADE, RUSS FRIENDS OF                                      ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "183",
+   "committee": "2006113",
+   "contributions": 0.0
+  },
+  {
+   "name": "PETRI, SCOTT A FRIENDS OF                                   ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "178",
+   "committee": "2002152",
+   "contributions": 273727.71
+  },
+  {
+   "name": "DALEY, MARY JOSEPHINE ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "148",
+   "committee": "2016c0617",
+   "contributions": 0.0
+  },
+  {
+   "name": "CERNIC, ED FOR SENATE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "20160250",
+   "contributions": 29065.22
+  },
+  {
+   "name": "LEON WILLIAMS",
+   "party": "LEP",
+   "chamber": "house",
+   "district": "192",
+   "committee": "2016C1186",
+   "contributions": 14582.5
+  },
+  {
+   "name": "MICHAEL SCOTT TRAVIS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "87",
+   "committee": "2016C0572",
+   "contributions": 8279.49
+  },
+  {
+   "name": "KRAIG WILLIAM BRUDER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "92",
+   "committee": "2016C0612",
+   "contributions": 0.0
+  },
+  {
+   "name": "RAPP, KATHY FOR REP                                         ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "64",
+   "committee": "2004037",
+   "contributions": 30885.23
+  },
+  {
+   "name": "WILLIAMS, LLOYD A FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "52",
+   "committee": "20160086",
+   "contributions": 10319.95
+  },
+  {
+   "name": "PAULSON,GREGORY ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "2016C0302",
+   "contributions": 0.0
+  },
+  {
+   "name": "STURLA, MIKE FOR STATE REP                                  ",
+   "party": "",
+   "chamber": "house",
+   "district": "96",
+   "committee": "9000060",
+   "contributions": 13110.0
+  },
+  {
+   "name": "COSTA, PAUL  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "34",
+   "committee": "2016c0133",
+   "contributions": 0.0
+  },
+  {
+   "name": "SANTANA, EDWIN FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "192",
+   "committee": "20150188",
+   "contributions": 60822.1
+  },
+  {
+   "name": "WEISMANTLE, BRIAN 4 PA REP",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "20",
+   "committee": "20160089",
+   "contributions": 2000.0
+  },
+  {
+   "name": "HESS, PIER CITIZENS FOR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "101",
+   "committee": "20160024",
+   "contributions": 13665.0
+  },
+  {
+   "name": "SNYDER, MARNI JO ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "182",
+   "committee": "2016C0929",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF NEAL RICE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "20150338",
+   "contributions": 46230.0
+  },
+  {
+   "name": "HARHART, JULIE COMMITTEE TO ELECT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "183",
+   "committee": "9400016",
+   "contributions": 0.0
+  },
+  {
+   "name": "ANGELICHIO, LEON FOR STATE REP",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "53",
+   "committee": "20160130",
+   "contributions": 7720.45
+  },
+  {
+   "name": "RZUCIDLO, SUSAN FRIENDS OF                                  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "158",
+   "committee": "2010045",
+   "contributions": 326866.02
+  },
+  {
+   "name": "BUTT,JAMES FREDERICK ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "162",
+   "committee": "2016C0919",
+   "contributions": 1608.0
+  },
+  {
+   "name": "HARHAI, R TED CAMPAIGN FUND                                 ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "58",
+   "committee": "9700309",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAWKINS, JASON FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "179",
+   "committee": "20150282",
+   "contributions": 33000.18
+  },
+  {
+   "name": "MATTEI, FRIENDS FOR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "137",
+   "committee": "20160182",
+   "contributions": 18266.0
+  },
+  {
+   "name": "GEHOSKY, KENNETH  ",
+   "party": "NOA",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "2016c1252",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAY, GARY FRIENDS OF                                        ",
+   "party": "R/D",
+   "chamber": "house",
+   "district": "187",
+   "committee": "2008134",
+   "contributions": 98350.0
+  },
+  {
+   "name": "ENGLISH,HAROLD A ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "30",
+   "committee": "2016C0139",
+   "contributions": 0.0
+  },
+  {
+   "name": "BETSY SUMMERS",
+   "party": "",
+   "chamber": "house",
+   "district": "121",
+   "committee": "2016C1264",
+   "contributions": 300.0
+  },
+  {
+   "name": "JUSTIN BEHRENS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "119",
+   "committee": "2016C0873",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEPHANIE BOROWICZ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "76",
+   "committee": "2016C0241",
+   "contributions": 1403.4
+  },
+  {
+   "name": "KRISTIN PHILLIPS-HILL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "93",
+   "committee": "2016C0199",
+   "contributions": 0.0
+  },
+  {
+   "name": "MELINDA S. FEE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "37",
+   "committee": "2016C0216",
+   "contributions": 0.0
+  },
+  {
+   "name": "CHERYL SCANDALE MURNIN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "114",
+   "committee": "2016C0381",
+   "contributions": 0.0
+  },
+  {
+   "name": "THOM ESTILOW",
+   "party": "REP",
+   "chamber": "house",
+   "district": "154",
+   "committee": "2016C0719",
+   "contributions": 0.0
+  },
+  {
+   "name": "ERNEST LEMONCELLI",
+   "party": "REP",
+   "chamber": "house",
+   "district": "112",
+   "committee": "2016C0582",
+   "contributions": 0.0
+  },
+  {
+   "name": "DERMODY, FRANK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "33",
+   "committee": "2016C0361",
+   "contributions": 9000.0
+  },
+  {
+   "name": "MARBURGER, GORDON L",
+   "party": "REP",
+   "chamber": "house",
+   "district": "12",
+   "committee": "2016C0390",
+   "contributions": 0.0
+  },
+  {
+   "name": "ED CERNIC JR",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "2016C1282",
+   "contributions": 4100.0
+  },
+  {
+   "name": "MELANIE PATTERSON",
+   "party": "REP",
+   "chamber": "house",
+   "district": "49",
+   "committee": "2016C0743",
+   "contributions": 680.0
+  },
+  {
+   "name": "CHARLES MRLACK, JR.",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "58",
+   "committee": "2016C0482",
+   "contributions": 6408.31
+  },
+  {
+   "name": "ETHAN DEMME",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "2016C0539",
+   "contributions": 0.0
+  },
+  {
+   "name": "MOLLOY, MARTIN W II",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "2016C0670",
+   "contributions": 0.0
+  },
+  {
+   "name": "WASHINGTON, LEANNA FRIENDS OF                               ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "4",
+   "committee": "9300174",
+   "contributions": 0.0
+  },
+  {
+   "name": "BULLOCK, DONNA  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "195",
+   "committee": "2016C0146",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROAE, BRAD COM TO ELECT                                     ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "6",
+   "committee": "2006100",
+   "contributions": 6360.0
+  },
+  {
+   "name": "DayPAC",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "2001257",
+   "contributions": 80710.0
+  },
+  {
+   "name": "SANDERS , EDWARD THOMAS III",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "109",
+   "committee": "2016C1226",
+   "contributions": 0.0
+  },
+  {
+   "name": "CLIFFORD GLOVIER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "10",
+   "committee": "2016C0558",
+   "contributions": 0.0
+  },
+  {
+   "name": "MARY ANN BUCKLEY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "81",
+   "committee": "2016C0732",
+   "contributions": 4140.0
+  },
+  {
+   "name": "ANTHONY PUGLIESE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "92",
+   "committee": "2016C0616",
+   "contributions": 0.0
+  },
+  {
+   "name": "HENDERSON, DONN FOR STATE REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "49",
+   "committee": "20160045",
+   "contributions": 13530.0
+  },
+  {
+   "name": "DENBOWSKI, FRANK B FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "126",
+   "committee": "20120298",
+   "contributions": 0.0
+  },
+  {
+   "name": "MILLER, DOTTIE FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "53",
+   "committee": "20140086",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRUMBAUGH, STACEY FOR SENATE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "2002009",
+   "contributions": 0.0
+  },
+  {
+   "name": "Committee to Re-Elect John Sabatina Jr",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "5",
+   "committee": "2005260",
+   "contributions": 182745.0
+  },
+  {
+   "name": "Friends For Scappe",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "44",
+   "committee": "20120178",
+   "contributions": 0.0
+  },
+  {
+   "name": "WESTRICK, MARTIN J COMMITTEE TO ELECT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "72",
+   "committee": "20160063",
+   "contributions": 633.37
+  },
+  {
+   "name": "STORRS, CRAIG COMMITTEE TO ELECT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "135",
+   "committee": "20160013",
+   "contributions": 0.0
+  },
+  {
+   "name": "WESTRICK, MARTIN J ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "72",
+   "committee": "2016C0283",
+   "contributions": 0.0
+  },
+  {
+   "name": "WARD 09 DEMS OF PHILA                                       ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "192",
+   "committee": "8500224",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAWKINS, JASON T ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "179",
+   "committee": "2016C0160",
+   "contributions": 7544.53
+  },
+  {
+   "name": "FRIENDS OF SHARIF STREET",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "2002041",
+   "contributions": 23079.75
+  },
+  {
+   "name": "BOYLE, BRENDAN FRIENDS OF                                   ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "170",
+   "committee": "2003070",
+   "contributions": 0.0
+  },
+  {
+   "name": "FLECK, MIKE FRIENDS OF                                      ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "81",
+   "committee": "2005314",
+   "contributions": 0.0
+  },
+  {
+   "name": "HARRIS, JORDAN CITIZENS FOR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "186",
+   "committee": "20120004",
+   "contributions": 47900.0
+  },
+  {
+   "name": "SCOTT F. MARTIN",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "2016C0424",
+   "contributions": 0.0
+  },
+  {
+   "name": "KEEFER, DAWN WETZEL ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "92",
+   "committee": "2016C0490",
+   "contributions": 0.0
+  },
+  {
+   "name": "HENDRICKS, RACHEL FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "147",
+   "committee": "20160064",
+   "contributions": 15298.79
+  },
+  {
+   "name": "CARNICELLA,GERALD S ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "2016C0207",
+   "contributions": 7000.0
+  },
+  {
+   "name": "LEVY, DIANE C ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "168",
+   "committee": "2016C0675",
+   "contributions": 0.0
+  },
+  {
+   "name": "TAUP COPE (TEMPLE ASSN UNIV PROF)                           ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "200",
+   "committee": "9100040",
+   "contributions": 1007.0
+  },
+  {
+   "name": "CARNICELLA, JERRY FOR STATE SENATE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "20150342",
+   "contributions": 13900.0
+  },
+  {
+   "name": "PIER HESS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "101",
+   "committee": "2016C0329",
+   "contributions": 9315.0
+  },
+  {
+   "name": "FRIENDS OF ERNEST LEMONCELLI",
+   "party": "REP",
+   "chamber": "house",
+   "district": "112",
+   "committee": "20160178",
+   "contributions": 3061.15
+  },
+  {
+   "name": "COMMITTEE TO ELECT HARRY ENGGASSER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "177",
+   "committee": "2006126",
+   "contributions": 0.0
+  },
+  {
+   "name": "DONBACH, BRAD VOTE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "104",
+   "committee": "20140463",
+   "contributions": 0.0
+  },
+  {
+   "name": "HARPER, SCOTT  ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "2016C0820",
+   "contributions": 10925.0
+  },
+  {
+   "name": "BROWN, VANESSA L 190",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "190",
+   "committee": "20160139",
+   "contributions": 2380.0
+  },
+  {
+   "name": "SPONSELLER, TODD FRIENDS OF FOR JUDGE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "39",
+   "committee": "20150023",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Barbarann Keffer",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "163",
+   "committee": "20150272",
+   "contributions": 19143.03
+  },
+  {
+   "name": "MICHAEL M. GEISELHART",
+   "party": "REP",
+   "chamber": "house",
+   "district": "55",
+   "committee": "2016C0439",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of John Craig Hammond",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "28",
+   "committee": "20160185",
+   "contributions": 14280.0
+  },
+  {
+   "name": "MATTEI,DAVE D ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "137",
+   "committee": "2016C1236",
+   "contributions": 2020.0
+  },
+  {
+   "name": "LYTLE, GABE ELECT",
+   "party": "GRN",
+   "chamber": "house",
+   "district": "60",
+   "committee": "20160194",
+   "contributions": 447.84
+  },
+  {
+   "name": "LEWIS, ANDREW JAMES ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "2016C0497",
+   "contributions": 56.84
+  },
+  {
+   "name": "GRIFFITH, JEFFREY W FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "101",
+   "committee": "20160077",
+   "contributions": 21675.31
+  },
+  {
+   "name": "KOGER, TODD ELLIOTT ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "24",
+   "committee": "2016C0864",
+   "contributions": 0.0
+  },
+  {
+   "name": "JAMAR IZZARD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "195",
+   "committee": "2016C1039",
+   "contributions": 6500.0
+  },
+  {
+   "name": "TRUITT, DANIEL GEORGE SR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "156",
+   "committee": "2016C0322",
+   "contributions": 261.96
+  },
+  {
+   "name": "ROSSI, MICHAEL RUN WITH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "15",
+   "committee": "20160173",
+   "contributions": 850.0
+  },
+  {
+   "name": "MADDEN, MAUREEN E",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "115",
+   "committee": "2016C0821",
+   "contributions": 0.0
+  },
+  {
+   "name": "LORRAINE HELEN SCUDDER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "101",
+   "committee": "2016C0841",
+   "contributions": 1600.0
+  },
+  {
+   "name": "KEEFER WETZEL, DAWN COMMITTEE FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "92",
+   "committee": "20160003",
+   "contributions": 52470.16
+  },
+  {
+   "name": "Citizens for Hughes",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "9200339",
+   "contributions": 146900.0
+  },
+  {
+   "name": "SOLOMON,JARED G ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "202",
+   "committee": "2016C0307",
+   "contributions": 300.0
+  },
+  {
+   "name": "WOLFE, JESSICA COMMITTEE TO ELECT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "19",
+   "committee": "20150289",
+   "contributions": 31228.0
+  },
+  {
+   "name": "RODGERS MORRISETTE, PATTI A ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "161",
+   "committee": "2016C0649",
+   "contributions": 0.0
+  },
+  {
+   "name": "IEZZI, LINDA  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "57",
+   "committee": "2016C1185",
+   "contributions": 0.0
+  },
+  {
+   "name": "SULLIVAN, SEAN FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "175",
+   "committee": "20130254",
+   "contributions": 5681.0
+  },
+  {
+   "name": "WOLFE, JESSICA Z ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "19",
+   "committee": "2016C0802",
+   "contributions": 0.0
+  },
+  {
+   "name": "CINDY MILLER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "183",
+   "committee": "2016C0105",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF JEFF BLACK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "8",
+   "committee": "20140043",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRANCIS NELMS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "170",
+   "committee": "2016C0736",
+   "contributions": 0.0
+  },
+  {
+   "name": "TED SMITH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "190",
+   "committee": "2016C0661",
+   "contributions": 1081.9
+  },
+  {
+   "name": "WILLIAMS, LLOYD ALLEN ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "52",
+   "committee": "2016C0358",
+   "contributions": 0.0
+  },
+  {
+   "name": "ACTIVE 55TH ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "",
+   "committee": "20150079",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOHN D MCGINNIS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "79",
+   "committee": "2016C0132",
+   "contributions": 1143.82
+  },
+  {
+   "name": "GEORGE, STEPHEN FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "187",
+   "committee": "20150018",
+   "contributions": 125.0
+  },
+  {
+   "name": "CHRIS PFAFF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "107",
+   "committee": "2016C0866",
+   "contributions": 960.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT DAVID M. MALONEY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "130",
+   "committee": "2010058",
+   "contributions": 5550.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT HARRY LEWIS JR.",
+   "party": "REP",
+   "chamber": "house",
+   "district": "74",
+   "committee": "20130275",
+   "contributions": 18870.0
+  },
+  {
+   "name": "KENNETH T WALKER JR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "181",
+   "committee": "2016C1009",
+   "contributions": 175.0
+  },
+  {
+   "name": "PETER STARR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "79",
+   "committee": "2016C0417",
+   "contributions": 1590.0
+  },
+  {
+   "name": "HORNBARGER, WILLIAM FRIENDS TO ELECT",
+   "party": "NOA",
+   "chamber": "house",
+   "district": "90",
+   "committee": "20140180",
+   "contributions": 0.0
+  }
+ ]
+}

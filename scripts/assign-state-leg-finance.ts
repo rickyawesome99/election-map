@@ -18,7 +18,8 @@
  * chamber + district looks inside that district first, where the surname alone may decide (also as a
  * word of a committee name); without
  * one, it needs a unique statewide (or chamber-wide) hit on the full name, then first + last, then the
- * surname parts run together. Ambiguous and unmatched records are dropped and counted.
+ * surname parts run together, then a committee name holding both the first and last name of exactly one
+ * candidate. Ambiguous and unmatched records are dropped and counted.
  * Two records on one candidate (a renamed committee) keep the larger figure, never the sum.
  */
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from "fs";
@@ -114,6 +115,23 @@ function assign(file: string) {
       // No initial-only match statewide: "J. Landry" would take Governor Jeff Landry's committee for
       // House candidate Jacob Landry. Inside a district (above) it is safe.
       for (const k of ["full", "loose", "squash"] as const) pick(scope, k);
+      // A committee name with no district ("Kirk Sherrill for NC House"): the one candidate in scope whose
+      // first AND last name are both words of it.
+      if (!found && !tie) {
+        const words = new Set(r.name.toLowerCase().normalize("NFKD").replace(/[^a-z\s-]/g, " ").split(/[\s-]+/));
+        const xs = scope.filter((p) => {
+          const t = p.name.toLowerCase().normalize("NFKD").replace(/\(.*?\)|".*?"/g, " ").replace(/[^a-z\s-]/g, " ").split(/[\s-]+/).filter((x) => x.length > 1 && !["jr", "sr", "ii", "iii"].includes(x));
+          return t.length >= 2 && words.has(t[0]) && words.has(t[t.length - 1]);
+        });
+        if (new Set(xs.map((p) => `${p.chamber}:${p.district}:${p.k.full}`)).size === 1) found = xs[0];
+        // "Moore for House": the surname alone, only when the name says which chamber and one candidate
+        // of that chamber has the surname.
+        const chamberWord = [...words].some((w) => /^(house|senate|assembly|assemblyman|assemblywoman|representative|rep|senator|delegate)$/.test(w));
+        if (!found && chamberWord && r.chamber) {
+          const ys = scope.filter((p) => p.chamber === r.chamber && p.k.last.length > 3 && words.has(p.k.last));
+          if (new Set(ys.map((p) => `${p.district}:${p.k.full}`)).size === 1) found = ys[0];
+        }
+      }
     }
     if (!found) { if (tie) ambiguous += 1; else unmatched += 1; continue; }
     const prev = hits.get(found);

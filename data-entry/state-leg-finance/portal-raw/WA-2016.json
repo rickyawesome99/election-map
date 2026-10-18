@@ -1,0 +1,2905 @@
+{
+ "state": "WA",
+ "cycle": 2016,
+ "source": "Washington PDC campaign finance summary (total contributions)",
+ "fetched": "2026-10-17",
+ "dataThrough": "12/31/2016",
+ "candidates": [
+  {
+   "name": "Laura D Carder",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "3",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "PRICE DENNIS J",
+   "party": "LIBERTARIAN",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "DURST BRANDEN J",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 6425.0,
+   "status": null
+  },
+  {
+   "name": "STEVEN BERGQUIST",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 60427.27,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "CARLYLE REUVEN M",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "36",
+   "contributions": 59341.0,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "HARRIS TANISHA L",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 8758.29,
+   "status": null
+  },
+  {
+   "name": "Jim Moeller",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 4360.0,
+   "status": null
+  },
+  {
+   "name": "CONDOTTA CARY L",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 91084.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "Jenn Goulet",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 12650.93,
+   "status": "Lost in general"
+  },
+  {
+   "name": "WEBB BENJAMIN J",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 2732.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "PAINE GERALD",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 20889.9,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Kristine M. Reeves",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 275546.73,
+   "status": "Won in general"
+  },
+  {
+   "name": "MATIAS ALEXANDER B",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 1952.5,
+   "status": null
+  },
+  {
+   "name": "Vicki Caldwell Kraft",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 286097.85,
+   "status": "Won in general"
+  },
+  {
+   "name": "Sharon Tomiko Santos",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 72384.4,
+   "status": "Won in general"
+  },
+  {
+   "name": "Kathy Gillespie",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 43298.51,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Matthew T. Shea",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 119085.92,
+   "status": "Won in general"
+  },
+  {
+   "name": "Vincent Buys",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 95766.44,
+   "status": "Won in general"
+  },
+  {
+   "name": "Bryan Simonson",
+   "party": "LIBERTARIAN",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 8418.07,
+   "status": null
+  },
+  {
+   "name": "VALENTINE BROOKE N",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 38635.75,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Marisa K. Peloquin",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 402172.2,
+   "status": "Lost in general"
+  },
+  {
+   "name": "J.T. Wilcox",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 282089.57,
+   "status": "Won in general"
+  },
+  {
+   "name": "Michael Steven Winkler",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 24732.67,
+   "status": null
+  },
+  {
+   "name": "Erin Aboudara",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 6567.76,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Justin Rossetti",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 72276.06,
+   "status": null
+  },
+  {
+   "name": "John S. Potter",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "33",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Paul Graves",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 320633.69,
+   "status": "Won in general"
+  },
+  {
+   "name": "ENDRESON CHASE T",
+   "party": "NON PARTISAN",
+   "chamber": "house",
+   "district": "44",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "VISKOVICH STEPHANIE H",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 5289.14,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Mohammed Riaz Khan",
+   "party": "NON PARTISAN",
+   "chamber": "house",
+   "district": "21",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "POMRANING ALLEN N",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 5804.0,
+   "status": null
+  },
+  {
+   "name": "DICKSON DALE R",
+   "party": "INDEPENDENT",
+   "chamber": "house",
+   "district": "42",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "KNOWLES BARRY D",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 39812.85,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Mark Hargrove",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 49702.72,
+   "status": "Won in general"
+  },
+  {
+   "name": "SCHERRER JEFFERY O",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 10776.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "LARRY SEAQUIST",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 279055.66,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Richard W. Muri",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 97290.5,
+   "status": "Won in general"
+  },
+  {
+   "name": "ATWOOD TRACY D",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 8586.27,
+   "status": "Lost in general"
+  },
+  {
+   "name": "KEARBY DAVID C",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 27337.72,
+   "status": null
+  },
+  {
+   "name": "Shelley Ann Kloba",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 165182.69,
+   "status": "Won in general"
+  },
+  {
+   "name": "VALLERY-WATSON JEREMY E",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "27",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "ANDERSON LISA A",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 0.0,
+   "status": null
+  },
+  {
+   "name": "ONDRACEK KATRINA",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 229564.87,
+   "status": "Lost in general"
+  },
+  {
+   "name": "LEE ERIK A",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 597.0,
+   "status": null
+  },
+  {
+   "name": "GEORGEN ERIN B",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "CHRISTENSEN GARN G",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 4792.54,
+   "status": null
+  },
+  {
+   "name": "Andrew Barkis",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 103281.06,
+   "status": "Won in general"
+  },
+  {
+   "name": "CARROLL JOHN F",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 3950.0,
+   "status": null
+  },
+  {
+   "name": "Bruce M. Guthrie",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "21",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "WIRTH MINDIE L",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 112942.24,
+   "status": "Lost in general"
+  },
+  {
+   "name": "SCHIRLE DAVID D",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 3202.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "HART ALEX R",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 460.0,
+   "status": null
+  },
+  {
+   "name": "DELANEY PAUL A",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "3",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "DOWNING GARY W",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 11893.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "ZAERR ZACHARY J",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "43",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "DOWNES NATHANIEL S",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 994.33,
+   "status": null
+  },
+  {
+   "name": "Susan Soto Palmer",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 4458.38,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Michael Appleby",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 59358.96,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Jeannie Darneille",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 58143.41,
+   "status": "Won in general"
+  },
+  {
+   "name": "HENDERSON VAUGHN G",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "LANGSTON JAMES E",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 119938.82,
+   "status": "Lost in general"
+  },
+  {
+   "name": "AUSTIN DONALD W",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 1528.36,
+   "status": "Lost in general"
+  },
+  {
+   "name": "EGAN JOSHUA D",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "17",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "PROBST TIMOTHY P",
+   "party": "OTHER",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 478770.18,
+   "status": "Lost in general"
+  },
+  {
+   "name": "COLWELL RICHARD",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 3644.03,
+   "status": null
+  },
+  {
+   "name": "FRISINA ROBERT A JR",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 3969.88,
+   "status": null
+  },
+  {
+   "name": "KOLDING BRENDAN B",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "34",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "GIROUX ANNE S",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "28",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "BROWN ILANA E",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "18",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "BECK BRICE E",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 0.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "SMITH DANIEL T",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "9",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "Mari Lynn Kruger Leavitt",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 266125.92,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Andrew Pilloud",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 9289.08,
+   "status": "Lost in general"
+  },
+  {
+   "name": "PHELPS BENJAMIN J",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "48",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "JANSONS RICHARD S",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 12920.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "DRISCOLL SHANE M",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "38",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "LACLAIR SHARLAINE M",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 57111.74,
+   "status": "Lost in general"
+  },
+  {
+   "name": "POLLOCK PAMELA",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 9849.74,
+   "status": "Lost in general"
+  },
+  {
+   "name": "PASS JOHN J",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 5834.53,
+   "status": "Lost in general"
+  },
+  {
+   "name": "KIM GUN-SAM",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 216074.19,
+   "status": "Lost in general"
+  },
+  {
+   "name": "LANE C WALTHERS",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 206860.73,
+   "status": "Lost in general"
+  },
+  {
+   "name": "OBERG JUSTIN P",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 4555.6,
+   "status": "Lost in general"
+  },
+  {
+   "name": "MOREAU-COOK AARON J",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "1",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "SKYLER D. RUDE",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 24444.2,
+   "status": null
+  },
+  {
+   "name": "Rebecca Francik",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 19647.14,
+   "status": "Lost in general"
+  },
+  {
+   "name": "FORBES MICHAEL S",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 20765.32,
+   "status": null
+  },
+  {
+   "name": "James Michael Volz",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 64780.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "Morgan Thomas Lewis Irwin",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 15468.94,
+   "status": null
+  },
+  {
+   "name": "RODNE JAY R",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 106643.96,
+   "status": "Won in general"
+  },
+  {
+   "name": "CARLSON NICHOLAS A",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "1",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "HELS ALEXANDER R",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "21",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Kevin W. Van De Wege",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 135643.68,
+   "status": "Won in general"
+  },
+  {
+   "name": "EDDY JOHN D",
+   "party": "NONE",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 170.0,
+   "status": null
+  },
+  {
+   "name": "THANNISCH NEIL L",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 3451.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "WYSS JON C",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 186533.9,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Randy McGlenn II",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 1160.34,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Bob Hasegawa",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 118272.59,
+   "status": "Won in general"
+  },
+  {
+   "name": "CHATTERTON MICHELLE C",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 108302.35,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Jessica Jean Garcia",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 8917.82,
+   "status": "Lost in general"
+  },
+  {
+   "name": "BALDWIN SPENCER J",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 25.0,
+   "status": null
+  },
+  {
+   "name": "EDWARDS FRANKLIN E III",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 4012.0,
+   "status": null
+  },
+  {
+   "name": "Monica Jurado Stonier",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 128372.3,
+   "status": "Won in general"
+  },
+  {
+   "name": "Lynda Wilson",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 565149.2,
+   "status": "Won in general"
+  },
+  {
+   "name": "Linda Kochmar",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 305249.73,
+   "status": "Lost in general"
+  },
+  {
+   "name": "J Paul Wagemann",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 27448.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "KOSTER JOHN M",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 99935.33,
+   "status": "Won in general"
+  },
+  {
+   "name": "Nicole Macri",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 178697.79,
+   "status": "Won in general"
+  },
+  {
+   "name": "Noel C. Frame",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 70311.99,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "TINNEY VALERIE J",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 12276.8,
+   "status": null
+  },
+  {
+   "name": "Johnny R. Lovick",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 353859.25,
+   "status": "Won in general"
+  },
+  {
+   "name": "OLSON BRADY J",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 1983.98,
+   "status": null
+  },
+  {
+   "name": "CRAIN CAROLYN I",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 7626.29,
+   "status": null
+  },
+  {
+   "name": "Strom Peterson",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 58483.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "Timm Ormsby",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 128209.99,
+   "status": "Won in general"
+  },
+  {
+   "name": "Frank V Chopp",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 234638.61,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "Mary L Dye",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 61270.54,
+   "status": "Won in general"
+  },
+  {
+   "name": "WALSH MAUREEN S",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 7750.0,
+   "status": null
+  },
+  {
+   "name": "NEALEY TERRY R",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 91320.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "Bob McCaslin",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 30081.0,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "Matt Manweller",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 168155.38,
+   "status": "Won in general"
+  },
+  {
+   "name": "David V. Taylor",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 32335.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "MCDONALD JOYCE",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 86645.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "Brandon Vick",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 138273.68,
+   "status": "Won in general"
+  },
+  {
+   "name": "Mark Mullet",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 557494.02,
+   "status": "Won in general"
+  },
+  {
+   "name": "Richard DeBolt",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 98008.41,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "Edmund T Orcutt",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 86547.44,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "HUNT GRAHAM R",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 17980.28,
+   "status": null
+  },
+  {
+   "name": "Steve Kirby",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 108773.18,
+   "status": "Won in general"
+  },
+  {
+   "name": "Mike Sells",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 53139.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "HALER LAWRENCE E",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 82733.08,
+   "status": "Won in general"
+  },
+  {
+   "name": "Mark Harmsworth",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 151112.48,
+   "status": "Won in general"
+  },
+  {
+   "name": "SCOTT ELIZABETH K",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 0.0,
+   "status": null
+  },
+  {
+   "name": "Joe Fitzgibbon",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 105103.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "Joe Schmick",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 123821.95,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "Norma C. Smith",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 87841.97,
+   "status": "Won in general"
+  },
+  {
+   "name": "CLIBBORN JUDITH R",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 135176.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "Laurie Jinkins",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 101744.66,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "Eric Pettigrew",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 107854.74,
+   "status": "Won in general"
+  },
+  {
+   "name": "Patrick Sullivan",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 283749.61,
+   "status": "Won in general"
+  },
+  {
+   "name": "Eileen L. Cody",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 94671.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "Jake Fey",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 108721.4,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "Jeff Morris",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 70695.99,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "DUNSHEE HANS M",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 21150.0,
+   "status": null
+  },
+  {
+   "name": "CARLYLE REUVEN M",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 6400.0,
+   "status": null
+  },
+  {
+   "name": "Michelle Valdez",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 248836.84,
+   "status": "Won in general"
+  },
+  {
+   "name": "SHERRY V APPLETON",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 95673.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "Ross Hunter",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 0.0,
+   "status": null
+  },
+  {
+   "name": "Marcus M. Riccelli",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 136188.5,
+   "status": "Won in general"
+  },
+  {
+   "name": "Bruce F. Dammeier",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 53506.15,
+   "status": null
+  },
+  {
+   "name": "LITZOW STEPHEN R",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 797881.51,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Barbara F. Bailey",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 474979.57,
+   "status": "Won in general"
+  },
+  {
+   "name": "PARLETTE LINDA EVANS",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 50690.0,
+   "status": null
+  },
+  {
+   "name": "Annette M Cleveland",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 240407.52,
+   "status": "Won in general"
+  },
+  {
+   "name": "John E Braun",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 237255.64,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "Kilduff, Christine",
+   "party": null,
+   "chamber": "house",
+   "district": "28",
+   "contributions": 369611.49,
+   "status": "Won in general"
+  },
+  {
+   "name": "Edward Ury",
+   "party": null,
+   "chamber": "house",
+   "district": "42",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "WATKINS KERRY J",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "44",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "TWITCHELL MAX",
+   "party": null,
+   "chamber": "house",
+   "district": "42",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "TAYLOR JAMES H",
+   "party": null,
+   "chamber": "house",
+   "district": "49",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "BUTLER STONEWALL MARY",
+   "party": null,
+   "chamber": "house",
+   "district": "6",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "MULLER MORREL J",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "44",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "OWENS STEPHEN P",
+   "party": "NONE",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 798.05,
+   "status": "Lost in general"
+  },
+  {
+   "name": "PADDEN MICHAEL J",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 125002.0,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "Mike Pellicciotti",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 315969.53,
+   "status": "Won in general"
+  },
+  {
+   "name": "POLLET GERALD M",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 42410.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "POPP WILLIAM E SR",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "41",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "RAMSAY TAMMY K",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 4677.0,
+   "status": null
+  },
+  {
+   "name": "June Robinson",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 93990.5,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "RUTLEDGE ALVIN A JR",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "32",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Cindy Sinhi Kim Ryu",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 53600.5,
+   "status": "Won in general"
+  },
+  {
+   "name": "Shelly Short",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 109396.8,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "SHEFFER CHARLES K",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 100.0,
+   "status": null
+  },
+  {
+   "name": "Tamra Smilanich",
+   "party": "NONE",
+   "chamber": "house",
+   "district": "37",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "STAMBAUGH MELANIE A",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 126748.46,
+   "status": "Won in general"
+  },
+  {
+   "name": "Larry Springer",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 152704.74,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "STAVRUM KEITH M",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "19",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "SUTINEN TIMO S",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 11925.7,
+   "status": null
+  },
+  {
+   "name": "TAKKO DEAN A",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 3850.0,
+   "status": null
+  },
+  {
+   "name": "TAKKO DEAN A",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 117842.58,
+   "status": "Won in general"
+  },
+  {
+   "name": "Alishia Topper",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 144734.82,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Brian Magarity Travis",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 136.0,
+   "status": null
+  },
+  {
+   "name": "VALDERRAMA RAMIRO M",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 69360.59,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Kevin W. Van De Wege",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 22568.43,
+   "status": null
+  },
+  {
+   "name": "Lynda Wilson",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 48223.07,
+   "status": null
+  },
+  {
+   "name": "Sharon Wylie",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 80207.63,
+   "status": "Won in general"
+  },
+  {
+   "name": "Kyoko Matsumoto-Wright",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 11408.73,
+   "status": null
+  },
+  {
+   "name": "BURNS GERALD",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "42",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "CARLSON DYLAN",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 1845.0,
+   "status": null
+  },
+  {
+   "name": "CLINE MARTIN J",
+   "party": "NONE",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "DARNELL LINDA",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 12732.71,
+   "status": "Lost in general"
+  },
+  {
+   "name": "DEGGINGER GRANT",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 1750.0,
+   "status": null
+  },
+  {
+   "name": "Thomas E Dent",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 81710.28,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "John Dickinson",
+   "party": "NONE",
+   "chamber": "house",
+   "district": "37",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Mary Ruth Edwards",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 7289.0,
+   "status": null
+  },
+  {
+   "name": "Jessyn Farrell",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 75681.23,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "Philip D Fortunato",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 123604.11,
+   "status": "Won in general"
+  },
+  {
+   "name": "Karen R Fraser",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 39107.06,
+   "status": null
+  },
+  {
+   "name": "FROSTAD JOHN P",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 1192.33,
+   "status": "Lost in general"
+  },
+  {
+   "name": "GUSS MICHAEL",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "12",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "HARGROVE JAMES E",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 28685.0,
+   "status": null
+  },
+  {
+   "name": "Paul Harris",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 113973.69,
+   "status": "Won in general"
+  },
+  {
+   "name": "Hatfield, Brian",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 17466.5,
+   "status": null
+  },
+  {
+   "name": "HASH MARTIN D",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "17",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Brad Hawkins",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 3950.0,
+   "status": null
+  },
+  {
+   "name": "HICKS ESSIE S",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 1163.0,
+   "status": null
+  },
+  {
+   "name": "JEFFREY M HOLY",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 52015.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "Angie Homola",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 308675.88,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Sam Hunt",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 87467.28,
+   "status": "Won in general"
+  },
+  {
+   "name": "Sam Hunt",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 1852.71,
+   "status": null
+  },
+  {
+   "name": "William \u201cBill\u201d Jenkin",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 91205.68,
+   "status": "Won in general"
+  },
+  {
+   "name": "Bert Johnson",
+   "party": "INDEPENDENT",
+   "chamber": "house",
+   "district": "38",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Karen A. Johnson",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 13879.82,
+   "status": null
+  },
+  {
+   "name": "JORDAN ANGEL",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "41",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "CURTIS P KING",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 308948.58,
+   "status": "Won in general"
+  },
+  {
+   "name": "Brad Klippert",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 33072.42,
+   "status": "Won in general"
+  },
+  {
+   "name": "Joel Kretz",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 119171.8,
+   "status": "Won in general"
+  },
+  {
+   "name": "MCBRIDE JOAN L",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 102562.53,
+   "status": "Won in general"
+  },
+  {
+   "name": "Daniel R. Miller",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "BENTON DONALD M",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 123622.01,
+   "status": null
+  },
+  {
+   "name": "BENSON MATTHEW G",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "34",
+   "contributions": null,
+   "status": "Lost in general"
+  },
+  {
+   "name": "THOMAS RICHARD G",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 32948.5,
+   "status": "Lost in general"
+  },
+  {
+   "name": "EDWARDS ROSE",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 2822.0,
+   "status": null
+  },
+  {
+   "name": "TAYLOR GREGORY A",
+   "party": "LIBERTARIAN",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 2219.54,
+   "status": "Lost in general"
+  },
+  {
+   "name": "MOSCOSO LUIS S",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 62274.58,
+   "status": null
+  },
+  {
+   "name": "COURTNEY MARCUS R",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 60854.68,
+   "status": null
+  },
+  {
+   "name": "Daniel G Griffey",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 91520.08,
+   "status": "Won in general"
+  },
+  {
+   "name": "Ian Field",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 78251.32,
+   "status": null
+  },
+  {
+   "name": "Jamie Smith",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 49939.4,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Edward J. Barton",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 2870.12,
+   "status": null
+  },
+  {
+   "name": "Tamborine M. Borrelli",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 13052.74,
+   "status": null
+  },
+  {
+   "name": "ESPINOZA RICARDO",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 600.0,
+   "status": null
+  },
+  {
+   "name": "KARLBERG DOUGLAS F",
+   "party": "NONE",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 6595.83,
+   "status": null
+  },
+  {
+   "name": "ROEMER HAILEY",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 1435.24,
+   "status": null
+  },
+  {
+   "name": "BECKER RANDI L",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 177793.76,
+   "status": "Won in general"
+  },
+  {
+   "name": "HEWITT MICHAEL D",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 37900.0,
+   "status": null
+  },
+  {
+   "name": "BURNER DARCY G",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 206741.99,
+   "status": "Lost in general"
+  },
+  {
+   "name": "LAMONT JACOB D",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 7768.25,
+   "status": null
+  },
+  {
+   "name": "RANADE SAMEER D",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 37499.68,
+   "status": null
+  },
+  {
+   "name": "PITCHFORD THOMAS B",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 35673.4,
+   "status": null
+  },
+  {
+   "name": "Tana Senn",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 87632.1,
+   "status": "Won in general"
+  },
+  {
+   "name": "PURCELL TERESA M",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 253813.4,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Tiffany A Turner",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 13799.99,
+   "status": null
+  },
+  {
+   "name": "Derek Stanford",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 110743.66,
+   "status": "Won in general"
+  },
+  {
+   "name": "MAHER DANIEL G",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 18820.37,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Bruce Chandler",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 110940.0,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "FORSMAN JUSTIN MATTHEW",
+   "party": "OTHER",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "STUCKER SCOTT V",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 849.75,
+   "status": "Lost in general"
+  },
+  {
+   "name": "WRIGHT LINDA M",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 11412.2,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Eric Kristopher Holt",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 20139.02,
+   "status": "Lost in general"
+  },
+  {
+   "name": "RASMUSSEN MARILYN J",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 13653.8,
+   "status": "Lost in general"
+  },
+  {
+   "name": "GERHARDT LEWIS M JR",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 6739.02,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Brian E. Blake",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 123036.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "CHAPLIN SCOTT W",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "10",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "PEARSON KIRK J",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "39",
+   "contributions": 129265.2,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "Luanne Van Werven",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 109107.53,
+   "status": "Won in general"
+  },
+  {
+   "name": "HURST CHRISTOPHER A",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 100834.04,
+   "status": null
+  },
+  {
+   "name": "Andrew R Stokesbary",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 142448.27,
+   "status": "Won in general"
+  },
+  {
+   "name": "MAYNES DEREK E",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 405.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Dave Hayes",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 96590.39,
+   "status": "Won in general"
+  },
+  {
+   "name": "Patricia E Kuderer",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 78336.94,
+   "status": "Won in general"
+  },
+  {
+   "name": "LYTTON KRISTINE C",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 108608.14,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "APKER JAMES R",
+   "party": "LIBERTARIAN",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 1489.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "RICHARDS AMANDA D",
+   "party": "OTHER",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 8515.27,
+   "status": "Lost in general"
+  },
+  {
+   "name": "VAN DYKE DONALD E",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "49",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "Ryan Cooper",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "8",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "MONROY PABLO",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 7013.25,
+   "status": null
+  },
+  {
+   "name": "SUE K PEDERSON",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 98712.46,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Jesse L. Young",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 301431.39,
+   "status": "Won in general"
+  },
+  {
+   "name": "HUXFORD JANICE",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 325452.71,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Jim Walsh",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 198043.55,
+   "status": "Won in general"
+  },
+  {
+   "name": "APKER JAMES R",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "7",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "Irene Bowling",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 234134.05,
+   "status": "Lost in general"
+  },
+  {
+   "name": "STRUB RHENDA I",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 21308.78,
+   "status": null
+  },
+  {
+   "name": "AGYEKUM WILBERFORCE O",
+   "party": "NON PARTISAN",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 100.0,
+   "status": null
+  },
+  {
+   "name": "ADAMS JOHN E",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 240.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Angela Jencks Cooper",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 7639.6,
+   "status": "Lost in general"
+  },
+  {
+   "name": "James J. O'Hagan",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 2476.43,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Chad L. Magendanz",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 487524.9,
+   "status": "Lost in general"
+  },
+  {
+   "name": "FERGUSON APRIL D",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 987.0,
+   "status": null
+  },
+  {
+   "name": "SUGIYAMA KAZUAKI",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "1",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "MCLAREN WADE R",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 444.0,
+   "status": null
+  },
+  {
+   "name": "PFUNDT BARRY W",
+   "party": "NONE",
+   "chamber": "house",
+   "district": "6",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "SCOTT MICHAEL",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 2232.67,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Charles Schaefer",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "33",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "ALGER JOHN D",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 12041.26,
+   "status": "Lost in general"
+  },
+  {
+   "name": "VRABLE GEORGE T",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 4320.56,
+   "status": "Lost in general"
+  },
+  {
+   "name": "DONALD J ORANGE",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 16695.76,
+   "status": null
+  },
+  {
+   "name": "SPITZER RANDY E",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 73647.29,
+   "status": "Lost in general"
+  },
+  {
+   "name": "CANTY SAMUEL M",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 2565.0,
+   "status": null
+  },
+  {
+   "name": "Michael A. Steele",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 33846.74,
+   "status": "Won in general"
+  },
+  {
+   "name": "CONWAY STAFFORD A JR",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "24",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "Keith Smith",
+   "party": "NONE",
+   "chamber": "house",
+   "district": "32",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "RAUNIYAR DARSHAN",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 32000.0,
+   "status": null
+  },
+  {
+   "name": "TURISSINI DANILLE A",
+   "party": "OTHER",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 77553.53,
+   "status": "Lost in general"
+  },
+  {
+   "name": "PASS JOHN J",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "Danny E Stone",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 8430.88,
+   "status": null
+  },
+  {
+   "name": "Lisa Z. Wellman",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 487389.84,
+   "status": "Won in general"
+  },
+  {
+   "name": "Loretta Byrnes",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 21090.35,
+   "status": "Lost in general"
+  },
+  {
+   "name": "LEYBA CHRISTOPHER S",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "31",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "ALLEN BRADLEY N",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 500.0,
+   "status": null
+  },
+  {
+   "name": "FOSTER MICHAEL B",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 2474.74,
+   "status": "Lost in general"
+  },
+  {
+   "name": "MECKLENBURG KARL",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 25682.01,
+   "status": "Lost in general"
+  },
+  {
+   "name": "GERALD T OLIVER",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 16346.55,
+   "status": null
+  },
+  {
+   "name": "LYONS BRANDON A",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "28",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "IRWIN WESLEY D",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 2340.0,
+   "status": null
+  },
+  {
+   "name": "Arthur Coday, Jr.",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "SIMMONS STEVEN A",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 33239.47,
+   "status": "Lost in general"
+  },
+  {
+   "name": "WALSH MAUREEN S",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 96859.49,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "METCALF RONDA K",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 29425.0,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Roger Goodman",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 191187.88,
+   "status": "Won in general"
+  },
+  {
+   "name": "Brad Hawkins",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 130646.13,
+   "status": "Won in general"
+  },
+  {
+   "name": "Guy Palumbo",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 230474.46,
+   "status": "Won in general"
+  },
+  {
+   "name": "Steve O'Ban",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 554864.64,
+   "status": "Won in general"
+  },
+  {
+   "name": "Bill Scheidler",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "26",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "Michael C Chapman",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 118213.27,
+   "status": "Won in general"
+  },
+  {
+   "name": "ASKINI DANIELLE N",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 33093.47,
+   "status": null
+  },
+  {
+   "name": "LICHTY SHARLENE A",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 32787.89,
+   "status": "Lost in general"
+  },
+  {
+   "name": "VEHRS LYNNETTE K",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 111082.14,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Craig Patti",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 232730.94,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Tina L. Orwall",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 63372.45,
+   "status": "Won in general"
+  },
+  {
+   "name": "ANDERS ALVIN A",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "10",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "HALWACHS CARRERA",
+   "party": "LIBERTARIAN",
+   "chamber": "house",
+   "district": "37",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "BREVOORT DORIS J",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 16523.62,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Amy Pivetta",
+   "party": "OTHER",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 98625.1,
+   "status": "Lost in general"
+  },
+  {
+   "name": "SHIH DANIEL J",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 229716.76,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Matthew R Larson",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 114109.52,
+   "status": null
+  },
+  {
+   "name": "Shane Bowman",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 11525.0,
+   "status": null
+  },
+  {
+   "name": "HICKEL TERI H",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 328108.3,
+   "status": "Lost in general"
+  },
+  {
+   "name": "Jason Ritchie",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 160466.69,
+   "status": "Lost in general"
+  },
+  {
+   "name": "KIM GUN-SAM",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "Edward J. Barton",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 3125.88,
+   "status": null
+  },
+  {
+   "name": "PETRISH NICHOLAS J III",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 14001.0,
+   "status": null
+  },
+  {
+   "name": "Steve Tharinger",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 113363.49,
+   "status": "Won in general"
+  },
+  {
+   "name": "Lillian Ortiz-Self",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 65463.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "KAGI RUTH L",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 123793.69,
+   "status": "Won in general"
+  },
+  {
+   "name": "RANKER KEVIN M",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": 149482.5,
+   "status": "Won in general"
+  },
+  {
+   "name": "Mia Su-Ling Gregerson",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 68011.13,
+   "status": "Won in general"
+  },
+  {
+   "name": "David Sawyer",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 172662.95,
+   "status": "Won in general"
+  },
+  {
+   "name": "Beth Doglio",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 97896.75,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "BANKS BRADLEY N",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "22",
+   "contributions": null,
+   "status": null
+  },
+  {
+   "name": "Gina R. Mosbrucker",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 71364.29,
+   "status": "Won in general"
+  },
+  {
+   "name": "Hans Zeiger",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 279847.04,
+   "status": "Won in general"
+  },
+  {
+   "name": "Hans Zeiger",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 472.84,
+   "status": null
+  },
+  {
+   "name": "JOHNSON NORMAN M",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 109087.33,
+   "status": "Won in general"
+  },
+  {
+   "name": "Laurie Dolan",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 107290.67,
+   "status": "Won in general"
+  },
+  {
+   "name": "KRISTIANSEN DANIEL P",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 266245.38,
+   "status": "Won in general"
+  },
+  {
+   "name": "PIKE LIZ S",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 109987.4,
+   "status": "Won in general"
+  },
+  {
+   "name": "Drew C. MacEwen",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 91845.0,
+   "status": "Won in general"
+  },
+  {
+   "name": "Brady Walkinshaw",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 10750.0,
+   "status": null
+  },
+  {
+   "name": "HUDGINS ZACHARY L",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 43260.08,
+   "status": "Won in general"
+  },
+  {
+   "name": "Gael Donelan Tarleton",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 119336.69,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "MOSCOSO LUIS S",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 15250.0,
+   "status": null
+  },
+  {
+   "name": "ROSS LISA P",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 0.0,
+   "status": null
+  },
+  {
+   "name": "SHEFFER CHARLES K",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 6950.0,
+   "status": null
+  },
+  {
+   "name": "Drew Hansen",
+   "party": "DEMOCRATIC",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 104120.22,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "PARKER KEVIN C",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 19360.21,
+   "status": null
+  },
+  {
+   "name": "RIVERS ANNA M",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 352697.5,
+   "status": "Won in general"
+  },
+  {
+   "name": "Chad L. Magendanz",
+   "party": "REPUBLICAN",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 9708.0,
+   "status": null
+  },
+  {
+   "name": "Andrew Billig",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 185766.32,
+   "status": "Won in general"
+  },
+  {
+   "name": "Mark Schoesler",
+   "party": "REPUBLICAN",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 401642.41,
+   "status": "Unopposed in general"
+  },
+  {
+   "name": "ROSEMARY A MCAULIFFE",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 61033.32,
+   "status": null
+  },
+  {
+   "name": "CHRISTINE ROLFES",
+   "party": "DEMOCRATIC",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 168758.41,
+   "status": "Unopposed in general"
+  }
+ ]
+}

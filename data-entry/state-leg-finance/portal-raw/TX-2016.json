@@ -1,0 +1,4202 @@
+{
+ "state": "TX",
+ "cycle": 2016,
+ "source": "Texas Ethics Commission campaign finance database (itemized + unitemized contributions)",
+ "fetched": "2026-10-17",
+ "dataThrough": "12/31/2016",
+ "candidates": [
+  {
+   "name": "Burnam, Lon",
+   "chamber": "house",
+   "district": "90",
+   "committee": "00019778",
+   "contributions": 7439.5
+  },
+  {
+   "name": "Jones, Delwin (Mr.)",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "00020196",
+   "contributions": 950.0
+  },
+  {
+   "name": "Wortham, Gregory L. (Mr.)",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "00020913",
+   "contributions": 3014.27
+  },
+  {
+   "name": "Gary, Roger (Mr.)",
+   "chamber": "house",
+   "district": "123",
+   "committee": "00022153",
+   "contributions": 226.22
+  },
+  {
+   "name": "Martinez, Walter (Mr.)",
+   "chamber": "house",
+   "district": "123",
+   "committee": "00022910",
+   "contributions": 10000.0
+  },
+  {
+   "name": "Eiland, Allen",
+   "chamber": "house",
+   "district": "23",
+   "committee": "00025069",
+   "contributions": 0.0
+  },
+  {
+   "name": "Brookshire, Melvin V. (Mr.)",
+   "chamber": "house",
+   "district": "18",
+   "committee": "00040192",
+   "contributions": 5191.0
+  },
+  {
+   "name": "Martinez Fischer, Trey (Mr.)",
+   "chamber": "house",
+   "district": "116",
+   "committee": "00040542",
+   "contributions": 1384724.96
+  },
+  {
+   "name": "Menendez, Jose (The Honorable)",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "00042411",
+   "contributions": 1917694.79
+  },
+  {
+   "name": "Carruthers, Jeffrey D. (Mr.)",
+   "chamber": "house",
+   "district": "121",
+   "committee": "00052356",
+   "contributions": 0.0
+  },
+  {
+   "name": "Leal, Victor (Mr.)",
+   "chamber": "house",
+   "district": "87",
+   "committee": "00053421",
+   "contributions": 0.0
+  },
+  {
+   "name": "Mallory Caraway, Barbara (Mrs.)",
+   "chamber": "house",
+   "district": "110",
+   "committee": "00057485",
+   "contributions": 36.73
+  },
+  {
+   "name": "Boone, Daniel C. (Dr.)",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "00060066",
+   "contributions": 1472.05
+  },
+  {
+   "name": "Hoang, Al",
+   "chamber": "house",
+   "district": "149",
+   "committee": "00063357",
+   "contributions": 0.0
+  },
+  {
+   "name": "Parker, Bonnie (Mrs.)",
+   "chamber": "house",
+   "district": "134",
+   "committee": "00066393",
+   "contributions": 0.0
+  },
+  {
+   "name": "Seward, Ryan J. (Mr.)",
+   "chamber": "house",
+   "district": "94",
+   "committee": "00066503",
+   "contributions": 0.0
+  },
+  {
+   "name": "LaCroix, Damian (Mr.)",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "00067056",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jones, Larry D. (Mr.)",
+   "chamber": "house",
+   "district": "70",
+   "committee": "00067792",
+   "contributions": 0.0
+  },
+  {
+   "name": "Villalba, Jason (The Honorable)",
+   "chamber": "house",
+   "district": "114",
+   "committee": "00067845",
+   "contributions": 0.0
+  },
+  {
+   "name": "Berger, Rebecca (Mrs.)",
+   "chamber": "house",
+   "district": "13",
+   "committee": "00067906",
+   "contributions": 200.0
+  },
+  {
+   "name": "Hall III, Robert L. (The Honorable)",
+   "chamber": "senate",
+   "district": "2",
+   "committee": "00067980",
+   "contributions": 398838.48
+  },
+  {
+   "name": "Garza Jr., Epifanio M. (Mr.)",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "00068058",
+   "contributions": 0.0
+  },
+  {
+   "name": "Herrera, Delicia (Ms.)",
+   "chamber": "house",
+   "district": "124",
+   "committee": "00068147",
+   "contributions": 7985.0
+  },
+  {
+   "name": "Gaines, Jesse L. (Mr.)",
+   "chamber": "house",
+   "district": "95",
+   "committee": "00068259",
+   "contributions": 0.0
+  },
+  {
+   "name": "Britt, Matthew (Mr.)",
+   "chamber": "house",
+   "district": "61",
+   "committee": "00068398",
+   "contributions": 9.6
+  },
+  {
+   "name": "McDonald, Ty F. (Mrs.)",
+   "chamber": "house",
+   "district": "17",
+   "committee": "00069219",
+   "contributions": 126.19
+  },
+  {
+   "name": "Harris, Robert (Mr.)",
+   "chamber": "house",
+   "district": "94",
+   "committee": "00069347",
+   "contributions": 0.0
+  },
+  {
+   "name": "Boyne, Adryana E. (Mrs.)",
+   "chamber": "house",
+   "district": "102",
+   "committee": "00069348",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gay, John F. (Mr.)",
+   "chamber": "house",
+   "district": "129",
+   "committee": "00069592",
+   "contributions": 50.0
+  },
+  {
+   "name": "Holcomb Sr., Terry L. (Mr.)",
+   "chamber": "house",
+   "district": "18",
+   "committee": "00069618",
+   "contributions": 370.0
+  },
+  {
+   "name": "Gregory III, Charles C. (Mr.)",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "00069628",
+   "contributions": 8950.0
+  },
+  {
+   "name": "Lucido, Rita",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "00069650",
+   "contributions": 985.04
+  },
+  {
+   "name": "Louie, Gary A. (Mr.)",
+   "chamber": "house",
+   "district": "16",
+   "committee": "00069666",
+   "contributions": 0.0
+  },
+  {
+   "name": "McKennon, Kerry (Mr.)",
+   "chamber": "house",
+   "district": "88",
+   "committee": "00069683",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hayles Sr., Michael (Dr.)",
+   "chamber": "house",
+   "district": "16",
+   "committee": "00069711",
+   "contributions": 970.0
+  },
+  {
+   "name": "Banks, Carolyn (Ms.)",
+   "chamber": "house",
+   "district": "17",
+   "committee": "00069716",
+   "contributions": 0.0
+  },
+  {
+   "name": "Canon, Michael J. (Mr.)",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "00069755",
+   "contributions": 0.0
+  },
+  {
+   "name": "Stralow, Frederick (Mr.)",
+   "chamber": "house",
+   "district": "4",
+   "committee": "00069787",
+   "contributions": 0.0
+  },
+  {
+   "name": "Tunmire, John (Mr.)",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "00069868",
+   "contributions": 0.0
+  },
+  {
+   "name": "Parr, Bertram Larry (Mr.)",
+   "chamber": "house",
+   "district": "3",
+   "committee": "00069887",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gardner III, Harold J. (Mr.)",
+   "chamber": "house",
+   "district": "6",
+   "committee": "00069888",
+   "contributions": 439.0
+  },
+  {
+   "name": "McKinlay, Scott G. (Mr.)",
+   "chamber": "house",
+   "district": "47",
+   "committee": "00069892",
+   "contributions": 0.0
+  },
+  {
+   "name": "Peavy, Patrick (Mr.)",
+   "chamber": "house",
+   "district": "67",
+   "committee": "00069898",
+   "contributions": 0.0
+  },
+  {
+   "name": "Villela, Gilberto (Mr.)",
+   "chamber": "house",
+   "district": "120",
+   "committee": "00069910",
+   "contributions": 0.0
+  },
+  {
+   "name": "Holland, James M. (Mr.)",
+   "chamber": "house",
+   "district": "122",
+   "committee": "00069911",
+   "contributions": 0.0
+  },
+  {
+   "name": "Behrman, Daniel A. (Mr.)",
+   "chamber": "house",
+   "district": "125",
+   "committee": "00069912",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wallace, Nicolas B. (Mr.)",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "00069919",
+   "contributions": 0.0
+  },
+  {
+   "name": "Velasquez Jr., Gilberto (Mr.)",
+   "chamber": "house",
+   "district": "15",
+   "committee": "00069924",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hardy IV, George (Mr.)",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "00069927",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lane, Cory A. (Mr.)",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "00069929",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gibson, Steven D. (Mr.)",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "00069930",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ingmundson, Paul (Dr.)",
+   "chamber": "house",
+   "district": "123",
+   "committee": "00070243",
+   "contributions": 0.0
+  },
+  {
+   "name": "Key, John C. (Dr.)",
+   "chamber": "house",
+   "district": "83",
+   "committee": "00070307",
+   "contributions": 0.0
+  },
+  {
+   "name": "Schubert, Leighton (The Honorable)",
+   "chamber": "house",
+   "district": "13",
+   "committee": "00070460",
+   "contributions": 293055.18
+  },
+  {
+   "name": "Alonzo, Nathan A. (Mr.)",
+   "chamber": "house",
+   "district": "124",
+   "committee": "00070465",
+   "contributions": 18955.48
+  },
+  {
+   "name": "Bernal, Diego M. (The Honorable)",
+   "chamber": "house",
+   "district": "123",
+   "committee": "00070466",
+   "contributions": 219823.24
+  },
+  {
+   "name": "Golemon, Donald Brent (Mr.)",
+   "chamber": "house",
+   "district": "17",
+   "committee": "00070471",
+   "contributions": 155454.68
+  },
+  {
+   "name": "Suarez, Alfred (Mr.)",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "00070472",
+   "contributions": 5414.0
+  },
+  {
+   "name": "Webster Sr., Cecil R. (Mr.)",
+   "chamber": "house",
+   "district": "13",
+   "committee": "00070477",
+   "contributions": 40383.64
+  },
+  {
+   "name": "Previtera, Nunzio A. (Mr.)",
+   "chamber": "house",
+   "district": "123",
+   "committee": "00070480",
+   "contributions": 23553.0
+  },
+  {
+   "name": "Cyrier, John P. (The Honorable)",
+   "chamber": "house",
+   "district": "17",
+   "committee": "00070492",
+   "contributions": 733287.97
+  },
+  {
+   "name": "Bilski, Carolyn Cerny (Mrs.)",
+   "chamber": "house",
+   "district": "13",
+   "committee": "00070518",
+   "contributions": 87286.79
+  },
+  {
+   "name": "Pedrotti, Joan F. (Ms.)",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "00070529",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rosa, David L. (Mr.)",
+   "chamber": "house",
+   "district": "124",
+   "committee": "00070729",
+   "contributions": 5816.38
+  },
+  {
+   "name": "Minjarez, Ina M. (Rep.)",
+   "chamber": "house",
+   "district": "124",
+   "committee": "00070762",
+   "contributions": 272680.96
+  },
+  {
+   "name": "Kolkhorst, Lois W. (The Honorable)",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "00041354",
+   "contributions": 790386.45
+  },
+  {
+   "name": "Button, Angie C. (The Honorable)",
+   "chamber": "house",
+   "district": "112",
+   "committee": "00062309",
+   "contributions": 481356.91
+  },
+  {
+   "name": "Riddle, Deborah A. (The Honorable)",
+   "chamber": "house",
+   "district": "150",
+   "committee": "00051296",
+   "contributions": 265760.98
+  },
+  {
+   "name": "Harper-Brown, Linda L. (Mrs.)",
+   "chamber": "house",
+   "district": "105",
+   "committee": "00051665",
+   "contributions": 0.0
+  },
+  {
+   "name": "Birdwell, Brian D. (The Honorable)",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "00062137",
+   "contributions": 507030.16
+  },
+  {
+   "name": "Zaffirini, Judith (The Honorable)",
+   "chamber": "senate",
+   "district": "21",
+   "committee": "00020971",
+   "contributions": 805542.0
+  },
+  {
+   "name": "Coleman, Garnet F. (The Honorable)",
+   "chamber": "house",
+   "district": "147",
+   "committee": "00019980",
+   "contributions": 417925.44
+  },
+  {
+   "name": "Hunter, Todd A. (The Honorable)",
+   "chamber": "house",
+   "district": "32",
+   "committee": "00020493",
+   "contributions": 1632934.12
+  },
+  {
+   "name": "Crownover, Myra E. (Ms.)",
+   "chamber": "house",
+   "district": "64",
+   "committee": "00037222",
+   "contributions": 2000.0
+  },
+  {
+   "name": "Wilford, John R. (Mr.)",
+   "chamber": "house",
+   "district": "8",
+   "committee": "00069617",
+   "contributions": 0.0
+  },
+  {
+   "name": "Vo, Hubert (The Honorable)",
+   "chamber": "house",
+   "district": "149",
+   "committee": "00054795",
+   "contributions": 245039.75
+  },
+  {
+   "name": "Moody, Joseph E. (The Honorable)",
+   "chamber": "house",
+   "district": "78",
+   "committee": "00062850",
+   "contributions": 141695.31
+  },
+  {
+   "name": "Price IV, Walter T. (The Honorable)",
+   "chamber": "house",
+   "district": "87",
+   "committee": "00066243",
+   "contributions": 769423.78
+  },
+  {
+   "name": "King, Phillip S. (The Honorable)",
+   "chamber": "house",
+   "district": "61",
+   "committee": "00036483",
+   "contributions": 310821.44
+  },
+  {
+   "name": "Fletcher, B. Allen (Mr.)",
+   "chamber": "house",
+   "district": "130",
+   "committee": "00062344",
+   "contributions": 17098.66
+  },
+  {
+   "name": "White, Molly S. (Ms.)",
+   "chamber": "house",
+   "district": "55",
+   "committee": "00069574",
+   "contributions": 278346.58
+  },
+  {
+   "name": "Kuempel, John L. (The Honorable)",
+   "chamber": "house",
+   "district": "44",
+   "committee": "00066988",
+   "contributions": 419811.05
+  },
+  {
+   "name": "Morrison, Geanie W. (The Honorable)",
+   "chamber": "house",
+   "district": "30",
+   "committee": "00032386",
+   "contributions": 182155.81
+  },
+  {
+   "name": "Branch, Daniel H. (Mr.)",
+   "chamber": "house",
+   "district": "108",
+   "committee": "00031204",
+   "contributions": 42500.0
+  },
+  {
+   "name": "Burton, Konni L. (The Honorable)",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "00069199",
+   "contributions": 308664.38
+  },
+  {
+   "name": "Sanford, William S. (The Honorable)",
+   "chamber": "house",
+   "district": "70",
+   "committee": "00067791",
+   "contributions": 141210.52
+  },
+  {
+   "name": "Minor Jr., Louie (Mr.)",
+   "chamber": "house",
+   "district": "55",
+   "committee": "00080024",
+   "contributions": 100.0
+  },
+  {
+   "name": "Ratliff, William B. (Mr.)",
+   "chamber": "house",
+   "district": "115",
+   "committee": "00067616",
+   "contributions": 384639.47
+  },
+  {
+   "name": "Bonnen, Dennis H. (The Honorable)",
+   "chamber": "house",
+   "district": "25",
+   "committee": "00032574",
+   "contributions": 475080.1
+  },
+  {
+   "name": "Aycock, Jimmie Don (Mr.)",
+   "chamber": "house",
+   "district": "54",
+   "committee": "00057872",
+   "contributions": 0.0
+  },
+  {
+   "name": "Frullo, John M. (Mr.)",
+   "chamber": "house",
+   "district": "84",
+   "committee": "00066260",
+   "contributions": 663322.5
+  },
+  {
+   "name": "Davis, Sarah M. (The Honorable)",
+   "chamber": "house",
+   "district": "134",
+   "committee": "00066272",
+   "contributions": 1046043.41
+  },
+  {
+   "name": "Murr, Andrew S. (The Honorable)",
+   "chamber": "house",
+   "district": "53",
+   "committee": "00069565",
+   "contributions": 222169.24
+  },
+  {
+   "name": "Carmona, Christopher (Mr.)",
+   "chamber": "house",
+   "district": "148",
+   "committee": "00069682",
+   "contributions": 2463.5
+  },
+  {
+   "name": "Miller, Douglas R. (Mr.)",
+   "chamber": "house",
+   "district": "73",
+   "committee": "00015447",
+   "contributions": 1323747.13
+  },
+  {
+   "name": "Otto, John C. (Mr.)",
+   "chamber": "house",
+   "district": "18",
+   "committee": "00054588",
+   "contributions": 0.0
+  },
+  {
+   "name": "Fraser, Troy L. (Mr.)",
+   "chamber": "senate",
+   "district": "",
+   "committee": "00032509",
+   "contributions": 0.0
+  },
+  {
+   "name": "Elkins, Gary (The Honorable)",
+   "chamber": "house",
+   "district": "135",
+   "committee": "00026729",
+   "contributions": 160545.83
+  },
+  {
+   "name": "Garcia, Sylvia R. (The Honorable)",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "00068741",
+   "contributions": 400192.42
+  },
+  {
+   "name": "Parker IV, Nathaniel W. (The Honorable)",
+   "chamber": "house",
+   "district": "63",
+   "committee": "00058399",
+   "contributions": 542999.37
+  },
+  {
+   "name": "Eltife, Kevin P. (Mr.)",
+   "chamber": "senate",
+   "district": "1",
+   "committee": "00036573",
+   "contributions": 0.0
+  },
+  {
+   "name": "Turner, Christopher G. (The Honorable)",
+   "chamber": "house",
+   "district": "101",
+   "committee": "00062790",
+   "contributions": 443760.13
+  },
+  {
+   "name": "Keough, Mark J. (The Honorable)",
+   "chamber": "house",
+   "district": "15",
+   "committee": "00069715",
+   "contributions": 96056.49
+  },
+  {
+   "name": "King, Kenneth P. (The Honorable)",
+   "chamber": "house",
+   "district": "88",
+   "committee": "00067681",
+   "contributions": 262346.27
+  },
+  {
+   "name": "Griffing, Thomas L. (Mr.)",
+   "chamber": "house",
+   "district": "114",
+   "committee": "00069908",
+   "contributions": 0.0
+  },
+  {
+   "name": "Criss, Susan E. (The Honorable)",
+   "chamber": "house",
+   "district": "23",
+   "committee": "00037252",
+   "contributions": 0.0
+  },
+  {
+   "name": "Perez, Amy G. (Ms.)",
+   "chamber": "house",
+   "district": "150",
+   "committee": "00069745",
+   "contributions": 0.0
+  },
+  {
+   "name": "Patrick, Diane (Dr.)",
+   "chamber": "house",
+   "district": "94",
+   "committee": "00020837",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ashby, Trenton E. (The Honorable)",
+   "chamber": "house",
+   "district": "57",
+   "committee": "00067800",
+   "contributions": 662392.42
+  },
+  {
+   "name": "Zedler, William W. (The Honorable)",
+   "chamber": "house",
+   "district": "96",
+   "committee": "00041860",
+   "contributions": 152923.15
+  },
+  {
+   "name": "Burrows, Dustin R. (The Honorable)",
+   "chamber": "house",
+   "district": "83",
+   "committee": "00070273",
+   "contributions": 96371.33
+  },
+  {
+   "name": "Whitmire, John (The Honorable)",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "00019581",
+   "contributions": 952336.32
+  },
+  {
+   "name": "Alley, Court C. (Mr.)",
+   "chamber": "house",
+   "district": "108",
+   "committee": "00069323",
+   "contributions": 0.0
+  },
+  {
+   "name": "Faircloth, Wayne (The Honorable)",
+   "chamber": "house",
+   "district": "23",
+   "committee": "00067849",
+   "contributions": 520663.5
+  },
+  {
+   "name": "Burge Jr., Quention D. (Mr.)",
+   "chamber": "house",
+   "district": "10",
+   "committee": "00057700",
+   "contributions": 0.0
+  },
+  {
+   "name": "Paddie Sr., Christopher D. (The Honorable)",
+   "chamber": "house",
+   "district": "",
+   "committee": "00067675",
+   "contributions": 0.0
+  },
+  {
+   "name": "Martinez, Armando A. (The Honorable)",
+   "chamber": "house",
+   "district": "39",
+   "committee": "00054543",
+   "contributions": 157017.25
+  },
+  {
+   "name": "Workman, Paul D. (The Honorable)",
+   "chamber": "house",
+   "district": "47",
+   "committee": "00066075",
+   "contributions": 0.0
+  },
+  {
+   "name": "Willis, Elizabeth B. (Mrs.)",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "00069678",
+   "contributions": 70.0
+  },
+  {
+   "name": "Dale, Anthony W. (The Honorable)",
+   "chamber": "house",
+   "district": "136",
+   "committee": "00058331",
+   "contributions": 303301.26
+  },
+  {
+   "name": "Kleinschmidt, Timothy A. (The Honorable)",
+   "chamber": "house",
+   "district": "17",
+   "committee": "00041994",
+   "contributions": 0.0
+  },
+  {
+   "name": "Estes, Craig (The Honorable)",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "00033299",
+   "contributions": 633463.75
+  },
+  {
+   "name": "Slaton, Bryan L. (Mr.)",
+   "chamber": "house",
+   "district": "2",
+   "committee": "00080034",
+   "contributions": 180227.64
+  },
+  {
+   "name": "Perry, Charles L. (The Honorable)",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "00066066",
+   "contributions": 598885.86
+  },
+  {
+   "name": "Herrero, Abel (The Honorable)",
+   "chamber": "house",
+   "district": "34",
+   "committee": "00054318",
+   "contributions": 237355.01
+  },
+  {
+   "name": "Lang, Mike W. (The Honorable)",
+   "chamber": "house",
+   "district": "60",
+   "committee": "00070774",
+   "contributions": 441908.74
+  },
+  {
+   "name": "Simmons, Ronald E. (The Honorable)",
+   "chamber": "house",
+   "district": "65",
+   "committee": "00068046",
+   "contributions": 365392.45
+  },
+  {
+   "name": "Wolens, Steven D. (The Honorable)",
+   "chamber": "house",
+   "district": "103",
+   "committee": "00021022",
+   "contributions": 0.0
+  },
+  {
+   "name": "Thompson, Senfronia (The Honorable)",
+   "chamber": "house",
+   "district": "141",
+   "committee": "00020791",
+   "contributions": 572195.33
+  },
+  {
+   "name": "Springer Jr., Drew Alan (The Honorable)",
+   "chamber": "house",
+   "district": "68",
+   "committee": "00067769",
+   "contributions": 212555.13
+  },
+  {
+   "name": "Pickett, Joseph C. (The Honorable)",
+   "chamber": "house",
+   "district": "79",
+   "committee": "00026389",
+   "contributions": 371116.82
+  },
+  {
+   "name": "Truitt, Vicki (Mrs.)",
+   "chamber": "house",
+   "district": "98",
+   "committee": "00037500",
+   "contributions": 0.0
+  },
+  {
+   "name": "Harris, Chris (Mr.)",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "00020421",
+   "contributions": 0.0
+  },
+  {
+   "name": "Howard, Donna S. (The Honorable)",
+   "chamber": "house",
+   "district": "48",
+   "committee": "00042130",
+   "contributions": 155774.03
+  },
+  {
+   "name": "Roberts, Kevin (The Honorable)",
+   "chamber": "house",
+   "district": "126",
+   "committee": "00080039",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hughes, D. Bryan (The Honorable)",
+   "chamber": "senate",
+   "district": "1",
+   "committee": "00051630",
+   "contributions": 1743800.08
+  },
+  {
+   "name": "Cook, Byron Curtis (The Honorable)",
+   "chamber": "house",
+   "district": "8",
+   "committee": "00051766",
+   "contributions": 1024152.0
+  },
+  {
+   "name": "Armbrister, Kenneth L. (Mr.)",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "00019704",
+   "contributions": 0.0
+  },
+  {
+   "name": "Smith, Richard Wayne (Mr.)",
+   "chamber": "house",
+   "district": "128",
+   "committee": "00051506",
+   "contributions": 958695.57
+  },
+  {
+   "name": "Nicol, Laura S. (Ms.)",
+   "chamber": "house",
+   "district": "133",
+   "committee": "00069665",
+   "contributions": 0.0
+  },
+  {
+   "name": "Craddick, Tom (The Honorable)",
+   "chamber": "house",
+   "district": "82",
+   "committee": "00020051",
+   "contributions": 243638.27
+  },
+  {
+   "name": "Watson, Kirk P. (The Honorable)",
+   "chamber": "senate",
+   "district": "14",
+   "committee": "00023391",
+   "contributions": 830439.0
+  },
+  {
+   "name": "Hancock, Kelly G. (The Honorable)",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "00057801",
+   "contributions": 0.0
+  },
+  {
+   "name": "Willis, Kimberly Yvette (Ms.)",
+   "chamber": "house",
+   "district": "139",
+   "committee": "00070876",
+   "contributions": 28759.02
+  },
+  {
+   "name": "Keffer, James L. (Mr.)",
+   "chamber": "house",
+   "district": "60",
+   "committee": "00032876",
+   "contributions": 0.0
+  },
+  {
+   "name": "Allen, Alma A. (The Honorable)",
+   "chamber": "house",
+   "district": "131",
+   "committee": "00019673",
+   "contributions": 104338.94
+  },
+  {
+   "name": "Spitzer M.D., Stuart K. (Mr.)",
+   "chamber": "house",
+   "district": "4",
+   "committee": "00067718",
+   "contributions": 212954.7
+  },
+  {
+   "name": "Penney, Phyllis B. (Ms.)",
+   "chamber": "house",
+   "district": "92",
+   "committee": "00069602",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wray, John C. (The Honorable)",
+   "chamber": "house",
+   "district": "10",
+   "committee": "00069503",
+   "contributions": 191428.68
+  },
+  {
+   "name": "Schaefer, Matthew R. (The Honorable)",
+   "chamber": "house",
+   "district": "6",
+   "committee": "00067583",
+   "contributions": 72100.0
+  },
+  {
+   "name": "Gutierrez, Rolando (The Honorable)",
+   "chamber": "house",
+   "district": "119",
+   "committee": "00062485",
+   "contributions": 176343.62
+  },
+  {
+   "name": "Selva, Maria (Ms.)",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "00068760",
+   "contributions": 0.0
+  },
+  {
+   "name": "Serafine, Mary Lou (Dr.)",
+   "chamber": "senate",
+   "district": "14",
+   "committee": "00066216",
+   "contributions": 0.0
+  },
+  {
+   "name": "Keith, Austin R. (Mr.)",
+   "chamber": "house",
+   "district": "81",
+   "committee": "00069544",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bohac, Dwayne A. (The Honorable)",
+   "chamber": "house",
+   "district": "138",
+   "committee": "00032585",
+   "contributions": 183870.66
+  },
+  {
+   "name": "Gonzales, Larry D. (The Honorable)",
+   "chamber": "house",
+   "district": "52",
+   "committee": "00065942",
+   "contributions": 354127.48
+  },
+  {
+   "name": "Laubenberg, Jodie A. (The Honorable)",
+   "chamber": "house",
+   "district": "89",
+   "committee": "00051273",
+   "contributions": 300865.51
+  },
+  {
+   "name": "White, James E. (The Honorable)",
+   "chamber": "house",
+   "district": "19",
+   "committee": "00056322",
+   "contributions": 96583.48
+  },
+  {
+   "name": "Wu, Eugene Y. (The Honorable)",
+   "chamber": "house",
+   "district": "137",
+   "committee": "00068103",
+   "contributions": 301835.09
+  },
+  {
+   "name": "Johnson, Eric L. (The Honorable)",
+   "chamber": "house",
+   "district": "100",
+   "committee": "00065751",
+   "contributions": 250008.55
+  },
+  {
+   "name": "Raney, John N. (The Honorable)",
+   "chamber": "house",
+   "district": "14",
+   "committee": "00067602",
+   "contributions": 477657.02
+  },
+  {
+   "name": "Giddings, Helen (The Honorable)",
+   "chamber": "house",
+   "district": "109",
+   "committee": "00020108",
+   "contributions": 223183.56
+  },
+  {
+   "name": "Huffman, C. Joan (The Honorable)",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "00037510",
+   "contributions": 0.0
+  },
+  {
+   "name": "King, Tracy O. (The Honorable)",
+   "chamber": "house",
+   "district": "80",
+   "committee": "00021143",
+   "contributions": 208725.59
+  },
+  {
+   "name": "West, Royce (The Honorable)",
+   "chamber": "senate",
+   "district": "23",
+   "committee": "00020990",
+   "contributions": 731795.86
+  },
+  {
+   "name": "Huberty, Dan (The Honorable)",
+   "chamber": "house",
+   "district": "127",
+   "committee": "00065889",
+   "contributions": 0.0
+  },
+  {
+   "name": "Williams, Thomas D. (Mr.)",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "00032763",
+   "contributions": 0.0
+  },
+  {
+   "name": "England, Kirk T. (Mr.)",
+   "chamber": "house",
+   "district": "106",
+   "committee": "00058335",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bucy III, John H. (Mr.)",
+   "chamber": "house",
+   "district": "136",
+   "committee": "00069589",
+   "contributions": 0.0
+  },
+  {
+   "name": "Thorpe, Diane (Mrs.)",
+   "chamber": "house",
+   "district": "98",
+   "committee": "00066205",
+   "contributions": 0.0
+  },
+  {
+   "name": "Taylor, Nicholas V. (The Honorable)",
+   "chamber": "senate",
+   "district": "8",
+   "committee": "00066123",
+   "contributions": 956143.11
+  },
+  {
+   "name": "Raymond, Richard E. Pena (The Honorable)",
+   "chamber": "house",
+   "district": "42",
+   "committee": "00021186",
+   "contributions": 473798.64
+  },
+  {
+   "name": "Turner, Sylvester (The Honorable)",
+   "chamber": "house",
+   "district": "139",
+   "committee": "00020872",
+   "contributions": 763091.74
+  },
+  {
+   "name": "McClendon, Ruth J. (The Honorable)",
+   "chamber": "house",
+   "district": "120",
+   "committee": "00023012",
+   "contributions": 0.0
+  },
+  {
+   "name": "Chisum, Warren D. (Mr.)",
+   "chamber": "house",
+   "district": "88",
+   "committee": "00019919",
+   "contributions": 0.0
+  },
+  {
+   "name": "Taylor, Larry W. (The Honorable)",
+   "chamber": "senate",
+   "district": "11",
+   "committee": "00037036",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lewis, Tryon D. (The Honorable)",
+   "chamber": "house",
+   "district": "81",
+   "committee": "00020175",
+   "contributions": 0.0
+  },
+  {
+   "name": "Nichols, Judy L. (Mrs.)",
+   "chamber": "house",
+   "district": "21",
+   "committee": "00069591",
+   "contributions": 0.0
+  },
+  {
+   "name": "Sheffield, J. D. (The Honorable)",
+   "chamber": "house",
+   "district": "59",
+   "committee": "00066222",
+   "contributions": 375518.2
+  },
+  {
+   "name": "Burns, DeWayne C. (The Honorable)",
+   "chamber": "house",
+   "district": "58",
+   "committee": "00069548",
+   "contributions": 444890.79
+  },
+  {
+   "name": "Sheets, Kenneth F. (Mr.)",
+   "chamber": "house",
+   "district": "107",
+   "committee": "00066290",
+   "contributions": 950777.21
+  },
+  {
+   "name": "Bean, Nancy C. (Rev.)",
+   "chamber": "house",
+   "district": "93",
+   "committee": "00069734",
+   "contributions": 23105.37
+  },
+  {
+   "name": "Smithee, John T. (The Honorable)",
+   "chamber": "house",
+   "district": "86",
+   "committee": "00020664",
+   "contributions": 98600.0
+  },
+  {
+   "name": "Ellis, Rodney G. (The Honorable)",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "00019940",
+   "contributions": 481567.56
+  },
+  {
+   "name": "Phillips, Lawrence A. (The Honorable)",
+   "chamber": "house",
+   "district": "62",
+   "committee": "00052791",
+   "contributions": 177324.84
+  },
+  {
+   "name": "Farney, Marsha L. (Ms.)",
+   "chamber": "house",
+   "district": "20",
+   "committee": "00066195",
+   "contributions": 201652.84
+  },
+  {
+   "name": "Reynolds, Harry R. (Mr.)",
+   "chamber": "house",
+   "district": "62",
+   "committee": "00051290",
+   "contributions": 0.0
+  },
+  {
+   "name": "Reyes, Rico (Mr.)",
+   "chamber": "house",
+   "district": "50",
+   "committee": "00069202",
+   "contributions": 0.0
+  },
+  {
+   "name": "Walle Jr., Armando L. (The Honorable)",
+   "chamber": "house",
+   "district": "140",
+   "committee": "00062108",
+   "contributions": 124996.79
+  },
+  {
+   "name": "Cobb, Jon (Mr.)",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "00080076",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lucio III, Eduardo A. (The Honorable)",
+   "chamber": "house",
+   "district": "38",
+   "committee": "00057767",
+   "contributions": 326063.17
+  },
+  {
+   "name": "Ray, Howard E. (Mr.)",
+   "chamber": "house",
+   "district": "59",
+   "committee": "00069318",
+   "contributions": 700.0
+  },
+  {
+   "name": "Bettencourt, Paul (The Honorable)",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "00069337",
+   "contributions": 0.0
+  },
+  {
+   "name": "Macias, Nathan G. (Mr.)",
+   "chamber": "house",
+   "district": "73",
+   "committee": "00058334",
+   "contributions": 0.0
+  },
+  {
+   "name": "Marquez, Marisa (Ms.)",
+   "chamber": "house",
+   "district": "77",
+   "committee": "00062161",
+   "contributions": 0.0
+  },
+  {
+   "name": "Shapiro, Florence (Ms.)",
+   "chamber": "senate",
+   "district": "8",
+   "committee": "00020966",
+   "contributions": 0.0
+  },
+  {
+   "name": "Stafford, Paul K. (Mr.)",
+   "chamber": "house",
+   "district": "115",
+   "committee": "00069699",
+   "contributions": 500.0
+  },
+  {
+   "name": "Bell Jr., Cecil I. (The Honorable)",
+   "chamber": "house",
+   "district": "3",
+   "committee": "00067547",
+   "contributions": 130630.88
+  },
+  {
+   "name": "Uresti, Carlos I. (The Honorable)",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "00035921",
+   "contributions": 1174113.91
+  },
+  {
+   "name": "Phelan, Matthew M. (The Honorable)",
+   "chamber": "house",
+   "district": "21",
+   "committee": "00062288",
+   "contributions": 0.0
+  },
+  {
+   "name": "Metcalf, William T. (The Honorable)",
+   "chamber": "house",
+   "district": "16",
+   "committee": "00069477",
+   "contributions": 212072.88
+  },
+  {
+   "name": "Bohmfalk, Robert Milton (Mr.)",
+   "chamber": "house",
+   "district": "44",
+   "committee": "00066306",
+   "contributions": 100.0
+  },
+  {
+   "name": "Anderson, Charles (The Honorable)",
+   "chamber": "house",
+   "district": "56",
+   "committee": "00051449",
+   "contributions": 88745.95
+  },
+  {
+   "name": "Alvarado, Carol (The Honorable)",
+   "chamber": "house",
+   "district": "145",
+   "committee": "00024376",
+   "contributions": 277480.63
+  },
+  {
+   "name": "Davis, Yvonne (The Honorable)",
+   "chamber": "house",
+   "district": "111",
+   "committee": "00019811",
+   "contributions": 283426.38
+  },
+  {
+   "name": "Senter, Bob (Mr.)",
+   "chamber": "house",
+   "district": "23",
+   "committee": "00069556",
+   "contributions": 0.0
+  },
+  {
+   "name": "Leach, Jeff C. (The Honorable)",
+   "chamber": "house",
+   "district": "67",
+   "committee": "00067738",
+   "contributions": 353098.07
+  },
+  {
+   "name": "Seliger, Kelton G. (The Honorable)",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "00052862",
+   "contributions": 610189.73
+  },
+  {
+   "name": "Galloway, Michael L. (Mr.)",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "00020073",
+   "contributions": 0.0
+  },
+  {
+   "name": "Israel, Celia M. (The Honorable)",
+   "chamber": "house",
+   "district": "50",
+   "committee": "00050675",
+   "contributions": 260070.7
+  },
+  {
+   "name": "Fiki, Morad H. (Mr.)",
+   "chamber": "house",
+   "district": "137",
+   "committee": "00069456",
+   "contributions": 0.0
+  },
+  {
+   "name": "Naishtat, Elliott (Mr.)",
+   "chamber": "house",
+   "district": "49",
+   "committee": "00020642",
+   "contributions": 1450.0
+  },
+  {
+   "name": "Larson, Lyle T. (The Honorable)",
+   "chamber": "house",
+   "district": "122",
+   "committee": "00025726",
+   "contributions": 445489.74
+  },
+  {
+   "name": "Isaac, Jason A. (The Honorable)",
+   "chamber": "house",
+   "district": "45",
+   "committee": "00066236",
+   "contributions": 0.0
+  },
+  {
+   "name": "Buckingham, Dawn C. (The Honorable)",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "00069001",
+   "contributions": 1578961.76
+  },
+  {
+   "name": "Stephenson, Phyllip Wayne (The Honorable)",
+   "chamber": "house",
+   "district": "85",
+   "committee": "00038508",
+   "contributions": 113822.09
+  },
+  {
+   "name": "VanDeaver, Gary W. (The Honorable)",
+   "chamber": "house",
+   "district": "1",
+   "committee": "00069367",
+   "contributions": 363650.5
+  },
+  {
+   "name": "King, Susan L. (Ms.)",
+   "chamber": "house",
+   "district": "71",
+   "committee": "00058137",
+   "contributions": 0.0
+  },
+  {
+   "name": "Krause, Matthew H. (The Honorable)",
+   "chamber": "house",
+   "district": "93",
+   "committee": "00065897",
+   "contributions": 226321.2
+  },
+  {
+   "name": "Canales, Terry (The Honorable)",
+   "chamber": "house",
+   "district": "40",
+   "committee": "00065230",
+   "contributions": 126107.65
+  },
+  {
+   "name": "Chavez, Norma P. (Ms.)",
+   "chamber": "house",
+   "district": "76",
+   "committee": "00032066",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ogle, Skip M. (Mr.)",
+   "chamber": "house",
+   "district": "6",
+   "committee": "00069459",
+   "contributions": 0.0
+  },
+  {
+   "name": "Alonzo, Roberto R. (The Honorable)",
+   "chamber": "house",
+   "district": "104",
+   "committee": "00019681",
+   "contributions": 160944.35
+  },
+  {
+   "name": "Murphy, James R. (The Honorable)",
+   "chamber": "house",
+   "district": "133",
+   "committee": "00024733",
+   "contributions": 0.0
+  },
+  {
+   "name": "Oliveira, Rene O. (The Honorable)",
+   "chamber": "house",
+   "district": "37",
+   "committee": "00020747",
+   "contributions": 414773.99
+  },
+  {
+   "name": "Toth, Steven H. (Mr.)",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "00067717",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rodriguez, Justin (The Honorable)",
+   "chamber": "house",
+   "district": "125",
+   "committee": "00067615",
+   "contributions": 235085.28
+  },
+  {
+   "name": "McReynolds, James M. (Dr.)",
+   "chamber": "house",
+   "district": "12",
+   "committee": "00032587",
+   "contributions": 0.0
+  },
+  {
+   "name": "Solomons, Burt (Mr.)",
+   "chamber": "house",
+   "district": "65",
+   "committee": "00026786",
+   "contributions": 0.0
+  },
+  {
+   "name": "Flynn, Dan (The Honorable)",
+   "chamber": "house",
+   "district": "2",
+   "committee": "00032881",
+   "contributions": 548130.08
+  },
+  {
+   "name": "Fallon, Patrick E. (The Honorable)",
+   "chamber": "house",
+   "district": "106",
+   "committee": "00067539",
+   "contributions": 155118.0
+  },
+  {
+   "name": "Karmally, Sameena (Mrs.)",
+   "chamber": "house",
+   "district": "89",
+   "committee": "00069607",
+   "contributions": 0.0
+  },
+  {
+   "name": "Davis, Wendy R. (Ms.)",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "00062095",
+   "contributions": 852.89
+  },
+  {
+   "name": "Guerra, Roberto D. (The Honorable)",
+   "chamber": "house",
+   "district": "41",
+   "committee": "00035579",
+   "contributions": 316032.9
+  },
+  {
+   "name": "Guillen, Ryan A. (The Honorable)",
+   "chamber": "house",
+   "district": "31",
+   "committee": "00051797",
+   "contributions": 256368.0
+  },
+  {
+   "name": "Straus III, Joe R. (The Honorable)",
+   "chamber": "house",
+   "district": "121",
+   "committee": "00019498",
+   "contributions": 697606.87
+  },
+  {
+   "name": "Goldman, Craig (The Honorable)",
+   "chamber": "house",
+   "district": "97",
+   "committee": "00062004",
+   "contributions": 277114.27
+  },
+  {
+   "name": "Lucio Jr., Eduardo A. (The Honorable)",
+   "chamber": "senate",
+   "district": "27",
+   "committee": "00020257",
+   "contributions": 597922.51
+  },
+  {
+   "name": "Nichols, Robert Lee (The Honorable)",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "00035962",
+   "contributions": 1200557.5
+  },
+  {
+   "name": "Tinderholt, Tony D. (The Honorable)",
+   "chamber": "house",
+   "district": "94",
+   "committee": "00069489",
+   "contributions": 341088.05
+  },
+  {
+   "name": "Deshotel, Joseph D. (The Honorable)",
+   "chamber": "house",
+   "district": "22",
+   "committee": "00039164",
+   "contributions": 177531.37
+  },
+  {
+   "name": "Eissler, W. Robert (Mr.)",
+   "chamber": "house",
+   "district": "15",
+   "committee": "00051538",
+   "contributions": 0.0
+  },
+  {
+   "name": "Arrington, Jodey (Mr.)",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "00070230",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bosquez, Abel G. (Mr.)",
+   "chamber": "house",
+   "district": "87",
+   "committee": "00065893",
+   "contributions": 35.0
+  },
+  {
+   "name": "Capriglione, Giovanni S. (The Honorable)",
+   "chamber": "house",
+   "district": "98",
+   "committee": "00065973",
+   "contributions": 248085.39
+  },
+  {
+   "name": "Miller, Dana F. (The Honorable)",
+   "chamber": "house",
+   "district": "26",
+   "committee": "00062278",
+   "contributions": 153933.7
+  },
+  {
+   "name": "Casas, Elijah I. (Mr.)",
+   "chamber": "house",
+   "district": "41",
+   "committee": "00069754",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bonnen, James Gregory (The Honorable)",
+   "chamber": "house",
+   "district": "24",
+   "committee": "00067723",
+   "contributions": 0.0
+  },
+  {
+   "name": "Aguillon, Melissa P. (Mrs.)",
+   "chamber": "house",
+   "district": "123",
+   "committee": "00070285",
+   "contributions": 8969.0
+  },
+  {
+   "name": "Khan, M. J. (Mr.)",
+   "chamber": "house",
+   "district": "137",
+   "committee": "00068376",
+   "contributions": 0.0
+  },
+  {
+   "name": "Shaheen, Matt F. (The Honorable)",
+   "chamber": "house",
+   "district": "66",
+   "committee": "00069726",
+   "contributions": 138018.79
+  },
+  {
+   "name": "Holland, Justin A. (Mr.)",
+   "chamber": "house",
+   "district": "33",
+   "committee": "00080066",
+   "contributions": 672257.21
+  },
+  {
+   "name": "Thompson, Edward L. (The Honorable)",
+   "chamber": "house",
+   "district": "29",
+   "committee": "00067775",
+   "contributions": 0.0
+  },
+  {
+   "name": "Castro, Isaac M. (Mr.)",
+   "chamber": "house",
+   "district": "71",
+   "committee": "00026397",
+   "contributions": 14370.0
+  },
+  {
+   "name": "Harless, Patricia F. (Ms.)",
+   "chamber": "house",
+   "district": "126",
+   "committee": "00037927",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kacal, Kyle J. (The Honorable)",
+   "chamber": "house",
+   "district": "12",
+   "committee": "00067801",
+   "contributions": 547468.52
+  },
+  {
+   "name": "Gonzales, Veronica (The Honorable)",
+   "chamber": "house",
+   "district": "41",
+   "committee": "00054908",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hernandez, Ana E. (The Honorable)",
+   "chamber": "house",
+   "district": "143",
+   "committee": "00057411",
+   "contributions": 117591.71
+  },
+  {
+   "name": "Gonzalez, Kimberly (Mrs.)",
+   "chamber": "house",
+   "district": "43",
+   "committee": "00069580",
+   "contributions": 0.0
+  },
+  {
+   "name": "Frost, Stephen J. (Mr.)",
+   "chamber": "house",
+   "district": "1",
+   "committee": "00054840",
+   "contributions": 0.0
+  },
+  {
+   "name": "Paul, Dennis R. (The Honorable)",
+   "chamber": "house",
+   "district": "129",
+   "committee": "00069502",
+   "contributions": 155151.33
+  },
+  {
+   "name": "Perez, Mary Ann G. (The Honorable)",
+   "chamber": "house",
+   "district": "144",
+   "committee": "00068026",
+   "contributions": 363622.25
+  },
+  {
+   "name": "Oliverson, Thomas J. (The Honorable)",
+   "chamber": "house",
+   "district": "130",
+   "committee": "00080010",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pena, Gilbert (The Honorable)",
+   "chamber": "house",
+   "district": "144",
+   "committee": "00058277",
+   "contributions": 121799.9
+  },
+  {
+   "name": "Dean, Jay (The Honorable)",
+   "chamber": "house",
+   "district": "7",
+   "committee": "00080046",
+   "contributions": 409532.13
+  },
+  {
+   "name": "Lopez, Aaron J. (Mr.)",
+   "chamber": "house",
+   "district": "143",
+   "committee": "00070778",
+   "contributions": 0.0
+  },
+  {
+   "name": "Noun, Antoine K. (Mr.)",
+   "chamber": "house",
+   "district": "150",
+   "committee": "00069230",
+   "contributions": 0.0
+  },
+  {
+   "name": "Klick, Stephanie D. (The Honorable)",
+   "chamber": "house",
+   "district": "91",
+   "committee": "00057431",
+   "contributions": 54737.66
+  },
+  {
+   "name": "Munoz Jr., Sergio (The Honorable)",
+   "chamber": "house",
+   "district": "36",
+   "committee": "00065967",
+   "contributions": 384870.27
+  },
+  {
+   "name": "Anchia, Rafael M. (The Honorable)",
+   "chamber": "house",
+   "district": "103",
+   "committee": "00054808",
+   "contributions": 282142.71
+  },
+  {
+   "name": "Simonsen, Stephen A. (Mr.)",
+   "chamber": "house",
+   "district": "16",
+   "committee": "00054827",
+   "contributions": 0.0
+  },
+  {
+   "name": "Stickland, Jonathan S. (The Honorable)",
+   "chamber": "house",
+   "district": "92",
+   "committee": "00067904",
+   "contributions": 943777.16
+  },
+  {
+   "name": "Dutton Jr., Harold V. (The Honorable)",
+   "chamber": "house",
+   "district": "142",
+   "committee": "00021133",
+   "contributions": 107763.06
+  },
+  {
+   "name": "Puente, Robert R. (Mr.)",
+   "chamber": "house",
+   "district": "119",
+   "committee": "00020685",
+   "contributions": 0.0
+  },
+  {
+   "name": "Nelson, Jane (The Honorable)",
+   "chamber": "senate",
+   "district": "12",
+   "committee": "00020673",
+   "contributions": 998328.3
+  },
+  {
+   "name": "Uher, D. R. (Mr.)",
+   "chamber": "house",
+   "district": "29",
+   "committee": "00021199",
+   "contributions": 0.0
+  },
+  {
+   "name": "Carona, John J. (Mr.)",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "00019837",
+   "contributions": 0.0
+  },
+  {
+   "name": "Creighton, C. Brandon (The Honorable)",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "00051451",
+   "contributions": 0.0
+  },
+  {
+   "name": "Farrar, Jessica (The Honorable)",
+   "chamber": "house",
+   "district": "148",
+   "committee": "00026313",
+   "contributions": 225430.77
+  },
+  {
+   "name": "Anderson, Rodney Earl (The Honorable)",
+   "chamber": "house",
+   "district": "105",
+   "committee": "00066277",
+   "contributions": 43.31
+  },
+  {
+   "name": "Rose, Toni N. (The Honorable)",
+   "chamber": "house",
+   "district": "110",
+   "committee": "00067987",
+   "contributions": 196513.37
+  },
+  {
+   "name": "Larson, Jeffrey A. (Mr.)",
+   "chamber": "house",
+   "district": "129",
+   "committee": "00069526",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wilson, James R. (Mr.)",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "00067574",
+   "contributions": 0.0
+  },
+  {
+   "name": "Eby, Philip R. (Mr.)",
+   "chamber": "house",
+   "district": "58",
+   "committee": "00068967",
+   "contributions": 97939.66
+  },
+  {
+   "name": "Leibowitz, David M. (Mr.)",
+   "chamber": "house",
+   "district": "117",
+   "committee": "00041240",
+   "contributions": 0.0
+  },
+  {
+   "name": "Garza, John V. (Mr.)",
+   "chamber": "house",
+   "district": "117",
+   "committee": "00062837",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ellzey Sr., John K.",
+   "chamber": "house",
+   "district": "10",
+   "committee": "00068522",
+   "contributions": 0.0
+  },
+  {
+   "name": "Massengale, Stephen L. (Mr.)",
+   "chamber": "house",
+   "district": "83",
+   "committee": "00069693",
+   "contributions": 0.0
+  },
+  {
+   "name": "Martinez, Michael R. (Mr.)",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "00028799",
+   "contributions": 0.0
+  },
+  {
+   "name": "Darby, Drew (The Honorable)",
+   "chamber": "house",
+   "district": "72",
+   "committee": "00051651",
+   "contributions": 740658.64
+  },
+  {
+   "name": "Rodriguez, Eduardo R. (The Honorable)",
+   "chamber": "house",
+   "district": "51",
+   "committee": "00041097",
+   "contributions": 194763.75
+  },
+  {
+   "name": "Deuvall, Clifford A. (Mr.)",
+   "chamber": "house",
+   "district": "56",
+   "committee": "00067610",
+   "contributions": 0.0
+  },
+  {
+   "name": "Clayton, George M. (Mr.)",
+   "chamber": "house",
+   "district": "102",
+   "committee": "00065569",
+   "contributions": 0.0
+  },
+  {
+   "name": "Simpson, David P. (The Honorable)",
+   "chamber": "house",
+   "district": "7",
+   "committee": "00066131",
+   "contributions": 563117.11
+  },
+  {
+   "name": "Garcia III, Juan M. (Mr.)",
+   "chamber": "house",
+   "district": "32",
+   "committee": "00058452",
+   "contributions": 0.0
+  },
+  {
+   "name": "Collier, Nicole D. (The Honorable)",
+   "chamber": "house",
+   "district": "95",
+   "committee": "00067957",
+   "contributions": 142288.0
+  },
+  {
+   "name": "Lavender, George E. (Mr.)",
+   "chamber": "house",
+   "district": "1",
+   "committee": "00026525",
+   "contributions": 183255.86
+  },
+  {
+   "name": "Lopez, Luis M. (Mr.)",
+   "chamber": "house",
+   "district": "132",
+   "committee": "00069764",
+   "contributions": 0.0
+  },
+  {
+   "name": "Byrd, John C. (Mr.)",
+   "chamber": "house",
+   "district": "73",
+   "committee": "00080093",
+   "contributions": 141110.61
+  },
+  {
+   "name": "Graves, Brent R. (Mr.)",
+   "chamber": "house",
+   "district": "59",
+   "committee": "00080048",
+   "contributions": 44354.77
+  },
+  {
+   "name": "Sevilla, Marco A. (Mr.)",
+   "chamber": "house",
+   "district": "11",
+   "committee": "00066527",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jackson, Alma P. (Mrs.)",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "00067822",
+   "contributions": 2400.0
+  },
+  {
+   "name": "Johnson, Ann (Ms.)",
+   "chamber": "house",
+   "district": "134",
+   "committee": "00067972",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rinaldi, Matthew D. (The Honorable)",
+   "chamber": "house",
+   "district": "115",
+   "committee": "00065931",
+   "contributions": 465977.31
+  },
+  {
+   "name": "Zerwas, John M. (The Honorable)",
+   "chamber": "house",
+   "district": "28",
+   "committee": "00058497",
+   "contributions": 0.0
+  },
+  {
+   "name": "Huffines, Donald B. (The Honorable)",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "00069651",
+   "contributions": 1007252.28
+  },
+  {
+   "name": "Campbell M.D., Donna (The Honorable)",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "00067809",
+   "contributions": 0.0
+  },
+  {
+   "name": "Merritt, Thomas C. (Mr.)",
+   "chamber": "house",
+   "district": "7",
+   "committee": "00023181",
+   "contributions": 0.0
+  },
+  {
+   "name": "Schwertner, Charles (The Honorable)",
+   "chamber": "senate",
+   "district": "5",
+   "committee": "00065996",
+   "contributions": 0.0
+  },
+  {
+   "name": "Turner, Scott (Mr.)",
+   "chamber": "house",
+   "district": "33",
+   "committee": "00067573",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ruff, Alison B. (Ms.)",
+   "chamber": "house",
+   "district": "134",
+   "committee": "00069761",
+   "contributions": 0.0
+  },
+  {
+   "name": "Galindo III, Ricardo (The Honorable)",
+   "chamber": "house",
+   "district": "117",
+   "committee": "00069523",
+   "contributions": 431853.72
+  },
+  {
+   "name": "Curtis, Linda J. (Ms.)",
+   "chamber": "house",
+   "district": "17",
+   "committee": "00042341",
+   "contributions": 2622.48
+  },
+  {
+   "name": "Rodriguez, Jose Roberto (The Honorable)",
+   "chamber": "senate",
+   "district": "29",
+   "committee": "00066091",
+   "contributions": 569482.05
+  },
+  {
+   "name": "Regalado, Maria (Ms.)",
+   "chamber": "house",
+   "district": "36",
+   "committee": "00069483",
+   "contributions": 0.0
+  },
+  {
+   "name": "Cortez, Philip (The Honorable)",
+   "chamber": "house",
+   "district": "117",
+   "committee": "00067628",
+   "contributions": 478363.15
+  },
+  {
+   "name": "Crenshaw, Sandra (Ms.)",
+   "chamber": "house",
+   "district": "110",
+   "committee": "00069780",
+   "contributions": 2000.0
+  },
+  {
+   "name": "Moran, Daniel T.A. (Mr.)",
+   "chamber": "house",
+   "district": "63",
+   "committee": "00069615",
+   "contributions": 250.0
+  },
+  {
+   "name": "Gonzalez, Naomi R. (Ms.)",
+   "chamber": "house",
+   "district": "76",
+   "committee": "00066051",
+   "contributions": 0.0
+  },
+  {
+   "name": "McNutt, Thomas M.N. (Mr.)",
+   "chamber": "house",
+   "district": "8",
+   "committee": "00080025",
+   "contributions": 440431.57
+  },
+  {
+   "name": "Landgraf, Brooks Frederick (The Honorable)",
+   "chamber": "house",
+   "district": "81",
+   "committee": "00069756",
+   "contributions": 426117.08
+  },
+  {
+   "name": "Beebe, Matthew S. (Mr.)",
+   "chamber": "house",
+   "district": "",
+   "committee": "00067964",
+   "contributions": 0.0
+  },
+  {
+   "name": "Clardy, Travis P. (The Honorable)",
+   "chamber": "house",
+   "district": "11",
+   "committee": "00067818",
+   "contributions": 406337.67
+  },
+  {
+   "name": "Koop, Linda L. (The Honorable)",
+   "chamber": "house",
+   "district": "102",
+   "committee": "00069372",
+   "contributions": 588056.11
+  },
+  {
+   "name": "King, Read (Mr.)",
+   "chamber": "house",
+   "district": "64",
+   "committee": "00069521",
+   "contributions": 181340.52
+  },
+  {
+   "name": "Hamilton, David W. (Mr.)",
+   "chamber": "house",
+   "district": "27",
+   "committee": "00069519",
+   "contributions": 48.25
+  },
+  {
+   "name": "Burkett, Cindy G. (The Honorable)",
+   "chamber": "house",
+   "district": "113",
+   "committee": "00065930",
+   "contributions": 1007899.01
+  },
+  {
+   "name": "Lozano, Jose M. (The Honorable)",
+   "chamber": "house",
+   "district": "43",
+   "committee": "00065802",
+   "contributions": 468378.66
+  },
+  {
+   "name": "Meyer, Morgan D. (The Honorable)",
+   "chamber": "house",
+   "district": "108",
+   "committee": "00069344",
+   "contributions": 550778.45
+  },
+  {
+   "name": "Geren, Charles L. (The Honorable)",
+   "chamber": "house",
+   "district": "99",
+   "committee": "00029493",
+   "contributions": 1554949.39
+  },
+  {
+   "name": "Hinojosa, Juan (The Honorable)",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "00013805",
+   "contributions": 1212444.19
+  },
+  {
+   "name": "Ham, Duane (Mr.)",
+   "chamber": "house",
+   "district": "16",
+   "committee": "00069462",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gonzalez, Mary Edna (The Honorable)",
+   "chamber": "house",
+   "district": "75",
+   "committee": "00068004",
+   "contributions": 334068.9
+  },
+  {
+   "name": "Vaught, Allen R. (Mr.)",
+   "chamber": "house",
+   "district": "107",
+   "committee": "00058275",
+   "contributions": 0.0
+  },
+  {
+   "name": "Irvin, Laura (Ms.)",
+   "chamber": "house",
+   "district": "102",
+   "committee": "00080073",
+   "contributions": 74385.71
+  },
+  {
+   "name": "Farias, Joe G. (Mr.)",
+   "chamber": "house",
+   "district": "118",
+   "committee": "00058360",
+   "contributions": 1500.0
+  },
+  {
+   "name": "Hefner, Joseph Cole (The Honorable)",
+   "chamber": "house",
+   "district": "5",
+   "committee": "00080101",
+   "contributions": 312440.58
+  },
+  {
+   "name": "Ogden, Stephen E. (Mr.)",
+   "chamber": "senate",
+   "district": "5",
+   "committee": "00020745",
+   "contributions": 0.0
+  },
+  {
+   "name": "Cain, Briscoe R. (The Honorable)",
+   "chamber": "house",
+   "district": "128",
+   "committee": "00069218",
+   "contributions": 368287.86
+  },
+  {
+   "name": "Chan, Wan-Yu Elisa (Ms.)",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "00069563",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hagen, Rick (Mr.)",
+   "chamber": "house",
+   "district": "64",
+   "committee": "00080134",
+   "contributions": 77489.0
+  },
+  {
+   "name": "Leo, Teresa S. (Ms.)",
+   "chamber": "house",
+   "district": "150",
+   "committee": "00032045",
+   "contributions": 6095.2
+  },
+  {
+   "name": "Farias, Gabriel D. (Mr.)",
+   "chamber": "house",
+   "district": "118",
+   "committee": "00080116",
+   "contributions": 75435.68
+  },
+  {
+   "name": "Uresti, Tomas (The Honorable)",
+   "chamber": "house",
+   "district": "118",
+   "committee": "00080143",
+   "contributions": 182560.13
+  },
+  {
+   "name": "Casias, Robert A. (Mr.)",
+   "chamber": "house",
+   "district": "118",
+   "committee": "00068091",
+   "contributions": 950.0
+  },
+  {
+   "name": "Alcoser, Anthony (Mr.)",
+   "chamber": "house",
+   "district": "118",
+   "committee": "00080169",
+   "contributions": 8220.0
+  },
+  {
+   "name": "Seago, Ted (Mr.)",
+   "chamber": "house",
+   "district": "16",
+   "committee": "00069457",
+   "contributions": 0.0
+  },
+  {
+   "name": "Franks, Michael A. (Mr.)",
+   "chamber": "house",
+   "district": "132",
+   "committee": "00037080",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lujan III, John (Mr.)",
+   "chamber": "house",
+   "district": "118",
+   "committee": "00058435",
+   "contributions": 287687.92
+  },
+  {
+   "name": "Holdman, Michael E. (Mr.)",
+   "chamber": "house",
+   "district": "118",
+   "committee": "00066258",
+   "contributions": 350.0
+  },
+  {
+   "name": "Hill, Fred (Mr.)",
+   "chamber": "house",
+   "district": "112",
+   "committee": "00020297",
+   "contributions": 0.0
+  },
+  {
+   "name": "Garza, Carlos H. (Mr.)",
+   "chamber": "house",
+   "district": "101",
+   "committee": "00062853",
+   "contributions": 17203.0
+  },
+  {
+   "name": "Trubenbach, Trent M. (Mr.)",
+   "chamber": "house",
+   "district": "106",
+   "committee": "00080317",
+   "contributions": 0.0
+  },
+  {
+   "name": "McKernon, Andrew T. (Mr.)",
+   "chamber": "house",
+   "district": "97",
+   "committee": "00080461",
+   "contributions": 155.0
+  },
+  {
+   "name": "Wright, Braeden M. (Mr.)",
+   "chamber": "house",
+   "district": "64",
+   "committee": "00069870",
+   "contributions": 0.0
+  },
+  {
+   "name": "Watts Jr., David L. (Mr.)",
+   "chamber": "house",
+   "district": "7",
+   "committee": "00069332",
+   "contributions": 102630.35
+  },
+  {
+   "name": "Henderson, Christopher A. (Mr.)",
+   "chamber": "house",
+   "district": "27",
+   "committee": "00080381",
+   "contributions": 2751.07
+  },
+  {
+   "name": "LoPachin, Pierce Taylor (Mr.)",
+   "chamber": "house",
+   "district": "71",
+   "committee": "00080292",
+   "contributions": 1189.12
+  },
+  {
+   "name": "Callegari Sr., William A. (Mr.)",
+   "chamber": "house",
+   "district": "132",
+   "committee": "00041903",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bean, Sheila A. (Mrs.)",
+   "chamber": "house",
+   "district": "121",
+   "committee": "00080224",
+   "contributions": 51519.35
+  },
+  {
+   "name": "Landtroop Jr., James F. (Mr.)",
+   "chamber": "house",
+   "district": "84",
+   "committee": "00056964",
+   "contributions": 132182.02
+  },
+  {
+   "name": "Lee, Sandra (Mrs.)",
+   "chamber": "house",
+   "district": "96",
+   "committee": "00080103",
+   "contributions": 13874.99
+  },
+  {
+   "name": "Ortega, Evelina (The Honorable)",
+   "chamber": "house",
+   "district": "77",
+   "committee": "00058818",
+   "contributions": 165976.02
+  },
+  {
+   "name": "Lane, Jeffrey A. (Mr.)",
+   "chamber": "house",
+   "district": "78",
+   "committee": "00080152",
+   "contributions": 980.0
+  },
+  {
+   "name": "Ford Jr., Jerry (Mr.)",
+   "chamber": "house",
+   "district": "139",
+   "committee": "00080197",
+   "contributions": 14309.0
+  },
+  {
+   "name": "Lee, George Michael (Mr.)",
+   "chamber": "senate",
+   "district": "1",
+   "committee": "00080404",
+   "contributions": 4629.21
+  },
+  {
+   "name": "Frank, James B. (The Honorable)",
+   "chamber": "house",
+   "district": "69",
+   "committee": "00067748",
+   "contributions": 225331.33
+  },
+  {
+   "name": "Averitt, Kip (Mr.)",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "00019725",
+   "contributions": 0.0
+  },
+  {
+   "name": "Smith, Steven E. (Mr.)",
+   "chamber": "house",
+   "district": "126",
+   "committee": "00080177",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hochberg, Lindsey S. (Mr.)",
+   "chamber": "house",
+   "district": "137",
+   "committee": "00021135",
+   "contributions": 0.0
+  },
+  {
+   "name": "Blanco, Cesar J. (The Honorable)",
+   "chamber": "house",
+   "district": "76",
+   "committee": "00069541",
+   "contributions": 153023.63
+  },
+  {
+   "name": "Boos, Jonathan M. (Mr.)",
+   "chamber": "house",
+   "district": "113",
+   "committee": "00068095",
+   "contributions": 107953.48
+  },
+  {
+   "name": "Misenheimer, Jay D. (Mr.)",
+   "chamber": "house",
+   "district": "5",
+   "committee": "00080168",
+   "contributions": 168443.85
+  },
+  {
+   "name": "Bailes IV, Ernest J. (The Honorable)",
+   "chamber": "house",
+   "district": "18",
+   "committee": "00080128",
+   "contributions": 520273.33
+  },
+  {
+   "name": "Jacobs, Karen O. (Ms.)",
+   "chamber": "house",
+   "district": "33",
+   "committee": "00080151",
+   "contributions": 46770.61
+  },
+  {
+   "name": "Schofield, Michael (The Honorable)",
+   "chamber": "house",
+   "district": "132",
+   "committee": "00057835",
+   "contributions": 155390.08
+  },
+  {
+   "name": "Duncan, Robert L. (The Honorable)",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "00021131",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hinch, Wesley N. (Mr.)",
+   "chamber": "house",
+   "district": "18",
+   "committee": "00080142",
+   "contributions": 95493.52
+  },
+  {
+   "name": "Ruiz, David Austin (Mr.)",
+   "chamber": "house",
+   "district": "54",
+   "committee": "00080081",
+   "contributions": 231969.86
+  },
+  {
+   "name": "Smith, Kay (Ms.)",
+   "chamber": "house",
+   "district": "130",
+   "committee": "00080037",
+   "contributions": 13315.5
+  },
+  {
+   "name": "McDaniel, Albert G. (Mr.)",
+   "chamber": "house",
+   "district": "95",
+   "committee": "00069748",
+   "contributions": 1025.0
+  },
+  {
+   "name": "Hamilton, Jacqueline D. (Ms.)",
+   "chamber": "house",
+   "district": "89",
+   "committee": "00080222",
+   "contributions": 21025.94
+  },
+  {
+   "name": "Bradford, Morgan E. (Mr.)",
+   "chamber": "house",
+   "district": "146",
+   "committee": "00069871",
+   "contributions": 0.0
+  },
+  {
+   "name": "Davis, Randall E. (Mr.)",
+   "chamber": "house",
+   "district": "5",
+   "committee": "00080126",
+   "contributions": 3875.0
+  },
+  {
+   "name": "Martin, Maximilian (Mr.)",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "00069896",
+   "contributions": 0.0
+  },
+  {
+   "name": "Caston, Rodney L. (Mr.)",
+   "chamber": "house",
+   "district": "106",
+   "committee": "00068362",
+   "contributions": 0.0
+  },
+  {
+   "name": "Holan, Anthony N. (Mr.)",
+   "chamber": "house",
+   "district": "114",
+   "committee": "00080547",
+   "contributions": 0.0
+  },
+  {
+   "name": "Stanford, Michael D. (Mr.)",
+   "chamber": "house",
+   "district": "12",
+   "committee": "00080353",
+   "contributions": 17270.0
+  },
+  {
+   "name": "Morrison, James D. (Mr.)",
+   "chamber": "house",
+   "district": "18",
+   "committee": "00080120",
+   "contributions": 15191.3
+  },
+  {
+   "name": "Jackson, Chad O. (Mr.)",
+   "chamber": "house",
+   "district": "111",
+   "committee": "00080399",
+   "contributions": 1543.0
+  },
+  {
+   "name": "Wilson, Terry M. (The Honorable)",
+   "chamber": "house",
+   "district": "20",
+   "committee": "00080350",
+   "contributions": 195633.77
+  },
+  {
+   "name": "Strahan, Adam K. (Mr.)",
+   "chamber": "house",
+   "district": "18",
+   "committee": "00080067",
+   "contributions": 236517.54
+  },
+  {
+   "name": "Russell, Alissa D. (Mrs.)",
+   "chamber": "house",
+   "district": "109",
+   "committee": "00069509",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ruiz, Ceasar (Mr.)",
+   "chamber": "house",
+   "district": "50",
+   "committee": "00080416",
+   "contributions": 3454.5
+  },
+  {
+   "name": "Hawkins, Daniel H. (Mr.)",
+   "chamber": "house",
+   "district": "99",
+   "committee": "00068141",
+   "contributions": 0.0
+  },
+  {
+   "name": "Turner, James M. (Mr.)",
+   "chamber": "house",
+   "district": "18",
+   "committee": "00080118",
+   "contributions": 17020.0
+  },
+  {
+   "name": "Swanson, Valoree H. (The Honorable)",
+   "chamber": "house",
+   "district": "150",
+   "committee": "00080325",
+   "contributions": 352276.62
+  },
+  {
+   "name": "Aldape III, Bernardo T. (Mr.)",
+   "chamber": "house",
+   "district": "144",
+   "committee": "00080183",
+   "contributions": 18094.79
+  },
+  {
+   "name": "Wheeler, Cody R. (Mr.)",
+   "chamber": "house",
+   "district": "144",
+   "committee": "00067998",
+   "contributions": 42968.0
+  },
+  {
+   "name": "Weiskopf, Douglas L. (Mr.)",
+   "chamber": "house",
+   "district": "143",
+   "committee": "00068250",
+   "contributions": 0.0
+  },
+  {
+   "name": "Reyna, Elvira (The Honorable)",
+   "chamber": "house",
+   "district": "101",
+   "committee": "00024709",
+   "contributions": 0.0
+  },
+  {
+   "name": "Delasandro, Timothy A. (Mr.)",
+   "chamber": "house",
+   "district": "12",
+   "committee": "00067994",
+   "contributions": 4500.0
+  },
+  {
+   "name": "Holk, Brian W. (Mr.)",
+   "chamber": "house",
+   "district": "53",
+   "committee": "00058917",
+   "contributions": 0.0
+  },
+  {
+   "name": "Keating, John P. (Mr.)",
+   "chamber": "house",
+   "district": "33",
+   "committee": "00080105",
+   "contributions": 495556.08
+  },
+  {
+   "name": "Ybanez, Jesse A. (Mr.)",
+   "chamber": "house",
+   "district": "135",
+   "committee": "00080449",
+   "contributions": 4897.63
+  },
+  {
+   "name": "Hayes, Philip B. (Mr.)",
+   "chamber": "house",
+   "district": "5",
+   "committee": "00080166",
+   "contributions": 37355.09
+  },
+  {
+   "name": "Fields Jr., Jess A. (Mr.)",
+   "chamber": "house",
+   "district": "14",
+   "committee": "00070194",
+   "contributions": 252613.62
+  },
+  {
+   "name": "Bilyeu, Whitney C. (Mrs.)",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "00069377",
+   "contributions": 0.0
+  },
+  {
+   "name": "Williams, Wesley R. (Mr.)",
+   "chamber": "senate",
+   "district": "District 24",
+   "committee": "00080078",
+   "contributions": 705.0
+  },
+  {
+   "name": "Richter, Steven Charles (Mr.)",
+   "chamber": "house",
+   "district": "10",
+   "committee": "00080585",
+   "contributions": 0.0
+  },
+  {
+   "name": "Liechty, Lorne O. (Mr.)",
+   "chamber": "house",
+   "district": "33",
+   "committee": "00080075",
+   "contributions": 0.0
+  },
+  {
+   "name": "Brown, James K. (Mr.)",
+   "chamber": "house",
+   "district": "",
+   "committee": "00080157",
+   "contributions": 317255.41
+  },
+  {
+   "name": "Lambert, Standard D. (The Honorable)",
+   "chamber": "house",
+   "district": "71",
+   "committee": "00080253",
+   "contributions": 226238.26
+  },
+  {
+   "name": "Jordan, Ann M. (Ms.)",
+   "chamber": "house",
+   "district": "47",
+   "committee": "00080445",
+   "contributions": 22562.34
+  },
+  {
+   "name": "Wiley, Jay (Mr.)",
+   "chamber": "house",
+   "district": "47",
+   "committee": "00080053",
+   "contributions": 94042.56
+  },
+  {
+   "name": "Gordon, Paul R. (Mr.)",
+   "chamber": "house",
+   "district": "136",
+   "committee": "00080426",
+   "contributions": 2320.8
+  },
+  {
+   "name": "Leach, Kimberlea K. (Mrs.)",
+   "chamber": "house",
+   "district": "92",
+   "committee": "00080422",
+   "contributions": 8410.6
+  },
+  {
+   "name": "Palmer, David L. (Mr.)",
+   "chamber": "house",
+   "district": "134",
+   "committee": "00080333",
+   "contributions": 31776.0
+  },
+  {
+   "name": "Flippen, Micah H. (Mr.)",
+   "chamber": "house",
+   "district": "12",
+   "committee": "00080172",
+   "contributions": 5623.27
+  },
+  {
+   "name": "Davis IV, John L. (Mr.)",
+   "chamber": "house",
+   "district": "85",
+   "committee": "00080367",
+   "contributions": 1592.0
+  },
+  {
+   "name": "Hawkins, Barbara (Ms.)",
+   "chamber": "house",
+   "district": "120",
+   "committee": "00080284",
+   "contributions": 163257.63
+  },
+  {
+   "name": "Meza, Thresa A. (Ms.)",
+   "chamber": "house",
+   "district": "105",
+   "committee": "00069649",
+   "contributions": 414951.49
+  },
+  {
+   "name": "Grisham, Christopher J. (Mr.)",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "00080107",
+   "contributions": 9378.26
+  },
+  {
+   "name": "Ertel, Stephanie L. (Ms.)",
+   "chamber": "house",
+   "district": "53",
+   "committee": "00080451",
+   "contributions": 20536.07
+  },
+  {
+   "name": "Hernandez, Cristoban (Mr.)",
+   "chamber": "house",
+   "district": "126",
+   "committee": "00069913",
+   "contributions": 2057.0
+  },
+  {
+   "name": "Padron, Abraham C. (Mr.)",
+   "chamber": "house",
+   "district": "36",
+   "committee": "00080340",
+   "contributions": 330700.0
+  },
+  {
+   "name": "Adams, Cole W. (Mr.)",
+   "chamber": "house",
+   "district": "85",
+   "committee": "00080255",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lytle Jr., Dalton W. (Mr.)",
+   "chamber": "house",
+   "district": "89",
+   "committee": "00080148",
+   "contributions": 16414.95
+  },
+  {
+   "name": "Flores, Peter P. (Mr.)",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "00080439",
+   "contributions": 26221.44
+  },
+  {
+   "name": "Ahrens, Christopher Shane (Mr.)",
+   "chamber": "house",
+   "district": "45",
+   "committee": "00080588",
+   "contributions": 0.0
+  },
+  {
+   "name": "Fischer, Huey R. (Mr.)",
+   "chamber": "house",
+   "district": "49",
+   "committee": "00080380",
+   "contributions": 65742.36
+  },
+  {
+   "name": "Golando, Martin (Mr.)",
+   "chamber": "house",
+   "district": "116",
+   "committee": "00080472",
+   "contributions": 95077.0
+  },
+  {
+   "name": "Berry, Beatriz (Mrs.)",
+   "chamber": "senate",
+   "district": "25",
+   "committee": "00069671",
+   "contributions": 0.0
+  },
+  {
+   "name": "Stucky, Lynn D. (The Honorable)",
+   "chamber": "house",
+   "district": "64",
+   "committee": "00080276",
+   "contributions": 304082.95
+  },
+  {
+   "name": "Contreras, Sergio (Mr.)",
+   "chamber": "house",
+   "district": "124",
+   "committee": "00080481",
+   "contributions": 1075.0
+  },
+  {
+   "name": "Davis, Cody Ryan (Mr.)",
+   "chamber": "house",
+   "district": "130",
+   "committee": "00080092",
+   "contributions": 420.0
+  },
+  {
+   "name": "Criss, Lloyd W. (Mr.)",
+   "chamber": "house",
+   "district": "23",
+   "committee": "00010144",
+   "contributions": 31033.7
+  },
+  {
+   "name": "Romero Jr., Ramon (The Honorable)",
+   "chamber": "house",
+   "district": "90",
+   "committee": "00069719",
+   "contributions": 215624.73
+  },
+  {
+   "name": "Wright, Stephen J. (Mr.)",
+   "chamber": "house",
+   "district": "11",
+   "committee": "00080282",
+   "contributions": 27484.28
+  },
+  {
+   "name": "Padgett, Cristin E. (Ms.)",
+   "chamber": "house",
+   "district": "33",
+   "committee": "00080135",
+   "contributions": 2593.24
+  },
+  {
+   "name": "Collins, Michael (Mr.)",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "00080453",
+   "contributions": 3348.18
+  },
+  {
+   "name": "Gooden, Lance C. (The Honorable)",
+   "chamber": "house",
+   "district": "4",
+   "committee": "00065836",
+   "contributions": 430149.63
+  },
+  {
+   "name": "Easton, Bennett N. (Mr.)",
+   "chamber": "house",
+   "district": "48",
+   "committee": "00037284",
+   "contributions": 0.0
+  },
+  {
+   "name": "Judson, Jeffrey M. (Mr.)",
+   "chamber": "house",
+   "district": "121",
+   "committee": "00053963",
+   "contributions": 668070.0
+  },
+  {
+   "name": "Leeder, Virginia L. (Ms.)",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "00080410",
+   "contributions": 23377.0
+  },
+  {
+   "name": "Dawson-Thomas, Joy (Mrs.)",
+   "chamber": "house",
+   "district": "126",
+   "committee": "00080496",
+   "contributions": 7296.5
+  },
+  {
+   "name": "Johnson, Kenton D. (Mr.)",
+   "chamber": "house",
+   "district": "49",
+   "committee": "00080454",
+   "contributions": 11375.0
+  },
+  {
+   "name": "Neill, Charles Gregory (Mr.)",
+   "chamber": "house",
+   "district": "99",
+   "committee": "00080371",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rocap, Blake (Mr.)",
+   "chamber": "house",
+   "district": "49",
+   "committee": "00065142",
+   "contributions": 24665.0
+  },
+  {
+   "name": "Crisp, Lee C. (Mr.)",
+   "chamber": "house",
+   "district": "60",
+   "committee": "00068211",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pena Jr., Aaron (Mr.)",
+   "chamber": "house",
+   "district": "40",
+   "committee": "00051164",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bowers, Rhetta A. (Mrs.)",
+   "chamber": "house",
+   "district": "113",
+   "committee": "00080443",
+   "contributions": 44472.63
+  },
+  {
+   "name": "DeMerchant, Laquitta S. (Mrs.)",
+   "chamber": "house",
+   "district": "26",
+   "committee": "00070962",
+   "contributions": 29885.68
+  },
+  {
+   "name": "Zolli, Alexander (Mr.)",
+   "chamber": "house",
+   "district": "HD 150",
+   "committee": "00080502",
+   "contributions": 0.0
+  },
+  {
+   "name": "Fisher, Scott W. (The Honorable)",
+   "chamber": "house",
+   "district": "92",
+   "committee": "00052838",
+   "contributions": 284955.0
+  },
+  {
+   "name": "Chibli, Maricela Sanchez (Mrs.)",
+   "chamber": "house",
+   "district": "98",
+   "committee": "00080456",
+   "contributions": 10540.0
+  },
+  {
+   "name": "Harrison, Brian M. (Mr.)",
+   "chamber": "house",
+   "district": "147",
+   "committee": "00080627",
+   "contributions": 100.0
+  },
+  {
+   "name": "Jackson, James M. (Mr.)",
+   "chamber": "senate",
+   "district": "11",
+   "committee": "00020513",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rose, Benjamin Harwood (Mr.)",
+   "chamber": "house",
+   "district": "134",
+   "committee": "00080122",
+   "contributions": 218617.37
+  },
+  {
+   "name": "Downton, Ryan (Mr.)",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "00067824",
+   "contributions": 78685.0
+  },
+  {
+   "name": "Bryant Jr., John R. (Mr.)",
+   "chamber": "house",
+   "district": "70",
+   "committee": "00080225",
+   "contributions": 3441.36
+  },
+  {
+   "name": "Carnohan, Christopher P. (Mr.)",
+   "chamber": "house",
+   "district": "71",
+   "committee": "00052440",
+   "contributions": 26979.0
+  },
+  {
+   "name": "LeUnes, Judy W. (Mrs.)",
+   "chamber": "house",
+   "district": "14",
+   "committee": "00067645",
+   "contributions": 0.0
+  },
+  {
+   "name": "Brown II, Stephen K. (Mr.)",
+   "chamber": "house",
+   "district": "27",
+   "committee": "00057996",
+   "contributions": 22657.0
+  },
+  {
+   "name": "Lauerman, Keith T. (Mr.)",
+   "chamber": "house",
+   "district": "50",
+   "committee": "00066157",
+   "contributions": 0.0
+  },
+  {
+   "name": "Nelson, Gnanse JC (Ms.)",
+   "chamber": "house",
+   "district": "66",
+   "committee": "00080215",
+   "contributions": 1925.0
+  },
+  {
+   "name": "Bates Jr., William R. (Mr.)",
+   "chamber": "house",
+   "district": "139",
+   "committee": "00066504",
+   "contributions": 46300.0
+  },
+  {
+   "name": "Shrum, Matthew W. (Mr.)",
+   "chamber": "house",
+   "district": "49",
+   "committee": "00080492",
+   "contributions": 16685.0
+  },
+  {
+   "name": "Gates Jr., Gary W. (Mr.)",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "00051418",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ocker, Dorotha M. (Ms.)",
+   "chamber": "house",
+   "district": "115",
+   "committee": "00080159",
+   "contributions": 49078.66
+  },
+  {
+   "name": "Garcia Utley, Marisa Yvette (Mrs.)",
+   "chamber": "house",
+   "district": "43",
+   "committee": "00080452",
+   "contributions": 35067.0
+  },
+  {
+   "name": "DeShazo, Hilda Garza (Ms.)",
+   "chamber": "house",
+   "district": "41",
+   "committee": "00080430",
+   "contributions": 85838.74
+  },
+  {
+   "name": "Piel, Andrew",
+   "chamber": "house",
+   "district": "94",
+   "committee": "00080194",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hawkins, Christian E. (Ms.)",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "00070467",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ludlow, Kevin P. (Mr.)",
+   "chamber": "house",
+   "district": "46",
+   "committee": "00069891",
+   "contributions": 0.0
+  },
+  {
+   "name": "Shike, John (Mr.)",
+   "chamber": "house",
+   "district": "131",
+   "committee": "00058200",
+   "contributions": 93300.0
+  },
+  {
+   "name": "Pollard, Edward (Mr.)",
+   "chamber": "house",
+   "district": "137",
+   "committee": "00080307",
+   "contributions": 30901.0
+  },
+  {
+   "name": "Thompson, Laura R. (Ms.)",
+   "chamber": "house",
+   "district": "120",
+   "committee": "00080388",
+   "contributions": 4125.0
+  },
+  {
+   "name": "Nila, Francisco G. (Mr.)",
+   "chamber": "house",
+   "district": "46",
+   "committee": "00080482",
+   "contributions": 12591.44
+  },
+  {
+   "name": "Miller, Byron E. (The Honorable)",
+   "chamber": "house",
+   "district": "120",
+   "committee": "00038405",
+   "contributions": 6998.69
+  },
+  {
+   "name": "Neave, Victoria (The Honorable)",
+   "chamber": "house",
+   "district": "107",
+   "committee": "00080065",
+   "contributions": 649831.46
+  },
+  {
+   "name": "Salas, Mario M. (Mr.)",
+   "chamber": "house",
+   "district": "120",
+   "committee": "00080246",
+   "contributions": 115486.69
+  },
+  {
+   "name": "Arevalo, Diana (The Honorable)",
+   "chamber": "house",
+   "district": "116",
+   "committee": "00070476",
+   "contributions": 90396.54
+  },
+  {
+   "name": "Dehart, Christofer (Mr.)",
+   "chamber": "house",
+   "district": "112",
+   "committee": "00080405",
+   "contributions": 8818.0
+  },
+  {
+   "name": "Mayes, Gary Brent (Dr.)",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "00080090",
+   "contributions": 10018.46
+  },
+  {
+   "name": "Way, Heather (Ms.)",
+   "chamber": "house",
+   "district": "49",
+   "committee": "00080474",
+   "contributions": 108275.39
+  },
+  {
+   "name": "Bartholomew J.D., Angelique (Mrs.)",
+   "chamber": "house",
+   "district": "District 27",
+   "committee": "00080428",
+   "contributions": 99020.12
+  },
+  {
+   "name": "Biedermann, Kenneth K. (The Honorable)",
+   "chamber": "house",
+   "district": "",
+   "committee": "00080113",
+   "contributions": 314089.36
+  },
+  {
+   "name": "Reynolds, Ronald E. (The Honorable)",
+   "chamber": "house",
+   "district": "27",
+   "committee": "00062098",
+   "contributions": 49580.22
+  },
+  {
+   "name": "Gallego, Pete P. (Mr.)",
+   "chamber": "house",
+   "district": "74",
+   "committee": "00021163",
+   "contributions": 0.0
+  },
+  {
+   "name": "Coleman, Gregory S. (Mr.)",
+   "chamber": "house",
+   "district": "67",
+   "committee": "00080182",
+   "contributions": 17540.5
+  },
+  {
+   "name": "Worthington, Robert T. (Mr.)",
+   "chamber": "house",
+   "district": "89",
+   "committee": "00052075",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hall, Art A. (Mr.)",
+   "chamber": "house",
+   "district": "120",
+   "committee": "00062755",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kissling, Benjamin (Mr.)",
+   "chamber": "house",
+   "district": "65",
+   "committee": "00080553",
+   "contributions": 0.0
+  },
+  {
+   "name": "Baker, Kendall L. (Mr.)",
+   "chamber": "house",
+   "district": "137",
+   "committee": "00080530",
+   "contributions": 7250.0
+  },
+  {
+   "name": "Cosper, Rodney S. (The Honorable)",
+   "chamber": "house",
+   "district": "54",
+   "committee": "00080221",
+   "contributions": 416406.26
+  },
+  {
+   "name": "Hayes, Holly C. (Ms.)",
+   "chamber": "house",
+   "district": "5",
+   "committee": "00080435",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pusich, Scott M. (Mr.)",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "00080614",
+   "contributions": 0.0
+  },
+  {
+   "name": "Scalf, Brian E. (Mr.)",
+   "chamber": "house",
+   "district": "71",
+   "committee": "00080489",
+   "contributions": 6400.0
+  },
+  {
+   "name": "Shine, Hugh D. (The Honorable)",
+   "chamber": "house",
+   "district": "55",
+   "committee": "00026513",
+   "contributions": 251070.0
+  },
+  {
+   "name": "French, Richard West (Mr.)",
+   "chamber": "house",
+   "district": "99",
+   "committee": "00070859",
+   "contributions": 442376.53
+  },
+  {
+   "name": "Hinojosa, Regina (The Honorable)",
+   "chamber": "house",
+   "district": "49",
+   "committee": "00080440",
+   "contributions": 225011.23
+  },
+  {
+   "name": "Downing, Kevin Story (Mr.)",
+   "chamber": "house",
+   "district": "60",
+   "committee": "00080141",
+   "contributions": 207830.46
+  },
+  {
+   "name": "Lopez, Adolfo D. (Mr.)",
+   "chamber": "house",
+   "district": "77",
+   "committee": "00080091",
+   "contributions": 51181.89
+  },
+  {
+   "name": "Dunaway, Aspen J. (Mr.)",
+   "chamber": "house",
+   "district": "49",
+   "committee": "00080507",
+   "contributions": 7870.0
+  },
+  {
+   "name": "Blankenship, Sandra (Mrs.)",
+   "chamber": "house",
+   "district": "54",
+   "committee": "00080129",
+   "contributions": 11116.14
+  },
+  {
+   "name": "Tarrant, Elizabeth R. (Mrs.)",
+   "chamber": "house",
+   "district": "97",
+   "committee": "00080357",
+   "contributions": 4738.0
+  },
+  {
+   "name": "Carter, Phuong L. (Mrs.)",
+   "chamber": "house",
+   "district": "54",
+   "committee": "00080363",
+   "contributions": 3459.98
+  },
+  {
+   "name": "Smith, Larry S. (Mr.)",
+   "chamber": "house",
+   "district": "54",
+   "committee": "00080158",
+   "contributions": 22044.95
+  },
+  {
+   "name": "Crawford, Joshua E. (Mr.)",
+   "chamber": "house",
+   "district": "81",
+   "committee": "00080209",
+   "contributions": 51752.49
+  },
+  {
+   "name": "Raymond, Carlos Antonio (Mr.)",
+   "chamber": "house",
+   "district": "117",
+   "committee": "00080137",
+   "contributions": 25.0
+  },
+  {
+   "name": "Scaief, Stacey E. (Mrs.)",
+   "chamber": "house",
+   "district": "71",
+   "committee": "00080516",
+   "contributions": 100.0
+  },
+  {
+   "name": "Miles, Borris Lee (The Honorable)",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "00052983",
+   "contributions": 297655.6
+  },
+  {
+   "name": "Resendez, Ruby (Ms.)",
+   "chamber": "house",
+   "district": "116",
+   "committee": "00080511",
+   "contributions": 16455.0
+  },
+  {
+   "name": "Madla, Helen (Ms.)",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "00080520",
+   "contributions": 15015.0
+  },
+  {
+   "name": "Smith, Demetria Y. (Ms.)",
+   "chamber": "house",
+   "district": "149",
+   "committee": "00080343",
+   "contributions": 0.0
+  },
+  {
+   "name": "Darnell, LaTronda T. (Mrs.)",
+   "chamber": "house",
+   "district": "120",
+   "committee": "00080505",
+   "contributions": 0.0
+  },
+  {
+   "name": "Morenoff, Daniel I. (Mr.)",
+   "chamber": "house",
+   "district": "114",
+   "committee": "00080176",
+   "contributions": 123683.84
+  },
+  {
+   "name": "Johnson, Jarvis (The Honorable)",
+   "chamber": "house",
+   "district": "139",
+   "committee": "00080580",
+   "contributions": 55578.72
+  },
+  {
+   "name": "Rodriguez III, Osbert G. (Mr.)",
+   "chamber": "senate",
+   "district": "27",
+   "committee": "00080354",
+   "contributions": 900.0
+  },
+  {
+   "name": "Corte Jr., Frank J. (Mr.)",
+   "chamber": "house",
+   "district": "122",
+   "committee": "00020036",
+   "contributions": 0.0
+  },
+  {
+   "name": "Blackshear, Jack (Mr.)",
+   "chamber": "house",
+   "district": "112",
+   "committee": "00080455",
+   "contributions": 10157.74
+  },
+  {
+   "name": "Miller, Lou (Mr.)",
+   "chamber": "house",
+   "district": "120",
+   "committee": "00031496",
+   "contributions": 11645.0
+  },
+  {
+   "name": "Quintanilla, Inocente (Mr.)",
+   "chamber": "house",
+   "district": "75",
+   "committee": "00051570",
+   "contributions": 302748.0
+  },
+  {
+   "name": "Walker, Beverley (Ms.)",
+   "chamber": "house",
+   "district": "27",
+   "committee": "00080608",
+   "contributions": 0.0
+  },
+  {
+   "name": "Perkins, Richard W. (Mr.)",
+   "chamber": "house",
+   "district": "49",
+   "committee": "00080589",
+   "contributions": 75.0
+  },
+  {
+   "name": "Spees, Matthew E. (Mr.)",
+   "chamber": "house",
+   "district": "57",
+   "committee": "00080591",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pallett, Jessica M. (Ms.)",
+   "chamber": "house",
+   "district": "94",
+   "committee": "00080599",
+   "contributions": 0.0
+  },
+  {
+   "name": "Sees, Leah G. (Ms.)",
+   "chamber": "house",
+   "district": "92",
+   "committee": "00080597",
+   "contributions": 0.0
+  },
+  {
+   "name": "Moquin, Eric B. (Mr.)",
+   "chamber": "house",
+   "district": "126",
+   "committee": "00080605",
+   "contributions": 0.0
+  },
+  {
+   "name": "Netherland, Paul E. (Mr.)",
+   "chamber": "house",
+   "district": "129",
+   "committee": "00080606",
+   "contributions": 0.0
+  },
+  {
+   "name": "Mendoza, Jesus A. (Mr.)",
+   "chamber": "house",
+   "district": "65",
+   "committee": "00068408",
+   "contributions": 1613.32
+  },
+  {
+   "name": "Wester, Rachel E. (Ms.)",
+   "chamber": "house",
+   "district": "70",
+   "committee": "00080595",
+   "contributions": 0.0
+  },
+  {
+   "name": "Dukes, Dawnna (The Honorable)",
+   "chamber": "house",
+   "district": "46",
+   "committee": "00025843",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lowder, Kenneth (Mr.)",
+   "chamber": "house",
+   "district": "128",
+   "committee": "00069914",
+   "contributions": 0.0
+  },
+  {
+   "name": "Thompson, Kevin K. (Mr.)",
+   "chamber": "house",
+   "district": "140",
+   "committee": "00080299",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kurtz, Philip S. (Mr.)",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "00058870",
+   "contributions": 0.0
+  },
+  {
+   "name": "Murphy, Matthew (Mr.)",
+   "chamber": "house",
+   "district": "147",
+   "committee": "00080556",
+   "contributions": 375.0
+  },
+  {
+   "name": "Walker, Mary Woodall (Ms.)",
+   "chamber": "house",
+   "district": "27",
+   "committee": "00080552",
+   "contributions": 0.0
+  },
+  {
+   "name": "Flanagan, Connor P. (Mr.)",
+   "chamber": "house",
+   "district": "64",
+   "committee": "00080358",
+   "contributions": 2470.0
+  },
+  {
+   "name": "De Leon, Donald (Mr.)",
+   "chamber": "house",
+   "district": "37",
+   "committee": "00080578",
+   "contributions": 1480.0
+  },
+  {
+   "name": "Greco, Paul (Mr.)",
+   "chamber": "house",
+   "district": "64",
+   "committee": "00080579",
+   "contributions": 50.0
+  },
+  {
+   "name": "Nevarez, Alfonso (The Honorable)",
+   "chamber": "house",
+   "district": "74",
+   "committee": "00067786",
+   "contributions": 146145.43
+  },
+  {
+   "name": "McDaniel, Melody B. (Mrs.)",
+   "chamber": "house",
+   "district": "128",
+   "committee": "00080448",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gruene, Katija (Ms.)",
+   "chamber": "house",
+   "district": "51",
+   "committee": "00080586",
+   "contributions": 41.0
+  },
+  {
+   "name": "Greeley, Adam M. (Mr.)",
+   "chamber": "house",
+   "district": "46",
+   "committee": "00080617",
+   "contributions": 0.0
+  },
+  {
+   "name": "Smith, Scott Wayne (Mr.)",
+   "chamber": "house",
+   "district": "108",
+   "committee": "00080610",
+   "contributions": 0.0
+  },
+  {
+   "name": "Knetsar, Henry (Mr.)",
+   "chamber": "house",
+   "district": "52",
+   "committee": "00080590",
+   "contributions": 0.0
+  },
+  {
+   "name": "Biggs, Daniel A. (Mr.)",
+   "chamber": "house",
+   "district": "137",
+   "committee": "00080596",
+   "contributions": 0.0
+  },
+  {
+   "name": "Adkins, Anthony T. (Mr.)",
+   "chamber": "house",
+   "district": "8",
+   "committee": "00080156",
+   "contributions": 2380.0
+  },
+  {
+   "name": "Tezino, Rickey (Mr.)",
+   "chamber": "house",
+   "district": "139",
+   "committee": "00080714",
+   "contributions": 0.0
+  },
+  {
+   "name": "Woolley, Beverly (Mrs.)",
+   "chamber": "house",
+   "district": "136",
+   "committee": "00024470",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ritter, Allan B. (Mr.)",
+   "chamber": "house",
+   "district": "21",
+   "committee": "00037743",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jameson, Scott L. (Mr.)",
+   "chamber": "senate",
+   "district": "8",
+   "committee": "00066315",
+   "contributions": 0.0
+  },
+  {
+   "name": "De Leon, Maricela (Ms.)",
+   "chamber": "house",
+   "district": "40",
+   "committee": "00068844",
+   "contributions": 9559.78
+  },
+  {
+   "name": "Smith, Ricky W. (Mr.)",
+   "chamber": "house",
+   "district": "18",
+   "committee": "00080069",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Schweitzer, Jon W. (Dr.)",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "00069599",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bosworth, Mitchell Ray (Mr.)",
+   "chamber": "house",
+   "district": "HD127",
+   "committee": "00080480",
+   "contributions": 3967.0
+  },
+  {
+   "name": "Dawkins, Chris (Mr.)",
+   "chamber": "house",
+   "district": "120",
+   "committee": "00080764",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kelly, Michael Shawn (Mr.)",
+   "chamber": "house",
+   "district": "150",
+   "committee": "00069766",
+   "contributions": 17755.0
+  },
+  {
+   "name": "Bryant Sr., Kenneth W. (Mr.)",
+   "chamber": "house",
+   "district": "27",
+   "committee": "00058676",
+   "contributions": 0.0
+  },
+  {
+   "name": "Longoria Jr., Oscar L. (The Honorable)",
+   "chamber": "house",
+   "district": "35",
+   "committee": "00068271",
+   "contributions": 171158.3
+  },
+  {
+   "name": "Alcala, Dora G. (The Honorable)",
+   "chamber": "house",
+   "district": "74",
+   "committee": "00055943",
+   "contributions": 0.0
+  },
+  {
+   "name": "Guajardo, Christine L. (Ms.)",
+   "chamber": "house",
+   "district": "42",
+   "committee": "00080615",
+   "contributions": 0.0
+  },
+  {
+   "name": "Arellano, Velma A. (Ms.)",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "00080413",
+   "contributions": 11425.0
+  },
+  {
+   "name": "Chu, Bryan (Mr.)",
+   "chamber": "house",
+   "district": "149",
+   "committee": "00080557",
+   "contributions": 62511.62
+  },
+  {
+   "name": "Marks, William S. (Mr.)",
+   "chamber": "house",
+   "district": "18",
+   "committee": "00080336",
+   "contributions": 0.0
+  },
+  {
+   "name": "Marcus, Heather N. (Ms.)",
+   "chamber": "house",
+   "district": "100",
+   "committee": "00080603",
+   "contributions": 0.0
+  },
+  {
+   "name": "Orr, Robin D. (Mr.)",
+   "chamber": "house",
+   "district": "58",
+   "committee": "00054639",
+   "contributions": 0.0
+  },
+  {
+   "name": "Brewer, Ray Thomas (Mr.)",
+   "chamber": "house",
+   "district": "67",
+   "committee": "00080593",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wingo, Rodney L. (Mr.)",
+   "chamber": "house",
+   "district": "97",
+   "committee": "00058938",
+   "contributions": 0.0
+  },
+  {
+   "name": "Floyd III, John T. (Mr.)",
+   "chamber": "house",
+   "district": "29",
+   "committee": "00080478",
+   "contributions": 24032.97
+  },
+  {
+   "name": "Christal, Travis K. (Mr.)",
+   "chamber": "house",
+   "district": "92",
+   "committee": "00080620",
+   "contributions": 0.0
+  },
+  {
+   "name": "Stone, Kathie Langley (Ms.)",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "00080602",
+   "contributions": 0.0
+  },
+  {
+   "name": "Olivo, Dora F. (Mrs.)",
+   "chamber": "house",
+   "district": "27",
+   "committee": "00032407",
+   "contributions": 0.0
+  },
+  {
+   "name": "Green, Ronald C. (Mr.)",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "00080972",
+   "contributions": 1600.0
+  },
+  {
+   "name": "Perry, Brent C. (Mr.)",
+   "chamber": "house",
+   "district": "129",
+   "committee": "00069568",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ford, Scott C. (Mr.)",
+   "chamber": "house",
+   "district": "127",
+   "committee": "00080362",
+   "contributions": 4050.0
+  },
+  {
+   "name": "Howard, Charles F. (Mr.)",
+   "chamber": "house",
+   "district": "26",
+   "committee": "00025105",
+   "contributions": 0.0
+  },
+  {
+   "name": "Burke, James J. (Mr.)",
+   "chamber": "house",
+   "district": "114",
+   "committee": "00080473",
+   "contributions": 5437.89
+  },
+  {
+   "name": "Rohn, Joshua R. (Mr.)",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "00081017",
+   "contributions": 0.0
+  },
+  {
+   "name": "McElligott, Joseph G. (Mr.)",
+   "chamber": "house",
+   "district": "127",
+   "committee": "00080621",
+   "contributions": 0.0
+  },
+  {
+   "name": "Owens II, Roy L. (Mr.)",
+   "chamber": "house",
+   "district": "146",
+   "committee": "00081028",
+   "contributions": 200.0
+  },
+  {
+   "name": "Jones, Shawn W. (Mr.)",
+   "chamber": "house",
+   "district": "66",
+   "committee": "00080592",
+   "contributions": 0.0
+  },
+  {
+   "name": "Merwin, Emmett Gary (Mr.)",
+   "chamber": "house",
+   "district": "70",
+   "committee": "00080549",
+   "contributions": 0.0
+  },
+  {
+   "name": "Carter Lee, Erica S. (Mrs.)",
+   "chamber": "house",
+   "district": "146",
+   "committee": "00081003",
+   "contributions": 15153.63
+  },
+  {
+   "name": "Mieskoski, Darren J. (Mr.)",
+   "chamber": "house",
+   "district": "136",
+   "committee": "00080594",
+   "contributions": 0.0
+  },
+  {
+   "name": "Vela III, Jose (Mr.)",
+   "chamber": "house",
+   "district": "46",
+   "committee": "00081137",
+   "contributions": 24291.0
+  },
+  {
+   "name": "Smith, Todd A. (Mr.)",
+   "chamber": "house",
+   "district": "92",
+   "committee": "00032415",
+   "contributions": 0.0
+  },
+  {
+   "name": "Cole, Sheryl N. (Mrs.)",
+   "chamber": "house",
+   "district": "46",
+   "committee": "00081083",
+   "contributions": 60190.0
+  },
+  {
+   "name": "Orakwue, Nnamdi (Mr.)",
+   "chamber": "house",
+   "district": "46",
+   "committee": "00081161",
+   "contributions": 2925.0
+  },
+  {
+   "name": "Thierry, Shawn Nicole (The Honorable)",
+   "chamber": "house",
+   "district": "146",
+   "committee": "00065781",
+   "contributions": 68156.38
+  },
+  {
+   "name": "Stroman, Joey R. (Mr.)",
+   "chamber": "house",
+   "district": "7",
+   "committee": "00062638",
+   "contributions": 0.0
+  },
+  {
+   "name": "Yarbrough Camarena, Kendra J. (Mrs.)",
+   "chamber": "house",
+   "district": "138",
+   "committee": "00065547",
+   "contributions": 0.0
+  },
+  {
+   "name": "Cortez, Ana L. (Mrs.)",
+   "chamber": "house",
+   "district": "HD46",
+   "committee": "00081159",
+   "contributions": 25.0
+  },
+  {
+   "name": "Reposa, Adam T. (Mr.)",
+   "chamber": "house",
+   "district": "46",
+   "committee": "00080629",
+   "contributions": 0.0
+  },
+  {
+   "name": "Nelson, Wesley Shane (Mr.)",
+   "chamber": "house",
+   "district": "96",
+   "committee": "00080554",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wentworth, Patrick D. (Mr.)",
+   "chamber": "house",
+   "district": "97",
+   "committee": "00080601",
+   "contributions": 0.0
+  },
+  {
+   "name": "Anderson, Chester Daniel (Mr.)",
+   "chamber": "house",
+   "district": "82",
+   "committee": "00069901",
+   "contributions": 0.0
+  }
+ ]
+}

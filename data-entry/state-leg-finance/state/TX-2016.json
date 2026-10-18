@@ -1,0 +1,2011 @@
+{
+ "state": "TX",
+ "cycle": 2016,
+ "source": "Texas Ethics Commission campaign finance database (itemized + unitemized contributions)",
+ "dataThrough": "12/31/2016",
+ "senate": {
+  "1": [
+   {
+    "name": "Hughes, D. Bryan (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1743800.08,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Creighton, C. Brandon (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Garcia, Sylvia R. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 400192.42,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Taylor, Larry W. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Nelson, Jane (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 998328.3,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Miles, Borris Lee (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 297655.6,
+    "expenditures": null
+   },
+   {
+    "name": "Rohn, Joshua R. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Kolkhorst, Lois W. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 790386.45,
+    "expenditures": null
+   },
+   {
+    "name": "Stone, Kathie Langley (Ms.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Uresti, Carlos I. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1174113.91,
+    "expenditures": null
+   },
+   {
+    "name": "Flores, Peter P. (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 26221.44,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Hinojosa, Juan (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1212444.19,
+    "expenditures": null
+   },
+   {
+    "name": "Arellano, Velma A. (Ms.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11425,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Zaffirini, Judith (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 805542,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Birdwell, Brian D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 507030.16,
+    "expenditures": null
+   },
+   {
+    "name": "Collins, Michael (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3348.18,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Buckingham, Dawn C. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1578961.76,
+    "expenditures": null
+   },
+   {
+    "name": "Leeder, Virginia L. (Ms.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 23377,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Menendez, Jose (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1917694.79,
+    "expenditures": null
+   },
+   {
+    "name": "Pusich, Scott M. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Lucio Jr., Eduardo A. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 597922.51,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Perry, Charles L. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 598885.86,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Rodriguez, Jose Roberto (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 569482.05,
+    "expenditures": null
+   }
+  ]
+ },
+ "house": {
+  "1": [
+   {
+    "name": "VanDeaver, Gary W. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 363650.5,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "Flynn, Dan (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 548130.08,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "Bell Jr., Cecil I. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 130630.88,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Gooden, Lance C. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 430149.63,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Hefner, Joseph Cole (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 312440.58,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Schaefer, Matthew R. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 72100,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Dean, Jay (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 409532.13,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Cook, Byron Curtis (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1024152,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Paddie Sr., Christopher D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Wray, John C. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 191428.68,
+    "expenditures": null
+   },
+   {
+    "name": "Richter, Steven Charles (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Clardy, Travis P. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 406337.67,
+    "expenditures": null
+   },
+   {
+    "name": "Wright, Stephen J. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 27484.28,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Kacal, Kyle J. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 547468.52,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Schubert, Leighton (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 293055.18,
+    "expenditures": null
+   },
+   {
+    "name": "Webster Sr., Cecil R. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 40383.64,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Raney, John N. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 477657.02,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Keough, Mark J. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 96056.49,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Metcalf, William T. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 212072.88,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "Cyrier, John P. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 733287.97,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Bailes IV, Ernest J. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 520273.33,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "White, James E. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 96583.48,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Wilson, Terry M. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 195633.77,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Phelan, Matthew M. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Deshotel, Joseph D. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 177531.37,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Criss, Lloyd W. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 31033.7,
+    "expenditures": null
+   },
+   {
+    "name": "Faircloth, Wayne (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 520663.5,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Bonnen, James Gregory (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Bonnen, Dennis H. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 475080.1,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Miller, Dana F. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 153933.7,
+    "expenditures": null
+   },
+   {
+    "name": "DeMerchant, Laquitta S. (Mrs.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 29885.68,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Reynolds, Ronald E. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 49580.22,
+    "expenditures": null
+   },
+   {
+    "name": "Bryant Sr., Kenneth W. (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Zerwas, John M. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Thompson, Edward L. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Floyd III, John T. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 24032.97,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Morrison, Geanie W. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 182155.81,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "Guillen, Ryan A. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 256368,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Hunter, Todd A. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1632934.12,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "Holland, Justin A. (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 672257.21,
+    "expenditures": null
+   },
+   {
+    "name": "Jacobs, Karen O. (Ms.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 46770.61,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Herrero, Abel (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 237355.01,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "Longoria Jr., Oscar L. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 171158.3,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "Munoz Jr., Sergio (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 384870.27,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "Oliveira, Rene O. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 414773.99,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Lucio III, Eduardo A. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 326063.17,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "Martinez, Armando A. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 157017.25,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Canales, Terry (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 126107.65,
+    "expenditures": null
+   },
+   {
+    "name": "De Leon, Maricela (Ms.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9559.78,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "Guerra, Roberto D. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 316032.9,
+    "expenditures": null
+   },
+   {
+    "name": "DeShazo, Hilda Garza (Ms.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 85838.74,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "Raymond, Richard E. Pena (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 473798.64,
+    "expenditures": null
+   }
+  ],
+  "43": [
+   {
+    "name": "Lozano, Jose M. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 468378.66,
+    "expenditures": null
+   },
+   {
+    "name": "Garcia Utley, Marisa Yvette (Mrs.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 35067,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "Kuempel, John L. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 419811.05,
+    "expenditures": null
+   },
+   {
+    "name": "Bohmfalk, Robert Milton (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 100,
+    "expenditures": null
+   }
+  ],
+  "45": [
+   {
+    "name": "Isaac, Jason A. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "Ludlow, Kevin P. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Nila, Francisco G. (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 12591.44,
+    "expenditures": null
+   },
+   {
+    "name": "Dukes, Dawnna (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Greeley, Adam M. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "47": [
+   {
+    "name": "Workman, Paul D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Jordan, Ann M. (Ms.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 22562.34,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "Howard, Donna S. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 155774.03,
+    "expenditures": null
+   },
+   {
+    "name": "Easton, Bennett N. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "49": [
+   {
+    "name": "Hinojosa, Regina (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 225011.23,
+    "expenditures": null
+   },
+   {
+    "name": "Perkins, Richard W. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 75,
+    "expenditures": null
+   }
+  ],
+  "50": [
+   {
+    "name": "Israel, Celia M. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 260070.7,
+    "expenditures": null
+   },
+   {
+    "name": "Ruiz, Ceasar (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3454.5,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "Rodriguez, Eduardo R. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 194763.75,
+    "expenditures": null
+   },
+   {
+    "name": "Gruene, Katija (Ms.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 41,
+    "expenditures": null
+   }
+  ],
+  "52": [
+   {
+    "name": "Gonzales, Larry D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 354127.48,
+    "expenditures": null
+   },
+   {
+    "name": "Knetsar, Henry (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "53": [
+   {
+    "name": "Murr, Andrew S. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 222169.24,
+    "expenditures": null
+   }
+  ],
+  "54": [
+   {
+    "name": "Cosper, Rodney S. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 416406.26,
+    "expenditures": null
+   },
+   {
+    "name": "Blankenship, Sandra (Mrs.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11116.14,
+    "expenditures": null
+   }
+  ],
+  "55": [
+   {
+    "name": "Shine, Hugh D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 251070,
+    "expenditures": null
+   }
+  ],
+  "56": [
+   {
+    "name": "Anderson, Charles (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 88745.95,
+    "expenditures": null
+   },
+   {
+    "name": "Deuvall, Clifford A. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "57": [
+   {
+    "name": "Ashby, Trenton E. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 662392.42,
+    "expenditures": null
+   }
+  ],
+  "58": [
+   {
+    "name": "Burns, DeWayne C. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 444890.79,
+    "expenditures": null
+   }
+  ],
+  "59": [
+   {
+    "name": "Sheffield, J. D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 375518.2,
+    "expenditures": null
+   }
+  ],
+  "60": [
+   {
+    "name": "Lang, Mike W. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 441908.74,
+    "expenditures": null
+   }
+  ],
+  "61": [
+   {
+    "name": "King, Phillip S. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 310821.44,
+    "expenditures": null
+   }
+  ],
+  "62": [
+   {
+    "name": "Phillips, Lawrence A. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 177324.84,
+    "expenditures": null
+   }
+  ],
+  "63": [
+   {
+    "name": "Parker IV, Nathaniel W. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 542999.37,
+    "expenditures": null
+   }
+  ],
+  "64": [
+   {
+    "name": "Stucky, Lynn D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 304082.95,
+    "expenditures": null
+   },
+   {
+    "name": "Flanagan, Connor P. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2470,
+    "expenditures": null
+   }
+  ],
+  "65": [
+   {
+    "name": "Simmons, Ronald E. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 365392.45,
+    "expenditures": null
+   },
+   {
+    "name": "Mendoza, Jesus A. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1613.32,
+    "expenditures": null
+   }
+  ],
+  "66": [
+   {
+    "name": "Shaheen, Matt F. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 138018.79,
+    "expenditures": null
+   },
+   {
+    "name": "Nelson, Gnanse JC (Ms.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1925,
+    "expenditures": null
+   }
+  ],
+  "67": [
+   {
+    "name": "Leach, Jeff C. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 353098.07,
+    "expenditures": null
+   },
+   {
+    "name": "Coleman, Gregory S. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17540.5,
+    "expenditures": null
+   }
+  ],
+  "68": [
+   {
+    "name": "Springer Jr., Drew Alan (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 212555.13,
+    "expenditures": null
+   }
+  ],
+  "69": [
+   {
+    "name": "Frank, James B. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 225331.33,
+    "expenditures": null
+   }
+  ],
+  "70": [
+   {
+    "name": "Sanford, William S. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 141210.52,
+    "expenditures": null
+   },
+   {
+    "name": "Bryant Jr., John R. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3441.36,
+    "expenditures": null
+   }
+  ],
+  "71": [
+   {
+    "name": "LoPachin, Pierce Taylor (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1189.12,
+    "expenditures": null
+   },
+   {
+    "name": "Lambert, Standard D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 226238.26,
+    "expenditures": null
+   }
+  ],
+  "72": [
+   {
+    "name": "Darby, Drew (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 740658.64,
+    "expenditures": null
+   }
+  ],
+  "74": [
+   {
+    "name": "Nevarez, Alfonso (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 146145.43,
+    "expenditures": null
+   }
+  ],
+  "75": [
+   {
+    "name": "Gonzalez, Mary Edna (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 334068.9,
+    "expenditures": null
+   }
+  ],
+  "76": [
+   {
+    "name": "Blanco, Cesar J. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 153023.63,
+    "expenditures": null
+   }
+  ],
+  "77": [
+   {
+    "name": "Ortega, Evelina (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 165976.02,
+    "expenditures": null
+   }
+  ],
+  "78": [
+   {
+    "name": "Moody, Joseph E. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 141695.31,
+    "expenditures": null
+   },
+   {
+    "name": "Lane, Jeffrey A. (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 980,
+    "expenditures": null
+   }
+  ],
+  "79": [
+   {
+    "name": "Pickett, Joseph C. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 371116.82,
+    "expenditures": null
+   }
+  ],
+  "80": [
+   {
+    "name": "King, Tracy O. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 208725.59,
+    "expenditures": null
+   }
+  ],
+  "81": [
+   {
+    "name": "Landgraf, Brooks Frederick (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 426117.08,
+    "expenditures": null
+   }
+  ],
+  "82": [
+   {
+    "name": "Craddick, Tom (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 243638.27,
+    "expenditures": null
+   }
+  ],
+  "83": [
+   {
+    "name": "Burrows, Dustin R. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 96371.33,
+    "expenditures": null
+   }
+  ],
+  "84": [
+   {
+    "name": "Frullo, John M. (Mr.)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 663322.5,
+    "expenditures": null
+   }
+  ],
+  "85": [
+   {
+    "name": "Stephenson, Phyllip Wayne (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 113822.09,
+    "expenditures": null
+   },
+   {
+    "name": "Davis IV, John L. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1592,
+    "expenditures": null
+   }
+  ],
+  "86": [
+   {
+    "name": "Smithee, John T. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 98600,
+    "expenditures": null
+   }
+  ],
+  "87": [
+   {
+    "name": "Price IV, Walter T. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 769423.78,
+    "expenditures": null
+   }
+  ],
+  "88": [
+   {
+    "name": "King, Kenneth P. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 262346.27,
+    "expenditures": null
+   }
+  ],
+  "89": [
+   {
+    "name": "Laubenberg, Jodie A. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 300865.51,
+    "expenditures": null
+   },
+   {
+    "name": "Hamilton, Jacqueline D. (Ms.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 21025.94,
+    "expenditures": null
+   }
+  ],
+  "90": [
+   {
+    "name": "Romero Jr., Ramon (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 215624.73,
+    "expenditures": null
+   }
+  ],
+  "91": [
+   {
+    "name": "Klick, Stephanie D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 54737.66,
+    "expenditures": null
+   }
+  ],
+  "92": [
+   {
+    "name": "Stickland, Jonathan S. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 943777.16,
+    "expenditures": null
+   },
+   {
+    "name": "Leach, Kimberlea K. (Mrs.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8410.6,
+    "expenditures": null
+   },
+   {
+    "name": "Sees, Leah G. (Ms.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Christal, Travis K. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "93": [
+   {
+    "name": "Bean, Nancy C. (Rev.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 23105.37,
+    "expenditures": null
+   },
+   {
+    "name": "Krause, Matthew H. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 226321.2,
+    "expenditures": null
+   }
+  ],
+  "94": [
+   {
+    "name": "Tinderholt, Tony D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 341088.05,
+    "expenditures": null
+   },
+   {
+    "name": "Pallett, Jessica M. (Ms.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "95": [
+   {
+    "name": "Collier, Nicole D. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 142288,
+    "expenditures": null
+   },
+   {
+    "name": "McDaniel, Albert G. (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1025,
+    "expenditures": null
+   }
+  ],
+  "96": [
+   {
+    "name": "Zedler, William W. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 152923.15,
+    "expenditures": null
+   },
+   {
+    "name": "Lee, Sandra (Mrs.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13874.99,
+    "expenditures": null
+   }
+  ],
+  "97": [
+   {
+    "name": "Goldman, Craig (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 277114.27,
+    "expenditures": null
+   },
+   {
+    "name": "Tarrant, Elizabeth R. (Mrs.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4738,
+    "expenditures": null
+   }
+  ],
+  "98": [
+   {
+    "name": "Capriglione, Giovanni S. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 248085.39,
+    "expenditures": null
+   },
+   {
+    "name": "Chibli, Maricela Sanchez (Mrs.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10540,
+    "expenditures": null
+   }
+  ],
+  "99": [
+   {
+    "name": "Geren, Charles L. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1554949.39,
+    "expenditures": null
+   },
+   {
+    "name": "Hawkins, Daniel H. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "100": [
+   {
+    "name": "Johnson, Eric L. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 250008.55,
+    "expenditures": null
+   },
+   {
+    "name": "Marcus, Heather N. (Ms.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "101": [
+   {
+    "name": "Turner, Christopher G. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 443760.13,
+    "expenditures": null
+   },
+   {
+    "name": "Garza, Carlos H. (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 17203,
+    "expenditures": null
+   }
+  ],
+  "102": [
+   {
+    "name": "Koop, Linda L. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 588056.11,
+    "expenditures": null
+   },
+   {
+    "name": "Irvin, Laura (Ms.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 74385.71,
+    "expenditures": null
+   }
+  ],
+  "103": [
+   {
+    "name": "Anchia, Rafael M. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 282142.71,
+    "expenditures": null
+   }
+  ],
+  "104": [
+   {
+    "name": "Alonzo, Roberto R. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 160944.35,
+    "expenditures": null
+   }
+  ],
+  "105": [
+   {
+    "name": "Anderson, Rodney Earl (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 43.31,
+    "expenditures": null
+   },
+   {
+    "name": "Meza, Thresa A. (Ms.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 414951.49,
+    "expenditures": null
+   }
+  ],
+  "106": [
+   {
+    "name": "Fallon, Patrick E. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 155118,
+    "expenditures": null
+   },
+   {
+    "name": "Caston, Rodney L. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "107": [
+   {
+    "name": "Sheets, Kenneth F. (Mr.)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 950777.21,
+    "expenditures": null
+   },
+   {
+    "name": "Neave, Victoria (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 649831.46,
+    "expenditures": null
+   }
+  ],
+  "108": [
+   {
+    "name": "Meyer, Morgan D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 550778.45,
+    "expenditures": null
+   },
+   {
+    "name": "Smith, Scott Wayne (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "109": [
+   {
+    "name": "Giddings, Helen (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 223183.56,
+    "expenditures": null
+   },
+   {
+    "name": "Russell, Alissa D. (Mrs.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "110": [
+   {
+    "name": "Rose, Toni N. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 196513.37,
+    "expenditures": null
+   }
+  ],
+  "111": [
+   {
+    "name": "Davis, Yvonne (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 283426.38,
+    "expenditures": null
+   },
+   {
+    "name": "Jackson, Chad O. (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1543,
+    "expenditures": null
+   }
+  ],
+  "112": [
+   {
+    "name": "Blackshear, Jack (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10157.74,
+    "expenditures": null
+   }
+  ],
+  "113": [
+   {
+    "name": "Burkett, Cindy G. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1007899.01,
+    "expenditures": null
+   },
+   {
+    "name": "Bowers, Rhetta A. (Mrs.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 44472.63,
+    "expenditures": null
+   }
+  ],
+  "114": [
+   {
+    "name": "Villalba, Jason (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Burke, James J. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5437.89,
+    "expenditures": null
+   }
+  ],
+  "115": [
+   {
+    "name": "Rinaldi, Matthew D. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 465977.31,
+    "expenditures": null
+   },
+   {
+    "name": "Ocker, Dorotha M. (Ms.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 49078.66,
+    "expenditures": null
+   }
+  ],
+  "116": [
+   {
+    "name": "Arevalo, Diana (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 90396.54,
+    "expenditures": null
+   }
+  ],
+  "117": [
+   {
+    "name": "Galindo III, Ricardo (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 431853.72,
+    "expenditures": null
+   },
+   {
+    "name": "Cortez, Philip (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 478363.15,
+    "expenditures": null
+   }
+  ],
+  "118": [
+   {
+    "name": "Uresti, Tomas (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 182560.13,
+    "expenditures": null
+   },
+   {
+    "name": "Lujan III, John (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 287687.92,
+    "expenditures": null
+   }
+  ],
+  "119": [
+   {
+    "name": "Gutierrez, Rolando (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 176343.62,
+    "expenditures": null
+   }
+  ],
+  "120": [
+   {
+    "name": "Thompson, Laura R. (Ms.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 4125,
+    "expenditures": null
+   }
+  ],
+  "121": [
+   {
+    "name": "Straus III, Joe R. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 697606.87,
+    "expenditures": null
+   }
+  ],
+  "122": [
+   {
+    "name": "Larson, Lyle T. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 445489.74,
+    "expenditures": null
+   }
+  ],
+  "123": [
+   {
+    "name": "Bernal, Diego M. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 219823.24,
+    "expenditures": null
+   }
+  ],
+  "124": [
+   {
+    "name": "Minjarez, Ina M. (Rep.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 272680.96,
+    "expenditures": null
+   }
+  ],
+  "125": [
+   {
+    "name": "Rodriguez, Justin (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 235085.28,
+    "expenditures": null
+   }
+  ],
+  "126": [
+   {
+    "name": "Roberts, Kevin (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Dawson-Thomas, Joy (Mrs.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7296.5,
+    "expenditures": null
+   }
+  ],
+  "127": [
+   {
+    "name": "Huberty, Dan (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Ford, Scott C. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 4050,
+    "expenditures": null
+   },
+   {
+    "name": "McElligott, Joseph G. (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "128": [
+   {
+    "name": "Cain, Briscoe R. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 368287.86,
+    "expenditures": null
+   },
+   {
+    "name": "Lowder, Kenneth (Mr.)",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "129": [
+   {
+    "name": "Paul, Dennis R. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 155151.33,
+    "expenditures": null
+   }
+  ],
+  "130": [
+   {
+    "name": "Oliverson, Thomas J. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "131": [
+   {
+    "name": "Allen, Alma A. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 104338.94,
+    "expenditures": null
+   }
+  ],
+  "132": [
+   {
+    "name": "Schofield, Michael (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 155390.08,
+    "expenditures": null
+   }
+  ],
+  "133": [
+   {
+    "name": "Murphy, James R. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "134": [
+   {
+    "name": "Davis, Sarah M. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1046043.41,
+    "expenditures": null
+   },
+   {
+    "name": "Rose, Benjamin Harwood (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 218617.37,
+    "expenditures": null
+   }
+  ],
+  "135": [
+   {
+    "name": "Elkins, Gary (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 160545.83,
+    "expenditures": null
+   },
+   {
+    "name": "Ybanez, Jesse A. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4897.63,
+    "expenditures": null
+   }
+  ],
+  "136": [
+   {
+    "name": "Dale, Anthony W. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 303301.26,
+    "expenditures": null
+   },
+   {
+    "name": "Gordon, Paul R. (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2320.8,
+    "expenditures": null
+   }
+  ],
+  "137": [
+   {
+    "name": "Wu, Eugene Y. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 301835.09,
+    "expenditures": null
+   },
+   {
+    "name": "Baker, Kendall L. (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7250,
+    "expenditures": null
+   }
+  ],
+  "138": [
+   {
+    "name": "Bohac, Dwayne A. (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 183870.66,
+    "expenditures": null
+   }
+  ],
+  "139": [
+   {
+    "name": "Johnson, Jarvis (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 55578.72,
+    "expenditures": null
+   }
+  ],
+  "140": [
+   {
+    "name": "Walle Jr., Armando L. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 124996.79,
+    "expenditures": null
+   }
+  ],
+  "141": [
+   {
+    "name": "Thompson, Senfronia (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 572195.33,
+    "expenditures": null
+   }
+  ],
+  "142": [
+   {
+    "name": "Dutton Jr., Harold V. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 107763.06,
+    "expenditures": null
+   }
+  ],
+  "144": [
+   {
+    "name": "Perez, Mary Ann G. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 363622.25,
+    "expenditures": null
+   },
+   {
+    "name": "Pena, Gilbert (The Honorable)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 121799.9,
+    "expenditures": null
+   }
+  ],
+  "145": [
+   {
+    "name": "Alvarado, Carol (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 277480.63,
+    "expenditures": null
+   }
+  ],
+  "146": [
+   {
+    "name": "Thierry, Shawn Nicole (The Honorable)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 68156.38,
+    "expenditures": null
+   }
+  ],
+  "147": [
+   {
+    "name": "Coleman, Garnet F. (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 417925.44,
+    "expenditures": null
+   },
+   {
+    "name": "Murphy, Matthew (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 375,
+    "expenditures": null
+   }
+  ],
+  "148": [
+   {
+    "name": "Farrar, Jessica (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 225430.77,
+    "expenditures": null
+   }
+  ],
+  "149": [
+   {
+    "name": "Vo, Hubert (The Honorable)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 245039.75,
+    "expenditures": null
+   },
+   {
+    "name": "Chu, Bryan (Mr.)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 62511.62,
+    "expenditures": null
+   }
+  ],
+  "150": [
+   {
+    "name": "Swanson, Valoree H. (The Honorable)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 352276.62,
+    "expenditures": null
+   },
+   {
+    "name": "Kelly, Michael Shawn (Mr.)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17755,
+    "expenditures": null
+   }
+  ]
+ }
+}

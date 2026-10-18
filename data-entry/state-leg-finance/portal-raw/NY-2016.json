@@ -1,0 +1,1556 @@
+{
+ "state": "NY",
+ "cycle": 2016,
+ "source": "New York State Board of Elections disclosure data (contributions, schedules A\u2013D)",
+ "fetched": "2026-10-17",
+ "dataThrough": "12/31/2016",
+ "candidates": [
+  {
+   "name": "Alison Boak",
+   "committee": "Ali Boak For Senate",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": 268839.21
+  },
+  {
+   "name": "Alice Cancel",
+   "committee": "Alice Cancel Progressive For Assembly",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 23059.42
+  },
+  {
+   "name": "Andrew J. Lanza",
+   "committee": "Andrew Lanza for Staten Island",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 325766.16
+  },
+  {
+   "name": "Ann C. Lewis",
+   "committee": "Ann C Lewis",
+   "chamber": "senate",
+   "district": "56",
+   "contributions": 1037.0
+  },
+  {
+   "name": "Ann C. Lewis",
+   "committee": "Ann C. Lewis",
+   "chamber": "senate",
+   "district": "56",
+   "contributions": 1250.0
+  },
+  {
+   "name": "Kenan S. Baldridge",
+   "committee": "Baldridge For State Senate Ny54",
+   "chamber": "senate",
+   "district": "54",
+   "contributions": 42842.84
+  },
+  {
+   "name": "Barbara S. Lifton",
+   "committee": "Barbara Lifton For Assembly",
+   "chamber": "house",
+   "district": "125",
+   "contributions": 28567.11
+  },
+  {
+   "name": "Michael R. Benedetto",
+   "committee": "Benedetto For Assembly",
+   "chamber": "house",
+   "district": "82",
+   "contributions": 127607.74
+  },
+  {
+   "name": "Rodneyse Bichotte",
+   "committee": "Bichotte For Assembly",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 177951.91
+  },
+  {
+   "name": "Philip M. Boyle",
+   "committee": "Boyle For Senate",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 308547.09
+  },
+  {
+   "name": "Karl Brabenec",
+   "committee": "Brabenec For Assembly",
+   "chamber": "house",
+   "district": "98",
+   "contributions": 104689.31
+  },
+  {
+   "name": "Brian D. Miller",
+   "committee": "Brian Miller For Assembly",
+   "chamber": "house",
+   "district": "101",
+   "contributions": 16285.0
+  },
+  {
+   "name": "Bryan Jung",
+   "committee": "Bryan  Jung",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 100.0
+  },
+  {
+   "name": "Carlos G. Giron",
+   "committee": "Carlos Giron For New York",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 160.0
+  },
+  {
+   "name": "Carmen E. Arroyo",
+   "committee": "Carmen E. Arroyo For Assembly",
+   "chamber": "house",
+   "district": "84",
+   "contributions": 48971.99
+  },
+  {
+   "name": "Catharine M. Young",
+   "committee": "Cathy Young for Senate",
+   "chamber": "senate",
+   "district": "57",
+   "contributions": 550406.8
+  },
+  {
+   "name": "Charles Barron",
+   "committee": "Charles Barron For Assembly",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 4000.0
+  },
+  {
+   "name": "Christopher T. McGrath",
+   "committee": "Chris Mcgrath For Senate",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 638654.62
+  },
+  {
+   "name": "Kenneth P. Lavalle",
+   "committee": "Citizens Committee to Re-Elect Senator Ken Lavalle",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 203957.51
+  },
+  {
+   "name": "Fred W. Thiele Jr.",
+   "committee": "Citizens For Fred Thiele",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 18825.0
+  },
+  {
+   "name": "Joseph E. Robach",
+   "committee": "Citizens For Joseph Robach",
+   "chamber": "senate",
+   "district": "56",
+   "contributions": 332013.61
+  },
+  {
+   "name": "Melinda Crump",
+   "committee": "Citizens For Melinda Crump",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 2400.0
+  },
+  {
+   "name": "Sharon Ball",
+   "committee": "Citizens For Sharon Ball",
+   "chamber": "senate",
+   "district": "52",
+   "contributions": 24761.57
+  },
+  {
+   "name": "John J. Bonacic",
+   "committee": "Citizens To Elect John Bonacic",
+   "chamber": "senate",
+   "district": "42",
+   "contributions": 357943.42
+  },
+  {
+   "name": "Aileen M. Gunther",
+   "committee": "Committee To Elect Aileen Gunther",
+   "chamber": "house",
+   "district": "100",
+   "contributions": 63312.0
+  },
+  {
+   "name": "Christopher S. Friend",
+   "committee": "Committee To Elect Christopher S. Friend",
+   "chamber": "house",
+   "district": "124",
+   "contributions": 8370.63
+  },
+  {
+   "name": "Jeffrion L. Aubry",
+   "committee": "Committee To Elect Jeffrion Aubry",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 52969.0
+  },
+  {
+   "name": "Joseph Torres",
+   "committee": "Committee To Elect Joseph Torres For 105th Assembly",
+   "chamber": "house",
+   "district": "105",
+   "contributions": 130.0
+  },
+  {
+   "name": "Mary Beth Walsh",
+   "committee": "Committee To Elect Mary Beth Walsh",
+   "chamber": "house",
+   "district": "112",
+   "contributions": 48777.17
+  },
+  {
+   "name": "Matthew J. Titone",
+   "committee": "Committee To Elect Matthew J. Titone",
+   "chamber": "house",
+   "district": "61",
+   "contributions": 63474.12
+  },
+  {
+   "name": "Peter N. Magistrale",
+   "committee": "Committee To Elect Peter Magistrale",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 22018.61
+  },
+  {
+   "name": "Philip Ramos",
+   "committee": "Committee To Elect Philip Ramos",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 160013.0
+  },
+  {
+   "name": "Pramilla S. Malick",
+   "committee": "Committee To Elect Pramilla Malick",
+   "chamber": "senate",
+   "district": "42",
+   "contributions": 26225.18
+  },
+  {
+   "name": "Terrence P. Murphy",
+   "committee": "Committee To Elect Terrence Murphy",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": 594895.94
+  },
+  {
+   "name": "Walter T. Mosley III",
+   "committee": "Committee To Elect Walter T. Mosley",
+   "chamber": "house",
+   "district": "57",
+   "contributions": 104027.1
+  },
+  {
+   "name": "Joseph D. Morelle",
+   "committee": "Committee To Re-Elect Assemblyman Joe Morelle",
+   "chamber": "house",
+   "district": "136",
+   "contributions": 778880.63
+  },
+  {
+   "name": "Michael Conigliaro",
+   "committee": "Conigliaro For Senate",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 15995.0
+  },
+  {
+   "name": "Marcos A. Crespo",
+   "committee": "Crespo For Assembly",
+   "chamber": "house",
+   "district": "85",
+   "contributions": 253210.5
+  },
+  {
+   "name": "Michael J. Cusick",
+   "committee": "Cusick For Assembly",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 204573.65
+  },
+  {
+   "name": "Dan Quart",
+   "committee": "Dan Quart For New York City",
+   "chamber": "house",
+   "district": "73",
+   "contributions": 137840.0
+  },
+  {
+   "name": "David Carlucci",
+   "committee": "David Carlucci For New York",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 488937.58
+  },
+  {
+   "name": "Dean E. Hart",
+   "committee": "Dean Hart For Ny 2016",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 81400.0
+  },
+  {
+   "name": "Deborah L. Slinkosky",
+   "committee": "Deborah L. Slinkosky",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 9090.44
+  },
+  {
+   "name": "Erik Martin Dilan",
+   "committee": "Dilan For Assembly",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 75550.0
+  },
+  {
+   "name": "Martin Malave Dilan",
+   "committee": "Dilan For Senate",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 224500.03
+  },
+  {
+   "name": "Anthony Durso",
+   "committee": "D'Urso For Assembly",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 56675.05
+  },
+  {
+   "name": "Elaine R. Phillips",
+   "committee": "Elaine Phillips For Senate",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 356238.02
+  },
+  {
+   "name": "Arlene G. Feldmeier",
+   "committee": "Feldmeier For Assembly",
+   "chamber": "house",
+   "district": "101",
+   "contributions": 10445.02
+  },
+  {
+   "name": "Gary D. Finch",
+   "committee": "Finch For Assembly",
+   "chamber": "house",
+   "district": "126",
+   "contributions": 134567.95
+  },
+  {
+   "name": "Thomas J. Abinanti",
+   "committee": "Friends Of Abinanti For Assembly",
+   "chamber": "house",
+   "district": "92",
+   "contributions": 35610.0
+  },
+  {
+   "name": "Alan N. Zwirn",
+   "committee": "Friends Of Alan Zwirn",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 19122.0
+  },
+  {
+   "name": "Alicia L. Hyndman",
+   "committee": "Friends Of Alicia Hyndman",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 157818.66
+  },
+  {
+   "name": "Amy R. Paulin",
+   "committee": "Friends Of Amy Paulin",
+   "chamber": "house",
+   "district": "88",
+   "contributions": 250824.0
+  },
+  {
+   "name": "Andrew R. Garbarino",
+   "committee": "Friends Of Andrew Garbarino",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 102075.0
+  },
+  {
+   "name": "Andrew P. Raia",
+   "committee": "Friends Of Andrew Raia",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 107726.95
+  },
+  {
+   "name": "Anthony P. Eramo",
+   "committee": "Friends of Anthony Eramo",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 69011.66
+  },
+  {
+   "name": "Anthony P. Eramo",
+   "committee": "Friends Of Anthony Eramo",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 287690.31
+  },
+  {
+   "name": "Anthony J. Brindisi",
+   "committee": "Friends Of Anthony J. Brindisi",
+   "chamber": "house",
+   "district": "119",
+   "contributions": 130727.38
+  },
+  {
+   "name": "Aron B. Wieder",
+   "committee": "Friends Of Aron B. Wieder",
+   "chamber": "house",
+   "district": "98",
+   "contributions": 57205.0
+  },
+  {
+   "name": "Aron B. Wieder",
+   "committee": "Friends Of Aron Wieder",
+   "chamber": "house",
+   "district": "98",
+   "contributions": 16800.0
+  },
+  {
+   "name": "Jeffrey Dinowitz",
+   "committee": "Friends Of Assemblyman Jeffrey Dinowitz",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 109977.0
+  },
+  {
+   "name": "Barbara A. Baer",
+   "committee": "Friends Of Barbara Baer",
+   "chamber": "house",
+   "district": "133",
+   "contributions": 56002.22
+  },
+  {
+   "name": "Bill Magee",
+   "committee": "Friends Of Bill Magee",
+   "chamber": "house",
+   "district": "121",
+   "contributions": 84362.0
+  },
+  {
+   "name": "Bill Perkins",
+   "committee": "Friends Of Bill Perkins",
+   "chamber": "senate",
+   "district": "30",
+   "contributions": 37963.54
+  },
+  {
+   "name": "D. Billy Jones",
+   "committee": "Friends Of Billy Jones",
+   "chamber": "house",
+   "district": "115",
+   "contributions": 82981.8
+  },
+  {
+   "name": "Bob Zinck",
+   "committee": "Friends Of Bob Zinck",
+   "chamber": "house",
+   "district": "138",
+   "contributions": 13374.2
+  },
+  {
+   "name": "Brian Barnwell",
+   "committee": "Friends Of Brian Barnwell",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 80381.0
+  },
+  {
+   "name": "Brian Higbie",
+   "committee": "Friends Of Brian Higbie",
+   "chamber": "house",
+   "district": "94",
+   "contributions": 12861.46
+  },
+  {
+   "name": "Brian M. Kolb",
+   "committee": "Friends Of Brian Kolb",
+   "chamber": "house",
+   "district": "131",
+   "contributions": 298657.64
+  },
+  {
+   "name": "Carl E. Heastie",
+   "committee": "Friends Of Carl E Heastie",
+   "chamber": "house",
+   "district": "83",
+   "contributions": 1048882.66
+  },
+  {
+   "name": "Carl L. Marcellino",
+   "committee": "Friends of Carl L. Marcellino",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 286746.41
+  },
+  {
+   "name": "Carrie Woerner",
+   "committee": "Friends Of Carrie Woerner (Focw = Friends Of Carrie Woerner)",
+   "chamber": "house",
+   "district": "113",
+   "contributions": 134914.53
+  },
+  {
+   "name": "Chad A. Lupinacci",
+   "committee": "Friends Of Chad A. Lupinacci",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 94292.89
+  },
+  {
+   "name": "Chad Putman",
+   "committee": "Friends Of Chad Putman - Nys Senate",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 18052.69
+  },
+  {
+   "name": "Christopher F. Davis",
+   "committee": "Friends Of Christopher F. Davis",
+   "chamber": "senate",
+   "district": "44",
+   "contributions": 41522.01
+  },
+  {
+   "name": "Mark Cipolla",
+   "committee": "Friends Of Cipolla For New York State Senate",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 30648.94
+  },
+  {
+   "name": "Daniel J. Odonnell",
+   "committee": "Friends Of Daniel O'Donnell",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 129296.35
+  },
+  {
+   "name": "Daniel Ramos",
+   "committee": "Friends Of Daniel Ramos 2016",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 460.0
+  },
+  {
+   "name": "Dan Quart",
+   "committee": "Friends Of Dan Quart",
+   "chamber": "house",
+   "district": "73",
+   "contributions": 193580.0
+  },
+  {
+   "name": "David Buchwald",
+   "committee": "Friends Of David Buchwald",
+   "chamber": "house",
+   "district": "93",
+   "contributions": 127632.0
+  },
+  {
+   "name": "David I. Weprin",
+   "committee": "Friends Of David Weprin",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 222818.0
+  },
+  {
+   "name": "Dean E. Hart",
+   "committee": "Friends Of Dean Hart",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 103340.16
+  },
+  {
+   "name": "Dean Murray",
+   "committee": "Friends Of Dean Murray",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 52949.15
+  },
+  {
+   "name": "Deborah J. Glick",
+   "committee": "Friends Of Deborah Glick",
+   "chamber": "house",
+   "district": "66",
+   "contributions": 177134.35
+  },
+  {
+   "name": "Diane M. Dwire",
+   "committee": "Friends Of Diane Dwire",
+   "chamber": "house",
+   "district": "126",
+   "contributions": 56801.45
+  },
+  {
+   "name": "Didi Barrett",
+   "committee": "Friends Of Didi Barrett For Assembly",
+   "chamber": "house",
+   "district": "106",
+   "contributions": 183415.01
+  },
+  {
+   "name": "Donna A. Lupardo",
+   "committee": "Friends Of Donna Lupardo",
+   "chamber": "house",
+   "district": "123",
+   "contributions": 108850.0
+  },
+  {
+   "name": "Dorothy A. Styk",
+   "committee": "Friends Of Dorothy Styk",
+   "chamber": "house",
+   "district": "135",
+   "contributions": 25681.96
+  },
+  {
+   "name": "Dorothy A. Styk",
+   "committee": "Friends Of Dorothy Styk",
+   "chamber": "house",
+   "district": "135",
+   "contributions": 18917.49
+  },
+  {
+   "name": "Dov Hikind",
+   "committee": "Friends Of Dov Hikind",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 318130.0
+  },
+  {
+   "name": "Edward C. Braunstein",
+   "committee": "Friends Of Edward Braunstein",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 55445.0
+  },
+  {
+   "name": "Ellen C. Jaffee",
+   "committee": "Friends Of Ellen Jaffee",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 90715.57
+  },
+  {
+   "name": "Felix W. Ortiz",
+   "committee": "Friends Of Felix W. Ortiz",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 5000.0
+  },
+  {
+   "name": "Floyd Rayburn",
+   "committee": "Friends Of Floyd Rayburn For Nys Senate",
+   "chamber": "senate",
+   "district": "54",
+   "contributions": 28390.17
+  },
+  {
+   "name": "Francisco P. Moya",
+   "committee": "Friends Of Francisco Moya",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 138522.68
+  },
+  {
+   "name": "Frank Skartados",
+   "committee": "Friends of Frank Skartados",
+   "chamber": "house",
+   "district": "104",
+   "contributions": 17531.0
+  },
+  {
+   "name": "Glenn Nocera",
+   "committee": "Friends Of Glenn Nocera",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 1556.0
+  },
+  {
+   "name": "Gregory Purdy",
+   "committee": "Friends Of Gregory Purdy",
+   "chamber": "house",
+   "district": "95",
+   "contributions": 1255.01
+  },
+  {
+   "name": "Harry B. Bronson",
+   "committee": "Friends Of Harry Bronson",
+   "chamber": "house",
+   "district": "138",
+   "contributions": 242710.98
+  },
+  {
+   "name": "Helene E. Weinstein",
+   "committee": "Friends Of Helene Weinstein #7",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 57275.0
+  },
+  {
+   "name": "Jamaal T. Bailey",
+   "committee": "Friends Of Jamaal T. Bailey",
+   "chamber": "senate",
+   "district": "36",
+   "contributions": 275579.87
+  },
+  {
+   "name": "J. Gary Pretlow",
+   "committee": "Friends Of James Gary Pretlow",
+   "chamber": "house",
+   "district": "89",
+   "contributions": 60250.0
+  },
+  {
+   "name": "James G. Skoufis",
+   "committee": "Friends Of James Skoufis",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 146153.0
+  },
+  {
+   "name": "Jarret N. Freeman",
+   "committee": "Friends Of Jarret Freeman",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 1412.18
+  },
+  {
+   "name": "Jason A. Perdue",
+   "committee": "Friends Of Jason A. Perdue",
+   "chamber": "house",
+   "district": "150",
+   "contributions": 4260.16
+  },
+  {
+   "name": "Jeffrey J. Ferretti",
+   "committee": "Friends Of Jeffrey Ferretti",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 1100.0
+  },
+  {
+   "name": "Jesse E. Hamilton",
+   "committee": "Friends Of Jesse Hamilton",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 179513.81
+  },
+  {
+   "name": "Jesus Gonzalez",
+   "committee": "Friends Of Jesus Gonzalez",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 810.0
+  },
+  {
+   "name": "Jo Anne Simon",
+   "committee": "Friends Of Jo Anne Simon",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 49445.63
+  },
+  {
+   "name": "Joe Errigo",
+   "committee": "Friends Of Joe Errigo",
+   "chamber": "house",
+   "district": "133",
+   "contributions": 200.0
+  },
+  {
+   "name": "John E. Brooks",
+   "committee": "Friends of John Brooks",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 64267.45
+  },
+  {
+   "name": "John Byrne",
+   "committee": "Friends Of John Byrne",
+   "chamber": "house",
+   "district": "116",
+   "contributions": 27440.91
+  },
+  {
+   "name": "John D. Ceretto",
+   "committee": "Friends Of John Ceretto",
+   "chamber": "house",
+   "district": "145",
+   "contributions": 91862.91
+  },
+  {
+   "name": "John J. Flanagan",
+   "committee": "Friends of John Flanagan",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 1245934.22
+  },
+  {
+   "name": "Jose Rivera",
+   "committee": "Friends Of Jose Rivera",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 57795.0
+  },
+  {
+   "name": "Robert M. Bogle",
+   "committee": "Friends Of Judge Robert G Bogle",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 40950.0
+  },
+  {
+   "name": "Kevin M. Byrne",
+   "committee": "Friends Of Kevin Byrne",
+   "chamber": "house",
+   "district": "94",
+   "contributions": 53092.43
+  },
+  {
+   "name": "Kevin A. Cahill",
+   "committee": "Friends Of Kevin Cahill",
+   "chamber": "house",
+   "district": "103",
+   "contributions": 232544.33
+  },
+  {
+   "name": "Kevin A. Mulverhill",
+   "committee": "Friends Of Kevin Mulverhill",
+   "chamber": "house",
+   "district": "115",
+   "contributions": 211823.58
+  },
+  {
+   "name": "Kevin S. Parker",
+   "committee": "Friends Of Kevin Parker",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 254261.0
+  },
+  {
+   "name": "Liz Krueger",
+   "committee": "Friends Of Liz Krueger",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 216513.74
+  },
+  {
+   "name": "Marc W. Butler",
+   "committee": "Friends Of Marc Butler",
+   "chamber": "house",
+   "district": "118",
+   "contributions": 52945.0
+  },
+  {
+   "name": "Mark Gjonaj",
+   "committee": "Friends Of Mark Gjonaj Inc.",
+   "chamber": "house",
+   "district": "80",
+   "contributions": 311139.9
+  },
+  {
+   "name": "Mark C. Johns",
+   "committee": "Friends Of Mark Johns",
+   "chamber": "house",
+   "district": "135",
+   "contributions": 41220.95
+  },
+  {
+   "name": "Matthew W. Malin",
+   "committee": "Friends Of Matthew Malin (Fmm)",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 10.0
+  },
+  {
+   "name": "Michael A. Blake",
+   "committee": "Friends Of Michael Blake (Fomb)",
+   "chamber": "house",
+   "district": "79",
+   "contributions": 277678.74
+  },
+  {
+   "name": "Michael J. Fitzpatrick",
+   "committee": "Friends of Michael Fitzpatrick",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 36275.0
+  },
+  {
+   "name": "Michaelle C. Solages",
+   "committee": "Friends Of Michaelle Solages",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 61428.58
+  },
+  {
+   "name": "Michael A. Simanowitz",
+   "committee": "Friends Of Michael Simanowitz",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 72781.0
+  },
+  {
+   "name": "Michael Venditto",
+   "committee": "Friends of Michael Venditto",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 12210.0
+  },
+  {
+   "name": "Michele R. Titus",
+   "committee": "Friends Of Michele R. Titus",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 22950.0
+  },
+  {
+   "name": "Monica P. Wallace",
+   "committee": "Friends Of Monica Wallace",
+   "chamber": "house",
+   "district": "143",
+   "contributions": 131253.01
+  },
+  {
+   "name": "N. Nick Perry",
+   "committee": "Friends Of Nick Perry",
+   "chamber": "house",
+   "district": "58",
+   "contributions": 152042.14
+  },
+  {
+   "name": "Patricia A. Fahy",
+   "committee": "Friends Of Patricia Fahy",
+   "chamber": "house",
+   "district": "109",
+   "contributions": 108544.0
+  },
+  {
+   "name": "Patricia A. Ritchie",
+   "committee": "Friends Of Patricia Ritchie",
+   "chamber": "senate",
+   "district": "48",
+   "contributions": 125207.45
+  },
+  {
+   "name": "Peter A. Lawrence",
+   "committee": "Friends Of Peter Lawrence",
+   "chamber": "house",
+   "district": "134",
+   "contributions": 34821.35
+  },
+  {
+   "name": "Rebecca A. Seawright",
+   "committee": "Friends Of Rebecca Seawright",
+   "chamber": "house",
+   "district": "76",
+   "contributions": 240342.84
+  },
+  {
+   "name": "Rich Funke",
+   "committee": "Friends Of Rich Funke",
+   "chamber": "senate",
+   "district": "55",
+   "contributions": 517143.54
+  },
+  {
+   "name": "Robert C. Carroll",
+   "committee": "Friends Of Robert Carroll",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 113993.06
+  },
+  {
+   "name": "Robert C. Carroll",
+   "committee": "Friends Of Robert Carroll",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 52645.17
+  },
+  {
+   "name": "Robert J. Rodriguez",
+   "committee": "Friends Of Robert J. Rodriguez",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 291616.0
+  },
+  {
+   "name": "Robert M. Bogle",
+   "committee": "Friends Of Robert M Bogle",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 22725.0
+  },
+  {
+   "name": "Roxanne J. Persaud",
+   "committee": "Friends Of Roxanne J Persaud",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 17168.0
+  },
+  {
+   "name": "Sara K. Niccoli",
+   "committee": "Friends Of Sara Niccoli",
+   "chamber": "senate",
+   "district": "46",
+   "contributions": 278175.57
+  },
+  {
+   "name": "Neil D. Breslin",
+   "committee": "Friends Of Senator Breslin",
+   "chamber": "senate",
+   "district": "44",
+   "contributions": 230131.02
+  },
+  {
+   "name": "Velmanette Montgomery",
+   "committee": "Friends Of Senator Montgomery",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 44662.71
+  },
+  {
+   "name": "James L. Seward",
+   "committee": "Friends Of Senator Seward",
+   "chamber": "senate",
+   "district": "51",
+   "contributions": 537105.67
+  },
+  {
+   "name": "Shawn Cullinane",
+   "committee": "Friends Of Shawn Cullinane",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 42287.12
+  },
+  {
+   "name": "Shelley Mayer",
+   "committee": "Friends Of Shelley Mayer",
+   "chamber": "house",
+   "district": "90",
+   "contributions": 175194.0
+  },
+  {
+   "name": "Spencer B. Rumsey",
+   "committee": "Friends Of Spencer Rumsey",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 3140.0
+  },
+  {
+   "name": "Steven Cymbrowitz",
+   "committee": "Friends of Steven Cymbrowitz",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 172292.9
+  },
+  {
+   "name": "Terry Gipson",
+   "committee": "Friends Of Terry Gipson",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 357553.77
+  },
+  {
+   "name": "Toby Ann Stavisky",
+   "committee": "Friends Of Toby Stavisky",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 321665.0
+  },
+  {
+   "name": "Todd D. Kaminsky",
+   "committee": "Friends Of Todd Kaminsky",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 127233.84
+  },
+  {
+   "name": "Tom Murphy",
+   "committee": "Friends Of Tom Murphy",
+   "chamber": "house",
+   "district": "110",
+   "contributions": 40.0
+  },
+  {
+   "name": "Travis P. Bourgeois",
+   "committee": "Friends Of Travis Bourgeois",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 775.0
+  },
+  {
+   "name": "Victor M. Pichardo",
+   "committee": "Friends Of Victor Pichardo",
+   "chamber": "house",
+   "district": "86",
+   "contributions": 248025.0
+  },
+  {
+   "name": "Vivian E. Cook",
+   "committee": "Friends Of Vivian E. Cook",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 7000.0
+  },
+  {
+   "name": "Brian F. Curran",
+   "committee": "Friends To Elect Brian Curran",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 87819.0
+  },
+  {
+   "name": "Patrick M. Gallivan",
+   "committee": "Gallivan For Senate",
+   "chamber": "senate",
+   "district": "59",
+   "contributions": 385341.1
+  },
+  {
+   "name": "Gary B. Port",
+   "committee": "Gary Port For Assembly",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 100.0
+  },
+  {
+   "name": "George A. Amedore Jr.",
+   "committee": "George Amedore For Senate",
+   "chamber": "senate",
+   "district": "46",
+   "contributions": 527880.53
+  },
+  {
+   "name": "Joseph M. Giglio",
+   "committee": "Giglio For Assembly",
+   "chamber": "house",
+   "district": "148",
+   "contributions": 11049.0
+  },
+  {
+   "name": "Michael R. Godlewski",
+   "committee": "Godlewski For Assembly",
+   "chamber": "house",
+   "district": "112",
+   "contributions": 13346.64
+  },
+  {
+   "name": "Andrew D. Hevesi",
+   "committee": "Hevesi For Assembly",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 59603.0
+  },
+  {
+   "name": "Brad M. Hoylman",
+   "committee": "Hoylman-Sigal For Senate",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 403249.5
+  },
+  {
+   "name": "Jack Hayes",
+   "committee": "Jack Hayes For The People",
+   "chamber": "house",
+   "district": "103",
+   "contributions": 4394.0
+  },
+  {
+   "name": "Christopher L. Jacobs",
+   "committee": "Jacobs for State Senate",
+   "chamber": "senate",
+   "district": "60",
+   "contributions": 985512.63
+  },
+  {
+   "name": "Joseph Torres",
+   "committee": "Joe Torres For Assembly",
+   "chamber": "house",
+   "district": "105",
+   "contributions": 0.09
+  },
+  {
+   "name": "Joseph Maldonado",
+   "committee": "Joseph  Maldonado",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 5000.0
+  },
+  {
+   "name": "Angelo J. Morinello",
+   "committee": "Judge Angelo Morinello For Assembly",
+   "chamber": "house",
+   "district": "145",
+   "contributions": 292210.55
+  },
+  {
+   "name": "Julia P. Killian",
+   "committee": "Julie Killian For Nys Senate",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 416281.66
+  },
+  {
+   "name": "Maria E. Kelso",
+   "committee": "Kelso For Assembly",
+   "chamber": "house",
+   "district": "101",
+   "contributions": 17875.77
+  },
+  {
+   "name": "Kenan S. Baldridge",
+   "committee": "Kenan S Baldridge",
+   "chamber": "senate",
+   "district": "54",
+   "contributions": 700.0
+  },
+  {
+   "name": "Timothy M. Kennedy",
+   "committee": "Kennedy For Senate",
+   "chamber": "senate",
+   "district": "63",
+   "contributions": 643567.0
+  },
+  {
+   "name": "Kieran Michael Lalor",
+   "committee": "Lalor For Assembly",
+   "chamber": "house",
+   "district": "105",
+   "contributions": 22380.0
+  },
+  {
+   "name": "George Latimer",
+   "committee": "Latimer For Senate",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 756204.35
+  },
+  {
+   "name": "Latoya Joyner",
+   "committee": "Latoya Joyner For Assembly",
+   "chamber": "house",
+   "district": "77",
+   "contributions": 60421.05
+  },
+  {
+   "name": "Lee Hyson",
+   "committee": "Lee Hyson State Senate Candidate",
+   "chamber": "senate",
+   "district": "57",
+   "contributions": 8801.72
+  },
+  {
+   "name": "Linda B. Rosenthal",
+   "committee": "Linda Rosenthal For Assembly",
+   "chamber": "house",
+   "district": "67",
+   "contributions": 138210.0
+  },
+  {
+   "name": "Thomas A. Loughran",
+   "committee": "Loughran For Nys Senate",
+   "chamber": "senate",
+   "district": "61",
+   "contributions": 33658.32
+  },
+  {
+   "name": "Maritza Davila",
+   "committee": "Maritza Davila For Assembly",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 107020.0
+  },
+  {
+   "name": "Menachem M. Raitport",
+   "committee": "Menachem M. Raitport",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 6588.0
+  },
+  {
+   "name": "Michael H. Ranzenhofer",
+   "committee": "Mike Ranzenhofer for State Senate",
+   "chamber": "senate",
+   "district": "61",
+   "contributions": 476916.77
+  },
+  {
+   "name": "Leroy G. Comrie Jr.",
+   "committee": "New Yorkers For Leroy Comrie",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 132989.75
+  },
+  {
+   "name": "Mark Gjonaj",
+   "committee": "New Yorkers For Mark Gjonaj",
+   "chamber": "house",
+   "district": "80",
+   "contributions": 250.0
+  },
+  {
+   "name": "Robert J. Rodriguez",
+   "committee": "New Yorkers For Robert Rodriguez",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 610.0
+  },
+  {
+   "name": "Michael J. Norris",
+   "committee": "Norris For Assembly",
+   "chamber": "house",
+   "district": "144",
+   "contributions": 70053.95
+  },
+  {
+   "name": "Robert G. Ortt",
+   "committee": "Ortt For State Senate",
+   "chamber": "senate",
+   "district": "62",
+   "contributions": 314100.49
+  },
+  {
+   "name": "Pamela Harris",
+   "committee": "Pamela Harris For Assembly",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 190152.5
+  },
+  {
+   "name": "Pamela Jo Hunter",
+   "committee": "Pamela Hunter Of Nys Assembly",
+   "chamber": "house",
+   "district": "128",
+   "contributions": 79729.77
+  },
+  {
+   "name": "Pamela A. Helming",
+   "committee": "Pam Helming For State Senate",
+   "chamber": "senate",
+   "district": "54",
+   "contributions": 214565.57
+  },
+  {
+   "name": "Brian P. Kavanagh",
+   "committee": "People For Brian Kavanagh",
+   "chamber": "house",
+   "district": "74",
+   "contributions": 116755.0
+  },
+  {
+   "name": "Marisol Alcantara",
+   "committee": "People For Marisol Alcantara",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 247152.0
+  },
+  {
+   "name": "Jose R. Peralta",
+   "committee": "Peralta For Senate",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 245544.0
+  },
+  {
+   "name": "Roxanne J. Persaud",
+   "committee": "Persaud For Senate",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 147995.0
+  },
+  {
+   "name": "Peter A. Vroman",
+   "committee": "Pete Vroman For Assembly",
+   "chamber": "house",
+   "district": "111",
+   "contributions": 18776.88
+  },
+  {
+   "name": "Rebecca Harary",
+   "committee": "Rebecca Harary For Nys Assembly Dba Team Harary",
+   "chamber": "house",
+   "district": "73",
+   "contributions": 166132.0
+  },
+  {
+   "name": "Latrice M. Walker",
+   "committee": "Re-Elect Assembly Member Latrice Walker",
+   "chamber": "house",
+   "district": "55",
+   "contributions": 126548.65
+  },
+  {
+   "name": "Diana Richardson",
+   "committee": "Richardson For Assembly",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 124307.75
+  },
+  {
+   "name": "Ron Kim",
+   "committee": "Ron Kim For Assembly",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 3700.0
+  },
+  {
+   "name": "Ron Kim",
+   "committee": "Ron Kim For New York",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 192515.0
+  },
+  {
+   "name": "Ron Kim",
+   "committee": "Ron Kim For Nyc",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 34505.0
+  },
+  {
+   "name": "Ruben Diaz Sr.",
+   "committee": "Ruben Diaz For State Senate",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 108355.16
+  },
+  {
+   "name": "John J. Salka",
+   "committee": "Salka For Assembly",
+   "chamber": "house",
+   "district": "121",
+   "contributions": 150922.6
+  },
+  {
+   "name": "Angelo L. Santabarbara",
+   "committee": "Santabarbara For Assembly",
+   "chamber": "house",
+   "district": "111",
+   "contributions": 85553.33
+  },
+  {
+   "name": "Sara K. Niccoli",
+   "committee": "Sara K. Niccoli",
+   "chamber": "senate",
+   "district": "46",
+   "contributions": 12402.57
+  },
+  {
+   "name": "Sean M. Ryan",
+   "committee": "Sean Ryan For Assembly",
+   "chamber": "house",
+   "district": "149",
+   "contributions": 105257.7
+  },
+  {
+   "name": "Luis R. Sepulveda",
+   "committee": "Sepulveda For Assembly",
+   "chamber": "house",
+   "district": "87",
+   "contributions": 104334.38
+  },
+  {
+   "name": "Jose M. Serrano",
+   "committee": "Serrano For State Senate",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 34000.0
+  },
+  {
+   "name": "Shaun P. Francis",
+   "committee": "Shaun Francis For New York",
+   "chamber": "senate",
+   "district": "43",
+   "contributions": 87659.0
+  },
+  {
+   "name": "Amber A. Small",
+   "committee": "Small For Senate",
+   "chamber": "senate",
+   "district": "60",
+   "contributions": 228354.36
+  },
+  {
+   "name": "Daniel G. Stec",
+   "committee": "Stec For Assembly",
+   "chamber": "house",
+   "district": "114",
+   "contributions": 75758.37
+  },
+  {
+   "name": "Phillip G. Steck",
+   "committee": "Steck For Assembly",
+   "chamber": "house",
+   "district": "110",
+   "contributions": 84746.54
+  },
+  {
+   "name": "Steven F. McLaughlin",
+   "committee": "Steve Mclaughlin For Assembly",
+   "chamber": "house",
+   "district": "107",
+   "contributions": 26742.5
+  },
+  {
+   "name": "James N. Tedisco",
+   "committee": "Tedisco For Senate",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 160825.24
+  },
+  {
+   "name": "Tony Avella",
+   "committee": "Tony Avella For New York",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 208284.0
+  },
+  {
+   "name": "Tremaine S. Wright",
+   "committee": "Tremaine Wright For Assembly",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 79070.33
+  },
+  {
+   "name": "David J. Valesky",
+   "committee": "Valesky For Senate",
+   "chamber": "senate",
+   "district": "53",
+   "contributions": 226554.64
+  },
+  {
+   "name": "Michael Venditto",
+   "committee": "Venditto for State Senate",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 355104.0
+  },
+  {
+   "name": "Kenneth P. Zebrowski",
+   "committee": "Zebrowski For Assembly",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 68938.0
+  }
+ ]
+}

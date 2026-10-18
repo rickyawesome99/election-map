@@ -238,8 +238,20 @@ export const genericBallotPolls: GenericBallotPoll[] = [
   { pollster: "Economist/YouGov", startDate: "2026-09-25", endDate: "2026-09-28", sample: 1007, population: "LV", dem: 53, rep: 38, diff: -15 },
   { pollster: "Cygnal", startDate: "2026-10-01", endDate: "2026-10-02", sample: 1500, population: "LV", dem: 52, rep: 43, diff: -9 },
   { pollster: "CBS News", startDate: "2026-09-30", endDate: "2026-10-02", sample: 1572, population: "LV", dem: 54, rep: 45, diff: -9 },
+  { pollster: "Morning Consult", startDate: "2026-09-28", endDate: "2026-10-04", sample: 17659, population: "LV", dem: 50, rep: 43, diff: -7 },
   { pollster: "Morning Consult", startDate: "2026-10-02", endDate: "2026-10-04", sample: null, population: "LV", dem: 50, rep: 43, diff: -7 },
   { pollster: "Pew Research", startDate: "2026-09-28", endDate: "2026-10-04", sample: 3917, population: "RV", dem: 44, rep: 36, diff: -8 },
   { pollster: "Economist/YouGov", startDate: "2026-10-02", endDate: "2026-10-05", sample: 1173, population: "LV", dem: 51, rep: 40, diff: -11 },
-  { pollster: "Reuters/Ipsos", startDate: "2026-09-30", endDate: "2026-10-05", sample: 3526, population: "RV", dem: 44, rep: 37, diff: -7 }
+  { pollster: "Reuters/Ipsos", startDate: "2026-09-30", endDate: "2026-10-05", sample: 3526, population: "RV", dem: 44, rep: 37, diff: -7 },
+  { pollster: "Financial Times", startDate: "2026-10-03", endDate: "2026-10-06", sample: 2275, population: "LV", dem: 52, rep: 44, diff: -8 },
+  { pollster: "THP/MM**", startDate: "2026-10-04", endDate: "2026-10-06", sample: 780, population: "LV", dem: 54, rep: 42, diff: -12 },
+  { pollster: "Center Square/NPI**", startDate: "2026-10-05", endDate: "2026-10-07", sample: 2527, population: "RV", dem: 47, rep: 42, diff: -5 },
+  { pollster: "Rasmussen Reports", startDate: "2026-10-01", endDate: "2026-10-07", sample: 1781, population: "LV", dem: 49, rep: 44, diff: -5 },
+  { pollster: "NewsNation", startDate: "2026-10-05", endDate: "2026-10-09", sample: 974, population: "LV", dem: 49, rep: 42, diff: -7 },
+  { pollster: "Cygnal", startDate: "2026-10-07", endDate: "2026-10-10", sample: 1500, population: "LV", dem: 51, rep: 42, diff: -9 },
+  { pollster: "Morning Consult", startDate: "2026-10-05", endDate: "2026-10-11", sample: 17654, population: "LV", dem: 50, rep: 43, diff: -7 },
+  { pollster: "FOX News", startDate: "2026-10-09", endDate: "2026-10-12", sample: 1202, population: "RV", dem: 54, rep: 45, diff: -9 },
+  { pollster: "Economist/YouGov", startDate: "2026-10-10", endDate: "2026-10-12", sample: 1176, population: "LV", dem: 49, rep: 41, diff: -8 },
+  { pollster: "AP/NORC**", startDate: "2026-10-08", endDate: "2026-10-12", sample: 925, population: "RV", dem: 47, rep: 38, diff: -9 },
+  { pollster: "RMG Research**", startDate: "2026-10-12", endDate: "2026-10-13", sample: null, population: "LV", dem: 54, rep: 43, diff: -11 }
 ];

@@ -23,6 +23,7 @@ import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useTopo } from "@/lib/useTopology";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
 
 // Each tab body is its own chunk, loaded only when that tab is the active one — the county
 // map and the district finder are the heaviest pieces of client
@@ -324,7 +325,8 @@ export default function ForecastMap({
     <div className="min-h-screen" style={{ background: t.bg }}>
 
       {/* ── Page content ── */}
-      <div className="px-3 pt-1 pb-3 sm:px-4 sm:pt-1 sm:pb-4 md:px-6 md:pt-1 md:pb-5">
+      {/* Historical uses the detail pages' content column (PAGE_CONTAINER) instead of the full-width padding */}
+      <div className={activeTab === "historical" ? "pb-10" : "px-3 pt-1 pb-3 sm:px-4 sm:pt-1 sm:pb-4 md:px-6 md:pt-1 md:pb-5"}>
 
         {/* ── Forecast hero + flat race-type header (forecast tab only) ── */}
         {activeTab === "forecast" && (
@@ -345,26 +347,6 @@ export default function ForecastMap({
               flipped={flipped}
             />
             <RaceTypeHeader raceType={raceType} onSelect={selectRaceType} count={data.length} />
-          </div>
-        )}
-
-        {/* ── Historical hero ── */}
-        {activeTab === "historical" && (
-          <div
-            className="-mx-3 -mt-1 px-3 pb-2 pt-3 sm:-mx-4 sm:px-4 md:-mx-6 md:px-6"
-            style={{
-              background: "linear-gradient(to bottom, transparent 0%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, var(--party-rep) 7%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 6%, var(--app-bg)) 100%)",
-            }}
-          >
-            <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-              Election Archive
-            </div>
-            <h1
-              className="mt-1 text-2xl font-bold tracking-tight md:text-[1.65rem]"
-              style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}
-            >
-              Historical Results
-            </h1>
           </div>
         )}
 
@@ -715,6 +697,7 @@ export default function ForecastMap({
         </div>
 
         {/* ── Counties (owns its own hero/controls/map/results layout) ── */}
+        {/* Owns the historical hero (title + controls) as well as the dashboard, map and results */}
         {activeTab === "historical" && <NationalCountyMap theme={t} />}
 
         {/* ── Mobile selected-race panel (below map) ── */}

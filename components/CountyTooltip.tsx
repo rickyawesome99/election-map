@@ -62,6 +62,9 @@ const headlineStyle = { fontFamily: "var(--font-serif)", fontWeight: 700, fontSi
 export default function CountyTooltip(props: CountyTooltipProps) {
   if (props.variant === "panel") return <CountyPanel {...props} />;
   const { title, subtitle, boxRef, className = "", variant = "tooltip", aside, footer } = props;
+  // The card (the national map's floating selected box) is a step smaller than the hover tooltip.
+  const isCard = variant === "card";
+  const headline = isCard ? { ...headlineStyle, fontSize: 24 } : headlineStyle;
 
   const nameText = <div className="min-w-0 text-[10.5px] font-bold uppercase tracking-[0.07em]" style={{ color: "var(--app-text-primary)", textWrap: "balance" }}>{title}</div>;
   const name = aside ? <div className="flex items-start justify-between gap-2">{nameText}<div className="shrink-0">{aside}</div></div> : nameText;
@@ -104,10 +107,10 @@ export default function CountyTooltip(props: CountyTooltipProps) {
     const fig = signed(margin, dem.party, rep.party);
     const other = otherShare(dem, rep, totalVotes);
     const row = (who: string, pct: number, votes: number | null, color: string, muted = false) => (
-      <div className="grid items-baseline gap-x-2.5" style={{ gridTemplateColumns: "minmax(0,1fr) auto auto" }}>
+      <div className={`grid items-baseline ${isCard ? "gap-x-2" : "gap-x-2.5"}`} style={{ gridTemplateColumns: "minmax(0,1fr) auto auto" }}>
         <span className="truncate" style={{ color, fontWeight: muted ? 500 : 600 }}>{who}</span>
         <span className="text-right" style={{ color, fontWeight: muted ? 500 : 700 }}>{pct.toFixed(1)}%</span>
-        <span className="min-w-[4.6em] text-right text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{votes != null ? fmtInt(votes) : "—"}</span>
+        <span className={`min-w-[4.6em] text-right ${isCard ? "text-[10px]" : "text-[11px]"}`} style={{ color: "var(--app-text-very-muted)" }}>{votes != null ? fmtInt(votes) : "—"}</span>
       </div>
     );
     body = (
@@ -115,15 +118,15 @@ export default function CountyTooltip(props: CountyTooltipProps) {
         {name}
         {sub}
         <div className="flex items-end justify-between gap-3">
-          <div className="mt-1 tabular-nums" style={{ ...headlineStyle, color: fig.color }}>{fig.text}</div>
+          <div className="mt-1 tabular-nums" style={{ ...headline, color: fig.color }}>{fig.text}</div>
           {totalVotes != null && <div className="pb-[3px] text-right">{votesLabel}{votesFigure(totalVotes)}</div>}
         </div>
-        <div className="mt-2 flex h-1.5 overflow-hidden rounded-full" style={{ background: "var(--app-tab-bg)" }}>
+        <div className={`${isCard ? "mt-1.5 h-1" : "mt-2 h-1.5"} flex overflow-hidden rounded-full`} style={{ background: "var(--app-tab-bg)" }}>
           <i style={{ width: `${dem.pct}%`, background: partyFill(dem.party) }} />
           <i style={{ width: `${other.pct}%`, background: "var(--app-text-very-muted)", opacity: 0.45 }} />
           <i style={{ width: `${rep.pct}%`, background: partyFill(rep.party) }} />
         </div>
-        <div className="mt-2 grid gap-[3px] text-[12px] tabular-nums">
+        <div className={`grid tabular-nums ${isCard ? "mt-1.5 gap-px text-[11px]" : "mt-2 gap-[3px] text-[12px]"}`}>
           {row(lastName(dem.name), dem.pct, dem.votes, partyText(dem.party))}
           {row(lastName(rep.name), rep.pct, rep.votes, partyText(rep.party))}
           {other.show && row("Other", other.pct, other.votes, "var(--app-text-very-muted)", true)}
@@ -136,7 +139,7 @@ export default function CountyTooltip(props: CountyTooltipProps) {
     return (
       <div ref={boxRef} className={className} data-county-card="card" style={{ color: "var(--app-text-primary)" }}>
         {body}
-        {footer && <div className="mt-2">{footer}</div>}
+        {footer && <div className="mt-1.5">{footer}</div>}
       </div>
     );
   }
@@ -259,13 +262,13 @@ function CountyPanel(props: CountyTooltipProps) {
 
 /** The close control, for `aside`: a 28px target with a large ×, pulled into the header line
  *  by negative margins so it doesn't make the line taller. */
-export function CountyCardClose({ onClick, label = "Close county details" }: { onClick: () => void; label?: string }) {
+export function CountyCardClose({ onClick, label = "Close county details", small = false }: { onClick: () => void; label?: string; small?: boolean }) {
   return (
     <button
       type="button"
       onClick={onClick}
       aria-label={label}
-      className="-my-1 flex h-7 w-7 items-center justify-center rounded text-[22px] leading-none hover:bg-[var(--app-tab-bg)]"
+      className={`-my-1 flex items-center justify-center rounded leading-none hover:bg-[var(--app-tab-bg)] ${small ? "-mr-1 h-6 w-6 text-[18px]" : "h-7 w-7 text-[22px]"}`}
       style={{ color: "var(--app-text-muted)" }}
     >
       ×

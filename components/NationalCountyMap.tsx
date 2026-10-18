@@ -18,6 +18,8 @@ import { FIPS_TO_STATE } from "@/lib/fips";
 import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { normalizeGeographyWinding, type WindableGeography } from "@/lib/geoWinding";
 import { popVoteData } from "@/data/popVoteData";
+import Segmented from "@/components/MarketSegmented";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
 
 type RaceType = MapOffice;
 type GeoLevel = MapLevel;
@@ -72,6 +74,10 @@ const MAP_LEGEND = [
   { color: "#c04040", label: "Likely R" },
   { color: "#8b1a1a", label: "Safe R" },
 ];
+
+const STAT_LABEL = "mb-1 text-[10px] font-bold uppercase tracking-wide";
+const SELECT_CLASS = "rounded-md px-2.5 py-1.5 text-xs font-semibold";
+const SELECT_STYLE = { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" };
 
 const UNIT_LABEL: Record<GeoLevel, string> = {
   county: "Counties",
@@ -362,369 +368,270 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   };
 
   return (
-    <div className="flex w-full flex-col gap-3">
-
-      {/* ── Mobile summary — the page title is owned by the historical hero above ── */}
-      <div className="md:hidden">
-        <div className="text-xs" style={{ color: t.textMuted }}>
-          {stats.totalVotes.toLocaleString()} votes counted · {year} {raceLabel}
-        </div>
-      </div>
-
-      {/* ── Mobile control bar (above the map) ── */}
+    <>
+      {/* ── Hero: title left, controls (geography toggle, office + year dropdowns) right ── */}
       <div
-        className="flex items-center gap-2.5 overflow-x-auto rounded-xl px-3 py-2 scrollbar-none md:hidden"
-        style={{ background: t.legendBg, border: `1px solid ${t.border}` }}
+        style={{
+          background: "linear-gradient(to bottom, transparent 0%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, var(--party-rep) 7%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 6%, var(--app-bg)) 100%)",
+        }}
       >
-        <nav className="flex shrink-0 items-center gap-1.5">
-          <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>Geo</span>
-          {GEO_LEVELS.map((gl) => (
-            <button
-              key={gl.key}
-              onClick={() => selectGeoLevel(gl.key)}
-              className="shrink-0 pb-0.5 text-xs font-semibold"
-              style={gl.key === geoLevel ? { color: t.textPrimary, borderBottom: `2px solid ${t.textPrimary}` } : { color: t.textMuted }}
-            >
-              {gl.label}
-            </button>
-          ))}
-        </nav>
-        <span className="h-4 w-px shrink-0" style={{ background: t.border }} />
-        <nav className="flex shrink-0 items-center gap-1.5">
-          <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>Office</span>
-          {RACE_TYPES.map((rt) => (
-            <button
-              key={rt.key}
-              onClick={() => selectRaceType(rt.key)}
-              className="shrink-0 pb-0.5 text-xs font-semibold"
-              style={rt.key === raceType ? { color: t.textPrimary, borderBottom: `2px solid ${t.textPrimary}` } : { color: t.textMuted }}
-            >
-              {rt.key === "president" ? "Pres" : rt.key === "governor" ? "Gov" : rt.key === "senate" ? "Sen" : "House"}
-            </button>
-          ))}
-        </nav>
-        <span className="h-4 w-px shrink-0" style={{ background: t.border }} />
-        <nav className="flex shrink-0 items-center gap-1.5">
-          <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>Year</span>
-          {getYearsForLevel(raceType, geoLevel).map((y) => (
-            <button
-              key={y}
-              onClick={() => selectYear(y)}
-              className="shrink-0 pb-0.5 text-xs font-semibold"
-              style={y === year ? { color: t.textPrimary, borderBottom: `2px solid ${t.textPrimary}` } : { color: t.textMuted }}
-            >
-              {y}
-            </button>
-          ))}
-        </nav>
-        {hasSpecialThisYear && (
-          <button
-            onClick={() => setSpecialOnly((v) => !v)}
-            aria-pressed={specialOnly}
-            title={specialOnly ? "Showing special elections only — click to show all" : "Show special elections only"}
-            className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[7px] font-bold"
-            style={
-              specialOnly
-                ? { background: t.textPrimary, color: t.panel }
-                : { background: t.tabBg, color: t.textMuted, border: `1px solid ${t.border}` }
-            }
-          >
-            Sp
-          </button>
-        )}
-      </div>
-
-      {/* ── Aggregate national results ── */}
-      <div className="hidden items-start gap-4 pb-4 pt-1 md:flex xl:gap-6" style={{ borderBottom: `1px solid ${t.border}` }}>
-        <div className="flex min-w-0 flex-1 flex-nowrap items-center gap-4 xl:gap-6">
-          {[
-            { label: "Votes", dem: stats.demVotes.toLocaleString(), rep: stats.repVotes.toLocaleString() },
-            { label: "Share", dem: `${stats.demPct.toFixed(1)}%`, rep: `${stats.repPct.toFixed(1)}%` },
-            { label: `${unitLabel} won`, dem: stats.demUnits.toLocaleString(), rep: stats.repUnits.toLocaleString() },
-            ...(seatCount ? [{ label: seatLabel, dem: seatCount.seatsD.toLocaleString(), rep: seatCount.seatsR.toLocaleString() }] : []),
-          ].map((row, index) => (
-            <div key={row.label} className="contents">
-              {index > 0 && <span className="h-8 w-px" style={{ background: t.border }} />}
-              <div className="shrink-0 whitespace-nowrap">
-                <div className="mb-1 text-[10px] font-bold uppercase tracking-wide" style={{ color: t.textMuted }}>{row.label}</div>
-                <div className="flex items-baseline gap-1.5 tabular-nums text-sm font-bold xl:text-base">
-                  <span style={{ fontFamily: "var(--font-serif)", color: t.demText }}>{row.dem}</span>
-                  <span className="text-xs font-normal" style={{ color: t.textVeryMuted }}>–</span>
-                  <span style={{ fontFamily: "var(--font-serif)", color: t.repText }}>{row.rep}</span>
-                </div>
-              </div>
+        <div className={`${PAGE_CONTAINER} flex flex-col gap-3 pb-3 pt-4 md:flex-row md:items-end md:justify-between`}>
+          <div>
+            <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
+              Election Archive
             </div>
-          ))}
-        </div>
-        <div className="mt-[1.35rem] shrink-0 whitespace-nowrap text-right text-sm tabular-nums" style={{ color: t.textVeryMuted }}>
-          {stats.totalVotes.toLocaleString()} total votes
-        </div>
-      </div>
-
-      <div className="md:hidden">
-        <div className="flex items-baseline justify-between pb-2" style={{ borderBottom: `2px solid ${t.textPrimary}` }}>
-          <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>National Results</span>
-          <span className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1rem", color: stats.margin <= 0 ? t.demText : t.repText }}>
-            {marginLabel(stats.margin)}
-          </span>
-        </div>
-        <div className="flex justify-between py-3" style={{ borderBottom: `1px solid ${t.border}` }}>
-          {[
-            { label: "Votes", dem: stats.demVotes.toLocaleString(), rep: stats.repVotes.toLocaleString() },
-            { label: "Share", dem: `${stats.demPct.toFixed(1)}%`, rep: `${stats.repPct.toFixed(1)}%` },
-            { label: unitLabel, dem: stats.demUnits.toLocaleString(), rep: stats.repUnits.toLocaleString() },
-            ...(seatCount ? [{ label: seatLabel, dem: seatCount.seatsD.toLocaleString(), rep: seatCount.seatsR.toLocaleString() }] : []),
-          ].map((row) => (
-            <div key={row.label} className="flex-1 text-center">
-              <div className="mb-1 text-[8px] font-bold uppercase tracking-wide" style={{ color: t.textMuted }}>{row.label}</div>
-              <div className="tabular-nums text-sm font-bold">
-                <span style={{ fontFamily: "var(--font-serif)", color: t.demText }}>{row.dem}</span>
-                <span className="mx-1 font-normal" style={{ color: t.textVeryMuted }}>–</span>
-                <span style={{ fontFamily: "var(--font-serif)", color: t.repText }}>{row.rep}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* ── Map ── */}
-      <div
-        className="relative h-[380px] w-full overflow-hidden rounded-xl md:h-[min(660px,calc(100vh-180px))] md:min-h-[520px] md:w-[96%] md:self-center"
-        style={{ background: t.bg }}
-        onMouseMove={tip.onMouseMove}
-      >
-        {/* Hover tooltip */}
-        {hovered && <CountyTooltip {...card(hovered)} boxRef={tip.tooltipRef} className="absolute z-20 hidden md:block" />}
-
-        <ComposableMap
-          width={975}
-          height={610}
-          projection="geoAlbersUsa"
-          projectionConfig={{ scale: 1200 }}
-          preserveAspectRatio="xMidYMid slice"
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-          }}
-        >
-          <ZoomableGroup
-            center={mapView.center}
-            zoom={mapView.zoom}
-            // Default view sits at zoom 1; allow a little headroom below it so the whole
-            // country can breathe, but not enough to shrink the map into the frame.
-            minZoom={0.8}
-            filterZoomEvent={filterMapZoomEvent}
-            onMoveStart={() => { gestureRef.current = null; }}
-            onMove={({ x, y, zoom: k }: { x: number; y: number; zoom: number }) => {
-              if (!gestureRef.current) gestureRef.current = { startX: x, startY: y, startK: k, lastX: x, lastY: y, lastK: k };
-              else { gestureRef.current.lastX = x; gestureRef.current.lastY = y; gestureRef.current.lastK = k; }
-            }}
-            onMoveEnd={({ coordinates, zoom }: { coordinates: [number, number] | null; zoom: number }) => {
-              const validCenter = coordinates
-                && coordinates.length === 2
-                && coordinates.every(Number.isFinite);
-              const gesture = gestureRef.current;
-              gestureRef.current = null;
-              if (!validCenter || !Number.isFinite(zoom)) return;
-
-              // A plain click still nudges d3-zoom's internal transform by a pixel or two
-              // (it has no click/drag tolerance of its own). Detect that here by pixel
-              // distance + zoom delta over the gesture, and snap back to rest instead of
-              // committing it as a real pan.
-              const pixelDist = gesture ? Math.hypot(gesture.lastX - gesture.startX, gesture.lastY - gesture.startY) : 0;
-              const zoomDelta = gesture ? Math.abs(gesture.lastK - gesture.startK) : 0;
-              if (pixelDist < 4 && zoomDelta < 0.001) {
-                setMapView({ center: coordinates, zoom });
-                requestAnimationFrame(() => setMapView(settledViewRef.current));
-                return;
-              }
-
-              const next = { center: coordinates, zoom };
-              settledViewRef.current = next;
-              setMapView(next);
-              setViewChanged(
-                zoom !== 1
-                || Math.abs(coordinates[0] - DEFAULT_MAP_CENTER[0]) > 0.001
-                || Math.abs(coordinates[1] - DEFAULT_MAP_CENTER[1]) > 0.001
-              );
-            }}
-          >
-            {geoLevel === "county" && (
-              <>
-                <Geographies geography={COUNTIES_URL}>
-                  {({ geographies }: { geographies: GeoFeature[] }) => (
-                    <GeoLayer level="county" geographies={geographies} entries={entries} specialOnly={specialOnly} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
-                  )}
-                </Geographies>
-
-                <StateOutlines t={t} />
-              </>
-            )}
-
-            {geoLevel === "district" && (
-              <>
-              <Geographies
-                key={districtGeoUrl}
-                geography={districtGeoUrl}
-                parseGeographies={parseDistrictGeographies}
-              >
-                {({ geographies }: { geographies: DistrictGeoFeature[] }) => (
-                  <GeoLayer level="district" geographies={geographies} entries={entries} specialOnly={specialOnly} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
-                )}
-              </Geographies>
-              <StateOutlines t={t} />
-              </>
-            )}
-
-            {geoLevel === "state" && (
-              <>
-              <Geographies geography={STATES_URL}>
-                {({ geographies }: { geographies: GeoFeature[] }) => (
-                  <GeoLayer level="state" geographies={geographies} entries={entries} specialOnly={specialOnly} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
-                )}
-              </Geographies>
-              <StateOutlines t={t} />
-              </>
-            )}
-          </ZoomableGroup>
-        </ComposableMap>
-
-        {/* ── Desktop overlay toolbar (top-left) ── */}
-        <div
-          className="hidden md:flex absolute z-10 items-center gap-2.5 rounded-xl px-3 py-2 backdrop-blur-sm"
-          style={{ top: 0, left: 0, background: t.legendBg, border: `1px solid ${t.border}` }}
-        >
-          <div className="flex items-center gap-1.5">
-            <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>Geo</span>
-            {GEO_LEVELS.map((gl) => (
-              <button
-                key={gl.key}
-                onClick={() => selectGeoLevel(gl.key)}
-                className="pb-0.5 text-xs font-semibold"
-                style={gl.key === geoLevel ? { color: t.textPrimary, borderBottom: `2px solid ${t.textPrimary}` } : { color: t.textMuted }}
-              >
-                {gl.label}
-              </button>
-            ))}
+            <h1
+              className="mt-1 text-2xl font-bold tracking-tight md:text-[1.65rem]"
+              style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}
+            >
+              Historical Results
+            </h1>
           </div>
-          <span className="h-4 w-px" style={{ background: t.border }} />
-          <div className="flex items-center gap-1.5">
-            <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>Office</span>
-            {RACE_TYPES.map((rt) => (
+          <div className="flex flex-wrap items-center gap-2">
+            <Segmented label="Geography" value={geoLevel} onChange={selectGeoLevel} options={GEO_LEVELS.map((gl) => [gl.key, gl.label])} />
+            <select
+              value={raceType}
+              onChange={(e) => selectRaceType(e.target.value as RaceType)}
+              aria-label="Office"
+              className={SELECT_CLASS}
+              style={SELECT_STYLE}
+            >
+              {RACE_TYPES.map((rt) => <option key={rt.key} value={rt.key}>{rt.label}</option>)}
+            </select>
+            <select
+              value={year}
+              onChange={(e) => selectYear(Number(e.target.value))}
+              aria-label="Year"
+              className={SELECT_CLASS}
+              style={SELECT_STYLE}
+            >
+              {getYearsForLevel(raceType, geoLevel).map((y) => <option key={y} value={y}>{y}</option>)}
+            </select>
+            {hasSpecialThisYear && (
               <button
-                key={rt.key}
-                onClick={() => selectRaceType(rt.key)}
-                className="pb-0.5 text-xs font-semibold"
-                style={rt.key === raceType ? { color: t.textPrimary, borderBottom: `2px solid ${t.textPrimary}` } : { color: t.textMuted }}
-              >
-                {rt.key === "president" ? "Pres" : rt.key === "governor" ? "Gov" : rt.key === "senate" ? "Sen" : "House"}
-              </button>
-            ))}
-          </div>
-          <span className="h-4 w-px" style={{ background: t.border }} />
-          <div className="flex items-center gap-1.5">
-            <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>Year</span>
-            {getYearsForLevel(raceType, geoLevel).map((y) => (
-              <button
-                key={y}
-                onClick={() => selectYear(y)}
-                className="pb-0.5 text-xs font-semibold"
-                style={y === year ? { color: t.textPrimary, borderBottom: `2px solid ${t.textPrimary}` } : { color: t.textMuted }}
-              >
-                {y}
-              </button>
-            ))}
-          </div>
-          {hasSpecialThisYear && (
-            <>
-              <span className="h-4 w-px" style={{ background: t.border }} />
-              <button
+                type="button"
                 onClick={() => setSpecialOnly((v) => !v)}
                 aria-pressed={specialOnly}
                 title={specialOnly ? "Showing special elections only — click to show all" : "Show special elections only"}
-                className="flex h-5 w-5 items-center justify-center rounded-full text-[8px] font-bold"
+                className="rounded-md px-2.5 py-1.5 text-xs font-semibold"
                 style={
                   specialOnly
-                    ? { background: t.textPrimary, color: t.panel }
-                    : { background: t.tabBg, color: t.textMuted, border: `1px solid ${t.border}` }
+                    ? { background: t.textPrimary, color: t.bg, border: `1px solid ${t.textPrimary}` }
+                    : { background: "transparent", color: t.textMuted, border: `1px solid ${t.border}` }
                 }
               >
-                Sp
+                Specials only
               </button>
-            </>
-          )}
-          {viewChanged && (
-            <>
-              <span className="h-4 w-px" style={{ background: t.border }} />
-              <button onClick={resetView} className="text-xs font-semibold" style={{ color: t.textMuted }}>
-                Reset
-              </button>
-            </>
-          )}
-        </div>
-
-        {/* ── Mobile reset (standalone — controls above the map handle everything else) ── */}
-        {viewChanged && (
-          <button
-            onClick={resetView}
-            className="md:hidden absolute z-10 rounded-lg px-2.5 py-1 text-[10px] font-medium backdrop-blur-sm"
-            style={{ top: "0.6rem", left: "0.6rem", background: t.legendBg, border: `1px solid ${t.border}`, color: t.textMuted }}
-          >
-            Reset
-          </button>
-        )}
-
-        {/* ── Desktop chyron (top-right) ── */}
-        <div
-          className="hidden md:block absolute z-10 rounded-xl px-3 py-2 text-right backdrop-blur-sm"
-          style={{ top: 0, right: 0, background: t.legendBg, border: `1px solid ${t.border}` }}
-        >
-          <div className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>{sliceLoading ? "Loading results…" : "National margin"}</div>
-          <div style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1.5rem", lineHeight: 1.15, color: stats.margin <= 0 ? t.demText : t.repText }}>
-            {marginLabel(stats.margin)}
+            )}
           </div>
         </div>
+      </div>
 
-        {/* ── Desktop floating selected panel (bottom-right) ── */}
-        {selected && (
-          <div
-            className="hidden md:block absolute z-20 rounded-xl backdrop-blur-sm"
-            style={{ bottom: "1rem", right: "1rem", width: 228, padding: "10px 12px", background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 12px 28px rgba(0,0,0,0.25)" }}
+      <div className={`${PAGE_CONTAINER} flex w-full flex-col gap-3`}>
+
+        {/* ── National results dashboard ── */}
+        <div
+          className="grid grid-cols-2 gap-x-6 gap-y-3 py-2.5 md:grid-cols-[auto_minmax(0,1fr)_auto_auto] md:items-center md:gap-x-0"
+          style={{ borderTop: `2px solid ${t.textPrimary}`, borderBottom: `1px solid ${t.border}`, opacity: sliceLoading ? 0.55 : 1 }}
+        >
+          {/* Margin */}
+          <div className="col-span-2 md:col-span-1 md:pr-6">
+            <div className={STAT_LABEL} style={{ color: t.textMuted }}>{sliceLoading ? "Loading results…" : `${year} ${raceLabel} · National margin`}</div>
+            <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1.65rem", lineHeight: 1.1, color: stats.margin <= 0 ? t.demText : t.repText }}>
+              {marginLabel(stats.margin)}
+            </div>
+            <div className="mt-0.5 text-xs tabular-nums" style={{ color: t.textVeryMuted }}>{stats.totalVotes.toLocaleString()} votes</div>
+          </div>
+
+          {/* Popular vote share bar */}
+          <div className="col-span-2 md:col-span-1 md:border-l md:px-6" style={{ borderColor: t.border }}>
+            <div className="flex items-baseline justify-between tabular-nums">
+              <span className="text-base font-bold" style={{ fontFamily: "var(--font-serif)", color: t.demText }}>{stats.demPct.toFixed(1)}%</span>
+              <span className={STAT_LABEL} style={{ color: t.textMuted, marginBottom: 0 }}>Popular vote</span>
+              <span className="text-base font-bold" style={{ fontFamily: "var(--font-serif)", color: t.repText }}>{stats.repPct.toFixed(1)}%</span>
+            </div>
+            <div className="relative my-1 flex h-2 overflow-hidden rounded-full" style={{ background: t.border }}>
+              <div style={{ width: `${stats.demPct}%`, background: "var(--party-dem)" }} />
+              <div className="flex-1" />
+              <div style={{ width: `${stats.repPct}%`, background: "var(--party-rep)" }} />
+              <span className="absolute inset-y-0 left-1/2 w-0.5 -translate-x-1/2" style={{ background: t.bg }} />
+            </div>
+            <div className="flex justify-between text-xs tabular-nums" style={{ color: t.textMuted }}>
+              <span>{stats.demVotes.toLocaleString()}</span>
+              <span>{stats.repVotes.toLocaleString()}</span>
+            </div>
+          </div>
+
+          {/* Units won + seats */}
+          {[
+            { label: `${unitLabel} won`, dem: stats.demUnits, rep: stats.repUnits },
+            ...(seatCount ? [{ label: seatLabel, dem: seatCount.seatsD, rep: seatCount.seatsR }] : []),
+          ].map((row) => (
+            <div key={row.label} className="md:border-l md:px-6 md:last:pr-0" style={{ borderColor: t.border }}>
+              <div className={STAT_LABEL} style={{ color: t.textMuted }}>{row.label}</div>
+              <div className="flex items-baseline gap-1.5 whitespace-nowrap tabular-nums text-lg font-bold">
+                <span style={{ fontFamily: "var(--font-serif)", color: t.demText }}>{row.dem.toLocaleString()}</span>
+                <span className="text-xs font-normal" style={{ color: t.textVeryMuted }}>–</span>
+                <span style={{ fontFamily: "var(--font-serif)", color: t.repText }}>{row.rep.toLocaleString()}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ── Map — on phones the box takes the projection's 975×610 shape, so "slice" crops nothing
+           and the whole country fits the width; desktop keeps its fixed height ── */}
+        <div
+          className="relative aspect-[975/610] w-full overflow-hidden rounded-xl md:aspect-auto md:h-[min(660px,calc(100vh-180px))] md:min-h-[520px] md:w-[96%] md:self-center"
+          style={{ background: t.bg }}
+          onMouseMove={tip.onMouseMove}
+        >
+          {/* Hover tooltip */}
+          {hovered && <CountyTooltip {...card(hovered)} boxRef={tip.tooltipRef} className="absolute z-20 hidden md:block" />}
+
+          <ComposableMap
+            width={975}
+            height={610}
+            projection="geoAlbersUsa"
+            projectionConfig={{ scale: 1200 }}
+            preserveAspectRatio="xMidYMid slice"
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+            }}
           >
+            <ZoomableGroup
+              center={mapView.center}
+              zoom={mapView.zoom}
+              // Default view sits at zoom 1, which is also the furthest you can zoom out.
+              minZoom={1}
+              filterZoomEvent={filterMapZoomEvent}
+              onMoveStart={() => { gestureRef.current = null; }}
+              onMove={({ x, y, zoom: k }: { x: number; y: number; zoom: number }) => {
+                if (!gestureRef.current) gestureRef.current = { startX: x, startY: y, startK: k, lastX: x, lastY: y, lastK: k };
+                else { gestureRef.current.lastX = x; gestureRef.current.lastY = y; gestureRef.current.lastK = k; }
+              }}
+              onMoveEnd={({ coordinates, zoom }: { coordinates: [number, number] | null; zoom: number }) => {
+                const validCenter = coordinates
+                  && coordinates.length === 2
+                  && coordinates.every(Number.isFinite);
+                const gesture = gestureRef.current;
+                gestureRef.current = null;
+                if (!validCenter || !Number.isFinite(zoom)) return;
+
+                // A plain click still nudges d3-zoom's internal transform by a pixel or two
+                // (it has no click/drag tolerance of its own). Detect that here by pixel
+                // distance + zoom delta over the gesture, and snap back to rest instead of
+                // committing it as a real pan.
+                const pixelDist = gesture ? Math.hypot(gesture.lastX - gesture.startX, gesture.lastY - gesture.startY) : 0;
+                const zoomDelta = gesture ? Math.abs(gesture.lastK - gesture.startK) : 0;
+                if (pixelDist < 4 && zoomDelta < 0.001) {
+                  setMapView({ center: coordinates, zoom });
+                  requestAnimationFrame(() => setMapView(settledViewRef.current));
+                  return;
+                }
+
+                const next = { center: coordinates, zoom };
+                settledViewRef.current = next;
+                setMapView(next);
+                setViewChanged(
+                  zoom !== 1
+                  || Math.abs(coordinates[0] - DEFAULT_MAP_CENTER[0]) > 0.001
+                  || Math.abs(coordinates[1] - DEFAULT_MAP_CENTER[1]) > 0.001
+                );
+              }}
+            >
+              {geoLevel === "county" && (
+                <>
+                  <Geographies geography={COUNTIES_URL}>
+                    {({ geographies }: { geographies: GeoFeature[] }) => (
+                      <GeoLayer level="county" geographies={geographies} entries={entries} specialOnly={specialOnly} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
+                    )}
+                  </Geographies>
+
+                  <StateOutlines t={t} />
+                </>
+              )}
+
+              {geoLevel === "district" && (
+                <>
+                <Geographies
+                  key={districtGeoUrl}
+                  geography={districtGeoUrl}
+                  parseGeographies={parseDistrictGeographies}
+                >
+                  {({ geographies }: { geographies: DistrictGeoFeature[] }) => (
+                    <GeoLayer level="district" geographies={geographies} entries={entries} specialOnly={specialOnly} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
+                  )}
+                </Geographies>
+                <StateOutlines t={t} />
+                </>
+              )}
+
+              {geoLevel === "state" && (
+                <>
+                <Geographies geography={STATES_URL}>
+                  {({ geographies }: { geographies: GeoFeature[] }) => (
+                    <GeoLayer level="state" geographies={geographies} entries={entries} specialOnly={specialOnly} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
+                  )}
+                </Geographies>
+                <StateOutlines t={t} />
+                </>
+              )}
+            </ZoomableGroup>
+          </ComposableMap>
+
+          {viewChanged && (
+            <button
+              type="button"
+              onClick={resetView}
+              className="absolute z-10 rounded-lg px-2.5 py-1 text-xs font-semibold backdrop-blur-sm"
+              style={{ top: "0.5rem", left: "0.5rem", background: t.legendBg, border: `1px solid ${t.border}`, color: t.textMuted }}
+            >
+              Reset view
+            </button>
+          )}
+
+          {/* ── Desktop floating selected panel (bottom-right) ── */}
+          {selected && (
+            <div
+              className="hidden md:block absolute z-20 rounded-xl backdrop-blur-sm"
+              style={{ bottom: "1rem", right: "1rem", width: 200, padding: "8px 10px", background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 12px 28px rgba(0,0,0,0.25)" }}
+            >
+              <CountyTooltip
+                {...card(selected)}
+                variant="card"
+                aside={<CountyCardClose onClick={() => setSelected(null)} label="Close selection" />}
+                footer={selected.moreInfoHref ? <CountyCardLink href={selected.moreInfoHref}>More info →</CountyCardLink> : undefined}
+              />
+            </div>
+          )}
+        </div>
+
+        {/* ── Map legend ── */}
+        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 md:gap-x-4">
+          {MAP_LEGEND.map(({ color, label }) => (
+            <div key={label} className="flex items-center gap-1 md:gap-1.5">
+              <span className="h-2 w-2 shrink-0 rounded-full md:h-2.5 md:w-2.5" style={{ background: color }} />
+              <span className="whitespace-nowrap text-[9px] font-medium md:text-[10px]" style={{ color: t.textMuted }}>{label}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* ── Mobile selected geography (compact) ── */}
+        {selected && (
+          <div className="md:hidden">
             <CountyTooltip
               {...card(selected)}
-              variant="card"
-              aside={<CountyCardClose onClick={() => setSelected(null)} label="Close selection" />}
+              variant="panel"
+              aside={<CountyCardClose onClick={() => setSelected(null)} label="Close selection" small />}
               footer={selected.moreInfoHref ? <CountyCardLink href={selected.moreInfoHref}>More info →</CountyCardLink> : undefined}
             />
           </div>
         )}
+
       </div>
-
-      {/* ── Map legend ── */}
-      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 md:gap-x-4">
-        {MAP_LEGEND.map(({ color, label }) => (
-          <div key={label} className="flex items-center gap-1 md:gap-1.5">
-            <span className="h-2 w-2 shrink-0 rounded-full md:h-2.5 md:w-2.5" style={{ background: color }} />
-            <span className="whitespace-nowrap text-[9px] font-medium md:text-[10px]" style={{ color: t.textMuted }}>{label}</span>
-          </div>
-        ))}
-      </div>
-
-      {/* ── Mobile selected geography (compact) ── */}
-      {selected && (
-        <div className="md:hidden">
-          <CountyTooltip
-            {...card(selected)}
-            variant="panel"
-            aside={<CountyCardClose onClick={() => setSelected(null)} label="Close selection" />}
-            footer={selected.moreInfoHref ? <CountyCardLink href={selected.moreInfoHref}>More info →</CountyCardLink> : undefined}
-          />
-        </div>
-      )}
-
-    </div>
+    </>
   );
 }

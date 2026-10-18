@@ -1,0 +1,2837 @@
+{
+ "state": "MD",
+ "cycle": 2018,
+ "source": "Maryland SBE CRIS receipts via The Accountability Project (itemized contributions)",
+ "fetched": "2026-10-17",
+ "dataThrough": "12/31/2018",
+ "candidates": [
+  {
+   "name": "Muse, Charles A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Muse, C. Anthony Friends Of",
+   "contributions": 570042.57
+  },
+  {
+   "name": "MILLER, THOMAS V.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Miller, Mike Marylanders For",
+   "contributions": 1659985.0
+  },
+  {
+   "name": "FELDMAN, BRIAN J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Feldman, Brian Citizens For",
+   "contributions": 337144.23
+  },
+  {
+   "name": "ZIRKIN, ROBERT A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Zirkin, Bobby Committee to Elect",
+   "contributions": 439504.21
+  },
+  {
+   "name": "KIPKE, NICHOLAUS R.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Kipke, Nic Friends of",
+   "contributions": 390855.95
+  },
+  {
+   "name": "Norman, H. W.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Norman, Wayne Citizens To Elect",
+   "contributions": 95004.46
+  },
+  {
+   "name": "MCFADDEN, NATHANIEL J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "McFadden, Nathaniel J. for Senate",
+   "contributions": 256630.46
+  },
+  {
+   "name": "MAUTZ, JOHN F.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Mautz, (John) Johnny Friends of",
+   "contributions": 267150.0
+  },
+  {
+   "name": "ECKARDT, ADELAIDE C.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Eckardt, Addie Friends To Re-Elect",
+   "contributions": 123778.4
+  },
+  {
+   "name": "PIPPY, JESSE T.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Pippy, Jesse Friends of",
+   "contributions": 30603.98
+  },
+  {
+   "name": "STEIN, DANA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Stein, Dana Friends Of",
+   "contributions": 172118.0
+  },
+  {
+   "name": "DAVIS, DERECK E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Davis, Dereck Friends Of",
+   "contributions": 526864.74
+  },
+  {
+   "name": "READY, JUSTIN D.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Ready, Justin Friends Of",
+   "contributions": 247692.38
+  },
+  {
+   "name": "IMPALLARIA, RICHARD K.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Impallaria, Richard Friends Of",
+   "contributions": 47006.0
+  },
+  {
+   "name": "BRANCH, TALMADGE",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Branch, Talmadge Friends of",
+   "contributions": 235355.0
+  },
+  {
+   "name": "HORNBERGER, KEVIN B.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Hornberger, Kevin Friends of",
+   "contributions": 35176.0
+  },
+  {
+   "name": "BENSON, JOANNE C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Benson, Joanne C. Friends Of",
+   "contributions": 280659.26
+  },
+  {
+   "name": "HILL, TERRI L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Hill, Terri Friends of",
+   "contributions": 145401.38
+  },
+  {
+   "name": "GLENN, CHERYL D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Glenn, Cheryl Friends Of",
+   "contributions": 151973.09
+  },
+  {
+   "name": "CULLISON, BONITA L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Cullison, Bonnie Friends of",
+   "contributions": 83643.75
+  },
+  {
+   "name": "King, Nancy J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "King, Nancy Friends of",
+   "contributions": 112425.0
+  },
+  {
+   "name": "Pena-Melnyk, Joseline A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Pena-Melnyk, Joseline Friends Of",
+   "contributions": 77381.07
+  },
+  {
+   "name": "BARNES, DARRYL L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Barnes, Darryl Friends For",
+   "contributions": 74637.27
+  },
+  {
+   "name": "YOUNG, RONALD N.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Young, Ron Friends of",
+   "contributions": 144222.78
+  },
+  {
+   "name": "HEALEY, ANNE M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Healey, Anne Friends of",
+   "contributions": 63971.34
+  },
+  {
+   "name": "STINNETT, SEAN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Stinnett, Sean A. The Friends of",
+   "contributions": 35015.39
+  },
+  {
+   "name": "WEST, CHRISTOPHER R.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "West, Chris Friends of",
+   "contributions": 141282.8
+  },
+  {
+   "name": "HAYES, ANTONIO L.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Hayes, Antonio Citizens for",
+   "contributions": 309155.18
+  },
+  {
+   "name": "LEE, SUSAN C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Lee, Susan C. Friends Of",
+   "contributions": 187054.0
+  },
+  {
+   "name": "MILLER, WARREN E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Miller, Warren E. Friends of",
+   "contributions": 95652.23
+  },
+  {
+   "name": "MCKAY, MICHAEL W.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "McKay, Mike Citizens to Elect",
+   "contributions": 65979.68
+  },
+  {
+   "name": "HOWARD, SETH A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Howard, Seth Citizens To Elect",
+   "contributions": 80315.0
+  },
+  {
+   "name": "VALENTINO-SMITH, GERALDINE",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Valentino-Smith, Geraldine Friends for",
+   "contributions": 60788.25
+  },
+  {
+   "name": "SIMONAIRE, BRYAN",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Simonaire, Bryan Citizens For",
+   "contributions": 104111.5
+  },
+  {
+   "name": "Conway, Joan C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Conway, Joan Carter Committee To Elect",
+   "contributions": 338397.12
+  },
+  {
+   "name": "Pinsky, Paul G.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Pinsky, Paul Citizens For",
+   "contributions": 129763.85
+  },
+  {
+   "name": "MCCRAY, CORY",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "McCray, Cory Friends of",
+   "contributions": 305286.58
+  },
+  {
+   "name": "PARROTT, NEIL C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Parrott, Neil For Delegate",
+   "contributions": 115268.81
+  },
+  {
+   "name": "GUZZONE, GUY J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Guzzone, Guy Friends Of",
+   "contributions": 458571.98
+  },
+  {
+   "name": "GRAMMER, ROBIN L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Grammer, Robin L. Jr. Friends of",
+   "contributions": 78932.14
+  },
+  {
+   "name": "HERSHEY, STEPHEN S.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Hershey, Steve Friends of",
+   "contributions": 297872.74
+  },
+  {
+   "name": "SZELIGA, KATHRYN Y.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Szeliga, Kathy Friends Of",
+   "contributions": 400269.81
+  },
+  {
+   "name": "MORGAN, JAMES M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Morgan, Matt Citizens For",
+   "contributions": 152356.0
+  },
+  {
+   "name": "KORMAN, MARC A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Korman, Marc Friends of",
+   "contributions": 237497.32
+  },
+  {
+   "name": "WALDSTREICHER, JEFFREY D.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Waldstreicher, Jeff Friends Of",
+   "contributions": 361249.49
+  },
+  {
+   "name": "CAROZZA, MARY E.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Carozza, Mary Beth Friends of",
+   "contributions": 428602.02
+  },
+  {
+   "name": "Lafferty, Stephen W.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Lafferty, (Stephen) For Delegate Committee",
+   "contributions": 162692.0
+  },
+  {
+   "name": "BATES, GAIL H.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Bates, Gail Friends Of",
+   "contributions": 116586.08
+  },
+  {
+   "name": "CAREY, EDWARD",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Carey, Ned Friends of",
+   "contributions": 137925.96
+  },
+  {
+   "name": "LAM, CLARENCE K.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Lam, Clarence Friends of",
+   "contributions": 201261.98
+  },
+  {
+   "name": "Chang, Mark S.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Chang, Mark Citizens To Elect",
+   "contributions": 116553.78
+  },
+  {
+   "name": "WASHINGTON, MARY L.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Washington, Mary People Uniting to Elect",
+   "contributions": 309188.46
+  },
+  {
+   "name": "Mathias, James N.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Mathias, Jim Friends Of",
+   "contributions": 632593.54
+  },
+  {
+   "name": "JACKSON, MICHAEL A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Jackson, Michael A., Friends of",
+   "contributions": 86704.42
+  },
+  {
+   "name": "Gilchrist, James W.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Gilchrist, Jim Friends of",
+   "contributions": 32099.0
+  },
+  {
+   "name": "REILLY, TERESA E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Reilly, Teresa Citizens for",
+   "contributions": 74798.83
+  },
+  {
+   "name": "SHADE, JACOB C.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Shade, Jake Friends of",
+   "contributions": 41260.15
+  },
+  {
+   "name": "Washington, Alonzo T.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Washington, Alonzo Friends for",
+   "contributions": 134844.02
+  },
+  {
+   "name": "KAGAN, CHERYL C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Kagan, Cheryl Citizens Helping Elect",
+   "contributions": 142658.24
+  },
+  {
+   "name": "Walker, Jay",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Walker, Jay Friends Of",
+   "contributions": 161868.24
+  },
+  {
+   "name": "GHRIST, JEFFERSON L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Ghrist, Jeff Friends of",
+   "contributions": 16955.0
+  },
+  {
+   "name": "BROOKS, BENJAMIN T.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Brooks, Benjamin Friends of",
+   "contributions": 117460.0
+  },
+  {
+   "name": "KASEMEYER, EDWARD J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Kasemeyer, Ed For Senate Committee",
+   "contributions": 167112.3
+  },
+  {
+   "name": "WAUGH, STEPHEN M.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Waugh, Steve Friends of",
+   "contributions": 71238.29
+  },
+  {
+   "name": "REZNIK, KIRILL L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Reznik, Kirill Friends Of",
+   "contributions": 124006.03
+  },
+  {
+   "name": "MOON, DAVID H.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Moon, David Friends of",
+   "contributions": 76916.19
+  },
+  {
+   "name": "PENDERGRASS, SHANE E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Pendergrass, Shane E. R. People For",
+   "contributions": 186343.51
+  },
+  {
+   "name": "SAAB, SAID A.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Saab, (Sid) Citizens for",
+   "contributions": 130536.99
+  },
+  {
+   "name": "KLAUSMEIER, KATHERINE A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Klausmeier, Kathy Friends Of",
+   "contributions": 412906.55
+  },
+  {
+   "name": "JACOBS, JAY A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Jacobs, Jay Friends of",
+   "contributions": 79145.0
+  },
+  {
+   "name": "KRIMM, CAROL L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Krimm, Carol Friends of",
+   "contributions": 30024.97
+  },
+  {
+   "name": "ROSAPEPE, JAMES C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Rosapepe, Jim Friends Of",
+   "contributions": 209970.0
+  },
+  {
+   "name": "Vallario, Joseph F.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Vallario, Joseph F. Jr. Friends of",
+   "contributions": 253759.5
+  },
+  {
+   "name": "REY, DEBORAH C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Rey, Deb for Maryland",
+   "contributions": 131486.66
+  },
+  {
+   "name": "FERGUSON, WILLIAM C.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Ferguson, Bill Citizens for",
+   "contributions": 341981.18
+  },
+  {
+   "name": "ADAMS, CHRISTOPHER T.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Adams, Christopher Friends of",
+   "contributions": 89354.0
+  },
+  {
+   "name": "MCCOMAS, SUSAN K.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "McComas, Susan K. The Committee To Elect",
+   "contributions": 34865.93
+  },
+  {
+   "name": "BUSCH, MICHAEL E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Busch, Mike Friends Of",
+   "contributions": 1808405.5
+  },
+  {
+   "name": "BARVE, KUMAR P.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Barve, (Kumar) for Maryland",
+   "contributions": 227938.97
+  },
+  {
+   "name": "BARRON, EREK L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Barron, Erek L. Friends of",
+   "contributions": 217031.4
+  },
+  {
+   "name": "KAISER, ANNE R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Kaiser, (Anne) For Delegate",
+   "contributions": 235992.0
+  },
+  {
+   "name": "LISANTI, MARY ANN",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Lisanti, Mary Ann Friends Of",
+   "contributions": 177498.54
+  },
+  {
+   "name": "METZGAR, RICHARD W.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Metzgar, Ric Sr. Friends Of",
+   "contributions": 88808.73
+  },
+  {
+   "name": "ZUCKER, CRAIG J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Zucker, Craig Friends Of",
+   "contributions": 226366.3
+  },
+  {
+   "name": "MCINTOSH, MAGGIE L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "McIntosh, Maggie Citizens For",
+   "contributions": 535452.62
+  },
+  {
+   "name": "REILLY, EDWARD R.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Reilly, Ed Friends Of Big",
+   "contributions": 272899.89
+  },
+  {
+   "name": "JENNINGS, JONATHAN B.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Jennings, J. B. Friends Of",
+   "contributions": 409573.16
+  },
+  {
+   "name": "TARLAU, JAMES J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Tarlau, Jimmy Friends of",
+   "contributions": 133446.77
+  },
+  {
+   "name": "HOLMES, MARVIN E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Holmes, Marvin E. Jr. Friends of",
+   "contributions": 37190.0
+  },
+  {
+   "name": "SIMONAIRE, MEAGAN C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Simonaire, Meagan Friends of",
+   "contributions": 24065.0
+  },
+  {
+   "name": "GAINES, TAWANNA P.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Gaines, Tawanna P. Friends of",
+   "contributions": 67049.0
+  },
+  {
+   "name": "PATTERSON, OBIE",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Patterson, Obie Committee To Elect",
+   "contributions": 106546.83
+  },
+  {
+   "name": "Bromwell, Eric M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Bromwell, Eric The Committee To Elect",
+   "contributions": 191361.0
+  },
+  {
+   "name": "ANDERTON, CARL L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Anderton, Carl Friends of",
+   "contributions": 28003.0
+  },
+  {
+   "name": "ARENTZ, STEVEN J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Arentz, Steve for Delegate Friends of",
+   "contributions": 39335.0
+  },
+  {
+   "name": "LONG, ROBERT",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Long, Robert (Bob) Friends of",
+   "contributions": 97009.0
+  },
+  {
+   "name": "FLANAGAN, ROBERT L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Flanagan, Bob Friends Of",
+   "contributions": 116742.0
+  },
+  {
+   "name": "FENNELL, DIANA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Fennell, Diana M. Friends of",
+   "contributions": 70071.52
+  },
+  {
+   "name": "PETERS, DOUGLAS J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Peters, Douglas J.J. Citizens For",
+   "contributions": 550923.45
+  },
+  {
+   "name": "YATES, CHRISTOPHER B.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Yates, Chris Citizens for",
+   "contributions": 5096.11
+  },
+  {
+   "name": "EDELSON, MARK",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Edelson, Mark Friends of",
+   "contributions": 192365.23
+  },
+  {
+   "name": "YOUNG, CALVIN",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Young, Calvin Supporters of",
+   "contributions": 91333.0
+  },
+  {
+   "name": "EMBRY, ELIZABETH M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Embry, Elizabeth Friends of",
+   "contributions": 971645.65
+  },
+  {
+   "name": "CHISHOLM, BRIAN A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Chisholm, Brian Citizens for",
+   "contributions": 46318.45
+  },
+  {
+   "name": "HARRIS, JOSHUA S.",
+   "party": "Green",
+   "chamber": "house",
+   "committee": "Harris, Joshua Friends of",
+   "contributions": 49015.29
+  },
+  {
+   "name": "JALISI, HASAN M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Jalisi, (Hasan) Friends of",
+   "contributions": 91466.45
+  },
+  {
+   "name": "FISHER, MARK N.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Fisher, Mark Friends Of",
+   "contributions": 96506.71
+  },
+  {
+   "name": "ROBINSON, BARBARA A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Robinson, Barbara A. Friends Of",
+   "contributions": 105863.62
+  },
+  {
+   "name": "KERR, KENNETH P.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Kerr, Ken Friends of",
+   "contributions": 56222.81
+  },
+  {
+   "name": "KRAMER, BENJAMIN FRED.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Kramer, Ben Friends Of",
+   "contributions": 90800.0
+  },
+  {
+   "name": "GLASS, ROY G.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Glass, Glen Friends of",
+   "contributions": 9748.02
+  },
+  {
+   "name": "Edwards, George C.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Edwards, George C. Friends For Committee",
+   "contributions": 59902.24
+  },
+  {
+   "name": "OTTO, CHARLES J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Otto, (Charles) Citizens For",
+   "contributions": 12200.0
+  },
+  {
+   "name": "LEHMAN, MARY A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Lehman, Mary Citizens For",
+   "contributions": 52704.97
+  },
+  {
+   "name": "SALLING, JOHNNY R.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Salling,  Johnny Ray Friends of",
+   "contributions": 98130.47
+  },
+  {
+   "name": "STOKES, ROBERT R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Stokes, Robert Friends of",
+   "contributions": 39046.96
+  },
+  {
+   "name": "SERAFINI, ANDREW A.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Serafini, Andrew Friends of",
+   "contributions": 50041.57
+  },
+  {
+   "name": "BEIDLE, PAMELA",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Beidle, Pam Friends of",
+   "contributions": 275139.95
+  },
+  {
+   "name": "HETTLEMAN, MICHELLE L.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Hettleman, Shelly Friends of",
+   "contributions": 170333.0
+  },
+  {
+   "name": "ROSE, APRIL R.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Rose, April Friends of",
+   "contributions": 51747.12
+  },
+  {
+   "name": "Nathan-Pulliam, Shirley A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Nathan-Pulliam, Shirley Friends Of",
+   "contributions": 100007.23
+  },
+  {
+   "name": "FOLDEN, WILLIAM G.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Folden, William Citizens for",
+   "contributions": 90458.2
+  },
+  {
+   "name": "HAYNES, KEITH E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Haynes, Keith E. Committee To Elect",
+   "contributions": 60376.35
+  },
+  {
+   "name": "ROSENBERG, SAMUEL I.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Rosenberg, Sandy Citizens For",
+   "contributions": 142982.34
+  },
+  {
+   "name": "JOHNSON, ROBERT E.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Johnson, Rob Friends of",
+   "contributions": 30138.46
+  },
+  {
+   "name": "SYDNOR, CHARLES E.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Sydnor, Charles Citizens for",
+   "contributions": 104194.48
+  },
+  {
+   "name": "WILLIAMS, NICOLE A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Williams, Nicole A., Friends of",
+   "contributions": 45880.28
+  },
+  {
+   "name": "WORRELL, MONICA A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Worrell, Monica A. Citizens to Elect",
+   "contributions": 33938.92
+  },
+  {
+   "name": "DONALD, JERRY D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Donald, Jerry Citizens for",
+   "contributions": 35591.54
+  },
+  {
+   "name": "WATSON, RONALD L.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Watson, Ron Friends of",
+   "contributions": 36085.14
+  },
+  {
+   "name": "JONES, ADRIENNE A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Jones, Adrienne Citizens For",
+   "contributions": 254514.0
+  },
+  {
+   "name": "AUGUSTINE, MALCOLM L.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Augustine, Malcolm Friends of",
+   "contributions": 105114.41
+  },
+  {
+   "name": "SAMPLE-HUGHES, SHEREE L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Sample-Hughes, (Sheree) Campaign Fund",
+   "contributions": 56447.15
+  },
+  {
+   "name": "TAVERAS, DENI L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Taveras, Deni Friends of",
+   "contributions": 106971.0
+  },
+  {
+   "name": "SMITH, JOYCE J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Smith, Joyce Friends Of",
+   "contributions": 5190.0
+  },
+  {
+   "name": "SIGATY, MARY K.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Sigaty, Mary Kay Friends Of",
+   "contributions": 131523.1
+  },
+  {
+   "name": "CASSILLY, ANDREW P.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Cassilly, Andrew Citizens for",
+   "contributions": 23250.13
+  },
+  {
+   "name": "OSTROFF, MICHAEL A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Ostroff, Michael A. Committee for",
+   "contributions": 547.41
+  },
+  {
+   "name": "CLIPPINGER, LUKE",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Clippinger, Luke Friends of",
+   "contributions": 216481.97
+  },
+  {
+   "name": "KELLY, ARIANA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Kelly, Ariana Friends of",
+   "contributions": 115881.0
+  },
+  {
+   "name": "HARRISON, ANDREA C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Harrison, Andrea Friends Of",
+   "contributions": 167136.36
+  },
+  {
+   "name": "SHAY, MICHAEL J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Shay, Michael Committee To Elect",
+   "contributions": 16930.0
+  },
+  {
+   "name": "ERVIN, CHRISTOPHER R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Ervin, Christopher Friends for",
+   "contributions": 5480.75
+  },
+  {
+   "name": "THOMAS, DEA C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Thomas, Dea Friends of",
+   "contributions": 144866.29
+  },
+  {
+   "name": "Griffith, Melony G.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Griffith, Melony Citizens For",
+   "contributions": 135080.0
+  },
+  {
+   "name": "JARMAN, LOIS A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Jarman, Lois Friends of",
+   "contributions": 13200.39
+  },
+  {
+   "name": "TOLES, KAREN R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Toles, Karen R. Friends Of",
+   "contributions": 88613.45
+  },
+  {
+   "name": "GEORGE, RONALD A.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "George, Ron State Senate",
+   "contributions": 301744.63
+  },
+  {
+   "name": "CILIBERTI, BARRIE S.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Ciliberti, Barrie Citizens for",
+   "contributions": 19780.39
+  },
+  {
+   "name": "STAIGERWALD, CLARENCE O.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Staigerwald, Buddy Friends of",
+   "contributions": 33130.59
+  },
+  {
+   "name": "VALDERRAMA-LOBO, KRISELDA",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Valderrama-Lobo, Kris Citizens for",
+   "contributions": 121744.0
+  },
+  {
+   "name": "BARNES, BENJAMIN S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Barnes, Ben Friends Of",
+   "contributions": 200057.0
+  },
+  {
+   "name": "BEITZEL, WENDELL R.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Beitzel, Wendell Team",
+   "contributions": 33253.0
+  },
+  {
+   "name": "DAVIS, DEBRA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Davis, Debra Citizens for",
+   "contributions": 19586.79
+  },
+  {
+   "name": "MIELE, CHRISTIAN J.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Miele, Christian Friends of",
+   "contributions": 283645.49
+  },
+  {
+   "name": "SOPHOCLEUS, THEODORE J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Sophocleus, Theodore \"Ted\" Committee To Elect",
+   "contributions": 71257.37
+  },
+  {
+   "name": "WALKER, MELVIN G.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Walker, Jerry Supporters of",
+   "contributions": 334996.94
+  },
+  {
+   "name": "Boteler, Joseph C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Boteler, Joseph C.III Friends Of",
+   "contributions": 18909.03
+  },
+  {
+   "name": "ROBINSON, ARASH S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Robinson, Shane Friends of",
+   "contributions": 69754.43
+  },
+  {
+   "name": "EBERSOLE, ERIC D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Ebersole, Eric Elect",
+   "contributions": 102071.0
+  },
+  {
+   "name": "BROCCOLINO, DARIO J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Broccolino, Dario Friends Of",
+   "contributions": 2000.0
+  },
+  {
+   "name": "WATSON, MARY C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Watson, Courtney Friends Of",
+   "contributions": 180586.58
+  },
+  {
+   "name": "ANGEL, ANGELA M.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Angel, Angela Friends of",
+   "contributions": 57417.42
+  },
+  {
+   "name": "SIMPSON, MAURICE",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Simpson, Maurice Jr. Friends of",
+   "contributions": 38582.61
+  },
+  {
+   "name": "PATTERSON, EDITH J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Patterson, Edith Committee To Elect",
+   "contributions": 40506.16
+  },
+  {
+   "name": "PRUSKI, ANDREW C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Pruski, Andrew Friends of",
+   "contributions": 175984.06
+  },
+  {
+   "name": "ROBERSON, KENT",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Roberson, Kent Friends of",
+   "contributions": 33120.41
+  },
+  {
+   "name": "BOUCHAT, CHRISTOPHER E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Bouchat, Eric Friends Of",
+   "contributions": 33779.0
+  },
+  {
+   "name": "SLOAN, DAVID A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Sloan, David Friends of",
+   "contributions": 50356.0
+  },
+  {
+   "name": "BARTLETT, JUANITA S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Bartlett, Sandy Citizens for",
+   "contributions": 51722.0
+  },
+  {
+   "name": "CLARK, GERALD W.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Clark, Gerald Friends Of",
+   "contributions": 49766.0
+  },
+  {
+   "name": "GIANGRANDE, CRAIG S.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Giangrande, Craig for Senate",
+   "contributions": 147135.5
+  },
+  {
+   "name": "MIDDLETON, THOMAS M.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Middleton, Thomas (Mac) Friends of",
+   "contributions": 596252.18
+  },
+  {
+   "name": "CONAWAY, FRANK M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Conaway, Frank M. Jr.\" Baby Bear\", Committee For",
+   "contributions": 6417.49
+  },
+  {
+   "name": "MOSES, LEONARD D.",
+   "party": null,
+   "chamber": "house",
+   "committee": "Moses, Leonard Friends of",
+   "contributions": 28512.73
+  },
+  {
+   "name": "CLUSTER, JOSEPH C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Cluster, Joe for Maryland",
+   "contributions": 73983.56
+  },
+  {
+   "name": "WALTERS, TIMOTHY R.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Walters, Timothy (Tim) Citizens for",
+   "contributions": 70813.19
+  },
+  {
+   "name": "ANDERSON, CURTIS S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Anderson, Curt Team",
+   "contributions": 29343.0
+  },
+  {
+   "name": "PROCTOR, ELIZABETH G.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Proctor, Susie (Elizabeth) Friends of Committee",
+   "contributions": 41432.0
+  },
+  {
+   "name": "SANCHEZ, CARLO A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Sanchez, Carlo Friends of",
+   "contributions": 51319.0
+  },
+  {
+   "name": "CHARKOUDIAN, LORIG",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Charkoudian, Lorig Friends of",
+   "contributions": 93729.0
+  },
+  {
+   "name": "QUEEN, PAMELA E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Queen, Pam (Pamela) Friends of",
+   "contributions": 52565.0
+  },
+  {
+   "name": "BHANDARI, HIR B.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Bhandari, Harry (H.B.) Friends of",
+   "contributions": 185633.49
+  },
+  {
+   "name": "KENT, DEREK A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Kent, Derek Friends of",
+   "contributions": 24812.79
+  },
+  {
+   "name": "WIVELL, WILLIAM J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Wivell, William Friends of",
+   "contributions": 25299.93
+  },
+  {
+   "name": "BENNETT, BROOKS L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Bennett, Brooks Friends for",
+   "contributions": 50575.53
+  },
+  {
+   "name": "QI, HONG",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Qi, Lily Friends of",
+   "contributions": 183138.89
+  },
+  {
+   "name": "NICHOLS, JULIA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Nichols, Julia Friends of",
+   "contributions": 45428.69
+  },
+  {
+   "name": "BRUNO, RICHARD A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Bruno, Richard for Maryland, Dr.",
+   "contributions": 96549.29
+  },
+  {
+   "name": "KING PRICE, MARNITTA L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "King, Marnitta L. Friends of",
+   "contributions": 4648.0
+  },
+  {
+   "name": "ELFRETH, SARAH K.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Elfreth, Sarah Friends of",
+   "contributions": 321297.36
+  },
+  {
+   "name": "OHARE, DANIEL J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Ohare, Dan for Maryland",
+   "contributions": 25027.41
+  },
+  {
+   "name": "SIMPSON, KAREN P.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Simpson, Karen Friends of",
+   "contributions": 11198.67
+  },
+  {
+   "name": "MORALES, MARICE I.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Morales, Maric\u00e9 Friends of",
+   "contributions": 41773.8
+  },
+  {
+   "name": "RAHIM, ANEES A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Rahim, Anees Abdul Friends of",
+   "contributions": 9689.26
+  },
+  {
+   "name": "GODDARD, URCILLE D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Goddard, Urcille Friends of",
+   "contributions": 3891.0
+  },
+  {
+   "name": "FRIEDER, AMY",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Frieder, Amy for Delegate",
+   "contributions": 24344.28
+  },
+  {
+   "name": "BRATT, JONATHAN H.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Bratt, Jonathan Friends of",
+   "contributions": 1500.0
+  },
+  {
+   "name": "DOERFLINGER, MEGAN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Mioduszewski, Megan Ann Friends of",
+   "contributions": 29432.94
+  },
+  {
+   "name": "WARD, LATASHA R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Ward, LaTasha Friends of",
+   "contributions": 30249.45
+  },
+  {
+   "name": "EWING, PATRICIA L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Ewing, Patty Friends to Elect",
+   "contributions": 49540.34
+  },
+  {
+   "name": "HALVERSON, LAURIE S.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Halverson, Laurie for Delegate",
+   "contributions": 38434.91
+  },
+  {
+   "name": "TROUT, RYAN P.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Trout, Ryan Friends of",
+   "contributions": 4420.13
+  },
+  {
+   "name": "LARKIN, TAMMY L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Larkin, Tammy Friends of",
+   "contributions": 19360.95
+  },
+  {
+   "name": "ARIKAN, LAUREN C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Arikan, Lauren Friends Of",
+   "contributions": 76066.21
+  },
+  {
+   "name": "HAVIS, ANDREW L.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Havis, Lee (Andrew) for Senate",
+   "contributions": 25960.0
+  },
+  {
+   "name": "YOUNG, CAYLIN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Young, Caylin Friends of",
+   "contributions": 43695.0
+  },
+  {
+   "name": "GUYTON, MICHELE J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Guyton, Michele for Baltimore County",
+   "contributions": 90529.62
+  },
+  {
+   "name": "LEWIS, ROBBYN T.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Lewis, Robbyn Friends of",
+   "contributions": 129069.84
+  },
+  {
+   "name": "SEMAN, DAVID M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Seman, David Friends of",
+   "contributions": 36744.32
+  },
+  {
+   "name": "BRIDGES, DEOLEOUS A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Bridges, Tony (Deoleous) Friends of",
+   "contributions": 74486.0
+  },
+  {
+   "name": "WELLS, MELISSA R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Wells, Melissa Friends of",
+   "contributions": 47345.66
+  },
+  {
+   "name": "CORDERMAN, PAUL D.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Corderman, Paul Friends of",
+   "contributions": 86442.18
+  },
+  {
+   "name": "CHARLES, NICHOLAS P.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Charles, Nicholas Friends for",
+   "contributions": 19521.9
+  },
+  {
+   "name": "LIPSCOMB, LAUREN",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Lipscomb, Lauren Friends of",
+   "contributions": 18364.35
+  },
+  {
+   "name": "MILANO, LESLIE K.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Milano, Leslie Friends of",
+   "contributions": 39857.01
+  },
+  {
+   "name": "SHEN, DONG",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Shen, Dong Vote 4",
+   "contributions": 38437.2
+  },
+  {
+   "name": "STEWART, VAUGHN M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Stewart, Vaughn Friends of",
+   "contributions": 82968.04
+  },
+  {
+   "name": "OSHEA, ROBERT A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "OShea, Bob Committee to Elect",
+   "contributions": 21682.48
+  },
+  {
+   "name": "WILKINS, JHEANELLE K.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Wilkins, Jheanelle Friends of",
+   "contributions": 61021.96
+  },
+  {
+   "name": "GRAFFIUS, KEITH W.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Graffius, Keith Shore Citizens for",
+   "contributions": 38198.0
+  },
+  {
+   "name": "KHAN, HAMZA",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Khan, Hamza Friends of",
+   "contributions": 17417.32
+  },
+  {
+   "name": "THERRIEN, DAVID L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Therrien, Dave for Maryland",
+   "contributions": 19899.0
+  },
+  {
+   "name": "WRIGHT, HARRIET W.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Wright, Holly (Harriet) For Senate",
+   "contributions": 33532.0
+  },
+  {
+   "name": "BAILEY, JOHN D.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Bailey, Jack (John) Friends of",
+   "contributions": 140903.83
+  },
+  {
+   "name": "HILL, TESSA B.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Hill-Aston, Tessa Friends of",
+   "contributions": 3675.0
+  },
+  {
+   "name": "LENDZONDZO, ARIAN N.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Lendzondzo, Malik (Arian) for State Delegate D20",
+   "contributions": 1887.0
+  },
+  {
+   "name": "HEBBAR, SACHIDANAND A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Hebbar, (Sachidanand) Sachin for Citizens",
+   "contributions": 43895.99
+  },
+  {
+   "name": "BENN, SARAHIA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Benn, Sarahia Friends to Elect",
+   "contributions": 7537.4
+  },
+  {
+   "name": "HESTER, KATHRYN F.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Hester, Katie (Kathryn) Fry Friends of",
+   "contributions": 200610.95
+  },
+  {
+   "name": "RUTH, SHEILA S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Ruth, Sheila Friends of",
+   "contributions": 26036.91
+  },
+  {
+   "name": "HOOE, JOSEPH D.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Hooe, Joe Friends of",
+   "contributions": 25912.1
+  },
+  {
+   "name": "AHMED, SHABNAM",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Ahmed, Shabnam Friends of",
+   "contributions": 26206.11
+  },
+  {
+   "name": "HALL, KIRKLAND J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Hall Sr., Kirkland J. Citizens for",
+   "contributions": 4254.0
+  },
+  {
+   "name": "DERNOGA, MATTHEW A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Dernoga, Matt Citizens for",
+   "contributions": 55307.0
+  },
+  {
+   "name": "ATTAR, DALYA",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Attar, Dalya for Baltimore",
+   "contributions": 49149.34
+  },
+  {
+   "name": "HARTMAN, WAYNE A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Hartman, Wayne Friends of",
+   "contributions": 77812.0
+  },
+  {
+   "name": "HOVERMALE, TRACIE C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Hovermale, Tracie Citizens to Elect",
+   "contributions": 27910.52
+  },
+  {
+   "name": "LOVE, SARA N.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Love, Sara Friends of",
+   "contributions": 138724.67
+  },
+  {
+   "name": "STEVENSON, CHRISTOPHER L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Stevenson, Chris Friends of",
+   "contributions": 3449.49
+  },
+  {
+   "name": "FREEMAN, HARRY E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Freeman, Harry Friends of",
+   "contributions": 11209.99
+  },
+  {
+   "name": "BARRIE, FATMATA",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Barrie, Fatmata Friends of",
+   "contributions": 20523.06
+  },
+  {
+   "name": "MATTHEWS, SARAH L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Matthews, Sarah Committee to Elect",
+   "contributions": 745.0
+  },
+  {
+   "name": "WALTERS, THOMAS E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Walters, Tom Vote",
+   "contributions": 3832.07
+  },
+  {
+   "name": "DOUGLASS, JESSICA E.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Douglass, Jessica Friends of",
+   "contributions": 47505.59
+  },
+  {
+   "name": "BARNETT, AARON J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Barnett, Aaron J. Friends of",
+   "contributions": 24544.0
+  },
+  {
+   "name": "JOHNSON, STEVEN C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Johnson, Steve Friends of",
+   "contributions": 19318.38
+  },
+  {
+   "name": "HENNESSEY, JOSEPH A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Hennessey, Joseph Friends of",
+   "contributions": 15470.0
+  },
+  {
+   "name": "BEYER, DANA",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Beyer, Dana Friends Of",
+   "contributions": 76100.0
+  },
+  {
+   "name": "SOLOMON, JARED S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Solomon, Jared Friends of",
+   "contributions": 94863.28
+  },
+  {
+   "name": "WELKER, MICHAEL",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Welker, Michael for Maryland",
+   "contributions": 3653.67
+  },
+  {
+   "name": "PORTER, JONATHAN D.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Porter, Jonathan Friends of",
+   "contributions": 10407.93
+  },
+  {
+   "name": "PERINI, PETER E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Perini, Peter E. Friends of",
+   "contributions": 31560.0
+  },
+  {
+   "name": "FELDMARK, JESSICA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Feldmark, Jessica Friends of",
+   "contributions": 83800.81
+  },
+  {
+   "name": "HOWARD, JAMES P.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Howard, James Friends of",
+   "contributions": 7435.14
+  },
+  {
+   "name": "MAKILA, TOMMI O.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Makila, Tommi Friends of",
+   "contributions": 16585.51
+  },
+  {
+   "name": "ZIEGLER, NATALIE C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Ziegler, Natalie Friends of",
+   "contributions": 40689.61
+  },
+  {
+   "name": "BROWNING, EVERETT D.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Browning, Everett Citizens to Elect",
+   "contributions": 56642.35
+  },
+  {
+   "name": "GEELHAAR, GLEN A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Geelhaar, Glen Friends of",
+   "contributions": 6927.31
+  },
+  {
+   "name": "HEARTSTRONG, WINNIE B.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Obike, Winnie (Nma) Committee to Elect",
+   "contributions": 8929.31
+  },
+  {
+   "name": "ROMANO, OLIVIA M.",
+   "party": "Green",
+   "chamber": "house",
+   "committee": "Romano, (Olivia) Liv for Change",
+   "contributions": 308.44
+  },
+  {
+   "name": "DREISBACH, MICHAEL M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Dreisbach, Mike Citizens for",
+   "contributions": 18080.0
+  },
+  {
+   "name": "PAUL, SAMIR",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Paul, Samir Friends of",
+   "contributions": 189653.0
+  },
+  {
+   "name": "HAFFNER, JULIAN",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Haffner, Julian A. Friends of",
+   "contributions": 10228.0
+  },
+  {
+   "name": "AHMED, ANIS",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Ahmed, Anis Friends of",
+   "contributions": 12388.0
+  },
+  {
+   "name": "TILLEY, WALTER",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Tilley, Walter (\"Butch\") Friends of",
+   "contributions": 40967.95
+  },
+  {
+   "name": "PAULSHOCK, WILLIAM H.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Paulshock, Bill Friends Of",
+   "contributions": 35040.0
+  },
+  {
+   "name": "ROGERS, MICHAEL J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Rogers, Mike Campaign Committee",
+   "contributions": 98249.38
+  },
+  {
+   "name": "LOEWENTHEIL, NATHANIEL F.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Loewentheil, Nate Friends of",
+   "contributions": 475369.53
+  },
+  {
+   "name": "MASSETT, SABRINA R.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Massett, Sabrina for Senate",
+   "contributions": 8624.86
+  },
+  {
+   "name": "CAIN, ALICE J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Cain, Alice Friends of",
+   "contributions": 175808.02
+  },
+  {
+   "name": "LUBY, PAMELA",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Luby, Pamela Friends of",
+   "contributions": 32417.41
+  },
+  {
+   "name": "JACKSON, CARL W.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Jackson, Carl Citizens for",
+   "contributions": 68509.26
+  },
+  {
+   "name": "SMITH, BRENCIS D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Smith, Brencis D. The Committee to Elect",
+   "contributions": 5919.05
+  },
+  {
+   "name": "ACEVERO, GABRIEL",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Acevero, Gabriel Friends of",
+   "contributions": 48265.89
+  },
+  {
+   "name": "BAKER, TERRY L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Baker, Terry, Citizens for",
+   "contributions": 3660.0
+  },
+  {
+   "name": "LEWIS, JAZZ M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Lewis, Jazz Friends of",
+   "contributions": 73694.64
+  },
+  {
+   "name": "KAUFMAN, AARON M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Kaufman, Aaron Friends of",
+   "contributions": 17164.0
+  },
+  {
+   "name": "RUBIN, JOEL M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Rubin, Joel Friends of",
+   "contributions": 100704.86
+  },
+  {
+   "name": "JACKSON, LINZY",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Jackson, Linzy Friends of",
+   "contributions": 21843.09
+  },
+  {
+   "name": "HINEBAUGH, JAMES C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Hinebaugh, James (Jim) Citizens for",
+   "contributions": 11495.0
+  },
+  {
+   "name": "JACOBS, HARVEY S.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Jacobs, Harvey for Maryland",
+   "contributions": 29098.0
+  },
+  {
+   "name": "IVEY, ROBERT J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Ivey, Julian Friends of",
+   "contributions": 50663.0
+  },
+  {
+   "name": "LEARY, KEVIN G.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Leary, Kevin Friends Of",
+   "contributions": 5472.0
+  },
+  {
+   "name": "UNGER, DARIAN W.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Unger, Darian Friends of",
+   "contributions": 66594.0
+  },
+  {
+   "name": "JOHNSON, ANDRE V.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Johnson, Andre Elect",
+   "contributions": 8854.71
+  },
+  {
+   "name": "MERRILL, JOHN D.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Merrill, J.D. (John David) Friends of",
+   "contributions": 232050.8
+  },
+  {
+   "name": "BURNS, BRUCE D.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Burns, Darren (Bruce) for Delegate",
+   "contributions": 9178.48
+  },
+  {
+   "name": "MCINTIRE, STEPHEN A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "McIntire, Stephen Friends of",
+   "contributions": 30096.75
+  },
+  {
+   "name": "GEPPI, MICHAEL A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Geppi, Michael A. Committee to Elect",
+   "contributions": 21320.84
+  },
+  {
+   "name": "MARTINEZ, ASHANTI F.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Martinez, Ashanti  Friends of",
+   "contributions": 18109.27
+  },
+  {
+   "name": "ENGLISH, RUSSELL C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "English, Russ Citizens for Delegate for",
+   "contributions": 2077.99
+  },
+  {
+   "name": "NORMAN, JOSEPH A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Norman, Joe (Joseph) Friends of",
+   "contributions": 46762.0
+  },
+  {
+   "name": "ETIENNE, ROUSSAN J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Etienne, Roussan Jr. Friends of",
+   "contributions": 2074.49
+  },
+  {
+   "name": "WOODS, JAMILA J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Woods, Jamila Friends of",
+   "contributions": 46007.11
+  },
+  {
+   "name": "ANYANWU, EVARESTUS E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Anyanwu, Evarestus (Chike) Citizens for",
+   "contributions": 10141.25
+  },
+  {
+   "name": "FOWLER, JASON T.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Fowler, Jason The People for",
+   "contributions": 60574.01
+  },
+  {
+   "name": "HARDY, SHERMAN R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Hardy, Sherman Friends of",
+   "contributions": 20614.0
+  },
+  {
+   "name": "WILLIAMS, DONJUAN L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Williams, Dj (Donjuan) Friends of",
+   "contributions": 20510.2
+  },
+  {
+   "name": "JAMES, MARYDULANY D.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "James, M-D Friends Of",
+   "contributions": 34217.95
+  },
+  {
+   "name": "THOMAS, MICHAEL A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Thomas, Michael A. Friends of",
+   "contributions": 68096.53
+  },
+  {
+   "name": "BERKOWITZ, ALLISON M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Berkowitz, Allison For Delegate",
+   "contributions": 20242.36
+  },
+  {
+   "name": "BRANNAN, JENNIFER M.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Brannan, Jennifer Friends of",
+   "contributions": 16766.25
+  },
+  {
+   "name": "WEST, WESTLEY",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "West, Westley Friends of",
+   "contributions": 21007.0
+  },
+  {
+   "name": "GIFFORD, NORMAN H.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Gifford, Norman Friends to Elect",
+   "contributions": 1074.39
+  },
+  {
+   "name": "LASKIN, SHELDON H.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Laskin, Sheldon Friends of",
+   "contributions": 65211.9
+  },
+  {
+   "name": "MACK, KEVIN D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Mack, Kevin Friends of",
+   "contributions": 78416.66
+  },
+  {
+   "name": "COOK, CHARLES",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Cook, Chuck (Charles) for Anne Arundel County",
+   "contributions": 3108.28
+  },
+  {
+   "name": "ONYE, STANLEY O.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Onye, Stanley For Delegate, Friends of Dr",
+   "contributions": 21520.0
+  },
+  {
+   "name": "JONESODEN, JENESE",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Jones, Jenese Citizens for",
+   "contributions": 2535.0
+  },
+  {
+   "name": "WOODWARD, CRYSTAL C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Woodward, Crystal for Delegate, Friends of",
+   "contributions": 18825.0
+  },
+  {
+   "name": "WILSON, DAVID W.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Wilson, David Friends of",
+   "contributions": 32102.85
+  },
+  {
+   "name": "KALYANARAMAN, NILESH",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Kalyanaraman, Nilesh Friends of",
+   "contributions": 104099.2
+  },
+  {
+   "name": "HOVERMAN, ANDREW T.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Hoverman, (Andrew) Andy Friends of",
+   "contributions": 3437.54
+  },
+  {
+   "name": "BEHLER, DYLAN A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Behler, Dylan Friends of",
+   "contributions": 2715.0
+  },
+  {
+   "name": "TYLER, DENISE A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Tyler, Denise Friends of",
+   "contributions": 2250.0
+  },
+  {
+   "name": "Crank, Kathleen K.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Crank, Kathleen Kositzky The Committee to Elect",
+   "contributions": 17177.67
+  },
+  {
+   "name": "MORGAN, TODD B.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Morgan, Todd Friends of",
+   "contributions": 31250.0
+  },
+  {
+   "name": "HARRIS, KEVIN M.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Harris, Kevin M. Friends of",
+   "contributions": 29837.83
+  },
+  {
+   "name": "FOX, KELLY N.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Fox, Kelly N. Campaign to Elect",
+   "contributions": 25605.68
+  },
+  {
+   "name": "GALLION, JASON C.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Gallion, Jason Friends of",
+   "contributions": 20395.0
+  },
+  {
+   "name": "DAY, WILLIAM D.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Day, Bill (William) Friends of",
+   "contributions": 45376.28
+  },
+  {
+   "name": "HARMAN, ANTHONY S.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Harman, (Anthony) For What Is Right and Fair",
+   "contributions": 7499.61
+  },
+  {
+   "name": "REESE, MARY E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Reese, Mary Friends of",
+   "contributions": 10416.26
+  },
+  {
+   "name": "BRAVO, YSELA",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Bravo-Schwetje, Ysela Friends of",
+   "contributions": 19577.47
+  },
+  {
+   "name": "CARDIN, JON S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Cardin, Jon Committee to Elect",
+   "contributions": 84609.0
+  },
+  {
+   "name": "HASTINGS, JOSHUA A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Hastings, Josh for Wicomico",
+   "contributions": 12184.27
+  },
+  {
+   "name": "BOYCE, REGINA T.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Boyce, Regina T. Friends of",
+   "contributions": 29951.92
+  },
+  {
+   "name": "GEDAMU, YODIT N.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Gedamu, (Yodit) Mimi for Maryland, Friends of",
+   "contributions": 3290.0
+  },
+  {
+   "name": "WARD, CARL A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Ward, Carl Friends of",
+   "contributions": 55320.41
+  },
+  {
+   "name": "LOKER, ROBERTA M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Loker, (Roberta) for the House of Delegates",
+   "contributions": 28195.29
+  },
+  {
+   "name": "TURNER, VERONICA L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Turner, Veronica Friends Of",
+   "contributions": 25336.0
+  },
+  {
+   "name": "SHETTY, EMILY K.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Shetty, Emily Friends of",
+   "contributions": 69207.23
+  },
+  {
+   "name": "LUEST, HELGA E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Luest, Helga Vote",
+   "contributions": 14659.49
+  },
+  {
+   "name": "SOBRATTI, CLINT L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Sobratti, Clint The People's for",
+   "contributions": 1551.36
+  },
+  {
+   "name": "ROBINSON, TIMOTHY W.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Robinson, Tim Citizens for",
+   "contributions": 84032.33
+  },
+  {
+   "name": "BRYANT, MAUREEN G.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Bryant, Maureen Friends of",
+   "contributions": 9687.0
+  },
+  {
+   "name": "NOVOTNY, REID J.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Novotny, Reid J. Elect",
+   "contributions": 13115.0
+  },
+  {
+   "name": "BARLOW, JOSHUA C.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Barlow, (Joshua) 4 Delegate",
+   "contributions": 2875.0
+  },
+  {
+   "name": "LACEY, SARAH A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Lacey, Sarah Friends to Elect",
+   "contributions": 10060.91
+  },
+  {
+   "name": "LEONARD, ROBERT J.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Leonard, Robert Friends of",
+   "contributions": 93783.7
+  },
+  {
+   "name": "ROSERO, JONATHAN E.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Rosero, Jonathan Citizens for",
+   "contributions": 6245.15
+  },
+  {
+   "name": "HURWITZ, MICHELLE",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Hurwitz, Eve Friends of",
+   "contributions": 44772.98
+  },
+  {
+   "name": "Harris, Melanie",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Harris, Melanie for MD 12",
+   "contributions": 18519.23
+  },
+  {
+   "name": "KING, MARC A.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "King, Marc Citizens for Lt. Col LD15",
+   "contributions": 28628.61
+  },
+  {
+   "name": "BOWERS, JOBETH R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Bowers, (Jobeth) for Cecil",
+   "contributions": 34368.74
+  },
+  {
+   "name": "SMITH, STEPHANIE D.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Smith, Stephanie Friends of",
+   "contributions": 38260.31
+  },
+  {
+   "name": "PARENTI, PHILIP A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Parenti, Phil for Maryland",
+   "contributions": 4613.47
+  },
+  {
+   "name": "NAWROCKI, RYAN M.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Nawrocki, Ryan Friends of",
+   "contributions": 191753.58
+  },
+  {
+   "name": "REHMAN, SAIFUR",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Rehman, Saifur (Saif) Friends of",
+   "contributions": 731.8
+  },
+  {
+   "name": "CRUTCHFIELD, CHARLOTTE A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Crutchfield, Charlotte Friends of",
+   "contributions": 34587.41
+  },
+  {
+   "name": "MEDINGER, DANIEL L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Medinger, Dan Friends of",
+   "contributions": 40874.52
+  },
+  {
+   "name": "PUZON, DANIEL I.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Puzon, Ike Friends of",
+   "contributions": 16577.24
+  },
+  {
+   "name": "MCCOLLOUGH, SHARON S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "McCollough, Sharon Friends of",
+   "contributions": 7450.0
+  },
+  {
+   "name": "CROSBY, BRIAN M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Crosby, Brian M. Committee to Elect",
+   "contributions": 101911.01
+  },
+  {
+   "name": "PROCTOR, ORLANDO C.",
+   "party": "Other",
+   "chamber": "house",
+   "committee": "Proctor, Orlando for Delegate",
+   "contributions": 20.0
+  },
+  {
+   "name": "RUSSELL, MICHAEL J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Russell, Michael Citizens to Elect",
+   "contributions": 2019.0
+  },
+  {
+   "name": "PASTI, DAVID N.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Pasti, Dave Friends of",
+   "contributions": 30705.0
+  },
+  {
+   "name": "BAILEY, MARK E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Bailey, Mark Friends to Elect",
+   "contributions": 41035.45
+  },
+  {
+   "name": "KINSEY, MATTHEW J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Kinsey, Justin Friends of",
+   "contributions": 13135.05
+  },
+  {
+   "name": "HOLLAND, EDWARD P.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Holland, Edward Citizens for",
+   "contributions": 15397.47
+  },
+  {
+   "name": "BOWERSOX, MICHAEL J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Bowersox, Mike Elect",
+   "contributions": 28383.65
+  },
+  {
+   "name": "NEMEC, DANIEL A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Nemec, Daniel for Maryland",
+   "contributions": 7696.44
+  },
+  {
+   "name": "MANEVAL, GRETCHEN A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Maneval, Gretchen Friends of",
+   "contributions": 71513.6
+  },
+  {
+   "name": "BATES, MALCOLM H.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Heflin, Malcolm J. Friends of",
+   "contributions": 5420.0
+  },
+  {
+   "name": "BOSTON, STEPHANIE A.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Boston, Stephanie A. Citizens to Elect",
+   "contributions": 11475.0
+  },
+  {
+   "name": "XIN, HONGJUN",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Xin, (HongJun) HJ for MD Senator",
+   "contributions": 2700.0
+  },
+  {
+   "name": "BREWER, THOMAS A.",
+   "party": "Democrat",
+   "chamber": "senate",
+   "committee": "Brewer, Thomas Friends of",
+   "contributions": 18262.35
+  },
+  {
+   "name": "BAGNALL TUDBALL, HEATHER A.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Bagnall Tudball, Heather Citizens for",
+   "contributions": 15348.81
+  },
+  {
+   "name": "JENKINS, MARLIN J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Jenkins, Marlin Friends of",
+   "contributions": 41581.29
+  },
+  {
+   "name": "ROBERTS, DENISE G.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Roberts, Denise Friends of",
+   "contributions": 10659.25
+  },
+  {
+   "name": "AUTERI, GABRIEL W.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Auteri, Gabriel Friends of",
+   "contributions": 48046.18
+  },
+  {
+   "name": "BOEHL, BENJAMIN J.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Boehl, Ben (Benjamin) Friends of",
+   "contributions": 4556.86
+  },
+  {
+   "name": "LOPEZ, LESLEY J.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Lopez, Lesley for Maryland",
+   "contributions": 18813.08
+  },
+  {
+   "name": "PHILLIPS, TIZOC A.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Phillips, Al for Delegate D39",
+   "contributions": 4467.5
+  },
+  {
+   "name": "WRIGHT, MICHELLE R.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Wright, Michelle Friends of",
+   "contributions": 5559.0
+  },
+  {
+   "name": "MILLER, DELANEO L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Miller, Delaneo, Friends of, 24th District",
+   "contributions": 435.0
+  },
+  {
+   "name": "MCDOWELL, JAMES E.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "McDowell Jr., James Friends of",
+   "contributions": 6087.99
+  },
+  {
+   "name": "DAYHOFF, JUSTIN L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Dayhoff, Justin Friends of",
+   "contributions": 27504.87
+  },
+  {
+   "name": "BOWERS, RICHARD C.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Bowers, (Richard) Rick Friends of",
+   "contributions": 7643.98
+  },
+  {
+   "name": "HENRY-SPIRES, DIEDRA B.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Henry-Spires, Diedra Friends of",
+   "contributions": 5975.0
+  },
+  {
+   "name": "TOMLINSON, CHRISTOPHER L.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Tomlinson, Christopher Friends of",
+   "contributions": 2351.33
+  },
+  {
+   "name": "MARCOS, BORIS",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Marcos, Brian (Boris) Friends of",
+   "contributions": 900.0
+  },
+  {
+   "name": "BARNHART, ANDREW J.",
+   "party": "Green",
+   "chamber": "house",
+   "committee": "Barnhart, Andrew for Delegate",
+   "contributions": 1540.0
+  },
+  {
+   "name": "MACDONALD, STACIE C.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "MacDonald, Stacie for Anne Arundel County",
+   "contributions": 120.0
+  },
+  {
+   "name": "WALKER, PENNY L.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Walker, Penny Citizens for",
+   "contributions": 66050.45
+  },
+  {
+   "name": "PATE, DREW A.",
+   "party": "Green",
+   "chamber": "house",
+   "committee": "Pate, Drew Friends of",
+   "contributions": 15987.51
+  },
+  {
+   "name": "AFFUMMCALLISTER, ABENA Y.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Affum-McAllister, Abena Friends of",
+   "contributions": 153.48
+  },
+  {
+   "name": "SCHANDELMEIER, BROOKS",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Schandelmeier, Brooks Friends of",
+   "contributions": 4686.1
+  },
+  {
+   "name": "ARMSTRONG, PATRICK M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Armstrong, Patrick Friends of",
+   "contributions": 3681.18
+  },
+  {
+   "name": "FRAZIER, DENNIS E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Frazier, Dennis Friends for",
+   "contributions": 15800.0
+  },
+  {
+   "name": "RATHELL, JEFFREY D.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Rathell, Doug (Jeffrey) Elect",
+   "contributions": 3338.3
+  },
+  {
+   "name": "DECARLO, DIANE F.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "DeCarlo, Diane Voter's Committee to Elect",
+   "contributions": 5121.11
+  },
+  {
+   "name": "THOMAS, KEVIN S.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Thomas, Kevin Samuel Friends of",
+   "contributions": 1290.0
+  },
+  {
+   "name": "AXE, ARON M.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Axe, Aron Friends of",
+   "contributions": 27251.08
+  },
+  {
+   "name": "MATHIS, JAMES D.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Mathis, James for Maryland",
+   "contributions": 2425.0
+  },
+  {
+   "name": "FRANKS, RONNIE C.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Franks, Ron Friends of",
+   "contributions": 10282.91
+  },
+  {
+   "name": "DROZD, ROBERT S.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Drozd, (Robert) for Maryland",
+   "contributions": 5572.01
+  },
+  {
+   "name": "ALSTON, TIFFANY T.",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Alston, Tiffany Friends of",
+   "contributions": 9450.0
+  },
+  {
+   "name": "ASHBURN, JAMES E.",
+   "party": "Republican",
+   "chamber": "house",
+   "committee": "Ashburn, James Friends to Elect",
+   "contributions": 1025.0
+  },
+  {
+   "name": "RANDERS PEHRSON, CHRISTOPHER B.",
+   "party": "Other",
+   "chamber": "senate",
+   "committee": "Randers Pehrson, Christopher Citizens for",
+   "contributions": 3300.0
+  },
+  {
+   "name": "OWENS, HUBERT E.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Owens, (Hubert) For Senate 32",
+   "contributions": 10632.3
+  },
+  {
+   "name": "PRICE, FRED M.",
+   "party": "Republican",
+   "chamber": "senate",
+   "committee": "Price, (Fred) is Right, The",
+   "contributions": 2200.0
+  },
+  {
+   "name": "PIERRE, ANDY-EVENS",
+   "party": "Democrat",
+   "chamber": "house",
+   "committee": "Pierre, Andy Citizens for",
+   "contributions": 756.0
+  }
+ ]
+}

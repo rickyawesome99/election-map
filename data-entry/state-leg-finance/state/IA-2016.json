@@ -1,0 +1,1323 @@
+{
+ "state": "IA",
+ "cycle": 2016,
+ "source": "Iowa Ethics and Campaign Disclosure Board (itemized contributions + in-kind)",
+ "dataThrough": "12/31/2016",
+ "house": {
+  "1": [
+   {
+    "name": "John Wills",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 38534.66,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "McCoy For House 26",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4633.57,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Skyler Wheeler",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 13732.14,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Holz for House District 5 Committee",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 24170.87,
+    "expenditures": null
+   },
+   {
+    "name": "Pat Ritz for State House",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 464.21,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Gassman for House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 68098.27,
+    "expenditures": null
+   },
+   {
+    "name": "Grussing for Representative",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8405.27,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Terry Baxter for Iowa House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 26692.88,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Committee to Re-Elect Helen Miller",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 29603.23,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Worthan for Iowa House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 21576.3,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Brian Best",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 69639.91,
+    "expenditures": null
+   },
+   {
+    "name": "Kenneth Myers",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1000,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Chris Hall",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 128740.01,
+    "expenditures": null
+   },
+   {
+    "name": "Shaun Broyhill for Iowa House of Representatives",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 31027.17,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "HENDERSON FOR IOWA HOUSE - DISSOLVED",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 46620.76,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Charlie McConkey for State Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 71968.26,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Mary Ann Hanusa",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 50647.96,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "Matt Windschitl",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 123279.13,
+    "expenditures": null
+   },
+   {
+    "name": "Creasman for House",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3410.07,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Steven Holt",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17970.74,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Watts for House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 27493.5,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Scott Heldt for Iowa House",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15458,
+    "expenditures": null
+   },
+   {
+    "name": "Baudler for State Representative",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 24884.07,
+    "expenditures": null
+   },
+   {
+    "name": "Bob Boyle for House 2016",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 10305.05,
+    "expenditures": null
+   },
+   {
+    "name": "Committee to Elect Ryan Ketelsen",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 2407.35,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Tom Moore",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 16628.24,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Committee to Elect Greg Forristall",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 22169.69,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "David Sieck",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 44871.34,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Dolecheck for Representative",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17331.3,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Gustafson for Iowa House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15146.32,
+    "expenditures": null
+   },
+   {
+    "name": "Justin Knight",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5206,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Committee to Elect Scott Ourth",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 120855.52,
+    "expenditures": null
+   },
+   {
+    "name": "Rebel Snodgrass for Iowa",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 49675.9,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "N. Joel Fry",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 67082.16,
+    "expenditures": null
+   },
+   {
+    "name": "IA House Higdon Campaign",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7305,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Greg Heartsill",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 38398.27,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Martin H. Duffy IV",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11358.47,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Dan Kelley for State Representative",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 15204.14,
+    "expenditures": null
+   },
+   {
+    "name": "Wes Breckenridge for State Representative",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 53049.11,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Citizens for Joe Riding",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14215,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "Rick Olson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 27217.23,
+    "expenditures": null
+   },
+   {
+    "name": "MATTHEW Christoffersen",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2681.7,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Ruth Ann Gaines for State Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 12145,
+    "expenditures": null
+   },
+   {
+    "name": "Bill Charlier for Iowa Legislature",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2620,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "Brian Meyer",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 33179.45,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Committee to Elect Bruce Hunter",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 18900,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "Marti Anderson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 32385,
+    "expenditures": null
+   },
+   {
+    "name": "Scott Miller for House",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1372.01,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "Andrea Phillips",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 38370.89,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Heather Matson for Iowa House",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 140961.13,
+    "expenditures": null
+   },
+   {
+    "name": "Kevin Koester for House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 83537.4,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "Jake Highfill",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 66055.92,
+    "expenditures": null
+   },
+   {
+    "name": "Maridith Morris for Iowa House",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 26135.13,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Forbes for Iowa House",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 71704.76,
+    "expenditures": null
+   },
+   {
+    "name": "Scott Reed for Iowa",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18740.71,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "Oldson for State Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 70622.44,
+    "expenditures": null
+   }
+  ],
+  "43": [
+   {
+    "name": "Christopher Hagenow",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 996801.43,
+    "expenditures": null
+   },
+   {
+    "name": "Jennifer Konfrst",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 339400.11,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "Robert Taylor",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 76902.3,
+    "expenditures": null
+   }
+  ],
+  "45": [
+   {
+    "name": "Beth Wessel-Kroeschell",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 36256.84,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "Committee to Elect Lisa Heddens",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 37451.09,
+    "expenditures": null
+   }
+  ],
+  "47": [
+   {
+    "name": "Baltimore for Iowa House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 85071.16,
+    "expenditures": null
+   },
+   {
+    "name": "Deb Duncan",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10760.42,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "Sherrie Taha",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1420,
+    "expenditures": null
+   }
+  ],
+  "49": [
+   {
+    "name": "Deyoe for House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 23241.3,
+    "expenditures": null
+   }
+  ],
+  "50": [
+   {
+    "name": "Patrick Grassley",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 138211.8,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "Tim Hejhal",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 164819.13,
+    "expenditures": null
+   },
+   {
+    "name": "Jane Bloomingdale",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 97194.86,
+    "expenditures": null
+   }
+  ],
+  "52": [
+   {
+    "name": "Stacie Stokes for Iowa",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 36579.19,
+    "expenditures": null
+   }
+  ],
+  "53": [
+   {
+    "name": "Citizens for Sharon Steckman",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 58547.08,
+    "expenditures": null
+   },
+   {
+    "name": "Hovland For House",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 42660.22,
+    "expenditures": null
+   }
+  ],
+  "54": [
+   {
+    "name": "Upmeyer for House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1136257.48,
+    "expenditures": null
+   }
+  ],
+  "55": [
+   {
+    "name": "Dissolved Bergan for Iowa House",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 302347.58,
+    "expenditures": null
+   }
+  ],
+  "56": [
+   {
+    "name": "RUFF for IOWA HOUSE DIST. 56",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 330024.12,
+    "expenditures": null
+   }
+  ],
+  "57": [
+   {
+    "name": "SHANNON LUNDGREN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 272995.52,
+    "expenditures": null
+   },
+   {
+    "name": "Stecher for Iowa House",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 227948.58,
+    "expenditures": null
+   }
+  ],
+  "58": [
+   {
+    "name": "Andy McKean",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 146387.97,
+    "expenditures": null
+   },
+   {
+    "name": "Jessica Kean for Iowa",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 238278.78,
+    "expenditures": null
+   }
+  ],
+  "59": [
+   {
+    "name": "Bob Kressig",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 56068.29,
+    "expenditures": null
+   },
+   {
+    "name": "Drew Speer",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15332.27,
+    "expenditures": null
+   },
+   {
+    "name": "Taiber for Iowa House",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 6921.05,
+    "expenditures": null
+   }
+  ],
+  "60": [
+   {
+    "name": "Gary Kroeger",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 44468.7,
+    "expenditures": null
+   }
+  ],
+  "62": [
+   {
+    "name": "Todd Obadal",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3066.3,
+    "expenditures": null
+   }
+  ],
+  "63": [
+   {
+    "name": "Teresa Meyer for State Representative District 63",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 40460.95,
+    "expenditures": null
+   }
+  ],
+  "64": [
+   {
+    "name": "Bearinger for House",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 53934.12,
+    "expenditures": null
+   },
+   {
+    "name": "Schulz For House",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4805.79,
+    "expenditures": null
+   }
+  ],
+  "67": [
+   {
+    "name": "Seidl for State Representative",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 24435.54,
+    "expenditures": null
+   },
+   {
+    "name": "Ashley Hinson for House",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 121577.89,
+    "expenditures": null
+   }
+  ],
+  "68": [
+   {
+    "name": "Rizer for House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 468986.67,
+    "expenditures": null
+   }
+  ],
+  "71": [
+   {
+    "name": "Mark Smith for Iowa House",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 515906,
+    "expenditures": null
+   }
+  ],
+  "72": [
+   {
+    "name": "Dean Fisher",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 55700.82,
+    "expenditures": null
+   },
+   {
+    "name": "Wrage for State Representative",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 30557.68,
+    "expenditures": null
+   }
+  ],
+  "73": [
+   {
+    "name": "Robert Kaufmann",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 135763.88,
+    "expenditures": null
+   }
+  ],
+  "74": [
+   {
+    "name": "David Jacoby",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 44302.09,
+    "expenditures": null
+   }
+  ],
+  "75": [
+   {
+    "name": "Paula Denison",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 18224.49,
+    "expenditures": null
+   }
+  ],
+  "76": [
+   {
+    "name": "DAVID MAXWELL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 68048.34,
+    "expenditures": null
+   },
+   {
+    "name": "Tornholm for Iowa House",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11436.55,
+    "expenditures": null
+   }
+  ],
+  "77": [
+   {
+    "name": "Royce Phillips",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 8641.49,
+    "expenditures": null
+   },
+   {
+    "name": "Amy Nielsen",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 48763.34,
+    "expenditures": null
+   }
+  ],
+  "78": [
+   {
+    "name": "Jarad Klein",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 38203.56,
+    "expenditures": null
+   }
+  ],
+  "80": [
+   {
+    "name": "Sheets For Iowa House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 9734,
+    "expenditures": null
+   },
+   {
+    "name": "Levi Grenko for Iowa Representative",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4125,
+    "expenditures": null
+   }
+  ],
+  "81": [
+   {
+    "name": "Gaskill for State Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 31440.82,
+    "expenditures": null
+   }
+  ],
+  "82": [
+   {
+    "name": "Curt Hanson for State Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 19864.08,
+    "expenditures": null
+   }
+  ],
+  "83": [
+   {
+    "name": "Kearns for State Representative Committee",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15940,
+    "expenditures": null
+   }
+  ],
+  "85": [
+   {
+    "name": "Lensing for House District #85",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16482.62,
+    "expenditures": null
+   }
+  ],
+  "87": [
+   {
+    "name": "Cohoon for Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 35139.82,
+    "expenditures": null
+   }
+  ],
+  "88": [
+   {
+    "name": "Committee to Elect Ryan Drew",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 141613.12,
+    "expenditures": null
+   },
+   {
+    "name": "David Kerr State House",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 61515.1,
+    "expenditures": null
+   }
+  ],
+  "91": [
+   {
+    "name": "Committee to Elect Gary Carlson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 99793.74,
+    "expenditures": null
+   },
+   {
+    "name": "Phil Wiese for Iowa Committee",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 196418.13,
+    "expenditures": null
+   }
+  ],
+  "92": [
+   {
+    "name": "Paustian for State House",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 340594.81,
+    "expenditures": null
+   },
+   {
+    "name": "Krumwiede For Iowa House",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 114218.34,
+    "expenditures": null
+   }
+  ],
+  "94": [
+   {
+    "name": "Gary Mohr",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 53139.54,
+    "expenditures": null
+   }
+  ],
+  "95": [
+   {
+    "name": "Zumbach for Iowa House",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 502232.73,
+    "expenditures": null
+   },
+   {
+    "name": "Whitehead for State House",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 179959.85,
+    "expenditures": null
+   }
+  ],
+  "96": [
+   {
+    "name": "Lee Hein",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 86425.61,
+    "expenditures": null
+   },
+   {
+    "name": "Matt Hanlon",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7365.94,
+    "expenditures": null
+   }
+  ],
+  "97": [
+   {
+    "name": "Norlin Mommsen",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30969.8,
+    "expenditures": null
+   },
+   {
+    "name": "Jeff Wolf for State Representative",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5877.44,
+    "expenditures": null
+   }
+  ],
+  "98": [
+   {
+    "name": "Mary Wolfe Campaign",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 26167.37,
+    "expenditures": null
+   }
+  ],
+  "99": [
+   {
+    "name": "Friends of Abby Finkenauer",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 21000.62,
+    "expenditures": null
+   }
+  ],
+  "100": [
+   {
+    "name": "Charles Isenhart",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 33919.36,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "2": [
+   {
+    "name": "Feenstra for Senate",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 126649.88,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Dennis Guth",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 42286.85,
+    "expenditures": null
+   },
+   {
+    "name": "Bangert for State Senate",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 21727.26,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Mark Segebart for Senate",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 43455.25,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Daniel Dawson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 683380.53,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Jacob Chapman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 78152,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Mark Costello",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 29793.5,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Amy Sinclair",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 46611.47,
+    "expenditures": null
+   },
+   {
+    "name": "Ruth Smith for Senate",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 17627.12,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Janet Petersen",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 77390,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Miyoko Hikiji for Senate",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 34281.72,
+    "expenditures": null
+   },
+   {
+    "name": "Zaun for Iowa Senate",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 66894.87,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Schneider for State Senate",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 160841.37,
+    "expenditures": null
+   },
+   {
+    "name": "Barnes for Iowa Senate",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9584,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Behn for Senate",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 58960.46,
+    "expenditures": null
+   },
+   {
+    "name": "Keith.Puntenney4iasenatedistrict24",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6912.3,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Wilhelm for Iowa Senate",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 522770.04,
+    "expenditures": null
+   },
+   {
+    "name": "Waylon Brown for State Senate",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 604836.41,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Heikes  for Iowa Senate",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 135780.46,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Bonnie Sadler for State Senate",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 136379.04,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Mathis for State Senate",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 352201.92,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "JEFF EDLER",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 674379.26,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Kapucian for State Senate",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 101976.58,
+    "expenditures": null
+   },
+   {
+    "name": "Dennis Mathahs For Senate",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6333.45,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Kenneth Rozenboom",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 67126.82,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "Rich Taylor",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 242789.97,
+    "expenditures": null
+   },
+   {
+    "name": "Danny Graber for Senate",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7885,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "Courtney for State Senate Committee",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 143970.03,
+    "expenditures": null
+   },
+   {
+    "name": "Tom Greene for State Senate",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 58964.93,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "Committee to Elect Chris Brase",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 860071.39,
+    "expenditures": null
+   },
+   {
+    "name": "Mark Lofgren",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 773505.45,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "Daniel Zumbach",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 253912.77,
+    "expenditures": null
+   },
+   {
+    "name": "Scott Peterson for Iowa Senate",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 49079.61,
+    "expenditures": null
+   }
+  ],
+  "50": [
+   {
+    "name": "People for Pam Jochum",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 244685,
+    "expenditures": null
+   }
+  ]
+ }
+}
