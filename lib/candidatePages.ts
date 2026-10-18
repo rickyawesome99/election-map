@@ -2,6 +2,7 @@ import "server-only";
 import fs from "node:fs";
 import { join } from "node:path";
 import { gunzipSync } from "node:zlib";
+import { candidateSlug } from "@/lib/candidateSlug";
 import type { CandidatePagePayload, CandidatePageShard } from "@/lib/candidatePagePayload";
 
 // Reads the candidate pages precomputed by scripts/buildCandidatePages.ts (npm run candidate-pages,
@@ -52,3 +53,17 @@ export function getCandidatePagePayload(slug: string): CandidatePagePayload | nu
   }
   return shard("federal")?.[slug] ?? null;
 }
+
+/** The candidate page for a person named on a race page, or null when there is none (no dead links). */
+export function candidatePageHref(name: string | null | undefined): string | null {
+  if (!name) return null;
+  const slug = candidateSlug(name);
+  if (!slug) return null;
+  if (getCandidatePagePayload(slug)) return `/candidates/${slug}`;
+  const alias = candidateSlugAlias(slug);
+  return alias ? `/candidates/${alias}` : null;
+}
+
+/** A party code's text color, for "Democrat" / "Republican" labels. */
+export const partyTextColor = (party: string | null | undefined): string | undefined =>
+  party === "D" ? "var(--party-dem)" : party === "R" ? "var(--party-rep)" : party ? "var(--party-ind)" : undefined;

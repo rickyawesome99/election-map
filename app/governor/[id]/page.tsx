@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { candidatePageHref, partyTextColor } from "@/lib/candidatePages";
 import { governorData, governorNoElection, NoElectionEntry, electionYear, type PastResult } from "@/data/forecastData";
 import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
@@ -113,7 +114,7 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
               title="About this Seat"
               description={entry.raceDesc ?? `[Placeholder — overview of the ${entry.state} governorship, its powers, the incumbent's background, key issues, and political context to be filled in.]`}
               items={[
-                { label: "Party", value: partyLabel },
+                { label: "Party", value: partyLabel, color: partyTextColor(entry.party) },
                 { label: "Elected", value: termStarted },
                 { label: "Next Election", value: String(entry.nextElection) },
               ]}
@@ -287,6 +288,20 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
         <div className="flex flex-col gap-8">
 
           <section>
+            <LedgerSectionHead label="About this Race" />
+            <AboutRaceCard
+              bare
+              title="About this Race"
+              description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
+              items={[
+                { label: "Term Length", value: "4 Years" },
+                { label: "Incumbent", value: currentGovernorName, href: candidatePageHref(currentGovernorName) },
+                { label: "Party", value: currentGovernorParty ? (currentGovernorParty === "D" ? "Democrat" : currentGovernorParty === "R" ? "Republican" : "Independent") : "TBD", color: partyTextColor(currentGovernorParty) },
+              ]}
+            />
+          </section>
+
+          <section>
             <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {race.candidates ? (() => {
               const rows = (
@@ -301,20 +316,6 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             })() : (
               <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</p>
             )}
-          </section>
-
-          <section>
-            <LedgerSectionHead label="About this Race" />
-            <AboutRaceCard
-              bare
-              title="About this Race"
-              description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
-              items={[
-                { label: "Term Length", value: "4 Years" },
-                { label: "Incumbent", value: currentGovernorName },
-                { label: "Party", value: currentGovernorParty ? (currentGovernorParty === "D" ? "Democrat" : currentGovernorParty === "R" ? "Republican" : "Independent") : "TBD" },
-              ]}
-            />
           </section>
 
           <section>

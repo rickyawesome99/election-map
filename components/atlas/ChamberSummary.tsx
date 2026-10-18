@@ -10,7 +10,7 @@ const fmtVotes = (v: number) => (v >= 1e6 ? `${(v / 1e6).toFixed(2)}M` : v >= 1e
 export function SeatBar({ dem, rep, total }: { dem: number; rep: number; total: number }) {
   const pct = (n: number) => `${Math.max(0, Math.min(100, (n / total) * 100))}%`;
   return (
-    <div className="mt-2.5 relative h-3.5 rounded-[3px] overflow-hidden" style={{ background: "var(--party-ind-subtle)" }}>
+    <div className="relative mt-1.5 h-[7px] sm:mt-2 sm:h-2 overflow-hidden rounded-[2px]" style={{ background: "var(--party-ind-subtle)" }}>
       <div className="absolute inset-y-0 left-0" style={{ width: pct(dem), background: "var(--party-dem)" }} />
       <div className="absolute inset-y-0 right-0" style={{ width: pct(rep), background: "var(--party-rep)" }} />
       <div className="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2" style={{ background: "var(--app-bg)" }} />
@@ -27,9 +27,9 @@ export function netSeats(now: { dem: number; rep: number }, base: { dem: number;
   return null;
 }
 
-export function SeatLine({ dem, rep, oth, net, size = "text-2xl" }: { dem: React.ReactNode; rep: React.ReactNode; oth?: number; net?: { party: "D" | "R"; seats: number } | null; size?: string }) {
+export function SeatLine({ dem, rep, oth, net, size = "text-[1.35rem] sm:text-[1.65rem]" }: { dem: React.ReactNode; rep: React.ReactNode; oth?: number; net?: { party: "D" | "R"; seats: number } | null; size?: string }) {
   return (
-    <div className={`${size} font-bold tabular-nums leading-tight`}>
+    <div className={`${size} font-extrabold tabular-nums leading-none`}>
       <span style={{ color: "var(--party-dem)" }}>D {dem}</span>
       <span style={{ color: "var(--app-text-very-muted)" }}> · </span>
       <span style={{ color: "var(--party-rep)" }}>R {rep}</span>
@@ -43,16 +43,16 @@ export function SeatLine({ dem, rep, oth, net, size = "text-2xl" }: { dem: React
 export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryData; electionYear: number }) {
   const { seats, totalSeats, projection, margin, popularVote, upcoming, fieldStats, mapInfo, calendar, currentEra } = s;
   const heading = (label: React.ReactNode) => (
-    <div className="text-[10px] uppercase tracking-wider font-semibold pb-1.5 mb-2" style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>{label}</div>
+    <div className="text-[10px] sm:text-[11px] uppercase tracking-wider font-bold pb-1.5 mb-2.5" style={{ color: "var(--app-text-very-muted)", borderBottom: "1px solid var(--app-border)" }}>{label}</div>
   );
   const barTotal = totalSeats ?? seats?.total ?? null;
   const projTotal = projection?.totalSeats ?? barTotal;
   const superParty = projection?.supermajority != null && (projection.pDemSuper ?? 0) + (projection.pRepSuper ?? 0) > 0.005
     ? ((projection.pDemSuper ?? 0) >= (projection.pRepSuper ?? 0) ? "D" : "R") : null;
   const stat = (label: string, value: React.ReactNode, sub?: React.ReactNode) => (
-    <div className="min-w-[120px]">
-      <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>{label}</div>
-      <div className="text-base font-bold tabular-nums leading-tight" style={{ color: "var(--app-text-primary)" }}>{value}</div>
+    <div className="min-w-0">
+      <div className="text-[10px] sm:text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-very-muted)" }}>{label}</div>
+      <div className="mt-0.5 text-base font-bold tabular-nums leading-tight" style={{ color: "var(--app-text-primary)" }}>{value}</div>
       {sub && <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{sub}</div>}
     </div>
   );
@@ -65,7 +65,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
             {heading("Current")}
             <SeatLine dem={seats.dem} rep={seats.rep} oth={seats.oth} />
             {barTotal && <SeatBar dem={seats.dem} rep={seats.rep} total={Math.max(barTotal, seats.total)} />}
-            <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+            <div className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
               after the {seats.year} election{barTotal && barTotal > seats.total ? ` · ${barTotal - seats.total} vacant` : ""}{projection?.majority ? ` · ${projection.majority} for a majority` : ""}
             </div>
           </section>
@@ -77,7 +77,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
                 control odds below come from the simulation. */}
             <SeatLine dem={projection.favored.dem} rep={projection.favored.rep} oth={projection.favored.oth} net={seats ? netSeats(projection.favored, seats) : null} />
             <SeatBar dem={projection.favored.dem} rep={projection.favored.rep} total={projTotal} />
-            <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+            <div className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
               {projection.pDemControl == null ? `${projection.unprojected} seats unprojected` : (
                 <>80% range D {projection.lo80}–{projection.hi80} · <span style={{ color: "var(--app-text-muted)" }}>P(D control) {fmtProb(projection.pDemControl)}</span>
                   {superParty && <> · P({superParty} supermajority) {fmtProb(superParty === "D" ? projection.pDemSuper : projection.pRepSuper)}</>}</>
@@ -88,8 +88,8 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
         {margin && (
           <section>
             {heading(`Chamber margin · ${margin.year}`)}
-            <div className="text-2xl font-bold tabular-nums leading-tight">
-              <span className="text-base font-semibold" style={{ color: "var(--app-text-very-muted)" }}>raw </span>
+            <div className="text-[1.35rem] sm:text-[1.65rem] font-extrabold tabular-nums leading-none">
+              <span className="text-sm font-semibold" style={{ color: "var(--app-text-very-muted)" }}>raw </span>
               <span style={{ color: "var(--app-text-muted)" }}>{fmtChamberMargin(margin.raw)}</span>
               {margin.corrected != null && <>
                 <span style={{ color: "var(--app-text-very-muted)" }}> → </span>
@@ -105,15 +105,15 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
         {popularVote && (
           <section>
             {heading(`${electionYear} projected vote`)}
-            <div className="text-2xl font-bold tabular-nums leading-tight">
-              <span className="text-base font-semibold" style={{ color: "var(--app-text-very-muted)" }}>raw </span>
+            <div className="text-[1.35rem] sm:text-[1.65rem] font-extrabold tabular-nums leading-none">
+              <span className="text-sm font-semibold" style={{ color: "var(--app-text-very-muted)" }}>raw </span>
               <span style={{ color: "var(--app-text-muted)" }}>{fmtChamberMargin(popularVote.raw)}</span>
               {popularVote.adjusted != null && <>
                 <span style={{ color: "var(--app-text-very-muted)" }}> → </span>
                 <span style={{ color: marginColor(popularVote.adjusted) }}>{fmtChamberMargin(popularVote.adjusted)}</span>
               </>}
             </div>
-            <div className="mt-1.5 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+            <div className="mt-2 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
               <span style={{ color: "var(--party-dem)" }}>D {fmtVotes(popularVote.dem)}</span> · <span style={{ color: "var(--party-rep)" }}>R {fmtVotes(popularVote.rep)}</span> · {fmtVotes(popularVote.votes)} votes
             </div>
             <div className="mt-1 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
@@ -128,7 +128,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
         )}
       </div>
 
-      <div className="mt-6 pt-3 flex flex-wrap gap-x-8 gap-y-3" style={{ borderTop: "1px solid var(--app-border)" }}>
+      <div className="mt-6 pt-3 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-3" style={{ borderTop: "1px solid var(--app-border)" }}>
         {stat("Seats", totalSeats ?? "—", mapInfo?.electionFrequency ?? (calendar?.frequency ?? undefined))}
         {stat(
           `Up in ${electionYear}`,

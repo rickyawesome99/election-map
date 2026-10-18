@@ -1058,6 +1058,22 @@
     "expenditures": 6371.61
    }
   ],
+  "Windsor-Orange-2": [
+   {
+    "name": "GISH, DIEDRE (\"DEE\")",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7966,
+    "expenditures": 6157.5
+   },
+   {
+    "name": "RHIM, LAUREN MORANDO",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10548.23,
+    "expenditures": 10383.47
+   }
+  ],
   "Windham-9": [
    {
     "name": "GOODNOW, IAN",
@@ -1537,6 +1553,15 @@
     "expenditures": 2057.8
    }
   ],
+  "Addison-5": [
+   {
+    "name": "MCGILL, ADRIEL JUBILEE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1345,
+    "expenditures": 1634.96
+   }
+  ],
   "Washington-6": [
    {
     "name": "MIHALY, MARC",
@@ -1674,15 +1699,6 @@
     "incumbent": false,
     "contributions": 9209.92,
     "expenditures": 5450
-   }
-  ],
-  "Windsor-Orange-2": [
-   {
-    "name": "RHIM, LAUREN MORANDO",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 10548.23,
-    "expenditures": 10383.47
    }
   ],
   "Addison-1": [

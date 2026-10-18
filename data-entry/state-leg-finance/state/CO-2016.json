@@ -75,6 +75,13 @@
     "incumbent": true,
     "contributions": 94314.52,
     "expenditures": null
+   },
+   {
+    "name": "RONALD STANFORD NELSON",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 900,
+    "expenditures": null
    }
   ],
   "6": [
@@ -242,6 +249,13 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 24114,
+    "expenditures": null
+   },
+   {
+    "name": "TOMMIE LEE REYNOLDS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1810,
     "expenditures": null
    }
   ],
@@ -679,6 +693,22 @@
     "expenditures": null
    }
   ],
+  "48": [
+   {
+    "name": "STEPHEN A. HUMPHREY",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 8500,
+    "expenditures": null
+   },
+   {
+    "name": "ANNMARIE KING",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2835.06,
+    "expenditures": null
+   }
+  ],
   "49": [
    {
     "name": "PERRY L BUCK",
@@ -740,6 +770,15 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 11386.79,
+    "expenditures": null
+   }
+  ],
+  "53": [
+   {
+    "name": "JENNIFER ARNDT",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 37250,
     "expenditures": null
    }
   ],

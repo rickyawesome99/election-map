@@ -41,7 +41,16 @@ export type DetailPastResult = {
 type DetailInfoItem = {
   label: string;
   value: string;
+  // Optional link (e.g. the incumbent's candidate page) and text color (e.g. the party's).
+  href?: string | null;
+  color?: string;
 };
+
+function DetailInfoValue({ value, href, color }: DetailInfoItem) {
+  return href
+    ? <a href={href} className="hover:underline underline-offset-2" style={{ color: color ?? "var(--app-text-primary)" }}>{value}</a>
+    : <span style={{ color: color ?? "var(--app-text-primary)" }}>{value}</span>;
+}
 
 type CandidateCardEntry = {
   name: string;
@@ -210,9 +219,9 @@ export function AboutRaceCard({
           </p>
         )}
         <div className="flex flex-wrap gap-x-6 gap-y-1.5">
-          {items.map(({ label, value }) => (
-            <div key={label} className="text-xs" style={{ color: "var(--app-text-muted)" }}>
-              {label} <span className="font-bold" style={{ color: "var(--app-text-primary)" }}>{value}</span>
+          {items.map((item) => (
+            <div key={item.label} className="text-xs" style={{ color: "var(--app-text-muted)" }}>
+              {item.label} <span className="font-bold"><DetailInfoValue {...item} /></span>
             </div>
           ))}
         </div>
@@ -239,13 +248,13 @@ export function AboutRaceCard({
         </p>
       )}
       <div className={compact ? "flex flex-col gap-1.5" : `grid gap-2 ${gridClass}`}>
-        {items.map(({ label, value }) => (
-          <div key={label} className={compact ? "rounded-lg px-2.5 py-1.5 flex items-center justify-between" : "rounded-lg p-2.5 flex flex-col"} style={{ background: "var(--app-bg)" }}>
+        {items.map((item) => (
+          <div key={item.label} className={compact ? "rounded-lg px-2.5 py-1.5 flex items-center justify-between" : "rounded-lg p-2.5 flex flex-col"} style={{ background: "var(--app-bg)" }}>
             <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-              {label}
+              {item.label}
             </div>
-            <div className={`text-xs font-semibold ${compact ? "" : "mt-auto"}`} style={{ color: "var(--app-text-primary)" }}>
-              {value}
+            <div className={`text-xs font-semibold ${compact ? "" : "mt-auto"}`}>
+              <DetailInfoValue {...item} />
             </div>
           </div>
         ))}

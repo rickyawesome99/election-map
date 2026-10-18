@@ -674,6 +674,15 @@
     "expenditures": 5353.96
    }
   ],
+  "Rutland-3": [
+   {
+    "name": "CHRIS BROWN, ELECT CHRIS BROWN VT",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2295,
+    "expenditures": 2295
+   }
+  ],
   "Windsor-6": [
    {
     "name": "CHRISTIE, KEVIN COACH",
@@ -1058,6 +1067,36 @@
     "expenditures": 2000
    }
   ],
+  "Orange-Washington-Addison": [
+   {
+    "name": "HOOPER, PHILIP JAY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 400,
+    "expenditures": 1853.44
+   },
+   {
+    "name": "SATCOWITZ, LAWRENCE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1850,
+    "expenditures": 1794.7
+   },
+   {
+    "name": "SIKORA, KENNETH ROB",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2781.44,
+    "expenditures": 2066.69
+   },
+   {
+    "name": "TOWNSEND, WAYNE D",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1933.59,
+    "expenditures": 1214.83
+   }
+  ],
   "Chittenden-18": [
    {
     "name": "HOOPER, ROBERT JEFFERY",
@@ -1310,6 +1349,15 @@
     "expenditures": 700
    }
   ],
+  "Addison-5": [
+   {
+    "name": "MCGILL, ADRIEL JUBILEE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2035,
+    "expenditures": 3707.86
+   }
+  ],
   "Orange-Caledonia": [
    {
     "name": "MERRIAM, JAMES P.",
@@ -1515,29 +1563,6 @@
     "incumbent": false,
     "contributions": 8380,
     "expenditures": 5420.19
-   }
-  ],
-  "Orange-Washington-Addison": [
-   {
-    "name": "SATCOWITZ, LAWRENCE",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 1850,
-    "expenditures": 1794.7
-   },
-   {
-    "name": "SIKORA, KENNETH ROB",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 2781.44,
-    "expenditures": 2066.69
-   },
-   {
-    "name": "TOWNSEND, WAYNE D",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 1933.59,
-    "expenditures": 1214.83
    }
   ],
   "Franklin-8": [

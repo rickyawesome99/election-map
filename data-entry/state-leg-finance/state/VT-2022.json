@@ -542,6 +542,13 @@
     "incumbent": false,
     "contributions": 5650,
     "expenditures": 5650
+   },
+   {
+    "name": "MCGILL, ADRIEL JUBILEE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6944.74,
+    "expenditures": 5413
    }
   ],
   "Franklin-6": [
@@ -1006,6 +1013,29 @@
     "expenditures": 0
    }
   ],
+  "Orange-Washington-Addison": [
+   {
+    "name": "HOOPER, PHILIP JAY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "SATCOWITZ, LAWRENCE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 950,
+    "expenditures": 441.62
+   },
+   {
+    "name": "TOWNSEND, WAYNE D.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2532.37,
+    "expenditures": 2529.37
+   }
+  ],
   "Chittenden-18": [
    {
     "name": "HOOPER, ROBERT JEFFERY",
@@ -1333,22 +1363,6 @@
     "expenditures": 11506.12
    }
   ],
-  "Orange-Washington-Addison": [
-   {
-    "name": "SATCOWITZ, LAWRENCE",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 950,
-    "expenditures": 441.62
-   },
-   {
-    "name": "TOWNSEND, WAYNE D.",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 2532.37,
-    "expenditures": 2529.37
-   }
-  ],
   "Addison-1": [
    {
     "name": "SCHEU, ROBIN P",
@@ -1458,6 +1472,15 @@
     "expenditures": 3675.22
    }
   ],
+  "Caledonia-2": [
+   {
+    "name": "TROIANO, JOSEPH \"CHIP\"",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4790,
+    "expenditures": 6135.68
+   }
+  ],
   "Chittenden-5": [
    {
     "name": "WATERS EVANS, CHEA",
@@ -1540,6 +1563,13 @@
     "incumbent": true,
     "contributions": 8782.1,
     "expenditures": 9195.97
+   },
+   {
+    "name": "LEFAVOUR, BRADFORD DEXTER",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5455,
+    "expenditures": 4015.5
    },
    {
     "name": "PERCHLIK, ANDREW",

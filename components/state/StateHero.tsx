@@ -60,7 +60,7 @@ export default function StateHero({
     <div
       style={{
         background: tpl != null
-          ? `linear-gradient(135deg, color-mix(in srgb, ${isD ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`
+          ? `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${isD ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`
           : "var(--app-bg)",
       }}
     >

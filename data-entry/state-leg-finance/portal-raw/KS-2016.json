@@ -1,8 +1,8 @@
 {
  "state": "KS",
  "cycle": 2016,
- "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
- "fetched": "2026-10-17",
+ "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+ "fetched": "2026-10-18",
  "dataThrough": "12/31/2016",
  "candidates": [
   {
@@ -1614,6 +1614,334 @@
    "chamber": "house",
    "district": "125",
    "contributions": 21051.52
+  },
+  {
+   "name": "Miguel A Rodriguez",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 1860.0,
+   "expenditures": 1210.0,
+   "periods": 3
+  },
+  {
+   "name": "Alex Herman",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": 20940.0,
+   "expenditures": 20783.43,
+   "periods": 3
+  },
+  {
+   "name": "Jason Conley",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 1637.15,
+   "expenditures": 574.33,
+   "periods": 4
+  },
+  {
+   "name": "Tony Hunter",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 7290.9,
+   "expenditures": 4821.77,
+   "periods": 3
+  },
+  {
+   "name": "R. GABRIEL COSTILLA",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 13259.93,
+   "expenditures": 12335.11,
+   "periods": 3
+  },
+  {
+   "name": "Maynard L Estes, Jr",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 66725.0,
+   "expenditures": 45701.62,
+   "periods": 3
+  },
+  {
+   "name": "David Haley",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 15222.95,
+   "expenditures": 3866.74,
+   "periods": 2
+  },
+  {
+   "name": "Kevin B King",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 645.0,
+   "expenditures": 128.6,
+   "periods": 3
+  },
+  {
+   "name": "Larry Alley",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 46624.82,
+   "expenditures": 34996.92,
+   "periods": 3
+  },
+  {
+   "name": "Edward E Berger",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 153926.64,
+   "expenditures": 121811.03,
+   "periods": 4
+  },
+  {
+   "name": "Megan England",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 36996.49,
+   "expenditures": 35723.62,
+   "periods": 3
+  },
+  {
+   "name": "Zachary R Haney",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 9485.35,
+   "expenditures": 6724.58,
+   "periods": 3
+  },
+  {
+   "name": "Christopher B Johnston",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 2170.0,
+   "expenditures": 2170.0,
+   "periods": 3
+  },
+  {
+   "name": "Levi Morris",
+   "chamber": "senate",
+   "district": "35",
+   "contributions": 13103.84,
+   "expenditures": 7877.53,
+   "periods": 3
+  },
+  {
+   "name": "jim price",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 17323.96,
+   "expenditures": 3500.0,
+   "periods": 3
+  },
+  {
+   "name": "Dinah H Sykes",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 93252.51,
+   "expenditures": 88618.48,
+   "periods": 4
+  },
+  {
+   "name": "Michelle Vann",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 4119.15,
+   "expenditures": 2859.0,
+   "periods": 3
+  },
+  {
+   "name": "Susan Wagle",
+   "chamber": "senate",
+   "district": "30",
+   "contributions": 141145.34,
+   "expenditures": 113579.57,
+   "periods": 4
+  },
+  {
+   "name": "Elaine S Bowers",
+   "chamber": "senate",
+   "district": "36",
+   "contributions": 79036.88,
+   "expenditures": 45523.36,
+   "periods": 4
+  },
+  {
+   "name": "Susan G Fowler",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 24740.51,
+   "expenditures": 28615.58,
+   "periods": 3
+  },
+  {
+   "name": "Bruce J Givens",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 57100.9,
+   "expenditures": 46968.92,
+   "periods": 3
+  },
+  {
+   "name": "Randall R Hardy",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 41886.56,
+   "expenditures": 34419.46,
+   "periods": 3
+  },
+  {
+   "name": "Tom Holland",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 245810.7,
+   "expenditures": 236539.94,
+   "periods": 4
+  },
+  {
+   "name": "Richard E Wilborn",
+   "chamber": "senate",
+   "district": "35",
+   "contributions": 90070.92,
+   "expenditures": 67523.12,
+   "periods": 4
+  },
+  {
+   "name": "Charles C Schmidt",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 70494.3,
+   "expenditures": 68058.0,
+   "periods": 3
+  },
+  {
+   "name": "Daniel J Kerschen",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 64968.29,
+   "expenditures": 36910.5,
+   "periods": 4
+  },
+  {
+   "name": "Martha Baumgardner",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 42090.69,
+   "expenditures": 27905.99,
+   "periods": 4
+  },
+  {
+   "name": "Mary Jo Taylor",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 25850.0,
+   "expenditures": 29637.61,
+   "periods": 2
+  },
+  {
+   "name": "John G Doll",
+   "chamber": "senate",
+   "district": "39",
+   "contributions": 114289.39,
+   "expenditures": 79527.38,
+   "periods": 4
+  },
+  {
+   "name": "Don M McGuire",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 19435.0,
+   "expenditures": 19553.08,
+   "periods": 3
+  },
+  {
+   "name": "DON SHIMKUS",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 54149.07,
+   "expenditures": 50492.94,
+   "periods": 4
+  },
+  {
+   "name": "Barbara Bollier",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 108041.13,
+   "expenditures": 98868.18,
+   "periods": 3
+  },
+  {
+   "name": "marci francisco",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 55654.88,
+   "expenditures": 50121.38,
+   "periods": 4
+  },
+  {
+   "name": "Brian G Angevine",
+   "chamber": "senate",
+   "district": "36",
+   "contributions": 3000.34,
+   "expenditures": 2547.69,
+   "periods": 3
+  },
+  {
+   "name": "Spencer W Kerfoot",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 14486.53,
+   "expenditures": 14486.53,
+   "periods": 3
+  },
+  {
+   "name": "Mark R Pringle",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 9550.89,
+   "expenditures": 8025.3,
+   "periods": 3
+  },
+  {
+   "name": "David D Jackson",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 32682.79,
+   "expenditures": 32244.21,
+   "periods": 3
+  },
+  {
+   "name": "Michael Kerner",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 1440.91,
+   "expenditures": 714.73,
+   "periods": 2
+  },
+  {
+   "name": "Matt Bristow",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 1775.0,
+   "expenditures": 896.0,
+   "periods": 1
+  },
+  {
+   "name": "pat pettey",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 28534.82,
+   "expenditures": 6250.98,
+   "periods": 2
+  },
+  {
+   "name": "Meredith A Richey",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 6710.0,
+   "expenditures": 2676.71,
+   "periods": 1
   }
  ]
 }

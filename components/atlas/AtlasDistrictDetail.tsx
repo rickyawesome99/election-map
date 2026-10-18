@@ -10,6 +10,7 @@ import type { Chamber } from "@/data/stateLegDistricts";
 import type { AtlasDistrict, AtlasEra, AtlasMoney, AtlasResult } from "@/lib/stateLegAtlas";
 import { fmtMoney, resultMargin } from "@/lib/stateLegAtlas";
 import { getRatingColors, projectedMarginColor } from "@/lib/colorScale";
+import { PILL } from "@/components/RaceHeroPills";
 
 /** Margin text in the site's standard party colors (not the Safe/Likely/Lean shade scale). */
 const marginText = (m: number) => (Math.abs(m) < 0.05 ? "var(--app-text-primary)" : projectedMarginColor(m));
@@ -20,12 +21,17 @@ function fmtMargin(v: number | null | undefined): string {
   return `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(1)}`;
 }
 
-function Pill({ children, tone = "muted" }: { children: React.ReactNode; tone?: "muted" | "primary" }) {
+const PILL_TONE = {
+  muted: { background: "var(--app-tab-bg)", color: "var(--app-text-muted)" },
+  primary: { background: "var(--app-text-primary)", color: "var(--app-bg)" },
+  D: { background: "var(--party-dem)", color: "#fff" },
+  R: { background: "var(--party-rep)", color: "#fff" },
+  I: { background: "var(--party-ind)", color: "#fff" },
+};
+
+function Pill({ children, tone = "muted" }: { children: React.ReactNode; tone?: keyof typeof PILL_TONE }) {
   return (
-    <span
-      className="inline-block text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded"
-      style={{ background: tone === "primary" ? "var(--app-text-primary)" : "var(--app-tab-bg)", color: tone === "primary" ? "var(--app-bg)" : "var(--app-text-muted)" }}
-    >
+    <span className={`inline-block ${PILL}`} style={PILL_TONE[tone]}>
       {children}
     </span>
   );
@@ -101,6 +107,8 @@ export default function AtlasDistrictDetail({
   eras,
   electionYear,
   navigator,
+  chamberLabel,
+  onBack,
 }: {
   abbr: string;
   chamber: Chamber;
@@ -109,6 +117,9 @@ export default function AtlasDistrictDetail({
   electionYear: number;
   /** The district selector and locator map, placed between the hero and "About this district". */
   navigator?: React.ReactNode;
+  /** "State House": the first pill reads "MN State House" and returns to the chamber's district explorer. */
+  chamberLabel?: string;
+  onBack?: () => void;
 }) {
   const hasMoney = (district.money ?? []).some((m) => m.year !== electionYear);
   const up = district.nextElection === electionYear || district.incumbents.some((i) => (i.nextElection ?? district.nextElection) === electionYear);
@@ -135,10 +146,36 @@ export default function AtlasDistrictDetail({
     : null;
   const parties = new Set(district.incumbents.map((i) => i.party));
   const heldBy = district.incumbents.length === 0 ? "Vacant" : parties.size === 1 ? `${[...parties][0] === "D" ? "Dem" : [...parties][0] === "R" ? "GOP" : "Ind."} held` : "Split delegation";
+  // One-party seats take that party's color, like the chamber's "Democratic-held" pill up top.
+  const heldParty = district.incumbents.length > 0 && parties.size === 1 ? ({ D: "D", R: "R", I: "I" } as const)[[...parties][0] as "D" | "R" | "I"] ?? null : null;
   const lastResult = [...district.results].sort((x, y) => y.year - x.year).find((r) => resultMargin(r) != null);
   const lastMargin = lastResult ? resultMargin(lastResult) : null;
   const pres24 = district.presCurrent["2024"]?.margin ?? null;
   const muted = "var(--app-text-very-muted)";
+  // The About row: who holds the seat, whether they're leaving, and the map it sits on.
+  const incs = district.incumbents;
+  const joinNodes = (nodes: React.ReactNode[]) => nodes.map((n, i) => <span key={i}>{i > 0 && ", "}{n}</span>);
+  const uniq = (xs: (number | null | undefined)[]) => [...new Set(xs.filter((x): x is number => x != null))];
+  const elected = uniq(incs.map((i) => i.lastElection ?? district.lastElection));
+  const nextElections = uniq(incs.length ? incs.map((i) => i.nextElection ?? district.nextElection) : [district.nextElection]);
+  const partyWord = (p: string) => (p === "D" ? "Democrat" : p === "R" ? "Republican" : "Independent");
+  const aboutItems: { label: string; value: React.ReactNode }[] = [
+    { label: incs.length > 1 ? "Incumbents" : "Incumbent", value: incs.length === 0 ? "Vacant" : joinNodes(incs.map((inc) => <CandidateLink name={inc.name} abbr={abbr} color="var(--app-text-primary)" weight={700} />)) },
+    ...(incs.length ? [{ label: "Party", value: parties.size === 1
+      ? <span style={{ color: PARTY_COLOR[incs[0].party] }}>{partyWord(incs[0].party)}</span>
+      : joinNodes(incs.map((inc) => <span style={{ color: PARTY_COLOR[inc.party] }}>{partyWord(inc.party)}</span>)) }] : []),
+    ...(elected.length ? [{ label: "Elected", value: elected.join(", ") }] : []),
+    ...(nextElections.length ? [{ label: "Next Election", value: nextElections.join(", ") }] : []),
+    ...(district.outgoing2026?.length ? [{ label: "Incumbent not running", value: joinNodes(district.outgoing2026.map((o) => (
+      <>
+        {(incs.length !== 1 || incs[0].name !== o.name) && <><CandidateLink name={o.name} abbr={abbr} color={PARTY_COLOR[o.party] ?? "var(--app-text-primary)"} weight={700} />{o.post ? ` (seat ${o.post})` : ""}{o.reason ? " · " : ""}</>}
+        {o.reason && o.reason[0].toUpperCase() + o.reason.slice(1)}
+      </>
+    ))) }] : []),
+    ...(counties.length ? [{ label: counties.length === 1 ? "County" : "Counties", value: counties.map((c) => `${c.county}${counties.length > 1 && c.popPct < 99 ? ` (${c.popPct.toFixed(0)}%)` : ""}`).join(", ") }] : []),
+    ...(currentEra ? [{ label: "Map", value: <>{currentEra.source ?? "current map"}{currentEra.enactedDate && <>, enacted {currentEra.enactedDate}</>}{currentEra.years.length > 0 && <>, first used {currentEra.years[0]}</>}</> }] : []),
+    ...(district.presByEra.length > 1 ? [{ label: "Prior maps", value: district.presByEra.filter((e) => e.era !== "current").map((e) => eraLabel(eras, e.era).replace(" map", "")).join(", ") }] : []),
+  ];
   const stats = [
     pr?.contest === "contested" && pr.pD != null
       ? { label: "Win Prob.", value: `${Math.round(Math.max(pr.pD, 1 - pr.pD) * 100)}% ${pr.pD >= 0.5 ? "D" : "R"}`, color: pr.pD >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }
@@ -170,9 +207,14 @@ export default function AtlasDistrictDetail({
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
           <div className="min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
-              {rating && <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full shrink-0" style={{ background: rating.bg, color: rating.text }}>{pr!.rating}</span>}
+              {onBack && chamberLabel && (
+                <button type="button" onClick={onBack} aria-label={`All ${chamberLabel} districts`} className={`${PILL} hover:underline`} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
+                  {abbr} {chamberLabel}
+                </button>
+              )}
+              {rating && <span className={PILL} style={{ background: rating.bg, color: rating.text }}>{pr!.rating}</span>}
               {up ? <Pill tone="primary">Up in {electionYear}</Pill> : district.nextElection ? <Pill>Next election {district.nextElection}</Pill> : null}
-              {heldBy && <Pill>{heldBy}</Pill>}
+              {heldBy && <Pill tone={heldParty ?? "muted"}>{heldBy}</Pill>}
               {district.seats != null && district.seats > 1 && <Pill>{district.seats} seats</Pill>}
             </div>
             <h2 className="mt-2" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.75rem, 4.5vw, 2.6rem)", fontWeight: 700, lineHeight: 1, letterSpacing: "-0.02em" }}>
@@ -202,61 +244,28 @@ export default function AtlasDistrictDetail({
           ))}
         </div>
 
-        <div className="mt-5 flex flex-col gap-1.5">
-        {district.outgoing2026 && district.outgoing2026.length > 0 && (
-          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm">
-            <span className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>Not running</span>
-            {district.outgoing2026.map((o, i) => (
-              <span key={`${o.name}-${i}`} style={{ color: "var(--app-text-muted)" }}>
-                <CandidateLink name={o.name} abbr={abbr} color={PARTY_COLOR[o.party] ?? "var(--app-text-primary)"} weight={600} />
-                <span className="text-xs"> ({o.party}{o.post ? `, seat ${o.post}` : ""})</span>
-                {o.reason && <span> · {o.reason}</span>}
-              </span>
-            ))}
-          </div>
-        )}
-        <div className="flex flex-wrap gap-x-5 gap-y-1 text-sm">
-          {district.incumbents.length === 0 && <span style={{ color: "var(--app-text-muted)" }}>Vacant</span>}
-          {district.incumbents.map((inc) => (
-            <span key={inc.name}>
-              <span className="font-semibold" style={{ color: PARTY_COLOR[inc.party] }}><CandidateLink name={inc.name} abbr={abbr} color={PARTY_COLOR[inc.party]} weight={600} /> ({inc.party})</span>
-              <span style={{ color: "var(--app-text-muted)" }}>
-                {" "}· elected {inc.lastElection ?? district.lastElection ?? "—"}
-                {(inc.nextElection ?? district.nextElection) != null && <> · next {inc.nextElection ?? district.nextElection}</>}
-              </span>
-            </span>
-          ))}
-        </div>
-        </div>
       </div>
 
       {navigator}
 
-      {/* About */}
+      {/* About — the House district page's format: demographics, then one inline label/value row */}
       <section>
-        <LedgerSectionHead label="About this district" meta={district.demographics?.population != null ? "ACS 2020–24" : undefined} />
-        {district.demographics ? <DemographicsStrip {...district.demographics} /> : <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>No demographic data.</p>}
-        <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm" style={{ color: "var(--app-text-muted)" }}>
-          {counties.length > 0 && (
-            <span>
-              <b style={{ color: "var(--app-text-primary)" }}>{counties.length === 1 ? "County" : "Counties"}</b>{" "}
-              {counties.map((c) => `${c.county}${counties.length > 1 && c.popPct < 99 ? ` (${c.popPct.toFixed(0)}%)` : ""}`).join(", ")}
-            </span>
-          )}
-          {currentEra && (
-            <span>
-              <b style={{ color: "var(--app-text-primary)" }}>Map</b> {currentEra.source ?? "current map"}
-              {currentEra.enactedDate && <>, enacted {currentEra.enactedDate}</>}
-              {currentEra.years.length > 0 && <>, first used {currentEra.years[0]}</>}
-            </span>
-          )}
-          {district.presByEra.length > 1 && (
-            <span>
-              <b style={{ color: "var(--app-text-primary)" }}>Prior maps</b>{" "}
-              {district.presByEra.filter((e) => e.era !== "current").map((e) => eraLabel(eras, e.era).replace(" map", "")).join(", ")}
-            </span>
-          )}
+        <LedgerSectionHead label="About this District" />
+        {district.demographics ? (
+          <div className="mb-4"><DemographicsStrip {...district.demographics} /></div>
+        ) : (
+          <p className="mb-4 text-sm" style={{ color: "var(--app-text-muted)" }}>No demographic data.</p>
+        )}
+        <div className="flex flex-wrap gap-x-6 gap-y-1.5">
+          {aboutItems.map((it) => (
+            <div key={it.label} className="text-xs" style={{ color: "var(--app-text-muted)" }}>
+              {it.label} <span className="font-bold" style={{ color: "var(--app-text-primary)" }}>{it.value}</span>
+            </div>
+          ))}
         </div>
+        {district.demographics && (
+          <p className="text-xs mt-4" style={{ color: "var(--app-text-very-muted)" }}>ACS 2020–24 5-year estimates.</p>
+        )}
       </section>
 
       {district.candidates2026 && (

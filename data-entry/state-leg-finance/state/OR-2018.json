@@ -110,6 +110,15 @@
     "expenditures": null
    }
   ],
+  "12": [
+   {
+    "name": "Friends of John Lively",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 73427.89,
+    "expenditures": null
+   }
+  ],
   "13": [
    {
     "name": "Friends of Nancy Nathanson",
@@ -198,6 +207,15 @@
     "expenditures": null
    }
   ],
+  "25": [
+   {
+    "name": "Friends of Dave McCall",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 30410.4,
+    "expenditures": null
+   }
+  ],
   "29": [
    {
     "name": "Friends of Susan McLain",
@@ -209,10 +227,35 @@
   ],
   "31": [
    {
+    "name": "Brad Witt for State Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 183963.87,
+    "expenditures": null
+   },
+   {
     "name": "Stout for State Rep",
     "party": "Republican",
     "incumbent": false,
     "contributions": 23564.78,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Ken Helm for Oregon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 78959.68,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "Friends of Christine Drazan",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 210768.83,
     "expenditures": null
    }
   ],
@@ -249,6 +292,15 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 72061.47,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "Committee to Elect Janelle Bynum",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 894158.25,
     "expenditures": null
    }
   ],

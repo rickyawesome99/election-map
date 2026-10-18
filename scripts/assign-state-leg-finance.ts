@@ -19,7 +19,8 @@
  * word of a committee name); without
  * one, it needs a unique statewide (or chamber-wide) hit on the full name, then first + last, then the
  * surname parts run together, then a committee name holding both the first and last name of exactly one
- * candidate. Ambiguous and unmatched records are dropped and counted.
+ * candidate (the record's name first, then its committee's name when the source gives one).
+ * Ambiguous and unmatched records are dropped and counted.
  * Two records on one candidate (a renamed committee) keep the larger figure, never the sum.
  */
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from "fs";
@@ -33,7 +34,7 @@ import { normalizeDistrictKey } from "@/lib/stateLegDistrictKey";
 const RAW = "data-entry/state-leg-finance/portal-raw";
 const OUT = "data-entry/state-leg-finance/state";
 
-type RawRecord = { name: string; party?: string | null; chamber?: Chamber | null; district?: string | null; contributions: number | null; expenditures?: number | null };
+type RawRecord = { name: string; committee?: string | number | null; party?: string | null; chamber?: Chamber | null; district?: string | null; contributions: number | null; expenditures?: number | null };
 type Raw = { state: string; cycle: number; source: string; dataThrough: string | null; candidates: RawRecord[] };
 type PoolEntry = { chamber: Chamber; district: string; name: string; party: "D" | "R" | "O"; incumbent: boolean; k: ReturnType<typeof nameKeys> };
 
@@ -47,6 +48,8 @@ const partyOf = (p: string | null | undefined): "D" | "R" | "O" | null => {
   if (r >= 0) return "R";
   return "O";
 };
+
+const wordsOf = (s: string) => new Set(s.toLowerCase().normalize("NFKD").replace(/[^a-z\s-]/g, " ").split(/[\s-]+/));
 
 /** "01" and "1" are the same district. */
 const districtKey = (d: string) => normalizeDistrictKey(/^\d+$/.test(d.trim()) ? String(Number(d)) : d);
@@ -92,6 +95,9 @@ function assign(file: string) {
     const partyOk = (p: PoolEntry) => !rp || rp === "O" || p.party === "O" || rp === p.party;
     let found: PoolEntry | null = null;
     let tie = false;
+    // The committee-name rules read the record's name, then its committee's name when the source gives
+    // one ("Friends of Wes Retherford" for Richard Retherford's committee).
+    const texts = [r.name, ...(r.committee ? [String(r.committee)] : [])];
     const pick = (cands: PoolEntry[], k: keyof typeof rk) => {
       if (found || !rk[k]) return;
       const xs = cands.filter((p) => p.k[k] === rk[k] && (k === "full" || k === "loose" || k === "squash" || partyOk(p)));
@@ -103,8 +109,9 @@ function assign(file: string) {
       for (const k of ["full", "loose", "squash", "initial", "last"] as const) pick(local, k);
       // A committee name ("Friends for Pete Schwartzkopf", "Smith for State Rep"): the one
       // candidate in the district whose surname is a word of it.
-      if (!found && !tie) {
-        const words = new Set(r.name.toLowerCase().normalize("NFKD").replace(/[^a-z\s-]/g, " ").split(/[\s-]+/));
+      for (const text of texts) {
+        if (found || tie) break;
+        const words = wordsOf(text);
         const xs = local.filter((p) => p.k.last.length > 2 && words.has(p.k.last) && partyOk(p));
         if (xs.length === 1) found = xs[0];
       }
@@ -117,15 +124,18 @@ function assign(file: string) {
       for (const k of ["full", "loose", "squash"] as const) pick(scope, k);
       // A committee name with no district ("Kirk Sherrill for NC House"): the one candidate in scope whose
       // first AND last name are both words of it.
-      if (!found && !tie) {
-        const words = new Set(r.name.toLowerCase().normalize("NFKD").replace(/[^a-z\s-]/g, " ").split(/[\s-]+/));
+      for (const text of texts) {
+        if (found || tie) break;
+        const words = wordsOf(text);
         const xs = scope.filter((p) => {
           const t = p.name.toLowerCase().normalize("NFKD").replace(/\(.*?\)|".*?"/g, " ").replace(/[^a-z\s-]/g, " ").split(/[\s-]+/).filter((x) => x.length > 1 && !["jr", "sr", "ii", "iii"].includes(x));
           return t.length >= 2 && words.has(t[0]) && words.has(t[t.length - 1]);
         });
         if (new Set(xs.map((p) => `${p.chamber}:${p.district}:${p.k.full}`)).size === 1) found = xs[0];
         // "Moore for House": the surname alone, only when the name says which chamber and one candidate
-        // of that chamber has the surname.
+        // of that chamber has the surname. The record's own name only: "Cristi Nelson for Assembly 2016"
+        // (an AD-6 committee) would otherwise land on Kerry Nelson of AD-44.
+        if (text !== r.name) continue;
         const chamberWord = [...words].some((w) => /^(house|senate|assembly|assemblyman|assemblywoman|representative|rep|senator|delegate)$/.test(w));
         if (!found && chamberWord && r.chamber) {
           const ys = scope.filter((p) => p.chamber === r.chamber && p.k.last.length > 3 && words.has(p.k.last));

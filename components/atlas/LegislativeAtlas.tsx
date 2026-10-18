@@ -510,13 +510,8 @@ export default function LegislativeAtlas({
       {/* ── District view ── */}
       {inDistrict && (
         <div className="max-w-3xl mx-auto">
-          <div className="mb-6">
-            <button type="button" onClick={backToExplorer} className="text-sm font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>
-              ← All {chamberLabel} districts
-            </button>
-          </div>
           {selected && data ? (
-            <AtlasDistrictDetail abbr={abbr} chamber={chamber} district={selected} eras={data.eras} electionYear={electionYear} navigator={navigator} />
+            <AtlasDistrictDetail abbr={abbr} chamber={chamber} district={selected} eras={data.eras} electionYear={electionYear} navigator={navigator} chamberLabel={chamberLabel} onBack={backToExplorer} />
           ) : (
             <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{failed ? "The district data for this chamber could not be loaded." : "Loading district…"}</p>
           )}
@@ -537,15 +532,19 @@ export default function LegislativeAtlas({
                 </button>
               ))}
               {mode === "results" && electionYears.length > 0 && (
-                <select
-                  value={activeYear ?? ""}
-                  onChange={(e) => setResultsYear(Number(e.target.value))}
-                  aria-label="Election year"
-                  className="text-xs px-2 py-1 rounded-full"
-                  style={{ background: "var(--app-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)", fontWeight: 600 }}
-                >
-                  {electionYears.map((y) => <option key={y} value={y}>{y}</option>)}
-                </select>
+                // Same 24px height as the pills beside it, so opening "Past results" doesn't nudge the page.
+                <span className="relative inline-flex">
+                  <select
+                    value={activeYear ?? ""}
+                    onChange={(e) => setResultsYear(Number(e.target.value))}
+                    aria-label="Election year"
+                    className="h-6 appearance-none text-xs leading-none pl-2.5 pr-6 py-0 rounded-full"
+                    style={{ background: "var(--app-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)", fontWeight: 600 }}
+                  >
+                    {electionYears.map((y) => <option key={y} value={y}>{y}</option>)}
+                  </select>
+                  <svg aria-hidden viewBox="0 0 10 6" className="pointer-events-none absolute right-2 top-1/2 h-1.5 w-2.5 -translate-y-1/2" fill="none" stroke="currentColor" strokeWidth="1.4" style={{ color: "var(--app-text-muted)" }}><path d="M1 1l4 4 4-4" /></svg>
+                </span>
               )}
             </div>
             <div className="flex flex-wrap gap-1" aria-label="Filter">

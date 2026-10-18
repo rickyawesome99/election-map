@@ -122,6 +122,13 @@
     "expenditures": 14072
    },
    {
+    "name": "RAM HINSDALE, KESHA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 85568.6,
+    "expenditures": 82228.58
+   },
+   {
     "name": "REDIC, ERICKA",
     "party": "Republican",
     "incumbent": false,
@@ -1046,6 +1053,13 @@
     "incumbent": false,
     "contributions": 2040,
     "expenditures": 1535
+   },
+   {
+    "name": "TROIANO, JOSEPH \"CHIP\"",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4745,
+    "expenditures": 5930.79
    }
   ],
   "Windham-1": [
@@ -1480,6 +1494,43 @@
     "expenditures": 320
    }
   ],
+  "Orange-Washington-Addison": [
+   {
+    "name": "HOOPER, PHILIP JAY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3320,
+    "expenditures": 0
+   },
+   {
+    "name": "REED, PETER MARTIN",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 5236,
+    "expenditures": 4717.95
+   },
+   {
+    "name": "ROCHE, JOSEPH",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 300,
+    "expenditures": 300
+   },
+   {
+    "name": "RUSSELL, CHARLES WILLIAM",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
+    "name": "SATCOWITZ, LAWRENCE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4878.04,
+    "expenditures": 4307.22
+   }
+  ],
   "Rutland-6": [
    {
     "name": "JEROME, STEPHANIE ZAK",
@@ -1709,6 +1760,22 @@
     "expenditures": 2742.12
    }
   ],
+  "Addison-5": [
+   {
+    "name": "MCGILL, ADRIEL JUBILEE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8870.68,
+    "expenditures": 4482.26
+   },
+   {
+    "name": "SMITH, HARVEY T",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 2350,
+    "expenditures": 2455.99
+   }
+  ],
   "Windham-4": [
    {
     "name": "MROWICKI, MIKE",
@@ -1775,36 +1842,6 @@
     "incumbent": true,
     "contributions": 4430,
     "expenditures": 3588.7
-   }
-  ],
-  "Orange-Washington-Addison": [
-   {
-    "name": "REED, PETER MARTIN",
-    "party": "Other",
-    "incumbent": false,
-    "contributions": 5236,
-    "expenditures": 4717.95
-   },
-   {
-    "name": "ROCHE, JOSEPH",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 300,
-    "expenditures": 300
-   },
-   {
-    "name": "RUSSELL, CHARLES WILLIAM",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 0,
-    "expenditures": 0
-   },
-   {
-    "name": "SATCOWITZ, LAWRENCE",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 4878.04,
-    "expenditures": 4307.22
    }
   ],
   "Lamoille-3": [
@@ -1878,15 +1915,6 @@
     "incumbent": false,
     "contributions": 7867.83,
     "expenditures": 7867.83
-   }
-  ],
-  "Addison-5": [
-   {
-    "name": "SMITH, HARVEY T",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 2350,
-    "expenditures": 2455.99
    }
   ],
   "Washington-Chittenden": [

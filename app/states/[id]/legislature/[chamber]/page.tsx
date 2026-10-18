@@ -63,7 +63,7 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: "linear-gradient(135deg, var(--app-tab-bg) 0%, var(--app-bg) 65%)" }}>
+      <div style={{ background: holder ? `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${holder === "D" ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)` : "linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, var(--app-tab-bg) 0%, var(--app-bg) 65%)" }}>
         <div className={`${PAGE_CONTAINER} pt-6`}>
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <StatePill name={state.name} abbr={state.abbr} />
@@ -72,9 +72,9 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
             )}
           </div>
           <div className="flex items-center gap-3">
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.75rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>{state.name} Legislature</h1>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}>{state.name} Legislature</h1>
           </div>
-          <nav className="mt-5 flex items-end gap-5" style={{ borderBottom: "1px solid var(--app-border)" }} aria-label="Chamber">
+          <nav className="mt-6 sm:mt-7 flex items-end gap-5" style={{ borderBottom: "1px solid var(--app-border)" }} aria-label="Chamber">
             {unicameral ? tab("senate", true) : CHAMBERS.map((c) => tab(c, c === chamber))}
           </nav>
         </div>

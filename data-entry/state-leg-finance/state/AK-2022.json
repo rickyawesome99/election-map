@@ -410,6 +410,13 @@
   ],
   "30": [
    {
+    "name": "Vote Kevin McCabe",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 37583.85,
+    "expenditures": null
+   },
+   {
     "name": "Doyle Edward Holmes",
     "party": "Republican",
     "incumbent": false,
@@ -796,6 +803,22 @@
     "expenditures": null
    }
   ],
+  "P": [
+   {
+    "name": "Jim Matherly for State Senate",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 53055.88,
+    "expenditures": null
+   },
+   {
+    "name": "Alex Jafre",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 985,
+    "expenditures": null
+   }
+  ],
   "D": [
    {
     "name": "Tuckerman Babcock",
@@ -816,15 +839,6 @@
     "party": "Other",
     "incumbent": false,
     "contributions": 1920.13,
-    "expenditures": null
-   }
-  ],
-  "P": [
-   {
-    "name": "Alex Jafre",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 985,
     "expenditures": null
    }
   ],

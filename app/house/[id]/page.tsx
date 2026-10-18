@@ -1,4 +1,5 @@
 import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, presPastResults, senateData, senateNoElection, senateHoldovers, electionYear } from "@/data/forecastData";
+import { candidatePageHref, partyTextColor } from "@/lib/candidatePages";
 import { getStatewideMargin, getNationalMargin } from "@/lib/statewideMargins";
 import { pviHistory } from "@/lib/pviHistory";
 import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
@@ -323,6 +324,34 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
           )}
 
           <section>
+            <LedgerSectionHead label="About this District" />
+            {race.raceDesc && (
+              <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--app-text-primary)" }}>
+                {race.raceDesc}
+              </p>
+            )}
+            {demographics && (
+              <div className="mb-4">
+                <DemographicsStrip {...demographics} />
+              </div>
+            )}
+            <AboutRaceCard
+              bare
+              title="About this District"
+              items={[
+                { label: "Incumbent", value: currentRepName, href: candidatePageHref(currentRepName) },
+                { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD", color: partyTextColor(currentRepParty) },
+                { label: "PVI", value: pviDisplay },
+              ]}
+            />
+            {demographics && (
+              <p className="text-xs mt-4" style={{ color: "var(--app-text-very-muted)" }}>
+                {demographicsNote}
+              </p>
+            )}
+          </section>
+
+          <section>
             <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {(() => {
               const rows = (
@@ -340,34 +369,6 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               );
               return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} /> : rows;
             })()}
-          </section>
-
-          <section>
-            <LedgerSectionHead label="About this District" />
-            {race.raceDesc && (
-              <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--app-text-primary)" }}>
-                {race.raceDesc}
-              </p>
-            )}
-            {demographics && (
-              <div className="mb-4">
-                <DemographicsStrip {...demographics} />
-              </div>
-            )}
-            <AboutRaceCard
-              bare
-              title="About this District"
-              items={[
-                { label: "Incumbent", value: currentRepName },
-                { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD" },
-                { label: "PVI", value: pviDisplay },
-              ]}
-            />
-            {demographics && (
-              <p className="text-xs mt-4" style={{ color: "var(--app-text-very-muted)" }}>
-                {demographicsNote}
-              </p>
-            )}
           </section>
 
           <section>

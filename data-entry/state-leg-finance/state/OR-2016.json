@@ -38,6 +38,15 @@
     "expenditures": null
    }
   ],
+  "12": [
+   {
+    "name": "Friends of John Lively",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 115708.37,
+    "expenditures": null
+   }
+  ],
   "13": [
    {
     "name": "Friends of Nancy Nathanson",
@@ -119,6 +128,24 @@
     "expenditures": null
    }
   ],
+  "31": [
+   {
+    "name": "Brad Witt for State Representative",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 158356.14,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Ken Helm for Oregon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 79967.69,
+    "expenditures": null
+   }
+  ],
   "38": [
    {
     "name": "Friends of Ann Lininger",
@@ -168,6 +195,15 @@
     "party": "Other",
     "incumbent": false,
     "contributions": 12,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "Committee to Elect Janelle Bynum",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1133684.71,
     "expenditures": null
    }
   ],
