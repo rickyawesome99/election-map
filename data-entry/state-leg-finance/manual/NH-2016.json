@@ -1,0 +1,1623 @@
+{
+ "_about": "New Hampshire 2016 scanned paper reports: TO DATE 'Total receipts (E+F+G)' and line G, read by eye 2026-10-18, keyed by filerReportGuid. Used by scripts/fetch-state-leg-finance-nh-2016.py. Where the form's total was blank, E+F+G. Blank TO DATE columns and blank forms are left out (null).",
+ "reports": {
+  "d9ac2710-3743-4b1a-87e8-dda6590aac1c": {
+   "total": 3185.45,
+   "surplus": 0.0,
+   "filer": "Altschiller, Debra ",
+   "report": "12/21/2016 - General"
+  },
+  "4940cf53-8dfe-4d87-b6dd-452a67dbaf60": {
+   "total": 7555.16,
+   "surplus": 0.0,
+   "filer": "Stevens, Janet ",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E per form"
+  },
+  "d281c965-b500-4df6-a1e4-76850bad1915": {
+   "total": 900.0,
+   "surplus": 0.0,
+   "filer": "McBeath, Rebecca ",
+   "report": "11/16/2016 - General"
+  },
+  "f6fd15a1-82f1-43a2-91f9-00df09dd6b2c": {
+   "total": 51358.2,
+   "surplus": 0.0,
+   "filer": "Shawn Jasper for New Hampshire",
+   "report": "11/16/2016 - General",
+   "note": "amended"
+  },
+  "1770cc75-002d-463a-a5da-822e6308b5f1": {
+   "total": 7774.42,
+   "surplus": 0.0,
+   "filer": "Packard, Sherman ",
+   "report": "11/16/2016 - General",
+   "note": "amended; F box blank (set null), total = A+B"
+  },
+  "bae1594e-1f26-403b-b8f9-a873e6d174e6": {
+   "total": 291958.05,
+   "surplus": 28798.05,
+   "filer": "Friends of Jeanie Forrester",
+   "report": "09/21/2016 - Primary"
+  },
+  "bb5cc101-101c-4a03-b581-4ecc6be38ea5": {
+   "total": 1794.92,
+   "surplus": 0.0,
+   "filer": "Gilman, George M.",
+   "report": "11/16/2016 - General",
+   "note": "A and total written with a leading dash \"\u20141794.92\" (could mean negative); F blank"
+  },
+  "5d2eb790-a047-4d69-83d3-70a95601c8bb": {
+   "total": 1110.0,
+   "surplus": 0.0,
+   "filer": "Notter, Jeanine ",
+   "report": "11/16/2016 - General",
+   "note": "amendment #2; TO DATE column blank except total 1,110"
+  },
+  "02ca36eb-a5b4-45cc-8c83-8cd657ae6f84": {
+   "total": 432.69,
+   "surplus": 57.69,
+   "filer": "Testerman, Dave ",
+   "report": "11/16/2016 - General"
+  },
+  "a23043f0-c180-4fb4-85c8-93debe09c08f": {
+   "total": 2340.52,
+   "surplus": 0.0,
+   "filer": "Friends of Tim Smith",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE total blank"
+  },
+  "3725491f-a8f5-4323-8588-ecf76f8244f1": {
+   "total": 2383.4,
+   "surplus": 1299.4,
+   "filer": "Umberger, Karen ",
+   "report": "11/16/2016 - General",
+   "note": "A overwritten, reads 1084"
+  },
+  "5db91d88-3df7-403b-8c4b-124d182ac519": {
+   "total": 989.0,
+   "surplus": 0.0,
+   "filer": "Vadney, Herb ",
+   "report": "11/16/2016 - General"
+  },
+  "73c82a13-4505-4a79-ac51-44d2e2bbe53a": {
+   "total": 3013.71,
+   "surplus": 0.0,
+   "filer": "Abrami, Patrick F.",
+   "report": "11/16/2016 - General",
+   "note": "F blank"
+  },
+  "611816db-c193-4ca4-bb3c-8d8160f7f2cd": {
+   "total": 3081.0,
+   "surplus": 0.0,
+   "filer": "Shattuck, Gilman ",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E"
+  },
+  "93f87af5-a9cf-405e-aadf-1c9d1560faae": {
+   "total": 1586.91,
+   "surplus": 0.0,
+   "filer": "Osborne, Richard ",
+   "report": "11/16/2016 - General",
+   "note": "primary report (final)"
+  },
+  "4fa6f886-9180-409b-a6e5-a9659b33b7f9": {
+   "total": 440.0,
+   "surplus": 0.0,
+   "filer": "Kurk, Neal ",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE line A blank; F and total 440"
+  },
+  "6335ee82-7407-45e4-a02b-6f489739cb8f": {
+   "total": 1325.0,
+   "surplus": 0.0,
+   "filer": "Warden, Mark ",
+   "report": "11/16/2016 - General",
+   "note": "only E 100 and total (reads 1325, last digit unclear) in TO DATE; total disagrees with E+F+G"
+  },
+  "996daf1d-71f5-432f-9997-2741f13d787a": {
+   "total": 50.0,
+   "surplus": 0.0,
+   "filer": "O'Shaughnessy, Richard ",
+   "report": "11/16/2016 - General",
+   "note": "F blank"
+  },
+  "28c56a8b-51bb-4af5-b245-d940a6f17c2a": {
+   "total": 1608.0,
+   "surplus": 723.0,
+   "filer": "Galloway, Kay ",
+   "report": "11/16/2016 - General",
+   "note": "total overwritten: 1408 crossed out, 1608 written; E+F+G = 1408, disagrees"
+  },
+  "4cf0140e-e378-4a62-b9a2-54d19729418f": {
+   "total": 1455.0,
+   "surplus": 0.0,
+   "filer": "King, Mark ",
+   "report": "10/19/2016 - General",
+   "note": "November 2 report? dated Oct 19 box"
+  },
+  "e4cf40c0-b66d-469e-bc92-84885339287e": {
+   "total": 2664.99,
+   "surplus": 0.0,
+   "filer": "Edwards, Jess ",
+   "report": "11/16/2016 - General",
+   "note": "A corrected (2,660.99 struck, 2,640.00 written); F written as \".98\" (odd), A+B = total"
+  },
+  "80bf8228-8ca6-42fb-97ba-1dd5cc610315": {
+   "total": 679.0,
+   "surplus": 0.0,
+   "filer": "Burridge, Delmar D.",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE total blank"
+  },
+  "8814e763-e2bc-4f0b-adf5-f3f752105c91": {
+   "total": 900.0,
+   "surplus": 0.0,
+   "filer": "Taylor, Gale T.",
+   "report": "11/16/2016 - General",
+   "note": "F corrected to -129.44 (225.00 struck); total 900.00 disagrees with E+F (225)"
+  },
+  "7f2e5e76-dfc7-48cd-a421-e0061a0389e4": {
+   "total": 4858.72,
+   "surplus": 0.0,
+   "filer": "Messmer, Mindi F.",
+   "report": "11/16/2016 - General"
+  },
+  "37d15920-79f5-4f1d-ac1f-9e894ac5dd96": {
+   "total": 21624.0,
+   "surplus": 0.0,
+   "filer": "Gannon, William M.",
+   "report": "11/16/2016 - General"
+  },
+  "d40fc303-b602-4462-94f4-3ae86d17ab02": {
+   "total": 1916.19,
+   "surplus": 0.0,
+   "filer": "Rafter, Hal ",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E"
+  },
+  "c3a2fc5e-f78f-41df-ad55-58801225f2ab": {
+   "total": 189.0,
+   "surplus": 0.0,
+   "filer": "Blue, Barbara A.",
+   "report": "11/16/2016 - General",
+   "note": "F blank; total 189.00 (also 189.00 in THIS PERIOD) disagrees with A 475"
+  },
+  "d4919dd5-ee2c-4e77-a919-b619fe2e5d80": {
+   "total": 2325.0,
+   "surplus": 0.0,
+   "filer": "Fraher, Nancy R.",
+   "report": "11/16/2016 - General",
+   "note": "A written \"1950.00 + 350.00 loan to campaign\"; F blank; total 2325 = 1950+350+25"
+  },
+  "1362455e-3e4a-4cfb-9257-649a0ec51b47": {
+   "total": 3658.0,
+   "surplus": 0.0,
+   "filer": "Hamblen, George ",
+   "report": "11/16/2016 - General"
+  },
+  "c34207e1-8c36-4f42-80c0-ebf2e537fcf8": {
+   "total": 2688.0,
+   "surplus": 0.0,
+   "filer": "Rothenberg, Marcy ",
+   "report": "11/16/2016 - General",
+   "note": "F blank; total 2688 disagrees with A+B 2660 (rechecked)"
+  },
+  "095e85cc-9dce-486a-a9d1-cedc9569a64b": {
+   "total": 1325.0,
+   "surplus": 0.0,
+   "filer": "Read, Ellen ",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E; total blank"
+  },
+  "279737d7-dbf7-429e-a764-482b5a9dd115": {
+   "total": 1938.0,
+   "surplus": 0.0,
+   "filer": "Sherman, Ilyssa J.",
+   "report": "11/16/2016 - General"
+  },
+  "025878b3-2aab-4712-8e78-92aeb109a433": {
+   "total": 5530.87,
+   "surplus": 0.0,
+   "filer": "Terrio, Ross W.",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E; note below form: surplus of $530.57 from current campaign"
+  },
+  "f4ba3a4b-0c68-42d1-9588-1debc7e4b59f": {
+   "total": 874.88,
+   "surplus": 0.0,
+   "filer": "Arcouette, Sylvia J.",
+   "report": "11/16/2016 - General",
+   "note": "F blank; total = A+E"
+  },
+  "5677eaad-0cc9-4df9-b593-c7bf48777d46": {
+   "total": 100.0,
+   "surplus": 0.0,
+   "filer": "Abbott, Michael D.",
+   "report": "11/16/2016 - General"
+  },
+  "cd057229-b015-40fa-987d-a9dc44d51f81": {
+   "total": 2055.0,
+   "surplus": 0.0,
+   "filer": "Sterling, Jr., Franklin W.",
+   "report": "11/16/2016 - General"
+  },
+  "d7454de4-bc6e-44bc-8e91-5fa732677fb7": {
+   "total": 6256.9,
+   "surplus": 0.0,
+   "filer": "Gurung, Madalasa ",
+   "report": "11/16/2016 - General"
+  },
+  "47f3f563-8ebe-40f8-9898-dcf845351312": {
+   "total": 1740.0,
+   "surplus": 0.0,
+   "filer": "Rousseau, Richard ",
+   "report": "11/16/2016 - General"
+  },
+  "ddaa6263-3cba-4e7d-bf4d-4165cf69cd51": {
+   "total": 113779.0,
+   "surplus": 0.0,
+   "filer": "Friends of Dan Innis",
+   "report": "11/16/2016 - General"
+  },
+  "4cb19d5d-063d-41a4-b7b4-18b67f4935de": {
+   "total": 8270.0,
+   "surplus": 0.0,
+   "filer": "Murray, Kate ",
+   "report": "11/16/2016 - General"
+  },
+  "ac360c01-6fff-4531-823c-da92442a534c": {
+   "total": 2480.0,
+   "surplus": 0.0,
+   "filer": "Boutin, Skylar M.",
+   "report": "11/16/2016 - General"
+  },
+  "e303eac0-04a0-4d2e-b155-00f77ac6f7af": {
+   "total": 450.0,
+   "surplus": 0.0,
+   "filer": "Goodwin, Peter H.",
+   "report": "11/16/2016 - General"
+  },
+  "22e42fc1-7fe7-4841-b142-4b50b3f7f070": {
+   "total": 1564.52,
+   "surplus": 0.0,
+   "filer": "Lacey, Diana ",
+   "report": "11/16/2016 - General",
+   "note": "F corrected: 1,564.52 struck, ~1,235.4x written (cut off); total = E+F"
+  },
+  "a5e25b27-ffbe-4eff-bd80-7b92e989b230": {
+   "total": 2900.0,
+   "surplus": 0.0,
+   "filer": "Berrien, Skip ",
+   "report": "11/16/2016 - General"
+  },
+  "9e10a1b0-77cc-4c3e-9fda-9ebe8998cb18": {
+   "total": 925.0,
+   "surplus": 475.0,
+   "filer": "Cordelli, Glenn ",
+   "report": "11/16/2016 - General"
+  },
+  "546d8cd2-01fe-49f6-9e18-3c35e214857b": {
+   "total": 2150.0,
+   "surplus": 0.0,
+   "filer": "Georgevits, Andrew ",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E"
+  },
+  "ad556a23-b572-44d7-a352-e9663e8aa627": {
+   "total": 350.0,
+   "surplus": 0.0,
+   "filer": "Soucy, Timothy ",
+   "report": "11/16/2016 - General",
+   "note": "F blank"
+  },
+  "23016f76-54a3-4277-ab97-d958b511f544": {
+   "total": 2379.75,
+   "surplus": 0.0,
+   "filer": "Karrick, David ",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E"
+  },
+  "888167f6-8d05-4dad-9abd-d0b1144b6a35": {
+   "total": 4189.0,
+   "surplus": 340.0,
+   "filer": "Malloy, Dennis ",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E; total 4189 = E+F (excludes G 340), disagrees with E+F+G 4529"
+  },
+  "47974600-8575-4ca5-b2e2-7d8b51541418": {
+   "total": 1416.96,
+   "surplus": 161.67,
+   "filer": "Maes, Kevin G.",
+   "report": "11/16/2016 - General",
+   "note": "F written = A+E; total = F+G; disagrees with E+F+G"
+  },
+  "20f4f6a5-d89f-4b44-9f59-e9e190019d6a": {
+   "total": 1400.29,
+   "surplus": 0.0,
+   "filer": "Twombly, Timothy ",
+   "report": "11/16/2016 - General"
+  },
+  "1177f41b-455f-481a-a3ee-c2897e065af5": {
+   "total": 1186.31,
+   "surplus": -154.69,
+   "filer": "Burt, John ",
+   "report": "11/16/2016 - General",
+   "note": "G written \"\u2014 154.69\" (deficit)"
+  },
+  "ef008504-04f8-42c2-97a3-c70a7f1431a8": {
+   "total": 15313.84,
+   "surplus": 5661.84,
+   "filer": "Friends of Linda Tanner",
+   "report": "11/16/2016 - General",
+   "note": "A reads 7,986 (rechecked); A+B = 8271 disagrees with F 9652; total = F+G"
+  },
+  "271f47f1-8de5-4309-bcd5-b8c949ee81c7": {
+   "total": 2411.7,
+   "surplus": 0.0,
+   "filer": "Carey, Lorrie J.",
+   "report": "11/16/2016 - General"
+  },
+  "22e725d1-63bc-4948-96f4-d985d7568907": {
+   "total": 4440.85,
+   "surplus": 2704.56,
+   "filer": "Mangipudi, Latha ",
+   "report": "11/16/2016 - General",
+   "note": "E written \"None\""
+  },
+  "d651e5de-b1b4-4a8b-9aad-2ef9fbaee2c9": {
+   "total": 240.0,
+   "surplus": 0.0,
+   "filer": "Fedolfi, Jim ",
+   "report": "11/16/2016 - General",
+   "note": "F blank; no report-date box checked"
+  },
+  "b037b700-be19-4c17-be1f-930908207667": {
+   "total": -155.7,
+   "surplus": 0.0,
+   "filer": "McNamara, Richard ",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE column blank except total written \"(155.70)\" in parentheses; THIS PERIOD A=F=total 200.00"
+  },
+  "8de4f1d9-cf9b-46bf-aeb6-6702995bbc8d": {
+   "total": 1050.0,
+   "surplus": 0.0,
+   "filer": "Martin, Patricia ",
+   "report": "11/16/2016 - General"
+  },
+  "a28028d1-e2c5-4dd3-81bf-091d70546c91": {
+   "total": 1062.16,
+   "surplus": 0.0,
+   "filer": "Gale, Sylvia ",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE column blank except total 1,062.16 (THIS PERIOD total 1,062.16 struck through)"
+  },
+  "5154ecd7-a32b-49f3-9e56-0c32db71575c": {
+   "total": 1538.0,
+   "surplus": 0.0,
+   "filer": "Levesque, Melanie ",
+   "report": "11/16/2016 - General",
+   "note": "F blank"
+  },
+  "a6d2ad61-bd6b-4dc1-a861-c0e83e883d23": {
+   "total": 4435.0,
+   "surplus": 500.0,
+   "filer": "Cloutier, John R.",
+   "report": "11/16/2016 - General"
+  },
+  "90f4f58a-bec2-4616-8743-86028b297801": {
+   "total": 4478.34,
+   "surplus": 655.32,
+   "filer": "DiMartino, Lisa ",
+   "report": "11/16/2016 - General"
+  },
+  "18fb55cb-869f-4038-be54-5665ce7fdd4f": {
+   "total": 1566.0,
+   "surplus": 0.0,
+   "filer": "Frothingham, Judy W.",
+   "report": "11/16/2016 - General",
+   "note": "F written = A+E (1566); total 1566 disagrees with E+F"
+  },
+  "e3b33e0c-66ca-48c7-9db7-d7e8fce145e6": {
+   "total": 1030.78,
+   "surplus": 0.0,
+   "filer": "Brown, Larry ",
+   "report": "11/16/2016 - General",
+   "note": "marked \"FINAL & ONLY\""
+  },
+  "4814ac52-29c4-45b9-8d8b-5d6f64af5b2d": {
+   "total": 0.0,
+   "surplus": 0.0,
+   "filer": "Harvey, Cathryn ",
+   "report": "11/16/2016 - General",
+   "note": "only total filled (0) in both columns"
+  },
+  "04d6cbed-4dd8-4900-a1cf-c590904d1d58": {
+   "total": 1120.0,
+   "surplus": 0.0,
+   "filer": "Comtois, Barbara ",
+   "report": "11/16/2016 - General",
+   "note": "G and total rows cut off in scan"
+  },
+  "9390c368-d50f-41f3-8b98-9d2612df0726": {
+   "total": 1473.7,
+   "surplus": 0.0,
+   "filer": "Torosian, Peter E.",
+   "report": "11/16/2016 - General"
+  },
+  "1e83d1d0-f326-4a12-af71-074f5e7363c3": {
+   "total": 87.3,
+   "surplus": -312.7,
+   "filer": "Roberts, Carol R.",
+   "report": "11/16/2016 - General",
+   "note": "G written \"-312.70\" (deficit)"
+  },
+  "38e80fb3-f19d-4203-8c14-3c244ec08760": {
+   "total": 2602.84,
+   "surplus": 1602.84,
+   "filer": "McCarthy, Frank ",
+   "report": "11/16/2016 - General"
+  },
+  "d5fbabd5-4646-40d3-bb72-052a80597d04": {
+   "total": 2124.46,
+   "surplus": 1277.46,
+   "filer": "Till, Mary ",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E"
+  },
+  "e1177b6a-a097-4579-a562-c7cf83a67e36": {
+   "total": 1400.0,
+   "surplus": 0.0,
+   "filer": "Hogan, Edith ",
+   "report": "11/16/2016 - General",
+   "note": "primary-election form, \"Nov 16\" written in"
+  },
+  "5f7d52b0-35d1-4c55-b86c-65a1d60408ef": {
+   "total": 135701.0,
+   "surplus": 9351.0,
+   "filer": "Friends of Andy Sanborn",
+   "report": "11/16/2016 - General",
+   "note": "F blank; total = A+G"
+  },
+  "b7040059-e9e3-44c9-9ec6-b947529f80fb": {
+   "total": 798.95,
+   "surplus": 0.0,
+   "filer": "Friends of Lee W. Oxenham",
+   "report": "11/16/2016 - General",
+   "note": "F written = A+B+E; total = F, disagrees with E+F (827.90)"
+  },
+  "87c1083f-291f-403f-82e0-2e6780fc1bdd": {
+   "total": 774.48,
+   "surplus": 274.48,
+   "filer": "McCloskey, David ",
+   "report": "11/16/2016 - General",
+   "note": "total partly overwritten, reads ~774.48 (consistent with F+G)"
+  },
+  "c5593459-5ca7-4500-aaab-b4d8595c20de": {
+   "total": 570.0,
+   "surplus": 0.0,
+   "filer": "Reif, Andreas ",
+   "report": "11/16/2016 - General",
+   "note": "total row partly cut off but reads 570.00"
+  },
+  "fde12d23-75aa-4fc3-9c6e-60c672c816b0": {
+   "total": 4500.0,
+   "surplus": 0.0,
+   "filer": "Huot, David ",
+   "report": "11/16/2016 - General"
+  },
+  "0bd51c80-e62b-4f12-b1a3-e9904a1b3754": {
+   "total": 1125.0,
+   "surplus": 0.0,
+   "filer": "Tucker, Edith ",
+   "report": "11/16/2016 - General"
+  },
+  "1a731822-0780-4eb4-b3e7-3f4b9a26bfe5": {
+   "total": 1050.0,
+   "surplus": 0.0,
+   "filer": "Griffin, Mary E.",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE line A scribbled out (illegible); F blank; total 1050"
+  },
+  "9908f50a-afad-49f6-b571-f4610ab642e2": {
+   "total": 1766.17,
+   "surplus": 655.39,
+   "filer": "Eisner, Mary ",
+   "report": "11/02/2016 - General",
+   "note": "amended 11/14/16 (Nov 2 report); E=F=555.39, G 655.39 as written; total blank; F disagrees with A+B-E"
+  },
+  "f39d4a6f-f620-4d69-9f66-2a067b8cd62c": {
+   "total": 57117.27,
+   "surplus": 0.0,
+   "filer": "McPhaul, Dolly ",
+   "report": "11/16/2016 - General",
+   "note": "cents written as superscripts; F = A+B-E; total = E+F"
+  },
+  "90d1a96d-f3b5-4eee-bed3-0e25155bf60c": {
+   "total": 138081.0,
+   "surplus": 0.0,
+   "filer": "Garvey, John ",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E"
+  },
+  "3e637596-21c3-4c6b-9523-1f85355cfe6d": {
+   "total": 1300.0,
+   "surplus": 0.0,
+   "filer": "Scully, Kevin ",
+   "report": "11/16/2016 - General"
+  },
+  "3e438ea7-4ec1-4b54-ada1-cc0f167616fe": {
+   "total": 101189.69,
+   "surplus": 24298.69,
+   "filer": "Committee to Elect David Watters",
+   "report": "11/16/2016 - General"
+  },
+  "cfb5459e-e375-453b-904f-9386b48b5912": {
+   "total": 41365.0,
+   "surplus": 0.0,
+   "filer": "Families for Joe Duarte",
+   "report": "11/16/2016 - General",
+   "note": "E TO DATE value struck through"
+  },
+  "b0dc8873-0bfa-4028-b1ff-905f2986f48a": {
+   "total": 72441.85,
+   "surplus": 0.0,
+   "filer": "Martha Fuller Clark for State Senate",
+   "report": "11/16/2016 - General",
+   "note": "B/E/F/G blank; total 72441.85 disagrees with A (diff 3620 = this-period A)"
+  },
+  "38eccae3-5b0e-4676-aad2-1b32794bcc86": {
+   "total": 680.31,
+   "surplus": 0.0,
+   "filer": "Edgar, Michael ",
+   "report": "11/16/2016 - General"
+  },
+  "f7a23ff5-7bb1-4269-b4b1-03af5e291cd4": {
+   "total": 146264.0,
+   "surplus": 1841.0,
+   "filer": "Tom Sherman for State Senate",
+   "report": "11/16/2016 - General"
+  },
+  "9e543db6-0b88-425a-9cfb-28f55cc80c15": {
+   "total": 950.0,
+   "surplus": 0.0,
+   "filer": "Copp, Anne ",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE total blank"
+  },
+  "6523ae66-0a36-48b5-9fb9-453da0f4d5ed": {
+   "total": 1144.0,
+   "surplus": 19.0,
+   "filer": "Schuett, Dianne E.",
+   "report": "11/16/2016 - General"
+  },
+  "664a870d-8619-490e-bdae-f73bd3c33a29": {
+   "total": 2809.94,
+   "surplus": 0.0,
+   "filer": "St. Martin, Tom ",
+   "report": "11/16/2016 - General",
+   "note": "F and total digits overwritten, read as 2,809.94"
+  },
+  "0a071b7e-6b7e-40cd-9abf-5bf8849af9bb": {
+   "total": 6587.13,
+   "surplus": 1737.13,
+   "filer": "Ley, Douglas A.",
+   "report": "11/16/2016 - General"
+  },
+  "73493753-b643-48de-9538-706ec79e0118": {
+   "total": 1564.0,
+   "surplus": 0.0,
+   "filer": "Woodbury, David ",
+   "report": "11/16/2016 - General"
+  },
+  "16332fcd-ec40-4708-beb5-45e1f779295c": {
+   "total": 262.72,
+   "surplus": 37.72,
+   "filer": "Comeau, Ed ",
+   "report": "11/16/2016 - General"
+  },
+  "95aad7ba-90ed-4f18-9fee-051f26fe51c9": {
+   "total": 785.0,
+   "surplus": 0.0,
+   "filer": "Negron, Steven J.",
+   "report": "11/16/2016 - General",
+   "note": "primary-election form marked Nov 16; F 660 disagrees with A+B 785 (rechecked)"
+  },
+  "e4b1a289-7116-40e1-a829-62b1f433c5e8": {
+   "total": 9795.27,
+   "surplus": 5313.27,
+   "filer": "Walz, Mary Beth ",
+   "report": "11/16/2016 - General",
+   "note": "A cents read .06 vs F .00 (minor)"
+  },
+  "4ef1956d-90fe-4030-8180-f252aa222120": {
+   "total": 3200.32,
+   "surplus": 0.0,
+   "filer": "Lozito, Marie ",
+   "report": "11/16/2016 - General",
+   "note": "total cents overwritten"
+  },
+  "e9ef733b-4361-4cf9-b416-ea1b9bd869a2": {
+   "total": 1460.0,
+   "surplus": 0.0,
+   "filer": "Costable, Michael ",
+   "report": "11/16/2016 - General",
+   "note": "F written = A+B (not minus E); total = E+F"
+  },
+  "37193ec1-ee81-4267-ba86-20e86eb1aff9": {
+   "total": 2911.97,
+   "surplus": 411.97,
+   "filer": "Irwin, Virginia O.",
+   "report": "11/16/2016 - General"
+  },
+  "d7a25a10-2cf0-477b-8f07-cbb5cc0574ad": {
+   "total": 0.0,
+   "surplus": 0.0,
+   "filer": "Thornhill, Brooks ",
+   "report": "11/16/2016 - General",
+   "note": "F and total written 0 despite A 1100.00 (disagrees)"
+  },
+  "63dcae36-2df9-4192-82ef-b037f0e6ac46": {
+   "total": 550.0,
+   "surplus": 0.0,
+   "filer": "Nelson, Bill ",
+   "report": "11/16/2016 - General",
+   "note": "total row partly cut, reads 550"
+  },
+  "653c7b2e-34f9-49ce-adfe-767e00d49105": {
+   "total": 350855.58,
+   "surplus": 0.0,
+   "filer": "Morse, Chuck ",
+   "report": "11/16/2016 - General"
+  },
+  "4886d0eb-8eea-4cb7-9639-5c734752dbfe": {
+   "total": 73094.46,
+   "surplus": 0.0,
+   "filer": "Joe Casey for NH",
+   "report": "11/16/2016 - General",
+   "note": "G \"N/A\"; F = A+B-E"
+  },
+  "bfff12c0-da2c-4dc0-85aa-4755afa69bd4": {
+   "total": 34355.0,
+   "surplus": 0.0,
+   "filer": "Giuda, Bob ",
+   "report": "11/16/2016 - General",
+   "note": "primary form relabeled Gen. Election 11/16; margin notes \"32,904\" next to A and \"34,355\" next to F; B digits uncertain; figures don't reconcile"
+  },
+  "ed17e68e-b00c-4c74-8064-44cc669d73c0": {
+   "total": 498.75,
+   "surplus": 198.75,
+   "filer": "Pearl, Howard ",
+   "report": "11/16/2016 - General"
+  },
+  "f2ec2b8b-1a7a-4d82-8a93-906725ce00a2": {
+   "total": 14010.7,
+   "surplus": 0.0,
+   "filer": "Friends of Laurie Sanborn",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE column blank except total 14,010.70"
+  },
+  "67259637-6997-4f2a-8e00-9370c46d13be": {
+   "total": 600.0,
+   "surplus": 0.0,
+   "filer": "Guilmette, Marguerite ",
+   "report": "11/16/2016 - General"
+  },
+  "c2a3bf9a-b03c-4aeb-bd99-564b9955ee83": {
+   "total": 60340.0,
+   "surplus": 0.0,
+   "filer": "McGilvray, Scott ",
+   "report": "11/16/2016 - General",
+   "note": "Nov 2 report; B last digit 4 or 5; F 60340 disagrees with A+B-E (~62694), rechecked"
+  },
+  "0415764f-c6b7-4df1-acc2-6a0b22ce86bc": {
+   "total": 3105.32,
+   "surplus": 0.0,
+   "filer": "Billingham, Carla ",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E"
+  },
+  "861b34ba-7821-464b-88e2-a57eaf715782": {
+   "total": 655.39,
+   "surplus": 0.0,
+   "filer": "Eisner, Mary A.",
+   "report": "11/16/2016 - General",
+   "note": "F written = A+E; total = F, disagrees with E+F"
+  },
+  "1bf90316-8d2a-4eb7-a5b2-625f314dab89": {
+   "total": 3337.65,
+   "surplus": 487.65,
+   "filer": "Hunt, John B.",
+   "report": "11/16/2016 - General",
+   "note": "total row cut off in scan (partial \"33...\"); G cents uncertain"
+  },
+  "e059567d-679c-411b-bd96-6942b6978d0f": {
+   "total": 7688.79,
+   "surplus": 1404.79,
+   "filer": "Dean-Bailey, Yvonne M.",
+   "report": "11/16/2016 - General",
+   "note": "F written = A+B (E not subtracted); total = F+G; disagrees with E+F+G (7830.39)"
+  },
+  "c7de1c63-2e1b-43fc-9f6f-4d3e0db3caae": {
+   "total": 1070.0,
+   "surplus": 0.0,
+   "filer": "Smith, Mike ",
+   "report": "11/16/2016 - General"
+  },
+  "efff5091-a1e6-4c64-a3fd-ea225b2d3af5": {
+   "total": 93560.72,
+   "surplus": 2105.54,
+   "filer": "Friends of Feltes Committee",
+   "report": "11/16/2016 - General",
+   "note": "F blank; total = A+B+G"
+  },
+  "34165c00-0606-447d-add6-536e97c3d18c": {
+   "total": 1724.25,
+   "surplus": 55.04,
+   "filer": "Aldrich, Glen C.",
+   "report": "11/16/2016 - General",
+   "note": "scan skewed: 1669.21 sits on E/F line and \"+55.04\" on F/G line; interpreted as F and G (sums to total)"
+  },
+  "ecca4065-2ab3-4220-8168-9c0ed008104b": {
+   "total": 3117.57,
+   "surplus": 22.57,
+   "filer": "Bartlett, Christy D.",
+   "report": "11/16/2016 - General"
+  },
+  "77314ce4-595b-4aeb-bd09-bcf3e6701c4a": {
+   "total": 1963.63,
+   "surplus": 1549.13,
+   "filer": "Friends of Scott A. Burns",
+   "report": "11/16/2016 - General",
+   "note": "F written = A+E; total reads 1963.63 (first digits unclear), disagrees with E+F+G (3013.13); G could be misread"
+  },
+  "1677563d-7c9a-4da9-ba04-b2aaad1e9a7b": {
+   "total": 159108.19,
+   "surplus": 0.0,
+   "filer": "Committee to Eelct Donna Soucy",
+   "report": "11/16/2016 - General",
+   "note": "F blank; total = A+E"
+  },
+  "16d00e1a-9fd3-4cec-a355-47a0fc27bdf2": {
+   "total": 161253.0,
+   "surplus": 16641.0,
+   "filer": "Woodburn for Senate",
+   "report": "11/16/2016 - General",
+   "note": "F equals A (B not added); total = F+G"
+  },
+  "0aea8920-d5f0-4cc9-989b-fcf9ec78f04b": {
+   "total": 500.0,
+   "surplus": 0.0,
+   "filer": "Tapp, Darren ",
+   "report": "11/16/2016 - General"
+  },
+  "5236fde9-069e-4553-9c6b-878b55d802a5": {
+   "total": 14319.47,
+   "surplus": 7129.47,
+   "filer": "Rosenwald, Cindy ",
+   "report": "11/16/2016 - General"
+  },
+  "2ae1098f-84fd-415b-883a-4d7f9a2f3d03": {
+   "total": 1770.17,
+   "surplus": 70.17,
+   "filer": "Wolf, Terry ",
+   "report": "11/16/2016 - General",
+   "note": "typed primary-election form dated Nov 16; F excludes B (1700 vs 1710); total = F+G"
+  },
+  "dc6bd33c-cdfd-47fb-8694-c1642a9f6877": {
+   "total": 140274.27,
+   "surplus": 0.0,
+   "filer": "Nyquist for Senate",
+   "report": "11/16/2016 - General",
+   "note": "F = A (E not subtracted); total = F, disagrees with E+F"
+  },
+  "707f11e8-b11a-4f34-88d3-0d93be7a6c9e": {
+   "total": 4361.14,
+   "surplus": 2757.33,
+   "filer": "Ford, Susan ",
+   "report": "11/16/2016 - General"
+  },
+  "f8be23da-0ee0-434e-b472-c6d97ea30440": {
+   "total": 4677.0,
+   "surplus": 0.0,
+   "filer": "Myler, Mel ",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE G and total blank (THIS PERIOD G 5844.00, total 6244.00)"
+  },
+  "3a76f332-20d0-4b4b-b105-7de5541f90b4": {
+   "total": 2477.6,
+   "surplus": 357.6,
+   "filer": "Gottling, Sue ",
+   "report": "11/16/2016 - General"
+  },
+  "bf6ca01d-dbd3-496f-95cf-363283cab04b": {
+   "total": 850.0,
+   "surplus": 850.0,
+   "filer": "Wheeler, Deborah ",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE only G and total 850.00 (\"Total 11/16/20..\" note); THIS PERIOD all 0"
+  },
+  "3fa28922-cd66-42c6-bed6-3bbced989035": {
+   "total": 150.0,
+   "surplus": 0.0,
+   "filer": "Janigian, John ",
+   "report": "11/16/2016 - General"
+  },
+  "b2c6d8bd-00fd-4ab6-a501-2528e88b21be": {
+   "total": 1257.7,
+   "surplus": 570.0,
+   "filer": "Porter, Marjorie ",
+   "report": "11/16/2016 - General",
+   "note": "typed; F written = A+B (E not subtracted); total = E+F+G"
+  },
+  "c94b743c-d715-4102-964c-b354b8e53c6c": {
+   "total": 107247.74,
+   "surplus": 0.0,
+   "filer": "Ward, Ruth ",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E"
+  },
+  "01b3c2ee-c0e5-471a-ac53-5dffada01143": {
+   "total": 366.0,
+   "surplus": 0.0,
+   "filer": "Stapleton, Walter ",
+   "report": "11/16/2016 - General",
+   "note": "F written = A+E (should be A+B-E); total = F, disagrees with E+F"
+  },
+  "8dde7913-7342-4306-9044-7c4ea4d9f97c": {
+   "total": 4724.2,
+   "surplus": -97.14,
+   "filer": "Moffett, Howard ",
+   "report": "11/16/2016 - General",
+   "note": "G written \"- 97.14\""
+  },
+  "4159a78c-d40a-43d0-af08-77448b57b425": {
+   "total": 250.0,
+   "surplus": 0.0,
+   "filer": "Goeman, Robert ",
+   "report": "11/16/2016 - General"
+  },
+  "d8902dc4-62c4-49bb-a235-4ed8671aaf51": {
+   "total": 0.0,
+   "surplus": 0.0,
+   "filer": "Lascelles, Richard W.",
+   "report": "11/02/2016 - General",
+   "note": "faint scan; only entry is 798.11 written on line B/C (Number of Contributors row, \"(SELF)\"), both columns; F/G/total blank"
+  },
+  "6baa5c16-ab53-4e07-92e3-fd5bafd68af5": {
+   "total": 4035.84,
+   "surplus": 206.6,
+   "filer": "Harvey, Suzanne ",
+   "report": "11/16/2016 - General",
+   "note": "F written = A+B+E; total = F+G; disagrees with E+F+G"
+  },
+  "4c9553a8-0083-4230-9d5a-5b947b2d08ca": {
+   "total": 1050.0,
+   "surplus": 0.0,
+   "filer": "Cartwright, Anne S.",
+   "report": "11/16/2016 - General"
+  },
+  "3b107966-ac84-480c-953c-2d4aff04f786": {
+   "total": 812.0,
+   "surplus": 312.0,
+   "filer": "Hopper, Gary S.",
+   "report": "11/16/2016 - General"
+  },
+  "a23a934f-2bd6-4416-b1ed-8d8d0b318d80": {
+   "total": 46130.61,
+   "surplus": 16660.61,
+   "filer": "Friends of Gary Daniels",
+   "report": "11/16/2016 - General"
+  },
+  "78243d0e-46e8-4c00-83fe-6b45a06a30fc": {
+   "total": 5770.0,
+   "surplus": 0.0,
+   "filer": "Martin, Joelle ",
+   "report": "11/16/2016 - General"
+  },
+  "8dd255c1-e3b9-4968-87f5-cf7de4b2a209": {
+   "total": 1175.0,
+   "surplus": 0.0,
+   "filer": "Wells, Natalie J.",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE column blank except total 1,175.00 (THIS PERIOD A/F/total 100.00)"
+  },
+  "7e91a28c-91ad-46d1-b752-311ebfc87608": {
+   "total": 825.0,
+   "surplus": 0.0,
+   "filer": "Sainsbury, Richard ",
+   "report": "11/16/2016 - General"
+  },
+  "8c02bfc0-cf6b-400c-b59d-142e0ba93714": {
+   "total": 283767.45,
+   "surplus": 0.0,
+   "filer": "Committee to Elect Lou D'Allesandro",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE G blank (THIS PERIOD G 282,920.40); TO DATE total 283,767.45 equals THIS PERIOD total; disagrees with E+F+G"
+  },
+  "f95e5829-27c5-4b62-9b69-37ef595cb300": {
+   "total": 42674.0,
+   "surplus": 8664.0,
+   "filer": "Reagan, John ",
+   "report": "11/16/2016 - General"
+  },
+  "47bef428-4215-44c8-a174-46ff5f614d7d": {
+   "total": 0.0,
+   "surplus": 0.0,
+   "filer": "Abear, Marc ",
+   "report": "11/16/2016 - General",
+   "note": "every line written \"NONE\""
+  },
+  "7f6b99a7-80e2-45bc-99b3-e44e8380ef89": {
+   "total": 106225.0,
+   "surplus": 50111.0,
+   "filer": "Friends of Sharon Carson",
+   "report": "11/16/2016 - General",
+   "note": "total 106,225.00 disagrees with F+G (106,336.00), rechecked"
+  },
+  "0b6a3e57-4949-43a0-a430-adc0de229779": {
+   "total": 4805.3,
+   "surplus": 4320.3,
+   "filer": "Kofalt, Jim ",
+   "report": "11/16/2016 - General"
+  },
+  "604f3505-997b-47e2-adb5-dee7ce4bf360": {
+   "total": 70425.0,
+   "surplus": 0.0,
+   "filer": "Chandler, Charlie ",
+   "report": "11/16/2016 - General"
+  },
+  "69540648-bf09-460a-ba77-c029c858123f": {
+   "total": 2350.0,
+   "surplus": 0.0,
+   "filer": "Tregenza, Norman ",
+   "report": "11/16/2016 - General",
+   "note": "asterisk footnotes next to B/C/D"
+  },
+  "65c66c78-6f5f-4671-99a2-75821a08c2f7": {
+   "total": 26435.91,
+   "surplus": 0.0,
+   "filer": "Gray 4 NH Senate",
+   "report": "11/16/2016 - General"
+  },
+  "27d5cc36-f9bc-4e44-9cf5-f2ca7f98de9f": {
+   "total": -1270.95,
+   "surplus": -1720.95,
+   "filer": "Graham, John A.",
+   "report": "11/16/2016 - General",
+   "note": "typed; total -1270.95 disagrees with F+G (2123.05)"
+  },
+  "e9fda956-82b4-44d1-bae6-70b5211dd4b4": {
+   "total": 2950.0,
+   "surplus": 0.0,
+   "filer": "Knirk, Jerry ",
+   "report": "11/16/2016 - General",
+   "note": "F line had 327.24 struck \"(sic)\" with arrow to 2,622.76 written on G line; interpreted as F (= A+B-E); total = E+F"
+  },
+  "6e00676d-5f6a-4b79-8821-c69ce26ec4b4": {
+   "total": 690.44,
+   "surplus": 0.0,
+   "filer": "Grenier, James L.",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE column blank except total 690.44 (THIS PERIOD G = total = 690.44)"
+  },
+  "774604c1-1377-4043-8482-09fb42aaa865": {
+   "total": 491.0,
+   "surplus": 0.0,
+   "filer": "Laflamme, Larry L.",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE only E 491 and total 491"
+  },
+  "211d0e3f-4570-4621-92fc-483eefe59e3c": {
+   "total": 1383.96,
+   "surplus": 0.0,
+   "filer": "McLean, Mark ",
+   "report": "11/16/2016 - General"
+  },
+  "ef51ca51-14f0-4c02-bb46-8a73a4436a18": {
+   "total": 3631.65,
+   "surplus": 0.0,
+   "filer": "Moore, Susan S.",
+   "report": "11/16/2016 - General",
+   "note": "F = A+B-E"
+  },
+  "72da270a-f06c-4c54-8b74-309b962f8de0": {
+   "total": -1827.03,
+   "surplus": 0.0,
+   "filer": "Major, norman L.",
+   "report": "11/16/2016 - General",
+   "note": "TO DATE lines blank; \"- 1927.03\" written in header row and total \"- 1827.03\" (sign/digits uncertain, 1927 vs 1827)"
+  },
+  "926a03ff-ddd0-4997-a9d8-2ec8917cca0d": {
+   "total": 2141.44,
+   "surplus": 0.0,
+   "filer": "LaMois, Les ",
+   "report": "11/16/2016 - General",
+   "note": "typed; F written = A+B (E not subtracted); total = E+F"
+  },
+  "28733ca3-d09d-4458-b9bc-8a1edd671d0e": {
+   "total": 2490.0,
+   "surplus": 0.0,
+   "filer": "Opderbecke, Linn ",
+   "report": "11/16/2016 - General",
+   "note": "F blank; total = A+B"
+  },
+  "11e21d81-0042-4070-846f-c3fea0d1d2a8": {
+   "total": -1016.0,
+   "surplus": -1236.0,
+   "filer": "Walsh, Bob ",
+   "report": "11/16/2016 - General",
+   "note": "G and total in parentheses (deficit)"
+  },
+  "bea9417f-2ff7-45ee-8ee4-f7860cf04fe4": {
+   "total": 2474.38,
+   "surplus": 199.38,
+   "filer": "Saunderson, George ",
+   "report": "11/16/2016 - General"
+  },
+  "ce4ad7e6-8faf-45a2-82e3-9279a5ae9296": {
+   "total": 1422.01,
+   "surplus": 0.0,
+   "filer": "Hall, Doug ",
+   "report": "11/16/2016 - General"
+  },
+  "1d982350-7927-4ed2-85be-c4d6827e4330": {
+   "total": 864.0,
+   "surplus": -91.0,
+   "filer": "Southworth, Thomas ",
+   "report": "11/16/2016 - General",
+   "note": "G written \"-91\""
+  },
+  "d26eaf64-a35b-48a4-86e6-0049493e6e2e": {
+   "total": 5411.41,
+   "surplus": 0.0,
+   "filer": "Merry, Liz ",
+   "report": "11/16/2016 - General"
+  },
+  "063f40e9-92df-44ce-9bfa-50ad38ab2601": {
+   "total": 500.0,
+   "surplus": 0.0,
+   "filer": "Dunne, Jr., Thomas A.",
+   "report": "11/16/2016 - General",
+   "note": "Nov 2 report; F blank"
+  },
+  "5788b345-771c-4ac1-90f7-2e6c2b42f093": {
+   "total": 2644.55,
+   "surplus": 239.55,
+   "filer": "Wallner, Mary Jane ",
+   "report": "11/16/2016 - General",
+   "note": "F corrected (struck value, 2405 written)"
+  },
+  "9d769ed1-4d14-44fe-8781-4949d46a0702": {
+   "total": 177.93,
+   "surplus": 136.01,
+   "filer": "Schamberg, Tom ",
+   "report": "11/16/2016 - General",
+   "note": "A TO DATE reads 41.25 vs F 41.92 (THIS PERIOD A 41.92); total = F+G"
+  },
+  "32f11bac-1a2a-4073-9946-220f7ddcb0b0": {
+   "total": 0.0,
+   "surplus": 0.0,
+   "filer": "Bertrand, Robert ",
+   "report": "11/16/2016 - General",
+   "note": "all lines dashes"
+  },
+  "153cad3e-f2ff-4c26-9841-cb39aa52ed4e": {
+   "total": 300.0,
+   "surplus": 0.0,
+   "filer": "Gagne, Larry G.",
+   "report": "11/16/2016 - General",
+   "note": "A corrected (struck value, 300.00 written)"
+  },
+  "4b2665f8-d130-476f-b9cd-64fc51543c0c": {
+   "total": 3106.0,
+   "surplus": 0.0,
+   "filer": "Berch, Paul ",
+   "report": "11/16/2016 - General"
+  },
+  "e4d23e65-8f01-41db-a209-fae0713d2ad3": {
+   "total": 650.0,
+   "surplus": 0.0,
+   "filer": "Hull, Robert ",
+   "report": "11/16/2016 - General",
+   "note": "marked FINAL"
+  },
+  "759e99a3-b323-42a8-b4c8-d06200dd22c4": {
+   "total": 2319.66,
+   "surplus": 0.0,
+   "filer": "Le, Tamara ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report; TO DATE column blank except total $2319.66 (THIS PERIOD total 1505.66)"
+  },
+  "b1aa70c2-6331-423f-8ca2-1cfc194be0b3": {
+   "total": 750.0,
+   "surplus": 0.0,
+   "filer": "Phillips, Ellen ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report"
+  },
+  "a76a3ae9-5d80-4d19-944d-9455f00838d5": {
+   "total": 6492.0,
+   "surplus": 0.0,
+   "filer": "Silber, Norman ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report; typed; A and E both 6,492.00, F blank (= A-E = 0)"
+  },
+  "f6951439-cf7e-41c8-bdbe-5581a3854c47": {
+   "total": 1280.0,
+   "surplus": 0.0,
+   "filer": "Mendola, Joseph M.",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report"
+  },
+  "fe48abb5-b2ff-4201-a229-e63b6b45e2e9": {
+   "total": 2204.66,
+   "surplus": 163.66,
+   "filer": "Gerzon, Len ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report; \"see attachment for details\""
+  },
+  "2d71d0f5-2e0e-49b9-982f-94416c6c98fa": {
+   "total": 750.0,
+   "surplus": 0.0,
+   "filer": "Cornell, Patricia ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report"
+  },
+  "04280cea-1506-4eed-9ab9-00e9d6cfb00c": {
+   "total": 415.99,
+   "surplus": 315.99,
+   "filer": "Shepardson, Marge ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report; G digits overwritten"
+  },
+  "67e0bc69-0612-494c-b44a-7e5d181a7c51": {
+   "total": 3463.66,
+   "surplus": 0.0,
+   "filer": "Wright, Bonnie L.",
+   "report": "11/02/2016 - General",
+   "note": "typed custom table (labeled primary, dated 2-Nov-16), YTD column used; F 3463.66 disagrees with A+B (3420.66); total = F excludes E (see #38 adjustment page)"
+  },
+  "fa4d3366-4479-4d98-9b20-16def8417690": {
+   "total": 250.0,
+   "surplus": 0.0,
+   "filer": "Thomas, Douglas ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report"
+  },
+  "9a2b880e-8c41-4a74-8226-9cf54f782bdf": {
+   "total": 1415.0,
+   "surplus": 0.0,
+   "filer": "Whalen, Donald H.",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report"
+  },
+  "848c7ca1-0e0d-447b-a2d9-b805ecf3c18f": {
+   "total": 450.0,
+   "surplus": 0.0,
+   "filer": "Goodwin, Peter H.",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report"
+  },
+  "0dd02e79-0ad8-4479-b2e7-03b0b458790c": {
+   "total": 62131.4,
+   "surplus": 0.0,
+   "filer": "Kahn, Friends of Jay",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report; F = A+B-E"
+  },
+  "35932ca6-ca98-4fbb-87c5-bdad3e89f4b7": {
+   "total": 1949.0,
+   "surplus": 0.0,
+   "filer": "Schwaegler, Victoria O.",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report"
+  },
+  "a6307974-97f8-477a-a388-341eea4f7162": {
+   "total": 3580.05,
+   "surplus": 0.0,
+   "filer": "Erlebacher, Frances ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report; F blank; total = A+B"
+  },
+  "a1f8739d-6b6f-4546-95f7-e448a6d68d8a": {
+   "total": 628.26,
+   "surplus": 0.0,
+   "filer": "White, Syndi ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report; F blank; total row partly cut off, reads 628.26 (= A+B+E)"
+  },
+  "9590e4d9-95ce-4f18-b9a4-09db10d8f020": {
+   "total": 1230.26,
+   "surplus": 0.0,
+   "filer": "Feeley, Michael ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report"
+  },
+  "e66cec02-5e7d-4b78-80a6-8fbcfd2c1137": {
+   "total": 131305.0,
+   "surplus": 17521.0,
+   "filer": "Hosmer for Senate",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report; F = A+B-E"
+  },
+  "72acb7a5-49fa-49ab-941c-5207ad1c9421": {
+   "total": 2180.77,
+   "surplus": 0.0,
+   "filer": "Raymond, Ian ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report; A corrected (struck value, 1775.00 written above); F written = A+B+E; total = F, disagrees with E+F"
+  },
+  "64b41111-6132-4f31-b351-02d21a2e6564": {
+   "total": 1960.0,
+   "surplus": 0.0,
+   "filer": "Bernard, Beau ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report"
+  },
+  "0e15ed82-a33c-4145-8172-1286e56e82f3": {
+   "total": 1725.6,
+   "surplus": 0.0,
+   "filer": "Mulholland, Catherine ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report; F = A+B-E; total blank"
+  },
+  "98e45be2-5a95-44b4-a880-8de6324aa755": {
+   "total": 950.0,
+   "surplus": 0.0,
+   "filer": "Friends of Joseph Lachance",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report"
+  },
+  "41bf9bbb-19cc-476e-ab8a-0f11b8eddf4e": {
+   "total": 150.0,
+   "surplus": 0.0,
+   "filer": "Ellis, Donna ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report; F written 0 (disagrees with A); total 150.00"
+  },
+  "a4ae5e69-7408-4668-9d8b-f92f4e99807c": {
+   "total": 530.0,
+   "surplus": 0.0,
+   "filer": "Skelton, John ",
+   "report": "11/02/2016 - General",
+   "note": "Nov 2 report"
+  },
+  "1272f651-2a0d-40db-ba0b-e0622762be01": {
+   "total": 720.0,
+   "surplus": 0.0,
+   "filer": "Harrington, Michael ",
+   "report": "10/19/2016 - General",
+   "note": "Oct 19 report; A and total corrected from 400.00 to 720.00, F left at 400 (disagrees)"
+  },
+  "5c230d75-7473-4f83-b95f-4774d81a448d": {
+   "total": 400.0,
+   "surplus": 0.0,
+   "filer": "Gordon, Pamela S.",
+   "report": "10/19/2016 - General",
+   "note": "Oct 19 report"
+  },
+  "03ba92f7-e298-408a-a6cb-e54f2abbb60f": {
+   "total": 300.0,
+   "surplus": 0.0,
+   "filer": "Schoenly, Ed E.",
+   "report": "10/19/2016 - General",
+   "note": "Oct 19 report; F written 0 (disagrees with A); total 300.00"
+  },
+  "9f344f55-fcd5-4456-93a1-0b3d55c6f39b": {
+   "total": 1040.65,
+   "surplus": 400.35,
+   "filer": "Marriott, Bruce A.",
+   "report": "10/19/2016 - General",
+   "note": "Oct 19 report"
+  },
+  "3ebc760a-85e5-4207-8290-7b5b0ae7ff48": {
+   "total": 240.0,
+   "surplus": 0.0,
+   "filer": "Schwanke, Merrilee ",
+   "report": "10/19/2016 - General",
+   "note": "Oct 19 report; F blank"
+  },
+  "8b973f4e-6443-460a-a3ba-513846bae962": {
+   "total": 922.0,
+   "surplus": 0.0,
+   "filer": "O'Leary, Richard ",
+   "report": "10/19/2016 - General",
+   "note": "Oct 19 report"
+  },
+  "29fd59f9-be1f-4605-84e5-65e45c1701f2": {
+   "total": 664.0,
+   "surplus": 0.0,
+   "filer": "Phinney, Brandon ",
+   "report": "10/19/2016 - General",
+   "note": "Oct 19 report; A reads 635 (faint); F blank; total 664 disagrees with A+E (659), rechecked"
+  },
+  "35c60dad-015c-41a9-93c3-c36a3dbc091e": {
+   "total": 2436.48,
+   "surplus": 0.0,
+   "filer": "Silber, Norman ",
+   "report": "10/19/2016 - General",
+   "note": "Oct 19 report; typed"
+  },
+  "bd10c351-5bda-4d77-b44c-e56c525c6792": {
+   "total": -676.71,
+   "surplus": -826.71,
+   "filer": "Bates, David ",
+   "report": "10/19/2016 - General",
+   "note": "Oct 19 report; G \"- 826.71\", total \"- 676.71\""
+  },
+  "cc835323-cc62-4ed9-992a-e63153aa528d": {
+   "total": 400.0,
+   "surplus": 0.0,
+   "filer": "LeBrun, Don ",
+   "report": "10/19/2016 - General",
+   "note": "Oct 19 report"
+  },
+  "7e7f5fe4-aa97-4e31-900d-db79a25780f4": {
+   "total": 600.0,
+   "surplus": 0.0,
+   "filer": "Balog, Alan G.",
+   "report": "10/19/2016 - General",
+   "note": "Oct 19 report"
+  },
+  "14b7609e-8fc8-4094-90a6-9354c89d3aef": {
+   "total": 0.0,
+   "surplus": 0.0,
+   "filer": "Bacon, Daniel A.",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21; all zeros"
+  },
+  "e304a13d-0568-4406-9e9c-5e250f5e41ae": {
+   "total": 1135.07,
+   "surplus": 0.0,
+   "filer": "Kris E. Roberts for Senate 10",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21; G written \".00\""
+  },
+  "e853a138-9e91-4684-ba53-2cc2434398e7": {
+   "total": 250.0,
+   "surplus": 0.0,
+   "filer": "Azarian, Gary S.",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21"
+  },
+  "65629eb8-6b3a-43d9-8fc0-46551d97a83f": {
+   "total": 36523.0,
+   "surplus": 0.0,
+   "filer": "Winterton, Friends of Don",
+   "report": "09/07/2016 - Primary",
+   "note": "primary Sep 7"
+  },
+  "038d34cb-6cb9-4c4c-859c-902b0630ed0e": {
+   "total": 4275.0,
+   "surplus": 0.0,
+   "filer": "Beard, Friends of Jim",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21"
+  },
+  "6de67ef0-4f3a-48c2-ac30-ced9b115d346": {
+   "total": 4404.0,
+   "surplus": 0.0,
+   "filer": "Gallagher, Brian S.",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21"
+  },
+  "629009d7-fd35-4434-a496-b1305d97f859": {
+   "total": 2198.68,
+   "surplus": 0.0,
+   "filer": "Malone, Stephen K.",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21; A cents .63 vs F/total .68 (as written)"
+  },
+  "ca377050-bc46-4c0f-a00c-4dc219f4eced": {
+   "total": 1350.0,
+   "surplus": 0.0,
+   "filer": "Danielson, David J.",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21; F blank; 1350 also written on line C"
+  },
+  "3b83364c-fce7-4895-995d-d35a0e28a026": {
+   "total": 19781.25,
+   "surplus": 2371.44,
+   "filer": "Rideout 4 Senate ",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21; F written = A+B+E; total = F+G; disagrees with E+F+G"
+  },
+  "53ebd01f-f2d6-437c-b5ae-807ed7fad325": {
+   "total": 71676.03,
+   "surplus": 0.0,
+   "filer": "Jeanne Dietsch for NH Senate",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21"
+  },
+  "d8235247-b08d-4c65-8a13-cfdeeb2289f0": {
+   "total": 726.99,
+   "surplus": 0.0,
+   "filer": "Prout, Andrew ",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21; typed; scan cut off below line F"
+  },
+  "a1bcdd81-1d4d-4c60-970e-7c44c4dc7abf": {
+   "total": 231.0,
+   "surplus": 0.0,
+   "filer": "Swanick, Theresa ",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21"
+  },
+  "6a4b2617-6688-4281-a884-6fbc9b424337": {
+   "total": 24816.42,
+   "surplus": 0.0,
+   "filer": "Friends of Bob Goodman",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21"
+  },
+  "53a9565e-cc9d-4840-b791-80cc2aabe63a": {
+   "total": 6545.0,
+   "surplus": 0.0,
+   "filer": "JR Hoell for State Rep",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 7; F blank; 6545 written on G line then struck through (treated G=0); total 6545 = A+B"
+  },
+  "0b2b404e-08bf-4586-9c34-461129e0de89": {
+   "total": 1202.98,
+   "surplus": 0.0,
+   "filer": "Valera, John J.",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21; margin note \"these are expenditure receipts paid for by the candidate\""
+  },
+  "4d8d2bc2-49ea-417e-ae84-6935448a61c3": {
+   "total": 0.0,
+   "surplus": 0.0,
+   "filer": "Yaakov, Merav ",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21; all lines blank except totals 0"
+  },
+  "79aa5d6a-58d6-4063-a2af-ed547058d701": {
+   "total": 1600.0,
+   "surplus": 0.0,
+   "filer": "Vorel, John A.",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21"
+  },
+  "ed3bef99-fa39-42cb-9590-ff136c9a5423": {
+   "total": 1100.0,
+   "surplus": 0.0,
+   "filer": "Friends of Rob Robertson",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21"
+  },
+  "cd479744-428b-404f-bdfe-e82da7a72c52": {
+   "total": 22534.6,
+   "surplus": 0.0,
+   "filer": "Friends of Ray Tweedie PAC",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21; F = A+B-E"
+  },
+  "61a2a73b-a232-43d3-8082-f0cb3650d115": {
+   "total": 775.0,
+   "surplus": 0.0,
+   "filer": "Potucek, John ",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21"
+  },
+  "cda20a62-2cf1-4996-aef4-7525aeaf69d0": {
+   "total": 11179.38,
+   "surplus": 0.0,
+   "filer": "Steenson for State Senate, Friends of Nancy",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21; ink blot before A's leading digit (reads 10,019.97); F = A+B-E"
+  },
+  "d812bcf3-b77c-466c-962a-4f377a82d5b5": {
+   "total": 860.0,
+   "surplus": 0.0,
+   "filer": "Committee to Elect Rich Burke",
+   "report": "09/07/2016 - Primary",
+   "note": "primary Sep 7; F blank; total = A+B"
+  },
+  "3c7b5289-efc1-4b84-98f3-adb44f01a881": {
+   "total": 9017.54,
+   "surplus": 0.0,
+   "filer": "Haken for State Senate",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21; B written \".63\""
+  },
+  "4cc83431-d100-47fd-89e3-fc0b48cff9f3": {
+   "total": 620.58,
+   "surplus": 0.0,
+   "filer": "Emerson, Susan ",
+   "report": "09/21/2016 - Primary",
+   "note": "primary Sep 21"
+  },
+  "ad1ebd33-baaf-4c0e-928d-3176c31ec0cc": {
+   "total": 0.0,
+   "surplus": 0.0,
+   "filer": "Shalett, Stanley ",
+   "report": "09/07/2016 - Primary",
+   "note": "primary Sep 7; \"self-financed campaign\", contributors \"none\", amounts blank"
+  },
+  "cb2def3d-b669-4516-9679-b9faf0188a6d": {
+   "total": 4140.0,
+   "surplus": 0.0,
+   "filer": "Booth, Rachael T.",
+   "report": "09/07/2016 - Primary",
+   "note": "primary Sep 7"
+  },
+  "2c0e317f-ea9b-4dbf-8b4e-7933a278becb": {
+   "total": 1600.0,
+   "surplus": 0.0,
+   "filer": "Friends of Jim Maggiore",
+   "report": "08/24/2016 - Primary",
+   "note": "primary Aug 24"
+  },
+  "a13b0c70-1f9c-4401-ab54-ee6b47234d32": {
+   "total": 250.0,
+   "surplus": 0.0,
+   "filer": "Gulick, Ruth P.",
+   "report": "08/24/2016 - Primary",
+   "note": "primary Aug 24; F blank"
+  },
+  "67f79d1d-d6b5-4719-8432-f8346c2a3cab": {
+   "total": 1029.0,
+   "surplus": 0.0,
+   "filer": "Love, David C.",
+   "report": "08/24/2016 - Primary",
+   "note": "primary Aug 24; F written = A+B+E; total = F, disagrees with E+F"
+  },
+  "7c44e42c-79ad-4f39-91ea-695dab4dbf7e": {
+   "total": 7755.7,
+   "surplus": 0.0,
+   "filer": "Pearson, Mark ",
+   "report": "08/24/2016 - Primary",
+   "note": "primary Aug 24; F = A+B-E"
+  },
+  "ff3bf52a-6ffb-4bbc-b574-af7a508bdf89": {
+   "total": 31064.0,
+   "surplus": 8664.0,
+   "filer": "Taxpayers for John Reagan",
+   "report": "08/24/2016 - Primary",
+   "note": "primary Aug 24"
+  },
+  "e2122c19-9b44-4d69-aec5-3809d74b6b46": {
+   "total": 5350.0,
+   "surplus": 0.0,
+   "filer": "Committee to Elect Steve Negron",
+   "report": "08/24/2016 - Primary",
+   "note": "primary Aug 24; typed"
+  },
+  "c164c2b2-0561-422e-bc11-dfd2e4e7233a": {
+   "total": 1147.016,
+   "surplus": 0.0,
+   "filer": "Baldasaro, Al ",
+   "report": "08/24/2016 - Primary",
+   "note": "primary Aug 24; F and total written \"1147.016\" (sic, = 1147.01)"
+  },
+  "e1f65ac5-e5aa-4290-bcb6-05ab6b44be01": {
+   "total": 120570.0,
+   "surplus": 0.0,
+   "filer": "Garvey for NH Senate",
+   "report": "08/24/2016 - Primary",
+   "note": "primary Aug 24; F = A+B-E"
+  },
+  "f4122cc1-565e-4a4a-8587-77f1bf1f8aaa": {
+   "total": 970.0,
+   "surplus": 0.0,
+   "filer": "Committee To Elect Ilyssa Sherman",
+   "report": "08/24/2016 - Primary",
+   "note": "primary Aug 24; A reads 835 (middle digit could be 2 -> 825, which would make F=A+B); as read F disagrees with A+B (980)"
+  },
+  "83733cd0-83ad-4175-be77-cbff0963452f": {
+   "total": 600.0,
+   "surplus": 0.0,
+   "filer": "Morin, James R.",
+   "report": "08/24/2016 - Primary",
+   "note": "primary Aug 24; F blank"
+  },
+  "717ecc25-6657-4732-85ab-fe900313a68c": {
+   "total": 29795.43,
+   "surplus": 0.0,
+   "filer": "Supporters of Molly Kelly",
+   "report": "06/22/2016 - Primary",
+   "note": "old-format form (2012 template, June 21 2016 report): no A/B/E/F/G lines; \"Total of all Primary Election receipts to date\" 29,795.43 (this report 17,625.00 + previous 12,170.43)"
+  }
+ }
+}

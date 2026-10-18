@@ -20,6 +20,15 @@
     "expenditures": null
    }
   ],
+  "2": [
+   {
+    "name": "Earl Lynn Harris, Jr.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 29549.01,
+    "expenditures": null
+   }
+  ],
   "3": [
    {
     "name": "CHARLIE BROWN",
@@ -174,6 +183,15 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 12685,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Thomas C. O'Donnell",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 30065.06,
     "expenditures": null
    }
   ],
@@ -496,6 +514,13 @@
   ],
   "38": [
    {
+    "name": "Heath Randall Van Natter",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 79344.04,
+    "expenditures": null
+   },
+   {
     "name": "Jason Scott Burns",
     "party": "Other",
     "incumbent": false,
@@ -771,6 +796,13 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 87690.31,
+    "expenditures": null
+   },
+   {
+    "name": "Edward Dean O'Connor",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10937.69,
     "expenditures": null
    }
   ],

@@ -2,7 +2,7 @@
  "state": "WV",
  "cycle": 2016,
  "source": "West Virginia Secretary of State historical reports (election year-to-date contributions)",
- "fetched": "2026-10-17",
+ "fetched": "2026-10-18",
  "dataThrough": "12/31/2016",
  "candidates": [
   {
@@ -24,7 +24,7 @@
    "party": "Republican",
    "chamber": "senate",
    "district": "2",
-   "contributions": null
+   "contributions": 96250.0
   },
   {
    "name": "H JOHN ROGERS",
@@ -45,14 +45,14 @@
    "party": "Republican",
    "chamber": "senate",
    "district": "3",
-   "contributions": null
+   "contributions": 25276.0
   },
   {
    "name": "BRADLEY VANZILE",
    "party": "Democrat",
    "chamber": "senate",
    "district": "3",
-   "contributions": null
+   "contributions": 30174.84
   },
   {
    "name": "MITCH B. CARMICHAEL",
@@ -73,7 +73,7 @@
    "party": "Democrat",
    "chamber": "senate",
    "district": "5",
-   "contributions": null
+   "contributions": 84375.0
   },
   {
    "name": "TYSON SMITH",
@@ -94,7 +94,7 @@
    "party": "Republican",
    "chamber": "senate",
    "district": "6",
-   "contributions": null
+   "contributions": 48871.8
   },
   {
    "name": "JORDAN RAY BRIDGES",
@@ -115,14 +115,14 @@
    "party": "Democrat",
    "chamber": "senate",
    "district": "8",
-   "contributions": null
+   "contributions": 200787.5
   },
   {
    "name": "CHRIS WALTERS",
    "party": "Republican",
    "chamber": "senate",
    "district": "8",
-   "contributions": null
+   "contributions": 8700.0
   },
   {
    "name": "SUE CLINE",
@@ -150,7 +150,7 @@
    "party": "Democrat",
    "chamber": "senate",
    "district": "10",
-   "contributions": null
+   "contributions": 83984.62
   },
   {
    "name": "GREG BOSO",
@@ -178,7 +178,7 @@
    "party": "Republican",
    "chamber": "senate",
    "district": "12",
-   "contributions": null
+   "contributions": 813.36
   },
   {
    "name": "DOUG FACEMIRE",
@@ -199,14 +199,14 @@
    "party": "Democrat",
    "chamber": "senate",
    "district": "13",
-   "contributions": null
+   "contributions": 99505.65
   },
   {
    "name": "MATTHEW PERSINGER",
    "party": "Libertarian",
    "chamber": "senate",
    "district": "14",
-   "contributions": null
+   "contributions": 0
   },
   {
    "name": "RANDY E SMITH",
@@ -269,7 +269,7 @@
    "party": "Republican",
    "chamber": "senate",
    "district": "3",
-   "contributions": null
+   "contributions": 33096.98
   },
   {
    "name": "GREGORY K. SMITH",
@@ -297,7 +297,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "1",
-   "contributions": null
+   "contributions": 21370.0
   },
   {
    "name": "ROBERT \"CHIC\" DICICCIO",
@@ -353,7 +353,7 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "4",
-   "contributions": null
+   "contributions": 37102.32
   },
   {
    "name": "DEL T. KELLEY",
@@ -367,14 +367,14 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "5",
-   "contributions": null
+   "contributions": 32505.0
   },
   {
    "name": "PHILLIP W. WILEY",
    "party": "Republican",
    "chamber": "house",
    "district": "5",
-   "contributions": null
+   "contributions": 2571.66
   },
   {
    "name": "T. CHRIS COMBS",
@@ -388,7 +388,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "6",
-   "contributions": null
+   "contributions": 7750.0
   },
   {
    "name": "MARK HARPER",
@@ -423,7 +423,7 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "8",
-   "contributions": null
+   "contributions": 19494.84
   },
   {
    "name": "RAY HOLLEN",
@@ -444,49 +444,49 @@
    "party": "Republican",
    "chamber": "house",
    "district": "10",
-   "contributions": null
+   "contributions": 5950.0
   },
   {
    "name": "ANDY DANIEL",
    "party": "Democrat",
    "chamber": "house",
    "district": "10",
-   "contributions": null
+   "contributions": 52732.98
   },
   {
    "name": "FRANK DEEM",
    "party": "Republican",
    "chamber": "house",
    "district": "10",
-   "contributions": null
+   "contributions": 9350.0
   },
   {
    "name": "JOHN R. KELLY",
    "party": "Republican",
    "chamber": "house",
    "district": "10",
-   "contributions": null
+   "contributions": 24300.0
   },
   {
    "name": "J. MORGAN LEACH",
    "party": "Democrat",
    "chamber": "house",
    "district": "10",
-   "contributions": null
+   "contributions": 19299.33
   },
   {
    "name": "BILL MERRIMAN",
    "party": "Democrat",
    "chamber": "house",
    "district": "10",
-   "contributions": null
+   "contributions": 31180.0
   },
   {
    "name": "MARTIN \"RICK\" ATKINSON III",
    "party": "Republican",
    "chamber": "house",
    "district": "11",
-   "contributions": null
+   "contributions": 15200.0
   },
   {
    "name": "JAMES L. (JIM) CROWDER",
@@ -535,14 +535,14 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "13",
-   "contributions": null
+   "contributions": 10100.0
   },
   {
    "name": "JIM BUTLER",
    "party": "Republican",
    "chamber": "house",
    "district": "14",
-   "contributions": null
+   "contributions": 1954.82
   },
   {
    "name": "SAMANTHA ANN FOOCE",
@@ -570,14 +570,14 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "16",
-   "contributions": null
+   "contributions": 2607.0
   },
   {
    "name": "DALE ANDERSON II",
    "party": "Republican",
    "chamber": "house",
    "district": "16",
-   "contributions": null
+   "contributions": 6643.48
   },
   {
    "name": "\"NAOMI SPENCER\" DALY",
@@ -591,14 +591,14 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "16",
-   "contributions": null
+   "contributions": 39011.21
   },
   {
    "name": "CAROL MILLER",
    "party": "Republican",
    "chamber": "house",
    "district": "16",
-   "contributions": null
+   "contributions": 52448.13
   },
   {
    "name": "C. E. \"CHUCK\" ROMINE",
@@ -619,7 +619,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "17",
-   "contributions": null
+   "contributions": 6990.0
   },
   {
    "name": "JOE M. FINCHAM",
@@ -640,21 +640,21 @@
    "party": "Republican",
    "chamber": "house",
    "district": "17",
-   "contributions": null
+   "contributions": 51816.7
   },
   {
    "name": "BILLY J. CHAFFIN II",
    "party": "Democrat",
    "chamber": "house",
    "district": "18",
-   "contributions": null
+   "contributions": 11511.08
   },
   {
    "name": "KELLI SOBONYA",
    "party": "Republican",
    "chamber": "house",
    "district": "18",
-   "contributions": null
+   "contributions": 39104.84
   },
   {
    "name": "JOHN D. CREAMER",
@@ -668,7 +668,7 @@
    "party": "Libertarian",
    "chamber": "house",
    "district": "19",
-   "contributions": null
+   "contributions": 0
   },
   {
    "name": "KEN HICKS",
@@ -682,7 +682,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "19",
-   "contributions": null
+   "contributions": 1050.0
   },
   {
    "name": "ROBERT THOMPSON",
@@ -696,21 +696,21 @@
    "party": "Republican",
    "chamber": "house",
    "district": "20",
-   "contributions": null
+   "contributions": 6110.0
   },
   {
    "name": "JUSTIN J. MARCUM",
    "party": "Democrat",
    "chamber": "house",
    "district": "20",
-   "contributions": null
+   "contributions": 35278.16
   },
   {
    "name": "MARK DEAN",
    "party": "Republican",
    "chamber": "house",
    "district": "21",
-   "contributions": null
+   "contributions": 600.0
   },
   {
    "name": "PHYLLIS RIFFE WHITE",
@@ -724,14 +724,14 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "22",
-   "contributions": null
+   "contributions": 25775.0
   },
   {
    "name": "ZACK MAYNARD",
    "party": "Republican",
    "chamber": "house",
    "district": "22",
-   "contributions": null
+   "contributions": 1775.21
   },
   {
    "name": "GARY MCCALLISTER",
@@ -752,7 +752,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "23",
-   "contributions": null
+   "contributions": 225.0
   },
   {
    "name": "RODNEY A. MILLER",
@@ -766,14 +766,14 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "24",
-   "contributions": null
+   "contributions": 40609.29
   },
   {
    "name": "RALPH RODIGHIERO",
    "party": "Democrat",
    "chamber": "house",
    "district": "24",
-   "contributions": null
+   "contributions": 19550.0
   },
   {
    "name": "AARON STONE",
@@ -787,56 +787,56 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "25",
-   "contributions": null
+   "contributions": 18150.0
   },
   {
    "name": "TONY PAYNTER",
    "party": "Republican",
    "chamber": "house",
    "district": "25",
-   "contributions": null
+   "contributions": 3587.64
   },
   {
    "name": "ED EVANS",
    "party": "Democrat",
    "chamber": "house",
    "district": "26",
-   "contributions": null
+   "contributions": 8885.0
   },
   {
    "name": "BRIAN HARRISON",
    "party": "Republican",
    "chamber": "house",
    "district": "26",
-   "contributions": null
+   "contributions": 2187.0
   },
   {
    "name": "CAROL B. BAILEY",
    "party": "Democrat",
    "chamber": "house",
    "district": "27",
-   "contributions": null
+   "contributions": 8820.67
   },
   {
    "name": "JOE C. ELLINGTON, JR",
    "party": "Republican",
    "chamber": "house",
    "district": "27",
-   "contributions": null
+   "contributions": 30211.7
   },
   {
    "name": "MARTY GEARHEART",
    "party": "Republican",
    "chamber": "house",
    "district": "27",
-   "contributions": null
+   "contributions": 17762.99
   },
   {
    "name": "JOHN H. SHOTT",
    "party": "Republican",
    "chamber": "house",
    "district": "27",
-   "contributions": null
+   "contributions": 66582.68
   },
   {
    "name": "SABRINA SHRADER",
@@ -850,21 +850,21 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "27",
-   "contributions": null
+   "contributions": 7621.16
   },
   {
    "name": "ROY G. COOPER",
    "party": "Republican",
    "chamber": "house",
    "district": "28",
-   "contributions": null
+   "contributions": 6650.0
   },
   {
    "name": "WILLIAM A. (BILL) O'BRIEN",
    "party": "Democrat",
    "chamber": "house",
    "district": "28",
-   "contributions": null
+   "contributions": 9470.0
   },
   {
    "name": "JOHN DAVID O'NEAL IV",
@@ -878,21 +878,21 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "28",
-   "contributions": null
+   "contributions": 9195.99
   },
   {
    "name": "RICKY MOYE",
    "party": "Democrat",
    "chamber": "house",
    "district": "29",
-   "contributions": null
+   "contributions": 34209.7
   },
   {
    "name": "GREG WOOD",
    "party": "Republican",
    "chamber": "house",
    "district": "29",
-   "contributions": null
+   "contributions": 574.37
   },
   {
    "name": "MICK BATES",
@@ -913,14 +913,14 @@
    "party": "Republican",
    "chamber": "house",
    "district": "31",
-   "contributions": null
+   "contributions": 16545.0
   },
   {
    "name": "KRISTEN E. ROSS",
    "party": "Democrat",
    "chamber": "house",
    "district": "31",
-   "contributions": null
+   "contributions": 21793.82
   },
   {
    "name": "TOM FAST",
@@ -934,28 +934,28 @@
    "party": "Republican",
    "chamber": "house",
    "district": "32",
-   "contributions": null
+   "contributions": 3355.94
   },
   {
    "name": "KAYLA KESSINGER",
    "party": "Republican",
    "chamber": "house",
    "district": "32",
-   "contributions": null
+   "contributions": 28233.98
   },
   {
    "name": "MR. SHIRLEY LOVE",
    "party": "Democrat",
    "chamber": "house",
    "district": "32",
-   "contributions": null
+   "contributions": 7167.95
   },
   {
    "name": "JOHN PINO",
    "party": "Democrat",
    "chamber": "house",
    "district": "32",
-   "contributions": null
+   "contributions": 19955.27
   },
   {
    "name": "TRAVIS SIMMS",
@@ -969,7 +969,7 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "32",
-   "contributions": null
+   "contributions": 44320.36
   },
   {
    "name": "ROGER HANSHAW",
@@ -983,14 +983,14 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "33",
-   "contributions": null
+   "contributions": 25500.0
   },
   {
    "name": "BRENT BOGGS",
    "party": "Democrat",
    "chamber": "house",
    "district": "34",
-   "contributions": null
+   "contributions": 25846.01
   },
   {
    "name": "BEN ADAMS",
@@ -1018,14 +1018,14 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "35",
-   "contributions": null
+   "contributions": 22850.0
   },
   {
    "name": "CHARLOTTE R. LANE",
    "party": "Republican",
    "chamber": "house",
    "district": "35",
-   "contributions": null
+   "contributions": 48270.0
   },
   {
    "name": "ERIC NELSON",
@@ -1039,14 +1039,14 @@
    "party": "Republican",
    "chamber": "house",
    "district": "35",
-   "contributions": null
+   "contributions": 23996.62
   },
   {
    "name": "BENJAMIN M. SHERIDAN",
    "party": "Democrat",
    "chamber": "house",
    "district": "35",
-   "contributions": null
+   "contributions": 18615.0
   },
   {
    "name": "NANCY GUTHRIE",
@@ -1067,7 +1067,7 @@
    "party": "Mountain",
    "chamber": "house",
    "district": "36",
-   "contributions": null
+   "contributions": 0
   },
   {
    "name": "ANDREW ROBINSON",
@@ -1095,7 +1095,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "36",
-   "contributions": null
+   "contributions": 17175.0
   },
   {
    "name": "THOMAS W. GOODMAN",
@@ -1137,14 +1137,14 @@
    "party": "Mountain",
    "chamber": "house",
    "district": "39",
-   "contributions": null
+   "contributions": 100.0
   },
   {
    "name": "RON WALTERS",
    "party": "Republican",
    "chamber": "house",
    "district": "39",
-   "contributions": null
+   "contributions": 30660.71
   },
   {
    "name": "TIM ARMSTEAD",
@@ -1200,21 +1200,21 @@
    "party": "Mountain",
    "chamber": "house",
    "district": "43",
-   "contributions": null
+   "contributions": 0
   },
   {
    "name": "BILL HARTMAN",
    "party": "Democrat",
    "chamber": "house",
    "district": "43",
-   "contributions": null
+   "contributions": 22375.0
   },
   {
    "name": "PHIL ISNER",
    "party": "Democrat",
    "chamber": "house",
    "district": "43",
-   "contributions": null
+   "contributions": 12770.0
   },
   {
    "name": "PHILLIPS BRUCE KOLSUN",
@@ -1235,14 +1235,14 @@
    "party": "Republican",
    "chamber": "house",
    "district": "44",
-   "contributions": null
+   "contributions": 1547.97
   },
   {
    "name": "BARBARA DANIELS",
    "party": "Mountain",
    "chamber": "house",
    "district": "44",
-   "contributions": null
+   "contributions": 0
   },
   {
    "name": "DANA L LYNCH",
@@ -1256,7 +1256,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "45",
-   "contributions": null
+   "contributions": 21700.0
   },
   {
    "name": "TOM THACKER",
@@ -1277,21 +1277,21 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "46",
-   "contributions": null
+   "contributions": 16075.0
   },
   {
    "name": "KEN AUVIL",
    "party": "Democrat",
    "chamber": "house",
    "district": "47",
-   "contributions": null
+   "contributions": 13370.0
   },
   {
    "name": "DANNY WAGNER",
    "party": "Republican",
    "chamber": "house",
    "district": "47",
-   "contributions": null
+   "contributions": 5639.69
   },
   {
    "name": "DANNY HAMRICK",
@@ -1305,7 +1305,7 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "48",
-   "contributions": null
+   "contributions": 28328.92
   },
   {
    "name": "DEREK MCINTYRE",
@@ -1326,14 +1326,14 @@
    "party": "Republican",
    "chamber": "house",
    "district": "48",
-   "contributions": null
+   "contributions": 44535.86
   },
   {
    "name": "TERRY WAXMAN",
    "party": "Republican",
    "chamber": "house",
    "district": "48",
-   "contributions": null
+   "contributions": 50638.38
   },
   {
    "name": "RICHARD A \"RICK\" WOLFE",
@@ -1347,70 +1347,70 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "48",
-   "contributions": null
+   "contributions": 36939.09
   },
   {
    "name": "DAVE GOBEL",
    "party": "Democrat",
    "chamber": "house",
    "district": "49",
-   "contributions": null
+   "contributions": 13850.0
   },
   {
    "name": "AMY SUMMERS",
    "party": "Republican",
    "chamber": "house",
    "district": "49",
-   "contributions": null
+   "contributions": 22551.57
   },
   {
    "name": "MIKE CAPUTO",
    "party": "Democrat",
    "chamber": "house",
    "district": "50",
-   "contributions": null
+   "contributions": 68011.9
   },
   {
    "name": "JON DODDS",
    "party": "No Affiliation",
    "chamber": "house",
    "district": "50",
-   "contributions": null
+   "contributions": 3646.17
   },
   {
    "name": "LINDA LONGSTRETH",
    "party": "Democrat",
    "chamber": "house",
    "district": "50",
-   "contributions": null
+   "contributions": 26575.0
   },
   {
    "name": "PHIL MALLOW",
    "party": "Republican",
    "chamber": "house",
    "district": "50",
-   "contributions": null
+   "contributions": 7940.0
   },
   {
    "name": "TIM MANCHIN",
    "party": "Democrat",
    "chamber": "house",
    "district": "50",
-   "contributions": null
+   "contributions": 30100.0
   },
   {
    "name": "BOBBIE DAMON TRIPLETT II",
    "party": "Republican",
    "chamber": "house",
    "district": "50",
-   "contributions": null
+   "contributions": 200.0
   },
   {
    "name": "GUY WARD",
    "party": "Republican",
    "chamber": "house",
    "district": "50",
-   "contributions": null
+   "contributions": 1950.0
   },
   {
    "name": "MICHAEL ACEVEDO",
@@ -1438,7 +1438,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "51",
-   "contributions": null
+   "contributions": 31205.0
   },
   {
    "name": "EVAN HANSEN",
@@ -1459,14 +1459,14 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "51",
-   "contributions": null
+   "contributions": 18105.34
   },
   {
    "name": "ROGER SHUTTLESWORTH",
    "party": "Republican",
    "chamber": "house",
    "district": "51",
-   "contributions": null
+   "contributions": 6060.0
   },
   {
    "name": "JOE STATLER",
@@ -1480,7 +1480,7 @@
    "party": "Libertarian",
    "chamber": "house",
    "district": "51",
-   "contributions": null
+   "contributions": 4924.26
   },
   {
    "name": "JOHN WILLIAMS",
@@ -1494,7 +1494,7 @@
    "party": "Constitution",
    "chamber": "house",
    "district": "52",
-   "contributions": null
+   "contributions": 360.12
   },
   {
    "name": "STEVE SHAFFER",
@@ -1515,7 +1515,7 @@
    "party": "Republican",
    "chamber": "house",
    "district": "53",
-   "contributions": null
+   "contributions": 2118.87
   },
   {
    "name": "AL TOMSON",
@@ -1529,28 +1529,28 @@
    "party": "Republican",
    "chamber": "house",
    "district": "54",
-   "contributions": null
+   "contributions": 5325.0
   },
   {
    "name": "TONYA PERSINGER",
    "party": "Libertarian",
    "chamber": "house",
    "district": "55",
-   "contributions": null
+   "contributions": 0
   },
   {
    "name": "STEPHEN G. SMITH",
    "party": "Republican",
    "chamber": "house",
    "district": "55",
-   "contributions": null
+   "contributions": 1700.0
   },
   {
    "name": "ISAAC SPONAUGLE",
    "party": "Democrat",
    "chamber": "house",
    "district": "55",
-   "contributions": null
+   "contributions": 23822.0
   },
   {
    "name": "GARY G. HOWELL",
@@ -1564,21 +1564,21 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "57",
-   "contributions": null
+   "contributions": 0
   },
   {
    "name": "RUTH ROWAN",
    "party": "Republican",
    "chamber": "house",
    "district": "57",
-   "contributions": null
+   "contributions": 10184.64
   },
   {
    "name": "DARYL E. COWLES",
    "party": "Republican",
    "chamber": "house",
    "district": "58",
-   "contributions": null
+   "contributions": 44131.48
   },
   {
    "name": "SAIRA BLAIR",
@@ -1599,7 +1599,7 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "60",
-   "contributions": null
+   "contributions": 9192.75
   },
   {
    "name": "S. MARSHALL WILSON",
@@ -1669,7 +1669,7 @@
    "party": "Democrat",
    "chamber": "house",
    "district": "65",
-   "contributions": null
+   "contributions": 36267.9
   },
   {
    "name": "JILL UPSON",

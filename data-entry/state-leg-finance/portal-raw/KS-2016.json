@@ -1,7 +1,7 @@
 {
  "state": "KS",
  "cycle": 2016,
- "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+ "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
  "fetched": "2026-10-18",
  "dataThrough": "12/31/2016",
  "candidates": [
@@ -1619,9 +1619,9 @@
    "name": "Miguel A Rodriguez",
    "chamber": "senate",
    "district": "38",
-   "contributions": 1860.0,
-   "expenditures": 1210.0,
-   "periods": 3
+   "contributions": 0.0,
+   "expenditures": 0,
+   "periods": 1
   },
   {
    "name": "Alex Herman",
@@ -1635,9 +1635,9 @@
    "name": "Jason Conley",
    "chamber": "senate",
    "district": "6",
-   "contributions": 1637.15,
-   "expenditures": 574.33,
-   "periods": 4
+   "contributions": 0.0,
+   "expenditures": 0,
+   "periods": 1
   },
   {
    "name": "Tony Hunter",
@@ -1667,9 +1667,9 @@
    "name": "David Haley",
    "chamber": "senate",
    "district": "4",
-   "contributions": 15222.95,
-   "expenditures": 3866.74,
-   "periods": 2
+   "contributions": 42121.95,
+   "expenditures": 28583.47,
+   "periods": 4
   },
   {
    "name": "Kevin B King",
@@ -1835,9 +1835,9 @@
    "name": "Mary Jo Taylor",
    "chamber": "senate",
    "district": "33",
-   "contributions": 25850.0,
+   "contributions": 62450.0,
    "expenditures": 29637.61,
-   "periods": 2
+   "periods": 3
   },
   {
    "name": "John G Doll",
@@ -1899,9 +1899,9 @@
    "name": "Mark R Pringle",
    "chamber": "senate",
    "district": "14",
-   "contributions": 9550.89,
-   "expenditures": 8025.3,
-   "periods": 3
+   "contributions": 536.31,
+   "expenditures": 1077.6,
+   "periods": 1
   },
   {
    "name": "David D Jackson",
@@ -1923,24 +1923,312 @@
    "name": "Matt Bristow",
    "chamber": "senate",
    "district": "33",
-   "contributions": 1775.0,
-   "expenditures": 896.0,
-   "periods": 1
+   "contributions": 11316.13,
+   "expenditures": 10811.43,
+   "periods": 3
   },
   {
    "name": "pat pettey",
    "chamber": "senate",
    "district": "6",
-   "contributions": 28534.82,
-   "expenditures": 6250.98,
-   "periods": 2
+   "contributions": 46902.77,
+   "expenditures": 19804.37,
+   "periods": 4
   },
   {
    "name": "Meredith A Richey",
    "chamber": "senate",
    "district": "2",
-   "contributions": 6710.0,
-   "expenditures": 2676.71,
+   "contributions": 26585.55,
+   "expenditures": 31458.4,
+   "periods": 3
+  },
+  {
+   "name": "AYARS CANDACE",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 16321.01,
+   "expenditures": 10091.5,
+   "periods": 3
+  },
+  {
+   "name": "BILLINGER RICHARD",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": 48515.31,
+   "expenditures": 17799.45,
+   "periods": 3
+  },
+  {
+   "name": "DENNING JIM",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 139648.27,
+   "expenditures": 149952.56,
+   "periods": 4
+  },
+  {
+   "name": "FANNEN SKIP",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 18107.0,
+   "expenditures": 9635.94,
+   "periods": 3
+  },
+  {
+   "name": "FAUST GOUDEAU  OLETHA",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 3
+  },
+  {
+   "name": "FITZGERALD STEVE",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 71225.48,
+   "expenditures": 73372.11,
+   "periods": 4
+  },
+  {
+   "name": "GODDARD DANIEL",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 27786.71,
+   "expenditures": 17187.41,
+   "periods": 3
+  },
+  {
+   "name": "GRANT LYNN",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 107690.62,
+   "expenditures": 98039.52,
+   "periods": 3
+  },
+  {
+   "name": "HAWK TOM",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "HELEY LOGAN",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 95048.95,
+   "expenditures": 81929.21,
+   "periods": 3
+  },
+  {
+   "name": "HENRY JERRY",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 70274.89,
+   "expenditures": 66553.55,
+   "periods": 3
+  },
+  {
+   "name": "HENSLEY ANTHONY",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 121456.11,
+   "expenditures": 131383.1,
+   "periods": 3
+  },
+  {
+   "name": "HIATT VICKI",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 62980.35,
+   "expenditures": 60529.2,
+   "periods": 4
+  },
+  {
+   "name": "HUMPHREY KEITH",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 147759.95,
+   "expenditures": 145625.0,
+   "periods": 3
+  },
+  {
+   "name": "HUTTON WILLIAM",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 110967.82,
+   "expenditures": 96078.92,
+   "periods": 3
+  },
+  {
+   "name": "KELLY LAURA",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 218817.6,
+   "expenditures": 222949.63,
+   "periods": 4
+  },
+  {
+   "name": "LATURNER JACOB",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 144086.13,
+   "expenditures": 173264.49,
+   "periods": 4
+  },
+  {
+   "name": "LONGBINE JEFF",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 170960.09,
+   "expenditures": 52322.11,
+   "periods": 3
+  },
+  {
+   "name": "LYNN JULIA",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 39327.0,
+   "expenditures": 76816.17,
+   "periods": 2
+  },
+  {
+   "name": "LYNN W ROGERS",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 80458.64,
+   "expenditures": 132213.28,
+   "periods": 2
+  },
+  {
+   "name": "MASTERSON TY",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 107970.31,
+   "expenditures": 105706.24,
+   "periods": 3
+  },
+  {
+   "name": "MCGINN CAROLYN",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 51532.0,
+   "expenditures": 51710.71,
+   "periods": 2
+  },
+  {
+   "name": "MERRIMAN DON",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 16765.0,
+   "expenditures": 6202.95,
+   "periods": 4
+  },
+  {
+   "name": "MORROW CHRIS",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 32210.0,
+   "expenditures": 25121.52,
+   "periods": 4
+  },
+  {
+   "name": "OLSON ROB",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 135654.76,
+   "expenditures": 141129.27,
+   "periods": 4
+  },
+  {
+   "name": "PETERSEN MIKE",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 89601.64,
+   "expenditures": 300515.51,
+   "periods": 4
+  },
+  {
+   "name": "POTEETE BENJAMIN",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 5201.7,
+   "expenditures": 4163.23,
+   "periods": 3
+  },
+  {
+   "name": "PYLE DENNIS",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 92552.17,
+   "expenditures": 164419.6,
+   "periods": 4
+  },
+  {
+   "name": "ROB OLSON",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 11000.0,
+   "expenditures": 26362.98,
+   "periods": 1
+  },
+  {
+   "name": "ROGERS LYNN",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 134160.72,
+   "expenditures": 27964.82,
+   "periods": 4
+  },
+  {
+   "name": "SCHMIDT VICKI",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 235783.2,
+   "expenditures": 207186.79,
+   "periods": 4
+  },
+  {
+   "name": "SKUBAL JOHN",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 101421.61,
+   "expenditures": 88594.17,
+   "periods": 4
+  },
+  {
+   "name": "TYSON CARYN",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 75076.29,
+   "expenditures": 67889.62,
+   "periods": 4
+  },
+  {
+   "name": "LARUMBE ANABEL",
+   "chamber": "senate",
+   "district": "30",
+   "contributions": 2207,
+   "expenditures": 2218.52,
+   "periods": 1
+  },
+  {
+   "name": "SUELLENTROP GENE",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 85806.77,
+   "expenditures": 57965.34,
+   "periods": 2
+  },
+  {
+   "name": "GILSON HOMER",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 500.0,
+   "expenditures": 0,
    "periods": 1
   }
  ]

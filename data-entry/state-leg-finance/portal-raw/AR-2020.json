@@ -2,242 +2,1604 @@
  "state": "AR",
  "cycle": 2020,
  "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
- "fetched": "2026-10-16",
+ "fetched": "2026-10-18",
  "dataThrough": "12/31/2020",
  "candidates": [
   {
-   "name": "Hendren, James Paul",
-   "chamber": "senate",
-   "district": "02",
-   "contributions": 21333.85
-  },
-  {
-   "name": "Hester, Bart",
-   "chamber": "senate",
-   "district": null,
-   "contributions": 80175.01
-  },
-  {
-   "name": "Berry, Stan J",
+   "name": "Wooten, Jim",
    "chamber": "house",
    "district": null,
-   "contributions": 40947.09
+   "contributions": 16696.92,
+   "newestScanned": null
   },
   {
-   "name": "Stubblefield, Gary Don",
-   "chamber": "senate",
-   "district": null,
-   "contributions": 80357.69
-  },
-  {
-   "name": "Carr, John P",
+   "name": "Furrer, Sandy \"Sandy\"",
    "chamber": "house",
-   "district": "15",
-   "contributions": 47585.58
+   "district": null,
+   "contributions": null,
+   "newestScanned": "2fcac972-f474-4503-a6c3-77dd4e85f4f0"
   },
   {
-   "name": "Hammer, Kim David",
-   "chamber": "senate",
-   "district": "16",
-   "contributions": 82662.76
+   "name": "Richardson, James D",
+   "chamber": "house",
+   "district": null,
+   "contributions": 7910.0,
+   "newestScanned": null
   },
   {
-   "name": "JOHNSON, MARK",
+   "name": "Dismang, Jonathan Paul",
    "chamber": "senate",
    "district": null,
-   "contributions": 364651.0
+   "contributions": 44300.0,
+   "newestScanned": null
   },
   {
-   "name": "Beckham, Charles Edward , III",
-   "chamber": "senate",
-   "district": "12",
-   "contributions": 96695.0
+   "name": "Jett, Joe E.",
+   "chamber": "house",
+   "district": null,
+   "contributions": 40788.59,
+   "newestScanned": null
+  },
+  {
+   "name": "Milligan, Jon Ridge",
+   "chamber": "house",
+   "district": null,
+   "contributions": 37000.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Wilson, Steve",
+   "chamber": "house",
+   "district": null,
+   "contributions": 11382.01,
+   "newestScanned": null
+  },
+  {
+   "name": "Eaves, Les",
+   "chamber": "house",
+   "district": null,
+   "contributions": 47856.91,
+   "newestScanned": null
+  },
+  {
+   "name": "Bryant, Joshua Paul",
+   "chamber": "house",
+   "district": null,
+   "contributions": 48770.71,
+   "newestScanned": null
   },
   {
    "name": "Lundstrum, Robin Dale Hall",
    "chamber": "house",
    "district": null,
-   "contributions": 100571.5
+   "contributions": 52468.85,
+   "newestScanned": null
+  },
+  {
+   "name": "Allen, Fred",
+   "chamber": "house",
+   "district": null,
+   "contributions": 15769.63,
+   "newestScanned": null
+  },
+  {
+   "name": "Hawks, Spencer",
+   "chamber": "house",
+   "district": null,
+   "contributions": 26515.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Smith, Stu",
+   "chamber": "house",
+   "district": null,
+   "contributions": 21661.24,
+   "newestScanned": null
+  },
+  {
+   "name": "Warren, Leslie Allen",
+   "chamber": "house",
+   "district": null,
+   "contributions": 47268.16,
+   "newestScanned": null
+  },
+  {
+   "name": "Ferguson, Kenneth Bernard",
+   "chamber": "house",
+   "district": null,
+   "contributions": 32400.56,
+   "newestScanned": null
+  },
+  {
+   "name": "Beck, Rick",
+   "chamber": "house",
+   "district": null,
+   "contributions": 63422.04,
+   "newestScanned": null
+  },
+  {
+   "name": "Burrell, Keidra",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 98559.33,
+   "newestScanned": null
+  },
+  {
+   "name": "Hickey, Milton Jimmy , JR.",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 70979.12,
+   "newestScanned": null
+  },
+  {
+   "name": "Cheatham, Eddie",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 117209.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Davis, Breanne Deelyte",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 56450.0,
+   "newestScanned": null
+  },
+  {
+   "name": "La Tour, John Stevens",
+   "chamber": "house",
+   "district": null,
+   "contributions": 23969.36,
+   "newestScanned": null
+  },
+  {
+   "name": "Womack, Richard",
+   "chamber": "house",
+   "district": null,
+   "contributions": 8650.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Brooks, Keith",
+   "chamber": "house",
+   "district": null,
+   "contributions": 65380.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Applegate, Kayla M , Esq.",
+   "chamber": "house",
+   "district": null,
+   "contributions": 20697.09,
+   "newestScanned": null
+  },
+  {
+   "name": "Fite, Charlene",
+   "chamber": "house",
+   "district": null,
+   "contributions": 80421.69,
+   "newestScanned": null
+  },
+  {
+   "name": "Tobar, Gary DeWayne",
+   "chamber": "house",
+   "district": null,
+   "contributions": 24555.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Dixon, Alisa Blaize",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 30732.58,
+   "newestScanned": null
+  },
+  {
+   "name": "Speaks, Nelda",
+   "chamber": "house",
+   "district": null,
+   "contributions": 47570.81,
+   "newestScanned": null
+  },
+  {
+   "name": "Tollett, David",
+   "chamber": "house",
+   "district": null,
+   "contributions": 9960.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Duggar, Jed",
+   "chamber": "house",
+   "district": null,
+   "contributions": 51247.97,
+   "newestScanned": null
+  },
+  {
+   "name": "Francis, Ronetta J",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 116288.22,
+   "newestScanned": null
+  },
+  {
+   "name": "Penzo, Clinton Joseph",
+   "chamber": "house",
+   "district": null,
+   "contributions": 56025.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Watson, John Daniel",
+   "chamber": "house",
+   "district": null,
+   "contributions": 34925.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Huffman-Gilreath, Jene",
+   "chamber": "house",
+   "district": null,
+   "contributions": 54763.06,
+   "newestScanned": null
+  },
+  {
+   "name": "Barker, Sonia",
+   "chamber": "house",
+   "district": null,
+   "contributions": 47223.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Clark, Alan",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 203948.11,
+   "newestScanned": null
+  },
+  {
+   "name": "Hollowell, Steve",
+   "chamber": "house",
+   "district": null,
+   "contributions": 46116.13,
+   "newestScanned": null
+  },
+  {
+   "name": "Bragg, Ken",
+   "chamber": "house",
+   "district": null,
+   "contributions": 38848.37,
+   "newestScanned": null
+  },
+  {
+   "name": "Edwards, Stephen Christopher",
+   "chamber": "house",
+   "district": null,
+   "contributions": 335.23,
+   "newestScanned": null
+  },
+  {
+   "name": "CALLOWAY, GEORGE, JR.",
+   "chamber": "house",
+   "district": null,
+   "contributions": 6844.6,
+   "newestScanned": null
+  },
+  {
+   "name": "Berry, Mark H",
+   "chamber": "house",
+   "district": null,
+   "contributions": 80825.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Wallace, David Ray",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 45830.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Schimenti, Joyce",
+   "chamber": "house",
+   "district": null,
+   "contributions": 23810.01,
+   "newestScanned": null
+  },
+  {
+   "name": "Hillman, David",
+   "chamber": "house",
+   "district": null,
+   "contributions": 23671.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Tucker, Everett Clarke , IV",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 182095.34,
+   "newestScanned": null
+  },
+  {
+   "name": "Burch, LeAnne Pittman",
+   "chamber": "house",
+   "district": null,
+   "contributions": 81157.9,
+   "newestScanned": null
+  },
+  {
+   "name": "Thomas, Robert Grant , SR.",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 27075.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Pilkington, Aaron",
+   "chamber": "house",
+   "district": null,
+   "contributions": 250.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Perry, Mark W",
+   "chamber": "house",
+   "district": null,
+   "contributions": 18550.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Bransford, Rick Barton",
+   "chamber": "house",
+   "district": null,
+   "contributions": 30960.0,
+   "newestScanned": null
+  },
+  {
+   "name": "dfrey, Megan",
+   "chamber": "house",
+   "district": null,
+   "contributions": 139577.52,
+   "newestScanned": null
+  },
+  {
+   "name": "PRUNTY, REGINALD",
+   "chamber": "house",
+   "district": null,
+   "contributions": 15637.04,
+   "newestScanned": null
+  },
+  {
+   "name": "McClure, Rick Carl",
+   "chamber": "house",
+   "district": null,
+   "contributions": 52380.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Ray, David Allen",
+   "chamber": "house",
+   "district": null,
+   "contributions": 93316.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Magie, Stephen",
+   "chamber": "house",
+   "district": null,
+   "contributions": 56599.85,
+   "newestScanned": null
+  },
+  {
+   "name": "Hodges, Monte",
+   "chamber": "house",
+   "district": null,
+   "contributions": 45194.75,
+   "newestScanned": null
+  },
+  {
+   "name": "Comstock, Jon B.",
+   "chamber": "house",
+   "district": null,
+   "contributions": 32158.19,
+   "newestScanned": null
+  },
+  {
+   "name": "Carr, John P",
+   "chamber": "house",
+   "district": null,
+   "contributions": 43481.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Furman, Anthony",
+   "chamber": "house",
+   "district": null,
+   "contributions": 35800.0,
+   "newestScanned": null
+  },
+  {
+   "name": "nzales, Justin R",
+   "chamber": "house",
+   "district": null,
+   "contributions": 13650.0,
+   "newestScanned": null
   },
   {
    "name": "Eubanks, Jon",
    "chamber": "house",
    "district": null,
-   "contributions": 84432.9
+   "contributions": 125406.69,
+   "newestScanned": null
   },
   {
-   "name": "Beckham, Charles Edward , III",
-   "chamber": "senate",
-   "district": "12",
-   "contributions": 96695.0
-  },
-  {
-   "name": "Garner, Trent Chancey",
-   "chamber": "senate",
-   "district": null,
-   "contributions": 4146.95
-  },
-  {
-   "name": "Pitsch, Mathew Wade",
-   "chamber": "senate",
-   "district": null,
-   "contributions": 6700.0
-  },
-  {
-   "name": "McGrew, Richard",
+   "name": "Underwood, Kendon Reese",
    "chamber": "house",
-   "district": "22",
-   "contributions": 29040.23
+   "district": null,
+   "contributions": 117874.31,
+   "newestScanned": null
+  },
+  {
+   "name": "Smith, C Brandt , JR.",
+   "chamber": "house",
+   "district": "58",
+   "contributions": 54100.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Wing, Carlton",
+   "chamber": "house",
+   "district": null,
+   "contributions": 74475.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Flowers, Vivian L.",
+   "chamber": "house",
+   "district": null,
+   "contributions": 5150.0,
+   "newestScanned": null
   },
   {
    "name": "Hester, Bart",
    "chamber": "senate",
-   "district": "01",
-   "contributions": 6767.01
+   "district": null,
+   "contributions": 165043.53,
+   "newestScanned": null
   },
   {
-   "name": "nzales, Justin R",
+   "name": "Miller, Josh",
    "chamber": "house",
-   "district": "19",
-   "contributions": 18362.54
+   "district": null,
+   "contributions": 9150.0,
+   "newestScanned": null
   },
   {
-   "name": "Bryant, Joshua Paul",
+   "name": "Bentley, Mary",
    "chamber": "house",
-   "district": "96",
-   "contributions": 14123.5
+   "district": null,
+   "contributions": 28350.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Burton, Jim",
+   "chamber": "house",
+   "district": null,
+   "contributions": 17965.71,
+   "newestScanned": null
+  },
+  {
+   "name": "McNair, Ron",
+   "chamber": "house",
+   "district": null,
+   "contributions": 21900.0,
+   "newestScanned": null
+  },
+  {
+   "name": "sorvillo, james joseoh",
+   "chamber": "house",
+   "district": null,
+   "contributions": 67933.93,
+   "newestScanned": null
+  },
+  {
+   "name": "Mayberry, Julie Weidner",
+   "chamber": "house",
+   "district": null,
+   "contributions": 16118.43,
+   "newestScanned": null
+  },
+  {
+   "name": "Overly, Brandon Reid",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 9025.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Love, Fredrick J , SR.",
+   "chamber": "house",
+   "district": null,
+   "contributions": 19661.42,
+   "newestScanned": null
+  },
+  {
+   "name": "McCullough, Tippi",
+   "chamber": "house",
+   "district": null,
+   "contributions": 24926.32,
+   "newestScanned": null
+  },
+  {
+   "name": "ONLY, SHAWN",
+   "chamber": "house",
+   "district": null,
+   "contributions": 13250.36,
+   "newestScanned": null
+  },
+  {
+   "name": "Ferguson, Deborah Thompson",
+   "chamber": "house",
+   "district": null,
+   "contributions": 16200.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Shepherd, Matthew Joseph",
+   "chamber": "house",
+   "district": null,
+   "contributions": 86369.33,
+   "newestScanned": null
+  },
+  {
+   "name": "McCollum, Austin M",
+   "chamber": "house",
+   "district": null,
+   "contributions": 52502.55,
+   "newestScanned": null
+  },
+  {
+   "name": "Coleman, Bruce",
+   "chamber": "house",
+   "district": null,
+   "contributions": 11000.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Hendren McKenzie, Gayla Joy",
+   "chamber": "house",
+   "district": null,
+   "contributions": 19716.69,
+   "newestScanned": null
+  },
+  {
+   "name": "Maddox, John David , II",
+   "chamber": "house",
+   "district": null,
+   "contributions": 11050.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Wardlaw, Jeffrey",
+   "chamber": "house",
+   "district": null,
+   "contributions": 72262.55,
+   "newestScanned": null
+  },
+  {
+   "name": "Dotson, Jim",
+   "chamber": "house",
+   "district": null,
+   "contributions": 62009.64,
+   "newestScanned": null
+  },
+  {
+   "name": "SULLIVAN, DAN",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 198154.75,
+   "newestScanned": null
+  },
+  {
+   "name": "Haak, Delia",
+   "chamber": "house",
+   "district": null,
+   "contributions": 92449.65,
+   "newestScanned": null
   },
   {
    "name": "Maloch, Bruce",
    "chamber": "senate",
    "district": null,
-   "contributions": null
+   "contributions": 200871.2,
+   "newestScanned": null
   },
   {
-   "name": "Beckham, Charles Edward , III",
+   "name": "Krout, Kelly Ross",
+   "chamber": "house",
+   "district": null,
+   "contributions": 68603.18,
+   "newestScanned": null
+  },
+  {
+   "name": "Collins, Andrew",
+   "chamber": "house",
+   "district": null,
+   "contributions": 49061.78,
+   "newestScanned": null
+  },
+  {
+   "name": "Fielding, David",
+   "chamber": "house",
+   "district": null,
+   "contributions": 57076.73,
+   "newestScanned": null
+  },
+  {
+   "name": "Whitaker, David Jeffrey",
+   "chamber": "house",
+   "district": null,
+   "contributions": 50296.22,
+   "newestScanned": null
+  },
+  {
+   "name": "Tosh, Crandall Dwight",
+   "chamber": "house",
+   "district": null,
+   "contributions": 15250.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Ennett, Denise Jones",
+   "chamber": "house",
+   "district": null,
+   "contributions": 9821.48,
+   "newestScanned": null
+  },
+  {
+   "name": "MCELROY, MARK D",
+   "chamber": "house",
+   "district": null,
+   "contributions": 15750.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Gazaway, Jimmy",
+   "chamber": "house",
+   "district": null,
+   "contributions": 29116.02,
+   "newestScanned": null
+  },
+  {
+   "name": "Ogburn, Christopher",
+   "chamber": "house",
+   "district": null,
+   "contributions": 13592.85,
+   "newestScanned": null
+  },
+  {
+   "name": "Jones, Nick",
+   "chamber": "house",
+   "district": null,
+   "contributions": 7293.19,
+   "newestScanned": null
+  },
+  {
+   "name": "FLOWERS, STEPHANIE",
    "chamber": "senate",
-   "district": "12",
-   "contributions": 0.0
+   "district": null,
+   "contributions": 43190.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Garner, Denise Firmin",
+   "chamber": "house",
+   "district": null,
+   "contributions": 27450.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Christiansen, Craig N",
+   "chamber": "house",
+   "district": null,
+   "contributions": 9300.0,
+   "newestScanned": null
+  },
+  {
+   "name": "murdock, reginald",
+   "chamber": "house",
+   "district": null,
+   "contributions": null,
+   "newestScanned": "cfd0d0e7-09cf-4449-b639-3e8549e1c8fa"
+  },
+  {
+   "name": "Faulkner, Larry D , SR.",
+   "chamber": "house",
+   "district": null,
+   "contributions": 0.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Hester, Brian Russell",
+   "chamber": "house",
+   "district": null,
+   "contributions": 63909.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Slape, Keith",
+   "chamber": "house",
+   "district": null,
+   "contributions": 16350.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Ladyman, Jack R",
+   "chamber": "house",
+   "district": null,
+   "contributions": 53177.74,
+   "newestScanned": null
+  },
+  {
+   "name": "Phillips, James Brian",
+   "chamber": "house",
+   "district": null,
+   "contributions": 9540.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Bennett-Spears, Michael Samuel",
+   "chamber": "house",
+   "district": null,
+   "contributions": 17090.85,
+   "newestScanned": null
+  },
+  {
+   "name": "Clowney, Nicole LeFrancois",
+   "chamber": "house",
+   "district": null,
+   "contributions": 88697.53,
+   "newestScanned": null
+  },
+  {
+   "name": "Cavenaugh, Frances",
+   "chamber": "house",
+   "district": null,
+   "contributions": 14150.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Hassell, Lisa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 12705.25,
+   "newestScanned": null
   },
   {
    "name": "Gilmore, Lewis Benjamin \"Ben\"",
    "chamber": "senate",
    "district": null,
-   "contributions": 231079.98
+   "contributions": 231079.98,
+   "newestScanned": null
   },
   {
-   "name": "NORMAN, DAVID",
+   "name": "Stallings, Matthew Thomas",
    "chamber": "house",
    "district": null,
-   "contributions": 35297.2
+   "contributions": 82563.66,
+   "newestScanned": null
   },
   {
-   "name": "Faulkenberry, Gwendolann Ford",
-   "chamber": "house",
-   "district": "82",
-   "contributions": 36795.8
-  },
-  {
-   "name": "Harwell, Caleb D",
+   "name": "Rajendran, Mazhil Vannan",
    "chamber": "house",
    "district": null,
-   "contributions": 1325.0
+   "contributions": 14359.16,
+   "newestScanned": null
   },
   {
-   "name": "vens, Rodney Warren",
+   "name": "Meeks, Stephen",
    "chamber": "house",
    "district": null,
-   "contributions": 3725.61
+   "contributions": 28909.91,
+   "newestScanned": null
   },
   {
-   "name": "payton, john russell",
+   "name": "COTTON, JANNIE MARIE",
    "chamber": "house",
    "district": null,
-   "contributions": 5600.0
+   "contributions": 37454.02,
+   "newestScanned": null
   },
   {
-   "name": "Deffenbaugh, Gary",
+   "name": "Fite, Lanny E",
    "chamber": "house",
    "district": null,
-   "contributions": 6600.0
+   "contributions": 13228.19,
+   "newestScanned": null
   },
   {
-   "name": "McDowell, Chase Owen",
+   "name": "Cooper, Cameron David",
    "chamber": "house",
    "district": null,
-   "contributions": 6250.0
+   "contributions": 24810.0,
+   "newestScanned": null
   },
   {
-   "name": "Scott, Jamie",
+   "name": "Hudson, Ashley Welch",
    "chamber": "house",
    "district": null,
-   "contributions": 4718.74
+   "contributions": 165855.01,
+   "newestScanned": null
   },
   {
-   "name": "Fults, Gary Norman",
+   "name": "Vornheder, Kevin Eugene",
    "chamber": "house",
    "district": null,
-   "contributions": 750.0
+   "contributions": 0.0,
+   "newestScanned": null
   },
   {
-   "name": "Bryant, Jill",
+   "name": "Richmond, Marcus Edward",
    "chamber": "house",
    "district": null,
-   "contributions": 0.0
+   "contributions": 32400.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Evans, Brian Stephen",
+   "chamber": "house",
+   "district": null,
+   "contributions": 24150.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Fortner, Jack",
+   "chamber": "house",
+   "district": null,
+   "contributions": 24841.28,
+   "newestScanned": null
+  },
+  {
+   "name": "Vaught, DeAnn",
+   "chamber": "house",
+   "district": null,
+   "contributions": 33250.83,
+   "newestScanned": null
+  },
+  {
+   "name": "Lynch, Roger D",
+   "chamber": "house",
+   "district": null,
+   "contributions": 52040.74,
+   "newestScanned": null
+  },
+  {
+   "name": "Breaux, Harlan W",
+   "chamber": "house",
+   "district": null,
+   "contributions": 62548.16,
+   "newestScanned": null
+  },
+  {
+   "name": "Woods, Hawley",
+   "chamber": "house",
+   "district": null,
+   "contributions": 24696.02,
+   "newestScanned": null
+  },
+  {
+   "name": "Sharp, Bonita Lou",
+   "chamber": "house",
+   "district": null,
+   "contributions": 60599.65,
+   "newestScanned": null
+  },
+  {
+   "name": "Cloud, Joe Allen , MD",
+   "chamber": "house",
+   "district": null,
+   "contributions": 32150.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Hill, Hiram Richelieu , JR.",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 56406.87,
+   "newestScanned": null
+  },
+  {
+   "name": "Bonilla, Daisy Varinia",
+   "chamber": "house",
+   "district": null,
+   "contributions": 33083.71,
+   "newestScanned": null
+  },
+  {
+   "name": "Bell, Carmen Suzan",
+   "chamber": "house",
+   "district": null,
+   "contributions": 58507.4,
+   "newestScanned": null
+  },
+  {
+   "name": "Rye, Johnny Coleman , JR.",
+   "chamber": "house",
+   "district": null,
+   "contributions": 12800.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Berry, Stan",
+   "chamber": "house",
+   "district": null,
+   "contributions": 37272.63,
+   "newestScanned": null
+  },
+  {
+   "name": "Boyd, Phillip \"Justin\"",
+   "chamber": "house",
+   "district": null,
+   "contributions": 53287.49,
+   "newestScanned": null
+  },
+  {
+   "name": "Brown, Karilyn Boggan",
+   "chamber": "house",
+   "district": null,
+   "contributions": 76713.4,
+   "newestScanned": null
+  },
+  {
+   "name": "Nicks, Milton, JR.",
+   "chamber": "house",
+   "district": null,
+   "contributions": 14450.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Kelly, Jasen Warren",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 0.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Eads, Lance",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 54850.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Holcomb, Mike",
+   "chamber": "house",
+   "district": "10",
+   "contributions": null,
+   "newestScanned": "848f1f9c-89c7-40da-b364-a9925ee549ec"
+  },
+  {
+   "name": "Jean, Lane",
+   "chamber": "house",
+   "district": null,
+   "contributions": null,
+   "newestScanned": "00983177-8fbd-4172-865e-338dc2b8233f"
+  },
+  {
+   "name": "BEATY, HOWARD MONROE , JR.",
+   "chamber": "house",
+   "district": "09",
+   "contributions": 72750.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Beckham, Charles Edward , III",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 22107.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Glover, Don Edward",
+   "chamber": "house",
+   "district": null,
+   "contributions": null,
+   "newestScanned": "36c917be-39fd-434c-83bd-96351f717849"
+  },
+  {
+   "name": "Springer, Joy C.",
+   "chamber": "house",
+   "district": null,
+   "contributions": null,
+   "newestScanned": "92517a17-8b8a-43cf-944c-f14cae56df6b"
+  },
+  {
+   "name": "Davis, Clifford Marshall",
+   "chamber": "house",
+   "district": null,
+   "contributions": null,
+   "newestScanned": "cd12fbb0-e8ac-4515-a6d8-fff0405cc9f7"
+  },
+  {
+   "name": "Richey, Chris",
+   "chamber": "house",
+   "district": null,
+   "contributions": 24486.31,
+   "newestScanned": null
+  },
+  {
+   "name": "CRAIG, WALLACE RYAN",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 2275.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Nobles, Lorna Jean",
+   "chamber": "house",
+   "district": null,
+   "contributions": 12175.0,
+   "newestScanned": null
   },
   {
    "name": "Bowers, Judy Ann",
    "chamber": "house",
    "district": null,
-   "contributions": 750.7
+   "contributions": 2260.0,
+   "newestScanned": null
   },
   {
-   "name": "Willems, Darby (Wayne)",
+   "name": "Payton, John Russell",
    "chamber": "house",
    "district": null,
-   "contributions": 0.0
+   "contributions": 5750.0,
+   "newestScanned": null
   },
   {
-   "name": "Anteski, June A",
+   "name": "Dillard Evans, Candace Paige",
+   "chamber": "house",
+   "district": "100",
+   "contributions": 14655.86,
+   "newestScanned": null
+  },
+  {
+   "name": "Peck, Cole Stephens",
    "chamber": "house",
    "district": null,
-   "contributions": 6492.5
+   "contributions": 51777.39,
+   "newestScanned": null
   },
   {
-   "name": "Lowery, Mark Dale",
+   "name": "Maynard, Karyn Marie",
    "chamber": "house",
    "district": null,
-   "contributions": 43800.0
+   "contributions": 24430.0,
+   "newestScanned": null
   },
   {
-   "name": "Gray, Michelle",
+   "name": "Dalby, Carol",
    "chamber": "house",
-   "district": "62",
-   "contributions": 12050.0
+   "district": "01",
+   "contributions": 18750.0,
+   "newestScanned": null
   },
   {
-   "name": "Jones, Christia (Chris)",
+   "name": "Capp, Sarah E",
    "chamber": "house",
    "district": null,
-   "contributions": null
+   "contributions": 8075.0,
+   "newestScanned": null
+  },
+  {
+   "name": "McClure, Marietta",
+   "chamber": "house",
+   "district": null,
+   "contributions": 22055.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Scott, Jamie",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 11942.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Richardson, Robert Scott",
+   "chamber": "house",
+   "district": null,
+   "contributions": 5609.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Long, Bobby",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 15631.32,
+   "newestScanned": null
+  },
+  {
+   "name": "Flowers, Vivian L.",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 10350.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Hawk, Robert James , II",
+   "chamber": "house",
+   "district": null,
+   "contributions": 37250.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Latimer, Chris Michael",
+   "chamber": "house",
+   "district": null,
+   "contributions": 19482.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Randall, Joseph Zachary",
+   "chamber": "house",
+   "district": null,
+   "contributions": 5629.75,
+   "newestScanned": null
+  },
+  {
+   "name": "McGrew, Richard",
+   "chamber": "house",
+   "district": null,
+   "contributions": 13264.74,
+   "newestScanned": null
+  },
+  {
+   "name": "Della Rosa, Jana",
+   "chamber": "house",
+   "district": null,
+   "contributions": 42651.8,
+   "newestScanned": null
+  },
+  {
+   "name": "SMITH, GARRY",
+   "chamber": "senate",
+   "district": null,
+   "contributions": null,
+   "newestScanned": "bc9a39ce-9f4c-436d-abbf-fe4c9fbaf4b4"
+  },
+  {
+   "name": "Dunklin, Bill",
+   "chamber": "senate",
+   "district": null,
+   "contributions": null,
+   "newestScanned": "43240ab3-d18c-4245-86cd-ab5abfaa146c"
+  },
+  {
+   "name": "Woods, Adrienne, Esq.",
+   "chamber": "house",
+   "district": null,
+   "contributions": 17925.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Crow, Jeff",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 21435.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Elliott, Efrem",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 9645.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Reynolds, Jimmy Don , JR.",
+   "chamber": "house",
+   "district": null,
+   "contributions": 10031.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Becker, Jorge",
+   "chamber": "house",
+   "district": null,
+   "contributions": 5450.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Yarbrough, Kenneth A",
+   "chamber": "house",
+   "district": null,
+   "contributions": 10950.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Miller, Lee D",
+   "chamber": "house",
+   "district": null,
+   "contributions": 4380.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Wells, John Frank",
+   "chamber": "house",
+   "district": null,
+   "contributions": 19610.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Midkiff, Richard a",
+   "chamber": "house",
+   "district": null,
+   "contributions": 1850.0,
+   "newestScanned": null
+  },
+  {
+   "name": "varnell, Curtis J",
+   "chamber": "house",
+   "district": null,
+   "contributions": 6900.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Wells, John Frank",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 13335.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Davis, Ryan David",
+   "chamber": "house",
+   "district": null,
+   "contributions": 14372.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Casey, Christopher Allen",
+   "chamber": "house",
+   "district": null,
+   "contributions": 2296.73,
+   "newestScanned": null
+  },
+  {
+   "name": "Pierce, Donald rdon",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 0.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Underwood for Arkansas Exploratory Committee",
+   "chamber": "house",
+   "district": null,
+   "contributions": null,
+   "newestScanned": null
   },
   {
    "name": "Williams, Russell Roosevelte , III",
    "chamber": "house",
    "district": null,
-   "contributions": 995.0
+   "contributions": 3350.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Randall for Arkansas",
+   "chamber": "house",
+   "district": null,
+   "contributions": null,
+   "newestScanned": null
+  },
+  {
+   "name": "Ogburn, Christopher",
+   "chamber": "house",
+   "district": "08",
+   "contributions": 2020.75,
+   "newestScanned": null
+  },
+  {
+   "name": "Gray, Michael John",
+   "chamber": "house",
+   "district": null,
+   "contributions": 84495.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Ennett, Denise B",
+   "chamber": "house",
+   "district": null,
+   "contributions": 43921.19,
+   "newestScanned": null
+  },
+  {
+   "name": "HOOD, PHILIP",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 12574.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Talley, Roderick",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 2452.18,
+   "newestScanned": null
+  },
+  {
+   "name": "Williams, Russell Roosevelte , III",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 1985.0,
+   "newestScanned": null
+  },
+  {
+   "name": "JOHNSON, MARK",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 62700.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Lundstrum, Robin Dale Hall",
+   "chamber": "house",
+   "district": "87",
+   "contributions": 2800.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Berry, Stan J",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 0.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Garner, Trent Chancey",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 3296.95,
+   "newestScanned": null
+  },
+  {
+   "name": "Pitsch, Mathew Wade",
+   "chamber": "senate",
+   "district": "08",
+   "contributions": 6700.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Hester, Bart",
+   "chamber": "senate",
+   "district": "01",
+   "contributions": 500.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Hendren, James Paul",
+   "chamber": "senate",
+   "district": "02",
+   "contributions": 700.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Hester, Bart",
+   "chamber": "senate",
+   "district": "01",
+   "contributions": 6767.01,
+   "newestScanned": null
+  },
+  {
+   "name": "nzales, Justin R",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 18362.54,
+   "newestScanned": null
+  },
+  {
+   "name": "Bryant, Joshua Paul",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 14123.5,
+   "newestScanned": null
+  },
+  {
+   "name": "Maloch, Bruce",
+   "chamber": "senate",
+   "district": null,
+   "contributions": null,
+   "newestScanned": null
+  },
+  {
+   "name": "Carr, John P",
+   "chamber": "house",
+   "district": "94",
+   "contributions": 750.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Hammer, Kim David",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 1200.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Beckham, Charles Edward , III",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 0.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Stubblefield, Gary Don",
+   "chamber": "senate",
+   "district": "06",
+   "contributions": 5747.69,
+   "newestScanned": null
+  },
+  {
+   "name": "Beckham, Charles Edward , III",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 27750.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Eubanks, Jon",
+   "chamber": "house",
+   "district": "74",
+   "contributions": 1250.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Gilmore, Lewis Benjamin \"Ben\"",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 231079.98,
+   "newestScanned": null
+  },
+  {
+   "name": "NORMAN, DAVID",
+   "chamber": "house",
+   "district": null,
+   "contributions": 35297.2,
+   "newestScanned": null
+  },
+  {
+   "name": "Faulkenberry, Gwendolann Ford",
+   "chamber": "house",
+   "district": "82",
+   "contributions": 36795.8,
+   "newestScanned": null
+  },
+  {
+   "name": "Harwell, Caleb D",
+   "chamber": "house",
+   "district": null,
+   "contributions": 1325.0,
+   "newestScanned": null
+  },
+  {
+   "name": "vens, Rodney Warren",
+   "chamber": "house",
+   "district": null,
+   "contributions": 3725.61,
+   "newestScanned": null
+  },
+  {
+   "name": "payton, john russell",
+   "chamber": "house",
+   "district": null,
+   "contributions": 5600.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Deffenbaugh, Gary",
+   "chamber": "house",
+   "district": null,
+   "contributions": 6600.0,
+   "newestScanned": null
+  },
+  {
+   "name": "McDowell, Chase Owen",
+   "chamber": "house",
+   "district": null,
+   "contributions": 6250.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Scott, Jamie",
+   "chamber": "house",
+   "district": null,
+   "contributions": 4718.74,
+   "newestScanned": null
+  },
+  {
+   "name": "Fults, Gary Norman",
+   "chamber": "house",
+   "district": null,
+   "contributions": 750.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Bryant, Jill",
+   "chamber": "house",
+   "district": null,
+   "contributions": 0.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Bowers, Judy Ann",
+   "chamber": "house",
+   "district": null,
+   "contributions": 750.7,
+   "newestScanned": null
+  },
+  {
+   "name": "McGrew, Richard",
+   "chamber": "house",
+   "district": null,
+   "contributions": 29040.23,
+   "newestScanned": null
+  },
+  {
+   "name": "Willems, Darby (Wayne)",
+   "chamber": "house",
+   "district": null,
+   "contributions": 0.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Anteski, June A",
+   "chamber": "house",
+   "district": null,
+   "contributions": 6492.5,
+   "newestScanned": null
   },
   {
    "name": "Lowery, Mark Dale",
    "chamber": "house",
    "district": null,
-   "contributions": 16450.0
+   "contributions": 43800.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Gray, Michelle",
+   "chamber": "house",
+   "district": "62",
+   "contributions": 12050.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Jones, Christia (Chris)",
+   "chamber": "house",
+   "district": null,
+   "contributions": null,
+   "newestScanned": "d7221f06-92b6-466d-970d-c09dfc5d6484"
+  },
+  {
+   "name": "Williams, Russell Roosevelte , III",
+   "chamber": "house",
+   "district": null,
+   "contributions": 995.0,
+   "newestScanned": null
+  },
+  {
+   "name": "Lowery, Mark Dale",
+   "chamber": "house",
+   "district": null,
+   "contributions": 16450.0,
+   "newestScanned": null
   },
   {
    "name": "Tyler, H. Otis",
    "chamber": "house",
    "district": null,
-   "contributions": null
+   "contributions": null,
+   "newestScanned": "9c3feb1d-803f-49be-a209-bc00016d9448"
   }
  ]
 }

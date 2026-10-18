@@ -49,7 +49,12 @@ const partyOf = (p: string | null | undefined): "D" | "R" | "O" | null => {
   return "O";
 };
 
-const wordsOf = (s: string) => new Set(s.toLowerCase().normalize("NFKD").replace(/[^a-z\s-]/g, " ").split(/[\s-]+/));
+/** The words of a name, plus each pair of neighbours run together: results files write "Dallesandro" and
+ *  "Fullerclark" where committees say "D'Allesandro" and "Fuller Clark". */
+const wordsOf = (s: string) => {
+  const w = s.toLowerCase().normalize("NFKD").replace(/[^a-z\s-]/g, " ").split(/[\s-]+/).filter(Boolean);
+  return new Set([...w, ...w.slice(1).map((x, i) => w[i] + x)]);
+};
 
 /** "01" and "1" are the same district. */
 const districtKey = (d: string) => normalizeDistrictKey(/^\d+$/.test(d.trim()) ? String(Number(d)) : d);

@@ -74,6 +74,13 @@
     "incumbent": true,
     "contributions": 41442.82,
     "expenditures": null
+   },
+   {
+    "name": "FRIENDS TO ELECT SANDY VAN WAGNER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 21703.7,
+    "expenditures": null
    }
   ],
   "13": [
@@ -196,6 +203,15 @@
     "expenditures": null
    }
   ],
+  "26": [
+   {
+    "name": "COMMITTEE TO ELECT GAIL MCCANN BEATTY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 102878.24,
+    "expenditures": null
+   }
+  ],
   "27": [
    {
     "name": "FRIENDS OF RICHARD BROWN",
@@ -309,6 +325,15 @@
     "expenditures": null
    }
   ],
+  "39": [
+   {
+    "name": "FRIENDS OF JOE DON MCGAUGH",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 61725,
+    "expenditures": null
+   }
+  ],
   "40": [
    {
     "name": "COMMITTEE TO ELECT JIM HANSEN",
@@ -333,6 +358,13 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 23643,
+    "expenditures": null
+   },
+   {
+    "name": "Citizens For Cheri Toalson Reisch",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 25151,
     "expenditures": null
    }
   ],
@@ -796,6 +828,13 @@
   ],
   "94": [
    {
+    "name": "CITIZENS FOR VICKI LORENZ ENGLUND",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 154407.93,
+    "expenditures": null
+   },
+   {
     "name": "FRIENDS OF CLORIA BROWN",
     "party": "Republican",
     "incumbent": true,
@@ -1104,6 +1143,13 @@
   ],
   "131": [
    {
+    "name": "SONYA MURRAY ANDERSON FOR STATE REPRESENTATIVE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 39165,
+    "expenditures": null
+   },
+   {
     "name": "PEOPLE FOR NATE BRANSCOM-STATE REPRESENTATIVE",
     "party": "Democratic",
     "incumbent": false,
@@ -1275,6 +1321,15 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 41145.19,
+    "expenditures": null
+   }
+  ],
+  "151": [
+   {
+    "name": "CITIZENS FOR TILA ROWLAND HUBRECHT",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30150,
     "expenditures": null
    }
   ],

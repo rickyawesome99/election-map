@@ -530,6 +530,13 @@
     "incumbent": true,
     "contributions": 46630.92,
     "expenditures": 35728.53
+   },
+   {
+    "name": "O'Connor, Kerri",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11076.91,
+    "expenditures": 10008.02
    }
   ],
   "4th Hampden": [
@@ -1309,6 +1316,15 @@
     "expenditures": 4996.18
    }
   ],
+  "8th Plymouth": [
+   {
+    "name": "D'Emilia, Angelo L.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 10395,
+    "expenditures": 11307.64
+   }
+  ],
   "9th Plymouth": [
    {
     "name": "Cassidy, Gerard J.",
@@ -1673,6 +1689,15 @@
     "expenditures": 92345.68
    }
   ],
+  "14th Worcester": [
+   {
+    "name": "O'Day, James",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 37724.04,
+    "expenditures": 30896.58
+   }
+  ],
   "15th Worcester": [
    {
     "name": "Keefe, Mary S.",
@@ -2008,6 +2033,13 @@
    }
   ],
   "plymouthnorfolk": [
+   {
+    "name": "O'Connor, Patrick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 178781.12,
+    "expenditures": 146681.61
+   },
    {
     "name": "Wheeler, Meg",
     "party": "Democratic",

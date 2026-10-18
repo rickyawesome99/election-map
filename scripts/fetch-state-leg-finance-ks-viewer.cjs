@@ -29,6 +29,12 @@ const CACHE = "/private/tmp/claude-501/-Users-rickyjia-election-map/7b2956ab-e26
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36";
 const OFFICE = { house: "7", senate: "6" };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+// Watchdog: a navigation or popup can hang with no timeout firing; with nothing done for 10 minutes the process
+// exits non-zero and a wrapper (rerun loop) starts it again, resuming from the cache.
+let lastProgress = Date.now();
+const progress = () => { lastProgress = Date.now(); };
+let browser = null; // killed with the process: an exit that leaves Chromium behind leaks a browser per restart
+setInterval(() => { if (Date.now() - lastProgress > 600000) { console.log("watchdog: no progress for 10 min, exiting"); try { browser?.process()?.kill("SIGKILL"); } catch {} process.exit(3); } }, 30000).unref();
 const SUFFIX = new Set(["JR", "SR", "II", "III", "IV"]);
 const tokens = (s) => s.toUpperCase().replace(/[^A-Z ]/g, " ").split(/\s+/).filter((t) => t.length > 1 && !SUFFIX.has(t));
 
@@ -79,6 +85,7 @@ async function walk(p, q, visit) {
       }
     }
     const rs = await rows(p);
+    progress();
     for (let i = 0; i < rs.length; i++) await visit(rs[i], pg, i, pages);
   }
   return total;
@@ -105,40 +112,51 @@ async function rows(p) {
 }
 
 async function open(ctx, p, target, base) {
-  let pdf = null;
-  const onResp = async (r) => {
-    if ((r.headers()["content-type"] || "").includes("pdf")) pdf = { url: r.url(), body: await r.body().catch(() => null) };
+  // Every PDF response is logged with the page it loaded in, and only the popup's own counts: a context-wide
+  // "last PDF seen" let a slow response from the previous popup land under the next row (a scan filed under
+  // the wrong candidate; found by reading the forms).
+  const seen = [];
+  const onResp = (r) => {
+    if ((r.headers()["content-type"] || "").includes("pdf") || /\/srvimages\/.*\.pdf/i.test(r.url())) {
+      let page = null;
+      try { page = r.frame().page(); } catch {}
+      seen.push({ page, url: r.url() });
+    }
   };
   ctx.on("response", onResp);
   const popup = ctx.waitForEvent("page", { timeout: 60000 });
-  await p.evaluate((t) => { document.forms[0].target = "_blank"; __doPostBack(t, ""); document.forms[0].target = ""; }, target);
-  const np = await popup;
-  await np.waitForLoadState("load", { timeout: 90000 }).catch(() => {});
-  for (let i = 0; i < 20 && !pdf && !/exp_report_main/.test(np.url()); i++) await sleep(500);
-  let out;
-  if (/exp_report_main/.test(np.url())) {
-    fs.writeFileSync(base + ".html", await np.content());
-    out = { kind: "html", url: np.url() };
-  } else {
-    for (let i = 0; i < 20 && !(pdf && pdf.body); i++) await sleep(500);
-    const url = pdf?.url ?? np.url();
-    // The captured body is sometimes Chrome's PDF-viewer page; the scans themselves (srvimages) are not
-    // behind the WAF, so fetch the file directly whenever the bytes are not a PDF.
-    const isPdf = (x) => x && x.subarray(0, 5).toString() === "%PDF-";
-    let body = pdf?.body;
-    if (!isPdf(body) && /^https:\/\/sos\.ks\.gov\/srvimages\//i.test(url)) body = await (await ctx.request.get(url)).body().catch(() => null);
-    if (isPdf(body)) fs.writeFileSync(base + ".pdf", body);
-    out = { kind: isPdf(body) ? "pdf" : "none", url };
+  popup.catch(() => {}); // if the postback below throws first, this wait must not become an unhandled rejection
+  try {
+    await p.evaluate((t) => { document.forms[0].target = "_blank"; __doPostBack(t, ""); document.forms[0].target = ""; }, target);
+    const np = await popup;
+    await np.waitForLoadState("load", { timeout: 90000 }).catch(() => {});
+    const mine = () => seen.find((x) => x.page === np && /\/srvimages\//i.test(x.url)) || (/\/srvimages\/.*\.pdf/i.test(np.url()) ? { url: np.url() } : null);
+    for (let i = 0; i < 30 && !mine() && !/exp_report_main/.test(np.url()); i++) await sleep(500);
+    let out;
+    if (/exp_report_main/.test(np.url())) {
+      const html = await np.content();
+      // the WAF sometimes answers the popup with its "verify you're not a robot" page instead of the report
+      if (!/covering the period/i.test(html)) out = { kind: "none", url: np.url() };
+      else { fs.writeFileSync(base + ".html", html); out = { kind: "html", url: np.url() }; }
+    } else {
+      const m = mine();
+      // the scans themselves (srvimages) are not behind the WAF: fetch the file directly
+      const body = m ? await (await ctx.request.get(m.url)).body().catch(() => null) : null;
+      const isPdf = body && body.subarray(0, 5).toString() === "%PDF-";
+      if (isPdf) fs.writeFileSync(base + ".pdf", body);
+      out = { kind: isPdf ? "pdf" : "none", url: m ? m.url : np.url() };
+    }
+    await np.close();
+    return out;
+  } finally {
+    ctx.off("response", onResp);
   }
-  ctx.off("response", onResp);
-  await np.close();
-  return out;
 }
 
 (async () => {
   const [candFile, ...jobs] = process.argv.slice(2);
   const cands = JSON.parse(fs.readFileSync(candFile, "utf8"));
-  const b = await chromium.launch({ headless: true, channel: "chromium" });
+  const b = (browser = await chromium.launch({ headless: true, channel: "chromium" }));
   const ctx = await b.newContext({ userAgent: UA });
   const fetchInto = async (p, dir, index, idxFile, key, r) => {
     let res;
@@ -147,6 +165,7 @@ async function open(ctx, p, target, base) {
       catch (e) { console.log(`  retry ${key} ${r.name}: ${e.message.split("\n")[0]}`); await sleep(15000); }
     }
     index[key] = { ...r, ...(res ?? { kind: "none" }) };
+    progress();
     fs.writeFileSync(idxFile, JSON.stringify(index, null, 1));
     await sleep(800);
   };
@@ -203,7 +222,10 @@ async function open(ctx, p, target, base) {
       (want[String(Number(c.district))] ??= new Set()).add(t[t.length - 1]);
     }
     let opened = 0, skipped = 0;
-    const total = await walk(p, { office: OFFICE[chamber], start: `01/01/${cycle}`, end: `03/31/${cycle + 1}` }, async (r, pg, i, pages) => {
+    // the form refuses a future end date
+    const endD = new Date(Math.min(new Date(cycle + 1, 2, 31), Date.now()));
+    const end = `${String(endD.getMonth() + 1).padStart(2, "0")}/${String(endD.getDate()).padStart(2, "0")}/${endD.getFullYear()}`;
+    const total = await walk(p, { office: OFFICE[chamber], start: `01/01/${cycle}`, end }, async (r, pg, i, pages) => {
       const key = `${pg}-${i}`;
       if (i === 0 && pg % 10 === 0) console.log(`  page ${pg}/${pages}: opened ${opened}, skipped ${skipped}`);
       if (!(want[r.district] && tokens(r.name).some((t) => want[r.district].has(t)))) { skipped++; return; }

@@ -137,6 +137,13 @@
     "expenditures": 3617.43
    },
    {
+    "name": "O'ROURKE, ANTHONY JOSEPH",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 600,
+    "expenditures": 612.16
+   },
+   {
     "name": "ROY, BRUCE A",
     "party": "Republican",
     "incumbent": false,
@@ -399,6 +406,22 @@
     "expenditures": 10217.96
    }
   ],
+  "Windham-3": [
+   {
+    "name": "BOS-LUN, MICHELLE CHRISTINE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7666.45,
+    "expenditures": 5984.21
+   },
+   {
+    "name": "GOLDMAN, LESLIE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7000,
+    "expenditures": 6189.8
+   }
+  ],
   "Lamoille-3": [
    {
     "name": "BOYDEN, LUCY",
@@ -656,6 +679,22 @@
     "expenditures": 0
    }
   ],
+  "Franklin-8": [
+   {
+    "name": "DEES-ERICKSON, LAUREN PATRICE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17967.69,
+    "expenditures": 15575.52
+   },
+   {
+    "name": "TOOF, CASEY JOSEPH",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11083,
+    "expenditures": 3675.22
+   }
+  ],
   "Franklin-7": [
    {
     "name": "DEMAR, ALLEN R",
@@ -883,15 +922,6 @@
     "incumbent": false,
     "contributions": 24257.2,
     "expenditures": 17305.55
-   }
-  ],
-  "Windham-3": [
-   {
-    "name": "GOLDMAN, LESLIE",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 7000,
-    "expenditures": 6189.8
    }
   ],
   "Washington-6": [
@@ -1293,6 +1323,15 @@
     "expenditures": 1736.28
    }
   ],
+  "Windsororange-1": [
+   {
+    "name": "O'BRIEN, JOHN KENNETH",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 10
+   }
+  ],
   "Franklin-4": [
    {
     "name": "OLIVER, THOMAS",
@@ -1352,6 +1391,13 @@
     "incumbent": true,
     "contributions": 704.25,
     "expenditures": 1067.43
+   },
+   {
+    "name": "STONE, MARY-KATHERINE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 800,
+    "expenditures": 276
    }
   ],
   "Windham-6": [
@@ -1461,15 +1507,6 @@
     "incumbent": true,
     "contributions": 0,
     "expenditures": 0
-   }
-  ],
-  "Franklin-8": [
-   {
-    "name": "TOOF, CASEY JOSEPH",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 11083,
-    "expenditures": 3675.22
    }
   ],
   "Caledonia-2": [

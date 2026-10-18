@@ -15,6 +15,13 @@
   ],
   "2": [
    {
+    "name": "Raghib Allie-Brennan",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5503,
+    "expenditures": null
+   },
+   {
     "name": "William Duff",
     "party": "Republican",
     "incumbent": true,
@@ -722,6 +729,13 @@
     "incumbent": true,
     "contributions": 5260,
     "expenditures": null
+   },
+   {
+    "name": "Patricia Wilson Pheanious",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5668,
+    "expenditures": null
    }
   ],
   "54": [
@@ -925,6 +939,13 @@
     "incumbent": true,
     "contributions": 6495,
     "expenditures": null
+   },
+   {
+    "name": "Thomas O'Brien",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6090,
+    "expenditures": null
    }
   ],
   "68": [
@@ -945,6 +966,13 @@
   ],
   "69": [
    {
+    "name": "Arthur O'Neill",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 7650.02,
+    "expenditures": null
+   },
+   {
     "name": "Greg Cava",
     "party": "Democratic",
     "incumbent": false,
@@ -953,6 +981,13 @@
    }
   ],
   "71": [
+   {
+    "name": "Anthony D'Amelio",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6855,
+    "expenditures": null
+   },
    {
     "name": "Stephen Ferrucci",
     "party": "Democratic",
@@ -1180,6 +1215,13 @@
     "incumbent": true,
     "contributions": 6210,
     "expenditures": null
+   },
+   {
+    "name": "Theresann Ranciato-Viele",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5945,
+    "expenditures": null
    }
   ],
   "88": [
@@ -1227,6 +1269,15 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 5890,
+    "expenditures": null
+   }
+  ],
+  "91": [
+   {
+    "name": "Michael D'agostino",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -1715,6 +1766,13 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 7500,
+    "expenditures": null
+   },
+   {
+    "name": "Thomas O'Dea",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17715,
     "expenditures": null
    }
   ],
@@ -2385,6 +2443,13 @@
   ],
   "25": [
    {
+    "name": "Marc D'Amelio",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 17300,
+    "expenditures": null
+   },
+   {
     "name": "Bob Duff",
     "party": "Democratic",
     "incumbent": true,
@@ -2558,6 +2623,13 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 32437,
+    "expenditures": null
+   },
+   {
+    "name": "L. Scott Frantz",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 82720,
     "expenditures": null
    }
   ]

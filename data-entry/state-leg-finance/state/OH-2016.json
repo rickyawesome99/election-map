@@ -211,6 +211,13 @@
   ],
   "32": [
    {
+    "name": "Sean O'Brien",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 186582.05,
+    "expenditures": null
+   },
+   {
     "name": "Robert Allen",
     "party": "Republican",
     "incumbent": false,
@@ -1089,6 +1096,13 @@
    }
   ],
   "64": [
+   {
+    "name": "Michael O'Brien",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 70356.95,
+    "expenditures": null
+   },
    {
     "name": "Martha Yoder",
     "party": "Republican",

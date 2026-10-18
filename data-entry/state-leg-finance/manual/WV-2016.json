@@ -1,0 +1,683 @@
+{
+ "_about": "Hand-read 'TOTAL CONTRIBUTIONS ELECTION YEAR-TO-DATE' boxes from scanned paper reports (Form F-7 bottom-left, short Form F-7A mid-right), keyed by ReadCFRSReport DocId; read 2026-10-18. Used by scripts/fetch-state-leg-finance-wv-legacy.py for candidates without a text-layer report. Unread: Phyllis Riffe White, Clayton D. Moore (box blank), Ray Hollen, Patrick S. Martin (A17 scans start on the back cover).",
+ "reports": {
+  "18475": {
+   "contributions": 96250.0,
+   "candidate": "MIKE MARONEY",
+   "seat": "senate-2",
+   "report": "G3"
+  },
+  "15549": {
+   "contributions": 25276.0,
+   "candidate": "DONNA J. BOLEY",
+   "seat": "senate-3",
+   "report": "G3"
+  },
+  "20625": {
+   "contributions": 30174.84,
+   "candidate": "BRADLEY VANZILE",
+   "seat": "senate-3",
+   "report": "G3"
+  },
+  "20335": {
+   "contributions": 48871.8,
+   "candidate": "CHANDLER SWOPE",
+   "seat": "senate-6",
+   "report": "G3"
+  },
+  "17716": {
+   "contributions": 200787.5,
+   "candidate": "GLENN JEFFRIES",
+   "seat": "senate-8",
+   "report": "G3"
+  },
+  "20686": {
+   "contributions": 8700.0,
+   "candidate": "CHRIS WALTERS",
+   "seat": "senate-8",
+   "report": "G3"
+  },
+  "19193": {
+   "contributions": 83984.62,
+   "candidate": "DAVE PERRY",
+   "seat": "senate-10",
+   "report": "G3"
+  },
+  "15189": {
+   "contributions": 33096.98,
+   "candidate": "MIKE AZINGER",
+   "seat": "senate-3",
+   "report": "G3"
+  },
+  "21225": {
+   "contributions": 21370.0,
+   "candidate": "MARK ZATEZALO",
+   "seat": "house-1",
+   "report": "G3"
+  },
+  "19214": {
+   "contributions": 32505.0,
+   "candidate": "DAVE PETHTEL",
+   "seat": "house-5",
+   "report": "G3"
+  },
+  "15493": {
+   "contributions": 19494.84,
+   "candidate": "DAVID BLAND",
+   "seat": "house-8",
+   "report": "G2"
+  },
+  "16202": {
+   "contributions": 5950.0,
+   "candidate": "VERNON CRISS",
+   "seat": "house-10",
+   "report": "G3"
+  },
+  "16241": {
+   "contributions": 52732.98,
+   "candidate": "ANDY DANIEL",
+   "seat": "house-10",
+   "report": "G3"
+  },
+  "16291": {
+   "contributions": 9350.0,
+   "candidate": "FRANK DEEM",
+   "seat": "house-10",
+   "report": "G2"
+  },
+  "17882": {
+   "contributions": 24300.0,
+   "candidate": "JOHN R. KELLY",
+   "seat": "house-10",
+   "report": "G3"
+  },
+  "18101": {
+   "contributions": 19299.33,
+   "candidate": "J. MORGAN LEACH",
+   "seat": "house-10",
+   "report": "G2"
+  },
+  "18678": {
+   "contributions": 31180.0,
+   "candidate": "BILL MERRIMAN",
+   "seat": "house-10",
+   "report": "G3"
+  },
+  "22493": {
+   "contributions": 15200.0,
+   "candidate": "MARTIN \"RICK\" ATKINSON III",
+   "seat": "house-11",
+   "report": "G3"
+  },
+  "17804": {
+   "contributions": 10100.0,
+   "candidate": "ROSALEE JUBA-PLUMLEY",
+   "seat": "house-13",
+   "report": "G2"
+  },
+  "15792": {
+   "contributions": 1954.82,
+   "candidate": "JIM BUTLER",
+   "seat": "house-14",
+   "report": "G3"
+  },
+  "15011": {
+   "contributions": 2607.0,
+   "candidate": "JOE AKERS",
+   "seat": "house-16",
+   "report": "G1"
+  },
+  "15079": {
+   "contributions": 6643.48,
+   "candidate": "DALE ANDERSON II",
+   "seat": "house-16",
+   "report": "G3"
+  },
+  "17507": {
+   "contributions": 39011.21,
+   "candidate": "SEAN HORNBUCKLE",
+   "seat": "house-16",
+   "report": "G3"
+  },
+  "18727": {
+   "contributions": 52448.13,
+   "candidate": "CAROL MILLER",
+   "seat": "house-16",
+   "report": "G3"
+  },
+  "16234": {
+   "contributions": 6990.0,
+   "candidate": "ANNE BROCKUS DANDELET",
+   "seat": "house-17",
+   "report": "G2"
+  },
+  "19598": {
+   "contributions": 51816.7,
+   "candidate": "MATTHEW ROHRBACH",
+   "seat": "house-17",
+   "report": "G3"
+  },
+  "20036": {
+   "contributions": 39104.84,
+   "candidate": "KELLI SOBONYA",
+   "seat": "house-18",
+   "report": "G3"
+  },
+  "19635": {
+   "contributions": 1050.0,
+   "candidate": "MARK ROSS",
+   "seat": "house-19",
+   "report": "G2"
+  },
+  "18434": {
+   "contributions": 35278.16,
+   "candidate": "JUSTIN J. MARCUM",
+   "seat": "house-20",
+   "report": "G3"
+  },
+  "16485": {
+   "contributions": 25775.0,
+   "candidate": "JEFF ELDRIDGE",
+   "seat": "house-22",
+   "report": "G3"
+  },
+  "23017": {
+   "contributions": 40609.29,
+   "candidate": "RUPERT \"RUPIE\" PHILLIPS JR",
+   "seat": "house-24",
+   "report": "G3"
+  },
+  "19558": {
+   "contributions": 19550.0,
+   "candidate": "RALPH RODIGHIERO",
+   "seat": "house-24",
+   "report": "G3"
+  },
+  "16573": {
+   "contributions": 8885.0,
+   "candidate": "ED EVANS",
+   "seat": "house-26",
+   "report": "G2"
+  },
+  "16984": {
+   "contributions": 17762.99,
+   "candidate": "MARTY GEARHEART",
+   "seat": "house-27",
+   "report": "G3"
+  },
+  "19821": {
+   "contributions": 66582.68,
+   "candidate": "JOHN H. SHOTT",
+   "seat": "house-27",
+   "report": "G3"
+  },
+  "16141": {
+   "contributions": 6650.0,
+   "candidate": "ROY G. COOPER",
+   "seat": "house-28",
+   "report": "G3"
+  },
+  "21054": {
+   "contributions": 9195.99,
+   "candidate": "WAYNE WILLIAMS",
+   "seat": "house-28",
+   "report": "G2"
+  },
+  "18910": {
+   "contributions": 34209.7,
+   "candidate": "RICKY MOYE",
+   "seat": "house-29",
+   "report": "G3"
+  },
+  "21143": {
+   "contributions": 574.37,
+   "candidate": "GREG WOOD",
+   "seat": "house-29",
+   "report": "G3"
+  },
+  "15133": {
+   "contributions": 16545.0,
+   "candidate": "LYNNE ARVON",
+   "seat": "house-31",
+   "report": "G3"
+  },
+  "19630": {
+   "contributions": 21793.82,
+   "candidate": "KRISTEN E. ROSS",
+   "seat": "house-31",
+   "report": "G2"
+  },
+  "17915": {
+   "contributions": 28233.98,
+   "candidate": "KAYLA KESSINGER",
+   "seat": "house-32",
+   "report": "G3"
+  },
+  "18242": {
+   "contributions": 7167.95,
+   "candidate": "MR. SHIRLEY LOVE",
+   "seat": "house-32",
+   "report": "G3"
+  },
+  "19260": {
+   "contributions": 19955.27,
+   "candidate": "JOHN PINO",
+   "seat": "house-32",
+   "report": "G3"
+  },
+  "20120": {
+   "contributions": 44320.36,
+   "candidate": "MARGARET ANNE STAGGERS",
+   "seat": "house-32",
+   "report": "G3"
+  },
+  "20672": {
+   "contributions": 25500.0,
+   "candidate": "DAVID A WALKER",
+   "seat": "house-33",
+   "report": "G3"
+  },
+  "15540": {
+   "contributions": 25846.01,
+   "candidate": "BRENT BOGGS",
+   "seat": "house-34",
+   "report": "G3"
+  },
+  "18069": {
+   "contributions": 48270.0,
+   "candidate": "CHARLOTTE R. LANE",
+   "seat": "house-35",
+   "report": "G3"
+  },
+  "19106": {
+   "contributions": 23996.62,
+   "candidate": "KEITH PAULEY",
+   "seat": "house-35",
+   "report": "G3"
+  },
+  "19804": {
+   "contributions": 18615.0,
+   "candidate": "BENJAMIN M. SHERIDAN",
+   "seat": "house-35",
+   "report": "G3"
+  },
+  "20960": {
+   "contributions": 17175.0,
+   "candidate": "BRAD WHITE",
+   "seat": "house-36",
+   "report": "G3"
+  },
+  "20697": {
+   "contributions": 30660.71,
+   "candidate": "RON WALTERS",
+   "seat": "house-39",
+   "report": "A17"
+  },
+  "17306": {
+   "contributions": 22375.0,
+   "candidate": "BILL HARTMAN",
+   "seat": "house-43",
+   "report": "G3"
+  },
+  "15576": {
+   "contributions": 1547.97,
+   "candidate": "DUANE BORCHERS, SR",
+   "seat": "house-44",
+   "report": "G3"
+  },
+  "17179": {
+   "contributions": 21700.0,
+   "candidate": "BILL HAMILTON",
+   "seat": "house-45",
+   "report": "G3"
+  },
+  "19966": {
+   "contributions": 16075.0,
+   "candidate": "PEGGY DONALDSON SMITH",
+   "seat": "house-46",
+   "report": "G2"
+  },
+  "20642": {
+   "contributions": 5639.69,
+   "candidate": "DANNY WAGNER",
+   "seat": "house-47",
+   "report": "G3"
+  },
+  "19401": {
+   "contributions": 44535.86,
+   "candidate": "BEN QUEEN",
+   "seat": "house-48",
+   "report": "G3"
+  },
+  "20738": {
+   "contributions": 50638.38,
+   "candidate": "TERRY WAXMAN",
+   "seat": "house-48",
+   "report": "G3"
+  },
+  "21161": {
+   "contributions": 36939.09,
+   "candidate": "WAYNE WORTH",
+   "seat": "house-48",
+   "report": "G3"
+  },
+  "17008": {
+   "contributions": 13850.0,
+   "candidate": "DAVE GOBEL",
+   "seat": "house-49",
+   "report": "G2"
+  },
+  "20289": {
+   "contributions": 22551.57,
+   "candidate": "AMY SUMMERS",
+   "seat": "house-49",
+   "report": "G3"
+  },
+  "23710": {
+   "contributions": 68011.9,
+   "candidate": "MIKE CAPUTO",
+   "seat": "house-50",
+   "report": "G3"
+  },
+  "20705": {
+   "contributions": 1950.0,
+   "candidate": "GUY WARD",
+   "seat": "house-50",
+   "report": "G2"
+  },
+  "16930": {
+   "contributions": 31205.0,
+   "candidate": "CINDY FRICH",
+   "seat": "house-51",
+   "report": "G3"
+  },
+  "19394": {
+   "contributions": 18105.34,
+   "candidate": "RODNEY A. PYLES",
+   "seat": "house-51",
+   "report": "G3"
+  },
+  "19851": {
+   "contributions": 6060.0,
+   "candidate": "ROGER SHUTTLESWORTH",
+   "seat": "house-51",
+   "report": "G3"
+  },
+  "20060": {
+   "contributions": 23822.0,
+   "candidate": "ISAAC SPONAUGLE",
+   "seat": "house-55",
+   "report": "G3"
+  },
+  "16045": {
+   "contributions": 9192.75,
+   "candidate": "GARY \"PEANUT\" COLLIS",
+   "seat": "house-60",
+   "report": "G3"
+  },
+  "15744": {
+   "contributions": 36267.9,
+   "candidate": "SAMMI BROWN",
+   "seat": "house-65",
+   "report": "G3"
+  },
+  "23032": {
+   "contributions": 84375.0,
+   "candidate": "ROBERT H. \"BOB\" PLYMALE",
+   "seat": "senate-5",
+   "report": "G3"
+  },
+  "22610": {
+   "contributions": 813.36,
+   "candidate": "FRANKLIN D. CORNETTE, II",
+   "seat": "senate-12",
+   "report": "G1"
+  },
+  "19202": {
+   "contributions": 0,
+   "candidate": "MATTHEW PERSINGER",
+   "seat": "senate-14",
+   "report": "G3"
+  },
+  "23724": {
+   "contributions": 37102.32,
+   "candidate": "MIKE FERRO",
+   "seat": "house-4",
+   "report": "G3"
+  },
+  "20987": {
+   "contributions": 2571.66,
+   "candidate": "PHILLIP W. WILEY",
+   "seat": "house-5",
+   "report": "G3"
+  },
+  "19622": {
+   "contributions": 7750.0,
+   "candidate": "WM. ROGER ROMINE",
+   "seat": "house-6",
+   "report": "G3"
+  },
+  "15962": {
+   "contributions": 11511.08,
+   "candidate": "BILLY J. CHAFFIN II",
+   "seat": "house-18",
+   "report": "G3"
+  },
+  "16569": {
+   "contributions": 0,
+   "candidate": "DERRICK EVANS",
+   "seat": "house-19",
+   "report": "G2"
+  },
+  "15230": {
+   "contributions": 6110.0,
+   "candidate": "MICHAEL J. BAISDEN",
+   "seat": "house-20",
+   "report": "G2"
+  },
+  "16280": {
+   "contributions": 600.0,
+   "candidate": "MARK DEAN",
+   "seat": "house-21",
+   "report": "G2"
+  },
+  "18527": {
+   "contributions": 1775.21,
+   "candidate": "ZACK MAYNARD",
+   "seat": "house-22",
+   "report": "G2"
+  },
+  "15363": {
+   "contributions": 225.0,
+   "candidate": "DANIEL BELCHER",
+   "seat": "house-23",
+   "report": "G3"
+  },
+  "22537": {
+   "contributions": 18150.0,
+   "candidate": "FRANK \"BUCKY\" BLACKWELL",
+   "seat": "house-25",
+   "report": "G3"
+  },
+  "19113": {
+   "contributions": 3587.64,
+   "candidate": "TONY PAYNTER",
+   "seat": "house-25",
+   "report": "G3"
+  },
+  "17274": {
+   "contributions": 2187.0,
+   "candidate": "BRIAN HARRISON",
+   "seat": "house-26",
+   "report": "G2"
+  },
+  "15213": {
+   "contributions": 8820.67,
+   "candidate": "CAROL B. BAILEY",
+   "seat": "house-27",
+   "report": "G3"
+  },
+  "16499": {
+   "contributions": 30211.7,
+   "candidate": "JOE C. ELLINGTON, JR",
+   "seat": "house-27",
+   "report": "G3"
+  },
+  "20722": {
+   "contributions": 7621.16,
+   "candidate": "LACY WATSON",
+   "seat": "house-27",
+   "report": "G3"
+  },
+  "19015": {
+   "contributions": 9470.0,
+   "candidate": "WILLIAM A. (BILL) O'BRIEN",
+   "seat": "house-28",
+   "report": "G2"
+  },
+  "17329": {
+   "contributions": 3355.94,
+   "candidate": "AUSTIN HAYNES",
+   "seat": "house-32",
+   "report": "G3"
+  },
+  "16154": {
+   "contributions": 22850.0,
+   "candidate": "THORNTON COOPER",
+   "seat": "house-35",
+   "report": "G3"
+  },
+  "19498": {
+   "contributions": 0,
+   "candidate": "ELIZABETH RHULE",
+   "seat": "house-36",
+   "report": "G2"
+  },
+  "19444": {
+   "contributions": 100.0,
+   "candidate": "CHRIS REED",
+   "seat": "house-39",
+   "report": "G2"
+  },
+  "15239": {
+   "contributions": 0,
+   "candidate": "ALAN BALOGH",
+   "seat": "house-43",
+   "report": "G2"
+  },
+  "17679": {
+   "contributions": 12770.0,
+   "candidate": "PHIL ISNER",
+   "seat": "house-43",
+   "report": "G3"
+  },
+  "16247": {
+   "contributions": 0,
+   "candidate": "BARBARA DANIELS",
+   "seat": "house-44",
+   "report": "G3"
+  },
+  "15172": {
+   "contributions": 13370.0,
+   "candidate": "KEN AUVIL",
+   "seat": "house-47",
+   "report": "G3"
+  },
+  "17648": {
+   "contributions": 28328.92,
+   "candidate": "RICHARD J. IAQUINTA",
+   "seat": "house-48",
+   "report": "G3"
+  },
+  "16378": {
+   "contributions": 3646.17,
+   "candidate": "JON DODDS",
+   "seat": "house-50",
+   "report": "G3"
+  },
+  "18209": {
+   "contributions": 26575.0,
+   "candidate": "LINDA LONGSTRETH",
+   "seat": "house-50",
+   "report": "G3"
+  },
+  "18333": {
+   "contributions": 7940.0,
+   "candidate": "PHIL MALLOW",
+   "seat": "house-50",
+   "report": "G3"
+  },
+  "18356": {
+   "contributions": 30100.0,
+   "candidate": "TIM MANCHIN",
+   "seat": "house-50",
+   "report": "G3"
+  },
+  "23216": {
+   "contributions": 200.0,
+   "candidate": "BOBBIE DAMON TRIPLETT II",
+   "seat": "house-50",
+   "report": "G3"
+  },
+  "23823": {
+   "contributions": 4924.26,
+   "candidate": "EDDIE WAGONER",
+   "seat": "house-51",
+   "report": "G3"
+  },
+  "15291": {
+   "contributions": 360.12,
+   "candidate": "JOHN R. BARTLETT",
+   "seat": "house-52",
+   "report": "G2"
+  },
+  "18148": {
+   "contributions": 2118.87,
+   "candidate": "TONY J. LEWIS",
+   "seat": "house-53",
+   "report": "G3"
+  },
+  "16537": {
+   "contributions": 5325.0,
+   "candidate": "ALLEN V. EVANS",
+   "seat": "house-54",
+   "report": "G3"
+  },
+  "19205": {
+   "contributions": 0,
+   "candidate": "TONYA PERSINGER",
+   "seat": "house-55",
+   "report": "G3"
+  },
+  "19993": {
+   "contributions": 1700.0,
+   "candidate": "STEPHEN G. SMITH",
+   "seat": "house-55",
+   "report": "G2"
+  },
+  "16125": {
+   "contributions": 0,
+   "candidate": "BEVERLY COOKMAN KEADLE",
+   "seat": "house-57",
+   "report": "A17"
+  },
+  "19655": {
+   "contributions": 10184.64,
+   "candidate": "RUTH ROWAN",
+   "seat": "house-57",
+   "report": "G3"
+  },
+  "16175": {
+   "contributions": 44131.48,
+   "candidate": "DARYL E. COWLES",
+   "seat": "house-58",
+   "report": "G3"
+  },
+  "19328": {
+   "contributions": 99505.65,
+   "candidate": "ROMAN W. PREZIOSO, JR.",
+   "seat": "senate-13",
+   "report": "G3"
+  }
+ }
+}

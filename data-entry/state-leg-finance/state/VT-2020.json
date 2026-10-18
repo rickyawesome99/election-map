@@ -807,6 +807,22 @@
     "expenditures": 10453.33
    }
   ],
+  "Windham-4": [
+   {
+    "name": "BOS-LUN, MICHELLE CHRISTINE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9337.17,
+    "expenditures": 5388.07
+   },
+   {
+    "name": "MROWICKI, MIKE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3820,
+    "expenditures": 3690.1
+   }
+  ],
   "Chittenden-2": [
    {
     "name": "BRADY, ERIN MCGUIRE",
@@ -821,6 +837,13 @@
     "incumbent": true,
     "contributions": 4328,
     "expenditures": 4106.75
+   },
+   {
+    "name": "O'ROURKE, ANTHONY JOSEPH",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5185,
+    "expenditures": 3813.74
    }
   ],
   "Windsororange-2": [
@@ -1069,6 +1092,22 @@
     "incumbent": true,
     "contributions": 6005,
     "expenditures": 4158.16
+   }
+  ],
+  "Orange-2": [
+   {
+    "name": "COPELAND HANZAS, SARAH LOUISE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5031.98,
+    "expenditures": 5368.86
+   },
+   {
+    "name": "LANG, ZACHARY MICHAEL",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3376.36,
+    "expenditures": 2225.61
    }
   ],
   "Addison-4": [
@@ -1694,15 +1733,6 @@
     "expenditures": 52
    }
   ],
-  "Orange-2": [
-   {
-    "name": "LANG, ZACHARY MICHAEL",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 3376.36,
-    "expenditures": 2225.61
-   }
-  ],
   "Franklin-7": [
    {
     "name": "LEFFLER, FELISHA",
@@ -1776,15 +1806,6 @@
     "expenditures": 2455.99
    }
   ],
-  "Windham-4": [
-   {
-    "name": "MROWICKI, MIKE",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 3820,
-    "expenditures": 3690.1
-   }
-  ],
   "Rutlandwindsor-2": [
    {
     "name": "NICOLL, LOGAN MICHAEL",
@@ -1792,6 +1813,15 @@
     "incumbent": true,
     "contributions": 577.26,
     "expenditures": 701.69
+   }
+  ],
+  "Windsororange-1": [
+   {
+    "name": "O'BRIEN, JOHN KENNETH",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": 834.96
    }
   ],
   "windhambenningtonwindsor": [

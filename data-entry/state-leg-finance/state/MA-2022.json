@@ -1309,6 +1309,13 @@
   ],
   "8th Plymouth": [
    {
+    "name": "D'Emilia, Angelo L.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5070,
+    "expenditures": 8781.4
+   },
+   {
     "name": "Haikola, Eric",
     "party": "Democratic",
     "incumbent": false,
@@ -1688,6 +1695,15 @@
     "incumbent": true,
     "contributions": 69158.43,
     "expenditures": 86192.62
+   }
+  ],
+  "14th Worcester": [
+   {
+    "name": "O'Day, James",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 36211.67,
+    "expenditures": 31261.74
    }
   ],
   "15th Worcester": [
@@ -2132,6 +2148,13 @@
    }
   ],
   "First Plymouth and Norfolk": [
+   {
+    "name": "O'Connor, Patrick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 218068.68,
+    "expenditures": 201289.56
+   },
    {
     "name": "Stephens, Robert",
     "party": "Democratic",

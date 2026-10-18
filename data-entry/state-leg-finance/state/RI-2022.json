@@ -694,6 +694,15 @@
     "expenditures": null
    }
   ],
+  "54": [
+   {
+    "name": "WILLIAM W O'BRIEN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 37680,
+    "expenditures": null
+   }
+  ],
   "55": [
    {
     "name": "ARTHUR J CORVESE",
@@ -876,6 +885,13 @@
   ],
   "68": [
    {
+    "name": "RAE-ANN LAWRENCE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2941.19,
+    "expenditures": null
+   },
+   {
     "name": "JUNE SAGER SPEAKMAN",
     "party": "Democratic",
     "incumbent": true,
@@ -921,6 +937,15 @@
     "party": "Other",
     "incumbent": false,
     "contributions": 674,
+    "expenditures": null
+   }
+  ],
+  "72": [
+   {
+    "name": "TERRI-DENISE CORTVRIEND",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 20595.5,
     "expenditures": null
    }
   ],

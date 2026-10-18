@@ -153,6 +153,13 @@
   ],
   "15": [
    {
+    "name": "John C D'Amico",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 444511.94,
+    "expenditures": null
+   },
+   {
     "name": "Jonathan Edelman",
     "party": "Republican",
     "incumbent": false,
@@ -1326,6 +1333,15 @@
     "expenditures": null
    }
   ],
+  "116": [
+   {
+    "name": "Jerry Costello II",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 386107.84,
+    "expenditures": null
+   }
+  ],
   "117": [
    {
     "name": "John Bradley",
@@ -1438,6 +1454,15 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 406133.94,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Emil Jones III",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 86645.66,
     "expenditures": null
    }
   ],

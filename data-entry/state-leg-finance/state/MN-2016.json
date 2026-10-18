@@ -399,6 +399,13 @@
   ],
   "13B": [
    {
+    "name": "O'Driscoll, Tim",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 25580,
+    "expenditures": null
+   },
+   {
     "name": "Crouse, Matthew Franklin",
     "party": "Democratic",
     "incumbent": false,
@@ -1614,6 +1621,13 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 33265,
+    "expenditures": null
+   },
+   {
+    "name": "T'Kach, Mary",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 43538,
     "expenditures": null
    }
   ],

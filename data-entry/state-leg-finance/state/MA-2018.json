@@ -147,6 +147,13 @@
     "incumbent": false,
     "contributions": 10412.58,
     "expenditures": 7021.9
+   },
+   {
+    "name": "O'Connell, Shaunna",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 81363.03,
+    "expenditures": 67372.76
    }
   ],
   "4th Bristol": [
@@ -687,6 +694,13 @@
     "incumbent": false,
     "contributions": 42076.84,
     "expenditures": 39410.96
+   },
+   {
+    "name": "Goldstein-Rose, Solomon",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 9132.39,
+    "expenditures": 9184.08
    }
   ],
   "1st Middlesex": [
@@ -1296,6 +1310,13 @@
     "expenditures": 113115.43
    },
    {
+    "name": "O'Connell, Edward J.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 23985.04,
+    "expenditures": 17826.76
+   },
+   {
     "name": "Powell, Nathaniel K.",
     "party": "Other",
     "incumbent": false,
@@ -1342,6 +1363,15 @@
     "incumbent": false,
     "contributions": 89145.3,
     "expenditures": 38109.5
+   }
+  ],
+  "8th Plymouth": [
+   {
+    "name": "D'Emilia, Angelo L.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 25135,
+    "expenditures": 15721.94
    }
   ],
   "9th Plymouth": [
@@ -1752,6 +1782,15 @@
     "expenditures": 96231.11
    }
   ],
+  "14th Worcester": [
+   {
+    "name": "O'Day, James",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 53690,
+    "expenditures": 52743.18
+   }
+  ],
   "15th Worcester": [
    {
     "name": "Keefe, Mary S.",
@@ -2149,6 +2188,13 @@
     "incumbent": false,
     "contributions": 89644.64,
     "expenditures": 76162.96
+   },
+   {
+    "name": "O'Connor, Patrick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 179822.84,
+    "expenditures": 123481.48
    }
   ],
   "Suffolk and Middlesex": [

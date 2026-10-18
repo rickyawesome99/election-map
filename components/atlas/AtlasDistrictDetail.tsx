@@ -294,7 +294,7 @@ export default function AtlasDistrictDetail({
               <thead>
                 <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
                   {["Year", "Candidates", ...(hasMoney ? ["Raised"] : []), "Dem", "Rep", "Margin", "Lines"].map((h) => (
-                    <th key={h} className={`py-1.5 pr-3 text-[10px] uppercase tracking-wider font-semibold ${["Dem", "Rep", "Margin", "Raised"].includes(h) ? "text-right" : "text-left"}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
+                    <th key={h} className={`py-1.5 ${h === "Year" ? "pr-4 w-[1%] whitespace-nowrap" : "pr-3"} text-[10px] uppercase tracking-wider font-semibold ${["Dem", "Rep", "Margin", "Raised"].includes(h) ? "text-right" : "text-left"}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
                   ))}
                 </tr>
               </thead>
@@ -304,7 +304,7 @@ export default function AtlasDistrictDetail({
                   const pct = (v: number | null) => (r.totalVotes && v != null ? `${((v / r.totalVotes) * 100).toFixed(1)}%` : "—");
                   return (
                     <tr key={r.year} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                      <td className="py-2 pr-3 font-semibold align-top">{r.year}{r.uncontested && <div><Pill>unopposed</Pill></div>}</td>
+                      <td className="py-2 pr-4 font-semibold align-top w-[1%] whitespace-nowrap">{r.year}{r.uncontested && <div className="mt-1"><Pill>Unopposed</Pill></div>}</td>
                       <td className="py-2 pr-3 align-top min-w-[220px]"><Candidates r={r} abbr={abbr} /></td>
                       {hasMoney && <td className="py-2 pr-3 text-right align-top"><Raised r={r} money={district.money?.find((x) => x.year === r.year)} /></td>}
                       <td className="py-2 pr-3 text-right align-top" style={{ color: "var(--party-dem)" }}>{pct(r.demVotes)}</td>

@@ -56,6 +56,13 @@
   ],
   "5": [
    {
+    "name": "Beth A O'Connor",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5956.57,
+    "expenditures": 4753.65
+   },
+   {
     "name": "Charles Galemmo",
     "party": "Democratic",
     "incumbent": false,
@@ -207,6 +214,13 @@
     "incumbent": false,
     "contributions": 750,
     "expenditures": 11535.97
+   },
+   {
+    "name": "Margaret O'Neil",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5797.98,
+    "expenditures": 5797.98
    }
   ],
   "16": [
@@ -528,6 +542,15 @@
     "incumbent": true,
     "contributions": 0,
     "expenditures": 0
+   }
+  ],
+  "40": [
+   {
+    "name": "Rachel Talbot Ross",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1585,
+    "expenditures": 1585
    }
   ],
   "41": [
@@ -1859,6 +1882,13 @@
     "incumbent": false,
     "contributions": 3975,
     "expenditures": 3975
+   },
+   {
+    "name": "Kevin J.M. O'Connell (Special)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 445,
+    "expenditures": 5379.41
    }
   ],
   "129": [

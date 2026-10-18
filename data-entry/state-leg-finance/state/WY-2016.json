@@ -191,6 +191,13 @@
     "incumbent": false,
     "contributions": 10974,
     "expenditures": null
+   },
+   {
+    "name": "ERIN CLAIRE O'DOHERTY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7545.44,
+    "expenditures": null
    }
   ],
   "15": [
@@ -932,6 +939,15 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 8597.72,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "MICHAEL JOSEPH VON FLATERN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15000,
     "expenditures": null
    }
   ],

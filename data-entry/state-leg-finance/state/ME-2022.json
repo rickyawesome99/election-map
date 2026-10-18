@@ -285,6 +285,13 @@
   ],
   "18": [
    {
+    "name": "Colin D O'Neill",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 0
+   },
+   {
     "name": "Richard A. Bennett",
     "party": "Republican",
     "incumbent": true,
@@ -856,6 +863,13 @@
     "incumbent": false,
     "contributions": 1000,
     "expenditures": 6585.9
+   },
+   {
+    "name": "Kevin O'Connell",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 328.3,
+    "expenditures": 0
    }
   ],
   "21": [
@@ -2475,6 +2489,13 @@
    }
   ],
   "129": [
+   {
+    "name": "Margaret M O'Neil",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3045.3,
+    "expenditures": 3045.3
+   },
    {
     "name": "Stephen Robert DuPuis",
     "party": "Republican",

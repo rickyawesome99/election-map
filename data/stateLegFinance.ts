@@ -7201,6 +7201,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
+       "name": "Pamela Hannley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4836.26,
+       "expenditures": null
+      },
+      {
        "name": "Ana Henderson",
        "party": "R",
        "partyLabel": "Republican",
@@ -7908,6 +7916,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Arizona Secretary of State See The Money (private contributions; public funding excluded)",
      "dataThrough": "12/31/2016",
      "candidates": [
+      {
+       "name": "Nikki (Check) Bagley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 121485.95,
+       "expenditures": null
+      },
       {
        "name": "Sylvia Tenney ALLEN",
        "party": "R",
@@ -18142,11 +18158,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Reginald Byron Jones-Sawyer",
+       "name": "Reginald Jones-Sawyer",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 21250,
+       "contributions": 801893.87,
        "expenditures": null
       }
      ]
@@ -18367,6 +18383,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "California Cal-Access Form 460 summaries (monetary + non-monetary contributions)",
      "dataThrough": "12/31/2016",
      "candidates": [
+      {
+       "name": "Patrick O'Donnell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 868926.02,
+       "expenditures": null
+      },
       {
        "name": "Martha Flores-Gibson",
        "party": "R",
@@ -18856,11 +18880,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Josh Newman",
+       "name": "j Newmn",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 3000,
+       "contributions": 2640930.85,
        "expenditures": null
       }
      ]
@@ -29866,6 +29890,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 94314.52,
        "expenditures": null
+      },
+      {
+       "name": "RONALD STANFORD NELSON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 900,
+       "expenditures": null
       }
      ]
     },
@@ -30109,6 +30141,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 24114,
+       "expenditures": null
+      },
+      {
+       "name": "TOMMIE LEE REYNOLDS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1810,
        "expenditures": null
       }
      ]
@@ -30713,6 +30753,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "48": {
+     "source": "Colorado Secretary of State TRACER (contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "STEPHEN A. HUMPHREY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8500,
+       "expenditures": null
+      },
+      {
+       "name": "ANNMARIE KING",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2835.06,
+       "expenditures": null
+      }
+     ]
+    },
     "49": {
      "source": "Colorado Secretary of State TRACER (contributions)",
      "dataThrough": "12/31/2016",
@@ -30797,6 +30859,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 11386.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Colorado Secretary of State TRACER (contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JENNIFER ARNDT",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 37250,
        "expenditures": null
       }
      ]
@@ -83196,6 +83272,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "6": {
+     "source": "Iowa Ethics and Campaign Disclosure Board (itemized contributions + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Perla Alarcon-Flory for Iowa House",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13747.32,
+       "expenditures": null
+      }
+     ]
+    },
     "7": {
      "source": "Iowa Ethics and Campaign Disclosure Board (itemized contributions + in-kind)",
      "dataThrough": "12/31/2016",
@@ -83222,6 +83312,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Iowa Ethics and Campaign Disclosure Board (itemized contributions + in-kind)",
      "dataThrough": "12/31/2016",
      "candidates": [
+      {
+       "name": "Nancy Paule Huisinga for Iowa House",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2906.1,
+       "expenditures": null
+      },
       {
        "name": "Terry Baxter for Iowa House",
        "party": "R",
@@ -83686,6 +83784,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "35": {
+     "source": "Iowa Ethics and Campaign Disclosure Board (itemized contributions + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Citizens for Ako Abdul-Samad",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 10385,
+       "expenditures": null
+      }
+     ]
+    },
     "36": {
      "source": "Iowa Ethics and Campaign Disclosure Board (itemized contributions + in-kind)",
      "dataThrough": "12/31/2016",
@@ -83848,6 +83960,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 36256.84,
+       "expenditures": null
+      },
+      {
+       "name": "Sondra Childs-Smith for Iowa",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 48188.26,
        "expenditures": null
       }
      ]
@@ -110234,6 +110354,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "John C D'Amico",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 444511.94,
+       "expenditures": null
+      },
+      {
        "name": "Jonathan Edelman",
        "party": "R",
        "partyLabel": "Republican",
@@ -111947,6 +112075,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "116": {
+     "source": "Illinois State Board of Elections D-2 report totals (contributions, loans excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jerry Costello II",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 386107.84,
+       "expenditures": null
+      }
+     ]
+    },
     "117": {
      "source": "Illinois State Board of Elections D-2 report totals (contributions, loans excluded)",
      "dataThrough": "12/31/2016",
@@ -112115,6 +112257,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 406133.94,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Illinois State Board of Elections D-2 report totals (contributions, loans excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Emil Jones III",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 86645.66,
        "expenditures": null
       }
      ]
@@ -126235,6 +126391,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "2": {
+     "source": "Indiana Election Division bulk contributions (direct, unitemized, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Earl Lynn Harris, Jr.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 29549.01,
+       "expenditures": null
+      }
+     ]
+    },
     "3": {
      "source": "Indiana Election Division bulk contributions (direct, unitemized, in-kind)",
      "dataThrough": "12/31/2016",
@@ -126455,6 +126625,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 12685,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Indiana Election Division bulk contributions (direct, unitemized, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Thomas C. O'Donnell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30065.06,
        "expenditures": null
       }
      ]
@@ -126908,6 +127092,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "Heath Randall Van Natter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 79344.04,
+       "expenditures": null
+      },
+      {
        "name": "Jason Scott Burns",
        "party": "O",
        "partyLabel": "Other",
@@ -127297,6 +127489,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 87690.31,
+       "expenditures": null
+      },
+      {
+       "name": "Edward Dean O'Connor",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10937.69,
        "expenditures": null
       }
      ]
@@ -160970,6 +161170,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "O'Driscoll, Tim",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 25580,
+       "expenditures": null
+      },
+      {
        "name": "Crouse, Matthew Franklin",
        "party": "D",
        "partyLabel": "Democratic",
@@ -162645,6 +162853,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 33265,
+       "expenditures": null
+      },
+      {
+       "name": "T'Kach, Mary",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 43538,
        "expenditures": null
       }
      ]
@@ -185586,6 +185802,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 17204.49,
        "expenditures": null
+      },
+      {
+       "name": "COMMITTEE TO ELECT MARVA FISHER BALDWIN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9351.92,
+       "expenditures": null
       }
      ]
     },
@@ -185861,6 +186085,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "24": {
+     "source": "North Carolina State Board of Elections transactions (contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMM TO RE-ELECT JEAN FARMER-BUTTERFIELD",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 45859.41,
+       "expenditures": null
+      }
+     ]
+    },
     "25": {
      "source": "North Carolina State Board of Elections transactions (contributions)",
      "dataThrough": "12/31/2016",
@@ -186037,6 +186275,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 698329.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "North Carolina State Board of Elections transactions (contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "WILLIAMS FOR NC HOUSE (LINDA HUNT WILLIAMS)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 209868.03,
        "expenditures": null
       }
      ]
@@ -186698,6 +186950,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "WAYNE KAHL FOR STATE HOUSE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 834,
+       "expenditures": null
+      },
+      {
        "name": "CITIZENS TO ELECT RENA TURNER",
        "party": "R",
        "partyLabel": "Republican",
@@ -186761,6 +187021,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 491740.12,
+       "expenditures": null
+      }
+     ]
+    },
+    "89": {
+     "source": "North Carolina State Board of Elections transactions (contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMM TO ELECT MITCHELL SMITH SETZER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67058.72,
+       "expenditures": null
+      }
+     ]
+    },
+    "90": {
+     "source": "North Carolina State Board of Elections transactions (contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "ELECT VERA SMITH REYNOLDS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1953.54,
        "expenditures": null
       }
      ]
@@ -186977,6 +187265,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "North Carolina State Board of Elections transactions (contributions)",
      "dataThrough": "12/31/2016",
      "candidates": [
+      {
+       "name": "FRIENDS OF CONNIE GREEN-JOHNSON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 31780.59,
+       "expenditures": null
+      },
       {
        "name": "NATHAN D STONE NC STATE HOUSE CAMPAIGN 2016",
        "party": "R",
@@ -187444,6 +187740,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "LAUREL DEEGAN-FRICKE FOR STATE SENATE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 25492.01,
+       "expenditures": null
+      },
+      {
        "name": "ALEXANDER FOR NC SENATE",
        "party": "R",
        "partyLabel": "Republican",
@@ -187729,6 +188033,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 14180,
+       "expenditures": null
+      },
+      {
+       "name": "JIM BEALL GRAHAM FOR NC SENATE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4842,
        "expenditures": null
       }
      ]
@@ -208700,6 +209012,3770 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   }
  },
  "NH": {
+  "2016": {
+   "house": {
+    "ME23": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Martin, John F.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 550,
+       "expenditures": null
+      },
+      {
+       "name": "D'Ovidio, Dennis ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1866.5,
+       "expenditures": null
+      },
+      {
+       "name": "Walz, Mary Beth ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4482,
+       "expenditures": null
+      },
+      {
+       "name": "Kaminski, Michael S.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2549.99,
+       "expenditures": null
+      },
+      {
+       "name": "JR Hoell for State Rep",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6545,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO19": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Altschiller, Debra ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3185.45,
+       "expenditures": null
+      },
+      {
+       "name": "Abrami, Patrick F.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3013.71,
+       "expenditures": null
+      },
+      {
+       "name": "Ward, Joanne ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1900,
+       "expenditures": null
+      }
+     ]
+    },
+    "SU11": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Smith, Steven ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1450,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO24": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Stevens, Janet ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7555.16,
+       "expenditures": null
+      },
+      {
+       "name": "Messmer, Mindi F.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4858.72,
+       "expenditures": null
+      },
+      {
+       "name": "Murray, Kate ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8270,
+       "expenditures": null
+      },
+      {
+       "name": "Erlebacher, Frances ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3580.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "CO4": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Fountain, Cathleen A.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1455.29,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST17": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bixby, Peter W.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 565.32,
+       "expenditures": null
+      },
+      {
+       "name": "Castaldo, Michael ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 150,
+       "expenditures": null
+      },
+      {
+       "name": "Vincent, Kenneth S.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR14": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends of Brad Bailey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3050,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO26": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "McBeath, Rebecca ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 900,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI17": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MacKenzie, Mark S ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14749,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Tim Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2340.52,
+       "expenditures": null
+      },
+      {
+       "name": "Simmons, Tammy ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 2545,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO2": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Roundy, Chris ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Spillane, James A.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1820,
+       "expenditures": null
+      },
+      {
+       "name": "St. Martin, Tom ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2809.94,
+       "expenditures": null
+      },
+      {
+       "name": "Nasser, Jim ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1700,
+       "expenditures": null
+      },
+      {
+       "name": "Dill, Alden ",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 250,
+       "expenditures": null
+      },
+      {
+       "name": "Golomb, Wesley A.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8611,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME20": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Seaworth, Brian ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5500,
+       "expenditures": null
+      },
+      {
+       "name": "Doherty, David B.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 925,
+       "expenditures": null
+      },
+      {
+       "name": "Schuett, Dianne E.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1125,
+       "expenditures": null
+      },
+      {
+       "name": "Tapp, Darren ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 500,
+       "expenditures": null
+      },
+      {
+       "name": "Hall, Doug ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1422.01,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO5": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Packard, Sherman ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7774.42,
+       "expenditures": null
+      },
+      {
+       "name": "Hynes, Barb ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 748,
+       "expenditures": null
+      },
+      {
+       "name": "Thomas, Douglas ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 250,
+       "expenditures": null
+      },
+      {
+       "name": "Bove, Martin N.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1000,
+       "expenditures": null
+      },
+      {
+       "name": "Rimol, Bob ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Baldasaro, Al ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1147.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI21": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends of Dick Hinch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12189.72,
+       "expenditures": null
+      },
+      {
+       "name": "Notter, Jeanine ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1110,
+       "expenditures": null
+      },
+      {
+       "name": "Hynes, Dan ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5000,
+       "expenditures": null
+      },
+      {
+       "name": "Kojak, Kim ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 850,
+       "expenditures": null
+      },
+      {
+       "name": "Moore, Josh ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI37": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Shawn Jasper for New Hampshire",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 51358.2,
+       "expenditures": null
+      },
+      {
+       "name": "Blue, Barbara A.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 189,
+       "expenditures": null
+      },
+      {
+       "name": "Schleien, Eric ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 2210,
+       "expenditures": null
+      },
+      {
+       "name": "Prout, Andrew ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 726.99,
+       "expenditures": null
+      },
+      {
+       "name": "Rice, Kim ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 650,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO8": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lewis, Sean ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Wright, Bonnie L.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3463.66,
+       "expenditures": null
+      },
+      {
+       "name": "Billingham, Carla ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3105.32,
+       "expenditures": null
+      },
+      {
+       "name": "Janigian, John ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 150,
+       "expenditures": null
+      },
+      {
+       "name": "Gay, Betty I.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 833.78,
+       "expenditures": null
+      },
+      {
+       "name": "Azarian, Gary S.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 250,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME11": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Miller, Kevin ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2367.04,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME2": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Testerman, Dave ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 375,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Scott A. Burns",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 414.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "CA2": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Umberger, Karen ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1084,
+       "expenditures": null
+      },
+      {
+       "name": "McCarthy, Frank ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1000,
+       "expenditures": null
+      },
+      {
+       "name": "Buco, Tom ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "White, Syndi ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 628.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME6": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Rodd, Beth ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Dunne, Jr., Thomas A.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 500,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO36": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lovejoy, Patricia ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1884.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "BE2": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Vadney, Herb ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 989,
+       "expenditures": null
+      },
+      {
+       "name": "DiMartino, Lisa ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3823.02,
+       "expenditures": null
+      },
+      {
+       "name": "Aldrich, Glen C.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1669.21,
+       "expenditures": null
+      },
+      {
+       "name": "Abear, Marc ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Silber, Norman ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6492,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI1": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Shattuck, Gilman ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3081,
+       "expenditures": null
+      },
+      {
+       "name": "Fedolfi, Jim ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 240,
+       "expenditures": null
+      },
+      {
+       "name": "Porter, Marjorie ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 687.7,
+       "expenditures": null
+      },
+      {
+       "name": "Levesque, Charles ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3739,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR7": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Osborne, Richard ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1586.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI2": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kurk, Neal ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 440,
+       "expenditures": null
+      },
+      {
+       "name": "Gill, Aaron ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3119.86,
+       "expenditures": null
+      },
+      {
+       "name": "Hopper, Gary S.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 500,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI8": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Warden, Mark ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1325,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Joseph Lachance",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 950,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO14": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Galloway, Kay ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 885,
+       "expenditures": null
+      },
+      {
+       "name": "Hamblen, George ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3658,
+       "expenditures": null
+      },
+      {
+       "name": "Torosian, Peter E.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1473.7,
+       "expenditures": null
+      },
+      {
+       "name": "Major, norman L.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": -1827.03,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO37": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tilton, Rio H.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1389.2,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI33": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "King, Mark ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1455,
+       "expenditures": null
+      },
+      {
+       "name": "Scully, Kevin ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1300,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO4": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Edwards, Jess ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2664.99,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Jason Osborne",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "CH16": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Burridge, Delmar D.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 679,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO16": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Carpenter, Barbara ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI26": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Taylor, Gale T.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 900,
+       "expenditures": null
+      },
+      {
+       "name": "Levesque, Melanie ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1538,
+       "expenditures": null
+      },
+      {
+       "name": "Lewicke, John ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 815,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO32": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Rafter, Hal ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1916.19,
+       "expenditures": null
+      },
+      {
+       "name": "Dean-Bailey, Yvonne M.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6284,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME24": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Rothenberg, Marcy ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2688,
+       "expenditures": null
+      },
+      {
+       "name": "Gurung, Madalasa ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6256.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO33": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "McConnell, Liz ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Wallace, Scott ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 250,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO17": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Read, Ellen ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1325,
+       "expenditures": null
+      },
+      {
+       "name": "dilorenzo, charlotte i.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 252,
+       "expenditures": null
+      },
+      {
+       "name": "Thornhill, Brooks ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST18": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sherman, Ilyssa J.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1938,
+       "expenditures": null
+      },
+      {
+       "name": "Spencer, Matthew L.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 695.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "CO2": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Moynihan, Wayne ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST2": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Arcouette, Sylvia J.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 874.88,
+       "expenditures": null
+      }
+     ]
+    },
+    "CH1": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Abbott, Michael D.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 100,
+       "expenditures": null
+      },
+      {
+       "name": "Harvey, Cathryn ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Weber, Lucy M.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 625,
+       "expenditures": null
+      },
+      {
+       "name": "Berch, Paul ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3106,
+       "expenditures": null
+      }
+     ]
+    },
+    "CH14": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sterling, Jr., Franklin W.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 2055,
+       "expenditures": null
+      },
+      {
+       "name": "LaMois, Les ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2141.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO3": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Rousseau, Richard ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1740,
+       "expenditures": null
+      },
+      {
+       "name": "Costable, Michael ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1460,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR2": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Boutin, Skylar M.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2480,
+       "expenditures": null
+      },
+      {
+       "name": "Moore, Susan S.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3631.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "CA6": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Goodwin, Peter H.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 450,
+       "expenditures": null
+      },
+      {
+       "name": "Seibel, Charlene ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 300,
+       "expenditures": null
+      }
+     ]
+    },
+    "BE6": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lacey, Diana ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1564.52,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO18": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Berrien, Skip ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2900,
+       "expenditures": null
+      },
+      {
+       "name": "Farnham, Elizabeth ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Goeman, Robert ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 250,
+       "expenditures": null
+      }
+     ]
+    },
+    "CA4": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cordelli, Glenn ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 450,
+       "expenditures": null
+      },
+      {
+       "name": "PUNTURIERI, PAUL ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 998.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME28": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Georgevits, Andrew ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2150,
+       "expenditures": null
+      },
+      {
+       "name": "Rogers, Katherine D.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 5748.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME16": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Soucy, Timothy ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 350,
+       "expenditures": null
+      },
+      {
+       "name": "Bertrand, Robert ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME25": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Karrick, David ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2379.75,
+       "expenditures": null
+      },
+      {
+       "name": "Wells, Natalie J.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1175,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO23": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Malloy, Dennis ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3849,
+       "expenditures": null
+      },
+      {
+       "name": "Page, Glenn ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1350,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR6": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Maes, Kevin G.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1255.29,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI34": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Twombly, Timothy ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1400.29,
+       "expenditures": null
+      },
+      {
+       "name": "Hogan, Edith ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1400,
+       "expenditures": null
+      },
+      {
+       "name": "Whalen, Donald H.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1415,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI39": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Burt, John ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1341,
+       "expenditures": null
+      }
+     ]
+    },
+    "SU9": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends of Linda Tanner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9652,
+       "expenditures": null
+      },
+      {
+       "name": "Bowers, Spec ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 750,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME26": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Carey, Lorrie J.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2411.7,
+       "expenditures": null
+      },
+      {
+       "name": "Pearl, Howard ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 300,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI35": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mangipudi, Latha ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1736.29,
+       "expenditures": null
+      },
+      {
+       "name": "Lisle, David B.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1083.6,
+       "expenditures": null
+      },
+      {
+       "name": "Cleaver, Skip ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1819,
+       "expenditures": null
+      },
+      {
+       "name": "Rioux, Timothy A.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 250,
+       "expenditures": null
+      },
+      {
+       "name": "Ross, Joseph A.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 150,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI38": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "McNamara, Richard ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": -155.7,
+       "expenditures": null
+      },
+      {
+       "name": "Kofalt, Jim ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 485,
+       "expenditures": null
+      },
+      {
+       "name": "Valera, John J.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1202.98,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST3": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Perry, Bob ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 280,
+       "expenditures": null
+      },
+      {
+       "name": "Phillips, Ellen ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 750,
+       "expenditures": null
+      },
+      {
+       "name": "Harrington, Michael ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 720,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI19": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gardner, Clarence ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 400,
+       "expenditures": null
+      }
+     ]
+    },
+    "CH12": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Picanco, Miguel D.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 546.32,
+       "expenditures": null
+      },
+      {
+       "name": "Sainsbury, Richard ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 825,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI7": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bart Fromuth for State Representative",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Wolf, Terry ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1700,
+       "expenditures": null
+      },
+      {
+       "name": "Graham, John A.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 450,
+       "expenditures": null
+      },
+      {
+       "name": "Danielson, David J.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1350,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI28": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Schmidt, Jan ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 352,
+       "expenditures": null
+      },
+      {
+       "name": "Gale, Sylvia ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1062.16,
+       "expenditures": null
+      },
+      {
+       "name": "Eastman, Eric R.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1040,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME8": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Alicea, Caroletta C.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "SU10": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cloutier, John R.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3935,
+       "expenditures": null
+      },
+      {
+       "name": "Stapleton, Walter ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 366,
+       "expenditures": null
+      }
+     ]
+    },
+    "BE3": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dawson, Tom ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Huot, David ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4500,
+       "expenditures": null
+      },
+      {
+       "name": "Merry, Liz ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5411.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST1": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Brown, Larry ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1030.78,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO11": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Wilson, Gordon ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "BE7": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Comtois, Barbara ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1120,
+       "expenditures": null
+      },
+      {
+       "name": "Marriott, Bruce A.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 640.3,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI4": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Roberts, Carol R.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 400,
+       "expenditures": null
+      },
+      {
+       "name": "Hastings, Edwina ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Schwanke, Merrilee ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 240,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO6": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Till, Mary ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 847,
+       "expenditures": null
+      },
+      {
+       "name": "Eisner, Mary ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1110.78,
+       "expenditures": null
+      },
+      {
+       "name": "Cooper, Ronald J.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 280,
+       "expenditures": null
+      }
+     ]
+    },
+    "SU1": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends of Lee W. Oxenham",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 798.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI16": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "McCloskey, David ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 500,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI14": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Reif, Andreas ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 570,
+       "expenditures": null
+      }
+     ]
+    },
+    "CO5": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tucker, Edith ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1125,
+       "expenditures": null
+      },
+      {
+       "name": "Balog, Alan G.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 600,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO7": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Griffin, Mary E.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1050,
+       "expenditures": null
+      },
+      {
+       "name": "Bates, David ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 150,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO34": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pearson, Mark ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7755.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST4": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "George McPeek for Representative",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2700,
+       "expenditures": null
+      },
+      {
+       "name": "Casey, Seamus E.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1060.28,
+       "expenditures": null
+      },
+      {
+       "name": "Cilley, Jackie ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO15": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michaels, Kate ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2300,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST21": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sandler, Catt ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1900,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR11": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Josephson, Timothy H.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1184.1,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI40": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ammon, Keith ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 810,
+       "expenditures": null
+      },
+      {
+       "name": "McGhee, Kat ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5435.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI29": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Newman, Sue ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 771.96,
+       "expenditures": null
+      },
+      {
+       "name": "McCarthy, Michael ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 690,
+       "expenditures": null
+      },
+      {
+       "name": "Harvey, Suzanne ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3829.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "SU8": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Yakovleff, Kendra ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1053.1,
+       "expenditures": null
+      }
+     ]
+    },
+    "SU3": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gauthier, Francis ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 200,
+       "expenditures": null
+      }
+     ]
+    },
+    "CA1": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Corbett, Erik ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1713.86,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR12": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Campion, Polly ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 50,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI5": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "GRIFFIN, GERALD G.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 325,
+       "expenditures": null
+      },
+      {
+       "name": "Woodbury, David ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1564,
+       "expenditures": null
+      },
+      {
+       "name": "Dickey, Glen ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI23": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Biggie, Barbara ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1850,
+       "expenditures": null
+      },
+      {
+       "name": "Martin, Joelle ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5770,
+       "expenditures": null
+      },
+      {
+       "name": "Thornton, Michael E.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Emmick, Frank ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 640,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI30": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "KLEE, PATRICIA S.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1020,
+       "expenditures": null
+      },
+      {
+       "name": "Rosenwald, Cindy ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7190,
+       "expenditures": null
+      },
+      {
+       "name": "MacKay, Mariellen J.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 760,
+       "expenditures": null
+      }
+     ]
+    },
+    "CH8": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Fenton, Donovan ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2126,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO21": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Edgar, Michael ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 680.31,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME1": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Copp, Anne ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 950,
+       "expenditures": null
+      }
+     ]
+    },
+    "CH9": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ley, Douglas A.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 4850,
+       "expenditures": null
+      },
+      {
+       "name": "Ames, Richard ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 4915,
+       "expenditures": null
+      },
+      {
+       "name": "Mazerall, Christopher D.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1690,
+       "expenditures": null
+      }
+     ]
+    },
+    "CA5": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Comeau, Ed ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 225,
+       "expenditures": null
+      },
+      {
+       "name": "Nelson, Bill ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 550,
+       "expenditures": null
+      },
+      {
+       "name": "Swanick, Theresa ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 231,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI32": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Committee to Elect Steve Negron",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5350,
+       "expenditures": null
+      },
+      {
+       "name": "LeBrun, Don ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 400,
+       "expenditures": null
+      }
+     ]
+    },
+    "SU6": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Irwin, Virginia O.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2500,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI41": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends of Laurie Sanborn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14010.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO12": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Guilmette, Marguerite ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 600,
+       "expenditures": null
+      }
+     ]
+    },
+    "CH11": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hunt, John B.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 2850,
+       "expenditures": null
+      },
+      {
+       "name": "O'Day, John ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 736.86,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO1": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Smith, Mike ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1070,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME19": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bartlett, Christy D.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3095,
+       "expenditures": null
+      },
+      {
+       "name": "Alexander, Jr., Joe ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR3": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ford, Susan ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1603.81,
+       "expenditures": null
+      },
+      {
+       "name": "Schwaegler, Victoria O.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1949,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME10": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Myler, Mel ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 4677,
+       "expenditures": null
+      },
+      {
+       "name": "Luneau, David ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2175,
+       "expenditures": null
+      },
+      {
+       "name": "Wallner, Mary Jane ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2405,
+       "expenditures": null
+      },
+      {
+       "name": "French VI, John ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 150,
+       "expenditures": null
+      }
+     ]
+    },
+    "SU2": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gottling, Sue ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2120,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME3": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Wheeler, Deborah ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME9": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Moffett, Howard ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 4821.34,
+       "expenditures": null
+      },
+      {
+       "name": "Moffett, Michael ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Saunderson, George ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2275,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST25": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gourgue, Amanda ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4925,
+       "expenditures": null
+      }
+     ]
+    },
+    "BE1": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Fraser, Valerie A.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1225,
+       "expenditures": null
+      },
+      {
+       "name": "Gulick, Ruth P.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 250,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI42": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Harris, Phillip C.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 954.99,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI12": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bouldin, Amanda ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2274.98,
+       "expenditures": null
+      },
+      {
+       "name": "Gregoire, Andrew ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1941,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO9": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Vose, Michael ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 2700,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR8": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Smith, Suzanne J.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 275,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME5": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Wolf, Daniel H.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2450,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI44": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Proulx, Mark L.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1412.78,
+       "expenditures": null
+      },
+      {
+       "name": "Morin, James R.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 600,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI20": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lascelles, Richard W.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "CH2": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cartwright, Anne S.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1050,
+       "expenditures": null
+      },
+      {
+       "name": "Mann, John E.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "CA7": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tregenza, Norman ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2350,
+       "expenditures": null
+      },
+      {
+       "name": "Skelton, John ",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 530,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI22": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Chandley, Shannon ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6454.84,
+       "expenditures": null
+      },
+      {
+       "name": "Gerzon, Len ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2041,
+       "expenditures": null
+      }
+     ]
+    },
+    "CA3": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Knirk, Jerry ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2950,
+       "expenditures": null
+      },
+      {
+       "name": "Ticehurst, Susan ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 695,
+       "expenditures": null
+      }
+     ]
+    },
+    "SU7": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Grenier, James L.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 690.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "CO3": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Laflamme, Larry L.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 491,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI15": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "McLean, Mark ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1383.96,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST15": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Opderbecke, Linn ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2490,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI11": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Walsh, Bob ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 220,
+       "expenditures": null
+      },
+      {
+       "name": "Mattingly, S. Daniel ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 518.33,
+       "expenditures": null
+      },
+      {
+       "name": "Edwards, Elizabeth ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 300,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST20": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Southworth, Thomas ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 955,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME4": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Schamberg, Tom ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 41.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI13": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gagne, Larry G.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 300,
+       "expenditures": null
+      },
+      {
+       "name": "McConville, Kirk D.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "O'Leary, Richard ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 922,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR9": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hull, Robert ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 650,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO31": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Le, Tamara ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2319.66,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Rob Robertson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1100,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI6": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lanza, Judi ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Renfrew-Hebert, Melanie E.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 200,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME7": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mendola, Joseph M.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1280,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI18": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cornell, Patricia ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 750,
+       "expenditures": null
+      }
+     ]
+    },
+    "CH10": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Shepardson, Marge ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 100,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST6": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Timothy Horrigan Campaign Committee",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 402.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR15": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Binford, David W.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2390.78,
+       "expenditures": null
+      },
+      {
+       "name": "Booth, Rachael T.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4140,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST13": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Committee to Elect Isaac Epstein",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1256,
+       "expenditures": null
+      }
+     ]
+    },
+    "CO7": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Grant, Doug ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3168.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME18": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Feeley, Michael ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1230.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "BE4": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Raymond, Ian ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2180.77,
+       "expenditures": null
+      },
+      {
+       "name": "Committee to Elect Rich Burke",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 860,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR17": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mulholland, Catherine ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1725.6,
+       "expenditures": null
+      },
+      {
+       "name": "Darrow, Stephen J.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1050,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI24": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Carpenter, Gary ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO27": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Somssich, Peter F.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 604,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST8": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ellis, Donna ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 150,
+       "expenditures": null
+      }
+     ]
+    },
+    "RO29": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gordon, Pamela S.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 400,
+       "expenditures": null
+      }
+     ]
+    },
+    "CO1": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Schoenly, Ed E.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 300,
+       "expenditures": null
+      }
+     ]
+    },
+    "ME29": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Coolidge, David A.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI43": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Stevens, Japhet ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "ST24": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Phinney, Brandon ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 664,
+       "expenditures": null
+      }
+     ]
+    },
+    "GR5": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ham, Bonnie ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "CH15": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Malone, Stephen K.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2198.68,
+       "expenditures": null
+      }
+     ]
+    },
+    "HI10": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Yaakov, Merav ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "McPhaul, Dolly ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 57117.27,
+       "expenditures": null
+      },
+      {
+       "name": "Woodburn for Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 144612,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Giuda, Bob ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 34355,
+       "expenditures": null
+      },
+      {
+       "name": "Chandler, Charlie ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 70425,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Committee to Elect David Watters",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 76891,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lozito, Marie ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3200.32,
+       "expenditures": null
+      },
+      {
+       "name": "Martha Hennessey for NH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 39770,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Joe Casey for NH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 73094.46,
+       "expenditures": null
+      },
+      {
+       "name": "Gray 4 NH Senate",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26435.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "French, Harold ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18360.17,
+       "expenditures": null
+      },
+      {
+       "name": "Hosmer for Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 113784,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Garvey, John ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 138081,
+       "expenditures": null
+      },
+      {
+       "name": "Ward, Ruth ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 107247.74,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends of Andy Sanborn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 126350,
+       "expenditures": null
+      },
+      {
+       "name": "Nyquist for Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 140274.27,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lapointe, Chester ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1900,
+       "expenditures": null
+      },
+      {
+       "name": "Kahn, Friends of Jay",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 62131.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tilton, Roger ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3427,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Gary Daniels",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29470,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bette Lasky for State Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Siekmann, Tammy M.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5720,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Sharon Carson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 56114,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Families for Joe Duarte",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 41365,
+       "expenditures": null
+      },
+      {
+       "name": "McGilvray, Scott ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 60340,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Fraher, Nancy R.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2325,
+       "expenditures": null
+      },
+      {
+       "name": "Reagan, John ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34010,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Terrio, Ross W.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5530.87,
+       "expenditures": null
+      },
+      {
+       "name": "Committee to Eelct Donna Soucy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 159108.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends of Regina Birdsell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 35820,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Committee to Elect Lou D'Allesandro",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 283767.45,
+       "expenditures": null
+      },
+      {
+       "name": "Gericke, Carla ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Martha Fuller Clark for State Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 72441.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "O'Shaughnessy, Richard ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 50,
+       "expenditures": null
+      },
+      {
+       "name": "Morse, Chuck ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 350855.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gannon, William M.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 21624,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "New Hampshire Secretary of State campaign finance system, 2016 reports incl. scanned paper filings (receipts to date, primary + general)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends of Dan Innis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 113779,
+       "expenditures": null
+      },
+      {
+       "name": "Tom Sherman for State Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 144423,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
   "2018": {
    "house": {
     "BE2": {
@@ -277734,6 +281810,2182 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   }
  },
  "OH": {
+  "2016": {
+   "house": {
+    "1": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Scott Wiggam",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 70485.31,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mark Romanchuk",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 145846.12,
+       "expenditures": null
+      },
+      {
+       "name": "Brittany Bowman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2582,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kelly Wicks",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 194807.34,
+       "expenditures": null
+      },
+      {
+       "name": "Theresa Gavarone",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 505782.66,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Robert Cupp",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 143926.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tim Ginter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 224588.18,
+       "expenditures": null
+      },
+      {
+       "name": "John Dyce",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 99204.83,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Marlene Anielski",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 526914.62,
+       "expenditures": null
+      },
+      {
+       "name": "Phillip Robinson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 34893.89,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Thomas Patton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1025330.23,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kent Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 38268.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Janine Boyd",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22750,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "William Patmon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 20270,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Stephanie Howse",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 26143.72,
+       "expenditures": null
+      },
+      {
+       "name": "Shalira Taylor",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9366,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Barnes",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 58815,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Nickie Antonio",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 202277.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Martin Sweeney",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 145027.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Nicholas Celebrezze",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 133824.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "David Greenspan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 717432.37,
+       "expenditures": null
+      },
+      {
+       "name": "Tommy Greene",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 558288.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Adam Miller",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 124313.3,
+       "expenditures": null
+      },
+      {
+       "name": "John Rush",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 143695.96,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kristin Boggs",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 132642.65,
+       "expenditures": null
+      },
+      {
+       "name": "Constance Gadell-Newton",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 5559,
+       "expenditures": null
+      },
+      {
+       "name": "David Todd",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20190.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michael Johnston",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3979.42,
+       "expenditures": null
+      },
+      {
+       "name": "Anne Gonzales",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 311078.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Heather Bishoff",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 182946.59,
+       "expenditures": null
+      },
+      {
+       "name": "Lisa Schacht",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 135314.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mike Duffey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 354757.15,
+       "expenditures": null
+      },
+      {
+       "name": "Ryan Koch",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10404.34,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "David Leland",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 157018.03,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lee Schreiner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 296842.62,
+       "expenditures": null
+      },
+      {
+       "name": "Laura Lanese",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 678823.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "James Hughes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 775141.45,
+       "expenditures": null
+      },
+      {
+       "name": "Kristopher Keller",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 48056.61,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Napoleon Bell",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 19722.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Hearcel Craig",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 71299.12,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Thomas Brinkman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 251756.66,
+       "expenditures": null
+      },
+      {
+       "name": "Joseph Otis",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2795.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jonathan Dever",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 769816.34,
+       "expenditures": null
+      },
+      {
+       "name": "Jessica Miranda",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22695.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Louis Blessing",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 72625,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "William Seitz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 426495.39,
+       "expenditures": null
+      },
+      {
+       "name": "Mark Childers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1150,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Brigid Kelly",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 276221.01,
+       "expenditures": null
+      },
+      {
+       "name": "Mary Yeager",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5353.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Catherine Ingram",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21602,
+       "expenditures": null
+      },
+      {
+       "name": "Matthew Wahlert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8156.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Alicia Reece",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 58105.32,
+       "expenditures": null
+      },
+      {
+       "name": "David Miller",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16352.29,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Emilia Sykes",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 103020.25,
+       "expenditures": null
+      },
+      {
+       "name": "Gene Littlefield",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Greta Johnson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 71561.83,
+       "expenditures": null
+      },
+      {
+       "name": "Aimee Cooper",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 855,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Anthony Devitis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 254206.42,
+       "expenditures": null
+      },
+      {
+       "name": "Bobby Mcdowall",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 42030.43,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kristina Roegner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 508226.06,
+       "expenditures": null
+      },
+      {
+       "name": "Casey Weinstein",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 328674.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Marilyn Slaby",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 108480.37,
+       "expenditures": null
+      },
+      {
+       "name": "Judith Lee",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12855.84,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Fred Strahorn",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 505827.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michael Henne",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 124692.31,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jim Butler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 126180,
+       "expenditures": null
+      },
+      {
+       "name": "James Calhoun",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11692.28,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Niraj Antani",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 98772.71,
+       "expenditures": null
+      },
+      {
+       "name": "Patrick Merris",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 100,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "David Sparks",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15127.94,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michael Ashford",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 92843.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Teresa Fedor",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 115916.72,
+       "expenditures": null
+      },
+      {
+       "name": "James Nowak",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2791.34,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michael Sheehy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 52253.85,
+       "expenditures": null
+      },
+      {
+       "name": "Diana Skaff",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9065.72,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Derek Merrin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 254749.47,
+       "expenditures": null
+      },
+      {
+       "name": "Lauri Cooper",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 34930.84,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "J. Kirk Schuring",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 358575.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Thomas West",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22878.43,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Christina Hagan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 80022.03,
+       "expenditures": null
+      },
+      {
+       "name": "John Juergensen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6854.39,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Richard Retherford",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 178373.54,
+       "expenditures": null
+      },
+      {
+       "name": "Johnny Hamilton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 324.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Margaret Conditt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 98233.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Suzi Rubin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 33171.24,
+       "expenditures": null
+      },
+      {
+       "name": "Candice Keller",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 13949.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "54": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Paul Zeltwanger",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3718.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Nathan Manning",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 567725.86,
+       "expenditures": null
+      },
+      {
+       "name": "Kelly Kraus Mencke",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13526.64,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Daniel Ramos",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 65647.79,
+       "expenditures": null
+      },
+      {
+       "name": "Jessie Tower",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10276.56,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Richard Stein",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 404847.31,
+       "expenditures": null
+      },
+      {
+       "name": "Tom Dunlap",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 92449.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michele Lepore-Hagan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 85041.71,
+       "expenditures": null
+      },
+      {
+       "name": "Corrine Sanderson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 19116.35,
+       "expenditures": null
+      },
+      {
+       "name": "Andrea Mahone",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 10595,
+       "expenditures": null
+      }
+     ]
+    },
+    "59": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Boccieri",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 125886.8,
+       "expenditures": null
+      },
+      {
+       "name": "Don Manning",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10715.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Rogers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 110626.18,
+       "expenditures": null
+      },
+      {
+       "name": "Robert Rule",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1323.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "61": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ronald Young",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 119860.21,
+       "expenditures": null
+      },
+      {
+       "name": "Rick Walker",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 995,
+       "expenditures": null
+      }
+     ]
+    },
+    "62": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "P Lipps",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 108088.26,
+       "expenditures": null
+      },
+      {
+       "name": "Samuel Ronan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 500,
+       "expenditures": null
+      }
+     ]
+    },
+    "63": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Devon Stanley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1000,
+       "expenditures": null
+      },
+      {
+       "name": "Glenn Holmes",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 47995.28,
+       "expenditures": null
+      }
+     ]
+    },
+    "64": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michael O'Brien",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 70356.95,
+       "expenditures": null
+      },
+      {
+       "name": "Martha Yoder",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 47827.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "65": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Becker",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 51363.34,
+       "expenditures": null
+      },
+      {
+       "name": "Jerod Weber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9801.88,
+       "expenditures": null
+      }
+     ]
+    },
+    "66": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mark Green",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 69688.47,
+       "expenditures": null
+      },
+      {
+       "name": "Ken Mcneely",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3249.88,
+       "expenditures": null
+      }
+     ]
+    },
+    "67": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Andrew Brenner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 65920.15,
+       "expenditures": null
+      },
+      {
+       "name": "Janet Breneman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7236.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "68": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Russell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 40119.68,
+       "expenditures": null
+      },
+      {
+       "name": "Rick Carfagna",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 179105.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "69": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Frank Zona",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10349.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "70": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Darrell Kick",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18025,
+       "expenditures": null
+      }
+     ]
+    },
+    "71": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Scott Ryan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 244397.91,
+       "expenditures": null
+      },
+      {
+       "name": "Joseph Begeny",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22443.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "72": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Larry Householder",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 246356.95,
+       "expenditures": null
+      },
+      {
+       "name": "John Carlisle",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 200,
+       "expenditures": null
+      }
+     ]
+    },
+    "73": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Richard Perales",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 185144.39,
+       "expenditures": null
+      },
+      {
+       "name": "Brian Housh",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15168.36,
+       "expenditures": null
+      }
+     ]
+    },
+    "74": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "William Dean",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 67320.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "75": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kathleen Clyde",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 339407.22,
+       "expenditures": null
+      },
+      {
+       "name": "Jim Lutz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5283.89,
+       "expenditures": null
+      }
+     ]
+    },
+    "76": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sarah Latourette",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 168799.02,
+       "expenditures": null
+      },
+      {
+       "name": "Terri Mcintee",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9465,
+       "expenditures": null
+      }
+     ]
+    },
+    "77": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tim Schaffer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 159820.77,
+       "expenditures": null
+      },
+      {
+       "name": "Bradley Nicodemus",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7611.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "78": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ron Hood",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11870.47,
+       "expenditures": null
+      }
+     ]
+    },
+    "79": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jerome Koehler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 196105.99,
+       "expenditures": null
+      },
+      {
+       "name": "Alex Wendt",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 221795.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "80": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Stephen Huffman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 93217.55,
+       "expenditures": null
+      }
+     ]
+    },
+    "81": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Robert Mccolley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 234224.64,
+       "expenditures": null
+      }
+     ]
+    },
+    "82": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Craig Riedel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 161768,
+       "expenditures": null
+      }
+     ]
+    },
+    "83": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mary Harshfield",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 810.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "84": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Keith Faber",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1010763.43,
+       "expenditures": null
+      }
+     ]
+    },
+    "85": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Anthony Vitale",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 60636.31,
+       "expenditures": null
+      }
+     ]
+    },
+    "86": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dorothy Pelanda",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 307498.84,
+       "expenditures": null
+      },
+      {
+       "name": "Scott Crider",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2485.07,
+       "expenditures": null
+      }
+     ]
+    },
+    "87": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Wes Goodman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 79085.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "88": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "William Reineke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 175391,
+       "expenditures": null
+      }
+     ]
+    },
+    "89": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Steven Arndt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 656122.84,
+       "expenditures": null
+      },
+      {
+       "name": "Lawrence Hartlaub",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 170129.07,
+       "expenditures": null
+      }
+     ]
+    },
+    "90": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Terry Johnson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 132610.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "91": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cliffford Rosenberger",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1706325.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "92": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gary Scherer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 91769.72,
+       "expenditures": null
+      }
+     ]
+    },
+    "93": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ryan Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 814323.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "94": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sarah Hodges Grace",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 235107.92,
+       "expenditures": null
+      },
+      {
+       "name": "Jay Edwards",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 313440.29,
+       "expenditures": null
+      }
+     ]
+    },
+    "95": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Andy Thompson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 295671.76,
+       "expenditures": null
+      },
+      {
+       "name": "Ginny Favede",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 303612.12,
+       "expenditures": null
+      }
+     ]
+    },
+    "96": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jack Cera",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 167043.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "97": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Brian Hill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 190293.84,
+       "expenditures": null
+      }
+     ]
+    },
+    "98": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jeremiah Johnson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3085,
+       "expenditures": null
+      }
+     ]
+    },
+    "99": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Patterson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 78778.39,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "2": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kirk Halliday",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5798,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "William Coley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 342515.72,
+       "expenditures": null
+      },
+      {
+       "name": "John Kinne",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3445,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Peggy Lehner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 354172.67,
+       "expenditures": null
+      },
+      {
+       "name": "Albert Griggs",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 800,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Louis Terhar",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 285219.72,
+       "expenditures": null
+      },
+      {
+       "name": "Mary Lierman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3066.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Robert Hackett",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 314443.17,
+       "expenditures": null
+      },
+      {
+       "name": "Matthew Kirk",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11976.31,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Matthew Huffman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 537265.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Joseph Uecker",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 199011.58,
+       "expenditures": null
+      },
+      {
+       "name": "Charles Carlier",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2514,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Stephanie Kunze",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2036311.49,
+       "expenditures": null
+      },
+      {
+       "name": "Cathy Johnson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 206305.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Eklund",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 602758.27,
+       "expenditures": null
+      },
+      {
+       "name": "Wiley Runnestrand",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13311.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "William Balderson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 299950.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Larry Obhof",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1614567.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Matthew Dolan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1598225.26,
+       "expenditures": null
+      },
+      {
+       "name": "Emily Hagan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 398912.66,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dave Burke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 287764.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Vernon Sykes",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 123417.95,
+       "expenditures": null
+      },
+      {
+       "name": "Jonathan Schulz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 11511.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lou Gentile",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1124566.86,
+       "expenditures": null
+      },
+      {
+       "name": "Frank Hoagland",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 750149.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Ohio Secretary of State candidate contribution files via The Accountability Project (contributions, other income, in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sean O'Brien",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 186582.05,
+       "expenditures": null
+      },
+      {
+       "name": "Robert Allen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5573.3,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
   "2018": {
    "house": {
     "1": {
@@ -292532,6 +298784,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "93": {
+     "source": "Pennsylvania Department of State campaign finance exports (itemized + unitemized contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "KRISTIN PHILLIPS-HILL",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
     "95": {
      "source": "Pennsylvania Department of State campaign finance exports (itemized + unitemized contributions)",
      "dataThrough": "12/31/2016",
@@ -292729,11 +298995,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "LYNDA J SCHLEGEL CULVER",
+       "name": "SCHLEGEL-CULVER, LYNDA CITIZENS FOR                         ",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 0,
+       "contributions": 51055.1,
        "expenditures": null
       }
      ]
@@ -292842,6 +299108,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 78295,
+       "expenditures": null
+      },
+      {
+       "name": "CHERYL SCANDALE MURNIN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
        "expenditures": null
       }
      ]
@@ -293451,6 +299725,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 447965.98,
        "expenditures": null
+      },
+      {
+       "name": "VAN MOL, HANS FRIENDS OF",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22304.48,
+       "expenditures": null
       }
      ]
     },
@@ -293517,11 +299799,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "RODGERS MORRISETTE, PATTI A ",
+       "name": "RODGERS-MORRISETTE, PATTI FRIENDS OF",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 0,
+       "contributions": 121704.13,
        "expenditures": null
       }
      ]
@@ -356634,6 +362916,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2017",
      "candidates": [
       {
+       "name": "Mrs. Jennifer Denise Carroll Foy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 580105.68,
+       "expenditures": null
+      },
+      {
        "name": "Michael David Makee",
        "party": "R",
        "partyLabel": "Republican",
@@ -356675,6 +362965,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 87326,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Virginia Department of Elections report summaries (Schedule H contributions received)",
+     "dataThrough": "12/31/2017",
+     "candidates": [
+      {
+       "name": "Mr. Israel D. O'Quinn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 115052,
        "expenditures": null
       }
      ]
@@ -356994,6 +363298,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2017",
      "candidates": [
       {
+       "name": "Dr. T Scott Garrett",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 166176.48,
+       "expenditures": null
+      },
+      {
        "name": "Mrs. Natalie Allene Short",
        "party": "D",
        "partyLabel": "Democratic",
@@ -357162,6 +363474,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2017",
      "candidates": [
       {
+       "name": "Lee Scott Lingamfelter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 677316.75,
+       "expenditures": null
+      },
+      {
        "name": "Mrs. Elizabeth Rosalina Guzman",
        "party": "D",
        "partyLabel": "Democratic",
@@ -357251,6 +363571,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "36": {
+     "source": "Virginia Department of Elections report summaries (Schedule H contributions received)",
+     "dataThrough": "12/31/2017",
+     "candidates": [
+      {
+       "name": "Mr. Kenneth Ray Plum",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 92066.68,
+       "expenditures": null
+      }
+     ]
+    },
     "37": {
      "source": "Virginia Department of Elections report summaries (Schedule H contributions received)",
      "dataThrough": "12/31/2017",
@@ -357269,6 +363603,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Virginia Department of Elections report summaries (Schedule H contributions received)",
      "dataThrough": "12/31/2017",
      "candidates": [
+      {
+       "name": "L Kaye Kory",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 46511.1,
+       "expenditures": null
+      },
       {
        "name": "Paul Byrne Haring",
        "party": "R",
@@ -357708,6 +364050,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 249021.07,
        "expenditures": null
+      },
+      {
+       "name": "Mrs. Sheila Carol Bynum-Coleman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 132639.3,
+       "expenditures": null
       }
      ]
     },
@@ -357752,6 +364102,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2017",
      "candidates": [
       {
+       "name": "Mr. R. Lee Ware Jr.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 228602.84,
+       "expenditures": null
+      },
+      {
        "name": "Mr. Francis Morel Stevens",
        "party": "D",
        "partyLabel": "Democratic",
@@ -357765,6 +364123,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Virginia Department of Elections report summaries (Schedule H contributions received)",
      "dataThrough": "12/31/2017",
      "candidates": [
+      {
+       "name": "Mr. M. Kirkland Cox",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 952080.32,
+       "expenditures": null
+      },
       {
        "name": "Ms Katie Ann Sponsler",
        "party": "D",
@@ -357889,6 +364255,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Virginia Department of Elections report summaries (Schedule H contributions received)",
      "dataThrough": "12/31/2017",
      "candidates": [
+      {
+       "name": "Dr. John Maurice O'Bannon III",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 575454.45,
+       "expenditures": null
+      },
       {
        "name": "Dr. Debra Hain Rodman",
        "party": "D",
@@ -358381,6 +364755,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Virginia Department of Elections report summaries (Schedule H contributions received)",
      "dataThrough": "12/31/2017",
      "candidates": [
+      {
+       "name": "Mrs Margaret Bevans Ransone",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 294867.35,
+       "expenditures": null
+      },
       {
        "name": "Francis Nicholas Edwards",
        "party": "D",
@@ -370238,6 +376620,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 198043.55,
        "expenditures": null
+      },
+      {
+       "name": "James J. O'Hagan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2476.43,
+       "expenditures": null
       }
      ]
     },
@@ -371657,6 +378047,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 402172.2,
+       "expenditures": null
+      },
+      {
+       "name": "Steve O'Ban",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 554864.64,
        "expenditures": null
       }
      ]
@@ -384493,6 +390891,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "80": {
+     "source": "Wisconsin Ethics Commission (monetary, conduit and payroll contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends of Sondy Pope-Roberts",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 13240,
+       "expenditures": null
+      }
+     ]
+    },
     "81": {
      "source": "Wisconsin Ethics Commission (monetary, conduit and payroll contributions)",
      "dataThrough": "12/31/2016",
@@ -384855,6 +391267,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 382950.95,
+       "expenditures": null
+      },
+      {
+       "name": "Friends for Van Stippen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 120097.81,
        "expenditures": null
       }
      ]
@@ -398613,6 +405033,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 10974,
        "expenditures": null
+      },
+      {
+       "name": "ERIN CLAIRE O'DOHERTY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7545.44,
+       "expenditures": null
       }
      ]
     },
@@ -399664,6 +406092,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 8597.72,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Wyoming Secretary of State WYCF (total contributions)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MICHAEL JOSEPH VON FLATERN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15000,
        "expenditures": null
       }
      ]
@@ -411992,6 +418434,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Vote Kevin McCabe",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37583.85,
+       "expenditures": null
+      },
+      {
        "name": "Doyle Edward Holmes",
        "party": "R",
        "partyLabel": "Republican",
@@ -412523,6 +418973,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "P": {
+     "source": "Alaska Public Offices Commission (income, report year)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Jim Matherly for State Senate",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 53055.88,
+       "expenditures": null
+      },
+      {
+       "name": "Alex Jafre",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 985,
+       "expenditures": null
+      }
+     ]
+    },
     "D": {
      "source": "Alaska Public Offices Commission (income, report year)",
      "dataThrough": "12/31/2022",
@@ -412549,20 +419021,6 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Other",
        "incumbent": false,
        "contributions": 1920.13,
-       "expenditures": null
-      }
-     ]
-    },
-    "P": {
-     "source": "Alaska Public Offices Commission (income, report year)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Alex Jafre",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 985,
        "expenditures": null
       }
      ]
@@ -413598,6 +420056,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 46446.93,
        "expenditures": null
+      },
+      {
+       "name": "Andrea \"Andi\" Story",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 37134.22,
+       "expenditures": null
       }
      ]
     },
@@ -414190,6 +420656,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
+       "name": "Mike Prax for State House",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 33076.99,
+       "expenditures": null
+      },
+      {
        "name": "Barbara Haney",
        "party": "R",
        "partyLabel": "Republican",
@@ -414557,10 +421031,174 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
  "AR": {
   "2018": {
    "house": {
+    "1": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Dalby, Carol",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22041.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jean, Lane",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Watson, John (Danny) Daniel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13900,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Vaught, DeAnn K",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 23581.94,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Fielding, David",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 26485,
+       "expenditures": null
+      },
+      {
+       "name": "Andrews, Wade William",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25758.67,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Shepherd, Matthew Joseph",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 60700.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Barker, Sonia Eubanks",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13196.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Wardlaw, Jeffrey R.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Burch, LeAnne Pittman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 23799,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Holcomb, Michael R",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12429.42,
+       "expenditures": null
+      }
+     ]
+    },
     "11": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "MCELROY, MARK D",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": true,
+       "contributions": 29925,
+       "expenditures": null
+      },
+      {
+       "name": "Glover, Don E.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
       {
        "name": "Lattimore, Ricky E. , SR.",
        "party": "R",
@@ -414576,11 +421214,103 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Richey, Chris",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 45425,
+       "expenditures": null
+      },
+      {
        "name": "Dobson, Jason Hunter",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 16768,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Hillman, David W",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 25150,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Lynch, Roger Dale",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26530,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Bragg, Ken",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41194.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Ferguson, Kenneth Bernard",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 13200,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Flowers, Vivian LaVeda",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 36510,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Womack, Richard w",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
        "expenditures": null
       }
      ]
@@ -414599,10 +421329,32 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "20": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Maddox, John David , II",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13560.52,
+       "expenditures": null
+      }
+     ]
+    },
     "21": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Richmond, Marcus Edward",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42178.5,
+       "expenditures": null
+      },
       {
        "name": "James, Stele",
        "party": "D",
@@ -414618,6 +421370,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Gates, Mickey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
        "name": "Rogers, Kevin Jon",
        "party": "D",
        "partyLabel": "Democratic",
@@ -414627,10 +421387,32 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "23": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Fite, Lanny E",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8100,
+       "expenditures": null
+      }
+     ]
+    },
     "24": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Cozart, Bruce Alan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41075,
+       "expenditures": null
+      },
       {
        "name": "Peret, Kallen Krystyne",
        "party": "D",
@@ -414641,10 +421423,32 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "25": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Warren, Les",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34585.97,
+       "expenditures": null
+      }
+     ]
+    },
     "26": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Rushing, Laurie J",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 60620,
+       "expenditures": null
+      },
       {
        "name": "Hughes, Alan B.",
        "party": "D",
@@ -414674,6 +421478,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Kelly, Jasen Warren",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 50260,
+       "expenditures": null
+      },
+      {
        "name": "Parsons, Dustin Michael",
        "party": "D",
        "partyLabel": "Democratic",
@@ -414683,10 +421495,32 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "29": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Love, Fredrick Fred , SR.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 11300,
+       "expenditures": null
+      }
+     ]
+    },
     "30": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Allen, Fred",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 16950,
+       "expenditures": null
+      },
       {
        "name": "Fenton, Mitchell Stuart",
        "party": "O",
@@ -414702,11 +421536,69 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Davis, Andy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 49680,
+       "expenditures": null
+      },
+      {
        "name": "Haun, Randy S",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 13705.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Sorvillo, James Joseph",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 46051.76,
+       "expenditures": null
+      },
+      {
+       "name": "Mallett, Jess",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 40175.78,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "McCullough, Tippi",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 102629.31,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Walker, John W.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
        "expenditures": null
       }
      ]
@@ -414725,10 +421617,60 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "36": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Blake, Charles J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 33360,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Scott, Jamie Aleshia",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 35774.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Mangiapane, Brindon Chase",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17258.04,
+       "expenditures": null
+      }
+     ]
+    },
     "39": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Lowery, Mark D.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42440,
+       "expenditures": null
+      },
       {
        "name": "Ball, Monica Denise",
        "party": "D",
@@ -414739,16 +421681,74 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "40": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "HOUSE, ROY DOUGLAS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11900,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Crossley, Jonathan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 50870.8,
+       "expenditures": null
+      },
+      {
+       "name": "Brown, Karilyn Boggan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 52615.26,
+       "expenditures": null
+      }
+     ]
+    },
     "42": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Perry, Mark W",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 25325,
+       "expenditures": null
+      },
       {
        "name": "Dyson, Linda Carolyn",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 35835,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Evans, Brian Stephen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 42750,
        "expenditures": null
       }
      ]
@@ -414776,7 +421776,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3000,
+       "contributions": 16450,
        "expenditures": null
       }
      ]
@@ -414800,6 +421800,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Gray, Michael John",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 83595,
+       "expenditures": null
+      },
+      {
        "name": "Christiansen, Craig Noel",
        "party": "R",
        "partyLabel": "Republican",
@@ -414814,6 +421822,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Hollowell, Steve",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29050,
+       "expenditures": null
+      },
+      {
        "name": "Smith, Howard C , II",
        "party": "D",
        "partyLabel": "Democratic",
@@ -414823,10 +421839,96 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "50": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Nicks, Milton NMN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 13860.61,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Ferguson, Deborah Thompson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 16077.55,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Tosh, Crandall Dwight",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17150,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Sullivan, Dan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 70299,
+       "expenditures": null
+      }
+     ]
+    },
+    "54": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Rye, Johnny Coleman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39154.48,
+       "expenditures": null
+      },
+      {
+       "name": "Jones, Austin Wade",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6475.5,
+       "expenditures": null
+      }
+     ]
+    },
     "55": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Hodges, Monte Dupree",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 32660,
+       "expenditures": null
+      },
       {
        "name": "Tobar, Gary DeWayne",
        "party": "R",
@@ -414837,10 +421939,152 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "56": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jett, Joe E",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 83560,
+       "expenditures": null
+      },
+      {
+       "name": "Carter, Charles Ryan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7825,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Gazaway, Jimmy D.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24329.97,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Smith, Curtis Brandt , PhD",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17782.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "59": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Ladyman, Jack",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11675,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Cavenaugh, Frances Marie",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15400,
+       "expenditures": null
+      }
+     ]
+    },
+    "61": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "baltz, scott",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 27775,
+       "expenditures": null
+      }
+     ]
+    },
+    "62": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Gray, Michelle A",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29400,
+       "expenditures": null
+      }
+     ]
+    },
+    "63": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Smith, Stu",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 38465,
+       "expenditures": null
+      }
+     ]
+    },
+    "64": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Payton, John Russell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10775,
+       "expenditures": null
+      }
+     ]
+    },
     "65": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Beck, Rick C",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40364.66,
+       "expenditures": null
+      },
       {
        "name": "Roetzel, Michael Jason",
        "party": "D",
@@ -414851,10 +422095,32 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "66": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Miller, Josh",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5100,
+       "expenditures": null
+      }
+     ]
+    },
     "67": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Meeks, Stephen A",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28674.59,
+       "expenditures": null
+      },
       {
        "name": "Richter, Sandra Lynn",
        "party": "O",
@@ -414884,6 +422150,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Pilkington, Aaron Michel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 51275,
+       "expenditures": null
+      },
+      {
        "name": "King, Eddie L.",
        "party": "D",
        "partyLabel": "Democratic",
@@ -414904,6 +422178,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 23825,
        "expenditures": null
+      },
+      {
+       "name": "Hawks, John Spencer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 58184.99,
+       "expenditures": null
       }
      ]
     },
@@ -414911,6 +422193,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Cloud, Joe Allen , MD",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 60300,
+       "expenditures": null
+      },
       {
        "name": "George, Nathan Robert",
        "party": "D",
@@ -414921,10 +422211,32 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "72": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Magie, Stephen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 37623.97,
+       "expenditures": null
+      }
+     ]
+    },
     "73": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Bentley, Mary Elizabeth",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42440,
+       "expenditures": null
+      },
       {
        "name": "Bonham, Dana",
        "party": "D",
@@ -414935,16 +422247,66 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "74": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Eubanks, Jon Scott",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 45329.59,
+       "expenditures": null
+      }
+     ]
+    },
     "76": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Crawford, Cindy",
+       "name": "Crawford, Cindy L",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 29600,
+       "contributions": 15617.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "77": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Boyd, Phillip \"Justin\"",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 72342,
+       "expenditures": null
+      },
+      {
+       "name": "Pruitt, William Luke",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22943.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "79": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Deffenbaugh, Gary",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 4250,
        "expenditures": null
       }
      ]
@@ -414971,6 +422333,42 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "81": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Coleman, Bruce Wayne",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24225,
+       "expenditures": null
+      },
+      {
+       "name": "McKinney, Donald Robert",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19610.94,
+       "expenditures": null
+      }
+     ]
+    },
+    "82": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Capp, Sarah E",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32753.86,
+       "expenditures": null
+      }
+     ]
+    },
     "83": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
@@ -414990,19 +422388,47 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Garner, Denise Firman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 157507.47,
+       "expenditures": null
+      },
+      {
        "name": "Collins, Charles S",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 172688.4,
        "expenditures": null
-      },
+      }
+     ]
+    },
+    "85": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
       {
-       "name": "Garner, Denise Firmin",
+       "name": "Whitaker, David",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 14158.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "86": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Clowney, Nicole LeFrancois",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 5400,
+       "contributions": 52228.82,
        "expenditures": null
       }
      ]
@@ -415029,6 +422455,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "90": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Della Rosa, Jana",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 46745,
+       "expenditures": null
+      }
+     ]
+    },
+    "91": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "DOUGLAS, DAN M",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 59280,
+       "expenditures": null
+      }
+     ]
+    },
     "92": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
@@ -415040,6 +422494,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 8574.13,
        "expenditures": null
+      },
+      {
+       "name": "Hendren McKenzie, Gayla Joy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 24553.44,
+       "expenditures": null
       }
      ]
     },
@@ -415047,6 +422509,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Dotson, Jim",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 74040.7,
+       "expenditures": null
+      },
       {
        "name": "Agnew, Gayatri Jane",
        "party": "D",
@@ -415062,11 +422532,41 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Petty, Rebecca Dean",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34065,
+       "expenditures": null
+      },
+      {
        "name": "Huffman-Gilreath, Jene E",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 26225.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "95": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Williams, Celeste Sarene",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 46326.03,
+       "expenditures": null
+      },
+      {
+       "name": "McCollum, Austin M",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 54732.99,
        "expenditures": null
       }
      ]
@@ -415093,6 +422593,42 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "97": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "BREAUX, HARLAN WAYNE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25050,
+       "expenditures": null
+      },
+      {
+       "name": "MORRIS, GARY LYNN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9675.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "98": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "McNair, Ron",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14600,
+       "expenditures": null
+      }
+     ]
+    },
     "100": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
@@ -415114,6 +422650,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "BLEDSOE, CECILE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 124054.67,
+       "expenditures": null
+      },
+      {
        "name": "Comstock, Jon",
        "party": "D",
        "partyLabel": "Democratic",
@@ -415127,6 +422671,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Leding, Greg",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 43597,
+       "expenditures": null
+      },
       {
        "name": "Clemence, Dawn Allison",
        "party": "R",
@@ -415142,6 +422694,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Ballinger, Bob",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 125239,
+       "expenditures": null
+      },
+      {
        "name": "Wallace, James Stanley",
        "party": "D",
        "partyLabel": "Democratic",
@@ -415151,10 +422711,74 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "6": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Stubblefield, Gary Don",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42796.29,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Pitsch, Mathew Wade",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 166075,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Rice, Terry W",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40450,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Teague, Larry R",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 132471.88,
+       "expenditures": null
+      }
+     ]
+    },
     "14": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Sample, Bill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
       {
        "name": "Colgrove, Michael Wallace , MD",
        "party": "D",
@@ -415200,15 +422824,207 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       }
      ]
+    },
+    "18": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Irvin, Melissa Thomas",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 68309.81,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Sturch, James Marvin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 122694.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Johnson, Lowell Blake",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26750,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "INGRAM, KEITH M.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 108250,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Chesterfield, Linda Pondexter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 29600,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Elliott, Joyce",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 18475,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Fults, Melissa Ann",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 31915.99,
+       "expenditures": null
+      },
+      {
+       "name": "Hammer, Kim David",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 82191.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Skinner, Maureen E",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 51212.83,
+       "expenditures": null
+      },
+      {
+       "name": "Rapert, Jason",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 157549.69,
+       "expenditures": null
+      }
+     ]
     }
    }
   },
   "2020": {
    "house": {
+    "1": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Dalby, Carol",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18750,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Jean, Lane",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Faulkner, Larry D , SR.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Vaught, DeAnn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 33250.83,
+       "expenditures": null
+      }
+     ]
+    },
     "5": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Fielding, David",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 57076.73,
+       "expenditures": null
+      },
       {
        "name": "McDowell, Chase Owen",
        "party": "R",
@@ -415219,10 +423035,162 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "6": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Shepherd, Matthew Joseph",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 86369.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "CALLOWAY, GEORGE, JR.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6844.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Wardlaw, Jeffrey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 72262.55,
+       "expenditures": null
+      },
+      {
+       "name": "Ogburn, Christopher",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13592.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Burch, LeAnne Pittman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 81157.9,
+       "expenditures": null
+      },
+      {
+       "name": "BEATY, HOWARD MONROE , JR.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 72750,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Holcomb, Mike",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "MCELROY, MARK D",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15750,
+       "expenditures": null
+      },
+      {
+       "name": "Glover, Don Edward",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Tollett, David",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9960,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Hillman, David",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 23671,
+       "expenditures": null
+      }
+     ]
+    },
     "14": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Bransford, Rick Barton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30960,
+       "expenditures": null
+      },
+      {
+       "name": "Lynch, Roger D",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 52040.74,
+       "expenditures": null
+      },
       {
        "name": "Jones, Christia (Chris)",
        "party": "O",
@@ -415233,10 +423201,110 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "15": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Bragg, Ken",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 38848.37,
+       "expenditures": null
+      },
+      {
+       "name": "Willems, Darby (Wayne)",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Ferguson, Kenneth Bernard",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 32400.56,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Flowers, Vivian L.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 10350,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Womack, Richard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8650,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Maddox, John David , II",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11050,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Richmond, Marcus Edward",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32400,
+       "expenditures": null
+      }
+     ]
+    },
     "22": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Bowers, Judy Ann",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 2260,
+       "expenditures": null
+      },
       {
        "name": "McGrew, Richard",
        "party": "R",
@@ -415244,13 +423312,183 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 29040.23,
        "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Fite, Lanny E",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13228.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Schimenti, Joyce",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 23810.01,
+       "expenditures": null
       },
       {
-       "name": "Bowers, Judy Ann",
-       "party": "O",
-       "partyLabel": "Other",
+       "name": "McClure, Rick Carl",
+       "party": "R",
+       "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 750.7,
+       "contributions": 52380,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Mayberry, Julie Weidner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16118.43,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Furman, Anthony",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 35800,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Allen, Fred",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 15769.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Brooks, Keith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 65380,
+       "expenditures": null
+      },
+      {
+       "name": "Rajendran, Mazhil Vannan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14359.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "sorvillo, james joseoh",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67933.93,
+       "expenditures": null
+      },
+      {
+       "name": "Hudson, Ashley Welch",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 165855.01,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "McCullough, Tippi",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 24926.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Springer, Joy C.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Collins, Andrew",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 49061.78,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Ennett, Denise B",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 43921.19,
        "expenditures": null
       }
      ]
@@ -415264,7 +423502,29 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 4718.74,
+       "contributions": 11942,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Wing, Carlton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 74475,
+       "expenditures": null
+      },
+      {
+       "name": "Stallings, Matthew Thomas",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 82563.66,
        "expenditures": null
       }
      ]
@@ -415274,11 +423534,331 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2020",
      "candidates": [
       {
+       "name": "Applegate, Kayla M , Esq.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20697.09,
+       "expenditures": null
+      },
+      {
        "name": "Lowery, Mark Dale",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 43800,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Ray, David Allen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 93316,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "COTTON, JANNIE MARIE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 37454.02,
+       "expenditures": null
+      },
+      {
+       "name": "Brown, Karilyn Boggan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 76713.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Perry, Mark W",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 18550,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Evans, Brian Stephen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24150,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Cooper, Cameron David",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24810,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Wooten, Jim",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16696.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Eaves, Les",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 47856.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Christiansen, Craig N",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9300,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "murdock, reginald",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Hollowell, Steve",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 46116.13,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Nicks, Milton, JR.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 14450,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Ferguson, Deborah Thompson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 16200,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Tosh, Crandall Dwight",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15250,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "ONLY, SHAWN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13250.36,
+       "expenditures": null
+      }
+     ]
+    },
+    "54": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Rye, Johnny Coleman , JR.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12800,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Tobar, Gary DeWayne",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 24555,
+       "expenditures": null
+      },
+      {
+       "name": "Hodges, Monte",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 45194.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Jett, Joe E.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40788.59,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Gazaway, Jimmy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29116.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Smith, C Brandt , JR.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 54100,
+       "expenditures": null
+      },
+      {
+       "name": "Burton, Jim",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17965.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "59": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "PRUNTY, REGINALD",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15637.04,
+       "expenditures": null
+      },
+      {
+       "name": "Ladyman, Jack R",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 53177.74,
        "expenditures": null
       }
      ]
@@ -415297,16 +423877,30 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "63": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Smith, Stu",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21661.24,
+       "expenditures": null
+      }
+     ]
+    },
     "64": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "payton, john russell",
+       "name": "Payton, John Russell",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 5600,
+       "contributions": 5750,
        "expenditures": null
       }
      ]
@@ -415315,6 +423909,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Beck, Rick",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 63422.04,
+       "expenditures": null
+      },
       {
        "name": "NORMAN, DAVID",
        "party": "D",
@@ -415325,16 +423927,130 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "66": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Miller, Josh",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9150,
+       "expenditures": null
+      }
+     ]
+    },
+    "67": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Wilson, Steve",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11382.01,
+       "expenditures": null
+      },
+      {
+       "name": "Meeks, Stephen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28909.91,
+       "expenditures": null
+      }
+     ]
+    },
     "68": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Berry, Stan J",
+       "name": "Hassell, Lisa",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12705.25,
+       "expenditures": null
+      },
+      {
+       "name": "Berry, Stan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 40947.09,
+       "contributions": 37272.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "69": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Pilkington, Aaron",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 250,
+       "expenditures": null
+      }
+     ]
+    },
+    "70": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Hawks, Spencer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26515,
+       "expenditures": null
+      }
+     ]
+    },
+    "71": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Cloud, Joe Allen , MD",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32150,
+       "expenditures": null
+      }
+     ]
+    },
+    "72": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Phillips, James Brian",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9540,
+       "expenditures": null
+      }
+     ]
+    },
+    "73": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Bentley, Mary",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28350,
        "expenditures": null
       }
      ]
@@ -415348,7 +424064,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 84432.9,
+       "contributions": 125406.69,
        "expenditures": null
       },
       {
@@ -415375,6 +424091,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "77": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Edwards, Stephen Christopher",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 335.23,
+       "expenditures": null
+      },
+      {
+       "name": "Boyd, Phillip \"Justin\"",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 53287.49,
+       "expenditures": null
+      }
+     ]
+    },
     "79": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2020",
@@ -415389,6 +424127,120 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "80": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Fite, Charlene",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 80421.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "81": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Coleman, Bruce",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11000,
+       "expenditures": null
+      }
+     ]
+    },
+    "82": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Berry, Mark H",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 80825,
+       "expenditures": null
+      }
+     ]
+    },
+    "83": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Slape, Keith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16350,
+       "expenditures": null
+      }
+     ]
+    },
+    "84": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Garner, Denise Firmin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 27450,
+       "expenditures": null
+      }
+     ]
+    },
+    "85": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Whitaker, David Jeffrey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 50296.22,
+       "expenditures": null
+      },
+      {
+       "name": "Hester, Brian Russell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 63909,
+       "expenditures": null
+      }
+     ]
+    },
+    "86": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "La Tour, John Stevens",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23969.36,
+       "expenditures": null
+      },
+      {
+       "name": "Clowney, Nicole LeFrancois",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 88697.53,
+       "expenditures": null
+      }
+     ]
+    },
     "87": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2020",
@@ -415398,7 +424250,123 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 100571.5,
+       "contributions": 52468.85,
+       "expenditures": null
+      },
+      {
+       "name": "Bennett-Spears, Michael Samuel",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17090.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "88": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Woods, Hawley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 24696.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "89": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Duggar, Jed",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 51247.97,
+       "expenditures": null
+      }
+     ]
+    },
+    "90": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Underwood, Kendon Reese",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 117874.31,
+       "expenditures": null
+      },
+      {
+       "name": "Krout, Kelly Ross",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 68603.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "91": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Haak, Delia",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 92449.65,
+       "expenditures": null
+      },
+      {
+       "name": "Jones, Nick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7293.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "92": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Hendren McKenzie, Gayla Joy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19716.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "93": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Dotson, Jim",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 62009.64,
+       "expenditures": null
+      },
+      {
+       "name": "Bonilla, Daisy Varinia",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 33083.71,
        "expenditures": null
       }
      ]
@@ -415408,11 +424376,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2020",
      "candidates": [
       {
+       "name": "Huffman-Gilreath, Jene",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 54763.06,
+       "expenditures": null
+      },
+      {
        "name": "Carr, John P",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 47585.58,
+       "contributions": 43481,
+       "expenditures": null
+      }
+     ]
+    },
+    "95": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "McCollum, Austin M",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 52502.55,
        "expenditures": null
       }
      ]
@@ -415426,13 +424416,85 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 14123.5,
+       "contributions": 48770.71,
+       "expenditures": null
+      },
+      {
+       "name": "Comstock, Jon B.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 32158.19,
        "expenditures": null
       },
       {
        "name": "Bryant, Jill",
        "party": "R",
        "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "97": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Breaux, Harlan W",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 62548.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "98": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "McNair, Ron",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21900,
+       "expenditures": null
+      }
+     ]
+    },
+    "99": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Fortner, Jack",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24841.28,
+       "expenditures": null
+      }
+     ]
+    },
+    "100": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Speaks, Nelda",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 47570.81,
+       "expenditures": null
+      },
+      {
+       "name": "Vornheder, Kevin Eugene",
+       "party": "O",
+       "partyLabel": "Other",
        "incumbent": false,
        "contributions": 0,
        "expenditures": null
@@ -415446,11 +424508,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2020",
      "candidates": [
       {
+       "name": "Francis, Ronetta J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 116288.22,
+       "expenditures": null
+      },
+      {
        "name": "Hester, Bart",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 80175.01,
+       "contributions": 165043.53,
        "expenditures": null
       }
      ]
@@ -415460,11 +424530,47 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2020",
      "candidates": [
       {
+       "name": "CRAIG, WALLACE RYAN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2275,
+       "expenditures": null
+      },
+      {
        "name": "Hendren, James Paul",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 21333.85,
+       "contributions": 700,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Eads, Lance",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 54850,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Hickey, Milton Jimmy , JR.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 70979.12,
        "expenditures": null
       }
      ]
@@ -415474,19 +424580,119 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Beckham, Charles Edward , III",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 96695,
-       "expenditures": null
-      },
-      {
        "name": "Maloch, Bruce",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 200871.2,
+       "expenditures": null
+      },
+      {
+       "name": "Beckham, Charles Edward , III",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27750,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Clark, Alan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 203948.11,
+       "expenditures": null
+      },
+      {
+       "name": "Overly, Brandon Reid",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9025,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Davis, Breanne Deelyte",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 56450,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "SULLIVAN, DAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 198154.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Wallace, David Ray",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 45830,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "FLOWERS, STEPHANIE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 43190,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Cheatham, Eddie",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 117209,
+       "expenditures": null
+      },
+      {
+       "name": "Gilmore, Lewis Benjamin \"Ben\"",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 231079.98,
        "expenditures": null
       }
      ]
@@ -415496,11 +424702,69 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2020",
      "candidates": [
       {
+       "name": "Burrell, Keidra",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 98559.33,
+       "expenditures": null
+      },
+      {
        "name": "Garner, Trent Chancey",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 4146.95,
+       "contributions": 3296.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Dismang, Jonathan Paul",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44300,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Tucker, Everett Clarke , IV",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 182095.34,
+       "expenditures": null
+      },
+      {
+       "name": "Thomas, Robert Grant , SR.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27075,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Dixon, Alisa Blaize",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30732.58,
        "expenditures": null
       }
      ]
@@ -415550,11 +424814,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Painter, Stetson Cody",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 58005,
+       "expenditures": null
+      },
+      {
        "name": "Parsons, Steven Gene",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
        "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Fortner, Jack",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 58954.32,
        "expenditures": null
       }
      ]
@@ -415578,6 +424864,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "BREAUX, HARLAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 57630.11,
+       "expenditures": null
+      },
+      {
        "name": "Tucker, Markeeta",
        "party": "D",
        "partyLabel": "Democratic",
@@ -415597,6 +424891,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 22850,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "McCollum, Austin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 47652.22,
        "expenditures": null
       }
      ]
@@ -415701,6 +425009,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "16": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Underwood, Kendon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42183.3,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Haak, Delia",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32030.35,
+       "expenditures": null
+      }
+     ]
+    },
     "18": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
@@ -415770,6 +425106,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Whitaker, David J",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 46602.76,
+       "expenditures": null
+      },
+      {
        "name": "Hester, Brian Russell",
        "party": "R",
        "partyLabel": "Republican",
@@ -415789,6 +425133,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 58225,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "fite, charlene",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 61049.91,
        "expenditures": null
       }
      ]
@@ -415815,6 +425173,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "26": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Berry, Mark Hamilton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 38482.55,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Walker, Steven",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 34086.13,
+       "expenditures": null
+      }
+     ]
+    },
     "28": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
@@ -415834,11 +425220,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "McClure, Rick Carl",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37250,
+       "expenditures": null
+      },
+      {
        "name": "Vaden, Ronald J",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 4644,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Cavenaugh, Frances",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
        "expenditures": null
       }
      ]
@@ -415853,6 +425261,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 30357.48,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Ladyman, Jack R",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 46906.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Milligan, Jon Ridge",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10575,
        "expenditures": null
       }
      ]
@@ -415889,6 +425325,48 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 44562.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Rye, Johnny Coleman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14700,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Hollowell, Steve",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41933.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Tosh, Crandall Dwight",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 64425.63,
        "expenditures": null
       }
      ]
@@ -415957,6 +425435,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "43": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Beck, Richard C",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 49181.71,
+       "expenditures": null
+      }
+     ]
+    },
     "45": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
@@ -415967,6 +425459,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 7250,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Johnson, Lee",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 121465,
        "expenditures": null
       }
      ]
@@ -415989,6 +425495,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Richardson, Jay D",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 50107.51,
+       "expenditures": null
+      },
       {
        "name": "Avery, Maximus",
        "party": "R",
@@ -416032,11 +425546,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Richmond, Marcus Edward",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 82998.05,
+       "expenditures": null
+      },
+      {
        "name": "Catlett, John Wayne",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
        "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Duffield, Matt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 105170.61,
        "expenditures": null
       }
      ]
@@ -416077,10 +425613,32 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "56": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Minner, William Trent",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 146401,
+       "expenditures": null
+      }
+     ]
+    },
     "57": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Cooper, Cameron D",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22400,
+       "expenditures": null
+      },
       {
        "name": "Huckaba, Joshua Michael",
        "party": "O",
@@ -416135,10 +425693,32 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "60": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Lynch, Roger",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17200,
+       "expenditures": null
+      }
+     ]
+    },
     "61": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Moore, Jeremiah",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 96071.55,
+       "expenditures": null
+      },
       {
        "name": "Martin, Bruce",
        "party": "D",
@@ -416185,6 +425765,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "64": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Ferguson, Kenneth Bernard",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 20950,
+       "expenditures": null
+      }
+     ]
+    },
     "65": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
@@ -416207,10 +425801,32 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "66": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Perry, Mark W",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 24658.39,
+       "expenditures": null
+      }
+     ]
+    },
     "67": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "COTTON, JANNIE M",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 52955.16,
+       "expenditures": null
+      },
       {
        "name": "Brown, Karilyn Boggan",
        "party": "R",
@@ -416226,11 +425842,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Evans, Brian Stephen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67625,
+       "expenditures": null
+      },
+      {
        "name": "Betzold, Robert",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
        "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "69": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Ray, David Allen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 63766,
        "expenditures": null
       }
      ]
@@ -416254,6 +425892,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Achor, Brandon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 79937,
+       "expenditures": null
+      },
+      {
        "name": "Pack, John J",
        "party": "D",
        "partyLabel": "Democratic",
@@ -416263,24 +425909,38 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "73": {
+    "72": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Wickliffe, Jon",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 126575,
+       "name": "Scott, Jamie",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 47681.22,
        "expenditures": null
-      },
+      }
+     ]
+    },
+    "73": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
       {
        "name": "Collins, Andrew",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 229916.63,
+       "expenditures": null
+      },
+      {
+       "name": "Wickliffe, Jon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 126575,
        "expenditures": null
       }
      ]
@@ -416289,6 +425949,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "McCullough, Tippi",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 50358.17,
+       "expenditures": null
+      },
       {
        "name": "Winkelmeyer, Ashton Clark",
        "party": "O",
@@ -416303,6 +425971,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Hudson, Ashley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 144968.64,
+       "expenditures": null
+      },
       {
        "name": "Turchi, Heather Beech",
        "party": "R",
@@ -416335,6 +426011,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "77": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Allen, Fred",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 39450,
+       "expenditures": null
+      }
+     ]
+    },
+    "78": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Brooks, Keith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21950,
+       "expenditures": null
+      }
+     ]
+    },
     "79": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
@@ -416349,6 +426053,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "80": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Ennett, Denise Jones",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 18223,
+       "expenditures": null
+      }
+     ]
+    },
     "81": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
@@ -416359,6 +426077,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 17365.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "82": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Furman, Tony",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15725,
+       "expenditures": null
+      }
+     ]
+    },
+    "83": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Fite, Lanny",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22490,
        "expenditures": null
       }
      ]
@@ -416385,6 +426131,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "85": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "McGrew, Richard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13100,
+       "expenditures": null
+      }
+     ]
+    },
     "86": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
@@ -416404,11 +426164,47 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Vaught, DeAnn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 81425.89,
+       "expenditures": null
+      },
+      {
        "name": "Wolcott, Christopher",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 15584.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "90": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Womack, William Richard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41222,
+       "expenditures": null
+      }
+     ]
+    },
+    "91": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Cozart, Bruce Alan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 47434,
        "expenditures": null
       }
      ]
@@ -416432,6 +426228,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Holcomb, Mike",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
        "name": "Cagle, Aaron Asher",
        "party": "O",
        "partyLabel": "Other",
@@ -416446,11 +426250,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Wardlaw, Jeff",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 143880.84,
+       "expenditures": null
+      },
+      {
        "name": "Jackson, Curley L.",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "95": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "BEATY, HOWARD MONROE , JR.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28100,
        "expenditures": null
       }
      ]
@@ -416469,10 +426295,54 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "97": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Shepherd, Matthew Joseph",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 124727.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "98": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Fielding, David C",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 26525,
+       "expenditures": null
+      },
+      {
+       "name": "Andrews, Wade",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 56955.68,
+       "expenditures": null
+      }
+     ]
+    },
     "99": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Jean, Lane",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
       {
        "name": "Green, Paul Edward",
        "party": "O",
@@ -416482,9 +426352,37 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       }
      ]
+    },
+    "100": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Dalby, Carol",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 51200,
+       "expenditures": null
+      }
+     ]
     }
    },
    "senate": {
+    "1": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Gilmore, Lewis Benjamin \"Ben\"",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 59668.01,
+       "expenditures": null
+      }
+     ]
+    },
     "2": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
@@ -416521,6 +426419,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "4": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Hickey, Milton Jimmy , JR.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 111940,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Rice, Terry",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67100,
+       "expenditures": null
+      }
+     ]
+    },
     "6": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
@@ -416531,6 +426457,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 97447,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Clark, Alan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
        "expenditures": null
       }
      ]
@@ -416579,10 +426519,46 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "10": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Caldwell, Ronald",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Chesterfield, Linda Pondexter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 47667,
+       "expenditures": null
+      }
+     ]
+    },
     "13": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "English, jane",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 122098,
+       "expenditures": null
+      },
       {
        "name": "Sweatman, Allison Grigsby",
        "party": "D",
@@ -416685,10 +426661,118 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "20": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Summers, Chenoa",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11070.64,
+       "expenditures": null
+      },
+      {
+       "name": "Sullivan, Dan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 92698.64,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Johnson, Lowell Blake",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 138270,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Payton, John Russell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 90759.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Flippo, Scott",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 113904.04,
+       "expenditures": null
+      },
+      {
+       "name": "Huber, Kyle Derek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17402.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Irvin, Melissa Thomas",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 118161.36,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Davis, Breanne",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 215185.85,
+       "expenditures": null
+      }
+     ]
+    },
     "27": {
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Boyd, Phillip Justin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 116592.52,
+       "expenditures": null
+      },
       {
        "name": "Ward, Rebecca Vaughan",
        "party": "D",
@@ -416703,6 +426787,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Wallace, James S.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8901.47,
+       "expenditures": null
+      },
       {
        "name": "King, Bryan B",
        "party": "R",
@@ -416750,7 +426842,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 51147.34,
+       "contributions": 76835.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Bryant, Joshua Paul",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 96267.88,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Arkansas Secretary of State legacy e-filed reports (cumulative contributions; paper filers missing)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Dotson, Jim",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 120019.84,
        "expenditures": null
       }
      ]
@@ -418816,6 +428936,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 124251.28,
        "expenditures": 50466.24
+      }
+     ]
+    },
+    "26": {
+     "source": "Arkansas Secretary of State ethics disclosures (itemized + non-itemized contributions)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Stubblefield, Mr. Gary D.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18836.32,
+       "expenditures": 28604.9
       }
      ]
     },
@@ -422199,6 +432333,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "69": {
+     "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Arthur O'Neill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3665,
+       "expenditures": null
+      }
+     ]
+    },
+    "71": {
+     "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Anthony D'Amelio",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 2201.88,
+       "expenditures": null
+      }
+     ]
+    },
     "72": {
      "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
      "dataThrough": "12/31/2016",
@@ -422589,6 +432751,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
      "dataThrough": "12/31/2016",
      "candidates": [
+      {
+       "name": "Michael D'Agostino",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 10710.64,
+       "expenditures": null
+      },
       {
        "name": "James Lynch",
        "party": "R",
@@ -424354,6 +434524,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 15684,
        "expenditures": null
+      },
+      {
+       "name": "L. Scott Frantz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37422.88,
+       "expenditures": null
       }
      ]
     }
@@ -424379,6 +434557,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Raghib Allie-Brennan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5503,
+       "expenditures": null
+      },
       {
        "name": "William Duff",
        "party": "R",
@@ -425374,6 +435560,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 5260,
        "expenditures": null
+      },
+      {
+       "name": "Patricia Wilson Pheanious",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5668,
+       "expenditures": null
       }
      ]
     },
@@ -425658,6 +435852,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 6495,
        "expenditures": null
+      },
+      {
+       "name": "Thomas O'Brien",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6090,
+       "expenditures": null
       }
      ]
     },
@@ -425688,6 +435890,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Arthur O'Neill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7650.02,
+       "expenditures": null
+      },
+      {
        "name": "Greg Cava",
        "party": "D",
        "partyLabel": "Democratic",
@@ -425701,6 +435911,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "Anthony D'Amelio",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6855,
+       "expenditures": null
+      },
       {
        "name": "Stephen Ferrucci",
        "party": "D",
@@ -426020,6 +436238,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 6210,
        "expenditures": null
+      },
+      {
+       "name": "Theresann Ranciato-Viele",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5945,
+       "expenditures": null
       }
      ]
     },
@@ -426085,6 +436311,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 5890,
+       "expenditures": null
+      }
+     ]
+    },
+    "91": {
+     "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Michael D'agostino",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
        "expenditures": null
       }
      ]
@@ -426769,6 +437009,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 7500,
+       "expenditures": null
+      },
+      {
+       "name": "Thomas O'Dea",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17715,
        "expenditures": null
       }
      ]
@@ -427716,6 +437964,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Marc D'Amelio",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17300,
+       "expenditures": null
+      },
+      {
        "name": "Bob Duff",
        "party": "D",
        "partyLabel": "Democratic",
@@ -427955,6 +438211,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 32437,
+       "expenditures": null
+      },
+      {
+       "name": "L. Scott Frantz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 82720,
        "expenditures": null
       }
      ]
@@ -428992,6 +439256,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 6315,
        "expenditures": null
+      },
+      {
+       "name": "Patricia Wilson Pheanious",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 6425,
+       "expenditures": null
       }
      ]
     },
@@ -429357,6 +439629,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 5865.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "71": {
+     "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Anthony D'Amelio",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6195,
        "expenditures": null
       }
      ]
@@ -429759,6 +440045,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Michael D'Agostino",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1231,
+       "expenditures": null
+      },
       {
        "name": "Weruche George",
        "party": "O",
@@ -433945,6 +444239,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Connecticut SEEC eCRIS (private contributions; public grants excluded)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Thomas O'Dea",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 31635,
+       "expenditures": null
+      },
       {
        "name": "Aurelio Alvarez",
        "party": "D",
@@ -443070,6 +453372,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "Friends for Ruth Briggs King",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 36989.73,
+       "expenditures": null
+      },
+      {
        "name": "Rappa for Representative",
        "party": "D",
        "partyLabel": "Democratic",
@@ -443365,6 +453675,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "3": {
+     "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Dorsey Walker for DE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 23815,
+       "expenditures": null
+      }
+     ]
+    },
     "4": {
      "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
      "dataThrough": "12/31/2018",
@@ -443607,6 +453931,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 600,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Minor-Brown for 17th District",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13931.99,
        "expenditures": null
       }
      ]
@@ -443997,6 +454335,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "37": {
+     "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends for Ruth Briggs King",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24070.47,
+       "expenditures": null
+      }
+     ]
+    },
     "38": {
      "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
      "dataThrough": "12/31/2018",
@@ -444299,6 +454651,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "3": {
+     "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Dorsey Walker for DE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 8975,
+       "expenditures": null
+      }
+     ]
+    },
     "4": {
      "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
      "dataThrough": "12/31/2020",
@@ -444529,6 +454895,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "17": {
+     "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Minor-Brown for 17th District",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 20690,
+       "expenditures": null
+      }
+     ]
+    },
     "18": {
      "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
      "dataThrough": "12/31/2020",
@@ -444669,6 +455049,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Committee to Elect Madinah Wilson-Anton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 91906.78,
+       "expenditures": null
+      },
       {
        "name": "Tim Conrad for Delaware",
        "party": "R",
@@ -444887,6 +455275,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 36403.36,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Friends for Ruth Briggs King",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19904.82,
        "expenditures": null
       }
      ]
@@ -445174,6 +455576,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 61164.98,
        "expenditures": null
+      },
+      {
+       "name": "Friends of Mark Prescott Gardner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5591.54,
+       "expenditures": null
       }
      ]
     },
@@ -445187,6 +455597,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 65300,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Dorsey Walker for DE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 13924.5,
        "expenditures": null
       }
      ]
@@ -445461,6 +455885,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "17": {
+     "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Minor-Brown for 17th District",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 24790.19,
+       "expenditures": null
+      }
+     ]
+    },
     "18": {
      "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
      "dataThrough": "12/31/2022",
@@ -445471,6 +455909,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 37484.01,
+       "expenditures": null
+      },
+      {
+       "name": "People to Elect Gloria Hope Payne to the House",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2287.42,
        "expenditures": null
       }
      ]
@@ -445493,6 +455939,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Friends For Stell Parker Selby",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 48919.49,
+       "expenditures": null
+      },
       {
        "name": "Friends of Dallas Wingate",
        "party": "R",
@@ -445609,6 +456063,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Committee to Elect Madinah Wilson-Anton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 82764.94,
+       "expenditures": null
+      },
       {
        "name": "Tim Conrad for Delaware",
        "party": "R",
@@ -445799,6 +456261,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "37": {
+     "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends for Ruth Briggs King",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16700,
+       "expenditures": null
+      }
+     ]
+    },
     "38": {
      "source": "Delaware Department of Elections CFRS (contributions, two calendar years)",
      "dataThrough": "12/31/2022",
@@ -445942,6 +456418,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Friends of Kyle Evans Gay",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 129615.66,
+       "expenditures": null
+      },
+      {
        "name": "Citizens for Daniel Schmick",
        "party": "R",
        "partyLabel": "Republican",
@@ -445983,6 +456467,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 154611.5,
+       "expenditures": null
+      },
+      {
+       "name": "M Sherm Porter for Delaware",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15160.6,
        "expenditures": null
       }
      ]
@@ -446876,11 +457368,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Rony Baltazar-Lopez for Delaware",
+       "name": "Margie Lopez Waite for State Representative",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 31211,
+       "contributions": 42020.47,
        "expenditures": null
       }
      ]
@@ -454416,7 +464908,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2016": {
    "house": {
     "1": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454430,7 +464922,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "2": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454444,7 +464936,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "3": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454466,7 +464958,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "4": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454480,7 +464972,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "5": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454502,7 +464994,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "6": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454516,7 +465008,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "7": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454530,7 +465022,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "8": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454544,7 +465036,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "9": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454558,7 +465050,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "10": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454572,7 +465064,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "12": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454586,7 +465078,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "13": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454600,7 +465092,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "14": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454614,7 +465106,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "15": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454628,7 +465120,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "16": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454650,7 +465142,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "17": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454672,7 +465164,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "18": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454686,7 +465178,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "19": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454700,7 +465192,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "20": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454722,7 +465214,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "21": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454744,7 +465236,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "22": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454758,7 +465250,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "23": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454780,7 +465272,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "24": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454802,7 +465294,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "25": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454824,7 +465316,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "26": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454838,7 +465330,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "27": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454852,7 +465344,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "28": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454866,7 +465358,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "29": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454888,7 +465380,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "30": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454902,7 +465394,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "31": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454916,7 +465408,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "32": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454930,7 +465422,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "33": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454944,7 +465436,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "34": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454958,7 +465450,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "36": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454972,7 +465464,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "37": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -454986,7 +465478,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "38": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455008,7 +465500,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "39": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455030,7 +465522,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "40": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455052,7 +465544,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "41": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455074,7 +465566,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "42": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455096,7 +465588,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "43": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455110,7 +465602,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "44": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455124,7 +465616,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "45": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455146,7 +465638,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "46": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455160,7 +465652,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "47": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455182,7 +465674,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "48": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455204,7 +465696,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "49": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455226,7 +465718,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "50": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455248,7 +465740,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "51": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455262,7 +465754,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "52": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455276,7 +465768,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "53": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455298,7 +465790,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "54": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455320,7 +465812,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "56": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455342,7 +465834,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "57": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455356,7 +465848,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "58": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455370,7 +465862,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "59": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455384,7 +465876,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "60": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455406,7 +465898,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "61": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455428,7 +465920,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "62": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455442,7 +465934,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "63": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455456,7 +465948,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "64": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455470,7 +465962,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "65": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455484,7 +465976,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "66": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455506,7 +465998,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "68": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455520,7 +466012,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "69": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455542,7 +466034,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "70": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455556,7 +466048,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "71": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455578,7 +466070,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "72": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455592,7 +466084,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "73": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455606,7 +466098,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "74": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455620,7 +466112,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "75": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455634,7 +466126,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "76": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455648,7 +466140,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "77": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455662,7 +466154,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "78": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455676,7 +466168,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "79": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455690,7 +466182,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "80": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455712,7 +466204,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "81": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455734,7 +466226,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "82": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455756,9 +466248,17 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "83": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
+      {
+       "name": "Lewis Ackerman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1120,
+       "expenditures": null
+      },
       {
        "name": "Henry Helgerson",
        "party": "D",
@@ -455770,7 +466270,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "84": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455784,7 +466284,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "85": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455806,7 +466306,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "86": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455828,7 +466328,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "87": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455858,7 +466358,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "88": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455880,7 +466380,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "90": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455902,7 +466402,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "91": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455916,7 +466416,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "92": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455930,7 +466430,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "93": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455952,7 +466452,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "94": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455966,7 +466466,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "95": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -455988,7 +466488,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "96": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456002,7 +466502,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "97": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456016,7 +466516,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "98": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456038,7 +466538,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "99": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456052,7 +466552,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "100": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456074,7 +466574,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "101": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456096,7 +466596,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "102": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456118,7 +466618,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "103": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456132,7 +466632,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "104": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456154,7 +466654,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "105": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456176,7 +466676,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "106": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456198,7 +466698,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "107": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456212,7 +466712,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "108": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456226,7 +466726,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "109": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456240,7 +466740,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "111": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456262,7 +466762,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "112": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456276,7 +466776,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "113": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456290,7 +466790,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "114": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456304,7 +466804,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "115": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456318,7 +466818,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "116": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456332,7 +466832,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "117": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456346,7 +466846,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "118": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456360,7 +466860,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "119": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456374,7 +466874,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "120": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456388,7 +466888,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "121": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456401,8 +466901,22 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "122": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "J. Russell Jennings",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 76363.61,
+       "expenditures": null
+      }
+     ]
+    },
     "125": {
-     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind)",
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
@@ -456412,6 +466926,3118 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 21051.52,
        "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "HENRY JERRY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 70274.89,
+       "expenditures": 66553.55
+      },
+      {
+       "name": "PYLE DENNIS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 92552.17,
+       "expenditures": 164419.6
+      }
+     ]
+    },
+    "2": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "marci francisco",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 55654.88,
+       "expenditures": 50121.38
+      },
+      {
+       "name": "Meredith A Richey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26585.55,
+       "expenditures": 31458.4
+      }
+     ]
+    },
+    "3": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tom Holland",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 245810.7,
+       "expenditures": 236539.94
+      }
+     ]
+    },
+    "4": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "David Haley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 42121.95,
+       "expenditures": 28583.47
+      }
+     ]
+    },
+    "5": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FITZGERALD STEVE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 71225.48,
+       "expenditures": 73372.11
+      },
+      {
+       "name": "HUTTON WILLIAM",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 110967.82,
+       "expenditures": 96078.92
+      }
+     ]
+    },
+    "6": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jason Conley",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": 0
+      },
+      {
+       "name": "pat pettey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 46902.77,
+       "expenditures": 19804.37
+      }
+     ]
+    },
+    "7": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Megan England",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 36996.49,
+       "expenditures": 35723.62
+      },
+      {
+       "name": "Barbara Bollier",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 108041.13,
+       "expenditures": 98868.18
+      }
+     ]
+    },
+    "8": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Don M McGuire",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19435,
+       "expenditures": 19553.08
+      },
+      {
+       "name": "DENNING JIM",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 139648.27,
+       "expenditures": 149952.56
+      }
+     ]
+    },
+    "9": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "LYNN JULIA",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39327,
+       "expenditures": 76816.17
+      },
+      {
+       "name": "MORROW CHRIS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 32210,
+       "expenditures": 25121.52
+      }
+     ]
+    },
+    "10": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "HIATT VICKI",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 62980.35,
+       "expenditures": 60529.2
+      }
+     ]
+    },
+    "11": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FANNEN SKIP",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18107,
+       "expenditures": 9635.94
+      },
+      {
+       "name": "SKUBAL JOHN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 101421.61,
+       "expenditures": 88594.17
+      }
+     ]
+    },
+    "12": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Christopher B Johnston",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2170,
+       "expenditures": 2170
+      },
+      {
+       "name": "TYSON CARYN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 75076.29,
+       "expenditures": 67889.62
+      }
+     ]
+    },
+    "13": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "GRANT LYNN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 107690.62,
+       "expenditures": 98039.52
+      },
+      {
+       "name": "LATURNER JACOB",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 144086.13,
+       "expenditures": 173264.49
+      }
+     ]
+    },
+    "14": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bruce J Givens",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 57100.9,
+       "expenditures": 46968.92
+      },
+      {
+       "name": "Mark R Pringle",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 536.31,
+       "expenditures": 1077.6
+      }
+     ]
+    },
+    "15": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Charles C Schmidt",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 70494.3,
+       "expenditures": 68058
+      },
+      {
+       "name": "GODDARD DANIEL",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27786.71,
+       "expenditures": 17187.41
+      }
+     ]
+    },
+    "16": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "R. GABRIEL COSTILLA",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13259.93,
+       "expenditures": 12335.11
+      },
+      {
+       "name": "MASTERSON TY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 107970.31,
+       "expenditures": 105706.24
+      }
+     ]
+    },
+    "17": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Susan G Fowler",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 24740.51,
+       "expenditures": 28615.58
+      },
+      {
+       "name": "LONGBINE JEFF",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 170960.09,
+       "expenditures": 52322.11
+      }
+     ]
+    },
+    "18": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "David D Jackson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 32682.79,
+       "expenditures": 32244.21
+      },
+      {
+       "name": "KELLY LAURA",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 218817.6,
+       "expenditures": 222949.63
+      }
+     ]
+    },
+    "19": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Zachary R Haney",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9485.35,
+       "expenditures": 6724.58
+      },
+      {
+       "name": "HENSLEY ANTHONY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 121456.11,
+       "expenditures": 131383.1
+      }
+     ]
+    },
+    "20": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "AYARS CANDACE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16321.01,
+       "expenditures": 10091.5
+      },
+      {
+       "name": "SCHMIDT VICKI",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 235783.2,
+       "expenditures": 207186.79
+      }
+     ]
+    },
+    "21": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dinah H Sykes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 93252.51,
+       "expenditures": 88618.48
+      },
+      {
+       "name": "Michael Kerner",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1440.91,
+       "expenditures": 714.73
+      },
+      {
+       "name": "HELEY LOGAN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 95048.95,
+       "expenditures": 81929.21
+      }
+     ]
+    },
+    "22": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "HAWK TOM",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Spencer W Kerfoot",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14486.53,
+       "expenditures": 14486.53
+      },
+      {
+       "name": "OLSON ROB",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 135654.76,
+       "expenditures": 141129.27
+      }
+     ]
+    },
+    "24": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Randall R Hardy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 41886.56,
+       "expenditures": 34419.46
+      },
+      {
+       "name": "MERRIMAN DON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16765,
+       "expenditures": 6202.95
+      }
+     ]
+    },
+    "25": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "jim price",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17323.96,
+       "expenditures": 3500
+      },
+      {
+       "name": "ROGERS LYNN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 134160.72,
+       "expenditures": 27964.82
+      }
+     ]
+    },
+    "26": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Daniel J Kerschen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 64968.29,
+       "expenditures": 36910.5
+      },
+      {
+       "name": "POTEETE BENJAMIN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5201.7,
+       "expenditures": 4163.23
+      }
+     ]
+    },
+    "27": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tony Hunter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7290.9,
+       "expenditures": 4821.77
+      },
+      {
+       "name": "SUELLENTROP GENE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 85806.77,
+       "expenditures": 57965.34
+      }
+     ]
+    },
+    "28": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "HUMPHREY KEITH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 147759.95,
+       "expenditures": 145625
+      },
+      {
+       "name": "PETERSEN MIKE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 89601.64,
+       "expenditures": 300515.51
+      }
+     ]
+    },
+    "29": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FAUST GOUDEAU  OLETHA",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Susan Wagle",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 141145.34,
+       "expenditures": 113579.57
+      },
+      {
+       "name": "LARUMBE ANABEL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2207,
+       "expenditures": 2218.52
+      }
+     ]
+    },
+    "31": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michelle Vann",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4119.15,
+       "expenditures": 2859
+      },
+      {
+       "name": "MCGINN CAROLYN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 51532,
+       "expenditures": 51710.71
+      }
+     ]
+    },
+    "32": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Larry Alley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 46624.82,
+       "expenditures": 34996.92
+      },
+      {
+       "name": "DON SHIMKUS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 54149.07,
+       "expenditures": 50492.94
+      }
+     ]
+    },
+    "33": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mary Jo Taylor",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 62450,
+       "expenditures": 29637.61
+      },
+      {
+       "name": "Matt Bristow",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11316.13,
+       "expenditures": 10811.43
+      }
+     ]
+    },
+    "34": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Edward E Berger",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 153926.64,
+       "expenditures": 121811.03
+      },
+      {
+       "name": "GILSON HOMER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 500,
+       "expenditures": 0
+      }
+     ]
+    },
+    "35": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Levi Morris",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13103.84,
+       "expenditures": 7877.53
+      },
+      {
+       "name": "Richard E Wilborn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 90070.92,
+       "expenditures": 67523.12
+      }
+     ]
+    },
+    "36": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Elaine S Bowers",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 79036.88,
+       "expenditures": 45523.36
+      },
+      {
+       "name": "Brian G Angevine",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3000.34,
+       "expenditures": 2547.69
+      }
+     ]
+    },
+    "37": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kevin B King",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 645,
+       "expenditures": 128.6
+      },
+      {
+       "name": "Martha Baumgardner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42090.69,
+       "expenditures": 27905.99
+      }
+     ]
+    },
+    "38": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Miguel A Rodriguez",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": 0
+      },
+      {
+       "name": "Maynard L Estes, Jr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 66725,
+       "expenditures": 45701.62
+      }
+     ]
+    },
+    "39": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John G Doll",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 114289.39,
+       "expenditures": 79527.38
+      }
+     ]
+    },
+    "40": {
+     "source": "Kansas Governmental Ethics Commission 2016 House summary (monetary + in-kind) (House) + Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind) (Senate)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Alex Herman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20940,
+       "expenditures": 20783.43
+      },
+      {
+       "name": "BILLINGER RICHARD",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 48515.31,
+       "expenditures": 17799.45
+      }
+     ]
+    }
+   }
+  },
+  "2026": {
+   "house": {
+    "1": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Dale R Helwig",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8700,
+       "expenditures": 3721.3
+      }
+     ]
+    },
+    "2": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "ROWLAND AVERY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Isaiah Harris",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13316.23,
+       "expenditures": 2379.62
+      }
+     ]
+    },
+    "4": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Rick James",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12650.63,
+       "expenditures": 3447
+      },
+      {
+       "name": "Rob Hodgkinson",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 955.16,
+       "expenditures": 4.3
+      }
+     ]
+    },
+    "5": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Henry L Johns",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3311,
+       "expenditures": 1594.37
+      },
+      {
+       "name": "Courtney Sappington",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6450,
+       "expenditures": 866.63
+      }
+     ]
+    },
+    "6": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Samantha M Poetter Parshall",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3550,
+       "expenditures": 7287.3
+      },
+      {
+       "name": "HENDERSON FRANK",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "MORELAND TAYLOR",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Christopher d Croft",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 131324.61,
+       "expenditures": 63871.17
+      },
+      {
+       "name": "Megan Phillips",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6744.52,
+       "expenditures": 2380.06
+      }
+     ]
+    },
+    "9": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Fred B Gardner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18219.23,
+       "expenditures": 15576.04
+      }
+     ]
+    },
+    "10": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Suzanne Wikle",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 48572.26,
+       "expenditures": 33460.67
+      }
+     ]
+    },
+    "11": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "William Kendall",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 46.02,
+       "expenditures": 46.02
+      },
+      {
+       "name": "BRYCE RON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7075.55,
+       "expenditures": 14362.57
+      }
+     ]
+    },
+    "12": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Marci Laffen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16726.5,
+       "expenditures": 5717.87
+      },
+      {
+       "name": "III FERRELL GARLAND P",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Duane Droge",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17551.74,
+       "expenditures": 10686.58
+      },
+      {
+       "name": "Mark Remmert",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3170.72,
+       "expenditures": 226.77
+      }
+     ]
+    },
+    "14": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Charlotte Esau",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40405,
+       "expenditures": 21403.99
+      },
+      {
+       "name": "Sherry M Giebler",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 43864.89,
+       "expenditures": 11960.34
+      }
+     ]
+    },
+    "15": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Allison L Hougland",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 50084.37,
+       "expenditures": 10609.43
+      },
+      {
+       "name": "Lauren N Bohi",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 52094.12,
+       "expenditures": 24299.32
+      }
+     ]
+    },
+    "16": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Linda A Featherston",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 9786,
+       "expenditures": 6027.55
+      }
+     ]
+    },
+    "17": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "James F Eschrich",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18888.19,
+       "expenditures": 5163.26
+      },
+      {
+       "name": "HOYE JO ELLA",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 14501,
+       "expenditures": 8130.38
+      }
+     ]
+    },
+    "18": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Robert Whitman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 225,
+       "expenditures": 0
+      },
+      {
+       "name": "NEIGHBOR CINDY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Stephanie S Clayton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 27685,
+       "expenditures": 18612.75
+      },
+      {
+       "name": "Mark Hermes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 126.25,
+       "expenditures": 1.25
+      }
+     ]
+    },
+    "20": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Mari-Lynn S Poskin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 27761.92,
+       "expenditures": 26232.97
+      }
+     ]
+    },
+    "21": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Jerry W Stogsdill",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 8978.74,
+       "expenditures": 22203.72
+      }
+     ]
+    },
+    "22": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Reed G Krewson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18553.44,
+       "expenditures": 2134
+      }
+     ]
+    },
+    "23": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Susan Ruiz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 20005.99,
+       "expenditures": 19917.36
+      }
+     ]
+    },
+    "24": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Scott A Speicker",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": 0
+      },
+      {
+       "name": "Jarrod Ousley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7585,
+       "expenditures": 3799.83
+      }
+     ]
+    },
+    "25": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Rui Xu",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 14053,
+       "expenditures": 10042.78
+      }
+     ]
+    },
+    "26": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Chip E VanHouden",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24309.7,
+       "expenditures": 12540.22
+      },
+      {
+       "name": "Laura Johnson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2163.08,
+       "expenditures": 1196.04
+      }
+     ]
+    },
+    "27": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Sara Kiewiet",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7763.33,
+       "expenditures": 4136.84
+      },
+      {
+       "name": "TARWATER SEAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 94514.46,
+       "expenditures": 22653.61
+      }
+     ]
+    },
+    "28": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Alexander N Bergman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12290,
+       "expenditures": 3923.01
+      },
+      {
+       "name": "Bryan Mouber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 23883.88,
+       "expenditures": 2108.69
+      }
+     ]
+    },
+    "29": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Heather J Meyer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 9476.98,
+       "expenditures": 1380.58
+      }
+     ]
+    },
+    "30": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Laura E Williams",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Amelia T Wiederaenders",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5040.32,
+       "expenditures": 3768.21
+      }
+     ]
+    },
+    "31": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Emily C Hane",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10292.36,
+       "expenditures": 2171.06
+      }
+     ]
+    },
+    "32": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Pam Curtis",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22785.41,
+       "expenditures": 24917.89
+      }
+     ]
+    },
+    "33": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Emily Blanks",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21144.74,
+       "expenditures": 8844.96
+      },
+      {
+       "name": "Carolyn Caiharr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30431.05,
+       "expenditures": 10227.62
+      }
+     ]
+    },
+    "34": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Valdenia C Winn",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 15244.17,
+       "expenditures": 22104.92
+      }
+     ]
+    },
+    "35": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Alex R Sanchez",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2150,
+       "expenditures": 812.84
+      },
+      {
+       "name": "PAIGE WANDA BROWNLEE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Brian Dickason",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2280.25,
+       "expenditures": 213.75
+      },
+      {
+       "name": "MELTON LYNN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 18262.88,
+       "expenditures": 14998.21
+      }
+     ]
+    },
+    "37": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Melissa M Oropeza",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 15297.1,
+       "expenditures": 18481.73
+      },
+      {
+       "name": "Connie J Henry",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 700,
+       "expenditures": 665.89
+      }
+     ]
+    },
+    "38": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "TIMOTHY H JOHNSON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19145.48,
+       "expenditures": 11718.98
+      },
+      {
+       "name": "PAZ RICHARD",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Zach Maier",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28020.57,
+       "expenditures": 5802.15
+      }
+     ]
+    },
+    "40": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "David A Buehler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11831.7,
+       "expenditures": 4081.75
+      }
+     ]
+    },
+    "41": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Jeff Pittman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 29150.7,
+       "expenditures": 3109.6
+      },
+      {
+       "name": "Ann K Reinhart",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2100,
+       "expenditures": 740.6
+      }
+     ]
+    },
+    "42": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Lance W Neelly",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 33896.5,
+       "expenditures": 15584.45
+      },
+      {
+       "name": "Brandon Wendt",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2193,
+       "expenditures": 527.29
+      }
+     ]
+    },
+    "43": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Bill M Sutton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28734.81,
+       "expenditures": 16602.24
+      },
+      {
+       "name": "Kristen N Schultz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": 0
+      }
+     ]
+    },
+    "44": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "BALLARD BARBARA W",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Mike Amyx",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Mary T Williams",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 500.15,
+       "expenditures": 1232.23
+      }
+     ]
+    },
+    "48": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Dan Osman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 9605.39,
+       "expenditures": 5259.43
+      }
+     ]
+    },
+    "49": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Nikki L McDonald",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 89350.01,
+       "expenditures": 47964.67
+      }
+     ]
+    },
+    "50": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Kyle E McNorton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 23699.63,
+       "expenditures": 13743.78
+      }
+     ]
+    },
+    "51": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Megan D Steele",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3750.12,
+       "expenditures": 2453.38
+      }
+     ]
+    },
+    "52": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Jesse Borjon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20728.91,
+       "expenditures": 12513.73
+      },
+      {
+       "name": "Toni Scalia Scalia",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 121,
+       "expenditures": 0
+      }
+     ]
+    },
+    "53": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Kirk R Haskins",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 11009.02,
+       "expenditures": 13782.56
+      }
+     ]
+    },
+    "54": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Chris L Tanner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3026,
+       "expenditures": 1493.47
+      },
+      {
+       "name": "Ken Corbet",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 36299.91,
+       "expenditures": 29778.23
+      }
+     ]
+    },
+    "55": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Tobias Schlingensiepen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 91160.13,
+       "expenditures": 62433.56
+      },
+      {
+       "name": "Lanell L Griffith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 732.5,
+       "expenditures": 0
+      }
+     ]
+    },
+    "56": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Elvin J Fajardo",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": 0
+      },
+      {
+       "name": "WEIGEL VIRGIL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2295,
+       "expenditures": 1761.04
+      }
+     ]
+    },
+    "57": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "John Alcala",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 15357.38,
+       "expenditures": 13441.46
+      }
+     ]
+    },
+    "58": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Michael H Mathewson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": 0
+      }
+     ]
+    },
+    "59": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Rebecca L Schmoe",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21840.97,
+       "expenditures": 23216.27
+      },
+      {
+       "name": "Michael L Lewis",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1662.04,
+       "expenditures": 560.03
+      }
+     ]
+    },
+    "60": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Maddison D Glover",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2092,
+       "expenditures": 1605.87
+      },
+      {
+       "name": "Mark Schreiber",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18676.21,
+       "expenditures": 21501.33
+      }
+     ]
+    },
+    "61": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Francis Awerkamp",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15600,
+       "expenditures": 16241.58
+      }
+     ]
+    },
+    "62": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Jack E Geiger",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 5389.4,
+       "expenditures": 970.14
+      },
+      {
+       "name": "Sean W Willcott",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9100,
+       "expenditures": 11917.97
+      }
+     ]
+    },
+    "63": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "ALLEN B REAVIS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 31597.41,
+       "expenditures": 31097.09
+      },
+      {
+       "name": "Adam Booth",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 360,
+       "expenditures": 0
+      }
+     ]
+    },
+    "64": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Lewis C Bloom",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8187.57,
+       "expenditures": 7290.47
+      }
+     ]
+    },
+    "65": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Shawn L Chauncey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17090,
+       "expenditures": 7328.14
+      }
+     ]
+    },
+    "66": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Andrew R Frey",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": 0
+      },
+      {
+       "name": "Sydney Carlin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 21441.85,
+       "expenditures": 20385.1
+      },
+      {
+       "name": "Noah Perry",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": 0
+      }
+     ]
+    },
+    "67": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Brenda Bandy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 33883.07,
+       "expenditures": 15083.35
+      },
+      {
+       "name": "Stacy Kohlmeier",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 47471.54,
+       "expenditures": 10017.7
+      }
+     ]
+    },
+    "68": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Nate Butler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15300,
+       "expenditures": 15353.69
+      }
+     ]
+    },
+    "70": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Kylie C Kilmer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 24555.05,
+       "expenditures": 14278.54
+      },
+      {
+       "name": "Greg WIlson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "71": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Steven K Howe",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 25975,
+       "expenditures": 23447.43
+      },
+      {
+       "name": "Jerry A Lonergan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19475.56,
+       "expenditures": 1914.75
+      }
+     ]
+    },
+    "72": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Avery C Anderson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 108064.8,
+       "expenditures": 108027.66
+      },
+      {
+       "name": "Matthew L Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3000,
+       "expenditures": 896.9
+      }
+     ]
+    },
+    "73": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Bobby J Robertson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10985.07,
+       "expenditures": 8083.67
+      },
+      {
+       "name": "SHULTZ LORI",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "74": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Mike King",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32707,
+       "expenditures": 23609.97
+      },
+      {
+       "name": "Michele L Ediger",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5608.28,
+       "expenditures": 3344.45
+      }
+     ]
+    },
+    "75": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Tyler D Coats",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9990,
+       "expenditures": 4506.24
+      }
+     ]
+    },
+    "76": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Russel Stukey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10121,
+       "expenditures": 7761
+      }
+     ]
+    },
+    "77": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Kristey S Williams",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27258.49,
+       "expenditures": 16695.15
+      }
+     ]
+    },
+    "78": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Tim W Lundberg",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21336.63,
+       "expenditures": 17437.92
+      },
+      {
+       "name": "Robyn R Essex",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19477.72,
+       "expenditures": 6323.11
+      }
+     ]
+    },
+    "79": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Siobhan McIntyre",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2096,
+       "expenditures": 1277.46
+      }
+     ]
+    },
+    "80": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Bill Rhiley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10255,
+       "expenditures": 9590.42
+      }
+     ]
+    },
+    "81": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Blake Carpenter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12753.63,
+       "expenditures": 45957.93
+      },
+      {
+       "name": "Kayden L Bennett",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4951.05,
+       "expenditures": 1297.23
+      }
+     ]
+    },
+    "82": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Dean A Hayse",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": 0
+      },
+      {
+       "name": "Leah R Howell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13200.65,
+       "expenditures": 7476.68
+      },
+      {
+       "name": "BEAUCHAMP KYLE D",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 285.5,
+       "expenditures": 539.75
+      }
+     ]
+    },
+    "83": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Zachary M Werhan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8679.13,
+       "expenditures": 2264.36
+      },
+      {
+       "name": "WHIPPLE BRANDON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13924,
+       "expenditures": 10500.62
+      }
+     ]
+    },
+    "84": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Bonita L Gooch",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18625,
+       "expenditures": 8931.01
+      }
+     ]
+    },
+    "85": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Steven R Brunk",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "86": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Kevin J Thompson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7673.34,
+       "expenditures": 3555.62
+      },
+      {
+       "name": "Elle A Boatman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22342.17,
+       "expenditures": 9049.5
+      }
+     ]
+    },
+    "87": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "ESTES SUSAN OLIVER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 14050,
+       "expenditures": 16337.16
+      }
+     ]
+    },
+    "88": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Sandra Pickert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18996.96,
+       "expenditures": 12622.5
+      },
+      {
+       "name": "Candace M Landers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2305,
+       "expenditures": 1946.55
+      }
+     ]
+    },
+    "89": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Carol S Brewer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4499.83,
+       "expenditures": 4090.45
+      }
+     ]
+    },
+    "90": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Amy N Warhurst",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1493.85,
+       "expenditures": 644.43
+      },
+      {
+       "name": "Steve H Huebert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5100,
+       "expenditures": 5690.1
+      }
+     ]
+    },
+    "91": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Emil Bergquist",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37865.34,
+       "expenditures": 30052.71
+      },
+      {
+       "name": "Velma Davis",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12106,
+       "expenditures": 5722.22
+      }
+     ]
+    },
+    "92": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Vail D Fruechting",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1028,
+       "expenditures": 0
+      },
+      {
+       "name": "John L Carmichael",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 13503.23,
+       "expenditures": 23938.02
+      }
+     ]
+    },
+    "93": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Brian Bergkamp",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16080.17,
+       "expenditures": 9960.03
+      }
+     ]
+    },
+    "94": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Leo Delperdang",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 49888.96,
+       "expenditures": 26086.63
+      }
+     ]
+    },
+    "95": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Tom Sawyer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 18011.5,
+       "expenditures": 4233.51
+      }
+     ]
+    },
+    "96": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Jessica Maldonado",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 431.03,
+       "expenditures": 105.11
+      },
+      {
+       "name": "Tom G Kessler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42388.14,
+       "expenditures": 25255.71
+      }
+     ]
+    },
+    "97": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Nick J Hoheisel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 50390,
+       "expenditures": 11192.26
+      }
+     ]
+    },
+    "98": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Cyndi Howerton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10042.95,
+       "expenditures": 6640.46
+      },
+      {
+       "name": "Erika Lewis",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1858.12,
+       "expenditures": 947.31
+      }
+     ]
+    },
+    "99": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Mark B Barlow",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3926,
+       "expenditures": 1711.77
+      },
+      {
+       "name": "HUMPHRIES SUSAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "100": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Amanda Mogoi",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21177.19,
+       "expenditures": 1256.96
+      },
+      {
+       "name": "Albert J Jirak",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 36036,
+       "expenditures": 16027.49
+      }
+     ]
+    },
+    "101": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Mary A Harmon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8459.11,
+       "expenditures": 2901.3
+      }
+     ]
+    },
+    "102": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Jason Probst",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12530.55,
+       "expenditures": 172.4
+      },
+      {
+       "name": "Kyler T Sweely",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 55293.13,
+       "expenditures": 36353.79
+      }
+     ]
+    },
+    "103": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Angela Martinez",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 6375.11,
+       "expenditures": 8180.33
+      },
+      {
+       "name": "Jordan P Chessher",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2700.19,
+       "expenditures": 1566.09
+      }
+     ]
+    },
+    "104": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Lynnette S Krieger-Zook",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12081,
+       "expenditures": 4896.85
+      },
+      {
+       "name": "Randall Parks",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4303.82,
+       "expenditures": 0
+      }
+     ]
+    },
+    "105": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Jill A Ward",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5858,
+       "expenditures": 7968.33
+      },
+      {
+       "name": "John K Burke",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1122,
+       "expenditures": 24.38
+      }
+     ]
+    },
+    "106": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Lisa M Moser",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3850,
+       "expenditures": 5273.99
+      }
+     ]
+    },
+    "107": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Dawn D Wolf",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26360.82,
+       "expenditures": 14591.46
+      },
+      {
+       "name": "Cheri L Koochel",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3374,
+       "expenditures": 1207.87
+      }
+     ]
+    },
+    "108": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Brandon Woodard",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 65093.84,
+       "expenditures": 51868
+      }
+     ]
+    },
+    "109": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "TROY L WAYMASTER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 49731.39,
+       "expenditures": 49593.4
+      }
+     ]
+    },
+    "110": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Ken Rahjes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 2000,
+       "expenditures": 16207.35
+      },
+      {
+       "name": "SCHAUKOWITCH MARK",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6106,
+       "expenditures": 12800.05
+      }
+     ]
+    },
+    "111": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Melanie L McMillan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3886,
+       "expenditures": 2620.04
+      },
+      {
+       "name": "Barbara K Wasinger",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17134.2,
+       "expenditures": 31179.6
+      }
+     ]
+    },
+    "112": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Rhys L Froetschner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 150,
+       "expenditures": 117.4
+      },
+      {
+       "name": "Sherri G Brantley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12700,
+       "expenditures": 9618.93
+      }
+     ]
+    },
+    "113": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Brett Fairchild",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5770,
+       "expenditures": 1256.92
+      },
+      {
+       "name": "Jo Ann Roth",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3911,
+       "expenditures": 578.91
+      }
+     ]
+    },
+    "114": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Alan L Albers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4858.06,
+       "expenditures": 1425.21
+      },
+      {
+       "name": "SCHWERTFEGER KEVIN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12097.61,
+       "expenditures": 10933.61
+      }
+     ]
+    },
+    "115": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Gary L White",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 8450,
+       "expenditures": 5646.77
+      }
+     ]
+    },
+    "116": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Kyle D Hoffman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40550.9,
+       "expenditures": 29338.43
+      },
+      {
+       "name": "BALES NATHAN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3437.99,
+       "expenditures": 159
+      }
+     ]
+    },
+    "117": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Brandon Holland",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2067.3,
+       "expenditures": 198
+      },
+      {
+       "name": "Adam Turk",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29255,
+       "expenditures": 27485.29
+      }
+     ]
+    },
+    "118": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Jim Minnix",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21554.26,
+       "expenditures": 21232.56
+      }
+     ]
+    },
+    "119": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "GOETZ JASON W",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12050,
+       "expenditures": 7737.88
+      }
+     ]
+    },
+    "120": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Adam W Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40940,
+       "expenditures": 44493.21
+      }
+     ]
+    },
+    "121": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Thomas B Palenske",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20028.86,
+       "expenditures": 15878.02
+      }
+     ]
+    },
+    "122": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Lon E Pishny",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9494,
+       "expenditures": 2894
+      }
+     ]
+    },
+    "123": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Becca Burnfin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4529.12,
+       "expenditures": 2870.93
+      },
+      {
+       "name": "LEWIS ROBERT Y",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "124": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Martin Long",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15900,
+       "expenditures": 12908.84
+      }
+     ]
+    },
+    "125": {
+     "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+     "dataThrough": "10/18/2026",
+     "candidates": [
+      {
+       "name": "Shannon G Francis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40426.87,
+       "expenditures": 19731.32
       }
      ]
     }
@@ -457851,6 +471477,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Kentucky Registry of Election Finance (primary + general accounts)",
      "dataThrough": "12/31/2016",
      "candidates": [
+      {
+       "name": "C. Wesley Morgan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 85062.71,
+       "expenditures": 84721.89
+      },
       {
        "name": "Rita Smart",
        "party": "D",
@@ -463414,6 +477048,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Brittney Hernandez-Stevenson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 26687.22,
+       "expenditures": 27368.54
+      },
+      {
        "name": "Rebecca Raymer",
        "party": "R",
        "partyLabel": "Republican",
@@ -463934,6 +477576,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 58125,
        "expenditures": 130121.31
+      },
+      {
+       "name": "Virginia \"Ginny\" Mulvey Woolridge",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8253.6,
+       "expenditures": 8953.6
       }
      ]
     },
@@ -464050,6 +477700,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 42245,
        "expenditures": 72431.12
+      }
+     ]
+    },
+    "54": {
+     "source": "Kentucky Registry of Election Finance (primary + general accounts)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Gladys Wilson-Reddy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11060,
+       "expenditures": 14840.57
       }
      ]
     },
@@ -464964,6 +478628,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 194054,
        "expenditures": 263775.8
+      },
+      {
+       "name": "Bill O'brien",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 275,
+       "expenditures": 3534.5
       }
      ]
     },
@@ -469496,6 +483168,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2019",
      "candidates": [
       {
+       "name": "Royce Wayne McMahen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 96734.22,
+       "expenditures": null
+      },
+      {
        "name": "Creighton Gerald Wilson Sr.",
        "party": "D",
        "partyLabel": "Democratic",
@@ -470468,6 +484148,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 70241.85,
        "expenditures": null
+      },
+      {
+       "name": "George Michael Chatellier",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 688.3,
+       "expenditures": null
       }
      ]
     },
@@ -470694,6 +484382,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 97995.3,
        "expenditures": null
+      },
+      {
+       "name": "Michael Ryan Beissinger",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25553.55,
+       "expenditures": null
       }
      ]
     },
@@ -470732,11 +484428,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2019",
      "candidates": [
       {
-       "name": "John G. Raymond",
+       "name": "John Raymond Smith",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 80156.21,
+       "contributions": 186658.84,
        "expenditures": null
       },
       {
@@ -470805,6 +484501,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 354702.59,
+       "expenditures": null
+      },
+      {
+       "name": "Robert Kirk Williamson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 59805,
        "expenditures": null
       },
       {
@@ -470920,6 +484624,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2019",
      "candidates": [
       {
+       "name": "Ravi Sangisetty",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 235186.23,
+       "expenditures": null
+      },
+      {
        "name": "Aimee Adatto Freeman",
        "party": "D",
        "partyLabel": "Democratic",
@@ -470941,14 +484653,6 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 422933.21,
-       "expenditures": null
-      },
-      {
-       "name": "Ravi Sangisetty",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 235186.23,
        "expenditures": null
       },
       {
@@ -471480,6 +485184,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2019",
      "candidates": [
       {
+       "name": "Wendell Jay Luneau",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 652015.88,
+       "expenditures": null
+      },
+      {
        "name": "Randy Wiggins",
        "party": "R",
        "partyLabel": "Republican",
@@ -471764,6 +485476,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
+       "name": "Daryl Joy Walters",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21798.9,
+       "expenditures": null
+      },
+      {
        "name": "Jasmine Green",
        "party": "D",
        "partyLabel": "Democratic",
@@ -471791,6 +485511,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 20026.23,
+       "expenditures": null
+      },
+      {
+       "name": "Charles Evan McMichael",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 105,
        "expenditures": null
       }
      ]
@@ -471926,19 +485654,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
+       "name": "Jefferson Bryan (Jeff) Joyce",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 93775.5,
+       "expenditures": null
+      },
+      {
        "name": "Pearl Ricks",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 12622.72,
-       "expenditures": null
-      },
-      {
-       "name": "Bryan Jefferson",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 61704.78,
        "expenditures": null
       },
       {
@@ -472430,6 +486158,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2023",
      "candidates": [
       {
+       "name": "Chauna Banks-Daniel",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 119491.31,
+       "expenditures": null
+      },
+      {
        "name": "Barbara West Carpenter",
        "party": "D",
        "partyLabel": "Democratic",
@@ -472525,6 +486261,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 105387.37,
+       "expenditures": null
+      },
+      {
+       "name": "Anjanita Monique Appeaning",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 44718.71,
        "expenditures": null
       },
       {
@@ -472651,6 +486395,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 103679.18,
+       "expenditures": null
+      },
+      {
+       "name": "George Michael Chatellier",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1415.47,
        "expenditures": null
       },
       {
@@ -473714,6 +487466,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 36938.42,
        "expenditures": 42132.33
+      },
+      {
+       "name": "O'Connell, Shaunna",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 170543.82,
+       "expenditures": 140337.6
       }
      ]
     },
@@ -474402,6 +488162,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 62819.14,
        "expenditures": 82666
+      }
+     ]
+    },
+    "3rd Hampshire": {
+     "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Goldstein-Rose, Solomon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 27245.31,
+       "expenditures": 25629.97
       }
      ]
     },
@@ -475339,6 +489113,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "8th Plymouth": {
+     "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "D'Emilia, Angelo L.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 54463,
+       "expenditures": 16300.17
+      }
+     ]
+    },
     "9th Plymouth": {
      "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
      "dataThrough": "12/31/2016",
@@ -475907,6 +489695,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "14th Worcester": {
+     "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "O'Day, James",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 56430.42,
+       "expenditures": 57558.42
+      }
+     ]
+    },
     "15th Worcester": {
      "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
      "dataThrough": "12/31/2016",
@@ -476158,6 +489960,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 60688.51,
        "expenditures": 24559.48
+      },
+      {
+       "name": "L'Italien, Barbara",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 208766.19,
+       "expenditures": 202751.19
       }
      ]
     },
@@ -476480,6 +490290,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 108699,
        "expenditures": 100158.7
+      },
+      {
+       "name": "O'Connor, Patrick",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 216594.81,
+       "expenditures": 196825.97
       }
      ]
     },
@@ -476806,6 +490624,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 10412.58,
        "expenditures": 7021.9
+      },
+      {
+       "name": "O'Connell, Shaunna",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 81363.03,
+       "expenditures": 67372.76
       }
      ]
     },
@@ -477594,6 +491420,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 42076.84,
        "expenditures": 39410.96
+      },
+      {
+       "name": "Goldstein-Rose, Solomon",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": true,
+       "contributions": 9132.39,
+       "expenditures": 9184.08
       }
      ]
     },
@@ -478494,6 +492328,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": 113115.43
       },
       {
+       "name": "O'Connell, Edward J.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23985.04,
+       "expenditures": 17826.76
+      },
+      {
        "name": "Powell, Nathaniel K.",
        "party": "O",
        "partyLabel": "Other",
@@ -478558,6 +492400,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 89145.3,
        "expenditures": 38109.5
+      }
+     ]
+    },
+    "8th Plymouth": {
+     "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "D'Emilia, Angelo L.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 25135,
+       "expenditures": 15721.94
       }
      ]
     },
@@ -479161,6 +493017,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "14th Worcester": {
+     "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "O'Day, James",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 53690,
+       "expenditures": 52743.18
+      }
+     ]
+    },
     "15th Worcester": {
      "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
      "dataThrough": "12/31/2018",
@@ -479740,6 +493610,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 89644.64,
        "expenditures": 76162.96
+      },
+      {
+       "name": "O'Connor, Patrick",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 179822.84,
+       "expenditures": 123481.48
       }
      ]
     },
@@ -480638,6 +494516,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 46630.92,
        "expenditures": 35728.53
+      },
+      {
+       "name": "O'Connor, Kerri",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11076.91,
+       "expenditures": 10008.02
       }
      ]
     },
@@ -481789,6 +495675,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "8th Plymouth": {
+     "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "D'Emilia, Angelo L.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10395,
+       "expenditures": 11307.64
+      }
+     ]
+    },
     "9th Plymouth": {
      "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
      "dataThrough": "12/31/2020",
@@ -482335,6 +496235,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "14th Worcester": {
+     "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "O'Day, James",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 37724.04,
+       "expenditures": 30896.58
+      }
+     ]
+    },
     "15th Worcester": {
      "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
      "dataThrough": "12/31/2020",
@@ -482843,6 +496757,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "O'Connor, Patrick",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 178781.12,
+       "expenditures": 146681.61
+      },
       {
        "name": "Wheeler, Meg",
        "party": "D",
@@ -484898,6 +498820,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "D'Emilia, Angelo L.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5070,
+       "expenditures": 8781.4
+      },
+      {
        "name": "Haikola, Eric",
        "party": "D",
        "partyLabel": "Democratic",
@@ -485457,6 +499387,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "14th Worcester": {
+     "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "O'Day, James",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 36211.67,
+       "expenditures": 31261.74
+      }
+     ]
+    },
     "15th Worcester": {
      "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
      "dataThrough": "12/31/2022",
@@ -485896,6 +499840,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Dombroski, Jr., Edward",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 114983.66,
+       "expenditures": 108690.31
+      },
+      {
        "name": "Lewis, Jason",
        "party": "D",
        "partyLabel": "Democratic",
@@ -486083,6 +500035,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "O'Connor, Patrick",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 218068.68,
+       "expenditures": 201289.56
+      },
       {
        "name": "Stephens, Robert",
        "party": "D",
@@ -492884,11 +506844,27 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
+       "name": "METZGAR, RICHARD W.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 88808.73,
+       "expenditures": null
+      },
+      {
        "name": "LONG, ROBERT",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 97009,
+       "expenditures": null
+      },
+      {
+       "name": "DOERFLINGER, MEGAN A.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 29432.94,
        "expenditures": null
       },
       {
@@ -492911,6 +506887,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 47006,
+       "expenditures": null
+      },
+      {
+       "name": "SZELIGA, KATHRYN Y.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 400269.81,
        "expenditures": null
       },
       {
@@ -492960,6 +506944,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
+       "name": "BHANDARI, HIR B.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 185633.49,
+       "expenditures": null
+      },
+      {
        "name": "NORMAN, JOSEPH A.",
        "party": "R",
        "partyLabel": "Republican",
@@ -492979,6 +506971,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 254514,
+       "expenditures": null
+      },
+      {
+       "name": "MARCOS, BORIS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 900,
        "expenditures": null
       }
      ]
@@ -493116,6 +507116,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "QI, HONG",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 183138.89,
+       "expenditures": null
+      },
+      {
        "name": "HALVERSON, LAURIE S.",
        "party": "R",
        "partyLabel": "Republican",
@@ -493220,6 +507228,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "CULLISON, BONITA L.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 83643.75,
+       "expenditures": null
+      },
+      {
        "name": "STEWART, VAUGHN M.",
        "party": "D",
        "partyLabel": "Democratic",
@@ -493302,6 +507318,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 200057,
        "expenditures": null
+      },
+      {
+       "name": "ANYANWU, EVARESTUS E.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10141.25,
+       "expenditures": null
       }
      ]
     },
@@ -493323,6 +507347,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 67049,
+       "expenditures": null
+      },
+      {
+       "name": "HEARTSTRONG, WINNIE B.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8929.31,
        "expenditures": null
       }
      ]
@@ -493384,6 +507416,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
+       "name": "VALDERRAMA-LOBO, KRISELDA",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 121744,
+       "expenditures": null
+      },
+      {
        "name": "TURNER, VERONICA L.",
        "party": "D",
        "partyLabel": "Democratic",
@@ -493428,6 +507468,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "BARTLETT, JUANITA S.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 51722,
+       "expenditures": null
+      },
+      {
        "name": "WALTERS, TIMOTHY R.",
        "party": "R",
        "partyLabel": "Republican",
@@ -493466,6 +507514,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "ROMANO, OLIVIA M.",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 308.44,
+       "expenditures": null
+      },
+      {
        "name": "BAGNALL TUDBALL, HEATHER A.",
        "party": "D",
        "partyLabel": "Democratic",
@@ -493479,6 +507535,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Maryland SBE CRIS receipts via The Accountability Project (itemized contributions)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "GHRIST, JEFFERSON L.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16955,
+       "expenditures": null
+      },
       {
        "name": "JACOBS, JAY A.",
        "party": "R",
@@ -493586,6 +507650,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
+       "name": "BRIDGES, DEOLEOUS A.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 74486,
+       "expenditures": null
+      },
+      {
        "name": "PATE, DREW A.",
        "party": "O",
        "partyLabel": "Other",
@@ -493605,6 +507677,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 535452.62,
+       "expenditures": null
+      },
+      {
+       "name": "ANDERSON, CURTIS S.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 29343,
        "expenditures": null
       },
       {
@@ -493765,6 +507845,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "29A": {
+     "source": "Maryland SBE CRIS receipts via The Accountability Project (itemized contributions)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "MORGAN, JAMES M.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 152356,
+       "expenditures": null
+      }
+     ]
+    },
     "42A": {
      "source": "Maryland SBE CRIS receipts via The Accountability Project (itemized contributions)",
      "dataThrough": "12/31/2018",
@@ -493783,6 +507877,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 30096.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "31A": {
+     "source": "Maryland SBE CRIS receipts via The Accountability Project (itemized contributions)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "CAREY, EDWARD",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 137925.96,
+       "expenditures": null
+      },
+      {
+       "name": "BENNETT, BROOKS L.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 50575.53,
        "expenditures": null
       }
      ]
@@ -493958,6 +508074,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 116742,
        "expenditures": null
+      },
+      {
+       "name": "WATSON, MARY C.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 180586.58,
+       "expenditures": null
       }
      ]
     },
@@ -493971,6 +508095,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 70071.52,
+       "expenditures": null
+      },
+      {
+       "name": "IVEY, ROBERT J.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 50663,
        "expenditures": null
       }
      ]
@@ -494029,6 +508161,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 56222.81,
+       "expenditures": null
+      }
+     ]
+    },
+    "34A": {
+     "source": "Maryland SBE CRIS receipts via The Accountability Project (itemized contributions)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "GLASS, ROY G.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 9748.02,
+       "expenditures": null
+      },
+      {
+       "name": "JOHNSON, STEVEN C.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19318.38,
        "expenditures": null
       }
      ]
@@ -494127,16 +508281,16 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "31A": {
+    "27A": {
      "source": "Maryland SBE CRIS receipts via The Accountability Project (itemized contributions)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "BENNETT, BROOKS L.",
-       "party": "R",
-       "partyLabel": "Republican",
+       "name": "PROCTOR, ELIZABETH G.",
+       "party": "D",
+       "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 50575.53,
+       "contributions": 41432,
        "expenditures": null
       }
      ]
@@ -494151,6 +508305,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 90529.62,
+       "expenditures": null
+      },
+      {
+       "name": "HEBBAR, SACHIDANAND A.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 43895.99,
        "expenditures": null
       },
       {
@@ -494173,20 +508335,6 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 77812,
-       "expenditures": null
-      }
-     ]
-    },
-    "34A": {
-     "source": "Maryland SBE CRIS receipts via The Accountability Project (itemized contributions)",
-     "dataThrough": "12/31/2018",
-     "candidates": [
-      {
-       "name": "JOHNSON, STEVEN C.",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 19318.38,
        "expenditures": null
       }
      ]
@@ -494329,6 +508477,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 98130.47,
+       "expenditures": null
+      },
+      {
+       "name": "STAIGERWALD, CLARENCE O.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 33130.59,
        "expenditures": null
       }
      ]
@@ -494544,6 +508700,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 209970,
        "expenditures": null
+      },
+      {
+       "name": "HAVIS, ANDREW L.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25960,
+       "expenditures": null
       }
      ]
     },
@@ -494613,6 +508777,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 106546.83,
+       "expenditures": null
+      },
+      {
+       "name": "PUZON, DANIEL I.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16577.24,
        "expenditures": null
       }
      ]
@@ -494714,6 +508886,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 272899.89,
        "expenditures": null
+      },
+      {
+       "name": "HURWITZ, MICHELLE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 44772.98,
+       "expenditures": null
       }
      ]
     },
@@ -494778,6 +508958,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 123778.4,
        "expenditures": null
+      },
+      {
+       "name": "WRIGHT, HARRIET W.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 33532,
+       "expenditures": null
       }
      ]
     },
@@ -494813,6 +509001,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 112425,
+       "expenditures": null
+      },
+      {
+       "name": "PHILLIPS, TIZOC A.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4467.5,
        "expenditures": null
       }
      ]
@@ -499854,6 +514050,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 545,
        "expenditures": null
+      },
+      {
+       "name": "BETH A O'CONNOR",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6300,
+       "expenditures": null
       }
      ]
     },
@@ -500033,6 +514237,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 135.95,
+       "expenditures": null
+      },
+      {
+       "name": "Margaret M O'Neil",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7933.43,
        "expenditures": null
       }
      ]
@@ -502772,6 +516984,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "MOIRA K O'NEILL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2680,
+       "expenditures": null
+      },
+      {
        "name": "BRIAN D LANGLEY",
        "party": "R",
        "partyLabel": "Republican",
@@ -503244,6 +517464,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 62409.24,
        "expenditures": null
+      },
+      {
+       "name": "JEAN-MARIE CATERINA",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3000,
+       "expenditures": null
       }
      ]
     },
@@ -503445,6 +517673,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Maine Ethics Commission (private contributions, excluding Clean Election funds)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "BETH A. O'CONNOR",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5257.18,
+       "expenditures": 4857.18
+      },
       {
        "name": "Charles A Galemmo",
        "party": "D",
@@ -503664,6 +517900,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 510,
        "expenditures": 5976.93
+      },
+      {
+       "name": "Margaret M. O'Neil",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7155.92,
+       "expenditures": 7005.92
       }
      ]
     },
@@ -504856,6 +519100,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Dennis M O'Connor",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 383.47,
+       "expenditures": 0
+      },
+      {
        "name": "Kathleen Rose Jackson Dillingham",
        "party": "R",
        "partyLabel": "Republican",
@@ -505234,6 +519486,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 1000,
        "expenditures": 9324.16
+      },
+      {
+       "name": "Richard Elliott Van Knowe",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1800,
+       "expenditures": 1800
       }
      ]
     },
@@ -505292,6 +519552,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 6164,
        "expenditures": 6164
+      },
+      {
+       "name": "Pinny Beebe-Center",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 920,
+       "expenditures": 6493.78
       }
      ]
     },
@@ -507170,6 +521438,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "George W. Van Syckel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2100,
+       "expenditures": 2096
+      },
+      {
        "name": "Rebecca Millett",
        "party": "D",
        "partyLabel": "Democratic",
@@ -507392,6 +521668,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2020",
      "candidates": [
       {
+       "name": "Beth A O'Connor",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5956.57,
+       "expenditures": 4753.65
+      },
+      {
        "name": "Charles Galemmo",
        "party": "D",
        "partyLabel": "Democratic",
@@ -507602,6 +521886,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 750,
        "expenditures": 11535.97
+      },
+      {
+       "name": "Margaret O'Neil",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 5797.98,
+       "expenditures": 5797.98
       }
      ]
     },
@@ -508058,6 +522350,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 0,
        "expenditures": 0
+      }
+     ]
+    },
+    "40": {
+     "source": "Maine Ethics Commission (private contributions, excluding Clean Election funds)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Rachel Talbot Ross",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1585,
+       "expenditures": 1585
       }
      ]
     },
@@ -509906,6 +524212,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 3975,
        "expenditures": 3975
+      },
+      {
+       "name": "Kevin J.M. O'Connell (Special)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 445,
+       "expenditures": 5379.41
       }
      ]
     },
@@ -511564,6 +525878,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 1000,
        "expenditures": 6585.9
+      },
+      {
+       "name": "Kevin O'Connell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 328.3,
+       "expenditures": 0
       }
      ]
     },
@@ -513820,6 +528142,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Margaret M O'Neil",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3045.3,
+       "expenditures": 3045.3
+      },
+      {
        "name": "Stephen Robert DuPuis",
        "party": "R",
        "partyLabel": "Republican",
@@ -514677,6 +529007,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Maine Ethics Commission (private contributions, excluding Clean Election funds)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Colin D O'Neill",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": 0
+      },
       {
        "name": "Richard A. Bennett",
        "party": "R",
@@ -522940,6 +537278,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 41442.82,
        "expenditures": null
+      },
+      {
+       "name": "FRIENDS TO ELECT SANDY VAN WAGNER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21703.7,
+       "expenditures": null
       }
      ]
     },
@@ -523121,6 +537467,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "26": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT GAIL MCCANN BEATTY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 102878.24,
+       "expenditures": null
+      }
+     ]
+    },
     "27": {
      "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2016",
@@ -523291,6 +537651,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "39": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF JOE DON MCGAUGH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 61725,
+       "expenditures": null
+      }
+     ]
+    },
     "40": {
      "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2016",
@@ -523329,6 +537703,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 23643,
+       "expenditures": null
+      },
+      {
+       "name": "Citizens For Cheri Toalson Reisch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25151,
        "expenditures": null
       }
      ]
@@ -524010,6 +538392,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "CITIZENS FOR VICKI LORENZ ENGLUND",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 154407.93,
+       "expenditures": null
+      },
+      {
        "name": "FRIENDS OF CLORIA BROWN",
        "party": "R",
        "partyLabel": "Republican",
@@ -524466,6 +538856,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "SONYA MURRAY ANDERSON FOR STATE REPRESENTATIVE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39165,
+       "expenditures": null
+      },
+      {
        "name": "PEOPLE FOR NATE BRANSCOM-STATE REPRESENTATIVE",
        "party": "D",
        "partyLabel": "Democratic",
@@ -524725,6 +539123,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 41145.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "151": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR TILA ROWLAND HUBRECHT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30150,
        "expenditures": null
       }
      ]
@@ -525198,6 +539610,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 19385,
        "expenditures": null
+      },
+      {
+       "name": "Committee To Elect Sandy Van Wagner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17748.36,
+       "expenditures": null
       }
      ]
     },
@@ -525443,6 +539863,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "30": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends For Ryana Parks-Shaw",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 40369.06,
+       "expenditures": null
+      }
+     ]
+    },
     "31": {
      "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2018",
@@ -525655,6 +540089,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 11925.47,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Cheri Toalson Reisch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30902,
        "expenditures": null
       }
      ]
@@ -526203,6 +540651,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Other",
        "incumbent": false,
        "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "86": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Maria Chappelle-Nadal",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12356.78,
        "expenditures": null
       }
      ]
@@ -526818,6 +541280,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 344.76,
        "expenditures": null
+      },
+      {
+       "name": "Sonya Murray Anderson For Missouri",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34735,
+       "expenditures": null
       }
      ]
     },
@@ -527067,6 +541537,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 16075,
+       "expenditures": null
+      },
+      {
+       "name": "Jackie Townes McGee For State Rep",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1735.74,
        "expenditures": null
       }
      ]
@@ -527648,6 +542126,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 48921,
        "expenditures": null
+      },
+      {
+       "name": "Brady O'Dell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1541.51,
+       "expenditures": null
       }
      ]
     },
@@ -528149,6 +542635,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 31054.25,
+       "expenditures": null
+      },
+      {
+       "name": "CHERI REISCH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 36294,
        "expenditures": null
       }
      ]
@@ -528932,6 +543426,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 30301.59,
        "expenditures": null
+      },
+      {
+       "name": "Bridget Moore",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 63936.24,
+       "expenditures": null
       }
      ]
     },
@@ -528961,6 +543463,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Michael O'Donnell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40238.98,
+       "expenditures": null
+      },
       {
        "name": "Ann Zimpfer",
        "party": "D",
@@ -529459,6 +543969,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 12875,
+       "expenditures": null
+      },
+      {
+       "name": "Yvonne Chong",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9408.15,
        "expenditures": null
       }
      ]
@@ -531174,6 +545692,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "CHERI REISCH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15980,
+       "expenditures": null
+      },
+      {
        "name": "David Raithel",
        "party": "D",
        "partyLabel": "Democratic",
@@ -531193,6 +545719,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 40294.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "David Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30053,
        "expenditures": null
       }
      ]
@@ -531409,6 +545949,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 33927,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "J Don Salcedo",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9633.77,
        "expenditures": null
       }
      ]
@@ -531940,6 +546494,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "Bridget Moore",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 42562.82,
+       "expenditures": null
+      },
+      {
        "name": "Kenneth Abram",
        "party": "R",
        "partyLabel": "Republican",
@@ -531981,6 +546543,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 38385.43,
+       "expenditures": null
+      },
+      {
+       "name": "Michael O'Donnell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 68830,
        "expenditures": null
       }
      ]
@@ -532889,6 +547459,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "150": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Cameron Parker",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 29905,
+       "expenditures": null
+      }
+     ]
+    },
     "151": {
      "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
@@ -533223,6 +547807,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Cindy O'Laughlin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 187696.11,
+       "expenditures": null
+      },
       {
        "name": "Ayanna Shivers",
        "party": "D",
@@ -540646,6 +555238,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "O'Hara, James  P",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3720,
+       "expenditures": null
+      },
+      {
        "name": "Rominger, Ryan  A",
        "party": "D",
        "partyLabel": "Democratic",
@@ -542538,6 +557138,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "O'Neil, Jerry ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10178.28,
+       "expenditures": null
+      },
+      {
        "name": "Perry, Zac ",
        "party": "D",
        "partyLabel": "Democratic",
@@ -543564,6 +558172,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "O'Donnell, Kathleen  T",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 380,
+       "expenditures": null
+      },
+      {
        "name": "Ricci, Vince  J",
        "party": "R",
        "partyLabel": "Republican",
@@ -543823,6 +558439,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Montana Commissioner of Political Practices (itemized + under-$35 contributions)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "O’Connor, Joshua-Luke ",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 640,
+       "expenditures": null
+      },
       {
        "name": "Sales, Walter ",
        "party": "R",
@@ -547261,6 +561885,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Montana Commissioner of Political Practices (itemized + under-$35 contributions)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "O'Brien, Shannon ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 26205.92,
+       "expenditures": null
+      },
       {
        "name": "Sardot, Niki ",
        "party": "R",
@@ -555704,6 +570336,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
+       "name": "O'Brien, Emily",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
        "name": "Oversen, Kylie",
        "party": "D",
        "partyLabel": "Democratic",
@@ -555831,6 +570471,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "North Dakota Secretary of State (year-end statements)",
      "dataThrough": "12/31/2016",
      "candidates": [
+      {
+       "name": "O'Connell, David",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
       {
        "name": "Vedaa, Shawn",
        "party": "R",
@@ -558253,6 +572901,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 11957.22,
+       "expenditures": null
+      },
+      {
+       "name": "O'Brien, Emily",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 27213,
        "expenditures": null
       }
      ]
@@ -566006,6 +580662,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 68833,
        "expenditures": null
+      },
+      {
+       "name": "O`SCANLON, DECLAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 195168,
+       "expenditures": null
       }
      ]
     },
@@ -568886,6 +583550,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
+       "name": "Brown-Blaeuer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21039.5,
+       "expenditures": null
+      },
+      {
        "name": "Fadden",
        "party": "D",
        "partyLabel": "Democratic",
@@ -568943,6 +583615,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 264952,
+       "expenditures": null
+      },
+      {
+       "name": "D`ANGELO, ANTHONY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
        "expenditures": null
       },
       {
@@ -569609,6 +584289,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "New Jersey ELEC 20-day post-election report (cumulative receipts; joint slates split evenly)",
      "dataThrough": "20 days after the 2021 general",
      "candidates": [
+      {
+       "name": "O'SCANLON, DECLAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 202863,
+       "expenditures": null
+      },
       {
        "name": "SOLOMENO, VINCENT III",
        "party": "D",
@@ -574264,6 +588952,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "O'DONNELL, TERRY SCOTT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 178784.59,
+       "expenditures": 107613.42
+      },
+      {
        "name": "WELCH, KEITH SR. ALAN",
        "party": "D",
        "partyLabel": "Democratic",
@@ -576738,6 +591434,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 30368.14,
        "expenditures": 25111.53
+      },
+      {
+       "name": "O'DONNELL, TERRY S",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 229172.29,
+       "expenditures": 129360.94
       }
      ]
     },
@@ -578652,6 +593356,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 196129.91999999998,
        "expenditures": 232252.05
+      },
+      {
+       "name": "O'BRIEN, BRYAN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10435,
+       "expenditures": 8747.5
       }
      ]
     },
@@ -579111,6 +593823,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Oklahoma Ethics Commission (race totals, monetary + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "O'DONNELL, TERRY S",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 292792.98,
+       "expenditures": 188927.05
+      },
       {
        "name": "YOUNG, SUSAN CARLE",
        "party": "D",
@@ -579631,6 +594351,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Oklahoma Ethics Commission (race totals, monetary + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "GIPSON-BLACK, GLENN AUSTIN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7402.41,
+       "expenditures": 7462.41
+      },
       {
        "name": "RUSS, TODD",
        "party": "R",
@@ -581229,6 +595957,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Oklahoma Ethics Commission (race totals, monetary + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "O'DONNELL, TERRY S",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 214153.72,
+       "expenditures": 214047.09
+      },
       {
        "name": "YOUNG, SUSAN CARLE",
        "party": "D",
@@ -586307,6 +601043,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "12": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends of John Lively",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 115708.37,
+       "expenditures": null
+      }
+     ]
+    },
     "13": {
      "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
      "dataThrough": "12/31/2016",
@@ -586433,6 +601183,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "31": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Brad Witt for State Representative",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 158356.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ken Helm for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 79967.69,
+       "expenditures": null
+      }
+     ]
+    },
     "38": {
      "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
      "dataThrough": "12/31/2016",
@@ -586507,6 +601285,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Other",
        "incumbent": false,
        "contributions": 12,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Committee to Elect Janelle Bynum",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1133684.71,
        "expenditures": null
       }
      ]
@@ -586665,6 +601457,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "12": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends of John Lively",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 73427.89,
+       "expenditures": null
+      }
+     ]
+    },
     "13": {
      "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
      "dataThrough": "12/31/2018",
@@ -586799,6 +601605,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "25": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends of Dave McCall",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30410.4,
+       "expenditures": null
+      }
+     ]
+    },
     "29": {
      "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
      "dataThrough": "12/31/2018",
@@ -586818,11 +601638,47 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "Brad Witt for State Representative",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 183963.87,
+       "expenditures": null
+      },
+      {
        "name": "Stout for State Rep",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 23564.78,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Ken Helm for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 78959.68,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends of Christine Drazan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 210768.83,
        "expenditures": null
       }
      ]
@@ -586879,6 +601735,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 72061.47,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee to Elect Janelle Bynum",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 894158.25,
        "expenditures": null
       }
      ]
@@ -587087,6 +601957,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "12": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Friends of John Lively",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 75236.81,
+       "expenditures": null
+      }
+     ]
+    },
     "13": {
      "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
      "dataThrough": "12/31/2020",
@@ -587226,6 +602110,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2020",
      "candidates": [
       {
+       "name": "Brad Witt for State Representative",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 333886.02,
+       "expenditures": null
+      },
+      {
        "name": "Stout for State Rep",
        "party": "R",
        "partyLabel": "Republican",
@@ -587235,10 +602127,46 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "34": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Ken Helm for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 54825,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Bob Niemeyer Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1643.77,
+       "expenditures": null
+      }
+     ]
+    },
     "39": {
      "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Friends of Christine Drazan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1075107.55,
+       "expenditures": null
+      },
       {
        "name": "Friends of Tessah Danel",
        "party": "D",
@@ -587315,6 +602243,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 66697.1,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Committee to Elect Janelle Bynum",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 166739.19,
        "expenditures": null
       }
      ]
@@ -587649,6 +602591,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 8930,
+       "expenditures": null
+      },
+      {
+       "name": "LUIS A. VARGAS RIVERA",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 2512.64,
        "expenditures": null
       }
      ]
@@ -588455,6 +603405,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 2625,
+       "expenditures": null
+      }
+     ]
+    },
+    "54": {
+     "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "WILLIAM W O'BRIEN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 32700,
        "expenditures": null
       }
      ]
@@ -589606,6 +604570,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 10038.89,
        "expenditures": null
+      },
+      {
+       "name": "LUIS A. VARGAS RIVERA",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 3096,
+       "expenditures": null
       }
      ]
     },
@@ -590359,6 +605331,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "54": {
+     "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "WILLIAM W O'BRIEN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22830,
+       "expenditures": null
+      }
+     ]
+    },
     "55": {
      "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
      "dataThrough": "12/31/2018",
@@ -590642,6 +605628,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2018",
      "candidates": [
       {
+       "name": "TERRI-DENISE CORTVRIEND",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 25602.75,
+       "expenditures": null
+      },
+      {
        "name": "KENNETH J. MENDONCA",
        "party": "R",
        "partyLabel": "Republican",
@@ -590871,6 +605865,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
      "dataThrough": "12/31/2018",
      "candidates": [
+      {
+       "name": "STEPHANIE CALISE WESTGATE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3100,
+       "expenditures": null
+      },
       {
        "name": "JAMES A SEVENEY",
        "party": "D",
@@ -592309,6 +607311,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "54": {
+     "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "WILLIAM W O'BRIEN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 21120,
+       "expenditures": null
+      }
+     ]
+    },
     "55": {
      "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
      "dataThrough": "12/31/2020",
@@ -592599,6 +607615,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "TERRI-DENISE CORTVRIEND",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 34970.88,
+       "expenditures": null
+      },
       {
        "name": "KENNETH J. MENDONCA",
        "party": "R",
@@ -594305,6 +609329,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "54": {
+     "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "WILLIAM W O'BRIEN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 37680,
+       "expenditures": null
+      }
+     ]
+    },
     "55": {
      "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
      "dataThrough": "12/31/2022",
@@ -594564,6 +609602,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2022",
      "candidates": [
       {
+       "name": "RAE-ANN LAWRENCE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2941.19,
+       "expenditures": null
+      },
+      {
        "name": "JUNE SAGER SPEAKMAN",
        "party": "D",
        "partyLabel": "Democratic",
@@ -594627,6 +609673,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Other",
        "incumbent": false,
        "contributions": 674,
+       "expenditures": null
+      }
+     ]
+    },
+    "72": {
+     "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "TERRI-DENISE CORTVRIEND",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 20595.5,
        "expenditures": null
       }
      ]
@@ -623194,6 +638254,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2016",
      "candidates": [
       {
+       "name": "Buxton, David (Gregg)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 54281,
+       "expenditures": 22902.9
+      },
+      {
        "name": "Yorgason, Alan",
        "party": "D",
        "partyLabel": "Democratic",
@@ -624850,6 +639918,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 3139.21,
        "expenditures": 1492.95
+      },
+      {
+       "name": "Zeno, Parry",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 545,
+       "expenditures": 735
       }
      ]
     },
@@ -626821,6 +641897,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "20": {
+     "source": "Utah Lieutenant Governor disclosures (itemized contributions)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Buxton, David (Gregg)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41721.62,
+       "expenditures": 88465.21
+      }
+     ]
+    },
     "23": {
      "source": "Utah Lieutenant Governor disclosures (itemized contributions)",
      "dataThrough": "12/31/2020",
@@ -628156,6 +643246,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 28871,
        "expenditures": 41066.17
+      },
+      {
+       "name": "Zeno, Parry",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 690,
+       "expenditures": 1115.98
       }
      ]
     },
@@ -629802,12 +644900,12 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": 33360.85
       },
       {
-       "name": "Parry, Zeno",
+       "name": "Zeno, Parry",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 80,
-       "expenditures": 413.12
+       "contributions": 83.03,
+       "expenditures": 0
       }
      ]
     },
@@ -632336,6 +647434,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 350,
        "expenditures": 420
+      },
+      {
+       "name": "PLAGEMAN, ROBERT MICHAEL",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8568.31,
+       "expenditures": 9359.79
       }
      ]
     },
@@ -632566,6 +647672,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 0,
        "expenditures": 0
+      },
+      {
+       "name": "WRIGHT, NATHAN KURT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3800,
+       "expenditures": 3610.58
       }
      ]
     },
@@ -633197,6 +648311,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "Orange-2": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COPELAND HANZAS, SARAH LOUISE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7199,
+       "expenditures": 9952.46
+      }
+     ]
+    },
     "Rutland-5": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2016",
@@ -633368,6 +648496,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": 4528.45
       },
       {
+       "name": "LEFAVOUR, BRADFORD DEXTER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6427.5,
+       "expenditures": 3279.75
+      },
+      {
        "name": "SWENSON, MATT",
        "party": "O",
        "partyLabel": "Other",
@@ -633462,6 +648598,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 1400,
        "expenditures": 2582.21
+      },
+      {
+       "name": "HOOPER, PHILIP JAY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7365.04,
+       "expenditures": 8105.64
       },
       {
        "name": "JICKLING, BEN",
@@ -633618,6 +648762,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 0,
        "expenditures": 0
+      },
+      {
+       "name": "TROIANO, JOSEPH \"CHIP\"",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 6778,
+       "expenditures": 5120.1
       }
      ]
     },
@@ -634640,6 +649792,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 775,
        "expenditures": 1021.42
+      },
+      {
+       "name": "O'BRIEN, JOHN KENNETH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4587.9,
+       "expenditures": 3675.34
       }
      ]
     },
@@ -635140,6 +650300,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 0,
        "expenditures": 0
+      },
+      {
+       "name": "WRIGHT, NATHAN KURT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5304.3,
+       "expenditures": 4447.71
       }
      ]
     },
@@ -635290,6 +650458,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 1425,
        "expenditures": 2263.56
+      },
+      {
+       "name": "HOOPER, PHILIP JAY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 4718,
+       "expenditures": 3882.12
       },
       {
        "name": "JICKLING, BEN",
@@ -635583,6 +650759,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "Orange-2": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "COPELAND HANZAS, SARAH LOUISE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3770,
+       "expenditures": 3541.71
+      }
+     ]
+    },
     "Franklin-6": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2018",
@@ -635640,6 +650830,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 640,
        "expenditures": 2499.14
+      },
+      {
+       "name": "JULIUSSEN-STEVENSON, HEATHER ANN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3053.19,
+       "expenditures": 2580.63
       },
       {
        "name": "NOTTE, WILLIAM JOSEPH",
@@ -635916,6 +651114,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 0,
        "expenditures": 0
+      },
+      {
+       "name": "TROIANO, JOSEPH \"CHIP\"",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7884,
+       "expenditures": 6315.48
       }
      ]
     },
@@ -637547,6 +652753,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "Windham-4": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "BOS-LUN, MICHELLE CHRISTINE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9337.17,
+       "expenditures": 5388.07
+      },
+      {
+       "name": "MROWICKI, MIKE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3820,
+       "expenditures": 3690.1
+      }
+     ]
+    },
     "Chittenden-2": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2020",
@@ -637566,6 +652794,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 4328,
        "expenditures": 4106.75
+      },
+      {
+       "name": "O'ROURKE, ANTHONY JOSEPH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5185,
+       "expenditures": 3813.74
       }
      ]
     },
@@ -637872,6 +653108,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 2040,
        "expenditures": 1535
+      },
+      {
+       "name": "TROIANO, JOSEPH \"CHIP\"",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 4745,
+       "expenditures": 5930.79
       }
      ]
     },
@@ -637886,6 +653130,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 6005,
        "expenditures": 4158.16
+      }
+     ]
+    },
+    "Orange-2": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "COPELAND HANZAS, SARAH LOUISE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 5031.98,
+       "expenditures": 5368.86
+      },
+      {
+       "name": "LANG, ZACHARY MICHAEL",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3376.36,
+       "expenditures": 2225.61
       }
      ]
     },
@@ -638443,6 +653709,52 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "Orange-Washington-Addison": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "HOOPER, PHILIP JAY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3320,
+       "expenditures": 0
+      },
+      {
+       "name": "REED, PETER MARTIN",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 5236,
+       "expenditures": 4717.95
+      },
+      {
+       "name": "ROCHE, JOSEPH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 300,
+       "expenditures": 300
+      },
+      {
+       "name": "RUSSELL, CHARLES WILLIAM",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": 0
+      },
+      {
+       "name": "SATCOWITZ, LAWRENCE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4878.04,
+       "expenditures": 4307.22
+      }
+     ]
+    },
     "Rutland-6": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2020",
@@ -638659,20 +653971,6 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "Orange-2": {
-     "source": "Vermont Secretary of State campaign finance (total raised)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "LANG, ZACHARY MICHAEL",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 3376.36,
-       "expenditures": 2225.61
-      }
-     ]
-    },
     "Franklin-7": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2020",
@@ -638753,17 +654051,25 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "Windham-4": {
+    "Addison-5": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "MROWICKI, MIKE",
+       "name": "MCGILL, ADRIEL JUBILEE",
        "party": "D",
        "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8870.68,
+       "expenditures": 4482.26
+      },
+      {
+       "name": "SMITH, HARVEY T",
+       "party": "R",
+       "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 3820,
-       "expenditures": 3690.1
+       "contributions": 2350,
+       "expenditures": 2455.99
       }
      ]
     },
@@ -638778,6 +654084,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 577.26,
        "expenditures": 701.69
+      }
+     ]
+    },
+    "Windsororange-1": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "O'BRIEN, JOHN KENNETH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": 834.96
       }
      ]
     },
@@ -638850,44 +654170,6 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 4430,
        "expenditures": 3588.7
-      }
-     ]
-    },
-    "Orange-Washington-Addison": {
-     "source": "Vermont Secretary of State campaign finance (total raised)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "REED, PETER MARTIN",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 5236,
-       "expenditures": 4717.95
-      },
-      {
-       "name": "ROCHE, JOSEPH",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 300,
-       "expenditures": 300
-      },
-      {
-       "name": "RUSSELL, CHARLES WILLIAM",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 0,
-       "expenditures": 0
-      },
-      {
-       "name": "SATCOWITZ, LAWRENCE",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 4878.04,
-       "expenditures": 4307.22
       }
      ]
     },
@@ -638990,20 +654272,6 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 7867.83,
        "expenditures": 7867.83
-      }
-     ]
-    },
-    "Addison-5": {
-     "source": "Vermont Secretary of State campaign finance (total raised)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "SMITH, HARVEY T",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 2350,
-       "expenditures": 2455.99
       }
      ]
     },
@@ -639218,6 +654486,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 15942.96,
        "expenditures": 14072
+      },
+      {
+       "name": "RAM HINSDALE, KESHA",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 85568.6,
+       "expenditures": 82228.58
       },
       {
        "name": "REDIC, ERICKA",
@@ -639792,6 +655068,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": 3617.43
       },
       {
+       "name": "O'ROURKE, ANTHONY JOSEPH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 600,
+       "expenditures": 612.16
+      },
+      {
        "name": "ROY, BRUCE A",
        "party": "R",
        "partyLabel": "Republican",
@@ -640137,6 +655421,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "Windham-3": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "BOS-LUN, MICHELLE CHRISTINE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7666.45,
+       "expenditures": 5984.21
+      },
+      {
+       "name": "GOLDMAN, LESLIE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7000,
+       "expenditures": 6189.8
+      }
+     ]
+    },
     "Lamoille-3": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2022",
@@ -640348,6 +655654,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 5650,
        "expenditures": 5650
+      },
+      {
+       "name": "MCGILL, ADRIEL JUBILEE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6944.74,
+       "expenditures": 5413
       }
      ]
     },
@@ -640494,6 +655808,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 0,
        "expenditures": 0
+      }
+     ]
+    },
+    "Franklin-8": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "DEES-ERICKSON, LAUREN PATRICE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17967.69,
+       "expenditures": 15575.52
+      },
+      {
+       "name": "TOOF, CASEY JOSEPH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11083,
+       "expenditures": 3675.22
       }
      ]
     },
@@ -640807,20 +656143,6 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "Windham-3": {
-     "source": "Vermont Secretary of State campaign finance (total raised)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "GOLDMAN, LESLIE",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 7000,
-       "expenditures": 6189.8
-      }
-     ]
-    },
     "Washington-6": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2022",
@@ -640980,6 +656302,36 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 2917.5,
        "expenditures": 0
+      }
+     ]
+    },
+    "Orange-Washington-Addison": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "HOOPER, PHILIP JAY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": 0
+      },
+      {
+       "name": "SATCOWITZ, LAWRENCE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 950,
+       "expenditures": 441.62
+      },
+      {
+       "name": "TOWNSEND, WAYNE D.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2532.37,
+       "expenditures": 2529.37
       }
      ]
     },
@@ -641351,6 +656703,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "Windsororange-1": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "O'BRIEN, JOHN KENNETH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": 10
+      }
+     ]
+    },
     "Franklin-4": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2022",
@@ -641440,6 +656806,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 704.25,
        "expenditures": 1067.43
+      },
+      {
+       "name": "STONE, MARY-KATHERINE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 800,
+       "expenditures": 276
       }
      ]
     },
@@ -641454,28 +656828,6 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 12600,
        "expenditures": 11506.12
-      }
-     ]
-    },
-    "Orange-Washington-Addison": {
-     "source": "Vermont Secretary of State campaign finance (total raised)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "SATCOWITZ, LAWRENCE",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 950,
-       "expenditures": 441.62
-      },
-      {
-       "name": "TOWNSEND, WAYNE D.",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 2532.37,
-       "expenditures": 2529.37
       }
      ]
     },
@@ -641623,17 +656975,17 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "Franklin-8": {
+    "Caledonia-2": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "TOOF, CASEY JOSEPH",
-       "party": "R",
-       "partyLabel": "Republican",
+       "name": "TROIANO, JOSEPH \"CHIP\"",
+       "party": "D",
+       "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 11083,
-       "expenditures": 3675.22
+       "contributions": 4790,
+       "expenditures": 6135.68
       }
      ]
     },
@@ -641752,6 +657104,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 8782.1,
        "expenditures": 9195.97
+      },
+      {
+       "name": "LEFAVOUR, BRADFORD DEXTER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5455,
+       "expenditures": 4015.5
       },
       {
        "name": "PERCHLIK, ANDREW",
@@ -643079,6 +658439,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "Rutland-3": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "CHRIS BROWN, ELECT CHRIS BROWN VT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2295,
+       "expenditures": 2295
+      }
+     ]
+    },
     "Windsor-6": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2024",
@@ -643607,6 +658981,44 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "Orange-Washington-Addison": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "HOOPER, PHILIP JAY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 400,
+       "expenditures": 1853.44
+      },
+      {
+       "name": "SATCOWITZ, LAWRENCE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1850,
+       "expenditures": 1794.7
+      },
+      {
+       "name": "SIKORA, KENNETH ROB",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2781.44,
+       "expenditures": 2066.69
+      },
+      {
+       "name": "TOWNSEND, WAYNE D",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1933.59,
+       "expenditures": 1214.83
+      }
+     ]
+    },
     "Chittenden-18": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2024",
@@ -643973,6 +659385,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "Addison-5": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "MCGILL, ADRIEL JUBILEE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2035,
+       "expenditures": 3707.86
+      }
+     ]
+    },
     "Orange-Caledonia": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "12/31/2024",
@@ -644266,36 +659692,6 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 8380,
        "expenditures": 5420.19
-      }
-     ]
-    },
-    "Orange-Washington-Addison": {
-     "source": "Vermont Secretary of State campaign finance (total raised)",
-     "dataThrough": "12/31/2024",
-     "candidates": [
-      {
-       "name": "SATCOWITZ, LAWRENCE",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 1850,
-       "expenditures": 1794.7
-      },
-      {
-       "name": "SIKORA, KENNETH ROB",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 2781.44,
-       "expenditures": 2066.69
-      },
-      {
-       "name": "TOWNSEND, WAYNE D",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 1933.59,
-       "expenditures": 1214.83
       }
      ]
     },
@@ -646337,6 +661733,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "Windsor-Orange-2": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "10/16/2026",
+     "candidates": [
+      {
+       "name": "GISH, DIEDRE (\"DEE\")",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7966,
+       "expenditures": 6157.5
+      },
+      {
+       "name": "RHIM, LAUREN MORANDO",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10548.23,
+       "expenditures": 10383.47
+      }
+     ]
+    },
     "Windham-9": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "10/16/2026",
@@ -647007,6 +662425,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "Addison-5": {
+     "source": "Vermont Secretary of State campaign finance (total raised)",
+     "dataThrough": "10/16/2026",
+     "candidates": [
+      {
+       "name": "MCGILL, ADRIEL JUBILEE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1345,
+       "expenditures": 1634.96
+      }
+     ]
+    },
     "Washington-6": {
      "source": "Vermont Secretary of State campaign finance (total raised)",
      "dataThrough": "10/16/2026",
@@ -647200,20 +662632,6 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 9209.92,
        "expenditures": 5450
-      }
-     ]
-    },
-    "Windsor-Orange-2": {
-     "source": "Vermont Secretary of State campaign finance (total raised)",
-     "dataThrough": "10/16/2026",
-     "candidates": [
-      {
-       "name": "RHIM, LAUREN MORANDO",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 10548.23,
-       "expenditures": 10383.47
       }
      ]
     },
@@ -647964,7 +663382,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 21370,
        "expenditures": null
       }
      ]
@@ -648046,7 +663464,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 37102.32,
        "expenditures": null
       },
       {
@@ -648068,7 +663486,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 32505,
        "expenditures": null
       },
       {
@@ -648076,7 +663494,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 2571.66,
        "expenditures": null
       }
      ]
@@ -648098,7 +663516,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 7750,
        "expenditures": null
       }
      ]
@@ -648142,7 +663560,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 19494.84,
        "expenditures": null
       }
      ]
@@ -648178,7 +663596,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 5950,
        "expenditures": null
       },
       {
@@ -648186,7 +663604,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 52732.98,
        "expenditures": null
       },
       {
@@ -648194,7 +663612,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 9350,
        "expenditures": null
       },
       {
@@ -648202,7 +663620,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 24300,
+       "expenditures": null
+      },
+      {
+       "name": "J. MORGAN LEACH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19299.33,
        "expenditures": null
       },
       {
@@ -648210,7 +663636,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 31180,
        "expenditures": null
       }
      ]
@@ -648224,7 +663650,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 15200,
        "expenditures": null
       },
       {
@@ -648292,7 +663718,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 10100,
        "expenditures": null
       }
      ]
@@ -648306,7 +663732,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 1954.82,
        "expenditures": null
       },
       {
@@ -648350,7 +663776,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 2607,
        "expenditures": null
       },
       {
@@ -648358,7 +663784,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 6643.48,
        "expenditures": null
       },
       {
@@ -648374,7 +663800,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 39011.21,
        "expenditures": null
       },
       {
@@ -648382,7 +663808,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 52448.13,
        "expenditures": null
       },
       {
@@ -648412,7 +663838,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 6990,
        "expenditures": null
       },
       {
@@ -648436,7 +663862,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 51816.7,
        "expenditures": null
       }
      ]
@@ -648450,7 +663876,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 11511.08,
        "expenditures": null
       },
       {
@@ -648458,7 +663884,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 39104.84,
        "expenditures": null
       }
      ]
@@ -648480,7 +663906,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 0,
        "expenditures": null
       },
       {
@@ -648496,7 +663922,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 1050,
        "expenditures": null
       },
       {
@@ -648518,7 +663944,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 6110,
        "expenditures": null
       },
       {
@@ -648526,7 +663952,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 35278.16,
        "expenditures": null
       }
      ]
@@ -648540,7 +663966,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 600,
        "expenditures": null
       },
       {
@@ -648562,7 +663988,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 25775,
        "expenditures": null
       },
       {
@@ -648570,7 +663996,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 1775.21,
        "expenditures": null
       },
       {
@@ -648600,7 +664026,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 225,
        "expenditures": null
       },
       {
@@ -648622,7 +664048,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 40609.29,
        "expenditures": null
       },
       {
@@ -648630,7 +664056,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 19550,
        "expenditures": null
       },
       {
@@ -648652,7 +664078,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 18150,
        "expenditures": null
       },
       {
@@ -648660,7 +664086,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 3587.64,
        "expenditures": null
       }
      ]
@@ -648674,7 +664100,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 8885,
        "expenditures": null
       },
       {
@@ -648682,7 +664108,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 2187,
        "expenditures": null
       }
      ]
@@ -648696,7 +664122,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 8820.67,
        "expenditures": null
       },
       {
@@ -648704,7 +664130,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 30211.7,
        "expenditures": null
       },
       {
@@ -648712,7 +664138,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 17762.99,
        "expenditures": null
       },
       {
@@ -648720,7 +664146,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 66582.68,
        "expenditures": null
       },
       {
@@ -648736,7 +664162,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 7621.16,
        "expenditures": null
       }
      ]
@@ -648750,7 +664176,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 6650,
+       "expenditures": null
+      },
+      {
+       "name": "WILLIAM A. (BILL) O'BRIEN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9470,
        "expenditures": null
       },
       {
@@ -648766,7 +664200,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 9195.99,
        "expenditures": null
       }
      ]
@@ -648780,7 +664214,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 34209.7,
        "expenditures": null
       },
       {
@@ -648788,7 +664222,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 574.37,
        "expenditures": null
       }
      ]
@@ -648824,7 +664258,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 16545,
        "expenditures": null
       },
       {
@@ -648832,7 +664266,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 21793.82,
        "expenditures": null
       }
      ]
@@ -648854,7 +664288,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 3355.94,
        "expenditures": null
       },
       {
@@ -648862,7 +664296,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 28233.98,
        "expenditures": null
       },
       {
@@ -648870,7 +664304,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 7167.95,
        "expenditures": null
       },
       {
@@ -648878,7 +664312,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 19955.27,
        "expenditures": null
       },
       {
@@ -648894,7 +664328,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 44320.36,
        "expenditures": null
       }
      ]
@@ -648916,7 +664350,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 25500,
        "expenditures": null
       }
      ]
@@ -648930,7 +664364,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 25846.01,
        "expenditures": null
       }
      ]
@@ -648968,7 +664402,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 22850,
        "expenditures": null
       },
       {
@@ -648976,7 +664410,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 48270,
        "expenditures": null
       },
       {
@@ -648992,7 +664426,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 23996.62,
        "expenditures": null
       },
       {
@@ -649000,7 +664434,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 18615,
        "expenditures": null
       }
      ]
@@ -649030,7 +664464,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 0,
        "expenditures": null
       },
       {
@@ -649062,7 +664496,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 17175,
        "expenditures": null
       }
      ]
@@ -649128,7 +664562,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 30660.71,
        "expenditures": null
       }
      ]
@@ -649216,7 +664650,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 0,
        "expenditures": null
       },
       {
@@ -649224,7 +664658,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 22375,
        "expenditures": null
       },
       {
@@ -649232,7 +664666,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 12770,
        "expenditures": null
       },
       {
@@ -649262,7 +664696,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 1547.97,
        "expenditures": null
       },
       {
@@ -649270,7 +664704,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 0,
        "expenditures": null
       },
       {
@@ -649292,7 +664726,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 21700,
        "expenditures": null
       },
       {
@@ -649322,7 +664756,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 16075,
        "expenditures": null
       }
      ]
@@ -649336,7 +664770,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 13370,
        "expenditures": null
       },
       {
@@ -649344,7 +664778,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 5639.69,
        "expenditures": null
       }
      ]
@@ -649366,7 +664800,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 28328.92,
        "expenditures": null
       },
       {
@@ -649390,7 +664824,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 44535.86,
        "expenditures": null
       },
       {
@@ -649398,7 +664832,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 50638.38,
        "expenditures": null
       },
       {
@@ -649414,7 +664848,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 36939.09,
        "expenditures": null
       }
      ]
@@ -649428,7 +664862,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 13850,
        "expenditures": null
       },
       {
@@ -649436,7 +664870,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 22551.57,
        "expenditures": null
       }
      ]
@@ -649450,7 +664884,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 68011.9,
        "expenditures": null
       },
       {
@@ -649458,7 +664892,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 3646.17,
        "expenditures": null
       },
       {
@@ -649466,7 +664900,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 26575,
        "expenditures": null
       },
       {
@@ -649474,7 +664908,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 7940,
        "expenditures": null
       },
       {
@@ -649482,7 +664916,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 30100,
        "expenditures": null
       },
       {
@@ -649490,7 +664924,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 200,
        "expenditures": null
       },
       {
@@ -649498,7 +664932,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 1950,
        "expenditures": null
       }
      ]
@@ -649536,7 +664970,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 31205,
        "expenditures": null
       },
       {
@@ -649560,7 +664994,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 18105.34,
        "expenditures": null
       },
       {
@@ -649568,7 +665002,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 6060,
        "expenditures": null
       },
       {
@@ -649584,7 +665018,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 4924.26,
        "expenditures": null
       },
       {
@@ -649628,7 +665062,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 2118.87,
        "expenditures": null
       },
       {
@@ -649650,7 +665084,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 5325,
        "expenditures": null
       }
      ]
@@ -649664,7 +665098,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 0,
        "expenditures": null
       },
       {
@@ -649672,7 +665106,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 1700,
        "expenditures": null
       },
       {
@@ -649680,7 +665114,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 23822,
        "expenditures": null
       }
      ]
@@ -649708,7 +665142,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 0,
        "expenditures": null
       },
       {
@@ -649716,7 +665150,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 10184.64,
        "expenditures": null
       }
      ]
@@ -649730,7 +665164,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 44131.48,
        "expenditures": null
       }
      ]
@@ -649766,7 +665200,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 9192.75,
+       "expenditures": null
+      },
+      {
+       "name": "S. MARSHALL WILSON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 12512.38,
        "expenditures": null
       }
      ]
@@ -649868,7 +665310,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 36267.9,
        "expenditures": null
       },
       {
@@ -649958,7 +665400,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 96250,
        "expenditures": null
       },
       {
@@ -650010,7 +665452,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 84375,
        "expenditures": null
       },
       {
@@ -650040,7 +665482,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 48871.8,
        "expenditures": null
       }
      ]
@@ -650076,7 +665518,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 200787.5,
        "expenditures": null
       },
       {
@@ -650084,7 +665526,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 8700,
        "expenditures": null
       }
      ]
@@ -650128,7 +665570,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 83984.62,
        "expenditures": null
       }
      ]
@@ -650164,7 +665606,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 813.36,
        "expenditures": null
       },
       {
@@ -650194,7 +665636,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 99505.65,
        "expenditures": null
       }
      ]
@@ -651520,6 +666962,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      "dataThrough": "12/31/2019",
      "candidates": [
       {
+       "name": "O'Dell, Paul Jr.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9250,
+       "expenditures": null
+      },
+      {
        "name": "Hill, Jordan",
        "party": "R",
        "partyLabel": "Republican",
@@ -651539,6 +666989,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 33634.47,
+       "expenditures": null
+      },
+      {
+       "name": "Lavender-Bowe, Cynthia",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 54835.33,
        "expenditures": null
       },
       {
@@ -654414,6 +669872,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 47705.5,
        "expenditures": null
+      },
+      {
+       "name": "Mongan-Saladini, Kimberly Ann",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 175,
+       "expenditures": null
       }
      ]
     },
@@ -656249,6 +671715,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 49259.44,
+       "expenditures": null
+      },
+      {
+       "name": "Coop-Gonzalez, Elias Gorden",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 28224.15,
        "expenditures": null
       }
      ]

@@ -740,6 +740,15 @@
     "expenditures": null
    }
   ],
+  "80": [
+   {
+    "name": "Friends of Sondy Pope-Roberts",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 13240,
+    "expenditures": null
+   }
+  ],
   "81": [
    {
     "name": "Friends of David Moore",
@@ -986,6 +995,13 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 382950.95,
+    "expenditures": null
+   },
+   {
+    "name": "Friends for Van Stippen",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 120097.81,
     "expenditures": null
    }
   ],

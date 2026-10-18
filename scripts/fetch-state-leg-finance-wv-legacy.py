@@ -11,8 +11,9 @@ with party and "Delegate District 1" / "Senatorial District 17"; each candidate 
 (P1–P3 primary, G1–G3 general, A17 annual) as machine-generated PDFs with a text layer, whose
 "TOTAL CONTRIBUTIONS ELECTION YEAR-TO-DATE" is cumulative for the CALENDAR election year — so the
 largest of them is the year's total. Activity in the year before (2015) is not included. About half the
-candidates filed on paper: those reports are handwritten scans with no text layer, and their figures
-are left out (null), not read by OCR.
+candidates filed on paper: those reports are handwritten scans with no text layer; their year-to-date
+box (Form F-7 bottom left, short Form F-7A mid right) was read by eye for the latest report into
+data-entry/state-leg-finance/manual/WV-{year}.json (113 of 117 scan-only candidates, 2026-10-18).
 Pat McGeehan, HD-1, 2016: $14,795.
 
 Output: data-entry/state-leg-finance/portal-raw/WV-{year}.json. Pages cached in scratch portal-cache/wv-legacy/.
@@ -69,6 +70,8 @@ def text(x):
 
 
 for year in [int(a) for a in sys.argv[1:]] or [2016]:
+    mp = os.path.join(ROOT, "data-entry", "state-leg-finance", "manual", f"WV-{year}.json")
+    MANUAL = json.load(open(mp))["reports"] if os.path.exists(mp) else {}
     page = op.open(BASE, timeout=120).read().decode("utf-8", "replace")
     form = {m.group(1): m.group(2) for m in re.finditer(r'<input type="hidden" name="([^"]*)" id="[^"]*" value="([^"]*)"', page)}
     form.update({"ctl00$MainContent$ddlYear": str(year), "ctl00$MainContent$ddlCandidateType": "General", "ctl00$MainContent$ddlContestLevel": "District", "ctl00$MainContent$btnSearch": "Search"})
@@ -92,6 +95,8 @@ for year in [int(a) for a in sys.argv[1:]] or [2016]:
             v = re.search(r"TOTAL CONTRIBUTIONS ELECTION YEAR-TO-DATE[^\d$]*\$?\s*([\d,]+\.\d\d)", t)
             if v:
                 ytd.append(float(v.group(1).replace(",", "")))
+            elif doc in MANUAL:  # a scanned paper report, its year-to-date box read by eye
+                ytd.append(MANUAL[doc]["contributions"])
         out.append({"name": cells[0], "party": cells[1], "chamber": "house" if m.group(1) == "Delegate" else "senate", "district": m.group(2),
                     "contributions": max(ytd) if ytd else None})
     body = {"state": "WV", "cycle": year, "source": SOURCE, "fetched": datetime.date.today().isoformat(), "dataThrough": f"12/31/{year}", "candidates": out}

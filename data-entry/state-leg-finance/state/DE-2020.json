@@ -22,6 +22,15 @@
     "expenditures": null
    }
   ],
+  "3": [
+   {
+    "name": "Dorsey Walker for DE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 8975,
+    "expenditures": null
+   }
+  ],
   "4": [
    {
     "name": "People For Brady",
@@ -181,6 +190,15 @@
     "expenditures": null
    }
   ],
+  "17": [
+   {
+    "name": "Minor-Brown for 17th District",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 20690,
+    "expenditures": null
+   }
+  ],
   "18": [
    {
     "name": "Committee to Elect David Bentz",
@@ -275,6 +293,13 @@
    }
   ],
   "26": [
+   {
+    "name": "Committee to Elect Madinah Wilson-Anton",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 91906.78,
+    "expenditures": null
+   },
    {
     "name": "Tim Conrad for Delaware",
     "party": "Republican",
@@ -433,6 +458,15 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 36403.36,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "Friends for Ruth Briggs King",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 19904.82,
     "expenditures": null
    }
   ],

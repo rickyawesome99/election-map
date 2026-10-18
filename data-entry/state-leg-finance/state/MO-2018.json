@@ -68,6 +68,13 @@
     "incumbent": true,
     "contributions": 19385,
     "expenditures": null
+   },
+   {
+    "name": "Committee To Elect Sandy Van Wagner",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17748.36,
+    "expenditures": null
    }
   ],
   "13": [
@@ -233,6 +240,15 @@
     "expenditures": null
    }
   ],
+  "30": [
+   {
+    "name": "Friends For Ryana Parks-Shaw",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 40369.06,
+    "expenditures": null
+   }
+  ],
   "31": [
    {
     "name": "Citizens For Dan Stacy",
@@ -380,6 +396,15 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 11925.47,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "Citizens For Cheri Toalson Reisch",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30902,
     "expenditures": null
    }
   ],
@@ -749,6 +774,15 @@
     "party": "Other",
     "incumbent": false,
     "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "86": [
+   {
+    "name": "Citizens For Maria Chappelle-Nadal",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12356.78,
     "expenditures": null
    }
   ],
@@ -1167,6 +1201,13 @@
     "incumbent": false,
     "contributions": 344.76,
     "expenditures": null
+   },
+   {
+    "name": "Sonya Murray Anderson For Missouri",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 34735,
+    "expenditures": null
    }
   ],
   "132": [
@@ -1336,6 +1377,13 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 16075,
+    "expenditures": null
+   },
+   {
+    "name": "Jackie Townes McGee For State Rep",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 1735.74,
     "expenditures": null
    }
   ],
