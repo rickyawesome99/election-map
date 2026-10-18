@@ -1,0 +1,1538 @@
+{
+ "state": "MO",
+ "cycle": 2016,
+ "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+ "dataThrough": "12/31/2016",
+ "house": {
+  "1": [
+   {
+    "name": "CITIZENS FOR ALLEN ANDREWS",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 18172.5,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "FRIENDS OF NATE WALKER COMMITTEE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 40703.82,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "FRIENDS FOR CRAIG REDMON",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 79172,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "OC LATTA JUSTICE FOR ALL",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 25980,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "FRIENDS FOR TIM REMOLE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 38793.79,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "FRIENDS OF RUSTY BLACK",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 52904.19,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "DELUS JOHNSON FOR MISSOURI ",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15650,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "CITIZENS FOR KENNETH W WILSON",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 41442.82,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "COMMITTEE TO ELECT NICK MARSHALL",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11317.82,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "CITIZENS FOR KEVIN CORLEW",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 243887.67,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "COMMITTEE TO ELECT JON CARPENTER",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 70282.44,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "FRIENDS OF MARK ELLEBRACHT",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 119615,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT MARY HILL",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 182222.38,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Committee To Elect Lauren Arthur",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 54626.65,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "INGRID BURNETT FOR MISSOURI",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 22723.35,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF VALORIE ENGHOLM FOR MISSORUI",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 1700,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "BILL KIDD FOR STATE REPRESENTATIVE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 126419.99,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "IRA ANDERS FOR STATE REPRESENTATIVE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 23750,
+    "expenditures": null
+   },
+   {
+    "name": "PRAY FIRST-VICKI RILEY",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1990,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "FRIENDS TO ELECT BRANDON ELLINGTON",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 31138.25,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "FRIENDS TO ELECT RANDY D DUNN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 37453.45,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "FRIENDS OF JUDY MORGAN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 33356,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "FRIENDS OF RICHARD BROWN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20755,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "FRIENDS OF RORY ROWLAND",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 39307.92,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "MISSOURIANS FOR MIKE CIERPIOT",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 419208.08,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "CITIZENS FOR DAN STACY",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 37348,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "CITIZENS FOR JEANIE LAUER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 45576,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "CITIZENS FOR DONNA PFAUTSCH",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 44100,
+    "expenditures": null
+   },
+   {
+    "name": "CHASE LINDER FOR STATE REPRESENTATIVE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5859.09,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "COMMITTEE TO ELECT REBECCA ROEBER TO THE 34TH",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 34810,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "CITIZENS FOR GARY CROSS",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 43535,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "FRIENDS OF DARON MCGEE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 63829.95,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "CITIZENS FOR JOE RUNIONS",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 24851,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "CITIZENS TO ELECT TJ BERRY",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 105566,
+    "expenditures": null
+   },
+   {
+    "name": "BRIAN LAUTENSCHLAGER",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "COMMITTEE TO ELECT JIM HANSEN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 48925,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "PATRONS TO ELECT BART KORMAN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 55185.47,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "CITIZENS FOR TOM PAULEY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 23643,
+    "expenditures": null
+   }
+  ],
+  "45": [
+   {
+    "name": "FRIENDS OF KIP KENDRICK",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 58485.95,
+    "expenditures": null
+   },
+   {
+    "name": "CITIZENS FOR WILLIAM LEE",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 3221,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "FRIENDS OF MARTHA STEVENS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 94102,
+    "expenditures": null
+   },
+   {
+    "name": "DON WATERMAN FOR STATE REP",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 8114,
+    "expenditures": null
+   }
+  ],
+  "47": [
+   {
+    "name": "VOTERS FOR SUSAN MCCLINTIC",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 228957.56,
+    "expenditures": null
+   }
+  ],
+  "49": [
+   {
+    "name": "FRIENDS FOR TRAVIS FITZWATER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 114226.7,
+    "expenditures": null
+   }
+  ],
+  "50": [
+   {
+    "name": "FRIENDS OF CALEB JONES",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 363773.66,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "COMMITTEE TO ELECT DEAN DOHRMAN STATE REPRESENTATIVE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30449,
+    "expenditures": null
+   },
+   {
+    "name": "JOHN COZORT",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "53": [
+   {
+    "name": "FRIENDS OF GLEN KOLKMEYER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 74335,
+    "expenditures": null
+   }
+  ],
+  "54": [
+   {
+    "name": "CONSERVATIVES FOR BOB GREGORY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11612.64,
+    "expenditures": null
+   }
+  ],
+  "55": [
+   {
+    "name": "Friends Of Rick Brattin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 95350,
+    "expenditures": null
+   }
+  ],
+  "57": [
+   {
+    "name": "FRIENDS OF WANDA BROWN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 26550,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT WILLIAM A GRIMES",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9574.23,
+    "expenditures": null
+   }
+  ],
+  "58": [
+   {
+    "name": "COMMITTEE TO ELECT DAVID WOOD REPRESENTATIVE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 63800,
+    "expenditures": null
+   }
+  ],
+  "60": [
+   {
+    "name": "FRIENDS OF KEVIN NELSON",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6692.43,
+    "expenditures": null
+   }
+  ],
+  "61": [
+   {
+    "name": "CITIZENS FOR TOM SMITH",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2550,
+    "expenditures": null
+   }
+  ],
+  "62": [
+   {
+    "name": "CITIZENS TO ELECT TOM HURST",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6600,
+    "expenditures": null
+   }
+  ],
+  "63": [
+   {
+    "name": "LIZ GATTRA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "64": [
+   {
+    "name": "FRIENDS OF ROBERT CORNEJO",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 222477.04,
+    "expenditures": null
+   }
+  ],
+  "66": [
+   {
+    "name": "JOHN A SAXTON",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "67": [
+   {
+    "name": "FRIENDS OF ALAN GREEN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 20296,
+    "expenditures": null
+   }
+  ],
+  "68": [
+   {
+    "name": "CITIZENS FOR KEITH ENGLISH",
+    "party": "Other",
+    "incumbent": true,
+    "contributions": 37325,
+    "expenditures": null
+   },
+   {
+    "name": "Citizens To Elect Jay Mosley LLC",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20420.18,
+    "expenditures": null
+   }
+  ],
+  "69": [
+   {
+    "name": "CITIZENS FOR GRETCHEN BANGERT",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 21121.4,
+    "expenditures": null
+   }
+  ],
+  "70": [
+   {
+    "name": "MISSOURIANS FOR BYRON DELEAR",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 143116.31,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF MARK MATTHIESEN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 77645,
+    "expenditures": null
+   }
+  ],
+  "71": [
+   {
+    "name": "FRIENDS OF SUE MEREDITH",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 48474.06,
+    "expenditures": null
+   },
+   {
+    "name": "ELECT JIM CAIN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3613.7,
+    "expenditures": null
+   }
+  ],
+  "72": [
+   {
+    "name": "DAN HYATT FOR MISSOURI",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3770,
+    "expenditures": null
+   },
+   {
+    "name": "MARY NICHOLS FOR STATE REP",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 55092.09,
+    "expenditures": null
+   }
+  ],
+  "74": [
+   {
+    "name": "FRIENDS OF CORA FAITH WALKER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 42928,
+    "expenditures": null
+   }
+  ],
+  "75": [
+   {
+    "name": "CITIZENS TO ELECT ALAN GRAY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17590,
+    "expenditures": null
+   }
+  ],
+  "76": [
+   {
+    "name": "JOSHUA PETERS FOR THE 76TH DISTRICT",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 89417.17,
+    "expenditures": null
+   }
+  ],
+  "78": [
+   {
+    "name": "COMMITTEE TO ELECT ERIK SHELQUIST",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1080.68,
+    "expenditures": null
+   },
+   {
+    "name": "Bruce Franks For State Rep",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 44464.82,
+    "expenditures": null
+   }
+  ],
+  "79": [
+   {
+    "name": "FRIENDS OF DAN ELDER",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 1105.86,
+    "expenditures": null
+   }
+  ],
+  "80": [
+   {
+    "name": "PETER MERIDETH FOR MO PROGRESS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 115584.65,
+    "expenditures": null
+   },
+   {
+    "name": "TERESSA ROSE EZELL",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "82": [
+   {
+    "name": "CITIZENS FOR DONNA BARINGER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 65342,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT ROBERT J CRUMP",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 300,
+    "expenditures": null
+   }
+  ],
+  "83": [
+   {
+    "name": "GINA MITTEN FOR STATE REPRESENTATIVE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 55506.52,
+    "expenditures": null
+   },
+   {
+    "name": "ANDREW BOLIN",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "84": [
+   {
+    "name": "CITIZENS FOR KARLA MAY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 44065,
+    "expenditures": null
+   }
+  ],
+  "85": [
+   {
+    "name": "CANDIDATE STEVEN MCKNIGHT",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1351.41,
+    "expenditures": null
+   }
+  ],
+  "86": [
+   {
+    "name": "JOE ADAMS FOR MISSOURI",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 45911,
+    "expenditures": null
+   },
+   {
+    "name": "JOY ELLIOTT",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "87": [
+   {
+    "name": "STACEY NEWMAN FOR STATE REPRESENTATIVE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 29221.8,
+    "expenditures": null
+   }
+  ],
+  "89": [
+   {
+    "name": "FRIENDS OF JOHN (A/K/A JACK) A SCHILLIGO",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 33400.96,
+    "expenditures": null
+   }
+  ],
+  "90": [
+   {
+    "name": "MARK MILTON FOR STATE REP",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 149280,
+    "expenditures": null
+   }
+  ],
+  "91": [
+   {
+    "name": "Sarah Unsicker For State Representative",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 107411,
+    "expenditures": null
+   }
+  ],
+  "92": [
+   {
+    "name": "FRIENDS OF DANIEL BOGLE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 30254.79,
+    "expenditures": null
+   },
+   {
+    "name": "DOUG BECK FOR STATE REPRESENTATIVE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 52620,
+    "expenditures": null
+   }
+  ],
+  "93": [
+   {
+    "name": "BOB BURNS FOR STATE REP COMMITTEE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 69700.46,
+    "expenditures": null
+   }
+  ],
+  "94": [
+   {
+    "name": "FRIENDS OF CLORIA BROWN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 122219.73,
+    "expenditures": null
+   }
+  ],
+  "95": [
+   {
+    "name": "CITIZENS FOR MARSHA HAEFNER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 127508.21,
+    "expenditures": null
+   }
+  ],
+  "97": [
+   {
+    "name": "TRACY SCOTT",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "98": [
+   {
+    "name": "FRIENDS OF NANCY CRAIG",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2895.13,
+    "expenditures": null
+   }
+  ],
+  "99": [
+   {
+    "name": "COMMITTEE TO ELECT JEAN EVANS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 80774,
+    "expenditures": null
+   },
+   {
+    "name": "WILLIAM H (BILL) PINKSTON",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "100": [
+   {
+    "name": "CITIZENS FOR DEREK GRIER",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 40352.07,
+    "expenditures": null
+   }
+  ],
+  "101": [
+   {
+    "name": "CITIZENS TO ELECT BRUCE DEGROOT",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 26012,
+    "expenditures": null
+   },
+   {
+    "name": "DENNIS LAVALLEE GROW MISSOURI COMMITTEE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 220,
+    "expenditures": null
+   }
+  ],
+  "103": [
+   {
+    "name": "COMMITTEE INSTITUTING EMPRESS MARGUERITE L DILLWORTH ROYAL MANAGEMENT",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 30,
+    "expenditures": null
+   }
+  ],
+  "104": [
+   {
+    "name": "CITIZENS OF DISTRICT 104 C/O PEGGY SHERWIN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3497.03,
+    "expenditures": null
+   }
+  ],
+  "105": [
+   {
+    "name": "FRIENDS OF PHIL CHRISTOFANELLI",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 83294.01,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT BRIAN D STIENS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20579,
+    "expenditures": null
+   }
+  ],
+  "107": [
+   {
+    "name": "FRIENDS OF NICK SCHROER",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 74555,
+    "expenditures": null
+   }
+  ],
+  "109": [
+   {
+    "name": "CITIZENS TO ELECT PAUL CURTMAN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 66088.15,
+    "expenditures": null
+   },
+   {
+    "name": "ELLEN J SKILJAN",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "110": [
+   {
+    "name": "FRIENDS OF KIRK MATHEWS",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 71073.26,
+    "expenditures": null
+   }
+  ],
+  "111": [
+   {
+    "name": "CITIZENS FOR SHANE RODEN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 69590.49,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT DEL VIEHLAND",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3125,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT JON SCHUESSLER",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 150,
+    "expenditures": null
+   }
+  ],
+  "112": [
+   {
+    "name": "ROBERT BUTLER CAMPAIGN FUND",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 113941.23,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF ROB VESCOVO",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 274611,
+    "expenditures": null
+   }
+  ],
+  "114": [
+   {
+    "name": "COMMITTEE TO ELECT BECKY RUTH",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 68701,
+    "expenditures": null
+   }
+  ],
+  "115": [
+   {
+    "name": "CITIZENS FOR ELAINE GANNON",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 75715.42,
+    "expenditures": null
+   }
+  ],
+  "117": [
+   {
+    "name": "FRIENDS FOR TRAVIS BARNES",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 56886.57,
+    "expenditures": null
+   }
+  ],
+  "118": [
+   {
+    "name": "CITIZENS TO ELECT BEN HARRIS",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 19201,
+    "expenditures": null
+   }
+  ],
+  "120": [
+   {
+    "name": "COMMITTEE TO ELECT JASON CHIPMAN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 20136.5,
+    "expenditures": null
+   }
+  ],
+  "122": [
+   {
+    "name": "BELIEVE IN STEVE LYNCH COMMITTEE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 7950,
+    "expenditures": null
+   }
+  ],
+  "123": [
+   {
+    "name": "FRIENDS FOR DIANE FRANKLIN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 51383.05,
+    "expenditures": null
+   }
+  ],
+  "124": [
+   {
+    "name": "CITIZENS FOR ROCKY MILLER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 127305.65,
+    "expenditures": null
+   }
+  ],
+  "126": [
+   {
+    "name": "PATRICIA PIKE FOR STATE REPRESENTATIVE-126",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 13386.4,
+    "expenditures": null
+   }
+  ],
+  "127": [
+   {
+    "name": "COMMITTEE TO ELECT MIKE KELLEY ",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17736.09,
+    "expenditures": null
+   }
+  ],
+  "128": [
+   {
+    "name": "JANET SHEFFIELD",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "129": [
+   {
+    "name": "FRIENDS OF SANDY CRAWFORD ",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 82915,
+    "expenditures": null
+   }
+  ],
+  "130": [
+   {
+    "name": "FRIENDS FOR JEFF MESSENGER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15625,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT ELLA JANE GOEPPINGER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5293,
+    "expenditures": null
+   }
+  ],
+  "131": [
+   {
+    "name": "PEOPLE FOR NATE BRANSCOM-STATE REPRESENTATIVE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2906.01,
+    "expenditures": null
+   }
+  ],
+  "132": [
+   {
+    "name": "CITIZENS FOR CRYSTAL QUADE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 96018.54,
+    "expenditures": null
+   }
+  ],
+  "133": [
+   {
+    "name": "FRIENDS OF CURTIS TRENT",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 54020.04,
+    "expenditures": null
+   }
+  ],
+  "134": [
+   {
+    "name": "Friends Of Elijah Haahr",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 268145,
+    "expenditures": null
+   }
+  ],
+  "135": [
+   {
+    "name": "FRIENDS OF STEVE HELMS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 106935,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF DAVID CARR",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "136": [
+   {
+    "name": "KEVIN AUSTIN FOR STATE REPRESENTATIVE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 157911,
+    "expenditures": null
+   }
+  ],
+  "137": [
+   {
+    "name": "COMMITTEE TO ELECT LYNDALL FRAKER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 93619.16,
+    "expenditures": null
+   }
+  ],
+  "138": [
+   {
+    "name": "CITIZENS FOR DON PHILLIPS",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11775,
+    "expenditures": null
+   }
+  ],
+  "139": [
+   {
+    "name": "FRIENDS FOR JERED TAYLOR",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 25377.44,
+    "expenditures": null
+   }
+  ],
+  "140": [
+   {
+    "name": "CITIZENS TO ELECT JIM BILLEDO",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8772,
+    "expenditures": null
+   }
+  ],
+  "141": [
+   {
+    "name": "FRIENDS OF HANNAH KELLY",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 52099.43,
+    "expenditures": null
+   }
+  ],
+  "142": [
+   {
+    "name": "CAMPAIGN TO ELECT BOBBY JOHNSTON",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 100,
+    "expenditures": null
+   }
+  ],
+  "144": [
+   {
+    "name": "FRIENDS FOR PAUL FITZWATER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 44651,
+    "expenditures": null
+   }
+  ],
+  "146": [
+   {
+    "name": "FRIENDS OF DONNA LICHTENEGGER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 15193.7,
+    "expenditures": null
+   }
+  ],
+  "147": [
+   {
+    "name": "FRIENDS OF KATHY SWAN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 110595.9,
+    "expenditures": null
+   }
+  ],
+  "148": [
+   {
+    "name": "FRIENDS OF HOLLY REHDER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 208004.33,
+    "expenditures": null
+   }
+  ],
+  "149": [
+   {
+    "name": "FRIENDS OF DON RONE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 85860,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF BRANTLEY ATCHLEY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 66054.01,
+    "expenditures": null
+   }
+  ],
+  "150": [
+   {
+    "name": "LENA SAMFORD FOR MISSOURI",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 41145.19,
+    "expenditures": null
+   }
+  ],
+  "152": [
+   {
+    "name": "FRIENDS OF TODD RICHARDSON",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1240181.32,
+    "expenditures": null
+   }
+  ],
+  "153": [
+   {
+    "name": "COMMITTEE TO ELECT MATT MICHEL",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7765.97,
+    "expenditures": null
+   }
+  ],
+  "154": [
+   {
+    "name": "SHAWN RHOADS FOR STATE REPRESENTATIVE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 44750,
+    "expenditures": null
+   },
+   {
+    "name": "CAMPAIGN TO ELECT TERRY HAMPTON",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 2913,
+    "expenditures": null
+   }
+  ],
+  "155": [
+   {
+    "name": "PATRONS FOR LYLE ROWLAND",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 24501,
+    "expenditures": null
+   }
+  ],
+  "156": [
+   {
+    "name": "JEFF JUSTUS FOR REPRESENTATIVE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 5225,
+    "expenditures": null
+   }
+  ],
+  "157": [
+   {
+    "name": "MIKE MOON FOR MISSOURI",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 20634.54,
+    "expenditures": null
+   },
+   {
+    "name": "THE COMMITTEE TO ELECT STEPHANIE DAVIS",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 17175,
+    "expenditures": null
+   }
+  ],
+  "159": [
+   {
+    "name": "FRIENDS TO ELECT BILL LANT",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30035,
+    "expenditures": null
+   }
+  ],
+  "160": [
+   {
+    "name": "FRIENDS TO ELECT BILL REIBOLDT",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 16114.06,
+    "expenditures": null
+   }
+  ],
+  "162": [
+   {
+    "name": "MISSOURI FOR CHARLIE DAVIS",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 41227.66,
+    "expenditures": null
+   }
+  ],
+  "163": [
+   {
+    "name": "MISSOURIANS FOR CODY SMITH",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 34853,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "1": [
+   {
+    "name": "SCOTT SIFTON FOR MISSOURI",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1304168.01,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT RANDY JOTTE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 693627.05,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "EDWARD R WEISSLER",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "CITIZENS TO ELECT JAMILAH NASHEED",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 410963.5,
+    "expenditures": null
+   },
+   {
+    "name": "STEPHEN O (STEVE) SCHAPER",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "COMMITTEE TO ELECT SHALONN `KIKI` CURLS",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 159266.25,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "FRIENDS FOR GINA WALSH",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 312006.5,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "FRIENDS OF ANDREW KOENIG",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 454772.26,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "CITIZENS FOR STEPHEN WEBBER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1838859.6,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF CALEB ROWDEN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2305304.98,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "RICHARD ORR FOR MISSOURI SENATE DISTRICT 23",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11201.05,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "DOUG LIBLA FOR SENATE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 261715,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "FRIENDS OF WAYNE WALLINGFORD",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 259091,
+    "expenditures": null
+   },
+   {
+    "name": "DONNIE OWENS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "CITIZENS FOR ED EMERY",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 158497,
+    "expenditures": null
+   },
+   {
+    "name": "ELECT TIM WELLS",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 5160,
+    "expenditures": null
+   },
+   {
+    "name": "LORA YOUNG",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "FRIENDS OF MIKE CUNNINGHAM 16",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 270528.74,
+    "expenditures": null
+   }
+  ]
+ }
+}

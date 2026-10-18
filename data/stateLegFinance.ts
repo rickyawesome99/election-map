@@ -59747,6 +59747,2390 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   }
  },
  "GA": {
+  "2016": {
+   "house": {
+    "3": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dewayne Hill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 70180.64,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Meadows",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 243261.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jason T. Ridley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7396.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "David Ralston",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1008793.84,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Matt Gurtler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 49616.98,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kevin Tanner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 63090.31,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Terry Rogers",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 60094,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Brandon D. Crisp",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2665.27,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Katie Dempsey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 49350.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Paul Battles",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29600,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Trey Kelley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 98677.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Howard Maxwell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 180769.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Scot Turner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13236,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Wes Cantrell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22317.38,
+       "expenditures": null
+      },
+      {
+       "name": "Oscar Hajloo",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1454.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mandi Ballinger",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 3800,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Todd Jones",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 83546,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Matt Dubnik",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27950,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michelle Jones",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13486.37,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Alan Powell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 123601.43,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tom McCall",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22481.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Justin Holsomback",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7329.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Earl Ehrhart",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 69100,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sam Teasley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 69001.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "David Wilkerson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 61545.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Erica Thomas",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 8650,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Erick E. Allen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 42699.44,
+       "expenditures": null
+      },
+      {
+       "name": "Rich Golick",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 164472.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michael Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3500,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Stacey Evans",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 237635.29,
+       "expenditures": null
+      },
+      {
+       "name": "Matt Vaughn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 13506.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sharon Cooper",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 214919.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Don L. Parsons",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 66199.52,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Matt Dollar",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 54059.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Carson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 73810.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jan Jones",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 242072.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Betty Price",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2700,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Charles E. Martin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42700.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Wendell Willard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 69550,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Deborah Silcox",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 226717.48,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sheila Jones",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 11811.66,
+       "expenditures": null
+      }
+     ]
+    },
+    "54": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Robert Gibeling",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 29255.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pat Gardner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 29220.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Park Cannon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 59432.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "59": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "David Dreyer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 223849.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ralph Nobles",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 196.99,
+       "expenditures": null
+      },
+      {
+       "name": "Keisha Waites",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 13350.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "61": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Roger Bruce",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 9740.35,
+       "expenditures": null
+      }
+     ]
+    },
+    "63": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Debra Bazemore",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13493.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "64": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Derrick L. Jackson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 40366.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "66": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bruce Emory",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8226.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "67": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Micah Gravley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 33324,
+       "expenditures": null
+      }
+     ]
+    },
+    "70": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lynn Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 64076.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "71": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cynthia C. Bennett",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4365.35,
+       "expenditures": null
+      }
+     ]
+    },
+    "72": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Josh Bonner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 52953.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "73": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Karen Mathiak",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 119569.34,
+       "expenditures": null
+      },
+      {
+       "name": "Rahim Talley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1000,
+       "expenditures": null
+      }
+     ]
+    },
+    "74": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Valencia Stovall",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 5423.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "76": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sandra Scott",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22939.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "77": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Rhonda Burnough",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16987.86,
+       "expenditures": null
+      }
+     ]
+    },
+    "78": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Demetrius Douglas",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 56450,
+       "expenditures": null
+      }
+     ]
+    },
+    "80": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Taylor Bennett",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 283409,
+       "expenditures": null
+      },
+      {
+       "name": "Meagan Hanson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 182551.96,
+       "expenditures": null
+      }
+     ]
+    },
+    "82": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mary Margaret Oliver",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 115097.62,
+       "expenditures": null
+      }
+     ]
+    },
+    "83": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Howard Mosby",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 21700,
+       "expenditures": null
+      }
+     ]
+    },
+    "84": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Renitta Shannon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 48354.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "85": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Karla Drenner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 23935.76,
+       "expenditures": null
+      }
+     ]
+    },
+    "86": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michele Henson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 63270,
+       "expenditures": null
+      }
+     ]
+    },
+    "87": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Earnest Williams",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 29226.94,
+       "expenditures": null
+      }
+     ]
+    },
+    "88": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Billy Mitchell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 14650,
+       "expenditures": null
+      }
+     ]
+    },
+    "90": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pam Stephenson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 5100,
+       "expenditures": null
+      }
+     ]
+    },
+    "91": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Carl Anuszczyk",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1796.59,
+       "expenditures": null
+      }
+     ]
+    },
+    "93": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Darshun Kendrick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 16023,
+       "expenditures": null
+      }
+     ]
+    },
+    "94": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Karen Bennett",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7900,
+       "expenditures": null
+      }
+     ]
+    },
+    "95": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Scott Hilton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 86059.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "96": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pedro Marin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 47515.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "97": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Brooks Coleman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 102121.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "98": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "David Clark",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21058.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "100": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dewey McClain",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 27175.06,
+       "expenditures": null
+      }
+     ]
+    },
+    "101": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Valerie Clark",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 106025.16,
+       "expenditures": null
+      },
+      {
+       "name": "Samuel Park",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 70051,
+       "expenditures": null
+      }
+     ]
+    },
+    "102": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Buzz Brockway",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 66797.75,
+       "expenditures": null
+      },
+      {
+       "name": "Karen T. Ridgeway",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 650,
+       "expenditures": null
+      }
+     ]
+    },
+    "103": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Timothy Barr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13900,
+       "expenditures": null
+      }
+     ]
+    },
+    "105": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Joyce Chandler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 132842.09,
+       "expenditures": null
+      },
+      {
+       "name": "Donna McLeod",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 39328,
+       "expenditures": null
+      }
+     ]
+    },
+    "106": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Brett Harrell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 168405.42,
+       "expenditures": null
+      }
+     ]
+    },
+    "108": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Clay Cox",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 83669.2,
+       "expenditures": null
+      },
+      {
+       "name": "Tokhir Radjabov",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 152764,
+       "expenditures": null
+      }
+     ]
+    },
+    "109": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dale Rutledge",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67495.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "110": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Andy Welch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 45783.74,
+       "expenditures": null
+      }
+     ]
+    },
+    "111": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Brian Strickland",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 150292.01,
+       "expenditures": null
+      }
+     ]
+    },
+    "113": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pamela Dickerson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 33543.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "115": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bruce Williamson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 136009.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "116": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Terry England",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 316798.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "118": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Spencer Frye",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 20031.3,
+       "expenditures": null
+      }
+     ]
+    },
+    "119": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Chuck Williams",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 23645.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "120": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Trey Rhodes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 95573,
+       "expenditures": null
+      }
+     ]
+    },
+    "121": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Barry Fleming",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 69302.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "122": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jodi Lott",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 80135.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "123": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mark Newton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 224786.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "124": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Henry Howard",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 35075,
+       "expenditures": null
+      }
+     ]
+    },
+    "126": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gloria Frazier",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 19411.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "127": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Brian L. Prince",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 48106.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "128": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mack Jackson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 10275,
+       "expenditures": null
+      }
+     ]
+    },
+    "129": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Susan Holmes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39272.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "130": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "David Knight",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 105735,
+       "expenditures": null
+      }
+     ]
+    },
+    "133": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Pezold",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40705,
+       "expenditures": null
+      }
+     ]
+    },
+    "134": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Richard Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 199178.12,
+       "expenditures": null
+      }
+     ]
+    },
+    "135": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Calvin Smyre",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 167814.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "136": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Carolyn Hugley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 66300.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "137": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Debbie G. Buckner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 26691.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "139": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Patty J. Bentley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 5911,
+       "expenditures": null
+      }
+     ]
+    },
+    "140": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Robert Dickey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 59657,
+       "expenditures": null
+      }
+     ]
+    },
+    "141": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Allen Peake",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 124290.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "144": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "James Bubber Epps",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 168845.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "145": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ricky A. Williams",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 181075.47,
+       "expenditures": null
+      }
+     ]
+    },
+    "146": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Shaw Blackmon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 237741.11,
+       "expenditures": null
+      }
+     ]
+    },
+    "147": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Heath Clark",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12060,
+       "expenditures": null
+      }
+     ]
+    },
+    "148": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Buddy Harden",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18450.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "149": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jimmy Pruett",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 103725.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "150": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Matt Hatchett",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 169000,
+       "expenditures": null
+      }
+     ]
+    },
+    "151": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gerald Greene",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 133613.68,
+       "expenditures": null
+      }
+     ]
+    },
+    "154": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Winfred Dukes",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 6200,
+       "expenditures": null
+      }
+     ]
+    },
+    "155": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Clay Pirkle",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 37703.31,
+       "expenditures": null
+      }
+     ]
+    },
+    "156": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Greg Morris",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 152150.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "157": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "William Werkheiser",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16870.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "158": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Butch Parrish",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 95000.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "159": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jon G. Burns",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 433607.43,
+       "expenditures": null
+      }
+     ]
+    },
+    "160": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jan Tankersley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 111353.44,
+       "expenditures": null
+      },
+      {
+       "name": "James Woodall",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7389.28,
+       "expenditures": null
+      }
+     ]
+    },
+    "162": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Carl Gilliard",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4300,
+       "expenditures": null
+      }
+     ]
+    },
+    "164": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ron Stephens",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 119515,
+       "expenditures": null
+      }
+     ]
+    },
+    "165": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mickey Stephens",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 21300,
+       "expenditures": null
+      }
+     ]
+    },
+    "166": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jesse Petrea",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 61592,
+       "expenditures": null
+      }
+     ]
+    },
+    "167": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jeff Jones",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28127.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "168": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Al Williams",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 27600,
+       "expenditures": null
+      }
+     ]
+    },
+    "169": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dominic Lariccia",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40885,
+       "expenditures": null
+      }
+     ]
+    },
+    "170": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Penny Houston",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 53701.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "172": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sam Watson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 35108,
+       "expenditures": null
+      }
+     ]
+    },
+    "173": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tommy Hill",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 29091.14,
+       "expenditures": null
+      },
+      {
+       "name": "Darlene Taylor",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 111443.46,
+       "expenditures": null
+      }
+     ]
+    },
+    "174": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Corbett",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41000.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "175": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Amy A. Carter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 112377.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "176": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jason Shaw",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 107873.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "177": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dexter Sharper",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 25800.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "178": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Chad Nimmer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67149,
+       "expenditures": null
+      }
+     ]
+    },
+    "179": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Don Hogan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 22621.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "180": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jason Spencer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10912.6,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "4": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jack Hill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 232399.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Emanuel Jones",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 12300,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Dean Burke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 199495.46,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Greg Kirk",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 192885,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bruce Thompson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67859.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ed Harbison",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 58956.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John F. Kennedy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 139770.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Blake Tillery",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 236040.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jesse Stone",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 162628.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lee Anderson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 213550.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michael Williams",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 100435.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Josh McKoon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 86992.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Michael Dugan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 82160,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Judson Hill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 113284.74,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Valencia Seay",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 27060.2,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Donzella James",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 35775.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lindsey Tippins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26267.98,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Horacena Tate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 86250.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Steve Henson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 159665.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Janice Vanness",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 126657.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Renee Unterman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 197966.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cecil T. Miller",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 391777.03,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Chuck Hufstetler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 52962.29,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jeff Mullis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 548327.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gloria Butler",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 63600,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Georgia State Ethics Commission legacy reports (contributions, cash + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John Albers",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 133045.56,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
   "2018": {
    "house": {
     "1": {
@@ -520445,10 +522829,4672 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   }
  },
  "MO": {
+  "2016": {
+   "house": {
+    "1": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR ALLEN ANDREWS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18172.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF NATE WALKER COMMITTEE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40703.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS FOR CRAIG REDMON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 79172,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "OC LATTA JUSTICE FOR ALL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 25980,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS FOR TIM REMOLE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 38793.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF RUSTY BLACK",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 52904.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "DELUS JOHNSON FOR MISSOURI ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15650,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR KENNETH W WILSON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41442.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT NICK MARSHALL",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11317.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR KEVIN CORLEW",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 243887.67,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT JON CARPENTER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 70282.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF MARK ELLEBRACHT",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 119615,
+       "expenditures": null
+      },
+      {
+       "name": "COMMITTEE TO ELECT MARY HILL",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 182222.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Committee To Elect Lauren Arthur",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 54626.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "INGRID BURNETT FOR MISSOURI",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22723.35,
+       "expenditures": null
+      },
+      {
+       "name": "FRIENDS OF VALORIE ENGHOLM FOR MISSORUI",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1700,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "BILL KIDD FOR STATE REPRESENTATIVE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 126419.99,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "IRA ANDERS FOR STATE REPRESENTATIVE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 23750,
+       "expenditures": null
+      },
+      {
+       "name": "PRAY FIRST-VICKI RILEY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1990,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS TO ELECT BRANDON ELLINGTON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 31138.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS TO ELECT RANDY D DUNN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 37453.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF JUDY MORGAN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 33356,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF RICHARD BROWN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20755,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF RORY ROWLAND",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 39307.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MISSOURIANS FOR MIKE CIERPIOT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 419208.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR DAN STACY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 37348,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR JEANIE LAUER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 45576,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR DONNA PFAUTSCH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44100,
+       "expenditures": null
+      },
+      {
+       "name": "CHASE LINDER FOR STATE REPRESENTATIVE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5859.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT REBECCA ROEBER TO THE 34TH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34810,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR GARY CROSS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 43535,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF DARON MCGEE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 63829.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR JOE RUNIONS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 24851,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS TO ELECT TJ BERRY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 105566,
+       "expenditures": null
+      },
+      {
+       "name": "BRIAN LAUTENSCHLAGER",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT JIM HANSEN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 48925,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "PATRONS TO ELECT BART KORMAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 55185.47,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR TOM PAULEY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 23643,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF KIP KENDRICK",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 58485.95,
+       "expenditures": null
+      },
+      {
+       "name": "CITIZENS FOR WILLIAM LEE",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 3221,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF MARTHA STEVENS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 94102,
+       "expenditures": null
+      },
+      {
+       "name": "DON WATERMAN FOR STATE REP",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8114,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "VOTERS FOR SUSAN MCCLINTIC",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 228957.56,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS FOR TRAVIS FITZWATER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 114226.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF CALEB JONES",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 363773.66,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT DEAN DOHRMAN STATE REPRESENTATIVE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30449,
+       "expenditures": null
+      },
+      {
+       "name": "JOHN COZORT",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF GLEN KOLKMEYER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 74335,
+       "expenditures": null
+      }
+     ]
+    },
+    "54": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CONSERVATIVES FOR BOB GREGORY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11612.64,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends Of Rick Brattin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 95350,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF WANDA BROWN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 26550,
+       "expenditures": null
+      },
+      {
+       "name": "COMMITTEE TO ELECT WILLIAM A GRIMES",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9574.23,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT DAVID WOOD REPRESENTATIVE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 63800,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF KEVIN NELSON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6692.43,
+       "expenditures": null
+      }
+     ]
+    },
+    "61": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR TOM SMITH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2550,
+       "expenditures": null
+      }
+     ]
+    },
+    "62": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS TO ELECT TOM HURST",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 6600,
+       "expenditures": null
+      }
+     ]
+    },
+    "63": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "LIZ GATTRA",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "64": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF ROBERT CORNEJO",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 222477.04,
+       "expenditures": null
+      }
+     ]
+    },
+    "66": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JOHN A SAXTON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "67": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF ALAN GREEN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 20296,
+       "expenditures": null
+      }
+     ]
+    },
+    "68": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR KEITH ENGLISH",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": true,
+       "contributions": 37325,
+       "expenditures": null
+      },
+      {
+       "name": "Citizens To Elect Jay Mosley LLC",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20420.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "69": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR GRETCHEN BANGERT",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21121.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "70": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MISSOURIANS FOR BYRON DELEAR",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 143116.31,
+       "expenditures": null
+      },
+      {
+       "name": "FRIENDS OF MARK MATTHIESEN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 77645,
+       "expenditures": null
+      }
+     ]
+    },
+    "71": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF SUE MEREDITH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 48474.06,
+       "expenditures": null
+      },
+      {
+       "name": "ELECT JIM CAIN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3613.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "72": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "DAN HYATT FOR MISSOURI",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3770,
+       "expenditures": null
+      },
+      {
+       "name": "MARY NICHOLS FOR STATE REP",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 55092.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "74": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF CORA FAITH WALKER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 42928,
+       "expenditures": null
+      }
+     ]
+    },
+    "75": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS TO ELECT ALAN GRAY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17590,
+       "expenditures": null
+      }
+     ]
+    },
+    "76": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JOSHUA PETERS FOR THE 76TH DISTRICT",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 89417.17,
+       "expenditures": null
+      }
+     ]
+    },
+    "78": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT ERIK SHELQUIST",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1080.68,
+       "expenditures": null
+      },
+      {
+       "name": "Bruce Franks For State Rep",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 44464.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "79": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF DAN ELDER",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1105.86,
+       "expenditures": null
+      }
+     ]
+    },
+    "80": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "PETER MERIDETH FOR MO PROGRESS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 115584.65,
+       "expenditures": null
+      },
+      {
+       "name": "TERESSA ROSE EZELL",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "82": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR DONNA BARINGER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 65342,
+       "expenditures": null
+      },
+      {
+       "name": "COMMITTEE TO ELECT ROBERT J CRUMP",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 300,
+       "expenditures": null
+      }
+     ]
+    },
+    "83": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "GINA MITTEN FOR STATE REPRESENTATIVE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 55506.52,
+       "expenditures": null
+      },
+      {
+       "name": "ANDREW BOLIN",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "84": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR KARLA MAY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 44065,
+       "expenditures": null
+      }
+     ]
+    },
+    "85": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CANDIDATE STEVEN MCKNIGHT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1351.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "86": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JOE ADAMS FOR MISSOURI",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 45911,
+       "expenditures": null
+      },
+      {
+       "name": "JOY ELLIOTT",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "87": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "STACEY NEWMAN FOR STATE REPRESENTATIVE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 29221.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "89": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF JOHN (A/K/A JACK) A SCHILLIGO",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 33400.96,
+       "expenditures": null
+      }
+     ]
+    },
+    "90": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MARK MILTON FOR STATE REP",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 149280,
+       "expenditures": null
+      }
+     ]
+    },
+    "91": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sarah Unsicker For State Representative",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 107411,
+       "expenditures": null
+      }
+     ]
+    },
+    "92": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF DANIEL BOGLE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 30254.79,
+       "expenditures": null
+      },
+      {
+       "name": "DOUG BECK FOR STATE REPRESENTATIVE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 52620,
+       "expenditures": null
+      }
+     ]
+    },
+    "93": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "BOB BURNS FOR STATE REP COMMITTEE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 69700.46,
+       "expenditures": null
+      }
+     ]
+    },
+    "94": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF CLORIA BROWN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 122219.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "95": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR MARSHA HAEFNER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 127508.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "97": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "TRACY SCOTT",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "98": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF NANCY CRAIG",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2895.13,
+       "expenditures": null
+      }
+     ]
+    },
+    "99": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT JEAN EVANS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 80774,
+       "expenditures": null
+      },
+      {
+       "name": "WILLIAM H (BILL) PINKSTON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "100": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR DEREK GRIER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 40352.07,
+       "expenditures": null
+      }
+     ]
+    },
+    "101": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS TO ELECT BRUCE DEGROOT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26012,
+       "expenditures": null
+      },
+      {
+       "name": "DENNIS LAVALLEE GROW MISSOURI COMMITTEE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 220,
+       "expenditures": null
+      }
+     ]
+    },
+    "103": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE INSTITUTING EMPRESS MARGUERITE L DILLWORTH ROYAL MANAGEMENT",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30,
+       "expenditures": null
+      }
+     ]
+    },
+    "104": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS OF DISTRICT 104 C/O PEGGY SHERWIN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3497.03,
+       "expenditures": null
+      }
+     ]
+    },
+    "105": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF PHIL CHRISTOFANELLI",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 83294.01,
+       "expenditures": null
+      },
+      {
+       "name": "COMMITTEE TO ELECT BRIAN D STIENS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20579,
+       "expenditures": null
+      }
+     ]
+    },
+    "107": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF NICK SCHROER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 74555,
+       "expenditures": null
+      }
+     ]
+    },
+    "109": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS TO ELECT PAUL CURTMAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 66088.15,
+       "expenditures": null
+      },
+      {
+       "name": "ELLEN J SKILJAN",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "110": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF KIRK MATHEWS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 71073.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "111": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR SHANE RODEN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 69590.49,
+       "expenditures": null
+      },
+      {
+       "name": "COMMITTEE TO ELECT DEL VIEHLAND",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3125,
+       "expenditures": null
+      },
+      {
+       "name": "COMMITTEE TO ELECT JON SCHUESSLER",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 150,
+       "expenditures": null
+      }
+     ]
+    },
+    "112": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "ROBERT BUTLER CAMPAIGN FUND",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 113941.23,
+       "expenditures": null
+      },
+      {
+       "name": "FRIENDS OF ROB VESCOVO",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 274611,
+       "expenditures": null
+      }
+     ]
+    },
+    "114": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT BECKY RUTH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 68701,
+       "expenditures": null
+      }
+     ]
+    },
+    "115": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR ELAINE GANNON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 75715.42,
+       "expenditures": null
+      }
+     ]
+    },
+    "117": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS FOR TRAVIS BARNES",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 56886.57,
+       "expenditures": null
+      }
+     ]
+    },
+    "118": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS TO ELECT BEN HARRIS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 19201,
+       "expenditures": null
+      }
+     ]
+    },
+    "120": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT JASON CHIPMAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20136.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "122": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "BELIEVE IN STEVE LYNCH COMMITTEE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7950,
+       "expenditures": null
+      }
+     ]
+    },
+    "123": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS FOR DIANE FRANKLIN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 51383.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "124": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR ROCKY MILLER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 127305.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "126": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "PATRICIA PIKE FOR STATE REPRESENTATIVE-126",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 13386.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "127": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT MIKE KELLEY ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 17736.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "128": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JANET SHEFFIELD",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "129": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF SANDY CRAWFORD ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 82915,
+       "expenditures": null
+      }
+     ]
+    },
+    "130": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS FOR JEFF MESSENGER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15625,
+       "expenditures": null
+      },
+      {
+       "name": "COMMITTEE TO ELECT ELLA JANE GOEPPINGER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5293,
+       "expenditures": null
+      }
+     ]
+    },
+    "131": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "PEOPLE FOR NATE BRANSCOM-STATE REPRESENTATIVE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2906.01,
+       "expenditures": null
+      }
+     ]
+    },
+    "132": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR CRYSTAL QUADE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 96018.54,
+       "expenditures": null
+      }
+     ]
+    },
+    "133": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF CURTIS TRENT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 54020.04,
+       "expenditures": null
+      }
+     ]
+    },
+    "134": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Friends Of Elijah Haahr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 268145,
+       "expenditures": null
+      }
+     ]
+    },
+    "135": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF STEVE HELMS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 106935,
+       "expenditures": null
+      },
+      {
+       "name": "FRIENDS OF DAVID CARR",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "136": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "KEVIN AUSTIN FOR STATE REPRESENTATIVE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 157911,
+       "expenditures": null
+      }
+     ]
+    },
+    "137": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT LYNDALL FRAKER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 93619.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "138": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR DON PHILLIPS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11775,
+       "expenditures": null
+      }
+     ]
+    },
+    "139": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS FOR JERED TAYLOR",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 25377.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "140": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS TO ELECT JIM BILLEDO",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8772,
+       "expenditures": null
+      }
+     ]
+    },
+    "141": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF HANNAH KELLY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 52099.43,
+       "expenditures": null
+      }
+     ]
+    },
+    "142": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CAMPAIGN TO ELECT BOBBY JOHNSTON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 100,
+       "expenditures": null
+      }
+     ]
+    },
+    "144": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS FOR PAUL FITZWATER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44651,
+       "expenditures": null
+      }
+     ]
+    },
+    "146": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF DONNA LICHTENEGGER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 15193.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "147": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF KATHY SWAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 110595.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "148": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF HOLLY REHDER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 208004.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "149": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF DON RONE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 85860,
+       "expenditures": null
+      },
+      {
+       "name": "FRIENDS OF BRANTLEY ATCHLEY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 66054.01,
+       "expenditures": null
+      }
+     ]
+    },
+    "150": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "LENA SAMFORD FOR MISSOURI",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 41145.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "152": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF TODD RICHARDSON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1240181.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "153": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT MATT MICHEL",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7765.97,
+       "expenditures": null
+      }
+     ]
+    },
+    "154": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "SHAWN RHOADS FOR STATE REPRESENTATIVE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44750,
+       "expenditures": null
+      },
+      {
+       "name": "CAMPAIGN TO ELECT TERRY HAMPTON",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 2913,
+       "expenditures": null
+      }
+     ]
+    },
+    "155": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "PATRONS FOR LYLE ROWLAND",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24501,
+       "expenditures": null
+      }
+     ]
+    },
+    "156": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "JEFF JUSTUS FOR REPRESENTATIVE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5225,
+       "expenditures": null
+      }
+     ]
+    },
+    "157": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MIKE MOON FOR MISSOURI",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20634.54,
+       "expenditures": null
+      },
+      {
+       "name": "THE COMMITTEE TO ELECT STEPHANIE DAVIS",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 17175,
+       "expenditures": null
+      }
+     ]
+    },
+    "159": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS TO ELECT BILL LANT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30035,
+       "expenditures": null
+      }
+     ]
+    },
+    "160": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS TO ELECT BILL REIBOLDT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16114.06,
+       "expenditures": null
+      }
+     ]
+    },
+    "162": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MISSOURI FOR CHARLIE DAVIS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41227.66,
+       "expenditures": null
+      }
+     ]
+    },
+    "163": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "MISSOURIANS FOR CODY SMITH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 34853,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "SCOTT SIFTON FOR MISSOURI",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1304168.01,
+       "expenditures": null
+      },
+      {
+       "name": "COMMITTEE TO ELECT RANDY JOTTE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 693627.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "EDWARD R WEISSLER",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS TO ELECT JAMILAH NASHEED",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 410963.5,
+       "expenditures": null
+      },
+      {
+       "name": "STEPHEN O (STEVE) SCHAPER",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT SHALONN `KIKI` CURLS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 159266.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS FOR GINA WALSH",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 312006.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF ANDREW KOENIG",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 454772.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR STEPHEN WEBBER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1838859.6,
+       "expenditures": null
+      },
+      {
+       "name": "FRIENDS OF CALEB ROWDEN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2305304.98,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "RICHARD ORR FOR MISSOURI SENATE DISTRICT 23",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11201.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "DOUG LIBLA FOR SENATE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 261715,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF WAYNE WALLINGFORD",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 259091,
+       "expenditures": null
+      },
+      {
+       "name": "DONNIE OWENS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR ED EMERY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 158497,
+       "expenditures": null
+      },
+      {
+       "name": "ELECT TIM WELLS",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 5160,
+       "expenditures": null
+      },
+      {
+       "name": "LORA YOUNG",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "FRIENDS OF MIKE CUNNINGHAM 16",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 270528.74,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
+  "2018": {
+   "house": {
+    "1": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Allen Andrews",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12645,
+       "expenditures": null
+      },
+      {
+       "name": "Paul Taylor",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Danny Busick 4 Rural MO",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 21833,
+       "expenditures": null
+      },
+      {
+       "name": "Elect Joni Perry For Missouri",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 32155,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "FRIENDS FOR TIM REMOLE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 30223.5,
+       "expenditures": null
+      },
+      {
+       "name": "Committee To Elect Mitch Wrenn",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15485.23,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "FRIENDS OF RUSTY BLACK",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 66743,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Kenneth W Wilson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19385,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Missourians For Vic Allred",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 56753.5,
+       "expenditures": null
+      },
+      {
+       "name": "Mitch Weber For Missouri ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 49785.01,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Kevin Corlew",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 279543.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Jon Carpenter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 78958.43,
+       "expenditures": null
+      },
+      {
+       "name": "Steve West",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2000,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Tom Gorenc For Missouri",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7911.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT MARY HILL",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15967.09,
+       "expenditures": null
+      },
+      {
+       "name": "FRIENDS OF MARK ELLEBRACHT",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 134363.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Sarah Mills",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23019,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "INGRID BURNETT FOR MISSOURI",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 28612.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "BILL KIDD FOR STATE REPRESENTATIVE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 57705,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Robert Sauls",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 35108.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "FRIENDS TO ELECT BRANDON ELLINGTON",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22292.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee to Elect Barbara Anne Washington",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3000,
+       "expenditures": null
+      },
+      {
+       "name": "Missourians For David Martin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1820,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "FRIENDS OF JUDY MORGAN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 24519.54,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "FRIENDS OF RICHARD BROWN",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 15727.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jeremy T Utterback",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Rory Rowland",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22076.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Dan Stacy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34539.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Jeff Coleman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 22316.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Donna Pfautsch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 36690,
+       "expenditures": null
+      },
+      {
+       "name": "Pat Williams For The People",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5394.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT REBECCA ROEBER TO THE 34TH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41200,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Keri Ingle",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 101034.49,
+       "expenditures": null
+      },
+      {
+       "name": "Tom Lovell For House Of Representatives",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 61440,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Daron McGee",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 45909.21,
+       "expenditures": null
+      },
+      {
+       "name": "Timothy Peterman",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR JOE RUNIONS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22597.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens To Elect Doug Richey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 35213.34,
+       "expenditures": null
+      },
+      {
+       "name": "Committee To Elect Abby Zavos",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21641.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Peggy McGaugh",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 32450,
+       "expenditures": null
+      },
+      {
+       "name": "Rick Mellon For State Representative",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12513.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Jim Hansen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 7664.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Patrons Of Jeff Porter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 56379,
+       "expenditures": null
+      },
+      {
+       "name": "Citizens For Joseph Widner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9815.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Jamie Blair",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11925.47,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Kip Kendrick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 61795.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "FRIENDS OF MARTHA STEVENS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 42708.81,
+       "expenditures": null
+      },
+      {
+       "name": "Cathy Richards For State Representative",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17774.83,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Adrian Plank",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 38263.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends For Travis Fitzwater",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 106986.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Sara Walsh",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 140186.65,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Michela Skelton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 106527.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Dean Dohrman State Representative",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20125,
+       "expenditures": null
+      },
+      {
+       "name": "Committee To Elect Vince Lutterbie",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5866.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Dan Marshall For MO52",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1791.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "FRIENDS OF GLEN KOLKMEYER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 74942.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "54": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "James Williams For Mo House Seat #54",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10997.76,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Rodger L Reedy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23635,
+       "expenditures": null
+      },
+      {
+       "name": "Friends Of Joan Shores",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8269.81,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect David Wood Representative",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39208,
+       "expenditures": null
+      }
+     ]
+    },
+    "59": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Rudy Veit For State Representative",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 70725,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Dave Griffith For State Representative",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 83205,
+       "expenditures": null
+      },
+      {
+       "name": "Sara Michael For Missouri",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 24392.12,
+       "expenditures": null
+      }
+     ]
+    },
+    "61": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Pamela Menefee",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7235.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "62": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "CITIZENS TO ELECT TOM HURST",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 4700,
+       "expenditures": null
+      }
+     ]
+    },
+    "63": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Janet Kester For Missouri House District 63",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3708.62,
+       "expenditures": null
+      }
+     ]
+    },
+    "64": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Shawn Finklein",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 667.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "65": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Bill Otto",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 66664.11,
+       "expenditures": null
+      }
+     ]
+    },
+    "67": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Alan Green",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 14262.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "68": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens To Elect Jay Mosley LLC",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 10082.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "69": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Gretchen Bangert",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22677.12,
+       "expenditures": null
+      },
+      {
+       "name": "Friends Of Adam Jenning",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2888.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "70": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "FRIENDS OF MARK MATTHIESEN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 47288,
+       "expenditures": null
+      },
+      {
+       "name": "Committee to Elect Paula Brown",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 57706.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "71": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "LaDonna Appelbaum For Missouri",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 39352.54,
+       "expenditures": null
+      },
+      {
+       "name": "LaDonna Higgins",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "72": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Doug Clemens",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 50080.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "73": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Raychel Proudie",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 24467.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "74": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Cora Faith Walker",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 31382.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "75": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "CITIZENS TO ELECT ALAN GRAY",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 14176.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "76": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee to Elect Chris Carter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15620,
+       "expenditures": null
+      }
+     ]
+    },
+    "78": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Bruce Franks For State Rep",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 64291.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "79": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Lakeysha Bosley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 26034.59,
+       "expenditures": null
+      }
+     ]
+    },
+    "80": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Peter Merideth For Mo Progress",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 81019.2,
+       "expenditures": null
+      }
+     ]
+    },
+    "81": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "The Committee To Elect Steve Butz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 70119.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "82": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Donna Baringer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 53769.21,
+       "expenditures": null
+      },
+      {
+       "name": "Committee To Elect Erik Shelquist",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1029,
+       "expenditures": null
+      }
+     ]
+    },
+    "83": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Andrew Bolin",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "87": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee to Elect Ian Mackey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 71922.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "89": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Elect Kevin FitzGerald",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 37224.96,
+       "expenditures": null
+      }
+     ]
+    },
+    "91": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens to Elect Jennifer Bird",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1555,
+       "expenditures": null
+      },
+      {
+       "name": "Sarah Unsicker For State Representative",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 58777.54,
+       "expenditures": null
+      }
+     ]
+    },
+    "92": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "DOUG BECK FOR STATE REPRESENTATIVE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 111170.51,
+       "expenditures": null
+      },
+      {
+       "name": "Citizens To Elect Bill Heisse",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7095.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "93": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Bob Burns For State Rep Committee",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 36881.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "94": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Jean Pretto",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 59210.22,
+       "expenditures": null
+      },
+      {
+       "name": "MURPHY FOR SHERIFF (JIM)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "95": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Mike Walter For MO 95th",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 61087.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "96": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Erica Hoffman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 50356.54,
+       "expenditures": null
+      }
+     ]
+    },
+    "97": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Mike Revis",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 82256.05,
+       "expenditures": null
+      },
+      {
+       "name": "Friends Of Mary Elizabeth Coleman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 80430,
+       "expenditures": null
+      }
+     ]
+    },
+    "99": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT JEAN EVANS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 162283.94,
+       "expenditures": null
+      },
+      {
+       "name": "Mike LaBozzetta For State Rep",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30545.12,
+       "expenditures": null
+      }
+     ]
+    },
+    "100": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Derek Grier",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 85392.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "101": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "CITIZENS TO ELECT BRUCE DEGROOT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 115940,
+       "expenditures": null
+      }
+     ]
+    },
+    "102": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Ron Hicks",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17575,
+       "expenditures": null
+      }
+     ]
+    },
+    "105": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Americans For Scott Cernicek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17960.97,
+       "expenditures": null
+      },
+      {
+       "name": "Friends Of Phil Christofanelli",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 71201,
+       "expenditures": null
+      }
+     ]
+    },
+    "107": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "FRIENDS OF NICK SCHROER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 97376.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "108": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee to Elect Betty Vining",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16605.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "109": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Elect James Cordrey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6816.07,
+       "expenditures": null
+      }
+     ]
+    },
+    "110": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Dottie Bailey For Missouri ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 37165,
+       "expenditures": null
+      }
+     ]
+    },
+    "111": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Shane Roden",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20875,
+       "expenditures": null
+      }
+     ]
+    },
+    "112": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Rob Vescovo",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 376823.98,
+       "expenditures": null
+      }
+     ]
+    },
+    "114": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT BECKY RUTH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 69021,
+       "expenditures": null
+      },
+      {
+       "name": "Committee To Elect Dennis McDonald",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3151.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "115": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR ELAINE GANNON",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40861.42,
+       "expenditures": null
+      }
+     ]
+    },
+    "116": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Bill Kraemer For State Rep",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7211.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "117": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Kayla Chick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "119": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Marcie Nichols Campaign",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3436.35,
+       "expenditures": null
+      }
+     ]
+    },
+    "120": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT JASON CHIPMAN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29650,
+       "expenditures": null
+      },
+      {
+       "name": "Citizens For Theresa Schmitt",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19823.83,
+       "expenditures": null
+      }
+     ]
+    },
+    "121": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens To Elect Matt Heltz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 430,
+       "expenditures": null
+      }
+     ]
+    },
+    "122": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "BELIEVE IN STEVE LYNCH COMMITTEE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5475,
+       "expenditures": null
+      }
+     ]
+    },
+    "123": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Suzie Pollock",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16350.5,
+       "expenditures": null
+      },
+      {
+       "name": "Committee To Elect Joe Register",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7523.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "124": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR ROCKY MILLER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 137855,
+       "expenditures": null
+      },
+      {
+       "name": "Patriots For Steve Dakopolos",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3413.27,
+       "expenditures": null
+      }
+     ]
+    },
+    "125": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Missourians For Chase Crawford",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 43418.59,
+       "expenditures": null
+      }
+     ]
+    },
+    "126": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Patricia Pike For State Representative-126",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12050,
+       "expenditures": null
+      }
+     ]
+    },
+    "127": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Ann Kelley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 19690,
+       "expenditures": null
+      },
+      {
+       "name": "Friends Of Teri Hanna",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5265.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "128": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Rich Horton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 24059.83,
+       "expenditures": null
+      }
+     ]
+    },
+    "129": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Jeff Knight",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 45125,
+       "expenditures": null
+      },
+      {
+       "name": "Citizens For Ronna Ford",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9824.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "130": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends For Jeff Messenger",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12925,
+       "expenditures": null
+      }
+     ]
+    },
+    "131": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "People For Nate Branscom-State Representative",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 344.76,
+       "expenditures": null
+      }
+     ]
+    },
+    "132": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "CITIZENS FOR CRYSTAL QUADE",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 100839.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "133": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "FRIENDS OF CURTIS TRENT",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 66448,
+       "expenditures": null
+      },
+      {
+       "name": "Cindy Slimp For The People",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11958.81,
+       "expenditures": null
+      }
+     ]
+    },
+    "134": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Elijah Haahr",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 597949,
+       "expenditures": null
+      }
+     ]
+    },
+    "135": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Steve Helms",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 58775.18,
+       "expenditures": null
+      },
+      {
+       "name": "Citizens For Rob Bailey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28455.17,
+       "expenditures": null
+      }
+     ]
+    },
+    "136": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Craig Fishel For State Representative",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 42282,
+       "expenditures": null
+      }
+     ]
+    },
+    "137": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Raymond Lampert",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10309.22,
+       "expenditures": null
+      },
+      {
+       "name": "Committee To Elect John Black",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 66509,
+       "expenditures": null
+      }
+     ]
+    },
+    "138": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Brad Hudson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 11840,
+       "expenditures": null
+      }
+     ]
+    },
+    "139": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends For Jered Taylor",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 37586.67,
+       "expenditures": null
+      },
+      {
+       "name": "Citizens To Elect Cora Hanf",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4251.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "140": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens To Elect Tony Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6370.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "141": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Hannah Kelly",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67166.3,
+       "expenditures": null
+      }
+     ]
+    },
+    "144": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends For Chris Dodson Dinkins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 61002,
+       "expenditures": null
+      }
+     ]
+    },
+    "146": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Barry Hovis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10335,
+       "expenditures": null
+      }
+     ]
+    },
+    "147": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Kathy Swan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 126370.77,
+       "expenditures": null
+      },
+      {
+       "name": "People For Renita Green",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13452.04,
+       "expenditures": null
+      }
+     ]
+    },
+    "148": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "FRIENDS OF HOLLY REHDER",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 227436.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "149": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Don Rone",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16075,
+       "expenditures": null
+      }
+     ]
+    },
+    "150": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Josh Rittenberry For District 150",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5447.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "152": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends For Hardy Billington",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 56188,
+       "expenditures": null
+      },
+      {
+       "name": "Vote Robert L Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19673.86,
+       "expenditures": null
+      }
+     ]
+    },
+    "153": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Jeff Shawan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 49080,
+       "expenditures": null
+      },
+      {
+       "name": "We The People For Matt Michel",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6974.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "154": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect David Evans",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23795,
+       "expenditures": null
+      }
+     ]
+    },
+    "155": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens To Elect Karla Eslinger",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15525,
+       "expenditures": null
+      }
+     ]
+    },
+    "156": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "JEFF JUSTUS FOR REPRESENTATIVE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10925,
+       "expenditures": null
+      }
+     ]
+    },
+    "157": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Mike Moon For Missouri",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5669.86,
+       "expenditures": null
+      }
+     ]
+    },
+    "159": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Dirk Deaton For Missouri",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23187,
+       "expenditures": null
+      },
+      {
+       "name": "Jerry Sparks",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "160": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Elect Ben Baker",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 40003.28,
+       "expenditures": null
+      },
+      {
+       "name": "Angela Thomas For State Representative District 160",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 23426.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "161": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends of Lane Roberts",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 23754,
+       "expenditures": null
+      },
+      {
+       "name": "Friends Of Elizabeth Lundstrum For 161",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2710.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "162": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Committee To Elect Sarah Hinkle",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4172.13,
+       "expenditures": null
+      }
+     ]
+    },
+    "163": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "MISSOURIANS FOR CODY SMITH",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 152160.7,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "4": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Citizens For Karla May",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 93002.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Nicole Thompson For Missouri",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6563.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Missourians For Mike Cierpiot",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 737492.99,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Ayanna Shivers For S-10",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 34296.72,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Brian Williams For Missouri",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 171531.78,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Team Justin Brown",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 414798.73,
+       "expenditures": null
+      },
+      {
+       "name": "Ryan Dillon For State Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 178275.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Eric Burlison",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 395180.52,
+       "expenditures": null
+      },
+      {
+       "name": "Citizens To Elect Jim Billedo",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12949.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Robert Butler",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 130364.76,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Gregory B Powers",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Sandy Crawford ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 328410.43,
+       "expenditures": null
+      },
+      {
+       "name": "Joe Poor For Missouri ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11147.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Friends Of Lincoln Hough",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 387980,
+       "expenditures": null
+      },
+      {
+       "name": "CITIZENS TO ELECT CHARLIE NORR ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 79503.82,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "ELECT BILL WHITE",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 194942,
+       "expenditures": null
+      },
+      {
+       "name": "Friends Of Carolyn Cookie McGowan For MO 32nd",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8710.43,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
   "2020": {
    "house": {
     "2": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520456,7 +527502,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 25796,
+       "contributions": 26296,
        "expenditures": null
       },
       {
@@ -520464,13 +527510,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 4172.24,
+       "contributions": 3810.24,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520478,27 +527524,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 6800,
-       "expenditures": null
-      }
-     ]
-    },
-    "4": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Gregory Sharpe",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 7300,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520506,35 +527538,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 33144.56,
+       "contributions": 39865,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Terrence Fiala",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 4042.56,
-       "expenditures": null
-      },
       {
        "name": "Ed Lewis",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 17137.13,
+       "contributions": 16841.33,
+       "expenditures": null
+      },
+      {
+       "name": "Terrence Fiala",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3672.43,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520542,13 +527574,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 40712,
+       "contributions": 43280,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520556,57 +527588,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 32516.91,
+       "contributions": 32337.2,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Dean VanSchoiack",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 52583.26,
-       "expenditures": null
-      },
       {
        "name": "Karen Planalp",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6666.87,
+       "contributions": 5963.22,
+       "expenditures": null
+      },
+      {
+       "name": "Dean VanSchoiack",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 51682,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Colby Murphy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 9390.41,
-       "expenditures": null
-      },
       {
        "name": "William Falkner",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 26385.36,
+       "contributions": 26141,
+       "expenditures": null
+      },
+      {
+       "name": "Colby Murphy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9450.41,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520614,13 +527646,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 48710.5,
+       "contributions": 48921,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520628,35 +527660,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 26477.21,
+       "contributions": 26105,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Sean Pouche",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 14773.12,
-       "expenditures": null
-      },
       {
        "name": "Victor Abundis",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14327.2,
+       "contributions": 14420.41,
+       "expenditures": null
+      },
+      {
+       "name": "Sean Pouche",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14470,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520664,7 +527696,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 74452.51,
+       "contributions": 69371.15,
        "expenditures": null
       },
       {
@@ -520672,57 +527704,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 24169.7,
+       "contributions": 22864,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Margaret Nurrenbern",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 101451.3,
-       "expenditures": null
-      },
       {
        "name": "John West",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 30905.98,
+       "contributions": 28995.22,
+       "expenditures": null
+      },
+      {
+       "name": "Margaret Nurrenbern",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 101331.3,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Chris Brown",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 43108,
-       "expenditures": null
-      },
       {
        "name": "James Shackelford",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 57621.63,
+       "contributions": 81339.59,
+       "expenditures": null
+      },
+      {
+       "name": "Chris Brown",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 41062,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520730,7 +527762,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 94931.48999999999,
+       "contributions": 105372.41,
        "expenditures": null
       },
       {
@@ -520738,27 +527770,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1281,
-       "expenditures": null
-      }
-     ]
-    },
-    "18": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Wesley Rogers",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 1353,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520766,13 +527784,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 55410.86,
+       "contributions": 54962.01,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520780,7 +527798,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 51480,
+       "contributions": 51280,
        "expenditures": null
       },
       {
@@ -520794,7 +527812,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "21": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520802,7 +527820,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 74364.01000000001,
+       "contributions": 74062.65,
        "expenditures": null
       },
       {
@@ -520816,7 +527834,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "22": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520824,13 +527842,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 27187.95,
+       "contributions": 19226.64,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520843,22 +527861,8 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "24": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Emily Weber",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": null,
-       "expenditures": null
-      }
-     ]
-    },
     "25": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520866,13 +527870,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 82179.20999999999,
+       "contributions": 80298.81,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520880,27 +527884,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 14958.24,
-       "expenditures": null
-      }
-     ]
-    },
-    "28": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "JEROME BARNES",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 15684.61,
        "expenditures": null
       }
      ]
     },
     "29": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520908,35 +527898,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 23579.65,
+       "contributions": 23684.65,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Arthur Schaaf",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 8917.21,
-       "expenditures": null
-      },
       {
        "name": "Jonathan Patterson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 125794.89,
+       "contributions": 125209.33,
+       "expenditures": null
+      },
+      {
+       "name": "Arthur Schaaf",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8687.21,
        "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520944,7 +527934,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24435.75,
+       "contributions": 29114.71,
        "expenditures": null
       },
       {
@@ -520952,13 +527942,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 64524.85,
+       "contributions": 63486.61,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520966,13 +527956,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 54125,
+       "contributions": 54965.7,
        "expenditures": null
       }
      ]
     },
     "33": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -520980,35 +527970,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 10745.06,
+       "contributions": 10361.66,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Chris Hager",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 20530.65,
-       "expenditures": null
-      },
       {
        "name": "Rick Roeber",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 19861.32,
+       "contributions": 19874.11,
+       "expenditures": null
+      },
+      {
+       "name": "Chris Hager",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20240.65,
        "expenditures": null
       }
      ]
     },
     "35": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521016,7 +528006,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 101705.01,
+       "contributions": 100850.01,
        "expenditures": null
       },
       {
@@ -521030,7 +528020,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "36": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521038,21 +528028,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 8445,
-       "expenditures": null
-      },
-      {
-       "name": "Mark Sharp",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": null,
+       "contributions": 5087.21,
        "expenditures": null
       }
      ]
     },
     "37": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521060,7 +528042,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5426.84,
+       "contributions": 3354.45,
        "expenditures": null
       },
       {
@@ -521074,7 +528056,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "38": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521082,13 +528064,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 41607.24,
+       "contributions": 40550,
        "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521096,13 +528078,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 19500,
+       "contributions": 19000,
        "expenditures": null
       }
      ]
     },
     "40": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521110,13 +528092,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 21933.7,
+       "contributions": 25460.7,
        "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521124,13 +528106,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 5424,
+       "contributions": 5149,
        "expenditures": null
       }
      ]
     },
     "42": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521138,13 +528120,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 49611,
+       "contributions": 51206.7,
        "expenditures": null
       }
      ]
     },
     "43": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521158,7 +528140,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "44": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521166,13 +528148,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 31552.92,
+       "contributions": 31054.25,
        "expenditures": null
       }
      ]
     },
     "45": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521180,13 +528162,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 52139.200000000004,
+       "contributions": 52966.51,
        "expenditures": null
       }
      ]
     },
     "46": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521194,35 +528176,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 16963.43,
+       "contributions": 17168.85,
        "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Charles Basye",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 81304.12,
-       "expenditures": null
-      },
       {
        "name": "Adrian Plank",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 48094.67,
+       "contributions": 48374.52,
+       "expenditures": null
+      },
+      {
+       "name": "Charles Basye",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 81412.12,
        "expenditures": null
       }
      ]
     },
     "48": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521230,7 +528212,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 29163.07,
+       "contributions": 10273.65,
        "expenditures": null
       },
       {
@@ -521238,13 +528220,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 31216.4,
+       "contributions": 30602,
        "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521252,35 +528234,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 73820.33,
+       "contributions": 73701,
        "expenditures": null
       }
      ]
     },
     "50": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Kari Chesney",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 30527.33,
-       "expenditures": null
-      },
       {
        "name": "Sara Walsh",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 70465.13,
+       "contributions": 71276.2,
+       "expenditures": null
+      },
+      {
+       "name": "Kari Chesney",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 27004.45,
        "expenditures": null
       }
      ]
     },
     "51": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521288,29 +528270,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 50442.21,
-       "expenditures": null
-      }
-     ]
-    },
-    "52": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Bradley Pollitt",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 50225,
        "expenditures": null
       }
      ]
     },
     "53": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Terry Thompson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 30075,
+       "expenditures": null
+      },
       {
        "name": "Aaron Mais",
        "party": "O",
@@ -521320,55 +528296,47 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
+       "name": "Connie Simmons",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3959.85,
+       "expenditures": null
+      },
+      {
        "name": "Cameron Pack",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
        "contributions": null,
        "expenditures": null
-      },
-      {
-       "name": "Terry Thompson",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 29975,
-       "expenditures": null
-      },
-      {
-       "name": "Connie Simmons",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 3633.24,
-       "expenditures": null
       }
      ]
     },
     "54": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Dan Houx",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 136050.95,
-       "expenditures": null
-      },
       {
        "name": "James Williams",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 3974.65,
+       "contributions": 3749.65,
+       "expenditures": null
+      },
+      {
+       "name": "Dan Houx",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 132902,
        "expenditures": null
       }
      ]
     },
     "55": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521376,35 +528344,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 62445,
+       "contributions": 57404,
        "expenditures": null
       }
      ]
     },
     "56": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Neal Barnes",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 19136.35,
-       "expenditures": null
-      },
       {
        "name": "Michael Davis",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 11865.7,
+       "contributions": 11773.33,
+       "expenditures": null
+      },
+      {
+       "name": "Neal Barnes",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19574.33,
        "expenditures": null
       }
      ]
     },
     "57": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521412,13 +528380,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 25230,
+       "contributions": 24990,
        "expenditures": null
       }
      ]
     },
     "58": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521426,49 +528394,27 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 16547.96,
-       "expenditures": null
-      }
-     ]
-    },
-    "59": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Rudy Veit",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 15645,
        "expenditures": null
       }
      ]
     },
     "60": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Dave Griffith",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Joshua Dunne",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6624.68,
+       "contributions": 7094.68,
        "expenditures": null
       }
      ]
     },
     "61": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521476,13 +528422,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 63396,
+       "contributions": 65007,
        "expenditures": null
       }
      ]
     },
     "62": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521490,7 +528436,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 23097.21,
+       "contributions": 20825,
        "expenditures": null
       },
       {
@@ -521498,13 +528444,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 7804.88,
+       "contributions": 6139.65,
        "expenditures": null
       }
      ]
     },
     "63": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521512,57 +528458,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 22830.760000000002,
+       "contributions": 21900,
        "expenditures": null
       }
      ]
     },
     "64": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Aaliyah Bailey",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 18098.39,
-       "expenditures": null
-      },
       {
        "name": "Tony Lovasco",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 14580,
+       "contributions": 15084,
+       "expenditures": null
+      },
+      {
+       "name": "Aaliyah Bailey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19026.69,
        "expenditures": null
       }
      ]
     },
     "65": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Bill Otto",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 59192.17,
-       "expenditures": null
-      },
       {
        "name": "Tom Hannegan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 36067.12,
+       "contributions": 37257,
+       "expenditures": null
+      },
+      {
+       "name": "Bill Otto",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 74312.61,
        "expenditures": null
       }
      ]
     },
     "66": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521570,13 +528516,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9219.65,
+       "contributions": 6969.65,
        "expenditures": null
       }
      ]
     },
     "67": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521584,27 +528530,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9984.65,
-       "expenditures": null
-      }
-     ]
-    },
-    "68": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Jermond Mosley",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 9734.65,
        "expenditures": null
       }
      ]
     },
     "69": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521626,7 +528558,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "70": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521634,7 +528566,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 126472.97,
+       "contributions": 126751.61,
        "expenditures": null
       },
       {
@@ -521642,13 +528574,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5660,
+       "contributions": 5680,
        "expenditures": null
       }
      ]
     },
     "71": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521656,13 +528588,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 37547.869999999995,
+       "contributions": 43529.95,
        "expenditures": null
       }
      ]
     },
     "72": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521670,21 +528602,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 38111.65,
-       "expenditures": null
-      },
-      {
-       "name": "Darren Grant",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
+       "contributions": 41263.84,
        "expenditures": null
       }
      ]
     },
     "73": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521692,13 +528616,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 20768.48,
+       "contributions": 20753.48,
        "expenditures": null
       }
      ]
     },
     "74": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521706,13 +528630,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 17739.85,
+       "contributions": 17856.04,
        "expenditures": null
       }
      ]
     },
     "75": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521720,13 +528644,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 13514.61,
+       "contributions": 13464.61,
        "expenditures": null
       }
      ]
     },
     "76": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521734,13 +528658,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 20533.46,
+       "contributions": 21588.46,
        "expenditures": null
       }
      ]
     },
     "77": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521748,13 +528672,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 20047.85,
+       "contributions": 20832.85,
        "expenditures": null
       }
      ]
     },
     "78": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521762,7 +528686,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 20789.879999999997,
+       "contributions": 19364.88,
        "expenditures": null
       },
       {
@@ -521776,7 +528700,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "79": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521784,13 +528708,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 19150,
+       "contributions": 19240,
        "expenditures": null
       }
      ]
     },
     "80": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521798,13 +528722,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 35555.1,
+       "contributions": 39720.26,
        "expenditures": null
       }
      ]
     },
     "81": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521812,13 +528736,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 43898.44,
+       "contributions": 42493.94,
        "expenditures": null
       }
      ]
     },
     "82": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521826,7 +528750,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 30189.65,
+       "contributions": 32890.65,
        "expenditures": null
       },
       {
@@ -521834,15 +528758,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1000,
+       "contributions": 1100,
        "expenditures": null
       }
      ]
     },
     "83": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Johanna Doll",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 40154.58,
+       "expenditures": null
+      },
       {
        "name": "Andrew Bolin",
        "party": "O",
@@ -521850,19 +528782,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": null,
        "expenditures": null
-      },
-      {
-       "name": "Johanna Doll",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 40695.02,
-       "expenditures": null
       }
      ]
     },
     "84": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521876,7 +528800,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "85": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521884,13 +528808,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 17642.92,
+       "contributions": 18912.92,
        "expenditures": null
       }
      ]
     },
     "86": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521898,13 +528822,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 13529.65,
+       "contributions": 13639.65,
        "expenditures": null
       }
      ]
     },
     "87": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521912,57 +528836,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 43727.41,
+       "contributions": 43902.41,
        "expenditures": null
       }
      ]
     },
     "88": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Karan Pujji",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Tracy McCreery",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 89218.76999999999,
+       "contributions": 87302.61,
+       "expenditures": null
+      },
+      {
+       "name": "Karan Pujji",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3711.4,
        "expenditures": null
       }
      ]
     },
     "89": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Luke Barber",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 5879.99,
-       "expenditures": null
-      },
       {
        "name": "Dean Plocher",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 215402.05,
+       "contributions": 213452.01,
+       "expenditures": null
+      },
+      {
+       "name": "Luke Barber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5654.99,
        "expenditures": null
       }
      ]
     },
     "90": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521970,27 +528894,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 52964.12,
-       "expenditures": null
-      }
-     ]
-    },
-    "91": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Sarah Unsicker",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 51847.93,
        "expenditures": null
       }
      ]
     },
     "92": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -521998,7 +528908,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 4869.66,
+       "contributions": 6866,
        "expenditures": null
       },
       {
@@ -522006,13 +528916,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 13646.87,
+       "contributions": 18084.53,
        "expenditures": null
       }
      ]
     },
     "93": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522020,13 +528930,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 16377.77,
+       "contributions": 30301.59,
        "expenditures": null
       }
      ]
     },
     "94": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522034,7 +528944,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 78109.19,
+       "contributions": 62854,
        "expenditures": null
       },
       {
@@ -522042,13 +528952,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 71754.75,
+       "contributions": 77791.61,
        "expenditures": null
       }
      ]
     },
     "95": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522056,35 +528966,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 37229.38,
+       "contributions": 36695.46,
        "expenditures": null
       }
      ]
     },
     "96": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Erica Hoffman",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 37975.770000000004,
-       "expenditures": null
-      },
       {
        "name": "David Gregory",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 150820.95,
+       "contributions": 144325,
+       "expenditures": null
+      },
+      {
+       "name": "Erica Hoffman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 37179.13,
        "expenditures": null
       }
      ]
     },
     "97": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522092,13 +529002,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 103062.01000000001,
+       "contributions": 107639.44,
        "expenditures": null
       }
      ]
     },
     "98": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522114,57 +529024,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 13280.74,
+       "contributions": 12779.61,
        "expenditures": null
       }
      ]
     },
     "99": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Trish Gunby",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 330683.26,
-       "expenditures": null
-      },
       {
        "name": "Lee Pitman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 42555.479999999996,
+       "contributions": 41848.27,
+       "expenditures": null
+      },
+      {
+       "name": "Trish Gunby",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 328367.41,
        "expenditures": null
       }
      ]
     },
     "100": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Derek Grier",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 72521.7,
-       "expenditures": null
-      },
       {
        "name": "Helena Webb",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 87289.91,
+       "contributions": 82172.61,
+       "expenditures": null
+      },
+      {
+       "name": "Derek Grier",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 71946.7,
        "expenditures": null
       }
      ]
     },
     "101": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522172,13 +529082,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 100684,
+       "contributions": 99134.09,
        "expenditures": null
       }
      ]
     },
     "102": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522186,7 +529096,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 17425,
+       "contributions": 17055,
        "expenditures": null
       },
       {
@@ -522194,13 +529104,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6141.77,
+       "contributions": 7356.56,
        "expenditures": null
       }
      ]
     },
     "103": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522208,7 +529118,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 173830,
+       "contributions": 173253.98,
        "expenditures": null
       },
       {
@@ -522216,57 +529126,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 4415.41,
+       "contributions": 4025.41,
        "expenditures": null
       }
      ]
     },
     "104": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Jessica DeVoto",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 7630.5,
-       "expenditures": null
-      },
       {
        "name": "Adam Schnelting",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 37370.85,
+       "contributions": 37199,
+       "expenditures": null
+      },
+      {
+       "name": "Jessica DeVoto",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8136.68,
        "expenditures": null
       }
      ]
     },
     "105": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Christine Hyman",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 50007.55,
-       "expenditures": null
-      },
       {
        "name": "Phil Christofanelli",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 92922,
+       "contributions": 92718.86,
+       "expenditures": null
+      },
+      {
+       "name": "Christine Hyman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 44150.25,
        "expenditures": null
       }
      ]
     },
     "106": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522274,7 +529184,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 23061,
+       "contributions": 26499.33,
        "expenditures": null
       },
       {
@@ -522282,13 +529192,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 82573.51,
+       "contributions": 80627.07,
        "expenditures": null
       }
      ]
     },
     "107": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522296,43 +529206,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 79900,
-       "expenditures": null
-      },
-      {
-       "name": "Victoria Witt Datt",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": null,
+       "contributions": 82585,
        "expenditures": null
       }
      ]
     },
     "108": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Susan Shumway",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 5893.97,
-       "expenditures": null
-      },
       {
        "name": "JUSTIN HILL",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 41075,
+       "contributions": 44406,
+       "expenditures": null
+      },
+      {
+       "name": "Susan Shumway",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5477.53,
        "expenditures": null
       }
      ]
     },
     "109": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522340,35 +529242,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 36001.56,
+       "contributions": 35015,
        "expenditures": null
       }
      ]
     },
     "110": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Dorothy Bailey",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 40015,
-       "expenditures": null
-      },
       {
        "name": "John Kiehne",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 39855.75,
+       "contributions": 34355.73,
+       "expenditures": null
+      },
+      {
+       "name": "Dorothy Bailey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44672,
        "expenditures": null
       }
      ]
     },
     "111": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522376,7 +529278,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 11393,
+       "contributions": 11296,
        "expenditures": null
       },
       {
@@ -522390,7 +529292,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "112": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522398,35 +529300,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 283284,
+       "contributions": 288986.87,
        "expenditures": null
       }
      ]
     },
     "113": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Terry Burgess",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 26839.41,
-       "expenditures": null
-      },
       {
        "name": "DAN SHAUL",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 86084.53,
+       "contributions": 85825,
+       "expenditures": null
+      },
+      {
+       "name": "Terry Burgess",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 26589.41,
        "expenditures": null
       }
      ]
     },
     "114": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522434,13 +529336,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 67576,
+       "contributions": 74740.44,
        "expenditures": null
       }
      ]
     },
     "115": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522448,7 +529350,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 50269.42,
+       "contributions": 49974,
        "expenditures": null
       },
       {
@@ -522456,13 +529358,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 5402.59,
+       "contributions": 5132.59,
        "expenditures": null
       }
      ]
     },
     "116": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522470,49 +529372,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 51669.42,
+       "contributions": 51596,
        "expenditures": null
       }
      ]
     },
     "117": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Tony Dorsett",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 4126.65,
-       "expenditures": null
-      },
       {
        "name": "Mike Henderson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 58763.97,
+       "contributions": 63113.24,
        "expenditures": null
-      }
-     ]
-    },
-    "118": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
+      },
       {
-       "name": "Michael McGirl",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "name": "Tony Dorsett",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5822.65,
        "expenditures": null
       }
      ]
     },
     "119": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522520,23 +529408,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 28999.55,
+       "contributions": 28756.63,
        "expenditures": null
       }
      ]
     },
     "120": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Theresa Schmitt",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 8049.65,
-       "expenditures": null
-      },
       {
        "name": "Jason Chipman",
        "party": "R",
@@ -522544,11 +529424,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 16146,
        "expenditures": null
+      },
+      {
+       "name": "Theresa Schmitt",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7409.65,
+       "expenditures": null
       }
      ]
     },
     "121": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522556,13 +529444,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 10415,
+       "contributions": 9415,
        "expenditures": null
       }
      ]
     },
     "122": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522570,35 +529458,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 16226.51,
+       "contributions": 12875,
        "expenditures": null
       }
      ]
     },
     "123": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Patrick Bellew",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Suzie Pollock",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 15850,
+       "contributions": 16400.6,
+       "expenditures": null
+      },
+      {
+       "name": "Patrick Bellew",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 100,
        "expenditures": null
       }
      ]
     },
     "124": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522606,13 +529494,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 34332.1,
+       "contributions": 33082.1,
        "expenditures": null
       }
      ]
     },
     "125": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522620,15 +529508,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 18815,
+       "contributions": 18215,
        "expenditures": null
       }
      ]
     },
     "126": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Patricia Pike",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 16450,
+       "expenditures": null
+      },
       {
        "name": "Edwin Hogan",
        "party": "D",
@@ -522636,57 +529532,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 2162.98,
        "expenditures": null
-      },
-      {
-       "name": "Patricia Pike",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 16246.75,
-       "expenditures": null
-      }
-     ]
-    },
-    "127": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Ann Kelley",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
-       "expenditures": null
       }
      ]
     },
     "128": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Marvin Manring",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 16218.53,
-       "expenditures": null
-      },
       {
        "name": "Michael Stephens",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 34600,
+       "contributions": 34640,
+       "expenditures": null
+      },
+      {
+       "name": "Marvin Manring",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16383.53,
        "expenditures": null
       }
      ]
     },
     "129": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Jeff Knight",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 50046,
+       "expenditures": null
+      },
       {
        "name": "Dewanna Marquez",
        "party": "D",
@@ -522694,19 +529576,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 1439.65,
        "expenditures": null
-      },
-      {
-       "name": "Jeff Knight",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 51773.91,
-       "expenditures": null
       }
      ]
     },
     "130": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522714,21 +529588,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10365.64,
-       "expenditures": null
-      },
-      {
-       "name": "Bishop Davidson",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
+       "contributions": 8628.3,
        "expenditures": null
       }
      ]
     },
     "131": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522736,7 +529602,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 38731.5,
+       "contributions": 37929.5,
        "expenditures": null
       },
       {
@@ -522744,13 +529610,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 2743.85,
+       "contributions": 2453.85,
        "expenditures": null
       }
      ]
     },
     "132": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522758,7 +529624,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 138647.45,
+       "contributions": 139020.81,
        "expenditures": null
       },
       {
@@ -522766,13 +529632,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3100,
+       "contributions": 3200,
        "expenditures": null
       }
      ]
     },
     "133": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522780,7 +529646,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 13901.48,
+       "contributions": 12708.6,
        "expenditures": null
       },
       {
@@ -522788,13 +529654,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 195147,
+       "contributions": 195022,
        "expenditures": null
       }
      ]
     },
     "134": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522802,7 +529668,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 70875.28,
+       "contributions": 68915.33,
        "expenditures": null
       },
       {
@@ -522810,35 +529676,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10207.91,
+       "contributions": 15783.44,
        "expenditures": null
       }
      ]
     },
     "135": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Elizabeth Fogle",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 161824.13,
-       "expenditures": null
-      },
       {
        "name": "Steve Helms",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 86974.53,
+       "contributions": 75749.2,
+       "expenditures": null
+      },
+      {
+       "name": "Elizabeth Fogle",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 149470.61,
        "expenditures": null
       }
      ]
     },
     "136": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522846,7 +529712,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 45722.42,
+       "contributions": 45671,
        "expenditures": null
       },
       {
@@ -522854,35 +529720,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 75377.25,
+       "contributions": 69967.82,
        "expenditures": null
       }
      ]
     },
     "137": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Raymond Lampert",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 5398.28,
-       "expenditures": null
-      },
       {
        "name": "John Black",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 43088.270000000004,
+       "contributions": 43211,
+       "expenditures": null
+      },
+      {
+       "name": "Raymond Lampert",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4239.61,
        "expenditures": null
       }
      ]
     },
     "138": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522890,13 +529756,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 14681.84,
+       "contributions": 14840,
        "expenditures": null
       }
      ]
     },
     "139": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522904,7 +529770,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 11976.42,
+       "contributions": 11972.75,
        "expenditures": null
       },
       {
@@ -522912,13 +529778,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 1106.41,
+       "contributions": 1206.41,
        "expenditures": null
       }
      ]
     },
     "140": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522926,13 +529792,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 9600,
+       "contributions": 9800,
        "expenditures": null
       }
      ]
     },
     "141": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522940,13 +529806,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 75868.57,
+       "contributions": 75465.5,
        "expenditures": null
       }
      ]
     },
     "142": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522954,13 +529820,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 17660.510000000002,
+       "contributions": 19681.8,
        "expenditures": null
       }
      ]
     },
     "143": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522968,13 +529834,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 23002,
+       "contributions": 33387.25,
        "expenditures": null
       }
      ]
     },
     "144": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522982,13 +529848,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 23586,
+       "contributions": 23217,
        "expenditures": null
       }
      ]
     },
     "145": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -522996,21 +529862,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 45412.97,
-       "expenditures": null
-      },
-      {
-       "name": "Mike Lindley",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": null,
+       "contributions": 45265,
        "expenditures": null
       }
      ]
     },
     "146": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523018,13 +529876,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 14080,
+       "contributions": 14825,
        "expenditures": null
       }
      ]
     },
     "147": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523032,7 +529890,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 77117,
+       "contributions": 111067,
        "expenditures": null
       },
       {
@@ -523040,27 +529898,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14149.59,
-       "expenditures": null
-      }
-     ]
-    },
-    "148": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Jamie Burger",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
+       "contributions": 13864.3,
        "expenditures": null
       }
      ]
     },
     "149": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523074,7 +529918,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "150": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523082,13 +529926,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 17325,
+       "contributions": 16575,
        "expenditures": null
       }
      ]
     },
     "151": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523096,13 +529940,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 7230,
+       "contributions": 13450,
        "expenditures": null
       }
      ]
     },
     "152": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523110,13 +529954,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24068.5,
+       "contributions": 23132.5,
        "expenditures": null
       }
      ]
     },
     "153": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523124,13 +529968,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 33301.4,
+       "contributions": 28851.4,
        "expenditures": null
       }
      ]
     },
     "154": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523138,23 +529982,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 19621,
+       "contributions": 20571,
        "expenditures": null
       }
      ]
     },
     "155": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Travis Smith",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Mike Lind",
        "party": "D",
@@ -523166,29 +530002,29 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "156": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Dale Speelman",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 1153.47,
-       "expenditures": null
-      },
       {
        "name": "Brian Seitz",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 15978.57,
+       "contributions": 15475,
+       "expenditures": null
+      },
+      {
+       "name": "Dale Speelman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 839.61,
        "expenditures": null
       }
      ]
     },
     "157": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523196,13 +530032,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 41403.1,
+       "contributions": 41339.1,
        "expenditures": null
       }
      ]
     },
     "158": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523210,7 +530046,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 15523.62,
+       "contributions": 15450.26,
        "expenditures": null
       },
       {
@@ -523218,13 +530054,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 3402.35,
+       "contributions": 3132.35,
        "expenditures": null
       }
      ]
     },
     "159": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523232,13 +530068,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 51096,
+       "contributions": 50459,
        "expenditures": null
       }
      ]
     },
     "160": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523246,31 +530082,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 4211.68,
-       "expenditures": null
-      },
-      {
-       "name": "Ben Baker",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 4361.68,
        "expenditures": null
       }
      ]
     },
     "161": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Joshua Shackles",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Lane Roberts",
        "party": "R",
@@ -523278,11 +530098,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 25529,
        "expenditures": null
+      },
+      {
+       "name": "Joshua Shackles",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
       }
      ]
     },
     "162": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523290,29 +530118,29 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 15375,
+       "contributions": 15475,
        "expenditures": null
       }
      ]
     },
     "163": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Aaron Hailey",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 758.24,
-       "expenditures": null
-      },
       {
        "name": "David Smith",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 177774,
+       "contributions": 181024,
+       "expenditures": null
+      },
+      {
+       "name": "Aaron Hailey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 858.24,
        "expenditures": null
       }
      ]
@@ -523320,7 +530148,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "1": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523328,7 +530156,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 667254.39,
+       "contributions": 680579.15,
        "expenditures": null
       },
       {
@@ -523336,13 +530164,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 126999.08,
+       "contributions": 97185,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523350,37 +530178,45 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 178687.97,
+       "contributions": 179106,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Michael Hebron",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 4416.25,
-       "expenditures": null
-      },
       {
        "name": "Steve Roberts",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 264184.8,
+       "contributions": 259493.05,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Hebron",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1100,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "GREG RAZER",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 237148.48,
+       "expenditures": null
+      },
       {
        "name": "Nathan Kline",
        "party": "O",
@@ -523388,41 +530224,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": null,
        "expenditures": null
-      },
-      {
-       "name": "GREG RAZER",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 205374.37,
-       "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "David Martin",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 2430,
-       "expenditures": null
-      },
       {
        "name": "Barbara Washington",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 190235.05,
+       "contributions": 202408.45,
+       "expenditures": null
+      },
+      {
+       "name": "David Martin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2360,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523430,13 +530258,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 251090.1,
+       "contributions": 280765.25,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523444,7 +530272,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 73229.46,
+       "contributions": 71393.05,
        "expenditures": null
       },
       {
@@ -523458,7 +530286,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "15": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523466,21 +530294,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 419601.89999999997,
-       "expenditures": null
-      },
-      {
-       "name": "Deb Lavender",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": null,
+       "contributions": 435434.72,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523488,7 +530308,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 497586.68,
+       "contributions": 541717.07,
        "expenditures": null
       },
       {
@@ -523496,35 +530316,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 18483.26,
+       "contributions": 14769,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Judy Baker",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 475362.19,
-       "expenditures": null
-      },
       {
        "name": "CALEB ROWDEN",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 596190.91,
+       "contributions": 627440.91,
+       "expenditures": null
+      },
+      {
+       "name": "Judy Baker",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 490939.17,
        "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523532,7 +530352,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 180540.2,
+       "contributions": 218001.79,
        "expenditures": null
       },
       {
@@ -523540,13 +530360,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 56,
+       "contributions": 59,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523554,7 +530374,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 349534.05,
+       "contributions": 315846.8,
        "expenditures": null
       },
       {
@@ -523562,29 +530382,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 20114.45,
-       "expenditures": null
-      }
-     ]
-    },
-    "25": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2020",
-     "candidates": [
-      {
-       "name": "Jason Bean",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
+       "contributions": 21606.45,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
+      {
+       "name": "Holly Rehder",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 315656.27,
+       "expenditures": null
+      },
       {
        "name": "Donnie Owens",
        "party": "D",
@@ -523592,19 +530406,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": null,
        "expenditures": null
-      },
-      {
-       "name": "Holly Rehder",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 320014.16000000003,
-       "expenditures": null
       }
      ]
     },
     "29": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
@@ -523612,51 +530418,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 170998.79,
+       "contributions": 165747.79,
        "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Raymond Kinney",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 15638.5,
-       "expenditures": null
-      },
       {
        "name": "Rick Brattin",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 210348.82,
+       "contributions": 207201.29,
+       "expenditures": null
+      },
+      {
+       "name": "Raymond Kinney",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16463,
        "expenditures": null
       }
      ]
     },
     "33": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2020",
      "candidates": [
-      {
-       "name": "Karla Eslinger",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Tammy Harty",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 15956.279999999999,
+       "contributions": 16815.37,
        "expenditures": null
       }
      ]
@@ -523666,51 +530464,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2022": {
    "house": {
     "1": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Jeff Farnan",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 81574.48,
-       "expenditures": null
-      },
       {
        "name": "Jessica Piper",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 260404.36000000002,
+       "contributions": 276321.18,
+       "expenditures": null
+      },
+      {
+       "name": "Jeff Farnan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 80333,
        "expenditures": null
       }
      ]
     },
     "2": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Mazzie Boyd Christensen",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Lois Pontius",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 2242.88,
+       "contributions": 2138.88,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523718,27 +530508,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 11300,
-       "expenditures": null
-      }
-     ]
-    },
-    "4": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Gregory Sharpe",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 14125,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523746,13 +530522,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 42600,
+       "contributions": 43354.4,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523760,13 +530536,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 23830.32,
+       "contributions": 23569.35,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523774,7 +530550,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 32350,
+       "contributions": 30050,
        "expenditures": null
       },
       {
@@ -523782,35 +530558,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 3939,
+       "contributions": 3900,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Alyssa Dial",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 3335,
-       "expenditures": null
-      },
       {
        "name": "Joshua Hurlbert",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 18885.97,
+       "contributions": 19125,
+       "expenditures": null
+      },
+      {
+       "name": "Alyssa Dial",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4908.02,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523818,13 +530594,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 38470.58,
+       "contributions": 38843.01,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523838,7 +530614,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "11": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523846,13 +530622,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 66110,
+       "contributions": 67200.33,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523860,7 +530636,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 50903.58,
+       "contributions": 49237,
        "expenditures": null
       },
       {
@@ -523868,13 +530644,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 70906.75,
+       "contributions": 70253.59,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523882,13 +530658,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 14082.61,
+       "contributions": 14200,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523896,7 +530672,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 112568.4,
+       "contributions": 108476.28,
        "expenditures": null
       },
       {
@@ -523904,35 +530680,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 43786.41,
+       "contributions": 28625.88,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Adam Richardson",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 3081.6,
-       "expenditures": null
-      },
       {
        "name": "Margaret Nurrenbern",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 66341.73999999999,
+       "contributions": 65437.76,
+       "expenditures": null
+      },
+      {
+       "name": "Adam Richardson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3121.6,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523940,7 +530716,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 62182.28,
+       "contributions": 64217.31,
        "expenditures": null
       },
       {
@@ -523948,35 +530724,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 3184,
+       "contributions": 3676.39,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "William Allen",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 17484.7,
-       "expenditures": null
-      },
       {
        "name": "Mark Ellebracht",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 92400,
+       "contributions": 96578.72,
+       "expenditures": null
+      },
+      {
+       "name": "William Allen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17044.7,
        "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523984,13 +530760,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 20493.88,
+       "contributions": 19059.88,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -523998,21 +530774,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 54534.799999999996,
-       "expenditures": null
-      },
-      {
-       "name": "Karen Spalding",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
+       "contributions": 53546.88,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524020,7 +530788,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 32422.64,
+       "contributions": 29472.51,
        "expenditures": null
       },
       {
@@ -524034,7 +530802,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "21": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524042,7 +530810,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 102705.6,
+       "contributions": 102452.6,
        "expenditures": null
       },
       {
@@ -524050,13 +530818,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 13007.6,
+       "contributions": 14982.75,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524064,13 +530832,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 18530.05,
+       "contributions": 18992.09,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524078,27 +530846,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 20290,
-       "expenditures": null
-      }
-     ]
-    },
-    "24": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Emily Weber",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 19308,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524106,13 +530860,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 42737.97,
+       "contributions": 41428.88,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524120,13 +530874,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 18903.92,
+       "contributions": 16300,
        "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524134,7 +530888,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 18864,
+       "contributions": 17680,
        "expenditures": null
       },
       {
@@ -524142,13 +530896,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 7372.55,
+       "contributions": 6642.55,
        "expenditures": null
       }
      ]
     },
     "29": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524156,7 +530910,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 12807.67,
+       "contributions": 11540.41,
        "expenditures": null
       },
       {
@@ -524164,13 +530918,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 79910.82999999999,
+       "contributions": 76917.51,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524178,7 +530932,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 156798.36,
+       "contributions": 137464.3,
        "expenditures": null
       },
       {
@@ -524186,13 +530940,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 17415.1,
+       "contributions": 21814.81,
        "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524200,7 +530954,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 20265,
+       "contributions": 24053.33,
        "expenditures": null
       },
       {
@@ -524208,13 +530962,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 4853.52,
+       "contributions": 5356.05,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524222,7 +530976,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 63781.98,
+       "contributions": 64283.84,
        "expenditures": null
       },
       {
@@ -524236,7 +530990,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "33": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524244,13 +530998,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 15621,
+       "contributions": 18280,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524258,7 +531012,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 100707.03,
+       "contributions": 97415.7,
        "expenditures": null
       },
       {
@@ -524266,13 +531020,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 28187.91,
+       "contributions": 26939.46,
        "expenditures": null
       }
      ]
     },
     "35": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524280,7 +531034,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 94274.20999999999,
+       "contributions": 90247.21,
        "expenditures": null
       },
       {
@@ -524294,7 +531048,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "36": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524302,7 +531056,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 18898.33,
+       "contributions": 18113.33,
        "expenditures": null
       },
       {
@@ -524315,22 +531069,8 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "37": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Mark Sharp",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": null,
-       "expenditures": null
-      }
-     ]
-    },
     "38": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524338,13 +531078,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 44109.759999999995,
+       "contributions": 35720.64,
        "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524352,13 +531092,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 100265.47,
+       "contributions": 95270,
        "expenditures": null
       }
      ]
     },
     "40": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524366,31 +531106,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 33501.229999999996,
+       "contributions": 34539,
        "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Rebecca Martin",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 2393.48,
-       "expenditures": null
-      },
-      {
-       "name": "Doyle Justus",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 32590,
-       "expenditures": null
-      },
       {
        "name": "David Norman",
        "party": "D",
@@ -524398,11 +531122,27 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 5275,
        "expenditures": null
+      },
+      {
+       "name": "Doyle Justus",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 34340,
+       "expenditures": null
+      },
+      {
+       "name": "Rebecca Martin",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1701.15,
+       "expenditures": null
       }
      ]
     },
     "42": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524410,13 +531150,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 57512.55,
+       "contributions": 60104,
        "expenditures": null
       }
      ]
     },
     "43": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524430,7 +531170,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "44": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524438,13 +531178,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14705.94,
+       "contributions": 14264.88,
        "expenditures": null
       }
      ]
     },
     "45": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524452,13 +531192,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 43144.25,
+       "contributions": 40294.25,
        "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524466,7 +531206,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 82265.28,
+       "contributions": 81265.07,
        "expenditures": null
       },
       {
@@ -524474,13 +531214,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 75250.62,
+       "contributions": 68152.9,
        "expenditures": null
       }
      ]
     },
     "48": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524488,35 +531228,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 15060.970000000001,
+       "contributions": 16796.9,
        "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Jessica Slisz",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 9742.13,
-       "expenditures": null
-      },
       {
        "name": "Jim Schulte",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 43805,
+       "contributions": 43855,
+       "expenditures": null
+      },
+      {
+       "name": "Jessica Slisz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9376.13,
        "expenditures": null
       }
      ]
     },
     "50": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524524,7 +531264,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 16592.76,
+       "contributions": 16782.78,
        "expenditures": null
       },
       {
@@ -524532,13 +531272,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 87923.91,
+       "contributions": 85576.49,
        "expenditures": null
       }
      ]
     },
     "51": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524546,7 +531286,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 185267.06,
+       "contributions": 189089.06,
        "expenditures": null
       },
       {
@@ -524554,35 +531294,27 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 270,
        "expenditures": null
       }
      ]
     },
     "52": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Bradley Pollitt",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Charlotte Vance",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 4600,
+       "contributions": 5548.42,
        "expenditures": null
       }
      ]
     },
     "53": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524590,13 +531322,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24228.04,
+       "contributions": 24200,
        "expenditures": null
       }
      ]
     },
     "54": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524604,13 +531336,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 165895,
+       "contributions": 163430,
        "expenditures": null
       }
      ]
     },
     "55": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524618,13 +531350,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 137180.28,
+       "contributions": 140858,
        "expenditures": null
       }
      ]
     },
     "56": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524632,7 +531364,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 8915,
+       "contributions": 8165,
        "expenditures": null
       },
       {
@@ -524640,13 +531372,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 19542.85,
+       "contributions": 19358.85,
        "expenditures": null
       }
      ]
     },
     "57": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524654,7 +531386,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 40990,
+       "contributions": 41321,
        "expenditures": null
       },
       {
@@ -524662,13 +531394,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 1383.88,
+       "contributions": 1300,
        "expenditures": null
       }
      ]
     },
     "58": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524676,41 +531408,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 33170.73,
-       "expenditures": null
-      }
-     ]
-    },
-    "59": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Rudy Veit",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
-       "expenditures": null
-      }
-     ]
-    },
-    "60": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Dave Griffith",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 33927,
        "expenditures": null
       }
      ]
     },
     "61": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524718,57 +531422,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 28864.48,
+       "contributions": 30976,
        "expenditures": null
       }
      ]
     },
     "62": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Sherri Gallick",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 74421.33,
-       "expenditures": null
-      },
       {
        "name": "Jim Hogan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 5760.719999999999,
+       "contributions": 5900.89,
+       "expenditures": null
+      },
+      {
+       "name": "Sherri Gallick",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 68281.99,
        "expenditures": null
       }
      ]
     },
     "63": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Tricia Byrnes",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 35320,
-       "expenditures": null
-      },
       {
        "name": "Jenna Roberson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 22108.73,
+       "contributions": 23530.82,
+       "expenditures": null
+      },
+      {
+       "name": "Tricia Byrnes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 37965,
        "expenditures": null
       }
      ]
     },
     "64": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524776,35 +531480,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24894.64,
+       "contributions": 24606.26,
        "expenditures": null
       }
      ]
     },
     "65": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Eric Nowicki",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 11566.79,
-       "expenditures": null
-      },
       {
        "name": "Wendy Hausman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 28685,
+       "contributions": 28805,
+       "expenditures": null
+      },
+      {
+       "name": "Eric Nowicki",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12008.92,
        "expenditures": null
       }
      ]
     },
     "66": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524812,13 +531516,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 14098.88,
+       "contributions": 14308.48,
        "expenditures": null
       }
      ]
     },
     "67": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524826,27 +531530,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 21828.7,
-       "expenditures": null
-      }
-     ]
-    },
-    "68": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Jermond Mosley",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 23613.7,
        "expenditures": null
       }
      ]
     },
     "69": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524854,7 +531544,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10357.88,
+       "contributions": 12028.61,
        "expenditures": null
       },
       {
@@ -524862,13 +531552,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 49986.700000000004,
+       "contributions": 49238.78,
        "expenditures": null
       }
      ]
     },
     "70": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524876,7 +531566,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 51417.88,
+       "contributions": 48898.88,
        "expenditures": null
       },
       {
@@ -524890,7 +531580,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "71": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524898,13 +531588,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 42089.880000000005,
+       "contributions": 42367.88,
        "expenditures": null
       }
      ]
     },
     "72": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524912,13 +531602,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 38381.380000000005,
+       "contributions": 39268.38,
        "expenditures": null
       }
      ]
     },
     "73": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524926,13 +531616,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 28633.88,
+       "contributions": 28683.88,
        "expenditures": null
       }
      ]
     },
     "74": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524940,13 +531630,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 16080,
+       "contributions": 15080,
        "expenditures": null
       }
      ]
     },
     "75": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524954,13 +531644,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 13160.8,
+       "contributions": 13149.95,
        "expenditures": null
       }
      ]
     },
     "76": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524974,7 +531664,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "77": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524982,13 +531672,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 8947,
+       "contributions": 7763,
        "expenditures": null
       }
      ]
     },
     "78": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -524996,13 +531686,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 29399.99,
+       "contributions": 21989.99,
        "expenditures": null
       }
      ]
     },
     "79": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525010,15 +531700,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 25093,
+       "contributions": 25862,
        "expenditures": null
       }
      ]
     },
     "80": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Peter Merideth",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 37696.33,
+       "expenditures": null
+      },
       {
        "name": "Kirk Hilzinger",
        "party": "R",
@@ -525026,21 +531724,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 1860.79,
        "expenditures": null
-      },
-      {
-       "name": "Peter Merideth",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 33266.33,
-       "expenditures": null
       }
      ]
     },
     "81": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Steve Butz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 79407,
+       "expenditures": null
+      },
       {
        "name": "Jake Koehr",
        "party": "R",
@@ -525048,21 +531746,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 2733.98,
        "expenditures": null
-      },
-      {
-       "name": "Steve Butz",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 77971,
-       "expenditures": null
       }
      ]
     },
     "82": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Donna Baringer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 39097.3,
+       "expenditures": null
+      },
       {
        "name": "Robert Crump",
        "party": "R",
@@ -525070,19 +531768,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 7250,
        "expenditures": null
-      },
-      {
-       "name": "Donna Baringer",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 31416.7,
-       "expenditures": null
       }
      ]
     },
     "83": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525092,19 +531782,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": null,
        "expenditures": null
-      },
-      {
-       "name": "Sarah Unsicker",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 1000,
-       "expenditures": null
       }
      ]
     },
     "84": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525112,13 +531794,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14171.88,
+       "contributions": 12139.18,
        "expenditures": null
       }
      ]
     },
     "85": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525126,13 +531808,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6646.51,
+       "contributions": 3367.27,
        "expenditures": null
       }
      ]
     },
     "86": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525140,13 +531822,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 13837.699999999999,
+       "contributions": 12368.88,
        "expenditures": null
       }
      ]
     },
     "87": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525154,13 +531836,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 85555.20999999999,
+       "contributions": 83351.21,
        "expenditures": null
       }
      ]
     },
     "88": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525168,7 +531850,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 21600,
+       "contributions": 24699.97,
        "expenditures": null
       },
       {
@@ -525176,37 +531858,45 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 4107.89,
+       "contributions": 3923.89,
        "expenditures": null
       }
      ]
     },
     "89": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Luke Barber",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 6714.03,
-       "expenditures": null
-      },
       {
        "name": "Dean Plocher",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 526229.66,
+       "contributions": 555286.01,
+       "expenditures": null
+      },
+      {
+       "name": "Luke Barber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5114.2,
        "expenditures": null
       }
      ]
     },
     "90": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Barbara Phifer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 31844,
+       "expenditures": null
+      },
       {
        "name": "Gary Bokermann",
        "party": "R",
@@ -525214,19 +531904,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 4380.56,
        "expenditures": null
-      },
-      {
-       "name": "Barbara Phifer",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 32112.82,
-       "expenditures": null
       }
      ]
     },
     "91": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525234,13 +531916,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 35776.490000000005,
+       "contributions": 32381.88,
        "expenditures": null
       }
      ]
     },
     "92": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525248,13 +531930,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 29025.18,
+       "contributions": 32186.65,
        "expenditures": null
       }
      ]
     },
     "93": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525262,13 +531944,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1775,
+       "contributions": 1275,
        "expenditures": null
       }
      ]
     },
     "94": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525276,7 +531958,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 83288.15,
+       "contributions": 64430.33,
        "expenditures": null
       },
       {
@@ -525284,13 +531966,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 48106.95,
+       "contributions": 47703.43,
        "expenditures": null
       }
      ]
     },
     "95": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525298,13 +531980,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 47531.14,
+       "contributions": 38385.43,
        "expenditures": null
       }
      ]
     },
     "96": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525312,7 +531994,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 194903.86,
+       "contributions": 191017.52,
        "expenditures": null
       },
       {
@@ -525320,13 +532002,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 31929.88,
+       "contributions": 31134.82,
        "expenditures": null
       }
      ]
     },
     "97": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525334,35 +532016,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 37080,
+       "contributions": 39656,
        "expenditures": null
       }
      ]
     },
     "98": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Ryan Higgins",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 44415,
-       "expenditures": null
-      },
       {
        "name": "Deb Lavender",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 198925.34,
+       "contributions": 246243.36,
+       "expenditures": null
+      },
+      {
+       "name": "Ryan Higgins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 45668,
        "expenditures": null
       }
      ]
     },
     "99": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525370,7 +532052,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 103316.38,
+       "contributions": 102253.38,
        "expenditures": null
       },
       {
@@ -525378,13 +532060,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 84785.98,
+       "contributions": 79180.93,
        "expenditures": null
       }
      ]
     },
     "100": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525392,7 +532074,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 76447.40000000001,
+       "contributions": 70310.32,
        "expenditures": null
       },
       {
@@ -525400,13 +532082,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 21095,
+       "contributions": 19545,
        "expenditures": null
       }
      ]
     },
     "101": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525414,7 +532096,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 85608.56,
+       "contributions": 65976,
        "expenditures": null
       },
       {
@@ -525422,13 +532104,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 142938.14,
+       "contributions": 143151.22,
        "expenditures": null
       }
      ]
     },
     "102": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525436,13 +532118,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 22400.56,
+       "contributions": 19667.39,
        "expenditures": null
       }
      ]
     },
     "103": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525450,35 +532132,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 32210.89,
+       "contributions": 28931,
        "expenditures": null
       }
      ]
     },
     "104": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Phil Christofanelli",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 133235,
-       "expenditures": null
-      },
       {
        "name": "Gregory Upchurch",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6734.98,
+       "contributions": 5809.76,
+       "expenditures": null
+      },
+      {
+       "name": "Phil Christofanelli",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 134735,
        "expenditures": null
       }
      ]
     },
     "105": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525486,57 +532168,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 52303.03,
+       "contributions": 56008.33,
        "expenditures": null
       }
      ]
     },
     "106": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Ron Odenthal",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 12723.3,
-       "expenditures": null
-      },
       {
        "name": "Travis Wilson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 54667.48,
+       "contributions": 62731,
+       "expenditures": null
+      },
+      {
+       "name": "Ron Odenthal",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12536.34,
        "expenditures": null
       }
      ]
     },
     "107": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Mark Matthiesen",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 27462.48,
-       "expenditures": null
-      },
       {
        "name": "Tracy Grundy",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 13623.76,
+       "contributions": 13677.41,
+       "expenditures": null
+      },
+      {
+       "name": "Mark Matthiesen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27970,
        "expenditures": null
       }
      ]
     },
     "108": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525544,7 +532226,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14710.97,
+       "contributions": 14788.83,
        "expenditures": null
       },
       {
@@ -525552,13 +532234,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 27212,
+       "contributions": 26799,
        "expenditures": null
       }
      ]
     },
     "109": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525566,15 +532248,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 15865.8,
+       "contributions": 14885,
        "expenditures": null
       }
      ]
     },
     "110": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
+      {
+       "name": "Justin Sparks",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 30661.52,
+       "expenditures": null
+      },
       {
        "name": "Josh Thackston",
        "party": "D",
@@ -525582,19 +532272,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": null,
        "expenditures": null
-      },
-      {
-       "name": "Justin Sparks",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 31403.88,
-       "expenditures": null
       }
      ]
     },
     "111": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525602,13 +532284,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 6378.35,
+       "contributions": 4800,
        "expenditures": null
       }
      ]
     },
     "112": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525616,13 +532298,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 18301.3,
+       "contributions": 18171.58,
        "expenditures": null
       }
      ]
     },
     "113": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525630,13 +532312,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 24482.48,
+       "contributions": 21081,
        "expenditures": null
       }
      ]
     },
     "114": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525644,7 +532326,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 77815,
+       "contributions": 81090,
        "expenditures": null
       },
       {
@@ -525652,13 +532334,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14917.1,
+       "contributions": 14148.66,
        "expenditures": null
       }
      ]
     },
     "115": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525666,7 +532348,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 89529.18,
+       "contributions": 90509,
        "expenditures": null
       },
       {
@@ -525674,13 +532356,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 3250,
+       "contributions": 5173.45,
        "expenditures": null
       }
      ]
     },
     "116": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525688,13 +532370,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 38700,
+       "contributions": 39050,
        "expenditures": null
       }
      ]
     },
     "117": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525702,13 +532384,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 71067.06,
+       "contributions": 72575,
        "expenditures": null
       }
      ]
     },
     "118": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525716,21 +532398,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14172.78,
-       "expenditures": null
-      },
-      {
-       "name": "Michael McGirl",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 15014.16,
        "expenditures": null
       }
      ]
     },
     "119": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525738,13 +532412,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 8356.66,
+       "contributions": 7506.66,
        "expenditures": null
       }
      ]
     },
     "120": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525752,13 +532426,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 54722.8,
+       "contributions": 59682.18,
        "expenditures": null
       }
      ]
     },
     "121": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525766,35 +532440,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 83217.06,
+       "contributions": 82187.43,
        "expenditures": null
       }
      ]
     },
     "122": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Lisa McCarthy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 18273.62,
-       "expenditures": null
-      },
       {
        "name": "Tara Peters",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 15300,
+       "contributions": 14550,
+       "expenditures": null
+      },
+      {
+       "name": "Lisa McCarthy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15947.58,
        "expenditures": null
       }
      ]
     },
     "123": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525802,13 +532476,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24079.74,
+       "contributions": 22536,
        "expenditures": null
       }
      ]
     },
     "124": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525816,13 +532490,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 15725,
+       "contributions": 16725,
        "expenditures": null
       }
      ]
     },
     "125": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525830,7 +532504,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 60557.22,
+       "contributions": 54400,
        "expenditures": null
       },
       {
@@ -525838,13 +532512,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 7479.41,
+       "contributions": 9594.41,
        "expenditures": null
       }
      ]
     },
     "126": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525852,45 +532526,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 43771.590000000004,
-       "expenditures": null
-      }
-     ]
-    },
-    "127": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Marvin Manring",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 4409,
-       "expenditures": null
-      },
-      {
-       "name": "Ann Kelley",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 44225,
        "expenditures": null
       }
      ]
     },
     "128": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Rich Horton",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 2500,
-       "expenditures": null
-      },
       {
        "name": "Michael Stephens",
        "party": "R",
@@ -525898,11 +532542,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 21037.43,
        "expenditures": null
+      },
+      {
+       "name": "Rich Horton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2500,
+       "expenditures": null
       }
      ]
     },
     "129": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525910,13 +532562,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 34397.31,
+       "contributions": 32525,
        "expenditures": null
       }
      ]
     },
     "130": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525924,13 +532576,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 75891.70999999999,
+       "contributions": 73927.52,
        "expenditures": null
       }
      ]
     },
     "131": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525938,13 +532590,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 49801.08,
+       "contributions": 49672.73,
        "expenditures": null
       }
      ]
     },
     "132": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525952,7 +532604,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 205930.47,
+       "contributions": 198964.47,
        "expenditures": null
       },
       {
@@ -525960,35 +532612,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5287.4,
+       "contributions": 4788.6,
        "expenditures": null
       }
      ]
     },
     "133": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Amy Blansit",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 60082.52,
-       "expenditures": null
-      },
       {
        "name": "Melanie Stinnett",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 49832.54,
+       "contributions": 47320.06,
+       "expenditures": null
+      },
+      {
+       "name": "Amy Blansit",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 59729.33,
        "expenditures": null
       }
      ]
     },
     "134": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -525996,7 +532648,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 144375.88,
+       "contributions": 147612.03,
        "expenditures": null
       },
       {
@@ -526004,57 +532656,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 15795.07,
+       "contributions": 15061.79,
        "expenditures": null
       }
      ]
     },
     "135": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "AJ Exner",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 40479.17,
-       "expenditures": null
-      },
       {
        "name": "Elizabeth Fogle",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 196269.96,
+       "contributions": 191454,
+       "expenditures": null
+      },
+      {
+       "name": "AJ Exner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 35039.12,
        "expenditures": null
       }
      ]
     },
     "136": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Stephanie Hein",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 136758.87,
-       "expenditures": null
-      },
       {
        "name": "Craig Fishel",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 88052.15,
+       "contributions": 87910,
+       "expenditures": null
+      },
+      {
+       "name": "Stephanie Hein",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 129558.06,
        "expenditures": null
       }
      ]
     },
     "137": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526062,13 +532714,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 31535,
+       "contributions": 30531,
        "expenditures": null
       }
      ]
     },
     "138": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526076,13 +532728,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 30142.2,
+       "contributions": 30100,
        "expenditures": null
       }
      ]
     },
     "139": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526090,13 +532742,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 9300,
+       "contributions": 9765,
        "expenditures": null
       }
      ]
     },
     "140": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526104,13 +532756,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11734.44,
+       "contributions": 10497.33,
        "expenditures": null
       }
      ]
     },
     "141": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526118,13 +532770,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 79256.24,
+       "contributions": 73036.91,
        "expenditures": null
       }
      ]
     },
     "142": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526132,13 +532784,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 125455.63,
+       "contributions": 124875,
        "expenditures": null
       }
      ]
     },
     "143": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526146,7 +532798,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 62577.55,
+       "contributions": 60770.28,
        "expenditures": null
       },
       {
@@ -526154,13 +532806,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 4255.39,
+       "contributions": 5347.45,
        "expenditures": null
       }
      ]
     },
     "144": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526168,13 +532820,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 41815.240000000005,
+       "contributions": 42245.24,
        "expenditures": null
       }
      ]
     },
     "145": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526182,13 +532834,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 53125.82,
+       "contributions": 57750,
        "expenditures": null
       }
      ]
     },
     "146": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526196,13 +532848,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 32729.21,
+       "contributions": 33745,
        "expenditures": null
       }
      ]
     },
     "147": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526210,7 +532862,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 37259.46,
+       "contributions": 37090,
        "expenditures": null
       },
       {
@@ -526218,27 +532870,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14156.59,
-       "expenditures": null
-      }
-     ]
-    },
-    "148": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Jamie Burger",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 14218.04,
        "expenditures": null
       }
      ]
     },
     "149": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526246,13 +532884,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 37560.88,
+       "contributions": 37520.36,
        "expenditures": null
       }
      ]
     },
     "151": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526260,13 +532898,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 4765,
+       "contributions": 11670,
        "expenditures": null
       }
      ]
     },
     "152": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526274,13 +532912,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 35786.2,
+       "contributions": 35744,
        "expenditures": null
       }
      ]
     },
     "153": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526288,13 +532926,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 31696.309999999998,
+       "contributions": 35250,
        "expenditures": null
       }
      ]
     },
     "154": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526302,27 +532940,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 31496.07,
-       "expenditures": null
-      }
-     ]
-    },
-    "155": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2022",
-     "candidates": [
-      {
-       "name": "Travis Smith",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 32875,
        "expenditures": null
       }
      ]
     },
     "156": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526330,13 +532954,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24428.1,
+       "contributions": 25011.8,
        "expenditures": null
       }
      ]
     },
     "157": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526344,13 +532968,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 26008.68,
+       "contributions": 26097.71,
        "expenditures": null
       }
      ]
     },
     "158": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526358,13 +532982,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 26486.91,
+       "contributions": 29860,
        "expenditures": null
       }
      ]
     },
     "159": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526372,13 +532996,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 121199.7,
+       "contributions": 112165,
        "expenditures": null
       }
      ]
     },
     "160": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526386,13 +533010,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 84320,
+       "contributions": 83830,
        "expenditures": null
       }
      ]
     },
     "161": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526400,13 +533024,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 41600,
+       "contributions": 40500,
        "expenditures": null
       }
      ]
     },
     "162": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526414,13 +533038,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 21900,
+       "contributions": 20900,
        "expenditures": null
       }
      ]
     },
     "163": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526428,7 +533052,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 214621.31,
+       "contributions": 202470,
        "expenditures": null
       }
      ]
@@ -526436,29 +533060,29 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "2": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Michael Sinclair",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 9821.18,
-       "expenditures": null
-      },
       {
        "name": "Nick Schroer",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 307412.07999999996,
+       "contributions": 318423.08,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Sinclair",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10281.1,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526466,7 +533090,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 107940.5,
+       "contributions": 116585.5,
        "expenditures": null
       },
       {
@@ -526474,13 +533098,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 2500,
+       "contributions": 2919.01,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526488,57 +533112,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 239554,
+       "contributions": 253776,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Antoine Jennings",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 7952.68,
-       "expenditures": null
-      },
       {
        "name": "Mike Cierpiot",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 378767,
+       "contributions": 379713.3,
+       "expenditures": null
+      },
+      {
+       "name": "Antoine Jennings",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3467.68,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Catherine Dreher",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 5566.5,
-       "expenditures": null
-      },
       {
        "name": "Travis Fitzwater",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 293861.96,
+       "contributions": 294506.34,
+       "expenditures": null
+      },
+      {
+       "name": "Catherine Dreher",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 5812.32,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526546,7 +533170,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 389419.54,
+       "contributions": 397869.45,
        "expenditures": null
       },
       {
@@ -526554,13 +533178,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 7308.76,
+       "contributions": 8077.39,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526568,35 +533192,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 146667.83000000002,
+       "contributions": 151225,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "Tara Anura",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 6780.77,
-       "expenditures": null
-      },
       {
        "name": "Justin Brown",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 350424.66000000003,
+       "contributions": 370092.03,
+       "expenditures": null
+      },
+      {
+       "name": "Tara Anura",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8453.13,
        "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526604,13 +533228,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 44785.67,
+       "contributions": 47264.29,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526618,13 +533242,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 328952.98,
+       "contributions": 326008.45,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526632,7 +533256,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 311579.89,
+       "contributions": 308541.84,
        "expenditures": null
       },
       {
@@ -526640,35 +533264,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 25479.65,
+       "contributions": 27272.11,
        "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
-      {
-       "name": "George Hruza",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 397558.84,
-       "expenditures": null
-      },
       {
        "name": "Tracy McCreery",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 990886.97,
+       "contributions": 971583.36,
+       "expenditures": null
+      },
+      {
+       "name": "George Hruza",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 405576.82,
        "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526676,7 +533300,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 289472.25,
+       "contributions": 279798.76,
        "expenditures": null
       },
       {
@@ -526684,13 +533308,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 18516.09,
+       "contributions": 22453.21,
        "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526698,13 +533322,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 175670.4,
+       "contributions": 185234,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526712,7 +533336,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 450511.96,
+       "contributions": 440984,
        "expenditures": null
       },
       {
@@ -526720,13 +533344,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 8245.7,
+       "contributions": 8236.09,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526734,13 +533358,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 201445,
+       "contributions": 196788,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
@@ -526748,7 +533372,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 68500,
+       "contributions": 710551,
        "expenditures": null
       },
       {
@@ -526756,7 +533380,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 5830.77,
+       "contributions": 7831.22,
        "expenditures": null
       }
      ]
@@ -526766,7 +533390,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2024": {
    "house": {
     "1": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526774,13 +533398,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 50542.869999999995,
+       "contributions": 50716,
        "expenditures": null
       }
      ]
     },
     "2": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526788,13 +533412,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 7753.04,
+       "contributions": 15934,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526802,13 +533426,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 7100,
+       "contributions": 6400,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526818,19 +533442,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 788.7,
        "expenditures": null
-      },
-      {
-       "name": "Gregory Sharpe",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
-       "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526838,13 +533454,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 37010.25,
+       "contributions": 42251.06,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526852,7 +533468,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24970,
+       "contributions": 25420,
        "expenditures": null
       },
       {
@@ -526866,7 +533482,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "7": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526874,7 +533490,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 25600,
+       "contributions": 27450,
        "expenditures": null
       },
       {
@@ -526882,35 +533498,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6900.25,
+       "contributions": 6677.25,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Sandy Van Wagner",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 18161.82,
-       "expenditures": null
-      },
       {
        "name": "Joshua Hurlbert",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 36152.44,
+       "contributions": 35745,
+       "expenditures": null
+      },
+      {
+       "name": "Sandy Van Wagner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21985.48,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526918,13 +533534,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 21071.72,
+       "contributions": 18983,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526940,13 +533556,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 12041.92,
+       "contributions": 12621.92,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526954,13 +533570,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 74849.82,
+       "contributions": 75800,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526968,7 +533584,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 120728.17000000001,
+       "contributions": 121321.33,
        "expenditures": null
       },
       {
@@ -526976,13 +533592,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 9771.75,
+       "contributions": 9806.75,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -526990,7 +533606,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 44351.16,
+       "contributions": 44588,
        "expenditures": null
       },
       {
@@ -526998,13 +533614,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9192.119999999999,
+       "contributions": 8795.69,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527012,7 +533628,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 136438.46,
+       "contributions": 137466.62,
        "expenditures": null
       },
       {
@@ -527020,13 +533636,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 23101.25,
+       "contributions": 18479.94,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527036,19 +533652,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 23773.87,
        "expenditures": null
-      },
-      {
-       "name": "Mike Jones",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 9771.75,
-       "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527056,7 +533664,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 71376.1,
+       "contributions": 70126.1,
        "expenditures": null
       },
       {
@@ -527064,13 +533672,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 21253.04,
+       "contributions": 22193.27,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527078,7 +533686,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 58251.45,
+       "contributions": 58890.77,
        "expenditures": null
       },
       {
@@ -527086,13 +533694,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 129613.84,
+       "contributions": 129984.38,
        "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527100,13 +533708,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 38563.5,
+       "contributions": 39068.5,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527114,35 +533722,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 24298,
+       "contributions": 21979,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Clarence Franklin",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 2004.11,
-       "expenditures": null
-      },
       {
        "name": "Michael Steinmeyer",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 29146.03,
+       "contributions": 26858.82,
+       "expenditures": null
+      },
+      {
+       "name": "Clarence Franklin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1741.11,
        "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527150,7 +533758,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 100,
+       "contributions": 505,
        "expenditures": null
       },
       {
@@ -527158,13 +533766,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 47241.63,
+       "contributions": 46306.23,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527172,15 +533780,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 15091,
+       "contributions": 15023.04,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
+      {
+       "name": "Michael Johnson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 33515,
+       "expenditures": null
+      },
       {
        "name": "Daniel Contreras",
        "party": "R",
@@ -527188,19 +533804,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": null,
        "expenditures": null
-      },
-      {
-       "name": "Michael Johnson",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 31420,
-       "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527208,23 +533816,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 4029.92,
-       "expenditures": null
-      },
-      {
-       "name": "Emily Weber",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 3401.5,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
+      {
+       "name": "Pattie Mansur",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 33565,
+       "expenditures": null
+      },
       {
        "name": "Steven Bright",
        "party": "R",
@@ -527232,19 +533840,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 300,
        "expenditures": null
-      },
-      {
-       "name": "Pattie Mansur",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 34068,
-       "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527252,13 +533852,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 13201.63,
+       "contributions": 13810.63,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527266,15 +533866,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11823,
+       "contributions": 16706,
        "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
+      {
+       "name": "Donna Barnes",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12900,
+       "expenditures": null
+      },
       {
        "name": "Steven Hinton",
        "party": "R",
@@ -527282,49 +533890,49 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 1565.07,
        "expenditures": null
-      },
-      {
-       "name": "Donna Barnes",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 13673,
-       "expenditures": null
       }
      ]
     },
     "29": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Robert Bruette",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 5732.72,
-       "expenditures": null
-      },
       {
        "name": "Aaron Crossley",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 117912.47,
+       "contributions": 120082.03,
+       "expenditures": null
+      },
+      {
+       "name": "Robert Bruette",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4341.35,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
+      {
+       "name": "Jonathan Patterson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 584005,
+       "expenditures": null
+      },
       {
        "name": "Kevin Grover",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 49960.51,
+       "contributions": 49105.67,
        "expenditures": null
       },
       {
@@ -527334,41 +533942,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": null,
        "expenditures": null
-      },
-      {
-       "name": "Jonathan Patterson",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 563897.31,
-       "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Ron Fowler",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 15050,
-       "expenditures": null
-      },
       {
        "name": "Jeremy Rowan",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 28105,
+       "contributions": 27916.46,
+       "expenditures": null
+      },
+      {
+       "name": "Ron Fowler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14650,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527376,7 +533976,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 58950,
+       "contributions": 58500,
        "expenditures": null
       },
       {
@@ -527384,13 +533984,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11561.13,
+       "contributions": 11625.14,
        "expenditures": null
       }
      ]
     },
     "33": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527398,13 +533998,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 31229.02,
+       "contributions": 28541.61,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527412,7 +534012,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 128499.5,
+       "contributions": 130067.02,
        "expenditures": null
       },
       {
@@ -527420,13 +534020,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 25929.5,
+       "contributions": 25951.02,
        "expenditures": null
       }
      ]
     },
     "35": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527434,7 +534034,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 104407.5,
+       "contributions": 108566.5,
        "expenditures": null
       },
       {
@@ -527442,49 +534042,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5767.16,
+       "contributions": 7864.92,
        "expenditures": null
       }
      ]
     },
     "36": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Dave Thomas",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 13077.51,
-       "expenditures": null
-      },
       {
        "name": "Anthony Ealy",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 22216.3,
+       "contributions": 22985,
        "expenditures": null
-      }
-     ]
-    },
-    "37": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2024",
-     "candidates": [
+      },
       {
-       "name": "Mark Sharp",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": null,
+       "name": "Dave Thomas",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8879.15,
        "expenditures": null
       }
      ]
     },
     "38": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527492,7 +534078,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 45280.79,
+       "contributions": 46194.69,
        "expenditures": null
       },
       {
@@ -527500,13 +534086,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 65095.95,
+       "contributions": 82224.71,
        "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527514,13 +534100,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 6825,
+       "contributions": 3450,
        "expenditures": null
       }
      ]
     },
     "40": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527528,7 +534114,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 97371,
+       "contributions": 97971,
        "expenditures": null
       },
       {
@@ -527536,35 +534122,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 920.58,
+       "contributions": 627.59,
        "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Hans Stock",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 8905.29,
-       "expenditures": null
-      },
       {
        "name": "Doyle Justus",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 54495.979999999996,
+       "contributions": 56450,
+       "expenditures": null
+      },
+      {
+       "name": "Hans Stock",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8909.29,
        "expenditures": null
       }
      ]
     },
     "42": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527572,7 +534158,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 118694.57,
+       "contributions": 121628.58,
        "expenditures": null
       },
       {
@@ -527580,13 +534166,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14641.08,
+       "contributions": 14701.08,
        "expenditures": null
       }
      ]
     },
     "43": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527594,7 +534180,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 38739.82,
+       "contributions": 39140,
        "expenditures": null
       },
       {
@@ -527602,35 +534188,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 7708.96,
+       "contributions": 9173.96,
        "expenditures": null
       }
      ]
     },
     "44": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "David Raithel",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 6435.35,
-       "expenditures": null
-      },
       {
        "name": "John Martin",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 50097.93,
+       "contributions": 47580,
+       "expenditures": null
+      },
+      {
+       "name": "David Raithel",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11766.35,
        "expenditures": null
       }
      ]
     },
     "45": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527638,13 +534224,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 49328.95,
+       "contributions": 49679.61,
        "expenditures": null
       }
      ]
     },
     "46": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527652,13 +534238,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 18936.67,
+       "contributions": 17723.33,
        "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527666,7 +534252,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 84160.65,
+       "contributions": 85274.86,
        "expenditures": null
       },
       {
@@ -527674,13 +534260,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3745.21,
+       "contributions": 5864.72,
        "expenditures": null
       }
      ]
     },
     "48": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527688,7 +534274,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 30956.02,
+       "contributions": 30617,
        "expenditures": null
       },
       {
@@ -527696,101 +534282,93 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14140.67,
+       "contributions": 13841,
        "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Jessica Slisz",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 8724.36,
-       "expenditures": null
-      },
       {
        "name": "Jim Schulte",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 36063.2,
+       "contributions": 35955,
+       "expenditures": null
+      },
+      {
+       "name": "Jessica Slisz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8863.3,
        "expenditures": null
       }
      ]
     },
     "50": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "John Lane",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 3882.33,
-       "expenditures": null
-      },
       {
        "name": "Gregg Bush",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 71554,
+       "contributions": 71634,
+       "expenditures": null
+      },
+      {
+       "name": "John Lane",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4020,
        "expenditures": null
       }
      ]
     },
     "51": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Glenda Bainbridge",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 19366.77,
-       "expenditures": null
-      },
       {
        "name": "Mark Nolte",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 13957.81,
+       "contributions": 11016.06,
+       "expenditures": null
+      },
+      {
+       "name": "Glenda Bainbridge",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18595,
        "expenditures": null
       }
      ]
     },
     "52": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Bradley Pollitt",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 2000,
-       "expenditures": null
-      },
       {
        "name": "Rene Vance",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 8732.12,
+       "contributions": 8915.14,
        "expenditures": null
       }
      ]
     },
     "53": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527798,7 +534376,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 30237.170000000002,
+       "contributions": 29158,
        "expenditures": null
       },
       {
@@ -527806,13 +534384,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11307.11,
+       "contributions": 11119.11,
        "expenditures": null
       }
      ]
     },
     "54": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527820,7 +534398,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 80222.7,
+       "contributions": 79542.7,
        "expenditures": null
       },
       {
@@ -527828,13 +534406,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 7323.12,
+       "contributions": 7407.7,
        "expenditures": null
       }
      ]
     },
     "55": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527842,13 +534420,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 32641.28,
+       "contributions": 30734.46,
        "expenditures": null
       }
      ]
     },
     "56": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527856,7 +534434,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 21261,
+       "contributions": 19034.62,
        "expenditures": null
       },
       {
@@ -527864,13 +534442,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 31371.1,
+       "contributions": 30612.24,
        "expenditures": null
       }
      ]
     },
     "57": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527878,7 +534456,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 39800,
+       "contributions": 39810,
        "expenditures": null
       },
       {
@@ -527892,7 +534470,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "58": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527900,49 +534478,27 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24111.620000000003,
-       "expenditures": null
-      }
-     ]
-    },
-    "59": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2024",
-     "candidates": [
-      {
-       "name": "Rudy Veit",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "contributions": 23923,
        "expenditures": null
       }
      ]
     },
     "60": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Dave Griffith",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Jamie Howard",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10545.1,
+       "contributions": 10022.1,
        "expenditures": null
       }
      ]
     },
     "61": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527950,13 +534506,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 31128.45,
+       "contributions": 30500,
        "expenditures": null
       }
      ]
     },
     "62": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527964,13 +534520,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 93557.14,
+       "contributions": 91339,
        "expenditures": null
       }
      ]
     },
     "63": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -527978,7 +534534,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 34406,
+       "contributions": 48911,
        "expenditures": null
       },
       {
@@ -527986,13 +534542,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 13029.93,
+       "contributions": 12429.45,
        "expenditures": null
       }
      ]
     },
     "64": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528000,13 +534556,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 24597.18,
+       "contributions": 23495,
        "expenditures": null
       }
      ]
     },
     "65": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528014,13 +534570,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 73790.15,
+       "contributions": 75385,
        "expenditures": null
       }
      ]
     },
     "66": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528028,13 +534584,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 21620,
+       "contributions": 24070,
        "expenditures": null
       }
      ]
     },
     "67": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528042,13 +534598,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14715,
+       "contributions": 15295,
        "expenditures": null
       }
      ]
     },
     "68": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528056,13 +534612,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 17989.46,
+       "contributions": 19109.46,
        "expenditures": null
       }
      ]
     },
     "69": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528070,7 +534626,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14343,
+       "contributions": 13935.8,
        "expenditures": null
       },
       {
@@ -528078,13 +534634,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 29370,
+       "contributions": 22555,
        "expenditures": null
       }
      ]
     },
     "70": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528092,7 +534648,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 17824,
+       "contributions": 16800,
        "expenditures": null
       },
       {
@@ -528106,7 +534662,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "71": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528114,13 +534670,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 17660,
+       "contributions": 19524.01,
        "expenditures": null
       }
      ]
     },
     "72": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528128,13 +534684,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 18720,
+       "contributions": 19295,
        "expenditures": null
       }
      ]
     },
     "73": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528142,35 +534698,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 28005.65,
+       "contributions": 26175,
        "expenditures": null
       }
      ]
     },
     "74": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Marla Smith",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 9913.44,
-       "expenditures": null
-      },
       {
        "name": "Jack Howard",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 770.61,
+       "contributions": 386.94,
+       "expenditures": null
+      },
+      {
+       "name": "Marla Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9804.4,
        "expenditures": null
       }
      ]
     },
     "75": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528178,13 +534734,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 1200,
+       "contributions": 1300,
        "expenditures": null
       }
      ]
     },
     "76": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528198,7 +534754,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "77": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528206,13 +534762,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6836,
+       "contributions": 7836,
        "expenditures": null
       }
      ]
     },
     "78": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528220,7 +534776,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 27797.41,
+       "contributions": 27534.41,
        "expenditures": null
       },
       {
@@ -528228,13 +534784,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 2098.33,
+       "contributions": 1848.33,
        "expenditures": null
       }
      ]
     },
     "79": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528248,29 +534804,29 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "80": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Elizabeth Fuchs",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 62294.2,
-       "expenditures": null
-      },
       {
        "name": "Kirk Hilzinger",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 923.75,
+       "contributions": 650,
+       "expenditures": null
+      },
+      {
+       "name": "Elizabeth Fuchs",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 58909.2,
        "expenditures": null
       }
      ]
     },
     "81": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528278,37 +534834,37 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 106790,
+       "contributions": 108680,
        "expenditures": null
       }
      ]
     },
     "82": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Donald Flecke",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Nick Kimble",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 61816.979999999996,
+       "contributions": 57391.41,
        "expenditures": null
       }
      ]
     },
     "83": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
+      {
+       "name": "Raymond Reed",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6995.22,
+       "expenditures": null
+      },
       {
        "name": "James Annala",
        "party": "O",
@@ -528316,19 +534872,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": null,
        "expenditures": null
-      },
-      {
-       "name": "Raymond Reed",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 6995.219999999999,
-       "expenditures": null
       }
      ]
     },
     "84": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528336,13 +534884,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 35790,
+       "contributions": 37279.17,
        "expenditures": null
       }
      ]
     },
     "85": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528350,13 +534898,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6000,
+       "contributions": 2400,
        "expenditures": null
       }
      ]
     },
     "86": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528364,57 +534912,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 48600,
+       "contributions": 47915,
        "expenditures": null
       }
      ]
     },
     "87": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Connie Steinmetz",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 83411.27,
-       "expenditures": null
-      },
       {
        "name": "John Rommel",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 800,
+       "contributions": 950,
+       "expenditures": null
+      },
+      {
+       "name": "Connie Steinmetz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 76291.8,
        "expenditures": null
       }
      ]
     },
     "88": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Holly Jones",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 20900,
-       "expenditures": null
-      },
       {
        "name": "John Kiehne",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 5515,
+       "contributions": 5809,
+       "expenditures": null
+      },
+      {
+       "name": "Holly Jones",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 18300,
        "expenditures": null
       }
      ]
     },
     "89": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528422,7 +534970,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 211137.47,
+       "contributions": 211981.7,
        "expenditures": null
       },
       {
@@ -528430,13 +534978,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 59458,
+       "contributions": 59558,
        "expenditures": null
       }
      ]
     },
     "90": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528444,7 +534992,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 70779.19,
+       "contributions": 70231,
        "expenditures": null
       },
       {
@@ -528452,13 +535000,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 4510,
+       "contributions": 5180,
        "expenditures": null
       }
      ]
     },
     "91": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528466,13 +535014,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 11491,
+       "contributions": 12200,
        "expenditures": null
       }
      ]
     },
     "92": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528480,7 +535028,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 3350,
+       "contributions": 3900,
        "expenditures": null
       },
       {
@@ -528488,13 +535036,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 29476.01,
+       "contributions": 31101.01,
        "expenditures": null
       }
      ]
     },
     "93": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528502,13 +535050,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 15093.77,
+       "contributions": 16109.74,
        "expenditures": null
       }
      ]
     },
     "94": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528516,7 +535064,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 86025,
+       "contributions": 86525,
        "expenditures": null
       },
       {
@@ -528524,35 +535072,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 47226.68,
+       "contributions": 47473.62,
        "expenditures": null
       }
      ]
     },
     "95": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Deborah Langland",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 8590.21,
-       "expenditures": null
-      },
       {
        "name": "Michael O'Donnell",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 65950.63,
+       "contributions": 66550,
+       "expenditures": null
+      },
+      {
+       "name": "Deborah Langland",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9015.21,
        "expenditures": null
       }
      ]
     },
     "96": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528560,7 +535108,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 280013.82,
+       "contributions": 275824.62,
        "expenditures": null
       },
       {
@@ -528568,13 +535116,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 104979.05,
+       "contributions": 102341.05,
        "expenditures": null
       }
      ]
     },
     "97": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528582,7 +535130,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 68716.7,
+       "contributions": 74631.7,
        "expenditures": null
       },
       {
@@ -528590,35 +535138,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10138.73,
+       "contributions": 8754.47,
        "expenditures": null
       }
      ]
     },
     "98": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Carol Veillette",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 7846.53,
-       "expenditures": null
-      },
       {
        "name": "Jaclyn Zimmermann",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 98993.27,
+       "contributions": 98067.04,
+       "expenditures": null
+      },
+      {
+       "name": "Carol Veillette",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7826,
        "expenditures": null
       }
      ]
     },
     "99": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528626,13 +535174,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 44916,
+       "contributions": 45915.65,
        "expenditures": null
       }
      ]
     },
     "100": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528640,7 +535188,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 200062.42,
+       "contributions": 195118.92,
        "expenditures": null
       },
       {
@@ -528648,35 +535196,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 59069.72,
+       "contributions": 59850,
        "expenditures": null
       }
      ]
     },
     "101": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Jacqueline Cotton",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 42549.48,
-       "expenditures": null
-      },
       {
        "name": "Ben Keathley",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 123058,
+       "contributions": 126660.76,
+       "expenditures": null
+      },
+      {
+       "name": "Jacqueline Cotton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 47539.88,
        "expenditures": null
       }
      ]
     },
     "102": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528684,7 +535232,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 22472.39,
+       "contributions": 22602.9,
        "expenditures": null
       },
       {
@@ -528692,101 +535240,101 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9647.1,
+       "contributions": 8786.5,
        "expenditures": null
       }
      ]
     },
     "103": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Amanda Taylor",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 26948,
-       "expenditures": null
-      },
       {
        "name": "Dave Hinman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 81746.18,
+       "contributions": 81438,
+       "expenditures": null
+      },
+      {
+       "name": "Amanda Taylor",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 26491.8,
        "expenditures": null
       }
      ]
     },
     "104": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Tara Murray",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 58105.94,
-       "expenditures": null
-      },
       {
        "name": "Terri Violet",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 29455.68,
+       "contributions": 33359.48,
+       "expenditures": null
+      },
+      {
+       "name": "Tara Murray",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 57261.6,
        "expenditures": null
       }
      ]
     },
     "105": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Colin Wellenkamp",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 32428.92,
-       "expenditures": null
-      },
       {
        "name": "Ronald Odenthal",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 37875.34,
+       "contributions": 37390.34,
+       "expenditures": null
+      },
+      {
+       "name": "Colin Wellenkamp",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 32218.88,
        "expenditures": null
       }
      ]
     },
     "106": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Karen Edge",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 37404.88,
-       "expenditures": null
-      },
       {
        "name": "Travis Wilson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 91763.45999999999,
+       "contributions": 94081.98,
+       "expenditures": null
+      },
+      {
+       "name": "Karen Edge",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 37203.88,
        "expenditures": null
       }
      ]
     },
     "107": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528794,7 +535342,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 21155.739999999998,
+       "contributions": 22550,
        "expenditures": null
       },
       {
@@ -528802,29 +535350,29 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 17373,
+       "contributions": 16903,
        "expenditures": null
       }
      ]
     },
     "108": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Mike Costlow",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 21595,
-       "expenditures": null
-      },
       {
        "name": "Susan Shumway",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14855.94,
+       "contributions": 14476.34,
+       "expenditures": null
+      },
+      {
+       "name": "Mike Costlow",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 21997,
        "expenditures": null
       },
       {
@@ -528838,7 +535386,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "109": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528846,7 +535394,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 52326.26,
+       "contributions": 52380,
        "expenditures": null
       },
       {
@@ -528854,35 +535402,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 18649.46,
+       "contributions": 18108.61,
        "expenditures": null
       }
      ]
     },
     "110": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Josh Thackston",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 14982.68,
-       "expenditures": null
-      },
       {
        "name": "Justin Sparks",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 55330.61,
+       "contributions": 55223.86,
+       "expenditures": null
+      },
+      {
+       "name": "Josh Thackston",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13336.12,
        "expenditures": null
       }
      ]
     },
     "111": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528890,13 +535438,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 16842.28,
+       "contributions": 23489.28,
        "expenditures": null
       }
      ]
     },
     "112": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528904,13 +535452,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 29490.93,
+       "contributions": 32730.61,
        "expenditures": null
       }
      ]
     },
     "113": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528918,13 +535466,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 52082.19,
+       "contributions": 56324,
        "expenditures": null
       }
      ]
     },
     "114": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528932,7 +535480,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 79405.27,
+       "contributions": 80555,
        "expenditures": null
       },
       {
@@ -528940,13 +535488,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11122,
+       "contributions": 10118,
        "expenditures": null
       }
      ]
     },
     "115": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -528954,7 +535502,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 20666.62,
+       "contributions": 20316.62,
        "expenditures": null
       },
       {
@@ -528962,71 +535510,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 8388.12,
+       "contributions": 8463.12,
        "expenditures": null
       }
      ]
     },
     "116": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Ethan Jones",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 700,
-       "expenditures": null
-      },
       {
        "name": "Dale Wright",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24131.93,
+       "contributions": 20500,
+       "expenditures": null
+      },
+      {
+       "name": "Ethan Jones",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 775,
        "expenditures": null
       }
      ]
     },
     "117": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Casey Cassidy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 11086.87,
-       "expenditures": null
-      },
       {
        "name": "Mary Laubinger",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 14944.56,
+       "contributions": 12942,
        "expenditures": null
-      }
-     ]
-    },
-    "118": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "12/31/2024",
-     "candidates": [
+      },
       {
-       "name": "Michael McGirl",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
+       "name": "Casey Cassidy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10396.92,
        "expenditures": null
       }
      ]
     },
     "119": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529034,7 +535568,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24665.15,
+       "contributions": 25500,
        "expenditures": null
       },
       {
@@ -529042,35 +535576,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9479.12,
+       "contributions": 8575.01,
        "expenditures": null
       }
      ]
     },
     "120": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Jennifer Tracy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 32573.19,
-       "expenditures": null
-      },
       {
        "name": "John Hewkin",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 50064.86,
+       "contributions": 45695.06,
+       "expenditures": null
+      },
+      {
+       "name": "Jennifer Tracy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 41152.85,
        "expenditures": null
       }
      ]
     },
     "121": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529078,7 +535612,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 85375.83,
+       "contributions": 86450,
        "expenditures": null
       },
       {
@@ -529086,35 +535620,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 8182.12,
+       "contributions": 7937.12,
        "expenditures": null
       }
      ]
     },
     "122": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Tara Anura",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 9164.02,
-       "expenditures": null
-      },
       {
        "name": "Tara Peters",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 48020.24,
+       "contributions": 48312.27,
+       "expenditures": null
+      },
+      {
+       "name": "Tara Anura",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10563.66,
        "expenditures": null
       }
      ]
     },
     "123": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529122,7 +535656,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 23250,
+       "contributions": 24407.85,
        "expenditures": null
       },
       {
@@ -529136,7 +535670,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "124": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529144,7 +535678,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24430.65,
+       "contributions": 24400,
        "expenditures": null
       },
       {
@@ -529152,37 +535686,45 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 7297.1,
+       "contributions": 8639.1,
        "expenditures": null
       }
      ]
     },
     "125": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Lynda Jones",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 6714.14,
-       "expenditures": null
-      },
       {
        "name": "Dane Diehl",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 131465.15,
+       "contributions": 133570,
+       "expenditures": null
+      },
+      {
+       "name": "Lynda Jones",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7216.64,
        "expenditures": null
       }
      ]
     },
     "126": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
+      {
+       "name": "James Kalberloh",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 41310,
+       "expenditures": null
+      },
       {
        "name": "Kirsten Hockaday",
        "party": "D",
@@ -529190,41 +535732,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 7828.16,
        "expenditures": null
-      },
-      {
-       "name": "James Kalberloh",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 41926.009999999995,
-       "expenditures": null
       }
      ]
     },
     "127": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Marvin Manring",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 8507.119999999999,
-       "expenditures": null
-      },
       {
        "name": "Ann Kelley",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 29167.6,
+       "contributions": 29467.6,
+       "expenditures": null
+      },
+      {
+       "name": "Marvin Manring",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8787.12,
        "expenditures": null
       }
      ]
     },
     "128": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529232,13 +535766,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 24545,
+       "contributions": 22120,
        "expenditures": null
       }
      ]
     },
     "129": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529246,7 +535780,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 38518.15,
+       "contributions": 39450,
        "expenditures": null
       },
       {
@@ -529260,7 +535794,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "130": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529268,7 +535802,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 31955.14,
+       "contributions": 32528.34,
        "expenditures": null
       },
       {
@@ -529276,13 +535810,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 139544.32,
+       "contributions": 140969.37,
        "expenditures": null
       }
      ]
     },
     "131": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529290,7 +535824,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 43224.09,
+       "contributions": 42099.44,
        "expenditures": null
       },
       {
@@ -529298,57 +535832,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 22325.530000000002,
+       "contributions": 21858.53,
        "expenditures": null
       }
      ]
     },
     "132": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Jeremy Dean",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 35384.22,
-       "expenditures": null
-      },
       {
        "name": "Stephanos Freeman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 9353.63,
+       "contributions": 5861.72,
+       "expenditures": null
+      },
+      {
+       "name": "Jeremy Dean",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 33609.49,
        "expenditures": null
       }
      ]
     },
     "133": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Derrick Nowlin",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 46210.51,
-       "expenditures": null
-      },
       {
        "name": "Melanie Stinnett",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 184866.03,
+       "contributions": 185366.03,
+       "expenditures": null
+      },
+      {
+       "name": "Derrick Nowlin",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 65128.19,
        "expenditures": null
       }
      ]
     },
     "134": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529356,13 +535890,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 360164.55,
+       "contributions": 357566.83,
        "expenditures": null
       }
      ]
     },
     "135": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529370,7 +535904,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 177716.52,
+       "contributions": 177620.07,
        "expenditures": null
       },
       {
@@ -529378,13 +535912,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 27425.83,
+       "contributions": 30872.26,
        "expenditures": null
       }
      ]
     },
     "136": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529392,7 +535926,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 163987.44,
+       "contributions": 163102.86,
        "expenditures": null
       },
       {
@@ -529400,35 +535934,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 87159.63,
+       "contributions": 79357.08,
        "expenditures": null
       }
      ]
     },
     "137": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Bryce Lockwood",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 14922.05,
-       "expenditures": null
-      },
       {
        "name": "Darin Chappell",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 53237.53,
+       "contributions": 52967.53,
+       "expenditures": null
+      },
+      {
+       "name": "Bryce Lockwood",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14458.89,
        "expenditures": null
       }
      ]
     },
     "138": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529436,35 +535970,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 13915,
+       "contributions": 14901.23,
        "expenditures": null
       }
      ]
     },
     "139": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Mark Gray",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 7447.12,
-       "expenditures": null
-      },
       {
        "name": "Bob Titus",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 19693.38,
+       "contributions": 19826,
+       "expenditures": null
+      },
+      {
+       "name": "Mark Gray",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7633.12,
        "expenditures": null
       }
      ]
     },
     "140": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529472,13 +536006,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 24738,
+       "contributions": 25405,
        "expenditures": null
       }
      ]
     },
     "141": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529486,7 +536020,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 33047.1,
+       "contributions": 38641,
        "expenditures": null
       },
       {
@@ -529500,7 +536034,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "142": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529508,13 +536042,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 92000,
+       "contributions": 110813.92,
        "expenditures": null
       }
      ]
     },
     "143": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529522,7 +536056,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 48100.41,
+       "contributions": 45460,
        "expenditures": null
       },
       {
@@ -529530,13 +536064,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11152.09,
+       "contributions": 11984.09,
        "expenditures": null
       }
      ]
     },
     "144": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529544,7 +536078,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 7691.12,
+       "contributions": 7269.12,
        "expenditures": null
       },
       {
@@ -529552,13 +536086,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 18195.01,
+       "contributions": 17595.01,
        "expenditures": null
       }
      ]
     },
     "145": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529566,13 +536100,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 26289.93,
+       "contributions": 23980.04,
        "expenditures": null
       }
      ]
     },
     "146": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529580,29 +536114,29 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 52886.29,
+       "contributions": 56402,
        "expenditures": null
       }
      ]
     },
     "147": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "J. Michael Davis",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 29552.06,
-       "expenditures": null
-      },
       {
        "name": "John Voss",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 80717.87,
+       "contributions": 80604,
+       "expenditures": null
+      },
+      {
+       "name": "J. Michael Davis",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28539.3,
        "expenditures": null
       },
       {
@@ -529616,7 +536150,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "148": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529624,13 +536158,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 27652.23,
+       "contributions": 27152.23,
        "expenditures": null
       }
      ]
     },
     "149": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529638,13 +536172,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 68251.62,
+       "contributions": 67874,
        "expenditures": null
       }
      ]
     },
     "150": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529652,7 +536186,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 101703.43,
+       "contributions": 87488,
        "expenditures": null
       },
       {
@@ -529660,13 +536194,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 4338.05,
+       "contributions": 4085.05,
        "expenditures": null
       }
      ]
     },
     "151": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529674,7 +536208,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 6150,
+       "contributions": 4350,
        "expenditures": null
       },
       {
@@ -529688,7 +536222,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "152": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529696,13 +536230,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 21482.65,
+       "contributions": 24607.87,
        "expenditures": null
       }
      ]
     },
     "153": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529710,7 +536244,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 21124,
+       "contributions": 21705,
        "expenditures": null
       },
       {
@@ -529718,13 +536252,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 7832.12,
+       "contributions": 8032.12,
        "expenditures": null
       }
      ]
     },
     "154": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529732,7 +536266,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6628.09,
+       "contributions": 12484.04,
        "expenditures": null
       },
       {
@@ -529740,13 +536274,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 12920.93,
+       "contributions": 13106,
        "expenditures": null
       }
      ]
     },
     "155": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529754,13 +536288,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 19488,
        "expenditures": null
       }
      ]
     },
     "156": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529768,13 +536302,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 49590.65,
+       "contributions": 49560,
        "expenditures": null
       }
      ]
     },
     "157": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529788,7 +536322,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "158": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529796,7 +536330,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 28050,
+       "contributions": 31690,
        "expenditures": null
       },
       {
@@ -529804,13 +536338,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 8002.12,
+       "contributions": 7908.12,
        "expenditures": null
       }
      ]
     },
     "159": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529818,13 +536352,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 175235,
+       "contributions": 182322.47,
        "expenditures": null
       }
      ]
     },
     "160": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529832,35 +536366,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 122950,
+       "contributions": 125150,
        "expenditures": null
       }
      ]
     },
     "161": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Shawna Ackerson",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 9944.08,
-       "expenditures": null
-      },
       {
        "name": "Lane Roberts",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 34150,
+       "contributions": 35655.52,
+       "expenditures": null
+      },
+      {
+       "name": "Shawna Ackerson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13581.8,
        "expenditures": null
       }
      ]
     },
     "162": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529868,13 +536402,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 30150,
+       "contributions": 31150,
        "expenditures": null
       }
      ]
     },
     "163": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529882,7 +536416,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 37716.72,
+       "contributions": 37343.72,
        "expenditures": null
       },
       {
@@ -529898,7 +536432,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "1": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529906,7 +536440,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 522363.61,
+       "contributions": 570429.26,
        "expenditures": null
       },
       {
@@ -529920,29 +536454,29 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "3": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Douglas Halbert",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 6004.25,
-       "expenditures": null
-      },
       {
        "name": "Mike Henderson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 216306.55,
+       "contributions": 221419.04,
+       "expenditures": null
+      },
+      {
+       "name": "Douglas Halbert",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5962.11,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -529950,15 +536484,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 107306.55,
+       "contributions": 113930.55,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
+      {
+       "name": "Patricia Lewis",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 368272.28,
+       "expenditures": null
+      },
       {
        "name": "Joseph LaSalle",
        "party": "R",
@@ -529966,21 +536508,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 9105.42,
        "expenditures": null
-      },
-      {
-       "name": "Patricia Lewis",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 370802.53,
-       "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
+      {
+       "name": "Barbara Washington",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 189880.48,
+       "expenditures": null
+      },
       {
        "name": "Derron Black",
        "party": "R",
@@ -529988,19 +536530,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 3694.25,
        "expenditures": null
-      },
-      {
-       "name": "Barbara Washington",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 180492.78,
-       "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -530008,7 +536542,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 213297.87,
+       "contributions": 202273.37,
        "expenditures": null
       },
       {
@@ -530016,13 +536550,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 414618.47,
+       "contributions": 413477,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -530030,13 +536564,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 80638.73,
+       "contributions": 84170.55,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -530044,7 +536578,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 625307.14,
+       "contributions": 620862.02,
+       "expenditures": null
+      },
+      {
+       "name": "Joseph Pereles",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1309696.95,
        "expenditures": null
       },
       {
@@ -530054,41 +536596,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": null,
        "expenditures": null
-      },
-      {
-       "name": "Joseph Pereles",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 1329595.02,
-       "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Jerry Nolte",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 140640.4,
-       "expenditures": null
-      },
       {
        "name": "Margaret Nurrenbern",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 673925.8200000001,
+       "contributions": 665353.46,
+       "expenditures": null
+      },
+      {
+       "name": "Jerry Nolte",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 138887.16,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -530096,13 +536630,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 716566.5,
+       "contributions": 708580.85,
        "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -530110,7 +536644,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 441427.78,
+       "contributions": 443215.56,
        "expenditures": null
       },
       {
@@ -530118,13 +536652,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 16087.14,
+       "contributions": 17485,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -530132,7 +536666,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 129020.85,
+       "contributions": 123815.84,
        "expenditures": null
       },
       {
@@ -530140,35 +536674,27 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 302149.05,
+       "contributions": 300138.03,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
-      {
-       "name": "Jason Bean",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Chuck Banks",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14714.12,
+       "contributions": 14211.12,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -530176,13 +536702,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 403564.53,
+       "contributions": 399498.25,
        "expenditures": null
       }
      ]
     },
     "29": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -530190,7 +536716,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 59071.62,
+       "contributions": 56671.62,
        "expenditures": null
       },
       {
@@ -530198,13 +536724,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 16439.96,
+       "contributions": 17108.96,
        "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -530212,7 +536738,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 198621.36,
+       "contributions": 204998.6,
        "expenditures": null
       },
       {
@@ -530220,13 +536746,13 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11280.6,
+       "contributions": 12482.05,
        "expenditures": null
       }
      ]
     },
     "33": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
@@ -530234,7 +536760,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 257211.67,
+       "contributions": 255812.25,
        "expenditures": null
       }
      ]
@@ -530244,29 +536770,29 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2026": {
    "house": {
     "1": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Jeff Farnan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 41135.03,
+       "contributions": 46372.88,
        "expenditures": null
       }
      ]
     },
     "2": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Phil Fox",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 21570.19,
+       "contributions": 16658.28,
        "expenditures": null
       },
       {
@@ -530280,37 +536806,37 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "3": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Patrick Mosley",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 50886.11,
-       "expenditures": null
-      },
       {
        "name": "Corey Luebbering",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9752.98,
+       "contributions": 9413.09,
+       "expenditures": null
+      },
+      {
+       "name": "Patrick Mosley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 44565,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Keith Gudehus",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 30909.6,
+       "contributions": 30015.73,
        "expenditures": null
       },
       {
@@ -530318,43 +536844,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 7805.94,
+       "contributions": 7962.94,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "John Tomko",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 9397.64,
-       "expenditures": null
-      },
       {
        "name": "Roth McElvain",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 34865.53,
+       "contributions": 35583.6,
+       "expenditures": null
+      },
+      {
+       "name": "John Tomko",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9639.61,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Robert Johnson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 8176.94,
+       "contributions": 8544.56,
        "expenditures": null
       },
       {
@@ -530362,21 +536888,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 18306.83,
+       "contributions": 18231.83,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Jeremy Clevenger",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 51100,
+       "contributions": 106785.7,
        "expenditures": null
       },
       {
@@ -530384,35 +536910,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10761.98,
+       "contributions": 11947.02,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Amy Minich",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 18119.29,
+       "contributions": 18146.46,
        "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Dean VanSchoiack",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 27305.980000000003,
+       "contributions": 27326,
        "expenditures": null
       },
       {
@@ -530420,21 +536946,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9078.98,
+       "contributions": 9410.98,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Paul Gatewood",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 29426.05,
+       "contributions": 31179.4,
        "expenditures": null
       },
       {
@@ -530442,37 +536968,45 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 13175.619999999999,
+       "contributions": 15059.81,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Taylor Crouse",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 67311.78,
-       "expenditures": null
-      },
       {
        "name": "Luke Rae",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 7585,
+       "contributions": 9049.99,
+       "expenditures": null
+      },
+      {
+       "name": "Taylor Crouse",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 66463.56,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
+      {
+       "name": "Tracey Steele",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 100127.24,
+       "expenditures": null
+      },
       {
        "name": "Jerome Hickey",
        "party": "R",
@@ -530480,27 +537014,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 27830.17,
        "expenditures": null
-      },
-      {
-       "name": "Tracey Steele",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 94056.24,
-       "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "John Elliott",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 59448.97,
+       "contributions": 57750,
        "expenditures": null
       },
       {
@@ -530508,21 +537034,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9129.98,
+       "contributions": 9048.98,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Ashley Aune",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 133763.75,
+       "contributions": 134763.75,
        "expenditures": null
       },
       {
@@ -530530,14 +537056,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 13613.04,
+       "contributions": 23099,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Kenneth Jamison",
@@ -530550,15 +537076,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "16": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Chris Brown",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 70121.88,
+       "contributions": 71311.1,
        "expenditures": null
       },
       {
@@ -530566,21 +537092,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 54515.62,
+       "contributions": 52647.64,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "William Allen",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 45634.69,
+       "contributions": 44845.74,
        "expenditures": null
       },
       {
@@ -530588,29 +537114,37 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 37321.12,
+       "contributions": 36668.75,
        "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Eric Woods",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 39800,
+       "contributions": 40300,
        "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
+      {
+       "name": "Wick Thomas",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 16217,
+       "expenditures": null
+      },
       {
        "name": "Karen Spalding",
        "party": "R",
@@ -530618,21 +537152,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 2881.52,
        "expenditures": null
-      },
-      {
-       "name": "Wick Thomas",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 16685.61,
-       "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
+      {
+       "name": "Michael Steinmeyer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 74036.26,
+       "expenditures": null
+      },
       {
        "name": "Jeffrey Spicer",
        "party": "D",
@@ -530640,42 +537174,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 2920,
        "expenditures": null
-      },
-      {
-       "name": "Michael Steinmeyer",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 73188.31,
-       "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Michael Young",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 26627.7,
-       "expenditures": null
-      },
       {
        "name": "William Jobe",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 49782.490000000005,
+       "contributions": 49155.75,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Young",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26977.7,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Tony Van Trece",
@@ -530688,64 +537214,64 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "24": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Kevin Garner",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 117093.22,
+       "contributions": 114722.04,
        "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Pattie Mansur",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 16305,
+       "contributions": 16379.01,
        "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Tiffany Price",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 11647.08,
+       "contributions": 11736.76,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Melissa Douglas",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 28925,
+       "contributions": 31435,
        "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Steven Hinton",
@@ -530758,59 +537284,51 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "29": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Robert Bruette",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
-       "expenditures": null
-      },
       {
        "name": "Tedi Rowland",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 32427.14,
+       "contributions": 32367.14,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Jeffery Martin",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 106796.31999999999,
-       "expenditures": null
-      },
       {
        "name": "Kevin Grover",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 78352.35,
+       "contributions": 78107.75,
+       "expenditures": null
+      },
+      {
+       "name": "Jeffery Martin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 106796.32,
        "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Ron Fowler",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 46724.15,
+       "contributions": 47031,
        "expenditures": null
       },
       {
@@ -530818,14 +537336,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 12881.95,
+       "contributions": 13285.57,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Michael Todd",
@@ -530840,21 +537358,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9049.34,
+       "contributions": 9345.94,
        "expenditures": null
       }
      ]
     },
     "33": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Carolyn Caton",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 62514.92,
+       "contributions": 61846.6,
        "expenditures": null
       },
       {
@@ -530862,71 +537380,71 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 18596.17,
+       "contributions": 17835.99,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "William Strickler",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 128568.39,
+       "contributions": 127971.74,
        "expenditures": null
       }
      ]
     },
     "35": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Jacqueline Stenger",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 62394.08,
-       "expenditures": null
-      },
       {
        "name": "Michael Scott",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 45234.619999999995,
+       "contributions": 44455,
+       "expenditures": null
+      },
+      {
+       "name": "Jacqueline Stenger",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 60111.98,
        "expenditures": null
       }
      ]
     },
     "37": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Karissa Varga",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 5504.21,
+       "contributions": 5112.76,
        "expenditures": null
       }
      ]
     },
     "38": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Martin Jacobs",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 46350,
+       "contributions": 54618.2,
        "expenditures": null
       },
       {
@@ -530934,21 +537452,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 15330.5,
+       "contributions": 15356.5,
        "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Mark Meirath",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 19400,
+       "contributions": 22775,
        "expenditures": null
       },
       {
@@ -530956,49 +537474,49 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 7364.5,
+       "contributions": 7429.5,
        "expenditures": null
       }
      ]
     },
     "40": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Thomas McBeth",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10194.98,
+       "contributions": 10995.98,
        "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Doyle Justus",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 71198.89,
+       "contributions": 71100,
        "expenditures": null
       }
      ]
     },
     "42": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Jeffery Myers",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 134907.2,
+       "contributions": 138857.2,
        "expenditures": null
       },
       {
@@ -531012,15 +537530,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "43": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Brendan Webber",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 39339.46,
+       "contributions": 38925,
        "expenditures": null
       },
       {
@@ -531028,85 +537546,85 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 8491.32,
+       "contributions": 8239.27,
        "expenditures": null
       }
      ]
     },
     "44": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Rebecca Brewer",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 70572.13,
-       "expenditures": null
-      },
       {
        "name": "John Martin",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 65010.28,
+       "contributions": 63400,
+       "expenditures": null
+      },
+      {
+       "name": "Rebecca Brewer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 77594.99,
        "expenditures": null
       }
      ]
     },
     "45": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Mary Steinhoff",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 47563.28,
+       "contributions": 47313.28,
        "expenditures": null
       }
      ]
     },
     "46": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "David Smith",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 6250,
+       "contributions": 8605,
        "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Adrian Plank",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 23920.86,
+       "contributions": 29318.75,
        "expenditures": null
       }
      ]
     },
     "48": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Tim Taylor",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24955.91,
+       "contributions": 26050,
        "expenditures": null
       },
       {
@@ -531114,51 +537632,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 44943.75,
+       "contributions": 39042,
        "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Jessica Slisz",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 12942.87,
+       "contributions": 12354.94,
        "expenditures": null
       }
      ]
     },
     "50": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Gregg Bush",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 23646.67,
+       "contributions": 24026.67,
        "expenditures": null
       }
      ]
     },
     "51": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Ron Fauss",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 19480.76,
-       "expenditures": null
-      },
       {
        "name": "Stephanie Gooden",
        "party": "R",
@@ -531166,33 +537676,41 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 14025,
        "expenditures": null
+      },
+      {
+       "name": "Ron Fauss",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20498.58,
+       "expenditures": null
       }
      ]
     },
     "52": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Israel Baeza",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 63677.4,
+       "contributions": 62716.4,
        "expenditures": null
       }
      ]
     },
     "53": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Terry Thompson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 22339.980000000003,
+       "contributions": 22210,
        "expenditures": null
       },
       {
@@ -531200,21 +537718,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 12555.98,
+       "contributions": 12508.4,
        "expenditures": null
       }
      ]
     },
     "54": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Brandon Phelps",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 127330,
+       "contributions": 127715,
        "expenditures": null
       },
       {
@@ -531222,21 +537740,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10164.98,
+       "contributions": 9798.29,
        "expenditures": null
       }
      ]
     },
     "55": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "William Irwin",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 19886.78,
+       "contributions": 20312.3,
        "expenditures": null
       },
       {
@@ -531244,43 +537762,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10473.98,
+       "contributions": 10213.98,
        "expenditures": null
       }
      ]
     },
     "56": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Staci Czar",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 14009.72,
-       "expenditures": null
-      },
       {
        "name": "Steve Baker",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 18153.79,
+       "contributions": 18350,
+       "expenditures": null
+      },
+      {
+       "name": "Staci Czar",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13844.72,
        "expenditures": null
       }
      ]
     },
     "57": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Matthew Sergent",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 34635,
+       "contributions": 34675,
        "expenditures": null
       },
       {
@@ -531288,21 +537806,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6030.95,
+       "contributions": 8622.98,
        "expenditures": null
       }
      ]
     },
     "58": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Willard Haley",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 20745.91,
+       "contributions": 20590,
        "expenditures": null
       },
       {
@@ -531310,65 +537828,65 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11846.94,
+       "contributions": 12746.94,
        "expenditures": null
       }
      ]
     },
     "59": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Rebecca Kroll",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 22486.57,
-       "expenditures": null
-      },
       {
        "name": "Carrie Tergin",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 53098.29,
+       "contributions": 52679.82,
+       "expenditures": null
+      },
+      {
+       "name": "Rebecca Kroll",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 24085.03,
        "expenditures": null
       }
      ]
     },
     "60": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Shane Kampeter",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 62553.22,
-       "expenditures": null
-      },
       {
        "name": "M. Suzanne Luther",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 77602.62,
+       "contributions": 82141.62,
+       "expenditures": null
+      },
+      {
+       "name": "Shane Kampeter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 71052.39,
        "expenditures": null
       }
      ]
     },
     "61": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Bruce Sassmann",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 21936.71,
+       "contributions": 22350,
        "expenditures": null
       },
       {
@@ -531376,21 +537894,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 22662.37,
+       "contributions": 20424.22,
        "expenditures": null
       }
      ]
     },
     "62": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Sherri Gallick",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 70450,
+       "contributions": 72150,
        "expenditures": null
       },
       {
@@ -531398,21 +537916,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 8490,
+       "contributions": 8988.98,
        "expenditures": null
       }
      ]
     },
     "63": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Tony Lovasco",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 17631,
+       "contributions": 17616,
        "expenditures": null
       },
       {
@@ -531420,21 +537938,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 18613.44,
+       "contributions": 18319.24,
        "expenditures": null
       }
      ]
     },
     "64": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Deanna Self",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 12548.34,
+       "contributions": 12510,
        "expenditures": null
       },
       {
@@ -531442,135 +537960,135 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 4533.98,
+       "contributions": 4584.98,
        "expenditures": null
       }
      ]
     },
     "65": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Dale Conoyer",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 15462.89,
-       "expenditures": null
-      },
       {
        "name": "Wendy Hausman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 53831,
+       "contributions": 49553,
+       "expenditures": null
+      },
+      {
+       "name": "Dale Conoyer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15948.39,
        "expenditures": null
       }
      ]
     },
     "66": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Laura Mitchell Riley",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1000,
+       "contributions": null,
        "expenditures": null
       }
      ]
     },
     "67": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "LATONDRA RUSH",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 15300,
+       "contributions": 15348.24,
        "expenditures": null
       }
      ]
     },
     "68": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Kem Smith",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 47015.020000000004,
+       "contributions": 47405.02,
        "expenditures": null
       }
      ]
     },
     "69": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Chris Chapman",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 10824.59,
-       "expenditures": null
-      },
       {
        "name": "Scott Miller",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 42411.71,
+       "contributions": 49066,
+       "expenditures": null
+      },
+      {
+       "name": "Chris Chapman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10664.59,
        "expenditures": null
       }
      ]
     },
     "70": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Stephanie Boykin",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 16394.07,
+       "contributions": 17270.07,
        "expenditures": null
       }
      ]
     },
     "71": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Nicole Greer",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 43577.67,
+       "contributions": 45999.67,
        "expenditures": null
       }
      ]
     },
     "72": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Jeffrey Jacks",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 16242.22,
+       "contributions": 17357.22,
        "expenditures": null
       },
       {
@@ -531578,14 +538096,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 54782.21,
+       "contributions": 56520.21,
        "expenditures": null
       }
      ]
     },
     "73": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Joy Dabney",
@@ -531600,211 +538118,183 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 29753.72,
+       "contributions": 29828.52,
        "expenditures": null
       }
      ]
     },
     "74": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Marla Smith",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 41225.06,
+       "contributions": 44861.49,
        "expenditures": null
       }
      ]
     },
     "75": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Brandon Wilke",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 650,
-       "expenditures": null
-      },
       {
        "name": "Chanel Mosley",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 8587.1,
+       "contributions": 11692.1,
+       "expenditures": null
+      },
+      {
+       "name": "Brandon Wilke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 850,
        "expenditures": null
       }
      ]
     },
     "76": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Marlon Anderson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 18980.25,
-       "expenditures": null
-      }
-     ]
-    },
-    "77": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
-     "candidates": [
-      {
-       "name": "Michael Corey",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": null,
+       "contributions": 14980.25,
        "expenditures": null
       }
      ]
     },
     "78": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Marty Murray",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 18260.260000000002,
+       "contributions": 18015.26,
        "expenditures": null
       }
      ]
     },
     "79": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Rachel D'Souza",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 43177.3,
-       "expenditures": null
-      }
-     ]
-    },
-    "80": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
-     "candidates": [
-      {
-       "name": "Jennie Drag",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": null,
+       "contributions": 42994.72,
        "expenditures": null
       }
      ]
     },
     "81": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "James Lappe",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 75866.17,
+       "contributions": 75377.5,
        "expenditures": null
       }
      ]
     },
     "82": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Nick Kimble",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 59086.28,
+       "contributions": 60708,
        "expenditures": null
       }
      ]
     },
     "83": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Raymond Reed",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 177571,
+       "contributions": 175571,
        "expenditures": null
       }
      ]
     },
     "84": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Delbret Taylor",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 62490,
+       "contributions": 62643.7,
        "expenditures": null
       }
      ]
     },
     "86": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Jeffrey Hales",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 20586,
+       "contributions": 22331,
        "expenditures": null
       }
      ]
     },
     "87": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Connie Steinmetz",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 48615,
+       "contributions": 53735,
        "expenditures": null
       }
      ]
     },
     "88": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Holly Jones",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 60458.76,
+       "contributions": 64883.76,
        "expenditures": null
       },
       {
@@ -531812,35 +538302,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 24179.53,
+       "contributions": 22845.75,
        "expenditures": null
       }
      ]
     },
     "89": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "George Hruza",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 211854.62,
+       "contributions": 215565.62,
        "expenditures": null
       }
      ]
     },
     "90": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Mark Boyko",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 82575.87,
+       "contributions": 81318.69,
        "expenditures": null
       },
       {
@@ -531854,65 +538344,65 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "91": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Johanna Doll",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 30330.12,
+       "contributions": 28830.12,
        "expenditures": null
       }
      ]
     },
     "92": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Kenneth Abram",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5725,
+       "contributions": 6085,
        "expenditures": null
       }
      ]
     },
     "94": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Cathy Summers",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 75892.62,
-       "expenditures": null
-      },
       {
        "name": "Maryellen Murphy",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 101204.59000000001,
+       "contributions": 100290,
+       "expenditures": null
+      },
+      {
+       "name": "Cathy Summers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 75386.52,
        "expenditures": null
       }
      ]
     },
     "95": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Bob Mahacek",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 29185,
+       "contributions": 30745,
        "expenditures": null
       },
       {
@@ -531920,21 +538410,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 54135.61,
+       "contributions": 52103.67,
        "expenditures": null
       }
      ]
     },
     "96": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Brad Christ",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 443829.56,
+       "contributions": 440040.53,
        "expenditures": null
       },
       {
@@ -531942,21 +538432,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 106810.29000000001,
+       "contributions": 102269.94,
        "expenditures": null
       }
      ]
     },
     "97": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Dan Schaefer",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 15845.45,
+       "contributions": 13558.97,
        "expenditures": null
       },
       {
@@ -531964,49 +538454,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 65417.770000000004,
+       "contributions": 60905.77,
        "expenditures": null
       }
      ]
     },
     "98": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Timothy Bosch",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 5868.1,
+       "contributions": 6393.4,
        "expenditures": null
       }
      ]
     },
     "99": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Tori Schafer",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 99486.18,
+       "contributions": 96873,
        "expenditures": null
       }
      ]
     },
     "100": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Philip Oehlerking",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 94933.76,
+       "contributions": 95273.76,
+       "expenditures": null
+      },
+      {
+       "name": "Mary Ann Perkins",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 124592.92,
        "expenditures": null
       },
       {
@@ -532016,27 +538514,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 605,
        "expenditures": null
-      },
-      {
-       "name": "Mary Ann Perkins",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 127532.92,
-       "expenditures": null
       }
      ]
     },
     "101": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Ben Keathley",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 66174,
+       "contributions": 64791.82,
        "expenditures": null
       },
       {
@@ -532044,14 +538534,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 15617.48,
+       "contributions": 20036.5,
        "expenditures": null
       }
      ]
     },
     "102": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Richard West",
@@ -532064,15 +538554,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "103": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Dave Hinman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 135594.74,
+       "contributions": 132010,
        "expenditures": null
       },
       {
@@ -532080,21 +538570,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9479.97,
+       "contributions": 9132.2,
        "expenditures": null
       }
      ]
     },
     "104": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Tara Murray",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 74395.59,
+       "contributions": 74452.53,
        "expenditures": null
       },
       {
@@ -532102,101 +538592,101 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 40575,
+       "contributions": 44435,
        "expenditures": null
       }
      ]
     },
     "105": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Caterina Clayton",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 96375.95999999999,
-       "expenditures": null
-      },
       {
        "name": "Colin Wellenkamp",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 40100,
+       "contributions": 41600,
+       "expenditures": null
+      },
+      {
+       "name": "Caterina Clayton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 92353.62,
        "expenditures": null
       }
      ]
     },
     "106": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Jewel Kelly",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 76227.24,
-       "expenditures": null
-      },
       {
        "name": "Travis Wilson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 124030,
+       "contributions": 122220,
+       "expenditures": null
+      },
+      {
+       "name": "Jewel Kelly",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 76192.18,
        "expenditures": null
       }
      ]
     },
     "107": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Gary Wester",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 23382.56,
-       "expenditures": null
-      },
       {
        "name": "Mark Matthiesen",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 9250,
+       "contributions": 9450,
+       "expenditures": null
+      },
+      {
+       "name": "Gary Wester",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22676,
        "expenditures": null
       }
      ]
     },
     "108": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Mike Costlow",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 59568.340000000004,
+       "contributions": 59867.12,
        "expenditures": null
       }
      ]
     },
     "109": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "John Simmons",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 59978,
+       "contributions": 60300,
        "expenditures": null
       },
       {
@@ -532204,49 +538694,49 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9413.8,
+       "contributions": 10929.28,
        "expenditures": null
       }
      ]
     },
     "110": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Claire Heinrich",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 67666.21,
+       "contributions": 67543.58,
        "expenditures": null
       }
      ]
     },
     "111": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Cecelie Williams",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 73438.46,
+       "contributions": 74918.73,
        "expenditures": null
       }
      ]
     },
     "112": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Ed Callahan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 30037.24,
+       "contributions": 30152.2,
        "expenditures": null
       },
       {
@@ -532260,15 +538750,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "113": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Phillip Amato",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 59342.979999999996,
+       "contributions": 59156.12,
        "expenditures": null
       },
       {
@@ -532276,43 +538766,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10743.58,
+       "contributions": 10208.58,
        "expenditures": null
       }
      ]
     },
     "114": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Ann Moloney",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 17919.95,
-       "expenditures": null
-      },
       {
        "name": "Jessica Shepherd",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 8492.48,
+       "contributions": 8016.48,
+       "expenditures": null
+      },
+      {
+       "name": "Ann Moloney",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18050,
        "expenditures": null
       }
      ]
     },
     "115": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "William Lucas",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 17701.71,
+       "contributions": 18600,
        "expenditures": null
       },
       {
@@ -532326,15 +538816,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "116": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Jason Green",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 10462.3,
+       "contributions": 10565.3,
        "expenditures": null
       },
       {
@@ -532342,21 +538832,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 16020.47,
+       "contributions": 18565.47,
        "expenditures": null
       }
      ]
     },
     "117": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Mary Laubinger",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 23749.6,
+       "contributions": 23455.45,
        "expenditures": null
       },
       {
@@ -532364,21 +538854,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 15043.79,
+       "contributions": 13702.44,
        "expenditures": null
       }
      ]
     },
     "118": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Amy DeClue",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 37258.380000000005,
+       "contributions": 37352,
        "expenditures": null
       },
       {
@@ -532386,21 +538876,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9031.94,
+       "contributions": 8589.97,
        "expenditures": null
       }
      ]
     },
     "119": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Brad Banderman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 21421.04,
+       "contributions": 23000,
        "expenditures": null
       },
       {
@@ -532408,43 +538898,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 13980,
+       "contributions": 13610.5,
        "expenditures": null
       }
      ]
     },
     "120": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Raymond Bruno",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 11165.25,
-       "expenditures": null
-      },
       {
        "name": "John Hewkin",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 46879.33,
+       "contributions": 48694,
+       "expenditures": null
+      },
+      {
+       "name": "Raymond Bruno",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10696.94,
        "expenditures": null
       }
      ]
     },
     "121": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Miguel Arellanes",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9810.97,
+       "contributions": 9530.97,
        "expenditures": null
       },
       {
@@ -532452,15 +538942,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 32103.94,
+       "contributions": 32995.34,
        "expenditures": null
       }
      ]
     },
     "122": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
+      {
+       "name": "Tara Peters",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 44115,
+       "expenditures": null
+      },
       {
        "name": "Daniel Victor",
        "party": "D",
@@ -532468,87 +538966,71 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 4850,
        "expenditures": null
-      },
-      {
-       "name": "Tara Peters",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 44201.71,
-       "expenditures": null
       }
      ]
     },
     "123": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Cody Hutcheson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9257.01,
+       "contributions": 10284.69,
        "expenditures": null
       }
      ]
     },
     "124": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Kevin Onstott",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 8281.5,
-       "expenditures": null
-      },
       {
        "name": "Tara Hallmark",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 10683.73,
+       "contributions": 10134.73,
+       "expenditures": null
+      },
+      {
+       "name": "Kevin Onstott",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8616.5,
        "expenditures": null
       }
      ]
     },
     "125": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Lynda Jones",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 9860.92,
-       "expenditures": null
-      },
       {
        "name": "Dane Diehl",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 93665,
+       "contributions": 102432.6,
+       "expenditures": null
+      },
+      {
+       "name": "Lynda Jones",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13860.92,
        "expenditures": null
       }
      ]
     },
     "126": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Melissa Perry",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 8234.96,
-       "expenditures": null
-      },
       {
        "name": "James Kalberloh",
        "party": "R",
@@ -532556,19 +539038,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 31190,
        "expenditures": null
+      },
+      {
+       "name": "Melissa Perry",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8294.31,
+       "expenditures": null
       }
      ]
     },
     "127": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
+      {
+       "name": "Brenden Kelley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 54106.1,
+       "expenditures": null
+      },
       {
        "name": "Racheal Martin",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 5770.99,
+       "contributions": 3109,
        "expenditures": null
       },
       {
@@ -532576,51 +539074,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11384.97,
-       "expenditures": null
-      },
-      {
-       "name": "Brenden Kelley",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 56012.7,
+       "contributions": 11249.97,
        "expenditures": null
       }
      ]
     },
     "128": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Shane Sawyer",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 4688.75,
-       "expenditures": null
-      },
       {
        "name": "Christopher Warwick",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 83718.39,
+       "contributions": 80379.76,
+       "expenditures": null
+      },
+      {
+       "name": "Shane Sawyer",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 4270,
        "expenditures": null
       }
      ]
     },
     "129": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "John Gray",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 24045.46,
+       "contributions": 21800.46,
        "expenditures": null
       },
       {
@@ -532628,49 +539118,49 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 24473,
+       "contributions": 25450.95,
        "expenditures": null
       }
      ]
     },
     "130": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Leslie Jones",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 22113.96,
+       "contributions": 21988.96,
        "expenditures": null
       }
      ]
     },
     "131": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Ashley Cossins",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 16076.12,
+       "contributions": 13130.34,
        "expenditures": null
       }
      ]
     },
     "132": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Jeremy Dean",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 40678.229999999996,
+       "contributions": 41163.23,
        "expenditures": null
       },
       {
@@ -532678,43 +539168,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 41793,
+       "contributions": 41945,
        "expenditures": null
       }
      ]
     },
     "133": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Gerald Angelo",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 26684.2,
-       "expenditures": null
-      },
       {
        "name": "Katelyn Zach",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 64715.09,
+       "contributions": 57260.09,
+       "expenditures": null
+      },
+      {
+       "name": "Gerald Angelo",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25048,
        "expenditures": null
       }
      ]
     },
     "134": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Alex Riley",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 526293.98,
+       "contributions": 524148.71,
        "expenditures": null
       },
       {
@@ -532722,43 +539212,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9241.29,
+       "contributions": 11715.77,
        "expenditures": null
       }
      ]
     },
     "135": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "John Chiles",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 97097.91,
-       "expenditures": null
-      },
       {
        "name": "Michael Hasty",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 33506.78,
+       "contributions": 32900.48,
+       "expenditures": null
+      },
+      {
+       "name": "John Chiles",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 92631.61,
        "expenditures": null
       }
      ]
     },
     "136": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Stephanie Hein",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 143375.61000000002,
+       "contributions": 136674.24,
        "expenditures": null
       },
       {
@@ -532766,15 +539256,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 19690.07,
+       "contributions": 18833.1,
        "expenditures": null
       }
      ]
     },
     "137": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
+      {
+       "name": "Darin Chappell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39605,
+       "expenditures": null
+      },
       {
        "name": "Bryce Lockwood",
        "party": "D",
@@ -532782,57 +539280,41 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 5064.03,
        "expenditures": null
-      },
-      {
-       "name": "Darin Chappell",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 39450,
-       "expenditures": null
       }
      ]
     },
     "138": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "BURTON WHALEY",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24224.699999999997,
+       "contributions": 25355.93,
        "expenditures": null
       }
      ]
     },
     "139": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Bob Titus",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 30018.51,
+       "contributions": 30670,
        "expenditures": null
       }
      ]
     },
     "140": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Julia Curran",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 30695.079999999998,
-       "expenditures": null
-      },
       {
        "name": "Jamie Gragg",
        "party": "R",
@@ -532840,41 +539322,49 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 42640,
        "expenditures": null
+      },
+      {
+       "name": "Julia Curran",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 32371.31,
+       "expenditures": null
       }
      ]
     },
     "141": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Darrel Swofford",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 11357.32,
-       "expenditures": null
-      },
       {
        "name": "Melissa Schmidt",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 39929.15,
+       "contributions": 38660,
+       "expenditures": null
+      },
+      {
+       "name": "Darrel Swofford",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8861.94,
        "expenditures": null
       }
      ]
     },
     "142": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Jeff Brown",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 62423.1,
+       "contributions": 62179.38,
        "expenditures": null
       },
       {
@@ -532888,15 +539378,15 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "143": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Bennie Cook",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 24255.91,
+       "contributions": 27614,
        "expenditures": null
       },
       {
@@ -532904,21 +539394,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11659.97,
+       "contributions": 11599.97,
        "expenditures": null
       }
      ]
     },
     "144": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Andrew Eye",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 5980.98,
+       "contributions": 6000.98,
        "expenditures": null
       },
       {
@@ -532926,43 +539416,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 26348.16,
+       "contributions": 24178.16,
        "expenditures": null
       }
      ]
     },
     "145": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Carl Kinsky",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 20367.97,
-       "expenditures": null
-      },
       {
        "name": "Bryant Wolfin",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 33126.76,
+       "contributions": 36134.06,
+       "expenditures": null
+      },
+      {
+       "name": "Carl Kinsky",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20387.97,
        "expenditures": null
       }
      ]
     },
     "146": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Lucas Green",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 38680,
+       "contributions": 40735,
        "expenditures": null
       },
       {
@@ -532970,21 +539460,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 26213.96,
+       "contributions": 26358.96,
        "expenditures": null
       }
      ]
     },
     "147": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "John Voss",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 54660.1,
+       "contributions": 54503.12,
        "expenditures": null
       },
       {
@@ -532992,35 +539482,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 5417.17,
+       "contributions": 5935.17,
        "expenditures": null
       }
      ]
     },
     "148": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "David Dolan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 38531.75,
+       "contributions": 38800,
        "expenditures": null
       }
      ]
     },
     "149": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "John Armbruster",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11434.63,
+       "contributions": 11244.63,
        "expenditures": null
       },
       {
@@ -533028,136 +539518,136 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 13751,
+       "contributions": 13951,
        "expenditures": null
       }
      ]
     },
     "150": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Cameron Parker",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 127180.61,
+       "contributions": 132752,
        "expenditures": null
       }
      ]
     },
     "151": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Steve Jordan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 11050,
+       "contributions": 13050,
        "expenditures": null
       }
      ]
     },
     "152": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Corretta Bishop",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 8451.23,
-       "expenditures": null
-      },
       {
        "name": "Jeffrey Shawan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 50614.65,
+       "contributions": 36860.7,
+       "expenditures": null
+      },
+      {
+       "name": "Corretta Bishop",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7681.8,
        "expenditures": null
       }
      ]
     },
     "153": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Keith Elliott",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 21825,
+       "contributions": 22325,
        "expenditures": null
       }
      ]
     },
     "154": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Joanna Stewart",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 8990.54,
-       "expenditures": null
-      },
       {
        "name": "Lisa Durnell",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 36832.29,
+       "contributions": 38446,
+       "expenditures": null
+      },
+      {
+       "name": "Joanna Stewart",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9155.47,
        "expenditures": null
       }
      ]
     },
     "155": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Joshua Berzins",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 11044.81,
-       "expenditures": null
-      },
       {
        "name": "Matthew Overcast",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 33474.4,
+       "contributions": 42436.2,
+       "expenditures": null
+      },
+      {
+       "name": "Joshua Berzins",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5427.71,
        "expenditures": null
       }
      ]
     },
     "156": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Trent Davis",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 5912.44,
+       "contributions": 7911.34,
        "expenditures": null
       }
      ]
     },
     "157": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Mitchell Boggs",
@@ -533172,21 +539662,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 7860.94,
+       "contributions": 8117.94,
        "expenditures": null
       }
      ]
     },
     "158": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Scott Cupps",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 54400,
+       "contributions": 56088.42,
        "expenditures": null
       },
       {
@@ -533194,35 +539684,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9661.94,
+       "contributions": 8350.52,
        "expenditures": null
       }
      ]
     },
     "159": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "David \"Joel\" Mace",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 47651.53,
+       "contributions": 46016.53,
        "expenditures": null
       }
      ]
     },
     "160": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Cheryle Perkins",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 27425,
+       "contributions": 28396.21,
        "expenditures": null
       },
       {
@@ -533230,28 +539720,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14867.27,
+       "contributions": 16372.27,
        "expenditures": null
       }
      ]
     },
     "161": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Aaron Metzger",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 8780.18,
+       "contributions": 9597.25,
        "expenditures": null
       }
      ]
     },
     "162": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Roger Koch",
@@ -533264,23 +539754,23 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "163": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Brenna Barksdale",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 7312.61,
-       "expenditures": null
-      },
       {
        "name": "Cathryn Loy",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 45166.06,
+       "contributions": 47339.29,
+       "expenditures": null
+      },
+      {
+       "name": "Brenna Barksdale",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7401.9,
        "expenditures": null
       }
      ]
@@ -533288,45 +539778,53 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "2": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Nick Schroer",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 115330,
-       "expenditures": null
-      },
       {
        "name": "Susan Shumway",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 23497.129999999997,
+       "contributions": 23572.99,
+       "expenditures": null
+      },
+      {
+       "name": "Nick Schroer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 143263,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Gina Mitten",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 278813.26,
+       "contributions": 281627,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
+      {
+       "name": "Jake Vogel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 415581.65,
+       "expenditures": null
+      },
       {
        "name": "J. Don Salcedo",
        "party": "D",
@@ -533334,42 +539832,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": false,
        "contributions": 8326.95,
        "expenditures": null
-      },
-      {
-       "name": "Jake Vogel",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 426101.17000000004,
-       "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Keri Ingle",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 511805.73,
-       "expenditures": null
-      },
       {
        "name": "Jonathan Patterson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 810359.88,
+       "contributions": 810223,
+       "expenditures": null
+      },
+      {
+       "name": "Keri Ingle",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 511585.73,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Mike Deering",
@@ -533384,35 +539874,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 11554.94,
+       "contributions": 10664.97,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Rusty Black",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 177840.03,
+       "contributions": 206274,
        "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Raychel Proudie",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 104466.06,
+       "contributions": 125259.41,
        "expenditures": null
       },
       {
@@ -533420,21 +539910,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 6501.28,
+       "contributions": 7490,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Bill Hardwick",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 245680,
+       "contributions": 246130.8,
        "expenditures": null
       },
       {
@@ -533442,65 +539932,65 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 14628.47,
+       "contributions": 14304.97,
        "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Nicholas Miller",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 12226.94,
-       "expenditures": null
-      },
       {
        "name": "Gregory Sharpe",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 302491.15,
+       "contributions": 301723.94,
+       "expenditures": null
+      },
+      {
+       "name": "Nicholas Miller",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11447.5,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Sean Falconer",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 13508.220000000001,
-       "expenditures": null
-      },
       {
        "name": "Lori Rook",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 133894.47999999998,
+       "contributions": 134551.48,
+       "expenditures": null
+      },
+      {
+       "name": "Sean Falconer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12948.96,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "James Avery",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 272786.95,
+       "contributions": 283880,
        "expenditures": null
       },
       {
@@ -533508,21 +539998,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 15242.96,
+       "contributions": 14843.96,
        "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Tracy McCreery",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 575571.65,
+       "contributions": 576150.46,
        "expenditures": null
       },
       {
@@ -533530,21 +540020,21 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 41158.26,
+       "contributions": 43018.26,
        "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Benjamin Brown",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 112173.04,
+       "contributions": 126323.04,
        "expenditures": null
       },
       {
@@ -533552,43 +540042,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 20542.03,
+       "contributions": 20862.03,
        "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Mike McCaffree",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 47000,
-       "expenditures": null
-      },
       {
        "name": "Sam Alexander",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 367024,
+       "contributions": 368977,
+       "expenditures": null
+      },
+      {
+       "name": "Mike McCaffree",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 47803.64,
        "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
-       "name": "Cecil Ince",
-       "party": "O",
-       "partyLabel": "Other",
+       "name": "Melanie Stinnett",
+       "party": "R",
+       "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 477938.44,
        "expenditures": null
       },
       {
@@ -533596,29 +540086,29 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 737158.88,
+       "contributions": 731158.84,
        "expenditures": null
       },
       {
-       "name": "Melanie Stinnett",
-       "party": "R",
-       "partyLabel": "Republican",
+       "name": "Cecil Ince",
+       "party": "O",
+       "partyLabel": "Other",
        "incumbent": false,
-       "contributions": 477938.44000000006,
+       "contributions": null,
        "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
       {
        "name": "Jill Carter",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 237344.2,
+       "contributions": 256185,
        "expenditures": null
       },
       {
@@ -533626,29 +540116,29 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 6986.96,
+       "contributions": 7196.99,
        "expenditures": null
       }
      ]
     },
     "34": {
-     "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
-     "dataThrough": "10/16/2026",
+     "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+     "dataThrough": "10/17/2026",
      "candidates": [
-      {
-       "name": "Shereka Barnes",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 39501.58,
-       "expenditures": null
-      },
       {
        "name": "Mike Jones",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 327450.7,
+       "contributions": 426580.4,
+       "expenditures": null
+      },
+      {
+       "name": "Shereka Barnes",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 34060.73,
        "expenditures": null
       }
      ]

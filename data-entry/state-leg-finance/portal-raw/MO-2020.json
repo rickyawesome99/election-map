@@ -1,313 +1,41 @@
 {
  "state": "MO",
  "cycle": 2020,
- "source": "Missouri Ethics Commission (itemized contributions over $100 only)",
- "fetched": "2026-10-16",
+ "source": "Missouri Ethics Commission report summaries (contributions received + in-kind)",
+ "fetched": "2026-10-17",
  "dataThrough": "12/31/2020",
  "candidates": [
   {
-   "name": "Aaliyah Bailey",
+   "name": "Joe Adams",
    "party": "D",
    "chamber": "house",
-   "district": "64",
-   "committee": "Aaliyah Bailey for Missouri",
-   "contributions": 18098.39
+   "district": "86",
+   "committee": "Joe Adams For Missouri",
+   "contributions": 13639.65
   },
   {
-   "name": "Aaron Mais",
-   "party": "I",
-   "chamber": "house",
-   "district": "53",
-   "committee": "Aaron C. Mais Campaign Fund",
-   "contributions": 7275.0
-  },
-  {
-   "name": "Alex Riley",
+   "name": "Andrew McDaniel",
    "party": "R",
    "chamber": "house",
-   "district": "134",
-   "committee": "Alex Riley for State Representative",
-   "contributions": 70875.28
+   "district": "150",
+   "committee": "McDaniel For State Representative",
+   "contributions": 16575.0
   },
   {
-   "name": "Andrew Bolin",
-   "party": "L",
-   "chamber": "house",
-   "district": "83",
-   "committee": "Andrew Bolin",
-   "contributions": null
-  },
-  {
-   "name": "Angela Thomas",
-   "party": "D",
-   "chamber": "house",
-   "district": "160",
-   "committee": "Angela Thomas District 160",
-   "contributions": 4211.68
-  },
-  {
-   "name": "Arthur Schaaf",
-   "party": "D",
-   "chamber": "house",
-   "district": "30",
-   "committee": "ArtSchaaf4MO30",
-   "contributions": 8917.21
-  },
-  {
-   "name": "Ashley Aune",
-   "party": "D",
-   "chamber": "house",
-   "district": "14",
-   "committee": "Ashley Aune for Missouri",
-   "contributions": 74452.51
-  },
-  {
-   "name": "JEROME BARNES",
-   "party": "D",
-   "chamber": "house",
-   "district": "28",
-   "committee": "Barnes For State Representative District 28",
-   "contributions": null
-  },
-  {
-   "name": "Bennie Cook",
+   "name": "Chris Dinkins",
    "party": "R",
    "chamber": "house",
-   "district": "142",
-   "committee": "Bennie Cook for State Representative",
-   "contributions": 17660.510000000002
+   "district": "144",
+   "committee": "Friends For Chris Dodson Dinkins",
+   "contributions": 23217.0
   },
   {
-   "name": "William Betteridge",
-   "party": "D",
-   "chamber": "house",
-   "district": "48",
-   "committee": "Betteridge for House",
-   "contributions": 29163.07
-  },
-  {
-   "name": "Bill Hardwick",
+   "name": "Steve Helms",
    "party": "R",
    "chamber": "house",
-   "district": "122",
-   "committee": "Bill Hardwick for Missouri",
-   "contributions": 16226.51
-  },
-  {
-   "name": "Bill Kidd",
-   "party": "R",
-   "chamber": "house",
-   "district": "20",
-   "committee": "Bill Kidd For Missouri",
-   "contributions": 51480.0
-  },
-  {
-   "name": "Mitchell Boggs",
-   "party": "R",
-   "chamber": "house",
-   "district": "157",
-   "committee": "Boggs for Missouri",
-   "contributions": 41403.1
-  },
-  {
-   "name": "John Boyd",
-   "party": "R",
-   "chamber": "house",
-   "district": "37",
-   "committee": "Boyd For Missouri",
-   "contributions": 5426.84
-  },
-  {
-   "name": "Bruce Sassmann",
-   "party": "R",
-   "chamber": "house",
-   "district": "62",
-   "committee": "Bruce Sassmann Election Committee",
-   "contributions": 23097.21
-  },
-  {
-   "name": "Cyndi Buchheit-Courtway",
-   "party": "R",
-   "chamber": "house",
-   "district": "115",
-   "committee": "Buchheit-Courtway for Missouri",
-   "contributions": 50269.42
-  },
-  {
-   "name": "Jamie Burger",
-   "party": "R",
-   "chamber": "house",
-   "district": "148",
-   "committee": "Burger for Missouri",
-   "contributions": null
-  },
-  {
-   "name": "Terry Burgess",
-   "party": "D",
-   "chamber": "house",
-   "district": "113",
-   "committee": "Burgess 4 Missouri",
-   "contributions": 26839.41
-  },
-  {
-   "name": "Cameron Pack",
-   "party": "L",
-   "chamber": "house",
-   "district": "53",
-   "committee": "Cameron Pack",
-   "contributions": null
-  },
-  {
-   "name": "Daniel Karam",
-   "party": "G",
-   "chamber": "house",
-   "district": "37",
-   "committee": "Campaign to Elect Daniel Karam",
-   "contributions": 455.48
-  },
-  {
-   "name": "Chad Perkins",
-   "party": "R",
-   "chamber": "house",
-   "district": "40",
-   "committee": "ChadPerkins4Missouri",
-   "contributions": 21933.7
-  },
-  {
-   "name": "Chris Brown",
-   "party": "R",
-   "chamber": "house",
-   "district": "16",
-   "committee": "Chris Brown for Missouri House",
-   "contributions": 43108.0
-  },
-  {
-   "name": "Chris Hager",
-   "party": "D",
-   "chamber": "house",
-   "district": "34",
-   "committee": "Chris Hager for Missouri",
-   "contributions": 20530.65
-  },
-  {
-   "name": "Cindy Slimp",
-   "party": "D",
-   "chamber": "house",
-   "district": "133",
-   "committee": "Cindy Slimp For The People",
-   "contributions": 13901.48
-  },
-  {
-   "name": "Lisa Thomas",
-   "party": "R",
-   "chamber": "house",
-   "district": "124",
-   "committee": "Citizens 4 Dr. Lisa Thomas",
-   "contributions": 34332.1
-  },
-  {
-   "name": "Annette Turnbaugh",
-   "party": "D",
-   "chamber": "house",
-   "district": "37",
-   "committee": "Citizens for Annette Turnbaugh",
-   "contributions": 46997.67
-  },
-  {
-   "name": "Darrell Atchison",
-   "party": "R",
-   "chamber": "house",
-   "district": "153",
-   "committee": "Citizens for Atchison",
-   "contributions": 33301.4
-  },
-  {
-   "name": "Bradley Hudson",
-   "party": "R",
-   "chamber": "house",
-   "district": "138",
-   "committee": "Citizens For Brad Hudson",
-   "contributions": 14681.84
-  },
-  {
-   "name": "Bridget Moore",
-   "party": "D",
-   "chamber": "house",
-   "district": "93",
-   "committee": "Citizens for Bridget Walsh Moore",
-   "contributions": 64137.65
-  },
-  {
-   "name": "CHERI REISCH",
-   "party": "R",
-   "chamber": "house",
-   "district": "44",
-   "committee": "Citizens For Cheri Toalson Reisch",
-   "contributions": 36946.72
-  },
-  {
-   "name": "Colby Murphy",
-   "party": "D",
-   "chamber": "house",
-   "district": "10",
-   "committee": "Citizens for Colby Murphy",
-   "contributions": 9390.41
-  },
-  {
-   "name": "Crystal Quade",
-   "party": "D",
-   "chamber": "house",
-   "district": "132",
-   "committee": "Citizens For Crystal Quade",
-   "contributions": 138647.45
-  },
-  {
-   "name": "Dan Stacy",
-   "party": "R",
-   "chamber": "house",
-   "district": "31",
-   "committee": "Citizens For Dan Stacy",
-   "contributions": 24435.75
-  },
-  {
-   "name": "Dean VanSchoiack",
-   "party": "R",
-   "chamber": "house",
-   "district": "9",
-   "committee": "Citizens for Dean VanSchoiack",
-   "contributions": 52583.26
-  },
-  {
-   "name": "Dewanna Marquez",
-   "party": "D",
-   "chamber": "house",
-   "district": "129",
-   "committee": "Citizens for Dee Marquez",
-   "contributions": 1439.65
-  },
-  {
-   "name": "Derek Grier",
-   "party": "N",
-   "chamber": "house",
-   "district": "100",
-   "committee": "Citizens For Derek Grier",
-   "contributions": 72521.7
-  },
-  {
-   "name": "Tricia Derges",
-   "party": "R",
-   "chamber": "house",
-   "district": "140",
-   "committee": "Citizens For Derges",
-   "contributions": 9600.0
-  },
-  {
-   "name": "SHAMED DOGAN",
-   "party": "R",
-   "chamber": "house",
-   "district": "98",
-   "committee": "Citizens For Dogan",
-   "contributions": 20325.0
+   "district": "135",
+   "committee": "Friends Of Steve Helms",
+   "contributions": 75749.2
   },
   {
    "name": "Donna Baringer",
@@ -315,23 +43,239 @@
    "chamber": "house",
    "district": "82",
    "committee": "Citizens For Donna Baringer",
-   "contributions": 30189.65
+   "contributions": 32890.65
   },
   {
-   "name": "J EGGLESTON",
+   "name": "Lane Roberts",
    "party": "R",
    "chamber": "house",
-   "district": "2",
-   "committee": "CITIZENS FOR EGGLESTON",
-   "contributions": 25796.0
+   "district": "161",
+   "committee": "Friends Of Lane Roberts",
+   "contributions": 25529.0
   },
   {
-   "name": "William Falkner",
+   "name": "Michael Stephens",
    "party": "R",
    "chamber": "house",
-   "district": "10",
-   "committee": "Citizens For Falkner",
-   "contributions": 26385.36
+   "district": "128",
+   "committee": "Stephens For State Rep",
+   "contributions": 34640.0
+  },
+  {
+   "name": "Ian Mackey",
+   "party": "D",
+   "chamber": "house",
+   "district": "87",
+   "committee": "Committee to Elect Ian Mackey",
+   "contributions": 43902.41
+  },
+  {
+   "name": "Dean Plocher",
+   "party": "R",
+   "chamber": "house",
+   "district": "89",
+   "committee": "Plocher For Missouri",
+   "contributions": 213452.01
+  },
+  {
+   "name": "Sara Walsh",
+   "party": "R",
+   "chamber": "house",
+   "district": "50",
+   "committee": "Friends Of Sara Walsh",
+   "contributions": 71276.2
+  },
+  {
+   "name": "Travis Fitzwater",
+   "party": "R",
+   "chamber": "house",
+   "district": "49",
+   "committee": "Friends For Travis Fitzwater",
+   "contributions": 73701.0
+  },
+  {
+   "name": "Elaine Gannon",
+   "party": "R",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "Citizens For Elaine Gannon",
+   "contributions": 179106.0
+  },
+  {
+   "name": "Mary Coleman",
+   "party": "R",
+   "chamber": "house",
+   "district": "97",
+   "committee": "Friends Of Mary Elizabeth Coleman",
+   "contributions": 107639.44
+  },
+  {
+   "name": "Rick Francis",
+   "party": "R",
+   "chamber": "house",
+   "district": "145",
+   "committee": "FRIENDS FOR FRANCIS",
+   "contributions": 45265.0
+  },
+  {
+   "name": "Rick Brattin",
+   "party": "R",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "Friends Of Rick Brattin",
+   "contributions": 207201.29
+  },
+  {
+   "name": "James Murphy",
+   "party": "R",
+   "chamber": "house",
+   "district": "94",
+   "committee": "Citizens For Murphy",
+   "contributions": 2050.0
+  },
+  {
+   "name": "Cindy Slimp",
+   "party": "D",
+   "chamber": "house",
+   "district": "133",
+   "committee": "Cindy Slimp For The People",
+   "contributions": 12708.6
+  },
+  {
+   "name": "Jeff Coleman",
+   "party": "R",
+   "chamber": "house",
+   "district": "32",
+   "committee": "Citizens For Jeff Coleman",
+   "contributions": 54965.7
+  },
+  {
+   "name": "Jonathan Patterson",
+   "party": "R",
+   "chamber": "house",
+   "district": "30",
+   "committee": "Patterson For Missouri",
+   "contributions": 125209.33
+  },
+  {
+   "name": "Andrew Koenig",
+   "party": "R",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "Friends Of Andrew Koenig",
+   "contributions": 435434.72
+  },
+  {
+   "name": "Patricia Lewis",
+   "party": "D",
+   "chamber": "house",
+   "district": "25",
+   "committee": "Voters for Patty Lewis",
+   "contributions": 80298.81
+  },
+  {
+   "name": "Donald Mayhew",
+   "party": "R",
+   "chamber": "house",
+   "district": "121",
+   "committee": "Donald B Mayhew FSR",
+   "contributions": 9415.0
+  },
+  {
+   "name": "Richard West",
+   "party": "R",
+   "chamber": "house",
+   "district": "63",
+   "committee": "Go West For Missouri",
+   "contributions": 21900.0
+  },
+  {
+   "name": "Richard Brown",
+   "party": "D",
+   "chamber": "house",
+   "district": "27",
+   "committee": "Friends Of Richard Brown",
+   "contributions": 15684.61
+  },
+  {
+   "name": "Holly Rehder",
+   "party": "R",
+   "chamber": "senate",
+   "district": "27",
+   "committee": "Friends Of Holly Rehder",
+   "contributions": 315656.27
+  },
+  {
+   "name": "Becky Ruth",
+   "party": "R",
+   "chamber": "house",
+   "district": "114",
+   "committee": "Committee To Elect Becky Ruth",
+   "contributions": 74740.44
+  },
+  {
+   "name": "Hardy Billington",
+   "party": "R",
+   "chamber": "house",
+   "district": "152",
+   "committee": "Friends For Hardy Billington",
+   "contributions": 23132.5
+  },
+  {
+   "name": "John Wiemann",
+   "party": "R",
+   "chamber": "house",
+   "district": "103",
+   "committee": "Citizens For Wiemann",
+   "contributions": 173253.98
+  },
+  {
+   "name": "Steve Butz",
+   "party": "D",
+   "chamber": "house",
+   "district": "81",
+   "committee": "The Committee To Elect Steve Butz",
+   "contributions": 42493.94
+  },
+  {
+   "name": "Dale Wright",
+   "party": "R",
+   "chamber": "house",
+   "district": "116",
+   "committee": "Wright For Missouri",
+   "contributions": 51596.0
+  },
+  {
+   "name": "James Williams",
+   "party": "D",
+   "chamber": "house",
+   "district": "54",
+   "committee": "James Williams for MO House 54",
+   "contributions": 3749.65
+  },
+  {
+   "name": "Barry Hovis",
+   "party": "R",
+   "chamber": "house",
+   "district": "146",
+   "committee": "Friends Of Barry Hovis",
+   "contributions": 14825.0
+  },
+  {
+   "name": "Bradley Hudson",
+   "party": "R",
+   "chamber": "house",
+   "district": "138",
+   "committee": "Citizens For Brad Hudson",
+   "contributions": 14840.0
+  },
+  {
+   "name": "MARTHA STEVENS",
+   "party": "D",
+   "chamber": "house",
+   "district": "46",
+   "committee": "Friends Of Martha Stevens",
+   "contributions": 17168.85
   },
   {
    "name": "Gretchen Bangert",
@@ -347,1031 +291,7 @@
    "chamber": "house",
    "district": "61",
    "committee": "Citizens For Griesheimer",
-   "contributions": 63396.0
-  },
-  {
-   "name": "Jeff Coleman",
-   "party": "R",
-   "chamber": "house",
-   "district": "32",
-   "committee": "Citizens For Jeff Coleman",
-   "contributions": 54125.0
-  },
-  {
-   "name": "Lakeysha Bosley",
-   "party": "D",
-   "chamber": "house",
-   "district": "79",
-   "committee": "Citizens For Lakeysha Bosley",
-   "contributions": 19150.0
-  },
-  {
-   "name": "Tony Lovasco",
-   "party": "R",
-   "chamber": "house",
-   "district": "64",
-   "committee": "Citizens For Lovasco",
-   "contributions": 14580.0
-  },
-  {
-   "name": "James Murphy",
-   "party": "R",
-   "chamber": "house",
-   "district": "94",
-   "committee": "Citizens For Murphy",
-   "contributions": 78109.19
-  },
-  {
-   "name": "Nathan Tate",
-   "party": "R",
-   "chamber": "house",
-   "district": "119",
-   "committee": "Citizens For Nathan Tate",
-   "contributions": 28999.55
-  },
-  {
-   "name": "Bill Owen",
-   "party": "R",
-   "chamber": "house",
-   "district": "131",
-   "committee": "Citizens for Owen",
-   "contributions": 38731.5
-  },
-  {
-   "name": "Barbara Phifer",
-   "party": "D",
-   "chamber": "house",
-   "district": "90",
-   "committee": "Citizens for Phifer",
-   "contributions": 52964.12
-  },
-  {
-   "name": "Rasheen Aldridge",
-   "party": "D",
-   "chamber": "house",
-   "district": "78",
-   "committee": "Citizens for Rasheen Aldridge",
-   "contributions": 20789.879999999997
-  },
-  {
-   "name": "Raymond Lampert",
-   "party": "D",
-   "chamber": "house",
-   "district": "137",
-   "committee": "Citizens For Raymond Lampert",
-   "contributions": 5398.28
-  },
-  {
-   "name": "Ronald Copeland",
-   "party": "R",
-   "chamber": "house",
-   "district": "143",
-   "committee": "Citizens for Ron Copeland",
-   "contributions": 23002.0
-  },
-  {
-   "name": "Adam Schwadron",
-   "party": "R",
-   "chamber": "house",
-   "district": "106",
-   "committee": "Citizens for Schwadron",
-   "contributions": 23061.0
-  },
-  {
-   "name": "Sean Pouche",
-   "party": "R",
-   "chamber": "house",
-   "district": "13",
-   "committee": "Citizens for Sean Pouche",
-   "contributions": 14773.12
-  },
-  {
-   "name": "Shane Roden",
-   "party": "R",
-   "chamber": "house",
-   "district": "111",
-   "committee": "Citizens For Shane Roden",
-   "contributions": 11393.0
-  },
-  {
-   "name": "John Simmons",
-   "party": "R",
-   "chamber": "house",
-   "district": "109",
-   "committee": "Citizens For Simmons",
-   "contributions": 36001.56
-  },
-  {
-   "name": "Theresa Schmitt",
-   "party": "D",
-   "chamber": "house",
-   "district": "120",
-   "committee": "Citizens For Theresa Schmitt",
-   "contributions": 8049.65
-  },
-  {
-   "name": "Tim Taylor",
-   "party": "R",
-   "chamber": "house",
-   "district": "48",
-   "committee": "Citizens for Tim Taylor",
-   "contributions": 31216.4
-  },
-  {
-   "name": "John Wiemann",
-   "party": "R",
-   "chamber": "house",
-   "district": "103",
-   "committee": "Citizens For Wiemann",
-   "contributions": 173830.0
-  },
-  {
-   "name": "Alan Gray",
-   "party": "D",
-   "chamber": "house",
-   "district": "75",
-   "committee": "Citizens To Elect Alan Gray",
-   "contributions": 13514.61
-  },
-  {
-   "name": "William Heisse",
-   "party": "R",
-   "chamber": "house",
-   "district": "92",
-   "committee": "Citizens to Elect Bill Heisse",
-   "contributions": 4869.66
-  },
-  {
-   "name": "Bruce DeGroot",
-   "party": "R",
-   "chamber": "house",
-   "district": "101",
-   "committee": "Citizens To Elect Bruce DeGroot",
-   "contributions": 100684.0
-  },
-  {
-   "name": "Doug Richey",
-   "party": "R",
-   "chamber": "house",
-   "district": "38",
-   "committee": "Citizens To Elect Doug Richey",
-   "contributions": 41607.24
-  },
-  {
-   "name": "Jermond Mosley",
-   "party": "D",
-   "chamber": "house",
-   "district": "68",
-   "committee": "Citizens To Elect Jay Mosley",
-   "contributions": null
-  },
-  {
-   "name": "Kurtis Gregory",
-   "party": "R",
-   "chamber": "house",
-   "district": "51",
-   "committee": "Citizens to Elect Kurtis Gregory",
-   "contributions": 50442.21
-  },
-  {
-   "name": "Michael Person",
-   "party": "D",
-   "chamber": "house",
-   "district": "74",
-   "committee": "Citizens to Elect Mike Person",
-   "contributions": 17739.85
-  },
-  {
-   "name": "Neil Smith",
-   "party": "D",
-   "chamber": "house",
-   "district": "67",
-   "committee": "Citizens to Elect Neil Smith",
-   "contributions": 9984.65
-  },
-  {
-   "name": "Allison Schoolcraft",
-   "party": "D",
-   "chamber": "house",
-   "district": "131",
-   "committee": "Committee to Elect Allison Schoolcraft",
-   "contributions": 2743.85
-  },
-  {
-   "name": "Ann Zimpfer",
-   "party": "D",
-   "chamber": "house",
-   "district": "95",
-   "committee": "Committee to Elect Ann Zimpfer",
-   "contributions": 37229.38
-  },
-  {
-   "name": "Becky Ruth",
-   "party": "R",
-   "chamber": "house",
-   "district": "114",
-   "committee": "Committee To Elect Becky Ruth",
-   "contributions": 67576.0
-  },
-  {
-   "name": "Bill Otto",
-   "party": "D",
-   "chamber": "house",
-   "district": "65",
-   "committee": "Committee to Elect Bill Otto",
-   "contributions": 59192.17
-  },
-  {
-   "name": "Robert Bromley",
-   "party": "R",
-   "chamber": "house",
-   "district": "162",
-   "committee": "Committee To Elect Bob Bromley",
-   "contributions": 15375.0
-  },
-  {
-   "name": "Cynthia Berne",
-   "party": "D",
-   "chamber": "house",
-   "district": "106",
-   "committee": "Committee To Elect Cindy Berne 2020",
-   "contributions": 82573.51
-  },
-  {
-   "name": "Cynthia Nugent",
-   "party": "D",
-   "chamber": "house",
-   "district": "115",
-   "committee": "Committee to Elect Cynthia Nugent",
-   "contributions": 5402.59
-  },
-  {
-   "name": "Dale Speelman",
-   "party": "D",
-   "chamber": "house",
-   "district": "156",
-   "committee": "Committee to Elect Dale Speelman",
-   "contributions": 1153.47
-  },
-  {
-   "name": "David Evans",
-   "party": "R",
-   "chamber": "house",
-   "district": "154",
-   "committee": "Committee To Elect David Evans",
-   "contributions": 19621.0
-  },
-  {
-   "name": "Doug Clemens",
-   "party": "D",
-   "chamber": "house",
-   "district": "72",
-   "committee": "Committee To Elect Doug Clemens",
-   "contributions": 38111.65
-  },
-  {
-   "name": "Dan Houx",
-   "party": "R",
-   "chamber": "house",
-   "district": "54",
-   "committee": "Committee To Elect Houx",
-   "contributions": 136050.95
-  },
-  {
-   "name": "Ian Mackey",
-   "party": "D",
-   "chamber": "house",
-   "district": "87",
-   "committee": "Committee to Elect Ian Mackey",
-   "contributions": 43727.41
-  },
-  {
-   "name": "Jason Chipman",
-   "party": "R",
-   "chamber": "house",
-   "district": "120",
-   "committee": "Committee To Elect Jason Chipman",
-   "contributions": 16146.0
-  },
-  {
-   "name": "Emma Jean Pretto",
-   "party": "D",
-   "chamber": "house",
-   "district": "94",
-   "committee": "Committee to Elect Jean Pretto",
-   "contributions": 71754.75
-  },
-  {
-   "name": "John Black",
-   "party": "R",
-   "chamber": "house",
-   "district": "137",
-   "committee": "Committee To Elect John Black",
-   "contributions": 43088.270000000004
-  },
-  {
-   "name": "Joshua Shackles",
-   "party": "D",
-   "chamber": "house",
-   "district": "161",
-   "committee": "Committee to Elect Joshua Shackles",
-   "contributions": null
-  },
-  {
-   "name": "Karen Planalp",
-   "party": "D",
-   "chamber": "house",
-   "district": "9",
-   "committee": "Committee to Elect Karen Planalp",
-   "contributions": 6666.87
-  },
-  {
-   "name": "Keri Ingle",
-   "party": "D",
-   "chamber": "house",
-   "district": "35",
-   "committee": "Committee To Elect Keri Ingle",
-   "contributions": 101705.01
-  },
-  {
-   "name": "Lisa Rees",
-   "party": "D",
-   "chamber": "house",
-   "district": "103",
-   "committee": "Committee to Elect Lisa Rees",
-   "contributions": 4415.41
-  },
-  {
-   "name": "Marlene Terry",
-   "party": "D",
-   "chamber": "house",
-   "district": "66",
-   "committee": "Committee to Elect Marlene Terry",
-   "contributions": 9219.65
-  },
-  {
-   "name": "Marlon Anderson",
-   "party": "D",
-   "chamber": "house",
-   "district": "76",
-   "committee": "Committee to Elect Marlon Anderson",
-   "contributions": 20533.46
-  },
-  {
-   "name": "Neal Barnes",
-   "party": "D",
-   "chamber": "house",
-   "district": "56",
-   "committee": "Committee to Elect Neal Barnes",
-   "contributions": 19136.35
-  },
-  {
-   "name": "Patrick Bellew",
-   "party": "C",
-   "chamber": "house",
-   "district": "123",
-   "committee": "Committee To Elect Pat Bellew",
-   "contributions": null
-  },
-  {
-   "name": "Paula Brown",
-   "party": "D",
-   "chamber": "house",
-   "district": "70",
-   "committee": "Committee To Elect Paula Brown",
-   "contributions": 126472.97
-  },
-  {
-   "name": "Rick Roeber",
-   "party": "R",
-   "chamber": "house",
-   "district": "34",
-   "committee": "Committee to Elect Rick Roeber to the 34th",
-   "contributions": 19861.32
-  },
-  {
-   "name": "Robert Sauls",
-   "party": "D",
-   "chamber": "house",
-   "district": "21",
-   "committee": "Committee To Elect Robert Sauls",
-   "contributions": 74364.01000000001
-  },
-  {
-   "name": "Wade Kiefer",
-   "party": "D",
-   "chamber": "house",
-   "district": "12",
-   "committee": "Committee to Elect Wade Kiefer",
-   "contributions": 21986.18
-  },
-  {
-   "name": "Wesley Rogers",
-   "party": "N",
-   "chamber": "house",
-   "district": "18",
-   "committee": "Committee to Elect Wes Rogers",
-   "contributions": null
-  },
-  {
-   "name": "Wiley Price",
-   "party": "D",
-   "chamber": "house",
-   "district": "84",
-   "committee": "Committee to Elect Wiley Price IV",
-   "contributions": 17869.8
-  },
-  {
-   "name": "Yolanda Young",
-   "party": "D",
-   "chamber": "house",
-   "district": "22",
-   "committee": "Committee to Elect Yolanda Young",
-   "contributions": 27187.95
-  },
-  {
-   "name": "Craig Fishel",
-   "party": "R",
-   "chamber": "house",
-   "district": "136",
-   "committee": "Craig Fishel For State Representative",
-   "contributions": 45722.42
-  },
-  {
-   "name": "Robert Crump",
-   "party": "R",
-   "chamber": "house",
-   "district": "82",
-   "committee": "Crump 2020",
-   "contributions": 1000.0
-  },
-  {
-   "name": "Scott Cupps",
-   "party": "R",
-   "chamber": "house",
-   "district": "158",
-   "committee": "Cupps for House",
-   "contributions": 15523.62
-  },
-  {
-   "name": "Danny Busick",
-   "party": "R",
-   "chamber": "house",
-   "district": "3",
-   "committee": "Danny Busick 4 Rural MO",
-   "contributions": 6800.0
-  },
-  {
-   "name": "Darren Grant",
-   "party": "R",
-   "chamber": "house",
-   "district": "72",
-   "committee": "Darren L Grant",
-   "contributions": null
-  },
-  {
-   "name": "Dave Gragg",
-   "party": "D",
-   "chamber": "house",
-   "district": "130",
-   "committee": "Dave Gragg For Missouri",
-   "contributions": 10365.64
-  },
-  {
-   "name": "Dave Griffith",
-   "party": "R",
-   "chamber": "house",
-   "district": "60",
-   "committee": "Dave Griffith For Missouri",
-   "contributions": null
-  },
-  {
-   "name": "Dewanna Marquez",
-   "party": "D",
-   "chamber": "house",
-   "district": "129",
-   "committee": "Dewanna Dee Marquez",
-   "contributions": null
-  },
-  {
-   "name": "Dirk Deaton",
-   "party": "R",
-   "chamber": "house",
-   "district": "159",
-   "committee": "Dirk Deaton For Missouri",
-   "contributions": 51096.0
-  },
-  {
-   "name": "Rhonda Dolan",
-   "party": "D",
-   "chamber": "house",
-   "district": "31",
-   "committee": "Dolan for Missouri",
-   "contributions": 64524.85
-  },
-  {
-   "name": "Johanna Doll",
-   "party": "D",
-   "chamber": "house",
-   "district": "83",
-   "committee": "Doll for Missouri",
-   "contributions": 40695.02
-  },
-  {
-   "name": "Donald Mayhew",
-   "party": "R",
-   "chamber": "house",
-   "district": "121",
-   "committee": "Donald B Mayhew FSR",
-   "contributions": 10415.0
-  },
-  {
-   "name": "Dorothy Bailey",
-   "party": "R",
-   "chamber": "house",
-   "district": "110",
-   "committee": "Dottie Bailey For Missouri",
-   "contributions": 40015.0
-  },
-  {
-   "name": "Luke Barber",
-   "party": "D",
-   "chamber": "house",
-   "district": "89",
-   "committee": "Elect Luke Barber",
-   "contributions": 5879.99
-  },
-  {
-   "name": "Aaron Hailey",
-   "party": "D",
-   "chamber": "house",
-   "district": "163",
-   "committee": "Empower Missourians Hailey",
-   "contributions": 758.24
-  },
-  {
-   "name": "Kimberly Collins",
-   "party": "D",
-   "chamber": "house",
-   "district": "77",
-   "committee": "Families For Kimberly-Ann Collins",
-   "contributions": 20047.85
-  },
-  {
-   "name": "Terrence Fiala",
-   "party": "D",
-   "chamber": "house",
-   "district": "6",
-   "committee": "Fiala for Missouri",
-   "contributions": 4042.56
-  },
-  {
-   "name": "Elizabeth Fogle",
-   "party": "D",
-   "chamber": "house",
-   "district": "135",
-   "committee": "Fogle for Missouri",
-   "contributions": 161824.13
-  },
-  {
-   "name": "Chris Dinkins",
-   "party": "R",
-   "chamber": "house",
-   "district": "144",
-   "committee": "Friends For Chris Dodson Dinkins",
-   "contributions": 23586.0
-  },
-  {
-   "name": "Charles Basye",
-   "party": "R",
-   "chamber": "house",
-   "district": "47",
-   "committee": "Friends For Chuck Basye",
-   "contributions": 81304.12
-  },
-  {
-   "name": "Tony Dorsett",
-   "party": "D",
-   "chamber": "house",
-   "district": "117",
-   "committee": "Friends for Dorsett",
-   "contributions": 4126.65
-  },
-  {
-   "name": "Ed Lewis",
-   "party": "R",
-   "chamber": "house",
-   "district": "6",
-   "committee": "Friends for Ed Lewis",
-   "contributions": 17137.13
-  },
-  {
-   "name": "Eric Holmes",
-   "party": "R",
-   "chamber": "house",
-   "district": "14",
-   "committee": "Friends for Eric Holmes",
-   "contributions": 24169.7
-  },
-  {
-   "name": "Rick Francis",
-   "party": "R",
-   "chamber": "house",
-   "district": "145",
-   "committee": "Friends For Francis",
-   "contributions": 45412.97
-  },
-  {
-   "name": "Hardy Billington",
-   "party": "R",
-   "chamber": "house",
-   "district": "152",
-   "committee": "Friends For Hardy Billington",
-   "contributions": 24068.5
-  },
-  {
-   "name": "Jered Taylor",
-   "party": "R",
-   "chamber": "house",
-   "district": "139",
-   "committee": "Friends For Jered Taylor",
-   "contributions": 11976.42
-  },
-  {
-   "name": "Travis Fitzwater",
-   "party": "R",
-   "chamber": "house",
-   "district": "49",
-   "committee": "Friends For Travis Fitzwater",
-   "contributions": 73820.33
-  },
-  {
-   "name": "Victor Abundis",
-   "party": "D",
-   "chamber": "house",
-   "district": "13",
-   "committee": "Friends For Vic Abundis",
-   "contributions": 14327.2
-  },
-  {
-   "name": "Kevin Windham",
-   "party": "D",
-   "chamber": "house",
-   "district": "85",
-   "committee": "Friends For Windham",
-   "contributions": 17642.92
-  },
-  {
-   "name": "Adrian Plank",
-   "party": "D",
-   "chamber": "house",
-   "district": "47",
-   "committee": "Friends Of Adrian Plank",
-   "contributions": 48094.67
-  },
-  {
-   "name": "Angie Schaefer",
-   "party": "D",
-   "chamber": "house",
-   "district": "98",
-   "committee": "Friends of Angie Schaefer",
-   "contributions": 13280.74
-  },
-  {
-   "name": "Barry Hovis",
-   "party": "R",
-   "chamber": "house",
-   "district": "146",
-   "committee": "Friends Of Barry Hovis",
-   "contributions": 14080.0
-  },
-  {
-   "name": "Christine Hyman",
-   "party": "D",
-   "chamber": "house",
-   "district": "105",
-   "committee": "Friends of Christine Hyman for Missouri",
-   "contributions": 50007.55
-  },
-  {
-   "name": "Curtis Trent",
-   "party": "R",
-   "chamber": "house",
-   "district": "133",
-   "committee": "Friends Of Curtis Trent",
-   "contributions": 195147.0
-  },
-  {
-   "name": "Don Rone",
-   "party": "R",
-   "chamber": "house",
-   "district": "149",
-   "committee": "Friends Of Don Rone",
-   "contributions": 9775.0
-  },
-  {
-   "name": "Erica Hoffman",
-   "party": "D",
-   "chamber": "house",
-   "district": "96",
-   "committee": "Friends Of Erica Hoffman",
-   "contributions": 37975.770000000004
-  },
-  {
-   "name": "Hannah Kelly",
-   "party": "R",
-   "chamber": "house",
-   "district": "141",
-   "committee": "Friends Of Hannah Kelly",
-   "contributions": 75868.57
-  },
-  {
-   "name": "Jeff Knight",
-   "party": "R",
-   "chamber": "house",
-   "district": "129",
-   "committee": "Friends Of Jeff Knight",
-   "contributions": 51773.91
-  },
-  {
-   "name": "Jerry Adzima",
-   "party": "R",
-   "chamber": "house",
-   "district": "70",
-   "committee": "Friends of Jerry Adzima",
-   "contributions": 5660.0
-  },
-  {
-   "name": "Kari Chesney",
-   "party": "D",
-   "chamber": "house",
-   "district": "50",
-   "committee": "Friends of Kari L Chesney",
-   "contributions": 30527.33
-  },
-  {
-   "name": "Kip Kendrick",
-   "party": "D",
-   "chamber": "house",
-   "district": "45",
-   "committee": "Friends Of Kip Kendrick",
-   "contributions": 52139.200000000004
-  },
-  {
-   "name": "Lane Roberts",
-   "party": "R",
-   "chamber": "house",
-   "district": "161",
-   "committee": "Friends Of Lane Roberts",
-   "contributions": 25529.0
-  },
-  {
-   "name": "Mark Ellebracht",
-   "party": "D",
-   "chamber": "house",
-   "district": "17",
-   "committee": "Friends Of Mark Ellebracht",
-   "contributions": 94931.48999999999
-  },
-  {
-   "name": "MARTHA STEVENS",
-   "party": "D",
-   "chamber": "house",
-   "district": "46",
-   "committee": "Friends Of Martha Stevens",
-   "contributions": 16963.43
-  },
-  {
-   "name": "Mary Coleman",
-   "party": "R",
-   "chamber": "house",
-   "district": "97",
-   "committee": "Friends Of Mary Elizabeth Coleman",
-   "contributions": 103062.01000000001
-  },
-  {
-   "name": "Michael Burton",
-   "party": "D",
-   "chamber": "house",
-   "district": "92",
-   "committee": "Friends of Michael Burton",
-   "contributions": 13646.87
-  },
-  {
-   "name": "Michael Davis",
-   "party": "R",
-   "chamber": "house",
-   "district": "56",
-   "committee": "Friends of Michael Davis",
-   "contributions": 11865.7
-  },
-  {
-   "name": "Nick Schroer",
-   "party": "R",
-   "chamber": "house",
-   "district": "107",
-   "committee": "Friends Of Nick Schroer",
-   "contributions": 79900.0
-  },
-  {
-   "name": "Nola Wood",
-   "party": "R",
-   "chamber": "house",
-   "district": "36",
-   "committee": "Friends of Nola Wood",
-   "contributions": 8445.0
-  },
-  {
-   "name": "Peggy McGaugh",
-   "party": "R",
-   "chamber": "house",
-   "district": "39",
-   "committee": "Friends Of Peggy McGaugh",
-   "contributions": 19500.0
-  },
-  {
-   "name": "Phil Christofanelli",
-   "party": "R",
-   "chamber": "house",
-   "district": "105",
-   "committee": "Friends Of Phil Christofanelli",
-   "contributions": 92922.0
-  },
-  {
-   "name": "Raychel Proudie",
-   "party": "D",
-   "chamber": "house",
-   "district": "73",
-   "committee": "Friends Of Raychel Proudie",
-   "contributions": 20768.48
-  },
-  {
-   "name": "Richard Brown",
-   "party": "D",
-   "chamber": "house",
-   "district": "27",
-   "committee": "Friends Of Richard Brown",
-   "contributions": 14958.24
-  },
-  {
-   "name": "Rob Vescovo",
-   "party": "R",
-   "chamber": "house",
-   "district": "112",
-   "committee": "Friends Of Rob Vescovo",
-   "contributions": 283284.0
-  },
-  {
-   "name": "Rodger Reedy",
-   "party": "R",
-   "chamber": "house",
-   "district": "57",
-   "committee": "Friends Of Rodger L Reedy",
-   "contributions": 25230.0
-  },
-  {
-   "name": "Ron Hicks",
-   "party": "R",
-   "chamber": "house",
-   "district": "102",
-   "committee": "Friends Of Ron Hicks",
-   "contributions": 17425.0
-  },
-  {
-   "name": "Rory Rowland",
-   "party": "N",
-   "chamber": "house",
-   "district": "29",
-   "committee": "Friends Of Rory Rowland",
-   "contributions": 23579.65
-  },
-  {
-   "name": "Rusty Black",
-   "party": "R",
-   "chamber": "house",
-   "district": "7",
-   "committee": "Friends Of Rusty Black",
-   "contributions": 40712.0
-  },
-  {
-   "name": "Sara Walsh",
-   "party": "R",
-   "chamber": "house",
-   "district": "50",
-   "committee": "Friends Of Sara Walsh",
-   "contributions": 70465.13
-  },
-  {
-   "name": "Scott Cazadd",
-   "party": "R",
-   "chamber": "house",
-   "district": "69",
-   "committee": "Friends of Scott Cazadd",
-   "contributions": 3300.0
-  },
-  {
-   "name": "DAN SHAUL",
-   "party": "R",
-   "chamber": "house",
-   "district": "113",
-   "committee": "FRIENDS OF SHAUL",
-   "contributions": 86084.53
-  },
-  {
-   "name": "Susan Shumway",
-   "party": "D",
-   "chamber": "house",
-   "district": "108",
-   "committee": "Friends of Shumway",
-   "contributions": 5893.97
-  },
-  {
-   "name": "Steve Helms",
-   "party": "R",
-   "chamber": "house",
-   "district": "135",
-   "committee": "Friends Of Steve Helms",
-   "contributions": 86974.53
-  },
-  {
-   "name": "Suzie Pollock",
-   "party": "R",
-   "chamber": "house",
-   "district": "123",
-   "committee": "Friends Of Suzie Pollock",
-   "contributions": 15850.0
-  },
-  {
-   "name": "Terry Thompson",
-   "party": "R",
-   "chamber": "house",
-   "district": "53",
-   "committee": "Friends of Terry Thompson",
-   "contributions": 29975.0
-  },
-  {
-   "name": "Travis Smith",
-   "party": "R",
-   "chamber": "house",
-   "district": "155",
-   "committee": "Friends of Travis Smith",
-   "contributions": null
-  },
-  {
-   "name": "Trish Gunby",
-   "party": "D",
-   "chamber": "house",
-   "district": "99",
-   "committee": "Friends of Trish Gunby",
-   "contributions": 330683.26
-  },
-  {
-   "name": "A WALLINGFORD",
-   "party": "R",
-   "chamber": "house",
-   "district": "147",
-   "committee": "Friends Of Wayne Wallingford",
-   "contributions": 77117.0
-  },
-  {
-   "name": "Willard Haley",
-   "party": "R",
-   "chamber": "house",
-   "district": "58",
-   "committee": "Friends of Willard Haley",
-   "contributions": 16547.96
-  },
-  {
-   "name": "James Kalberloh",
-   "party": "R",
-   "chamber": "house",
-   "district": "125",
-   "committee": "Friends to Elect Jim Kalberloh",
-   "contributions": 18815.0
-  },
-  {
-   "name": "Richard West",
-   "party": "R",
-   "chamber": "house",
-   "district": "63",
-   "committee": "Go West For Missouri",
-   "contributions": 22830.760000000002
-  },
-  {
-   "name": "Darlene Graham",
-   "party": "D",
-   "chamber": "house",
-   "district": "139",
-   "committee": "Graham for 139 MO Dist Rep",
-   "contributions": 1106.41
-  },
-  {
-   "name": "David Gregory",
-   "party": "R",
-   "chamber": "house",
-   "district": "96",
-   "committee": "Gregory For Missouri",
-   "contributions": 150820.95
+   "contributions": 65007.0
   },
   {
    "name": "Kent Haden",
@@ -1382,108 +302,132 @@
    "contributions": 42485.0
   },
   {
+   "name": "Barbara Washington",
+   "party": "D",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "Washington For Senate 9",
+   "contributions": 202408.45
+  },
+  {
+   "name": "Robert Sauls",
+   "party": "D",
+   "chamber": "house",
+   "district": "21",
+   "committee": "Committee To Elect Robert Sauls",
+   "contributions": 74062.65
+  },
+  {
+   "name": "John West",
+   "party": "R",
+   "chamber": "house",
+   "district": "15",
+   "committee": "SteveWest4Missouri",
+   "contributions": 28995.22
+  },
+  {
+   "name": "CALEB ROWDEN",
+   "party": "R",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "Friends Of Caleb Rowden",
+   "contributions": 627440.91
+  },
+  {
+   "name": "SHAMED DOGAN",
+   "party": "R",
+   "chamber": "house",
+   "district": "98",
+   "committee": "CITIZENS FOR DOGAN",
+   "contributions": 20325.0
+  },
+  {
    "name": "Mike Haffner",
    "party": "R",
    "chamber": "house",
    "district": "55",
    "committee": "Haffner For Missouri",
-   "contributions": 62445.0
+   "contributions": 57404.0
   },
   {
-   "name": "Tom Hannegan",
+   "name": "GREG RAZER",
+   "party": "D",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "RAZER FOR MISSOURI",
+   "contributions": 237148.48
+  },
+  {
+   "name": "A WALLINGFORD",
    "party": "R",
    "chamber": "house",
-   "district": "65",
-   "committee": "Hannegan For State Representative",
-   "contributions": 36067.12
+   "district": "147",
+   "committee": "Friends Of Wayne Wallingford",
+   "contributions": 111067.0
   },
   {
-   "name": "Mike Henderson",
+   "name": "Kip Kendrick",
+   "party": "D",
+   "chamber": "house",
+   "district": "45",
+   "committee": "Friends Of Kip Kendrick",
+   "contributions": 52966.51
+  },
+  {
+   "name": "Yolanda Young",
+   "party": "D",
+   "chamber": "house",
+   "district": "22",
+   "committee": "Committee to Elect Yolanda Young",
+   "contributions": 19226.64
+  },
+  {
+   "name": "Rasheen Aldridge",
+   "party": "D",
+   "chamber": "house",
+   "district": "78",
+   "committee": "Citizens for Rasheen Aldridge",
+   "contributions": 19364.88
+  },
+  {
+   "name": "Louis Riggs",
    "party": "R",
    "chamber": "house",
-   "district": "117",
-   "committee": "Henderson For Missouri",
-   "contributions": 58763.97
+   "district": "5",
+   "committee": "Riggs For Missouri",
+   "contributions": 39865.0
   },
   {
-   "name": "JUSTIN HILL",
+   "name": "Angela Mosley",
+   "party": "D",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "Citizens to Elect Angela Mosley, LLC",
+   "contributions": 71393.05
+  },
+  {
+   "name": "Mitchell Boggs",
    "party": "R",
    "chamber": "house",
-   "district": "108",
-   "committee": "Hill For Missouri",
-   "contributions": 41075.0
+   "district": "157",
+   "committee": "Boggs for Missouri",
+   "contributions": 41339.1
   },
   {
-   "name": "Edwin Hogan",
+   "name": "Tracy McCreery",
    "party": "D",
-   "chamber": "house",
-   "district": "126",
-   "committee": "Hogan for Representative",
-   "contributions": 2162.98
-  },
-  {
-   "name": "Joshua Hurlbert",
-   "party": "R",
-   "chamber": "house",
-   "district": "12",
-   "committee": "Hurlbert for Missouri",
-   "contributions": 26477.21
-  },
-  {
-   "name": "Ingrid Burnett",
-   "party": "D",
-   "chamber": "house",
-   "district": "19",
-   "committee": "Ingrid Burnett For Missouri",
-   "contributions": 55410.86
-  },
-  {
-   "name": "Jacque Sample",
-   "party": "D",
-   "chamber": "house",
-   "district": "44",
-   "committee": "Jacque Sample for Missouri",
-   "contributions": 31552.92
-  },
-  {
-   "name": "James Williams",
-   "party": "D",
-   "chamber": "house",
-   "district": "54",
-   "committee": "James Williams for MO House 54",
-   "contributions": 3974.65
-  },
-  {
-   "name": "Jessica DeVoto",
-   "party": "D",
-   "chamber": "house",
-   "district": "104",
-   "committee": "Jessica DeVoto For Missouri",
-   "contributions": 7630.5
-  },
-  {
-   "name": "Joe Adams",
-   "party": "D",
-   "chamber": "house",
-   "district": "86",
-   "committee": "Joe Adams For Missouri",
-   "contributions": 13529.65
-  },
-  {
-   "name": "Joshua Dunne",
-   "party": "D",
-   "chamber": "house",
-   "district": "60",
-   "committee": "Joshua Dunne for Missouri",
-   "contributions": 6624.68
-  },
-  {
-   "name": "Karan Pujji",
-   "party": "R",
    "chamber": "house",
    "district": "88",
-   "committee": "KaranPujji.com",
-   "contributions": null
+   "committee": "MCCREERY FOR MISSOURI",
+   "contributions": 87302.61
+  },
+  {
+   "name": "Dan Houx",
+   "party": "R",
+   "chamber": "house",
+   "district": "54",
+   "committee": "Committee To Elect Houx",
+   "contributions": 132902.0
   },
   {
    "name": "John Kiehne",
@@ -1491,31 +435,7 @@
    "chamber": "house",
    "district": "110",
    "committee": "Kiehne For Missouri",
-   "contributions": 39855.75
-  },
-  {
-   "name": "LaDonna Appelbaum",
-   "party": "D",
-   "chamber": "house",
-   "district": "71",
-   "committee": "LaDonna Appelbaum For Missouri",
-   "contributions": 37547.869999999995
-  },
-  {
-   "name": "Andrew Leighton",
-   "party": "D",
-   "chamber": "house",
-   "district": "147",
-   "committee": "Leighton For MO",
-   "contributions": 14149.59
-  },
-  {
-   "name": "Margaret Nurrenbern",
-   "party": "D",
-   "chamber": "house",
-   "district": "15",
-   "committee": "Maggie Nurrenbern for Missouri",
-   "contributions": 101451.3
+   "contributions": 34355.73
   },
   {
    "name": "Ashley Manlove",
@@ -1523,119 +443,279 @@
    "chamber": "house",
    "district": "26",
    "committee": "Manlove For Missouri",
-   "contributions": 39133.91
+   "contributions": 41602.97
   },
   {
-   "name": "Marvin Manring",
+   "name": "Michael Person",
    "party": "D",
    "chamber": "house",
-   "district": "128",
-   "committee": "Manring4MO128",
-   "contributions": 16218.53
+   "district": "74",
+   "committee": "Citizens to Elect Mike Person",
+   "contributions": 17856.04
   },
   {
-   "name": "Tracy McCreery",
-   "party": "D",
-   "chamber": "house",
-   "district": "88",
-   "committee": "McCreery For Missouri",
-   "contributions": 89218.76999999999
-  },
-  {
-   "name": "Andrew McDaniel",
+   "name": "Dale Wright",
    "party": "R",
    "chamber": "house",
-   "district": "150",
-   "committee": "McDaniel For State Representative",
-   "contributions": 17325.0
+   "district": "116",
+   "committee": "Wright For Missouri ",
+   "contributions": null
   },
   {
-   "name": "Michael McGirl",
+   "name": "Dan Stacy",
    "party": "R",
    "chamber": "house",
-   "district": "118",
-   "committee": "McGirl for Missouri",
+   "district": "31",
+   "committee": "Citizens For Dan Stacy",
+   "contributions": 29114.71
+  },
+  {
+   "name": "Raychel Proudie",
+   "party": "D",
+   "chamber": "house",
+   "district": "73",
+   "committee": "Friends Of Raychel Proudie",
+   "contributions": 20753.48
+  },
+  {
+   "name": "Bill Owen",
+   "party": "R",
+   "chamber": "house",
+   "district": "131",
+   "committee": "CITIZENS FOR OWEN",
    "contributions": null
   },
   {
-   "name": "Brenda McKinney",
-   "party": "D",
+   "name": "James Murphy",
+   "party": "R",
    "chamber": "house",
-   "district": "158",
-   "committee": "McKinney in the House",
-   "contributions": 3402.35
+   "district": "94",
+   "committee": "Citizens For Murphy",
+   "contributions": 62854.0
   },
   {
-   "name": "Michael Johnson",
+   "name": "John Rizzo",
    "party": "D",
-   "chamber": "house",
-   "district": "23",
-   "committee": "Michael L Johnson for State Rep",
-   "contributions": 15937.65
+   "chamber": "senate",
+   "district": "11",
+   "committee": "Rizzo For Missouri",
+   "contributions": 280765.25
   },
   {
-   "name": "Mike Copeland",
-   "party": "L",
-   "chamber": "house",
-   "district": "107",
-   "committee": "Mike Copeland",
-   "contributions": null
-  },
-  {
-   "name": "Mike Englert",
+   "name": "LaDonna Appelbaum",
    "party": "D",
    "chamber": "house",
-   "district": "20",
-   "committee": "Mike Englert",
-   "contributions": null
+   "district": "71",
+   "committee": "LaDonna Appelbaum For Missouri",
+   "contributions": 43529.95
   },
   {
-   "name": "Mike Englert",
+   "name": "Bennie Cook",
+   "party": "R",
+   "chamber": "house",
+   "district": "142",
+   "committee": "Bennie Cook for State Representative",
+   "contributions": 19681.8
+  },
+  {
+   "name": "Terry Thompson",
+   "party": "R",
+   "chamber": "house",
+   "district": "53",
+   "committee": "Friends of Terry Thompson",
+   "contributions": 30075.0
+  },
+  {
+   "name": "Peter Merideth",
    "party": "D",
    "chamber": "house",
-   "district": "20",
-   "committee": "Mike Englert for State Representative",
-   "contributions": 733.24
+   "district": "80",
+   "committee": "Peter Merideth For Mo Progress",
+   "contributions": 39720.26
   },
   {
-   "name": "Mike Lind",
+   "name": "Don Rone",
+   "party": "R",
+   "chamber": "house",
+   "district": "149",
+   "committee": "Friends Of Don Rone",
+   "contributions": 9775.0
+  },
+  {
+   "name": "Adam Schnelting",
+   "party": "R",
+   "chamber": "house",
+   "district": "104",
+   "committee": "Schnelting For Missouri",
+   "contributions": 37199.0
+  },
+  {
+   "name": "Helena Webb",
    "party": "D",
    "chamber": "house",
-   "district": "155",
-   "committee": "Mike Lind",
-   "contributions": null
+   "district": "100",
+   "committee": "Webb For House Rep",
+   "contributions": 82172.61
   },
   {
-   "name": "Mike Lindley",
+   "name": "Crystal Quade",
    "party": "D",
    "chamber": "house",
-   "district": "145",
-   "committee": "Mike Lindley",
-   "contributions": null
+   "district": "132",
+   "committee": "CITIZENS FOR CRYSTAL QUADE",
+   "contributions": 139020.81
   },
   {
-   "name": "Mindi Smith",
+   "name": "James Shackelford",
    "party": "D",
+   "chamber": "house",
+   "district": "16",
+   "committee": "The Committee to Elect James Shackelford",
+   "contributions": 81339.59
+  },
+  {
+   "name": "Steve Roberts",
+   "party": "D",
+   "chamber": "senate",
+   "district": "5",
+   "committee": "Roberts For St Louis",
+   "contributions": 259493.05
+  },
+  {
+   "name": "J EGGLESTON",
+   "party": "R",
    "chamber": "house",
    "district": "2",
-   "committee": "Mindi Smith for Missouri",
-   "contributions": 4172.24
+   "committee": "CITIZENS FOR EGGLESTON",
+   "contributions": 26296.0
   },
   {
-   "name": "Ann Kelley",
+   "name": "Bill Owen",
    "party": "R",
    "chamber": "house",
-   "district": "127",
-   "committee": "Missouri 4 Kelley",
-   "contributions": null
+   "district": "131",
+   "committee": "Citizens for Owen",
+   "contributions": 37929.5
   },
   {
-   "name": "Bishop Davidson",
+   "name": "Bill Kidd",
    "party": "R",
+   "chamber": "house",
+   "district": "20",
+   "committee": "Bill Kidd For Missouri",
+   "contributions": 51280.0
+  },
+  {
+   "name": "DENNY HOSKINS",
+   "party": "R",
+   "chamber": "senate",
+   "district": "21",
+   "committee": "Citizens For Hoskins",
+   "contributions": 218001.79
+  },
+  {
+   "name": "Jeff Knight",
+   "party": "R",
+   "chamber": "house",
+   "district": "129",
+   "committee": "Friends Of Jeff Knight",
+   "contributions": 50046.0
+  },
+  {
+   "name": "Mark Ellebracht",
+   "party": "D",
+   "chamber": "house",
+   "district": "17",
+   "committee": "Friends Of Mark Ellebracht",
+   "contributions": 105372.41
+  },
+  {
+   "name": "Doug Richey",
+   "party": "R",
+   "chamber": "house",
+   "district": "38",
+   "committee": "Citizens To Elect Doug Richey",
+   "contributions": 40550.0
+  },
+  {
+   "name": "Lakeysha Bosley",
+   "party": "D",
+   "chamber": "house",
+   "district": "79",
+   "committee": "Citizens For Lakeysha Bosley",
+   "contributions": 19240.0
+  },
+  {
+   "name": "Rusty Black",
+   "party": "R",
+   "chamber": "house",
+   "district": "7",
+   "committee": "FRIENDS OF RUSTY BLACK",
+   "contributions": 43280.0
+  },
+  {
+   "name": "Dave Gragg",
+   "party": "D",
    "chamber": "house",
    "district": "130",
-   "committee": "Missourians for Bishop Davidson",
-   "contributions": null
+   "committee": "Dave Gragg For Missouri",
+   "contributions": 8628.3
+  },
+  {
+   "name": "Lee Pitman",
+   "party": "R",
+   "chamber": "house",
+   "district": "99",
+   "committee": "Pitman For Missouri",
+   "contributions": 41848.27
+  },
+  {
+   "name": "Paula Brown",
+   "party": "D",
+   "chamber": "house",
+   "district": "70",
+   "committee": "Committee To Elect Paula Brown",
+   "contributions": 126751.61
+  },
+  {
+   "name": "David Gregory",
+   "party": "R",
+   "chamber": "house",
+   "district": "96",
+   "committee": "Gregory For Missouri",
+   "contributions": 144325.0
+  },
+  {
+   "name": "DAN SHAUL",
+   "party": "R",
+   "chamber": "house",
+   "district": "113",
+   "committee": "FRIENDS OF SHAUL",
+   "contributions": 85825.0
+  },
+  {
+   "name": "John Simmons",
+   "party": "R",
+   "chamber": "house",
+   "district": "109",
+   "committee": "Citizens For Simmons",
+   "contributions": 35015.0
+  },
+  {
+   "name": "Ingrid Burnett",
+   "party": "D",
+   "chamber": "house",
+   "district": "19",
+   "committee": "Ingrid Burnett For Missouri",
+   "contributions": 54962.01
+  },
+  {
+   "name": "Bill Hardwick",
+   "party": "R",
+   "chamber": "house",
+   "district": "122",
+   "committee": "Bill Hardwick for Missouri",
+   "contributions": 12875.0
   },
   {
    "name": "David Smith",
@@ -1643,7 +723,23 @@
    "chamber": "house",
    "district": "163",
    "committee": "Missourians For Cody Smith",
-   "contributions": 177774.0
+   "contributions": 181024.0
+  },
+  {
+   "name": "Nathan Tate",
+   "party": "R",
+   "chamber": "house",
+   "district": "119",
+   "committee": "Citizens For Nathan Tate",
+   "contributions": 28756.63
+  },
+  {
+   "name": "Jason Chipman",
+   "party": "R",
+   "chamber": "house",
+   "district": "120",
+   "committee": "COMMITTEE TO ELECT JASON CHIPMAN",
+   "contributions": 16146.0
   },
   {
    "name": "Brenda Shields",
@@ -1651,15 +747,223 @@
    "chamber": "house",
    "district": "11",
    "committee": "Missourians For Shields",
-   "contributions": 48710.5
+   "contributions": 48921.0
   },
   {
-   "name": "Victor Allred",
+   "name": "Nola Wood",
    "party": "R",
    "chamber": "house",
-   "district": "13",
-   "committee": "Missourians For Vic Allred",
-   "contributions": 11620.0
+   "district": "36",
+   "committee": "Friends of Nola Wood",
+   "contributions": 4505.14
+  },
+  {
+   "name": "Kevin Windham",
+   "party": "D",
+   "chamber": "house",
+   "district": "85",
+   "committee": "Friends For Windham",
+   "contributions": 18912.92
+  },
+  {
+   "name": "Keri Ingle",
+   "party": "D",
+   "chamber": "house",
+   "district": "35",
+   "committee": "Committee To Elect Keri Ingle",
+   "contributions": 100850.01
+  },
+  {
+   "name": "Alan Gray",
+   "party": "D",
+   "chamber": "house",
+   "district": "75",
+   "committee": "Citizens To Elect Alan Gray",
+   "contributions": 13464.61
+  },
+  {
+   "name": "Trish Gunby",
+   "party": "D",
+   "chamber": "house",
+   "district": "99",
+   "committee": "Friends of Trish Gunby",
+   "contributions": 328367.41
+  },
+  {
+   "name": "Suzie Pollock",
+   "party": "R",
+   "chamber": "house",
+   "district": "123",
+   "committee": "Friends Of Suzie Pollock",
+   "contributions": 16400.6
+  },
+  {
+   "name": "William Falkner",
+   "party": "R",
+   "chamber": "house",
+   "district": "10",
+   "committee": "Citizens For Falkner",
+   "contributions": 26141.0
+  },
+  {
+   "name": "Darrell Atchison",
+   "party": "R",
+   "chamber": "house",
+   "district": "153",
+   "committee": "Citizens for Atchison ",
+   "contributions": 28851.4
+  },
+  {
+   "name": "Alex Riley",
+   "party": "R",
+   "chamber": "house",
+   "district": "134",
+   "committee": "Alex Riley for State Representative ",
+   "contributions": 68915.33
+  },
+  {
+   "name": "Vicke Kepling",
+   "party": "G",
+   "chamber": "house",
+   "district": "135",
+   "committee": "Vicke Kepling For MO 135",
+   "contributions": 14688.24
+  },
+  {
+   "name": "Phil Christofanelli",
+   "party": "R",
+   "chamber": "house",
+   "district": "105",
+   "committee": "Friends Of Phil Christofanelli",
+   "contributions": 92718.86
+  },
+  {
+   "name": "Erica Hoffman",
+   "party": "D",
+   "chamber": "house",
+   "district": "96",
+   "committee": "Friends Of Erica Hoffman",
+   "contributions": 37179.13
+  },
+  {
+   "name": "Curtis Trent",
+   "party": "R",
+   "chamber": "house",
+   "district": "133",
+   "committee": "Friends Of Curtis Trent",
+   "contributions": 195022.0
+  },
+  {
+   "name": "Craig Fishel",
+   "party": "R",
+   "chamber": "house",
+   "district": "136",
+   "committee": "Craig Fishel For State Representative",
+   "contributions": 45671.0
+  },
+  {
+   "name": "Ron Hicks",
+   "party": "R",
+   "chamber": "house",
+   "district": "102",
+   "committee": "Friends Of Ron Hicks",
+   "contributions": 17055.0
+  },
+  {
+   "name": "Ed Lewis",
+   "party": "R",
+   "chamber": "house",
+   "district": "6",
+   "committee": "Friends for Ed Lewis",
+   "contributions": 16841.33
+  },
+  {
+   "name": "Mike Henderson",
+   "party": "R",
+   "chamber": "house",
+   "district": "117",
+   "committee": "Henderson For Missouri",
+   "contributions": 63113.24
+  },
+  {
+   "name": "Kimberly Collins",
+   "party": "D",
+   "chamber": "house",
+   "district": "77",
+   "committee": "Families For Kimberly-Ann Collins",
+   "contributions": 20832.85
+  },
+  {
+   "name": "Lauren Arthur",
+   "party": "D",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "Committee To Elect Lauren Arthur",
+   "contributions": 541717.07
+  },
+  {
+   "name": "Bruce DeGroot",
+   "party": "R",
+   "chamber": "house",
+   "district": "101",
+   "committee": "Citizens To Elect Bruce Degroot",
+   "contributions": 99134.09
+  },
+  {
+   "name": "JUSTIN HILL",
+   "party": "R",
+   "chamber": "house",
+   "district": "108",
+   "committee": "Hill For Missouri",
+   "contributions": 44406.0
+  },
+  {
+   "name": "Patricia Pike",
+   "party": "R",
+   "chamber": "house",
+   "district": "126",
+   "committee": "Patricia Pike For State Representative-126",
+   "contributions": 16450.0
+  },
+  {
+   "name": "David Evans",
+   "party": "R",
+   "chamber": "house",
+   "district": "154",
+   "committee": "Committee To Elect David Evans",
+   "contributions": 20571.0
+  },
+  {
+   "name": "Theresa Schmitt",
+   "party": "D",
+   "chamber": "house",
+   "district": "120",
+   "committee": "Citizens For Theresa Schmitt",
+   "contributions": null
+  },
+  {
+   "name": "Jacque Sample",
+   "party": "D",
+   "chamber": "house",
+   "district": "44",
+   "committee": "Jacque Sample for Missouri",
+   "contributions": 31054.25
+  },
+  {
+   "name": "Dorothy Bailey",
+   "party": "R",
+   "chamber": "house",
+   "district": "110",
+   "committee": "Dottie Bailey For Missouri ",
+   "contributions": 44672.0
+  },
+  {
+   "name": "Adrian Plank",
+   "party": "D",
+   "chamber": "house",
+   "district": "47",
+   "committee": "Friends Of Adrian Plank",
+   "contributions": 48374.52
   },
   {
    "name": "Jeff Munzinger",
@@ -1667,15 +971,711 @@
    "chamber": "house",
    "district": "136",
    "committee": "Munzinger For Missouri 136",
-   "contributions": 75377.25
+   "contributions": 69967.82
   },
   {
-   "name": "Nancy Ragan",
+   "name": "Randy Pietzman",
+   "party": "R",
+   "chamber": "house",
+   "district": "41",
+   "committee": "Pietzman For The People",
+   "contributions": 5149.0
+  },
+  {
+   "name": "Yvonne Chong",
    "party": "D",
    "chamber": "house",
-   "district": "62",
-   "committee": "Nancy J. Ragan",
+   "district": "122",
+   "committee": "Yvonne Reeves Chong for Us Committee",
+   "contributions": 9408.15
+  },
+  {
+   "name": "Tony Lovasco",
+   "party": "R",
+   "chamber": "house",
+   "district": "64",
+   "committee": "Citizens For Lovasco",
+   "contributions": 15084.0
+  },
+  {
+   "name": "Dirk Deaton",
+   "party": "R",
+   "chamber": "house",
+   "district": "159",
+   "committee": "Dirk Deaton For Missouri",
+   "contributions": 50459.0
+  },
+  {
+   "name": "Jeff Coleman",
+   "party": "R",
+   "chamber": "house",
+   "district": "32",
+   "committee": "Citizens For Jeff Coleman",
    "contributions": null
+  },
+  {
+   "name": "Rodger Reedy",
+   "party": "R",
+   "chamber": "house",
+   "district": "57",
+   "committee": "Friends Of Rodger L Reedy",
+   "contributions": 24990.0
+  },
+  {
+   "name": "Derrick Nowlin",
+   "party": "D",
+   "chamber": "house",
+   "district": "134",
+   "committee": "Nowlin For The 134th",
+   "contributions": 15783.44
+  },
+  {
+   "name": "Tom Hannegan",
+   "party": "R",
+   "chamber": "house",
+   "district": "65",
+   "committee": "Hannegan For State Representative",
+   "contributions": 37257.0
+  },
+  {
+   "name": "Nick Schroer",
+   "party": "R",
+   "chamber": "house",
+   "district": "107",
+   "committee": "Friends Of Nick Schroer",
+   "contributions": 82585.0
+  },
+  {
+   "name": "John Black",
+   "party": "R",
+   "chamber": "house",
+   "district": "137",
+   "committee": "Committee To Elect John Black",
+   "contributions": 43211.0
+  },
+  {
+   "name": "CHERI REISCH",
+   "party": "R",
+   "chamber": "house",
+   "district": "44",
+   "committee": "Citizens For Cheri Toalson Reisch",
+   "contributions": 36294.0
+  },
+  {
+   "name": "Rory Rowland",
+   "party": "N",
+   "chamber": "house",
+   "district": "29",
+   "committee": "Friends Of Rory Rowland",
+   "contributions": 23684.65
+  },
+  {
+   "name": "Doug Clemens",
+   "party": "D",
+   "chamber": "house",
+   "district": "72",
+   "committee": "Committee To Elect Doug Clemens",
+   "contributions": 41263.84
+  },
+  {
+   "name": "Michael Hebron",
+   "party": "R",
+   "chamber": "senate",
+   "district": "5",
+   "committee": "Michael Hebron - A Voice For All",
+   "contributions": 833.0
+  },
+  {
+   "name": "Victor Allred",
+   "party": "R",
+   "chamber": "house",
+   "district": "13",
+   "committee": "Missourians For Vic Allred",
+   "contributions": 10620.0
+  },
+  {
+   "name": "Peggy McGaugh",
+   "party": "R",
+   "chamber": "house",
+   "district": "39",
+   "committee": "Friends Of Peggy McGaugh",
+   "contributions": 19000.0
+  },
+  {
+   "name": "Danny Busick",
+   "party": "R",
+   "chamber": "house",
+   "district": "3",
+   "committee": "Danny Busick 4 Rural MO",
+   "contributions": 7300.0
+  },
+  {
+   "name": "Jered Taylor",
+   "party": "R",
+   "chamber": "house",
+   "district": "139",
+   "committee": "Friends For Jered Taylor",
+   "contributions": 11972.75
+  },
+  {
+   "name": "Rob Vescovo",
+   "party": "R",
+   "chamber": "house",
+   "district": "112",
+   "committee": "Friends Of Rob Vescovo",
+   "contributions": 288986.87
+  },
+  {
+   "name": "Derek Grier",
+   "party": "N",
+   "chamber": "house",
+   "district": "100",
+   "committee": "Citizens For Derek Grier",
+   "contributions": 71946.7
+  },
+  {
+   "name": "Hannah Kelly",
+   "party": "R",
+   "chamber": "house",
+   "district": "141",
+   "committee": "Friends Of Hannah Kelly",
+   "contributions": 75465.5
+  },
+  {
+   "name": "Jeff Porter",
+   "party": "R",
+   "chamber": "house",
+   "district": "42",
+   "committee": "Patrons Of Jeff Porter",
+   "contributions": 51206.7
+  },
+  {
+   "name": "Charles Basye",
+   "party": "R",
+   "chamber": "house",
+   "district": "47",
+   "committee": "Friends For Chuck Basye",
+   "contributions": 81412.12
+  },
+  {
+   "name": "Margaret Nurrenbern",
+   "party": "D",
+   "chamber": "house",
+   "district": "15",
+   "committee": "Maggie Nurrenbern for Missouri",
+   "contributions": 101331.3
+  },
+  {
+   "name": "Karan Pujji",
+   "party": "R",
+   "chamber": "house",
+   "district": "88",
+   "committee": "KaranPujji.com",
+   "contributions": 3711.4
+  },
+  {
+   "name": "Herman Morse",
+   "party": "R",
+   "chamber": "house",
+   "district": "151",
+   "committee": "Southeast Missourians For Morse",
+   "contributions": 13450.0
+  },
+  {
+   "name": "Mike Moon",
+   "party": "R",
+   "chamber": "senate",
+   "district": "29",
+   "committee": "Mike Moon For Missouri",
+   "contributions": 165747.79
+  },
+  {
+   "name": "Robert Bromley",
+   "party": "R",
+   "chamber": "house",
+   "district": "162",
+   "committee": "Committee To Elect Bob Bromley",
+   "contributions": 15475.0
+  },
+  {
+   "name": "Doug Beck",
+   "party": "D",
+   "chamber": "senate",
+   "district": "1",
+   "committee": "Beck For Missouri",
+   "contributions": 680579.15
+  },
+  {
+   "name": "Tammy Harty",
+   "party": "D",
+   "chamber": "senate",
+   "district": "33",
+   "committee": "Tammy Harty for 33 District MO Senate",
+   "contributions": 16815.37
+  },
+  {
+   "name": "Wiley Price",
+   "party": "D",
+   "chamber": "house",
+   "district": "84",
+   "committee": "Committee to Elect Wiley Price IV",
+   "contributions": 17869.8
+  },
+  {
+   "name": "Adam Schwadron",
+   "party": "R",
+   "chamber": "house",
+   "district": "106",
+   "committee": "Citizens for Schwadron",
+   "contributions": 26499.33
+  },
+  {
+   "name": "Cyndi Buchheit-Courtway",
+   "party": "R",
+   "chamber": "house",
+   "district": "115",
+   "committee": "Buchheit-Courtway for Missouri",
+   "contributions": 49974.0
+  },
+  {
+   "name": "Michael O'Donnell",
+   "party": "R",
+   "chamber": "house",
+   "district": "95",
+   "committee": "O'DonnellForMissouri.com",
+   "contributions": 40238.98
+  },
+  {
+   "name": "William Eigel",
+   "party": "R",
+   "chamber": "senate",
+   "district": "23",
+   "committee": "Eigel For Missouri",
+   "contributions": 315846.8
+  },
+  {
+   "name": "Kurtis Gregory",
+   "party": "R",
+   "chamber": "house",
+   "district": "51",
+   "committee": "Citizens to Elect Kurtis Gregory",
+   "contributions": 50225.0
+  },
+  {
+   "name": "Elizabeth Fogle",
+   "party": "D",
+   "chamber": "house",
+   "district": "135",
+   "committee": "Fogle for Missouri",
+   "contributions": 149470.61
+  },
+  {
+   "name": "Shane Roden",
+   "party": "R",
+   "chamber": "house",
+   "district": "111",
+   "committee": "Citizens For Shane Roden",
+   "contributions": 11296.0
+  },
+  {
+   "name": "Joshua Hurlbert",
+   "party": "R",
+   "chamber": "house",
+   "district": "12",
+   "committee": "Hurlbert for Missouri",
+   "contributions": 26105.0
+  },
+  {
+   "name": "Judy Baker",
+   "party": "D",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "Baker For Missouri",
+   "contributions": 490939.17
+  },
+  {
+   "name": "Kari Chesney",
+   "party": "D",
+   "chamber": "house",
+   "district": "50",
+   "committee": "Friends of Kari L Chesney",
+   "contributions": 27004.45
+  },
+  {
+   "name": "Chris Brown",
+   "party": "R",
+   "chamber": "house",
+   "district": "16",
+   "committee": "Chris Brown for Missouri House",
+   "contributions": 41062.0
+  },
+  {
+   "name": "Rick Roeber",
+   "party": "R",
+   "chamber": "house",
+   "district": "34",
+   "committee": "Committee to Elect Rick Roeber to the 34th",
+   "contributions": 19874.11
+  },
+  {
+   "name": "Scott Cupps",
+   "party": "R",
+   "chamber": "house",
+   "district": "158",
+   "committee": "Cupps for House",
+   "contributions": 15450.26
+  },
+  {
+   "name": "William Heisse",
+   "party": "R",
+   "chamber": "house",
+   "district": "92",
+   "committee": "Citizens to Elect Bill Heisse",
+   "contributions": 6866.0
+  },
+  {
+   "name": "Lisa Thomas",
+   "party": "R",
+   "chamber": "house",
+   "district": "124",
+   "committee": "Citizens 4 Dr. Lisa Thomas",
+   "contributions": 33082.1
+  },
+  {
+   "name": "Theresa Schmitt",
+   "party": "D",
+   "chamber": "house",
+   "district": "120",
+   "committee": "Citizens For Theresa Schmitt",
+   "contributions": 7409.65
+  },
+  {
+   "name": "Raymond Lampert",
+   "party": "D",
+   "chamber": "house",
+   "district": "137",
+   "committee": "Citizens For Raymond Lampert",
+   "contributions": 4239.61
+  },
+  {
+   "name": "Richard Orr",
+   "party": "D",
+   "chamber": "senate",
+   "district": "23",
+   "committee": "Richard Orr for Missouri Senate District 23",
+   "contributions": 21606.45
+  },
+  {
+   "name": "Terrence Fiala",
+   "party": "D",
+   "chamber": "house",
+   "district": "6",
+   "committee": "Fiala for Missouri",
+   "contributions": 3672.43
+  },
+  {
+   "name": "Emma Jean Pretto",
+   "party": "D",
+   "chamber": "house",
+   "district": "94",
+   "committee": "Committee to Elect Jean Pretto",
+   "contributions": 77791.61
+  },
+  {
+   "name": "Jessica DeVoto",
+   "party": "D",
+   "chamber": "house",
+   "district": "104",
+   "committee": "Jessica DeVoto For Missouri",
+   "contributions": 8136.68
+  },
+  {
+   "name": "Neil Smith",
+   "party": "D",
+   "chamber": "house",
+   "district": "67",
+   "committee": "Citizens to Elect Neil Smith",
+   "contributions": 9734.65
+  },
+  {
+   "name": "Brian Seitz",
+   "party": "R",
+   "chamber": "house",
+   "district": "156",
+   "committee": "The Seitz Conservative Coalition",
+   "contributions": 15475.0
+  },
+  {
+   "name": "Ann Zimpfer",
+   "party": "D",
+   "chamber": "house",
+   "district": "95",
+   "committee": "Committee to Elect Ann Zimpfer",
+   "contributions": 36695.46
+  },
+  {
+   "name": "Victor Abundis",
+   "party": "D",
+   "chamber": "house",
+   "district": "13",
+   "committee": "Friends For Vic Abundis",
+   "contributions": 14420.41
+  },
+  {
+   "name": "Ashley Aune",
+   "party": "D",
+   "chamber": "house",
+   "district": "14",
+   "committee": "Ashley Aune for Missouri",
+   "contributions": 69371.15
+  },
+  {
+   "name": "Allison Schoolcraft",
+   "party": "D",
+   "chamber": "house",
+   "district": "131",
+   "committee": "Committee to Elect Allison Schoolcraft",
+   "contributions": 2453.85
+  },
+  {
+   "name": "Bruce Sassmann",
+   "party": "R",
+   "chamber": "house",
+   "district": "62",
+   "committee": "Bruce Sassmann Election Committee",
+   "contributions": 20825.0
+  },
+  {
+   "name": "Mindi Smith",
+   "party": "D",
+   "chamber": "house",
+   "district": "2",
+   "committee": "Mindi Smith for Missouri",
+   "contributions": 3810.24
+  },
+  {
+   "name": "Eric Holmes",
+   "party": "R",
+   "chamber": "house",
+   "district": "14",
+   "committee": "Friends for Eric Holmes",
+   "contributions": 22864.0
+  },
+  {
+   "name": "Brenda McKinney",
+   "party": "D",
+   "chamber": "house",
+   "district": "158",
+   "committee": "McKinney in the House",
+   "contributions": 3132.35
+  },
+  {
+   "name": "Rickey Perry",
+   "party": "R",
+   "chamber": "house",
+   "district": "90",
+   "committee": "Perry For The People",
+   "contributions": 1846.0
+  },
+  {
+   "name": "Joshua Shackles",
+   "party": "D",
+   "chamber": "house",
+   "district": "161",
+   "committee": "Committee to Elect Joshua Shackles",
+   "contributions": null
+  },
+  {
+   "name": "Tony Dorsett",
+   "party": "D",
+   "chamber": "house",
+   "district": "117",
+   "committee": "Friends for Dorsett",
+   "contributions": 5822.65
+  },
+  {
+   "name": "Lisa Rees",
+   "party": "D",
+   "chamber": "house",
+   "district": "103",
+   "committee": "Committee to Elect Lisa Rees",
+   "contributions": 4025.41
+  },
+  {
+   "name": "James Kalberloh",
+   "party": "R",
+   "chamber": "house",
+   "district": "125",
+   "committee": "Friends to Elect Jim Kalberloh",
+   "contributions": 18215.0
+  },
+  {
+   "name": "Willard Haley",
+   "party": "R",
+   "chamber": "house",
+   "district": "58",
+   "committee": "Friends of Willard Haley",
+   "contributions": 15645.0
+  },
+  {
+   "name": "Gabriel Jones",
+   "party": "R",
+   "chamber": "house",
+   "district": "93",
+   "committee": "The Committee To Keep Up With Jones",
+   "contributions": 30301.59
+  },
+  {
+   "name": "Tracy Grundy",
+   "party": "D",
+   "chamber": "house",
+   "district": "102",
+   "committee": "Tracy Grundy for Missouri",
+   "contributions": 7356.56
+  },
+  {
+   "name": "Bridget Moore",
+   "party": "D",
+   "chamber": "house",
+   "district": "93",
+   "committee": "Citizens for Bridget Walsh Moore",
+   "contributions": 63936.24
+  },
+  {
+   "name": "Chris Sander",
+   "party": "R",
+   "chamber": "house",
+   "district": "33",
+   "committee": "Sander for Missouri",
+   "contributions": 10361.66
+  },
+  {
+   "name": "William Wayne",
+   "party": "L",
+   "chamber": "house",
+   "district": "51",
+   "committee": "Vote 4 Bill Wayne 2020",
+   "contributions": 2006.13
+  },
+  {
+   "name": "David Lenihan",
+   "party": "R",
+   "chamber": "senate",
+   "district": "1",
+   "committee": "David Lenihan for Senate.com",
+   "contributions": 97185.0
+  },
+  {
+   "name": "Michael Davis",
+   "party": "R",
+   "chamber": "house",
+   "district": "56",
+   "committee": "Friends of Michael Davis",
+   "contributions": 11773.33
+  },
+  {
+   "name": "Sarah Semple",
+   "party": "R",
+   "chamber": "house",
+   "district": "132",
+   "committee": "Semple For State Assembly",
+   "contributions": 3200.0
+  },
+  {
+   "name": "John Boyd",
+   "party": "R",
+   "chamber": "house",
+   "district": "37",
+   "committee": "Boyd For Missouri",
+   "contributions": 3354.45
+  },
+  {
+   "name": "Christine Hyman",
+   "party": "D",
+   "chamber": "house",
+   "district": "105",
+   "committee": "Friends of Christine Hyman for Missouri",
+   "contributions": 44150.25
+  },
+  {
+   "name": "William Betteridge",
+   "party": "D",
+   "chamber": "house",
+   "district": "48",
+   "committee": "Betteridge for House",
+   "contributions": 10273.65
+  },
+  {
+   "name": "Ronald Copeland",
+   "party": "R",
+   "chamber": "house",
+   "district": "143",
+   "committee": "Citizens for Ron Copeland",
+   "contributions": 33387.25
+  },
+  {
+   "name": "Rhonda Dolan",
+   "party": "D",
+   "chamber": "house",
+   "district": "31",
+   "committee": "Dolan for Missouri",
+   "contributions": 63486.61
+  },
+  {
+   "name": "Colby Murphy",
+   "party": "D",
+   "chamber": "house",
+   "district": "10",
+   "committee": "Citizens for Colby Murphy",
+   "contributions": 9450.41
+  },
+  {
+   "name": "Barbara Phifer",
+   "party": "D",
+   "chamber": "house",
+   "district": "90",
+   "committee": "Citizens for Phifer",
+   "contributions": 51847.93
+  },
+  {
+   "name": "Wade Kiefer",
+   "party": "D",
+   "chamber": "house",
+   "district": "12",
+   "committee": "Committee to Elect Wade Kiefer",
+   "contributions": 22045.61
+  },
+  {
+   "name": "Tim Taylor",
+   "party": "R",
+   "chamber": "house",
+   "district": "48",
+   "committee": "Citizens for Tim Taylor",
+   "contributions": 30602.0
+  },
+  {
+   "name": "David Martin",
+   "party": "R",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "Citizens for David Martin",
+   "contributions": 2360.0
+  },
+  {
+   "name": "Cynthia Berne",
+   "party": "D",
+   "chamber": "house",
+   "district": "106",
+   "committee": "Committee To Elect Cindy Berne 2020",
+   "contributions": 80627.07
+  },
+  {
+   "name": "Chad Perkins",
+   "party": "R",
+   "chamber": "house",
+   "district": "40",
+   "committee": "ChadPerkins4Missouri",
+   "contributions": 25460.7
   },
   {
    "name": "Brady O'Dell",
@@ -1686,100 +1686,52 @@
    "contributions": 1541.51
   },
   {
-   "name": "Derrick Nowlin",
+   "name": "Susan Shumway",
    "party": "D",
    "chamber": "house",
-   "district": "134",
-   "committee": "Nowlin For The 134th",
-   "contributions": 10207.91
+   "district": "108",
+   "committee": "Friends of Shumway",
+   "contributions": 5477.53
   },
   {
-   "name": "Michael O'Donnell",
-   "party": "R",
-   "chamber": "house",
-   "district": "95",
-   "committee": "O'DonnellForMissouri.com",
-   "contributions": 40215.0
-  },
-  {
-   "name": "Patricia Pike",
-   "party": "R",
-   "chamber": "house",
-   "district": "126",
-   "committee": "Patricia Pike For State Representative-126",
-   "contributions": 16246.75
-  },
-  {
-   "name": "Jeff Porter",
-   "party": "R",
-   "chamber": "house",
-   "district": "42",
-   "committee": "Patrons Of Jeff Porter",
-   "contributions": 49611.0
-  },
-  {
-   "name": "Jonathan Patterson",
-   "party": "R",
-   "chamber": "house",
-   "district": "30",
-   "committee": "Patterson For Missouri",
-   "contributions": 125794.89
-  },
-  {
-   "name": "Rickey Perry",
-   "party": "R",
-   "chamber": "house",
-   "district": "90",
-   "committee": "Perry For The People",
-   "contributions": 1821.0
-  },
-  {
-   "name": "Peter Merideth",
+   "name": "Luke Barber",
    "party": "D",
-   "chamber": "house",
-   "district": "80",
-   "committee": "Peter Merideth For Mo Progress",
-   "contributions": 35555.1
-  },
-  {
-   "name": "Randy Pietzman",
-   "party": "R",
-   "chamber": "house",
-   "district": "41",
-   "committee": "Pietzman For The People",
-   "contributions": 5424.0
-  },
-  {
-   "name": "Lee Pitman",
-   "party": "R",
-   "chamber": "house",
-   "district": "99",
-   "committee": "Pitman For Missouri",
-   "contributions": 42555.479999999996
-  },
-  {
-   "name": "Dean Plocher",
-   "party": "R",
    "chamber": "house",
    "district": "89",
-   "committee": "Plocher For Missouri",
-   "contributions": 215402.05
+   "committee": "Elect Luke Barber",
+   "contributions": 5654.99
   },
   {
-   "name": "Bradley Pollitt",
+   "name": "Scott Cazadd",
    "party": "R",
    "chamber": "house",
-   "district": "52",
-   "committee": "Pollitt For State Senate",
-   "contributions": null
+   "district": "69",
+   "committee": "Friends of Scott Cazadd",
+   "contributions": 3300.0
   },
   {
-   "name": "Nancy Ragan",
+   "name": "Angie Schaefer",
    "party": "D",
    "chamber": "house",
-   "district": "62",
-   "committee": "Ragan for State Representative #62",
-   "contributions": 7804.88
+   "district": "98",
+   "committee": "Friends of Angie Schaefer",
+   "contributions": 12779.61
+  },
+  {
+   "name": "Angela Thomas",
+   "party": "D",
+   "chamber": "house",
+   "district": "160",
+   "committee": "Angela Thomas District 160",
+   "contributions": 4361.68
+  },
+  {
+   "name": "Tricia Derges",
+   "party": "R",
+   "chamber": "house",
+   "district": "140",
+   "committee": "Citizens For Derges",
+   "contributions": 9800.0
   },
   {
    "name": "Randall Railsback",
@@ -1787,183 +1739,7 @@
    "chamber": "house",
    "district": "8",
    "committee": "Railsback for Missouri",
-   "contributions": 32516.91
-  },
-  {
-   "name": "Richard Mckie",
-   "party": "",
-   "chamber": "house",
-   "district": "29",
-   "committee": "Richard Mckie",
-   "contributions": null
-  },
-  {
-   "name": "Louis Riggs",
-   "party": "R",
-   "chamber": "house",
-   "district": "5",
-   "committee": "Riggs For Missouri",
-   "contributions": 33144.56
-  },
-  {
-   "name": "Rudy Veit",
-   "party": "R",
-   "chamber": "house",
-   "district": "59",
-   "committee": "Rudy Veit For State Senate",
-   "contributions": null
-  },
-  {
-   "name": "Chris Sander",
-   "party": "R",
-   "chamber": "house",
-   "district": "33",
-   "committee": "Sander for Missouri",
-   "contributions": 10745.06
-  },
-  {
-   "name": "Adam Schnelting",
-   "party": "R",
-   "chamber": "house",
-   "district": "104",
-   "committee": "Schnelting For Missouri",
-   "contributions": 37370.85
-  },
-  {
-   "name": "Sean Smith",
-   "party": "R",
-   "chamber": "house",
-   "district": "35",
-   "committee": "Sean Smith for Missouri",
-   "contributions": null
-  },
-  {
-   "name": "Sarah Semple",
-   "party": "R",
-   "chamber": "house",
-   "district": "132",
-   "committee": "Semple For State Assembly",
-   "contributions": 3100.0
-  },
-  {
-   "name": "Mark Sharp",
-   "party": "D",
-   "chamber": "house",
-   "district": "36",
-   "committee": "Sharp For Council",
-   "contributions": null
-  },
-  {
-   "name": "Gregory Sharpe",
-   "party": "R",
-   "chamber": "house",
-   "district": "4",
-   "committee": "Sharpe For Missouri",
-   "contributions": null
-  },
-  {
-   "name": "Connie Simmons",
-   "party": "D",
-   "chamber": "house",
-   "district": "53",
-   "committee": "Simmons 4 House",
-   "contributions": 3633.24
-  },
-  {
-   "name": "Herman Morse",
-   "party": "R",
-   "chamber": "house",
-   "district": "151",
-   "committee": "Southeast Missourians For Morse",
-   "contributions": 7230.0
-  },
-  {
-   "name": "Stephen Johnson",
-   "party": "L",
-   "chamber": "house",
-   "district": "88",
-   "committee": "Stephen R. Johnson",
-   "contributions": null
-  },
-  {
-   "name": "Michael Stephens",
-   "party": "R",
-   "chamber": "house",
-   "district": "128",
-   "committee": "Stephens For State Rep",
-   "contributions": 34600.0
-  },
-  {
-   "name": "John West",
-   "party": "R",
-   "chamber": "house",
-   "district": "15",
-   "committee": "SteveWest4Missouri",
-   "contributions": 30905.98
-  },
-  {
-   "name": "Ben Baker",
-   "party": "R",
-   "chamber": "house",
-   "district": "160",
-   "committee": "The Committee to Elect Ben Baker",
-   "contributions": null
-  },
-  {
-   "name": "James Shackelford",
-   "party": "D",
-   "chamber": "house",
-   "district": "16",
-   "committee": "The Committee to Elect James Shackelford",
-   "contributions": 57621.63
-  },
-  {
-   "name": "Steve Butz",
-   "party": "D",
-   "chamber": "house",
-   "district": "81",
-   "committee": "The Committee To Elect Steve Butz",
-   "contributions": 43898.44
-  },
-  {
-   "name": "Gabriel Jones",
-   "party": "R",
-   "chamber": "house",
-   "district": "93",
-   "committee": "The Committee To Keep Up With Jones",
-   "contributions": 16377.77
-  },
-  {
-   "name": "Brian Seitz",
-   "party": "R",
-   "chamber": "house",
-   "district": "156",
-   "committee": "The Seitz Conservative Coalition",
-   "contributions": 15978.57
-  },
-  {
-   "name": "Timothy Gartin",
-   "party": "R",
-   "chamber": "house",
-   "district": "78",
-   "committee": "Timothy Gartin",
-   "contributions": null
-  },
-  {
-   "name": "Tracy Grundy",
-   "party": "D",
-   "chamber": "house",
-   "district": "102",
-   "committee": "Tracy Grundy for Missouri",
-   "contributions": 6141.77
-  },
-  {
-   "name": "Sarah Unsicker",
-   "party": "D",
-   "chamber": "house",
-   "district": "91",
-   "committee": "Unsicker For Missouri",
-   "contributions": null
+   "contributions": 32337.2
   },
   {
    "name": "Daniel Cherry",
@@ -1974,28 +1750,76 @@
    "contributions": 2863.65
   },
   {
-   "name": "Vicke Kepling",
-   "party": "G",
-   "chamber": "house",
-   "district": "135",
-   "committee": "Vicke Kepling For MO 135",
-   "contributions": 12463.69
+   "name": "Raymond Kinney",
+   "party": "D",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "Elect Raymond Kinney",
+   "contributions": 16463.0
   },
   {
-   "name": "Vicki Riley",
-   "party": "R",
-   "chamber": "house",
-   "district": "21",
-   "committee": "Vicki Riley",
-   "contributions": null
-  },
-  {
-   "name": "Victoria Witt Datt",
+   "name": "Aaron Hailey",
    "party": "D",
    "chamber": "house",
-   "district": "107",
-   "committee": "Victoria Witt Datt",
-   "contributions": null
+   "district": "163",
+   "committee": "Empower Missourians Hailey",
+   "contributions": 858.24
+  },
+  {
+   "name": "Marlon Anderson",
+   "party": "D",
+   "chamber": "house",
+   "district": "76",
+   "committee": "Committee to Elect Marlon Anderson",
+   "contributions": 21588.46
+  },
+  {
+   "name": "Marvin Manring",
+   "party": "D",
+   "chamber": "house",
+   "district": "128",
+   "committee": "Manring4MO128",
+   "contributions": 16383.53
+  },
+  {
+   "name": "Annette Turnbaugh",
+   "party": "D",
+   "chamber": "house",
+   "district": "37",
+   "committee": "Citizens for Annette Turnbaugh",
+   "contributions": 46997.67
+  },
+  {
+   "name": "Chris Hager",
+   "party": "D",
+   "chamber": "house",
+   "district": "34",
+   "committee": "Chris Hager for Missouri",
+   "contributions": 20240.65
+  },
+  {
+   "name": "Karen Planalp",
+   "party": "D",
+   "chamber": "house",
+   "district": "9",
+   "committee": "Committee to Elect Karen Planalp",
+   "contributions": 5963.22
+  },
+  {
+   "name": "Nola Wood",
+   "party": "R",
+   "chamber": "house",
+   "district": "36",
+   "committee": "Friends of Nola Wood",
+   "contributions": 5087.21
+  },
+  {
+   "name": "Robert Crump",
+   "party": "R",
+   "chamber": "house",
+   "district": "82",
+   "committee": "Crump 2020",
+   "contributions": 1100.0
   },
   {
    "name": "Brandt Vircks",
@@ -2003,231 +1827,103 @@
    "chamber": "house",
    "district": "17",
    "committee": "Vircks Election Committee",
-   "contributions": 1281.0
+   "contributions": 1353.0
   },
   {
-   "name": "William Wayne",
-   "party": "L",
-   "chamber": "house",
-   "district": "51",
-   "committee": "Vote 4 Bill Wayne 2020",
-   "contributions": 2235.13
-  },
-  {
-   "name": "Emily Weber",
+   "name": "Bill Otto",
    "party": "D",
    "chamber": "house",
-   "district": "24",
-   "committee": "Voters for Emily Weber",
-   "contributions": null
+   "district": "65",
+   "committee": "Committee to Elect Bill Otto",
+   "contributions": 74312.61
   },
   {
-   "name": "Patricia Lewis",
-   "party": "D",
-   "chamber": "house",
-   "district": "25",
-   "committee": "Voters for Patty Lewis",
-   "contributions": 82179.20999999999
-  },
-  {
-   "name": "Helena Webb",
-   "party": "D",
-   "chamber": "house",
-   "district": "100",
-   "committee": "Webb For House Rep",
-   "contributions": 87289.91
-  },
-  {
-   "name": "William Wayne",
-   "party": "L",
-   "chamber": "house",
-   "district": "51",
-   "committee": "William Truman (Bill) Wayne",
-   "contributions": null
-  },
-  {
-   "name": "Dale Wright",
+   "name": "Jerry Adzima",
    "party": "R",
    "chamber": "house",
-   "district": "116",
-   "committee": "Wright For Missouri",
-   "contributions": 51669.42
+   "district": "70",
+   "committee": "Friends of Jerry Adzima",
+   "contributions": 5680.0
   },
   {
-   "name": "Yvonne Chong",
+   "name": "Darlene Graham",
    "party": "D",
    "chamber": "house",
-   "district": "122",
-   "committee": "Yvonne Reeves Chong for Us Committee",
-   "contributions": 11349.15
+   "district": "139",
+   "committee": "Graham for 139 MO Dist Rep",
+   "contributions": 1206.41
   },
   {
-   "name": "Judy Baker",
+   "name": "Arthur Schaaf",
    "party": "D",
-   "chamber": "senate",
-   "district": "19",
-   "committee": "Baker For Missouri",
-   "contributions": 475362.19
+   "chamber": "house",
+   "district": "30",
+   "committee": "ArtSchaaf4MO30",
+   "contributions": 8687.21
   },
   {
-   "name": "Jason Bean",
-   "party": "R",
-   "chamber": "senate",
-   "district": "25",
-   "committee": "Bean For Missouri",
-   "contributions": null
-  },
-  {
-   "name": "Doug Beck",
+   "name": "Terry Burgess",
    "party": "D",
-   "chamber": "senate",
-   "district": "1",
-   "committee": "Beck For Missouri",
-   "contributions": 667254.39
+   "chamber": "house",
+   "district": "113",
+   "committee": "Burgess 4 Missouri",
+   "contributions": 26589.41
   },
   {
-   "name": "James Coyne",
-   "party": "W",
-   "chamber": "senate",
-   "district": "19",
-   "committee": "Citizens for Coyne",
-   "contributions": 3118.4
-  },
-  {
-   "name": "David Martin",
-   "party": "R",
-   "chamber": "senate",
-   "district": "9",
-   "committee": "Citizens for David Martin",
-   "contributions": 2430.0
-  },
-  {
-   "name": "Elaine Gannon",
-   "party": "R",
-   "chamber": "senate",
-   "district": "3",
-   "committee": "Citizens For Elaine Gannon",
-   "contributions": 178687.97
-  },
-  {
-   "name": "DENNY HOSKINS",
-   "party": "R",
-   "chamber": "senate",
-   "district": "21",
-   "committee": "Citizens For Hoskins",
-   "contributions": 180540.2
-  },
-  {
-   "name": "Angela Mosley",
+   "name": "Edwin Hogan",
    "party": "D",
+   "chamber": "house",
+   "district": "126",
+   "committee": "Hogan for Representative",
+   "contributions": 2162.98
+  },
+  {
+   "name": "Michael Burton",
+   "party": "D",
+   "chamber": "house",
+   "district": "92",
+   "committee": "Friends of Michael Burton",
+   "contributions": 18084.53
+  },
+  {
+   "name": "Michael Hebron",
+   "party": "R",
    "chamber": "senate",
+   "district": "5",
+   "committee": "Michael Hebron - A Voice For All ",
+   "contributions": 1100.0
+  },
+  {
+   "name": "Joshua Dunne",
+   "party": "D",
+   "chamber": "house",
+   "district": "60",
+   "committee": "Joshua Dunne for Missouri",
+   "contributions": 7094.68
+  },
+  {
+   "name": "Sean Pouche",
+   "party": "R",
+   "chamber": "house",
    "district": "13",
-   "committee": "Citizens to Elect Angela Mosley, LLC",
-   "contributions": 73229.46
+   "committee": "Citizens for Sean Pouche",
+   "contributions": 14470.0
   },
   {
-   "name": "Lauren Arthur",
+   "name": "Nancy Ragan",
    "party": "D",
-   "chamber": "senate",
-   "district": "17",
-   "committee": "Committee To Elect Lauren Arthur",
-   "contributions": 497586.68
+   "chamber": "house",
+   "district": "62",
+   "committee": "Ragan for State Representative #62",
+   "contributions": 6139.65
   },
   {
-   "name": "David Lenihan",
-   "party": "R",
-   "chamber": "senate",
-   "district": "1",
-   "committee": "David Lenihan for Senate.com",
-   "contributions": 126999.08
-  },
-  {
-   "name": "Donnie Owens",
+   "name": "Aaliyah Bailey",
    "party": "D",
-   "chamber": "senate",
-   "district": "27",
-   "committee": "Donnie Owens",
-   "contributions": null
-  },
-  {
-   "name": "William Eigel",
-   "party": "R",
-   "chamber": "senate",
-   "district": "23",
-   "committee": "Eigel For Missouri",
-   "contributions": 349534.05
-  },
-  {
-   "name": "Raymond Kinney",
-   "party": "D",
-   "chamber": "senate",
-   "district": "31",
-   "committee": "Elect Raymond Kinney",
-   "contributions": 15638.5
-  },
-  {
-   "name": "Andrew Koenig",
-   "party": "R",
-   "chamber": "senate",
-   "district": "15",
-   "committee": "Friends Of Andrew Koenig",
-   "contributions": 419601.89999999997
-  },
-  {
-   "name": "CALEB ROWDEN",
-   "party": "R",
-   "chamber": "senate",
-   "district": "19",
-   "committee": "Friends Of Caleb Rowden",
-   "contributions": 596190.91
-  },
-  {
-   "name": "Holly Rehder",
-   "party": "R",
-   "chamber": "senate",
-   "district": "27",
-   "committee": "Friends Of Holly Rehder",
-   "contributions": 320014.16000000003
-  },
-  {
-   "name": "Rick Brattin",
-   "party": "R",
-   "chamber": "senate",
-   "district": "31",
-   "committee": "Friends Of Rick Brattin",
-   "contributions": 210348.82
-  },
-  {
-   "name": "Jeff Coleman",
-   "party": "L",
-   "chamber": "senate",
-   "district": "13",
-   "committee": "Jeff Coleman",
-   "contributions": null
-  },
-  {
-   "name": "Jorge Fuller",
-   "party": "I",
-   "chamber": "senate",
-   "district": "7",
-   "committee": "Jorge Fuller",
-   "contributions": null
-  },
-  {
-   "name": "Karla Eslinger",
-   "party": "R",
-   "chamber": "senate",
-   "district": "33",
-   "committee": "KarlaEslingerForMissouri.com",
-   "contributions": null
-  },
-  {
-   "name": "Deb Lavender",
-   "party": "D",
-   "chamber": "senate",
-   "district": "15",
-   "committee": "Lavender For Missouri",
-   "contributions": null
+   "chamber": "house",
+   "district": "64",
+   "committee": "Aaliyah Bailey for Missouri",
+   "contributions": 19026.69
   },
   {
    "name": "Mark Bliss",
@@ -2235,23 +1931,87 @@
    "chamber": "senate",
    "district": "21",
    "committee": "Mark Bliss for Senate",
-   "contributions": 56.0
+   "contributions": 59.0
   },
   {
-   "name": "Michael Hebron",
+   "name": "Dean VanSchoiack",
    "party": "R",
-   "chamber": "senate",
-   "district": "5",
-   "committee": "Michael Hebron - A Voice For All",
-   "contributions": 4416.25
+   "chamber": "house",
+   "district": "9",
+   "committee": "Citizens for Dean VanSchoiack",
+   "contributions": 51682.0
   },
   {
-   "name": "Mike Moon",
-   "party": "R",
+   "name": "Aaron Mais",
+   "party": "I",
+   "chamber": "house",
+   "district": "53",
+   "committee": "Aaron C. Mais Campaign Fund",
+   "contributions": 7275.0
+  },
+  {
+   "name": "Cynthia Nugent",
+   "party": "D",
+   "chamber": "house",
+   "district": "115",
+   "committee": "Committee to Elect Cynthia Nugent",
+   "contributions": 5132.59
+  },
+  {
+   "name": "Dale Speelman",
+   "party": "D",
+   "chamber": "house",
+   "district": "156",
+   "committee": "Committee to Elect Dale Speelman",
+   "contributions": 839.61
+  },
+  {
+   "name": "Connie Simmons",
+   "party": "D",
+   "chamber": "house",
+   "district": "53",
+   "committee": "Simmons 4 House",
+   "contributions": 3959.85
+  },
+  {
+   "name": "Patrick Bellew",
+   "party": "C",
+   "chamber": "house",
+   "district": "123",
+   "committee": "Committee To Elect Pat Bellew",
+   "contributions": 100.0
+  },
+  {
+   "name": "James Coyne",
+   "party": "W",
    "chamber": "senate",
-   "district": "29",
-   "committee": "Mike Moon For Missouri",
-   "contributions": 170998.79
+   "district": "19",
+   "committee": "Citizens for Coyne",
+   "contributions": 3163.4
+  },
+  {
+   "name": "Neal Barnes",
+   "party": "D",
+   "chamber": "house",
+   "district": "56",
+   "committee": "Committee to Elect Neal Barnes",
+   "contributions": 19574.33
+  },
+  {
+   "name": "Dewanna Marquez",
+   "party": "D",
+   "chamber": "house",
+   "district": "129",
+   "committee": "Citizens for Dee Marquez",
+   "contributions": 1439.65
+  },
+  {
+   "name": "Johanna Doll",
+   "party": "D",
+   "chamber": "house",
+   "district": "83",
+   "committee": "Doll for Missouri",
+   "contributions": 40154.58
   },
   {
    "name": "Michael Younghanz",
@@ -2259,14 +2019,14 @@
    "chamber": "senate",
    "district": "17",
    "committee": "MO4Mickey Younghanz",
-   "contributions": 18483.26
+   "contributions": 14769.0
   },
   {
-   "name": "Nathan Kline",
-   "party": "G",
-   "chamber": "senate",
-   "district": "7",
-   "committee": "Nathan Kline",
+   "name": "Joshua Shackles",
+   "party": "D",
+   "chamber": "house",
+   "district": "161",
+   "committee": "Committee to Elect Joshua Shackles",
    "contributions": null
   },
   {
@@ -2278,52 +2038,156 @@
    "contributions": null
   },
   {
-   "name": "GREG RAZER",
+   "name": "Mike Englert",
    "party": "D",
+   "chamber": "house",
+   "district": "20",
+   "committee": "Mike Englert for State Representative",
+   "contributions": 733.24
+  },
+  {
+   "name": "Daniel Karam",
+   "party": "G",
+   "chamber": "house",
+   "district": "37",
+   "committee": "Campaign to Elect Daniel Karam",
+   "contributions": 290.0
+  },
+  {
+   "name": "Marlene Terry",
+   "party": "D",
+   "chamber": "house",
+   "district": "66",
+   "committee": "Committee to Elect Marlene Terry",
+   "contributions": 6969.65
+  },
+  {
+   "name": "Michael Johnson",
+   "party": "D",
+   "chamber": "house",
+   "district": "23",
+   "committee": "Michael L Johnson for State Rep",
+   "contributions": 15937.65
+  },
+  {
+   "name": "Andrew Leighton",
+   "party": "D",
+   "chamber": "house",
+   "district": "147",
+   "committee": "Leighton For MO",
+   "contributions": 13864.3
+  },
+  {
+   "name": "Cameron Pack",
+   "party": "L",
+   "chamber": "house",
+   "district": "53",
+   "committee": "Cameron Pack",
+   "contributions": null
+  },
+  {
+   "name": "Nathan Kline",
+   "party": "G",
    "chamber": "senate",
    "district": "7",
-   "committee": "RAZER FOR MISSOURI",
-   "contributions": 205374.37
+   "committee": "Nathan Kline",
+   "contributions": null
   },
   {
-   "name": "Richard Orr",
+   "name": "Donnie Owens",
    "party": "D",
    "chamber": "senate",
-   "district": "23",
-   "committee": "Richard Orr for Missouri Senate District 23",
-   "contributions": 20114.45
+   "district": "27",
+   "committee": "Donnie Owens",
+   "contributions": null
   },
   {
-   "name": "John Rizzo",
-   "party": "D",
-   "chamber": "senate",
-   "district": "11",
-   "committee": "Rizzo For Missouri",
-   "contributions": 251090.1
+   "name": "Stephen Johnson",
+   "party": "L",
+   "chamber": "house",
+   "district": "88",
+   "committee": "Stephen R. Johnson",
+   "contributions": null
   },
   {
-   "name": "Steve Roberts",
+   "name": "Mike Lind",
    "party": "D",
-   "chamber": "senate",
-   "district": "5",
-   "committee": "Roberts For St Louis",
-   "contributions": 264184.8
+   "chamber": "house",
+   "district": "155",
+   "committee": "Mike Lind",
+   "contributions": null
   },
   {
-   "name": "Tammy Harty",
-   "party": "D",
-   "chamber": "senate",
-   "district": "33",
-   "committee": "Tammy Harty for 33 District MO Senate",
-   "contributions": 15956.279999999999
+   "name": "Sean Smith",
+   "party": "R",
+   "chamber": "house",
+   "district": "35",
+   "committee": "Sean Smith for Missouri",
+   "contributions": null
   },
   {
-   "name": "Barbara Washington",
-   "party": "D",
+   "name": "Vicki Riley",
+   "party": "R",
+   "chamber": "house",
+   "district": "21",
+   "committee": "Vicki Riley",
+   "contributions": null
+  },
+  {
+   "name": "Jorge Fuller",
+   "party": "I",
    "chamber": "senate",
-   "district": "9",
-   "committee": "Washington For Senate 9",
-   "contributions": 190235.05
+   "district": "7",
+   "committee": "Jorge Fuller",
+   "contributions": null
+  },
+  {
+   "name": "Jeff Coleman",
+   "party": "L",
+   "chamber": "senate",
+   "district": "13",
+   "committee": "Jeff Coleman",
+   "contributions": null
+  },
+  {
+   "name": "William Wayne",
+   "party": "L",
+   "chamber": "house",
+   "district": "51",
+   "committee": "William Truman (Bill) Wayne",
+   "contributions": null
+  },
+  {
+   "name": "Andrew Bolin",
+   "party": "L",
+   "chamber": "house",
+   "district": "83",
+   "committee": "Andrew Bolin ",
+   "contributions": null
+  },
+  {
+   "name": "Timothy Gartin",
+   "party": "R",
+   "chamber": "house",
+   "district": "78",
+   "committee": "Timothy Gartin",
+   "contributions": null
+  },
+  {
+   "name": "Mike Copeland",
+   "party": "L",
+   "chamber": "house",
+   "district": "107",
+   "committee": "Mike Copeland",
+   "contributions": null
+  },
+  {
+   "name": "Richard Mckie",
+   "party": "",
+   "chamber": "house",
+   "district": "29",
+   "committee": "Richard Mckie",
+   "contributions": null
   }
  ]
 }
