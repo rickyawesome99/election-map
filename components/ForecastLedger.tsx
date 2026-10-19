@@ -6,6 +6,7 @@ import { ELECTION_YEAR as electionYear } from "@/lib/electionYear";
 import type { ForecastSummary } from "@/lib/forecastTypes";
 import { getRatingColors, marginToRating, fmtMargin } from "@/lib/colorScale";
 import RaceTable, { CandidateName } from "./RaceTable";
+import { PAGE_TITLE_STYLE } from "@/lib/pageLayout";
 
 // ─────────────────────────────────────────────────────────────────────────
 // Flat race-type switcher — sits above the map as its own header (replaces
@@ -80,10 +81,7 @@ export function ForecastHero({
     <>
       {/* Mobile */}
       <div className="mb-4 md:hidden">
-        <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-          {electionYear} Midterms
-        </div>
-        <h1 className="mt-1 text-2xl font-bold tracking-tight" style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}>
+        <h1 style={{ ...PAGE_TITLE_STYLE, color: "var(--app-text-primary)" }}>
           {RACE_TYPE_TITLE[raceType]}
         </h1>
         <div className="mt-2 flex items-baseline gap-2">
@@ -119,17 +117,14 @@ export function ForecastHero({
 
       {/* Desktop — title, score, and race count on one line; the map does the rest of the talking */}
       <div className="mb-3 hidden md:block">
-        <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-          {electionYear} Midterms
-        </div>
-        <div className="mt-1 flex flex-wrap items-baseline gap-x-4 gap-y-1">
-          <h1 className="text-[1.65rem] font-bold tracking-tight" style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}>
+        <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+          <h1 style={{ ...PAGE_TITLE_STYLE, color: "var(--app-text-primary)" }}>
             {RACE_TYPE_TITLE[raceType]}
           </h1>
           <div className="flex items-baseline gap-1.5">
-            <span className="text-[1.4rem] font-bold tabular-nums" style={{ fontFamily: "var(--font-serif)", color: "var(--party-dem)" }}>{demSeats}</span>
+            <span className="text-[2rem] font-bold tabular-nums" style={{ fontFamily: "var(--font-serif)", color: "var(--party-dem)" }}>{demSeats}</span>
             <span style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-very-muted)" }}>&mdash;</span>
-            <span className="text-[1.4rem] font-bold tabular-nums" style={{ fontFamily: "var(--font-serif)", color: "var(--party-rep)" }}>{repSeats}</span>
+            <span className="text-[2rem] font-bold tabular-nums" style={{ fontFamily: "var(--font-serif)", color: "var(--party-rep)" }}>{repSeats}</span>
           </div>
           <span className="text-sm" style={{ color: "var(--app-text-muted)" }}>
             {seatsUp} {raceType === "house" ? "districts" : "races"}
@@ -296,11 +291,14 @@ export function KeyRaces({
   basePath,
   showSpecialBadge = false,
   count = 8,
+  twoColumn = false,
 }: {
   races: ForecastSummary[];
   basePath: string;
   showSpecialBadge?: boolean;
   count?: number;
+  /** Rows in two columns (the forecast page, where Key Races sits under the map). */
+  twoColumn?: boolean;
 }) {
   const key = useMemo(
     () => [...races].sort((a, b) => Math.abs(a.margin ?? 0) - Math.abs(b.margin ?? 0)).slice(0, count),
@@ -313,7 +311,9 @@ export function KeyRaces({
         <h3 className="font-mono text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-primary)" }}>Key Races</h3>
         <span className="text-[10px]" style={{ color: "var(--app-text-muted)" }}>{key.length}</span>
       </div>
-      {key.map((r) => <LedgerRow key={r.id} race={r} basePath={basePath} showSpecialBadge={showSpecialBadge} />)}
+      <div className={twoColumn ? "grid grid-cols-2 gap-x-8" : undefined}>
+        {key.map((r) => <LedgerRow key={r.id} race={r} basePath={basePath} showSpecialBadge={showSpecialBadge} />)}
+      </div>
     </div>
   );
 }

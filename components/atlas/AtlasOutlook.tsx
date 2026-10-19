@@ -127,7 +127,7 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
             <table className="w-full text-xs" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
               <thead>
                 <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  {["Race", "Lines", "Raw", "Relocation", "Incumbency", "Environment", "Neutral", "Weight"].map((h, i) => (
+                  {["Race", "Lines", "Raw", "Relocation", "Incumbency", "Environment", "Money", "Neutral", "Weight"].map((h, i) => (
                     <th key={h} className={`py-1.5 pr-3 text-[10px] uppercase tracking-wider font-semibold ${i >= 2 ? "text-right" : "text-left"}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
                   ))}
                 </tr>
@@ -143,6 +143,7 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
                     <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{r.relocated ? signed(r.presDelta) : "—"}</td>
                     <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{r.kind === "L" && r.incSign !== 0 ? signed(r.incPts) : "—"}</td>
                     <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{signed(r.envPts)}</td>
+                    <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }} title={r.kind === "L" ? "the race's money term, taken out of its margin (0 where either side's money is not on file)" : undefined}>{r.kind === "L" && r.moneyPts ? signed(-r.moneyPts) : "—"}</td>
                     <td className="py-1.5 pr-3 text-right font-semibold" style={{ color: marginText(r.NM) }}>{fmtM(r.NM)}</td>
                     <td className="py-1.5 pr-0 text-right" style={{ color: "var(--app-text-muted)" }}>{(r.weight * 100).toFixed(0)}%{r.huber < 1 && <span title="Huber-downweighted outlier" style={{ color: "var(--app-text-very-muted)" }}> ↓</span>}</td>
                   </tr>
@@ -158,6 +159,9 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
               { label: "Structural lean", note: "weighted neutral margins above", value: fmtM(pr.lean) },
               { label: `+ ${electionYear} environment`, note: `β* ${pr.beta.toFixed(2)} × E`, value: signed(pr.envPts) },
               { label: "+ Incumbency", note: pr.incSign === 0 ? "open seat or none marked" : pr.incSign > 0 ? "Republican incumbent" : "Democratic incumbent", value: signed(pr.incPts) },
+              { label: "+ Money", note: pr.money
+                ? `raised ${fmtM(pr.money.gapPct)}${pr.money.scale !== 1 ? ` (× ${pr.money.scale} to date)` : ""} vs ${fmtM(pr.money.structuralGapPct)} expected`
+                : "either side's money not on file: the typical gap for the seat", value: signed(pr.money?.pts ?? 0) },
             ].map((l) => (
               <div key={l.label} className="flex items-baseline gap-3 py-1" style={{ borderBottom: "1px solid var(--app-border)" }}>
                 <span className="font-semibold">{l.label}</span>

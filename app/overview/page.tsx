@@ -15,6 +15,9 @@ function seatTotals(data: { margin: number }[], holdover: { dem: number; rep: nu
   };
 }
 
+// The Overview's Key Races, hand-picked (user, 2026-10-18); shown closest projected margin first.
+const KEY_SENATE_IDS = ["TX-2", "OH-2", "ME-2", "IA", "AK", "MI-2"];
+
 const seatRange = (c: { meanDem: number; lo80: number; hi80: number }) => ({ mean: c.meanDem, lo80: c.lo80, hi80: c.hi80 });
 
 // Everything the editorial needs is computed here, on the server, and handed over as a few KB
@@ -30,8 +33,8 @@ export default function OverviewPage() {
     ...forecastsFor("house").map((race) => ({ race, type: "house" as const })),
   ];
   const keyRaces = withType
+    .filter(({ race, type }) => type === "senate" && KEY_SENATE_IDS.includes(race.id))
     .sort((a, b) => Math.abs(a.race.margin) - Math.abs(b.race.margin))
-    .slice(0, 5)
     .map(({ race, type }) => ({ type, id: race.id, name: race.name, state: race.state, margin: race.margin }));
 
   const data: OverviewData = {

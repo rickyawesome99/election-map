@@ -42,7 +42,7 @@ function YearTable({ aggs }: { aggs: YearAggregation[] }) {
   return (
     <DataTable align="rlrrrr" head={["Year", "Offices present", "Coverage", "Recency", "Final weight", "Year margin (WRS)"]}
       rows={present.map((a) => [a.year, a.racesPresent.map((t) => `${t} ${pct(a.redistributedWeights[t])}${t === "H" && (a.typeFactors?.H ?? 1) < 0.999 ? ` (Huber ×${a.typeFactors.H.toFixed(2)})` : ""}`).join(" · "), a.coverage.toFixed(2), (G.YEAR_WEIGHTS[a.year] ?? 0).toFixed(3), pct(a.finalWeight, 1), <M key="w" v={a.WRS} />])}
-      caption="Offices present shows each type's redistributed share within the year; a House year more than HUBER_C from the fitted lean shows its Huber factor. Final weight = recency × coverage, normalized over the years with data." />
+      caption="Offices present shows each type's redistributed share within the year; a House year more than HUBER_C from its anchor (the state's fitted lean; for a county, its statewide-rows lean) shows its Huber factor. Final weight = recency × coverage, normalized over the years with data." />
   );
 }
 
@@ -338,7 +338,8 @@ export function CountyTplMethodology() {
         lede={<>County TPL takes the same statewide races the {link("/methodology/state-tpl", "State TPL")} uses and reads them at county granularity. Every formula, strip and weight is the shared code path, so a change to the state model changes every county with it. It appears on each county page (Historical → a county) and feeds no forecast.</>}>
         <Formula lines={[
           "NM         = county Adjusted margin + incumbency strip + fundraising strip − β*(parent state) × E(year)",
-          "County TPL = the State TPL aggregation over the county's rows",
+          "anchor     = the State TPL aggregation over the county's President, Senate and Governor rows",
+          "County TPL = the State TPL aggregation over all the county's rows, each House year × min(1, HUBER_C / |House NM − anchor|)",
         ]} />
       </Section>
 
@@ -348,7 +349,7 @@ export function CountyTplMethodology() {
           { term: "House", def: "A county's House figure is a same-year aggregate across every district touching it, so there is no single incumbent or pair of candidates: no incumbency strip, no fundraising strip. A year counts as ineligible — and is imputed like any other — when one party drew no votes in the county (an unopposed race); a county split between a contested and an unopposed district stays eligible, since the aggregate has no per-district breakdown." },
           { term: "State Legislature", def: "Not included — no county-level legislature results." },
           { term: "Imputation", def: `An ineligible race (statewide, or an unopposed House year) is imputed from the COUNTY'S nearest presidential result, at weight ${IMPUTED_RACE_WEIGHT}, stripping the source year's environment.` },
-          { term: "No Huber weighting", def: "A county sitting far from its STATE's lean is not an outlier, it is a county. Only the imputed discount applies." },
+          { term: "Huber: House years only, against the county's own lean", def: `No statewide row is Huber-weighted: a county sitting far from its STATE's lean is not an outlier, it is a county. Each House year is checked as a whole instead, as in the state model, but against the county's own statewide lean (its President, Senate and Governor rows aggregated alone): the year's House weight × min(1, ${G.HUBER_C} / |House NM − that lean|). A county's House vote carries its local candidates — Cuellar won Zapata County, TX by D+34 in 2024 as Trump carried it by R+22 — and with no incumbency strip possible that gap entered at full weight. A county with no statewide rows keeps its House years unchecked.` },
           { term: "Elasticity", def: "The parent state's β*; no county elasticity is estimated." },
           { term: "Senate specials", def: "Special-election results live in a separate bucket of the county Senate data, so a regular and a special in one year each read their own margin." },
           { term: "No data", def: "Alaska (no county equivalents report results) and Kalawao County, HI have no rows; the county page says so rather than showing a fabricated EVEN." },

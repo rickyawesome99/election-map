@@ -1,9 +1,61 @@
 "use client";
 
-import type { RaceType } from "@/data/forecastData";
+import type { NoElectionEntry, RaceType } from "@/data/forecastData";
 import type { ForecastSummary } from "@/lib/forecastTypes";
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
+import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "./CountyTooltip";
 import { Theme } from "./ForecastMap";
+
+// The forecast map's popups, built on the county maps' CountyTooltip so every map on the site
+// shares one card: the hover tooltip, the floating selected-race card, and the same pair for a
+// state with no election this cycle.
+
+export function raceHref(raceType: RaceType, race: { name: string; id: string }) {
+  return `/${raceType}/${(raceType === "house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`;
+}
+
+export function ForecastRatingPill({ margin }: { margin: number }) {
+  const rating = marginToRating(margin);
+  const { bg, text } = getRatingColors(rating);
+  return <span className="whitespace-nowrap rounded-full px-2 py-0.5 text-[10px] font-semibold normal-case tracking-normal" style={{ background: bg, color: text }}>{rating}</span>;
+}
+
+/** A race's card: the projected margin as the headline, the two-party shares as the rows. */
+export function forecastCard(race: ForecastSummary): Extract<CountyTooltipProps, { kind: "result" }> {
+  const demPct = Math.max(0, Math.min(100, 50 - race.margin / 2));
+  const repPct = 100 - demPct;
+  const c = race.candidates;
+  return {
+    kind: "result",
+    title: race.name,
+    subtitle: "Projected margin",
+    margin: race.margin,
+    totalVotes: null,
+    dem: { name: c?.dem.name ?? "Democrat", party: "D", pct: demPct, votes: null, note: c?.dem.incumbent ? "Inc." : undefined },
+    rep: { name: c?.rep.name ?? "Republican", party: "R", pct: repPct, votes: null, note: c?.rep.incumbent ? "Inc." : undefined },
+  };
+}
+
+/** A state with no election: the incumbent as the headline, the next election as the message. */
+export function noElectionCard(entry: NoElectionEntry): Extract<CountyTooltipProps, { kind: "message" }> {
+  return {
+    kind: "message",
+    title: entry.state,
+    subtitle: "No election this cycle",
+    headline: { text: entry.incumbent, party: entry.party },
+    message: `Incumbent · next election ${entry.nextElection}`,
+  };
+}
+
+/** The floating box the selected cards sit in, bottom-right of the map (the national county map's). */
+export function ForecastCardBox({ theme: t, children }: { theme: Theme; children: React.ReactNode }) {
+  return (
+    <div className="absolute z-30 hidden rounded-xl backdrop-blur-sm md:block"
+      style={{ bottom: "1rem", right: "1rem", width: 210, padding: "8px 10px", background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 12px 28px rgba(0,0,0,0.25)" }}>
+      {children}
+    </div>
+  );
+}
 
 type Props = {
   selected: ForecastSummary | null;
@@ -12,120 +64,16 @@ type Props = {
   theme: Theme;
 };
 
-export default function Sidebar({ selected, raceType, onClose, theme: t }: Props) {
+export default function Sidebar({ selected, raceType, onClose, theme }: Props) {
   if (!selected) return null;
-
-  const demVoteShare = (100 - selected.margin) / 2;
-  const repVoteShare = (100 + selected.margin) / 2;
-  const forecastRating = marginToRating(selected.margin);
-  const { bg, text } = getRatingColors(forecastRating);
-  const marginIsD = selected.margin <= 0;
-  const panelSurface = t.legendBg;
-  const cardSurface = t.tabBg;
-
   return (
-    <>
-      {/* ── Desktop: floating selected-race panel ── */}
-      <div
-        className="absolute z-30 hidden flex-col overflow-hidden rounded-xl backdrop-blur-sm md:flex"
-        style={{
-          right: "1.25rem",
-          bottom: "12px",
-          width: 172,
-          maxHeight: 260,
-          background: panelSurface,
-          border: `1px solid ${t.border}`,
-          boxShadow: "0 10px 28px rgba(0,0,0,0.22)",
-          color: t.textPrimary,
-        }}
-      >
-        {/* Header */}
-        <div className="shrink-0 p-2 pb-1.5" style={{ borderBottom: `1px solid ${t.border}` }}>
-          <div className="flex items-center justify-between gap-1.5">
-            <h2 className="min-w-0 flex-1 truncate text-sm font-bold leading-tight" style={{ color: t.textPrimary }}>
-              {selected.name}
-            </h2>
-            <span
-              className="rounded-full px-1.5 py-0.5 text-[9px] font-bold shrink-0"
-              style={{ background: bg, color: text }}
-            >
-              {forecastRating}
-            </span>
-            <button
-              onClick={onClose}
-              className="flex h-5 w-5 shrink-0 items-center justify-center rounded transition-colors"
-              style={{ color: t.textVeryMuted, background: cardSurface }}
-              aria-label="Close selected race"
-            >
-              <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div className="min-h-0 overflow-y-auto p-2" style={{ scrollbarWidth: "thin" }}>
-          {/* Candidates */}
-          {selected.candidates && (
-            <div className="rounded-md p-2" style={{ background: cardSurface }}>
-              <div className="mb-1.5 flex items-start justify-between gap-2">
-                <div className="min-w-0">
-                  <div className="truncate text-[10px] font-bold leading-tight" style={{ color: t.textPrimary }}>
-                    {selected.candidates.dem.name}
-                  </div>
-                  <div className="text-[8px] font-medium leading-tight" style={{ color: t.demText }}>
-                    Democrat{selected.candidates.dem.incumbent ? " · Inc." : ""}
-                  </div>
-                </div>
-                <div className="shrink-0 text-[11px] font-bold tabular-nums leading-tight" style={{ color: t.demText }}>
-                  {demVoteShare.toFixed(1)}%
-                </div>
-              </div>
-              <div className="flex items-start justify-between gap-2">
-                <div className="min-w-0">
-                  <div className="truncate text-[10px] font-bold leading-tight" style={{ color: t.textPrimary }}>
-                    {selected.candidates.rep.name}
-                  </div>
-                  <div className="text-[8px] font-medium leading-tight" style={{ color: t.repText }}>
-                    Republican{selected.candidates.rep.incumbent ? " · Inc." : ""}
-                  </div>
-                </div>
-                <div className="shrink-0 text-[11px] font-bold tabular-nums leading-tight" style={{ color: t.repText }}>
-                  {repVoteShare.toFixed(1)}%
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Projected Margin */}
-          <div className="mt-1.5 rounded-md p-2" style={{ background: cardSurface }}>
-            <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>
-              Projected Margin
-            </div>
-            <div
-              className="text-base font-bold leading-none tabular-nums"
-              style={{ color: marginIsD ? t.demText : t.repText }}
-            >
-              {marginIsD ? "D+" : "R+"}
-              {Math.abs(selected.margin).toFixed(1)}
-            </div>
-          </div>
-
-          {/* More Info */}
-          <a
-            href={`/${raceType}/${(raceType === "house" ? selected.name : selected.id).toLowerCase().replace(/-2$/, "2")}`}
-            className="mt-1.5 flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
-            style={{ background: cardSurface, color: t.textMuted }}
-          >
-            More Info
-            <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
-
-        </div>
-      </div>
-
-    </>
+    <ForecastCardBox theme={theme}>
+      <CountyTooltip
+        {...forecastCard(selected)}
+        variant="card"
+        aside={<span className="flex items-center gap-1"><ForecastRatingPill margin={selected.margin} /><CountyCardClose onClick={onClose} label="Close selected race" /></span>}
+        footer={<CountyCardLink href={raceHref(raceType, selected)}>Race page →</CountyCardLink>}
+      />
+    </ForecastCardBox>
   );
 }

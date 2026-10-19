@@ -26,7 +26,7 @@ import CandidateLink from "@/components/CandidateLink";
 type Party = "D" | "R" | "I";
 /** `name` is the full name; the tooltip shortens it to the surname. `link` makes it a link to
  *  the candidate page (off for party words like "Democrat"). */
-export type CountyTooltipSide = { name: string; party: Party; pct: number; votes: number | null; link?: boolean };
+export type CountyTooltipSide = { name: string; party: Party; pct: number; votes: number | null; link?: boolean; /** A short tag after the name, e.g. "Inc." (the forecast map's cards). */ note?: string };
 
 type Base = {
   title: string; subtitle?: string; boxRef?: Ref<HTMLDivElement>; className?: string;
@@ -106,11 +106,13 @@ export default function CountyTooltip(props: CountyTooltipProps) {
     const { dem, rep, margin, totalVotes } = props;
     const fig = signed(margin, dem.party, rep.party);
     const other = otherShare(dem, rep, totalVotes);
-    const row = (who: string, pct: number, votes: number | null, color: string, muted = false) => (
-      <div className={`grid items-baseline ${isCard ? "gap-x-2" : "gap-x-2.5"}`} style={{ gridTemplateColumns: "minmax(0,1fr) auto auto" }}>
-        <span className="truncate" style={{ color, fontWeight: muted ? 500 : 600 }}>{who}</span>
+    // Projections (the forecast map) carry no vote counts, so the votes column drops out.
+    const showVotes = dem.votes != null || rep.votes != null || totalVotes != null;
+    const row = (who: string, pct: number, votes: number | null, color: string, muted = false, note?: string) => (
+      <div className={`grid items-baseline ${isCard ? "gap-x-2" : "gap-x-2.5"}`} style={{ gridTemplateColumns: showVotes ? "minmax(0,1fr) auto auto" : "minmax(0,1fr) auto" }}>
+        <span className="truncate" style={{ color, fontWeight: muted ? 500 : 600 }}>{who}{note && <span className="ml-1 text-[10px] font-medium" style={{ color: "var(--app-text-very-muted)" }}>{note}</span>}</span>
         <span className="text-right" style={{ color, fontWeight: muted ? 500 : 700 }}>{pct.toFixed(1)}%</span>
-        <span className={`min-w-[4.6em] text-right ${isCard ? "text-[10px]" : "text-[11px]"}`} style={{ color: "var(--app-text-very-muted)" }}>{votes != null ? fmtInt(votes) : "—"}</span>
+        {showVotes && <span className={`min-w-[4.6em] text-right ${isCard ? "text-[10px]" : "text-[11px]"}`} style={{ color: "var(--app-text-very-muted)" }}>{votes != null ? fmtInt(votes) : "—"}</span>}
       </div>
     );
     body = (
@@ -127,8 +129,8 @@ export default function CountyTooltip(props: CountyTooltipProps) {
           <i style={{ width: `${rep.pct}%`, background: partyFill(rep.party) }} />
         </div>
         <div className={`grid tabular-nums ${isCard ? "mt-1.5 gap-px text-[11px]" : "mt-2 gap-[3px] text-[12px]"}`}>
-          {row(lastName(dem.name), dem.pct, dem.votes, partyText(dem.party))}
-          {row(lastName(rep.name), rep.pct, rep.votes, partyText(rep.party))}
+          {row(lastName(dem.name), dem.pct, dem.votes, partyText(dem.party), false, dem.note)}
+          {row(lastName(rep.name), rep.pct, rep.votes, partyText(rep.party), false, rep.note)}
           {other.show && row("Other", other.pct, other.votes, "var(--app-text-very-muted)", true)}
         </div>
       </>
@@ -171,6 +173,8 @@ function CountyPanel(props: CountyTooltipProps) {
     const { dem, rep, margin, totalVotes } = props;
     const fig = signed(margin, dem.party, rep.party);
     const other = otherShare(dem, rep, totalVotes);
+    // Projections (the forecast map) carry no vote counts, so the votes column drops out.
+    const showVotes = dem.votes != null || rep.votes != null || totalVotes != null;
     const side = (s: CountyTooltipSide) => {
       const style = { fontFamily: "var(--font-serif)", fontSize: nameSize, fontWeight: 700, color: partyText(s.party) };
       // Compact panels sit beside other content, so they use the surname, like the tooltip.
@@ -181,17 +185,17 @@ function CountyPanel(props: CountyTooltipProps) {
             {s.link
               ? <CandidateLink name={s.name} className="truncate hover:underline" style={style}>{shown}</CandidateLink>
               : <span className="truncate" style={style}>{shown}</span>}
-            <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({s.party})</span>
+            <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({s.party}){s.note ? ` · ${s.note}` : ""}</span>
           </span>
           <span className={`text-right font-bold tabular-nums ${small ? "text-xs" : "text-sm"}`} style={{ color: partyText(s.party) }}>{s.pct.toFixed(1)}%</span>
-          <span className="text-right text-xs tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{s.votes != null ? fmtInt(s.votes) : "—"}</span>
+          {showVotes && <span className="text-right text-xs tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{s.votes != null ? fmtInt(s.votes) : "—"}</span>}
         </>
       );
     };
     left = (
       <div
         className={`grid w-full items-baseline gap-x-3 ${wide ? "mt-1 gap-y-0.5" : small ? "gap-y-0 leading-tight" : "mt-1 gap-y-0.5 leading-tight"}`}
-        style={{ gridTemplateColumns: "minmax(0,1fr) auto minmax(3.5rem,auto)" }}
+        style={{ gridTemplateColumns: showVotes ? "minmax(0,1fr) auto minmax(3.5rem,auto)" : "minmax(0,1fr) auto" }}
       >
         {side(dem)}
         {side(rep)}

@@ -4,8 +4,9 @@ import Link from "next/link";
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { statesData } from "@/data/statesData";
+import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
 import { useStaticJson } from "@/lib/useStaticJson";
-import { TplSubNav } from "./TplSubNav";
+import { TplViewSwitch } from "./TplSubNav";
 import { OFFICE_LABELS, WAR_BAD, WAR_GOOD, candidateSlug, careerWar, districtHref, marginColor, stateHref } from "./format";
 import type { WarSlim } from "./types";
 import { CandidateLink, Foot, M, Pills, Segmented, SubHead, TD, TD_R, TH, TH_R, VERY_MUTED, WarChip } from "./ui";
@@ -181,29 +182,28 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--party-dem) 8%, var(--app-bg)) 0%, var(--app-bg) 55%, color-mix(in srgb, var(--party-rep) 8%, var(--app-bg)) 100%)" }}>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <TplSubNav methodologyHref="/methodology/war" methodologyLabel="How WAR works" />
-          <div className="pb-6 pt-5">
+      <div style={{ background: PAGE_HERO_BG }}>
+        <div className={PAGE_CONTAINER}>
+          <div className={`pb-6 ${PAGE_HERO_TOP}`}>
             <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
               <div className="min-w-0">
-                <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Wins Above Replacement · 2016–2025</div>
-                <h1 className="mt-2" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 3.5rem)", fontWeight: 700, lineHeight: 0.98, letterSpacing: "-0.02em" }}>Candidates</h1>
-                <p className="mt-2 max-w-2xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-                  How far each nominee ran ahead of a replacement-level candidate of their party, once the seat&apos;s lean, the year&apos;s environment, incumbency and structural money are taken out. A ridge regression with a heavy tail pools every race a person has run, so one extraordinary candidate is not explained as a run of weak opponents; effects fade 0.8 per year.
+                <h1 style={PAGE_TITLE_STYLE}>Candidates</h1>
+                <p className="mt-2 min-h-[5lh] max-w-2xl text-sm leading-relaxed sm:min-h-[4lh] md:min-h-[3lh]" style={{ color: "var(--app-text-muted)" }}>
+                  Wins Above Replacement (WAR): how far each nominee ran ahead of a replacement-level candidate of their party in every race 2016–2025, once the seat&apos;s lean, the year&apos;s environment, incumbency and structural money are taken out.
                 </p>
               </div>
               <div className="shrink-0 sm:text-right">
                 <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Races scored</div>
                 <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 1 }}>{totals.races.toLocaleString()}</div>
-                <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>{totals.performances.toLocaleString()} candidate-performances · P · S · G · H</div>
+                <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>{totals.performances.toLocaleString()} candidate-performances<span className="sm:hidden"> · </span><br className="hidden sm:inline" />P · S · G · H</div>
               </div>
             </div>
+            <TplViewSwitch to="map" />
           </div>
         </div>
       </div>
 
-      <main className="mx-auto max-w-7xl px-4 pb-14 sm:px-6" onClickCapture={onClickCapture}>
+      <main className={`${PAGE_CONTAINER} pb-14`} onClickCapture={onClickCapture}>
         <section className="mt-6">
           <LedgerSectionHead label={view === "race" ? "Races" : "Candidate-performances"} meta={`${counts}${loadedAll ? "" : ` · ${initialYear} loaded, the rest on its way`}`}
             right={<Segmented label="View" options={[{ key: "race", label: "By race" }, { key: "candidate", label: "By candidate" }]} value={view} onChange={setView} />} />
@@ -359,7 +359,7 @@ function CandidateRecord({ name, rows, opponents }: { name: string; rows: WarSli
           <div title={rows.some((r) => r.office === "P") ? "Presidential WAR: average per state per election" : "Sum of WAR over every scored race"}><div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Career WAR</div><div className="mt-0.5 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.75rem", fontWeight: 700, lineHeight: 1, color: sum > 0 ? WAR_GOOD : sum < 0 ? WAR_BAD : undefined }}>{sum > 0 ? "+" : ""}{sum.toFixed(1)}</div><div className="text-[11px]" style={VERY_MUTED}>best {best.war > 0 ? "+" : ""}{best.war.toFixed(1)} · {best.year} {raceLabel(best)}</div></div>
         </div>
       </div>
-      <div className="mt-4 grid grid-cols-1 gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)]">
+      <div className="mt-4 grid grid-cols-1 gap-8">
         <div className="min-w-0">
           <SubHead label="WAR by cycle" />
           <div className="flex px-1 pt-2" style={{ borderBottom: "1px solid var(--app-border)" }} role="img" aria-label={cycles.map((r) => `${r.year}: ${r.war.toFixed(1)}`).join(", ")}>

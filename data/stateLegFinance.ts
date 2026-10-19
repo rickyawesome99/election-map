@@ -421374,7 +421374,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": null,
+       "contributions": 45770,
        "expenditures": null
       },
       {
@@ -424790,7 +424790,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 121800,
        "expenditures": null
       }
      ]
@@ -425558,7 +425558,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 9000,
        "expenditures": null
       }
      ]
@@ -425688,7 +425688,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 0,
        "expenditures": null
       }
      ]
@@ -425854,7 +425854,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
-       "contributions": null,
+       "contributions": 100,
        "expenditures": null
       }
      ]
@@ -554731,6 +554731,3770 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 34060.73,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  }
+ },
+ "MS": {
+  "2019": {
+   "house": {
+    "1": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Lester Bubba Carpenter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 29700,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Nick Bain ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Janis Triplett Patterson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12008.99,
+       "expenditures": null
+      },
+      {
+       "name": "Friends to Elect William Tracy Arnold",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 64050,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "John Faulkner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1250,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends for Dana Criswell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10639.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Steve Hopkins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40245,
+       "expenditures": null
+      },
+      {
+       "name": "Theresa Gillespie Isom for State Rep District 7 Desoto County",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 12711.57,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Trey Lamar",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Cedric Burnett ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 10600,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Bobby E Dailey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Brady Williamson for MS House of Representatives",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 14925,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Lataisha Jackson ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7850,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Clay Deweese",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 93493,
+       "expenditures": null
+      },
+      {
+       "name": "Friends to Elect Tiffany Kilpatrick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30837.76,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Pamela J Denham",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Steve Massengill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 42274.99,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Samuel J Creekmore",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10900,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Committee to Elect Pat Montgomery",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4300,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Election 2019 Campaign for Rickey Thompson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 650,
+       "expenditures": null
+      },
+      {
+       "name": "Stephen Holland",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Cathy Grace",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 31425.81,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Jerry R. Turner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Randy P. Boyd",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39599.99,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Jon Lancaster",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5000,
+       "expenditures": null
+      },
+      {
+       "name": "Thomas G. Futral Sr.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Elect Charles Jim Beckett State Rep (Pre-2018)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22050,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Dan Eubanks",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Kenneth Walker",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Jerry Darnell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 36010,
+       "expenditures": null
+      },
+      {
+       "name": "Matt Williams",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Abe Hudson, Jr.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 38500,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends to Elect Tracey Rosebud",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13882.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Otis L Anthony ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 30695.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Toris Williams",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Thomas U. \"Tommy\" Reynolds",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Jessica Lofton Lewis",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Gary A. Chism",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 32100,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Vicky Rose",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Cheikh Taylor",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8470,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Ashley Henley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Hester Jackson McCray",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7277.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Loyd B. (Rob) Roberson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 65920.94,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Michael T. Evans",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 8050,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Jason M. White",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "John Hines",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 39360,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Rufus Straughter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 650,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Rita Wilkinson Goss",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3100,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Vince Mangold",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "54": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Kevin Ford",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 68249.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Philip Gunn Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1228688.84,
+       "expenditures": null
+      },
+      {
+       "name": "Slater for Mississippi",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 66742.67,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Joel Bomgar",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 644466.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "62": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Thomas C. Weathersby, Sr.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12400,
+       "expenditures": null
+      }
+     ]
+    },
+    "63": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Stephanie McKenzie Foster",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19617.46,
+       "expenditures": null
+      }
+     ]
+    },
+    "64": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Bill Denny",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 35075,
+       "expenditures": null
+      },
+      {
+       "name": "Committee to Elect Shanda Yates",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "66": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Jarvis Dortch",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 5600,
+       "expenditures": null
+      }
+     ]
+    },
+    "67": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends to Elect Gregory T. Riley ",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 3400,
+       "expenditures": null
+      }
+     ]
+    },
+    "68": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Campaign to Elect Zakiya Summers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11050,
+       "expenditures": null
+      },
+      {
+       "name": "Jonathan Pond",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "74": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Jason McCarty for 74",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2440,
+       "expenditures": null
+      },
+      {
+       "name": "Lee Yancey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 17800,
+       "expenditures": null
+      }
+     ]
+    },
+    "75": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Tom Miles Campaign",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 43270,
+       "expenditures": null
+      }
+     ]
+    },
+    "78": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Joe C Bradford",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10300,
+       "expenditures": null
+      },
+      {
+       "name": "Randal (Randy) K. Rushing",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 33714.86,
+       "expenditures": null
+      }
+     ]
+    },
+    "79": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Mark K. Tullos",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3950,
+       "expenditures": null
+      }
+     ]
+    },
+    "83": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Billy Adam Calvert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 48374.3,
+       "expenditures": null
+      }
+     ]
+    },
+    "84": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Roy May",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 2375,
+       "expenditures": null
+      }
+     ]
+    },
+    "87": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "William E. (Billy) Andrews, III",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "88": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Ramona Q Blackledge",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5207.67,
+       "expenditures": null
+      }
+     ]
+    },
+    "89": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Donald T. Scoggin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 24750,
+       "expenditures": null
+      }
+     ]
+    },
+    "91": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Bob Evans",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1400,
+       "expenditures": null
+      }
+     ]
+    },
+    "92": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Committee to Elect Becky Currie",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "93": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Timmy Ladner Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 22464.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "94": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Committee to Elect Robert L. Johnson III",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "95": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Jay McKnight",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 65170,
+       "expenditures": null
+      }
+     ]
+    },
+    "96": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Angela Y. Cockerham",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Committee to Elect Aisha Sanders",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 44109.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "97": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Ben Thompson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9024,
+       "expenditures": null
+      }
+     ]
+    },
+    "101": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Committee to Elect Kent McCarty",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 68810.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "104": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "LARRY BYRD",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 950,
+       "expenditures": null
+      }
+     ]
+    },
+    "105": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "DALE GOODIN",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Matthew Daves",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "106": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Jansen Owen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "110": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Jeramey Anderson for State Representative",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 11696.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "111": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Committee to Elect Charles Busby",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 90350,
+       "expenditures": null
+      }
+     ]
+    },
+    "112": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "John O. Read",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 102050,
+       "expenditures": null
+      }
+     ]
+    },
+    "114": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Tony Lawrence 114",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "116": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Casey Eure Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 24475.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "117": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Inez M. Kelleher, MD",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 33540.63,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Kevin W. Felsher",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "118": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Greg Haney Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20271.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "119": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Committee to Elect Sonya Williams Barnes",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 85328,
+       "expenditures": null
+      }
+     ]
+    },
+    "121": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Carolyn Crawford",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "122": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Wendy C McDonald",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 24842.21,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Brent Anderson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "2": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends for David Parker",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 85528.8,
+       "expenditures": null
+      },
+      {
+       "name": "Lee A Jackson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 300,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Committee to Elect Steve Eaton For State Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Daniel Sparks",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Benjamin A. Suber",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 34515,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Kegan Coleman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Nicole Akins Boyd",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 148123.13,
+       "expenditures": null
+      },
+      {
+       "name": "Kevin Frye",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 114586.61,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Andre' DeBerry",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 15977.67,
+       "expenditures": null
+      },
+      {
+       "name": "Neil Whaley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Clara Davis Dawkins ",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Robert L. Jackson (for Senate)",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 8643.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Paul D. Pecou",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 800,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "B.C. Hammond",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Sarita Simmons",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 34270,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Gary Jackson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 25688.06,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Jenifer Branning",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 21000,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Dianne Black",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1854.06,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Kevin Blackwell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 76893.1,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Josh Harkins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Barbara Blackmon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Elect Hayes Dent",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 41850,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "John A. Horhn",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Dean Kirby Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 115100,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Tyler McCaughn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 60230,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Sampson Jackson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Jeff Tate",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 55520,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Steven L. Wade",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Chris Caughman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Melanie Sojourner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 34705,
+       "expenditures": null
+      },
+      {
+       "name": "William E. Godfrey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 42238.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Tammy F Witherspoon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Sally Doty",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 130104.99,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Dennis DeBar, Jr.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 19250,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Philip Moran",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 78738,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Mike Thompson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Friends of Joel Carter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 226275,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Committee to Elect Jeremy England",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 83645.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2019",
+     "candidates": [
+      {
+       "name": "Committee to Elect Brice Wiggins ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
+  "2023": {
+   "house": {
+    "2": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "BRAD MATTOX",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Jimmy Wayne Russell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "William Tracy Arnold",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Donald Merle Scott",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Justin Keen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 25549,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Gail B. Lyons",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2100,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Kimberly Remak ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 50891.96,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Trey Lamar",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 453990,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Josh Hawkins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Donna Niewiaroski",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Clay Deweese",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 156028,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Steve Massengill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 94400,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Election 2019 Campaign for Rickey Thompson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Shane Aguirre",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Randy Boyd Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 5550,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Donnie Bell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 96147.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Andrew (Andy) Stepp",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Andy Clark",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 100,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Jeffery S. Hale",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Orlando W. Paden",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 50,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Kenji Holloway",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 300,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "W.I. Harris, Jr.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 800,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Robert L. Sanders",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends to Elect Tracey Rosebud",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 45858.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Otis L Anthony ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Solomon Curtis Osborne",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1700,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends to Elect Jim Estrada",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20090,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Kevin Horan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 49697.64,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Joey Hood",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 137579.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Karl M. Gibbs",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Andy Boyd",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 22097.23,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Dana Underwood McLean",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1550,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Hester Jackson-McCray",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Rob Roberson Loyd B. \"Rob\" Roberson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 12011.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "C. Scott Bounds",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 124511.99,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Keith Jackson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 4520,
+       "expenditures": null
+      },
+      {
+       "name": "Committee to Elect Michael Cassidy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Karl Oliver",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 128282.32,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Bryant Clark",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Jason White",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 356875,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Stacy Smith",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Willie L. Bailey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 6950,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "John Wesley Hines, Sr. ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 15732,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Bill Kinkade",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 62000.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Vince Mangold",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Oscar Denton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 30256.84,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Elect Clay Mansell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Friends for Sharon Moman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21035,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "McMillan for House District 58",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "59": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Brent Powell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 78375,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Fred Shanks",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "61": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Gene Newman Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 57173.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "64": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Elect Shanda Yates",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": true,
+       "contributions": 91931.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "65": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Elect Christopher Bell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 91161.59,
+       "expenditures": null
+      }
+     ]
+    },
+    "68": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Campaign to Elect Zakiya Summers",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 4700,
+       "expenditures": null
+      }
+     ]
+    },
+    "69": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Elect T. Grace Butler-Washington",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "70": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "William R. Brown",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "71": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Ronnie C. Crudup, Jr.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 7150,
+       "expenditures": null
+      }
+     ]
+    },
+    "72": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT JUSTIS GIBBS",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "73": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Jill Ford Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 86400,
+       "expenditures": null
+      }
+     ]
+    },
+    "74": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Lee Yancey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 134354.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "75": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "FRIENDS OF CELESTE HURST",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 58379,
+       "expenditures": null
+      }
+     ]
+    },
+    "77": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Price Wallace",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 34417.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "80": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Omeria Scott",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 8142,
+       "expenditures": null
+      }
+     ]
+    },
+    "81": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Stephen A. (Steve) Horne",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "82": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Charles L. Young, Jr.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 9550,
+       "expenditures": null
+      }
+     ]
+    },
+    "84": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Troy Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 10189.46,
+       "expenditures": null
+      }
+     ]
+    },
+    "85": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Jeffery Harness",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "86": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Shane Barnett",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 58673,
+       "expenditures": null
+      }
+     ]
+    },
+    "87": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Joseph ( Bubba ) Tubb",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "88": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Charles \"Chuck\" Blackwell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "90": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Noah Sanford",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 11220,
+       "expenditures": null
+      }
+     ]
+    },
+    "92": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Becky Currie",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "94": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Robert L. Johnson III",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 22750,
+       "expenditures": null
+      }
+     ]
+    },
+    "95": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Jay McKnight",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 52842.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "96": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Angela Cockerham ",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": true,
+       "contributions": 45876.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "97": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Sam C. Mims V (Post 2018)",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 251600,
+       "expenditures": null
+      }
+     ]
+    },
+    "99": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Bill Pigott",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "100": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Ken Morgan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 50856.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "101": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Elect Kent McCarty",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 43650,
+       "expenditures": null
+      }
+     ]
+    },
+    "102": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Elect Missy McGee",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 102812.52,
+       "expenditures": null
+      }
+     ]
+    },
+    "103": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Percy W. Watson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "104": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Larry Byrd",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39375,
+       "expenditures": null
+      }
+     ]
+    },
+    "106": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Jansen Owen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "108": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Stacey Hobgood Wilkes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 34700,
+       "expenditures": null
+      }
+     ]
+    },
+    "109": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Manly Barton",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 93175,
+       "expenditures": null
+      }
+     ]
+    },
+    "110": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Campaign to Elect Jeramey Anderson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "111": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Elect Jimmy Fondren",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 36451.27,
+       "expenditures": null
+      }
+     ]
+    },
+    "113": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Elect Hank Zuber ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 163300.84,
+       "expenditures": null
+      }
+     ]
+    },
+    "114": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Elect Jeffrey S. Guice",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 20250,
+       "expenditures": null
+      }
+     ]
+    },
+    "115": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends to Elect Zachary Grady",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 62034.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "116": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Casey Eure Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1550,
+       "expenditures": null
+      }
+     ]
+    },
+    "117": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Kevin W. Felsher",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 115225,
+       "expenditures": null
+      }
+     ]
+    },
+    "118": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Greg Haney",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "120": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Richard Bennett",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 279982.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "121": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Carolyn Crawford",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 28740,
+       "expenditures": null
+      },
+      {
+       "name": "John Dedeaux",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10878.39,
+       "expenditures": null
+      }
+     ]
+    },
+    "122": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Brent Anderson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67345.26,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "2": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Pamela Michele McKelvy Hamner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of David Parker ",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Kathy Chism",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Jon Newcomb",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Rita Potts Parks",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Daniel H. Sparks",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 40986.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Chad McMahan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 456931.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Hob Bryan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 217129.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Nicole Akins Boyd",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 286711.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "COMMITTEE TO ELECT NEIL WHALEY",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 68175,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Reginald Jackson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 500,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Derrick T. Simmons",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 58775,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Re-Elect Sarita Simmons for Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Lydia Chassaniol",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 111219.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "BART WILLIAMS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Angela Turner Ford",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 31450,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Charles A. Younger",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 71827,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Elect Jenifer Branning",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "S. Sandy Kerr",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Kevin Blackwell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 146039,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Harkins for MS",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 474100,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Bradford J. Blackmon ",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 8225,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Joseph C. Thomas Sr.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 30623.04,
+       "expenditures": null
+      },
+      {
+       "name": "Chastity May Magyar / COMMITTEE TO ELECT CHASTITY MAY MAGYAR",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7513.67,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "David Jordan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      },
+      {
+       "name": "Marty Evans Jr.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Walter Michel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 158909.12,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "John Horhn",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 3600,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Hillman Terome Frazier",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 29055.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Sollie Norwood",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 15300,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "David Blount",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 345877,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Carson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Dean Kirby",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Committee to Elect Rod Hickman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Juan Barnett",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 21750,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Albert Butler",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 51158.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Gary Brumfield for Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 679.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Jason Barrett",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 73727.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Angela Burks Hill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 35750,
+       "expenditures": null
+      },
+      {
+       "name": "Thomas Lehr",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Joey Fillingane",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 164042.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Robin Robinson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 263499.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Dennis DeBar, Jr.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 77100,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "John A. Polk",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 57158,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "John Johnson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 228.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "George Tony Uram",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Joseph M. Mike Seymour",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 45135,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Mike Thompson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 134481.14,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Friends of Joel Carter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 470526,
+       "expenditures": null
+      },
+      {
+       "name": "Glen Lewis for MS Senate #49",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": null,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Scott Delano",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 61050,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Artis Burney",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 670,
+       "expenditures": null
+      },
+      {
+       "name": "Committee to Elect Jeremy England",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 313187.57,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Mississippi Secretary of State campaign finance reports (calendar year-to-date contributions, four-year cycle)",
+     "dataThrough": "12/31/2023",
+     "candidates": [
+      {
+       "name": "Brice Wiggins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 247413.07,
        "expenditures": null
       }
      ]

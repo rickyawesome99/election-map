@@ -19,7 +19,7 @@ import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@
 import { normalizeGeographyWinding, type WindableGeography } from "@/lib/geoWinding";
 import { popVoteData } from "@/data/popVoteData";
 import Segmented from "@/components/MarketSegmented";
-import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
 
 type RaceType = MapOffice;
 type GeoLevel = MapLevel;
@@ -76,8 +76,18 @@ const MAP_LEGEND = [
 ];
 
 const STAT_LABEL = "mb-1 text-[10px] font-bold uppercase tracking-wide";
-const SELECT_CLASS = "rounded-md px-2.5 py-1.5 text-xs font-semibold";
-const SELECT_STYLE = { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" };
+// Drawn by hand (no native chrome) so the dropdowns match the 28px geography toggle in every
+// browser: Chrome's native select ran 31px tall, Safari's 20px.
+const SELECT_CLASS = "h-7 appearance-none rounded-md pl-2.5 pr-7 text-xs font-semibold leading-none";
+const SELECT_STYLE = {
+  backgroundColor: "var(--app-tab-bg)",
+  backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3 4.5l3 3 3-3' fill='none' stroke='%238a8f98' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E\")",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "right 8px center",
+  backgroundSize: "12px 12px",
+  color: "var(--app-text-primary)",
+  border: "1px solid var(--app-border)",
+};
 
 const UNIT_LABEL: Record<GeoLevel, string> = {
   county: "Counties",
@@ -369,24 +379,15 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
 
   return (
     <>
-      {/* ── Hero: title left, controls (geography toggle, office + year dropdowns) right ── */}
+      {/* ── Hero: title, then the controls (geography toggle, office + year dropdowns) ── */}
       <div
         style={{
-          background: "linear-gradient(to bottom, transparent 0%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, var(--party-rep) 7%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 6%, var(--app-bg)) 100%)",
+          background: PAGE_HERO_BG,
         }}
       >
-        <div className={`${PAGE_CONTAINER} flex flex-col gap-3 pb-3 pt-4 md:flex-row md:items-end md:justify-between`}>
-          <div>
-            <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-              Election Archive
-            </div>
-            <h1
-              className="mt-1 text-2xl font-bold tracking-tight md:text-[1.65rem]"
-              style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}
-            >
-              Historical Results
-            </h1>
-          </div>
+        {/* Title on its own line, controls in one row beneath it: beside a 48px title the row ran out of room and wrapped "Specials only" (and the title) onto a second line. */}
+        <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} flex flex-col gap-4 pb-3`}>
+          <h1 style={{ ...PAGE_TITLE_STYLE, color: "var(--app-text-primary)" }}>Historical Results</h1>
           <div className="flex flex-wrap items-center gap-2">
             <Segmented label="Geography" value={geoLevel} onChange={selectGeoLevel} options={GEO_LEVELS.map((gl) => [gl.key, gl.label])} />
             <select
@@ -478,10 +479,11 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
           ))}
         </div>
 
-        {/* ── Map — on phones the box takes the projection's 975×610 shape, so "slice" crops nothing
-           and the whole country fits the width; desktop keeps its fixed height ── */}
+        {/* ── Map — the box takes the projection's 975×610 shape at every width, so "slice" crops
+           nothing and the whole country fits the page column (a fixed desktop height cropped the
+           coasts once the column narrowed to PAGE_CONTAINER) ── */}
         <div
-          className="relative aspect-[975/610] w-full overflow-hidden rounded-xl md:aspect-auto md:h-[min(660px,calc(100vh-180px))] md:min-h-[520px] md:w-[96%] md:self-center"
+          className="relative aspect-[975/610] w-full overflow-hidden rounded-xl"
           style={{ background: t.bg }}
           onMouseMove={tip.onMouseMove}
         >

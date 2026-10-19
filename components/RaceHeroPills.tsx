@@ -62,8 +62,10 @@ export function SeatArrows({ prev, next, label = "Neighbouring seats" }: { prev?
     );
   return (
     // A span (not <nav>) so it can sit inside the <h1>, glued to the title's last word: the
-    // arrows then wrap with that word instead of dropping onto a line of their own.
-    <span role="navigation" aria-label={label} className="ml-2 inline-flex items-center align-middle sm:ml-3" style={{ verticalAlign: "0.3em", letterSpacing: 0 }}>
+    // arrows then wrap with that word instead of dropping onto a line of their own. With no text
+    // inside, the box's bottom edge is its baseline, so it rests on the title's baseline; the 4px
+    // nudge (relative, so line height is untouched) brings the chevrons' tips down onto it.
+    <span role="navigation" aria-label={label} className="relative top-1 ml-2 inline-flex items-center sm:ml-3" style={{ verticalAlign: "baseline", letterSpacing: 0 }}>
       {arrow(prev, "prev")}
       {arrow(next, "next")}
     </span>

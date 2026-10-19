@@ -5,9 +5,12 @@ import SearchBar from "@/components/SearchBar";
 
 export default function AppHeader({
   back,
+  nav,
   darkMode,
 }: {
   back?: React.ReactNode;
+  /** The section tabs, shown inline after the wordmark from xl up. */
+  nav?: React.ReactNode;
   darkMode: boolean;
 }) {
   return (
@@ -34,6 +37,7 @@ export default function AppHeader({
           CT Strategies
         </button>
       </div>
+      {nav && <div className="hidden h-full min-w-0 self-stretch xl:ml-4 xl:block">{nav}</div>}
       <div className="ml-auto flex h-full shrink-0 flex-nowrap items-center gap-2">
         {back}
         <SearchBar />

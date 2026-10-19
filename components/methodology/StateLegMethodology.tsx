@@ -13,6 +13,8 @@ import { STATE_LEG_POPVOTE_CONSTANTS as PC, projectAllChamberPopularVotes } from
 import { MIDTERM_WEIGHTS } from "@/lib/turnoutModel";
 import { STATE_LEG_INDEPENDENT_VALIDATION as IV } from "@/data/stateLegIndependentValidation";
 import { STATE_LEG_TYPE_WEIGHT_SWEEP as SW } from "@/data/stateLegTypeWeightSweep";
+import { STATE_LEG_MONEY_SWEEP as MS } from "@/data/stateLegMoneySweep";
+import { structuralMoneyModel } from "@/lib/stateLegMoneyModel";
 import { getNationalEnvironment } from "@/lib/tplCompute";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, N, P, Section, type ConstantRow } from "./kit";
 
@@ -21,6 +23,7 @@ const DOCUMENTED_IN = {
   TYPE_WEIGHTS: "state-leg#projection", RECENT_SEAT_BOOST: "state-leg#projection", INCUMBENCY_PTS: "state-leg#projection", SIGMA: "state-leg#projection", STATE_SHOCK: "state-leg#projection",
   MIN_COVERAGE: "state-leg#projection", SIMS: "state-leg#projection",
   IND_RECORD_SHARE: "state-leg#projection", IND_PRIOR_PTS: "state-leg#projection", IND_SHRINK_K: "state-leg#projection", IND_SIGMA: "state-leg#projection",
+  MONEY_K: "state-leg#projection", MONEY_CAP: "state-leg#projection", PARTIAL_CYCLE_GAP_SCALE: "state-leg#projection",
 } satisfies Record<keyof typeof SC, string>;
 void DOCUMENTED_IN;
 const DOCUMENTED_IN_PV = {
@@ -149,14 +152,14 @@ export default function StateLegMethodology() {
         lede={(() => {
           const c = stateLegMoneyCoverage();
           const cycles = Object.keys(c.byCycle).sort();
-          return <>Each general-election candidate&apos;s total contributions for the cycle, per the state&apos;s own filings: <N>{c.states}</N> states, <N>{c.chamberCycles}</N> chamber-cycles ({cycles.join(", ")}), <N>{c.districts.toLocaleString()}</N> district-cycles, <N>{c.matched.toLocaleString()}</N> of <N>{c.candidates.toLocaleString()}</N> listed candidates matched to a filing. Shown on the district header (the current cycle, with its data-through date) and as a Raised column in the electoral history; the money term of the projection is not yet fitted on it.</>;
+          return <>Each general-election candidate&apos;s total contributions for the cycle, per the state&apos;s own filings: <N>{c.states}</N> states, <N>{c.chamberCycles}</N> chamber-cycles ({cycles.join(", ")}), <N>{c.districts.toLocaleString()}</N> district-cycles, <N>{c.matched.toLocaleString()}</N> of <N>{c.candidates.toLocaleString()}</N> listed candidates matched to a filing. Shown on the district header (the current cycle, with its data-through date) and as a Raised column in the electoral history, and the input to the projection&apos;s money term (below).</>;
         })()}>
         <Block label="Sources">
           <Defs items={[
             { term: "Transparency USA", def: "Republishes 25 states' campaign-finance filings (AL AZ CA CO FL GA IA ID IL IN MI MN NC NH NM NV NY OH PA SC TX VA WA WI WY) with one page per race and cycle, 2018 through 2026 (Virginia 2017 through 2025). scripts/fetch-state-leg-finance-tu.py reads every legislative race page of a cycle: candidate, party, incumbency, total contributions, total expenditures and ballot status, general and primary. The current cycle's figures are to-date and grow with each report." },
             { term: "FollowTheMoney", def: "The other 25 states and 2016 everywhere, through the API used for the governor rows (scripts/fetch-state-leg-finance-ftm.py; one call per state, cycle and chamber). Its data stops at the 2024 election year, and the free tier's quota is small, so this half fills as keys allow." },
             { term: "State portals", def: "For the states Transparency USA does not cover, each state's own disclosure system, one script per state (scripts/fetch-state-leg-finance-{st}.py): race or committee totals where the portal publishes them (Oklahoma, Nebraska, Kentucky, Tennessee, Massachusetts, Vermont, Maine, North Dakota, New Jersey's post-election summary), the sum of itemized contributions elsewhere. Portals list every filer, so scripts/assign-state-leg-finance.ts keeps a record only when its name matches a general-election candidate of that cycle, within the district when the portal names one. Private contributions only: Connecticut's and Maine's public grants are left out. New Jersey's joint slate committees are split evenly among their members. Maryland's 2022 cycle starts in November 2020, so it undercounts; Hawaii and Missouri use report totals." },
-            { term: "2016 and older cycles", def: "Transparency USA starts with 2018, so the 2016 cycle (Virginia's 2017) of its states comes from the same kind of state records, one script each, and so do Kansas's 2016 House (the Ethics Commission's published summary), West Virginia's 2016 (paper filers stay blank) and South Dakota (filing PDFs; state law bars commercial use). Maine 2016, Maryland 2018 and Ohio 2016 come from The Accountability Project's public copies of the old state exports (Ohio's: contributions, fundraiser and other income and in-kind, Transparency USA's definition, which it reproduces within 1% for 174 of 202 candidates in 2018; its office and district columns are the candidate's current ones, so Ohio matches by name). Where candidates filed on paper the scanned reports were read by eye: West Virginia 2016 (the election-year-to-date box) and New Hampshire 2016 (the last report's campaign-to-date receipts less any surplus carried in; New Hampshire's e-filers come from its transaction export). Arkansas's 2018–2022 legacy filings are listed by registration year, usually the odd year before the election, so both years are read." },
+            { term: "2016 and older cycles", def: "Transparency USA starts with 2018, so the 2016 cycle (Virginia's 2017) of its states comes from the same kind of state records, one script each, and so do Kansas's 2016 House (the Ethics Commission's published summary), West Virginia's 2016 (paper filers stay blank) and South Dakota (filing PDFs; state law bars commercial use). Maine 2016, Maryland 2018 and Ohio 2016 come from The Accountability Project's public copies of the old state exports (Ohio's: contributions, fundraiser and other income and in-kind, Transparency USA's definition, which it reproduces within 1% for 174 of 202 candidates in 2018; its office and district columns are the candidate's current ones, so Ohio matches by name). Where candidates filed on paper the scanned reports were read by eye: West Virginia 2016 (the election-year-to-date box) and New Hampshire 2016 (the last report's campaign-to-date receipts less any surplus carried in; New Hampshire's e-filers come from its transaction export). Arkansas's 2018–2022 legacy filings are listed by registration year, usually the odd year before the election, so both years are read. Mississippi (2019 and 2023, four-year terms) sums the term's four calendar years from the Secretary of State's portal: e-filers' typed reports, and for paper filers the calendar-year-to-date box, read by OCR or by eye and kept when the form's own arithmetic holds, or, where too many boxes are blank to check it, when nothing on the form contradicts the year-to-date figure (a part larger than the total, a balance that does not close); a candidate with any year unread is blank." },
             { term: "Not used", def: "Stanford DIME's public recipients file lists state legislative candidates but withholds their receipt totals (the NIMSP-sourced figures), and its 2024 coverage is California and Ohio only. OpenSecrets' state profiles (the NIMSP data, from October 2026) cover every state but sit behind a Cloudflare check that needs a headed browser, under a non-commercial licence; declined." },
           ]} />
         </Block>
@@ -175,16 +178,16 @@ export default function StateLegMethodology() {
         })()}>
         <Block label="Lean">
           <Formula lines={[
-            "row NM   = margin − INCUMBENCY_PTS × incumbent sign − β*(state) × E(year)       seat rows: the district's general in each year it was contested",
+            "row NM   = margin − INCUMBENCY_PTS × incumbent sign − β*(state) × E(year) − money(race)       seat rows: the district's general in each year it was contested",
             "           margin − β*(state) × E(year)                                           presidential rows on today's lines (2016, 2020, 2024)",
             "relocate = Σ share_i × margin_i / coverage  +  [pres(today) − Σ share_i × pres_i / coverage]   a race on a superseded map, through the crosswalk",
             "lean     = Σ_years YEAR_WEIGHT × coverage × [ Σ_types TYPE_WEIGHT × mean NM ] / Σ YEAR_WEIGHT × coverage     two-pass Huber on seat rows",
             "           in the latest year with a seat row, that row's TYPE_WEIGHT × RECENT_SEAT_BOOST (L 0.2 → 0.6: half of that year's lean)",
-          ]} note="share_i is the population share of today's district that was in old district i (dataset C); coverage is the share covered by contested old districts, and a row below MIN_COVERAGE is dropped. The presidential delta is taken in the presidential year nearest the race." />
+          ]} note="share_i is the population share of today's district that was in old district i (dataset C); coverage is the share covered by contested old districts, and a row below MIN_COVERAGE is dropped. The presidential delta is taken in the presidential year nearest the race. money(race) is the race's money term at its full-cycle receipts (below), averaged over a relocated row's old districts like its margin; taking it out keeps one cycle's lopsided fundraising from passing into the district's lean." />
         </Block>
         <Block label="Forward">
           <Formula lines={[
-            "margin = lean + β*(state) × E(2026) + INCUMBENCY_PTS × incumbent sign      incumbent sign from the 2026 field's marked incumbent",
+            "margin = lean + β*(state) × E(2026) + INCUMBENCY_PTS × incumbent sign + money(2026)      incumbent sign from the 2026 field's marked incumbent",
             "σ²     = SIGMA² + STATE_SHOCK² + (β* × σ_E)²        P(D) = Φ(−margin / σ)",
             "chamber: 5,000 draws of a shared national shock N(0, σ_E) × β*, a shared chamber shock N(0, STATE_SHOCK), and N(0, SIGMA) per seat; seats not up hold their member; a field with one major party is decided unless a credible independent is on it (below)",
             "headline seats = each seat's projected winner, summed (the chamber map's count); the 80% range and the control odds come from the draws",
@@ -193,12 +196,35 @@ export default function StateLegMethodology() {
           <Constants rows={[
             { name: "TYPE_WEIGHTS", value: `P ${SC.TYPE_WEIGHTS.P} / L ${SC.TYPE_WEIGHTS.L}`, meaning: "Presidential rows against the seat's own races, renormalised over the types present in a year — the District TPL's President/House ratio. The sweep below finds the holdout flat between a 0.25 and a 0.40 seat share once the latest race is boosted, so the designed ratio is kept.", basis: "designed" },
             { name: "RECENT_SEAT_BOOST", value: `×${SC.RECENT_SEAT_BOOST}`, meaning: "The seat row's type weight in the latest year that has one, so the seat's most recent race carries half of that year's lean. State Navigate's emphasis on the last legislative result, tested here: MAE after incumbency 5.85 → 5.74 (2022) and 5.39 → 5.18 (2024), better than any uniform reweighting, flat from ×2 to ×3, worse by ×5.", basis: "calibrated", source: "scripts/stateLegBacktest.ts --sweep" },
-            { name: "INCUMBENCY_PTS", value: SC.INCUMBENCY_PTS, meaning: "Points a sitting state legislator is worth. The holdout fits 3.7 (2022) and 1.8 (2024); set at their rounded mean.", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
-            { name: "SIGMA", value: SC.SIGMA, meaning: "Seat-level noise beyond the national and chamber shocks: the holdout residual spread after the chamber shock is taken out (7.4 in 2022, 6.9 in 2024; the total spread is 8.1 and 7.8, robust 6.3 and 5.2, so the tails are heavy and the full spread is kept).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
-            { name: "STATE_SHOCK", value: SC.STATE_SHOCK, meaning: "Chamber-level shock shared by every seat of a chamber in a year: the spread of chamber-mean residuals less what independent seat noise alone would put there (method of moments over chambers with 10+ contested seats; 3.4 in 2022 and 3.5 in 2024).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "INCUMBENCY_PTS", value: SC.INCUMBENCY_PTS, meaning: "Points a sitting state legislator is worth beyond the money they raise. The holdout fits 3.6 (2022) and 1.8 (2024) with the money term in; set at their rounded mean.", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "SIGMA", value: SC.SIGMA, meaning: "Seat-level noise beyond the national and chamber shocks: the holdout residual spread after the chamber shock is taken out (7.2 in 2022, 6.8 in 2024 with the money term; the total spread is 8.0 and 7.6, robust 6.2 and 5.2, so the tails are heavy and the full spread is kept).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "STATE_SHOCK", value: SC.STATE_SHOCK, meaning: "Chamber-level shock shared by every seat of a chamber in a year: the spread of chamber-mean residuals less what independent seat noise alone would put there (method of moments over chambers with 10+ contested seats; 3.44 in 2022 and 3.37 in 2024 with the money term).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
             { name: "MIN_COVERAGE", value: SC.MIN_COVERAGE, meaning: "A relocated row needs contested old districts covering this share of today's population.", basis: "designed" },
             { name: "SIMS", value: SC.SIMS, meaning: "Draws per chamber.", basis: "fixed" },
           ] satisfies ConstantRow[]} />
+        </Block>
+        <Block label="Money">
+          {(() => {
+            const m = structuralMoneyModel();
+            const yrs = Object.keys(m.nByYear).map(Number).sort((a, b) => a - b);
+            return <P>Fundraising enters the way it does in the federal forecast: as the part of a race&apos;s money gap that its situation does not already explain. An incumbent, or a party running in friendly territory, usually out-raises the other side, and the lean and incumbency terms already count that; only the money beyond the expected gap moves the margin. The expected gap is fitted on <N>{m.n.toLocaleString()}</N> contested races with both sides&apos; money on file ({yrs.map((y) => `${y} ${m.nByYear[y]}`).join(", ")}): an incumbent&apos;s side raises <N>{m.incSign.toFixed(1)}</N> points of gap more, each point of presidential margin adds <N>{m.pres.toFixed(2)}</N>, R² <N>{m.r2.toFixed(2)}</N>. It uses no election result, so the backtest fits it on every year without leaking an outcome, and it is refitted from whatever money is on file each time the site is built: a state or cycle added to dataset E joins the fit and the term with no other step.</P>;
+          })()}
+          <Formula lines={[
+            "gap%        = (R − D) / (R + D) × 100      the two sides' cycle contributions (dataset E)",
+            "expected%   = a(year) + b × incumbent sign + c × presidential margin on that year's lines      least squares, every chamber pooled",
+            "money(race) = clamp(MONEY_K × (scale × gap% − expected%), ±MONEY_CAP)      scale = PARTIAL_CYCLE_GAP_SCALE for 2026, 1 for a past race",
+            "either side's money missing → 0: the typical gap for the race's situation (the lean and incumbency already carry it), not \"no money\"",
+          ]} note="A year's own intercept absorbs a cycle's party-wide money tilt (and 2026's partial level). Multi-member districts sum each party's nominees. The strip on past seat rows uses the same term at full-cycle receipts. Districts the money data does not reach yet carry no money term, so as coverage fills, more seats get one." />
+          <Constants rows={[
+            { name: "MONEY_K", value: SC.MONEY_K, meaning: "Points of margin per point of money gap beyond the expected one: the sweep's best cell in both holdout years.", basis: "calibrated", source: "scripts/stateLegBacktest.ts --money" },
+            { name: "MONEY_CAP", value: SC.MONEY_CAP, meaning: "The term's cap. The holdout gains shrink as the cap grows — a large residual gap over-predicts — so the money term is a nudge of up to 1.5 points.", basis: "calibrated", source: "scripts/stateLegBacktest.ts --money" },
+            { name: "PARTIAL_CYCLE_GAP_SCALE", value: SC.PARTIAL_CYCLE_GAP_SCALE, meaning: "2026 receipts are to-date (each state's data-through date). Borrowed from the federal forecast, where the final gap is 0.90–0.91 × the September gap; there are no mid-cycle snapshots of state filings to measure the legislative ratio.", basis: "decision" },
+          ] satisfies ConstantRow[]} />
+        </Block>
+        <Block label="Money sweep" meta={`generated ${MS.generatedAt} · scripts/stateLegBacktest.ts --money --emit`}>
+          <P>The same holdout with the money term at each K and cap (K 0 is no money term anywhere), scored after fitted incumbency on every contested seat and on the seats whose race has both sides&apos; money on file. The term is applied to the held-out year&apos;s full-cycle receipts. Re-run after new money lands: the table shows whether the gain holds and whether the best cell moves.</P>
+          <DataTable align="lrrrrrrr" head={["Year", "K", "Cap", "Seats", "With money", "MAE (inc.)", "MAE, money seats", "Inc. pts"]}
+            rows={MS.rows.filter((r) => r.k === 0 || [1, 1.5, 3].includes(r.cap)).map((r) => [r.year, r.k, r.k === 0 ? "—" : r.cap, r.n, r.nMoney, r.maeAfterIncumbency.toFixed(3), r.maeMoneySeats.toFixed(3), r.incumbencyPts.toFixed(2)])} maxWidth="max-w-3xl" />
         </Block>
         <Block label="Independents">
           {(() => {
@@ -238,7 +264,6 @@ export default function StateLegMethodology() {
         </Block>
         <Block label="Not in the model">
           <Defs items={[
-            { term: "Money", def: "Not yet in the projection: dataset E is being collected (2026 first, then the past cycles) and the term will be fitted on the 2022 and 2024 holdouts the way the precinct page's Ohio fit was, which moved a district by up to 3 points." },
             { term: "Candidate quality and polls", def: "No track-record or polling term; the seat's own history is the only candidate signal." },
             { term: "Below the chamber", def: "The chamber shock is one number per chamber; a regional swing inside a state (one metro moving against the rest) is still independent seat noise." },
           ]} />
@@ -313,6 +338,8 @@ export default function StateLegMethodology() {
             { cmd: "node scripts/build-state-leg-pres-by-era.mjs · build-state-leg-results.mjs · split-state-leg-results.mjs · build-state-leg-redistricting.mjs", does: "rebuild the modules and the legislature page's result slices" },
             { cmd: "npx tsx --conditions=react-server scripts/stateLegBacktest.ts --emit", does: "the projection holdout; writes data/stateLegValidation.ts" },
             { cmd: "npx tsx --conditions=react-server scripts/stateLegBacktest.ts --sweep --emit", does: "the seat-share and recent-row weight sweeps; writes data/stateLegTypeWeightSweep.ts" },
+            { cmd: "npx tsx --conditions=react-server scripts/stateLegBacktest.ts --money --emit", does: "the money term's K × cap sweep; writes data/stateLegMoneySweep.ts" },
+            { cmd: "npm run state-leg-money", does: "after new fundraising lands: rebuild dataset E's module, re-run the holdout and the money sweep (methodology tables), rebuild the chamber slices; the expected-gap fit refreshes itself" },
             { cmd: "npx tsx --conditions=react-server scripts/stateLegIndependentBacktest.ts --emit", does: "the independent rule's holdout; writes data/stateLegIndependentValidation.ts" },
             { cmd: "npx tsx --conditions=react-server scripts/stateLegPopularVoteBacktest.ts --emit", does: "the chamber popular vote's holdout and the unopposed-turnout measurement; writes data/stateLegPopularVoteValidation.ts" },
             { cmd: "npx tsx --conditions=react-server scripts/buildStateLegAtlasSlices.ts [ST]", does: "rebuild the chamber slices the atlas pages read (projection included)" },

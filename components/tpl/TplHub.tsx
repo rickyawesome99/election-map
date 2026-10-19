@@ -24,7 +24,11 @@ const BAND_COLOR: Record<string, string> = { "Safe D": "#1b408c", "Likely D": "#
 // A table row: districts carry no elasticity or race count of their own.
 type Row = { key: string; name: string; sub: string; value: number; href: string; beta?: number; races?: number };
 
-export function TplHub({ summary }: { summary: ModelSummary }) {
+// One electoral-vote unit: a state, ME/NE's district votes by district code, or DC with its
+// latest presidential margin standing in for the TPL it doesn't have.
+export type EvUnit = { key: string; ev: number; fallback: number };
+
+export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: EvUnit[] }) {
   const { geo, setGeo } = useTplGeo();
   const [lens, setLens] = useState<Lens>("all");
   const [sort, setSort] = useState<Sort>("c");
@@ -57,30 +61,63 @@ export function TplHub({ summary }: { summary: ModelSummary }) {
     return c;
   }, [rows]);
   const maxCount = Math.max(...Object.values(counts), 1);
+
+  // The strip above the map: seats on each side of zero for the current geography and lens,
+  // and (States only) the electoral votes those leans add up to.
+  const sides: [number, number] = [rows.filter((r) => r.value > 0).length, rows.filter((r) => r.value < 0).length];
+  const evSplit = useMemo(() => {
+    const at = (tpl: number, wrs: Record<number, number>) => (lens === "all" ? tpl : wrs[lens] ?? tpl);
+    const lean = new Map<string, number>([
+      ...summary.states.map((s) => [s.abbr, at(s.tpl, s.yearWrs)] as const),
+      ...summary.districts.map((d) => [d.code, at(d.tpl, d.yearWrs)] as const),
+    ]);
+    let r = 0, d = 0;
+    for (const u of evUnits) {
+      const v = lean.get(u.key) ?? u.fallback;
+      if (v > 0) r += u.ev;
+      else if (v < 0) d += u.ev;
+    }
+    return [r, d] as [number, number];
+  }, [summary, evUnits, lens]);
+  // Inline in the section head, after "Map": the R · D split with a small label.
+  const split = ([r, d]: [number, number], label: string, rule = false) => (
+    <span className="inline-flex items-baseline gap-1.5 whitespace-nowrap" style={rule ? { borderLeft: "1px solid var(--app-border)", paddingLeft: 12 } : undefined}>
+      <span className="text-sm font-extrabold tabular-nums">
+        <span style={{ color: "var(--party-rep)" }}>{r}</span>
+        <span style={{ color: "var(--app-text-muted)" }}> · </span>
+        <span style={{ color: "var(--party-dem)" }}>{d}</span>
+      </span>
+      <span className="text-[11px] font-semibold uppercase tracking-wider">{label}</span>
+    </span>
+  );
   const shown = showAll ? ranked : ranked.slice(0, 14);
 
   return (
     <div>
       <LedgerSectionHead
         label="Map"
-        meta={lens === "all" ? "Blended, Recency-Weighted True Partisan Lean" : `${lens} Weighted Race Score (WRS)`}
-        rightClassName="w-full sm:ml-auto sm:w-auto"
-        right={
-          <span className="flex flex-wrap items-center gap-3">
-            <Segmented label="Geography" options={[{ key: "states", label: "States" }, { key: "districts", label: "Districts" }]} value={geo} onChange={(g) => { setGeo(g); setShowAll(false); }} />
-            <MapLegend />
+        meta={
+          <span className="inline-flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            {split(sides, geo === "states" ? "R · D states" : "R · D districts")}
+            {geo === "states" && split(evSplit, "R · D EVs", true)}
           </span>
         }
+        right={<MapLegend />}
       />
-      <div className="mb-2 flex flex-wrap items-center gap-2">
-        <span className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Year lens</span>
-        <Pills label="Year lens" size="xs" value={lens} onChange={setLens} options={[{ key: "all" as Lens, label: "TPL", title: "Blended, recency-weighted lean" }, ...summary.lensYears.map((y) => ({ key: y as Lens, label: String(y), title: `${y}'s weighted race score alone` }))]} />
+      <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-2">
+        <span className="flex flex-wrap items-center gap-2">
+          <span className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Year lens</span>
+          <Pills label="Year lens" size="xs" value={lens} onChange={setLens} options={[{ key: "all" as Lens, label: "TPL", title: "Blended, recency-weighted lean" }, ...summary.lensYears.map((y) => ({ key: y as Lens, label: String(y), title: `${y}'s weighted race score alone` }))]} />
+        </span>
+        <span className="sm:ml-auto">
+          <Segmented label="Geography" options={[{ key: "states", label: "States" }, { key: "districts", label: "Districts" }]} value={geo} onChange={(g) => { setGeo(g); setShowAll(false); }} />
+        </span>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
+      <div className="grid grid-cols-1 gap-8">
         <div className="min-w-0">
-          <TplMap mode={geo} rows={rows} valueLabel={valueLabel} linkLabel={geo === "states" ? "Open state page" : "Open district"} />
-          <Foot>Click a {geo === "states" ? "state" : "district"} for its {geo === "states" ? "page" : "pipeline inside its state page"}. Pinch or scroll to zoom.</Foot>
+          <TplMap mode={geo} rows={rows} valueLabel={valueLabel} linkLabel={geo === "states" ? "Open state page" : "Open district"} wide />
+          <Foot>{lens === "all" ? "Blended, recency-weighted True Partisan Lean" : `${lens} Weighted Race Score (WRS)`}. Click a {geo === "states" ? "state" : "district"} for its {geo === "states" ? "page" : "pipeline inside its state page"}. Pinch or scroll to zoom.</Foot>
         </div>
         <div className="min-w-0">
           <div className="mb-2 flex flex-wrap items-center gap-2">
@@ -125,7 +162,7 @@ export function TplHub({ summary }: { summary: ModelSummary }) {
         </div>
       </div>
 
-      <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
         <div className="min-w-0">
           <LedgerSectionHead label="Distribution" meta={`${rows.length} ${geo} by band${lens === "all" ? "" : ` · ${lens} WRS`}`} />
           <div className="flex flex-col gap-1.5">
@@ -152,7 +189,7 @@ export function TplHub({ summary }: { summary: ModelSummary }) {
             </tbody>
           </table></div>
         </div>
-        <div className="min-w-0">
+        <div className="min-w-0 md:col-span-2">
           <LedgerSectionHead label="Go deeper" />
           <table className="w-full border-collapse text-xs">
             <tbody>

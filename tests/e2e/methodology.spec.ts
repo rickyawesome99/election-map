@@ -16,13 +16,12 @@ const TABS: [string, string, string][] = [
 ];
 const NO_HISTORY = new Set(["Change Log", "Sources"]);
 
-test("methodology sits between Analysis and District Finder in the top navigation", async ({ page }) => {
+test("methodology is reached from the footer, not the top navigation", async ({ page }) => {
   await page.goto("/overview");
   const topNav = page.locator("nav").first();
   const labels = await topNav.getByRole("link").allTextContents();
-  expect(labels.slice(labels.indexOf("Analysis"), labels.indexOf("Analysis") + 3)).toEqual(["Analysis", "Methodology", "District Finder"]);
-  // The tab, not the footer's Methodology link.
-  await topNav.getByRole("link", { name: "Methodology", exact: true }).click();
+  expect(labels).not.toContain("Methodology");
+  await page.locator("footer").getByRole("link", { name: "Methodology", exact: true }).click();
   await expect(page).toHaveURL(/\/methodology$/);
   await expect(page.getByRole("heading", { name: "Methodology", level: 1 })).toBeVisible({ timeout: 20_000 });
 });

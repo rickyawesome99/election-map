@@ -17,6 +17,7 @@ import { contest2026, fieldPersons, personKey, projectedSeatWinners } from "@/li
 export { personKey };
 import { marginToRating } from "@/lib/colorScale";
 import { stateLegIndependents } from "@/data/stateLegIndependents";
+import { raceMoneyTerm, type RaceMoneyTerm } from "@/lib/stateLegMoneyModel";
 
 /**
  * The 2026 projection for every state legislative district on the ballot: a district TPL built
@@ -32,13 +33,20 @@ import { stateLegIndependents } from "@/data/stateLegIndependents";
  *                district draws from, corrected by the presidential delta between those old polygons
  *                and today's, kept only when contested old districts cover MIN_COVERAGE of today's
  *                population.
- *   2. Neutral   NM = margin − INCUMBENCY_PTS × incumbent sign − β*(state) × E(year), the state
- *                model's rule with a legislative incumbency term fitted by the backtest.
+ *   2. Neutral   NM = margin − INCUMBENCY_PTS × incumbent sign − β*(state) × E(year) − money, the state
+ *                model's rule with a legislative incumbency term fitted by the backtest; money is the
+ *                race's money term (below) at full-cycle receipts, averaged over a relocated row's old
+ *                districts like its margin (0 where the money is not on file).
  *   3. Lean      per year: P and L rows combined on TYPE_WEIGHTS (renormalised over the types
  *                present; the seat row's weight × RECENT_SEAT_BOOST in the latest year that has one),
  *                years on YEAR_WEIGHTS × coverage, two-pass Huber (HUBER_C) on seat rows.
  *   4. Forward   margin = lean + β* × E(2026) + INCUMBENCY_PTS × incumbent sign (the 2026 field's
- *                incumbent); no Democrat or no Republican in the field decides the seat outright.
+ *                incumbent) + money; no Democrat or no Republican in the field decides the seat outright.
+ *   4b. Money    clamp(MONEY_K × (scale × gap% − structural gap%), ±MONEY_CAP), gap% = (R − D) / (R + D)
+ *                of the two sides' contributions, structural gap% the expected one for the seat's
+ *                incumbent and presidential lean (lib/stateLegMoneyModel.ts, refitted from whatever money
+ *                is on file); scale = PARTIAL_CYCLE_GAP_SCALE for the to-date 2026 cycle, 1 for a past one.
+ *                Either side's money missing: 0.
  *   5. Spread    σ² = SIGMA² + STATE_SHOCK² + (β* σ_E)²; P(D) is the normal tail.
  *   6. Chamber   5,000 draws of a shared national shock, a shared chamber shock (STATE_SHOCK) and
  *                independent SIGMA noise per seat;
@@ -60,14 +68,17 @@ import { stateLegIndependents } from "@/data/stateLegIndependents";
 export const STATE_LEG_FORECAST_CONSTANTS = {
   TYPE_WEIGHTS: { P: 0.6, L: 0.2 } as Record<"P" | "L", number>, // the District TPL's P/H ratio: a seat's own race is to its district what a House race is to a congressional district
   RECENT_SEAT_BOOST: 3,  // the seat row's type weight × this in the latest year that has one (L 0.2 → 0.6, half that year's lean): the backtest's sweep (2026-10-14), MAE 5.85 → 5.74 (2022) and 5.39 → 5.18 (2024)
-  INCUMBENCY_PTS: 3.0,   // fitted by scripts/stateLegBacktest.ts: 3.7 (2022) / 1.8 (2024) with RECENT_SEAT_BOOST (2026-10-16 re-run), set at their rounded mean
-  SIGMA: 7.0,            // seat-level noise beyond the national and chamber shocks, fitted by the backtest (holdout residual spread after τ: 7.4 / 6.9)
-  STATE_SHOCK: 3.5,      // chamber-level shock τ shared by every seat of a chamber in a year, fitted by the backtest (chamber-mean residual spread: 3.4 / 3.5 with RECENT_SEAT_BOOST, 2026-10-16 re-run)
+  INCUMBENCY_PTS: 2.7,   // fitted by scripts/stateLegBacktest.ts: 3.6 (2022) / 1.8 (2024) with the money term (2026-10-18 re-run; 3.7 / 1.8 without it), set at their rounded mean
+  SIGMA: 7.0,            // seat-level noise beyond the national and chamber shocks, fitted by the backtest (holdout residual spread after τ: 7.2 / 6.8 with the money term, 2026-10-18)
+  STATE_SHOCK: 3.4,      // chamber-level shock τ shared by every seat of a chamber in a year, fitted by the backtest (chamber-mean residual spread: 3.44 / 3.37 with the money term, 2026-10-18 re-run)
   MIN_COVERAGE: 0.5,     // a relocated row needs contested old districts covering this share of today's population
   IND_RECORD_SHARE: 40,  // a non-incumbent independent is modeled when they took this share of their last head-to-head in the seat
   IND_PRIOR_PTS: 14,     // a modeled independent runs this far ahead of a generic nominee of the absent party before their own record: the median of the 16 head-to-heads 2022-24 (scripts/stateLegIndependentBacktest.ts)
   IND_SHRINK_K: 1,       // their record (mean residual of the last two head-to-heads) is shrunk toward IND_PRIOR_PTS: (n·mean + K·prior) / (n + K)
   IND_SIGMA: 0,          // extra seat noise in an independent's race: the backtest's robust residual spread (7.1 with RECENT_SEAT_BOOST) is within SIGMA and STATE_SHOCK, so none
+  MONEY_K: 0.03,         // points per point of residual money gap: the --money sweep's best cell in both holdout years (2026-10-18)
+  MONEY_CAP: 1.5,        // the money term's cap in points: the gain shrinks as the cap grows (a large residual gap over-predicts), best at 1.5 in both years
+  PARTIAL_CYCLE_GAP_SCALE: 0.9, // 2026 receipts are to-date: the federal forecast's measured final/September gap ratio (no state-filing snapshots to measure our own)
   SIMS: 5000,
 };
 
@@ -87,6 +98,8 @@ export interface ProjectionRow {
   incSign: number;      // +1 R incumbent, −1 D incumbent (fractional when relocated)
   incPts: number;
   envPts: number;
+  /** The race's money term stripped from the row (R-positive points; 0 where the money is not on file). */
+  moneyPts: number;
   NM: number;
   huber: number;
   weight: number;       // final share of the lean
@@ -101,6 +114,8 @@ export interface DistrictProjection {
   envPts: number;
   incSign: number;
   incPts: number;
+  /** The 2026 money term (contested seats with both sides' money on file), else null. */
+  money: RaceMoneyTerm | null;
   margin: number | null;
   sigma: number;
   pD: number | null;
@@ -338,6 +353,12 @@ export interface ProjectOptions {
   typeWeights?: Record<"P" | "L", number>;
   /** The backtest's sweep: the most recent seat row's type weight × this in place of RECENT_SEAT_BOOST (1 = none). */
   recentSeatBoost?: number;
+  /** The backtest's money sweep: MONEY_K / MONEY_CAP / the target year's gap scale (0 = no money term). */
+  moneyK?: number;
+  moneyCap?: number;
+  moneyScale?: number;
+  /** The backtest's money variants: strip past seat rows (default true). */
+  moneyStrip?: boolean;
 }
 
 export function projectDistrict(abbr: string, chamber: Chamber, district: StateLegDistrict, opts: ProjectOptions = {}): DistrictProjection {
@@ -347,6 +368,9 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
   const maxYear = opts.maxYear ?? Number.POSITIVE_INFINITY;
   const incPts = opts.incumbencyPts ?? C.INCUMBENCY_PTS;
   const TW = opts.typeWeights ?? C.TYPE_WEIGHTS;
+  const moneyK = opts.moneyK ?? C.MONEY_K, moneyCap = opts.moneyCap ?? C.MONEY_CAP;
+  const moneyOf = (k: string, year: number, sign: number, scale = 1) => raceMoneyTerm(abbr, chamber, k, year, sign, moneyK, moneyCap, scale);
+  const stripOf = (k: string, year: number, sign: number) => (opts.moneyStrip === false ? null : moneyOf(k, year, sign));
   const presByEra = stateLegPresByEra[abbr]?.[chamber] ?? {};
   const current = presByEra["current"] ?? {};
   const currentIndex = indexByNormalizedKey(current);
@@ -357,7 +381,7 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
     const v = presNow?.[p];
     if (!v || Number(p) > maxYear) continue;
     const envPts = -(beta * (fit.E[Number(p)] ?? 0));
-    rows.push({ year: Number(p), kind: "P", label: `${p} President`, era: "current", raw: v.margin, relocated: false, coverage: 1, presDelta: 0, incSign: 0, incPts: 0, envPts, NM: v.margin + envPts, huber: 1, weight: 0 });
+    rows.push({ year: Number(p), kind: "P", label: `${p} President`, era: "current", raw: v.margin, relocated: false, coverage: 1, presDelta: 0, incSign: 0, incPts: 0, envPts, moneyPts: 0, NM: v.margin + envPts, huber: 1, weight: 0 });
   }
 
   const years = (stateLegCalendar[abbr]?.[chamber]?.electionYears ?? []).filter((y) => y <= maxYear);
@@ -366,13 +390,14 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
     if (!block) continue;
     const era = eraOf(abbr, chamber, year);
     const index = indexByNormalizedKey(block.districts);
-    let raw: number | null = null, coverage = 1, presDelta = 0, incSign = 0, relocated = false;
+    let raw: number | null = null, coverage = 1, presDelta = 0, incSign = 0, relocated = false, moneyPts = 0;
     if (era === "current") {
       const r = lookupByDistrictCode(index, abbr, chamber, key);
       if (!r) continue;
       raw = contestedMargin(r);
       if (raw == null) continue;
       incSign = incumbentSign(r);
+      moneyPts = stripOf(key, year, incSign)?.pts ?? 0;
     } else {
       relocated = true;
       const shares = compositeShares(abbr, chamber, key, era);
@@ -380,7 +405,7 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
       const presOldIndex = indexByNormalizedKey(presOld);
       const available = PRES_YEARS.filter((p) => presNow?.[p] && Object.values(presOld).some((d) => d[p]));
       const p = nearestPresYear(year, available);
-      let wSum = 0, mSum = 0, iSum = 0, pSum = 0, pW = 0;
+      let wSum = 0, mSum = 0, iSum = 0, pSum = 0, pW = 0, $Sum = 0;
       for (const [oldKey, w] of Object.entries(shares)) {
         if (isUnassignedResultKey(oldKey)) continue;
         const r = lookupByDistrictCode(index, abbr, chamber, oldKey);
@@ -388,19 +413,21 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
         const m = contestedMargin(r);
         if (m == null) continue;
         wSum += w; mSum += w * m; iSum += w * incumbentSign(r);
+        $Sum += w * (stripOf(oldKey, year, incumbentSign(r))?.pts ?? 0);
         const po = p ? lookupByDistrictCode(presOldIndex, abbr, chamber, oldKey)?.[p] : undefined;
         if (po) { pSum += w * po.margin; pW += w; }
       }
       if (wSum < C.MIN_COVERAGE) continue;
       raw = mSum / wSum;
       incSign = iSum / wSum;
+      moneyPts = $Sum / wSum;
       coverage = wSum;
       if (p && pW > 0 && presNow?.[p]) presDelta = presNow[p]!.margin - pSum / pW;
       raw += presDelta;
     }
     const envPts = -(beta * (fit.E[year] ?? 0));
     const incStrip = -incPts * incSign;
-    rows.push({ year, kind: "L", label: `${year} ${chamber === "house" ? "House" : "Senate"}`, era, raw, relocated, coverage, presDelta, incSign, incPts: incStrip, envPts, NM: raw + incStrip + envPts, huber: 1, weight: 0 });
+    rows.push({ year, kind: "L", label: `${year} ${chamber === "house" ? "House" : "Senate"}`, era, raw, relocated, coverage, presDelta, incSign, incPts: incStrip, envPts, moneyPts, NM: raw + incStrip + envPts - moneyPts, huber: 1, weight: 0 });
   }
 
   // Lean: two passes, the second with Huber factors on the seat rows.
@@ -524,7 +551,9 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
   }
   const contestedSeats = contest === "contested" ? seats - guaranteed.dem - guaranteed.rep : contest === "independent" ? indep!.seats : 0;
   const incFwd = incPts * incSign;
-  const margin = lean == null ? null : indep ? (indep.slot === "R" ? indep.advantage : -indep.advantage) : lean + envPts + incFwd;
+  // A past target year (the backtest) is a contested race by construction; 2026 needs the field to say so.
+  const money = contest === "contested" || (targetYear !== electionYear && !indep) ? moneyOf(key, targetYear, incSign, opts.moneyScale ?? (targetYear === electionYear ? C.PARTIAL_CYCLE_GAP_SCALE : 1)) : null;
+  const margin = lean == null ? null : indep ? (indep.slot === "R" ? indep.advantage : -indep.advantage) : lean + envPts + incFwd + (money?.pts ?? 0);
   const indepSigma = indep?.sameElectorate ? Math.hypot(C.SIGMA, C.IND_SIGMA) : Math.sqrt(sigma ** 2 + C.IND_SIGMA ** 2);
   const pIndep = indep ? winProbabilityD(-indep.advantage, indepSigma) : null;
   const pD = margin == null || contest === "not-up" ? null
@@ -533,7 +562,7 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
     : contest === "contested" ? winProbabilityD(margin, sigma) : null;
   const pI = contest === "independent" ? pIndep : contest === "other" && abbr !== "NE" ? 1 : null;
   return {
-    key, label: district.label, rows, lean, beta, envPts, incSign, incPts: incFwd, margin, sigma, pD,
+    key, label: district.label, rows, lean, beta, envPts, incSign, incPts: incFwd, money, margin, sigma, pD,
     rating: margin == null || contest !== "contested" ? null : marginToRating(margin),
     contest, seats, guaranteed, contestedSeats, candidates2026: field, indep, pI,
   };

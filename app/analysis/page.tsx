@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { electionYear } from "@/data/forecastData";
+import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
 
 export const metadata = {
   title: `Analysis — ${electionYear} Forecast`,
@@ -49,16 +50,15 @@ export default function AnalysisPage() {
       <main>
         <section
           style={{
-            background: "linear-gradient(to bottom, transparent 0%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, var(--party-rep) 7%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 6%, var(--app-bg)) 100%)",
+            background: PAGE_HERO_BG,
           }}
         >
-          <div className="px-3 pb-4 pt-4 sm:px-4 md:px-6">
-            <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{electionYear} Election Analysis</div>
-            <h1 className="mt-1 text-4xl font-bold leading-none tracking-tight md:text-[2.75rem]" style={{ fontFamily: "var(--font-serif)" }}>Analysis</h1>
+          <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} pb-4`}>
+            <h1 style={PAGE_TITLE_STYLE}>Analysis</h1>
           </div>
         </section>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-14">
+        <div className={`${PAGE_CONTAINER} pb-14`}>
           {SECTIONS.map((section) => (
             <section key={section.title} className="pt-8 sm:pt-10 first:pt-6 sm:first:pt-7">
               <h2 className="pb-3 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)", borderBottom: "2px solid var(--app-text-primary)" }}>{section.title}</h2>

@@ -92,7 +92,8 @@ function warFor(state: string, office: string, race: string, year: number, candi
   return warIndex.get(`${state}|${office}|${race}|${year}|${candidate}`)?.war ?? null;
 }
 
-function pastHrefOf(stateAbbr: string, r: ComputedRace): string | undefined {
+/** A TPL row's individual past-election page (/senate/oh/2022), when one exists. Shared with the county page's TPL table. */
+export function pastHrefOf(stateAbbr: string, r: ComputedRace): string | undefined {
   const stateId = statesData.find((s) => s.abbr === stateAbbr)?.id ?? stateAbbr.toLowerCase();
   switch (r.raceType) {
     case "P": return pastElectionHref("president", stateId, r.year);

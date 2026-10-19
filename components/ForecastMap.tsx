@@ -4,7 +4,7 @@ import { memo, useState, useEffect, useRef, useMemo, useCallback, type CSSProper
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
-import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
+import { getRaceColor, marginToRating } from "@/lib/colorScale";
 import type { RaceType, NoElectionEntry } from "@/data/forecastData";
 import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, isProjectedFlip, type ForecastSummary } from "@/lib/forecastTypes";
 import { FlipPatternDefs, FlipSwatch, flipFill } from "./FlipStripes";
@@ -13,7 +13,8 @@ import { RaceTypeHeader, ForecastHero, ForecastRaceCards, KeyRaces } from "./For
 // Non-2026 seats already held by each party (Senate classes not up this cycle, Governor terms not up) —
 // added to projected win counts to get full chamber totals.
 export { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecastTypes";
-import Sidebar from "./Sidebar";
+import Sidebar, { ForecastCardBox, ForecastRatingPill, forecastCard, noElectionCard, raceHref } from "./Sidebar";
+import CountyTooltip, { CountyCardClose, CountyCardLink } from "./CountyTooltip";
 import StatesOverviewMap, { type MapMode, type StateRow } from "./StatesOverviewMap";
 import StatesCartogramGrid from "./StatesCartogramGrid";
 import StatesLedgerList from "./StatesLedgerList";
@@ -23,7 +24,7 @@ import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useTopo } from "@/lib/useTopology";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
-import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_HERO_BG } from "@/lib/pageLayout";
 
 // Each tab body is its own chunk, loaded only when that tab is the active one — the county
 // map and the district finder are the heaviest pieces of client
@@ -253,8 +254,6 @@ export default function ForecastMap({
   const darkMode = useDarkMode();
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
-  const mapColRef = useRef<HTMLDivElement>(null);
-  const [mapColHeight, setMapColHeight] = useState<number | undefined>(undefined);
   const statesMapBoxRef = useRef<HTMLDivElement>(null);
   const [statesMapBoxHeight, setStatesMapBoxHeight] = useState<number | undefined>(undefined);
 
@@ -262,17 +261,6 @@ export default function ForecastMap({
     if (activeTab === "forecast") persistRaceType(raceType);
   }, [activeTab, raceType]);
 
-  // Keep the "Key Races" column capped to the height of the map column (forecast tab only).
-  useEffect(() => {
-    const el = mapColRef.current;
-    if (!el || activeTab !== "forecast") return;
-    const ro = new ResizeObserver((entries) => {
-      const entry = entries[0];
-      if (entry) setMapColHeight(entry.contentRect.height);
-    });
-    ro.observe(el);
-    return () => ro.disconnect();
-  }, [activeTab, raceType]);
 
   // States tab: the list scrollbox is capped to the map/cartogram box's own height —
   // deliberately excludes the legend below it.
@@ -289,7 +277,8 @@ export default function ForecastMap({
 
   function selectRaceType(type: RaceType) {
     persistRaceType(type);
-    router.push(`/${type}`);
+    // Keep the reader where they are: the map and the toggle sit below the fold on phones.
+    router.push(`/${type}`, { scroll: false });
   }
 
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
@@ -322,18 +311,23 @@ export default function ForecastMap({
   }, []);
 
   return (
-    <div className="min-h-screen" style={{ background: t.bg }}>
+    <div className="min-h-screen overflow-x-clip" style={{ background: t.bg }}>
 
       {/* ── Page content ── */}
-      {/* Historical uses the detail pages' content column (PAGE_CONTAINER) instead of the full-width padding */}
-      <div className={activeTab === "historical" ? "pb-10" : "px-3 pt-1 pb-3 sm:px-4 sm:pt-1 sm:pb-4 md:px-6 md:pt-1 md:pb-5"}>
+      {/* Historical and Forecast use the detail pages' content column (PAGE_CONTAINER) instead of
+          the full-width padding; Historical's NationalCountyMap brings its own. */}
+      <div className={activeTab === "historical" ? "pb-10" : activeTab === "forecast" ? `${PAGE_CONTAINER} pt-1 pb-5` : "px-3 pt-1 pb-3 sm:px-4 sm:pt-1 sm:pb-4 md:px-6 md:pt-1 md:pb-5"}>
 
         {/* ── Forecast hero + flat race-type header (forecast tab only) ── */}
         {activeTab === "forecast" && (
+          // Bleeds the tint to the viewport edges from inside the content column; the padding puts
+          // the hero's text back on the column (the root's overflow-x-clip absorbs a scrollbar).
           <div
-            className="-mx-3 -mt-1 mb-3 px-3 pt-1 pb-px sm:-mx-4 sm:px-4 md:-mx-6 md:px-6"
+            className={`-mt-1 mb-3 ${PAGE_HERO_TOP} pb-px`}
             style={{
-              background: "linear-gradient(to bottom, transparent 0%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, var(--party-rep) 7%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 6%, var(--app-bg)) 100%)",
+              marginInline: "calc(50% - 50vw)",
+              paddingInline: "calc(50vw - 50%)",
+              background: PAGE_HERO_BG,
             }}
           >
             <ForecastHero
@@ -404,9 +398,10 @@ export default function ForecastMap({
           </div>
         )}
 
-        {/* ── Map (2/3) + Key Races (1/3) on desktop, forecast tab only ── */}
-        <div className={activeTab === "forecast" || activeTab === "states" ? "md:grid md:grid-cols-3 md:gap-8 md:items-start" : ""}>
-        <div ref={mapColRef} className={activeTab === "forecast" || activeTab === "states" ? "md:col-span-2" : ""}>
+        {/* ── Delegation: map (2/3) + ledger (1/3) on desktop. Forecast: the map runs the full
+            column with Key Races beneath it, since a third of PAGE_CONTAINER is too narrow. ── */}
+        <div className={activeTab === "states" ? "md:grid md:grid-cols-3 md:gap-8 md:items-start" : ""}>
+        <div className={activeTab === "states" ? "md:col-span-2" : ""}>
 
         {/* ── States map/cartogram (its own block — decoupled from the forecast map's hover/zoom state) ── */}
         {activeTab === "states" && (
@@ -430,105 +425,23 @@ export default function ForecastMap({
 
         {/* ── Map card (forecast only — counties renders its own layout below) ── */}
         {activeTab === "forecast" && <div
-          className="relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-auto md:aspect-[8/5]"
+          className="relative aspect-[8/5] w-full overflow-hidden rounded-xl"
           onMouseMove={tip.onMouseMove}
         >
-          {/* Hover tooltip */}
-          {hovered && (() => {
-            const demPct = Math.max(0, Math.min(100, 50 - hovered.margin / 2));
-            const repPct = Math.max(0, Math.min(100, 50 + hovered.margin / 2));
-            const marginAbs = Math.abs(hovered.margin);
-            const marginLabel = hovered.margin <= 0
-              ? `D+${marginAbs.toFixed(1)}`
-              : `R+${marginAbs.toFixed(1)}`;
-            const hoveredRating = marginToRating(hovered.margin);
-            const { bg: badgeColor, text: badgeText } = getRatingColors(hoveredRating);
+          {/* Hover tooltips: the county maps' card (CountyTooltip), rating pill beside the name */}
+          {hovered && (
+            <CountyTooltip {...forecastCard(hovered)} boxRef={tip.tooltipRef} className="absolute z-20 hidden md:block" aside={<ForecastRatingPill margin={hovered.margin} />} />
+          )}
+          {hoveredNoElection && (
+            <CountyTooltip {...noElectionCard(hoveredNoElection)} boxRef={tip.tooltipRef} className="absolute z-20 hidden md:block" />
+          )}
 
-            const tipW = 190;
-            const marginColor = hovered.margin <= 0 ? t.demText : t.repText;
-
-            return (
-              <div ref={tip.tooltipRef}
-                className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
-                style={{
-                  width: tipW,
-                  padding: "6px 8px",
-                  background: t.panel,
-                  border: `1px solid ${t.border}`,
-                  color: t.textPrimary,
-                  boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
-                }}
-              >
-                {/* Header: district name + rating badge + margin top-right */}
-                <div className="flex items-center justify-between gap-1 mb-1.5">
-                  <div className="flex items-center gap-1">
-                    <span className="font-bold text-xs">{hovered.name}</span>
-                    <span
-                      className="font-semibold px-1 py-0.5 rounded"
-                      style={{ background: badgeColor, color: badgeText, whiteSpace: "nowrap", fontSize: 10 }}
-                    >
-                      {hoveredRating}
-                    </span>
-                  </div>
-                  <span className="font-bold shrink-0" style={{ fontSize: 15, color: marginColor }}>
-                    {marginLabel}
-                  </span>
-                </div>
-                {/* Candidate rows: name left, percentage right */}
-                {hovered.candidates ? (
-                  <div className="mb-1.5">
-                    <div className="flex justify-between items-baseline">
-                      <span className="truncate mr-1" style={{ color: t.demText, fontSize: 11 }}>{hovered.candidates.dem.name}{hovered.candidates.dem.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}</span>
-                      <span className="font-semibold shrink-0" style={{ color: t.demText, fontSize: 11 }}>{demPct.toFixed(1)}%</span>
-                    </div>
-                    <div className="flex justify-between items-baseline">
-                      <span className="truncate mr-1" style={{ color: t.repText, fontSize: 11 }}>{hovered.candidates.rep.name}{hovered.candidates.rep.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}</span>
-                      <span className="font-semibold shrink-0" style={{ color: t.repText, fontSize: 11 }}>{repPct.toFixed(1)}%</span>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="flex gap-2 mb-1.5">
-                    <span className="font-semibold" style={{ color: t.demText, fontSize: 11 }}>D {demPct.toFixed(1)}%</span>
-                    <span className="font-semibold" style={{ color: t.repText, fontSize: 11 }}>R {repPct.toFixed(1)}%</span>
-                  </div>
-                )}
-                {/* D/R split bar */}
-                <div className="flex rounded-full overflow-hidden" style={{ height: 3 }}>
-                  <div style={{ width: `${demPct}%`, background: t.demText }} />
-                  <div style={{ width: `${repPct}%`, background: t.repText }} />
-                </div>
-              </div>
-            );
-          })()}
-
-          {/* No-election hover tooltip */}
-          {hoveredNoElection && (() => {
-            const tipW = 185;
-            return (
-              <div ref={tip.tooltipRef}
-                className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
-                style={{
-                  width: tipW,
-                  padding: "8px 10px",
-                  background: t.panel,
-                  border: `1px solid ${t.border}`,
-                  color: t.textPrimary,
-                  boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
-                }}
-              >
-                <div className="font-bold text-sm mb-1">{hoveredNoElection.state}</div>
-                <div className="text-xs font-semibold" style={{ color: t.textMuted }}>
-                  No Election in 2026
-                </div>
-                <div className="text-xs mt-0.5" style={{ color: t.textVeryMuted }}>
-                  Click for incumbent info
-                </div>
-              </div>
-            );
-          })()}
-
+          {/* A 960×600 frame in the box's own 8:5 shape at every width: the old 800×600 frame was
+              narrower than the drawing, so a phone's squarer box cut off both coasts. */}
           <ComposableMap
             key={forecastMapKey}
+            width={960}
+            height={600}
             projection="geoAlbersUsa"
             projectionConfig={{ scale: 1200 }}
             style={{ width: "100%", height: "100%" }}
@@ -539,6 +452,8 @@ export default function ForecastMap({
               filterZoomEvent={filterMapZoomEvent}
               onMoveEnd={() => setViewChanged(true)}
             >
+            {/* The AK/HI insets pull the drawing left of the frame's center; shift it back. */}
+            <g transform="translate(18 0)">
             {geoTopo && (
             <Geographies geography={geoTopo}>
               {({ geographies }: { geographies: GeoFeature[] }) => (
@@ -557,6 +472,7 @@ export default function ForecastMap({
             </Geographies>
             )}
             {isHouse && stateLinesTopo && <HouseStateOutlines t={t} topo={stateLinesTopo} />}
+            </g>
             </ZoomableGroup>
           </ComposableMap>
 
@@ -574,90 +490,17 @@ export default function ForecastMap({
           {/* ── Sidebar (floating panel) ── */}
           <Sidebar selected={selected} raceType={raceType} onClose={() => setSelected(null)} theme={t} />
 
-          {/* ── No-Election Panel (desktop floating) ── */}
-          {selectedNoElection && (() => {
-            const noElColor = selectedNoElection.party === "D" ? t.demText : selectedNoElection.party === "R" ? t.repText : t.textPrimary;
-            const noElBg = selectedNoElection.party === "D" ? t.candidateDemBg : selectedNoElection.party === "R" ? t.candidateRepBg : t.tabBg;
-            return (
-              <div
-                className="absolute z-30 hidden flex-col overflow-hidden rounded-xl backdrop-blur-sm md:flex"
-                style={{
-                  right: "1.25rem",
-                  bottom: "12px",
-                  width: 172,
-                  background: t.legendBg,
-                  border: `1px solid ${t.border}`,
-                  boxShadow: "0 10px 28px rgba(0,0,0,0.22)",
-                  color: t.textPrimary,
-                }}
-              >
-                {/* Header */}
-                <div className="shrink-0 p-2 pb-1.5" style={{ borderBottom: `1px solid ${t.border}` }}>
-                  <div className="flex items-center justify-between gap-1.5">
-                    <h2 className="min-w-0 flex-1 truncate text-sm font-bold leading-tight" style={{ color: t.textPrimary }}>
-                      {selectedNoElection.state}
-                    </h2>
-                    <span
-                      className="rounded-full px-1.5 py-0.5 text-[9px] font-bold shrink-0"
-                      style={{ background: t.tabBg, color: t.textMuted }}
-                    >
-                      No Election
-                    </span>
-                    <button
-                      onClick={() => setSelectedNoElection(null)}
-                      className="flex h-5 w-5 shrink-0 items-center justify-center rounded transition-colors"
-                      style={{ color: t.textVeryMuted, background: t.tabBg }}
-                      aria-label="Close"
-                    >
-                      <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                {/* Body */}
-                <div className="p-2 flex flex-col gap-1.5">
-                  {/* Incumbent card */}
-                  <div className="rounded-md p-2" style={{ background: t.tabBg }}>
-                    <div className="text-[8px] font-bold uppercase tracking-wider mb-1" style={{ color: t.textMuted }}>
-                      Incumbent
-                    </div>
-                    <div className="flex items-center justify-between gap-1">
-                      <div className="truncate text-[10px] font-bold leading-tight" style={{ color: noElColor }}>
-                        {selectedNoElection.incumbent}
-                      </div>
-                      <span
-                        className="shrink-0 text-[9px] font-semibold px-1 py-0.5 rounded"
-                        style={{ background: noElBg, color: noElColor }}
-                      >
-                        {selectedNoElection.party}
-                      </span>
-                    </div>
-                  </div>
-                  {/* Next election card */}
-                  <div className="rounded-md p-2" style={{ background: t.tabBg }}>
-                    <div className="text-[8px] font-bold uppercase tracking-wider mb-1" style={{ color: t.textMuted }}>
-                      Next Election
-                    </div>
-                    <div className="text-base font-bold leading-none" style={{ color: t.textPrimary }}>
-                      {selectedNoElection.nextElection}
-                    </div>
-                  </div>
-                  {/* More info link */}
-                  <a
-                    href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}
-                    className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
-                    style={{ background: t.tabBg, color: t.textMuted }}
-                  >
-                    More Info
-                    <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            );
-          })()}
+          {/* ── No-Election card (desktop floating) ── */}
+          {selectedNoElection && (
+            <ForecastCardBox theme={t}>
+              <CountyTooltip
+                {...noElectionCard(selectedNoElection)}
+                variant="card"
+                aside={<CountyCardClose onClick={() => setSelectedNoElection(null)} label="Close" />}
+                footer={<CountyCardLink href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}>Seat page →</CountyCardLink>}
+              />
+            </ForecastCardBox>
+          )}
 
         </div>}
 
@@ -679,11 +522,8 @@ export default function ForecastMap({
 
         </div>
         {activeTab === "forecast" && (
-          <div
-            className="hidden md:block md:overflow-y-auto md:pr-1"
-            style={{ height: mapColHeight, maxHeight: mapColHeight }}
-          >
-            <KeyRaces races={data} basePath={`/${raceType}`} showSpecialBadge={raceType === "senate"} />
+          <div className="mt-8 hidden md:block">
+            <KeyRaces races={data} basePath={`/${raceType}`} showSpecialBadge={raceType === "senate"} twoColumn />
           </div>
         )}
         {activeTab === "states" && (
@@ -700,137 +540,29 @@ export default function ForecastMap({
         {/* Owns the historical hero (title + controls) as well as the dashboard, map and results */}
         {activeTab === "historical" && <NationalCountyMap theme={t} />}
 
-        {/* ── Mobile selected-race panel (below map) ── */}
-        {selected && (() => {
-          const demPct = (100 - selected.margin) / 2;
-          const repPct = (100 + selected.margin) / 2;
-          const selectedRating = marginToRating(selected.margin);
-          const { bg: rBg, text: rText } = getRatingColors(selectedRating);
-          const marginIsD = selected.margin <= 0;
-          return (
-            <div
-              className="mt-3 overflow-hidden rounded-xl md:hidden"
-              style={{ border: `1px solid ${t.border}`, background: t.legendBg, boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}
-            >
-              {/* Header */}
-              <div className="flex items-center gap-2 p-3 pb-2.5" style={{ borderBottom: `1px solid ${t.border}` }}>
-                <span className="min-w-0 flex-1 truncate text-sm font-bold" style={{ color: t.textPrimary }}>{selected.name}</span>
-                <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-bold" style={{ background: rBg, color: rText }}>{selectedRating}</span>
-                <button
-                  onClick={() => setSelected(null)}
-                  className="flex h-6 w-6 shrink-0 items-center justify-center rounded transition-colors"
-                  style={{ color: t.textVeryMuted, background: t.tabBg }}
-                  aria-label="Close"
-                >
-                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-              {/* Body */}
-              <div className="grid grid-cols-[1fr_auto] gap-2 p-3">
-                <div className="rounded-md p-2" style={{ background: t.tabBg }}>
-                  <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Candidates</div>
-                  {selected.candidates ? (
-                    <>
-                      <div className="flex items-baseline justify-between gap-2 mb-0.5">
-                        <span className="truncate text-[10px] font-bold" style={{ color: t.textPrimary }}>
-                          {selected.candidates.dem.name}{selected.candidates.dem.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}
-                        </span>
-                        <span className="shrink-0 text-[10px] font-bold tabular-nums" style={{ color: t.demText }}>{demPct.toFixed(1)}%</span>
-                      </div>
-                      <div className="flex items-baseline justify-between gap-2">
-                        <span className="truncate text-[10px] font-bold" style={{ color: t.textPrimary }}>
-                          {selected.candidates.rep.name}{selected.candidates.rep.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}
-                        </span>
-                        <span className="shrink-0 text-[10px] font-bold tabular-nums" style={{ color: t.repText }}>{repPct.toFixed(1)}%</span>
-                      </div>
-                    </>
-                  ) : (
-                    <div className="flex gap-3">
-                      <span className="text-[10px] font-bold" style={{ color: t.demText }}>D {demPct.toFixed(1)}%</span>
-                      <span className="text-[10px] font-bold" style={{ color: t.repText }}>R {repPct.toFixed(1)}%</span>
-                    </div>
-                  )}
-                </div>
-                <div className="rounded-md p-2" style={{ background: t.tabBg }}>
-                  <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Margin</div>
-                  <div className="text-base font-bold leading-none tabular-nums" style={{ color: marginIsD ? t.demText : t.repText }}>
-                    {marginIsD ? "D+" : "R+"}{Math.abs(selected.margin).toFixed(1)}
-                  </div>
-                </div>
-              </div>
-              {/* More Info */}
-              <div className="px-3 pb-3">
-                <a
-                  href={`/${raceType}/${(raceType === "house" ? selected.name : selected.id).toLowerCase().replace(/-2$/, "2")}`}
-                  className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
-                  style={{ background: t.tabBg, color: t.textMuted }}
-                >
-                  More Info
-                  <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          );
-        })()}
-
-        {/* ── Mobile no-election panel (below map) ── */}
-        {selectedNoElection && (() => {
-          const noElColor = selectedNoElection.party === "D" ? t.demText : selectedNoElection.party === "R" ? t.repText : t.textPrimary;
-          const noElBg = selectedNoElection.party === "D" ? t.candidateDemBg : selectedNoElection.party === "R" ? t.candidateRepBg : t.tabBg;
-          return (
-            <div
-              className="mt-3 overflow-hidden rounded-xl md:hidden"
-              style={{ border: `1px solid ${t.border}`, background: t.legendBg, boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}
-            >
-              {/* Header */}
-              <div className="flex items-center gap-2 p-3 pb-2.5" style={{ borderBottom: `1px solid ${t.border}` }}>
-                <span className="min-w-0 flex-1 truncate text-sm font-bold" style={{ color: t.textPrimary }}>{selectedNoElection.state}</span>
-                <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-bold" style={{ background: t.tabBg, color: t.textMuted }}>No Election</span>
-                <button
-                  onClick={() => setSelectedNoElection(null)}
-                  className="flex h-6 w-6 shrink-0 items-center justify-center rounded transition-colors"
-                  style={{ color: t.textVeryMuted, background: t.tabBg }}
-                  aria-label="Close"
-                >
-                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-              {/* Body */}
-              <div className="grid grid-cols-[1fr_auto] gap-2 p-3">
-                <div className="rounded-md p-2" style={{ background: t.tabBg }}>
-                  <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Incumbent</div>
-                  <div className="flex items-center justify-between gap-1">
-                    <span className="truncate text-[10px] font-bold" style={{ color: noElColor }}>{selectedNoElection.incumbent}</span>
-                    <span className="shrink-0 rounded px-1 py-0.5 text-[9px] font-semibold" style={{ background: noElBg, color: noElColor }}>{selectedNoElection.party}</span>
-                  </div>
-                </div>
-                <div className="rounded-md p-2" style={{ background: t.tabBg }}>
-                  <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Next Election</div>
-                  <div className="text-base font-bold leading-none" style={{ color: t.textPrimary }}>{selectedNoElection.nextElection}</div>
-                </div>
-              </div>
-              {/* More Info */}
-              <div className="px-3 pb-3">
-                <a
-                  href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}
-                  className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
-                  style={{ background: t.tabBg, color: t.textMuted }}
-                >
-                  More Info
-                  <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          );
-        })()}
+        {/* ── Mobile selected panels (below map): the county maps' panel layout ── */}
+        {selected && (
+          <div className="mt-3 md:hidden">
+            <CountyTooltip
+              {...forecastCard(selected)}
+              variant="panel"
+              size="wide"
+              aside={<><ForecastRatingPill margin={selected.margin} /><CountyCardClose onClick={() => setSelected(null)} label="Close selected race" small /></>}
+              footer={<CountyCardLink href={raceHref(raceType, selected)}>Race page →</CountyCardLink>}
+            />
+          </div>
+        )}
+        {selectedNoElection && (
+          <div className="mt-3 md:hidden">
+            <CountyTooltip
+              {...noElectionCard(selectedNoElection)}
+              variant="panel"
+              size="wide"
+              aside={<CountyCardClose onClick={() => setSelectedNoElection(null)} label="Close" small />}
+              footer={<CountyCardLink href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}>Seat page →</CountyCardLink>}
+            />
+          </div>
+        )}
 
         {/* ── Below-map table (memoized — stable across mouse-move re-renders) ── */}
         {useMemo(() => (

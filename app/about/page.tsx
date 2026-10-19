@@ -43,7 +43,7 @@ export default function AboutPage() {
             Each race starts from the seat&rsquo;s partisan lean, adds the national environment from the generic ballot, and adjusts for
             incumbency, the candidates&rsquo; past performance and fundraising. Where a race has been polled, the result is blended with a
             polling average. Thousands of simulated elections, with shared national error, turn the races into chamber odds.
-            The <A href="/methodology">Methodology</A> tab shows each step with the live numbers, and how the model performed when run on
+            The <A href="/methodology">Methodology</A> page shows each step with the live numbers, and how the model performed when run on
             the 2018–2024 elections.
           </P>
           <P>

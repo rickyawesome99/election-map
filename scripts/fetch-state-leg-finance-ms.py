@@ -6,6 +6,7 @@ reports are downloaded by scripts/fetch-state-leg-finance-ms.cjs (see there for 
   python3 scripts/fetch-state-leg-finance-ms.py [2019 2023]
   python3 scripts/fetch-state-leg-finance-ms.py --review [2019 2023]     list reports the OCR could not verify
   python3 scripts/fetch-state-leg-finance-ms.py --sheets [2019 2023]     the same, as numbered table crops (scratch ms/sheets/)
+  python3 scripts/fetch-state-leg-finance-ms.py --import READS.jsonl INDEX.json [--weak]   fold by-eye reads into manual/MS.json
 
 Legislative candidates file scanned paper forms, mostly handwritten. The summary page has one table per fund
 (contributions accumulated before / after Jan 1, 2018), each with a "Jan. 1, YYYY cash on hand balance", rows
@@ -315,7 +316,7 @@ def build(years, review=False, sheets=False):
         print(f"{len(index)} reports on {(len(imgs) + 3) // 4} sheets in {d}")
 
 
-def import_reads(jsonl, index_json):
+def import_reads(jsonl, index_json, weak=False):
     """Fold by-eye transcriptions (one JSON line per report: n, tables [{fund, jan1, contrib_itemized,
     contrib_nonitemized, contrib_period, contrib_ytd, disb_period, disb_ytd, close}], note) into the manual file.
     The report's value = calendar-YTD contributions summed over its fund tables; a table the filer copied into
@@ -323,13 +324,20 @@ def import_reads(jsonl, index_json):
     identities holds — jan1 + contrib YTD − disb YTD = close; the same with the Jan 1 balance left out (filers
     often leave it blank or drop it from the close); itemized + non-itemized = this period with YTD ≥ it; on an
     annual form, itemized + non-itemized = YTD — or the table is empty of activity (YTD 0). The rest, and every
-    report whose reader flagged an ambiguous digit, is printed for a second look."""
+    report whose reader flagged an ambiguous digit, is printed for a second look.
+    --weak (user decision 2026-10-18): a table whose identities cannot be evaluated (too many boxes blank) also counts,
+    as long as nothing on it contradicts the YTD figure (this period, and itemized + non-itemized, are at most YTD; a
+    filled-in Jan 1 balance closes with or without it), and the same YTD written in both fund tables counts once.
+    A contradicted table is still rejected, and so is any flagged report. Weak reads never replace a strict one and are listed in manual/MS-weak.json."""
     manual = json.load(open(MANUAL)) if os.path.exists(MANUAL) else {}
     index = {i["n"]: i for i in json.load(open(index_json))}
     near = lambda a, b: a is not None and b is not None and abs(a - b) < 1.0
     kept, stats = 0, collections.Counter()
+    weak_path = os.path.join(os.path.dirname(MANUAL), "MS-weak.json")
+    weak_list = json.load(open(weak_path)) if os.path.exists(weak_path) else {}
     for ln in open(jsonl):
         r = json.loads(ln)
+        weak_before = stats["weak table"]
         it = index[r["n"]]
         ts = [t for t in (r.get("tables") or []) if any(t.get(k) is not None for k in ("contrib_ytd", "contrib_period", "contrib_itemized"))]
         note = r.get("note") or ""
@@ -355,9 +363,15 @@ def import_reads(jsonl, index_json):
                 None not in (j1, per, t.get("disb_period"), c) and near(j1 + per - t["disb_period"], c) and ytd >= per - 1.0,
             ]
             if not any(checks):
-                ok = False
-                break
-            key = (round(ytd, 2), None if c is None else round(c, 2))
+                # weak: kept unless something on the table contradicts the YTD — a part larger than the whole, or a
+                # filled-in Jan 1 balance that still does not close (with or without it)
+                contradicted = ((per is not None and per > ytd + 1.0) or (None not in (it_, non) and it_ + non > ytd + 1.0)
+                                or (None not in (j1, d, c) and not near(j1 + ytd - d, c) and not near(ytd - d, c)))
+                if not weak or contradicted:
+                    ok = False
+                    break
+                stats["weak table"] += 1
+            key = round(ytd, 2) if weak else (round(ytd, 2), None if c is None else round(c, 2))  # weak: the same YTD in both funds = a copy
             if key in seen and ytd:
                 stats["duplicate table counted once"] += 1
                 continue
@@ -367,16 +381,22 @@ def import_reads(jsonl, index_json):
             stats["to review"] += 1
             print("check", r["n"], it["candidate"], it["seat"], it["year"], it["filing"], json.dumps(r.get("tables")), note[:300])
             continue
+        if weak and it["filing"] in manual:
+            continue
+        if weak and stats["weak table"] != weak_before:
+            weak_list[it["filing"]] = {"value": round(total, 2), "candidate": it["candidate"], "year": it["year"]}
         manual[it["filing"]] = round(total, 2)
         kept += 1
     os.makedirs(os.path.dirname(MANUAL), exist_ok=True)
     json.dump(manual, open(MANUAL, "w"), indent=1, sort_keys=True)
+    if weak:
+        json.dump(weak_list, open(weak_path, "w"), indent=1, sort_keys=True)
     print(f"kept {kept}; {dict(stats)}; manual file now {len(manual)} reports")
 
 
 if __name__ == "__main__":
     if sys.argv[1:2] == ["--import"]:
-        import_reads(sys.argv[2], sys.argv[3])
+        import_reads(sys.argv[2], sys.argv[3], weak="--weak" in sys.argv)
         sys.exit()
     args = sys.argv[1:]
     review = "--review" in args

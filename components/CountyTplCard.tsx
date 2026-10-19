@@ -1,4 +1,7 @@
-import { calculateCountyModel } from "@/lib/tplCompute";
+import { calculateCountyModel, type ComputedRace } from "@/lib/tplCompute";
+import { countyHouseData } from "@/data/countyHouseData";
+import { pastHrefOf } from "@/lib/modelSlices";
+import { pastElectionHref } from "@/lib/pastElections";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
 
 const RACE_TYPE_LABELS: Record<string, string> = { P: "President", S: "Senate", G: "Governor", H: "House" };
@@ -29,6 +32,15 @@ export default function CountyTplCard({
   }
 
   const { races, yearAggregations } = calc;
+  // Each row links to that year's race page. A House row is a countywide aggregate, so it links
+  // only when one district covered the whole county that year; statewide rows fall back to the
+  // seat page when the year has no race page.
+  const rowHref = (r: ComputedRace): string | undefined => {
+    if (r.raceType !== "H") return pastHrefOf(stateAbbr, r) ?? r.detailHref;
+    const districts = countyHouseData[fips]?.years[r.year]?.districts;
+    if (districts?.length !== 1) return undefined;
+    return pastElectionHref("house", `${stateAbbr}-${String(districts[0]).padStart(2, "0")}`, r.year);
+  };
   const hasImputed = races.some((r) => r.imputed);
 
   return (
@@ -58,6 +70,7 @@ export default function CountyTplCard({
               // special Senate race in the SAME year (GA 2020, MN/MS 2018, OK 2022,
               // NE 2024), and the type label alone would render them as twin rows.
               const raceLabel = r.race === "Senate Special" ? "Senate Special" : (RACE_TYPE_LABELS[r.raceType] ?? r.race);
+              const href = rowHref(r);
               return (
               <tr
                 key={`${r.raceType}-${r.year}-${i}`}
@@ -70,8 +83,8 @@ export default function CountyTplCard({
                   >
                     {r.raceType}
                   </span>
-                  {r.raceType !== "H" && r.detailHref ? (
-                    <a href={r.detailHref} className="hover:underline">
+                  {href ? (
+                    <a href={href} className="hover:underline">
                       {raceLabel}
                     </a>
                   ) : (

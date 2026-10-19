@@ -20,6 +20,7 @@ import DemographicsStrip from "@/components/DemographicsStrip";
 import CountyLeanTrendChart from "@/components/CountyLeanTrendChart";
 import { AboutRaceCard, LedgerSectionHead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { StatePill } from "@/components/RaceHeroPills";
 
 const YEARS = [2008, 2012, 2016, 2020, 2024] as const;
 
@@ -294,9 +295,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             <div className="min-w-0">
               <div className="flex items-center gap-2 flex-wrap">
-                <span className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-                  {county.state}
-                </span>
+                <StatePill name={stateName} abbr={county.state} />
                 {rating && ratingColors && (
                   <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full shrink-0" style={{ background: ratingColors.bg, color: ratingColors.text }}>
                     {rating}

@@ -50,13 +50,24 @@ export function MapLegend() {
 
 // colorOf / formatValue / valueColor default to the TPL margin scale; /analysis/markets passes a
 // price-bucket scale to draw the same map by win probability.
-export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor, onSelect, zoomable = true }: {
+// The default frame leaves ~60px of empty sky above and below the lower 48 in the md+ box. The
+// wide frame trims that height. Its drawing is also shifted right by WIDE_SHIFT viewBox units:
+// geoAlbersUsa centers the lower 48, so the AK/HI insets leave the drawing ~29 units left of
+// center (react-simple-maps ignores a projection translate, hence the <g> transform).
+const DEFAULT_FRAME = { projectionConfig: { scale: 1000 } };
+const WIDE_FRAME = { width: 800, height: 480, projectionConfig: { scale: 1000 } };
+const WIDE_SHIFT = 29;
+
+export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor, onSelect, zoomable = true, wide = false }: {
   mode: "states" | "districts"; rows: MapRow[]; valueLabel: string; linkLabel: string;
   colorOf?: (value: number) => string; formatValue?: (value: number) => string; valueColor?: (value: number) => string;
   /** Fired when a place is picked (click/tap) or the panel is closed (null) — /analysis/polling-misses filters its table with it. */
   onSelect?: (row: MapRow | null) => void;
   /** false = a fixed view: no wheel/pinch/drag zoom and no Reset button (/analysis/polling-misses). */
   zoomable?: boolean;
+  /** true = a wide 800×480 frame instead of 800×600, so the map fills the md+ box's 16:9-ish
+   *  height instead of sitting in a band of empty sky; phone width is unchanged (the TPL hub). */
+  wide?: boolean;
 }) {
   const isDark = useDarkMode();
   const mapUnfilled   = isDark ? "#1e2530" : "#c8cdd3";
@@ -120,7 +131,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
     };
 
     const content = (
-      <>
+      <g transform={wide ? `translate(${WIDE_SHIFT} 0)` : undefined}>
         {!statesTopo ? null : mode === "states" ? (
           <Geographies geography={statesTopo}>
             {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
@@ -141,13 +152,13 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
             </Geographies>}
           </>
         )}
-      </>
+      </g>
     );
     return zoomable
       ? <ZoomableGroup key={`${mode}-${mapKey}`} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>{content}</ZoomableGroup>
       : <g key={mode}>{content}</g>;
   // eslint-disable-next-line react-hooks/exhaustive-deps -- setSelected is a stable wrapper over state + onSelect
-  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, stateLinesTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled, colorOf, onSelect, zoomable]);
+  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, stateLinesTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled, colorOf, onSelect, zoomable, wide]);
 
   const closeButton = (
     <button type="button" onClick={() => setSelected(null)} className="flex h-4 w-4 shrink-0 items-center justify-center rounded" style={{ color: "var(--app-text-very-muted)" }} aria-label="Close">
@@ -172,7 +183,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
           </div>
         )}
 
-        <ComposableMap projection="geoAlbersUsa" projectionConfig={{ scale: 1000 }} style={{ width: "100%", height: "100%" }}>
+        <ComposableMap projection="geoAlbersUsa" {...(wide ? WIDE_FRAME : DEFAULT_FRAME)} style={{ width: "100%", height: "100%" }}>
           {layers}
         </ComposableMap>
 

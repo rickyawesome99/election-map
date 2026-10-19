@@ -56,7 +56,7 @@ export type AtlasDistrict = {
 };
 
 /** One row of a district's 2026 lean ledger (lib/stateLegForecast.ts ProjectionRow, as shipped). */
-export type AtlasProjectionRow = { year: number; kind: "P" | "L"; label: string; era: string; raw: number; relocated: boolean; coverage: number; presDelta: number; incSign: number; incPts: number; envPts: number; NM: number; huber: number; weight: number };
+export type AtlasProjectionRow = { year: number; kind: "P" | "L"; label: string; era: string; raw: number; relocated: boolean; coverage: number; presDelta: number; incSign: number; incPts: number; envPts: number; moneyPts?: number; NM: number; huber: number; weight: number };
 
 export type AtlasProjection = {
   lean: number | null;
@@ -64,6 +64,8 @@ export type AtlasProjection = {
   envPts: number;
   incSign: number;
   incPts: number;
+  /** The 2026 money term (lib/stateLegMoneyModel.ts): gap%, the expected gap%, the to-date scale and points; null where either side's money is not on file. */
+  money?: { gapPct: number; structuralGapPct: number; scale: number; pts: number } | null;
   margin: number | null;
   sigma: number;
   pD: number | null;

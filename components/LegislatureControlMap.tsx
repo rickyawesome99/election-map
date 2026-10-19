@@ -94,7 +94,7 @@ function Toggle<T extends string>({ value, options, onChange }: { value: T; opti
 }
 
 export default function LegislatureControlMap({ states, year }: { states: LegislatureMapState[]; year: number }) {
-  const [view, setView] = useState<View>("now");
+  const [view, setView] = useState<View>("projected");
   const [side, setSide] = useState<Side>("house");
   const [hovered, setHovered] = useState<LegislatureMapState | null>(null);
   const tip = useMapTooltip(14, 8);
@@ -123,8 +123,8 @@ export default function LegislatureControlMap({ states, year }: { states: Legisl
     <section className="mb-8">
       <div className="flex flex-wrap items-center gap-3 pb-3 mb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
         <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>Control map</h2>
-        <div className="flex flex-wrap gap-2 ml-auto">
-          <Toggle value={view} onChange={setView} options={[["now", "Current"], ["projected", `Projected ${year}`]]} />
+        <div className="flex flex-wrap gap-2 sm:ml-auto">
+          <Toggle value={view} onChange={setView} options={[["projected", `Projected ${year}`], ["now", "Current"]]} />
           <Toggle value={side} onChange={setSide} options={[["house", "House"], ["senate", "Senate"]]} />
         </div>
       </div>

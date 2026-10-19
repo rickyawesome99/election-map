@@ -13,7 +13,6 @@ const TABS: { key: string; label: string; href?: string; prefetch?: false }[] = 
   { key: "historical",       label: "Historical" },
   { key: "model",            label: "TPL", prefetch: false },
   { key: "analysis",         label: "Analysis",        href: "/analysis" },
-  { key: "methodology",      label: "Methodology", prefetch: false },
   { key: "district-finder",  label: "District Finder" },
 ];
 
@@ -26,7 +25,6 @@ function getActiveTab(pathname: string): string | null {
   if (pathname === "/model" || pathname.startsWith("/model/")) return "model";
   if (pathname === "/district-finder") return "district-finder";
   if (pathname.startsWith("/analysis")) return "analysis";
-  if (pathname === "/methodology" || pathname.startsWith("/methodology/")) return "methodology";
   if (pathname === "/overview" || pathname === "/") return "overview";
   return null;
 }
@@ -56,11 +54,12 @@ function subscribeToStorage(onChange: () => void): () => void {
   return () => window.removeEventListener("storage", onChange);
 }
 
-export default function SubNavBar() {
+/** The tab strip: in the sub-bar under the header below xl, inline in the header from xl up. */
+export function NavTabs({ variant }: { variant: "bar" | "header" }) {
   const pathname = usePathname();
   const activeTab = getActiveTab(pathname);
   // The Forecast tab returns to the chamber last viewed. The saved preference is re-read on
-  // every render (SubNavBar lives in the root layout and re-renders on each navigation); the
+  // every render (the tabs live in the root layout and re-render on each navigation); the
   // server snapshot is "senate", so hydration agrees before the stored value takes over.
   const savedChamber = useSyncExternalStore(subscribeToStorage, readSavedChamber, () => "senate" as Chamber);
   const forecastChamber = chamberOfPath(pathname) ?? savedChamber;
@@ -83,15 +82,71 @@ export default function SubNavBar() {
     return () => window.cancelAnimationFrame(frame);
   }, [updateIndicator]);
 
+  // resize also covers crossing the xl breakpoint, where the hidden copy measured zero.
   useEffect(() => {
     window.addEventListener("resize", updateIndicator);
     return () => window.removeEventListener("resize", updateIndicator);
   }, [updateIndicator]);
 
   useEffect(() => {
-    if (!activeTab || !window.matchMedia("(max-width: 767px)").matches) return;
+    if (variant !== "bar" || !activeTab || !window.matchMedia("(max-width: 767px)").matches) return;
     activeTabRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-  }, [activeTab]);
+  }, [activeTab, variant]);
+
+  const navClass = variant === "header"
+    ? "relative hidden h-full min-w-0 items-stretch gap-0.5 xl:flex"
+    : "scrollbar-none relative flex min-w-0 gap-1 overflow-x-auto overflow-y-hidden";
+  const tabClass = variant === "header"
+    ? "relative z-10 flex shrink-0 items-center whitespace-nowrap px-3 text-sm font-semibold transition-colors duration-150"
+    : "relative z-10 shrink-0 px-3 py-3 text-sm font-semibold transition-colors duration-150 sm:px-3.5";
+
+  return (
+    <nav ref={navRef} className={navClass}>
+      {indicator && (
+        <div
+          className="absolute bottom-0 h-[2px] rounded-full pointer-events-none"
+          style={{
+            left: indicator.left,
+            width: indicator.width,
+            background: "var(--app-text-primary)",
+            transition: "left 200ms cubic-bezier(0.4, 0, 0.2, 1), width 200ms cubic-bezier(0.4, 0, 0.2, 1)",
+          }}
+        />
+      )}
+
+      {TABS.map(({ key, label, href, prefetch }) => {
+        const isActive = activeTab === key;
+
+        const setRef = (el: HTMLElement | null) => {
+          if (el) tabRefs.current.set(key, el);
+          else tabRefs.current.delete(key);
+          if (isActive) activeTabRef.current = el;
+        };
+
+        const targetHref = href ?? (key === "forecast" ? `/${forecastChamber}` : `/${key}`);
+
+        return (
+          <Link
+            key={key}
+            ref={setRef}
+            href={targetHref}
+            prefetch={prefetch}
+            aria-current={isActive ? "page" : undefined}
+            onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
+            className={tabClass}
+            style={{ color: isActive ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+          >
+            {label}
+          </Link>
+        );
+      })}
+    </nav>
+  );
+}
+
+/** Below xl: the tab bar under the sticky header. Hidden from xl up, where the header carries the tabs. */
+export default function SubNavBar() {
+  const pathname = usePathname();
 
   // A chamber reached through a race page (/governor/nv) counts as the last one viewed too.
   useEffect(() => {
@@ -126,11 +181,9 @@ export default function SubNavBar() {
     setPinned(!open);
   };
 
-  const commonClass = "relative z-10 shrink-0 px-3 py-3 text-sm font-semibold transition-colors duration-150 sm:px-3.5";
-
   return (
     <div
-      className="absolute inset-x-0 top-full z-0"
+      className="absolute inset-x-0 top-full z-0 xl:hidden"
       style={{
         transform: open ? "translateY(0)" : "translateY(-100%)",
         transition: "transform 220ms cubic-bezier(0.4, 0, 0.2, 1)",
@@ -141,52 +194,7 @@ export default function SubNavBar() {
       className="px-3 sm:px-6"
       style={{ height: NAV_HEIGHT, borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }}
     >
-      <nav
-        ref={navRef}
-        className="scrollbar-none relative flex min-w-0 gap-1 overflow-x-auto overflow-y-hidden"
-      >
-        {indicator && (
-          <div
-            className="absolute bottom-0 h-[2px] rounded-full pointer-events-none"
-            style={{
-              left: indicator.left,
-              width: indicator.width,
-              background: "var(--app-text-primary)",
-              transition: "left 200ms cubic-bezier(0.4, 0, 0.2, 1), width 200ms cubic-bezier(0.4, 0, 0.2, 1)",
-            }}
-          />
-        )}
-
-        {TABS.map(({ key, label, href, prefetch }) => {
-          const isActive = activeTab === key;
-
-          const setRef = (el: HTMLElement | null) => {
-            if (el) tabRefs.current.set(key, el);
-            else tabRefs.current.delete(key);
-            if (isActive) activeTabRef.current = el;
-          };
-
-          const style = {
-            color: isActive ? "var(--app-text-primary)" : "var(--app-text-muted)",
-          };
-
-          const targetHref = href ?? (key === "forecast" ? `/${forecastChamber}` : `/${key}`);
-
-          return (
-            <Link
-              key={key}
-              ref={setRef}
-              href={targetHref}
-              prefetch={prefetch}
-              onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
-              className={commonClass}
-              style={style}
-            >
-              {label}
-            </Link>
-          );
-        })}
-      </nav>
+      <NavTabs variant="bar" />
     </div>
       {!atTop && (
         <button

@@ -2,10 +2,12 @@ import Link from "next/link";
 import { electionYear, stateLegData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { stateLegDistricts, UNICAMERAL_STATES } from "@/data/stateLegDistricts";
-import { projectAllChambers, STATE_LEG_FORECAST_CONSTANTS } from "@/lib/stateLegForecast";
+import { projectAllChambers } from "@/lib/stateLegForecast";
 import { latestChamberSeats } from "@/lib/stateLegSeats";
 import { getNationalEnvironment } from "@/lib/tplCompute";
 import { stateLegMapInfo } from "@/data/stateLegMapInfo";
+import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
+import LegislatureChambersTable, { SplitBar, type ChamberRow } from "@/components/LegislatureChambersTable";
 import LegislatureControlMap, { type LegislatureMapChamber, type LegislatureMapState } from "@/components/LegislatureControlMap";
 
 export const metadata = {
@@ -13,7 +15,19 @@ export const metadata = {
   description: `Every state legislative chamber on the ${electionYear} ballot: projected composition, control odds and the seats in play, from the district atlas.`,
 };
 
-const pct = (p: number | null) => (p == null ? "—" : `${Math.round(p * 100)}%`);
+// Header visuals. Numbers stay in text ink; the party color rides on the marks beside them.
+function Kicker({ children }: { children: React.ReactNode }) {
+  return <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{children}</span>;
+}
+
+function BigNum({ value, label, color, align = "left" }: { value: string; label: string; color: string; align?: "left" | "right" }) {
+  return (
+    <div className={align === "right" ? "text-right" : undefined}>
+      <div className="text-2xl font-bold tabular-nums leading-tight" style={{ color }}>{value}</div>
+      <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{label}</div>
+    </div>
+  );
+}
 
 export default function LegislaturesPage() {
   const chambers = projectAllChambers();
@@ -101,90 +115,118 @@ export default function LegislaturesPage() {
     return { name: state.name, abbr: state.abbr, house: build("house"), senate: build("senate") };
   });
 
+  // Slim rows for the client table: the projections themselves carry every district.
+  const tableRows: ChamberRow[] = rows.map(({ c, state, comp, label }) => {
+    const superP = c.supermajority == null ? null : Math.max(c.pDemSuper ?? 0, c.pRepSuper ?? 0);
+    const superWho = (c.pDemSuper ?? 0) >= (c.pRepSuper ?? 0) ? "D" : "R";
+    return {
+      key: `${c.abbr}-${c.chamber}`, stateName: state.name, href: `/states/${state.id}/legislature/${c.chamber}`, label, chamber: c.chamber,
+      seatsUp: c.seatsUp, totalSeats: c.totalSeats, now: comp ? { dem: comp.dem, rep: comp.rep, oth: comp.oth ?? 0 } : null,
+      expectedDem: c.expectedDem, expectedRep: c.expectedRep, expectedOth: c.expectedOth, lo80: c.lo80, hi80: c.hi80, majority: c.majority,
+      pDem: c.pDemControl, pRep: c.pRepControl,
+      superLabel: superP == null ? "—" : superP < 0.005 ? "<1%" : `${superWho} ${Math.round(superP * 100)}%`,
+      unopposed: c.decided.dem + c.decided.rep + c.decided.oth, unprojected: c.unprojected,
+    };
+  });
+
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--party-dem) 8%, var(--app-bg)) 0%, var(--app-bg) 55%, color-mix(in srgb, var(--party-rep) 8%, var(--app-bg)) 100%)" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-6">
-          <div className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)" }}>{electionYear} forecast</div>
-          <h1 className="mt-1" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6vw, 4.25rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>State Legislatures</h1>
+      <div style={{ background: PAGE_HERO_BG }}>
+        <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} pb-6`}>
+          <h1 style={PAGE_TITLE_STYLE}>State Legislatures</h1>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
             {chambers.length} chambers are on the ballot. Each is simulated seat by seat from the district atlas: a district&apos;s lean on today&apos;s lines, the national environment (E {env.eHat >= 0 ? "R" : "D"}+{Math.abs(env.eHat).toFixed(1)}, σ {env.sigmaE.toFixed(1)}), incumbency, and the {electionYear} field. Seats not on the ballot hold their sitting member. Method: <Link href="/methodology/state-leg" className="underline underline-offset-2">Legislative atlas</Link>.
           </p>
-          <div className="mt-6 pt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
-            {[
-              { label: "Seats forecast", value: seatTotals.forecast.toLocaleString(), sub: "state legislative seats on the ballot", color: undefined },
-              { label: "Projected Democratic seats", value: Math.round(seatTotals.dem).toLocaleString(), sub: "expected wins, all races", color: "var(--party-dem)" },
-              { label: "Projected Republican seats", value: Math.round(seatTotals.rep).toLocaleString(), sub: "expected wins, all races", color: "var(--party-rep)" },
-              { label: "Projected independent seats", value: Math.round(seatTotals.oth).toLocaleString(), sub: seatTotals.gainI ? `incl. ${seatTotals.gainI} gain${seatTotals.gainI > 1 ? "s" : ""} from a party` : "independents and third parties", color: "var(--party-ind)" },
-              { label: "Projected D flips", value: seatTotals.flipD.toLocaleString(), sub: "R-held seats favoring a Democrat", color: "var(--party-dem)" },
-              { label: "Projected R flips", value: seatTotals.flipR.toLocaleString(), sub: "D-held seats favoring a Republican", color: "var(--party-rep)" },
-            ].map((s) => (
-              <div key={s.label} className="min-w-0">
-                <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>{s.label}</div>
-                <div className="text-2xl font-bold tabular-nums leading-tight" style={{ color: s.color }}>{s.value}</div>
-                <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{s.sub}</div>
+          <div className="mt-6 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
+            {/* Seats on the ballot: one bar, D | independent | R, with the halfway tick. */}
+            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <Kicker>Projected seats · {seatTotals.forecast.toLocaleString()} on the ballot</Kicker>
+              <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>expected wins, all races</span>
+            </div>
+            <div className="mt-2 flex items-end justify-between gap-4">
+              <BigNum value={Math.round(seatTotals.dem).toLocaleString()} label="Democratic" color="var(--party-dem)" />
+              {Math.round(seatTotals.oth) > 0 && (
+                <span className="pb-1 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+                  <b style={{ color: "var(--app-text-primary)" }}>{Math.round(seatTotals.oth)}</b> independent{seatTotals.gainI ? ` · incl. ${seatTotals.gainI} gain${seatTotals.gainI > 1 ? "s" : ""} from a party` : ""}
+                </span>
+              )}
+              <BigNum value={Math.round(seatTotals.rep).toLocaleString()} label="Republican" color="var(--party-rep)" align="right" />
+            </div>
+            <div className="relative mt-2">
+              <SplitBar height={14} parts={[
+                { value: seatTotals.dem, color: "var(--party-dem)", title: `${Math.round(seatTotals.dem).toLocaleString()} Democratic seats` },
+                { value: seatTotals.oth, color: "var(--party-ind)", title: `${Math.round(seatTotals.oth)} independent seats` },
+                { value: seatTotals.rep, color: "var(--party-rep)", title: `${Math.round(seatTotals.rep).toLocaleString()} Republican seats` },
+              ]} />
+              <span aria-hidden className="absolute -bottom-1 -top-1 left-1/2 w-px" style={{ background: "var(--app-text-primary)" }} />
+            </div>
+            <div className="mt-1 text-center text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>half of {seatTotals.forecast.toLocaleString()}</div>
+
+            <div className="mt-6 grid grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2">
+              {/* Seat flips, both bars on one scale. */}
+              <div>
+                <div className="flex items-baseline justify-between gap-3">
+                  <Kicker>Projected seat flips</Kicker>
+                  <span className="text-xs font-semibold tabular-nums" style={{ color: seatTotals.flipD >= seatTotals.flipR ? "var(--party-dem)" : "var(--party-rep)" }}>
+                    net {seatTotals.flipD >= seatTotals.flipR ? "D" : "R"} +{Math.abs(seatTotals.flipD - seatTotals.flipR)}
+                  </span>
+                </div>
+                <div className="mt-3 flex flex-col gap-2.5">
+                  {[
+                    { n: seatTotals.flipD, label: "R-held → D", color: "var(--party-dem)", title: "R-held seats favoring a Democrat" },
+                    { n: seatTotals.flipR, label: "D-held → R", color: "var(--party-rep)", title: "D-held seats favoring a Republican" },
+                  ].map((f) => (
+                    <div key={f.label} className="grid items-center gap-3" style={{ gridTemplateColumns: "5.5rem 1fr 2.5rem" }} title={`${f.n} ${f.title}`}>
+                      <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>{f.label}</span>
+                      <span className="h-3">
+                        <span className="block h-full rounded-r" style={{ width: `${Math.max(1, (f.n / Math.max(seatTotals.flipD, seatTotals.flipR, 1)) * 100)}%`, background: f.color }} />
+                      </span>
+                      <span className="text-right text-sm font-bold tabular-nums">{f.n}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
-          </div>
-          <div className="mt-4 pt-4 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
-            {[
-              { label: "Chambers on the ballot", value: chambers.length, sub: `${demHeld} Democratic-held · ${repHeld} Republican-held` },
-              { label: "In play", value: competitive.length, sub: "either party ≥ 20% to control" },
-              { label: "Expected flips", value: expectedFlips.toFixed(1), sub: "sum of flip probabilities" },
-              { label: "Expected Democratic chambers", value: expectedDemAfter.toFixed(1), sub: `of ${chambers.length} on the ballot` },
-            ].map((s) => (
-              <div key={s.label} className="min-w-[140px]">
-                <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>{s.label}</div>
-                <div className="text-lg font-bold tabular-nums leading-tight">{s.value}</div>
-                <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{s.sub}</div>
+
+              {/* Chamber control, now vs projected. */}
+              <div>
+                <div className="flex items-baseline justify-between gap-3">
+                  <Kicker>Chamber control · {chambers.length} on the ballot</Kicker>
+                </div>
+                <div className="mt-3 flex flex-col gap-2.5">
+                  {[
+                    { label: "Now", d: demHeld, r: repHeld, fmt: (n: number) => String(n) },
+                    { label: "Projected", d: expectedDemAfter, r: chambers.length - expectedDemAfter, fmt: (n: number) => n.toFixed(1) },
+                  ].map((row) => (
+                    <div key={row.label} className="grid items-center gap-3" style={{ gridTemplateColumns: "5.5rem 1fr" }}>
+                      <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>{row.label}</span>
+                      <div className="flex items-center gap-2">
+                        <span className="w-8 text-right text-sm font-bold tabular-nums" style={{ color: "var(--party-dem)" }}>{row.fmt(row.d)}</span>
+                        <div className="relative flex-1">
+                          <SplitBar height={12} parts={[
+                            { value: row.d, color: "var(--party-dem)", title: `${row.fmt(row.d)} Democratic chambers` },
+                            { value: row.r, color: "var(--party-rep)", title: `${row.fmt(row.r)} Republican chambers` },
+                          ]} />
+                          <span aria-hidden className="absolute -bottom-1 -top-1 left-1/2 w-px" style={{ background: "var(--app-text-primary)" }} />
+                        </div>
+                        <span className="w-8 text-sm font-bold tabular-nums" style={{ color: "var(--party-rep)" }}>{row.fmt(row.r)}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-3 text-xs" style={{ color: "var(--app-text-muted)" }}>
+                  <b style={{ color: "var(--app-text-primary)" }}>{competitive.length}</b> in play (either party ≥ 20%) · <b style={{ color: "var(--app-text-primary)" }}>{expectedFlips.toFixed(1)}</b> expected flips
+                </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
+      <main className={`${PAGE_CONTAINER} py-6`}>
         <LegislatureControlMap states={mapStates} year={electionYear} />
-        <div className="flex items-baseline gap-3 pb-3 mb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
-          <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>Chambers</h2>
-          <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>closest first · 80% range of Democratic seats · race noise σ {STATE_LEG_FORECAST_CONSTANTS.SIGMA}</span>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
-            <thead>
-              <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                {[["State", "left"], ["Chamber", "left"], ["Seats", "right"], ["Now", "right"], ["Up", "right"], ["Projected D", "right"], ["Projected R", "right"], ["P(D control)", "right"], ["P(R control)", "right"], ["Supermajority", "right"], ["Unopposed", "right"]].map(([h, a]) => (
-                  <th key={h} className={`py-1.5 pr-3 text-[10px] uppercase tracking-wider font-semibold text-${a}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map(({ c, state, comp, label }) => {
-                const superP = c.supermajority == null ? null : Math.max(c.pDemSuper ?? 0, c.pRepSuper ?? 0);
-                const superWho = c.supermajority == null ? null : (c.pDemSuper ?? 0) >= (c.pRepSuper ?? 0) ? "D" : "R";
-                const flipText = c.pDemControl == null ? "" : "";
-                void flipText;
-                return (
-                  <tr key={`${c.abbr}-${c.chamber}`} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                    <td className="py-2 pr-3 font-semibold whitespace-nowrap"><Link href={`/states/${state.id}/legislature/${c.chamber}`} className="hover:underline">{state.name}</Link></td>
-                    <td className="py-2 pr-3">{label}</td>
-                    <td className="py-2 pr-3 text-right">{c.totalSeats ?? "—"}</td>
-                    <td className="py-2 pr-3 text-right whitespace-nowrap">{comp ? <><span style={{ color: "var(--party-dem)" }}>{comp.dem}</span>–<span style={{ color: "var(--party-rep)" }}>{comp.rep}</span>{comp.oth ? <span style={{ color: "var(--party-ind)" }}>–{comp.oth}</span> : null}</> : "—"}</td>
-                    <td className="py-2 pr-3 text-right">{c.seatsUp}</td>
-                    <td className="py-2 pr-3 text-right whitespace-nowrap" style={{ color: "var(--party-dem)" }}>{c.expectedDem.toFixed(1)} <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>({c.lo80}–{c.hi80})</span></td>
-                    <td className="py-2 pr-3 text-right" style={{ color: "var(--party-rep)" }}>{c.expectedRep.toFixed(1)}</td>
-                    <td className="py-2 pr-3 text-right font-semibold" style={{ color: c.pDemControl != null && c.pDemControl >= 0.5 ? "var(--party-dem)" : "var(--app-text-muted)" }}>{pct(c.pDemControl)}</td>
-                    <td className="py-2 pr-3 text-right font-semibold" style={{ color: c.pRepControl != null && c.pRepControl >= 0.5 ? "var(--party-rep)" : "var(--app-text-muted)" }}>{pct(c.pRepControl)}</td>
-                    <td className="py-2 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{superP == null ? "—" : superP < 0.005 ? "<1%" : `${superWho} ${Math.round(superP * 100)}%`}</td>
-                    <td className="py-2 pr-0 text-right" style={{ color: "var(--app-text-muted)" }}>{c.decided.dem + c.decided.rep + c.decided.oth}{c.unprojected ? <span title="seats with no projection"> · {c.unprojected} n/p</span> : null}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
+        <LegislatureChambersTable rows={tableRows} />
         <p className="mt-4 max-w-3xl text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-          &ldquo;Now&rdquo; is the composition after the last election on record. Control odds are withheld (—) where seats with no projection could decide them: Nebraska&apos;s nonpartisan Legislature. Multi-member districts draw each seat on the same margin. Michigan&apos;s 110-seat House can tie, so its two control odds do not sum to 100%.
+          The bar under Projected seats is the whole chamber, holdovers included, with seats that have no projection left gray; the tick marks a majority and the gray whisker above it the 80% range of Democratic seats. Control odds show the favored party&apos;s chance; in a chamber that can tie, the favorite can sit below 50%. Net is the projected change from &ldquo;Now&rdquo; in whole seats, credited to the party that gains. &ldquo;Now&rdquo; is the composition after the last election on record. Control odds are withheld (—) where seats with no projection could decide them: Nebraska&apos;s nonpartisan Legislature. Multi-member districts draw each seat on the same margin. Michigan&apos;s 110-seat House can tie, so its two control odds do not sum to 100%.
         </p>
       </main>
     </div>

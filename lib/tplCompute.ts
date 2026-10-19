@@ -265,7 +265,7 @@ function incumbentFromResult(result?: Pick<PastResult, "demIncumbent" | "repIncu
 // Shared by the state, district and county models: redistributes race-type weights among
 // whichever types are actually present each year, then produces the recency-weighted TPL.
 //
-// houseAnchor (state model only): the state's fitted lean. A state's House rows are NOT
+// houseAnchor (state and county models): the state's fitted lean, or the county's statewide-rows lean. A state's House rows are NOT
 // Huber-weighted individually — a packed D+60 district is not an outlier, it is a district,
 // and downweighting it by its distance from the state lean skewed every packed-map state's
 // House aggregate toward the party with more middling seats (GA 2024: R+10 vs a turnout-
@@ -952,7 +952,13 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
 //   candidates to attribute — no incumbency strip, no fundraising strip. A year is ineligible
 //   (imputed) only when one party drew no votes in the county (countyHouseEligibility).
 // - The environment strip uses the parent state's β*; no county elasticity is estimated.
-// - No Huber weighting: a county far from its STATE's lean is not an outlier.
+// - No row-level Huber: a county far from its STATE's lean is not an outlier, it is a county.
+//   But each House year is Huber-checked as a whole against the county's OWN statewide lean
+//   (P/S/G rows aggregated alone): the year's base weight × min(1, HUBER_C / |House NM − that
+//   lean|), as the state model does against its fitted lean. A county's House vote is the
+//   local candidates' as much as the county's — Cuellar won Zapata TX by D+34 in 2024 as Trump
+//   carried it by R+22 — and with no incumbency strip possible (above) that gap entered at full
+//   House weight, pulling every border county's lean 10–30 pts off its statewide record.
 
 // A "Senate Special" row must read countySenateData's specialYears bucket, not `years`:
 // the two live in sibling maps whenever a state held a separate special (MN/MS 2018,
@@ -1075,7 +1081,11 @@ export function calculateCountyModel(fips: string): StateModelCalculation | null
     };
   });
 
-  const { yearAggregations, tpl } = aggregateYears(races);
+  // Two passes: the county's lean from its statewide rows alone anchors the House years' Huber
+  // check (see the County TPL note above); a county with no statewide rows keeps them unchecked.
+  const statewide = races.filter((race) => race.raceType !== "H" && race.NM != null);
+  const houseAnchor = statewide.length > 0 ? aggregateYears(statewide).tpl : null;
+  const { yearAggregations, tpl } = aggregateYears(races, houseAnchor);
   return { races, yearAggregations, tpl };
 }
 

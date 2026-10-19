@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useState, type ReactNode } from "
 
 export type Geo = "states" | "districts";
 
-// The hub's States/Districts toggle, shared so the server-rendered header stats can follow it.
+// The hub's States/Districts toggle, held in context so every part of the hub reads one setting.
 const GeoContext = createContext<{ geo: Geo; setGeo: (g: Geo) => void } | null>(null);
 
 export function TplGeoProvider({ children }: { children: ReactNode }) {
@@ -24,16 +24,3 @@ export function useTplGeo() {
   return ctx;
 }
 
-// "R states · D states", or the district split when the hub is on Districts.
-export function SideCountStat({ states, districts }: { states: [number, number]; districts: [number, number] }) {
-  const { geo } = useTplGeo();
-  const [r, d] = geo === "states" ? states : districts;
-  return (
-    <>
-      <div className="text-xl font-extrabold tabular-nums">
-        <span style={{ color: "var(--party-rep)" }}>{r}</span> · <span style={{ color: "var(--party-dem)" }}>{d}</span>
-      </div>
-      <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{geo === "states" ? "R states · D states" : "R districts · D districts"}</div>
-    </>
-  );
-}

@@ -143,11 +143,12 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
       if (pr) {
         out.projection = {
           lean: pr.lean, beta: pr.beta, envPts: pr.envPts, incSign: pr.incSign, incPts: pr.incPts, margin: pr.margin, sigma: pr.sigma, pD: pr.pD,
+          money: pr.money ? { gapPct: +pr.money.gapPct.toFixed(1), structuralGapPct: +pr.money.structuralGapPct.toFixed(1), scale: pr.money.scale, pts: +pr.money.pts.toFixed(2) } : null,
           rating: pr.rating, contest: pr.contest, seats: pr.seats, guaranteed: pr.guaranteed, contestedSeats: pr.contestedSeats,
           ...(pr.pI != null ? { pI: pr.pI } : {}),
           ...(votesByKey.has(key) ? { votes: votesByKey.get(key)! } : {}),
           ...(pr.indep ? { indep: { ...pr.indep, personal: +pr.indep.personal.toFixed(2), advantage: +pr.indep.advantage.toFixed(2), record: pr.indep.record.map((r) => ({ ...r, share: +r.share.toFixed(1), advantage: +r.advantage.toFixed(2), expected: +r.expected.toFixed(2), residual: +r.residual.toFixed(2) })) } } : {}),
-          rows: pr.rows.map((r) => ({ ...r, raw: +r.raw.toFixed(2), presDelta: +r.presDelta.toFixed(2), incSign: +r.incSign.toFixed(2), incPts: +r.incPts.toFixed(2), envPts: +r.envPts.toFixed(2), NM: +r.NM.toFixed(2), huber: +r.huber.toFixed(3), weight: +r.weight.toFixed(4), coverage: +r.coverage.toFixed(3) })),
+          rows: pr.rows.map((r) => ({ ...r, raw: +r.raw.toFixed(2), presDelta: +r.presDelta.toFixed(2), incSign: +r.incSign.toFixed(2), incPts: +r.incPts.toFixed(2), envPts: +r.envPts.toFixed(2), moneyPts: +r.moneyPts.toFixed(2), NM: +r.NM.toFixed(2), huber: +r.huber.toFixed(3), weight: +r.weight.toFixed(4), coverage: +r.coverage.toFixed(3) })),
         };
       }
       return out;

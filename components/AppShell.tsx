@@ -3,7 +3,7 @@
 import { Suspense, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import AppHeader from "./AppHeader";
-import SubNavBar from "./SubNavBar";
+import SubNavBar, { NavTabs } from "./SubNavBar";
 import BackButton from "./BackButton";
 import { refreshSafariChrome, syncThemeColor, useDarkMode } from "@/lib/useDarkMode";
 
@@ -54,14 +54,16 @@ export default function AppShell() {
           <AppHeader
             darkMode={darkMode}
             back={showBack ? <BackButton /> : undefined}
+            nav={<Suspense fallback={null}><NavTabs variant="header" /></Suspense>}
           />
         </div>
         <Suspense fallback={null}>
           <SubNavBar />
         </Suspense>
       </div>
-      {/* SubNavBar overlays this space so hiding it never shifts the page. */}
-      <div aria-hidden="true" className="h-[45px]" />
+      {/* SubNavBar overlays this space so hiding it never shifts the page. From xl up the tabs
+          sit in the header and the bar (and this space) is gone. */}
+      <div aria-hidden="true" className="h-[45px] xl:hidden" />
     </>
   );
 }

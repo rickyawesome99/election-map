@@ -17,7 +17,8 @@
     "candidate-pages": "tsx --conditions=react-server scripts/buildCandidatePages.ts",
     "share-card": "tsx --conditions=react-server scripts/buildSiteShareCard.tsx",
     "prebuild": "npm run chamber-margins && npm run candidate-pages && npm run history",
-    "predev": "npm run chamber-margins && npm run candidate-pages && npm run history"
+    "predev": "npm run chamber-margins && npm run candidate-pages && npm run history",
+    "state-leg-money": "node scripts/build-state-leg-finance.mjs && tsx --conditions=react-server scripts/stateLegBacktest.ts --emit && tsx --conditions=react-server scripts/stateLegBacktest.ts --money --emit && tsx --conditions=react-server scripts/buildStateLegAtlasSlices.ts"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
