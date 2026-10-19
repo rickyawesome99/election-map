@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useMemo, useState } from "react";
 import type { RaceType } from "@/data/forecastData";
@@ -206,9 +207,9 @@ function LedgerRow({ race, basePath, showSpecialBadge }: { race: ForecastSummary
     <div className="flex items-center justify-between gap-3 py-2.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
       <div className="min-w-0">
         <div className="mb-1 flex items-center gap-1.5">
-          <a href={raceHref(basePath, race)} className="truncate text-sm font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>
+          <Link prefetch={false} href={raceHref(basePath, race)} className="truncate text-sm font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>
             {race.name}
-          </a>
+          </Link>
           {showSpecialBadge && isSpecialRace(race) && <SpecialBadge />}
         </div>
         <div className="flex flex-col gap-0.5" style={{ fontFamily: "var(--font-serif)" }}>

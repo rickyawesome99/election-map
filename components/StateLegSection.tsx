@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { Fragment, useState, useCallback, useMemo, useEffect, useSyncExternalStore } from "react";
 import StateLegDistrictMap from "./StateLegDistrictMap";
@@ -198,9 +199,9 @@ function SelectedDistrictPanel({
         </div>
       )}
       {profileHref && (
-        <a href={profileHref} className="mt-1.5 inline-block text-[11px] font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>
+        <Link prefetch={false} href={profileHref} className="mt-1.5 inline-block text-[11px] font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>
           Full district profile →
-        </a>
+        </Link>
       )}
     </section>
   );

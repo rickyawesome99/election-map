@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useEffect, useRef, useState } from "react";
 import type { RedistrictingYear } from "@/lib/statePage";
@@ -85,7 +86,7 @@ export default function RedistrictingYearBlock({ stateAbbr, stateFips, year, las
               >
                 <div className="flex flex-wrap items-center gap-2 mb-1">
                   {d.href ? (
-                    <a href={d.href} onClick={(e) => e.stopPropagation()} className="text-sm font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{d.name}</a>
+                    <Link prefetch={false} href={d.href} onClick={(e) => e.stopPropagation()} className="text-sm font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{d.name}</Link>
                   ) : (
                     <span className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{d.name}</span>
                   )}

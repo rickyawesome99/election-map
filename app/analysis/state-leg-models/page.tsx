@@ -157,7 +157,7 @@ export default function StateLegModelsPage() {
                   const flag = gapChambers.includes(c);
                   return (
                     <tr key={`${c.abbr}-${c.chamber}`} style={{ borderBottom: "1px solid var(--app-border)", background: flag ? "color-mix(in srgb, var(--app-text-primary) 4%, transparent)" : undefined }}>
-                      <td className="py-1.5 pr-3 whitespace-nowrap"><a href={c.href} className="font-semibold hover:underline">{c.state}</a> <span style={muted}>{c.chamber === "house" ? "House" : "Senate"}</span>{flag && <span className="ml-1 text-[10px] font-bold" style={muted}>▲</span>}</td>
+                      <td className="py-1.5 pr-3 whitespace-nowrap"><Link prefetch={false} href={c.href} className="font-semibold hover:underline">{c.state}</Link> <span style={muted}>{c.chamber === "house" ? "House" : "Senate"}</span>{flag && <span className="ml-1 text-[10px] font-bold" style={muted}>▲</span>}</td>
                       <td className="py-1.5 pr-3 text-right">{c.totalSeats ?? "—"} <span className="text-xs" style={veryMuted}>({c.seatsUp} up)</span></td>
                       <td className="py-1.5 pr-3 text-right whitespace-nowrap"><span style={{ color: "var(--party-dem)" }}>{c.nowD}</span>–<span style={{ color: "var(--party-rep)" }}>{c.nowR}</span></td>
                       <td className="py-1.5 pr-3 text-right">{c.ours.d.toFixed(1)}</td>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 export { LedgerSectionHead };
 import type { ReactNode } from "react";
@@ -48,7 +49,7 @@ type DetailInfoItem = {
 
 function DetailInfoValue({ value, href, color }: DetailInfoItem) {
   return href
-    ? <a href={href} className="hover:underline underline-offset-2" style={{ color: color ?? "var(--app-text-primary)" }}>{value}</a>
+    ? <Link prefetch={false} href={href} className="hover:underline underline-offset-2" style={{ color: color ?? "var(--app-text-primary)" }}>{value}</Link>
     : <span style={{ color: color ?? "var(--app-text-primary)" }}>{value}</span>;
 }
 
@@ -1327,7 +1328,7 @@ export function ForecastCalculationCard({
           <span className="flex items-center gap-2 min-w-0">
             <span className="w-3 shrink-0" aria-hidden />
             {tplHref ? (
-              <a href={tplHref} className="text-[11px] font-semibold uppercase tracking-wider hover:underline underline-offset-2" style={{ color: "var(--app-text-muted)" }} title={`View ${tplLabel}`}>{tplLabel}</a>
+              <Link prefetch={false} href={tplHref} className="text-[11px] font-semibold uppercase tracking-wider hover:underline underline-offset-2" style={{ color: "var(--app-text-muted)" }} title={`View ${tplLabel}`}>{tplLabel}</Link>
             ) : (
               <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{tplLabel}</span>
             )}
@@ -1414,14 +1415,14 @@ export function ForecastCalculationCard({
         <div className="rounded-lg" style={{ border: "1px solid var(--app-border)" }}>
           <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-3 py-2.5 rounded-t-lg" style={rowStyle}>
             {tplHref ? (
-              <a
+              <Link prefetch={false}
                 href={tplHref}
                 className="text-[11px] font-semibold uppercase tracking-wider hover:underline underline-offset-2"
                 style={{ color: "var(--app-text-muted)" }}
                 title={`View ${tplLabel}`}
               >
                 {tplLabel}
-              </a>
+              </Link>
             ) : (
               <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{tplLabel}</span>
             )}
@@ -1586,14 +1587,14 @@ export function PastElectionResultsSection({
                     return electionTypeLabel;
                   })()}
                   {!isPlaceholder && res.electionHref && (
-                    <a
+                    <Link prefetch={false}
                       href={res.electionHref}
                       className="shrink-0 text-[11px] font-semibold hover:underline"
                       style={{ color: "var(--app-text-muted)" }}
                       aria-label={`${res.year} election details`}
                     >
                       Details →
-                    </a>
+                    </Link>
                   )}
                   {!isPlaceholder && res.districtLabel && (
                     // A county can span many districts (e.g. Cook County, IL spans 10) -
@@ -1833,9 +1834,9 @@ export function HouseOnlyRecentStatewideResultsSection({
                     <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
                   )}
                   {res.raceHref ? (
-                    <a href={res.raceHref} className="truncate text-sm font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }}>
+                    <Link prefetch={false} href={res.raceHref} className="truncate text-sm font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }}>
                       {res.race}
-                    </a>
+                    </Link>
                   ) : (
                     <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{res.race}</span>
                   )}

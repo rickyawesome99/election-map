@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useState } from "react";
 import type { RaceType } from "@/data/forecastData";
@@ -41,7 +42,7 @@ const seats = (n: number | null | undefined) => (n == null ? "—" : String(Math
 const netSeats = (n: number) => (Number.isInteger(n) ? String(Math.abs(n)) : Math.abs(n).toFixed(1));
 
 function Ext({ href, external, children }: { href: string; external: boolean; children: React.ReactNode }) {
-  if (!external) return <a href={href} className="hover:underline">{children}</a>;
+  if (!external) return <Link prefetch={false} href={href} className="hover:underline">{children}</Link>;
   return (
     <a href={href} target="_blank" rel="noopener noreferrer" className="hover:underline">
       {children}<span aria-hidden="true" style={{ color: "var(--app-text-very-muted)" }}> ↗</span>

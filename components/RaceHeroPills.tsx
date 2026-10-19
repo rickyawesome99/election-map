@@ -1,3 +1,4 @@
+import Link from "next/link";
 // The pill row above a race page's title: state · office · rating · who holds the seat.
 // The rating pill and any special-election badge are passed in by the page.
 
@@ -15,9 +16,9 @@ const OFFICE = {
 
 export function StatePill({ name, abbr }: { name: string; abbr: string }) {
   return (
-    <a href={`/states/${abbr.toLowerCase()}`} aria-label={`View ${name} state page`} className={`${PILL} hover:underline`} style={LINK_PILL}>
+    <Link prefetch={false} href={`/states/${abbr.toLowerCase()}`} aria-label={`View ${name} state page`} className={`${PILL} hover:underline`} style={LINK_PILL}>
       {name}
-    </a>
+    </Link>
   );
 }
 
@@ -25,9 +26,9 @@ export function StatePill({ name, abbr }: { name: string; abbr: string }) {
 export function OfficePill({ office }: { office: keyof typeof OFFICE }) {
   const o = OFFICE[office];
   return (
-    <a href={o.href} aria-label={`${o.label} forecast`} className={`${PILL} hover:underline`} style={LINK_PILL}>
+    <Link prefetch={false} href={o.href} aria-label={`${o.label} forecast`} className={`${PILL} hover:underline`} style={LINK_PILL}>
       {o.label}
-    </a>
+    </Link>
   );
 }
 
@@ -54,9 +55,9 @@ export function SeatArrows({ prev, next, label = "Neighbouring seats" }: { prev?
   const btn = "inline-flex h-9 w-9 items-center justify-center rounded-full";
   const arrow = (l: SeatNavLink | null | undefined, dir: "prev" | "next") =>
     l ? (
-      <a href={l.href} title={l.label} aria-label={`Go to ${l.label}`} className={`${btn} transition-colors hover:bg-[var(--app-tab-bg)]`} style={{ color: "var(--app-text-muted)" }}>
+      <Link prefetch={false} href={l.href} title={l.label} aria-label={`Go to ${l.label}`} className={`${btn} transition-colors hover:bg-[var(--app-tab-bg)]`} style={{ color: "var(--app-text-muted)" }}>
         {chevron(dir)}
-      </a>
+      </Link>
     ) : (
       <span aria-hidden className={btn} style={{ color: "var(--app-text-muted)", opacity: 0.3 }}>{chevron(dir)}</span>
     );

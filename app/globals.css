@@ -143,6 +143,29 @@ body {
   }
 }
 
+/* Tab switch in flight (AppShell): a greyed outline of a page covers the old one while the
+   new one loads. */
+.nav-pending-cover {
+  animation: nav-pending-fade 120ms ease-out both;
+}
+@keyframes nav-pending-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.nav-skeleton {
+  border-radius: 6px;
+  background: var(--app-text-muted);
+  opacity: 0.12;
+  animation: nav-skeleton-pulse 1.4s ease-in-out infinite;
+}
+@keyframes nav-skeleton-pulse {
+  0%, 100% { opacity: 0.12; }
+  50% { opacity: 0.2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-pending-cover, .nav-skeleton { animation: none; }
+}
+
 .scrollbar-none {
   scrollbar-width: none;
 }

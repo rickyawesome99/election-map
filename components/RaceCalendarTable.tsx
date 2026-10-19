@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CandidateLink from "@/components/CandidateLink";
 import { fmtMargin } from "@/lib/colorScale";
 import type { CalendarRace } from "@/data/raceCalendar";
@@ -101,7 +102,7 @@ export default function RaceCalendarTable({ races }: { races: CalendarRace[] }) 
                   <td className="seat">
                     <span className="abbr">{race.state}</span>
                     <span className="name">
-                      {href ? <a href={href} className="hover:underline">{race.seat}</a> : race.seat}
+                      {href ? <Link prefetch={false} href={href} className="hover:underline">{race.seat}</Link> : race.seat}
                     </span>
                   </td>
                   <td><TypeCell race={race} /></td>

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import Image from "next/image";
 import type { AtlasDistrict } from "@/lib/stateLegAtlas";
@@ -15,7 +16,7 @@ const NON_CANDIDATE = /write.?in|scatter|blank|void|under.?vote|over.?vote|none 
 /** Every named person links to their candidate page (/candidates/[name]-[st], any spelling resolves). */
 export function CandidateLink({ name, abbr, color, weight, style }: { name: string; abbr: string; color: string; weight?: number; style?: React.CSSProperties }) {
   if (NON_CANDIDATE.test(name) || name.trim().length < 3) return <span style={{ color, fontWeight: weight, ...style }}>{name}</span>;
-  return <a href={`/candidates/${candidateSlug(name)}-${abbr.toLowerCase()}`} className="hover:underline" style={{ color, fontWeight: weight, ...style }}>{name}</a>;
+  return <Link prefetch={false} href={`/candidates/${candidateSlug(name)}-${abbr.toLowerCase()}`} className="hover:underline" style={{ color, fontWeight: weight, ...style }}>{name}</Link>;
 }
 
 function Pill({ children }: { children: React.ReactNode }) {

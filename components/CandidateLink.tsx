@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { candidateSlug } from "@/lib/candidateSlug";
 
 export default function CandidateLink({
@@ -16,8 +17,8 @@ export default function CandidateLink({
   const href = `/candidates/${candidateSlug(name)}`;
 
   return (
-    <a href={href} className={className} style={style} onClick={onClick}>
+    <Link prefetch={false} href={href} className={className} style={style} onClick={onClick}>
       {children ?? name}
-    </a>
+    </Link>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import CandidateLink from "@/components/CandidateLink";
 import ReplaceLink from "@/components/ReplaceLink";
@@ -405,7 +406,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                     return (
                       <tr key={c.fips} style={{ borderBottom: "1px solid var(--app-border)" }}>
                         <td className="whitespace-nowrap py-1.5">
-                          <a href={`/historical/${c.fips}`} className="hover:underline">{c.name}</a>
+                          <Link prefetch={false} href={`/historical/${c.fips}`} className="hover:underline">{c.name}</Link>
                           {c.houseSplit && <span className="ml-1.5 text-[10px]" style={{ color: "var(--app-text-very-muted)" }} title="This county is shared with another district; the row is this district's share">split</span>}
                         </td>
                         <td className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3">{fmtInt(c.result.demVotes)} <span className="text-[10px] sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{c.result.demPct.toFixed(1)}%</span></td>
@@ -431,13 +432,13 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
             <LedgerSectionHead label={e.related.title} />
             <div className="grid grid-cols-1 gap-x-6 sm:grid-cols-2">
               {e.related.items.map((r) => (
-                <a key={r.href} href={r.href} className="group flex items-baseline justify-between gap-3 py-2 min-w-0" style={{ borderBottom: "1px solid var(--app-border)" }}>
+                <Link prefetch={false} key={r.href} href={r.href} className="group flex items-baseline justify-between gap-3 py-2 min-w-0" style={{ borderBottom: "1px solid var(--app-border)" }}>
                   <span className="flex min-w-0 items-baseline gap-2">
                     <span className="whitespace-nowrap text-sm font-bold group-hover:underline" style={{ color: "var(--app-text-primary)" }}>{r.label}</span>
                     {r.winner && <span className="truncate text-xs" style={{ color: "var(--app-text-very-muted)" }}>{lastName(r.winner)} ({r.winnerParty})</span>}
                   </span>
                   <span className="shrink-0 text-sm font-bold tabular-nums" style={{ color: marginColor(r.margin) }}>{fmtMargin(r.margin)}</span>
-                </a>
+                </Link>
               ))}
             </div>
           </section>

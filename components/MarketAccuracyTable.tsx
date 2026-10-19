@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useMemo, useState } from "react";
 import MarketCallChips from "@/components/MarketCallChips";
@@ -83,7 +84,7 @@ export default function MarketAccuracyTable({ rows, years }: { rows: MarketRaceR
               <tr key={r.raceId} style={{ borderBottom: "1px solid var(--app-border)" }}>
                 <td className="px-2 py-2 align-top tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.year}</td>
                 <td className="px-2 py-2 align-top">
-                  {r.href ? <a href={r.href} className="font-semibold hover:underline">{r.place}</a> : <span className="font-semibold">{r.place}</span>}
+                  {r.href ? <Link prefetch={false} href={r.href} className="font-semibold hover:underline">{r.place}</Link> : <span className="font-semibold">{r.place}</span>}
                   <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{KIND_LABEL[r.kind]}{r.runoff ? " · runoff" : ""}</div>
                 </td>
                 <td className="px-2 py-2 align-top"><MarketCallChips row={r} /></td>

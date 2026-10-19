@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import dynamic from "next/dynamic";
@@ -635,13 +636,13 @@ export default function DistrictFinder() {
               the panel height it does not need on a phone. */}
           <div className="mt-1 flex items-baseline justify-between gap-2">
             {stateMatch ? (
-              <a
+              <Link prefetch={false}
                 href={`/states/${stateMatch.id}`}
                 className="block min-w-0 truncate text-[1.375rem] font-bold leading-tight hover:underline sm:text-2xl"
                 style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}
               >
                 {result.state}
-              </a>
+              </Link>
             ) : (
               <div className="min-w-0 truncate text-[1.375rem] font-bold leading-tight sm:text-2xl" style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}>
                 {result.state ?? "—"}

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import StateCountyMap from "@/components/StateCountyMap";
@@ -176,7 +177,7 @@ export default function StateCountiesSection({
               {sorted.map((r, i) => (
                 <tr key={r.fips} className={!showAll && i >= SHOW_FIRST ? "hidden md:table-row" : undefined} style={{ borderBottom: "1px solid var(--app-border)" }}>
                   <td className="py-2 pr-2 text-left font-semibold">
-                    <a href={`/historical/${r.fips}`} className="hover:underline" style={{ color: "var(--app-text-primary)" }}>{r.name}</a>
+                    <Link prefetch={false} href={`/historical/${r.fips}`} className="hover:underline" style={{ color: "var(--app-text-primary)" }}>{r.name}</Link>
                   </td>
                   <td className="py-2 pr-2 text-right font-bold tabular-nums" style={{ color: marginColor(r.tpl) }}>{fmtMargin(r.tpl)}</td>
                   <td className="py-2 pr-2 text-right tabular-nums" style={{ color: marginColor(r.pres2024) }}>{fmtMargin(r.pres2024)}</td>

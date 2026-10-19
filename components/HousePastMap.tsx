@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
@@ -352,7 +353,7 @@ export default function HousePastMap({
                   ))}
                 </div>
                 {href && (
-                  <a href={href} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View {selectedYear} race →</a>
+                  <Link prefetch={false} href={href} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View {selectedYear} race →</Link>
                 )}
               </div>
               <div className="tabular-nums font-extrabold shrink-0" style={{ fontSize: "1.75rem", lineHeight: 1, color: margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>{marginLabel}</div>

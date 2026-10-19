@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import StateVoteHistoryChart from "./StateVoteHistoryChart";
 import VoteHistoryTabbedSection from "./VoteHistoryTabbedSection";
@@ -31,7 +32,7 @@ export function ResultCard({ entry }: { entry: StatewideHistoryEntry }) {
   // inside another <a>; they sit above it with pointer events back on.
   return (
     <div className="relative block w-full py-4 pl-2.5 pr-1 text-left" style={{ borderBottom: "1px solid var(--app-border)", borderLeft: "2px solid transparent" }}>
-      {entry.href && <a href={entry.href} aria-label={`${entry.year} ${entry.label} results`} className="absolute inset-0" />}
+      {entry.href && <Link prefetch={false} href={entry.href} aria-label={`${entry.year} ${entry.label} results`} className="absolute inset-0" />}
       <div className="relative pointer-events-none">
         <div className="mb-2 flex items-baseline justify-between gap-2">
           <div className="flex min-w-0 items-baseline gap-2">

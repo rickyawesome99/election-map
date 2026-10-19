@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { CandidateHistoryEntry } from "@/lib/candidateIndex";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import { getRatingColors, fmtMargin, marginColor } from "@/lib/colorScale";
@@ -5,6 +6,7 @@ import { notFound, permanentRedirect } from "next/navigation";
 import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";
 import BackLink from "@/components/BackLink";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import type { WarSlim } from "@/lib/modelSlices";
 import { WAR_BAD, WAR_GOOD, careerWar } from "@/components/tpl/format";
 import type { StateLegRace } from "@/lib/stateLegCandidateIndex";
@@ -163,7 +165,7 @@ export default async function CandidatePage({
           background: `linear-gradient(to bottom, color-mix(in srgb, ${accent} 10%, var(--app-bg)) 0px, var(--app-bg) 460px)`,
         }}
       >
-        <main className="mx-auto px-4 py-4 sm:px-6" style={{ maxWidth: "960px" }}>
+        <main className={`${PAGE_CONTAINER} py-4`}>
 
           <BackLink fallbackHref={backHref} label={backLabel} />
 
@@ -201,7 +203,7 @@ export default async function CandidatePage({
 
               {positionLabel && (
                 <p className="text-[13.5px] font-medium mt-1" style={{ color: "var(--app-text-muted)" }}>
-                  {positionDetail && legPositionHref ? <a href={legPositionHref} className="hover:underline">{positionLabel} &middot; {positionDetail}</a> : positionLabel}
+                  {positionDetail && legPositionHref ? <Link prefetch={false} href={legPositionHref} className="hover:underline">{positionLabel} &middot; {positionDetail}</Link> : positionLabel}
                 </p>
               )}
 
@@ -221,7 +223,7 @@ export default async function CandidatePage({
 
               {leg?.outgoing2026 && (
                 <p className="text-[12px] mt-2" style={{ color: "var(--app-text-muted)" }}>
-                  Not seeking re-election to <a href={leg.outgoing2026.href} className="hover:underline font-semibold">{leg.stateName} {leg.outgoing2026.districtShort}</a> in 2026: {leg.outgoing2026.reason || leg.outgoing2026.category}.
+                  Not seeking re-election to <Link prefetch={false} href={leg.outgoing2026.href} className="hover:underline font-semibold">{leg.stateName} {leg.outgoing2026.districtShort}</Link> in 2026: {leg.outgoing2026.reason || leg.outgoing2026.category}.
                 </p>
               )}
 
@@ -255,7 +257,7 @@ export default async function CandidatePage({
                     {isPresidential
                       ? <>avg of {war.length} state results &middot;{" "}</>
                       : <>{war.length} scored race{war.length === 1 ? "" : "s"} &middot;{" "}</>}
-                    <a href={`/model/candidates?c=${candidate.slug}`} className="underline hover:no-underline">WAR breakdown &rsaquo;</a>
+                    <Link prefetch={false} href={`/model/candidates?c=${candidate.slug}`} className="underline hover:no-underline">WAR breakdown &rsaquo;</Link>
                   </div>
                 </div>
               )}
@@ -280,7 +282,7 @@ export default async function CandidatePage({
                       </span>
                     </div>
 
-                    {candidate.currentRace && <a href={candidate.currentRace.racePath} className="block py-5" style={{ borderBottom: otherCurrentEntries.length > 0 || legCurrent.length > 0 ? "1px solid var(--app-border)" : "none" }}>
+                    {candidate.currentRace && <Link prefetch={false} href={candidate.currentRace.racePath} className="block py-5" style={{ borderBottom: otherCurrentEntries.length > 0 || legCurrent.length > 0 ? "1px solid var(--app-border)" : "none" }}>
                       <div className="flex items-start justify-between gap-4">
                         <div className="min-w-0">
                           <div className="text-[11px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
@@ -311,10 +313,10 @@ export default async function CandidatePage({
                           </div>
                         </div>
                       </div>
-                    </a>}
+                    </Link>}
 
                     {otherCurrentEntries.map((entry, i) => (
-                      <a
+                      <Link prefetch={false}
                         key={i}
                         href={entry.racePath}
                         className="flex items-center justify-between gap-3 py-3.5"
@@ -333,7 +335,7 @@ export default async function CandidatePage({
                         <span className="text-xs shrink-0" style={{ color: "var(--app-text-muted)" }}>
                           {raceTypeLabel(entry.raceType)}
                         </span>
-                      </a>
+                      </Link>
                     ))}
                     {legCurrent.map((race, i) => (
                       <StateLegCurrentRow key={`${race.chamber}-${race.district}-${i}`} race={race} projection={legProjections.get(race) ?? null} money={legMoney(race)} last={i === legCurrent.length - 1} />
@@ -395,13 +397,13 @@ export default async function CandidatePage({
                             <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>
                               {entry.year}
                             </span>
-                            <a
+                            <Link prefetch={false}
                               href={historyHref(entry)}
                               className="text-sm font-semibold hover:underline truncate"
                               style={{ color: "var(--app-text-muted)" }}
                             >
                               {entry.raceName} &middot; {raceTypeLabel(entry.raceType)}
-                            </a>
+                            </Link>
                             {entry.incumbent && (
                               <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: partySubtle(entry.party), color: entryAccent }}>
                                 Inc.

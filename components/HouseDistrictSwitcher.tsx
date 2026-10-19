@@ -7,6 +7,7 @@ import { geoMercator, geoPath, type GeoPermissibleObjects } from "d3-geo";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import type { Feature, FeatureCollection, Geometry } from "geojson";
 import { loadTopo } from "@/lib/useTopology";
+import { startPendingNav } from "@/lib/navPending";
 import { normalizeGeographyWinding, type WindableGeography } from "@/lib/geoWinding";
 
 /**
@@ -52,7 +53,7 @@ export default function HouseDistrictSwitcher({ stateAbbr, districts, current, m
   const n = districts.length;
   const prev = idx >= 0 && n > 1 ? districts[(idx - 1 + n) % n] : null;
   const next = idx >= 0 && n > 1 ? districts[(idx + 1) % n] : null;
-  const go = (name: string) => { if (name !== current) router.push(href(name), { scroll: false }); };
+  const go = (name: string) => { if (name !== current) { startPendingNav(href(name)); router.push(href(name), { scroll: false }); } };
 
   const navBtn = "h-8 w-8 shrink-0 grid place-items-center rounded-full text-base disabled:opacity-30";
   return (

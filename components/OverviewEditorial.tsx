@@ -83,7 +83,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
               const content = <><div className="text-xl font-extrabold tabular-nums sm:text-2xl">{value}</div><div className="mt-1 flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>{label}{href && <span aria-hidden="true">↗</span>}</div></>;
               const className = `whitespace-nowrap ${index % 2 ? "sm:border-l sm:pl-5" : index ? "lg:border-l lg:pl-5" : ""} ${href ? "transition-opacity hover:opacity-65" : ""}`;
               const style = index ? { borderColor: t.border } : undefined;
-              return href ? <a key={String(label)} href={String(href)} className={className} style={style}>{content}</a> : <div key={String(label)} className={className} style={style}>{content}</div>;
+              return href ? <Link prefetch={false} key={String(label)} href={String(href)} className={className} style={style}>{content}</Link> : <div key={String(label)} className={className} style={style}>{content}</div>;
             })}
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
             <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8">{keyRaces.map((race) => {
               const type = race.type;
               const href = `/${type}/${(type === "house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`;
-              return <a key={`${type}-${race.id}`} href={href} className="grid grid-cols-[1fr_auto] gap-3 py-4 transition-opacity hover:opacity-70" style={{ borderBottom: `1px solid ${t.border}` }}><div><div className="font-semibold">{type === "house" ? race.name : race.state}</div><div className="mt-1 text-[10px] uppercase tracking-wider" style={{ color: t.textMuted }}>{type === "house" ? "U.S. House" : type === "senate" ? "U.S. Senate" : "Governor"}</div></div><div className="text-right"><div className="text-lg font-extrabold tabular-nums" style={{ color: race.margin <= 0 ? t.demText : t.repText }}>{formatProjectedMargin(race.margin)}</div><div className="text-[10px]" style={{ color: t.textMuted }}>{marginToRating(race.margin)}</div></div></a>;
+              return <Link prefetch={false} key={`${type}-${race.id}`} href={href} className="grid grid-cols-[1fr_auto] gap-3 py-4 transition-opacity hover:opacity-70" style={{ borderBottom: `1px solid ${t.border}` }}><div><div className="font-semibold">{type === "house" ? race.name : race.state}</div><div className="mt-1 text-[10px] uppercase tracking-wider" style={{ color: t.textMuted }}>{type === "house" ? "U.S. House" : type === "senate" ? "U.S. Senate" : "Governor"}</div></div><div className="text-right"><div className="text-lg font-extrabold tabular-nums" style={{ color: race.margin <= 0 ? t.demText : t.repText }}>{formatProjectedMargin(race.margin)}</div><div className="text-[10px]" style={{ color: t.textMuted }}>{marginToRating(race.margin)}</div></div></Link>;
             })}</div>
           </section>
         </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 // "Nebraska › Nebraska's 3rd District" — the seat context line at the top of the past election
 // pages. A crumb without an href is the page itself.
 export type Crumb = { label: string; href?: string };
@@ -11,7 +12,7 @@ export function SeatCrumbs({ crumbs }: { crumbs: Crumb[] }) {
         <span key={c.label} className="flex items-baseline gap-x-2.5">
           {i > 0 && <span aria-hidden className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>›</span>}
           {c.href ? (
-            <a href={c.href} className="hover:underline" style={CRUMB_STYLE}>{c.label}</a>
+            <Link prefetch={false} href={c.href} className="hover:underline" style={CRUMB_STYLE}>{c.label}</Link>
           ) : (
             <span style={CRUMB_STYLE} aria-current="page">{c.label}</span>
           )}

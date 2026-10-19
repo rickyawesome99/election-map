@@ -23,6 +23,7 @@ import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useTopo } from "@/lib/useTopology";
+import { startPendingNav } from "@/lib/navPending";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_HERO_BG } from "@/lib/pageLayout";
 
@@ -278,6 +279,7 @@ export default function ForecastMap({
   function selectRaceType(type: RaceType) {
     persistRaceType(type);
     // Keep the reader where they are: the map and the toggle sit below the fold on phones.
+    startPendingNav(`/${type}`);
     router.push(`/${type}`, { scroll: false });
   }
 

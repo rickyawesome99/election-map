@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from "react";
+import { usePendingNav } from "@/lib/navPending";
 
 // prefetch: false on the heaviest pages (their RSC payloads are 100-250 KB each) so every page
-// view does not download them for links the reader may never click.
+// view does not download them for links the reader may never click; they prefetch on hover instead.
 const TABS: { key: string; label: string; href?: string; prefetch?: false }[] = [
   { key: "overview",         label: "Overview" },
   { key: "forecast",         label: "Forecast" },
@@ -57,7 +58,10 @@ function subscribeToStorage(onChange: () => void): () => void {
 /** The tab strip: in the sub-bar under the header below xl, inline in the header from xl up. */
 export function NavTabs({ variant }: { variant: "bar" | "header" }) {
   const pathname = usePathname();
-  const activeTab = getActiveTab(pathname);
+  const router = useRouter();
+  // The tab of a page being navigated to shows as active straight away, before it has loaded.
+  const pending = usePendingNav();
+  const activeTab = getActiveTab(pending?.path ?? pathname);
   // The Forecast tab returns to the chamber last viewed. The saved preference is re-read on
   // every render (the tabs live in the root layout and re-render on each navigation); the
   // server snapshot is "senate", so hydration agrees before the stored value takes over.
@@ -132,6 +136,8 @@ export function NavTabs({ variant }: { variant: "bar" | "header" }) {
             href={targetHref}
             prefetch={prefetch}
             aria-current={isActive ? "page" : undefined}
+            onMouseEnter={prefetch === false ? () => router.prefetch(targetHref) : undefined}
+            onTouchStart={prefetch === false ? () => router.prefetch(targetHref) : undefined}
             onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
             className={tabClass}
             style={{ color: isActive ? "var(--app-text-primary)" : "var(--app-text-muted)" }}

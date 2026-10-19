@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { memo, useCallback, useMemo, useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
@@ -395,7 +396,7 @@ export default function TurnoutMap({ theme: t, dark, projection }: { theme: Them
               </div>
             </div>
             {isProjection && selected.proj ? <ProjectionRows proj={selected.proj} office={office} t={t} /> : selected.entry ? <RaceRows entry={selected.entry} year={shownYear} t={t} highlight={office} /> : null}
-            {selected.moreInfoHref && <a href={selected.moreInfoHref} className="mt-1.5 inline-flex items-center gap-1 text-[10px] font-bold" style={{ color: t.textPrimary }}>More info →</a>}
+            {selected.moreInfoHref && <Link prefetch={false} href={selected.moreInfoHref} className="mt-1.5 inline-flex items-center gap-1 text-[10px] font-bold" style={{ color: t.textPrimary }}>More info →</Link>}
           </div>
         )}
       </div>

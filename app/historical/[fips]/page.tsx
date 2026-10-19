@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { countySenateData } from "@/data/countySenateData";
@@ -310,9 +311,9 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
               </h1>
               <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
                 {areaLabel} ·{" "}
-                <a href={`/states/${county.state.toLowerCase()}`} className="hover:underline">
+                <Link prefetch={false} href={`/states/${county.state.toLowerCase()}`} className="hover:underline">
                   {stateName}
-                </a>
+                </Link>
               </div>
             </div>
 

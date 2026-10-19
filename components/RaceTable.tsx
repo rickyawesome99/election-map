@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { useState } from "react";
@@ -213,13 +214,13 @@ export default function RaceTable({
                 className="transition-colors hover:opacity-80"
               >
                 <td className="px-4 py-3 text-left">
-                  <a
+                  <Link prefetch={false}
                     href={`${basePath}/${(basePath === "/house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`}
                     className="font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
                     {race.name}
-                  </a>
+                  </Link>
                 </td>
               </tr>
             ))}
@@ -313,13 +314,13 @@ export default function RaceTable({
             >
               {/* Line 1: Name + Rating */}
               <div className="flex min-w-0 items-center gap-1.5">
-                <a
+                <Link prefetch={false}
                   href={`${basePath}/${(basePath === "/house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`}
                   className="min-w-0 truncate text-sm font-semibold hover:underline"
                   style={{ color: "var(--app-text-primary)" }}
                 >
                   {race.name}
-                </a>
+                </Link>
                 <span
                   className="shrink-0 whitespace-nowrap rounded-full px-1.5 py-0.5 text-[9px] font-semibold"
                   style={{ background: bg, color: text }}
@@ -383,13 +384,13 @@ export default function RaceTable({
             >
               <div className="min-w-0">
                 <div className="mb-2 flex items-center gap-2">
-                  <a
+                  <Link prefetch={false}
                     href={`${basePath}/${(basePath === "/house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`}
                     className="truncate text-base font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
                     {race.name}
-                  </a>
+                  </Link>
                   {showSpecialBadge && race.electionType?.toLowerCase().includes("special") && (
                     <span
                       className="shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-semibold"

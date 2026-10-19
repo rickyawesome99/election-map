@@ -1,0 +1,66 @@
+"use client";
+
+import { useSyncExternalStore } from "react";
+
+// The page a click is navigating to, set before the router fetches and renders it so the tab
+// strip and the page area can switch at once. AppShell sets it from any in-site link click and
+// clears it when the pathname changes; the timeout clears it if a navigation never lands.
+
+/** Which placeholder layout (components/PendingPage) stands in for the page while it loads. */
+export type PendingKind =
+  | "overview" | "forecast" | "legislatures" | "historical" | "model" | "analysis" | "finder"
+  | "race" | "past" | "chamber" | "state" | "candidate";
+export type PendingNav = { kind: PendingKind; path: string };
+
+let pending: PendingNav | null = null;
+let timeout: ReturnType<typeof setTimeout> | undefined;
+const listeners = new Set<() => void>();
+
+export function setPendingNav(nav: PendingNav | null) {
+  if (pending?.path === nav?.path) return;
+  pending = nav;
+  clearTimeout(timeout);
+  if (nav) timeout = setTimeout(() => setPendingNav(null), 15000);
+  listeners.forEach((l) => l());
+}
+
+function subscribe(onChange: () => void) {
+  listeners.add(onChange);
+  return () => { listeners.delete(onChange); };
+}
+
+export function usePendingNav(): PendingNav | null {
+  return useSyncExternalStore(subscribe, () => pending, () => null);
+}
+
+const TAB_KINDS: Record<string, PendingKind> = {
+  "/overview": "overview",
+  "/house": "forecast",
+  "/senate": "forecast",
+  "/governor": "forecast",
+  "/legislatures": "legislatures",
+  "/historical": "historical",
+  "/model": "model",
+  "/analysis": "analysis",
+  "/district-finder": "finder",
+};
+
+/** The placeholder for a destination page that gets one; null for pages that load without. */
+export function pendingKindFor(pathname: string): PendingKind | null {
+  if (TAB_KINDS[pathname]) return TAB_KINDS[pathname];
+  if (/^\/(house|senate|governor|president)\/[^/]+\/\d{4}$/.test(pathname)) return "past";
+  if (/^\/(house|senate|governor)\/[^/]+$/.test(pathname)) return "race";
+  if (/^\/states\/[^/]+\/legislature\/[^/]+$/.test(pathname)) return "chamber";
+  // The bare /legislature route forwards to the state page's legislature section.
+  if (/^\/states\/[^/]+(\/legislature)?$/.test(pathname)) return "state";
+  if (/^\/candidates\/[^/]+$/.test(pathname)) return "candidate";
+  return null;
+}
+
+/** Shows the placeholder for a navigation to `href`, if its page has one. */
+export function startPendingNav(href: string) {
+  const path = new URL(href, window.location.href).pathname;
+  if (path === window.location.pathname) return;
+  const kind = pendingKindFor(path);
+  if (kind) setPendingNav({ kind, path });
+}

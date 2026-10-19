@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useMemo, useState } from "react";
 import { useStaticJson } from "@/lib/useStaticJson";
@@ -83,7 +84,7 @@ export default function StateLegModelTable({ states }: { states: { abbr: string;
               const g = Math.max(gap(d, "sn"), gap(d, "ei"));
               return (
                 <tr key={`${d.abbr}-${d.chamber}-${d.key}`} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  <td className="py-1.5 pr-3 whitespace-nowrap align-top"><a href={d.href} className="font-semibold hover:underline">{d.abbr} {d.chamber === "house" ? "" : "Sen. "}{d.label}</a>{d.seats > 1 && <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}> · {d.seats} seats</span>}</td>
+                  <td className="py-1.5 pr-3 whitespace-nowrap align-top"><Link prefetch={false} href={d.href} className="font-semibold hover:underline">{d.abbr} {d.chamber === "house" ? "" : "Sen. "}{d.label}</Link>{d.seats > 1 && <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}> · {d.seats} seats</span>}</td>
                   <td className="py-1.5 pr-3 align-top" style={{ color: d.cur === "D" ? "var(--party-dem)" : d.cur === "R" ? "var(--party-rep)" : "var(--app-text-muted)" }}>{d.cur === "vac" ? "vacant" : d.cur}</td>
                   <Cell c={d.ours} />
                   <Cell c={d.sn} />

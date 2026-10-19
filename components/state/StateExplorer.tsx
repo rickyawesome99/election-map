@@ -77,7 +77,7 @@ function TurnoutRow({ stats }: { stats: TurnoutStat[] }) {
 function RaceRow({ race }: { race: BallotRace }) {
   return (
     <div className="relative py-5 min-w-0" style={{ borderBottom: "1px solid var(--app-border)" }}>
-      <a href={race.href} aria-label={`View ${race.label} race`} className="absolute inset-0" />
+      <Link prefetch={false} href={race.href} aria-label={`View ${race.label} race`} className="absolute inset-0" />
       <div className="relative pointer-events-none flex items-start justify-between gap-4">
         <div className="min-w-0">
           <div className="text-[11px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>{race.label}</div>
@@ -108,7 +108,7 @@ function RaceRow({ race }: { race: BallotRace }) {
 /** A seat with no election this year: who holds it and when it is next up. */
 function HoldoverRow({ seat }: { seat: BallotHoldover }) {
   return (
-    <a href={seat.href} className="block py-5 min-w-0" style={{ borderBottom: "1px solid var(--app-border)" }}>
+    <Link prefetch={false} href={seat.href} className="block py-5 min-w-0" style={{ borderBottom: "1px solid var(--app-border)" }}>
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
           <div className="text-[11px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>{seat.label}</div>
@@ -122,7 +122,7 @@ function HoldoverRow({ seat }: { seat: BallotHoldover }) {
           <div className="mt-0.5">Next: {seat.nextElection}</div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 
@@ -136,7 +136,7 @@ function SenateHoldoverLine({ seats }: { seats: BallotHoldover[] }) {
           <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 text-sm">
             {seats.map((s) => (
               <span key={s.href} className="flex items-baseline gap-1.5">
-                <a href={s.href} className="hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.05rem", fontWeight: 700, color: partyColor(s.party) }}>{s.name}</a>
+                <Link prefetch={false} href={s.href} className="hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.05rem", fontWeight: 700, color: partyColor(s.party) }}>{s.name}</Link>
                 <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{partyTag(s.party, true)} · next {s.nextElection}</span>
               </span>
             ))}
@@ -158,7 +158,7 @@ function HouseRowButton({ row, active, onSelect }: { row: HouseRow; active: bool
       style={{ borderBottom: "1px solid var(--app-border)", borderLeft: `2px solid ${active ? "var(--app-text-primary)" : "transparent"}`, background: active ? "var(--app-tab-bg)" : undefined }}
     >
       <span className="flex min-w-0 items-baseline gap-2">
-        <a href={row.href} onClick={(e) => e.stopPropagation()} className="whitespace-nowrap text-sm font-bold tabular-nums hover:underline" style={{ color: "var(--app-text-primary)" }}>{row.label}</a>
+        <Link prefetch={false} href={row.href} onClick={(e) => e.stopPropagation()} className="whitespace-nowrap text-sm font-bold tabular-nums hover:underline" style={{ color: "var(--app-text-primary)" }}>{row.label}</Link>
         {row.openHolder && (
           <span className="shrink-0 text-[9px] font-bold uppercase tracking-wider" style={{ color: "var(--redistrict-ss)" }} title={`Open seat · ${row.openHolder} is not running`}>
             Open
@@ -416,7 +416,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                   ) : (
                     <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
                   )}
-                  <a href={`/house/${r.name.toLowerCase()}`} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View full race →</a>
+                  <Link prefetch={false} href={`/house/${r.name.toLowerCase()}`} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View full race →</Link>
                 </div>
                 <div className="tabular-nums font-extrabold shrink-0" style={{ fontSize: "1.75rem", lineHeight: 1, color: marginColor(r.margin) }}>{fmtMargin(r.margin)}</div>
               </div>
@@ -479,7 +479,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                     </div>
                   )}
                   {legPastOnCurrentLines && legDistrict && (
-                    <a href={chamberDistrictHref(state.id, legChamber, legDistrict.number)} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View district →</a>
+                    <Link prefetch={false} href={chamberDistrictHref(state.id, legChamber, legDistrict.number)} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View district →</Link>
                   )}
                 </div>
                 {margin != null && (
@@ -540,7 +540,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                     legProj && legProj.pD != null && legProj.contest === "contested" ? `P(D) ${fmtProb(legProj.pD)}` : "",
                   ].filter(Boolean).join(" · ")}
                 </div>
-                <a href={chamberDistrictHref(state.id, legChamber, legDistrict.number)} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View district →</a>
+                <Link prefetch={false} href={chamberDistrictHref(state.id, legChamber, legDistrict.number)} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View district →</Link>
               </div>
               {legProj?.margin != null && legProj.contest === "contested" && activeYear === electionYear && (
                 <div className="tabular-nums font-extrabold shrink-0" style={{ fontSize: "1.75rem", lineHeight: 1, color: marginColor(legProj.margin) }}>{fmtMargin(legProj.margin)}</div>

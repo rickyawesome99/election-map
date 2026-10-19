@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BackButton from "@/components/BackButton";
 import MarketAccuracyTable from "@/components/MarketAccuracyTable";
 import MarketCallChips from "@/components/MarketCallChips";
@@ -64,7 +65,7 @@ function RecordTable({ rows, firstHead }: { rows: { key: string; label: string; 
 function RaceCell({ r }: { r: MarketRaceRow }) {
   return (
     <>
-      {r.href ? <a href={r.href} className="font-semibold hover:underline">{r.place}</a> : <span className="font-semibold">{r.place}</span>}
+      {r.href ? <Link prefetch={false} href={r.href} className="font-semibold hover:underline">{r.place}</Link> : <span className="font-semibold">{r.place}</span>}
       <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{KIND_LABEL[r.kind]}{r.runoff ? " · runoff" : ""}</div>
     </>
   );

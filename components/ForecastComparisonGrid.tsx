@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useMemo, useState } from "react";
 import type { RaceType } from "@/data/forecastData";
@@ -114,7 +115,7 @@ export default function ForecastComparisonGrid({ data, initial = "senate" }: { d
             {shown.slice(0, limit).map((r) => (
               <tr key={r.id} style={{ borderBottom: "1px solid var(--app-border)" }}>
                 <th scope="row" className="whitespace-nowrap px-1.5 py-1 text-left font-semibold" style={firstCol}>
-                  <a href={r.href} className="hover:underline">{r.name}</a>
+                  <Link prefetch={false} href={r.href} className="hover:underline">{r.name}</Link>
                   {r.contest !== "contested" && <span className="ml-1 text-[9px] font-normal" style={{ color: "var(--app-text-very-muted)" }} title="Uncontested or same-party general election">uncontested</span>}
                 </th>
                 <td className="whitespace-nowrap px-1.5 py-1 text-right text-xs font-semibold tabular-nums" style={{ color: r.ours.margin > 0 ? "var(--party-rep)" : "var(--party-dem)" }} title="Our projected margin">{fmtMargin(r.ours.margin)}</td>

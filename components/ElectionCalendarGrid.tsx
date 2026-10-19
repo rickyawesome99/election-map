@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { electionSlots, raceCalendarYears, type ElectionSlot, type RaceKind } from "@/data/raceCalendar";
 import { fmtMargin } from "@/lib/colorScale";
 import { RACE_KIND_LABEL, filterHref, type RaceCalendarFilter } from "@/lib/raceCalendarQuery";
@@ -117,9 +118,9 @@ function UpcomingCell({ state }: { state: { abbr: string; name: string } }) {
       ) : (
         <span className="slots">
           {slots.map((slot) => (
-            <a key={`${slot.kind}-${slot.raceClass}`} href={slot.href} className="slot-link">
+            <Link prefetch={false} key={`${slot.kind}-${slot.raceClass}`} href={slot.href} className="slot-link">
               <SlotBadge slot={slot} tip={upcomingTip(slot, state.name)} upcoming />
-            </a>
+            </Link>
           ))}
         </span>
       )}
@@ -155,13 +156,13 @@ export default function ElectionCalendarGrid({
               return (
                 <tr key={state.abbr}>
                   <th className="state">
-                    <a
+                    <Link prefetch={false}
                       href={filterHref(filter, { state: state.abbr, year: "all" })}
                       className="abbr hover:underline"
                       data-jump
                     >
                       {state.abbr}
-                    </a>
+                    </Link>
                     <span className="full">{state.name}</span>
                   </th>
                   {years.map((year) => {
@@ -177,7 +178,7 @@ export default function ElectionCalendarGrid({
                             &middot;
                           </span>
                         ) : (
-                          <a
+                          <Link prefetch={false}
                             href={filterHref(filter, { state: state.abbr, year: String(year) })}
                             className="slots"
                             data-jump
@@ -189,7 +190,7 @@ export default function ElectionCalendarGrid({
                                 tip={slotTip(slot, year, state.name)}
                               />
                             ))}
-                          </a>
+                          </Link>
                         )}
                       </td>
                     );

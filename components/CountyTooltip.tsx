@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ReactNode, Ref } from "react";
 import { lastName } from "@/lib/personName";
 import CandidateLink from "@/components/CandidateLink";
@@ -282,5 +283,5 @@ export function CountyCardClose({ onClick, label = "Close county details", small
 
 /** The link out, for `footer`. */
 export function CountyCardLink({ href, children = "Go to county page →" }: { href: string; children?: ReactNode }) {
-  return <a href={href} className="inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{children}</a>;
+  return <Link prefetch={false} href={href} className="inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{children}</Link>;
 }

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useMemo, useRef, useEffect } from "react";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
@@ -278,7 +279,7 @@ export default function StateLegDistrictTable({
                   >
                     <td className="py-2 pr-2 md:py-3 md:pr-3 text-left font-semibold whitespace-nowrap tabular-nums" style={{ color: "var(--app-text-primary)" }}>
                       {atlasHref ? (
-                        <a href={atlasHref(d.number)} className="hover:underline" title="Full district profile">{d.number}</a>
+                        <Link prefetch={false} href={atlasHref(d.number)} className="hover:underline" title="Full district profile">{d.number}</Link>
                       ) : (
                         d.number
                       )}
@@ -288,7 +289,7 @@ export default function StateLegDistrictTable({
                         incumbents.map((inc, j) => (
                           <span key={j}>
                             {j > 0 && ", "}
-                            {candidateHref ? <a href={candidateHref(inc.name)} className="hover:underline" onClick={(e) => e.stopPropagation()}>{inc.name}</a> : inc.name}
+                            {candidateHref ? <Link prefetch={false} href={candidateHref(inc.name)} className="hover:underline" onClick={(e) => e.stopPropagation()}>{inc.name}</Link> : inc.name}
                           </span>
                         ))
                       ) : (

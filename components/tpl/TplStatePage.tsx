@@ -14,6 +14,7 @@ import { TplSubNav } from "./TplSubNav";
 import { MATRIX_ROWS, OFFICE_LABELS, RACE_TYPE_LABELS, fmt1, fmt2, marginColor, ordinal, stateHref } from "./format";
 import type { DistrictPageData, StatePageData, TplRace } from "./types";
 import { AllRacesButton, ArrowOut, CandidateLink, M, StatRow, TD, TD_R, TH, TH_R, VERY_MUTED, WarChip } from "./ui";
+import { PAGE_CONTAINER } from "@/lib/pageLayout";
 
 // One state's page: hero, the year × office matrix with the races behind the selected cell,
 // the result ledger, the District TPL section (its own matrix and table for the selected
@@ -83,7 +84,6 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
   const centered = data.tpl - data.medianStateTpl;
   const beta = data.beta?.shrunk ?? 1;
   const imputed = data.races.filter((r) => r.imputed).length;
-  const districtById = useMemo(() => new Map(data.districts.map((d) => [d.code, d])), [data.districts]);
   const tint = data.tpl > 0 ? "var(--party-rep)" : "var(--party-dem)";
   // Rank from the state's own side: 1st most Republican, or counted up from the D end.
   const sideRank = data.tpl > 0 ? { n: data.rank, side: "Republican" } : { n: 51 - data.rank, side: "Democratic" };
@@ -93,7 +93,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <div style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${tint} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)` }}>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className={PAGE_CONTAINER}>
           <TplSubNav
             methodologyLabel="How State TPL works"
             right={
@@ -129,7 +129,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
         </div>
       </div>
 
-      <main className="mx-auto max-w-7xl px-4 pb-14 sm:px-6">
+      <main className={`${PAGE_CONTAINER} pb-14`}>
         <div className="flex items-center gap-4 overflow-x-auto py-2.5 text-xs font-semibold" style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
           {nav.map(([id, label]) => <a key={id} href={`#${id}`} className="shrink-0 hover:underline">{label}</a>)}
           <button type="button" onClick={() => setGlossary((v) => !v)} className="ml-auto shrink-0 font-medium hover:underline" aria-expanded={glossary}>Glossary {glossary ? "▴" : "▾"}</button>
@@ -165,8 +165,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
           <LedgerSectionHead label={`Races behind the cell · ${title}`} meta={meta}
             right={<AllRacesButton count={data.races.length} hidden={racesHidden} onToggle={() => { setRacesHidden((h) => !h); setSel({ year: "all", type: "all" }); }} />} />
           {!(racesHidden && sel.year === "all" && sel.type === "all") && <>
-            <RaceTable races={rows} variant="state" showYear={sel.year === "all"} onRow={setRace} onFormula={setFormula}
-              districtTpl={(code) => { const d = districtById.get(code); return d ? { tpl: d.tpl, href: `#${code.toLowerCase()}` } : null; }} />
+            <RaceTable races={rows} variant="state" showYear={sel.year === "all"} onRow={setRace} onFormula={setFormula} />
             <TableCaption>
               Click a row for the step-by-step calculation.
             </TableCaption>

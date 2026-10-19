@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { calculateCountyModel, type ComputedRace } from "@/lib/tplCompute";
 import { countyHouseData } from "@/data/countyHouseData";
 import { pastHrefOf } from "@/lib/modelSlices";
@@ -84,9 +85,9 @@ export default function CountyTplCard({
                     {r.raceType}
                   </span>
                   {href ? (
-                    <a href={href} className="hover:underline">
+                    <Link prefetch={false} href={href} className="hover:underline">
                       {raceLabel}
-                    </a>
+                    </Link>
                   ) : (
                     raceLabel
                   )}
@@ -182,13 +183,13 @@ export default function CountyTplCard({
       </div>
 
       <div className="mt-4 text-[10px]">
-        <a
+        <Link prefetch={false}
           href={`/model/${stateAbbr.toLowerCase()}`}
           className="font-semibold hover:underline"
           style={{ color: "var(--app-text-muted)" }}
         >
           Uses the same methodology as {stateName}&apos;s State TPL →
-        </a>
+        </Link>
       </div>
     </div>
   );

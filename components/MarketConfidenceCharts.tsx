@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useMemo, useRef, useState, type ReactNode } from "react";
 import Segmented from "@/components/MarketSegmented";
@@ -94,7 +95,7 @@ function BandGrid({ rows, onTip, wrap }: { rows: MarketDot[]; onTip: (tip: Tip) 
               {inBand.map((m) => {
                 const style = { background: m.correct ? "var(--app-border)" : partyColor(m.favParty) };
                 const props = { className: "block h-3 w-3 rounded-[2px]", style, onMouseEnter: (e: React.MouseEvent<HTMLElement>) => showTip(e.currentTarget, m), onMouseLeave: () => onTip(null) };
-                return m.href ? <a key={m.id} href={m.href} tabIndex={-1} aria-hidden="true" {...props} /> : <span key={m.id} aria-hidden="true" {...props} />;
+                return m.href ? <Link prefetch={false} key={m.id} href={m.href} tabIndex={-1} aria-hidden="true" {...props} /> : <span key={m.id} aria-hidden="true" {...props} />;
               })}
             </div>
           </div>

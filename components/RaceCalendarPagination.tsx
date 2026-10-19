@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { filterHref, pageCount, type RaceCalendarFilter } from "@/lib/raceCalendarQuery";
 
 /** Page numbers to show. Always the first and last, always the neighbours of the current
@@ -42,7 +43,7 @@ export default function RaceCalendarPagination({
       {last > 1 && (
         <nav className="cal-pager" aria-label="Race Calendar pages">
           {page > 1 ? (
-            <a href={filterHref(filter, { page: page - 1 })} data-jump rel="prev" aria-label="Previous page">&larr;</a>
+            <Link prefetch={false} href={filterHref(filter, { page: page - 1 })} data-jump rel="prev" aria-label="Previous page">&larr;</Link>
           ) : (
             <span className="step" aria-hidden="true">&larr;</span>
           )}
@@ -51,7 +52,7 @@ export default function RaceCalendarPagination({
             entry === "gap" ? (
               <span key={`gap-${i}`} className="gap" aria-hidden="true">&hellip;</span>
             ) : (
-              <a
+              <Link prefetch={false}
                 key={entry}
                 href={filterHref(filter, { page: entry })}
                 data-jump
@@ -59,12 +60,12 @@ export default function RaceCalendarPagination({
                 aria-label={`Page ${entry}`}
               >
                 {entry}
-              </a>
+              </Link>
             )
           )}
 
           {page < last ? (
-            <a href={filterHref(filter, { page: page + 1 })} data-jump rel="next" aria-label="Next page">&rarr;</a>
+            <Link prefetch={false} href={filterHref(filter, { page: page + 1 })} data-jump rel="next" aria-label="Next page">&rarr;</Link>
           ) : (
             <span className="step" aria-hidden="true">&rarr;</span>
           )}
