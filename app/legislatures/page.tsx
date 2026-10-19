@@ -2,8 +2,10 @@ import Link from "next/link";
 import { electionYear, stateLegData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { stateLegDistricts, UNICAMERAL_STATES } from "@/data/stateLegDistricts";
+import { chamberOutcome } from "@/lib/chamberOutcome";
+import { stateLegCompositionAsOf } from "@/data/stateLegComposition";
 import { projectAllChambers } from "@/lib/stateLegForecast";
-import { latestChamberSeats } from "@/lib/stateLegSeats";
+import { currentChamberSeats, latestChamberSeats } from "@/lib/stateLegSeats";
 import { getNationalEnvironment } from "@/lib/tplCompute";
 import { stateLegMapInfo } from "@/data/stateLegMapInfo";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
@@ -36,7 +38,7 @@ export default function LegislaturesPage() {
   const rows = chambers.map((c) => {
     const state = byAbbr.get(c.abbr)!;
     const unicameral = UNICAMERAL_STATES.has(c.abbr);
-    const comp = latestChamberSeats(stateLegData[state.name] ?? [], unicameral ? "House" : c.chamber === "house" ? "House" : "Senate");
+    const comp = currentChamberSeats(c.abbr, c.chamber) ?? latestChamberSeats(stateLegData[state.name] ?? [], unicameral ? "House" : c.chamber === "house" ? "House" : "Senate");
     const currentDemControl = comp ? comp.dem > comp.rep : null;
     const flipD = c.pDemControl != null && currentDemControl === false ? c.pDemControl : 0;
     const flipR = c.pRepControl != null && currentDemControl === true ? c.pRepControl : 0;
@@ -94,7 +96,7 @@ export default function LegislaturesPage() {
     const unicameral = UNICAMERAL_STATES.has(state.abbr);
     const build = (chamber: "house" | "senate"): LegislatureMapChamber | null => {
       const c = projByKey.get(`${state.abbr}-${chamber}`);
-      const comp = latestChamberSeats(stateLegData[state.name] ?? [], unicameral || chamber === "house" ? "House" : "Senate");
+      const comp = currentChamberSeats(state.abbr, unicameral ? "senate" : chamber) ?? latestChamberSeats(stateLegData[state.name] ?? [], unicameral || chamber === "house" ? "House" : "Senate");
       const info = stateLegMapInfo[state.abbr]?.[chamber];
       const totalSeats = c?.totalSeats ?? info?.totalSeats ?? comp?.total ?? null;
       if (totalSeats == null || (!c && !comp)) return null;
@@ -117,14 +119,14 @@ export default function LegislaturesPage() {
 
   // Slim rows for the client table: the projections themselves carry every district.
   const tableRows: ChamberRow[] = rows.map(({ c, state, comp, label }) => {
-    const superP = c.supermajority == null ? null : Math.max(c.pDemSuper ?? 0, c.pRepSuper ?? 0);
-    const superWho = (c.pDemSuper ?? 0) >= (c.pRepSuper ?? 0) ? "D" : "R";
     return {
       key: `${c.abbr}-${c.chamber}`, stateName: state.name, href: `/states/${state.id}/legislature/${c.chamber}`, label, chamber: c.chamber,
       seatsUp: c.seatsUp, totalSeats: c.totalSeats, now: comp ? { dem: comp.dem, rep: comp.rep, oth: comp.oth ?? 0 } : null,
       expectedDem: c.expectedDem, expectedRep: c.expectedRep, expectedOth: c.expectedOth, lo80: c.lo80, hi80: c.hi80, majority: c.majority,
       pDem: c.pDemControl, pRep: c.pRepControl,
-      superLabel: superP == null ? "—" : superP < 0.005 ? "<1%" : `${superWho} ${Math.round(superP * 100)}%`,
+      supermajority: c.supermajority,
+      nowStatus: comp && c.majority != null ? chamberOutcome(comp.dem, comp.rep, c.majority, c.supermajority) : null,
+      outcomes: c.outcomes,
       unopposed: c.decided.dem + c.decided.rep + c.decided.oth, unprojected: c.unprojected,
     };
   });
@@ -226,7 +228,7 @@ export default function LegislaturesPage() {
         <LegislatureControlMap states={mapStates} year={electionYear} />
         <LegislatureChambersTable rows={tableRows} />
         <p className="mt-4 max-w-3xl text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-          The bar under Projected seats is the whole chamber, holdovers included, with seats that have no projection left gray; the tick marks a majority and the gray whisker above it the 80% range of Democratic seats. Control odds show the favored party&apos;s chance; in a chamber that can tie, the favorite can sit below 50%. Net is the projected change from &ldquo;Now&rdquo; in whole seats, credited to the party that gains. &ldquo;Now&rdquo; is the composition after the last election on record. Control odds are withheld (—) where seats with no projection could decide them: Nebraska&apos;s nonpartisan Legislature. Multi-member districts draw each seat on the same margin. Michigan&apos;s 110-seat House can tie, so its two control odds do not sum to 100%.
+          The bar under Projected seats is the whole chamber, holdovers included, with seats that have no projection left gray; the tick marks a majority and the gray whisker above it the 80% range of Democratic seats. Control odds show the favored party&apos;s chance; in a chamber that can tie, the favorite can sit below 50%. Net is the projected change from &ldquo;Now&rdquo; in whole seats, credited to the party that gains. &ldquo;Now&rdquo; is the chamber as it sits today (Ballotpedia, {stateLegCompositionAsOf}), independents and third parties as the third figure and vacancies left out, with its majority status below; Projected status is the status the simulations end in most often (hover for D Supermajority, D Majority, Tie, R Majority and R Supermajority), supermajority being the veto-override line. Control odds are withheld (—) where seats with no projection could decide them. Nebraska&apos;s ballot is nonpartisan; its seats are counted by each candidate&apos;s party (registration or party endorsement), the caucus they sit with. Multi-member districts draw each seat on the same margin. Michigan&apos;s 110-seat House can tie, so its two control odds do not sum to 100%.
         </p>
       </main>
     </div>

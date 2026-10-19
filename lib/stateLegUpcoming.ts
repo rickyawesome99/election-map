@@ -53,8 +53,10 @@ function parityOf(numbers: string[]): "odd" | "even" | null {
 }
 
 /**
- * Null when the chamber has nothing on the ballot that year — the 11 chambers sitting out 2026
- * (LA/MS/VA/NJ entirely, plus the KS/NM/SC senates) get no card and no map view.
+ * Null when the chamber has nothing on the ballot that year — the 5 chambers sitting out 2026
+ * (NJ's two, the LA/MS/VA senates) get no card and no map view. Six chambers off their regular
+ * cycle (the LA/MS/VA houses, the KS/NM/SC senates) still have a special election on the ballot
+ * (data-entry/state-leg-specials-2026.csv).
  */
 export function summarizeUpcoming(
   districts: StateLegDistrict[],

@@ -538770,13 +538770,13 @@ export const stateLegResults: Record<
      },
      "Rutland-8": {
       "demVotes": 0,
-      "repVotes": 0,
-      "othVotes": 2315,
+      "repVotes": 2263,
+      "othVotes": 52,
       "totalVotes": 2315,
       "candidates": [
        {
         "name": "Alicia Malay",
-        "party": "O",
+        "party": "R",
         "votes": 2263,
         "winner": true
        },
@@ -539208,19 +539208,19 @@ export const stateLegResults: Record<
      },
      "Franklin-1": {
       "demVotes": 0,
-      "repVotes": 0,
-      "othVotes": 8043,
+      "repVotes": 7951,
+      "othVotes": 92,
       "totalVotes": 8043,
       "candidates": [
        {
         "name": "Carolyn Whitney Branagan",
-        "party": "O",
+        "party": "R",
         "votes": 3997,
         "winner": true
        },
        {
         "name": "Ashley R Bartley",
-        "party": "O",
+        "party": "R",
         "votes": 3954,
         "winner": true,
         "incumbent": true
@@ -539235,13 +539235,13 @@ export const stateLegResults: Record<
      },
      "Franklin-2": {
       "demVotes": 0,
-      "repVotes": 0,
-      "othVotes": 2111,
+      "repVotes": 2028,
+      "othVotes": 83,
       "totalVotes": 2111,
       "candidates": [
        {
         "name": "Eileen \"Lynn\" Dickinson",
-        "party": "O",
+        "party": "R",
         "votes": 2028,
         "winner": true,
         "incumbent": true
@@ -539281,20 +539281,20 @@ export const stateLegResults: Record<
      },
      "Franklin-4": {
       "demVotes": 0,
-      "repVotes": 0,
-      "othVotes": 6314,
+      "repVotes": 6255,
+      "othVotes": 59,
       "totalVotes": 6314,
       "candidates": [
        {
         "name": "Matthew E Walker",
-        "party": "O",
+        "party": "R",
         "votes": 3206,
         "winner": true,
         "incumbent": true
        },
        {
         "name": "Thomas \"Tom\" Oliver Jr.",
-        "party": "O",
+        "party": "R",
         "votes": 3049,
         "winner": true,
         "incumbent": true
@@ -539309,20 +539309,20 @@ export const stateLegResults: Record<
      },
      "Franklin-5": {
       "demVotes": 0,
-      "repVotes": 0,
-      "othVotes": 6336,
+      "repVotes": 6272,
+      "othVotes": 64,
       "totalVotes": 6336,
       "candidates": [
        {
         "name": "Wayne A Laroche",
-        "party": "O",
+        "party": "R",
         "votes": 3190,
         "winner": true,
         "incumbent": true
        },
        {
         "name": "Lisa A Hango",
-        "party": "O",
+        "party": "R",
         "votes": 3082,
         "winner": true,
         "incumbent": true
@@ -539337,13 +539337,13 @@ export const stateLegResults: Record<
      },
      "Franklin-6": {
       "demVotes": 0,
-      "repVotes": 0,
-      "othVotes": 2416,
+      "repVotes": 2334,
+      "othVotes": 82,
       "totalVotes": 2416,
       "candidates": [
        {
         "name": "James Gregoire",
-        "party": "O",
+        "party": "R",
         "votes": 2334,
         "winner": true,
         "incumbent": true
@@ -540808,8 +540808,8 @@ export const stateLegResults: Record<
      },
      "Washington-Orange": {
       "demVotes": 1781,
-      "repVotes": 3271,
-      "othVotes": 2946,
+      "repVotes": 6182,
+      "othVotes": 35,
       "totalVotes": 7998,
       "candidates": [
        {
@@ -540821,7 +540821,7 @@ export const stateLegResults: Record<
        },
        {
         "name": "Francis \"Topper\" McFaun",
-        "party": "O",
+        "party": "R",
         "votes": 2911,
         "winner": true,
         "incumbent": true
@@ -541120,7 +541120,8 @@ export const stateLegResults: Record<
        }
       ]
      }
-    }
+    },
+    "note": "Republicans on the Democratic line too (R/D) restored to R (scripts/fix-vermont-2024-fusion.py)."
    },
    "senate": {
     "source": "MEDSL State Precinct-Level Returns 2024",
@@ -541378,20 +541379,20 @@ export const stateLegResults: Record<
      },
      "Franklin": {
       "demVotes": 0,
-      "repVotes": 0,
-      "othVotes": 32501,
+      "repVotes": 32091,
+      "othVotes": 410,
       "totalVotes": 32501,
       "candidates": [
        {
         "name": "Randy Brock",
-        "party": "O",
+        "party": "R",
         "votes": 16411,
         "winner": true,
         "incumbent": true
        },
        {
         "name": "Robert W Norris",
-        "party": "O",
+        "party": "R",
         "votes": 15680,
         "winner": true,
         "incumbent": true
@@ -541406,13 +541407,13 @@ export const stateLegResults: Record<
      },
      "Lamoille": {
       "demVotes": 0,
-      "repVotes": 0,
-      "othVotes": 11726,
+      "repVotes": 7801,
+      "othVotes": 3925,
       "totalVotes": 11726,
       "candidates": [
        {
         "name": "Richard A Westman",
-        "party": "O",
+        "party": "R",
         "votes": 7801,
         "winner": true,
         "incumbent": true
@@ -541678,7 +541679,8 @@ export const stateLegResults: Record<
        }
       ]
      }
-    }
+    },
+    "note": "Republicans on the Democratic line too (R/D) restored to R (scripts/fix-vermont-2024-fusion.py)."
    }
   }
  },

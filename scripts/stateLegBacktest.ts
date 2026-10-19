@@ -2,6 +2,8 @@
 //
 // Run:  npx tsx --conditions=react-server scripts/stateLegBacktest.ts
 //       npx tsx --conditions=react-server scripts/stateLegBacktest.ts --emit   (write data/stateLegValidation.ts)
+//       npx tsx --conditions=react-server scripts/stateLegBacktest.ts --env --emit   (environment-scale sweep, 2018–2024, bias kept)
+//       npx tsx --conditions=react-server scripts/stateLegBacktest.ts --leg-shock    (national legislative shock: chamber-mean calibration, 2018–2024)
 //
 // Protocol: for each held-out year Y (2022, 2024), every chamber whose Y election was held on the
 // CURRENT map (so district keys line up) and whose districts have a contested result in Y. Each
@@ -15,8 +17,10 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { projectDistrict, STATE_LEG_FORECAST_CONSTANTS as C } from "@/lib/stateLegForecast";
-import { getTplFit } from "@/lib/tplCompute";
+import { projectDistrict, STATE_LEG_FORECAST_CONSTANTS as C, type ProjectOptions } from "@/lib/stateLegForecast";
+import { getTplFit, getEnvironmentModel, winProbabilityD } from "@/lib/tplCompute";
+import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
+import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { stateLegDistricts, UNICAMERAL_STATES, type Chamber } from "@/data/stateLegDistricts";
 import { stateLegResults } from "@/data/stateLegResults";
 import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";
@@ -28,9 +32,9 @@ const sd = (xs: number[]) => { const m = mean(xs); return Math.sqrt(xs.reduce((s
 
 interface Row { abbr: string; chamber: Chamber; key: string; year: number; actual: number; projected: number; incSign: number; lean: number; nRows: number; moneyPts: number | null }
 
-function run(year: number, typeWeights?: Record<"P" | "L", number>, recentSeatBoost?: number, money?: { k: number; cap: number; strip?: boolean }): Row[] {
+function run(year: number, typeWeights?: Record<"P" | "L", number>, recentSeatBoost?: number, money?: { k: number; cap: number; strip?: boolean }, env?: Pick<ProjectOptions, "envScale" | "envScaleRows" | "targetE">): Row[] {
   const fit = getTplFit();
-  const E = fit.E[year] ?? 0;
+  const E = env?.targetE ?? fit.E[year] ?? 0;
   const rows: Row[] = [];
   for (const abbr of Object.keys(stateLegDistricts).sort()) {
     for (const chamber of ["house", "senate"] as Chamber[]) {
@@ -47,9 +51,30 @@ function run(year: number, typeWeights?: Record<"P" | "L", number>, recentSeatBo
         const inc = (r.candidates ?? []).filter((c) => c.incumbent);
         const parties = new Set(inc.map((c) => c.party));
         const incSign = parties.size === 1 ? ([...parties][0] === "R" ? 1 : [...parties][0] === "D" ? -1 : 0) : 0;
-        const p = projectDistrict(abbr, chamber, d, { maxYear: year - 1, targetYear: year, targetE: E, targetIncSign: incSign, incumbencyPts: 0, typeWeights, recentSeatBoost, moneyK: money?.k, moneyCap: money?.cap, moneyStrip: money?.strip });
+        const p = projectDistrict(abbr, chamber, d, { maxYear: year - 1, targetYear: year, targetE: E, targetIncSign: incSign, incumbencyPts: 0, typeWeights, recentSeatBoost, moneyK: money?.k, moneyCap: money?.cap, moneyStrip: money?.strip, envScale: env?.envScale, envScaleRows: env?.envScaleRows });
         if (p.lean == null || p.margin == null) continue;
         rows.push({ abbr, chamber, key: d.number, year, actual, projected: p.margin, incSign, lean: p.lean, nRows: p.rows.length, moneyPts: p.money?.pts ?? null });
+      }
+    }
+  }
+  return rows;
+}
+
+// A year run on a superseded map (2018, 2020): the "actual" is that year's seat result relocated onto
+// today's lines through the population crosswalk (the projection's own L row for the year, which carries
+// the presidential delta between the old and new polygons), the projection built from rows before it.
+function runRelocated(year: number, env: Pick<ProjectOptions, "envScale" | "envScaleRows" | "targetE">): Row[] {
+  const rows: Row[] = [];
+  for (const abbr of Object.keys(stateLegDistricts).sort()) {
+    for (const chamber of ["house", "senate"] as Chamber[]) {
+      if (UNICAMERAL_STATES.has(abbr) && chamber === "house") continue;
+      if (!stateLegResults[abbr]?.[String(year)]?.[chamber]) continue;
+      for (const d of stateLegDistricts[abbr]?.[chamber] ?? []) {
+        const row = projectDistrict(abbr, chamber, d, { maxYear: year, moneyK: 0 }).rows.find((r) => r.kind === "L" && r.year === year);
+        if (!row || row.raw == null || row.coverage < 0.9) continue;
+        const p = projectDistrict(abbr, chamber, d, { maxYear: year - 1, targetYear: year, targetE: env.targetE, targetIncSign: row.incSign, incumbencyPts: 0, moneyK: 0, envScale: env.envScale, envScaleRows: env.envScaleRows });
+        if (p.lean == null || p.margin == null) continue;
+        rows.push({ abbr, chamber, key: d.number, year, actual: row.raw, projected: p.margin, incSign: row.incSign, lean: p.lean, nRows: p.rows.length, moneyPts: null });
       }
     }
   }
@@ -83,11 +108,95 @@ function score(rows: Row[]) {
   tau2 = Math.max(0, varMeans - (sigma ** 2 - tau2) * meanInvN);
   const stateShock = Math.sqrt(tau2);
   const sigmaWithin = Math.sqrt(Math.max(0, sigma ** 2 - tau2));
-  return { n: rows.length, bias, mae, incPts, incN: inc.length, sigma, sigmaRobust: robust, maeAfter: mean(resAfter.map(Math.abs)), stateShock, sigmaWithin, chambers: chambers.length };
+  // With the bias left in: a uniform environment miss counts against the projection here.
+  const maeRaw = mean(rows.map((r) => Math.abs(r.actual - r.projected - incPts * r.incSign)));
+  const biasAfterInc = mean(rows.map((r) => r.actual - r.projected - incPts * r.incSign));
+  return { n: rows.length, bias, biasAfterInc, maeRaw, mae, incPts, incN: inc.length, sigma, sigmaRobust: robust, maeAfter: mean(resAfter.map(Math.abs)), stateShock, sigmaWithin, chambers: chambers.length };
 }
 
 const years = [2022, 2024];
 const emitted: Record<string, unknown>[] = [];
+
+// --leg-shock: a national legislative shock, the part of a year's seat-level miss shared by every
+// chamber (the backtest's mean bias given the fitted E). The chamber shock τ is measured with that
+// bias removed, so the live variance budget leaves it out. Scored on each held-out chamber's mean
+// residual (live incumbency, bias left in): predictive N(0, τ² + s² + SIGMA²/n) against s = 0, with s
+// the RMS of the OTHER years' biases (leave one year out), by log score and 80%/50% coverage; and on
+// each contested seat's P(D) by log loss and Brier.
+if (process.argv.includes("--leg-shock")) {
+  const fit = getTplFit();
+  const all = [2018, 2020, ...years];
+  const byYear = new Map<number, Row[]>();
+  for (const y of all) byYear.set(y, y < 2022 ? runRelocated(y, { targetE: fit.E[y] }) : run(y, undefined, undefined, undefined, { targetE: fit.E[y] }));
+  const resOf = (r: Row) => r.actual - r.projected - C.INCUMBENCY_PTS * r.incSign;
+  const bias = new Map(all.map((y) => [y, mean(byYear.get(y)!.map(resOf))]));
+  console.log("Yearly seat-level bias given the fitted E (live incumbency): " + all.map((y) => `${y} ${bias.get(y)! >= 0 ? "+" : ""}${bias.get(y)!.toFixed(2)}`).join(" · "));
+  console.log(`RMS around 0, all years: ${Math.sqrt(mean(all.map((y) => bias.get(y)! ** 2))).toFixed(2)}\n`);
+  const out: Record<string, unknown>[] = [];
+  const variants = [{ name: "s = 0 (live)", s: () => 0 }, { name: "s = LOO RMS", s: (y: number) => Math.sqrt(mean(all.filter((x) => x !== y).map((x) => bias.get(x)! ** 2))) }];
+  for (const v of variants) {
+    let ls = 0, n = 0, c80 = 0, c50 = 0, seatLL = 0, seatBrier = 0, seatN = 0;
+    const perYear: string[] = [];
+    for (const y of all) {
+      const s = v.s(y);
+      const byCh = new Map<string, number[]>();
+      for (const r of byYear.get(y)!) byCh.set(`${r.abbr}:${r.chamber}`, [...(byCh.get(`${r.abbr}:${r.chamber}`) ?? []), resOf(r)]);
+      let yls = 0, yn = 0;
+      for (const xs of byCh.values()) {
+        if (xs.length < 10) continue;
+        const m = mean(xs), sd2 = C.STATE_SHOCK ** 2 + s ** 2 + C.SIGMA ** 2 / xs.length, sdc = Math.sqrt(sd2);
+        const lp = -0.5 * Math.log(2 * Math.PI * sd2) - (m * m) / (2 * sd2);
+        ls += lp; yls += lp; n += 1; yn += 1;
+        if (Math.abs(m) <= 1.2816 * sdc) c80 += 1;
+        if (Math.abs(m) <= 0.6745 * sdc) c50 += 1;
+      }
+      const sigSeat = Math.sqrt(C.SIGMA ** 2 + C.STATE_SHOCK ** 2 + s ** 2);
+      for (const r of byYear.get(y)!) {
+        const pD = winProbabilityD(r.projected + C.INCUMBENCY_PTS * r.incSign, sigSeat), dWon = r.actual < 0 ? 1 : 0;
+        const p = Math.min(1 - 1e-6, Math.max(1e-6, pD));
+        seatLL -= dWon ? Math.log(p) : Math.log(1 - p); seatBrier += (pD - dWon) ** 2; seatN += 1;
+      }
+      perYear.push(`${y} s ${s.toFixed(2)} log ${(yls / yn).toFixed(3)}`);
+    }
+    console.log(`${v.name.padEnd(14)} chambers ${n} · mean log score ${(ls / n).toFixed(4)} · 80% cover ${(100 * c80 / n).toFixed(1)}% · 50% cover ${(100 * c50 / n).toFixed(1)}% · seats ${seatN} log loss ${(seatLL / seatN).toFixed(4)} Brier ${(seatBrier / seatN).toFixed(4)}`);
+    console.log(`               ${perYear.join(" · ")}`);
+    out.push({ variant: v.name, chambers: n, logScore: +(ls / n).toFixed(4), cover80: +(100 * c80 / n).toFixed(1), cover50: +(100 * c50 / n).toFixed(1), seats: seatN, seatLogLoss: +(seatLL / seatN).toFixed(4), seatBrier: +(seatBrier / seatN).toFixed(4) });
+  }
+  process.exit(0);
+}
+
+// --env: the environment term scaled by λ (β*·E × λ), scored WITHOUT removing the mean bias, since a
+// uniform environment miss is what is being tested. Rows: λ on the forward term only, on the forward
+// term and the past seat rows' strip (legislative seats respond λ× to E), and on every row. Two target
+// environments: E(Y) as fitted from that year's statewide results, and E as the live chain would have
+// read it from the final generic ballot (c + s × (GB_final + ENV_MISS_SHRINK × mean miss)).
+if (process.argv.includes("--env")) {
+  const m = getEnvironmentModel(), fit = getTplFit();
+  const polledE = (y: number) => { const gb = nationalEnvironmentHistory.find((r) => r.year === y)?.gbFinal; return gb == null ? null : m.c + m.s * (gb + F.ENV_MISS_SHRINK * m.meanMiss); };
+  const lambdas = [0.8, 1, 1.2, 1.4, 1.6, 2];
+  const out: Record<string, unknown>[] = [];
+  for (const target of ["fitted", "polled"] as const) {
+    for (const rowsMode of ["none", "L", "all"] as const) {
+      for (const y of [2018, 2020, ...years]) {
+        const targetE = target === "fitted" ? fit.E[y] : polledE(y)!;
+        const line: string[] = [];
+        for (const lambda of lambdas) {
+          const env = { envScale: lambda, envScaleRows: rowsMode, targetE };
+          const s = score(y < 2022 ? runRelocated(y, env) : run(y, undefined, undefined, undefined, env));
+          line.push(`λ${lambda}: ${s.maeRaw.toFixed(3)} (${s.biasAfterInc >= 0 ? "+" : ""}${s.biasAfterInc.toFixed(2)})`);
+          out.push({ target, rows: rowsMode, year: y, targetE: +targetE.toFixed(2), lambda, n: s.n, maeRaw: +s.maeRaw.toFixed(3), bias: +s.biasAfterInc.toFixed(2), maeAfterBias: +s.maeAfter.toFixed(3) });
+        }
+        console.log(`${target} E ${targetE.toFixed(2)} · scale ${rowsMode.padEnd(4)} · ${y}:  ${line.join("  ")}`);
+      }
+    }
+  }
+  if (process.argv.includes("--emit")) {
+    const file = path.join(process.cwd(), "data", "stateLegEnvScaleSweep.ts");
+    fs.writeFileSync(file, `// GENERATED by \`npx tsx --conditions=react-server scripts/stateLegBacktest.ts --env --emit\` — do not edit by hand.\n// The state legislative environment term scaled by λ on the 2022/2024 holdout, scored with the bias left in.\nexport const STATE_LEG_ENV_SCALE_SWEEP = ${JSON.stringify({ generatedAt: new Date().toISOString().slice(0, 10), rows: out }, null, 2)} as const;\n`);
+    console.log(`wrote ${file}`);
+  }
+  process.exit(0);
+}
 
 // --money: the money term (lib/stateLegMoneyModel.ts residual basis) swept over MONEY_K × MONEY_CAP on the
 // same holdout, the strip on past seat rows and the forward term both at the swept values (k 0 = no money

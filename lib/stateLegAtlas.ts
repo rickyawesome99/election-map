@@ -331,8 +331,15 @@ export function projectedNomineeShare(
 }
 
 /** How a 2026 field reads for the selector and the header: who is in it and whether both majors are. */
-export function contest2026(c: StateLegDistrictCandidates2026 | undefined, sitting: { name: string; party: string }[] = []): { label: string; status: "contested" | "uncontested-D" | "uncontested-R" | "none" | "other"; open: boolean } | null {
+export function contest2026(c: StateLegDistrictCandidates2026 | undefined, sitting: { name: string; party: string }[] = []): { label: string; status: "contested" | "uncontested-D" | "uncontested-R" | "none" | "other"; open: boolean; special: "all" | "post" | null } | null {
   if (!c) return null;
+  const r = contest2026Core(c, sitting);
+  // A special election: the whole race, or (West Virginia) one seat run beside the regular one.
+  const special = !c.special ? null : c.candidates.every((x) => x.special) ? "all" : "post";
+  return { ...r, special, label: special === "all" ? `Special election · ${r.label}` : special === "post" ? `${r.label} · incl. a special election` : r.label };
+}
+
+function contest2026Core(c: StateLegDistrictCandidates2026, sitting: { name: string; party: string }[]): { label: string; status: "contested" | "uncontested-D" | "uncontested-R" | "none" | "other"; open: boolean } {
   const real = fieldPersons(c, sitting).filter((x) => !x.writeIn);
   const parties = new Set(real.map((x) => x.party));
   const open = !c.candidates.some((x) => x.incumbent);

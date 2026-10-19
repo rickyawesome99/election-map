@@ -10,7 +10,7 @@ import { DistrictDetail, DistrictTiles } from "./DistrictSection";
 import { RaceTable, TableCaption } from "./RaceTable";
 import { TplMatrix, type MatrixSelection } from "./TplMatrix";
 import { AdjustedModal, BetaModal, FormulaModal, GLOSSARY, RaceCalcModal, type FormulaKey } from "./TplModals";
-import { TplSubNav } from "./TplSubNav";
+import { SeatCrumbs } from "@/components/SeatBreadcrumb";
 import { MATRIX_ROWS, OFFICE_LABELS, RACE_TYPE_LABELS, fmt1, fmt2, marginColor, ordinal, stateHref } from "./format";
 import type { DistrictPageData, StatePageData, TplRace } from "./types";
 import { AllRacesButton, ArrowOut, CandidateLink, M, StatRow, TD, TD_R, TH, TH_R, VERY_MUTED, WarChip } from "./ui";
@@ -88,31 +88,26 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
   // Rank from the state's own side: 1st most Republican, or counted up from the D end.
   const sideRank = data.tpl > 0 ? { n: data.rank, side: "Republican" } : { n: 51 - data.rank, side: "Democratic" };
 
-  const nav = [["matrix", "Matrix"], ["races", "Races"], ["result", "Result"], ["districts", "Districts"], ["candidates", "Candidates"]];
-
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <div style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${tint} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)` }}>
         <div className={PAGE_CONTAINER}>
-          <TplSubNav
-            methodologyLabel="How State TPL works"
-            right={
+          {/* Seat-style context bar, as on the past election pages: crumbs left, the state
+              picker and methodology link right, closed by a heavy rule. */}
+          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2 pt-3 pb-2" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+            <SeatCrumbs crumbs={[{ label: "TPL", href: "/model" }, { label: data.name }]} />
+            <div className="flex items-center gap-3 text-xs" style={{ color: "var(--app-text-muted)" }}>
               <select aria-label="State" value={data.id} onChange={(e) => router.push(stateHref(e.target.value))} className="cursor-pointer rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}>
                 {[...statesData].sort((a, b) => a.name.localeCompare(b.name)).map((s) => <option key={s.abbr} value={s.id}>{s.abbr} — {s.name}</option>)}
               </select>
-            }
-          />
-          <div className="pb-6 pt-5">
-            <div className="mb-3 flex gap-1.5 text-xs" style={{ color: "var(--app-text-muted)" }}>
-              <Link href="/model" className="hover:underline">TPL</Link><span>›</span><b style={{ color: "var(--app-text-primary)" }}>{data.name}</b>
+              <Link href="/methodology/state-tpl" className="hidden whitespace-nowrap hover:underline sm:inline">How State TPL works <ArrowOut /></Link>
             </div>
-            {/* Two rows from sm up: name | TPL figure on the bottom edge, then the description |
-                the Centered line on one baseline. Stacked in source order on phones. */}
+          </div>
+          <div className="pb-6 pt-5">
+            {/* Two rows from sm up: name | TPL figure on the bottom edge, then the Centered line
+                under the figure. Stacked in source order on phones. */}
             <div className="grid grid-cols-1 gap-x-8 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-end">
               <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 3.5rem)", fontWeight: 700, lineHeight: 0.98, letterSpacing: "-0.02em" }}>{data.name}</h1>
-              <p className="mt-2 max-w-2xl self-baseline text-sm leading-relaxed sm:col-start-1 sm:row-start-2" style={{ color: "var(--app-text-muted)" }}>
-                Election data {data.fitYears[0]}–{data.fitYears[data.fitYears.length - 1]} · Environment and elasticity fitted jointly across all 50 states.
-              </p>
               <div className="mt-5 sm:col-start-2 sm:row-start-1 sm:mt-0 sm:text-right">
                 <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>True Partisan Lean</div>
                 <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 1, color: marginColor(data.tpl) }}>{fmt1(data.tpl)}</div>
@@ -131,8 +126,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
 
       <main className={`${PAGE_CONTAINER} pb-14`}>
         <div className="flex items-center gap-4 overflow-x-auto py-2.5 text-xs font-semibold" style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
-          {nav.map(([id, label]) => <a key={id} href={`#${id}`} className="shrink-0 hover:underline">{label}</a>)}
-          <button type="button" onClick={() => setGlossary((v) => !v)} className="ml-auto shrink-0 font-medium hover:underline" aria-expanded={glossary}>Glossary {glossary ? "▴" : "▾"}</button>
+          <button type="button" onClick={() => setGlossary((v) => !v)} className="shrink-0 font-medium hover:underline" aria-expanded={glossary}>Glossary {glossary ? "▴" : "▾"}</button>
         </div>
         {glossary && (
           <dl className="mt-3 grid gap-x-8 gap-y-2 text-xs sm:grid-cols-2" style={{ borderBottom: "1px solid var(--app-border)", paddingBottom: 12 }}>

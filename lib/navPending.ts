@@ -9,7 +9,7 @@ import { useSyncExternalStore } from "react";
 /** Which placeholder layout (components/PendingPage) stands in for the page while it loads. */
 export type PendingKind =
   | "overview" | "forecast" | "legislatures" | "historical" | "model" | "analysis" | "finder"
-  | "race" | "past" | "chamber" | "state" | "candidate";
+  | "race" | "past" | "chamber" | "state" | "candidate" | "county";
 export type PendingNav = { kind: PendingKind; path: string };
 
 let pending: PendingNav | null = null;
@@ -54,6 +54,7 @@ export function pendingKindFor(pathname: string): PendingKind | null {
   // The bare /legislature route forwards to the state page's legislature section.
   if (/^\/states\/[^/]+(\/legislature)?$/.test(pathname)) return "state";
   if (/^\/candidates\/[^/]+$/.test(pathname)) return "candidate";
+  if (/^\/historical\/\d{5}$/.test(pathname)) return "county";
   return null;
 }
 

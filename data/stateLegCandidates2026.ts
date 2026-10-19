@@ -9,7 +9,8 @@ import type { Chamber } from "./stateLegDistricts";
 //
 // Ballotpedia's own caveat applies: "The candidate list in this election may not be complete."
 // Write-in candidates are kept and flagged; `seats` is set only where the page marks a
-// multi-member district.
+// multi-member district. Nebraska's nonpartisan ballot carries each candidate's party from
+// data-entry/nebraska_2026_candidate_parties.csv (hand-researched registration / party endorsement).
 
 export type StateLegCandidate2026 = {
   name: string;
@@ -22,9 +23,16 @@ export type StateLegCandidate2026 = {
   post?: string;
   /** The general was canceled (Oklahoma: a sole filer is elected without a vote); this is that filer, or the party's filers. */
   canceledGeneral?: boolean;
+  /** Running in a special election for the rest of a vacated term (data-entry/state-leg-specials-2026.csv). */
+  special?: boolean;
 };
 
-export type StateLegDistrictCandidates2026 = { candidates: StateLegCandidate2026[]; seats?: number };
+export type StateLegDistrictCandidates2026 = {
+  candidates: StateLegCandidate2026[];
+  seats?: number;
+  /** A special election on this ballot: the whole race, or (with regular candidates beside it) the post "Special". */
+  special?: { termEnds: string; vacancy: string };
+};
 
 export const stateLegCandidates2026Fetched = "2026-10-10";
 
@@ -3283,6 +3291,24 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
    }
   },
   "senate": {
+   "1": {
+    "candidates": [
+     {
+      "name": "Tomeka Butler",
+      "party": "D",
+      "special": true
+     },
+     {
+      "name": "Harrell Wilson",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2029",
+     "vacancy": "Ben Gilmore (R) resigned June 30, 2026"
+    }
+   },
    "2": {
     "candidates": [
      {
@@ -6698,6 +6724,25 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      }
     ]
    },
+   "17": {
+    "candidates": [
+     {
+      "name": "Katie Wallace",
+      "party": "D",
+      "incumbent": true,
+      "special": true
+     },
+     {
+      "name": "Patricia Miller",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2029",
+     "vacancy": "Sonya Jaquez Lewis (D) resigned Feb 18, 2025"
+    }
+   },
    "20": {
     "candidates": [
      {
@@ -6709,6 +6754,25 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
       "party": "R"
      }
     ]
+   },
+   "21": {
+    "candidates": [
+     {
+      "name": "Adrienne Benavidez",
+      "party": "D",
+      "incumbent": true,
+      "special": true
+     },
+     {
+      "name": "Frederick Alfred Jr.",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2029",
+     "vacancy": "Dafna Michaelson Jenet (D) resigned Feb 13, 2026 to join a nonprofit"
+    }
    },
    "22": {
     "candidates": [
@@ -6771,6 +6835,25 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      }
     ]
    },
+   "29": {
+    "candidates": [
+     {
+      "name": "Iman Jodeh",
+      "party": "D",
+      "incumbent": true,
+      "special": true
+     },
+     {
+      "name": "Rob McKenna",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2029",
+     "vacancy": "Janet Buckner (D) resigned Jan 9, 2025"
+    }
+   },
    "30": {
     "candidates": [
      {
@@ -6783,6 +6866,20 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
       "party": "R"
      }
     ]
+   },
+   "31": {
+    "candidates": [
+     {
+      "name": "Matt Ball",
+      "party": "D",
+      "incumbent": true,
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2029",
+     "vacancy": "Chris Hansen (D) resigned Jan 9, 2025"
+    }
    },
    "32": {
     "candidates": [
@@ -12284,6 +12381,24 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      }
     ]
    },
+   "21": {
+    "candidates": [
+     {
+      "name": "Jordan Hensley",
+      "party": "D",
+      "special": true
+     },
+     {
+      "name": "Chris Nocco",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Nov 2028",
+     "vacancy": "Ed Hooper (R) is resigning effective Nov 3, 2026 (announced May 2026); term-limited in 2028"
+    }
+   },
    "22": {
     "candidates": [
      {
@@ -15991,6 +16106,56 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
       "party": "D"
      }
     ]
+   },
+   "18": {
+    "candidates": [
+     {
+      "name": "Danielle Bass",
+      "party": "D",
+      "incumbent": true,
+      "special": true
+     },
+     {
+      "name": "Kelly Puamailani Kitashima",
+      "party": "R",
+      "special": true
+     },
+     {
+      "name": "Ku Lono Cuadra",
+      "party": "O",
+      "partyLabel": "Nonpartisan",
+      "special": true
+     },
+     {
+      "name": "Max Hanna",
+      "party": "O",
+      "partyLabel": "Nonpartisan",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Nov 2028",
+     "vacancy": "Michelle Kidani (D) retired June 30, 2026"
+    }
+   },
+   "19": {
+    "candidates": [
+     {
+      "name": "Rachele Fernandez Lamosao",
+      "party": "D",
+      "incumbent": true,
+      "special": true
+     },
+     {
+      "name": "Elijah Pierick",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Nov 2028",
+     "vacancy": "Henry Aquino (D) resigned Nov 30, 2025"
+    }
    },
    "20": {
     "candidates": [
@@ -23611,6 +23776,41 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      }
     ]
    }
+  },
+  "senate": {
+   "24": {
+    "candidates": [
+     {
+      "name": "Scott Hill",
+      "party": "R",
+      "incumbent": true,
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2029",
+     "vacancy": "J.R. Claeys (R) resigned for USDA Rural Business Development post"
+    }
+   },
+   "25": {
+    "candidates": [
+     {
+      "name": "Silas Miller",
+      "party": "D",
+      "incumbent": true,
+      "special": true
+     },
+     {
+      "name": "Christopher Parisho",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2029",
+     "vacancy": "Mary Ware (D) resigned Nov 13, 2025"
+    }
+   }
   }
  },
  "KY": {
@@ -24928,6 +25128,33 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
       "party": "R"
      }
     ]
+   }
+  }
+ },
+ "LA": {
+  "house": {
+   "92": {
+    "candidates": [
+     {
+      "name": "Gregory Carroll",
+      "party": "D",
+      "special": true
+     },
+     {
+      "name": "Alex Perdomo",
+      "party": "R",
+      "special": true
+     },
+     {
+      "name": "Michael Sigur",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2028",
+     "vacancy": "Joe Stagni (R) resigned June 30, 2026 after election to Kenner City Council"
+    }
    }
   }
  },
@@ -37877,6 +38104,24 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
    }
   }
  },
+ "MS": {
+  "house": {
+   "70": {
+    "candidates": [],
+    "special": {
+     "termEnds": "Jan 2028",
+     "vacancy": "William Brown (D) died June 8, 2026"
+    }
+   },
+   "77": {
+    "candidates": [],
+    "special": {
+     "termEnds": "Jan 2028",
+     "vacancy": "Price Wallace (R) died June 3, 2026"
+    }
+   }
+  }
+ },
  "MT": {
   "house": {
    "1": {
@@ -41744,6 +41989,25 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     ],
     "seats": 2
    },
+   "20": {
+    "candidates": [
+     {
+      "name": "Dave Rustebakke",
+      "party": "R",
+      "incumbent": true,
+      "special": true
+     },
+     {
+      "name": "Nikolaus Groenewold",
+      "party": "D",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Dec 2028",
+     "vacancy": "Jared Hagert (R) resigned Feb 9, 2026"
+    }
+   },
    "21": {
     "candidates": [
      {
@@ -41790,6 +42054,19 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      }
     ],
     "seats": 2
+   },
+   "26": {
+    "candidates": [
+     {
+      "name": "Brent Schwan",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Dec 2028",
+     "vacancy": "Jeremy Olson (R) resigned May 5, 2025"
+    }
    },
    "27": {
     "candidates": [
@@ -41957,6 +42234,24 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      }
     ],
     "seats": 2
+   },
+   "42": {
+    "candidates": [
+     {
+      "name": "Nicole Derenne",
+      "party": "D",
+      "special": true
+     },
+     {
+      "name": "Connie Osowski",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Dec 2028",
+     "vacancy": "Emily O'Brien (R) resigned Aug 9, 2025 to become ND HHS deputy commissioner"
+    }
    },
    "43": {
     "candidates": [
@@ -42311,13 +42606,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Dean Helmick",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      },
      {
       "name": "Caitlin Knutson",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      }
     ]
    },
@@ -42326,13 +42619,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      {
       "incumbent": true,
       "name": "R. Brad von Gillern",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      },
      {
       "name": "Cindy Maxwell-Ostdiek",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      }
     ]
    },
@@ -42340,13 +42631,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Patrick Leahy",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      },
      {
       "name": "Nate Ostdiek",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      }
     ]
    },
@@ -42354,13 +42643,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Erin Feichtinger",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      },
      {
       "name": "Josh Livingston",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      }
     ]
    },
@@ -42368,13 +42655,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Cindy Johnson",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      },
      {
       "name": "Rebecca Rens",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      }
     ]
    },
@@ -42383,13 +42668,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      {
       "incumbent": true,
       "name": "Merv Riepe",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      },
      {
       "name": "Christy Knorr",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      }
     ]
    },
@@ -42397,13 +42680,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Bill Bowes",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      },
      {
       "name": "SuAnn Witt",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      }
     ]
    },
@@ -42411,13 +42692,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Cindy Chatt",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      },
      {
       "name": "Ted Japp",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      }
     ]
    },
@@ -42425,13 +42704,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Jess Goldoni",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      },
      {
       "name": "Taylor Royal",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      }
     ]
    },
@@ -42440,13 +42717,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      {
       "incumbent": true,
       "name": "John Fredrickson",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      },
      {
       "name": "Chris Anderson",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      }
     ]
    },
@@ -42454,8 +42729,7 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Dawson Brunswick",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      }
     ]
    },
@@ -42464,13 +42738,12 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      {
       "incumbent": true,
       "name": "Jana Hughes",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      },
      {
       "name": "Dan Winter",
       "party": "O",
-      "partyLabel": "Nonpartisan"
+      "partyLabel": "Independent"
      }
     ]
    },
@@ -42479,13 +42752,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      {
       "incumbent": true,
       "name": "George Dungan III",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      },
      {
       "name": "Tobias Howard",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      }
     ]
    },
@@ -42493,13 +42764,12 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Patty Pansing Brooks",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      },
      {
       "name": "Colby Woodson",
       "party": "O",
-      "partyLabel": "Nonpartisan"
+      "partyLabel": "Independent"
      }
     ]
    },
@@ -42507,13 +42777,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Janet Bock",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      },
      {
       "name": "Cally Ideus",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      }
     ]
    },
@@ -42521,13 +42789,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Mark Schoenrock",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      },
      {
       "name": "Shay Smith",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      }
     ]
    },
@@ -42536,13 +42802,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      {
       "incumbent": true,
       "name": "Loren Lippincott",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      },
      {
       "name": "Ben Blodgett",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      }
     ]
    },
@@ -42551,13 +42815,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      {
       "incumbent": true,
       "name": "Rick Holdcroft",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      },
      {
       "name": "Darin Tompkins",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      }
     ]
    },
@@ -42565,13 +42827,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
     "candidates": [
      {
       "name": "Tim Anderson",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      },
      {
       "name": "Janell Anderson Ehrke",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      }
     ]
    },
@@ -42580,23 +42840,39 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      {
       "incumbent": true,
       "name": "Barry DeKay",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      }
     ]
+   },
+   "41": {
+    "candidates": [
+     {
+      "name": "Joe Johnson",
+      "party": "R",
+      "special": true
+     },
+     {
+      "name": "Jeremy Heneger",
+      "party": "D",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2029",
+     "vacancy": "Dan McKeon (R) resigned"
+    }
    },
    "42": {
     "candidates": [
      {
       "incumbent": true,
       "name": "Michael Jacobson",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      },
      {
       "name": "Shaylee Scranton",
       "party": "O",
-      "partyLabel": "Nonpartisan"
+      "partyLabel": "Independent"
      }
     ]
    },
@@ -42605,8 +42881,7 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      {
       "incumbent": true,
       "name": "Teresa Ibach",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      }
     ]
    },
@@ -42615,8 +42890,7 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      {
       "incumbent": true,
       "name": "Danielle Conrad",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "D"
      }
     ]
    },
@@ -42625,13 +42899,11 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      {
       "incumbent": true,
       "name": "Brian Hardin",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      },
      {
       "name": "Jessica Landers",
-      "party": "O",
-      "partyLabel": "Nonpartisan"
+      "party": "R"
      }
     ]
    }
@@ -47777,6 +48049,27 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
       "party": "D"
      }
     ]
+   }
+  },
+  "senate": {
+   "33": {
+    "candidates": [
+     {
+      "name": "Rex Wilson",
+      "party": "R",
+      "incumbent": true,
+      "special": true
+     },
+     {
+      "name": "William Griffin",
+      "party": "D",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2029",
+     "vacancy": "Nicholas Paul (R) resigned"
+    }
    }
   }
  },
@@ -55329,6 +55622,24 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      }
     ]
    },
+   "17": {
+    "candidates": [
+     {
+      "name": "Ed Bolt",
+      "party": "D",
+      "special": true
+     },
+     {
+      "name": "Justin Wood",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Nov 2028",
+     "vacancy": "Shane Jett (R) reaches Oklahoma's 12-year legislative limit in Nov 2026, mid-term"
+    }
+   },
    "18": {
     "candidates": [
      {
@@ -62259,6 +62570,26 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
      }
     ]
    }
+  },
+  "senate": {
+   "15": {
+    "candidates": [
+     {
+      "name": "Chad Williams",
+      "party": "D",
+      "special": true
+     },
+     {
+      "name": "James Burns",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Nov 2028",
+     "vacancy": "Wes Climer (R) resigned in June 2026 to run for the U.S. House"
+    }
+   }
   }
  },
  "SD": {
@@ -68033,6 +68364,28 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
       "party": "R"
      }
     ]
+   }
+  }
+ },
+ "VA": {
+  "house": {
+   "20": {
+    "candidates": [
+     {
+      "name": "Sonia Vasquez Luna",
+      "party": "D",
+      "special": true
+     },
+     {
+      "name": "Nate Fritzen",
+      "party": "R",
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2028",
+     "vacancy": "Michelle Maldonado (D) resigned May 31, 2026"
+    }
    }
   }
  },
@@ -74565,8 +74918,26 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
       "incumbent": true,
       "name": "Mike Azinger",
       "party": "R"
+     },
+     {
+      "name": "Trenton Barnhart",
+      "party": "R",
+      "incumbent": true,
+      "special": true,
+      "post": "Special"
+     },
+     {
+      "name": "Ronnie Green",
+      "party": "O",
+      "partyLabel": "Constitution Party",
+      "special": true,
+      "post": "Special"
      }
-    ]
+    ],
+    "special": {
+     "termEnds": "Dec 2028",
+     "vacancy": "Donna Boley (R) resigned Jan 8, 2026"
+    }
    },
    "4": {
     "candidates": [
@@ -74767,8 +75138,25 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
       "incumbent": true,
       "name": "Tom Takubo",
       "party": "R"
+     },
+     {
+      "name": "Anne Charnock",
+      "party": "R",
+      "incumbent": true,
+      "special": true,
+      "post": "Special"
+     },
+     {
+      "name": "Richie Robb",
+      "party": "D",
+      "special": true,
+      "post": "Special"
      }
-    ]
+    ],
+    "special": {
+     "termEnds": "Dec 2028",
+     "vacancy": "Eric Nelson (R) appointed WV Secretary of Revenue"
+    }
    }
   }
  },
@@ -75460,6 +75848,20 @@ export const stateLegCandidates2026: Record<string, Partial<Record<Chamber, Reco
       "party": "R"
      }
     ]
+   },
+   "6": {
+    "candidates": [
+     {
+      "name": "Taft Love",
+      "party": "R",
+      "incumbent": true,
+      "special": true
+     }
+    ],
+    "special": {
+     "termEnds": "Jan 2029",
+     "vacancy": "Darin Smith (R) resigned after nomination as U.S. Attorney for Wyoming"
+    }
    },
    "7": {
     "candidates": [

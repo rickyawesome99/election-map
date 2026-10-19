@@ -20,7 +20,7 @@ import { calculateStateModel, type YearAggregation } from "@/lib/tplCompute";
 import { redistrictingByState, type RedistrictEvent } from "@/lib/redistrictingCalendar";
 import { countyTplForState } from "@/lib/countyTpl";
 import { housePastElectionHrefs, pastElectionHref } from "@/lib/pastElections";
-import { latestChamberSeats } from "@/lib/stateLegSeats";
+import { currentChamberSeats, latestChamberSeats } from "@/lib/stateLegSeats";
 import { chamberSummary } from "@/lib/stateLegChamberSummary";
 import { projectChamberPopularVote } from "@/lib/stateLegPopularVote";
 import { fieldPersons, projectedNomineeShare } from "@/lib/stateLegAtlas";
@@ -242,7 +242,7 @@ function chamberShading(summary: ReturnType<typeof chamberSummary>, chamberLabel
       fill[pr.key] = PARTY_FILL.I;
       tip[pr.key] = [{ label: "No major party on the ballot", value: "Independent", color: "var(--party-ind)" }];
     } else {
-      tip[pr.key] = [{ label: "No projection", value: pr.contest === "other" ? "nonpartisan or no major-party field" : "no candidates listed" }];
+      tip[pr.key] = [{ label: "No projection", value: pr.contest === "other" ? "no major-party field" : "no candidates listed" }];
     }
   }
   const legend = ["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map((label) => ({ label, bg: getRatingColors(label).bg }));
@@ -421,8 +421,9 @@ export function buildStatePage(state: StateInfo): StatePageData {
   const senParties = [sen1, sen2];
   const govParty: "D" | "R" | "I" | null = projectedGovernor ? raceParty(projectedGovernor) : (governorNoEl?.party as "D" | "R" | "I" | undefined) ?? null;
   const govName = projectedGovernor?.seatHolder ?? governorNoEl?.incumbent ?? null;
-  const stateHouseSeats = latestChamberSeats(stateHouseEntries, "House");
-  const stateSenateSeats = unicameral ? null : latestChamberSeats(stateSenateEntries, "Senate");
+  // Seats today (third parties and vacancies as they stand), else the last election's count.
+  const stateHouseSeats = currentChamberSeats(abbr, unicameral ? "senate" : "house") ?? latestChamberSeats(stateHouseEntries, "House");
+  const stateSenateSeats = unicameral ? null : currentChamberSeats(abbr, "senate") ?? latestChamberSeats(stateSenateEntries, "Senate");
   const houseInfo = stateLegMapInfo[abbr]?.house;
   const senateInfo = stateLegMapInfo[abbr]?.senate;
 

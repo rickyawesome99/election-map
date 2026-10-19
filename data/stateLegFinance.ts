@@ -605679,6 +605679,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   },
   "2020": {
    "house": {
+    "3": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Friends of Lily Morgan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 101982.37,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Friends of Mary Middleton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14668,
+       "expenditures": null
+      }
+     ]
+    },
     "5": {
      "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
      "dataThrough": "12/31/2020",
@@ -605707,6 +605735,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "9": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Friends of Boomer Wright",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 555198.91,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Cal Mukumoto",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 257320.12,
+       "expenditures": null
+      }
+     ]
+    },
     "10": {
      "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
      "dataThrough": "12/31/2020",
@@ -605717,6 +605767,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 109445.47,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Friends of Katie Boshart Glaser",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 440007.68,
        "expenditures": null
       }
      ]
@@ -605855,6 +605919,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "24": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Friends of Lynnette Shaw",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 145336.97,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Friends of Daniel Martin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1877,
+       "expenditures": null
+      }
+     ]
+    },
     "29": {
      "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
      "dataThrough": "12/31/2020",
@@ -605891,6 +605983,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
+    "33": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Pick Dick Courter",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5844.19,
+       "expenditures": null
+      }
+     ]
+    },
     "34": {
      "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
      "dataThrough": "12/31/2020",
@@ -605915,6 +606021,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 1643.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Friends of Kelly Sloop",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 266710.43,
        "expenditures": null
       }
      ]
@@ -606036,6 +606156,14 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "incumbent": true,
        "contributions": 176650.38,
        "expenditures": null
+      },
+      {
+       "name": "Friends of Em Levy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 93367.82,
+       "expenditures": null
       }
      ]
     },
@@ -606066,6 +606194,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       }
      ]
+    },
+    "58": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Friends of Bobby Levy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 151229.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Mark Owens for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 126852.42,
+       "expenditures": null
+      }
+     ]
     }
    },
    "senate": {
@@ -606087,6 +606243,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 9223.68,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Art Robinson for Oregon Senate",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 303017.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Dick Anderson for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 990467.68,
        "expenditures": null
       }
      ]
@@ -606115,6 +606299,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 165067.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Kate Lieber for State Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 267908.61,
        "expenditures": null
       }
      ]
@@ -606193,6 +606391,3288 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 151349.27,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
+  "2022": {
+   "house": {
+    "1": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Elect Bret Cecil",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9120.84,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Virgle Osborne",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 109851,
+       "expenditures": null
+      },
+      {
+       "name": "Kevin Bell for House District 2",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5153.67,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Lily Morgan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 120370.01,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Committee to Elect Pam Marsh",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 145562.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Kim Wallan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 111890,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of John Lively",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 343353.2,
+       "expenditures": null
+      },
+      {
+       "name": "Alan Stout for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 483602.48,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Michael Moore",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10550,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Boomer Wright",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 155164.97,
+       "expenditures": null
+      },
+      {
+       "name": "Rust for House",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20587.13,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Gomberg for State Rep",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 291026.43,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Emmons for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 23334.74,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Nancy Nathanson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 161470,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Julie Fahey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 485658.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Dan Rayfield",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 955659.72,
+       "expenditures": null
+      },
+      {
+       "name": "Vote for Keith Lembke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Ed Diehl for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 161183.62,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Committee to Elect Rick Lewis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 64486.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Tom Andersen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 677392.34,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Paul Evans",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 797950.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Mannix for Oregon PAC",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 557291.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Anna Scharf",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 143368.17,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Committee to Elect Lucetta Elmer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 239683.13,
+       "expenditures": null
+      },
+      {
+       "name": "Victoria Ernst for District 24",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 69341.83,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Bob Niemeyer Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 575,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Ben Bowman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 110107.96,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Ken Helm for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 153616.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Susan McLain",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 97266.1,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Gina Munster Moore",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 24882.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Joe Everton for Hillsboro",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 46191.62,
+       "expenditures": null
+      },
+      {
+       "name": "Nathan Sosa for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 115460.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "31": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Stout for State Rep",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 171145.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Laity for Community",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 89566.86,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of John Woods",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3465,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Daniel Martin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Chaichi for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 43176.11,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Hai Pham",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 146442.06,
+       "expenditures": null
+      },
+      {
+       "name": "Committee to Elect Greer Trice.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3685,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Jules Walters",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 185827.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Daniel Nguyen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 251697.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Committee to Elect Janelle Bynum",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1217208.51,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Kori Haynes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 265457.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Annessa Hartman for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 553402.27,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Mark Gamba for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 129016,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Rob Reynolds",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1630.76,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Rob Nosse",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 368912.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Tawna Sanchez for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 241634,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Travis Nelson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 158123.48,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Thuy Tran",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 137227.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Andrea Valderrama",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 131791.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of John Masterman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18465.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Elect Zach Hudson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 784103.97,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Vote for Darcy Long",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 176366.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Em Levy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 171870.95,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Sipe for State Representative",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 670238.96,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Lepore for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 36464.67,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Emily McIntire",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 76283.01,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Committee to Re-Elect Greg Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 233625,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Bobby Levy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 126130.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Mark Owens for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 112142.06,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "3": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Committee to Elect Jeff Golden",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 239198.9,
+       "expenditures": null
+      },
+      {
+       "name": "Sparacino for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1110376.96,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends for Floyd Prozanski",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 128383.61,
+       "expenditures": null
+      },
+      {
+       "name": "Pinnell For Government",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 4021.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Hayden for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 241050.48,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Deb Patterson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 2267021,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Kim Thatcher",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1282002.91,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Rich Walsh",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 790649.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Aaron Woods",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 265755.69,
+       "expenditures": null
+      },
+      {
+       "name": "Velez for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 45507.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Janeen Sollman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 233155.65,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Carolina Malmedal",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1089280.33,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Suzanne Weber",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 526091.2,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Rob Wagner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 759545.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Friends of Mark Meek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2837428.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Kayse Jama for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 157249.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Committee to Elect Daniel Bonham",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 524231.01,
+       "expenditures": null
+      },
+      {
+       "name": "Mason for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 71386.27,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
+  "2024": {
+   "house": {
+    "1": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Elect Bret Cecil",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7591,
+       "expenditures": null
+      },
+      {
+       "name": "Court Boice for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 89497.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Virgle Osborne",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 127190.11,
+       "expenditures": null
+      },
+      {
+       "name": "August Warren for HD2",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2255,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Yunker for State Representative",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 15634.81,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Richard Chasm",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 19966.67,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Committee to Elect Pam Marsh",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 97105,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Katherine Green",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1100,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Committee to Elect Lilia Caballero",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22809.67,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Kim Wallan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 122400,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of John Lively",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 220533.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Lisa Fragala",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 224298.27,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Gomberg for State Rep",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 166795.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Emmons for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18631.66,
+       "expenditures": null
+      },
+      {
+       "name": "Harbick for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 195628.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Nancy Nathanson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 144873.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Julie Fahey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 801612.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Shelly Boshart Davis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 424746.05,
+       "expenditures": null
+      },
+      {
+       "name": "Terrence Virnig Dist 15",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14404.99,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Ed Diehl for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 141890.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Committee to Elect Rick Lewis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 39840,
+       "expenditures": null
+      },
+      {
+       "name": "Karyssa Dow for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6604,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Tom Andersen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 414907.23,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Paul Evans",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 295708.51,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Kevin Scott Chambers",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6252.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Mannix for Oregon PAC",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1106718.28,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Lesly Munoz for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 574673.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Anna Scharf",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 125427.17,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Kriss Wright",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Committee to Elect Lucetta Elmer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 211916,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Bob Niemeyer Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 200,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Ben Bowman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 638487.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Ken Helm for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 79550,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Susan McLain",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 93316.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Nathan Sosa for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 95302.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Andy Davis for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 109670.12,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Team Shannon Jones Isadore",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 179810.36,
+       "expenditures": null
+      },
+      {
+       "name": "Busse For 33",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 2272.13,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Daniel Martin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Chaichi for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 127878.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Hai Pham",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 178236.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Jules Walters",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 133460.55,
+       "expenditures": null
+      },
+      {
+       "name": "Ben Edtl for the People",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 22795.66,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Daniel Nguyen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 123575,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Aimee Reiner and Friends",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 535794.68,
+       "expenditures": null
+      },
+      {
+       "name": "Committee to Elect April Dobson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 807252.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Steve Newgard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Annessa Hartman for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 641615.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Mark Gamba for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 126678.06,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Rob Nosse",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 317244.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Tawna Sanchez for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 298465.35,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Travis Nelson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 109195.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Thuy Tran",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 112118.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Willy Chotzen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 222251.2,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Andrea Valderrama",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 122412.28,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of John Masterman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 603101.47,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Elect Zach Hudson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 403516.36,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Christine Drazan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 490936.35,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Em Levy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 811950.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Emily McIntire",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 116013.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Committee to Re-Elect Greg Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 217744.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Bobby Levy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 91193.27,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Mark Owens for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 241083.26,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of David Brock Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 382821.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Noah Robinson for Oregon Senate",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 215830.8,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Tracy Thompson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 915,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Dick Anderson for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 718880.23,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Jo Beaudreau",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 131612.83,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Fred Girod",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 134605,
+       "expenditures": null
+      },
+      {
+       "name": "Mike Ashland for Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Starr Leadership Fund",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 254804.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Kate Lieber for State Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 577251.37,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Campos for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 82508,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Brian E. Pierson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26948,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Kathleen Taylor for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 430401.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Lew Frederick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 128142.29,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Saperstein for Senate",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4507,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Khanh Pham",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 264327.43,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Chris Gorsek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1727016.35,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Team Broadman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1166550.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Committee to Elect Dennis Linthicum",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 334317.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Friends of Todd Nash",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 233862.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Mike McLane for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 298511.94,
+       "expenditures": null
+      }
+     ]
+    }
+   }
+  },
+  "2026": {
+   "house": {
+    "1": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Elect Bret Cecil",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9215.87,
+       "expenditures": null
+      },
+      {
+       "name": "Court Boice for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 107693.76,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Virgle Osborne",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 151277.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Yunker for State Representative",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 97794.64,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Committee to Elect Pam Marsh",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 63888,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Kim Wallan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 101050,
+       "expenditures": null
+      },
+      {
+       "name": "Committee To elect John Holm",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Wilson for Springfield",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 81519.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Lisa Fragala",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 65864.4,
+       "expenditures": null
+      },
+      {
+       "name": "Bill Vivian for HD 8",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1557.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Citizens for John Ezra Scheirman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 759,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Gomberg for State Rep",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 140442.72,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Ken Jackola for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 69976.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Harbick for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 68850,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Nancy Nathanson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 117637.48,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Jonathan Abrahamsen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 207.3,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Julie Fahey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 649324.07,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Shelly Boshart Davis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 578545.91,
+       "expenditures": null
+      },
+      {
+       "name": "Joanna Robinson for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 77737.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Farrington for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 67461,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Roy Kaufmann for HD18",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 41851.11,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Tom Andersen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 93227.88,
+       "expenditures": null
+      },
+      {
+       "name": "Munson Leadership PAC",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 44965.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Paul Evans",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 232866.63,
+       "expenditures": null
+      },
+      {
+       "name": "Fudge 4 Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8010,
+       "expenditures": null
+      }
+     ]
+    },
+    "21": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Mannix for Oregon PAC",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 812364.39,
+       "expenditures": null
+      },
+      {
+       "name": "Welsh for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 543236.56,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Lesly Munoz for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 382103.11,
+       "expenditures": null
+      },
+      {
+       "name": "Noemi Legaspi PAC",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 567952.87,
+       "expenditures": null
+      }
+     ]
+    },
+    "23": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Anna Scharf",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 173338.06,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Kriss Wright",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Committee to Elect Lucetta Elmer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 842407.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Bob Niemeyer Campaign",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Ben Bowman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 814250.17,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Committee to Elect Sue Rieke Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 285582.12,
+       "expenditures": null
+      },
+      {
+       "name": "Terrio for US",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Mark Norman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 85949.65,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Randall Fryer for Representative",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 30525,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Susan McLain",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 78708.55,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Brian Schimmel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 21516,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Nathan Sosa for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 70177.89,
+       "expenditures": null
+      },
+      {
+       "name": "Ross For Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 365.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Max Sherman for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1162403.72,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Team Shannon Jones Isadore",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 50285,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Ciatta Thompson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20441.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Committee to Elect Shaunie Cousins",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "35": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Daniel Martin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      },
+      {
+       "name": "Chaichi for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 41858.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Hai Pham",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 213968.07,
+       "expenditures": null
+      },
+      {
+       "name": "Orth For Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Jules Walters",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 34057,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Chad Parker",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 20460.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Daniel Nguyen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 302543.57,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Committee to Elect April Dobson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 105122,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Sugar for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 251481.49,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Mark Gamba for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 122067,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Rob Nosse",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 341871.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "43": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Tawna Sanchez for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 223865.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "44": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Travis Nelson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 95580.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Thuy Tran",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 55414,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Willy Chotzen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 116435.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Andrea Valderrama",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 43300,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Wise PAC",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 622742.35,
+       "expenditures": null
+      },
+      {
+       "name": "Andrew Morrison for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 193728.41,
+       "expenditures": null
+      }
+     ]
+    },
+    "49": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Elect Zach Hudson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 61838.04,
+       "expenditures": null
+      },
+      {
+       "name": "Friends of Ann Walker",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7722.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Rick Gray for the House",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Darla Mead for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 25262,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Hank Sanders",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 502018.12,
+       "expenditures": null
+      },
+      {
+       "name": "Hege for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1168829.09,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Em Levy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 298515.13,
+       "expenditures": null
+      },
+      {
+       "name": "Summers for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 151042.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Emily McIntire",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 157681.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Committee to Re-Elect Greg Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 216661.45,
+       "expenditures": null
+      },
+      {
+       "name": "Josiah Dean for House 57",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 6121.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Bobby Levy",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 106508.82,
+       "expenditures": null
+      },
+      {
+       "name": "Brian Campbell for HD58",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Mark Owens for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 184844.26,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "3": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends for Denise Krause",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1204416.65,
+       "expenditures": null
+      },
+      {
+       "name": "Hicks for Senate",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2162339.2,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends for Floyd Prozanski",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 98900,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Tibbetts for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 138163.17,
+       "expenditures": null
+      },
+      {
+       "name": "Sierrah Williams for Senate District 6",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11754.87,
+       "expenditures": null
+      },
+      {
+       "name": "Ticer For Oregon",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of James Manning",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 92667,
+       "expenditures": null
+      },
+      {
+       "name": "Huff4Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Sara Gelser Blouin for State Senate",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 64417.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Deb Patterson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 474860.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Elect Virginia Stapleton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 943809.21,
+       "expenditures": null
+      },
+      {
+       "name": "Tracy Cramer PAC",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1526577.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "13": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Courtney Neron",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 132521.23,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Hutchison's Service PAC",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1325,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Courtney Bangs PAC",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 553998.13,
+       "expenditures": null
+      },
+      {
+       "name": "FINKLE for SD16",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 0,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Lisa Reynolds",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 168276,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Rob Wagner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 779398.35,
+       "expenditures": null
+      },
+      {
+       "name": "Mary Dirksen for Oregon",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 33488.18,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Mark Meek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 389834.95,
+       "expenditures": null
+      },
+      {
+       "name": "Michele Stroh for Senate",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 61015.61,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Kayse Jama for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 312342.04,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "dataThrough": "10/19/2026",
+     "candidates": [
+      {
+       "name": "Friends of Jeff Helfrich",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 412047.31,
+       "expenditures": null
+      },
+      {
+       "name": "Bassett for Oregon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 230277.35,
        "expenditures": null
       }
      ]

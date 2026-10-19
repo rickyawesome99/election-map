@@ -8,6 +8,7 @@ import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";
 import { chamberName, chamberShortLabel, chamberSummary } from "@/lib/stateLegChamberSummary";
 import LegislativeAtlas from "@/components/atlas/LegislativeAtlas";
 import ChamberSummary from "@/components/atlas/ChamberSummary";
+import StateSwitcher from "@/components/StateSwitcher";
 import { PILL, StatePill } from "@/components/RaceHeroPills";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 
@@ -70,6 +71,9 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
             {controlLabel && (
               <span className={PILL} style={holder ? { background: holder === "D" ? "var(--party-dem)" : "var(--party-rep)", color: "#fff" } : { background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>{controlLabel}</span>
             )}
+            <div className="ml-auto">
+              <StateSwitcher id={state.id} chamber={chamber} />
+            </div>
           </div>
           <div className="flex items-center gap-3">
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}>{state.name} Legislature</h1>

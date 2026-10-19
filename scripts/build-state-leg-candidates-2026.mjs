@@ -7,9 +7,29 @@
  * Usage: node scripts/build-state-leg-candidates-2026.mjs
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "fs";
+import { specials2026 } from "../data-entry/state-leg-specials-2026.mjs";
 
 const SRC_DIR = "data-entry/state-leg-candidates-2026";
 const OUT_FILE = "data/stateLegCandidates2026.ts";
+
+// Nebraska's ballot is nonpartisan, so Ballotpedia lists every candidate as "Nonpartisan". Each
+// candidate's party (registration / party endorsement, the caucus they would sit with) is
+// hand-researched in this file and laid over the fetched list; a true independent stays "O".
+const NE_PARTIES = "data-entry/nebraska_2026_candidate_parties.csv";
+const normPerson = (s) => s.toLowerCase().replace(/\b(iii|ii|jr|sr)\b/g, "").replace(/[^a-z]/g, "");
+function nebraskaParties() {
+  if (!existsSync(NE_PARTIES)) return null;
+  const [head, ...rows] = readFileSync(NE_PARTIES, "utf8").trim().split(/\r?\n/);
+  const cols = head.split(",");
+  const out = new Map();
+  for (const line of rows) {
+    // district,candidate,party,partyLabel,... - the first four columns never hold commas.
+    const cells = line.split(",");
+    const r = Object.fromEntries(cols.slice(0, 4).map((c, i) => [c, cells[i]?.trim() ?? ""]));
+    out.set(`${r.district}|${normPerson(r.candidate)}`, { district: r.district, name: r.candidate, party: r.party, partyLabel: r.partyLabel || undefined });
+  }
+  return out;
+}
 
 const files = existsSync(SRC_DIR) ? readdirSync(SRC_DIR).filter((f) => /^[A-Z]{2}\.json$/.test(f)).sort() : [];
 const data = {};
@@ -23,6 +43,35 @@ for (const file of files) {
     if (!parsed[chamber]) continue;
     out[chamber] = parsed[chamber];
     for (const d of Object.values(parsed[chamber])) { districts += 1; candidates += d.candidates.length; }
+  }
+  // Special elections on the same ballot (data-entry/state-leg-specials-2026.csv), which the chamber
+  // pages leave out: a district not otherwise up gets the special's field; one whose regular race is
+  // also on the ballot (a multi-member district: West Virginia's two senators) gets it as a separate
+  // post, "Special", alongside. Candidates on a nonpartisan special ballot with no party known
+  // (Mississippi) are left off: the seat is up but unprojected.
+  for (const sp of specials2026().filter((x) => x.state === abbr)) {
+    const field = sp.field.filter((c) => c.party != null).map(({ name, party, partyLabel, incumbent }) => ({
+      name, party, ...(partyLabel ? { partyLabel } : {}), ...(incumbent ? { incumbent: true } : {}), special: true,
+    }));
+    const special = { termEnds: sp.term_ends.replace(/\s*\(.*\)\s*$/, ""), vacancy: sp.vacancy };
+    out[sp.chamber] ??= {};
+    const regular = out[sp.chamber][sp.district];
+    if (regular) Object.assign(regular, { special }).candidates.push(...field.map((c) => ({ ...c, post: "Special" })));
+    else out[sp.chamber][sp.district] = { candidates: field, special };
+    districts += regular ? 0 : 1; candidates += field.length;
+  }
+  if (abbr === "NE" && out.senate) {
+    const parties = nebraskaParties();
+    const missing = [];
+    for (const [key, d] of Object.entries(out.senate)) {
+      for (const c of d.candidates) {
+        const p = parties?.get(`${key}|${normPerson(c.name)}`);
+        if (!p) { missing.push(`${key} ${c.name}`); continue; }
+        c.party = p.party;
+        if (p.party === "O") c.partyLabel = p.partyLabel ?? "Independent"; else delete c.partyLabel;
+      }
+    }
+    if (missing.length) console.warn(`NE: no party on file in ${NE_PARTIES} for ${missing.length}: ${missing.join("; ")}`);
   }
   if (Object.keys(out).length) data[abbr] = out;
 }
@@ -38,7 +87,8 @@ const header = `import type { Chamber } from "./stateLegDistricts";
 //
 // Ballotpedia's own caveat applies: "The candidate list in this election may not be complete."
 // Write-in candidates are kept and flagged; \`seats\` is set only where the page marks a
-// multi-member district.
+// multi-member district. Nebraska's nonpartisan ballot carries each candidate's party from
+// ${NE_PARTIES} (hand-researched registration / party endorsement).
 
 export type StateLegCandidate2026 = {
   name: string;
@@ -51,9 +101,16 @@ export type StateLegCandidate2026 = {
   post?: string;
   /** The general was canceled (Oklahoma: a sole filer is elected without a vote); this is that filer, or the party's filers. */
   canceledGeneral?: boolean;
+  /** Running in a special election for the rest of a vacated term (data-entry/state-leg-specials-2026.csv). */
+  special?: boolean;
 };
 
-export type StateLegDistrictCandidates2026 = { candidates: StateLegCandidate2026[]; seats?: number };
+export type StateLegDistrictCandidates2026 = {
+  candidates: StateLegCandidate2026[];
+  seats?: number;
+  /** A special election on this ballot: the whole race, or (with regular candidates beside it) the post "Special". */
+  special?: { termEnds: string; vacancy: string };
+};
 
 export const stateLegCandidates2026Fetched = ${JSON.stringify(fetched)};
 

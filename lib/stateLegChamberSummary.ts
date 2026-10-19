@@ -6,7 +6,7 @@ import { stateLegCandidates2026 } from "@/data/stateLegCandidates2026";
 import { contest2026 } from "@/lib/stateLegAtlas";
 import { projectChamber } from "@/lib/stateLegForecast";
 import { projectChamberPopularVote } from "@/lib/stateLegPopularVote";
-import { latestChamberSeats } from "@/lib/stateLegSeats";
+import { currentChamberSeats, latestChamberSeats } from "@/lib/stateLegSeats";
 import { getChamberMargins } from "@/lib/chamberMargins";
 import { summarizeUpcoming } from "@/lib/stateLegUpcoming";
 
@@ -23,7 +23,7 @@ export function chamberSummary(abbr: string, stateName: string, chamber: Chamber
   const calendar = stateLegCalendar[abbr]?.[chamber];
   const entries = stateLegData[stateName] ?? [];
   // Nebraska's unicameral results are stored under "House" in the composition data.
-  const seats = latestChamberSeats(entries, unicameral ? "House" : chamber === "house" ? "House" : "Senate");
+  const seats = currentChamberSeats(abbr, chamber) ?? latestChamberSeats(entries, unicameral ? "House" : chamber === "house" ? "House" : "Senate");
   const totalSeats = mapInfo?.totalSeats ?? calendar?.eras.at(-1)?.totalSeats ?? seats?.total ?? null;
   const upcoming = summarizeUpcoming(roster, electionYear, totalSeats, calendar?.termYears ?? null);
   const currentEra = calendar?.eras.at(-1);

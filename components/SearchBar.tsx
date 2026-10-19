@@ -172,7 +172,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
         aria-expanded={open}
         aria-controls={open ? listId : undefined}
         aria-activedescendant={activeIndex >= 0 ? `${listId}-${activeIndex}` : undefined}
-        className="h-8 w-28 rounded-lg pl-8 pr-2 outline-none max-sm:placeholder:text-transparent min-[420px]:w-28 sm:w-56 sm:pr-3"
+        className="h-8 w-28 rounded-lg pl-8 pr-2 outline-none max-sm:placeholder:text-transparent min-[420px]:w-28 sm:w-56 sm:pr-3 lg:w-40 xl:w-56"
         style={{
           fontSize: 16,
           fontFamily: "var(--font-serif)",

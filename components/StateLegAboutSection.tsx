@@ -1,5 +1,6 @@
 import type { ChamberMapInfo } from "@/data/stateLegMapInfo";
 import type { ChamberSeats } from "@/lib/stateLegSeats";
+import { chamberOutcome, OUTCOME_LABEL, outcomeColor } from "@/lib/chamberOutcome";
 
 export type ChamberAboutData = {
   label: string;
@@ -98,18 +99,8 @@ export function majorityStatus(
   majority: number,
   supermajority: number | null,
 ): MajorityStatus {
-  // An even split is its own outcome, not a failed majority for whichever party reads first.
-  if (dem === rep) return { text: "Tie", color: null };
-
-  const leadIsD = dem > rep;
-  const party = leadIsD ? "D" : "R";
-  const color = leadIsD ? "var(--party-dem)" : "var(--party-rep)";
-  const held = Math.max(dem, rep);
-
-  if (supermajority != null && held >= supermajority) return { text: `${party} Supermajority`, color };
-  if (held >= majority) return { text: `${party} Majority`, color };
-  // Third-party, independent or vacant seats can leave the largest caucus short of the threshold.
-  return { text: "No majority", color: null };
+  const o = chamberOutcome(dem, rep, majority, supermajority);
+  return { text: OUTCOME_LABEL[o], color: outcomeColor(o) };
 }
 
 export function MajorityPill({ status, className = "" }: { status: MajorityStatus; className?: string }) {

@@ -26,13 +26,26 @@
  * Party overrides exist for states where Open States' party field isn't useful for map coloring
  * (e.g. Nebraska's officially-nonpartisan Legislature, where Open States reports every senator as
  * "Nonpartisan") — the override file's per-district party (sourced from Ballotpedia/Wikipedia)
- * takes precedence over Open States' value.
+ * takes precedence over Open States' value. In a multi-member district it can name members instead
+ * (Vermont, where Open States files Progressives as "Democratic/Progressive" and some independents
+ * as Republican).
  *
  * Usage: node scripts/build-state-leg-incumbents.mjs
  */
 
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "fs";
-import { electionYears, termYears, nextElectionOverrides } from "../data-entry/state-leg-election-years.mjs";
+import { electionYears, termYears, nextElectionOverrides as regularOverrides } from "../data-entry/state-leg-election-years.mjs";
+import { specials2026 } from "../data-entry/state-leg-specials-2026.mjs";
+
+// Special elections on the November 2026 ballot put a seat up that its regular cycle would not:
+// the whole district (a single-member seat), or one member's seat in a multi-member district.
+const SPECIALS = specials2026();
+const nextElectionOverrides = { ...regularOverrides };
+const personNextOverrides = {};
+for (const sp of SPECIALS) {
+  if (sp.seat_of) personNextOverrides[`${sp.state}|${sp.chamber}|${sp.district}|${sp.seat_of}`] = 2026;
+  else nextElectionOverrides[`${sp.state}|${sp.chamber}|${sp.district}`] = 2026;
+}
 
 const INCUMBENTS_DIR = "data-entry/state-leg-incumbents";
 const PARTY_OVERRIDES_DIR = "data-entry/state-leg-party-overrides";
@@ -74,8 +87,11 @@ const PARTY_MAP = {
   Nonpartisan: "O",
 };
 
+// Open States writes a fusion member's lines joined by "/", their own party first
+// ("Democratic/Working Families", "Republican/Conservative/Independence"): that first party is the
+// one they sit with. Unmapped labels (Forward, Progressive, Nonpartisan) are "O".
 function mapParty(raw) {
-  return PARTY_MAP[raw] ?? "O";
+  return PARTY_MAP[raw] ?? PARTY_MAP[String(raw ?? "").split("/")[0].trim()] ?? "O";
 }
 
 function resolveLastElection(abbr, chamber, districtNumber) {
@@ -298,9 +314,12 @@ function main() {
           const perPersonLastElection = lastElectionOverrides[district] ?? {};
           const incumbents = peopleHere.map((p) => {
             const personLast = perPersonLastElection[p.name];
+            const specialNext = personNextOverrides[`${abbr}|${chamber}|${district}|${p.name}`];
             return {
               name: p.name,
-              party: override ?? mapParty(p.party),
+              // A district's override is one party for everyone on it, or (a multi-member district)
+              // a per-member map: { "Brian Cina": "O" }.
+              party: (typeof override === "object" && override ? override[p.name] : override) ?? mapParty(p.party),
               // Omit entirely (rather than null) for the vast majority of incumbents with no
               // per-person override, to avoid bloating the generated file with a mostly-unused key.
               // lastElection and nextElection travel together: an incumbent off the district's
@@ -311,6 +330,7 @@ function main() {
                     nextElection: resolveNextElection(abbr, chamber, district, personLast),
                   }
                 : {}),
+              ...(specialNext != null ? { lastElection: personLast ?? resolveLastElection(abbr, chamber, district), nextElection: specialNext } : {}),
             };
           });
           const lastElection = resolveLastElection(abbr, chamber, district);

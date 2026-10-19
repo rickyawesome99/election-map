@@ -2,9 +2,8 @@ import Link from "next/link";
 import type { StateLegRace } from "@/lib/stateLegCandidateIndex";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 
-// The state legislative rows of a candidate page (/candidates/[slug]): one past general, or the
-// 2026 contest. Same visual language as the federal rows beside them, with the district's
-// two-party bar, the candidate's own vote and share, and every opponent linked to their page.
+// The 2026 state legislative contest on a candidate page (/candidates/[slug]); past generals use
+// the shared CandidateRaceRow. Every opponent is linked to their page.
 
 const PARTY_COLOR: Record<string, string> = { D: "var(--party-dem)", R: "var(--party-rep)", O: "var(--party-ind)", I: "var(--party-ind)" };
 const PARTY_SUBTLE: Record<string, string> = { D: "var(--party-dem-subtle)", R: "var(--party-rep-subtle)", O: "var(--party-ind-subtle)", I: "var(--party-ind-subtle)" };
@@ -23,7 +22,7 @@ function Pill({ children, party }: { children: React.ReactNode; party: string })
 function RaceTitle({ race }: { race: StateLegRace }) {
   return (
     <Link href={race.href} className="text-sm font-semibold hover:underline truncate" style={{ color: "var(--app-text-muted)" }}>
-      {race.stateName} {race.chamberLabel} &middot; {race.districtShort}{race.post ? ` (${race.post})` : ""}
+      {race.stateName} {race.chamberLabel} &middot; {race.districtShort}{race.post && race.post !== "Special" ? ` (${race.post})` : ""}
     </Link>
   );
 }
@@ -60,53 +59,6 @@ function MoneyLine({ money }: { money: RaceMoney }) {
   );
 }
 
-export function StateLegPastRow({ race, money = null, last }: { race: StateLegRace; money?: RaceMoney; last: boolean }) {
-  const accent = PARTY_COLOR[race.party];
-  const total = (race.demVotes ?? 0) + (race.repVotes ?? 0);
-  const dWidth = total > 0 ? ((race.demVotes ?? 0) / total) * 100 : 50;
-  const demPct = race.totalVotes && race.demVotes != null ? (race.demVotes / race.totalVotes) * 100 : null;
-  const repPct = race.totalVotes && race.repVotes != null ? (race.repVotes / race.totalVotes) * 100 : null;
-  const outcome = race.winner == null ? null : race.winner ? "Won" : "Lost";
-  return (
-    <div className="py-5" style={{ borderBottom: last ? "none" : "1px solid var(--app-border)" }}>
-      <div className="flex items-start justify-between gap-4 mb-2.5">
-        <div className="flex items-center gap-2 min-w-0 flex-wrap">
-          <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>{race.year}</span>
-          <RaceTitle race={race} />
-          {race.incumbent && <Pill party={race.party}>Inc.</Pill>}
-          {race.uncontested && <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>Unopposed</span>}
-          {race.era !== "current" && <span className="text-[10px] shrink-0" style={{ color: "var(--app-text-very-muted)" }}>{race.eraLabel}</span>}
-        </div>
-        {outcome && (
-          <span className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0" style={{ background: race.winner ? PARTY_SUBTLE[race.party] : "var(--app-tab-bg)", color: race.winner ? accent : "var(--app-text-muted)" }}>
-            {outcome}
-          </span>
-        )}
-      </div>
-      {race.noCount ? (
-        <div className="text-xs italic" style={{ color: "var(--app-text-muted)" }}>Declared elected without a vote: the state printed no count for this race.</div>
-      ) : (
-        <div className="flex items-center gap-3 flex-wrap">
-          <div className="flex-1 min-w-[120px] h-2 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
-            <div className="h-full float-left" style={{ width: `${dWidth}%`, background: "#1b408c" }} />
-            <div className="h-full float-left" style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
-          </div>
-          {demPct != null && <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: "var(--party-dem)" }}>D {demPct.toFixed(1)}%</span>}
-          {repPct != null && <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: "var(--party-rep)" }}>R {repPct.toFixed(1)}%</span>}
-          <span className="text-xs font-bold tabular-nums shrink-0" style={{ color: race.margin == null ? "var(--app-text-very-muted)" : getRaceColor(race.margin) }}>{fmtLegMargin(race.margin)}</span>
-          {race.votes != null && (
-            <span className="text-xs tabular-nums shrink-0" style={{ color: accent }}>
-              {race.votes.toLocaleString()} votes{race.share != null ? ` · ${race.share.toFixed(1)}%` : ""}
-            </span>
-          )}
-        </div>
-      )}
-      <Opponents race={race} />
-      <MoneyLine money={money} />
-    </div>
-  );
-}
-
 export type LegProjection = {
   margin: number | null; rating: string | null; pD: number | null; contest: string;
   /** The modeled independent-vs-party race, and whether this candidate is the independent. */
@@ -137,7 +89,8 @@ export function StateLegCurrentRow({ race, projection, money = null, last }: { r
             <RaceTitle race={race} />
             {race.incumbent && <Pill party={race.party}>Inc.</Pill>}
             {race.writeIn && <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>Write-in</span>}
-            {race.seats != null && race.seats > 1 && <span className="text-[10px] shrink-0" style={{ color: "var(--app-text-very-muted)" }}>{race.seats} seats</span>}
+            {race.special && <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>Special election</span>}
+            {race.seats != null && race.seats > 1 && !race.special && <span className="text-[10px] shrink-0" style={{ color: "var(--app-text-very-muted)" }}>{race.seats} seats</span>}
           </div>
           <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>Running as {partyWord(race.party, race.partyLabel)}{decided ? ` · ${decided}` : ""}</div>
           <Opponents race={race} />

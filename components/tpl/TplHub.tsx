@@ -116,8 +116,8 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
 
       <div className="grid grid-cols-1 gap-8">
         <div className="min-w-0">
-          <TplMap mode={geo} rows={rows} valueLabel={valueLabel} linkLabel={geo === "states" ? "Open state page" : "Open district"} wide />
-          <Foot>{lens === "all" ? "Blended, recency-weighted True Partisan Lean" : `${lens} Weighted Race Score (WRS)`}. Click a {geo === "states" ? "state" : "district"} for its {geo === "states" ? "page" : "pipeline inside its state page"}. Pinch or scroll to zoom.</Foot>
+          <TplMap mode={geo} rows={rows} valueLabel={valueLabel} linkLabel={geo === "states" ? "Open state page" : "Open district"} navigateOnClick={geo === "states"} wide />
+          <Foot>{lens === "all" ? "Blended, recency-weighted True Partisan Lean" : `${lens} Weighted Race Score (WRS)`}. {geo === "states" ? "Click a state to open its page" : "Click a district for its pipeline inside its state page"}. Pinch or scroll to zoom.</Foot>
         </div>
         <div className="min-w-0">
           <div className="mb-2 flex flex-wrap items-center gap-2">

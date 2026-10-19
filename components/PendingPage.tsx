@@ -387,6 +387,7 @@ function StateSkeleton() {
     <>
       <Hero>
         <LoadingText>Loading state…</LoadingText>
+        <Pills className="mt-3" widths={["w-24"]} />
         <div className="mt-3 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="min-w-0 flex-1 space-y-3"><Sk className="h-14 w-4/5 max-w-md sm:h-16" /><Sk className="h-3.5 w-40" /></div>
           <div className="flex flex-col space-y-2 sm:items-end"><Sk className="h-3 w-20" /><Sk className="h-14 w-40" /><Sk className="h-3 w-28" /></div>
@@ -441,6 +442,56 @@ function CandidateSkeleton() {
   );
 }
 
+/** A past-result card in the county page's right column: year + office, two candidates, bar. */
+function ResultCard() {
+  return (
+    <div className="space-y-3 py-5" style={RULE}>
+      <div className="flex items-center justify-between"><Sk className="h-5 w-36" /><Sk className="h-4 w-12" /></div>
+      {[0, 1].map((i) => (
+        <div key={i} className="flex items-center justify-between gap-4"><Sk className="h-4 w-36" /><div className="flex gap-4"><Sk className="h-4 w-12" /><Sk className="h-3.5 w-14" /></div></div>
+      ))}
+      <div className="flex items-center justify-between"><Sk className="h-2.5 w-12" /><Sk className="h-2 w-28 rounded-full" /></div>
+    </div>
+  );
+}
+
+function CountySkeleton() {
+  return (
+    <>
+      <div style={{ background: "color-mix(in srgb, var(--app-text-muted) 9%, var(--app-bg))" }}>
+        <div className={`${PAGE_CONTAINER} pt-5 pb-8`}>
+          <div className="flex items-center justify-between"><Sk className="h-3.5 w-28" /><LoadingText>Loading county…</LoadingText></div>
+          <Pills className="mt-6" widths={["w-24", "w-16"]} />
+          <div className="mt-4 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+            <div className="min-w-0 flex-1 space-y-3"><Sk className="h-14 w-4/5 max-w-md sm:h-16" /><Sk className="h-3.5 w-40" /></div>
+            <div className="flex flex-col space-y-2 sm:items-end"><Sk className="h-3 w-24" /><Sk className="h-14 w-48" /></div>
+          </div>
+          <div className="mt-8 pt-6" style={{ borderTop: "1px solid var(--app-border)" }}><StatStrip cols={3} mobileCols={2} /></div>
+        </div>
+      </div>
+      <Body>
+        <Sk className="mx-auto mt-8 aspect-[1.75] w-full max-w-md" />
+        <div className="mt-10 grid gap-10 md:grid-cols-2">
+          <div>
+            <SectionHead />
+            <div className="mt-4"><Lines widths={["w-4/5", "w-full", "w-2/3"]} /></div>
+            <SectionHead className="mt-8" />
+            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-3">{Array.from({ length: 6 }, (_, i) => <Sk key={i} className="h-4 w-24" />)}</div>
+            <SectionHead className="mt-8" />
+            <div className="mt-4 space-y-3"><Sk className="h-4 w-24" /><Sk className="h-3 w-full" /><Sk className="h-3 w-full rounded-full" /><Sk className="h-3 w-3/4" /></div>
+          </div>
+          <div>
+            <SectionHead />
+            <ResultCard />
+            <ResultCard />
+            <ResultCard />
+          </div>
+        </div>
+      </Body>
+    </>
+  );
+}
+
 const SKELETONS: Record<PendingKind, (p: { path: string }) => ReactNode> = {
   overview: OverviewSkeleton,
   forecast: ForecastSkeleton,
@@ -454,6 +505,7 @@ const SKELETONS: Record<PendingKind, (p: { path: string }) => ReactNode> = {
   chamber: ChamberSkeleton,
   state: StateSkeleton,
   candidate: CandidateSkeleton,
+  county: CountySkeleton,
 };
 
 /** Placeholder page shown between a click and the new page's arrival. Its top edge sits where
@@ -464,7 +516,7 @@ export default function PendingPage({ nav }: { nav: PendingNav }) {
     <div
       role="status"
       aria-label="Loading"
-      className="nav-pending-cover fixed inset-x-0 bottom-0 z-40 overflow-hidden top-[calc(var(--app-chrome-h,56px)+45px)] xl:top-[var(--app-chrome-h,56px)]"
+      className="nav-pending-cover fixed inset-x-0 bottom-0 z-40 overflow-hidden top-[calc(var(--app-chrome-h,56px)+45px)] lg:top-[var(--app-chrome-h,56px)]"
       style={{ background: "var(--app-bg)" }}
     >
       <Skeleton path={nav.path} />

@@ -214,6 +214,7 @@ export default function AtlasDistrictDetail({
               )}
               {rating && <span className={PILL} style={{ background: rating.bg, color: rating.text }}>{pr!.rating}</span>}
               {up ? <Pill tone="primary">Up in {electionYear}</Pill> : district.nextElection ? <Pill>Next election {district.nextElection}</Pill> : null}
+              {up && district.candidates2026?.special && <Pill>Special</Pill>}
               {heldBy && <Pill tone={heldParty ?? "muted"}>{heldBy}</Pill>}
               {district.seats != null && district.seats > 1 && <Pill>{district.seats} seats</Pill>}
             </div>
@@ -221,7 +222,7 @@ export default function AtlasDistrictDetail({
               {district.label}
             </h2>
             <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
-              {up ? `${electionYear} ${abbr} ${chamber === "house" ? "House" : "Senate"} race` : `${abbr} ${chamber === "house" ? "House" : "Senate"} district`}{counties.length > 0 && <> · {counties.length === 1 ? `${counties[0].county} County` : `${counties.length} counties`}</>}
+              {up ? `${electionYear} ${abbr} ${chamber === "house" ? "House" : "Senate"} ${district.candidates2026?.special ? "special election" : "race"}` : `${abbr} ${chamber === "house" ? "House" : "Senate"} district`}{counties.length > 0 && <> · {counties.length === 1 ? `${counties[0].county} County` : `${counties.length} counties`}</>}
             </div>
           </div>
           {headline && (

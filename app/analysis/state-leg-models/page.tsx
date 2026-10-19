@@ -172,7 +172,7 @@ export default function StateLegModelsPage() {
               </tbody>
             </table>
           </div>
-          <p className="mt-2 max-w-3xl text-xs" style={veryMuted}>State Navigate counts Alaska&apos;s bipartisan coalition as Democratic control and assigns a caucus to Nebraska&apos;s nonpartisan seats; ElectIndex reports a coalition outcome for Alaska. Our Nebraska odds are withheld.</p>
+          <p className="mt-2 max-w-3xl text-xs" style={veryMuted}>State Navigate counts Alaska&apos;s bipartisan coalition as Democratic control; ElectIndex reports a coalition outcome for Alaska. Nebraska&apos;s nonpartisan seats are counted by each candidate&apos;s party (registration or party endorsement) in ours and State Navigate&apos;s.</p>
         </section>
 
         <section>

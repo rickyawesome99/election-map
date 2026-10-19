@@ -4,12 +4,10 @@ import ThemeToggle from "@/components/ThemeToggle";
 import SearchBar from "@/components/SearchBar";
 
 export default function AppHeader({
-  back,
   nav,
   darkMode,
 }: {
-  back?: React.ReactNode;
-  /** The section tabs, shown inline after the wordmark from xl up. */
+  /** The section tabs, shown inline after the wordmark from lg up. */
   nav?: React.ReactNode;
   darkMode: boolean;
 }) {
@@ -37,9 +35,8 @@ export default function AppHeader({
           CT Strategies
         </button>
       </div>
-      {nav && <div className="hidden h-full min-w-0 self-stretch xl:ml-4 xl:block">{nav}</div>}
+      {nav && <div className="hidden h-full min-w-0 self-stretch lg:ml-1 lg:block xl:ml-4">{nav}</div>}
       <div className="ml-auto flex h-full shrink-0 flex-nowrap items-center gap-2">
-        {back}
         <SearchBar />
         <ThemeToggle />
       </div>

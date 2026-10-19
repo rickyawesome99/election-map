@@ -4,6 +4,24 @@
  "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
  "dataThrough": "12/31/2020",
  "house": {
+  "3": [
+   {
+    "name": "Friends of Lily Morgan",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 101982.37,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Friends of Mary Middleton",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14668,
+    "expenditures": null
+   }
+  ],
   "5": [
    {
     "name": "Committee to Elect Pam Marsh",
@@ -22,12 +40,37 @@
     "expenditures": null
    }
   ],
+  "9": [
+   {
+    "name": "Friends of Boomer Wright",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 555198.91,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Cal Mukumoto",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 257320.12,
+    "expenditures": null
+   }
+  ],
   "10": [
    {
     "name": "Gomberg for State Rep",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 109445.47,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Friends of Katie Boshart Glaser",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 440007.68,
     "expenditures": null
    }
   ],
@@ -119,6 +162,24 @@
     "expenditures": null
    }
   ],
+  "24": [
+   {
+    "name": "Friends of Lynnette Shaw",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 145336.97,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Friends of Daniel Martin",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1877,
+    "expenditures": null
+   }
+  ],
   "29": [
    {
     "name": "Friends of Susan McLain",
@@ -144,6 +205,15 @@
     "expenditures": null
    }
   ],
+  "33": [
+   {
+    "name": "Pick Dick Courter",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5844.19,
+    "expenditures": null
+   }
+  ],
   "34": [
    {
     "name": "Ken Helm for Oregon",
@@ -159,6 +229,15 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 1643.77,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "Friends of Kelly Sloop",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 266710.43,
     "expenditures": null
    }
   ],
@@ -239,6 +318,13 @@
     "incumbent": true,
     "contributions": 176650.38,
     "expenditures": null
+   },
+   {
+    "name": "Friends of Em Levy",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 93367.82,
+    "expenditures": null
    }
   ],
   "54": [
@@ -256,6 +342,24 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 194592.88,
+    "expenditures": null
+   }
+  ],
+  "58": [
+   {
+    "name": "Friends of Bobby Levy",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 151229.75,
+    "expenditures": null
+   }
+  ],
+  "60": [
+   {
+    "name": "Mark Owens for Oregon",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 126852.42,
     "expenditures": null
    }
   ]
@@ -277,6 +381,24 @@
     "expenditures": null
    }
   ],
+  "2": [
+   {
+    "name": "Art Robinson for Oregon Senate",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 303017.8,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Dick Anderson for Oregon",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 990467.68,
+    "expenditures": null
+   }
+  ],
   "9": [
    {
     "name": "Friends of Fred Girod",
@@ -292,6 +414,15 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 165067.4,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Kate Lieber for State Senate",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 267908.61,
     "expenditures": null
    }
   ],

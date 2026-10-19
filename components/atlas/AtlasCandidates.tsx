@@ -74,6 +74,12 @@ export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDist
 
   return (
     <div>
+      {field.special && (
+        <p className="mb-2 text-sm" style={{ color: "var(--app-text-muted)" }}>
+          <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{c.special === "post" ? "Includes a special election" : "Special election"}</span>
+          {" "}for the rest of the term, through {field.special.termEnds}{field.special.vacancy ? ` — ${field.special.vacancy.replace(/\.$/, "")}` : ""}.
+        </p>
+      )}
       {(c.open && field.candidates.length > 0) || c.status === "uncontested-D" || c.status === "uncontested-R" || canceled || pr?.indep || guaranteedPills.length ? (
         <div className="flex flex-wrap gap-1.5 mb-1">
           {c.open && field.candidates.length > 0 && <Pill>Open seat</Pill>}
@@ -87,9 +93,9 @@ export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDist
       {field.candidates.length === 0 && <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>No candidates listed yet.</p>}
       {groups.map(({ post, cands }) => (
         <div key={post || "all"}>
-          {post && (
+          {(post || posts.length > 1) && (
             <div className="pt-3 text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-              {abbr === "ID" ? `Seat ${post}` : `Position ${post}`}
+              {post === "Special" ? "Special election (unexpired term)" : post === "" ? "Regular election" : abbr === "ID" ? `Seat ${post}` : `Position ${post}`}
             </div>
           )}
           {cands.map((x, i) => {

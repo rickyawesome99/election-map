@@ -2,13 +2,14 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { TPL_GLOBAL_CONSTANTS as G, FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { TPL_VALIDATION } from "@/data/tplValidation";
+import { STATE_LEG_NOT_UP_VALIDATION } from "@/data/stateLegNotUpValidation";
 import { statesData } from "@/data/statesData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { houseData } from "@/data/forecastData";
 import { ALIGNED_INDEPENDENTS } from "@/data/raceEligibility";
 import {
   getTplFit, calculateStateModel, calculateDistrictModel, calculateCountyModel, getMedianStateTpl, incumbentAdvantage,
-  FF_K, FF_MAX, IMPUTED_RACE_WEIGHT, IMPUTED_HOUSE_ROW_WEIGHT, IMPUTED_LEG_ROW_WEIGHT, type ComputedRace, type YearAggregation,
+  FF_K, FF_MAX, IMPUTED_RACE_WEIGHT, IMPUTED_HOUSE_ROW_WEIGHT, IMPUTED_LEG_ROW_WEIGHT, LEG_NOT_UP_MODE, LEG_NOT_UP_SLOPE_K, type ComputedRace, type YearAggregation,
 } from "@/lib/tplCompute";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, N, P, Section, pct, signed, type ConstantRow, type LedgerLine } from "./kit";
 
@@ -113,7 +114,7 @@ export function StateTplMethodology() {
         <Defs items={[
           { term: "Eligible race", def: "Adjusted = Raw, untouched." },
           { term: "Ineligible race (⊘)", def: <>Adjusted is imputed from the seat&rsquo;s nearest presidential result: district-level for a House seat (restricted to the boundary vintage the race was run on), statewide otherwise. Imputed rows skip the incumbency and fundraising strips, strip the environment of the SOURCE presidential year, and enter aggregation at weight <N>{IMPUTED_RACE_WEIGHT}</N>. An imputed House row instead keeps weight <N>{IMPUTED_HOUSE_ROW_WEIGHT}</N> × the source presidential year&rsquo;s turnout share: it is that district&rsquo;s share of the state&rsquo;s House vote, and halving it would drop half the district out of the state&rsquo;s sum.</> },
-          { term: "State Legislature", def: <>Two rows per year over every chamber on the ballot that year, built district by district (<Link href="/methodology/state-leg" className="underline underline-offset-2">Legislative atlas</Link>). The <em>contested pool</em> is the margin of the districts where both major parties drew votes, as a share of their full total, weighted by those votes. The <em>unopposed pool</em> (⊘) is imputed: each uncontested, one-party or uncounted district contributes its presidential margin on the map it was run on, weighted by that presidential vote scaled to the chamber&apos;s legislative-to-presidential turnout ratio; the row strips the environment of that presidential year. Before 2026-10-10 the entry was the raw chamber aggregate, which counted a printed unopposed race as a 100–0 result and so overstated the dominant party in every state that prints them. A year counts once every chamber that WAS on the ballot is sourced (staggered senates sit out some years; Nebraska is unicameral).</> },
+          { term: "State Legislature", def: <>Two rows per year over every chamber on the ballot that year, built district by district (<Link href="/methodology/state-leg" className="underline underline-offset-2">Legislative atlas</Link>). The <em>contested pool</em> is the margin of the districts where both major parties drew votes, as a share of their full total, weighted by those votes. The <em>unopposed pool</em> (⊘) is imputed: each uncontested, one-party or uncounted district contributes its presidential margin on the map it was run on, weighted by that presidential vote scaled to the chamber&apos;s legislative-to-presidential turnout ratio; the row strips the environment of that presidential year. A district on the year&apos;s map with no results row at all (MEDSL&apos;s 2024 files and Louisiana&apos;s omit unprinted unopposed races) joins the unopposed pool when its seat was up — every seat, in a chamber that elects them all at once. A staggered chamber&apos;s seats <em>not up</em> join the contested row as estimates, so the row measures the whole chamber rather than whichever seat class was on the ballot (the classes can differ by several points in lean): each is its presidential margin plus the gap the contested seats ran from theirs that year (<a href="#not-up" className="underline underline-offset-2">below</a>). Before 2026-10-10 the entry was the raw chamber aggregate, which counted a printed unopposed race as a 100–0 result and so overstated the dominant party in every state that prints them. A year counts once every chamber that WAS on the ballot is sourced (staggered senates sit out some years; Nebraska is unicameral).</> },
           { term: "Senate specials", def: "A state with a regular and a special Senate race in one year carries both rows; both feed that year's Senate mean." },
         ]} />
       </Section>
@@ -174,6 +175,8 @@ export function StateTplMethodology() {
           { name: "IMPUTED_RACE_WEIGHT", value: IMPUTED_RACE_WEIGHT, basis: "designed", meaning: "An imputed statewide row is a lean borrowed from a presidential result, not an observation of its own.", source: "0.25–1.0 move the calibration objective ≤ 0.01." },
           { name: "IMPUTED_HOUSE_ROW_WEIGHT", value: IMPUTED_HOUSE_ROW_WEIGHT, basis: "decision", meaning: "An imputed House row is a turnout-weighted share of the state's House vote, so it keeps its full share; its value is the district's own presidential lean.", source: "0.5 → 1.0 costs 0.025 on the calibration objective; kept at 1 so the districts still sum to the state." },
           { name: "IMPUTED_LEG_ROW_WEIGHT", value: IMPUTED_LEG_ROW_WEIGHT, basis: "calibrated", meaning: "The State Legislature's unopposed pool keeps its full turnout share for the same reason a House seat does: it is that part of the chamber's electorate.", source: "2024 holdout, 2026-10-10: at 0.5 President 2.25 / Senate 4.89 / House 3.52 against 2.24 / 4.90 / 3.41 at 1 — no better on the two targets that improved, worse on the third." },
+          { name: "LEG_NOT_UP_MODE", value: LEG_NOT_UP_MODE, basis: "calibrated", meaning: "How a staggered chamber's not-up seats are estimated: off (left out), flat (presidential margin + the contested seats' mean gap) or slope (the gap fitted on presidential lean).", source: <>Hidden-seat-class test, <a href="#not-up" className="underline underline-offset-2">below</a>.</> },
+          { name: "LEG_NOT_UP_SLOPE_K", value: LEG_NOT_UP_SLOPE_K, basis: "calibrated", meaning: "Shrinkage of the gap's slope: b × n / (n + k) on n contested seats, so a chamber with few contested races leans on the flat gap.", source: "Same test: k 5–10 best; k 0 and k ≥ 50 slightly worse." },
         ]} />
       </Section>
 
@@ -188,6 +191,20 @@ export function StateTplMethodology() {
           { op: "", label: "Median state", value: <M v={median} /> },
           { op: "=", label: "Centered TPL", note: "TPL − median", value: <M v={oh.calc.tpl - median} />, total: true },
         ]} />
+      </Section>
+
+      <Section id="not-up" kicker={`Hidden seat classes · generated ${STATE_LEG_NOT_UP_VALIDATION.generatedAt}`} title="Seats not up for election"
+        lede={<>A staggered chamber puts a different half (or third) of its seats on the ballot each cycle, and the seats up one year can lean several points either way of the chamber. The State Legislature row adds the seats that sat out as estimates, carried in that year&rsquo;s own environment.</>}>
+        <Formula lines={[
+          "gap_j        = legislative margin − presidential margin           each contested seat up, on the lines it was run on",
+          "a, b         = vote-weighted fit of gap_j = a + b·(P_j − P̄)          P̄ = the contested seats' vote-weighted mean presidential margin",
+          `seat estimate = P_i + a + b·n/(n + ${LEG_NOT_UP_SLOPE_K})·(clamp(P_i) − P̄)    each seat not up; clamp = the range of P_j the fit saw`,
+          "weight       = the seat's presidential votes × the chamber's legislative/presidential turnout ratio",
+          "row          = contested seats' votes + not-up estimates, combined on those weights",
+        ]} note={`A chamber with fewer than 5 contested seats borrows the other chamber's gap that year. Which seats were not up: a staggered chamber's districts with no results row, except a seat whose last regular election was that year (an unprinted unopposed race, imputed as unopposed instead). Live setting: ${LEG_NOT_UP_MODE}.`} />
+        <DataTable align="lrrrr" maxWidth="max-w-3xl" head={["Estimator", "Alternate: hidden half", "Alternate: full row", "Random: hidden half", "Random: full row"]}
+          rows={STATE_LEG_NOT_UP_VALIDATION.rows.map((r) => [r.estimator === STATE_LEG_NOT_UP_VALIDATION.live ? <N key="e">{r.estimator}</N> : r.estimator, r.alternateHalf.toFixed(2), r.alternateRow.toFixed(2), r.randomHalf.toFixed(2), r.randomRow.toFixed(2)])}
+          caption={`MAE in margin points over ${STATE_LEG_NOT_UP_VALIDATION.chamberYears} chamber-years that elected every seat at once: each is split into two classes (alternate districts, and 20 random halves), and one half's contested seats are estimated from the other's. "none" is the row before this term — the hidden half assumed to vote like the visible one.`} />
       </Section>
 
       <Section id="validation" kicker={`Holdout · generated ${TPL_VALIDATION.generatedAt}`} title="Validation"
@@ -220,6 +237,7 @@ export function StateTplMethodology() {
           { path: "docs/TPL_MODEL_SPEC.md", role: "Long-form design history." },
         ]} commands={[
           { cmd: "npx tsx scripts/tplBacktest.ts --emit", does: "Tracking holdout with acceptance test; regenerates the Validation table. Re-baseline its reference values after an intentional change." },
+          { cmd: "npx tsx --conditions=react-server scripts/stateLegNotUpBacktest.ts --emit", does: "Hidden-seat-class test of the not-up seat estimate; regenerates the Seats-not-up table." },
           { cmd: "npx tsx scripts/tplCalibrate.ts --baseline", does: "Leakage-free objective for decay, type weights, Huber, shrinkage and imputed weight." },
           { cmd: "npx tsx scripts/tplBacktest.ts --matrix · --fit", does: "Cross-office predictiveness matrix; fitted E and β* extremes." },
         ]} />

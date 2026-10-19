@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useMemo, useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
@@ -58,11 +59,13 @@ const DEFAULT_FRAME = { projectionConfig: { scale: 1000 } };
 const WIDE_FRAME = { width: 800, height: 480, projectionConfig: { scale: 1000 } };
 const WIDE_SHIFT = 29;
 
-export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor, onSelect, zoomable = true, wide = false }: {
+export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor, onSelect, navigateOnClick = false, zoomable = true, wide = false }: {
   mode: "states" | "districts"; rows: MapRow[]; valueLabel: string; linkLabel: string;
   colorOf?: (value: number) => string; formatValue?: (value: number) => string; valueColor?: (value: number) => string;
   /** Fired when a place is picked (click/tap) or the panel is closed (null) — /analysis/polling-misses filters its table with it. */
   onSelect?: (row: MapRow | null) => void;
+  /** true = a click/tap goes straight to the place's href instead of opening the panel (the TPL hub's States view). */
+  navigateOnClick?: boolean;
   /** false = a fixed view: no wheel/pinch/drag zoom and no Reset button (/analysis/polling-misses). */
   zoomable?: boolean;
   /** true = a wide 800×480 frame instead of 800×600, so the map fills the md+ box's 16:9-ish
@@ -77,7 +80,11 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
 
   const [hovered, setHovered]   = useState<MapRow | null>(null);
   const [selected, setSelectedState] = useState<MapRow | null>(null);
-  const setSelected = (row: MapRow | null) => { setSelectedState(row); onSelect?.(row); };
+  const router = useRouter();
+  const setSelected = (row: MapRow | null) => {
+    if (navigateOnClick && row) { router.push(row.href); return; }
+    setSelectedState(row); onSelect?.(row);
+  };
   const { onMouseMove: onTipMove, tooltipRef } = useMapTooltip(14, 8);
   const [mapKey, setMapKey]     = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -158,7 +165,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
       ? <ZoomableGroup key={`${mode}-${mapKey}`} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>{content}</ZoomableGroup>
       : <g key={mode}>{content}</g>;
   // eslint-disable-next-line react-hooks/exhaustive-deps -- setSelected is a stable wrapper over state + onSelect
-  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, stateLinesTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled, colorOf, onSelect, zoomable, wide]);
+  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, stateLinesTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled, colorOf, onSelect, navigateOnClick, zoomable, wide]);
 
   const closeButton = (
     <button type="button" onClick={() => setSelected(null)} className="flex h-4 w-4 shrink-0 items-center justify-center rounded" style={{ color: "var(--app-text-very-muted)" }} aria-label="Close">

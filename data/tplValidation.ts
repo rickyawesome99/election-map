@@ -2,7 +2,7 @@
 // The 2024 holdout behind the Validation table on /methodology/state-tpl: each predictor is built from
 // information through 2022 and scored on 2024 after removing a uniform national shift.
 export const TPL_VALIDATION = {
-  "generatedAt": "2026-10-18",
+  "generatedAt": "2026-10-19",
   "pass": true,
   "rows": [
     {
@@ -11,15 +11,15 @@ export const TPL_VALIDATION = {
       "n": 50,
       "mae": 2.24,
       "r": 0.99,
-      "shift": 2.67
+      "shift": 2.56
     },
     {
       "target": "2024 President",
       "predictor": "Adjusted only (no IF/CQ/WA)",
       "n": 50,
-      "mae": 2.22,
+      "mae": 2.21,
       "r": 0.99,
-      "shift": 2.75
+      "shift": 2.76
     },
     {
       "target": "2024 President",
@@ -27,7 +27,7 @@ export const TPL_VALIDATION = {
       "n": 50,
       "mae": 2.53,
       "r": 0.987,
-      "shift": 2.6
+      "shift": 2.63
     },
     {
       "target": "2024 President",
@@ -41,25 +41,25 @@ export const TPL_VALIDATION = {
       "target": "2024 Senate",
       "predictor": "TPL holdout (full NM pipeline)",
       "n": 33,
-      "mae": 4.9,
+      "mae": 4.91,
       "r": 0.949,
-      "shift": -0.54
+      "shift": -0.76
     },
     {
       "target": "2024 Senate",
       "predictor": "Adjusted only (no IF/CQ/WA)",
       "n": 33,
-      "mae": 4.73,
-      "r": 0.951,
+      "mae": 4.75,
+      "r": 0.95,
       "shift": 0.31
     },
     {
       "target": "2024 Senate",
       "predictor": "Raw, clipped ±50",
       "n": 33,
-      "mae": 4.71,
+      "mae": 4.74,
       "r": 0.951,
-      "shift": 0.72
+      "shift": 0.57
     },
     {
       "target": "2024 Senate",
@@ -73,17 +73,17 @@ export const TPL_VALIDATION = {
       "target": "2024 House avg (adjusted)",
       "predictor": "TPL holdout (full NM pipeline)",
       "n": 50,
-      "mae": 3.41,
+      "mae": 3.42,
       "r": 0.99,
-      "shift": 1.83
+      "shift": 1.84
     },
     {
       "target": "2024 House avg (adjusted)",
       "predictor": "Adjusted only (no IF/CQ/WA)",
       "n": 50,
-      "mae": 2.58,
+      "mae": 2.6,
       "r": 0.992,
-      "shift": 1.87
+      "shift": 1.81
     },
     {
       "target": "2024 House avg (adjusted)",
@@ -91,7 +91,7 @@ export const TPL_VALIDATION = {
       "n": 50,
       "mae": 2.73,
       "r": 0.992,
-      "shift": 1.54
+      "shift": 1.57
     },
     {
       "target": "2024 House avg (adjusted)",

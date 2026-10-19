@@ -30,7 +30,7 @@ import { racePolls } from "@/data/racePolls";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { forecastNow } from "@/lib/forecastClock";
 import { classifyEligibility, alignedParty, type RaceEligibility } from "@/data/raceEligibility";
-import { getChamberMargins } from "@/lib/chamberMargins";
+import { getChamberMargins, legislatureRowPool, type NotUpMode } from "@/lib/chamberMargins";
 
 // ── Race stub type ────────────────────────────────────────────────────────────
 
@@ -127,6 +127,16 @@ export const IMPUTED_HOUSE_ROW_WEIGHT = 1;
 // electorate, so it keeps its full turnout share. Tested against 0.5 (decision 6 of the atlas
 // plan): see methodologyChangelog 2026-10-10.
 export const IMPUTED_LEG_ROW_WEIGHT = 1;
+// A staggered chamber's seats NOT up in a year join the State Legislature row as estimates —
+// each seat's presidential margin plus the gap the contested seats up that year ran from theirs
+// (lib/chamberMargins.ts notUpPool) — so the row measures the whole chamber, not the seat class
+// that happened to be on the ballot. "slope" lets the gap vary with presidential lean, its slope
+// shrunk by n/(n + LEG_NOT_UP_SLOPE_K) on n contested seats. Backtest: methodologyChangelog
+// 2026-10-19. TPL_LEG_NOT_UP=off|flat|slope and TPL_LEG_NOT_UP_K override them for the harnesses.
+export const LEG_NOT_UP_MODE: NotUpMode = "slope";
+export const LEG_NOT_UP_SLOPE_K = 10;
+const legNotUpMode = (process.env.TPL_LEG_NOT_UP as NotUpMode | undefined) ?? LEG_NOT_UP_MODE;
+const legNotUpK = process.env.TPL_LEG_NOT_UP_K != null ? Number(process.env.TPL_LEG_NOT_UP_K) : LEG_NOT_UP_SLOPE_K;
 
 interface ImputedLean {
   margin: number;
@@ -372,7 +382,8 @@ export function getRawMargin(
     // separate "State Legislature (unopposed seats)" row, imputed district by district from the
     // presidential vote on the lines they were run on (lib/stateLegChamberMargin.ts). The old
     // chamber aggregate (every counted district summed) survives there as `rawMargin`.
-    return getChamberMargins(stateAbbr)[year]?.contested.margin ?? null;
+    const cm = getChamberMargins(stateAbbr)[year];
+    return cm ? legislatureRowPool(cm, legNotUpMode, legNotUpK).margin : null;
   }
   if (race === "State Legislature (unopposed seats)") {
     return getChamberMargins(stateAbbr)[year]?.imputed.margin ?? null;
@@ -537,7 +548,7 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
       continue;
     }
     if (cm.contested.margin != null) {
-      stubs.push({ ...makeStub("State Legislature", "L", year, undefined, "-", historicalMargins, stateHref), totalVotes: cm.contested.weight });
+      stubs.push({ ...makeStub("State Legislature", "L", year, undefined, "-", historicalMargins, stateHref), totalVotes: legislatureRowPool(cm, legNotUpMode, legNotUpK).weight });
     }
     if (cm.imputed.margin != null && cm.imputed.srcYear != null) {
       stubs.push({

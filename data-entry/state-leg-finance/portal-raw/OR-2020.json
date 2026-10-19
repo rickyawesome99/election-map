@@ -2,7 +2,7 @@
  "state": "OR",
  "cycle": 2020,
  "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
- "fetched": "2026-10-16",
+ "fetched": "2026-10-19",
  "dataThrough": "12/31/2020",
  "candidates": [
   {
@@ -490,6 +490,240 @@
    "district": "33",
    "committee": "19909",
    "contributions": 234323.43
+  },
+  {
+   "name": "Friends of Miriam",
+   "candidate": "Cummins, Miriam",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "15",
+   "committee": "19948",
+   "contributions": 41703.67
+  },
+  {
+   "name": "Campos for Oregon",
+   "candidate": "Campos, Wlnsvey",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "20099",
+   "contributions": 145837.32
+  },
+  {
+   "name": "Kate Lieber for State Senate",
+   "candidate": "Lieber, Kate",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "14",
+   "committee": "20136",
+   "contributions": 267908.61
+  },
+  {
+   "name": "Friends of Jami Cate",
+   "candidate": "Cate, Jami",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "20144",
+   "contributions": 149524.52
+  },
+  {
+   "name": "Friends of Lily Morgan",
+   "candidate": "Morgan, Lily",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3",
+   "committee": "20199",
+   "contributions": 101982.37
+  },
+  {
+   "name": "Friends of Lisa Reynolds",
+   "candidate": "Reynolds, Lisa",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "20209",
+   "contributions": 194805.3
+  },
+  {
+   "name": "Friends of Nkenge",
+   "candidate": "Harmon Johnson, Nkenge",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "20212",
+   "contributions": 12355.0
+  },
+  {
+   "name": "Mark Owens for Oregon",
+   "candidate": "Owens, Mark",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "60",
+   "committee": "20217",
+   "contributions": 126852.42
+  },
+  {
+   "name": "Friends of Mary Middleton",
+   "candidate": "Middleton, Mary",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "4",
+   "committee": "20239",
+   "contributions": 14668.0
+  },
+  {
+   "name": "Dick Anderson for Oregon",
+   "candidate": "Anderson, Dick",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "5",
+   "committee": "20255",
+   "contributions": 990467.68
+  },
+  {
+   "name": "Friends of Bobby Levy",
+   "candidate": "Levy, Bobby",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "58",
+   "committee": "20272",
+   "contributions": 151229.75
+  },
+  {
+   "name": "Carina for Oregon",
+   "candidate": "Miller, Carina",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "20284",
+   "contributions": 61561.81
+  },
+  {
+   "name": "Dacia for Oregon",
+   "candidate": "Grayber, Dacia",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "28",
+   "committee": "20290",
+   "contributions": 141884.21
+  },
+  {
+   "name": "Friends of Suzanne Weber",
+   "candidate": "Weber, Suzanne",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "20337",
+   "contributions": 1242647.72
+  },
+  {
+   "name": "Friends of Boomer Wright",
+   "candidate": "Wright, Gerald",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "9",
+   "committee": "20366",
+   "contributions": 555198.91
+  },
+  {
+   "name": "Friends of Khanh Pham",
+   "candidate": "Pham, Katherine",
+   "party": "Democrat",
+   "chamber": "senate",
+   "district": "23",
+   "committee": "20376",
+   "contributions": 199030.9
+  },
+  {
+   "name": "Friends of Em Levy",
+   "candidate": "Levy, Emerson",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "53",
+   "committee": "20377",
+   "contributions": 93367.82
+  },
+  {
+   "name": "Friends of Daniel Martin",
+   "candidate": "Martin, Daniel",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "35",
+   "committee": "20457",
+   "contributions": 1877.0
+  },
+  {
+   "name": "Friends of Katie Boshart Glaser",
+   "candidate": "Glaser, Katherine",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "11",
+   "committee": "20480",
+   "contributions": 440007.68
+  },
+  {
+   "name": "Friends of Lynnette Shaw",
+   "candidate": "Shaw, Lynnette",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "24",
+   "committee": "20508",
+   "contributions": 145336.97
+  },
+  {
+   "name": "Friends of Cal Mukumoto",
+   "candidate": "Mukumoto, Calvin",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "9",
+   "committee": "20543",
+   "contributions": 257320.12
+  },
+  {
+   "name": "Jerry for Oregon",
+   "candidate": "Samaniego, Jerry",
+   "party": "Democrat",
+   "chamber": "house",
+   "district": "7",
+   "committee": "20567",
+   "contributions": 2895.0
+  },
+  {
+   "name": "Friends of Kelly Sloop",
+   "candidate": "Sloop, Kelly",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "37",
+   "committee": "20577",
+   "contributions": 266710.43
+  },
+  {
+   "name": "Art Robinson for Oregon Senate",
+   "candidate": "Robinson, Art",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "2",
+   "committee": "20592",
+   "contributions": 303017.8
+  },
+  {
+   "name": "Pick Dick Courter",
+   "candidate": "Courter, Richard",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "33",
+   "committee": "20626",
+   "contributions": 5844.19
+  },
+  {
+   "name": "Ashton for East Portland",
+   "candidate": "Simpson, Ashton",
+   "party": "Working Families",
+   "chamber": "house",
+   "district": "47",
+   "committee": "20882",
+   "contributions": 40818.0
   }
  ]
 }

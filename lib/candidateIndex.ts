@@ -13,6 +13,9 @@ export type CandidateHistoryEntry = {
   racePath: string;
   party: "D" | "R" | "I";
   oppParty: "D" | "R" | "I";
+  /** The other major-party nominee, when there was one, and their candidate page. */
+  oppName?: string;
+  oppSlug?: string;
   side: "dem" | "rep";
   demPct: number;
   repPct: number;
@@ -40,7 +43,9 @@ export type CandidatePage = {
     probability: number;
     rating: string;
     margin: number;
-    opponent?: { name: string; party: "D" | "R" | "I" };
+    /** Which slot of the race the candidate fills: probability is P(the "dem" slot wins). */
+    side: "dem" | "rep";
+    opponent?: { name: string; party: "D" | "R" | "I"; slug: string };
   };
   history: CandidateHistoryEntry[];
 };
@@ -181,6 +186,7 @@ function collectFromRaces(races: ForecastedRace[], racePathPrefix: string): RawE
           incumbent: res.demIncumbent ?? false,
           isCurrent: false,
           opponentParty: res.repParty ?? "R",
+          opponentName: isValidName(res.repCandidate) ? res.repCandidate : undefined,
         });
       }
       if (isValidName(res.repCandidate)) {
@@ -201,6 +207,7 @@ function collectFromRaces(races: ForecastedRace[], racePathPrefix: string): RawE
           incumbent: res.repIncumbent ?? false,
           isCurrent: false,
           opponentParty: res.demParty ?? "D",
+          opponentName: isValidName(res.demCandidate) ? res.demCandidate : undefined,
         });
       }
     }
@@ -243,9 +250,12 @@ function collectFromNoElection(
           side: "dem",
           demPct: res.demPct,
           repPct: res.repPct,
+          demVotes: res.demVotes,
+          repVotes: res.repVotes,
           incumbent: res.demIncumbent ?? false,
           isCurrent: false,
           opponentParty: res.repParty ?? "R",
+          opponentName: isValidName(res.repCandidate) ? res.repCandidate : undefined,
         });
       }
       if (isValidName(res.repCandidate)) {
@@ -261,9 +271,12 @@ function collectFromNoElection(
           side: "rep",
           demPct: res.demPct,
           repPct: res.repPct,
+          demVotes: res.demVotes,
+          repVotes: res.repVotes,
           incumbent: res.repIncumbent ?? false,
           isCurrent: false,
           opponentParty: res.demParty ?? "D",
+          opponentName: isValidName(res.demCandidate) ? res.demCandidate : undefined,
         });
       }
     }
@@ -339,6 +352,7 @@ function collectPresidential(): RawEntry[] {
       incumbent: yr.demIncumbent ?? false,
       isCurrent: false,
       opponentParty: "R",
+      opponentName: yr.repCandidate,
     });
     entries.push({
       name: yr.repCandidate,
@@ -359,6 +373,7 @@ function collectPresidential(): RawEntry[] {
       incumbent: yr.repIncumbent ?? false,
       isCurrent: false,
       opponentParty: "D",
+      opponentName: yr.demCandidate,
     });
   }
 
@@ -451,8 +466,9 @@ function buildIndex(): Map<string, CandidatePage> {
           probability: currentEntry.probability ?? 0.5,
           rating: currentEntry.rating ?? "TBD",
           margin: currentEntry.margin ?? 0,
+          side: currentEntry.side,
           opponent: currentEntry.opponentName
-            ? { name: currentEntry.opponentName, party: currentEntry.opponentParty ?? "I" }
+            ? { name: currentEntry.opponentName, party: currentEntry.opponentParty ?? "I", slug: candidateSlug(currentEntry.opponentName) }
             : undefined,
         }
       : undefined;
@@ -466,6 +482,8 @@ function buildIndex(): Map<string, CandidatePage> {
       racePath: e.racePath,
       party: e.party,
       oppParty: e.opponentParty ?? (e.side === "dem" ? "R" : "D"),
+      oppName: e.isCurrent ? undefined : e.opponentName,
+      oppSlug: !e.isCurrent && e.opponentName ? candidateSlug(e.opponentName) : undefined,
       side: e.side,
       demPct: e.demPct,
       repPct: e.repPct,

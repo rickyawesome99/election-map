@@ -10,7 +10,9 @@ import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import type { WarSlim } from "@/lib/modelSlices";
 import { WAR_BAD, WAR_GOOD, careerWar } from "@/components/tpl/format";
 import type { StateLegRace } from "@/lib/stateLegCandidateIndex";
-import { StateLegCurrentRow, StateLegPastRow } from "@/components/candidates/StateLegRaceRow";
+import { StateLegCurrentRow } from "@/components/candidates/StateLegRaceRow";
+import { CandidateRaceRow, ContestantLines, MarginBar, type Contestant } from "@/components/candidates/CandidateRaceRow";
+import { statesData } from "@/data/statesData";
 import { candidateSlugAlias, getCandidatePagePayload } from "@/lib/candidatePages";
 
 // ~3,500 federal and ~37,000 state legislative candidate pages: rendered on first request and
@@ -67,6 +69,12 @@ function warRowsFor(war: WarSlim[], entry: CandidateHistoryEntry): WarSlim[] {
 const fmtWar = (v: number) => `${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.abs(v).toFixed(1)}`;
 const warColor = (v: number) => (v > 0 ? WAR_GOOD : v < 0 ? WAR_BAD : "var(--app-text-muted)");
 const warBg = (v: number) => `color-mix(in srgb, ${warColor(v)} 14%, transparent)`;
+
+// Major parties by letter, anyone else by their own label ("Libertarian").
+const legPartyTag = (party: string, label?: string) => (party === "D" || party === "R" ? party : label ? label.replace(/ Party$/, "") : "I");
+// Biggest vote first; candidates without a count go last.
+const byVotes = (a: Contestant, b: Contestant) =>
+  a.votes != null || b.votes != null ? (b.votes ?? -1) - (a.votes ?? -1) : (b.pct ?? -1) - (a.pct ?? -1);
 
 function raceTypeLabel(raceType: "house" | "senate" | "governor" | "president") {
   if (raceType === "house") return "U.S. House";
@@ -211,14 +219,14 @@ export default async function CandidatePage({
                 <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full" style={{ background: subtle, color: accent }}>
                   {leg && !federal && leg.party === "O" && legCurrent[0]?.partyLabel ? legCurrent[0].partyLabel.replace(/ Party$/, "") : partyLabel(candidate.party)}
                 </span>
-                {candidate.state && (
-                  <span
-                    className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
-                    style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "1px solid var(--app-border)" }}
-                  >
-                    {candidate.state}
-                  </span>
-                )}
+                {candidate.state && (() => {
+                  const st = statesData.find((s) => s.name === candidate.state);
+                  const cls = "text-xs font-semibold px-2.5 py-0.5 rounded-full";
+                  const style = { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" };
+                  return st
+                    ? <Link prefetch={false} href={`/states/${st.id}`} aria-label={`View ${st.name} state page`} className={`${cls} hover:underline`} style={style}>{candidate.state}</Link>
+                    : <span className={cls} style={{ ...style, color: "var(--app-text-muted)" }}>{candidate.state}</span>;
+                })()}
               </div>
 
               {leg?.outgoing2026 && (
@@ -232,7 +240,9 @@ export default async function CandidatePage({
                   Race Record
                 </div>
                 <div className="text-[1.15rem] font-extrabold tabular-nums mt-0.5">
-                  {wins}W&ndash;{losses}L
+                  <span style={{ color: wins ? WAR_GOOD : "var(--app-text-muted)" }}>{wins}W</span>
+                  <span style={{ color: "var(--app-text-very-muted)" }}>&ndash;</span>
+                  <span style={{ color: WAR_BAD }}>{losses}L</span>
                 </div>
                 {leg && legPast.length > 0 && (
                   <div className="text-[11px] mt-0.5" style={{ color: "var(--app-text-very-muted)" }}>
@@ -269,7 +279,6 @@ export default async function CandidatePage({
               {hasCurrent && (() => {
                 const { bg, text } = candidate.currentRace ? getRatingColors(candidate.currentRace.rating) : { bg: "", text: "" };
                 const opponent = candidate.currentRace?.opponent;
-                const opponentAccent = opponent ? partyAccent(opponent.party) : null;
                 const nCurrent = currentEntries.length + legCurrent.length;
                 return (
                   <section>
@@ -282,38 +291,28 @@ export default async function CandidatePage({
                       </span>
                     </div>
 
-                    {candidate.currentRace && <Link prefetch={false} href={candidate.currentRace.racePath} className="block py-5" style={{ borderBottom: otherCurrentEntries.length > 0 || legCurrent.length > 0 ? "1px solid var(--app-border)" : "none" }}>
-                      <div className="flex items-start justify-between gap-4">
-                        <div className="min-w-0">
-                          <div className="text-[11px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-                            {candidate.currentRace!.raceName} &middot; {raceTypeLabel(candidate.currentRace!.raceType)}
+                    {candidate.currentRace && (() => {
+                      const r = candidate.currentRace;
+                      // Projected two-party vote share per side, from the R-positive forecast margin.
+                      const mine = r.side === "dem" ? 50 - r.margin / 2 : 50 + r.margin / 2;
+                      const rows: Contestant[] = [
+                        { name: candidate.name, party: candidate.party, partyTag: candidate.party, self: true, incumbent: r.incumbent, pct: mine, won: mine > 50 },
+                        ...(opponent ? [{ name: opponent.name, party: opponent.party, partyTag: opponent.party, href: `/candidates/${opponent.slug}`, pct: 100 - mine, won: mine < 50 }] : []),
+                      ].sort((a, b) => (b.pct ?? 0) - (a.pct ?? 0));
+                      return (
+                        <div className="py-4" style={{ borderBottom: otherCurrentEntries.length > 0 || legCurrent.length > 0 ? "1px solid var(--app-border)" : "none" }}>
+                          <div className="mb-2 flex items-center justify-between gap-4">
+                            <Link prefetch={false} href={r.racePath} className="truncate text-sm font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }}>
+                              {r.raceName} &middot; {raceTypeLabel(r.raceType)} <span aria-hidden>&rsaquo;</span>
+                            </Link>
+                            <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full shrink-0" style={{ background: bg, color: text }}>{r.rating}</span>
                           </div>
-                          <div className="flex flex-col gap-0.5">
-                            {opponent && (
-                              <span className="truncate" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: opponentAccent! }}>
-                                {opponent.name}
-                              </span>
-                            )}
-                            <span className="truncate" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: accent }}>
-                              {candidate.name}
-                              {candidate.currentRace!.incumbent && (
-                                <span className="text-[13px] font-semibold" style={{ color: "var(--app-text-muted)" }}> Inc.</span>
-                              )}
-                            </span>
-                          </div>
+                          <ContestantLines rows={rows} />
+                          <div className="mt-2"><MarginBar demShare={50 - r.margin / 2} margin={r.margin} /></div>
+                          <div className="mt-1.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Forecast margin</div>
                         </div>
-                        <div className="text-right shrink-0">
-                          <div className="tabular-nums font-extrabold" style={{ fontSize: "1.6rem", lineHeight: 1, color: marginColor(candidate.currentRace!.margin) }}>
-                            {fmtMargin(candidate.currentRace!.margin)}
-                          </div>
-                          <div className="mt-1.5">
-                            <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full" style={{ background: bg, color: text }}>
-                              {candidate.currentRace!.rating}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>}
+                      );
+                    })()}
 
                     {otherCurrentEntries.map((entry, i) => (
                       <Link prefetch={false}
@@ -361,7 +360,7 @@ export default async function CandidatePage({
                 ) : (
                   ([
                     ...pastEntries.map((entry, i): Item => ({ year: entry.year, order: 0, node: renderFederal(entry, i) })),
-                    ...legPast.map((race, i): Item => ({ year: race.year, order: 1, node: <StateLegPastRow key={`leg-${i}`} race={race} money={legMoney(race)} last /> })),
+                    ...legPast.map((race, i): Item => ({ year: race.year, order: 1, node: renderLeg(race, i) })),
                   ] as Item[]).sort((a, b) => b.year - a.year || a.order - b.order).map((item, i, all) => (
                     <div key={i} style={{ borderBottom: i < all.length - 1 ? "1px solid var(--app-border)" : "none" }}>{item.node}</div>
                   ))
@@ -376,91 +375,74 @@ export default async function CandidatePage({
   );
 
   function renderFederal(entry: CandidateHistoryEntry, i: number) {
-    return (() => {
-                    const entryAccent = partyAccent(entry.party);
-                    const oppAccent = partyAccent(entry.oppParty);
-                    const won = wonEntry(entry);
-                    const isPresident = entry.raceType === "president";
-                    const pct = entry.side === "dem" ? entry.demPct : entry.repPct;
-                    const oppPct = entry.side === "dem" ? entry.repPct : entry.demPct;
-                    const oppLabel = entry.side === "dem" ? "R" : "D";
-                    const oppColor = entry.side === "dem" ? "var(--party-rep)" : "var(--party-dem)";
-                    const margin = Math.abs(pct - oppPct).toFixed(1);
-                    const total = entry.demPct + entry.repPct;
-                    const dWidth = total > 0 ? (entry.demPct / total) * 100 : 50;
-                    const ev = entry.side === "dem" ? entry.demEV : entry.repEV;
-                    const entryWar = warRowsFor(war, entry);
-                    return (
-                      <div key={i} className="py-5">
-                        <div className="flex items-start justify-between gap-4 mb-2.5">
-                          <div className="flex items-center gap-2 min-w-0 flex-wrap">
-                            <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>
-                              {entry.year}
-                            </span>
-                            <Link prefetch={false}
-                              href={historyHref(entry)}
-                              className="text-sm font-semibold hover:underline truncate"
-                              style={{ color: "var(--app-text-muted)" }}
-                            >
-                              {entry.raceName} &middot; {raceTypeLabel(entry.raceType)}
-                            </Link>
-                            {entry.incumbent && (
-                              <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: partySubtle(entry.party), color: entryAccent }}>
-                                Inc.
-                              </span>
-                            )}
-                          </div>
-                          <span
-                            className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0"
-                            style={{
-                              background: won ? partySubtle(entry.party) : partySubtle(entry.oppParty),
-                              color: won ? entryAccent : oppAccent,
-                            }}
-                          >
-                            {won ? "Won" : "Lost"}
-                          </span>
-                        </div>
+    const won = wonEntry(entry);
+    const mine = entry.side === "dem";
+    const ev = mine ? entry.demEV : entry.repEV;
+    const oppEv = mine ? entry.repEV : entry.demEV;
+    const evNote = (n: number | undefined) => (entry.raceType === "president" && n != null ? `${n} EV` : undefined);
+    const contestants: Contestant[] = [
+      { name: candidate.name, party: entry.party, partyTag: entry.party, self: true, incumbent: entry.incumbent, won,
+        votes: mine ? entry.demVotes : entry.repVotes, pct: mine ? entry.demPct : entry.repPct, note: evNote(ev) },
+    ];
+    if (entry.oppName) contestants.push({
+      name: entry.oppName, party: entry.oppParty, partyTag: entry.oppParty, href: entry.oppSlug ? `/candidates/${entry.oppSlug}` : undefined, won: !won,
+      votes: mine ? entry.repVotes : entry.demVotes, pct: mine ? entry.repPct : entry.demPct, note: evNote(oppEv),
+    });
+    const two = entry.demPct + entry.repPct;
+    const entryWar = warRowsFor(war, entry);
+    return (
+      <CandidateRaceRow key={i} year={entry.year} title={`${entry.raceName} · ${raceTypeLabel(entry.raceType)}`} href={historyHref(entry)} won={won}
+        contestants={contestants.sort(byVotes)} demShare={two > 0 ? (entry.demPct / two) * 100 : null} margin={entry.repPct - entry.demPct}>
+        {entryWar.length === 1 && (() => {
+          const w = entryWar[0];
+          return (
+            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+              <span title="Generic vs generic: the seat's lean plus the year's environment, incumbency and structural money">Expected <b style={{ color: marginColor(w.expected) }}>{fmtMargin(w.expected)}</b></span>
+              <span title="Expected, adjusted for this specific opponent's own effect">vs opponent <b style={{ color: marginColor(w.vsOpp) }}>{fmtMargin(w.vsOpp)}</b></span>
+              <span title="Wins Above Replacement: actual margin minus vs-opponent, signed toward this candidate">WAR <b className="rounded px-1.5 py-0.5" style={{ color: warColor(w.war), background: warBg(w.war) }}>{fmtWar(w.war)}</b></span>
+            </div>
+          );
+        })()}
+        {entryWar.length > 1 && (() => {
+          const avg = entryWar.reduce((t, r) => t + r.war, 0) / entryWar.length;
+          const best = entryWar.reduce((b, r) => (r.war > b.war ? r : b));
+          const worst = entryWar.reduce((b, r) => (r.war < b.war ? r : b));
+          return (
+            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+              <span title="Presidential WAR is scored state by state; this is the average over the states">WAR <b className="rounded px-1.5 py-0.5" style={{ color: warColor(avg), background: warBg(avg) }}>{fmtWar(avg)}</b> avg across {entryWar.length} states</span>
+              <span>best {best.state} <b style={{ color: warColor(best.war) }}>{fmtWar(best.war)}</b></span>
+              <span>worst {worst.state} <b style={{ color: warColor(worst.war) }}>{fmtWar(worst.war)}</b></span>
+            </div>
+          );
+        })()}
+      </CandidateRaceRow>
+    );
+  }
 
-                        <div className="flex items-center gap-3">
-                          <div className="flex-1 h-2 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
-                            <div className="h-full float-left" style={{ width: `${dWidth}%`, background: "#1b408c" }} />
-                            <div className="h-full float-left" style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
-                          </div>
-                          <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: oppColor }}>
-                            {oppLabel} {oppPct.toFixed(1)}%
-                          </span>
-                          <span className="text-xs font-bold tabular-nums shrink-0" style={{ color: entryAccent }}>
-                            {partyLabel(entry.party)[0]} {pct.toFixed(1)}%
-                          </span>
-                          <span className="text-xs tabular-nums shrink-0" style={{ color: entryAccent }}>
-                            {isPresident && ev != null ? `${ev} EV` : won ? `+${margin}` : `-${margin}`}
-                          </span>
-                        </div>
-
-                        {entryWar.length === 1 && (() => {
-                          const w = entryWar[0];
-                          return (
-                            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
-                              <span title="Generic vs generic: the seat's lean plus the year's environment, incumbency and structural money">Expected <b style={{ color: marginColor(w.expected) }}>{fmtMargin(w.expected)}</b></span>
-                              <span title="Expected, adjusted for this specific opponent's own effect">vs opponent <b style={{ color: marginColor(w.vsOpp) }}>{fmtMargin(w.vsOpp)}</b></span>
-                              <span title="Wins Above Replacement: actual margin minus vs-opponent, signed toward this candidate">WAR <b className="rounded px-1.5 py-0.5" style={{ color: warColor(w.war), background: warBg(w.war) }}>{fmtWar(w.war)}</b></span>
-                            </div>
-                          );
-                        })()}
-                        {entryWar.length > 1 && (() => {
-                          const avg = entryWar.reduce((t, r) => t + r.war, 0) / entryWar.length;
-                          const best = entryWar.reduce((b, r) => (r.war > b.war ? r : b));
-                          const worst = entryWar.reduce((b, r) => (r.war < b.war ? r : b));
-                          return (
-                            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
-                              <span title="Presidential WAR is scored state by state; this is the average over the states">WAR <b className="rounded px-1.5 py-0.5" style={{ color: warColor(avg), background: warBg(avg) }}>{fmtWar(avg)}</b> avg across {entryWar.length} states</span>
-                              <span>best {best.state} <b style={{ color: warColor(best.war) }}>{fmtWar(best.war)}</b></span>
-                              <span>worst {worst.state} <b style={{ color: warColor(worst.war) }}>{fmtWar(worst.war)}</b></span>
-                            </div>
-                          );
-                        })()}
-                      </div>
-                    );
-    })();
+  // A past state legislative general, in the same layout minus the model figures (no WAR is
+  // scored for these races) and the fundraising line.
+  function renderLeg(race: StateLegRace, i: number) {
+    const pctOf = (v: number | null) => (race.totalVotes && v != null ? (v / race.totalVotes) * 100 : null);
+    const contestants: Contestant[] = [
+      { name: candidate.name, party: race.party, partyTag: legPartyTag(race.party, race.partyLabel), self: true, incumbent: race.incumbent, won: race.winner,
+        votes: race.votes, pct: race.share ?? pctOf(race.votes), note: race.writeIn ? "write-in" : undefined },
+      ...race.others.map((o): Contestant => ({
+        name: o.name, party: o.party, partyTag: legPartyTag(o.party, o.partyLabel), href: `/candidates/${o.slug}`, incumbent: o.incumbent, won: o.winner,
+        votes: o.votes, pct: pctOf(o.votes), note: o.writeIn ? "write-in" : undefined,
+      })),
+    ];
+    const two = (race.demVotes ?? 0) + (race.repVotes ?? 0);
+    return (
+      <CandidateRaceRow key={`leg-${i}`} year={race.year} won={race.winner} href={race.href}
+        title={`${race.stateName} ${race.chamberLabel} · ${race.districtShort}${race.post ? ` (${race.post})` : ""}`}
+        badges={<>
+          {race.uncontested && <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>Unopposed</span>}
+          {race.seats != null && race.seats > 1 && <span className="text-[10px] shrink-0" style={{ color: "var(--app-text-very-muted)" }}>{race.seats} seats</span>}
+          {race.era !== "current" && <span className="text-[10px] shrink-0" style={{ color: "var(--app-text-very-muted)" }}>{race.eraLabel}</span>}
+        </>}
+        contestants={contestants.sort(byVotes)} demShare={two > 0 ? ((race.demVotes ?? 0) / two) * 100 : null} margin={race.noCount ? null : race.margin}>
+        {race.noCount && <div className="mt-2 text-xs italic" style={{ color: "var(--app-text-muted)" }}>Declared elected without a vote: the state printed no count for this race.</div>}
+      </CandidateRaceRow>
+    );
   }
 }

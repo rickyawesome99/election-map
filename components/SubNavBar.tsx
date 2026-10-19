@@ -55,7 +55,7 @@ function subscribeToStorage(onChange: () => void): () => void {
   return () => window.removeEventListener("storage", onChange);
 }
 
-/** The tab strip: in the sub-bar under the header below xl, inline in the header from xl up. */
+/** The tab strip: in the sub-bar under the header below lg, inline in the header from lg up. */
 export function NavTabs({ variant }: { variant: "bar" | "header" }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -86,7 +86,7 @@ export function NavTabs({ variant }: { variant: "bar" | "header" }) {
     return () => window.cancelAnimationFrame(frame);
   }, [updateIndicator]);
 
-  // resize also covers crossing the xl breakpoint, where the hidden copy measured zero.
+  // resize also covers crossing the lg breakpoint, where the hidden copy measured zero.
   useEffect(() => {
     window.addEventListener("resize", updateIndicator);
     return () => window.removeEventListener("resize", updateIndicator);
@@ -98,10 +98,10 @@ export function NavTabs({ variant }: { variant: "bar" | "header" }) {
   }, [activeTab, variant]);
 
   const navClass = variant === "header"
-    ? "relative hidden h-full min-w-0 items-stretch gap-0.5 xl:flex"
+    ? "relative hidden h-full min-w-0 items-stretch gap-0.5 lg:flex"
     : "scrollbar-none relative flex min-w-0 gap-1 overflow-x-auto overflow-y-hidden";
   const tabClass = variant === "header"
-    ? "relative z-10 flex shrink-0 items-center whitespace-nowrap px-3 text-sm font-semibold transition-colors duration-150"
+    ? "relative z-10 flex shrink-0 items-center whitespace-nowrap px-2 text-sm font-semibold xl:px-3 transition-colors duration-150"
     : "relative z-10 shrink-0 px-3 py-3 text-sm font-semibold transition-colors duration-150 sm:px-3.5";
 
   return (
@@ -150,7 +150,7 @@ export function NavTabs({ variant }: { variant: "bar" | "header" }) {
   );
 }
 
-/** Below xl: the tab bar under the sticky header. Hidden from xl up, where the header carries the tabs. */
+/** Below lg: the tab bar under the sticky header. Hidden from lg up, where the header carries the tabs. */
 export default function SubNavBar() {
   const pathname = usePathname();
 
@@ -189,7 +189,7 @@ export default function SubNavBar() {
 
   return (
     <div
-      className="absolute inset-x-0 top-full z-0 xl:hidden"
+      className="absolute inset-x-0 top-full z-0 lg:hidden"
       style={{
         transform: open ? "translateY(0)" : "translateY(-100%)",
         transition: "transform 220ms cubic-bezier(0.4, 0, 0.2, 1)",

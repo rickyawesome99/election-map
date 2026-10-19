@@ -52,6 +52,8 @@ export function TplMatrix({ years: allYears, offices, cellFor, selection, onSele
   const chip = selection.year === "all" ? `All ${officeLabel(String(selection.type))} races` : selection.type === "all" ? `All ${selection.year} races` : `${selection.year} · ${officeLabel(selection.type)}`;
   // More than five columns: phones drop the R+/D+ on the WRS too.
   const crowded = years.length > 5;
+  // Odd-year states (NJ, VA…) carry up to ten columns; the serif year totals step down so they don't collide.
+  const dense = years.length > 7;
 
   return (
     <div>
@@ -78,7 +80,7 @@ export function TplMatrix({ years: allYears, offices, cellFor, selection, onSele
                     <span className="block text-[11px] font-bold sm:text-xs" style={{ color: "var(--app-text-muted)" }}>
                       <span className="sm:hidden">&rsquo;{String(y.year).slice(2)}</span><span className="hidden sm:inline">{y.year}</span>
                     </span>
-                    <span className="block whitespace-nowrap text-[13px] font-bold leading-tight sm:text-[1.35rem]" style={{ fontFamily: "var(--font-serif)", color: marginColor(y.WRS) }}>
+                    <span className={`block whitespace-nowrap text-[13px] font-bold leading-tight ${dense ? "sm:text-[0.95rem] lg:text-[1.1rem]" : "sm:text-[1.35rem]"}`} style={{ fontFamily: "var(--font-serif)", color: marginColor(y.WRS) }}>
                       <Margin v={y.WRS} bareOnPhone={crowded} />
                     </span>
                     <span className="mx-auto mt-1 block h-1 w-4/5 overflow-hidden rounded-sm sm:w-3/5" style={{ background: "var(--app-tab-bg)" }}>

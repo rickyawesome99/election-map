@@ -72,6 +72,8 @@ export type StateLegRace = {
   isCurrent: boolean;
   writeIn?: boolean;
   canceledGeneral?: boolean;
+  /** A special election for the rest of a vacated term (2026: data-entry/state-leg-specials-2026.csv). */
+  special?: boolean;
 };
 
 export type StateLegCandidatePage = {
@@ -395,8 +397,9 @@ function buildIndex() {
               ...raceBase(d, key), year: electionYear, era: "current", eraLabel: "current map",
               party: c.party, partyLabel: c.partyLabel, votes: null, share: null, demVotes: null, repVotes: null, totalVotes: null, margin: null,
               noCount: false, uncontested: false, incumbent: !!c.incumbent, winner: null, post: c.post, seats: entry.seats ?? d?.seats,
-              others: real.filter((o) => o !== c).map((o) => ({ name: o.name, party: o.party, partyLabel: o.partyLabel, votes: null, winner: null, incumbent: !!o.incumbent, slug: stateLegCandidateSlug(o.name, abbr), writeIn: o.writeIn })),
-              isCurrent: true, writeIn: c.writeIn, canceledGeneral: c.canceledGeneral,
+              // A special beside a regular race (West Virginia) is its own contest: only its own field.
+              others: real.filter((o) => o !== c && !!o.special === !!c.special).map((o) => ({ name: o.name, party: o.party, partyLabel: o.partyLabel, votes: null, winner: null, incumbent: !!o.incumbent, slug: stateLegCandidateSlug(o.name, abbr), writeIn: o.writeIn })),
+              isCurrent: true, writeIn: c.writeIn, canceledGeneral: c.canceledGeneral, ...(c.special ? { special: true } : {}),
             });
           }
         }

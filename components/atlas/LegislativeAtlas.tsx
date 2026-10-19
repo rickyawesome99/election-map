@@ -88,13 +88,15 @@ const FLIP_LEGEND = { label: "Projected flip", bg: flipBackground("#6e7781") };
 
 /** The box grid's hover card for one district under the current color mode. */
 function boxTip(d: AtlasDistrict, mode: ColorMode, year: number | null, electionYear: number): BoxTip {
-  const heading = d.label;
+  // A 2026 special: the whole race ("… Special"), or one seat beside the regular race (West Virginia).
+  const special = d.candidates2026?.special ? (d.candidates2026.candidates.every((c) => c.special) ? " Special" : " + Special") : "";
+  const heading = mode === "projection" ? `${d.label}${special}` : d.label;
   if (mode === "projection") {
     const pr = d.projection;
     const field = d.candidates2026?.candidates ?? [];
     if (!pr || pr.contest === "not-up") return { heading, lines: [{ label: `Not on the ${electionYear} ballot`, value: d.nextElection ? `next ${d.nextElection}` : undefined }] };
     const lines: BoxTipLine[] = field.length
-      ? field.map((c) => ({ label: c.name, color: PARTY_TEXT[c.party], sub: [c.post ? `pos. ${c.post}` : "", c.incumbent ? "inc." : "", c.writeIn ? "write-in" : ""].filter(Boolean).join(" · ") || undefined, value: c.party === "O" ? (c.partyLabel ?? "Other").replace(/ Party$/, "") : c.party }))
+      ? field.map((c) => ({ label: c.name, color: PARTY_TEXT[c.party], sub: [c.post === "Special" ? "special" : c.post ? `pos. ${c.post}` : "", c.incumbent ? "inc." : "", c.writeIn ? "write-in" : ""].filter(Boolean).join(" · ") || undefined, value: c.party === "O" ? (c.partyLabel ?? "Other").replace(/ Party$/, "") : c.party }))
       : [{ label: "No candidates listed yet" }];
     const flip = projectedFlip(d);
     if (flip) lines.push({ label: "Projected flip", value: `${flip.from} → ${flip.to}`, color: PARTY_TEXT[flip.to] });
@@ -440,7 +442,7 @@ export default function LegislativeAtlas({
         fill[d.key] = SPLIT_FILL;
         tip[d.key] = [{ label: "Every seat decided by the field", value: `${pr.guaranteed.dem} D · ${pr.guaranteed.rep} R` }, ...(pr.lean != null ? [{ label: "Lean", value: fmtM(pr.lean) }] : [])];
       } else {
-        tip[d.key] = [{ label: "No projection", value: pr.contest === "other" ? "nonpartisan or no major-party field" : "no candidates listed" }];
+        tip[d.key] = [{ label: "No projection", value: pr.contest === "other" ? "no major-party field" : "no candidates listed" }];
       }
     }
     // Stripe the seats projected to change hands over their projected colour.

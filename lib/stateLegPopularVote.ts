@@ -5,7 +5,7 @@ import { stateLegResults, type StateLegDistrictResult } from "@/data/stateLegRes
 import { stateLegPresByEra } from "@/data/stateLegPresByEra";
 import { stateLegPres2024 } from "@/data/stateLegPres2024";
 import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";
-import { stateLegDistricts, UNICAMERAL_STATES, type Chamber, type StateLegDistrict } from "@/data/stateLegDistricts";
+import { stateLegDistricts, type Chamber, type StateLegDistrict } from "@/data/stateLegDistricts";
 import { stateLegCalendar } from "@/data/stateLegCalendar";
 import { indexByNormalizedKey, isUnassignedResultKey, lookupByDistrictCode } from "@/lib/stateLegDistrictKey";
 import { compositeShares, projectChamber, projectDistrict, STATE_LEG_FORECAST_CONSTANTS as FC, type DistrictProjection } from "@/lib/stateLegForecast";
@@ -403,7 +403,6 @@ export function projectChamberPopularVote(abbr: string, chamber: Chamber, opts: 
 }
 
 function build(abbr: string, chamber: Chamber, year: number, opts: PopularVoteOptions): ChamberPopularVote | null {
-  if (UNICAMERAL_STATES.has(abbr)) return null;   // nonpartisan: no D/R vote to project
   const roster = stateLegDistricts[abbr]?.[chamber] ?? [];
   if (roster.length === 0) return null;
   const levels = opts.levels ?? liveLevels();

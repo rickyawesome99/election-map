@@ -5,14 +5,11 @@ import { usePathname } from "next/navigation";
 import AppHeader from "./AppHeader";
 import SubNavBar, { NavTabs } from "./SubNavBar";
 import PendingPage from "./PendingPage";
-import BackButton from "./BackButton";
 import { refreshSafariChrome, syncThemeColor, useDarkMode } from "@/lib/useDarkMode";
 import { pendingKindFor, setPendingNav, usePendingNav } from "@/lib/navPending";
 
 export default function AppShell() {
   const pathname = usePathname();
-  const isForecastDetailPage = pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/") || pathname.startsWith("/president/") || pathname.startsWith("/states/") || pathname.startsWith("/historical/");
-  const showBack = !isForecastDetailPage && pathname.split("/").filter(Boolean).length > 1;
   const darkMode = useDarkMode();
   const pending = usePendingNav();
 
@@ -89,7 +86,6 @@ export default function AppShell() {
         <div className="relative z-10">
           <AppHeader
             darkMode={darkMode}
-            back={showBack ? <BackButton /> : undefined}
             nav={<Suspense fallback={null}><NavTabs variant="header" /></Suspense>}
           />
         </div>
@@ -97,9 +93,9 @@ export default function AppShell() {
           <SubNavBar />
         </Suspense>
       </div>
-      {/* SubNavBar overlays this space so hiding it never shifts the page. From xl up the tabs
+      {/* SubNavBar overlays this space so hiding it never shifts the page. From lg up the tabs
           sit in the header and the bar (and this space) is gone. */}
-      <div aria-hidden="true" className="h-[45px] xl:hidden" />
+      <div aria-hidden="true" className="h-[45px] lg:hidden" />
       {/* While the next page loads, a greyed outline of it covers the old one so the switch
           reads as immediate. Sits under the sticky header (z-50), which stays live. */}
       {pending && <PendingPage nav={pending} />}

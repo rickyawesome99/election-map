@@ -2,5 +2,716 @@
  "state": "OR",
  "cycle": 2024,
  "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
- "dataThrough": "12/31/2024"
+ "dataThrough": "12/31/2024",
+ "house": {
+  "1": [
+   {
+    "name": "Elect Bret Cecil",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7591,
+    "expenditures": null
+   },
+   {
+    "name": "Court Boice for Oregon",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 89497.58,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "Friends of Virgle Osborne",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 127190.11,
+    "expenditures": null
+   },
+   {
+    "name": "August Warren for HD2",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2255,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "Yunker for State Representative",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15634.81,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Friends of Richard Chasm",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 19966.67,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Committee to Elect Pam Marsh",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 97105,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Katherine Green",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1100,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Committee to Elect Lilia Caballero",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 22809.67,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Kim Wallan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 122400,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Friends of John Lively",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 220533.02,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Friends of Lisa Fragala",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 224298.27,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Gomberg for State Rep",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 166795.9,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Emmons for Oregon",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 18631.66,
+    "expenditures": null
+   },
+   {
+    "name": "Harbick for Oregon",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 195628.24,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Friends of Nancy Nathanson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 144873.91,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Friends of Julie Fahey",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 801612.79,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Friends of Shelly Boshart Davis",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 424746.05,
+    "expenditures": null
+   },
+   {
+    "name": "Terrence Virnig Dist 15",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14404.99,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "Ed Diehl for Oregon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 141890.41,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Committee to Elect Rick Lewis",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 39840,
+    "expenditures": null
+   },
+   {
+    "name": "Karyssa Dow for Oregon",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6604,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Friends of Tom Andersen",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 414907.23,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Friends of Paul Evans",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 295708.51,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Kevin Scott Chambers",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6252.19,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Mannix for Oregon PAC",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1106718.28,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Lesly Munoz for Oregon",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 574673.44,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Friends of Anna Scharf",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 125427.17,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Kriss Wright",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Committee to Elect Lucetta Elmer",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 211916,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Bob Niemeyer Campaign",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 200,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Ben Bowman",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 638487.22,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Ken Helm for Oregon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 79550,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Friends of Susan McLain",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 93316.9,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Nathan Sosa for Oregon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 95302.24,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Andy Davis for Oregon",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 109670.12,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "Team Shannon Jones Isadore",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 179810.36,
+    "expenditures": null
+   },
+   {
+    "name": "Busse For 33",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 2272.13,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "Friends of Daniel Martin",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Chaichi for Oregon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 127878.9,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "Friends of Hai Pham",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 178236.9,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "Friends of Jules Walters",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 133460.55,
+    "expenditures": null
+   },
+   {
+    "name": "Ben Edtl for the People",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 22795.66,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Friends of Daniel Nguyen",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 123575,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "Aimee Reiner and Friends",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 535794.68,
+    "expenditures": null
+   },
+   {
+    "name": "Committee to Elect April Dobson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 807252.5,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Friends of Steve Newgard",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Annessa Hartman for Oregon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 641615.8,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "Mark Gamba for Oregon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 126678.06,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "Friends of Rob Nosse",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 317244.5,
+    "expenditures": null
+   }
+  ],
+  "43": [
+   {
+    "name": "Tawna Sanchez for Oregon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 298465.35,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "Friends of Travis Nelson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 109195.02,
+    "expenditures": null
+   }
+  ],
+  "45": [
+   {
+    "name": "Friends of Thuy Tran",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 112118.9,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "Friends of Willy Chotzen",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 222251.2,
+    "expenditures": null
+   }
+  ],
+  "47": [
+   {
+    "name": "Friends of Andrea Valderrama",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 122412.28,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "Friends of John Masterman",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 603101.47,
+    "expenditures": null
+   }
+  ],
+  "49": [
+   {
+    "name": "Elect Zach Hudson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 403516.36,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "Friends of Christine Drazan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 490936.35,
+    "expenditures": null
+   }
+  ],
+  "53": [
+   {
+    "name": "Friends of Em Levy",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 811950.49,
+    "expenditures": null
+   }
+  ],
+  "56": [
+   {
+    "name": "Friends of Emily McIntire",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 116013.21,
+    "expenditures": null
+   }
+  ],
+  "57": [
+   {
+    "name": "Committee to Re-Elect Greg Smith",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 217744.65,
+    "expenditures": null
+   }
+  ],
+  "58": [
+   {
+    "name": "Friends of Bobby Levy",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 91193.27,
+    "expenditures": null
+   }
+  ],
+  "60": [
+   {
+    "name": "Mark Owens for Oregon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 241083.26,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "1": [
+   {
+    "name": "Friends of David Brock Smith",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 382821.8,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "Noah Robinson for Oregon Senate",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 215830.8,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Tracy Thompson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 915,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Dick Anderson for Oregon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 718880.23,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Jo Beaudreau",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 131612.83,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Friends of Fred Girod",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 134605,
+    "expenditures": null
+   },
+   {
+    "name": "Mike Ashland for Senate",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Starr Leadership Fund",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 254804.4,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Kate Lieber for State Senate",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 577251.37,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Campos for Oregon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 82508,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Brian E. Pierson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 26948,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Kathleen Taylor for Oregon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 430401.5,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Friends of Lew Frederick",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 128142.29,
+    "expenditures": null
+   },
+   {
+    "name": "Michael Saperstein for Senate",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4507,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Friends of Khanh Pham",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 264327.43,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Friends of Chris Gorsek",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1727016.35,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Team Broadman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1166550.51,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Committee to Elect Dennis Linthicum",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 334317.58,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Friends of Todd Nash",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 233862.9,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Mike McLane for Oregon",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 298511.94,
+    "expenditures": null
+   }
+  ]
+ }
 }

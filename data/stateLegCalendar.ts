@@ -749,7 +749,7 @@ export const stateLegCalendar: Record<string, Partial<Record<Chamber, StateLegCa
   "senate": {
    "termYears": 4,
    "staggered": true,
-   "frequency": "Staggered: ~10-11 of 21 seats every 2 years (4-year terms, reset by redistricting)",
+   "frequency": "Staggered: ~10-11 of 21 seats every 2 years (4-year terms)",
    "electionYears": [
     2016,
     2018,
@@ -857,7 +857,7 @@ export const stateLegCalendar: Record<string, Partial<Record<Chamber, StateLegCa
     "2018": 22,
     "2020": 21,
     "2022": 40,
-    "2024": 18
+    "2024": 20
    },
    "eras": [
     {
@@ -1345,7 +1345,7 @@ export const stateLegCalendar: Record<string, Partial<Record<Chamber, StateLegCa
    "termYears": 4,
    "termPattern": "2-4-4 (each district's sequence set by lot after each redistricting)",
    "staggered": true,
-   "frequency": "Staggered on a 4-4-2/4-2-4/2-4-4 decade pattern (seats up per cycle vary, e.g. 39 of 59 in 2026)",
+   "frequency": "Staggered 2-4-4 term cycles; seats up vary (39 of 59 in 2026)",
    "electionYears": [
     2016,
     2018,
@@ -1537,7 +1537,7 @@ export const stateLegCalendar: Record<string, Partial<Record<Chamber, StateLegCa
   "senate": {
    "termYears": 4,
    "staggered": false,
-   "frequency": "All 40 seats elected together every 4 years (offset from the governor's cycle)",
+   "frequency": "All 40 seats elected together every 4 years, off the governor's cycle",
    "electionYears": [
     2016,
     2020,
@@ -2080,7 +2080,7 @@ export const stateLegCalendar: Record<string, Partial<Record<Chamber, StateLegCa
   "senate": {
    "termYears": 4,
    "staggered": false,
-   "frequency": "All 38 seats elected together every 4 years, concurrent with governor (not staggered)",
+   "frequency": "All 38 seats elected together every 4 years, with the governor",
    "electionYears": [
     2018,
     2022
@@ -2177,7 +2177,7 @@ export const stateLegCalendar: Record<string, Partial<Record<Chamber, StateLegCa
    "termYears": 4,
    "termPattern": "4-4-2 (the 2-year term ends the decade so the next cycle follows redistricting)",
    "staggered": false,
-   "frequency": "All 67 seats elected together, mostly 4-year terms (one shortened 2-year term per decade right after redistricting)",
+   "frequency": "All together; 4-year terms (2-year after redistricting)",
    "electionYears": [
     2016,
     2020,
@@ -2985,7 +2985,7 @@ export const stateLegCalendar: Record<string, Partial<Record<Chamber, StateLegCa
    "termYears": 4,
    "termPattern": "2-4-4 (the 2-year term is the first cycle of each decade)",
    "staggered": false,
-   "frequency": "All 40 seats elected together (odd-year elections, on a 2-4-4-year decade cycle; next 2027)",
+   "frequency": "All 40 seats together in odd years, 2-4-4 decade cycle (next 2027)",
    "electionYears": [
     2017,
     2021,
@@ -3496,7 +3496,7 @@ export const stateLegCalendar: Record<string, Partial<Record<Chamber, StateLegCa
     "2018": 24,
     "2020": 25,
     "2022": 24,
-    "2024": 11
+    "2024": 24
    },
    "eras": [
     {
@@ -3674,7 +3674,7 @@ export const stateLegCalendar: Record<string, Partial<Record<Chamber, StateLegCa
   "senate": {
    "termYears": 4,
    "staggered": true,
-   "frequency": "Staggered: half of 50 seats every 2 years (4-year terms, odd/even districts alternate)",
+   "frequency": "Staggered: half of 50 seats every 2 years (4-year terms)",
    "electionYears": [
     2016,
     2018,
@@ -4650,7 +4650,7 @@ export const stateLegCalendar: Record<string, Partial<Record<Chamber, StateLegCa
   "senate": {
    "termYears": 4,
    "staggered": true,
-   "frequency": "Staggered: 16 even-numbered districts every presidential year, 17 odd-numbered every gubernatorial year (4-year terms)",
+   "frequency": "Staggered 4-year terms: 16 even districts in presidential years, 17 odd in midterms",
    "electionYears": [
     2016,
     2018,

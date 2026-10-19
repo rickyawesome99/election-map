@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ChamberSummaryData } from "@/lib/stateLegChamberSummary";
+import { CHAMBER_OUTCOMES, chamberOutcome, OUTCOME_LABEL, outcomeColor, type ChamberOutcome } from "@/lib/chamberOutcome";
 
 export const fmtChamberMargin = (m: number) => (Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
 const marginColor = (m: number) => (Math.abs(m) < 0.05 ? "var(--app-text-primary)" : m > 0 ? "var(--party-rep)" : "var(--party-dem)");
@@ -39,6 +40,25 @@ export function SeatLine({ dem, rep, oth, net, size = "text-[1.35rem] sm:text-[1
   );
 }
 
+function StatusTag({ o }: { o: ChamberOutcome }) {
+  return <span className="normal-case tracking-normal font-semibold" style={{ color: outcomeColor(o) ?? "var(--app-text-muted)" }}>{OUTCOME_LABEL[o]}</span>;
+}
+
+/** The chance of each majority status after the election, D side to R side; "No majority" only where it can happen. */
+function OutcomeOdds({ outcomes, supermajority }: { outcomes: Record<ChamberOutcome, number>; supermajority: number | null }) {
+  const shown = CHAMBER_OUTCOMES.filter((x) => (x !== "none" || outcomes.none > 0) && (supermajority != null || (x !== "dSuper" && x !== "rSuper")));
+  return (
+    <div className="mt-2.5 grid gap-x-3 gap-y-1 text-xs tabular-nums" style={{ gridTemplateColumns: `repeat(${shown.length}, minmax(0, 1fr))` }}>
+      {shown.map((x) => (
+        <div key={x} className="min-w-0">
+          <div className="truncate text-[10px] uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{OUTCOME_LABEL[x].replace("Supermajority", "Super.")}</div>
+          <div className="font-bold" style={{ color: outcomes[x] >= 0.005 ? outcomeColor(x) ?? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{fmtProb(outcomes[x])}</div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 /** The chamber's headline numbers: seats now, the 2026 projection, the corrected chamber margin, the projected popular vote, then the facts row. */
 export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryData; electionYear: number }) {
   const { seats, totalSeats, projection, margin, popularVote, upcoming, fieldStats, mapInfo, calendar, currentEra } = s;
@@ -47,8 +67,9 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
   );
   const barTotal = totalSeats ?? seats?.total ?? null;
   const projTotal = projection?.totalSeats ?? barTotal;
-  const superParty = projection?.supermajority != null && (projection.pDemSuper ?? 0) + (projection.pRepSuper ?? 0) > 0.005
-    ? ((projection.pDemSuper ?? 0) >= (projection.pRepSuper ?? 0) ? "D" : "R") : null;
+  const majority = projection?.majority ?? (barTotal ? Math.floor(barTotal / 2) + 1 : null);
+  const supermajority = projection?.supermajority ?? mapInfo?.supermajoritySeats ?? null;
+  const nowStatus = seats && majority != null ? chamberOutcome(seats.dem, seats.rep, majority, supermajority) : null;
   const stat = (label: string, value: React.ReactNode, sub?: React.ReactNode) => (
     <div className="min-w-0">
       <div className="text-[10px] sm:text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-very-muted)" }}>{label}</div>
@@ -62,27 +83,27 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
       <div className="grid gap-x-10 gap-y-6 md:grid-cols-2">
         {seats && (
           <section>
-            {heading("Current")}
+            {heading(<span className="flex items-baseline justify-between gap-2">Current{nowStatus && <StatusTag o={nowStatus} />}</span>)}
             <SeatLine dem={seats.dem} rep={seats.rep} oth={seats.oth} />
             {barTotal && <SeatBar dem={seats.dem} rep={seats.rep} total={Math.max(barTotal, seats.total)} />}
             <div className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-              after the {seats.year} election{barTotal && barTotal > seats.total ? ` · ${barTotal - seats.total} vacant` : ""}{projection?.majority ? ` · ${projection.majority} for a majority` : ""}
+              {"asOf" in seats ? `as of ${new Date(`${seats.asOf}-15`).toLocaleDateString("en-US", { month: "long", year: "numeric" })}` : `after the ${seats.year} election`}{barTotal && barTotal > seats.total ? ` · ${barTotal - seats.total} vacant` : ""}{projection?.majority ? ` · ${projection.majority} for a majority` : ""}
             </div>
           </section>
         )}
         {projection && projTotal && (
           <section>
-            {heading(`${electionYear} projection`)}
+            {heading(<span className="flex items-baseline justify-between gap-2">{`${electionYear} projection`}{majority != null && <StatusTag o={chamberOutcome(projection.favored.dem, projection.favored.rep, majority, supermajority)} />}</span>)}
             {/* Each seat's projected winner, summed: the count the chamber map shows. The range and the
                 control odds below come from the simulation. */}
             <SeatLine dem={projection.favored.dem} rep={projection.favored.rep} oth={projection.favored.oth} net={seats ? netSeats(projection.favored, seats) : null} />
             <SeatBar dem={projection.favored.dem} rep={projection.favored.rep} total={projTotal} />
             <div className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
               {projection.pDemControl == null ? `${projection.unprojected} seats unprojected` : (
-                <>80% range D {projection.lo80}–{projection.hi80} · <span style={{ color: "var(--app-text-muted)" }}>P(D control) {fmtProb(projection.pDemControl)}</span>
-                  {superParty && <> · P({superParty} supermajority) {fmtProb(superParty === "D" ? projection.pDemSuper : projection.pRepSuper)}</>}</>
+                <>80% range D {projection.lo80}–{projection.hi80} · <span style={{ color: "var(--app-text-muted)" }}>P(D control) {fmtProb(projection.pDemControl)}</span></>
               )}
             </div>
+            {projection.outcomes && <OutcomeOdds outcomes={projection.outcomes} supermajority={supermajority} />}
           </section>
         )}
         {margin && (

@@ -351,6 +351,7 @@ export const termYears = {
 
 // Seats whose next regular election is NOT lastElection + termYears, keyed `ABBR|chamber|district`.
 //
+// Special elections are not here: data-entry/state-leg-specials-2026.csv adds them at build time.
 // The only current entries are North Dakota House districts 9 and 15. Both are ODD-numbered, so
 // they belong to ND's 2022/2026/2030 class, but each held a court-ordered election in Nov 2024
 // (under the Jan 2024 VRA remedial map) for a 2-year UNEXPIRED term rather than a full 4-year one.

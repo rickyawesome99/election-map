@@ -16,6 +16,7 @@ import { seatsUpIn } from "@/lib/stateLegUpcoming";
 import { contest2026, fieldPersons, personKey, projectedSeatWinners } from "@/lib/stateLegAtlas";
 export { personKey };
 import { marginToRating } from "@/lib/colorScale";
+import { CHAMBER_OUTCOMES, chamberOutcome, type ChamberOutcome } from "@/lib/chamberOutcome";
 import { stateLegIndependents } from "@/data/stateLegIndependents";
 import { raceMoneyTerm, type RaceMoneyTerm } from "@/lib/stateLegMoneyModel";
 
@@ -189,7 +190,9 @@ export interface ChamberProjection {
   pRepControl: number | null;
   pDemSuper: number | null;
   pRepSuper: number | null;
-  /** Seats on the ballot with no projection (nonpartisan, no listed field, or no lean). */
+  /** Share of simulations ending in each majority status (lib/chamberOutcome.ts); null where control odds are withheld. */
+  outcomes: Record<ChamberOutcome, number> | null;
+  /** Seats on the ballot with no projection (no listed field, or no lean). */
   unprojected: number;
   sims: number;
 }
@@ -359,6 +362,9 @@ export interface ProjectOptions {
   moneyScale?: number;
   /** The backtest's money variants: strip past seat rows (default true). */
   moneyStrip?: boolean;
+  /** The backtest's environment sweep: β*·E × this in the forward term, and on past rows per envScaleRows (default 1). */
+  envScale?: number;
+  envScaleRows?: "none" | "L" | "all";
 }
 
 export function projectDistrict(abbr: string, chamber: Chamber, district: StateLegDistrict, opts: ProjectOptions = {}): DistrictProjection {
@@ -376,11 +382,13 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
   const currentIndex = indexByNormalizedKey(current);
   const presNow = lookupByDistrictCode(currentIndex, abbr, chamber, key);
   const rows: ProjectionRow[] = [];
+  const lambda = opts.envScale ?? 1, scaleRows = opts.envScaleRows ?? "L";
+  const betaP = scaleRows === "all" ? beta * lambda : beta, betaL = scaleRows === "none" ? beta : beta * lambda;
 
   for (const p of PRES_YEARS) {
     const v = presNow?.[p];
     if (!v || Number(p) > maxYear) continue;
-    const envPts = -(beta * (fit.E[Number(p)] ?? 0));
+    const envPts = -(betaP * (fit.E[Number(p)] ?? 0));
     rows.push({ year: Number(p), kind: "P", label: `${p} President`, era: "current", raw: v.margin, relocated: false, coverage: 1, presDelta: 0, incSign: 0, incPts: 0, envPts, moneyPts: 0, NM: v.margin + envPts, huber: 1, weight: 0 });
   }
 
@@ -425,7 +433,7 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
       if (p && pW > 0 && presNow?.[p]) presDelta = presNow[p]!.margin - pSum / pW;
       raw += presDelta;
     }
-    const envPts = -(beta * (fit.E[year] ?? 0));
+    const envPts = -(betaL * (fit.E[year] ?? 0));
     const incStrip = -incPts * incSign;
     rows.push({ year, kind: "L", label: `${year} ${chamber === "house" ? "House" : "Senate"}`, era, raw, relocated, coverage, presDelta, incSign, incPts: incStrip, envPts, moneyPts, NM: raw + incStrip + envPts - moneyPts, huber: 1, weight: 0 });
   }
@@ -492,7 +500,7 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
     const parties = new Set(inc.map((x) => x.party));
     incSign = parties.size === 1 ? ([...parties][0] === "R" ? 1 : [...parties][0] === "D" ? -1 : 0) : 0;
   }
-  const envPts = beta * E;
+  const envPts = beta * lambda * E;
   const sigma = Math.sqrt((opts.sigma ?? C.SIGMA) ** 2 + C.STATE_SHOCK ** 2 + (beta * sigmaE) ** 2);
   let contest: DistrictProjection["contest"] = !up ? "not-up" : c26 ? c26.status : "contested";
   // Seats on the ballot in this district: the roster's per-seat cycle (West Virginia's Senate
@@ -560,7 +568,7 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
     : contest === "uncontested-D" ? 1 : contest === "uncontested-R" ? 0
     : contest === "independent" ? (indep!.slot === "D" ? 0 : 1 - pIndep!)
     : contest === "contested" ? winProbabilityD(margin, sigma) : null;
-  const pI = contest === "independent" ? pIndep : contest === "other" && abbr !== "NE" ? 1 : null;
+  const pI = contest === "independent" ? pIndep : contest === "other" ? 1 : null;
   return {
     key, label: district.label, rows, lean, beta, envPts, incSign, incPts: incFwd, money, margin, sigma, pD,
     rating: margin == null || contest !== "contested" ? null : marginToRating(margin),
@@ -621,8 +629,8 @@ export function projectChamber(abbr: string, chamber: Chamber, year: number = el
       if (d.indep.slot === "D") decided.rep += seats - d.indep.seats; else decided.dem += seats - d.indep.seats;
       indepSim.push({ d, slot: d.indep.slot });
     }
-    else if (d.contest === "other" && abbr !== "NE") decided.oth += seats;   // no major party on the ballot
-    else unprojected += seats;   // nonpartisan Nebraska, no listed candidates, no lean: no projection
+    else if (d.contest === "other") decided.oth += seats;   // no major party on the ballot
+    else unprojected += seats;   // no listed candidates, no lean: no projection
   }
   // Control odds mean nothing when the unprojected seats alone could decide them.
   const controlKnown = unprojected < Math.max(1, Math.round(0.1 * (holdover.dem + holdover.rep + holdover.oth + seatsUp)));
@@ -673,6 +681,11 @@ export function projectChamber(abbr: string, chamber: Chamber, year: number = el
     pRepControl: majority == null || !controlKnown ? null : share((k) => repCounts[k] >= majority),
     pDemSuper: supermajority == null || !controlKnown ? null : share((k) => counts[k] >= supermajority),
     pRepSuper: supermajority == null || !controlKnown ? null : share((k) => repCounts[k] >= supermajority),
+    outcomes: majority == null || !controlKnown ? null : (() => {
+      const o = Object.fromEntries(CHAMBER_OUTCOMES.map((x) => [x, 0])) as Record<ChamberOutcome, number>;
+      for (let k = 0; k < sims; k += 1) o[chamberOutcome(counts[k], repCounts[k], majority, supermajority)] += 1 / sims;
+      return o;
+    })(),
     unprojected,
     sims,
   };

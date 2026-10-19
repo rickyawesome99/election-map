@@ -5181,7 +5181,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -10351,7 +10351,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -10419,7 +10419,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -10555,7 +10555,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -10589,7 +10589,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -10946,7 +10946,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Eleni DeGraw",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -10997,7 +10997,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Kate Farrar",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -11065,7 +11065,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Manny Sanchez",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -11099,7 +11099,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Dave DeFronzo",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -11133,7 +11133,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Amy Morrin Bello",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -11218,7 +11218,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Brandon Chafee",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -11286,7 +11286,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Nick Menapace",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -11354,7 +11354,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Aundré Bumgardner",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -11439,7 +11439,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Derell Wilson",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -11626,7 +11626,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jaime Foster",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -11915,7 +11915,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Michael DiGiovancarlo",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -12051,7 +12051,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Michael Quinn",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -12068,7 +12068,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jack Fazzino",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -12204,7 +12204,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Laurie Sweet",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -12323,7 +12323,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Moira Rader",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -12595,7 +12595,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Mary Welander",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -12663,7 +12663,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Frank Smith",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -12697,7 +12697,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Kaitlyn Shake",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -12901,7 +12901,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jenn Leeper",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -12986,7 +12986,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Kadeem Roberts",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -13003,7 +13003,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Ken Gucker",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -13088,7 +13088,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Dominique Johnson",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -13294,7 +13294,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "M.D. Rahman",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -13362,7 +13362,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Paul Honig",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -13447,7 +13447,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jan Hochadel",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -13566,7 +13566,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Martha Marx",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -17300,7 +17300,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -22805,7 +22805,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -22822,7 +22822,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -34926,7 +34926,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -34943,7 +34943,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -39118,7 +39118,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2023,
-        "nextElection": 2027,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -59319,7 +59319,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2023,
-        "nextElection": 2027,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -59438,7 +59438,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2023,
-        "nextElection": 2027,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -66965,7 +66965,9 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Dave Rustebakke",
-            "party": "R"
+            "party": "R",
+            "lastElection": 2024,
+            "nextElection": 2026
           },
           {
             "name": "Mike Beltz",
@@ -67091,7 +67093,9 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Kelby Timmons",
-            "party": "R"
+            "party": "R",
+            "lastElection": 2024,
+            "nextElection": 2026
           },
           {
             "name": "Roger Maki",
@@ -67431,7 +67435,9 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           },
           {
             "name": "Dustin McNally",
-            "party": "R"
+            "party": "R",
+            "lastElection": 2024,
+            "nextElection": 2026
           }
         ],
         "lastElection": 2024,
@@ -69042,7 +69048,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -77475,7 +77481,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -78722,7 +78728,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Tommy John Schiavoni",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -78739,7 +78745,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jodi Giglio",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -78756,7 +78762,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Joe DeStefano",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -78824,7 +78830,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jarett Gandolfo",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -78858,7 +78864,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Michael Durso",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -78909,7 +78915,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Keith Brown",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -78960,7 +78966,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jake Blumencranz",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -78977,7 +78983,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Danny Norber",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -79011,7 +79017,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Noah Burroughs",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -79232,7 +79238,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Khaleel Anderson",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -79283,7 +79289,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jessica González-Rojas",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -79300,7 +79306,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Larinda Hooks",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -79317,7 +79323,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Diana Moreno",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -79334,7 +79340,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Claire Valdez",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -79470,7 +79476,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Misha Novakhov",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -79487,7 +79493,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Alec Brook-Krasny",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -79538,7 +79544,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Lester Chang",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -79572,7 +79578,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Marcela Mitaynes",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -79776,7 +79782,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Sam Pirozzolo",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -79793,7 +79799,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Mike Tannousis",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -79946,7 +79952,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Alex Bores",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -80133,7 +80139,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Amanda Septimo",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -80269,7 +80275,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "MaryJane Shimsky",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -80286,7 +80292,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Chris Burdick",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -80303,7 +80309,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Matt Slater",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -80320,7 +80326,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Dana Levenberg",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -80337,7 +80343,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Pat Carroll",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -80422,7 +80428,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Brian Maher",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -80456,7 +80462,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Sarahana Shrestha",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -80490,7 +80496,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Anil Beephan",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -80524,7 +80530,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Scott Bendett",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -80558,7 +80564,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Gabriella Romero",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -80643,7 +80649,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Matt Simpson",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -80762,7 +80768,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Joe Angelino",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -80830,7 +80836,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Anna Kelles",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -80847,7 +80853,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "John Lemondes",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -80932,7 +80938,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jeff Gallahan",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -80966,7 +80972,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Andrea Bailey",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -80983,7 +80989,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Josh Jensen",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81000,7 +81006,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jen Lunsford",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81017,7 +81023,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Sarah Clark",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81034,7 +81040,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Demond Meeks",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81085,7 +81091,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Bill Conrad",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81153,7 +81159,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Paul Bologna",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81221,7 +81227,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Joe Sempolinski",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81255,7 +81261,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Andrew Molitor",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81291,7 +81297,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Mario Mattera",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81308,7 +81314,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Dean Murray",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81325,7 +81331,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Monica Martinez",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81342,7 +81348,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Steve Rhoads",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81376,7 +81382,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jack Martins",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81393,7 +81399,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Alexis Weik",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81410,7 +81416,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Patricia Canzoneri-Fitzpatrick",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81461,7 +81467,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Mike Gianaris",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81478,7 +81484,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jessica Ramos",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81546,7 +81552,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Steve Chan",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81563,7 +81569,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Julia Salazar",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81614,7 +81620,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Kevin Parker",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81665,7 +81671,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Andrew Lanza",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81682,7 +81688,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jabari Brisport",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81733,7 +81739,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Liz Krueger",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81750,7 +81756,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jose Serrano",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81784,7 +81790,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Robert Jackson",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81818,7 +81824,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Gustavo Rivera",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81852,7 +81858,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Andrea Stewart-Cousins",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81869,7 +81875,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jamaal Bailey",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81886,7 +81892,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Shelley Mayer",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81903,7 +81909,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Bill Weber",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -81937,7 +81943,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Pete Harckham",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81954,7 +81960,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Michelle Hinchey",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -81988,7 +81994,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jake Ashby",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -82005,7 +82011,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jim Tedisco",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -82022,7 +82028,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Dan Stec",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -82073,7 +82079,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Rachel May",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -82090,7 +82096,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Mark Walczyk",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -82124,7 +82130,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Peter Oberacker",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -82141,7 +82147,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Lea Webb",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -82158,7 +82164,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Joe Griffo",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -82175,7 +82181,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Pam Helming",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -82192,7 +82198,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Samra Brouk",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -82209,7 +82215,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Jeremy Cooney",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -82226,7 +82232,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "George Borrello",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -82243,7 +82249,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Tom O'Mara",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -82260,7 +82266,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Kristen Gonzalez",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -82277,7 +82283,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Patrick Gallivan",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -82311,7 +82317,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Rob Ortt",
-            "party": "O"
+            "party": "R"
           }
         ],
         "lastElection": 2024,
@@ -86584,7 +86590,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -87485,7 +87491,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Lesly Muñoz",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -97240,7 +97246,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -106565,7 +106571,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2025,
-        "nextElection": 2027,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },
@@ -108687,7 +108693,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           },
           {
             "name": "Mari Cordes",
-            "party": "O"
+            "party": "D"
           }
         ],
         "lastElection": 2024,
@@ -109080,7 +109086,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           },
           {
             "name": "Kate Logan",
-            "party": "D"
+            "party": "O"
           }
         ],
         "lastElection": 2024,
@@ -109769,7 +109775,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Joseph Parsons",
-            "party": "R"
+            "party": "I"
           }
         ],
         "lastElection": 2024,
@@ -110121,7 +110127,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Anne Donahue",
-            "party": "R"
+            "party": "I"
           },
           {
             "name": "Kenneth Goslant",
@@ -110706,7 +110712,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           },
           {
             "name": "Phil Baruth",
-            "party": "O"
+            "party": "D"
           },
           {
             "name": "Tanya Vyhovsky",
@@ -110900,7 +110906,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
         "incumbents": [
           {
             "name": "Andrew Perchlik",
-            "party": "O"
+            "party": "D"
           },
           {
             "name": "Ann Cummings",
@@ -116853,7 +116859,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
             "name": "Trenton Barnhart",
             "party": "R",
             "lastElection": 2024,
-            "nextElection": 2028
+            "nextElection": 2026
           }
         ],
         "lastElection": null,
@@ -117197,7 +117203,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
             "name": "Anne Charnock",
             "party": "R",
             "lastElection": 2024,
-            "nextElection": 2028
+            "nextElection": 2026
           },
           {
             "name": "Tom Takubo",
@@ -118369,7 +118375,7 @@ export const stateLegDistricts: Record<string, Partial<Record<Chamber, StateLegD
           }
         ],
         "lastElection": 2024,
-        "nextElection": 2028,
+        "nextElection": 2026,
         "margin": null,
         "rating": null
       },

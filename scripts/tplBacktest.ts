@@ -48,6 +48,11 @@
 //   lines of the time, both turnout-weighted; IMPUTED_LEG_ROW_WEIGHT 1 — 0.5 scored P 2.25 /
 //   S 4.89 / H 3.52, no better): P 2.24/2.22/2.53/1.93 · S 4.90/4.73/4.71/4.95 · H 3.41/2.58/2.73/2.79
 //     — President and Senate improve, the House average worsens; TPL_RAW_LEG=1 reproduces the old rows.
+//   Whole-chamber State Legislature rows (2026-10-19; a staggered chamber's not-up seats estimated
+//   as presidential margin + the contested seats' lean-dependent gap, LEG_NOT_UP_MODE "slope" k 10,
+//   and districts absent from MEDSL/Louisiana results imputed as unopposed): P 2.24/2.21/2.53/1.93
+//   · S 4.91/4.75/4.74/4.95 · H 3.42/2.60/2.73/2.79 — flat within noise (L is 0.07 of a year);
+//   the estimator itself is tested in scripts/stateLegNotUpBacktest.ts.
 // The 0.10 tolerance catches any real formula change, which moves these by far more.
 
 import fs from "node:fs";
@@ -167,9 +172,9 @@ function buildRows(): StateRow[] {
 
 const EXPECTED: Record<string, Record<string, number>> = {
   // reference values (imputed House rows at full share, 2026-09-22, measured in-harness): target → predictor → MAE
-  p24: { nmHold: 2.24, adjHold: 2.22, rawHold: 2.53, pres2020: 1.93 },
-  s24: { nmHold: 4.90, adjHold: 4.73, rawHold: 4.71, pres2020: 4.95 },
-  h24: { nmHold: 3.41, adjHold: 2.58, rawHold: 2.73, pres2020: 2.79 },
+  p24: { nmHold: 2.24, adjHold: 2.21, rawHold: 2.53, pres2020: 1.93 },
+  s24: { nmHold: 4.91, adjHold: 4.75, rawHold: 4.74, pres2020: 4.95 },
+  h24: { nmHold: 3.42, adjHold: 2.60, rawHold: 2.73, pres2020: 2.79 },
 };
 
 function runHoldout(): void {

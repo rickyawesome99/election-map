@@ -150,7 +150,7 @@ export default function LegislatureControlMap({ states, year }: { states: Legisl
               </div>
             )}
             {hovFlip && <div className="mt-0.5 text-[10px] font-semibold">Projected flip: {hovFlip.from ?? "no majority"} → {hovFlip.to}</div>}
-            {view === "now" && hov.now && <div className="mt-0.5 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>After the {hov.now.year} election</div>}
+            {view === "now" && hov.now && <div className="mt-0.5 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>As of {hov.now.year}</div>}
           </div>
         )}
 

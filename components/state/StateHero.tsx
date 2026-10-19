@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { HeroBody } from "@/lib/statePage";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import StateSwitcher from "@/components/StateSwitcher";
 
 /**
  * One body as a short seat bar: Democrats fill from the left, Republicans from the right, anyone
@@ -67,6 +68,9 @@ export default function StateHero({
       <div className={`${PAGE_CONTAINER} pt-6 pb-6 sm:pb-8`}>
         <div className="flex flex-row items-start justify-between gap-4 sm:gap-6">
           <div className="min-w-0">
+            <div className="mb-3">
+              <StateSwitcher id={abbr.toLowerCase()} />
+            </div>
             <div className="flex items-center gap-3">
               <h1
                 className="sm:whitespace-nowrap"

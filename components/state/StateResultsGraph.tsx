@@ -551,7 +551,7 @@ function BodyGraph({ label, entries, presidential, majority, halfLine, newMapYea
                 })}
                 {projection && (() => {
                   const p = projection;
-                  // Whatever the model can't call (independents, nonpartisan or empty fields) sits between the parties.
+                  // Whatever the model can't call (independents, empty fields) sits between the parties.
                   const rest = Math.max(0, (p.total ?? 0) - p.dem - p.rep);
                   const segs = [{ k: "dem" as const, v: p.dem }, { k: "oth" as const, v: rest }, { k: "rep" as const, v: p.rep }].filter((s) => s.v > 0);
                   let acc = 0;

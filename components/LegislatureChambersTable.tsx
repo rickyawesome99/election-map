@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import Segmented from "@/components/MarketSegmented";
+import { CHAMBER_OUTCOMES, OUTCOME_LABEL, outcomeColor, type ChamberOutcome } from "@/lib/chamberOutcome";
 
 // The /legislatures Chambers table. The page builds these slim rows on the server (the full
 // projections carry every district), and the table only sorts and draws them.
@@ -25,8 +26,11 @@ export type ChamberRow = {
   majority: number | null;
   pDem: number | null;
   pRep: number | null;
-  /** "D 10%", "<1%", "—". */
-  superLabel: string;
+  supermajority: number | null;
+  /** Majority status of the "Now" seats. */
+  nowStatus: ChamberOutcome | null;
+  /** Share of simulations ending in each status; null where control odds are withheld. */
+  outcomes: Record<ChamberOutcome, number> | null;
   unopposed: number;
   unprojected: number;
 };
@@ -66,7 +70,7 @@ function SeatsCell({ r }: { r: ChamberRow }) {
           { value: r.expectedDem, color: "var(--party-dem)", title: "Democratic" },
           { value: r.expectedOth, color: "var(--party-ind)", title: "Other" },
           { value: r.expectedRep, color: "var(--party-rep)", title: "Republican" },
-          // Seats with no projection (Nebraska's nonpartisan seats) keep the bar on the full chamber.
+          // Seats with no projection (no listed field, no lean) keep the bar on the full chamber.
           { value: Math.max(0, total - r.expectedDem - r.expectedOth - r.expectedRep), color: "var(--app-border)", title: "No projection" },
         ]} />
         {r.majority != null && <span aria-hidden className="absolute -bottom-[3px] -top-[7px] w-px" style={{ left: at(r.majority), background: "var(--app-text-primary)" }} />}
@@ -123,7 +127,27 @@ function OutlookCell({ r, pill = false }: { r: ChamberRow; pill?: boolean }) {
   return <span className="whitespace-nowrap font-semibold" style={{ color }}>{label}</span>;
 }
 
-/** The composition after the last election: D–R(–other). */
+/** The status the chamber is likeliest to end in, with its chance; the hover lists every status. */
+function ProjectedStatusCell({ r }: { r: ChamberRow }) {
+  if (!r.outcomes) return <span style={{ color: "var(--app-text-muted)" }}>—</span>;
+  const o = r.outcomes;
+  const top = CHAMBER_OUTCOMES.reduce((a, b) => (o[b] > o[a] ? b : a));
+  const title = CHAMBER_OUTCOMES.filter((x) => o[x] >= 0.0005).map((x) => `${OUTCOME_LABEL[x]} ${o[x] < 0.005 ? "<1%" : pct(o[x])}`).join(" · ")
+    + (r.supermajority != null ? ` (supermajority ${r.supermajority}${r.majority ? `, majority ${r.majority}` : ""})` : "");
+  return (
+    <span className="whitespace-nowrap tabular-nums" title={title}>
+      <span className="font-semibold" style={{ color: outcomeColor(top) ?? "var(--app-text-muted)" }}>{OUTCOME_LABEL[top]}</span>
+      <span style={{ color: "var(--app-text-muted)" }}> {o[top] > 0.995 ? ">99%" : pct(o[top])}</span>
+    </span>
+  );
+}
+
+function NowStatus({ s }: { s: ChamberOutcome | null }) {
+  if (!s) return null;
+  return <div className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: outcomeColor(s) ?? "var(--app-text-muted)" }}>{OUTCOME_LABEL[s]}</div>;
+}
+
+/** The chamber today: D–R(–other). */
 function NowSplit({ now }: { now: ChamberRow["now"] }) {
   if (!now) return <>—</>;
   return <><span style={{ color: "var(--party-dem)" }}>{now.dem}</span>–<span style={{ color: "var(--party-rep)" }}>{now.rep}</span>{now.oth ? <span style={{ color: "var(--party-ind)" }}>–{now.oth}</span> : null}</>;
@@ -176,9 +200,9 @@ export default function LegislatureChambersTable({ rows }: { rows: ChamberRow[] 
               </div>
               <div className="mt-3"><SeatsCell r={r} /></div>
               <div className="mt-3 grid grid-cols-4 gap-2 text-sm tabular-nums">
-                <div><MiniLabel>Now</MiniLabel><div className="mt-0.5 whitespace-nowrap font-semibold"><NowSplit now={r.now} /></div></div>
+                <div><MiniLabel>Now</MiniLabel><div className="mt-0.5 whitespace-nowrap font-semibold"><NowSplit now={r.now} /></div><NowStatus s={r.nowStatus} /></div>
                 <div><MiniLabel>Net</MiniLabel><div className="mt-0.5"><NetCell r={r} /></div></div>
-                <div><MiniLabel>Supermaj.</MiniLabel><div className="mt-0.5" style={{ color: "var(--app-text-muted)" }}>{r.superLabel}</div></div>
+                <div><MiniLabel>Projected</MiniLabel><div className="mt-0.5 text-xs"><ProjectedStatusCell r={r} /></div></div>
                 <div><MiniLabel>Unopp.</MiniLabel><div className="mt-0.5" style={{ color: "var(--app-text-muted)" }}>{r.unopposed}{r.unprojected ? <span className="text-xs"> · {r.unprojected} n/p</span> : null}</div></div>
               </div>
             </div>
@@ -190,7 +214,7 @@ export default function LegislatureChambersTable({ rows }: { rows: ChamberRow[] 
         <table className="w-full text-sm" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
           <thead>
             <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-              {[["Chamber", "left", ""], ["Seats up", "right", ""], ["Now", "right", ""], ["Projected seats · 80% range", "left", "min-w-[13rem]"], ["Outlook", "left", ""], ["Control odds", "right", ""], ["Net", "right", ""], ["Supermaj.", "right", ""], ["Unopp.", "right", ""]].map(([h, a, w]) => (
+              {[["Chamber", "left", ""], ["Seats up", "right", ""], ["Now", "right", ""], ["Projected seats · 80% range", "left", "min-w-[13rem]"], ["Outlook", "left", ""], ["Control odds", "right", ""], ["Net", "right", ""], ["Projected status", "right", ""], ["Unopp.", "right", ""]].map(([h, a, w]) => (
                 <th key={h} className={`whitespace-nowrap py-1.5 pr-3 text-[10px] font-semibold uppercase tracking-wider text-${a} ${w}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
               ))}
             </tr>
@@ -200,12 +224,12 @@ export default function LegislatureChambersTable({ rows }: { rows: ChamberRow[] 
               <tr key={r.key} style={{ borderBottom: "1px solid var(--app-border)" }}>
                 <td className="whitespace-nowrap py-2 pr-3 font-semibold"><Link href={r.href} className="hover:underline">{r.stateName} {r.label}</Link></td>
                 <td className="whitespace-nowrap py-2 pr-3 text-right">{r.seatsUp}<span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}> / {r.totalSeats ?? "—"}</span></td>
-                <td className="whitespace-nowrap py-2 pr-3 text-right"><NowSplit now={r.now} /></td>
+                <td className="whitespace-nowrap py-2 pr-3 text-right"><NowSplit now={r.now} /><NowStatus s={r.nowStatus} /></td>
                 <td className="py-2 pr-3"><SeatsCell r={r} /></td>
                 <td className="py-2 pr-3"><OutlookCell r={r} /></td>
                 <td className="whitespace-nowrap py-2 pr-3 text-right"><OddsCell d={r.pDem} r={r.pRep} /></td>
                 <td className="whitespace-nowrap py-2 pr-3 text-right"><NetCell r={r} /></td>
-                <td className="py-2 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{r.superLabel}</td>
+                <td className="py-2 pr-3 text-right"><ProjectedStatusCell r={r} /></td>
                 <td className="py-2 pr-0 text-right" style={{ color: "var(--app-text-muted)" }}>{r.unopposed}{r.unprojected ? <span title="seats with no projection"> · {r.unprojected} n/p</span> : null}</td>
               </tr>
             ))}

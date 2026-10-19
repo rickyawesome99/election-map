@@ -6,7 +6,8 @@
 //       npx tsx scripts/forwardBacktest.ts --money         (Phase 6: structural imputation of missing receipts vs the old zero)
 //       npx tsx scripts/forwardBacktest.ts --sept-money    (Phase 6: mid-September receipts vs full-cycle receipts; fits PARTIAL_CYCLE_GAP_SCALE)
 //       npx tsx scripts/forwardBacktest.ts --seat-status   (Phase 7: open-seat carryover, freshman effect, House incumbency sweep)
-//       npx tsx scripts/forwardBacktest.ts --dump          (per-race predictions CSV in the OS temp dir)
+//       npx tsx scripts/forwardBacktest.ts --lambda        (forward environment term × λ per office, fitted / pv / struct environments)
+//       npx tsx scripts/forwardBacktest.ts --dump         (per-race predictions CSV in the OS temp dir)
 //       npx tsx scripts/forwardBacktest.ts --env struct --emit   (write data/forecastCalibration.ts — the Calibration tables on /methodology)
 //
 // Predicts every eligible Senate / Governor race (and, where the district lines
@@ -559,6 +560,36 @@ if (ABLATE) {
       line += errs.length ? mean(errs).toFixed(2).padStart(9) : "        —";
     }
     console.log(line);
+  }
+}
+
+// --lambda: the forward environment term β*·E × λ per office, scored with no shift removed.
+// fitted = the oracle E(Y); pv = the actual House vote through the structural line (no polling
+// error); struct = the live rule from the mid-September generic ballot. The lean's own strip
+// (fitted on years ≤ Y−1) is untouched, so this is the forward response alone.
+if (argv.includes("--lambda")) {
+  const lambdas = [0.8, 0.9, 1, 1.1, 1.2, 1.4, 1.6];
+  console.log("\nEnvironment scale λ on the forward term — MAE (bias), no shift removed");
+  for (const mode of ["fitted", "pv", "struct"] as EnvMode[]) {
+    for (const office of OFFICES) {
+      for (const years of [YEARS, ...YEARS.map((y) => [y])]) {
+        const cells: string[] = [];
+        let n = 0, Es: string[] = [];
+        for (const lambda of lambdas) {
+          const res: number[] = [];
+          Es = [];
+          for (const Y of years) {
+            const E = envEstimate(mode, Y); if (E == null) continue;
+            Es.push(fmt(E, 2));
+            for (const x of predsByYear.get(Y)!) if (x.office === office) res.push(x.actual - predOf(x, lambda * E));
+          }
+          n = res.length;
+          cells.push(res.length ? `λ${lambda}: ${mean(res.map(Math.abs)).toFixed(2)} (${fmt(mean(res), 2)})` : `λ${lambda}: —`);
+        }
+        if (n === 0) continue;
+        console.log(`  ${mode.padEnd(6)} ${LABEL[office].padEnd(8)} ${(years.length > 1 ? "pooled" : String(years[0])).padEnd(6)} n ${String(n).padStart(4)}  E ${Es.join("/").padEnd(years.length > 1 ? 24 : 6)}  ${cells.join("  ")}`);
+      }
+    }
   }
 }
 
