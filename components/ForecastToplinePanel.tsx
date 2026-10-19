@@ -5,167 +5,119 @@ import { useState } from "react";
 import type { RaceType } from "@/data/forecastData";
 import type { AgreementSummary, ChamberTopline } from "@/lib/forecastComparison";
 
-// The top of /analysis/forecasts: one tabbed block holding the chamber toplines and, per chamber,
-// how far each forecast sits from ours. Tabs rather than four stacked tables, because only one of
-// them is ever being read at a time.
+// The top of /analysis/forecasts: one row per forecast, one chamber at a time. Each row is the
+// forecast's seat projection drawn as a stacked bar (Democrats from the left, Republicans from the
+// right, a rater's uncalled seats in amber between them), its control odds, and how many more
+// seats than us it hands the Democrats across the races both call. One chamber per tab keeps the
+// table narrow enough to read on a phone without sideways scrolling.
+
+export interface PanelSummary extends AgreementSummary {
+  url: string;
+}
 
 export interface PanelRow {
   id: string;
   name: string;
+  shortName: string;
   kind: "model" | "ratings";
   asOf: string;
   href: string;
   external: boolean;
-  t: Record<RaceType, ChamberTopline | null>;
-}
-
-export interface PanelSummary extends AgreementSummary {
-  name: string;
-  url: string;
+  t: ChamberTopline | null;
+  summary: PanelSummary | null; // null for ours
 }
 
 export interface PanelData {
-  toplineRows: PanelRow[];
-  summaries: Record<RaceType, PanelSummary[]>;
-  raceCounts: Record<RaceType, number>;
+  rows: Record<RaceType, PanelRow[]>;
   chamberSeats: Record<RaceType, number>;
   holdovers: { senate: { dem: number; rep: number }; governor: { dem: number; rep: number } };
   bands: string;
 }
 
-type Tab = "toplines" | RaceType;
-const TAB_LABEL: Record<Tab, string> = { toplines: "Chamber toplines", senate: "Senate", governor: "Governor", house: "House" };
-const TABS: Tab[] = ["toplines", "senate", "governor", "house"];
+const TABS: RaceType[] = ["house", "senate", "governor"];
+const TAB_LABEL: Record<RaceType, string> = { house: "House", senate: "Senate", governor: "Governors" };
+// Seats a party needs for control, for the marker on the bar (Senate: 51 for the Democrats, since
+// the Republican vice president breaks a 50–50 tie). Governors have no chamber to control.
+const MAJORITY: Partial<Record<RaceType, number>> = { house: 218, senate: 51 };
 
-const pct = (p: number | null | undefined) => (p == null ? "—" : `${Math.round(p * 100)}%`);
-const seats = (n: number | null | undefined) => (n == null ? "—" : String(Math.round(n)));
-const netSeats = (n: number) => (Number.isInteger(n) ? String(Math.abs(n)) : Math.abs(n).toFixed(1));
+const pct = (p: number) => `${Math.round(p * 100)}%`;
+const seats = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
+const netSeats = (n: number) => (Math.abs(n) < 0.01 ? "even" : `${n > 0 ? "D" : "R"}+${Number.isInteger(n) ? Math.abs(n) : Math.abs(n).toFixed(1)}`);
+const partyColor = (n: number) => (Math.abs(n) < 0.01 ? "var(--app-text-muted)" : n > 0 ? "var(--party-dem)" : "var(--party-rep)");
 
 function Ext({ href, external, children }: { href: string; external: boolean; children: React.ReactNode }) {
   if (!external) return <Link prefetch={false} href={href} className="hover:underline">{children}</Link>;
+  return <a href={href} target="_blank" rel="noopener noreferrer" className="hover:underline">{children}</a>;
+}
+
+function seatSplit(t: ChamberTopline | null, total: number) {
+  if (!t || t.demSeats == null) return null;
+  const toss = t.tossups ?? 0;
+  const rep = t.repSeats ?? total - t.demSeats - toss;
+  return { dem: t.demSeats, rep, toss };
+}
+
+function SeatBar({ t, total, majority }: { t: ChamberTopline | null; total: number; majority?: number }) {
+  const s = seatSplit(t, total);
+  if (!s) return <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>no seat projection</div>;
+  const w = (n: number) => `${(n / total) * 100}%`;
+  const label = `${seats(s.dem)} D – ${seats(s.rep)} R${s.toss ? `, ${s.toss} uncalled` : ""}${t?.derived ? " (counted from its race calls)" : ""}`;
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className="hover:underline">
-      {children}<span aria-hidden="true" style={{ color: "var(--app-text-very-muted)" }}> ↗</span>
-    </a>
+    <div className="relative h-5 w-full overflow-hidden rounded-sm" title={label} aria-label={label}
+      style={{ background: "color-mix(in srgb, var(--app-text-primary) 6%, transparent)" }}>
+      <div className="absolute inset-y-0 left-0" style={{ width: w(s.dem), background: "var(--party-dem)" }} />
+      {s.toss > 0 && <div className="absolute inset-y-0" style={{ left: w(s.dem), width: w(s.toss), background: "var(--rating-tossup)" }} />}
+      <div className="absolute inset-y-0 right-0" style={{ width: w(s.rep), background: "var(--party-rep)" }} />
+      {majority && <div className="absolute -inset-y-px w-0.5" style={{ left: w(majority - 0.5), background: "var(--app-bg)" }} />}
+      <span className="absolute inset-y-0 left-1 flex items-center text-[10px] font-bold sm:left-1.5 sm:text-[11px] tabular-nums text-white">{seats(s.dem)}</span>
+      {s.toss > 0 && s.toss / total > 0.06 && (
+        <span className="absolute inset-y-0 flex items-center justify-center text-[10px] font-bold tabular-nums text-white" style={{ left: w(s.dem), width: w(s.toss) }}>{s.toss}</span>
+      )}
+      <span className="absolute inset-y-0 right-1 flex items-center text-[10px] font-bold sm:right-1.5 sm:text-[11px] tabular-nums text-white">{seats(s.rep)}</span>
+    </div>
   );
 }
 
-const TH = ({ children, align = "left", title }: { children: React.ReactNode; align?: "left" | "center" | "right"; title?: string }) => (
-  <th scope="col" title={title} className={`whitespace-nowrap px-2 py-2 text-[10px] font-bold uppercase tracking-wider text-${align}`}
-    style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>{children}</th>
-);
-
-function ControlCell({ p }: { p: number | null }) {
+function Control({ p }: { p: number | null | undefined }) {
   if (p == null) return <span style={{ color: "var(--app-text-very-muted)" }}>—</span>;
   const dem = p >= 0.5;
   return <span className="font-semibold tabular-nums" style={{ color: dem ? "var(--party-dem)" : "var(--party-rep)" }}>{dem ? "D" : "R"} {pct(dem ? p : 1 - p)}</span>;
 }
 
-function SeatCell({ t, total }: { t: ChamberTopline | null; total: number }) {
-  if (!t || t.demSeats == null) return <span style={{ color: "var(--app-text-very-muted)" }}>—</span>;
-  const rep = t.repSeats ?? (t.tossups != null ? total - t.demSeats - t.tossups : total - t.demSeats);
+// Their seats minus ours as a bar out from a centre line, scaled to the widest gap in the chamber.
+function NetBar({ n, max }: { n: number; max: number }) {
+  const w = (Math.abs(n) / max) * 50;
   return (
-    <span className="tabular-nums whitespace-nowrap">
-      <span className="font-semibold" style={{ color: "var(--party-dem)" }}>{seats(t.demSeats)}</span>
-      <span style={{ color: "var(--app-text-very-muted)" }}> – </span>
-      <span className="font-semibold" style={{ color: "var(--party-rep)" }}>{seats(rep)}</span>
-      {t.tossups != null && t.tossups > 0 && (
-        <>
-          <span style={{ color: "var(--app-text-very-muted)" }}> – </span>
-          <span className="font-semibold" style={{ color: "var(--rating-tossup)" }} title={`${t.tossups} seats it will not call either way`}>{t.tossups}</span>
-        </>
-      )}
-    </span>
-  );
-}
-
-function ToplineTable({ rows, chamberSeats }: { rows: PanelRow[]; chamberSeats: Record<RaceType, number> }) {
-  return (
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse text-sm">
-        <thead>
-          <tr>
-            <TH>Forecast</TH><TH>Type</TH>
-            <TH align="center" title="Democratic seats, Republican seats, then in amber the seats a rater will not call either way">House seats</TH>
-            <TH align="center" title="Probability of controlling the House (218 seats)">House control</TH>
-            <TH align="center" title="Democratic seats, Republican seats, then in amber the seats a rater will not call either way">Senate seats</TH>
-            <TH align="center" title="Probability of controlling the Senate (Democrats need 51; a tie goes to the Republican vice president)">Senate control</TH>
-            <TH align="center" title="Democratic and Republican governorships after the election, including the 14 not on the ballot, then in amber the ones a rater will not call either way">Governors</TH>
-            <TH align="right">As of</TH>
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((r) => (
-            <tr key={r.id} style={{ borderBottom: "1px solid var(--app-border)", background: r.external ? undefined : "color-mix(in srgb, var(--app-text-primary) 4%, transparent)" }}>
-              <th scope="row" className="whitespace-nowrap px-2 py-1.5 text-left font-semibold"><Ext href={r.href} external={r.external}>{r.name}</Ext></th>
-              <td className="px-2 py-1.5 text-xs" style={{ color: "var(--app-text-muted)" }}>{r.kind}</td>
-              <td className="px-2 py-1.5 text-center"><SeatCell t={r.t.house} total={chamberSeats.house} /></td>
-              <td className="px-2 py-1.5 text-center"><ControlCell p={r.t.house?.pDemControl ?? null} /></td>
-              <td className="px-2 py-1.5 text-center"><SeatCell t={r.t.senate} total={chamberSeats.senate} /></td>
-              <td className="px-2 py-1.5 text-center"><ControlCell p={r.t.senate?.pDemControl ?? null} /></td>
-              <td className="px-2 py-1.5 text-center"><SeatCell t={r.t.governor} total={chamberSeats.governor} /></td>
-              <td className="px-2 py-1.5 text-right text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.asOf}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="flex items-center gap-1.5">
+      <div className="relative hidden h-2.5 w-16 shrink-0 sm:block lg:w-24">
+        <div className="absolute inset-y-0 left-1/2 w-px" style={{ background: "var(--app-border)" }} />
+        <div className="absolute inset-y-0" style={{
+          background: partyColor(n), width: `${w}%`,
+          ...(n > 0 ? { left: "50%", borderRadius: "0 2px 2px 0" } : { right: "50%", borderRadius: "2px 0 0 2px" }),
+        }} />
+      </div>
+      <span className="w-10 shrink-0 text-right text-[11px] font-semibold sm:w-11 sm:text-xs tabular-nums" style={{ color: partyColor(n) }}>{netSeats(n)}</span>
     </div>
   );
 }
 
-function AgreementTable({ summaries }: { summaries: PanelSummary[] }) {
-  const fmtLean = (d: number | null) => (d == null ? "—" : Math.abs(d) < 0.005 ? "even" : `${d > 0 ? "R" : "D"} ${Math.abs(d).toFixed(2)}`);
-  const fmtNet = (n: number) => (Math.abs(n) < 0.01 ? "even" : `${n > 0 ? "D" : "R"} +${netSeats(n)}`);
-  const sorted = [...summaries].sort((a, b) => b.netSeats - a.netSeats);
-  const max = Math.max(1, ...sorted.map((s) => Math.abs(s.netSeats)));
-  return (
-    <div className="overflow-x-auto">
-      <table className="w-full border-collapse text-sm">
-        <thead>
-          <tr>
-            <TH>Forecast</TH>
-            <TH align="right" title="Races both sides call">Races</TH>
-            <TH align="right" title="Our step minus theirs, averaged: R means our calls sit further toward the Republicans than theirs, D means further toward the Democrats">Our lean vs theirs</TH>
-            <TH align="center" title="Seats they hand the Democrats minus the seats we do, across the races both call. D means they are more generous to the Democrats than we are. A rater's Toss-up counts as half a seat to each party.">Their seats vs ours</TH>
-            <TH align="right" title="Races where they favor the Democrat and we favor the Republican">They D, we R</TH>
-            <TH align="right" title="Races where they favor the Republican and we favor the Democrat">They R, we D</TH>
-          </tr>
-        </thead>
-        <tbody>
-          {sorted.map((s) => {
-            const w = (Math.abs(s.netSeats) / max) * 50;
-            return (
-              <tr key={s.forecasterId} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                <th scope="row" className="whitespace-nowrap px-2 py-1.5 text-left font-semibold"><Ext href={s.url} external>{s.name}</Ext></th>
-                <td className="px-2 py-1.5 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{s.compared}</td>
-                <td className="px-2 py-1.5 text-right tabular-nums font-semibold" style={{ color: s.meanDelta == null || Math.abs(s.meanDelta) < 0.005 ? "var(--app-text-muted)" : s.meanDelta > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>{fmtLean(s.meanDelta)}</td>
-                <td className="px-2 py-1.5">
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-3 min-w-[6rem] flex-1">
-                      <div className="absolute inset-y-0 left-1/2 w-px" style={{ background: "var(--app-border)" }} />
-                      <div className="absolute inset-y-0" style={{
-                        background: s.netSeats > 0 ? "var(--party-dem)" : "var(--party-rep)", width: `${w}%`,
-                        ...(s.netSeats > 0 ? { left: "50%", borderRadius: "0 3px 3px 0" } : { right: "50%", borderRadius: "3px 0 0 3px" }),
-                      }} />
-                    </div>
-                    <span className="w-16 shrink-0 text-right text-xs font-semibold tabular-nums" style={{ color: Math.abs(s.netSeats) < 0.01 ? "var(--app-text-muted)" : s.netSeats > 0 ? "var(--party-dem)" : "var(--party-rep)" }}>{fmtNet(s.netSeats)}</span>
-                  </div>
-                </td>
-                <td className="px-2 py-1.5 text-right tabular-nums" style={{ color: s.theyDweR ? "var(--party-dem)" : "var(--app-text-very-muted)" }}>{s.theyDweR || "—"}</td>
-                <td className="px-2 py-1.5 text-right tabular-nums" style={{ color: s.theyRweD ? "var(--party-rep)" : "var(--app-text-very-muted)" }}>{s.theyRweD || "—"}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
-  );
-}
+const TH = ({ children, className = "", title }: { children?: React.ReactNode; className?: string; title?: string }) => (
+  <th scope="col" title={title} className={`whitespace-nowrap px-1.5 py-1.5 text-[10px] font-bold uppercase tracking-wider ${className}`}
+    style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>{children}</th>
+);
 
 export default function ForecastToplinePanel({ data }: { data: PanelData }) {
-  const [tab, setTab] = useState<Tab>("toplines");
-  const note = "mt-4 max-w-3xl text-xs leading-relaxed";
-  const style = (active: boolean) => ({
+  const [tab, setTab] = useState<RaceType>("house");
+  const total = data.chamberSeats[tab];
+  const rows = [...data.rows[tab]].sort((a, b) => {
+    const sa = seatSplit(a.t, total), sb = seatSplit(b.t, total);
+    const ka = sa ? sa.dem + sa.toss / 2 : (a.t?.pDemControl ?? -1) - 1000;
+    const kb = sb ? sb.dem + sb.toss / 2 : (b.t?.pDemControl ?? -1) - 1000;
+    return kb - ka;
+  });
+  const maxNet = Math.max(1, ...rows.map((r) => Math.abs(r.summary?.netSeats ?? 0)));
+  const hasControl = tab !== "governor";
+  const tabStyle = (active: boolean) => ({
     background: active ? "var(--app-text-primary)" : "transparent",
     color: active ? "var(--app-bg)" : "var(--app-text-muted)",
     border: "1px solid var(--app-border)",
@@ -173,45 +125,90 @@ export default function ForecastToplinePanel({ data }: { data: PanelData }) {
 
   return (
     <div>
-      <div className="flex flex-wrap items-center gap-x-1 gap-y-2 pb-4">
+      <div className="flex flex-wrap items-center gap-x-1 gap-y-2 pb-3" role="tablist" aria-label="Chamber">
         {TABS.map((t) => (
-          <button key={t} role="tab" aria-selected={tab === t} onClick={() => setTab(t)} className="rounded px-3 py-1 text-xs font-bold" style={style(tab === t)}>
+          <button key={t} role="tab" aria-selected={tab === t} onClick={() => setTab(t)} className="rounded px-3 py-1 text-xs font-bold" style={tabStyle(tab === t)}>
             {TAB_LABEL[t]}
-            {t !== "toplines" && <span className="font-normal opacity-70"> · {data.raceCounts[t]}</span>}
           </button>
         ))}
-        <span className="ml-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-          {tab === "toplines" ? "Control probabilities and seat counts as each forecast publishes them" : "How far each forecast sits from ours, race by race"}
+        <span className="ml-2 hidden text-xs sm:inline" style={{ color: "var(--app-text-very-muted)" }}>
+          {MAJORITY[tab] ? `Marker at ${MAJORITY[tab]} seats, the Democrats' majority line` : "Governorships after the election, all 50"}
         </span>
       </div>
 
-      {tab === "toplines" ? (
-        <>
-          <ToplineTable rows={data.toplineRows} chamberSeats={data.chamberSeats} />
-          <p className={note} style={{ color: "var(--app-text-very-muted)" }}>
-            Each model&rsquo;s seats are the projection it publishes itself, so the row matches its own site; models differ in what they
-            headline, some the seats they favor and some the middle of their simulated distribution, and the two run a few seats
-            apart. Where a forecast publishes no total &mdash; every rater, and a model that gives only control odds &mdash; the count is
-            taken from its own race calls, a model by which candidate it puts above 50% and a rater by its label, with the seats a
-            rater will not call either way shown separately. Ours is the seats we favor. Every count includes the seats not on the
-            ballot (Senate {data.holdovers.senate.dem} D – {data.holdovers.senate.rep} R, governors {data.holdovers.governor.dem} D – {data.holdovers.governor.rep} R).
-          </p>
-        </>
-      ) : (
-        <>
-          <AgreementTable summaries={data.summaries[tab]} />
-          <p className={note} style={{ color: "var(--app-text-very-muted)" }}>
-            <strong>Our lean vs theirs</strong> is the average distance between our call and theirs in steps, and <strong>their seats
-            vs ours</strong> is how many more seats they hand the Democrats than we do across the races both call &mdash; counted the same
-            way for everyone, so it will not always match the difference between the published totals. The scale runs Safe D, Likely D,
-            Lean D, Tilt D, Toss-up, Tilt R, Lean R, Likely R, Safe R. A rater&rsquo;s label is used as published (Solid counts as Safe).
-            A model&rsquo;s probability is banded on its favorite&rsquo;s chance: {data.bands}, and Toss-up below that. Our own call is the
-            site&rsquo;s rating, which is a band of the projected margin and has no Toss-up, so a race we call Tilt and a rater calls
-            Toss-up is one step apart. A forecast that lists only its competitive seats is taken to rate every other seat Safe for the
-            party ahead there.
-          </p>
-        </>
-      )}
+      <table className="w-full table-fixed border-collapse text-sm">
+        <colgroup>
+          <col className={hasControl ? "w-[7.5rem] sm:w-52 lg:w-72" : "w-[10.5rem] sm:w-56 lg:w-72"} />
+          <col />
+          {hasControl && <col className="w-[3.25rem] sm:w-20" />}
+          <col className="w-[2.9rem] sm:w-28 lg:w-36" />
+          <col className="hidden w-20 md:table-column" />
+          <col className="hidden w-14 md:table-column" />
+        </colgroup>
+        <thead>
+          <tr>
+            <TH className="text-left">Forecast</TH>
+            <TH className="text-left" title="Democratic seats from the left, Republican from the right; in amber, seats a rater will not call either way">Seats</TH>
+            {hasControl && <TH className="text-right" title="Probability of controlling the chamber">Control</TH>}
+            <TH className="text-right" title="Seats they hand the Democrats minus the seats we do, across the races both call (a rater's Toss-up counts half)">
+              <span className="sm:hidden">vs us</span><span className="hidden sm:inline">Seats vs ours</span>
+            </TH>
+            <TH className="hidden text-right md:table-cell" title="Our step minus theirs, averaged: R means our calls sit further toward the Republicans">Our lean</TH>
+            <TH className="hidden text-right md:table-cell" title="Races where they favor one party and we favor the other: they D / we R, then they R / we D">Flips</TH>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => {
+            const s = r.summary;
+            const lean = s?.meanDelta;
+            return (
+              <tr key={r.id} style={{ borderBottom: "1px solid var(--app-border)", background: r.external ? undefined : "color-mix(in srgb, var(--app-text-primary) 6%, transparent)" }}>
+                <th scope="row" className="truncate px-1.5 py-1 text-left text-xs font-semibold sm:text-sm" title={`${r.name} · ${r.kind === "model" ? "statistical model" : "race ratings"} · as of ${r.asOf}`}>
+                  <Ext href={r.href} external={r.external}>
+                    <span className="sm:hidden">{hasControl ? r.shortName : r.name}</span><span className="hidden sm:inline">{r.name}</span>
+                  </Ext>
+                  <span className="ml-1 hidden text-[9px] font-normal uppercase tracking-wider lg:inline" style={{ color: "var(--app-text-very-muted)" }}>{r.kind === "model" ? "model" : "rater"}</span>
+                </th>
+                <td className="px-1.5 py-1"><SeatBar t={r.t} total={total} majority={MAJORITY[tab]} /></td>
+                {hasControl && <td className="px-1.5 py-1 text-right text-xs sm:text-sm"><Control p={r.t?.pDemControl} /></td>}
+                <td className="px-1.5 py-1">
+                  {s ? <div className="flex justify-end"><NetBar n={s.netSeats} max={maxNet} /></div>
+                    : <div className="text-right text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>ours</div>}
+                </td>
+                <td className="hidden px-1.5 py-1 text-right text-xs font-semibold tabular-nums md:table-cell"
+                  style={{ color: lean == null || Math.abs(lean) < 0.005 ? "var(--app-text-very-muted)" : lean > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                  {lean == null ? "" : Math.abs(lean) < 0.005 ? "even" : `${lean > 0 ? "R" : "D"} ${Math.abs(lean).toFixed(2)}`}
+                </td>
+                <td className="hidden px-1.5 py-1 text-right text-xs tabular-nums md:table-cell" title={s ? `They favor the Democrat where we favor the Republican in ${s.theyDweR}, the reverse in ${s.theyRweD}, of ${s.compared} races` : undefined}>
+                  {s && <><span style={{ color: s.theyDweR ? "var(--party-dem)" : "var(--app-text-very-muted)" }}>{s.theyDweR}</span>
+                    <span style={{ color: "var(--app-text-very-muted)" }}>/</span>
+                    <span style={{ color: s.theyRweD ? "var(--party-rep)" : "var(--app-text-very-muted)" }}>{s.theyRweD}</span></>}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+
+      <details className="mt-3 max-w-3xl text-xs leading-relaxed" style={{ color: "var(--app-text-very-muted)" }}>
+        <summary className="cursor-pointer font-semibold" style={{ color: "var(--app-text-muted)" }}>How these are counted</summary>
+        <p className="mt-2">
+          Each model&rsquo;s seats are the projection it publishes itself, so the row matches its own site; some headline the seats
+          they favor and some the middle of their simulated distribution, and the two run a few seats apart. Where a forecast
+          publishes no total &mdash; every rater, and a model that gives only control odds &mdash; the count is taken from its own race
+          calls, with the seats a rater will not call either way in amber. Ours is the seats we favor. Every count includes the seats
+          not on the ballot (Senate {data.holdovers.senate.dem} D – {data.holdovers.senate.rep} R, governors {data.holdovers.governor.dem} D – {data.holdovers.governor.rep} R).
+        </p>
+        <p className="mt-2">
+          <strong>Seats vs ours</strong> is how many more seats they hand the Democrats than we do across the races both call &mdash;
+          counted the same way for everyone, so it will not always match the gap between the bars. <strong>Our lean</strong> is the
+          average distance between our call and theirs in steps on the scale Safe D, Likely D, Lean D, Tilt D, Toss-up, Tilt R, Lean R,
+          Likely R, Safe R, and <strong>Flips</strong> counts the races where they favor the Democrat and we the Republican, then the
+          reverse. A rater&rsquo;s label is used as published (Solid counts as Safe); a model&rsquo;s probability is banded on its
+          favorite&rsquo;s chance: {data.bands}, and Toss-up below that. Our own call is a band of the projected margin and has no
+          Toss-up. A forecast that lists only its competitive seats is taken to rate every other seat Safe for the party ahead.
+        </p>
+      </details>
     </div>
   );
 }

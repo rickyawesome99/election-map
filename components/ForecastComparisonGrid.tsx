@@ -30,10 +30,61 @@ const fmtMargin = (m: number) => (Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" :
 function Chip({ rating, sub, inferred, title }: { rating: string; sub?: string; inferred?: boolean; title: string }) {
   const c = rating === "Toss-up" ? TOSSUP : getRatingColors(rating);
   return (
-    <div title={title} className="mx-auto flex h-8 w-[4.75rem] flex-col items-center justify-center rounded leading-none"
+    <div title={title} className="mx-auto flex h-7 w-[4.25rem] flex-col items-center justify-center rounded leading-none"
       style={{ background: c.bg, color: c.text }}>
       <div className="text-[10px] font-bold whitespace-nowrap">{rating}{inferred && <span aria-hidden="true">*</span>}</div>
       <div className="mt-0.5 text-[9px] tabular-nums" style={{ opacity: 0.85 }}>{sub || "\u00a0"}</div>
+    </div>
+  );
+}
+
+// Phones: the grid is far too wide, so each race is a line with our call and a strip of colored
+// cells, one per forecast in the column order; tapping the race lists every call in full.
+function MobileRaceList({ rows, forecasters }: { rows: ComparisonRow[]; forecasters: GridForecaster[] }) {
+  const [open, setOpen] = useState<string | null>(null);
+  const swatch = (rating: string) => (rating === "Toss-up" ? TOSSUP : getRatingColors(rating));
+  return (
+    <div style={{ borderTop: "1px solid var(--app-border)" }}>
+      {rows.map((r) => {
+        const isOpen = open === r.id;
+        return (
+          <div key={r.id} style={{ borderBottom: "1px solid var(--app-border)" }}>
+            <button type="button" onClick={() => setOpen(isOpen ? null : r.id)} aria-expanded={isOpen} className="w-full py-1.5 text-left">
+              <div className="flex items-baseline justify-between gap-2">
+                <span className="truncate text-sm font-semibold">{r.name}{r.contest !== "contested" && <span className="ml-1 text-[9px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>uncontested</span>}</span>
+                <span className="shrink-0 text-xs tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+                  <span className="font-semibold" style={{ color: r.ours.margin > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>{fmtMargin(r.ours.margin)}</span>
+                  {" · spread "}{r.spread} <span aria-hidden="true">{isOpen ? "▴" : "▾"}</span>
+                </span>
+              </div>
+              <div className="mt-1 flex gap-px">
+                {[{ id: "ours", rating: r.ours.rating }, ...forecasters.map((f) => ({ id: f.id, rating: r.calls[f.id]?.rating }))].map((c) => (
+                  <div key={c.id} className="h-3.5 flex-1 first:mr-1 first:flex-[2] first:rounded-l-sm last:rounded-r-sm"
+                    style={{ background: c.rating ? swatch(c.rating).bg : "transparent", outline: c.rating ? undefined : "1px dashed var(--app-border)", outlineOffset: -1 }} />
+                ))}
+              </div>
+            </button>
+            {isOpen && (
+              <div className="grid grid-cols-2 gap-x-3 gap-y-1 pb-2 text-xs">
+                <Link prefetch={false} href={r.href} className="col-span-2 font-semibold underline" style={{ color: "var(--party-dem)" }}>Our race page →</Link>
+                <div className="flex items-center gap-1"><span className="min-w-0 flex-1 truncate font-semibold">This site</span><div className="shrink-0"><Chip rating={r.ours.rating} sub={`${pct(r.ours.pDem)} D`} title="Our model" /></div></div>
+                {forecasters.map((f) => {
+                  const c = r.calls[f.id];
+                  return (
+                    <div key={f.id} className="flex items-center gap-1">
+                      <span className="min-w-0 flex-1 truncate" style={{ color: "var(--app-text-muted)" }}>{f.name}</span>
+                      <div className="shrink-0">
+                        {c ? <Chip rating={c.rating} sub={c.pDem != null ? `${pct(c.pDem)} D` : undefined} inferred={c.inferred} title={f.fullName} />
+                          : <div className="w-[4.25rem] text-center" style={{ color: "var(--app-text-very-muted)" }}>—</div>}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -71,7 +122,7 @@ export default function ForecastComparisonGrid({ data, initial = "senate" }: { d
 
   return (
     <div>
-      <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pb-3">
+      <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pb-3">
         <div className="flex gap-1" role="tablist" aria-label="Chamber">
           {(["senate", "governor", "house"] as RaceType[]).map((c) => (
             <button key={c} role="tab" aria-selected={chamber === c} onClick={() => { setChamber(c); setLimit(120); }} className="rounded px-3 py-1 text-xs font-bold" style={tab(chamber === c)}>
@@ -89,19 +140,25 @@ export default function ForecastComparisonGrid({ data, initial = "senate" }: { d
         <label className="flex items-center gap-2 text-xs" style={{ color: "var(--app-text-muted)" }}>
           Sort
           <select value={sort} onChange={(e) => setSort(e.target.value as Sort)} className="rounded px-1.5 py-1 text-xs" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}>
-            <option value="spread">Widest disagreement</option>
+            <option value="spread">Most disagreement</option>
             <option value="ours">Our margin (D → R)</option>
             <option value="name">Race</option>
           </select>
         </label>
       </div>
 
-      <div className="overflow-x-auto" style={{ maxHeight: "80vh", overflowY: "auto", border: "1px solid var(--app-border)" }}>
+      <div className="md:hidden">
+        <div className="pb-1.5 text-[10px] leading-snug" style={{ color: "var(--app-text-very-muted)" }}>
+          Each strip: ours (wide), then {forecasters.map((f) => f.name).join(", ")}. Tap a race for every call.
+        </div>
+        <MobileRaceList rows={shown.slice(0, limit)} forecasters={forecasters} />
+      </div>
+      <div className="hidden overflow-x-auto md:block" style={{ maxHeight: "80vh", overflowY: "auto", border: "1px solid var(--app-border)" }}>
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr style={{ background: "var(--app-bg)" }}>
               <th scope="col" className={`${head} text-left`} style={{ ...firstCol, zIndex: 4, color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }}>Race</th>
-              <th scope="col" className={`${head} text-right`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title="Our projected margin">Our Margin</th>
+              <th scope="col" className={`${head} text-right`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title="Our projected margin">Margin</th>
               <th scope="col" className={`${head} text-center`} style={{ color: "var(--app-text-primary)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }}>Our model</th>
               {forecasters.map((f) => (
                 <th key={f.id} scope="col" className={`${head} text-center`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title={`${f.fullName} · ${f.kind === "model" ? "model" : "race ratings"} · as of ${f.asOf}`}>
