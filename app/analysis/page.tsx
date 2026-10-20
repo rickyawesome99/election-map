@@ -53,14 +53,14 @@ export default function AnalysisPage() {
             background: PAGE_HERO_BG,
           }}
         >
-          <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} pb-4`}>
+          <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} pb-2 sm:pb-4`}>
             <h1 style={PAGE_TITLE_STYLE}>Analysis</h1>
           </div>
         </section>
 
         <div className={`${PAGE_CONTAINER} pb-14`}>
           {SECTIONS.map((section) => (
-            <section key={section.title} className="pt-8 sm:pt-10 first:pt-6 sm:first:pt-7">
+            <section key={section.title} className="pt-8 sm:pt-10 first:pt-2 sm:first:pt-7">
               <h2 className="pb-3 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)", borderBottom: "2px solid var(--app-text-primary)" }}>{section.title}</h2>
               {section.entries.map((e) => (
                 <Link key={e.href} href={e.href} prefetch={false} className="group grid grid-cols-1 sm:grid-cols-[6.5rem_minmax(0,1fr)_auto] gap-1 sm:gap-4 items-baseline py-3.5" style={{ borderBottom: "1px solid var(--app-border)" }}>

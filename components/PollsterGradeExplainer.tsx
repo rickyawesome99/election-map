@@ -28,8 +28,8 @@ function GradeBands({ grade, score }: { grade: string | null; score: number | nu
   // each band runs from the previous cut (exclusive) up to its own
   const ranges = [...bands.map(([g, cut]) => [g, `≤ ${n2(cut)}`] as const), ["F", `> ${n2(bands[bands.length - 1][1])}`] as const];
   return (
-    <div className="overflow-x-auto">
-      <div className="grid min-w-[36rem] grid-cols-11 gap-1">
+    <div>
+      <div className="grid grid-cols-6 gap-1 sm:grid-cols-11">
         {ranges.map(([g, range]) => {
           const on = g === grade;
           return (
@@ -54,27 +54,33 @@ export default function PollsterGradeExplainer({ r, g }: { r: PollsterRating; g:
       </p>
     );
   const kept = g.weight / (g.weight + META.scoreK);
-  const head = "px-2 py-1.5 text-[10px] font-bold uppercase tracking-wider";
-  const cell = "px-2 py-1.5 text-right tabular-nums";
+  const head = "px-1.5 py-1.5 text-[10px] sm:px-2 font-bold uppercase tracking-wider";
+  const cell = "px-1.5 py-1.5 text-right tabular-nums sm:px-2";
   const ex = g.example;
   return (
     <div>
       <Step n={1} title="Score every graded poll against the field">
         <p>
-          Every general-election poll that {r.name} took in the final {META.window} days of a race is graded: {r.n} of them.
-          Each one gets a score, &ldquo;vs. field&rdquo;: how far its margin missed the result, minus how far a typical poll of the
-          same race missed. A typical miss is the average miss of the other pollsters in that race. With few other pollsters
-          it leans on the usual miss for that office and year, adjusted for sample size and days out. (With {META.fieldK} other
-          pollsters, each source counts half.) A negative score means the poll beat the field.
+          <Num>{r.n}</Num> of {r.name}&rsquo;s polls were taken in the final {META.window} days of a race, so they are graded. Each
+          gets a <strong>vs. field</strong> score: how far it missed the result, minus how far a typical poll of the same race
+          missed. Negative means it beat the field.
         </p>
         {ex && (
-          <p>
-            Example: its latest graded poll, of the <Num>{ex.label}</Num> ({fmtDate(ex.date)}), missed the result by <Num>{ex.absError.toFixed(1)}</Num> pts.
-            A typical poll of that race missed by <Num>{ex.benchmark.toFixed(1)}</Num>, so it scores{" "}
-            <span className="rounded px-1 font-bold tabular-nums" style={{ background: vsFieldTint(ex.excess, 4), color: "var(--app-text-primary)" }}>{n2(ex.excess)}</span>.
-            The Vs. field column in the table below has this score for every graded poll.
-          </p>
+          <>
+            <p>Its latest graded poll, of the <Num>{ex.label}</Num> ({fmtDate(ex.date)}):</p>
+            <div className="overflow-x-auto">
+              <div className="inline-block rounded px-3 py-2 text-sm tabular-nums" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
+                its miss {ex.absError.toFixed(2)} &minus; typical miss {ex.benchmark.toFixed(2)} ={" "}
+                <span className="rounded px-1 font-bold" style={{ background: vsFieldTint(ex.excess, 4) }}>{n2(ex.excess)}</span>
+              </div>
+            </div>
+          </>
         )}
+        <p className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+          A typical miss is the average of the other pollsters in that race. Where there are few, it blends in the usual miss for
+          that office and year, adjusted for sample size and days out. The Vs. field column under Past Polls has this score for
+          every graded poll.
+        </p>
       </Step>
 
       <Step n={2} title="Weight recent polls more, and repeat polls of one race less">
@@ -98,7 +104,7 @@ export default function PollsterGradeExplainer({ r, g }: { r: PollsterRating; g:
             <tbody>
               {g.years.map((y) => (
                 <tr key={y.year} style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
-                  <td className="px-2 py-1.5 font-semibold tabular-nums">{y.year}</td>
+                  <td className="px-1.5 py-1.5 font-semibold tabular-nums sm:px-2">{y.year}</td>
                   <td className={cell}>{y.polls}</td>
                   <td className={cell} style={{ color: "var(--app-text-muted)" }}>× {y.recency.toFixed(2)}</td>
                   <td className={cell}>{y.weight.toFixed(2)}</td>
@@ -107,7 +113,7 @@ export default function PollsterGradeExplainer({ r, g }: { r: PollsterRating; g:
                 </tr>
               ))}
               <tr className="font-bold" style={{ color: "var(--app-text-primary)" }}>
-                <td className="px-2 py-1.5">Total</td>
+                <td className="px-1.5 py-1.5 sm:px-2">Total</td>
                 <td className={cell}>{r.n}</td>
                 <td />
                 <td className={cell}>{g.weight.toFixed(2)}</td>

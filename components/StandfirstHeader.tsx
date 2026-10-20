@@ -15,7 +15,7 @@ export function StandfirstHeader({ kicker, title, href = "/analysis", hubLabel =
       <Link
         href={href}
         prefetch={false}
-        aria-label={`${kicker}: back to ${hubLabel}`}
+        aria-label={kicker === hubLabel ? `Back to ${hubLabel}` : `${kicker}: back to ${hubLabel}`}
         className="mb-2 inline-flex items-center rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wider bg-[var(--app-tab-bg)] text-[var(--app-text-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--app-text-primary)_10%,var(--app-tab-bg))] hover:text-[var(--app-text-primary)]"
         style={{ border: "1px solid var(--app-border)" }}
       >

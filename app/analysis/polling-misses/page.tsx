@@ -1,7 +1,7 @@
 import Link from "next/link";
-import BackButton from "@/components/BackButton";
 import PollingMissExplorer from "@/components/PollingMissExplorer";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
+import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import { electionYear } from "@/data/forecastData";
 import { POLLSTER_RATING_META as META } from "@/data/pollsterRatings";
 import { pollingMisses } from "@/lib/pollingMisses";
@@ -26,60 +26,52 @@ export default function PollingMissesPage() {
     const rs = races.filter((r) => r.year === year);
     return { year, n: rs.length, miss: rs.reduce((s, r) => s + r.miss, 0) / rs.length, abs: rs.reduce((s, r) => s + Math.abs(r.miss), 0) / rs.length };
   });
-  const stats = [
-    { value: races.length, label: "Statewide races" },
-    { value: finalPolls.toLocaleString(), label: "Final polls counted" },
-    { value: states, label: "States" },
-    { value: `${data.years[0]}–${data.years[data.years.length - 1]}`, label: "Elections covered" },
-    { value: <span style={{ color: leanColor(overall) }}>{fmtLean(overall)}</span>, label: "Average miss, all races" },
-  ];
+  const first = data.years[0], last = data.years[data.years.length - 1];
+  const overallParty = overall > 0 ? "Republicans" : "Democrats";
   const note = "mt-4 max-w-3xl text-xs leading-relaxed";
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--party-dem) 8%, var(--app-bg)) 0%, var(--app-bg) 55%, color-mix(in srgb, var(--party-rep) 8%, var(--app-bg)) 100%)" }}>
-        <div className="mx-auto max-w-7xl px-4 pb-8 pt-3 sm:px-6 sm:pb-10">
-          <div className="-ml-2 mb-5"><BackButton /></div>
-          <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 4rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>Polling Misses by State</h1>
-          <div className="mt-3 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-            For every presidential, Senate and governor race since {data.years[0]}, each pollster&rsquo;s final poll of the race, taken in
-            October or later, is averaged into one predicted margin and compared with the result. The difference is the race&rsquo;s
-            polling miss: <b style={{ color: "var(--party-dem)" }}>blue</b> where Democrats did better than their polls,{" "}
-            <b style={{ color: "var(--party-rep)" }}>red</b> where Republicans did. The map colors each state by its misses
-            across years, recent years counting most; the table lists every race. The pollsters themselves are graded on the{" "}
-            <Link href="/analysis/pollsters" className="font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>Pollster Ratings</Link> page.
-          </div>
-          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
-            {stats.map((stat, i, all) => (
-              <div key={stat.label} className={i < all.length - 1 ? "pr-8" : ""} style={i < all.length - 1 ? { borderRight: "1px solid var(--app-border)" } : undefined}>
-                <div className="text-2xl font-extrabold tabular-nums">{stat.value}</div>
-                <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <StandfirstHeader kicker="Polling" title="Polling Misses by State">
+        We checked <Fig>{finalPolls.toLocaleString()}</Fig> final polls of <Fig>{races.length}</Fig> presidential, Senate and governor
+        races in <Fig>{states}</Fig> states, from {first} to {last}, against the results.
+        {Math.abs(overall) < 0.05
+          ? <> On average the polls landed right on the result.</>
+          : <> On average {overallParty} finished <Fig><span style={{ color: leanColor(overall) }}>{Math.abs(overall).toFixed(1)}</span></Fig> points better than their polls.</>}
+      </StandfirstHeader>
 
-      <main className="mx-auto max-w-7xl px-4 pb-14 pt-6 sm:px-6">
+      <main className="mx-auto max-w-7xl px-4 pb-14 pt-7 sm:px-6 sm:pt-8">
         <section className="mb-12">
           <PollingMissExplorer data={data} />
-          <p className={note} style={{ color: "var(--app-text-very-muted)" }}>
-            <strong>Poll average</strong> is the plain mean of each pollster&rsquo;s last poll of the race, counting only pollsters whose last
-            poll ended on or after October 1 of the election year (runoffs and specials use the same cutoff; all their polls fall
-            after it). Every pollster counts once and equally, including polls released by a party or campaign, which the Final polls
-            column counts separately. <strong>Miss</strong> is the result minus the poll average, so R+3 means the Republican finished
-            three points better than the final polls said. A state&rsquo;s all-years figure averages its races within each year, then
-            averages those years with each one weighted {META.decay} per year of age, the same recency weight the pollster grades
-            use (a year counts half as much after four). Margins are Republican minus Democrat; first-round and runoff rounds of the
-            same race are separate rows.
-          </p>
+          <div className={`${note} space-y-1.5`} style={{ color: "var(--app-text-very-muted)" }}>
+            <p>
+              <b style={{ color: "var(--party-dem)" }}>Blue</b> means Democrats beat their polls. <b style={{ color: "var(--party-rep)" }}>Red</b> means
+              Republicans did. Pollsters are graded on the <Link href="/analysis/pollsters" prefetch={false} className="font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>Pollster Ratings</Link> page.
+            </p>
+            <p>
+              <strong>Poll average:</strong> the plain mean of each pollster&rsquo;s last poll, if it ended on or after October 1 of the
+              election year. Every pollster counts once, partisan ones included.
+            </p>
+            <p>
+              <strong>Miss:</strong> result minus poll average. R+3 means the Republican did three points better than the polls.
+            </p>
+            <p>
+              <strong>All years:</strong> each year&rsquo;s average miss, with older years weighted {META.decay} per year of age (half
+              as much after four years).
+            </p>
+            <p>
+              <strong>Margins:</strong> Republican minus Democrat. First-round and runoff rounds are separate rows.
+            </p>
+          </div>
         </section>
 
         <section className="mb-12">
           <LedgerSectionHead label="By Office and by Year" meta="Average miss and its direction across all states" />
           <div className="grid gap-8 md:grid-cols-2">
             {[{ title: "Office", rows: byOffice.map((r) => ({ label: r.office, ...r })) }, { title: "Year", rows: byYear.map((r) => ({ label: String(r.year), ...r })) }].map((block) => (
-              <table key={block.title} className="w-full max-w-md border-collapse text-sm">
+              <table key={block.title} className="w-full max-w-md table-fixed border-collapse text-sm">
+                {/* fixed widths so the Office and Year tables' columns line up side by side */}
+                <colgroup><col className="w-[40%]" /><col className="w-[20%]" /><col className="w-[20%]" /><col className="w-[20%]" /></colgroup>
                 <thead>
                   <tr>{[block.title, "Races", "Avg. size", "Avg. miss"].map((h, i) => (
                     <th key={h} scope="col" className={`px-2 py-2 text-[10px] font-bold uppercase tracking-wider ${i === 0 ? "text-left" : "text-right"}`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>{h}</th>
@@ -98,13 +90,19 @@ export default function PollingMissesPage() {
               </table>
             ))}
           </div>
-          <p className={note} style={{ color: "var(--app-text-very-muted)" }}>
-            <strong>Avg. size</strong> is the mean absolute miss, how far off the final polls were regardless of direction; <strong>Avg. miss</strong>{" "}
-            is the signed mean, which way they were off. Each race counts once, so the big presidential years dominate. Odd-year rows are the
-            Virginia, New Jersey, Kentucky, Louisiana and Mississippi governor races and the 2017 Alabama Senate special. The source archive has
-            no polls of the 2023 or 2025 governor races, and {data.droppedPollsters.toLocaleString()} pollsters&rsquo; last polls of a race ended
-            before October and were set aside.
-          </p>
+          <div className={`${note} space-y-1.5`} style={{ color: "var(--app-text-very-muted)" }}>
+            <p><strong>Avg. size:</strong> the mean absolute miss, how far off the final polls were regardless of direction.</p>
+            <p><strong>Avg. miss:</strong> the signed mean, which way they were off.</p>
+            <p><strong>Races:</strong> each race counts once, so the big presidential years dominate.</p>
+            <p>
+              <strong>Odd years:</strong> the Virginia, New Jersey, Kentucky, Louisiana and Mississippi governor races and the 2017
+              Alabama Senate special. The source archive has no polls of the 2023 or 2025 governor races.
+            </p>
+            <p>
+              <strong>Set aside:</strong> {data.droppedPollsters.toLocaleString()} pollsters&rsquo; last polls of a race ended before
+              October.
+            </p>
+          </div>
         </section>
       </main>
     </div>

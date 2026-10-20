@@ -1,7 +1,7 @@
-import BackButton from "@/components/BackButton";
 import PopularVoteChart from "@/components/PopularVoteChart";
 import PopVotePredictorCharts from "@/components/PopVotePredictorCharts";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
+import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import { electionYear } from "@/data/forecastData";
 import { popVotePredictorYears, popVoteTargetYear, type PopVotePredictorYear } from "@/data/popVotePredictors";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
@@ -121,38 +121,24 @@ export default function PopularVotePage() {
   const lines = projections.map((p) => p.all?.fitted).filter((v): v is number => v != null);
   const spread = lines.length ? [Math.min(...lines), Math.max(...lines)] : null;
 
-  const stats = [
-    { value: fmtMargin(gb.diff), color: marginColor(gb.diff), label: `Generic ballot average` },
-    { value: signed(-approval.diff), color: marginColor(-approval.diff), label: "Trump net approval" },
-    { value: target.direction ? signed(target.direction.right - target.direction.wrong) : "—", color: target.direction ? marginColor(target.direction.right - target.direction.wrong) : undefined, label: "Right direction − wrong track" },
-    { value: fmtMargin(predictorValue(target, "partyId")), color: marginColor(predictorValue(target, "partyId")), label: `Gallup ${target.partyId?.quarter ?? "Q3"} party ID` },
-    { value: spread ? (fmtMargin(spread[0]) === fmtMargin(spread[1]) ? fmtMargin(spread[0]) : `${fmtMargin(spread[1])} to ${fmtMargin(spread[0])}`) : "—", label: "The three markers imply" },
-  ];
+  const net = -approval.diff;
+  const direction = target.direction ? target.direction.right - target.direction.wrong : null;
+  const partyId = predictorValue(target, "partyId");
+  const Colored = ({ v, text }: { v: number | null; text: string }) => <Fig><span style={{ color: marginColor(v) }}>{text}</span></Fig>;
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--party-dem) 8%, var(--app-bg)) 0%, var(--app-bg) 55%, color-mix(in srgb, var(--party-rep) 8%, var(--app-bg)) 100%)" }}>
-        <div className="mx-auto max-w-7xl px-4 pb-8 pt-3 sm:px-6 sm:pb-10">
-          <div className="-ml-2 mb-5"><BackButton /></div>
-          <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 4rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>Popular Vote</h1>
-          <div className="mt-3 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-            The national vote for president, House, Senate and governor in every election since 2016, then three national
-            markers that are supposed to anticipate it: the president&rsquo;s approval, whether the country is on the right
-            track, and the party people say they identify with. Each is set against the House popular vote, the realized
-            generic ballot, and the presidential vote in 2016, 2018, 2020, 2022 and 2024, and then read forward to {target.year}.
-          </div>
-          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
-            {stats.map((stat, i, list) => (
-              <div key={stat.label} className={i < list.length - 1 ? "pr-8" : ""} style={i < list.length - 1 ? { borderRight: "1px solid var(--app-border)" } : undefined}>
-                <div className="text-2xl font-extrabold tabular-nums" style={stat.color ? { color: stat.color } : undefined}>{stat.value}</div>
-                <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <StandfirstHeader kicker="National" title="Popular Vote">
+        How the national vote for president, House, Senate and governor has moved since 2016, and whether three national markers
+        saw it coming. Today Trump&rsquo;s net approval is <Colored v={net} text={signed(net)} />
+        {direction != null && <>, right direction minus wrong track is <Colored v={direction} text={signed(direction)} /></>}
+        {partyId != null && <> and Gallup&rsquo;s {target.partyId?.quarter ?? "Q3"} party ID is <Colored v={partyId} text={fmtMargin(partyId)} /></>}.
+        {spread && <> Read against past elections, they point to a House vote of {fmtMargin(spread[0]) === fmtMargin(spread[1])
+          ? <Colored v={spread[0]} text={fmtMargin(spread[0])} />
+          : <><Colored v={spread[1]} text={fmtMargin(spread[1])} /> to <Colored v={spread[0]} text={fmtMargin(spread[0])} /></>}; the generic ballot average is <Colored v={gb.diff} text={fmtMargin(gb.diff)} />.</>}
+      </StandfirstHeader>
 
-      <main className="mx-auto max-w-7xl px-4 pb-14 pt-6 sm:px-6">
+      <main className="mx-auto max-w-7xl px-4 pb-14 pt-7 sm:px-6 sm:pt-8">
         <section className="mb-12">
           <LedgerSectionHead label="The Record" meta="National popular vote by office since 2016, with the sitting president's net approval" />
           <PopularVoteChart />

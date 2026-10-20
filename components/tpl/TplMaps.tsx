@@ -59,7 +59,7 @@ const DEFAULT_FRAME = { projectionConfig: { scale: 1000 } };
 const WIDE_FRAME = { width: 800, height: 480, projectionConfig: { scale: 1000 } };
 const WIDE_SHIFT = 29;
 
-export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor, onSelect, navigateOnClick = false, zoomable = true, wide = false }: {
+export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor, onSelect, navigateOnClick = false, zoomable = true, wide = false, panel = true, selectedKey, framed = true }: {
   mode: "states" | "districts"; rows: MapRow[]; valueLabel: string; linkLabel: string;
   colorOf?: (value: number) => string; formatValue?: (value: number) => string; valueColor?: (value: number) => string;
   /** Fired when a place is picked (click/tap) or the panel is closed (null) — /analysis/polling-misses filters its table with it. */
@@ -71,6 +71,12 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   /** true = a wide 800×480 frame instead of 800×600, so the map fills the md+ box's 16:9-ish
    *  height instead of sitting in a band of empty sky; phone width is unchanged (the TPL hub). */
   wide?: boolean;
+  /** false = no popup box (md+) or under-map panel (phones) for the picked place — the page shows it itself (/analysis/polling-misses). */
+  panel?: boolean;
+  /** The picked place's key, when the page owns the selection (so a dropdown elsewhere can move the outline); omit to let the map track it. */
+  selectedKey?: string | null;
+  /** false = no border box around the map (/analysis/polling-misses). */
+  framed?: boolean;
 }) {
   const isDark = useDarkMode();
   const mapUnfilled   = isDark ? "#1e2530" : "#c8cdd3";
@@ -79,7 +85,8 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   const hoverUnfilled = isDark ? "#2a3441" : "#dde2e7";
 
   const [hovered, setHovered]   = useState<MapRow | null>(null);
-  const [selected, setSelectedState] = useState<MapRow | null>(null);
+  const [ownSelected, setSelectedState] = useState<MapRow | null>(null);
+  const selected = selectedKey === undefined ? ownSelected : rows.find((r) => r.key === selectedKey) ?? null;
   const router = useRouter();
   const setSelected = (row: MapRow | null) => {
     if (navigateOnClick && row) { router.push(row.href); return; }
@@ -182,8 +189,8 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
 
   return (
     <>
-      <div className="relative h-[300px] w-full overflow-hidden rounded-xl sm:h-[400px] md:h-[480px]" style={{ border: "1px solid var(--app-border)" }} onMouseMove={onTipMove}>
-        {hovered && !selected && (
+      <div className="relative h-[300px] w-full overflow-hidden rounded-xl sm:h-[400px] md:h-[480px]" style={framed ? { border: "1px solid var(--app-border)" } : undefined} onMouseMove={onTipMove}>
+        {hovered && (!selected || !panel) && (
           <div ref={tooltipRef} className="pointer-events-none absolute z-20 hidden rounded-lg md:block" style={{ width: 160, padding: "7px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}>
             <div className="mb-0.5 text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>{hovered.name}</div>
             <div className="text-[10px] font-semibold" style={{ color: valueColor(hovered.value) }}>{valueLabel}: {formatValue(hovered.value)}</div>
@@ -201,7 +208,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
           </button>
         )}
 
-        {selected && (
+        {selected && panel && (
           <div className="absolute z-30 hidden rounded-lg px-2.5 py-1.5 md:block" style={{ right: 12, bottom: 12, width: 160, background: isDark ? "rgba(22,27,34,0.95)" : "rgba(255,255,255,0.95)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.18)" }}>
             <div className="flex items-center gap-2">
               <span className="min-w-0 flex-1 truncate text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>{selected.name}</span>
@@ -212,7 +219,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
         )}
       </div>
 
-      {selected && (
+      {selected && panel && (
         <div className="mt-2 flex items-center gap-2 rounded-lg px-3 py-2.5 text-[11px] md:hidden" style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}>
           <span className="min-w-0 truncate text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>{selected.name}</span>
           {valueText}

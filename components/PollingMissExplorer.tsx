@@ -111,9 +111,10 @@ export default function PollingMissExplorer({ data }: { data: PollingMissSet }) 
   return (
     <div>
       <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
-        <Segmented label="Year" value={year} onChange={setYear} options={[["all", "All years"], ...data.years.map((y) => [y, String(y)] as [YearFilter, string])]} />
-        <Segmented label="Race" value={office} onChange={setOffice} options={OFFICES} />
-        <div className="sm:ml-auto"><MissLegend /></div>
+        <Segmented label="Year" value={year} onChange={setYear} options={[["all", "All years"], ...data.years.map((y) => [y, String(y)] as [YearFilter, string])]} scroll />
+        <div className="flex w-full justify-center sm:w-auto"><Segmented label="Race" value={office} onChange={setOffice} options={OFFICES} /></div>
+        {/* on phones the legend moves down between the summary and the map */}
+        <div className="hidden sm:ml-auto sm:block"><MissLegend /></div>
       </div>
 
       <p className="mb-5 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
@@ -122,12 +123,14 @@ export default function PollingMissExplorer({ data }: { data: PollingMissSet }) 
             Across the {raceCount} {office === "all" ? "statewide" : office.toLowerCase()} race{raceCount === 1 ? "" : "s"}{year === "all" ? " since 2016" : ` of ${year}`} with
             final polls, Republicans beat their polls in <b style={{ color: "var(--party-rep)" }}>{repStates}</b> state{repStates === 1 ? "" : "s"} and Democrats in{" "}
             <b style={{ color: "var(--party-dem)" }}>{demStates}</b>{median != null && <>; the median state&rsquo;s miss is <b style={{ color: leanColor(median) }}>{fmtLean(median)}</b></>}.
-            {year === "all" && " Each state's color averages its yearly misses with recent years counting most."} Select a state to filter the table.
+            {" "}Select a state to filter the table.
           </>
         )}
       </p>
 
-      <TplMap mode="states" rows={mapRows} valueLabel="Polling miss" linkLabel="Open state page" colorOf={missColor} formatValue={fmtLean} valueColor={leanColor} onSelect={onSelect} zoomable={false} />
+      <div className="mb-4 sm:hidden"><MissLegend /></div>
+
+      <TplMap mode="states" rows={mapRows} valueLabel="Polling miss" linkLabel="Open state page" colorOf={missColor} formatValue={fmtLean} valueColor={leanColor} onSelect={onSelect} zoomable={false} panel={false} framed={false} selectedKey={group?.state ?? null} />
 
       <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 pb-3 mb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
         <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>Every Race</h2>
@@ -152,10 +155,10 @@ export default function PollingMissExplorer({ data }: { data: PollingMissSet }) 
         <table className="w-full border-collapse text-sm" aria-label="Polling misses by state and race">
           <thead>
             <tr>
-              <th scope="col" className={`${th} text-left`} style={thStyle}>Year</th>
+              <th scope="col" className={`${th} hidden text-left sm:table-cell`} style={thStyle}>Year</th>
               <th scope="col" className={`${th} text-left`} style={thStyle}>Race</th>
-              <th scope="col" className={`${th} text-right`} style={thStyle}>Final polls</th>
-              <th scope="col" className={`${th} text-right`} style={thStyle}>Poll average</th>
+              <th scope="col" className={`${th} hidden text-right sm:table-cell`} style={thStyle}>Final polls</th>
+              <th scope="col" className={`${th} text-right`} style={thStyle}><span className="sm:hidden">Polls</span><span className="hidden sm:inline">Poll average</span></th>
               <th scope="col" className={`${th} text-right`} style={thStyle}>Result</th>
               <th scope="col" className={`${th} text-right`} style={thStyle}>Miss</th>
             </tr>
@@ -163,12 +166,15 @@ export default function PollingMissExplorer({ data }: { data: PollingMissSet }) 
           {[group].map((g) => (
             <tbody key={g.abbr}>
               <tr style={{ background: "var(--app-tab-bg)" }}>
-                <th scope="rowgroup" colSpan={5} className="px-2 py-1.5 text-left">
-                  <Link href={`/states/${STATE_ID.get(g.abbr) ?? g.abbr.toLowerCase()}`} className="font-bold hover:underline">{g.state}</Link>
-                  <span className="ml-2 text-[11px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>
-                    {g.races.length} race{g.races.length === 1 ? "" : "s"}{year === "all" && g.years > 1 ? ` over ${g.years} years` : ""}
-                  </span>
-                </th>
+                {/* Year and Final polls are hidden on phones, so the label spans 3 columns there and 5 from sm up */}
+                {[["sm:hidden", 3], ["hidden sm:table-cell", 5]].map(([cls, span]) => (
+                  <th key={cls} scope="rowgroup" colSpan={span as number} className={`${cls} px-2 py-1.5 text-left`}>
+                    <Link href={`/states/${STATE_ID.get(g.abbr) ?? g.abbr.toLowerCase()}`} className="font-bold hover:underline" title={`Open the ${g.state} page`}>{g.state} <span aria-hidden style={{ color: "var(--app-text-muted)" }}>›</span></Link>
+                    <span className="ml-2 text-[11px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>
+                      {g.races.length} race{g.races.length === 1 ? "" : "s"}{year === "all" && g.years > 1 ? ` over ${g.years} years` : ""}
+                    </span>
+                  </th>
+                ))}
                 <td className="px-2 py-1.5 text-right font-bold tabular-nums" style={{ color: leanColor(g.value) }}
                   title={year === "all" ? "Average of the state's yearly misses, recent years weighted most" : `Average miss of the state's ${year} races`}>
                   {fmtLean(g.value)}
@@ -176,11 +182,15 @@ export default function PollingMissExplorer({ data }: { data: PollingMissSet }) 
               </tr>
               {[...g.races].sort((a, b) => b.year - a.year || OFFICE_ORDER[a.office] - OFFICE_ORDER[b.office] || (a.stage ?? "").localeCompare(b.stage ?? "")).map((r) => (
                 <tr key={r.key} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  <td className="px-2 py-1.5 tabular-nums">{r.year}</td>
+                  <td className="hidden px-2 py-1.5 tabular-nums sm:table-cell">{r.year}</td>
                   <td className="px-2 py-1.5">
+                    <span className="mr-1.5 tabular-nums sm:hidden">{r.year}</span>
                     {r.href ? <Link href={r.href} className="font-semibold hover:underline">{raceLabel(r)}</Link> : <span className="font-semibold">{raceLabel(r)}</span>}
+                    <div className="text-[11px] tabular-nums sm:hidden" style={{ color: "var(--app-text-very-muted)" }}>
+                      {r.polls} final poll{r.polls === 1 ? "" : "s"}{r.partisan > 0 ? ` · ${r.partisan} partisan` : ""}
+                    </div>
                   </td>
-                  <td className="px-2 py-1.5 text-right tabular-nums" title={`Final polls ended ${fmtDate(r.firstDate)}–${fmtDate(r.lastDate)}, ${r.year}`}>
+                  <td className="hidden px-2 py-1.5 text-right tabular-nums sm:table-cell" title={`Final polls ended ${fmtDate(r.firstDate)}–${fmtDate(r.lastDate)}, ${r.year}`}>
                     {/* the partisan note has a fixed slot so the count lines up down the column whether or not it is shown */}
                     <span className="inline-flex items-baseline justify-end">
                       <span className="w-[1.5rem] text-left">{r.polls}</span>

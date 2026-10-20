@@ -11,6 +11,12 @@ import PrecinctExplorer from "@/components/precinct-district/PrecinctExplorer";
 import Trends from "@/components/precinct-district/Trends";
 import DemoScatter from "@/components/precinct-district/DemoScatter";
 import DataNotes from "@/components/precinct-district/DataNotes";
+import TargetList from "@/components/precinct-district/TargetList";
+import ModelComparison, { type LegModelSummary } from "@/components/precinct-district/ModelComparison";
+import { targetList } from "@/lib/precinctDistrict/targets";
+import { projectDistrict as projectLegDistrict, STATE_LEG_FORECAST_CONSTANTS } from "@/lib/stateLegForecast";
+import { stateLegDistricts } from "@/data/stateLegDistricts";
+import { districtHash } from "@/lib/stateLegAtlas";
 import { LedgerSectionHead } from "@/components/RaceDetailSections";
 
 export async function generateStaticParams() {
@@ -61,6 +67,19 @@ export default async function PrecinctDistrictPage({ params }: { params: Promise
   };
 
   const projection = projectDistrict(data);
+  const targets = targetList(data, projection);
+
+  // The site's general state legislature model for the same seat, for the comparison section.
+  const legDistrict = stateLegDistricts[config.state]?.[config.chamber]?.find((d) => d.id === config.stateLegDistrictId || d.number === config.number) ?? null;
+  const legP = legDistrict ? projectLegDistrict(config.state, config.chamber, legDistrict) : null;
+  const legYears = legP ? legP.rows.map((r) => r.year) : [];
+  const leg: LegModelSummary | null = legP ? {
+    href: `/states/${config.state.toLowerCase()}/legislature/${config.chamber}${districtHash(config.chamber, legDistrict!.number)}`,
+    margin: legP.margin, sigma: legP.sigma, pD: legP.pD, rating: legP.rating,
+    lean: legP.lean, envPts: legP.envPts, incPts: legP.incPts,
+    money: legP.money ? { pts: legP.money.pts, K: STATE_LEG_FORECAST_CONSTANTS.MONEY_K, CAP: STATE_LEG_FORECAST_CONSTANTS.MONEY_CAP, gapPct: legP.money.gapPct, structuralGapPct: legP.money.structuralGapPct } : null,
+    rows: { pres: legP.rows.filter((r) => r.kind === "P").length, seat: legP.rows.filter((r) => r.kind === "L").length, relocated: legP.rows.filter((r) => r.relocated).length, years: legYears.length ? [Math.min(...legYears), Math.max(...legYears)] : null },
+  } : null;
 
   // The site's own statewide 2026 forecasts for this state, for context under the outlook.
   const statewide: StatewideContext[] = [
@@ -79,10 +98,20 @@ export default async function PrecinctDistrictPage({ params }: { params: Promise
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <DistrictHeader config={config} stats={stats} />
-      <main className="mx-auto max-w-7xl px-4 pb-12 pt-4 sm:px-6">
+      <main className="mx-auto max-w-7xl px-4 pb-12 pt-7 sm:px-6 sm:pt-8">
         <section id="outlook" className="scroll-mt-24">
           <LedgerSectionHead label={`${electionYear} outlook`} />
           <Outlook config={config} p={projection} statewide={statewide} finance={data.finance} />
+        </section>
+
+        <section id="models" className="mt-12 scroll-mt-24">
+          <LedgerSectionHead label="Two models, one seat" meta="this page's precinct projection against the site's state legislature model" />
+          <ModelComparison config={config} p={projection} leg={leg} />
+        </section>
+
+        <section id="targets" className="mt-12 scroll-mt-24">
+          <LedgerSectionHead label="Door-knocking targets" meta={`every precinct ranked by net votes available to ${config.election2026?.candidates?.r?.name ?? "the Republican"}`} />
+          <TargetList list={targets} rName={config.election2026?.candidates?.r?.name?.split(" ").pop() ?? "the Republican"} districtName={config.shortName} />
         </section>
 
         <section id="explorer" className="mt-12 scroll-mt-24">

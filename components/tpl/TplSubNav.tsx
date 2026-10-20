@@ -35,13 +35,13 @@ export function TplSubNav({ right, methodologyHref = "/methodology/state-tpl", m
   );
 }
 
-// The Map and Candidates headers' closing row, in place of the sub-nav: a button over to the
-// other view, and the matching methodology link on the right.
+// The Map and Candidates headers' switch, to the right of the median stat: a button over to the
+// other view, with the matching methodology link under it.
 export function TplViewSwitch({ to }: { to: "map" | "candidates" }) {
   const toMap = to === "map";
   return (
-    <div className="mt-6 flex flex-wrap items-center justify-between gap-3 pt-4" style={{ borderTop: "1px solid var(--app-border)" }}>
-      <Link href={toMap ? "/model" : "/model/candidates"} className="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold transition-colors hover:bg-[var(--app-tab-bg)]"
+    <div className="flex shrink-0 flex-col items-end gap-2">
+      <Link href={toMap ? "/model" : "/model/candidates"} className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold transition-colors hover:bg-[var(--app-tab-bg)]"
         style={{ border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
         {toMap ? "← Map view" : "Candidates view →"}
       </Link>

@@ -23,6 +23,12 @@ export interface MethodologyChange {
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
   {
+    date: "2026-10-20", models: ["precinct-district"], kind: "change",
+    title: "Precinct-district pages: a door-knocking target list and a comparison with the state legislature model",
+    detail: "Two new sections on every precinct-district page, written for the campaign reading it. Door-knocking targets lists every precinct on today's lines ranked by Priority (net votes available), with its split-ticket and turnout votes, latest State House and presidential margins, registration and 2026 estimated ballots; sortable on every column, filterable by area, Priority category and a new competitiveness band cut on the average two-party margin at the site's likely / safe points (Safe R ≥ R+15, Lean R R+5 to R+15, Swing within 5, Lean D, Safe D), with band totals and a CSV of the filtered list. Two models, one seat prints this page's projection beside the site's state legislature projection for the same seat (lib/stateLegForecast.ts), term by term, with the reasons they differ: the lean's inputs (statewide races here; presidential + relocated seat rows there), the down-ballot gap term (here only) and the money term's calibration (state-fitted K here, the national sweep there). No projection changes.",
+    effect: "OH-31: Safe R 19 precincts (2,320 net votes), Lean R 12 (854), Swing 20 (1,484), Lean D 20 (917), Safe D 14 (570); 6,147 in all. Precinct model D+1.7 (σ 8.0, P(R) 42%) vs the legislature model D+2.3 (Lean D, σ 7.9, P(R) 39%): lean D+2.1 vs D+0.3, money R+3.0 vs R+1.5, gap R+0.9 vs none, environment D+3.4 in both.",
+  },
+  {
     date: "2026-10-19", models: ["state-leg"], kind: "data",
     title: "2024 seat counts checked against every chamber's election article",
     detail: "Every 2024 chamber's seats after the election and seats won were checked against its Wikipedia election article (2022 too: all 88 match). Beyond Vermont's House, three were wrong (scripts/fix-state-leg-2024-seat-cards.py): Hawaii's House carried the pre-election 45–6 (the result was 42–9), and Oklahoma's and Florida's Senates counted only the races printed on the November ballot, leaving out seats settled in a primary or unopposed. California's AD-32 (won by Vince Fong, who stayed in Congress) and Minnesota's 40B (the winner ruled ineligible) are counted as the election left them, which is where Wikipedia's seated-member counts differ.",

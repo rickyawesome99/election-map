@@ -17,8 +17,9 @@ import { liveHouseEffects, racePollLabel } from "@/lib/tplCompute";
 // cycle's polls from the race and generic-ballot poll files, matched by rating id.
 
 /** [year, type, location, race code, date, days out, sample, partisan, methodology,
- *  poll margin, result margin, error, oriented, excess vs field, house (vs others in race), source url] */
-type PollTuple = [number, string, string, string, string, number, number | null, "D" | "R" | null, string | null, number, number, number, 0 | 1, number | null, number | null, string | null];
+ *  poll margin, result margin, error, oriented, excess vs field, house (vs others in race), source url,
+ *  Dem share, Rep share (second and first candidate when not oriented; rep − dem = poll margin)] */
+type PollTuple = [number, string, string, string, string, number, number | null, "D" | "R" | null, string | null, number, number, number, 0 | 1, number | null, number | null, string | null, number | null, number | null];
 const POLLS = pollsterPollsJson as unknown as Record<string, PollTuple[]>;
 
 export type PollsterPollRow = {
@@ -35,6 +36,8 @@ export type PollsterPollRow = {
   partisan: "D" | "R" | null;
   methodology: string | null;
   poll: number;          // R-positive margin (top-two order when !oriented)
+  dem: number | null;    // the poll's two shares (rep − dem = poll); second and first candidate when !oriented
+  rep: number | null;
   result: number | null;
   error: number | null;  // poll − result, R-positive
   oriented: boolean;     // false = same-party contest; margin is first vs second, not R − D
@@ -71,12 +74,12 @@ export function gradedRaceHref(type: string, loc: string, code: string, year: nu
 }
 
 function pastRows(id: string): PollsterPollRow[] {
-  return (POLLS[id] ?? []).map(([year, type, loc, code, date, days, sample, partisan, methodology, poll, result, error, oriented, excess, , url]) => {
+  return (POLLS[id] ?? []).map(([year, type, loc, code, date, days, sample, partisan, methodology, poll, result, error, oriented, excess, , url, dem, rep]) => {
     const raceCode = code.split("-")[1] ?? "G";
     const race = type === "GB" || loc === "US" ? "National" : type === "H" ? district(loc) : SPLIT_PRES[loc] ?? stateName(loc);
     return {
       cycle: cycleOf(year), year, office: OFFICE[type], race, stage: STAGE[raceCode] ?? null, href: gradedRaceHref(type, loc, code, year),
-      date, daysOut: days, sample, population: null, partisan, methodology, poll, result, error, oriented: oriented === 1,
+      date, daysOut: days, sample, population: null, partisan, methodology, poll, dem: dem ?? null, rep: rep ?? null, result, error, oriented: oriented === 1,
       graded: excess != null || days <= 21, excess,
       calledWinner: poll === 0 ? null : Math.sign(poll) === Math.sign(result), url: url ?? null,
     };
@@ -115,13 +118,13 @@ function currentRows(id: string): PollsterPollRow[] {
   for (const [key, polls] of Object.entries(racePolls)) {
     for (const p of polls) {
       if (pollsterIdOf(p.pollster) !== id) continue;
-      out.push({ ...base, ...racePollRace(key), date: p.endDate, sample: p.sample, population: p.population, partisan: p.partisan, poll: p.diff,
+      out.push({ ...base, ...racePollRace(key), date: p.endDate, sample: p.sample, population: p.population, partisan: p.partisan, poll: p.diff, dem: p.dem, rep: p.rep,
         url: racePollSources[`${key}|${p.pollster}|${p.startDate}|${p.endDate}`] ?? null });
     }
   }
   for (const p of genericBallotPolls) {
     if (pollsterIdOf(p.pollster) !== id) continue;
-    out.push({ ...base, office: "Generic ballot", race: "National", stage: null, href: null, date: p.endDate, sample: p.sample, population: p.population, partisan: null, poll: p.diff });
+    out.push({ ...base, office: "Generic ballot", race: "National", stage: null, href: null, date: p.endDate, sample: p.sample, population: p.population, partisan: null, poll: p.diff, dem: p.dem, rep: p.rep });
   }
   return out.sort((a, b) => b.date.localeCompare(a.date));
 }

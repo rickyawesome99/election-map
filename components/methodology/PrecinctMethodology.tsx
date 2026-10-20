@@ -151,6 +151,18 @@ export default function PrecinctMethodology() {
             { term: "Presidential trend", def: "Latest presidential margin − earliest presidential margin on file, both on today's lines (≈)." },
           ]} />
         </Block>
+        <Block label="Door-knocking targets" meta="page → Door-knocking targets">
+          <P>The same Priority ranking, as a list: every precinct on today&apos;s lines with its rank, net votes available, split-ticket and turnout votes, the latest State House and presidential margins, registration and the 2026 turnout estimate; sortable on every column, filterable by area, by Priority category and by a competitiveness band, with a CSV of whatever is on screen. Ranks are district-wide and do not change with a filter.</P>
+          <Defs items={[
+            { term: "Competitiveness band", def: "Cut on the precinct's average two-party margin (2 × average R share − 100) at the site's likely / safe cut points: Safe R at R+15 or more, Lean R from R+5 to R+15, Swing within 5 points of even, Lean D from D+5 to D+15, Safe D at D+15 or more. A different lens from the Priority categories, which name the task (bank, turn out, persuade) rather than the lean, and whose cuts (58 / 52 / 48 / 42% R) do not coincide with the bands'." },
+            { term: "Band totals", def: "Precincts, 2026 estimated ballots (the turnout estimate's precinct ballots summed) and net votes available (Priority summed) in each band." },
+          ]} />
+        </Block>
+      </Section>
+
+      <Section id="models" kicker="Comparison" title="Against the state legislature model"
+        lede="Every precinct-district page shows its own projection beside the site's general state legislature projection for the same seat, term by term.">
+        <P>The two share the TPL fit (β*, incumbency, the 2026 environment) and the nominees&apos; receipts, and differ in what they read the lean from and how they price money. The legislature model (Methodology → State legislatures) weights the seat&apos;s own State House rows against presidential results alone, relocating pre-2022 rows through its redistricting crosswalk with a presidential correction; this page&apos;s lean adds every statewide race as counted in these precincts, each stripped of incumbency and environment, and carries a down-ballot gap term the legislature model has no need of. Money here uses the state&apos;s own fitted K and cap (above); the legislature model uses its nationally swept MONEY_K and MONEY_CAP. The section prints both ledgers and the gap between the margins; neither is adjusted toward the other.</P>
       </Section>
     </>
   );

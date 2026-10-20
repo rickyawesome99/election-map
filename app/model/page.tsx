@@ -29,20 +29,22 @@ export default function ModelHubPage() {
       <div style={{ background: PAGE_HERO_BG }}>
         <div className={PAGE_CONTAINER}>
           <div className={`pb-6 ${PAGE_HERO_TOP}`}>
-            <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div className="min-w-0">
                 <h1 style={PAGE_TITLE_STYLE}>True Partisan Lean</h1>
-                <p className="mt-2 min-h-[5lh] max-w-2xl text-sm leading-relaxed sm:min-h-[4lh] md:min-h-[3lh]" style={{ color: "var(--app-text-muted)" }}>
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed sm:min-h-[4lh] md:min-h-[3lh]" style={{ color: "var(--app-text-muted)" }}>
                   Each state&apos;s and district&apos;s partisan lean from every race {summary.fitYears[0]}–{summary.fitYears[summary.fitYears.length - 1]}, with candidate and national effects stripped out. Each year counts {summary.yearDecay.toFixed(2)}× as much as the year after it.
                 </p>
               </div>
-              <div className="shrink-0 sm:text-right">
+              <div className="flex shrink-0 items-end justify-between gap-6 sm:justify-end sm:gap-8">
+              <div className="sm:text-right">
                 <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>50-state median</div>
                 <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 1, color: marginColor(summary.medianStateTpl) }}>{fmtMargin(summary.medianStateTpl)}</div>
                 <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>435-district median <span style={{ color: marginColor(summary.medianDistrictTpl) }}>{fmtMargin(summary.medianDistrictTpl)}</span></div>
               </div>
+              <TplViewSwitch to="candidates" />
+              </div>
             </div>
-            <TplViewSwitch to="candidates" />
           </div>
         </div>
       </div>

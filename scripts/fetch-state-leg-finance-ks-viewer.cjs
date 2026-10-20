@@ -42,6 +42,9 @@ const tokens = (s) => s.toUpperCase().replace(/[^A-Z ]/g, " ").split(/\s+/).filt
 
 /** q: { office?, lastName?, start?, end? } → record count, null when the search failed. */
 async function search(p, q) {
+  // A search inside a session that already searched lands its later page postbacks on an ASP.NET "Runtime Error"
+  // (house 2022 after senate 2020, 2026-10-19), so every search starts a fresh session.
+  await p.context().clearCookies();
   await p.goto("https://sos.ks.gov/elections/cfr_viewer/cfr_examiner_entry.aspx", { waitUntil: "networkidle", timeout: 120000 });
   // the WAF challenge reloads the page once it passes
   await sleep(3000);
@@ -75,23 +78,48 @@ async function walk(p, q, visit) {
   for (let pg = 1; pg <= pages; pg++) {
     // A GridView takes any page number, so a lost results page (WAF reload, server error) is
     // recovered by searching again and jumping straight to this page.
+    let rs = [];
     for (let attempt = 0; ; attempt++) {
       try {
         if (attempt > 0 || !(await p.evaluate(() => typeof __doPostBack === "function" && !!document.querySelector("#grdviewCfrResults")))) await search(p, q);
-        if (pg > 1 || attempt > 0) await Promise.all([p.waitForNavigation({ timeout: 180000 }), p.evaluate((n) => __doPostBack("grdviewCfrResults", "Page$" + n), pg)]);
+        // The viewer keeps the grid's page index in the server session ACROSS searches: a new search lands on the
+        // page the previous one ended on, and posting back for the page already shown is a server error. So jump
+        // only when the grid is not on pg, and check where it landed.
+        if ((await currentPage(p)) !== pg) await Promise.all([p.waitForNavigation({ timeout: 180000 }), p.evaluate((n) => __doPostBack("grdviewCfrResults", "Page$" + n), pg)]);
+        // a page that comes back without rows (the WAF challenge in place of the grid) used to be walked as empty,
+        // silently skipping its 20 rows: wait for the grid, else search again
+        await p.waitForSelector("#grdviewCfrResults tr a", { state: "attached", timeout: 30000 });
+        rs = await rows(p);
+        if (!rs.length) throw new Error("results page has no rows");
+        const at = await currentPage(p);
+        if (at !== pg) throw new Error(`grid is on page ${at}, not ${pg}`);
         break;
       } catch (e) {
+        // the server itself answers some pages with an ASP.NET "Runtime Error" every time (house 2022 page 2,
+        // 2026-10-19): after three tries log the page and walk on rather than dropping the whole job
+        const serverError = /Server Error in '\/' Application/.test(await p.content().catch(() => ""));
+        if (serverError && attempt >= 2) { console.log(`  page ${pg} server error, skipped`); rs = null; break; }
         if (attempt >= 4) throw e;
         console.log(`  page ${pg} lost (${e.message.split("\n")[0]}), searching again`);
+        fs.writeFileSync(path.join(CACHE, "lost-page.html"), await p.content().catch(() => ""));
         await sleep(20000);
       }
     }
-    const rs = await rows(p);
     progress();
     await sleep(PACE_MS + 1000);
+    if (!rs) continue;
     for (let i = 0; i < rs.length; i++) await visit(rs[i], pg, i, pages);
   }
   return total;
+}
+
+/** The page the results grid is showing: the pager's one number that is not a link (1 when there is no pager). */
+async function currentPage(p) {
+  return p.evaluate(() => {
+    const pager = document.querySelector("#grdviewCfrResults a[href*='Page$']")?.closest("tr");
+    const sp = pager && [...pager.querySelectorAll("span")].find((x) => /^\d+$/.test(x.textContent.trim()));
+    return sp ? Number(sp.textContent.trim()) : 1;
+  });
 }
 
 async function rows(p) {

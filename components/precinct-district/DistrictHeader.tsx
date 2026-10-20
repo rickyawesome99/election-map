@@ -1,7 +1,8 @@
-// Page header for a precinct-district page: name, where it is and the 2026 status line; the
-// latest margin tints the background. Server component; everything is precomputed by the page.
+// Page header for a precinct-district page: the standfirst header with a sentence on the seat, the
+// 2026 race and the district's presidential lean. Server component; everything is precomputed by the page.
 
-import BackButton from "@/components/BackButton";
+import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
+import { fmtMargin, marginColor } from "@/lib/colorScale";
 import type { DistrictConfig } from "@/lib/precinctDistrict/types";
 
 export interface HeaderStats {
@@ -19,39 +20,38 @@ export interface HeaderStats {
   precincts: number;
 }
 
+const PARTY_WORD = { D: "Democrat", R: "Republican", I: "Independent" } as const;
+const PARTY_COLOR = { D: "var(--party-dem)", R: "var(--party-rep)", I: "var(--party-ind)" } as const;
+
 export default function DistrictHeader({ config, stats }: { config: DistrictConfig; stats: HeaderStats }) {
-  const heroMargin = stats.legMargin ?? stats.presMargin;
-  const heroIsD = heroMargin != null && heroMargin <= 0;
   const e = config.election2026;
-  const dName = e?.candidates?.d?.name;
-  const rName = e?.candidates?.r?.name;
+  const holder = e?.seatHolder;
+  const d = e?.candidates?.d?.name;
+  const r = e?.candidates?.r?.name;
+  const where = `${config.county}, ${config.stateName}`;
+  const date = e ? new Date(`${e.date}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", timeZone: "UTC" }) : null;
+  const lean = stats.leanVsState;
 
   return (
-    <div style={{ background: heroMargin != null ? `linear-gradient(135deg, color-mix(in srgb, ${heroIsD ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)` : "var(--app-bg)" }}>
-      <div className="mx-auto max-w-7xl px-4 pb-4 pt-3 sm:px-6">
-        <div className="mb-5 -ml-2"><BackButton /></div>
-
-        <div className="min-w-0">
-          <div className="flex items-center gap-3">
-            <span className="shrink-0 rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>{config.state}</span>
-            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 3.5rem)", fontWeight: 700, lineHeight: 0.98, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}>
-              {config.chamber === "house" ? "House" : "Senate"} District {config.number}
-            </h1>
-          </div>
-          {e && (
-            <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
-              <span className="rounded-full px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}>
-                {e.status === "open" ? "Open seat" : "Incumbent"} · {new Date(e.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
-              </span>
-              {dName && rName && (
-                <span style={{ color: "var(--app-text-primary)" }}>
-                  <b style={{ color: "var(--party-dem)" }}>{dName}</b> (D) vs <b style={{ color: "var(--party-rep)" }}>{rName}</b> (R)
-                </span>
-              )}
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
+    <StandfirstHeader kicker={config.chamber === "house" ? "State House" : "State Senate"} title={config.name}>
+      {e?.status === "open" ? (
+        <>An open seat in {where}{holder && <>: {PARTY_WORD[holder.party]} {holder.name} is leaving{holder.note ? `, ${holder.note}` : ""}</>}.</>
+      ) : holder ? (
+        <>A seat in {where} held by {PARTY_WORD[holder.party]} {holder.name}.</>
+      ) : (
+        <>A {config.chamber === "house" ? "State House" : "State Senate"} district in {where}.</>
+      )}
+      {d && r && date && (
+        <> On {date}, <b style={{ color: PARTY_COLOR.D }}>{d}</b> (D) faces <b style={{ color: PARTY_COLOR.R }}>{r}</b> (R).</>
+      )}
+      {stats.presMargin != null && stats.presYear != null && (
+        <>
+          {" "}In {stats.presYear} it voted <Fig><span style={{ color: marginColor(stats.presMargin) }}>{fmtMargin(stats.presMargin)}</span></Fig> for president
+          {lean != null && Math.abs(lean) >= 0.05
+            ? <>, <Fig>{Math.abs(lean).toFixed(1)}</Fig> points more {lean > 0 ? "Republican" : "Democratic"} than {stats.stateName}.</>
+            : <>, in line with {stats.stateName}.</>}
+        </>
+      )}
+    </StandfirstHeader>
   );
 }

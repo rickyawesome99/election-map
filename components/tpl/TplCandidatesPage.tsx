@@ -185,20 +185,22 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
       <div style={{ background: PAGE_HERO_BG }}>
         <div className={PAGE_CONTAINER}>
           <div className={`pb-6 ${PAGE_HERO_TOP}`}>
-            <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div className="min-w-0">
                 <h1 style={PAGE_TITLE_STYLE}>Candidates</h1>
-                <p className="mt-2 min-h-[5lh] max-w-2xl text-sm leading-relaxed sm:min-h-[4lh] md:min-h-[3lh]" style={{ color: "var(--app-text-muted)" }}>
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed sm:min-h-[4lh] md:min-h-[3lh]" style={{ color: "var(--app-text-muted)" }}>
                   Wins Above Replacement (WAR): how far each nominee ran ahead of a replacement-level candidate of their party in every race 2016–2025, once the seat&apos;s lean, the year&apos;s environment, incumbency and structural money are taken out.
                 </p>
               </div>
-              <div className="shrink-0 sm:text-right">
+              <div className="flex shrink-0 items-end justify-between gap-6 sm:justify-end sm:gap-8">
+              <div className="sm:text-right">
                 <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Races scored</div>
                 <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 1 }}>{totals.races.toLocaleString()}</div>
-                <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>{totals.performances.toLocaleString()} candidate-performances<span className="sm:hidden"> · </span><br className="hidden sm:inline" />P · S · G · H</div>
+                <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>{totals.performances.toLocaleString()} candidate-performances</div>
+              </div>
+              <TplViewSwitch to="map" />
               </div>
             </div>
-            <TplViewSwitch to="map" />
           </div>
         </div>
       </div>

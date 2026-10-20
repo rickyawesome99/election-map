@@ -226,11 +226,13 @@ function ModelSkeleton() {
   return (
     <>
       <Hero>
-        <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div className="min-w-0 space-y-4"><Title>True Partisan Lean</Title><Lines widths={["w-full max-w-xl", "w-3/4 max-w-md"]} /></div>
-          <div className="flex flex-col space-y-2 sm:items-end"><Sk className="h-3 w-28" /><Sk className="h-12 w-36" /><Sk className="h-3 w-36" /></div>
+          <div className="flex items-end justify-between gap-6 sm:justify-end sm:gap-8">
+            <div className="flex flex-col space-y-2 sm:items-end"><Sk className="h-3 w-28" /><Sk className="h-12 w-36" /><Sk className="h-3 w-36" /></div>
+            <div className="flex flex-col items-end space-y-2"><Sk className="h-10 w-36 rounded-full" /><Sk className="h-3 w-24" /></div>
+          </div>
         </div>
-        <div className="mt-6 flex items-center justify-between pt-5" style={{ borderTop: "1px solid var(--app-border)" }}><Sk className="h-10 w-40 rounded-full" /><Sk className="h-3 w-24" /></div>
       </Hero>
       <Body>
         <LoadingText />
@@ -247,7 +249,7 @@ function ModelSkeleton() {
 function AnalysisSkeleton() {
   return (
     <>
-      <Hero><Title>Analysis</Title><div className="mt-3"><LoadingText /></div></Hero>
+      <Hero><Title>Analysis</Title><div className="mt-2"><LoadingText /></div></Hero>
       <Body>
         {[3, 2].map((rows, s) => (
           <div key={s} className={s ? "mt-12" : "mt-4"}>
@@ -508,15 +510,17 @@ const SKELETONS: Record<PendingKind, (p: { path: string }) => ReactNode> = {
   county: CountySkeleton,
 };
 
-/** Placeholder page shown between a click and the new page's arrival. Its top edge sits where
- *  the page content starts (under the header, and under the tab bar below xl). */
+/** Placeholder page shown between a click and the new page's arrival. It covers the whole
+ *  viewport, behind the sticky header (z-50), so no strip of the old page shows through when
+ *  the tab bar below lg is collapsed or mid-slide; its padding starts the skeleton where page
+ *  content starts (under the header, and under the tab bar's reserved space below lg). */
 export default function PendingPage({ nav }: { nav: PendingNav }) {
   const Skeleton = SKELETONS[nav.kind];
   return (
     <div
       role="status"
       aria-label="Loading"
-      className="nav-pending-cover fixed inset-x-0 bottom-0 z-40 overflow-hidden top-[calc(var(--app-chrome-h,56px)+45px)] lg:top-[var(--app-chrome-h,56px)]"
+      className="nav-pending-cover fixed inset-0 z-40 overflow-hidden pt-[calc(var(--app-chrome-h,56px)+45px)] lg:pt-[var(--app-chrome-h,56px)]"
       style={{ background: "var(--app-bg)" }}
     >
       <Skeleton path={nav.path} />

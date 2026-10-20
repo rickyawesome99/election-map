@@ -41,7 +41,9 @@ RAW = fetch("raw_polls", "https://raw.githubusercontent.com/fivethirtyeight/data
 ARCH = {n: fetch(n, WAYBACK.format(n)) for n in ARCHIVE}
 
 TYPE = {"Pres-G": "P", "Sen-G": "S", "Gov-G": "G", "House-G": "H", "House-G-US": "GB"}
-FIELDS = ["year", "type", "location", "race", "pollster_id", "pollster", "partisan", "methodology", "date", "days", "sample", "poll_margin", "actual_margin", "error", "oriented", "url"]
+# poll_dem / poll_rep: the two shares behind poll_margin (= poll_rep − poll_dem); in a contest with no D–R pair they are
+# the second and first candidate, the same order as the margin
+FIELDS = ["year", "type", "location", "race", "pollster_id", "pollster", "partisan", "methodology", "date", "days", "sample", "poll_margin", "actual_margin", "error", "oriented", "url", "poll_dem", "poll_rep"]
 out = []
 
 # the poll's source link, from the archive (2018 on; raw_polls has none, but shares 538's poll_id)
@@ -63,10 +65,13 @@ for r in csv.DictReader(open(RAW)):
     o = orient(r["cand1_party"], r["cand2_party"])
     s = o or 1
     pm, am = s * float(r["margin_poll"]), s * float(r["margin_actual"])
+    c1, c2 = float(r["cand1_pct"]), float(r["cand2_pct"])  # margin_poll = cand1 − cand2
+    pd_, pr_ = (c1, c2) if o == -1 else (c2, c1)
     part = [p for p in r["partisan"].split(",") if p in ("DEM", "REP")]
     out.append({"year": int(r["electiondate"][:4]), "type": t, "location": r["location"], "race": r["race"], "pollster_id": r["pollster_rating_id"], "pollster": r["pollster"],
                 "partisan": {"DEM": "D", "REP": "R"}[part[0]] if len(part) == 1 else "", "methodology": r["methodology"], "date": r["polldate"], "days": int(r["time_to_election"]),
-                "sample": "" if r["samplesize"] in ("NA", "") else round(float(r["samplesize"])), "poll_margin": round(pm, 2), "actual_margin": round(am, 2), "error": round(pm - am, 2), "oriented": 1 if o else 0, "url": URLS.get(r["poll_id"], "")})
+                "sample": "" if r["samplesize"] in ("NA", "") else round(float(r["samplesize"])), "poll_margin": round(pm, 2), "actual_margin": round(am, 2), "error": round(pm - am, 2), "oriented": 1 if o else 0, "url": URLS.get(r["poll_id"], ""),
+                "poll_dem": round(pd_, 2), "poll_rep": round(pr_, 2)})
 n_raw = len(out)
 
 # ── 2023–24: archive polls graded against the site's results ─────────────────
@@ -134,7 +139,7 @@ for (office, _), q in questions.items():
     if days < 0 or days > MAX_DAYS or date(r["end_date"]) >= el: stats["skip: outside window"] += 1; continue
     kind = {"P": "Pres-G", "S": "Sen-GS" if len(res) > 3 and res[3] else "Sen-G", "G": "Gov-G", "H": "House-G", "GB": "House-G"}[office]
     race = f"{year}_{kind}_{loc}"
-    polls.setdefault((office, r["poll_id"], race), []).append({"r": r, "margin": p - d, "actual": res[2], "days": days, "mid": mid, "loc": loc, "year": year})
+    polls.setdefault((office, r["poll_id"], race), []).append({"r": r, "margin": p - d, "dem": d, "rep": p, "actual": res[2], "days": days, "mid": mid, "loc": loc, "year": year})
 for (office, _, race), qs in polls.items():
     best = min(POP_RANK.get(q["r"]["population"], 9) for q in qs)
     qs = [q for q in qs if POP_RANK.get(q["r"]["population"], 9) == best]
@@ -142,7 +147,8 @@ for (office, _, race), qs in polls.items():
     samples = [float(q["r"]["sample_size"]) for q in qs if q["r"]["sample_size"]]
     out.append({"year": qs[0]["year"], "type": office, "location": qs[0]["loc"], "race": race, "pollster_id": r["pollster_rating_id"], "pollster": r["pollster_rating_name"] or r["pollster"],
                 "partisan": {"DEM": "D", "REP": "R"}.get(r["partisan"], ""), "methodology": r["methodology"], "date": qs[0]["mid"].isoformat(), "days": qs[0]["days"],
-                "sample": round(sum(samples) / len(samples)) if samples else "", "poll_margin": round(pm, 2), "actual_margin": round(qs[0]["actual"], 2), "error": round(pm - qs[0]["actual"], 2), "oriented": 1, "url": r["url"] if r["url"].startswith("http") else ""})
+                "sample": round(sum(samples) / len(samples)) if samples else "", "poll_margin": round(pm, 2), "actual_margin": round(qs[0]["actual"], 2), "error": round(pm - qs[0]["actual"], 2), "oriented": 1, "url": r["url"] if r["url"].startswith("http") else "",
+                "poll_dem": round(sum(q["dem"] for q in qs) / len(qs), 2), "poll_rep": round(sum(q["rep"] for q in qs) / len(qs), 2)})
 
 out.sort(key=lambda x: (x["year"], x["type"], x["location"], x["race"], x["date"], x["pollster"]))
 with open(OUT, "w", newline="") as f:
