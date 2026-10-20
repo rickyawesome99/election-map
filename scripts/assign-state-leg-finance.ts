@@ -155,7 +155,9 @@ function assign(file: string) {
   const out: Record<string, unknown> = { state: raw.state, cycle: raw.cycle, source: raw.source, dataThrough: raw.dataThrough };
   for (const [p, r] of hits) {
     const ch = ((out[p.chamber] as Record<string, unknown[]>) ??= {});
-    (ch[p.district] ??= []).push({ name: r.name, party: PARTY_LABEL[p.party], incumbent: p.incumbent, contributions: r.contributions, expenditures: r.expenditures ?? null });
+    // `candidate`: the atlas name this record was matched to — a committee-named filing ("PARRISH FOR NC HOUSE")
+    // carries it so lib/stateLegMoney.ts can join it without re-matching by name.
+    (ch[p.district] ??= []).push({ name: r.name, candidate: p.name, party: PARTY_LABEL[p.party], incumbent: p.incumbent, contributions: r.contributions, expenditures: r.expenditures ?? null });
   }
   mkdirSync(OUT, { recursive: true });
   writeFileSync(`${OUT}/${file}`, JSON.stringify(out, null, 1));

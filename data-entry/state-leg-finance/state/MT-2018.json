@@ -7,6 +7,7 @@
   "1": [
    {
     "name": "Coats, Donald ",
+    "candidate": "Donald Coats",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 230,
@@ -14,6 +15,7 @@
    },
    {
     "name": "Gunderson, Steve ",
+    "candidate": "Steve Gunderson",
     "party": "Republican",
     "incumbent": true,
     "contributions": 960,
@@ -23,6 +25,7 @@
   "2": [
    {
     "name": "Duram, Neil  A",
+    "candidate": "Neil A. Duram",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -32,6 +35,7 @@
   "3": [
    {
     "name": "O'Neil, Jerry ",
+    "candidate": "Jerry Oneil",
     "party": "Republican",
     "incumbent": false,
     "contributions": 10178.28,
@@ -39,6 +43,7 @@
    },
    {
     "name": "Perry, Zac ",
+    "candidate": "Zac Perry",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 8038.28,
@@ -48,6 +53,7 @@
   "4": [
    {
     "name": "Regier, Matthew ",
+    "candidate": "Matt Regier",
     "party": "Republican",
     "incumbent": true,
     "contributions": 3892,
@@ -55,6 +61,7 @@
    },
    {
     "name": "Shirley, Kwen ",
+    "candidate": "Kwen Shirley",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4513.2,
@@ -64,6 +71,7 @@
   "5": [
    {
     "name": "Dyson-McGlenn, Cindy  K",
+    "candidate": "Cindy Dyson",
     "party": "Other",
     "incumbent": false,
     "contributions": 4137.99,
@@ -71,6 +79,7 @@
    },
    {
     "name": "Fern, David (Dave) ",
+    "candidate": "Dave Fern",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 10256.1,
@@ -80,6 +89,7 @@
   "6": [
    {
     "name": "Custer, Mary  J",
+    "candidate": "Mary Custer",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4839.09,
@@ -87,6 +97,7 @@
    },
    {
     "name": "Glimm, Carl ",
+    "candidate": "Carl Glimm",
     "party": "Republican",
     "incumbent": true,
     "contributions": 3273.11,
@@ -96,6 +107,7 @@
   "7": [
    {
     "name": "Cossitt, James  H",
+    "candidate": "James H. Cossitt",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3030,
@@ -103,6 +115,7 @@
    },
    {
     "name": "Garner, Frank ",
+    "candidate": "Frank Garner",
     "party": "Republican",
     "incumbent": true,
     "contributions": 12973.6,
@@ -112,6 +125,7 @@
   "8": [
    {
     "name": "Daoud, Sudad  S",
+    "candidate": "Sid Daoud",
     "party": "Other",
     "incumbent": false,
     "contributions": 2236.34,
@@ -121,6 +135,7 @@
   "9": [
    {
     "name": "Dunn, David  W",
+    "candidate": "David Dunn",
     "party": "Republican",
     "incumbent": false,
     "contributions": 3280,
@@ -128,6 +143,7 @@
    },
    {
     "name": "petersen, robert  d",
+    "candidate": "Bob Petersen",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 520,
@@ -137,6 +153,7 @@
   "10": [
    {
     "name": "Jones, William  J",
+    "candidate": "Bill Jones",
     "party": "Other",
     "incumbent": false,
     "contributions": 958.03,
@@ -144,6 +161,7 @@
    },
    {
     "name": "Noland, Mark  R.",
+    "candidate": "Mark Noland",
     "party": "Republican",
     "incumbent": true,
     "contributions": 4052,
@@ -153,6 +171,7 @@
   "11": [
    {
     "name": "Blair, JoBeth ",
+    "candidate": "Jobeth Blair",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 19844.88,
@@ -160,6 +179,7 @@
    },
    {
     "name": "Skees, Derek ",
+    "candidate": "Derek Skees",
     "party": "Republican",
     "incumbent": true,
     "contributions": 2555,
@@ -169,6 +189,7 @@
   "12": [
    {
     "name": "Evans, Susan  T",
+    "candidate": "Susan T. Evans",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 2709.76,
@@ -176,6 +197,7 @@
    },
    {
     "name": "Hertz, Gregory  J.",
+    "candidate": "Greg Hertz",
     "party": "Republican",
     "incumbent": true,
     "contributions": 12847.66,
@@ -185,6 +207,7 @@
   "13": [
    {
     "name": "Brown, Bob  j",
+    "candidate": "Bob Brown",
     "party": "Republican",
     "incumbent": true,
     "contributions": 1590,
@@ -192,6 +215,7 @@
    },
    {
     "name": "Gross, Leona  C",
+    "candidate": "Chris Gross",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 2660,
@@ -201,6 +225,7 @@
   "14": [
    {
     "name": "Loge, Denley  M",
+    "candidate": "Denley M. Loge",
     "party": "Republican",
     "incumbent": true,
     "contributions": 13604.27,
@@ -208,6 +233,7 @@
    },
    {
     "name": "MAGONE, DIANE  L",
+    "candidate": "Diane L. Magone",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4485.75,
@@ -217,6 +243,7 @@
   "15": [
    {
     "name": "weatherwax , Marvin  R",
+    "candidate": "Marvin R. Weatherwax Jr.",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 180,
@@ -226,6 +253,7 @@
   "16": [
    {
     "name": "Runningwolf, Tyson  T",
+    "candidate": "Tyson T. Runningwolf",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 360,
@@ -235,6 +263,7 @@
   "17": [
    {
     "name": "Fitzgerald, Ross  H",
+    "candidate": "Ross H. Fitzgerald",
     "party": "Republican",
     "incumbent": true,
     "contributions": 7118,
@@ -242,6 +271,7 @@
    },
    {
     "name": "Kerr, Rick ",
+    "candidate": "Richard Kerr",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 2174.72,
@@ -251,6 +281,7 @@
   "18": [
    {
     "name": "Jones, Llew  E.",
+    "candidate": "Llew Jones",
     "party": "Republican",
     "incumbent": false,
     "contributions": 14660.66,
@@ -260,6 +291,7 @@
   "19": [
    {
     "name": "McKamey, Wendy ",
+    "candidate": "Wendy McKamey",
     "party": "Republican",
     "incumbent": true,
     "contributions": 13051,
@@ -267,6 +299,7 @@
    },
    {
     "name": "Melton, Lynelle ",
+    "candidate": "Lynelle Melton",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3734.57,
@@ -276,6 +309,7 @@
   "20": [
    {
     "name": "Anderson, Fred  I",
+    "candidate": "Fred Anderson",
     "party": "Republican",
     "incumbent": true,
     "contributions": 15562.59,
@@ -283,6 +317,7 @@
    },
    {
     "name": "Sunchild, Keaton ",
+    "candidate": "Keaton Sunchild",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5303.85,
@@ -292,6 +327,7 @@
   "21": [
    {
     "name": "Buttrey, Francis  E",
+    "candidate": "Ed Buttrey",
     "party": "Republican",
     "incumbent": false,
     "contributions": 14697,
@@ -299,6 +335,7 @@
    },
    {
     "name": "Ford, Leesha ",
+    "candidate": "Leesha Ford",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 23712.88,
@@ -308,6 +345,7 @@
   "22": [
    {
     "name": "Dever, Laura  E",
+    "candidate": "Laura Dever",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 17507.15,
@@ -315,6 +353,7 @@
    },
    {
     "name": "Sheldon-Galloway, LOLA ",
+    "candidate": "Lola Sheldongalloway",
     "party": "Republican",
     "incumbent": true,
     "contributions": 10926.96,
@@ -324,6 +363,7 @@
   "23": [
    {
     "name": "Hamlett, Bradley  M",
+    "candidate": "Brad Hamlett",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 3964.66,
@@ -331,6 +371,7 @@
    },
    {
     "name": "smith, william ",
+    "candidate": "William Smith",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2615,
@@ -340,6 +381,7 @@
   "24": [
    {
     "name": "Bessette, Barbara ",
+    "candidate": "Barbara Bessette",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 14397.53,
@@ -347,6 +389,7 @@
    },
    {
     "name": "McNamara, James  M",
+    "candidate": "Mike McNamara",
     "party": "Republican",
     "incumbent": false,
     "contributions": 4063.07,
@@ -356,6 +399,7 @@
   "25": [
    {
     "name": "Krotkov, Jasmine ",
+    "candidate": "Jasmine Krotkov",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 15081.01,
@@ -363,6 +407,7 @@
    },
    {
     "name": "Trebas, Jeremy  R",
+    "candidate": "Jeremy Trebas",
     "party": "Republican",
     "incumbent": true,
     "contributions": 7126,
@@ -372,6 +417,7 @@
   "26": [
    {
     "name": "Cooper Sr, Michael  K",
+    "candidate": "Michael K. Cooper Sr.",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2733.5,
@@ -379,6 +425,7 @@
    },
    {
     "name": "Schreiner, Casey  J",
+    "candidate": "Casey Schreiner",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 16714.15,
@@ -388,6 +435,7 @@
   "27": [
    {
     "name": "Kassmier , Joshua  James",
+    "candidate": "Joshua J. Kassmier",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6648.02,
@@ -395,6 +443,7 @@
    },
    {
     "name": "Nelsen, Dan ",
+    "candidate": "Dan Nelsen",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 0,
@@ -404,6 +453,7 @@
   "28": [
    {
     "name": "Bachmeier, Jacob  D.",
+    "candidate": "Jacob D. Bachmeier",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 9293.09,
@@ -411,6 +461,7 @@
    },
    {
     "name": "Burns, Thomas  C",
+    "candidate": "Conor Burns",
     "party": "Other",
     "incumbent": false,
     "contributions": 640,
@@ -418,6 +469,7 @@
    },
    {
     "name": "Sivertsen, Robert  O",
+    "candidate": "Robert Sivertsen",
     "party": "Other",
     "incumbent": false,
     "contributions": 2005,
@@ -427,6 +479,7 @@
   "29": [
    {
     "name": "Bartel, Dan ",
+    "candidate": "Dan Bartel",
     "party": "Republican",
     "incumbent": true,
     "contributions": 2661.64,
@@ -434,6 +487,7 @@
    },
    {
     "name": "Stansberry, Rachel ",
+    "candidate": "Rachel Stansberry",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 8211.58,
@@ -443,6 +497,7 @@
   "30": [
    {
     "name": "Nicholes, Kathryn  G.H.",
+    "candidate": "Kathryn G. H. Nicholes",
     "party": "Other",
     "incumbent": false,
     "contributions": 988.95,
@@ -452,6 +507,7 @@
   "31": [
    {
     "name": "Smith, Bridget ",
+    "candidate": "Bridget Smith",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1720,
@@ -461,6 +517,7 @@
   "32": [
    {
     "name": "Meyers, Gilbert  B",
+    "candidate": "Gilbert Bruce Meyers",
     "party": "Republican",
     "incumbent": false,
     "contributions": 3025,
@@ -468,6 +525,7 @@
    },
    {
     "name": "WINDY BOY, JONATHAN ",
+    "candidate": "Jonathan Windyboy",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 180,
@@ -477,6 +535,7 @@
   "33": [
    {
     "name": "Knudsen, Casey  J",
+    "candidate": "Casey Knudsen",
     "party": "Republican",
     "incumbent": true,
     "contributions": 2060.75,
@@ -486,6 +545,7 @@
   "34": [
    {
     "name": "Knudsen, Rhonda ",
+    "candidate": "Rhonda Knudsen",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2390,
@@ -495,6 +555,7 @@
   "35": [
    {
     "name": "Krautter, Joel  G",
+    "candidate": "Joel G. Krautter",
     "party": "Republican",
     "incumbent": false,
     "contributions": 12027.45,
@@ -504,6 +565,7 @@
   "36": [
    {
     "name": "Doane, Alan  J",
+    "candidate": "Alan Doane",
     "party": "Republican",
     "incumbent": true,
     "contributions": 1280,
@@ -513,6 +575,7 @@
   "37": [
    {
     "name": "Moore, Frederick (Eric)  D",
+    "candidate": "Frederick Moore",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -522,6 +585,7 @@
   "38": [
    {
     "name": "Holmlund, Kenneth  L",
+    "candidate": "Kenneth Holmlund",
     "party": "Republican",
     "incumbent": true,
     "contributions": 8355,
@@ -529,6 +593,7 @@
    },
    {
     "name": "Pezzarossi, Bert ",
+    "candidate": "Bert Pezzarossi",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4550,
@@ -538,6 +603,7 @@
   "39": [
    {
     "name": "Custer, Geraldine ",
+    "candidate": "Geraldine Custer",
     "party": "Republican",
     "incumbent": true,
     "contributions": 1960,
@@ -547,6 +613,7 @@
   "40": [
    {
     "name": "Barton, Lisa ",
+    "candidate": "Lisa Barton",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1786.81,
@@ -554,6 +621,7 @@
    },
    {
     "name": "Usher, Barry ",
+    "candidate": "Barry Usher",
     "party": "Republican",
     "incumbent": true,
     "contributions": 4300,
@@ -563,6 +631,7 @@
   "41": [
    {
     "name": "Peppers, Patricia  R",
+    "candidate": "Rae Peppers",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1380,
@@ -572,6 +641,7 @@
   "43": [
    {
     "name": "Koch, Blair  L",
+    "candidate": "Blair Koch",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3679,
@@ -579,6 +649,7 @@
    },
    {
     "name": "Webb, Peggy  S",
+    "candidate": "Peggy Webb",
     "party": "Republican",
     "incumbent": true,
     "contributions": 7400.01,
@@ -588,6 +659,7 @@
   "44": [
    {
     "name": "Cabrera, Ming  A",
+    "candidate": "Ming Cabrera",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 11561.65,
@@ -595,6 +667,7 @@
    },
    {
     "name": "Mortensen, Dale ",
+    "candidate": "Dale Mortensen",
     "party": "Republican",
     "incumbent": true,
     "contributions": 4417,
@@ -604,6 +677,7 @@
   "45": [
    {
     "name": "Choriki, Danny  S",
+    "candidate": "Danny Choriki",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3637.5,
@@ -611,6 +685,7 @@
    },
    {
     "name": "Zolnikov, Daniel ",
+    "candidate": "Daniel Zolnikov",
     "party": "Republican",
     "incumbent": true,
     "contributions": 19804.16,
@@ -620,6 +695,7 @@
   "46": [
    {
     "name": "Giuliano, Anne ",
+    "candidate": "Anne Giuliano",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 36985.9,
@@ -627,6 +703,7 @@
    },
    {
     "name": "Mercer, Bill ",
+    "candidate": "Bill Mercer",
     "party": "Republican",
     "incumbent": false,
     "contributions": 27721.45,
@@ -636,6 +713,7 @@
   "47": [
    {
     "name": "Kelker, Katharin  A.",
+    "candidate": "Kathy Kelker",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 13790.4,
@@ -643,6 +721,7 @@
    },
    {
     "name": "Zaugg, Colton  L",
+    "candidate": "Colton Zaugg",
     "party": "Republican",
     "incumbent": false,
     "contributions": 7210,
@@ -652,6 +731,7 @@
   "48": [
    {
     "name": "Johnson, Denise  E",
+    "candidate": "Denise Johnson",
     "party": "Republican",
     "incumbent": false,
     "contributions": 11236.63,
@@ -659,6 +739,7 @@
    },
    {
     "name": "Karjala, Jessica  L",
+    "candidate": "Jessica L. Karjala",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 12574.14,
@@ -668,6 +749,7 @@
   "49": [
    {
     "name": "Kerr Carpenter, Emma ",
+    "candidate": "Emma Kerrcarpenter",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9820,
@@ -675,6 +757,7 @@
    },
    {
     "name": "Nygaard, Colin  M",
+    "candidate": "Colin Nygaard",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6492.32,
@@ -684,6 +767,7 @@
   "50": [
    {
     "name": "Bahr, Brenna (Jade) ",
+    "candidate": "Jade Bahr",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 11852.51,
@@ -691,6 +775,7 @@
    },
    {
     "name": "McKenty , Nathan  ",
+    "candidate": "Nathan McKenty",
     "party": "Other",
     "incumbent": false,
     "contributions": 460,
@@ -698,6 +783,7 @@
    },
    {
     "name": "eggart, quentin  w",
+    "candidate": "Quentin Eggart",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2215,
@@ -707,6 +793,7 @@
   "51": [
    {
     "name": "Fleming, Frank  R",
+    "candidate": "Frank Fleming",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6988,
@@ -714,6 +801,7 @@
    },
    {
     "name": "Wilson, Darryl  S.",
+    "candidate": "Darryl S. Wilson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 8890,
@@ -723,6 +811,7 @@
   "52": [
    {
     "name": "Garcia, Rodney ",
+    "candidate": "Rodney Garcia",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6622.5,
@@ -730,6 +819,7 @@
    },
    {
     "name": "Marquez, Alonzo 'Amelia' ",
+    "candidate": "Amelia Marquez",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 18060.49,
@@ -739,6 +829,7 @@
   "53": [
    {
     "name": "Lenz, Dennis  R.",
+    "candidate": "Dennis Lenz",
     "party": "Republican",
     "incumbent": true,
     "contributions": 2510,
@@ -746,6 +837,7 @@
    },
    {
     "name": "Lindley, Clementine  TL",
+    "candidate": "Clementine Lindley",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 12940.66,
@@ -755,6 +847,7 @@
   "54": [
    {
     "name": "McKee, Benjamin  F",
+    "candidate": "Ben McKee",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 17183.99,
@@ -762,6 +855,7 @@
    },
    {
     "name": "Moore, Terrill  R",
+    "candidate": "Terry Moore",
     "party": "Republican",
     "incumbent": false,
     "contributions": 28495,
@@ -771,6 +865,7 @@
   "55": [
    {
     "name": "O'Donnell, Kathleen  T",
+    "candidate": "Kathleen Odonnell",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 380,
@@ -778,6 +873,7 @@
    },
    {
     "name": "Ricci, Vince  J",
+    "candidate": "Vince Ricci",
     "party": "Republican",
     "incumbent": true,
     "contributions": 9337,
@@ -787,6 +883,7 @@
   "56": [
    {
     "name": "Lind, Janna ",
+    "candidate": "Janna J. Lind",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3260.06,
@@ -794,6 +891,7 @@
    },
    {
     "name": "Vinton, Susanne  E.",
+    "candidate": "Sue Vinton",
     "party": "Republican",
     "incumbent": true,
     "contributions": 6310,
@@ -803,6 +901,7 @@
   "57": [
    {
     "name": "Mandeville, Forrest  J",
+    "candidate": "Forrest J. Mandeville",
     "party": "Republican",
     "incumbent": true,
     "contributions": 4847.33,
@@ -812,6 +911,7 @@
   "58": [
    {
     "name": "Berglee, Seth  M",
+    "candidate": "Seth Berglee",
     "party": "Republican",
     "incumbent": true,
     "contributions": 4110,
@@ -819,6 +919,7 @@
    },
    {
     "name": "Drew, Anna  T",
+    "candidate": "Anna Drew",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 24300.12,
@@ -828,6 +929,7 @@
   "59": [
    {
     "name": "Iandiorio, Quenby ",
+    "candidate": "Quenby Iandiorio",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 10032.52,
@@ -835,6 +937,7 @@
    },
    {
     "name": "Redfield, Lawrence ",
+    "candidate": "Alan Redfield",
     "party": "Republican",
     "incumbent": true,
     "contributions": 7340,
@@ -844,6 +947,7 @@
   "60": [
    {
     "name": "Bishop, Laurie ",
+    "candidate": "Laurie Bishop",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 12619.71,
@@ -853,6 +957,7 @@
   "61": [
    {
     "name": "Hamilton, James  A",
+    "candidate": "Jim Hamilton",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 9159.1,
@@ -862,6 +967,7 @@
   "62": [
    {
     "name": "Woods, Thomas  D",
+    "candidate": "Tom Woods",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2335,
@@ -871,6 +977,7 @@
   "63": [
    {
     "name": "Brown, Zach  J",
+    "candidate": "Zach Brown",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 9085,
@@ -878,6 +985,7 @@
    },
    {
     "name": "Chester, Joseph   G",
+    "candidate": "Joey Chester",
     "party": "Republican",
     "incumbent": false,
     "contributions": 8952.62,
@@ -887,6 +995,7 @@
   "64": [
    {
     "name": "Albrecht, Denise  R",
+    "candidate": "Denise Albrecht",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 17675.66,
@@ -894,6 +1003,7 @@
    },
    {
     "name": "White, Kerry  E",
+    "candidate": "Kerry E. White",
     "party": "Republican",
     "incumbent": true,
     "contributions": 4687,
@@ -903,6 +1013,7 @@
   "65": [
    {
     "name": "Gillette, Jane ",
+    "candidate": "Jane Gillette",
     "party": "Republican",
     "incumbent": false,
     "contributions": 47497.78,
@@ -910,6 +1021,7 @@
    },
    {
     "name": "Pope, Christopher  S",
+    "candidate": "Christopher Pope",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 27383.53,
@@ -919,6 +1031,7 @@
   "66": [
    {
     "name": "Hayman, Denise ",
+    "candidate": "Denise Hayman",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 0,
@@ -928,6 +1041,7 @@
   "67": [
    {
     "name": "Burnett, Thomas  L.",
+    "candidate": "Tom Burnett",
     "party": "Republican",
     "incumbent": true,
     "contributions": 9464.68,
@@ -935,6 +1049,7 @@
    },
    {
     "name": "Menicucci, Kristine  L",
+    "candidate": "Kristine Menicucci",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 15732.97,
@@ -944,6 +1059,7 @@
   "68": [
    {
     "name": "Grubbs, Bruce ",
+    "candidate": "Bruce Grubbs",
     "party": "Republican",
     "incumbent": true,
     "contributions": 12670.5,
@@ -951,6 +1067,7 @@
    },
    {
     "name": "Mangini, Seth  A",
+    "candidate": "Seth Mangini",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 7279.99,
@@ -960,6 +1077,7 @@
   "69": [
    {
     "name": "O’Connor, Joshua-Luke ",
+    "candidate": "Joshualuke Oconnor",
     "party": "Other",
     "incumbent": false,
     "contributions": 640,
@@ -967,6 +1085,7 @@
    },
    {
     "name": "Sales, Walter ",
+    "candidate": "Walt Sales",
     "party": "Republican",
     "incumbent": true,
     "contributions": 6040,
@@ -976,6 +1095,7 @@
   "70": [
    {
     "name": "Dooling, Julie ",
+    "candidate": "Julie Dooling",
     "party": "Republican",
     "incumbent": false,
     "contributions": 12094.33,
@@ -983,6 +1103,7 @@
    },
    {
     "name": "Richards, Christopher  L",
+    "candidate": "Chris Richards",
     "party": "Other",
     "incumbent": false,
     "contributions": 0,
@@ -992,6 +1113,7 @@
   "71": [
    {
     "name": "Frederick, Jay  A",
+    "candidate": "Jay A. Frederick",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 16726.54,
@@ -999,6 +1121,7 @@
    },
    {
     "name": "Shaw, Ray  L.",
+    "candidate": "Ray L. Shaw",
     "party": "Republican",
     "incumbent": true,
     "contributions": 6916.89,
@@ -1006,6 +1129,7 @@
    },
    {
     "name": "White, Michael ",
+    "candidate": "Michael White",
     "party": "Other",
     "incumbent": false,
     "contributions": 4075.18,
@@ -1015,6 +1139,7 @@
   "72": [
    {
     "name": "Dwyer, Bill ",
+    "candidate": "Bill Dwyer",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 920,
@@ -1022,6 +1147,7 @@
    },
    {
     "name": "Welch, Tom ",
+    "candidate": "Tom Welch",
     "party": "Republican",
     "incumbent": true,
     "contributions": 4850,
@@ -1031,6 +1157,7 @@
   "73": [
    {
     "name": "Keane, Jim ",
+    "candidate": "Jim Keane",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 3278.95,
@@ -1040,6 +1167,7 @@
   "74": [
    {
     "name": "Harvey, Derek  J",
+    "candidate": "Derek J. Harvey",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 7883,
@@ -1049,6 +1177,7 @@
   "75": [
    {
     "name": "DeVries, Greg  A",
+    "candidate": "Greg Devries",
     "party": "Republican",
     "incumbent": false,
     "contributions": 4030,
@@ -1058,6 +1187,7 @@
   "76": [
    {
     "name": "Lynch, Ryan ",
+    "candidate": "Ryan Lynch",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2620,
@@ -1067,6 +1197,7 @@
   "77": [
    {
     "name": "Blom, Heather   M",
+    "candidate": "Heather Blom",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1074,6 +1205,7 @@
    },
    {
     "name": "Sweeney, Mark  A",
+    "candidate": "Mark Sweeney",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6665,
@@ -1083,6 +1215,7 @@
   "79": [
    {
     "name": "Farris-Olsen, Robert ",
+    "candidate": "Robert Farrisolsen",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 23021.52,
@@ -1092,6 +1225,7 @@
   "80": [
    {
     "name": "Beard, Rebecca  M",
+    "candidate": "Becky Beard",
     "party": "Republican",
     "incumbent": true,
     "contributions": 6620.13,
@@ -1099,6 +1233,7 @@
    },
    {
     "name": "Scott, Catherine ",
+    "candidate": "Catherine Scott",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 8801.81,
@@ -1108,6 +1243,7 @@
   "81": [
    {
     "name": "Caferro, Mary  M.",
+    "candidate": "Mary M. Caferro",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 25435.5,
@@ -1117,6 +1253,7 @@
   "82": [
    {
     "name": "Funk, Martha (Moffie)  G.",
+    "candidate": "Moffie Funk",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 8840,
@@ -1126,6 +1263,7 @@
   "83": [
    {
     "name": "Abbott, Kim  K",
+    "candidate": "Kim Abbott",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1260,
@@ -1135,6 +1273,7 @@
   "84": [
    {
     "name": "Dunwell, Mary Ann ",
+    "candidate": "Mary Ann Dunwell",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6660.66,
@@ -1144,6 +1283,7 @@
   "85": [
    {
     "name": "Jackson, Laura  M",
+    "candidate": "Laura Jackson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6717.81,
@@ -1151,6 +1291,7 @@
    },
    {
     "name": "Manzella, Theresa  M",
+    "candidate": "Theresa Manzella",
     "party": "Republican",
     "incumbent": true,
     "contributions": 23747.5,
@@ -1160,6 +1301,7 @@
   "86": [
    {
     "name": "Bedey, David  F.",
+    "candidate": "David Bedey",
     "party": "Republican",
     "incumbent": false,
     "contributions": 17328.07,
@@ -1167,6 +1309,7 @@
    },
    {
     "name": "Nickisch, Jason  F",
+    "candidate": "Jason F. Nickisch",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3152,
@@ -1176,6 +1319,7 @@
   "87": [
    {
     "name": "Ballance, Nancy  L",
+    "candidate": "Nancy Ballance",
     "party": "Republican",
     "incumbent": true,
     "contributions": 4530.66,
@@ -1185,6 +1329,7 @@
   "88": [
    {
     "name": "Gorski, Margaret  J",
+    "candidate": "Margaret Gorski",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 19912.75,
@@ -1192,6 +1337,7 @@
    },
    {
     "name": "Greef, Sharon ",
+    "candidate": "Sharon Greef",
     "party": "Republican",
     "incumbent": false,
     "contributions": 11320,
@@ -1201,6 +1347,7 @@
   "89": [
    {
     "name": "Moore, David  (Doc) ",
+    "candidate": "David Moore",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5635,
@@ -1208,6 +1355,7 @@
    },
    {
     "name": "Sullivan , Katie  ",
+    "candidate": "Katie Sullivan",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9835.2,
@@ -1217,6 +1365,7 @@
   "90": [
    {
     "name": "Knowles,  Joseph  N",
+    "candidate": "Nick Knowles",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1224,6 +1373,7 @@
    },
    {
     "name": "Marler, Marilyn  J",
+    "candidate": "Marilyn Marler",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9401.15,
@@ -1233,6 +1383,7 @@
   "91": [
    {
     "name": "Keogh, Connie ",
+    "candidate": "Connie Keogh",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 24248,
@@ -1240,6 +1391,7 @@
    },
    {
     "name": "Sardot, Aldo ",
+    "candidate": "Aldo Sardot",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1249,6 +1401,7 @@
   "92": [
    {
     "name": "Bridges, Lee ",
+    "candidate": "Lee Bridges",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 20410.82,
@@ -1256,6 +1409,7 @@
    },
    {
     "name": "Hopkins, Mike ",
+    "candidate": "Mike Hopkins",
     "party": "Republican",
     "incumbent": true,
     "contributions": 12368,
@@ -1265,6 +1419,7 @@
   "93": [
    {
     "name": "Read, Joseph  l",
+    "candidate": "Joe Read",
     "party": "Republican",
     "incumbent": false,
     "contributions": 4065.38,
@@ -1274,6 +1429,7 @@
   "94": [
    {
     "name": "Dudik, Kimberly  P",
+    "candidate": "Kimberly P. Dudik",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 33126.18,
@@ -1281,6 +1437,7 @@
    },
    {
     "name": "Rehbein, Dean  L",
+    "candidate": "Dean Rehbein",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5534.06,
@@ -1290,6 +1447,7 @@
   "95": [
    {
     "name": "Kenck, Donald  A",
+    "candidate": "Donald Kenck",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1297,6 +1455,7 @@
    },
    {
     "name": "Morigeau, Shane  A.",
+    "candidate": "Shane A. Morigeau",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 14822.14,
@@ -1306,6 +1465,7 @@
   "96": [
    {
     "name": "Hertz, Adam ",
+    "candidate": "Adam Hertz",
     "party": "Republican",
     "incumbent": true,
     "contributions": 24010,
@@ -1313,6 +1473,7 @@
    },
    {
     "name": "Winter, Thomas ",
+    "candidate": "Thomas Winter",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 46274.53,
@@ -1322,6 +1483,7 @@
   "97": [
    {
     "name": "Maloney, Patrick  T",
+    "candidate": "Patrick Maloney",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 230,
@@ -1329,6 +1491,7 @@
    },
    {
     "name": "Tschida, Bradley  E.",
+    "candidate": "Bradley E. Tschida",
     "party": "Republican",
     "incumbent": true,
     "contributions": 12975.76,
@@ -1338,6 +1501,7 @@
   "98": [
    {
     "name": "Curdy, Willus ",
+    "candidate": "Willis Curdy",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6208.36,
@@ -1345,6 +1509,7 @@
    },
    {
     "name": "Sadler, Jim ",
+    "candidate": "Jim Sadler",
     "party": "Republican",
     "incumbent": false,
     "contributions": 1645,
@@ -1354,6 +1519,7 @@
   "99": [
    {
     "name": "Ryan, Marilyn  J",
+    "candidate": "Marilyn Ryan",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 13596.81,
@@ -1361,6 +1527,7 @@
    },
    {
     "name": "Tschida , Raney  J",
+    "candidate": "Raney Tschida",
     "party": "Republican",
     "incumbent": false,
     "contributions": 1247.49,
@@ -1370,6 +1537,7 @@
   "100": [
    {
     "name": "Olsen, Andrea ",
+    "candidate": "Andrea Olsen",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 4135,
@@ -1381,6 +1549,7 @@
   "1": [
    {
     "name": "Cuffe, Mike ",
+    "candidate": "Mike Cuffe",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5183.66,
@@ -1390,6 +1559,7 @@
   "4": [
    {
     "name": "Blasdel, Mark  W.",
+    "candidate": "Mark W. Blasdel",
     "party": "Republican",
     "incumbent": true,
     "contributions": 10947.66,
@@ -1397,6 +1567,7 @@
    },
    {
     "name": "Taylor-Mahnke, Diane  F",
+    "candidate": "Diane Taylormahnke",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4472.5,
@@ -1406,6 +1577,7 @@
   "5": [
    {
     "name": "Keenan, Bob ",
+    "candidate": "Bob Keenan",
     "party": "Republican",
     "incumbent": true,
     "contributions": 0,
@@ -1415,6 +1587,7 @@
   "8": [
    {
     "name": "Webber, Susan  A",
+    "candidate": "Susan A. Webber",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 540,
@@ -1424,6 +1597,7 @@
   "9": [
    {
     "name": "Dyer, Kurt ",
+    "candidate": "Kurt J. Dyer",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1195,
@@ -1431,6 +1605,7 @@
    },
    {
     "name": "Gillespie, Bruce (Butch)  D.",
+    "candidate": "Bruce Gillespie",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5847,
@@ -1440,6 +1615,7 @@
   "11": [
    {
     "name": "Jacobson, Tom ",
+    "candidate": "Tom Jacobson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 18581.35,
@@ -1447,6 +1623,7 @@
    },
    {
     "name": "Rosendale, Adam  J",
+    "candidate": "Adam Rosendale",
     "party": "Republican",
     "incumbent": false,
     "contributions": 4915,
@@ -1456,6 +1633,7 @@
   "12": [
    {
     "name": "Boland, Cydnie (Carlie)  C",
+    "candidate": "Carlie Boland",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 15004.02,
@@ -1463,6 +1641,7 @@
    },
    {
     "name": "Galloway, Steven  E",
+    "candidate": "Steven E. Galloway",
     "party": "Republican",
     "incumbent": false,
     "contributions": 11357.06,
@@ -1472,6 +1651,7 @@
   "13": [
    {
     "name": "Hoven, Brian  E",
+    "candidate": "Brian Hoven",
     "party": "Republican",
     "incumbent": true,
     "contributions": 13331.19,
@@ -1479,6 +1659,7 @@
    },
    {
     "name": "Moretti, Bob ",
+    "candidate": "Bob Moretti",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3346,
@@ -1488,6 +1669,7 @@
   "14": [
    {
     "name": "Tuss, Paul ",
+    "candidate": "Paul Tuss",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 50159.07,
@@ -1495,6 +1677,7 @@
    },
    {
     "name": "tempel, russel  e",
+    "candidate": "Russel E. Tempel",
     "party": "Republican",
     "incumbent": false,
     "contributions": 22204.68,
@@ -1504,6 +1687,7 @@
   "19": [
    {
     "name": "Bogner, Kenneth ",
+    "candidate": "Kenneth Bogner",
     "party": "Republican",
     "incumbent": false,
     "contributions": 10927,
@@ -1513,6 +1697,7 @@
   "20": [
    {
     "name": "Ankney, Duane ",
+    "candidate": "Duane Ankney",
     "party": "Republican",
     "incumbent": true,
     "contributions": 5345.66,
@@ -1522,6 +1707,7 @@
   "22": [
    {
     "name": "Kary, Douglas (Doug) ",
+    "candidate": "Douglas Kary",
     "party": "Republican",
     "incumbent": true,
     "contributions": 11776.96,
@@ -1529,6 +1715,7 @@
    },
    {
     "name": "Merecki, Jennifer ",
+    "candidate": "Jennifer Merecki",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 13708.77,
@@ -1538,6 +1725,7 @@
   "24": [
    {
     "name": "McGillvray, Tom  V",
+    "candidate": "Tom McGillvray",
     "party": "Republican",
     "incumbent": false,
     "contributions": 60986.57,
@@ -1545,6 +1733,7 @@
    },
    {
     "name": "McNally, Mary  R.",
+    "candidate": "Mary McNally",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 51638.49,
@@ -1554,6 +1743,7 @@
   "27": [
    {
     "name": "Smith, Cary  L.",
+    "candidate": "Cary L. Smith",
     "party": "Republican",
     "incumbent": true,
     "contributions": 8680.66,
@@ -1561,6 +1751,7 @@
    },
    {
     "name": "Stafford, Bryan ",
+    "candidate": "Bryan Stafford",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3994.45,
@@ -1570,6 +1761,7 @@
   "29": [
    {
     "name": "Howard, David ",
+    "candidate": "David Howard",
     "party": "Republican",
     "incumbent": true,
     "contributions": 12700,
@@ -1577,6 +1769,7 @@
    },
    {
     "name": "Scanlin , Elizabeth ",
+    "candidate": "Elizabeth Scanlin",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 16246.27,
@@ -1586,6 +1779,7 @@
   "30": [
    {
     "name": "Esp, John ",
+    "candidate": "John Esp",
     "party": "Republican",
     "incumbent": false,
     "contributions": 30004.34,
@@ -1593,6 +1787,7 @@
    },
    {
     "name": "Vermillion, Dan  D",
+    "candidate": "Dan Vermillion",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 67226.45,
@@ -1602,6 +1797,7 @@
   "32": [
    {
     "name": "Flowers, Patrick  J",
+    "candidate": "Pat Flowers",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 58224.79,
@@ -1609,6 +1805,7 @@
    },
    {
     "name": "Hinkle, Jedediah ",
+    "candidate": "Jedediah Hinkle",
     "party": "Republican",
     "incumbent": true,
     "contributions": 33573.53,
@@ -1618,6 +1815,7 @@
   "33": [
    {
     "name": "Pomnichowski, Jennifer  L",
+    "candidate": "Jennifer Pomnichowski",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 9941,
@@ -1627,6 +1825,7 @@
   "34": [
    {
     "name": "NEWVILLE, SAM ",
+    "candidate": "Sam Newville",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 10960.82,
@@ -1634,6 +1833,7 @@
    },
    {
     "name": "Vance, Gordon ",
+    "candidate": "Gordon Vance",
     "party": "Republican",
     "incumbent": true,
     "contributions": 19125.66,
@@ -1643,6 +1843,7 @@
   "41": [
    {
     "name": "Ellis, Janet ",
+    "candidate": "Janet Ellis",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 27122.38,
@@ -1650,6 +1851,7 @@
    },
    {
     "name": "Schmidt, John ",
+    "candidate": "John Schmidt",
     "party": "Republican",
     "incumbent": false,
     "contributions": 3491,
@@ -1659,6 +1861,7 @@
   "42": [
    {
     "name": "Cohenour, Jill  F.",
+    "candidate": "Jill Cohenour",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 13280.05,
@@ -1666,6 +1869,7 @@
    },
    {
     "name": "Leach, Bob ",
+    "candidate": "Bob Leach",
     "party": "Republican",
     "incumbent": false,
     "contributions": 560.8,
@@ -1675,6 +1879,7 @@
   "43": [
    {
     "name": "Ellsworth, Jason  W",
+    "candidate": "Jason W. Ellsworth",
     "party": "Republican",
     "incumbent": false,
     "contributions": 77555,
@@ -1682,6 +1887,7 @@
    },
    {
     "name": "Garber, Laura  A",
+    "candidate": "Laura Garber",
     "party": "Other",
     "incumbent": false,
     "contributions": 5348,
@@ -1691,6 +1897,7 @@
   "48": [
    {
     "name": "McConnell, Nathan  S.",
+    "candidate": "Nate McConnell",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9754.99,
@@ -1698,6 +1905,7 @@
    },
    {
     "name": "Pummill, Adam  S",
+    "candidate": "Adam S. Pummill",
     "party": "Republican",
     "incumbent": false,
     "contributions": 810,
@@ -1707,6 +1915,7 @@
   "49": [
    {
     "name": "Reynolds, Chase  C",
+    "candidate": "Chase Reynolds",
     "party": "Republican",
     "incumbent": false,
     "contributions": 33277.04,
@@ -1714,6 +1923,7 @@
    },
    {
     "name": "Sands, Diane ",
+    "candidate": "Diane Sands",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 64740.86,
@@ -1723,6 +1933,7 @@
   "50": [
    {
     "name": "Bennett, Bryce ",
+    "candidate": "Bryce Bennett",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 20795,
@@ -1730,6 +1941,7 @@
    },
    {
     "name": "Sardot, Niki ",
+    "candidate": "Niki Sardot",
     "party": "Republican",
     "incumbent": false,
     "contributions": 1390.85,

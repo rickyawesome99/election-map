@@ -1,9 +1,9 @@
-import BackButton from "@/components/BackButton";
 import PollsterGradeChip from "@/components/PollsterGradeChip";
 import PollsterRatingsTable from "@/components/PollsterRatingsTable";
 import PollsterSectionTabs from "@/components/PollsterSectionTabs";
 import RecentRacePollsTable from "@/components/RecentRacePollsTable";
 import { LedgerSectionHead } from "@/components/RaceDetailSections";
+import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import { electionYear } from "@/data/forecastData";
 import { POLLSTER_RATING_META as META, pollsterRatings, type PollsterRating } from "@/data/pollsterRatings";
 import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
@@ -138,40 +138,18 @@ const corr = (v: number) => `${v > 0.005 ? "+" : v < -0.005 ? "−" : ""}${Math.
 
 export default function PollstersPage() {
   const active = pollsterRatings.filter((r) => r.racePolls2026 + r.genericPolls2026 > 0);
-  const stats = [
-    { value: META.gradedPolls.toLocaleString(), label: "Graded polls" },
-    { value: META.graded, label: "Pollsters graded" },
-    { value: `${META.firstYear}–${META.lastYear}`, label: "Elections covered" },
-    { value: active.length, label: `Polling in ${electionYear}` },
-    { value: active.filter((r) => r.grade == null).length, label: "Of those, not yet rated" },
-  ];
+  const unrated = active.filter((r) => r.grade == null).length;
   const P = META.persistence;
   const note = "mt-4 max-w-3xl text-xs leading-relaxed";
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--party-dem) 8%, var(--app-bg)) 0%, var(--app-bg) 55%, color-mix(in srgb, var(--party-rep) 8%, var(--app-bg)) 100%)" }}>
-        <div className="mx-auto max-w-7xl px-4 pb-8 pt-3 sm:px-6 sm:pb-10">
-          <div className="-ml-2 mb-5"><BackButton /></div>
-          <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 4rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>Pollster Ratings</h1>
-          <div className="mt-3 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-            Every general-election poll taken in the last three weeks of a presidential, Senate, governor, House or
-            generic-ballot race since {META.firstYear}, scored against the result. A pollster is graded on how much closer
-            (or further) its polls landed than a typical poll of the same races, with recent cycles counting most, and
-            again within each region it polls. The last sections show which way each pollster is leaning in {electionYear},
-            and what a good record has actually been worth in the following cycle.
-          </div>
-          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
-            {stats.map((stat, i, all) => (
-              <div key={stat.label} className={i < all.length - 1 ? "pr-8" : ""} style={i < all.length - 1 ? { borderRight: "1px solid var(--app-border)" } : undefined}>
-                <div className="text-2xl font-extrabold tabular-nums">{stat.value}</div>
-                <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <StandfirstHeader kicker="Polling" title="Pollster Ratings">
+        We graded <Fig>{META.graded}</Fig> pollsters on <Fig>{META.gradedPolls.toLocaleString()}</Fig> final-stretch polls from {META.firstYear} to {META.lastYear},
+        each scored against the result. In {electionYear}, <Fig>{active.length}</Fig> pollsters have released polls so far, and <Fig>{unrated}</Fig> of
+        them have too short a record to rate yet.
+      </StandfirstHeader>
 
-      <main className="mx-auto max-w-7xl px-4 pb-14 pt-6 sm:px-6">
+      <main className="mx-auto max-w-7xl px-4 pb-14 pt-7 sm:px-6 sm:pt-8">
         <section className="mb-12">
           <PollsterSectionTabs tabs={[
             {
@@ -181,7 +159,9 @@ export default function PollstersPage() {
                 <>
                   <PollsterRatingsTable ratings={pollsterRatings} />
                   <p className={note} style={{ color: "var(--app-text-very-muted)" }}>
-                    <strong>Vs. field</strong> is the score the grade is a band of: the pollster&rsquo;s average miss minus the miss of a
+                    Every general-election poll taken in the last three weeks of a presidential, Senate, governor, House or
+                    generic-ballot race since {META.firstYear} is scored against the result, and each pollster is graded overall
+                    and again within each region it polls. <strong>Vs. field</strong> is the score the grade is a band of: the pollster&rsquo;s average miss minus the miss of a
                     typical poll of the same race (the other pollsters in that race where there are any, otherwise the norm for that
                     office, year, sample size and days out), weighted by recency (a poll counts half as much every four years)
                     and pulled toward zero as if every pollster began with {META.scoreK} average polls. <strong>Bias</strong> is measured

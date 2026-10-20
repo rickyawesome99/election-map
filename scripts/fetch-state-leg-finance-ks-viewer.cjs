@@ -29,6 +29,8 @@ const CACHE = "/private/tmp/claude-501/-Users-rickyjia-election-map/7b2956ab-e26
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36";
 const OFFICE = { house: "7", senate: "6" };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+// Pause after each report opened (KS_PACE_MS; 800 ms tripped the WAF after a few hours, 2026-10-18).
+const PACE_MS = Number(process.env.KS_PACE_MS ?? 4000);
 // Watchdog: a navigation or popup can hang with no timeout firing; with nothing done for 10 minutes the process
 // exits non-zero and a wrapper (rerun loop) starts it again, resuming from the cache.
 let lastProgress = Date.now();
@@ -86,6 +88,7 @@ async function walk(p, q, visit) {
     }
     const rs = await rows(p);
     progress();
+    await sleep(PACE_MS + 1000);
     for (let i = 0; i < rs.length; i++) await visit(rs[i], pg, i, pages);
   }
   return total;
@@ -129,23 +132,41 @@ async function open(ctx, p, target, base) {
   try {
     await p.evaluate((t) => { document.forms[0].target = "_blank"; __doPostBack(t, ""); document.forms[0].target = ""; }, target);
     const np = await popup;
+    // A paper filing's postback opens the results page in the popup, which in turn opens the scan in a popup of
+    // its own (Chromium's PDF viewer: the scan's response carries no page, and np never sees it). Only np's own
+    // child counts, so a slow scan from the previous row cannot land here.
+    let pdfPage = null;
+    const child = np.waitForEvent("popup", { timeout: 45000 }).then((pp) => (pdfPage = pp)).catch(() => null);
     await np.waitForLoadState("load", { timeout: 90000 }).catch(() => {});
-    const mine = () => seen.find((x) => x.page === np && /\/srvimages\//i.test(x.url)) || (/\/srvimages\/.*\.pdf/i.test(np.url()) ? { url: np.url() } : null);
+    const mine = () => seen.find((x) => x.page === np && /\/srvimages\//i.test(x.url)) || (/\/srvimages\/.*\.pdf/i.test(np.url()) ? { url: np.url() } : null) ||
+      (pdfPage && (/\/srvimages\/.*\.pdf/i.test(pdfPage.url()) ? { url: pdfPage.url() } : seen.find((x) => x.page === pdfPage && /\/srvimages\//i.test(x.url)))) || null;
     for (let i = 0; i < 30 && !mine() && !/exp_report_main/.test(np.url()); i++) await sleep(500);
+    if (!mine() && !/exp_report_main/.test(np.url())) await Promise.race([child, sleep(30000)]);
+    if (!pdfPage) for (const pg of ctx.pages()) if (pg !== np && (await pg.opener().catch(() => null)) === np) pdfPage = pg;
     let out;
     if (/exp_report_main/.test(np.url())) {
-      const html = await np.content();
-      // the WAF sometimes answers the popup with its "verify you're not a robot" page instead of the report
-      if (!/covering the period/i.test(html)) out = { kind: "none", url: np.url() };
+      // the WAF sometimes answers the popup with its challenge page instead of the report; the challenge reloads
+      // the popup once it passes, so wait for the report rather than reading the challenge
+      let html = await np.content().catch(() => "");
+      for (let i = 0; i < 60 && !/covering the period/i.test(html); i++) {
+        await sleep(500);
+        html = await np.content().catch(() => "");
+      }
+      if (!/covering the period/i.test(html)) { fs.writeFileSync(path.join(CACHE, "popup-fail.html"), html); out = { kind: "none", url: np.url() }; }
       else { fs.writeFileSync(base + ".html", html); out = { kind: "html", url: np.url() }; }
     } else {
       const m = mine();
       // the scans themselves (srvimages) are not behind the WAF: fetch the file directly
-      const body = m ? await (await ctx.request.get(m.url)).body().catch(() => null) : null;
+      let body = null;
+      for (let a = 0; m && a < 3 && !body; a++) {
+        body = await fetch(m.url, { headers: { "User-Agent": UA } }).then(async (r) => (r.ok ? Buffer.from(await r.arrayBuffer()) : null)).catch(() => null);
+        if (!body) await sleep(5000);
+      }
       const isPdf = body && body.subarray(0, 5).toString() === "%PDF-";
       if (isPdf) fs.writeFileSync(base + ".pdf", body);
       out = { kind: isPdf ? "pdf" : "none", url: m ? m.url : np.url() };
     }
+    if (pdfPage) await pdfPage.close().catch(() => {});
     await np.close();
     return out;
   } finally {
@@ -158,6 +179,15 @@ async function open(ctx, p, target, base) {
   const cands = JSON.parse(fs.readFileSync(candFile, "utf8"));
   const b = (browser = await chromium.launch({ headless: true, channel: "chromium" }));
   const ctx = await b.newContext({ userAgent: UA });
+  // The WAF answers 403 once it has had enough: stop at the first one (everything so far is cached) rather
+  // than retrying into a longer block — the same IP's ordinary browser is blocked with it.
+  ctx.on("response", (r) => {
+    if (r.status() === 403 && /sos\.ks\.gov/.test(r.url())) {
+      console.log(`blocked (403) at ${r.url()} — stopping; rerun later to resume from the cache`);
+      try { browser?.process()?.kill("SIGKILL"); } catch {}
+      process.exit(4);
+    }
+  });
   const fetchInto = async (p, dir, index, idxFile, key, r) => {
     let res;
     for (let attempt = 0; attempt < 3; attempt++) {
@@ -167,7 +197,7 @@ async function open(ctx, p, target, base) {
     index[key] = { ...r, ...(res ?? { kind: "none" }) };
     progress();
     fs.writeFileSync(idxFile, JSON.stringify(index, null, 1));
-    await sleep(800);
+    await sleep(PACE_MS);
   };
   for (const job of jobs) {
     const p = await ctx.newPage();

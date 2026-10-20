@@ -7,6 +7,7 @@
   "Orleans-1": [
    {
     "name": "ALEXANDER, AIMEE",
+    "candidate": "Aimee Alexander",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 7415,
@@ -14,6 +15,7 @@
    },
    {
     "name": "SMITH, BRIAN D",
+    "candidate": "Brian Smith",
     "party": "Republican",
     "incumbent": true,
     "contributions": 3300,
@@ -23,6 +25,7 @@
   "Grand Isle-Chittenden": [
    {
     "name": "AMES, KARIN",
+    "candidate": "Karin Ames",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 8745,
@@ -30,6 +33,7 @@
    },
    {
     "name": "LEAVITT, JOSIE",
+    "candidate": "Josie Leavitt",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 12671,
@@ -37,6 +41,7 @@
    },
    {
     "name": "MORGAN, MICHAEL RONALD",
+    "candidate": "Michael R. Morgan",
     "party": "Republican",
     "incumbent": true,
     "contributions": 14471.06,
@@ -44,6 +49,7 @@
    },
    {
     "name": "PARADEE, ANDREW B",
+    "candidate": "Andy Paradee",
     "party": "Republican",
     "incumbent": false,
     "contributions": 11100,
@@ -53,6 +59,7 @@
   "Chittenden-25": [
    {
     "name": "ANDREWS, JULIA",
+    "candidate": "Julia Andrews",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 7359,
@@ -60,6 +67,7 @@
    },
    {
     "name": "DUQUETTE, ALLISON",
+    "candidate": "Allison Duquette",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6127.05,
@@ -69,6 +77,7 @@
   "Addison-Rutland": [
    {
     "name": "ANDRIANO, JOSEPH",
+    "candidate": "Joseph Andriano",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4547.64,
@@ -78,6 +87,7 @@
   "Washington-3": [
    {
     "name": "ANTHONY, PETER DEAN",
+    "candidate": "Peter D. Anthony",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 3420.35,
@@ -85,6 +95,7 @@
    },
    {
     "name": "JUDD, BRIAN ALAN",
+    "candidate": "Brian Judd",
     "party": "Republican",
     "incumbent": false,
     "contributions": 9010.87,
@@ -92,6 +103,7 @@
    },
    {
     "name": "KELLY, THOMAS MICHAEL",
+    "candidate": "Thomas Kelly",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6542.44,
@@ -99,6 +111,7 @@
    },
    {
     "name": "WILLIAMS, JONATHAN LISLE",
+    "candidate": "Jonathan Williams",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 8979.41,
@@ -108,6 +121,7 @@
   "Windsor-2": [
    {
     "name": "ARRISON, JOHN",
+    "candidate": "John Arrison",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1941.09,
@@ -115,6 +129,7 @@
    },
    {
     "name": "LINDBERG, STUART NELSON",
+    "candidate": "Stuart Lindberg",
     "party": "Other",
     "incumbent": false,
     "contributions": 4350,
@@ -124,6 +139,7 @@
   "Chittenden-2": [
    {
     "name": "ARSENAULT, ANGELA",
+    "candidate": "Angela Arsenault",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6990.83,
@@ -131,6 +147,7 @@
    },
    {
     "name": "BRADY, ERIN MCGUIRE",
+    "candidate": "Erin Brady",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 4389.35,
@@ -138,6 +155,7 @@
    },
    {
     "name": "O'ROURKE, ANTHONY JOSEPH",
+    "candidate": "Anthony Orourke",
     "party": "Republican",
     "incumbent": false,
     "contributions": 600,
@@ -145,6 +163,7 @@
    },
    {
     "name": "ROY, BRUCE A",
+    "candidate": "Bruce Roy",
     "party": "Republican",
     "incumbent": false,
     "contributions": 9021,
@@ -154,6 +173,7 @@
   "Chittenden-19": [
    {
     "name": "AUSTIN, SARITA",
+    "candidate": "Sarita Austin",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1700,
@@ -163,6 +183,7 @@
   "Lamoille-2": [
    {
     "name": "BAILEY, RICHARD",
+    "candidate": "Richard J. Bailey",
     "party": "Republican",
     "incumbent": false,
     "contributions": 4560,
@@ -170,6 +191,7 @@
    },
    {
     "name": "DONNALLY, KATE MAY",
+    "candidate": "Kate Donnally",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 3538,
@@ -177,6 +199,7 @@
    },
    {
     "name": "NOYES, DANIEL",
+    "candidate": "Daniel Noyes",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1020,
@@ -184,6 +207,7 @@
    },
    {
     "name": "TEALE, MALCOLM A.",
+    "candidate": "Malcolm Teale",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5412.39,
@@ -193,6 +217,7 @@
   "Windsor-1": [
    {
     "name": "BARTHOLOMEW, JOHN",
+    "candidate": "John Bartholomew",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 250,
@@ -200,6 +225,7 @@
    },
    {
     "name": "BURROWS, ELIZABETH CORNELL",
+    "candidate": "Elizabeth Burrows",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 144.07,
@@ -209,6 +235,7 @@
   "Franklin-1": [
    {
     "name": "BARTLEY, ASHLEY R",
+    "candidate": "Ashley R. Bartley",
     "party": "Republican",
     "incumbent": false,
     "contributions": 15107.06,
@@ -216,6 +243,7 @@
    },
    {
     "name": "MAYNARD, ALAN MICHAEL",
+    "candidate": "Alan Maynard",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4013,
@@ -223,6 +251,7 @@
    },
    {
     "name": "THOMAS, DEVON THOMAS",
+    "candidate": "Devon Thomas",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3361.92,
@@ -232,6 +261,7 @@
   "Washington-4": [
    {
     "name": "BATE, DONA",
+    "candidate": "Dona Bate",
     "party": "Other",
     "incumbent": false,
     "contributions": 6619.61,
@@ -239,6 +269,7 @@
    },
    {
     "name": "CASEY, CONOR OWEN",
+    "candidate": "Conor Casey",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 8530,
@@ -246,6 +277,7 @@
    },
    {
     "name": "LEON, GENE",
+    "candidate": "Gene Leon",
     "party": "Republican",
     "incumbent": false,
     "contributions": 1130,
@@ -253,6 +285,7 @@
    },
    {
     "name": "MCCANN, KATHERINE ANNE",
+    "candidate": "Kate McCann",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5550,
@@ -262,6 +295,7 @@
   "Washington-Orange": [
    {
     "name": "BATTAH, MELISSA",
+    "candidate": "Melissa Battah",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 12744.31,
@@ -269,6 +303,7 @@
    },
    {
     "name": "GALFETTI, GINA",
+    "candidate": "Gina M. Galfetti",
     "party": "Republican",
     "incumbent": false,
     "contributions": 9121.68,
@@ -276,6 +311,7 @@
    },
    {
     "name": "MCFAUN, FRANCIS \"TOPPER\"",
+    "candidate": "Francis McFaun",
     "party": "Republican",
     "incumbent": true,
     "contributions": 6644.03,
@@ -285,6 +321,7 @@
   "Caledonia-Essex": [
    {
     "name": "BECK, SCOTT LAWRENCE",
+    "candidate": "Scott Beck",
     "party": "Republican",
     "incumbent": true,
     "contributions": 2134.59,
@@ -292,6 +329,7 @@
    },
    {
     "name": "CAMPBELL, SCOTT",
+    "candidate": "Scott Campbell",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 10218.92,
@@ -299,6 +337,7 @@
    },
    {
     "name": "EMPSALL, FRANK",
+    "candidate": "Frank Empsall",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5759.5,
@@ -306,6 +345,7 @@
    },
    {
     "name": "HADASH, BRENDAN",
+    "candidate": "Brendan Hadash",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1350,
@@ -315,6 +355,7 @@
   "Chittenden-21": [
    {
     "name": "BERBECO, DAISY",
+    "candidate": "Daisy Berbeco",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9754.87,
@@ -322,6 +363,7 @@
    },
    {
     "name": "SMALL, TAYLOR",
+    "candidate": "Taylor Small",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 4366.21,
@@ -331,6 +373,7 @@
   "Addison-3": [
    {
     "name": "BIRONG, MATTHEW",
+    "candidate": "Matt Birong",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 9125,
@@ -338,6 +381,7 @@
    },
    {
     "name": "LANPHER, DIANE",
+    "candidate": "Diane Lanpher",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 8195,
@@ -345,6 +389,7 @@
    },
    {
     "name": "NORTH, ROBERT C",
+    "candidate": "Rob North",
     "party": "Republican",
     "incumbent": false,
     "contributions": 19189.41,
@@ -354,6 +399,7 @@
   "Chittenden-24": [
    {
     "name": "BLACK, ALYSSA",
+    "candidate": "Alyssa Black",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 3178.52,
@@ -361,6 +407,7 @@
    },
    {
     "name": "DRURY, ROGER",
+    "candidate": "Roger Drury",
     "party": "Republican",
     "incumbent": false,
     "contributions": 4818.86,
@@ -370,6 +417,7 @@
   "Caledonia-3": [
    {
     "name": "BOLAND, EILEEN",
+    "candidate": "Eileen Boland",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 8719.92,
@@ -377,6 +425,7 @@
    },
    {
     "name": "LABOUNTY, DENNIS R",
+    "candidate": "Dennis Labounty",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5582,
@@ -386,6 +435,7 @@
   "Bennington-4": [
    {
     "name": "BONGARTZ, SETH",
+    "candidate": "Seth Bongartz",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6009.55,
@@ -393,6 +443,7 @@
    },
    {
     "name": "GERVAIS, JOSEPH LOUIS",
+    "candidate": "Joe Gervais",
     "party": "Republican",
     "incumbent": false,
     "contributions": 3502.23,
@@ -400,6 +451,7 @@
    },
    {
     "name": "JAMES, KATHLEEN COLLIER",
+    "candidate": "Kathleen James",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 10567.52,
@@ -409,6 +461,7 @@
   "Windham-3": [
    {
     "name": "BOS-LUN, MICHELLE CHRISTINE",
+    "candidate": "Michelle Boslun",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 7666.45,
@@ -416,6 +469,7 @@
    },
    {
     "name": "GOLDMAN, LESLIE",
+    "candidate": "Leslie Goldman",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 7000,
@@ -425,6 +479,7 @@
   "Lamoille-3": [
    {
     "name": "BOYDEN, LUCY",
+    "candidate": "Lucy Boyden",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 7752.96,
@@ -432,6 +487,7 @@
    },
    {
     "name": "PITRE, REBECCA",
+    "candidate": "Rebecca Pitre",
     "party": "Republican",
     "incumbent": false,
     "contributions": 10560.97,
@@ -441,6 +497,7 @@
   "Chittenden-1": [
    {
     "name": "BROWN, JANA MICHELLE",
+    "candidate": "Jana Brown",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2823.71,
@@ -450,6 +507,7 @@
   "Chittenden-7": [
    {
     "name": "BRUMSTED, JESSICA COMAI",
+    "candidate": "Jessica Brumsted",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 750,
@@ -459,6 +517,7 @@
   "Windham-8": [
    {
     "name": "BURKE, MOLLIE SULLIVAN",
+    "candidate": "Mollie S. Burke",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1927.22,
@@ -468,6 +527,7 @@
   "Bennington-1": [
    {
     "name": "BUSA, BRUCE",
+    "candidate": "Bruce Busa",
     "party": "Republican",
     "incumbent": false,
     "contributions": 448.36,
@@ -477,6 +537,7 @@
   "Windsor-5": [
    {
     "name": "BUSS, TESHA",
+    "candidate": "Tesha Buss",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3800,
@@ -486,6 +547,7 @@
   "Rutland-10": [
    {
     "name": "CANFIELD, WILLIAM PAUL",
+    "candidate": "William Canfield",
     "party": "Republican",
     "incumbent": true,
     "contributions": 100,
@@ -495,6 +557,7 @@
   "Bennington-5": [
    {
     "name": "CARROLL, JAMES THOMAS",
+    "candidate": "Jim Carroll",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 600,
@@ -504,6 +567,7 @@
   "Washington-5": [
    {
     "name": "CHAPIN, ELA",
+    "candidate": "Ela Chapin",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 13436.23,
@@ -513,6 +577,7 @@
   "Windsor-Windham": [
    {
     "name": "CHASE, HEATHER C",
+    "candidate": "Heather Chase",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5630,
@@ -520,6 +585,7 @@
    },
    {
     "name": "RYAN, EVA MARIE",
+    "candidate": "Eva Ryan",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5352.01,
@@ -529,6 +595,7 @@
   "Chittenden-20": [
    {
     "name": "CHASE, SETH",
+    "candidate": "Seth Chase",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 500,
@@ -536,6 +603,7 @@
    },
    {
     "name": "TAYLOR, CURT",
+    "candidate": "Curt Taylor",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 850,
@@ -543,6 +611,7 @@
    },
    {
     "name": "WOOD, DOUG W",
+    "candidate": "Doug Wood",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5511.93,
@@ -552,6 +621,7 @@
   "Rutland-Bennington": [
    {
     "name": "CHESNUT-TANGERMAN, ROBIN",
+    "candidate": "Robin Chesnuttangerman",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 13619,
@@ -561,6 +631,7 @@
   "Addison-5": [
    {
     "name": "CHRISTIANO, JON D.",
+    "candidate": "Jon Christiano",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5650,
@@ -568,6 +639,7 @@
    },
    {
     "name": "MCGILL, ADRIEL JUBILEE",
+    "candidate": "Jubilee McGill",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6944.74,
@@ -577,6 +649,7 @@
   "Franklin-6": [
    {
     "name": "CHURCHILL, BRENDA KAI",
+    "candidate": "Brenda Kai Churchill",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 10101.1,
@@ -584,6 +657,7 @@
    },
    {
     "name": "GREGOIRE, JAMES",
+    "candidate": "James Gregoire",
     "party": "Republican",
     "incumbent": true,
     "contributions": 7892,
@@ -593,6 +667,7 @@
   "Chittenden-15": [
    {
     "name": "CINA, BRIAN",
+    "candidate": "Brian Cina",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 225.08,
@@ -600,6 +675,7 @@
    },
    {
     "name": "HEADRICK, TROY",
+    "candidate": "Troy Headrick",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 2300,
@@ -609,6 +685,7 @@
   "Rutland-4": [
    {
     "name": "CLIFFORD, PAUL",
+    "candidate": "Paul Clifford",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -618,6 +695,7 @@
   "Windham-1": [
    {
     "name": "COFFEY, SARA",
+    "candidate": "Sara Coffey",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6851.72,
@@ -625,6 +703,7 @@
    },
    {
     "name": "GASSETT, NANCY L",
+    "candidate": "Nancy Gassett",
     "party": "Republican",
     "incumbent": false,
     "contributions": 3750,
@@ -634,6 +713,7 @@
   "Windsor-6": [
    {
     "name": "COLE, ESME",
+    "candidate": "Esme Cole",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 2240,
@@ -643,6 +723,7 @@
   "Addison-2": [
    {
     "name": "CONLON, PETER",
+    "candidate": "Peter Conlon",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 5061.07,
@@ -652,6 +733,7 @@
   "Addison-4": [
    {
     "name": "CORDES, MARI",
+    "candidate": "Mari Cordes",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2229,
@@ -659,6 +741,7 @@
    },
    {
     "name": "DIKE, LYNN MARIE",
+    "candidate": "Lynn Dike",
     "party": "Republican",
     "incumbent": false,
     "contributions": 3991,
@@ -666,6 +749,7 @@
    },
    {
     "name": "ELDER, CALEB R",
+    "candidate": "Caleb Elder",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2510,
@@ -673,6 +757,7 @@
    },
    {
     "name": "MULLIN, VALERIE",
+    "candidate": "Valerie Mullin",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -682,6 +767,7 @@
   "Franklin-8": [
    {
     "name": "DEES-ERICKSON, LAUREN PATRICE",
+    "candidate": "Lauren Deeserickson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 17967.69,
@@ -689,6 +775,7 @@
    },
    {
     "name": "TOOF, CASEY JOSEPH",
+    "candidate": "Casey Toof",
     "party": "Republican",
     "incumbent": true,
     "contributions": 11083,
@@ -698,6 +785,7 @@
   "Franklin-7": [
    {
     "name": "DEMAR, ALLEN R",
+    "candidate": "Allen Demar",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6525,
@@ -705,6 +793,7 @@
    },
    {
     "name": "HULL-CASAVANT, SUZANNE",
+    "candidate": "Suzanne Hullcasavant",
     "party": "Other",
     "incumbent": false,
     "contributions": 2640.35,
@@ -712,6 +801,7 @@
    },
    {
     "name": "WEED, CINDY",
+    "candidate": "Cindy Weed",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9784,
@@ -721,6 +811,7 @@
   "Orange-1": [
    {
     "name": "DEMROW, CARL",
+    "candidate": "Carl Demrow",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 10353.92,
@@ -728,6 +819,7 @@
    },
    {
     "name": "LEFEBVRE, SAMANTHA IDA",
+    "candidate": "Samantha Lefebvre",
     "party": "Republican",
     "incumbent": true,
     "contributions": 4815.1,
@@ -737,6 +829,7 @@
   "Franklin-2": [
    {
     "name": "DICKINSON, EILEEN",
+    "candidate": "Eileen Dickinson",
     "party": "Republican",
     "incumbent": true,
     "contributions": 0,
@@ -746,6 +839,7 @@
   "Chittenden-23": [
    {
     "name": "DODGE, LEONORA",
+    "candidate": "Leonora Dodge",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 7626.81,
@@ -753,6 +847,7 @@
    },
    {
     "name": "DUNBAR, MARYSE B",
+    "candidate": "Maryse Dunbar",
     "party": "Republican",
     "incumbent": false,
     "contributions": 3182.5,
@@ -760,6 +855,7 @@
    },
    {
     "name": "WHITE, DENIS",
+    "candidate": "Denis White",
     "party": "Republican",
     "incumbent": false,
     "contributions": 1220,
@@ -769,6 +865,7 @@
   "Chittenden-22": [
    {
     "name": "DOLAN, KAREN NICOLE",
+    "candidate": "Karen Dolan",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2556.5,
@@ -776,6 +873,7 @@
    },
    {
     "name": "HOUGHTON, LORI",
+    "candidate": "Lori Houghton",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1477,
@@ -783,6 +881,7 @@
    },
    {
     "name": "MANLEY, SETH ADAM",
+    "candidate": "Seth Adam Manley",
     "party": "Republican",
     "incumbent": false,
     "contributions": 1186.21,
@@ -792,6 +891,7 @@
   "Washington-2": [
    {
     "name": "DOLAN, KARI",
+    "candidate": "Kari Dolan",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1979.07,
@@ -799,6 +899,7 @@
    },
    {
     "name": "TORRE, DARA",
+    "candidate": "Dara Torre",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4793,
@@ -808,6 +909,7 @@
   "Washington-1": [
    {
     "name": "DONAHUE, ANNE B",
+    "candidate": "Anne B. Donahue",
     "party": "Republican",
     "incumbent": true,
     "contributions": 37168.85,
@@ -815,6 +917,7 @@
    },
    {
     "name": "GOSLANT, KENNETH W",
+    "candidate": "Kenneth W. Goslant",
     "party": "Republican",
     "incumbent": true,
     "contributions": 6375,
@@ -822,6 +925,7 @@
    },
    {
     "name": "HILL-EUBANKS, LAURA",
+    "candidate": "Laura Hilleubanks",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6016.92,
@@ -831,6 +935,7 @@
   "Rutland-3": [
    {
     "name": "DROEGE, MARY F.",
+    "candidate": "Mary Droege",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 7708.81,
@@ -838,6 +943,7 @@
    },
    {
     "name": "SAMMIS, JARROD E.",
+    "candidate": "Jarrod E. Sammis",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6610,
@@ -847,6 +953,7 @@
   "Bennington-3": [
    {
     "name": "DURFEE, DAVID K.",
+    "candidate": "David K. Durfee",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2081.74,
@@ -854,6 +961,7 @@
    },
    {
     "name": "HARWOOD, VICTOR KYRLE",
+    "candidate": "Victor K. Harwood Jr.",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -863,6 +971,7 @@
   "Windsor-3": [
    {
     "name": "EMMONS, ALICE MARIE",
+    "candidate": "Alice M. Emmons",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 500,
@@ -870,6 +979,7 @@
    },
    {
     "name": "MORRIS, KRISTI C",
+    "candidate": "Kristi C. Morris",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 636.8,
@@ -879,6 +989,7 @@
   "Caledonia-1": [
    {
     "name": "FARLICE-RUBIO, BOBBY",
+    "candidate": "Bobby Farlicerubio",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4449.09,
@@ -888,6 +999,7 @@
   "Rutland-2": [
    {
     "name": "FREDETTE, KEN",
+    "candidate": "Ken Fredette",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5190.92,
@@ -895,6 +1007,7 @@
    },
    {
     "name": "PETERSON, ARTHUR",
+    "candidate": "Arthur Peterson",
     "party": "Republican",
     "incumbent": true,
     "contributions": 2030,
@@ -902,6 +1015,7 @@
    },
    {
     "name": "POTTER, DAVE EARLE",
+    "candidate": "Dave Potter",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5950,
@@ -911,6 +1025,7 @@
   "Bennington-Rutland": [
    {
     "name": "GAIOTTI, WILLIAM",
+    "candidate": "William Gaiotti",
     "party": "Republican",
     "incumbent": false,
     "contributions": 10795,
@@ -918,6 +1033,7 @@
    },
    {
     "name": "RICE, MIKE",
+    "candidate": "Mike Rice",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 24257.2,
@@ -927,6 +1043,7 @@
   "Washington-6": [
    {
     "name": "GOLON, TINA",
+    "candidate": "Tina Golon",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2615,
@@ -934,6 +1051,7 @@
    },
    {
     "name": "MIHALY, MARC BRAMER",
+    "candidate": "Marc B. Mihaly",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 12434.21,
@@ -943,6 +1061,7 @@
   "Chittenden-3": [
    {
     "name": "GRANING, EDYE",
+    "candidate": "Edye Graning",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5308,
@@ -950,6 +1069,7 @@
    },
    {
     "name": "SQUIRRELL, TREVOR",
+    "candidate": "Trevor Squirrell",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 250,
@@ -959,6 +1079,7 @@
   "Franklin-5": [
    {
     "name": "HANGO, LISA A",
+    "candidate": "Lisa A. Hango",
     "party": "Republican",
     "incumbent": true,
     "contributions": 1520,
@@ -968,6 +1089,7 @@
   "Rutland-11": [
    {
     "name": "HARRISON, JAMES",
+    "candidate": "Jim Harrison",
     "party": "Republican",
     "incumbent": true,
     "contributions": 1250,
@@ -977,6 +1099,7 @@
   "Chittenden-Franklin": [
    {
     "name": "HECKER, EMILY BANKS",
+    "candidate": "Emily Hecker",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 0,
@@ -984,6 +1107,7 @@
    },
    {
     "name": "MATTOS, CHRIS",
+    "candidate": "Chris Mattos",
     "party": "Republican",
     "incumbent": true,
     "contributions": 1750,
@@ -991,6 +1115,7 @@
    },
    {
     "name": "TAYLOR, CHRISTOPHER ADAM",
+    "candidate": "Chris Taylor",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2146.31,
@@ -1000,6 +1125,7 @@
   "Orleans-Lamoille": [
    {
     "name": "HIGLEY, MARK ALFRED",
+    "candidate": "Mark Higley",
     "party": "Republican",
     "incumbent": true,
     "contributions": 400,
@@ -1007,6 +1133,7 @@
    },
    {
     "name": "MARCOTTE, MICHAEL J",
+    "candidate": "Michael J. Marcotte",
     "party": "Republican",
     "incumbent": true,
     "contributions": 2400,
@@ -1016,6 +1143,7 @@
   "Windsororange-2": [
    {
     "name": "HOLCOMBE, REBECCA",
+    "candidate": "Rebecca Holcombe",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 12587.92,
@@ -1023,6 +1151,7 @@
    },
    {
     "name": "HUFF, BILL T",
+    "candidate": "Bill T. Huff",
     "party": "Republican",
     "incumbent": false,
     "contributions": 262.92,
@@ -1030,6 +1159,7 @@
    },
    {
     "name": "MASLAND, JIM",
+    "candidate": "Jim Masland",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1150,
@@ -1037,6 +1167,7 @@
    },
    {
     "name": "STRALKA, MATTHEW ALBERT",
+    "candidate": "Matt Stralka",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2917.5,
@@ -1046,6 +1177,7 @@
   "Orange-Washington-Addison": [
    {
     "name": "HOOPER, PHILIP JAY",
+    "candidate": "Jay Hooper",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 0,
@@ -1053,6 +1185,7 @@
    },
    {
     "name": "SATCOWITZ, LAWRENCE",
+    "candidate": "Larry Satcowitz",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 950,
@@ -1060,6 +1193,7 @@
    },
    {
     "name": "TOWNSEND, WAYNE D.",
+    "candidate": "Wayne D. Townsend",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2532.37,
@@ -1069,6 +1203,7 @@
   "Chittenden-18": [
    {
     "name": "HOOPER, ROBERT JEFFERY",
+    "candidate": "Robert Hooper",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 350,
@@ -1076,6 +1211,7 @@
    },
    {
     "name": "ODE, CAROL",
+    "candidate": "Carol Ode",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 3630,
@@ -1085,6 +1221,7 @@
   "Rutland-6": [
    {
     "name": "HOWARD, MARY ELENA",
+    "candidate": "Mary E. Howard",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 4250,
@@ -1092,6 +1229,7 @@
    },
    {
     "name": "LASKEVICH, CYNTHIA R",
+    "candidate": "Cynthia Laskevich",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6481.79,
@@ -1101,6 +1239,7 @@
   "Chittenden-8": [
    {
     "name": "HYMAN, NOAH EDWARD",
+    "candidate": "Noah Hyman",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 0,
@@ -1110,6 +1249,7 @@
   "Rutland-9": [
    {
     "name": "JEROME, STEPHANIE ZAK",
+    "candidate": "Stephanie Z. Jerome",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2450,
@@ -1119,6 +1259,7 @@
   "Windham-7": [
    {
     "name": "KORNHEISER, EMILIE KATHERINE",
+    "candidate": "Emilie Kornheiser",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 5208.74,
@@ -1128,6 +1269,7 @@
   "Chittenden-16": [
    {
     "name": "KROWINSKI, JILL",
+    "candidate": "Jill Krowinski",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 13343.29,
@@ -1135,6 +1277,7 @@
    },
    {
     "name": "LOGAN, KATE",
+    "candidate": "Kate Logan",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6308.71,
@@ -1144,6 +1287,7 @@
   "Windham-4": [
    {
     "name": "KURALT, LYNN",
+    "candidate": "Lynn Kuralt",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2867.1,
@@ -1151,6 +1295,7 @@
    },
    {
     "name": "MROWICKI, MIKE",
+    "candidate": "Mike Mrowicki",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 3333.24,
@@ -1160,6 +1305,7 @@
   "Essex-Orleans": [
    {
     "name": "LABOR, LARRY LEE",
+    "candidate": "Larry Labor",
     "party": "Republican",
     "incumbent": false,
     "contributions": 12870,
@@ -1167,6 +1313,7 @@
    },
    {
     "name": "STEVENS, PEGGY",
+    "candidate": "Peggy Stevens",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 15163,
@@ -1176,6 +1323,7 @@
   "Chittenden-12": [
    {
     "name": "LALONDE, MARTIN JAMES",
+    "candidate": "Martin Lalonde",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2747.48,
@@ -1185,6 +1333,7 @@
   "Lamoille-Washington": [
    {
     "name": "LAMONT, SAUDIA",
+    "candidate": "Saudia Lamont",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 13699.86,
@@ -1192,6 +1341,7 @@
    },
    {
     "name": "LOATI, NICHOLE DENE",
+    "candidate": "Nichole Loati",
     "party": "Republican",
     "incumbent": false,
     "contributions": 20175.7,
@@ -1199,6 +1349,7 @@
    },
    {
     "name": "OLSEN, BEN",
+    "candidate": "Ben Olsen",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6304.26,
@@ -1206,6 +1357,7 @@
    },
    {
     "name": "PATT, AVRAM",
+    "candidate": "Avram Patt",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 11887.27,
@@ -1215,6 +1367,7 @@
   "Orange-2": [
    {
     "name": "LANG, ZACHARY MICHAEL",
+    "candidate": "Zachary M. Lang",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1222,6 +1375,7 @@
    },
    {
     "name": "PRIESTLEY, MONIQUE",
+    "candidate": "Monique Priestley",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 15433,
@@ -1231,6 +1385,7 @@
   "Lamoille-1": [
    {
     "name": "LIPSKY, JED",
+    "candidate": "Jed Lipsky",
     "party": "Other",
     "incumbent": false,
     "contributions": 34280,
@@ -1238,6 +1393,7 @@
    },
    {
     "name": "WEATHERS, SCOTT",
+    "candidate": "Scott Weathers",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 51225.19,
@@ -1247,6 +1403,7 @@
   "Franklin-3": [
    {
     "name": "LUNEAU, JOSEPH D",
+    "candidate": "Joe Luneau",
     "party": "Republican",
     "incumbent": false,
     "contributions": 16714,
@@ -1254,6 +1411,7 @@
    },
    {
     "name": "MCCARTHY, MIKE D",
+    "candidate": "Mike McCarthy",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6771,
@@ -1263,6 +1421,7 @@
   "Rutland-5": [
    {
     "name": "MAGUIRE, ERIC MICHAEL",
+    "candidate": "Eric Maguire",
     "party": "Republican",
     "incumbent": false,
     "contributions": 1200,
@@ -1272,6 +1431,7 @@
   "Rutland-1": [
    {
     "name": "MCCOY, PATRICIA ANN",
+    "candidate": "Patricia A. McCoy",
     "party": "Republican",
     "incumbent": true,
     "contributions": 1850,
@@ -1281,6 +1441,7 @@
   "Chittenden-11": [
    {
     "name": "MINIER, BRIAN",
+    "candidate": "Brian Minier",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1090.44,
@@ -1290,6 +1451,7 @@
   "Chittenden-17": [
    {
     "name": "MULVANEY-STANAK, EMMA",
+    "candidate": "Emma Mulvaneystanak",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6955.91,
@@ -1299,6 +1461,7 @@
   "Rutland-Windsor": [
    {
     "name": "NICOLL, LOGAN MICHAEL",
+    "candidate": "Logan Nicoll",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 725,
@@ -1308,6 +1471,7 @@
   "Rutland-7": [
    {
     "name": "NOTTE, WILLIAM JOSEPH",
+    "candidate": "William Notte",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 400,
@@ -1317,6 +1481,7 @@
   "Chittenden-10": [
    {
     "name": "NUGENT, KATE",
+    "candidate": "Kate Nugent",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1683,
@@ -1326,6 +1491,7 @@
   "Windsororange-1": [
    {
     "name": "O'BRIEN, JOHN KENNETH",
+    "candidate": "John Obrien",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 0,
@@ -1335,6 +1501,7 @@
   "Franklin-4": [
    {
     "name": "OLIVER, THOMAS",
+    "candidate": "Thomas Oliver",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1344,6 +1511,7 @@
   "Orleans-2": [
    {
     "name": "PAGE, WOODMAN",
+    "candidate": "Woodman H. Page",
     "party": "Republican",
     "incumbent": true,
     "contributions": 0,
@@ -1353,6 +1521,7 @@
   "Windham-Windsor-Bennington": [
    {
     "name": "PAJALA, KELLY M",
+    "candidate": "Kelly MacLaury Pajala",
     "party": "Other",
     "incumbent": true,
     "contributions": 2063.68,
@@ -1362,6 +1531,7 @@
   "Orange-Caledonia": [
    {
     "name": "PARSONS, JOSEPH",
+    "candidate": "Joe Parsons",
     "party": "Republican",
     "incumbent": true,
     "contributions": 200,
@@ -1369,6 +1539,7 @@
    },
    {
     "name": "ROOT-WINCHESTER, KELSEY H-M",
+    "candidate": "Kelsey Rootwinchester",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5283.92,
@@ -1378,6 +1549,7 @@
   "Chittenden-4": [
    {
     "name": "POUECH, PHIL RAYMOND",
+    "candidate": "Phil Pouech",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 605,
@@ -1387,6 +1559,7 @@
   "Chittenden-14": [
    {
     "name": "RACHELSON, BARBARA",
+    "candidate": "Barbara Rachelson",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 704.25,
@@ -1394,6 +1567,7 @@
    },
    {
     "name": "STONE, MARY-KATHERINE",
+    "candidate": "Marykatherine Stone",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 800,
@@ -1403,6 +1577,7 @@
   "Windham-6": [
    {
     "name": "ROBERTS, TRISTAN",
+    "candidate": "Tristan D. Roberts",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 12600,
@@ -1412,6 +1587,7 @@
   "Addison-1": [
    {
     "name": "SCHEU, ROBIN P",
+    "candidate": "Robin Scheu",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 725,
@@ -1419,6 +1595,7 @@
    },
    {
     "name": "SHELDON, AMY",
+    "candidate": "Amy Sheldon",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1000,
@@ -1428,6 +1605,7 @@
   "Rutland-8": [
    {
     "name": "SHAW, CHARLES \"BUTCH\"",
+    "candidate": "Charles Shaw",
     "party": "Republican",
     "incumbent": true,
     "contributions": 900,
@@ -1437,6 +1615,7 @@
   "Windham-2": [
    {
     "name": "SIBILIA, LAURA",
+    "candidate": "Laura Sibilia",
     "party": "Other",
     "incumbent": true,
     "contributions": 930,
@@ -1444,6 +1623,7 @@
    },
    {
     "name": "WILSON, GEORGE",
+    "candidate": "George Wilson",
     "party": "Other",
     "incumbent": false,
     "contributions": 0,
@@ -1453,6 +1633,7 @@
   "Orleans-4": [
    {
     "name": "SIMS, KATHERINE",
+    "candidate": "Katherine Sims",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 30979.42,
@@ -1460,6 +1641,7 @@
    },
    {
     "name": "STRONG, VICKI MURANO",
+    "candidate": "Vicki Strong",
     "party": "Republican",
     "incumbent": true,
     "contributions": 21860.05,
@@ -1469,6 +1651,7 @@
   "Chittenden-13": [
    {
     "name": "STEBBINS, GABRIELLE ANNA",
+    "candidate": "Gabrielle Stebbins",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1127.15,
@@ -1478,6 +1661,7 @@
   "Washington-Chittenden": [
    {
     "name": "STEVENS, THOMAS",
+    "candidate": "Thomas Stevens",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2575,
@@ -1485,6 +1669,7 @@
    },
    {
     "name": "WOOD, THERESA A. M.",
+    "candidate": "Theresa A. Wood",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 700,
@@ -1494,6 +1679,7 @@
   "Windsor-4": [
    {
     "name": "SURPRENANT, HEATHER",
+    "candidate": "Heather Surprenant",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 0,
@@ -1503,6 +1689,7 @@
   "Windham-9": [
    {
     "name": "TOLENO, TRISTAN DAVID",
+    "candidate": "Tristan Toleno",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 0,
@@ -1512,6 +1699,7 @@
   "Caledonia-2": [
    {
     "name": "TROIANO, JOSEPH \"CHIP\"",
+    "candidate": "Chip Troiano",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 4790,
@@ -1521,6 +1709,7 @@
   "Chittenden-5": [
    {
     "name": "WATERS EVANS, CHEA",
+    "candidate": "Chea Watersevans",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4275,
@@ -1530,6 +1719,7 @@
   "Windsor-Addison": [
    {
     "name": "WHITE, KIRK",
+    "candidate": "Kirk White",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2695,
@@ -1539,6 +1729,7 @@
   "Bennington-2": [
    {
     "name": "WHITMAN, DANE",
+    "candidate": "Dane Whitman",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 0,
@@ -1548,6 +1739,7 @@
   "Essex-Caledonia": [
    {
     "name": "WILLIAMS, TERRI LYNN",
+    "candidate": "Terri Lynn Williams",
     "party": "Republican",
     "incumbent": true,
     "contributions": 0,
@@ -1559,6 +1751,7 @@
   "Chittenden Central": [
    {
     "name": "BARUTH, PHILIP EDWARD",
+    "candidate": "Phil Baruth",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 12450,
@@ -1566,6 +1759,7 @@
    },
    {
     "name": "CULCLEASURE, INFINITE",
+    "candidate": "Infinite Culcleasure",
     "party": "Other",
     "incumbent": false,
     "contributions": 5706.23,
@@ -1573,6 +1767,7 @@
    },
    {
     "name": "GULICK, MARTINE LAROCQUE",
+    "candidate": "Martine Larocquegulick",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 22661.32,
@@ -1580,6 +1775,7 @@
    },
    {
     "name": "VYHOVSKY, TANYA",
+    "candidate": "Tanya Vyhovsky",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 24803.38,
@@ -1589,6 +1785,7 @@
   "Washington": [
    {
     "name": "BEAN, PAUL MATTHEW",
+    "candidate": "Paul Matthew Bean",
     "party": "Republican",
     "incumbent": false,
     "contributions": 8411,
@@ -1596,6 +1793,7 @@
    },
    {
     "name": "CUMMINGS, ANN E.",
+    "candidate": "Ann Cummings",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 8782.1,
@@ -1603,6 +1801,7 @@
    },
    {
     "name": "LEFAVOUR, BRADFORD DEXTER",
+    "candidate": "Dexter Lefavour",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5455,
@@ -1610,6 +1809,7 @@
    },
    {
     "name": "PERCHLIK, ANDREW",
+    "candidate": "Andrew Perchlik",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 13271,
@@ -1617,6 +1817,7 @@
    },
    {
     "name": "TUCKER, DWAYNE",
+    "candidate": "Dwayne Tucker",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1624,6 +1825,7 @@
    },
    {
     "name": "WATSON, ANNE",
+    "candidate": "Anne Watson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 17799.12,
@@ -1633,6 +1835,7 @@
   "Grand Isle": [
    {
     "name": "BELLOWS, STEPHEN",
+    "candidate": "Stephen C. Bellows",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1642,6 +1845,7 @@
   "Addison": [
    {
     "name": "BRAY, CHRISTOPHER A",
+    "candidate": "Christopher Bray",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 0,
@@ -1649,6 +1853,7 @@
    },
    {
     "name": "BURTON, ROBERT",
+    "candidate": "Robert Burton",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1656,6 +1861,7 @@
    },
    {
     "name": "DIKE, LLOYD KENNETH",
+    "candidate": "Lloyd Dike",
     "party": "Republican",
     "incumbent": false,
     "contributions": 7355,
@@ -1663,6 +1869,7 @@
    },
    {
     "name": "HARDY, RUTH",
+    "candidate": "Ruth Hardy",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 5666.75,
@@ -1672,6 +1879,7 @@
   "Franklin": [
    {
     "name": "BROCK, RANDY",
+    "candidate": "Randy Brock",
     "party": "Republican",
     "incumbent": true,
     "contributions": 16005,
@@ -1679,6 +1887,7 @@
    },
    {
     "name": "MCCARTHY, PAM",
+    "candidate": "Pam McCarthy",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 26004.45,
@@ -1686,6 +1895,7 @@
    },
    {
     "name": "NORRIS, ROBERT WAYNE",
+    "candidate": "Robert W. Norris",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1693,6 +1903,7 @@
    },
    {
     "name": "PALCZEWSKI, JESSIE NAKUMA",
+    "candidate": "Jessie Nakuma Palczewski",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3903.92,
@@ -1702,6 +1913,7 @@
   "Bennington": [
    {
     "name": "CAMPION, BRIAN",
+    "candidate": "Brian Campion",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 0,
@@ -1709,6 +1921,7 @@
    },
    {
     "name": "SEARS, RICHARD W",
+    "candidate": "Dick Sears",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 3650,
@@ -1718,6 +1931,7 @@
   "Chittenden South East": [
    {
     "name": "CHITTENDEN, THOMAS IRA",
+    "candidate": "Thomas Chittenden",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 30455.75,
@@ -1725,6 +1939,7 @@
    },
    {
     "name": "LYONS, VIRGINIA",
+    "candidate": "Virginia Lyons",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 4947,
@@ -1732,6 +1947,7 @@
    },
    {
     "name": "RAM HINSDALE, KESHA",
+    "candidate": "Kesha Ramhinsdale",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 75330.48,
@@ -1739,6 +1955,7 @@
    },
    {
     "name": "ROLLAND, DEAN",
+    "candidate": "Dean Rolland",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2888.92,
@@ -1748,6 +1965,7 @@
   "Windsor": [
    {
     "name": "CLARKSON, ALISON",
+    "candidate": "Alison H. Clarkson",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 24906.67,
@@ -1755,6 +1973,7 @@
    },
    {
     "name": "COLSON, DANA FRANK",
+    "candidate": "Dana Colson Jr.",
     "party": "Republican",
     "incumbent": false,
     "contributions": 4782.5,
@@ -1762,6 +1981,7 @@
    },
    {
     "name": "HUFF, BILL T",
+    "candidate": "Bill T. Huff",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2340,
@@ -1769,6 +1989,7 @@
    },
    {
     "name": "MCCORMACK, RICHARD J",
+    "candidate": "Richard McCormack",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 5605.66,
@@ -1776,6 +1997,7 @@
    },
    {
     "name": "WHITE, REBECCA",
+    "candidate": "Rebecca White",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 20246.49,
@@ -1785,6 +2007,7 @@
   "Rutland": [
    {
     "name": "COLLAMORE, BRIAN PAUL",
+    "candidate": "Brian Collamore",
     "party": "Republican",
     "incumbent": true,
     "contributions": 8050,
@@ -1792,6 +2015,7 @@
    },
    {
     "name": "FERGUSON, JOSHUA",
+    "candidate": "Joshua Ferguson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5704.01,
@@ -1799,6 +2023,7 @@
    },
    {
     "name": "REMINGTON, BRIDGETTE",
+    "candidate": "Bridgette Remington",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 12970.92,
@@ -1806,6 +2031,7 @@
    },
    {
     "name": "TADIO, ANNA",
+    "candidate": "Anna Tadio",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 26399.97,
@@ -1813,6 +2039,7 @@
    },
    {
     "name": "WEEKS, DAVID HART",
+    "candidate": "David Weeks",
     "party": "Republican",
     "incumbent": false,
     "contributions": 9130,
@@ -1820,6 +2047,7 @@
    },
    {
     "name": "WILLIAMS, TERRY K",
+    "candidate": "Terry K. Williams",
     "party": "Republican",
     "incumbent": false,
     "contributions": 10473.7,
@@ -1829,6 +2057,7 @@
   "Orleans": [
    {
     "name": "DOUGLASS, SAMUEL",
+    "candidate": "Samuel A. Douglass",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1836,6 +2065,7 @@
    },
    {
     "name": "STARR, ROBERT",
+    "candidate": "Robert A. Starr",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 4578,
@@ -1845,6 +2075,7 @@
   "Windham": [
    {
     "name": "HARRISON, WENDY K",
+    "candidate": "Wendy Harrison",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 24032.02,
@@ -1852,6 +2083,7 @@
    },
    {
     "name": "HASHIM, NADER AHMED",
+    "candidate": "Nader Hashim",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 22693,
@@ -1859,6 +2091,7 @@
    },
    {
     "name": "KENYON, RICHARD W",
+    "candidate": "Richard Kenyon",
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
@@ -1866,6 +2099,7 @@
    },
    {
     "name": "MORTON, RICHARD CHARLES",
+    "candidate": "Richard Morton",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5257.15,
@@ -1873,6 +2107,7 @@
    },
    {
     "name": "WESSEL, TIMOTHY",
+    "candidate": "Tim Wessel",
     "party": "Other",
     "incumbent": false,
     "contributions": 18002.73,
@@ -1882,6 +2117,7 @@
   "Essex": [
    {
     "name": "INGALLS, RUSSELL H",
+    "candidate": "Russ Ingalls",
     "party": "Republican",
     "incumbent": true,
     "contributions": 1970,
@@ -1891,6 +2127,7 @@
   "Caledonia": [
    {
     "name": "KITCHEL, JANE",
+    "candidate": "Jane Kitchel",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6663.9,
@@ -1900,6 +2137,7 @@
   "Orange": [
    {
     "name": "KLAR, JOHN S",
+    "candidate": "John Klar",
     "party": "Republican",
     "incumbent": false,
     "contributions": 36445.2,
@@ -1907,6 +2145,7 @@
    },
    {
     "name": "MACDONALD, MARK",
+    "candidate": "Mark A. MacDonald",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 18116.86,
@@ -1916,6 +2155,7 @@
   "Chittenden North": [
    {
     "name": "MORGAN, LELAND J",
+    "candidate": "Leland Morgan",
     "party": "Republican",
     "incumbent": false,
     "contributions": 20044,
@@ -1923,6 +2163,7 @@
    },
    {
     "name": "WRENNER, IRENE AVA",
+    "candidate": "Irene Wrenner",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 22548.62,
@@ -1932,6 +2173,7 @@
   "Lamoille": [
    {
     "name": "WESTMAN, RICHARD A.",
+    "candidate": "Richard A. Westman",
     "party": "Republican",
     "incumbent": true,
     "contributions": 800,

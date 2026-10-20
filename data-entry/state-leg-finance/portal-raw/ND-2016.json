@@ -1,8 +1,8 @@
 {
  "state": "ND",
  "cycle": 2016,
- "source": "North Dakota Secretary of State (year-end statements)",
- "fetched": "2026-10-16",
+ "source": "North Dakota Secretary of State (year-end statements; contributions over $200 only)",
+ "fetched": "2026-10-19",
  "dataThrough": "12/31/2016",
  "candidates": [
   {
@@ -24,7 +24,7 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "26",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Andersen, Katie",
@@ -38,7 +38,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "02",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Anderson, Dave",
@@ -52,28 +52,28 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "06",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Anderson, Howard",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "08",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Anderson, Pamela",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "41",
-   "contributions": null
+   "contributions": 500.0
   },
   {
    "name": "Armstrong, Kelly",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "36",
-   "contributions": null
+   "contributions": 500.0
   },
   {
    "name": "Asbridge, Tom",
@@ -87,7 +87,7 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "16",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Baltrusch, Glen",
@@ -101,21 +101,21 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "27",
-   "contributions": null
+   "contributions": 300.0
   },
   {
    "name": "Becker, Richard",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "43",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Becker, Ricky",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "07",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Beireis, Allen",
@@ -129,21 +129,21 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "01",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Bellew, Larry",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "38",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Belter, wesley",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "22",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Bergsrud, Brenda",
@@ -164,14 +164,14 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "09",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Boehning, Randy",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "27",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Bosch, Glenn",
@@ -185,28 +185,28 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "44",
-   "contributions": null
+   "contributions": 1500.0
   },
   {
    "name": "bowman, bill",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "39",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Brabandt, Roger",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "05",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Brandenburg, Michael",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "28",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Brandt, Jean",
@@ -234,35 +234,35 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "05",
-   "contributions": null
+   "contributions": 1050.0
   },
   {
    "name": "campbell, tom",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "19",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Carlisle, Ron",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "30",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Carlson, Al",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "41",
-   "contributions": null
+   "contributions": 750.0
   },
   {
    "name": "Casper, Jonathan",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "27",
-   "contributions": null
+   "contributions": 1000.0
   },
   {
    "name": "Clemens, David",
@@ -276,28 +276,28 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "34",
-   "contributions": null
+   "contributions": 250.0
   },
   {
    "name": "Damschen, Chuck",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "10",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Davison, Kyle",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "41",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Delmore, Lois",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "43",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Delvo, Brandon",
@@ -311,21 +311,21 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "08",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Dever, Dick",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "32",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Devlin, Bill",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "23",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Diederich, Kirsten",
@@ -339,28 +339,28 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "11",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Dockter, Jason",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "07",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Dosch, Mark",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "32",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Dotzenrod, Jim",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "26",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Dullum, Lisa",
@@ -381,7 +381,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "28",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Ertelt, Sebastian",
@@ -402,7 +402,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "36",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Fielding, John",
@@ -423,7 +423,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "44",
-   "contributions": null
+   "contributions": 12170.0
   },
   {
    "name": "Franklin, Phil",
@@ -437,7 +437,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "40",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Fred, Dennis",
@@ -451,7 +451,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "04",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Gipp, David",
@@ -465,14 +465,14 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "18",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Grabinger, John",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "12",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "grueneich, jim",
@@ -486,35 +486,35 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "11",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Haak, Jessica",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "12",
-   "contributions": null
+   "contributions": 250.0
   },
   {
    "name": "Hanson, Ben",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "16",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Hanson, Karla",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "44",
-   "contributions": null
+   "contributions": 1750.0
   },
   {
    "name": "Hatlestad, Patrick",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "01",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Hauschild, Grant",
@@ -528,21 +528,21 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "46",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Headland, Craig",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "29",
-   "contributions": null
+   "contributions": 1750.0
   },
   {
    "name": "Heckaman, Joan",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "23",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Heinert, Patrick",
@@ -577,35 +577,35 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "15",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Hogan , Kathy",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "21",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "hogue, david",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "38",
-   "contributions": null
+   "contributions": 250.0
   },
   {
    "name": "Holman, Richard",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "20",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Holmberg, Ray",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "17",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Howe, Michael",
@@ -619,7 +619,7 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "06",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Jennings, Agnes",
@@ -640,7 +640,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "15",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Johnson, Kevin",
@@ -654,7 +654,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "45",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Johnston, Daniel",
@@ -675,7 +675,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "45",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Kannianen, Jordan",
@@ -689,7 +689,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "35",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Kary, Cheryl",
@@ -703,42 +703,42 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "46",
-   "contributions": null
+   "contributions": 300.0
   },
   {
    "name": "Keiser, George",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "47",
-   "contributions": null
+   "contributions": 1750.0
   },
   {
    "name": "kelsh, jerome",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "26",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Kempenich, Keith",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "39",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "kiefert, dwight",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "24",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Kilzer, Ralph",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "47",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Kittilson, Linda",
@@ -752,21 +752,21 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "14",
-   "contributions": null
+   "contributions": 900.0
   },
   {
    "name": "Klein, Matthew",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "40",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Klemin, Lawrence",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "47",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "KNUTSON, ELDRED",
@@ -780,35 +780,35 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "16",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Koppelman, Kim",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "13",
-   "contributions": null
+   "contributions": 1750.0
   },
   {
    "name": "Krebsbach, Karen",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "40",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Kreidt, Gary",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "33",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Kretschmar, William",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "28",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Kreun, Curt",
@@ -829,49 +829,49 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "43",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Laning, Vernon",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "08",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Larsen, Oley",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "03",
-   "contributions": null
+   "contributions": 300.0
   },
   {
    "name": "Larson, Diane",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "30",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Lee, Gary",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "22",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Lee, Judy",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "13",
-   "contributions": null
+   "contributions": 1800.0
   },
   {
    "name": "Lefor, Mike",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "37",
-   "contributions": null
+   "contributions": 963.48
   },
   {
    "name": "Lindseth, Bonita",
@@ -892,21 +892,21 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "12",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Louser, Scott",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "05",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Luick, Larry",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "25",
-   "contributions": null
+   "contributions": 2801.3
   },
   {
    "name": "Magnus, Elsie",
@@ -927,14 +927,14 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "03",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Marcellais, Richard",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "09",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Marschall, Andrew",
@@ -948,14 +948,14 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "35",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Mathern, Tim",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "11",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "McWilliams, Aaron",
@@ -969,7 +969,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "32",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Meyer, Dean",
@@ -990,49 +990,49 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "10",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Mitskog, Alisa",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "25",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Mock, Corey",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "18",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Monson, David",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "10",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Mooney, Gail",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "20",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Murphy, Philip",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "20",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Muscha, Naomi",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "24",
-   "contributions": null
+   "contributions": 5250.0
   },
   {
    "name": "Musland, Pamela",
@@ -1053,14 +1053,14 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "30",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Nelson, Carolyn",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "21",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "nelson, Gail",
@@ -1074,7 +1074,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "14",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Nelson, Mark",
@@ -1088,7 +1088,7 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "09",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "O'Brien, Emily",
@@ -1102,28 +1102,28 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "06",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Oban, Erin",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "35",
-   "contributions": null
+   "contributions": 1250.0
   },
   {
    "name": "Oehlke, Dave",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "15",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Olafson, Curtis",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "10",
-   "contributions": null
+   "contributions": 5650.0
   },
   {
    "name": "Oliver, William",
@@ -1137,14 +1137,14 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "13",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Onstad, Kenton",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "04",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "osland, arnold",
@@ -1158,7 +1158,7 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "42",
-   "contributions": null
+   "contributions": 500.0
   },
   {
    "name": "Owen, David",
@@ -1172,7 +1172,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "17",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Parkhurst, Bernie",
@@ -1193,7 +1193,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "19",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Peterson, Allan",
@@ -1207,14 +1207,14 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "22",
-   "contributions": null
+   "contributions": 1000.0
   },
   {
    "name": "Petrick, Jessica",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "34",
-   "contributions": null
+   "contributions": 500.0
   },
   {
    "name": "peyer, Dustin",
@@ -1228,28 +1228,28 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "44",
-   "contributions": null
+   "contributions": 1350.0
   },
   {
    "name": "Pollert, Chet",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "29",
-   "contributions": null
+   "contributions": 1000.0
   },
   {
    "name": "Poolman, Nicole",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "07",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Porter, Todd",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "34",
-   "contributions": null
+   "contributions": 451.0
   },
   {
    "name": "Pyle, Brandy",
@@ -1263,7 +1263,7 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "30",
-   "contributions": null
+   "contributions": 500.0
   },
   {
    "name": "Rintoul, Heidi",
@@ -1298,7 +1298,7 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "24",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Roers, James",
@@ -1319,14 +1319,14 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "31",
-   "contributions": null
+   "contributions": 1000.0
   },
   {
    "name": "Ruby, Dan",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "38",
-   "contributions": null
+   "contributions": 300.0
   },
   {
    "name": "Ruby, Matthew",
@@ -1340,14 +1340,14 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "02",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "sanford, mark",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "17",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Satrom, Bernie",
@@ -1361,35 +1361,35 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "31",
-   "contributions": null
+   "contributions": 500.0
   },
   {
    "name": "schatz, mike",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "36",
-   "contributions": null
+   "contributions": 2000.0
   },
   {
    "name": "Schmidt, James",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "31",
-   "contributions": null
+   "contributions": 500.0
   },
   {
    "name": "Schneider, Mac",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "42",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Schneider, Mary",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "21",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Schobinger, Randy",
@@ -1410,7 +1410,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "25",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Schultz, Andrew",
@@ -1424,14 +1424,14 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "33",
-   "contributions": null
+   "contributions": 750.0
   },
   {
    "name": "Silbernagel, Peter",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "22",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Simons, Luke",
@@ -1445,14 +1445,14 @@
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "46",
-   "contributions": null
+   "contributions": 1948.92
   },
   {
    "name": "Skarphol, Robert",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "02",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Skroch, Kathy",
@@ -1466,42 +1466,42 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "45",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Stafslien, Tyler",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "04",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Steiner, Vicky",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "37",
-   "contributions": null
+   "contributions": 963.48
   },
   {
    "name": "Streyle, Roscoe",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "03",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Sukut, Gary",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "01",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Thoreson, Blair",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "44",
-   "contributions": null
+   "contributions": 500.0
   },
   {
    "name": "Thorson, Kyle",
@@ -1515,21 +1515,21 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "34",
-   "contributions": null
+   "contributions": 201.0
   },
   {
    "name": "Triplett, Constance (Connie)",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "18",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Trottier, Wayne",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "19",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "tweeten, harold",
@@ -1543,7 +1543,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "33",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Vedaa, Shawn",
@@ -1564,42 +1564,42 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "23",
-   "contributions": null
+   "contributions": 500.0
   },
   {
    "name": "Wallman, Kris",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "house",
    "district": "11",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Wanzek, Terry",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "29",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Wardner, Rich",
    "party": "North Dakota Republican Party",
    "chamber": "senate",
    "district": "37",
-   "contributions": null
+   "contributions": 2663.48
   },
   {
    "name": "Warner, John",
    "party": "North Dakota Democratic-NPL Party",
    "chamber": "senate",
    "district": "04",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "weisz, robin",
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "14",
-   "contributions": null
+   "contributions": 0.0
   },
   {
    "name": "Wenzel, Quentin",
@@ -1620,7 +1620,7 @@
    "party": "North Dakota Republican Party",
    "chamber": "house",
    "district": "39",
-   "contributions": null
+   "contributions": 0.0
   }
  ]
 }

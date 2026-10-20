@@ -73,6 +73,11 @@ function match(targets: Target[], records: StateLegFinanceCandidate[]): { pairs:
   const rk = records.map((r) => nameKeys(r.name));
   const pairs = new Map<number, number>();
   const used = new Set<number>();
+  // A state-portal record the assign step already matched carries the atlas name it matched.
+  targets.forEach((t, i) => {
+    const hits = records.map((r, j) => j).filter((j) => !used.has(j) && records[j].candidate === t.name);
+    if (hits.length === 1) { pairs.set(i, hits[0]); used.add(hits[0]); }
+  });
   const tryKey = (k: keyof ReturnType<typeof nameKeys>, sameParty: boolean) => {
     targets.forEach((t, i) => {
       if (pairs.has(i) || !tk[i][k]) return;

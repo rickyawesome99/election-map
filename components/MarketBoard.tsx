@@ -1,20 +1,14 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { RaceType } from "@/data/forecastData";
 import Segmented from "@/components/MarketSegmented";
 import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecastTypes";
-import { BUCKETS, bucketColor, bucketIndex, favoriteOf, fmtPrice, sideColor, type MarketBoardOffice, type MarketBoardRace } from "@/lib/marketBoardDisplay";
+import { BUCKETS, bucketIndex, favoriteOf, type MarketBoardOffice, type MarketBoardRace } from "@/lib/marketBoardDisplay";
 
 // The 2026 section of /analysis/markets: every race of one office sorted into ten price buckets
-// (90%+ R … 90%+ D), or the same prices on a map. The map is the TPL hub's choropleth — the
-// shoreline-clipped lite district file, memoized layers — loaded only when the Map view is chosen.
-const TplMap = dynamic(() => import("./tpl/TplMaps").then((m) => m.TplMap), {
-  ssr: false,
-  loading: () => <div className="h-[300px] sm:h-[400px] md:h-[480px] rounded-xl" style={{ border: "1px solid var(--app-border)" }} />,
-});
+// (90%+ R … 90%+ D), under a bar of the seats those prices add up to.
 
 const CHIP_LIMIT = 12;
 
@@ -23,11 +17,6 @@ const byContested = (a: MarketBoardRace, b: MarketBoardRace) => favoriteOf(a.pDe
 
 const pct = (p: number) => `${Math.round(p * 100)}%`;
 const seats = (n: number) => (Math.round(n * 10) / 10).toFixed(1);
-
-function chipTitle(r: MarketBoardRace): string {
-  const matchup = r.demName && r.repName ? `${r.demName} (D) vs ${r.repName} (R) · ` : "";
-  return `${matchup}Polymarket ${fmtPrice(r.pDem)} · this site ${fmtPrice(r.modelPDem)}`;
-}
 
 export function MarketBucketLegend() {
   return (
@@ -48,7 +37,7 @@ function BucketColumns({ office, races }: { office: RaceType; races: MarketBoard
   }, [races]);
 
   return (
-    <div className="overflow-x-auto">
+    <div className="hidden overflow-x-auto lg:block">
       <div className="grid gap-x-1.5" style={{ gridTemplateColumns: "repeat(10, minmax(92px, 1fr))", minWidth: 940 }}>
         {BUCKETS.map((b, i) => {
           const key = `${office}-${i}`;
@@ -62,7 +51,7 @@ function BucketColumns({ office, races }: { office: RaceType; races: MarketBoard
               <div className="text-xl font-extrabold tabular-nums">{list.length}</div>
               <div className="mt-1.5 space-y-0.5">
                 {shown.map((r) => (
-                  <Link key={r.id} href={r.href} title={chipTitle(r)} className="flex items-baseline justify-between gap-1 rounded px-1.5 py-0.5 text-[11px] hover:underline"
+                  <Link key={r.id} href={r.href} prefetch={false} className="flex items-baseline justify-between gap-1 rounded px-1.5 py-0.5 text-[11px] hover:underline"
                     style={{ background: `color-mix(in srgb, ${b.color} 16%, transparent)`, color: "var(--app-text-primary)" }}>
                     <span className="min-w-0 truncate font-semibold">{r.name}</span>
                     <span className="shrink-0 tabular-nums" style={{ color: "var(--app-text-muted)" }}>{pct(favoriteOf(r.pDem).prob)}</span>
@@ -83,48 +72,92 @@ function BucketColumns({ office, races }: { office: RaceType; races: MarketBoard
   );
 }
 
+/** Polymarket's prices summed into seats (plus the seats not on the ballot), D from the left, R from the right. */
+function SeatBar({ label, total, dem }: { label: string; total: number; dem: number }) {
+  const rep = total - dem;
+  const demPct = (dem / total) * 100;
+  return (
+    <div className="flex min-w-[240px] flex-1 items-center gap-2 text-xs tabular-nums">
+      <b style={{ color: "var(--party-dem)" }}>{seats(dem)} D</b>
+      <div className="relative h-2.5 flex-1 overflow-hidden rounded-sm" role="img"
+        aria-label={`Polymarket's prices add up to ${seats(dem)} Democratic and ${seats(rep)} Republican ${label} seats of ${total}`}>
+        <div className="absolute inset-y-0 left-0" style={{ width: `${demPct}%`, background: "var(--party-dem)" }} />
+        <div className="absolute inset-y-0 right-0" style={{ width: `${100 - demPct}%`, background: "var(--party-rep)" }} />
+        <div className="absolute inset-y-0 left-1/2 w-px" style={{ background: "var(--app-bg)" }} />
+      </div>
+      <b style={{ color: "var(--party-rep)" }}>{seats(rep)} R</b>
+    </div>
+  );
+}
+
+/** The House's 90%+ bands — hundreds of races nobody doubts — start folded on phones, leaving the contested middle in view. */
+const isLock = (office: RaceType, i: number) => office === "house" && (i === 0 || i === BUCKETS.length - 1);
+
+/** Below lg the ten columns become ten full-width rows (90%+ R at the top) of wrapping postal-code chips. */
+function BucketRows({ office, races }: { office: RaceType; races: MarketBoardRace[] }) {
+  const [opened, setOpened] = useState<Set<string>>(new Set());
+  const rows = useMemo(() => {
+    const cols: MarketBoardRace[][] = BUCKETS.map(() => []);
+    for (const r of races) cols[bucketIndex(r.pDem)].push(r);
+    return cols.map((c) => c.sort(byContested));
+  }, [races]);
+
+  return (
+    <div className="space-y-3 lg:hidden">
+      {BUCKETS.map((b, i) => {
+        const key = `${office}-${i}`;
+        const list = rows[i];
+        const folded = isLock(office, i) && !opened.has(key);
+        return (
+          <div key={key}>
+            <div className="h-1 rounded-sm" style={{ background: b.color }} />
+            <div className="mt-1 flex items-baseline gap-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: `var(--party-${b.side === "D" ? "dem" : "rep"})` }}>{b.label} {b.side}</span>
+              <span className="text-sm font-extrabold tabular-nums">{list.length}</span>
+              {isLock(office, i) && list.length > 0 && (
+                <button type="button" className="ml-auto text-[11px] font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }}
+                  onClick={() => setOpened((prev) => { const next = new Set(prev); if (folded) next.add(key); else next.delete(key); return next; })}>
+                  {folded ? `Show ${list.length === 1 ? "race" : `${list.length} races`}` : "Hide"}
+                </button>
+              )}
+            </div>
+            {!folded && list.length > 0 && (
+              <div className="mt-1 flex flex-wrap gap-1">
+                {list.map((r) => (
+                  <Link key={r.id} href={r.href} prefetch={false} className="flex items-baseline gap-1.5 rounded px-1.5 py-0.5 text-[11px] hover:underline"
+                    style={{ background: `color-mix(in srgb, ${b.color} 16%, transparent)`, color: "var(--app-text-primary)" }}>
+                    <span className="font-semibold">{r.short}</span>
+                    <span className="tabular-nums" style={{ color: "var(--app-text-muted)" }}>{pct(favoriteOf(r.pDem).prob)}</span>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function MarketBoard({ offices }: { offices: MarketBoardOffice[] }) {
   const [office, setOffice] = useState<RaceType>("senate");
-  const [view, setView] = useState<"buckets" | "map">("buckets");
   const current = offices.find((o) => o.office === office) ?? offices[0];
   const races = current.races;
 
-  const demFavored = races.filter((r) => r.pDem >= 0.5).length;
   const hold = SEAT_HOLDOVERS[current.office];
   const total = TOTAL_SEATS_BY_TYPE[current.office];
   const marketDem = hold.dem + races.reduce((s, r) => s + r.pDem, 0);
-  const modelDem = hold.dem + races.reduce((s, r) => s + r.modelPDem, 0);
-  const closest = [...races].sort(byContested).slice(0, 3);
-
-  // TplMap keys states by name and districts by the GEOID with leading zeros stripped ("0101" → "101").
-  const mapRows = races.map((r) => ({ key: office === "house" ? String(parseInt(r.id, 10)) : r.state, name: r.name, value: r.pDem, href: r.href }));
 
   return (
     <div>
-      <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+      <div className="mb-5 flex flex-wrap items-center gap-x-8 gap-y-3">
         <Segmented label="Office" value={office} onChange={setOffice} options={offices.map((o) => [o.office, o.label])} />
-        <Segmented label="View" value={view} onChange={setView} options={[["buckets", "Buckets"], ["map", "Map"]]} />
-        <div className="sm:ml-auto"><MarketBucketLegend /></div>
+        <SeatBar label={current.label} total={total} dem={marketDem} />
+        <MarketBucketLegend />
       </div>
 
-      <p className="mb-5 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-        Polymarket favors Democrats in <b style={{ color: "var(--app-text-primary)" }}>{demFavored}</b> of the {races.length} {current.label} races
-        and Republicans in <b style={{ color: "var(--app-text-primary)" }}>{races.length - demFavored}</b>. Adding up the prices
-        {hold.dem + hold.rep > 0 ? " and the seats not on the ballot" : ""} gives Democrats{" "}
-        <b style={{ color: "var(--party-dem)" }}>{seats(marketDem)}</b> of {total} seats, against{" "}
-        <b style={{ color: "var(--party-dem)" }}>{seats(modelDem)}</b> from this site&rsquo;s forecast. The closest prices:{" "}
-        {closest.map((r, i) => (
-          <span key={r.id}>{i > 0 && ", "}<Link href={r.href} className="font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>{r.name}</Link>{" "}
-            <span className="tabular-nums" style={{ color: sideColor(r.pDem) }}>{fmtPrice(r.pDem)}</span></span>
-        ))}.
-      </p>
-
-      {view === "buckets" ? (
-        <BucketColumns office={current.office} races={races} />
-      ) : (
-        <TplMap mode={current.office === "house" ? "districts" : "states"} rows={mapRows} valueLabel="Polymarket" linkLabel="Open race page"
-          colorOf={bucketColor} formatValue={fmtPrice} valueColor={sideColor} />
-      )}
+      <BucketColumns office={current.office} races={races} />
+      <BucketRows office={current.office} races={races} />
     </div>
   );
 }

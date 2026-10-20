@@ -21,6 +21,8 @@ type Sort = "spread" | "ours" | "name";
 
 const TOSSUP = { bg: "var(--app-tab-bg)", text: "var(--app-text-primary)" };
 const pct = (p: number) => `${Math.round(p * 100)}%`;
+// The favorite's win chance, from a Democratic probability: "74% R" rather than "26% D".
+const favPct = (pDem: number) => (pDem >= 0.5 ? `${pct(pDem)} D` : `${pct(1 - pDem)} R`);
 const fmtMargin = (m: number) => (Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
 
 // Every cell is the same box whatever it holds: the rating on one line and a fixed second line
@@ -34,6 +36,39 @@ function Chip({ rating, sub, inferred, title }: { rating: string; sub?: string; 
       style={{ background: c.bg, color: c.text }}>
       <div className="text-[10px] font-bold whitespace-nowrap">{rating}{inferred && <span aria-hidden="true">*</span>}</div>
       <div className="mt-0.5 text-[9px] tabular-nums" style={{ opacity: 0.85 }}>{sub || "\u00a0"}</div>
+    </div>
+  );
+}
+
+// Desktop: one narrow colored cell per call so every forecast fits across the page without
+// scrolling. The color is the rating; a model's cell also prints its favorite's win chance, a
+// rater's is color alone. Hover gives the full call.
+function HeatCell({ rating, pDem, inferred, strong, title }: { rating: string; pDem?: number; inferred?: boolean; strong?: boolean; title: string }) {
+  const c = rating === "Toss-up" ? TOSSUP : getRatingColors(rating);
+  return (
+    <div title={title} className="flex h-6 w-full items-center justify-center rounded-sm text-[10px] tabular-nums leading-none"
+      style={{ background: c.bg, color: rating === "Toss-up" && pDem != null ? (pDem >= 0.5 ? "var(--party-dem)" : "var(--party-rep)") : c.text, fontWeight: strong ? 800 : 600, opacity: inferred ? 0.55 : 1 }}>
+      {pDem != null ? Math.round(Math.max(pDem, 1 - pDem) * 100) : ""}{inferred && <span aria-hidden="true">*</span>}
+    </div>
+  );
+}
+
+// Narrow column headings: break only at word or camel-case boundaries ("Fifty·Plus·One"), and
+// let a long single word hyphenate in the middle rather than wrap one stray letter.
+const headerLabel = (name: string) =>
+  name.replace(/([a-z])([A-Z])/g, "$1\u200b$2").split(" ").map((w) => (w.length > 7 && !w.includes("\u200b") ? `${w.slice(0, Math.ceil(w.length / 2))}\u00ad${w.slice(Math.ceil(w.length / 2))}` : w)).join(" ");
+
+const LEGEND_SCALE = ["Safe D", "Likely D", "Lean D", "Tilt D", "Toss-up", "Tilt R", "Lean R", "Likely R", "Safe R"];
+function RatingLegend() {
+  return (
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 pb-2 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>
+      <div className="flex items-center gap-px">
+        {LEGEND_SCALE.map((r) => {
+          const c = r === "Toss-up" ? TOSSUP : getRatingColors(r);
+          return <div key={r} className="flex h-4 items-center px-1.5 text-[9px] font-bold" style={{ background: c.bg, color: c.text }}>{r}</div>;
+        })}
+      </div>
+      <span>Numbers are a model&rsquo;s win chance (%) for the party it favors; raters are color only. Hover a cell for the full call. Faded* = left off a competitive list, read as Safe.</span>
     </div>
   );
 }
@@ -67,14 +102,14 @@ function MobileRaceList({ rows, forecasters }: { rows: ComparisonRow[]; forecast
             {isOpen && (
               <div className="grid grid-cols-2 gap-x-3 gap-y-1 pb-2 text-xs">
                 <Link prefetch={false} href={r.href} className="col-span-2 font-semibold underline" style={{ color: "var(--party-dem)" }}>Our race page →</Link>
-                <div className="flex items-center gap-1"><span className="min-w-0 flex-1 truncate font-semibold">This site</span><div className="shrink-0"><Chip rating={r.ours.rating} sub={`${pct(r.ours.pDem)} D`} title="Our model" /></div></div>
+                <div className="flex items-center gap-1"><span className="min-w-0 flex-1 truncate font-semibold">CT Strategies</span><div className="shrink-0"><Chip rating={r.ours.rating} sub={favPct(r.ours.pDem)} title="CT Strategies" /></div></div>
                 {forecasters.map((f) => {
                   const c = r.calls[f.id];
                   return (
                     <div key={f.id} className="flex items-center gap-1">
                       <span className="min-w-0 flex-1 truncate" style={{ color: "var(--app-text-muted)" }}>{f.name}</span>
                       <div className="shrink-0">
-                        {c ? <Chip rating={c.rating} sub={c.pDem != null ? `${pct(c.pDem)} D` : undefined} inferred={c.inferred} title={f.fullName} />
+                        {c ? <Chip rating={c.rating} sub={c.pDem != null ? favPct(c.pDem) : undefined} inferred={c.inferred} title={f.fullName} />
                           : <div className="w-[4.25rem] text-center" style={{ color: "var(--app-text-very-muted)" }}>—</div>}
                       </div>
                     </div>
@@ -118,7 +153,6 @@ export default function ForecastComparisonGrid({ data, initial = "senate" }: { d
     border: "1px solid var(--app-border)",
   });
   const head = "sticky top-0 z-[2] px-1.5 py-2 text-[10px] font-bold uppercase tracking-wider";
-  const firstCol = { position: "sticky" as const, left: 0, zIndex: 3, background: "var(--app-bg)" };
 
   return (
     <div>
@@ -141,7 +175,7 @@ export default function ForecastComparisonGrid({ data, initial = "senate" }: { d
           Sort
           <select value={sort} onChange={(e) => setSort(e.target.value as Sort)} className="rounded px-1.5 py-1 text-xs" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}>
             <option value="spread">Most disagreement</option>
-            <option value="ours">Our margin (D → R)</option>
+            <option value="ours">CTS margin (D → R)</option>
             <option value="name">Race</option>
           </select>
         </label>
@@ -149,56 +183,69 @@ export default function ForecastComparisonGrid({ data, initial = "senate" }: { d
 
       <div className="md:hidden">
         <div className="pb-1.5 text-[10px] leading-snug" style={{ color: "var(--app-text-very-muted)" }}>
-          Each strip: ours (wide), then {forecasters.map((f) => f.name).join(", ")}. Tap a race for every call.
+          Each strip: CTS (wide), then {forecasters.map((f) => f.name).join(", ")}. Tap a race for every call.
         </div>
         <MobileRaceList rows={shown.slice(0, limit)} forecasters={forecasters} />
       </div>
-      <div className="hidden overflow-x-auto md:block" style={{ maxHeight: "80vh", overflowY: "auto", border: "1px solid var(--app-border)" }}>
-        <table className="w-full border-collapse text-sm">
-          <thead>
-            <tr style={{ background: "var(--app-bg)" }}>
-              <th scope="col" className={`${head} text-left`} style={{ ...firstCol, zIndex: 4, color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }}>Race</th>
-              <th scope="col" className={`${head} text-right`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title="Our projected margin">Margin</th>
-              <th scope="col" className={`${head} text-center`} style={{ color: "var(--app-text-primary)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }}>Our model</th>
-              {forecasters.map((f) => (
-                <th key={f.id} scope="col" className={`${head} text-center`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title={`${f.fullName} · ${f.kind === "model" ? "model" : "race ratings"} · as of ${f.asOf}`}>
-                  <a href={f.url} target="_blank" rel="noopener noreferrer" className="hover:underline">{f.name}<span aria-hidden="true"> ↗</span></a>
-                </th>
-              ))}
-              <th scope="col" className={`${head} text-center`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title="Steps on the nine-step scale between the most Democratic and most Republican call in the row">Spread</th>
-            </tr>
-          </thead>
-          <tbody>
-            {shown.slice(0, limit).map((r) => (
-              <tr key={r.id} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                <th scope="row" className="whitespace-nowrap px-1.5 py-1 text-left font-semibold" style={firstCol}>
-                  <Link prefetch={false} href={r.href} className="hover:underline">{r.name}</Link>
-                  {r.contest !== "contested" && <span className="ml-1 text-[9px] font-normal" style={{ color: "var(--app-text-very-muted)" }} title="Uncontested or same-party general election">uncontested</span>}
-                </th>
-                <td className="whitespace-nowrap px-1.5 py-1 text-right text-xs font-semibold tabular-nums" style={{ color: r.ours.margin > 0 ? "var(--party-rep)" : "var(--party-dem)" }} title="Our projected margin">{fmtMargin(r.ours.margin)}</td>
-                <td className="px-1 py-1">
-                  <Chip rating={r.ours.rating} sub={`${pct(r.ours.pDem)} D`} title={`Our model: ${r.ours.rating}, ${fmtMargin(r.ours.margin)}, Democrats win ${pct(r.ours.pDem)}`} />
-                </td>
-                {forecasters.map((f) => {
-                  const c = r.calls[f.id];
-                  if (!c) return <td key={f.id} className="px-1 py-1 text-center text-xs" style={{ color: "var(--app-text-very-muted)" }} title={`${f.fullName}: not rated`}>&mdash;</td>;
-                  const d = r.ours.ordinal - c.ordinal;
-                  const rel = d === 0 ? "same as ours" : `we are ${Math.abs(d)} step${Math.abs(d) === 1 ? "" : "s"} more ${d > 0 ? "Republican" : "Democratic"}`;
-                  return (
-                    <td key={f.id} className="px-1 py-1">
-                      <Chip rating={c.rating} sub={c.pDem != null ? `${pct(c.pDem)} D` : undefined} inferred={c.inferred}
-                        title={`${f.fullName}: ${c.rating}${c.pDem != null ? `, Democrats win ${pct(c.pDem)}` : ""}${c.inferred ? " (not on their competitive list, so Safe)" : ""} · ${rel}`} />
-                    </td>
-                  );
-                })}
-                <td className="px-1.5 py-1 text-center text-xs tabular-nums" style={{ color: r.spread >= 3 ? "var(--app-text-primary)" : "var(--app-text-very-muted)", fontWeight: r.spread >= 3 ? 700 : 400 }}>{r.spread}</td>
+      <div className="hidden md:block">
+        <RatingLegend />
+        <div style={{ maxHeight: "80vh", overflowY: "auto", borderTop: "1px solid var(--app-border)" }}>
+          <table className="w-full table-fixed border-collapse text-sm">
+            <colgroup>
+              <col className="w-36 lg:w-44" />
+              <col className="w-14" />
+              <col className="w-12 lg:w-14" />
+              {forecasters.map((f) => <col key={f.id} />)}
+              <col className="w-14" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col" className={`${head} text-left align-bottom`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }}>Race</th>
+                <th scope="col" className={`${head} text-right align-bottom`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title="CT Strategies' projected margin">Margin</th>
+                <th scope="col" className={`${head} text-center align-bottom`} style={{ color: "var(--app-text-primary)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title="CT Strategies">CTS</th>
+                {forecasters.map((f, i) => (
+                  <th key={f.id} scope="col" className="sticky top-0 z-[2] px-0.5 py-2 text-center align-bottom text-[10px] font-bold leading-tight"
+                    style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)", ...(f.kind === "ratings" && forecasters[i - 1]?.kind === "model" ? { borderLeft: "1px solid var(--app-border)" } : {}) }}
+                    title={`${f.fullName} · ${f.kind === "model" ? "model" : "race ratings"} · as of ${f.asOf}`}>
+                    <a href={f.url} target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ hyphens: "manual" }}>{headerLabel(f.name)}</a>
+                  </th>
+                ))}
+                <th scope="col" className={`${head} text-center align-bottom`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title="Steps on the nine-step scale between the most Democratic and most Republican call in the row">Spread</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {shown.slice(0, limit).map((r) => (
+                <tr key={r.id} className="hover:bg-[color-mix(in_srgb,var(--app-text-primary)_4%,transparent)]" style={{ borderBottom: "1px solid var(--app-border)" }}>
+                  <th scope="row" className="truncate px-1.5 py-0.5 text-left text-[13px] font-semibold" title={r.contest !== "contested" ? `${r.name} — uncontested or same-party general election` : r.name}>
+                    <Link prefetch={false} href={r.href} className="hover:underline">{r.name}</Link>
+                    {r.contest !== "contested" && <span className="ml-1 text-[9px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>unc.</span>}
+                  </th>
+                  <td className="whitespace-nowrap px-1.5 py-0.5 text-right text-xs font-semibold tabular-nums" style={{ color: r.ours.margin > 0 ? "var(--party-rep)" : "var(--party-dem)" }} title="CT Strategies' projected margin">{fmtMargin(r.ours.margin)}</td>
+                  <td className="px-1 py-0.5">
+                    <HeatCell rating={r.ours.rating} pDem={r.ours.pDem} strong title={`CT Strategies: ${r.ours.rating}, ${fmtMargin(r.ours.margin)}, favorite wins ${favPct(r.ours.pDem)}`} />
+                  </td>
+                  {forecasters.map((f, i) => {
+                    const c = r.calls[f.id];
+                    const sep = f.kind === "ratings" && forecasters[i - 1]?.kind === "model" ? { borderLeft: "1px solid var(--app-border)" } : undefined;
+                    if (!c) return <td key={f.id} className="px-px py-0.5 text-center text-[10px]" style={{ color: "var(--app-text-very-muted)", ...sep }} title={`${f.fullName}: not rated`}>&ndash;</td>;
+                    const d = r.ours.ordinal - c.ordinal;
+                    const rel = d === 0 ? "same as CTS" : `CTS is ${Math.abs(d)} step${Math.abs(d) === 1 ? "" : "s"} more ${d > 0 ? "Republican" : "Democratic"}`;
+                    return (
+                      <td key={f.id} className="px-px py-0.5" style={sep}>
+                        <HeatCell rating={c.rating} pDem={c.pDem} inferred={c.inferred}
+                          title={`${f.fullName}: ${c.rating}${c.pDem != null ? `, favorite wins ${favPct(c.pDem)}` : ""}${c.inferred ? " (not on their competitive list, so Safe)" : ""} · ${rel}`} />
+                      </td>
+                    );
+                  })}
+                  <td className="px-1 py-0.5 text-center text-xs tabular-nums" style={{ color: r.spread >= 3 ? "var(--app-text-primary)" : "var(--app-text-very-muted)", fontWeight: r.spread >= 3 ? 700 : 400 }}>{r.spread}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-2 pt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-        <span>Showing {Math.min(limit, shown.length)} of {shown.length} races. A star marks a seat a forecaster leaves off its competitive list, counted as Safe for the party ahead.</span>
+        <span>Showing {Math.min(limit, shown.length)} of {shown.length} races.</span>
         {shown.length > limit && <button onClick={() => setLimit(shown.length)} className="rounded px-2.5 py-1 text-xs font-semibold" style={tab(false)}>Show all {shown.length}</button>}
       </div>
     </div>

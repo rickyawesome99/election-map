@@ -8,6 +8,8 @@ export type MarketBoardRace = {
   office: RaceType;
   /** "Alaska", "Florida (special)", "AL-01". */
   name: string;
+  /** The phone-width chip label: "AK", "FL (Sp)", "AL-01". */
+  short: string;
   /** Full state name — the key the state map joins on. */
   state: string;
   href: string;
@@ -15,8 +17,6 @@ export type MarketBoardRace = {
   pDem: number;
   /** This site's forecast probability on the Democratic side, 0–1. */
   modelPDem: number;
-  demName: string | null;
-  repName: string | null;
 };
 
 export type MarketBoardOffice = { office: RaceType; label: string; races: MarketBoardRace[] };

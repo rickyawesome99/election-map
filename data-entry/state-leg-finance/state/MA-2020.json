@@ -7,6 +7,7 @@
   "1st Barnstable": [
    {
     "name": "Mason, Josh",
+    "candidate": "Josh Mason",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 40071.52,
@@ -14,6 +15,7 @@
    },
    {
     "name": "Whelan, Timothy R.",
+    "candidate": "Timothy R. Whelan",
     "party": "Republican",
     "incumbent": true,
     "contributions": 82397.25,
@@ -23,6 +25,7 @@
   "2nd Barnstable": [
    {
     "name": "Crocker, William L.",
+    "candidate": "William L. Crocker Jr.",
     "party": "Republican",
     "incumbent": true,
     "contributions": 125281.3,
@@ -30,6 +33,7 @@
    },
    {
     "name": "Diggs, Kip",
+    "candidate": "Kip A. Diggs",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 51270.81,
@@ -39,6 +43,7 @@
   "3rd Barnstable": [
    {
     "name": "Vieira, David T.",
+    "candidate": "David T. Vieira",
     "party": "Republican",
     "incumbent": true,
     "contributions": 17326.55,
@@ -48,6 +53,7 @@
   "4th Barnstable": [
    {
     "name": "Peake, Sarah",
+    "candidate": "Sarah K. Peake",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 18516.46,
@@ -57,6 +63,7 @@
   "5th Barnstable": [
    {
     "name": "Dever, James",
+    "candidate": "James J. Dever",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 55125.47,
@@ -64,6 +71,7 @@
    },
    {
     "name": "Xiarhos, Steven G.",
+    "candidate": "Steven George Xiarhos",
     "party": "Republican",
     "incumbent": false,
     "contributions": 98887.67,
@@ -73,6 +81,7 @@
   "Barnstable-Dukes-Nantucket": [
    {
     "name": "Fernandes, Dylan",
+    "candidate": "Dylan A. Fernandes",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 20307.82,
@@ -82,6 +91,7 @@
   "1st Berkshire": [
    {
     "name": "Barrett, John",
+    "candidate": "John P. Barrett III",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 23750,
@@ -91,6 +101,7 @@
   "2nd Berkshire": [
    {
     "name": "Mark, Paul",
+    "candidate": "Paul W. Mark",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 28639.1,
@@ -100,6 +111,7 @@
   "3rd Berkshire": [
    {
     "name": "Farley-Bouvier, Tricia",
+    "candidate": "Tricia Farleybouvier",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 10154.23,
@@ -109,6 +121,7 @@
   "4th Berkshire": [
    {
     "name": "Pignatelli, William",
+    "candidate": "William Pignatelli",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 48201.1,
@@ -118,6 +131,7 @@
   "1st Bristol": [
    {
     "name": "Barrows, Fred J.",
+    "candidate": "Fred Jay Barrows",
     "party": "Republican",
     "incumbent": true,
     "contributions": 23390,
@@ -125,6 +139,7 @@
    },
    {
     "name": "Roche, Brendan A.",
+    "candidate": "Brendan A. Roche",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6363.16,
@@ -134,6 +149,7 @@
   "2nd Bristol": [
    {
     "name": "Hawkins, James K.",
+    "candidate": "James K. Hawkins",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 15051.3,
@@ -143,6 +159,7 @@
   "3rd Bristol": [
    {
     "name": "Doherty, Carol",
+    "candidate": "Carol A. Doherty",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 72325.02,
@@ -150,6 +167,7 @@
    },
    {
     "name": "Dooner, Kelly",
+    "candidate": "Kelly A. Dooner",
     "party": "Republican",
     "incumbent": false,
     "contributions": 35444.23,
@@ -159,6 +177,7 @@
   "4th Bristol": [
    {
     "name": "Howitt, Steven",
+    "candidate": "Steven S. Howitt",
     "party": "Republican",
     "incumbent": true,
     "contributions": 123450.63,
@@ -168,6 +187,7 @@
   "5th Bristol": [
    {
     "name": "Haddad, Patricia A.",
+    "candidate": "Patricia A. Haddad",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 96572.47,
@@ -177,6 +197,7 @@
   "6th Bristol": [
    {
     "name": "Fiola, Carole",
+    "candidate": "Carole A. Fiola",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 69225.28,
@@ -186,6 +207,7 @@
   "7th Bristol": [
    {
     "name": "Silvia, Alan",
+    "candidate": "Alan Silvia",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 55173.23,
@@ -195,6 +217,7 @@
   "8th Bristol": [
    {
     "name": "Gendreau, Evan C.",
+    "candidate": "Evan Gendreau",
     "party": "Republican",
     "incumbent": false,
     "contributions": 13800.9,
@@ -202,6 +225,7 @@
    },
    {
     "name": "Schmid, Paul A.",
+    "candidate": "Paul Schmid III",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 87008.33,
@@ -211,6 +235,7 @@
   "9th Bristol": [
    {
     "name": "Markey, Christopher",
+    "candidate": "Christopher M. Markey",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6260,
@@ -220,6 +245,7 @@
   "10th Bristol": [
    {
     "name": "Straus, William M.",
+    "candidate": "William M. Straus",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 53670.08,
@@ -229,6 +255,7 @@
   "11th Bristol": [
    {
     "name": "Hendricks, Christopher",
+    "candidate": "Christopher Hendricks",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 21503.2,
@@ -238,6 +265,7 @@
   "12th Bristol": [
    {
     "name": "Orrall, Norman J.",
+    "candidate": "Norman J. Orrall",
     "party": "Republican",
     "incumbent": true,
     "contributions": 22514.79,
@@ -247,6 +275,7 @@
   "13th Bristol": [
    {
     "name": "Cabral, Antonio F. D.",
+    "candidate": "Antonio D. F. Cabral",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 37542.8,
@@ -256,6 +285,7 @@
   "14th Bristol": [
    {
     "name": "Scanlon, Adam",
+    "candidate": "Adam J. Scanlon",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 30708.16,
@@ -263,6 +293,7 @@
    },
    {
     "name": "Simmons, John",
+    "candidate": "John D. Simmons",
     "party": "Republican",
     "incumbent": false,
     "contributions": 22229.99,
@@ -272,6 +303,7 @@
   "1st Essex": [
    {
     "name": "Hewett, Amber M.",
+    "candidate": "Amber Hewett",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 123812.59,
@@ -279,6 +311,7 @@
    },
    {
     "name": "Kelcourse, James M.",
+    "candidate": "James M. Kelcourse",
     "party": "Republican",
     "incumbent": true,
     "contributions": 121010.58,
@@ -288,6 +321,7 @@
   "2nd Essex": [
    {
     "name": "Eckert, Christina",
+    "candidate": "Christina Eckert",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 120591.96,
@@ -295,6 +329,7 @@
    },
    {
     "name": "Mirra, Leonard",
+    "candidate": "Leonard Mirra",
     "party": "Republican",
     "incumbent": true,
     "contributions": 58802.5,
@@ -304,6 +339,7 @@
   "3rd Essex": [
    {
     "name": "Vargas, Andres X.",
+    "candidate": "Andres X. Vargas",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 133136.62,
@@ -313,6 +349,7 @@
   "4th Essex": [
    {
     "name": "Hill, Bradford R.",
+    "candidate": "Bradford R. Hill",
     "party": "Republican",
     "incumbent": true,
     "contributions": 35.2,
@@ -322,6 +359,7 @@
   "5th Essex": [
    {
     "name": "Ferrante, Ann-Margaret",
+    "candidate": "Annmargaret Ferrante",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 137871.82,
@@ -331,6 +369,7 @@
   "6th Essex": [
    {
     "name": "Marciano, Euplio",
+    "candidate": "Euplio R. Marciano",
     "party": "Other",
     "incumbent": false,
     "contributions": 400,
@@ -338,6 +377,7 @@
    },
    {
     "name": "Parisella, Jerald",
+    "candidate": "Jerald A. Parisella",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 67281.33,
@@ -347,6 +387,7 @@
   "7th Essex": [
    {
     "name": "Tucker, Paul F.",
+    "candidate": "Paul F. Tucker",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 42908.64,
@@ -356,6 +397,7 @@
   "8th Essex": [
    {
     "name": "Ehrlich, Lori",
+    "candidate": "Lori A. Ehrlich",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 15355.7,
@@ -365,6 +407,7 @@
   "9th Essex": [
    {
     "name": "Wong, Donald H.",
+    "candidate": "Donald H. Wong",
     "party": "Republican",
     "incumbent": true,
     "contributions": 24420.86,
@@ -374,6 +417,7 @@
   "10th Essex": [
    {
     "name": "Cahill, Daniel F.",
+    "candidate": "Daniel H. Cahill",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 25783.52,
@@ -383,6 +427,7 @@
   "11th Essex": [
    {
     "name": "Capano, Pete",
+    "candidate": "Peter L. Capano",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 21314,
@@ -392,6 +437,7 @@
   "12th Essex": [
    {
     "name": "Walsh, Thomas P.",
+    "candidate": "Thomas P. Walsh",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 55487.68,
@@ -401,6 +447,7 @@
   "13th Essex": [
    {
     "name": "Bates, William",
+    "candidate": "William J. Bates",
     "party": "Other",
     "incumbent": false,
     "contributions": null,
@@ -408,6 +455,7 @@
    },
    {
     "name": "Guida, Jason",
+    "candidate": "Jason Guida",
     "party": "Other",
     "incumbent": false,
     "contributions": 19624.97,
@@ -415,6 +463,7 @@
    },
    {
     "name": "Keohane, Christopher",
+    "candidate": "Christopher Keohane",
     "party": "Other",
     "incumbent": false,
     "contributions": 780,
@@ -422,6 +471,7 @@
    },
    {
     "name": "Kerans, Sally",
+    "candidate": "Sally P. Kerans",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 105230.95,
@@ -429,6 +479,7 @@
    },
    {
     "name": "May, Robert",
+    "candidate": "Robert E. May Jr.",
     "party": "Republican",
     "incumbent": false,
     "contributions": 21954.96,
@@ -438,6 +489,7 @@
   "14th Essex": [
    {
     "name": "Minicucci, Christina",
+    "candidate": "Christina A. Minicucci",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 10016.21,
@@ -447,6 +499,7 @@
   "15th Essex": [
    {
     "name": "Campbell, Linda Dean",
+    "candidate": "Linda Dean Campbell",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 29978,
@@ -456,6 +509,7 @@
   "16th Essex": [
    {
     "name": "Devers, Marcos A.",
+    "candidate": "Marcos A. Devers",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 3326.88,
@@ -465,6 +519,7 @@
   "17th Essex": [
    {
     "name": "Moran, Frank",
+    "candidate": "Frank A. Moran",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 115633.27,
@@ -474,6 +529,7 @@
   "18th Essex": [
    {
     "name": "Dufour, Jeffrey",
+    "candidate": "Jeffrey Peter Dufour",
     "party": "Republican",
     "incumbent": false,
     "contributions": 26011.65,
@@ -481,6 +537,7 @@
    },
    {
     "name": "Nguyen, Tram",
+    "candidate": "Tram T. Nguyen",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 257214.37,
@@ -490,6 +547,7 @@
   "1st Franklin": [
    {
     "name": "Blais, Natalie M.",
+    "candidate": "Natalie M. Blais",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 29330.87,
@@ -499,6 +557,7 @@
   "2nd Franklin": [
    {
     "name": "LaRose, William",
+    "candidate": "William E. Larose",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 28873.11,
@@ -508,6 +567,7 @@
   "1st Hampden": [
    {
     "name": "Smola, Todd M.",
+    "candidate": "Todd M. Smola",
     "party": "Republican",
     "incumbent": true,
     "contributions": 22704.5,
@@ -517,6 +577,7 @@
   "2nd Hampden": [
    {
     "name": "Ashe, Brian M.",
+    "candidate": "Brian M. Ashe",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 5448.02,
@@ -526,6 +587,7 @@
   "3rd Hampden": [
    {
     "name": "Boldyga, Nick",
+    "candidate": "Nicholas A. Boldyga",
     "party": "Republican",
     "incumbent": true,
     "contributions": 46630.92,
@@ -533,6 +595,7 @@
    },
    {
     "name": "O'Connor, Kerri",
+    "candidate": "Kerri A. Oconnor",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 11076.91,
@@ -542,6 +605,7 @@
   "4th Hampden": [
    {
     "name": "Flaherty, Ethan",
+    "candidate": "Ethan Flaherty",
     "party": "Other",
     "incumbent": false,
     "contributions": 10028.76,
@@ -549,6 +613,7 @@
    },
    {
     "name": "Garlo, Matthew",
+    "candidate": "Matthew J. Garlo",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 11735.9,
@@ -556,6 +621,7 @@
    },
    {
     "name": "Pease, Kelly",
+    "candidate": "Kelly W. Pease",
     "party": "Republican",
     "incumbent": false,
     "contributions": 36884.82,
@@ -565,6 +631,7 @@
   "5th Hampden": [
    {
     "name": "Duffy, Patricia",
+    "candidate": "Patricia A. Duffy",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 24914.28,
@@ -574,6 +641,7 @@
   "6th Hampden": [
    {
     "name": "Finn, Michael J.",
+    "candidate": "Michael J. Finn",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 46214.75,
@@ -583,6 +651,7 @@
   "7th Hampden": [
    {
     "name": "Harrington, James P.",
+    "candidate": "James Chip Harrington",
     "party": "Republican",
     "incumbent": false,
     "contributions": 33234.77,
@@ -590,6 +659,7 @@
    },
    {
     "name": "Oliveira, Jacob",
+    "candidate": "Jacob R. Oliveira",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 24940,
@@ -599,6 +669,7 @@
   "8th Hampden": [
    {
     "name": "Wagner, Joseph F.",
+    "candidate": "Joseph F. Wagner",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 132556.43,
@@ -608,6 +679,7 @@
   "9th Hampden": [
    {
     "name": "Ramos, Orlando",
+    "candidate": "Orlando Ramos",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 37996.58,
@@ -615,6 +687,7 @@
    },
    {
     "name": "Underwood, Robert",
+    "candidate": "Robert J. Underwood",
     "party": "Other",
     "incumbent": false,
     "contributions": 1000,
@@ -624,6 +697,7 @@
   "10th Hampden": [
    {
     "name": "Gonzalez, Carlos",
+    "candidate": "Carlos Gonzalez",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 24169.47,
@@ -633,6 +707,7 @@
   "11th Hampden": [
    {
     "name": "Golphin, Prince",
+    "candidate": "Prince Golphin Jr.",
     "party": "Republican",
     "incumbent": false,
     "contributions": 1180.23,
@@ -640,6 +715,7 @@
    },
    {
     "name": "Williams, Bud L.",
+    "candidate": "Bud L. Williams",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 61980.42,
@@ -649,6 +725,7 @@
   "12th Hampden": [
    {
     "name": "Puppolo, Angelo",
+    "candidate": "Angelo J. Puppolo Jr.",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 92264.07,
@@ -658,6 +735,7 @@
   "1st Hampshire": [
    {
     "name": "Sabadosa, Lindsay N.",
+    "candidate": "Lindsay N. Sabadosa",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 41684.74,
@@ -667,6 +745,7 @@
   "2nd Hampshire": [
    {
     "name": "Carey, Daniel R.",
+    "candidate": "Daniel R. Carey",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 18507.75,
@@ -676,6 +755,7 @@
   "3rd Hampshire": [
    {
     "name": "Domb, Mindy",
+    "candidate": "Mindy Domb",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 29251.23,
@@ -685,6 +765,7 @@
   "1st Middlesex": [
    {
     "name": "Busser, Deborah L.",
+    "candidate": "Deborah L. Busser",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 55307.43,
@@ -692,6 +773,7 @@
    },
    {
     "name": "Harrington, Sheila C.",
+    "candidate": "Sheila C. Harrington",
     "party": "Republican",
     "incumbent": true,
     "contributions": 34592.38,
@@ -701,6 +783,7 @@
   "2nd Middlesex": [
    {
     "name": "Arciero, Jim",
+    "candidate": "James Arciero",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 64356.75,
@@ -710,6 +793,7 @@
   "3rd Middlesex": [
    {
     "name": "Hogan, Kate",
+    "candidate": "Kate Hogan",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 47191.96,
@@ -719,6 +803,7 @@
   "4th Middlesex": [
    {
     "name": "Gregoire, Danielle W.",
+    "candidate": "Danielle W. Gregoire",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 64700.38,
@@ -726,6 +811,7 @@
    },
    {
     "name": "Hashmi, Syed",
+    "candidate": "Syed H. Hashmi",
     "party": "Other",
     "incumbent": false,
     "contributions": 38841.04,
@@ -735,6 +821,7 @@
   "5th Middlesex": [
    {
     "name": "Linsky, David",
+    "candidate": "David Paul Linsky",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 22612.8,
@@ -744,6 +831,7 @@
   "7th Middlesex": [
    {
     "name": "Lewis, Jack",
+    "candidate": "Jack Patrick Lewis",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 40704.18,
@@ -753,6 +841,7 @@
   "8th Middlesex": [
    {
     "name": "Dykema, Carolyn Coyne",
+    "candidate": "Carolyn C. Dykema",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6998.96,
@@ -762,6 +851,7 @@
   "9th Middlesex": [
    {
     "name": "Darcy, George",
+    "candidate": "George A. Darcy III",
     "party": "Other",
     "incumbent": false,
     "contributions": 11600.62,
@@ -769,6 +859,7 @@
    },
    {
     "name": "Stanley, Thomas M.",
+    "candidate": "Thomas M. Stanley",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 62171.33,
@@ -778,6 +869,7 @@
   "10th Middlesex": [
    {
     "name": "Lawn, John",
+    "candidate": "John J. Lawn Jr.",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 113654.1,
@@ -787,6 +879,7 @@
   "11th Middlesex": [
    {
     "name": "Khan, Kay S.",
+    "candidate": "Kay S. Khan",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 15048.06,
@@ -796,6 +889,7 @@
   "12th Middlesex": [
    {
     "name": "Balser, Ruth B.",
+    "candidate": "Ruth B. Balser",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 2990.97,
@@ -805,6 +899,7 @@
   "13th Middlesex": [
    {
     "name": "Centurion, Ingrid",
+    "candidate": "Ingrid I. Centurion",
     "party": "Republican",
     "incumbent": false,
     "contributions": 47127.93,
@@ -812,6 +907,7 @@
    },
    {
     "name": "Gentile, Carmine",
+    "candidate": "Carmine Lawrence Gentile",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 47729.23,
@@ -821,6 +917,7 @@
   "14th Middlesex": [
    {
     "name": "Gouveia, Tami L.",
+    "candidate": "Tami L. Gouveia",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 42083.94,
@@ -830,6 +927,7 @@
   "15th Middlesex": [
    {
     "name": "Ciccolo, Michelle",
+    "candidate": "Michelle Ciccolo",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 54590.07,
@@ -839,6 +937,7 @@
   "16th Middlesex": [
    {
     "name": "Golden, Thomas A.",
+    "candidate": "Thomas A. Golden Jr.",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 130371.97,
@@ -848,6 +947,7 @@
   "17th Middlesex": [
    {
     "name": "Howard, Vanna",
+    "candidate": "Vanna Howard",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 34016.12,
@@ -857,6 +957,7 @@
   "18th Middlesex": [
    {
     "name": "Mom, Rady",
+    "candidate": "Rady Mom",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6685,
@@ -866,6 +967,7 @@
   "19th Middlesex": [
    {
     "name": "DiFruscia, Alec M.",
+    "candidate": "Alec M. Difruscia",
     "party": "Republican",
     "incumbent": false,
     "contributions": 54611.69,
@@ -873,6 +975,7 @@
    },
    {
     "name": "Robertson, David A.",
+    "candidate": "David Allen Robertson",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 34828.22,
@@ -882,6 +985,7 @@
   "20th Middlesex": [
    {
     "name": "Jones, Bradley H.",
+    "candidate": "Bradley H. Jones Jr.",
     "party": "Republican",
     "incumbent": true,
     "contributions": 161863.56,
@@ -889,6 +993,7 @@
    },
    {
     "name": "Mullet, Michelle",
+    "candidate": "Michelle Mullet",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 16360.72,
@@ -898,6 +1003,7 @@
   "21st Middlesex": [
    {
     "name": "Gordon, Kenneth I.",
+    "candidate": "Kenneth I. Gordon",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 41030.12,
@@ -907,6 +1013,7 @@
   "22nd Middlesex": [
    {
     "name": "English, Teresa",
+    "candidate": "Teresa Nicole English",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 20485.61,
@@ -914,6 +1021,7 @@
    },
    {
     "name": "Lombardo, Marc",
+    "candidate": "Marc T. Lombardo",
     "party": "Republican",
     "incumbent": true,
     "contributions": 79220.39,
@@ -923,6 +1031,7 @@
   "23rd Middlesex": [
    {
     "name": "Garballey, Sean",
+    "candidate": "Sean Garballey",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 14601.46,
@@ -932,6 +1041,7 @@
   "24th Middlesex": [
    {
     "name": "Rogers, David M.",
+    "candidate": "David M. Rogers",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 101167.75,
@@ -941,6 +1051,7 @@
   "25th Middlesex": [
    {
     "name": "Decker, Marjorie C.",
+    "candidate": "Marjorie C. Decker",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 130294.38,
@@ -950,6 +1061,7 @@
   "26th Middlesex": [
    {
     "name": "Connolly, Michael L.",
+    "candidate": "Mike Connolly",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 46558.99,
@@ -959,6 +1071,7 @@
   "27th Middlesex": [
    {
     "name": "Uyterhoeven, Erika",
+    "candidate": "Erika Uyterhoeven",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 82878.14,
@@ -968,6 +1081,7 @@
   "28th Middlesex": [
    {
     "name": "McGonagle, Joseph",
+    "candidate": "Joseph W. McGonagle Jr.",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 77889.77,
@@ -977,6 +1091,7 @@
   "29th Middlesex": [
    {
     "name": "Owens, Steven",
+    "candidate": "Steven C. Owens",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 41617.18,
@@ -986,6 +1101,7 @@
   "30th Middlesex": [
    {
     "name": "Haggerty, Richard M.",
+    "candidate": "Richard M. Haggerty",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 48321.35,
@@ -995,6 +1111,7 @@
   "31st Middlesex": [
    {
     "name": "Day, Michael",
+    "candidate": "Michael Seamus Day",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 123688.45,
@@ -1002,6 +1119,7 @@
    },
    {
     "name": "Harrah, Elizabeth",
+    "candidate": "Elizabeth R. Harrah",
     "party": "Other",
     "incumbent": false,
     "contributions": 20582.62,
@@ -1011,6 +1129,7 @@
   "32nd Middlesex": [
    {
     "name": "Lipper-Garabedian, Kate",
+    "candidate": "Kate Lippergarabedian",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 49515.73,
@@ -1020,6 +1139,7 @@
   "33rd Middlesex": [
    {
     "name": "Ultrino, Steven",
+    "candidate": "Steven Ultrino",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 42812.16,
@@ -1029,6 +1149,7 @@
   "34th Middlesex": [
    {
     "name": "Barber, Christine P.",
+    "candidate": "Christine P. Barber",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 151300.79,
@@ -1038,6 +1159,7 @@
   "35th Middlesex": [
    {
     "name": "Donato, Paul J.",
+    "candidate": "Paul J. Donato Sr.",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 143928.9,
@@ -1047,6 +1169,7 @@
   "36th Middlesex": [
    {
     "name": "Garry, Colleen M.",
+    "candidate": "Colleen M. Garry",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6627,
@@ -1056,6 +1179,7 @@
   "37th Middlesex": [
    {
     "name": "Clark, Catherine",
+    "candidate": "Catherine J. Clark",
     "party": "Republican",
     "incumbent": false,
     "contributions": 17251.04,
@@ -1063,6 +1187,7 @@
    },
    {
     "name": "Sena, Danillo",
+    "candidate": "Danillo A. Sena",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 70332.01,
@@ -1072,6 +1197,7 @@
   "1st Norfolk": [
    {
     "name": "Ayers, Bruce J.",
+    "candidate": "Bruce J. Ayers",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 39581.97,
@@ -1081,6 +1207,7 @@
   "2nd Norfolk": [
    {
     "name": "Chan, Tackey",
+    "candidate": "Tackey Chan",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 128855.4,
@@ -1090,6 +1217,7 @@
   "3rd Norfolk": [
    {
     "name": "Mariano, Ronald",
+    "candidate": "Ronald Mariano",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 287070.75,
@@ -1097,6 +1225,7 @@
    },
    {
     "name": "Tougas, Stephen F.",
+    "candidate": "Stephen F. Tougas",
     "party": "Republican",
     "incumbent": false,
     "contributions": 433.8,
@@ -1106,6 +1235,7 @@
   "4th Norfolk": [
    {
     "name": "Murphy, James",
+    "candidate": "James Michael Murphy",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 165584.31,
@@ -1113,6 +1243,7 @@
    },
    {
     "name": "Rotondo, Paul",
+    "candidate": "Paul J. Rotondo",
     "party": "Republican",
     "incumbent": false,
     "contributions": 11497.07,
@@ -1122,6 +1253,7 @@
   "5th Norfolk": [
    {
     "name": "Collins, Frank",
+    "candidate": "Frank Herbert Collins",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5830.77,
@@ -1129,6 +1261,7 @@
    },
    {
     "name": "Cusack, Mark James",
+    "candidate": "Mark J. Cusack",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 68760,
@@ -1138,6 +1271,7 @@
   "6th Norfolk": [
    {
     "name": "Galvin, William C.",
+    "candidate": "William C. Galvin",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 19853.39,
@@ -1147,6 +1281,7 @@
   "7th Norfolk": [
    {
     "name": "Driscoll, William J.",
+    "candidate": "William J. Driscoll Jr.",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 39239.8,
@@ -1156,6 +1291,7 @@
   "8th Norfolk": [
    {
     "name": "Philips, Edward Ryan",
+    "candidate": "Ted Philips",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 56141.53,
@@ -1165,6 +1301,7 @@
   "9th Norfolk": [
    {
     "name": "Dooley, Shawn C.",
+    "candidate": "Shawn C. Dooley",
     "party": "Republican",
     "incumbent": true,
     "contributions": 100971.15,
@@ -1172,6 +1309,7 @@
    },
    {
     "name": "Hamlin, Brian",
+    "candidate": "Brian P. Hamlin",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3364.56,
@@ -1181,6 +1319,7 @@
   "10th Norfolk": [
    {
     "name": "Roy, Jeffrey",
+    "candidate": "Jeffrey N. Roy",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 46038.27,
@@ -1190,6 +1329,7 @@
   "11th Norfolk": [
    {
     "name": "McMurtry, Paul",
+    "candidate": "Paul McMurtry",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 36587.71,
@@ -1199,6 +1339,7 @@
   "12th Norfolk": [
    {
     "name": "Rogers, John H.",
+    "candidate": "John H. Rogers",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 50592.31,
@@ -1208,6 +1349,7 @@
   "13th Norfolk": [
    {
     "name": "Garlick, Denise",
+    "candidate": "Denise C. Garlick",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 84938.84,
@@ -1217,6 +1359,7 @@
   "14th Norfolk": [
    {
     "name": "Peisch, Alice Hanlon",
+    "candidate": "Alice Hanlonpeisch",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 31205.02,
@@ -1226,6 +1369,7 @@
   "15th Norfolk": [
    {
     "name": "Vitolo, Thomas J.",
+    "candidate": "Tommy Vitolo",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 75271.79,
@@ -1235,6 +1379,7 @@
   "1st Plymouth": [
    {
     "name": "Muratore, Mathew",
+    "candidate": "Mathew J. Muratore",
     "party": "Republican",
     "incumbent": true,
     "contributions": 37293.87,
@@ -1242,6 +1387,7 @@
    },
    {
     "name": "Palmer, Stephen",
+    "candidate": "Stephen Michael Palmer",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 100,
@@ -1251,6 +1397,7 @@
   "2nd Plymouth": [
    {
     "name": "Williams-Gifford, Susan",
+    "candidate": "Susan Williams Gifford",
     "party": "Republican",
     "incumbent": true,
     "contributions": 19803.64,
@@ -1260,6 +1407,7 @@
   "3rd Plymouth": [
    {
     "name": "Meschino, Joan",
+    "candidate": "Joan Meschino",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 68251.34,
@@ -1269,6 +1417,7 @@
   "4th Plymouth": [
    {
     "name": "Kearney, Patrick",
+    "candidate": "Patrick Joseph Kearney",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 82555.14,
@@ -1276,6 +1425,7 @@
    },
    {
     "name": "Valdez, Craig S.",
+    "candidate": "Craig S. Valdez",
     "party": "Republican",
     "incumbent": false,
     "contributions": 400,
@@ -1285,6 +1435,7 @@
   "5th Plymouth": [
    {
     "name": "DeCoste, David F.",
+    "candidate": "David F. Decoste",
     "party": "Republican",
     "incumbent": true,
     "contributions": 88603.05,
@@ -1292,6 +1443,7 @@
    },
    {
     "name": "Dockter, Emmanuel J.",
+    "candidate": "Emmanuel J. Dockter",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 133725.58,
@@ -1301,6 +1453,7 @@
   "6th Plymouth": [
    {
     "name": "Cutler, Josh",
+    "candidate": "Joshua Cutler",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 64031.43,
@@ -1310,6 +1463,7 @@
   "7th Plymouth": [
    {
     "name": "Sullivan-Almeida, Alyson",
+    "candidate": "Alyson M. Sullivan",
     "party": "Republican",
     "incumbent": true,
     "contributions": 40596.4,
@@ -1319,6 +1473,7 @@
   "8th Plymouth": [
    {
     "name": "D'Emilia, Angelo L.",
+    "candidate": "Angelo L. Demilia",
     "party": "Republican",
     "incumbent": true,
     "contributions": 10395,
@@ -1328,6 +1483,7 @@
   "9th Plymouth": [
    {
     "name": "Cassidy, Gerard J.",
+    "candidate": "Gerard J. Cassidy",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 44110,
@@ -1337,6 +1493,7 @@
   "10th Plymouth": [
    {
     "name": "DuBois, Michelle Marie",
+    "candidate": "Michelle M. Dubois",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 31675.19,
@@ -1346,6 +1503,7 @@
   "11th Plymouth": [
    {
     "name": "Cronin, Claire",
+    "candidate": "Claire D. Cronin",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 104573.89,
@@ -1355,6 +1513,7 @@
   "12th Plymouth": [
    {
     "name": "LaNatra, Kathleen",
+    "candidate": "Kathleen R. Lanatra",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 54038.53,
@@ -1362,6 +1521,7 @@
    },
    {
     "name": "Schmaling, Summer K.",
+    "candidate": "Summer K. Schmaling",
     "party": "Republican",
     "incumbent": false,
     "contributions": 63779.5,
@@ -1371,6 +1531,7 @@
   "1st Suffolk": [
    {
     "name": "Madaro, Adrian",
+    "candidate": "Adrian C. Madaro",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 157938.05,
@@ -1380,6 +1541,7 @@
   "2nd Suffolk": [
    {
     "name": "Ryan, Daniel Joseph",
+    "candidate": "Daniel Joseph Ryan",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 187988.56,
@@ -1389,6 +1551,7 @@
   "3rd Suffolk": [
    {
     "name": "Michlewitz, Aaron",
+    "candidate": "Aaron M. Michlewitz",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 451489.46,
@@ -1398,6 +1561,7 @@
   "4th Suffolk": [
    {
     "name": "Biele, David M.",
+    "candidate": "David Biele",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 89267.97,
@@ -1407,6 +1571,7 @@
   "5th Suffolk": [
    {
     "name": "Miranda, Elizabeth",
+    "candidate": "Liz Miranda",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 57633.68,
@@ -1416,6 +1581,7 @@
   "6th Suffolk": [
    {
     "name": "Holmes, Russell",
+    "candidate": "Russell E. Holmes",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6738.25,
@@ -1425,6 +1591,7 @@
   "7th Suffolk": [
    {
     "name": "Tyler, Chynah",
+    "candidate": "Chynah Tyler",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 62644.71,
@@ -1434,6 +1601,7 @@
   "8th Suffolk": [
    {
     "name": "Livingstone, Jay",
+    "candidate": "Jay D. Livingstone",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 16505.38,
@@ -1443,6 +1611,7 @@
   "9th Suffolk": [
    {
     "name": "Santiago, Jon",
+    "candidate": "Jon Santiago",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 211679.08,
@@ -1452,6 +1621,7 @@
   "10th Suffolk": [
    {
     "name": "Coppinger, Edward F.",
+    "candidate": "Edward F. Coppinger",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 45077.95,
@@ -1461,6 +1631,7 @@
   "11th Suffolk": [
    {
     "name": "Malia, Elizabeth",
+    "candidate": "Elizabeth A. Malia",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 21688.79,
@@ -1470,6 +1641,7 @@
   "13th Suffolk": [
    {
     "name": "Hunt, Daniel J.",
+    "candidate": "Daniel J. Hunt",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 55511.78,
@@ -1479,6 +1651,7 @@
   "14th Suffolk": [
    {
     "name": "Consalvo, Rob",
+    "candidate": "Rob Consalvo",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 122702.76,
@@ -1488,6 +1661,7 @@
   "15th Suffolk": [
    {
     "name": "Elugardo, Nika Carlene",
+    "candidate": "Nika Elugardo",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 56439.8,
@@ -1497,6 +1671,7 @@
   "16th Suffolk": [
    {
     "name": "Giannino, Jessica",
+    "candidate": "Jessica Ann Giannino",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 96726.66,
@@ -1506,6 +1681,7 @@
   "17th Suffolk": [
    {
     "name": "Honan, Kevin G.",
+    "candidate": "Kevin G. Honan",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 195328.72,
@@ -1515,6 +1691,7 @@
   "18th Suffolk": [
    {
     "name": "Moran, Michael J.",
+    "candidate": "Michael J. Moran",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 188737.49,
@@ -1524,6 +1701,7 @@
   "19th Suffolk": [
    {
     "name": "DeLeo, Robert A.",
+    "candidate": "Robert A. Deleo",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 611645.46,
@@ -1533,6 +1711,7 @@
   "1st Worcester": [
    {
     "name": "Ferguson, Kimberly",
+    "candidate": "Kimberly N. Ferguson",
     "party": "Republican",
     "incumbent": true,
     "contributions": 4235,
@@ -1542,6 +1721,7 @@
   "2nd Worcester": [
    {
     "name": "Chester, Bruce",
+    "candidate": "Bruce K. Chester",
     "party": "Republican",
     "incumbent": false,
     "contributions": 18474.16,
@@ -1549,6 +1729,7 @@
    },
    {
     "name": "Zlotnik, Jonathan D.",
+    "candidate": "Jonathan D. Zlotnik",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 31234.41,
@@ -1558,6 +1739,7 @@
   "3rd Worcester": [
    {
     "name": "Fossa, Glenn",
+    "candidate": "Glenn C. Fossa",
     "party": "Republican",
     "incumbent": false,
     "contributions": 12402.87,
@@ -1565,6 +1747,7 @@
    },
    {
     "name": "Kushmerek, Michael P.",
+    "candidate": "Michael P. Kushmerek",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 37421.26,
@@ -1574,6 +1757,7 @@
   "4th Worcester": [
    {
     "name": "Ardinger, Thomas F.",
+    "candidate": "Thomas F. Ardinger",
     "party": "Republican",
     "incumbent": false,
     "contributions": 23513.16,
@@ -1581,6 +1765,7 @@
    },
    {
     "name": "Higgins, Natalie Marie",
+    "candidate": "Natalie Higgins",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 49423.05,
@@ -1590,6 +1775,7 @@
   "5th Worcester": [
    {
     "name": "Berthiaume, Donald R.",
+    "candidate": "Donald R. Berthiaume Jr.",
     "party": "Republican",
     "incumbent": true,
     "contributions": 4100,
@@ -1597,6 +1783,7 @@
    },
    {
     "name": "Biagetti, Samuel",
+    "candidate": "Samuel Biagetti",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9667.38,
@@ -1606,6 +1793,7 @@
   "6th Worcester": [
    {
     "name": "Durant, Peter J.",
+    "candidate": "Peter J. Durant",
     "party": "Republican",
     "incumbent": true,
     "contributions": 3622.12,
@@ -1615,6 +1803,7 @@
   "7th Worcester": [
    {
     "name": "Dotson, Terry Burke",
+    "candidate": "Terry Burkedotson",
     "party": "Other",
     "incumbent": false,
     "contributions": 30105.42,
@@ -1622,6 +1811,7 @@
    },
    {
     "name": "Frost, Paul K.",
+    "candidate": "Paul K. Frost",
     "party": "Republican",
     "incumbent": true,
     "contributions": 47824.58,
@@ -1631,6 +1821,7 @@
   "8th Worcester": [
    {
     "name": "Soter, Michael J.",
+    "candidate": "Michael J. Soter",
     "party": "Republican",
     "incumbent": true,
     "contributions": 95402.27,
@@ -1640,6 +1831,7 @@
   "9th Worcester": [
    {
     "name": "Muradian, David",
+    "candidate": "David K. Muradian Jr.",
     "party": "Republican",
     "incumbent": true,
     "contributions": 61689.89,
@@ -1649,6 +1841,7 @@
   "10th Worcester": [
    {
     "name": "Murray, Brian W.",
+    "candidate": "Brian W. Murray",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 13827.89,
@@ -1658,6 +1851,7 @@
   "11th Worcester": [
    {
     "name": "Kane, Hannah",
+    "candidate": "Hannah E. Kane",
     "party": "Republican",
     "incumbent": true,
     "contributions": 91153.82,
@@ -1667,6 +1861,7 @@
   "12th Worcester": [
    {
     "name": "Kilcoyne, Meghan",
+    "candidate": "Meghan Kilcoyne",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 86841.6,
@@ -1674,6 +1869,7 @@
    },
    {
     "name": "Smiley, Susan",
+    "candidate": "Susan E. Smiley",
     "party": "Republican",
     "incumbent": false,
     "contributions": 17906.61,
@@ -1683,6 +1879,7 @@
   "13th Worcester": [
    {
     "name": "Mahoney, John J.",
+    "candidate": "John J. Mahoney Jr.",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 92521.72,
@@ -1692,6 +1889,7 @@
   "14th Worcester": [
    {
     "name": "O'Day, James",
+    "candidate": "James J. Oday",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 37724.04,
@@ -1701,6 +1899,7 @@
   "15th Worcester": [
    {
     "name": "Keefe, Mary S.",
+    "candidate": "Mary S. Keefe",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6592.34,
@@ -1710,6 +1909,7 @@
   "16th Worcester": [
    {
     "name": "Donahue, Daniel M.",
+    "candidate": "Daniel M. Donahue",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 24752.1,
@@ -1719,6 +1919,7 @@
   "17th Worcester": [
    {
     "name": "LeBoeuf, David Henry Argosky",
+    "candidate": "David Henry Argoskyleboeuf",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 26613.24,
@@ -1728,6 +1929,7 @@
   "18th Worcester": [
    {
     "name": "McKenna, Joseph D.",
+    "candidate": "Joseph D. McKenna",
     "party": "Republican",
     "incumbent": true,
     "contributions": 7295.88,
@@ -1739,6 +1941,7 @@
   "berkshirehampshirefranklinhampden": [
    {
     "name": "Hinds, Adam Gray",
+    "candidate": "Adam G. Hinds",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 108366.65,
@@ -1748,6 +1951,7 @@
   "Bristol and Norfolk": [
    {
     "name": "Feeney, Paul",
+    "candidate": "Paul R. Feeney",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 95217.78,
@@ -1757,6 +1961,7 @@
   "First Bristol and Plymouth": [
    {
     "name": "Rodrigues, Michael J.",
+    "candidate": "Michael J. Rodrigues",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 368377.59,
@@ -1766,6 +1971,7 @@
   "Second Bristol and Plymouth": [
    {
     "name": "Montigny, Mark",
+    "candidate": "Mark C. Montigny",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 65783.86,
@@ -1775,6 +1981,7 @@
   "Cape and Islands": [
    {
     "name": "Cyr, Julian Andre",
+    "candidate": "Julian Andre Cyr",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 250687.74,
@@ -1784,6 +1991,7 @@
   "First Essex": [
    {
     "name": "DiZoglio, Diana",
+    "candidate": "Diana Dizoglio",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 115065.23,
@@ -1793,6 +2001,7 @@
   "Second Essex": [
    {
     "name": "Lovely, Joan",
+    "candidate": "Joan B. Lovely",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 30675.79,
@@ -1802,6 +2011,7 @@
   "Third Essex": [
    {
     "name": "Crighton, Brendan Peter",
+    "candidate": "Brendan P. Crighton",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 115919.75,
@@ -1811,6 +2021,7 @@
   "First Essex and Middlesex": [
    {
     "name": "Tarr, Bruce",
+    "candidate": "Bruce E. Tarr",
     "party": "Republican",
     "incumbent": true,
     "contributions": 93018.67,
@@ -1820,6 +2031,7 @@
   "Second Essex and Middlesex": [
    {
     "name": "Finegold, Barry R.",
+    "candidate": "Barry R. Finegold",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 589761.77,
@@ -1829,6 +2041,7 @@
   "Hampden and Hampshire": [
    {
     "name": "Lesser, Eric",
+    "candidate": "Eric P. Lesser",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 775911.68,
@@ -1836,6 +2049,7 @@
    },
    {
     "name": "Cain, John F.",
+    "candidate": "John Francis Cain",
     "party": "Republican",
     "incumbent": false,
     "contributions": 25781.91,
@@ -1843,6 +2057,7 @@
    },
    {
     "name": "Velis, John Christopher",
+    "candidate": "John C. Velis",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 201031.24,
@@ -1852,6 +2067,7 @@
   "Hampden": [
    {
     "name": "Gomez, Adam",
+    "candidate": "Adam Gomez",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 43533.37,
@@ -1861,6 +2077,7 @@
   "Hampshire-Franklin-Worcester": [
    {
     "name": "Comerford, Joanne",
+    "candidate": "Joanne M. Comerford",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 87648.97,
@@ -1870,6 +2087,7 @@
   "First Middlesex": [
    {
     "name": "Kennedy, Edward",
+    "candidate": "Edward J. Kennedy Jr.",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 27586.73,
@@ -1879,6 +2097,7 @@
   "Second Middlesex": [
    {
     "name": "Jehlen, Patricia D.",
+    "candidate": "Patricia D. Jehlen",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 24994.01,
@@ -1888,6 +2107,7 @@
   "Middlesex and Norfolk": [
    {
     "name": "Spilka, Karen",
+    "candidate": "Karen E. Spilka",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 579162.79,
@@ -1897,6 +2117,7 @@
   "Third Middlesex": [
    {
     "name": "Barrett, Michael J.",
+    "candidate": "Michael J. Barrett",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 51216.68,
@@ -1906,6 +2127,7 @@
   "Fourth Middlesex": [
    {
     "name": "Friedman, Cindy",
+    "candidate": "Cindy F. Friedman",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 58640.52,
@@ -1915,6 +2137,7 @@
   "Fifth Middlesex": [
    {
     "name": "Lewis, Jason",
+    "candidate": "Jason M. Lewis",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 120807.97,
@@ -1924,6 +2147,7 @@
   "Middlesex and Suffolk": [
    {
     "name": "DiDomenico, Sal N.",
+    "candidate": "Sal N. Didomenico",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 138273.5,
@@ -1933,6 +2157,7 @@
   "Middlesex and Worcester": [
    {
     "name": "Eldridge, James",
+    "candidate": "James B. Eldridge",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 210386.7,
@@ -1942,6 +2167,7 @@
   "Norfolk and Plymouth": [
    {
     "name": "Keenan, John F.",
+    "candidate": "John F. Keenan",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 9577.5,
@@ -1949,6 +2175,7 @@
    },
    {
     "name": "Mendez, Alexander",
+    "candidate": "Alexander N. Mendez",
     "party": "Other",
     "incumbent": false,
     "contributions": 4078.81,
@@ -1958,6 +2185,7 @@
   "Norfolk and Suffolk": [
    {
     "name": "Rush, Michael",
+    "candidate": "Michael F. Rush",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 71471.82,
@@ -1967,6 +2195,7 @@
   "norfolkbristolmiddlesex": [
    {
     "name": "Kelly, Matthew",
+    "candidate": "Matthew T. Kelly",
     "party": "Republican",
     "incumbent": false,
     "contributions": 71964.62,
@@ -1974,6 +2203,7 @@
    },
    {
     "name": "Rausch, Rebecca",
+    "candidate": "Rebecca L. Rausch",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 248800.76,
@@ -1983,6 +2213,7 @@
   "Plymouth and Barnstable": [
    {
     "name": "McMahon, James",
+    "candidate": "James R. McMahon III",
     "party": "Republican",
     "incumbent": false,
     "contributions": 207945.09,
@@ -1990,6 +2221,7 @@
    },
    {
     "name": "Moran, Susan",
+    "candidate": "Susan Lynn Moran",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 233625.97,
@@ -1999,6 +2231,7 @@
   "norfolkbristolplymouth": [
    {
     "name": "Timilty, Walter F.",
+    "candidate": "Walter F. Timilty Jr.",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 126765.57,
@@ -2008,6 +2241,7 @@
   "plymouthbristol-1": [
    {
     "name": "Pacheco, Marc",
+    "candidate": "Marc R. Pacheco",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 84036.22,
@@ -2017,6 +2251,7 @@
   "plymouthbristol-2": [
    {
     "name": "Brady, Michael D.",
+    "candidate": "Michael D. Brady",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 101733.85,
@@ -2026,6 +2261,7 @@
   "First Suffolk": [
    {
     "name": "Collins, Nicholas P.",
+    "candidate": "Nicholas P. Collins",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 529186.4,
@@ -2035,6 +2271,7 @@
   "plymouthnorfolk": [
    {
     "name": "O'Connor, Patrick",
+    "candidate": "Patrick Michael Oconnor",
     "party": "Republican",
     "incumbent": true,
     "contributions": 178781.12,
@@ -2042,6 +2279,7 @@
    },
    {
     "name": "Wheeler, Meg",
+    "candidate": "Meg Wheeler",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 55966.81,
@@ -2051,6 +2289,7 @@
   "Suffolk and Middlesex": [
    {
     "name": "Boncore, Joseph Angelo",
+    "candidate": "Joseph A. Boncore",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 237159.15,
@@ -2058,6 +2297,7 @@
    },
    {
     "name": "Brownsberger, William N.",
+    "candidate": "William N. Brownsberger",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 90720.99,
@@ -2067,6 +2307,7 @@
   "First Worcester": [
    {
     "name": "Chandler, Harriette L.",
+    "candidate": "Harriette L. Chandler",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 234579.51,
@@ -2076,6 +2317,7 @@
   "Second Worcester": [
    {
     "name": "Moore, Michael",
+    "candidate": "Michael O. Moore",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 121428.62,
@@ -2085,6 +2327,7 @@
   "Worcester and Middlesex": [
    {
     "name": "Cronin, John",
+    "candidate": "John J. Cronin",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 233976.33,
@@ -2092,6 +2335,7 @@
    },
    {
     "name": "Tran, Dean A.",
+    "candidate": "Dean Tran",
     "party": "Republican",
     "incumbent": true,
     "contributions": 131856.56,
@@ -2101,6 +2345,7 @@
   "worcesternorfolk": [
    {
     "name": "Crean, Christine",
+    "candidate": "Christine Crean",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 30964.87,
@@ -2108,6 +2353,7 @@
    },
    {
     "name": "Fattman, Ryan",
+    "candidate": "Ryan C. Fattman",
     "party": "Republican",
     "incumbent": true,
     "contributions": 107426.84,
@@ -2117,6 +2363,7 @@
   "worcesterhampdenhampshiremiddlesex": [
    {
     "name": "Gobi, Anne M.",
+    "candidate": "Anne M. Gobi",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 41426.3,
@@ -2124,6 +2371,7 @@
    },
    {
     "name": "Hall, Steven R.",
+    "candidate": "Steven R. Hall",
     "party": "Republican",
     "incumbent": false,
     "contributions": 38267.51,

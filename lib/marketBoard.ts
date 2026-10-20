@@ -1,13 +1,13 @@
 // The 2026 market board for /analysis/markets: every Senate, governor and House race with the
-// Polymarket price the race pages show (forecastData polyDem, hand-read from Polymarket into the
-// forecast sheet), beside this site's own probability. Server-only: it runs the forecast.
+// Polymarket price the race pages show (forecastData polyDem, written into the forecast sheet CSVs
+// by scripts/fetch-polymarket-2026.py), beside this site's own probability. Server-only: it runs the forecast.
 
 import { governorData, houseData, senateData, type RaceForecast, type RaceType } from "@/data/forecastData";
 import { forecastRace } from "@/lib/forecast";
 import type { MarketBoardOffice, MarketBoardRace } from "@/lib/marketBoardDisplay";
 
-/** When the polyDem column was last re-read from Polymarket (the v2.75 sheet export). Bump with the data. */
-export const POLYMARKET_2026_READ = "2026-10-04";
+/** When the polyDem column was last re-read from Polymarket (scripts/fetch-polymarket-2026.py). Bump with the data. */
+export const POLYMARKET_2026_READ = "2026-10-19";
 
 function hrefOf(race: RaceForecast): string {
   switch (race.raceType) {
@@ -23,12 +23,11 @@ function rowOf(race: RaceForecast): MarketBoardRace | null {
     id: race.id,
     office: race.raceType,
     name: race.raceType === "house" ? race.name : race.electionType === "Special" ? `${race.state} (special)` : race.state,
+    short: race.raceType === "house" ? race.name : `${race.id.replace(/-2$/, "")}${race.electionType === "Special" ? " (Sp)" : ""}`,
     state: race.state,
     href: hrefOf(race),
     pDem: race.polyDem,
     modelPDem: forecastRace(race).probability,
-    demName: race.candidates?.dem.name ?? null,
-    repName: race.candidates?.rep.name ?? null,
   };
 }
 

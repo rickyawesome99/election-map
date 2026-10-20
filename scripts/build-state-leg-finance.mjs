@@ -92,7 +92,7 @@ for (const file of existsSync(stDir) ? readdirSync(stDir).filter((f) => /^[A-Z]{
     for (const [district, cands] of Object.entries(parsed[chamber] ?? {})) {
       if (data[abbr]?.[cycle]?.[chamber]?.[district]) continue;
       for (const c of cands) {
-        add(abbr, cycle, chamber, district, { name: c.name, party: PARTY(c.party), partyLabel: c.party, incumbent: !!c.incumbent, contributions: c.contributions, expenditures: c.expenditures ?? null }, parsed.source, parsed.dataThrough ?? null);
+        add(abbr, cycle, chamber, district, { name: c.name, ...(c.candidate && c.candidate !== c.name ? { candidate: c.candidate } : {}), party: PARTY(c.party), partyLabel: c.party, incumbent: !!c.incumbent, contributions: c.contributions, expenditures: c.expenditures ?? null }, parsed.source, parsed.dataThrough ?? null);
       }
       seen += 1;
     }
@@ -124,6 +124,8 @@ export type StateLegFinanceCandidate = {
   status?: string;
   /** Washington's position 1/2, Idaho's seat A/B. */
   post?: string;
+  /** The atlas candidate scripts/assign-state-leg-finance.ts matched a state-portal record to, where the record's own name differs (a committee name). */
+  candidate?: string;
 };
 
 export type StateLegFinanceDistrict = { source: string; dataThrough: string | null; candidates: StateLegFinanceCandidate[] };

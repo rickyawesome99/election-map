@@ -151,9 +151,9 @@ export default function ForecastToplinePanel({ data }: { data: PanelData }) {
             <TH className="text-left" title="Democratic seats from the left, Republican from the right; in amber, seats a rater will not call either way">Seats</TH>
             {hasControl && <TH className="text-right" title="Probability of controlling the chamber">Control</TH>}
             <TH className="text-right" title="Seats they hand the Democrats minus the seats we do, across the races both call (a rater's Toss-up counts half)">
-              <span className="sm:hidden">vs us</span><span className="hidden sm:inline">Seats vs ours</span>
+              <span className="sm:hidden">vs CTS</span><span className="hidden sm:inline">Seats vs CTS</span>
             </TH>
-            <TH className="hidden text-right md:table-cell" title="Our step minus theirs, averaged: R means our calls sit further toward the Republicans">Our lean</TH>
+            <TH className="hidden text-right md:table-cell" title="CT Strategies' step minus theirs, averaged: R means CTS calls sit further toward the Republicans">CTS lean</TH>
             <TH className="hidden text-right md:table-cell" title="Races where they favor one party and we favor the other: they D / we R, then they R / we D">Flips</TH>
           </tr>
         </thead>
@@ -173,7 +173,7 @@ export default function ForecastToplinePanel({ data }: { data: PanelData }) {
                 {hasControl && <td className="px-1.5 py-1 text-right text-xs sm:text-sm"><Control p={r.t?.pDemControl} /></td>}
                 <td className="px-1.5 py-1">
                   {s ? <div className="flex justify-end"><NetBar n={s.netSeats} max={maxNet} /></div>
-                    : <div className="text-right text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>ours</div>}
+                    : <div className="text-right text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>base</div>}
                 </td>
                 <td className="hidden px-1.5 py-1 text-right text-xs font-semibold tabular-nums md:table-cell"
                   style={{ color: lean == null || Math.abs(lean) < 0.005 ? "var(--app-text-very-muted)" : lean > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
@@ -200,8 +200,8 @@ export default function ForecastToplinePanel({ data }: { data: PanelData }) {
           not on the ballot (Senate {data.holdovers.senate.dem} D – {data.holdovers.senate.rep} R, governors {data.holdovers.governor.dem} D – {data.holdovers.governor.rep} R).
         </p>
         <p className="mt-2">
-          <strong>Seats vs ours</strong> is how many more seats they hand the Democrats than we do across the races both call &mdash;
-          counted the same way for everyone, so it will not always match the gap between the bars. <strong>Our lean</strong> is the
+          <strong>Seats vs CTS</strong> is how many more seats they hand the Democrats than we do across the races both call &mdash;
+          counted the same way for everyone, so it will not always match the gap between the bars. <strong>CTS lean</strong> is the
           average distance between our call and theirs in steps on the scale Safe D, Likely D, Lean D, Tilt D, Toss-up, Tilt R, Lean R,
           Likely R, Safe R, and <strong>Flips</strong> counts the races where they favor the Democrat and we the Republican, then the
           reverse. A rater&rsquo;s label is used as published (Solid counts as Safe); a model&rsquo;s probability is banded on its

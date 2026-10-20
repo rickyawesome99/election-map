@@ -12,7 +12,7 @@ export const STATE_LEG_VALIDATION = {
       "maeAfterIncumbency": 5.71,
       "incumbencyPts": 3.59,
       "incumbentRaces": 1647,
-      "sigma": 7.99,
+      "sigma": 7.98,
       "sigmaRobust": 6.19,
       "stateShock": 3.44,
       "sigmaWithin": 7.21,
@@ -24,11 +24,11 @@ export const STATE_LEG_VALIDATION = {
       "bias": 0.67,
       "mae": 5.21,
       "maeAfterIncumbency": 5.12,
-      "incumbencyPts": 1.78,
+      "incumbencyPts": 1.79,
       "incumbentRaces": 2274,
       "sigma": 7.63,
-      "sigmaRobust": 5.18,
-      "stateShock": 3.41,
+      "sigmaRobust": 5.16,
+      "stateShock": 3.4,
       "sigmaWithin": 6.83,
       "chambers": 75
     }

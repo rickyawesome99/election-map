@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 North Dakota state legislative fundraising from the Secretary of State's campaign finance search
-(cf.sos.nd.gov), cycles 2016–2024. 2026 is not in the search's year list yet (year-end statements
-for 2026 arrive in January 2027).
+(cf.sos.nd.gov), cycles 2016–2026. The running cycle (2026) has nothing yet: legislative committees file year-end statements in
+election years only, so 2026's arrive in January 2027 (the to-date mode writes nothing until then).
 
   python3 scripts/fetch-state-leg-finance-nd.py [CYCLE ...]
 
@@ -10,7 +10,8 @@ Candidates: the Telerik search form (cfsearch.aspx), year Y, Year-End statements
 Candidates, page size raised to 2,000 — every candidate committee that filed a year-end statement for
 Y, with office and district. Money: showcommittee.aspx?cid=&yr= (plain GET) has the year-end statement,
 which covers the whole calendar year: "contributions of $200 or less" + "greater than $200" (North
-Dakota itemizes only the latter, so itemized sums would undercount). A cycle = year-end (Y-1) +
+Dakota itemizes only the latter, so itemized sums would undercount). Statements for 2016 and before print
+only the over-$200 total, so the 2016 cycle is that total for every candidate (the source label says so). A cycle = year-end (Y-1) +
 year-end (Y). Mary Adams, House 43, 2022 year-end: $4,421.87 + $9,047.10.
 
 Output: data-entry/state-leg-finance/portal-raw/ND-{cycle}.json. Pages cached in scratch portal-cache/nd/.
@@ -119,32 +120,74 @@ def committee(cid, year):
 
 
 def year_end(h):
-    """(contributions, district, party) from a committee-year page; contributions None without a year-end statement."""
+    """(contributions, over-$200 contributions, district, party) from a committee-year page; None without a
+    year-end statement. Statements for 2016 and before print only the over-$200 total (contributions None)."""
     x = text(h)
     dist = re.search(r"District (\d+)\b", x)
     party = re.search(r"Political Party (.*?) Running for", x)
+    num = lambda v: float(v.replace(",", ""))
     m = re.search(r"Year End \d\d/\d\d/\d\d Year End \d+ \d+ \$([\d,]+\.\d\d) \$([\d,]+\.\d\d)", x)
-    contrib = float(m.group(1).replace(",", "")) + float(m.group(2).replace(",", "")) if m else None
-    return contrib, dist.group(1) if dist else None, party.group(1).strip() if party else None
+    if m:
+        return num(m.group(1)) + num(m.group(2)), num(m.group(2)), dist.group(1) if dist else None, party.group(1).strip() if party else None
+    old = re.search(r"greater than \$200 IsApproved Year End \d\d/\d\d/\d\d Year End \d+ \d+ \$([\d,]+\.\d\d)", x)
+    return None, num(old.group(1)) if old else None, dist.group(1) if dist else None, party.group(1).strip() if party else None
 
 
 def fetch(cycle):
     _, cands = year_end_list(cycle)
     if not cands:
         sys.exit(f"ND {cycle}: empty year-end list (the form flow changed?)")
-    out = []
+    rows = []
     for c in cands:
-        now, district, party = year_end(committee(c["cid"], cycle))
-        before, _, _ = year_end(committee(c["cid"], cycle - 1))
-        known = [v for v in (before, now) if v is not None]
+        now, now200, district, party = year_end(committee(c["cid"], cycle))
+        before, before200, _, _ = year_end(committee(c["cid"], cycle - 1))
+        rows.append((c, district, party, (before, now), (before200, now200)))
+    # A cycle whose election-year statements print only the over-$200 total (2016) uses that total for every
+    # candidate and both years, so both sides of a race are on one basis. (2018 keeps its full 2018 total; its
+    # 2017 statements are the old form and drop out as before.)
+    over200 = any(t[3][1] is None and t[4][1] is not None for t in rows)
+    out = []
+    for c, district, party, full, part in rows:
+        known = [v for v in (part if over200 else full) if v is not None]
         out.append({"name": c["name"], "party": party, "chamber": c["chamber"], "district": district,
                     "contributions": round(sum(known), 2) if known else None})
-    body = {"state": "ND", "cycle": cycle, "source": SOURCE, "fetched": TODAY.isoformat(), "dataThrough": f"12/31/{cycle}", "candidates": out}
+    source = SOURCE.replace(")", "; contributions over $200 only)") if over200 else SOURCE
+    body = {"state": "ND", "cycle": cycle, "source": source, "fetched": TODAY.isoformat(), "dataThrough": f"12/31/{cycle}", "candidates": out}
     os.makedirs(OUT_DIR, exist_ok=True)
     json.dump(body, open(os.path.join(OUT_DIR, f"ND-{cycle}.json"), "w"), indent=1)
     print(f"ND {cycle}: {len(out)} legislative candidates")
 
 
+def fetch_to_date(cycle):
+    """The cycle still running: only the year-end statement for the year before the election is filed (the
+    election year's arrives the next January), so the figure is to-date through Dec 31 of cycle − 1."""
+    # The search form errors on the odd year (2025), so the committees are every one the cached
+    # even-year lists know (incumbents and past candidates; a first-time candidate's committee is missed).
+    cands = {}
+    for y in range(cycle - 10, cycle, 2):
+        if os.path.exists(os.path.join(CACHE, f"list-{y}.html")):
+            for c in year_end_list(y)[1]:
+                cands[c["cid"]] = c
+    cands = list(cands.values())
+    if not cands:
+        sys.exit(f"ND {cycle}: no cached committee lists")
+    out = []
+    for c in cands:
+        total, _, district, party = year_end(committee(c["cid"], cycle - 1))
+        if total is None:
+            continue   # no 2025 statement: not an active committee
+        out.append({"name": c["name"], "party": party, "chamber": c["chamber"], "district": district,
+                    "contributions": round(total, 2) if total is not None else None})
+    if not out:
+        # Legislative committees file year-end statements in election years only (2025: none), so the
+        # running cycle has nothing until the election year's statement arrives the next January.
+        sys.exit(f"ND {cycle}: no {cycle - 1} statements filed; nothing written")
+    body = {"state": "ND", "cycle": cycle, "source": SOURCE.replace(")", f"; {cycle - 1} only, to date)"), "fetched": TODAY.isoformat(), "dataThrough": f"12/31/{cycle - 1}", "candidates": out}
+    json.dump(body, open(os.path.join(OUT_DIR, f"ND-{cycle}.json"), "w"), indent=1)
+    print(f"ND {cycle} (to date): {len(out)} legislative candidates, {sum(1 for o in out if o['contributions'] is not None)} with a figure")
+
+
 if __name__ == "__main__":
-    for c in [int(a) for a in sys.argv[1:]] or [2016, 2018, 2020, 2022, 2024]:
-        fetch(c)
+    for c in [int(a) for a in sys.argv[1:]] or [2016, 2018, 2020, 2022, 2024, 2026]:
+        # The year-end statement for the election year is filed the next January.
+        fetch_to_date(c) if TODAY.year <= c else fetch(c)

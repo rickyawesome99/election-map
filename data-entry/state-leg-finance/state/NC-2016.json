@@ -7,6 +7,7 @@
   "1": [
    {
     "name": "COMM TO ELECT BILL COOK",
+    "candidate": "Bill Cook",
     "party": "Republican",
     "incumbent": true,
     "contributions": 666828.85,
@@ -14,6 +15,7 @@
    },
    {
     "name": "FUTRELL FOR SENATE",
+    "candidate": "Brownie Futrell",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 115417,
@@ -23,6 +25,7 @@
   "2": [
    {
     "name": "CITIZENS TO ELECT NORMAN SANDERSON",
+    "candidate": "Norman Sanderson",
     "party": "Republican",
     "incumbent": true,
     "contributions": 56113,
@@ -30,6 +33,7 @@
    },
    {
     "name": "WHITE FOR NC SENATE",
+    "candidate": "Dorothea E. White",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3039.05,
@@ -39,6 +43,7 @@
   "4": [
    {
     "name": "COMM TO ELECT ANGELA BRYANT",
+    "candidate": "Angela R. Bryant",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 132751.12,
@@ -46,6 +51,7 @@
    },
    {
     "name": "RICHARD SCOTT FOR NC SENATE 4",
+    "candidate": "Richard Scott",
     "party": "Republican",
     "incumbent": false,
     "contributions": 4900,
@@ -55,6 +61,7 @@
   "5": [
    {
     "name": "DON DAVIS FOR NC SENATE",
+    "candidate": "Don Davis",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 36403.24,
@@ -64,6 +71,7 @@
   "6": [
    {
     "name": "HARRY BROWN FOR NC SENATE",
+    "candidate": "Harry Brown",
     "party": "Republican",
     "incumbent": true,
     "contributions": 533850,
@@ -73,6 +81,7 @@
   "7": [
    {
     "name": "LOUIS PATE ELECTION COMM",
+    "candidate": "Louis M. Pate Jr.",
     "party": "Republican",
     "incumbent": true,
     "contributions": 86433.72,
@@ -82,6 +91,7 @@
   "8": [
    {
     "name": "RABON FOR SENATE",
+    "candidate": "Bill Rabon",
     "party": "Republican",
     "incumbent": true,
     "contributions": 464809.83,
@@ -91,6 +101,7 @@
   "9": [
    {
     "name": "COMM TO ELECT MICHAEL LEE",
+    "candidate": "Michael Lee",
     "party": "Republican",
     "incumbent": true,
     "contributions": 467518.57,
@@ -100,6 +111,7 @@
   "10": [
    {
     "name": "BRENT JACKSON FOR NC SENATE",
+    "candidate": "Brent Jackson",
     "party": "Republican",
     "incumbent": true,
     "contributions": 808506.41,
@@ -109,6 +121,7 @@
   "11": [
    {
     "name": "RICK HORNER FOR NC SENATE",
+    "candidate": "Rick Horner",
     "party": "Republican",
     "incumbent": false,
     "contributions": 68416.63,
@@ -116,6 +129,7 @@
    },
    {
     "name": "PACER FOR NC SENATE",
+    "candidate": "Albert Pacer",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3560.42,
@@ -125,6 +139,7 @@
   "12": [
    {
     "name": "RONALD RABIN FOR NC SENATE",
+    "candidate": "Ronald Rabin",
     "party": "Republican",
     "incumbent": true,
     "contributions": 94758.08,
@@ -132,6 +147,7 @@
    },
    {
     "name": "COMM TO ELECT SUSAN BYERLY",
+    "candidate": "Susan Byerly",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 27030.5,
@@ -141,6 +157,7 @@
   "13": [
    {
     "name": "JANE W SMITH FOR NC SENATE",
+    "candidate": "Jane W. Smith",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 70548,
@@ -148,6 +165,7 @@
    },
    {
     "name": "DANNY BRITT FOR NC SENATE",
+    "candidate": "Danny Earl R. Britt",
     "party": "Republican",
     "incumbent": false,
     "contributions": 212449.6,
@@ -157,6 +175,7 @@
   "14": [
    {
     "name": "CITIZENS FOR DAN BLUE",
+    "candidate": "Dan Blue",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 379898.37,
@@ -166,6 +185,7 @@
   "15": [
    {
     "name": "LAUREL DEEGAN-FRICKE FOR STATE SENATE",
+    "candidate": "Laurel Deeganfricke",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 25492.01,
@@ -173,6 +193,7 @@
    },
    {
     "name": "ALEXANDER FOR NC SENATE",
+    "candidate": "John Alexander",
     "party": "Republican",
     "incumbent": true,
     "contributions": 295032.67,
@@ -182,6 +203,7 @@
   "16": [
    {
     "name": "THE COMMITTEE TO ELECT ERIC WEAVER",
+    "candidate": "Eric Weaver",
     "party": "Republican",
     "incumbent": false,
     "contributions": 722.49,
@@ -191,6 +213,7 @@
   "17": [
    {
     "name": "SUSAN EVANS FOR NC SENATE",
+    "candidate": "Susan P. Evans",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 515952.67,
@@ -200,6 +223,7 @@
   "18": [
    {
     "name": "COMM TO ELECT CHAD BAREFOOT",
+    "candidate": "Chad Barefoot",
     "party": "Republican",
     "incumbent": true,
     "contributions": 1028468.33,
@@ -207,6 +231,7 @@
    },
    {
     "name": "GIL JOHNSON FOR NC SENATE",
+    "candidate": "Gil Johnson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 429955.74,
@@ -216,6 +241,7 @@
   "19": [
    {
     "name": "WESLEY MEREDITH FOR SENATE",
+    "candidate": "Wesley Meredith",
     "party": "Republican",
     "incumbent": true,
     "contributions": 723550.58,
@@ -223,6 +249,7 @@
    },
    {
     "name": "COMM TO ELECT TONI MORRIS FOR NC SENATE DIST 19",
+    "candidate": "Toni Morris",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 23142.33,
@@ -232,6 +259,7 @@
   "20": [
    {
     "name": "MCKISSICK FOR NC SENATE",
+    "candidate": "Floyd B. McKissick Jr.",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 86722.65,
@@ -239,6 +267,7 @@
    },
    {
     "name": "HOWE FOR NC SENATE",
+    "candidate": "Barbara Howe",
     "party": "Other",
     "incumbent": false,
     "contributions": 506.79,
@@ -248,6 +277,7 @@
   "21": [
    {
     "name": "COMMITTEE TO ELECT DAN TRAVIESO",
+    "candidate": "Dan Travieso",
     "party": "Republican",
     "incumbent": false,
     "contributions": 21336.15,
@@ -257,6 +287,7 @@
   "22": [
    {
     "name": "THE COMMITTEE TO ELECT MIKE WOODARD",
+    "candidate": "Mike Woodard",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 57907,
@@ -264,6 +295,7 @@
    },
    {
     "name": "T GREG DOUCETTE FOR NC SENATE",
+    "candidate": "T. Greg Doucette",
     "party": "Republican",
     "incumbent": false,
     "contributions": 33120.27,
@@ -273,6 +305,7 @@
   "24": [
    {
     "name": "JOHN THORPE FOR NC",
+    "candidate": "John Thorpe",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4649.38,
@@ -280,6 +313,7 @@
    },
    {
     "name": "GUNN FOR NC SENATE",
+    "candidate": "Rick Gunn",
     "party": "Republican",
     "incumbent": true,
     "contributions": 215125.97,
@@ -289,6 +323,7 @@
   "25": [
    {
     "name": "MCINNIS FOR STATE SENATE",
+    "candidate": "Tom McInnis",
     "party": "Republican",
     "incumbent": true,
     "contributions": 263685.48,
@@ -296,6 +331,7 @@
    },
    {
     "name": "DANNIE MONTGOMERY CAMPAIGN COMMITTEE",
+    "candidate": "Dannie M. Montgomery",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 11427.05,
@@ -305,6 +341,7 @@
   "27": [
    {
     "name": "FRIENDS OF TRUDY WADE",
+    "candidate": "Trudy Wade",
     "party": "Republican",
     "incumbent": true,
     "contributions": 599633.23,
@@ -314,6 +351,7 @@
   "28": [
    {
     "name": "COMM TO ELECT GLADYS A ROBINSON",
+    "candidate": "Gladys A. Robinson",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 54945,
@@ -321,6 +359,7 @@
    },
    {
     "name": "ELECT DEVIN KING FOR NC STATE SENATE",
+    "candidate": "Devin R. King",
     "party": "Republican",
     "incumbent": false,
     "contributions": 207,
@@ -330,6 +369,7 @@
   "29": [
    {
     "name": "JERRY W TILLMAN FOR NC SENATE",
+    "candidate": "Jerry W. Tillman",
     "party": "Republican",
     "incumbent": true,
     "contributions": 246740.53,
@@ -339,6 +379,7 @@
   "30": [
    {
     "name": "MICHAEL HOLLEMAN FOR NC SENATE",
+    "candidate": "Michael W. Holleman",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 2599,
@@ -348,6 +389,7 @@
   "31": [
    {
     "name": "JOYCE KRAWIEC FOR NC SENATE",
+    "candidate": "Joyce Krawiec",
     "party": "Republican",
     "incumbent": true,
     "contributions": 104414.49,
@@ -357,6 +399,7 @@
   "32": [
    {
     "name": "PAUL LOWE FOR NC SENATE",
+    "candidate": "Paul Lowe Jr.",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 62065.21,
@@ -366,6 +409,7 @@
   "33": [
    {
     "name": "CATHY DUNN FOR SENATE",
+    "candidate": "Cathy Dunn",
     "party": "Republican",
     "incumbent": false,
     "contributions": 14180,
@@ -373,6 +417,7 @@
    },
    {
     "name": "JIM BEALL GRAHAM FOR NC SENATE",
+    "candidate": "Jim Beallgraham",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4842,
@@ -382,6 +427,7 @@
   "34": [
    {
     "name": "BROCK FOR SENATE",
+    "candidate": "Andrew C. Brock",
     "party": "Republican",
     "incumbent": true,
     "contributions": 84500,
@@ -391,6 +437,7 @@
   "35": [
    {
     "name": "TOMMY TUCKER FOR NC SENATE COMM",
+    "candidate": "Tommy Tucker",
     "party": "Republican",
     "incumbent": true,
     "contributions": 366934.04,
@@ -400,6 +447,7 @@
   "36": [
    {
     "name": "NEWTON FOR SENATE",
+    "candidate": "Paul R. Newton",
     "party": "Republican",
     "incumbent": false,
     "contributions": 139515.28,
@@ -407,6 +455,7 @@
    },
    {
     "name": "COMM TO ELECT ROBERT BROWN",
+    "candidate": "Robert Brown",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1923.51,
@@ -416,6 +465,7 @@
   "37": [
    {
     "name": "BOB DIAMOND FOR STATE SENATE",
+    "candidate": "Bob Diamond",
     "party": "Republican",
     "incumbent": false,
     "contributions": 4445.39,
@@ -425,6 +475,7 @@
   "38": [
    {
     "name": "JOEL FORD COMM",
+    "candidate": "Joel Ford",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 98711,
@@ -434,6 +485,7 @@
   "39": [
    {
     "name": "BISHOP FOR SENATE",
+    "candidate": "Dan Bishop",
     "party": "Republican",
     "incumbent": false,
     "contributions": 390237.1,
@@ -441,6 +493,7 @@
    },
    {
     "name": "SCHER FOR NC SENATE DISTRICT 39",
+    "candidate": "Lloyd Scher",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6332,
@@ -450,6 +503,7 @@
   "40": [
    {
     "name": "JOYCE WADDELL SENATE 40 CAMPAIGN",
+    "candidate": "Joyce Waddell",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 24422.5,
@@ -457,6 +511,7 @@
    },
    {
     "name": "MARGUERITE COOKE FOR STATE SENATE",
+    "candidate": "Marguerite Cooke",
     "party": "Republican",
     "incumbent": false,
     "contributions": 457,
@@ -466,6 +521,7 @@
   "41": [
    {
     "name": "COMM TO ELECT JEFF TARTE",
+    "candidate": "Jeff Tarte",
     "party": "Republican",
     "incumbent": true,
     "contributions": 343052.7,
@@ -475,6 +531,7 @@
   "43": [
    {
     "name": "CITIZENS TO ELECT KATHY HARRINGTON",
+    "candidate": "Kathy Harrington",
     "party": "Republican",
     "incumbent": true,
     "contributions": 163078.93,
@@ -484,6 +541,7 @@
   "44": [
    {
     "name": "DAVID CURTIS CAMPAIGN",
+    "candidate": "David L. Curtis",
     "party": "Republican",
     "incumbent": true,
     "contributions": 244904.2,
@@ -493,6 +551,7 @@
   "46": [
    {
     "name": "WARREN DANIEL FOR NC SENATE",
+    "candidate": "Warren Daniel",
     "party": "Republican",
     "incumbent": true,
     "contributions": 132298.17,
@@ -502,6 +561,7 @@
   "47": [
    {
     "name": "RALPH HISE FOR NC SENATE",
+    "candidate": "Ralph Hise",
     "party": "Republican",
     "incumbent": true,
     "contributions": 224638.32,
@@ -509,6 +569,7 @@
    },
    {
     "name": "COMMITTEE TO ELECT MARY JANE BOYD FOR NC SENATE",
+    "candidate": "Mary Jane Boyd",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 28008.95,
@@ -518,6 +579,7 @@
   "48": [
    {
     "name": "CHUCK EDWARDS FOR NC SENATE COMM",
+    "candidate": "Chuck Edwards",
     "party": "Republican",
     "incumbent": false,
     "contributions": 135490.53,
@@ -525,6 +587,7 @@
    },
    {
     "name": "BOSSERT FOR STATE SENATE",
+    "candidate": "Norman Bossert",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 27617.98,
@@ -534,6 +597,7 @@
   "50": [
    {
     "name": "FRIENDS FOR JANE HIPPS",
+    "candidate": "Jane Hipps",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 369273.27,
@@ -545,6 +609,7 @@
   "1": [
    {
     "name": "COMMITTEE TO ELECT SAM DAVIS",
+    "candidate": "Sam Davis",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 10337,
@@ -554,6 +619,7 @@
   "2": [
    {
     "name": "PARRISH FOR NC HOUSE",
+    "candidate": "Joe Parrish",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 2036.51,
@@ -561,6 +627,7 @@
    },
    {
     "name": "COMM TO ELECT LARRY YARBOROUGH",
+    "candidate": "Larry Yarborough",
     "party": "Republican",
     "incumbent": true,
     "contributions": 147439.45,
@@ -570,6 +637,7 @@
   "3": [
    {
     "name": "SPECIALE FOR NC HOUSE",
+    "candidate": "Michael Speciale",
     "party": "Republican",
     "incumbent": true,
     "contributions": 17204.49,
@@ -577,6 +645,7 @@
    },
    {
     "name": "COMMITTEE TO ELECT MARVA FISHER BALDWIN",
+    "candidate": "Marva Fisherbaldwin",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9351.92,
@@ -586,6 +655,7 @@
   "4": [
    {
     "name": "JIMMY DIXON FOR HD 4",
+    "candidate": "Jimmy Dixon",
     "party": "Republican",
     "incumbent": true,
     "contributions": 155974,
@@ -595,6 +665,7 @@
   "5": [
    {
     "name": "COMMITTEE TO RE-ELECT HOWARD J HUNTER III REPRESENTATIVE",
+    "candidate": "Howard Jacque Hunter III",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 16200,
@@ -604,6 +675,7 @@
   "6": [
    {
     "name": "COMMITTEE TO ELECT WARREN JUDGE",
+    "candidate": "Warren Judge",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 348021.11,
@@ -611,6 +683,7 @@
    },
    {
     "name": "BOSWELL FOR NC HOUSE",
+    "candidate": "Beverly Boswell",
     "party": "Republican",
     "incumbent": false,
     "contributions": 91634.66,
@@ -620,6 +693,7 @@
   "7": [
    {
     "name": "BOBBIE RICHARDSON FOR NC HOUSE",
+    "candidate": "Bobbie J. Richardson",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 35222,
@@ -627,6 +701,7 @@
    },
    {
     "name": "WILLIAM DUKE HANCOCK II",
+    "candidate": "William Dukehancock II",
     "party": "Republican",
     "incumbent": false,
     "contributions": 9453.24,
@@ -636,6 +711,7 @@
   "8": [
    {
     "name": "CITIZENS FOR SUSAN MARTIN",
+    "candidate": "Susan Martin",
     "party": "Republican",
     "incumbent": true,
     "contributions": 436122.68,
@@ -643,6 +719,7 @@
    },
    {
     "name": "CHARLIE PAT FARRIS FOR NC GENERAL ASSEMBLY",
+    "candidate": "Charlie Pat Farris",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 42170.4,
@@ -652,6 +729,7 @@
   "9": [
    {
     "name": "BRIAN FARKAS FOR NC HOUSE",
+    "candidate": "Brian Farkas",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 165652.13,
@@ -659,6 +737,7 @@
    },
    {
     "name": "FRIENDS OF DR GREG MURPHY",
+    "candidate": "Greg Murphy",
     "party": "Republican",
     "incumbent": false,
     "contributions": 314150.81,
@@ -668,6 +747,7 @@
   "10": [
    {
     "name": "JOHN BELL COMM",
+    "candidate": "John R. Bell",
     "party": "Republican",
     "incumbent": true,
     "contributions": 386426.58,
@@ -677,6 +757,7 @@
   "11": [
    {
     "name": "FRIENDS OF DUANE HALL",
+    "candidate": "Duane Hall",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 74333.2,
@@ -686,6 +767,7 @@
   "13": [
    {
     "name": "COMMITTEE TO ELECT RODNEY ALEXANDER",
+    "candidate": "Rodney Alexander",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 15998.95,
@@ -695,6 +777,7 @@
   "14": [
    {
     "name": "GEORGE G CLEVELAND FOR NC HOUSE COMM",
+    "candidate": "George G. Cleveland",
     "party": "Republican",
     "incumbent": true,
     "contributions": 31258.72,
@@ -704,6 +787,7 @@
   "15": [
    {
     "name": "DANIEL WHITTEN FOR NC HOUSE",
+    "candidate": "Dan Whitten",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 2922.57,
@@ -711,6 +795,7 @@
    },
    {
     "name": "PHIL SHEPARD NC HOUSE",
+    "candidate": "Phillip Shepard",
     "party": "Republican",
     "incumbent": true,
     "contributions": 35975,
@@ -720,6 +805,7 @@
   "16": [
    {
     "name": "MILLIS FOR NC HOUSE",
+    "candidate": "Chris W. Millis",
     "party": "Republican",
     "incumbent": true,
     "contributions": 115613.72,
@@ -727,6 +813,7 @@
    },
    {
     "name": "COMMITTEE TO ELECT STEVE UNGER",
+    "candidate": "Steve Unger",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 921,
@@ -736,6 +823,7 @@
   "17": [
    {
     "name": "COMM TO ELECT FRANK ILER",
+    "candidate": "Frank Iler",
     "party": "Republican",
     "incumbent": true,
     "contributions": 77353.03,
@@ -745,6 +833,7 @@
   "18": [
    {
     "name": "COMM TO ELECT GERALD BENTON",
+    "candidate": "Gerald Benton",
     "party": "Republican",
     "incumbent": false,
     "contributions": 3060.19,
@@ -754,6 +843,7 @@
   "21": [
    {
     "name": "LARRY BELL CAMPAIGN COMM",
+    "candidate": "Larry M. Bell",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 20000.21,
@@ -763,6 +853,7 @@
   "22": [
    {
     "name": "WILLIAM BRISSON FOR NC HOUSE COMM",
+    "candidate": "William Brisson",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 58950,
@@ -772,6 +863,7 @@
   "24": [
    {
     "name": "COMM TO RE-ELECT JEAN FARMER-BUTTERFIELD",
+    "candidate": "Jean Farmerbutterfield",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 45859.41,
@@ -781,6 +873,7 @@
   "25": [
    {
     "name": "CITIZENS TO ELECT JAMES D GAILLIARD",
+    "candidate": "James D. Gailliard",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 37841.63,
@@ -790,6 +883,7 @@
   "26": [
    {
     "name": "NIXON FOR NC HOUSE",
+    "candidate": "Rich Nixon",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 75060.79,
@@ -799,6 +893,7 @@
   "27": [
    {
     "name": "MICHAEL H WRAY FOR STATE HOUSE",
+    "candidate": "Michael H. Wray",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 147094.24,
@@ -808,6 +903,7 @@
   "28": [
    {
     "name": "OLIVER, PATRICIA A",
+    "candidate": "Patricia Oliver",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4745,
@@ -815,6 +911,7 @@
    },
    {
     "name": "LARRY C STRICKLAND CAMPAIGN COMMITTEE",
+    "candidate": "Larry C. Strickland",
     "party": "Republican",
     "incumbent": false,
     "contributions": 93102.01,
@@ -824,6 +921,7 @@
   "30": [
    {
     "name": "ELISSA ANN FUCHS",
+    "candidate": "Elissa Fuchs",
     "party": "Republican",
     "incumbent": false,
     "contributions": 261.55,
@@ -831,6 +929,7 @@
    },
    {
     "name": "PAUL LUEBKE FOR STATE HOUSE",
+    "candidate": "Paul Luebke",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 46383,
@@ -840,6 +939,7 @@
   "32": [
    {
     "name": "GARRISON FOR NC HOUSE 32",
+    "candidate": "Terry Garrison",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 30950,
@@ -849,6 +949,7 @@
   "33": [
    {
     "name": "ROSA GILL FOR NC HOUSE",
+    "candidate": "Rosa U. Gill",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 37748,
@@ -858,6 +959,7 @@
   "34": [
    {
     "name": "CITIZENS FOR GRIER MARTIN",
+    "candidate": "Grier Martin",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 130708.35,
@@ -865,6 +967,7 @@
    },
    {
     "name": "COMM TO ELECT BILL MORRIS",
+    "candidate": "Bill Morris",
     "party": "Republican",
     "incumbent": false,
     "contributions": 5731.94,
@@ -874,6 +977,7 @@
   "35": [
    {
     "name": "MALONE FOR NC HOUSE",
+    "candidate": "Chris Malone",
     "party": "Republican",
     "incumbent": true,
     "contributions": 482783.73,
@@ -881,6 +985,7 @@
    },
    {
     "name": "TERENCE EVERITT FOR NC HOUSE",
+    "candidate": "Terence Everitt",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 553035.8,
@@ -890,6 +995,7 @@
   "36": [
    {
     "name": "JEN FERRELL FOR NC HOUSE",
+    "candidate": "Jennifer Ferrell",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 130477.36,
@@ -897,6 +1003,7 @@
    },
    {
     "name": "DOLLAR FOR HOUSE",
+    "candidate": "Nelson Dollar",
     "party": "Republican",
     "incumbent": true,
     "contributions": 698329.92,
@@ -906,6 +1013,7 @@
   "37": [
    {
     "name": "WILLIAMS FOR NC HOUSE (LINDA HUNT WILLIAMS)",
+    "candidate": "Linda Huntwilliams",
     "party": "Republican",
     "incumbent": false,
     "contributions": 209868.03,
@@ -915,6 +1023,7 @@
   "38": [
    {
     "name": "OLEN LEO WATSON",
+    "candidate": "Olen Watson III",
     "party": "Other",
     "incumbent": false,
     "contributions": 1137,
@@ -924,6 +1033,7 @@
   "40": [
    {
     "name": "JOE JOHN NC HOUSE 40 COMMITTEE",
+    "candidate": "Joe John",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 259165.03,
@@ -931,6 +1041,7 @@
    },
    {
     "name": "COMM TO ELECT MARILYN AVILA",
+    "candidate": "Marilyn Avila",
     "party": "Republican",
     "incumbent": true,
     "contributions": 430064.08,
@@ -940,6 +1051,7 @@
   "42": [
    {
     "name": "LUCAS FOR HOUSE COMMITTEE",
+    "candidate": "Marvin W. Lucas",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 28695,
@@ -949,6 +1061,7 @@
   "43": [
    {
     "name": "COMM TO ELECT ELMER FLOYD",
+    "candidate": "Elmer Floyd",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 25608.14,
@@ -958,6 +1071,7 @@
   "45": [
    {
     "name": "JOHN SZOKA FOR NC HOUSE",
+    "candidate": "John Szoka",
     "party": "Republican",
     "incumbent": true,
     "contributions": 247729.04,
@@ -967,6 +1081,7 @@
   "46": [
    {
     "name": "COMMITTEE TO ELECT BRENDEN JONES",
+    "candidate": "Brenden Jones",
     "party": "Republican",
     "incumbent": false,
     "contributions": 256710.31,
@@ -976,6 +1091,7 @@
   "47": [
    {
     "name": "CHARLES GRAHAM CAMPAIGN",
+    "candidate": "Charles Graham",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 25814.5,
@@ -985,6 +1101,7 @@
   "48": [
    {
     "name": "COMM TO ELECT GARLAND PIERCE",
+    "candidate": "Garland E. Pierce",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 58270.24,
@@ -994,6 +1111,7 @@
   "49": [
    {
     "name": "PENDLETON FOR NC HOUSE",
+    "candidate": "Gary Pendleton",
     "party": "Republican",
     "incumbent": true,
     "contributions": 474385.29,
@@ -1003,6 +1121,7 @@
   "50": [
    {
     "name": "ROD CHANEY FOR NC HOUSE COMM",
+    "candidate": "Rod Chaney",
     "party": "Republican",
     "incumbent": false,
     "contributions": 503.19,
@@ -1012,6 +1131,7 @@
   "51": [
    {
     "name": "COMM TO ELECT BRAD SALMON",
+    "candidate": "Brad Salmon",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 309892.35,
@@ -1019,6 +1139,7 @@
    },
    {
     "name": "SAULS FOR NC HOUSE",
+    "candidate": "John Sauls",
     "party": "Republican",
     "incumbent": false,
     "contributions": 198375.22,
@@ -1028,6 +1149,7 @@
   "52": [
    {
     "name": "MOORE CITIZENS FOR BOLES (JAMIE BOLES)",
+    "candidate": "Jamie Boles",
     "party": "Republican",
     "incumbent": true,
     "contributions": 95420,
@@ -1037,6 +1159,7 @@
   "53": [
    {
     "name": "DAVID LEWIS FOR NC HOUSE",
+    "candidate": "David R. Lewis",
     "party": "Republican",
     "incumbent": true,
     "contributions": 669797.21,
@@ -1044,6 +1167,7 @@
    },
    {
     "name": "COMM TO ELECT JON BLUM",
+    "candidate": "Jon Blum",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 57383.42,
@@ -1053,6 +1177,7 @@
   "54": [
    {
     "name": "COMM TO ELECT ROBERT T REIVES II",
+    "candidate": "Robert T. Reives II",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 110980.41,
@@ -1060,6 +1185,7 @@
    },
    {
     "name": "COMM TO ELECT JOHN WESLEY SEAWELL",
+    "candidate": "Wesley Seawell",
     "party": "Republican",
     "incumbent": false,
     "contributions": 1924.15,
@@ -1069,6 +1195,7 @@
   "55": [
    {
     "name": "COMM TO ELECT MARK BRODY",
+    "candidate": "Mark Brody",
     "party": "Republican",
     "incumbent": true,
     "contributions": 37543.92,
@@ -1076,6 +1203,7 @@
    },
    {
     "name": "KIM HARGETT FOR NC HOUSE",
+    "candidate": "Kim Hargett",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 10703.81,
@@ -1085,6 +1213,7 @@
   "56": [
    {
     "name": "VERLA INSKO FOR STATE HOUSE",
+    "candidate": "Verla Insko",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 285014.23,
@@ -1094,6 +1223,7 @@
   "57": [
    {
     "name": "HARRISON FOR HOUSE (MARY PRICE TAYLOR)",
+    "candidate": "Mary Harrison",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 82710,
@@ -1103,6 +1233,7 @@
   "58": [
    {
     "name": "COMMITTEE TO ELECT AMOS QUICK",
+    "candidate": "Amos Quick",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 11010.01,
@@ -1112,6 +1243,7 @@
   "59": [
    {
     "name": "ELECT SCOTT A JONES",
+    "candidate": "Scott A. Jones",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1150,
@@ -1121,6 +1253,7 @@
   "60": [
    {
     "name": "CECIL BROCKMAN FOR NC HOUSE",
+    "candidate": "Cecil Brockman",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 26386,
@@ -1130,6 +1263,7 @@
   "61": [
    {
     "name": "COMM TO ELECT JOHN FAIRCLOTH",
+    "candidate": "John Faircloth",
     "party": "Republican",
     "incumbent": true,
     "contributions": 41448.72,
@@ -1139,6 +1273,7 @@
   "62": [
    {
     "name": "JOHN BLUST CAMPAIGN COMM",
+    "candidate": "John M. Blust",
     "party": "Republican",
     "incumbent": true,
     "contributions": 23300,
@@ -1148,6 +1283,7 @@
   "63": [
    {
     "name": "STEPHEN ROSS COMM",
+    "candidate": "Stephen Ross",
     "party": "Republican",
     "incumbent": true,
     "contributions": 71006.4,
@@ -1157,6 +1293,7 @@
   "64": [
    {
     "name": "RIDDELL FOR NC HOUSE 64",
+    "candidate": "Dennis Riddell",
     "party": "Republican",
     "incumbent": true,
     "contributions": 52644,
@@ -1166,6 +1303,7 @@
   "65": [
    {
     "name": "CITIZENS TO ELECT BERT JONES",
+    "candidate": "Bert Jones",
     "party": "Republican",
     "incumbent": true,
     "contributions": 109344.67,
@@ -1173,6 +1311,7 @@
    },
    {
     "name": "COMM TO ELECT KEITH DUNCAN",
+    "candidate": "H. Keith Duncan",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 14925,
@@ -1182,6 +1321,7 @@
   "66": [
    {
     "name": "COMM TO ELECT KEN GOODMAN",
+    "candidate": "Ken Goodman",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 127867.5,
@@ -1191,6 +1331,7 @@
   "67": [
    {
     "name": "JUSTIN BURR FOR NC HOUSE",
+    "candidate": "Justin P. Burr",
     "party": "Republican",
     "incumbent": true,
     "contributions": 105611,
@@ -1198,6 +1339,7 @@
    },
    {
     "name": "COMMITTEE TO ELECT CARSON SNYDER",
+    "candidate": "Carson Roger Snyder",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 23843,
@@ -1205,6 +1347,7 @@
    },
    {
     "name": "MILLS FOR NC HOUSE",
+    "candidate": "Billy Mills",
     "party": "Other",
     "incumbent": false,
     "contributions": 5613.18,
@@ -1214,6 +1357,7 @@
   "69": [
    {
     "name": "COMMITTEE TO ELECT GORDON DANIELS TO NC HOUSE",
+    "candidate": "Gordon B. Daniels",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5728.3,
@@ -1221,6 +1365,7 @@
    },
    {
     "name": "DEAN ARP FOR NC HOUSE",
+    "candidate": "Dean Arp",
     "party": "Republican",
     "incumbent": true,
     "contributions": 161266.7,
@@ -1230,6 +1375,7 @@
   "70": [
    {
     "name": "COMM TO ELECT PAT B HURLEY",
+    "candidate": "Pat B. Hurley",
     "party": "Republican",
     "incumbent": true,
     "contributions": 107799.64,
@@ -1237,6 +1383,7 @@
    },
    {
     "name": "LOIS BOHNSACK FOR NC HOUSE",
+    "candidate": "Lois Bohnsack",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4637.62,
@@ -1246,6 +1393,7 @@
   "71": [
    {
     "name": "EVELYN TERRY HOUSE DIST 71",
+    "candidate": "Evelyn Terry",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 4460,
@@ -1255,6 +1403,7 @@
   "74": [
    {
     "name": "CONRAD COMM FOR NC HOUSE",
+    "candidate": "Debra Conrad",
     "party": "Republican",
     "incumbent": true,
     "contributions": 137110.24,
@@ -1262,6 +1411,7 @@
    },
    {
     "name": "MARILYNN BAKER FOR STATE HOUSE 74",
+    "candidate": "Marilynn Baker",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3544.38,
@@ -1271,6 +1421,7 @@
   "75": [
    {
     "name": "COMM TO ELECT DONNY LAMBETH",
+    "candidate": "Donny C. Lambeth",
     "party": "Republican",
     "incumbent": true,
     "contributions": 199002.19,
@@ -1280,6 +1431,7 @@
   "77": [
    {
     "name": "HARRY WARREN NC HOUSE",
+    "candidate": "Harry Warren",
     "party": "Republican",
     "incumbent": true,
     "contributions": 59455.95,
@@ -1289,6 +1441,7 @@
   "78": [
    {
     "name": "ALLEN MCNEILL FOR NC HOUSE",
+    "candidate": "Allen McNeill",
     "party": "Republican",
     "incumbent": true,
     "contributions": 49504.96,
@@ -1296,6 +1449,7 @@
    },
    {
     "name": "MCCASKILL FOR NC HOUSE",
+    "candidate": "William McCaskill",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1008,
@@ -1305,6 +1459,7 @@
   "80": [
    {
     "name": "SAM WATFORD FOR NC HOUSE",
+    "candidate": "Sam Watford",
     "party": "Republican",
     "incumbent": true,
     "contributions": 18345.71,
@@ -1314,6 +1469,7 @@
   "81": [
    {
     "name": "LARRY W POTTS - NC HOUSE OF REPRESENTATIVES",
+    "candidate": "Larry W. Potts",
     "party": "Republican",
     "incumbent": false,
     "contributions": 63796.8,
@@ -1321,6 +1477,7 @@
    },
    {
     "name": "HEDRICK FOR HOUSE CAMPAIGN COMMITTEE",
+    "candidate": "Andy Hedrick",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 12486.91,
@@ -1330,6 +1487,7 @@
   "82": [
    {
     "name": "COMM TO ELECT LARRY PITTMAN",
+    "candidate": "Larry G. Pittman",
     "party": "Republican",
     "incumbent": true,
     "contributions": 60734.98,
@@ -1337,6 +1495,7 @@
    },
    {
     "name": "EARLE SCHECTER CAMPAIGN ACCT",
+    "candidate": "Earle Schecter",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 8187.32,
@@ -1346,6 +1505,7 @@
   "83": [
    {
     "name": "COMM TO ELECT LINDA P JOHNSON",
+    "candidate": "Linda P. Johnson",
     "party": "Republican",
     "incumbent": true,
     "contributions": 65900,
@@ -1353,6 +1513,7 @@
    },
    {
     "name": "COMMITTEE TO ELECT JEREMY HACHEN",
+    "candidate": "Jeremy Hachen",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5505.85,
@@ -1362,6 +1523,7 @@
   "84": [
    {
     "name": "WAYNE KAHL FOR STATE HOUSE",
+    "candidate": "John Waynekahl",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 834,
@@ -1369,6 +1531,7 @@
    },
    {
     "name": "CITIZENS TO ELECT RENA TURNER",
+    "candidate": "Rena W. Turner",
     "party": "Republican",
     "incumbent": true,
     "contributions": 43447,
@@ -1378,6 +1541,7 @@
   "86": [
    {
     "name": "TIM BARNSBACK FOR NC HOUSE",
+    "candidate": "Tim Barnsback",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 43289.81,
@@ -1385,6 +1549,7 @@
    },
    {
     "name": "HUGH BLACKWELL FOR NC HOUSE",
+    "candidate": "Hugh Blackwell",
     "party": "Republican",
     "incumbent": true,
     "contributions": 123661.6,
@@ -1394,6 +1559,7 @@
   "87": [
    {
     "name": "CITIZENS FOR DESTIN HALL",
+    "candidate": "Destin Hall",
     "party": "Republican",
     "incumbent": false,
     "contributions": 34732.55,
@@ -1403,6 +1569,7 @@
   "88": [
    {
     "name": "FRIENDS OF ROB BRYAN",
+    "candidate": "Rob Bryan",
     "party": "Republican",
     "incumbent": true,
     "contributions": 534765.8,
@@ -1410,6 +1577,7 @@
    },
    {
     "name": "COMMITTEE TO ELECT MARY BELK",
+    "candidate": "Mary Belk",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 491740.12,
@@ -1419,6 +1587,7 @@
   "89": [
    {
     "name": "COMM TO ELECT MITCHELL SMITH SETZER",
+    "candidate": "Mitchell Smithsetzer",
     "party": "Republican",
     "incumbent": true,
     "contributions": 67058.72,
@@ -1428,6 +1597,7 @@
   "90": [
    {
     "name": "ELECT VERA SMITH REYNOLDS",
+    "candidate": "Vera Smithreynolds",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1953.54,
@@ -1437,6 +1607,7 @@
   "91": [
    {
     "name": "KYLE HALL COMMITTEE",
+    "candidate": "Kyle Hall",
     "party": "Republican",
     "incumbent": false,
     "contributions": 64288.08,
@@ -1444,6 +1615,7 @@
    },
    {
     "name": "RUSSELL FOR HOUSE",
+    "candidate": "Eugene Russell",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6017.12,
@@ -1453,6 +1625,7 @@
   "93": [
    {
     "name": "COUNTS FOR NC HOUSE",
+    "candidate": "Sue Counts",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 266232.88,
@@ -1460,6 +1633,7 @@
    },
    {
     "name": "COMM TO ELECT JONATHAN JORDAN",
+    "candidate": "Jonathan C. Jordan",
     "party": "Republican",
     "incumbent": true,
     "contributions": 292647.86,
@@ -1469,6 +1643,7 @@
   "94": [
    {
     "name": "LENTZ FOR NC HOUSE",
+    "candidate": "Michael T. Lentz",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3182,
@@ -1478,6 +1653,7 @@
   "95": [
    {
     "name": "JOHN A FRALEY FOR NC HOUSE",
+    "candidate": "John A. Fraley",
     "party": "Republican",
     "incumbent": true,
     "contributions": 116365.1,
@@ -1487,6 +1663,7 @@
   "96": [
    {
     "name": "ADAMS FOR NC HOUSE",
+    "candidate": "Jay Adams",
     "party": "Republican",
     "incumbent": true,
     "contributions": 47459.1,
@@ -1496,6 +1673,7 @@
   "97": [
    {
     "name": "JASON SAINE COMM",
+    "candidate": "Jason R. Saine",
     "party": "Republican",
     "incumbent": true,
     "contributions": 316514.08,
@@ -1505,6 +1683,7 @@
   "98": [
    {
     "name": "JANE CAMPBELL FOR NC HOUSE",
+    "candidate": "Jane Campbell",
     "party": "Other",
     "incumbent": false,
     "contributions": 256599.06,
@@ -1512,6 +1691,7 @@
    },
    {
     "name": "THE JOHN R BRADFORD III COMM",
+    "candidate": "John R. Bradford III",
     "party": "Republican",
     "incumbent": true,
     "contributions": 297714.05,
@@ -1521,6 +1701,7 @@
   "100": [
    {
     "name": "JOHN AUTRY CAMPAIGN COMM",
+    "candidate": "John Autry",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 22083.07,
@@ -1530,6 +1711,7 @@
   "101": [
    {
     "name": "FRIENDS OF JUSTIN DUNN",
+    "candidate": "Justin Dunn",
     "party": "Republican",
     "incumbent": false,
     "contributions": 207,
@@ -1539,6 +1721,7 @@
   "102": [
    {
     "name": "COMM TO RE-ELECT BECKY CARNEY",
+    "candidate": "Becky Carney",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 23853.99,
@@ -1548,6 +1731,7 @@
   "103": [
    {
     "name": "ROCHELLE RIVAS CAMPAIGN COMMITTEE",
+    "candidate": "Rochelle Rivas",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 71454.04,
@@ -1555,6 +1739,7 @@
    },
    {
     "name": "BILL BRAWLEY COMM",
+    "candidate": "Bill Brawley",
     "party": "Republican",
     "incumbent": true,
     "contributions": 507216.93,
@@ -1564,6 +1749,7 @@
   "104": [
    {
     "name": "VOTE ANDY DULIN",
+    "candidate": "Andy Dulin",
     "party": "Republican",
     "incumbent": false,
     "contributions": 111086.79,
@@ -1571,6 +1757,7 @@
    },
    {
     "name": "FRIENDS OF PETER NORIS",
+    "candidate": "Peter Noris",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 10448,
@@ -1580,6 +1767,7 @@
   "105": [
    {
     "name": "FRIENDS OF CONNIE GREEN-JOHNSON",
+    "candidate": "Connie Greenjohnson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 31780.59,
@@ -1587,6 +1775,7 @@
    },
    {
     "name": "NATHAN D STONE NC STATE HOUSE CAMPAIGN 2016",
+    "candidate": "Scott Stone",
     "party": "Republican",
     "incumbent": false,
     "contributions": 2282.63,
@@ -1596,6 +1785,7 @@
   "106": [
    {
     "name": "CARLA CUNNINGHAM CAMPAIGN COMM",
+    "candidate": "Carla Cunningham",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 16390,
@@ -1605,6 +1795,7 @@
   "107": [
    {
     "name": "COMM TO ELECT KELLY ALEXANDER",
+    "candidate": "Kelly Alexander",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 37726.94,
@@ -1614,6 +1805,7 @@
   "108": [
    {
     "name": "FRIENDS TO ELECT JOHN TORBETT",
+    "candidate": "John A. Torbett",
     "party": "Republican",
     "incumbent": true,
     "contributions": 81113.6,
@@ -1623,6 +1815,7 @@
   "109": [
    {
     "name": "BUMGARDNER FOR NC HOUSE",
+    "candidate": "Dana Bumgardner",
     "party": "Republican",
     "incumbent": true,
     "contributions": 105800.43,
@@ -1630,6 +1823,7 @@
    },
    {
     "name": "COMMITTEE TO ELECT SUSAN MAXON",
+    "candidate": "Susan Maxon",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4046.74,
@@ -1639,6 +1833,7 @@
   "110": [
    {
     "name": "FRIENDS OF KELLY HASTINGS",
+    "candidate": "Kelly Hastings",
     "party": "Republican",
     "incumbent": true,
     "contributions": 92731.51,
@@ -1648,6 +1843,7 @@
   "111": [
    {
     "name": "FRIENDS OF TIM MOORE",
+    "candidate": "Tim Moore",
     "party": "Republican",
     "incumbent": true,
     "contributions": 1863422.28,
@@ -1657,6 +1853,7 @@
   "112": [
    {
     "name": "EDWARDS FOR NC HOUSE 112",
+    "candidate": "Ben Edwards",
     "party": "Other",
     "incumbent": false,
     "contributions": 13670.81,
@@ -1664,6 +1861,7 @@
    },
    {
     "name": "ROGERS FOR HOUSE",
+    "candidate": "David Rogers",
     "party": "Republican",
     "incumbent": false,
     "contributions": 19540.97,
@@ -1673,6 +1871,7 @@
   "113": [
    {
     "name": "COMMITTEE TO ELECT CODY HENSON",
+    "candidate": "Cody Henson",
     "party": "Republican",
     "incumbent": false,
     "contributions": 34994.05,
@@ -1682,6 +1881,7 @@
   "114": [
    {
     "name": "COMM TO ELECT SUSAN C FISHER",
+    "candidate": "Susan C. Fisher",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 98346.91,
@@ -1691,6 +1891,7 @@
   "115": [
    {
     "name": "FRANK MORETZ COMMITTEE",
+    "candidate": "Frank Moretz",
     "party": "Republican",
     "incumbent": false,
     "contributions": 179713.92,
@@ -1700,6 +1901,7 @@
   "116": [
    {
     "name": "BRIAN TURNER FOR NC HOUSE",
+    "candidate": "Brian Turner",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 261118.01,
@@ -1709,6 +1911,7 @@
   "118": [
    {
     "name": "COMM TO ELECT MICHELE PRESNELL",
+    "candidate": "Michele D. Presnell",
     "party": "Republican",
     "incumbent": true,
     "contributions": 291182.29,
@@ -1718,6 +1921,7 @@
   "119": [
    {
     "name": "COMMITTEE TO ELECT MIKE CLAMPITT",
+    "candidate": "Mike Clampitt",
     "party": "Republican",
     "incumbent": false,
     "contributions": 12015,
@@ -1725,6 +1929,7 @@
    },
    {
     "name": "FRIENDS OF JOE SAM QUEEN",
+    "candidate": "Joe Sam Queen",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 47603.08,
@@ -1734,6 +1939,7 @@
   "120": [
    {
     "name": "COMMITTEE TO ELECT RANDY HOGSED",
+    "candidate": "Randy Hogsed",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 527,

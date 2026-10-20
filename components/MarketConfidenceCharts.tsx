@@ -105,25 +105,37 @@ function BandGrid({ rows, onTip, wrap }: { rows: MarketDot[]; onTip: (tip: Tip) 
   );
 }
 
+// [desktop label, mobile label]: the short labels keep all five columns on one line at phone width.
+const BAND_COLUMNS = [
+  ["Favorite", "Favorite"],
+  ["Markets", "Markets"],
+  ["Average price", "Avg price"],
+  ["Favorite won", "Fav. won"],
+  ["Won minus price", "Won − price"],
+] as const;
+const bandCell = "px-1.5 py-1.5 text-left tabular-nums sm:px-2";
+
 function BandTable({ rows }: { rows: MarketDot[] }) {
   return (
     <div className="overflow-x-auto">
       <table className="w-full max-w-2xl border-collapse text-sm">
         <thead>
-          <tr>{["Favorite priced at", "Markets", "Average price", "Favorite won", "Won minus price"].map((h, i) => (
-            <th key={h} scope="col" className={`${th} ${i === 0 ? "text-left" : "text-right"}`} style={thStyle}>{h}</th>
+          <tr>{BAND_COLUMNS.map(([full, short]) => (
+            <th key={full} scope="col" className="whitespace-nowrap px-1.5 py-2 text-left text-[10px] font-bold uppercase tracking-normal sm:px-2 sm:tracking-wider" style={thStyle}>
+              <span className="sm:hidden">{short}</span><span className="hidden sm:inline">{full}</span>
+            </th>
           ))}</tr>
         </thead>
         <tbody>
           {calibration(rows).map((b) => {
             const gap = b.n ? (b.right / b.n - b.expected) * 100 : null;
             return (
-              <tr key={b.label} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                <th scope="row" className="px-2 py-1.5 text-left font-semibold tabular-nums">{b.label}</th>
-                <td className="px-2 py-1.5 text-right tabular-nums">{b.n}</td>
-                <td className="px-2 py-1.5 text-right tabular-nums">{b.n ? fmtPct(b.expected) : "—"}</td>
-                <td className="px-2 py-1.5 text-right tabular-nums"><span className="font-semibold">{b.n ? fmtPct(b.right / b.n) : "—"}</span> <span style={{ color: "var(--app-text-very-muted)" }}>{b.right}/{b.n}</span></td>
-                <td className="px-2 py-1.5 text-right font-semibold tabular-nums">{gap == null ? "—" : `${gap >= 0 ? "+" : "−"}${Math.abs(gap).toFixed(0)} pts`}</td>
+              <tr key={b.label} className="whitespace-nowrap" style={{ borderBottom: "1px solid var(--app-border)" }}>
+                <th scope="row" className={`${bandCell} font-semibold`}>{b.label}</th>
+                <td className={bandCell}>{b.n}</td>
+                <td className={bandCell}>{b.n ? fmtPct(b.expected) : "—"}</td>
+                <td className={bandCell}><span className="font-semibold">{b.n ? fmtPct(b.right / b.n) : "—"}</span> <span className="hidden sm:inline" style={{ color: "var(--app-text-very-muted)" }}>{b.right}/{b.n}</span></td>
+                <td className={`${bandCell} font-semibold`}>{gap == null ? "—" : `${gap >= 0 ? "+" : "−"}${Math.abs(gap).toFixed(0)} pts`}</td>
               </tr>
             );
           })}
@@ -190,7 +202,12 @@ export default function MarketConfidenceCharts({ markets, years }: { markets: Ma
         </div>
       )}
 
-      <div className="mt-8"><BandTable rows={rows} /></div>
+      <div className="mt-8">
+        <p className="mb-3 text-xs leading-relaxed sm:hidden" style={{ color: "var(--app-text-very-muted)" }}>
+          Hover a point or a square for the detail; a square links to its race.
+        </p>
+        <BandTable rows={rows} />
+      </div>
     </div>
   );
 }

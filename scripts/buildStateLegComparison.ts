@@ -44,7 +44,7 @@ function keyCandidates(key: string, name: string): string[] {
     nm.replace(/-1$/, ""),
     nm.replace(/^[A-Z]{2} (Senate|House) /, ""),                                            // ElectIndex's malformed "HI Senate 19" / "WY Senate 6" keys
   ];
-  const m = nm.match(/^([A-Za-z]+)[ -](\d+)( s\d)?$/);                                      // NH Belknap 8 / Belknap-8 -> BE8, BE08
+  const m = nm.normalize("NFD").replace(/[\u0300-\u036f]/g, "").match(/^([A-Za-z]+)[ -](\d+)( s\d)?$/);   // Coös -> Coos                                      // NH Belknap 8 / Belknap-8 -> BE8, BE08
   if (m) { const c2 = m[1].slice(0, 2).toUpperCase(); out.push(`${c2}${m[2]}`, `${c2}${m[2].padStart(2, "0")}`); }
   return [...new Set(out)];
 }
@@ -90,7 +90,8 @@ for (const c of chambers) {
   for (const r of ei.rows.filter((x) => x.abbr === c.abbr && x.chamber === c.chamber)) {
     // The district token is the district (Idaho HD-10 + seat A; Maryland's HD-11B is a subdistrict with
     // seats A/B); South Dakota's HD-26A/B subdistricts come as HD-26 + seat, so district+seat is the fallback.
-    const d = find(r.district, r.district) ?? (r.seat ? find(`${r.district}${r.seat}`, `${r.district}${r.seat}`) : null);
+    const sub = r.raceCode.replace(/^[A-Z]{2}-/, "");                                       // SD-HD-26A: the A/B lives only in the race code
+    const d = find(r.district, r.district) ?? (r.seat ? find(`${r.district}${r.seat}`, `${r.district}${r.seat}`) : null) ?? find(sub, sub);
     if (!d) { unmatched.ei.push(`${c.abbr}-${c.chamber} ${r.raceCode}`); continue; }
     const f = eiFold.get(d.key) ?? foldInit(); eiFold.set(d.key, f);
     if (r.margin != null) { f.margins.push(r.margin); if (r.pD != null) f.pDs.push(r.pD); f.ratings.push(r.rating); f.unc.push(!!r.uncontested); f.current.push(r.incumbentParty ?? ""); f.leading.push(r.pD == null ? "" : r.pD >= 0.5 ? "D" : "R"); }

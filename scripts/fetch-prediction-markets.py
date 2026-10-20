@@ -15,13 +15,21 @@ Sources and what "election eve" means for each:
                    PredictIt's state prices as relayed (and rescaled to 100%) by
                    ElectionBettingOdds.com, captured 10:23 pm ET (Senate) and 8:04 pm ET
                    (governor) on Nov 7, 2022
-  predictit  2024  same feed, 5:27 am ET on Nov 4, 2024 (the closest capture; four race markets)
+  (PredictIt 2024 is left out: the closest capture, 5:27 am ET on Nov 4, 2024, held only four race markets.)
 
-Not recoverable (2026-10): any 2022 House market, and Kalshi before October 2024 (it listed no
-race-level election markets).
+Coverage (audited 2026-10-19): Polymarket 2024 = every state/district presidential market, the Senate
+and governor winner events, and all 22 House general-election events; Polymarket 2022 = its Senate,
+governor and six-district House events plus the AK-AL Peltola market; Kalshi 2024 = every -24 event in
+its SENATE/HOUSE/GOVPARTY/PRESPARTY series (it listed only 21 Senate, 10 governor and 23 House races).
+Prices are the last before the cutoff, looking back up to 30 days for thin markets.
 
-Usage: python3 scripts/fetch-prediction-markets.py [--cache DIR] [--offline]
+Not recoverable: any other 2022 House market, Kalshi's MN Senate market (opened Dec 2024), and Kalshi
+before October 2024 (it listed no race-level election markets).
+
+Usage: python3 scripts/fetch-prediction-markets.py [--cache DIR] [--offline] [--only 2024:polymarket,2024:kalshi,2022:polymarket]
   --offline regenerates the .ts from the committed CSV without touching the network.
+  --only re-fetches just those year/venue pairs and keeps every other row from the CSV (the Wayback
+  sources are slow and rate-limited).
 """
 import argparse
 import csv
@@ -114,7 +122,7 @@ def row(**kw):
 
 # ───────────────────────────── PredictIt (Wayback captures of the all-markets feed)
 
-PREDICTIT_CAPTURES = {2018: "20181105231706", 2020: "20201103042741", 2024: "20241104102748"}
+PREDICTIT_CAPTURES = {2018: "20181105231706", 2020: "20201103042741"}
 ORDINAL = r"(\d+)(?:st|nd|rd|th)"
 
 
@@ -214,9 +222,14 @@ def ebo_rows():
 
 # ───────────────────────────── Polymarket 2022 (on-chain market makers)
 
-POLYGON_RPC = "https://polygon-bor-rpc.publicnode.com"  # serves old logs; allows 10,000 blocks per eth_getLogs
+# Serves old logs without a key, 10,000 blocks per eth_getLogs. (publicnode, which this used until
+# 2026-10, now wants a token for archive requests; drpc's free tier only serves recent blocks.)
+POLYGON_RPC = "https://polygon.gateway.tenderly.co"
 CUTOFF_2022 = int(datetime(2022, 11, 8, 5, 0, tzinfo=timezone.utc).timestamp())
-POLY_2022_EVENTS = ["2022-us-senate-elections-will-a-dem-or-rep-win-this-state", "2022-us-gubernatorial-elections-will-a-democrat-or-republican-win-this-state"]
+POLY_2022_EVENTS = ["2022-us-senate-elections-will-a-dem-or-rep-win-this-state", "2022-us-gubernatorial-elections-will-a-democrat-or-republican-win-this-state",
+                    "2022-us-house-elections-will-a-democrat-or-republican-win-this-district"]
+# Single yes/no markets on one candidate: slug → (kind, state, seat, the calendar slot the candidate holds).
+POLY_2022_CANDIDATE = {"will-mary-peltola-win-alaskas-election-for-the-us-house": ("H", "AK", "AK-01", "dem")}
 # FPMMBuy / FPMMSell(trader, amount, fee, outcomeIndex, outcomeTokens) on Gnosis fixed-product market makers.
 FPMM_BUY = "0x4f62630f51608fc8a7603a9391a5101e58bd7c276139366fc107dc3b67c3dcf8"
 FPMM_SELL = "0xadcf2a240ed9300d681d9a3f5382b6c1beed1b7e46643e0c7b42cbe6e2d766b4"
@@ -280,7 +293,13 @@ def polymarket_2022_rows():
         event = get_json(f"https://gamma-api.polymarket.com/events?slug={slug}", f"poly_event_{slug[:40]}.json")[0]
         for market in event["markets"]:
             m = re.match(r"(Senate|Governor):\s+Will an? (Democrat|Independent) \(.+?\) or Republican \(.+?\) win in (.+?)\?", market["question"])
-            if not m or m.group(3) not in STATES or json.loads(market["outcomes"])[1] != "Republican":
+            h = re.match(r"([A-Z]{2})-(\d{1,2}) House:\s+Will a Democrat \(.+?\) or Republican \(.+?\) win\?", market["question"])
+            if h and h.group(1) in ABBRS and json.loads(market["outcomes"])[1] == "Republican":
+                kind, st, seat = "H", h.group(1), district(h.group(1), h.group(2))
+            elif m and m.group(3) in STATES and json.loads(market["outcomes"])[1] == "Republican":
+                kind = "S" if m.group(1) == "Senate" else "G"
+                st, seat = STATES[m.group(3)], "regular" if kind == "S" else "gov"
+            else:
                 print(f"  polymarket 2022: skipped {market['question']}", file=sys.stderr)
                 continue
             dem, block = fpmm_last_trade(market["marketMakerAddress"].lower(), end_block)
@@ -288,17 +307,41 @@ def polymarket_2022_rows():
                 print(f"  polymarket 2022: no trade before the cutoff for {market['question']}", file=sys.stderr)
                 continue
             stamp = int(rpc("eth_getBlockByNumber", [hex(block), False], f"polygon_block_{block}.json")["timestamp"], 16)
-            kind = "S" if m.group(1) == "Senate" else "G"
-            out.append(row(year=2022, source="polymarket", kind=kind, state=STATES[m.group(3)], seat="regular" if kind == "S" else "gov", framing="party",
+            out.append(row(year=2022, source="polymarket", kind=kind, state=st, seat=seat, framing="party",
                            dem=round(dem, 4), rep=round(1 - dem, 4), as_of=datetime.fromtimestamp(stamp, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                            volume=round(float(market.get("volume") or 0)), market_id=market["slug"], url=f"https://polymarket.com/event/{slug}",
                            title=re.sub(r"\s+", " ", market["question"])))
+    for slug, (kind, st, seat, slot) in POLY_2022_CANDIDATE.items():
+        market = get_json(f"https://gamma-api.polymarket.com/events?slug={slug}", f"poly_event_{slug[:40]}.json")[0]["markets"][0]
+        yes, block = fpmm_last_trade(market["marketMakerAddress"].lower(), end_block)
+        if yes is None:
+            print(f"  polymarket 2022: no trade before the cutoff for {slug}", file=sys.stderr)
+            continue
+        stamp = int(rpc("eth_getBlockByNumber", [hex(block), False], f"polygon_block_{block}.json")["timestamp"], 16)
+        dem = yes if slot == "dem" else 1 - yes
+        out.append(row(year=2022, source="polymarket", kind=kind, state=st, seat=seat, framing="party", dem=round(dem, 4), rep=round(1 - dem, 4),
+                       as_of=datetime.fromtimestamp(stamp, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), volume=round(float(market.get("volume") or 0)),
+                       market_id=market["slug"], url=f"https://polymarket.com/event/{slug}", title=re.sub(r"\s+", " ", market["question"])))
     return out
 
 
 # ───────────────────────────── Polymarket (2024)
 
-POLY_TAGS = ["state-presidential-election", "senate-elections", "governor", "gubernatorial", "house", "us-elections", "elections", "congress"]
+POLY_TAGS = ["state-presidential-election", "senate-elections", "governor", "gubernatorial", "house", "house-races", "us-elections", "elections", "congress"]
+# Every 2024 House general-election event, found by searching each district code (2026-10-19); three of the 22
+# carry no house-races tag, so they are fetched by slug. All are titled "XX-NN election: A (D) vs. B (R)".
+POLY_2024_HOUSE = [
+    "ak-1-election-peltola-d-vs-begich-r", "az-01-election-shah-d-vs-schweikert-r", "az-06-election-engel-d-vs-ciscomani-r",
+    "ca-13-election-gray-d-vs-duarte-r", "ca-22-election-salas-d-vs-valadao-r", "ca-27-election-whitesides-d-vs-garcia-r",
+    "ca-13-election-rollins-d-vs-calvert-r", "ca-45-election-tran-d-vs-steel-r", "ca-47-election-min-d-vs-baugh-r",
+    "co-8-election-caraveo-d-vs-evans-r", "fl-13-election-fox-d-vs-luna-r", "ia-01-election-bohannan-d-vs-miller-meeks-r",
+    "ia-03-election-baccam-d-vs-nunn-r", "nh-02-election-goodlander-d-vs-mackenzie-r", "nj-07-election-altman-d-vs-kean-r",
+    "ny-04-election-jones-d-vs-desposito-r", "ny-17-election-jones-d-vs-lawler-r", "ny-19-election-jones-d-vs-molinaro-r",
+    "or-05-election-bynum-d-vs-chavez-deremer-r", "pa-07-election-wild-d-vs-mackenzie-r", "pa-10-election-stelson-d-vs-perry-r",
+    "wa-03-house-race-perez-d-vs-kent-r",
+]
+# Thin markets can go days without a trade; look back this far for the last price before the cutoff.
+LOOKBACK = 30 * 86400
 
 
 def polymarket_events():
@@ -312,12 +355,18 @@ def polymarket_events():
             if len(page) < 100:
                 break
             offset += 100
+    for slug in POLY_2024_HOUSE:
+        for e in get_json(f"https://gamma-api.polymarket.com/events?slug={slug}", f"poly_event_{slug[:40]}.json"):
+            seen[e["id"]] = e
     return [e for e in seen.values() if (e.get("endDate") or "")[:4] == "2024"]
 
 
 def polymarket_eve_price(token):
     hist = get_json(f"https://clob.polymarket.com/prices-history?market={token}&startTs={CUTOFF_2024 - 4 * 86400}&endTs={CUTOFF_2024}&fidelity=60", f"poly_hist_{token[:40]}.json")["history"]
     pts = [p for p in hist if p["t"] <= CUTOFF_2024]
+    if not pts:  # thinly traded: the market's whole history at daily points (the API refuses long start/end windows)
+        hist = get_json(f"https://clob.polymarket.com/prices-history?market={token}&interval=max&fidelity=1440", f"poly_hist_max_{token[:40]}.json")["history"]
+        pts = [p for p in hist if CUTOFF_2024 - LOOKBACK <= p["t"] <= CUTOFF_2024]
     return (pts[-1]["p"], pts[-1]["t"]) if pts else (None, None)
 
 
@@ -328,6 +377,8 @@ def classify_polymarket(event):
         st, cd = state_of(title), re.search(r"(\d)(?:st|nd|rd) Congressional District", title)
         return ("P", st, f"cd{cd.group(1)}" if cd else "statewide") if st else None
     m = re.match(r"([A-Z]{2})-(\d{1,2}) election: .+\(D\) vs\. .+\(R\)$", title)
+    if m and m.group(1) == "AK":  # at-large, titled "AK-1"
+        return "H", "AK", "AK-01"
     if m and m.group(1) in ABBRS:
         return "H", m.group(1), district(m.group(1), m.group(2))
     m = re.match(r"(.+?) Senate Election Winner$", title)
@@ -405,6 +456,9 @@ def kalshi_eve_price(series, ticker):
     """Last trade at or before the cutoff, else the last quoted midpoint."""
     url = f"{KALSHI}/historical/markets/{ticker}/candlesticks?start_ts={CUTOFF_2024 - 4 * 86400}&end_ts={CUTOFF_2024}&period_interval=60"
     candles = [c for c in get_json(url, f"kalshi_candles_{ticker}.json").get("candlesticks") or [] if c["end_period_ts"] <= CUTOFF_2024]
+    if not candles:  # thinly traded: daily candles over the longer lookback
+        url = f"{KALSHI}/historical/markets/{ticker}/candlesticks?start_ts={CUTOFF_2024 - LOOKBACK}&end_ts={CUTOFF_2024}&period_interval=1440"
+        candles = [c for c in get_json(url, f"kalshi_candles_daily_{ticker}.json").get("candlesticks") or [] if c["end_period_ts"] <= CUTOFF_2024]
     for c in reversed(candles):
         close = (c.get("price") or {}).get("close")
         if close is not None:
@@ -433,6 +487,8 @@ def kalshi_rows():
             for market in markets:
                 party = (market.get("custom_strike") or {}).get("Party") or ""
                 side = "dem" if party.startswith("Dem") else "rep" if party.startswith("Rep") else "other"  # the feed has typos ("Republicn")
+                if not party:  # a blank party field (GOVPARTYDE-24-D): the ticker's suffix names the side
+                    side = {"D": "dem", "R": "rep"}.get(market["ticker"].rsplit("-", 1)[-1], "other")
                 price, t = kalshi_eve_price(series, market["ticker"])
                 if price is None:
                     continue
@@ -506,6 +562,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cache", default=os.path.join(tempfile.gettempdir(), "prediction-markets-cache"))
     ap.add_argument("--offline", action="store_true")
+    ap.add_argument("--only", help="comma-separated year:source pairs to re-fetch (e.g. 2024:polymarket,2024:kalshi); every other row is kept from the CSV")
     args = ap.parse_args()
     CACHE = args.cache
     os.makedirs(CACHE, exist_ok=True)
@@ -515,8 +572,14 @@ def main():
             rows = list(csv.DictReader(f))
     else:
         rows = []
-        for name, fn in (("predictit", predictit_rows), ("predictit 2022 (relayed)", ebo_rows), ("polymarket 2022", polymarket_2022_rows),
-                         ("polymarket", polymarket_rows), ("kalshi", kalshi_rows)):
+        sources = (("predictit", predictit_rows, None), ("predictit 2022 (relayed)", ebo_rows, None), ("polymarket 2022", polymarket_2022_rows, ("2022", "polymarket")),
+                   ("polymarket", polymarket_rows, ("2024", "polymarket")), ("kalshi", kalshi_rows, ("2024", "kalshi")))
+        only = {tuple(p.split(":")) for p in args.only.split(",")} if args.only else None
+        if only:
+            with open(CSV_PATH) as f:
+                rows = [r for r in csv.DictReader(f) if (r["year"], r["source"]) not in only]
+            sources = [s for s in sources if s[2] in only]
+        for name, fn, _ in sources:
             got = fn()
             print(f"{name}: {len(got)} markets")
             rows += got

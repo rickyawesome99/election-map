@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import MarketCallChips from "@/components/MarketCallChips";
+import MarketRaceCards from "@/components/MarketRaceCards";
 import Segmented from "@/components/MarketSegmented";
 import { KIND_LABEL, fmtWinMargin, nameOf, partyColor, partyOf, worstMiss, type MarketRaceRow } from "@/lib/predictionMarketDisplay";
 
@@ -10,13 +11,16 @@ type SortKey = "year" | "race" | "price" | "margin";
 type Verdict = "all" | "missed" | "called";
 type Kind = MarketRaceRow["kind"] | "all";
 
-const COLUMNS: { key: SortKey | null; label: string; right?: true; title: string }[] = [
-  { key: "year", label: "Year", title: "Election year" },
-  { key: "race", label: "Race", title: "Office and state or district" },
-  { key: "price", label: "Election-eve market", title: "Each venue's favorite and its price the night before the election. Sorts by how heavily the favorite was priced." },
-  { key: null, label: "Winner", title: "Who won" },
-  { key: "margin", label: "Margin", right: true, title: "The winner's margin in points" },
+// Widths match The Misses table above (components/MarketMissTable.tsx), so the two line up.
+const COLUMNS: { key: SortKey | null; label: string; right?: true; title: string; width: string }[] = [
+  { key: "year", label: "Year", title: "Election year", width: "7%" },
+  { key: "race", label: "Race", title: "Office and state or district", width: "19%" },
+  { key: "price", label: "Election-eve market", title: "Each venue's favorite and its price the night before the election. Sorts by how heavily the favorite was priced.", width: "40%" },
+  { key: null, label: "Winner", title: "Who won", width: "24%" },
+  { key: "margin", label: "Margin", right: true, title: "The winner's margin in points", width: "10%" },
 ];
+/** Races shown before "Show all", which keeps the box's height and turns it into a scrollbox. */
+const ROWS = 10;
 
 /** The least confident venue's price: the race's place on the toss-up-to-lock scale. */
 const confidence = (r: MarketRaceRow) => Math.min(...r.markets.map((m) => m.favProb));
@@ -36,6 +40,10 @@ export default function MarketAccuracyTable({ rows, years }: { rows: MarketRaceR
   const [kind, setKind] = useState<Kind>("all");
   const [verdict, setVerdict] = useState<Verdict>("all");
   const [query, setQuery] = useState("");
+  const [all, setAll] = useState(false);
+  const [height, setHeight] = useState<{ cards: number; table: number } | null>(null);
+  const cards = useRef<HTMLDivElement>(null);
+  const table = useRef<HTMLDivElement>(null);
 
   const shown = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -48,6 +56,16 @@ export default function MarketAccuracyTable({ rows, years }: { rows: MarketRaceR
         return (x < y ? -1 : x > y ? 1 : b.year - a.year || a.place.localeCompare(b.place)) * sort.dir;
       });
   }, [rows, year, kind, verdict, query, sort]);
+  const visible = all ? shown : shown.slice(0, ROWS);
+
+  const toggle = () => {
+    // Only one of the two views is displayed; the hidden one measures 0 and is never shown at that size.
+    if (!all) setHeight({ cards: cards.current?.offsetHeight ?? 0, table: table.current?.offsetHeight ?? 0 });
+    setAll(!all);
+  };
+  // maxHeight, not height, so a filter that leaves fewer races shrinks the box instead of padding it.
+  // The reserved gutter keeps the columns from shifting when the scrollbar appears.
+  const box = (h: number | undefined) => ({ scrollbarGutter: "stable" as const, ...(all && h ? { maxHeight: h } : {}) });
 
   return (
     <div>
@@ -60,10 +78,15 @@ export default function MarketAccuracyTable({ rows, years }: { rows: MarketRaceR
         <span className="ml-auto text-xs tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{shown.length} races</span>
       </div>
 
-      {/* Capped so 400-odd races don't run the page on; the header stays put while the body scrolls.
-          The rule under the header is an inset shadow because a collapsed border scrolls away with the row. */}
-      <div className="max-h-[560px] overflow-auto" style={{ borderBottom: "1px solid var(--app-border)" }}>
-        <table className="w-full border-collapse text-sm">
+      {/* The first ROWS races sit static; "Show all" scrolls the rest under a sticky header. The rule under
+          the header is an inset shadow because a collapsed border scrolls away with the row. */}
+      <div ref={cards} className="overflow-y-auto sm:hidden" style={{ borderTop: "1px solid var(--app-border)", ...box(height?.cards) }}>
+        <MarketRaceCards rows={visible} />
+        {shown.length === 0 && <p className="py-6 text-center text-sm" style={{ color: "var(--app-text-muted)" }}>No races match these filters.</p>}
+      </div>
+      <div ref={table} className="hidden overflow-y-auto sm:block" style={{ borderBottom: "1px solid var(--app-border)", ...box(height?.table) }}>
+        <table className="w-full table-fixed border-collapse text-sm">
+          <colgroup>{COLUMNS.map((c) => <col key={c.label} style={{ width: c.width }} />)}</colgroup>
           <thead className="sticky top-0 z-10" style={{ background: "var(--app-bg)" }}>
             <tr>
               {COLUMNS.map((c) => (
@@ -80,7 +103,7 @@ export default function MarketAccuracyTable({ rows, years }: { rows: MarketRaceR
             </tr>
           </thead>
           <tbody>
-            {shown.map((r) => (
+            {visible.map((r) => (
               <tr key={r.raceId} style={{ borderBottom: "1px solid var(--app-border)" }}>
                 <td className="px-2 py-2 align-top tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.year}</td>
                 <td className="px-2 py-2 align-top">
@@ -99,6 +122,11 @@ export default function MarketAccuracyTable({ rows, years }: { rows: MarketRaceR
           </tbody>
         </table>
       </div>
+      {shown.length > ROWS && (
+        <button type="button" onClick={toggle} className="mt-2 px-2 text-xs font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }}>
+          {all ? "Show fewer" : `Show all ${shown.length}`}
+        </button>
+      )}
     </div>
   );
 }
