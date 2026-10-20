@@ -25,8 +25,12 @@
 //      (scripts/fitStateLegMoney.ts; its in-sample K is recorded there but not used). Off without both files.
 //   Result                            margin ± σ, σ² = (β* σ_E)² + STATE_SHOCK² + SIGMA², the state
 //      legislature model's fitted chamber shock and seat noise (lib/stateLegForecast.ts)
-//   Precincts                         baseline = BASELINE_PRES_WEIGHT × pres + (1 − w) × State
-//      House, latest year; every precinct moves by the district's projected shift (uniform).
+//   Precincts                         precinct TPL = district margin + (relative lean − its vote-weighted
+//      mean), relative lean = Σ w × (precinct margin − district margin) / Σ w over the included
+//      race-years on today's lines, w = PRECINCT_TPL_DECAY^(latest year − year) × the race-type
+//      weight. Subtracting the district margin strips environment, incumbency and candidates in one
+//      step. The latest-year baseline (BASELINE_PRES_WEIGHT × pres + (1 − w) × State House) and the
+//      uniform shift are kept for comparison.
 //   Turnout                           2026 ballots per precinct = mean of its midterm turnout rates
 //      (ballots ÷ registered, on today's lines) × today's registration; each midterm alone gives the range.
 
@@ -39,6 +43,7 @@ import { precinctRows, type ExplorerRow } from "./explorer";
 
 export const PROJECTION_CONSTANTS = {
   BASELINE_PRES_WEIGHT: 0.5,   // share of the precinct baseline taken from the presidential margin (rest: State House)
+  PRECINCT_TPL_DECAY: 0.5,     // precinct TPL year weight per year back from the latest: 2024 = 1, 2022 = 0.25, 2020 = 0.06 (a two-year half-life; the district lean's 0.75 is far flatter)
   MARGIN_CLAMP: 95,            // projected precinct margins are kept inside ±95
 };
 
@@ -104,7 +109,10 @@ export interface ProjectedPrecinct {
   id: string;
   sub: string;
   reg: number;
-  base: number | null;
+  base: number | null;              // latest-year baseline: BASELINE_PRES_WEIGHT × pres + (1 − w) × State House
+  /** recency-weighted precinct margin relative to the district, over every included race-year */
+  relLean: number | null;
+  /** precinct TPL: the district projection + (relLean − its vote-weighted mean), clamped */
   projected: number | null;
   ballots: number;                   // 2026 turnout estimate
   ballotsByYear: Record<string, number>;  // each basis midterm's rate on today's registration
@@ -291,9 +299,24 @@ export function projectDistrict(data: PrecinctDistrictData): DistrictProjection 
   // today's registration. Falls back to the latest year's rate when no midterm is on file.
   const midterms = years.filter((y) => !results.years[String(y)].offices.pres && y !== latestYear).sort((a, b) => a - b);
   const clamp = (v: number) => Math.max(-PROJECTION_CONSTANTS.MARGIN_CLAMP, Math.min(PROJECTION_CONSTANTS.MARGIN_CLAMP, v));
+  // Precinct TPL, step 1: each precinct's margin relative to the district in every included
+  // race-year, recency-weighted (PRECINCT_TPL_DECAY) and race-type-weighted like the district lean.
+  const included = rows.filter((r) => r.included);
+  const relLeanOf = (id: string): number | null => {
+    let num = 0, den = 0;
+    for (const r of included) {
+      const pr = rowsByYear.get(r.year)?.find((x) => x.id === id)?.races[r.office];
+      if (!pr || pr.d + pr.r <= 0) continue;
+      const pm = marginOf(pr);
+      if (pm == null) continue;
+      const w = PROJECTION_CONSTANTS.PRECINCT_TPL_DECAY ** (latestYear - r.year) * typeWeight(r.year, r.raceType);
+      num += w * (pm - r.raw); den += w;
+    }
+    return den > 0 ? num / den : null;
+  };
   const precincts: ProjectedPrecinct[] = latestRows.map((p) => {
     const base = blendOf(p);
-    const projected = base == null ? null : clamp(base + shift);
+    const relLean = relLeanOf(p.id);
     const legRace = legOffice ? p.races[legOffice] : null;
     const twoPartyRate = legRace && p.ballots > 0 ? Math.min(1, (legRace.d + legRace.r) / p.ballots) : 0.95;
     const latestRate = p.reg > 0 ? p.ballots / p.reg : 0;
@@ -304,8 +327,17 @@ export function projectDistrict(data: PrecinctDistrictData): DistrictProjection 
       ballotsByYear[y] = p.reg * Math.min(1, rate);
     }
     const ballots = midterms.length ? midterms.reduce((s, y) => s + ballotsByYear[y], 0) / midterms.length : p.ballots;
-    return { id: p.id, sub: p.sub, reg: p.reg, base, projected, ballots, ballotsByYear, twoPartyRate };
+    return { id: p.id, sub: p.sub, reg: p.reg, base, relLean, projected: null, ballots, ballotsByYear, twoPartyRate };
   });
+  // Step 2: anchor on the district projection so the 2026 two-party-vote-weighted mean of the
+  // precinct TPLs is the projected margin. A precinct with no relative lean (no races on file)
+  // falls back to its baseline plus the uniform shift.
+  {
+    let num = 0, den = 0;
+    for (const p of precincts) { if (p.relLean == null) continue; const w = p.ballots * p.twoPartyRate; num += w * p.relLean; den += w; }
+    const mean = den > 0 ? num / den : 0;
+    for (const p of precincts) p.projected = p.relLean != null ? clamp(margin + p.relLean - mean) : p.base == null ? null : clamp(p.base + shift);
+  }
   const reg = precincts.reduce((s, p) => s + p.reg, 0);
   const votesFor = (ballotsOf: (p: ProjectedPrecinct) => number): TurnoutVotes & { margin: number } => {
     let d = 0, r = 0, ballots = 0;

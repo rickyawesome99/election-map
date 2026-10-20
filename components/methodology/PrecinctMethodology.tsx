@@ -7,7 +7,7 @@ import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Led
 
 // Every PROJECTION_CONSTANTS key and where it is documented on this tab.
 const DOCUMENTED_IN = {
-  BASELINE_PRES_WEIGHT: "precinct-district#precincts",
+  BASELINE_PRES_WEIGHT: "precinct-district#precincts", PRECINCT_TPL_DECAY: "precinct-district#precincts",
   MARGIN_CLAMP: "precinct-district#precincts",
 } satisfies Record<keyof typeof PROJECTION_CONSTANTS, string>;
 void DOCUMENTED_IN;
@@ -20,7 +20,8 @@ export default function PrecinctMethodology() {
   const ex = examples[0];
 
   const constants: ConstantRow[] = [
-    { name: "BASELINE_PRES_WEIGHT", value: PROJECTION_CONSTANTS.BASELINE_PRES_WEIGHT, meaning: "Share of a precinct's baseline taken from its latest presidential margin; the rest is its latest State House margin.", basis: "designed" },
+    { name: "PRECINCT_TPL_DECAY", value: PROJECTION_CONSTANTS.PRECINCT_TPL_DECAY, meaning: "Precinct TPL year weight per year back from the latest year on file: 2024 = 1, 2022 = 0.25, 2020 = 0.06, a two-year half-life. Far steeper than the district lean's 0.75, by design: the list is for deciding where to knock this year, and a precinct's drift since 2016 is noise for that.", basis: "designed" },
+    { name: "BASELINE_PRES_WEIGHT", value: PROJECTION_CONSTANTS.BASELINE_PRES_WEIGHT, meaning: "Share of a precinct's latest-year baseline taken from its presidential margin; the rest is its State House margin. The baseline is the fallback for a precinct with no relative lean and the explorer's comparison column.", basis: "designed" },
     { name: "MARGIN_CLAMP", value: `±${PROJECTION_CONSTANTS.MARGIN_CLAMP}`, meaning: "Projected precinct margins are kept inside this range.", basis: "fixed" },
   ];
 
@@ -126,10 +127,10 @@ export default function PrecinctMethodology() {
       </Section>
 
       <Section id="precincts" kicker="Precincts" title="From the district to its precincts"
-        lede="The projected district margin is spread back over the precincts so the map and the 2026 turnout estimate can be read precinct by precinct.">
-        <Block label="Baseline and shift">
-          <Formula lines={["baseline(p) = BASELINE_PRES_WEIGHT × latest presidential margin(p) + (1 − w) × latest State House margin(p)", "projected(p) = baseline(p) + (district margin − district baseline)          clamped to ±MARGIN_CLAMP"]}
-            note="The shift is uniform for now: every precinct moves by the same number of points. A precinct elasticity (how much each precinct historically moved per point of district movement) is the natural next step once more within-era pairs are available." />
+        lede="The projected district margin is spread back over the precincts as a precinct TPL, so the map, the door-knocking list and the 2026 turnout estimate can be read precinct by precinct.">
+        <Block label="Precinct TPL">
+          <Formula lines={["rel(p)       = Σ w × (precinct margin − district margin)  /  Σ w          over the included race-years, on today's lines", "w            = PRECINCT_TPL_DECAY^(latest year − year) × the district lean's race-type weight", "TPL(p)       = district projected margin + rel(p) − mean_v rel          clamped to ±MARGIN_CLAMP", "baseline(p)  = BASELINE_PRES_WEIGHT × latest presidential margin(p) + (1 − w) × latest State House margin(p)"]}
+            note={<>Subtracting the district&apos;s own margin in the same race strips the environment, the incumbency effect and the candidates in one step, since those are the same for every precinct in the race, so a precinct&apos;s relative lean needs no strips of its own. The mean is weighted by each precinct&apos;s 2026 two-party votes, so the precinct TPLs sum to the district projection. A precinct with no race on file falls back to its baseline plus the district&apos;s uniform shift. Until 2026-10-20 every precinct was its baseline plus that uniform shift, which ignored every year before the latest.</>} />
         </Block>
         <Block label="2026 turnout estimate">
           <Formula lines={["rate_y(p) = ballots_y(p) ÷ registered_y(p)          each past midterm y, on today's lines", "ballots_2026(p) = mean_y rate_y(p) × today's registered(p)          capped at 100%"]}
@@ -147,10 +148,10 @@ export default function PrecinctMethodology() {
           ]} />
         </Block>
         <Block label="Door-knocking targets" meta="page → Door-knocking targets">
-          <P>The same Priority ranking, as a list: every precinct on today&apos;s lines with its rank, net votes available, split-ticket and turnout votes, the latest State House and presidential margins, registration and the 2026 turnout estimate; sortable on every column, filterable by area, by Priority category and by a competitiveness band, with a CSV of whatever is on screen. Ranks are district-wide and do not change with a filter.</P>
+          <P>The same Priority ranking, as a list: every precinct on today&apos;s lines with its rank, net votes available, split-ticket and turnout votes, the latest State House and presidential margins, registration and the 2026 turnout estimate; sortable on every column, filterable by area, by Priority category and by a competitiveness band, with two CSVs: the full district in Priority order, and a custom list of exactly the precincts shown after the filters and sort. Ranks are district-wide and do not change with a filter.</P>
           <Defs items={[
-            { term: "Competitiveness band (\"24 Pres\")", def: "Cut on the precinct's latest presidential margin, as counted, at the site's likely / safe cut points: Safe R at R+15 or more, Lean R from R+5 to R+15, Swing within 5 points of even, Lean D from D+5 to D+15, Safe D at D+15 or more. A different lens from the Priority categories, which name the task (bank, turn out, persuade) on the all-years average R share." },
-            { term: "Band totals", def: "Precincts, 2026 estimated ballots (the turnout estimate's precinct ballots summed) and net votes available (Priority summed) in each band." },
+            { term: "Precinct TPL and its rating", def: "The precinct TPL above, printed as a margin, with the site's rating bands on it: Safe at 15 points or more, Likely 5 to 15, Lean 1 to 5, Tilt under 1, each side. A different lens from the Priority categories, which name the task (bank, turn out, persuade) on the all-years average R share." },
+            { term: "Category totals", def: "Precincts, 2026 estimated ballots (the turnout estimate's precinct ballots summed) and net votes available (Priority summed) in each Priority category, as tiles above the list; the rating bands are a filter row." },
           ]} />
         </Block>
       </Section>

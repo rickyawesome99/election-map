@@ -249,16 +249,15 @@ function ModelSkeleton() {
 function AnalysisSkeleton() {
   return (
     <>
-      <Hero><Title>Analysis</Title><div className="mt-2"><LoadingText /></div></Hero>
+      <Hero className="pb-3"><Title>Analysis</Title></Hero>
       <Body>
         {[3, 2].map((rows, s) => (
-          <div key={s} className={s ? "mt-12" : "mt-4"}>
+          <div key={s} className={s ? "mt-10" : "mt-2"}>
             <SectionHead />
             {Array.from({ length: rows }, (_, i) => (
-              <div key={i} className="grid grid-cols-1 gap-2 py-5 sm:grid-cols-[6.5rem_minmax(0,1fr)_auto] sm:gap-4" style={RULE}>
-                <Sk className="h-2.5 w-16" />
-                <div className="space-y-2.5"><Sk className="h-6 w-56" /><Lines widths={["w-full", "w-2/3"]} h="h-3" /></div>
-                <Sk className="h-4 w-28" />
+              <div key={i} className="grid grid-cols-1 gap-3 py-6 md:grid-cols-[minmax(0,1fr)_minmax(14rem,19rem)] md:gap-8 md:items-center" style={RULE}>
+                <div className="space-y-2.5"><Sk className="h-5 w-20 rounded-full" /><Sk className="h-6 w-56" /><Lines widths={["w-full", "w-2/3"]} h="h-3" /></div>
+                <Sk className="h-20 w-full" />
               </div>
             ))}
           </div>

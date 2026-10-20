@@ -481,3 +481,21 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .rg-reveal, .rg-grow, .rg-pop, .rg-fade { animation: none; }
 }
+
+/* /analysis hub rows: the whole row is the link. Hover (or a press on touch) tints the row and grows
+   it by about 1%, both on the compositor; the graphic at its right stays still. */
+.hub-row { position: relative; isolation: isolate; transition: transform 220ms cubic-bezier(0.2, 0.7, 0.2, 1); -webkit-tap-highlight-color: transparent; }
+.hub-row::before { content: ""; position: absolute; inset: 0 -0.75rem; border-radius: 12px; background: color-mix(in srgb, var(--app-text-primary) 6%, var(--app-bg)); opacity: 0; transition: opacity 180ms ease; z-index: -1; }
+.hub-row:hover, .hub-row:active { transform: scale(1.012); }
+.hub-row:hover::before, .hub-row:active::before { opacity: 1; }
+.hub-row:hover .hub-title, .hub-row:active .hub-title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.hub-row:focus-visible { outline: 3px solid var(--party-dem); outline-offset: -3px; border-radius: 12px; }
+.hub-graphic { display: block; width: 100%; height: auto; max-width: 19rem; }
+@media (max-width: 767px) {
+  .hub-row:hover, .hub-row:active { transform: scale(1.02); }
+  .hub-row::before { inset: 0 -0.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hub-row, .hub-row::before { transition: none; }
+  .hub-row:hover, .hub-row:active { transform: none; }
+}
