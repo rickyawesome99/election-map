@@ -1,4 +1,3 @@
-import BackButton from "@/components/BackButton";
 import CalendarHoverCard from "@/components/CalendarHoverCard";
 import CalendarJumpLinks from "@/components/CalendarJumpLinks";
 import ElectionCalendarGrid from "@/components/ElectionCalendarGrid";
@@ -7,6 +6,7 @@ import RaceCalendarPagination from "@/components/RaceCalendarPagination";
 import RaceCalendarTable from "@/components/RaceCalendarTable";
 import RedistrictingCalendarGrid from "@/components/RedistrictingCalendarGrid";
 import { LedgerSectionHead } from "@/components/RaceDetailSections";
+import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import { raceCalendarYears } from "@/data/raceCalendar";
 import {
   ALL,
@@ -51,70 +51,15 @@ export default async function CalendarPage({
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      {/* Hero */}
-      <div
-        style={{
-          background:
-            "linear-gradient(135deg, color-mix(in srgb, var(--party-dem) 8%, var(--app-bg)) 0%, var(--app-bg) 55%, color-mix(in srgb, var(--party-rep) 8%, var(--app-bg)) 100%)",
-        }}
-      >
-        <div className="mx-auto max-w-7xl px-4 pb-8 pt-3 sm:px-6 sm:pb-10">
-          <div className="-ml-2 mb-5">
-            <BackButton />
-          </div>
+      <StandfirstHeader kicker="Calendar" title="Election Calendar">
+        Every Senate, House, governor and presidential race on the ballot in every state from {FIRST_YEAR} to {LAST_YEAR}:{" "}
+        <Fig>{calendarTotals.races.toLocaleString()}</Fig> races, including <Fig>{calendarTotals.specials}</Fig> special elections and{" "}
+        <Fig>{calendarTotals.runoffs}</Fig> runoffs, each shown with its final result. States redrew their district lines{" "}
+        <Fig>{redistrictingTotals.events}</Fig> times from {REDISTRICT_FIRST} to {REDISTRICT_LAST}.
+        {hasUpcomingCycle && <> The last column looks ahead to the <Fig>{upcomingTotals.seats.toLocaleString()}</Fig> seats up in {UPCOMING_YEAR}.</>}
+      </StandfirstHeader>
 
-          <div className="flex items-center gap-3">
-            <span
-              className="shrink-0 rounded-full px-2.5 py-1 text-xs font-bold"
-              style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
-            >
-              US
-            </span>
-            <h1
-              style={{
-                fontFamily: "var(--font-serif)",
-                fontSize: "clamp(2rem, 5.5vw, 4rem)",
-                fontWeight: 700,
-                lineHeight: 0.95,
-                letterSpacing: "-0.02em",
-                color: "var(--app-text-primary)",
-              }}
-            >
-              Election Calendar
-            </h1>
-          </div>
-          <div className="mt-3 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-            Which offices were on the ballot in every state and year from {FIRST_YEAR} to {LAST_YEAR}, and the full
-            result of each race behind them, plus when each state redrew the district lines those races were
-            run on. Where a race went to a runoff, the runoff is the result shown.
-            {hasUpcomingCycle && ` The last column looks the other way: every seat on the ballot in ${UPCOMING_YEAR}.`}
-          </div>
-
-          {/* Stat row */}
-          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
-            {[
-              { value: calendarTotals.races.toLocaleString(), label: "Races" },
-              { value: `${FIRST_YEAR}–${LAST_YEAR}`, label: "Cycles covered" },
-              { value: calendarStates.length, label: "States + DC" },
-              { value: calendarTotals.specials, label: "Special elections" },
-              { value: calendarTotals.runoffs, label: "Runoffs" },
-              { value: redistrictingTotals.events, label: "Redraws" },
-              ...(hasUpcomingCycle
-                ? [{ value: upcomingTotals.seats.toLocaleString(), label: `Seats up in ${UPCOMING_YEAR}` }]
-                : []),
-            ].map((stat, i, all) => (
-              <div key={stat.label} className={i < all.length - 1 ? "pr-8" : ""} style={i < all.length - 1 ? { borderRight: "1px solid var(--app-border)" } : undefined}>
-                <div className="text-2xl font-extrabold tabular-nums">{stat.value}</div>
-                <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <main className="mx-auto max-w-7xl px-4 pb-14 pt-6 sm:px-6">
+      <main className="mx-auto max-w-7xl px-4 pb-14 pt-7 sm:px-6 sm:pt-8">
         {/* Election Calendar */}
         <section className="mb-12">
           <LedgerSectionHead

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { electionYear } from "@/data/forecastData";
 import { racePollsMeta } from "@/data/racePolls";
 import { Section, P, Defs } from "@/components/methodology/kit";
+import { StandfirstHeader } from "@/components/StandfirstHeader";
 
 export const metadata: Metadata = {
   title: `About — CT Strategies ${electionYear} Forecast`,
@@ -19,12 +20,10 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <div className="mx-auto max-w-6xl px-4 pb-16 pt-6 sm:px-6 sm:pt-8">
-        <div className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)" }}>CT Strategies</div>
-        <h1 className="mt-1" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6vw, 4.25rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>About</h1>
-        <p className="mt-3 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-          A forecast of the {electionYear} midterm elections, built on an atlas of past results — every House, Senate and governor
-          race projected, and the history behind each seat one click away. Built and run by CT Strategies.
-        </p>
+        <StandfirstHeader title="About" size="large" bare>
+          A forecast of the {electionYear} midterm elections built on an atlas of past results with detailed history behind each seat,
+          district, county, and state. Built and run by CT Strategies.
+        </StandfirstHeader>
 
         <Section id="whats-here" title="What's here">
           <Defs items={[
@@ -56,7 +55,7 @@ export default function AboutPage() {
             Election results, polls, fundraising, district boundaries and demographics come from public sources — among them state election
             offices, the U.S. Census Bureau, the Federal Election Commission, the MIT Election Data and Science Lab and Wikipedia. Every
             dataset, and
-            what it is used for, is listed on the <A href="/methodology/sources">Sources</A> tab.
+            what it is used for, is listed on the <A href="/sources">Sources</A> page.
           </P>
           <P>
             Candidate photos come from official government portraits, Wikimedia Commons and campaign materials, and belong to their

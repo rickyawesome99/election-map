@@ -35,11 +35,10 @@ export default function ModelComparison({ config, p, leg }: { config: DistrictCo
   const diff = leg?.margin == null ? null : p.margin - leg.margin;
 
   const rows: { label: string; a: number | null; b: number | null; note?: string }[] = [
-    { label: "Structural lean", a: p.lean, b: leg?.lean ?? null, note: `${included.length} race-years here${statewideKinds.length ? ` (president, State House, ${statewideKinds.join(", ")})` : ""} vs ${leg ? `${leg.rows.pres} presidential + ${leg.rows.seat} State House rows${leg.rows.relocated ? `, ${leg.rows.relocated} relocated from the old map` : ""}` : "—"}` },
+    { label: "Structural lean", a: p.lean, b: leg?.lean ?? null, note: `${included.length} race-years here${statewideKinds.length ? ` (president, State House, ${statewideKinds.join(", ")})` : ""} vs ${leg ? `${leg.rows.pres} presidential + ${leg.rows.seat} State House rows${leg.rows.relocated ? `, ${leg.rows.relocated} relocated from the old map` : ""}` : "—"}; State House rows carry the same seat weight in both` },
     { label: "2026 environment", a: p.envPts, b: leg?.envPts ?? null, note: `β*(${p.stateAbbr}) ${p.beta.toFixed(2)} × E(2026) ${signed(p.eHat)}, the same in both` },
     { label: "Incumbency", a: 0, b: leg?.incPts ?? null, note: e?.status === "open" ? "open seat" : "incumbent on the ballot" },
-    { label: "Down-ballot gap", a: p.gap.value, b: null, note: "this page only: how far the State House race has run from the top of the ticket; the legislature model carries that through its seat rows instead" },
-    { label: "Campaign money", a: p.money?.pts ?? null, b: leg?.money?.pts ?? null, note: p.money && leg?.money ? `${p.stateAbbr}-fitted K ${p.money.calibration.K}, cap ±${p.money.calibration.CAP} here vs the national K ${leg.money.K}, cap ±${leg.money.CAP}` : p.money ? `${p.stateAbbr}-fitted K ${p.money.calibration.K}, cap ±${p.money.calibration.CAP}` : "no receipts on file" },
+    { label: "Campaign money", a: p.money?.pts ?? null, b: leg?.money?.pts ?? null, note: p.money && leg?.money ? `the same K ${leg.money.K} and cap ±${leg.money.CAP}; the typical gap for the seat is ${p.stateAbbr}'s own House fit here (${signed(p.money.structuralGapPct)}%) and the legislature model's structural fit there (${signed(leg.money.structuralGapPct)}%)` : p.money ? `K ${p.money.calibration.K}, cap ±${p.money.calibration.CAP}` : "no receipts on file" },
   ];
 
   return (
@@ -102,7 +101,7 @@ export default function ModelComparison({ config, p, leg }: { config: DistrictCo
         </table>
       </div>
       <div className="mt-2 text-[11px] leading-relaxed" style={{ color: "var(--app-text-very-muted)" }}>
-        Margins are two-party, R-positive. The legislature model&apos;s lean weights the seat&apos;s own State House rows against presidential results only, and relocates rows from before the 2022 map through its redistricting crosswalk; this page&apos;s lean adds the statewide races as counted in these precincts and strips each of incumbency and environment with the same TPL fit. Both money terms price the same receipts; the legislature model&apos;s is the nationally swept one, this page&apos;s is fitted on {config.stateName} House races alone.
+        Margins are two-party, R-positive. The legislature model&apos;s lean weights the seat&apos;s own State House rows against presidential results only, and relocates rows from before the 2022 map through its redistricting crosswalk; this page&apos;s lean weights its State House rows the same way and adds the statewide races as counted in these precincts, each stripped of incumbency and environment with the same TPL fit. Both money terms price the same receipts at the same K and cap; they differ only in the typical gap for the seat, which this page takes from {config.stateName} House races alone. Incumbency, seat noise and the chamber shock are the legislature model&apos;s fitted values in both.
       </div>
     </div>
   );

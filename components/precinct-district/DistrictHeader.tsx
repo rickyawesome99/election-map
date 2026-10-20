@@ -33,7 +33,7 @@ export default function DistrictHeader({ config, stats }: { config: DistrictConf
   const lean = stats.leanVsState;
 
   return (
-    <StandfirstHeader kicker={config.chamber === "house" ? "State House" : "State Senate"} title={config.name}>
+    <StandfirstHeader kicker="Precinct Analysis" title={config.name}>
       {e?.status === "open" ? (
         <>An open seat in {where}{holder && <>: {PARTY_WORD[holder.party]} {holder.name} is leaving{holder.note ? `, ${holder.note}` : ""}</>}.</>
       ) : holder ? (

@@ -3,7 +3,7 @@
 // A sortable, scrollable table whose columns the explorer defines per mode. Rows are precincts
 // or subdivisions; hovering or clicking a row talks to the same selection the map uses.
 
-import { Fragment, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { Fragment, useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 
 export interface TableRow { id: string; sub: string; estimated?: boolean }
 
@@ -39,6 +39,16 @@ export default function ExplorerTable<R extends TableRow>({
   defaultSort?: { key: string; dir: SortDir };
   emptyText?: string;
 }) {
+  // Columns marked hideOnMobile are display:none below md; a group header must span only the
+  // columns actually shown or the table grows phantom columns, so the breakpoint is tracked here.
+  const [desktop, setDesktop] = useState(true);
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 768px)");
+    const sync = () => setDesktop(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
   const [sortKey, setSortKey] = useState<string>(defaultSort?.key ?? "__name");
   const [sortDir, setSortDir] = useState<SortDir>(defaultSort?.dir ?? "asc");
 
@@ -65,12 +75,13 @@ export default function ExplorerTable<R extends TableRow>({
     // rules: an inset underline marks each group, and dividers start at the column-header row.
     const out: { group: string | undefined; span: number }[] = [];
     for (const c of columns) {
+      const shown = desktop || !c.hideOnMobile ? 1 : 0;
       const last = out[out.length - 1];
-      if (last && last.group === c.group) last.span += 1;
-      else out.push({ group: c.group, span: 1 });
+      if (last && last.group === c.group) last.span += shown;
+      else out.push({ group: c.group, span: shown });
     }
-    return out;
-  }, [columns]);
+    return out.filter((g) => g.span > 0);
+  }, [columns, desktop]);
   const hasGroups = groups.some((g) => g.group !== undefined);
 
   // Flat style: the table sits on the page background and is held together by rules — a heavy
@@ -114,7 +125,7 @@ export default function ExplorerTable<R extends TableRow>({
       {hasGroups && (
         <tr style={headBg}>
           <th style={{ ...sticky, zIndex: 6, background: "var(--app-bg)" }} />
-          {showSub && <th style={headBg} />}
+          {showSub && <th className="hidden md:table-cell" style={headBg} />}
           {groups.map((g, i) => (
             <th key={i} colSpan={g.span} className="px-3 pb-0 pt-1.5 text-center text-[11px] font-semibold" style={{ ...headBg, color: "var(--app-text-primary)" }}>
               {g.group && <div className="pb-1" style={{ borderBottom: "1px solid var(--app-border)" }}>{g.group}</div>}
@@ -131,7 +142,7 @@ export default function ExplorerTable<R extends TableRow>({
           Name{arrow("__name")}
         </th>
         {showSub && (
-          <th className="whitespace-nowrap px-3 py-2 text-left text-[11px] font-semibold uppercase tracking-wider" style={{ ...headBg, color: "var(--app-text-muted)", borderBottom: headRule, ...w(widths, 1) }}>
+          <th className="hidden whitespace-nowrap px-3 py-2 text-left text-[11px] font-semibold uppercase tracking-wider md:table-cell" style={{ ...headBg, color: "var(--app-text-muted)", borderBottom: headRule, ...w(widths, 1) }}>
             Area
           </th>
         )}
@@ -183,7 +194,7 @@ export default function ExplorerTable<R extends TableRow>({
                     {r.estimated && <span title="Estimated on today's precinct lines from 2016–2022 precincts by 2020 block population" className="ml-1 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>≈</span>}
                   </td>
                   {showSub && (
-                    <td className="whitespace-nowrap px-3 py-2" style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>
+                    <td className="hidden whitespace-nowrap px-3 py-2 md:table-cell" style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>
                       {subNameOf ? subNameOf(r) : r.sub}
                     </td>
                   )}

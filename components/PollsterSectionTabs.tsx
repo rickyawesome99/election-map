@@ -13,7 +13,17 @@ export default function PollsterSectionTabs({ tabs, ariaLabel = "Pollster rating
   useEffect(() => {
     const fromHash = () => {
       const h = window.location.hash.slice(1);
-      if (tabs.some((t) => t.key === h)) setActive(h);
+      if (!h) return;
+      if (tabs.some((t) => t.key === h)) { setActive(h); return; }
+      // A hash naming an element inside a panel (an older section anchor) opens that panel and
+      // scrolls to it once it is visible.
+      const el = document.getElementById(h);
+      const panel = el?.closest<HTMLElement>("[role=tabpanel]");
+      const key = panel?.id.replace(/^panel-/, "");
+      if (el && key && tabs.some((t) => t.key === key)) {
+        setActive(key);
+        requestAnimationFrame(() => el.scrollIntoView({ block: "start" }));
+      }
     };
     fromHash();
     window.addEventListener("hashchange", fromHash);
@@ -28,12 +38,12 @@ export default function PollsterSectionTabs({ tabs, ariaLabel = "Pollster rating
   return (
     <div>
       <div className="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1.5 pb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
-        <div role="tablist" aria-label={ariaLabel} className="flex items-baseline gap-4">
+        <div role="tablist" aria-label={ariaLabel} className="flex max-w-full items-baseline gap-4 overflow-x-auto scrollbar-none">
           {tabs.map((t) => {
             const on = t.key === current.key;
             return (
               <button key={t.key} type="button" role="tab" id={`tab-${t.key}`} aria-selected={on} aria-controls={`panel-${t.key}`} onClick={() => pick(t.key)}
-                className="text-[11px] font-bold uppercase tracking-wider underline-offset-[6px] hover:underline"
+                className="shrink-0 whitespace-nowrap text-[11px] font-bold uppercase tracking-wider underline-offset-[6px] hover:underline"
                 style={{ color: on ? "var(--app-text-primary)" : "var(--app-text-very-muted)", textDecorationLine: on ? "underline" : undefined, textDecorationThickness: 2 }}>
                 {t.label}
               </button>

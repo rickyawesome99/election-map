@@ -4,7 +4,7 @@
 // picture for each subdivision. Small multiples, one series per panel (no legend needed),
 // points colored by which party led. Values are the exact year totals (original lines).
 
-import { useMemo, useState } from "react";
+import { memo, useMemo, useRef, useState } from "react";
 import type { PrecinctDistrictData } from "@/lib/precinctDistrict/types";
 import { marginOf, sumOffice, subdivisionName, topOfTicket } from "@/lib/precinctDistrict/aggregate";
 import { fmtMargin } from "@/lib/colorScale";
@@ -14,46 +14,64 @@ type Series = { key: string; label: string; note: string; points: { year: number
 
 const W = 300, H = 150, PL = 40, PR = 40, PT = 12, PB = 22;
 
-function Panel({ s, years, ymax, compact }: { s: Series; years: number[]; ymax: number; compact?: boolean }) {
+const Panel = memo(function Panel({ s, years, ymax, compact }: { s: Series; years: number[]; ymax: number; compact?: boolean }) {
   const x = (y: number) => PL + ((y - years[0]) / Math.max(1, years[years.length - 1] - years[0])) * (W - PL - PR);
   const yy = (v: number) => PT + ((ymax + v) / (2 * ymax)) * (H - PT - PB); // R-positive: R up? no — D above the line reads naturally, so invert: v>0 (R) goes DOWN
   const path = s.points.map((p, i) => `${i ? "L" : "M"}${x(p.year).toFixed(1)} ${yy(-p.value).toFixed(1)}`).join(" ");
   const last = s.points[s.points.length - 1];
   const [hover, setHover] = useState<number | null>(null);
   const hp = hover != null ? s.points.find((p) => p.year === hover) : null;
+  // Hover anywhere on the chart reads the nearest year (as the overview's poll charts do), not
+  // only the dot. Pointer events cover mouse and touch alike.
+  // The chart's box is measured once per pointer visit, so a move costs no layout; setHover with
+  // the same year is a no-op, so only a change of year renders.
+  const rectRef = useRef<{ left: number; width: number } | null>(null);
+  const pick = (clientX: number, el: SVGSVGElement) => {
+    if (!s.points.length) return;
+    const r = rectRef.current ?? (rectRef.current = el.getBoundingClientRect());
+    const vx = ((clientX - r.left) / r.width) * W;
+    let best = s.points[0].year, bd = Infinity;
+    for (const p of s.points) { const d = Math.abs(x(p.year) - vx); if (d < bd) { bd = d; best = p.year; } }
+    setHover(best);
+  };
+  const boxW = 96;
+  const boxX = hp ? Math.min(W - PR - boxW, Math.max(PL, x(hp.year) - boxW / 2)) : 0;
   return (
     <div>
       <div className="flex items-baseline justify-between">
         <div className="text-[12px] font-semibold" style={{ color: "var(--app-text-primary)" }}>{s.label}</div>
         {!compact && <div className="text-[10.5px]" style={{ color: "var(--app-text-very-muted)" }}>{s.note}</div>}
       </div>
-      <svg viewBox={`0 0 ${W} ${H}`} className="block w-full" style={{ height: "auto", overflow: "visible" }} role="img" aria-label={`${s.label} margin by year`} onMouseLeave={() => setHover(null)}>
+      <svg viewBox={`0 0 ${W} ${H}`} className="block w-full" style={{ height: "auto", overflow: "visible" }} role="img" aria-label={`${s.label} margin by year`} onPointerEnter={(e) => { rectRef.current = e.currentTarget.getBoundingClientRect(); }} onPointerMove={(e) => pick(e.clientX, e.currentTarget)} onPointerDown={(e) => { rectRef.current = e.currentTarget.getBoundingClientRect(); pick(e.clientX, e.currentTarget); }} onPointerLeave={() => { setHover(null); rectRef.current = null; }}>
+        <rect x={0} y={0} width={W} height={H} fill="transparent" />
         {[-ymax, -ymax / 2, ymax / 2, ymax].map((g) => <line key={g} x1={PL} x2={W - PR} y1={yy(g)} y2={yy(g)} stroke="var(--app-border)" strokeWidth={1} />)}
         <line x1={PL} x2={W - PR} y1={yy(0)} y2={yy(0)} stroke="var(--app-text-muted)" strokeWidth={1} />
         <text x={PL - 6} y={yy(ymax) + 3.5} textAnchor="end" fontSize={9.5} fill="var(--app-text-muted)" style={{ fontFamily: "var(--font-ibm-plex-mono)" }}>D+{ymax}</text>
         <text x={PL - 6} y={yy(0) + 3.5} textAnchor="end" fontSize={9.5} fill="var(--app-text-muted)" style={{ fontFamily: "var(--font-ibm-plex-mono)" }}>even</text>
         <text x={PL - 6} y={yy(-ymax) + 3.5} textAnchor="end" fontSize={9.5} fill="var(--app-text-muted)" style={{ fontFamily: "var(--font-ibm-plex-mono)" }}>R+{ymax}</text>
         {s.points.length > 1 && <path d={path} fill="none" stroke="var(--app-text-muted)" strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />}
+        <g style={{ transform: `translateX(${hp ? x(hp.year) : x(years[years.length - 1])}px)`, transition: "transform 110ms ease-out, opacity 110ms", opacity: hp ? 1 : 0, pointerEvents: "none" }}>
+          <line x1={0} x2={0} y1={yy(ymax)} y2={yy(-ymax)} stroke="var(--app-text-muted)" strokeWidth={1} strokeOpacity={0.7} />
+        </g>
         {s.points.map((p) => (
-          <g key={p.year}>
-            <circle cx={x(p.year)} cy={yy(-p.value)} r={hover === p.year ? 5.5 : 4.5} fill={p.value > 0 ? "var(--party-rep)" : "var(--party-dem)"} stroke="var(--app-bg)" strokeWidth={2} />
-            <circle cx={x(p.year)} cy={yy(-p.value)} r={14} fill="transparent" onMouseEnter={() => setHover(p.year)} />
-          </g>
+          <circle key={p.year} cx={x(p.year)} cy={yy(-p.value)} r={hover === p.year ? 5.5 : 4.5} fill={p.value > 0 ? "var(--party-rep)" : "var(--party-dem)"} stroke="var(--app-bg)" strokeWidth={2} style={{ transition: "r 110ms ease-out" }} />
         ))}
         {last && hover == null && (
           <text x={x(last.year) + 8} y={yy(-last.value) + 3.5} fontSize={10.5} fontWeight={700} fill="var(--app-text-primary)" style={{ fontFamily: "var(--font-ibm-plex-mono)" }}>{fmtMargin(last.value)}</text>
         )}
         {hp && (
-          <g>
-            <rect x={Math.min(W - PR - 92, Math.max(PL, x(hp.year) - 46))} y={2} width={92} height={16} rx={3} fill="var(--app-panel)" stroke="var(--app-border)" />
-            <text x={Math.min(W - PR - 92, Math.max(PL, x(hp.year) - 46)) + 46} y={13.5} textAnchor="middle" fontSize={10} fontWeight={600} fill="var(--app-text-primary)" style={{ fontFamily: "var(--font-ibm-plex-mono)" }}>{hp.year}{hp.tag ? ` ${hp.tag}` : ""} {fmtMargin(hp.value)}</text>
+          <g style={{ transform: `translateX(${boxX}px)`, transition: "transform 110ms ease-out", pointerEvents: "none" }}>
+            <rect x={0} y={1} width={boxW} height={17} rx={3} fill="var(--app-panel)" stroke="var(--app-border)" />
+            <text x={boxW / 2} y={13} textAnchor="middle" fontSize={10} fontWeight={600} fill="var(--app-text-primary)" style={{ fontFamily: "var(--font-ibm-plex-mono)" }}>
+              {hp.year}{hp.tag ? ` ${hp.tag}` : ""} · <tspan fill={hp.value > 0 ? "var(--party-rep)" : hp.value < 0 ? "var(--party-dem)" : "var(--app-text-primary)"}>{fmtMargin(hp.value)}</tspan>
+            </text>
           </g>
         )}
         {years.map((y) => <text key={y} x={x(y)} y={H - 6} textAnchor="middle" fontSize={9.5} fill="var(--app-text-muted)" style={{ fontFamily: "var(--font-ibm-plex-mono)" }}>{String(y).slice(2)}</text>)}
       </svg>
     </div>
   );
-}
+});
 
 export default function Trends({ data }: { data: PrecinctDistrictData }) {
   const { config, results } = data;
@@ -105,7 +123,7 @@ export default function Trends({ data }: { data: PrecinctDistrictData }) {
         {district.map((s) => <Panel key={s.key} s={s} years={years} ymax={ymax} />)}
       </div>
       <p className="mt-2 text-[11.5px]" style={{ color: "var(--app-text-very-muted)" }}>
-        Two-party margin of the whole footprint as counted each year. Hover a point for the value; the label marks the latest year.
+        Two-party margin of the whole footprint as counted each year. Hover or tap anywhere on a chart for that year&apos;s value; the label marks the latest year.
       </p>
 
       <div className="mt-8 flex flex-wrap items-center justify-between gap-3 pb-2" style={{ borderBottom: "1px solid var(--app-border)" }}>

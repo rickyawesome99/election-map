@@ -37,6 +37,7 @@ const nextConfig: NextConfig = {
       { source: "/model/table", destination: "/model", permanent: false },
       { source: "/model/districtTable", destination: "/model#districts", permanent: false },
       { source: "/model/war", destination: "/model/candidates", permanent: false },
+      { source: "/methodology/sources", destination: "/sources", permanent: true },
     ];
   },
 };

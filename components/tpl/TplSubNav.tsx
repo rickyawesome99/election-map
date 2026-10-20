@@ -35,12 +35,17 @@ export function TplSubNav({ right, methodologyHref = "/methodology/state-tpl", m
   );
 }
 
-// The Map and Candidates headers' switch, to the right of the median stat: a button over to the
-// other view, with the matching methodology link under it.
-export function TplViewSwitch({ to }: { to: "map" | "candidates" }) {
+// The Map and Candidates headers' switch to the other view, with the matching methodology link.
+// "row" (sm and up) is the header's closing row above a rule: the button with the link beside it.
+// "inline" (phones) stacks the two to the right of the headline stat instead of taking a row of its own.
+export function TplViewSwitch({ to, layout = "row" }: { to: "map" | "candidates"; layout?: "row" | "inline" }) {
   const toMap = to === "map";
+  const row = layout === "row";
   return (
-    <div className="flex shrink-0 flex-col items-end gap-2">
+    <div
+      className={row ? "mt-2 hidden flex-wrap items-center gap-4 pb-5 sm:flex" : "flex shrink-0 flex-col items-end gap-2 sm:hidden"}
+      style={row ? { borderBottom: "1px solid var(--app-border)" } : undefined}
+    >
       <Link href={toMap ? "/model" : "/model/candidates"} className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold transition-colors hover:bg-[var(--app-tab-bg)]"
         style={{ border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
         {toMap ? "← Map view" : "Candidates view →"}

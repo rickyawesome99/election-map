@@ -580,24 +580,8 @@ export default function TurnoutPage(props: TurnoutPageProps) {
   const dark = useDarkMode();
   const t = dark ? DARK_THEME : LIGHT_THEME;
   const { states, national, projection, projectionNational } = props;
-  const n24 = national.find((n) => n.year === 2024)!, n22 = national.find((n) => n.year === 2022)!;
-  const tiles = [
-    { label: "2024 President", value: fmtPct(n24.rate.president), sub: `${fmtM(n24.votes.president ?? 0)} votes` },
-    { label: "2024 House", value: fmtPct(n24.rate.house), sub: `${fmtM(n24.votes.house ?? 0)} votes` },
-    { label: "2022 top race", value: `${((projectionNational.basis.find((b) => b.year === 2022)!.topVotes / projectionNational.basis.find((b) => b.year === 2022)!.cvap) * 100).toFixed(1)}%`, sub: `${fmtM(n22.votes.house ?? 0)} House votes` },
-    { label: `${PROJECTION_YEAR} House estimate`, value: `${projectionNational.rate}%`, sub: `${fmtM(projectionNational.houseVotes)} votes (${fmtM(projectionNational.low)}–${fmtM(projectionNational.high)})` },
-  ];
   return (
-    <main className="mx-auto max-w-7xl px-4 pb-16 sm:px-6">
-      <div className="grid grid-cols-2 gap-x-6 gap-y-3 py-5 md:grid-cols-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-        {tiles.map((x) => (
-          <div key={x.label}>
-            <div className="text-[10px] font-bold uppercase tracking-wider" style={MUTED}>{x.label}</div>
-            <div className="mt-0.5 text-2xl font-extrabold tabular-nums leading-none" style={{ fontFamily: "var(--font-serif)" }}>{x.value}</div>
-            <div className="mt-1 text-[11px]" style={VERY_MUTED}>{x.sub}</div>
-          </div>
-        ))}
-      </div>
+    <main className="mx-auto max-w-7xl px-4 pb-16 pt-3 sm:px-6">
       <section id="map" className="pt-6">
         <p className="mb-3 max-w-3xl text-sm leading-relaxed" style={MUTED}>
           Turnout in every general election since 2016, by state, House district and county, as a share of citizen voting-age population. {Object.values(METRIC_LABEL).slice(0, 5).join(", ")} and the {PROJECTION_YEAR} estimate are on the map; the tables below sort every state and district.

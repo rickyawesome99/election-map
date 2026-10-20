@@ -72,7 +72,8 @@ function Label({ children }: { children: ReactNode }) {
 }
 
 export default function TargetList({ list, rName, districtName }: { list: TargetListData; rName: string; districtName: string }) {
-  const { rows, year, midtermYear } = list;
+  const { rows, year, presYear, midtermYear } = list;
+  const presShort = presYear != null ? `${String(presYear).slice(2)} Pres` : "Pres";
   const [band, setBand] = useState<BandKey | "all">("all");
   const [category, setCategory] = useState<PriorityCategory | "all">("all");
   const [area, setArea] = useState<string>("all");
@@ -90,7 +91,7 @@ export default function TargetList({ list, rName, districtName }: { list: Target
     { key: "rank", label: "#", title: "Priority rank: 1 = most net votes available", defaultDir: "asc", value: (r) => r.rank, render: (r) => <span className="tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.rank ?? "—"}</span> },
     { key: "name", label: "Precinct", align: "left", defaultDir: "asc", value: (r) => r.id, render: (r) => <span className="font-medium" style={{ color: "var(--app-text-primary)" }}>{r.id}{r.estimated && <span title="Some years estimated on today's precinct lines by 2020 block population" className="ml-1 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>≈</span>}</span> },
     { key: "area", label: "Area", align: "left", defaultDir: "asc", value: (r) => r.subName, render: (r) => <span style={{ color: "var(--app-text-muted)" }}>{r.subName}</span>, hideBelowXl: true },
-    { key: "band", label: "Band", title: "Competitiveness band on the average margin: Swing within 5, Lean 5–15, Safe 15+", align: "left", defaultDir: "asc", borderLeft: true, value: (r) => (r.band ? BAND_ORDER[r.band] : null), render: (r) => (r.band ? <Chip color={BAND_BY_KEY[r.band].color} title={BAND_BY_KEY[r.band].describe}>{BAND_BY_KEY[r.band].short}</Chip> : "—") },
+    { key: "band", label: presShort, title: `Competitiveness band on the ${presYear ?? "latest"} presidential margin: Swing within 5, Lean 5–15, Safe 15+`, align: "left", defaultDir: "asc", borderLeft: true, value: (r) => (r.band ? BAND_ORDER[r.band] : null), render: (r) => (r.band ? <Chip color={BAND_BY_KEY[r.band].color} title={BAND_BY_KEY[r.band].describe}>{BAND_BY_KEY[r.band].short}</Chip> : "—") },
     { key: "category", label: "Task", title: "Priority category: what the precinct is for", align: "left", defaultDir: "asc", value: (r) => (r.category ? CAT_ORDER[r.category] : null), render: (r) => (r.category ? <Chip color={PRIORITY_CATEGORY_BY_KEY[r.category].color} title={PRIORITY_CATEGORY_BY_KEY[r.category].describe}>{PRIORITY_CATEGORY_BY_KEY[r.category].label}</Chip> : "—") },
     { key: "priority", label: "Net votes", title: "Priority: split-ticket votes + turnout votes where positive", defaultDir: "desc", borderLeft: true, value: (r) => r.priority, render: (r) => <N v={r.priority} bold /> },
     { key: "avgMargin", label: "Avg margin", title: "Average two-party margin across every race on file (2 × average R share − 100)", defaultDir: "desc", borderLeft: true, value: (r) => r.avgMargin, render: (r) => <M v={r.avgMargin} bold /> },
@@ -101,7 +102,7 @@ export default function TargetList({ list, rName, districtName }: { list: Target
     { key: "ballots2026", label: "2026 ballots", title: "2026 turnout estimate: the precinct's mean midterm turnout rate × today's registration", defaultDir: "desc", value: (r) => r.ballots2026, render: (r) => <N v={r.ballots2026} /> },
     { key: "persuadable", label: "Split votes", title: `Split-ticket votes in ${year}: (R ceiling − R floor) × ballots`, defaultDir: "desc", borderLeft: true, value: (r) => r.persuadable, render: (r) => <N v={r.persuadable} /> },
     { key: "turnoutVotes", label: "Turnout votes", title: `Midterm drop-off ballots (${year} − ${midtermYear ?? "midterm"}) × average margin: net votes from turning drop-off voters out (negative where the precinct leans D)`, defaultDir: "desc", value: (r) => r.turnoutVotes, render: (r) => <span className="tabular-nums" style={{ color: r.turnoutVotes != null && r.turnoutVotes < 0 ? "var(--app-text-very-muted)" : undefined }}>{signedVotes(r.turnoutVotes == null ? null : Math.round(r.turnoutVotes))}</span> },
-  ], [year, midtermYear]);
+  ], [year, presYear, presShort, midtermYear]);
 
   const filtered = useMemo(() => rows.filter((r) => (band === "all" || r.band === band) && (category === "all" || r.category === category) && (area === "all" || r.sub === area)), [rows, band, category, area]);
 
@@ -131,7 +132,7 @@ export default function TargetList({ list, rName, districtName }: { list: Target
   const totals = useMemo(() => ({ n: filtered.length, ballots: filtered.reduce((s, r) => s + (r.ballots2026 ?? 0), 0), net: filtered.reduce((s, r) => s + (r.priority ?? 0), 0), all: rows.reduce((s, r) => s + (r.priority ?? 0), 0) }), [filtered, rows]);
 
   function downloadCsv() {
-    const head = ["Rank", "Precinct", "Area", "Band", "Task", "Avg margin", `${year} State House`, `${year} President`, "2026 projected", "Registered", "2026 est. ballots", "Split-ticket votes", "Turnout votes", "Net votes"];
+    const head = ["Rank", "Precinct", "Area", `${presYear ?? ""} Pres band`.trim(), "Task", "Avg margin", `${year} State House`, `${year} President`, "2026 projected", "Registered", "2026 est. ballots", "Split-ticket votes", "Turnout votes", "Net votes"];
     const m = (v: number | null) => (v == null ? "" : v.toFixed(1));
     const n = (v: number | null) => (v == null ? "" : String(Math.round(v)));
     const q = (s: string) => `"${s.replace(/"/g, '""')}"`;
@@ -158,7 +159,7 @@ export default function TargetList({ list, rName, districtName }: { list: Target
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{b.label}</div>
               <div className="mt-0.5 flex items-baseline gap-1.5"><span className="text-2xl font-extrabold tabular-nums leading-none" style={{ color: "var(--app-text-primary)" }}>{b.n}</span><span className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>precinct{b.n === 1 ? "" : "s"}</span></div>
               <div className="mt-1 text-[11.5px] tabular-nums" style={{ color: "var(--app-text-muted)" }}>{fmtInt(b.ballots)} ballots est. · <b style={{ color: "var(--app-text-primary)" }}>{fmtInt(b.net)}</b> net votes</div>
-              <div className="text-[10.5px]" style={{ color: "var(--app-text-very-muted)" }}>{b.describe}</div>
+              <div className="text-[10.5px]" style={{ color: "var(--app-text-very-muted)" }}>{presYear} presidential {b.describe}</div>
             </button>
           );
         })}
@@ -166,7 +167,7 @@ export default function TargetList({ list, rName, districtName }: { list: Target
 
       {/* Filters */}
       <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
-        <div className="flex items-center gap-1 overflow-x-auto scrollbar-none"><Label>Band</Label>
+        <div className="flex items-center gap-1 overflow-x-auto scrollbar-none"><Label>{presShort}</Label>
           <FilterPill active={band === "all"} onClick={() => setBand("all")} count={rows.length}>All</FilterPill>
           {bandStats.map((b) => <FilterPill key={b.key} active={band === b.key} onClick={() => setBand(band === b.key ? "all" : b.key)} color={b.color} count={b.n}>{b.short}</FilterPill>)}
         </div>
@@ -280,7 +281,7 @@ export default function TargetList({ list, rName, districtName }: { list: Target
       </div>
 
       <div className="mt-3 text-[11px] leading-relaxed" style={{ color: "var(--app-text-very-muted)" }}>
-        Net votes = split-ticket votes ({year}: R ceiling − R floor, × ballots) + turnout votes where positive (ballots lost from {year} to {midtermYear ?? "the midterm"} × average margin). Bands and the average margin use every race on file, each year counting once, on today&apos;s precinct lines (≈ where older years are estimated). A Democratic-leaning precinct&apos;s turnout votes are negative, so its net votes are split-ticket votes only. Ranks hold across filters.
+        Net votes = split-ticket votes ({year}: R ceiling − R floor, × ballots) + turnout votes where positive (ballots lost from {year} to {midtermYear ?? "the midterm"} × average margin). Bands are cut on the {presYear} presidential margin (Safe 15+, Lean 5–15, Swing within 5); the average margin and the task category use every race on file, each year counting once, on today&apos;s precinct lines (≈ where older years are estimated). A Democratic-leaning precinct&apos;s turnout votes are negative, so its net votes are split-ticket votes only. Ranks hold across filters.
       </div>
     </div>
   );

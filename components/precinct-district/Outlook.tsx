@@ -23,10 +23,9 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
   const rName = e?.candidates?.r?.name ?? "the Republican";
   const pR = 1 - p.pD;
   const terms: { label: string; note: string; value: number; op?: string }[] = [
-    { label: "Structural lean", note: `${p.rows.filter((r) => r.included).length} race-years, incumbency and environment stripped, recency-weighted`, value: p.lean },
+    { label: "Structural lean", note: `${p.rows.filter((r) => r.included).length} race-years, incumbency and environment stripped, recency-weighted${p.seatRows.latestYear ? `; the ${p.seatRows.latestYear} State House row at the legislature model's seat weight` : ""}`, value: p.lean },
     { op: "+", label: "2026 environment", note: `β*(${p.stateAbbr}) ${p.beta.toFixed(2)} × E(2026) ${signed(p.eHat)}`, value: p.envPts },
     { op: "+", label: "Incumbency", note: e?.status === "open" ? "open seat" : "incumbent on the ballot", value: 0 },
-    { op: "+", label: "Down-ballot gap", note: p.gap.raw == null ? "no single-race State House year" : `State House ran ${signed(p.gap.raw)} vs the top of the ticket over ${p.gap.n} year${p.gap.n === 1 ? "" : "s"}, shrunk ×${p.gap.shrink.toFixed(2)}`, value: p.gap.value },
     ...(p.money ? [{ op: "+", label: "Campaign money", note: `receipts through ${fmtDate(p.money.through)}: gap ${signed(p.money.gapPct)}% vs ${signed(p.money.structuralGapPct)}% typical, × K ${p.money.calibration.K}${Math.abs(p.money.pts) >= p.money.calibration.CAP ? `, capped at ±${p.money.calibration.CAP}` : ""}`, value: p.money.pts }] : []),
   ];
 
@@ -34,7 +33,7 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
     <div>
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
         {/* Headline */}
-        <div>
+        <div className="min-w-0">
           <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Projected margin · {e ? new Date(e.date + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }) : "2026"}</div>
           <div className="mt-1 flex flex-wrap items-baseline gap-x-4 gap-y-1">
             <span className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.5rem, 6vw, 4rem)", fontWeight: 700, lineHeight: 1, color: mc(p.margin) }}>{fmtMargin(p.margin)}</span>
@@ -57,28 +56,28 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
             <summary className="cursor-pointer select-none font-semibold" style={{ color: "var(--app-text-muted)" }}>The race-years behind the lean</summary>
             <div className="mt-2 overflow-x-auto">
               <table className="w-full text-[12px]" style={{ borderCollapse: "collapse" }}>
-                <thead><tr style={{ color: "var(--app-text-muted)" }}><th className="pb-1 text-left font-semibold">Race</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Raw</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Inc.</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Env.</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Money</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Neutral</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Weight</th></tr></thead>
+                <thead><tr style={{ color: "var(--app-text-muted)" }}><th className="pb-1 text-left font-semibold">Race</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Raw</th><th className="hidden whitespace-nowrap pb-1 pl-2 text-right font-semibold sm:table-cell">Inc.</th><th className="hidden whitespace-nowrap pb-1 pl-2 text-right font-semibold sm:table-cell">Env.</th><th className="hidden whitespace-nowrap pb-1 pl-2 text-right font-semibold sm:table-cell">Money</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Neutral</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Weight</th></tr></thead>
                 <tbody>
                   {p.rows.map((r) => (
                     <tr key={`${r.year}-${r.office}`} style={{ borderTop: "1px solid var(--app-border)", opacity: r.included ? 1 : 0.55 }}>
                       <td className="py-1 pr-2"><span style={{ color: "var(--app-text-primary)" }}>{r.label}</span>{r.candidates && <span className="ml-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{r.candidates}</span>}{!r.included && <span className="ml-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>— excluded: {r.reason}</span>}</td>
                       <td className="whitespace-nowrap py-1 pl-2 text-right"><M v={r.raw} /></td>
-                      <td className="whitespace-nowrap py-1 pl-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.incPts ? signed(r.incPts) : "—"}</td>
-                      <td className="whitespace-nowrap py-1 pl-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{signed(r.envPts)}</td>
-                      <td className="whitespace-nowrap py-1 pl-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.moneyPts ? signed(-r.moneyPts) : "—"}</td>
+                      <td className="hidden whitespace-nowrap py-1 pl-2 text-right tabular-nums sm:table-cell" style={{ color: "var(--app-text-muted)" }}>{r.incPts ? signed(r.incPts) : "—"}</td>
+                      <td className="hidden whitespace-nowrap py-1 pl-2 text-right tabular-nums sm:table-cell" style={{ color: "var(--app-text-muted)" }}>{signed(r.envPts)}</td>
+                      <td className="hidden whitespace-nowrap py-1 pl-2 text-right tabular-nums sm:table-cell" style={{ color: "var(--app-text-muted)" }}>{r.moneyPts ? signed(-r.moneyPts) : "—"}</td>
                       <td className="whitespace-nowrap py-1 pl-2 text-right"><M v={r.NM} /></td>
                       <td className="whitespace-nowrap py-1 pl-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.included ? `${(r.weight * 100).toFixed(1)}%${r.huber < 0.999 ? ` · Huber ×${r.huber.toFixed(2)}` : ""}` : "—"}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
-              <div className="mt-1.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Margins are two-party on today&apos;s precinct lines. Inc. = incumbency strip (House advantage {p.constants.incumbencyPts.toFixed(1)} used for State House). Env. = −β* × E(year). Money = the nominees&apos; money edge beyond the typical gap for the seat, removed (only races with receipts on file). A year that summed several districts is not one race and is left out.</div>
+              <div className="mt-1.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Margins are two-party on today&apos;s precinct lines. Inc. = incumbency strip (the state legislature model&apos;s fitted {p.constants.incumbencyPts.toFixed(1)} for State House). Env. = −β* × E(year). Money = the nominees&apos; money edge beyond the typical gap for the seat, removed (only races with receipts on file). A year that summed several districts is not one race and is left out.</div>
             </div>
           </details>
         </div>
 
         {/* Ledger */}
-        <div>
+        <div className="min-w-0">
           <div className="pb-1.5 text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>How it is built</div>
           <table className="w-full text-[13px]" style={{ borderCollapse: "collapse" }}>
             <tbody>
@@ -115,19 +114,19 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
                 <thead>
                   <tr style={{ color: "var(--app-text-muted)" }}>
                     <th className="py-2 pr-3 text-left text-[11px] font-semibold uppercase tracking-wider">Candidate</th>
-                    <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider">Total raised</th>
-                    <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider">In-kind</th>
-                    <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider">Spent</th>
-                    <th className="py-2 pl-3 text-right text-[11px] font-semibold uppercase tracking-wider">Cash on hand</th>
+                    <th className="py-2 px-2 text-right text-[11px] font-semibold uppercase tracking-wider sm:px-3">Raised</th>
+                    <th className="hidden py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider sm:table-cell">In-kind</th>
+                    <th className="hidden py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider sm:table-cell">Spent</th>
+                    <th className="py-2 pl-2 text-right text-[11px] font-semibold uppercase tracking-wider sm:pl-3">Cash on hand</th>
                   </tr>
                 </thead>
                 <tbody>
                   {cands.map(({ c, color, party }) => (
                     <tr key={party} style={{ borderTop: "1px solid var(--app-border)" }}>
                       <td className="py-2 pr-3"><a href={c.url} className="font-semibold hover:underline" style={{ color }}>{c.name} ({party})</a><div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{c.committee}</div></td>
-                      <td className="py-2 px-3 text-right tabular-nums font-semibold" style={{ color: "var(--app-text-primary)" }}>{usd(c.receipts)}</td>
-                      <td className="py-2 px-3 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{usd(c.inKind)}</td>
-                      <td className="py-2 px-3 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{usd(c.spent)}</td>
+                      <td className="py-2 px-2 text-right tabular-nums font-semibold sm:px-3" style={{ color: "var(--app-text-primary)" }}>{usd(c.receipts)}</td>
+                      <td className="hidden py-2 px-3 text-right tabular-nums sm:table-cell" style={{ color: "var(--app-text-muted)" }}>{usd(c.inKind)}</td>
+                      <td className="hidden py-2 px-3 text-right tabular-nums sm:table-cell" style={{ color: "var(--app-text-muted)" }}>{usd(c.spent)}</td>
                       <td className="py-2 pl-3 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{usd(c.cashOnHand)}</td>
                     </tr>
                   ))}
@@ -139,7 +138,7 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
               <div className="mt-2 max-w-4xl space-y-1.5 text-[11.5px]" style={{ color: "var(--app-text-very-muted)" }}>
                 <p>
                   <b style={{ color: "var(--app-text-muted)" }}>How it enters the margin.</b> Receipts gap {signed(m.gapPct)}% (R-positive share of the two nominees&apos; combined {usd(m.dReceipts + m.rReceipts)}), × {m.scale} because the trailing side usually closes part of the gap after mid-cycle = {signed(m.scale * m.gapPct)}%. {m.incSign === 0 ? "An open" : m.incSign > 0 ? "A Republican-held" : "A Democratic-held"} {config.state} House seat at a {fmtMargin(m.presMargin)} presidential margin typically sees {signed(m.structuralGapPct)}%, so the edge beyond the seat is {signed(m.residualGapPct)}%. At K = {cal.K} points per point of edge that is {signed(cal.K * m.residualGapPct)}{Math.abs(cal.K * m.residualGapPct) > cal.CAP ? `, capped at ${signed(m.pts)}` : ""}.
-                  K and the typical gap are fitted on {cal.n} contested {cal.state} House races in {cal.fitYear} (K = {cal.kOls.toFixed(3)} ± {cal.kSe.toFixed(3)}, rounded; the money term cuts the fit&apos;s error from {cal.rmse.noMoney.toFixed(1)} to {cal.rmse.withMoney.toFixed(1)} points) — see the <Link href="/methodology/precinct-district" className="underline">methodology</Link>.
+                  The typical gap is fitted on {cal.n} contested {cal.state} House races in {cal.fitYear}; K and the cap are the state legislature model&apos;s, backtested nationally (the {cal.state} fit&apos;s own in-sample K of {cal.kOls.toFixed(3)} ± {cal.kSe.toFixed(3)} is not used) — see the <Link href="/methodology/precinct-district" className="underline">methodology</Link>.
                 </p>
                 <p>
                   <b style={{ color: "var(--app-text-muted)" }}>Raised is not spending power.</b> Gross receipts are the calibration&apos;s measure and read as a signal of donor and caucus backing. They include in-kind spending made on a candidate&apos;s behalf and money a candidate passes on to the caucus, so cash on hand can run the other way.
@@ -167,11 +166,11 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
             <thead>
               <tr style={{ color: "var(--app-text-muted)" }}>
                 <th className="py-2 pr-3 text-left text-[11px] font-semibold uppercase tracking-wider">Turnout</th>
-                <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider">Ballots</th>
-                <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider">Rate</th>
-                <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--party-dem)" }}>{dName}</th>
-                <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--party-rep)" }}>{rName}</th>
-                <th className="py-2 pl-3 text-right text-[11px] font-semibold uppercase tracking-wider">Net votes to flip</th>
+                <th className="py-2 px-2 text-right text-[11px] font-semibold uppercase tracking-wider sm:px-3">Ballots</th>
+                <th className="hidden py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider sm:table-cell">Rate</th>
+                <th className="py-2 px-2 text-right text-[11px] font-semibold uppercase tracking-wider sm:px-3" style={{ color: "var(--party-dem)" }}>{dName.split(" ").pop()}</th>
+                <th className="py-2 px-2 text-right text-[11px] font-semibold uppercase tracking-wider sm:px-3" style={{ color: "var(--party-rep)" }}>{rName.split(" ").pop()}</th>
+                <th className="py-2 pl-2 text-right text-[11px] font-semibold uppercase tracking-wider sm:pl-3">Net to flip</th>
               </tr>
             </thead>
             <tbody>
@@ -187,12 +186,12 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
                 const rangeNote = !lo || !hi ? null : lo === hi ? `Based on ${lo.year} alone` : `Range based on ${lo.year} (low) and ${hi.year} (high)`;
                 return (
                   <tr style={{ borderTop: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
-                    <td className="py-2 pr-3 align-top"><div className="font-semibold">2026 estimate</div>{rangeNote && <div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{rangeNote}</div>}</td>
-                    <td className="py-2 px-3 text-right align-top tabular-nums font-semibold">{turnout.ballots.toLocaleString()}{span((v) => v.ballots)}</td>
-                    <td className="py-2 px-3 text-right align-top tabular-nums">{turnout.rate.toFixed(1)}%{span((v) => v.rate, (n) => `${n.toFixed(1)}%`)}</td>
-                    <td className="py-2 px-3 text-right align-top tabular-nums" style={{ color: "var(--party-dem)" }}>{turnout.d.toLocaleString()}{span((v) => v.d)}</td>
-                    <td className="py-2 px-3 text-right align-top tabular-nums" style={{ color: "var(--party-rep)" }}>{turnout.r.toLocaleString()}{span((v) => v.r)}</td>
-                    <td className="py-2 pl-3 text-right align-top tabular-nums">{turnout.votesToFlip.toLocaleString()} <span className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>for {turnout.trailing === "D" ? dName : rName}</span>{span((v) => v.votesToFlip)}</td>
+                    <td className="py-2 pr-2 align-top sm:pr-3"><div className="font-semibold">2026 est.</div>{rangeNote && <div className="hidden text-[11px] sm:block" style={{ color: "var(--app-text-very-muted)" }}>{rangeNote}</div>}</td>
+                    <td className="py-2 px-2 text-right align-top tabular-nums font-semibold sm:px-3">{turnout.ballots.toLocaleString()}{span((v) => v.ballots)}</td>
+                    <td className="hidden py-2 px-3 text-right align-top tabular-nums sm:table-cell">{turnout.rate.toFixed(1)}%{span((v) => v.rate, (n) => `${n.toFixed(1)}%`)}</td>
+                    <td className="py-2 px-2 text-right align-top tabular-nums sm:px-3" style={{ color: "var(--party-dem)" }}>{turnout.d.toLocaleString()}{span((v) => v.d)}</td>
+                    <td className="py-2 px-2 text-right align-top tabular-nums sm:px-3" style={{ color: "var(--party-rep)" }}>{turnout.r.toLocaleString()}{span((v) => v.r)}</td>
+                    <td className="py-2 pl-2 text-right align-top tabular-nums sm:pl-3">{turnout.votesToFlip.toLocaleString()} <span className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>for {turnout.trailing === "D" ? dName : rName}</span>{span((v) => v.votesToFlip)}</td>
                   </tr>
                 );
               })()}

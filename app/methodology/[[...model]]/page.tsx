@@ -9,8 +9,8 @@ import PrecinctMethodology from "@/components/methodology/PrecinctMethodology";
 import TurnoutMethodology from "@/components/methodology/TurnoutMethodology";
 import StateLegMethodology from "@/components/methodology/StateLegMethodology";
 import ChangeLog, { RevisionHistory } from "@/components/methodology/ChangeLog";
-import SourcesMethodology from "@/components/methodology/SourcesMethodology";
 import MethodologyToc from "@/components/methodology/MethodologyToc";
+import { StandfirstHeader } from "@/components/StandfirstHeader";
 
 // One tab per model. Each tab reads its constants and fitted values from the code that runs the
 // model, so the numbers cannot drift; when the STRUCTURE of a calculation changes, edit the tab's
@@ -25,7 +25,6 @@ const TABS = [
   { key: "turnout", label: "Turnout", blurb: "Turnout measures and the 2026 turnout estimate" },
   { key: "state-leg", label: "Legislative atlas", blurb: "State legislative district pages: presidential results by map era, candidates, redistricting" },
   { key: "changelog", label: "Change Log", blurb: "What changed, and when" },
-  { key: "sources", label: "Sources", blurb: "Every external source behind the data" },
 ] as const;
 type TabKey = (typeof TABS)[number]["key"];
 
@@ -53,22 +52,19 @@ export default async function MethodologyPage({ params }: { params: Promise<{ mo
   const lastChange = METHODOLOGY_CHANGELOG[0]?.date;
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--party-dem) 8%, var(--app-bg)) 0%, var(--app-bg) 55%, color-mix(in srgb, var(--party-rep) 8%, var(--app-bg)) 100%)" }}>
+      <div>
         <div className="mx-auto max-w-6xl px-4 pt-6 sm:px-6 sm:pt-8">
-          <div className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)" }}>How every number is calculated</div>
-          <h1 className="mt-1" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6vw, 4.25rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>Methodology</h1>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-            The current specification of each model on this site. Constants, fitted values, worked examples and backtests are read live
-            from the code that produces the forecasts, and each is labelled with how it was set — so this is the place to look before
-            changing anything.{lastChange && <> Last model change recorded {new Date(`${lastChange}T12:00:00Z`).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })}.</>}
-          </p>
-          <nav aria-label="Models" className="scrollbar-none -mx-4 mt-6 flex gap-1 overflow-x-auto px-4 sm:mx-0 sm:px-0" style={{ borderBottom: "1px solid var(--app-border)" }}>
+          <StandfirstHeader title="Methodology" size="large" bare>
+            How every number on this site is calculated, read live from the code that produces it, with the backtests behind each
+            choice and a log of every change.{lastChange && <> The models last changed on {new Date(`${lastChange}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", timeZone: "UTC" })}.</>}
+          </StandfirstHeader>
+          <nav aria-label="Models" className="scrollbar-none -mx-4 mt-6 flex gap-1 overflow-x-auto overflow-y-hidden px-4 sm:mx-0 sm:px-0" style={{ boxShadow: "inset 0 -1px 0 var(--app-border)" }}>
             {TABS.map((t) => {
               const on = t.key === active;
               return (
                 <Link key={t.key} href={t.key === "forecast" ? "/methodology" : `/methodology/${t.key}`} aria-current={on ? "page" : undefined} title={t.blurb}
                   className="shrink-0 px-3 py-2.5 text-sm font-semibold transition-colors"
-                  style={{ color: on ? "var(--app-text-primary)" : "var(--app-text-muted)", borderBottom: `2px solid ${on ? "var(--app-text-primary)" : "transparent"}`, marginBottom: "-1px" }}>
+                  style={{ color: on ? "var(--app-text-primary)" : "var(--app-text-muted)", borderBottom: `2px solid ${on ? "var(--app-text-primary)" : "transparent"}` }}>
                   {t.label}
                 </Link>
               );
@@ -88,7 +84,6 @@ export default async function MethodologyPage({ params }: { params: Promise<{ mo
           {active === "turnout" && <><TurnoutMethodology /><RevisionHistory model="turnout" /></>}
           {active === "state-leg" && <><StateLegMethodology /><RevisionHistory model="state-leg" /></>}
           {active === "changelog" && <ChangeLog />}
-          {active === "sources" && <SourcesMethodology />}
         </main>
         <aside className="hidden lg:block">
           <div className="sticky top-4 max-h-[calc(100vh-2rem)] overflow-y-auto pt-8"><MethodologyToc key={active} contentId="methodology-content" /></div>

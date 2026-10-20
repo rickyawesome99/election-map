@@ -3,11 +3,13 @@ import { expect, test } from "@playwright/test";
 // /analysis/turnout: the map with its controls, the state table (office / year pickers, sorting),
 // the district table fed by the district slice, and the 2026 estimate with its county split.
 
-test("turnout page shows the national tiles, the map and the state table", async ({ page }) => {
+test("turnout page shows the national figures, the map and the state table", async ({ page }) => {
   await page.goto("/analysis/turnout");
   await expect(page.getByRole("heading", { name: "Turnout", level: 1 })).toBeVisible({ timeout: 20_000 });
-  await expect(page.getByText("2024 President", { exact: true })).toBeVisible();
-  await expect(page.getByText("2026 House estimate", { exact: true })).toBeVisible();
+  // the national figures live in the standfirst
+  const standfirst = page.locator("header", { has: page.getByRole("heading", { level: 1 }) }).locator("p");
+  await expect(standfirst).toContainText(/In 2024, \d+\.\d% of eligible citizens voted for president/);
+  await expect(standfirst).toContainText(/For 2026 we expect about \d+ million House votes/);
 
   const byState = page.locator("section#by-state");
   await expect(byState.getByRole("heading", { name: "Turnout by state" })).toBeVisible();

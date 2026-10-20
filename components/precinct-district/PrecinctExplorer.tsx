@@ -506,20 +506,21 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       if (showTurnout) {
         cols.push({ key: "ballots", label: "Ballots", group: "Turnout", sortValue: (r) => r.ballots, render: (r) => num(r.ballots, (x) => fmtInt(x)) });
         cols.push({ key: "reg", label: "Reg.", group: "Turnout", sortValue: (r) => r.reg, render: (r) => num(r.reg, (x) => fmtInt(x)), hideOnMobile: true });
-        cols.push({ key: "turnout", label: "Turnout", group: "Turnout", sortValue: (r) => (r.reg > 0 ? (r.ballots / r.reg) * 100 : null), render: (r) => num(r.reg > 0 ? (r.ballots / r.reg) * 100 : null, fmtPct1) });
+        cols.push({ key: "turnout", label: "Turnout", group: "Turnout", sortValue: (r) => (r.reg > 0 ? (r.ballots / r.reg) * 100 : null), render: (r) => num(r.reg > 0 ? (r.ballots / r.reg) * 100 : null, fmtPct1), hideOnMobile: true });
       }
       offices.forEach((o, i) => {
         const g = officeShort(yr, o);
         const first = i === 0 || cols.length === 0;
+        const other = o !== office;   // phones show only the selected race's columns
         if (showVotes) {
-          cols.push({ key: `${o}_d`, label: "D", group: g, borderLeft: !first || showTurnout, color: "var(--party-dem)", sortValue: (r) => r.races[o]?.d ?? null, render: (r) => num(r.races[o]?.d, (x) => fmtInt(x), () => "var(--party-dem)") });
-          cols.push({ key: `${o}_r`, label: "R", group: g, color: "var(--party-rep)", sortValue: (r) => r.races[o]?.r ?? null, render: (r) => num(r.races[o]?.r, (x) => fmtInt(x), () => "var(--party-rep)") });
+          cols.push({ key: `${o}_d`, label: "D", group: g, borderLeft: !first || showTurnout, color: "var(--party-dem)", sortValue: (r) => r.races[o]?.d ?? null, render: (r) => num(r.races[o]?.d, (x) => fmtInt(x), () => "var(--party-dem)"), hideOnMobile: other });
+          cols.push({ key: `${o}_r`, label: "R", group: g, color: "var(--party-rep)", sortValue: (r) => r.races[o]?.r ?? null, render: (r) => num(r.races[o]?.r, (x) => fmtInt(x), () => "var(--party-rep)"), hideOnMobile: other });
         }
         if (showPct) {
-          cols.push({ key: `${o}_dp`, label: "D%", group: g, borderLeft: !showVotes && (!first || showTurnout), color: "var(--party-dem)", sortValue: (r) => (r.races[o] ? pctD(r.races[o]) : null), render: (r) => num(r.races[o] ? pctD(r.races[o]) : null, fmtPct1, () => "var(--party-dem)") });
-          cols.push({ key: `${o}_rp`, label: "R%", group: g, color: "var(--party-rep)", sortValue: (r) => (r.races[o] ? 100 - (pctD(r.races[o]) ?? 0) : null), render: (r) => num(r.races[o] && pctD(r.races[o]) != null ? 100 - (pctD(r.races[o]) as number) : null, fmtPct1, () => "var(--party-rep)") });
+          cols.push({ key: `${o}_dp`, label: "D%", group: g, borderLeft: !showVotes && (!first || showTurnout), color: "var(--party-dem)", sortValue: (r) => (r.races[o] ? pctD(r.races[o]) : null), render: (r) => num(r.races[o] ? pctD(r.races[o]) : null, fmtPct1, () => "var(--party-dem)"), hideOnMobile: other });
+          cols.push({ key: `${o}_rp`, label: "R%", group: g, color: "var(--party-rep)", sortValue: (r) => (r.races[o] ? 100 - (pctD(r.races[o]) ?? 0) : null), render: (r) => num(r.races[o] && pctD(r.races[o]) != null ? 100 - (pctD(r.races[o]) as number) : null, fmtPct1, () => "var(--party-rep)"), hideOnMobile: other });
         }
-        cols.push({ key: `${o}_m`, label: "Margin", group: g, borderLeft: !showVotes && !showPct && (!first || showTurnout), sortValue: (r) => (r.races[o] ? marginOf(r.races[o]) : null), render: (r) => <b>{num(r.races[o] ? marginOf(r.races[o]) : null, fmtMargin, mcol)}</b> });
+        cols.push({ key: `${o}_m`, label: "Margin", group: g, borderLeft: !showVotes && !showPct && (!first || showTurnout), sortValue: (r) => (r.races[o] ? marginOf(r.races[o]) : null), render: (r) => <b>{num(r.races[o] ? marginOf(r.races[o]) : null, fmtMargin, mcol)}</b>, hideOnMobile: other });
       });
       return cols;
     }
@@ -545,11 +546,11 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
     if (mode === "projection" && projection) {
       const dn = config.election2026?.candidates?.d?.name?.split(" ").pop() ?? "D";
       const rn = config.election2026?.candidates?.r?.name?.split(" ").pop() ?? "R";
-      cols.push({ key: "base", label: `${projection.baseline.year} baseline`, sortValue: (r) => projUnits.get(r.id)?.base ?? null, render: (r) => num(projUnits.get(r.id)?.base, fmtMargin, mcol) });
+      cols.push({ key: "base", label: `${projection.baseline.year} baseline`, sortValue: (r) => projUnits.get(r.id)?.base ?? null, render: (r) => num(projUnits.get(r.id)?.base, fmtMargin, mcol), hideOnMobile: true });
       cols.push({ key: "proj", label: "Projected", sortValue: (r) => projUnits.get(r.id)?.projected ?? null, render: (r) => <b>{num(projUnits.get(r.id)?.projected, fmtMargin, mcol)}</b> });
       cols.push({ key: "pballots", label: "Ballots", group: TURNOUT_LABEL, borderLeft: true, sortValue: (r) => projUnits.get(r.id)?.ballots ?? null, render: (r) => num(projUnits.get(r.id)?.ballots, (x) => fmtInt(x)) });
-      cols.push({ key: "pd", label: dn, group: TURNOUT_LABEL, color: "var(--party-dem)", sortValue: (r) => projUnits.get(r.id)?.d ?? null, render: (r) => num(projUnits.get(r.id)?.d, (x) => fmtInt(x), () => "var(--party-dem)") });
-      cols.push({ key: "pr", label: rn, group: TURNOUT_LABEL, color: "var(--party-rep)", sortValue: (r) => projUnits.get(r.id)?.r ?? null, render: (r) => num(projUnits.get(r.id)?.r, (x) => fmtInt(x), () => "var(--party-rep)") });
+      cols.push({ key: "pd", label: dn, group: TURNOUT_LABEL, color: "var(--party-dem)", sortValue: (r) => projUnits.get(r.id)?.d ?? null, render: (r) => num(projUnits.get(r.id)?.d, (x) => fmtInt(x), () => "var(--party-dem)"), hideOnMobile: true });
+      cols.push({ key: "pr", label: rn, group: TURNOUT_LABEL, color: "var(--party-rep)", sortValue: (r) => projUnits.get(r.id)?.r ?? null, render: (r) => num(projUnits.get(r.id)?.r, (x) => fmtInt(x), () => "var(--party-rep)"), hideOnMobile: true });
       cols.push({ key: "pnet", label: "Net", group: TURNOUT_LABEL, sortValue: (r) => { const u = projUnits.get(r.id); return u ? u.r - u.d : null; }, render: (r) => { const u = projUnits.get(r.id); const v = u ? u.r - u.d : null; return num(v, (x) => `${x > 0 ? "R" : "D"}+${fmtInt(Math.abs(x))}`, (x) => (x > 0 ? "var(--party-rep)" : "var(--party-dem)")); } });
       return cols;
     }
@@ -614,7 +615,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
     <div>
       {/* Mode tabs + level / renderer */}
       <div className="flex flex-wrap items-end justify-between gap-x-5 gap-y-2" style={{ borderBottom: "1px solid var(--app-border)" }}>
-        <div className="flex min-w-0 items-end gap-5 overflow-x-auto pb-2.5 scrollbar-none">
+        <div className="flex min-w-0 flex-wrap items-end gap-x-5 gap-y-1 pb-2.5 md:flex-nowrap md:overflow-x-auto scrollbar-none">
           {modes.map((m) => (
             <button
               key={m.id}

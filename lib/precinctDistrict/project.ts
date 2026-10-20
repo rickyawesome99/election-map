@@ -8,36 +8,37 @@
 //
 //   1. Neutral margin per race-year   NM = raw + incumbency strip − β*(state) × E(year) − money
 //      Statewide races always; House / State House rows only in years the footprint was one
-//      race (a patchwork of districts is not a race). The money strip applies to rows whose
-//      nominees' receipts are in finance.json (State House), using the state money calibration.
+//      race (a patchwork of districts is not a race). State House rows are stripped of the state
+//      legislature model's fitted INCUMBENCY_PTS. The money strip applies to rows whose
+//      nominees' receipts are in finance.json (State House).
 //   2. Lean                           year means by RACE_TYPE_WEIGHTS (renormalized over the
-//      types present), years by YEAR_WEIGHTS, two-pass Huber (HUBER_C) on race residuals.
+//      types present), except that State House rows carry the state legislature model's seat
+//      weight (TYPE_WEIGHTS.L, × RECENT_SEAT_BOOST in the latest year with one) so the seat's own
+//      results pull the lean as they do there; years by YEAR_WEIGHTS, two-pass Huber (HUBER_C)
+//      on race residuals. No separate down-ballot term: the seat rows carry it.
 //   3. Environment                    + β* × E(2026), the live national environment estimate.
 //   4. Seat                           open seat → no incumbency term.
-//   5. Down-ballot gap                mean of (State House NM − same-year top-of-ticket NM) over
-//      the single-race State House years, shrunk n / (n + GAP_SHRINK_K).
-//   6. Money                          clamp(K × (scale × gap% − structural gap%), ±CAP), gap% = the
-//      nominees' receipts gap to date, scale = PARTIAL_CYCLE_GAP_SCALE.H (receipts are mid-cycle),
-//      structural gap% = a + b × incSign + c × latest presidential margin — K, CAP, a, b, c from
-//      data/precinct-districts/money/<ST>.json (scripts/fitStateLegMoney.ts). Off without both files.
-//   Result                            margin ± σ, σ² = (β* σ_E)² + (RACE_SIGMA[LEG_SIGMA_TIER] × LEG_SIGMA_MULTIPLIER)²
+//   5. Money                          clamp(K × (scale × gap% − structural gap%), ±CAP), gap% = the
+//      nominees' receipts gap to date; K, CAP and scale are the state legislature model's
+//      backtested MONEY_K, MONEY_CAP and PARTIAL_CYCLE_GAP_SCALE; structural gap% = a + b × incSign
+//      + c × latest presidential margin from the state's own fit, data/precinct-districts/money/<ST>.json
+//      (scripts/fitStateLegMoney.ts; its in-sample K is recorded there but not used). Off without both files.
+//   Result                            margin ± σ, σ² = (β* σ_E)² + STATE_SHOCK² + SIGMA², the state
+//      legislature model's fitted chamber shock and seat noise (lib/stateLegForecast.ts)
 //   Precincts                         baseline = BASELINE_PRES_WEIGHT × pres + (1 − w) × State
 //      House, latest year; every precinct moves by the district's projected shift (uniform).
 //   Turnout                           2026 ballots per precinct = mean of its midterm turnout rates
 //      (ballots ÷ registered, on today's lines) × today's registration; each midterm alone gives the range.
 
-import { TPL_GLOBAL_CONSTANTS as G, FORECAST_CONSTANTS as F } from "@/data/tplModelData";
+import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
 import { getTplFit, getNationalEnvironment, winProbabilityD } from "@/lib/tplCompute";
+import { STATE_LEG_FORECAST_CONSTANTS as L } from "@/lib/stateLegForecast";
 import type { MoneyCalibration, OfficeKey, PrecinctDistrictData, YearResults } from "./types";
 import { marginOf, sumOffice, topOfTicket } from "./aggregate";
 import { precinctRows, type ExplorerRow } from "./explorer";
 
 export const PROJECTION_CONSTANTS = {
   BASELINE_PRES_WEIGHT: 0.5,   // share of the precinct baseline taken from the presidential margin (rest: State House)
-  GAP_SHRINK_K: 1,             // down-ballot gap shrink n / (n + K)
-  LEG_INCUMBENCY_TIER: "H" as const,  // State House incumbency strip borrows the fitted House advantage
-  LEG_SIGMA_TIER: "H" as const,       // State House race noise starts from RACE_SIGMA.H …
-  LEG_SIGMA_MULTIPLIER: 1.5,          // … scaled up: legislative races carry more candidate-specific variance than congressional ones (see methodology)
   MARGIN_CLAMP: 95,            // projected precinct margins are kept inside ±95
 };
 
@@ -120,7 +121,8 @@ export interface DistrictProjection {
   years: ProjectionYear[];
   lean: number;
   envPts: number;
-  gap: { value: number; raw: number | null; n: number; shrink: number };
+  /** How the seat's own rows are weighted in the lean (the state legislature model's values). */
+  seatRows: { typeWeight: number; boost: number; latestYear: number | null };
   money: ProjectionMoney | null;   // null: no finance file or no state calibration
   margin: number;
   sigma: number;
@@ -130,7 +132,8 @@ export interface DistrictProjection {
   shift: number;
   turnout: TurnoutEstimate;
   precincts: ProjectedPrecinct[];
-  constants: typeof PROJECTION_CONSTANTS & { HUBER_C: number; RACE_SIGMA: number; incumbencyPts: number };
+  /** The designed constants above plus the values borrowed from the TPL fit and the state legislature model. */
+  constants: typeof PROJECTION_CONSTANTS & { HUBER_C: number; SEAT_SIGMA: number; STATE_SHOCK: number; incumbencyPts: number; MONEY_K: number; MONEY_CAP: number };
 }
 
 export function priceMoneyGap(cal: MoneyCalibration, d: number, r: number, incSign: number, presMargin: number, scale: number): MoneyGap {
@@ -151,11 +154,14 @@ function singleRace(yr: YearResults, office: OfficeKey): { d?: string; r?: strin
 }
 
 export function projectDistrict(data: PrecinctDistrictData): DistrictProjection {
-  const { config, results, finance, moneyCalibration: cal } = data;
+  const { config, results, finance } = data;
   const fit = getTplFit();
   const env = getNationalEnvironment();
   const beta = fit.beta[config.state]?.shrunk ?? 1;
-  const incH = fit.incumbency[PROJECTION_CONSTANTS.LEG_INCUMBENCY_TIER] ?? 0;
+  // State House rows: the state legislature model's fitted incumbency advantage (the TPL fit has no
+  // state-legislative tier). Money: its backtested K and cap over the state's own typical-gap fit.
+  const incH = L.INCUMBENCY_PTS;
+  const cal: MoneyCalibration | null = data.moneyCalibration ? { ...data.moneyCalibration, K: L.MONEY_K, CAP: L.MONEY_CAP } : null;
   const years = [...config.years].sort((a, b) => a - b);
 
   // rows on today's lines, one footprint for every year
@@ -203,7 +209,10 @@ export function projectDistrict(data: PrecinctDistrictData): DistrictProjection 
     r.NM -= r.moneyPts;
   }
 
-  // 2. lean: type-weighted year means, recency-weighted years, two-pass Huber
+  // 2. lean: type-weighted year means, recency-weighted years, two-pass Huber. State House rows
+  // take the legislature model's seat weight, boosted in the latest year that has one.
+  const latestL = Math.max(-1, ...rows.filter((r) => r.raceType === "L" && r.included).map((r) => r.year));
+  const typeWeight = (y: number, t: string): number => (t === "L" ? L.TYPE_WEIGHTS.L * (y === latestL ? L.RECENT_SEAT_BOOST : 1) : (G.RACE_TYPE_WEIGHTS[t] ?? 0));
   const aggregate = (): { lean: number; years: ProjectionYear[] } => {
     const out: ProjectionYear[] = [];
     let num = 0, den = 0;
@@ -217,8 +226,8 @@ export function projectDistrict(data: PrecinctDistrictData): DistrictProjection 
         const w = tr.reduce((s, r) => s + r.huber, 0);
         typeNM[t] = w > 0 ? tr.reduce((s, r) => s + r.huber * r.NM, 0) / w : 0;
       }
-      const coverage = types.reduce((s, t) => s + (G.RACE_TYPE_WEIGHTS[t] ?? 0), 0);
-      const yearNM = types.reduce((s, t) => s + (G.RACE_TYPE_WEIGHTS[t] ?? 0) * typeNM[t], 0) / (coverage || 1);
+      const coverage = types.reduce((s, t) => s + typeWeight(y, t), 0);
+      const yearNM = types.reduce((s, t) => s + typeWeight(y, t) * typeNM[t], 0) / (coverage || 1);
       const weight = (G.YEAR_WEIGHTS[y] ?? 0) * coverage;
       out.push({ year: y, recency: G.YEAR_WEIGHTS[y] ?? 0, coverage, weight, NM: yearNM, types });
       num += weight * yearNM; den += weight;
@@ -238,36 +247,26 @@ export function projectDistrict(data: PrecinctDistrictData): DistrictProjection 
     if (!r.included) continue;
     const ya = yearAggs.find((y) => y.year === r.year)!;
     const sameType = rows.filter((x) => x.included && x.year === r.year && x.raceType === r.raceType);
-    const typeShare = (G.RACE_TYPE_WEIGHTS[r.raceType] ?? 0) / (ya.coverage || 1);
+    const typeShare = typeWeight(r.year, r.raceType) / (ya.coverage || 1);
     const within = r.huber / sameType.reduce((s, x) => s + x.huber, 0);
     r.weight = ya.weight * typeShare * within;
   }
 
-  // 3–5. forward terms
+  // 3–4. forward terms
   const envPts = beta * env.eHat;
-  const gapYears = rows.filter((r) => r.raceType === "L" && r.included);
-  const gaps: number[] = [];
-  for (const g of gapYears) {
-    const yr = results.years[String(g.year)];
-    const top = topOfTicket(yr);
-    const topRow = top ? rows.find((r) => r.year === g.year && r.office === top) : null;
-    if (topRow) gaps.push(g.NM - topRow.NM);
-  }
-  const gapRaw = gaps.length ? gaps.reduce((s, v) => s + v, 0) / gaps.length : null;
-  const shrink = gaps.length / (gaps.length + PROJECTION_CONSTANTS.GAP_SHRINK_K);
-  const gap = gapRaw != null ? gapRaw * shrink : 0;
-  // 6. money: the nominees' receipts to date
+  // 5. money: the nominees' receipts to date
   let money: ProjectionMoney | null = null;
   const f26 = finance?.["2026"];
   const latestPres = presRaw(Math.max(...years));
   if (cal && f26 && f26.d.receipts + f26.r.receipts > 0 && latestPres != null) {
     const holder = config.election2026?.status === "open" ? null : config.election2026?.seatHolder?.party ?? null;
     const incSign = holder === "R" ? 1 : holder === "D" ? -1 : 0;
-    money = { ...priceMoneyGap(cal, f26.d.receipts, f26.r.receipts, incSign, latestPres, F.PARTIAL_CYCLE_GAP_SCALE.H), through: f26.through, nextReport: f26.nextReport, calibration: cal };
+    money = { ...priceMoneyGap(cal, f26.d.receipts, f26.r.receipts, incSign, latestPres, L.PARTIAL_CYCLE_GAP_SCALE), through: f26.through, nextReport: f26.nextReport, calibration: cal };
   }
-  const margin = lean + envPts + gap + (money?.pts ?? 0);
-  const raceSigma = F.RACE_SIGMA[PROJECTION_CONSTANTS.LEG_SIGMA_TIER] * PROJECTION_CONSTANTS.LEG_SIGMA_MULTIPLIER;
-  const sigma = Math.sqrt((beta * env.sigmaE) ** 2 + raceSigma ** 2);
+  const margin = lean + envPts + (money?.pts ?? 0);
+  // σ: the national environment's uncertainty through β*, plus the state legislature model's fitted
+  // chamber shock and seat noise (a single seat sees both as noise).
+  const sigma = Math.sqrt((beta * env.sigmaE) ** 2 + L.STATE_SHOCK ** 2 + L.SIGMA ** 2);
   const pD = winProbabilityD(margin, sigma);
 
   // precinct baseline and uniform shift
@@ -335,10 +334,10 @@ export function projectDistrict(data: PrecinctDistrictData): DistrictProjection 
     asOf: new Date().toISOString().slice(0, 10),
     stateAbbr: config.state, beta, eHat: env.eHat, sigmaE: env.sigmaE,
     rows, years: yearAggs, lean, envPts,
-    gap: { value: gap, raw: gapRaw, n: gaps.length, shrink },
+    seatRows: { typeWeight: L.TYPE_WEIGHTS.L, boost: L.RECENT_SEAT_BOOST, latestYear: latestL > 0 ? latestL : null },
     money, margin, sigma, pD, interval80: [margin - 1.28 * sigma, margin + 1.28 * sigma],
     baseline: { year: latestYear, sthouse: distLeg, top: distTop, topOffice, blend: distBlend },
     shift, turnout, precincts,
-    constants: { ...PROJECTION_CONSTANTS, HUBER_C: G.HUBER_C, RACE_SIGMA: raceSigma, incumbencyPts: incH },
+    constants: { ...PROJECTION_CONSTANTS, HUBER_C: G.HUBER_C, SEAT_SIGMA: L.SIGMA, STATE_SHOCK: L.STATE_SHOCK, incumbencyPts: incH, MONEY_K: L.MONEY_K, MONEY_CAP: L.MONEY_CAP },
   };
 }

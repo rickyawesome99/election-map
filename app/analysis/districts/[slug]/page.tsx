@@ -18,6 +18,7 @@ import { projectDistrict as projectLegDistrict, STATE_LEG_FORECAST_CONSTANTS } f
 import { stateLegDistricts } from "@/data/stateLegDistricts";
 import { districtHash } from "@/lib/stateLegAtlas";
 import { LedgerSectionHead } from "@/components/RaceDetailSections";
+import PollsterSectionTabs from "@/components/PollsterSectionTabs";
 
 export async function generateStaticParams() {
   return precinctDistrictSlugs().map((slug) => ({ slug }));
@@ -99,39 +100,49 @@ export default async function PrecinctDistrictPage({ params }: { params: Promise
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <DistrictHeader config={config} stats={stats} />
       <main className="mx-auto max-w-7xl px-4 pb-12 pt-7 sm:px-6 sm:pt-8">
-        <section id="outlook" className="scroll-mt-24">
-          <LedgerSectionHead label={`${electionYear} outlook`} />
-          <Outlook config={config} p={projection} statewide={statewide} finance={data.finance} />
-        </section>
-
-        <section id="models" className="mt-12 scroll-mt-24">
-          <LedgerSectionHead label="Two models, one seat" meta="this page's precinct projection against the site's state legislature model" />
-          <ModelComparison config={config} p={projection} leg={leg} />
-        </section>
-
-        <section id="targets" className="mt-12 scroll-mt-24">
-          <LedgerSectionHead label="Door-knocking targets" meta={`every precinct ranked by net votes available to ${config.election2026?.candidates?.r?.name ?? "the Republican"}`} />
-          <TargetList list={targets} rName={config.election2026?.candidates?.r?.name?.split(" ").pop() ?? "the Republican"} districtName={config.shortName} />
-        </section>
-
-        <section id="explorer" className="mt-12 scroll-mt-24">
-          <LedgerSectionHead label="Precinct explorer" />
-          <PrecinctExplorer data={data} projection={projection} />
-        </section>
-
-        <section id="trends" className="mt-12 scroll-mt-24">
-          <LedgerSectionHead label="Trends" meta="two-party margin by year, as counted" />
-          <Trends data={data} />
-        </section>
-
-        <section id="demographics" className="mt-12 scroll-mt-24">
-          <LedgerSectionHead label="Demographics and the vote" meta="every precinct, one census metric against one result" />
-          <DemoScatter data={data} />
-        </section>
-
-        <div className="mt-12">
-          <DataNotes data={data} />
-        </div>
+        <PollsterSectionTabs ariaLabel="District page sections" tabs={[
+          {
+            key: "explorer", label: "Precinct Explorer", meta: "results, swings, demographics, targeting and the 2026 projection, precinct by precinct",
+            content: <section id="explorer-panel"><PrecinctExplorer data={data} projection={projection} /></section>,
+          },
+          {
+            key: "trends", label: "Data Trends", meta: "how the district and its areas have voted, and what the census says about each precinct",
+            content: (
+              <>
+                <section id="trends" className="scroll-mt-24">
+                  <LedgerSectionHead label="Trends" meta="two-party margin by year, as counted" />
+                  <Trends data={data} />
+                </section>
+                <section id="demographics" className="mt-12 scroll-mt-24">
+                  <LedgerSectionHead label="Demographics and the vote" meta="every precinct, one census metric against one result" />
+                  <DemoScatter data={data} />
+                </section>
+                <div className="mt-12">
+                  <DataNotes data={data} />
+                </div>
+              </>
+            ),
+          },
+          {
+            key: "model", label: `${electionYear} Model`, meta: "the projected margin, how it is built, and the state legislature model's view of the same seat",
+            content: (
+              <>
+                <section id="outlook" className="scroll-mt-24">
+                  <LedgerSectionHead label={`${electionYear} outlook`} />
+                  <Outlook config={config} p={projection} statewide={statewide} finance={data.finance} />
+                </section>
+                <section id="models" className="mt-12 scroll-mt-24">
+                  <LedgerSectionHead label="Two models, one seat" meta="this page's precinct projection against the site's state legislature model" />
+                  <ModelComparison config={config} p={projection} leg={leg} />
+                </section>
+              </>
+            ),
+          },
+          {
+            key: "targets", label: "Door Knocking Targets", meta: `every precinct ranked by net votes available to ${config.election2026?.candidates?.r?.name ?? "the Republican"}`,
+            content: <section id="targets-panel"><TargetList list={targets} rName={config.election2026?.candidates?.r?.name?.split(" ").pop() ?? "the Republican"} districtName={config.shortName} /></section>,
+          },
+        ]} />
       </main>
     </div>
   );

@@ -17,7 +17,7 @@ test("the sitemap lists race, past-election, candidate and county pages, and no 
   expect(paths.length).toBeGreaterThan(9000);
   const legXml = await (await request.get("/sitemap/1.xml")).text();
   expect(legXml).toContain("/candidates/bill-roemer-oh");
-  for (const p of ["/about", "/senate/ga", "/senate/me2", "/house/oh-09", "/governor/oh", "/house/oh-09/2024", "/president/pa/2024", "/methodology/sources"]) expect(paths).toContain(p);
+  for (const p of ["/about", "/senate/ga", "/senate/me2", "/house/oh-09", "/governor/oh", "/house/oh-09/2024", "/president/pa/2024", "/sources"]) expect(paths).toContain(p);
   expect(paths.some((p) => p.startsWith("/candidates/"))).toBe(true);
   expect(paths.some((p) => p.startsWith("/historical/"))).toBe(true);
   for (const p of ["/states", "/analysis/oh-31"]) expect(paths).not.toContain(p);

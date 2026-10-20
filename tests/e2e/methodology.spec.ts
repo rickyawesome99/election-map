@@ -12,9 +12,8 @@ const TABS: [string, string, string][] = [
   ["WAR", "/methodology/war", "How much better than a generic nominee"],
   ["Legislative atlas", "/methodology/state-leg", "One page per chamber, one record per district"],
   ["Change Log", "/methodology/changelog", "Change log"],
-  ["Sources", "/methodology/sources", "Where every number comes from"],
 ];
-const NO_HISTORY = new Set(["Change Log", "Sources"]);
+const NO_HISTORY = new Set(["Change Log"]);
 
 test("methodology is reached from the footer, not the top navigation", async ({ page }) => {
   await page.goto("/overview");
@@ -56,10 +55,15 @@ test("calibration tables are populated from the backtest", async ({ page }) => {
   expect(await cal.locator("tbody tr").count()).toBeGreaterThan(25);
 });
 
-test("sources tab sits after the change log and links out to its publishers", async ({ page }) => {
-  await page.goto("/methodology/sources");
+test("sources is its own page, reached from the footer, and links out to its publishers", async ({ page }) => {
+  await page.goto("/methodology");
   const labels = await page.getByRole("navigation", { name: "Models" }).getByRole("link").allTextContents();
-  expect(labels.slice(-2)).toEqual(["Change Log", "Sources"]);
+  expect(labels.at(-1)).toBe("Change Log");
+  expect(labels).not.toContain("Sources");
+  await page.locator("footer").getByRole("link", { name: "Sources", exact: true }).click();
+  await expect(page).toHaveURL(/\/sources$/);
+  await expect(page.getByRole("heading", { name: "Sources", level: 1 })).toBeVisible({ timeout: 20_000 });
+  await expect(page.getByRole("heading", { name: "Where every number comes from", level: 2 })).toBeVisible();
   for (const name of ["Federal Election Commission — bulk data", "Dave's Redistricting App — VTD election data", "OpenElections", "Wikipedia election articles"]) {
     await expect(page.getByRole("link", { name, exact: true }).first()).toHaveAttribute("href", /^https:\/\//);
   }

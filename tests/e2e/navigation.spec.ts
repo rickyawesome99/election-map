@@ -21,7 +21,7 @@ async function selectFirstInteractiveMapFeature(page: import("@playwright/test")
 
     for (const [xRatio, yRatio] of [[0.5, 0.5], [0.25, 0.5], [0.75, 0.5], [0.5, 0.25], [0.5, 0.75]]) {
       await tapOrClick(box.x + box.width * xRatio, box.y + box.height * yRatio);
-      const moreInfo = page.getByRole("link", { name: "More Info" });
+      const moreInfo = page.getByRole("link", { name: "Race page →" });
       try {
         await expect(moreInfo.first()).toBeVisible({ timeout: 250 });
         return;
@@ -43,7 +43,7 @@ test("top-level tabs keep the URL and visible page in sync", async ({ page }) =>
 
   await page.getByRole("link", { name: "TPL" }).click();
   await expect(page).toHaveURL(/\/model$/);
-  await expect(page.getByRole("button", { name: "State TPL" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "True Partisan Lean", level: 1 })).toBeVisible();
 
   await page.getByRole("link", { name: "Forecast", exact: true }).click();
   await expect(page).toHaveURL(/\/senate$/);
@@ -66,12 +66,12 @@ test("forecast tab returns to the last selected chamber after visiting analysis"
   await expect(page.getByRole("heading", { name: "Governors" })).toBeVisible();
 });
 
-test("forecast map selection exposes a working more-info link", async ({ page }, testInfo) => {
+test("forecast map selection exposes a working race-page link", async ({ page }, testInfo) => {
   await page.goto("/senate");
   await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
   await selectFirstInteractiveMapFeature(page, testInfo.project.name);
 
-  const moreInfo = page.getByRole("link", { name: "More Info" }).first();
+  const moreInfo = page.getByRole("link", { name: "Race page →" }).first();
   await expect(moreInfo).toBeVisible();
   await expect(moreInfo).toHaveAttribute("href", /^\/senate\/[a-z]{2}\d?$/);
 });
@@ -98,7 +98,7 @@ test("forecast buttons remount a clickable map", async ({ page }, testInfo) => {
   await expect(page).toHaveURL(/\/senate$/);
   await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
   await selectFirstInteractiveMapFeature(page, testInfo.project.name);
-  await expect(page.getByRole("link", { name: "More Info" }).first()).toBeVisible();
+  await expect(page.getByRole("link", { name: "Race page →" }).first()).toBeVisible();
 });
 
 test("analysis links render on the first click", async ({ page }) => {

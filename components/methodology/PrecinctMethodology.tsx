@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { TPL_GLOBAL_CONSTANTS as G, FORECAST_CONSTANTS as F } from "@/data/tplModelData";
+import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
 import { getTplFit, getNationalEnvironment, getWarMoneyModel } from "@/lib/tplCompute";
 import { getPrecinctDistrict, precinctDistrictSlugs } from "@/lib/precinctDistrict/registry";
 import { projectDistrict, PROJECTION_CONSTANTS } from "@/lib/precinctDistrict/project";
@@ -7,9 +7,8 @@ import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Led
 
 // Every PROJECTION_CONSTANTS key and where it is documented on this tab.
 const DOCUMENTED_IN = {
-  BASELINE_PRES_WEIGHT: "precinct-district#precincts", GAP_SHRINK_K: "precinct-district#outlook",
-  LEG_INCUMBENCY_TIER: "precinct-district#outlook", LEG_SIGMA_TIER: "precinct-district#outlook",
-  LEG_SIGMA_MULTIPLIER: "precinct-district#outlook", MARGIN_CLAMP: "precinct-district#precincts",
+  BASELINE_PRES_WEIGHT: "precinct-district#precincts",
+  MARGIN_CLAMP: "precinct-district#precincts",
 } satisfies Record<keyof typeof PROJECTION_CONSTANTS, string>;
 void DOCUMENTED_IN;
 
@@ -22,10 +21,6 @@ export default function PrecinctMethodology() {
 
   const constants: ConstantRow[] = [
     { name: "BASELINE_PRES_WEIGHT", value: PROJECTION_CONSTANTS.BASELINE_PRES_WEIGHT, meaning: "Share of a precinct's baseline taken from its latest presidential margin; the rest is its latest State House margin.", basis: "designed" },
-    { name: "GAP_SHRINK_K", value: PROJECTION_CONSTANTS.GAP_SHRINK_K, meaning: <>Down-ballot gap shrink n / (n + K): one observed year counts half, three count three-quarters.</>, basis: "designed" },
-    { name: "LEG_INCUMBENCY_TIER", value: PROJECTION_CONSTANTS.LEG_INCUMBENCY_TIER, meaning: <>State House rows are stripped of the fitted <em>House</em> incumbency advantage (<N>{(fit.incumbency.H ?? 0).toFixed(1)}</N> pts); the TPL fit has no state-legislative incumbency term.</>, basis: "designed" },
-    { name: "LEG_SIGMA_TIER", value: PROJECTION_CONSTANTS.LEG_SIGMA_TIER, meaning: <>Race noise starts from RACE_SIGMA.H (<N>{F.RACE_SIGMA.H}</N>).</>, basis: "designed" },
-    { name: "LEG_SIGMA_MULTIPLIER", value: PROJECTION_CONSTANTS.LEG_SIGMA_MULTIPLIER, meaning: <>Scales that noise up for a state legislative race. In OH-31 the State House column has sat a standard deviation of about 7 points from the same-year top of the ticket (2016–2024), against the ~{F.RACE_SIGMA.H} the site fits for congressional races, so the multiplier is set at 1.5 pending a fitted value from state-legislative track records.</>, basis: "designed" },
     { name: "MARGIN_CLAMP", value: `±${PROJECTION_CONSTANTS.MARGIN_CLAMP}`, meaning: "Projected precinct margins are kept inside this range.", basis: "fixed" },
   ];
 
@@ -33,7 +28,6 @@ export default function PrecinctMethodology() {
     { label: "Structural lean", note: `${p.rows.filter((r) => r.included).length} race-years`, value: <M v={p.lean} /> },
     { op: "+", label: "2026 environment", note: `β* ${p.beta.toFixed(2)} × E(2026) ${signed(p.eHat)}`, value: <M v={p.envPts} /> },
     { op: "+", label: "Incumbency", note: "open seat", value: <M v={0} /> },
-    { op: "+", label: "Down-ballot gap", note: p.gap.raw == null ? "no single-race State House year" : `${signed(p.gap.raw)} over ${p.gap.n} yr × ${p.gap.shrink.toFixed(2)}`, value: <M v={p.gap.value} /> },
     ...(p.money ? [{ op: "+" as const, label: "Campaign money", note: `gap ${signed(p.money.gapPct)}% × ${p.money.scale} − typical ${signed(p.money.structuralGapPct)}% → × K ${p.money.calibration.K}${Math.abs(p.money.pts) >= p.money.calibration.CAP ? `, cap ±${p.money.calibration.CAP}` : ""}`, value: <M v={p.money.pts} /> }] : []),
     { op: "=", label: "Projected margin", note: `σ ${p.sigma.toFixed(1)} · P(D) ${pct(p.pD)}`, value: <M v={p.margin} />, total: true },
   ];
@@ -93,12 +87,12 @@ export default function PrecinctMethodology() {
             note={<>Statewide races always enter. A House or State House year enters only when the footprint was a single race; when it summed several districts (different candidates, some uncontested) it is excluded. The money strip applies only to races whose nominees&apos; receipts are in finance.json (priced as in Campaign money below, full-cycle, on the nearest presidential margin at or before that year); every other row carries none. β* and E(year) are read from <Link href="/methodology/state-tpl" className="underline">the State TPL fit</Link>.</>} />
         </Block>
         <Block label="Lean">
-          <Formula lines={["year NM   = Σ_type RACE_TYPE_WEIGHTS[type] × mean NM of that type  /  coverage", "coverage  = Σ RACE_TYPE_WEIGHTS over the types present that year", "lean      = Σ_year YEAR_WEIGHTS[year] × coverage × year NM  /  Σ_year YEAR_WEIGHTS[year] × coverage", "Huber     = min(1, HUBER_C / |NM − lean₀|) per race, second pass"]}
-            note={<>Same constants as the state model: RACE_TYPE_WEIGHTS P {G.RACE_TYPE_WEIGHTS.P} · S {G.RACE_TYPE_WEIGHTS.S} · H {G.RACE_TYPE_WEIGHTS.H} · L {G.RACE_TYPE_WEIGHTS.L} · G {G.RACE_TYPE_WEIGHTS.G}; YEAR_WEIGHTS decay {G.YEAR_WEIGHTS[2024].toFixed(3)} (2024) → {G.YEAR_WEIGHTS[2016].toFixed(3)} (2016); HUBER_C {G.HUBER_C}.</>} />
+          <Formula lines={["year NM   = Σ_type w[type] × mean NM of that type  /  coverage", "w[type]   = RACE_TYPE_WEIGHTS[type], except State House = TYPE_WEIGHTS.L (× RECENT_SEAT_BOOST in the latest State House year)", "coverage  = Σ w over the types present that year", "lean      = Σ_year YEAR_WEIGHTS[year] × coverage × year NM  /  Σ_year YEAR_WEIGHTS[year] × coverage", "Huber     = min(1, HUBER_C / |NM − lean₀|) per race, second pass"]}
+            note={<>Statewide and U.S. House rows take the state model&apos;s RACE_TYPE_WEIGHTS: P {G.RACE_TYPE_WEIGHTS.P} · S {G.RACE_TYPE_WEIGHTS.S} · H {G.RACE_TYPE_WEIGHTS.H} · G {G.RACE_TYPE_WEIGHTS.G}. State House rows take the <Link href="/methodology/state-leg" className="underline">state legislature model&apos;s</Link> seat weight, TYPE_WEIGHTS.L {ex.p.seatRows.typeWeight} × RECENT_SEAT_BOOST {ex.p.seatRows.boost} in the latest year with a single-race State House row (so that year&apos;s seat row carries as much of its year as the presidential row), rather than the TPL&apos;s L {G.RACE_TYPE_WEIGHTS.L}: the seat&apos;s own results are what the two projections share, and weighting them alike is what lets the pages be compared term by term. Until 2026-10-20 the seat rows carried the TPL weight and a separate down-ballot gap term (mean State House NM − same-year top-of-ticket NM, shrunk n/(n+1)) added back what that weight left out; the seat rows now carry it directly. YEAR_WEIGHTS decay {G.YEAR_WEIGHTS[2024].toFixed(3)} (2024) → {G.YEAR_WEIGHTS[2016].toFixed(3)} (2016); HUBER_C {G.HUBER_C}.</>} />
         </Block>
         <Block label="Projection">
-          <Formula lines={["margin = lean + β* × E(2026) + incumbency + down-ballot gap + campaign money", "gap    = mean over single-race State House years of (State House NM − same-year top-of-ticket NM) × n / (n + GAP_SHRINK_K)", "σ²     = (β* × σ_E)² + (RACE_SIGMA[LEG_SIGMA_TIER] × LEG_SIGMA_MULTIPLIER)²", "P(D)   = Φ(−margin / σ)"]}
-            note={<>E(2026) is the live national environment estimate, {signed(env.eHat)} with σ_E {env.sigmaE.toFixed(2)} today (<Link href="/methodology" className="underline">Forecast → environment</Link>). An open seat carries no incumbency term. The gap captures a district&apos;s habit of voting differently for the legislature than for the top of the ticket, net of the incumbency already stripped.</>} />
+          <Formula lines={["margin = lean + β* × E(2026) + incumbency + campaign money", "σ²     = (β* × σ_E)² + STATE_SHOCK² + SIGMA²          the state legislature model's chamber shock and seat noise", "P(D)   = Φ(−margin / σ)"]}
+            note={<>E(2026) is the live national environment estimate, {signed(env.eHat)} with σ_E {env.sigmaE.toFixed(2)} today (<Link href="/methodology" className="underline">Forecast → environment</Link>). An open seat carries no incumbency term; an incumbent on the ballot adds the state legislature model&apos;s INCUMBENCY_PTS. A single seat sees the chamber shock as noise, so σ carries both fitted terms.</>} />
           {examples.map(({ slug, data, p }) => (
             <div key={slug}>
               <div className="mb-1 text-xs font-semibold" style={{ color: "var(--app-text-primary)" }}>{data.config.shortName} today</div>
@@ -113,13 +107,13 @@ export default function PrecinctMethodology() {
               <Formula lines={[
                 "gap%          = (R$ − D$) / (R$ + D$) × 100          gross receipts: cash + in-kind, net of refunds",
                 "typical gap%  = a + b × incSign + c × presidential margin",
-                "money         = clamp(K × (scale × gap% − typical gap%), ±CAP)",
-                "scale         = PARTIAL_CYCLE_GAP_SCALE.H for receipts mid-cycle; 1 for a finished cycle",
+                "money         = clamp(MONEY_K × (scale × gap% − typical gap%), ±MONEY_CAP)          K and cap from the state legislature model",
+                "scale         = PARTIAL_CYCLE_GAP_SCALE for receipts mid-cycle; 1 for a finished cycle",
               ]}
-                note={<>The site&apos;s residual money basis (<Link href="/methodology" className="underline">Forecast → money</Link>), re-fitted on the state&apos;s own legislative races, because state House money behaves differently from congressional money: in {cal.state} an incumbent&apos;s typical edge is {cal.structural.incSign.toFixed(0)} points of gap against {(getWarMoneyModel().H?.incSign ?? 0).toFixed(0)} for U.S. House. Only the edge beyond what a generic pair in the seat raises is information; the typical part is already in the lean and the incumbency term. The fit uses the one year with both a presidential result by legislative district and receipts ({cal.fitYear}): {cal.n} contested D-vs-R races, margin = α + β × pres + γ × incSign + K × residual gap. K = {cal.kOls.toFixed(3)} ± {cal.kSe.toFixed(3)}, rounded to {cal.K}; error {cal.rmse.noMoney.toFixed(2)} → {cal.rmse.withMoney.toFixed(2)} points. CAP = {cal.CAP}, the congressional House cap, keeps one year of evidence from moving a race more than that. The partial-cycle scale ({ex.p.money.scale}) is borrowed from U.S. House: no per-report history of state receipts is on file. Receipts are an in-sample, end-of-cycle measure in the fit, so some of K is money following races that already looked winnable.</>} />
+                note={<>The site&apos;s residual money basis (<Link href="/methodology" className="underline">Forecast → money</Link>), re-fitted on the state&apos;s own legislative races, because state House money behaves differently from congressional money: in {cal.state} an incumbent&apos;s typical edge is {cal.structural.incSign.toFixed(0)} points of gap against {(getWarMoneyModel().H?.incSign ?? 0).toFixed(0)} for U.S. House. Only the edge beyond what a generic pair in the seat raises is information; the typical part is already in the lean and the incumbency term. The fit uses the one year with both a presidential result by legislative district and receipts ({cal.fitYear}): {cal.n} contested D-vs-R races, margin = α + β × pres + γ × incSign + K × residual gap. Only the typical gap (a, b, c) is taken from it. Its own K, {ex.data.moneyCalibration!.kOls.toFixed(3)} ± {ex.data.moneyCalibration!.kSe.toFixed(3)} (error {ex.data.moneyCalibration!.rmse.noMoney.toFixed(2)} → {ex.data.moneyCalibration!.rmse.withMoney.toFixed(2)} points), is in-sample on a single end-of-cycle year, where some of K is money following races that already looked winnable; the page prices the residual gap at the state legislature model&apos;s MONEY_K {cal.K} and MONEY_CAP {cal.CAP} instead, swept out of sample on two holdout years across every chamber, where larger caps over-predicted. The partial-cycle scale ({ex.p.money.scale}) is the same model&apos;s: no per-report history of state receipts is on file.</>} />
               <DataTable head={["K", ...cal.looGrid.map((g) => g.k.toFixed(2))]} align={"l" + "r".repeat(cal.looGrid.length)}
                 rows={[["Leave-one-out MAE", ...cal.looGrid.map((g) => g.looMae.toFixed(2))]]}
-                caption={`${cal.state} House ${cal.fitYear}, cap applied, typical-gap model and baseline refitted without each held-out race. Read live from data/precinct-districts/money/${cal.state}.json.`} />
+                caption={`${cal.state} House ${cal.fitYear}, the state fit's own cap applied, typical-gap model and baseline refitted without each held-out race. Read live from data/precinct-districts/money/${cal.state}.json; shown for the record, not used.`} />
               <DataTable head={["Typical gap", "a (intercept)", "b (incSign)", "c (pres margin)"]} align="lrrr"
                 rows={[[`${cal.state} House ${cal.fitYear}`, cal.structural.intercept.toFixed(1), cal.structural.incSign.toFixed(1), cal.structural.pres.toFixed(2)]]} />
             </Block>
@@ -127,6 +121,7 @@ export default function PrecinctMethodology() {
         })()}
         <Block label="Constants">
           <Constants rows={constants} />
+          <P>Four values are borrowed from the <Link href="/methodology/state-leg" className="underline">state legislature model</Link>, where they are fitted or swept on its 2022 and 2024 holdouts, rather than set here: INCUMBENCY_PTS <N>{ex.p.constants.incumbencyPts}</N> (stripped from State House rows; the TPL fit has no state-legislative tier), SIGMA <N>{ex.p.constants.SEAT_SIGMA}</N> and STATE_SHOCK <N>{ex.p.constants.STATE_SHOCK}</N> (seat noise and the chamber shock behind σ), and MONEY_K <N>{ex.p.constants.MONEY_K}</N> with MONEY_CAP <N>{ex.p.constants.MONEY_CAP}</N>. Until 2026-10-20 the page used the congressional House incumbency (<N>{(fit.incumbency.H ?? 0).toFixed(1)}</N>), RACE_SIGMA.H × 1.5 and the state money fit&apos;s own in-sample K and cap.</P>
         </Block>
       </Section>
 
@@ -154,7 +149,7 @@ export default function PrecinctMethodology() {
         <Block label="Door-knocking targets" meta="page → Door-knocking targets">
           <P>The same Priority ranking, as a list: every precinct on today&apos;s lines with its rank, net votes available, split-ticket and turnout votes, the latest State House and presidential margins, registration and the 2026 turnout estimate; sortable on every column, filterable by area, by Priority category and by a competitiveness band, with a CSV of whatever is on screen. Ranks are district-wide and do not change with a filter.</P>
           <Defs items={[
-            { term: "Competitiveness band", def: "Cut on the precinct's average two-party margin (2 × average R share − 100) at the site's likely / safe cut points: Safe R at R+15 or more, Lean R from R+5 to R+15, Swing within 5 points of even, Lean D from D+5 to D+15, Safe D at D+15 or more. A different lens from the Priority categories, which name the task (bank, turn out, persuade) rather than the lean, and whose cuts (58 / 52 / 48 / 42% R) do not coincide with the bands'." },
+            { term: "Competitiveness band (\"24 Pres\")", def: "Cut on the precinct's latest presidential margin, as counted, at the site's likely / safe cut points: Safe R at R+15 or more, Lean R from R+5 to R+15, Swing within 5 points of even, Lean D from D+5 to D+15, Safe D at D+15 or more. A different lens from the Priority categories, which name the task (bank, turn out, persuade) on the all-years average R share." },
             { term: "Band totals", def: "Precincts, 2026 estimated ballots (the turnout estimate's precinct ballots summed) and net votes available (Priority summed) in each band." },
           ]} />
         </Block>
@@ -162,7 +157,7 @@ export default function PrecinctMethodology() {
 
       <Section id="models" kicker="Comparison" title="Against the state legislature model"
         lede="Every precinct-district page shows its own projection beside the site's general state legislature projection for the same seat, term by term.">
-        <P>The two share the TPL fit (β*, incumbency, the 2026 environment) and the nominees&apos; receipts, and differ in what they read the lean from and how they price money. The legislature model (Methodology → State legislatures) weights the seat&apos;s own State House rows against presidential results alone, relocating pre-2022 rows through its redistricting crosswalk with a presidential correction; this page&apos;s lean adds every statewide race as counted in these precincts, each stripped of incumbency and environment, and carries a down-ballot gap term the legislature model has no need of. Money here uses the state&apos;s own fitted K and cap (above); the legislature model uses its nationally swept MONEY_K and MONEY_CAP. The section prints both ledgers and the gap between the margins; neither is adjusted toward the other.</P>
+        <P>The two share the TPL fit (β*, incumbency, the 2026 environment) and the nominees&apos; receipts, and differ in what they read the lean from and how they price money. The legislature model (Methodology → State legislatures) weights the seat&apos;s own State House rows against presidential results alone, relocating pre-2022 rows through its redistricting crosswalk with a presidential correction; this page&apos;s lean adds every statewide race as counted in these precincts, each stripped of incumbency and environment, with the State House rows at the legislature model&apos;s own seat weight. Since 2026-10-20 the two also share the legislature model&apos;s fitted incumbency, seat noise, chamber shock, money K and cap; what remains of this page&apos;s own is the statewide rows in the lean and the state-fitted typical money gap. The section prints both ledgers and the gap between the margins; neither is adjusted toward the other.</P>
       </Section>
     </>
   );

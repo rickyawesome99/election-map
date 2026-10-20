@@ -1,3 +1,4 @@
+import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import StateLegCoverageAuditTable from "@/components/StateLegCoverageAuditTable";
 import StateLegAggregateAuditTable from "@/components/StateLegAggregateAuditTable";
 import StateLegCalendarAuditTable from "@/components/StateLegCalendarAuditTable";
@@ -39,36 +40,13 @@ export default function StateLegResultsAuditPage() {
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: "linear-gradient(135deg, var(--app-tab-bg) 0%, var(--app-bg) 65%)" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-5">
-          <div className="flex items-center gap-3">
-            <span
-              className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0"
-              style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
-            >
-              INTERNAL
-            </span>
-            <h1
-              style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.75rem, 4vw, 2.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
-            >
-              State Legislative Results — Coverage &amp; Aggregation Audit
-            </h1>
-          </div>
-          <div className="mt-2 text-sm max-w-4xl" style={{ color: "var(--app-text-muted)" }}>
-            The standing scoreboard for the 2016&ndash;2025 state legislative results project. Section 1 checks the
-            statewide chamber-year figures in{" "}
-            <code style={{ color: "var(--app-text-secondary)" }}>data-entry/state_leg.csv</code> &mdash; whether every
-            field is filled, where it came from, and whether the row&rsquo;s own numbers agree with each other. Section 2
-            lays out each chamber&rsquo;s election calendar and the redistricting eras its results have to be read
-            against. Section 3 sums the per-district results in{" "}
-            <code style={{ color: "var(--app-text-secondary)" }}>data/stateLegResults.ts</code> and diffs each
-            chamber-year against that statewide row. All three re-read the built data on every page load, so they fill
-            in as sourcing lands. Temporary page, not linked from site navigation.
-          </div>
-        </div>
-      </div>
+      <StandfirstHeader kicker="Audit" title="State Legislative Results Audit">
+        The standing scoreboard for the {"2016\u20132025"} state legislative results: whether each of the{" "}
+        <Fig>{totalChamberYears.toLocaleString()}</Fig> statewide chamber-years is complete and agrees with itself, which map
+        era each chamber&rsquo;s results belong to, and whether the district results add up to the statewide figures.
+      </StandfirstHeader>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex flex-col gap-10">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-7 sm:pt-8 pb-6 flex flex-col gap-10">
         <section>
           <SectionHeading n={1} title="Coverage — statewide chamber-years">
             One row per chamber-year in scope (49 states &times; 2 chambers plus Nebraska&rsquo;s unicameral

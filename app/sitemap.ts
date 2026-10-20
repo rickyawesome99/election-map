@@ -69,6 +69,7 @@ export default async function sitemap({ id }: { id: number | string | Promise<nu
   add("/analysis/districts", await precinctDistrictPages(), "slug");
   add("/analysis/pollsters", await pollsterPages(), "slug");
   for (const m of methodologyPages()) paths.push(m.model.length ? `/methodology/${m.model[0]}` : "/methodology");
+  paths.push("/sources");
   // Built on request rather than ahead of time, but every one of them is a real page.
   for (const slug of getAllCandidateSlugs()) paths.push(`/candidates/${slug}`);
   for (const fips of Object.keys(countyPresidentialData)) paths.push(`/historical/${fips}`);

@@ -6,8 +6,10 @@ import { expect, test } from "@playwright/test";
 test("popular vote page shows the markers, the panels and the projection table", async ({ page }) => {
   await page.goto("/analysis/popular-vote");
   await expect(page.getByRole("heading", { name: "Popular Vote", level: 1 })).toBeVisible({ timeout: 20_000 });
-  await expect(page.getByText("Generic ballot average", { exact: true })).toBeVisible();
-  await expect(page.getByText("Gallup Q3 2026 party ID", { exact: true })).toBeVisible();
+  // the standfirst carries the live markers and the generic ballot
+  const standfirst = page.locator("header", { has: page.getByRole("heading", { level: 1 }) }).locator("p");
+  await expect(standfirst).toContainText(/Gallup’s Q3 2026 party ID is [DR]\+\d+\.\d/);
+  await expect(standfirst).toContainText(/the generic ballot average is [DR]\+\d+\.\d/);
 
   // Inputs: five complete elections plus 2026, with Gallup's Q3 2026 reading on the last row.
   const inputs = page.locator("table").first();

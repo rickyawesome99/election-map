@@ -26,6 +26,7 @@ import { useTopo } from "@/lib/useTopology";
 import { startPendingNav } from "@/lib/navPending";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_HERO_BG } from "@/lib/pageLayout";
+import { CategoryPill, STANDFIRST_TITLE_STYLE } from "./StandfirstHeader";
 
 // Each tab body is its own chunk, loaded only when that tab is the active one — the county
 // map and the district finder are the heaviest pieces of client
@@ -348,21 +349,9 @@ export default function ForecastMap({
 
         {/* ── States hero ── */}
         {activeTab === "states" && (
-          <div
-            className="-mx-3 -mt-1 px-3 pb-1 pt-3 sm:-mx-4 sm:px-4 md:-mx-6 md:px-6"
-            style={{
-              background: "linear-gradient(to bottom, transparent 0%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, var(--party-rep) 7%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 6%, var(--app-bg)) 100%)",
-            }}
-          >
-            <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-              Analysis
-            </div>
-            <h1
-              className="mt-1 text-2xl font-bold tracking-tight md:text-[1.65rem]"
-              style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}
-            >
-              Current Seat Delegation
-            </h1>
+          <div className="pb-4 pt-2">
+            <CategoryPill label="Seats" />
+            <h1 style={{ ...STANDFIRST_TITLE_STYLE, color: "var(--app-text-primary)" }}>Current Seat Delegation</h1>
           </div>
         )}
 

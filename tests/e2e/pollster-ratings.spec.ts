@@ -23,9 +23,8 @@ test("pollster ratings page lists graded pollsters and opens a record", async ({
 
   await ratings.getByRole("searchbox", { name: "Find a pollster" }).fill("Emerson");
   await expect(rows).toHaveCount(1);
-  await ratings.getByRole("button", { name: "Emerson College", exact: true }).click();
-  await expect(ratings.getByText("By cycle", { exact: true })).toBeVisible();
-  await expect(ratings.getByText("By region", { exact: true })).toBeVisible();
+  // a pollster's name opens its own page, where the by-cycle and by-region record lives
+  await expect(ratings.getByRole("link", { name: "Emerson College", exact: true })).toHaveAttribute("href", "/analysis/pollsters/emerson-college");
 
   // unrated pollsters only show outside the default scope
   await ratings.getByRole("searchbox", { name: "Find a pollster" }).fill("");
@@ -34,11 +33,18 @@ test("pollster ratings page lists graded pollsters and opens a record", async ({
   await expect(ratings.getByText("NR", { exact: true }).first()).toBeVisible();
 });
 
-test("pollster ratings page has the regional grid and this cycle's house effects", async ({ page }) => {
+test("pollster ratings page has the regional grid and this cycle's house effects", async ({ page }, testInfo) => {
   await page.goto("/analysis/pollsters");
   const regional = page.locator("section", { has: page.getByRole("heading", { name: "By Region" }) });
-  for (const region of ["National", "Northeast", "Rust Belt", "Sun Belt", "South", "Mountain", "Pacific"])
-    await expect(regional.getByRole("columnheader", { name: region, exact: true })).toBeVisible({ timeout: 20_000 });
+  const regions = ["National", "Northeast", "Rust Belt", "Sun Belt", "South", "Mountain", "Pacific"];
+  if (testInfo.project.name.includes("mobile")) {
+    // phones get one strip per pollster in place of the grid; tapping one opens its regions
+    await regional.locator("button[aria-expanded]").first().click({ timeout: 20_000 });
+    for (const region of regions) await expect(regional.getByRole("cell", { name: region, exact: true })).toBeVisible();
+  } else {
+    for (const region of regions)
+      await expect(regional.getByRole("columnheader", { name: region, exact: true })).toBeVisible({ timeout: 20_000 });
+  }
   const effects = page.getByRole("table", { name: /house effects by pollster/ }).getByRole("row");
   expect(await effects.count()).toBeGreaterThan(10);
   await expect(effects.first()).toContainText(/[DR]\+\d+\.\d|Even/);
@@ -50,21 +56,21 @@ test("analysis index links to the pollster ratings", async ({ page }) => {
   await expect(page).toHaveURL(/\/analysis\/pollsters$/);
 });
 
-test("race polls table shows the pollster grade and the house-effect adjustment", async ({ page }) => {
+test("race polls table shows the house-effect adjustment", async ({ page }) => {
+  // the Grade column came off race pages in v2.79: grades are not a weight, so they live on Pollster Ratings
   await page.goto("/senate/nh");
   const table = page.locator("table", { has: page.getByRole("columnheader", { name: "House effect" }) });
   await expect(table).toBeVisible({ timeout: 20_000 });
-  await expect(table.getByRole("columnheader", { name: "Grade" })).toBeVisible();
   await expect(table.getByRole("columnheader", { name: "Adjusted" })).toBeVisible();
-  await expect(table.locator("tbody tr").first().locator("td").nth(1)).toHaveText(/^(A\+|A|A-|B\+|B|B-|C\+|C|C-|D|F|NR)$/);
+  await expect(table.getByRole("columnheader", { name: "Grade" })).toHaveCount(0);
+  await expect(table.locator("tbody tr").first().locator("td").nth(7)).toHaveText(/^([DR]\+\d+\.\d|EVEN)$/);
 });
 
 test("a pollster's page lists every poll, filters by cycle, and links back from the ratings table", async ({ page }) => {
   await page.goto("/analysis/pollsters");
   const ratings = page.getByRole("tabpanel", { name: "Ratings" });
   await ratings.getByRole("searchbox", { name: "Find a pollster" }).fill("Emerson");
-  await ratings.getByRole("button", { name: "Emerson College", exact: true }).click();
-  await ratings.getByRole("link", { name: /Every Emerson College poll/ }).click();
+  await ratings.getByRole("link", { name: "Emerson College", exact: true }).click();
   await expect(page).toHaveURL(/\/analysis\/pollsters\/emerson-college$/);
   await expect(page.getByRole("heading", { name: "Emerson College", level: 1 })).toBeVisible({ timeout: 20_000 });
   await expect(page.getByText(/^Record · \d+% right$/)).toBeVisible();
@@ -74,11 +80,14 @@ test("a pollster's page lists every poll, filters by cycle, and links back from 
   await expect(how.getByText(/^score = weighted total ÷ \(weight \+ 12\) = /)).toBeVisible();
   await expect(how.getByRole("row", { name: /^Total/ })).toBeVisible();
 
-  const polls = page.locator("section", { has: page.getByRole("heading", { name: "Every Poll" }) });
+  // polls sit in two tabs: this cycle's (open by default) and the graded past ones
+  await expect(page.getByRole("tab", { name: "2026 Polls" })).toHaveAttribute("aria-selected", "true");
+  await page.getByRole("tab", { name: "Past Polls" }).click();
+  const polls = page.getByRole("tabpanel", { name: "Past Polls" });
   const rows = polls.locator("tbody tr");
   expect(await rows.count()).toBeGreaterThan(50);
   await polls.getByRole("combobox", { name: "Cycle" }).selectOption("2024");
-  await expect(rows.first().locator("td").first()).toHaveText("2024");
+  await expect(rows.first().locator("td").first()).toHaveText(/^2024 /);
   await expect(rows.first().locator("td").nth(5)).toHaveText(/^([DR]\+\d+\.\d|Even|\+\d+\.\d)$/);
 });
 
@@ -96,8 +105,8 @@ test("pollster ratings page has a Polls tab with this cycle's latest race polls"
   // the tab is linkable
   await page.goto("/analysis/pollsters#polls");
   await expect(page.getByRole("tab", { name: "Polls" })).toHaveAttribute("aria-selected", "true");
-  const link = panel.locator("tbody tr").first().getByRole("link").last();
-  await link.click();
+  // phones get a list in place of the table, so take the first visible pollster link
+  await panel.locator('a[href^="/analysis/pollsters/"]:visible').first().click();
   await expect(page).toHaveURL(/\/analysis\/pollsters\/[a-z0-9-]+$/);
 });
 
@@ -129,10 +138,11 @@ test("Polls tab race links go to the seat that is up this cycle", async ({ page,
   }
 });
 
-test("source links appear only in a pollster page's Every Poll table", async ({ page }) => {
+test("source links appear only in a pollster page's Past Polls table", async ({ page }) => {
   await page.goto("/analysis/pollsters/emerson-college");
-  const polls = page.locator("section", { has: page.getByRole("heading", { name: "Every Poll" }) });
-  await expect(polls.locator("tbody tr").first()).toBeVisible({ timeout: 20_000 });
+  await page.getByRole("tab", { name: "Past Polls" }).click({ timeout: 20_000 });
+  const polls = page.getByRole("tabpanel", { name: "Past Polls" });
+  await expect(polls.locator("tbody tr").first()).toBeAttached({ timeout: 20_000 });
   await polls.getByRole("combobox", { name: "Cycle" }).selectOption("2024");
   const links = polls.locator('tbody a[target="_blank"]');
   expect(await links.count()).toBeGreaterThan(50);

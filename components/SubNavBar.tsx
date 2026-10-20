@@ -181,7 +181,10 @@ export default function SubNavBar() {
 
   useEffect(() => { setPinned(false); }, [pathname]);
 
-  const open = atTop || pinned;
+  // While a page loads under its placeholder the bar comes down, as the new page lands at the
+  // top with it open, so the placeholder never shows a bare strip where the bar sits.
+  const loading = usePendingNav() !== null;
+  const open = atTop || pinned || loading;
   const toggle = () => {
     pinnedAt.current = window.scrollY;
     setPinned(!open);
@@ -202,7 +205,7 @@ export default function SubNavBar() {
     >
       <NavTabs variant="bar" />
     </div>
-      {!atTop && (
+      {!atTop && !loading && (
         <button
           type="button"
           onClick={toggle}

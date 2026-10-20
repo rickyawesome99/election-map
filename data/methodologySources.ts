@@ -1,4 +1,4 @@
-// Every external source behind the data on this site — the content of /methodology/sources.
+// Every external source behind the data on this site — the content of /sources.
 //
 // RULE: when a dataset is added, re-sourced or patched from somewhere new, add or amend the entry
 // here in the same change. `where` names the file or script the source lands in, so a number on

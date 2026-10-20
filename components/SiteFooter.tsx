@@ -5,7 +5,7 @@ import Link from "next/link";
 const LINKS = [
   { href: "/about", label: "About" },
   { href: "/methodology", label: "Methodology" },
-  { href: "/methodology/sources", label: "Sources" },
+  { href: "/sources", label: "Sources" },
 ];
 
 export default function SiteFooter() {

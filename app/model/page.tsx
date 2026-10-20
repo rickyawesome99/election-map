@@ -28,8 +28,8 @@ export default function ModelHubPage() {
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <div style={{ background: PAGE_HERO_BG }}>
         <div className={PAGE_CONTAINER}>
-          <div className={`pb-6 ${PAGE_HERO_TOP}`}>
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className={`pb-6 sm:pb-1 ${PAGE_HERO_TOP}`}>
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
               <div className="min-w-0">
                 <h1 style={PAGE_TITLE_STYLE}>True Partisan Lean</h1>
                 <p className="mt-2 max-w-2xl text-sm leading-relaxed sm:min-h-[4lh] md:min-h-[3lh]" style={{ color: "var(--app-text-muted)" }}>
@@ -42,9 +42,10 @@ export default function ModelHubPage() {
                 <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 1, color: marginColor(summary.medianStateTpl) }}>{fmtMargin(summary.medianStateTpl)}</div>
                 <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>435-district median <span style={{ color: marginColor(summary.medianDistrictTpl) }}>{fmtMargin(summary.medianDistrictTpl)}</span></div>
               </div>
-              <TplViewSwitch to="candidates" />
+              <TplViewSwitch to="candidates" layout="inline" />
               </div>
             </div>
+            <TplViewSwitch to="candidates" />
           </div>
         </div>
       </div>

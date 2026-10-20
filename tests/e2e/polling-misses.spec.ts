@@ -38,7 +38,8 @@ test("polling misses page shows one state's races at a time and filters by year 
 
 test("polling misses map is drawn and the legend runs blue to red", async ({ page }) => {
   await page.goto("/analysis/polling-misses");
-  await expect(page.getByLabel(/Map legend/)).toBeVisible({ timeout: 20_000 });
+  // one legend copy for desktop, one for phones; whichever fits the viewport is shown
+  await expect(page.getByLabel(/Map legend/).filter({ visible: true })).toBeVisible({ timeout: 20_000 });
   // the states topology renders 50+ paths once loaded
   await expect.poll(async () => page.locator("svg path").count(), { timeout: 20_000 }).toBeGreaterThan(50);
 });

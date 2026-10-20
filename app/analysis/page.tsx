@@ -24,7 +24,7 @@ const SECTIONS: { title: string; entries: Entry[] }[] = [
     title: "Voters & Turnout",
     entries: [
       { href: "/analysis/turnout", kicker: "Turnout", title: "Turnout Analysis", description: `Who votes, where, and in which races: turnout in every general election since 2016 by state, House district and county, presidential against midterm electorates, drop-off down the ticket, and a county-by-county estimate of ${electionYear} turnout for every Senate, governor and House race.` },
-      { href: "/analysis/districts/oh-hd-31", kicker: "State House", title: "OH-31 Precinct Analysis", description: "Ohio House District 31 precinct by precinct: results and swings since 2016 on today\u2019s lines, demographics, targeting metrics, and the 2026 outlook." },
+      { href: "/analysis/districts/oh-hd-31", kicker: "Precinct Analysis", title: "OH-31 Precinct Analysis", description: "Ohio House District 31 precinct by precinct: results and swings since 2016 on today\u2019s lines, demographics, targeting metrics, and the 2026 outlook." },
     ],
   },
   {
@@ -53,14 +53,14 @@ export default function AnalysisPage() {
             background: PAGE_HERO_BG,
           }}
         >
-          <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} pb-2 sm:pb-4`}>
+          <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} pb-2`}>
             <h1 style={PAGE_TITLE_STYLE}>Analysis</h1>
           </div>
         </section>
 
         <div className={`${PAGE_CONTAINER} pb-14`}>
           {SECTIONS.map((section) => (
-            <section key={section.title} className="pt-8 sm:pt-10 first:pt-2 sm:first:pt-7">
+            <section key={section.title} className="pt-8 sm:pt-10 first:pt-2 sm:first:pt-4">
               <h2 className="pb-3 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)", borderBottom: "2px solid var(--app-text-primary)" }}>{section.title}</h2>
               {section.entries.map((e) => (
                 <Link key={e.href} href={e.href} prefetch={false} className="group grid grid-cols-1 sm:grid-cols-[6.5rem_minmax(0,1fr)_auto] gap-1 sm:gap-4 items-baseline py-3.5" style={{ borderBottom: "1px solid var(--app-border)" }}>

@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import Link from "next/link";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
+import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import StateLegModelTable from "@/components/StateLegModelTable";
 import { electionYear } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
@@ -37,37 +38,21 @@ export default function StateLegModelsPage() {
   const muted = { color: "var(--app-text-muted)" } as const;
   const veryMuted = { color: "var(--app-text-very-muted)" } as const;
   const gapChambers = s.chambers.filter((c) => [c.sn?.pD, c.ei?.pD].some((p) => p != null && c.ours.pD != null && Math.abs(p - c.ours.pD) >= 0.15));
+  const versus = (m: "sn" | "ei") => {
+    const a = ag(m);
+    return <>we correlate at r <Fig>{a.corr.toFixed(2)}</Fig> across {a.n.toLocaleString()} contested seats, run <Fig>{Math.abs(a.bias).toFixed(1)}</Fig> points more {a.bias > 0 ? "Republican" : "Democratic"}, and pick a different favorite in <Fig>{a.favoredDisagree}</Fig> seats</>;
+  };
   const pColor = (p: number | null) => (p == null ? "var(--app-text-very-muted)" : p >= 0.5 ? "var(--party-dem)" : "var(--party-rep)");
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--party-dem) 8%, var(--app-bg)) 0%, var(--app-bg) 55%, color-mix(in srgb, var(--party-rep) 8%, var(--app-bg)) 100%)" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-6">
-          <div className="text-[11px] font-bold uppercase tracking-[0.12em]" style={muted}><Link href="/analysis" className="hover:underline">Analysis</Link> · utility</div>
-          <h1 className="mt-1" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5vw, 3.5rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>State Legislature Models</h1>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed" style={muted}>
-            Our <Link href="/legislatures" className="underline underline-offset-2">state legislative forecast</Link> against the two published district-level models, read into the same {s.districts.toLocaleString()} districts on the {electionYear} ballot: <Ext href={s.sources.sn.url}>{s.sources.sn.name}</Ext> (its public national page, run {fmtDate(s.sources.sn.run)}, read {fmtDate(s.sources.sn.fetched)}) and <Ext href={s.sources.ei.url}>{s.sources.ei.name}</Ext> (its published CSV, run {fmtDate(s.sources.ei.run)}, read {fmtDate(s.sources.ei.fetched)}). Both list the A/B states seat by seat; those rows are averaged onto the district. Margins are R-positive throughout; a model&apos;s own rating words are kept.
-          </p>
-          <div className="mt-6 pt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
-            {[
-              { label: "Districts compared", value: s.districts.toLocaleString(), sub: `${s.unmatched.sn + s.unmatched.ei} external rows unmatched` },
-              { label: `vs ${MODEL_NAME.sn}`, value: `r ${ag("sn").corr.toFixed(2)}`, sub: `${ag("sn").n.toLocaleString()} contested · ${ag("sn").mad.toFixed(1)} pts apart` },
-              { label: `vs ${MODEL_NAME.ei}`, value: `r ${ag("ei").corr.toFixed(2)}`, sub: `${ag("ei").n.toLocaleString()} contested · ${ag("ei").mad.toFixed(1)} pts apart` },
-              { label: "Our lean vs theirs", value: `${signed(ag("sn").bias)} · ${signed(ag("ei").bias)}`, sub: "R-positive; ours minus theirs" },
-              { label: "Different favorite", value: `${ag("sn").favoredDisagree} · ${ag("ei").favoredDisagree}`, sub: "seats, vs each model" },
-              { label: "Control odds 15+ apart", value: gapChambers.length, sub: "chambers, vs either model" },
-            ].map((x) => (
-              <div key={x.label} className="min-w-0">
-                <div className="text-[10px] uppercase tracking-wider font-semibold" style={muted}>{x.label}</div>
-                <div className="text-2xl font-bold tabular-nums leading-tight">{x.value}</div>
-                <div className="text-xs" style={veryMuted}>{x.sub}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <StandfirstHeader kicker="Models" title="State Legislature Models">
+        Our state legislative forecast set against State Navigate&rsquo;s and ElectIndex&rsquo;s in the same{" "}
+        <Fig>{s.districts.toLocaleString()}</Fig> districts on the {electionYear} ballot. Against {MODEL_NAME.sn} {versus("sn")}.
+        Against {MODEL_NAME.ei} {versus("ei")}. <Fig>{gapChambers.length}</Fig> chambers have control odds 15 or more points apart.
+      </StandfirstHeader>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-10">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-7 sm:pt-8 pb-6 space-y-10">
         <section>
           <LedgerSectionHead label="Toplines" meta="seats on the ballot, by each model's own reckoning of who holds them and who is favored" />
           <div className="overflow-x-auto">
@@ -89,6 +74,12 @@ export default function StateLegModelsPage() {
             </table>
           </div>
           <p className="mt-2 max-w-3xl text-xs" style={veryMuted}>Favored seats count every seat on the ballot a model leans one way, uncontested ones included; ours gives the seats the field decides to their party and counts independents apart. A pickup is a seat a model favors against the party it records as holding it, so each column follows that model&apos;s own roster. State Navigate&apos;s own page counts specials and holdover seats we do not carry.</p>
+          <p className="mt-3 max-w-3xl text-xs leading-relaxed" style={veryMuted}>
+            Our forecast is the <Link href="/legislatures" prefetch={false} className="underline underline-offset-2">state legislative forecast</Link>. <Ext href={s.sources.sn.url}>{s.sources.sn.name}</Ext> is
+            read from its public national page (run {fmtDate(s.sources.sn.run)}, read {fmtDate(s.sources.sn.fetched)}) and <Ext href={s.sources.ei.url}>{s.sources.ei.name}</Ext> from
+            its published CSV (run {fmtDate(s.sources.ei.run)}, read {fmtDate(s.sources.ei.fetched)}). Both list the A/B states seat by seat; those rows are averaged
+            onto the district, and {s.unmatched.sn + s.unmatched.ei} external rows could not be matched. Margins are R-positive throughout; a model&apos;s own rating words are kept.
+          </p>
         </section>
 
         <section>
