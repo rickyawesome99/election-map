@@ -139,8 +139,8 @@ export default function PastElectionCountyMap({
     if (!c.result) return { kind: "message", title, message: "No county result on file." };
     return {
       kind: "result", title,
-      dem: { name: demName, link: isRealName(demName), party: demParty, pct: c.result.demPct, votes: c.result.demVotes },
-      rep: { name: repName, link: isRealName(repName), party: repParty, pct: c.result.repPct, votes: c.result.repVotes },
+      dem: { name: demName, link: isRealName(demName), state: stateAbbr, party: demParty, pct: c.result.demPct, votes: c.result.demVotes },
+      rep: { name: repName, link: isRealName(repName), state: stateAbbr, party: repParty, pct: c.result.repPct, votes: c.result.repVotes },
       margin: c.result.margin, totalVotes: c.result.totalVotes,
     };
   };

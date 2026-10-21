@@ -69,7 +69,7 @@ export function DistrictDetail({ d, stateId, medianDistrictTpl, onRace, onFormul
           </div>
           <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-muted)" }}>
             Centered <M v={centered} digits={1} /> vs. the 435-district median {fmt1(medianDistrictTpl)} · <M v={vsState} digits={1} /> relative to the state ({fmt1(d.stateTpl)}) · lines from {d.eraStart}
-            {d.incumbent && <> · incumbent <CandidateLink name={d.incumbent.name} party={d.incumbent.party} /></>}
+            {d.incumbent && <> · incumbent <CandidateLink name={d.incumbent.name} state={d.state} party={d.incumbent.party} /></>}
           </div>
         </div>
         <div className="flex shrink-0 flex-wrap gap-3 text-xs sm:justify-end" style={{ color: "var(--app-text-muted)" }}>
@@ -95,7 +95,7 @@ export function DistrictDetail({ d, stateId, medianDistrictTpl, onRace, onFormul
       <SubHead label={`Races behind the cell · ${title}`} meta={`${rows.length} row${rows.length === 1 ? "" : "s"} · Wt is the boundary weight for House rows`}
         right={<AllRacesButton count={d.races.filter((r) => r.inAggregation).length} hidden={racesHidden} onToggle={() => { setRacesHidden((h) => !h); setSel({ year: "all", type: "all" }); }} />} />
       {!(racesHidden && sel.year === "all" && sel.type === "all") && <>
-        <RaceTable races={rows} variant="district" showYear onRow={onRace} onFormula={onFormula} />
+        <RaceTable races={rows} state={d.state} variant="district" showYear onRow={onRace} onFormula={onFormula} />
         <TableCaption>Click a row for the step-by-step calculation.</TableCaption>
       </>}
 

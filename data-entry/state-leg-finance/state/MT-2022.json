@@ -221,7 +221,7 @@
   "16": [
    {
     "name": "Running Wolf, Tyson  T",
-    "candidate": "Tyson Runningwolf",
+    "candidate": "Tyson Running Wolf",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 300,
@@ -239,7 +239,7 @@
    },
    {
     "name": "Sporkin-Morrison, Barnett  G",
-    "candidate": "Barnett G. Sporkinmorrison",
+    "candidate": "Barnett G. Sporkin-Morrison",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1000,
@@ -321,7 +321,7 @@
    },
    {
     "name": "Sheldon-Galloway, LOLA ",
-    "candidate": "Lola Sheldongalloway",
+    "candidate": "Lola Sheldon-Galloway",
     "party": "Republican",
     "incumbent": true,
     "contributions": 23382.63,
@@ -477,7 +477,7 @@
   "32": [
    {
     "name": "Windy Boy, Jonathan  ",
-    "candidate": "Jonathan Windyboy",
+    "candidate": "Jonathan Windy Boy",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 0,
@@ -592,6 +592,14 @@
   ],
   "42": [
    {
+    "name": "Peregoy, Sharon  S.",
+    "candidate": "Sharon Stewart Peregoy",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5420,
+    "expenditures": null
+   },
+   {
     "name": "mcdonald, virginia  rose",
     "candidate": "Virginia McDonald",
     "party": "Republican",
@@ -603,7 +611,7 @@
   "43": [
    {
     "name": "Seekins-Crowe, Kerri ",
-    "candidate": "Kerri Seekinscrowe",
+    "candidate": "Kerri Seekins-Crowe",
     "party": "Republican",
     "incumbent": true,
     "contributions": 5440.9,
@@ -695,7 +703,7 @@
   "49": [
    {
     "name": "Kerr-Carpenter, Emma ",
-    "candidate": "Emma Kerrcarpenter",
+    "candidate": "Emma Kerr-Carpenter",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 10567.5,
@@ -1158,6 +1166,16 @@
     "expenditures": null
    }
   ],
+  "78": [
+   {
+    "name": "Frazer, Gregory  L",
+    "candidate": "Gregory Frazer",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 4180.66,
+    "expenditures": null
+   }
+  ],
   "79": [
    {
     "name": "Pigman , Keith  ",
@@ -1297,7 +1315,7 @@
   "87": [
    {
     "name": "Lovett Moore, Will ",
-    "candidate": "Will Lovettmoore",
+    "candidate": "Will Lovett Moore",
     "party": "Other",
     "incumbent": false,
     "contributions": 5821.82,
@@ -1503,7 +1521,7 @@
    },
    {
     "name": "Shearer-Hiett, Sonia ",
-    "candidate": "Sonia Shearerhiett",
+    "candidate": "Sonia Shearer-Hiett",
     "party": "Republican",
     "incumbent": false,
     "contributions": 4455.99,
@@ -1899,7 +1917,7 @@
    },
    {
     "name": "Van Horn, Jacob ",
-    "candidate": "Jacob Vanhorn",
+    "candidate": "Jacob van Horn",
     "party": "Republican",
     "incumbent": false,
     "contributions": 700,

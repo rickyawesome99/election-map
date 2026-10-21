@@ -26,6 +26,14 @@
   ],
   "3": [
    {
+    "name": "YOUNG, RONALD N.",
+    "candidate": "Ronald Nelson Young",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 144222.78,
+    "expenditures": null
+   },
+   {
     "name": "GIANGRANDE, CRAIG S.",
     "candidate": "Craig Giangrande",
     "party": "Republican",
@@ -97,6 +105,14 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 116586.08,
+    "expenditures": null
+   },
+   {
+    "name": "HESTER, KATHRYN F.",
+    "candidate": "Katie Fry Hester",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 200610.95,
     "expenditures": null
    }
   ],
@@ -405,7 +421,7 @@
    },
    {
     "name": "RANDERS PEHRSON, CHRISTOPHER B.",
-    "candidate": "Christopher Randerspehrson",
+    "candidate": "Christopher Randers-Pehrson",
     "party": "Other",
     "incumbent": false,
     "contributions": 3300,
@@ -509,7 +525,7 @@
   "44": [
    {
     "name": "Nathan-Pulliam, Shirley A.",
-    "candidate": "Shirley Nathanpulliam",
+    "candidate": "Shirley Nathan-Pulliam",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 100007.23,
@@ -1007,7 +1023,7 @@
   "21": [
    {
     "name": "Pena-Melnyk, Joseline A.",
-    "candidate": "Joseline Penamelnyk",
+    "candidate": "Joseline Pena-Melnyk",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 77381.07,
@@ -1074,6 +1090,14 @@
     "expenditures": null
    },
    {
+    "name": "HARRISON, ANDREA C.",
+    "candidate": "Andrea Fletcher Harrison",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 167136.36,
+    "expenditures": null
+   },
+   {
     "name": "LEWIS, JAZZ M.",
     "candidate": "Jazz Lewis",
     "party": "Democratic",
@@ -1127,7 +1151,7 @@
    },
    {
     "name": "HENRY-SPIRES, DIEDRA B.",
-    "candidate": "Diedra Henryspires",
+    "candidate": "Diedra Henry-Spires",
     "party": "Other",
     "incumbent": false,
     "contributions": 5975,
@@ -1402,6 +1426,24 @@
     "expenditures": null
    }
   ],
+  "35A": [
+   {
+    "name": "HORNBERGER, KEVIN B.",
+    "candidate": "Kevin Bailey Hornberger",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 35176,
+    "expenditures": null
+   },
+   {
+    "name": "BOWERS, JOBETH R.",
+    "candidate": "Jobeth Rocky Bowers",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 34368.74,
+    "expenditures": null
+   }
+  ],
   "9A": [
    {
     "name": "MILLER, WARREN E.",
@@ -1441,7 +1483,7 @@
   "23A": [
    {
     "name": "VALENTINO-SMITH, GERALDINE",
-    "candidate": "Geraldine Valentinosmith",
+    "candidate": "Geraldine Valentino-Smith",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 60788.25,
@@ -1787,7 +1829,7 @@
   "37A": [
    {
     "name": "SAMPLE-HUGHES, SHEREE L.",
-    "candidate": "Sheree Samplehughes",
+    "candidate": "Sheree Sample-Hughes",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 56447.15,
@@ -1893,16 +1935,6 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 68096.53,
-    "expenditures": null
-   }
-  ],
-  "35A": [
-   {
-    "name": "BOWERS, JOBETH R.",
-    "candidate": "Jobeth Rocky Bowers",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 34368.74,
     "expenditures": null
    }
   ],

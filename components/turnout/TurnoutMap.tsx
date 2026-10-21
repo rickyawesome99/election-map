@@ -1,7 +1,9 @@
 "use client";
-import Link from "next/link";
 
 import { memo, useCallback, useMemo, useRef, useState } from "react";
+import Segmented from "@/components/MarketSegmented";
+import Dropdown from "./Dropdown";
+import CountyTooltip, { CountyCardClose, CountyCardLink } from "@/components/CountyTooltip";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import type { Theme } from "@/components/ForecastMap";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
@@ -11,9 +13,9 @@ import { FIPS_TO_STATE } from "@/lib/fips";
 import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { normalizeGeographyWinding, type WindableGeography } from "@/lib/geoWinding";
 import {
-  METRIC_LABEL, OFFICE_LABEL, OFFICE_SHORT, PROJECTION_COUNTY_URL, PROJECTION_YEAR, TURNOUT_LEVELS, TURNOUT_OFFICES,
+  METRIC_LABEL, OFFICE_LABEL, PROJECTION_COUNTY_URL, PROJECTION_YEAR, TURNOUT_LEVELS, TURNOUT_OFFICES,
   cycleTypeOf, turnoutSliceUrl, yearsForTurnoutLevel,
-  type ProjectedRace, type ProjectionCountySlice, type TurnoutEntry, type TurnoutLevel, type TurnoutMetric, type TurnoutOffice, type TurnoutRace, type TurnoutSlice,
+  type ProjectedRace, type ProjectionCountySlice, type TurnoutEntry, type TurnoutLevel, type TurnoutMapView, type TurnoutMetric, type TurnoutOffice, type TurnoutSlice,
 } from "@/lib/turnoutTypes";
 import { DIVERGING, SEQUENTIAL, rampColor, scaleColor, type Scale } from "./turnoutColors";
 
@@ -57,6 +59,7 @@ function scaleFor(metric: TurnoutMetric, level: TurnoutLevel, dark: boolean, vot
   }
 }
 
+const fmtCompact = (v: number) => (v >= 1e6 ? `${(v / 1e6).toFixed(1)}M` : v >= 1e3 ? `${Math.round(v / 1e3)}K` : String(v));
 function formatValue(metric: TurnoutMetric, v: number): string {
   if (metric === "votes") return v.toLocaleString();
   if (metric === "change") return `${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.abs(v).toFixed(1)} pts`;
@@ -158,47 +161,29 @@ const StateOutlines = memo(function StateOutlines({ t }: { t: Theme }) {
 });
 
 // ── Selection details ─────────────────────────────────────────────────────────
-function RaceRows({ entry, year, t, highlight }: { entry: TurnoutEntry; year: number; t: Theme; highlight: TurnoutOffice }) {
-  const rows: { label: string; r: TurnoutRace; office: TurnoutOffice }[] = [];
-  for (const office of TURNOUT_OFFICES) { const r = entry.races[office]; if (r) rows.push({ label: OFFICE_LABEL[office] + (r.special ? " (special)" : ""), r, office }); }
-  if (entry.senateSpecial) rows.push({ label: "Senate (special)", r: entry.senateSpecial, office: "senate" });
-  return (
-    <div className="text-[10px]">
-      <div className="grid grid-cols-[1fr_auto_auto_auto] gap-x-2 pb-0.5 font-bold uppercase tracking-wide" style={{ color: t.textVeryMuted, fontSize: 8 }}>
-        <span>{year}</span><span className="text-right">Votes</span><span className="text-right">% CVAP</span><span className="text-right">% top</span>
-      </div>
-      {rows.map(({ label, r, office }, i) => (
-        <div key={label + i} className="grid grid-cols-[1fr_auto_auto_auto] gap-x-2 py-px tabular-nums" style={{ color: office === highlight ? t.textPrimary : t.textMuted, fontWeight: office === highlight ? 600 : 400 }}>
-          <span className="truncate">{label}{r.firstRound ? "*" : ""}{r.uncontested === true ? " (unopposed)" : typeof r.uncontested === "number" && r.uncontested > 0 ? ` (${r.uncontested} unopposed)` : ""}</span>
-          <span className="text-right">{r.votes == null ? "no count" : r.votes.toLocaleString()}</span>
-          <span className="text-right">{r.rate == null ? "—" : `${r.rate.toFixed(1)}%`}</span>
-          <span className="text-right">{r.ofTop == null ? "—" : `${r.ofTop.toFixed(0)}%`}</span>
-        </div>
-      ))}
-      <div className="mt-1 flex justify-between" style={{ color: t.textVeryMuted }}>
-        <span>CVAP {entry.cvap?.toLocaleString() ?? "—"}</span>
-        {entry.ofPriorPresidential != null && cycleTypeOf(year) !== "presidential" && <span>{entry.ofPriorPresidential.toFixed(0)}% of the prior presidential electorate</span>}
-      </div>
-    </div>
-  );
-}
-
-function ProjectionRows({ proj, office, t }: { proj: NonNullable<Selection["proj"]>; office: TurnoutOffice; t: Theme }) {
-  return (
-    <div className="text-[10px] tabular-nums" style={{ color: t.textMuted }}>
-      <div className="flex justify-between"><span>Estimated {OFFICE_LABEL[office]} votes, {PROJECTION_YEAR}</span><span className="font-semibold" style={{ color: t.textPrimary }}>{proj.votes.toLocaleString()}</span></div>
-      <div className="flex justify-between"><span>Range (2022-like · 2018-like)</span><span>{proj.low.toLocaleString()} – {proj.high.toLocaleString()}</span></div>
-      <div className="flex justify-between"><span>Of CVAP (2020–24 ACS)</span><span>{proj.cvap ? `${((proj.votes / proj.cvap) * 100).toFixed(1)}%` : "—"}</span></div>
-    </div>
-  );
+// The popups show only the metric on the map: its value for the place, and one short note
+// giving the raw numbers behind it (the votes and eligible citizens, or the estimate's range).
+const fmtVotes = (v: number | null | undefined) => (v == null ? "no count" : v.toLocaleString());
+function metricNote(metric: TurnoutMetric, office: TurnoutOffice, sel: Selection, year: number): string {
+  if (metric === "projection") {
+    const p = sel.proj;
+    return p ? `${p.votes.toLocaleString()} votes (${p.low.toLocaleString()}–${p.high.toLocaleString()})${p.cvap ? ` of ${p.cvap.toLocaleString()} eligible` : ""}` : "";
+  }
+  const e = sel.entry;
+  if (!e) return "";
+  if (metric === "ofPriorPresidential") return `${fmtVotes(e.races[office]?.votes)} ${OFFICE_LABEL[office]} votes in ${year}`;
+  const r = e.races[office];
+  if (!r) return "";
+  const flags = `${r.firstRound ? " (first round)" : ""}${r.uncontested === true ? " (unopposed)" : typeof r.uncontested === "number" && r.uncontested > 0 ? ` (${r.uncontested} unopposed)` : ""}`;
+  if (metric === "rate") return `${fmtVotes(r.votes)} of ${e.cvap?.toLocaleString() ?? "—"} eligible${flags}`;
+  if (metric === "votes") return `${r.rate == null ? "—" : `${r.rate.toFixed(1)}%`} of ${e.cvap?.toLocaleString() ?? "—"} eligible${flags}`;
+  if (metric === "ofTop") return `${fmtVotes(r.votes)} votes${flags}`;
+  return `${r.rate == null ? "—" : `${r.rate.toFixed(1)}%`} of eligible in ${year}${flags}`;
 }
 
 // ── The component ─────────────────────────────────────────────────────────────
-export default function TurnoutMap({ theme: t, dark, projection }: { theme: Theme; dark: boolean; projection: ProjectedRace[] }) {
-  const [level, setLevel] = useState<TurnoutLevel>("state");
-  const [metric, setMetric] = useState<TurnoutMetric>("rate");
-  const [office, setOffice] = useState<TurnoutOffice>("president");
-  const [year, setYear] = useState<number>(2024);
+export default function TurnoutMap({ theme: t, dark, projection, view, onViewChange }: { theme: Theme; dark: boolean; projection: ProjectedRace[]; view: TurnoutMapView; onViewChange: (v: TurnoutMapView) => void }) {
+  const { level, metric, office, year } = view;
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
   const [mapView, setMapView] = useState<MapView>({ center: DEFAULT_CENTER, zoom: 1 });
@@ -212,23 +197,29 @@ export default function TurnoutMap({ theme: t, dark, projection }: { theme: Them
   const offices = isProjection ? PROJECTION_OFFICES : TURNOUT_OFFICES;
 
   // Keep the selection consistent when a control changes: a year without the office falls back.
-  function pickLevel(l: TurnoutLevel) { setLevel(l); if (!yearsForTurnoutLevel(l).includes(year)) setYear(yearsForTurnoutLevel(l)[yearsForTurnoutLevel(l).length - 1]); setSelected(null); setHovered(null); }
+  const change = (next: Partial<TurnoutMapView>) => { onViewChange({ ...view, ...next }); setSelected(null); setHovered(null); };
+  function pickLevel(l: TurnoutLevel) { const ys = yearsForTurnoutLevel(l); change({ level: l, year: ys.includes(year) ? year : ys[ys.length - 1] }); }
   function pickMetric(m: TurnoutMetric) {
-    setMetric(m);
     let o = office, y = year;
     if (m === "projection" && o === "president") o = "house";
     if (m === "ofTop" && o === "president") o = "house";
     if (m === "ofPriorPresidential" && cycleTypeOf(y) === "presidential") y = 2022;
     if (m === "change" && y < 2020) y = 2020;
     if (o === "president" && y % 4 !== 0) y = 2024;
-    setOffice(o); setYear(y); setSelected(null);
+    change({ metric: m, office: o, year: y });
   }
   function pickOffice(o: TurnoutOffice) {
-    setOffice(o);
-    if (o === "president" && (year % 4 !== 0 || metric === "ofTop")) { setYear(2024); if (metric === "ofTop" || metric === "ofPriorPresidential") setMetric("rate"); }
-    setSelected(null);
+    let y = year, m = metric;
+    if (o === "president" && (year % 4 !== 0 || metric === "ofTop")) { y = 2024; if (metric === "ofTop" || metric === "ofPriorPresidential") m = "rate"; }
+    change({ office: o, year: y, metric: m });
   }
-  function pickYear(y: number) { setYear(y); if (office === "president" && y % 4 !== 0) setOffice("house"); if (metric === "ofPriorPresidential" && y % 4 === 0) setMetric("rate"); if (metric === "change" && y < 2020) setMetric("rate"); setSelected(null); }
+  function pickYear(y: number) {
+    let o = office, m = metric;
+    if (o === "president" && y % 4 !== 0) o = "house";
+    if (m === "ofPriorPresidential" && y % 4 === 0) m = "rate";
+    if (m === "change" && y < 2020) m = "rate";
+    change({ year: y, office: o, metric: m });
+  }
   function resetView() { const reset = { center: DEFAULT_CENTER, zoom: 1 }; settledViewRef.current = reset; setMapView(reset); setViewChanged(false); }
 
   const { data: slice, loading } = useStaticJson<TurnoutSlice>(isProjection ? null : turnoutSliceUrl(level, year));
@@ -281,7 +272,7 @@ export default function TurnoutMap({ theme: t, dark, projection }: { theme: Them
       let tot = 0;
       if (office === "house") tot = projection.filter((r) => r.office === "house").reduce((s, r) => s + r.votes, 0);
       else { const best = new Map<string, number>(); for (const r of projection) if (r.office === office) best.set(r.state, Math.max(best.get(r.state) ?? 0, r.votes)); for (const v of best.values()) tot += v; }
-      return { label: `${PROJECTION_YEAR} estimate · ${OFFICE_LABEL[office]}`, value: tot ? tot.toLocaleString() : "—", sub: tot ? "votes" : "" };
+      return { label: `${PROJECTION_YEAR} estimate · ${OFFICE_LABEL[office]}`, value: tot ? `${(tot / 1e6).toFixed(0)} million` : "—", sub: tot ? "votes" : "" };
     }
     if (!slice) return { label: "Loading…", value: "", sub: "" };
     const v = slice.national.votes[office], r = slice.national.rate[office];
@@ -295,44 +286,59 @@ export default function TurnoutMap({ theme: t, dark, projection }: { theme: Them
   const selectedKey = selected?.key ?? null;
   const shownYear = isProjection ? PROJECTION_YEAR : year;
 
-  const controls = (compact: boolean) => (
-    <>
-      <Group label="Show" compact={compact}>{TURNOUT_LEVELS.map((l) => <Pill key={l} on={l === level} onClick={() => pickLevel(l)} t={t}>{LEVEL_LABEL[l]}</Pill>)}</Group>
-      <Sep t={t} />
-      <Group label="Metric" compact={compact}>{METRICS.map((m) => <Pill key={m} on={m === metric} onClick={() => pickMetric(m)} t={t}>{METRIC_LABEL[m]}</Pill>)}</Group>
-      <Sep t={t} />
-      <Group label="Office" compact={compact}>{offices.map((o) => <Pill key={o} on={o === office} onClick={() => pickOffice(o)} t={t} disabled={!isProjection && !metricAllowed(metric, year, o) && o === "president"}>{OFFICE_SHORT[o]}</Pill>)}</Group>
-      {!isProjection && (
-        <>
-          <Sep t={t} />
-          <Group label="Year" compact={compact}>{years.filter((y) => office !== "president" || y % 4 === 0).filter((y) => metricAllowed(metric, y, office)).map((y) => <Pill key={y} on={y === year} onClick={() => pickYear(y)} t={t}>{y}</Pill>)}</Group>
-        </>
-      )}
-      {viewChanged && (<><Sep t={t} /><button onClick={resetView} className="text-xs font-semibold" style={{ color: t.textMuted }}>Reset</button></>)}
-    </>
+  // The control row, the one-sentence summary and the legend sit above the map, as on /analysis/polling-misses.
+  const yearOptions = years.filter((y) => office !== "president" || y % 4 === 0).filter((y) => metricAllowed(metric, y, office)).map((y) => [y, String(y)] as [number, string]);
+  const officeOptions = offices.filter((o) => isProjection || o !== "president" || metricAllowed(metric, year, o)).map((o) => [o, OFFICE_LABEL[o]] as [TurnoutOffice, string]);
+  const legend = (
+    <div className="flex items-center gap-1.5 text-[10px]" style={{ color: "var(--app-text-muted)" }} aria-label={`Map legend: ${isProjection ? `${PROJECTION_YEAR} estimated ${OFFICE_LABEL[office]} turnout` : METRIC_LABEL[metric]}`}>
+      <span className="tabular-nums">{metric === "votes" ? fmtCompact(votesRange[0]) : formatValue(metric, scale.min)}</span>
+      <span className="inline-block h-2 w-28" style={{ background: `linear-gradient(to right, ${[0, 0.25, 0.5, 0.75, 1].map((x) => rampColor(scale.ramp, x)).join(", ")})` }} />
+      <span className="tabular-nums">{metric === "votes" ? fmtCompact(votesRange[1]) : formatValue(metric, scale.max)}</span>
+      <span className="ml-1 flex items-center gap-1"><span className="inline-block h-2 w-3.5" style={{ background: t.mapUnfilled }} />No race / no count</span>
+    </div>
   );
+  const metricName = isProjection ? `${PROJECTION_YEAR} estimate` : METRIC_LABEL[metric];
+  const card = (sel: Selection) => ({
+    kind: "figure" as const,
+    title: sel.title,
+    subtitle: sel.subtitle || undefined,
+    label: metricName,
+    value: sel.value != null ? formatValue(metric, sel.value) : null,
+    note: metricNote(metric, office, sel, shownYear) || undefined,
+  });
+  const placeNoun = level === "state" ? "state" : level === "district" ? "House district" : "county";
 
   return (
-    <div className="flex w-full flex-col gap-3">
-      {/* Mobile controls */}
-      <div className="flex items-center gap-2.5 overflow-x-auto rounded-xl px-3 py-2 scrollbar-none md:hidden" style={{ background: t.legendBg, border: `1px solid ${t.border}` }}>{controls(true)}</div>
+    <div className="flex w-full flex-col">
+      <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+        <div className="flex w-full justify-center sm:w-auto"><Segmented label="Show" value={level} onChange={pickLevel} options={TURNOUT_LEVELS.map((l) => [l, LEVEL_LABEL[l]] as [TurnoutLevel, string])} /></div>
+        <Dropdown label="Metric" value={metric} onChange={(v) => pickMetric(v as TurnoutMetric)} options={METRICS.map((m) => [m, METRIC_LABEL[m]])} />
+        <Dropdown label="Race" value={office} onChange={(v) => pickOffice(v as TurnoutOffice)} options={officeOptions} />
+        {!isProjection && <Dropdown label="Year" value={String(year)} onChange={(v) => pickYear(Number(v))} options={yearOptions.map(([y, l]) => [String(y), l])} />}
+        {/* on phones the legend moves down between the summary and the map */}
+        <div className="hidden sm:ml-auto sm:block">{legend}</div>
+      </div>
 
-      <div className="relative h-[380px] w-full overflow-hidden rounded-xl md:h-[min(640px,calc(100vh-200px))] md:min-h-[500px]" style={{ background: t.bg }} onMouseMove={onTooltipMove}>
-        {hovered && (
-          <div ref={attachTooltip} className="hidden md:block absolute z-20 pointer-events-none rounded-lg" style={{ width: 240, padding: "6px 8px", background: t.panel, border: `1px solid ${t.border}`, boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}>
-            <div className="flex items-start justify-between gap-2">
-              <span className="font-bold text-[11px]" style={{ color: t.textPrimary }}>{hovered.title}</span>
-              <span className="font-bold shrink-0 tabular-nums" style={{ fontSize: 14, color: t.textPrimary }}>{hovered.value != null ? formatValue(metric, hovered.value) : "—"}</span>
-            </div>
-            {hovered.subtitle && <div className="text-[9px]" style={{ color: t.textMuted }}>{hovered.subtitle}</div>}
-            <div className="mt-1">
-              {isProjection && hovered.proj ? <ProjectionRows proj={hovered.proj} office={office} t={t} /> : hovered.entry ? <RaceRows entry={hovered.entry} year={shownYear} t={t} highlight={office} /> : null}
-            </div>
-          </div>
+      <p className="mb-5 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
+        {isProjection ? (
+          <>For {PROJECTION_YEAR} we expect about <b style={{ color: "var(--app-text-primary)" }}>{chyron.value}</b> {OFFICE_LABEL[office]} votes nationwide, shown here as each {placeNoun}&rsquo;s estimated turnout as a share of its eligible citizens.</>
+        ) : loading || !slice ? "Loading…" : metric === "votes" ? (
+          <>In {year}, <b style={{ color: "var(--app-text-primary)" }}>{chyron.value}</b> votes were cast for {OFFICE_LABEL[office]} nationwide, where the race was held; the map shades each {placeNoun} by its count.</>
+        ) : metric === "ofPriorPresidential" ? (
+          <>Each {placeNoun}&rsquo;s {year} electorate as a share of its {year - 2} presidential electorate. Nationwide, <b style={{ color: "var(--app-text-primary)" }}>{chyron.value}</b> of eligible citizens voted for {OFFICE_LABEL[office]} in {year}.</>
+        ) : (
+          <>{METRIC_LABEL[metric]} for {OFFICE_LABEL[office]} in {year}, by {placeNoun}. Nationwide, <b style={{ color: "var(--app-text-primary)" }}>{chyron.value}</b> of eligible citizens voted for {OFFICE_LABEL[office]}, where the race was held.</>
         )}
+        {" "}Select a {placeNoun} for its figures.
+      </p>
 
-        <ComposableMap width={975} height={610} projection="geoAlbersUsa" projectionConfig={{ scale: 1200 }} preserveAspectRatio="xMidYMid slice" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
-          <ZoomableGroup center={mapView.center} zoom={mapView.zoom} minZoom={0.8} filterZoomEvent={filterMapZoomEvent}
+      <div className="mb-4 sm:hidden">{legend}</div>
+
+      <div className="relative mx-4 aspect-[5/3] max-h-[620px] overflow-hidden rounded-xl sm:mx-12 lg:mx-32" onMouseMove={onTooltipMove}>
+        {hovered && !selected && <CountyTooltip {...card(hovered)} boxRef={attachTooltip} className="absolute z-20 hidden md:block" />}
+
+        <ComposableMap width={800} height={480} projection="geoAlbersUsa" projectionConfig={{ scale: 1000 }} style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
+          <ZoomableGroup center={mapView.center} zoom={mapView.zoom} minZoom={1} filterZoomEvent={filterMapZoomEvent}
             onMoveStart={() => { gestureRef.current = null; }}
             onMove={({ x, y, zoom: k }: { x: number; y: number; zoom: number }) => {
               if (!gestureRef.current) gestureRef.current = { startX: x, startY: y, startK: k, lastX: x, lastY: y, lastK: k };
@@ -368,77 +374,25 @@ export default function TurnoutMap({ theme: t, dark, projection }: { theme: Them
           </ZoomableGroup>
         </ComposableMap>
 
-        {/* Desktop toolbar */}
-        <div className="hidden md:flex absolute z-10 max-w-[78%] flex-wrap items-center gap-x-2.5 gap-y-1 rounded-xl px-3 py-2 backdrop-blur-sm" style={{ top: 0, left: 0, background: t.legendBg, border: `1px solid ${t.border}` }}>{controls(false)}</div>
+        {viewChanged && (
+          <button type="button" onClick={resetView} className="absolute bottom-3 left-3 z-10 rounded-lg px-2.5 py-1 text-xs font-medium"
+            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", boxShadow: "0 2px 8px rgba(0,0,0,0.18)" }}>Reset view</button>
+        )}
 
-        {/* Chyron */}
-        <div className="hidden md:block absolute z-10 rounded-xl px-3 py-2 text-right backdrop-blur-sm" style={{ top: 0, right: 0, background: t.legendBg, border: `1px solid ${t.border}` }}>
-          <div className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>{loading && !isProjection ? "Loading…" : chyron.label}</div>
-          <div style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1.4rem", lineHeight: 1.15, color: t.textPrimary }}>{chyron.value}</div>
-          {chyron.sub && <div className="text-[9px]" style={{ color: t.textMuted }}>{chyron.sub}</div>}
-        </div>
-
-        {viewChanged && <button onClick={resetView} className="md:hidden absolute z-10 rounded-lg px-2.5 py-1 text-[10px] font-medium backdrop-blur-sm" style={{ top: "0.6rem", left: "0.6rem", background: t.legendBg, border: `1px solid ${t.border}`, color: t.textMuted }}>Reset</button>}
-
-        {/* Selected panel */}
         {selected && (
-          <div className="hidden md:block absolute z-20 rounded-xl p-2.5 backdrop-blur-sm" style={{ bottom: "1rem", right: "1rem", width: 280, background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 12px 28px rgba(0,0,0,0.25)" }}>
-            <div className="mb-1.5 flex items-start justify-between gap-2 pb-1.5" style={{ borderBottom: `1px solid ${t.border}` }}>
-              <div className="min-w-0">
-                <div className="truncate text-sm font-bold leading-tight" style={{ color: t.textPrimary }}>{selected.title}</div>
-                {selected.subtitle && <div className="mt-0.5 truncate text-[10px]" style={{ color: t.textMuted }}>{selected.subtitle}</div>}
-              </div>
-              <div className="flex shrink-0 items-center gap-2">
-                <span className="text-base font-extrabold tabular-nums" style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}>{selected.value != null ? formatValue(metric, selected.value) : "—"}</span>
-                <button onClick={() => setSelected(null)} aria-label="Close selection" style={{ color: t.textVeryMuted }}>
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-                </button>
-              </div>
-            </div>
-            {isProjection && selected.proj ? <ProjectionRows proj={selected.proj} office={office} t={t} /> : selected.entry ? <RaceRows entry={selected.entry} year={shownYear} t={t} highlight={office} /> : null}
-            {selected.moreInfoHref && <Link prefetch={false} href={selected.moreInfoHref} className="mt-1.5 inline-flex items-center gap-1 text-[10px] font-bold" style={{ color: t.textPrimary }}>More info →</Link>}
+          <div className="absolute z-30 hidden rounded-xl backdrop-blur-sm md:block" style={{ bottom: "1rem", right: "1rem", width: 220, padding: "8px 10px", background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 12px 28px rgba(0,0,0,0.25)" }}>
+            <CountyTooltip {...card(selected)} variant="card" aside={<CountyCardClose onClick={() => setSelected(null)} label="Close selection" />}
+              footer={selected.moreInfoHref ? <CountyCardLink href={selected.moreInfoHref}>More info →</CountyCardLink> : undefined} />
           </div>
         )}
       </div>
 
-      {/* Legend */}
-      <div className="flex flex-wrap items-center justify-center gap-3 text-[10px]" style={{ color: t.textMuted }}>
-        <span className="font-semibold">{isProjection ? `${PROJECTION_YEAR} estimated ${OFFICE_LABEL[office]} turnout, % of CVAP` : `${METRIC_LABEL[metric]}${metric === "ofPriorPresidential" ? "" : ` · ${OFFICE_LABEL[office]}`}, ${year}`}</span>
-        <span className="tabular-nums">{metric === "votes" ? votesRange[0].toLocaleString() : formatValue(metric, scale.min)}</span>
-        <span className="h-2.5 w-40 rounded-sm" style={{ background: `linear-gradient(to right, ${[0, 0.25, 0.5, 0.75, 1].map((x) => rampColor(scale.ramp, x)).join(", ")})` }} />
-        <span className="tabular-nums">{metric === "votes" ? votesRange[1].toLocaleString() : formatValue(metric, scale.max)}</span>
-        <span className="flex items-center gap-1"><span className="inline-block h-2.5 w-2.5 rounded-sm" style={{ background: t.mapUnfilled }} />no race / no count</span>
-      </div>
-
-      {/* Mobile selection */}
       {selected && (
-        <div className="md:hidden">
-          <div className="flex items-start justify-between gap-2">
-            <div className="min-w-0"><div className="truncate text-[13px] font-bold leading-tight" style={{ color: t.textPrimary }}>{selected.title}</div>{selected.subtitle && <div className="truncate text-[9px]" style={{ color: t.textMuted }}>{selected.subtitle}</div>}</div>
-            <div className="flex shrink-0 items-center gap-1.5">
-              <span className="text-sm font-bold tabular-nums" style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}>{selected.value != null ? formatValue(metric, selected.value) : "—"}</span>
-              <button onClick={() => setSelected(null)} className="-m-1 p-1" style={{ color: t.textVeryMuted }} aria-label="Close selection"><svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg></button>
-            </div>
-          </div>
-          <div className="mt-1.5">{isProjection && selected.proj ? <ProjectionRows proj={selected.proj} office={office} t={t} /> : selected.entry ? <RaceRows entry={selected.entry} year={shownYear} t={t} highlight={office} /> : null}</div>
+        <div className="mt-3 md:hidden">
+          <CountyTooltip {...card(selected)} variant="panel" aside={<CountyCardClose onClick={() => setSelected(null)} label="Close selection" small />}
+            footer={selected.moreInfoHref ? <CountyCardLink href={selected.moreInfoHref}>More info →</CountyCardLink> : undefined} />
         </div>
       )}
     </div>
-  );
-}
-
-function Group({ label, compact, children }: { label: string; compact: boolean; children: React.ReactNode }) {
-  return (
-    <div className={`flex items-center gap-1.5 ${compact ? "shrink-0" : ""}`}>
-      <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{label}</span>
-      {children}
-    </div>
-  );
-}
-function Sep({ t }: { t: Theme }) { return <span className="h-4 w-px shrink-0" style={{ background: t.border }} />; }
-function Pill({ on, onClick, t, children, disabled }: { on: boolean; onClick: () => void; t: Theme; children: React.ReactNode; disabled?: boolean }) {
-  return (
-    <button onClick={onClick} disabled={disabled} className="shrink-0 pb-0.5 text-xs font-semibold whitespace-nowrap" aria-pressed={on}
-      style={on ? { color: t.textPrimary, borderBottom: `2px solid ${t.textPrimary}` } : { color: disabled ? t.textVeryMuted : t.textMuted }}>{children}</button>
   );
 }

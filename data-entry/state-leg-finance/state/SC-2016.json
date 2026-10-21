@@ -327,7 +327,7 @@
    },
    {
     "name": "Leola Robinson-Simpson",
-    "candidate": "Leola Robinsonsimpson",
+    "candidate": "Leola Robinson-Simpson",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 13038.63,
@@ -570,6 +570,16 @@
     "expenditures": null
    }
   ],
+  "44": [
+   {
+    "name": "Mandy P Norrell",
+    "candidate": "Mandy Powers Norrell",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7250,
+    "expenditures": null
+   }
+  ],
   "45": [
    {
     "name": "Tyler J Mitchell",
@@ -609,7 +619,7 @@
    },
    {
     "name": "Diane Phelps Simmons",
-    "candidate": "Diane Phelpssimmons",
+    "candidate": "Diane Phelps Simmons",
     "party": "Other",
     "incumbent": false,
     "contributions": 2853.09,
@@ -656,6 +666,16 @@
     "expenditures": null
    }
   ],
+  "52": [
+   {
+    "name": "Laurie S Funderburk",
+    "candidate": "Laurie Slade Funderburk",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 21060.58,
+    "expenditures": null
+   }
+  ],
   "53": [
    {
     "name": "Richard L Sr Yow",
@@ -681,6 +701,14 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 9951,
+    "expenditures": null
+   },
+   {
+    "name": "Patricia M Henegan",
+    "candidate": "Patricia Moore Henegan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 44527.67,
     "expenditures": null
    }
   ],
@@ -803,7 +831,7 @@
   "66": [
    {
     "name": "Gilda Y Cobb-Hunter",
-    "candidate": "Gilda Cobbhunter",
+    "candidate": "Gilda Cobb-Hunter",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 41576.04,
@@ -1189,6 +1217,14 @@
    }
   ],
   "100": [
+   {
+    "name": "TONIA A TAYLOR",
+    "candidate": "Tonia Aiken-Taylor",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3587,
+    "expenditures": null
+   },
    {
     "name": "Sylleste Davis",
     "candidate": "Sylleste Davis",
@@ -1733,6 +1769,14 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 202946.16,
+    "expenditures": null
+   },
+   {
+    "name": "Scott L West",
+    "candidate": "Scott Lewis West",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
     "expenditures": null
    }
   ],

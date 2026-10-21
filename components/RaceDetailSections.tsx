@@ -55,6 +55,8 @@ function DetailInfoValue({ value, href, color }: DetailInfoItem) {
 
 type CandidateCardEntry = {
   name: string;
+  /** The race's state: tells apart two candidates who share a name (lib/candidateSlug.ts). */
+  state?: string;
   party: "D" | "R" | "I";
   incumbent?: boolean;
   photo?: string | null;
@@ -334,7 +336,7 @@ export function CandidatesSection({
                   </div>
                 ) : (
                   <CandidateLink
-                    name={candidate.name}
+                    name={candidate.name} state={candidate.state}
                     className={`font-bold whitespace-nowrap overflow-hidden text-ellipsis hover:underline ${isCompact ? "text-sm" : "text-xl"}`}
                     style={{ color: "var(--app-text-primary)" }}
                   >
@@ -361,12 +363,15 @@ export function CandidatesSection({
 
 export function CurrentIncumbentCard({
   incumbentName,
+  state,
   party,
   photo,
   items = [],
   description,
 }: {
   incumbentName: string;
+  /** The seat's state, for the candidate link (two candidates can share a name). */
+  state?: string;
   party: "D" | "R" | "I";
   photo?: string | null;
   items?: DetailInfoItem[];
@@ -420,7 +425,7 @@ export function CurrentIncumbentCard({
         </div>
         <div className="w-full">
           <CandidateLink
-            name={incumbentName}
+            name={incumbentName} state={state}
             className="text-xl font-bold leading-tight mb-1 hover:underline inline-block"
             style={{ color: "var(--app-text-primary)" }}
           >
@@ -463,11 +468,14 @@ export function CurrentIncumbentCard({
 // square portrait treatment as CandidatesLedgerSection, without a vote-share figure.
 export function CurrentIncumbentLedgerRow({
   incumbentName,
+  state,
   party,
   photo,
   compact = false,
 }: {
   incumbentName: string;
+  /** The seat's state, for the candidate link (two candidates can share a name). */
+  state?: string;
   party: "D" | "R" | "I";
   photo?: string | null;
   // Smaller, right-aligned treatment for the race-detail hero (mirrors the
@@ -504,7 +512,7 @@ export function CurrentIncumbentLedgerRow({
         </div>
         <div className="mt-0.5 text-right">
           <CandidateLink
-            name={incumbentName}
+            name={incumbentName} state={state}
             className="hover:underline inline-block"
             style={{ fontFamily: "var(--font-serif)", fontSize: "1.05rem", fontWeight: 700, color: "var(--app-text-primary)", lineHeight: 1.1 }}
           >
@@ -538,7 +546,7 @@ export function CurrentIncumbentLedgerRow({
       </div>
       <div className="min-w-0">
         <CandidateLink
-          name={incumbentName}
+          name={incumbentName} state={state}
           className="hover:underline inline-block"
           style={{ fontFamily: "var(--font-serif)", fontSize: "1.4rem", fontWeight: 700, color: "var(--app-text-primary)", lineHeight: 1.15 }}
         >
@@ -649,7 +657,7 @@ export function CandidatesAndPollsCard({
                 {candidate.placeholder ? (
                   <div className="font-bold text-lg whitespace-nowrap overflow-hidden text-ellipsis italic" style={{ color: "var(--app-text-muted)" }}>{displayName}</div>
                 ) : (
-                  <CandidateLink name={candidate.name} className="font-bold text-lg whitespace-nowrap overflow-hidden text-ellipsis hover:underline" style={{ color: "var(--app-text-primary)" }}>
+                  <CandidateLink name={candidate.name} state={candidate.state} className="font-bold text-lg whitespace-nowrap overflow-hidden text-ellipsis hover:underline" style={{ color: "var(--app-text-primary)" }}>
                     {displayName}
                   </CandidateLink>
                 )}
@@ -723,7 +731,7 @@ export function CandidatesLedgerSection({
                     <span className="italic" style={{ fontFamily: "var(--font-serif)", fontSize: "1.3rem", fontWeight: 700, color: "var(--app-text-muted)" }}>{displayName}</span>
                   ) : (
                     <CandidateLink
-                      name={candidate.name}
+                      name={candidate.name} state={candidate.state}
                       className="hover:underline"
                       style={{ fontFamily: "var(--font-serif)", fontSize: "1.3rem", fontWeight: 700, color: accentColor }}
                     >
@@ -1496,6 +1504,7 @@ export function ForecastCalculationCard({
 
 export function PastElectionResultsSection({
   results,
+  state,
   fallbackYears,
   showElectionType = true,
   showSpecialBadgeForSpecialElections = false,
@@ -1508,6 +1517,8 @@ export function PastElectionResultsSection({
   cardStyle = "boxed",
 }: {
   results?: DetailPastResult[];
+  /** The race's state, for the candidate links (two candidates can share a name). */
+  state?: string;
   fallbackYears: number[];
   showElectionType?: boolean;
   showSpecialBadgeForSpecialElections?: boolean;
@@ -1640,7 +1651,7 @@ export function PastElectionResultsSection({
                   ) : (
                     <span className="text-sm font-semibold min-w-0 truncate" style={{ color: demAccent }}>
                       {res.demCandidate ? (
-                        <CandidateLink name={res.demCandidate} className="hover:underline">{demName}</CandidateLink>
+                        <CandidateLink name={res.demCandidate} state={state} className="hover:underline">{demName}</CandidateLink>
                       ) : demName}
                       {" "}({demParty})
                     </span>
@@ -1667,7 +1678,7 @@ export function PastElectionResultsSection({
                   ) : (
                     <span className="text-sm font-semibold min-w-0 truncate" style={{ color: repAccent }}>
                       {res.repCandidate ? (
-                        <CandidateLink name={res.repCandidate} className="hover:underline">{repName}</CandidateLink>
+                        <CandidateLink name={res.repCandidate} state={state} className="hover:underline">{repName}</CandidateLink>
                       ) : repName}
                       {" "}({repParty})
                     </span>
@@ -1774,6 +1785,7 @@ export function HouseOnlyRecentStatewideResultsSection({
     { year: 2024, race: "Senate", demPct: 0, repPct: 0, demCandidate: "TBD", repCandidate: "TBD", placeholder: true },
     { year: 2022, race: "Governor", demPct: 0, repPct: 0, demCandidate: "TBD", repCandidate: "TBD", placeholder: true },
   ],
+  state,
   density = "default",
   bare = false,
   maxHeight,
@@ -1794,6 +1806,8 @@ export function HouseOnlyRecentStatewideResultsSection({
     swing?: number | null;
     placeholder?: boolean;
   }[];
+  /** The state, for the candidate links (two candidates can share a name). */
+  state?: string;
   density?: DetailDensity;
   bare?: boolean;
   maxHeight?: string;
@@ -1862,7 +1876,7 @@ export function HouseOnlyRecentStatewideResultsSection({
               {/* Dem row */}
               <div className="flex items-baseline gap-2 mb-1">
                 <span className="text-sm font-semibold min-w-0 flex-1 truncate" style={{ color: "var(--party-dem)" }}>
-                  {res.demCandidate ? <CandidateLink name={res.demCandidate} className="hover:underline" /> : "Democratic Candidate"} (D)
+                  {res.demCandidate ? <CandidateLink name={res.demCandidate} state={state} className="hover:underline" /> : "Democratic Candidate"} (D)
                 </span>
                 <div className="flex items-baseline gap-1 ml-auto shrink-0">
                   <span className="text-sm font-bold tabular-nums w-12" style={{ color: "var(--party-dem)" }}>
@@ -1877,7 +1891,7 @@ export function HouseOnlyRecentStatewideResultsSection({
               {/* Rep row */}
               <div className={`flex items-baseline gap-2 ${hasDiffs ? "mb-1.5" : ""}`}>
                 <span className="text-sm font-semibold min-w-0 flex-1 truncate" style={{ color: "var(--party-rep)" }}>
-                  {res.repCandidate ? <CandidateLink name={res.repCandidate} className="hover:underline" /> : "Republican Candidate"} (R)
+                  {res.repCandidate ? <CandidateLink name={res.repCandidate} state={state} className="hover:underline" /> : "Republican Candidate"} (R)
                 </span>
                 <div className="flex items-baseline gap-1 ml-auto shrink-0">
                   <span className="text-sm font-bold tabular-nums w-12" style={{ color: "var(--party-rep)" }}>

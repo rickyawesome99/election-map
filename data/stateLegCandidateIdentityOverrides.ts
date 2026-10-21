@@ -11,7 +11,10 @@ export type IdentityRuling = [abbr: string, a: string, b: string, note: string];
 // Works across surnames too (a married or hyphenated name). Where the spelling itself is simply
 // wrong, fix it at the source instead, as was done for Ohio's "Kristina Daleyroegner" (2016/2018
 // results, now "Kristina Roegner", 2026-10-12).
-export const STATE_LEG_IDENTITY_MERGE: IdentityRuling[] = [];
+export const STATE_LEG_IDENTITY_MERGE: IdentityRuling[] = [
+  ["VA", "R. Lee Ware Jr.", "Lee Ware", "Delegate R. Lee Ware Jr. goes by Lee (HD-65/72); held apart by the first-name rule (user ruling 2026-10-21)"],
+  ["VA", "Robert Lee Ware Jr.", "Lee Ware", "the same delegate's full name (HD-65 2019/2021); user ruling 2026-10-21"],
+];
 
 export const STATE_LEG_IDENTITY_SPLIT: IdentityRuling[] = [];
 

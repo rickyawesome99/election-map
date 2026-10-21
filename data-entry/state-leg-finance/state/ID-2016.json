@@ -146,6 +146,14 @@
   ],
   "11": [
    {
+    "name": "Patricia Hartwell",
+    "candidate": "Pat Day Hartwell",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3048.12,
+    "expenditures": null
+   },
+   {
     "name": "Patti Lodge",
     "candidate": "Patti Anne Lodge",
     "party": "Republican",
@@ -257,7 +265,7 @@
   "18": [
    {
     "name": "Janie Ward-Engelking",
-    "candidate": "Janie Wardengelking",
+    "candidate": "Janie Ward-Engelking",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 28100,
@@ -267,7 +275,7 @@
   "19": [
    {
     "name": "Cherie Buckner-Webb",
-    "candidate": "Cherie Bucknerwebb",
+    "candidate": "Cherie Buckner-Webb",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 32914.57,
@@ -305,7 +313,7 @@
   "22": [
    {
     "name": "Lori Den Hartog",
-    "candidate": "Lori Denhartog",
+    "candidate": "Lori Den Hartog",
     "party": "Republican",
     "incumbent": true,
     "contributions": 27225,
@@ -373,6 +381,16 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 59127.36,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "Kelly Anthon",
+    "candidate": "Kelly Arthur Anthon",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 13300,
     "expenditures": null
    }
   ],
@@ -595,7 +613,7 @@
    },
    {
     "name": "Kenneth  De Vries",
-    "candidate": "Kenneth B. Devries",
+    "candidate": "Kenneth B. de Vries",
     "party": "Other",
     "incumbent": false,
     "contributions": 610.34,
@@ -615,6 +633,14 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 23573.96,
+    "expenditures": null
+   },
+   {
+    "name": "Caroline Troy",
+    "candidate": "Caroline Nilsson Troy",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 76460,
     "expenditures": null
    }
   ],
@@ -805,6 +831,14 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 27730,
+    "expenditures": null
+   },
+   {
+    "name": "Maria Mabbutt",
+    "candidate": "Maria Gonzalez Mabbutt",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4566.65,
     "expenditures": null
    },
    {
@@ -1053,7 +1087,7 @@
    },
    {
     "name": "John Vander Woude",
-    "candidate": "John Vanderwoude",
+    "candidate": "John Vander Woude",
     "party": "Republican",
     "incumbent": true,
     "contributions": 22550,
@@ -1287,7 +1321,7 @@
    },
    {
     "name": "Julie VanOrden",
-    "candidate": "Julie Vanorden",
+    "candidate": "Julie van Orden",
     "party": "Republican",
     "incumbent": true,
     "contributions": 8000,
@@ -1315,7 +1349,7 @@
   "33": [
    {
     "name": "Jim De Angelis",
-    "candidate": "Jim Deangelis",
+    "candidate": "Jim de Angelis",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6480.81,

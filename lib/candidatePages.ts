@@ -8,7 +8,9 @@ import type { CandidatePagePayload, CandidatePageShard } from "@/lib/candidatePa
 // Reads the candidate pages precomputed by scripts/buildCandidatePages.ts (npm run candidate-pages,
 // part of the prebuild / predev chain) from data/generated/candidate-pages/. One shard per state for
 // the state legislative slugs (which end in the state's abbreviation, "-oh") and federal.json for the
-// federal ones, gzipped; a shard is inflated and parsed once per process. The directory is listed in next.config.ts's
+// federal ones, gzipped; a shard is inflated and parsed once per process. A federal slug can also end
+// in a state abbreviation when two candidates share a name ("mike-rogers-mi", lib/candidateSlug.ts):
+// the state shard is tried first and federal.json catches it. The directory is listed in next.config.ts's
 // outputFileTracingIncludes so Vercel ships it with the route.
 
 const DIR = join(process.cwd(), "data", "generated", "candidate-pages");
@@ -55,9 +57,9 @@ export function getCandidatePagePayload(slug: string): CandidatePagePayload | nu
 }
 
 /** The candidate page for a person named on a race page, or null when there is none (no dead links). */
-export function candidatePageHref(name: string | null | undefined): string | null {
+export function candidatePageHref(name: string | null | undefined, state?: string | null): string | null {
   if (!name) return null;
-  const slug = candidateSlug(name);
+  const slug = candidateSlug(name, state);
   if (!slug) return null;
   if (getCandidatePagePayload(slug)) return `/candidates/${slug}`;
   const alias = candidateSlugAlias(slug);

@@ -85,7 +85,7 @@
    },
    {
     "name": "FRIENDS TO ELECT SANDY VAN WAGNER",
-    "candidate": "Sandy Vanwagner",
+    "candidate": "Sandy van Wagner",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 21703.7,
@@ -229,7 +229,7 @@
   "26": [
    {
     "name": "COMMITTEE TO ELECT GAIL MCCANN BEATTY",
-    "candidate": "Gail McCannbeatty",
+    "candidate": "Gail McCann Beatty",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 102878.24,
@@ -365,7 +365,7 @@
   "39": [
    {
     "name": "FRIENDS OF JOE DON MCGAUGH",
-    "candidate": "Joe Donmcgaugh",
+    "candidate": "Joe Don McGaugh",
     "party": "Republican",
     "incumbent": true,
     "contributions": 61725,
@@ -403,7 +403,7 @@
    },
    {
     "name": "Citizens For Cheri Toalson Reisch",
-    "candidate": "Cheri Toalsonreisch",
+    "candidate": "Cheri Toalson Reisch",
     "party": "Republican",
     "incumbent": false,
     "contributions": 25151,
@@ -925,7 +925,7 @@
   "94": [
    {
     "name": "CITIZENS FOR VICKI LORENZ ENGLUND",
-    "candidate": "Vicki Lorenzenglund",
+    "candidate": "Vicki Lorenz Englund",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 154407.93,
@@ -1481,7 +1481,7 @@
   "151": [
    {
     "name": "CITIZENS FOR TILA ROWLAND HUBRECHT",
-    "candidate": "Tila Rowlandhubrecht",
+    "candidate": "Tila Rowland Hubrecht",
     "party": "Republican",
     "incumbent": true,
     "contributions": 30150,
@@ -1697,6 +1697,16 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 2305304.98,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "WILLIAM T WAYNE FOR SENATE",
+    "candidate": "William Truman Wayne",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 314,
     "expenditures": null
    }
   ],

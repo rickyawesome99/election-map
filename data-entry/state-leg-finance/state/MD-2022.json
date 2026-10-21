@@ -43,7 +43,7 @@
   "3": [
    {
     "name": "LEWIS YOUNG, KAREN",
-    "candidate": "Karen Lewisyoung",
+    "candidate": "Karen Lewis Young",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 176283.98,
@@ -83,6 +83,16 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 247159.93,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "SALLING, JOHNNY R.",
+    "candidate": "Johnny Salling",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 59522.05,
     "expenditures": null
    }
   ],
@@ -590,6 +600,14 @@
   ],
   "4": [
    {
+    "name": "MILLER, APRIL F.",
+    "candidate": "April Fleming Miller",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 17223.69,
+    "expenditures": null
+   },
+   {
     "name": "CILIBERTI, BARRIE S.",
     "candidate": "Barrie S. Ciliberti",
     "party": "Republican",
@@ -841,7 +859,7 @@
    },
    {
     "name": "PALAKOVICH CARR, JULIE A.",
-    "candidate": "Julie Palakovichcarr",
+    "candidate": "Julie Palakovich Carr",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 58302.37,
@@ -961,7 +979,7 @@
    },
    {
     "name": "Pena-Melnyk, Joseline A.",
-    "candidate": "Joseline A. Penamelnyk",
+    "candidate": "Joseline A. Pena-Melnyk",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 185296.92,
@@ -1019,6 +1037,14 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 39413.08,
+    "expenditures": null
+   },
+   {
+    "name": "HARRISON, ANDREA C.",
+    "candidate": "Andrea Fletcher Harrison",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 173137,
     "expenditures": null
    },
    {
@@ -1505,7 +1531,7 @@
   "37A": [
    {
     "name": "SAMPLE-HUGHES, SHEREE L.",
-    "candidate": "Sheree Samplehughes",
+    "candidate": "Sheree Sample-Hughes",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 88255.22,
@@ -1639,7 +1665,7 @@
    },
    {
     "name": "DELEAN-BOTKIN, SUSAN E.",
-    "candidate": "Susan E. Deleanbotkin",
+    "candidate": "Susan E. Delean-Botkin",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 42951,
@@ -1901,6 +1927,16 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 24575.95,
+    "expenditures": null
+   }
+  ],
+  "35B": [
+   {
+    "name": "HORNBERGER, KEVIN B.",
+    "candidate": "Kevin Bailey Hornberger",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 70449,
     "expenditures": null
    }
   ],

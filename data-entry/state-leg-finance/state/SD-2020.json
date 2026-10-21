@@ -43,7 +43,7 @@
    },
    {
     "name": "Daryl Root",
-    "candidate": "Daryl Root",
+    "candidate": "Daryl Lamar Root",
     "party": "Other",
     "incumbent": false,
     "contributions": 0,
@@ -273,7 +273,7 @@
    },
    {
     "name": "Dan Kerner Andersson",
-    "candidate": "Dan Kernerandersson",
+    "candidate": "Dan Kerner Andersson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 8783.15,
@@ -311,6 +311,14 @@
    }
   ],
   "25": [
+   {
+    "name": "Seth Van't Hof",
+    "candidate": "Seth William Van'T Hof",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 500,
+    "expenditures": null
+   },
    {
     "name": "Rick Knobe",
     "candidate": "Rick W. Knobe",
@@ -395,7 +403,7 @@
   "30": [
    {
     "name": "Julie Frye-Mueller",
-    "candidate": "Julie Fryemueller",
+    "candidate": "Julie Frye-Mueller",
     "party": "Republican",
     "incumbent": false,
     "contributions": 9785,
@@ -489,10 +497,18 @@
   "1": [
    {
     "name": "Tamara StJohn",
-    "candidate": "Tamara Stjohn",
+    "candidate": "Tamara St John",
     "party": "Republican",
     "incumbent": true,
     "contributions": 10378.2,
+    "expenditures": null
+   },
+   {
+    "name": "Jennifer Keintz",
+    "candidate": "Jennifer Healy Keintz",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17769.1,
     "expenditures": null
    }
   ],
@@ -769,7 +785,7 @@
   "13": [
    {
     "name": "Sue Peterson",
-    "candidate": "Sue Peterson",
+    "candidate": "Sue Lucas Peterson",
     "party": "Republican",
     "incumbent": true,
     "contributions": 41881.87,
@@ -1103,7 +1119,7 @@
   "30": [
    {
     "name": "Timothy Goodwin",
-    "candidate": "Tim R. Goodwin",
+    "candidate": "Tim Ray Goodwin",
     "party": "Republican",
     "incumbent": true,
     "contributions": 9750,

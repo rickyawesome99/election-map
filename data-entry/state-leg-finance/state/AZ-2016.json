@@ -35,7 +35,7 @@
   "3": [
    {
     "name": "OLIVIA CAJERO BEDFORD",
-    "candidate": "Olivia Cajerobedford",
+    "candidate": "Olivia Cajero Bedford",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 10170,
@@ -65,7 +65,7 @@
   "6": [
    {
     "name": "Nikki (Check) Bagley",
-    "candidate": "Nikki Checkbagley",
+    "candidate": "Nikki (Check) Bagley",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 121485.95,
@@ -73,7 +73,7 @@
    },
    {
     "name": "Sylvia Tenney ALLEN",
-    "candidate": "Sylvia Tenneyallen",
+    "candidate": "Sylvia Tenney Allen",
     "party": "Republican",
     "incumbent": true,
     "contributions": 69223.34,
@@ -272,6 +272,16 @@
     "expenditures": null
    }
   ],
+  "19": [
+   {
+    "name": "Guadalupe Contreras",
+    "candidate": "Lupe Chavira Contreras",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 26800,
+    "expenditures": null
+   }
+  ],
   "20": [
    {
     "name": "Larry Herrera",
@@ -371,7 +381,7 @@
   "28": [
    {
     "name": "KATE BROPHY MCGEE",
-    "candidate": "Kate Brophymcgee",
+    "candidate": "Kate Brophy McGee",
     "party": "Republican",
     "incumbent": false,
     "contributions": 191331.98,
@@ -635,7 +645,7 @@
    },
    {
     "name": "Pamela Hannley",
-    "candidate": "Pamela Powershannley",
+    "candidate": "Pamela Powers Hannley",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4836.26,
@@ -947,7 +957,7 @@
    },
    {
     "name": "Deanna Rasmussen-Lacotta",
-    "candidate": "Deanna Rasmussenlacotta",
+    "candidate": "Deanna Rasmussen-Lacotta",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1870,
@@ -1007,7 +1017,7 @@
    },
    {
     "name": "Michelle Ugenti-Rita",
-    "candidate": "Michelle Ugentirita",
+    "candidate": "Michelle Ugenti-Rita",
     "party": "Republican",
     "incumbent": true,
     "contributions": 64500.5,
@@ -1163,6 +1173,14 @@
    }
   ],
   "30": [
+   {
+    "name": "GARY COX",
+    "candidate": "Gary Leon Cox",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 265,
+    "expenditures": null
+   },
    {
     "name": "Ray Martinez",
     "candidate": "Ray Martinez",

@@ -611,7 +611,7 @@
   "37": [
    {
     "name": "Friends for Ruth Briggs King",
-    "candidate": "Ruth Briggsking",
+    "candidate": "Ruth Briggs King",
     "party": "Republican",
     "incumbent": true,
     "contributions": 36989.73,
@@ -651,6 +651,16 @@
     "party": "Other",
     "incumbent": false,
     "contributions": 750,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Tim Dukes for State Representative",
+    "candidate": "Timothy Dale Dukes",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 13125,
     "expenditures": null
    }
   ],

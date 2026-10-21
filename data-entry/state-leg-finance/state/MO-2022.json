@@ -101,7 +101,7 @@
   "9": [
    {
     "name": "Dean VanSchoiack",
-    "candidate": "Dean Vanschoiack",
+    "candidate": "Dean van Schoiack",
     "party": "Republican",
     "incumbent": true,
     "contributions": 38843.01,
@@ -311,6 +311,16 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 41428.88,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Ashley Manlove",
+    "candidate": "Ashley Bland Manlove",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 38358.36,
     "expenditures": null
    }
   ],
@@ -557,7 +567,7 @@
   "44": [
    {
     "name": "CHERI REISCH",
-    "candidate": "Cheri Toalsonreisch",
+    "candidate": "Cheri Toalson Reisch",
     "party": "Republican",
     "incumbent": true,
     "contributions": 15980,
@@ -585,7 +595,7 @@
   "46": [
    {
     "name": "David Smith",
-    "candidate": "David Tysonsmith",
+    "candidate": "David Tyson Smith",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 30053,
@@ -763,7 +773,7 @@
   "60": [
    {
     "name": "J Don Salcedo",
-    "candidate": "J. Donsalcedo",
+    "candidate": "J. Don Salcedo",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9633.77,
@@ -857,7 +867,7 @@
   "67": [
    {
     "name": "Chantelle Nickson-Clark",
-    "candidate": "Chantelle N. Nicksonclark",
+    "candidate": "Chantelle Nickson-Clark",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 23613.7,
@@ -1067,7 +1077,7 @@
   "85": [
    {
     "name": "Yolonda Fountain-Henderson",
-    "candidate": "Yolonda Fountainhenderson",
+    "candidate": "Yolonda Fountain-Henderson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3367.27,
@@ -1171,7 +1181,7 @@
   "93": [
    {
     "name": "Bridget Moore",
-    "candidate": "Bridget Walshmoore",
+    "candidate": "Bridget Walsh Moore",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 42562.82,
@@ -1503,7 +1513,7 @@
   "115": [
    {
     "name": "Cyndi Buchheit-Courtway",
-    "candidate": "Cyndi Buchheitcourtway",
+    "candidate": "Cyndi Buchheit-Courtway",
     "party": "Republican",
     "incumbent": true,
     "contributions": 90509,
@@ -1820,6 +1830,14 @@
     "incumbent": false,
     "contributions": 10497.33,
     "expenditures": null
+   },
+   {
+    "name": "Jamie Gragg",
+    "candidate": "Jamie Ray Gragg",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 8071.96,
+    "expenditures": null
    }
   ],
   "141": [
@@ -1921,7 +1939,7 @@
   "150": [
    {
     "name": "Cameron Parker",
-    "candidate": "Cameron Buntingparker",
+    "candidate": "Cameron Bunting Parker",
     "party": "Republican",
     "incumbent": false,
     "contributions": 29905,
@@ -1975,6 +1993,14 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 25011.8,
+    "expenditures": null
+   },
+   {
+    "name": "Ginger Witty",
+    "candidate": "Ginger Kissee Witty",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8868.94,
     "expenditures": null
    }
   ],

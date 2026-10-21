@@ -133,7 +133,7 @@
   "8": [
    {
     "name": "Crouse, Kathie Hess",
-    "candidate": "Kathie Hesscrouse",
+    "candidate": "Kathie Hess Crouse",
     "party": "Republican",
     "incumbent": false,
     "contributions": 30127,
@@ -795,7 +795,7 @@
    },
    {
     "name": "White, Phyllis",
-    "candidate": "Phyllis White",
+    "candidate": "Phyllis Riffe White",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3221.35,
@@ -881,7 +881,7 @@
    },
    {
     "name": "Perry, Susan Shelton",
-    "candidate": "Susan Sheltonperry",
+    "candidate": "Susan Shelton Perry",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 20632.47,
@@ -1185,7 +1185,7 @@
    },
    {
     "name": "Estep-Burton, Amanda",
-    "candidate": "Amanda Estepburton",
+    "candidate": "Amanda Estep-Burton",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 47846.94,
@@ -1309,7 +1309,7 @@
    },
    {
     "name": "Lavender-Bowe, Cindy",
-    "candidate": "Cindy Lavenderbowe",
+    "candidate": "Cindy Lavender-Bowe",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 81428.26,
@@ -1673,7 +1673,7 @@
   "52": [
    {
     "name": "Sypolt, Terri Funk",
-    "candidate": "Terri Funksypolt",
+    "candidate": "Terri Funk Sypolt",
     "party": "Republican",
     "incumbent": true,
     "contributions": 19250,
@@ -1689,6 +1689,14 @@
    }
   ],
   "53": [
+   {
+    "name": "Jennings, D.R. \"Buck\"",
+    "candidate": "D. R. Jennings",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3900,
+    "expenditures": null
+   },
    {
     "name": "Chase, Cory",
     "candidate": "Cory Chase",
@@ -1827,7 +1835,7 @@
    },
    {
     "name": "Mongan-Saladini, Kimberly Ann",
-    "candidate": "Kim Mongansaladini",
+    "candidate": "Kim Mongan-Saladini",
     "party": "Republican",
     "incumbent": false,
     "contributions": 175,
@@ -1881,7 +1889,7 @@
   "64": [
    {
     "name": "Householder, Eric L.",
-    "candidate": "Eric L. Householder",
+    "candidate": "Eric Lee Householder",
     "party": "Republican",
     "incumbent": true,
     "contributions": 41600,

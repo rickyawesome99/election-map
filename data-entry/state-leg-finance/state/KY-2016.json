@@ -88,6 +88,14 @@
   ],
   "6": [
    {
+    "name": "Paula Robinson",
+    "candidate": "Paula Rush Robinson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 19486.72,
+    "expenditures": 28487.41
+   },
+   {
     "name": "Will Coursey",
     "candidate": "Will R. Coursey",
     "party": "Democratic",
@@ -122,6 +130,14 @@
     "incumbent": false,
     "contributions": 102600.2,
     "expenditures": 111983.65
+   },
+   {
+    "name": "Walker Thomas",
+    "candidate": "Walker Wood Thomas",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 24048.89,
+    "expenditures": 37453.69
    }
   ],
   "9": [
@@ -232,6 +248,14 @@
     "incumbent": true,
     "contributions": 59029.78,
     "expenditures": 116409.4
+   },
+   {
+    "name": "Melinda Prunty",
+    "candidate": "Melinda Gibbons Prunty",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 68157.41,
+    "expenditures": 79724.63
    }
   ],
   "16": [
@@ -273,6 +297,14 @@
    }
   ],
   "19": [
+   {
+    "name": "John Smith",
+    "candidate": "John Wayne Smith",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": 200
+   },
    {
     "name": "Michael Meredith",
     "candidate": "Michael Lee Meredith",
@@ -588,6 +620,16 @@
     "expenditures": 3460
    }
   ],
+  "41": [
+   {
+    "name": "Attica Scott",
+    "candidate": "Attica Woodson Scott",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 30728.77,
+    "expenditures": 33882.49
+   }
+  ],
   "42": [
    {
     "name": "James Howland",
@@ -706,6 +748,14 @@
     "incumbent": false,
     "contributions": 8825.7,
     "expenditures": 5280.2
+   },
+   {
+    "name": "Linda Belcher",
+    "candidate": "Linda Howlett Belcher",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 66891,
+    "expenditures": 87617.43
    }
   ],
   "50": [
@@ -822,6 +872,14 @@
   ],
   "58": [
    {
+    "name": "Cyndi Skellie",
+    "candidate": "Cyndi Powell Skellie",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 33824.38,
+    "expenditures": 47858.99
+   },
+   {
     "name": "Rob Rothenburger",
     "candidate": "Rob Rothenburger",
     "party": "Republican",
@@ -881,7 +939,7 @@
   "63": [
    {
     "name": "Diane St. Onge",
-    "candidate": "Diane Stonge",
+    "candidate": "Diane St Onge",
     "party": "Republican",
     "incumbent": false,
     "contributions": 18047.48,
@@ -889,6 +947,14 @@
    }
   ],
   "64": [
+   {
+    "name": "Kimberly Moser",
+    "candidate": "Kimberly Poore Moser",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 104666.5,
+    "expenditures": 131330.33
+   },
    {
     "name": "Lucas Deaton",
     "candidate": "Lucas Deaton",
@@ -959,7 +1025,7 @@
    },
    {
     "name": "John Van Meter",
-    "candidate": "John Vanmeter",
+    "candidate": "John van Meter",
     "party": "Republican",
     "incumbent": false,
     "contributions": 400411.79,
@@ -1117,7 +1183,7 @@
   "81": [
    {
     "name": "C. Wesley Morgan",
-    "candidate": "C. Wesleymorgan",
+    "candidate": "C. Wesley Morgan",
     "party": "Republican",
     "incumbent": false,
     "contributions": 85062.71,
@@ -1285,7 +1351,7 @@
    },
    {
     "name": "Norma Kirk-Mccormick",
-    "candidate": "Norma Kirkmccormick",
+    "candidate": "Norma Kirk-McCormick",
     "party": "Republican",
     "incumbent": false,
     "contributions": 96156.9,
@@ -1636,6 +1702,16 @@
     "incumbent": false,
     "contributions": 4356,
     "expenditures": 4568.61
+   }
+  ],
+  "35": [
+   {
+    "name": "Denise Angel",
+    "candidate": "Denise Harper Angel",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 23030,
+    "expenditures": 72369.91
    }
   ],
   "37": [

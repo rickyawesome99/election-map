@@ -30,7 +30,7 @@ export function withProjectedVotes<T extends { pct: number; votes?: number }>(ca
 
 // `candidates`, when given, replaces the section's own candidate rows: the race pages pass their
 // portrait rows (CandidatesLedgerSection fed through withProjectedVotes) so one section carries both.
-export default function ProjectedVoteSection({ p, candidates }: { p: ProjectedRaceResult; candidates?: ReactNode }) {
+export default function ProjectedVoteSection({ p, candidates, state }: { p: ProjectedRaceResult; candidates?: ReactNode; /** The race's state, for the fallback candidate links. */ state?: string }) {
   const decided = p.contest === "uncontested-D" || p.contest === "uncontested-R";
   // Two nominees of one party: the forecast only says the party keeps the seat, not which of them
   // wins, so the section shows the electorate but no split between them.
@@ -72,7 +72,7 @@ export default function ProjectedVoteSection({ p, candidates }: { p: ProjectedRa
               <span className="h-8 rounded-sm" style={{ background: color }} />
               <div className="min-w-0">
                 <div className="truncate text-sm font-semibold" style={{ color }}>
-                  {PLACEHOLDER.test(c.name.trim()) ? c.name : <CandidateLink name={c.name} className="hover:underline">{c.name}</CandidateLink>}
+                  {PLACEHOLDER.test(c.name.trim()) ? c.name : <CandidateLink name={c.name} state={state} className="hover:underline">{c.name}</CandidateLink>}
                 </div>
                 <div className="text-[11px]" style={{ color: "var(--app-text-muted)" }}>{partyName(c.party)}{decided && c.votes > 0 ? " · Unopposed" : ""}</div>
               </div>

@@ -111,7 +111,7 @@
   "3rd Berkshire": [
    {
     "name": "Farley-Bouvier, Tricia",
-    "candidate": "Tricia Farleybouvier",
+    "candidate": "Tricia Farley-Bouvier",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 21877.74,
@@ -319,7 +319,7 @@
    },
    {
     "name": "Rocco-Runnion, Jennifer",
-    "candidate": "Jennifer A. Roccorunnion",
+    "candidate": "Jennifer A. Rocco-Runnion",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 35737.02,
@@ -779,7 +779,7 @@
    },
    {
     "name": "Goldstein-Rose, Solomon",
-    "candidate": "Solomon Israel Goldsteinrose",
+    "candidate": "Solomon Israel Goldstein-Rose",
     "party": "Other",
     "incumbent": true,
     "contributions": 9132.39,
@@ -922,6 +922,16 @@
     "expenditures": 17773.39
    }
   ],
+  "13th Middlesex": [
+   {
+    "name": "Gentile, Carmine",
+    "candidate": "Carmine Lawrence Gentile",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 12960,
+    "expenditures": 2356.81
+   }
+  ],
   "14th Middlesex": [
    {
     "name": "Factor, Daniel L.",
@@ -996,6 +1006,14 @@
     "incumbent": false,
     "contributions": 56564.8,
     "expenditures": 27264.53
+   },
+   {
+    "name": "Robertson, David A.",
+    "candidate": "David Allen Robertson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 22275,
+    "expenditures": 20041.32
    }
   ],
   "20th Middlesex": [
@@ -1132,6 +1150,14 @@
     "incumbent": false,
     "contributions": 80307.87,
     "expenditures": 54584.12
+   },
+   {
+    "name": "Day, Michael",
+    "candidate": "Michael Seamus Day",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 125861.97,
+    "expenditures": 122855.29
    }
   ],
   "32nd Middlesex": [
@@ -1375,7 +1401,7 @@
   "14th Norfolk": [
    {
     "name": "Peisch, Alice Hanlon",
-    "candidate": "Alice Hanlonpeisch",
+    "candidate": "Alice Hanlon Peisch",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 29329.81,
@@ -1829,7 +1855,7 @@
   "3rd Worcester": [
    {
     "name": "Eubanks-Archbold, Elmer",
-    "candidate": "Elmer Eubanksarchbold",
+    "candidate": "Elmer Eubanks-Archbold",
     "party": "Republican",
     "incumbent": false,
     "contributions": 10089.47,
@@ -1893,7 +1919,7 @@
   "7th Worcester": [
    {
     "name": "Dotson, Terry Burke",
-    "candidate": "Terry Burkedotson",
+    "candidate": "Terry Burke Dotson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 2500,
@@ -2033,7 +2059,7 @@
    },
    {
     "name": "LeBoeuf, David Henry Argosky",
-    "candidate": "David Henry Argoskyleboeuf",
+    "candidate": "David Henry Argosky Leboeuf",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 65060.93,
@@ -2214,6 +2240,24 @@
     "expenditures": 133861.04
    }
   ],
+  "Middlesex and Norfolk": [
+   {
+    "name": "Creem, Cynthia S.",
+    "candidate": "Cynthia Stone Creem",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 38635,
+    "expenditures": 28382.99
+   },
+   {
+    "name": "Spilka, Karen",
+    "candidate": "Karen E. Spilka",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 512897.4,
+    "expenditures": 347957.34
+   }
+  ],
   "First Middlesex": [
    {
     "name": "Kennedy, Edward",
@@ -2242,16 +2286,6 @@
     "expenditures": 11545.35
    }
   ],
-  "Middlesex and Norfolk": [
-   {
-    "name": "Spilka, Karen",
-    "candidate": "Karen E. Spilka",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 512897.4,
-    "expenditures": 347957.34
-   }
-  ],
   "Third Middlesex": [
    {
     "name": "Barrett, Michael J.",
@@ -2275,7 +2309,7 @@
   "Fifth Middlesex": [
    {
     "name": "Calvo-Bacci, Erin K.",
-    "candidate": "Erin K. Calvobacci",
+    "candidate": "Erin K. Calvo-Bacci",
     "party": "Republican",
     "incumbent": false,
     "contributions": 44190.9,
@@ -2293,7 +2327,7 @@
   "Middlesex and Suffolk": [
    {
     "name": "DiDomenico, Sal N.",
-    "candidate": "Sal N. Didomenico",
+    "candidate": "Sal N. di Domenico",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 207147.75,
@@ -2430,6 +2464,16 @@
     "expenditures": 561001.61
    }
   ],
+  "Second Suffolk": [
+   {
+    "name": "Chang-Díaz, Sonia",
+    "candidate": "Sonia Rosa Chang-Diaz",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 50681,
+    "expenditures": 11955.21
+   }
+  ],
   "plymouthnorfolk": [
    {
     "name": "Gill, Stephen",
@@ -2497,7 +2541,7 @@
   "Worcester and Middlesex": [
    {
     "name": "Chalifoux Zephir, Susan",
-    "candidate": "Susan A. Chalifouxzephir",
+    "candidate": "Susan A. Chalifoux Zephir",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 220596.63,

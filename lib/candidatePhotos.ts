@@ -1,3 +1,5 @@
+import { candidateSlug } from "@/lib/candidateSlug";
+
 /**
  * Map candidate names to image paths under /public/candidates/.
  * Drop any image file into public/candidates/ and add an entry here.
@@ -466,7 +468,7 @@ export const candidatePhotos: Record<string, string> = {
   "Scott Perry": "/candidates/scott-perry.jpg",
   "August Pfluger": "/candidates/august-pfluger.jpg",
   "Guy Reschenthaler": "/candidates/guy-reschenthaler.jpg",
-  "Mike Rogers": "/candidates/mike-rogers.jpg",
+  "Mike Rogers": "/candidates/mike-rogers.jpg", // Alabama (AL-03); Michigan's Mike Rogers is in candidatePhotosBySlug
   "Harold Rogers": "/candidates/harold-rogers.jpg",
   "John Rose": "/candidates/john-rose.jpg",
   "David Rouzer": "/candidates/david-rouzer.jpg",
@@ -652,3 +654,15 @@ export const candidatePhotos: Record<string, string> = {
   "Joe Biden": "/candidates/joe-biden.jpg",
   "Kamala Harris": "/candidates/kamala-harris.jpg",
 };
+
+/** Photos for people who share a name with another candidate, keyed by their page slug
+ *  (lib/candidateSlug.ts) since the name alone does not say who they are. */
+export const candidatePhotosBySlug: Record<string, string> = {
+  "mike-rogers-mi": "/candidates/mike-rogers-mi.jpg", // Michigan (2024 + 2026 U.S. Senate nominee)
+};
+
+/** A candidate's photo, or null. The race's state tells apart two people who share a name. */
+export function candidatePhoto(name: string | null | undefined, state?: string | null): string | null {
+  if (!name) return null;
+  return candidatePhotosBySlug[candidateSlug(name, state)] ?? candidatePhotos[name] ?? null;
+}

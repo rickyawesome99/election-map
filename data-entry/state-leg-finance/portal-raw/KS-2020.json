@@ -1,0 +1,2193 @@
+{
+ "state": "KS",
+ "cycle": 2020,
+ "source": "Kansas Secretary of State Campaign Finance Viewer (receipts and expenditures reports: contributions and other receipts + in-kind)",
+ "fetched": "2026-10-20",
+ "dataThrough": "12/31/2020",
+ "candidates": [
+  {
+   "name": "Samantha M Poetter",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 16060.0,
+   "expenditures": 11129.72,
+   "periods": 3
+  },
+  {
+   "name": "Mari-Lynn S Poskin",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 104094.24,
+   "expenditures": 85047.59,
+   "periods": 4
+  },
+  {
+   "name": "Rashard D Young",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 60640.9,
+   "expenditures": 60367.1,
+   "periods": 3
+  },
+  {
+   "name": "elliott adams",
+   "chamber": "house",
+   "district": "101",
+   "contributions": 5322.55,
+   "expenditures": 2821.92,
+   "periods": 3
+  },
+  {
+   "name": "Janet Rine",
+   "chamber": "house",
+   "district": "84",
+   "contributions": 5120.0,
+   "expenditures": 5000.0,
+   "periods": 3
+  },
+  {
+   "name": "Timothy B Reed",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 0.0,
+   "expenditures": 0,
+   "periods": 3
+  },
+  {
+   "name": "CHARLES E SMITH",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 14905.0,
+   "expenditures": 17184.6,
+   "periods": 4
+  },
+  {
+   "name": "Bill M Sutton",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 26425.8,
+   "expenditures": 20755.21,
+   "periods": 4
+  },
+  {
+   "name": "BARKER JOHN",
+   "chamber": "house",
+   "district": "70",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 3
+  },
+  {
+   "name": "BYERS STEPHANIE",
+   "chamber": "house",
+   "district": "86",
+   "contributions": 42267.31,
+   "expenditures": 43483.39,
+   "periods": 3
+  },
+  {
+   "name": "CARLIN SYDNEY",
+   "chamber": "house",
+   "district": "66",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "CARLSON SUZI",
+   "chamber": "house",
+   "district": "64",
+   "contributions": 27562.04,
+   "expenditures": 18389.03,
+   "periods": 4
+  },
+  {
+   "name": "CARMICHAEL JOHN",
+   "chamber": "house",
+   "district": "92",
+   "contributions": 55661.04,
+   "expenditures": 62322.41,
+   "periods": 4
+  },
+  {
+   "name": "CARPENTER WILL",
+   "chamber": "house",
+   "district": "75",
+   "contributions": 40566.8,
+   "expenditures": 30588.62,
+   "periods": 4
+  },
+  {
+   "name": "CLINTON JERRY",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 16735.0,
+   "expenditures": 15703.86,
+   "periods": 3
+  },
+  {
+   "name": "CONCHOLA GREG",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 3465.0,
+   "expenditures": 1908.51,
+   "periods": 2
+  },
+  {
+   "name": "CURTIS PAM",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 41604.23,
+   "expenditures": 31765.04,
+   "periods": 4
+  },
+  {
+   "name": "DIRKS JANE",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 50190.94,
+   "expenditures": 36723.16,
+   "periods": 2
+  },
+  {
+   "name": "DODSON MICHAEL",
+   "chamber": "house",
+   "district": "67",
+   "contributions": 27963.65,
+   "expenditures": 17366.73,
+   "periods": 2
+  },
+  {
+   "name": "DONOHOE OWEN",
+   "chamber": "house",
+   "district": "39",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "ELLIS RONALD",
+   "chamber": "house",
+   "district": "47",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 3
+  },
+  {
+   "name": "ESTES SUSAN",
+   "chamber": "house",
+   "district": "87",
+   "contributions": 78305.62,
+   "expenditures": 54288.81,
+   "periods": 4
+  },
+  {
+   "name": "FAIRCHILD BRETT",
+   "chamber": "house",
+   "district": "113",
+   "contributions": 24230.2,
+   "expenditures": 15510.1,
+   "periods": 3
+  },
+  {
+   "name": "FINLEY PAM",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 1380.0,
+   "expenditures": 1491.84,
+   "periods": 4
+  },
+  {
+   "name": "FREDERICK TERRY",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 36496.8,
+   "expenditures": 11126.33,
+   "periods": 3
+  },
+  {
+   "name": "FROWNFELTER STAN",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 48135.0,
+   "expenditures": 66648.49,
+   "periods": 4
+  },
+  {
+   "name": "GILSTRAP MARK",
+   "chamber": "house",
+   "district": "36",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 2
+  },
+  {
+   "name": "Cathy Gordon",
+   "chamber": "house",
+   "district": "18",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "GRANT LYNN",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 41651.4,
+   "expenditures": 29442.85,
+   "periods": 3
+  },
+  {
+   "name": "GREGORY MARCEY",
+   "chamber": "house",
+   "district": "85",
+   "contributions": 27561.33,
+   "expenditures": 25489.31,
+   "periods": 3
+  },
+  {
+   "name": "HAYNES SUSANNE",
+   "chamber": "house",
+   "district": "103",
+   "contributions": 720.27,
+   "expenditures": 513.76,
+   "periods": 3
+  },
+  {
+   "name": "HELMER CHERYL",
+   "chamber": "house",
+   "district": "79",
+   "contributions": 23295.0,
+   "expenditures": 20136.44,
+   "periods": 4
+  },
+  {
+   "name": "HENDERSON BRODERICK",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 17697.0,
+   "expenditures": 19350.87,
+   "periods": 4
+  },
+  {
+   "name": "Tim C Hodge",
+   "chamber": "house",
+   "district": "72",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "HOLMQUIST RYAN",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 51383.43,
+   "expenditures": 61719.32,
+   "periods": 3
+  },
+  {
+   "name": "HOWARD RON",
+   "chamber": "house",
+   "district": "98",
+   "contributions": 29942.19,
+   "expenditures": 18684.54,
+   "periods": 4
+  },
+  {
+   "name": "HOYE JO ELLA",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 103859.01,
+   "expenditures": 66741.9,
+   "periods": 4
+  },
+  {
+   "name": "HUMPHRIES SUSAN",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 32846.0,
+   "expenditures": 28012.98,
+   "periods": 4
+  },
+  {
+   "name": "JACOBS TREVOR",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 14152.75,
+   "expenditures": 9827.69,
+   "periods": 4
+  },
+  {
+   "name": "JERCHA SALLY",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 71589.17,
+   "expenditures": 64536.83,
+   "periods": 4
+  },
+  {
+   "name": "JOHNSON STEVEN",
+   "chamber": "house",
+   "district": "108",
+   "contributions": 36171.83,
+   "expenditures": 24661.66,
+   "periods": 4
+  },
+  {
+   "name": "KELLY JAMES",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 23975.0,
+   "expenditures": 23017.36,
+   "periods": 4
+  },
+  {
+   "name": "KUETHER ANNIE",
+   "chamber": "house",
+   "district": "55",
+   "contributions": 35560.0,
+   "expenditures": 51323.65,
+   "periods": 4
+  },
+  {
+   "name": "MACKEY JORDAN",
+   "chamber": "house",
+   "district": "33",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 3
+  },
+  {
+   "name": "MILLER VIC",
+   "chamber": "house",
+   "district": "58",
+   "contributions": 12235.42,
+   "expenditures": 13106.21,
+   "periods": 4
+  },
+  {
+   "name": "Michael L Murphy",
+   "chamber": "house",
+   "district": "114",
+   "contributions": 13045.0,
+   "expenditures": 12403.74,
+   "periods": 3
+  },
+  {
+   "name": "NEIGHBOR CINDY",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 47216.2,
+   "expenditures": 51250.26,
+   "periods": 3
+  },
+  {
+   "name": "OHAEBOSIM KC",
+   "chamber": "house",
+   "district": "89",
+   "contributions": 20486.67,
+   "expenditures": 14479.8,
+   "periods": 4
+  },
+  {
+   "name": "PARISHO CHRISTOPHER",
+   "chamber": "house",
+   "district": "95",
+   "contributions": 1850.0,
+   "expenditures": 1064.87,
+   "periods": 3
+  },
+  {
+   "name": "Brett Parker",
+   "chamber": "house",
+   "district": "29",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 3
+  },
+  {
+   "name": "PHELPS  EBER",
+   "chamber": "house",
+   "district": "111",
+   "contributions": 21888.35,
+   "expenditures": 23384.75,
+   "periods": 4
+  },
+  {
+   "name": "PRINGLE MARK",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 3780.45,
+   "expenditures": 3356.95,
+   "periods": 3
+  },
+  {
+   "name": "PROEHL RICHARD",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 25471.62,
+   "expenditures": 81431.69,
+   "periods": 4
+  },
+  {
+   "name": "John Resman",
+   "chamber": "house",
+   "district": "121",
+   "contributions": 17520.0,
+   "expenditures": 14848.46,
+   "periods": 4
+  },
+  {
+   "name": "ROBBINS DAVID",
+   "chamber": "house",
+   "district": "83",
+   "contributions": 5572.92,
+   "expenditures": 2246.91,
+   "periods": 2
+  },
+  {
+   "name": "RUIZ LOUIS",
+   "chamber": "house",
+   "district": "31",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 3
+  },
+  {
+   "name": "Susan Ruiz",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 40270.59,
+   "expenditures": 29803.28,
+   "periods": 4
+  },
+  {
+   "name": "SANDERS CLARKE",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 19846.7,
+   "expenditures": 19095.4,
+   "periods": 3
+  },
+  {
+   "name": "SCOGGINS HARRIET",
+   "chamber": "house",
+   "district": "119",
+   "contributions": 12776.01,
+   "expenditures": 12045.11,
+   "periods": 3
+  },
+  {
+   "name": "SEIWERT JOE",
+   "chamber": "house",
+   "district": "101",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 3
+  },
+  {
+   "name": "SNELSON MARK DAVID",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 2245.0,
+   "expenditures": 1374.89,
+   "periods": 2
+  },
+  {
+   "name": "Carl Turner",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 27019.28,
+   "expenditures": 25276.88,
+   "periods": 3
+  },
+  {
+   "name": "VICTORS PONKA WE",
+   "chamber": "house",
+   "district": "103",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "WEIGEL VIRGIL",
+   "chamber": "house",
+   "district": "56",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "WINN VALDENIA",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 13096.5,
+   "expenditures": 11119.06,
+   "periods": 4
+  },
+  {
+   "name": "Dave R Baker",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 26074.28,
+   "expenditures": 17344.7,
+   "periods": 4
+  },
+  {
+   "name": "BALLARD BARBARA",
+   "chamber": "house",
+   "district": "44",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "BISHOP ELIZABETH",
+   "chamber": "house",
+   "district": "88",
+   "contributions": 14864.57,
+   "expenditures": 8129.23,
+   "periods": 1
+  },
+  {
+   "name": "CLARK LONNIE",
+   "chamber": "house",
+   "district": "65",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 3
+  },
+  {
+   "name": "Tim Clothier",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 28118.85,
+   "expenditures": 27990.0,
+   "periods": 4
+  },
+  {
+   "name": "Henry M Helgerson",
+   "chamber": "house",
+   "district": "83",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "Monica Murnan",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 61393.21,
+   "expenditures": 45991.78,
+   "periods": 4
+  },
+  {
+   "name": "Jarrod Ousley",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 15986.67,
+   "expenditures": 6124.82,
+   "periods": 4
+  },
+  {
+   "name": "Ken Rahjes",
+   "chamber": "house",
+   "district": "110",
+   "contributions": 18321.0,
+   "expenditures": 13523.75,
+   "periods": 4
+  },
+  {
+   "name": "TARWATER SEAN",
+   "chamber": "house",
+   "district": "27",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 2
+  },
+  {
+   "name": "Stephanie Yeager",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 55283.62,
+   "expenditures": 51435.39,
+   "periods": 4
+  },
+  {
+   "name": "Matthew Joyce",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 37425.82,
+   "expenditures": 36355.3,
+   "periods": 3
+  },
+  {
+   "name": "Angela J Schweller",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 93244.52,
+   "expenditures": 74229.83,
+   "periods": 4
+  },
+  {
+   "name": "Charlotte Esau",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 34027.49,
+   "expenditures": 26426.0,
+   "periods": 4
+  },
+  {
+   "name": "Patrick A Penn",
+   "chamber": "house",
+   "district": "85",
+   "contributions": 70964.02,
+   "expenditures": 41670.6,
+   "periods": 4
+  },
+  {
+   "name": "Bob Reese",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 3145.06,
+   "expenditures": 18.0,
+   "periods": 3
+  },
+  {
+   "name": "Tom Sawyer",
+   "chamber": "house",
+   "district": "95",
+   "contributions": 70532.88,
+   "expenditures": 58884.01,
+   "periods": 4
+  },
+  {
+   "name": "John M Toplikar",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 42375.0,
+   "expenditures": 46847.64,
+   "periods": 4
+  },
+  {
+   "name": "Doug Blex",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 16677.28,
+   "expenditures": 12175.27,
+   "periods": 4
+  },
+  {
+   "name": "Jesse Borjon",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 51720.0,
+   "expenditures": 50299.55,
+   "periods": 4
+  },
+  {
+   "name": "Jesse A Burris",
+   "chamber": "house",
+   "district": "82",
+   "contributions": 25415.0,
+   "expenditures": 22013.88,
+   "periods": 4
+  },
+  {
+   "name": "Ethan D Caylor",
+   "chamber": "house",
+   "district": "75",
+   "contributions": 890.0,
+   "expenditures": 770.0,
+   "periods": 3
+  },
+  {
+   "name": "alana w cloutier",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 11611.0,
+   "expenditures": 9575.02,
+   "periods": 3
+  },
+  {
+   "name": "Jeff Coen",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 6985.0,
+   "expenditures": 6676.79,
+   "periods": 3
+  },
+  {
+   "name": "Christopher d Croft",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 57675.39,
+   "expenditures": 38908.51,
+   "periods": 4
+  },
+  {
+   "name": "Steven G Crum",
+   "chamber": "house",
+   "district": "98",
+   "contributions": 77034.57,
+   "expenditures": 68089.4,
+   "periods": 4
+  },
+  {
+   "name": "Scott T Dawson",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 2165.0,
+   "expenditures": 958.78,
+   "periods": 3
+  },
+  {
+   "name": "Jennifer Day",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 71581.02,
+   "expenditures": 64245.11,
+   "periods": 3
+  },
+  {
+   "name": "Kathryn Dixon",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 97336.51,
+   "expenditures": 88936.67,
+   "periods": 3
+  },
+  {
+   "name": "Keith Esau",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 0.0,
+   "expenditures": 170.27,
+   "periods": 2
+  },
+  {
+   "name": "Cole J Fine",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 89222.47,
+   "expenditures": 82199.52,
+   "periods": 3
+  },
+  {
+   "name": "Gail Finney",
+   "chamber": "house",
+   "district": "84",
+   "contributions": 24064.69,
+   "expenditures": 14086.67,
+   "periods": 4
+  },
+  {
+   "name": "Landon Griffith",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 4149.65,
+   "expenditures": 3965.67,
+   "periods": 3
+  },
+  {
+   "name": "Mike J Griswold",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 53616.67,
+   "expenditures": 53483.33,
+   "periods": 3
+  },
+  {
+   "name": "Christina Haswood",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 38115.41,
+   "expenditures": 31914.69,
+   "periods": 3
+  },
+  {
+   "name": "Kyle D Hoffman",
+   "chamber": "house",
+   "district": "116",
+   "contributions": 45480.8,
+   "expenditures": 46784.94,
+   "periods": 4
+  },
+  {
+   "name": "Nick J Hoheisel",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 42367.0,
+   "expenditures": 28811.74,
+   "periods": 4
+  },
+  {
+   "name": "Steven K Howe",
+   "chamber": "house",
+   "district": "71",
+   "contributions": 23616.0,
+   "expenditures": 13014.37,
+   "periods": 3
+  },
+  {
+   "name": "Cyndi L Howerton",
+   "chamber": "house",
+   "district": "86",
+   "contributions": 18704.74,
+   "expenditures": 17008.31,
+   "periods": 4
+  },
+  {
+   "name": "Brenda K Landwehr",
+   "chamber": "house",
+   "district": "105",
+   "contributions": 47000.0,
+   "expenditures": 36289.97,
+   "periods": 4
+  },
+  {
+   "name": "Todd Maddox",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 39796.66,
+   "expenditures": 23201.34,
+   "periods": 3
+  },
+  {
+   "name": "Stephen Owens",
+   "chamber": "house",
+   "district": "74",
+   "contributions": 29209.83,
+   "expenditures": 16632.09,
+   "periods": 4
+  },
+  {
+   "name": "Jason Probst",
+   "chamber": "house",
+   "district": "102",
+   "contributions": 64579.01,
+   "expenditures": 64878.26,
+   "periods": 4
+  },
+  {
+   "name": "Bradley C Ralph",
+   "chamber": "house",
+   "district": "119",
+   "contributions": 27709.57,
+   "expenditures": 22510.57,
+   "periods": 4
+  },
+  {
+   "name": "James T Rexford",
+   "chamber": "house",
+   "district": "121",
+   "contributions": 3461.92,
+   "expenditures": 3198.49,
+   "periods": 3
+  },
+  {
+   "name": "Caren C Rugg",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 3520.27,
+   "expenditures": 2272.6,
+   "periods": 3
+  },
+  {
+   "name": "Mark A Samsel",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 58494.96,
+   "expenditures": 55114.39,
+   "periods": 4
+  },
+  {
+   "name": "Kristine R Sapp",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 20275.46,
+   "expenditures": 19502.14,
+   "periods": 3
+  },
+  {
+   "name": "William M Shimeall",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 35202.99,
+   "expenditures": 34140.53,
+   "periods": 3
+  },
+  {
+   "name": "Jeff Shull",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 8742.62,
+   "expenditures": 8718.82,
+   "periods": 3
+  },
+  {
+   "name": "Chad Smith",
+   "chamber": "house",
+   "district": "100",
+   "contributions": 15901.2,
+   "expenditures": 6949.25,
+   "periods": 3
+  },
+  {
+   "name": "Jerry W Stogsdill",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 30691.74,
+   "expenditures": 10247.88,
+   "periods": 4
+  },
+  {
+   "name": "Adam Thomas",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 24036.0,
+   "expenditures": 19848.1,
+   "periods": 4
+  },
+  {
+   "name": "James-Jim Vathauer",
+   "chamber": "house",
+   "district": "64",
+   "contributions": 5358.34,
+   "expenditures": 4385.47,
+   "periods": 4
+  },
+  {
+   "name": "Lindsay C Vaughn",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 22773.24,
+   "expenditures": 16089.75,
+   "periods": 3
+  },
+  {
+   "name": "Laura E Williams",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 30468.38,
+   "expenditures": 28669.38,
+   "periods": 3
+  },
+  {
+   "name": "Brandon Woodard",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 122343.19,
+   "expenditures": 113512.03,
+   "periods": 4
+  },
+  {
+   "name": "Cheryl A Arthur",
+   "chamber": "house",
+   "district": "67",
+   "contributions": 45703.55,
+   "expenditures": 43878.91,
+   "periods": 3
+  },
+  {
+   "name": "Francis Awerkamp",
+   "chamber": "house",
+   "district": "61",
+   "contributions": 14152.01,
+   "expenditures": 12478.55,
+   "periods": 4
+  },
+  {
+   "name": "Brian Bergkamp",
+   "chamber": "house",
+   "district": "93",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 3
+  },
+  {
+   "name": "Emil Bergquist",
+   "chamber": "house",
+   "district": "91",
+   "contributions": 26335.35,
+   "expenditures": 14805.91,
+   "periods": 4
+  },
+  {
+   "name": "Blake Carpenter",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 44265.82,
+   "expenditures": 39298.96,
+   "periods": 4
+  },
+  {
+   "name": "Blaine Finch",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 82772.58,
+   "expenditures": 60057.12,
+   "periods": 4
+  },
+  {
+   "name": "Matthew I Fox",
+   "chamber": "house",
+   "district": "87",
+   "contributions": 58114.47,
+   "expenditures": 53226.1,
+   "periods": 4
+  },
+  {
+   "name": "Dennis Boog Highberger",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 14060.4,
+   "expenditures": 18838.82,
+   "periods": 4
+  },
+  {
+   "name": "Ron Highland",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 36070.0,
+   "expenditures": 29733.99,
+   "periods": 4
+  },
+  {
+   "name": "Michael G Martin",
+   "chamber": "house",
+   "district": "57",
+   "contributions": 10877.09,
+   "expenditures": 10704.85,
+   "periods": 3
+  },
+  {
+   "name": "Derek A Milligan",
+   "chamber": "house",
+   "district": "94",
+   "contributions": 9510.51,
+   "expenditures": 8631.5,
+   "periods": 3
+  },
+  {
+   "name": "Lance W Neelly",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 12328.0,
+   "expenditures": 8183.37,
+   "periods": 4
+  },
+  {
+   "name": "Patrick E Proctor",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 84116.83,
+   "expenditures": 72393.78,
+   "periods": 4
+  },
+  {
+   "name": "Bill Rhiley",
+   "chamber": "house",
+   "district": "80",
+   "contributions": 9875.0,
+   "expenditures": 11187.67,
+   "periods": 4
+  },
+  {
+   "name": "Ron Ryckman",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 136052.08,
+   "expenditures": 184843.87,
+   "periods": 4
+  },
+  {
+   "name": "Eric L Smith",
+   "chamber": "house",
+   "district": "76",
+   "contributions": 20983.98,
+   "expenditures": 19381.24,
+   "periods": 4
+  },
+  {
+   "name": "Ken White",
+   "chamber": "house",
+   "district": "79",
+   "contributions": 52385.36,
+   "expenditures": 50105.02,
+   "periods": 3
+  },
+  {
+   "name": "Kristey S Williams",
+   "chamber": "house",
+   "district": "77",
+   "contributions": 27508.71,
+   "expenditures": 12528.81,
+   "periods": 4
+  },
+  {
+   "name": "John Alcala",
+   "chamber": "house",
+   "district": "57",
+   "contributions": 26148.96,
+   "expenditures": 23977.63,
+   "periods": 4
+  },
+  {
+   "name": "Aaron Coleman",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 9899.91,
+   "expenditures": 8836.45,
+   "periods": 3
+  },
+  {
+   "name": "Ken Corbet",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 57204.67,
+   "expenditures": 38879.69,
+   "periods": 4
+  },
+  {
+   "name": "Leo Delperdang",
+   "chamber": "house",
+   "district": "94",
+   "contributions": 63309.09,
+   "expenditures": 30726.21,
+   "periods": 4
+  },
+  {
+   "name": "Edward N Hackerott",
+   "chamber": "house",
+   "district": "82",
+   "contributions": 1920.0,
+   "expenditures": 1750.0,
+   "periods": 3
+  },
+  {
+   "name": "Loren J Hermreck Jr.",
+   "chamber": "house",
+   "district": "103",
+   "contributions": 1000.0,
+   "expenditures": 772.54,
+   "periods": 4
+  },
+  {
+   "name": "Michael D Houser",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 12403.0,
+   "expenditures": 8635.67,
+   "periods": 4
+  },
+  {
+   "name": "Timothy H Johnson",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 29529.39,
+   "expenditures": 26050.25,
+   "periods": 3
+  },
+  {
+   "name": "Megan Lynn",
+   "chamber": "house",
+   "district": "49",
+   "contributions": 41639.81,
+   "expenditures": 40948.64,
+   "periods": 4
+  },
+  {
+   "name": "Joe V Newland",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 20452.0,
+   "expenditures": 11144.27,
+   "periods": 4
+  },
+  {
+   "name": "Fred C Patton",
+   "chamber": "house",
+   "district": "50",
+   "contributions": 64418.53,
+   "expenditures": 33636.77,
+   "periods": 4
+  },
+  {
+   "name": "Joana G Scholtz",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 81953.5,
+   "expenditures": 57209.33,
+   "periods": 3
+  },
+  {
+   "name": "Mark Schreiber",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 41210.0,
+   "expenditures": 41636.88,
+   "periods": 4
+  },
+  {
+   "name": "Adam W Smith",
+   "chamber": "house",
+   "district": "120",
+   "contributions": 17977.9,
+   "expenditures": 17230.07,
+   "periods": 4
+  },
+  {
+   "name": "Avery C Anderson",
+   "chamber": "house",
+   "district": "72",
+   "contributions": 25234.85,
+   "expenditures": 20333.55,
+   "periods": 3
+  },
+  {
+   "name": "Daniel R Hawkins",
+   "chamber": "house",
+   "district": "100",
+   "contributions": 122029.19,
+   "expenditures": 107417.07,
+   "periods": 4
+  },
+  {
+   "name": "Robert W Herrick",
+   "chamber": "house",
+   "district": "89",
+   "contributions": 1790.97,
+   "expenditures": 646.54,
+   "periods": 3
+  },
+  {
+   "name": "Philip T Hodson",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 8401.8,
+   "expenditures": 7461.71,
+   "periods": 3
+  },
+  {
+   "name": "Tom G Kessler",
+   "chamber": "house",
+   "district": "96",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "Paul M Waggoner",
+   "chamber": "house",
+   "district": "104",
+   "contributions": 21493.35,
+   "expenditures": 20829.65,
+   "periods": 4
+  },
+  {
+   "name": "TROY L WAYMASTER",
+   "chamber": "house",
+   "district": "109",
+   "contributions": 37695.0,
+   "expenditures": 45829.25,
+   "periods": 4
+  },
+  {
+   "name": "Rui Xu",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 44812.34,
+   "expenditures": 21825.46,
+   "periods": 4
+  },
+  {
+   "name": "Susan L Concannon",
+   "chamber": "house",
+   "district": "107",
+   "contributions": 21275.0,
+   "expenditures": 16251.58,
+   "periods": 4
+  },
+  {
+   "name": "Shannon G Francis",
+   "chamber": "house",
+   "district": "125",
+   "contributions": 22524.42,
+   "expenditures": 15626.34,
+   "periods": 4
+  },
+  {
+   "name": "Randy Garber",
+   "chamber": "house",
+   "district": "62",
+   "contributions": 15677.01,
+   "expenditures": 18918.71,
+   "periods": 4
+  },
+  {
+   "name": "Patrick w McCormack",
+   "chamber": "house",
+   "district": "92",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 3
+  },
+  {
+   "name": "John R Eplee",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 28450.0,
+   "expenditures": 20317.49,
+   "periods": 4
+  },
+  {
+   "name": "David W French",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 39108.9,
+   "expenditures": 34001.8,
+   "periods": 4
+  },
+  {
+   "name": "Geoffrey H Gawdun",
+   "chamber": "house",
+   "district": "58",
+   "contributions": 3301.34,
+   "expenditures": 2956.77,
+   "periods": 3
+  },
+  {
+   "name": "Les Lampe",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 73987.19,
+   "expenditures": 73580.45,
+   "periods": 3
+  },
+  {
+   "name": "Jim Minnix",
+   "chamber": "house",
+   "district": "118",
+   "contributions": 18320.0,
+   "expenditures": 10028.48,
+   "periods": 3
+  },
+  {
+   "name": "Lisa M Moser",
+   "chamber": "house",
+   "district": "106",
+   "contributions": 30392.65,
+   "expenditures": 26606.47,
+   "periods": 3
+  },
+  {
+   "name": "Jeff Stroberg",
+   "chamber": "house",
+   "district": "114",
+   "contributions": 40221.83,
+   "expenditures": 39070.49,
+   "periods": 4
+  },
+  {
+   "name": "John Whitesel",
+   "chamber": "house",
+   "district": "102",
+   "contributions": 3558.5,
+   "expenditures": 3262.31,
+   "periods": 3
+  },
+  {
+   "name": "Linda A Featherston",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 69229.81,
+   "expenditures": 66056.27,
+   "periods": 4
+  },
+  {
+   "name": "Sherri D Grogan",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 15887.81,
+   "expenditures": 22754.94,
+   "periods": 2
+  },
+  {
+   "name": "KIm Webb",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 5907.36,
+   "expenditures": 5548.35,
+   "periods": 3
+  },
+  {
+   "name": "Les R Mason",
+   "chamber": "house",
+   "district": "73",
+   "contributions": 36175.0,
+   "expenditures": 37635.06,
+   "periods": 4
+  },
+  {
+   "name": "Rick Parsons",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 1350.84,
+   "expenditures": 1339.84,
+   "periods": 4
+  },
+  {
+   "name": "TOM L BURROUGHS",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 30109.09,
+   "expenditures": 48600.86,
+   "periods": 4
+  },
+  {
+   "name": "Kenneth Collins",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 21730.0,
+   "expenditures": 17344.04,
+   "periods": 4
+  },
+  {
+   "name": "Rick Roitman",
+   "chamber": "house",
+   "district": "116",
+   "contributions": 11617.57,
+   "expenditures": 10304.55,
+   "periods": 3
+  },
+  {
+   "name": "John P Wheeler Jr",
+   "chamber": "house",
+   "district": "123",
+   "contributions": 15780.2,
+   "expenditures": 11784.86,
+   "periods": 4
+  },
+  {
+   "name": "Jim M Gartner",
+   "chamber": "house",
+   "district": "53",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "J. Russell Jennings",
+   "chamber": "house",
+   "district": "122",
+   "contributions": 26165.67,
+   "expenditures": 21690.9,
+   "periods": 4
+  },
+  {
+   "name": "Martin Long",
+   "chamber": "house",
+   "district": "124",
+   "contributions": 29125.0,
+   "expenditures": 13901.38,
+   "periods": 4
+  },
+  {
+   "name": "Boyd Orr",
+   "chamber": "house",
+   "district": "115",
+   "contributions": 21975.0,
+   "expenditures": 5751.42,
+   "periods": 4
+  },
+  {
+   "name": "Jeffrey A Zamrzla",
+   "chamber": "house",
+   "district": "71",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 3
+  },
+  {
+   "name": "Kent L Thompson",
+   "chamber": "house",
+   "district": "9",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "Barbara K Wasinger",
+   "chamber": "house",
+   "district": "111",
+   "contributions": 64836.0,
+   "expenditures": 48981.94,
+   "periods": 4
+  },
+  {
+   "name": "Kathy Meyer",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 51998.85,
+   "expenditures": 51220.01,
+   "periods": 3
+  },
+  {
+   "name": "Jo Schwartz",
+   "chamber": "house",
+   "district": "70",
+   "contributions": 1160.0,
+   "expenditures": 1392.84,
+   "periods": 4
+  },
+  {
+   "name": "James L Swim Jr",
+   "chamber": "house",
+   "district": "106",
+   "contributions": 13203.81,
+   "expenditures": 11970.0,
+   "periods": 3
+  },
+  {
+   "name": "Michelle D Snyder",
+   "chamber": "house",
+   "district": "105",
+   "contributions": 5155.0,
+   "expenditures": 5035.0,
+   "periods": 3
+  },
+  {
+   "name": "Bill L Meyer",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 11845.21,
+   "expenditures": 10300.5,
+   "periods": 4
+  },
+  {
+   "name": "Mary Lou Davis",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 33571.23,
+   "expenditures": 28155.0,
+   "periods": 3
+  },
+  {
+   "name": "Roger Sims",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 5320.43,
+   "expenditures": 4705.0,
+   "periods": 3
+  },
+  {
+   "name": "Garth B Strand",
+   "chamber": "house",
+   "district": "104",
+   "contributions": 30409.69,
+   "expenditures": 27052.96,
+   "periods": 4
+  },
+  {
+   "name": "Leonard A Mastroni",
+   "chamber": "house",
+   "district": "117",
+   "contributions": 10200.0,
+   "expenditures": 24801.49,
+   "periods": 4
+  },
+  {
+   "name": "Dante Javaheri",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 0.0,
+   "expenditures": 0,
+   "periods": 4
+  },
+  {
+   "name": "ARNBERGER TORY",
+   "chamber": "house",
+   "district": "112",
+   "contributions": 13650.0,
+   "expenditures": 7503.8,
+   "periods": 3
+  },
+  {
+   "name": "CADDELL MICHAEL",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 800.0,
+   "expenditures": 800.0,
+   "periods": 1
+  },
+  {
+   "name": "AMYX MIKE",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 5658.6,
+   "expenditures": 1726.55,
+   "periods": 3
+  },
+  {
+   "name": "HUEBERT STEVE",
+   "chamber": "house",
+   "district": "90",
+   "contributions": 1350.0,
+   "expenditures": 1692.3,
+   "periods": 1
+  },
+  {
+   "name": "SMITH KRISTINA",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 7255.0,
+   "expenditures": 2826.36,
+   "periods": 1
+  },
+  {
+   "name": "Melissa Gregory",
+   "chamber": "senate",
+   "district": "30",
+   "contributions": 159064.02,
+   "expenditures": 139794.67,
+   "periods": 3
+  },
+  {
+   "name": "Mary Ware",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 127319.88,
+   "expenditures": 107017.16,
+   "periods": 4
+  },
+  {
+   "name": "David Haley",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "HAWK TOM",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 150757.04,
+   "expenditures": 140842.43,
+   "periods": 4
+  },
+  {
+   "name": "HENRY SHANNA",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 150.96,
+   "expenditures": 7118.54,
+   "periods": 1
+  },
+  {
+   "name": "HENSLEY ANTHONY",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "LONGBINE JEFF",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 1
+  },
+  {
+   "name": "MASTERSON TY",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 43354.27,
+   "expenditures": 30197.65,
+   "periods": 2
+  },
+  {
+   "name": "OLSON ROB",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 133904.8,
+   "expenditures": 207330.27,
+   "periods": 4
+  },
+  {
+   "name": "PETERSEN MIKE",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "BUDETTI WENDY",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 83676.55,
+   "expenditures": 80400.45,
+   "periods": 4
+  },
+  {
+   "name": "DIETRICH BRENDA",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 189767.42,
+   "expenditures": 181149.12,
+   "periods": 4
+  },
+  {
+   "name": "Willie Dove",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 56876.32,
+   "expenditures": 50977.92,
+   "periods": 3
+  },
+  {
+   "name": "DREILING LARRY",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": 20576.4,
+   "expenditures": 13195.6,
+   "periods": 2
+  },
+  {
+   "name": "INGLE NANCY",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 18704.33,
+   "expenditures": 13833.12,
+   "periods": 2
+  },
+  {
+   "name": "PECK REBECCA",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 42228.05,
+   "expenditures": 38915.18,
+   "periods": 4
+  },
+  {
+   "name": "PYLE DENNIS",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 91670.32,
+   "expenditures": 41856.85,
+   "periods": 4
+  },
+  {
+   "name": "SCHLINGENSIEPEN TOBIAS",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 178626.16,
+   "expenditures": 159047.66,
+   "periods": 3
+  },
+  {
+   "name": "STILLWELL SAM",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 1530.0,
+   "expenditures": 1354.04,
+   "periods": 2
+  },
+  {
+   "name": "SUELLENTROP GENE",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 103920.0,
+   "expenditures": 43341.46,
+   "periods": 3
+  },
+  {
+   "name": "THOMPSON MIKE",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 146750.91,
+   "expenditures": 119741.98,
+   "periods": 3
+  },
+  {
+   "name": "Jim Ward",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 249534.39,
+   "expenditures": 222691.44,
+   "periods": 3
+  },
+  {
+   "name": "WILLIS RACHEL",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 45994.74,
+   "expenditures": 62782.2,
+   "periods": 2
+  },
+  {
+   "name": "BILLINGER RICHARD",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": 67644.0,
+   "expenditures": 37194.13,
+   "periods": 4
+  },
+  {
+   "name": "BRAUN KEVIN",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 351344.28,
+   "expenditures": 348248.01,
+   "periods": 4
+  },
+  {
+   "name": "Mike Bruner",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "MCCORKLE MIKE",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 3855.16,
+   "expenditures": 3.0,
+   "periods": 1
+  },
+  {
+   "name": "OSHEA KRISTEN",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 43228.0,
+   "expenditures": 11070.01,
+   "periods": 1
+  },
+  {
+   "name": "Craig R Bowser",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 51512.03,
+   "expenditures": 49966.0,
+   "periods": 4
+  },
+  {
+   "name": "Lindsey E Constance",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 252245.66,
+   "expenditures": 245012.09,
+   "periods": 4
+  },
+  {
+   "name": "Stacey B Knoell",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 137944.84,
+   "expenditures": 130679.0,
+   "periods": 4
+  },
+  {
+   "name": "Laura McConwell",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": null,
+   "expenditures": null,
+   "periods": 4
+  },
+  {
+   "name": "Virgil Peck",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 39438.21,
+   "expenditures": 32592.29,
+   "periods": 4
+  },
+  {
+   "name": "TYSON CARYN",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 4520.0,
+   "expenditures": 16764.44,
+   "periods": 1
+  },
+  {
+   "name": "Alicia D Straub",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 43233.09,
+   "expenditures": 28840.23,
+   "periods": 3
+  },
+  {
+   "name": "Edgar Acevedo-Pando",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 13682.92,
+   "expenditures": 11360.33,
+   "periods": 3
+  },
+  {
+   "name": "John G Doll",
+   "chamber": "senate",
+   "district": "39",
+   "contributions": 114775.53,
+   "expenditures": 122934.68,
+   "periods": 4
+  },
+  {
+   "name": "Renee K Erickson",
+   "chamber": "senate",
+   "district": "30",
+   "contributions": 136649.79,
+   "expenditures": 112778.71,
+   "periods": 4
+  },
+  {
+   "name": "Maynard L Estes, Jr",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 49945.0,
+   "expenditures": 34655.81,
+   "periods": 4
+  },
+  {
+   "name": "Cindy L Holscher",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 218026.79,
+   "expenditures": 201019.7,
+   "periods": 4
+  },
+  {
+   "name": "Carolyn McGinn",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 84275.75,
+   "expenditures": 43588.85,
+   "periods": 4
+  },
+  {
+   "name": "Jeff Pittman",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 157889.64,
+   "expenditures": 151799.05,
+   "periods": 4
+  },
+  {
+   "name": "James E Todd",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 12265.8,
+   "expenditures": 6786.69,
+   "periods": 3
+  },
+  {
+   "name": "Richard E Wilborn",
+   "chamber": "senate",
+   "district": "35",
+   "contributions": 59911.71,
+   "expenditures": 37324.19,
+   "periods": 4
+  },
+  {
+   "name": "Myron L Ackerman",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 805.0,
+   "expenditures": 112.43,
+   "periods": 4
+  },
+  {
+   "name": "Larry Alley",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 44535.89,
+   "expenditures": 14094.8,
+   "periods": 4
+  },
+  {
+   "name": "Ethan Corson",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 229862.6,
+   "expenditures": 209401.56,
+   "periods": 4
+  },
+  {
+   "name": "Michael A Fagg",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 41395.0,
+   "expenditures": 26928.35,
+   "periods": 3
+  },
+  {
+   "name": "Vail D Fruechting",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 49362.54,
+   "expenditures": 42643.61,
+   "periods": 3
+  },
+  {
+   "name": "Richard Kloos",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 51402.12,
+   "expenditures": 31263.91,
+   "periods": 4
+  },
+  {
+   "name": "Mark B Steffen",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 85931.25,
+   "expenditures": 69745.61,
+   "periods": 3
+  },
+  {
+   "name": "Stephen Vecchione",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 0.0,
+   "expenditures": 0,
+   "periods": 3
+  },
+  {
+   "name": "KELLIE WARREN",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 215595.32,
+   "expenditures": 180209.17,
+   "periods": 3
+  },
+  {
+   "name": "Martha Baumgardner",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 105291.81,
+   "expenditures": 72918.25,
+   "periods": 4
+  },
+  {
+   "name": "Tom Bickimer",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 62667.84,
+   "expenditures": 59667.84,
+   "periods": 4
+  },
+  {
+   "name": "Elaine S Bowers",
+   "chamber": "senate",
+   "district": "36",
+   "contributions": 54183.21,
+   "expenditures": 30418.39,
+   "periods": 4
+  },
+  {
+   "name": "MARCI A FRANCISCO",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 34079.39,
+   "expenditures": 29287.29,
+   "periods": 4
+  },
+  {
+   "name": "Daniel J Kerschen",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 50251.26,
+   "expenditures": 17937.79,
+   "periods": 4
+  },
+  {
+   "name": "Joy Koesten",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 210427.87,
+   "expenditures": 201231.29,
+   "periods": 4
+  },
+  {
+   "name": "Kirk Miller",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 18744.15,
+   "expenditures": 13321.1,
+   "periods": 3
+  },
+  {
+   "name": "pat pettey",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 69270.87,
+   "expenditures": 42242.76,
+   "periods": 4
+  },
+  {
+   "name": "Diana Whittington",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 6071.58,
+   "expenditures": 5204.03,
+   "periods": 3
+  },
+  {
+   "name": "J.R. Claeys",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 85465.0,
+   "expenditures": 68658.22,
+   "periods": 3
+  },
+  {
+   "name": "Beverly E Gossage",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 83489.63,
+   "expenditures": 58636.59,
+   "periods": 2
+  },
+  {
+   "name": "Richard Hilderbrand",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 67635.8,
+   "expenditures": 51974.73,
+   "periods": 4
+  },
+  {
+   "name": "Dinah H Sykes",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 175270.97,
+   "expenditures": 157383.85,
+   "periods": 4
+  },
+  {
+   "name": "Tom Holland",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 88357.33,
+   "expenditures": 81856.65,
+   "periods": 4
+  },
+  {
+   "name": "Timothy D Fry",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 0.0,
+   "expenditures": 0,
+   "periods": 1
+  }
+ ]
+}

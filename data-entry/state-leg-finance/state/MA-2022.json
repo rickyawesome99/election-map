@@ -35,7 +35,7 @@
   "3rd Barnstable": [
    {
     "name": "Fox Alfano, Kathleen",
-    "candidate": "Kathleen Foxalfano",
+    "candidate": "Kathleen Fox Alfano",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6072.75,
@@ -93,7 +93,7 @@
   "2nd Berkshire": [
    {
     "name": "Farley-Bouvier, Tricia",
-    "candidate": "Tricia Farleybouvier",
+    "candidate": "Tricia Farley-Bouvier",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 23164.85,
@@ -536,14 +536,6 @@
     "incumbent": false,
     "contributions": 4333.67,
     "expenditures": 3927.36
-   },
-   {
-    "name": "Whipps, Susannah M.",
-    "candidate": "Susannah M. Whipps",
-    "party": "Other",
-    "incumbent": true,
-    "contributions": 28944.4,
-    "expenditures": 22499.25
    }
   ],
   "1st Hampden": [
@@ -809,7 +801,7 @@
   "8th Middlesex": [
    {
     "name": "Arena-DeRosa, James C.",
-    "candidate": "James Arenaderosa",
+    "candidate": "James Arena-Derosa",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 83001.82,
@@ -862,6 +854,16 @@
     "incumbent": true,
     "contributions": 37660.49,
     "expenditures": 21262.28
+   }
+  ],
+  "13th Middlesex": [
+   {
+    "name": "Gentile, Carmine",
+    "candidate": "Carmine Lawrence Gentile",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2119.99,
+    "expenditures": 3954.39
    }
   ],
   "14th Middlesex": [
@@ -933,7 +935,7 @@
   "19th Middlesex": [
    {
     "name": "Robertson, David A.",
-    "candidate": "David A. Robertson",
+    "candidate": "David Allen Robertson",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 7533.85,
@@ -1095,7 +1097,7 @@
   "32nd Middlesex": [
    {
     "name": "Lipper-Garabedian, Kate",
-    "candidate": "Kate Lippergarabedian",
+    "candidate": "Kate Lipper-Garabedian",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 70288.52,
@@ -1333,7 +1335,7 @@
   "14th Norfolk": [
    {
     "name": "Peisch, Alice Hanlon",
-    "candidate": "Alice Hanlonpeisch",
+    "candidate": "Alice Hanlon Peisch",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 26913.5,
@@ -1640,6 +1642,16 @@
     "expenditures": 797835.74
    }
   ],
+  "10th Suffolk": [
+   {
+    "name": "Coppinger, Edward F.",
+    "candidate": "Edward Coppinger",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 69236.25,
+    "expenditures": 51949.46
+   }
+  ],
   "11th Suffolk": [
    {
     "name": "Garcia, Judith",
@@ -1716,6 +1728,16 @@
     "incumbent": true,
     "contributions": 233767.87,
     "expenditures": 205648.01
+   }
+  ],
+  "19th Suffolk": [
+   {
+    "name": "Turco, Jeffrey",
+    "candidate": "Jeffrey Rosario Turco",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 272293.93,
+    "expenditures": 216264.66
    }
   ],
   "1st Worcester": [
@@ -1805,7 +1827,7 @@
   "7th Worcester": [
    {
     "name": "Dotson, Terry Burke",
-    "candidate": "Terry Burkedotson",
+    "candidate": "Terry Burke Dotson",
     "party": "Other",
     "incumbent": false,
     "contributions": 11608.16,
@@ -1937,7 +1959,7 @@
    },
    {
     "name": "LeBoeuf, David Henry Argosky",
-    "candidate": "David Henry Argoskyleboeuf",
+    "candidate": "David Henry Argosky Leboeuf",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 46133.72,
@@ -2265,7 +2287,7 @@
   "Middlesex and Suffolk": [
    {
     "name": "DiDomenico, Sal N.",
-    "candidate": "Sal N. Didomenico",
+    "candidate": "Sal N. di Domenico",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 145659.93,
@@ -2326,6 +2348,16 @@
     "incumbent": true,
     "contributions": 70886.79,
     "expenditures": 65513.64
+   }
+  ],
+  "Norfolk and Middlesex": [
+   {
+    "name": "Creem, Cynthia S.",
+    "candidate": "Cynthia Stone Creem",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 13804.86,
+    "expenditures": 11781.65
    }
   ],
   "Norfolk-Plymouth-Bristol": [

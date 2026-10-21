@@ -12,7 +12,7 @@ import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { raceCalendar } from "@/data/raceCalendar";
 import { computeWarTable } from "@/lib/tplCompute";
 import { historicalRacePolls, historicalPresidentPolls, type HistoricalRacePoll } from "@/lib/racePollsHistory";
-import { candidatePhotos } from "@/lib/candidatePhotos";
+import { candidatePhoto } from "@/lib/candidatePhotos";
 import { stateRings } from "@/lib/stateNeighbors";
 
 // One page per past election, nested under its seat: /senate/pa2/2022, /governor/pa/2022,
@@ -541,7 +541,7 @@ export function getPastElection(office: PastElectionOffice, seatIdRaw: string, y
       votes: side === "dem" ? demVotes : repVotes,
       incumbent: side === "dem" ? !!r.demIncumbent : !!r.repIncumbent,
       appointed: side === "dem" ? !!r.demAppointed : !!r.repAppointed,
-      photo: name ? candidatePhotos[name] ?? null : null,
+      photo: candidatePhoto(name, seat.stateAbbr),
       war: warFor(name),
     };
   };

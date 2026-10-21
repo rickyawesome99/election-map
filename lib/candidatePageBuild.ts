@@ -9,6 +9,7 @@ import { fieldPersons } from "@/lib/stateLegAtlas";
 import { stateLegDistricts } from "@/data/stateLegDistricts";
 import type { LegProjection, RaceMoney } from "@/components/candidates/StateLegRaceRow";
 import type { CandidatePagePayload } from "@/lib/candidatePagePayload";
+import { candidateSlug } from "@/lib/candidateSlug";
 
 // The heavy side of the candidate pages: joins the federal and state legislative records and
 // computes the per-race figures, for scripts/buildCandidatePages.ts. Only that script imports
@@ -22,12 +23,11 @@ export function resolveCandidate(slug: string): { federal: ReturnType<typeof get
   if (federal && !leg) leg = findStateLegCandidate(federal.name, federal.state);
   let fed = federal;
   if (leg && !fed) {
-    const f = getCandidatePage(candidateSlugOf(leg.name));
+    const f = getCandidatePage(candidateSlug(leg.name, leg.abbr));
     if (f && f.state === leg.stateName) fed = f;
   }
   return { federal: fed, leg };
 }
-const candidateSlugOf = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 /** The race's own spelling of this person (the finance join is keyed on the atlas's list for that year). */
 function legName(leg: StateLegCandidatePage, race: StateLegRace): string {
@@ -74,7 +74,7 @@ export function buildCandidatePayload(slug: string): CandidatePagePayload | null
     leg,
     legRaces: (leg?.races ?? []).map((race) => { const n = legName(leg!, race); return { projection: legProjection(race, n), money: legMoney(race, n) }; }),
     historyHrefs: (federal?.history ?? []).map(historyHref),
-    war: warForCandidate(name),
+    war: warForCandidate(name, federal?.state ?? leg?.abbr),
   };
 }
 

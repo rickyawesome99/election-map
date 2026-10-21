@@ -14,6 +14,16 @@
     "expenditures": null
    }
   ],
+  "2": [
+   {
+    "name": "Megan Jones",
+    "candidate": "Megan Lee Hess Jones",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 41942.22,
+    "expenditures": null
+   }
+  ],
   "3": [
    {
     "name": "McCoy For House 26",
@@ -55,7 +65,7 @@
   "6": [
    {
     "name": "Perla Alarcon-Flory for Iowa House",
-    "candidate": "Perla J. Alarconflory",
+    "candidate": "Perla J. Alarcon-Flory",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 13747.32,
@@ -455,7 +465,7 @@
   "35": [
    {
     "name": "Citizens for Ako Abdul-Samad",
-    "candidate": "Ako Abdulsamad",
+    "candidate": "Ako Abdul-Samad",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 10385,
@@ -585,7 +595,7 @@
   "45": [
    {
     "name": "Beth Wessel-Kroeschell",
-    "candidate": "Beth Wesselkroeschell",
+    "candidate": "Beth Wessel-Kroeschell",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 36256.84,
@@ -593,7 +603,7 @@
    },
    {
     "name": "Sondra Childs-Smith for Iowa",
-    "candidate": "Sondra Childssmith",
+    "candidate": "Sondra Childs-Smith",
     "party": "Republican",
     "incumbent": false,
     "contributions": 48188.26,

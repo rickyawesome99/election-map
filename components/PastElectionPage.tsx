@@ -103,7 +103,7 @@ function CandidateRow({ c, e }: { c: PastElectionCandidate; e: PastElection }) {
       <div className="min-w-0">
         <div className="flex items-baseline gap-2 min-w-0">
           <span className="truncate text-[15px] font-semibold" style={{ color: "var(--app-text-primary)" }}>
-            {hasName ? <CandidateLink name={c.name} className="hover:underline">{c.name}</CandidateLink> : c.name}
+            {hasName ? <CandidateLink name={c.name} state={e.stateAbbr} className="hover:underline">{c.name}</CandidateLink> : c.name}
           </span>
           {isWinner && !e.uncontested && (
             <span className="shrink-0 rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider" style={{ background: `color-mix(in srgb, ${color} 18%, transparent)`, color }}>Winner</span>

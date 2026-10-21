@@ -70,6 +70,16 @@
     "expenditures": null
    }
   ],
+  "6": [
+   {
+    "name": "Eliseo Alcon",
+    "candidate": "Eliseo Lee Alcon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 6700,
+    "expenditures": null
+   }
+  ],
   "7": [
    {
     "name": "Kelly Fajardo",
@@ -149,7 +159,7 @@
   "13": [
    {
     "name": "Patricia Roybal Caballero",
-    "candidate": "Patricia A. Roybalcaballero",
+    "candidate": "Patricia A. Roybal Caballero",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 17252.6,
@@ -169,7 +179,7 @@
   "15": [
    {
     "name": "Sarah Maestas Barnes",
-    "candidate": "Sarah Maestasbarnes",
+    "candidate": "Sarah Maestas Barnes",
     "party": "Republican",
     "incumbent": true,
     "contributions": 293876.82,
@@ -217,7 +227,7 @@
   "19": [
    {
     "name": "Sheryl Williams Stapleton",
-    "candidate": "Sheryl M. Williamsstapleton",
+    "candidate": "Sheryl M. Williams Stapleton",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 28850,
@@ -577,7 +587,7 @@
   "43": [
    {
     "name": "Stephanie Garcia Richard",
-    "candidate": "Stephanie Garciarichard",
+    "candidate": "Stephanie Garcia Richard",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 225781,
@@ -595,7 +605,7 @@
   "44": [
    {
     "name": "Jane Powdrell-Culbert",
-    "candidate": "Jane E. Powdrellculbert",
+    "candidate": "Jane E. Powdrell-Culbert",
     "party": "Republican",
     "incumbent": true,
     "contributions": 50085,
@@ -668,6 +678,14 @@
     "incumbent": true,
     "contributions": 43680.8,
     "expenditures": null
+   },
+   {
+    "name": "Jeremy Tremko",
+    "candidate": "Jeremy Ryan Tremko",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7975,
+    "expenditures": null
    }
   ],
   "51": [
@@ -685,6 +703,16 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 13504.81,
+    "expenditures": null
+   }
+  ],
+  "52": [
+   {
+    "name": "Doreen Gallegos",
+    "candidate": "Doreen Ybarra Gallegos",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 26470.47,
     "expenditures": null
    }
   ],
@@ -1026,6 +1054,16 @@
     "expenditures": null
    }
   ],
+  "12": [
+   {
+    "name": "Gerald Ortiz Y Pino",
+    "candidate": "Gerald P. Ortiz y Pino",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 28533.58,
+    "expenditures": null
+   }
+  ],
   "13": [
    {
     "name": "Aubrey Dunn",
@@ -1049,10 +1087,18 @@
   "15": [
    {
     "name": "Daniel Ivey-Soto",
-    "candidate": "Daniel A. Iveysoto",
+    "candidate": "Daniel A. Ivey-Soto",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 207704.45,
+    "expenditures": null
+   },
+   {
+    "name": "Eric Burton",
+    "candidate": "Eric Lyon Burton",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 136935.06,
     "expenditures": null
    }
   ],
@@ -1375,6 +1421,14 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 48214.35,
+    "expenditures": null
+   },
+   {
+    "name": "Linda Allison",
+    "candidate": "Linda Sanchez Allison",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8399.01,
     "expenditures": null
    }
   ],

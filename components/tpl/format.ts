@@ -52,8 +52,8 @@ export const MATRIX_ROWS: { key: RaceType; label: string; short: string }[] = [
 export const OFFICE_LABELS: Record<WarOffice, string> = { P: "President", S: "Senate", G: "Governor", H: "House" };
 
 /** The candidates view with one person selected. */
-export function candidateHref(name: string): string {
-  return `/model/candidates?c=${candidateSlug(name)}`;
+export function candidateHref(name: string, state?: string): string {
+  return `/model/candidates?c=${candidateSlug(name, state)}`;
 }
 export { candidateSlug };
 

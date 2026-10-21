@@ -31,8 +31,8 @@ export function forecastCard(race: ForecastSummary): Extract<CountyTooltipProps,
     subtitle: "Projected margin",
     margin: race.margin,
     totalVotes: null,
-    dem: { name: c?.dem.name ?? "Democrat", party: "D", pct: demPct, votes: null, note: c?.dem.incumbent ? "Inc." : undefined },
-    rep: { name: c?.rep.name ?? "Republican", party: "R", pct: repPct, votes: null, note: c?.rep.incumbent ? "Inc." : undefined },
+    dem: { name: c?.dem.name ?? "Democrat", state: race.state, party: "D", pct: demPct, votes: null, note: c?.dem.incumbent ? "Inc." : undefined },
+    rep: { name: c?.rep.name ?? "Republican", state: race.state, party: "R", pct: repPct, votes: null, note: c?.rep.incumbent ? "Inc." : undefined },
   };
 }
 

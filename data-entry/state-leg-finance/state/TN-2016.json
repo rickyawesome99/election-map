@@ -81,7 +81,7 @@
    },
    {
     "name": "MICAH VAN HUSS",
-    "candidate": "Micah Vanhuss",
+    "candidate": "Micah van Huss",
     "party": "Republican",
     "incumbent": true,
     "contributions": 25269.13,
@@ -239,7 +239,7 @@
   "17": [
    {
     "name": "ANDREW ELLIS FARMER",
-    "candidate": "Andrew Ellisfarmer",
+    "candidate": "Andrew Ellis Farmer",
     "party": "Republican",
     "incumbent": true,
     "contributions": 45475,
@@ -317,6 +317,14 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 47078,
+    "expenditures": null
+   },
+   {
+    "name": "ANNA GRABOWSKI",
+    "candidate": "Anna Miller Grabowski",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": null,
     "expenditures": null
    }
   ],
@@ -588,6 +596,14 @@
   ],
   "40": [
    {
+    "name": "GAYLA HENDRIX",
+    "candidate": "Gayla Colvert Hendrix",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 27745.29,
+    "expenditures": null
+   },
+   {
     "name": "TERRI LYNN WEAVER",
     "candidate": "Terri Lynn Weaver",
     "party": "Republican",
@@ -679,6 +695,14 @@
    }
   ],
   "46": [
+   {
+    "name": "AMELIA HIPPS",
+    "candidate": "Amelia Morrison Hipps",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 31287,
+    "expenditures": null
+   },
    {
     "name": "MARK PODY",
     "candidate": "Mark Pody",
@@ -1603,6 +1627,14 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 166525.7,
+    "expenditures": null
+   },
+   {
+    "name": "STEVEN DICKERSON",
+    "candidate": "Steven Reid Dickerson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 644348,
     "expenditures": null
    }
   ],

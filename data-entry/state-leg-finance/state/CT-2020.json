@@ -41,7 +41,7 @@
    },
    {
     "name": "Raghib Allie-Brennan",
-    "candidate": "Raghib Alliebrennan",
+    "candidate": "Raghib Allie-Brennan",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 5570,
@@ -91,7 +91,7 @@
   "7": [
    {
     "name": "Joshua Hall",
-    "candidate": "Joshua M. Hall",
+    "candidate": "Joshua Malik Hall",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 7622,
@@ -245,7 +245,7 @@
    },
    {
     "name": "Eleni Kavros DeGraw",
-    "candidate": "Eleni Kavrosdegraw",
+    "candidate": "Eleni Kavros Degraw",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6207.5,
@@ -403,7 +403,7 @@
   "28": [
    {
     "name": "Amy Morrin Bello",
-    "candidate": "Amy Morrinbello",
+    "candidate": "Amy Morrin Bello",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6228,
@@ -447,7 +447,7 @@
    },
    {
     "name": "JoAnn Angelico-Stetson",
-    "candidate": "Joann Angelicostetson",
+    "candidate": "Joann Angelico-Stetson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 8999.4,
@@ -575,7 +575,7 @@
   "38": [
    {
     "name": "Baird Welch-Collins",
-    "candidate": "Baird Welchcollins",
+    "candidate": "Baird Welch-Collins",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5588.58,
@@ -629,7 +629,7 @@
   "41": [
    {
     "name": "Joseph de la Cruz",
-    "candidate": "Joe Delacruz",
+    "candidate": "Joe de la Cruz",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 5895,
@@ -829,7 +829,7 @@
    },
    {
     "name": "Patricia Wilson Pheanious",
-    "candidate": "Pat Wilsonpheanious",
+    "candidate": "Pat Wilson Pheanious",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6425,
@@ -1221,10 +1221,18 @@
   "77": [
    {
     "name": "Andrew Rasmussen-Tuller",
-    "candidate": "Andrew M. Rasmussentuller",
+    "candidate": "Andrew M. Rasmussen-Tuller",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5735,
+    "expenditures": null
+   },
+   {
+    "name": "Cara Pavalock-D'Amato",
+    "candidate": "Cara Pavalock-Damato",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6142,
     "expenditures": null
    }
   ],
@@ -1493,7 +1501,7 @@
   "93": [
    {
     "name": "Toni Walker",
-    "candidate": "Toni E. Walker",
+    "candidate": "Toni Edmonds Walker",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 8077,
@@ -1685,7 +1693,7 @@
    },
    {
     "name": "Nicole Klarides Ditria",
-    "candidate": "Nicole Klaridesditria",
+    "candidate": "Nicole Klarides-Ditria",
     "party": "Republican",
     "incumbent": true,
     "contributions": 6045,
@@ -1703,7 +1711,7 @@
    },
    {
     "name": "Rebekah Harriman-Stites",
-    "candidate": "Rebekah Harrimanstites",
+    "candidate": "Rebekah Harriman-Stites",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6192,
@@ -1785,7 +1793,7 @@
   "111": [
    {
     "name": "Aimee Berger-Girvalo",
-    "candidate": "Aimee Bergergirvalo",
+    "candidate": "Aimee Berger-Girvalo",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5630,
@@ -1969,7 +1977,7 @@
    },
    {
     "name": "Sujata Gadkar-Wilcox",
-    "candidate": "Sujata Gadkarwilcox",
+    "candidate": "Sujata Gadkar-Wilcox",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5640,
@@ -2083,7 +2091,7 @@
   "133": [
    {
     "name": "Cristin McCarthy Vahey",
-    "candidate": "Cristin McCarthyvahey",
+    "candidate": "Cristin McCarthy Vahey",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6216,
@@ -2091,7 +2099,7 @@
    },
    {
     "name": "Joanne Romano-Csonka",
-    "candidate": "Joanne Romanocsonka",
+    "candidate": "Joanne Romano",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6459,
@@ -2579,7 +2587,7 @@
   "13": [
    {
     "name": "Mary Daugherty Abrams",
-    "candidate": "Mary Daughertyabrams",
+    "candidate": "Mary Daugherty Abrams",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 16542,
@@ -2841,7 +2849,7 @@
    },
    {
     "name": "Michelle Lapine McCabe",
-    "candidate": "Michelle McCabe",
+    "candidate": "Michelle Lapine McCabe",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 18976,

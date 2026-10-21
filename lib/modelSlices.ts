@@ -1,3 +1,4 @@
+import { candidateSlug } from "@/lib/candidateSlug";
 import "server-only";
 
 // ── /model page data slices ───────────────────────────────────────────────────
@@ -71,7 +72,7 @@ export function warSlice(): WarSlim[] {
 
 // One candidate's WAR rows, oldest first — the /candidates/[slug] profile's WAR section.
 let warByCandidate: Map<string, WarSlim[]> | null = null;
-export function warForCandidate(name: string): WarSlim[] {
+export function warForCandidate(name: string, state?: string | null): WarSlim[] {
   if (!warByCandidate) {
     warByCandidate = new Map();
     for (const r of warSlice()) {
@@ -80,7 +81,9 @@ export function warForCandidate(name: string): WarSlim[] {
     }
     for (const list of warByCandidate.values()) list.sort((a, b) => a.year - b.year);
   }
-  return warByCandidate.get(name) ?? [];
+  // Two people can share a name (lib/candidateSlug.ts): keep the rows from this person's own state.
+  const slug = candidateSlug(name, state);
+  return (warByCandidate.get(name) ?? []).filter((r) => candidateSlug(r.candidate, r.state) === slug);
 }
 
 // WAR looked up by (state, office, race label, year, candidate name) — the join key the race

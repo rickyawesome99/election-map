@@ -235,7 +235,7 @@
   "15": [
    {
     "name": "MOORE, JUDY ROSS",
-    "candidate": "Judy Rossmoore",
+    "candidate": "Judy Ross Moore",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 24800.489999999998,
@@ -571,7 +571,7 @@
    },
    {
     "name": "LYONS ECHO-HAWK, JASHA",
-    "candidate": "Jasha Lyonsechohawk",
+    "candidate": "Jasha Lyons Echo-Hawk",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 26727.61,
@@ -647,7 +647,7 @@
   "41": [
    {
     "name": "CROSSWHITE HADER, DENISE",
-    "candidate": "Denise Crosswhitehader",
+    "candidate": "Denise Crosswhite Hader",
     "party": "Republican",
     "incumbent": false,
     "contributions": 80672.78,
@@ -1082,6 +1082,14 @@
     "incumbent": false,
     "contributions": 8000.12,
     "expenditures": 1070
+   },
+   {
+    "name": "MILLER, J. LEE, JR",
+    "candidate": "J. Lee Miller Jr.",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 2131,
+    "expenditures": 1370
    },
    {
     "name": "ROSS, MICHAEL",
@@ -1569,7 +1577,7 @@
    },
    {
     "name": "EASLEY-GRAF, KILMYN",
-    "candidate": "Kilmyn Easleygraf",
+    "candidate": "Kilmyn Easley-Graf",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 63103.5,
@@ -1976,16 +1984,6 @@
     "incumbent": false,
     "contributions": 59147.75,
     "expenditures": 14910.63
-   }
-  ],
-  "44": [
-   {
-    "name": "BROOKS, MICHAEL",
-    "candidate": "Michael Brooks",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 97072.67,
-    "expenditures": 75548.31
    }
   ],
   "46": [

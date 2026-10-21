@@ -159,7 +159,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
           <LedgerSectionHead label={`Races behind the cell · ${title}`} meta={meta}
             right={<AllRacesButton count={data.races.length} hidden={racesHidden} onToggle={() => { setRacesHidden((h) => !h); setSel({ year: "all", type: "all" }); }} />} />
           {!(racesHidden && sel.year === "all" && sel.type === "all") && <>
-            <RaceTable races={rows} variant="state" showYear={sel.year === "all"} onRow={setRace} onFormula={setFormula} />
+            <RaceTable races={rows} state={data.abbr} variant="state" showYear={sel.year === "all"} onRow={setRace} onFormula={setFormula} />
             <TableCaption>
               Click a row for the step-by-step calculation.
             </TableCaption>
@@ -225,7 +225,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
                 {data.statewideWar.slice(0, 14).map((r, i) => (
                   <tr key={i} style={{ borderBottom: "1px solid var(--app-border)" }}>
                     <td className={`${TD} max-sm:whitespace-normal max-sm:pl-0`}>
-                      <CandidateLink name={r.candidate} party={r.party} />
+                      <CandidateLink name={r.candidate} state={r.state} party={r.party} />
                       {/* Phones: the race and year under the name instead of their own columns. */}
                       <span className="mt-0.5 block text-[11px] sm:hidden" style={{ color: "var(--app-text-muted)" }}>{r.year} · {OFFICE_LABELS[r.office]}{r.race.includes("Special") ? " special" : ""}</span>
                     </td>

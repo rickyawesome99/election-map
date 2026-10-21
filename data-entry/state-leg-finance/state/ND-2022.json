@@ -199,7 +199,7 @@
    },
    {
     "name": "Lawrence-Skadsem, Heather",
-    "candidate": "Heather Lawrenceskadsem",
+    "candidate": "Heather Lawrence-Skadsem",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 0,
@@ -703,10 +703,18 @@
    },
    {
     "name": "Chea Altenburg, Gwendorlene",
-    "candidate": "Gwendorlene Cheaaltenburg",
+    "candidate": "Gwendorlene Chea Altenburg",
     "party": "Republican",
     "incumbent": false,
     "contributions": 1500,
+    "expenditures": null
+   },
+   {
+    "name": "Hanson, Karla",
+    "candidate": "Karla Hanson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 35713.92,
     "expenditures": null
    }
   ],
@@ -756,6 +764,24 @@
     "expenditures": null
    }
   ],
+  "4A": [
+   {
+    "name": "Deville, Lisa",
+    "candidate": "Lisa Finley-Deville",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17170.11,
+    "expenditures": null
+   },
+   {
+    "name": "Jones, Terry",
+    "candidate": "Terry Burton Jones",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 16948.44,
+    "expenditures": null
+   }
+  ],
   "4B": [
    {
     "name": "Fegley, clayton",
@@ -781,16 +807,6 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 5694.07,
-    "expenditures": null
-   }
-  ],
-  "4A": [
-   {
-    "name": "Jones, Terry",
-    "candidate": "Terry Burton Jones",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 16948.44,
     "expenditures": null
    }
   ]

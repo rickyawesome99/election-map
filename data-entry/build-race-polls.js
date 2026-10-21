@@ -10,9 +10,17 @@
  *      · url = the poll's source (the scrape fills it from Wikipedia's citation; blank is fine).
  *      Seeded from the polling tables on the Wikipedia election pages; new polls arrive via
  *      scripts/fetch-race-polls.py (append-only) or by hand.
- *      EXCEPTION — Alaska Senate (S,AK,Senate) is hand-entered and holds ONLY each poll's
- *      ranked-choice FINAL ROUND (Sullivan v Peltola); never first-choice, head-to-head or
- *      party-summed numbers, and a re-scrape must not overwrite those rows.
+ *      EXCEPTION — Alaska's three races (S,AK,Senate; G,AK,Governor; H,AK,House AK-01) hold
+ *      ONLY each poll's ranked-choice FINAL ROUND between the two finalists (the round with
+ *      only those two left — Wikipedia's "Ranked-choice polls" table, round 3; AK-01's
+ *      finalists are Begich and the independent Bill Hill, who fills the dem slot); when a
+ *      pollster publishes several final-round scenarios (how exhausted ballots are
+ *      redistributed) the row is their plain average (user rule 2026-09-21 for the Senate,
+ *      all three races 2026-10-21). Never first-choice, head-to-head or party-summed
+ *      numbers; a poll with no two-candidate round is left out. The scrape reads these rows
+ *      from the ranked-choice table only (extract_rcv in scripts/fetch-race-polls.py),
+ *      append-only like everything else; rows entered by hand from a pollster's release
+ *      (decimals, polls Wikipedia lacks) survive.
  *      The CSV is the full archive; only polls that went into the field on or after
  *      EARLIEST_START are emitted (see below), so off-year polls of the 2026 races are kept
  *      on file but never reach an average or a race page.

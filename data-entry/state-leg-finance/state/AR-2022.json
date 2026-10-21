@@ -116,6 +116,14 @@
     "incumbent": false,
     "contributions": 32330.93,
     "expenditures": null
+   },
+   {
+    "name": "Worthen, Diana nzales",
+    "candidate": "Diana Worthen",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 60573.67,
+    "expenditures": null
    }
   ],
   "10": [
@@ -146,7 +154,25 @@
     "expenditures": null
    }
   ],
+  "12": [
+   {
+    "name": "Duke, Kimberly Hope",
+    "candidate": "Hope Hendren Duke",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 20771,
+    "expenditures": null
+   }
+  ],
   "13": [
+   {
+    "name": "Richardson, Robert Scott",
+    "candidate": "R. Scott Richardson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 48871,
+    "expenditures": null
+   },
    {
     "name": "Standerfer, Jen A",
     "candidate": "Jen Standerfer",
@@ -1155,7 +1181,7 @@
   "96": [
    {
     "name": "Barker, Sonia Eubanks",
-    "candidate": "Sonia Barker",
+    "candidate": "Sonia Eubanks Barker",
     "party": "Republican",
     "incumbent": true,
     "contributions": 14426.86,
@@ -1286,6 +1312,14 @@
     "incumbent": false,
     "contributions": 97447,
     "expenditures": null
+   },
+   {
+    "name": "McKee, Cortney Rachele",
+    "candidate": "Cortney Warwick McKee",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7424.67,
+    "expenditures": null
    }
   ],
   "7": [
@@ -1365,7 +1399,7 @@
    },
    {
     "name": "Sweatman, Allison Grigsby",
-    "candidate": "Allison Grigsbysweatman",
+    "candidate": "Allison Grigsby Sweatman",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 68533.26,
@@ -1499,7 +1533,7 @@
   "24": [
    {
     "name": "Irvin, Melissa Thomas",
-    "candidate": "Missy Thomasirvin",
+    "candidate": "Missy Irvin",
     "party": "Republican",
     "incumbent": true,
     "contributions": 118161.36,

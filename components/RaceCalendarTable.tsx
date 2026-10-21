@@ -28,13 +28,13 @@ const leanOf = (margin: number) => (Math.abs(margin) < 0.05 ? "none" : margin > 
 /** The candidate on one ballot line. A top-two or all-Republican runoff can put a candidate
  *  from another party in the opposing slot, so the party they actually ran under colours the
  *  name — and gets spelled out when it isn't the party of the column. */
-function CandidateCell({ name, party, slot }: { name: string; party: string; slot: "D" | "R" }) {
+function CandidateCell({ name, party, slot, state }: { name: string; party: string; slot: "D" | "R"; state: string }) {
   if (!name) return <span className="none">No candidate</span>;
   // The colour is carried by the wrapper, not the link: CandidateLink forwards only the props
   // it declares, so a data attribute set on it would be dropped.
   return (
     <span className="cal-party whitespace-nowrap" data-party={party}>
-      <CandidateLink name={name} className="text-sm font-semibold hover:underline" />
+      <CandidateLink name={name} state={state} className="text-sm font-semibold hover:underline" />
       {party !== slot && <span className="ml-1 text-[10px] font-bold">({party})</span>}
     </span>
   );
@@ -106,12 +106,12 @@ export default function RaceCalendarTable({ races }: { races: CalendarRace[] }) 
                     </span>
                   </td>
                   <td><TypeCell race={race} /></td>
-                  <td><CandidateCell name={race.demName} party={race.demParty} slot="D" /></td>
+                  <td><CandidateCell name={race.demName} party={race.demParty} slot="D" state={race.state} /></td>
                   <td className="r">{num(race.demVotes)}</td>
                   {/* Coloured by the party the candidate actually ran under, not by the column:
                       a top-two race can put two Democrats, or two Republicans, on both lines. */}
                   <td className="r cal-party cal-pct" data-party={race.demParty}>{race.demPct.toFixed(1)}%</td>
-                  <td><CandidateCell name={race.repName} party={race.repParty} slot="R" /></td>
+                  <td><CandidateCell name={race.repName} party={race.repParty} slot="R" state={race.state} /></td>
                   <td className="r">{num(race.repVotes)}</td>
                   <td className="r cal-party cal-pct" data-party={race.repParty}>{race.repPct.toFixed(1)}%</td>
                   <td className="r">{num(race.totalVotes)}</td>

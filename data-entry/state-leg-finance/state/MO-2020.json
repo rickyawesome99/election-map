@@ -91,7 +91,7 @@
    },
    {
     "name": "Dean VanSchoiack",
-    "candidate": "Dean Vanschoiack",
+    "candidate": "Dean van Schoiack",
     "party": "Republican",
     "incumbent": false,
     "contributions": 51682,
@@ -141,6 +141,14 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 26105,
+    "expenditures": null
+   },
+   {
+    "name": "Wade Kiefer",
+    "candidate": "Wade Hugh Kiefer",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 22045.61,
     "expenditures": null
    }
   ],
@@ -307,6 +315,16 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 80298.81,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Ashley Manlove",
+    "candidate": "Ashley Bland Manlove",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 41602.97,
     "expenditures": null
    }
   ],
@@ -521,7 +539,7 @@
    },
    {
     "name": "CHERI REISCH",
-    "candidate": "Cheri Toalsonreisch",
+    "candidate": "Cheri Toalson Reisch",
     "party": "Republican",
     "incumbent": true,
     "contributions": 36294,
@@ -619,6 +637,14 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 50225,
+    "expenditures": null
+   },
+   {
+    "name": "William Wayne",
+    "candidate": "William Truman Wayne",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 2006.13,
     "expenditures": null
    }
   ],
@@ -1131,7 +1157,7 @@
    },
    {
     "name": "Bridget Moore",
-    "candidate": "Bridget Walshmoore",
+    "candidate": "Bridget Walsh Moore",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 63936.24,
@@ -1471,7 +1497,7 @@
   "115": [
    {
     "name": "Cyndi Buchheit-Courtway",
-    "candidate": "Cyndi Buchheitcourtway",
+    "candidate": "Cyndi Buchheit-Courtway",
     "party": "Republican",
     "incumbent": false,
     "contributions": 49974,
@@ -1563,7 +1589,7 @@
    },
    {
     "name": "Yvonne Chong",
-    "candidate": "Yvonne Reeveschong",
+    "candidate": "Yvonne Reeves-Chong",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9408.15,

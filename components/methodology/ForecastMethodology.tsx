@@ -249,7 +249,7 @@ export default function ForecastMethodology() {
           { term: "Cycle window", def: "Only polls that went into the field on or after 1 January 2026 count. Recency weighting had already left an off-year poll near-weightless, but it could still fill a race's table, stand as a pollster's latest survey, or hand a race with no 2026 polling a polling average of its own." },
           { term: "Pollster grades", def: "Shown beside every poll but never a weight: a pollster's accuracy against the field has not carried into the next cycle (correlation 0.00)." },
           { term: "Multi-candidate tables", def: "Where a table lists several candidates of one party (pre-primary top-two, jungle), each party's candidates are summed and normalized to two-party." },
-          { term: "Alaska Senate", def: "Only a poll's ranked-choice FINAL ROUND between the two finalists is entered, by hand. First-choice toplines are not ingested, and a re-scrape must not overwrite these rows." },
+          { term: "Alaska", def: "For all three Alaska races (Senate, Governor, AK-01) only a poll's ranked-choice FINAL ROUND between the two finalists (Wikipedia's ranked-choice table, round 3) is entered, by hand; a pollster's several final-round scenarios are averaged, and a poll with no two-candidate round is left out. First-choice toplines are never party-summed; the weekly scrape reads only the ranked-choice table for these races, and rows entered by hand from a pollster's own release (with decimals) are kept. AK-01's finalists are Nick Begich and the independent Bill Hill." },
         ]} />
       </Section>
 

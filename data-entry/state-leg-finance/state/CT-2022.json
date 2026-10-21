@@ -25,7 +25,7 @@
    },
    {
     "name": "Raghib Allie-Brennan",
-    "candidate": "Raghib Alliebrennan",
+    "candidate": "Raghib Allie-Brennan",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6136,
@@ -54,6 +54,14 @@
   ],
   "5": [
    {
+    "name": "Charles Jackson",
+    "candidate": "Charles Jackson III",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6621.02,
+    "expenditures": null
+   },
+   {
     "name": "Maryam Khan",
     "candidate": "Maryam Khan",
     "party": "Democratic",
@@ -69,6 +77,16 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 7095,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Joshua Hall",
+    "candidate": "Joshua Malik Hall",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3580,
     "expenditures": null
    }
   ],
@@ -213,7 +231,7 @@
    },
    {
     "name": "Eleni Kavros DeGraw",
-    "candidate": "Eleni Kavrosdegraw",
+    "candidate": "Eleni Kavros Degraw",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6527,
@@ -277,6 +295,14 @@
    }
   ],
   "22": [
+   {
+    "name": "Francis Cooley",
+    "candidate": "Francis Rexford Cooley",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6325,
+    "expenditures": null
+   },
    {
     "name": "Rebecca Martinez",
     "candidate": "Rebecca Martinez",
@@ -371,7 +397,7 @@
   "28": [
    {
     "name": "Amy Morrin Bello",
-    "candidate": "Amy Morrinbello",
+    "candidate": "Amy Morrin Bello",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6375,
@@ -999,7 +1025,7 @@
    },
    {
     "name": "Karen Reddington-Hughes",
-    "candidate": "Karen Reddingtonhughes",
+    "candidate": "Karen Reddington-Hughes",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6383,
@@ -1092,6 +1118,14 @@
   ],
   "73": [
    {
+    "name": "Abigail Pizarro",
+    "candidate": "Abigail Diaz Pizarro",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6755,
+    "expenditures": null
+   },
+   {
     "name": "Ronald Napoli",
     "candidate": "Ronald A. Napoli Jr.",
     "party": "Democratic",
@@ -1141,10 +1175,18 @@
   "77": [
    {
     "name": "Andrew Rasmussen-Tuller",
-    "candidate": "Andrew Rasmussentuller",
+    "candidate": "Andrew Rasmussen-Tuller",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6050,
+    "expenditures": null
+   },
+   {
+    "name": "Cara Pavalock-D'Amato",
+    "candidate": "Cara C. Pavalock-Damato",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6645,
     "expenditures": null
    }
   ],
@@ -1161,7 +1203,7 @@
   "79": [
    {
     "name": "Jen Van Gorder",
-    "candidate": "Jennifer Vangorder",
+    "candidate": "Jennifer van Gorder",
     "party": "Republican",
     "incumbent": false,
     "contributions": 6722,
@@ -1339,7 +1381,7 @@
   "93": [
    {
     "name": "Toni Walker",
-    "candidate": "Toni E. Walker",
+    "candidate": "Toni Edmonds Walker",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6762.2,
@@ -1515,7 +1557,7 @@
   "105": [
    {
     "name": "Nicole Klarides-Ditria",
-    "candidate": "Nicole Klaridesditria",
+    "candidate": "Nicole Klarides-Ditria",
     "party": "Republican",
     "incumbent": true,
     "contributions": 7205,
@@ -1599,7 +1641,7 @@
   "111": [
    {
     "name": "Aimee Berger-Girvalo",
-    "candidate": "Aimee Bergergirvalo",
+    "candidate": "Aimee Berger-Girvalo",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 7485,
@@ -1783,7 +1825,7 @@
    },
    {
     "name": "Sujata Gadkar-Wilcox",
-    "candidate": "Sujata Gadkarwilcox",
+    "candidate": "Sujata Gadkar-Wilcox",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 6160,
@@ -1907,7 +1949,7 @@
   "133": [
    {
     "name": "Cristin McCarthy Vahey",
-    "candidate": "Cristin McCarthyvahey",
+    "candidate": "Cristin McCarthy Vahey",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 6465,
@@ -2717,7 +2759,7 @@
   "30": [
    {
     "name": "Eva Bermudez Zimmerman",
-    "candidate": "Eva Bermudezzimmerman",
+    "candidate": "Eva Zimmerman",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 22152.86,

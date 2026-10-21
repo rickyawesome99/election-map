@@ -381,7 +381,7 @@
   "24": [
    {
     "name": "Chavez-Houck, Rebecca",
-    "candidate": "Rebecca Chavezhouck",
+    "candidate": "Rebecca Chavez-Houck",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 25612.85,
@@ -583,7 +583,7 @@
    },
    {
     "name": "Moss, Carol Spackman",
-    "candidate": "Carol Spackmanmoss",
+    "candidate": "Carol Spackman Moss",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 41047.11,
@@ -941,7 +941,7 @@
    },
    {
     "name": "Swallow-Fenton, Brooke",
-    "candidate": "Brooke Swallowfenton",
+    "candidate": "Brooke Swallow-Fenton",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3534.85,
@@ -1106,6 +1106,16 @@
     "incumbent": true,
     "contributions": 22931,
     "expenditures": 30406.04
+   }
+  ],
+  "74": [
+   {
+    "name": "Snow, V. Lowry",
+    "candidate": "V. Lowry Snow",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 19431.8,
+    "expenditures": 13793.39
    }
   ],
   "75": [

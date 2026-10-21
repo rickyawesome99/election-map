@@ -393,14 +393,16 @@ function buildIndex(): Map<string, CandidatePage> {
     ...collectPresidential(),
   ];
 
-  // Group by name (exact match — intentional; slightly different names get separate pages)
-  const byName = new Map<string, RawEntry[]>();
+  // Group by name (exact match — intentional; slightly different names get separate pages), or by
+  // name and state for the few people who share a name with another candidate (lib/candidateSlug.ts).
+  const byName = new Map<string, { name: string; entries: RawEntry[] }>(); // keyed by page slug
   for (const entry of allRaw) {
-    const existing = byName.get(entry.name);
+    const key = candidateSlug(entry.name, entry.state);
+    const existing = byName.get(key);
     if (existing) {
-      existing.push(entry);
+      existing.entries.push(entry);
     } else {
-      byName.set(entry.name, [entry]);
+      byName.set(key, { name: entry.name, entries: [entry] });
     }
   }
 
@@ -426,16 +428,16 @@ function buildIndex(): Map<string, CandidatePage> {
   ];
   for (const inc of allNoElectionIncumbents) {
     if (!isValidName(inc.name)) continue;
-    if (!byName.has(inc.name)) {
+    const key = candidateSlug(inc.name, inc.raceName); // raceName is the state's full name
+    if (!byName.has(key)) {
       // Stub entry so the name is registered — no history entries, page will show current position only
-      byName.set(inc.name, []);
+      byName.set(key, { name: inc.name, entries: [] });
     }
   }
 
   const index = new Map<string, CandidatePage>();
 
-  for (const [name, rawEntries] of byName) {
-    const slug = candidateSlug(name);
+  for (const [slug, { name, entries: rawEntries }] of byName) {
 
     // Deduplicate: same name can appear in multiple data sources for the same race/year
     const seen = new Set<string>();
@@ -468,7 +470,7 @@ function buildIndex(): Map<string, CandidatePage> {
           margin: currentEntry.margin ?? 0,
           side: currentEntry.side,
           opponent: currentEntry.opponentName
-            ? { name: currentEntry.opponentName, party: currentEntry.opponentParty ?? "I", slug: candidateSlug(currentEntry.opponentName) }
+            ? { name: currentEntry.opponentName, party: currentEntry.opponentParty ?? "I", slug: candidateSlug(currentEntry.opponentName, currentEntry.state) }
             : undefined,
         }
       : undefined;
@@ -483,7 +485,7 @@ function buildIndex(): Map<string, CandidatePage> {
       party: e.party,
       oppParty: e.opponentParty ?? (e.side === "dem" ? "R" : "D"),
       oppName: e.isCurrent ? undefined : e.opponentName,
-      oppSlug: !e.isCurrent && e.opponentName ? candidateSlug(e.opponentName) : undefined,
+      oppSlug: !e.isCurrent && e.opponentName ? candidateSlug(e.opponentName, e.state) : undefined,
       side: e.side,
       demPct: e.demPct,
       repPct: e.repPct,

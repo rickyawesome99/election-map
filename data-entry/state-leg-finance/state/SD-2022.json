@@ -269,7 +269,7 @@
    },
    {
     "name": "Dan Kerner Andersson",
-    "candidate": "Dan Andersson",
+    "candidate": "Dan Kerner Andersson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1684.94,
@@ -355,7 +355,7 @@
   "30": [
    {
     "name": "Julie Frye-Mueller",
-    "candidate": "Julie Fryemueller",
+    "candidate": "Julie Frye-Mueller",
     "party": "Republican",
     "incumbent": true,
     "contributions": 7661,
@@ -415,7 +415,7 @@
   "1": [
    {
     "name": "Tamara StJohn",
-    "candidate": "Tamara Stjohn",
+    "candidate": "Tamara St John",
     "party": "Republican",
     "incumbent": true,
     "contributions": 9000,
@@ -687,7 +687,7 @@
   "13": [
    {
     "name": "Sue Peterson",
-    "candidate": "Sue Peterson",
+    "candidate": "Sue Lucas Peterson",
     "party": "Republican",
     "incumbent": true,
     "contributions": 52438.33,
@@ -695,6 +695,14 @@
    }
   ],
   "14": [
+   {
+    "name": "Taylor Rehfeldt",
+    "candidate": "Taylor Rehfeldt",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 78521.55,
+    "expenditures": null
+   },
    {
     "name": "Mike Huber",
     "candidate": "Mike Huber",
@@ -791,7 +799,7 @@
    },
    {
     "name": "Rebecca \"Bekki\" Engquist-Schroeder",
-    "candidate": "Rebecca Engquistschroeder",
+    "candidate": "Rebecca Engquist-Schroeder",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 15468.16,
@@ -948,6 +956,14 @@
     "incumbent": true,
     "contributions": 13755,
     "expenditures": null
+   },
+   {
+    "name": "David Kills A Hundred",
+    "candidate": "David Kills A Hundred",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1591,
+    "expenditures": null
    }
   ],
   "27": [
@@ -1073,7 +1089,7 @@
    },
    {
     "name": "jonathan old horse",
-    "candidate": "Jonathan M. Oldhorse",
+    "candidate": "Jonathan M. Old Horse",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4095,

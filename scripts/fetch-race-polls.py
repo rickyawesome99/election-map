@@ -5,6 +5,7 @@ RACE POLLS — Wikipedia scrape → data-entry/race_polls.csv (append-only merge
     python3 scripts/fetch-race-polls.py            # fetch, merge, write the CSV
     python3 scripts/fetch-race-polls.py --dry-run  # fetch + report, write nothing
     python3 scripts/fetch-race-polls.py --links-only  # only fill blank url cells on on-file rows
+    python3 scripts/fetch-race-polls.py --dry-run --state AK  # one state only (testing)
 
 Source: the individual-poll wikitables on each 2026 race's Wikipedia page (raw wikitext via
 index.php?action=raw; RealClearPolling blocks scripted fetches). Races and nominees come from
@@ -33,10 +34,22 @@ Merge rules:
     a scraped poll is new when no existing row of the same race has the same start + end
     dates and the same normalised pollster, nor the same dates and the same dem/rep shares
   - same-party generals (CA top-two D-v-D, CA-40 R-v-R) are skipped: decided races, polls unused
-  - Alaska Senate (S,AK,Senate) is NEVER scraped — those rows are hand-entered RCV final
-    rounds only (user rule 2026-09-21); add new ones by hand from the pollster's release
+  - Alaska's three races (RCV_RACES: S,AK,Senate; G,AK,Governor; H,AK,House AK-01) are read
+    from the page's "Ranked-choice polls" table ONLY (a table with an "RCV round" column),
+    never from a first-past-the-post table, and never party-summed (user rule 2026-09-21,
+    extended to all three races 2026-10-21): a poll's row is its two-candidate round — the
+    round(s) whose only live candidate columns are the two nominees (AK-01: Begich and the
+    independent Bill Hill, who fills the dem slot) — and when the pollster prints several
+    such rounds (hypothetical redistributions of exhausted ballots) the row is their plain
+    average; a poll with no two-candidate round is left out. Shares are kept as printed
+    (not renormalised over the unranked). Sample = the poll's first row. Hand-entered rows
+    (decimals from a pollster's own release, polls Wikipedia lacks) survive as usual; for
+    these races a scraped row within 1 point of the on-file row is not reported as a conflict
   - scraped polls disagreeing with an existing row (same race/pollster/end date, different
     numbers) are listed for review, not applied
+  - on-file 2026 rows of a scraped race that the scrape no longer finds are listed as "−"
+    (Wikipedia removed the poll — e.g. 2026-10-20, every Wedgewood Polls row, a hoax pollster);
+    they are KEPT, so review them and delete by hand if the removal is right
 """
 
 import csv
@@ -58,7 +71,7 @@ FIELDS = ["office", "state", "race", "pollster", "partisan", "start", "end", "sa
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) election-map poll refresh"
 YEAR = 2026
 AT_LARGE = {"AK", "DE", "ND", "SD", "VT", "WY"}
-SKIP_RACES = {("S", "AK", "Senate")}  # hand-entered RCV final rounds only
+RCV_RACES = {("S", "AK", "Senate"), ("G", "AK", "Governor"), ("H", "AK", "House AK-01")}  # ranked-choice table, final round only
 MONTHS = {m: i for i, m in enumerate(
     ["january", "february", "march", "april", "may", "june", "july", "august",
      "september", "october", "november", "december"], 1)}
@@ -452,6 +465,77 @@ def extract(text, dem_name, rep_name):
     return list(best.values())
 
 
+NOT_CANDIDATE = re.compile(r"other|undecided|not ranked|margin|lead|moe|error|would not|none|someone|round|sample|date|poll")
+
+
+def extract_rcv(text, dem_name, rep_name):
+    """Alaska: → one poll dict per poll in a 'Ranked-choice polls' table (header has an RCV round
+    column), from the round(s) in which only the two nominees are still live, averaged."""
+    ds, rs = surname(dem_name), surname(rep_name)
+    polls = []
+    for body in iter_tables(text):
+        header, rows = table_rows(body)
+        if not header or not rows:
+            continue
+        cols = []
+        for (a, _), h in zip(header, [plain(t) for _, t in header]):
+            cols += [h] * span(a, "colspan")
+        lower = [fold(h) for h in cols]
+        if not any("round" in h for h in lower):
+            continue
+        try:
+            ci_poll = next(i for i, h in enumerate(lower) if "poll" in h and "source" in h or h.startswith("poll"))
+            ci_date = next(i for i, h in enumerate(lower) if "date" in h)
+        except StopIteration:
+            continue
+        ci_samp = next((i for i, h in enumerate(lower) if "sample" in h), None)
+        cand = [i for i, h in enumerate(lower) if i > max(ci_date, ci_samp or 0) and not NOT_CANDIDATE.search(h)]
+        if len(cand) < 2:
+            continue
+        # group the grid's rows by poll (a poll starts where the pollster column is not a rowspan carry-over)
+        groups, cur = [], None
+        for cells, first in grid(rows, len(cols)):
+            if first:
+                cur = []; groups.append(cur)
+            if cur is not None:
+                cur.append(cells)
+        for g in groups:
+            head = g[0]
+            if head[ci_poll] is None:
+                continue
+            finals = []  # (dem, rep) per two-candidate round
+            pair = None
+            for cells in g:
+                live = [i for i in cand if parse_pct(cells[i]) is not None]
+                if len(live) != 2:
+                    continue
+                a, b = live
+                d_col = next((i for i in (a, b) if ds and re.search(r"\b" + re.escape(ds) + r"\b", lower[i])), None)
+                r_col = next((i for i in (a, b) if rs and re.search(r"\b" + re.escape(rs) + r"\b", lower[i])), None)
+                if d_col is None or r_col is None or d_col == r_col:
+                    continue  # a final two that is not the nominees (e.g. two Republicans)
+                if pair and pair != (d_col, r_col):
+                    continue
+                pair = (d_col, r_col)
+                finals.append((parse_pct(cells[d_col]), parse_pct(cells[r_col])))
+            if not finals:
+                continue
+            dates = parse_dates(head[ci_date] or "")
+            if not dates:
+                continue
+            pollster, partisan = clean_pollster(head[ci_poll])
+            if not pollster:
+                continue
+            sample, pop = parse_sample(head[ci_samp]) if ci_samp is not None else ("", "")
+            dem = round(sum(f[0] for f in finals) / len(finals), 1)
+            rep = round(sum(f[1] for f in finals) / len(finals), 1)
+            polls.append({"pollster": pollster, "partisan": partisan, "start": dates[0], "end": dates[1],
+                          "sample": sample, "population": pop, "url": poll_url(head[ci_poll]),
+                          "dem": f"{dem:.1f}", "rep": f"{rep:.1f}", "_summed": False,
+                          "_tag": f" [RCV final round{', ' + str(len(finals)) + ' scenarios averaged' if len(finals) > 1 else ''}]"})
+    return polls
+
+
 def house_sections(text):
     # "==District 4==", or "===District 48===" under "==Districts 27–52==" (California)
     out, parts = {}, re.split(r"^={2,3}\s*District\s+(\d+)\s*={2,3}\s*$", text, flags=re.M)
@@ -526,24 +610,30 @@ def races():
 def main():
     dry = "--dry-run" in sys.argv
     links_only = "--links-only" in sys.argv  # no new polls, no "checked" stamp: just source links
+    only_state = sys.argv[sys.argv.index("--state") + 1].upper() if "--state" in sys.argv else None  # test one state
     existing = read_csv("race_polls.csv")
     by_race = {}
     for r in existing:
         by_race.setdefault((r["office"], r["state"], r["race"]), []).append(r)
 
     added, conflicts, missing_pages, scanned, found, backfilled = [], [], [], 0, 0, 0
+    reproduced, scanned_keys = set(), []  # on-file rows the scrape found again; races it looked at
     all_races = races()
     for i, (office, st, label, title, dist, dem, rep) in enumerate(all_races):
         key = (office, st, label)
-        if key in SKIP_RACES or not dem or not rep or same_party.get(key):
+        if (only_state and st != only_state) or not dem or not rep or same_party.get(key):
             continue
+        rcv = key in RCV_RACES
         if fetch_raw(title) is None:
             missing_pages.append(title); continue
         text = fetch_raw(title) if dist is None else house_district_text(title, dist)
         if text is None:
             continue
         scanned += 1
-        polls = extract(preclean(text, ref_defs((fetch_raw(title) or "") + "\n" + text)), dem, rep)
+        if not rcv:
+            scanned_keys.append(key)
+        cleaned = preclean(text, ref_defs((fetch_raw(title) or "") + "\n" + text))
+        polls = extract_rcv(cleaned, dem, rep) if rcv else extract(cleaned, dem, rep)
         found += len(polls)
         have = by_race.get(key, [])
         for p in polls:
@@ -553,11 +643,12 @@ def main():
                    or (h["start"], h["end"], float(h["dem"] or 0), float(h["rep"] or 0)) == k2]
             if dup:
                 h = dup[0]
+                reproduced.add(id(h))
                 if not h.get("url") and p["url"]:  # the one field an on-file row may gain
                     h["url"] = p["url"]; backfilled += 1
-                if (float(h["dem"] or 0), float(h["rep"] or 0)) != (float(p["dem"]), float(p["rep"])) \
-                        and h["start"] >= f"{YEAR}-01-01":
-                    conflicts.append((key, h, p))
+                gap = max(abs(float(h["dem"] or 0) - float(p["dem"])), abs(float(h["rep"] or 0) - float(p["rep"])))
+                if gap > (1.0 if rcv else 0) and h["start"] >= f"{YEAR}-01-01":
+                    conflicts.append((key, h, p))  # RCV rows: a hand-entered decimal vs Wikipedia's integer is not a conflict
                 continue
             # a poll whose end date matches an existing row from a similarly named pollster is
             # probably the same poll under an edited name/date — report it rather than double-count
@@ -566,7 +657,7 @@ def main():
             if near:
                 conflicts.append((key, near[0], p)); continue
             row = {"office": office, "state": st, "race": label, **{f: p[f] for f in FIELDS[3:]}}
-            added.append((row, p["_summed"]))
+            added.append((row, p.get("_tag") or (" [party-summed]" if p["_summed"] else "")))
             have.append(row)
         if (i + 1) % 50 == 0:
             print(f"  … {i + 1}/{len(all_races)} races", file=sys.stderr)
@@ -577,14 +668,20 @@ def main():
     for t in missing_pages:
         print(f"  page not found: {t}")
     latest = max((r["end"] for r, _ in added), default=None)
-    for row, summed in sorted(added, key=lambda x: (x[0]["office"], x[0]["state"], x[0]["race"], x[0]["end"])):
-        tag = " [party-summed]" if summed else ""
+    for row, tag in sorted(added, key=lambda x: (x[0]["office"], x[0]["state"], x[0]["race"], x[0]["end"])):
         print(f"  + {row['office']},{row['state']},{row['race']}: {row['pollster']}"
               f"{' (' + row['partisan'] + ')' if row['partisan'] else ''} {row['start']}→{row['end']}"
               f" {row['sample']}{row['population']} D {row['dem']} R {row['rep']}{tag}")
     for key, h, p in conflicts:
         print(f"  ? {','.join(key)}: on file {h['pollster']} {h['start']}→{h['end']} D {h['dem']} R {h['rep']}"
               f"  |  wiki {p['pollster']} {p['start']}→{p['end']} D {p['dem']} R {p['rep']}")
+    gone = [(key, h) for key in scanned_keys for h in by_race.get(key, [])
+            if h["start"] >= f"{YEAR}-01-01" and id(h) not in reproduced and h.get("office") is not None
+            and not any(h is r for r, _ in added)]
+    if gone:
+        print(f"On file but no longer on Wikipedia ({len(gone)}) — kept; delete by hand if the removal is right:")
+        for key, h in sorted(gone, key=lambda x: (x[0], x[1]["end"])):
+            print(f"  − {','.join(key)}: {h['pollster']} {h['start']}→{h['end']} D {h['dem']} R {h['rep']}")
     if latest:
         print(f"Newest added poll ends {latest}")
     if dry:

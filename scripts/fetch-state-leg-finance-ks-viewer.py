@@ -62,7 +62,9 @@ def parse_html(path):
         return None
     line = {}
     for n, label in ((1, "CASH ON HAND AT BEGINNING"), (2, "TOTAL CONTRIBUTIONS AND OTHER RECEIPTS"), (3, "CASH AVAILABLE"), (4, "TOTAL EXPENDITURES"), (5, "CASH ON HAND AT CLOSE"), (6, "IN-KIND")):
-        m = re.search(label + r"[^$]*?" + MONEY, t)
+        # the figure is the first $ amount after the label ("Subtract Line 4 from 3) $25,189.97": a bare number in the
+        # label itself is not it — line 5 read as 4.00 on every e-filed report until 2026-10-20)
+        m = re.search(label + r"[^$]*\$\s*(-?[\d,]+\.\d\d|-?[\d,]+)", t)
         line[n] = money(m.group(1)) if m else None
     name = re.search(r"Candidate Name:\s*(.*?)\s*Address:", t)
     dist = re.search(r"District:\s*(\d+)", t)
@@ -212,6 +214,8 @@ def build(jobs, sheets=False):
             index = json.load(open(os.path.join(d, "index.json")))
             periods = collections.defaultdict(dict)  # candidate → (start, end) → (filed order, report)
             pending = collections.defaultdict(list)  # candidate → unverified scans
+            conflicts = collections.defaultdict(list)  # candidate → (period, report, report) same-date filings that disagree
+            misprinted = collections.defaultdict(list)  # candidate → reports filed in the cycle printing a period before it
             names = {}
             for key, row in index.items():
                 # the grid spells one filer several ways ("ABEGG JAELYNN", "ABEGG, JAELYNN", "ABEGG JAELYNN E"):
@@ -246,12 +250,32 @@ def build(jobs, sheets=False):
                 if rep is None:
                     periods[cand][("?", key)] = (None, None)
                     continue
+                if row.get("filed") and rep["end"] > parse_date(row["filed"]) + datetime.timedelta(days=14):
+                    # A report cannot cover days after it was filed. The 2018 paper pre-primary form printed "January 1,
+                    # 2018 through December 31, 2018" (a dozen July 30 filings: Dietrich, Frownfelter, Helgerson, ...), so
+                    # the period ends where filing allowed: Kansas reports close about four days before they are due.
+                    rep = {**rep, "end": parse_date(row["filed"]) - datetime.timedelta(days=4)}
+                    if rep["end"] < rep["start"]:
+                        periods[cand][("?", key)] = (None, None)
+                        stats["period ends after filing date (unplaceable)"] += 1
+                        continue
+                    stats["period end cut to filing date"] += 1
+                if rep["end"] < lo and row.get("filed") and parse_date(row["filed"]) > datetime.date(lo.year, 1, 31):
+                    # filed well inside the cycle yet printing a period before it (a 2016 report on a 2014 form): the
+                    # report's real period is unknown, and skipping it would leave a silent hole
+                    misprinted[cand].append(rep)  # resolved below: a duplicate cover of a report we have is harmless
+                    continue
                 if rep["start"] < lo or rep["end"] > hi:
                     continue
                 if rep["name"]:
                     names[cand] = rep["name"]
                 order = max(parse_date(x) for x in (row["filed"], row["amended"] or row["filed"], rep["filed"] or row["filed"]) if x)
                 k = (rep["start"], rep["end"])
+                prev = periods[cand].get(k)
+                if prev and prev[0] == order and prev[1] and abs(prev[1]["line"][2] - rep["line"][2]) > 0.01:
+                    # two filings of one period with the same date (a paper amendment keeps the original filing date and
+                    # shows no amendment date) that disagree: resolved per candidate below
+                    conflicts[cand].append((k, prev[1], rep))
                 if k not in periods[cand] or periods[cand][k][0] is None or order >= periods[cand][k][0]:
                     periods[cand][k] = (order, rep)
             # Unverified scans: cash carries from one report to the next (line 1 = the previous report's line 5),
@@ -282,20 +306,129 @@ def build(jobs, sheets=False):
                         periods[cand][k] = (order, rep)
             for cand, ps in periods.items():
                 good = {k: v for k, v in ps.items() if k[0] != "?"}
-                # Overlapping periods are one report filed twice under different covers (Vicki Schmidt's 2015:
-                # Aug 4–Dec 31 and Jan 1–Dec 31): keep the longer.
-                keep = {}
+                # Overlapping periods, told apart by cash (each report opens with the previous one's closing cash):
+                # - the e-filing system printed many post-general reports as "Jan 1–Dec 31" (Poskin 2022: $2,672 opening
+                #   with the $31,619 her Jul 22–Oct 27 report closed with) → that report is the next period: re-dated to
+                #   start the day after the latest report inside it, and both kept;
+                # - otherwise one report filed twice under different covers (Vicki Schmidt's 2015: Aug 4–Dec 31 and Jan
+                #   1–Dec 31) or a cumulative restatement (Schwarz 2022, opening at $0), where the longer report holds
+                #   at least what the shorter ones do → keep the longer;
+                # - anything else (Benson 2024: filed Dec 10 "through Dec 31", $950 over $19,656) cannot be resolved →
+                #   the candidate is null. (Until 2026-10-20 the longer report always won, dropping real reports.)
+                money = lambda v: v[1]["line"][2] + (v[1]["line"].get(6) or 0)
+                near = lambda a, b: a is not None and b is not None and abs(a - b) < 0.02
+                ambiguous = False
+                # The cash chain first, for any overlapping pair (the e-filing system also printed Jul 27–Oct 25 reports
+                # as "Apr 10–Oct 25": Beck/Winn/Bolton 2018): b opening with a's closing cash and ending after it is the
+                # report after a → re-dated to start the day after a ends.
+                moved = True
+                while moved:
+                    moved = False
+                    for a in sorted(good):
+                        for b in sorted(good):
+                            if a == b or b[1] <= a[1] or b[0] > a[1] or not near(good[b][1]["line"].get(1), good[a][1]["line"].get(5)):
+                                continue
+                            nb = (a[1] + datetime.timedelta(days=1), b[1])
+                            if nb not in good and not any(j not in (a, b) and not (nb[1] < j[0] or nb[0] > j[1]) for j in good):
+                                good[nb] = good.pop(b)
+                                stats["long period re-dated after the report it continues"] += 1
+                                moved = True
+                                break
+                        if moved:
+                            break
                 for k in sorted(good, key=lambda k: (k[1] - k[0]), reverse=True):
-                    if all(k[1] < j[0] or k[0] > j[1] for j in keep):
-                        keep[k] = good[k]
+                    if k not in good:
+                        continue
+                    inner = [j for j in good if j != k and not (k[1] < j[0] or k[0] > j[1])]
+                    if not inner:
+                        continue
+                    last = max(inner, key=lambda j: j[1])
+                    if last[1] < k[1] and near(good[k][1]["line"].get(1), good[last][1]["line"].get(5)):
+                        nk = (last[1] + datetime.timedelta(days=1), k[1])
+                        if not any(j != k and not (nk[1] < j[0] or nk[0] > j[1]) for j in good):
+                            good[nk] = good.pop(k)
+                            stats["long period re-dated after the report it continues"] += 1
+                            continue
+                    first = min(inner)
+                    L = lambda x, n: good[x][1]["line"].get(n)
+                    if money(good[k]) == 0:
+                        del good[k]  # a long report with no money in it changes nothing (Young/Griffith 2020, Brewer 2024)
+                        stats["overlapping period dropped (long report, no money)"] += 1
+                        continue
+                    if any(j[1] == k[1] and (near(L(k, 1), L(j, 1)) or abs(money(good[k]) - money(good[j])) < 0.02) for j in inner):
+                        del good[k]  # another version of the regular year-end report (Grant/Gordon 2020, Lewis 2024)
+                        stats["overlapping period dropped (other version of a report inside it)"] += 1
+                        continue
+                    if near(L(k, 1), L(first, 1)) and near(L(k, 5), L(last, 5)):
+                        del good[k]  # a cumulative restatement of the reports inside it (Finch 2020)
+                        stats["overlapping period dropped (cumulative restatement)"] += 1
+                        continue
+                    if money(good[k]) >= sum(money(good[j]) for j in inner) - 0.01:
+                        for j in inner:
+                            del good[j]
+                        stats["overlapping period dropped (inside a longer report)"] += len(inner)
                     else:
-                        stats["overlapping period dropped"] += 1
-                good = keep
+                        ambiguous = True
+                        stats["overlapping periods unresolved"] += 1
+                        break
                 if not good:
                     continue
-                if any(v[1] is None for v in ps.values()):
+                # Consecutive reports must meet (Kansas periods run end-to-end). A hole between two of them is either a
+                # period the filer reported nothing for (no report on the site at all — Barker 2018) or a report we do
+                # not have / whose printed period is wrong (#73, 2022). Cash tells them apart: across a quiet period the
+                # next report opens with the previous one's closing cash. Otherwise the sum would be partial → null.
+                # A late first report (campaign started mid-cycle) is fine.
+                spans = sorted(good)
+                def carried(a, b):
+                    c, o = good[a][1]["line"].get(5), good[b][1]["line"].get(1)
+                    return c is not None and o is not None and abs(c - o) < 0.02
+                hole = any((b[0] - a[1]).days > 7 and not carried(a, b) for a, b in zip(spans, spans[1:]))
+                # A report filed in the cycle but printing a period before it (a 2016 report on a 2014 form) is the
+                # same report as one we have under its right period (Poskin: Jan 3 2022 "2020" = Jan 4 2022 "2021",
+                # same cash and receipts), or one with no money; anything else is a report we cannot place.
+                # Most are the off-year annual report on a stale form (filed Jan 2020 printing 2018): the cash chain
+                # places it — closing with the cash the candidate's first in-cycle report opens with → it is the period
+                # before that report (Ralph/Sykes 2020); opening with a counted report's opening cash → another version
+                # of that report (Haley 2020).
+                for r in misprinted.get(cand, []):
+                    first_k = min(good) if good else None
+                    same = any(near(r["line"].get(1), v[1]["line"].get(1)) for v in good.values())
+                    if same or (r["line"].get(2) or 0) + (r["line"].get(6) or 0) == 0:
+                        stats["misprinted period: duplicate or empty, ignored"] += 1
+                    elif first_k and first_k[0] > lo and near(r["line"].get(5), good[first_k][1]["line"].get(1)):
+                        good[(lo, first_k[0] - datetime.timedelta(days=1))] = (None, {**r, "start": lo, "end": first_k[0] - datetime.timedelta(days=1)})
+                        stats["misprinted period: placed before the first report by cash"] += 1
+                    else:
+                        ambiguous = True
+                        stats["misprinted period: report cannot be placed"] += 1
+                # Same-date filings of one period that disagree:
+                # - cash chains from one to the other → the second is the NEXT report on a stale form (Neighbor 2018: two
+                #   "Oct 26–Dec 31" reports, the second opening with the first's closing cash); at the cycle's end that
+                #   next report lies outside the cycle → keep the first; elsewhere it cannot be placed → null;
+                # - versions more than 10% and $250 apart (Benson 2024 $11,633.96 vs $1,633.96, Barron 2024 $1,300 vs
+                #   $0) → nothing says which is the later → null (of 175 such pairs in 2016–2026, half differ by under 5%);
+                # - versions within 10% or $250 (Dove 2018: $250 apart) → an amendment's correction; the one kept stands.
+                for k, a, b in conflicts.get(cand, []):
+                    if k not in good:
+                        continue
+                    nxt = b if near(b["line"].get(1), a["line"].get(5)) else a if near(a["line"].get(1), b["line"].get(5)) else None
+                    lo2, hi2 = sorted((a["line"][2] + (a["line"].get(6) or 0), b["line"][2] + (b["line"].get(6) or 0)))
+                    if nxt is not None:
+                        if k[1] == hi:
+                            good[k] = (good[k][0], b if nxt is a else a)
+                            stats["same-date filings: later one is the next report (outside cycle)"] += 1
+                        else:
+                            ambiguous = True
+                            stats["same-date filings: next report cannot be placed"] += 1
+                    elif hi2 - lo2 > 250 and hi2 - lo2 > 0.1 * hi2:
+                        ambiguous = True
+                        stats["same-date filings: versions far apart"] += 1
+                    else:
+                        stats["same-date filings: versions close, kept one"] += 1
+                unreadable = ambiguous or any(v[1] is None for v in ps.values())
+                if hole or unreadable:
                     contributions = expenditures = None
-                    stats["candidates null (unreadable period)"] += 1
+                    stats["candidates null (unreadable period)" if unreadable else "candidates null (gap between reports)"] += 1
                 else:
                     contributions = round(sum(v[1]["line"][2] + (v[1]["line"].get(6) or 0) for v in good.values()), 2)
                     expenditures = round(sum(v[1]["line"].get(4) or 0 for v in good.values()), 2)
@@ -309,7 +442,9 @@ def build(jobs, sheets=False):
             kept = [c for c in old["candidates"] if c["chamber"] not in chambers]
             if kept:
                 body["candidates"] = kept + out
-                if old["source"] != SOURCE and SOURCE not in old["source"]:
+                if SOURCE in old["source"] and old["source"] != SOURCE:
+                    body["source"] = old["source"]  # already the combined label (2016: GEC House summary + this, Senate)
+                elif old["source"] != SOURCE:
                     body["source"] = f"{old['source']} (House) + {SOURCE} (Senate)" if chambers == ["senate"] else old["source"]
         if not sheets:
             json.dump(body, open(path, "w"), indent=1)
@@ -388,7 +523,17 @@ def import_reads(jsonl, index_json):
              (None not in (L[2], L[3], L[4], L[5]) and near(L[3] - L[4], L[5]))
         try:
             datetime.date.fromisoformat(r["period_start"]); datetime.date.fromisoformat(r["period_end"])
+            # a report cannot cover days after it was filed: a printed period left over from an older form (a July
+            # report printing "through December 31") would displace the real reports' periods
+            if datetime.date.fromisoformat(r["period_end"]) > parse_date(it["filed"]) + datetime.timedelta(days=14):
+                ok = False
         except (TypeError, ValueError):
+            ok = False
+        # line 6 (in-kind) counts toward contributions but no identity checks it: blank on the form = 0, but a figure
+        # the reader could not make out must not become 0
+        if re.search(r"period misprinted", r.get("note") or "", re.I):
+            ok = False  # the reader saw a printed period that cannot be this report's (left over from an older form)
+        if L[6] is None and re.search(r"line ?6[^;.]*(illegib|unclear|ambiguous|unread|\?)", r.get("note") or "", re.I):
             ok = False
         if not ok:
             print("check", r["n"], it["name"], it["seat"], L, r.get("period_start"), r.get("period_end"), r.get("note"))

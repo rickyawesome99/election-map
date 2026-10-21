@@ -59,7 +59,7 @@ const DEFAULT_FRAME = { projectionConfig: { scale: 1000 } };
 const WIDE_FRAME = { width: 800, height: 480, projectionConfig: { scale: 1000 } };
 const WIDE_SHIFT = 29;
 
-export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor, onSelect, navigateOnClick = false, zoomable = true, wide = false, panel = true, selectedKey, framed = true }: {
+export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor, onSelect, navigateOnClick = false, zoomable = true, wide = false, fill = false, panel = true, selectedKey, framed = true }: {
   mode: "states" | "districts"; rows: MapRow[]; valueLabel: string; linkLabel: string;
   colorOf?: (value: number) => string; formatValue?: (value: number) => string; valueColor?: (value: number) => string;
   /** Fired when a place is picked (click/tap) or the panel is closed (null) — /analysis/polling-misses filters its table with it. */
@@ -71,6 +71,8 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   /** true = a wide 800×480 frame instead of 800×600, so the map fills the md+ box's 16:9-ish
    *  height instead of sitting in a band of empty sky; phone width is unchanged (the TPL hub). */
   wide?: boolean;
+  /** true = the turnout page's frame: a 5:3 box capped at 620px with side margins, and the wide 800×480 SVG stretched to fill it (/analysis/polling-misses). */
+  fill?: boolean;
   /** false = no popup box (md+) or under-map panel (phones) for the picked place — the page shows it itself (/analysis/polling-misses). */
   panel?: boolean;
   /** The picked place's key, when the page owns the selection (so a dropdown elsewhere can move the outline); omit to let the map track it. */
@@ -189,7 +191,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
 
   return (
     <>
-      <div className="relative h-[300px] w-full overflow-hidden rounded-xl sm:h-[400px] md:h-[480px]" style={framed ? { border: "1px solid var(--app-border)" } : undefined} onMouseMove={onTipMove}>
+      <div className={fill ? "relative mx-4 aspect-[5/3] max-h-[620px] overflow-hidden rounded-xl sm:mx-12 lg:mx-32" : "relative h-[300px] w-full overflow-hidden rounded-xl sm:h-[400px] md:h-[480px]"} style={framed ? { border: "1px solid var(--app-border)" } : undefined} onMouseMove={onTipMove}>
         {hovered && (!selected || !panel) && (
           <div ref={tooltipRef} className="pointer-events-none absolute z-20 hidden rounded-lg md:block" style={{ width: 160, padding: "7px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}>
             <div className="mb-0.5 text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>{hovered.name}</div>
@@ -197,7 +199,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
           </div>
         )}
 
-        <ComposableMap projection="geoAlbersUsa" {...(wide ? WIDE_FRAME : DEFAULT_FRAME)} style={{ width: "100%", height: "100%" }}>
+        <ComposableMap projection="geoAlbersUsa" {...(wide || fill ? WIDE_FRAME : DEFAULT_FRAME)} style={fill ? { position: "absolute", inset: 0, width: "100%", height: "100%" } : { width: "100%", height: "100%" }}>
           {layers}
         </ComposableMap>
 

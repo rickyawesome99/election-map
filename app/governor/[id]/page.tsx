@@ -4,7 +4,7 @@ import { governorData, governorNoElection, NoElectionEntry, electionYear, type P
 import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
-import { candidatePhotos } from "@/lib/candidatePhotos";
+import { candidatePhoto } from "@/lib/candidatePhotos";
 import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
@@ -100,7 +100,7 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
               </div>
             </div>
 
-            <CurrentIncumbentLedgerRow incumbentName={entry.incumbent} party={entry.party} photo={candidatePhotos[entry.incumbent] ?? null} compact />
+            <CurrentIncumbentLedgerRow incumbentName={entry.incumbent} state={entry.state} party={entry.party} photo={candidatePhoto(entry.incumbent, entry.state)} compact />
           </div>
         </div>
       </div>
@@ -133,6 +133,7 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
                   content: (
                     <PastElectionResultsSection
                       results={enrichedPastResults}
+                      state={entry.state}
                       fallbackYears={[entry.nextElection - 4, entry.nextElection - 8]}
                       showElectionType
                       density="compact"
@@ -165,8 +166,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   if (!race) notFound();
 
   const stateTpl = calculateStateTpl(id.toUpperCase(), race.name);
-  const demPhoto = race.candidates ? (candidatePhotos[race.candidates.dem.name] ?? null) : null;
-  const repPhoto = race.candidates ? (candidatePhotos[race.candidates.rep.name] ?? null) : null;
+  const demPhoto = race.candidates ? candidatePhoto(race.candidates.dem.name, race.state) : null;
+  const repPhoto = race.candidates ? candidatePhoto(race.candidates.rep.name, race.state) : null;
   const incumbent = race.candidates
     ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
     : null;
@@ -295,7 +296,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
               items={[
                 { label: "Term Length", value: "4 Years" },
-                { label: "Incumbent", value: currentGovernorName, href: candidatePageHref(currentGovernorName) },
+                { label: "Incumbent", value: currentGovernorName, href: candidatePageHref(currentGovernorName, race.state) },
                 { label: "Party", value: currentGovernorParty ? (currentGovernorParty === "D" ? "Democrat" : currentGovernorParty === "R" ? "Republican" : "Independent") : "TBD", color: partyTextColor(currentGovernorParty) },
               ]}
             />
@@ -307,12 +308,12 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               const rows = (
                 <CandidatesLedgerSection
                   candidates={withProjectedVotes([
-                    { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
-                    { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
+                    { name: race.candidates.dem.name, state: race.state, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
+                    { name: race.candidates.rep.name, state: race.state, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
                   ], countyProjection)}
                 />
               );
-              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} /> : rows;
+              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} state={race.state} /> : rows;
             })() : (
               <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</p>
             )}
@@ -392,6 +393,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                   content: (
                     <PastElectionResultsSection
                       results={enrichedPastResults}
+                      state={race.state}
                       fallbackYears={[2022, 2018, 2014]}
                       showElectionType
                       density="compact"

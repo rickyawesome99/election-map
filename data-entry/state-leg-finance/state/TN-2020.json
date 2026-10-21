@@ -553,7 +553,7 @@
    },
    {
     "name": "CAROL VENEA ABNEY",
-    "candidate": "Carol Abney",
+    "candidate": "Carol Venea Abney",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 34145.16,
@@ -1145,7 +1145,7 @@
    },
    {
     "name": "ANDREA BOND JOHNSON",
-    "candidate": "Andrea Bondjohnson",
+    "candidate": "Andrea Bond-Johnson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 119414.7,
@@ -1526,6 +1526,14 @@
     "incumbent": false,
     "contributions": 489039.6,
     "expenditures": null
+   },
+   {
+    "name": "STEVEN DICKERSON",
+    "candidate": "Steven Reid Dickerson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 530656.08,
+    "expenditures": null
    }
   ],
   "22": [
@@ -1575,7 +1583,7 @@
    },
    {
     "name": "CIVIL MILLER-WATKINS",
-    "candidate": "Civil Millerwatkins",
+    "candidate": "Civil Miller-Watkins",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 24390.2,
@@ -1613,7 +1621,7 @@
   "32": [
    {
     "name": "JULIE BYRD ASHWORTH",
-    "candidate": "Julie Byrdashworth",
+    "candidate": "Julie Byrd Ashworth",
     "party": "Democratic",
     "incumbent": false,
     "contributions": null,

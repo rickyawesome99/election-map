@@ -7,7 +7,7 @@
   "1": [
    {
     "name": "Chapman, J. Laura Wakim",
-    "candidate": "Laura Wakimchapman",
+    "candidate": "Laura Wakim Chapman",
     "party": "Republican",
     "incumbent": false,
     "contributions": 62875,
@@ -197,7 +197,7 @@
   "13": [
    {
     "name": "Fleischauer, Barbara Evans",
-    "candidate": "Barbara Evansfleischauer",
+    "candidate": "Barbara Evans Fleischauer",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 237334.85,
@@ -440,6 +440,14 @@
     "incumbent": true,
     "contributions": 29829.48,
     "expenditures": null
+   },
+   {
+    "name": "Leach, J Morgan",
+    "candidate": "J. Morgan Leach",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11404.23,
+    "expenditures": null
    }
   ],
   "11": [
@@ -471,7 +479,7 @@
    },
    {
     "name": "Smith, Stephen Thomas",
-    "candidate": "Stephen Thomassmith",
+    "candidate": "Stephen Thomas Smith",
     "party": "Other",
     "incumbent": false,
     "contributions": 5811.8,
@@ -573,7 +581,7 @@
   "19": [
    {
     "name": "Crouse, Kathie Hess",
-    "candidate": "Kathie Hesscrouse",
+    "candidate": "Kathie Hess Crouse",
     "party": "Republican",
     "incumbent": false,
     "contributions": 34933.02,
@@ -729,7 +737,7 @@
    },
    {
     "name": "Dillon, Henry Corbett",
-    "candidate": "Henry Corbettdillon",
+    "candidate": "Henry Corbett Dillon",
     "party": "Republican",
     "incumbent": false,
     "contributions": 22914.74,
@@ -1270,6 +1278,16 @@
     "expenditures": null
    }
   ],
+  "61": [
+   {
+    "name": "Jeffries, Dean",
+    "candidate": "Dean Jeffries",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 9291.8,
+    "expenditures": null
+   }
+  ],
   "62": [
    {
     "name": "Hanshaw, Roger",
@@ -1291,7 +1309,7 @@
   "63": [
    {
     "name": "Dittman, Lori Cowger",
-    "candidate": "Lori Cowgerdittman",
+    "candidate": "Lori Cowger Dittman",
     "party": "Republican",
     "incumbent": false,
     "contributions": 15238.18,
@@ -1363,7 +1381,7 @@
    },
    {
     "name": "Coop-Gonzalez, Elias Gorden",
-    "candidate": "Elias Coopgonzalez",
+    "candidate": "Elias Coop-Gonzalez",
     "party": "Republican",
     "incumbent": false,
     "contributions": 28224.15,
@@ -1495,6 +1513,14 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 17809.08,
+    "expenditures": null
+   },
+   {
+    "name": "Tomana, Stephanie",
+    "candidate": "Stephanie Spears Tomana",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 32006.54,
     "expenditures": null
    }
   ],
@@ -1752,6 +1778,14 @@
     "incumbent": true,
     "contributions": 6800,
     "expenditures": null
+   },
+   {
+    "name": "Wilson, S. Marshall",
+    "candidate": "S. Marshall Wilson",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 9410.66,
+    "expenditures": null
    }
   ],
   "92": [
@@ -1813,7 +1847,7 @@
   "96": [
    {
     "name": "Householder, Eric",
-    "candidate": "Eric L. Householder",
+    "candidate": "Eric Lee Householder",
     "party": "Republican",
     "incumbent": true,
     "contributions": 66975,

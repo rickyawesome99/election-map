@@ -2,16 +2,18 @@
 
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { DARK_THEME, LIGHT_THEME } from "@/components/ForecastMap";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
+import Segmented from "@/components/MarketSegmented";
+import Dropdown from "./Dropdown";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { useStaticJson } from "@/lib/useStaticJson";
 import {
-  EVEN_YEARS, METRIC_LABEL, MIDTERM_YEARS, OFFICE_LABEL, PRESIDENTIAL_YEARS, PROJECTION_YEAR, TURNOUT_OFFICES, TURNOUT_YEARS,
+  MIDTERM_YEARS, OFFICE_LABEL, PRESIDENTIAL_YEARS, PROJECTION_YEAR, TURNOUT_OFFICES, TURNOUT_YEARS,
   cycleTypeOf, projectionSliceUrl, turnoutSliceUrl,
-  type NationalYearRow, type ProjectedRace, type ProjectionStateSlice, type StateSeries, type TurnoutOffice, type TurnoutRace, type TurnoutSlice,
+  type NationalYearRow, type ProjectedRace, type ProjectionStateSlice, type StateSeries, type TurnoutMapView, type TurnoutOffice, type TurnoutRace, type TurnoutSlice,
 } from "@/lib/turnoutTypes";
 
 const TurnoutMap = dynamic(() => import("./TurnoutMap"), { loading: () => <div className="py-10 text-center text-xs" style={{ color: "var(--app-text-muted)" }}>Loading map…</div> });
@@ -62,17 +64,21 @@ function useSort(initial: SortState) {
   const toggle = (key: string, defaultDir: 1 | -1 = -1) => setSort((s) => (s.key === key ? { key, dir: s.dir === 1 ? -1 : 1 } : { key, dir: defaultDir }));
   return { sort, toggle };
 }
-function Th({ children, k, sort, onSort, align = "right", defaultDir = -1, title }: { children: React.ReactNode; k?: string; sort?: SortState; onSort?: (k: string, d?: 1 | -1) => void; align?: "left" | "right"; defaultDir?: 1 | -1; title?: string }) {
+// `phone` false hides the column on phones (every table fits one screen there); `wrap` lets a label cell wrap on phones.
+const PHONE_HIDDEN = "hidden sm:table-cell";
+function Th({ children, k, sort, onSort, align = "right", defaultDir = -1, title, phone = true }: { children: React.ReactNode; k?: string; sort?: SortState; onSort?: (k: string, d?: 1 | -1) => void; align?: "left" | "right"; defaultDir?: 1 | -1; title?: string; phone?: boolean }) {
   const active = k && sort?.key === k;
   return (
-    <th scope="col" title={title} className={`whitespace-nowrap px-2 py-1.5 text-[10px] font-bold uppercase tracking-wider ${align === "left" ? "text-left" : "text-right"}`} style={{ color: active ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
-      {k && onSort ? <button onClick={() => onSort(k, defaultDir)} className="hover:underline">{children}{active ? (sort!.dir === -1 ? " ↓" : " ↑") : ""}</button> : children}
+    <th scope="col" title={title} className={`whitespace-nowrap px-2 py-1.5 text-[10px] font-bold uppercase tracking-wider ${align === "left" ? "text-left" : "text-right"} ${phone ? "" : PHONE_HIDDEN}`} style={{ color: active ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
+      {k && onSort ? <button type="button" onClick={() => onSort(k, defaultDir)} className="uppercase hover:underline">{children}{active ? (sort!.dir === -1 ? " ↓" : " ↑") : ""}</button> : children}
     </th>
   );
 }
-const Td = ({ children, align = "right", strong, muted }: { children: React.ReactNode; align?: "left" | "right"; strong?: boolean; muted?: boolean }) => (
-  <td className={`whitespace-nowrap px-2 py-1.5 tabular-nums ${align === "left" ? "text-left" : "text-right"} ${strong ? "font-semibold" : ""}`} style={muted ? VERY_MUTED : undefined}>{children}</td>
+const Td = ({ children, align = "right", strong, muted, phone = true, wrap }: { children: React.ReactNode; align?: "left" | "right"; strong?: boolean; muted?: boolean; phone?: boolean; wrap?: boolean }) => (
+  <td className={`px-2 py-1.5 tabular-nums ${wrap ? "sm:whitespace-nowrap" : "whitespace-nowrap"} ${align === "left" ? "text-left" : "text-right"} ${strong ? "font-semibold" : ""} ${phone ? "" : PHONE_HIDDEN}`} style={muted ? VERY_MUTED : undefined}>{children}</td>
 );
+/** A column label that shortens on phones. */
+const Short = ({ phone, full }: { phone: string; full: string }) => <><span className="sm:hidden">{phone}</span><span className="hidden sm:inline">{full}</span></>;
 function sortBy<T>(rows: T[], get: (r: T) => number | string | null | undefined, dir: 1 | -1): T[] {
   return [...rows].sort((a, b) => {
     const x = get(a), y = get(b);
@@ -91,12 +97,10 @@ function yearsWithOffice(states: StateSeries[], office: TurnoutOffice): number[]
   return TURNOUT_YEARS.filter((y) => states.some((s) => s.years.find((r) => r.year === y)?.races[office]?.votes != null));
 }
 
-function StateTable({ states, national }: { states: StateSeries[]; national: NationalYearRow[] }) {
-  const [office, setOffice] = useState<TurnoutOffice>("president");
-  const [year, setYear] = useState(2024);
+function StateTable({ states, national, office, year, sortKey }: { states: StateSeries[]; national: NationalYearRow[]; office: TurnoutOffice; year: number; sortKey: string }) {
   const years = yearsWithOffice(states, office);
   const y = years.includes(year) ? year : years[years.length - 1];
-  const { sort, toggle } = useSort({ key: "rate", dir: -1 });
+  const { sort, toggle } = useSort({ key: sortKey, dir: -1 });
   const rows = (() => {
     const out = states.map((s) => {
       const r = s.years.find((x) => x.year === y)!;
@@ -111,14 +115,10 @@ function StateTable({ states, national }: { states: StateSeries[]; national: Nat
   const nat = national.find((n) => n.year === y);
   const maxRate = Math.max(...rows.map((r) => r.race?.rate ?? 0), 1);
   const isMid = cycleTypeOf(y) !== "presidential";
+  const ph = { cvap: sortKey !== "change", change: sortKey === "change" };
   return (
     <section id="by-state" className="pt-8">
-      <LedgerSectionHead label="Turnout by state" meta={`${rows.length} states · ${OFFICE_LABEL[office]} ${y}`} right={
-        <div className="flex flex-wrap items-center gap-3">
-          <Pills label="Office" options={TURNOUT_OFFICES.map((o) => ({ key: o, label: OFFICE_LABEL[o] }))} value={office} onChange={(o) => { setOffice(o); const ys = yearsWithOffice(states, o); if (!ys.includes(year)) setYear(ys[ys.length - 1]); }} />
-          <Pills label="Year" options={years.map((v) => ({ key: v, label: String(v) }))} value={y} onChange={setYear} />
-        </div>
-      } />
+      <LedgerSectionHead label="Turnout by state" meta={`${rows.length} states · ${OFFICE_LABEL[office]} ${y}`} />
       <p className="mb-3 max-w-3xl text-sm leading-relaxed" style={MUTED}>
         Votes cast in the race as a share of the state&apos;s citizen voting-age population (CVAP, the ACS five-year release ending that year). The VEP column is the same votes over the U.S. Elections Project&apos;s voting-eligible population, and Ballots is that project&apos;s total ballots counted over VEP, both as a cross-check. Change compares the rate with the same office four years earlier.
       </p>
@@ -127,35 +127,35 @@ function StateTable({ states, national }: { states: StateSeries[]; national: Nat
           <thead><tr style={{ borderBottom: "1px solid var(--app-border)" }}>
             <Th k="name" sort={sort} onSort={toggle} align="left" defaultDir={1}>State</Th>
             <Th k="votes" sort={sort} onSort={toggle}>Votes</Th>
-            <Th k="cvap" sort={sort} onSort={toggle}>CVAP</Th>
+            <Th k="cvap" sort={sort} onSort={toggle} phone={ph.cvap}>CVAP</Th>
             <Th k="rate" sort={sort} onSort={toggle}>% CVAP</Th>
-            <Th>&nbsp;</Th>
-            <Th k="vep" sort={sort} onSort={toggle} title="Votes in this race over the voting-eligible population">% VEP</Th>
-            <Th k="ballots" sort={sort} onSort={toggle} title="Total ballots counted over VEP (U.S. Elections Project)">Ballots / VEP</Th>
-            <Th k="ofTop" sort={sort} onSort={toggle} title="Votes as a share of the state's top race that year">% of top</Th>
-            <Th k="change" sort={sort} onSort={toggle} title="Rate change from the same office four years earlier, in points">Change</Th>
-            {isMid && <Th k="ofPrior" sort={sort} onSort={toggle} title="Top-race votes as a share of the previous presidential election's votes">vs. prior pres.</Th>}
+            <Th phone={false}>&nbsp;</Th>
+            <Th k="vep" sort={sort} onSort={toggle} title="Votes in this race over the voting-eligible population" phone={false}>% VEP</Th>
+            <Th k="ballots" sort={sort} onSort={toggle} title="Total ballots counted over VEP (U.S. Elections Project)" phone={false}>Ballots / VEP</Th>
+            <Th k="ofTop" sort={sort} onSort={toggle} title="Votes as a share of the state's top race that year" phone={false}>% of top</Th>
+            <Th k="change" sort={sort} onSort={toggle} title="Rate change from the same office four years earlier, in points" phone={ph.change}>Change</Th>
+            {isMid && <Th k="ofPrior" sort={sort} onSort={toggle} title="Top-race votes as a share of the previous presidential election's votes" phone={false}>vs. prior pres.</Th>}
           </tr></thead>
           <tbody>
             {nat && nat.votes[office] != null && (
               <tr style={{ borderBottom: "2px solid var(--app-border)", fontWeight: 600 }}>
-                <Td align="left">United States <span className="font-normal" style={VERY_MUTED}>({nat.states[office]} states)</span></Td>
-                <Td>{fmtInt(nat.votes[office])}</Td><Td>{fmtInt(nat.cvap)}</Td><Td>{fmtPct(nat.rate[office])}</Td><Td align="left"><Bar v={nat.rate[office] ?? null} max={maxRate} color="var(--app-text-muted)" /></Td>
-                <Td muted>—</Td><Td muted>—</Td><Td muted>—</Td><Td muted>—</Td>{isMid && <Td muted>—</Td>}
+                <Td align="left" wrap>United States <span className="font-normal" style={VERY_MUTED}>({nat.states[office]} states)</span></Td>
+                <Td>{fmtInt(nat.votes[office])}</Td><Td phone={ph.cvap}>{fmtInt(nat.cvap)}</Td><Td>{fmtPct(nat.rate[office])}</Td><Td align="left" phone={false}><Bar v={nat.rate[office] ?? null} max={maxRate} color="var(--app-text-muted)" /></Td>
+                <Td muted phone={false}>—</Td><Td muted phone={false}>—</Td><Td muted phone={false}>—</Td><Td muted phone={ph.change}>—</Td>{isMid && <Td muted phone={false}>—</Td>}
               </tr>
             )}
             {rows.map((r) => (
               <tr key={r.abbr} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                <Td align="left" strong>{r.name}{r.race?.firstRound ? "*" : ""}{r.race?.special ? <span className="ml-1 font-normal" style={VERY_MUTED}>special</span> : null}{typeof r.race?.uncontested === "number" && r.race.uncontested > 0 ? <span className="ml-1 font-normal" style={VERY_MUTED}>{r.race.uncontested} of {r.race.seats} unopposed</span> : null}</Td>
+                <Td align="left" strong wrap>{r.name}{r.race?.firstRound ? "*" : ""}{r.race?.special ? <span className="ml-1 font-normal" style={VERY_MUTED}>special</span> : null}{typeof r.race?.uncontested === "number" && r.race.uncontested > 0 ? <span className="ml-1 font-normal" style={VERY_MUTED}>{r.race.uncontested} of {r.race.seats} unopposed</span> : null}</Td>
                 <Td>{r.race?.votes == null ? <span style={VERY_MUTED}>no count</span> : fmtInt(r.race.votes)}</Td>
-                <Td>{fmtInt(r.cvap)}</Td>
+                <Td phone={ph.cvap}>{fmtInt(r.cvap)}</Td>
                 <Td strong>{fmtPct(r.race?.rate)}</Td>
-                <Td align="left"><Bar v={r.race?.rate ?? null} max={maxRate} color="#4a8aa6" /></Td>
-                <Td>{fmtPct(r.vepRate)}</Td>
-                <Td muted>{fmtPct(r.ballotsRate)}</Td>
-                <Td>{r.race?.ofTop == null || r.top?.office === office ? <span style={VERY_MUTED}>top</span> : fmtPct(r.race.ofTop, 0)}</Td>
-                <Td>{fmtPts(r.race?.change)}</Td>
-                {isMid && <Td>{fmtPct(r.ofPrior, 0)}</Td>}
+                <Td align="left" phone={false}><Bar v={r.race?.rate ?? null} max={maxRate} color="#4a8aa6" /></Td>
+                <Td phone={false}>{fmtPct(r.vepRate)}</Td>
+                <Td muted phone={false}>{fmtPct(r.ballotsRate)}</Td>
+                <Td phone={false}>{r.race?.ofTop == null || r.top?.office === office ? <span style={VERY_MUTED}>top</span> : fmtPct(r.race.ofTop, 0)}</Td>
+                <Td phone={ph.change}>{fmtPts(r.race?.change)}</Td>
+                {isMid && <Td phone={false}>{fmtPct(r.ofPrior, 0)}</Td>}
               </tr>
             ))}
           </tbody>
@@ -189,14 +189,14 @@ function PresVsMidterm({ states }: { states: StateSeries[] }) {
         <table className="w-full text-xs" style={{ borderCollapse: "collapse" }}>
           <thead><tr style={{ borderBottom: "1px solid var(--app-border)" }}>
             <Th k="name" sort={sort} onSort={toggle} align="left" defaultDir={1}>State</Th>
-            <Th k="pres" sort={sort} onSort={toggle}>Presidential yrs</Th>
-            <Th k="mid" sort={sort} onSort={toggle}>Midterms</Th>
-            <Th align="left">&nbsp;</Th>
-            <Th k="gap" sort={sort} onSort={toggle}>Gap (pts)</Th>
-            <Th k="ratio" sort={sort} onSort={toggle} title="Midterm rate as a share of the presidential rate">Midterm / pres.</Th>
-            <Th k="m18" sort={sort} onSort={toggle} title="2018 top-race votes over 2016 presidential votes">2018 vs 2016</Th>
-            <Th k="m22" sort={sort} onSort={toggle} title="2022 top-race votes over 2020 presidential votes">2022 vs 2020</Th>
-            <Th>Ticket 18/22</Th>
+            <Th k="pres" sort={sort} onSort={toggle}><Short phone="Pres." full="Presidential yrs" /></Th>
+            <Th k="mid" sort={sort} onSort={toggle}><Short phone="Mid." full="Midterms" /></Th>
+            <Th align="left" phone={false}>&nbsp;</Th>
+            <Th k="gap" sort={sort} onSort={toggle} phone={false}>Gap (pts)</Th>
+            <Th k="ratio" sort={sort} onSort={toggle} title="Midterm rate as a share of the presidential rate"><Short phone="Mid. / pres." full="Midterm / pres." /></Th>
+            <Th k="m18" sort={sort} onSort={toggle} title="2018 top-race votes over 2016 presidential votes" phone={false}>2018 vs 2016</Th>
+            <Th k="m22" sort={sort} onSort={toggle} title="2022 top-race votes over 2020 presidential votes" phone={false}>2022 vs 2020</Th>
+            <Th phone={false}>Ticket 18/22</Th>
           </tr></thead>
           <tbody>
             {rows.map((r) => (
@@ -204,12 +204,12 @@ function PresVsMidterm({ states }: { states: StateSeries[] }) {
                 <Td align="left" strong>{r.name}</Td>
                 <Td>{fmtPct(r.pres)}</Td>
                 <Td>{fmtPct(r.mid)}</Td>
-                <Td align="left"><span className="inline-flex flex-col gap-px"><Bar v={r.pres} max={80} color="var(--app-text-very-muted)" /><Bar v={r.mid} max={80} color="#4a8aa6" /></span></Td>
-                <Td>{fmtPts(r.gap)}</Td>
+                <Td align="left" phone={false}><span className="inline-flex flex-col gap-px"><Bar v={r.pres} max={80} color="var(--app-text-very-muted)" /><Bar v={r.mid} max={80} color="#4a8aa6" /></span></Td>
+                <Td phone={false}>{fmtPts(r.gap)}</Td>
                 <Td strong>{fmtPct(r.ratio, 0)}</Td>
-                <Td>{fmtPct(r.mid2018, 0)}</Td>
-                <Td>{fmtPct(r.mid2022, 0)}</Td>
-                <Td muted>{r.ticket}</Td>
+                <Td phone={false}>{fmtPct(r.mid2018, 0)}</Td>
+                <Td phone={false}>{fmtPct(r.mid2022, 0)}</Td>
+                <Td muted phone={false}>{r.ticket}</Td>
               </tr>
             ))}
           </tbody>
@@ -295,18 +295,16 @@ function Trends({ states, national, dark }: { states: StateSeries[]; national: N
   );
 }
 
-function StateDropoff({ states }: { states: StateSeries[] }) {
-  const [year, setYear] = useState(2024);
+function StateDropoff({ states, year }: { states: StateSeries[]; year: number }) {
   const { sort, toggle } = useSort({ key: "house", dir: 1 });
   const rows = useMemo(() => {
     const out = states.map((s) => { const r = s.years.find((x) => x.year === year)!; return { abbr: s.abbr, name: s.name, top: r.top, races: r.races, special: r.senateSpecial }; }).filter((r) => r.top);
     const get = (r: (typeof out)[number]) => sort.key === "name" ? r.name : sort.key === "top" ? r.top?.votes : r.races[sort.key as TurnoutOffice]?.ofTop;
     return sortBy(out, get, sort.dir);
   }, [states, year, sort]);
-  const yearsHere = TURNOUT_YEARS.filter((y) => y % 2 === 0);
   return (
     <section id="dropoff" className="pt-8">
-      <LedgerSectionHead label="Drop-off down the ticket" meta={`share of the top race · ${year}`} right={<Pills label="Year" options={yearsHere.map((v) => ({ key: v, label: String(v) }))} value={year} onChange={setYear} />} />
+      <LedgerSectionHead label="Drop-off down the ticket" meta={`share of the top race · ${year}`} />
       <p className="mb-3 max-w-3xl text-sm leading-relaxed" style={MUTED}>
         Votes in each race as a share of the state&apos;s top race that year: in a presidential year, the president; in a midterm, whichever of Senate, governor or the House total drew the most votes. A House figure well under the rest usually means unopposed seats (no count in FL, OK and LA).
       </p>
@@ -314,9 +312,9 @@ function StateDropoff({ states }: { states: StateSeries[] }) {
         <table className="w-full text-xs" style={{ borderCollapse: "collapse" }}>
           <thead><tr style={{ borderBottom: "1px solid var(--app-border)" }}>
             <Th k="name" sort={sort} onSort={toggle} align="left" defaultDir={1}>State</Th>
-            <Th align="left">Top race</Th>
-            <Th k="top" sort={sort} onSort={toggle}>Top votes</Th>
-            <Th k="president" sort={sort} onSort={toggle}>President</Th>
+            <Th align="left" phone={false}>Top race</Th>
+            <Th k="top" sort={sort} onSort={toggle} phone={false}>Top votes</Th>
+            <Th k="president" sort={sort} onSort={toggle} phone={false}>President</Th>
             <Th k="senate" sort={sort} onSort={toggle}>Senate</Th>
             <Th k="governor" sort={sort} onSort={toggle}>Governor</Th>
             <Th k="house" sort={sort} onSort={toggle} defaultDir={1}>House</Th>
@@ -325,9 +323,9 @@ function StateDropoff({ states }: { states: StateSeries[] }) {
             {rows.map((r) => (
               <tr key={r.abbr} style={{ borderBottom: "1px solid var(--app-border)" }}>
                 <Td align="left" strong>{r.name}</Td>
-                <Td align="left" muted>{r.top ? OFFICE_LABEL[r.top.office] : "—"}</Td>
-                <Td>{fmtInt(r.top?.votes)}</Td>
-                {TURNOUT_OFFICES.map((o) => { const race = r.races[o]; return <Td key={o} muted={!race}>{!race ? "—" : r.top?.office === o ? "100%" : race.votes == null ? "no count" : `${fmtPct(race.ofTop, 0)}${race.firstRound ? "*" : ""}${typeof race.uncontested === "number" && race.uncontested > 0 ? ` (${race.uncontested} unopp.)` : ""}`}</Td>; })}
+                <Td align="left" muted phone={false}>{r.top ? OFFICE_LABEL[r.top.office] : "—"}</Td>
+                <Td phone={false}>{fmtInt(r.top?.votes)}</Td>
+                {TURNOUT_OFFICES.map((o) => { const race = r.races[o]; return <Td key={o} muted={!race} phone={o !== "president"}>{!race ? "—" : r.top?.office === o ? "100%" : race.votes == null ? "no count" : `${fmtPct(race.ofTop, 0)}${race.firstRound ? "*" : ""}${typeof race.uncontested === "number" && race.uncontested > 0 ? ` (${race.uncontested} unopp.)` : ""}`}</Td>; })}
               </tr>
             ))}
           </tbody>
@@ -337,11 +335,10 @@ function StateDropoff({ states }: { states: StateSeries[] }) {
   );
 }
 
-function DistrictTable({ states }: { states: StateSeries[] }) {
-  const [year, setYear] = useState(2024);
+function DistrictTable({ states, year, sortKey }: { states: StateSeries[]; year: number; sortKey: string }) {
   const [stateFilter, setStateFilter] = useState("");
   const [showAll, setShowAll] = useState(false);
-  const { sort, toggle } = useSort({ key: "rate", dir: -1 });
+  const { sort, toggle } = useSort({ key: sortKey, dir: -1 });
   const { data: slice, loading } = useStaticJson<TurnoutSlice>(turnoutSliceUrl("district", year));
   const rows = useMemo(() => {
     if (!slice) return [];
@@ -358,16 +355,11 @@ function DistrictTable({ states }: { states: StateSeries[] }) {
   }, [slice, stateFilter, sort]);
   const shown = showAll || stateFilter ? rows : rows.slice(0, 40);
   const isMid = cycleTypeOf(year) !== "presidential";
+  const ph = { ofTop: sortKey !== "change" && sortKey !== "ofPrior", change: sortKey === "change", ofPrior: sortKey === "ofPrior" };
   return (
     <section id="by-district" className="pt-8">
       <LedgerSectionHead label="Turnout by House district" meta={`${rows.length} districts · ${year}`} right={
-        <div className="flex flex-wrap items-center gap-3">
-          <select value={stateFilter} onChange={(e) => setStateFilter(e.target.value)} aria-label="Filter by state" className="rounded-md px-2 py-1 text-xs" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
-            <option value="">All states</option>
-            {states.map((s) => <option key={s.abbr} value={s.abbr}>{s.name}</option>)}
-          </select>
-          <Pills label="Year" options={EVEN_YEARS.map((v) => ({ key: v, label: String(v) }))} value={year} onChange={(y) => { setYear(y); setShowAll(false); }} />
-        </div>
+        <Dropdown label="State" value={stateFilter} onChange={(v) => { setStateFilter(v); setShowAll(false); }} options={[["", "All states"], ...states.map((s) => [s.abbr, s.name] as [string, string])]} />
       } />
       <p className="mb-3 max-w-3xl text-sm leading-relaxed" style={MUTED}>
         House votes in each district over the district&apos;s CVAP (ACS release on the lines used that year), and as a share of the statewide top race within the district. Change is available only where the lines did not move in the four years since the same cycle. Unopposed seats are shown as recorded.
@@ -377,27 +369,27 @@ function DistrictTable({ states }: { states: StateSeries[] }) {
         <table className="w-full text-xs" style={{ borderCollapse: "collapse" }}>
           <thead><tr style={{ borderBottom: "1px solid var(--app-border)" }}>
             <Th k="name" sort={sort} onSort={toggle} align="left" defaultDir={1}>District</Th>
-            <Th k="votes" sort={sort} onSort={toggle}>House votes</Th>
-            <Th k="cvap" sort={sort} onSort={toggle}>CVAP</Th>
+            <Th k="votes" sort={sort} onSort={toggle}><Short phone="Votes" full="House votes" /></Th>
+            <Th k="cvap" sort={sort} onSort={toggle} phone={false}>CVAP</Th>
             <Th k="rate" sort={sort} onSort={toggle}>% CVAP</Th>
-            <Th align="left">&nbsp;</Th>
-            <Th k="ofTop" sort={sort} onSort={toggle} title="House votes as a share of the top statewide race within the district">% of top race</Th>
-            <Th align="left">Top race</Th>
-            <Th k="change" sort={sort} onSort={toggle}>Change</Th>
-            {isMid && <Th k="ofPrior" sort={sort} onSort={toggle} title="Top-race votes in the district over the previous presidential vote there (same lines only)">vs. prior pres.</Th>}
+            <Th align="left" phone={false}>&nbsp;</Th>
+            <Th k="ofTop" sort={sort} onSort={toggle} title="House votes as a share of the top statewide race within the district" phone={ph.ofTop}><Short phone="% of top" full="% of top race" /></Th>
+            <Th align="left" phone={false}>Top race</Th>
+            <Th k="change" sort={sort} onSort={toggle} phone={ph.change}>Change</Th>
+            {isMid && <Th k="ofPrior" sort={sort} onSort={toggle} title="Top-race votes in the district over the previous presidential vote there (same lines only)" phone={ph.ofPrior}>vs. prior pres.</Th>}
           </tr></thead>
           <tbody>
             {shown.map((r) => (
               <tr key={r.key} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                <Td align="left" strong>{r.href ? <Link href={r.href} className="hover:underline">{r.name}</Link> : r.name}{r.house.firstRound ? "*" : ""}{r.house.uncontested === true && <span className="ml-1 font-normal" style={VERY_MUTED}>unopposed</span>}</Td>
+                <Td align="left" strong wrap>{r.href ? <Link href={r.href} className="hover:underline">{r.name}</Link> : r.name}{r.house.firstRound ? "*" : ""}{r.house.uncontested === true && <span className="ml-1 font-normal" style={VERY_MUTED}>unopposed</span>}</Td>
                 <Td>{r.house.votes == null ? <span style={VERY_MUTED}>no count</span> : fmtInt(r.house.votes)}</Td>
-                <Td>{fmtInt(r.cvap)}</Td>
+                <Td phone={false}>{fmtInt(r.cvap)}</Td>
                 <Td strong>{fmtPct(r.house.rate)}</Td>
-                <Td align="left"><Bar v={r.house.rate} max={80} color="#4a8aa6" /></Td>
-                <Td>{r.top?.office === "house" ? <span style={VERY_MUTED}>top</span> : fmtPct(r.house.ofTop, 0)}</Td>
-                <Td align="left" muted>{r.top && r.top.office !== "house" ? OFFICE_LABEL[r.top.office] : "House"}</Td>
-                <Td>{fmtPts(r.house.change)}</Td>
-                {isMid && <Td>{fmtPct(r.ofPrior, 0)}</Td>}
+                <Td align="left" phone={false}><Bar v={r.house.rate} max={80} color="#4a8aa6" /></Td>
+                <Td phone={ph.ofTop}>{r.top?.office === "house" ? <span style={VERY_MUTED}>top</span> : fmtPct(r.house.ofTop, 0)}</Td>
+                <Td align="left" muted phone={false}>{r.top && r.top.office !== "house" ? OFFICE_LABEL[r.top.office] : "House"}</Td>
+                <Td phone={ph.change}>{fmtPts(r.house.change)}</Td>
+                {isMid && <Td phone={ph.ofPrior}>{fmtPct(r.ofPrior, 0)}</Td>}
               </tr>
             ))}
           </tbody>
@@ -408,8 +400,10 @@ function DistrictTable({ states }: { states: StateSeries[] }) {
   );
 }
 
-function Projection({ states, projection, projectionNational, model }: Pick<TurnoutPageProps, "states" | "projection" | "projectionNational" | "model">) {
-  const [office, setOffice] = useState<Exclude<TurnoutOffice, "president">>("senate");
+const B = ({ children }: { children: React.ReactNode }) => <b style={{ color: "var(--app-text-primary)" }}>{children}</b>;
+
+function Projection({ states, projection, projectionNational, office }: Pick<TurnoutPageProps, "states" | "projection" | "projectionNational"> & { office: Exclude<TurnoutOffice, "president"> }) {
+  const [view, setView] = useState<"all" | "county">("all");
   const racesFor = (o: typeof office) => projection.filter((r) => r.office === o);
   const statesFor = (o: typeof office) => [...new Set(racesFor(o).map((r) => r.state))].sort();
   const [state, setState] = useState("GA");
@@ -417,7 +411,7 @@ function Projection({ states, projection, projectionNational, model }: Pick<Turn
   const stateRaces = racesFor(office).filter((r) => r.state === st);
   const [raceId, setRaceId] = useState<string | null>(null);
   const race = stateRaces.find((r) => r.id === raceId) ?? stateRaces[0];
-  const { data: slice } = useStaticJson<ProjectionStateSlice>(st ? projectionSliceUrl(st) : null);
+  const { data: slice } = useStaticJson<ProjectionStateSlice>(view === "county" && st ? projectionSliceUrl(st) : null);
   const detail = slice?.races.find((r) => r.id === race?.id);
   const { sort, toggle } = useSort({ key: "votes", dir: -1 });
   const all = (() => {
@@ -427,93 +421,116 @@ function Projection({ states, projection, projectionNational, model }: Pick<Turn
   })();
   const [showAll, setShowAll] = useState(false);
   const shownAll = showAll ? all : all.slice(0, 25);
-  const w = Object.entries(model.midtermWeights).sort((a, b) => Number(b[0]) - Number(a[0]));
+  // "Show all" keeps the box the size of the first 25 rows and scrolls inside it; the column
+  // widths are measured first and pinned so nothing shifts when the longer list arrives.
+  type Lock = { height: number; width: number; cols: number[] };
+  const measure = (t: HTMLTableElement | null): Lock | null => t && { height: t.offsetHeight, width: t.getBoundingClientRect().width, cols: Array.from(t.querySelectorAll("thead th"), (th) => th.getBoundingClientRect().width) };
+  // Locked tables: a fixed pixel width (not 100%, which phones squeeze), the header pinned on each cell (thead sticky is unreliable in Safari), and overlong cells clipped with an ellipsis so pinned columns never overlap.
+  const lockedTable = "[&_thead_th]:sticky [&_thead_th]:top-0 [&_thead_th]:bg-[var(--app-bg)] [&_thead_th]:shadow-[inset_0_-1px_0_var(--app-border)] [&_td]:overflow-hidden [&_td]:text-ellipsis";
+  const allTableRef = useRef<HTMLTableElement>(null);
+  const [lock, setLock] = useState<Lock | null>(null);
+  const expandAll = () => { setLock(measure(allTableRef.current)); setShowAll(true); };
+  const countyTableRef = useRef<HTMLTableElement>(null);
+  const [showAllCounties, setShowAllCounties] = useState(false);
+  const [countyLock, setCountyLock] = useState<Lock | null>(null);
+  const expandCounties = () => { setCountyLock(measure(countyTableRef.current)); setShowAllCounties(true); };
+  const resetCounties = () => { setShowAllCounties(false); setCountyLock(null); };
+  const counties = detail?.counties ?? [];
+  const shownCounties = showAllCounties ? counties : counties.slice(0, 25);
+  const stateName = (abbr: string) => states.find((s) => s.abbr === abbr)?.name ?? abbr;
+  const raceName = (r: ProjectedRace) => `${office === "house" ? r.label : stateName(r.state)}${r.special ? " (special)" : ""}`;
+  const openRace = (r: ProjectedRace) => { setState(r.state); setRaceId(r.id); setView("county"); resetCounties(); };
   return (
     <section id="estimate" className="pt-8">
-      <LedgerSectionHead label={`${PROJECTION_YEAR} turnout estimate`} meta={`${projection.length} races`} right={<Pills label="Office" options={(["senate", "governor", "house"] as const).map((o) => ({ key: o, label: OFFICE_LABEL[o] }))} value={office} onChange={(o) => { setOffice(o); setRaceId(null); }} />} />
-      <p className="mb-3 max-w-3xl text-sm leading-relaxed" style={MUTED}>
-        What turnout should look like in each {PROJECTION_YEAR} race, county by county. A state&apos;s top-of-the-ticket electorate is its latest CVAP times a {w.map(([y, x]) => `${Math.round(x * 100)}% ${y}`).join(" / ")} blend of its midterm turnout rates, moved for whether a statewide race tops the ballot and for how close the site&apos;s forecast has the state&apos;s closest race; the range is each basis midterm alone. Counties split that electorate by their 2024 presidential share times their midterm propensity, and House districts take their counties&apos; pieces times the district&apos;s drop-off from the top race, contested seats only — so an unopposed seat is imputed as if it were contested. Nationally that is <strong style={{ color: "var(--app-text-primary)" }}>{fmtM(projectionNational.houseVotes)}</strong> House votes ({fmtM(projectionNational.low)}–{fmtM(projectionNational.high)}), {projectionNational.rate}% of CVAP, against {projectionNational.basis.map((b) => `${fmtM(b.houseVotes)} in ${b.year}`).join(" and ")}. Method and backtest: <Link href="/methodology/turnout" className="underline underline-offset-2">Methodology › Turnout</Link>.
+      <LedgerSectionHead label={`${PROJECTION_YEAR} turnout estimate`} meta={`${projection.length} races`} />
+      <p className="mb-4 max-w-3xl text-sm leading-relaxed" style={MUTED}>
+        How many votes each {PROJECTION_YEAR} race should draw, and from which counties. Nationally that is about <B>{fmtM(projectionNational.houseVotes)}</B> House votes
+        ({fmtM(projectionNational.low)}–{fmtM(projectionNational.high)}), or <B>{projectionNational.rate}%</B> of eligible citizens, against {projectionNational.basis.map((b) => `${fmtM(b.houseVotes)} in ${b.year}`).join(" and ")}.
+        {" "}Each race&rsquo;s electorate is its state&rsquo;s eligible citizens times a blend of its recent midterm turnout rates, adjusted for what tops the ballot and how close the race is; counties split it by their 2024 presidential vote and midterm propensity
+        (<Link href="/methodology/turnout" className="underline underline-offset-2">method and backtest</Link>).
       </p>
 
-      <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-        <div>
-          <div className="mb-2 flex flex-wrap items-center gap-2 text-xs">
-            <select value={st} onChange={(e) => { setState(e.target.value); setRaceId(null); }} aria-label="State" className="rounded-md px-2 py-1" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
-              {statesFor(office).map((a) => <option key={a} value={a}>{states.find((s) => s.abbr === a)?.name ?? a}</option>)}
-            </select>
-            {stateRaces.length > 1 && (
-              <select value={race?.id} onChange={(e) => setRaceId(e.target.value)} aria-label="Race" className="rounded-md px-2 py-1" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
-                {stateRaces.map((r) => <option key={r.id} value={r.id}>{r.label}</option>)}
-              </select>
-            )}
-          </div>
-          {race && (
-            <>
-              <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 pb-2" style={{ borderBottom: "1px solid var(--app-border)" }}>
-                <span className="text-lg font-bold" style={{ fontFamily: "var(--font-serif)" }}>{race.label} · {OFFICE_LABEL[race.office]}</span>
-                <span className="text-2xl font-extrabold tabular-nums" style={{ fontFamily: "var(--font-serif)" }}>{fmtInt(race.votes)}</span>
-                <span className="text-xs tabular-nums" style={MUTED}>range {fmtInt(race.low)} – {fmtInt(race.high)} · {fmtPct(race.rate)} of CVAP</span>
-              </div>
-              <div className="flex flex-wrap gap-x-6 gap-y-1 py-2 text-xs tabular-nums" style={MUTED}>
-                <span>2024 presidential votes {fmtInt(race.pres2024)}</span>
-                {race.prior ? <span>{race.prior.year} {OFFICE_LABEL[race.office]} votes {race.prior.votes == null ? "no count" : fmtInt(race.prior.votes)}{race.prior.votes ? ` (${fmtPts((race.votes / race.prior.votes - 1) * 100)}%)` : ""}</span> : <span>no comparable prior race on these lines</span>}
-              </div>
-              <div className="max-h-[520px] overflow-auto">
-                <table className="w-full text-xs" style={{ borderCollapse: "collapse" }}>
-                  <thead className="sticky top-0" style={{ background: "var(--app-bg)" }}><tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                    <Th align="left">County</Th><Th>2024 pres.</Th><Th title="Blended midterm share ÷ presidential share, after shrinkage">Propensity</Th><Th title={office === "house" ? "County office factor × district drop-off" : "County office factor relative to the state"}>Factor</Th>{office === "house" && <Th title="Share of the county's electorate inside this district">In district</Th>}<Th>Estimate</Th><Th>Range</Th><Th>% CVAP</Th>
-                  </tr></thead>
-                  <tbody>
-                    {!detail && <tr><td colSpan={8} className="py-4 text-center" style={MUTED}>Loading counties…</td></tr>}
-                    {detail?.counties.map((c) => (
-                      <tr key={c.fips} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                        <Td align="left"><Link href={`/historical/${c.fips}`} className="hover:underline">{c.name}</Link></Td>
-                        <Td muted>{fmtInt(c.pres2024)}</Td>
-                        <Td>{c.midtermRatio.toFixed(2)}</Td>
-                        <Td>{c.officeFactor.toFixed(2)}</Td>
-                        {office === "house" && <Td>{c.share >= 0.999 ? "all" : `${(c.share * 100).toFixed(0)}%`}</Td>}
-                        <Td strong>{fmtInt(c.votes)}</Td>
-                        <Td muted>{fmtInt(c.low)}–{fmtInt(c.high)}</Td>
-                        <Td>{fmtPct(c.rate)}</Td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </>
-          )}
-        </div>
-        <div>
-          <div className="pb-2 text-[10px] font-bold uppercase tracking-wider" style={{ ...MUTED, borderBottom: "1px solid var(--app-border)" }}>All {OFFICE_LABEL[office]} races</div>
-          <div className="overflow-x-auto">
-            <table className="w-full text-xs" style={{ borderCollapse: "collapse" }}>
+      <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+        <Segmented label="View" value={view} onChange={setView} options={[["all", "All races"], ["county", "By county"]]} />
+        {view === "county" && (
+          <>
+            <Dropdown label="State" value={st} onChange={(v) => { setState(v); setRaceId(null); resetCounties(); }} options={statesFor(office).map((a) => [a, stateName(a)])} />
+            {stateRaces.length > 1 && <Dropdown label="Race" value={race?.id ?? ""} onChange={(v) => { setRaceId(v); resetCounties(); }} options={stateRaces.map((r) => [r.id, r.label])} />}
+          </>
+        )}
+      </div>
+
+      {view === "all" ? (
+        <>
+          <div className={showAll ? "overflow-auto" : "overflow-x-auto"} style={{ scrollbarGutter: "stable", ...(showAll && lock ? { maxHeight: lock.height } : {}) }}>
+            <table ref={allTableRef} className={showAll && lock ? `text-xs ${lockedTable}` : "w-full text-xs"} style={{ borderCollapse: "collapse", ...(showAll && lock ? { tableLayout: "fixed", width: lock.width } : {}) }}>
+              {showAll && lock && <colgroup>{lock.cols.map((w, i) => <col key={i} style={{ width: w }} />)}</colgroup>}
               <thead><tr style={{ borderBottom: "1px solid var(--app-border)" }}>
                 <Th k="label" sort={sort} onSort={toggle} align="left" defaultDir={1}>Race</Th>
-                <Th k="pres" sort={sort} onSort={toggle}>2024 pres.</Th>
+                <Th k="pres" sort={sort} onSort={toggle} phone={false}>2024 pres.</Th>
                 <Th k="votes" sort={sort} onSort={toggle}>Estimate</Th>
-                <Th>Range</Th>
+                <Th phone={false}>Range</Th>
                 <Th k="rate" sort={sort} onSort={toggle}>% CVAP</Th>
-                <Th k="prior" sort={sort} onSort={toggle}>Prior</Th>
+                <Th k="prior" sort={sort} onSort={toggle} phone={false}>Prior</Th>
                 <Th k="vsPrior" sort={sort} onSort={toggle}>vs. prior</Th>
               </tr></thead>
               <tbody>
                 {shownAll.map((r) => (
-                  <tr key={r.id} style={{ borderBottom: "1px solid var(--app-border)" }} className={r.id === race?.id ? "font-semibold" : ""}>
-                    <Td align="left"><button className="hover:underline" onClick={() => { setState(r.state); setRaceId(r.id); }}>{office === "house" ? r.label : r.name}{r.special ? " (special)" : ""}</button></Td>
-                    <Td muted>{fmtInt(r.pres2024)}</Td>
+                  <tr key={r.id} style={{ borderBottom: "1px solid var(--app-border)" }}>
+                    <Td align="left" wrap><button type="button" className="text-left font-semibold hover:underline" onClick={() => openRace(r)} title="Show this race by county">{raceName(r)}</button></Td>
+                    <Td muted phone={false}>{fmtInt(r.pres2024)}</Td>
                     <Td strong>{fmtInt(r.votes)}</Td>
-                    <Td muted>{fmtM(r.low)}–{fmtM(r.high)}</Td>
+                    <Td muted phone={false}>{fmtM(r.low)}–{fmtM(r.high)}</Td>
                     <Td>{fmtPct(r.rate)}</Td>
-                    <Td muted>{r.prior ? (r.prior.votes == null ? "no count" : `${fmtInt(r.prior.votes)} (${r.prior.year})`) : "—"}</Td>
+                    <Td muted phone={false}>{r.prior ? (r.prior.votes == null ? "no count" : `${fmtInt(r.prior.votes)} (${r.prior.year})`) : "—"}</Td>
                     <Td>{r.vsPrior == null ? "—" : `${fmtPts(r.vsPrior)}%`}</Td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          {all.length > shownAll.length && <button onClick={() => setShowAll(true)} className="mt-3 text-xs font-semibold hover:underline" style={MUTED}>Show all {all.length} races</button>}
-        </div>
-      </div>
+          {all.length > 25 && (
+            showAll
+              ? <button type="button" onClick={() => { setShowAll(false); setLock(null); }} className="mt-3 text-xs font-semibold hover:underline" style={MUTED}>Show fewer</button>
+              : <button type="button" onClick={expandAll} className="mt-3 text-xs font-semibold hover:underline" style={MUTED}>Show all {all.length} races</button>
+          )}
+        </>
+      ) : race && (
+        <>
+          <p className="mb-3 text-sm tabular-nums" style={MUTED}>
+            <B>{raceName(race)} {OFFICE_LABEL[race.office]}</B>: about <B>{fmtInt(race.votes)}</B> votes ({fmtM(race.low)}–{fmtM(race.high)}), {fmtPct(race.rate)} of eligible citizens
+            {race.prior ? <>, {race.prior.votes ? <>{fmtPts((race.votes / race.prior.votes - 1) * 100)}% from {fmtInt(race.prior.votes)} in {race.prior.year}</> : <>no count in {race.prior.year}</>}</> : <>, no comparable prior race on these lines</>}; {fmtInt(race.pres2024)} voted for president in 2024.
+          </p>
+          <div className={showAllCounties ? "overflow-auto" : "overflow-x-auto"} style={{ scrollbarGutter: "stable", ...(showAllCounties && countyLock ? { maxHeight: countyLock.height } : {}) }}>
+            <table ref={countyTableRef} className={showAllCounties && countyLock ? `text-xs ${lockedTable}` : "w-full text-xs"} style={{ borderCollapse: "collapse", ...(showAllCounties && countyLock ? { tableLayout: "fixed", width: countyLock.width } : {}) }}>
+              {showAllCounties && countyLock && <colgroup>{countyLock.cols.map((w, i) => <col key={i} style={{ width: w }} />)}</colgroup>}
+              <thead><tr style={{ borderBottom: "1px solid var(--app-border)" }}>
+                <Th align="left">County</Th><Th phone={false}>2024 pres.</Th><Th title="Blended midterm share ÷ presidential share, after shrinkage" phone={false}>Propensity</Th><Th title={office === "house" ? "County office factor × district drop-off" : "County office factor relative to the state"}>Factor</Th>{office === "house" && <Th title="Share of the county's electorate inside this district" phone={false}>In district</Th>}<Th>Estimate</Th><Th phone={false}>Range</Th><Th>% CVAP</Th>
+              </tr></thead>
+              <tbody>
+                {!detail && <tr><td colSpan={8} className="py-4 text-center" style={MUTED}>Loading counties…</td></tr>}
+                {shownCounties.map((c) => (
+                  <tr key={c.fips} style={{ borderBottom: "1px solid var(--app-border)" }}>
+                    <Td align="left" wrap><Link href={`/historical/${c.fips}`} className="hover:underline">{c.name}</Link></Td>
+                    <Td muted phone={false}>{fmtInt(c.pres2024)}</Td>
+                    <Td phone={false}>{c.midtermRatio.toFixed(2)}</Td>
+                    <Td>{c.officeFactor.toFixed(2)}</Td>
+                    {office === "house" && <Td phone={false}>{c.share >= 0.999 ? "all" : `${(c.share * 100).toFixed(0)}%`}</Td>}
+                    <Td strong>{fmtInt(c.votes)}</Td>
+                    <Td muted phone={false}>{fmtInt(c.low)}–{fmtInt(c.high)}</Td>
+                    <Td>{fmtPct(c.rate)}</Td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {counties.length > 25 && (
+            showAllCounties
+              ? <button type="button" onClick={resetCounties} className="mt-3 text-xs font-semibold hover:underline" style={MUTED}>Show fewer</button>
+              : <button type="button" onClick={expandCounties} className="mt-3 text-xs font-semibold hover:underline" style={MUTED}>Show all {counties.length} counties</button>
+          )}
+        </>
+      )}
     </section>
   );
 }
@@ -533,16 +550,16 @@ function ImpliedBallot({ ballot }: { ballot: ImpliedBallotProps }) {
       <div className="flex flex-col gap-6">
         <div className="overflow-x-auto">
           <table className="w-full text-xs" style={{ borderCollapse: "collapse" }}>
-            <thead><tr style={{ borderBottom: "1px solid var(--app-border)" }}><Th align="left">Ballot</Th><Th>Races</Th><Th>Votes</Th><Th>Dem</Th><Th>Rep</Th><Th>Margin</Th><Th title="Republican minus Democratic share of the two-party vote, the polling generic ballot's basis">Two-party</Th></tr></thead>
+            <thead><tr style={{ borderBottom: "1px solid var(--app-border)" }}><Th align="left">Ballot</Th><Th phone={false}>Races</Th><Th phone={false}>Votes</Th><Th>Dem</Th><Th>Rep</Th><Th>Margin</Th><Th title="Republican minus Democratic share of the two-party vote, the polling generic ballot's basis" phone={false}>Two-party</Th></tr></thead>
             <tbody>
               {ballot.offices.map((o) => (
                 <tr key={o.office} style={{ borderBottom: "1px solid var(--app-border)", fontWeight: o.office === "overall" ? 600 : 400 }}>
-                  <Td align="left" strong={o.office === "house"}>{labels[o.office]}</Td><Td>{o.races}</Td><Td>{fmtM(o.votes)}</Td><Td>{fmtPct(o.demPct)}</Td><Td>{fmtPct(o.repPct)}</Td>
-                  <Td><span className="font-bold" style={{ color: gbColor(o.margin) }}>{fmtGb(o.margin)}</span></Td><Td>{fmtGb(o.twoPartyMargin)}</Td>
+                  <Td align="left" strong={o.office === "house"} wrap>{labels[o.office]}</Td><Td phone={false}>{o.races}</Td><Td phone={false}>{fmtM(o.votes)}</Td><Td>{fmtPct(o.demPct)}</Td><Td>{fmtPct(o.repPct)}</Td>
+                  <Td><span className="font-bold" style={{ color: gbColor(o.margin) }}>{fmtGb(o.margin)}</span></Td><Td phone={false}>{fmtGb(o.twoPartyMargin)}</Td>
                 </tr>
               ))}
-              <tr style={{ borderBottom: "1px solid var(--app-border)" }}><Td align="left">Polling generic ballot (live average)</Td><Td muted>—</Td><Td muted>—</Td><Td muted>—</Td><Td muted>—</Td><Td><span className="font-bold" style={{ color: gbColor(p.gb) }}>{fmtGb(p.gb)}</span></Td><Td muted>—</Td></tr>
-              <tr style={{ borderBottom: "1px solid var(--app-border)" }}><Td align="left">Forecast&apos;s expected House vote (average + shrunk historical miss)</Td><Td muted>—</Td><Td muted>—</Td><Td muted>—</Td><Td muted>—</Td><Td><span className="font-bold" style={{ color: gbColor(p.pvHat) }}>{fmtGb(p.pvHat)}</span></Td><Td muted>—</Td></tr>
+              <tr style={{ borderBottom: "1px solid var(--app-border)" }}><Td align="left" wrap>Polling generic ballot (live average)</Td><Td muted phone={false}>—</Td><Td muted phone={false}>—</Td><Td muted>—</Td><Td muted>—</Td><Td><span className="font-bold" style={{ color: gbColor(p.gb) }}>{fmtGb(p.gb)}</span></Td><Td muted phone={false}>—</Td></tr>
+              <tr style={{ borderBottom: "1px solid var(--app-border)" }}><Td align="left" wrap>Forecast&apos;s expected House vote (average + shrunk historical miss)</Td><Td muted phone={false}>—</Td><Td muted phone={false}>—</Td><Td muted>—</Td><Td muted>—</Td><Td><span className="font-bold" style={{ color: gbColor(p.pvHat) }}>{fmtGb(p.pvHat)}</span></Td><Td muted phone={false}>—</Td></tr>
             </tbody>
           </table>
         </div>
@@ -580,20 +597,23 @@ export default function TurnoutPage(props: TurnoutPageProps) {
   const dark = useDarkMode();
   const t = dark ? DARK_THEME : LIGHT_THEME;
   const { states, national, projection, projectionNational } = props;
+  const [view, setView] = useState<TurnoutMapView>({ level: "state", metric: "rate", office: "president", year: 2024 });
+  const { level, metric, office, year } = view;
+  // The table under the map is the metric's own: rate, votes and change live in the by-state (or
+  // by-district) table sorted by that column; the other three metrics each have a section of their own.
+  const sortKey = metric === "ofPriorPresidential" ? "ofPrior" : metric;
+  const table = metric === "projection" ? <Projection key={office} states={states} projection={projection} projectionNational={projectionNational} office={office === "president" ? "house" : office} />
+    : level === "district" ? <DistrictTable key={`${metric}-${year}`} states={states} year={year} sortKey={sortKey} />
+    : metric === "ofTop" ? <StateDropoff states={states} year={year} />
+    : metric === "ofPriorPresidential" ? <PresVsMidterm states={states} />
+    : <StateTable key={metric} states={states} national={national} office={office} year={year} sortKey={sortKey} />;
   return (
     <main className="mx-auto max-w-7xl px-4 pb-16 pt-3 sm:px-6">
-      <section id="map" className="pt-6">
-        <p className="mb-3 max-w-3xl text-sm leading-relaxed" style={MUTED}>
-          Turnout in every general election since 2016, by state, House district and county, as a share of citizen voting-age population. {Object.values(METRIC_LABEL).slice(0, 5).join(", ")} and the {PROJECTION_YEAR} estimate are on the map; the tables below sort every state and district.
-        </p>
-        <TurnoutMap theme={t} dark={dark} projection={projection} />
+      <section id="map" className="pt-1 sm:pt-6">
+        <TurnoutMap theme={t} dark={dark} projection={projection} view={view} onViewChange={setView} />
       </section>
-      <StateTable states={states} national={national} />
-      <PresVsMidterm states={states} />
+      {table}
       <Trends states={states} national={national} dark={dark} />
-      <StateDropoff states={states} />
-      <DistrictTable states={states} />
-      <Projection states={states} projection={projection} projectionNational={projectionNational} model={props.model} />
       <ImpliedBallot ballot={props.impliedBallot} />
       <Notes firstRound={props.firstRound} model={props.model} />
     </main>

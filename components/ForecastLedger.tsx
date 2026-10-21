@@ -213,8 +213,8 @@ function LedgerRow({ race, basePath, showSpecialBadge }: { race: ForecastSummary
           {showSpecialBadge && isSpecialRace(race) && <SpecialBadge />}
         </div>
         <div className="flex flex-col gap-0.5" style={{ fontFamily: "var(--font-serif)" }}>
-          <CandidateName candidate={race.candidates?.dem} slot="dem" />
-          <CandidateName candidate={race.candidates?.rep} slot="rep" />
+          <CandidateName candidate={race.candidates?.dem} state={race.state} slot="dem" />
+          <CandidateName candidate={race.candidates?.rep} state={race.state} slot="rep" />
         </div>
       </div>
       <div className="shrink-0 text-right">

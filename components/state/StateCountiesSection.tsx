@@ -102,7 +102,7 @@ export default function StateCountiesSection({
     const active = sort.key === key;
     return (
       <th className={`pb-2 ${align === "left" ? "text-left" : "text-right"} text-[10px] uppercase tracking-wider font-semibold align-bottom md:whitespace-nowrap`} style={{ color: active ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
-        <button type="button" className="hover:underline" onClick={() => setSort((s) => ({ key, dir: s.key === key ? (s.dir === 1 ? -1 : 1) : key === "name" ? 1 : -1 }))}>
+        <button type="button" className="uppercase hover:underline" onClick={() => setSort((s) => ({ key, dir: s.key === key ? (s.dir === 1 ? -1 : 1) : key === "name" ? 1 : -1 }))}>
           {label}{active ? (sort.dir === -1 ? " ↓" : " ↑") : ""}
         </button>
       </th>

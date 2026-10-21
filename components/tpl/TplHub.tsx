@@ -116,7 +116,7 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
 
       <div className="grid grid-cols-1 gap-8">
         <div className="min-w-0">
-          <TplMap mode={geo} rows={rows} valueLabel={valueLabel} linkLabel={geo === "states" ? "Open state page" : "Open district"} navigateOnClick={geo === "states"} wide />
+          <TplMap mode={geo} rows={rows} valueLabel={valueLabel} linkLabel={geo === "states" ? "Open state page" : "Open district"} navigateOnClick={geo === "states"} wide framed={false} />
           <Foot>{lens === "all" ? "Blended, recency-weighted True Partisan Lean" : `${lens} Weighted Race Score (WRS)`}. {geo === "states" ? "Click a state to open its page" : "Click a district for its pipeline inside its state page"}. Pinch or scroll to zoom.</Foot>
         </div>
         <div className="min-w-0">
@@ -181,7 +181,7 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
             <tbody>
               {summary.topWar.rows.map((r, i) => (
                 <tr key={i} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  <td className={TD}><CandidateLink name={r.candidate} party={r.party} /></td>
+                  <td className={TD}><CandidateLink name={r.candidate} state={r.state} party={r.party} /></td>
                   <td className={TD} style={{ color: "var(--app-text-muted)" }}>{r.state} {r.office === "H" ? r.race.replace(/^House /, "") : OFFICE_LABELS[r.office]} · {r.year}</td>
                   <td className={TD_R}><WarChip war={r.war} /></td>
                 </tr>

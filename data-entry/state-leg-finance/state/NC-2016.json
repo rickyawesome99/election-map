@@ -81,7 +81,7 @@
   "7": [
    {
     "name": "LOUIS PATE ELECTION COMM",
-    "candidate": "Louis M. Pate Jr.",
+    "candidate": "Louis Milford Pate Jr.",
     "party": "Republican",
     "incumbent": true,
     "contributions": 86433.72,
@@ -185,7 +185,7 @@
   "15": [
    {
     "name": "LAUREL DEEGAN-FRICKE FOR STATE SENATE",
-    "candidate": "Laurel Deeganfricke",
+    "candidate": "Laurel Deegan-Fricke",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 25492.01,
@@ -377,6 +377,14 @@
    }
   ],
   "30": [
+   {
+    "name": "RANDLEMAN SENATE CAMPAIGN",
+    "candidate": "Shirley Blackburn Randleman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 63044.89,
+    "expenditures": null
+   },
    {
     "name": "MICHAEL HOLLEMAN FOR NC SENATE",
     "candidate": "Michael W. Holleman",
@@ -645,7 +653,7 @@
    },
    {
     "name": "COMMITTEE TO ELECT MARVA FISHER BALDWIN",
-    "candidate": "Marva Fisherbaldwin",
+    "candidate": "Marva Fisher Baldwin",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9351.92,
@@ -701,7 +709,7 @@
    },
    {
     "name": "WILLIAM DUKE HANCOCK II",
-    "candidate": "William Dukehancock II",
+    "candidate": "William Duke Hancock II",
     "party": "Republican",
     "incumbent": false,
     "contributions": 9453.24,
@@ -863,7 +871,7 @@
   "24": [
    {
     "name": "COMM TO RE-ELECT JEAN FARMER-BUTTERFIELD",
-    "candidate": "Jean Farmerbutterfield",
+    "candidate": "Jean Farmer-Butterfield",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 45859.41,
@@ -881,6 +889,14 @@
    }
   ],
   "26": [
+   {
+    "name": "DONNA WHITE FOR NC HOUSE 26",
+    "candidate": "Donna McDowell White",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 71818.39,
+    "expenditures": null
+   },
    {
     "name": "NIXON FOR NC HOUSE",
     "candidate": "Rich Nixon",
@@ -1013,7 +1029,7 @@
   "37": [
    {
     "name": "WILLIAMS FOR NC HOUSE (LINDA HUNT WILLIAMS)",
-    "candidate": "Linda Huntwilliams",
+    "candidate": "Linda Hunt-Williams",
     "party": "Republican",
     "incumbent": false,
     "contributions": 209868.03,
@@ -1223,7 +1239,7 @@
   "57": [
    {
     "name": "HARRISON FOR HOUSE (MARY PRICE TAYLOR)",
-    "candidate": "Mary Harrison",
+    "candidate": "Mary Price Harrison",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 82710,
@@ -1441,7 +1457,7 @@
   "78": [
    {
     "name": "ALLEN MCNEILL FOR NC HOUSE",
-    "candidate": "Allen McNeill",
+    "candidate": "Allen Ray McNeill",
     "party": "Republican",
     "incumbent": true,
     "contributions": 49504.96,
@@ -1453,6 +1469,16 @@
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1008,
+    "expenditures": null
+   }
+  ],
+  "79": [
+   {
+    "name": "JULIA C HOWARD FOR HOUSE",
+    "candidate": "Julia Craven Howard",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 58638.76,
     "expenditures": null
    }
   ],
@@ -1504,19 +1530,19 @@
   ],
   "83": [
    {
-    "name": "COMM TO ELECT LINDA P JOHNSON",
-    "candidate": "Linda P. Johnson",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 65900,
-    "expenditures": null
-   },
-   {
     "name": "COMMITTEE TO ELECT JEREMY HACHEN",
     "candidate": "Jeremy Hachen",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 5505.85,
+    "expenditures": null
+   },
+   {
+    "name": "COMM TO ELECT LINDA P JOHNSON",
+    "candidate": "Linda P. Johnson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 65900,
     "expenditures": null
    }
   ],
@@ -1587,7 +1613,7 @@
   "89": [
    {
     "name": "COMM TO ELECT MITCHELL SMITH SETZER",
-    "candidate": "Mitchell Smithsetzer",
+    "candidate": "Mitchell Smith Setzer",
     "party": "Republican",
     "incumbent": true,
     "contributions": 67058.72,
@@ -1597,7 +1623,7 @@
   "90": [
    {
     "name": "ELECT VERA SMITH REYNOLDS",
-    "candidate": "Vera Smithreynolds",
+    "candidate": "Vera Smith Reynolds",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1953.54,
@@ -1767,7 +1793,7 @@
   "105": [
    {
     "name": "FRIENDS OF CONNIE GREEN-JOHNSON",
-    "candidate": "Connie Greenjohnson",
+    "candidate": "Connie Green-Johnson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 31780.59,

@@ -74,7 +74,7 @@ function TurnoutRow({ stats }: { stats: TurnoutStat[] }) {
 }
 
 /** A statewide race on this year's ballot: both nominees and the projected margin. */
-function RaceRow({ race }: { race: BallotRace }) {
+function RaceRow({ race, state }: { race: BallotRace; /** State abbreviation, for the candidate links. */ state: string }) {
   return (
     <div className="relative py-5 min-w-0" style={{ borderBottom: "1px solid var(--app-border)" }}>
       <Link prefetch={false} href={race.href} aria-label={`View ${race.label} race`} className="absolute inset-0" />
@@ -85,7 +85,7 @@ function RaceRow({ race }: { race: BallotRace }) {
             <div className="flex flex-col gap-0.5">
               {[race.dem, race.rep].map((c) => (
                 <div key={c.party + c.name} className="flex items-baseline gap-2 min-w-0">
-                  <CandidateLink name={c.name} className="relative pointer-events-auto truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: partyColor(c.party) }}>
+                  <CandidateLink name={c.name} state={state} className="relative pointer-events-auto truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: partyColor(c.party) }}>
                     {c.name}
                   </CandidateLink>
                   <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{partyTag(c.party, c.incumbent)}</span>
@@ -404,7 +404,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                       {[r.candidates.dem, r.candidates.rep].map((c, i) => (
                         <div key={c.name + i} className="flex items-baseline justify-between gap-2">
                           <span className="flex min-w-0 items-baseline gap-2">
-                            <CandidateLink name={c.name} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
+                            <CandidateLink name={c.name} state={state.abbr} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
                               {c.name}
                             </CandidateLink>
                             <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{partyTag(c.party, c.incumbent)}</span>
@@ -451,7 +451,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                       {candidates.map((c, i) => (
                         <div key={c.name + i} className="flex items-baseline justify-between gap-2">
                           <span className="flex min-w-0 items-baseline gap-2">
-                            <CandidateLink name={c.name} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
+                            <CandidateLink name={c.name} state={state.abbr} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
                               {c.name}
                             </CandidateLink>
                             <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>
@@ -505,7 +505,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                     {legProj.field.map((c, i) => (
                       <div key={c.name + i} className="flex items-baseline justify-between gap-2">
                         <span className="flex min-w-0 items-baseline gap-2">
-                          <CandidateLink name={c.name} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>{c.name}</CandidateLink>
+                          <CandidateLink name={c.name} state={state.abbr} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>{c.name}</CandidateLink>
                           <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>
                             {partyTag(c.party === "O" ? "I" : c.party, c.incumbent)}{c.writeIn ? " · write-in" : ""}{c.post ? ` · ${state.abbr === "ID" ? "Seat" : "Pos."} ${c.post}` : ""}
                           </span>
@@ -525,7 +525,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
                   <div className="flex flex-col gap-0.5">
                     {(legDistrict.incumbents ?? []).map((inc) => (
                       <div key={inc.name} className="flex items-baseline gap-2">
-                        <CandidateLink name={inc.name} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(inc.party) }}>{inc.name}</CandidateLink>
+                        <CandidateLink name={inc.name} state={state.abbr} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(inc.party) }}>{inc.name}</CandidateLink>
                         <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{partyTag(inc.party, true)}</span>
                       </div>
                     ))}
@@ -562,11 +562,11 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
         <div className="min-w-0">
             <TurnoutRow stats={data.turnout} />
 
-            {data.governor?.kind === "race" && <RaceRow race={data.governor} />}
+            {data.governor?.kind === "race" && <RaceRow race={data.governor} state={state.abbr} />}
             {data.governor?.kind === "holdover" && <HoldoverRow seat={data.governor} />}
             {senateHoldovers.length === 2 && senateRaces.length === 0
               ? <SenateHoldoverLine seats={senateHoldovers} />
-              : data.senate.map((s) => (s.kind === "race" ? <RaceRow key={s.href} race={s} /> : <HoldoverRow key={s.href} seat={s} />))}
+              : data.senate.map((s) => (s.kind === "race" ? <RaceRow key={s.href} race={s} state={state.abbr} /> : <HoldoverRow key={s.href} seat={s} />))}
 
             {houseRaces.length > 0 && (
               <>
@@ -643,7 +643,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
             {officeTab.key === "statewide" && (
               <div className="grid grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
                 {results.statewide.map((entry) => (
-                  <ResultCard key={entry.key} entry={entry} />
+                  <ResultCard key={entry.key} entry={entry} state={state.abbr} />
                 ))}
               </div>
             )}

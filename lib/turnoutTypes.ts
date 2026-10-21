@@ -160,3 +160,6 @@ export const METRIC_LABEL: Record<TurnoutMetric, string> = {
   ofPriorPresidential: "Midterm vs. presidential",
   projection: "2026 estimate",
 };
+
+/** The turnout map's controls, owned by the page so the table under the map follows the metric. */
+export type TurnoutMapView = { level: TurnoutLevel; metric: TurnoutMetric; office: TurnoutOffice; year: number };

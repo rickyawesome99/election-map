@@ -340,6 +340,14 @@
   ],
   "20": [
    {
+    "name": "Ballard, Melissa",
+    "candidate": "Melissa Garff Ballard",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 26006.67,
+    "expenditures": 37002.48
+   },
+   {
     "name": "Jones, Ryan",
     "candidate": "Ryan L. Jones",
     "party": "Democratic",
@@ -413,7 +421,7 @@
   "24": [
    {
     "name": "Dailey-Provost, Jen",
-    "candidate": "Jen Daileyprovost",
+    "candidate": "Jen Dailey-Provost",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 46417,
@@ -655,7 +663,7 @@
   "37": [
    {
     "name": "Moss, Carol Spackman",
-    "candidate": "Carol Spackmanmoss",
+    "candidate": "Carol Spackman Moss",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 34216.11,
@@ -1294,6 +1302,14 @@
     "incumbent": false,
     "contributions": 3002.71,
     "expenditures": 1645.92
+   },
+   {
+    "name": "Snow, V. Lowry",
+    "candidate": "V. Lowry Snow",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 16376,
+    "expenditures": 32639.2
    }
   ],
   "75": [

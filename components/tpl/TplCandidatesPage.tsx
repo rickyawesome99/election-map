@@ -147,7 +147,7 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
   // ── Candidate record ─────────────────────────────────────────────────────
   const record = useMemo(() => {
     if (!selectedSlug) return null;
-    const mine = rows.filter((r) => candidateSlug(r.candidate) === selectedSlug).sort((a, b) => a.year - b.year);
+    const mine = rows.filter((r) => candidateSlug(r.candidate, r.state) === selectedSlug).sort((a, b) => a.year - b.year);
     if (mine.length === 0) return { name: selectedSlug.replace(/-/g, " "), rows: [] as WarSlim[], opponents: new Map<string, WarSlim | null>() };
     const opponents = new Map<string, WarSlim | null>();
     for (const r of mine) {
@@ -258,10 +258,10 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
                         <span className="block sm:inline">{g.year}{g.office === "H" ? "" : ` · ${g.state}`}</span>{" "}{g.pastHref ? <Link href={g.pastHref} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }}>{raceLabel(g)}</Link> : raceLabel(g)}
                       </td>
                       <td className={TD}>
-                        <CandidateLink name={g.winner?.candidate} party={g.winner?.party} war={g.winner?.war} />
-                        <span className="mt-1 block sm:hidden"><CandidateLink name={g.loser?.candidate} party={g.loser?.party} war={g.loser?.war} /></span>
+                        <CandidateLink name={g.winner?.candidate} state={g.winner?.state} party={g.winner?.party} war={g.winner?.war} />
+                        <span className="mt-1 block sm:hidden"><CandidateLink name={g.loser?.candidate} state={g.loser?.state} party={g.loser?.party} war={g.loser?.war} /></span>
                       </td>
-                      <td className={`${TD} hidden sm:table-cell`}><CandidateLink name={g.loser?.candidate} party={g.loser?.party} war={g.loser?.war} /></td>
+                      <td className={`${TD} hidden sm:table-cell`}><CandidateLink name={g.loser?.candidate} state={g.loser?.state} party={g.loser?.party} war={g.loser?.war} /></td>
                       <td className={TD_R}><M v={g.actual} digits={1} /></td>
                       <td className={TD_R}><M v={g.expected} digits={1} /></td>
                       <td className={`${TD_R} hidden md:table-cell`}><Link href={placeHref(g)} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)", color: "var(--app-text-muted)" }}>{g.office === "H" ? raceLabel(g) : g.state} ›</Link></td>
@@ -285,7 +285,7 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
                     <tr data-row={perfKey(r)} style={{ borderBottom: "1px solid var(--app-border)" }}>
                       <td className={`${TD} hidden sm:table-cell`} style={VERY_MUTED}>{i + 1}</td>
                       <td className={`${TD} max-sm:whitespace-normal max-sm:pl-0`}>
-                        <CandidateLink name={r.candidate} party={r.party} />
+                        <CandidateLink name={r.candidate} state={r.state} party={r.party} />
                         {/* Phones: the race and year under the name instead of their own columns. */}
                         <span className="mt-0.5 block text-[11px] sm:hidden" style={{ color: "var(--app-text-muted)" }}>{r.year} · {raceLabel(r)} · {r.state}</span>
                       </td>
@@ -351,7 +351,7 @@ function CandidateRecord({ name, rows, opponents }: { name: string; rows: WarSli
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
             <div style={{ fontFamily: "var(--font-serif)", fontSize: "2rem", fontWeight: 700, lineHeight: 1 }}>{name}</div>
             {/* Every scored candidate has a /candidates profile (lib/candidateIndex covers past results too). */}
-            <Link href={`/candidates/${candidateSlug(name)}`} className="rounded-full px-2.5 py-1 text-xs font-semibold hover:underline" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>Candidate page ›</Link>
+            <Link href={`/candidates/${candidateSlug(name, last.state)}`} className="rounded-full px-2.5 py-1 text-xs font-semibold hover:underline" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>Candidate page ›</Link>
           </div>
           <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-muted)" }}>
             <span style={{ color: marginColor(last.party === "R" ? 1 : last.party === "D" ? -1 : 0) }}>{partyName}</span> · {offices.join(", ")} · {rows.length} scored race{rows.length === 1 ? "" : "s"} · {states.map((s) => <Link key={s} href={stateHref(statesData.find((x) => x.abbr === s)?.id ?? s)} className="underline">{s}</Link>).reduce<React.ReactNode[]>((acc, el, i) => (i ? [...acc, ", ", el] : [el]), [])}
@@ -399,7 +399,7 @@ function CandidateRecord({ name, rows, opponents }: { name: string; rows: WarSli
                   return (
                     <tr key={i} style={{ borderBottom: "1px solid var(--app-border)" }}>
                       <td className={`${TD} font-medium`}>{r.pastHref ? <Link href={r.pastHref} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }}>{r.year} · {raceLabel(r)}</Link> : `${r.year} · ${raceLabel(r)}`} <span style={VERY_MUTED}>{r.state}</span></td>
-                      <td className={TD}><CandidateLink name={opp?.candidate} party={opp?.party} war={opp?.war} /></td>
+                      <td className={TD}><CandidateLink name={opp?.candidate} state={opp?.state} party={opp?.party} war={opp?.war} /></td>
                       <td className={TD_R}><M v={r.actual} digits={1} /></td>
                       <td className={TD_R}><M v={r.expected} digits={1} /></td>
                       <td className={TD_R}><M v={r.vsOpp} digits={1} /></td>

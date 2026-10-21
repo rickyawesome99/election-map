@@ -119,7 +119,7 @@
    },
    {
     "name": "Farley-Bouvier, Tricia",
-    "candidate": "Tricia Farleybouvier",
+    "candidate": "Tricia Farley-Bouvier",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 58496.19,
@@ -697,7 +697,7 @@
   "3rd Hampshire": [
    {
     "name": "Goldstein-Rose, Solomon",
-    "candidate": "Solomon Israel Goldsteinrose",
+    "candidate": "Solomon Israel Goldstein-Rose",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 27245.31,
@@ -811,7 +811,7 @@
   "9th Middlesex": [
    {
     "name": "Gallagher Tully, Stacey",
-    "candidate": "Stacey M. Gallaghertully",
+    "candidate": "Stacey M. Gallagher Tully",
     "party": "Other",
     "incumbent": false,
     "contributions": 14395.25,
@@ -854,6 +854,16 @@
     "incumbent": true,
     "contributions": 25995.51,
     "expenditures": 20088.2
+   }
+  ],
+  "13th Middlesex": [
+   {
+    "name": "Gentile, Carmine",
+    "candidate": "Carmine Lawrence Gentile",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 17785.03,
+    "expenditures": 2655.57
    }
   ],
   "14th Middlesex": [
@@ -1074,6 +1084,14 @@
     "incumbent": false,
     "contributions": 106235.58,
     "expenditures": 81969.46
+   },
+   {
+    "name": "Day, Michael",
+    "candidate": "Michael Seamus Day",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 148682.65,
+    "expenditures": 110073.25
    }
   ],
   "32nd Middlesex": [
@@ -1285,7 +1303,7 @@
   "14th Norfolk": [
    {
     "name": "Peisch, Alice Hanlon",
-    "candidate": "Alice Hanlonpeisch",
+    "candidate": "Alice Hanlon Peisch",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 44790.82,
@@ -1753,7 +1771,7 @@
   "7th Worcester": [
    {
     "name": "Dotson, Terry Burke",
-    "candidate": "Terry Burkedotson",
+    "candidate": "Terry Burke Dotson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 0,
@@ -1986,6 +2004,16 @@
     "expenditures": 139092.32
    }
   ],
+  "First Essex": [
+   {
+    "name": "O'Connor Ives, Kathleen A.",
+    "candidate": "Kathleen A. Oconnor Ives",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 73062.31,
+    "expenditures": 68951
+   }
+  ],
   "Second Essex": [
    {
     "name": "Lovely, Joan",
@@ -2040,6 +2068,14 @@
     "incumbent": true,
     "contributions": 96425.06,
     "expenditures": 70499.67
+   },
+   {
+    "name": "Parker-O'Grady, Jerome David",
+    "candidate": "Jerome Parker-O'Grady",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 35316.56,
+    "expenditures": 34572.13
    }
   ],
   "Second Essex and Middlesex": [
@@ -2088,6 +2124,24 @@
     "expenditures": 587256.89
    }
   ],
+  "Middlesex and Norfolk": [
+   {
+    "name": "Creem, Cynthia S.",
+    "candidate": "Cynthia Stone Creem",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 29670.42,
+    "expenditures": 23580.98
+   },
+   {
+    "name": "Spilka, Karen",
+    "candidate": "Karen E. Spilka",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 354443.51,
+    "expenditures": 162251.51
+   }
+  ],
   "First Middlesex": [
    {
     "name": "Donoghue, Eileen",
@@ -2106,16 +2160,6 @@
     "incumbent": true,
     "contributions": 152024.21,
     "expenditures": 158908.18
-   }
-  ],
-  "Middlesex and Norfolk": [
-   {
-    "name": "Spilka, Karen",
-    "candidate": "Karen E. Spilka",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 354443.51,
-    "expenditures": 162251.51
    }
   ],
   "Third Middlesex": [
@@ -2159,7 +2203,7 @@
   "Middlesex and Suffolk": [
    {
     "name": "DiDomenico, Sal N.",
-    "candidate": "Sal N. Didomenico",
+    "candidate": "Sal N. di Domenico",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 162161.69,
@@ -2294,6 +2338,16 @@
     "incumbent": true,
     "contributions": 250074.58,
     "expenditures": 172119.84
+   }
+  ],
+  "Second Suffolk": [
+   {
+    "name": "Chang-Díaz, Sonia",
+    "candidate": "Sonia Rosa Chang-Diaz",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 38910,
+    "expenditures": 14608.51
    }
   ],
   "plymouthnorfolk": [

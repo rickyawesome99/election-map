@@ -1,5 +1,6 @@
 "use client";
 
+import { candidateSlug } from "@/lib/candidateSlug";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { WAR_BAD, WAR_GOOD, marginColor } from "./format";
@@ -89,20 +90,16 @@ export function WarChip({ war, size = "xs" }: { war: number | null | undefined; 
 }
 
 /** A candidate name that opens their record in the candidates view. */
-export function CandidateLink({ name, party, war, className = "" }: { name: string | undefined; party?: string; war?: number | null; className?: string }) {
+export function CandidateLink({ name, state, party, war, className = "" }: { name: string | undefined; /** The race's state (two candidates can share a name). */ state?: string; party?: string; war?: number | null; className?: string }) {
   if (!name) return <span style={VERY_MUTED}>—</span>;
   const p = party === "D" || party === "R" ? party : party ? "I" : undefined;
   return (
     <span className={`inline-flex flex-wrap items-center gap-1.5 ${className}`}>
-      <Link href={`/model/candidates?c=${encodeURIComponent(slug(name))}`} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }}>{name}</Link>
+      <Link href={`/model/candidates?c=${encodeURIComponent(candidateSlug(name, state))}`} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }}>{name}</Link>
       {p && <span className="text-[11px] font-bold" style={{ color: p === "R" ? "var(--party-rep)" : p === "D" ? "var(--party-dem)" : "var(--party-ind)" }}>{p}</span>}
       <WarChip war={war} />
     </span>
   );
-}
-
-function slug(name: string): string {
-  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
 /** A margin colored by party. */

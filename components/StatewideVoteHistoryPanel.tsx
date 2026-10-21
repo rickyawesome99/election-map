@@ -25,7 +25,7 @@ type ChartResult = { year: number; race: string; demPct: number; repPct: number;
  * One statewide result. With an `href` the whole card links to that election's page; the
  * candidate names inside stay their own links to the candidate pages.
  */
-export function ResultCard({ entry }: { entry: StatewideHistoryEntry }) {
+export function ResultCard({ entry, state }: { entry: StatewideHistoryEntry; /** State abbreviation, for the candidate links. */ state?: string }) {
   const winner = entry.demPct > entry.repPct ? "D" : "R";
   const margin = Math.abs(entry.demPct - entry.repPct).toFixed(1);
   // The card link is an overlay rather than a wrapper, since the candidate links can't nest
@@ -56,7 +56,7 @@ export function ResultCard({ entry }: { entry: StatewideHistoryEntry }) {
           return (
             <div key={party} className="flex items-baseline gap-2 mb-0.5">
               <span className="min-w-0 flex-1 truncate text-sm font-semibold" style={{ color: dem ? "var(--party-dem)" : "var(--party-rep)" }}>
-                {candidate ? <CandidateLink name={candidate} className="relative pointer-events-auto hover:underline" /> : (dem ? "Democratic Candidate" : "Republican Candidate")} ({party})
+                {candidate ? <CandidateLink name={candidate} state={state} className="relative pointer-events-auto hover:underline" /> : (dem ? "Democratic Candidate" : "Republican Candidate")} ({party})
               </span>
               <div className="flex shrink-0 items-baseline gap-1">
                 <span className="w-12 text-sm font-bold tabular-nums" style={{ color: dem ? "var(--party-dem)" : "var(--party-rep)" }}>{pct.toFixed(1)}%</span>

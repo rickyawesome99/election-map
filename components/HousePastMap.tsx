@@ -337,7 +337,7 @@ export default function HousePastMap({
                     <div key={i} className="flex items-baseline justify-between gap-2">
                       <span className="flex min-w-0 items-baseline gap-2">
                         {c.name ? (
-                          <CandidateLink name={c.name} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
+                          <CandidateLink name={c.name} state={stateAbbr} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
                             {c.name}
                           </CandidateLink>
                         ) : (

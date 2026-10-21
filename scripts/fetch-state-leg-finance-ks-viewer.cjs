@@ -35,6 +35,7 @@ const PACE_MS = Number(process.env.KS_PACE_MS ?? 4000);
 // exits non-zero and a wrapper (rerun loop) starts it again, resuming from the cache.
 let lastProgress = Date.now();
 const progress = () => { lastProgress = Date.now(); };
+let failedJobs = 0;
 let browser = null; // killed with the process: an exit that leaves Chromium behind leaks a browser per restart
 setInterval(() => { if (Date.now() - lastProgress > 600000) { console.log("watchdog: no progress for 10 min, exiting"); try { browser?.process()?.kill("SIGKILL"); } catch {} process.exit(3); } }, 30000).unref();
 const SUFFIX = new Set(["JR", "SR", "II", "III", "IV"]);
@@ -44,7 +45,12 @@ const tokens = (s) => s.toUpperCase().replace(/[^A-Z ]/g, " ").split(/\s+/).filt
 async function search(p, q) {
   // A search inside a session that already searched lands its later page postbacks on an ASP.NET "Runtime Error"
   // (house 2022 after senate 2020, 2026-10-19), so every search starts a fresh session.
-  await p.context().clearCookies();
+  // (only the server-session cookies: dropping the WAF token too meant a fresh challenge per search, and after a few
+  // hundred of those the WAF stopped serving the form at all)
+  const ctx = p.context();
+  const keep = (await ctx.cookies()).filter((c) => /waf/i.test(c.name));
+  await ctx.clearCookies();
+  if (keep.length) await ctx.addCookies(keep);
   await p.goto("https://sos.ks.gov/elections/cfr_viewer/cfr_examiner_entry.aspx", { waitUntil: "networkidle", timeout: 120000 });
   // the WAF challenge reloads the page once it passes
   await sleep(3000);
@@ -267,6 +273,68 @@ async function open(ctx, p, target, base) {
       await p.close();
       continue;
     }
+    if (job.startsWith("fix:")) {
+      // fix:{file.json} — reports filed under a typo (district 46 for 48, "STIFFLERN", a blank district) that an office
+      // search never ties to the candidate. Each entry: {job, lastName, name, filed, amended, asName, asDistrict}; every
+      // row of a name search (no office filter) over the cycle window with that name + filed + amended is opened and
+      // stored in the job's cache under the candidate's own name and district (the filed values kept as filedAs*).
+      const fixes = JSON.parse(fs.readFileSync(job.slice(4), "utf8"));
+      let opened = 0, failed = 0;
+      for (const f of fixes) {
+        const cycle = Number(f.job.split("-")[1]);
+        const dir = path.join(CACHE, f.job);
+        const idxFile = path.join(dir, "index.json");
+        const index = JSON.parse(fs.readFileSync(idxFile, "utf8"));
+        const p = await ctx.newPage();
+        const total = await walk(p, { lastName: f.lastName, start: `01/01/${cycle}`, end: `03/31/${cycle + 1}` }, async (r, pg, i) => {
+          if (r.name !== f.name || r.filed !== f.filed || r.amended !== f.amended) return;
+          const key = `f-${f.lastName}-${pg}-${i}`;
+          if (index[key] && index[key].kind !== "none") return;
+          await fetchInto(p, dir, index, idxFile, key, { ...r, name: f.asName, district: f.asDistrict, filedAsName: r.name, filedAsDistrict: r.district });
+          opened++;
+        }).catch((e) => (console.log(`  ${f.lastName}: ${e.message.split("\n")[0]}`), null));
+        if (total === null) failed++;
+        await p.close();
+      }
+      console.log(`fix: ${fixes.length} entries, opened ${opened}, failed ${failed}`);
+      if (failed) failedJobs++;
+      continue;
+    }
+    if (job.startsWith("names:")) {
+      // names:{chamber}:{cycle}:{MM/DD/YYYY}:{MM/DD/YYYY} — one search per candidate surname over a filing-date window,
+      // into the chamber-cycle cache. For office-search pages the server cannot render (house 2026 pages 12–14, filed
+      // Jul 24–26 2026: an ASP.NET Runtime Error every time), a bad record then costs only its own surname's rows.
+      const [, chamber, cy, start, end] = job.split(":");
+      const cycle = Number(cy);
+      const dir = path.join(CACHE, `${chamber}-${cycle}`);
+      fs.mkdirSync(dir, { recursive: true });
+      const idxFile = path.join(dir, "index.json");
+      const index = fs.existsSync(idxFile) ? JSON.parse(fs.readFileSync(idxFile, "utf8")) : {};
+      const have = new Set(Object.values(index).filter((r) => r.kind !== "none").map((r) => `${r.name}|${r.filed}|${r.amended}|${r.district}`));
+      const want = {};
+      for (const c of cands) if (c.year === cycle && c.chamber === chamber) {
+        const t = tokens(c.name);
+        (want[String(Number(c.district))] ??= new Set()).add(t[t.length - 1]);
+      }
+      const surnames = [...new Set(Object.values(want).flatMap((s) => [...s]))].sort();
+      let opened = 0, failed = 0;
+      for (const sn of surnames) {
+        const p = await ctx.newPage();
+        const total = await walk(p, { office: OFFICE[chamber], lastName: sn, start, end }, async (r, pg, i) => {
+          if (!(want[r.district] && tokens(r.name).some((t) => want[r.district].has(t)))) return;
+          if (have.has(`${r.name}|${r.filed}|${r.amended}|${r.district}`)) return;
+          const key = `n-${sn}-${pg}-${i}`;
+          if (index[key] && index[key].name === r.name && index[key].kind !== "none") return;
+          await fetchInto(p, dir, index, idxFile, key, r);
+          opened++;
+        }).catch((e) => (console.log(`  ${sn}: ${e.message.split("\n")[0]}`), null));
+        if (total === null) failed++;
+        await p.close();
+      }
+      console.log(`names ${chamber} ${cycle} ${start}-${end}: ${surnames.length} surnames, opened ${opened}, failed ${failed}`);
+      if (failed) failedJobs++;
+      continue;
+    }
     const [chamber, cy] = job.split(":");
     const cycle = Number(cy);
     const dir = path.join(CACHE, `${chamber}-${cycle}`);
@@ -292,7 +360,9 @@ async function open(ctx, p, target, base) {
       opened++;
     });
     console.log(`${chamber} ${cycle}: ${total} reports, opened ${opened}, skipped ${skipped}`);
+    if (total === null) failedJobs++; // the search never came back (network down): exit non-zero so the wrapper reruns
     await p.close();
   }
   await b.close();
+  if (failedJobs) process.exit(5);
 })();

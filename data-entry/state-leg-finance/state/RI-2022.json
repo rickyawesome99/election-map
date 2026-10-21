@@ -4,6 +4,16 @@
  "source": "Rhode Island Board of Elections ERTS (contributions, two calendar years)",
  "dataThrough": "12/31/2022",
  "house": {
+  "1": [
+   {
+    "name": "EDITH H AJELLO",
+    "candidate": "Edith Ajello",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7954.23,
+    "expenditures": null
+   }
+  ],
   "2": [
    {
     "name": "Christopher R Blazejewski",
@@ -435,7 +445,7 @@
   "33": [
    {
     "name": "JESSICA DREW-DAY",
-    "candidate": "Jessica A. Drewday",
+    "candidate": "Jessica A. Drew-Day",
     "party": "Republican",
     "incumbent": false,
     "contributions": 13110.94,
@@ -443,7 +453,7 @@
    },
    {
     "name": "CAROL HAGAN MCENTEE",
-    "candidate": "Carol Haganmcentee",
+    "candidate": "Carol Hagan McEntee",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 44395,
@@ -893,7 +903,7 @@
    },
    {
     "name": "MARY DUFFY MESSIER",
-    "candidate": "Mary Duffymessier",
+    "candidate": "Mary Duffy Messier",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 22305,
@@ -957,7 +967,7 @@
   "66": [
    {
     "name": "JENNIFER SMITH BOYLAN",
-    "candidate": "Jennifer Smithboylan",
+    "candidate": "Jennifer Smith Boylan",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 23979.5,

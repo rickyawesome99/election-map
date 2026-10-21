@@ -393,7 +393,7 @@
   "26": [
    {
     "name": "DIANE E. MITSCH BUSH",
-    "candidate": "Diane E. Mitschbush",
+    "candidate": "Diane E. Mitsch Bush",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 74813,
@@ -447,7 +447,7 @@
   "29": [
    {
     "name": "TRACY KRAFT-THARP",
-    "candidate": "Tracy Krafttharp",
+    "candidate": "Tracy Kraft-Tharp",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 128455.31,
@@ -473,7 +473,7 @@
    },
    {
     "name": "DAFNA MICHAELSON JENET",
-    "candidate": "Dafna Michaelsonjenet",
+    "candidate": "Dafna Michaelson Jenet",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 106621.66,
@@ -699,7 +699,7 @@
   "43": [
    {
     "name": "KEVIN VAN WINKLE",
-    "candidate": "Kevin Vanwinkle",
+    "candidate": "Kevin van Winkle",
     "party": "Republican",
     "incumbent": true,
     "contributions": 40586.66,
@@ -763,7 +763,7 @@
   "47": [
    {
     "name": "CLARICE NAVARRO-RATZLAFF",
-    "candidate": "Clarice Navarro",
+    "candidate": "Clarice Navarro-Ratzlaff",
     "party": "Republican",
     "incumbent": true,
     "contributions": 85261.51,
@@ -843,7 +843,7 @@
    },
    {
     "name": "JODY SHADDUCK-MCNALLY",
-    "candidate": "Jody Shadduckmcnally",
+    "candidate": "Jody Shadduck-McNally",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 36827.54,
@@ -943,6 +943,14 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 155009.85,
+    "expenditures": null
+   },
+   {
+    "name": "BARBARA MCLACHLAN",
+    "candidate": "Barbara Hall McLachlan",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 167374.98,
     "expenditures": null
    }
   ],

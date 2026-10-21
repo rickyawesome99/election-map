@@ -4,7 +4,7 @@ import { getStatewideMargin, getNationalMargin } from "@/lib/statewideMargins";
 import { pviHistory } from "@/lib/pviHistory";
 import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
-import { candidatePhotos } from "@/lib/candidatePhotos";
+import { candidatePhoto } from "@/lib/candidatePhotos";
 import HouseDistrictMapTabs from "@/components/HouseDistrictMapTabs";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
 import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
@@ -143,8 +143,8 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const useProjectedShares = countyProjection != null && !countyProjection.contest.startsWith("same-party");
   const demVoteShare = useProjectedShares ? countyProjection.shares.dem : parseFloat(((100 - projectedMargin) / 2).toFixed(1));
   const repVoteShare = useProjectedShares ? countyProjection.shares.rep : parseFloat(((100 + projectedMargin) / 2).toFixed(1));
-  const demPhoto = race.candidates ? (candidatePhotos[race.candidates.dem.name] ?? null) : null;
-  const repPhoto = race.candidates ? (candidatePhotos[race.candidates.rep.name] ?? null) : null;
+  const demPhoto = race.candidates ? candidatePhoto(race.candidates.dem.name, race.state) : null;
+  const repPhoto = race.candidates ? candidatePhoto(race.candidates.rep.name, race.state) : null;
 
   // Prediction-market win probability (Dem share) — averages Polymarket/Kalshi when both exist.
   const marketDemProb = race.polyDem != null && race.kalshiDem != null
@@ -339,7 +339,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               bare
               title="About this District"
               items={[
-                { label: "Incumbent", value: currentRepName, href: candidatePageHref(currentRepName) },
+                { label: "Incumbent", value: currentRepName, href: candidatePageHref(currentRepName, race.state) },
                 { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD", color: partyTextColor(currentRepParty) },
                 { label: "PVI", value: pviDisplay },
               ]}
@@ -358,8 +358,8 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                 <CandidatesLedgerSection
                   candidates={withProjectedVotes(race.candidates
                     ? [
-                        { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
-                        { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
+                        { name: race.candidates.dem.name, state: race.state, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
+                        { name: race.candidates.rep.name, state: race.state, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
                       ]
                     : [
                         { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
@@ -367,7 +367,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                       ], countyProjection)}
                 />
               );
-              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} /> : rows;
+              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} state={race.state} /> : rows;
             })()}
           </section>
 
@@ -457,6 +457,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                   content: (
                     <PastElectionResultsSection
                       results={pastResultsWithDiff}
+                      state={race.state}
                       fallbackYears={[2024, 2022, 2020]}
                       showElectionType={false}
                       density="compact"
@@ -468,7 +469,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                 {
                   key: "statewide-results",
                   label: "Statewide",
-                  content: <HouseOnlyRecentStatewideResultsSection results={statewideResultsWithDiff} density="compact" cardStyle="ledger" bare />,
+                  content: <HouseOnlyRecentStatewideResultsSection results={statewideResultsWithDiff} state={stateAbbr} density="compact" cardStyle="ledger" bare />,
                 },
                 ...((pastResultsWithDiff.length > 0 || statewideResultsWithDiff.length > 0) ? [{
                   key: "chart",

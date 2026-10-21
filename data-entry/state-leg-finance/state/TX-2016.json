@@ -369,7 +369,7 @@
    },
    {
     "name": "Webster Sr., Cecil R. (Mr.)",
-    "candidate": "Cecil R. Webster",
+    "candidate": "Cecil Ray Webster Sr.",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 40383.64,
@@ -687,7 +687,7 @@
    },
    {
     "name": "De Leon, Maricela (Ms.)",
-    "candidate": "Maricela Deleon",
+    "candidate": "Maricela de Leon",
     "party": "Republican",
     "incumbent": false,
     "contributions": 9559.78,
@@ -705,7 +705,7 @@
    },
    {
     "name": "DeShazo, Hilda Garza (Ms.)",
-    "candidate": "Hilda Garzadeshazo",
+    "candidate": "Hilda Garza Deshazo",
     "party": "Republican",
     "incumbent": false,
     "contributions": 85838.74,
@@ -733,7 +733,7 @@
    },
    {
     "name": "Garcia Utley, Marisa Yvette (Mrs.)",
-    "candidate": "Marisa Yvette Garciautley",
+    "candidate": "Marisa Yvette Garcia-Utley",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 35067,
@@ -917,6 +917,14 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 222169.24,
+    "expenditures": null
+   },
+   {
+    "name": "Ertel, Stephanie L. (Ms.)",
+    "candidate": "Stephanie Lochte Ertel",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20536.07,
     "expenditures": null
    }
   ],
@@ -1732,6 +1740,14 @@
   ],
   "112": [
    {
+    "name": "Button, Angie C. (The Honorable)",
+    "candidate": "Angie Chen Button",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 481356.91,
+    "expenditures": null
+   },
+   {
     "name": "Blackshear, Jack (Mr.)",
     "candidate": "Jack Blackshear",
     "party": "Democratic",
@@ -1852,6 +1868,14 @@
   ],
   "120": [
    {
+    "name": "Hawkins, Barbara (Ms.)",
+    "candidate": "Barbara Gervin-Hawkins",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 163257.63,
+    "expenditures": null
+   },
+   {
     "name": "Thompson, Laura R. (Ms.)",
     "candidate": "Laura Thompson",
     "party": "Other",
@@ -1921,7 +1945,7 @@
    },
    {
     "name": "Dawson-Thomas, Joy (Mrs.)",
-    "candidate": "Joy Dawsonthomas",
+    "candidate": "Joy Dawson-Thomas",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 7296.5,
@@ -2141,6 +2165,16 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 107763.06,
+    "expenditures": null
+   }
+  ],
+  "143": [
+   {
+    "name": "Hernandez, Ana E. (The Honorable)",
+    "candidate": "Ana Hernandez",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 117591.71,
     "expenditures": null
    }
   ],

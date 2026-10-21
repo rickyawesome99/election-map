@@ -199,7 +199,7 @@ export const stateLegResults: Record<
       "totalVotes": 6866,
       "candidates": [
        {
-        "name": "Co Sullivanleonard",
+        "name": "Co Sullivan-Leonard",
         "party": "R",
         "votes": 5293,
         "winner": true
@@ -264,7 +264,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Patrici Fayebrazel",
+        "name": "Patrici Faye-Brazel",
         "party": "D",
         "votes": 2021
        }
@@ -756,7 +756,7 @@ export const stateLegResults: Record<
       "totalVotes": 8554,
       "candidates": [
        {
-        "name": "Jona Kreisstomkins",
+        "name": "Jona Kreiss-Tomkins",
         "party": "D",
         "votes": 5068,
         "incumbent": true,
@@ -963,7 +963,7 @@ export const stateLegResults: Record<
       "totalVotes": 14704,
       "candidates": [
        {
-        "name": "Natasha A. Vonimhof",
+        "name": "Natasha A. von Imhof",
         "party": "R",
         "votes": 7645,
         "winner": true
@@ -1178,7 +1178,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Co Sullivanleonard",
+        "name": "Co Sullivan-Leonard",
         "party": "R",
         "votes": 5705,
         "incumbent": true,
@@ -1250,7 +1250,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Patrici Fayebrazel",
+        "name": "Patrici Faye-Brazel",
         "party": "D",
         "votes": 1731
        },
@@ -1696,7 +1696,7 @@ export const stateLegResults: Record<
         "votes": 2072
        },
        {
-        "name": "Sandra Katelnikofflester",
+        "name": "Sandra Katelnikoff-Lester",
         "party": "O",
         "votes": 767
        }
@@ -1748,7 +1748,7 @@ export const stateLegResults: Record<
       "totalVotes": 7847,
       "candidates": [
        {
-        "name": "Jona Kreisstomkins",
+        "name": "Jona Kreiss-Tomkins",
         "party": "D",
         "votes": 4480,
         "incumbent": true,
@@ -1948,7 +1948,7 @@ export const stateLegResults: Record<
       "totalVotes": 11186,
       "candidates": [
        {
-        "name": "Elvi Grayjackson",
+        "name": "Elvi Gray-Jackson",
         "party": "D",
         "votes": 6724,
         "winner": true
@@ -2260,7 +2260,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Monica L. Steinolson",
+        "name": "Monica L. Stein-Olson",
         "party": "D",
         "votes": 2693
        }
@@ -2736,7 +2736,7 @@ export const stateLegResults: Record<
       "totalVotes": 9654,
       "candidates": [
        {
-        "name": "Jonathan S. Kreisstomkins",
+        "name": "Jonathan S. Kreiss-Tomkins",
         "party": "D",
         "votes": 5682,
         "incumbent": true,
@@ -2965,7 +2965,7 @@ export const stateLegResults: Record<
       "totalVotes": 16947,
       "candidates": [
        {
-        "name": "Natasha A. Vonimhof",
+        "name": "Natasha A. von Imhof",
         "party": "R",
         "votes": 10222,
         "incumbent": true,
@@ -4062,7 +4062,7 @@ export const stateLegResults: Record<
       "totalVotes": 11157,
       "candidates": [
        {
-        "name": "Elvi Grayjackson",
+        "name": "Elvi Gray-Jackson",
         "party": "D",
         "votes": 6325,
         "incumbent": true,
@@ -5457,7 +5457,7 @@ export const stateLegResults: Record<
       "totalVotes": 16942,
       "candidates": [
        {
-        "name": "Parker Duncanmoore",
+        "name": "Parker Duncan Moore",
         "party": "R",
         "votes": 11039,
         "winner": true
@@ -5627,7 +5627,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Connie Coonerrowe",
+        "name": "Connie Cooner Rowe",
         "party": "R",
         "votes": 13748,
         "incumbent": true,
@@ -5956,7 +5956,7 @@ export const stateLegResults: Record<
       "totalVotes": 12245,
       "candidates": [
        {
-        "name": "Barbara Bigsbyboyd",
+        "name": "Barbara Bigsby Boyd",
         "party": "D",
         "votes": 7745,
         "incumbent": true,
@@ -6035,7 +6035,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Nicki Arnoldswindle",
+        "name": "Nicki Arnold-Swindle",
         "party": "D",
         "votes": 4241
        }
@@ -6055,7 +6055,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Charlotte A. Clarkfrieson",
+        "name": "Charlotte A. Clark-Frieson",
         "party": "D",
         "votes": 4494
        }
@@ -6068,7 +6068,7 @@ export const stateLegResults: Record<
       "totalVotes": 16036,
       "candidates": [
        {
-        "name": "Debbie Hambywood",
+        "name": "Debbie Hamby Wood",
         "party": "R",
         "votes": 11109,
         "winner": true
@@ -6363,7 +6363,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joseph Casperbaker III",
+        "name": "Joseph Casper Baker III",
         "party": "O",
         "votes": 1433
        }
@@ -6377,7 +6377,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Roderick Hamptonscott",
+        "name": "Roderick Hampton Scott",
         "party": "D",
         "votes": 13093,
         "incumbent": true,
@@ -6533,7 +6533,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Amber Selmanlynn",
+        "name": "Amber Selman-Lynn",
         "party": "D",
         "votes": 3995
        }
@@ -6794,7 +6794,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary Wynnekling",
+        "name": "Mary Wynne Kling",
         "party": "D",
         "votes": 6977
        }
@@ -6846,7 +6846,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Pebblin Walkerwarren",
+        "name": "Pebblin Walker Warren",
         "party": "D",
         "votes": 11367,
         "incumbent": true,
@@ -6976,7 +6976,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joel Leewilliams",
+        "name": "Joel Lee Williams",
         "party": "D",
         "votes": 5344
        }
@@ -7063,7 +7063,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Danielle Mashburnmyrick",
+        "name": "Danielle Mashburn-Myrick",
         "party": "D",
         "votes": 6243
        }
@@ -7367,7 +7367,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Johnny MacKmorrow",
+        "name": "Johnny Mack Morrow",
         "party": "D",
         "votes": 21732
        }
@@ -7614,7 +7614,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Linda Colemanmadison",
+        "name": "Linda Coleman-Madison",
         "party": "D",
         "votes": 36401,
         "incumbent": true,
@@ -7666,7 +7666,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Malika Sandersfortier",
+        "name": "Malika Sanders-Fortier",
         "party": "D",
         "votes": 30140,
         "winner": true
@@ -7746,7 +7746,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Nancy Carltonbendinger",
+        "name": "Nancy Carlton Bendinger",
         "party": "D",
         "votes": 20503
        }
@@ -7842,7 +7842,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Vivian Davisfigures",
+        "name": "Vivian Davis Figures",
         "party": "D",
         "votes": 34633,
         "incumbent": true,
@@ -7949,7 +7949,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Parker Duncanmoore",
+        "name": "Parker Duncan Moore",
         "party": "R",
         "votes": 11236,
         "incumbent": true,
@@ -8438,7 +8438,7 @@ export const stateLegResults: Record<
       "totalVotes": 9912,
       "candidates": [
        {
-        "name": "Barbara Bigsbyboyd",
+        "name": "Barbara Bigsby Boyd",
         "party": "D",
         "votes": 5522,
         "incumbent": true,
@@ -8542,7 +8542,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Debbie Hambywood",
+        "name": "Debbie Hamby Wood",
         "party": "R",
         "votes": 9162,
         "incumbent": true,
@@ -8995,7 +8995,7 @@ export const stateLegResults: Record<
       "totalVotes": 8368,
       "candidates": [
        {
-        "name": "Cynthia Leealmond",
+        "name": "Cynthia Lee Almond",
         "party": "R",
         "votes": 5541,
         "winner": true
@@ -9113,7 +9113,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Karla Knightmaddox",
+        "name": "Karla Knight Maddox",
         "party": "R",
         "votes": 7103
        }
@@ -9327,7 +9327,7 @@ export const stateLegResults: Record<
       "totalVotes": 8783,
       "candidates": [
        {
-        "name": "Pebblin Walkerwarren",
+        "name": "Pebblin Walker Warren",
         "party": "D",
         "votes": 6257,
         "incumbent": true,
@@ -9553,7 +9553,7 @@ export const stateLegResults: Record<
       "totalVotes": 16707,
       "candidates": [
        {
-        "name": "Frances Holkjones",
+        "name": "Frances Holk-Jones",
         "party": "R",
         "votes": 14242,
         "winner": true
@@ -9848,7 +9848,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kyle Richardgarrison",
+        "name": "Kyle Richard-Garrison",
         "party": "O",
         "votes": 4598
        }
@@ -10089,7 +10089,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Linda Colemanmadison",
+        "name": "Linda Coleman-Madison",
         "party": "D",
         "votes": 27567,
         "incumbent": true,
@@ -10323,7 +10323,7 @@ export const stateLegResults: Record<
       "totalVotes": 34604,
       "candidates": [
        {
-        "name": "Vivian Davisfigures",
+        "name": "Vivian Davis Figures",
         "party": "D",
         "votes": 23203,
         "incumbent": true,
@@ -10497,7 +10497,7 @@ export const stateLegResults: Record<
       "totalVotes": 10229,
       "candidates": [
        {
-        "name": "Sonia Eubanksbarker",
+        "name": "Sonia Eubanks Barker",
         "party": "R",
         "votes": 5606,
         "winner": true
@@ -11989,7 +11989,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jana Dellarosa",
+        "name": "Jana della Rosa",
         "party": "R",
         "votes": null,
         "incumbent": true,
@@ -12606,7 +12606,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sonia Barker",
+        "name": "Sonia Eubanks Barker",
         "party": "R",
         "votes": null,
         "incumbent": true,
@@ -14123,7 +14123,7 @@ export const stateLegResults: Record<
       "totalVotes": 11216,
       "candidates": [
        {
-        "name": "Jana Dellarosa",
+        "name": "Jana della Rosa",
         "party": "R",
         "votes": 7426,
         "incumbent": true,
@@ -14160,7 +14160,7 @@ export const stateLegResults: Record<
       "totalVotes": 12615,
       "candidates": [
        {
-        "name": "Gayla Hendrenmckenzie",
+        "name": "Gayla Hendren McKenzie",
         "party": "R",
         "votes": 8988,
         "winner": true
@@ -14206,7 +14206,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jene Huffmangilreath",
+        "name": "Jene Huffman-Gilreath",
         "party": "D",
         "votes": 3099
        }
@@ -14780,7 +14780,7 @@ export const stateLegResults: Record<
       "totalVotes": 10413,
       "candidates": [
        {
-        "name": "Sonia Eubanksbarker",
+        "name": "Sonia Eubanks Barker",
         "party": "R",
         "votes": 6239,
         "incumbent": true,
@@ -16193,7 +16193,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michael Bennettspears",
+        "name": "Michael Bennett-Spears",
         "party": "D",
         "votes": 3759
        }
@@ -16285,7 +16285,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Gayla Hendrenmckenzie",
+        "name": "Gayla Hendren McKenzie",
         "party": "R",
         "votes": 15993,
         "incumbent": true,
@@ -16326,7 +16326,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jene Huffmangilreath",
+        "name": "Jene Huffman-Gilreath",
         "party": "D",
         "votes": 4681
        }
@@ -16922,7 +16922,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Diana Gonzalesworthen",
+        "name": "Diana Worthen",
         "party": "D",
         "votes": 1322
        }
@@ -16974,7 +16974,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Hope Hendrenduke",
+        "name": "Hope Hendren Duke",
         "party": "R",
         "votes": 9851,
         "winner": true
@@ -16993,7 +16993,7 @@ export const stateLegResults: Record<
       "totalVotes": 7475,
       "candidates": [
        {
-        "name": "R. Scottrichardson",
+        "name": "R. Scott Richardson",
         "party": "R",
         "votes": 4158,
         "winner": true
@@ -18495,7 +18495,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sonia Barker",
+        "name": "Sonia Eubanks Barker",
         "party": "R",
         "votes": 15466,
         "incumbent": true,
@@ -18686,7 +18686,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cortney Warwickmckee",
+        "name": "Cortney Warwick McKee",
         "party": "D",
         "votes": 9307
        }
@@ -18814,7 +18814,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Allison Grigsbysweatman",
+        "name": "Allison Grigsby Sweatman",
         "party": "D",
         "votes": 13963
        }
@@ -19021,7 +19021,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Missy Thomasirvin",
+        "name": "Missy Irvin",
         "party": "R",
         "votes": 28789,
         "incumbent": true,
@@ -21598,7 +21598,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Pamela Powershannley",
+        "name": "Pamela Powers Hannley",
         "party": "D",
         "votes": 45387,
         "winner": true
@@ -21929,7 +21929,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Deanna Rasmussenlacotta",
+        "name": "Deanna Rasmussen-Lacotta",
         "party": "D",
         "votes": 34180
        }
@@ -21969,7 +21969,7 @@ export const stateLegResults: Record<
       "totalVotes": 180916,
       "candidates": [
        {
-        "name": "Michelle Ugentirita",
+        "name": "Michelle Ugenti-Rita",
         "party": "R",
         "votes": 69758,
         "incumbent": true,
@@ -22161,7 +22161,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Gary Leoncox",
+        "name": "Gary Leon Cox",
         "party": "R",
         "votes": 14831
        }
@@ -22215,7 +22215,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Olivia Cajerobedford",
+        "name": "Olivia Cajero Bedford",
         "party": "D",
         "votes": 48887,
         "incumbent": true,
@@ -22260,14 +22260,14 @@ export const stateLegResults: Record<
       "totalVotes": 96875,
       "candidates": [
        {
-        "name": "Sylvia Tenneyallen",
+        "name": "Sylvia Tenney Allen",
         "party": "R",
         "votes": 49318,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Nikki Checkbagley",
+        "name": "Nikki (Check) Bagley",
         "party": "D",
         "votes": 47557
        }
@@ -22505,7 +22505,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lupe Chaviracontreras",
+        "name": "Lupe Chavira Contreras",
         "party": "D",
         "votes": 38817,
         "incumbent": true,
@@ -22665,7 +22665,7 @@ export const stateLegResults: Record<
       "totalVotes": 98560,
       "candidates": [
        {
-        "name": "Kate Brophymcgee",
+        "name": "Kate Brophy McGee",
         "party": "R",
         "votes": 50436,
         "winner": true
@@ -22861,7 +22861,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary McCordrobinson",
+        "name": "Mary McCord Robinson",
         "party": "D",
         "votes": 18566
        }
@@ -22969,7 +22969,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Pamela Powershannley",
+        "name": "Pamela Powers Hannley",
         "party": "D",
         "votes": 49011,
         "incumbent": true,
@@ -23121,7 +23121,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Shelley Renneleon",
+        "name": "Shelley Renne-Leon",
         "party": "D",
         "votes": 25651
        },
@@ -23514,7 +23514,7 @@ export const stateLegResults: Record<
         "incumbent": true
        },
        {
-        "name": "Kathy Pappaspetsas",
+        "name": "Kathy Pappas Petsas",
         "party": "R",
         "votes": 40064
        }
@@ -23671,7 +23671,7 @@ export const stateLegResults: Record<
       "totalVotes": 94376,
       "candidates": [
        {
-        "name": "Sylvia Tenneyallen",
+        "name": "Sylvia Tenney Allen",
         "party": "R",
         "votes": 48044,
         "incumbent": true,
@@ -23852,7 +23852,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kristin Dybvigpawelko",
+        "name": "Kristin Dybvig-Pawelko",
         "party": "D",
         "votes": 37971
        }
@@ -23925,7 +23925,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lupe Chaviracontreras",
+        "name": "Lupe Chavira Contreras",
         "party": "D",
         "votes": 32872,
         "incumbent": true,
@@ -24003,7 +24003,7 @@ export const stateLegResults: Record<
       "totalVotes": 113196,
       "candidates": [
        {
-        "name": "Michelle Ugentirita",
+        "name": "Michelle Ugenti-Rita",
         "party": "R",
         "votes": 67852,
         "winner": true
@@ -24047,7 +24047,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kathy Mohralmeida",
+        "name": "Kathy Mohr-Almeida",
         "party": "D",
         "votes": 32268
        }
@@ -24095,14 +24095,14 @@ export const stateLegResults: Record<
       "totalVotes": 94289,
       "candidates": [
        {
-        "name": "Kate Brophymcgee",
+        "name": "Kate Brophy McGee",
         "party": "R",
         "votes": 47278,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Christine Portermarsh",
+        "name": "Christine Porter Marsh",
         "party": "D",
         "votes": 47011
        }
@@ -24366,7 +24366,7 @@ export const stateLegResults: Record<
       "totalVotes": 177579,
       "candidates": [
        {
-        "name": "Pamela Powershannley",
+        "name": "Pamela Powers Hannley",
         "party": "D",
         "votes": 64781,
         "incumbent": true,
@@ -24400,7 +24400,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Stephanie Stahlhamilton",
+        "name": "Stephanie Stahl Hamilton",
         "party": "D",
         "votes": 59344,
         "winner": true
@@ -24519,12 +24519,12 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kimberly Beachmoschetti",
+        "name": "Kimberly Beach-Moschetti",
         "party": "D",
         "votes": 35289
        },
        {
-        "name": "Ronnie Maestascondos",
+        "name": "Ronnie Maestas-Condos",
         "party": "D",
         "votes": 32070
        }
@@ -24549,7 +24549,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kristin Dybvigpawelko",
+        "name": "Kristin Dybvig-Pawelko",
         "party": "D",
         "votes": 55259
        }
@@ -24949,7 +24949,7 @@ export const stateLegResults: Record<
         "votes": 15811
        },
        {
-        "name": "Helen Fokszanskyjconti",
+        "name": "Helen Fokszanskyj-Conti",
         "party": "R",
         "votes": 15402
        }
@@ -25316,7 +25316,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lupe Chaviracontreras",
+        "name": "Lupe Chavira Contreras",
         "party": "D",
         "votes": 53794,
         "incumbent": true,
@@ -25387,7 +25387,7 @@ export const stateLegResults: Record<
       "totalVotes": 151792,
       "candidates": [
        {
-        "name": "Michelle Ugentirita",
+        "name": "Michelle Ugenti-Rita",
         "party": "R",
         "votes": 89677,
         "incumbent": true,
@@ -25487,13 +25487,13 @@ export const stateLegResults: Record<
       "totalVotes": 120181,
       "candidates": [
        {
-        "name": "Christine Marsh",
+        "name": "Christine Porter Marsh",
         "party": "D",
         "votes": 60339,
         "winner": true
        },
        {
-        "name": "Kate Brophymcgee",
+        "name": "Kate Brophy McGee",
         "party": "R",
         "votes": 59842,
         "incumbent": true
@@ -25794,7 +25794,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Barbara Rowleyparker",
+        "name": "Barbara Rowley Parker",
         "party": "R",
         "votes": 49190,
         "winner": true
@@ -25813,7 +25813,7 @@ export const stateLegResults: Record<
       "totalVotes": 74277,
       "candidates": [
        {
-        "name": "Oscar Delossantos",
+        "name": "Oscar de Los Santos",
         "party": "D",
         "votes": 30524,
         "winner": true
@@ -26077,7 +26077,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Stephanie Stahlhamilton",
+        "name": "Stephanie Stahl Hamilton",
         "party": "D",
         "votes": 33231,
         "incumbent": true,
@@ -26103,7 +26103,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lupe Chaviracontreras",
+        "name": "Lupe Chavira Contreras",
         "party": "D",
         "votes": 25787,
         "winner": true
@@ -26257,7 +26257,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Stephanie Blairholbrook",
+        "name": "Stephanie Blair Holbrook",
         "party": "D",
         "votes": 45180
        }
@@ -26379,7 +26379,7 @@ export const stateLegResults: Record<
       "totalVotes": 123221,
       "candidates": [
        {
-        "name": "Christine Marsh",
+        "name": "Christine Porter Marsh",
         "party": "D",
         "votes": 62205,
         "incumbent": true,
@@ -26495,7 +26495,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "David Christianfarnsworth",
+        "name": "David Farnsworth",
         "party": "R",
         "votes": 53945,
         "winner": true
@@ -26748,7 +26748,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Gary Garciasnyder",
+        "name": "Gary Garcia Snyder",
         "party": "R",
         "votes": 25194
        }
@@ -28405,7 +28405,7 @@ export const stateLegResults: Record<
       "totalVotes": 186942,
       "candidates": [
        {
-        "name": "Cecilia M. Aguiarcurry",
+        "name": "Cecilia M. Aguiar-Curry",
         "party": "D",
         "votes": 118772,
         "winner": true
@@ -28611,7 +28611,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mae Cendanatorlakson",
+        "name": "Mae Cendana Torlakson",
         "party": "D",
         "votes": 67300
        }
@@ -28651,7 +28651,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cheryl Cookkallio",
+        "name": "Cheryl Cook-Kallio",
         "party": "D",
         "votes": 102290
        }
@@ -28671,7 +28671,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Matthew Delcarlo",
+        "name": "Matthew del Carlo",
         "party": "R",
         "votes": 27417
        }
@@ -28691,7 +28691,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Roseann Slonskybreault",
+        "name": "Roseann Slonsky-Breault",
         "party": "R",
         "votes": 23273
        }
@@ -28932,7 +28932,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Karina Cervantezalejo",
+        "name": "Karina Cervantez Alejo",
         "party": "D",
         "votes": 47998
        }
@@ -29029,7 +29029,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Dawn Ortizlegg",
+        "name": "Dawn Ortiz-Legg",
         "party": "D",
         "votes": 87168
        }
@@ -29406,7 +29406,7 @@ export const stateLegResults: Record<
       "totalVotes": 179842,
       "candidates": [
        {
-        "name": "Sebastian Ridleythomas",
+        "name": "Sebastian Ridley-Thomas",
         "party": "D",
         "votes": 146723,
         "incumbent": true,
@@ -29502,7 +29502,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Reginald Byron Jonessawyer",
+        "name": "Reginald Byron Jones-Sawyer",
         "party": "D",
         "votes": 77324,
         "incumbent": true,
@@ -29622,7 +29622,7 @@ export const stateLegResults: Record<
       "totalVotes": 149595,
       "candidates": [
        {
-        "name": "Sharon Quirksilva",
+        "name": "Sharon Quirk-Silva",
         "party": "D",
         "votes": 79654,
         "winner": true
@@ -29688,7 +29688,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sean Jaypanahi",
+        "name": "Sean Jay Panahi",
         "party": "D",
         "votes": 75231
        }
@@ -29708,7 +29708,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ofelia Velardegarcia",
+        "name": "Ofelia Velarde-Garcia",
         "party": "R",
         "votes": 32324
        }
@@ -29728,7 +29728,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Martha E. Floresgibson",
+        "name": "Martha E. Flores-Gibson",
         "party": "R",
         "votes": 53805
        }
@@ -29768,7 +29768,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lenore Albertsheridan",
+        "name": "Lenore Albert-Sheridan",
         "party": "D",
         "votes": 71332
        }
@@ -30152,7 +30152,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Johnathon Levarervin",
+        "name": "Johnathon Levar Ervin",
         "party": "D",
         "votes": 142886
        }
@@ -30408,7 +30408,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Cecilia Aguiarcurry",
+        "name": "Cecilia Aguiar-Curry",
         "party": "D",
         "votes": 122657,
         "incumbent": true,
@@ -30651,7 +30651,7 @@ export const stateLegResults: Record<
       "totalVotes": 217905,
       "candidates": [
        {
-        "name": "Rebecca Bauerkahan",
+        "name": "Rebecca Bauer-Kahan",
         "party": "D",
         "votes": 111222,
         "winner": true
@@ -30760,7 +30760,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Justin Ryanquigley",
+        "name": "Justin Ryan Quigley",
         "party": "O",
         "votes": 29855
        }
@@ -31138,7 +31138,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Henry Gomeznickel",
+        "name": "Henry Gomez Nickel",
         "party": "R",
         "votes": 52746
        }
@@ -31215,7 +31215,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ronda Baldwinkennedy",
+        "name": "Ronda Baldwin-Kennedy",
         "party": "R",
         "votes": 66758
        }
@@ -31254,7 +31254,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Roxanne Beckfordhoge",
+        "name": "Roxanne Beckford Hoge",
         "party": "R",
         "votes": 28784
        }
@@ -31383,7 +31383,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kevin Heeyoungjang",
+        "name": "Kevin Hee Young Jang",
         "party": "D",
         "votes": 23002
        }
@@ -31497,14 +31497,14 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Reggie Jonessawyer",
+        "name": "Reggie Jones-Sawyer",
         "party": "D",
         "votes": 47765,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Leslie Haganmorgan",
+        "name": "Leslie Hagan-Morgan",
         "party": "D",
         "votes": 23653
        }
@@ -31618,7 +31618,7 @@ export const stateLegResults: Record<
       "totalVotes": 130589,
       "candidates": [
        {
-        "name": "Sharon Quirksilva",
+        "name": "Sharon Quirk-Silva",
         "party": "D",
         "votes": 74636,
         "incumbent": true,
@@ -31799,7 +31799,7 @@ export const stateLegResults: Record<
       "totalVotes": 200646,
       "candidates": [
        {
-        "name": "Cottie Petrienorris",
+        "name": "Cottie Petrie-Norris",
         "party": "D",
         "votes": 105699,
         "winner": true
@@ -31840,7 +31840,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Tasha Boernerhorvath",
+        "name": "Tasha Boerner Horvath",
         "party": "D",
         "votes": 79769,
         "winner": true
@@ -32032,7 +32032,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Victor G. Sanvicente",
+        "name": "Victor G. San Vicente",
         "party": "R",
         "votes": 66156
        }
@@ -32090,7 +32090,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ruth Musserlopez",
+        "name": "Ruth Musser-Lopez",
         "party": "D",
         "votes": 94579
        }
@@ -32404,7 +32404,7 @@ export const stateLegResults: Record<
       "totalVotes": 225267,
       "candidates": [
        {
-        "name": "Cecilia Aguiarcurry",
+        "name": "Cecilia Aguiar-Curry",
         "party": "D",
         "votes": 150157,
         "incumbent": true,
@@ -32643,7 +32643,7 @@ export const stateLegResults: Record<
       "totalVotes": 286114,
       "candidates": [
        {
-        "name": "Rebecca Bauerkahan",
+        "name": "Rebecca Bauer-Kahan",
         "party": "D",
         "votes": 192977,
         "incumbent": true,
@@ -32752,7 +32752,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joel Gutierrezcampos",
+        "name": "Joel Gutierrez Campos",
         "party": "R",
         "votes": 63514
        }
@@ -33086,7 +33086,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lucie Lapointevolotzky",
+        "name": "Lucie Lapointe Volotzky",
         "party": "R",
         "votes": 46877
        }
@@ -33382,7 +33382,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Godfrey Santosplata",
+        "name": "Godfrey Santos Plata",
         "party": "D",
         "votes": 49580
        }
@@ -33497,7 +33497,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Reggie Jonessawyer",
+        "name": "Reggie Jones-Sawyer",
         "party": "D",
         "votes": 63448,
         "incumbent": true,
@@ -33606,7 +33606,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Fatima S. Iqbalzubair",
+        "name": "Fatima S. Iqbal-Zubair",
         "party": "D",
         "votes": 56875
        }
@@ -33619,7 +33619,7 @@ export const stateLegResults: Record<
       "totalVotes": 192801,
       "candidates": [
        {
-        "name": "Sharon Quirksilva",
+        "name": "Sharon Quirk-Silva",
         "party": "D",
         "votes": 112333,
         "incumbent": true,
@@ -33796,7 +33796,7 @@ export const stateLegResults: Record<
       "totalVotes": 264630,
       "candidates": [
        {
-        "name": "Cottie Petrienorris",
+        "name": "Cottie Petrie-Norris",
         "party": "D",
         "votes": 133607,
         "incumbent": true,
@@ -33836,7 +33836,7 @@ export const stateLegResults: Record<
       "totalVotes": 238543,
       "candidates": [
        {
-        "name": "Tasha Boernerhorvath",
+        "name": "Tasha Boerner Horvath",
         "party": "D",
         "votes": 132688,
         "incumbent": true,
@@ -33863,7 +33863,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "June Yangcutter",
+        "name": "June Yang Cutter",
         "party": "R",
         "votes": 118396
        }
@@ -34158,7 +34158,7 @@ export const stateLegResults: Record<
       "totalVotes": 428348,
       "candidates": [
        {
-        "name": "Rosilicie Ochoabogh",
+        "name": "Rosilicie Ochoa Bogh",
         "party": "R",
         "votes": 224945,
         "winner": true
@@ -34224,7 +34224,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ling Lingchang",
+        "name": "Ling Chang",
         "party": "R",
         "votes": 203762
        }
@@ -34352,7 +34352,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Belle Starrsandwith",
+        "name": "Belle Starr Sandwith",
         "party": "D",
         "votes": 79068
        }
@@ -34392,7 +34392,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "David Leonzink",
+        "name": "David Leon Zink",
         "party": "D",
         "votes": 52198
        }
@@ -34405,7 +34405,7 @@ export const stateLegResults: Record<
       "totalVotes": 153076,
       "candidates": [
        {
-        "name": "Cecilia Aguiarcurry",
+        "name": "Cecilia Aguiar-Curry",
         "party": "D",
         "votes": 99342,
         "incumbent": true,
@@ -34646,7 +34646,7 @@ export const stateLegResults: Record<
       "totalVotes": 198962,
       "candidates": [
        {
-        "name": "Rebecca Bauerkahan",
+        "name": "Rebecca Bauer-Kahan",
         "party": "D",
         "votes": 130813,
         "incumbent": true,
@@ -35336,7 +35336,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Rick Chavezzbur",
+        "name": "Rick Chavez Zbur",
         "party": "D",
         "votes": 76110,
         "winner": true
@@ -35363,7 +35363,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mia Livasporter",
+        "name": "Mia Livas Porter",
         "party": "D",
         "votes": 49211
        }
@@ -35422,7 +35422,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Keith Girolamocascio",
+        "name": "Keith Girolamo Cascio",
         "party": "R",
         "votes": 22295
        }
@@ -35456,7 +35456,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Reggie Jonessawyer",
+        "name": "Reggie Jones-Sawyer",
         "party": "D",
         "votes": 40334,
         "incumbent": true,
@@ -35518,7 +35518,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Hector Diaznava",
+        "name": "Hector Diaz",
         "party": "R",
         "votes": 32574
        }
@@ -35532,13 +35532,13 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Tina Simonemckinnor",
+        "name": "Tina Simone McKinnor",
         "party": "D",
         "votes": 58888,
         "winner": true
        },
        {
-        "name": "Robert Pullenmiles",
+        "name": "Robert Pullen-Miles",
         "party": "D",
         "votes": 33691
        }
@@ -35618,7 +35618,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Fatima Iqbalzubair",
+        "name": "Fatima Iqbal-Zubair",
         "party": "D",
         "votes": 26719
        }
@@ -35651,7 +35651,7 @@ export const stateLegResults: Record<
       "totalVotes": 110222,
       "candidates": [
        {
-        "name": "Sharon Quirksilva",
+        "name": "Sharon Quirk-Silva",
         "party": "D",
         "votes": 58781,
         "incumbent": true,
@@ -35768,7 +35768,7 @@ export const stateLegResults: Record<
       "totalVotes": 136162,
       "candidates": [
        {
-        "name": "Cottie Petrienorris",
+        "name": "Cottie Petrie-Norris",
         "party": "D",
         "votes": 75950,
         "incumbent": true,
@@ -35838,7 +35838,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kristie Brucelane",
+        "name": "Kristie Bruce-Lane",
         "party": "R",
         "votes": 73944
        }
@@ -35851,7 +35851,7 @@ export const stateLegResults: Record<
       "totalVotes": 201084,
       "candidates": [
        {
-        "name": "Tasha Boernerhorvath",
+        "name": "Tasha Boerner Horvath",
         "party": "D",
         "votes": 121447,
         "incumbent": true,
@@ -35956,7 +35956,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Marie Alvaradogil",
+        "name": "Marie Alvarado-Gil",
         "party": "D",
         "votes": 137157,
         "winner": true
@@ -36194,7 +36194,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lola Smallwoodcuevas",
+        "name": "Lola Smallwood-Cuevas",
         "party": "D",
         "votes": 117315,
         "winner": true
@@ -38796,7 +38796,7 @@ export const stateLegResults: Record<
       "totalVotes": 36940,
       "candidates": [
        {
-        "name": "Diane E. Mitschbush",
+        "name": "Diane E. Mitsch Bush",
         "party": "D",
         "votes": 22442,
         "incumbent": true,
@@ -38865,7 +38865,7 @@ export const stateLegResults: Record<
       "totalVotes": 39773,
       "candidates": [
        {
-        "name": "Tracy Krafttharp",
+        "name": "Tracy Kraft-Tharp",
         "party": "D",
         "votes": 21701,
         "incumbent": true,
@@ -38885,7 +38885,7 @@ export const stateLegResults: Record<
       "totalVotes": 29239,
       "candidates": [
        {
-        "name": "Dafna Michaelsonjenet",
+        "name": "Dafna Michaelson Jenet",
         "party": "D",
         "votes": 15844,
         "winner": true
@@ -39148,7 +39148,7 @@ export const stateLegResults: Record<
       "totalVotes": 44078,
       "candidates": [
        {
-        "name": "Kevin Vanwinkle",
+        "name": "Kevin van Winkle",
         "party": "R",
         "votes": 26595,
         "incumbent": true,
@@ -39224,7 +39224,7 @@ export const stateLegResults: Record<
       "totalVotes": 37605,
       "candidates": [
        {
-        "name": "Clarice Navarro",
+        "name": "Clarice Navarro-Ratzlaff",
         "party": "R",
         "votes": 21714,
         "incumbent": true,
@@ -39310,7 +39310,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jody Shadduckmcnally",
+        "name": "Jody Shadduck-McNally",
         "party": "D",
         "votes": 18642
        }
@@ -39452,7 +39452,7 @@ export const stateLegResults: Record<
       "totalVotes": 45997,
       "candidates": [
        {
-        "name": "Barbara Hallmclachlan",
+        "name": "Barbara Hall McLachlan",
         "party": "D",
         "votes": 23336,
         "winner": true
@@ -40021,7 +40021,7 @@ export const stateLegResults: Record<
       "totalVotes": 33320,
       "candidates": [
        {
-        "name": "Serena Gonzalesgutierrez",
+        "name": "Serena Gonzales-Gutierrez",
         "party": "D",
         "votes": 27564,
         "winner": true
@@ -40171,7 +40171,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sonya Jaquezlewis",
+        "name": "Sonya Jaquez Lewis",
         "party": "D",
         "votes": 30880,
         "winner": true
@@ -40506,7 +40506,7 @@ export const stateLegResults: Record<
       "totalVotes": 36269,
       "candidates": [
        {
-        "name": "Tracy Krafttharp",
+        "name": "Tracy Kraft-Tharp",
         "party": "D",
         "votes": 22100,
         "incumbent": true,
@@ -40526,7 +40526,7 @@ export const stateLegResults: Record<
       "totalVotes": 27968,
       "candidates": [
        {
-        "name": "Dafna Michaelsonjenet",
+        "name": "Dafna Michaelson Jenet",
         "party": "D",
         "votes": 16239,
         "incumbent": true,
@@ -40793,7 +40793,7 @@ export const stateLegResults: Record<
       "totalVotes": 41791,
       "candidates": [
        {
-        "name": "Kevin Vanwinkle",
+        "name": "Kevin van Winkle",
         "party": "R",
         "votes": 22764,
         "incumbent": true,
@@ -41105,7 +41105,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Barbara McLachlan",
+        "name": "Barbara Hall McLachlan",
         "party": "D",
         "votes": 23273,
         "incumbent": true,
@@ -41211,7 +41211,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Teri Nilsonbaird",
+        "name": "Teri Nilson Baird",
         "party": "D",
         "votes": 8651
        }
@@ -41508,7 +41508,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Beth Martinezhumenik",
+        "name": "Beth Martinez Humenik",
         "party": "R",
         "votes": 27068,
         "incumbent": true
@@ -41539,7 +41539,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Julia Varnellsarjeant",
+        "name": "Julia Varnell-Sarjeant",
         "party": "D",
         "votes": 34604
        },
@@ -41661,7 +41661,7 @@ export const stateLegResults: Record<
       "totalVotes": 42152,
       "candidates": [
        {
-        "name": "Serena Gonzalesgutierrez",
+        "name": "Serena Gonzales-Gutierrez",
         "party": "D",
         "votes": 34501,
         "incumbent": true,
@@ -42173,7 +42173,7 @@ export const stateLegResults: Record<
         "votes": 17931
        },
        {
-        "name": "Ryan Vangundy",
+        "name": "Ryan van Gundy",
         "party": "O",
         "votes": 2590
        }
@@ -42186,7 +42186,7 @@ export const stateLegResults: Record<
       "totalVotes": 39481,
       "candidates": [
        {
-        "name": "Dafna Michaelsonjenet",
+        "name": "Dafna Michaelson Jenet",
         "party": "D",
         "votes": 22445,
         "incumbent": true,
@@ -42440,7 +42440,7 @@ export const stateLegResults: Record<
       "totalVotes": 50617,
       "candidates": [
        {
-        "name": "Kevin Vanwinkle",
+        "name": "Kevin van Winkle",
         "party": "R",
         "votes": 26758,
         "incumbent": true,
@@ -42540,7 +42540,7 @@ export const stateLegResults: Record<
       "totalVotes": 56472,
       "candidates": [
        {
-        "name": "Tonya Vanbeber",
+        "name": "Tonya van Beber",
         "party": "R",
         "votes": 37670,
         "winner": true
@@ -42565,7 +42565,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Yara Hanlinzokaie",
+        "name": "Yara Hanlin Zokaie",
         "party": "D",
         "votes": 28678
        }
@@ -42661,7 +42661,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Alicemarie Slavenemond",
+        "name": "Alicemarie Slaven-Emond",
         "party": "D",
         "votes": 11715
        }
@@ -42753,7 +42753,7 @@ export const stateLegResults: Record<
       "totalVotes": 53312,
       "candidates": [
        {
-        "name": "Barbara McLachlan",
+        "name": "Barbara Hall McLachlan",
         "party": "D",
         "votes": 29524,
         "incumbent": true,
@@ -42993,7 +42993,7 @@ export const stateLegResults: Record<
       "totalVotes": 96074,
       "candidates": [
        {
-        "name": "Sonya Jaquez Jaquezlewis",
+        "name": "Sonya Jaquez Lewis",
         "party": "D",
         "votes": 65226,
         "winner": true
@@ -43313,7 +43313,7 @@ export const stateLegResults: Record<
       "totalVotes": 32803,
       "candidates": [
        {
-        "name": "Serena Gonzalesgutierrez",
+        "name": "Serena Gonzales-Gutierrez",
         "party": "D",
         "votes": 27116,
         "incumbent": true,
@@ -43603,7 +43603,7 @@ export const stateLegResults: Record<
       "totalVotes": 42367,
       "candidates": [
        {
-        "name": "Jennifer Leaparenti",
+        "name": "Jennifer Lea Parenti",
         "party": "D",
         "votes": 21917,
         "winner": true
@@ -43854,7 +43854,7 @@ export const stateLegResults: Record<
       "totalVotes": 22534,
       "candidates": [
        {
-        "name": "Dafna Michaelsonjenet",
+        "name": "Dafna Michaelson Jenet",
         "party": "D",
         "votes": 12637,
         "incumbent": true,
@@ -44285,7 +44285,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Alicemarie Slavenemond",
+        "name": "Alicemarie Slaven-Emond",
         "party": "D",
         "votes": 11013
        }
@@ -44377,7 +44377,7 @@ export const stateLegResults: Record<
       "totalVotes": 46575,
       "candidates": [
        {
-        "name": "Barbara McLachlan",
+        "name": "Barbara Hall McLachlan",
         "party": "D",
         "votes": 26436,
         "incumbent": true,
@@ -44768,7 +44768,7 @@ export const stateLegResults: Record<
       "totalVotes": 86873,
       "candidates": [
        {
-        "name": "Kevin Vanwinkle",
+        "name": "Kevin van Winkle",
         "party": "R",
         "votes": 46751,
         "winner": true
@@ -44829,7 +44829,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Travis Starnelson",
+        "name": "Travis Star Nelson",
         "party": "D",
         "votes": 20230
        }
@@ -46569,7 +46569,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Raghib Alliebrennan",
+        "name": "Raghib Allie-Brennan",
         "party": "D",
         "votes": 5730
        }
@@ -47318,7 +47318,7 @@ export const stateLegResults: Record<
       "totalVotes": 10282,
       "candidates": [
        {
-        "name": "Joe Delacruz",
+        "name": "Joe de la Cruz",
         "party": "D",
         "votes": 5636,
         "winner": true
@@ -47955,7 +47955,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Wendy Tysonwood",
+        "name": "Wendy Tyson-Wood",
         "party": "D",
         "votes": 3365
        }
@@ -48007,7 +48007,7 @@ export const stateLegResults: Record<
       "totalVotes": 10951,
       "candidates": [
        {
-        "name": "Cara Christine Pavalock",
+        "name": "Cara Christine Pavalock-Damato",
         "party": "R",
         "votes": 5782,
         "incumbent": true,
@@ -48053,7 +48053,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Pete Delmastro",
+        "name": "Pete del Mastro",
         "party": "R",
         "votes": 4052
        }
@@ -48310,7 +48310,7 @@ export const stateLegResults: Record<
       "totalVotes": 6510,
       "candidates": [
        {
-        "name": "Toni E. Walker",
+        "name": "Toni Edmonds Walker",
         "party": "D",
         "votes": 6159,
         "incumbent": true,
@@ -48524,7 +48524,7 @@ export const stateLegResults: Record<
       "totalVotes": 12040,
       "candidates": [
        {
-        "name": "Nicole Klaridesditria",
+        "name": "Nicole Klarides-Ditria",
         "party": "R",
         "votes": 6896,
         "winner": true
@@ -49067,7 +49067,7 @@ export const stateLegResults: Record<
       "totalVotes": 10830,
       "candidates": [
        {
-        "name": "Cristin McCarthyvahey",
+        "name": "Cristin McCarthy Vahey",
         "party": "D",
         "votes": 6402,
         "incumbent": true,
@@ -49285,7 +49285,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Steven Bartolokolenberg",
+        "name": "Steven Bartolo Kolenberg",
         "party": "R",
         "votes": 3659
        }
@@ -49478,7 +49478,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Carolyn Streetermirek",
+        "name": "Carolyn Streeter Mirek",
         "party": "R",
         "votes": 18650
        }
@@ -49531,7 +49531,7 @@ export const stateLegResults: Record<
       "totalVotes": 32705,
       "candidates": [
        {
-        "name": "Terry Bielinskigerratana",
+        "name": "Terry Bielinski Gerratana",
         "party": "D",
         "votes": 19683,
         "incumbent": true,
@@ -49543,7 +49543,7 @@ export const stateLegResults: Record<
         "votes": 10788
        },
        {
-        "name": "Sharon R. Beloinsaavedra",
+        "name": "Sharon R. Beloin-Saavedra",
         "party": "O",
         "votes": 2234
        }
@@ -49794,7 +49794,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Barbara Richardsoncrouch",
+        "name": "Barbara Richardson Crouch",
         "party": "R",
         "votes": 17452
        }
@@ -50121,7 +50121,7 @@ export const stateLegResults: Record<
       "totalVotes": 48192,
       "candidates": [
        {
-        "name": "L. Scottfrantz",
+        "name": "L. Scott Frantz",
         "party": "R",
         "votes": 28901,
         "incumbent": true,
@@ -50164,7 +50164,7 @@ export const stateLegResults: Record<
       "totalVotes": 10372,
       "candidates": [
        {
-        "name": "Ragbib Alliebrennan",
+        "name": "Ragbib Allie-Brennan",
         "party": "D",
         "votes": 5509,
         "winner": true
@@ -50260,7 +50260,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Joshua Malikhall",
+        "name": "Joshua Malik Hall",
         "party": "D",
         "votes": 4241,
         "winner": true
@@ -50446,7 +50446,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Eleni Kavrosdegraw",
+        "name": "Eleni Kavros Degraw",
         "party": "D",
         "votes": 6159
        }
@@ -50577,7 +50577,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sharon Beloinsaavedra",
+        "name": "Sharon Beloin-Saavedra",
         "party": "R",
         "votes": 2699
        }
@@ -50850,7 +50850,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Baird Welchcollins",
+        "name": "Baird Welch-Collins",
         "party": "D",
         "votes": 5350
        }
@@ -50899,7 +50899,7 @@ export const stateLegResults: Record<
       "totalVotes": 8934,
       "candidates": [
        {
-        "name": "Joe Delacruz",
+        "name": "Joe de la Cruz",
         "party": "D",
         "votes": 5828,
         "incumbent": true,
@@ -51132,7 +51132,7 @@ export const stateLegResults: Record<
       "totalVotes": 11245,
       "candidates": [
        {
-        "name": "Pat Wilsonpheanious",
+        "name": "Pat Wilson Pheanious",
         "party": "D",
         "votes": 5876,
         "winner": true
@@ -51549,7 +51549,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Wendy M. Tysonwood",
+        "name": "Wendy M. Tyson-Wood",
         "party": "D",
         "votes": 2877
        }
@@ -51603,7 +51603,7 @@ export const stateLegResults: Record<
       "totalVotes": 9297,
       "candidates": [
        {
-        "name": "Cara C. Pavalockdamato",
+        "name": "Cara C. Pavalock-Damato",
         "party": "R",
         "votes": 4901,
         "incumbent": true,
@@ -51805,7 +51805,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Theresa Ranciatoviele",
+        "name": "Theresa Ranciato-Viele",
         "party": "D",
         "votes": 4308
        }
@@ -51919,7 +51919,7 @@ export const stateLegResults: Record<
       "totalVotes": 5092,
       "candidates": [
        {
-        "name": "Toni Walker",
+        "name": "Toni Edmonds Walker",
         "party": "D",
         "votes": 4782,
         "incumbent": true,
@@ -52006,7 +52006,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joshua W. Vanhoesen",
+        "name": "Joshua W. van Hoesen",
         "party": "R",
         "votes": 1207
        }
@@ -52152,7 +52152,7 @@ export const stateLegResults: Record<
       "totalVotes": 10381,
       "candidates": [
        {
-        "name": "Nicole Klaridesditria",
+        "name": "Nicole Klarides-Ditria",
         "party": "R",
         "votes": 7035,
         "incumbent": true,
@@ -52179,7 +52179,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Rebekah Harrimanstites",
+        "name": "Rebekah Harriman-Stites",
         "party": "D",
         "votes": 5299
        }
@@ -52275,7 +52275,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Aimee Bergergirvalo",
+        "name": "Aimee Berger-Girvalo",
         "party": "D",
         "votes": 5888
        }
@@ -52390,7 +52390,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cindy Wolfeboynton",
+        "name": "Cindy Wolfe Boynton",
         "party": "D",
         "votes": 4867
        }
@@ -52508,7 +52508,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sujata Gadkarwilcox",
+        "name": "Sujata Gadkar-Wilcox",
         "party": "D",
         "votes": 5060
        }
@@ -52688,7 +52688,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Caitlin Clarksonpereira",
+        "name": "Caitlin Clarkson Pereira",
         "party": "D",
         "votes": 5432
        }
@@ -52701,7 +52701,7 @@ export const stateLegResults: Record<
       "totalVotes": 9525,
       "candidates": [
        {
-        "name": "Cristin McCarthyvahey",
+        "name": "Cristin McCarthy Vahey",
         "party": "D",
         "votes": 6081,
         "incumbent": true,
@@ -53171,7 +53171,7 @@ export const stateLegResults: Record<
       "totalVotes": 27436,
       "candidates": [
        {
-        "name": "Terry Bielinskigerratana",
+        "name": "Terry Bielinski Gerratana",
         "party": "D",
         "votes": 17173,
         "incumbent": true,
@@ -53309,7 +53309,7 @@ export const stateLegResults: Record<
       "totalVotes": 37210,
       "candidates": [
        {
-        "name": "Mary Daughertyabrams",
+        "name": "Mary Daugherty Abrams",
         "party": "D",
         "votes": 19502,
         "winner": true
@@ -53375,7 +53375,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Vickie Orsininardello",
+        "name": "Vickie Orsini Nardello",
         "party": "D",
         "votes": 18332
        }
@@ -53475,7 +53475,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Monica Tujakbrill",
+        "name": "Monica Tujak Brill",
         "party": "D",
         "votes": 18805
        }
@@ -53614,7 +53614,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michelle Lapinemccabe",
+        "name": "Michelle Lapine McCabe",
         "party": "D",
         "votes": 23336
        }
@@ -53770,7 +53770,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "L. Scottfrantz",
+        "name": "L. Scott Frantz",
         "party": "R",
         "votes": 21645,
         "incumbent": true
@@ -53817,7 +53817,7 @@ export const stateLegResults: Record<
       "totalVotes": 13351,
       "candidates": [
        {
-        "name": "Raghib Alliebrennan",
+        "name": "Raghib Allie-Brennan",
         "party": "D",
         "votes": 7136,
         "incumbent": true,
@@ -53910,7 +53910,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Joshua M. Hall",
+        "name": "Joshua Malik Hall",
         "party": "D",
         "votes": 5663,
         "incumbent": true,
@@ -54098,7 +54098,7 @@ export const stateLegResults: Record<
       "totalVotes": 15112,
       "candidates": [
        {
-        "name": "Eleni Kavrosdegraw",
+        "name": "Eleni Kavros Degraw",
         "party": "D",
         "votes": 7832,
         "winner": true
@@ -54303,7 +54303,7 @@ export const stateLegResults: Record<
       "totalVotes": 14209,
       "candidates": [
        {
-        "name": "Amy Morrinbello",
+        "name": "Amy Morrin Bello",
         "party": "D",
         "votes": 8063,
         "winner": true
@@ -54348,7 +54348,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joann Angelicostetson",
+        "name": "Joann Angelico-Stetson",
         "party": "D",
         "votes": 6581
        }
@@ -54502,7 +54502,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Baird Welchcollins",
+        "name": "Baird Welch-Collins",
         "party": "D",
         "votes": 6924
        }
@@ -54555,7 +54555,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Joe Delacruz",
+        "name": "Joe de la Cruz",
         "party": "D",
         "votes": 8744,
         "incumbent": true,
@@ -54787,7 +54787,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Pat Wilsonpheanious",
+        "name": "Pat Wilson Pheanious",
         "party": "D",
         "votes": 6695,
         "incumbent": true
@@ -55242,14 +55242,14 @@ export const stateLegResults: Record<
       "totalVotes": 12297,
       "candidates": [
        {
-        "name": "Cara Pavalockdamato",
+        "name": "Cara Pavalock-Damato",
         "party": "R",
         "votes": 6509,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Andrew M. Rasmussentuller",
+        "name": "Andrew M. Rasmussen-Tuller",
         "party": "D",
         "votes": 5788
        }
@@ -55560,7 +55560,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Toni E. Walker",
+        "name": "Toni Edmonds Walker",
         "party": "D",
         "votes": 5816,
         "incumbent": true,
@@ -55782,7 +55782,7 @@ export const stateLegResults: Record<
       "totalVotes": 13402,
       "candidates": [
        {
-        "name": "Nicole Klaridesditria",
+        "name": "Nicole Klarides-Ditria",
         "party": "R",
         "votes": 8997,
         "incumbent": true,
@@ -55809,7 +55809,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Rebekah Harrimanstites",
+        "name": "Rebekah Harriman-Stites",
         "party": "D",
         "votes": 6944
        }
@@ -55901,7 +55901,7 @@ export const stateLegResults: Record<
       "totalVotes": 15349,
       "candidates": [
        {
-        "name": "Aimee Bergergirvalo",
+        "name": "Aimee Berger-Girvalo",
         "party": "D",
         "votes": 8044,
         "winner": true
@@ -56133,7 +56133,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sujata Gadkarwilcox",
+        "name": "Sujata Gadkar-Wilcox",
         "party": "D",
         "votes": 6888
        }
@@ -56316,14 +56316,14 @@ export const stateLegResults: Record<
       "totalVotes": 12101,
       "candidates": [
        {
-        "name": "Cristin McCarthyvahey",
+        "name": "Cristin McCarthy Vahey",
         "party": "D",
         "votes": 7868,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Joanne Romanocsonka",
+        "name": "Joanne Romano",
         "party": "R",
         "votes": 4233
        }
@@ -56919,7 +56919,7 @@ export const stateLegResults: Record<
       "totalVotes": 47264,
       "candidates": [
        {
-        "name": "Mary Daughertyabrams",
+        "name": "Mary Daugherty Abrams",
         "party": "D",
         "votes": 24933,
         "incumbent": true,
@@ -57218,7 +57218,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michelle McCabe",
+        "name": "Michelle Lapine McCabe",
         "party": "D",
         "votes": 29759
        }
@@ -57412,7 +57412,7 @@ export const stateLegResults: Record<
       "totalVotes": 9256,
       "candidates": [
        {
-        "name": "Raghib Alliebrennan",
+        "name": "Raghib Allie-Brennan",
         "party": "D",
         "votes": 5008,
         "incumbent": true,
@@ -57470,7 +57470,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Charles Windsorjackson III",
+        "name": "Charles Jackson III",
         "party": "R",
         "votes": 1469
        }
@@ -57500,7 +57500,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Joshua Malikhall",
+        "name": "Joshua Malik Hall",
         "party": "D",
         "votes": 2903,
         "incumbent": true,
@@ -57678,7 +57678,7 @@ export const stateLegResults: Record<
       "totalVotes": 12316,
       "candidates": [
        {
-        "name": "Eleni Kavrosdegraw",
+        "name": "Eleni Kavros Degraw",
         "party": "D",
         "votes": 7010,
         "incumbent": true,
@@ -57770,7 +57770,7 @@ export const stateLegResults: Record<
       "totalVotes": 10039,
       "candidates": [
        {
-        "name": "Francis Rexfordcooley",
+        "name": "Francis Rexford Cooley",
         "party": "R",
         "votes": 5046,
         "winner": true
@@ -57889,7 +57889,7 @@ export const stateLegResults: Record<
       "totalVotes": 10703,
       "candidates": [
        {
-        "name": "Amy Morrinbello",
+        "name": "Amy Morrin Bello",
         "party": "D",
         "votes": 5844,
         "incumbent": true,
@@ -58632,7 +58632,7 @@ export const stateLegResults: Record<
       "totalVotes": 12597,
       "candidates": [
        {
-        "name": "Karen Reddingtonhughes",
+        "name": "Karen Reddington-Hughes",
         "party": "R",
         "votes": 6806,
         "winner": true
@@ -58764,7 +58764,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Abigail Diazpizarro",
+        "name": "Abigail Diaz Pizarro",
         "party": "R",
         "votes": 1886
        }
@@ -58829,14 +58829,14 @@ export const stateLegResults: Record<
       "totalVotes": 9235,
       "candidates": [
        {
-        "name": "Cara C. Pavalockdamato",
+        "name": "Cara C. Pavalock-Damato",
         "party": "R",
         "votes": 4916,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Andrew Rasmussentuller",
+        "name": "Andrew Rasmussen-Tuller",
         "party": "D",
         "votes": 4319
        }
@@ -58870,7 +58870,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jennifer Vangorder",
+        "name": "Jennifer van Gorder",
         "party": "R",
         "votes": 3178
        }
@@ -59113,7 +59113,7 @@ export const stateLegResults: Record<
       "totalVotes": 3281,
       "candidates": [
        {
-        "name": "Toni E. Walker",
+        "name": "Toni Edmonds Walker",
         "party": "D",
         "votes": 3001,
         "incumbent": true,
@@ -59336,7 +59336,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Nicole Klaridesditria",
+        "name": "Nicole Klarides-Ditria",
         "party": "R",
         "votes": 7000,
         "incumbent": true,
@@ -59445,7 +59445,7 @@ export const stateLegResults: Record<
       "totalVotes": 11193,
       "candidates": [
        {
-        "name": "Aimee Bergergirvalo",
+        "name": "Aimee Berger-Girvalo",
         "party": "D",
         "votes": 6179,
         "incumbent": true,
@@ -59679,7 +59679,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sujata Gadkarwilcox",
+        "name": "Sujata Gadkar-Wilcox",
         "party": "D",
         "votes": 4882
        }
@@ -59872,7 +59872,7 @@ export const stateLegResults: Record<
       "totalVotes": 9049,
       "candidates": [
        {
-        "name": "Cristin McCarthyvahey",
+        "name": "Cristin McCarthy Vahey",
         "party": "D",
         "votes": 5683,
         "incumbent": true,
@@ -60815,7 +60815,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Eva Bermudezzimmerman",
+        "name": "Eva Zimmerman",
         "party": "D",
         "votes": 20945
        }
@@ -65234,7 +65234,7 @@ export const stateLegResults: Record<
       "totalVotes": 10758,
       "candidates": [
        {
-        "name": "Ruth Briggsking",
+        "name": "Ruth Briggs King",
         "party": "R",
         "votes": 6720,
         "incumbent": true,
@@ -65292,7 +65292,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Timothy Daledukes",
+        "name": "Timothy Dale Dukes",
         "party": "R",
         "votes": 7826,
         "incumbent": true,
@@ -65570,7 +65570,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sherry Dorseywalker",
+        "name": "Sherry Dorsey Walker",
         "party": "D",
         "votes": 4434,
         "winner": true
@@ -65831,7 +65831,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Melissa Minorbrown",
+        "name": "Melissa Minor-Brown",
         "party": "D",
         "votes": 6107,
         "winner": true
@@ -66102,7 +66102,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "David Levianderson",
+        "name": "David Levi Anderson",
         "party": "R",
         "votes": 2464
        }
@@ -66210,7 +66210,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ruth Briggsking",
+        "name": "Ruth Briggs King",
         "party": "R",
         "votes": 6853,
         "incumbent": true,
@@ -66262,7 +66262,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Timothy D. Dukes",
+        "name": "Timothy Dale Dukes",
         "party": "R",
         "votes": 5848,
         "incumbent": true,
@@ -66529,7 +66529,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sherry Dorseywalker",
+        "name": "Sherry Dorsey Walker",
         "party": "D",
         "votes": 5772,
         "incumbent": true,
@@ -66775,7 +66775,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Melissa Minorbrown",
+        "name": "Melissa Minor-Brown",
         "party": "D",
         "votes": 8001,
         "incumbent": true,
@@ -66930,7 +66930,7 @@ export const stateLegResults: Record<
       "totalVotes": 9687,
       "candidates": [
        {
-        "name": "Madinah Wilsonanton",
+        "name": "Madinah Wilson-Anton",
         "party": "D",
         "votes": 6933,
         "winner": true
@@ -67145,7 +67145,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ruth Briggsking",
+        "name": "Ruth Briggs King",
         "party": "R",
         "votes": 9760,
         "incumbent": true,
@@ -67193,7 +67193,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Timothy D. Dukes",
+        "name": "Timothy Dale Dukes",
         "party": "R",
         "votes": 8534,
         "incumbent": true,
@@ -67444,7 +67444,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mark Prescottgardner",
+        "name": "Mark Prescott Gardner",
         "party": "R",
         "votes": 746
        }
@@ -67474,7 +67474,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sherry Dorseywalker",
+        "name": "Sherry Dorsey Walker",
         "party": "D",
         "votes": 3226,
         "incumbent": true,
@@ -67740,7 +67740,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Melissa Minorbrown",
+        "name": "Melissa Minor-Brown",
         "party": "D",
         "votes": 4363,
         "incumbent": true,
@@ -67790,7 +67790,7 @@ export const stateLegResults: Record<
       "totalVotes": 12899,
       "candidates": [
        {
-        "name": "Stell Parkerselby",
+        "name": "Stell Parker Selby",
         "party": "D",
         "votes": 6635,
         "winner": true
@@ -67904,7 +67904,7 @@ export const stateLegResults: Record<
       "totalVotes": 5122,
       "candidates": [
        {
-        "name": "Madinah Wilsonanton",
+        "name": "Madinah Wilson-Anton",
         "party": "D",
         "votes": 3610,
         "incumbent": true,
@@ -68108,7 +68108,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ruth Briggsking",
+        "name": "Ruth Briggs King",
         "party": "R",
         "votes": 5504,
         "incumbent": true,
@@ -68160,7 +68160,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Timothy D. Dukes",
+        "name": "Timothy Dale Dukes",
         "party": "R",
         "votes": 5506,
         "incumbent": true,
@@ -68269,7 +68269,7 @@ export const stateLegResults: Record<
       "totalVotes": 15799,
       "candidates": [
        {
-        "name": "Kyle Evansgay",
+        "name": "Kyle Gay",
         "party": "D",
         "votes": 10471,
         "incumbent": true,
@@ -70245,7 +70245,7 @@ export const stateLegResults: Record<
       "totalVotes": 77223,
       "candidates": [
        {
-        "name": "Mike Larosa",
+        "name": "Mike la Rosa",
         "party": "R",
         "votes": 42696,
         "incumbent": true,
@@ -70541,7 +70541,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jose N. Vazquezfigueroa",
+        "name": "Jose N. Vazquez Figueroa",
         "party": "D",
         "votes": 26050
        }
@@ -71164,7 +71164,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Patricia Hawkinswilliams",
+        "name": "Patricia Hawkins-Williams",
         "party": "D",
         "votes": null,
         "winner": true
@@ -72201,7 +72201,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kevin Rader",
+        "name": "Kevin Greenstein Rader",
         "party": "D",
         "votes": null,
         "winner": true
@@ -72345,7 +72345,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Miguel Diazdelaportilla",
+        "name": "Miguel Diaz de la Portilla",
         "party": "R",
         "votes": 81938,
         "incumbent": true
@@ -72391,7 +72391,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Debbie Mucarselpowell",
+        "name": "Debbie Mucarsel-Powell",
         "party": "D",
         "votes": 82117
        }
@@ -72643,7 +72643,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Timothy Jon Norrisyost",
+        "name": "Timothy Jon Norris Yost",
         "party": "D",
         "votes": 26730
        }
@@ -72811,7 +72811,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jason Leehaeseler",
+        "name": "Jason Lee Haeseler",
         "party": "D",
         "votes": 37764
        }
@@ -72983,7 +72983,7 @@ export const stateLegResults: Record<
       "totalVotes": 67359,
       "candidates": [
        {
-        "name": "Joy Goffmarcil",
+        "name": "Joy Goff-Marcil",
         "party": "D",
         "votes": 35655,
         "winner": true
@@ -73217,7 +73217,7 @@ export const stateLegResults: Record<
       "totalVotes": 68483,
       "candidates": [
        {
-        "name": "Mike Larosa",
+        "name": "Mike la Rosa",
         "party": "R",
         "votes": 37277,
         "incumbent": true,
@@ -73412,7 +73412,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Seeta Durjanbegui",
+        "name": "Seeta Durjan Begui",
         "party": "D",
         "votes": 32975
        }
@@ -73980,7 +73980,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Edward Francisoconnor",
+        "name": "Edward Francis O'Connor",
         "party": "D",
         "votes": 29735
        }
@@ -74012,7 +74012,7 @@ export const stateLegResults: Record<
       "totalVotes": 65724,
       "candidates": [
        {
-        "name": "Delores Hoganjohnson",
+        "name": "Delores Hogan Johnson",
         "party": "D",
         "votes": 33802,
         "winner": true
@@ -74079,7 +74079,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Samson Lebeaukpadenou",
+        "name": "Samson Lebeau Kpadenou",
         "party": "O",
         "votes": 4622
        }
@@ -74163,7 +74163,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Patricia Hawkinswilliams",
+        "name": "Patricia Hawkins-Williams",
         "party": "D",
         "votes": null,
         "incumbent": true,
@@ -74599,7 +74599,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "James Alexanderharden",
+        "name": "James Alexander Harden",
         "party": "D",
         "votes": 23692
        }
@@ -74649,7 +74649,7 @@ export const stateLegResults: Record<
       "totalVotes": 50563,
       "candidates": [
        {
-        "name": "Juan Fernandezbarquin",
+        "name": "Juan Fernandez-Barquin",
         "party": "R",
         "votes": 28077,
         "winner": true
@@ -75481,7 +75481,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Yvonne Hayeshinson",
+        "name": "Yvonne Hayes Hinson",
         "party": "D",
         "votes": null,
         "winner": true
@@ -75541,7 +75541,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cynthia Delarosa",
+        "name": "Cynthia de la Rosa",
         "party": "D",
         "votes": 28882
        }
@@ -75673,7 +75673,7 @@ export const stateLegResults: Record<
       "totalVotes": 88165,
       "candidates": [
        {
-        "name": "Joy Goffmarcil",
+        "name": "Joy Goff-Marcil",
         "party": "D",
         "votes": 46713,
         "incumbent": true,
@@ -75759,7 +75759,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Dushyant Jethagirgosai",
+        "name": "Dushyant Jethagir Gosai",
         "party": "D",
         "votes": 25069
        }
@@ -76516,7 +76516,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "David Reevesfairey",
+        "name": "David Reeves Fairey",
         "party": "D",
         "votes": 49822
        }
@@ -76646,7 +76646,7 @@ export const stateLegResults: Record<
       "totalVotes": 85606,
       "candidates": [
        {
-        "name": "Lauren Uhlichmelo",
+        "name": "Lauren Uhlich Melo",
         "party": "R",
         "votes": 54859,
         "winner": true
@@ -76690,7 +76690,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elisa Edwardsackerly",
+        "name": "Elisa Edwards Ackerly",
         "party": "D",
         "votes": 35136
        }
@@ -76729,7 +76729,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Delores Hoganjohnson",
+        "name": "Delores Hogan Johnson",
         "party": "D",
         "votes": 41179,
         "incumbent": true
@@ -76770,7 +76770,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Susan M. Kufdakisrivera",
+        "name": "Susan M. Kufdakis Rivera",
         "party": "R",
         "votes": 37911
        }
@@ -76883,7 +76883,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Patricia Hawkinswilliams",
+        "name": "Patricia Hawkins-Williams",
         "party": "D",
         "votes": 49496,
         "incumbent": true,
@@ -77229,7 +77229,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ross Eldehancock",
+        "name": "Ross Hancock",
         "party": "D",
         "votes": 17567
        }
@@ -77279,7 +77279,7 @@ export const stateLegResults: Record<
       "totalVotes": 79877,
       "candidates": [
        {
-        "name": "Demi Busattacabrera",
+        "name": "Demi Busatta Cabrera",
         "party": "R",
         "votes": 43443,
         "winner": true
@@ -77305,7 +77305,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Franccesca Cestibrowne",
+        "name": "Franccesca Cesti-Browne",
         "party": "D",
         "votes": 35412
        }
@@ -77374,7 +77374,7 @@ export const stateLegResults: Record<
       "totalVotes": 77789,
       "candidates": [
        {
-        "name": "Juan Fernandezbarquin",
+        "name": "Juan Fernandez-Barquin",
         "party": "R",
         "votes": 50810,
         "incumbent": true,
@@ -77394,7 +77394,7 @@ export const stateLegResults: Record<
       "totalVotes": 83124,
       "candidates": [
        {
-        "name": "James Vernonmooney",
+        "name": "James Vernon Mooney",
         "party": "R",
         "votes": 45698,
         "winner": true
@@ -77445,7 +77445,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Marva Harrispreston",
+        "name": "Marva Harris Preston",
         "party": "R",
         "votes": 120176
        }
@@ -77669,7 +77669,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Corinna Balderramosrobinson",
+        "name": "Corinna Balderramos Robinson",
         "party": "D",
         "votes": 118211
        }
@@ -78169,7 +78169,7 @@ export const stateLegResults: Record<
       "totalVotes": 45867,
       "candidates": [
        {
-        "name": "Yvonne Hayeshinson",
+        "name": "Yvonne Hayes Hinson",
         "party": "D",
         "votes": 27615,
         "incumbent": true,
@@ -78526,7 +78526,7 @@ export const stateLegResults: Record<
       "totalVotes": 42960,
       "candidates": [
        {
-        "name": "Lavon Bracydavis",
+        "name": "Lavon Bracy Davis",
         "party": "D",
         "votes": 27920,
         "winner": true
@@ -78646,7 +78646,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Christian Delatorre",
+        "name": "Christian de la Torre",
         "party": "R",
         "votes": 13393
        }
@@ -78919,7 +78919,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Janet Varnellwarwick",
+        "name": "Janet Varnell Warwick",
         "party": "D",
         "votes": 36222
        }
@@ -78976,7 +78976,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Maura Cruzlanz",
+        "name": "Maura Cruz Lanz",
         "party": "R",
         "votes": 19930
        }
@@ -78989,7 +78989,7 @@ export const stateLegResults: Record<
       "totalVotes": 72811,
       "candidates": [
        {
-        "name": "Karen Gonzalezpittman",
+        "name": "Karen Gonzalez Pittman",
         "party": "R",
         "votes": 39045,
         "winner": true
@@ -79132,7 +79132,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Roberts Guydameus",
+        "name": "Roberts Guy Dameus",
         "party": "D",
         "votes": 27881
        }
@@ -79235,7 +79235,7 @@ export const stateLegResults: Record<
       "totalVotes": 62817,
       "candidates": [
        {
-        "name": "Jenna Personsmulicka",
+        "name": "Jenna Persons",
         "party": "R",
         "votes": 39416,
         "incumbent": true,
@@ -79343,7 +79343,7 @@ export const stateLegResults: Record<
       "totalVotes": 66608,
       "candidates": [
        {
-        "name": "Dana Leetrabulsy",
+        "name": "Dana Trabulsy",
         "party": "R",
         "votes": 40829,
         "incumbent": true,
@@ -79482,7 +79482,7 @@ export const stateLegResults: Record<
       "totalVotes": 75345,
       "candidates": [
        {
-        "name": "Peggy Gossettseidman",
+        "name": "Peggy Gossett-Seidman",
         "party": "R",
         "votes": 38984,
         "winner": true
@@ -79615,7 +79615,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Patricia Hawkinswilliams",
+        "name": "Patricia Hawkins-Williams",
         "party": "D",
         "votes": null,
         "incumbent": true,
@@ -79653,7 +79653,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Linda Thompsongonzalez",
+        "name": "Linda Gonzalez",
         "party": "D",
         "votes": 32003
        }
@@ -79898,7 +79898,7 @@ export const stateLegResults: Record<
       "totalVotes": 59006,
       "candidates": [
        {
-        "name": "Demi Busattacabrera",
+        "name": "Demi Busatta Cabrera",
         "party": "R",
         "votes": 33282,
         "incumbent": true,
@@ -79924,7 +79924,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Christie Cantindavis",
+        "name": "Christie Cantin Davis",
         "party": "D",
         "votes": 28696
        }
@@ -79971,7 +79971,7 @@ export const stateLegResults: Record<
       "totalVotes": 57531,
       "candidates": [
        {
-        "name": "Juan Fernandezbarquin",
+        "name": "Juan Fernandez-Barquin",
         "party": "R",
         "votes": 39344,
         "incumbent": true,
@@ -80010,7 +80010,7 @@ export const stateLegResults: Record<
       "totalVotes": 52450,
       "candidates": [
        {
-        "name": "James Mooney V",
+        "name": "James Vernon Mooney V",
         "party": "R",
         "votes": 31788,
         "incumbent": true,
@@ -80214,7 +80214,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joy Goffmarcil",
+        "name": "Joy Goff-Marcil",
         "party": "D",
         "votes": 95391
        }
@@ -80322,7 +80322,7 @@ export const stateLegResults: Record<
       "totalVotes": 146766,
       "candidates": [
        {
-        "name": "Darryl Ervinrouson",
+        "name": "Darryl Rouson",
         "party": "D",
         "votes": 93839,
         "incumbent": true,
@@ -80585,7 +80585,7 @@ export const stateLegResults: Record<
       "totalVotes": 166186,
       "candidates": [
        {
-        "name": "Tina Scottpolsky",
+        "name": "Tina Polsky",
         "party": "D",
         "votes": 92119,
         "incumbent": true,
@@ -83662,7 +83662,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sheri Smallwoodgilligan",
+        "name": "Sheri Smallwood Gilligan",
         "party": "R",
         "votes": 25996,
         "winner": true
@@ -84333,7 +84333,7 @@ export const stateLegResults: Record<
       "totalVotes": 23299,
       "candidates": [
        {
-        "name": "Sharon Beasleyteague",
+        "name": "Sharon Beasley-Teague",
         "party": "D",
         "votes": 19109,
         "incumbent": true,
@@ -84523,7 +84523,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sandra Scott",
+        "name": "Sandra Givens Scott",
         "party": "D",
         "votes": 19734,
         "incumbent": true,
@@ -84901,7 +84901,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Brenda Lopez",
+        "name": "Brenda Lopez Romero",
         "party": "D",
         "votes": 8068,
         "winner": true
@@ -85336,7 +85336,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sheila Clarknelson",
+        "name": "Sheila Clark Nelson",
         "party": "D",
         "votes": 15120,
         "winner": true
@@ -86447,7 +86447,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Freddie Powellsims",
+        "name": "Freddie Powell Sims",
         "party": "D",
         "votes": 48863,
         "incumbent": true,
@@ -86921,7 +86921,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Tamara Johnsonshealey",
+        "name": "Tamara Johnson-Shealey",
         "party": "D",
         "votes": 32785
        }
@@ -86976,7 +86976,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Janice Vanness",
+        "name": "Janice van Ness",
         "party": "R",
         "votes": 21175
        }
@@ -87611,7 +87611,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sheri Smallwoodgilligan",
+        "name": "Sheri Smallwood Gilligan",
         "party": "R",
         "votes": 23646,
         "incumbent": true,
@@ -87633,7 +87633,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Anita Holcombtucker",
+        "name": "Anita Holcomb Tucker",
         "party": "D",
         "votes": 10074
        }
@@ -88336,7 +88336,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sharon Beasleyteague",
+        "name": "Sharon Beasley-Teague",
         "party": "D",
         "votes": 21189,
         "incumbent": true,
@@ -88516,7 +88516,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sandra Givensscott",
+        "name": "Sandra Givens Scott",
         "party": "D",
         "votes": 20350,
         "incumbent": true,
@@ -88903,7 +88903,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Brenda Lopezromero",
+        "name": "Brenda Lopez Romero",
         "party": "D",
         "votes": 7362,
         "incumbent": true,
@@ -89090,7 +89090,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Regina Lewisward",
+        "name": "Regina Lewis-Ward",
         "party": "D",
         "votes": 13027
        }
@@ -89361,7 +89361,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sheila Clarknelson",
+        "name": "Sheila Clark Nelson",
         "party": "D",
         "votes": 13564,
         "incumbent": true,
@@ -90514,7 +90514,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Freddie Powellsims",
+        "name": "Freddie Powell Sims",
         "party": "D",
         "votes": 44507,
         "incumbent": true,
@@ -91507,7 +91507,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jonathan Gilreathharvey",
+        "name": "Jonathan Gilreath-Harvey",
         "party": "D",
         "votes": 4114
        }
@@ -91720,7 +91720,7 @@ export const stateLegResults: Record<
       "totalVotes": 38048,
       "candidates": [
        {
-        "name": "Sheri Smallwoodgilligan",
+        "name": "Sheri Smallwood Gilligan",
         "party": "R",
         "votes": 27912,
         "incumbent": true,
@@ -92032,7 +92032,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Taryn Chilivisbowman",
+        "name": "Taryn Chilivis Bowman",
         "party": "R",
         "votes": 14773
        }
@@ -92128,7 +92128,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sara Tindallghazal",
+        "name": "Sara Tindall Ghazal",
         "party": "D",
         "votes": 16006
        }
@@ -92168,7 +92168,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Anthia Owenscarter",
+        "name": "Anthia Owens Carter",
         "party": "D",
         "votes": 13570
        }
@@ -92677,7 +92677,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sandra Givensscott",
+        "name": "Sandra Givens Scott",
         "party": "D",
         "votes": 24533,
         "incumbent": true,
@@ -93257,7 +93257,7 @@ export const stateLegResults: Record<
       "totalVotes": 32834,
       "candidates": [
        {
-        "name": "Regina Lewisward",
+        "name": "Regina Lewis-Ward",
         "party": "D",
         "votes": 17009,
         "winner": true
@@ -93869,7 +93869,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary Whipplelue",
+        "name": "Mary Whipple-Lue",
         "party": "D",
         "votes": 8306
        }
@@ -94177,7 +94177,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Carl Waynegilliard",
+        "name": "Carl Gilliard",
         "party": "D",
         "votes": 17344,
         "incumbent": true,
@@ -94694,7 +94694,7 @@ export const stateLegResults: Record<
       "totalVotes": 62942,
       "candidates": [
        {
-        "name": "Freddie Powellsims",
+        "name": "Freddie Powell Sims",
         "party": "D",
         "votes": 40396,
         "incumbent": true,
@@ -95208,7 +95208,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "William Parkfreeman",
+        "name": "William Park Freeman",
         "party": "R",
         "votes": 14828
        }
@@ -96215,7 +96215,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "James Allenrodi",
+        "name": "James Allen Rodi",
         "party": "R",
         "votes": 4630
        }
@@ -96682,7 +96682,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Marziyeh Marziamirizadeh",
+        "name": "Marziyeh Marzi Amirizadeh",
         "party": "R",
         "votes": 7747
        }
@@ -96842,7 +96842,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sandra Givensscott",
+        "name": "Sandra Givens Scott",
         "party": "D",
         "votes": 15564,
         "incumbent": true,
@@ -96931,7 +96931,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary Williamsbenefield",
+        "name": "Mary Williams Benefield",
         "party": "R",
         "votes": 6865
        }
@@ -97056,7 +97056,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "William Parkfreeman",
+        "name": "William Park Freeman",
         "party": "R",
         "votes": 3610
        }
@@ -97272,7 +97272,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Louisa Shelljackson",
+        "name": "Louisa Shell Jackson",
         "party": "D",
         "votes": 8152
        }
@@ -97548,7 +97548,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Regina Lewisward",
+        "name": "Regina Lewis-Ward",
         "party": "D",
         "votes": 17703,
         "incumbent": true,
@@ -97870,7 +97870,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Hoganne Harrisonwalton",
+        "name": "Hoganne Harrison-Walton",
         "party": "D",
         "votes": 8794
        }
@@ -98387,7 +98387,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Anne Allenwestbrook",
+        "name": "Anne Allen Westbrook",
         "party": "D",
         "votes": 16157,
         "winner": true
@@ -98877,7 +98877,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Freddie Powellsims",
+        "name": "Freddie Powell Sims",
         "party": "D",
         "votes": 48102,
         "incumbent": true,
@@ -103924,7 +103924,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Grace Dei Larson",
+        "name": "Grace Dei Manipol-Larson",
         "party": "O",
         "votes": null
        }
@@ -103964,7 +103964,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Joy A. Sanbuenaventura",
+        "name": "Joy A. San Buena Ventura",
         "party": "D",
         "votes": 5846,
         "incumbent": true,
@@ -104326,7 +104326,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kathryn Henski",
+        "name": "Kathryn Henski-Stark",
         "party": "R",
         "votes": 2225
        }
@@ -104913,7 +104913,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Gil S. Coloma Keithagaran",
+        "name": "Gil S. Coloma Keith-Agaran",
         "party": "D",
         "votes": null,
         "incumbent": true,
@@ -105102,7 +105102,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Donovan Delacruz",
+        "name": "Donovan Dela Cruz",
         "party": "D",
         "votes": null,
         "incumbent": true,
@@ -105168,7 +105168,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Grace Manipollarson",
+        "name": "Grace Manipol-Larson",
         "party": "R",
         "votes": 1344
        }
@@ -105204,7 +105204,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Joy Sanbuenaventura",
+        "name": "Joy San Buena Ventura",
         "party": "D",
         "votes": null,
         "incumbent": true,
@@ -105537,7 +105537,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kathryn Henskistark",
+        "name": "Kathryn Henski-Stark",
         "party": "R",
         "votes": 1812
        }
@@ -105624,7 +105624,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mela Kealohalindsey",
+        "name": "Mela Kealoha-Lindsey",
         "party": "R",
         "votes": 1699
        }
@@ -105869,7 +105869,7 @@ export const stateLegResults: Record<
       "totalVotes": 7445,
       "candidates": [
        {
-        "name": "Rida Cabanillaarakawa",
+        "name": "Rida Cabanilla Arakawa",
         "party": "D",
         "votes": 4005,
         "winner": true
@@ -107010,7 +107010,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Trish Lachica",
+        "name": "Trish la Chica",
         "party": "D",
         "votes": 6337
        }
@@ -107305,7 +107305,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kukana K. K. Kamatoth",
+        "name": "Kukana Kama-Toth",
         "party": "R",
         "votes": 5082
        }
@@ -107325,13 +107325,13 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Joy Sanbuenaventura",
+        "name": "Joy San Buena Ventura",
         "party": "D",
         "votes": 14225,
         "winner": true
        },
        {
-        "name": "Ron G. Kaipo",
+        "name": "Ron G. Ka-Ipo",
         "party": "O",
         "votes": 4694
        }
@@ -107344,14 +107344,14 @@ export const stateLegResults: Record<
       "totalVotes": 20574,
       "candidates": [
        {
-        "name": "Gil S. Coloma Keithagaran",
+        "name": "Gil S. Coloma Keith-Agaran",
         "party": "D",
         "votes": 13891,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Christy Kajiwaragusman",
+        "name": "Christy Gusman",
         "party": "R",
         "votes": 6683
        }
@@ -107499,7 +107499,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Rida Cabanillaarakawa",
+        "name": "Rida Cabanilla Arakawa",
         "party": "D",
         "votes": 8813
        }
@@ -107533,7 +107533,7 @@ export const stateLegResults: Record<
       "totalVotes": 19367,
       "candidates": [
        {
-        "name": "Donovan Delacruz",
+        "name": "Donovan Dela Cruz",
         "party": "D",
         "votes": 13612,
         "incumbent": true,
@@ -107559,7 +107559,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kristina Kimmarshall",
+        "name": "Kristina Kim-Marshall",
         "party": "R",
         "votes": 9567
        }
@@ -108548,7 +108548,7 @@ export const stateLegResults: Record<
       "totalVotes": 11131,
       "candidates": [
        {
-        "name": "Natalia Husseyburdick",
+        "name": "Natalia Hussey-Burdick",
         "party": "D",
         "votes": 7025,
         "winner": true
@@ -108574,7 +108574,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kukana Kamatoth",
+        "name": "Kukana Kama-Toth",
         "party": "R",
         "votes": 3503
        }
@@ -108613,7 +108613,7 @@ export const stateLegResults: Record<
       "totalVotes": 13008,
       "candidates": [
        {
-        "name": "Joy Sanbuenaventura",
+        "name": "Joy San Buena Ventura",
         "party": "D",
         "votes": 9486,
         "incumbent": true,
@@ -108671,7 +108671,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Gil S. Coloma Keithagaran",
+        "name": "Gil S. Coloma Keith-Agaran",
         "party": "D",
         "votes": null,
         "incumbent": true,
@@ -108741,7 +108741,7 @@ export const stateLegResults: Record<
         "votes": 5266
        },
        {
-        "name": "Kapana Thronaskahoonei",
+        "name": "Kapana Thronas-Kahoonei",
         "party": "O",
         "votes": 1235
        }
@@ -108922,7 +108922,7 @@ export const stateLegResults: Record<
       "totalVotes": 17723,
       "candidates": [
        {
-        "name": "Donovan Delacruz",
+        "name": "Donovan Dela Cruz",
         "party": "D",
         "votes": 11555,
         "incumbent": true,
@@ -110006,7 +110006,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Megan Lee Hessjones",
+        "name": "Megan Lee Hess Jones",
         "party": "R",
         "votes": 12756,
         "incumbent": true,
@@ -110086,7 +110086,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Perla J. Alarconflory",
+        "name": "Perla J. Alarcon-Flory",
         "party": "D",
         "votes": 5086
        }
@@ -110654,7 +110654,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ako Abdulsamad",
+        "name": "Ako Abdul-Samad",
         "party": "D",
         "votes": 6458,
         "incumbent": true,
@@ -110846,14 +110846,14 @@ export const stateLegResults: Record<
       "totalVotes": 16043,
       "candidates": [
        {
-        "name": "Beth Wesselkroeschell",
+        "name": "Beth Wessel-Kroeschell",
         "party": "D",
         "votes": 9036,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Sondra Childssmith",
+        "name": "Sondra Childs-Smith",
         "party": "R",
         "votes": 5730
        },
@@ -111175,7 +111175,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Timi Brownpowers",
+        "name": "Timi Brown-Powers",
         "party": "D",
         "votes": 9206,
         "incumbent": true,
@@ -111330,7 +111330,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kirsten Runningmarquardt",
+        "name": "Kirsten Running-Marquardt",
         "party": "D",
         "votes": 10730,
         "incumbent": true,
@@ -111519,7 +111519,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Guy M. Vanderlinden",
+        "name": "Guy M. Vander Linden",
         "party": "R",
         "votes": 12615,
         "incumbent": true,
@@ -112447,7 +112447,7 @@ export const stateLegResults: Record<
       "totalVotes": 12472,
       "candidates": [
        {
-        "name": "Megan Leehessjones",
+        "name": "Megan Lee Hess Jones",
         "party": "R",
         "votes": 8241,
         "incumbent": true,
@@ -113077,7 +113077,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ako Abdulsamad",
+        "name": "Ako Abdul-Samad",
         "party": "D",
         "votes": 5682,
         "incumbent": true,
@@ -113273,7 +113273,7 @@ export const stateLegResults: Record<
       "totalVotes": 13949,
       "candidates": [
        {
-        "name": "Beth Wesselkroeschell",
+        "name": "Beth Wessel-Kroeschell",
         "party": "D",
         "votes": 9607,
         "incumbent": true,
@@ -113572,7 +113572,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Timi Brownpowers",
+        "name": "Timi Brown-Powers",
         "party": "D",
         "votes": 7596,
         "incumbent": true,
@@ -113719,7 +113719,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kirsten Runningmarquardt",
+        "name": "Kirsten Running-Marquardt",
         "party": "D",
         "votes": 8276,
         "incumbent": true,
@@ -114699,7 +114699,7 @@ export const stateLegResults: Record<
       "totalVotes": 22112,
       "candidates": [
        {
-        "name": "Mariannette Millermeeks",
+        "name": "Mariannette Miller-Meeks",
         "party": "R",
         "votes": 11460,
         "winner": true
@@ -114816,7 +114816,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Megan Jones",
+        "name": "Megan Lee Hess Jones",
         "party": "R",
         "votes": 13597,
         "incumbent": true,
@@ -115439,7 +115439,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ako Abdulsamad",
+        "name": "Ako Abdul-Samad",
         "party": "D",
         "votes": 7542,
         "incumbent": true,
@@ -115627,7 +115627,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Beth Wesselkroeschell",
+        "name": "Beth Wessel-Kroeschell",
         "party": "D",
         "votes": 11399,
         "incumbent": true,
@@ -115943,7 +115943,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Timi Brownpowers",
+        "name": "Timi Brown-Powers",
         "party": "D",
         "votes": 9589,
         "incumbent": true,
@@ -116089,7 +116089,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kirsten Runningmarquardt",
+        "name": "Kirsten Running-Marquardt",
         "party": "D",
         "votes": 11932,
         "incumbent": true,
@@ -116873,7 +116873,7 @@ export const stateLegResults: Record<
       "totalVotes": 46056,
       "candidates": [
        {
-        "name": "Sarah Tronegarriott",
+        "name": "Sarah Trone Garriott",
         "party": "D",
         "votes": 23110,
         "winner": true
@@ -116898,7 +116898,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cynthia Oppedalpaschen",
+        "name": "Cynthia Paschen",
         "party": "D",
         "votes": 11327
        }
@@ -117252,7 +117252,7 @@ export const stateLegResults: Record<
       "totalVotes": 9357,
       "candidates": [
        {
-        "name": "Megan Jones",
+        "name": "Megan Lee Hess Jones",
         "party": "R",
         "votes": 6874,
         "incumbent": true,
@@ -117756,7 +117756,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ako Abdulsamad",
+        "name": "Ako Abdul-Samad",
         "party": "D",
         "votes": 5985,
         "incumbent": true,
@@ -117811,7 +117811,7 @@ export const stateLegResults: Record<
       "totalVotes": 14184,
       "candidates": [
        {
-        "name": "Barb Kniffmcculla",
+        "name": "Barb Kniff McCulla",
         "party": "R",
         "votes": 10593,
         "winner": true
@@ -117985,7 +117985,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Bridget Carberrymontgomery",
+        "name": "Bridget Carberry Montgomery",
         "party": "D",
         "votes": 6393
        }
@@ -118005,7 +118005,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Gary Claytonoverla",
+        "name": "Gary Clayton Overla",
         "party": "D",
         "votes": 4152
        }
@@ -118039,7 +118039,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Beth Wesselkroeschell",
+        "name": "Beth Wessel-Kroeschell",
         "party": "D",
         "votes": 6560,
         "incumbent": true,
@@ -118254,7 +118254,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Timi Brownpowers",
+        "name": "Timi Brown-Powers",
         "party": "D",
         "votes": 6440,
         "incumbent": true,
@@ -118908,7 +118908,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michelle D. Servadioelias",
+        "name": "Michelle D. Servadio Elias",
         "party": "D",
         "votes": 3757
        }
@@ -119002,7 +119002,7 @@ export const stateLegResults: Record<
       "totalVotes": 13956,
       "candidates": [
        {
-        "name": "Rocky Dewitt",
+        "name": "Rocky de Witt",
         "party": "R",
         "votes": 7700,
         "winner": true
@@ -119163,7 +119163,7 @@ export const stateLegResults: Record<
       "totalVotes": 29317,
       "candidates": [
        {
-        "name": "Sarah Tronegarriott",
+        "name": "Sarah Trone Garriott",
         "party": "D",
         "votes": 15095,
         "incumbent": true,
@@ -119232,7 +119232,7 @@ export const stateLegResults: Record<
         "votes": 1690
        },
        {
-        "name": "Alejandro Murguiaortiz",
+        "name": "Alejandro Murguia-Ortiz",
         "party": "O",
         "votes": 1297
        }
@@ -122685,7 +122685,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Caroline Nilssontroy",
+        "name": "Caroline Nilsson Troy",
         "party": "R",
         "votes": 11121,
         "incumbent": true,
@@ -122705,7 +122705,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Kenneth B. Devries",
+        "name": "Kenneth B. de Vries",
         "party": "O",
         "votes": 2507,
         "post": "2"
@@ -122953,7 +122953,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Maria Gonzalezmabbutt",
+        "name": "Maria Gonzalez Mabbutt",
         "party": "D",
         "votes": 5042,
         "post": "1"
@@ -123264,7 +123264,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "John Vanderwoude",
+        "name": "John Vander Woude",
         "party": "R",
         "votes": 13493,
         "incumbent": true,
@@ -123544,7 +123544,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Julie Vanorden",
+        "name": "Julie van Orden",
         "party": "R",
         "votes": 14427,
         "incumbent": true,
@@ -123608,7 +123608,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Jim Deangelis",
+        "name": "Jim de Angelis",
         "party": "D",
         "votes": 5463,
         "post": "1"
@@ -123877,7 +123877,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Pat Dayhartwell",
+        "name": "Pat Day Hartwell",
         "party": "D",
         "votes": 3302
        },
@@ -124014,7 +124014,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Janie Wardengelking",
+        "name": "Janie Ward-Engelking",
         "party": "D",
         "votes": 16833,
         "incumbent": true,
@@ -124030,7 +124030,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Cherie Bucknerwebb",
+        "name": "Cherie Buckner-Webb",
         "party": "D",
         "votes": 19679,
         "incumbent": true,
@@ -124082,7 +124082,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lori Denhartog",
+        "name": "Lori Den Hartog",
         "party": "R",
         "votes": 13805,
         "incumbent": true,
@@ -124174,7 +124174,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kelly Arthuranthon",
+        "name": "Kelly Arthur Anthon",
         "party": "R",
         "votes": 13259,
         "winner": true
@@ -124478,7 +124478,7 @@ export const stateLegResults: Record<
       "totalVotes": 38739,
       "candidates": [
        {
-        "name": "Caroline Nilssontroy",
+        "name": "Caroline Nilsson Troy",
         "party": "R",
         "votes": 10403,
         "incumbent": true,
@@ -124620,7 +124620,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Chase Vanweerdhuizen",
+        "name": "Chase van Weerdhuizen",
         "party": "D",
         "votes": 3991,
         "post": "2"
@@ -124720,7 +124720,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Pat Dayhartwell",
+        "name": "Pat Day Hartwell",
         "party": "D",
         "votes": 4985,
         "post": "1"
@@ -125022,7 +125022,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "John Vanderwoude",
+        "name": "John Vander Woude",
         "party": "R",
         "votes": 12337,
         "incumbent": true,
@@ -125079,7 +125079,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Linda Wrighthartgen",
+        "name": "Linda Wright Hartgen",
         "party": "R",
         "votes": 7902,
         "winner": true,
@@ -125229,7 +125229,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Dustin Whitneymanwaring",
+        "name": "Dustin Whitney Manwaring",
         "party": "R",
         "votes": 7016,
         "incumbent": true,
@@ -125349,7 +125349,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Jim Deangelis",
+        "name": "Jim de Angelis",
         "party": "D",
         "votes": 5775,
         "post": "1"
@@ -125753,7 +125753,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Janie Ward",
+        "name": "Janie Ward-Engelking",
         "party": "D",
         "votes": 17090,
         "incumbent": true,
@@ -125768,7 +125768,7 @@ export const stateLegResults: Record<
       "totalVotes": 25194,
       "candidates": [
        {
-        "name": "Cherie Buckner",
+        "name": "Cherie Buckner-Webb",
         "party": "D",
         "votes": 18793,
         "incumbent": true,
@@ -125829,7 +125829,7 @@ export const stateLegResults: Record<
       "totalVotes": 15440,
       "candidates": [
        {
-        "name": "Lori Denhartog",
+        "name": "Lori Den Hartog",
         "party": "R",
         "votes": 10709,
         "incumbent": true,
@@ -125918,7 +125918,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kelly Arthuranthon",
+        "name": "Kelly Arthur Anthon",
         "party": "R",
         "votes": 10291,
         "incumbent": true,
@@ -126214,7 +126214,7 @@ export const stateLegResults: Record<
       "totalVotes": 49362,
       "candidates": [
        {
-        "name": "Caroline Nilssontroy",
+        "name": "Caroline Nilsson Troy",
         "party": "R",
         "votes": 13979,
         "incumbent": true,
@@ -126229,7 +126229,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Dulce Kerstinglark",
+        "name": "Dulce Kersting-Lark",
         "party": "D",
         "votes": 11180,
         "post": "1"
@@ -126250,7 +126250,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Aaron Vonehlinger",
+        "name": "Aaron von Ehlinger",
         "party": "R",
         "votes": 18909,
         "winner": true,
@@ -126367,13 +126367,13 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Chelsea Gaonalincoln",
+        "name": "Chelsea Gaona",
         "party": "D",
         "votes": 6019,
         "post": "2"
        },
        {
-        "name": "Rebecca Yamamotohanson",
+        "name": "Rebecca Yamamoto Hanson",
         "party": "D",
         "votes": 5722,
         "post": "1"
@@ -126773,7 +126773,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "John Vanderwoude",
+        "name": "John Vander Woude",
         "party": "R",
         "votes": 17451,
         "incumbent": true,
@@ -126843,7 +126843,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Linda Wrighthartgen",
+        "name": "Linda Wright Hartgen",
         "party": "R",
         "votes": 16298,
         "incumbent": true,
@@ -126990,7 +126990,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Dustin Whitneymanwaring",
+        "name": "Dustin Whitney Manwaring",
         "party": "R",
         "votes": 10181,
         "winner": true,
@@ -127314,7 +127314,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Bill Siffordthayn",
+        "name": "William A. Sifford",
         "party": "O",
         "votes": 5589
        },
@@ -127504,7 +127504,7 @@ export const stateLegResults: Record<
       "totalVotes": 28950,
       "candidates": [
        {
-        "name": "Janie Wardengelking",
+        "name": "Janie Ward-Engelking",
         "party": "D",
         "votes": 17928,
         "incumbent": true,
@@ -127925,7 +127925,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Megan Dardiskunz",
+        "name": "Megan Dardis-Kunz",
         "party": "D",
         "votes": 6048,
         "post": "1"
@@ -127955,7 +127955,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Kristy Reedjohnson",
+        "name": "Kristy Johnson",
         "party": "D",
         "votes": 3696,
         "post": "1"
@@ -127996,7 +127996,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Trish Cartergoodheart",
+        "name": "Trish Carter-Goodheart",
         "party": "D",
         "votes": 8158,
         "post": "1"
@@ -128500,7 +128500,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "John Vanderwoude",
+        "name": "John Vander Woude",
         "party": "R",
         "votes": 12178,
         "incumbent": true,
@@ -128624,7 +128624,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Karma Metzlerfitzgerald",
+        "name": "Karma Metzler Fitzgerald",
         "party": "D",
         "votes": 7834,
         "post": "2"
@@ -128684,7 +128684,7 @@ export const stateLegResults: Record<
       "totalVotes": 29036,
       "candidates": [
        {
-        "name": "Dustin Whitneymanwaring",
+        "name": "Dustin Whitney Manwaring",
         "party": "R",
         "votes": 7575,
         "incumbent": true,
@@ -129171,7 +129171,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Benjamin Donovanchafetz",
+        "name": "Benjamin Donovan Chafetz",
         "party": "R",
         "votes": 6790
        }
@@ -129184,7 +129184,7 @@ export const stateLegResults: Record<
       "totalVotes": 18227,
       "candidates": [
        {
-        "name": "Janie Wardengelking",
+        "name": "Janie Ward-Engelking",
         "party": "D",
         "votes": 12040,
         "incumbent": true,
@@ -129260,7 +129260,7 @@ export const stateLegResults: Record<
       "totalVotes": 18661,
       "candidates": [
        {
-        "name": "Lori Denhartog",
+        "name": "Lori Den Hartog",
         "party": "R",
         "votes": 12337,
         "incumbent": true,
@@ -129316,7 +129316,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Linda Wrighthartgen",
+        "name": "Linda Wright Hartgen",
         "party": "R",
         "votes": 8213,
         "winner": true
@@ -129355,7 +129355,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kelly Anthon",
+        "name": "Kelly Arthur Anthon",
         "party": "R",
         "votes": 10650,
         "incumbent": true,
@@ -129415,7 +129415,7 @@ export const stateLegResults: Record<
       "totalVotes": 12988,
       "candidates": [
        {
-        "name": "Julie Vanorden",
+        "name": "Julie van Orden",
         "party": "R",
         "votes": 10948,
         "winner": true
@@ -131399,7 +131399,7 @@ export const stateLegResults: Record<
       "totalVotes": 42769,
       "candidates": [
        {
-        "name": "Melissa Conyears",
+        "name": "Melissa Conyears-Ervin",
         "party": "D",
         "votes": 35858,
         "winner": true
@@ -132023,7 +132023,7 @@ export const stateLegResults: Record<
       "totalVotes": 39626,
       "candidates": [
        {
-        "name": "Deb Conroy",
+        "name": "Deb O'Keefe Conroy",
         "party": "D",
         "votes": 23369,
         "incumbent": true,
@@ -132695,7 +132695,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Linda Chapalavia",
+        "name": "Linda Chapa Lavia",
         "party": "D",
         "votes": 20959,
         "incumbent": true,
@@ -132842,7 +132842,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jehan Gordonbooth",
+        "name": "Jehan Gordon-Booth",
         "party": "D",
         "votes": 33410,
         "incumbent": true,
@@ -133373,7 +133373,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Patricia Vanpelt",
+        "name": "Patricia van Pelt",
         "party": "D",
         "votes": 75700,
         "winner": true
@@ -133865,7 +133865,7 @@ export const stateLegResults: Record<
       "totalVotes": 98541,
       "candidates": [
        {
-        "name": "Jennifer Bertinotarrant",
+        "name": "Jennifer Bertino-Tarrant",
         "party": "D",
         "votes": 51960,
         "incumbent": true,
@@ -134156,7 +134156,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Melissa Conyearservin",
+        "name": "Melissa Conyears-Ervin",
         "party": "D",
         "votes": 31649,
         "incumbent": true,
@@ -134271,7 +134271,7 @@ export const stateLegResults: Record<
       "totalVotes": 49609,
       "candidates": [
        {
-        "name": "Jennifer Gonggershowitz",
+        "name": "Jennifer Gong-Gershowitz",
         "party": "D",
         "votes": 34328,
         "winner": true
@@ -134623,7 +134623,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Debbie Meyersmartin",
+        "name": "Debbie Meyers-Martin",
         "party": "D",
         "votes": 35832,
         "winner": true
@@ -134768,7 +134768,7 @@ export const stateLegResults: Record<
       "totalVotes": 31834,
       "candidates": [
        {
-        "name": "Deb Conroy",
+        "name": "Deb O'Keefe Conroy",
         "party": "D",
         "votes": 18679,
         "incumbent": true,
@@ -134866,7 +134866,7 @@ export const stateLegResults: Record<
       "totalVotes": 51526,
       "candidates": [
        {
-        "name": "Mary Edlyallen",
+        "name": "Mary Edly-Allen",
         "party": "D",
         "votes": 25950,
         "winner": true
@@ -134967,7 +134967,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jillian Rosebernas",
+        "name": "Jillian Rose Bernas",
         "party": "R",
         "votes": 14923
        }
@@ -135413,7 +135413,7 @@ export const stateLegResults: Record<
       "totalVotes": 49318,
       "candidates": [
        {
-        "name": "Anne M. Stavamurray",
+        "name": "Anne M. Stava-Murray",
         "party": "D",
         "votes": 25124,
         "winner": true
@@ -135454,7 +135454,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Linda Chapalavia",
+        "name": "Linda Chapa Lavia",
         "party": "D",
         "votes": 15303,
         "incumbent": true,
@@ -135620,7 +135620,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jehan Gordonbooth",
+        "name": "Jehan Gordon-Booth",
         "party": "D",
         "votes": 26808,
         "incumbent": true,
@@ -136165,7 +136165,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Patricia Vanpelt",
+        "name": "Patricia van Pelt",
         "party": "D",
         "votes": 63756,
         "incumbent": true,
@@ -137079,7 +137079,7 @@ export const stateLegResults: Record<
       "totalVotes": 61199,
       "candidates": [
        {
-        "name": "Jennifer Gonggershowitz",
+        "name": "Jennifer Gong-Gershowitz",
         "party": "D",
         "votes": 42471,
         "incumbent": true,
@@ -137435,7 +137435,7 @@ export const stateLegResults: Record<
       "totalVotes": 53315,
       "candidates": [
        {
-        "name": "Debbie Meyersmartin",
+        "name": "Debbie Meyers-Martin",
         "party": "D",
         "votes": 41305,
         "incumbent": true,
@@ -137514,7 +137514,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ken Mejiabeal",
+        "name": "Ken Mejia-Beal",
         "party": "D",
         "votes": 30005
        }
@@ -137580,7 +137580,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Deb Conroy",
+        "name": "Deb O'Keefe Conroy",
         "party": "D",
         "votes": 34949,
         "incumbent": true,
@@ -137680,7 +137680,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary Edlyallen",
+        "name": "Mary Edly-Allen",
         "party": "D",
         "votes": 32548,
         "incumbent": true
@@ -137921,7 +137921,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Leslie Armstrongmcleod",
+        "name": "Leslie Armstrong-McLeod",
         "party": "D",
         "votes": 23665
        }
@@ -138243,7 +138243,7 @@ export const stateLegResults: Record<
       "totalVotes": 63375,
       "candidates": [
        {
-        "name": "Anne Stavamurray",
+        "name": "Anne Stava-Murray",
         "party": "D",
         "votes": 33340,
         "incumbent": true,
@@ -138381,7 +138381,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Karla Baileysmith",
+        "name": "Karla Bailey-Smith",
         "party": "D",
         "votes": 20245
        }
@@ -138455,7 +138455,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jehan Gordonbooth",
+        "name": "Jehan Gordon-Booth",
         "party": "D",
         "votes": 28912,
         "incumbent": true,
@@ -139279,7 +139279,7 @@ export const stateLegResults: Record<
       "totalVotes": 114328,
       "candidates": [
        {
-        "name": "Meg Loughrancappel",
+        "name": "Meg Loughran Cappel",
         "party": "D",
         "votes": 64276,
         "winner": true
@@ -139651,7 +139651,7 @@ export const stateLegResults: Record<
       "totalVotes": 40705,
       "candidates": [
        {
-        "name": "Jennifer Gonggershowitz",
+        "name": "Jennifer Gong-Gershowitz",
         "party": "D",
         "votes": 29057,
         "incumbent": true,
@@ -139746,7 +139746,7 @@ export const stateLegResults: Record<
       "totalVotes": 22016,
       "candidates": [
        {
-        "name": "Angie Guerrerocuellar",
+        "name": "Angie Guerrero-Cuellar",
         "party": "D",
         "votes": 14362,
         "winner": true
@@ -140044,7 +140044,7 @@ export const stateLegResults: Record<
       "totalVotes": 38364,
       "candidates": [
        {
-        "name": "Debbie Meyersmartin",
+        "name": "Debbie Meyers-Martin",
         "party": "D",
         "votes": 27135,
         "incumbent": true,
@@ -140100,7 +140100,7 @@ export const stateLegResults: Record<
       "totalVotes": 42949,
       "candidates": [
        {
-        "name": "Janet Yangrohr",
+        "name": "Janet Rohr",
         "party": "D",
         "votes": 25960,
         "incumbent": true,
@@ -140147,7 +140147,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Angela Hallocknowak",
+        "name": "Angela Hallock Nowak",
         "party": "R",
         "votes": 6377
        }
@@ -140180,7 +140180,7 @@ export const stateLegResults: Record<
       "totalVotes": 43556,
       "candidates": [
        {
-        "name": "Jenn Ladischdouglass",
+        "name": "Jenn Ladisch Douglass",
         "party": "D",
         "votes": 21960,
         "winner": true
@@ -140200,7 +140200,7 @@ export const stateLegResults: Record<
       "totalVotes": 28402,
       "candidates": [
        {
-        "name": "Diane Blairsherlock",
+        "name": "Diane Blair-Sherlock",
         "party": "D",
         "votes": 16054,
         "winner": true
@@ -140513,7 +140513,7 @@ export const stateLegResults: Record<
       "totalVotes": 31880,
       "candidates": [
        {
-        "name": "Laura Faverdias",
+        "name": "Laura Faver Dias",
         "party": "D",
         "votes": 18528,
         "winner": true
@@ -140872,7 +140872,7 @@ export const stateLegResults: Record<
       "totalVotes": 46491,
       "candidates": [
        {
-        "name": "Anne Stavamurray",
+        "name": "Anne Stava-Murray",
         "party": "D",
         "votes": 27060,
         "incumbent": true,
@@ -141069,7 +141069,7 @@ export const stateLegResults: Record<
       "totalVotes": 29970,
       "candidates": [
        {
-        "name": "Jehan Gordonbooth",
+        "name": "Jehan Gordon-Booth",
         "party": "D",
         "votes": 18725,
         "incumbent": true,
@@ -141543,7 +141543,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Javier Loeracervantes",
+        "name": "Javier Loera Cervantes",
         "party": "D",
         "votes": 27928,
         "winner": true
@@ -141606,7 +141606,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Patricia Vanpelt",
+        "name": "Patricia van Pelt",
         "party": "D",
         "votes": 45337,
         "incumbent": true,
@@ -141829,7 +141829,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Christine Shanahanmcgovern",
+        "name": "Christine Shanahan McGovern",
         "party": "R",
         "votes": 31111
        }
@@ -141862,7 +141862,7 @@ export const stateLegResults: Record<
       "totalVotes": 52136,
       "candidates": [
        {
-        "name": "Cristina Pacionezayas",
+        "name": "Cristina Pacione-Zayas",
         "party": "D",
         "votes": 44972,
         "winner": true
@@ -141917,7 +141917,7 @@ export const stateLegResults: Record<
       "totalVotes": 72263,
       "candidates": [
        {
-        "name": "Suzanne Glowiakhilton",
+        "name": "Suzanne Glowiak",
         "party": "D",
         "votes": 39460,
         "incumbent": true,
@@ -142067,7 +142067,7 @@ export const stateLegResults: Record<
       "totalVotes": 64636,
       "candidates": [
        {
-        "name": "Mary Edlyallen",
+        "name": "Mary Edly-Allen",
         "party": "D",
         "votes": 36702,
         "winner": true
@@ -142390,7 +142390,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Meg Loughrancappel",
+        "name": "Meg Loughran Cappel",
         "party": "D",
         "votes": 48969,
         "incumbent": true,
@@ -142501,7 +142501,7 @@ export const stateLegResults: Record<
       "totalVotes": 73302,
       "candidates": [
        {
-        "name": "Erica Conwayharriss",
+        "name": "Erica Conway Harriss",
         "party": "R",
         "votes": 37459,
         "winner": true
@@ -145410,7 +145410,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Pamela Mishlerfish",
+        "name": "Pamela Mishler Fish",
         "party": "D",
         "votes": 14311
        }
@@ -145812,7 +145812,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Maurice O. Fuller",
+        "name": "Maurice Oakel Fuller",
         "party": "D",
         "votes": 6948
        },
@@ -146053,7 +146053,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Heath Vannatter",
+        "name": "Heath van Natter",
         "party": "R",
         "votes": 18623,
         "incumbent": true,
@@ -146344,7 +146344,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Nancy L. Webbtibbett",
+        "name": "Nancy L. Webb-Tibbett",
         "party": "D",
         "votes": 6780
        },
@@ -146383,7 +146383,7 @@ export const stateLegResults: Record<
       "totalVotes": 26597,
       "candidates": [
        {
-        "name": "Cindy Ziemke",
+        "name": "Cindy Meyer Ziemke",
         "party": "R",
         "votes": 20302,
         "incumbent": true,
@@ -147927,7 +147927,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mara Candelariareardon",
+        "name": "Mara Candelaria Reardon",
         "party": "D",
         "votes": 16935,
         "incumbent": true,
@@ -148180,7 +148180,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Maurice Oakelfuller",
+        "name": "Maurice Oakel Fuller",
         "party": "D",
         "votes": 6872
        }
@@ -148406,7 +148406,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Aimee Riveracole",
+        "name": "Aimee Rivera Cole",
         "party": "D",
         "votes": 14141
        }
@@ -148419,7 +148419,7 @@ export const stateLegResults: Record<
       "totalVotes": 22017,
       "candidates": [
        {
-        "name": "Heath R. Vannatter",
+        "name": "Heath R. van Natter",
         "party": "R",
         "votes": 15479,
         "incumbent": true,
@@ -148720,7 +148720,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Nancy Tibbett",
+        "name": "Nancy Webb-Tibbett",
         "party": "D",
         "votes": 7034
        }
@@ -148749,7 +148749,7 @@ export const stateLegResults: Record<
       "totalVotes": 21425,
       "candidates": [
        {
-        "name": "Cindy Meyerziemke",
+        "name": "Cindy Meyer Ziemke",
         "party": "R",
         "votes": 15474,
         "incumbent": true,
@@ -150760,7 +150760,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Aimee Riveracole",
+        "name": "Aimee Rivera Cole",
         "party": "D",
         "votes": 19159
        }
@@ -150773,7 +150773,7 @@ export const stateLegResults: Record<
       "totalVotes": 29018,
       "candidates": [
        {
-        "name": "Heath R. Vannatter",
+        "name": "Heath R. van Natter",
         "party": "R",
         "votes": 20746,
         "incumbent": true,
@@ -150860,7 +150860,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Amy Burkeadams",
+        "name": "Amy Burke Adams",
         "party": "D",
         "votes": 9421
        }
@@ -151090,7 +151090,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Cindy Meyerziemke",
+        "name": "Cindy Meyer Ziemke",
         "party": "R",
         "votes": 24453,
         "incumbent": true,
@@ -151775,7 +151775,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Beverly McDermottpiazza",
+        "name": "Beverly McDermott-Piazza",
         "party": "D",
         "votes": 9300
        },
@@ -151834,7 +151834,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Felipe Jesusrios",
+        "name": "Felipe Jesus Rios",
         "party": "R",
         "votes": 3629
        }
@@ -152143,7 +152143,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Laura Fredsmith",
+        "name": "Laura Fred-Smith",
         "party": "D",
         "votes": 13961
        }
@@ -152854,7 +152854,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jen Basspatino",
+        "name": "Jen Bass-Patino",
         "party": "D",
         "votes": 11097
        }
@@ -152975,7 +152975,7 @@ export const stateLegResults: Record<
       "totalVotes": 24768,
       "candidates": [
        {
-        "name": "Victoria Garciawilburn",
+        "name": "Victoria Garcia Wilburn",
         "party": "D",
         "votes": 12508,
         "winner": true
@@ -153091,7 +153091,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Heath R. Vannatter",
+        "name": "Heath R. van Natter",
         "party": "R",
         "votes": 19183,
         "incumbent": true,
@@ -153799,7 +153799,7 @@ export const stateLegResults: Record<
         "votes": 6460
        },
        {
-        "name": "Cheryl Batteigersmith",
+        "name": "Cheryl Batteiger-Smith",
         "party": "O",
         "votes": 1860
        }
@@ -154214,7 +154214,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Felipe Rios",
+        "name": "Felipe Jesus Rios",
         "party": "R",
         "votes": 1800
        }
@@ -154455,7 +154455,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Tamie Dixontatum",
+        "name": "Tamie Dixon-Tatum",
         "party": "D",
         "votes": 13447
        }
@@ -154640,7 +154640,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Evan Russellshearin",
+        "name": "Evan Russell Shearin",
         "party": "R",
         "votes": 7238
        }
@@ -157373,7 +157373,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jean Kurtisschodorf",
+        "name": "Jean Kurtis Schodorf",
         "party": "D",
         "votes": 2661
        }
@@ -158285,7 +158285,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lauren Vanwagoner",
+        "name": "Lauren van Wagoner",
         "party": "D",
         "votes": 3904
        }
@@ -158698,7 +158698,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "M. Lewisackerman",
+        "name": "M. Lewis Ackerman",
         "party": "R",
         "votes": 2570
        }
@@ -159403,7 +159403,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "J. Russelljennings",
+        "name": "J. Russell Jennings",
         "party": "R",
         "votes": 6198,
         "incumbent": true,
@@ -160021,7 +160021,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Oletha Faust Goudeau",
+        "name": "Oletha Faust-Goudeau",
         "party": "D",
         "votes": 14511,
         "incumbent": true,
@@ -160489,7 +160489,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Angela Justusschweller",
+        "name": "Angela Justus Schweller",
         "party": "D",
         "votes": 6040
        }
@@ -161466,7 +161466,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Alex Vandyke",
+        "name": "Alex van Dyke",
         "party": "D",
         "votes": 4025
        }
@@ -162429,7 +162429,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "J. Russelljennings",
+        "name": "J. Russell Jennings",
         "party": "R",
         "votes": 4933,
         "incumbent": true,
@@ -162830,7 +162830,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Stephanie Sawyerclayton",
+        "name": "Stephanie Clayton",
         "party": "D",
         "votes": 12369,
         "incumbent": true,
@@ -165351,14 +165351,14 @@ export const stateLegResults: Record<
       "totalVotes": 21452,
       "candidates": [
        {
-        "name": "Oletha Faustgoudeau",
+        "name": "Oletha Faust-Goudeau",
         "party": "D",
         "votes": 15253,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Myron L. Ackerman",
+        "name": "Myron Lewis Ackerman",
         "party": "R",
         "votes": 6199
        }
@@ -165654,7 +165654,7 @@ export const stateLegResults: Record<
       "totalVotes": 9219,
       "candidates": [
        {
-        "name": "Samantha M. Poetterparshall",
+        "name": "Samantha M. Poetter",
         "party": "R",
         "votes": 6265,
         "incumbent": true,
@@ -165894,7 +165894,7 @@ export const stateLegResults: Record<
       "totalVotes": 12949,
       "candidates": [
        {
-        "name": "Stephanie Sawyerclayton",
+        "name": "Stephanie Clayton",
         "party": "D",
         "votes": 8027,
         "incumbent": true,
@@ -166271,7 +166271,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Vanessa Vaughnwest",
+        "name": "Vanessa Vaughn West",
         "party": "D",
         "votes": 4847
        }
@@ -167109,7 +167109,7 @@ export const stateLegResults: Record<
       "totalVotes": 8776,
       "candidates": [
        {
-        "name": "Susan Oliverestes",
+        "name": "Susan Estes",
         "party": "R",
         "votes": 4890,
         "incumbent": true,
@@ -171032,7 +171032,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Paula Rushrobinson",
+        "name": "Paula Rush Robinson",
         "party": "R",
         "votes": 9393
        }
@@ -171065,7 +171065,7 @@ export const stateLegResults: Record<
       "totalVotes": 12680,
       "candidates": [
        {
-        "name": "Walker Woodthomas",
+        "name": "Walker Wood Thomas",
         "party": "R",
         "votes": 6577,
         "winner": true
@@ -171200,7 +171200,7 @@ export const stateLegResults: Record<
       "totalVotes": 18570,
       "candidates": [
        {
-        "name": "Melinda Gibbonsprunty",
+        "name": "Melinda Gibbons Prunty",
         "party": "R",
         "votes": 10597,
         "winner": true
@@ -171279,7 +171279,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "John Waynesmith",
+        "name": "John Wayne Smith",
         "party": "D",
         "votes": 5614
        }
@@ -171679,7 +171679,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Attica Woodsonscott",
+        "name": "Attica Woodson Scott",
         "party": "D",
         "votes": 13257,
         "winner": true
@@ -171829,7 +171829,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Linda Howlettbelcher",
+        "name": "Linda Howlett Belcher",
         "party": "D",
         "votes": 9186,
         "incumbent": true
@@ -171995,7 +171995,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cyndi Powellskellie",
+        "name": "Cyndi Powell Skellie",
         "party": "D",
         "votes": 7894
        }
@@ -172080,7 +172080,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Diane Stonge",
+        "name": "Diane St Onge",
         "party": "R",
         "votes": 18728,
         "winner": true
@@ -172094,7 +172094,7 @@ export const stateLegResults: Record<
       "totalVotes": 22027,
       "candidates": [
        {
-        "name": "Kimberly Pooremoser",
+        "name": "Kimberly Poore Moser",
         "party": "R",
         "votes": 15220,
         "winner": true
@@ -172199,7 +172199,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "John Vanmeter",
+        "name": "John van Meter",
         "party": "R",
         "votes": 7839
        }
@@ -172396,7 +172396,7 @@ export const stateLegResults: Record<
       "totalVotes": 18036,
       "candidates": [
        {
-        "name": "C. Wesleymorgan",
+        "name": "C. Wesley Morgan",
         "party": "R",
         "votes": 9056,
         "winner": true
@@ -172619,7 +172619,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Norma Kirkmccormick",
+        "name": "Norma Kirk-McCormick",
         "party": "R",
         "votes": 6968
        }
@@ -173069,7 +173069,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Denise Harperangel",
+        "name": "Denise Harper Angel",
         "party": "D",
         "votes": 35860,
         "incumbent": true,
@@ -173818,7 +173818,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Katharine Sweetonwindsor",
+        "name": "Katharine Sweeton-Windsor",
         "party": "R",
         "votes": 4489
        }
@@ -174047,7 +174047,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Linda H. Belcher",
+        "name": "Linda Howlett Belcher",
         "party": "D",
         "votes": 5930
        }
@@ -174320,7 +174320,7 @@ export const stateLegResults: Record<
       "totalVotes": 18243,
       "candidates": [
        {
-        "name": "Diane Stonge",
+        "name": "Diane St Onge",
         "party": "R",
         "votes": 10903,
         "incumbent": true,
@@ -174755,7 +174755,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mona Hamptoneldridge",
+        "name": "Mona Hampton-Eldridge",
         "party": "O",
         "votes": 1340
        }
@@ -174907,7 +174907,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Norma Kirk McCormick",
+        "name": "Norma Kirk-McCormick",
         "party": "R",
         "votes": 4529
        }
@@ -175157,7 +175157,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Paula Setserkissick",
+        "name": "Paula Setser-Kissick",
         "party": "D",
         "votes": 26102
        }
@@ -175333,7 +175333,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Paula Clemonscombs",
+        "name": "Paula Clemons-Combs",
         "party": "D",
         "votes": 10151
        }
@@ -175522,7 +175522,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Shannon Davisroberts",
+        "name": "Shannon Davis-Roberts",
         "party": "D",
         "votes": 6726
        }
@@ -176501,7 +176501,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Will Barnett",
+        "name": "Will Barn Ett",
         "party": "D",
         "votes": 7983
        }
@@ -177105,7 +177105,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Paula Clemonscombs",
+        "name": "Paula Clemons-Combs",
         "party": "D",
         "votes": 5073
        }
@@ -177138,7 +177138,7 @@ export const stateLegResults: Record<
       "totalVotes": 14334,
       "candidates": [
        {
-        "name": "Norma Kirkmccormick",
+        "name": "Norma Kirk-McCormick",
         "party": "R",
         "votes": 9045,
         "winner": true
@@ -177909,7 +177909,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Britt Hernandezstevenson",
+        "name": "Britt Hernandez-Stevenson",
         "party": "D",
         "votes": 3729
        }
@@ -178402,7 +178402,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Beverly Chesterburton",
+        "name": "Beverly Chester-Burton",
         "party": "D",
         "votes": 9091,
         "winner": true
@@ -178439,7 +178439,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ginny Mulveywoolridge",
+        "name": "Ginny Mulvey-Woolridge",
         "party": "R",
         "votes": 7247
        }
@@ -178585,7 +178585,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elaine Wilsonreddy",
+        "name": "Elaine Wilson-Reddy",
         "party": "D",
         "votes": 4237
        }
@@ -183687,7 +183687,7 @@ export const stateLegResults: Record<
       "totalVotes": 30659,
       "candidates": [
        {
-        "name": "Regina A. Barrow",
+        "name": "Regina Ashford Barrow",
         "party": "D",
         "votes": 22840,
         "winner": true
@@ -187045,7 +187045,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Alice Hanlonpeisch",
+        "name": "Alice Hanlon Peisch",
         "party": "D",
         "votes": 17759,
         "incumbent": true,
@@ -187209,7 +187209,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Susannah Whipps M. Lee",
+        "name": "Susannah M. Whipps Lee",
         "party": "R",
         "votes": 15490,
         "incumbent": true,
@@ -187559,7 +187559,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Tricia Farleybouvier",
+        "name": "Tricia Farley-Bouvier",
         "party": "D",
         "votes": 11827,
         "incumbent": true,
@@ -187580,7 +187580,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Solomon Israel Goldsteinrose",
+        "name": "Solomon Israel Goldstein-Rose",
         "party": "D",
         "votes": 14601,
         "winner": true
@@ -187774,7 +187774,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Terry Burkedotson",
+        "name": "Terry Burke Dotson",
         "party": "D",
         "votes": 6951
        }
@@ -187827,7 +187827,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Stacey M. Gallaghertully",
+        "name": "Stacey M. Gallagher Tully",
         "party": "O",
         "votes": 7164
        }
@@ -187960,7 +187960,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Carmine Lawrencegentile",
+        "name": "Carmine Lawrence Gentile",
         "party": "D",
         "votes": 17561,
         "incumbent": true,
@@ -188412,7 +188412,7 @@ export const stateLegResults: Record<
       "totalVotes": 24691,
       "candidates": [
        {
-        "name": "Michael Seamusday",
+        "name": "Michael Seamus Day",
         "party": "D",
         "votes": 14528,
         "incumbent": true,
@@ -188628,7 +188628,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kathleen A. Oconnorives",
+        "name": "Kathleen A. Oconnor Ives",
         "party": "D",
         "votes": 65131,
         "incumbent": true,
@@ -188692,7 +188692,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sonia Rosa Changdiaz",
+        "name": "Sonia Rosa Chang-Diaz",
         "party": "D",
         "votes": 58705,
         "incumbent": true,
@@ -188988,7 +188988,7 @@ export const stateLegResults: Record<
         "votes": 35188
        },
        {
-        "name": "Jerome Parkerogrady",
+        "name": "Jerome Parker-O'Grady",
         "party": "D",
         "votes": 29285
        }
@@ -189002,7 +189002,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Cynthia Stonecreem",
+        "name": "Cynthia Stone Creem",
         "party": "D",
         "votes": 62668,
         "incumbent": true,
@@ -189025,7 +189025,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sal N. Didomenico",
+        "name": "Sal N. di Domenico",
         "party": "D",
         "votes": 53022,
         "incumbent": true,
@@ -189295,7 +189295,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jennifer A. Roccorunnion",
+        "name": "Jennifer A. Rocco-Runnion",
         "party": "D",
         "votes": 10219
        }
@@ -190505,7 +190505,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Alice Hanlonpeisch",
+        "name": "Alice Hanlon Peisch",
         "party": "D",
         "votes": 15638,
         "incumbent": true,
@@ -190666,7 +190666,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Susannah Whipps M. Lee",
+        "name": "Susannah M. Whipps Lee",
         "party": "O",
         "votes": 11026,
         "incumbent": true,
@@ -191040,7 +191040,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Tricia Farleybouvier",
+        "name": "Tricia Farley-Bouvier",
         "party": "D",
         "votes": 11661,
         "incumbent": true,
@@ -191062,7 +191062,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Solomon Israel Goldsteinrose",
+        "name": "Solomon Israel Goldstein-Rose",
         "party": "O",
         "votes": 3098,
         "incumbent": true
@@ -191099,7 +191099,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elmer Eubanksarchbold",
+        "name": "Elmer Eubanks-Archbold",
         "party": "R",
         "votes": 3894
        }
@@ -191258,7 +191258,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Terry Burkedotson",
+        "name": "Terry Burke Dotson",
         "party": "D",
         "votes": 5924
        }
@@ -191444,7 +191444,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Carmine Lawrencegentile",
+        "name": "Carmine Lawrence Gentile",
         "party": "D",
         "votes": 15943,
         "incumbent": true,
@@ -191590,7 +191590,7 @@ export const stateLegResults: Record<
       "totalVotes": 11470,
       "candidates": [
        {
-        "name": "David Henry Argoskyleboeuf",
+        "name": "David Henry Argosky Leboeuf",
         "party": "D",
         "votes": 6808,
         "winner": true
@@ -191641,7 +191641,7 @@ export const stateLegResults: Record<
       "totalVotes": 18969,
       "candidates": [
        {
-        "name": "David Allenrobertson",
+        "name": "David Allen Robertson",
         "party": "D",
         "votes": 9153,
         "winner": true
@@ -191888,7 +191888,7 @@ export const stateLegResults: Record<
       "totalVotes": 21195,
       "candidates": [
        {
-        "name": "Michael Seamusday",
+        "name": "Michael Seamus Day",
         "party": "D",
         "votes": 13000,
         "incumbent": true,
@@ -192164,7 +192164,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sonia Rosa Changdiaz",
+        "name": "Sonia Rosa Chang-Diaz",
         "party": "D",
         "votes": 50742,
         "incumbent": true,
@@ -192186,7 +192186,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Erin K. Calvobacci",
+        "name": "Erin K. Calvo-Bacci",
         "party": "R",
         "votes": 23393
        }
@@ -192478,7 +192478,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Cynthia Stonecreem",
+        "name": "Cynthia Stone Creem",
         "party": "D",
         "votes": 60727,
         "incumbent": true,
@@ -192501,7 +192501,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sal N. Didomenico",
+        "name": "Sal N. di Domenico",
         "party": "D",
         "votes": 46144,
         "incumbent": true,
@@ -192601,7 +192601,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Susan A. Chalifouxzephir",
+        "name": "Susan A. Chalifoux Zephir",
         "party": "D",
         "votes": 27935
        }
@@ -193883,7 +193883,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Brandy Flukeroakley",
+        "name": "Brandy Fluker Oakley",
         "party": "D",
         "votes": 17310,
         "winner": true
@@ -193965,7 +193965,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Alice Hanlonpeisch",
+        "name": "Alice Hanlon Peisch",
         "party": "D",
         "votes": 19558,
         "incumbent": true,
@@ -194127,7 +194127,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Susannah M. Whippslee",
+        "name": "Susannah M. Whipps Lee",
         "party": "O",
         "votes": 14078,
         "incumbent": true,
@@ -194476,7 +194476,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Tricia Farleybouvier",
+        "name": "Tricia Farley-Bouvier",
         "party": "D",
         "votes": 15449,
         "incumbent": true,
@@ -194636,7 +194636,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Maria Duaimerobinson",
+        "name": "Maria Robinson",
         "party": "D",
         "votes": 17397,
         "incumbent": true,
@@ -194691,7 +194691,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Terry Burkedotson",
+        "name": "Terry Burke Dotson",
         "party": "O",
         "votes": 7993
        }
@@ -195020,7 +195020,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "David Henry Argoskyleboeuf",
+        "name": "David Henry Argosky Leboeuf",
         "party": "D",
         "votes": 12162,
         "incumbent": true,
@@ -195331,7 +195331,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kate Lippergarabedian",
+        "name": "Kate Lipper-Garabedian",
         "party": "D",
         "votes": 19458,
         "winner": true
@@ -195581,7 +195581,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sonia Rosa Changdiaz",
+        "name": "Sonia Rosa Chang-Diaz",
         "party": "D",
         "votes": 64557,
         "incumbent": true,
@@ -195883,7 +195883,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cynthia Stonecreem",
+        "name": "Cynthia Stone Creem",
         "party": "D",
         "votes": 70430,
         "incumbent": true,
@@ -195899,7 +195899,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sal N. Didomenico",
+        "name": "Sal N. di Domenico",
         "party": "D",
         "votes": 59047,
         "incumbent": true,
@@ -197135,7 +197135,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Edward Franciscoppinger",
+        "name": "Edward Coppinger",
         "party": "D",
         "votes": 15817,
         "incumbent": true,
@@ -197266,7 +197266,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Brandy Flukeroakley",
+        "name": "Brandy Fluker Oakley",
         "party": "D",
         "votes": 10729,
         "incumbent": true,
@@ -197346,7 +197346,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Alice Hanlonpeisch",
+        "name": "Alice Hanlon Peisch",
         "party": "D",
         "votes": 14057,
         "incumbent": true,
@@ -197462,7 +197462,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jeffrey Rosarioturco",
+        "name": "Jeffrey Rosario Turco",
         "party": "D",
         "votes": 7803,
         "winner": true
@@ -197513,7 +197513,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Susannah M. Whipps",
+        "name": "Susannah M. Whipps Lee",
         "party": "O",
         "votes": 9797,
         "incumbent": true,
@@ -197816,7 +197816,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Tricia Farleybouvier",
+        "name": "Tricia Farley-Bouvier",
         "party": "D",
         "votes": 10883,
         "incumbent": true,
@@ -198084,7 +198084,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Terry Burkedotson",
+        "name": "Terry Burke Dotson",
         "party": "O",
         "votes": 4067
        }
@@ -198097,7 +198097,7 @@ export const stateLegResults: Record<
       "totalVotes": 19863,
       "candidates": [
        {
-        "name": "James Arenaderosa",
+        "name": "James Arena-Derosa",
         "party": "D",
         "votes": 12916,
         "winner": true
@@ -198269,7 +198269,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Carmine Lawrencegentile",
+        "name": "Carmine Lawrence Gentile",
         "party": "D",
         "votes": 16338,
         "incumbent": true,
@@ -198418,7 +198418,7 @@ export const stateLegResults: Record<
       "totalVotes": 8015,
       "candidates": [
        {
-        "name": "David Henry Argoskyleboeuf",
+        "name": "David Henry Argosky Leboeuf",
         "party": "D",
         "votes": 4745,
         "incumbent": true,
@@ -198470,7 +198470,7 @@ export const stateLegResults: Record<
       "totalVotes": 18203,
       "candidates": [
        {
-        "name": "David A. Robertson",
+        "name": "David Allen Robertson",
         "party": "D",
         "votes": 10248,
         "incumbent": true,
@@ -198755,7 +198755,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kate Lippergarabedian",
+        "name": "Kate Lipper-Garabedian",
         "party": "D",
         "votes": 14673,
         "incumbent": true,
@@ -198861,7 +198861,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kathleen Foxalfano",
+        "name": "Kathleen Fox Alfano",
         "party": "D",
         "votes": 10227
        }
@@ -199278,7 +199278,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sal N. Didomenico",
+        "name": "Sal N. di Domenico",
         "party": "D",
         "votes": 33355,
         "incumbent": true,
@@ -199294,7 +199294,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Cynthia Stonecreem",
+        "name": "Cynthia Stone Creem",
         "party": "D",
         "votes": 55022,
         "incumbent": true,
@@ -203992,7 +203992,7 @@ export const stateLegResults: Record<
         "votes": 21901
        },
        {
-        "name": "Darrin Ryansmith",
+        "name": "Darrin Ryan Smith",
         "party": "D",
         "votes": 20462
        }
@@ -204377,7 +204377,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "David Fraserhidalgo",
+        "name": "David Fraser-Hidalgo",
         "party": "D",
         "votes": 33808,
         "incumbent": true,
@@ -204454,7 +204454,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Julie Palakovichcarr",
+        "name": "Julie Palakovich Carr",
         "party": "D",
         "votes": 31508,
         "winner": true
@@ -204587,7 +204587,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joseline Penamelnyk",
+        "name": "Joseline Pena-Melnyk",
         "party": "D",
         "votes": 26889,
         "incumbent": true,
@@ -204658,7 +204658,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Andrea Fletcherharrison",
+        "name": "Andrea Fletcher Harrison",
         "party": "D",
         "votes": 38365,
         "winner": true
@@ -204735,7 +204735,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Diedra Henryspires",
+        "name": "Diedra Henry-Spires",
         "party": "O",
         "votes": 1852
        }
@@ -205087,7 +205087,7 @@ export const stateLegResults: Record<
         "votes": 3735
        },
        {
-        "name": "Ronald M. Owensbey",
+        "name": "Ronald M. Owens-Bey",
         "party": "R",
         "votes": 2825
        },
@@ -205260,7 +205260,7 @@ export const stateLegResults: Record<
       "totalVotes": 58155,
       "candidates": [
        {
-        "name": "Karen Lewisyoung",
+        "name": "Karen Lewis Young",
         "party": "D",
         "votes": 18725,
         "incumbent": true,
@@ -205364,7 +205364,7 @@ export const stateLegResults: Record<
       "totalVotes": 15980,
       "candidates": [
        {
-        "name": "Geraldine Valentinosmith",
+        "name": "Geraldine Valentino-Smith",
         "party": "D",
         "votes": 12002,
         "incumbent": true,
@@ -205679,7 +205679,7 @@ export const stateLegResults: Record<
       "totalVotes": 14325,
       "candidates": [
        {
-        "name": "Kevin Baileyhornberger",
+        "name": "Kevin Bailey Hornberger",
         "party": "R",
         "votes": 9065,
         "incumbent": true,
@@ -205726,7 +205726,7 @@ export const stateLegResults: Record<
       "totalVotes": 10875,
       "candidates": [
        {
-        "name": "Sheree Samplehughes",
+        "name": "Sheree Sample-Hughes",
         "party": "D",
         "votes": 7462,
         "incumbent": true,
@@ -205991,7 +205991,7 @@ export const stateLegResults: Record<
       "totalVotes": 51862,
       "candidates": [
        {
-        "name": "Ronald Nelsonyoung",
+        "name": "Ronald Nelson Young",
         "party": "D",
         "votes": 30391,
         "incumbent": true,
@@ -206110,7 +206110,7 @@ export const stateLegResults: Record<
       "totalVotes": 65840,
       "candidates": [
        {
-        "name": "Katie Fryhester",
+        "name": "Katie Fry Hester",
         "party": "D",
         "votes": 33493,
         "winner": true
@@ -206609,7 +206609,7 @@ export const stateLegResults: Record<
         "votes": 10600
        },
        {
-        "name": "Christopher Randerspehrson",
+        "name": "Christopher Randers-Pehrson",
         "party": "O",
         "votes": 5632
        }
@@ -206766,7 +206766,7 @@ export const stateLegResults: Record<
       "totalVotes": 41114,
       "candidates": [
        {
-        "name": "Shirley Nathanpulliam",
+        "name": "Shirley Nathan-Pulliam",
         "party": "D",
         "votes": 34834,
         "incumbent": true,
@@ -206891,7 +206891,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "April Flemingmiller",
+        "name": "April Fleming Miller",
         "party": "R",
         "votes": 29717,
         "winner": true
@@ -207049,7 +207049,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "N. Scottphillips",
+        "name": "N. Scott Phillips",
         "party": "D",
         "votes": 26643,
         "winner": true
@@ -207087,7 +207087,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Pam Lanmanguzzone",
+        "name": "Pam Lanman Guzzone",
         "party": "D",
         "votes": 31128,
         "winner": true
@@ -207163,7 +207163,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "David Fraserhidalgo",
+        "name": "David Fraser-Hidalgo",
         "party": "D",
         "votes": 30229,
         "incumbent": true,
@@ -207223,7 +207223,7 @@ export const stateLegResults: Record<
       "totalVotes": 99270,
       "candidates": [
        {
-        "name": "Julie Palakovichcarr",
+        "name": "Julie Palakovich Carr",
         "party": "D",
         "votes": 28464,
         "incumbent": true,
@@ -207371,7 +207371,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joseline A. Penamelnyk",
+        "name": "Joseline A. Pena-Melnyk",
         "party": "D",
         "votes": 21821,
         "incumbent": true,
@@ -207457,7 +207457,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Andrea Fletcherharrison",
+        "name": "Andrea Fletcher Harrison",
         "party": "D",
         "votes": 28880,
         "incumbent": true,
@@ -208428,7 +208428,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kevin Baileyhornberger",
+        "name": "Kevin Bailey Hornberger",
         "party": "R",
         "votes": 10867,
         "incumbent": true,
@@ -208443,7 +208443,7 @@ export const stateLegResults: Record<
       "totalVotes": 9414,
       "candidates": [
        {
-        "name": "Sheree Samplehughes",
+        "name": "Sheree Sample-Hughes",
         "party": "D",
         "votes": 5841,
         "incumbent": true,
@@ -208476,7 +208476,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Susan E. Deleanbotkin",
+        "name": "Susan E. Delean-Botkin",
         "party": "D",
         "votes": 15344
        }
@@ -208764,7 +208764,7 @@ export const stateLegResults: Record<
       "totalVotes": 41220,
       "candidates": [
        {
-        "name": "Karen Lewisyoung",
+        "name": "Karen Lewis Young",
         "party": "D",
         "votes": 27446,
         "winner": true
@@ -208818,7 +208818,7 @@ export const stateLegResults: Record<
       "totalVotes": 29841,
       "candidates": [
        {
-        "name": "Johnny Raysalling",
+        "name": "Johnny Salling",
         "party": "R",
         "votes": 18278,
         "incumbent": true,
@@ -208874,7 +208874,7 @@ export const stateLegResults: Record<
       "totalVotes": 53851,
       "candidates": [
        {
-        "name": "Katie Fryhester",
+        "name": "Katie Fry Hester",
         "party": "D",
         "votes": 31214,
         "incumbent": true,
@@ -209221,7 +209221,7 @@ export const stateLegResults: Record<
       "totalVotes": 44933,
       "candidates": [
        {
-        "name": "Arthur Carrellis",
+        "name": "Arthur Ellis",
         "party": "D",
         "votes": 30168,
         "incumbent": true,
@@ -210171,14 +210171,14 @@ export const stateLegResults: Record<
       "totalVotes": 6104,
       "candidates": [
        {
-        "name": "Kimberly J. Monaghan",
+        "name": "Kimberly J. Monaghan-Derrig",
         "party": "D",
         "votes": 4144,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "George W. Vansyckel",
+        "name": "George W. van Syckel",
         "party": "R",
         "votes": 1960
        }
@@ -211377,7 +211377,7 @@ export const stateLegResults: Record<
       "totalVotes": 4524,
       "candidates": [
        {
-        "name": "Anne H. Beebecenter",
+        "name": "Anne H. Beebe-Center",
         "party": "D",
         "votes": 2531,
         "winner": true
@@ -211962,7 +211962,7 @@ export const stateLegResults: Record<
       "totalVotes": 4368,
       "candidates": [
        {
-        "name": "Ryan D. Tippingspitz",
+        "name": "Ryan D. Tipping-Spitz",
         "party": "D",
         "votes": 2846,
         "incumbent": true,
@@ -212843,7 +212843,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Henry Beck",
+        "name": "Henry Murphy Beck",
         "party": "D",
         "votes": 8846
        }
@@ -213344,7 +213344,7 @@ export const stateLegResults: Record<
       "totalVotes": 4131,
       "candidates": [
        {
-        "name": "Tiffany D. Robertslovell",
+        "name": "Tiffany D. Roberts-Lovell",
         "party": "D",
         "votes": 2400,
         "winner": true
@@ -214994,7 +214994,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Richard E. Vanknowe",
+        "name": "Richard E. van Knowe",
         "party": "R",
         "votes": 1783
        }
@@ -215047,7 +215047,7 @@ export const stateLegResults: Record<
       "totalVotes": 3886,
       "candidates": [
        {
-        "name": "Anne H. Beebecenter",
+        "name": "Anne H. Beebe-Center",
         "party": "D",
         "votes": 2408,
         "incumbent": true,
@@ -215366,7 +215366,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Karen A. Rancourtthomas",
+        "name": "Karen A. Rancourt-Thomas",
         "party": "R",
         "votes": 1126
        }
@@ -215425,7 +215425,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cynthia J. Somahernandez",
+        "name": "Cynthia J. Soma-Hernandez",
         "party": "D",
         "votes": 1386
        }
@@ -215647,7 +215647,7 @@ export const stateLegResults: Record<
       "totalVotes": 3585,
       "candidates": [
        {
-        "name": "Ryan S. Tipping",
+        "name": "Ryan S. Tipping-Spitz",
         "party": "D",
         "votes": 2736,
         "incumbent": true,
@@ -216288,7 +216288,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Susan D. MacKeyandrews",
+        "name": "Susan D. MacKey Andrews",
         "party": "D",
         "votes": 5112
        }
@@ -216645,7 +216645,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lois E. Kilbychesley",
+        "name": "Lois E. Kilby-Chesley",
         "party": "D",
         "votes": 6277
        }
@@ -216777,7 +216777,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "George Willard Vansyckel",
+        "name": "George Willard van Syckel",
         "party": "R",
         "votes": 5215
        }
@@ -217006,7 +217006,7 @@ export const stateLegResults: Record<
       "totalVotes": 5605,
       "candidates": [
        {
-        "name": "Tiffany Danielle Roberts",
+        "name": "Tiffany Danielle Roberts-Lovell",
         "party": "D",
         "votes": 3137,
         "incumbent": true,
@@ -217639,7 +217639,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Rachel Talbot Talbotross",
+        "name": "Rachel Talbot Ross",
         "party": "D",
         "votes": 3885,
         "incumbent": true,
@@ -219388,7 +219388,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Nicolas Dellipaoli",
+        "name": "Nicolas Delli Paoli",
         "party": "D",
         "votes": 1910
        }
@@ -221204,7 +221204,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Margaret D. Englishflanagan",
+        "name": "Margaret D. English-Flanagan",
         "party": "D",
         "votes": 2397
        }
@@ -221993,7 +221993,7 @@ export const stateLegResults: Record<
       "totalVotes": 4048,
       "candidates": [
        {
-        "name": "Tammy L. Schmersalburgess",
+        "name": "Tammy L. Schmersal-Burgess",
         "party": "R",
         "votes": 2694,
         "winner": true
@@ -223336,7 +223336,7 @@ export const stateLegResults: Record<
       "totalVotes": 4599,
       "candidates": [
        {
-        "name": "Tiffany Danielle Roberts",
+        "name": "Tiffany Danielle Roberts-Lovell",
         "party": "D",
         "votes": 2578,
         "incumbent": true,
@@ -223619,7 +223619,7 @@ export const stateLegResults: Record<
       "totalVotes": 21122,
       "candidates": [
        {
-        "name": "Anne H. Beebecenter",
+        "name": "Anne H. Beebe-Center",
         "party": "D",
         "votes": 12525,
         "winner": true
@@ -223683,7 +223683,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Storme Jude Stvalle",
+        "name": "Storme Jude St Valle",
         "party": "D",
         "votes": 7491
        }
@@ -227839,7 +227839,7 @@ export const stateLegResults: Record<
       "totalVotes": 34740,
       "candidates": [
        {
-        "name": "Sherry Gaydagnogo",
+        "name": "Sherry Gay-Dagnogo",
         "party": "D",
         "votes": 33270,
         "incumbent": true,
@@ -228158,7 +228158,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Dana Camphouspeterson",
+        "name": "Dana Camphous-Peterson",
         "party": "D",
         "votes": 19553
        }
@@ -228294,7 +228294,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lisa Valerionowc",
+        "name": "Lisa Valerio-Nowc",
         "party": "R",
         "votes": 15743
        }
@@ -228616,7 +228616,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Keith Vanhouten",
+        "name": "Keith van Houten",
         "party": "D",
         "votes": 12918
        }
@@ -228951,7 +228951,7 @@ export const stateLegResults: Record<
         "votes": 14749
        },
        {
-        "name": "John Anthony Lapietra",
+        "name": "John Anthony la Pietra",
         "party": "O",
         "votes": 2523
        }
@@ -229327,7 +229327,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Margaret Guerrerodeluca",
+        "name": "Margaret Guerrero Deluca",
         "party": "D",
         "votes": 13492
        }
@@ -230057,7 +230057,7 @@ export const stateLegResults: Record<
       "totalVotes": 28017,
       "candidates": [
        {
-        "name": "Sherry Gay Dagnogo",
+        "name": "Sherry Gay-Dagnogo",
         "party": "D",
         "votes": 26995,
         "incumbent": true,
@@ -230221,7 +230221,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jody Ricewhite",
+        "name": "Jody Rice-White",
         "party": "R",
         "votes": 10728
        }
@@ -230517,7 +230517,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lisa Valerionowc",
+        "name": "Lisa Valerio-Nowc",
         "party": "R",
         "votes": 13925
        }
@@ -231806,7 +231806,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Celia Youngwenkel",
+        "name": "Celia Young-Wenkel",
         "party": "D",
         "votes": 10652
        }
@@ -232528,7 +232528,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kelly Rossmanmckinney",
+        "name": "Kelly Rossman-McKinney",
         "party": "D",
         "votes": 54352
        }
@@ -232721,7 +232721,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Poppy Siashernandez",
+        "name": "Poppy Sias-Hernandez",
         "party": "D",
         "votes": 45941
        }
@@ -233413,7 +233413,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lisa Valerionowc",
+        "name": "Lisa Valerio-Nowc",
         "party": "R",
         "votes": 20364
        }
@@ -233788,7 +233788,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Christina Fitchetthickson",
+        "name": "Christina Fitchett-Hickson",
         "party": "R",
         "votes": 23507
        }
@@ -234062,7 +234062,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sandra Hofmankingston",
+        "name": "Sandra Hofman-Kingston",
         "party": "D",
         "votes": 15125
        }
@@ -234221,7 +234221,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lily Chengschulting",
+        "name": "Lily Cheng-Schulting",
         "party": "D",
         "votes": 24170
        }
@@ -234439,7 +234439,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Stephanie Armstronghelton",
+        "name": "Stephanie Armstrong-Helton",
         "party": "D",
         "votes": 14888
        }
@@ -234718,7 +234718,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Celia Youngwenkel",
+        "name": "Celia Young-Wenkel",
         "party": "D",
         "votes": 12794
        }
@@ -234798,7 +234798,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Beth McGillrizer",
+        "name": "Beth McGill-Rizer",
         "party": "D",
         "votes": 23746
        }
@@ -235330,7 +235330,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Wendy Websterjackson",
+        "name": "Wendy Webster Jackson",
         "party": "R",
         "votes": 8803
        }
@@ -235897,7 +235897,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Tina Bednarskilynch",
+        "name": "Tina Bednarski-Lynch",
         "party": "R",
         "votes": 18187
        }
@@ -235976,7 +235976,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sarah Mayseward",
+        "name": "Sarah May-Seward",
         "party": "D",
         "votes": 20110
        }
@@ -236183,7 +236183,7 @@ export const stateLegResults: Record<
       "totalVotes": 40288,
       "candidates": [
        {
-        "name": "Alicia Stgermaine",
+        "name": "Alicia St Germaine",
         "party": "R",
         "votes": 21522,
         "winner": true
@@ -236520,7 +236520,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kimberly y. Kennedybarrington",
+        "name": "Kimberly y. Kennedy-Barrington",
         "party": "D",
         "votes": 15360
        }
@@ -236649,7 +236649,7 @@ export const stateLegResults: Record<
       "totalVotes": 39313,
       "candidates": [
        {
-        "name": "Nancy Deboer",
+        "name": "Nancy de Boer",
         "party": "R",
         "votes": 22091,
         "winner": true
@@ -237619,7 +237619,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Bert Vandyke",
+        "name": "Bert van Dyke",
         "party": "D",
         "votes": 38811
        }
@@ -237808,7 +237808,7 @@ export const stateLegResults: Record<
       "totalVotes": 116351,
       "candidates": [
        {
-        "name": "Kristen McDonaldrivet",
+        "name": "Kristen McDonald Rivet",
         "party": "D",
         "votes": 62105,
         "winner": true
@@ -241759,7 +241759,7 @@ export const stateLegResults: Record<
       "totalVotes": 20401,
       "candidates": [
        {
-        "name": "Mary Kuneshpodein",
+        "name": "Mary Kunesh-Podein",
         "party": "D",
         "votes": 12936,
         "winner": true
@@ -241798,7 +241798,7 @@ export const stateLegResults: Record<
       "totalVotes": 22533,
       "candidates": [
        {
-        "name": "Jamie Beckerfinn",
+        "name": "Jamie Becker-Finn",
         "party": "D",
         "votes": 12845,
         "winner": true
@@ -242377,7 +242377,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ali Jimenezhopper",
+        "name": "Ali Jimenez-Hopper",
         "party": "R",
         "votes": 10758
        }
@@ -244057,7 +244057,7 @@ export const stateLegResults: Record<
       "totalVotes": 47538,
       "candidates": [
        {
-        "name": "Patricia Torresray",
+        "name": "Patricia Torres Ray",
         "party": "D",
         "votes": 38470,
         "incumbent": true,
@@ -244773,7 +244773,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Tom Wyattyerka",
+        "name": "Tom Wyatt-Yerka",
         "party": "D",
         "votes": 5198
        }
@@ -244942,7 +244942,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Barbara Draherkline",
+        "name": "Barbara Draher Kline",
         "party": "D",
         "votes": 6858
        }
@@ -245784,7 +245784,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mary Kuneshpodein",
+        "name": "Mary Kunesh-Podein",
         "party": "D",
         "votes": 12408,
         "incumbent": true,
@@ -245824,7 +245824,7 @@ export const stateLegResults: Record<
       "totalVotes": 21585,
       "candidates": [
        {
-        "name": "Jamie Beckerfinn",
+        "name": "Jamie Becker-Finn",
         "party": "D",
         "votes": 13042,
         "incumbent": true,
@@ -246061,7 +246061,7 @@ export const stateLegResults: Record<
       "totalVotes": 20553,
       "candidates": [
        {
-        "name": "Carlie Kotyzawitthuhn",
+        "name": "Carlie Kotyza-Witthuhn",
         "party": "D",
         "votes": 10397,
         "winner": true
@@ -247773,7 +247773,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ashley Martinezperez",
+        "name": "Ashley Martinez-Perez",
         "party": "D",
         "votes": 6417
        }
@@ -248483,7 +248483,7 @@ export const stateLegResults: Record<
       "totalVotes": 25701,
       "candidates": [
        {
-        "name": "Jamie Beckerfinn",
+        "name": "Jamie Becker-Finn",
         "party": "D",
         "votes": 15951,
         "incumbent": true,
@@ -248588,7 +248588,7 @@ export const stateLegResults: Record<
       "totalVotes": 21956,
       "candidates": [
        {
-        "name": "Cedrick Rommelfrazier",
+        "name": "Cedrick Rommel Frazier",
         "party": "D",
         "votes": 13870,
         "winner": true
@@ -248727,7 +248727,7 @@ export const stateLegResults: Record<
       "totalVotes": 24372,
       "candidates": [
        {
-        "name": "Carlie Kotyzawitthuhn",
+        "name": "Carlie Kotyza-Witthuhn",
         "party": "D",
         "votes": 13410,
         "incumbent": true,
@@ -248869,7 +248869,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mariah Delapaz",
+        "name": "Mariah de la Paz",
         "party": "R",
         "votes": 8243
        }
@@ -248929,7 +248929,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kelly Jahnerbyrne",
+        "name": "Kelly Jahner-Byrne",
         "party": "R",
         "votes": 14350
        }
@@ -249177,7 +249177,7 @@ export const stateLegResults: Record<
         "votes": 4249
        },
        {
-        "name": "Lisa Nealdelgado",
+        "name": "Lisa Neal-Delgado",
         "party": "O",
         "votes": 1804
        }
@@ -250352,7 +250352,7 @@ export const stateLegResults: Record<
       "totalVotes": 44758,
       "candidates": [
        {
-        "name": "Mary Kuneshpodein",
+        "name": "Mary Kunesh-Podein",
         "party": "D",
         "votes": 29967,
         "winner": true
@@ -250606,7 +250606,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary Giulianistephens",
+        "name": "Mary Giuliani Stephens",
         "party": "R",
         "votes": 25030
        }
@@ -250834,7 +250834,7 @@ export const stateLegResults: Record<
         "votes": 7488
        },
        {
-        "name": "Patricia Jirovecmcardell",
+        "name": "Patricia Jirovec McArdell",
         "party": "O",
         "votes": 3281
        }
@@ -250981,7 +250981,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Erika Baileyjohnson",
+        "name": "Erika Bailey-Johnson",
         "party": "D",
         "votes": 6505
        }
@@ -251993,7 +251993,7 @@ export const stateLegResults: Record<
       "totalVotes": 19731,
       "candidates": [
        {
-        "name": "Anne Neubrindley",
+        "name": "Anne Neu",
         "party": "R",
         "votes": 12260,
         "incumbent": true,
@@ -252458,7 +252458,7 @@ export const stateLegResults: Record<
       "totalVotes": 20649,
       "candidates": [
        {
-        "name": "Jamie Beckerfinn",
+        "name": "Jamie Becker-Finn",
         "party": "D",
         "votes": 13997,
         "incumbent": true,
@@ -252556,7 +252556,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Cedrick R. Frazier",
+        "name": "Cedrick Rommel Frazier",
         "party": "D",
         "votes": 12266,
         "incumbent": true,
@@ -252697,7 +252697,7 @@ export const stateLegResults: Record<
       "totalVotes": 18976,
       "candidates": [
        {
-        "name": "Amanda Hemmingsenjaeger",
+        "name": "Amanda Hemmingsen-Jaeger",
         "party": "D",
         "votes": 11426,
         "winner": true
@@ -252795,7 +252795,7 @@ export const stateLegResults: Record<
       "totalVotes": 19780,
       "candidates": [
        {
-        "name": "Carlie Kotyzawitthuhn",
+        "name": "Carlie Kotyza-Witthuhn",
         "party": "D",
         "votes": 11406,
         "incumbent": true,
@@ -253004,7 +253004,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Brendan Vanalstyne",
+        "name": "Brendan van Alstyne",
         "party": "D",
         "votes": 7962
        }
@@ -253311,7 +253311,7 @@ export const stateLegResults: Record<
       "totalVotes": 21485,
       "candidates": [
        {
-        "name": "Samantha Sencermura",
+        "name": "Samantha Sencer-Mura",
         "party": "D",
         "votes": 19398,
         "winner": true
@@ -253346,7 +253346,7 @@ export const stateLegResults: Record<
       "totalVotes": 21208,
       "candidates": [
        {
-        "name": "Kaohly Vangher",
+        "name": "Kaohly Her",
         "party": "D",
         "votes": 18080,
         "incumbent": true,
@@ -253410,7 +253410,7 @@ export const stateLegResults: Record<
       "totalVotes": 15202,
       "candidates": [
        {
-        "name": "Maria Isa Perezhedges",
+        "name": "Maria Isa Perez-Hedges",
         "party": "D",
         "votes": 11955,
         "winner": true
@@ -254252,7 +254252,7 @@ export const stateLegResults: Record<
       "totalVotes": 30890,
       "candidates": [
        {
-        "name": "Mary K. Kunesh",
+        "name": "Mary Kunesh-Podein",
         "party": "D",
         "votes": 20563,
         "incumbent": true,
@@ -254338,7 +254338,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Andrew Thomasschuler",
+        "name": "Andrew Schuler",
         "party": "O",
         "votes": 7686
        }
@@ -254583,7 +254583,7 @@ export const stateLegResults: Record<
       "totalVotes": 39288,
       "candidates": [
        {
-        "name": "Erin Mayequade",
+        "name": "Erin Quade",
         "party": "D",
         "votes": 22281,
         "winner": true
@@ -254768,7 +254768,7 @@ export const stateLegResults: Record<
       "totalVotes": 29509,
       "candidates": [
        {
-        "name": "Clare Oumouverbeten",
+        "name": "Clare Oumou Verbeten",
         "party": "D",
         "votes": 23987,
         "winner": true
@@ -258323,7 +258323,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sandy Vanwagner",
+        "name": "Sandy van Wagner",
         "party": "D",
         "votes": 7003
        }
@@ -258567,7 +258567,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Gail McCannbeatty",
+        "name": "Gail McCann Beatty",
         "party": "D",
         "votes": 14676,
         "incumbent": true,
@@ -258603,7 +258603,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "William E. Vanbuskirk",
+        "name": "William E. van Buskirk",
         "party": "R",
         "votes": 6062
        }
@@ -258783,7 +258783,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Joe Donmcgaugh",
+        "name": "Joe Don McGaugh",
         "party": "R",
         "votes": 14205,
         "incumbent": true,
@@ -258866,7 +258866,7 @@ export const stateLegResults: Record<
       "totalVotes": 16509,
       "candidates": [
        {
-        "name": "Cheri Toalsonreisch",
+        "name": "Cheri Toalson Reisch",
         "party": "R",
         "votes": 9200,
         "winner": true
@@ -259085,7 +259085,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ashley Beardfosnow",
+        "name": "Ashley Beard-Fosnow",
         "party": "D",
         "votes": 7139
        }
@@ -259810,7 +259810,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Vicki Lorenzenglund",
+        "name": "Vicki Lorenz Englund",
         "party": "D",
         "votes": 8582
        }
@@ -260175,7 +260175,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Karen Settlemoirberg",
+        "name": "Karen Settlemoir-Berg",
         "party": "D",
         "votes": 6995
        }
@@ -260854,7 +260854,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Tila Rowlandhubrecht",
+        "name": "Tila Rowland Hubrecht",
         "party": "R",
         "votes": 13990,
         "incumbent": true,
@@ -261282,7 +261282,7 @@ export const stateLegResults: Record<
         "votes": 19988
        },
        {
-        "name": "William Trumanwayne",
+        "name": "William Truman Wayne",
         "party": "O",
         "votes": 4077
        }
@@ -261612,7 +261612,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Brady Leeodell",
+        "name": "Brady Lee Odell",
         "party": "D",
         "votes": 4856
        }
@@ -261632,7 +261632,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sandy Vanwagner",
+        "name": "Sandy van Wagner",
         "party": "D",
         "votes": 6740
        }
@@ -261887,7 +261887,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ashley Blandmanlove",
+        "name": "Ashley Bland Manlove",
         "party": "D",
         "votes": 12823,
         "winner": true
@@ -261960,7 +261960,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ryana Parksshaw",
+        "name": "Ryana Parks-Shaw",
         "party": "D",
         "votes": 8069
        }
@@ -262224,7 +262224,7 @@ export const stateLegResults: Record<
       "totalVotes": 14802,
       "candidates": [
        {
-        "name": "Cheri Toalsonreisch",
+        "name": "Cheri Toalson Reisch",
         "party": "R",
         "votes": 8365,
         "incumbent": true,
@@ -262992,7 +262992,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Maria N. Chappellenadal",
+        "name": "Maria N. Chappelle-Nadal",
         "party": "D",
         "votes": 13231,
         "winner": true
@@ -263517,7 +263517,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Karen Settlemoirberg",
+        "name": "Karen Settlemoir-Berg",
         "party": "D",
         "votes": 6109
        }
@@ -264939,7 +264939,7 @@ export const stateLegResults: Record<
       "totalVotes": 19713,
       "candidates": [
        {
-        "name": "Dean Vanschoiack",
+        "name": "Dean van Schoiack",
         "party": "R",
         "votes": 14047,
         "winner": true
@@ -265004,7 +265004,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Wade Hughkiefer",
+        "name": "Wade Hugh Kiefer",
         "party": "D",
         "votes": 7926
        }
@@ -265251,7 +265251,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ashley Blandmanlove",
+        "name": "Ashley Bland Manlove",
         "party": "D",
         "votes": 15201,
         "incumbent": true,
@@ -265557,7 +265557,7 @@ export const stateLegResults: Record<
       "totalVotes": 18085,
       "candidates": [
        {
-        "name": "Cheri Toalsonreisch",
+        "name": "Cheri Toalson Reisch",
         "party": "R",
         "votes": 10737,
         "incumbent": true,
@@ -265691,7 +265691,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "William Trumanwayne",
+        "name": "William Truman Wayne",
         "party": "O",
         "votes": 3551
        }
@@ -266424,7 +266424,7 @@ export const stateLegResults: Record<
       "totalVotes": 14215,
       "candidates": [
        {
-        "name": "Bridget Walshmoore",
+        "name": "Bridget Walsh Moore",
         "party": "D",
         "votes": 7625,
         "winner": true
@@ -266841,7 +266841,7 @@ export const stateLegResults: Record<
       "totalVotes": 16350,
       "candidates": [
        {
-        "name": "Cyndi Buchheitcourtway",
+        "name": "Cyndi Buchheit-Courtway",
         "party": "R",
         "votes": 11856,
         "winner": true
@@ -266970,7 +266970,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Yvonne Reeveschong",
+        "name": "Yvonne Reeves-Chong",
         "party": "D",
         "votes": 2717
        }
@@ -268179,7 +268179,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Dean Vanschoiack",
+        "name": "Dean van Schoiack",
         "party": "R",
         "votes": 10803,
         "incumbent": true,
@@ -268480,7 +268480,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ashley Blandmanlove",
+        "name": "Ashley Bland Manlove",
         "party": "D",
         "votes": 8057,
         "incumbent": true,
@@ -268802,7 +268802,7 @@ export const stateLegResults: Record<
       "totalVotes": 14414,
       "candidates": [
        {
-        "name": "Cheri Toalsonreisch",
+        "name": "Cheri Toalson Reisch",
         "party": "R",
         "votes": 9021,
         "incumbent": true,
@@ -268838,7 +268838,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "David Tysonsmith",
+        "name": "David Tyson Smith",
         "party": "D",
         "votes": 7549,
         "winner": true
@@ -269094,7 +269094,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "J. Donsalcedo",
+        "name": "J. Don Salcedo",
         "party": "D",
         "votes": 4605
        }
@@ -269213,7 +269213,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Chantelle N. Nicksonclark",
+        "name": "Chantelle Nickson-Clark",
         "party": "D",
         "votes": 11514,
         "winner": true
@@ -269529,7 +269529,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Yolonda Fountainhenderson",
+        "name": "Yolonda Fountain-Henderson",
         "party": "D",
         "votes": 7026,
         "winner": true
@@ -269670,7 +269670,7 @@ export const stateLegResults: Record<
       "totalVotes": 9382,
       "candidates": [
        {
-        "name": "Bridget Walshmoore",
+        "name": "Bridget Walsh Moore",
         "party": "D",
         "votes": 5129,
         "incumbent": true,
@@ -270067,7 +270067,7 @@ export const stateLegResults: Record<
       "totalVotes": 13288,
       "candidates": [
        {
-        "name": "Cyndi Buchheitcourtway",
+        "name": "Cyndi Buchheit-Courtway",
         "party": "R",
         "votes": 9587,
         "incumbent": true,
@@ -270506,7 +270506,7 @@ export const stateLegResults: Record<
       "totalVotes": 13720,
       "candidates": [
        {
-        "name": "Jamie Raygragg",
+        "name": "Jamie Ray Gragg",
         "party": "R",
         "votes": 10605,
         "winner": true
@@ -270676,7 +270676,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Cameron Buntingparker",
+        "name": "Cameron Bunting Parker",
         "party": "R",
         "votes": 8043,
         "winner": true
@@ -270777,7 +270777,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ginger Kisseewitty",
+        "name": "Ginger Kissee Witty",
         "party": "D",
         "votes": 2489
        }
@@ -274649,7 +274649,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Janis Triplettpatterson",
+        "name": "Janis Triplett Patterson",
         "party": "D",
         "votes": 2289
        }
@@ -274717,7 +274717,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Theresa Gillespieisom",
+        "name": "Theresa Gillespie Isom",
         "party": "D",
         "votes": 1943
        }
@@ -275225,7 +275225,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jessica Loftonlewis",
+        "name": "Jessica Lofton Lewis",
         "party": "O",
         "votes": 1648
        }
@@ -275275,7 +275275,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Dana Underwoodmclean",
+        "name": "Dana Underwood McLean",
         "party": "R",
         "votes": 6446,
         "winner": true
@@ -275289,7 +275289,7 @@ export const stateLegResults: Record<
       "totalVotes": 3092,
       "candidates": [
        {
-        "name": "Hester Jackson McCray",
+        "name": "Hester Jackson-McCray",
         "party": "D",
         "votes": 1553,
         "winner": true
@@ -275358,7 +275358,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "C. Scottbounds",
+        "name": "C. Bounds",
         "party": "R",
         "votes": 6325,
         "incumbent": true,
@@ -275508,7 +275508,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Rita Wilkinsongoss",
+        "name": "Rita Wilkinson Goss",
         "party": "D",
         "votes": 2944
        }
@@ -275667,7 +275667,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Stephanie McKenziefoster",
+        "name": "Stephanie McKenzie Foster",
         "party": "D",
         "votes": 7025,
         "winner": true
@@ -275774,7 +275774,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Alyce Griffinclarke",
+        "name": "Alyce Clarke",
         "party": "D",
         "votes": 4425,
         "incumbent": true,
@@ -276315,13 +276315,13 @@ export const stateLegResults: Record<
       "totalVotes": 6073,
       "candidates": [
        {
-        "name": "Missy Warrenmcgee",
+        "name": "Missy Warren McGee",
         "party": "R",
         "votes": 3891,
         "winner": true
        },
        {
-        "name": "Brandon Terrionrue",
+        "name": "Brandon Terrion Rue",
         "party": "D",
         "votes": 2182
        }
@@ -276417,7 +276417,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Stacey Hobgoodwilkes",
+        "name": "Stacey Hobgood Wilkes",
         "party": "R",
         "votes": 5025,
         "winner": true
@@ -276604,7 +276604,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sonya Williamsbarnes",
+        "name": "Sonya Williams Barnes",
         "party": "D",
         "votes": 3690,
         "incumbent": true,
@@ -276730,7 +276730,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Rita Pottsparks",
+        "name": "Rita Parks",
         "party": "R",
         "votes": 16200,
         "incumbent": true,
@@ -276815,7 +276815,7 @@ export const stateLegResults: Record<
       "totalVotes": 19323,
       "candidates": [
        {
-        "name": "Nicole Akinsboyd",
+        "name": "Nicole Akins Boyd",
         "party": "R",
         "votes": 11254,
         "winner": true
@@ -276861,7 +276861,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Clara Davis Dawkins",
+        "name": "Clara Davis Dawkins-Davis",
         "party": "O",
         "votes": 3574
        }
@@ -276915,7 +276915,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lydia Graveschassaniol",
+        "name": "Lydia Chassaniol",
         "party": "R",
         "votes": 16240,
         "incumbent": true,
@@ -276947,7 +276947,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Angela Turnerford",
+        "name": "Angela Turner",
         "party": "D",
         "votes": 14210,
         "incumbent": true,
@@ -277137,7 +277137,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Hillman Teromefrazier",
+        "name": "Hillman Frazier",
         "party": "D",
         "votes": 14215,
         "incumbent": true,
@@ -277353,7 +277353,7 @@ export const stateLegResults: Record<
       "totalVotes": 16061,
       "candidates": [
        {
-        "name": "Angela Burkshill",
+        "name": "Angela Hill",
         "party": "R",
         "votes": 12307,
         "incumbent": true,
@@ -280825,7 +280825,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Barnett G. Sporkinmorrison",
+        "name": "Barnett G. Sporkin-Morrison",
         "party": "D",
         "votes": 1275
        }
@@ -280909,7 +280909,7 @@ export const stateLegResults: Record<
       "totalVotes": 3901,
       "candidates": [
        {
-        "name": "Lola Sheldongalloway",
+        "name": "Lola Sheldon-Galloway",
         "party": "R",
         "votes": 2100,
         "winner": true
@@ -281100,7 +281100,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jonathan Windyboy",
+        "name": "Jonathan Windy Boy",
         "party": "D",
         "votes": 2499,
         "winner": true
@@ -281289,7 +281289,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sharon Stewartperegoy",
+        "name": "Sharon Stewart Peregoy",
         "party": "D",
         "votes": 2496,
         "winner": true
@@ -281454,7 +281454,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kerri Seekinscrowe",
+        "name": "Kerri Seekins-Crowe",
         "party": "R",
         "votes": 1712
        }
@@ -282197,7 +282197,7 @@ export const stateLegResults: Record<
       "totalVotes": 5127,
       "candidates": [
        {
-        "name": "Ellie Hillsmith",
+        "name": "Ellie Hill Smith",
         "party": "D",
         "votes": 3113,
         "incumbent": true,
@@ -282586,7 +282586,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Carolyn Peaselopez",
+        "name": "Carolyn Pease-Lopez",
         "party": "D",
         "votes": 3087
        }
@@ -282606,7 +282606,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Paul J. Vantricht",
+        "name": "Paul J. van Tricht",
         "party": "D",
         "votes": 3404
        }
@@ -283179,7 +283179,7 @@ export const stateLegResults: Record<
       "totalVotes": 3319,
       "candidates": [
        {
-        "name": "Tyson T. Runningwolf",
+        "name": "Tyson T. Running Wolf",
         "party": "D",
         "votes": 2039,
         "winner": true
@@ -283292,7 +283292,7 @@ export const stateLegResults: Record<
       "totalVotes": 3750,
       "candidates": [
        {
-        "name": "Lola Sheldongalloway",
+        "name": "Lola Sheldon-Galloway",
         "party": "R",
         "votes": 1882,
         "incumbent": true,
@@ -283457,7 +283457,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "E. Wyliegalt",
+        "name": "E. Wylie Galt",
         "party": "R",
         "votes": 3990,
         "incumbent": true,
@@ -283493,7 +283493,7 @@ export const stateLegResults: Record<
       "totalVotes": 3718,
       "candidates": [
        {
-        "name": "Jonathan Windyboy",
+        "name": "Jonathan Windy Boy",
         "party": "D",
         "votes": 2355,
         "incumbent": true,
@@ -283663,7 +283663,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sharon Stewartperegoy",
+        "name": "Sharon Stewart Peregoy",
         "party": "D",
         "votes": 2748,
         "incumbent": true,
@@ -283797,7 +283797,7 @@ export const stateLegResults: Record<
       "totalVotes": 3190,
       "candidates": [
        {
-        "name": "Emma Kerrcarpenter",
+        "name": "Emma Kerr-Carpenter",
         "party": "D",
         "votes": 1953,
         "winner": true
@@ -284373,7 +284373,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Robert Farrisolsen",
+        "name": "Robert Farris-Olsen",
         "party": "D",
         "votes": 4149,
         "winner": true
@@ -284627,7 +284627,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Eldena N. Beardontwalk",
+        "name": "Eldena N. Bear Dont Walk",
         "party": "D",
         "votes": 1912
        }
@@ -284808,7 +284808,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Diane Taylormahnke",
+        "name": "Diane Taylor-Mahnke",
         "party": "D",
         "votes": 3097
        }
@@ -285363,7 +285363,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jerramy Dearruel",
+        "name": "Jerramy Dear-Ruel",
         "party": "D",
         "votes": 2294
        }
@@ -285544,7 +285544,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Tyson T. Runningwolf",
+        "name": "Tyson T. Running Wolf",
         "party": "D",
         "votes": 3237,
         "incumbent": true,
@@ -285566,7 +285566,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Barnett G. Sporkinmorrison",
+        "name": "Barnett G. Sporkin-Morrison",
         "party": "D",
         "votes": 1219
        }
@@ -285651,7 +285651,7 @@ export const stateLegResults: Record<
       "totalVotes": 4412,
       "candidates": [
        {
-        "name": "Lola Sheldongalloway",
+        "name": "Lola Sheldon-Galloway",
         "party": "R",
         "votes": 2572,
         "incumbent": true,
@@ -285801,7 +285801,7 @@ export const stateLegResults: Record<
       "totalVotes": 5722,
       "candidates": [
        {
-        "name": "E. Wyliegalt",
+        "name": "E. Wylie Galt",
         "party": "R",
         "votes": 4559,
         "incumbent": true,
@@ -286022,7 +286022,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kerri Seekinscrowe",
+        "name": "Kerri Seekins-Crowe",
         "party": "R",
         "votes": 3553,
         "winner": true
@@ -286122,7 +286122,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Leigh Verrillrhys",
+        "name": "Leigh Verrill-Rhys",
         "party": "R",
         "votes": 2415
        }
@@ -286135,7 +286135,7 @@ export const stateLegResults: Record<
       "totalVotes": 3826,
       "candidates": [
        {
-        "name": "Emma Kerrcarpenter",
+        "name": "Emma Kerr-Carpenter",
         "party": "D",
         "votes": 2183,
         "incumbent": true,
@@ -286685,7 +286685,7 @@ export const stateLegResults: Record<
       "totalVotes": 6755,
       "candidates": [
        {
-        "name": "Rob Farrisolsen",
+        "name": "Rob Farris-Olsen",
         "party": "D",
         "votes": 3749,
         "incumbent": true,
@@ -287515,7 +287515,7 @@ export const stateLegResults: Record<
       "totalVotes": 11090,
       "candidates": [
        {
-        "name": "Ellie Hill",
+        "name": "Ellie Hill Smith",
         "party": "D",
         "votes": 7045,
         "winner": true
@@ -287848,7 +287848,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Tyson Runningwolf",
+        "name": "Tyson Running Wolf",
         "party": "D",
         "votes": 1605,
         "incumbent": true,
@@ -287870,7 +287870,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Barnett G. Sporkinmorrison",
+        "name": "Barnett G. Sporkin-Morrison",
         "party": "D",
         "votes": 1049
        }
@@ -287954,7 +287954,7 @@ export const stateLegResults: Record<
       "totalVotes": 3184,
       "candidates": [
        {
-        "name": "Lola Sheldongalloway",
+        "name": "Lola Sheldon-Galloway",
         "party": "R",
         "votes": 1787,
         "incumbent": true,
@@ -288149,7 +288149,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jonathan Windyboy",
+        "name": "Jonathan Windy Boy",
         "party": "D",
         "votes": 1322,
         "incumbent": true,
@@ -288317,7 +288317,7 @@ export const stateLegResults: Record<
       "totalVotes": 2599,
       "candidates": [
        {
-        "name": "Sharon Stewartperegoy",
+        "name": "Sharon Stewart Peregoy",
         "party": "D",
         "votes": 1374,
         "incumbent": true,
@@ -288338,7 +288338,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kerri Seekinscrowe",
+        "name": "Kerri Seekins-Crowe",
         "party": "R",
         "votes": 2998,
         "incumbent": true,
@@ -288447,7 +288447,7 @@ export const stateLegResults: Record<
       "totalVotes": 2483,
       "candidates": [
        {
-        "name": "Emma Kerrcarpenter",
+        "name": "Emma Kerr-Carpenter",
         "party": "D",
         "votes": 1438,
         "incumbent": true,
@@ -288993,7 +288993,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Gregory Leefrazer",
+        "name": "Gregory Frazer",
         "party": "R",
         "votes": 2504,
         "incumbent": true,
@@ -289169,7 +289169,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Will Lovettmoore",
+        "name": "Will Lovett Moore",
         "party": "O",
         "votes": 1505
        }
@@ -289385,7 +289385,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sonia Shearerhiett",
+        "name": "Sonia Shearer-Hiett",
         "party": "R",
         "votes": 1860
        }
@@ -289860,7 +289860,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jacob Vanhorn",
+        "name": "Jacob van Horn",
         "party": "R",
         "votes": 3579
        }
@@ -292365,7 +292365,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Marva Fisherbaldwin",
+        "name": "Marva Fisher Baldwin",
         "party": "D",
         "votes": 12637
        }
@@ -292436,7 +292436,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "William Dukehancock II",
+        "name": "William Duke Hancock II",
         "party": "R",
         "votes": 11072
        }
@@ -292745,7 +292745,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jean Farmerbutterfield",
+        "name": "Jean Farmer-Butterfield",
         "party": "D",
         "votes": 26895,
         "incumbent": true,
@@ -292780,7 +292780,7 @@ export const stateLegResults: Record<
       "totalVotes": 44615,
       "candidates": [
        {
-        "name": "Donna McDowellwhite",
+        "name": "Donna McDowell White",
         "party": "R",
         "votes": 25899,
         "winner": true
@@ -292977,7 +292977,7 @@ export const stateLegResults: Record<
       "totalVotes": 50017,
       "candidates": [
        {
-        "name": "Linda Huntwilliams",
+        "name": "Linda Hunt-Williams",
         "party": "R",
         "votes": 27448,
         "winner": true
@@ -292997,7 +292997,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Yvonne Lewisholley",
+        "name": "Yvonne Lewis Holley",
         "party": "D",
         "votes": 28990,
         "incumbent": true,
@@ -293344,7 +293344,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mary Harrison",
+        "name": "Mary Price Harrison",
         "party": "D",
         "votes": 31518,
         "incumbent": true,
@@ -293707,7 +293707,7 @@ export const stateLegResults: Record<
       "totalVotes": 34618,
       "candidates": [
        {
-        "name": "Allen McNeill",
+        "name": "Allen Ray McNeill",
         "party": "R",
         "votes": 27039,
         "incumbent": true,
@@ -293728,7 +293728,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Julia Cravenhoward",
+        "name": "Julia Craven Howard",
         "party": "R",
         "votes": 31254,
         "incumbent": true,
@@ -293910,7 +293910,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mitchell Smithsetzer",
+        "name": "Mitchell Smith Setzer",
         "party": "R",
         "votes": 28409,
         "incumbent": true,
@@ -293932,7 +293932,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Vera Smithreynolds",
+        "name": "Vera Smith Reynolds",
         "party": "D",
         "votes": 8641
        }
@@ -294204,7 +294204,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Connie Greenjohnson",
+        "name": "Connie Green-Johnson",
         "party": "D",
         "votes": 17689
        }
@@ -294431,7 +294431,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Rhonda Coleschandevel",
+        "name": "Rhonda Cole Schandevel",
         "party": "D",
         "votes": 17549
        }
@@ -294529,7 +294529,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Erica Smithingram",
+        "name": "Erica Smith-Ingram",
         "party": "D",
         "votes": 57506,
         "incumbent": true,
@@ -294597,7 +294597,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Louis M. Pate Jr.",
+        "name": "Louis Milford Pate Jr.",
         "party": "R",
         "votes": 66070,
         "incumbent": true,
@@ -294746,7 +294746,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Laurel Deeganfricke",
+        "name": "Laurel Deegan-Fricke",
         "party": "D",
         "votes": 53905
        }
@@ -294906,7 +294906,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary Lopezcarter",
+        "name": "Mary Lopez-Carter",
         "party": "R",
         "votes": 37322
        }
@@ -295031,7 +295031,7 @@ export const stateLegResults: Record<
       "totalVotes": 82037,
       "candidates": [
        {
-        "name": "Shirley Blackburnrandleman",
+        "name": "Shirley Blackburn Randleman",
         "party": "R",
         "votes": 59602,
         "incumbent": true,
@@ -295383,7 +295383,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Terry Vanduyn",
+        "name": "Terry van Duyn",
         "party": "D",
         "votes": 71802,
         "incumbent": true,
@@ -295548,7 +295548,7 @@ export const stateLegResults: Record<
       "totalVotes": 31641,
       "candidates": [
        {
-        "name": "Lisa Stonebarnes",
+        "name": "Lisa Stone Barnes",
         "party": "R",
         "votes": 18352,
         "winner": true
@@ -295574,7 +295574,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Brenda Letchworthsmith",
+        "name": "Brenda Letchworth Smith",
         "party": "R",
         "votes": 8515
        }
@@ -295885,7 +295885,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jean Farmerbutterfield",
+        "name": "Jean Farmer-Butterfield",
         "party": "D",
         "votes": 14219,
         "incumbent": true,
@@ -295924,7 +295924,7 @@ export const stateLegResults: Record<
       "totalVotes": 38028,
       "candidates": [
        {
-        "name": "Donna McDowellwhite",
+        "name": "Donna McDowell White",
         "party": "R",
         "votes": 22751,
         "incumbent": true,
@@ -296022,7 +296022,7 @@ export const stateLegResults: Record<
       "totalVotes": 36615,
       "candidates": [
        {
-        "name": "Zack Fordehawkins",
+        "name": "Zack Forde-Hawkins",
         "party": "D",
         "votes": 30613,
         "winner": true
@@ -296121,7 +296121,7 @@ export const stateLegResults: Record<
       "totalVotes": 42218,
       "candidates": [
        {
-        "name": "Julie Vonhaefen",
+        "name": "Julie von Haefen",
         "party": "D",
         "votes": 21551,
         "winner": true
@@ -296160,7 +296160,7 @@ export const stateLegResults: Record<
       "totalVotes": 28517,
       "candidates": [
        {
-        "name": "Yvonne Lewisholley",
+        "name": "Yvonne Lewis Holley",
         "party": "D",
         "votes": 23985,
         "incumbent": true,
@@ -296327,7 +296327,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Barbara S. Yateslockamy",
+        "name": "Barbara S. Yates-Lockamy",
         "party": "D",
         "votes": 7331
        }
@@ -296407,7 +296407,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kenneth Pricerothrock",
+        "name": "Kenneth Price Rothrock",
         "party": "R",
         "votes": 14210
        }
@@ -296619,7 +296619,7 @@ export const stateLegResults: Record<
       "totalVotes": 34744,
       "candidates": [
        {
-        "name": "Mary Priceharrison",
+        "name": "Mary Price Harrison",
         "party": "D",
         "votes": 25469,
         "incumbent": true,
@@ -296941,7 +296941,7 @@ export const stateLegResults: Record<
       "totalVotes": 32238,
       "candidates": [
        {
-        "name": "Julia Cravenhoward",
+        "name": "Julia Craven Howard",
         "party": "R",
         "votes": 23654,
         "incumbent": true,
@@ -296961,7 +296961,7 @@ export const stateLegResults: Record<
       "totalVotes": 26398,
       "candidates": [
        {
-        "name": "Allen Raymcneill",
+        "name": "Allen Ray McNeill",
         "party": "R",
         "votes": 20805,
         "incumbent": true,
@@ -297179,7 +297179,7 @@ export const stateLegResults: Record<
       "totalVotes": 26240,
       "candidates": [
        {
-        "name": "Mitchell Smithsetzer",
+        "name": "Mitchell Smith Setzer",
         "party": "R",
         "votes": 18959,
         "incumbent": true,
@@ -297206,7 +297206,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "John Worthwiles",
+        "name": "John Worth Wiles",
         "party": "D",
         "votes": 7170
        }
@@ -297524,7 +297524,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Geovani Oprysherow",
+        "name": "Geovani Opry Sherow",
         "party": "R",
         "votes": 4892
        }
@@ -297760,7 +297760,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Rhonda Coleschandevel",
+        "name": "Rhonda Cole Schandevel",
         "party": "D",
         "votes": 14506
        }
@@ -297824,7 +297824,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "D. Colephelps",
+        "name": "D. Cole Phelps",
         "party": "D",
         "votes": 35017
        }
@@ -297857,7 +297857,7 @@ export const stateLegResults: Record<
       "totalVotes": 63024,
       "candidates": [
        {
-        "name": "Erica D. Smith",
+        "name": "Erica D. Smith-Ingram",
         "party": "D",
         "votes": 33942,
         "incumbent": true,
@@ -297936,7 +297936,7 @@ export const stateLegResults: Record<
       "totalVotes": 56269,
       "candidates": [
        {
-        "name": "Louis Milfordpate Jr.",
+        "name": "Louis Milford Pate Jr.",
         "party": "R",
         "votes": 30329,
         "incumbent": true,
@@ -298301,7 +298301,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Helen Probstmills",
+        "name": "Helen Probst Mills",
         "party": "D",
         "votes": 31268
        }
@@ -298675,7 +298675,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "David Leelattimore",
+        "name": "David Lee Lattimore",
         "party": "D",
         "votes": 21204
        }
@@ -298768,7 +298768,7 @@ export const stateLegResults: Record<
       "totalVotes": 93611,
       "candidates": [
        {
-        "name": "Terry Vanduyn",
+        "name": "Terry van Duyn",
         "party": "D",
         "votes": 61092,
         "incumbent": true,
@@ -298822,7 +298822,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Emily Bunchnicholson",
+        "name": "Emily Bunch Nicholson",
         "party": "D",
         "votes": 17299
        }
@@ -298861,7 +298861,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Dorothea Downingwhite",
+        "name": "Dorothea White",
         "party": "D",
         "votes": 14575
        }
@@ -299044,7 +299044,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Virginia Coxdaugherty",
+        "name": "Virginia Cox-Daugherty",
         "party": "D",
         "votes": 16383
        }
@@ -299276,7 +299276,7 @@ export const stateLegResults: Record<
       "totalVotes": 39784,
       "candidates": [
        {
-        "name": "Linda Coopersuggs",
+        "name": "Linda Cooper-Suggs",
         "party": "D",
         "votes": 20928,
         "winner": true
@@ -299315,7 +299315,7 @@ export const stateLegResults: Record<
       "totalVotes": 62411,
       "candidates": [
        {
-        "name": "Donna McDowellwhite",
+        "name": "Donna McDowell White",
         "party": "R",
         "votes": 33495,
         "incumbent": true,
@@ -299347,7 +299347,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Warren Scottnail",
+        "name": "Warren Nail",
         "party": "R",
         "votes": 11527
        }
@@ -299417,7 +299417,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Zack Hawkins",
+        "name": "Zack Forde-Hawkins",
         "party": "D",
         "votes": 46341,
         "incumbent": true,
@@ -299504,7 +299504,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Fred Voncanon",
+        "name": "Fred von Canon",
         "party": "R",
         "votes": 28528
        }
@@ -299517,7 +299517,7 @@ export const stateLegResults: Record<
       "totalVotes": 57300,
       "candidates": [
        {
-        "name": "Julie Vonhaefen",
+        "name": "Julie von Haefen",
         "party": "D",
         "votes": 31644,
         "incumbent": true,
@@ -299698,7 +299698,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Frances Vinelljackson",
+        "name": "Frances Vinell Jackson",
         "party": "D",
         "votes": 19557
        }
@@ -299853,7 +299853,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sally Weeksbenson",
+        "name": "Sally Weeks Benson",
         "party": "D",
         "votes": 15129
        }
@@ -299893,7 +299893,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Gloria Harringtonovercash",
+        "name": "Gloria Harrington Overcash",
         "party": "D",
         "votes": 14865
        }
@@ -300003,7 +300003,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mary Priceharrison",
+        "name": "Mary Price Harrison",
         "party": "D",
         "votes": 33983,
         "incumbent": true,
@@ -300159,7 +300159,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Pam Demaria",
+        "name": "Pam de Maria",
         "party": "D",
         "votes": 15106
        }
@@ -300446,7 +300446,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Gayle Wesleyharris",
+        "name": "Gayle Wesley Harris",
         "party": "D",
         "votes": 13235
        }
@@ -301362,7 +301362,7 @@ export const stateLegResults: Record<
       "totalVotes": 111480,
       "candidates": [
        {
-        "name": "Lisa Stonebarnes",
+        "name": "Lisa Stone Barnes",
         "party": "R",
         "votes": 61287,
         "winner": true
@@ -301408,7 +301408,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Barbara Yateslockamy",
+        "name": "Barbara Yates-Lockamy",
         "party": "D",
         "votes": 25949
        }
@@ -301645,7 +301645,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Helen Probstmills",
+        "name": "Helen Probst Mills",
         "party": "D",
         "votes": 41546
        }
@@ -301664,7 +301664,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jane Ledwellgant",
+        "name": "Jane Ledwell Gant",
         "party": "D",
         "votes": 26609
        }
@@ -302516,7 +302516,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Amy Blockdeloach",
+        "name": "Amy Block Deloach",
         "party": "D",
         "votes": 18228
        }
@@ -302571,7 +302571,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "James Crowellproctor",
+        "name": "James Crowell Proctor",
         "party": "R",
         "votes": 13809
        }
@@ -302590,7 +302590,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Linda Coopersuggs",
+        "name": "Linda Cooper-Suggs",
         "party": "D",
         "votes": 12768,
         "incumbent": true
@@ -302624,7 +302624,7 @@ export const stateLegResults: Record<
       "totalVotes": 33767,
       "candidates": [
        {
-        "name": "Donna McDowellwhite",
+        "name": "Donna McDowell White",
         "party": "R",
         "votes": 19984,
         "incumbent": true,
@@ -302721,7 +302721,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Zack Hawkins",
+        "name": "Zack Forde-Hawkins",
         "party": "D",
         "votes": 24814,
         "incumbent": true,
@@ -302807,7 +302807,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Fred Voncanon",
+        "name": "Fred von Canon",
         "party": "R",
         "votes": 17106
        }
@@ -302820,7 +302820,7 @@ export const stateLegResults: Record<
       "totalVotes": 38186,
       "candidates": [
        {
-        "name": "Julie Vonhaefen",
+        "name": "Julie von Haefen",
         "party": "D",
         "votes": 21966,
         "incumbent": true,
@@ -302994,7 +302994,7 @@ export const stateLegResults: Record<
       "totalVotes": 20212,
       "candidates": [
        {
-        "name": "Frances Jackson",
+        "name": "Frances Vinell Jackson",
         "party": "D",
         "votes": 11148,
         "winner": true
@@ -303395,7 +303395,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ives Brizueladesholar",
+        "name": "Ives Brizuela de Sholar",
         "party": "R",
         "votes": 7220
        }
@@ -303514,7 +303514,7 @@ export const stateLegResults: Record<
       "totalVotes": 27587,
       "candidates": [
        {
-        "name": "Diamond Statonwilliams",
+        "name": "Diamond Staton-Williams",
         "party": "D",
         "votes": 14108,
         "winner": true
@@ -303540,7 +303540,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Carla Catalanday",
+        "name": "Carla Catalan Day",
         "party": "D",
         "votes": 18416
        }
@@ -303586,7 +303586,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Julia C. Howard",
+        "name": "Julia Craven Howard",
         "party": "R",
         "votes": 30953,
         "incumbent": true,
@@ -303800,7 +303800,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mitchell Smithsetzer",
+        "name": "Mitchell Smith Setzer",
         "party": "R",
         "votes": 27255,
         "incumbent": true,
@@ -304313,13 +304313,13 @@ export const stateLegResults: Record<
       "totalVotes": 40950,
       "candidates": [
        {
-        "name": "Jennifer Cappsbalkcom",
+        "name": "Jennifer Capps Balkcom",
         "party": "R",
         "votes": 24144,
         "winner": true
        },
        {
-        "name": "Michael Greeroshea",
+        "name": "Michael Greer Oshea",
         "party": "D",
         "votes": 16806
        }
@@ -304570,7 +304570,7 @@ export const stateLegResults: Record<
       "totalVotes": 76034,
       "candidates": [
        {
-        "name": "Lisa Stonebarnes",
+        "name": "Lisa Stone Barnes",
         "party": "R",
         "votes": 41701,
         "incumbent": true,
@@ -304707,7 +304707,7 @@ export const stateLegResults: Record<
       "totalVotes": 81079,
       "candidates": [
        {
-        "name": "Mary Willsbode",
+        "name": "Mary Wills Bode",
         "party": "D",
         "votes": 42783,
         "winner": true
@@ -304844,7 +304844,7 @@ export const stateLegResults: Record<
       "totalVotes": 75386,
       "candidates": [
        {
-        "name": "Amy Scottgaley",
+        "name": "Amy Galey",
         "party": "R",
         "votes": 47355,
         "incumbent": true,
@@ -305307,7 +305307,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Karen Burnettemccracken",
+        "name": "Karen Burnette McCracken",
         "party": "D",
         "votes": 30347
        }
@@ -309415,7 +309415,7 @@ export const stateLegResults: Record<
       "totalVotes": 13030,
       "candidates": [
        {
-        "name": "Shannon Roersjones",
+        "name": "Shannon Roers Jones",
         "party": "R",
         "votes": 3732,
         "winner": true
@@ -310237,7 +310237,7 @@ export const stateLegResults: Record<
         "votes": 2420
        },
        {
-        "name": "Jessica Dillonhawkes",
+        "name": "Jessica Dillon Hawkes",
         "party": "D",
         "votes": 2153
        }
@@ -311539,7 +311539,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Krisanna Holkuppeterson",
+        "name": "Krisanna Holkup Peterson",
         "party": "D",
         "votes": 1945
        },
@@ -311739,7 +311739,7 @@ export const stateLegResults: Record<
       "totalVotes": 14301,
       "candidates": [
        {
-        "name": "Shannon Roersjones",
+        "name": "Shannon Roers Jones",
         "party": "R",
         "votes": 3974,
         "incumbent": true,
@@ -311799,7 +311799,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lisa Finleydeville",
+        "name": "Lisa Finley-Deville",
         "party": "D",
         "votes": 2353
        }
@@ -312417,7 +312417,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Heather Lawrenceskadsem",
+        "name": "Heather Lawrence-Skadsem",
         "party": "D",
         "votes": 1615
        }
@@ -312934,7 +312934,7 @@ export const stateLegResults: Record<
       "totalVotes": 6666,
       "candidates": [
        {
-        "name": "Karla Rosehanson",
+        "name": "Karla Hanson",
         "party": "D",
         "votes": 2547,
         "incumbent": true,
@@ -312948,7 +312948,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Gwendorlene Cheaaltenburg",
+        "name": "Gwendorlene Chea Altenburg",
         "party": "R",
         "votes": 1604
        }
@@ -313004,7 +313004,7 @@ export const stateLegResults: Record<
       "totalVotes": 1777,
       "candidates": [
        {
-        "name": "Lisa Finleydeville",
+        "name": "Lisa Finley-Deville",
         "party": "D",
         "votes": 1230,
         "winner": true
@@ -315637,7 +315637,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Bob Vanvalkenburg",
+        "name": "Bob van Valkenburg",
         "party": "R",
         "votes": 3319
        }
@@ -315650,7 +315650,7 @@ export const stateLegResults: Record<
       "totalVotes": 11717,
       "candidates": [
        {
-        "name": "Patty Pansingbrooks",
+        "name": "Patty Pansing Brooks",
         "party": "D",
         "votes": 11717,
         "incumbent": true,
@@ -316352,13 +316352,13 @@ export const stateLegResults: Record<
       "totalVotes": 16618,
       "candidates": [
        {
-        "name": "R. Brad Vongillern",
+        "name": "R. Brad von Gillern",
         "party": "O",
         "votes": 8710,
         "winner": true
        },
        {
-        "name": "Cindy Maxwellostdiek",
+        "name": "Cindy Maxwell-Ostdiek",
         "party": "O",
         "votes": 7908
        }
@@ -316398,7 +316398,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Marilyn Arantasher",
+        "name": "Marilyn Arant Asher",
         "party": "O",
         "votes": 4116
        }
@@ -317370,7 +317370,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Charlie Stclair",
+        "name": "Charlie St Clair",
         "party": "D",
         "votes": 3050
        },
@@ -317478,7 +317478,7 @@ export const stateLegResults: Record<
         "votes": 1254
        },
        {
-        "name": "George Condodemetraky",
+        "name": "George Condode-Metraky",
         "party": "D",
         "votes": 887
        }
@@ -318345,7 +318345,7 @@ export const stateLegResults: Record<
         "votes": 1913
        },
        {
-        "name": "Judy Wallickfrothingham",
+        "name": "Judy Wallick",
         "party": "D",
         "votes": 1638
        }
@@ -318416,7 +318416,7 @@ export const stateLegResults: Record<
         "votes": 1845
        },
        {
-        "name": "Arnold Rocklinweare",
+        "name": "Arnold Rocklin-Weare",
         "party": "D",
         "votes": 1696
        },
@@ -318568,7 +318568,7 @@ export const stateLegResults: Record<
         "votes": 3149
        },
        {
-        "name": "Melanie Renfrewhebert",
+        "name": "Melanie Renfrew-Hebert",
         "party": "D",
         "votes": 2985
        }
@@ -321146,7 +321146,7 @@ export const stateLegResults: Record<
       "totalVotes": 9686,
       "candidates": [
        {
-        "name": "Allison Nutting",
+        "name": "Allison Nutting-Wong",
         "party": "D",
         "votes": 1788,
         "winner": true
@@ -321252,7 +321252,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Linda Harriottgathright",
+        "name": "Linda Harriott-Gathright",
         "party": "D",
         "votes": 2131
        },
@@ -321601,7 +321601,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Connie Vanhouten",
+        "name": "Connie van Houten",
         "party": "D",
         "votes": 4672,
         "winner": true
@@ -321647,7 +321647,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "John Frenchvi",
+        "name": "John French VI",
         "party": "R",
         "votes": 2168
        },
@@ -322665,7 +322665,7 @@ export const stateLegResults: Record<
       "totalVotes": 9700,
       "candidates": [
        {
-        "name": "Jacqueline Calipitts",
+        "name": "Jacqueline Cali-Pitts",
         "party": "D",
         "votes": 6565,
         "incumbent": true,
@@ -322704,7 +322704,7 @@ export const stateLegResults: Record<
       "totalVotes": 10303,
       "candidates": [
        {
-        "name": "Yvonne Deanbailey",
+        "name": "Yvonne Dean-Bailey",
         "party": "R",
         "votes": 6388,
         "winner": true
@@ -322807,7 +322807,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "E. Elaine Andrewsahearn",
+        "name": "E. Elaine Andrews-Ahearn",
         "party": "D",
         "votes": 6425
        }
@@ -323005,7 +323005,7 @@ export const stateLegResults: Record<
         "votes": 2315
        },
        {
-        "name": "Jodi Lavoiecarnes",
+        "name": "Jodi Lavoie-Carnes",
         "party": "R",
         "votes": 2218
        },
@@ -323558,7 +323558,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kristi Stlaurent",
+        "name": "Kristi St Laurent",
         "party": "D",
         "votes": 11825
        }
@@ -323591,7 +323591,7 @@ export const stateLegResults: Record<
       "totalVotes": 31490,
       "candidates": [
        {
-        "name": "Martha Fullerclark",
+        "name": "Martha Fuller-Clark",
         "party": "D",
         "votes": 20883,
         "incumbent": true,
@@ -323890,7 +323890,7 @@ export const stateLegResults: Record<
         "votes": 1004
        },
        {
-        "name": "George Condodemetraky",
+        "name": "George Condode-Metraky",
         "party": "D",
         "votes": 828
        }
@@ -323943,7 +323943,7 @@ export const stateLegResults: Record<
       "totalVotes": 8699,
       "candidates": [
        {
-        "name": "Charlie Stclair",
+        "name": "Charlie St Clair",
         "party": "D",
         "votes": 4368,
         "winner": true
@@ -324333,7 +324333,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sparky Vonplinsky",
+        "name": "Sparky von Plinsky",
         "party": "D",
         "votes": 1398,
         "winner": true
@@ -324989,7 +324989,7 @@ export const stateLegResults: Record<
         "votes": 2879
        },
        {
-        "name": "Melanie Renfrewhebert",
+        "name": "Melanie Renfrew-Hebert",
         "party": "D",
         "votes": 2876
        },
@@ -325678,7 +325678,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Katherine Prudhommeobrien",
+        "name": "Katherine Prudhomme-Obrien",
         "party": "R",
         "votes": 4985,
         "winner": true
@@ -325710,7 +325710,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michelle E. Sawyermoge",
+        "name": "Michelle E. Sawyer-Moge",
         "party": "D",
         "votes": 4511
        },
@@ -325787,7 +325787,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kristi Stlaurent",
+        "name": "Kristi St Laurent",
         "party": "D",
         "votes": 3147
        },
@@ -327585,7 +327585,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Allison Nuttingwong",
+        "name": "Allison Nutting-Wong",
         "party": "D",
         "votes": 2128,
         "incumbent": true,
@@ -327635,7 +327635,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Fran Nutterupham",
+        "name": "Fran Nutter-Upham",
         "party": "D",
         "votes": 1393,
         "winner": true
@@ -327742,7 +327742,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Linda Harriottgathright",
+        "name": "Linda Harriott-Gathright",
         "party": "D",
         "votes": 2077,
         "winner": true
@@ -328127,7 +328127,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Connie Vanhouten",
+        "name": "Connie van Houten",
         "party": "D",
         "votes": 4268,
         "incumbent": true,
@@ -328178,7 +328178,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "John Frenchvi VI",
+        "name": "John French VI",
         "party": "R",
         "votes": 1741
        },
@@ -328417,7 +328417,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Miriam Cahillyeaton",
+        "name": "Miriam Cahill-Yeaton",
         "party": "D",
         "votes": 1405
        },
@@ -329206,7 +329206,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jacqueline Calipitts",
+        "name": "Jacqueline Cali-Pitts",
         "party": "D",
         "votes": 6761,
         "incumbent": true,
@@ -329345,7 +329345,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elaine Andrewsahearn",
+        "name": "Elaine Andrews-Ahearn",
         "party": "D",
         "votes": 6040
        }
@@ -329550,7 +329550,7 @@ export const stateLegResults: Record<
         "incumbent": true
        },
        {
-        "name": "Jodi Lavoie Carnes",
+        "name": "Jodi Lavoie-Carnes",
         "party": "R",
         "votes": 1538
        },
@@ -329908,7 +329908,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jenn Alfordteaster",
+        "name": "Jenn Alford-Teaster",
         "party": "D",
         "votes": 12212
        }
@@ -330158,7 +330158,7 @@ export const stateLegResults: Record<
       "totalVotes": 26408,
       "candidates": [
        {
-        "name": "Martha Fuller Clark",
+        "name": "Martha Fuller-Clark",
         "party": "D",
         "votes": 19084,
         "incumbent": true,
@@ -330379,7 +330379,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Juliet Harveybolia",
+        "name": "Juliet Harvey-Bolia",
         "party": "R",
         "votes": 1796,
         "winner": true
@@ -330442,7 +330442,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "George Condodemetraky",
+        "name": "George Condode-Metraky",
         "party": "D",
         "votes": 1158
        },
@@ -330506,7 +330506,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Charlie Stclair",
+        "name": "Charlie St Clair",
         "party": "D",
         "votes": 5385,
         "incumbent": true
@@ -330910,7 +330910,7 @@ export const stateLegResults: Record<
       "totalVotes": 2627,
       "candidates": [
        {
-        "name": "Sparky Vonplinsky",
+        "name": "Sparky von Plinsky",
         "party": "D",
         "votes": 1693,
         "incumbent": true,
@@ -331359,7 +331359,7 @@ export const stateLegResults: Record<
         "votes": 2007
        },
        {
-        "name": "Carolyn Fluehrlobban",
+        "name": "Carolyn Fluehr-Lobban",
         "party": "D",
         "votes": 1826
        }
@@ -331575,7 +331575,7 @@ export const stateLegResults: Record<
         "votes": 3922
        },
        {
-        "name": "Melanie Renfrewhebert",
+        "name": "Melanie Renfrew-Hebert",
         "party": "D",
         "votes": 3689
        },
@@ -332125,7 +332125,7 @@ export const stateLegResults: Record<
         "votes": 3533
        },
        {
-        "name": "Jane W. Vanzandt",
+        "name": "Jane W. van Zandt",
         "party": "D",
         "votes": 3441
        },
@@ -332277,7 +332277,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Katherine Obrien",
+        "name": "Katherine Prudhomme-Obrien",
         "party": "R",
         "votes": 7392,
         "incumbent": true,
@@ -332327,7 +332327,7 @@ export const stateLegResults: Record<
         "votes": 5648
        },
        {
-        "name": "Amy B. Dattnerlevy",
+        "name": "Amy B. Dattner-Levy",
         "party": "D",
         "votes": 5602
        },
@@ -332342,7 +332342,7 @@ export const stateLegResults: Record<
         "votes": 5534
        },
        {
-        "name": "Michelle Sawyermoge",
+        "name": "Michelle Sawyer-Moge",
         "party": "D",
         "votes": 5482
        },
@@ -332401,7 +332401,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kristi Stlaurent",
+        "name": "Kristi St Laurent",
         "party": "D",
         "votes": 4357
        },
@@ -333261,7 +333261,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary A. Hakkenphillips",
+        "name": "Mary A. Hakken-Phillips",
         "party": "D",
         "votes": 6228,
         "winner": true
@@ -333679,7 +333679,7 @@ export const stateLegResults: Record<
         "votes": 1263
        },
        {
-        "name": "Brittany Leclearping",
+        "name": "Brittany Ping",
         "party": "R",
         "votes": 1248
        }
@@ -334228,7 +334228,7 @@ export const stateLegResults: Record<
         "votes": 1224
        },
        {
-        "name": "Elizabeth Vantwuyver",
+        "name": "Elizabeth van Twuyver",
         "party": "R",
         "votes": 999
        },
@@ -334253,7 +334253,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Allison Nuttingwong",
+        "name": "Allison Nutting-Wong",
         "party": "D",
         "votes": 2774,
         "incumbent": true,
@@ -334297,7 +334297,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Frances Nutterupham",
+        "name": "Frances Nutter-Upham",
         "party": "D",
         "votes": 1900,
         "incumbent": true,
@@ -334427,7 +334427,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Linda Harriottgathright",
+        "name": "Linda Harriott-Gathright",
         "party": "D",
         "votes": 2708,
         "incumbent": true,
@@ -334806,7 +334806,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Connie Vanhouten",
+        "name": "Connie van Houten",
         "party": "D",
         "votes": 5447,
         "incumbent": true,
@@ -334857,7 +334857,7 @@ export const stateLegResults: Record<
         "votes": 2107
        },
        {
-        "name": "John Frenchvi VI",
+        "name": "John French VI",
         "party": "R",
         "votes": 2057
        },
@@ -335340,7 +335340,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Miriam Cahillyeaton",
+        "name": "Miriam Cahill-Yeaton",
         "party": "D",
         "votes": 2786
        }
@@ -335913,7 +335913,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cynthia Taylorhollandbeck",
+        "name": "Cynthia Taylor-Hollandbeck",
         "party": "R",
         "votes": 936
        }
@@ -335942,7 +335942,7 @@ export const stateLegResults: Record<
       "totalVotes": 11021,
       "candidates": [
        {
-        "name": "Jacqueline Calipitts",
+        "name": "Jacqueline Cali-Pitts",
         "party": "D",
         "votes": 7708,
         "incumbent": true,
@@ -336087,7 +336087,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "E. Elaine Andrewsahearn",
+        "name": "E. Elaine Andrews-Ahearn",
         "party": "D",
         "votes": 7926
        }
@@ -336309,7 +336309,7 @@ export const stateLegResults: Record<
         "votes": 2387
        },
        {
-        "name": "Jodi Carnes",
+        "name": "Jodi Lavoie-Carnes",
         "party": "R",
         "votes": 2382
        }
@@ -336651,7 +336651,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jenn Alfordteaster",
+        "name": "Jenn Alford-Teaster",
         "party": "D",
         "votes": 15114
        }
@@ -336903,7 +336903,7 @@ export const stateLegResults: Record<
       "totalVotes": 32544,
       "candidates": [
        {
-        "name": "Rebecca Perkinskwoka",
+        "name": "Rebecca Perkins Kwoka",
         "party": "D",
         "votes": 21827,
         "winner": true
@@ -337380,7 +337380,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Rebecca Perkinskwoka",
+        "name": "Rebecca Perkins Kwoka",
         "party": "D",
         "votes": 20084,
         "incumbent": true,
@@ -351956,7 +351956,7 @@ export const stateLegResults: Record<
       "totalVotes": 84632,
       "candidates": [
        {
-        "name": "Patricia Eganjones",
+        "name": "Patricia Egan Jones",
         "party": "D",
         "votes": 29282,
         "incumbent": true,
@@ -352280,7 +352280,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elizabeth Mahermuoio",
+        "name": "Elizabeth Maher Muoio",
         "party": "D",
         "votes": 34937,
         "incumbent": true,
@@ -352563,7 +352563,7 @@ export const stateLegResults: Record<
       "totalVotes": 110435,
       "candidates": [
        {
-        "name": "F. Parkerspace",
+        "name": "F. Parker Space",
         "party": "R",
         "votes": 33873,
         "incumbent": true,
@@ -352732,7 +352732,7 @@ export const stateLegResults: Record<
       "totalVotes": 42592,
       "candidates": [
        {
-        "name": "Eliana Pintormarin",
+        "name": "Eliana Pintor-Marin",
         "party": "D",
         "votes": 19088,
         "incumbent": true,
@@ -352981,7 +352981,7 @@ export const stateLegResults: Record<
       "totalVotes": 84839,
       "candidates": [
        {
-        "name": "Valerie Vainierihuttle",
+        "name": "Valerie Vainieri Huttle",
         "party": "D",
         "votes": 31855,
         "incumbent": true,
@@ -353112,7 +353112,7 @@ export const stateLegResults: Record<
       "totalVotes": 54053,
       "candidates": [
        {
-        "name": "Jeff Vandrew",
+        "name": "Jeff van Drew",
         "party": "D",
         "votes": 35464,
         "incumbent": true,
@@ -353187,7 +353187,7 @@ export const stateLegResults: Record<
       "totalVotes": 43494,
       "candidates": [
        {
-        "name": "Nilsa Cruzperez",
+        "name": "Nilsa Cruz-Perez",
         "party": "D",
         "votes": 29031,
         "incumbent": true,
@@ -353273,7 +353273,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Brian Corleywhite",
+        "name": "Brian Corley White",
         "party": "D",
         "votes": 22717
        }
@@ -354192,7 +354192,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Eileen Dellavolle",
+        "name": "Eileen della Volle",
         "party": "D",
         "votes": 18592
        },
@@ -354337,7 +354337,7 @@ export const stateLegResults: Record<
       "totalVotes": 60572,
       "candidates": [
        {
-        "name": "Verlina Reynoldsjackson",
+        "name": "Verlina Reynolds-Jackson",
         "party": "D",
         "votes": 23715,
         "winner": true
@@ -354423,7 +354423,7 @@ export const stateLegResults: Record<
         "votes": 7822
        },
        {
-        "name": "Maria Concepcionpowell",
+        "name": "Maria Concepcion Powell",
         "party": "R",
         "votes": 7798
        }
@@ -354622,7 +354622,7 @@ export const stateLegResults: Record<
       "totalVotes": 89088,
       "candidates": [
        {
-        "name": "F. Parkerspace",
+        "name": "F. Parker Space",
         "party": "R",
         "votes": 30867,
         "incumbent": true,
@@ -354763,7 +354763,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joy Bembryfreeman",
+        "name": "Joy Bembry-Freeman",
         "party": "R",
         "votes": 3282
        },
@@ -354781,14 +354781,14 @@ export const stateLegResults: Record<
       "totalVotes": 22015,
       "candidates": [
        {
-        "name": "Eliana Pintormarin",
+        "name": "Eliana Pintor-Marin",
         "party": "D",
         "votes": 8994,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Shanique Davisspeight",
+        "name": "Shanique Speight",
         "party": "D",
         "votes": 8664,
         "incumbent": true,
@@ -355046,7 +355046,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Valerie Vainierihuttle",
+        "name": "Valerie Vainieri Huttle",
         "party": "D",
         "votes": 22852,
         "incumbent": true,
@@ -355152,7 +355152,7 @@ export const stateLegResults: Record<
         "votes": 17557
        },
        {
-        "name": "Maria Martinicordonnier",
+        "name": "Maria Martini Cordonnier",
         "party": "D",
         "votes": 17332
        }
@@ -355241,7 +355241,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Bethanne McCarthypatrick",
+        "name": "Bethanne McCarthy Patrick",
         "party": "R",
         "votes": 33735,
         "winner": true
@@ -355444,7 +355444,7 @@ export const stateLegResults: Record<
         "votes": 26975
        },
        {
-        "name": "Kristen Henningerholland",
+        "name": "Kristen Henninger-Holland",
         "party": "D",
         "votes": 26700
        }
@@ -355623,7 +355623,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Verlina Reynoldsjackson",
+        "name": "Verlina Reynolds-Jackson",
         "party": "D",
         "votes": 37214,
         "incumbent": true,
@@ -355719,7 +355719,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Melanie McCannmott",
+        "name": "Melanie McCann Mott",
         "party": "R",
         "votes": 23940
        },
@@ -355886,7 +355886,7 @@ export const stateLegResults: Record<
       "totalVotes": 143824,
       "candidates": [
        {
-        "name": "F. Parkerspace",
+        "name": "F. Parker Space",
         "party": "R",
         "votes": 51198,
         "incumbent": true,
@@ -355967,7 +355967,7 @@ export const stateLegResults: Record<
         "votes": 31434
        },
        {
-        "name": "Melissa Brownblaeuer",
+        "name": "Melissa Brown-Blaeuer",
         "party": "D",
         "votes": 31355
        }
@@ -356045,7 +356045,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Eliana Pintormarin",
+        "name": "Eliana Pintor-Marin",
         "party": "D",
         "votes": 19919,
         "incumbent": true,
@@ -356427,7 +356427,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Yolanda E. Garciabalicki",
+        "name": "Yolanda E. Garcia-Balicki",
         "party": "D",
         "votes": 23269
        }
@@ -356499,7 +356499,7 @@ export const stateLegResults: Record<
       "totalVotes": 54149,
       "candidates": [
        {
-        "name": "Nilsa Cruzperez",
+        "name": "Nilsa Cruz-Perez",
         "party": "D",
         "votes": 31246,
         "incumbent": true,
@@ -361006,7 +361006,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Eliseo Leealcon",
+        "name": "Eliseo Lee Alcon",
         "party": "D",
         "votes": 6707,
         "incumbent": true,
@@ -361131,7 +361131,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Patricia A. Roybalcaballero",
+        "name": "Patricia A. Roybal Caballero",
         "party": "D",
         "votes": 5525,
         "incumbent": true,
@@ -361162,7 +361162,7 @@ export const stateLegResults: Record<
       "totalVotes": 13825,
       "candidates": [
        {
-        "name": "Sarah Maestasbarnes",
+        "name": "Sarah Maestas Barnes",
         "party": "R",
         "votes": 7358,
         "incumbent": true,
@@ -361231,7 +361231,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sheryl M. Williamsstapleton",
+        "name": "Sheryl M. Williams Stapleton",
         "party": "D",
         "votes": 8289,
         "incumbent": true,
@@ -361669,7 +361669,7 @@ export const stateLegResults: Record<
       "totalVotes": 14362,
       "candidates": [
        {
-        "name": "Stephanie Garciarichard",
+        "name": "Stephanie Garcia Richard",
         "party": "D",
         "votes": 8452,
         "incumbent": true,
@@ -361690,7 +361690,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jane E. Powdrellculbert",
+        "name": "Jane E. Powdrell-Culbert",
         "party": "R",
         "votes": 12245,
         "incumbent": true,
@@ -361795,7 +361795,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jeremy Ryantremko",
+        "name": "Jeremy Ryan Tremko",
         "party": "R",
         "votes": 5805
        }
@@ -361829,7 +361829,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Doreen Ybarragallegos",
+        "name": "Doreen Ybarra Gallegos",
         "party": "D",
         "votes": 5796,
         "incumbent": true,
@@ -362339,7 +362339,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Gerald P. Ortizypino",
+        "name": "Gerald P. Ortiz y Pino",
         "party": "D",
         "votes": 12922,
         "incumbent": true,
@@ -362390,14 +362390,14 @@ export const stateLegResults: Record<
       "totalVotes": 20302,
       "candidates": [
        {
-        "name": "Daniel A. Iveysoto",
+        "name": "Daniel A. Ivey-Soto",
         "party": "D",
         "votes": 11321,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Eric Lyonburton",
+        "name": "Eric Lyon Burton",
         "party": "R",
         "votes": 8981
        }
@@ -362834,7 +362834,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Linda Sanchezallison",
+        "name": "Linda Sanchez Allison",
         "party": "D",
         "votes": 10099
        }
@@ -362975,7 +362975,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Eliseo Leealcon",
+        "name": "Eliseo Lee Alcon",
         "party": "D",
         "votes": 5876,
         "incumbent": true,
@@ -363095,7 +363095,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Patricia A. Roybalcaballero",
+        "name": "Patricia A. Roybal Caballero",
         "party": "D",
         "votes": 4749,
         "incumbent": true,
@@ -363198,7 +363198,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sheryl M. Williamsstapleton",
+        "name": "Sheryl M. Williams Stapleton",
         "party": "D",
         "votes": 7944,
         "incumbent": true,
@@ -363463,7 +363463,7 @@ export const stateLegResults: Record<
       "totalVotes": 8842,
       "candidates": [
        {
-        "name": "Micaela Laracadena",
+        "name": "Micaela Lara Cadena",
         "party": "D",
         "votes": 5781,
         "winner": true
@@ -363667,7 +363667,7 @@ export const stateLegResults: Record<
       "totalVotes": 14828,
       "candidates": [
        {
-        "name": "Jane E. Powdrellculbert",
+        "name": "Jane E. Powdrell-Culbert",
         "party": "R",
         "votes": 8116,
         "incumbent": true,
@@ -363810,7 +363810,7 @@ export const stateLegResults: Record<
       "totalVotes": 6846,
       "candidates": [
        {
-        "name": "Doreen Ybarragallegos",
+        "name": "Doreen Ybarra Gallegos",
         "party": "D",
         "votes": 4553,
         "incumbent": true,
@@ -364235,7 +364235,7 @@ export const stateLegResults: Record<
       "totalVotes": 10766,
       "candidates": [
        {
-        "name": "Eliseo L. Alcon",
+        "name": "Eliseo Lee Alcon",
         "party": "D",
         "votes": 6396,
         "incumbent": true,
@@ -364358,7 +364358,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Art Delacruz",
+        "name": "Art de la Cruz",
         "party": "O",
         "votes": 1482
        }
@@ -364371,7 +364371,7 @@ export const stateLegResults: Record<
       "totalVotes": 9266,
       "candidates": [
        {
-        "name": "Patricia A. Roybalcaballero",
+        "name": "Patricia A. Roybal Caballero",
         "party": "D",
         "votes": 6147,
         "incumbent": true,
@@ -364407,7 +364407,7 @@ export const stateLegResults: Record<
       "totalVotes": 15434,
       "candidates": [
        {
-        "name": "Dayan M. Hochmanvigil",
+        "name": "Dayan M. Hochman",
         "party": "D",
         "votes": 8903,
         "incumbent": true,
@@ -364454,7 +364454,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kimberly Ann Kaehrmacmillan",
+        "name": "Kimberly Ann Kaehr-MacMillan",
         "party": "R",
         "votes": 4383
        }
@@ -364483,7 +364483,7 @@ export const stateLegResults: Record<
       "totalVotes": 12065,
       "candidates": [
        {
-        "name": "Sheryl Williams M. Williamsstapleton",
+        "name": "Sheryl M. Williams Stapleton",
         "party": "D",
         "votes": 8922,
         "incumbent": true,
@@ -364495,7 +364495,7 @@ export const stateLegResults: Record<
         "votes": 2480
        },
        {
-        "name": "Mark Austincurtis",
+        "name": "Mark Curtis",
         "party": "O",
         "votes": 663
        }
@@ -364614,7 +364614,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sarah Richjackson",
+        "name": "Sarah Rich-Jackson",
         "party": "R",
         "votes": 4542
        },
@@ -364699,7 +364699,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Adelious Destith",
+        "name": "Adelious de Stith",
         "party": "R",
         "votes": 9135
        }
@@ -364759,7 +364759,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "J. Scottchandler",
+        "name": "J. Scott Chandler",
         "party": "R",
         "votes": 4426
        }
@@ -364918,7 +364918,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Justin J. Salazartorrez",
+        "name": "Justin J. Salazar-Torrez",
         "party": "R",
         "votes": 5589
        }
@@ -364986,7 +364986,7 @@ export const stateLegResults: Record<
       "totalVotes": 19421,
       "candidates": [
        {
-        "name": "Jane E. Powdrellculbert",
+        "name": "Jane E. Powdrell-Culbert",
         "party": "R",
         "votes": 10460,
         "incumbent": true,
@@ -365137,7 +365137,7 @@ export const stateLegResults: Record<
       "totalVotes": 8900,
       "candidates": [
        {
-        "name": "Doreen Yvonne Gallegos",
+        "name": "Doreen Yvonne Ybarra Gallegos",
         "party": "D",
         "votes": 5794,
         "incumbent": true,
@@ -365446,7 +365446,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Roy Randallryan",
+        "name": "Roy Randall Ryan",
         "party": "R",
         "votes": 3354
        }
@@ -365521,7 +365521,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Arthur Pierceallison",
+        "name": "Arthur Pierce Allison",
         "party": "R",
         "votes": 5767
        }
@@ -365560,7 +365560,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Diamantina Pradostorment",
+        "name": "Diamantina Prado Storment",
         "party": "R",
         "votes": 6132
        }
@@ -365630,7 +365630,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "John Stahlmanclark",
+        "name": "John Stahlman Clark",
         "party": "R",
         "votes": 13744
        }
@@ -365683,14 +365683,14 @@ export const stateLegResults: Record<
       "totalVotes": 18144,
       "candidates": [
        {
-        "name": "Gerald P. Ortizypino",
+        "name": "Gerald P. Ortiz y Pino",
         "party": "D",
         "votes": 14060,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Lisa Meyerhagen",
+        "name": "Lisa Meyer-Hagen",
         "party": "R",
         "votes": 4084
        }
@@ -365743,7 +365743,7 @@ export const stateLegResults: Record<
       "totalVotes": 23028,
       "candidates": [
        {
-        "name": "Daniel A. Iveysoto",
+        "name": "Daniel A. Ivey-Soto",
         "party": "D",
         "votes": 13831,
         "incumbent": true,
@@ -365763,7 +365763,7 @@ export const stateLegResults: Record<
       "totalVotes": 23821,
       "candidates": [
        {
-        "name": "Antoinette Sedillolopez",
+        "name": "Antoinette Sedillo Lopez",
         "party": "D",
         "votes": 18612,
         "winner": true
@@ -365947,7 +365947,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ricardo Arturovargas",
+        "name": "Ricardo Arturo Vargas",
         "party": "R",
         "votes": 6478
        }
@@ -366097,7 +366097,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Denise A. Langbrowne",
+        "name": "Denise A. Lang",
         "party": "D",
         "votes": 6601
        }
@@ -366117,7 +366117,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Darren Murraykugler",
+        "name": "Darren Murray Kugler",
         "party": "D",
         "votes": 5296
        }
@@ -366136,7 +366136,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Neomi O. Martinezparra",
+        "name": "Neomi O. Martinez-Parra",
         "party": "D",
         "votes": 8135
        }
@@ -366366,7 +366366,7 @@ export const stateLegResults: Record<
       "totalVotes": 7859,
       "candidates": [
        {
-        "name": "Eliseo Leealcon",
+        "name": "Eliseo Lee Alcon",
         "party": "D",
         "votes": 4925,
         "incumbent": true,
@@ -366386,7 +366386,7 @@ export const stateLegResults: Record<
       "totalVotes": 8033,
       "candidates": [
        {
-        "name": "Tanya R. Mirabalmoya",
+        "name": "Tanya R. Mirabal Moya",
         "party": "R",
         "votes": 4621,
         "winner": true
@@ -366436,14 +366436,14 @@ export const stateLegResults: Record<
       "totalVotes": 7692,
       "candidates": [
        {
-        "name": "G. Andresromero",
+        "name": "G. Romero",
         "party": "D",
         "votes": 4506,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Mary Kayingham",
+        "name": "Mary Ingham",
         "party": "R",
         "votes": 3186
        }
@@ -366463,7 +366463,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lisa Meyerhagen",
+        "name": "Lisa Meyer-Hagen",
         "party": "R",
         "votes": 2518
        }
@@ -366477,7 +366477,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Art Delacruz",
+        "name": "Art de la Cruz",
         "party": "D",
         "votes": 4361,
         "winner": true
@@ -366492,7 +366492,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Patricia A. Roybalcaballero",
+        "name": "Patricia A. Roybal Caballero",
         "party": "D",
         "votes": 3889,
         "incumbent": true,
@@ -366527,14 +366527,14 @@ export const stateLegResults: Record<
       "totalVotes": 11960,
       "candidates": [
        {
-        "name": "Dayan Mercedes Hochmanvigil",
+        "name": "Dayan Mercedes Hochman",
         "party": "D",
         "votes": 7574,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Kimberly Ann Kaehrmacmillan",
+        "name": "Kimberly Ann Kaehr-MacMillan",
         "party": "R",
         "votes": 4386
        }
@@ -366875,7 +366875,7 @@ export const stateLegResults: Record<
       "totalVotes": 8181,
       "candidates": [
        {
-        "name": "Micaela Laracadena",
+        "name": "Micaela Lara Cadena",
         "party": "D",
         "votes": 4908,
         "incumbent": true,
@@ -366918,7 +366918,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Richelle A. Peughswafford",
+        "name": "Richelle A. Peugh-Swafford",
         "party": "R",
         "votes": 3339
        }
@@ -366977,7 +366977,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sandra Kayhammack",
+        "name": "Sandra Kay Hammack",
         "party": "R",
         "votes": 4377
        }
@@ -367083,7 +367083,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jane E. Powdrellculbert",
+        "name": "Jane E. Powdrell-Culbert",
         "party": "R",
         "votes": 7118,
         "incumbent": true
@@ -367215,7 +367215,7 @@ export const stateLegResults: Record<
       "totalVotes": 6912,
       "candidates": [
        {
-        "name": "Doreen Yvonne Gallegos",
+        "name": "Doreen Yvonne Ybarra Gallegos",
         "party": "D",
         "votes": 4208,
         "incumbent": true,
@@ -367242,7 +367242,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elizabeth Leewinterrowd",
+        "name": "Elizabeth Lee Winterrowd",
         "party": "R",
         "votes": 5616
        }
@@ -367501,7 +367501,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Robert Henrymoss",
+        "name": "Robert Henry Moss",
         "party": "R",
         "votes": 5614
        }
@@ -369504,7 +369504,7 @@ export const stateLegResults: Record<
       "totalVotes": 27687,
       "candidates": [
        {
-        "name": "Daniele Monroemoreno",
+        "name": "Daniele Monroe-Moreno",
         "party": "D",
         "votes": 16473,
         "winner": true
@@ -370002,7 +370002,7 @@ export const stateLegResults: Record<
       "totalVotes": 26662,
       "candidates": [
        {
-        "name": "Teresa Benitezthompson",
+        "name": "Teresa Benitez-Thompson",
         "party": "D",
         "votes": 15080,
         "incumbent": true,
@@ -370134,7 +370134,7 @@ export const stateLegResults: Record<
       "totalVotes": 25232,
       "candidates": [
        {
-        "name": "Shannon Bilbrayaxelrod",
+        "name": "Shannon Bilbray-Axelrod",
         "party": "D",
         "votes": 14788,
         "winner": true
@@ -370302,7 +370302,7 @@ export const stateLegResults: Record<
       "totalVotes": 17268,
       "candidates": [
        {
-        "name": "Irene Bustamanteadams",
+        "name": "Irene Bustamante Adams",
         "party": "D",
         "votes": 10963,
         "incumbent": true,
@@ -370547,7 +370547,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Daniele Monroemoreno",
+        "name": "Daniele Monroe-Moreno",
         "party": "D",
         "votes": 18958,
         "incumbent": true,
@@ -371034,7 +371034,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Teresa Benitezthompson",
+        "name": "Teresa Benitez-Thompson",
         "party": "D",
         "votes": 18410,
         "incumbent": true,
@@ -371156,7 +371156,7 @@ export const stateLegResults: Record<
       "totalVotes": 21761,
       "candidates": [
        {
-        "name": "Shannon Bilbrayaxelrod",
+        "name": "Shannon Bilbray-Axelrod",
         "party": "D",
         "votes": 12878,
         "incumbent": true,
@@ -371355,7 +371355,7 @@ export const stateLegResults: Record<
       "totalVotes": 49931,
       "candidates": [
        {
-        "name": "Marilyn Dondero Loop",
+        "name": "Marilyn Dondero-Loop",
         "party": "D",
         "votes": 25777,
         "winner": true
@@ -371475,7 +371475,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Tina Davishersey",
+        "name": "Tina Davis-Hersey",
         "party": "D",
         "votes": 26674
        }
@@ -371554,7 +371554,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Daniele Monroemoreno",
+        "name": "Daniele Monroe-Moreno",
         "party": "D",
         "votes": 25443,
         "incumbent": true,
@@ -371644,7 +371644,7 @@ export const stateLegResults: Record<
       "totalVotes": 16141,
       "candidates": [
        {
-        "name": "Shondra Summersarmstrong",
+        "name": "Shondra Summers-Armstrong",
         "party": "D",
         "votes": 12975,
         "winner": true
@@ -372031,7 +372031,7 @@ export const stateLegResults: Record<
       "totalVotes": 31743,
       "candidates": [
        {
-        "name": "Teresa Benitezthompson",
+        "name": "Teresa Benitez-Thompson",
         "party": "D",
         "votes": 18559,
         "incumbent": true,
@@ -372167,7 +372167,7 @@ export const stateLegResults: Record<
       "totalVotes": 29969,
       "candidates": [
        {
-        "name": "Shannon Bilbrayaxelrod",
+        "name": "Shannon Bilbray-Axelrod",
         "party": "D",
         "votes": 17353,
         "incumbent": true,
@@ -372478,7 +372478,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Wendy Jaureguijackins",
+        "name": "Wendy Jauregui-Jackins",
         "party": "D",
         "votes": 36605
        }
@@ -372539,7 +372539,7 @@ export const stateLegResults: Record<
       "totalVotes": 25309,
       "candidates": [
        {
-        "name": "Daniele Monroemoreno",
+        "name": "Daniele Monroe-Moreno",
         "party": "D",
         "votes": 14242,
         "incumbent": true,
@@ -372640,7 +372640,7 @@ export const stateLegResults: Record<
       "totalVotes": 9926,
       "candidates": [
        {
-        "name": "Shondra Summersarmstrong",
+        "name": "Shondra Summers-Armstrong",
         "party": "D",
         "votes": 8083,
         "incumbent": true,
@@ -373010,7 +373010,7 @@ export const stateLegResults: Record<
       "totalVotes": 32668,
       "candidates": [
        {
-        "name": "Selena Laruehatch",
+        "name": "Selena la Rue Hatch",
         "party": "D",
         "votes": 17608,
         "winner": true
@@ -373114,7 +373114,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ricci Rodriguezelkins",
+        "name": "Ricci Rodriguez-Elkins",
         "party": "R",
         "votes": 8007
        }
@@ -373178,7 +373178,7 @@ export const stateLegResults: Record<
       "totalVotes": 21725,
       "candidates": [
        {
-        "name": "Shannon Bilbrayaxelrod",
+        "name": "Shannon Bilbray-Axelrod",
         "party": "D",
         "votes": 12192,
         "incumbent": true,
@@ -373327,7 +373327,7 @@ export const stateLegResults: Record<
       "totalVotes": 19619,
       "candidates": [
        {
-        "name": "Tracy Brownmay",
+        "name": "Tracy Brown-May",
         "party": "D",
         "votes": 11115,
         "winner": true
@@ -373370,7 +373370,7 @@ export const stateLegResults: Record<
       "totalVotes": 52642,
       "candidates": [
        {
-        "name": "Marilyn Dondero Loop",
+        "name": "Marilyn Dondero-Loop",
         "party": "D",
         "votes": 26698,
         "incumbent": true,
@@ -374783,7 +374783,7 @@ export const stateLegResults: Record<
       "totalVotes": 43498,
       "candidates": [
        {
-        "name": "Kimberly Jeanpierre",
+        "name": "Kimberly Jean-Pierre",
         "party": "D",
         "votes": 26129,
         "incumbent": true,
@@ -374929,7 +374929,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cornelius Toddsmith",
+        "name": "Cornelius Todd Smith",
         "party": "R",
         "votes": 5030
        }
@@ -375434,7 +375434,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lucretia Reginapotter",
+        "name": "Lucretia Regina-Potter",
         "party": "R",
         "votes": 11807
        },
@@ -375916,7 +375916,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Carmen N. Delarosa",
+        "name": "Carmen N. de la Rosa",
         "party": "D",
         "votes": 37032,
         "winner": true
@@ -377183,7 +377183,7 @@ export const stateLegResults: Record<
       "totalVotes": 45555,
       "candidates": [
        {
-        "name": "Crystal D. Peoplesstokes",
+        "name": "Crystal D. Peoples-Stokes",
         "party": "D",
         "votes": 41179,
         "incumbent": true,
@@ -377219,7 +377219,7 @@ export const stateLegResults: Record<
       "totalVotes": 56130,
       "candidates": [
        {
-        "name": "Monica P. Wallace",
+        "name": "Monica Piga Wallace",
         "party": "D",
         "votes": 30877,
         "winner": true
@@ -377969,7 +377969,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "J. Gustavorivera",
+        "name": "J. Gustavo Rivera",
         "party": "D",
         "votes": 61953,
         "incumbent": true,
@@ -378011,7 +378011,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Andrea Stewartcousins",
+        "name": "Andrea Stewart-Cousins",
         "party": "D",
         "votes": 94864,
         "incumbent": true,
@@ -378316,7 +378316,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jermaine Bagnallgraham",
+        "name": "Jermaine Bagnall-Graham",
         "party": "D",
         "votes": 31990
        }
@@ -378602,7 +378602,7 @@ export const stateLegResults: Record<
       "totalVotes": 38738,
       "candidates": [
        {
-        "name": "Joseph P. Destefano",
+        "name": "Joseph P. de Stefano",
         "party": "R",
         "votes": 20916,
         "winner": true
@@ -378754,7 +378754,7 @@ export const stateLegResults: Record<
       "totalVotes": 36491,
       "candidates": [
        {
-        "name": "Kimberly Jeanpierre",
+        "name": "Kimberly Jean-Pierre",
         "party": "D",
         "votes": 23485,
         "incumbent": true,
@@ -379545,7 +379545,7 @@ export const stateLegResults: Record<
       "totalVotes": 23742,
       "candidates": [
        {
-        "name": "Erik Martindilan",
+        "name": "Erik Martin Dilan",
         "party": "D",
         "votes": 22659,
         "incumbent": true,
@@ -379878,7 +379878,7 @@ export const stateLegResults: Record<
       "totalVotes": 33158,
       "candidates": [
        {
-        "name": "Carmen N. Delarosa",
+        "name": "Carmen N. de la Rosa",
         "party": "D",
         "votes": 31317,
         "incumbent": true,
@@ -380165,7 +380165,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ariel A. Riveradiaz",
+        "name": "Ariel A. Rivera-Diaz",
         "party": "R",
         "votes": 748
        }
@@ -381180,7 +381180,7 @@ export const stateLegResults: Record<
       "totalVotes": 34618,
       "candidates": [
        {
-        "name": "Crystal D. Peoplesstokes",
+        "name": "Crystal D. Peoples-Stokes",
         "party": "D",
         "votes": 31310,
         "incumbent": true,
@@ -381219,7 +381219,7 @@ export const stateLegResults: Record<
       "totalVotes": 45943,
       "candidates": [
        {
-        "name": "Monica Pigawallace",
+        "name": "Monica Piga Wallace",
         "party": "D",
         "votes": 26697,
         "incumbent": true,
@@ -381988,7 +381988,7 @@ export const stateLegResults: Record<
       "totalVotes": 48632,
       "candidates": [
        {
-        "name": "J. Gustavorivera",
+        "name": "J. Gustavo Rivera",
         "party": "D",
         "votes": 46533,
         "incumbent": true,
@@ -382039,7 +382039,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Andrea Stewartcousins",
+        "name": "Andrea Stewart-Cousins",
         "party": "D",
         "votes": 80074,
         "incumbent": true,
@@ -382249,7 +382249,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Pat Courtneystrong",
+        "name": "Pat Courtney Strong",
         "party": "D",
         "votes": 54116
        }
@@ -382340,7 +382340,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joyce Stgeorge",
+        "name": "Joyce St. George",
         "party": "D",
         "votes": 38610
        }
@@ -382513,7 +382513,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Carima C. Elbehairy",
+        "name": "Carima C. El-Behairy",
         "party": "D",
         "votes": 48943
        }
@@ -382616,7 +382616,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Laura M. Jenssmith",
+        "name": "Laura M. Jens-Smith",
         "party": "D",
         "votes": 30141
        }
@@ -382629,7 +382629,7 @@ export const stateLegResults: Record<
       "totalVotes": 54072,
       "candidates": [
        {
-        "name": "Joseph P. Destefano",
+        "name": "Joseph P. de Stefano",
         "party": "R",
         "votes": 30806,
         "incumbent": true,
@@ -382787,7 +382787,7 @@ export const stateLegResults: Record<
       "totalVotes": 50965,
       "candidates": [
        {
-        "name": "Kimberly Jeanpierre",
+        "name": "Kimberly Jean-Pierre",
         "party": "D",
         "votes": 30392,
         "incumbent": true,
@@ -382991,7 +382991,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Patricia M. Canzonerifitzpatrick",
+        "name": "Patricia M. Canzoneri-Fitzpatrick",
         "party": "R",
         "votes": 31656
        }
@@ -383216,7 +383216,7 @@ export const stateLegResults: Record<
       "totalVotes": 33388,
       "candidates": [
        {
-        "name": "Jessica Gonzalezrojas",
+        "name": "Jessica Gonzalez-Rojas",
         "party": "D",
         "votes": 26152,
         "winner": true
@@ -383893,7 +383893,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Carmen Delarosa",
+        "name": "Carmen de la Rosa",
         "party": "D",
         "votes": 39405,
         "incumbent": true,
@@ -385063,7 +385063,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Charon K. Sattlerleblanc",
+        "name": "Charon K. Sattler-Leblanc",
         "party": "D",
         "votes": 25830
        }
@@ -385215,7 +385215,7 @@ export const stateLegResults: Record<
       "totalVotes": 47609,
       "candidates": [
        {
-        "name": "Crystal D. Peoplesstokes",
+        "name": "Crystal D. Peoples-Stokes",
         "party": "D",
         "votes": 42628,
         "incumbent": true,
@@ -385255,7 +385255,7 @@ export const stateLegResults: Record<
       "totalVotes": 67104,
       "candidates": [
        {
-        "name": "Monica Pigawallace",
+        "name": "Monica Piga Wallace",
         "party": "D",
         "votes": 35209,
         "incumbent": true,
@@ -385818,7 +385818,7 @@ export const stateLegResults: Record<
         "votes": 17336
        },
        {
-        "name": "John Jairorodriguez",
+        "name": "John Jairo Rodriguez",
         "party": "O",
         "votes": 1031
        }
@@ -386035,7 +386035,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Andrea Stewartcousins",
+        "name": "Andrea Stewart-Cousins",
         "party": "D",
         "votes": 103811,
         "incumbent": true,
@@ -386086,7 +386086,7 @@ export const stateLegResults: Record<
       "totalVotes": 131764,
       "candidates": [
        {
-        "name": "Elijah Reichlinmelnick",
+        "name": "Elijah Reichlin-Melnick",
         "party": "D",
         "votes": 70809,
         "winner": true
@@ -386628,7 +386628,7 @@ export const stateLegResults: Record<
       "totalVotes": 40181,
       "candidates": [
        {
-        "name": "Joseph P. Destefano",
+        "name": "Joseph P. de Stefano",
         "party": "R",
         "votes": 25626,
         "incumbent": true,
@@ -386788,7 +386788,7 @@ export const stateLegResults: Record<
       "totalVotes": 36439,
       "candidates": [
        {
-        "name": "Kimberly Jeanpierre",
+        "name": "Kimberly Jean-Pierre",
         "party": "D",
         "votes": 18362,
         "incumbent": true,
@@ -386954,7 +386954,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sanjeev Kumarjindal",
+        "name": "Sanjeev Kumar Jindal",
         "party": "D",
         "votes": 17141
        }
@@ -387235,7 +387235,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jessica Gonzalezrojas",
+        "name": "Jessica Gonzalez-Rojas",
         "party": "D",
         "votes": 16451,
         "incumbent": true,
@@ -387441,7 +387441,7 @@ export const stateLegResults: Record<
       "totalVotes": 29547,
       "candidates": [
        {
-        "name": "Alec Brookkrasny",
+        "name": "Alec Brook-Krasny",
         "party": "R",
         "votes": 15364,
         "winner": true
@@ -387589,7 +387589,7 @@ export const stateLegResults: Record<
       "totalVotes": 14095,
       "candidates": [
        {
-        "name": "Erik Martindilan",
+        "name": "Erik Martin Dilan",
         "party": "D",
         "votes": 12163,
         "incumbent": true,
@@ -387661,13 +387661,13 @@ export const stateLegResults: Record<
       "totalVotes": 23743,
       "candidates": [
        {
-        "name": "Monique Chandlerwaterman",
+        "name": "Monique Chandler-Waterman",
         "party": "D",
         "votes": 22565,
         "winner": true
        },
        {
-        "name": "Monique Allendavy",
+        "name": "Monique Allen-Davy",
         "party": "R",
         "votes": 1178
        }
@@ -387880,7 +387880,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cynthia Nelsonacevedo",
+        "name": "Cynthia Nelson-Acevedo",
         "party": "R",
         "votes": 2124
        }
@@ -387910,7 +387910,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Manny Delossantos",
+        "name": "Manny de Los Santos",
         "party": "D",
         "votes": 17260,
         "winner": true
@@ -388208,7 +388208,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ariel Riveradiaz",
+        "name": "Ariel Rivera-Diaz",
         "party": "R",
         "votes": 2804
        }
@@ -388401,7 +388401,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Eudson Tysonfrancois",
+        "name": "Eudson Tyson Francois",
         "party": "D",
         "votes": 11945
        }
@@ -389214,7 +389214,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Crystal D. Peoples",
+        "name": "Crystal D. Peoples-Stokes",
         "party": "D",
         "votes": 24906,
         "incumbent": true,
@@ -389249,7 +389249,7 @@ export const stateLegResults: Record<
       "totalVotes": 42290,
       "candidates": [
        {
-        "name": "Monica Pigawallace",
+        "name": "Monica Piga Wallace",
         "party": "D",
         "votes": 22255,
         "incumbent": true,
@@ -389560,7 +389560,7 @@ export const stateLegResults: Record<
       "totalVotes": 112451,
       "candidates": [
        {
-        "name": "Patricia M. Canzonerifitzpatrick",
+        "name": "Patricia M. Canzoneri-Fitzpatrick",
         "party": "R",
         "votes": 63136,
         "winner": true
@@ -389807,7 +389807,7 @@ export const stateLegResults: Record<
       "totalVotes": 58051,
       "candidates": [
        {
-        "name": "Jessica Scarcellaspanton",
+        "name": "Jessica Scarcella-Spanton",
         "party": "D",
         "votes": 29550,
         "winner": true
@@ -389901,7 +389901,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Awadhesh Kumargupta",
+        "name": "Awadhesh Kumar Gupta",
         "party": "R",
         "votes": 22158
        }
@@ -390020,7 +390020,7 @@ export const stateLegResults: Record<
       "totalVotes": 86769,
       "candidates": [
        {
-        "name": "Andrea Stewartcousins",
+        "name": "Andrea Stewart-Cousins",
         "party": "D",
         "votes": 56220,
         "incumbent": true,
@@ -390082,7 +390082,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elijah Reichlinmelnick",
+        "name": "Elijah Reichlin-Melnick",
         "party": "D",
         "votes": 47872,
         "incumbent": true
@@ -397238,7 +397238,7 @@ export const stateLegResults: Record<
         "votes": 15551
        },
        {
-        "name": "Constance A. Gadellnewton",
+        "name": "Constance A. Gadell-Newton",
         "party": "O",
         "votes": 3857
        }
@@ -397369,7 +397369,7 @@ export const stateLegResults: Record<
       "totalVotes": 47779,
       "candidates": [
        {
-        "name": "Bernadine Kennedykent",
+        "name": "Bernadine Kennedy Kent",
         "party": "D",
         "votes": 33826,
         "winner": true
@@ -397958,7 +397958,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kelly Krausmencke",
+        "name": "Kelly Kraus Mencke",
         "party": "D",
         "votes": 20077
        }
@@ -398010,7 +398010,7 @@ export const stateLegResults: Record<
       "totalVotes": 48360,
       "candidates": [
        {
-        "name": "Michele Leporehagan",
+        "name": "Michele Lepore-Hagan",
         "party": "D",
         "votes": 28828,
         "incumbent": true,
@@ -398492,7 +398492,7 @@ export const stateLegResults: Record<
       "totalVotes": 48566,
       "candidates": [
        {
-        "name": "Robert Colesprague",
+        "name": "Robert Cole Sprague",
         "party": "R",
         "votes": 36302,
         "incumbent": true,
@@ -399148,7 +399148,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Aidan Hubbellstaeble",
+        "name": "Aidan Hubbell-Staeble",
         "party": "D",
         "votes": 18840
        }
@@ -399346,7 +399346,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Bride Rosesweeney",
+        "name": "Bride Rose Sweeney",
         "party": "D",
         "votes": 23481,
         "winner": true
@@ -399560,7 +399560,7 @@ export const stateLegResults: Record<
       "totalVotes": 39975,
       "candidates": [
        {
-        "name": "Bernadine Kennedykent",
+        "name": "Bernadine Kennedy Kent",
         "party": "D",
         "votes": 33788,
         "incumbent": true,
@@ -399911,7 +399911,7 @@ export const stateLegResults: Record<
       "totalVotes": 44639,
       "candidates": [
        {
-        "name": "J. Toddsmith",
+        "name": "J. Todd Smith",
         "party": "R",
         "votes": 22388,
         "winner": true
@@ -399931,7 +399931,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Paula Hickshudson",
+        "name": "Paula Hicks-Hudson",
         "party": "D",
         "votes": 27368,
         "winner": true
@@ -400142,7 +400142,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kelly Krausmencke",
+        "name": "Kelly Kraus Mencke",
         "party": "D",
         "votes": 18751
        }
@@ -400194,7 +400194,7 @@ export const stateLegResults: Record<
       "totalVotes": 36945,
       "candidates": [
        {
-        "name": "Michele Leporehagan",
+        "name": "Michele Lepore-Hagan",
         "party": "D",
         "votes": 25978,
         "incumbent": true,
@@ -400676,7 +400676,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Aden Wyattbaker",
+        "name": "Aden Wyatt Baker",
         "party": "D",
         "votes": 10622
        }
@@ -400772,7 +400772,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary E. Piercebroadwater",
+        "name": "Mary E. Pierce-Broadwater",
         "party": "D",
         "votes": 10742
        }
@@ -400890,7 +400890,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Samantha Thomasbush",
+        "name": "Samantha Thomas-Bush",
         "party": "D",
         "votes": 9805
        }
@@ -400978,7 +400978,7 @@ export const stateLegResults: Record<
       "totalVotes": 37386,
       "candidates": [
        {
-        "name": "Brett Hudsonhillyer",
+        "name": "Brett Hudson Hillyer",
         "party": "R",
         "votes": 25393,
         "winner": true
@@ -401782,7 +401782,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Nancy Dayachauer",
+        "name": "Nancy Day-Achauer",
         "party": "D",
         "votes": 27532
        }
@@ -402169,7 +402169,7 @@ export const stateLegResults: Record<
       "totalVotes": 40612,
       "candidates": [
        {
-        "name": "Paula Hickshudson",
+        "name": "Paula Hicks-Hudson",
         "party": "D",
         "votes": 32101,
         "incumbent": true,
@@ -402444,7 +402444,7 @@ export const stateLegResults: Record<
       "totalVotes": 47774,
       "candidates": [
        {
-        "name": "Michele Leporehagan",
+        "name": "Michele Lepore-Hagan",
         "party": "D",
         "votes": 32218,
         "incumbent": true,
@@ -403207,7 +403207,7 @@ export const stateLegResults: Record<
       "totalVotes": 49710,
       "candidates": [
        {
-        "name": "Brett Hudsonhillyer",
+        "name": "Brett Hudson Hillyer",
         "party": "R",
         "votes": 37378,
         "incumbent": true,
@@ -403227,7 +403227,7 @@ export const stateLegResults: Record<
       "totalVotes": 49274,
       "candidates": [
        {
-        "name": "Sarah Fowlerarthur",
+        "name": "Sarah Fowler Arthur",
         "party": "R",
         "votes": 28918,
         "winner": true
@@ -403716,7 +403716,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Munira Yasinabdullahi",
+        "name": "Munira Yasin Abdullahi",
         "party": "D",
         "votes": 23320,
         "winner": true
@@ -403843,7 +403843,7 @@ export const stateLegResults: Record<
       "totalVotes": 51489,
       "candidates": [
        {
-        "name": "Bride Rosesweeney",
+        "name": "Bride Rose Sweeney",
         "party": "D",
         "votes": 28469,
         "incumbent": true,
@@ -403999,7 +403999,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Adam Paul Teaguekoehler",
+        "name": "Adam Paul Teague Koehler",
         "party": "R",
         "votes": 9024
        }
@@ -404512,7 +404512,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Brett Hudsonhillyer",
+        "name": "Brett Hudson Hillyer",
         "party": "R",
         "votes": 30520,
         "incumbent": true,
@@ -405046,7 +405046,7 @@ export const stateLegResults: Record<
       "totalVotes": 39449,
       "candidates": [
        {
-        "name": "Monica Robbblasdel",
+        "name": "Monica Robb Blasdel",
         "party": "R",
         "votes": 29256,
         "winner": true
@@ -405405,7 +405405,7 @@ export const stateLegResults: Record<
       "totalVotes": 48178,
       "candidates": [
        {
-        "name": "Sarah Fowlerarthur",
+        "name": "Sarah Fowler Arthur",
         "party": "R",
         "votes": 29096,
         "incumbent": true,
@@ -405521,7 +405521,7 @@ export const stateLegResults: Record<
       "totalVotes": 117145,
       "candidates": [
        {
-        "name": "Paula Hickshudson",
+        "name": "Paula Hicks-Hudson",
         "party": "D",
         "votes": 64761,
         "winner": true
@@ -405673,7 +405673,7 @@ export const stateLegResults: Record<
       "totalVotes": 144410,
       "candidates": [
        {
-        "name": "Kristina D. Roegner",
+        "name": "Kristina Daley Roegner",
         "party": "R",
         "votes": 73801,
         "incumbent": true,
@@ -409039,7 +409039,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary Newcomehatch",
+        "name": "Mary Newcome-Hatch",
         "party": "D",
         "votes": 3239
        },
@@ -409291,7 +409291,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lori Decterwright",
+        "name": "Lori Decter Wright",
         "party": "D",
         "votes": 5274
        }
@@ -409371,7 +409371,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Millie Hardestyyork",
+        "name": "Millie Hardesty York",
         "party": "D",
         "votes": 6399
        }
@@ -409967,7 +409967,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cheryl Mooneyhamhessman",
+        "name": "Cheryl Mooneyham-Hessman",
         "party": "D",
         "votes": 6212
        }
@@ -410440,7 +410440,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Judy Mullenhopper",
+        "name": "Judy Mullen Hopper",
         "party": "D",
         "votes": 15445
        },
@@ -410737,7 +410737,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Judy Rossmoore",
+        "name": "Judy Ross Moore",
         "party": "D",
         "votes": 3673
        }
@@ -411116,7 +411116,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jasha Lyonsechohawk",
+        "name": "Jasha Lyons Echo-Hawk",
         "party": "D",
         "votes": 3205
        }
@@ -411219,7 +411219,7 @@ export const stateLegResults: Record<
       "totalVotes": 17129,
       "candidates": [
        {
-        "name": "Denise Crosswhitehader",
+        "name": "Denise Crosswhite Hader",
         "party": "R",
         "votes": 11418,
         "winner": true
@@ -411743,7 +411743,7 @@ export const stateLegResults: Record<
         "votes": 1135
        },
        {
-        "name": "J. Leemiller Jr.",
+        "name": "J. Lee Miller Jr.",
         "party": "O",
         "votes": 329
        }
@@ -412312,7 +412312,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kilmyn Easleygraf",
+        "name": "Kilmyn Easley-Graf",
         "party": "D",
         "votes": 4696
        }
@@ -412792,7 +412792,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Michael Brooks",
+        "name": "Michael Brooks-Jimenez",
         "party": "D",
         "votes": null,
         "winner": true
@@ -413557,7 +413557,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Denise Crosswhitehader",
+        "name": "Denise Crosswhite Hader",
         "party": "R",
         "votes": null,
         "incumbent": true,
@@ -413809,7 +413809,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Austin Gipsonblack",
+        "name": "Austin Gipson-Black",
         "party": "D",
         "votes": 2861
        }
@@ -414595,7 +414595,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Dean Fentondavis",
+        "name": "Dean Davis",
         "party": "R",
         "votes": null,
         "incumbent": true,
@@ -415012,7 +415012,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Allison Ikleyfreeman",
+        "name": "Allison Ikley-Freeman",
         "party": "D",
         "votes": 11141
        }
@@ -415032,7 +415032,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Shawna Mottwright",
+        "name": "Shawna Mott-Wright",
         "party": "D",
         "votes": 16889
        }
@@ -415521,7 +415521,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Susan Carleyoung",
+        "name": "Susan Young",
         "party": "D",
         "votes": 3076
        }
@@ -415832,7 +415832,7 @@ export const stateLegResults: Record<
       "totalVotes": 14278,
       "candidates": [
        {
-        "name": "Denise Crosswhitehader",
+        "name": "Denise Crosswhite Hader",
         "party": "R",
         "votes": 9641,
         "incumbent": true,
@@ -416622,7 +416622,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Donna Ricejohnson",
+        "name": "Donna Rice-Johnson",
         "party": "R",
         "votes": 6746
        }
@@ -416715,7 +416715,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Nana Abramdankwa",
+        "name": "Nana Abram Dankwa",
         "party": "D",
         "votes": 2700
        }
@@ -417303,7 +417303,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Michael Brooks",
+        "name": "Michael Brooks-Jimenez",
         "party": "D",
         "votes": null,
         "incumbent": true,
@@ -418224,7 +418224,7 @@ export const stateLegResults: Record<
       "totalVotes": 33910,
       "candidates": [
        {
-        "name": "David Brocksmith",
+        "name": "David Brock Smith",
         "party": "R",
         "votes": 20274,
         "winner": true
@@ -418536,7 +418536,7 @@ export const stateLegResults: Record<
         "votes": 6474
        },
        {
-        "name": "Sami Alabdrabbuh",
+        "name": "Sami Al-Abdrabbuh",
         "party": "O",
         "votes": 4934
        },
@@ -419142,7 +419142,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Barbara Smithwarner",
+        "name": "Barbara Smith Warner",
         "party": "D",
         "votes": 24843,
         "incumbent": true,
@@ -419158,7 +419158,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Alissa Kenyguyer",
+        "name": "Alissa Keny-Guyer",
         "party": "D",
         "votes": 23366,
         "incumbent": true,
@@ -419270,7 +419270,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lori Chavezderemer",
+        "name": "Lori Chavez-Deremer",
         "party": "R",
         "votes": 13746
        }
@@ -419330,7 +419330,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Gena Goodmancampbell",
+        "name": "Gena Goodman-Campbell",
         "party": "D",
         "votes": 17804
        }
@@ -419363,7 +419363,7 @@ export const stateLegResults: Record<
       "totalVotes": 27216,
       "candidates": [
        {
-        "name": "E. Wernerreschke",
+        "name": "E. Werner Reschke",
         "party": "R",
         "votes": 13272,
         "winner": true
@@ -419662,7 +419662,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Tamie Tlustosarnold",
+        "name": "Tamie Tlustos-Arnold",
         "party": "R",
         "votes": 18742
        }
@@ -420070,7 +420070,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Renee Windsorwhite",
+        "name": "Renee Windsor-White",
         "party": "D",
         "votes": 8384
        }
@@ -420524,7 +420524,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elizabeth Graserlindsey",
+        "name": "Elizabeth Graser-Lindsey",
         "party": "D",
         "votes": 13611
        }
@@ -420632,7 +420632,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Barbara Smithwarner",
+        "name": "Barbara Smith Warner",
         "party": "D",
         "votes": 25695,
         "incumbent": true,
@@ -420648,7 +420648,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Alissa Kenyguyer",
+        "name": "Alissa Keny-Guyer",
         "party": "D",
         "votes": 24573,
         "incumbent": true,
@@ -420742,7 +420742,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lori Chavezderemer",
+        "name": "Lori Chavez-Deremer",
         "party": "R",
         "votes": 12620
        }
@@ -420804,7 +420804,7 @@ export const stateLegResults: Record<
         "votes": 9000
        },
        {
-        "name": "Amanda Labell",
+        "name": "Amanda la Bell",
         "party": "O",
         "votes": 5560
        }
@@ -420900,7 +420900,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Darcy Longcurtiss",
+        "name": "Darcy Long-Curtiss",
         "party": "D",
         "votes": 11655
        }
@@ -421594,7 +421594,7 @@ export const stateLegResults: Record<
       "totalVotes": 37912,
       "candidates": [
        {
-        "name": "Raquel Mooregreen",
+        "name": "Raquel Moore-Green",
         "party": "R",
         "votes": 20659,
         "winner": true
@@ -421653,7 +421653,7 @@ export const stateLegResults: Record<
       "totalVotes": 21386,
       "candidates": [
        {
-        "name": "Teresa Alonsoleon",
+        "name": "Teresa Leon",
         "party": "D",
         "votes": 12168,
         "incumbent": true,
@@ -421863,7 +421863,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Debbie Bootheschmidt",
+        "name": "Debbie Boothe-Schmidt",
         "party": "D",
         "votes": 18520
        }
@@ -422102,7 +422102,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Barbara Smithwarner",
+        "name": "Barbara Smith Warner",
         "party": "D",
         "votes": 31326,
         "incumbent": true,
@@ -422296,7 +422296,7 @@ export const stateLegResults: Record<
       "totalVotes": 42872,
       "candidates": [
        {
-        "name": "Vikki Breeseiverson",
+        "name": "Vikki Breese-Iverson",
         "party": "R",
         "votes": 31572,
         "winner": true
@@ -422983,7 +422983,7 @@ export const stateLegResults: Record<
       "totalVotes": 33295,
       "candidates": [
        {
-        "name": "Shelly Boshartdavis",
+        "name": "Shelly Davis",
         "party": "R",
         "votes": 19995,
         "incumbent": true,
@@ -423259,7 +423259,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Gina Munstermoore",
+        "name": "Gina Munster-Moore",
         "party": "R",
         "votes": 11746
        }
@@ -423704,7 +423704,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Darcy Long",
+        "name": "Darcy Long-Curtiss",
         "party": "D",
         "votes": 15360
        }
@@ -423832,7 +423832,7 @@ export const stateLegResults: Record<
       "totalVotes": 36587,
       "candidates": [
        {
-        "name": "Vikki Breeseiverson",
+        "name": "Vikki Breese-Iverson",
         "party": "R",
         "votes": 26528,
         "incumbent": true,
@@ -423958,14 +423958,14 @@ export const stateLegResults: Record<
       "totalVotes": 63190,
       "candidates": [
        {
-        "name": "Sara Gelserblouin",
+        "name": "Sara Gelser",
         "party": "D",
         "votes": 37815,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Valerie Draperwoldeit",
+        "name": "Valerie Draper Woldeit",
         "party": "R",
         "votes": 25375
        }
@@ -423985,7 +423985,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Raquel Mooregreen",
+        "name": "Raquel Moore-Green",
         "party": "R",
         "votes": 27853
        }
@@ -426775,7 +426775,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Anita Astorinokulik",
+        "name": "Anita Astorino Kulik",
         "party": "D",
         "votes": 29949,
         "winner": true
@@ -426867,7 +426867,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elizabeth L. Rohannamcclure",
+        "name": "Elizabeth L. Rohanna McClure",
         "party": "R",
         "votes": 11417
        }
@@ -427651,7 +427651,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kristin Lee Phillipshill",
+        "name": "Kristin Lee Phillips-Hill",
         "party": "R",
         "votes": 26741,
         "incumbent": true,
@@ -427682,7 +427682,7 @@ export const stateLegResults: Record<
       "totalVotes": 22488,
       "candidates": [
        {
-        "name": "Carol Hillevans",
+        "name": "Carol Hill-Evans",
         "party": "D",
         "votes": 13726,
         "winner": true
@@ -427923,7 +427923,7 @@ export const stateLegResults: Record<
       "totalVotes": 25539,
       "candidates": [
        {
-        "name": "Lynda J. Schlegelculver",
+        "name": "Lynda J. Schlegel Culver",
         "party": "R",
         "votes": 19576,
         "incumbent": true,
@@ -428045,7 +428045,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cheryl Lynn Scandalemurnin",
+        "name": "Cheryl Lynn Scandale Murnin",
         "party": "R",
         "votes": 10495
        }
@@ -428848,7 +428848,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Hans Walter Vanmol",
+        "name": "Hans Walter van Mol",
         "party": "D",
         "votes": 15156
        }
@@ -428920,13 +428920,13 @@ export const stateLegResults: Record<
       "totalVotes": 35839,
       "candidates": [
        {
-        "name": "Leanne T. Kruegerbraneky",
+        "name": "Leanne T. Krueger-Braneky",
         "party": "D",
         "votes": 18218,
         "winner": true
        },
        {
-        "name": "Patti A. Rodgersmorrisette",
+        "name": "Patti A. Rodgers Morrisette",
         "party": "R",
         "votes": 17621
        }
@@ -429444,7 +429444,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Vanessa L. Brown",
+        "name": "Vanessa Lowery Brown",
         "party": "D",
         "votes": 28620,
         "incumbent": true,
@@ -430257,7 +430257,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lisa K. Boevinglearned",
+        "name": "Lisa K. Boeving-Learned",
         "party": "D",
         "votes": 6696
        }
@@ -430833,7 +430833,7 @@ export const stateLegResults: Record<
       "totalVotes": 33404,
       "candidates": [
        {
-        "name": "Natalie Nicole Mihalekstuck",
+        "name": "Natalie Nicole Mihalek Stuck",
         "party": "R",
         "votes": 18730,
         "winner": true
@@ -431029,7 +431029,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elizabeth L. Rohannamcclure",
+        "name": "Elizabeth L. Rohanna McClure",
         "party": "R",
         "votes": 8318
        }
@@ -431654,7 +431654,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Airneezer J. Pagedelahaye",
+        "name": "Airneezer J. Page-Delahaye",
         "party": "D",
         "votes": 6771
        }
@@ -431694,7 +431694,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jennifer Renee Ragerkay",
+        "name": "Jennifer Renee Rager-Kay",
         "party": "D",
         "votes": 7012
        }
@@ -431845,7 +431845,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Delma Riveralytle",
+        "name": "Delma Rivera-Lytle",
         "party": "D",
         "votes": 9341
        }
@@ -431879,7 +431879,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Carol Delores Hillevans",
+        "name": "Carol Delores Hill-Evans",
         "party": "D",
         "votes": 12297,
         "incumbent": true,
@@ -431937,7 +431937,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary Aukerendres",
+        "name": "Mary Auker-Endres",
         "party": "D",
         "votes": 7993
        }
@@ -432126,7 +432126,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lynda J. Schlegelculver",
+        "name": "Lynda J. Schlegel Culver",
         "party": "R",
         "votes": 17541,
         "incumbent": true,
@@ -432916,7 +432916,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sara Joanne Johnsonrothman",
+        "name": "Sara Joanne Johnson Rothman",
         "party": "D",
         "votes": 14451
        }
@@ -433108,14 +433108,14 @@ export const stateLegResults: Record<
       "totalVotes": 31218,
       "candidates": [
        {
-        "name": "Leanne T. Kruegerbraneky",
+        "name": "Leanne T. Krueger-Braneky",
         "party": "D",
         "votes": 18443,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Patti Rodgersmorrisette",
+        "name": "Patti Rodgers Morrisette",
         "party": "R",
         "votes": 12775
        }
@@ -433644,7 +433644,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Vanessa L. Brown",
+        "name": "Vanessa Lowery Brown",
         "party": "D",
         "votes": 22644,
         "incumbent": true,
@@ -434125,13 +434125,13 @@ export const stateLegResults: Record<
       "totalVotes": 99485,
       "candidates": [
        {
-        "name": "Kristin Lee Phillipshill",
+        "name": "Kristin Lee Phillips-Hill",
         "party": "R",
         "votes": 62380,
         "winner": true
        },
        {
-        "name": "Judith A. McCormickhiggins",
+        "name": "Judith A. McCormick Higgins",
         "party": "D",
         "votes": 37105
        }
@@ -434150,7 +434150,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Emily Garbunybest",
+        "name": "Emily Garbuny Best",
         "party": "D",
         "votes": 23684
        }
@@ -435097,7 +435097,7 @@ export const stateLegResults: Record<
       "totalVotes": 43475,
       "candidates": [
        {
-        "name": "Natalie Nicole Mihalekstuck",
+        "name": "Natalie Nicole Mihalek Stuck",
         "party": "R",
         "votes": 26485,
         "incumbent": true,
@@ -435193,7 +435193,7 @@ export const stateLegResults: Record<
       "totalVotes": 37033,
       "candidates": [
        {
-        "name": "Anita A. Kulik",
+        "name": "Anita Astorino Kulik",
         "party": "D",
         "votes": 22853,
         "incumbent": true,
@@ -435556,7 +435556,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michael Bagdescanning",
+        "name": "Michael Bagdes-Canning",
         "party": "O",
         "votes": 5587
        }
@@ -435899,7 +435899,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Airneezer J. Page",
+        "name": "Airneezer J. Page-Delahaye",
         "party": "D",
         "votes": 9253
        }
@@ -436105,7 +436105,7 @@ export const stateLegResults: Record<
       "totalVotes": 22070,
       "candidates": [
        {
-        "name": "Carol Hillevans",
+        "name": "Carol Hill-Evans",
         "party": "D",
         "votes": 14120,
         "incumbent": true,
@@ -436355,7 +436355,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lynda J. Schlegelculver",
+        "name": "Lynda J. Schlegel Culver",
         "party": "R",
         "votes": 27354,
         "incumbent": true,
@@ -436989,7 +436989,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kelly A. Bellerbyallen",
+        "name": "Kelly A. Bellerby-Allen",
         "party": "R",
         "votes": 11532
        }
@@ -437265,7 +437265,7 @@ export const stateLegResults: Record<
       "totalVotes": 44906,
       "candidates": [
        {
-        "name": "Danielle Frielotten",
+        "name": "Danielle Otten",
         "party": "D",
         "votes": 25140,
         "incumbent": true,
@@ -437383,7 +437383,7 @@ export const stateLegResults: Record<
       "totalVotes": 39933,
       "candidates": [
        {
-        "name": "Leanne Krueger",
+        "name": "Leanne Krueger-Braneky",
         "party": "D",
         "votes": 22764,
         "incumbent": true,
@@ -439363,7 +439363,7 @@ export const stateLegResults: Record<
       "totalVotes": 35795,
       "candidates": [
        {
-        "name": "Natalie Nicole Stuck",
+        "name": "Natalie Nicole Mihalek Stuck",
         "party": "R",
         "votes": 20331,
         "incumbent": true,
@@ -439527,7 +439527,7 @@ export const stateLegResults: Record<
       "totalVotes": 16556,
       "candidates": [
        {
-        "name": "Ismail Smithwadeel",
+        "name": "Ismail Smith-Wade-El",
         "party": "D",
         "votes": 11045,
         "winner": true
@@ -440349,7 +440349,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Carol Hillevans",
+        "name": "Carol Hill-Evans",
         "party": "D",
         "votes": 11266,
         "incumbent": true,
@@ -440589,7 +440589,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lynda J. Schlegelculver",
+        "name": "Lynda J. Schlegel Culver",
         "party": "R",
         "votes": 21915,
         "incumbent": true,
@@ -440982,7 +440982,7 @@ export const stateLegResults: Record<
       "totalVotes": 19270,
       "candidates": [
        {
-        "name": "Johanny Cepedafreytiz",
+        "name": "Johanny Cepeda-Freytiz",
         "party": "D",
         "votes": 11242,
         "winner": true
@@ -441207,7 +441207,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kelly A. Bellerbyallen",
+        "name": "Kelly A. Bellerby-Allen",
         "party": "R",
         "votes": 7771
        }
@@ -441596,7 +441596,7 @@ export const stateLegResults: Record<
       "totalVotes": 30418,
       "candidates": [
        {
-        "name": "Leanne T. Krueger",
+        "name": "Leanne T. Krueger-Braneky",
         "party": "D",
         "votes": 18122,
         "incumbent": true,
@@ -441986,7 +441986,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Albert Ivan Roblesmontas",
+        "name": "Albert Ivan Robles Montas",
         "party": "R",
         "votes": 3161
        }
@@ -442608,14 +442608,14 @@ export const stateLegResults: Record<
       "totalVotes": 112735,
       "candidates": [
        {
-        "name": "Kristin Lee Phillipshill",
+        "name": "Kristin Lee Phillips-Hill",
         "party": "R",
         "votes": 75419,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Judith A. McCormickhiggins",
+        "name": "Judith A. McCormick Higgins",
         "party": "D",
         "votes": 37316
        }
@@ -442655,7 +442655,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sydney C. Vegodahovis",
+        "name": "Sydney C. Vegoda Hovis",
         "party": "D",
         "votes": 25477
        }
@@ -447064,7 +447064,7 @@ export const stateLegResults: Record<
       "totalVotes": 3070,
       "candidates": [
        {
-        "name": "Marcia Ranglinvassell",
+        "name": "Marcia Ranglin-Vassell",
         "party": "D",
         "votes": 2460,
         "winner": true
@@ -447350,7 +447350,7 @@ export const stateLegResults: Record<
       "totalVotes": 6172,
       "candidates": [
        {
-        "name": "Camille F. Vellawilkinson",
+        "name": "Camille F. Vella-Wilkinson",
         "party": "D",
         "votes": 2758,
         "winner": true
@@ -447593,7 +447593,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Carol Haganmcentee",
+        "name": "Carol Hagan McEntee",
         "party": "D",
         "votes": 4466,
         "winner": true
@@ -447858,7 +447858,7 @@ export const stateLegResults: Record<
         "votes": 1343
        },
        {
-        "name": "Paul J. Didomenico",
+        "name": "Paul J. di Domenico",
         "party": "O",
         "votes": 702
        }
@@ -448143,7 +448143,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mary Duffymessier",
+        "name": "Mary Duffy Messier",
         "party": "D",
         "votes": 3772,
         "incumbent": true,
@@ -448389,7 +448389,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michael Warrensmith",
+        "name": "Michael Warren Smith",
         "party": "O",
         "votes": 2265
        }
@@ -448620,7 +448620,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "M. Teresa Paivaweed",
+        "name": "M. Teresa Paiva-Weed",
         "party": "D",
         "votes": 7609,
         "incumbent": true,
@@ -448694,7 +448694,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jina N. Petrarcakarampetsos",
+        "name": "Jina N. Petrarca-Karampetsos",
         "party": "D",
         "votes": 6942
        }
@@ -449166,7 +449166,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Marcia Ranglinvassell",
+        "name": "Marcia Ranglin-Vassell",
         "party": "D",
         "votes": 2572,
         "incumbent": true,
@@ -449447,7 +449447,7 @@ export const stateLegResults: Record<
       "totalVotes": 5222,
       "candidates": [
        {
-        "name": "Camille F. Vellawilkinson",
+        "name": "Camille F. Vella-Wilkinson",
         "party": "D",
         "votes": 3007,
         "incumbent": true,
@@ -449673,7 +449673,7 @@ export const stateLegResults: Record<
       "totalVotes": 6819,
       "candidates": [
        {
-        "name": "Carol Haganmcentee",
+        "name": "Carol Hagan McEntee",
         "party": "D",
         "votes": 4245,
         "incumbent": true,
@@ -449815,7 +449815,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lauren Niedelgresh",
+        "name": "Lauren Niedel-Gresh",
         "party": "D",
         "votes": 2413
        }
@@ -449918,7 +449918,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mary Ann Shallcrosssmith",
+        "name": "Mary Ann Shallcross-Smith",
         "party": "D",
         "votes": 2690
        },
@@ -450032,7 +450032,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Brandon Scottbell",
+        "name": "Brandon Scott Bell",
         "party": "R",
         "votes": 2685
        }
@@ -450196,7 +450196,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mary Duffymessier",
+        "name": "Mary Duffy Messier",
         "party": "D",
         "votes": 3115,
         "incumbent": true,
@@ -450854,7 +450854,7 @@ export const stateLegResults: Record<
       "totalVotes": 11200,
       "candidates": [
        {
-        "name": "Jessica Delacruz",
+        "name": "Jessica de la Cruz",
         "party": "R",
         "votes": 6217,
         "winner": true
@@ -451232,7 +451232,7 @@ export const stateLegResults: Record<
       "totalVotes": 4008,
       "candidates": [
        {
-        "name": "Marcia P. Ranglinvassell",
+        "name": "Marcia P. Ranglin-Vassell",
         "party": "D",
         "votes": 2981,
         "incumbent": true,
@@ -451408,7 +451408,7 @@ export const stateLegResults: Record<
       "totalVotes": 8046,
       "candidates": [
        {
-        "name": "Barbara Ann Fentonfung",
+        "name": "Barbara Ann Fenton-Fung",
         "party": "R",
         "votes": 4731,
         "winner": true
@@ -451515,7 +451515,7 @@ export const stateLegResults: Record<
       "totalVotes": 6954,
       "candidates": [
        {
-        "name": "Camille F. Vellawilkinson",
+        "name": "Camille F. Vella-Wilkinson",
         "party": "D",
         "votes": 4140,
         "incumbent": true,
@@ -451729,7 +451729,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Carol Haganmcentee",
+        "name": "Carol Hagan McEntee",
         "party": "D",
         "votes": 6189,
         "incumbent": true,
@@ -451964,7 +451964,7 @@ export const stateLegResults: Record<
       "totalVotes": 8032,
       "candidates": [
        {
-        "name": "Mary Ann Shallcrosssmith",
+        "name": "Mary Ann Shallcross-Smith",
         "party": "D",
         "votes": 3162,
         "winner": true
@@ -452249,7 +452249,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mary Duffymessier",
+        "name": "Mary Duffy Messier",
         "party": "D",
         "votes": 4451,
         "incumbent": true,
@@ -452785,7 +452785,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "John Douglasbarr II",
+        "name": "John Barr II",
         "party": "D",
         "votes": 6512
        }
@@ -452886,7 +452886,7 @@ export const stateLegResults: Record<
       "totalVotes": 15492,
       "candidates": [
        {
-        "name": "Jessica Delacruz",
+        "name": "Jessica de la Cruz",
         "party": "R",
         "votes": 10361,
         "incumbent": true,
@@ -453198,7 +453198,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Edith Hanoverajello",
+        "name": "Edith Ajello",
         "party": "D",
         "votes": 2444,
         "incumbent": true,
@@ -453448,7 +453448,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Barbara Ann Fentonfung",
+        "name": "Barbara Ann Fenton-Fung",
         "party": "R",
         "votes": 4978,
         "incumbent": true,
@@ -453552,7 +453552,7 @@ export const stateLegResults: Record<
       "totalVotes": 5198,
       "candidates": [
        {
-        "name": "Camille F. Vellawilkinson",
+        "name": "Camille F. Vella-Wilkinson",
         "party": "D",
         "votes": 2618,
         "incumbent": true,
@@ -453785,14 +453785,14 @@ export const stateLegResults: Record<
       "totalVotes": 6960,
       "candidates": [
        {
-        "name": "Carol Haganmcentee",
+        "name": "Carol Hagan McEntee",
         "party": "D",
         "votes": 4258,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Jessica A. Drewday",
+        "name": "Jessica A. Drew-Day",
         "party": "R",
         "votes": 2702
        }
@@ -454046,7 +454046,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mary Ann Shallcrosssmith",
+        "name": "Mary Ann Shallcross-Smith",
         "party": "D",
         "votes": 3449,
         "incumbent": true,
@@ -454331,7 +454331,7 @@ export const stateLegResults: Record<
       "totalVotes": 2928,
       "candidates": [
        {
-        "name": "Mary Duffymessier",
+        "name": "Mary Duffy Messier",
         "party": "D",
         "votes": 1787,
         "incumbent": true,
@@ -454417,7 +454417,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jennifer Smithboylan",
+        "name": "Jennifer Smith Boylan",
         "party": "D",
         "votes": 3584,
         "winner": true
@@ -455044,7 +455044,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jessica Delacruz",
+        "name": "Jessica de la Cruz",
         "party": "R",
         "votes": 9213,
         "incumbent": true,
@@ -457767,7 +457767,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Leola Robinsonsimpson",
+        "name": "Leola Robinson-Simpson",
         "party": "D",
         "votes": 9029,
         "incumbent": true,
@@ -458100,7 +458100,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mandy Powersnorrell",
+        "name": "Mandy Powers Norrell",
         "party": "D",
         "votes": 10469,
         "incumbent": true,
@@ -458158,7 +458158,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Diane Phelpssimmons",
+        "name": "Diane Phelps Simmons",
         "party": "O",
         "votes": 2659
        }
@@ -458235,7 +458235,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Laurie Sladefunderburk",
+        "name": "Laurie Slade Funderburk",
         "party": "D",
         "votes": 13471,
         "incumbent": true,
@@ -458270,7 +458270,7 @@ export const stateLegResults: Record<
       "totalVotes": 13115,
       "candidates": [
        {
-        "name": "Patricia Moorehenegan",
+        "name": "Patricia Moore Henegan",
         "party": "D",
         "votes": 8643,
         "incumbent": true,
@@ -458473,7 +458473,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Gilda Cobbhunter",
+        "name": "Gilda Cobb-Hunter",
         "party": "D",
         "votes": 12626,
         "incumbent": true,
@@ -459042,7 +459042,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Tonia Aikentaylor",
+        "name": "Tonia Aiken-Taylor",
         "party": "D",
         "votes": 6294
        }
@@ -459795,7 +459795,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Scott Lewiswest",
+        "name": "Scott Lewis West",
         "party": "O",
         "votes": 10166
        }
@@ -460657,7 +460657,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Leola Robinsonsimpson",
+        "name": "Leola Robinson-Simpson",
         "party": "D",
         "votes": 7623,
         "incumbent": true,
@@ -460761,7 +460761,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Rosalyn Hendersonmyers",
+        "name": "Rosalyn Henderson-Myers",
         "party": "D",
         "votes": 6598,
         "winner": true
@@ -460977,7 +460977,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Mandy Powersnorrell",
+        "name": "Mandy Powers Norrell",
         "party": "D",
         "votes": 6903,
         "incumbent": true,
@@ -461124,7 +461124,7 @@ export const stateLegResults: Record<
       "totalVotes": 15689,
       "candidates": [
        {
-        "name": "Laurie Sladefunderburk",
+        "name": "Laurie Slade Funderburk",
         "party": "D",
         "votes": 9017,
         "incumbent": true,
@@ -461161,7 +461161,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Patricia Moorehenegan",
+        "name": "Patricia Moore Henegan",
         "party": "D",
         "votes": 7189,
         "incumbent": true,
@@ -461363,7 +461363,7 @@ export const stateLegResults: Record<
       "totalVotes": 12297,
       "candidates": [
        {
-        "name": "Gilda Cobbhunter",
+        "name": "Gilda Cobb-Hunter",
         "party": "D",
         "votes": 8800,
         "incumbent": true,
@@ -462548,7 +462548,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Andrea Bejaranorobinson",
+        "name": "Andrea Bejarano-Robinson",
         "party": "D",
         "votes": 3833
        }
@@ -462864,7 +462864,7 @@ export const stateLegResults: Record<
       "totalVotes": 14988,
       "candidates": [
        {
-        "name": "Leola Simpson",
+        "name": "Leola Robinson-Simpson",
         "party": "D",
         "votes": 10540,
         "incumbent": true,
@@ -462973,7 +462973,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Rosalyn Hendersonmyers",
+        "name": "Rosalyn Henderson-Myers",
         "party": "D",
         "votes": 10133,
         "incumbent": true,
@@ -463201,7 +463201,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mandy Powersnorrell",
+        "name": "Mandy Powers Norrell",
         "party": "D",
         "votes": 7466,
         "incumbent": true
@@ -463258,7 +463258,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ryan McKenziearioli",
+        "name": "Ryan McKenzie Arioli",
         "party": "D",
         "votes": 6355
        }
@@ -463349,7 +463349,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Laurie Sladefunderburk",
+        "name": "Laurie Slade Funderburk",
         "party": "D",
         "votes": 10508,
         "incumbent": true
@@ -463379,7 +463379,7 @@ export const stateLegResults: Record<
       "totalVotes": 14990,
       "candidates": [
        {
-        "name": "Patricia Moore Pat Henegan",
+        "name": "Patricia Pat Moore Henegan",
         "party": "D",
         "votes": 8304,
         "incumbent": true,
@@ -463490,7 +463490,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Teresa McGillcain",
+        "name": "Teresa McGill Cain",
         "party": "D",
         "votes": 6812
        }
@@ -463590,7 +463590,7 @@ export const stateLegResults: Record<
       "totalVotes": 16852,
       "candidates": [
        {
-        "name": "Gilda Cobbhunter",
+        "name": "Gilda Cobb-Hunter",
         "party": "D",
         "votes": 11795,
         "incumbent": true,
@@ -464370,7 +464370,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Rebecca Niesscingolani",
+        "name": "Rebecca Niess Cingolani",
         "party": "D",
         "votes": 8590
        }
@@ -466038,7 +466038,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Rosalyn Hendersonmyers",
+        "name": "Rosalyn Henderson-Myers",
         "party": "D",
         "votes": 5536,
         "incumbent": true,
@@ -466427,7 +466427,7 @@ export const stateLegResults: Record<
       "totalVotes": 11091,
       "candidates": [
        {
-        "name": "Patricia Moorehenegan",
+        "name": "Patricia Moore Henegan",
         "party": "D",
         "votes": 5804,
         "incumbent": true,
@@ -466890,7 +466890,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Donna Brownnewton",
+        "name": "Donna Brown Newton",
         "party": "D",
         "votes": 6926
        }
@@ -467150,7 +467150,7 @@ export const stateLegResults: Record<
       "totalVotes": 13578,
       "candidates": [
        {
-        "name": "Gilda Cobbhunter",
+        "name": "Gilda Cobb-Hunter",
         "party": "D",
         "votes": 8033,
         "incumbent": true,
@@ -467455,7 +467455,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "David Stanleyartushin",
+        "name": "David Stanley Artushin",
         "party": "D",
         "votes": 8267
        }
@@ -471934,7 +471934,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sue K. Lucaspeterson",
+        "name": "Sue K. Lucas Peterson",
         "party": "R",
         "votes": 5599,
         "winner": true
@@ -472355,13 +472355,13 @@ export const stateLegResults: Record<
       "totalVotes": 22608,
       "candidates": [
        {
-        "name": "Tim R. Goodwin",
+        "name": "Tim Ray Goodwin",
         "party": "R",
         "votes": 8234,
         "winner": true
        },
        {
-        "name": "Julie Fryemueller",
+        "name": "Julie Frye-Mueller",
         "party": "R",
         "votes": 8062,
         "winner": true
@@ -472372,7 +472372,7 @@ export const stateLegResults: Record<
         "votes": 3397
        },
        {
-        "name": "Kristine Inawinter",
+        "name": "Kristine Ina Winter",
         "party": "D",
         "votes": 2915
        }
@@ -473234,7 +473234,7 @@ export const stateLegResults: Record<
       "totalVotes": 13174,
       "candidates": [
        {
-        "name": "Tamara Stjohn",
+        "name": "Tamara St John",
         "party": "R",
         "votes": 4735,
         "winner": true
@@ -473613,7 +473613,7 @@ export const stateLegResults: Record<
       "totalVotes": 16549,
       "candidates": [
        {
-        "name": "Sue Peterson",
+        "name": "Sue Lucas Peterson",
         "party": "R",
         "votes": 6116,
         "incumbent": true,
@@ -473868,12 +473868,12 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Anna Kernerandersson",
+        "name": "Anna Kerner Andersson",
         "party": "D",
         "votes": 3028
        },
        {
-        "name": "Faith Spottedeagle",
+        "name": "Faith Spotted Eagle",
         "party": "D",
         "votes": 1800
        }
@@ -474072,14 +474072,14 @@ export const stateLegResults: Record<
       "totalVotes": 20435,
       "candidates": [
        {
-        "name": "Timothy Raygoodwin",
+        "name": "Timothy Ray Goodwin",
         "party": "R",
         "votes": 7433,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Julie Fryemueller",
+        "name": "Julie Frye-Mueller",
         "party": "R",
         "votes": 7166,
         "incumbent": true,
@@ -474377,7 +474377,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cory Allenheidelberger",
+        "name": "Cory Allen Heidelberger",
         "party": "D",
         "votes": 3787
        }
@@ -474491,7 +474491,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Laura Swierkotelman",
+        "name": "Laura Swier Kotelman",
         "party": "D",
         "votes": 3641
        }
@@ -474910,12 +474910,12 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kristine Inawinter",
+        "name": "Kristine Ina Winter",
         "party": "D",
         "votes": 2943
        },
        {
-        "name": "A. Gideonoakes",
+        "name": "A. Gideon Oakes",
         "party": "O",
         "votes": 2134
        }
@@ -474935,7 +474935,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sherry Beasmith",
+        "name": "Sherry Bea Smith",
         "party": "D",
         "votes": 3710
        }
@@ -475034,14 +475034,14 @@ export const stateLegResults: Record<
       "totalVotes": 14901,
       "candidates": [
        {
-        "name": "Tamara Stjohn",
+        "name": "Tamara St John",
         "party": "R",
         "votes": 6150,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Jennifer Healykeintz",
+        "name": "Jennifer Healy Keintz",
         "party": "D",
         "votes": 4502,
         "winner": true
@@ -475370,7 +475370,7 @@ export const stateLegResults: Record<
       "totalVotes": 23901,
       "candidates": [
        {
-        "name": "Sue Peterson",
+        "name": "Sue Lucas Peterson",
         "party": "R",
         "votes": 6746,
         "incumbent": true,
@@ -475781,7 +475781,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Tim R. Goodwin",
+        "name": "Tim Ray Goodwin",
         "party": "R",
         "votes": 8435,
         "incumbent": true,
@@ -476070,7 +476070,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Daryl Root",
+        "name": "Daryl Lamar Root",
         "party": "O",
         "votes": 2007
        }
@@ -476390,7 +476390,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Dan Kernerandersson",
+        "name": "Dan Kerner Andersson",
         "party": "D",
         "votes": 2002
        }
@@ -476465,7 +476465,7 @@ export const stateLegResults: Record<
         "votes": 4205
        },
        {
-        "name": "Seth William Vanthof",
+        "name": "Seth William Van'T Hof",
         "party": "O",
         "votes": 1093
        }
@@ -476556,7 +476556,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Julie Fryemueller",
+        "name": "Julie Frye-Mueller",
         "party": "R",
         "votes": 10043,
         "winner": true
@@ -476674,7 +476674,7 @@ export const stateLegResults: Record<
       "totalVotes": 18029,
       "candidates": [
        {
-        "name": "Tamara Stjohn",
+        "name": "Tamara St John",
         "party": "R",
         "votes": 5726,
         "incumbent": true,
@@ -476990,7 +476990,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sue Peterson",
+        "name": "Sue Lucas Peterson",
         "party": "R",
         "votes": 5879,
         "incumbent": true,
@@ -477011,7 +477011,7 @@ export const stateLegResults: Record<
       "totalVotes": 19969,
       "candidates": [
        {
-        "name": "Taylor Raerehfeldt",
+        "name": "Taylor Rehfeldt",
         "party": "R",
         "votes": 6127,
         "incumbent": true,
@@ -477111,7 +477111,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Rebecca Engquistschroeder",
+        "name": "Rebecca Engquist-Schroeder",
         "party": "D",
         "votes": 3586
        }
@@ -477312,7 +477312,7 @@ export const stateLegResults: Record<
         "votes": 4535
        },
        {
-        "name": "David Killsahundred",
+        "name": "David Kills A Hundred",
         "party": "D",
         "votes": 2260
        }
@@ -477451,7 +477451,7 @@ export const stateLegResults: Record<
         "votes": 3095
        },
        {
-        "name": "Jonathan M. Oldhorse",
+        "name": "Jonathan M. Old Horse",
         "party": "D",
         "votes": 2848
        }
@@ -478003,7 +478003,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Dan Andersson",
+        "name": "Dan Kerner Andersson",
         "party": "D",
         "votes": 1771
        }
@@ -478149,7 +478149,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Julie Fryemueller",
+        "name": "Julie Frye-Mueller",
         "party": "R",
         "votes": 9598,
         "incumbent": true,
@@ -479931,7 +479931,7 @@ export const stateLegResults: Record<
       "totalVotes": 25020,
       "candidates": [
        {
-        "name": "Micah Vanhuss",
+        "name": "Micah van Huss",
         "party": "R",
         "votes": 18213,
         "incumbent": true,
@@ -480135,7 +480135,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Andrew Ellisfarmer",
+        "name": "Andrew Ellis Farmer",
         "party": "R",
         "votes": 18185,
         "incumbent": true,
@@ -480234,7 +480234,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Anna Millergrabowski",
+        "name": "Anna Miller Grabowski",
         "party": "D",
         "votes": 4486
        }
@@ -480575,7 +480575,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Gayla Colverthendrix",
+        "name": "Gayla Colvert Hendrix",
         "party": "D",
         "votes": 7450
        }
@@ -480691,7 +480691,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Amelia Morrisonhipps",
+        "name": "Amelia Morrison Hipps",
         "party": "D",
         "votes": 6589
        }
@@ -481856,7 +481856,7 @@ export const stateLegResults: Record<
       "totalVotes": 94138,
       "candidates": [
        {
-        "name": "Steven Reiddickerson",
+        "name": "Steven Reid Dickerson",
         "party": "R",
         "votes": 52966,
         "incumbent": true,
@@ -482077,7 +482077,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Micah Vanhuss",
+        "name": "Micah van Huss",
         "party": "R",
         "votes": 15892,
         "incumbent": true,
@@ -482291,7 +482291,7 @@ export const stateLegResults: Record<
       "totalVotes": 18856,
       "candidates": [
        {
-        "name": "Andrew E. Farmer",
+        "name": "Andrew Ellis Farmer",
         "party": "R",
         "votes": 14949,
         "incumbent": true,
@@ -482702,7 +482702,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Carol Veneaabney",
+        "name": "Carol Venea Abney",
         "party": "D",
         "votes": 3667
        }
@@ -483025,7 +483025,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "John Rayclemmons",
+        "name": "John Ray Clemmons",
         "party": "D",
         "votes": 19745,
         "incumbent": true,
@@ -483542,7 +483542,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Andrea Bondjohnson",
+        "name": "Andrea Bond-Johnson",
         "party": "D",
         "votes": 7229
        }
@@ -484877,7 +484877,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Carol Abney",
+        "name": "Carol Venea Abney",
         "party": "D",
         "votes": 3724
        }
@@ -485661,7 +485661,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Andrea Bondjohnson",
+        "name": "Andrea Bond-Johnson",
         "party": "D",
         "votes": 8684
        }
@@ -486153,7 +486153,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Steven Reiddickerson",
+        "name": "Steven Reid Dickerson",
         "party": "R",
         "votes": 54755,
         "incumbent": true
@@ -486213,7 +486213,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Civil Millerwatkins",
+        "name": "Civil Miller-Watkins",
         "party": "D",
         "votes": 19918
        }
@@ -486269,7 +486269,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Julie Byrdashworth",
+        "name": "Julie Byrd Ashworth",
         "party": "D",
         "votes": 31571
        }
@@ -486571,7 +486571,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Andrew Ellisfarmer",
+        "name": "Andrew Ellis Farmer",
         "party": "R",
         "votes": 13085,
         "incumbent": true,
@@ -486710,7 +486710,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Anne Ferrellquillen",
+        "name": "Anne Quillen",
         "party": "D",
         "votes": 4088
        }
@@ -487039,7 +487039,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cheryl Womackuselton",
+        "name": "Cheryl Womack Uselton",
         "party": "D",
         "votes": 3404
        }
@@ -487249,7 +487249,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "John Rayclemmons",
+        "name": "John Ray Clemmons",
         "party": "D",
         "votes": 7551,
         "incumbent": true,
@@ -488332,7 +488332,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ruby Powelldennis",
+        "name": "Ruby Powell-Dennis",
         "party": "D",
         "votes": 23041
        }
@@ -490798,7 +490798,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cecil R. Webster",
+        "name": "Cecil Ray Webster Sr.",
         "party": "D",
         "votes": 14965
        }
@@ -491255,7 +491255,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Maricela Deleon",
+        "name": "Maricela de Leon",
         "party": "R",
         "votes": 8266
        }
@@ -491275,7 +491275,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Hilda Garzadeshazo",
+        "name": "Hilda Garza Deshazo",
         "party": "R",
         "votes": 18924
        }
@@ -491311,7 +491311,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Marisa Yvette Garciautley",
+        "name": "Marisa Yvette Garcia-Utley",
         "party": "D",
         "votes": 19735
        }
@@ -491520,7 +491520,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Stephanie Lochteertel",
+        "name": "Stephanie Lochte Ertel",
         "party": "D",
         "votes": 14256
        }
@@ -492582,7 +492582,7 @@ export const stateLegResults: Record<
       "totalVotes": 54585,
       "candidates": [
        {
-        "name": "Angie Chenbutton",
+        "name": "Angie Chen Button",
         "party": "R",
         "votes": 31234,
         "incumbent": true,
@@ -492733,7 +492733,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Barbara Gervinhawkins",
+        "name": "Barbara Gervin-Hawkins",
         "party": "D",
         "votes": 31510,
         "winner": true
@@ -492836,7 +492836,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joy Dawsonthomas",
+        "name": "Joy Dawson-Thomas",
         "party": "D",
         "votes": 23991
        }
@@ -493139,7 +493139,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ana Lunahernandez",
+        "name": "Ana Hernandez",
         "party": "D",
         "votes": 26247,
         "incumbent": true,
@@ -493819,7 +493819,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cecil Raywebster Sr.",
+        "name": "Cecil Ray Webster Sr.",
         "party": "D",
         "votes": 13494
        }
@@ -493858,7 +493858,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lorena Perezmcgill",
+        "name": "Lorena Perez McGill",
         "party": "D",
         "votes": 25915
        }
@@ -494324,7 +494324,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Hilda Garzadeshazo",
+        "name": "Hilda Garza Deshazo",
         "party": "R",
         "votes": 15535
        }
@@ -494344,7 +494344,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Luis Delagarza",
+        "name": "Luis de la Garza",
         "party": "R",
         "votes": 8778
        }
@@ -494364,7 +494364,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Dee Ann Torresmiller",
+        "name": "Dee Ann Torres Miller",
         "party": "D",
         "votes": 16854
        }
@@ -494549,7 +494549,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Stephanie Lochteertel",
+        "name": "Stephanie Lochte Ertel",
         "party": "D",
         "votes": 14449
        }
@@ -494604,7 +494604,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Katherine Turnerpearson",
+        "name": "Katherine Turner-Pearson",
         "party": "D",
         "votes": 19713
        }
@@ -495111,7 +495111,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Samantha Carrillofields",
+        "name": "Samantha Carrillo Fields",
         "party": "D",
         "votes": 18237
        }
@@ -495362,7 +495362,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Beth Llewellynmclaughlin",
+        "name": "Beth Llewellyn McLaughlin",
         "party": "D",
         "votes": 29665
        }
@@ -495633,7 +495633,7 @@ export const stateLegResults: Record<
       "totalVotes": 53142,
       "candidates": [
        {
-        "name": "Angie Chenbutton",
+        "name": "Angie Chen Button",
         "party": "R",
         "votes": 27126,
         "incumbent": true,
@@ -495678,7 +495678,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lisa Lubyryan",
+        "name": "Lisa Luby Ryan",
         "party": "R",
         "votes": 29508
        }
@@ -495711,7 +495711,7 @@ export const stateLegResults: Record<
       "totalVotes": 46218,
       "candidates": [
        {
-        "name": "Trey Martinezfischer",
+        "name": "Trey Martinez Fischer",
         "party": "D",
         "votes": 32538,
         "winner": true
@@ -495785,7 +495785,7 @@ export const stateLegResults: Record<
       "totalVotes": 42218,
       "candidates": [
        {
-        "name": "Barbara Gervinhawkins",
+        "name": "Barbara Gervin-Hawkins",
         "party": "D",
         "votes": 28864,
         "incumbent": true,
@@ -496064,7 +496064,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Allison Lamisawyer",
+        "name": "Allison Lami Sawyer",
         "party": "D",
         "votes": 41637
        }
@@ -496228,7 +496228,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ana Lunahernandez",
+        "name": "Ana Hernandez",
         "party": "D",
         "votes": 22504,
         "incumbent": true,
@@ -496961,7 +496961,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lorena Perezmcgill",
+        "name": "Lorena Perez McGill",
         "party": "D",
         "votes": 36111
        }
@@ -497718,7 +497718,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Katherine Turnerpearson",
+        "name": "Katherine Turner-Pearson",
         "party": "D",
         "votes": 23833
        }
@@ -498089,7 +498089,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Claudia Ordazperez",
+        "name": "Claudia Ordaz Perez",
         "party": "D",
         "votes": 36199,
         "winner": true
@@ -498209,7 +498209,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Addison Perryfranks",
+        "name": "Addison Perry-Franks",
         "party": "D",
         "votes": 16185
        }
@@ -498786,7 +498786,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Luisa Delrosal",
+        "name": "Luisa del Rosal",
         "party": "R",
         "votes": 37014
        }
@@ -498819,7 +498819,7 @@ export const stateLegResults: Record<
       "totalVotes": 59936,
       "candidates": [
        {
-        "name": "Trey Martinezfischer",
+        "name": "Trey Martinez Fischer",
         "party": "D",
         "votes": 41426,
         "incumbent": true,
@@ -498898,7 +498898,7 @@ export const stateLegResults: Record<
       "totalVotes": 58834,
       "candidates": [
        {
-        "name": "Barbara Gervinhawkins",
+        "name": "Barbara Gervin-Hawkins",
         "party": "D",
         "votes": 40004,
         "incumbent": true,
@@ -499341,7 +499341,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Ana Lunahernandez",
+        "name": "Ana Hernandez",
         "party": "D",
         "votes": 30460,
         "incumbent": true,
@@ -499432,13 +499432,13 @@ export const stateLegResults: Record<
       "totalVotes": 60131,
       "candidates": [
        {
-        "name": "Penny Moralesshaw",
+        "name": "Penny Morales Shaw",
         "party": "D",
         "votes": 38287,
         "winner": true
        },
        {
-        "name": "Luis Larotta",
+        "name": "Luis la Rotta",
         "party": "R",
         "votes": 21844
        }
@@ -500224,7 +500224,7 @@ export const stateLegResults: Record<
       "totalVotes": 55751,
       "candidates": [
        {
-        "name": "Terri Leowilson",
+        "name": "Terri Leo-Wilson",
         "party": "R",
         "votes": 35559,
         "winner": true
@@ -500567,7 +500567,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "John Robertguerra",
+        "name": "John Guerra",
         "party": "R",
         "votes": 16883
        }
@@ -501285,7 +501285,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Claudia Ordazperez",
+        "name": "Claudia Ordaz Perez",
         "party": "D",
         "votes": null,
         "incumbent": true,
@@ -501797,7 +501797,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Victoria Neavecriado",
+        "name": "Victoria Neave",
         "party": "D",
         "votes": 18702,
         "incumbent": true,
@@ -501891,7 +501891,7 @@ export const stateLegResults: Record<
       "totalVotes": 68512,
       "candidates": [
        {
-        "name": "Angie Chenbutton",
+        "name": "Angie Chen Button",
         "party": "R",
         "votes": 37566,
         "incumbent": true,
@@ -501969,7 +501969,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Trey Martinezfischer",
+        "name": "Trey Martinez Fischer",
         "party": "D",
         "votes": null,
         "incumbent": true,
@@ -502044,7 +502044,7 @@ export const stateLegResults: Record<
       "totalVotes": 39131,
       "candidates": [
        {
-        "name": "Barbara Gervinhawkins",
+        "name": "Barbara Gervin-Hawkins",
         "party": "D",
         "votes": 26413,
         "incumbent": true,
@@ -502071,7 +502071,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Becca Moyerdefelice",
+        "name": "Becca Moyer Defelice",
         "party": "D",
         "votes": 34721
        }
@@ -502567,7 +502567,7 @@ export const stateLegResults: Record<
       "totalVotes": 36147,
       "candidates": [
        {
-        "name": "Penny Moralesshaw",
+        "name": "Penny Morales Shaw",
         "party": "D",
         "votes": 20456,
         "incumbent": true,
@@ -502614,7 +502614,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ginny Browndaniel",
+        "name": "Ginny Brown Daniel",
         "party": "D",
         "votes": 22558
        }
@@ -503077,7 +503077,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kathy Joneshospod",
+        "name": "Kathy Jones-Hospod",
         "party": "D",
         "votes": 104063
        }
@@ -506599,7 +506599,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Rebecca Chavezhouck",
+        "name": "Rebecca Chavez-Houck",
         "party": "D",
         "votes": 14064,
         "incumbent": true,
@@ -506837,7 +506837,7 @@ export const stateLegResults: Record<
       "totalVotes": 17823,
       "candidates": [
        {
-        "name": "Carol Spackmanmoss",
+        "name": "Carol Spackman Moss",
         "party": "D",
         "votes": 10637,
         "incumbent": true,
@@ -507279,7 +507279,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Brooke Swallowfenton",
+        "name": "Brooke Swallow-Fenton",
         "party": "D",
         "votes": 2738
        }
@@ -507529,7 +507529,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "V. Lowrysnow",
+        "name": "V. Lowry Snow",
         "party": "R",
         "votes": 15363,
         "incumbent": true,
@@ -508250,7 +508250,7 @@ export const stateLegResults: Record<
       "totalVotes": 15490,
       "candidates": [
        {
-        "name": "Melissa Garffballard",
+        "name": "Melissa Garff Ballard",
         "party": "R",
         "votes": 10111,
         "winner": true
@@ -508339,7 +508339,7 @@ export const stateLegResults: Record<
       "totalVotes": 18275,
       "candidates": [
        {
-        "name": "Jen Daileyprovost",
+        "name": "Jen Dailey-Provost",
         "party": "D",
         "votes": 14125,
         "winner": true
@@ -508613,7 +508613,7 @@ export const stateLegResults: Record<
       "totalVotes": 18253,
       "candidates": [
        {
-        "name": "Carol Spackmanmoss",
+        "name": "Carol Spackman Moss",
         "party": "D",
         "votes": 11467,
         "incumbent": true,
@@ -509381,7 +509381,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "V. Lowrysnow",
+        "name": "V. Lowry Snow",
         "party": "R",
         "votes": 13108,
         "incumbent": true,
@@ -510120,7 +510120,7 @@ export const stateLegResults: Record<
       "totalVotes": 20545,
       "candidates": [
        {
-        "name": "Melissa Garffballard",
+        "name": "Melissa Garff Ballard",
         "party": "R",
         "votes": 13828,
         "incumbent": true,
@@ -510200,7 +510200,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jen Daileyprovost",
+        "name": "Jen Dailey-Provost",
         "party": "D",
         "votes": 18119,
         "incumbent": true,
@@ -510445,7 +510445,7 @@ export const stateLegResults: Record<
       "totalVotes": 21325,
       "candidates": [
        {
-        "name": "Carol Spackmanmoss",
+        "name": "Carol Spackman Moss",
         "party": "D",
         "votes": 13037,
         "incumbent": true,
@@ -510869,7 +510869,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Russell Garnhatch",
+        "name": "Russell Hatch",
         "party": "O",
         "votes": 1807
        },
@@ -511852,7 +511852,7 @@ export const stateLegResults: Record<
       "totalVotes": 13358,
       "candidates": [
        {
-        "name": "Melissa Garffballard",
+        "name": "Melissa Garff Ballard",
         "party": "R",
         "votes": 8126,
         "incumbent": true,
@@ -511898,7 +511898,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jen Daileyprovost",
+        "name": "Jen Dailey-Provost",
         "party": "D",
         "votes": 13467,
         "incumbent": true,
@@ -512048,7 +512048,7 @@ export const stateLegResults: Record<
       "totalVotes": 10276,
       "candidates": [
        {
-        "name": "Judy Weeksrohner",
+        "name": "Judy Weeks-Rohner",
         "party": "R",
         "votes": 5002,
         "winner": true
@@ -512131,7 +512131,7 @@ export const stateLegResults: Record<
       "totalVotes": 17093,
       "candidates": [
        {
-        "name": "Carol Spackmanmoss",
+        "name": "Carol Spackman Moss",
         "party": "D",
         "votes": 11473,
         "incumbent": true,
@@ -514963,7 +514963,7 @@ export const stateLegResults: Record<
       "totalVotes": 21169,
       "candidates": [
        {
-        "name": "Jennifer D. Carrollfoy",
+        "name": "Jennifer D. Carroll Foy",
         "party": "D",
         "votes": 13366,
         "winner": true
@@ -515302,7 +515302,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michele Dixonedwards",
+        "name": "Michele Dixon Edwards",
         "party": "D",
         "votes": 11197
        }
@@ -515315,7 +515315,7 @@ export const stateLegResults: Record<
       "totalVotes": 23849,
       "candidates": [
        {
-        "name": "Kelly K. Convirsfowler",
+        "name": "Kelly K. Convirs-Fowler",
         "party": "D",
         "votes": 12540,
         "winner": true
@@ -515351,7 +515351,7 @@ export const stateLegResults: Record<
       "totalVotes": 26420,
       "candidates": [
        {
-        "name": "T. Scottgarrett",
+        "name": "T. Scott Garrett",
         "party": "R",
         "votes": 17370,
         "incumbent": true,
@@ -515517,7 +515517,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "L. Scottlingamfelter",
+        "name": "L. Scott Lingamfelter",
         "party": "R",
         "votes": 12658,
         "incumbent": true
@@ -515639,7 +515639,7 @@ export const stateLegResults: Record<
       "totalVotes": 21746,
       "candidates": [
        {
-        "name": "L. Kayekory",
+        "name": "L. Kaye Kory",
         "party": "D",
         "votes": 16023,
         "incumbent": true,
@@ -515696,7 +515696,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Eileen Fillercorn",
+        "name": "Eileen Filler-Corn",
         "party": "D",
         "votes": 22985,
         "incumbent": true,
@@ -515717,7 +515717,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lolita I. Manchenosmoak",
+        "name": "Lolita I. Mancheno-Smoak",
         "party": "R",
         "votes": 11967
        }
@@ -515852,7 +515852,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jackson Huntermiller",
+        "name": "Jackson Hunter Miller",
         "party": "R",
         "votes": 9518,
         "incumbent": true
@@ -516081,7 +516081,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sheila Bynumcoleman",
+        "name": "Sheila Bynum-Coleman",
         "party": "D",
         "votes": 11344
        }
@@ -516129,7 +516129,7 @@ export const stateLegResults: Record<
       "totalVotes": 34924,
       "candidates": [
        {
-        "name": "R. Leeware Jr.",
+        "name": "R. Lee Ware Jr.",
         "party": "R",
         "votes": 22394,
         "incumbent": true,
@@ -516149,7 +516149,7 @@ export const stateLegResults: Record<
       "totalVotes": 29228,
       "candidates": [
        {
-        "name": "M. Kirklandcox",
+        "name": "M. Kirkland Cox",
         "party": "R",
         "votes": 18572,
         "incumbent": true,
@@ -516473,7 +516473,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "David E. Rosecarmack",
+        "name": "David E. Rose-Carmack",
         "party": "D",
         "votes": 10077
        }
@@ -516782,7 +516782,7 @@ export const stateLegResults: Record<
       "totalVotes": 26591,
       "candidates": [
        {
-        "name": "Margaret Bevansransone",
+        "name": "Margaret Bevans Ransone",
         "party": "R",
         "votes": 16548,
         "incumbent": true,
@@ -516845,14 +516845,14 @@ export const stateLegResults: Record<
       "totalVotes": 19391,
       "candidates": [
        {
-        "name": "Jennifer Denise Carrollfoy",
+        "name": "Jennifer Denise Carroll Foy",
         "party": "D",
         "votes": 11828,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Heather Funderburkmitchell",
+        "name": "Heather Funderburk Mitchell",
         "party": "R",
         "votes": 7563
        }
@@ -516881,7 +516881,7 @@ export const stateLegResults: Record<
       "totalVotes": 22850,
       "candidates": [
        {
-        "name": "William Creedwampler III",
+        "name": "William Creed Wampler III",
         "party": "R",
         "votes": 14389,
         "winner": true
@@ -516976,7 +516976,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Charles Douglaspoindexter",
+        "name": "Charles Poindexter",
         "party": "R",
         "votes": 19040,
         "incumbent": true,
@@ -516991,14 +516991,14 @@ export const stateLegResults: Record<
       "totalVotes": 30428,
       "candidates": [
        {
-        "name": "Gwendolyn Wallacegooditis",
+        "name": "Wendy W. Gooditis",
         "party": "D",
         "votes": 15928,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "John Randallminchew",
+        "name": "Willie C. Randall",
         "party": "R",
         "votes": 14500
        }
@@ -517027,14 +517027,14 @@ export const stateLegResults: Record<
       "totalVotes": 20778,
       "candidates": [
        {
-        "name": "Christopher Lairdhurst",
+        "name": "Christopher Hurst",
         "party": "D",
         "votes": 11135,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Travis Forresthite",
+        "name": "Travis Forrest Hite",
         "party": "R",
         "votes": 9643
        }
@@ -517054,7 +517054,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kelly Sweeneymcginn",
+        "name": "Kelly Sweeney McGinn",
         "party": "R",
         "votes": 9468
        }
@@ -517067,14 +517067,14 @@ export const stateLegResults: Record<
       "totalVotes": 19793,
       "candidates": [
        {
-        "name": "Daniel Webstermarshall III",
+        "name": "Daniel Marshall III",
         "party": "R",
         "votes": 12139,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Eric Waynestamps",
+        "name": "Eric Wayne Stamps",
         "party": "D",
         "votes": 7654
        }
@@ -517115,7 +517115,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Dustin Wilsonevans",
+        "name": "Dustin Wilson Evans",
         "party": "O",
         "votes": 4402
        }
@@ -517199,14 +517199,14 @@ export const stateLegResults: Record<
       "totalVotes": 22702,
       "candidates": [
        {
-        "name": "Kelly Kristen Convirsfowler",
+        "name": "Kelly Kristen Convirs-Fowler",
         "party": "D",
         "votes": 12402,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Shannon Denisesnyderkane",
+        "name": "Shannon Denise-Snyder-Kane",
         "party": "R",
         "votes": 10300
        }
@@ -517239,7 +517239,7 @@ export const stateLegResults: Record<
       "totalVotes": 21138,
       "candidates": [
        {
-        "name": "Wendell Scottwalker",
+        "name": "Wendell Scott Walker",
         "party": "R",
         "votes": 13529,
         "winner": true
@@ -517264,7 +517264,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Christian Renauworth",
+        "name": "Christian Renau Worth",
         "party": "D",
         "votes": 7737
        }
@@ -517296,14 +517296,14 @@ export const stateLegResults: Record<
       "totalVotes": 18998,
       "candidates": [
        {
-        "name": "Tony Obrianwilt",
+        "name": "Tony Wilt",
         "party": "R",
         "votes": 10273,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Brent Michael Lewisfinnegan",
+        "name": "Brent Michael Finnegan",
         "party": "D",
         "votes": 8725
        }
@@ -517316,7 +517316,7 @@ export const stateLegResults: Record<
       "totalVotes": 30391,
       "candidates": [
        {
-        "name": "Roxann Lainerobinson",
+        "name": "Roxann Robinson",
         "party": "R",
         "votes": 15290,
         "incumbent": true,
@@ -517355,7 +517355,7 @@ export const stateLegResults: Record<
       "totalVotes": 24115,
       "candidates": [
        {
-        "name": "Christopher Edmancollins",
+        "name": "Christopher Collins",
         "party": "R",
         "votes": 15532,
         "incumbent": true,
@@ -517382,7 +517382,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ann Faulknerridgeway",
+        "name": "Ann Faulkner Ridgeway",
         "party": "D",
         "votes": 11011
        }
@@ -517438,7 +517438,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Mavis Bunkertaintor",
+        "name": "Mavis Bunker Taintor",
         "party": "D",
         "votes": 13433
        }
@@ -517520,7 +517520,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Laura Kayekory",
+        "name": "Laura Kaye Kory",
         "party": "D",
         "votes": 13934,
         "incumbent": true,
@@ -517576,7 +517576,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Eileen Fillercorn",
+        "name": "Eileen Filler-Corn",
         "party": "D",
         "votes": 17312,
         "incumbent": true,
@@ -517601,7 +517601,7 @@ export const stateLegResults: Record<
       "totalVotes": 27087,
       "candidates": [
        {
-        "name": "Kathy Khanh Linhtran",
+        "name": "Kathy Khanh Tran",
         "party": "D",
         "votes": 16178,
         "incumbent": true,
@@ -517679,7 +517679,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Charniele Lerhondaherring",
+        "name": "Charniele Herring",
         "party": "D",
         "votes": 12287,
         "incumbent": true,
@@ -517727,14 +517727,14 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Alfonso Hoffmanlopez",
+        "name": "Alfonso Lopez",
         "party": "D",
         "votes": 13594,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Terrence Waynemodglin",
+        "name": "Terrence Modglin",
         "party": "O",
         "votes": 2559
        }
@@ -517823,14 +517823,14 @@ export const stateLegResults: Record<
       "totalVotes": 23466,
       "candidates": [
        {
-        "name": "Robert Dicksonorrock Sr.",
+        "name": "Robert Orrock Sr.",
         "party": "R",
         "votes": 13614,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Neri Neftalicanahuiortiz",
+        "name": "Neri Neftali Canahui Ortiz",
         "party": "D",
         "votes": 9852
        }
@@ -517843,7 +517843,7 @@ export const stateLegResults: Record<
       "totalVotes": 28864,
       "candidates": [
        {
-        "name": "Hyland Franklinfowler Jr.",
+        "name": "Hyland Fowler Jr.",
         "party": "R",
         "votes": 17356,
         "incumbent": true,
@@ -517884,7 +517884,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sally Lindquisthudson",
+        "name": "Sally Lindquist Hudson",
         "party": "D",
         "votes": 21365,
         "winner": true
@@ -517965,7 +517965,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Trudy Bellberry",
+        "name": "Trudy Bell Berry",
         "party": "D",
         "votes": 7667
        }
@@ -517978,7 +517978,7 @@ export const stateLegResults: Record<
       "totalVotes": 23883,
       "candidates": [
        {
-        "name": "Carrie Emersoncoyner",
+        "name": "Carrie Emerson Coyner",
         "party": "R",
         "votes": 13182,
         "winner": true
@@ -517998,7 +517998,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lashrecse Dianna Jonesaird",
+        "name": "Lashrecse Dianna Aird",
         "party": "D",
         "votes": 12796,
         "incumbent": true,
@@ -518025,7 +518025,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michele Erbjoyce",
+        "name": "Michele Erb Joyce",
         "party": "D",
         "votes": 10704
        }
@@ -518058,14 +518058,14 @@ export const stateLegResults: Record<
       "totalVotes": 27590,
       "candidates": [
        {
-        "name": "M. Kirkland Kirk Cox",
+        "name": "M. Kirk Kirkland Cox",
         "party": "R",
         "votes": 14443,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Sheila Carol Bynumcoleman",
+        "name": "Sheila Carol Bynum-Coleman",
         "party": "D",
         "votes": 13147
        }
@@ -518101,7 +518101,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Garrison Rashadcoward",
+        "name": "Garrison Rashad Coward",
         "party": "R",
         "votes": 17329
        }
@@ -518115,7 +518115,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Betsy Brookscarr",
+        "name": "Betsy Carr",
         "party": "D",
         "votes": 18935,
         "incumbent": true,
@@ -518187,7 +518187,7 @@ export const stateLegResults: Record<
       "totalVotes": 28493,
       "candidates": [
        {
-        "name": "Rodney Turnerwillett",
+        "name": "Rodney Turner Willett",
         "party": "D",
         "votes": 14893,
         "winner": true
@@ -518222,7 +518222,7 @@ export const stateLegResults: Record<
       "totalVotes": 24186,
       "candidates": [
        {
-        "name": "Roslyn Caintyler",
+        "name": "Roslyn Tyler",
         "party": "D",
         "votes": 12346,
         "incumbent": true,
@@ -518279,7 +518279,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "James Asburyleftwich Jr.",
+        "name": "James Leftwich Jr.",
         "party": "R",
         "votes": 16648,
         "incumbent": true,
@@ -518354,14 +518354,14 @@ export const stateLegResults: Record<
       "totalVotes": 26611,
       "candidates": [
        {
-        "name": "Jason Stuart Reddingmiyares",
+        "name": "Jason Stuart Miyares",
         "party": "R",
         "votes": 15771,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Gayle Harrisonjohnson",
+        "name": "Gayle Harrison Johnson",
         "party": "D",
         "votes": 10840
        }
@@ -518374,7 +518374,7 @@ export const stateLegResults: Record<
       "totalVotes": 21915,
       "candidates": [
        {
-        "name": "Nancy Dahlmanguy",
+        "name": "Nancy Dahlman Guy",
         "party": "D",
         "votes": 10971,
         "winner": true
@@ -518401,7 +518401,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Karen Powersmallard",
+        "name": "Karen Powers Mallard",
         "party": "D",
         "votes": 10082
        }
@@ -518420,7 +518420,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Norman Deweyholcomb III",
+        "name": "Norman Holcomb III",
         "party": "R",
         "votes": 11277
        }
@@ -518433,7 +518433,7 @@ export const stateLegResults: Record<
       "totalVotes": 20632,
       "candidates": [
        {
-        "name": "Ibraheem Sabrisamirah",
+        "name": "Ibraheem Sabri Samirah",
         "party": "D",
         "votes": 18470,
         "winner": true
@@ -518478,7 +518478,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jessica Harbesonfoster",
+        "name": "Jessica Harbeson Foster",
         "party": "D",
         "votes": 12013
        }
@@ -518508,7 +518508,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Joseph Carnelllindsey",
+        "name": "Joseph Lindsey",
         "party": "D",
         "votes": 12584,
         "incumbent": true,
@@ -518529,7 +518529,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Colleen Holmesholcomb",
+        "name": "Colleen Holmes Holcomb",
         "party": "R",
         "votes": 9487
        }
@@ -518584,7 +518584,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "David Etienneyancey",
+        "name": "David Yancey",
         "party": "R",
         "votes": 8070,
         "incumbent": true
@@ -518614,13 +518614,13 @@ export const stateLegResults: Record<
       "totalVotes": 32283,
       "candidates": [
        {
-        "name": "Amanda Etterbatten",
+        "name": "Amanda Etter Batten",
         "party": "R",
         "votes": 17142,
         "winner": true
        },
        {
-        "name": "Mark Collinsdowney",
+        "name": "Mark Collins Downey",
         "party": "D",
         "votes": 15141
        }
@@ -518659,7 +518659,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elizabeth Beltwebster",
+        "name": "Elizabeth Belt Webster",
         "party": "D",
         "votes": 8399
        }
@@ -518672,7 +518672,7 @@ export const stateLegResults: Record<
       "totalVotes": 28332,
       "candidates": [
        {
-        "name": "Margaret Bevansransone",
+        "name": "Margaret Bevans Ransone",
         "party": "R",
         "votes": 17701,
         "incumbent": true,
@@ -518718,7 +518718,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Taylor Montgomerymason",
+        "name": "Taylor Mason",
         "party": "D",
         "votes": 36869,
         "winner": true
@@ -518795,7 +518795,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jeffrey Bennettstaples",
+        "name": "Jeffrey Staples",
         "party": "O",
         "votes": 7812
        }
@@ -518808,7 +518808,7 @@ export const stateLegResults: Record<
       "totalVotes": 43129,
       "candidates": [
        {
-        "name": "Lynwood Waynelewis Jr.",
+        "name": "Lynwood Lewis Jr.",
         "party": "D",
         "votes": 25772,
         "incumbent": true,
@@ -518834,7 +518834,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cheryl Baldwinturpin",
+        "name": "Cheryl Turpin",
         "party": "D",
         "votes": 29098
        }
@@ -518854,7 +518854,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Melissa Cottersmasal",
+        "name": "Melissa Cotter Smasal",
         "party": "D",
         "votes": 26242
        }
@@ -518887,7 +518887,7 @@ export const stateLegResults: Record<
       "totalVotes": 82285,
       "candidates": [
        {
-        "name": "Ghazala Firdoushashmi",
+        "name": "Ghazala Firdous Hashmi",
         "party": "D",
         "votes": 44548,
         "winner": true
@@ -518907,7 +518907,7 @@ export const stateLegResults: Record<
       "totalVotes": 80979,
       "candidates": [
        {
-        "name": "Amanda Freemanchase",
+        "name": "Amanda Chase",
         "party": "R",
         "votes": 44245,
         "incumbent": true,
@@ -518927,14 +518927,14 @@ export const stateLegResults: Record<
       "totalVotes": 78131,
       "candidates": [
        {
-        "name": "Siobhan Stolledunnavant",
+        "name": "Siobhan Dunnavant",
         "party": "R",
         "votes": 39730,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Debra Hainrodman",
+        "name": "Debra Rodman",
         "party": "D",
         "votes": 38401
        }
@@ -518986,7 +518986,7 @@ export const stateLegResults: Record<
       "totalVotes": 56264,
       "candidates": [
        {
-        "name": "Frank Millerruff Jr.",
+        "name": "Frank Ruff Jr.",
         "party": "R",
         "votes": 38471,
         "incumbent": true,
@@ -519047,7 +519047,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Lillie Louise Boonelucas",
+        "name": "Lillie Louise Lucas",
         "party": "D",
         "votes": 43021,
         "incumbent": true,
@@ -519069,7 +519069,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Flourette Marie Mooreketner",
+        "name": "Flourette Marie Ketner",
         "party": "D",
         "votes": 16484
        }
@@ -519130,7 +519130,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Dakota Scottclaytor",
+        "name": "Dakota Scott Claytor",
         "party": "D",
         "votes": 22254
        }
@@ -519159,14 +519159,14 @@ export const stateLegResults: Record<
       "totalVotes": 65623,
       "candidates": [
        {
-        "name": "Emmett Wilsonhanger Jr.",
+        "name": "Emmett Hanger Jr.",
         "party": "R",
         "votes": 46890,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Annette Heathcockhyde",
+        "name": "Annette Heathcock Hyde",
         "party": "D",
         "votes": 18733
        }
@@ -519180,7 +519180,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Robert Creighdeeds",
+        "name": "Robert Deeds",
         "party": "D",
         "votes": 44778,
         "incumbent": true,
@@ -519200,7 +519200,7 @@ export const stateLegResults: Record<
       "totalVotes": 56946,
       "candidates": [
        {
-        "name": "Mark Dudleyobenshain",
+        "name": "Mark Obenshain",
         "party": "R",
         "votes": 36998,
         "incumbent": true,
@@ -519220,7 +519220,7 @@ export const stateLegResults: Record<
       "totalVotes": 67467,
       "candidates": [
        {
-        "name": "Jill Holtzmanvogel",
+        "name": "Jill Vogel",
         "party": "R",
         "votes": 43353,
         "incumbent": true,
@@ -519261,7 +519261,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Jeremy Scottmcpike",
+        "name": "Jeremy McPike",
         "party": "D",
         "votes": 35148,
         "incumbent": true,
@@ -519308,14 +519308,14 @@ export const stateLegResults: Record<
       "totalVotes": 65957,
       "candidates": [
        {
-        "name": "Janet Denisonhowell",
+        "name": "Janet Howell",
         "party": "D",
         "votes": 48581,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "Arthur Grahamepurves",
+        "name": "Arthur Purves",
         "party": "R",
         "votes": 17376
        }
@@ -519328,7 +519328,7 @@ export const stateLegResults: Record<
       "totalVotes": 74288,
       "candidates": [
        {
-        "name": "Jennifer Bartonboysko",
+        "name": "Jennifer Boysko",
         "party": "D",
         "votes": 49296,
         "winner": true
@@ -519353,7 +519353,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "John Chapmanpetersen",
+        "name": "John Petersen",
         "party": "D",
         "votes": 44058,
         "incumbent": true,
@@ -519417,7 +519417,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Augustus Bentonchafin Jr.",
+        "name": "Augustus Chafin Jr.",
         "party": "R",
         "votes": 30295,
         "incumbent": true,
@@ -519857,7 +519857,7 @@ export const stateLegResults: Record<
       "totalVotes": 29980,
       "candidates": [
        {
-        "name": "Kelly Kristen Convirsfowler",
+        "name": "Kelly Kristen Convirs-Fowler",
         "party": "D",
         "votes": 15162,
         "incumbent": true,
@@ -520196,7 +520196,7 @@ export const stateLegResults: Record<
       "totalVotes": 24397,
       "candidates": [
        {
-        "name": "Laura Hedeen Kory",
+        "name": "Laura Hedeen Kaye Kory",
         "party": "D",
         "votes": 16853,
         "incumbent": true,
@@ -520256,7 +520256,7 @@ export const stateLegResults: Record<
       "totalVotes": 35547,
       "candidates": [
        {
-        "name": "Eileen Fillercorn",
+        "name": "Eileen Filler-Corn",
         "party": "D",
         "votes": 23201,
         "incumbent": true,
@@ -520336,7 +520336,7 @@ export const stateLegResults: Record<
       "totalVotes": 42379,
       "candidates": [
        {
-        "name": "Elizabeth Barclay Bennettparker",
+        "name": "Elizabeth Barclay Bennett-Parker",
         "party": "D",
         "votes": 31310,
         "winner": true
@@ -520431,7 +520431,7 @@ export const stateLegResults: Record<
       "totalVotes": 26319,
       "candidates": [
        {
-        "name": "Michelleann E. Lopesmaldonado",
+        "name": "Michelleann E. Lopes-Maldonado",
         "party": "D",
         "votes": 14426,
         "winner": true
@@ -520885,7 +520885,7 @@ export const stateLegResults: Record<
       "totalVotes": 34220,
       "candidates": [
        {
-        "name": "Rodney T. Willett",
+        "name": "Rodney Turner Willett",
         "party": "D",
         "votes": 17972,
         "incumbent": true,
@@ -527464,7 +527464,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sarah Copelandhanzas",
+        "name": "Sarah Copeland Hanzas",
         "party": "D",
         "votes": 1676,
         "incumbent": true,
@@ -527528,7 +527528,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Warren Vanwyck",
+        "name": "Warren van Wyck",
         "party": "R",
         "votes": 1984,
         "incumbent": true,
@@ -529427,7 +529427,7 @@ export const stateLegResults: Record<
       "totalVotes": 2404,
       "candidates": [
        {
-        "name": "Robin Chesnut Tangerman",
+        "name": "Robin Chesnut-Tangerman",
         "party": "D",
         "votes": 1251,
         "incumbent": true,
@@ -529535,7 +529535,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Theresa Personswood",
+        "name": "Theresa Persons Wood",
         "party": "D",
         "votes": 3688,
         "winner": true
@@ -529751,7 +529751,7 @@ export const stateLegResults: Record<
         "votes": 1529
        },
        {
-        "name": "Aaron Diamondstone",
+        "name": "Aaron Diamond Stone",
         "party": "O",
         "votes": 1437
        }
@@ -529819,7 +529819,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Carolyn Whitneybranagan",
+        "name": "Carolyn Whitney Branagan",
         "party": "R",
         "votes": 9426,
         "winner": true
@@ -530095,7 +530095,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sarah Copelandhanzas",
+        "name": "Sarah Copeland Hanzas",
         "party": "D",
         "votes": 1371,
         "incumbent": true,
@@ -530162,7 +530162,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Warren Vanwyck",
+        "name": "Warren van Wyck",
         "party": "R",
         "votes": 1763,
         "incumbent": true
@@ -530392,7 +530392,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Heather Juliussenstevenson",
+        "name": "Heather Juliussen-Stevenson",
         "party": "D",
         "votes": 652
        },
@@ -531994,7 +531994,7 @@ export const stateLegResults: Record<
       "totalVotes": 2151,
       "candidates": [
        {
-        "name": "Robin Chesnuttangerman",
+        "name": "Robin Chesnut-Tangerman",
         "party": "D",
         "votes": 1162,
         "incumbent": true,
@@ -532090,7 +532090,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Theresa Wood",
+        "name": "Theresa Persons Wood",
         "party": "D",
         "votes": 3533,
         "incumbent": true,
@@ -532621,7 +532621,7 @@ export const stateLegResults: Record<
         "votes": 2313
        },
        {
-        "name": "Aaron Diamondstone",
+        "name": "Aaron Diamond Stone",
         "party": "O",
         "votes": 1063
        },
@@ -532745,7 +532745,7 @@ export const stateLegResults: Record<
       "totalVotes": 2402,
       "candidates": [
        {
-        "name": "Sarah Copelandhanzas",
+        "name": "Sarah Copeland Hanzas",
         "party": "D",
         "votes": 1439,
         "incumbent": true,
@@ -533196,7 +533196,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michelle Boslun",
+        "name": "Michelle Bos-Lun",
         "party": "D",
         "votes": 3259,
         "winner": true
@@ -534058,7 +534058,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Emma Mulvaneystanak",
+        "name": "Emma Mulvaney-Stanak",
         "party": "D",
         "votes": 2223,
         "winner": true
@@ -534378,7 +534378,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Glennie Fitzgeraldsewell",
+        "name": "Glennie Sewell",
         "party": "O",
         "votes": 1107
        }
@@ -534603,7 +534603,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kelsey Rootwinchester",
+        "name": "Kelsey Root-Winchester",
         "party": "D",
         "votes": 1013
        }
@@ -534743,7 +534743,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Robin Chesnuttangerman",
+        "name": "Robin Chesnut-Tangerman",
         "party": "D",
         "votes": 1385,
         "incumbent": true
@@ -534840,7 +534840,7 @@ export const stateLegResults: Record<
       "totalVotes": 9489,
       "candidates": [
        {
-        "name": "Theresa A. M. Wood",
+        "name": "Theresa A. M. Persons Wood",
         "party": "D",
         "votes": 3751,
         "incumbent": true,
@@ -535952,7 +535952,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michelle Boslun",
+        "name": "Michelle Bos-Lun",
         "party": "D",
         "votes": 2139,
         "incumbent": true,
@@ -536222,7 +536222,7 @@ export const stateLegResults: Record<
       "totalVotes": 7484,
       "candidates": [
        {
-        "name": "Carolyn Whitneybranagan",
+        "name": "Carolyn Whitney Branagan",
         "party": "R",
         "votes": 2249,
         "winner": true
@@ -536362,7 +536362,7 @@ export const stateLegResults: Record<
         "votes": 616
        },
        {
-        "name": "Suzanne Hullcasavant",
+        "name": "Suzanne Hull-Casavant",
         "party": "O",
         "votes": 141
        }
@@ -536382,7 +536382,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lauren Deeserickson",
+        "name": "Lauren Dees-Erickson",
         "party": "D",
         "votes": 751
        }
@@ -536499,7 +536499,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Bobby Farlicerubio",
+        "name": "Bobby Farlice-Rubio",
         "party": "D",
         "votes": 1478,
         "winner": true
@@ -536760,7 +536760,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Chea Watersevans",
+        "name": "Chea Waters Evans",
         "party": "D",
         "votes": 1787,
         "winner": true
@@ -536849,7 +536849,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Laura Hilleubanks",
+        "name": "Laura Hill-Eubanks",
         "party": "D",
         "votes": 1484
        }
@@ -536947,7 +536947,7 @@ export const stateLegResults: Record<
         "votes": 590
        },
        {
-        "name": "Glennie Fitzgeraldsewell",
+        "name": "Glennie Sewell",
         "party": "O",
         "votes": 512
        }
@@ -537135,7 +537135,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Emma Mulvaneystanak",
+        "name": "Emma Mulvaney-Stanak",
         "party": "D",
         "votes": 1755,
         "incumbent": true,
@@ -537543,7 +537543,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kelsey Rootwinchester",
+        "name": "Kelsey Root-Winchester",
         "party": "D",
         "votes": 902
        }
@@ -537624,7 +537624,7 @@ export const stateLegResults: Record<
       "totalVotes": 2198,
       "candidates": [
        {
-        "name": "Robin Chesnuttangerman",
+        "name": "Robin Chesnut-Tangerman",
         "party": "D",
         "votes": 1179,
         "winner": true
@@ -537753,7 +537753,7 @@ export const stateLegResults: Record<
       "totalVotes": 8017,
       "candidates": [
        {
-        "name": "Theresa A. Wood",
+        "name": "Theresa A. Persons Wood",
         "party": "D",
         "votes": 3364,
         "incumbent": true,
@@ -538231,7 +538231,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Martine Larocquegulick",
+        "name": "Martine Larocque Gulick",
         "party": "D",
         "votes": 14007,
         "winner": true
@@ -538270,7 +538270,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kesha Ramhinsdale",
+        "name": "Kesha Ram",
         "party": "D",
         "votes": 22335,
         "incumbent": true,
@@ -538282,7 +538282,7 @@ export const stateLegResults: Record<
         "votes": 8785
        },
        {
-        "name": "Rohan Stmarthe",
+        "name": "Rohan St. Marthe",
         "party": "R",
         "votes": 7035
        }
@@ -542051,7 +542051,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Erin Smithaboudara",
+        "name": "Erin Smith Aboudara",
         "party": "R",
         "votes": 16511,
         "post": "1"
@@ -542146,7 +542146,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Susan Sotopalmer",
+        "name": "Susan Soto Palmer",
         "party": "D",
         "votes": 18393,
         "post": "1"
@@ -542370,7 +542370,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Lillian Ortizself",
+        "name": "Lillian Ortiz-Self",
         "party": "D",
         "votes": 38170,
         "incumbent": true,
@@ -542774,7 +542774,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Mia Sulinggregerson",
+        "name": "Mia Su-Ling-Gregerson",
         "party": "D",
         "votes": 30837,
         "incumbent": true,
@@ -542900,7 +542900,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sharon Tomikosantos",
+        "name": "Sharon Tomiko Santos",
         "party": "D",
         "votes": 57092,
         "incumbent": true,
@@ -543071,7 +543071,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Luanne Vanwerven",
+        "name": "Luanne van Werven",
         "party": "R",
         "votes": 39184,
         "incumbent": true,
@@ -543306,7 +543306,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Monica Juradostonier",
+        "name": "Monica Jurado Stonier",
         "party": "D",
         "votes": 26745,
         "winner": true,
@@ -543594,7 +543594,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Sue Kuehlpederson",
+        "name": "Sue Kuehl Pederson",
         "party": "O",
         "votes": 25064
        }
@@ -543660,7 +543660,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Kevin Vandewege",
+        "name": "Kevin van de Wege",
         "party": "D",
         "votes": 40808,
         "winner": true
@@ -544529,7 +544529,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Lillian Ortizself",
+        "name": "Lillian Ortiz-Self",
         "party": "D",
         "votes": 38626,
         "incumbent": true,
@@ -544946,7 +544946,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Mia Sulinggregerson",
+        "name": "Mia Su-Ling-Gregerson",
         "party": "D",
         "votes": 30562,
         "incumbent": true,
@@ -545075,7 +545075,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Sharon Tomikosantos",
+        "name": "Sharon Tomiko Santos",
         "party": "D",
         "votes": 54218,
         "incumbent": true,
@@ -545233,7 +545233,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Luanne Vanwerven",
+        "name": "Luanne van Werven",
         "party": "R",
         "votes": 36242,
         "incumbent": true,
@@ -545391,7 +545391,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Jerry Zeigerbuccola",
+        "name": "Jerry Zeiger-Buccola",
         "party": "R",
         "votes": 12971,
         "post": "2"
@@ -545471,7 +545471,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Monica Juradostonier",
+        "name": "Monica Jurado Stonier",
         "party": "D",
         "votes": 40087,
         "incumbent": true,
@@ -545538,7 +545538,7 @@ export const stateLegResults: Record<
       "totalVotes": 59154,
       "candidates": [
        {
-        "name": "Sharon Rayebrown",
+        "name": "Sharon Raye Brown",
         "party": "R",
         "votes": 39960,
         "incumbent": true,
@@ -546038,7 +546038,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Veronica Whitcherrockett",
+        "name": "Veronica Whitcher Rockett",
         "party": "D",
         "votes": 27952,
         "post": "2"
@@ -546409,7 +546409,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Eduardo Castanedadiaz",
+        "name": "Eduardo Castaneda-Diaz",
         "party": "D",
         "votes": 19104,
         "post": "1"
@@ -546673,7 +546673,7 @@ export const stateLegResults: Record<
       "totalVotes": 156820,
       "candidates": [
        {
-        "name": "Lillian Ortizself",
+        "name": "Lillian Ortiz-Self",
         "party": "D",
         "votes": 51619,
         "incumbent": true,
@@ -546765,7 +546765,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Elaina Gonzalesblanton",
+        "name": "Elaina Gonzales-Blanton",
         "party": "R",
         "votes": 32317,
         "post": "2"
@@ -547108,7 +547108,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Mia Sulinggregerson",
+        "name": "Mia Su-Ling-Gregerson",
         "party": "D",
         "votes": 42578,
         "incumbent": true,
@@ -547228,7 +547228,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sharon Tomikosantos",
+        "name": "Sharon Tomiko Santos",
         "party": "D",
         "votes": 63557,
         "incumbent": true,
@@ -547236,7 +547236,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Kirsten Harristalley",
+        "name": "Kirsten Harris-Talley",
         "party": "D",
         "votes": 50780,
         "winner": true,
@@ -547408,7 +547408,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Luanne Vanwerven",
+        "name": "Luanne van Werven",
         "party": "R",
         "votes": 45104,
         "incumbent": true,
@@ -547652,7 +547652,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Monica Stonier",
+        "name": "Monica Jurado Stonier",
         "party": "D",
         "votes": 45578,
         "incumbent": true,
@@ -547810,7 +547810,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Helen Pricejohnson",
+        "name": "Helen Price Johnson",
         "party": "D",
         "votes": 45415
        }
@@ -547877,7 +547877,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Danielle Garbereser",
+        "name": "Danielle Garbe Reser",
         "party": "D",
         "votes": 24889
        }
@@ -547993,7 +547993,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Pam Maddenboyer",
+        "name": "Pam Madden-Boyer",
         "party": "R",
         "votes": 31107
        }
@@ -548006,7 +548006,7 @@ export const stateLegResults: Record<
       "totalVotes": 92172,
       "candidates": [
        {
-        "name": "Kevin Vandewege",
+        "name": "Kevin van de Wege",
         "party": "D",
         "votes": 49883,
         "incumbent": true,
@@ -548200,7 +548200,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Jerry Buccola",
+        "name": "Jerry Zeiger-Buccola",
         "party": "R",
         "votes": 19443,
         "post": "2"
@@ -548399,7 +548399,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Lonny Raywilliams",
+        "name": "Lonny Ray Williams",
         "party": "R",
         "votes": 14771,
         "post": "1"
@@ -548789,7 +548789,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Kelli Hughesham",
+        "name": "Kelli Hughes-Ham",
         "party": "D",
         "votes": 24232,
         "post": "1"
@@ -548836,7 +548836,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Lillian Ortizself",
+        "name": "Lillian Ortiz-Self",
         "party": "D",
         "votes": 37974,
         "incumbent": true,
@@ -549064,7 +549064,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Jalonnie Givensjackson",
+        "name": "Jalonnie Givens-Jackson",
         "party": "R",
         "votes": 16457,
         "post": "1"
@@ -549265,7 +549265,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Mia Sulinggregerson",
+        "name": "Mia Su-Ling-Gregerson",
         "party": "D",
         "votes": 31075,
         "incumbent": true,
@@ -549793,7 +549793,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Monica Juradostonier",
+        "name": "Monica Jurado Stonier",
         "party": "D",
         "votes": 31573,
         "incumbent": true,
@@ -553232,7 +553232,7 @@ export const stateLegResults: Record<
       "totalVotes": 28186,
       "candidates": [
        {
-        "name": "Mary Czaja",
+        "name": "Mary Czaja Felzkowski",
         "party": "R",
         "votes": 18622,
         "incumbent": true,
@@ -553477,7 +553477,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Melissa Agardsargent",
+        "name": "Melissa Agard Sargent",
         "party": "D",
         "votes": 26534,
         "incumbent": true,
@@ -553882,7 +553882,7 @@ export const stateLegResults: Record<
       "totalVotes": 27229,
       "candidates": [
        {
-        "name": "Nancy Lynn Vandermeer",
+        "name": "Nancy Lynn Vander Meer",
         "party": "R",
         "votes": 16963,
         "incumbent": true,
@@ -554068,7 +554068,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sondy Poperoberts",
+        "name": "Sondy Pope-Roberts",
         "party": "D",
         "votes": 26250,
         "incumbent": true,
@@ -554528,7 +554528,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Bryan Vanstippen",
+        "name": "Bryan van Stippen",
         "party": "D",
         "votes": 33713
        }
@@ -555267,7 +555267,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "John Roccocalabrese",
+        "name": "John Rocco Calabrese",
         "party": "D",
         "votes": 9750
        }
@@ -555521,7 +555521,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ann Groveslloyd",
+        "name": "Ann Groves Lloyd",
         "party": "D",
         "votes": 11209
        }
@@ -555624,7 +555624,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Melissa Agardsargent",
+        "name": "Melissa Agard Sargent",
         "party": "D",
         "votes": 27794,
         "incumbent": true,
@@ -556035,7 +556035,7 @@ export const stateLegResults: Record<
       "totalVotes": 24250,
       "candidates": [
        {
-        "name": "Nancy Lynn Vandermeer",
+        "name": "Nancy Lynn Vander Meer",
         "party": "R",
         "votes": 15027,
         "incumbent": true,
@@ -556211,7 +556211,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sondy Pope",
+        "name": "Sondy Pope-Roberts",
         "party": "D",
         "votes": 26189,
         "incumbent": true,
@@ -556646,7 +556646,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Jason Redarnold",
+        "name": "Jason Red Arnold",
         "party": "R",
         "votes": 28459
        }
@@ -556918,7 +556918,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kim Deloritjensen",
+        "name": "Kim Delorit Jensen",
         "party": "D",
         "votes": 14462
        }
@@ -557043,7 +557043,7 @@ export const stateLegResults: Record<
       "totalVotes": 11289,
       "candidates": [
        {
-        "name": "Sylvia Ortizvelez",
+        "name": "Sylvia Ortiz-Velez",
         "party": "D",
         "votes": 8914,
         "winner": true
@@ -557487,7 +557487,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Elizabeth Lochnerabel",
+        "name": "Elizabeth Lochner-Abel",
         "party": "D",
         "votes": 13551
        }
@@ -557642,7 +557642,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Izzy Hasseynevarez",
+        "name": "Izzy Hassey Nevarez",
         "party": "D",
         "votes": 10049
        }
@@ -557844,7 +557844,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Shaun Murphylopez",
+        "name": "Shaun Murphy-Lopez",
         "party": "D",
         "votes": 11528
        }
@@ -557958,7 +557958,7 @@ export const stateLegResults: Record<
       "totalVotes": 34714,
       "candidates": [
        {
-        "name": "Rachael Cabralguevara",
+        "name": "Rachael Cabral-Guevara",
         "party": "R",
         "votes": 19056,
         "winner": true
@@ -558238,14 +558238,14 @@ export const stateLegResults: Record<
       "totalVotes": 31026,
       "candidates": [
        {
-        "name": "Nancy Lynn Vandermeer",
+        "name": "Nancy Lynn Vander Meer",
         "party": "R",
         "votes": 20708,
         "incumbent": true,
         "winner": true
        },
        {
-        "name": "John Iverbaldus",
+        "name": "John Iver Baldus",
         "party": "D",
         "votes": 10318
        }
@@ -558428,7 +558428,7 @@ export const stateLegResults: Record<
       "totalVotes": 41116,
       "candidates": [
        {
-        "name": "Sondy Pope",
+        "name": "Sondy Pope-Roberts",
         "party": "D",
         "votes": 26526,
         "incumbent": true,
@@ -558945,7 +558945,7 @@ export const stateLegResults: Record<
       "totalVotes": 113647,
       "candidates": [
        {
-        "name": "Melissa Agardsargent",
+        "name": "Melissa Agard Sargent",
         "party": "D",
         "votes": 83526,
         "winner": true
@@ -559197,7 +559197,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Joseph Vandeurzen",
+        "name": "Joseph van Deurzen",
         "party": "D",
         "votes": 10258
        }
@@ -559234,7 +559234,7 @@ export const stateLegResults: Record<
       "totalVotes": 20166,
       "candidates": [
        {
-        "name": "Daniel Graanriemer",
+        "name": "Daniel Riemer",
         "party": "D",
         "votes": 12476,
         "incumbent": true,
@@ -559255,7 +559255,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Sylvia Ortizvelez",
+        "name": "Sylvia Ortiz-Velez",
         "party": "D",
         "votes": 6573,
         "incumbent": true,
@@ -559411,7 +559411,7 @@ export const stateLegResults: Record<
       "totalVotes": 21376,
       "candidates": [
        {
-        "name": "Supreme Mooreomokunde",
+        "name": "Supreme Omokunde",
         "party": "D",
         "votes": 17966,
         "incumbent": true,
@@ -560432,7 +560432,7 @@ export const stateLegResults: Record<
       "totalVotes": 25525,
       "candidates": [
        {
-        "name": "Nancy Lynn Vandermeer",
+        "name": "Nancy Lynn Vander Meer",
         "party": "R",
         "votes": 16856,
         "incumbent": true,
@@ -560778,7 +560778,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Hannah Beauchamppope",
+        "name": "Hannah Beauchamp-Pope",
         "party": "D",
         "votes": 10384
        }
@@ -560993,7 +560993,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Alec Thomasdahms",
+        "name": "Alec Thomas Dahms",
         "party": "D",
         "votes": 10558
        }
@@ -561018,7 +561018,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Andrea Gagemichaels",
+        "name": "Andrea Gage-Michaels",
         "party": "D",
         "votes": 35363
        }
@@ -561180,7 +561180,7 @@ export const stateLegResults: Record<
       "totalVotes": 79305,
       "candidates": [
        {
-        "name": "Rachael Cabralguevara",
+        "name": "Rachael Cabral-Guevara",
         "party": "R",
         "votes": 42858,
         "winner": true
@@ -564357,7 +564357,7 @@ export const stateLegResults: Record<
         "votes": 8571
        },
        {
-        "name": "J. Morganleach",
+        "name": "J. Morgan Leach",
         "party": "D",
         "votes": 7697
        },
@@ -564432,7 +564432,7 @@ export const stateLegResults: Record<
         "incumbent": true
        },
        {
-        "name": "Rosalee Jubaplumley",
+        "name": "Rosalee Juba-Plumley",
         "party": "D",
         "votes": 4599
        }
@@ -564546,7 +564546,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Anne Brockusdandelet",
+        "name": "Anne Brockus Dandelet",
         "party": "R",
         "votes": 4444
        },
@@ -564646,7 +564646,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Phyllis Riffewhite",
+        "name": "Phyllis Riffe White",
         "party": "D",
         "votes": 2735
        }
@@ -565075,7 +565075,7 @@ export const stateLegResults: Record<
         "incumbent": true
        },
        {
-        "name": "Chelsea Walkergaskins",
+        "name": "Chelsea Walker-Gaskins",
         "party": "R",
         "votes": 5922
        },
@@ -565118,7 +565118,7 @@ export const stateLegResults: Record<
       "totalVotes": 8532,
       "candidates": [
        {
-        "name": "Nancy Reaganfoster",
+        "name": "Nancy Reagan Foster",
         "party": "R",
         "votes": 5195,
         "winner": true
@@ -565164,7 +565164,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Melissa Riggshuffman",
+        "name": "Melissa Riggs Huffman",
         "party": "D",
         "votes": 2955
        }
@@ -565203,7 +565203,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "George Boogieambler",
+        "name": "George Boogie Ambler",
         "party": "R",
         "votes": 7287,
         "incumbent": true,
@@ -565452,7 +565452,7 @@ export const stateLegResults: Record<
         "votes": 8830
        },
        {
-        "name": "Bobbie Damontriplett II",
+        "name": "Bobbie Damon Triplett II",
         "party": "R",
         "votes": 7209
        },
@@ -565470,7 +565470,7 @@ export const stateLegResults: Record<
       "totalVotes": 137399,
       "candidates": [
        {
-        "name": "Barbara Evansfleischauer",
+        "name": "Barbara Evans Fleischauer",
         "party": "D",
         "votes": 16269,
         "incumbent": true,
@@ -565541,7 +565541,7 @@ export const stateLegResults: Record<
       "totalVotes": 6268,
       "candidates": [
        {
-        "name": "Terri Funksypolt",
+        "name": "Terri Funk Sypolt",
         "party": "R",
         "votes": 3609,
         "winner": true
@@ -565643,7 +565643,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Beverly Cookmankeadle",
+        "name": "Beverly Cookman Keadle",
         "party": "D",
         "votes": 2293
        }
@@ -565692,7 +565692,7 @@ export const stateLegResults: Record<
       "totalVotes": 7837,
       "candidates": [
        {
-        "name": "S. Marshallwilson",
+        "name": "S. Marshall Wilson",
         "party": "R",
         "votes": 4874,
         "winner": true
@@ -566462,7 +566462,7 @@ export const stateLegResults: Record<
         "votes": 7259
        },
        {
-        "name": "J. Morganleach",
+        "name": "J. Morgan Leach",
         "party": "D",
         "votes": 6784
        },
@@ -566739,7 +566739,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Phyllis Riffewhite",
+        "name": "Phyllis Riffe White",
         "party": "D",
         "votes": 1527
        }
@@ -567168,7 +567168,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Amanda Estepburton",
+        "name": "Amanda Estep-Burton",
         "party": "D",
         "votes": 7165,
         "winner": true
@@ -567266,7 +567266,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Melissa Riggshuffman",
+        "name": "Melissa Riggs Huffman",
         "party": "D",
         "votes": 2123
        }
@@ -567305,7 +567305,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Cindy Lavenderbowe",
+        "name": "Cindy Lavender-Bowe",
         "party": "D",
         "votes": 5767,
         "winner": true
@@ -567568,7 +567568,7 @@ export const stateLegResults: Record<
       "totalVotes": 133937,
       "candidates": [
        {
-        "name": "Barbara Evansfleischauer",
+        "name": "Barbara Evans Fleischauer",
         "party": "D",
         "votes": 16357,
         "incumbent": true,
@@ -567646,7 +567646,7 @@ export const stateLegResults: Record<
       "totalVotes": 5397,
       "candidates": [
        {
-        "name": "Terri Funksypolt",
+        "name": "Terri Funk Sypolt",
         "party": "R",
         "votes": 2933,
         "incumbent": true,
@@ -567806,7 +567806,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "S. Marshallwilson",
+        "name": "S. Marshall Wilson",
         "party": "R",
         "votes": 5152,
         "incumbent": true,
@@ -567880,7 +567880,7 @@ export const stateLegResults: Record<
       "totalVotes": 5553,
       "candidates": [
        {
-        "name": "Eric Leehouseholder",
+        "name": "Eric Lee Householder",
         "party": "R",
         "votes": 3236,
         "incumbent": true,
@@ -568173,7 +568173,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "George Boogieambler",
+        "name": "George Boogie Ambler",
         "party": "R",
         "votes": 15421,
         "post": "2"
@@ -568847,7 +568847,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Phyllis White",
+        "name": "Phyllis Riffe White",
         "party": "D",
         "votes": 1881
        }
@@ -568930,7 +568930,7 @@ export const stateLegResults: Record<
         "incumbent": true
        },
        {
-        "name": "Susan Sheltonperry",
+        "name": "Susan Shelton Perry",
         "party": "D",
         "votes": 2820
        }
@@ -569256,7 +569256,7 @@ export const stateLegResults: Record<
         "votes": 8026
        },
        {
-        "name": "Amanda Estepburton",
+        "name": "Amanda Estep-Burton",
         "party": "D",
         "votes": 7743,
         "incumbent": true
@@ -569383,7 +569383,7 @@ export const stateLegResults: Record<
         "incumbent": true
        },
        {
-        "name": "Cindy Lavenderbowe",
+        "name": "Cindy Lavender-Bowe",
         "party": "D",
         "votes": 5732,
         "incumbent": true
@@ -569703,7 +569703,7 @@ export const stateLegResults: Record<
       "totalVotes": 7556,
       "candidates": [
        {
-        "name": "Terri Funksypolt",
+        "name": "Terri Funk Sypolt",
         "party": "R",
         "votes": 4618,
         "incumbent": true,
@@ -569723,7 +569723,7 @@ export const stateLegResults: Record<
       "totalVotes": 8966,
       "candidates": [
        {
-        "name": "D. R. Buckjennings",
+        "name": "D. R. Jennings",
         "party": "R",
         "votes": 6168,
         "incumbent": true,
@@ -569885,7 +569885,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Kim Mongansaladini",
+        "name": "Kim Mongan-Saladini",
         "party": "R",
         "votes": 3033
        }
@@ -569943,7 +569943,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Eric L. Householder",
+        "name": "Eric Lee Householder",
         "party": "R",
         "votes": 7366,
         "incumbent": true,
@@ -570184,7 +570184,7 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Kathie Hesscrouse",
+        "name": "Kathie Hess Crouse",
         "party": "R",
         "votes": 18557,
         "post": "1"
@@ -570578,7 +570578,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "J. Morganleach",
+        "name": "J. Morgan Leach",
         "party": "D",
         "votes": 1702
        }
@@ -570622,7 +570622,7 @@ export const stateLegResults: Record<
         "votes": 1196
        },
        {
-        "name": "Stephen Thomassmith",
+        "name": "Stephen Thomas Smith",
         "party": "O",
         "votes": 295
        }
@@ -570740,7 +570740,7 @@ export const stateLegResults: Record<
       "totalVotes": 5114,
       "candidates": [
        {
-        "name": "Kathie Hesscrouse",
+        "name": "Kathie Hess Crouse",
         "party": "R",
         "votes": 3082,
         "winner": true
@@ -570920,7 +570920,7 @@ export const stateLegResults: Record<
       "totalVotes": 3766,
       "candidates": [
        {
-        "name": "Henry Corbettdillon",
+        "name": "Henry Corbett Dillon",
         "party": "R",
         "votes": 2290,
         "winner": true
@@ -571546,7 +571546,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Warren Deanjeffries",
+        "name": "Dean Jeffries",
         "party": "R",
         "votes": 3764,
         "incumbent": true,
@@ -571582,7 +571582,7 @@ export const stateLegResults: Record<
       "totalVotes": 4241,
       "candidates": [
        {
-        "name": "Lori Cowgerdittman",
+        "name": "Lori Cowger Dittman",
         "party": "R",
         "votes": 3014,
         "winner": true
@@ -571657,7 +571657,7 @@ export const stateLegResults: Record<
       "totalVotes": 5798,
       "candidates": [
        {
-        "name": "Elias Coopgonzalez",
+        "name": "Elias Coop-Gonzalez",
         "party": "R",
         "votes": 3496,
         "winner": true
@@ -571817,7 +571817,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Stephanie Spearstomana",
+        "name": "Stephanie Spears Tomana",
         "party": "D",
         "votes": 2438
        }
@@ -572122,7 +572122,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "S. Marshallwilson",
+        "name": "S. Marshall Wilson",
         "party": "O",
         "votes": 1666
        }
@@ -572204,7 +572204,7 @@ export const stateLegResults: Record<
       "totalVotes": 3903,
       "candidates": [
        {
-        "name": "Eric L. Householder",
+        "name": "Eric Lee Householder",
         "party": "R",
         "votes": 2766,
         "incumbent": true,
@@ -572304,7 +572304,7 @@ export const stateLegResults: Record<
       "totalVotes": 31004,
       "candidates": [
        {
-        "name": "Laura Wakimchapman",
+        "name": "Laura Wakim Chapman",
         "party": "R",
         "votes": 18746,
         "winner": true,
@@ -572565,7 +572565,7 @@ export const stateLegResults: Record<
         "post": "2"
        },
        {
-        "name": "Barbara Evansfleischauer",
+        "name": "Barbara Evans Fleischauer",
         "party": "D",
         "votes": 13342,
         "post": "2"
@@ -575626,7 +575626,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "John B. Romeromartinez",
+        "name": "John B. Romero-Martinez",
         "party": "R",
         "votes": 1206
        }
@@ -575893,7 +575893,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michael Wademcdaniel Jr.",
+        "name": "Michael Wade McDaniel Jr.",
         "party": "D",
         "votes": 482
        },
@@ -576050,7 +576050,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Liisa Anselmidalton",
+        "name": "Liisa Anselmi-Dalton",
         "party": "D",
         "votes": 4660,
         "winner": true
@@ -576474,7 +576474,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lorraine Saulinoklein",
+        "name": "Lorraine Saulino-Klein",
         "party": "D",
         "votes": 1628
        }
@@ -577027,7 +577027,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Roxie Jacksonhensley",
+        "name": "Roxie Jackson Hensley",
         "party": "R",
         "votes": 1185
        }
@@ -577436,7 +577436,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Wendy Davisschuler",
+        "name": "Wendy Davis Schuler",
         "party": "R",
         "votes": 4903,
         "winner": true
@@ -578314,7 +578314,7 @@ export const stateLegResults: Record<
       "totalVotes": 3056,
       "candidates": [
        {
-        "name": "John B. Romeromartinez",
+        "name": "John B. Romero-Martinez",
         "party": "R",
         "votes": 1552,
         "winner": true
@@ -578340,7 +578340,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Roxie Hensley",
+        "name": "Roxie Jackson Hensley",
         "party": "R",
         "votes": 1883
        }
@@ -578425,7 +578425,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Rachel Rodriguezwilliams",
+        "name": "Rachel Rodriguez-Williams",
         "party": "R",
         "votes": 4373,
         "winner": true
@@ -578728,7 +578728,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Liisa Anselmidalton",
+        "name": "Liisa Anselmi-Dalton",
         "party": "D",
         "votes": 2576,
         "incumbent": true
@@ -579711,7 +579711,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Merav Bendavid",
+        "name": "Merav Ben-David",
         "party": "D",
         "votes": 1201
        }
@@ -579784,7 +579784,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Rachel Rodriguezwilliams",
+        "name": "Rachel Rodriguez-Williams",
         "party": "R",
         "votes": 3412,
         "incumbent": true,
@@ -580113,7 +580113,7 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Michael Raywilliams",
+        "name": "Michael Ray Williams",
         "party": "O",
         "votes": 1104
        }
@@ -580146,7 +580146,7 @@ export const stateLegResults: Record<
       "uncontested": true,
       "candidates": [
        {
-        "name": "Wendy Davisschuler",
+        "name": "Wendy Davis Schuler",
         "party": "R",
         "votes": 5243,
         "incumbent": true,

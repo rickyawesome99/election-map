@@ -281,7 +281,7 @@
    },
    {
     "name": "DELLA VOLLE, EILEEN",
-    "candidate": "Eileen Dellavolle",
+    "candidate": "Eileen della Volle",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 79348,
@@ -435,7 +435,7 @@
    },
    {
     "name": "REYNOLDS JACKSON, VERLINA",
-    "candidate": "Verlina Reynoldsjackson",
+    "candidate": "Verlina Reynolds-Jackson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 83868,
@@ -511,7 +511,7 @@
    },
    {
     "name": "CONCEPCION POWELL, MARIA",
-    "candidate": "Maria Concepcionpowell",
+    "candidate": "Maria Concepcion Powell",
     "party": "Republican",
     "incumbent": false,
     "contributions": null,
@@ -724,6 +724,14 @@
     "expenditures": null
    },
    {
+    "name": "SPACE, F PARKER",
+    "candidate": "F. Parker Space",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 39783,
+    "expenditures": null
+   },
+   {
     "name": "WIRTHS, HAROLD J",
     "candidate": "Harold J. Wirths",
     "party": "Republican",
@@ -837,7 +845,7 @@
   "28": [
    {
     "name": "BEMBRY FREEMAN, JOY",
-    "candidate": "Joy Bembryfreeman",
+    "candidate": "Joy Bembry-Freeman",
     "party": "Republican",
     "incumbent": false,
     "contributions": null,
@@ -879,7 +887,7 @@
    },
    {
     "name": "DAVIS SPEIGHT, SHANIQUE",
-    "candidate": "Shanique Davisspeight",
+    "candidate": "Shanique Speight",
     "party": "Democratic",
     "incumbent": true,
     "contributions": null,
@@ -887,7 +895,7 @@
    },
    {
     "name": "PINTOR MARIN, ELIANA",
-    "candidate": "Eliana Pintormarin",
+    "candidate": "Eliana Pintor-Marin",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 274240,
@@ -1143,7 +1151,7 @@
    },
    {
     "name": "VAINIERI HUTTLE, VALERIE",
-    "candidate": "Valerie Vainierihuttle",
+    "candidate": "Valerie Vainieri Huttle",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 134905,
@@ -1229,7 +1237,7 @@
    },
    {
     "name": "MARTINI CORDONNIER, MARIA",
-    "candidate": "Maria Martinicordonnier",
+    "candidate": "Maria Martini Cordonnier",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 38010,

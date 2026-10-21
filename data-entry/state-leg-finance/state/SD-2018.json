@@ -32,6 +32,14 @@
     "incumbent": true,
     "contributions": 16220,
     "expenditures": null
+   },
+   {
+    "name": "Cory Heidelberger",
+    "candidate": "Cory Allen Heidelberger",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8497,
+    "expenditures": null
    }
   ],
   "4": [
@@ -107,6 +115,14 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 14202,
+    "expenditures": null
+   },
+   {
+    "name": "Laura Kotelman",
+    "candidate": "Laura Swier Kotelman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2315,
     "expenditures": null
    }
   ],
@@ -424,18 +440,34 @@
   ],
   "30": [
    {
+    "name": "Kristine Winter",
+    "candidate": "Kristine Ina Winter",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9200.09,
+    "expenditures": null
+   },
+   {
     "name": "Lance Russell",
     "candidate": "Lance Steven Russell",
     "party": "Republican",
     "incumbent": true,
     "contributions": 20580,
     "expenditures": null
+   },
+   {
+    "name": "A. Oakes",
+    "candidate": "A. Gideon Oakes",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 15819.87,
+    "expenditures": null
    }
   ],
   "31": [
    {
     "name": "Sherry Bea Smith",
-    "candidate": "Sherry Beasmith",
+    "candidate": "Sherry Bea Smith",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 13703.89,
@@ -527,7 +559,7 @@
    },
    {
     "name": "Tamara StJohn",
-    "candidate": "Tamara Stjohn",
+    "candidate": "Tamara St John",
     "party": "Republican",
     "incumbent": false,
     "contributions": 9173,
@@ -871,7 +903,7 @@
   "13": [
    {
     "name": "Sue Peterson",
-    "candidate": "Sue Peterson",
+    "candidate": "Sue Lucas Peterson",
     "party": "Republican",
     "incumbent": true,
     "contributions": 56838.13,
@@ -1079,7 +1111,7 @@
    },
    {
     "name": "Anna Kerner Andersson",
-    "candidate": "Anna Kernerandersson",
+    "candidate": "Anna Kerner Andersson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 15695.45,
@@ -1087,7 +1119,7 @@
    },
    {
     "name": "Faith Spotted Eagle",
-    "candidate": "Faith Spottedeagle",
+    "candidate": "Faith Spotted Eagle",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 1200,
@@ -1277,10 +1309,18 @@
   "30": [
    {
     "name": "Julie Frye-Mueller",
-    "candidate": "Julie Fryemueller",
+    "candidate": "Julie Frye-Mueller",
     "party": "Republican",
     "incumbent": true,
     "contributions": 1501.3,
+    "expenditures": null
+   },
+   {
+    "name": "Timothy Goodwin",
+    "candidate": "Timothy Ray Goodwin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 4200,
     "expenditures": null
    },
    {

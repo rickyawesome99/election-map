@@ -4,7 +4,7 @@ import { senateData, senateNoElection, senateHoldovers, electionYear, type PastR
 import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
-import { candidatePhotos } from "@/lib/candidatePhotos";
+import { candidatePhoto } from "@/lib/candidatePhotos";
 import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
@@ -177,7 +177,7 @@ function NoElectionPage({
               </div>
             </div>
 
-            <CurrentIncumbentLedgerRow incumbentName={incumbent} party={party} photo={candidatePhotos[incumbent] ?? null} compact />
+            <CurrentIncumbentLedgerRow incumbentName={incumbent} state={state} party={party} photo={candidatePhoto(incumbent, state)} compact />
           </div>
         </div>
       </div>
@@ -211,6 +211,7 @@ function NoElectionPage({
                     content: (
                       <PastElectionResultsSection
                         results={pastResults}
+                        state={state}
                         fallbackYears={[nextElection - termYears, nextElection - termYears * 2]}
                         showElectionType
                         showSpecialBadgeForSpecialElections
@@ -291,8 +292,8 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
   if (!race) notFound();
 
   const stateTpl = calculateStateTpl(abbr, race.name);
-  const demPhoto = race.candidates ? (candidatePhotos[race.candidates.dem.name] ?? null) : null;
-  const repPhoto = race.candidates ? (candidatePhotos[race.candidates.rep.name] ?? null) : null;
+  const demPhoto = race.candidates ? candidatePhoto(race.candidates.dem.name, race.state) : null;
+  const repPhoto = race.candidates ? candidatePhoto(race.candidates.rep.name, race.state) : null;
   const incumbent = race.candidates
     ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
     : null;
@@ -428,7 +429,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               title="About this Race"
               description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
               items={[
-                { label: "Incumbent", value: currentSenatorName, href: candidatePageHref(currentSenatorName) },
+                { label: "Incumbent", value: currentSenatorName, href: candidatePageHref(currentSenatorName, race.state) },
                 { label: "Party", value: currentSenatorParty ? (currentSenatorParty === "D" ? "Democrat" : currentSenatorParty === "R" ? "Republican" : "Independent") : "TBD", color: partyTextColor(currentSenatorParty) },
                 { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
               ]}
@@ -441,12 +442,12 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               const rows = (
                 <CandidatesLedgerSection
                   candidates={withProjectedVotes([
-                    { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
-                    { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
+                    { name: race.candidates.dem.name, state: race.state, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
+                    { name: race.candidates.rep.name, state: race.state, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
                   ], countyProjection)}
                 />
               );
-              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} /> : rows;
+              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} state={race.state} /> : rows;
             })() : (
               <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</p>
             )}
@@ -528,6 +529,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
                     content: (
                       <PastElectionResultsSection
                         results={enrichedPastResults}
+                        state={race.state}
                         fallbackYears={[]}
                         showElectionType
                         density="compact"

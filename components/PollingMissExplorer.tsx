@@ -16,7 +16,7 @@ import type { MapRow } from "@/components/tpl/TplMaps";
 
 const TplMap = dynamic(() => import("./tpl/TplMaps").then((m) => m.TplMap), {
   ssr: false,
-  loading: () => <div className="h-[300px] sm:h-[400px] md:h-[480px] rounded-xl" style={{ border: "1px solid var(--app-border)" }} />,
+  loading: () => <div className="mx-4 aspect-[5/3] max-h-[620px] rounded-xl sm:mx-12 lg:mx-32" />,
 });
 
 type YearFilter = "all" | number;
@@ -130,7 +130,7 @@ export default function PollingMissExplorer({ data }: { data: PollingMissSet }) 
 
       <div className="mb-4 sm:hidden"><MissLegend /></div>
 
-      <TplMap mode="states" rows={mapRows} valueLabel="Polling miss" linkLabel="Open state page" colorOf={missColor} formatValue={fmtLean} valueColor={leanColor} onSelect={onSelect} zoomable={false} panel={false} framed={false} selectedKey={group?.state ?? null} />
+      <TplMap mode="states" rows={mapRows} valueLabel="Polling miss" linkLabel="Open state page" colorOf={missColor} formatValue={fmtLean} valueColor={leanColor} onSelect={onSelect} zoomable={false} fill panel={false} framed={false} selectedKey={group?.state ?? null} />
 
       <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 pb-3 mb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
         <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>Every Race</h2>

@@ -177,7 +177,7 @@
   "10": [
    {
     "name": "Ambler, George Boogie",
-    "candidate": "George Boogieambler",
+    "candidate": "George Boogie Ambler",
     "party": "Republican",
     "incumbent": false,
     "contributions": 21925,
@@ -564,6 +564,14 @@
     "expenditures": null
    },
    {
+    "name": "Leach, J Morgan Esq.",
+    "candidate": "J. Morgan Leach",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17350,
+    "expenditures": null
+   },
+   {
     "name": "Azinger, Thomas Albert",
     "candidate": "Tom Azinger",
     "party": "Republican",
@@ -831,6 +839,14 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 14450,
+    "expenditures": null
+   },
+   {
+    "name": "White, Phyllis M",
+    "candidate": "Phyllis Riffe White",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9450,
     "expenditures": null
    }
   ],
@@ -1281,7 +1297,7 @@
    },
    {
     "name": "Estep-Burton, Amanda",
-    "candidate": "Amanda Estepburton",
+    "candidate": "Amanda Estep-Burton",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 37738.81,
@@ -1369,7 +1385,7 @@
   "40": [
    {
     "name": "Riggs Huffman, Melissa",
-    "candidate": "Melissa Riggshuffman",
+    "candidate": "Melissa Riggs Huffman",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 26263.45,
@@ -1413,7 +1429,7 @@
    },
    {
     "name": "Lavender-Bowe, Cynthia",
-    "candidate": "Cindy Lavenderbowe",
+    "candidate": "Cindy Lavender-Bowe",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 54835.33,
@@ -1711,7 +1727,7 @@
    },
    {
     "name": "Evans Fleischauer, Barbara",
-    "candidate": "Barbara Evansfleischauer",
+    "candidate": "Barbara Evans Fleischauer",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 78956.94,
@@ -1791,6 +1807,14 @@
    }
   ],
   "52": [
+   {
+    "name": "Sypolt, Terri",
+    "candidate": "Terri Funk Sypolt",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11144.31,
+    "expenditures": null
+   },
    {
     "name": "Knotts, Gary",
     "candidate": "Gary Knotts",
@@ -1926,6 +1950,16 @@
     "expenditures": null
    }
   ],
+  "60": [
+   {
+    "name": "Wilson, S. Marshall",
+    "candidate": "S. Marshall Wilson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 9885.84,
+    "expenditures": null
+   }
+  ],
   "61": [
    {
     "name": "Barrett, Jason",
@@ -1981,6 +2015,14 @@
    }
   ],
   "64": [
+   {
+    "name": "Householder, Eric",
+    "candidate": "Eric Lee Householder",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 27995,
+    "expenditures": null
+   },
    {
     "name": "Frankenberry, Barbara McDonald",
     "candidate": "Barby Frankenberry",

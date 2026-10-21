@@ -253,7 +253,7 @@
   "16": [
    {
     "name": "Runningwolf, Tyson  T",
-    "candidate": "Tyson T. Runningwolf",
+    "candidate": "Tyson T. Running Wolf",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 360,
@@ -353,7 +353,7 @@
    },
    {
     "name": "Sheldon-Galloway, LOLA ",
-    "candidate": "Lola Sheldongalloway",
+    "candidate": "Lola Sheldon-Galloway",
     "party": "Republican",
     "incumbent": true,
     "contributions": 10926.96,
@@ -496,6 +496,14 @@
   ],
   "30": [
    {
+    "name": "Galt, Wylie ",
+    "candidate": "E. Wylie Galt",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1350,
+    "expenditures": null
+   },
+   {
     "name": "Nicholes, Kathryn  G.H.",
     "candidate": "Kathryn G. H. Nicholes",
     "party": "Other",
@@ -525,7 +533,7 @@
    },
    {
     "name": "WINDY BOY, JONATHAN ",
-    "candidate": "Jonathan Windyboy",
+    "candidate": "Jonathan Windy Boy",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 180,
@@ -635,6 +643,16 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 1380,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "Peregoy, Sharon  S",
+    "candidate": "Sharon Stewart Peregoy",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1270,
     "expenditures": null
    }
   ],
@@ -749,7 +767,7 @@
   "49": [
    {
     "name": "Kerr Carpenter, Emma ",
-    "candidate": "Emma Kerrcarpenter",
+    "candidate": "Emma Kerr-Carpenter",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 9820,
@@ -1215,7 +1233,7 @@
   "79": [
    {
     "name": "Farris-Olsen, Robert ",
-    "candidate": "Robert Farrisolsen",
+    "candidate": "Robert Farris-Olsen",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 23021.52,
@@ -1418,6 +1436,14 @@
   ],
   "93": [
    {
+    "name": "Bear Don't Walk, Eldena  N",
+    "candidate": "Eldena N. Bear Dont Walk",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 23624.33,
+    "expenditures": null
+   },
+   {
     "name": "Read, Joseph  l",
     "candidate": "Joe Read",
     "party": "Republican",
@@ -1567,7 +1593,7 @@
    },
    {
     "name": "Taylor-Mahnke, Diane  F",
-    "candidate": "Diane Taylormahnke",
+    "candidate": "Diane Taylor-Mahnke",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 4472.5,

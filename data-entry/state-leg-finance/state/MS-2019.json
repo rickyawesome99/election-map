@@ -27,7 +27,7 @@
   "3": [
    {
     "name": "Janis Triplett Patterson",
-    "candidate": "Janis Triplettpatterson",
+    "candidate": "Janis Triplett Patterson",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 12008.99,
@@ -73,7 +73,7 @@
    },
    {
     "name": "Theresa Gillespie Isom for State Rep District 7 Desoto County",
-    "candidate": "Theresa Gillespieisom",
+    "candidate": "Theresa Gillespie Isom",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 12711.57,
@@ -351,7 +351,7 @@
   "36": [
    {
     "name": "Jessica Lofton Lewis",
-    "candidate": "Jessica Loftonlewis",
+    "candidate": "Jessica Lofton Lewis",
     "party": "Other",
     "incumbent": false,
     "contributions": 0,
@@ -397,7 +397,7 @@
    },
    {
     "name": "Hester Jackson McCray",
-    "candidate": "Hester Jackson McCray",
+    "candidate": "Hester Jackson-McCray",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 7277.33,
@@ -457,7 +457,7 @@
   "53": [
    {
     "name": "Rita Wilkinson Goss",
-    "candidate": "Rita Wilkinsongoss",
+    "candidate": "Rita Wilkinson Goss",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 3100,
@@ -523,7 +523,7 @@
   "63": [
    {
     "name": "Stephanie McKenzie Foster",
-    "candidate": "Stephanie McKenziefoster",
+    "candidate": "Stephanie McKenzie Foster",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 19617.46,
@@ -583,6 +583,16 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "69": [
+   {
+    "name": "Alyce G. Clarke",
+    "candidate": "Alyce Clarke",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1100,
     "expenditures": null
    }
   ],
@@ -780,6 +790,24 @@
     "expenditures": null
    }
   ],
+  "102": [
+   {
+    "name": "Brandon Rue",
+    "candidate": "Brandon Terrion Rue",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Missy McGee",
+    "candidate": "Missy Warren McGee",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": null,
+    "expenditures": null
+   }
+  ],
   "104": [
    {
     "name": "LARRY BYRD",
@@ -899,7 +927,7 @@
   "119": [
    {
     "name": "Committee to Elect Sonya Williams Barnes",
-    "candidate": "Sonya Williamsbarnes",
+    "candidate": "Sonya Williams Barnes",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 85328,
@@ -993,7 +1021,7 @@
   "9": [
    {
     "name": "Friends of Nicole Akins Boyd",
-    "candidate": "Nicole Akinsboyd",
+    "candidate": "Nicole Akins Boyd",
     "party": "Republican",
     "incumbent": false,
     "contributions": 148123.13,
@@ -1029,7 +1057,7 @@
   "11": [
    {
     "name": "Clara Davis Dawkins ",
-    "candidate": "Clara Davis Dawkins",
+    "candidate": "Clara Davis Dawkins-Davis",
     "party": "Other",
     "incumbent": false,
     "contributions": null,

@@ -264,6 +264,16 @@
     "expenditures": 102583.5
    }
   ],
+  "20": [
+   {
+    "name": "Ballard, Melissa",
+    "candidate": "Melissa Garff Ballard",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 52063.91,
+    "expenditures": 57593.67
+   }
+  ],
   "21": [
    {
     "name": "Hollins, Sandra",
@@ -277,7 +287,7 @@
   "22": [
    {
     "name": "Dailey-Provost, Jen",
-    "candidate": "Jen Daileyprovost",
+    "candidate": "Jen Dailey-Provost",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 22954,
@@ -418,6 +428,14 @@
     "incumbent": false,
     "contributions": 600,
     "expenditures": 486
+   },
+   {
+    "name": "Rohner, Judy",
+    "candidate": "Judy Weeks-Rohner",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 37369.95,
+    "expenditures": 25991.86
    }
   ],
   "31": [
@@ -477,7 +495,7 @@
   "34": [
    {
     "name": "Moss, Carol Spackman",
-    "candidate": "Carol Spackmanmoss",
+    "candidate": "Carol Spackman Moss",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 45860.75,

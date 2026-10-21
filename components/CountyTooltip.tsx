@@ -21,13 +21,14 @@ import CandidateLink from "@/components/CandidateLink";
 //   tpl     — the County TPL figure and the county's 2024 vote total
 //   message — an optional headline and sentence (no result on file, outside the district,
 //             uncontested)
+//   figure  — one labelled figure with a note (the turnout map's metric)
 // Positioning belongs to the caller: pass the useMapTooltip ref and the absolute classes. Cards
 // and panels can carry a close control (`aside`) and a link below (`footer`).
 
 type Party = "D" | "R" | "I";
 /** `name` is the full name; the tooltip shortens it to the surname. `link` makes it a link to
  *  the candidate page (off for party words like "Democrat"). */
-export type CountyTooltipSide = { name: string; party: Party; pct: number; votes: number | null; link?: boolean; /** A short tag after the name, e.g. "Inc." (the forecast map's cards). */ note?: string };
+export type CountyTooltipSide = { name: string; party: Party; pct: number; votes: number | null; link?: boolean; /** The race's state, for the candidate link (two candidates can share a name). */ state?: string; /** A short tag after the name, e.g. "Inc." (the forecast map's cards). */ note?: string };
 
 type Base = {
   title: string; subtitle?: string; boxRef?: Ref<HTMLDivElement>; className?: string;
@@ -37,6 +38,8 @@ export type CountyTooltipProps = Base & (
   | { kind: "result"; dem: CountyTooltipSide; rep: CountyTooltipSide; /** R-positive. */ margin: number; totalVotes: number | null }
   | { kind: "tpl"; /** R-positive; null when the county has none. */ tpl: number | null; votes: number | null }
   | { kind: "message"; headline?: { text: string; party: Party }; message?: string }
+  /** One figure with its label (the turnout map): the value as the serif headline, the metric name under it, and an optional note with the numbers behind it. */
+  | { kind: "figure"; label: string; value: string | null; note?: string }
 );
 
 const WIDTH = 228;
@@ -90,6 +93,18 @@ export default function CountyTooltip(props: CountyTooltipProps) {
           <div className="self-start text-right" style={{ lineHeight: 1.15 }}>{props.votes != null && votesFigure(props.votes)}</div>
         </div>
         <div className={`mt-0.5 ${label}`} style={{ color: "var(--app-text-muted)" }}>County TPL · partisan lean</div>
+      </>
+    );
+  } else if (props.kind === "figure") {
+    body = (
+      <>
+        {name}
+        {sub}
+        {props.value != null
+          ? <div className="mt-1 tabular-nums" style={{ ...headline, color: "var(--app-text-primary)" }}>{props.value}</div>
+          : <div className="mt-1 text-[12px]" style={{ color: "var(--app-text-very-muted)" }}>No count</div>}
+        <div className={`mt-0.5 ${label}`} style={{ color: "var(--app-text-muted)" }}>{props.label}</div>
+        {props.note && <div className="mt-1.5 text-[11.5px] leading-snug tabular-nums" style={{ color: "var(--app-text-muted)" }}>{props.note}</div>}
       </>
     );
   } else if (props.kind === "message") {
@@ -184,7 +199,7 @@ function CountyPanel(props: CountyTooltipProps) {
         <>
           <span className="flex min-w-0 items-baseline gap-2">
             {s.link
-              ? <CandidateLink name={s.name} className="truncate hover:underline" style={style}>{shown}</CandidateLink>
+              ? <CandidateLink name={s.name} state={s.state} className="truncate hover:underline" style={style}>{shown}</CandidateLink>
               : <span className="truncate" style={style}>{shown}</span>}
             <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({s.party}){s.note ? ` · ${s.note}` : ""}</span>
           </span>
@@ -233,6 +248,20 @@ function CountyPanel(props: CountyTooltipProps) {
         {props.votes != null && <div className="mt-1.5 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>{fmtInt(props.votes)} votes in 2024</div>}
       </>
     );
+  } else if (props.kind === "figure") {
+    // Phones (the turnout map): everything runs full width under the name — the metric label
+    // with the figure on one line, the note beneath, the link last — so a long label never
+    // squeezes the place name into a sliver beside it.
+    left = (
+      <>
+        <div className="flex items-baseline justify-between gap-3">
+          <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{props.label}</span>
+          <span className="shrink-0 font-extrabold tabular-nums" style={{ fontSize: figSize, lineHeight: 1, color: props.value != null ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{props.value ?? "No count"}</span>
+        </div>
+        {props.note && <div className="mt-1.5 text-sm leading-snug tabular-nums" style={{ color: "var(--app-text-muted)" }}>{props.note}</div>}
+        {footer && <div className="mt-2">{footer}</div>}
+      </>
+    );
   } else {
     left = (
       <>
@@ -244,7 +273,7 @@ function CountyPanel(props: CountyTooltipProps) {
 
   // Results: the rows run the full width under the header, so % and votes line up on the right
   // edge beneath the margin.
-  const rowsBelow = props.kind === "result";
+  const rowsBelow = props.kind === "result" || props.kind === "figure";
 
   return (
     <div ref={boxRef} className={className} data-county-card="panel" style={{ color: "var(--app-text-primary)" }}>

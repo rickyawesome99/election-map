@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { CandidateHistoryEntry } from "@/lib/candidateIndex";
-import { candidatePhotos } from "@/lib/candidatePhotos";
+import { candidatePhoto } from "@/lib/candidatePhotos";
 import { getRatingColors, fmtMargin, marginColor } from "@/lib/colorScale";
 import { notFound, permanentRedirect } from "next/navigation";
 import Image from "next/image";
@@ -119,7 +119,7 @@ export default async function CandidatePage({
     name: leg!.name, slug: leg!.slug, party: legParty, tab: "house" as const, state: leg!.stateName,
     currentPosition: leg!.position, currentRace: undefined, history: [],
   };
-  const photo = candidatePhotos[candidate.name] ?? null;
+  const photo = candidatePhoto(candidate.name, candidate.state);
   const accent = partyAccent(candidate.party);
   const subtle = partySubtle(candidate.party);
 

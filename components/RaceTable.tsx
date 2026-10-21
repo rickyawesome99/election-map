@@ -8,6 +8,8 @@ import CandidateLink from "./CandidateLink";
 type RaceForecast = {
   id: string;
   name: string;
+  /** The race's state, for the candidate links (two candidates can share a name). */
+  state?: string;
   rating?: string;
   margin?: number;
   probability?: number;
@@ -80,10 +82,13 @@ const PARTY_LABEL: Record<string, string> = {
 
 export function CandidateName({
   candidate,
+  state,
   slot,
   showPartyLabel = false,
 }: {
   candidate: { name: string; incumbent: boolean; party?: "D" | "R" | "I" } | undefined;
+  /** The race's state (lib/candidateSlug.ts tells apart two candidates who share a name). */
+  state?: string;
   slot: "dem" | "rep";
   showPartyLabel?: boolean;
 }) {
@@ -106,6 +111,7 @@ export function CandidateName({
         {candidate?.name ? (
           <CandidateLink
             name={candidate.name}
+            state={state}
             className="hover:underline"
             onClick={e => e.stopPropagation()}
           >
@@ -351,8 +357,8 @@ export default function RaceTable({
               </div>
               {/* Lines 3–4: Candidates stacked */}
               <div className="mt-2 flex flex-col gap-0.5 text-xs">
-                <CandidateName candidate={race.candidates?.dem} slot="dem" showPartyLabel />
-                <CandidateName candidate={race.candidates?.rep} slot="rep" showPartyLabel />
+                <CandidateName candidate={race.candidates?.dem} state={race.state} slot="dem" showPartyLabel />
+                <CandidateName candidate={race.candidates?.rep} state={race.state} slot="rep" showPartyLabel />
               </div>
               {/* Line 5: D Win % bar */}
               <div className="mt-2 flex items-center gap-2">
@@ -401,8 +407,8 @@ export default function RaceTable({
                   )}
                 </div>
                 <div className="flex flex-col gap-1 text-xl leading-tight" style={{ fontFamily: "var(--font-serif)" }}>
-                  <CandidateName candidate={race.candidates?.dem} slot="dem" />
-                  <CandidateName candidate={race.candidates?.rep} slot="rep" />
+                  <CandidateName candidate={race.candidates?.dem} state={race.state} slot="dem" />
+                  <CandidateName candidate={race.candidates?.rep} state={race.state} slot="rep" />
                 </div>
               </div>
               <div className="shrink-0 text-right">

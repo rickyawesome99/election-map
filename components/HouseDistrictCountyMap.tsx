@@ -135,8 +135,8 @@ export default function HouseDistrictCountyMap({
     const r = h.result;
     return {
       kind: "result", title,
-      dem: { name: demName, link: isRealName(demName), party: demParty, pct: r.demPct, votes: r.demVotes },
-      rep: { name: repName, link: isRealName(repName), party: repParty, pct: r.repPct, votes: r.repVotes },
+      dem: { name: demName, link: isRealName(demName), state: stateAbbr, party: demParty, pct: r.demPct, votes: r.demVotes },
+      rep: { name: repName, link: isRealName(repName), state: stateAbbr, party: repParty, pct: r.repPct, votes: r.repVotes },
       margin: r.margin, totalVotes: r.totalVotes,
     };
   };

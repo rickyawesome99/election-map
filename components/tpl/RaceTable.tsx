@@ -14,8 +14,10 @@ import { ArrowOut, CandidateLink, TD, TD_R, TH, TH_R, VERY_MUTED } from "./ui";
 // Race and nominee cells wrap; the numbers stay on one line.
 const TD_WRAP = TD.replace("whitespace-nowrap", "whitespace-normal");
 
-export function RaceTable({ races, variant, showYear, onRow, onFormula, emptyText = "No races match." }: {
+export function RaceTable({ races, state, variant, showYear, onRow, onFormula, emptyText = "No races match." }: {
   races: TplRace[];
+  /** The state these races are in, for the candidate links (two candidates can share a name). */
+  state?: string;
   variant: "state" | "district";
   showYear: boolean;
   onRow: (race: TplRace) => void;
@@ -70,8 +72,8 @@ export function RaceTable({ races, variant, showYear, onRow, onFormula, emptyTex
                   {href ? <Link href={href} onClick={stop} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }} title={r.pastHref ? "Full results for this election" : "Seat page"}>{label}</Link> : label}
                   {r.imputed && <span className="ml-1" style={VERY_MUTED} title="Imputed from the presidential baseline">⊘</span>}
                 </td>
-                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={winner.name} party={winner.party} /></td>
-                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={loser.name} party={loser.party} /></td>
+                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={winner.name} state={state} party={winner.party} /></td>
+                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={loser.name} state={state} party={loser.party} /></td>
                 <td className={TD_R} style={{ color: marginColor(r.rawMargin) }}>
                   {r.imputed ? <>{fmt2(r.rawMargin)}<span className="block text-[10px]" style={VERY_MUTED} title="Adjusted (imputed)">⊘ {fmt2(r.adjustedMargin)}</span></>
                     : anyImputed ? <span className="flex min-h-8 items-center justify-end">{fmt2(r.rawMargin)}</span>

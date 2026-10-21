@@ -1,0 +1,1983 @@
+{
+ "state": "ID",
+ "cycle": 2020,
+ "source": "Idaho Secretary of State Sunshine portal (contributions incl. unitemized and in-kind, less returns; loans excluded) + 2019 annual reports from the Secretary of State's archive",
+ "fetched": "2026-10-21",
+ "dataThrough": "12/31/2020",
+ "candidates": [
+  {
+   "name": "Dulce Kersting-Lark",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 60727.35
+  },
+  {
+   "name": "Marianna Davis",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 38568.83
+  },
+  {
+   "name": "Steve Berch",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 127877.3
+  },
+  {
+   "name": "David Nelson",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 82231.27
+  },
+  {
+   "name": "Lauren Necochea",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 55644.32
+  },
+  {
+   "name": "Ilana Rubel",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 122658.0
+  },
+  {
+   "name": "James Holtzclaw",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 29145.0
+  },
+  {
+   "name": "Brenda Richards",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 47840.0
+  },
+  {
+   "name": "Regina Bayer",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 48125.14
+  },
+  {
+   "name": "Laurie Lickley",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 26579.12
+  },
+  {
+   "name": "Douglas Ricks",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 33265.27
+  },
+  {
+   "name": "Melissa Wintrow",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": null
+  },
+  {
+   "name": "Jason Monks",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 67853.6
+  },
+  {
+   "name": "William Goesling",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 650.0
+  },
+  {
+   "name": "Michelle Stennett",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 61303.81
+  },
+  {
+   "name": "Scott Bedke",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 115865.0
+  },
+  {
+   "name": "Todd Lakey",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 34895.0
+  },
+  {
+   "name": "Marcus J Gibbs",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 14820.0
+  },
+  {
+   "name": "Judy Boyle",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 19000.0
+  },
+  {
+   "name": "Kelly Anthon",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 49067.78
+  },
+  {
+   "name": "Brent Hill",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 18222.93
+  },
+  {
+   "name": "Gary Collins",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 4200.0
+  },
+  {
+   "name": "Jim Rice",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 51775.0
+  },
+  {
+   "name": "Jim Bratnober",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 15667.5
+  },
+  {
+   "name": "John Mccrostie",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 36775.0
+  },
+  {
+   "name": "Heather Scott",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 37261.24
+  },
+  {
+   "name": "Terry Gestrin",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 12680.0
+  },
+  {
+   "name": "John Gannon",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 23810.42
+  },
+  {
+   "name": "Mary Souza",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 30815.0
+  },
+  {
+   "name": "Maryanne Jordan",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 5227.58
+  },
+  {
+   "name": "Cecil Grow",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 90621.41
+  },
+  {
+   "name": "Scott Syme",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 34745.98
+  },
+  {
+   "name": "Matthew Bundy",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 30691.4
+  },
+  {
+   "name": "Adam Frugoli",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 24919.0
+  },
+  {
+   "name": "Rick Youngblood",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 55525.0
+  },
+  {
+   "name": "Jim Guthrie",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 24170.0
+  },
+  {
+   "name": "Heidi Sorenson",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 1134.32
+  },
+  {
+   "name": "Mark Bost",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 1544.0
+  },
+  {
+   "name": "Paul Amador",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 16498.71
+  },
+  {
+   "name": "Van Burtenshaw",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "35",
+   "contributions": 42270.0
+  },
+  {
+   "name": "Donald Williamson",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 5766.78
+  },
+  {
+   "name": "Alex Barron",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 18579.74
+  },
+  {
+   "name": "Chuck Winder",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 91853.86
+  },
+  {
+   "name": "Jake Ellis",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 78590.8
+  },
+  {
+   "name": "Michelle Gluch",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 3916.0
+  },
+  {
+   "name": "Joe Palmer",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 58617.7
+  },
+  {
+   "name": "Cindy Currie",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 15860.1
+  },
+  {
+   "name": "Kevin Cook",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "30",
+   "contributions": 52564.3
+  },
+  {
+   "name": "Patrick Soulliere",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 13516.13
+  },
+  {
+   "name": "Clark Kauffman",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 12493.2
+  },
+  {
+   "name": "Brooke Green",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 32359.5
+  },
+  {
+   "name": "Kevin Andrus",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 10975.0
+  },
+  {
+   "name": "Lee Heider",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 15719.68
+  },
+  {
+   "name": "Tony Wisniewski",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 11250.12
+  },
+  {
+   "name": "Chad Christensen",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 23789.18
+  },
+  {
+   "name": "Brad Little",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 5501.0
+  },
+  {
+   "name": "Tim Kastning",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 11189.03
+  },
+  {
+   "name": "Sherri Ybarra",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 380.0
+  },
+  {
+   "name": "Robert Mason",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 3889.0
+  },
+  {
+   "name": "Dawn Maglish",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 2083.57
+  },
+  {
+   "name": "Doug Okuniewicz",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 34450.0
+  },
+  {
+   "name": "Julianne Young",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 55536.08
+  },
+  {
+   "name": "Karey Hanks",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 19879.72
+  },
+  {
+   "name": "Tammy Nichols",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 21981.15
+  },
+  {
+   "name": "Carl Crabtree",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 18270.0
+  },
+  {
+   "name": "Christy Zito",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 46525.98
+  },
+  {
+   "name": "Elaine Smith",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 1825.96
+  },
+  {
+   "name": "Lance Clow",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 24523.13
+  },
+  {
+   "name": "Miranda Marquit",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 48243.35
+  },
+  {
+   "name": "Marc Eberlein",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 8932.67
+  },
+  {
+   "name": "Luke Malek",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": null
+  },
+  {
+   "name": "Dave Radford",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 36200.0
+  },
+  {
+   "name": "James Ruchti",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 75148.11
+  },
+  {
+   "name": "Cherie Buckner-Webb",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 4150.0
+  },
+  {
+   "name": "Hari Heath",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 6773.32
+  },
+  {
+   "name": "Jim Addis",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 65474.0
+  },
+  {
+   "name": "Priscilla Giddings",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 9086.4
+  },
+  {
+   "name": "Julie Yamamoto",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 33223.95
+  },
+  {
+   "name": "Ellen Spencer",
+   "party": "Unaffiliated",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 19671.71
+  },
+  {
+   "name": "Gary Aldous",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 1132.75
+  },
+  {
+   "name": "Sally Toone",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 50690.66
+  },
+  {
+   "name": "Aaron Von Ehlinger",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 23352.99
+  },
+  {
+   "name": "Renee Love",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 55515.75
+  },
+  {
+   "name": "Dorothy Moon",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 24988.0
+  },
+  {
+   "name": "Peter Riggs",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 39526.0
+  },
+  {
+   "name": "Scott Brock",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": null
+  },
+  {
+   "name": "Ronald Mendive",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 16225.0
+  },
+  {
+   "name": "Andrea Owens",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 5825.0
+  },
+  {
+   "name": "Gary Suppiger",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 10649.02
+  },
+  {
+   "name": "Chris Abernathy",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 24679.54
+  },
+  {
+   "name": "Marla Lawson",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 7574.0
+  },
+  {
+   "name": "Bryan Zollinger",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 25904.0
+  },
+  {
+   "name": "Ali Rabe",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 41981.98
+  },
+  {
+   "name": "Ron Nate",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 28013.0
+  },
+  {
+   "name": "Kirk Adams",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 12535.0
+  },
+  {
+   "name": "Sue Chew",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 25020.02
+  },
+  {
+   "name": "Jim Woodward",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 25675.0
+  },
+  {
+   "name": "Mark Nye",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 25641.2
+  },
+  {
+   "name": "Daniel Foreman",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 14641.0
+  },
+  {
+   "name": "Elizabeth Mahn",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 4.6
+  },
+  {
+   "name": "Jon Weber",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 12550.0
+  },
+  {
+   "name": "Paul Thompson",
+   "party": "Constitution",
+   "chamber": null,
+   "district": null,
+   "contributions": 16814.0
+  },
+  {
+   "name": "Chris Mathias",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 51101.12
+  },
+  {
+   "name": "James Smith",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 6170.97
+  },
+  {
+   "name": "Jeffrey Gabica",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 23727.4
+  },
+  {
+   "name": "Britt Raybould",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 50498.0
+  },
+  {
+   "name": "Cornel Rasor",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 12301.52
+  },
+  {
+   "name": "Mark Harris",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 22615.0
+  },
+  {
+   "name": "John Vanderwoude",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 37455.0
+  },
+  {
+   "name": "Jacob Householder",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 5925.96
+  },
+  {
+   "name": "Christopher Trakel",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 1388.18
+  },
+  {
+   "name": "Marco Erickson",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 30235.99
+  },
+  {
+   "name": "Laverne Sessions",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 31163.4
+  },
+  {
+   "name": "Leland Lay",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 160.0
+  },
+  {
+   "name": "Chris Bruce",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 1400.0
+  },
+  {
+   "name": "Colin Nash",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 14855.0
+  },
+  {
+   "name": "Randy Jackson",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 3197.36
+  },
+  {
+   "name": "Dawn Pierce",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 2576.0
+  },
+  {
+   "name": "Melissa Wintrow",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": null
+  },
+  {
+   "name": "George Judd",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 597.0
+  },
+  {
+   "name": "James Rick Just",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 62017.14
+  },
+  {
+   "name": "Gayann Demordaunt",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 37137.98
+  },
+  {
+   "name": "Dustin Manwaring",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 30912.36
+  },
+  {
+   "name": "Benjamin Adams",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 25396.0
+  },
+  {
+   "name": "Adriel Martinez",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 1940.0
+  },
+  {
+   "name": "Kim Keller",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 11939.39
+  },
+  {
+   "name": "Walter Schmid",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 4155.74
+  },
+  {
+   "name": "Shelley Brock",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": null
+  },
+  {
+   "name": "Shem Hanks",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 32.0
+  },
+  {
+   "name": "Charlene Taylor",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 970.0
+  },
+  {
+   "name": "Gregory Chaney",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 37550.0
+  },
+  {
+   "name": "Shane Ruebush",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 10147.26
+  },
+  {
+   "name": "Codi Galloway",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 38364.0
+  },
+  {
+   "name": "Janie Ward-Engelking",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 46320.0
+  },
+  {
+   "name": "Brenda Palmer",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 6430.0
+  },
+  {
+   "name": "Jacob Lowder",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 862.78
+  },
+  {
+   "name": "Zach Brooks",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 2116.87
+  },
+  {
+   "name": "Chelsea Gaona-Lincoln",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 7051.0
+  },
+  {
+   "name": "Steven Thayn",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 19050.0
+  },
+  {
+   "name": "Toni Ferro",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 29645.2
+  },
+  {
+   "name": "Fred Martin",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 81660.88
+  },
+  {
+   "name": "Jud Miller",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 10226.0
+  },
+  {
+   "name": "Machele Hamilton",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 2470.0
+  },
+  {
+   "name": "Daniel Johnson",
+   "party": "Unaffiliated",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 10163.85
+  },
+  {
+   "name": "Jerry Pierce",
+   "party": null,
+   "chamber": null,
+   "district": null,
+   "contributions": 2472.23
+  },
+  {
+   "name": "Donavan Harrington",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 18016.76
+  },
+  {
+   "name": "Mila Wood",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 935.44
+  },
+  {
+   "name": "Rodney Furniss",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 32424.36
+  },
+  {
+   "name": "Ryan Kerby",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 29844.32
+  },
+  {
+   "name": "Kenny Wroten",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 2470.84
+  },
+  {
+   "name": "Angie Moffat",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 954.0
+  },
+  {
+   "name": "Wendy Webb",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 5139.25
+  },
+  {
+   "name": "James Hartley",
+   "party": "Constitution",
+   "chamber": null,
+   "district": null,
+   "contributions": 300.0
+  },
+  {
+   "name": "Jacquelyn Davidson",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 4194.48
+  },
+  {
+   "name": "Megan Blanksma",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 55725.0
+  },
+  {
+   "name": "Stephen F. Howlett",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 2501.03
+  },
+  {
+   "name": "Sage Dixon",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 61900.17
+  },
+  {
+   "name": "Gary Smith",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 26153.05
+  },
+  {
+   "name": "David Roth",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 11373.62
+  },
+  {
+   "name": "Caroline Troy",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 66090.0
+  },
+  {
+   "name": "Lori Den Hartog",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 27805.0
+  },
+  {
+   "name": "Vito Barbieri",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "2",
+   "contributions": 18275.0
+  },
+  {
+   "name": "Gregory Ferch",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 10857.0
+  },
+  {
+   "name": "Bruce Skaug",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 20494.58
+  },
+  {
+   "name": "Jarom Wagoner",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 21250.0
+  },
+  {
+   "name": "Jim Patrick",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 21020.0
+  },
+  {
+   "name": "Patti Anne Lodge",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 44145.0
+  },
+  {
+   "name": "Mike Moyle",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 58279.27
+  },
+  {
+   "name": "Brittany Love",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 1495.0
+  },
+  {
+   "name": "Barbara Ehardt",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 44539.53
+  },
+  {
+   "name": "Randall Armstrong",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 16600.0
+  },
+  {
+   "name": "Sarah Clendenon",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 745.09
+  },
+  {
+   "name": "Michael Kingsley",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 12970.0
+  },
+  {
+   "name": "Brent Crane",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 22125.0
+  },
+  {
+   "name": "Tony Ullrich",
+   "party": "Constitution",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 647.0
+  },
+  {
+   "name": "Jerald Raymond",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 33933.47
+  },
+  {
+   "name": "Brandon Mitchell",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 28611.52
+  },
+  {
+   "name": "Thyra Stevenson",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 136583.45
+  },
+  {
+   "name": "Charles Shepherd",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 8986.35
+  },
+  {
+   "name": "Fred Wood",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 28090.74
+  },
+  {
+   "name": "Edward Hill",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 2450.0
+  },
+  {
+   "name": "Dennis Harper",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 6669.0
+  },
+  {
+   "name": "Patrick Mcdonald",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 20900.0
+  },
+  {
+   "name": "Steven Harris",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 16935.0
+  },
+  {
+   "name": "Rocky Ferrenburg",
+   "party": "Unaffiliated",
+   "chamber": null,
+   "district": null,
+   "contributions": 5136.27
+  },
+  {
+   "name": "Ronald Bair",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 12450.0
+  },
+  {
+   "name": "Travis Oler",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 25187.05
+  },
+  {
+   "name": "Christopher Matthews",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 3593.01
+  },
+  {
+   "name": "Abby Lee",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 12215.0
+  },
+  {
+   "name": "Michael Saville",
+   "party": "Unaffiliated",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 10145.0
+  },
+  {
+   "name": "David Cannon",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 9350.0
+  },
+  {
+   "name": "Grant Burgoyne",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 26130.0
+  },
+  {
+   "name": "John Hodson",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 3066.0
+  },
+  {
+   "name": "Steve Vick",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 32670.0
+  },
+  {
+   "name": "Linda wright Hartgen",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 16029.47
+  },
+  {
+   "name": "Diane Jensen",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 6011.13
+  },
+  {
+   "name": "Samantha Hager",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 103.0
+  },
+  {
+   "name": "Wendy Horman",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 7800.0
+  },
+  {
+   "name": "Rebecca Hanson",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 7853.48
+  },
+  {
+   "name": "Jeff Agenbroad",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 23370.0
+  },
+  {
+   "name": "Joshua Tanner",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 2525.0
+  },
+  {
+   "name": "Sharon Shari Williams",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 23279.53
+  },
+  {
+   "name": "Teresa Borrenpohl",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 12935.46
+  },
+  {
+   "name": "Patricia Day Hartwell",
+   "party": "Democratic",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 1267.0
+  },
+  {
+   "name": "John Goedde",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 7.85
+  },
+  {
+   "name": "David 'Dave' Lent",
+   "party": "Republican",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 7406.01
+  },
+  {
+   "name": "Michael Lose",
+   "party": "Democratic",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 3095.0
+  },
+  {
+   "name": "Eric Parker",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 23101.0
+  },
+  {
+   "name": "William Thorpe",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 14781.0
+  },
+  {
+   "name": "Dan Rose",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 2868.0
+  },
+  {
+   "name": "Laura Bellegante",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 11712.0
+  },
+  {
+   "name": "William Leake",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 2251.5
+  },
+  {
+   "name": "Brett Surplus",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 1650.0
+  },
+  {
+   "name": "Lawrence Wasden",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 2396.26
+  },
+  {
+   "name": "Benjamin Lee",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 890.0
+  },
+  {
+   "name": "Gary Marshall",
+   "party": "Republican",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 2265.0
+  },
+  {
+   "name": "William Sifford",
+   "party": "Unaffiliated",
+   "chamber": null,
+   "district": null,
+   "contributions": 2529.94
+  },
+  {
+   "name": "Neil Anderson",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 262.0
+  },
+  {
+   "name": "Edward Savala",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 1300.0
+  },
+  {
+   "name": "Michael Oliver",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 100.0
+  },
+  {
+   "name": "Jess Smith",
+   "party": "Libertarian",
+   "chamber": null,
+   "district": null,
+   "contributions": 31.0
+  },
+  {
+   "name": "Rick Visser",
+   "party": null,
+   "chamber": null,
+   "district": null,
+   "contributions": 0.84
+  },
+  {
+   "name": "James Feederle",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 300.0
+  },
+  {
+   "name": "Brandon Woolf",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 3340.0
+  },
+  {
+   "name": "Michaella Franklin",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 933.72
+  },
+  {
+   "name": "Nina Turner",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 271.13
+  },
+  {
+   "name": "Lawerence Denney",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 272.88
+  },
+  {
+   "name": "Luke Malek",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": null
+  },
+  {
+   "name": "Janice Mcgeachin",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 1500.0
+  },
+  {
+   "name": "Dean Cameron",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 1.01
+  },
+  {
+   "name": "Matt Dorsey",
+   "party": "Republican",
+   "chamber": null,
+   "district": null,
+   "contributions": 1364.41
+  },
+  {
+   "name": "Melissa Robinson",
+   "party": "Democratic",
+   "chamber": null,
+   "district": null,
+   "contributions": 250.0
+  },
+  {
+   "name": "Robert E. Anderst",
+   "party": null,
+   "chamber": "house",
+   "district": "12",
+   "contributions": 4600.0
+  },
+  {
+   "name": "Maria Andrews",
+   "party": null,
+   "chamber": "house",
+   "district": "2",
+   "contributions": 0.0
+  },
+  {
+   "name": "Evangeline Beechler",
+   "party": null,
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 0.0
+  },
+  {
+   "name": "Michael D. Boeck",
+   "party": null,
+   "chamber": "house",
+   "district": "1",
+   "contributions": 0.0
+  },
+  {
+   "name": "Richard D Boozel",
+   "party": null,
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bert Brackett",
+   "party": null,
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 1850.0
+  },
+  {
+   "name": "Dale R. Broadsword",
+   "party": null,
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 0.0
+  },
+  {
+   "name": "Alanna Brooks",
+   "party": null,
+   "chamber": "house",
+   "district": "2",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kevin James Brown",
+   "party": null,
+   "chamber": "house",
+   "district": "29",
+   "contributions": 0.0
+  },
+  {
+   "name": "Don Cheatham",
+   "party": null,
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 0.0
+  },
+  {
+   "name": "Marshall Hurd Comstock",
+   "party": null,
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 0.0
+  },
+  {
+   "name": "Thomas E Dayley",
+   "party": null,
+   "chamber": "house",
+   "district": "21",
+   "contributions": 0.0
+  },
+  {
+   "name": "Mathew W Erpelding",
+   "party": null,
+   "chamber": "house",
+   "district": "19",
+   "contributions": 32877.33
+  },
+  {
+   "name": "Joseph R Evans",
+   "party": null,
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 0.0
+  },
+  {
+   "name": "Oscar Evans",
+   "party": null,
+   "chamber": "house",
+   "district": "23",
+   "contributions": 4403.31
+  },
+  {
+   "name": "Margaret \"Margie\" R. Gannon",
+   "party": null,
+   "chamber": "house",
+   "district": "5",
+   "contributions": 0.0
+  },
+  {
+   "name": "Roger J. Garlock",
+   "party": null,
+   "chamber": "house",
+   "district": "4",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bill Goesling",
+   "party": null,
+   "chamber": "house",
+   "district": "5",
+   "contributions": 1826.96
+  },
+  {
+   "name": "John Green",
+   "party": null,
+   "chamber": "house",
+   "district": "2",
+   "contributions": 0.0
+  },
+  {
+   "name": "Dan Hanks",
+   "party": null,
+   "chamber": "house",
+   "district": "3",
+   "contributions": 0.0
+  },
+  {
+   "name": "Phil Hart",
+   "party": null,
+   "chamber": "house",
+   "district": "7",
+   "contributions": 2228.1
+  },
+  {
+   "name": "Scott Herndon",
+   "party": null,
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 50.0
+  },
+  {
+   "name": "Mark Johnson",
+   "party": null,
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lyle A Johnstone",
+   "party": null,
+   "chamber": "house",
+   "district": "25",
+   "contributions": 0.0
+  },
+  {
+   "name": "David L Lincoln",
+   "party": null,
+   "chamber": "house",
+   "district": "11",
+   "contributions": 3558.66
+  },
+  {
+   "name": "Lynn Michael Luker",
+   "party": null,
+   "chamber": "house",
+   "district": "15",
+   "contributions": 0.0
+  },
+  {
+   "name": "Shon Luoma",
+   "party": null,
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 0.0
+  },
+  {
+   "name": "Shannon C. McMillan",
+   "party": null,
+   "chamber": "house",
+   "district": "7",
+   "contributions": 0.0
+  },
+  {
+   "name": "Steve Miller",
+   "party": null,
+   "chamber": "house",
+   "district": "26",
+   "contributions": 250.0
+  },
+  {
+   "name": "Dean M Mortimer",
+   "party": null,
+   "chamber": "senate",
+   "district": "30",
+   "contributions": 500.0
+  },
+  {
+   "name": "Ralph Mossman",
+   "party": null,
+   "chamber": "house",
+   "district": "32",
+   "contributions": 0.0
+  },
+  {
+   "name": "Graham Paterson",
+   "party": null,
+   "chamber": "house",
+   "district": "16",
+   "contributions": 0.0
+  },
+  {
+   "name": "Michael S Pereira",
+   "party": null,
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kevin L. Rhoades",
+   "party": null,
+   "chamber": "house",
+   "district": "17",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jane M Rohling",
+   "party": null,
+   "chamber": "house",
+   "district": "14",
+   "contributions": 0.0
+  },
+  {
+   "name": "Allen Schmid",
+   "party": null,
+   "chamber": "house",
+   "district": "9",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rebecca Schroeder",
+   "party": null,
+   "chamber": "house",
+   "district": "4",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gerald Sehlke",
+   "party": null,
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 0.0
+  },
+  {
+   "name": "Paul E Shepherd",
+   "party": null,
+   "chamber": "house",
+   "district": "7",
+   "contributions": 1150.0
+  },
+  {
+   "name": "Lori Shewmaker",
+   "party": null,
+   "chamber": "house",
+   "district": "13",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jim Silsby",
+   "party": null,
+   "chamber": "house",
+   "district": "16",
+   "contributions": 0.0
+  },
+  {
+   "name": "Laurene Sorensen",
+   "party": null,
+   "chamber": "house",
+   "district": "5",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jeff Thompson",
+   "party": null,
+   "chamber": "house",
+   "district": "30",
+   "contributions": 0.0
+  },
+  {
+   "name": "Chase Van Weerdhuizen",
+   "party": null,
+   "chamber": "house",
+   "district": "9",
+   "contributions": 0.0
+  },
+  {
+   "name": "John Vander Woude",
+   "party": null,
+   "chamber": "house",
+   "district": "22",
+   "contributions": 3850.0
+  },
+  {
+   "name": "Julie A VanOrden",
+   "party": null,
+   "chamber": "house",
+   "district": "31",
+   "contributions": 21338.99
+  },
+  {
+   "name": "Ellen Weissman",
+   "party": null,
+   "chamber": "house",
+   "district": "1",
+   "contributions": 0.0
+  },
+  {
+   "name": "Daniel S. Weston",
+   "party": null,
+   "chamber": "house",
+   "district": "20",
+   "contributions": 0.0
+  },
+  {
+   "name": "Geoffrey A. Schroeder",
+   "party": null,
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gary Freeman",
+   "party": null,
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 0.0
+  }
+ ]
+}
