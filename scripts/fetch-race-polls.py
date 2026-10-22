@@ -50,6 +50,7 @@ Merge rules:
   - on-file 2026 rows of a scraped race that the scrape no longer finds are listed as "−"
     (Wikipedia removed the poll — e.g. 2026-10-20, every Wedgewood Polls row, a hoax pollster);
     they are KEPT, so review them and delete by hand if the removal is right
+  - BLOCKED_POLLSTERS are never ingested, so a deleted hoax pollster cannot come back
 """
 
 import csv
@@ -72,6 +73,7 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) election-map poll refresh"
 YEAR = 2026
 AT_LARGE = {"AK", "DE", "ND", "SD", "VT", "WY"}
 RCV_RACES = {("S", "AK", "Senate"), ("G", "AK", "Governor"), ("H", "AK", "House AK-01")}  # ranked-choice table, final round only
+BLOCKED_POLLSTERS = {"wedgewood"}  # normalised-name prefixes never ingested: Wedgewood Polls = hoax (Wikipedia purge 2026-10-20, user 2026-10-21)
 MONTHS = {m: i for i, m in enumerate(
     ["january", "february", "march", "april", "may", "june", "july", "august",
      "september", "october", "november", "december"], 1)}
@@ -637,6 +639,8 @@ def main():
         found += len(polls)
         have = by_race.get(key, [])
         for p in polls:
+            if any(norm_pollster(p["pollster"]).startswith(b) for b in BLOCKED_POLLSTERS):
+                continue
             k1 = (p["start"], p["end"], norm_pollster(p["pollster"]))
             k2 = (p["start"], p["end"], float(p["dem"]), float(p["rep"]))
             dup = [h for h in have if (h["start"], h["end"], norm_pollster(h["pollster"])) == k1

@@ -1,486 +1,5866 @@
 {
  "state": "OR",
  "cycle": 2018,
- "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
- "fetched": "2026-10-19",
+ "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+ "fetched": "2026-10-21",
  "dataThrough": "12/31/2018",
  "candidates": [
   {
-   "name": "Friends for Floyd Prozanski",
-   "candidate": "Prozanski, Floyd",
+   "name": "Tina Kotek",
+   "committee": "Friends of Tina Kotek",
    "party": "Democrat",
-   "chamber": "senate",
-   "district": "4",
-   "committee": "1686",
-   "contributions": 130682.11
-  },
-  {
-   "name": "Committee to Re-Elect Greg Smith",
-   "candidate": "Smith, Gregory",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "57",
-   "committee": "3420",
-   "contributions": 192444.83
-  },
-  {
-   "name": "Committee to Elect Betsy Johnson",
-   "candidate": "Johnson, Elizabeth (Betsy)",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "16",
-   "committee": "3591",
-   "contributions": 440232.61
-  },
-  {
-   "name": "Friends of Tina Kotek",
-   "candidate": "Kotek, Tina",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "44",
-   "committee": "4792",
+   "filer": "4792",
    "contributions": 600827.35
   },
   {
-   "name": "Friends of Kim Thatcher",
-   "candidate": "Thatcher, Kim",
+   "name": "Christine Drazan",
+   "committee": "Friends of Christine Drazan",
    "party": "Republican",
-   "chamber": "senate",
-   "district": "13",
-   "committee": "4871",
-   "contributions": 193597.95
-  },
-  {
-   "name": "Brad Witt for State Representative",
-   "candidate": "Witt, Bradley",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "19",
-   "committee": "5079",
-   "contributions": 183963.87
-  },
-  {
-   "name": "Oregonians for Clem",
-   "candidate": "Clem, Brian",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "21",
-   "committee": "5133",
-   "contributions": 118728.41
-  },
-  {
-   "name": "Friends of Nancy Nathanson",
-   "candidate": "Nathanson, Nancy",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "13",
-   "committee": "5152",
-   "contributions": 196817.68
-  },
-  {
-   "name": "Friends of Sherrie Sprenger",
-   "candidate": "Sprenger, Sherrie",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "17",
-   "committee": "12916",
-   "contributions": 76250.83
-  },
-  {
-   "name": "Friends of Dan Rayfield",
-   "candidate": "Rayfield, Daniel",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "16",
-   "committee": "14046",
-   "contributions": 281138.47
-  },
-  {
-   "name": "Donohue For Representative District 10",
-   "candidate": "Donohue, Thomas",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "10",
-   "committee": "14299",
-   "contributions": 14843.37
-  },
-  {
-   "name": "Friends of Chris Gorsek",
-   "candidate": "Gorsek, Christopher",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "25",
-   "committee": "14515",
-   "contributions": 68663.11
-  },
-  {
-   "name": "Committee to Elect Shemia Fagan",
-   "candidate": "Fagan, Shemia",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "24",
-   "committee": "14993",
-   "contributions": 423168.63
-  },
-  {
-   "name": "Gomberg for State Rep",
-   "candidate": "Gomberg, David",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "10",
-   "committee": "15348",
-   "contributions": 113578.67
-  },
-  {
-   "name": "Friends of David Brock Smith",
-   "candidate": "Smith, David Brock",
-   "party": "Republican",
-   "chamber": "senate",
-   "district": "1",
-   "committee": "15377",
-   "contributions": 148013.14
-  },
-  {
-   "name": "Friends of John Lively",
-   "candidate": "Lively, John",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "7",
-   "committee": "15519",
-   "contributions": 73427.89
-  },
-  {
-   "name": "Reardon for Oregon",
-   "candidate": "Reardon, Michael",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "48",
-   "committee": "15621",
-   "contributions": 72061.47
-  },
-  {
-   "name": "Friends of Jeff Helfrich",
-   "candidate": "Helfrich, Jeff",
-   "party": "Republican",
-   "chamber": "senate",
-   "district": "26",
-   "committee": "15984",
-   "contributions": 700418.14
-  },
-  {
-   "name": "Friends of Rob Nosse",
-   "candidate": "Nosse, Rob",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "42",
-   "committee": "16459",
-   "contributions": 155562.53
-  },
-  {
-   "name": "Friends of Paul Evans",
-   "candidate": "Evans, Paul",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "20",
-   "committee": "16508",
-   "contributions": 916561.77
-  },
-  {
-   "name": "Hayden for Oregon",
-   "candidate": "Hayden, Cedric",
-   "party": "Republican",
-   "chamber": "senate",
-   "district": "6",
-   "committee": "16541",
-   "contributions": 180459.0
-  },
-  {
-   "name": "Terrence of Oregon",
-   "candidate": "Taylor, Terrence",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "20",
-   "committee": "16659",
-   "contributions": 1180.0
-  },
-  {
-   "name": "Friends of Mark Meek",
-   "candidate": "Meek, Mark",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "20",
-   "committee": "16719",
-   "contributions": 420562.44
-  },
-  {
-   "name": "Ken Helm for Oregon",
-   "candidate": "Helm, Kenneth",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "27",
-   "committee": "16738",
-   "contributions": 78959.68
-  },
-  {
-   "name": "Kathleen Taylor for Oregon",
-   "candidate": "Taylor, Kathleen",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "21",
-   "committee": "16757",
-   "contributions": 79132.0
-  },
-  {
-   "name": "Nearman4Oregon",
-   "candidate": "Nearman, Mike",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "23",
-   "committee": "16767",
-   "contributions": 94409.66
-  },
-  {
-   "name": "Friends of Susan McLain",
-   "candidate": "McLain, Susan",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "29",
-   "committee": "16812",
-   "contributions": 157727.23
-  },
-  {
-   "name": "Committee to Elect Rick Lewis",
-   "candidate": "Lewis, Rick",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "18",
-   "committee": "17017",
-   "contributions": 63591.79
-  },
-  {
-   "name": "Boddie For Bend",
-   "candidate": "Boddie, Nathan",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "54",
-   "committee": "17097",
-   "contributions": 65511.55
-  },
-  {
-   "name": "Friends of Julie Fahey",
-   "candidate": "Fahey, Julianne",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "14",
-   "committee": "17469",
-   "contributions": 107301.37
-  },
-  {
-   "name": "Tawna Sanchez for Oregon",
-   "candidate": "Sanchez, Tawna",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "43",
-   "committee": "17625",
-   "contributions": 36057.57
-  },
-  {
-   "name": "Friends of Teresa Alonso Leon",
-   "candidate": "Alonso Leon, Teresa",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "11",
-   "committee": "17643",
-   "contributions": 249014.65
-  },
-  {
-   "name": "Committee to Elect Pam Marsh",
-   "candidate": "Marsh, Pam",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "5",
-   "committee": "17668",
-   "contributions": 73344.59
-  },
-  {
-   "name": "Committee to Elect Janelle Bynum",
-   "candidate": "Bynum, Janelle",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "39",
-   "committee": "17847",
-   "contributions": 894158.25
-  },
-  {
-   "name": "Friends of Janeen Sollman",
-   "candidate": "Sollman, Janeen",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "15",
-   "committee": "17890",
-   "contributions": 64960.96
-  },
-  {
-   "name": "Werner for Oregon",
-   "candidate": "Reschke, E Werner",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "55",
-   "committee": "17892",
-   "contributions": 104027.69
-  },
-  {
-   "name": "Friends of Kim Wallan",
-   "candidate": "Wallan, Kimberly",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "6",
-   "committee": "18284",
-   "contributions": 127012.06
-  },
-  {
-   "name": "Friends of Rob Wagner",
-   "candidate": "Wagner, Robert",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "19",
-   "committee": "18396",
-   "contributions": 205151.72
-  },
-  {
-   "name": "Friends of Rich Cunningham",
-   "candidate": "Cunningham, Richard",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "14",
-   "committee": "18683",
-   "contributions": 8514.35
-  },
-  {
-   "name": "Friends of Denyc Boles",
-   "candidate": "Boles, Denyc",
-   "party": "Republican",
-   "chamber": "senate",
-   "district": "10",
-   "committee": "18816",
-   "contributions": 214606.03
-  },
-  {
-   "name": "Friends of Deb Patterson",
-   "candidate": "Patterson, Deborah",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "10",
-   "committee": "18821",
-   "contributions": 124459.97
-  },
-  {
-   "name": "Committee to Elect Jeff Golden",
-   "candidate": "Golden, Jeff",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "3",
-   "committee": "18895",
-   "contributions": 215496.92
-  },
-  {
-   "name": "Jack Zika for State Representative",
-   "candidate": "Zika, Joseph (Jack)",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "53",
-   "committee": "18905",
-   "contributions": 189561.21
-  },
-  {
-   "name": "Committee to Elect Daniel Bonham",
-   "candidate": "Bonham, Daniel",
-   "party": "Republican",
-   "chamber": "senate",
-   "district": "26",
-   "committee": "18925",
-   "contributions": 102712.63
-  },
-  {
-   "name": "Chrissy for Oregon",
-   "candidate": "Reitz, Chrissy",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "26",
-   "committee": "18950",
-   "contributions": 735553.45
-  },
-  {
-   "name": "Friends of Dave McCall",
-   "candidate": "McCall, David",
-   "party": "Democrat",
-   "chamber": "house",
-   "district": "21",
-   "committee": "18997",
-   "contributions": 30410.4
-  },
-  {
-   "name": "Cheri Helt for State Representative",
-   "candidate": "Helt, Cheri",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "54",
-   "committee": "19022",
-   "contributions": 543346.09
-  },
-  {
-   "name": "Eileen Kiely for Oregon",
-   "candidate": "Kiely, Eileen",
-   "party": "Democrat",
-   "chamber": "senate",
-   "district": "27",
-   "committee": "19025",
-   "contributions": 52818.25
-  },
-  {
-   "name": "Friends of Christine Drazan",
-   "candidate": "Drazan, Christine",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "51",
-   "committee": "19050",
+   "filer": "19050",
    "contributions": 210768.83
   },
   {
-   "name": "Stout for State Rep",
-   "candidate": "Stout, Brian",
-   "party": "Republican",
-   "chamber": "house",
-   "district": "31",
-   "committee": "19073",
-   "contributions": 23564.78
+   "name": "Kate Brown",
+   "committee": "Kate Brown Committee",
+   "party": "Democrat",
+   "filer": "931",
+   "contributions": 20342128.4
   },
   {
-   "name": "Friends of Jessica Gomez",
-   "candidate": "Gomez, Jessica",
+   "name": "Knute Buehler",
+   "committee": "Knute for Governor",
    "party": "Republican",
+   "filer": "15192",
+   "contributions": 19368502.66
+  },
+  {
+   "name": "Elizabeth Johnson",
+   "committee": "Betsy PAC",
+   "party": "Nonaffiliated",
+   "filer": "3591",
+   "contributions": 440232.61
+  },
+  {
+   "name": "Tobias J Read",
+   "committee": "Friends of Tobias Read",
+   "party": "Democrat",
+   "filer": "5208",
+   "contributions": 211381.19
+  },
+  {
+   "name": "Daniel A Rayfield",
+   "committee": "Friends of Dan Rayfield",
+   "party": "Democrat",
+   "filer": "14046",
+   "contributions": 281138.47
+  },
+  {
+   "name": "Tim Knopp",
+   "committee": "Tim Knopp for State Senate",
+   "party": "Republican",
+   "filer": "15627",
+   "contributions": 237993.0
+  },
+  {
+   "name": "Shemia P Fagan",
+   "committee": "Committee to Elect Shemia Fagan",
+   "party": "Democrat",
+   "filer": "14993",
+   "contributions": 423168.63
+  },
+  {
+   "name": "Dennis M Richardson",
+   "committee": "Citizens to Re-Elect Dennis Richardson",
+   "party": "Republican",
+   "filer": "4155",
+   "contributions": 22571.5
+  },
+  {
+   "name": "Val Hoyle",
+   "committee": "Friends of Val Hoyle",
+   "party": "Nonpartisan",
+   "filer": "13967",
+   "contributions": 994430.57
+  },
+  {
+   "name": "Brad Avakian",
+   "committee": "Committee to Elect Brad Avakian",
+   "party": "Democrat",
+   "filer": "4152",
+   "contributions": 7565.0
+  },
+  {
+   "name": "William C Pierce",
+   "committee": "Bud Pierce for a Better Oregon",
+   "party": "Republican",
+   "filer": "17397",
+   "contributions": 7200.0
+  },
+  {
+   "name": "Elizabeth Steiner",
+   "committee": "Friends of Elizabeth Steiner",
+   "party": "Democrat",
+   "filer": "15255",
+   "contributions": 230084.16
+  },
+  {
+   "name": "Robert Wagner",
+   "committee": "Friends of Rob Wagner",
+   "party": "Democrat",
+   "filer": "18396",
+   "contributions": 205151.72,
    "chamber": "senate",
-   "district": "3",
-   "committee": "19144",
+   "district": "19"
+  },
+  {
+   "name": "Ted Wheeler",
+   "committee": "Friends of Ted Wheeler",
+   "party": "Nonpartisan",
+   "filer": "5591",
+   "contributions": 167675.0
+  },
+  {
+   "name": "Mark Meek",
+   "committee": "Friends of Mark Meek",
+   "party": "Democrat",
+   "filer": "16719",
+   "contributions": 420562.44
+  },
+  {
+   "name": "Deborah Patterson",
+   "committee": "Friends of Deb Patterson",
+   "party": "Democrat",
+   "filer": "18821",
+   "contributions": 124459.97,
+   "chamber": "senate",
+   "district": "10"
+  },
+  {
+   "name": "Bill Kennemer",
+   "committee": "Friends of Bill Kennemer",
+   "party": "Republican",
+   "filer": "5885",
+   "contributions": 39309.73
+  },
+  {
+   "name": "Peter Courtney",
+   "committee": "Peter Courtney for State Senate",
+   "party": "Democrat",
+   "filer": "470",
+   "contributions": 555116.87,
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "name": "Kim Thatcher",
+   "committee": "Friends of Kim Thatcher",
+   "party": "Republican",
+   "filer": "4871",
+   "contributions": 193597.95
+  },
+  {
+   "name": "Ellen Rosenblum",
+   "committee": "Elect Ellen Rosenblum for Attorney General",
+   "party": "Democrat",
+   "filer": "15406",
+   "contributions": 77556.54
+  },
+  {
+   "name": "Mike McLane",
+   "committee": "Committee to Elect Mike McLane",
+   "party": "Nonpartisan",
+   "filer": "13635",
+   "contributions": 686116.67
+  },
+  {
+   "name": "Jeff Helfrich",
+   "committee": "Friends of Jeff Helfrich",
+   "party": "Republican",
+   "filer": "15984",
+   "contributions": 700418.14
+  },
+  {
+   "name": "Julianne Fahey",
+   "committee": "Friends of Julie Fahey",
+   "party": "Democrat",
+   "filer": "17469",
+   "contributions": 107301.37,
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "name": "Bruce Starr",
+   "committee": "Starr, Bruce, for State Senate Committee",
+   "party": "Republican",
+   "filer": "2752",
+   "contributions": 7500.28
+  },
+  {
+   "name": "Fred Girod",
+   "committee": "Friends of Fred Girod",
+   "party": "Republican",
+   "filer": "5458",
+   "contributions": 270120.5
+  },
+  {
+   "name": "Allen H. Alley",
+   "committee": "Friends of Allen Alley",
+   "party": "Republican",
+   "filer": "12878",
+   "contributions": 36000.0
+  },
+  {
+   "name": "Christopher S Gorsek",
+   "committee": "Friends of Chris Gorsek",
+   "party": "Democrat",
+   "filer": "14515",
+   "contributions": 68663.11
+  },
+  {
+   "name": "Cheri Helt",
+   "committee": "Cheri for Oregon",
+   "party": "Nonpartisan",
+   "filer": "19022",
+   "contributions": 543346.09
+  },
+  {
+   "name": "Arnie Roblan",
+   "committee": "Friends of Arnie Roblan",
+   "party": "Nonpartisan",
+   "filer": "4726",
+   "contributions": 187417.88
+  },
+  {
+   "name": "Dick Anderson",
+   "committee": "Dick Anderson for Oregon",
+   "party": "Republican",
+   "filer": "20255",
+   "contributions": 833.27
+  },
+  {
+   "name": "Paul Evans",
+   "committee": "Friends of Paul Evans",
+   "party": "Democrat",
+   "filer": "16508",
+   "contributions": 916561.77,
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "name": "Ted Ferrioli",
+   "committee": "Friends of Ted Ferrioli",
+   "party": "Republican",
+   "filer": "3215",
+   "contributions": 52882.84
+  },
+  {
+   "name": "Christina E Stephenson",
+   "committee": "CS for OR",
+   "party": "Nonpartisan",
+   "filer": "18555",
+   "contributions": 3251.0
+  },
+  {
+   "name": "Rob A Nosse",
+   "committee": "Friends of Rob Nosse",
+   "party": "Democrat",
+   "filer": "16459",
+   "contributions": 155562.53,
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "name": "Shelly Boshart Davis",
+   "committee": "Friends of Shelly Boshart Davis",
+   "party": "Republican",
+   "filer": "19151",
+   "contributions": 176134.51,
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "name": "Richard Devlin",
+   "committee": "Friends of Richard Devlin",
+   "party": "Candidate Address:\t10290 SW Anderson Ct",
+   "filer": "1670",
+   "contributions": 43413.19
+  },
+  {
+   "name": "Chuck Thomsen",
+   "committee": "Friends of Chuck Thomsen",
+   "party": "Republican",
+   "filer": "14232",
+   "contributions": 821386.24,
+   "chamber": "senate",
+   "district": "26"
+  },
+  {
+   "name": "Julie N Parrish",
+   "committee": "Friends of Julie Parrish",
+   "party": "Republican",
+   "filer": "14592",
+   "contributions": 455271.42,
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "name": "Laurie S Monnes Anderson",
+   "committee": "Friends of Laurie Monnes Anderson",
+   "party": "Democrat",
+   "filer": "3584",
+   "contributions": 159474.21
+  },
+  {
+   "name": "Daniel G Bonham",
+   "committee": "Committee to Elect Daniel Bonham",
+   "party": "Republican",
+   "filer": "18925",
+   "contributions": 102712.63
+  },
+  {
+   "name": "Denyc N Boles",
+   "committee": "Friends of Denyc Boles",
+   "party": "Republican",
+   "filer": "18816",
+   "contributions": 214606.03
+  },
+  {
+   "name": "Gregory V. Smith",
+   "committee": "Committee to Re-Elect Greg Smith",
+   "party": "Republican",
+   "filer": "3420",
+   "contributions": 192444.83,
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "name": "Jennifer A Williamson",
+   "committee": "Friends of Jennifer Williamson",
+   "party": "Democrat",
+   "filer": "15145",
+   "contributions": 464677.2
+  },
+  {
+   "name": "Mark Johnson",
+   "committee": "Friends of Mark Johnson",
+   "party": "Republican",
+   "filer": "14277",
+   "contributions": 43572.06
+  },
+  {
+   "name": "Brian L Clem, Candidate",
+   "committee": "Oregonians for Clem",
+   "party": "Democrat",
+   "filer": "5133",
+   "contributions": 118728.41
+  },
+  {
+   "name": "Jackie Winters",
+   "committee": "Friends of Jackie Winters",
+   "party": "Republican",
+   "filer": "2225",
+   "contributions": 673151.08,
+   "chamber": "senate",
+   "district": "10"
+  },
+  {
+   "name": "Stan P Pulliam",
+   "committee": "Friends of Stan Pulliam",
+   "party": "Nonpartisan",
+   "filer": "18724",
+   "contributions": 32969.0
+  },
+  {
+   "name": "Mark Hass",
+   "committee": "Friends of Mark Hass",
+   "party": "Democrat",
+   "filer": "11487",
+   "contributions": 144869.9
+  },
+  {
+   "name": "Loretta J. Smith",
+   "committee": "Committee to Elect Loretta Smith",
+   "party": "Nonpartisan",
+   "filer": "14377",
+   "contributions": 774389.9
+  },
+  {
+   "name": "Steven Novick",
+   "committee": "Novick for Portland",
+   "party": "Nonpartisan",
+   "filer": "15109",
+   "contributions": 2624.0
+  },
+  {
+   "name": "Nancy Nathanson",
+   "committee": "Friends of Nancy Nathanson",
+   "party": "Democrat",
+   "filer": "5152",
+   "contributions": 196817.68,
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "name": "Eileen Brady",
+   "committee": "Friends of Eileen Brady",
+   "party": "Nonpartisan",
+   "filer": "15023",
+   "contributions": 4940.43
+  },
+  {
+   "name": "Jessica L Gomez",
+   "committee": "Friends of Jessica Gomez",
+   "party": "Republican",
+   "filer": "19144",
    "contributions": 570066.88
   },
   {
-   "name": "Friends of Shelly Boshart Davis",
-   "candidate": "Boshart Davis, Shelly",
-   "party": "Republican",
+   "name": "Catherine McKeown",
+   "committee": "Caddy McKeown for Representative",
+   "party": "Democrat",
+   "filer": "15298",
+   "contributions": 1053867.43,
    "chamber": "house",
-   "district": "15",
-   "committee": "19151",
-   "contributions": 176134.51
+   "district": "9"
   },
   {
-   "name": "Friends of Courtney Neron",
-   "candidate": "Neron, Courtney",
+   "name": "Lori DeRemer",
+   "committee": "Friends of Lori Chavez-DeRemer",
+   "party": "Republican",
+   "filer": "14544",
+   "contributions": 593576.5,
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "name": "PAUL HOLVEY",
+   "committee": "Paul Holvey for State Representative",
    "party": "Democrat",
+   "filer": "4788",
+   "contributions": 146144.92,
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "name": "Selma Pierce",
+   "committee": "Friends of Selma Pierce",
+   "party": "Republican",
+   "filer": "19088",
+   "contributions": 573892.15,
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "name": "Janelle Bynum",
+   "committee": "Committee to Elect Janelle Bynum",
+   "party": "Democrat",
+   "filer": "17847",
+   "contributions": 894158.25
+  },
+  {
+   "name": "Janeen Sollman",
+   "committee": "Friends of Janeen Sollman",
+   "party": "Democrat",
+   "filer": "17890",
+   "contributions": 64960.96
+  },
+  {
+   "name": "Ginny Burdick",
+   "committee": "Friends of Ginny Burdick",
+   "party": "Democrat",
+   "filer": "5434",
+   "contributions": 226800.64
+  },
+  {
+   "name": "Bradley K Witt",
+   "committee": "Brad Witt for State Representative",
+   "party": "Democrat",
+   "filer": "5079",
+   "contributions": 183963.87
+  },
+  {
+   "name": "Brian J. Boquist",
+   "committee": "Boquist Leadership Fund",
+   "party": "Republican",
+   "filer": "4893",
+   "contributions": 227450.0
+  },
+  {
+   "name": "Kathleen Taylor",
+   "committee": "Kathleen Taylor for Oregon",
+   "party": "Democrat",
+   "filer": "16757",
+   "contributions": 79132.0
+  },
+  {
+   "name": "Jo Ann Hardesty",
+   "committee": "Jo Ann for Portland City Council",
+   "party": "Nonpartisan",
+   "filer": "18730",
+   "contributions": 442731.76
+  },
+  {
+   "name": "Tim Freeman",
+   "committee": "Friends of Tim Freeman",
+   "party": "Nonpartisan",
+   "filer": "11927",
+   "contributions": 59058.89
+  },
+  {
+   "name": "Sara Gelser Blouin",
+   "committee": "Sara Gelser Blouin for State Senate",
+   "party": "Democrat",
+   "filer": "4680",
+   "contributions": 93864.5
+  },
+  {
+   "name": "David Gomberg",
+   "committee": "Gomberg for State Rep",
+   "party": "Democrat",
+   "filer": "15348",
+   "contributions": 113578.67,
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "name": "Bill Hansell",
+   "committee": "Friends of Bill Hansell",
+   "party": "Republican",
+   "filer": "14201",
+   "contributions": 136017.24
+  },
+  {
+   "name": "Cliff Bentz",
+   "committee": "Cliff Bentz for Oregon",
+   "party": "Republican",
+   "filer": "11508",
+   "contributions": 233491.03
+  },
+  {
+   "name": "Sarah Iannarone",
+   "committee": "Friends of Sarah for Portland",
+   "party": "Nonpartisan",
+   "filer": "17697",
+   "contributions": 100.0
+  },
+  {
+   "name": "Kevin Cameron",
+   "committee": "Kevin Cameron for Oregon",
+   "party": "Republican",
+   "filer": "5089",
+   "contributions": 76709.61
+  },
+  {
+   "name": "David Brock Smith",
+   "committee": "Friends of David Brock Smith",
+   "party": "Republican",
+   "filer": "15377",
+   "contributions": 148013.14
+  },
+  {
+   "name": "Kevin E Barton",
+   "committee": "Friends of Kevin Barton",
+   "party": "Nonpartisan",
+   "filer": "18672",
+   "contributions": 432473.47
+  },
+  {
+   "name": "Cedric Hayden",
+   "committee": "Hayden for Oregon",
+   "party": "Republican",
+   "filer": "16541",
+   "contributions": 180459.0
+  },
+  {
+   "name": "Lynn A Peterson",
+   "committee": "Friends of Lynn Peterson",
+   "party": "Nonpartisan",
+   "filer": "5744",
+   "contributions": 312485.13
+  },
+  {
+   "name": "Andy Olson",
+   "committee": "Friends of Andy Olson",
+   "party": "Republican",
+   "filer": "4831",
+   "contributions": 14400.0
+  },
+  {
+   "name": "Tawna D Sanchez",
+   "committee": "Tawna Sanchez for Oregon",
+   "party": "Democrat",
+   "filer": "17625",
+   "contributions": 36057.57,
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "name": "Sharon E Meieran",
+   "committee": "Friends of Sharon Meieran",
+   "party": "Nonpartisan",
+   "filer": "15132",
+   "contributions": 8630.0
+  },
+  {
+   "name": "Katie Eyre",
+   "committee": "Friends of Katie Eyre",
+   "party": "Republican",
+   "filer": "14349",
+   "contributions": 72.07
+  },
+  {
+   "name": "Michael E. Dembrow",
+   "committee": "Friends of Michael Dembrow",
+   "party": "Democrat",
+   "filer": "10967",
+   "contributions": 106637.9
+  },
+  {
+   "name": "Martha Schrader",
+   "committee": "Friends of Martha Schrader",
+   "party": "Nonpartisan",
+   "filer": "5724",
+   "contributions": 22591.35
+  },
+  {
+   "name": "Heather H Buch",
+   "committee": "Heather Buch for Oregon",
+   "party": "Nonpartisan",
+   "filer": "18726",
+   "contributions": 212683.48
+  },
+  {
+   "name": "Jules L K Bailey",
+   "committee": "Friends of Jules",
+   "party": "Nonpartisan",
+   "filer": "12498",
+   "contributions": 15877.75
+  },
+  {
+   "name": "Patti Milne",
+   "committee": "Friends of Patti Milne",
+   "party": "Republican",
+   "filer": "6284",
+   "contributions": 12.5
+  },
+  {
+   "name": "Greg Barreto",
+   "committee": "Barreto For HD 58",
+   "party": "Republican",
+   "filer": "16557",
+   "contributions": 310360.53,
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "name": "Pam Treece",
+   "committee": "Friends of Pam Treece",
+   "party": "Nonpartisan",
+   "filer": "18397",
+   "contributions": 228195.6
+  },
+  {
+   "name": "Sonya Fischer",
+   "committee": "Friends of Sonya Fischer",
+   "party": "Nonpartisan",
+   "filer": "16623",
+   "contributions": 178114.59
+  },
+  {
+   "name": "Alan R Olsen",
+   "committee": "Alan Olsen for Oregon Senate Committee",
+   "party": "Republican",
+   "filer": "14044",
+   "contributions": 416904.95,
    "chamber": "senate",
-   "district": "13",
-   "committee": "19466",
+   "district": "20"
+  },
+  {
+   "name": "Lee Beyer",
+   "committee": "Friends of Lee Beyer",
+   "party": "Democrat",
+   "filer": "14049",
+   "contributions": 212206.4,
+   "chamber": "senate",
+   "district": "6"
+  },
+  {
+   "name": "Greg Macpherson",
+   "committee": "Friends of Greg Macpherson",
+   "party": "Democrat",
+   "filer": "4022",
+   "contributions": 5000.0
+  },
+  {
+   "name": "Jeff Barker",
+   "committee": "Friends of Jeff Barker",
+   "party": "Democrat",
+   "filer": "4270",
+   "contributions": 139111.15,
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "name": "Floyd F. Prozanski, Jr.",
+   "committee": "Friends for Floyd Prozanski",
+   "party": "Democrat",
+   "filer": "1686",
+   "contributions": 130682.11,
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "name": "Chuck Riley",
+   "committee": "Friends of Chuck Riley",
+   "party": "Nonpartisan",
+   "filer": "4212",
+   "contributions": 346332.38
+  },
+  {
+   "name": "E Werner Reschke",
+   "committee": "Werner for Oregon",
+   "party": "Republican",
+   "filer": "17892",
+   "contributions": 104027.69
+  },
+  {
+   "name": "Ron Noble",
+   "committee": "Ron Noble for Oregon",
+   "party": "Republican",
+   "filer": "17835",
+   "contributions": 144792.4,
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "name": "Susan McLain",
+   "committee": "Friends of Susan McLain",
+   "party": "Democrat",
+   "filer": "16812",
+   "contributions": 157727.23,
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "name": "Barbara Smith Warner",
+   "committee": "Team BSW (Barbara Smith Warner)",
+   "party": "Democrat",
+   "filer": "16616",
+   "contributions": 139260.26,
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "name": "James I Manning, Jr.",
+   "committee": "Friends of James Manning",
+   "party": "Democrat",
+   "filer": "18375",
+   "contributions": 158718.73,
+   "chamber": "senate",
+   "district": "7"
+  },
+  {
+   "name": "Armand R Vial",
+   "committee": "Committee to Elect Rich Vial",
+   "party": "Nonaffiliated",
+   "filer": "22208",
+   "contributions": 221464.62
+  },
+  {
+   "name": "Lynn P Findley",
+   "committee": "Lynn Findley for State Senate",
+   "party": "Republican",
+   "filer": "19016",
+   "contributions": 80080.65
+  },
+  {
+   "name": "Kathryn Harrington",
+   "committee": "Friends of Kathryn Harrington",
+   "party": "Nonpartisan",
+   "filer": "5719",
+   "contributions": 479581.39
+  },
+  {
+   "name": "Courtney Neron",
+   "committee": "Friends of Courtney Neron",
+   "party": "Democrat",
+   "filer": "19466",
    "contributions": 48688.31
+  },
+  {
+   "name": "Paul Savas",
+   "committee": "Friends of Paul Savas",
+   "party": "Nonpartisan",
+   "filer": "14364",
+   "contributions": 83039.63
+  },
+  {
+   "name": "James (Jim) L. Thompson",
+   "committee": "Citizens for Jim Thompson",
+   "party": "Independent",
+   "filer": "4681",
+   "contributions": 96.89
+  },
+  {
+   "name": "John Lively",
+   "committee": "Friends of John Lively",
+   "party": "Democrat",
+   "filer": "15519",
+   "contributions": 73427.89
+  },
+  {
+   "name": "Daniel Nguyen",
+   "committee": "Friends of Daniel Nguyen",
+   "party": "Democrat",
+   "filer": "19463",
+   "contributions": 60159.32
+  },
+  {
+   "name": "John E. Huffman",
+   "committee": "Committee to Elect John E. Huffman",
+   "party": "Republican",
+   "filer": "11708",
+   "contributions": 2075.0
+  },
+  {
+   "name": "Steve Newgard",
+   "committee": "Friends of Steve Newgard",
+   "party": "Republican",
+   "filer": "15497",
+   "contributions": 250.0
+  },
+  {
+   "name": "Sherrie Sprenger",
+   "committee": "Friends of Sherrie Sprenger",
+   "party": "Nonpartisan",
+   "filer": "12916",
+   "contributions": 76250.83
+  },
+  {
+   "name": "W. Rod Monroe",
+   "committee": "Friends of Rod Monroe",
+   "party": "Democrat",
+   "filer": "5319",
+   "contributions": 356927.12
+  },
+  {
+   "name": "Lew Frederick",
+   "committee": "Friends of Lew Frederick",
+   "party": "Nonpartisan",
+   "filer": "5686",
+   "contributions": 55690.25
+  },
+  {
+   "name": "Chris Telfer",
+   "committee": "Together for Oregon",
+   "party": "Independent",
+   "filer": "11767",
+   "contributions": 10000.0
+  },
+  {
+   "name": "Jason S Kropf",
+   "committee": "Jason for Bend",
+   "party": "Democrat",
+   "filer": "18661",
+   "contributions": 495.0
+  },
+  {
+   "name": "Ben West",
+   "committee": "Ben West for Oregon",
+   "party": "Nonpartisan",
+   "filer": "20597",
+   "contributions": 10514.59
+  },
+  {
+   "name": "Kayse M Jama",
+   "committee": "Kayse Jama for Oregon",
+   "party": "Democrat",
+   "filer": "18744",
+   "contributions": 56576.44
+  },
+  {
+   "name": "Nick Fish",
+   "committee": "Nick Fish for City Council",
+   "party": "Nonpartisan",
+   "filer": "5709",
+   "contributions": 212727.83
+  },
+  {
+   "name": "Teresa Alonso Leon",
+   "committee": "Friends of Teresa Alonso Leon",
+   "party": "Democrat",
+   "filer": "17643",
+   "contributions": 249014.65
+  },
+  {
+   "name": "Rachel Prusak",
+   "committee": "Committee to Elect Rachel Prusak",
+   "party": "Democrat",
+   "filer": "18850",
+   "contributions": 894952.4,
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "name": "Deborah Kafoury",
+   "committee": "Elect Deborah Kafoury",
+   "party": "Nonpartisan",
+   "filer": "12047",
+   "contributions": 132801.2
+  },
+  {
+   "name": "Jeffrey M Gudman",
+   "committee": "Friends of Jeff Gudman",
+   "party": "Democrat",
+   "filer": "17431",
+   "contributions": 200.0
+  },
+  {
+   "name": "Colm Willis",
+   "committee": "Colm Willis for Oregon",
+   "party": "Republican",
+   "filer": "18837",
+   "contributions": 329593.5
+  },
+  {
+   "name": "Jessica V Pederson",
+   "committee": "Friends of Jessica Vega Pederson",
+   "party": "Nonpartisan",
+   "filer": "15330",
+   "contributions": 23130.53
+  },
+  {
+   "name": "Bill Post",
+   "committee": "Friends of Bill Post",
+   "party": "Republican",
+   "filer": "16583",
+   "contributions": 84529.79,
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "name": "Kenneth D Helm",
+   "committee": "Ken Helm for Oregon",
+   "party": "Democrat",
+   "filer": "16738",
+   "contributions": 78959.68
+  },
+  {
+   "name": "Jeff Golden",
+   "committee": "Committee to Elect Jeff Golden",
+   "party": "Democrat",
+   "filer": "18895",
+   "contributions": 215496.92,
+   "chamber": "senate",
+   "district": "3"
+  },
+  {
+   "name": "Kimberly D. Wallan",
+   "committee": "Friends of Kim Wallan",
+   "party": "Republican",
+   "filer": "18284",
+   "contributions": 127012.06,
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "name": "Pam J Marsh",
+   "committee": "Committee to Elect Pam Marsh",
+   "party": "Democrat",
+   "filer": "17668",
+   "contributions": 73344.59,
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "name": "Eric Zimmerman",
+   "committee": "Friends of Eric Zimmerman",
+   "party": "Nonpartisan",
+   "filer": "17629",
+   "contributions": 10566.09
+  },
+  {
+   "name": "Alan W DeBoer",
+   "committee": "Alan DeBoer for State Senate",
+   "party": "Republican",
+   "filer": "15924",
+   "contributions": 32388.55
+  },
+  {
+   "name": "Bob Terry",
+   "committee": "Bob Terry for Washington County Chair",
+   "party": "Nonpartisan",
+   "filer": "14072",
+   "contributions": 346591.68
+  },
+  {
+   "name": "Anna Williams",
+   "committee": "Friends of Anna Williams",
+   "party": "Democrat",
+   "filer": "19043",
+   "contributions": 665806.6,
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "name": "Melissa T Cribbins",
+   "committee": "Friends of Melissa Cribbins",
+   "party": "Nonpartisan",
+   "filer": "15616",
+   "contributions": 8575.0
+  },
+  {
+   "name": "Gene Whisnant",
+   "committee": "Committee to Elect Gene Whisnant",
+   "party": "Republican",
+   "filer": "4653",
+   "contributions": 5100.0
+  },
+  {
+   "name": "Jim Bernard",
+   "committee": "Friends of Jim Bernard",
+   "party": "Nonpartisan",
+   "filer": "5964",
+   "contributions": 1150.0
+  },
+  {
+   "name": "Dallas Heard",
+   "committee": "Heard Leadership PAC",
+   "party": "Republican",
+   "filer": "16233",
+   "contributions": 96435.12
+  },
+  {
+   "name": "Lou Ogden",
+   "committee": "Vote 4 Lou Ogden",
+   "party": "Nonpartisan",
+   "filer": "7606",
+   "contributions": 478188.13
+  },
+  {
+   "name": "Sal Esquivel",
+   "committee": "Committee to Elect Sal Esquivel",
+   "party": "Republican",
+   "filer": "4813",
+   "contributions": 350.0
+  },
+  {
+   "name": "Alissa Keny-Guyer",
+   "committee": "Friends of Alissa Keny-Guyer",
+   "party": "Democrat",
+   "filer": "15237",
+   "contributions": 110510.5,
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "name": "Philip N Barnhart",
+   "committee": "Friends of Phil Barnhart",
+   "party": "Democrat",
+   "filer": "3481",
+   "contributions": 11412.7
+  },
+  {
+   "name": "Mike Nearman",
+   "committee": "Nearman4Oregon",
+   "party": "Republican",
+   "filer": "16767",
+   "contributions": 94409.66,
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "name": "Herman Baertschiger",
+   "committee": "Friends of Herman Baertschiger",
+   "party": "Nonpartisan",
+   "filer": "15469",
+   "contributions": 93250.0
+  },
+  {
+   "name": "Clover DE Eudaly",
+   "committee": "Chloe for Portland",
+   "party": "Nonpartisan",
+   "filer": "17691",
+   "contributions": 245.0
+  },
+  {
+   "name": "H Thomas Andersen",
+   "committee": "Friends of Tom Andersen",
+   "party": "Democrat",
+   "filer": "16690",
+   "contributions": 4827.0
+  },
+  {
+   "name": "Dennis B Linthicum",
+   "committee": "Committee to Elect Dennis Linthicum",
+   "party": "Republican",
+   "filer": "17895",
+   "contributions": 66643.93
+  },
+  {
+   "name": "Jeff B Kruse",
+   "committee": "Committee to Elect Jeff Kruse",
+   "party": "Republican",
+   "filer": "2278",
+   "contributions": 9750.0
+  },
+  {
+   "name": "Marty L Wilde",
+   "committee": "Wilde for Oregon",
+   "party": "Nonpartisan",
+   "filer": "18953",
+   "contributions": 487381.85
+  },
+  {
+   "name": "Anthony (Tony) DeBone",
+   "committee": "Citizens for Tony DeBone",
+   "party": "Nonpartisan",
+   "filer": "14183",
+   "contributions": 98676.4
+  },
+  {
+   "name": "Paul D Drechsler",
+   "committee": "Friends of Paul Drechsler",
+   "party": "Republican",
+   "filer": "19695",
+   "contributions": 4997.3
+  },
+  {
+   "name": "Jim Weidner",
+   "committee": "Citizens for Jim Weidner",
+   "party": "Republican",
+   "filer": "12127",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Ann Lininger",
+   "committee": "Retain Judge Lininger Committee",
+   "party": "Nonpartisan",
+   "filer": "16609",
+   "contributions": 46679.0
+  },
+  {
+   "name": "Juan C Gonzalez",
+   "committee": "Gonzalez for Oregon",
+   "party": "Nonpartisan",
+   "filer": "18888",
+   "contributions": 107234.73
+  },
+  {
+   "name": "Eduardo Morales",
+   "committee": "Eddy's Community Power PAC",
+   "party": "Nonpartisan",
+   "filer": "19528",
+   "contributions": 62809.71
+  },
+  {
+   "name": "Eileen Kiely",
+   "committee": "Eileen Kiely for Oregon",
+   "party": "Democrat",
+   "filer": "19025",
+   "contributions": 52818.25
+  },
+  {
+   "name": "Carl Wilson",
+   "committee": "Citizens to Elect Carl Wilson",
+   "party": "Republican",
+   "filer": "16709",
+   "contributions": 127255.0,
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "name": "Michael J Reardon",
+   "committee": "Reardon for Oregon",
+   "party": "Democrat",
+   "filer": "15621",
+   "contributions": 72061.47,
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "name": "Duane Stark",
+   "committee": "Friends of Duane Stark",
+   "party": "Republican",
+   "filer": "16456",
+   "contributions": 103869.0,
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "name": "Andrea L Valderrama",
+   "committee": "Friends of Andrea Valderrama",
+   "party": "Democrat",
+   "filer": "18462",
+   "contributions": 134810.21
+  },
+  {
+   "name": "Vicki Berger",
+   "committee": "Friends of Vicki Berger",
+   "party": "Republican",
+   "filer": "4112",
+   "contributions": 527.0
+  },
+  {
+   "name": "Thomas Kress",
+   "committee": "Friends of Tom Kress",
+   "party": "Nonpartisan",
+   "filer": "19351",
+   "contributions": 162695.76
+  },
+  {
+   "name": "Chris T Boice",
+   "committee": "Friends of Chris Boice",
+   "party": "Nonpartisan",
+   "filer": "16986",
+   "contributions": 44683.0
+  },
+  {
+   "name": "Zachary T Hudson",
+   "committee": "Elect Zach Hudson",
+   "party": "Democrat",
+   "filer": "17995",
+   "contributions": 100.0
+  },
+  {
+   "name": "Sam Carpenter",
+   "committee": "Friends of Sam Carpenter",
+   "party": "Republican",
+   "filer": "18764",
+   "contributions": 441996.15
+  },
+  {
+   "name": "Matt Wingard",
+   "committee": "Friends of Matt Wingard",
+   "party": "Republican",
+   "filer": "17884",
+   "contributions": 2797.15
+  },
+  {
+   "name": "Margaret Doherty",
+   "committee": "Friends of Margaret Doherty",
+   "party": "Democrat",
+   "filer": "13907",
+   "contributions": 57098.6,
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "name": "Dan Saltzman",
+   "committee": "Friends of Dan Saltzman",
+   "party": "Nonpartisan",
+   "filer": "5718",
+   "contributions": 72688.6
+  },
+  {
+   "name": "Mark Gamba",
+   "committee": "Mark Gamba for Oregon",
+   "party": "Democrat",
+   "filer": "16015",
+   "contributions": 2663.0
+  },
+  {
+   "name": "Mitch Greenlick",
+   "committee": "Mitch Greenlick for State Legislature",
+   "party": "Democrat",
+   "filer": "3362",
+   "contributions": 54428.67,
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "name": "Sam Chase",
+   "committee": "Sam Chase for Portland",
+   "party": "Nonpartisan",
+   "filer": "15293",
+   "contributions": 34.41
+  },
+  {
+   "name": "Charlotte D Lehan",
+   "committee": "Friends of Charlotte Lehan",
+   "party": "Nonpartisan",
+   "filer": "12529",
+   "contributions": 11764.32
+  },
+  {
+   "name": "Patrick M Farr, Sr",
+   "committee": "Re-Elect Pat Farr for County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "14268",
+   "contributions": 608.98
+  },
+  {
+   "name": "Sid Leiken",
+   "committee": "Sid Leiken for Oregon",
+   "party": "Nonpartisan",
+   "filer": "12786",
+   "contributions": 105556.4
+  },
+  {
+   "name": "Tiffiny Mitchell",
+   "committee": "Friends of Tiffiny Mitchell",
+   "party": "Democrat",
+   "filer": "19220",
+   "contributions": 534598.01,
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "name": "Alexander Flores",
+   "committee": "Friends of Alexander Flores",
+   "party": "Nonpartisan",
+   "filer": "20932",
+   "contributions": 690459.81
+  },
+  {
+   "name": "Joseph (Jack) J Zika, III",
+   "committee": "Jack Zika for State Representative",
+   "party": "Republican",
+   "filer": "18905",
+   "contributions": 189561.21,
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "name": "Stuart Emmons",
+   "committee": "Stuart Emmons for Portland",
+   "party": "Nonpartisan",
+   "filer": "17615",
+   "contributions": 174430.0
+  },
+  {
+   "name": "Seth Crawford",
+   "committee": "Committee to Elect Seth Crawford",
+   "party": "Nonpartisan",
+   "filer": "12688",
+   "contributions": 1650.0
+  },
+  {
+   "name": "Deborah A. Boone",
+   "committee": "Boone for State Representative",
+   "party": "Democrat",
+   "filer": "4846",
+   "contributions": 16189.95
+  },
+  {
+   "name": "Andy J. Duyck",
+   "committee": "Friends of Andy Duyck",
+   "party": "Nonpartisan",
+   "filer": "8065",
+   "contributions": 24568.22
+  },
+  {
+   "name": "Craig Roberts",
+   "committee": "Roberts for Clackamas",
+   "party": "Nonpartisan",
+   "filer": "12514",
+   "contributions": 7267.52
+  },
+  {
+   "name": "Beach N Pace",
+   "committee": "Friends of Beach Pace",
+   "party": "Nonpartisan",
+   "filer": "18891",
+   "contributions": 16624.88
+  },
+  {
+   "name": "Charles Gallia",
+   "committee": "Charles Gallia for Oregon",
+   "party": "Democrat",
+   "filer": "17945",
+   "contributions": 271002.34
+  },
+  {
+   "name": "Lisa M Fragala",
+   "committee": "Friends of Lisa Fragala",
+   "party": "Democrat",
+   "filer": "19751",
+   "contributions": 200.0
+  },
+  {
+   "name": "Greg C Wooldridge",
+   "committee": "Wooldridge for Oregon",
+   "party": "Republican",
+   "filer": "19049",
+   "contributions": 313063.7
+  },
+  {
+   "name": "Ken B Moore",
+   "committee": "Ken Moore",
+   "party": "Democrat",
+   "filer": "16685",
+   "contributions": 10941.96,
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "name": "Jodi Hack",
+   "committee": "Jodi Hack For Oregon",
+   "party": "Republican",
+   "filer": "16538",
+   "contributions": 49072.07
+  },
+  {
+   "name": "Carla Piluso",
+   "committee": "Friends of Carla Piluso",
+   "party": "Democrat",
+   "filer": "16814",
+   "contributions": 59462.05,
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "name": "Julianna Walters",
+   "committee": "Friends of Jules Walters",
+   "party": "Democrat",
+   "filer": "19369",
+   "contributions": 2000.0
+  },
+  {
+   "name": "Ryan Deckert",
+   "committee": "Ryan Deckert for Washington County Chair",
+   "party": "Nonpartisan",
+   "filer": "2423",
+   "contributions": 245327.11
+  },
+  {
+   "name": "Joe Berney",
+   "committee": "Friends of Joe Berney",
+   "party": "Nonpartisan",
+   "filer": "18745",
+   "contributions": 135154.53
+  },
+  {
+   "name": "Kenneth Humberston",
+   "committee": "Ken Humberston for Clackamas County Commission",
+   "party": "Nonpartisan",
+   "filer": "16321",
+   "contributions": 400.0
+  },
+  {
+   "name": "Josh Hill",
+   "committee": "Josh Hill for Oregon",
+   "party": "Republican",
+   "filer": "18812",
+   "contributions": 395781.9,
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "name": "Andrea Salinas",
+   "committee": "Friends of Andrea Salinas",
+   "party": "Democrat",
+   "filer": "18825",
+   "contributions": 86377.25,
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "name": "Karin Power",
+   "committee": "Friends of Karin Power",
+   "party": "Democrat",
+   "filer": "17862",
+   "contributions": 83450.99,
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "name": "Lily Morgan",
+   "committee": "Friends of Lily Morgan",
+   "party": "Republican",
+   "filer": "20199",
+   "contributions": 3894.69,
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "name": "Mark F Herbert",
+   "committee": "Friends of Mark Herbert",
+   "party": "Republican",
+   "filer": "19202",
+   "contributions": 310237.96,
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "name": "Lindsay Berschauer",
+   "committee": "Friends of Lindsay Berschauer",
+   "party": "Nonpartisan",
+   "filer": "18526",
+   "contributions": 760.4
+  },
+  {
+   "name": "Rick Lewis",
+   "committee": "Committee to Elect Rick Lewis",
+   "party": "Republican",
+   "filer": "17017",
+   "contributions": 63591.79,
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "name": "Brian G Stout",
+   "committee": "Stout for State Rep",
+   "party": "Republican",
+   "filer": "19073",
+   "contributions": 23564.78,
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "name": "Sheri Schouten",
+   "committee": "Friends of Sheri Schouten",
+   "party": "Democrat",
+   "filer": "17450",
+   "contributions": 70700.56
+  },
+  {
+   "name": "Susheela Jayapal",
+   "committee": "Friends of Susheela",
+   "party": "Nonpartisan",
+   "filer": "18762",
+   "contributions": 149069.0
+  },
+  {
+   "name": "Brian R Wilson",
+   "committee": "Elect Brian Wilson",
+   "party": "Nonpartisan",
+   "filer": "16467",
+   "contributions": 959.75
+  },
+  {
+   "name": "Betsy L Close",
+   "committee": "Close Friends PAC",
+   "party": "Republican",
+   "filer": "15477",
+   "contributions": 20.0
+  },
+  {
+   "name": "Gary L Williams",
+   "committee": "Keep Commissioner Gary Williams",
+   "party": "Nonpartisan",
+   "filer": "18663",
+   "contributions": 253679.39
+  },
+  {
+   "name": "Justin Hwang",
+   "committee": "Friends of Justin Hwang",
+   "party": "Republican",
+   "filer": "18858",
+   "contributions": 108840.51
+  },
+  {
+   "name": "Steve Callaway",
+   "committee": "Friends of Steve Callaway",
+   "party": "Nonpartisan",
+   "filer": "14651",
+   "contributions": 1635.0
+  },
+  {
+   "name": "Patti Adair",
+   "committee": "Friends of Patti Adair",
+   "party": "Nonpartisan",
+   "filer": "19135",
+   "contributions": 71987.97
+  },
+  {
+   "name": "Joseph M Buck",
+   "committee": "Friends of Joe Buck",
+   "party": "Nonpartisan",
+   "filer": "17057",
+   "contributions": 149471.83
+  },
+  {
+   "name": "Lucy Vinis",
+   "committee": "Lucy Vinis for Mayor",
+   "party": "Nonpartisan",
+   "filer": "17466",
+   "contributions": 2500.0
+  },
+  {
+   "name": "Tonia L Moro",
+   "committee": "Committee to Elect Tonia Moro",
+   "party": "Democrat",
+   "filer": "16863",
+   "contributions": 395.49
+  },
+  {
+   "name": "John W. Sweet",
+   "committee": "Committee to Re-elect John Sweet",
+   "party": "Nonpartisan",
+   "filer": "15684",
+   "contributions": 109850.0
+  },
+  {
+   "name": "Mike D Clark",
+   "committee": "Friends of Mike Clark",
+   "party": "Nonpartisan",
+   "filer": "6032",
+   "contributions": 8133.94
+  },
+  {
+   "name": "Gary L Leif",
+   "committee": "Friends of Gary Leif",
+   "party": "Republican",
+   "filer": "16988",
+   "contributions": 56214.07,
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "name": "Chrissy Reitz",
+   "committee": "Chrissy for Oregon",
+   "party": "Democrat",
+   "filer": "18950",
+   "contributions": 735553.45,
+   "chamber": "senate",
+   "district": "26"
+  },
+  {
+   "name": "Todd Huegli",
+   "committee": "Todd Huegli for Judge Committee",
+   "party": "Nonpartisan",
+   "filer": "18754",
+   "contributions": 168448.45
+  },
+  {
+   "name": "Sami Al-AbdRabbuh",
+   "committee": "Sami For Oregon",
+   "party": "Nonpartisan",
+   "filer": "17824",
+   "contributions": 24308.29
+  },
+  {
+   "name": "Shirley R Craddick",
+   "committee": "Shirley Craddick for METRO Councilor",
+   "party": "Nonpartisan",
+   "filer": "13893",
+   "contributions": 79962.0
+  },
+  {
+   "name": "Philip G Henderson",
+   "committee": "Friends of Phil Henderson for Deschutes County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "15432",
+   "contributions": 2435.0
+  },
+  {
+   "name": "Joseph K Bozievich",
+   "committee": "Jay Bozievich For Commissioner",
+   "party": "Nonpartisan",
+   "filer": "18414",
+   "contributions": 132643.68
+  },
+  {
+   "name": "Sally Russell",
+   "committee": "Sally for Bend Mayor",
+   "party": "Nonpartisan",
+   "filer": "16014",
+   "contributions": 102708.06
+  },
+  {
+   "name": "Lacey N Beaty",
+   "committee": "Friends of Lacey Beaty",
+   "party": "Nonpartisan",
+   "filer": "16588",
+   "contributions": 4388.51
+  },
+  {
+   "name": "Paige E Clarkson",
+   "committee": "Friends of Paige Clarkson",
+   "party": "Nonpartisan",
+   "filer": "18721",
+   "contributions": 20690.77
+  },
+  {
+   "name": "Sean VanGordon",
+   "committee": "Committee to Elect Sean VanGordon",
+   "party": "Nonpartisan",
+   "filer": "12940",
+   "contributions": 9235.0
+  },
+  {
+   "name": "Richard R Dyer",
+   "committee": "The Committee To Re-Elect Rick Dyer",
+   "party": "Republican",
+   "filer": "19051",
+   "contributions": 67614.6
+  },
+  {
+   "name": "Diego Hernandez",
+   "committee": "Friends of Diego Hernandez",
+   "party": "Democrat",
+   "filer": "16199",
+   "contributions": 68284.44,
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "name": "Kevin Matthews",
+   "committee": "Friends of Kevin Matthews",
+   "party": "Nonpartisan",
+   "filer": "16363",
+   "contributions": 43284.88
+  },
+  {
+   "name": "Amy Kohnstamm",
+   "committee": "Friends of Amy Kohnstamm",
+   "party": "Nonpartisan",
+   "filer": "17285",
+   "contributions": 867.23
+  },
+  {
+   "name": "Gregory P. Malinowski",
+   "committee": "Friends for Malinowski",
+   "party": "Nonpartisan",
+   "filer": "14265",
+   "contributions": 90191.85
+  },
+  {
+   "name": "Maryl Graybeal Featherstone",
+   "committee": "Friends of Maryl Graybeal Featherstone",
+   "party": "Republican",
+   "filer": "15576",
+   "contributions": 5661.0
+  },
+  {
+   "name": "Daniel M Jaffer",
+   "committee": "Committee to Elect Danny Jaffer",
+   "party": "Nonpartisan",
+   "filer": "14342",
+   "contributions": 91738.31
+  },
+  {
+   "name": "Jacqueline M Leung",
+   "committee": "Jackie for Oregon",
+   "party": "Democrat",
+   "filer": "19242",
+   "contributions": 4983.1
+  },
+  {
+   "name": "Stephen L Bates",
+   "committee": "Friends of Steve Bates",
+   "party": "Republican",
+   "filer": "21742",
+   "contributions": 37336.85
+  },
+  {
+   "name": "Wally Hicks",
+   "committee": "Committee to Elect Wally Hicks",
+   "party": "Nonpartisan",
+   "filer": "14198",
+   "contributions": 8494.15
+  },
+  {
+   "name": "Pete Sorenson",
+   "committee": "Pete Sorenson Committee",
+   "party": "Nonpartisan",
+   "filer": "5585",
+   "contributions": 100.0
+  },
+  {
+   "name": "William S. Moseley",
+   "committee": "Committee for Bend Leadership",
+   "party": "Nonpartisan",
+   "filer": "18056",
+   "contributions": 64778.43
+  },
+  {
+   "name": "Vineeta Lower",
+   "committee": "Friends of Vineeta Lower",
+   "party": "Republican",
+   "filer": "20276",
+   "contributions": 208396.96,
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "name": "Casey M Kulla",
+   "committee": "Kulla For Oregon",
+   "party": "Nonpartisan",
+   "filer": "19128",
+   "contributions": 29627.59
+  },
+  {
+   "name": "Max Wall",
+   "committee": "Max Wall for Washington County",
+   "party": "Nonpartisan",
+   "filer": "19184",
+   "contributions": 841031.1
+  },
+  {
+   "name": "Jeffrey D Auxier",
+   "committee": "Auxier for Judge",
+   "party": "Nonpartisan",
+   "filer": "18702",
+   "contributions": 12808.67
+  },
+  {
+   "name": "Benjamin Souede",
+   "committee": "Friends of Ben Souede",
+   "party": "Nonpartisan",
+   "filer": "18807",
+   "contributions": 102386.0
+  },
+  {
+   "name": "Patricia W Perlow",
+   "committee": "Keep District Attorney Patty Perlow",
+   "party": "Nonpartisan",
+   "filer": "17467",
+   "contributions": 2150.0
+  },
+  {
+   "name": "Kathleen Eymann",
+   "committee": "Katy for Coos",
+   "party": "Nonpartisan",
+   "filer": "19154",
+   "contributions": 80725.69
+  },
+  {
+   "name": "Teri L Grier",
+   "committee": "Committee to Elect Teri Grier",
+   "party": "Republican",
+   "filer": "18032",
+   "contributions": 301676.35,
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "name": "Tim Josi",
+   "committee": "Tim Josi for State Representative",
+   "party": "Democrat",
+   "filer": "18943",
+   "contributions": 117479.56
+  },
+  {
+   "name": "Micheal D Ellison",
+   "committee": "Mike Ellison for Oregon",
+   "party": "Democrat",
+   "filer": "18857",
+   "contributions": 142919.72,
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "name": "Gena Goodman-Campbell",
+   "committee": "Friends of Gena Goodman-Campbell",
+   "party": "Nonpartisan",
+   "filer": "17845",
+   "contributions": 21922.4
+  },
+  {
+   "name": "Andrew Saultz",
+   "committee": "Friends of Andy Saultz",
+   "party": "Democrat",
+   "filer": "19738",
+   "contributions": 3550.0
+  },
+  {
+   "name": "Felicita G Monteblanco",
+   "committee": "Friends of Felicita",
+   "party": "Nonpartisan",
+   "filer": "18441",
+   "contributions": 11435.44
+  },
+  {
+   "name": "Margaret Magruder",
+   "committee": "Magruder for County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "17502",
+   "contributions": 2600.0
+  },
+  {
+   "name": "Alan G. Unger",
+   "committee": "Unger for Deschutes",
+   "party": "Nonpartisan",
+   "filer": "12683",
+   "contributions": 6498.34
+  },
+  {
+   "name": "Moses Ross",
+   "committee": "Friends of Moses Ross",
+   "party": "Nonpartisan",
+   "filer": "18420",
+   "contributions": 15700.95
+  },
+  {
+   "name": "John Hummel",
+   "committee": "Vote Hummel",
+   "party": "Nonpartisan",
+   "filer": "16408",
+   "contributions": 41974.71
+  },
+  {
+   "name": "Roger Nyquist",
+   "committee": "Friends of Roger Nyquist",
+   "party": "Republican",
+   "filer": "10727",
+   "contributions": 6000.0
+  },
+  {
+   "name": "Jerry Willey",
+   "committee": "Friends of Jerry Willey",
+   "party": "Nonpartisan",
+   "filer": "15426",
+   "contributions": 50434.88
+  },
+  {
+   "name": "Julia B. DeGraw",
+   "committee": "Elect Julia DeGraw",
+   "party": "Nonpartisan",
+   "filer": "18737",
+   "contributions": 37801.9
+  },
+  {
+   "name": "Christopher W. Hoy",
+   "committee": "Chris Hoy for Salem",
+   "party": "Nonpartisan",
+   "filer": "18401",
+   "contributions": 15780.63
+  },
+  {
+   "name": "Patrick M Malone",
+   "committee": "Friends of Pat Malone",
+   "party": "Democrat",
+   "filer": "16589",
+   "contributions": 30474.5
+  },
+  {
+   "name": "Jason B Snider",
+   "committee": "Citizens to Elect Jason Snider",
+   "party": "Nonpartisan",
+   "filer": "18142",
+   "contributions": 51167.4
+  },
+  {
+   "name": "Pamela White",
+   "committee": "Friends of Pamela White",
+   "party": "Nonpartisan",
+   "filer": "18698",
+   "contributions": 99876.87
+  },
+  {
+   "name": "Mark Reynolds",
+   "committee": "Friends of Mark Reynolds",
+   "party": "Democrat",
+   "filer": "17644",
+   "contributions": 3644.63
+  },
+  {
+   "name": "Colleen L Roberts",
+   "committee": "ReElect Colleen Roberts",
+   "party": "Republican",
+   "filer": "21706",
+   "contributions": 35280.59
+  },
+  {
+   "name": "Henry Heimuller",
+   "committee": "Henry Heimuller for Columbia County Commissioner Committee",
+   "party": "Nonpartisan",
+   "filer": "13966",
+   "contributions": 38266.0
+  },
+  {
+   "name": "Craig A. Pope",
+   "committee": "Friends of Craig Pope",
+   "party": "Nonpartisan",
+   "filer": "14242",
+   "contributions": 11180.0
+  },
+  {
+   "name": "Juanita P Lint",
+   "committee": "Juanita for Oregon",
+   "party": "Republican",
+   "filer": "17856",
+   "contributions": 8136.94
+  },
+  {
+   "name": "Matthew K. Keating",
+   "committee": "Oregon for Matt Keating",
+   "party": "Nonpartisan",
+   "filer": "16192",
+   "contributions": 4857.81
+  },
+  {
+   "name": "Alex Hamalian",
+   "committee": "Committee to Elect Alex Hamalian",
+   "party": "Nonpartisan",
+   "filer": "19273",
+   "contributions": 26794.91
+  },
+  {
+   "name": "Tootie Smith",
+   "committee": "Tootie 4 CCC",
+   "party": "Republican",
+   "filer": "17453",
+   "contributions": 391.91
+  },
+  {
+   "name": "Chuck R Bennett",
+   "committee": "Chuck Bennett for Mayor",
+   "party": "Nonpartisan",
+   "filer": "13936",
+   "contributions": 3050.0
+  },
+  {
+   "name": "Christine Lewis",
+   "committee": "Christine Lewis for Metro",
+   "party": "Nonpartisan",
+   "filer": "18968",
+   "contributions": 51239.65
+  },
+  {
+   "name": "Timothy McMenamin",
+   "committee": "McMenamin For Oregon",
+   "party": "Republican",
+   "filer": "15397",
+   "contributions": 19975.38
+  },
+  {
+   "name": "Ana del Rocio",
+   "committee": "Friends of Ana del Rocio",
+   "party": "Nonpartisan",
+   "filer": "18409",
+   "contributions": 31450.37
+  },
+  {
+   "name": "Julia Brim-Edwards",
+   "committee": "Julia for Portland School Board",
+   "party": "Nonpartisan",
+   "filer": "18522",
+   "contributions": 94830.47
+  },
+  {
+   "name": "Fay Stetz-Waters",
+   "committee": "Friends of Fay",
+   "party": "Nonpartisan",
+   "filer": "18862",
+   "contributions": 92442.84
+  },
+  {
+   "name": "Alek Skarlatos",
+   "committee": "Friends of Alek Skarlatos",
+   "party": "Nonpartisan",
+   "filer": "19370",
+   "contributions": 90493.12
+  },
+  {
+   "name": "Jamila Singleton Munson",
+   "committee": "Jamila for Portland Schools",
+   "party": "Nonpartisan",
+   "filer": "18439",
+   "contributions": 132253.62
+  },
+  {
+   "name": "Tammy Baney",
+   "committee": "Friends of Tammy Baney",
+   "party": "Nonpartisan",
+   "filer": "5783",
+   "contributions": 68489.87
+  },
+  {
+   "name": "Bruce Cuff",
+   "committee": "Friends of Bruce Cuff",
+   "party": "Republican",
+   "filer": "12758",
+   "contributions": 17592.78
+  },
+  {
+   "name": "Joseph R Davis",
+   "committee": "Committee to Elect Joe Davis",
+   "party": "Nonpartisan",
+   "filer": "18934",
+   "contributions": 67993.75
+  },
+  {
+   "name": "Darcy A Long",
+   "committee": "Vote for Darcy Long",
+   "party": "Nonpartisan",
+   "filer": "14594",
+   "contributions": 5175.08
+  },
+  {
+   "name": "Shelaswau B Crier",
+   "committee": "Friends of Shelaswau Crier",
+   "party": "Democrat",
+   "filer": "19183",
+   "contributions": 96907.41
+  },
+  {
+   "name": "Athena Goldberg",
+   "committee": "Athena for Southern Oregon",
+   "party": "Democrat",
+   "filer": "18916",
+   "contributions": 109174.12
+  },
+  {
+   "name": "Joseph Potwora",
+   "committee": "Joe Potwora for District 11",
+   "party": "Republican",
+   "filer": "17908",
+   "contributions": 644.0
+  },
+  {
+   "name": "Sarah McCormick",
+   "committee": "Sarah for Bend",
+   "party": "Nonpartisan",
+   "filer": "19541",
+   "contributions": 89938.12
+  },
+  {
+   "name": "Felicia Williams",
+   "committee": "Friends of Felicia Williams",
+   "party": "Nonpartisan",
+   "filer": "18819",
+   "contributions": 94040.0
+  },
+  {
+   "name": "Scott D Bailey",
+   "committee": "Bailey for School Board",
+   "party": "Nonpartisan",
+   "filer": "13644",
+   "contributions": 35439.0
+  },
+  {
+   "name": "Mary E Starrett",
+   "committee": "Friends of Mary Starrett",
+   "party": "Nonpartisan",
+   "filer": "14035",
+   "contributions": 16911.55
+  },
+  {
+   "name": "Helen L Ying",
+   "committee": "Friends of Helen Ying",
+   "party": "Nonpartisan",
+   "filer": "18527",
+   "contributions": 19837.57
+  },
+  {
+   "name": "Andrew Davis",
+   "committee": "Andrew Davis for Bend City Council",
+   "party": "Nonpartisan",
+   "filer": "19488",
+   "contributions": 86229.22
+  },
+  {
+   "name": "Nathan K. Boddie",
+   "committee": "Boddie For Bend",
+   "party": "Democrat",
+   "filer": "17097",
+   "contributions": 65511.55,
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "name": "Satyanarayana Chandragiri",
+   "committee": "Friends of Satya",
+   "party": "Nonpartisan",
+   "filer": "22624",
+   "contributions": 17724.0
+  },
+  {
+   "name": "Christine Lundberg",
+   "committee": "Friends of Christine Lundberg",
+   "party": "Nonpartisan",
+   "filer": "15420",
+   "contributions": 1197.85
+  },
+  {
+   "name": "John Goodhouse",
+   "committee": "Friends of John Goodhouse",
+   "party": "Nonpartisan",
+   "filer": "14765",
+   "contributions": 9056.1
+  },
+  {
+   "name": "Daniel Crowe",
+   "committee": "Friends of Daniel Crowe",
+   "party": "Republican",
+   "filer": "17943",
+   "contributions": 5055.21
+  },
+  {
+   "name": "Mike Reese",
+   "committee": "Friends of Mike Reese",
+   "party": "Nonpartisan",
+   "filer": "18130",
+   "contributions": 27584.0
+  },
+  {
+   "name": "ALEXANDER D JOHNSON II",
+   "committee": "Alex for Albany",
+   "party": "Nonpartisan",
+   "filer": "24682",
+   "contributions": 2808.83
+  },
+  {
+   "name": "Terri E Preeg Riggsby",
+   "committee": "Friends of Terri Preeg Riggsby",
+   "party": "Nonpartisan",
+   "filer": "18012",
+   "contributions": 1772.78
+  },
+  {
+   "name": "Julian W Bell",
+   "committee": "Friends of Julian Bell",
+   "party": "Democrat",
+   "filer": "18901",
+   "contributions": 14381.89
+  },
+  {
+   "name": "Judith Newman",
+   "committee": "Elect Judy Newman",
+   "party": "Nonpartisan",
+   "filer": "18503",
+   "contributions": 35006.89
+  },
+  {
+   "name": "John Wendland",
+   "committee": "Wendland For Lake Oswego City Council",
+   "party": "Nonpartisan",
+   "filer": "19613",
+   "contributions": 42207.82
+  },
+  {
+   "name": "Michelle R Atkinson",
+   "committee": "Michelle Atkinson for Medford School Board",
+   "party": "Nonpartisan",
+   "filer": "18220",
+   "contributions": 97054.09
+  },
+  {
+   "name": "Nathan R, Hovekamp",
+   "committee": "Friends of Nathan Hovekamp",
+   "party": "Nonpartisan",
+   "filer": "12527",
+   "contributions": 100.0
+  },
+  {
+   "name": "Donald G Boyd",
+   "committee": "Citizens to Elect Donnie Boyd",
+   "party": "Nonpartisan",
+   "filer": "17671",
+   "contributions": 1450.0
+  },
+  {
+   "name": "Tim J Svenson",
+   "committee": "Elect Tim Svenson Sheriff",
+   "party": "Nonpartisan",
+   "filer": "16453",
+   "contributions": 2750.0
+  },
+  {
+   "name": "Theresa Kohlhoff",
+   "committee": "Friends of Theresa Kohlhoff",
+   "party": "Nonpartisan",
+   "filer": "18060",
+   "contributions": 100.0
+  },
+  {
+   "name": "Marc San Soucie",
+   "committee": "San Soucie For Beaverton",
+   "party": "Nonpartisan",
+   "filer": "13289",
+   "contributions": 18220.0
+  },
+  {
+   "name": "Micki A Varney",
+   "committee": "Friends of Micki Varney",
+   "party": "Nonpartisan",
+   "filer": "16291",
+   "contributions": 17640.94
+  },
+  {
+   "name": "Mel Rader",
+   "committee": "Mel for Multnomah",
+   "party": "Nonpartisan",
+   "filer": "17695",
+   "contributions": 238.17
+  },
+  {
+   "name": "Leslie Lewis",
+   "committee": "Citizens for Leslie Lewis",
+   "party": "Nonpartisan",
+   "filer": "5726",
+   "contributions": 200.0
+  },
+  {
+   "name": "Aaron Felton",
+   "committee": "Felton for District Attorney",
+   "party": "Nonpartisan",
+   "filer": "15529",
+   "contributions": 375.0
+  },
+  {
+   "name": "Ben Schimmoller",
+   "committee": "Friends of Ben Schimmoller",
+   "party": "Nonpartisan",
+   "filer": "22217",
+   "contributions": 33067.59
+  },
+  {
+   "name": "Virginia La Forte",
+   "committee": "Virginia La Forte for School Board",
+   "party": "Nonpartisan",
+   "filer": "24193",
+   "contributions": 14336.58
+  },
+  {
+   "name": "Serin Bussell",
+   "committee": "Friends of Serin Bussell",
+   "party": "Democrat",
+   "filer": "19735",
+   "contributions": 5047.33
+  },
+  {
+   "name": "William Burgess",
+   "committee": "Bill Burgess for County Clerk",
+   "party": "Nonpartisan",
+   "filer": "10527",
+   "contributions": 19413.0
+  },
+  {
+   "name": "Kimberly Culbertson",
+   "committee": "Friends of Kimberly Culbertson",
+   "party": "Nonpartisan",
+   "filer": "18678",
+   "contributions": 48231.09
+  },
+  {
+   "name": "James C. Egan",
+   "committee": "Committee to Elect Judge James C. Egan",
+   "party": "Nonpartisan",
+   "filer": "18980",
+   "contributions": 3400.0
+  },
+  {
+   "name": "Nora Kent",
+   "committee": "Friends of Nora Kent",
+   "party": "Nonpartisan",
+   "filer": "19046",
+   "contributions": 60365.43
+  },
+  {
+   "name": "Brian Pixley",
+   "committee": "Pixley for Sheriff",
+   "party": "Nonpartisan",
+   "filer": "19374",
+   "contributions": 18425.83
+  },
+  {
+   "name": "Steve Spinnett",
+   "committee": "Take Back Damascus",
+   "party": "Nonpartisan",
+   "filer": "14608",
+   "contributions": 8.01
+  },
+  {
+   "name": "Ulanda Watkins",
+   "committee": "Committee to Elect Judge Watkins",
+   "party": "Nonpartisan",
+   "filer": "19153",
+   "contributions": 62171.38
+  },
+  {
+   "name": "Meagan Flynn",
+   "committee": "Committee to Elect Justice Flynn",
+   "party": "Nonpartisan",
+   "filer": "17533",
+   "contributions": 31526.0
+  },
+  {
+   "name": "Amanda Schroeder",
+   "committee": "Friends of Amanda Schroeder",
+   "party": "Nonpartisan",
+   "filer": "17456",
+   "contributions": 128.48
+  },
+  {
+   "name": "Stanley G Primozich",
+   "committee": "Stan Primozich for Yamhill County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "16411",
+   "contributions": 35713.79
+  },
+  {
+   "name": "Kathy Proctor",
+   "committee": "Kathy Proctor for Judge",
+   "party": "Nonpartisan",
+   "filer": "19014",
+   "contributions": 55694.89
+  },
+  {
+   "name": "Lianne Thompson",
+   "committee": "Friends of Lianne",
+   "party": "Nonpartisan",
+   "filer": "16682",
+   "contributions": 20350.0
+  },
+  {
+   "name": "Emily Semple",
+   "committee": "Emily Semple for City Council",
+   "party": "Nonpartisan",
+   "filer": "17780",
+   "contributions": 300.0
+  },
+  {
+   "name": "Shannon M Souza",
+   "committee": "Friends of Shannon Souza",
+   "party": "Democrat",
+   "filer": "19238",
+   "contributions": 56308.39
+  },
+  {
+   "name": "Rita Moore",
+   "committee": "Friends of Rita Moore",
+   "party": "Nonpartisan",
+   "filer": "18325",
+   "contributions": 52477.67
+  },
+  {
+   "name": "Chris Wig",
+   "committee": "Friends of Chris Wig",
+   "party": "Nonpartisan",
+   "filer": "17458",
+   "contributions": 1174.0
+  },
+  {
+   "name": "Anthony A Behrens",
+   "committee": "Friends of Anthony Behrens for Circuit Court Judge",
+   "party": "Nonpartisan",
+   "filer": "17609",
+   "contributions": 51152.85
+  },
+  {
+   "name": "David W Stauffer",
+   "committee": "Elect Dave Stauffer Committee",
+   "party": "Democrat",
+   "filer": "17896",
+   "contributions": 18199.83
+  },
+  {
+   "name": "Scot W. Langton",
+   "committee": "Committee to Elect Scot Langton Deschutes County Assessor",
+   "party": "Nonpartisan",
+   "filer": "5788",
+   "contributions": 19250.0
+  },
+  {
+   "name": "James J. Lewis",
+   "committee": "Friends of Jim Lewis",
+   "party": "Nonpartisan",
+   "filer": "16674",
+   "contributions": 35534.09
+  },
+  {
+   "name": "Rick Wesenberg",
+   "committee": "Rick Wesenberg for Douglas County District Attorney",
+   "party": "Nonpartisan",
+   "filer": "12654",
+   "contributions": 3000.0
+  },
+  {
+   "name": "Annabelle Jaramillo",
+   "committee": "Jaramillo for Commissioner Committee",
+   "party": "Democrat",
+   "filer": "9686",
+   "contributions": 1600.0
+  },
+  {
+   "name": "Amy N Lowes",
+   "committee": "AmyForDeschutes",
+   "party": "Nonpartisan",
+   "filer": "19257",
+   "contributions": 55725.07
+  },
+  {
+   "name": "Lanita C Witt",
+   "committee": "Committee to Elect Lanita Witt",
+   "party": "Democrat",
+   "filer": "19090",
+   "contributions": 56506.56
+  },
+  {
+   "name": "Jennifer K Yeh",
+   "committee": "Friends of Jennifer Yeh",
+   "party": "Nonpartisan",
+   "filer": "18844",
+   "contributions": 6833.5
+  },
+  {
+   "name": "Kelley M Minty",
+   "committee": "Elect Kelley Minty",
+   "party": "Nonpartisan",
+   "filer": "15409",
+   "contributions": 6635.0
+  },
+  {
+   "name": "Martha S Heyen",
+   "committee": "Friends of Marty Heyen",
+   "party": "Nonpartisan",
+   "filer": "17310",
+   "contributions": 72272.49
+  },
+  {
+   "name": "Shane T Bemis",
+   "committee": "Shane Bemis Committee",
+   "party": "Nonpartisan",
+   "filer": "17016",
+   "contributions": 48151.71
+  },
+  {
+   "name": "Robert W Patridge",
+   "committee": "Committee to Elect Rob Patridge",
+   "party": "Nonpartisan",
+   "filer": "16671",
+   "contributions": 60.0
+  },
+  {
+   "name": "David J Golobay",
+   "committee": "Friends of David Golobay",
+   "party": "Nonpartisan",
+   "filer": "23951",
+   "contributions": 24090.0
+  },
+  {
+   "name": "Christy Inskip",
+   "committee": "Friends of Christy Inskip",
+   "party": "Democrat",
+   "filer": "19110",
+   "contributions": 48637.81,
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "name": "Adam P Schwend",
+   "committee": "Friends of Adam Schwend",
+   "party": "Nonpartisan",
+   "filer": "19032",
+   "contributions": 72374.09
+  },
+  {
+   "name": "Xanthippe Augerot",
+   "committee": "Xan Augerot for Commissioner",
+   "party": "Democrat",
+   "filer": "17700",
+   "contributions": 1425.0
+  },
+  {
+   "name": "Kimberly Koops",
+   "committee": "Friends of Kimberly Koops",
+   "party": "Democrat",
+   "filer": "18936",
+   "contributions": 45978.64
+  },
+  {
+   "name": "Kathleen M Harder, MD",
+   "committee": "Friends of Kathleen Harder",
+   "party": "Nonpartisan",
+   "filer": "18341",
+   "contributions": 23325.34
+  },
+  {
+   "name": "William C. Roats",
+   "committee": "Roats for Bend",
+   "party": "Nonpartisan",
+   "filer": "17160",
+   "contributions": 10814.73
+  },
+  {
+   "name": "Paige Kreisman",
+   "committee": "Committee to Elect Paige Kreisman",
+   "party": "Democrat",
+   "filer": "19452",
+   "contributions": 1125.08
+  },
+  {
+   "name": "Ron Smith",
+   "committee": "Citizens to Elect Ron Smith For Commissioner",
+   "party": "Nonpartisan",
+   "filer": "17566",
+   "contributions": 34938.51
+  },
+  {
+   "name": "Tim Laue",
+   "committee": "Tim Laue for Commissioner",
+   "party": "Nonpartisan",
+   "filer": "18967",
+   "contributions": 86318.8
+  },
+  {
+   "name": "Steve Loosley",
+   "committee": "Friends of Steve Loosley",
+   "party": "Republican",
+   "filer": "21615",
+   "contributions": 8693.48
+  },
+  {
+   "name": "Carrie M Douglass",
+   "committee": "Carrie Douglass for Bend-La Pine School Board",
+   "party": "Nonpartisan",
+   "filer": "18498",
+   "contributions": 24336.17
+  },
+  {
+   "name": "Mary Faith Bell",
+   "committee": "Re-elect Mary Faith Bell for Tillamook County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19148",
+   "contributions": 22424.74
+  },
+  {
+   "name": "Alxander Tardif",
+   "committee": "Committee to Elect Alex Tardif",
+   "party": "Nonpartisan",
+   "filer": "22795",
+   "contributions": 2200.0
+  },
+  {
+   "name": "Mark D Davidson",
+   "committee": "Davidson for Union County Commission",
+   "party": "Nonpartisan",
+   "filer": "12773",
+   "contributions": 4659.07
+  },
+  {
+   "name": "Barb Campbell",
+   "committee": "Barb for Bend",
+   "party": "Nonpartisan",
+   "filer": "16034",
+   "contributions": 14917.8
+  },
+  {
+   "name": "Joyce H Judy",
+   "committee": "Joyce Judy Senate Campaign",
+   "party": "Democrat",
+   "filer": "19180",
+   "contributions": 58757.43
+  },
+  {
+   "name": "Lisl Miller",
+   "committee": "Friends of Lisl Miller for Judge",
+   "party": "Nonpartisan",
+   "filer": "19099",
+   "contributions": 18688.0
+  },
+  {
+   "name": "Kevin H Stine",
+   "committee": "Committee to Elect Kevin Stine",
+   "party": "Democrat",
+   "filer": "18770",
+   "contributions": 8332.12
+  },
+  {
+   "name": "Fred Stewart",
+   "committee": "Fred Stewart for Portland City Council",
+   "party": "Nonpartisan",
+   "filer": "17451",
+   "contributions": 200.0
+  },
+  {
+   "name": "Tamie Tlustos-Arnold",
+   "committee": "Tamie For East County",
+   "party": "Republican",
+   "filer": "16742",
+   "contributions": 25.0
+  },
+  {
+   "name": "Daniel E. DeYoung",
+   "committee": "Elect Dan DeYoung Commissioner",
+   "party": "Nonpartisan",
+   "filer": "14130",
+   "contributions": 500.0
+  },
+  {
+   "name": "Douglas Hunt",
+   "committee": "Re-elect Doug Hunt Lincoln County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "16481",
+   "contributions": 29337.26
+  },
+  {
+   "name": "Jennifer Chapman",
+   "committee": "Friends of Jennifer Chapman",
+   "party": "Nonpartisan",
+   "filer": "18908",
+   "contributions": 37410.53
+  },
+  {
+   "name": "Paul B Cauthorn",
+   "committee": "Oregon First",
+   "party": "Republican",
+   "filer": "17983",
+   "contributions": 115.0
+  },
+  {
+   "name": "Greg Warnock",
+   "committee": "Warnock 4 Oregon",
+   "party": "Republican",
+   "filer": "19203",
+   "contributions": 62028.47,
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "name": "Eric J Kozowski",
+   "committee": "Eric Kozowski for Deschutes County Sheriff",
+   "party": "Nonpartisan",
+   "filer": "17875",
+   "contributions": 18348.38
+  },
+  {
+   "name": "Nathaniel J Sickler",
+   "committee": "Committee to Elect Nathan Sickler for Sheriff",
+   "party": "Nonpartisan",
+   "filer": "18719",
+   "contributions": 41634.21
+  },
+  {
+   "name": "Jonathan L Knapp",
+   "committee": "Friends of Jon Knapp",
+   "party": "Nonpartisan",
+   "filer": "17481",
+   "contributions": 12182.26
+  },
+  {
+   "name": "Sarah R Grider",
+   "committee": "Friends of Sarah Grider",
+   "party": "Democrat",
+   "filer": "17059",
+   "contributions": 38081.17,
+   "chamber": "senate",
+   "district": "13"
+  },
+  {
+   "name": "John L Cook",
+   "committee": "Citizens to Elect John Cook",
+   "party": "Nonpartisan",
+   "filer": "15846",
+   "contributions": 100.0
+  },
+  {
+   "name": "Mark W Watson",
+   "committee": "Friends of Mark Watson",
+   "party": "Democrat",
+   "filer": "18455",
+   "contributions": 8373.82
+  },
+  {
+   "name": "Chris E Kaber",
+   "committee": "Chris Kaber for Sheriff Committee",
+   "party": "Nonpartisan",
+   "filer": "17558",
+   "contributions": 850.0
+  },
+  {
+   "name": "Claire M Syrett",
+   "committee": "Claire Syrett for Eugene City Council",
+   "party": "Nonpartisan",
+   "filer": "15938",
+   "contributions": 1000.0
+  },
+  {
+   "name": "David J Orr",
+   "committee": "Justice Without Politics",
+   "party": "Nonpartisan",
+   "filer": "15841",
+   "contributions": 12205.0
+  },
+  {
+   "name": "PATRICK J FLAHERTY",
+   "committee": "Patrick For DA",
+   "party": "Nonpartisan",
+   "filer": "14253",
+   "contributions": 1740.06
+  },
+  {
+   "name": "Zach F Mulholland",
+   "committee": "Friends of Zach Mulholland",
+   "party": "Nonpartisan",
+   "filer": "19147",
+   "contributions": 8198.97
+  },
+  {
+   "name": "Wes Williams",
+   "committee": "Wes Williams for Judge",
+   "party": "Nonpartisan",
+   "filer": "19279",
+   "contributions": 33639.93
+  },
+  {
+   "name": "David N McCall",
+   "committee": "Friends of Dave McCall",
+   "party": "Democrat",
+   "filer": "18997",
+   "contributions": 30410.4
+  },
+  {
+   "name": "Steven P. McCoid",
+   "committee": "Friends of Steve McCoid",
+   "party": "Nonpartisan",
+   "filer": "16811",
+   "contributions": 12308.16
+  },
+  {
+   "name": "CM Hall",
+   "committee": "Friends of CM Hall",
+   "party": "Nonpartisan",
+   "filer": "19036",
+   "contributions": 16929.0
+  },
+  {
+   "name": "BARRY SHAPIRO",
+   "committee": "Friends of Barry Shapiro",
+   "party": "Democrat",
+   "filer": "19168",
+   "contributions": 35046.99,
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "name": "Betty Dominguez",
+   "committee": "Friends of Betty Dominguez",
+   "party": "Nonpartisan",
+   "filer": "18979",
+   "contributions": 32287.23
+  },
+  {
+   "name": "Matthew E Rowe",
+   "committee": "Friends of Matt Rowe",
+   "party": "Nonpartisan",
+   "filer": "15994",
+   "contributions": 2399.0
+  },
+  {
+   "name": "James Cook",
+   "committee": "Cook For Deschutes",
+   "party": "Nonpartisan",
+   "filer": "19211",
+   "contributions": 43688.07
+  },
+  {
+   "name": "Amanda Fritz",
+   "committee": "Friends of Amanda Fritz",
+   "party": "Nonpartisan",
+   "filer": "17585",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Mary Hull Caballero",
+   "committee": "Mary Hull Caballero Campaign",
+   "party": "Nonpartisan",
+   "filer": "16169",
+   "contributions": 250.0
+  },
+  {
+   "name": "Daniel Wren",
+   "committee": "Friends of Dan Wren for Judge",
+   "party": "Nonpartisan",
+   "filer": "18984",
+   "contributions": 29028.82
+  },
+  {
+   "name": "Mike Ainsworth",
+   "committee": "Mike Ainsworth for Polk County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "14324",
+   "contributions": 10715.0
+  },
+  {
+   "name": "Thomas Frank",
+   "committee": "Friends of Thomas Frank",
+   "party": "Nonpartisan",
+   "filer": "15704",
+   "contributions": 514.08
+  },
+  {
+   "name": "Stephanie Newton",
+   "committee": "Friends of Stephanie Newton",
+   "party": "Nonpartisan",
+   "filer": "19196",
+   "contributions": 20514.67
+  },
+  {
+   "name": "Kaety Jacobson",
+   "committee": "Elect Kaety Jacobson",
+   "party": "Nonpartisan",
+   "filer": "19005",
+   "contributions": 16147.58
+  },
+  {
+   "name": "John Budiao",
+   "committee": "Friends of John Budiao",
+   "party": "Nonpartisan",
+   "filer": "20730",
+   "contributions": 10330.0
+  },
+  {
+   "name": "Charles McGee",
+   "committee": "Friends of Charles McGee",
+   "party": "Nonpartisan",
+   "filer": "18779",
+   "contributions": 30066.0
+  },
+  {
+   "name": "Charles G Kochlacs",
+   "committee": "Kochlacs For Judge",
+   "party": "Nonpartisan",
+   "filer": "19549",
+   "contributions": 29385.0
+  },
+  {
+   "name": "Michael B Wynhausen",
+   "committee": "Michael Wynhausen for Linn County Circuit Court Judge",
+   "party": "Nonpartisan",
+   "filer": "18841",
+   "contributions": 31686.66
+  },
+  {
+   "name": "Kathy Wai",
+   "committee": "Friends of Kathy Wai",
+   "party": "Nonpartisan",
+   "filer": "18565",
+   "contributions": 7468.0
+  },
+  {
+   "name": "Jon H Weiner",
+   "committee": "Friends of Jon Weiner",
+   "party": "Nonpartisan",
+   "filer": "18757",
+   "contributions": 16684.31
+  },
+  {
+   "name": "Dave R Daniel",
+   "committee": "Friends of Dave Daniel for Sheriff",
+   "party": "Nonpartisan",
+   "filer": "16751",
+   "contributions": 5770.15
+  },
+  {
+   "name": "Ron J Green",
+   "committee": "Ron Green for District 15",
+   "party": "Democrat",
+   "filer": "15864",
+   "contributions": 1894.86
+  },
+  {
+   "name": "Keith Mays",
+   "committee": "Friends of Keith Mays",
+   "party": "Nonpartisan",
+   "filer": "10167",
+   "contributions": 12785.0
+  },
+  {
+   "name": "Jennifer MC McGuirk",
+   "committee": "Friends of Jennifer McGuirk",
+   "party": "Nonpartisan",
+   "filer": "18670",
+   "contributions": 26741.53
+  },
+  {
+   "name": "Teressa Raiford",
+   "committee": "People for Teressa for Mayor",
+   "party": "Nonpartisan",
+   "filer": "18935",
+   "contributions": 8042.61
+  },
+  {
+   "name": "Adrienne Nelson",
+   "committee": "Committee to Elect Justice Adrienne Nelson",
+   "party": "Nonpartisan",
+   "filer": "19309",
+   "contributions": 30101.08
+  },
+  {
+   "name": "Bob Horning",
+   "committee": "Friends of Bob Horning",
+   "party": "Republican",
+   "filer": "14155",
+   "contributions": 13285.92
+  },
+  {
+   "name": "Matthew Scarfo",
+   "committee": "Scarfo for Union County",
+   "party": "Nonpartisan",
+   "filer": "18866",
+   "contributions": 10895.72
+  },
+  {
+   "name": "Eric Swenson",
+   "committee": "Eric Swenson for Oregon",
+   "party": "Democrat",
+   "filer": "19559",
+   "contributions": 3238.84
+  },
+  {
+   "name": "Amy N Thuren",
+   "committee": "Committee to Elect Amy Thuren",
+   "party": "Democrat",
+   "filer": "19178",
+   "contributions": 28262.44
+  },
+  {
+   "name": "Massene Mboup",
+   "committee": "Massene Mboup for Lake Oswego",
+   "party": "Nonpartisan",
+   "filer": "19513",
+   "contributions": 13963.82
+  },
+  {
+   "name": "Thomas C Colett",
+   "committee": "Thomas Colett for Beaverton School Board",
+   "party": "Nonpartisan",
+   "filer": "16170",
+   "contributions": 13800.35
+  },
+  {
+   "name": "Paul Morrison",
+   "committee": "paul4tualatin",
+   "party": "Nonpartisan",
+   "filer": "17837",
+   "contributions": 23150.0
+  },
+  {
+   "name": "Steve K Buel",
+   "committee": "Buel for School Board",
+   "party": "Nonpartisan",
+   "filer": "18399",
+   "contributions": 100.0
+  },
+  {
+   "name": "Michael A Breiling",
+   "committee": "Committee to Elect Michael Breiling",
+   "party": "Nonpartisan",
+   "filer": "19138",
+   "contributions": 29098.93
+  },
+  {
+   "name": "Wayne P Mayo",
+   "committee": "52 friends of Wayne Mayo",
+   "party": "Nonpartisan",
+   "filer": "14584",
+   "contributions": 607.7
+  },
+  {
+   "name": "Mary F Walston",
+   "committee": "Elect Mary Walston",
+   "party": "Nonpartisan",
+   "filer": "14904",
+   "contributions": 800.0
+  },
+  {
+   "name": "John J Lee, Jr.",
+   "committee": "Friends of John Lee",
+   "party": "Republican",
+   "filer": "19019",
+   "contributions": 30658.83
+  },
+  {
+   "name": "Sheronne Blasi",
+   "committee": "Friends of Sheronne Blasi",
+   "party": "Nonpartisan",
+   "filer": "18358",
+   "contributions": 14749.13
+  },
+  {
+   "name": "kirk French",
+   "committee": "Friends of Kirk French",
+   "party": "Nonpartisan",
+   "filer": "19561",
+   "contributions": 27308.45
+  },
+  {
+   "name": "Scott A Learn",
+   "committee": "Learn for Independent Auditor",
+   "party": "Nonpartisan",
+   "filer": "18842",
+   "contributions": 25032.0
+  },
+  {
+   "name": "Ted Tosterud",
+   "committee": "Ted For Fairview",
+   "party": "Nonpartisan",
+   "filer": "16968",
+   "contributions": 16920.0
+  },
+  {
+   "name": "William E Harvey",
+   "committee": "Harvey Political Campaign",
+   "party": "Nonpartisan",
+   "filer": "16386",
+   "contributions": 15432.0
+  },
+  {
+   "name": "Thomas M Donohue",
+   "committee": "Donohue For Director",
+   "party": "Nonpartisan",
+   "filer": "14299",
+   "contributions": 14843.37
+  },
+  {
+   "name": "Mark A Garton",
+   "committee": "Friends of Mark Garton",
+   "party": "Nonpartisan",
+   "filer": "17485",
+   "contributions": 189.9
+  },
+  {
+   "name": "john lindsey",
+   "committee": "The Lindsey Fund",
+   "party": "Republican",
+   "filer": "6945",
+   "contributions": 22560.93
+  },
+  {
+   "name": "Michael Zarosinski",
+   "committee": "Committee to Elect Michael Zarosinski",
+   "party": "Nonpartisan",
+   "filer": "17107",
+   "contributions": 2500.0
+  },
+  {
+   "name": "Sharon J Konopa",
+   "committee": "Albany Friends of Sharon Konopa",
+   "party": "Nonpartisan",
+   "filer": "13237",
+   "contributions": 805.0
+  },
+  {
+   "name": "Rick D ROGERS",
+   "committee": "Rick Rogers for Mayor",
+   "party": "Nonpartisan",
+   "filer": "19400",
+   "contributions": 7442.0
+  },
+  {
+   "name": "Krisanna H Clark-Endicott",
+   "committee": "Friends of Krisanna",
+   "party": "Nonpartisan",
+   "filer": "16902",
+   "contributions": 3300.0
+  },
+  {
+   "name": "Jeremy A Ferguson",
+   "committee": "Friends of Jeremy Ferguson",
+   "party": "Nonpartisan",
+   "filer": "13688",
+   "contributions": 190.65
+  },
+  {
+   "name": "Rachel L Kittson-MaQatish",
+   "committee": "Friends of Rachel",
+   "party": "Nonpartisan",
+   "filer": "18996",
+   "contributions": 27381.36
+  },
+  {
+   "name": "Andrew D Struthers",
+   "committee": "Committee to Elect Struthers",
+   "party": "Democrat",
+   "filer": "19448",
+   "contributions": 1021.85
+  },
+  {
+   "name": "Sadie K Carney",
+   "committee": "Carney for Oregon",
+   "party": "Democrat",
+   "filer": "19212",
+   "contributions": 17454.0
+  },
+  {
+   "name": "Christopher Dean",
+   "committee": "Committee to Elect Christopher Dean",
+   "party": "Nonpartisan",
+   "filer": "19141",
+   "contributions": 46650.34
+  },
+  {
+   "name": "John Wendland",
+   "committee": "Re-Elect John Wendland",
+   "party": "Nonpartisan",
+   "filer": "16336",
+   "contributions": 23439.91
+  },
+  {
+   "name": "Erika Lopez",
+   "committee": "Friends of Erika Lopez",
+   "party": "Nonpartisan",
+   "filer": "18460",
+   "contributions": 15396.69
+  },
+  {
+   "name": "Jack A Brown Jr",
+   "committee": "Jack Brown PAC",
+   "party": "Nonpartisan",
+   "filer": "12902",
+   "contributions": 100.0
+  },
+  {
+   "name": "Tonya Graham",
+   "committee": "Committee to Elect Tonya Graham",
+   "party": "Nonpartisan",
+   "filer": "19552",
+   "contributions": 4464.2
+  },
+  {
+   "name": "Sharon S Forster",
+   "committee": "Committee to Elect Sharon Forster Lake County District Attorney",
+   "party": "Nonpartisan",
+   "filer": "17888",
+   "contributions": 40.0
+  },
+  {
+   "name": "David R Brown",
+   "committee": "Dave Brown for Sheriff",
+   "party": "Nonpartisan",
+   "filer": "19342",
+   "contributions": 16687.85
+  },
+  {
+   "name": "Brian Pierson",
+   "committee": "Friends of Brian Pierson",
+   "party": "Independent",
+   "filer": "19158",
+   "contributions": 21400.0,
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "name": "Paige K Hook",
+   "committee": "Friends of Paige Hook",
+   "party": "Nonpartisan",
+   "filer": "19319",
+   "contributions": 1305.98
+  },
+  {
+   "name": "James D Barber",
+   "committee": "James Barber for Lane County",
+   "party": "Nonpartisan",
+   "filer": "18442",
+   "contributions": 20921.47
+  },
+  {
+   "name": "Aurora del Val",
+   "committee": "Friends of Aurora del Val",
+   "party": "Democrat",
+   "filer": "18948",
+   "contributions": 21823.65
+  },
+  {
+   "name": "Jerry Rosiek",
+   "committee": "Jerry Rosiek for 4J School Board",
+   "party": "Nonpartisan",
+   "filer": "18402",
+   "contributions": 21344.0
+  },
+  {
+   "name": "David Poulson",
+   "committee": "Friends of David Poulson",
+   "party": "Republican",
+   "filer": "19160",
+   "contributions": 26168.1,
+   "chamber": "senate",
+   "district": "19"
+  },
+  {
+   "name": "George W Endicott",
+   "committee": "Committee to Reelect George Endicott Redmond Mayor",
+   "party": "Nonpartisan",
+   "filer": "14541",
+   "contributions": 10203.0
+  },
+  {
+   "name": "David Molina",
+   "committee": "David Molina for Oregon",
+   "party": "Republican",
+   "filer": "18772",
+   "contributions": 36959.3,
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "name": "James A Herndon",
+   "committee": "James A (Jim) Herndon",
+   "party": "Nonpartisan",
+   "filer": "18162",
+   "contributions": 14189.98
+  },
+  {
+   "name": "Thomas L Ellis",
+   "committee": "Friends of Tom Ellis",
+   "party": "Nonpartisan",
+   "filer": "19447",
+   "contributions": 14278.46
+  },
+  {
+   "name": "Bill King",
+   "committee": "Friends of Bill King",
+   "party": "Nonpartisan",
+   "filer": "13559",
+   "contributions": 2269.65
+  },
+  {
+   "name": "Marland H. Henderson",
+   "committee": "Elect Marland Henderson Tigard Mayor",
+   "party": "Nonpartisan",
+   "filer": "13368",
+   "contributions": 8450.0
+  },
+  {
+   "name": "Kevin S Chambers",
+   "committee": "Friends of Kevin Scott Chambers",
+   "party": "Republican",
+   "filer": "23062",
+   "contributions": 5500.98
+  },
+  {
+   "name": "jeffery g smith",
+   "committee": "Jeff Smith For Governor",
+   "party": "Republican",
+   "filer": "18938",
+   "contributions": 19568.87
+  },
+  {
+   "name": "Kathy Schwartz",
+   "committee": "Kathy Schwartz for County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "18969",
+   "contributions": 21074.11
+  },
+  {
+   "name": "John M Shafer",
+   "committee": "Friends of John Shafer",
+   "party": "Nonpartisan",
+   "filer": "19117",
+   "contributions": 21910.71
+  },
+  {
+   "name": "Joann Ernst",
+   "committee": "Friends of Joann Ernst",
+   "party": "Nonpartisan",
+   "filer": "16293",
+   "contributions": 357.97
+  },
+  {
+   "name": "Robert A Callahan",
+   "committee": "Committee to Elect Bob Callahan",
+   "party": "Nonpartisan",
+   "filer": "19167",
+   "contributions": 16568.75
+  },
+  {
+   "name": "George Murdock",
+   "committee": "Committee to Re-elect George Murdock",
+   "party": "Nonpartisan",
+   "filer": "19262",
+   "contributions": 19360.0
+  },
+  {
+   "name": "Robert W. Collins, Jr",
+   "committee": "Rob Collins for Circuit Court Judge",
+   "party": "Nonpartisan",
+   "filer": "23564",
+   "contributions": 18605.0
+  },
+  {
+   "name": "Randy L. Arthur",
+   "committee": "Committee to Elect Randy Arthur",
+   "party": "Nonpartisan",
+   "filer": "19469",
+   "contributions": 19330.73
+  },
+  {
+   "name": "Oscar (Biff) W Traber",
+   "committee": "Traber for Mayor",
+   "party": "Nonpartisan",
+   "filer": "14380",
+   "contributions": 12518.64
+  },
+  {
+   "name": "Rod Runyon",
+   "committee": "Rod Runyon for Wasco County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "14572",
+   "contributions": 9589.0
+  },
+  {
+   "name": "Marsha P Lichatowich",
+   "committee": "Committee to Elect Paulette Lichatowich",
+   "party": "Nonpartisan",
+   "filer": "17287",
+   "contributions": 19072.08
+  },
+  {
+   "name": "Adam Bledsoe",
+   "committee": "Adam Bledsoe for Bend Park and Rec",
+   "party": "Nonpartisan",
+   "filer": "18578",
+   "contributions": 22948.31
+  },
+  {
+   "name": "Troy Reinhart",
+   "committee": "Friends of Troy Reinhart",
+   "party": "Nonpartisan",
+   "filer": "8586",
+   "contributions": 15180.26
+  },
+  {
+   "name": "Margaret L Mahony",
+   "committee": "Margie Mahony for Justice of the Peace",
+   "party": "Nonpartisan",
+   "filer": "23499",
+   "contributions": 6689.47
+  },
+  {
+   "name": "Stephanie D Stephens",
+   "committee": "Committee to Elect Stephanie D. Stephens",
+   "party": "Nonpartisan",
+   "filer": "18369",
+   "contributions": 9630.98
+  },
+  {
+   "name": "Richard A Cunningham",
+   "committee": "Friends of Rich Cunningham",
+   "party": "Nonpartisan",
+   "filer": "18683",
+   "contributions": 8514.35
+  },
+  {
+   "name": "Maria Garcia",
+   "committee": "Maria Garcia for Multnomah County",
+   "party": "Nonpartisan",
+   "filer": "18761",
+   "contributions": 17364.81
+  },
+  {
+   "name": "Pamela Wev",
+   "committee": "Wev for County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19066",
+   "contributions": 7903.3
+  },
+  {
+   "name": "Angelene Falconer",
+   "committee": "Friends of Angel Falconer",
+   "party": "Nonpartisan",
+   "filer": "18072",
+   "contributions": 649.0
+  },
+  {
+   "name": "Dirk Rohne",
+   "committee": "Committee to Elect Dirk Rohne",
+   "party": "Nonpartisan",
+   "filer": "12821",
+   "contributions": 4395.0
+  },
+  {
+   "name": "Paul Diller",
+   "committee": "Friends of Paul Diller",
+   "party": "Democrat",
+   "filer": "19175",
+   "contributions": 16631.82
+  },
+  {
+   "name": "Brad Nanke",
+   "committee": "Brad Nanke for Oregon",
+   "party": "Republican",
+   "filer": "18907",
+   "contributions": 17208.77
+  },
+  {
+   "name": "Laura A. Cromwell",
+   "committee": "Committee to Elect Laura Cromwell",
+   "party": "Nonpartisan",
+   "filer": "19524",
+   "contributions": 18155.0
+  },
+  {
+   "name": "Lisa M Batey",
+   "committee": "Lisa Batey for Milwaukie",
+   "party": "Nonpartisan",
+   "filer": "16965",
+   "contributions": 462.0
+  },
+  {
+   "name": "Kelsie McDaniel",
+   "committee": "Committee to Re-Elect District Attorney Kelsie McDaniel",
+   "party": "Nonpartisan",
+   "filer": "16918",
+   "contributions": 14509.67
+  },
+  {
+   "name": "Diane M Daggett",
+   "committee": "Committee to Elect Diane Daggett",
+   "party": "Nonpartisan",
+   "filer": "19054",
+   "contributions": 16319.8
+  },
+  {
+   "name": "William L Givens",
+   "committee": "Re-elect Larry Givens",
+   "party": "Nonpartisan",
+   "filer": "18835",
+   "contributions": 16781.41
+  },
+  {
+   "name": "John F Orr",
+   "committee": "John Orr for State House",
+   "party": "Democrat",
+   "filer": "19075",
+   "contributions": 17636.12
+  },
+  {
+   "name": "Ross Swartzendruber",
+   "committee": "Friends of Ross",
+   "party": "Nonpartisan",
+   "filer": "15626",
+   "contributions": 1305.0
+  },
+  {
+   "name": "Quintin C Kreth",
+   "committee": "Q PAC",
+   "party": "Democrat",
+   "filer": "16468",
+   "contributions": 5.0
+  },
+  {
+   "name": "Sara L Pocklington",
+   "committee": "Friends of Sara for LOSD",
+   "party": "Nonpartisan",
+   "filer": "18445",
+   "contributions": 31410.66
+  },
+  {
+   "name": "Daniel Laschober",
+   "committee": "Laschober for Oregon",
+   "party": "Republican",
+   "filer": "19215",
+   "contributions": 3772.84
+  },
+  {
+   "name": "See Eun Kim",
+   "committee": "Friends of See Eun",
+   "party": "Nonpartisan",
+   "filer": "19752",
+   "contributions": 55.0
+  },
+  {
+   "name": "Dorothy J Merritt",
+   "committee": "Friends of Dorothy Merritt",
+   "party": "Republican",
+   "filer": "19285",
+   "contributions": 18884.65,
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "name": "Cheri Helt",
+   "committee": "Friends of Cheri Helt",
+   "party": "Nonpartisan",
+   "filer": "18547",
+   "contributions": 17870.18
+  },
+  {
+   "name": "Valdez G. Bravo",
+   "committee": "Friends of Valdez",
+   "party": "Nonpartisan",
+   "filer": "18459",
+   "contributions": 14098.62
+  },
+  {
+   "name": "Mark D Ulanowicz",
+   "committee": "Ulanowicz for MultCo Auditor",
+   "party": "Nonpartisan",
+   "filer": "18490",
+   "contributions": 13962.2
+  },
+  {
+   "name": "David G McCall",
+   "committee": "Friends for David McCall",
+   "party": "Nonpartisan",
+   "filer": "19040",
+   "contributions": 6986.0
+  },
+  {
+   "name": "Charles F Maughan",
+   "committee": "Maughan for Mayor",
+   "party": "Nonpartisan",
+   "filer": "19521",
+   "contributions": 2263.87
+  },
+  {
+   "name": "Mona K Williams",
+   "committee": "Committee to Elect Mona K Williams Circuit Court Judge",
+   "party": "Nonpartisan",
+   "filer": "19421",
+   "contributions": 13772.3
+  },
+  {
+   "name": "Daphne Wysham",
+   "committee": "Friends of Daphne Wysham",
+   "party": "Democrat",
+   "filer": "18870",
+   "contributions": 17992.0
+  },
+  {
+   "name": "Terry N. Thompson",
+   "committee": "Terry Thompson for County Commission",
+   "party": "Nonpartisan",
+   "filer": "5624",
+   "contributions": 3450.0
+  },
+  {
+   "name": "Christopher S Paasch",
+   "committee": "Chris Paasch",
+   "party": "Nonpartisan",
+   "filer": "18014",
+   "contributions": 10050.0
+  },
+  {
+   "name": "Edward P Fitch",
+   "committee": "Fitch for Council",
+   "party": "Nonpartisan",
+   "filer": "19378",
+   "contributions": 10942.15
+  },
+  {
+   "name": "Dan Loomis",
+   "committee": "Friends of Dan Loomis",
+   "party": "Nonpartisan",
+   "filer": "23581",
+   "contributions": 4990.0
+  },
+  {
+   "name": "Marc T Woodard",
+   "committee": "Citizens to Elect Marc Woodard",
+   "party": "Nonpartisan",
+   "filer": "19383",
+   "contributions": 13745.92
+  },
+  {
+   "name": "Mark F Kujala",
+   "committee": "Mark Kujala Campaign",
+   "party": "Nonpartisan",
+   "filer": "16093",
+   "contributions": 10923.09
+  },
+  {
+   "name": "Kimberly A Johns",
+   "committee": "Committee to Elect Kimberly Johns Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19009",
+   "contributions": 15824.86
+  },
+  {
+   "name": "Roen Hogg",
+   "committee": "Roen Hogg Friends Of",
+   "party": "Nonpartisan",
+   "filer": "19248",
+   "contributions": 8125.0
+  },
+  {
+   "name": "Monte Akers",
+   "committee": "Friends of Monte Akers",
+   "party": "Republican",
+   "filer": "18738",
+   "contributions": 13113.72
+  },
+  {
+   "name": "Michael W. Sonnleitner",
+   "committee": "Sonnleitner for Zone 3 PCC",
+   "party": "Nonpartisan",
+   "filer": "16969",
+   "contributions": 1500.0
+  },
+  {
+   "name": "Elizabeth A Graser-Lindsey, Dr.",
+   "committee": "Friends of Elizabeth Graser-Lindsey",
+   "party": "Democrat",
+   "filer": "19107",
+   "contributions": 13383.25
+  },
+  {
+   "name": "Henry A Balensifer",
+   "committee": "Committee to Elect Henry Balensifer",
+   "party": "Nonpartisan",
+   "filer": "19340",
+   "contributions": 5112.0
+  },
+  {
+   "name": "Tyler J Miller",
+   "committee": "Miller for Scappoose",
+   "party": "Nonpartisan",
+   "filer": "24286",
+   "contributions": 8876.51
+  },
+  {
+   "name": "Kathy B Goss",
+   "committee": "Friends of Kathy Goss",
+   "party": "Nonpartisan",
+   "filer": "18532",
+   "contributions": 16216.85
+  },
+  {
+   "name": "Jerred Taylor",
+   "committee": "Friends of Jerred Taylor",
+   "party": "Democrat",
+   "filer": "19218",
+   "contributions": 17431.47,
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "name": "Jacqueline L Spross",
+   "committee": "Friends of Jaci Spross",
+   "party": "Nonpartisan",
+   "filer": "18444",
+   "contributions": 5205.7
+  },
+  {
+   "name": "Kyle Allen",
+   "committee": "Friends of Kyle Allen",
+   "party": "Nonpartisan",
+   "filer": "16673",
+   "contributions": 7232.88
+  },
+  {
+   "name": "Sherry Healy",
+   "committee": "Healy for Healthy Elections",
+   "party": "Nonpartisan",
+   "filer": "18830",
+   "contributions": 12782.41
+  },
+  {
+   "name": "John McArdle",
+   "committee": "Friends of John McArdle",
+   "party": "Nonpartisan",
+   "filer": "5773",
+   "contributions": 942.0
+  },
+  {
+   "name": "Richard G Pullen",
+   "committee": "Committee to Elect Rick Pullen",
+   "party": "Nonpartisan",
+   "filer": "19286",
+   "contributions": 11420.0
+  },
+  {
+   "name": "Nancy V Wyse",
+   "committee": "Elect Nancy Wyse",
+   "party": "Democrat",
+   "filer": "19260",
+   "contributions": 418.5
+  },
+  {
+   "name": "Robert Keyser",
+   "committee": "Robert Keyser for Port Commission",
+   "party": "Nonpartisan",
+   "filer": "17349",
+   "contributions": 10912.09
+  },
+  {
+   "name": "Tya Ping",
+   "committee": "Friends of Tya",
+   "party": "Nonpartisan",
+   "filer": "19742",
+   "contributions": 3531.0
+  },
+  {
+   "name": "Casey Ryan",
+   "committee": "Friends of Casey Ryan",
+   "party": "Nonpartisan",
+   "filer": "18194",
+   "contributions": 20.0
+  },
+  {
+   "name": "Jim Carpenter",
+   "committee": "Elect Jim Carpenter",
+   "party": "Nonpartisan",
+   "filer": "16765",
+   "contributions": 50.0
+  },
+  {
+   "name": "Dave Dyk",
+   "committee": "Friends of Dave Dyk",
+   "party": "Nonpartisan",
+   "filer": "18789",
+   "contributions": 957.93
+  },
+  {
+   "name": "Darin J Fowler",
+   "committee": "The Committee to Elect Darin Fowler",
+   "party": "Nonpartisan",
+   "filer": "19302",
+   "contributions": 11140.0
+  },
+  {
+   "name": "Jeremy A Salter",
+   "committee": "Jeremy Salter For Douglas County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19171",
+   "contributions": 11190.43
+  },
+  {
+   "name": "Joelle Davis",
+   "committee": "Friends of Joelle Davis",
+   "party": "Democrat",
+   "filer": "15769",
+   "contributions": 740.0
+  },
+  {
+   "name": "Jessica Arzate",
+   "committee": "Friends of Jessica Arzate",
+   "party": "Nonpartisan",
+   "filer": "18518",
+   "contributions": 6589.19
+  },
+  {
+   "name": "Brian Shaw, candidate",
+   "committee": "BrianShaw4OC",
+   "party": "Nonpartisan",
+   "filer": "19639",
+   "contributions": 10760.0
+  },
+  {
+   "name": "justin b rock",
+   "committee": "Committee to Elect Justin Rock for Mayor",
+   "party": "Nonpartisan",
+   "filer": "19718",
+   "contributions": 3161.21
+  },
+  {
+   "name": "Ryan Spiker",
+   "committee": "Friends of Ryan Spiker",
+   "party": "Democrat",
+   "filer": "19024",
+   "contributions": 11599.48
+  },
+  {
+   "name": "Riley J Hill",
+   "committee": "Riley J Hill for Mayor",
+   "party": "Nonpartisan",
+   "filer": "19574",
+   "contributions": 10600.0
+  },
+  {
+   "name": "Megan Salter",
+   "committee": "Friends of Megan Salter",
+   "party": "Democrat",
+   "filer": "19159",
+   "contributions": 11123.16,
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "name": "Amanda La Bell",
+   "committee": "Amanda for Bend",
+   "party": "Working Families Party of Oregon",
+   "filer": "19583",
+   "contributions": 10485.5,
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "name": "Irene Konev",
+   "committee": "Irene for Oregon",
+   "party": "Nonpartisan",
+   "filer": "17636",
+   "contributions": 6427.0
+  },
+  {
+   "name": "Melissa Parker",
+   "committee": "Committee to Elect Melissa Parker for Salem Judge",
+   "party": "Nonpartisan",
+   "filer": "18861",
+   "contributions": 10978.77
+  },
+  {
+   "name": "William R Hunker",
+   "committee": "Friends of Bill Hunker",
+   "party": "Nonpartisan",
+   "filer": "17772",
+   "contributions": 2888.34
+  },
+  {
+   "name": "Greg Delgado",
+   "committee": "Friends of Greg Delgado",
+   "party": "Democrat",
+   "filer": "17912",
+   "contributions": 745.43
+  },
+  {
+   "name": "Damon L Mabee",
+   "committee": "Mabee4Mayor",
+   "party": "Nonpartisan",
+   "filer": "19446",
+   "contributions": 11909.98
+  },
+  {
+   "name": "Tamie Kaufman",
+   "committee": "Committee to Elect Tamie Kaufman",
+   "party": "Nonpartisan",
+   "filer": "17948",
+   "contributions": 413.15
+  },
+  {
+   "name": "Bruce W Webbon",
+   "committee": "Committee to elect Bruce Webbon",
+   "party": "Nonpartisan",
+   "filer": "17843",
+   "contributions": 4123.36
+  },
+  {
+   "name": "Angela S Dilkes Perry",
+   "committee": "Friends of Angi Dilkes",
+   "party": "Nonpartisan",
+   "filer": "16260",
+   "contributions": 2625.0
+  },
+  {
+   "name": "Mary Leighton",
+   "committee": "Mary Leighton for 4J",
+   "party": "Nonpartisan",
+   "filer": "18429",
+   "contributions": 10234.99
+  },
+  {
+   "name": "Anne Marie Levis",
+   "committee": "Anne Marie Levis for 4J School Board",
+   "party": "Nonpartisan",
+   "filer": "18613",
+   "contributions": 6290.0
+  },
+  {
+   "name": "Greggery V Peterson",
+   "committee": "Gregg for city council",
+   "party": "Nonpartisan",
+   "filer": "18405",
+   "contributions": 9895.0
+  },
+  {
+   "name": "Russell L Baldwin",
+   "committee": "Committee to Elect Russell L. Baldwin",
+   "party": "Nonpartisan",
+   "filer": "19295",
+   "contributions": 5545.0
+  },
+  {
+   "name": "Bruce C Jones",
+   "committee": "Bruce Jones for Mayor",
+   "party": "Nonpartisan",
+   "filer": "19543",
+   "contributions": 9805.0
+  },
+  {
+   "name": "Brett A Pruess",
+   "committee": "Committee To Elect Brett Pruess",
+   "party": "Nonpartisan",
+   "filer": "19223",
+   "contributions": 10261.0
+  },
+  {
+   "name": "Heidi D Edwards",
+   "committee": "Heidi Edwards for THPRD",
+   "party": "Nonpartisan",
+   "filer": "19741",
+   "contributions": 225.0
+  },
+  {
+   "name": "Daniel R Kohler",
+   "committee": "Dan Kohler 4 Keizer",
+   "party": "Nonpartisan",
+   "filer": "19455",
+   "contributions": 6878.26
+  },
+  {
+   "name": "Matthew Galli",
+   "committee": "Committee to Elect Matthew Galli Circuit Court Judge Position 5",
+   "party": "Nonpartisan",
+   "filer": "19179",
+   "contributions": 16422.48
+  },
+  {
+   "name": "Emma L Burke",
+   "committee": "Elect Emma Burke",
+   "party": "Nonpartisan",
+   "filer": "19471",
+   "contributions": 5884.36
+  },
+  {
+   "name": "Solea R Kabakov",
+   "committee": "Solea Kabakov for Mayor",
+   "party": "Nonpartisan",
+   "filer": "19282",
+   "contributions": 3899.0
+  },
+  {
+   "name": "David J Dahle",
+   "committee": "Friends of David Dahle",
+   "party": "Nonpartisan",
+   "filer": "19584",
+   "contributions": 9575.0
+  },
+  {
+   "name": "Jesse L Peone",
+   "committee": "Friends of Jesse",
+   "party": "Nonpartisan",
+   "filer": "21396",
+   "contributions": 10251.0
+  },
+  {
+   "name": "Karen A Rippberger",
+   "committee": "Karen4Oregon",
+   "party": "Democrat",
+   "filer": "18884",
+   "contributions": 9950.52,
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "name": "Jackie Manz",
+   "committee": "Jackie Manz for City Council",
+   "party": "Nonpartisan",
+   "filer": "17043",
+   "contributions": 4097.0
+  },
+  {
+   "name": "Patrick E Starnes",
+   "committee": "Starnes for Oregon",
+   "party": "Independent",
+   "filer": "19214",
+   "contributions": 9047.0
+  },
+  {
+   "name": "Michael J Oates",
+   "committee": "Oates for County Chair Committee",
+   "party": "Nonpartisan",
+   "filer": "19080",
+   "contributions": 9178.5
+  },
+  {
+   "name": "Angela R Chisum",
+   "committee": "Angela for kids",
+   "party": "Nonpartisan",
+   "filer": "18575",
+   "contributions": 9905.53
+  },
+  {
+   "name": "Audrey J Broyles",
+   "committee": "Friends of Audrey Broyles",
+   "party": "Nonpartisan",
+   "filer": "17742",
+   "contributions": 150.0
+  },
+  {
+   "name": "Travis Ash",
+   "committee": "Committee to Elect Travis Ash Sheriff",
+   "party": "Nonpartisan",
+   "filer": "17771",
+   "contributions": 100.0
+  },
+  {
+   "name": "Todd C Andres",
+   "committee": "Citizens To Elect Todd Andres",
+   "party": "Nonpartisan",
+   "filer": "18865",
+   "contributions": 8114.0
+  },
+  {
+   "name": "Jane Aiken",
+   "committee": "Re-Elect Judge Jane Aiken Committee",
+   "party": "Nonpartisan",
+   "filer": "14124",
+   "contributions": 9936.01
+  },
+  {
+   "name": "Robert H Niemeyer, III",
+   "committee": "Bob Niemeyer Campaign",
+   "party": "Republican",
+   "filer": "17537",
+   "contributions": 2610.0
+  },
+  {
+   "name": "Dietmar H Goebel",
+   "committee": "Elect Dietmar Goebel to Newport City Council",
+   "party": "Nonpartisan",
+   "filer": "19433",
+   "contributions": 8690.0
+  },
+  {
+   "name": "Olivia Alcaire",
+   "committee": "Friends of Olivia Alcaire",
+   "party": "Nonpartisan",
+   "filer": "19333",
+   "contributions": 4355.0
+  },
+  {
+   "name": "Jay Barber",
+   "committee": "Friends of Jay Barber",
+   "party": "Nonpartisan",
+   "filer": "19602",
+   "contributions": 8529.0
+  },
+  {
+   "name": "Bill Froehlich",
+   "committee": "Elect Bill Sheriff",
+   "party": "Nonpartisan",
+   "filer": "19082",
+   "contributions": 8726.45
+  },
+  {
+   "name": "Heather M Coffel",
+   "committee": "Heather Coffel for Assessor",
+   "party": "Nonpartisan",
+   "filer": "19023",
+   "contributions": 8445.0
+  },
+  {
+   "name": "Steven Burke",
+   "committee": "Committee to Elect Judge Burke",
+   "party": "Nonpartisan",
+   "filer": "18931",
+   "contributions": 6619.0
+  },
+  {
+   "name": "Taylor R Tupper",
+   "committee": "Taylor Tupper 4 Oregon",
+   "party": "Democrat",
+   "filer": "19169",
+   "contributions": 8717.4,
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "name": "Bruce A Nichols",
+   "committee": "Bruce Nichols for Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19222",
+   "contributions": 7370.0
+  },
+  {
+   "name": "Blake Petersen",
+   "committee": "Friends of Blake Petersen",
+   "party": "Nonpartisan",
+   "filer": "21275",
+   "contributions": 2425.62
+  },
+  {
+   "name": "Chris Iverson",
+   "committee": "Elect Chris Iverson",
+   "party": "Nonpartisan",
+   "filer": "18566",
+   "contributions": 8000.0
+  },
+  {
+   "name": "Frank Bubenik",
+   "committee": "Committee to Elect Frank for Tualatin",
+   "party": "Nonpartisan",
+   "filer": "18735",
+   "contributions": 8126.0
+  },
+  {
+   "name": "Christine L Ruck",
+   "committee": "Committee to Elect Christine Ruck",
+   "party": "Republican",
+   "filer": "19152",
+   "contributions": 4420.05
+  },
+  {
+   "name": "William R.A. Poythress",
+   "committee": "Friends of Alex Poythress",
+   "party": "Nonpartisan",
+   "filer": "19459",
+   "contributions": 9140.0
+  },
+  {
+   "name": "Teri L Plagmann",
+   "committee": "Teri Plagmann for Linn County Judge",
+   "party": "Nonpartisan",
+   "filer": "19189",
+   "contributions": 9453.18
+  },
+  {
+   "name": "Brian S Huber",
+   "committee": "Re-elect Brian Huber Crook County Assessor",
+   "party": "Nonpartisan",
+   "filer": "18983",
+   "contributions": 7804.5
+  },
+  {
+   "name": "Stephen C. Fulton",
+   "committee": "Fulton for Port Commission",
+   "party": "Nonpartisan",
+   "filer": "16285",
+   "contributions": 3880.0
+  },
+  {
+   "name": "Dave Berg",
+   "committee": "Friends of Dave Berg",
+   "party": "Nonpartisan",
+   "filer": "18055",
+   "contributions": 201.0
+  },
+  {
+   "name": "Jamal T Fox",
+   "committee": "Friends of Jamal Fox",
+   "party": "Nonpartisan",
+   "filer": "18679",
+   "contributions": 7511.32
+  },
+  {
+   "name": "Alan J Zelenka, Candidate",
+   "committee": "Alan Zelenka for City Council",
+   "party": "Nonpartisan",
+   "filer": "19156",
+   "contributions": 9196.68
+  },
+  {
+   "name": "Albert H Densmore",
+   "committee": "DENSMORE FOR STATE REPRESENTATIVE",
+   "party": "Independent",
+   "filer": "18939",
+   "contributions": 7486.95
+  },
+  {
+   "name": "rosie pryor",
+   "committee": "friends of rosie pryor",
+   "party": "Nonpartisan",
+   "filer": "14975",
+   "contributions": 50.0
+  },
+  {
+   "name": "Laura Mitchell",
+   "committee": "Laura Mitchell for Beaverton",
+   "party": "Nonpartisan",
+   "filer": "18813",
+   "contributions": 7604.27
+  },
+  {
+   "name": "Gordon Larson",
+   "committee": "Gordon Larson for Grant County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19140",
+   "contributions": 7403.58
+  },
+  {
+   "name": "Anne W Bryan",
+   "committee": "Committee to Elect Anne Bryan",
+   "party": "Nonpartisan",
+   "filer": "16220",
+   "contributions": 1737.22
+  },
+  {
+   "name": "Dana M Carstensen",
+   "committee": "Friends of Dana Carstensen",
+   "party": "Nonpartisan",
+   "filer": "18709",
+   "contributions": 9020.05
+  },
+  {
+   "name": "Scott C Hege",
+   "committee": "Scott Hege for Wasco County Commission",
+   "party": "Nonpartisan",
+   "filer": "19243",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Joelle D McGrorty",
+   "committee": "Friends of Joelle McGrorty",
+   "party": "Nonpartisan",
+   "filer": "18434",
+   "contributions": 9745.85
+  },
+  {
+   "name": "Sharon Yvette Maxwell",
+   "committee": "Sharon Maxwell 4 Multnomah County",
+   "party": "Nonpartisan",
+   "filer": "16561",
+   "contributions": 4232.56
+  },
+  {
+   "name": "Machelle S Briggs-Mayfield",
+   "committee": "Friends of Machelle Briggs-Mayfield",
+   "party": "Nonpartisan",
+   "filer": "18808",
+   "contributions": 7094.97
+  },
+  {
+   "name": "Tom Mersereau",
+   "committee": "Elect Tom Mersereau",
+   "party": "Nonpartisan",
+   "filer": "19636",
+   "contributions": 5250.0
+  },
+  {
+   "name": "Jeff Lackey",
+   "committee": "Jeff Lackey for Newport Port Commission",
+   "party": "Nonpartisan",
+   "filer": "18636",
+   "contributions": 7000.0
+  },
+  {
+   "name": "Annette L. Mattson",
+   "committee": "Friends of Annette Mattson",
+   "party": "Nonpartisan",
+   "filer": "18453",
+   "contributions": 7520.2
+  },
+  {
+   "name": "Christopher Chenoweth",
+   "committee": "Chenoweth For City Council",
+   "party": "Nonpartisan",
+   "filer": "19480",
+   "contributions": 2511.25
+  },
+  {
+   "name": "Martin E Granum",
+   "committee": "Friends of Martin Granum",
+   "party": "Nonpartisan",
+   "filer": "18638",
+   "contributions": 10193.84
+  },
+  {
+   "name": "Paul M Anderes",
+   "committee": "Committee to Elect Paul M.  Anderes",
+   "party": "Nonpartisan",
+   "filer": "18949",
+   "contributions": 8062.67
+  },
+  {
+   "name": "Max Mania",
+   "committee": "Better For Benton",
+   "party": "Nonaffiliated",
+   "filer": "19391",
+   "contributions": 6769.92
+  },
+  {
+   "name": "Melanie Muenzer",
+   "committee": "Muenzer for LCC Board",
+   "party": "Nonpartisan",
+   "filer": "18531",
+   "contributions": 7130.09
+  },
+  {
+   "name": "Leslie Roberts",
+   "committee": "Committee to Elect Judge Leslie Roberts",
+   "party": "Nonpartisan",
+   "filer": "19187",
+   "contributions": 7619.69
+  },
+  {
+   "name": "Katherine Schacht",
+   "committee": "Supporters of Katherine Schacht",
+   "party": "Nonpartisan",
+   "filer": "6204",
+   "contributions": 200.0
+  },
+  {
+   "name": "Nicholas B Brooks",
+   "committee": "Nicholas B Brooks for School Board",
+   "party": "Nonpartisan",
+   "filer": "18612",
+   "contributions": 6610.0
+  },
+  {
+   "name": "Byron M Trapp",
+   "committee": "Keep Sheriff Trapp",
+   "party": "Nonpartisan",
+   "filer": "17430",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Jennifer H Geller",
+   "committee": "Elect Jennifer Geller",
+   "party": "Nonpartisan",
+   "filer": "13637",
+   "contributions": 370.0
+  },
+  {
+   "name": "BRANDY STONE",
+   "committee": "Friends of Brandy Stone",
+   "party": "Nonpartisan",
+   "filer": "19311",
+   "contributions": 1072.94
+  },
+  {
+   "name": "Shelley Russell",
+   "committee": "Committee to Elect Judge Shelley Russell",
+   "party": "Nonpartisan",
+   "filer": "18957",
+   "contributions": 7084.82
+  },
+  {
+   "name": "Michael B Grant",
+   "committee": "Mike Grant for Clackamas County Assessor",
+   "party": "Nonpartisan",
+   "filer": "19322",
+   "contributions": 3360.0
+  },
+  {
+   "name": "Peter Roscoe",
+   "committee": "Committee To Elect Peter Roscoe",
+   "party": "Nonpartisan",
+   "filer": "19276",
+   "contributions": 5629.0
+  },
+  {
+   "name": "John R Lackey",
+   "committee": "Lackey For Union County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "18846",
+   "contributions": 6474.39
+  },
+  {
+   "name": "Bessie Johnson",
+   "committee": "Friends of Bessie Johnson",
+   "party": "Nonpartisan",
+   "filer": "22382",
+   "contributions": 1505.62
+  },
+  {
+   "name": "Kenneth R Baker",
+   "committee": "Ken 4 Mayor of Talent",
+   "party": "Nonpartisan",
+   "filer": "19578",
+   "contributions": 5500.0
+  },
+  {
+   "name": "Stu Rasmussen",
+   "committee": "Friends of Stu Rasmussen",
+   "party": "Nonpartisan",
+   "filer": "13051",
+   "contributions": 2270.29
+  },
+  {
+   "name": "Ken Hannum",
+   "committee": "Committee to Elect Ken Hannum",
+   "party": "Nonpartisan",
+   "filer": "18904",
+   "contributions": 5985.0
+  },
+  {
+   "name": "Lawrence D. Taylor",
+   "committee": "Elect Larry Taylor",
+   "party": "Nonpartisan",
+   "filer": "16932",
+   "contributions": 592.99
+  },
+  {
+   "name": "Kris Morse Bledsoe",
+   "committee": "Elect Kris Morse Bledsoe",
+   "party": "Republican",
+   "filer": "18869",
+   "contributions": 5891.0
+  },
+  {
+   "name": "Matt Corey",
+   "committee": "Friends of Matt Corey",
+   "party": "Nonpartisan",
+   "filer": "19143",
+   "contributions": 5952.5
+  },
+  {
+   "name": "Mohamed Alyajouri",
+   "committee": "Friends of Mohamed Alyajouri",
+   "party": "Nonpartisan",
+   "filer": "18513",
+   "contributions": 3275.0
+  },
+  {
+   "name": "Dylan Hydes",
+   "committee": "Dylan Hydes for School Board",
+   "party": "Nonpartisan",
+   "filer": "18577",
+   "contributions": 5805.95
+  },
+  {
+   "name": "Michael R Morris",
+   "committee": "Michael Morris for Council",
+   "party": "Nonpartisan",
+   "filer": "19661",
+   "contributions": 2775.0
+  },
+  {
+   "name": "Mindy Schlossberg",
+   "committee": "Friends of Mindy Schlossberg",
+   "party": "Nonpartisan",
+   "filer": "19101",
+   "contributions": 6063.64
+  },
+  {
+   "name": "Evangelina Sundgrenz",
+   "committee": "Elect Sundgrenz",
+   "party": "Nonpartisan",
+   "filer": "18382",
+   "contributions": 6426.4
+  },
+  {
+   "name": "Laura J Eckstein, Eck",
+   "committee": "The Committee to Elect Laura Eckstein District Attorney",
+   "party": "Nonpartisan",
+   "filer": "19239",
+   "contributions": 5716.75
+  },
+  {
+   "name": "Tripp J Androy",
+   "committee": "Committee to Elect Tripp Androy",
+   "party": "Nonpartisan",
+   "filer": "19122",
+   "contributions": 5996.0
+  },
+  {
+   "name": "Dulcye L Taylor",
+   "committee": "Committee to Elect Dulcye",
+   "party": "Nonpartisan",
+   "filer": "19361",
+   "contributions": 5625.97
+  },
+  {
+   "name": "Edward barbeau",
+   "committee": "Ed for commissioner",
+   "party": "Nonpartisan",
+   "filer": "18992",
+   "contributions": 5600.0
+  },
+  {
+   "name": "Mark P. Pihl",
+   "committee": "Mark Pihl for Judge",
+   "party": "Nonpartisan",
+   "filer": "19251",
+   "contributions": 5678.54
+  },
+  {
+   "name": "Glenn D. Miller",
+   "committee": "Friends of Glenn Miller",
+   "party": "Nonpartisan",
+   "filer": "16305",
+   "contributions": 2811.04
+  },
+  {
+   "name": "dale bailey",
+   "committee": "Committee to Reelect Judge Bailey",
+   "party": "Nonpartisan",
+   "filer": "19161",
+   "contributions": 5575.0
+  },
+  {
+   "name": "Liz Newton",
+   "committee": "Liz Newton for Tigard City Council",
+   "party": "Nonpartisan",
+   "filer": "19388",
+   "contributions": 5582.98
+  },
+  {
+   "name": "Holly L. Thompson",
+   "committee": "Thompson for THPRD",
+   "party": "Nonpartisan",
+   "filer": "18438",
+   "contributions": 6098.72
+  },
+  {
+   "name": "Frank Spence",
+   "committee": "Frank Spence Committee to Elect to Port #5",
+   "party": "Nonpartisan",
+   "filer": "18568",
+   "contributions": 6907.45
+  },
+  {
+   "name": "Colleen S MacLeod",
+   "committee": "Colleen MacLeod for Union County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "18753",
+   "contributions": 5315.0
+  },
+  {
+   "name": "Geraldine Lucio",
+   "committee": "Geraldine for Florence",
+   "party": "Nonpartisan",
+   "filer": "19545",
+   "contributions": 6020.44
+  },
+  {
+   "name": "Walter D. Porter",
+   "committee": "Elect Walt Porter County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19245",
+   "contributions": 5217.99
+  },
+  {
+   "name": "David A Davis",
+   "committee": "David Davis for Oregon",
+   "party": "Nonpartisan",
+   "filer": "19338",
+   "contributions": 6619.55
+  },
+  {
+   "name": "Bruce W Webbon",
+   "committee": "Committee to Elect Bruce Webbon",
+   "party": "Nonpartisan",
+   "filer": "19195",
+   "contributions": 5070.49
+  },
+  {
+   "name": "Vincent T Adams",
+   "committee": "Vincent Adams for Commission",
+   "party": "Democrat",
+   "filer": "18989",
+   "contributions": 5424.04
+  },
+  {
+   "name": "James T Campbell",
+   "committee": "Friends of Jim Campbell17",
+   "party": "Nonpartisan",
+   "filer": "18564",
+   "contributions": 5054.0
+  },
+  {
+   "name": "Sonya M. Carlson",
+   "committee": "Friends of Sonya Carlson",
+   "party": "Nonpartisan",
+   "filer": "17530",
+   "contributions": 159.76
+  },
+  {
+   "name": "Michael R Wright",
+   "committee": "Wright for Assessor",
+   "party": "Nonpartisan",
+   "filer": "17735",
+   "contributions": 635.83
+  },
+  {
+   "name": "Terrence G Taylor",
+   "committee": "Terrence of Oregon",
+   "party": "Nonpartisan",
+   "filer": "16659",
+   "contributions": 1180.0
+  },
+  {
+   "name": "Billy C Carter, Car",
+   "committee": "Billy Carter for Mayor",
+   "party": "Nonpartisan",
+   "filer": "19407",
+   "contributions": 4855.64
+  },
+  {
+   "name": "Shabba Woodley",
+   "committee": "Friends of Shabba Woodley",
+   "party": "Nonpartisan",
+   "filer": "18686",
+   "contributions": 5183.0
+  },
+  {
+   "name": "Dennis - Triglia",
+   "committee": "Friends of Dennis Triglia",
+   "party": "Nonpartisan",
+   "filer": "19373",
+   "contributions": 5458.25
+  },
+  {
+   "name": "Levi Herrera-Lopez",
+   "committee": "Friends of Levi Herrera-Lopez",
+   "party": "Nonpartisan",
+   "filer": "18567",
+   "contributions": 13156.71
+  },
+  {
+   "name": "Michael Kinnaird",
+   "committee": "Kinnaird for Sheriff",
+   "party": "Nonpartisan",
+   "filer": "21966",
+   "contributions": 1684.08
+  },
+  {
+   "name": "James E Rafferty",
+   "committee": "Jim 4 Treasurer",
+   "party": "Nonpartisan",
+   "filer": "19236",
+   "contributions": 3743.79
+  },
+  {
+   "name": "Melinda Bernert",
+   "committee": "Committee to Elect Melinda Bernert",
+   "party": "Nonpartisan",
+   "filer": "18486",
+   "contributions": 4780.52
+  },
+  {
+   "name": "William \"Skip\" O'Neill",
+   "committee": "VoteSkipONeill",
+   "party": "Nonpartisan",
+   "filer": "18108",
+   "contributions": 37.5
+  },
+  {
+   "name": "Regan A. Sonnen Molatore",
+   "committee": "Friends of Regan Molatore",
+   "party": "Nonpartisan",
+   "filer": "16227",
+   "contributions": 5600.0
+  },
+  {
+   "name": "Peter W Newport",
+   "committee": "Newport For Mayor",
+   "party": "Nonpartisan",
+   "filer": "19265",
+   "contributions": 4599.75
+  },
+  {
+   "name": "Mario Palmero",
+   "committee": "Mario for Gresham",
+   "party": "Nonpartisan",
+   "filer": "19643",
+   "contributions": 8639.72
+  },
+  {
+   "name": "Dan G McKinney",
+   "committee": "McKinney 4 Judge",
+   "party": "Nonpartisan",
+   "filer": "17694",
+   "contributions": 1140.67
+  },
+  {
+   "name": "Rhiannon Henkels",
+   "committee": "Friends of Rhiannon Henkels",
+   "party": "Nonpartisan",
+   "filer": "19385",
+   "contributions": 4674.14
+  },
+  {
+   "name": "Michael Hunter",
+   "committee": "Michael Hunter HD 19",
+   "party": "Republican",
+   "filer": "18903",
+   "contributions": 4351.25
+  },
+  {
+   "name": "Jonathon C Bullock",
+   "committee": "Committee to Elect Jon Bullock",
+   "party": "Nonpartisan",
+   "filer": "19415",
+   "contributions": 4062.0
+  },
+  {
+   "name": "Frank J Lonergan",
+   "committee": "Lonergan 4 Mayor",
+   "party": "Nonpartisan",
+   "filer": "19669",
+   "contributions": 4307.21
+  },
+  {
+   "name": "Carol Pauli",
+   "committee": "Friends of Carol Pauli",
+   "party": "Nonpartisan",
+   "filer": "18913",
+   "contributions": 4408.12
+  },
+  {
+   "name": "Dean Tucker",
+   "committee": "Dean Tucker for Assessor",
+   "party": "Nonpartisan",
+   "filer": "18881",
+   "contributions": 697.0
+  },
+  {
+   "name": "Larry Morgan",
+   "committee": "Larry Morgan Committee",
+   "party": "Nonpartisan",
+   "filer": "16602",
+   "contributions": 1520.0
+  },
+  {
+   "name": "Michael De Blasi",
+   "committee": "Committee to Elect Mike De Blasi",
+   "party": "Nonpartisan",
+   "filer": "19671",
+   "contributions": 350.0
+  },
+  {
+   "name": "Trey C. Maust",
+   "committee": "Trey Maust for School Board",
+   "party": "Nonpartisan",
+   "filer": "18585",
+   "contributions": 4483.04
+  },
+  {
+   "name": "Rex Armstrong",
+   "committee": "Committee to Re-Elect Judge Armstrong",
+   "party": "Nonpartisan",
+   "filer": "5239",
+   "contributions": 4125.0
+  },
+  {
+   "name": "Salvador J Peralta",
+   "committee": "Friends of Sal Peralta",
+   "party": "Democrat",
+   "filer": "5127",
+   "contributions": 6623.0
+  },
+  {
+   "name": "Kimberly A Herring",
+   "committee": "Committee to Elect Kim Herring for Lincoln County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19087",
+   "contributions": 4275.0
+  },
+  {
+   "name": "Mark E Bateman",
+   "committee": "Friends of Mark Bateman",
+   "party": "Nonpartisan",
+   "filer": "18465",
+   "contributions": 5041.65
+  },
+  {
+   "name": "Betty L Kamikawa, Kam",
+   "committee": "Betty Kamikawa for County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19124",
+   "contributions": 2203.41
+  },
+  {
+   "name": "Joan L Herman",
+   "committee": "Joan for City Council",
+   "party": "Nonpartisan",
+   "filer": "19384",
+   "contributions": 4443.5
+  },
+  {
+   "name": "April A Davis",
+   "committee": "Friends of April Davis",
+   "party": "Nonpartisan",
+   "filer": "18481",
+   "contributions": 4528.74
+  },
+  {
+   "name": "Darren Riordan",
+   "committee": "Darren Riordan Committee",
+   "party": "Nonpartisan",
+   "filer": "19441",
+   "contributions": 4262.46
+  },
+  {
+   "name": "Jeri L Thompson",
+   "committee": "Committee to Elect Jeri Lynn Thompson",
+   "party": "Nonpartisan",
+   "filer": "19269",
+   "contributions": 6853.92
+  },
+  {
+   "name": "Eldon W. Rollins",
+   "committee": "Intrepid Allies of Eldon Rollins",
+   "party": "Democrat",
+   "filer": "19453",
+   "contributions": 76.83,
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "name": "Bruce Dunn",
+   "committee": "Committee to Elect Bruce Dunn for County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "18928",
+   "contributions": 3820.0
+  },
+  {
+   "name": "Sarah Spoon",
+   "committee": "Sarah for America",
+   "party": "Nonpartisan",
+   "filer": "18110",
+   "contributions": 180.0
+  },
+  {
+   "name": "Thomas A Klipfel",
+   "committee": "Klipfel Reelection Committee",
+   "party": "Nonpartisan",
+   "filer": "18525",
+   "contributions": 3799.5
+  },
+  {
+   "name": "Patrick S O'Grady",
+   "committee": "O'Grady for Port Commission",
+   "party": "Nonpartisan",
+   "filer": "18598",
+   "contributions": 3799.0
+  },
+  {
+   "name": "Leonard Osburn",
+   "committee": "Leonard \"Archie\" Osburn for Grant County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19247",
+   "contributions": 3788.97
+  },
+  {
+   "name": "Ginger L Fitch",
+   "committee": "Champions for Children",
+   "party": "Nonpartisan",
+   "filer": "18639",
+   "contributions": 3898.33
+  },
+  {
+   "name": "Ryan C Johnson",
+   "committee": "Friends of Ryan C. Johnson",
+   "party": "Nonpartisan",
+   "filer": "19628",
+   "contributions": 6156.27
+  },
+  {
+   "name": "Sean Nikas",
+   "committee": "Sean Nikas for Oregon",
+   "party": "Democrat",
+   "filer": "18675",
+   "contributions": 3820.39
+  },
+  {
+   "name": "Evelyn A Costello",
+   "committee": "Eve Costello for DA",
+   "party": "Nonpartisan",
+   "filer": "18742",
+   "contributions": 3675.0
+  },
+  {
+   "name": "Steve V Milligan",
+   "committee": "Milligan for Monmouth",
+   "party": "Nonpartisan",
+   "filer": "14250",
+   "contributions": 250.0
+  },
+  {
+   "name": "Gene Stout",
+   "committee": "Team Gene",
+   "party": "Republican",
+   "filer": "19100",
+   "contributions": 3600.0
+  },
+  {
+   "name": "Dick Anderson",
+   "committee": "Dick Anderson for Mayor",
+   "party": "Nonpartisan",
+   "filer": "19349",
+   "contributions": 4101.49
+  },
+  {
+   "name": "michael j taylor",
+   "committee": "mike taylor school board",
+   "party": "Nonpartisan",
+   "filer": "18625",
+   "contributions": 3370.0
+  },
+  {
+   "name": "Guy Kennerly",
+   "committee": "Friends of Guy Kennerly",
+   "party": "Nonpartisan",
+   "filer": "18512",
+   "contributions": 7368.27
+  },
+  {
+   "name": "Thomas W Oliver",
+   "committee": "Friends of Tom Oliver",
+   "party": "Nonpartisan",
+   "filer": "18593",
+   "contributions": 3450.0
+  },
+  {
+   "name": "Emilio Hernandez",
+   "committee": "Friends of Emilio Hernandez",
+   "party": "Nonpartisan",
+   "filer": "18590",
+   "contributions": 4528.49
+  },
+  {
+   "name": "Sandra L Cassanelli",
+   "committee": "Cassanelli 4 County Clerk",
+   "party": "Nonpartisan",
+   "filer": "19377",
+   "contributions": 3997.47
+  },
+  {
+   "name": "Nathan Dahlin",
+   "committee": "Friends of Nathan Dahlin",
+   "party": "Nonpartisan",
+   "filer": "18584",
+   "contributions": 4538.08
+  },
+  {
+   "name": "Connie Briese",
+   "committee": "Citizens for Mrs. Connie Briese",
+   "party": "Nonpartisan",
+   "filer": "19562",
+   "contributions": 1220.0
+  },
+  {
+   "name": "Robin Risley",
+   "committee": "Robin for City Council",
+   "party": "Nonpartisan",
+   "filer": "19709",
+   "contributions": 3485.0
+  },
+  {
+   "name": "John M Hillock",
+   "committee": "Committee to Elect John Hillock",
+   "party": "Nonpartisan",
+   "filer": "19707",
+   "contributions": 6206.58
+  },
+  {
+   "name": "Kelly E Simmelink",
+   "committee": "Kelly Simmelink for Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19116",
+   "contributions": 3300.0
+  },
+  {
+   "name": "Andrew Freborg",
+   "committee": "Freborg 4 Ward 9",
+   "party": "Nonpartisan",
+   "filer": "18005",
+   "contributions": 1992.0
+  },
+  {
+   "name": "Dick Hellberg",
+   "committee": "Dick Hellberg for Port Commission",
+   "party": "Nonpartisan",
+   "filer": "18603",
+   "contributions": 3250.0
+  },
+  {
+   "name": "Martin W Justus",
+   "committee": "Marty Justus for Mayor",
+   "party": "Nonpartisan",
+   "filer": "19720",
+   "contributions": 3200.0
+  },
+  {
+   "name": "Stevie Stephens Burden",
+   "committee": "Committee To Elect Stevie Stephens Burden Tillamook County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "17679",
+   "contributions": 1909.6
+  },
+  {
+   "name": "Grady Nelson",
+   "committee": "Grady Nelson for School Board",
+   "party": "Nonpartisan",
+   "filer": "18605",
+   "contributions": 3905.71
+  },
+  {
+   "name": "Matthew F Anthes-Washburn",
+   "committee": "Friends of Matt A-W",
+   "party": "Nonpartisan",
+   "filer": "18544",
+   "contributions": 3115.0
+  },
+  {
+   "name": "Elizabeth F Smith",
+   "committee": "Elizabeth Smith for Keizer City Council",
+   "party": "Nonpartisan",
+   "filer": "19568",
+   "contributions": 5248.17
+  },
+  {
+   "name": "Mark A Page",
+   "committee": "Friends of Mark A. Page",
+   "party": "Democrat",
+   "filer": "18921",
+   "contributions": 3000.0
+  },
+  {
+   "name": "Joshua C Rojas",
+   "committee": "Rojas For YCC",
+   "party": "Nonpartisan",
+   "filer": "19172",
+   "contributions": 3000.0
+  },
+  {
+   "name": "Tami Little",
+   "committee": "Tami Little for Clackamas County Assessor",
+   "party": "Nonpartisan",
+   "filer": "19430",
+   "contributions": 3576.2
+  },
+  {
+   "name": "Ulys J Stapleton",
+   "committee": "Stapleton for District Attorney",
+   "party": "Nonpartisan",
+   "filer": "15582",
+   "contributions": 100.0
+  },
+  {
+   "name": "Steven D Shaffer",
+   "committee": "Re-Elect Judge Steven Shaffer",
+   "party": "Nonpartisan",
+   "filer": "19067",
+   "contributions": 2909.37
+  },
+  {
+   "name": "Mark P Albertson",
+   "committee": "Committee to elect Mark Albertson County Commissioner #3",
+   "party": "Nonpartisan",
+   "filer": "19056",
+   "contributions": 3323.0
+  },
+  {
+   "name": "Phil Studenberg",
+   "committee": "Committee to Elect Phil Studenberg",
+   "party": "Nonpartisan",
+   "filer": "18213",
+   "contributions": 493.76
+  },
+  {
+   "name": "Nicholas P Morace",
+   "committee": "Nicholas Morace For Newberg",
+   "party": "Nonpartisan",
+   "filer": "19394",
+   "contributions": 1794.73
+  },
+  {
+   "name": "Patty Dorroh",
+   "committee": "Patty Dorroh for Harney County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19108",
+   "contributions": 2830.0
+  },
+  {
+   "name": "David M Goldthorpe",
+   "committee": "Friends of Dave Goldthorpe",
+   "party": "Nonpartisan",
+   "filer": "18776",
+   "contributions": 1495.0
+  },
+  {
+   "name": "Peter Winter",
+   "committee": "Friends of Peter Winter",
+   "party": "Nonpartisan",
+   "filer": "19188",
+   "contributions": 3224.35
+  },
+  {
+   "name": "Kate Kristiansen",
+   "committee": "Kate K for City Council",
+   "party": "Nonpartisan",
+   "filer": "18999",
+   "contributions": 800.0
+  },
+  {
+   "name": "Robert E Lee",
+   "committee": "Friends of Robert Lee",
+   "party": "Candidate Address:\t35920 SE Hauglum Road",
+   "filer": "14954",
+   "contributions": 135.0
+  },
+  {
+   "name": "Carol Fredrick",
+   "committee": "Carol Fredrick for Judge Committee",
+   "party": "Nonpartisan",
+   "filer": "19252",
+   "contributions": 847.5
+  },
+  {
+   "name": "Jon D Soliz",
+   "committee": "COMMITTEE TO ELECT JON SOLIZ FOR CROOK COUNTY ASSESSOR",
+   "party": "Nonpartisan",
+   "filer": "18900",
+   "contributions": 6245.2
+  },
+  {
+   "name": "Gail P Holmes",
+   "committee": "Holmes 4 West Linn",
+   "party": "Nonpartisan",
+   "filer": "18218",
+   "contributions": 70.82
+  },
+  {
+   "name": "Chris Luz",
+   "committee": "Chris Luz for Phoenix Mayor",
+   "party": "Nonpartisan",
+   "filer": "19557",
+   "contributions": 2500.0
+  },
+  {
+   "name": "Renee Windsor-White",
+   "committee": "Friends of Renee Windsor-White for House Dist. 17",
+   "party": "Democrat",
+   "filer": "19348",
+   "contributions": 2720.0,
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "name": "Lauren Sprang",
+   "committee": "Friends for Lauren",
+   "party": "Nonpartisan",
+   "filer": "18582",
+   "contributions": 2920.06
+  },
+  {
+   "name": "Kenneth L Kraft",
+   "committee": "Friends of Ken Kraft",
+   "party": "Republican",
+   "filer": "19031",
+   "contributions": 3847.13
+  },
+  {
+   "name": "Jennifer Ward",
+   "committee": "Friends of Jennifer Ward",
+   "party": "Nonpartisan",
+   "filer": "18640",
+   "contributions": 2364.93
+  },
+  {
+   "name": "Seth A Rydmark",
+   "committee": "Friends of Seth Rydmark",
+   "party": "Republican",
+   "filer": "19065",
+   "contributions": 2650.0
+  },
+  {
+   "name": "Claudia Black",
+   "committee": "Friends of Claudia Black",
+   "party": "Democrat",
+   "filer": "18880",
+   "contributions": 1981.5
+  },
+  {
+   "name": "Jonah Hakanson",
+   "committee": "Hakanson for Oregon",
+   "party": "Democrat",
+   "filer": "18061",
+   "contributions": 1650.0
+  },
+  {
+   "name": "Robert F.P. Ludwick",
+   "committee": "The Committee to Elect Robert F.P. Ludwick",
+   "party": "Nonpartisan",
+   "filer": "18535",
+   "contributions": 1855.0
+  },
+  {
+   "name": "Ryan P Hughes",
+   "committee": "Ryan Hughes For Judge",
+   "party": "Nonpartisan",
+   "filer": "17940",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Randall Sanne",
+   "committee": "Committee to Elect Randy Sanne for Coos County Commissioner",
+   "party": "Nonpartisan",
+   "filer": "15222",
+   "contributions": 11.66
+  },
+  {
+   "name": "Raymond D Crutchley",
+   "committee": "Committee to Elect Judge Crutchley",
+   "party": "Nonpartisan",
+   "filer": "19186",
+   "contributions": 2750.0
+  },
+  {
+   "name": "Megan Hallstone",
+   "committee": "Committee to Elect Megan Kunkel Hallstone",
+   "party": "Nonpartisan",
+   "filer": "18581",
+   "contributions": 2175.0
+  },
+  {
+   "name": "Sam J Palmer",
+   "committee": "Committee to Elect Sam Palmer Campaign Account",
+   "party": "Nonpartisan",
+   "filer": "16745",
+   "contributions": 2160.0
+  },
+  {
+   "name": "Glenda Wilson",
+   "committee": "Wilson for Council",
+   "party": "Nonpartisan",
+   "filer": "19508",
+   "contributions": 2494.0
+  },
+  {
+   "name": "Brian T Nava",
+   "committee": "Brian Nava, Treasurer",
+   "party": "Nonpartisan",
+   "filer": "19052",
+   "contributions": 1941.77
+  },
+  {
+   "name": "Natasha L. Parvey-Leskowich",
+   "committee": "Friends of Natasha",
+   "party": "Nonpartisan",
+   "filer": "18533",
+   "contributions": 2000.0
+  },
+  {
+   "name": "Erica Skatvold",
+   "committee": "Friends of Erica Skatvold",
+   "party": "Nonpartisan",
+   "filer": "18570",
+   "contributions": 3015.47
+  },
+  {
+   "name": "cliff l walters",
+   "committee": "Committee to Elect Cliff Walters",
+   "party": "Nonpartisan",
+   "filer": "19600",
+   "contributions": 1953.15
+  },
+  {
+   "name": "Michelle Steinhebel",
+   "committee": "Friends of Michelle Steinhebel",
+   "party": "Nonpartisan",
+   "filer": "19476",
+   "contributions": 2310.0
+  },
+  {
+   "name": "Ashley S O'Toole",
+   "committee": "Campaign to Elect Ashley O'Toole",
+   "party": "Nonpartisan",
+   "filer": "19500",
+   "contributions": 2078.26
+  },
+  {
+   "name": "Robert G Elliott",
+   "committee": "Citizens to Elect Bob Elliott",
+   "party": "Nonpartisan",
+   "filer": "14714",
+   "contributions": 1650.0
+  },
+  {
+   "name": "Michael A Gardiner",
+   "committee": "Committee to Retain Mike Gardiner",
+   "party": "Nonpartisan",
+   "filer": "19094",
+   "contributions": 2482.7
+  },
+  {
+   "name": "Teresa D Lawson",
+   "committee": "Friends of Teresa Lawson",
+   "party": "Nonpartisan",
+   "filer": "19635",
+   "contributions": 1275.0
+  },
+  {
+   "name": "Martin Kamenski",
+   "committee": "Kamenski for Council",
+   "party": "Nonpartisan",
+   "filer": "18082",
+   "contributions": 933.92
+  },
+  {
+   "name": "Thomas E Bailor",
+   "committee": "Bailor Campaign 2018",
+   "party": "Nonpartisan",
+   "filer": "19256",
+   "contributions": 1930.88
+  },
+  {
+   "name": "Michelle Niemann",
+   "committee": "Shelley Niemann for Philomath School Board",
+   "party": "Nonpartisan",
+   "filer": "18556",
+   "contributions": 1850.0
+  },
+  {
+   "name": "Susan K Conn",
+   "committee": "Committee to Elect Susan Conn",
+   "party": "Nonpartisan",
+   "filer": "19425",
+   "contributions": 1775.0
+  },
+  {
+   "name": "Brian Cooper",
+   "committee": "CooperforFairview",
+   "party": "Nonpartisan",
+   "filer": "19622",
+   "contributions": 1750.0
+  },
+  {
+   "name": "Spencer Raymond",
+   "committee": "Friends of Spencer Raymond",
+   "party": "Nonpartisan",
+   "filer": "18847",
+   "contributions": 2784.75
+  },
+  {
+   "name": "Cynthia K Hyatt",
+   "committee": "Hyatt for Oregon House",
+   "party": "Independent",
+   "filer": "18771",
+   "contributions": 2038.68
+  },
+  {
+   "name": "JED MYERS",
+   "committee": "Jed Myers for Treasure Valley Community College Board of Education",
+   "party": "Nonpartisan",
+   "filer": "18618",
+   "contributions": 1650.0
+  },
+  {
+   "name": "Nick Geil",
+   "committee": "Committee to Elect Nick Geil",
+   "party": "Nonpartisan",
+   "filer": "18932",
+   "contributions": 3361.89
+  },
+  {
+   "name": "Josefina Riggs",
+   "committee": "Friends of Josefina Riggs",
+   "party": "Nonpartisan",
+   "filer": "19632",
+   "contributions": 2391.23
+  },
+  {
+   "name": "Erik R Bishoff",
+   "committee": "Elect Erik Bishoff",
+   "party": "Nonpartisan",
+   "filer": "18631",
+   "contributions": 1878.2
+  },
+  {
+   "name": "Jodi M. Ballard-Beach",
+   "committee": "Jodi Ballard-Beach for Oregon",
+   "party": "Nonpartisan",
+   "filer": "18463",
+   "contributions": 1480.0
+  },
+  {
+   "name": "Rick Landt",
+   "committee": "Committee to Retain Rick Landt",
+   "party": "Nonpartisan",
+   "filer": "19091",
+   "contributions": 2322.42
+  },
+  {
+   "name": "Timothy J. Perkins",
+   "committee": "Timothy Perkins for Salem",
+   "party": "Nonpartisan",
+   "filer": "18387",
+   "contributions": 545.0
+  },
+  {
+   "name": "Peter B Gendron",
+   "committee": "Pete For Josephine",
+   "party": "Nonpartisan",
+   "filer": "19230",
+   "contributions": 1975.0
+  },
+  {
+   "name": "Brian C Hinderberger",
+   "committee": "Brian for Oregon",
+   "party": "Democrat",
+   "filer": "19490",
+   "contributions": 1380.54
+  },
+  {
+   "name": "Kathy L Martin-Willis",
+   "committee": "Voters for Kathy Martin-Willis",
+   "party": "Nonpartisan",
+   "filer": "18879",
+   "contributions": 1889.95
+  },
+  {
+   "name": "Eric Hanson",
+   "committee": "Committee to Elect Eric Hanson",
+   "party": "Nonpartisan",
+   "filer": "17996",
+   "contributions": 50.0
+  },
+  {
+   "name": "Debi Farr",
+   "committee": "Re-Elect Debi Farr for Bethel School Board",
+   "party": "Nonpartisan",
+   "filer": "18627",
+   "contributions": 1325.0
+  },
+  {
+   "name": "Jacqueline M DeVaney",
+   "committee": "Jacqueline Devaney for Clatsop Health",
+   "party": "Nonpartisan",
+   "filer": "18538",
+   "contributions": 1290.0
+  },
+  {
+   "name": "Jim Lewis",
+   "committee": "Committee to Retain Jim Lewis",
+   "party": "Nonpartisan",
+   "filer": "19095",
+   "contributions": 2114.62
+  },
+  {
+   "name": "Debra A Starkey",
+   "committee": "Debra Starkey Commissioner Candidate",
+   "party": "Nonpartisan",
+   "filer": "19221",
+   "contributions": 1250.27
+  },
+  {
+   "name": "Donald E Russell",
+   "committee": "Committee to Elect Don Russell",
+   "party": "Nonpartisan",
+   "filer": "18853",
+   "contributions": 1250.0
+  },
+  {
+   "name": "Matthew L Plummer",
+   "committee": "Matt Plummer for Marion County Commissioner",
+   "party": "Democrat",
+   "filer": "18899",
+   "contributions": 1225.0
+  },
+  {
+   "name": "Tyler A Shockey",
+   "committee": "An Independent Voice in 19",
+   "party": "Republican",
+   "filer": "19071",
+   "contributions": 1200.0
+  },
+  {
+   "name": "Virginia L Demaris",
+   "committee": "Elect Demaris 2018",
+   "party": "Nonpartisan",
+   "filer": "19698",
+   "contributions": 1197.35
+  },
+  {
+   "name": "Jack L Esp",
+   "committee": "Jack Esp for Oregon",
+   "party": "Republican",
+   "filer": "19371",
+   "contributions": 1640.05,
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "name": "Mikasi E M Goodwin",
+   "committee": "Committee To Elect Mikasi Goodwin",
+   "party": "Nonpartisan",
+   "filer": "19465",
+   "contributions": 1208.07
+  },
+  {
+   "name": "Jeana Ecker",
+   "committee": "Jeana Ecker for Philomath School Board",
+   "party": "Nonpartisan",
+   "filer": "18650",
+   "contributions": 1050.0
+  },
+  {
+   "name": "Jacqueline J Bachman",
+   "committee": "Elect Jackie Bachman Ashland City Council",
+   "party": "Nonpartisan",
+   "filer": "19623",
+   "contributions": 1448.34
+  },
+  {
+   "name": "Angela B Christian",
+   "committee": "ANGELA B CHRISTIAN",
+   "party": "Nonpartisan",
+   "filer": "18623",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Antonia Kreamier",
+   "committee": "Antonia for Fairview City Council",
+   "party": "Nonpartisan",
+   "filer": "19659",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Jan Barbas",
+   "committee": "Vote Jan Barbas",
+   "party": "Nonpartisan",
+   "filer": "18785",
+   "contributions": 962.14
+  },
+  {
+   "name": "Stephen J Bedor",
+   "committee": "Stephen J. Bedor for Clackamas County Circuit Court Judge",
+   "party": "Nonpartisan",
+   "filer": "19182",
+   "contributions": 900.0
+  },
+  {
+   "name": "Laura A. Boehme",
+   "committee": "Laura Boehme for Parks",
+   "party": "Nonpartisan",
+   "filer": "18629",
+   "contributions": 4594.45
+  },
+  {
+   "name": "Shannon Cockayne",
+   "committee": "Friends of Shannon Cockayne",
+   "party": "Nonpartisan",
+   "filer": "19414",
+   "contributions": 861.35
+  },
+  {
+   "name": "Mike Downing",
+   "committee": "Mike Downing for Commissioner",
+   "party": "Nonpartisan",
+   "filer": "18839",
+   "contributions": 850.0
+  },
+  {
+   "name": "Anthony D Medina",
+   "committee": "Anthony D Medina Oregon",
+   "party": "Nonpartisan",
+   "filer": "18571",
+   "contributions": 7127.59
+  },
+  {
+   "name": "Melissa Ousley",
+   "committee": "Committee to Elect Melissa Ousley",
+   "party": "Democrat",
+   "filer": "19012",
+   "contributions": 1583.03
+  },
+  {
+   "name": "Kari R Fleisher",
+   "committee": "I am with Kari",
+   "party": "Nonpartisan",
+   "filer": "19255",
+   "contributions": 774.7
+  },
+  {
+   "name": "William J Yates",
+   "committee": "Friends of Jason Yates",
+   "party": "Nonpartisan",
+   "filer": "19267",
+   "contributions": 9443.52
+  },
+  {
+   "name": "Brenda L Snow Potter",
+   "committee": "Committee to Elect Brenda Snow Potter for Wheeler County Clerk",
+   "party": "Nonpartisan",
+   "filer": "17993",
+   "contributions": 93.38
+  },
+  {
+   "name": "Mark S Daily",
+   "committee": "Daily for Mayor",
+   "party": "Nonpartisan",
+   "filer": "18339",
+   "contributions": 280.4
+  },
+  {
+   "name": "Jonathan B. Baker",
+   "committee": "Friends of Jonathan Baker",
+   "party": "Nonpartisan",
+   "filer": "18557",
+   "contributions": 8290.0
+  },
+  {
+   "name": "Elizabeth Reye",
+   "committee": "Friends of Elizabeth Reye",
+   "party": "Republican",
+   "filer": "19200",
+   "contributions": 600.0,
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "name": "Travis M Soles",
+   "committee": "Travis Soles PAC Fund",
+   "party": "Nonpartisan",
+   "filer": "18637",
+   "contributions": 600.0
+  },
+  {
+   "name": "Jerry J Jackson",
+   "committee": "Jackson For Mayor",
+   "party": "Nonpartisan",
+   "filer": "19558",
+   "contributions": 620.98
+  },
+  {
+   "name": "Jason l Dugan",
+   "committee": "Friends of Jason Dugan",
+   "party": "Nonpartisan",
+   "filer": "18610",
+   "contributions": 790.0
+  },
+  {
+   "name": "Michael B David",
+   "committee": "Team Jessica",
+   "party": "Nonpartisan",
+   "filer": "17924",
+   "contributions": 40.0
+  },
+  {
+   "name": "Kristina Mann",
+   "committee": "Committee to elect Kristina Mann for Central School Board 2017",
+   "party": "Nonpartisan",
+   "filer": "18668",
+   "contributions": 1026.25
+  },
+  {
+   "name": "Sherrie E Wilkins",
+   "committee": "Elect Sherrie Wilkins",
+   "party": "Democrat",
+   "filer": "19670",
+   "contributions": 500.0
+  },
+  {
+   "name": "Nick Moon",
+   "committee": "Vote for Nick Moon",
+   "party": "Nonpartisan",
+   "filer": "19580",
+   "contributions": 500.0
+  },
+  {
+   "name": "Susana Gladwin",
+   "committee": "Susana For District 5 Commissioner",
+   "party": "Nonpartisan",
+   "filer": "19092",
+   "contributions": 400.0
+  },
+  {
+   "name": "michael c cowles",
+   "committee": "Re-elect Cowles for Lane County Assessor",
+   "party": "Nonpartisan",
+   "filer": "18520",
+   "contributions": 1105.0
+  },
+  {
+   "name": "michael J morrow",
+   "committee": "Elect Michael Morrow Clackamas Fire Board",
+   "party": "Nonpartisan",
+   "filer": "18530",
+   "contributions": 340.0
+  },
+  {
+   "name": "Erik S Parks",
+   "committee": "Parks for Oregon",
+   "party": "Republican",
+   "filer": "19364",
+   "contributions": 1344.8,
+   "chamber": "senate",
+   "district": "8"
+  },
+  {
+   "name": "Jay Cross",
+   "committee": "Better Fire Service",
+   "party": "Nonpartisan",
+   "filer": "16266",
+   "contributions": 250.0
+  },
+  {
+   "name": "Skye J Allen",
+   "committee": "Skye Allen for Governor",
+   "party": "Independent",
+   "filer": "19303",
+   "contributions": 250.0
+  },
+  {
+   "name": "Timothy J Graham",
+   "committee": "Friends of Timothy Graham",
+   "party": "Democrat",
+   "filer": "19191",
+   "contributions": 230.0
+  },
+  {
+   "name": "Gary M Corgan",
+   "committee": "Corgan for Oregon",
+   "party": "Republican",
+   "filer": "18960",
+   "contributions": 237.18
+  },
+  {
+   "name": "Brenden L Kelly",
+   "committee": "Brenden Kelly For State Senate",
+   "party": "Independent",
+   "filer": "18963",
+   "contributions": 163.48
+  },
+  {
+   "name": "Ron L Brown",
+   "committee": "Committee to Elect Ron Brown DA",
+   "party": "Nonpartisan",
+   "filer": "19018",
+   "contributions": 100.0
+  },
+  {
+   "name": "Steven R Powers",
+   "committee": "Committee to Retain Judge Powers",
+   "party": "Nonpartisan",
+   "filer": "19037",
+   "contributions": 3100.0
+  },
+  {
+   "name": "William S Relyea",
+   "committee": "Friends of Bill Relyea",
+   "party": "Nonpartisan",
+   "filer": "19535",
+   "contributions": 100.0
+  },
+  {
+   "name": "Fred D. Littlejohn, II",
+   "committee": "Friends of David Littlejohn",
+   "party": "Nonpartisan",
+   "filer": "18450",
+   "contributions": 377.0
+  },
+  {
+   "name": "Keenan W Bohach",
+   "committee": "Keenan Bohach for Governor",
+   "party": "Republican",
+   "filer": "18795",
+   "contributions": 100.0
+  },
+  {
+   "name": "Armina E Stricklin",
+   "committee": "Mina Stricklin for Riverdale",
+   "party": "Nonpartisan",
+   "filer": "18657",
+   "contributions": 895.0
+  },
+  {
+   "name": "Taft V Stricklin",
+   "committee": "Taft Stricklin for Riverdale",
+   "party": "Nonpartisan",
+   "filer": "18658",
+   "contributions": 1193.07
+  },
+  {
+   "name": "Donald L Trotter",
+   "committee": "Trotter for CFD1",
+   "party": "Nonpartisan",
+   "filer": "18591",
+   "contributions": 5140.0
+  },
+  {
+   "name": "Doug L Culver",
+   "committee": "Douglas Culver for State Represenative",
+   "party": "Democrat",
+   "filer": "18885",
+   "contributions": 87.47
+  },
+  {
+   "name": "Jordan C Lawson",
+   "committee": "Friends of Jordan Chester Lawson",
+   "party": "Republican",
+   "filer": "18991",
+   "contributions": 320.0
+  },
+  {
+   "name": "Tim Johnson",
+   "committee": "Johnson for Oregon",
+   "party": "Nonaffiliated",
+   "filer": "18833",
+   "contributions": 51.0
+  },
+  {
+   "name": "Jennifer D Traeger",
+   "committee": "Jennifer Traeger for School Board",
+   "party": "Nonpartisan",
+   "filer": "18617",
+   "contributions": 1709.74
+  },
+  {
+   "name": "Shelly Nealon",
+   "committee": "shelllyforsfsboard",
+   "party": "Nonpartisan",
+   "filer": "18615",
+   "contributions": 443.08
   }
  ]
 }

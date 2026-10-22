@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+SUPERSEDED 2026-10-21 by scripts/fetch-state-leg-finance-or-mirror.py (see there).
+
 Oregon state legislative fundraising — BUILD step: sums the ORESTAR transaction exports that
 scripts/fetch-state-leg-finance-or.cjs downloaded (see that file for the source and the flow).
 

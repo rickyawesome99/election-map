@@ -8,7 +8,8 @@ import type { CandidatePagePayload, CandidatePageShard } from "@/lib/candidatePa
 // Reads the candidate pages precomputed by scripts/buildCandidatePages.ts (npm run candidate-pages,
 // part of the prebuild / predev chain) from data/generated/candidate-pages/. One shard per state for
 // the state legislative slugs (which end in the state's abbreviation, "-oh") and federal.json for the
-// federal ones, gzipped; a shard is inflated and parsed once per process. A federal slug can also end
+// federal ones, gzipped; a shard is inflated and parsed once per process (so after a rebuild the
+// dev server needs a content change here, not a touch, to drop its cache.) A federal slug can also end
 // in a state abbreviation when two candidates share a name ("mike-rogers-mi", lib/candidateSlug.ts):
 // the state shard is tried first and federal.json catches it. The directory is listed in next.config.ts's
 // outputFileTracingIncludes so Vercel ships it with the route.

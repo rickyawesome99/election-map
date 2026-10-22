@@ -179,6 +179,7 @@ function seatLinks(abbr: string): Map<string, Set<string>> {
 
 const rulingKey = (abbr: string, a: string, b: string) => `${abbr}|${[a, b].sort().join("|")}`;
 const SPLIT_RULINGS = new Set(STATE_LEG_IDENTITY_SPLIT.map(([abbr, a, b]) => rulingKey(abbr, a, b)));
+const MERGE_RULINGS = new Set(STATE_LEG_IDENTITY_MERGE.map(([abbr, a, b]) => rulingKey(abbr, a, b)));
 
 const DISPLAY_NAMES = new Set(STATE_LEG_DISPLAY_NAME.map(([abbr, sp]) => `${abbr}|${sp}`));
 
@@ -271,6 +272,8 @@ function mergeSpellings(people: Map<string, Person>): Map<string, string> {
       const aRing = new Set([...pa.eraSeats].flatMap((s) => [...near(s)]));
       const nearby = [...pb.eraSeats].some((t) => [...near(t)].some((x) => aRing.has(x)));
       if (nearby && sharesParty(a, b)) { edges.push({ a, b, tier: 3 }); continue; }
+      // A hand merge already joined the two (tier 0 above); the review list is for what is still open.
+      if (ruled(MERGE_RULINGS, a, b)) continue;
       audit.push(describe(a, b, "review", linked ? "overlapping seats, D vs R" : nearby ? "neighbouring seats, no party in common" : "no seat link"));
     }
   }

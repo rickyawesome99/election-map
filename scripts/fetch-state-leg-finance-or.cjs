@@ -1,4 +1,7 @@
 /**
+ * SUPERSEDED 2026-10-21 by scripts/fetch-state-leg-finance-or-mirror.py (the same ORESTAR data through the
+ * Oregon Campaign Finance mirror, seven requests, no IP block). Kept for the day the mirror goes away.
+ *
  * Oregon state legislative fundraising from ORESTAR (secure.sos.state.or.us/orestar) — DOWNLOAD step;
  * scripts/fetch-state-leg-finance-or.py turns the downloads into the portal-raw file.
  *

@@ -631668,12 +631668,28 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2016": {
    "house": {
     "1": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Committee to Elect Tamie Kaufman",
-       "candidate": "Tamie Kaufman",
+       "name": "David Brock Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 93251,
+       "expenditures": null
+      },
+      {
+       "name": "Herbert O Brayer, JR",
+       "candidate": "Terry Brayer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16190.03,
+       "expenditures": null
+      },
+      {
+       "name": "Tamie Kaufman",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
@@ -631682,97 +631698,291 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "5": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "2": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Committee to Elect Pam Marsh",
+       "name": "Dallas Heard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 67220.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Carl Wilson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 154030,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Duane Stark",
+       "candidate": "Duane A. Stark",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 93922.07,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Pam J Marsh",
        "candidate": "Pam Marsh",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 74382.27,
        "expenditures": null
+      },
+      {
+       "name": "Steve Richie",
+       "candidate": "Steven Richie",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 7260.48,
+       "expenditures": null
+      }
+     ]
+    },
+    "6": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Sal Esquivel",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 122650.75,
+       "expenditures": null
+      },
+      {
+       "name": "Philip M Moran",
+       "candidate": "Mike Moran",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9471.07,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cedric Hayden",
+       "candidate": "Cedric Ross Hayden",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 124050.07,
+       "expenditures": null
+      },
+      {
+       "name": "Vincent Portulano",
+       "candidate": "Vincent T. Portulano",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2134.2,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "PAUL HOLVEY",
+       "candidate": "Paul R. Holvey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 120904.54,
+       "expenditures": null
+      },
+      {
+       "name": "Mary M Tucker",
+       "candidate": "Mary M. Tucker",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 585.62,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Catherine McKeown",
+       "candidate": "Caddy McKeown",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 365369.26,
+       "expenditures": null
+      },
+      {
+       "name": "Teri L Grier",
+       "candidate": "Teri Grier",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 40729.33,
+       "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Donohue For Representative District 10",
+       "name": "David Gomberg",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 99545.13,
+       "expenditures": null
+      },
+      {
+       "name": "Thomas M Donohue",
        "candidate": "Thomas M. Donohue",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 4986,
        "expenditures": null
-      },
+      }
+     ]
+    },
+    "11": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
       {
-       "name": "Gomberg for State Rep",
-       "candidate": "David Gomberg",
+       "name": "Philip N Barnhart",
+       "candidate": "Phil Barnhart",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 99545.13,
+       "contributions": 80615.04,
+       "expenditures": null
+      },
+      {
+       "name": "Joseph Potwora",
+       "candidate": "Joe Potwora",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 213530.34,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of John Lively",
-       "candidate": "John Lively",
+       "name": "John Lively",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 115708.37,
        "expenditures": null
+      },
+      {
+       "name": "robert schwartz",
+       "candidate": "Robert Schwartz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3374,
+       "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Nancy Nathanson",
-       "candidate": "Nancy Nathanson",
+       "name": "Nancy Nathanson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 219811.83,
        "expenditures": null
+      },
+      {
+       "name": "Laura D Cooper",
+       "candidate": "Laura D. Cooper",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6371.55,
+       "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Julie Fahey",
+       "name": "Julianne Fahey",
        "candidate": "Julie Fahey",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 280165.83,
        "expenditures": null
+      },
+      {
+       "name": "Kathleen K. Lamberg",
+       "candidate": "Kathy Lamberg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 285210.4,
+       "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Andy Olson",
-       "candidate": "Andy Olson",
+       "name": "Andy Olson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -631782,72 +631992,181 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "16": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Dan Rayfield",
+       "name": "Daniel A Rayfield",
        "candidate": "Dan Rayfield",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 203799.58,
        "expenditures": null
+      },
+      {
+       "name": "Andrew Freborg",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 1295,
+       "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Sherrie Sprenger",
-       "candidate": "Sherrie Sprenger",
+       "name": "Sherrie Sprenger",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 69600.15,
        "expenditures": null
+      },
+      {
+       "name": "Jeffrey D Goodwin",
+       "candidate": "Jeffrey D. Goodwin",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 4910.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Vic Gilliam",
+       "candidate": "Victor S. Gilliam",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 73148.55,
+       "expenditures": null
+      },
+      {
+       "name": "Tom Kane",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 36437.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jodi Hack",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 144990.86,
+       "expenditures": null
+      },
+      {
+       "name": "Larry J Trott",
+       "candidate": "Larry Trott",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13990.92,
+       "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Paul Evans",
-       "candidate": "Paul Evans",
+       "name": "Paul Evans",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 568288.2,
        "expenditures": null
+      },
+      {
+       "name": "Laura Morett",
+       "candidate": "Laura S. Morett",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 326211.87,
+       "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Oregonians for Clem",
+       "name": "Brian L Clem, Candidate",
        "candidate": "Brian Clem",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 158528.45,
        "expenditures": null
+      },
+      {
+       "name": "Douglas P Rodgers",
+       "candidate": "Doug Rodgers",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2506,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Patti Milne",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 661676.96,
+       "expenditures": null
+      },
+      {
+       "name": "Teresa Alonso Leon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 887689.18,
+       "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Nearman4Oregon",
-       "candidate": "Mike Nearman",
+       "name": "James (Jim) L. Thompson",
+       "candidate": "Jim Thompson",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 169905.17,
+       "expenditures": null
+      },
+      {
+       "name": "Mike Nearman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -631856,27 +632175,149 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "29": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "24": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Susan McLain",
-       "candidate": "Susan McLain",
+       "name": "Ron Noble",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 422549.25,
+       "expenditures": null
+      },
+      {
+       "name": "Ken B Moore",
+       "candidate": "Ken Moore",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 640029.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bill Post",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 132072.81,
+       "expenditures": null
+      },
+      {
+       "name": "Sharon Freeman",
+       "candidate": "Sharon P. Freeman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 3910.79,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ray Lister",
+       "candidate": "Ray M. Lister",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 321761.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jeff Barker",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 121495.03,
+       "expenditures": null
+      },
+      {
+       "name": "Gary M Carlson",
+       "candidate": "Gary M. Carlson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8232.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Susan McLain",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 245861.71,
        "expenditures": null
+      },
+      {
+       "name": "Juanita P Lint",
+       "candidate": "Juanita Lint",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 159478.94,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Janeen Sollman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 408162.34,
+       "expenditures": null
+      },
+      {
+       "name": "Dan Mason",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 207247.03,
+       "expenditures": null
+      },
+      {
+       "name": "Kyle Markley",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 5873.19,
+       "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Brad Witt for State Representative",
+       "name": "Bradley K Witt",
        "candidate": "Brad Witt",
        "party": "D",
        "partyLabel": "Democratic",
@@ -631886,12 +632327,58 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "34": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "32": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Ken Helm for Oregon",
+       "name": "Deborah A. Boone",
+       "candidate": "Deborah Boone",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 68138.45,
+       "expenditures": null
+      },
+      {
+       "name": "Bruce L Bobek",
+       "candidate": "Bruce L. Bobek",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 30164.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mitch Greenlick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 67826.54,
+       "expenditures": null
+      },
+      {
+       "name": "John Verbeek",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1652.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Kenneth D Helm",
        "candidate": "Ken Helm",
        "party": "D",
        "partyLabel": "Democratic",
@@ -631901,27 +632388,164 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "38": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "35": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Ann Lininger",
-       "candidate": "Ann Lininger",
+       "name": "Margaret Doherty",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 53524.33,
+       "expenditures": null
+      },
+      {
+       "name": "Jessica Cousineau",
+       "candidate": "Jessica L. Cousineau",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 25818.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jennifer A Williamson",
+       "candidate": "Jennifer Williamson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 451462.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Julie N Parrish",
+       "candidate": "Julie Parrish",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 319175.84,
+       "expenditures": null
+      },
+      {
+       "name": "Paul C Southwick",
+       "candidate": "Paul Southwick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 325453.3,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ann Lininger",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 228248.56,
        "expenditures": null
+      },
+      {
+       "name": "Patrick E. De Klotz",
+       "candidate": "Patrick Deklotz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9220.91,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bill Kennemer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 152527.7,
+       "expenditures": null
+      },
+      {
+       "name": "Charles Gallia",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16011.46,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mark Meek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 621004.24,
+       "expenditures": null
+      },
+      {
+       "name": "Evon Tekorius",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 196312,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Karin Power",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 59947.76,
+       "expenditures": null
+      },
+      {
+       "name": "Timothy McMenamin",
+       "candidate": "Tim McMenamin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 16614.63,
+       "expenditures": null
       }
      ]
     },
     "42": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Rob Nosse",
+       "name": "Rob A Nosse",
        "candidate": "Rob Nosse",
        "party": "D",
        "partyLabel": "Democratic",
@@ -631932,11 +632556,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "43": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Tawna Sanchez for Oregon",
+       "name": "Tawna D Sanchez",
        "candidate": "Tawna Sanchez",
        "party": "D",
        "partyLabel": "Democratic",
@@ -631947,26 +632571,84 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "44": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Tina Kotek",
-       "candidate": "Tina Kotek",
+       "name": "Tina Kotek",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 588716.62,
        "expenditures": null
+      },
+      {
+       "name": "Joe Rowe",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 225,
+       "expenditures": null
+      }
+     ]
+    },
+    "45": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Barbara Smith Warner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 107587.68,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Alissa Keny-Guyer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 158266,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Diego Hernandez",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 72827.97,
+       "expenditures": null
+      },
+      {
+       "name": "Michael P Langley",
+       "candidate": "Michael P. Langley",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 775,
+       "expenditures": null
       }
      ]
     },
     "48": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Reardon for Oregon",
+       "name": "Michael J Reardon",
        "candidate": "Jeff Reardon",
        "party": "D",
        "partyLabel": "Democratic",
@@ -631975,7 +632657,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Crawley for Oregon",
+       "name": "Timothy I. Crawley, Esq, Mr.",
        "candidate": "Timothy Crawley",
        "party": "O",
        "partyLabel": "Other",
@@ -631985,12 +632667,67 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "51": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "49": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Committee to Elect Janelle Bynum",
+       "name": "Christopher S Gorsek",
+       "candidate": "Chris Gorsek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 36743.64,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Carla Piluso",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 91158.83,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Calcagno",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 30229.3,
+       "expenditures": null
+      },
+      {
+       "name": "maria stella armstrong",
+       "candidate": "Stella Armstrong",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1035,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Lori DeRemer",
+       "candidate": "Lori Chavez-Deremer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 871527.2,
+       "expenditures": null
+      },
+      {
+       "name": "Janelle Bynum",
        "candidate": "Janelle S. Bynum",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632000,13 +632737,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "53": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "52": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Committee to Elect Gene Whisnant",
-       "candidate": "Gene Whisnant",
+       "name": "Mark Johnson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 752698.7,
+       "expenditures": null
+      },
+      {
+       "name": "Mark Reynolds",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 228898.37,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gene Whisnant",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -632014,61 +632772,305 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       }
      ]
-    }
-   },
-   "senate": {
-    "9": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    },
+    "54": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Fred Girod",
+       "name": "Knute Buehler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1140669.07,
+       "expenditures": null
+      },
+      {
+       "name": "Gena Goodman-Campbell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 406506.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mike McLane",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 956744.96,
+       "expenditures": null
+      },
+      {
+       "name": "Brie S Malarkey",
+       "candidate": "Brie S. Malarkey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2251.54,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "E Werner Reschke",
+       "candidate": "E. Werner Reschke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 45928.5,
+       "expenditures": null
+      },
+      {
+       "name": "Al Switzer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 42599.99,
+       "expenditures": null
+      },
+      {
+       "name": "Jonah Hakanson",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 640,
+       "expenditures": null
+      }
+     ]
+    },
+    "57": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Gregory V. Smith",
+       "candidate": "Greg Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 120451,
+       "expenditures": null
+      }
+     ]
+    },
+    "58": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Greg Barreto",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 237110,
+       "expenditures": null
+      }
+     ]
+    },
+    "59": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "John E. Huffman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 91749.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Cliff Bentz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 254376.92,
+       "expenditures": null
+      }
+     ]
+    }
+   },
+   "senate": {
+    "1": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Jeff B Kruse",
+       "candidate": "Jeff Kruse",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 143054.3,
+       "expenditures": null
+      },
+      {
+       "name": "Timm Rolek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 9918.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Herman Baertschiger",
+       "candidate": "Herman Baertschiger Jr.",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 115873.76,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Arnie Roblan",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 752026.34,
+       "expenditures": null
+      },
+      {
+       "name": "Dick Anderson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 791271.47,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Fred Girod",
        "candidate": "Fred Frank Girod",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 122202.3,
        "expenditures": null
+      },
+      {
+       "name": "Richard Harisay",
+       "candidate": "Rich Harisay",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2114.1,
+       "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Boquist Leadership Fund",
-       "candidate": "Brian J. Boquist",
+       "name": "Brian J. Boquist",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 257916.15,
        "expenditures": null
+      },
+      {
+       "name": "Ross Swartzendruber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8232.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "14": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Mark Hass",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 202019.89,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ginny Burdick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 306920.12,
+       "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Kathleen Taylor for Oregon",
-       "candidate": "Kathleen Taylor",
+       "name": "Kathleen Taylor",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 90905.85,
        "expenditures": null
+      },
+      {
+       "name": "James F Ofsink",
+       "candidate": "James Ofsink",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 36159.04,
+       "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Friends of Lew Frederick",
-       "candidate": "Lew Frederick",
+       "name": "Lew Frederick",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -632077,32 +633079,123 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "27": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "23": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Tim Knopp for State Senate",
-       "candidate": "Tim Knopp",
+       "name": "Michael E. Dembrow",
+       "candidate": "Michael Dembrow",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 140715,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Laurie S Monnes Anderson",
+       "candidate": "Laurie Monnesanderson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 422293.5,
+       "expenditures": null
+      },
+      {
+       "name": "Tamie Tlustos-Arnold",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 133459.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Tim Knopp",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 468257.76,
        "expenditures": null
+      },
+      {
+       "name": "Greg Delgado",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14856.66,
+       "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2016",
      "candidates": [
       {
-       "name": "Committee to Elect Dennis Linthicum",
+       "name": "Dennis B Linthicum",
        "candidate": "Dennis Linthicum",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 73824.23,
+       "expenditures": null
+      },
+      {
+       "name": "Todd D Kepple",
+       "candidate": "Todd Kepple",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 109222.55,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Bill Hansell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 181197.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2016",
+     "candidates": [
+      {
+       "name": "Ted Ferrioli",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 546331.33,
+       "expenditures": null
+      },
+      {
+       "name": "William M Stringer",
+       "candidate": "W. Mark Stringer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1108.46,
        "expenditures": null
       }
      ]
@@ -632111,12 +633204,87 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   },
   "2018": {
    "house": {
-    "5": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "1": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Committee to Elect Pam Marsh",
+       "name": "David Brock Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 148013.14,
+       "expenditures": null
+      },
+      {
+       "name": "Eldon W. Rollins",
+       "candidate": "Eldon Rollins",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 76.83,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Gary L Leif",
+       "candidate": "Gary Leif",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 56214.07,
+       "expenditures": null
+      },
+      {
+       "name": "Megan Salter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 11123.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Carl Wilson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 127255,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Duane Stark",
+       "candidate": "Duane A. Stark",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 103869,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Pam J Marsh",
        "candidate": "Pam Marsh",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632127,11 +633295,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "6": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Kim Wallan",
+       "name": "Kimberly D. Wallan",
        "candidate": "Kim Wallan",
        "party": "R",
        "partyLabel": "Republican",
@@ -632141,37 +633309,120 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "10": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "7": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Donohue For Representative District 10",
+       "name": "Cedric Hayden",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 180459,
+       "expenditures": null
+      },
+      {
+       "name": "Christy Inskip",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 48637.81,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "PAUL HOLVEY",
+       "candidate": "Paul R. Holvey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 146144.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "9": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Catherine McKeown",
+       "candidate": "Caddy McKeown",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1053867.43,
+       "expenditures": null
+      },
+      {
+       "name": "Teri L Grier",
+       "candidate": "Teri Grier",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 301676.35,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "David Gomberg",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 113578.67,
+       "expenditures": null
+      },
+      {
+       "name": "Thomas M Donohue",
        "candidate": "Thomas M. Donohue",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 14843.37,
        "expenditures": null
-      },
+      }
+     ]
+    },
+    "11": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
       {
-       "name": "Gomberg for State Rep",
-       "candidate": "David Gomberg",
+       "name": "Marty L Wilde",
+       "candidate": "Marty Wilde",
        "party": "D",
        "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 113578.67,
+       "incumbent": false,
+       "contributions": 487381.85,
+       "expenditures": null
+      },
+      {
+       "name": "Mark F Herbert",
+       "candidate": "Mark F. Herbert",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 310237.96,
        "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of John Lively",
-       "candidate": "John Lively",
+       "name": "John Lively",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -632181,12 +633432,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "13": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Nancy Nathanson",
-       "candidate": "Nancy Nathanson",
+       "name": "Nancy Nathanson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -632196,11 +633446,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "14": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Julie Fahey",
+       "name": "Julianne Fahey",
        "candidate": "Julie Fahey",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632209,7 +633459,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Rich Cunningham",
+       "name": "Richard A Cunningham",
        "candidate": "Rich Cunningham",
        "party": "R",
        "partyLabel": "Republican",
@@ -632220,26 +633470,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "15": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Shelly Boshart Davis",
-       "candidate": "Shelly Boshart Davis",
+       "name": "Shelly Boshart Davis",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 176134.51,
        "expenditures": null
+      },
+      {
+       "name": "Jerred Taylor",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 17431.47,
+       "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Dan Rayfield",
+       "name": "Daniel A Rayfield",
        "candidate": "Dan Rayfield",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632250,86 +633507,203 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "17": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Sherrie Sprenger",
-       "candidate": "Sherrie Sprenger",
+       "name": "Sherrie Sprenger",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 76250.83,
        "expenditures": null
+      },
+      {
+       "name": "Renee Windsor-White",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2720,
+       "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Committee to Elect Rick Lewis",
-       "candidate": "Rick Lewis",
+       "name": "Rick Lewis",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 63591.79,
        "expenditures": null
+      },
+      {
+       "name": "BARRY SHAPIRO",
+       "candidate": "Barry Shapiro",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 35046.99,
+       "expenditures": null
+      }
+     ]
+    },
+    "19": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Denyc N Boles",
+       "candidate": "Denyc Nicole Boles",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 214606.03,
+       "expenditures": null
+      },
+      {
+       "name": "Micheal D Ellison",
+       "candidate": "Mike Ellison",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 142919.72,
+       "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Paul Evans",
-       "candidate": "Paul Evans",
+       "name": "Paul Evans",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 916561.77,
        "expenditures": null
+      },
+      {
+       "name": "Selma Pierce",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 573892.15,
+       "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Oregonians for Clem",
+       "name": "Brian L Clem, Candidate",
        "candidate": "Brian Clem",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 118728.41,
        "expenditures": null
+      },
+      {
+       "name": "Jack L Esp",
+       "candidate": "Jack L. Esp",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1640.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Teresa Alonso Leon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 249014.65,
+       "expenditures": null
+      },
+      {
+       "name": "Martha S Heyen",
+       "candidate": "Marty Heyen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 72272.49,
+       "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Nearman4Oregon",
-       "candidate": "Mike Nearman",
+       "name": "Mike Nearman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 94409.66,
        "expenditures": null
+      },
+      {
+       "name": "Daniel M Jaffer",
+       "candidate": "Danny Jaffer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 91738.31,
+       "expenditures": null
+      }
+     ]
+    },
+    "24": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Ron Noble",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 144792.4,
+       "expenditures": null
+      },
+      {
+       "name": "Ken B Moore",
+       "candidate": "Ken Moore",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10941.96,
+       "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Dave McCall",
+       "name": "Bill Post",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 84529.79,
+       "expenditures": null
+      },
+      {
+       "name": "David N McCall",
        "candidate": "Dave McCall",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632339,27 +633713,108 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "29": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "26": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Susan McLain",
-       "candidate": "Susan McLain",
+       "name": "Armand R Vial",
+       "candidate": "Rich Vial",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 221464.62,
+       "expenditures": null
+      },
+      {
+       "name": "Courtney Neron",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 48688.31,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Brian Pierson",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 21400,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jeff Barker",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 139111.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Susan McLain",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 157727.23,
        "expenditures": null
+      },
+      {
+       "name": "David Molina",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 36959.3,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Janeen Sollman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 64960.96,
+       "expenditures": null
+      },
+      {
+       "name": "Dorothy J Merritt",
+       "candidate": "Dorothy Merritt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18884.65,
+       "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Brad Witt for State Representative",
+       "name": "Bradley K Witt",
        "candidate": "Brad Witt",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632368,7 +633823,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Stout for State Rep",
+       "name": "Brian G Stout",
        "candidate": "Brian G. Stout",
        "party": "R",
        "partyLabel": "Republican",
@@ -632378,12 +633833,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "34": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "32": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Ken Helm for Oregon",
+       "name": "Tiffiny Mitchell",
+       "candidate": "Tiffiny K. Mitchell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 534598.01,
+       "expenditures": null
+      },
+      {
+       "name": "Vineeta Lower",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 208396.96,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Mitch Greenlick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 54428.67,
+       "expenditures": null
+      },
+      {
+       "name": "Elizabeth Reye",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 600,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Kenneth D Helm",
        "candidate": "Ken Helm",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632393,27 +633893,146 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "39": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "35": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Christine Drazan",
-       "candidate": "Christine Drazan",
+       "name": "Margaret Doherty",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 57098.6,
+       "expenditures": null
+      },
+      {
+       "name": "Robert H Niemeyer, III",
+       "candidate": "Bob Niemeyer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2610,
+       "expenditures": null
+      }
+     ]
+    },
+    "36": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Jennifer A Williamson",
+       "candidate": "Jennifer Williamson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 464677.2,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Julie N Parrish",
+       "candidate": "Julie Parrish",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 455271.42,
+       "expenditures": null
+      },
+      {
+       "name": "Rachel Prusak",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 894952.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "38": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Andrea Salinas",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 86377.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Christine Drazan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 210768.83,
        "expenditures": null
+      },
+      {
+       "name": "Elizabeth A Graser-Lindsey, Dr.",
+       "candidate": "Elizabeth Graser-Lindsey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13383.25,
+       "expenditures": null
+      }
+     ]
+    },
+    "40": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Mark Meek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 420562.44,
+       "expenditures": null
+      },
+      {
+       "name": "Josh Hill",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 395781.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Karin Power",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 83450.99,
+       "expenditures": null
       }
      ]
     },
     "42": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Rob Nosse",
+       "name": "Rob A Nosse",
        "candidate": "Rob Nosse",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632424,11 +634043,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "43": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Tawna Sanchez for Oregon",
+       "name": "Tawna D Sanchez",
        "candidate": "Tawna Sanchez",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632439,12 +634058,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "44": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Tina Kotek",
-       "candidate": "Tina Kotek",
+       "name": "Tina Kotek",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -632453,12 +634071,54 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "48": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "45": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Reardon for Oregon",
+       "name": "Barbara Smith Warner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 139260.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Alissa Keny-Guyer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 110510.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Diego Hernandez",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 68284.44,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Michael J Reardon",
        "candidate": "Jeff Reardon",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632468,12 +634128,59 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "51": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "49": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Committee to Elect Janelle Bynum",
+       "name": "Christopher S Gorsek",
+       "candidate": "Chris Gorsek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 68663.11,
+       "expenditures": null
+      },
+      {
+       "name": "Justin Hwang",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 108840.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "50": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Carla Piluso",
+       "candidate": "Carla C. Piluso",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 59462.05,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Lori DeRemer",
+       "candidate": "Lori Chavez-Deremer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 593576.5,
+       "expenditures": null
+      },
+      {
+       "name": "Janelle Bynum",
        "candidate": "Janelle S. Bynum",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632483,12 +634190,42 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "53": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "52": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Jack Zika for State Representative",
+       "name": "Jeff Helfrich",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 700418.14,
+       "expenditures": null
+      },
+      {
+       "name": "Anna Williams",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 665806.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Eileen Kiely",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 52818.25,
+       "expenditures": null
+      },
+      {
+       "name": "Joseph (Jack) J Zika, III",
        "candidate": "Jack Zika",
        "party": "R",
        "partyLabel": "Republican",
@@ -632499,12 +634236,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "54": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Boddie For Bend",
-       "candidate": "Nathan K. Boddie",
+       "name": "Cheri Helt",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 543346.09,
+       "expenditures": null
+      },
+      {
+       "name": "Nathan K. Boddie",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -632512,22 +634256,69 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Cheri Helt for State Representative",
-       "candidate": "Cheri Helt",
+       "name": "Amanda La Bell",
+       "candidate": "Amanda la Bell",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 10485.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Mike McLane",
        "party": "R",
        "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 686116.67,
+       "expenditures": null
+      },
+      {
+       "name": "Karen A Rippberger",
+       "candidate": "Karen Rippberger",
+       "party": "D",
+       "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 543346.09,
+       "contributions": 9950.52,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "E Werner Reschke",
+       "candidate": "E. Werner Reschke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 104027.69,
+       "expenditures": null
+      },
+      {
+       "name": "Taylor R Tupper",
+       "candidate": "Taylor Tupper",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8717.4,
        "expenditures": null
       }
      ]
     },
     "57": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Committee to Re-Elect Greg Smith",
+       "name": "Gregory V. Smith",
        "candidate": "Greg Smith",
        "party": "R",
        "partyLabel": "Republican",
@@ -632536,39 +634327,82 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       }
      ]
+    },
+    "58": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Greg Barreto",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 310360.53,
+       "expenditures": null
+      }
+     ]
+    },
+    "59": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Daniel G Bonham",
+       "candidate": "Daniel G. Bonham",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 102712.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Lynn P Findley",
+       "candidate": "Lynn P. Findley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 80080.65,
+       "expenditures": null
+      }
+     ]
     }
    },
    "senate": {
     "3": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Committee to Elect Jeff Golden",
-       "candidate": "Jeff Golden",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 215496.92,
-       "expenditures": null
-      },
-      {
-       "name": "Friends of Jessica Gomez",
+       "name": "Jessica L Gomez",
        "candidate": "Jessica Gomez",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 570066.88,
        "expenditures": null
+      },
+      {
+       "name": "Jeff Golden",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 215496.92,
+       "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends for Floyd Prozanski",
+       "name": "Floyd F. Prozanski, Jr.",
        "candidate": "Floyd Prozanski",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632578,42 +634412,157 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "10": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "6": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Deb Patterson",
+       "name": "Lee Beyer",
+       "candidate": "Lee L. Beyer",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 212206.4,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "James I Manning, Jr.",
+       "candidate": "James I. Manning Jr.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 158718.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Sara Gelser Blouin",
+       "candidate": "Sara A. Gelser",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 93864.5,
+       "expenditures": null
+      },
+      {
+       "name": "Erik S Parks",
+       "candidate": "Erik S. Parks",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1344.8,
+       "expenditures": null
+      }
+     ]
+    },
+    "10": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Deborah Patterson",
        "candidate": "Deb Patterson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 124459.97,
        "expenditures": null
+      },
+      {
+       "name": "Jackie Winters",
+       "candidate": "Jackie F. Winters",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 673151.08,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Peter Courtney",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 555116.87,
+       "expenditures": null
+      },
+      {
+       "name": "Greg Warnock",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 62028.47,
+       "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Kim Thatcher",
-       "candidate": "Kim Thatcher",
+       "name": "Kim Thatcher",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 193597.95,
        "expenditures": null
+      },
+      {
+       "name": "Sarah R Grider",
+       "candidate": "Sarah Grider",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 38081.17,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Chuck Riley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 346332.38,
+       "expenditures": null
+      },
+      {
+       "name": "Alexander Flores",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 690459.81,
+       "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Committee to Elect Betsy Johnson",
+       "name": "Elizabeth Johnson",
        "candidate": "Betsy Johnson",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632624,26 +634573,58 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "19": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Friends of Rob Wagner",
+       "name": "Robert Wagner",
        "candidate": "Rob Wagner",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 205151.72,
        "expenditures": null
+      },
+      {
+       "name": "David Poulson",
+       "candidate": "David C. Poulson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26168.1,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Alan R Olsen",
+       "candidate": "Alan R. Olsen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 416904.95,
+       "expenditures": null
+      },
+      {
+       "name": "Charles Gallia",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 271002.34,
+       "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2018",
      "candidates": [
       {
-       "name": "Committee to Elect Shemia Fagan",
+       "name": "Shemia P Fagan",
        "candidate": "Shemia Fagan",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632652,18 +634633,76 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       }
      ]
+    },
+    "26": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2018",
+     "candidates": [
+      {
+       "name": "Chuck Thomsen",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 821386.24,
+       "expenditures": null
+      },
+      {
+       "name": "Chrissy Reitz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 735553.45,
+       "expenditures": null
+      }
+     ]
     }
    }
   },
   "2020": {
    "house": {
-    "3": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "1": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Lily Morgan",
-       "candidate": "Lily Morgan",
+       "name": "David Brock Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 144029.13,
+       "expenditures": null
+      },
+      {
+       "name": "Calla Felicity",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5446.85,
+       "expenditures": null
+      }
+     ]
+    },
+    "2": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Gary L Leif",
+       "candidate": "Gary Leif",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 65938.29,
+       "expenditures": null
+      }
+     ]
+    },
+    "3": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Lily Morgan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -632673,12 +634712,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "4": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Mary Middleton",
-       "candidate": "Mary Middleton",
+       "name": "Duane Stark",
+       "candidate": "Duane A. Stark",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 132962.4,
+       "expenditures": null
+      },
+      {
+       "name": "Mary Middleton",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -632688,11 +634735,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "5": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Committee to Elect Pam Marsh",
+       "name": "Pam J Marsh",
        "candidate": "Pam Marsh",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632703,26 +634750,81 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "6": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Kim Wallan",
+       "name": "Kimberly D. Wallan",
        "candidate": "Kim Wallan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 131272.01,
        "expenditures": null
+      },
+      {
+       "name": "Alberto Enriquez",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 52631.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Cedric Hayden",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 165627.4,
+       "expenditures": null
+      },
+      {
+       "name": "Jerry Samaniego",
+       "candidate": "Jerry M. Samaniego",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 2895,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "PAUL HOLVEY",
+       "candidate": "Paul R. Holvey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 136129.5,
+       "expenditures": null
+      },
+      {
+       "name": "Timothy W Aldal",
+       "candidate": "Timothy W. Aldal",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6580.88,
+       "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Boomer Wright",
+       "name": "Gerald D Wright",
        "candidate": "Boomer Wright",
        "party": "R",
        "partyLabel": "Republican",
@@ -632731,7 +634833,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Cal Mukumoto",
+       "name": "Calvin Mukumoto",
        "candidate": "Cal Mukumoto",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632742,26 +634844,42 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "10": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Gomberg for State Rep",
-       "candidate": "David Gomberg",
+       "name": "David Gomberg",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 109445.47,
        "expenditures": null
+      },
+      {
+       "name": "Max Sherman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 41055.79,
+       "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Katie Boshart Glaser",
+       "name": "Marty L Wilde",
+       "candidate": "Marty Wilde",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 256236.52,
+       "expenditures": null
+      },
+      {
+       "name": "Katherine A. Glaser",
        "candidate": "Katie Boshart Glaser",
        "party": "R",
        "partyLabel": "Republican",
@@ -632772,41 +634890,57 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "12": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of John Lively",
-       "candidate": "John Lively",
+       "name": "John Lively",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 75236.81,
        "expenditures": null
+      },
+      {
+       "name": "Ruth E LINOZ",
+       "candidate": "Ruth E. Linoz",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 101307.59,
+       "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Nancy Nathanson",
-       "candidate": "Nancy Nathanson",
+       "name": "Nancy Nathanson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 144391.32,
        "expenditures": null
+      },
+      {
+       "name": "David J Smith",
+       "candidate": "David J. Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9261.97,
+       "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Julie Fahey",
+       "name": "Julianne Fahey",
        "candidate": "Julie Fahey",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632815,7 +634949,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Rich Cunningham",
+       "name": "Richard A Cunningham",
        "candidate": "Rich Cunningham",
        "party": "R",
        "partyLabel": "Republican",
@@ -632826,42 +634960,81 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "15": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Shelly Boshart Davis",
-       "candidate": "Shelly Boshart Davis",
+       "name": "Shelly Boshart Davis",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 293245.89,
        "expenditures": null
+      },
+      {
+       "name": "Miriam G Cummins",
+       "candidate": "Miriam G. Cummins",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 41703.67,
+       "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Dan Rayfield",
+       "name": "Daniel A Rayfield",
        "candidate": "Dan Rayfield",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 346998.51,
        "expenditures": null
+      },
+      {
+       "name": "Jason Hughes",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1600,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Jami J Cate",
+       "candidate": "Jami Cate",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 149524.52,
+       "expenditures": null
+      },
+      {
+       "name": "Paige K Hook",
+       "candidate": "Paige Hook",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21938.48,
+       "expenditures": null
       }
      ]
     },
     "18": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Committee to Elect Rick Lewis",
-       "candidate": "Rick Lewis",
+       "name": "Rick Lewis",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -632870,58 +635043,136 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "20": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "19": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Paul Evans",
-       "candidate": "Paul Evans",
+       "name": "Raquel C Moore-Green",
+       "candidate": "Raquel Moore-Green",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 812549.01,
+       "expenditures": null
+      },
+      {
+       "name": "Jacqueline M Leung",
+       "candidate": "Jacqueline M. Leung",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 177790.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "20": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Paul Evans",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 618457.68,
        "expenditures": null
+      },
+      {
+       "name": "Selma Pierce",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 670336.25,
+       "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Oregonians for Clem",
+       "name": "Brian L Clem, Candidate",
        "candidate": "Brian Clem",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 136443.13,
        "expenditures": null
+      },
+      {
+       "name": "Jack L Esp",
+       "candidate": "Jack L. Esp",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5508.24,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Teresa Alonso Leon",
+       "candidate": "Teresa Leon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 101927.65,
+       "expenditures": null
+      },
+      {
+       "name": "Anna Kasachev",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 122770.55,
+       "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Nearman4Oregon",
-       "candidate": "Mike Nearman",
+       "name": "Mike Nearman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 33426.74,
        "expenditures": null
+      },
+      {
+       "name": "Sean K Scorvo",
+       "candidate": "Sean K. Scorvo",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5392.3,
+       "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Lynnette Shaw",
-       "candidate": "Lynnette Shaw",
+       "name": "Ron Noble",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 412008.33,
+       "expenditures": null
+      },
+      {
+       "name": "Lynnette Shaw",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -632930,12 +635181,88 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "28": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "25": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Daniel Martin",
+       "name": "Bill Post",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 165455.87,
+       "expenditures": null
+      },
+      {
+       "name": "Ramiro Navarro",
+       "candidate": "Ramiro Navarro Jr.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13786.63,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Courtney Neron",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 297383.77,
+       "expenditures": null
+      },
+      {
+       "name": "Peggy Stevens",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 497396.15,
+       "expenditures": null
+      }
+     ]
+    },
+    "27": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Sheri Schouten",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 52217.13,
+       "expenditures": null
+      },
+      {
+       "name": "Sandra Nelson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2457.48,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Wlnsvey E Campos",
+       "candidate": "Wlnsvey E. Campos",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 145837.32,
+       "expenditures": null
+      },
+      {
+       "name": "Daniel R Martin",
        "candidate": "Daniel R. Martin",
        "party": "R",
        "partyLabel": "Republican",
@@ -632946,26 +635273,47 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "29": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Susan McLain",
-       "candidate": "Susan McLain",
+       "name": "Susan McLain",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 65040,
        "expenditures": null
+      },
+      {
+       "name": "Dale Fishback",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8067.38,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Janeen Sollman",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 68187.36,
+       "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Brad Witt for State Representative",
+       "name": "Bradley K Witt",
        "candidate": "Brad Witt",
        "party": "D",
        "partyLabel": "Democratic",
@@ -632974,7 +635322,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Stout for State Rep",
+       "name": "Brian G Stout",
        "candidate": "Brian G. Stout",
        "party": "R",
        "partyLabel": "Republican",
@@ -632984,12 +635332,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "33": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "32": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Pick Dick Courter",
+       "name": "Suzanne Weber",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1242647.72,
+       "expenditures": null
+      },
+      {
+       "name": "Debbie Boothe-Schmidt",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1540291.27,
+       "expenditures": null
+      }
+     ]
+    },
+    "33": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Maxine E Dexter",
+       "candidate": "Maxine E. Dexter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 234323.43,
+       "expenditures": null
+      },
+      {
+       "name": "Richard W. Courter",
        "candidate": "Dick Courter",
        "party": "R",
        "partyLabel": "Republican",
@@ -633000,11 +635379,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "34": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Ken Helm for Oregon",
+       "name": "Kenneth D Helm",
        "candidate": "Ken Helm",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633015,11 +635394,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "35": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Bob Niemeyer Campaign",
+       "name": "Dacia Grayber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 141884.21,
+       "expenditures": null
+      },
+      {
+       "name": "Robert H Niemeyer, III",
        "candidate": "Bob Niemeyer",
        "party": "R",
        "partyLabel": "Republican",
@@ -633029,13 +635416,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "37": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "36": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Kelly Sloop",
-       "candidate": "Kelly Sloop",
+       "name": "Lisa Reynolds",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 194805.3,
+       "expenditures": null
+      },
+      {
+       "name": "James Ball",
+       "candidate": "James A. Ball",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 9000.77,
+       "expenditures": null
+      }
+     ]
+    },
+    "37": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Rachel Prusak",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 396918.35,
+       "expenditures": null
+      },
+      {
+       "name": "Kelly Sloop",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -633044,13 +635461,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "39": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "38": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Christine Drazan",
-       "candidate": "Christine Drazan",
+       "name": "Andrea Salinas",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 161533.58,
+       "expenditures": null
+      },
+      {
+       "name": "Patrick T Castles",
+       "candidate": "Patrick Castles",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 4443.76,
+       "expenditures": null
+      }
+     ]
+    },
+    "39": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Christine Drazan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -633058,7 +635497,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Tessah Danel",
+       "name": "Tessah L Danel",
        "candidate": "Tessah L. Danel",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633068,12 +635507,50 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "42": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "40": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Rob Nosse",
+       "name": "Mark Meek",
+       "candidate": "Mark W. Meek",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 116841.5,
+       "expenditures": null
+      },
+      {
+       "name": "Josh P Howard",
+       "candidate": "Josh Howard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 18807.97,
+       "expenditures": null
+      }
+     ]
+    },
+    "41": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Karin Power",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 94180,
+       "expenditures": null
+      }
+     ]
+    },
+    "42": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Rob A Nosse",
        "candidate": "Rob Nosse",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633084,11 +635561,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "43": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Tawna Sanchez for Oregon",
+       "name": "Tawna D Sanchez",
        "candidate": "Tawna Sanchez",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633099,12 +635576,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "44": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Tina Kotek",
-       "candidate": "Tina Kotek",
+       "name": "Tina Kotek",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -633113,12 +635589,71 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "48": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "45": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Reardon for Oregon",
+       "name": "Barbara Smith Warner",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 370008.39,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Katherine Pham",
+       "candidate": "Khanh Pham",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 199030.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "47": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Diego Hernandez",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 17217.99,
+       "expenditures": null
+      },
+      {
+       "name": "Ashton Simpson",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 40818,
+       "expenditures": null
+      },
+      {
+       "name": "Ryan Gardner",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1397.02,
+       "expenditures": null
+      }
+     ]
+    },
+    "48": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Michael J Reardon",
        "candidate": "Jeff Reardon",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633129,11 +635664,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "49": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Elect Zach Hudson",
+       "name": "Zachary T Hudson",
        "candidate": "Zach Hudson",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633143,66 +635678,175 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "51": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "50": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Committee to Elect Janelle Bynum",
+       "name": "Ricardo Ruiz",
+       "candidate": "Ricki Ruiz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 94082.09,
+       "expenditures": null
+      },
+      {
+       "name": "Amelia Salvador",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 93242.34,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Janelle Bynum",
        "candidate": "Janelle S. Bynum",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 166739.19,
        "expenditures": null
+      },
+      {
+       "name": "Jane J Hays",
+       "candidate": "Jane J. Hays",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 13611.3,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Jeff Helfrich",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 863324.86,
+       "expenditures": null
+      },
+      {
+       "name": "Anna Williams",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 877805.93,
+       "expenditures": null
       }
      ]
     },
     "53": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Jack Zika for State Representative",
+       "name": "Emerson Levy",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 93367.82,
+       "expenditures": null
+      },
+      {
+       "name": "Joseph (Jack) J Zika, III",
        "candidate": "Jack Zika",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 176650.38,
        "expenditures": null
-      },
-      {
-       "name": "Friends of Em Levy",
-       "candidate": "Emerson Levy",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 93367.82,
-       "expenditures": null
       }
      ]
     },
     "54": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Cheri Helt for State Representative",
-       "candidate": "Cheri Helt",
+       "name": "Cheri Helt",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 1099643.96,
        "expenditures": null
+      },
+      {
+       "name": "Jason S Kropf",
+       "candidate": "Jason Kropf",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 589089.11,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Vikki K Iverson",
+       "candidate": "Vikki Breese-Iverson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 226407.13,
+       "expenditures": null
+      },
+      {
+       "name": "Barbara J Fontaine",
+       "candidate": "Barbara Fontaine",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5798.94,
+       "expenditures": null
+      }
+     ]
+    },
+    "56": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "E Werner Reschke",
+       "candidate": "E. Werner Reschke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 151980.82,
+       "expenditures": null
+      },
+      {
+       "name": "Faith N Leith",
+       "candidate": "Faith N. Leith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8113.17,
+       "expenditures": null
       }
      ]
     },
     "57": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Committee to Re-Elect Greg Smith",
+       "name": "Gregory V. Smith",
        "candidate": "Greg Smith",
        "party": "R",
        "partyLabel": "Republican",
@@ -633213,31 +635857,71 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "58": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Bobby Levy",
-       "candidate": "Bobby Levy",
+       "name": "Bobby Levy",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 151229.75,
        "expenditures": null
+      },
+      {
+       "name": "Nolan E Bylenga",
+       "candidate": "Nolan E. Bylenga",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1745.93,
+       "expenditures": null
+      }
+     ]
+    },
+    "59": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Daniel G Bonham",
+       "candidate": "Daniel G. Bonham",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 309099.84,
+       "expenditures": null
+      },
+      {
+       "name": "Arlene C Burns, Mayor",
+       "candidate": "Arlene C. Burns",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 35945.1,
+       "expenditures": null
       }
      ]
     },
     "60": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Mark Owens for Oregon",
-       "candidate": "Mark Owens",
+       "name": "Mark Owens",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 126852.42,
+       "expenditures": null
+      },
+      {
+       "name": "Beth Spell",
+       "candidate": "Beth E. Spell",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5825,
        "expenditures": null
       }
      ]
@@ -633245,12 +635929,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "1": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Heard Leadership PAC",
-       "candidate": "Dallas Heard",
+       "name": "Dallas Heard",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -633258,8 +635941,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "FRIENDS OF KAT STONE",
-       "candidate": "Kat Stone",
+       "name": "Kat Stone",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -633269,87 +635951,140 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "2": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Art Robinson for Oregon Senate",
-       "candidate": "Art Robinson",
+       "name": "Art Robinson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 303017.8,
        "expenditures": null
+      },
+      {
+       "name": "Jerry Allen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20754,
+       "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Dick Anderson for Oregon",
-       "candidate": "Dick Anderson",
+       "name": "Dick Anderson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 990467.68,
        "expenditures": null
+      },
+      {
+       "name": "Melissa T Cribbins",
+       "candidate": "Melissa T. Cribbins",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1204005.05,
+       "expenditures": null
       }
      ]
     },
     "9": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Fred Girod",
+       "name": "Fred Girod",
        "candidate": "Fred Frank Girod",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 876006.4,
        "expenditures": null
+      },
+      {
+       "name": "JAMES A HINSVARK",
+       "candidate": "Jim Hinsvark",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 13097.66,
+       "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Boquist Leadership Fund",
-       "candidate": "Brian J. Boquist",
+       "name": "Brian J. Boquist",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 165067.4,
        "expenditures": null
+      },
+      {
+       "name": "Bernadette W Hansen",
+       "candidate": "Bernadette Hansen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 35677.07,
+       "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Kate Lieber for State Senate",
-       "candidate": "Kate Lieber",
+       "name": "Kate Lieber",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 267908.61,
        "expenditures": null
+      },
+      {
+       "name": "Harmony Mulkey",
+       "candidate": "Harmony K. Mulkey",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 10813.86,
+       "expenditures": null
+      }
+     ]
+    },
+    "18": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Ginny Burdick",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 214358.57,
+       "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Kathleen Taylor for Oregon",
-       "candidate": "Kathleen Taylor",
+       "name": "Kathleen Taylor",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -633359,12 +636094,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "22": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Lew Frederick",
-       "candidate": "Lew Frederick",
+       "name": "Lew Frederick",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -633373,28 +636107,50 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "25": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "23": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Friends of Chris Gorsek",
+       "name": "Michael E. Dembrow",
+       "candidate": "Michael Dembrow",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 128040,
+       "expenditures": null
+      }
+     ]
+    },
+    "25": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Christopher S Gorsek",
        "candidate": "Chris Gorsek",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 287829.58,
        "expenditures": null
+      },
+      {
+       "name": "Justin Hwang",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 272409.87,
+       "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Tim Knopp for State Senate",
-       "candidate": "Tim Knopp",
+       "name": "Tim Knopp",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -633402,8 +636158,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Eileen Kiely for Oregon",
-       "candidate": "Eileen Kiely",
+       "name": "Eileen Kiely",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -633413,16 +636168,62 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "28": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2020",
      "candidates": [
       {
-       "name": "Committee to Elect Dennis Linthicum",
+       "name": "Dennis B Linthicum",
        "candidate": "Dennis Linthicum",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 151349.27,
+       "expenditures": null
+      },
+      {
+       "name": "Hugh Palcic",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 20266,
+       "expenditures": null
+      }
+     ]
+    },
+    "29": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Bill Hansell",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 236093.81,
+       "expenditures": null
+      }
+     ]
+    },
+    "30": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2020",
+     "candidates": [
+      {
+       "name": "Lynn P Findley",
+       "candidate": "Lynn P. Findley",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 295186.27,
+       "expenditures": null
+      },
+      {
+       "name": "Carina M Miller",
+       "candidate": "Carina M. Miller",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 61561.81,
        "expenditures": null
       }
      ]
@@ -633432,11 +636233,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2022": {
    "house": {
     "1": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Elect Bret Cecil",
+       "name": "David Brock Smith",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 144515.56,
+       "expenditures": null
+      },
+      {
+       "name": "Bret A Cecil",
        "candidate": "Bret Cecil",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633447,11 +636256,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "2": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Virgle Osborne",
+       "name": "Virgle Osborne",
        "candidate": "Virgle J. Osborne",
        "party": "R",
        "partyLabel": "Republican",
@@ -633460,8 +636269,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Kevin Bell for House District 2",
-       "candidate": "Kevin Bell",
+       "name": "Kevin Bell",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -633471,12 +636279,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "3": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Lily Morgan",
-       "candidate": "Lily Morgan",
+       "name": "Lily Morgan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -633485,12 +636292,26 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "5": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "4": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Committee to Elect Pam Marsh",
+       "name": "Christine Goodwin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 161179.6,
+       "expenditures": null
+      }
+     ]
+    },
+    "5": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Pam J Marsh",
        "candidate": "Pam Marsh",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633501,27 +636322,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "6": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Kim Wallan",
+       "name": "Kimberly D. Wallan",
        "candidate": "Kim Wallan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 111890,
        "expenditures": null
+      },
+      {
+       "name": "Daniel L Davis",
+       "candidate": "Dan Davis",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 16335.85,
+       "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of John Lively",
-       "candidate": "John Lively",
+       "name": "John Lively",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -633529,8 +636358,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Alan Stout for Oregon",
-       "candidate": "Alan Stout",
+       "name": "Alan Stout",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -633540,11 +636368,20 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "8": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Michael Moore",
+       "name": "PAUL HOLVEY",
+       "candidate": "Paul R. Holvey",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 170743.19,
+       "expenditures": null
+      },
+      {
+       "name": "Michael F Moore",
        "candidate": "Michael F. Moore",
        "party": "R",
        "partyLabel": "Republican",
@@ -633555,11 +636392,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "9": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Boomer Wright",
+       "name": "Gerald D Wright",
        "candidate": "Boomer Wright",
        "party": "R",
        "partyLabel": "Republican",
@@ -633568,8 +636405,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Rust for House",
-       "candidate": "Jerry Rust",
+       "name": "Jerry Rust",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -633579,26 +636415,65 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "10": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Gomberg for State Rep",
-       "candidate": "David Gomberg",
+       "name": "David Gomberg",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 291026.43,
        "expenditures": null
+      },
+      {
+       "name": "Celeste McEntee",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 115362.69,
+       "expenditures": null
+      }
+     ]
+    },
+    "11": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Jami J Cate",
+       "candidate": "Jami Cate",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 149694.51,
+       "expenditures": null
+      },
+      {
+       "name": "Mary K Cooke",
+       "candidate": "Mary K. Cooke",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5596.63,
+       "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Emmons for Oregon",
+       "name": "Charlie Conrad",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 109791,
+       "expenditures": null
+      },
+      {
+       "name": "Michelle M Emmons",
        "candidate": "Michelle Emmons",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633609,41 +636484,80 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "13": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Nancy Nathanson",
-       "candidate": "Nancy Nathanson",
+       "name": "Nancy Nathanson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 161470,
        "expenditures": null
+      },
+      {
+       "name": "Timothy S Sutherland",
+       "candidate": "Timothy S. Sutherland",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3645,
+       "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Julie Fahey",
+       "name": "Julianne Fahey",
        "candidate": "Julie Fahey",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 485658.58,
        "expenditures": null
+      },
+      {
+       "name": "Stan Stubblefield",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 42149.19,
+       "expenditures": null
+      }
+     ]
+    },
+    "15": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Shelly Boshart Davis",
+       "candidate": "Shelly Davis",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 328902,
+       "expenditures": null
+      },
+      {
+       "name": "Benjamin Watts",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 21807.74,
+       "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Dan Rayfield",
+       "name": "Daniel A Rayfield",
        "candidate": "Dan Rayfield",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633652,22 +636566,22 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Vote for Keith Lembke",
+       "name": "Roy Lembke",
        "candidate": "Keith Lembke",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 0,
+       "contributions": 250,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Ed Diehl for Oregon",
+       "name": "Edwin Diehl",
        "candidate": "Ed Diehl",
        "party": "R",
        "partyLabel": "Republican",
@@ -633678,86 +636592,152 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "18": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Committee to Elect Rick Lewis",
-       "candidate": "Rick Lewis",
+       "name": "Rick Lewis",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 64486.44,
        "expenditures": null
+      },
+      {
+       "name": "Jesse Smith",
+       "candidate": "Jesse S. Smith",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 10035,
+       "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Tom Andersen",
+       "name": "H Thomas Andersen",
        "candidate": "Tom Andersen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 677392.34,
        "expenditures": null
+      },
+      {
+       "name": "T.J. Sullivan",
+       "candidate": "T. J. Sullivan",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 368132.71,
+       "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Paul Evans",
-       "candidate": "Paul Evans",
+       "name": "Paul Evans",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 797950.08,
        "expenditures": null
+      },
+      {
+       "name": "Daniel Farrington",
+       "candidate": "Dan Farrington",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 183126.74,
+       "expenditures": null
       }
      ]
     },
     "21": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Mannix for Oregon PAC",
+       "name": "Kevin L Mannix",
        "candidate": "Kevin L. Mannix",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 557291.53,
        "expenditures": null
+      },
+      {
+       "name": "Ramiro Navarro",
+       "candidate": "Ramiro Navarro Jr.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 125423.95,
+       "expenditures": null
+      }
+     ]
+    },
+    "22": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Tracy M Cramer",
+       "candidate": "Tracy M. Cramer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 781204.56,
+       "expenditures": null
+      },
+      {
+       "name": "Anthony Medina",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 959017.01,
+       "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Anna Scharf",
+       "name": "Anna Scharf",
        "candidate": "Anna M. Scharf",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 143368.17,
        "expenditures": null
+      },
+      {
+       "name": "Krisstina Wright",
+       "candidate": "Kriss Wright",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5201,
+       "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Committee to Elect Lucetta Elmer",
+       "name": "Lucetta Elmer",
        "candidate": "Lucetta A. Elmer",
        "party": "R",
        "partyLabel": "Republican",
@@ -633766,7 +636746,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Victoria Ernst for District 24",
+       "name": "Victoria R Ernst",
        "candidate": "Victoria Ernst",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633777,51 +636757,103 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "25": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Bob Niemeyer Campaign",
-       "candidate": "Bob Niemeyer",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 575,
-       "expenditures": null
-      },
-      {
-       "name": "Friends of Ben Bowman",
+       "name": "Benjamin W Bowman",
        "candidate": "Ben Bowman",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 110107.96,
        "expenditures": null
+      },
+      {
+       "name": "Robert H Niemeyer, III",
+       "candidate": "Bob Niemeyer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 575,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Courtney Neron",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1042539.38,
+       "expenditures": null
+      },
+      {
+       "name": "Jason Fields",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 242904.66,
+       "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Ken Helm for Oregon",
+       "name": "Kenneth D Helm",
        "candidate": "Ken Helm",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 153616.22,
        "expenditures": null
+      },
+      {
+       "name": "Sandra Nelson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6230,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Dacia Grayber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 223371.32,
+       "expenditures": null
+      },
+      {
+       "name": "Patrick T Castles",
+       "candidate": "Patrick Castles",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5624.17,
+       "expenditures": null
       }
      ]
     },
     "29": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Susan McLain",
-       "candidate": "Susan McLain",
+       "name": "Susan McLain",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -633829,8 +636861,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Gina Munster Moore",
-       "candidate": "Gina Munster-Moore",
+       "name": "Gina Munster-Moore",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -633840,50 +636871,66 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "30": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Joe Everton for Hillsboro",
+       "name": "Nathan Sosa",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 115460.93,
+       "expenditures": null
+      },
+      {
+       "name": "Joseph K Everton",
        "candidate": "Joe Everton",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 46191.62,
        "expenditures": null
-      },
-      {
-       "name": "Nathan Sosa for Oregon",
-       "candidate": "Nathan Sosa",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 115460.93,
-       "expenditures": null
       }
      ]
     },
     "31": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Stout for State Rep",
+       "name": "Brian G Stout",
        "candidate": "Brian G. Stout",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 171145.49,
        "expenditures": null
+      },
+      {
+       "name": "Anthony Sorace",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 14142.29,
+       "expenditures": null
       }
      ]
     },
     "32": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Laity for Community",
+       "name": "Cyrus Javadi",
+       "candidate": "Cyrus B. Javadi",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 469407.21,
+       "expenditures": null
+      },
+      {
+       "name": "Logan C Laity",
        "candidate": "Logan C. Laity",
        "party": "D",
        "partyLabel": "Democratic",
@@ -633893,12 +636940,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "34": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "33": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of John Woods",
+       "name": "Maxine E Dexter",
+       "candidate": "Maxine E. Dexter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 99903.97,
+       "expenditures": null
+      }
+     ]
+    },
+    "34": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Lisa Reynolds",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 153672,
+       "expenditures": null
+      },
+      {
+       "name": "John F Woods",
        "candidate": "John Woods",
        "party": "R",
        "partyLabel": "Republican",
@@ -633909,21 +636979,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "35": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Daniel Martin",
-       "candidate": "Daniel R. Martin",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 0,
-       "expenditures": null
-      },
-      {
-       "name": "Chaichi for Oregon",
-       "candidate": "Farrah Chaichi",
+       "name": "Farrah Chaichi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -633933,12 +636993,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "36": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Hai Pham",
-       "candidate": "Hai Pham",
+       "name": "Hai Pham",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -633946,7 +637005,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Committee to Elect Greer Trice.",
+       "name": "Greer H Trice",
        "candidate": "Greer Trice",
        "party": "R",
        "partyLabel": "Republican",
@@ -633957,41 +637016,56 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "37": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Jules Walters",
+       "name": "Julianna Walters",
        "candidate": "Jules Walters",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 185827.18,
        "expenditures": null
+      },
+      {
+       "name": "Aeric Estep",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 26659.57,
+       "expenditures": null
       }
      ]
     },
     "38": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Daniel Nguyen",
-       "candidate": "Daniel Nguyen",
+       "name": "Daniel Nguyen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 251697.75,
        "expenditures": null
+      },
+      {
+       "name": "Alistair Firmin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 48242.65,
+       "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Committee to Elect Janelle Bynum",
+       "name": "Janelle Bynum",
        "candidate": "Janelle S. Bynum",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634000,8 +637074,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Kori Haynes",
-       "candidate": "Kori Haynes",
+       "name": "Kori Haynes",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -634011,11 +637084,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "40": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Annessa Hartman for Oregon",
+       "name": "Adam Baker",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 697462.79,
+       "expenditures": null
+      },
+      {
+       "name": "Annessa D Hartman",
        "candidate": "Annessa Hartman",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634026,11 +637107,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "41": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Mark Gamba for Oregon",
+       "name": "Mark Gamba",
        "candidate": "Mark F. Gamba",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634039,8 +637120,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Rob Reynolds",
-       "candidate": "Rob Reynolds",
+       "name": "Rob Reynolds",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -634050,11 +637130,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "42": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Rob Nosse",
+       "name": "Rob A Nosse",
        "candidate": "Rob Nosse",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634065,27 +637145,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "43": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Tawna Sanchez for Oregon",
+       "name": "Tawna D Sanchez",
        "candidate": "Tawna Sanchez",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 241634,
        "expenditures": null
+      },
+      {
+       "name": "TImothy E LeMaster",
+       "candidate": "Tim Lemaster",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 8039.23,
+       "expenditures": null
       }
      ]
     },
     "44": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Travis Nelson",
-       "candidate": "Travis Nelson",
+       "name": "Travis Nelson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -634095,26 +637183,48 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "45": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Thuy Tran",
-       "candidate": "Thuy Tran",
+       "name": "Thuy Tran",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 137227.91,
        "expenditures": null
+      },
+      {
+       "name": "George Donnerberg",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 57358.5,
+       "expenditures": null
+      }
+     ]
+    },
+    "46": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Katherine Pham",
+       "candidate": "Khanh Pham",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 156204.74,
+       "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Andrea Valderrama",
+       "name": "Andrea L Valderrama",
        "candidate": "Andrea Valderrama",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634125,26 +637235,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "48": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of John Masterman",
-       "candidate": "John Masterman",
+       "name": "John Masterman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 18465.73,
        "expenditures": null
+      },
+      {
+       "name": "Hoa H Nguyen",
+       "candidate": "Hoa H. Nguyen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 153183.34,
+       "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Elect Zach Hudson",
+       "name": "Randy E Lauer",
+       "candidate": "Randy E. Lauer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 712115.84,
+       "expenditures": null
+      },
+      {
+       "name": "Zachary T Hudson",
        "candidate": "Zach Hudson",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634154,13 +637281,73 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "53": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "50": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Em Levy",
-       "candidate": "Emerson Levy",
+       "name": "Ricardo Ruiz",
+       "candidate": "Ricki Ruiz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 144211.35,
+       "expenditures": null
+      },
+      {
+       "name": "Amelia Salvador",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 27720.51,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "james a hieb",
+       "candidate": "James Hieb",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 40378.79,
+       "expenditures": null
+      },
+      {
+       "name": "Walt R Trandum",
+       "candidate": "Walt Trandum",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5094.71,
+       "expenditures": null
+      }
+     ]
+    },
+    "52": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Jeff Helfrich",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 618530.83,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Emerson Levy",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -634168,8 +637355,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Michael Sipe for State Representative",
-       "candidate": "Michael Sipe",
+       "name": "Michael Sipe",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -634178,13 +637364,44 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "55": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "54": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Lepore for Oregon",
-       "candidate": "Brian Lepore",
+       "name": "Jason S Kropf",
+       "candidate": "Jason Kropf",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 142973,
+       "expenditures": null
+      },
+      {
+       "name": "Judy Trego",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 36495.72,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "E Werner Reschke",
+       "candidate": "E. Werner Reschke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 138354.58,
+       "expenditures": null
+      },
+      {
+       "name": "Brian Lepore",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -634194,26 +637411,35 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "56": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Emily McIntire",
+       "name": "Emily McIntire",
        "candidate": "Emily G. McIntire",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 76283.01,
        "expenditures": null
+      },
+      {
+       "name": "Jonathan Chenjeri",
+       "candidate": "Jonathan P. Chenjeri",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 8617.34,
+       "expenditures": null
       }
      ]
     },
     "57": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Committee to Re-Elect Greg Smith",
+       "name": "Gregory V. Smith",
        "candidate": "Greg Smith",
        "party": "R",
        "partyLabel": "Republican",
@@ -634224,12 +637450,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "58": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Bobby Levy",
-       "candidate": "Bobby Levy",
+       "name": "Bobby Levy",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -634238,13 +637463,27 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "60": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "59": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Mark Owens for Oregon",
-       "candidate": "Mark Owens",
+       "name": "Vikki K Iverson",
+       "candidate": "Vikki Breese-Iverson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1002039.67,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Mark Owens",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -634256,35 +637495,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "3": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Committee to Elect Jeff Golden",
-       "candidate": "Jeff Golden",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": true,
-       "contributions": 239198.9,
-       "expenditures": null
-      },
-      {
-       "name": "Sparacino for Oregon",
-       "candidate": "Randy Sparacino",
+       "name": "Randy Sparacino",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 1110376.96,
        "expenditures": null
+      },
+      {
+       "name": "Jeff Golden",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 239198.9,
+       "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends for Floyd Prozanski",
+       "name": "Floyd F. Prozanski, Jr.",
        "candidate": "Floyd Prozanski",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634293,8 +637530,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Pinnell For Government",
-       "candidate": "Eric Pinnell",
+       "name": "Eric Pinnell",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
@@ -634304,42 +637540,107 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "6": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Hayden for Oregon",
+       "name": "Cedric Hayden",
        "candidate": "Cedric R. Hayden",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 241050.48,
        "expenditures": null
+      },
+      {
+       "name": "Ashley J Pelton",
+       "candidate": "Ashley Pelton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 28082,
+       "expenditures": null
+      }
+     ]
+    },
+    "7": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "James I Manning, Jr.",
+       "candidate": "James I. Manning Jr.",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 178626.6,
+       "expenditures": null
+      },
+      {
+       "name": "Raquel M Ivie",
+       "candidate": "Raquel M. Ivie",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 5662.11,
+       "expenditures": null
+      }
+     ]
+    },
+    "8": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2022",
+     "candidates": [
+      {
+       "name": "Sara Gelser Blouin",
+       "candidate": "Sara Gelser",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 117847.2,
+       "expenditures": null
+      },
+      {
+       "name": "Valerie G Draper Woldeit",
+       "candidate": "Valerie Draper Woldeit",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1065,
+       "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Deb Patterson",
+       "name": "Deborah Patterson",
        "candidate": "Deb Patterson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 2267021,
        "expenditures": null
+      },
+      {
+       "name": "Raquel C Moore-Green",
+       "candidate": "Raquel Moore-Green",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2238684.88,
+       "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Kim Thatcher",
-       "candidate": "Kim Thatcher",
+       "name": "Kim Thatcher",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -634347,8 +637648,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Rich Walsh",
-       "candidate": "Richard Walsh",
+       "name": "Richard Walsh",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -634358,12 +637658,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "13": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Aaron Woods",
-       "candidate": "Aaron Woods",
+       "name": "Aaron Woods",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -634371,7 +637670,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Velez for Oregon",
+       "name": "John D Velez",
        "candidate": "John D. Velez",
        "party": "R",
        "partyLabel": "Republican",
@@ -634382,12 +637681,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "15": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Janeen Sollman",
-       "candidate": "Janeen Sollman",
+       "name": "Janeen Sollman",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -634395,8 +637693,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Carolina Malmedal",
-       "candidate": "Carolina Malmedal",
+       "name": "Carolina Malmedal",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -634406,71 +637703,102 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "16": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Suzanne Weber",
-       "candidate": "Suzanne Weber",
+       "name": "Suzanne Weber",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 526091.2,
        "expenditures": null
+      },
+      {
+       "name": "Melissa Busch",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 284790.44,
+       "expenditures": null
       }
      ]
     },
     "19": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Rob Wagner",
+       "name": "Robert Wagner",
        "candidate": "Rob Wagner",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 759545.91,
        "expenditures": null
+      },
+      {
+       "name": "Benjamin C Edtl",
+       "candidate": "Ben Edtl",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 46111.55,
+       "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Friends of Mark Meek",
-       "candidate": "Mark Meek",
+       "name": "Mark Meek",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 2837428.38,
        "expenditures": null
+      },
+      {
+       "name": "Bill Kennemer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2053988.68,
+       "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Kayse Jama for Oregon",
+       "name": "Kayse M Jama",
        "candidate": "Kayse Jama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 157249.38,
        "expenditures": null
+      },
+      {
+       "name": "Stan Catherman",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 2411.28,
+       "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2022",
      "candidates": [
       {
-       "name": "Committee to Elect Daniel Bonham",
+       "name": "Daniel G Bonham",
        "candidate": "Daniel G. Bonham",
        "party": "R",
        "partyLabel": "Republican",
@@ -634479,8 +637807,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Mason for Oregon",
-       "candidate": "Raz Mason",
+       "name": "Raz Mason",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -634494,35 +637821,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2024": {
    "house": {
     "1": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Elect Bret Cecil",
+       "name": "Court Boice",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 89497.58,
+       "expenditures": null
+      },
+      {
+       "name": "Bret A Cecil",
        "candidate": "Bret Cecil",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 7591,
        "expenditures": null
-      },
-      {
-       "name": "Court Boice for Oregon",
-       "candidate": "Court Boice",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 89497.58,
-       "expenditures": null
       }
      ]
     },
     "2": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Virgle Osborne",
+       "name": "Virgle Osborne",
        "candidate": "Virgle J. Osborne",
        "party": "R",
        "partyLabel": "Republican",
@@ -634531,8 +637857,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "August Warren for HD2",
-       "candidate": "August Warren",
+       "name": "August Warren",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -634542,12 +637867,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "3": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Yunker for State Representative",
-       "candidate": "Dwayne Yunker",
+       "name": "Dwayne Yunker",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -634557,12 +637881,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "4": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Richard Chasm",
-       "candidate": "Richard Chasm",
+       "name": "Alek Skarlatos",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 145038.51,
+       "expenditures": null
+      },
+      {
+       "name": "Richard Chasm",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -634572,11 +637903,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "5": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Committee to Elect Pam Marsh",
+       "name": "Pam J Marsh",
        "candidate": "Pam Marsh",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634585,7 +637916,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Katherine Green",
+       "name": "Katherine A Green",
        "candidate": "Katherine Green",
        "party": "R",
        "partyLabel": "Republican",
@@ -634596,50 +637927,56 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "6": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Committee to Elect Lilia Caballero",
-       "candidate": "Lilia Caballero",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 22809.67,
-       "expenditures": null
-      },
-      {
-       "name": "Friends of Kim Wallan",
+       "name": "Kimberly D. Wallan",
        "candidate": "Kim Wallan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 122400,
        "expenditures": null
+      },
+      {
+       "name": "Lilia Caballero",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 22809.67,
+       "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of John Lively",
-       "candidate": "John Lively",
+       "name": "John Lively",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 220533.02,
        "expenditures": null
+      },
+      {
+       "name": "Cory Burket",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 102577.61,
+       "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Lisa Fragala",
+       "name": "Lisa M Fragala",
        "candidate": "Lisa Fragala",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634650,12 +637987,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "10": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Gomberg for State Rep",
-       "candidate": "David Gomberg",
+       "name": "David Gomberg",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -634664,51 +638000,82 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "12": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "11": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Emmons for Oregon",
-       "candidate": "Michelle Emmons",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 18631.66,
+       "name": "Jami J Cate",
+       "candidate": "Jami Cate",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 83582.17,
        "expenditures": null
       },
       {
-       "name": "Harbick for Oregon",
+       "name": "Ivan Maluski",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 48362.16,
+       "expenditures": null
+      }
+     ]
+    },
+    "12": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Darin D Harbick",
        "candidate": "Darin Harbick",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 195628.24,
        "expenditures": null
+      },
+      {
+       "name": "Michelle M Emmons",
+       "candidate": "Michelle Emmons",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 18631.66,
+       "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Nancy Nathanson",
-       "candidate": "Nancy Nathanson",
+       "name": "Nancy Nathanson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 144873.91,
        "expenditures": null
+      },
+      {
+       "name": "Timothy S Sutherland",
+       "candidate": "Timothy S. Sutherland",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6153.94,
+       "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Julie Fahey",
+       "name": "Julianne Fahey",
        "candidate": "Julie Fahey",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634719,12 +638086,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "15": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Shelly Boshart Davis",
-       "candidate": "Shelly Boshart Davis",
+       "name": "Shelly Boshart Davis",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -634732,8 +638098,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Terrence Virnig Dist 15",
-       "candidate": "Terrence Virnig",
+       "name": "Terrence Virnig",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -634742,12 +638107,26 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "17": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "16": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Ed Diehl for Oregon",
+       "name": "Sarah Finger McDonald",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 113437.43,
+       "expenditures": null
+      }
+     ]
+    },
+    "17": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Edwin Diehl",
        "candidate": "Ed Diehl",
        "party": "R",
        "partyLabel": "Republican",
@@ -634758,12 +638137,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "18": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Committee to Elect Rick Lewis",
-       "candidate": "Rick Lewis",
+       "name": "Rick Lewis",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -634771,8 +638149,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Karyssa Dow for Oregon",
-       "candidate": "Karyssa Dow",
+       "name": "Karyssa Dow",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -634782,27 +638159,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "19": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Tom Andersen",
+       "name": "H Thomas Andersen",
        "candidate": "Tom Andersen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 414907.23,
        "expenditures": null
+      },
+      {
+       "name": "David Brown",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 364399.3,
+       "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Paul Evans",
-       "candidate": "Paul Evans",
+       "name": "Paul Evans",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -634810,7 +638194,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Kevin Scott Chambers",
+       "name": "Kevin S Chambers",
        "candidate": "Kevin S. Chambers",
        "party": "R",
        "partyLabel": "Republican",
@@ -634821,26 +638205,44 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "21": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Mannix for Oregon PAC",
+       "name": "Kevin L Mannix",
        "candidate": "Kevin Mannix",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 1106718.28,
        "expenditures": null
+      },
+      {
+       "name": "Virginia C Stapleton",
+       "candidate": "Virginia Stapleton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 403127.81,
+       "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Lesly Munoz for Oregon",
+       "name": "Tracy M Cramer",
+       "candidate": "Tracy M. Cramer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1189153.44,
+       "expenditures": null
+      },
+      {
+       "name": "Lesly Munoz",
        "candidate": "Lesly Muñoz",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634851,90 +638253,133 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "23": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Anna Scharf",
+       "name": "Anna Scharf",
        "candidate": "Anna M. Scharf",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 125427.17,
        "expenditures": null
-      },
-      {
-       "name": "Friends of Kriss Wright",
-       "candidate": "Kriss Wright",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 0,
-       "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Committee to Elect Lucetta Elmer",
+       "name": "Lucetta Elmer",
        "candidate": "Lucetta A. Elmer",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 211916,
        "expenditures": null
+      },
+      {
+       "name": "Lisa Pool",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6771.61,
+       "expenditures": null
       }
      ]
     },
     "25": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Bob Niemeyer Campaign",
-       "candidate": "Bob Niemeyer",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 200,
-       "expenditures": null
-      },
-      {
-       "name": "Friends of Ben Bowman",
+       "name": "Benjamin W Bowman",
        "candidate": "Ben Bowman",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 638487.22,
        "expenditures": null
+      },
+      {
+       "name": "Robert H Niemeyer, III",
+       "candidate": "Bob Niemeyer",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 200,
+       "expenditures": null
+      }
+     ]
+    },
+    "26": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Courtney Neron",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 406798.76,
+       "expenditures": null
+      },
+      {
+       "name": "Jason Fields",
+       "candidate": "Jason E. Fields",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 139728.85,
+       "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Ken Helm for Oregon",
+       "name": "Kenneth D Helm",
        "candidate": "Ken Helm",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 79550,
        "expenditures": null
+      },
+      {
+       "name": "Victoria Kingsbury",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 3646.22,
+       "expenditures": null
+      }
+     ]
+    },
+    "28": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Dacia Grayber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 208039.89,
+       "expenditures": null
       }
      ]
     },
     "29": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Susan McLain",
-       "candidate": "Susan McLain",
+       "name": "Susan McLain",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -634944,12 +638389,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "30": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Nathan Sosa for Oregon",
-       "candidate": "Nathan Sosa",
+       "name": "Nathan Sosa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -634958,27 +638402,59 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "32": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "31": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Andy Davis for Oregon",
+       "name": "Darcey Edwards",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 84045.43,
+       "expenditures": null
+      },
+      {
+       "name": "Jordan c Gutierrez",
+       "candidate": "Jordan Gutierrez",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 6537.92,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Cyrus Javadi",
+       "candidate": "Cyrus B. Javadi",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 847908.01,
+       "expenditures": null
+      },
+      {
+       "name": "Andrew Davis",
        "candidate": "Andy Davis",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 109670.12,
+       "contributions": 109005.54,
        "expenditures": null
       }
      ]
     },
     "33": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Team Shannon Jones Isadore",
+       "name": "Shannon J Isadore",
        "candidate": "Shannon Jones Isadore",
        "party": "D",
        "partyLabel": "Democratic",
@@ -634987,7 +638463,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Busse For 33",
+       "name": "Thomas J Busse",
        "candidate": "Thomas J. Busse",
        "party": "O",
        "partyLabel": "Other",
@@ -634997,22 +638473,26 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "35": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "34": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Daniel Martin",
-       "candidate": "Dan Martin",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 0,
+       "name": "Lisa Reynolds",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 160973.54,
        "expenditures": null
-      },
+      }
+     ]
+    },
+    "35": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
       {
-       "name": "Chaichi for Oregon",
-       "candidate": "Farrah Chaichi",
+       "name": "Farrah Chaichi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -635022,26 +638502,33 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "36": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Hai Pham",
-       "candidate": "Hai Pham",
+       "name": "Hai Pham",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 178236.9,
        "expenditures": null
+      },
+      {
+       "name": "Shawn Chummar",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 6470,
+       "expenditures": null
       }
      ]
     },
     "37": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Jules Walters",
+       "name": "Julianna Walters",
        "candidate": "Jules Walters",
        "party": "D",
        "partyLabel": "Democratic",
@@ -635050,7 +638537,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Ben Edtl for the People",
+       "name": "Benjamin C Edtl",
        "candidate": "Ben Edtl",
        "party": "R",
        "partyLabel": "Republican",
@@ -635061,12 +638548,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "38": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Daniel Nguyen",
-       "candidate": "Daniel Nguyen",
+       "name": "Daniel Nguyen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -635076,59 +638562,58 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "39": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Aimee Reiner and Friends",
+       "name": "April Dobson",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 807252.5,
+       "expenditures": null
+      },
+      {
+       "name": "Aimee Reiner",
        "candidate": "Aimee L. Reiner",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 535794.68,
        "expenditures": null
-      },
-      {
-       "name": "Committee to Elect April Dobson",
-       "candidate": "April Dobson",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 807252.5,
-       "expenditures": null
       }
      ]
     },
     "40": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Steve Newgard",
-       "candidate": "Michael Steven Newgard",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 0,
-       "expenditures": null
-      },
-      {
-       "name": "Annessa Hartman for Oregon",
+       "name": "Annessa D Hartman",
        "candidate": "Annessa Hartman",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 641615.8,
        "expenditures": null
+      },
+      {
+       "name": "Michael S Newgard",
+       "candidate": "Michael Steven Newgard",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 109367.31,
+       "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Mark Gamba for Oregon",
+       "name": "Mark Gamba",
        "candidate": "Mark F. Gamba",
        "party": "D",
        "partyLabel": "Democratic",
@@ -635139,11 +638624,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "42": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Rob Nosse",
+       "name": "Rob A Nosse",
        "candidate": "Rob Nosse",
        "party": "D",
        "partyLabel": "Democratic",
@@ -635154,11 +638639,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "43": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Tawna Sanchez for Oregon",
+       "name": "Tawna D Sanchez",
        "candidate": "Tawna Sanchez",
        "party": "D",
        "partyLabel": "Democratic",
@@ -635169,12 +638654,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "44": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Travis Nelson",
-       "candidate": "Travis Nelson",
+       "name": "Travis Nelson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -635184,12 +638668,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "45": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Thuy Tran",
-       "candidate": "Thuy Tran",
+       "name": "Thuy Tran",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -635199,26 +638682,42 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "46": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Willy Chotzen",
-       "candidate": "Willy Chotzen",
+       "name": "Willy Chotzen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 222251.2,
        "expenditures": null
+      },
+      {
+       "name": "Kevin C Levy",
+       "candidate": "Kevin Levy",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 16425.24,
+       "expenditures": null
+      },
+      {
+       "name": "Austin Daniel",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 2262.44,
+       "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Andrea Valderrama",
+       "name": "Andrea L Valderrama",
        "candidate": "Andrea Valderrama",
        "party": "D",
        "partyLabel": "Democratic",
@@ -635229,26 +638728,43 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "48": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of John Masterman",
-       "candidate": "John Masterman",
+       "name": "John Masterman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 603101.47,
        "expenditures": null
+      },
+      {
+       "name": "Hoa H Nguyen",
+       "candidate": "Hoa H. Nguyen",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 1388862.89,
+       "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Elect Zach Hudson",
+       "name": "Terry Tipsord",
+       "candidate": "Terry A. Tipsord",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 658058.74,
+       "expenditures": null
+      },
+      {
+       "name": "Zachary T Hudson",
        "candidate": "Zach Hudson",
        "party": "D",
        "partyLabel": "Democratic",
@@ -635258,13 +638774,36 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "51": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "50": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Christine Drazan",
-       "candidate": "Christine Drazan",
+       "name": "Ricardo Ruiz",
+       "candidate": "Ricki Ruiz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 915476.35,
+       "expenditures": null
+      },
+      {
+       "name": "Paul D Drechsler",
+       "candidate": "Paul Drechsler",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 619763.7,
+       "expenditures": null
+      }
+     ]
+    },
+    "51": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Christine Drazan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -635273,27 +638812,86 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "53": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "52": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Em Levy",
-       "candidate": "Emerson Levy",
+       "name": "Jeff Helfrich",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 1101651.56,
+       "expenditures": null
+      },
+      {
+       "name": "Nick Walden Poublon",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 85985.26,
+       "expenditures": null
+      }
+     ]
+    },
+    "53": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Emerson Levy",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 811950.49,
        "expenditures": null
+      },
+      {
+       "name": "Keri Lopez",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 724792.45,
+       "expenditures": null
+      }
+     ]
+    },
+    "54": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Jason S Kropf",
+       "candidate": "Jason Kropf",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 129014.21,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "E Werner Reschke",
+       "candidate": "E. Werner Reschke",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 142770,
+       "expenditures": null
       }
      ]
     },
     "56": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Emily McIntire",
+       "name": "Emily McIntire",
        "candidate": "Emily G. McIntire",
        "party": "R",
        "partyLabel": "Republican",
@@ -635304,11 +638902,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "57": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Committee to Re-Elect Greg Smith",
+       "name": "Gregory V. Smith",
        "candidate": "Greg Smith",
        "party": "R",
        "partyLabel": "Republican",
@@ -635319,12 +638917,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "58": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Bobby Levy",
-       "candidate": "Bobby Levy",
+       "name": "Bobby Levy",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -635333,13 +638930,36 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "60": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+    "59": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Mark Owens for Oregon",
-       "candidate": "Mark Owens",
+       "name": "Vikki K Iverson",
+       "candidate": "Vikki Breese-Iverson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 385008.22,
+       "expenditures": null
+      },
+      {
+       "name": "Brian K Samp",
+       "candidate": "Brian K. Samp",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5174.55,
+       "expenditures": null
+      }
+     ]
+    },
+    "60": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "12/31/2024",
+     "candidates": [
+      {
+       "name": "Mark Owens",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -635351,12 +638971,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "1": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of David Brock Smith",
-       "candidate": "David Brock Smith",
+       "name": "David Brock Smith",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -635366,12 +638985,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "2": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Noah Robinson for Oregon Senate",
-       "candidate": "Noah Robinson",
+       "name": "Noah Robinson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -635379,8 +638997,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Tracy Thompson",
-       "candidate": "Tracy Thompson",
+       "name": "Tracy Thompson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -635390,12 +639007,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "5": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Dick Anderson for Oregon",
-       "candidate": "Dick Anderson",
+       "name": "Dick Anderson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -635403,8 +639019,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Jo Beaudreau",
-       "candidate": "Jo Beaudreau",
+       "name": "Jo Beaudreau",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -635414,51 +639029,56 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "9": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Fred Girod",
-       "candidate": "Fred Girod",
+       "name": "Fred Girod",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 134605,
        "expenditures": null
-      },
-      {
-       "name": "Mike Ashland for Senate",
-       "candidate": "Mike Ashland",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 0,
-       "expenditures": null
       }
      ]
     },
     "12": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Starr Leadership Fund",
-       "candidate": "Bruce Starr",
+       "name": "Bruce Starr",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 254804.4,
        "expenditures": null
+      },
+      {
+       "name": "Andrea Kennedy-Smith",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 112775.24,
+       "expenditures": null
+      },
+      {
+       "name": "Scott A Hooper",
+       "candidate": "Scott Hooper",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 23724.27,
+       "expenditures": null
       }
      ]
     },
     "14": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Kate Lieber for State Senate",
-       "candidate": "Kate Lieber",
+       "name": "Kate Lieber",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -635468,11 +639088,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "18": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Campos for Oregon",
+       "name": "Wlnsvey E Campos",
        "candidate": "Wlnsvey Campos",
        "party": "D",
        "partyLabel": "Democratic",
@@ -635481,7 +639101,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Brian E. Pierson",
+       "name": "Brian E Pierson",
        "candidate": "Brian Pierson",
        "party": "R",
        "partyLabel": "Republican",
@@ -635492,12 +639112,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "21": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Kathleen Taylor for Oregon",
-       "candidate": "Kathleen Taylor",
+       "name": "Kathleen Taylor",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -635507,21 +639126,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "22": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Lew Frederick",
-       "candidate": "Lew Frederick",
+       "name": "Lew Frederick",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 128142.29,
+       "contributions": 126142.29,
        "expenditures": null
       },
       {
-       "name": "Michael Saperstein for Senate",
-       "candidate": "Michael Saperstein",
+       "name": "Michael Saperstein",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -635531,11 +639148,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "23": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Khanh Pham",
+       "name": "Katherine Pham",
        "candidate": "Khanh Pham",
        "party": "D",
        "partyLabel": "Democratic",
@@ -635546,71 +639163,104 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "25": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Chris Gorsek",
+       "name": "Christopher S Gorsek",
        "candidate": "Chris Gorsek",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 1727016.35,
        "expenditures": null
+      },
+      {
+       "name": "Raymond E Love",
+       "candidate": "Raymond Love",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1278660.56,
+       "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Team Broadman",
-       "candidate": "Anthony Broadman",
+       "name": "Anthony Broadman",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 1166550.51,
        "expenditures": null
+      },
+      {
+       "name": "Matthew M summers",
+       "candidate": "Matthew Summers",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 587468.89,
+       "expenditures": null
       }
      ]
     },
     "28": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Committee to Elect Dennis Linthicum",
+       "name": "Diane E Linthicum",
        "candidate": "Diane Linthicum",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 334317.58,
+       "contributions": 88826.59,
+       "expenditures": null
+      },
+      {
+       "name": "Dylan C Gutridge",
+       "candidate": "Dylan Gutridge",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 7530,
        "expenditures": null
       }
      ]
     },
     "29": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Friends of Todd Nash",
-       "candidate": "Todd Nash",
+       "name": "Todd Nash",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
        "contributions": 233862.9,
        "expenditures": null
+      },
+      {
+       "name": "Tania Wildbill",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 800,
+       "expenditures": null
       }
      ]
     },
     "30": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
      "dataThrough": "12/31/2024",
      "candidates": [
       {
-       "name": "Mike McLane for Oregon",
+       "name": "Mike R McLane",
        "candidate": "Mike McLane",
        "party": "R",
        "partyLabel": "Republican",
@@ -635625,129 +639275,147 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
   "2026": {
    "house": {
     "1": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Elect Bret Cecil",
+       "name": "Court Boice",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 109193.76,
+       "expenditures": null
+      },
+      {
+       "name": "Bret A Cecil",
        "candidate": "Bret Cecil",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 9215.87,
-       "expenditures": null
-      },
-      {
-       "name": "Court Boice for Oregon",
-       "candidate": "Court Boice",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": true,
-       "contributions": 107693.76,
+       "contributions": 10115.1,
        "expenditures": null
       }
      ]
     },
     "2": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Virgle Osborne",
-       "candidate": "Virgle Osborne",
+       "name": "Virgle Osborne",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 151277.5,
+       "contributions": 159277.5,
        "expenditures": null
       }
      ]
     },
     "3": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Yunker for State Representative",
-       "candidate": "Dwayne Yunker",
+       "name": "Dwayne Yunker",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 97794.64,
+       "contributions": 100919.64,
+       "expenditures": null
+      },
+      {
+       "name": "Susan E Fischer-Maki",
+       "candidate": "Susan Fischer-Maki",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 40615.58,
+       "expenditures": null
+      }
+     ]
+    },
+    "4": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
+     "candidates": [
+      {
+       "name": "Alek Skarlatos",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 122565.35,
        "expenditures": null
       }
      ]
     },
     "5": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Committee to Elect Pam Marsh",
+       "name": "Pam J Marsh",
        "candidate": "Pam Marsh",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 63888,
+       "contributions": 64388,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Kim Wallan",
+       "name": "Kimberly D. Wallan",
        "candidate": "Kim Wallan",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 101050,
-       "expenditures": null
-      },
-      {
-       "name": "Committee To elect John Holm",
-       "candidate": "John Holm",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 0,
+       "contributions": 102550,
        "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Wilson for Springfield",
-       "candidate": "Adam Wilson",
+       "name": "Kori L Rodley",
+       "candidate": "Kori Rodley",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 311917.02,
+       "expenditures": null
+      },
+      {
+       "name": "Adam Wilson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 81519.79,
+       "contributions": 85740.86,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Lisa Fragala",
+       "name": "Lisa M Fragala",
        "candidate": "Lisa Fragala",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 65864.4,
+       "contributions": 66214.4,
        "expenditures": null
       },
       {
-       "name": "Bill Vivian for HD 8",
-       "candidate": "Bill Vivian",
+       "name": "Bill Vivian",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -635757,11 +639425,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "9": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Citizens for John Ezra Scheirman",
+       "name": "Claire Lynn",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 241431,
+       "expenditures": null
+      },
+      {
+       "name": "John Ezra Scheirman",
        "candidate": "John Scheirman",
        "party": "D",
        "partyLabel": "Democratic",
@@ -635772,12 +639448,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "10": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Gomberg for State Rep",
-       "candidate": "David Gomberg",
+       "name": "David Gomberg",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -635787,12 +639462,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "11": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Ken Jackola for Oregon",
-       "candidate": "Ken Jackola",
+       "name": "Ivan Maluski",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 44400.75,
+       "expenditures": null
+      },
+      {
+       "name": "Ken Jackola",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -635802,35 +639484,34 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "12": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Harbick for Oregon",
+       "name": "Darin D Harbick",
        "candidate": "Darin Harbick",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 68850,
+       "contributions": 70865,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Nancy Nathanson",
-       "candidate": "Nancy Nathanson",
+       "name": "Nancy Nathanson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 117637.48,
+       "contributions": 120687.48,
        "expenditures": null
       },
       {
-       "name": "Friends of Jonathan Abrahamsen",
+       "name": "Jonathan T Abrahamsen",
        "candidate": "Jonathan Abrahamsen",
        "party": "R",
        "partyLabel": "Republican",
@@ -635841,27 +639522,26 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "14": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Julie Fahey",
+       "name": "Julianne Fahey",
        "candidate": "Julie Fahey",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 649324.07,
+       "contributions": 665024.07,
        "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Shelly Boshart Davis",
-       "candidate": "Shelly Boshart Davis",
+       "name": "Shelly Boshart Davis",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -635869,22 +639549,37 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Joanna Robinson for Oregon",
+       "name": "Joanna M Robinson",
        "candidate": "Joanna Robinson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 77737.73,
+       "contributions": 77785.73,
+       "expenditures": null
+      }
+     ]
+    },
+    "16": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
+     "candidates": [
+      {
+       "name": "Sarah Finger McDonald",
+       "candidate": "Sarah McDonald",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 50789.85,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Farrington for Oregon",
+       "name": "Daniel Farrington",
        "candidate": "Dan Farrington",
        "party": "R",
        "partyLabel": "Republican",
@@ -635895,11 +639590,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "18": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Roy Kaufmann for HD18",
+       "name": "Amanda Staehely",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 142018.49,
+       "expenditures": null
+      },
+      {
+       "name": "Roy I Kaufmann",
        "candidate": "Roy Kaufmann",
        "party": "D",
        "partyLabel": "Democratic",
@@ -635910,11 +639613,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "19": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Tom Andersen",
+       "name": "H Thomas Andersen",
        "candidate": "Tom Andersen",
        "party": "D",
        "partyLabel": "Democratic",
@@ -635923,32 +639626,30 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Munson Leadership PAC",
+       "name": "Pat A Munson",
        "candidate": "Anna Munson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 44965.91,
+       "contributions": 46240.91,
        "expenditures": null
       }
      ]
     },
     "20": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Paul Evans",
-       "candidate": "Paul Evans",
+       "name": "Paul Evans",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 232866.63,
+       "contributions": 232916.63,
        "expenditures": null
       },
       {
-       "name": "Fudge 4 Oregon",
-       "candidate": "Andrew Fudge",
+       "name": "Andrew Fudge",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -635958,84 +639659,71 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "21": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Mannix for Oregon PAC",
+       "name": "Kevin L Mannix",
        "candidate": "Kevin Mannix",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 812364.39,
+       "contributions": 862545.51,
        "expenditures": null
       },
       {
-       "name": "Welsh for Oregon",
-       "candidate": "Michael Welsh",
+       "name": "Michael Welsh",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 543236.56,
+       "contributions": 576114.15,
        "expenditures": null
       }
      ]
     },
     "22": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Lesly Munoz for Oregon",
+       "name": "Lesly Munoz",
        "candidate": "Lesly Muñoz",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 382103.11,
+       "contributions": 402887.66,
        "expenditures": null
       },
       {
-       "name": "Noemi Legaspi PAC",
-       "candidate": "Noemi Legaspi",
+       "name": "Noemi Legaspi",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 567952.87,
+       "contributions": 578370.38,
        "expenditures": null
       }
      ]
     },
     "23": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Anna Scharf",
-       "candidate": "Anna Scharf",
+       "name": "Anna Scharf",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 173338.06,
        "expenditures": null
-      },
-      {
-       "name": "Friends of Kriss Wright",
-       "candidate": "Kriss Wright",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 0,
-       "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Committee to Elect Lucetta Elmer",
-       "candidate": "Lucetta Elmer",
+       "name": "Lucetta Elmer",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
@@ -636045,59 +639733,58 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "25": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Bob Niemeyer Campaign",
-       "candidate": "Bob Niemeyer",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 0,
-       "expenditures": null
-      },
-      {
-       "name": "Friends of Ben Bowman",
+       "name": "Benjamin W Bowman",
        "candidate": "Ben Bowman",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 814250.17,
+       "contributions": 825250.17,
        "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Committee to Elect Sue Rieke Smith",
+       "name": "Stephanie Carkin",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 261058.49,
+       "expenditures": null
+      },
+      {
+       "name": "Sue R Rieke Smith, Dr",
        "candidate": "Sue Rieke Smith",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 285582.12,
-       "expenditures": null
-      },
-      {
-       "name": "Terrio for US",
-       "candidate": "Steph Terrio",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 0,
+       "contributions": 311987.52,
        "expenditures": null
       }
      ]
     },
     "27": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Mark Norman",
+       "name": "Tammily R Carpenter",
+       "candidate": "Tammy Carpenter",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 330420.37,
+       "expenditures": null
+      },
+      {
+       "name": "George M Norman",
        "candidate": "G. Mark Norman",
        "party": "R",
        "partyLabel": "Republican",
@@ -636108,12 +639795,19 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "28": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Randall Fryer for Representative",
-       "candidate": "Randall Fryer",
+       "name": "Dacia Grayber",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 208981.9,
+       "expenditures": null
+      },
+      {
+       "name": "Randall Fryer",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -636123,12 +639817,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "29": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Susan McLain",
-       "candidate": "Susan McLain",
+       "name": "Susan McLain",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -636136,8 +639829,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Brian Schimmel",
-       "candidate": "Brian Schimmel",
+       "name": "Brian Schimmel",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -636147,12 +639839,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "30": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Nathan Sosa for Oregon",
-       "candidate": "Nathan Sosa",
+       "name": "Nathan Sosa",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -636160,8 +639851,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Ross For Oregon",
-       "candidate": "Charles Ross",
+       "name": "Charles Ross",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -636170,37 +639860,66 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
       }
      ]
     },
-    "32": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+    "31": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Max Sherman for Oregon",
-       "candidate": "Max Sherman",
+       "name": "Darcey Edwards",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 86821.06,
+       "expenditures": null
+      },
+      {
+       "name": "Tom L Forest",
+       "candidate": "Tom Forest",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 5551.75,
+       "expenditures": null
+      }
+     ]
+    },
+    "32": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
+     "candidates": [
+      {
+       "name": "Cyrus Javadi",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 975192.71,
+       "expenditures": null
+      },
+      {
+       "name": "Max Sherman",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1162403.72,
+       "contributions": 1187636.35,
        "expenditures": null
       }
      ]
     },
     "33": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Team Shannon Jones Isadore",
+       "name": "Shannon J Isadore",
        "candidate": "Shannon Isadore",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 50285,
+       "contributions": 58535,
        "expenditures": null
       },
       {
-       "name": "Friends of Ciatta Thompson",
-       "candidate": "Ciatta Thompson",
+       "name": "Ciatta Thompson",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -636210,144 +639929,126 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "34": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Committee to Elect Shaunie Cousins",
-       "candidate": "Shaunie Cousins",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 0,
+       "name": "Mari Watanabe",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 85692,
        "expenditures": null
       }
      ]
     },
     "35": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Daniel Martin",
-       "candidate": "Dan Martin",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 0,
-       "expenditures": null
-      },
-      {
-       "name": "Chaichi for Oregon",
-       "candidate": "Farrah Chaichi",
+       "name": "Farrah Chaichi",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 41858.44,
+       "contributions": 44378.44,
        "expenditures": null
       }
      ]
     },
     "36": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Hai Pham",
-       "candidate": "Hai Pham",
+       "name": "Hai Pham",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 213968.07,
-       "expenditures": null
-      },
-      {
-       "name": "Orth For Oregon",
-       "candidate": "Michael Orth",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 0,
+       "contributions": 216468.07,
        "expenditures": null
       }
      ]
     },
     "37": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Jules Walters",
+       "name": "Julianna Walters",
        "candidate": "Jules Walters",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 34057,
+       "contributions": 40807,
        "expenditures": null
       },
       {
-       "name": "Friends of Chad Parker",
-       "candidate": "Chad Parker",
+       "name": "Chad Parker",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 20460.69,
+       "contributions": 20510.69,
        "expenditures": null
       }
      ]
     },
     "38": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Daniel Nguyen",
-       "candidate": "Daniel Nguyen",
+       "name": "Daniel Nguyen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 302543.57,
+       "contributions": 307043.57,
        "expenditures": null
       }
      ]
     },
     "39": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Committee to Elect April Dobson",
-       "candidate": "April Dobson",
+       "name": "April Dobson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 105122,
+       "contributions": 118722,
        "expenditures": null
       }
      ]
     },
     "40": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Sugar for Oregon",
-       "candidate": "Michael Sugar",
+       "name": "Adam Baker",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 70523.44,
+       "expenditures": null
+      },
+      {
+       "name": "Michael Sugar",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 251481.49,
+       "contributions": 273909.83,
        "expenditures": null
       }
      ]
     },
     "41": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Mark Gamba for Oregon",
-       "candidate": "Mark Gamba",
+       "name": "Mark Gamba",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -636357,26 +640058,26 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "42": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Rob Nosse",
+       "name": "Rob A Nosse",
        "candidate": "Rob Nosse",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 341871.53,
+       "contributions": 341881.53,
        "expenditures": null
       }
      ]
     },
     "43": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Tawna Sanchez for Oregon",
+       "name": "Tawna D Sanchez",
        "candidate": "Tawna Sanchez",
        "party": "D",
        "partyLabel": "Democratic",
@@ -636387,27 +640088,25 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "44": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Travis Nelson",
-       "candidate": "Travis Nelson",
+       "name": "Travis Nelson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 95580.9,
+       "contributions": 102735.9,
        "expenditures": null
       }
      ]
     },
     "45": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Thuy Tran",
-       "candidate": "Thuy Tran",
+       "name": "Thuy Tran",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -636417,65 +640116,62 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "46": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Willy Chotzen",
-       "candidate": "Willy Chotzen",
+       "name": "Willy Chotzen",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 116435.24,
+       "contributions": 122438.14,
        "expenditures": null
       }
      ]
     },
     "47": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Andrea Valderrama",
+       "name": "Andrea L Valderrama",
        "candidate": "Andrea Valderrama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 43300,
+       "contributions": 45300,
        "expenditures": null
       }
      ]
     },
     "48": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Wise PAC",
-       "candidate": "Lamar Wise",
+       "name": "Lamar Wise",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 622742.35,
+       "contributions": 614259.22,
        "expenditures": null
       },
       {
-       "name": "Andrew Morrison for Oregon",
-       "candidate": "Andrew Morrison",
+       "name": "Andrew Morrison",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 193728.41,
+       "contributions": 194384.07,
        "expenditures": null
       }
      ]
     },
     "49": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Elect Zach Hudson",
+       "name": "Zachary T Hudson",
        "candidate": "Zach Hudson",
        "party": "D",
        "partyLabel": "Democratic",
@@ -636484,38 +640180,45 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Friends of Ann Walker",
-       "candidate": "Ann Walker",
+       "name": "Ann Walker",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 7722.93,
+       "contributions": 7983.66,
        "expenditures": null
       }
      ]
     },
     "50": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Rick Gray for the House",
-       "candidate": "Brian Gray",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 0,
+       "name": "Ricardo Ruiz",
+       "candidate": "Ricki Ruiz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 184101.42,
        "expenditures": null
       }
      ]
     },
     "51": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Darla Mead for Oregon",
-       "candidate": "Darla Mead",
+       "name": "Matt D Bunch",
+       "candidate": "Matt Bunch",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 92853,
+       "expenditures": null
+      },
+      {
+       "name": "Darla Mead",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
@@ -636525,74 +640228,92 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "52": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Hank Sanders",
-       "candidate": "Hank Sanders",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 502018.12,
-       "expenditures": null
-      },
-      {
-       "name": "Hege for Oregon",
+       "name": "Scott C Hege",
        "candidate": "Scott Hege",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1168829.09,
+       "contributions": 1178226.52,
+       "expenditures": null
+      },
+      {
+       "name": "Hank Sanders",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 528749.46,
        "expenditures": null
       }
      ]
     },
     "53": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Em Levy",
-       "candidate": "Emerson Levy",
+       "name": "Emerson Levy",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 298515.13,
+       "contributions": 298933.77,
        "expenditures": null
-      },
+      }
+     ]
+    },
+    "54": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
+     "candidates": [
       {
-       "name": "Summers for Oregon",
-       "candidate": "Michael Summers",
+       "name": "Jason S Kropf",
+       "candidate": "Jason Kropf",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": true,
+       "contributions": 133777.9,
+       "expenditures": null
+      }
+     ]
+    },
+    "55": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
+     "candidates": [
+      {
+       "name": "E Werner Reschke",
+       "candidate": "E. Werner Reschke",
        "party": "R",
        "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 151042.08,
+       "incumbent": true,
+       "contributions": 228957.2,
        "expenditures": null
       }
      ]
     },
     "56": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Emily McIntire",
-       "candidate": "Emily McIntire",
+       "name": "Emily McIntire",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 157681.02,
+       "contributions": 163281.02,
        "expenditures": null
       }
      ]
     },
     "57": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Committee to Re-Elect Greg Smith",
+       "name": "Gregory V. Smith",
        "candidate": "Greg Smith",
        "party": "R",
        "partyLabel": "Republican",
@@ -636601,8 +640322,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Josiah Dean for House 57",
-       "candidate": "Josiah Dean",
+       "name": "Josiah Dean",
        "party": "O",
        "partyLabel": "Other",
        "incumbent": false,
@@ -636612,40 +640332,44 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "58": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Bobby Levy",
-       "candidate": "Bobby Levy",
+       "name": "Bobby Levy",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
        "contributions": 106508.82,
        "expenditures": null
-      },
+      }
+     ]
+    },
+    "59": {
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
+     "candidates": [
       {
-       "name": "Brian Campbell for HD58",
-       "candidate": "Brian Campbell",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 0,
+       "name": "Vikki K Iverson",
+       "candidate": "Vikki Breese-Iverson",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": true,
+       "contributions": 199555.35,
        "expenditures": null
       }
      ]
     },
     "60": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Mark Owens for Oregon",
-       "candidate": "Mark Owens",
+       "name": "Mark Owens",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": true,
-       "contributions": 184844.26,
+       "contributions": 188427.91,
        "expenditures": null
       }
      ]
@@ -636653,216 +640377,234 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
    },
    "senate": {
     "3": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends for Denise Krause",
-       "candidate": "Denise Krause",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 1204416.65,
-       "expenditures": null
-      },
-      {
-       "name": "Hicks for Senate",
+       "name": "Brad S Hicks",
        "candidate": "Brad Hicks",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 2162339.2,
+       "contributions": 2262224.37,
+       "expenditures": null
+      },
+      {
+       "name": "Denise D Krause",
+       "candidate": "Denise Krause",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 1218659.44,
+       "expenditures": null
+      },
+      {
+       "name": "Clay B Bearnson",
+       "candidate": "Clay Bearnson",
+       "party": "O",
+       "partyLabel": "Other",
+       "incumbent": false,
+       "contributions": 4609.41,
        "expenditures": null
       }
      ]
     },
     "4": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends for Floyd Prozanski",
+       "name": "Floyd F. Prozanski, Jr.",
        "candidate": "Floyd Prozanski",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 98900,
+       "contributions": 110568.64,
        "expenditures": null
       }
      ]
     },
     "6": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Tibbetts for Oregon",
+       "name": "Harrison J Tibbetts",
        "candidate": "Jack Tibbetts",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 138163.17,
+       "contributions": 141127.94,
        "expenditures": null
       },
       {
-       "name": "Sierrah Williams for Senate District 6",
-       "candidate": "Sierrah Williams",
+       "name": "Sierrah Williams",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
        "contributions": 11754.87,
        "expenditures": null
-      },
-      {
-       "name": "Ticer For Oregon",
-       "candidate": "Caleb Ticer",
-       "party": "O",
-       "partyLabel": "Other",
-       "incumbent": false,
-       "contributions": 0,
-       "expenditures": null
       }
      ]
     },
     "7": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of James Manning",
+       "name": "James I Manning, Jr.",
        "candidate": "James Manning",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 92667,
-       "expenditures": null
-      },
-      {
-       "name": "Huff4Oregon",
-       "candidate": "Jack Huff",
-       "party": "R",
-       "partyLabel": "Republican",
-       "incumbent": false,
-       "contributions": 0,
+       "contributions": 117292,
        "expenditures": null
       }
      ]
     },
     "8": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Sara Gelser Blouin for State Senate",
-       "candidate": "Sara Gelser Blouin",
+       "name": "Sara Gelser Blouin",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 64417.75,
+       "contributions": 70417.75,
+       "expenditures": null
+      },
+      {
+       "name": "Valerie G Draper Woldeit",
+       "candidate": "Valerie Draper Woldeit",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 1860,
        "expenditures": null
       }
      ]
     },
     "10": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Deb Patterson",
+       "name": "Deborah Patterson",
        "candidate": "Deb Patterson",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 474860.08,
+       "contributions": 525209.21,
+       "expenditures": null
+      },
+      {
+       "name": "Angela Plowhead",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 140254.84,
        "expenditures": null
       }
      ]
     },
     "11": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Elect Virginia Stapleton",
-       "candidate": "Virginia Stapleton",
-       "party": "D",
-       "partyLabel": "Democratic",
-       "incumbent": false,
-       "contributions": 943809.21,
-       "expenditures": null
-      },
-      {
-       "name": "Tracy Cramer PAC",
+       "name": "Tracy M Cramer",
        "candidate": "Tracy Cramer",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1526577.9,
+       "contributions": 1792146.44,
+       "expenditures": null
+      },
+      {
+       "name": "Virginia C Stapleton",
+       "candidate": "Virginia Stapleton",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 959168.03,
        "expenditures": null
       }
      ]
     },
     "13": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Courtney Neron",
-       "candidate": "Courtney Neron",
+       "name": "Courtney Neron",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
        "contributions": 132521.23,
        "expenditures": null
+      },
+      {
+       "name": "Glenn Lancaster",
+       "party": "R",
+       "partyLabel": "Republican",
+       "incumbent": false,
+       "contributions": 19915.26,
+       "expenditures": null
       }
      ]
     },
     "15": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Hutchison's Service PAC",
-       "candidate": "Harold Hutchison",
+       "name": "Myrna Munoz",
+       "party": "D",
+       "partyLabel": "Democratic",
+       "incumbent": false,
+       "contributions": 444058.29,
+       "expenditures": null
+      },
+      {
+       "name": "Harold Hutchison",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 1325,
+       "contributions": 1512.5,
        "expenditures": null
       }
      ]
     },
     "16": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Courtney Bangs PAC",
+       "name": "Courtney D Bangs",
        "candidate": "Courtney Bangs",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 553998.13,
+       "contributions": 596448.13,
        "expenditures": null
       },
       {
-       "name": "FINKLE for SD16",
-       "candidate": "Melisa Finkle",
-       "party": "O",
-       "partyLabel": "Other",
+       "name": "Rachel Armitage",
+       "party": "D",
+       "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 0,
+       "contributions": 110028.7,
        "expenditures": null
       }
      ]
     },
     "17": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Lisa Reynolds",
-       "candidate": "Lisa Reynolds",
+       "name": "Lisa Reynolds",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
@@ -636872,11 +640614,11 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "19": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Rob Wagner",
+       "name": "Robert Wagner",
        "candidate": "Rob Wagner",
        "party": "D",
        "partyLabel": "Democratic",
@@ -636885,8 +640627,7 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
        "expenditures": null
       },
       {
-       "name": "Mary Dirksen for Oregon",
-       "candidate": "Mary Dirksen",
+       "name": "Mary Dirksen",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
@@ -636896,64 +640637,62 @@ export const stateLegFinance: Record<string, Record<string, Partial<Record<Chamb
      ]
     },
     "20": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Mark Meek",
-       "candidate": "Mark Meek",
+       "name": "Mark Meek",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 389834.95,
+       "contributions": 430812.62,
        "expenditures": null
       },
       {
-       "name": "Michele Stroh for Senate",
+       "name": "michele L stroh",
        "candidate": "Michele Stroh",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 61015.61,
+       "contributions": 61115.61,
        "expenditures": null
       }
      ]
     },
     "24": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Kayse Jama for Oregon",
+       "name": "Kayse M Jama",
        "candidate": "Kayse Jama",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": true,
-       "contributions": 312342.04,
+       "contributions": 352342.04,
        "expenditures": null
       }
      ]
     },
     "26": {
-     "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
-     "dataThrough": "10/19/2026",
+     "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
+     "dataThrough": "2026-10-21",
      "candidates": [
       {
-       "name": "Friends of Jeff Helfrich",
+       "name": "Jeff Helfrich",
        "candidate": "Jeffrey Helfrich",
        "party": "R",
        "partyLabel": "Republican",
        "incumbent": false,
-       "contributions": 412047.31,
+       "contributions": 412072.31,
        "expenditures": null
       },
       {
-       "name": "Bassett for Oregon",
-       "candidate": "Nicole Bassett",
+       "name": "Nicole Bassett",
        "party": "D",
        "partyLabel": "Democratic",
        "incumbent": false,
-       "contributions": 230277.35,
+       "contributions": 248018.21,
        "expenditures": null
       }
      ]

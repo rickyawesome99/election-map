@@ -1,182 +1,20 @@
 {
  "state": "OR",
  "cycle": 2022,
- "source": "Oregon Secretary of State ORESTAR (contributions, two calendar years)",
+ "source": "Oregon Secretary of State ORESTAR contributions (two calendar years), via the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app)",
  "dataThrough": "12/31/2022",
- "senate": {
-  "3": [
-   {
-    "name": "Committee to Elect Jeff Golden",
-    "candidate": "Jeff Golden",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 239198.9,
-    "expenditures": null
-   },
-   {
-    "name": "Sparacino for Oregon",
-    "candidate": "Randy Sparacino",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 1110376.96,
-    "expenditures": null
-   }
-  ],
-  "4": [
-   {
-    "name": "Friends for Floyd Prozanski",
-    "candidate": "Floyd Prozanski",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 128383.61,
-    "expenditures": null
-   },
-   {
-    "name": "Pinnell For Government",
-    "candidate": "Eric Pinnell",
-    "party": "Other",
-    "incumbent": false,
-    "contributions": 4021.05,
-    "expenditures": null
-   }
-  ],
-  "6": [
-   {
-    "name": "Hayden for Oregon",
-    "candidate": "Cedric R. Hayden",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 241050.48,
-    "expenditures": null
-   }
-  ],
-  "10": [
-   {
-    "name": "Friends of Deb Patterson",
-    "candidate": "Deb Patterson",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 2267021,
-    "expenditures": null
-   }
-  ],
-  "11": [
-   {
-    "name": "Friends of Kim Thatcher",
-    "candidate": "Kim Thatcher",
-    "party": "Republican",
-    "incumbent": true,
-    "contributions": 1282002.91,
-    "expenditures": null
-   },
-   {
-    "name": "Friends of Rich Walsh",
-    "candidate": "Richard Walsh",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 790649.95,
-    "expenditures": null
-   }
-  ],
-  "13": [
-   {
-    "name": "Friends of Aaron Woods",
-    "candidate": "Aaron Woods",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 265755.69,
-    "expenditures": null
-   },
-   {
-    "name": "Velez for Oregon",
-    "candidate": "John D. Velez",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 45507.77,
-    "expenditures": null
-   }
-  ],
-  "15": [
-   {
-    "name": "Friends of Janeen Sollman",
-    "candidate": "Janeen Sollman",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 233155.65,
-    "expenditures": null
-   },
-   {
-    "name": "Friends of Carolina Malmedal",
-    "candidate": "Carolina Malmedal",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 1089280.33,
-    "expenditures": null
-   }
-  ],
-  "16": [
-   {
-    "name": "Friends of Suzanne Weber",
-    "candidate": "Suzanne Weber",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 526091.2,
-    "expenditures": null
-   }
-  ],
-  "19": [
-   {
-    "name": "Friends of Rob Wagner",
-    "candidate": "Rob Wagner",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 759545.91,
-    "expenditures": null
-   }
-  ],
-  "20": [
-   {
-    "name": "Friends of Mark Meek",
-    "candidate": "Mark Meek",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 2837428.38,
-    "expenditures": null
-   }
-  ],
-  "24": [
-   {
-    "name": "Kayse Jama for Oregon",
-    "candidate": "Kayse Jama",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 157249.38,
-    "expenditures": null
-   }
-  ],
-  "26": [
-   {
-    "name": "Committee to Elect Daniel Bonham",
-    "candidate": "Daniel G. Bonham",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 524231.01,
-    "expenditures": null
-   },
-   {
-    "name": "Mason for Oregon",
-    "candidate": "Raz Mason",
-    "party": "Democratic",
-    "incumbent": false,
-    "contributions": 71386.27,
-    "expenditures": null
-   }
-  ]
- },
  "house": {
   "1": [
    {
-    "name": "Elect Bret Cecil",
+    "name": "David Brock Smith",
+    "candidate": "David Brock Smith",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 144515.56,
+    "expenditures": null
+   },
+   {
+    "name": "Bret A Cecil",
     "candidate": "Bret Cecil",
     "party": "Democratic",
     "incumbent": false,
@@ -186,7 +24,7 @@
   ],
   "2": [
    {
-    "name": "Friends of Virgle Osborne",
+    "name": "Virgle Osborne",
     "candidate": "Virgle J. Osborne",
     "party": "Republican",
     "incumbent": false,
@@ -194,7 +32,7 @@
     "expenditures": null
    },
    {
-    "name": "Kevin Bell for House District 2",
+    "name": "Kevin Bell",
     "candidate": "Kevin Bell",
     "party": "Democratic",
     "incumbent": false,
@@ -204,7 +42,7 @@
   ],
   "3": [
    {
-    "name": "Friends of Lily Morgan",
+    "name": "Lily Morgan",
     "candidate": "Lily Morgan",
     "party": "Republican",
     "incumbent": true,
@@ -212,9 +50,19 @@
     "expenditures": null
    }
   ],
+  "4": [
+   {
+    "name": "Christine Goodwin",
+    "candidate": "Christine Goodwin",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 161179.6,
+    "expenditures": null
+   }
+  ],
   "5": [
    {
-    "name": "Committee to Elect Pam Marsh",
+    "name": "Pam J Marsh",
     "candidate": "Pam Marsh",
     "party": "Democratic",
     "incumbent": true,
@@ -224,17 +72,25 @@
   ],
   "6": [
    {
-    "name": "Friends of Kim Wallan",
+    "name": "Kimberly D. Wallan",
     "candidate": "Kim Wallan",
     "party": "Republican",
     "incumbent": true,
     "contributions": 111890,
     "expenditures": null
+   },
+   {
+    "name": "Daniel L Davis",
+    "candidate": "Dan Davis",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 16335.85,
+    "expenditures": null
    }
   ],
   "7": [
    {
-    "name": "Friends of John Lively",
+    "name": "John Lively",
     "candidate": "John Lively",
     "party": "Democratic",
     "incumbent": true,
@@ -242,7 +98,7 @@
     "expenditures": null
    },
    {
-    "name": "Alan Stout for Oregon",
+    "name": "Alan Stout",
     "candidate": "Alan Stout",
     "party": "Republican",
     "incumbent": false,
@@ -252,7 +108,15 @@
   ],
   "8": [
    {
-    "name": "Friends of Michael Moore",
+    "name": "PAUL HOLVEY",
+    "candidate": "Paul R. Holvey",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 170743.19,
+    "expenditures": null
+   },
+   {
+    "name": "Michael F Moore",
     "candidate": "Michael F. Moore",
     "party": "Republican",
     "incumbent": false,
@@ -262,7 +126,7 @@
   ],
   "9": [
    {
-    "name": "Friends of Boomer Wright",
+    "name": "Gerald D Wright",
     "candidate": "Boomer Wright",
     "party": "Republican",
     "incumbent": true,
@@ -270,7 +134,7 @@
     "expenditures": null
    },
    {
-    "name": "Rust for House",
+    "name": "Jerry Rust",
     "candidate": "Jerry Rust",
     "party": "Democratic",
     "incumbent": false,
@@ -280,17 +144,51 @@
   ],
   "10": [
    {
-    "name": "Gomberg for State Rep",
+    "name": "David Gomberg",
     "candidate": "David Gomberg",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 291026.43,
     "expenditures": null
+   },
+   {
+    "name": "Celeste McEntee",
+    "candidate": "Celeste McEntee",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 115362.69,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Jami J Cate",
+    "candidate": "Jami Cate",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 149694.51,
+    "expenditures": null
+   },
+   {
+    "name": "Mary K Cooke",
+    "candidate": "Mary K. Cooke",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5596.63,
+    "expenditures": null
    }
   ],
   "12": [
    {
-    "name": "Emmons for Oregon",
+    "name": "Charlie Conrad",
+    "candidate": "Charlie Conrad",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 109791,
+    "expenditures": null
+   },
+   {
+    "name": "Michelle M Emmons",
     "candidate": "Michelle Emmons",
     "party": "Democratic",
     "incumbent": false,
@@ -300,27 +198,61 @@
   ],
   "13": [
    {
-    "name": "Friends of Nancy Nathanson",
+    "name": "Nancy Nathanson",
     "candidate": "Nancy Nathanson",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 161470,
     "expenditures": null
+   },
+   {
+    "name": "Timothy S Sutherland",
+    "candidate": "Timothy S. Sutherland",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3645,
+    "expenditures": null
    }
   ],
   "14": [
    {
-    "name": "Friends of Julie Fahey",
+    "name": "Julianne Fahey",
     "candidate": "Julie Fahey",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 485658.58,
     "expenditures": null
+   },
+   {
+    "name": "Stan Stubblefield",
+    "candidate": "Stan Stubblefield",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 42149.19,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Shelly Boshart Davis",
+    "candidate": "Shelly Davis",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 328902,
+    "expenditures": null
+   },
+   {
+    "name": "Benjamin Watts",
+    "candidate": "Benjamin Watts",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 21807.74,
+    "expenditures": null
    }
   ],
   "16": [
    {
-    "name": "Friends of Dan Rayfield",
+    "name": "Daniel A Rayfield",
     "candidate": "Dan Rayfield",
     "party": "Democratic",
     "incumbent": true,
@@ -328,17 +260,17 @@
     "expenditures": null
    },
    {
-    "name": "Vote for Keith Lembke",
+    "name": "Roy Lembke",
     "candidate": "Keith Lembke",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": 250,
     "expenditures": null
    }
   ],
   "17": [
    {
-    "name": "Ed Diehl for Oregon",
+    "name": "Edwin Diehl",
     "candidate": "Ed Diehl",
     "party": "Republican",
     "incumbent": false,
@@ -348,57 +280,115 @@
   ],
   "18": [
    {
-    "name": "Committee to Elect Rick Lewis",
+    "name": "Rick Lewis",
     "candidate": "Rick Lewis",
     "party": "Republican",
     "incumbent": true,
     "contributions": 64486.44,
     "expenditures": null
+   },
+   {
+    "name": "Jesse Smith",
+    "candidate": "Jesse S. Smith",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10035,
+    "expenditures": null
    }
   ],
   "19": [
    {
-    "name": "Friends of Tom Andersen",
+    "name": "H Thomas Andersen",
     "candidate": "Tom Andersen",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 677392.34,
     "expenditures": null
+   },
+   {
+    "name": "T.J. Sullivan",
+    "candidate": "T. J. Sullivan",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 368132.71,
+    "expenditures": null
    }
   ],
   "20": [
    {
-    "name": "Friends of Paul Evans",
+    "name": "Paul Evans",
     "candidate": "Paul Evans",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 797950.08,
     "expenditures": null
+   },
+   {
+    "name": "Daniel Farrington",
+    "candidate": "Dan Farrington",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 183126.74,
+    "expenditures": null
    }
   ],
   "21": [
    {
-    "name": "Mannix for Oregon PAC",
+    "name": "Kevin L Mannix",
     "candidate": "Kevin L. Mannix",
     "party": "Republican",
     "incumbent": false,
     "contributions": 557291.53,
     "expenditures": null
+   },
+   {
+    "name": "Ramiro Navarro",
+    "candidate": "Ramiro Navarro Jr.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 125423.95,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Tracy M Cramer",
+    "candidate": "Tracy M. Cramer",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 781204.56,
+    "expenditures": null
+   },
+   {
+    "name": "Anthony Medina",
+    "candidate": "Anthony Medina",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 959017.01,
+    "expenditures": null
    }
   ],
   "23": [
    {
-    "name": "Friends of Anna Scharf",
+    "name": "Anna Scharf",
     "candidate": "Anna M. Scharf",
     "party": "Republican",
     "incumbent": false,
     "contributions": 143368.17,
     "expenditures": null
+   },
+   {
+    "name": "Krisstina Wright",
+    "candidate": "Kriss Wright",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5201,
+    "expenditures": null
    }
   ],
   "24": [
    {
-    "name": "Committee to Elect Lucetta Elmer",
+    "name": "Lucetta Elmer",
     "candidate": "Lucetta A. Elmer",
     "party": "Republican",
     "incumbent": false,
@@ -406,7 +396,7 @@
     "expenditures": null
    },
    {
-    "name": "Victoria Ernst for District 24",
+    "name": "Victoria R Ernst",
     "candidate": "Victoria Ernst",
     "party": "Democratic",
     "incumbent": false,
@@ -416,35 +406,79 @@
   ],
   "25": [
    {
-    "name": "Bob Niemeyer Campaign",
-    "candidate": "Bob Niemeyer",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 575,
-    "expenditures": null
-   },
-   {
-    "name": "Friends of Ben Bowman",
+    "name": "Benjamin W Bowman",
     "candidate": "Ben Bowman",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 110107.96,
     "expenditures": null
+   },
+   {
+    "name": "Robert H Niemeyer, III",
+    "candidate": "Bob Niemeyer",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 575,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Courtney Neron",
+    "candidate": "Courtney Neron",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1042539.38,
+    "expenditures": null
+   },
+   {
+    "name": "Jason Fields",
+    "candidate": "Jason Fields",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 242904.66,
+    "expenditures": null
    }
   ],
   "27": [
    {
-    "name": "Ken Helm for Oregon",
+    "name": "Kenneth D Helm",
     "candidate": "Ken Helm",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 153616.22,
     "expenditures": null
+   },
+   {
+    "name": "Sandra Nelson",
+    "candidate": "Sandra Nelson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6230,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "Dacia Grayber",
+    "candidate": "Dacia Grayber",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 223371.32,
+    "expenditures": null
+   },
+   {
+    "name": "Patrick T Castles",
+    "candidate": "Patrick Castles",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5624.17,
+    "expenditures": null
    }
   ],
   "29": [
    {
-    "name": "Friends of Susan McLain",
+    "name": "Susan McLain",
     "candidate": "Susan McLain",
     "party": "Democratic",
     "incumbent": true,
@@ -452,7 +486,7 @@
     "expenditures": null
    },
    {
-    "name": "Friends of Gina Munster Moore",
+    "name": "Gina Munster-Moore",
     "candidate": "Gina Munster-Moore",
     "party": "Republican",
     "incumbent": false,
@@ -462,35 +496,51 @@
   ],
   "30": [
    {
-    "name": "Joe Everton for Hillsboro",
-    "candidate": "Joe Everton",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 46191.62,
-    "expenditures": null
-   },
-   {
-    "name": "Nathan Sosa for Oregon",
+    "name": "Nathan Sosa",
     "candidate": "Nathan Sosa",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 115460.93,
     "expenditures": null
+   },
+   {
+    "name": "Joseph K Everton",
+    "candidate": "Joe Everton",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 46191.62,
+    "expenditures": null
    }
   ],
   "31": [
    {
-    "name": "Stout for State Rep",
+    "name": "Brian G Stout",
     "candidate": "Brian G. Stout",
     "party": "Republican",
     "incumbent": false,
     "contributions": 171145.49,
     "expenditures": null
+   },
+   {
+    "name": "Anthony Sorace",
+    "candidate": "Anthony Sorace",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14142.29,
+    "expenditures": null
    }
   ],
   "32": [
    {
-    "name": "Laity for Community",
+    "name": "Cyrus Javadi",
+    "candidate": "Cyrus B. Javadi",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 469407.21,
+    "expenditures": null
+   },
+   {
+    "name": "Logan C Laity",
     "candidate": "Logan C. Laity",
     "party": "Democratic",
     "incumbent": false,
@@ -498,9 +548,27 @@
     "expenditures": null
    }
   ],
+  "33": [
+   {
+    "name": "Maxine E Dexter",
+    "candidate": "Maxine E. Dexter",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 99903.97,
+    "expenditures": null
+   }
+  ],
   "34": [
    {
-    "name": "Friends of John Woods",
+    "name": "Lisa Reynolds",
+    "candidate": "Lisa Reynolds",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 153672,
+    "expenditures": null
+   },
+   {
+    "name": "John F Woods",
     "candidate": "John Woods",
     "party": "Republican",
     "incumbent": false,
@@ -510,15 +578,7 @@
   ],
   "35": [
    {
-    "name": "Friends of Daniel Martin",
-    "candidate": "Daniel R. Martin",
-    "party": "Republican",
-    "incumbent": false,
-    "contributions": 0,
-    "expenditures": null
-   },
-   {
-    "name": "Chaichi for Oregon",
+    "name": "Farrah Chaichi",
     "candidate": "Farrah Chaichi",
     "party": "Democratic",
     "incumbent": false,
@@ -528,7 +588,7 @@
   ],
   "36": [
    {
-    "name": "Friends of Hai Pham",
+    "name": "Hai Pham",
     "candidate": "Hai Pham",
     "party": "Democratic",
     "incumbent": false,
@@ -536,7 +596,7 @@
     "expenditures": null
    },
    {
-    "name": "Committee to Elect Greer Trice.",
+    "name": "Greer H Trice",
     "candidate": "Greer Trice",
     "party": "Republican",
     "incumbent": false,
@@ -546,27 +606,43 @@
   ],
   "37": [
    {
-    "name": "Friends of Jules Walters",
+    "name": "Julianna Walters",
     "candidate": "Jules Walters",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 185827.18,
     "expenditures": null
+   },
+   {
+    "name": "Aeric Estep",
+    "candidate": "Aeric Estep",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 26659.57,
+    "expenditures": null
    }
   ],
   "38": [
    {
-    "name": "Friends of Daniel Nguyen",
+    "name": "Daniel Nguyen",
     "candidate": "Daniel Nguyen",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 251697.75,
     "expenditures": null
+   },
+   {
+    "name": "Alistair Firmin",
+    "candidate": "Alistair Firmin",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 48242.65,
+    "expenditures": null
    }
   ],
   "39": [
    {
-    "name": "Committee to Elect Janelle Bynum",
+    "name": "Janelle Bynum",
     "candidate": "Janelle S. Bynum",
     "party": "Democratic",
     "incumbent": true,
@@ -574,7 +650,7 @@
     "expenditures": null
    },
    {
-    "name": "Friends of Kori Haynes",
+    "name": "Kori Haynes",
     "candidate": "Kori Haynes",
     "party": "Republican",
     "incumbent": false,
@@ -584,7 +660,15 @@
   ],
   "40": [
    {
-    "name": "Annessa Hartman for Oregon",
+    "name": "Adam Baker",
+    "candidate": "Adam Baker",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 697462.79,
+    "expenditures": null
+   },
+   {
+    "name": "Annessa D Hartman",
     "candidate": "Annessa Hartman",
     "party": "Democratic",
     "incumbent": false,
@@ -594,7 +678,7 @@
   ],
   "41": [
    {
-    "name": "Mark Gamba for Oregon",
+    "name": "Mark Gamba",
     "candidate": "Mark F. Gamba",
     "party": "Democratic",
     "incumbent": false,
@@ -602,7 +686,7 @@
     "expenditures": null
    },
    {
-    "name": "Friends of Rob Reynolds",
+    "name": "Rob Reynolds",
     "candidate": "Rob Reynolds",
     "party": "Republican",
     "incumbent": false,
@@ -612,7 +696,7 @@
   ],
   "42": [
    {
-    "name": "Friends of Rob Nosse",
+    "name": "Rob A Nosse",
     "candidate": "Rob Nosse",
     "party": "Democratic",
     "incumbent": true,
@@ -622,17 +706,25 @@
   ],
   "43": [
    {
-    "name": "Tawna Sanchez for Oregon",
+    "name": "Tawna D Sanchez",
     "candidate": "Tawna Sanchez",
     "party": "Democratic",
     "incumbent": true,
     "contributions": 241634,
     "expenditures": null
+   },
+   {
+    "name": "TImothy E LeMaster",
+    "candidate": "Tim Lemaster",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 8039.23,
+    "expenditures": null
    }
   ],
   "44": [
    {
-    "name": "Friends of Travis Nelson",
+    "name": "Travis Nelson",
     "candidate": "Travis Nelson",
     "party": "Democratic",
     "incumbent": false,
@@ -642,17 +734,35 @@
   ],
   "45": [
    {
-    "name": "Friends of Thuy Tran",
+    "name": "Thuy Tran",
     "candidate": "Thuy Tran",
     "party": "Democratic",
     "incumbent": false,
     "contributions": 137227.91,
     "expenditures": null
+   },
+   {
+    "name": "George Donnerberg",
+    "candidate": "George Donnerberg",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 57358.5,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "Katherine Pham",
+    "candidate": "Khanh Pham",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 156204.74,
+    "expenditures": null
    }
   ],
   "47": [
    {
-    "name": "Friends of Andrea Valderrama",
+    "name": "Andrea L Valderrama",
     "candidate": "Andrea Valderrama",
     "party": "Democratic",
     "incumbent": false,
@@ -662,17 +772,33 @@
   ],
   "48": [
    {
-    "name": "Friends of John Masterman",
+    "name": "John Masterman",
     "candidate": "John Masterman",
     "party": "Republican",
     "incumbent": false,
     "contributions": 18465.73,
     "expenditures": null
+   },
+   {
+    "name": "Hoa H Nguyen",
+    "candidate": "Hoa H. Nguyen",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 153183.34,
+    "expenditures": null
    }
   ],
   "49": [
    {
-    "name": "Elect Zach Hudson",
+    "name": "Randy E Lauer",
+    "candidate": "Randy E. Lauer",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 712115.84,
+    "expenditures": null
+   },
+   {
+    "name": "Zachary T Hudson",
     "candidate": "Zach Hudson",
     "party": "Democratic",
     "incumbent": true,
@@ -680,9 +806,55 @@
     "expenditures": null
    }
   ],
+  "50": [
+   {
+    "name": "Ricardo Ruiz",
+    "candidate": "Ricki Ruiz",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 144211.35,
+    "expenditures": null
+   },
+   {
+    "name": "Amelia Salvador",
+    "candidate": "Amelia Salvador",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 27720.51,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "james a hieb",
+    "candidate": "James Hieb",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 40378.79,
+    "expenditures": null
+   },
+   {
+    "name": "Walt R Trandum",
+    "candidate": "Walt Trandum",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5094.71,
+    "expenditures": null
+   }
+  ],
+  "52": [
+   {
+    "name": "Jeff Helfrich",
+    "candidate": "Jeff Helfrich",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 618530.83,
+    "expenditures": null
+   }
+  ],
   "53": [
    {
-    "name": "Friends of Em Levy",
+    "name": "Emerson Levy",
     "candidate": "Emerson Levy",
     "party": "Democratic",
     "incumbent": false,
@@ -690,7 +862,7 @@
     "expenditures": null
    },
    {
-    "name": "Michael Sipe for State Representative",
+    "name": "Michael Sipe",
     "candidate": "Michael Sipe",
     "party": "Republican",
     "incumbent": false,
@@ -698,9 +870,35 @@
     "expenditures": null
    }
   ],
+  "54": [
+   {
+    "name": "Jason S Kropf",
+    "candidate": "Jason Kropf",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 142973,
+    "expenditures": null
+   },
+   {
+    "name": "Judy Trego",
+    "candidate": "Judy Trego",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 36495.72,
+    "expenditures": null
+   }
+  ],
   "55": [
    {
-    "name": "Lepore for Oregon",
+    "name": "E Werner Reschke",
+    "candidate": "E. Werner Reschke",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 138354.58,
+    "expenditures": null
+   },
+   {
+    "name": "Brian Lepore",
     "candidate": "Brian Lepore",
     "party": "Democratic",
     "incumbent": false,
@@ -710,17 +908,25 @@
   ],
   "56": [
    {
-    "name": "Friends of Emily McIntire",
+    "name": "Emily McIntire",
     "candidate": "Emily G. McIntire",
     "party": "Republican",
     "incumbent": false,
     "contributions": 76283.01,
     "expenditures": null
+   },
+   {
+    "name": "Jonathan Chenjeri",
+    "candidate": "Jonathan P. Chenjeri",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8617.34,
+    "expenditures": null
    }
   ],
   "57": [
    {
-    "name": "Committee to Re-Elect Greg Smith",
+    "name": "Gregory V. Smith",
     "candidate": "Greg Smith",
     "party": "Republican",
     "incumbent": true,
@@ -730,7 +936,7 @@
   ],
   "58": [
    {
-    "name": "Friends of Bobby Levy",
+    "name": "Bobby Levy",
     "candidate": "Bobby Levy",
     "party": "Republican",
     "incumbent": true,
@@ -738,13 +944,277 @@
     "expenditures": null
    }
   ],
+  "59": [
+   {
+    "name": "Vikki K Iverson",
+    "candidate": "Vikki Breese-Iverson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1002039.67,
+    "expenditures": null
+   }
+  ],
   "60": [
    {
-    "name": "Mark Owens for Oregon",
+    "name": "Mark Owens",
     "candidate": "Mark Owens",
     "party": "Republican",
     "incumbent": true,
     "contributions": 112142.06,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "3": [
+   {
+    "name": "Randy Sparacino",
+    "candidate": "Randy Sparacino",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1110376.96,
+    "expenditures": null
+   },
+   {
+    "name": "Jeff Golden",
+    "candidate": "Jeff Golden",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 239198.9,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Floyd F. Prozanski, Jr.",
+    "candidate": "Floyd Prozanski",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 128383.61,
+    "expenditures": null
+   },
+   {
+    "name": "Eric Pinnell",
+    "candidate": "Eric Pinnell",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 4021.05,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "Cedric Hayden",
+    "candidate": "Cedric R. Hayden",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 241050.48,
+    "expenditures": null
+   },
+   {
+    "name": "Ashley J Pelton",
+    "candidate": "Ashley Pelton",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 28082,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "James I Manning, Jr.",
+    "candidate": "James I. Manning Jr.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 178626.6,
+    "expenditures": null
+   },
+   {
+    "name": "Raquel M Ivie",
+    "candidate": "Raquel M. Ivie",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5662.11,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Sara Gelser Blouin",
+    "candidate": "Sara Gelser",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 117847.2,
+    "expenditures": null
+   },
+   {
+    "name": "Valerie G Draper Woldeit",
+    "candidate": "Valerie Draper Woldeit",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1065,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Deborah Patterson",
+    "candidate": "Deb Patterson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2267021,
+    "expenditures": null
+   },
+   {
+    "name": "Raquel C Moore-Green",
+    "candidate": "Raquel Moore-Green",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2238684.88,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Kim Thatcher",
+    "candidate": "Kim Thatcher",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1282002.91,
+    "expenditures": null
+   },
+   {
+    "name": "Richard Walsh",
+    "candidate": "Richard Walsh",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 790649.95,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "Aaron Woods",
+    "candidate": "Aaron Woods",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 265755.69,
+    "expenditures": null
+   },
+   {
+    "name": "John D Velez",
+    "candidate": "John D. Velez",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 45507.77,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "Janeen Sollman",
+    "candidate": "Janeen Sollman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 233155.65,
+    "expenditures": null
+   },
+   {
+    "name": "Carolina Malmedal",
+    "candidate": "Carolina Malmedal",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1089280.33,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Suzanne Weber",
+    "candidate": "Suzanne Weber",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 526091.2,
+    "expenditures": null
+   },
+   {
+    "name": "Melissa Busch",
+    "candidate": "Melissa Busch",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 284790.44,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Robert Wagner",
+    "candidate": "Rob Wagner",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 759545.91,
+    "expenditures": null
+   },
+   {
+    "name": "Benjamin C Edtl",
+    "candidate": "Ben Edtl",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 46111.55,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Mark Meek",
+    "candidate": "Mark Meek",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2837428.38,
+    "expenditures": null
+   },
+   {
+    "name": "Bill Kennemer",
+    "candidate": "Bill Kennemer",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2053988.68,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Kayse M Jama",
+    "candidate": "Kayse Jama",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 157249.38,
+    "expenditures": null
+   },
+   {
+    "name": "Stan Catherman",
+    "candidate": "Stan Catherman",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2411.28,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "Daniel G Bonham",
+    "candidate": "Daniel G. Bonham",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 524231.01,
+    "expenditures": null
+   },
+   {
+    "name": "Raz Mason",
+    "candidate": "Raz Mason",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 71386.27,
     "expenditures": null
    }
   ]

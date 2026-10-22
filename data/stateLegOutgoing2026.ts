@@ -7136,7 +7136,7 @@ export const stateLegOutgoing2026: Record<string, Partial<Record<Chamber, Record
    ]
   },
   "senate": {
-   "Bennington": [
+   "Chittenden Central": [
     {
      "name": "Philip Baruth",
      "party": "D",
