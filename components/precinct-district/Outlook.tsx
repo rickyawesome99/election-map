@@ -90,7 +90,7 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
               ))}
               <tr>
                 <td className="py-2 pr-1 text-[12px]" style={{ color: "var(--app-text-very-muted)" }}>=</td>
-                <td className="py-2 pr-3 font-bold" style={{ color: "var(--app-text-primary)" }}>Projected margin<div className="text-[11px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>σ² = (β*σ_E)² + race noise²; details on the <Link href="/analysis/internal-methodology/precinct-district" className="underline">methodology page</Link></div></td>
+                <td className="py-2 pr-3 font-bold" style={{ color: "var(--app-text-primary)" }}>Projected margin<div className="text-[11px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>σ² = (β*σ_E)² + race noise²; details on the <Link href="/analysis/internal-methodology/precinct-district" className="underline" prefetch={false}>methodology page</Link></div></td>
                 <td className="py-2 text-right text-[15px]"><M v={p.margin} /></td>
               </tr>
             </tbody>
@@ -138,7 +138,7 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
               <div className="mt-2 max-w-4xl space-y-1.5 text-[11.5px]" style={{ color: "var(--app-text-very-muted)" }}>
                 <p>
                   <b style={{ color: "var(--app-text-muted)" }}>How it enters the margin.</b> Receipts gap {signed(m.gapPct)}% (R-positive share of the two nominees&apos; combined {usd(m.dReceipts + m.rReceipts)}), × {m.scale} because the trailing side usually closes part of the gap after mid-cycle = {signed(m.scale * m.gapPct)}%. {m.incSign === 0 ? "An open" : m.incSign > 0 ? "A Republican-held" : "A Democratic-held"} {config.state} House seat at a {fmtMargin(m.presMargin)} presidential margin typically sees {signed(m.structuralGapPct)}%, so the edge beyond the seat is {signed(m.residualGapPct)}%. At K = {cal.K} points per point of edge that is {signed(cal.K * m.residualGapPct)}{Math.abs(cal.K * m.residualGapPct) > cal.CAP ? `, capped at ${signed(m.pts)}` : ""}.
-                  The typical gap is fitted on {cal.n} contested {cal.state} House races in {cal.fitYear}; K and the cap are the state legislature model&apos;s, backtested nationally (the {cal.state} fit&apos;s own in-sample K of {cal.kOls.toFixed(3)} ± {cal.kSe.toFixed(3)} is not used) — see the <Link href="/analysis/internal-methodology/precinct-district" className="underline">methodology</Link>.
+                  The typical gap is fitted on {cal.n} contested {cal.state} House races in {cal.fitYear}; K and the cap are the state legislature model&apos;s, backtested nationally (the {cal.state} fit&apos;s own in-sample K of {cal.kOls.toFixed(3)} ± {cal.kSe.toFixed(3)} is not used) — see the <Link href="/analysis/internal-methodology/precinct-district" className="underline" prefetch={false}>methodology</Link>.
                 </p>
                 <p>
                   <b style={{ color: "var(--app-text-muted)" }}>Raised is not spending power.</b> Gross receipts are the calibration&apos;s measure and read as a signal of donor and caucus backing. They include in-kind spending made on a candidate&apos;s behalf and money a candidate passes on to the caucus, so cash on hand can run the other way.

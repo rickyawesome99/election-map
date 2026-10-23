@@ -7,6 +7,7 @@ import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
 import { computeTrumpApprovalAverage } from "@/lib/trumpApprovalAverage";
 import { calculateStateTpl } from "@/lib/tplCompute";
 import { getForecastHistory } from "@/lib/forecastHistory";
+import { pollingCardData } from "@/lib/pollingCardData";
 import { forecastsFor, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecast";
 
 function seatTotals(data: { margin: number }[], holdover: { dem: number; rep: number }) {
@@ -64,6 +65,7 @@ export default function OverviewPage() {
     otherForecasts: otherForecasts(),
     updated: lastCommitDate(),
     asOf: now.getTime(),
+    pollingCard: pollingCardData(now.getTime()),
     trend: getForecastHistory()?.days.map((d) => ({ date: d.date, house: d.chambers.house.pDemControl ?? 0, senate: d.chambers.senate.pDemControl ?? 0, governors: d.chambers.governor.meanDem,
       seats: { house: seatRange(d.chambers.house), senate: seatRange(d.chambers.senate), governor: seatRange(d.chambers.governor) } })) ?? null,
   };

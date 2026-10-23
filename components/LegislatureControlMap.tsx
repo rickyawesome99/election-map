@@ -1,8 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { useRouter } from "next/navigation";
+import { ComposableMap, Geography } from "react-simple-maps";
+import Geographies from "@/components/maps/Geographies";
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import { startPendingNav } from "@/lib/navPending";
 import { FlipPatternDefs, FlipSwatch, flipFill } from "./FlipStripes";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
@@ -94,6 +97,7 @@ function Toggle<T extends string>({ value, options, onChange }: { value: T; opti
 }
 
 export default function LegislatureControlMap({ states, year }: { states: LegislatureMapState[]; year: number }) {
+  const router = useRouter();
   const [view, setView] = useState<View>("projected");
   const [side, setSide] = useState<Side>("house");
   const [hovered, setHovered] = useState<LegislatureMapState | null>(null);
@@ -169,7 +173,7 @@ export default function LegislatureControlMap({ states, year }: { states: Legisl
                   aria-label={s ? `${s.name}${v ? ` ${LEGEND.find(([c]) => c === v.cls)![1]}` : ""}` : undefined}
                   onMouseEnter={() => s && setHovered(s)}
                   onMouseLeave={() => setHovered(null)}
-                  onClick={() => { if (href) window.location.assign(href); }}
+                  onClick={() => { if (href) { startPendingNav(href); router.push(href); } }}
                   style={{
                     default: { fill, stroke: "var(--app-bg)", strokeWidth: 1, outline: "none" },
                     hover: { fill, stroke: "var(--app-text-primary)", strokeWidth: 1.5, outline: "none", cursor: href ? "pointer" : "default" },

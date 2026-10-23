@@ -187,11 +187,12 @@ export default function LegislatureChambersTable({ rows }: { rows: ChamberRow[] 
           const o = outlookOf(r);
           const rule = !o ? "var(--app-border)" : o.flip ? partyColor(o.party) : `color-mix(in srgb, ${partyColor(o.party)} 40%, var(--app-bg))`;
           return (
-            <div key={r.key} className="py-3.5 pl-3" style={{ borderLeft: `3px solid ${rule}`, borderBottom: "1px solid var(--app-border)" }}>
+            // Off-screen cards skip layout and paint until scrolled near (~190 px tall on a phone).
+            <div key={r.key} className="py-3.5 pl-3" style={{ borderLeft: `3px solid ${rule}`, borderBottom: "1px solid var(--app-border)", contentVisibility: "auto", containIntrinsicSize: "auto 195px" }}>
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0">
                   <MiniLabel>{r.label} · {r.seatsUp} of {r.totalSeats ?? "—"} up</MiniLabel>
-                  <Link href={r.href} className="mt-0.5 block truncate text-xl font-bold leading-tight hover:underline" style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}>{r.stateName}</Link>
+                  <Link href={r.href} prefetch={false} className="mt-0.5 block truncate text-xl font-bold leading-tight hover:underline" style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}>{r.stateName}</Link>
                 </div>
                 <div className="shrink-0 text-right">
                   <div className="text-lg leading-tight"><OddsCell d={r.pDem} r={r.pRep} className="font-extrabold" /></div>
@@ -222,7 +223,7 @@ export default function LegislatureChambersTable({ rows }: { rows: ChamberRow[] 
           <tbody>
             {sorted.map((r) => (
               <tr key={r.key} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                <td className="whitespace-nowrap py-2 pr-3 font-semibold"><Link href={r.href} className="hover:underline">{r.stateName} {r.label}</Link></td>
+                <td className="whitespace-nowrap py-2 pr-3 font-semibold"><Link href={r.href} prefetch={false} className="hover:underline">{r.stateName} {r.label}</Link></td>
                 <td className="whitespace-nowrap py-2 pr-3 text-right">{r.seatsUp}<span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}> / {r.totalSeats ?? "—"}</span></td>
                 <td className="whitespace-nowrap py-2 pr-3 text-right"><NowSplit now={r.now} /><NowStatus s={r.nowStatus} /></td>
                 <td className="py-2 pr-3"><SeatsCell r={r} /></td>

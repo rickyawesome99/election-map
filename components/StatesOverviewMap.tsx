@@ -2,7 +2,8 @@
 
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useRef, useState } from "react";
-import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
+import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
+import Geographies from "@/components/maps/Geographies";
 import type { Theme } from "./ForecastMap";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 

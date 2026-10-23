@@ -137,7 +137,7 @@ export default function LegislaturesPage() {
         <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} pb-6`}>
           <h1 style={PAGE_TITLE_STYLE}>State Legislatures</h1>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-            {chambers.length} chambers are on the ballot. Each is simulated seat by seat from the district atlas: a district&apos;s lean on today&apos;s lines, the national environment (E {env.eHat >= 0 ? "R" : "D"}+{Math.abs(env.eHat).toFixed(1)}, σ {env.sigmaE.toFixed(1)}), incumbency, and the {electionYear} field. Seats not on the ballot hold their sitting member. Method: <Link href="/analysis/internal-methodology/state-leg" className="underline underline-offset-2">Legislative atlas</Link>.
+            {chambers.length} chambers are on the ballot. Each is simulated seat by seat from the district atlas: a district&apos;s lean on today&apos;s lines, the national environment (E {env.eHat >= 0 ? "R" : "D"}+{Math.abs(env.eHat).toFixed(1)}, σ {env.sigmaE.toFixed(1)}), incumbency, and the {electionYear} field. Seats not on the ballot hold their sitting member. Method: <Link href="/analysis/internal-methodology/state-leg" className="underline underline-offset-2" prefetch={false}>Legislative atlas</Link>.
           </p>
           <div className="mt-6 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
             {/* Seats on the ballot: one bar, D | independent | R, with the halfway tick. */}

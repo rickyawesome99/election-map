@@ -1,15 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  Tooltip,
-  CartesianGrid,
-  ReferenceLine,
-} from "recharts";
+import { NO_RECHARTS, useRecharts } from "@/lib/useRecharts";
 import type { YearAggregation } from "@/lib/tplCompute";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
 import { niceAxisConfig } from "@/lib/chartAxis";
@@ -66,6 +58,8 @@ function WrsTooltip({ active, payload }: { active?: boolean; payload?: { payload
  */
 export default function CountyLeanTrendChart({ yearAggregations, reference, height = 140, fitAxis = false }: { yearAggregations: YearAggregation[]; reference?: { value: number; label: string }; height?: number; /** Fit the axis to the data instead of anchoring it at Even. */ fitAxis?: boolean }) {
   const [chartReady, setChartReady] = useState(false);
+  const recharts = useRecharts(); // loads after hydration (lib/useRecharts)
+  const { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ReferenceLine } = recharts ?? NO_RECHARTS;
   const chartHostRef = useRef<HTMLDivElement | null>(null);
   const [chartSize, setChartSize] = useState({ width: 0, height: 0 });
 
@@ -114,7 +108,7 @@ export default function CountyLeanTrendChart({ yearAggregations, reference, heig
 
   return (
     <div ref={chartHostRef} className="min-w-0" style={{ height }}>
-      {chartReady && chartSize.width > 0 && chartSize.height > 0 && (
+      {chartReady && recharts && chartSize.width > 0 && chartSize.height > 0 && (
         <LineChart width={chartSize.width} height={chartSize.height} data={chartData} margin={{ top: 8, right: 10, bottom: 0, left: 0 }}>
           <XAxis
             dataKey="year"

@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMemo, useRef, useState } from "react";
-import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
+import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
+import Geographies from "@/components/maps/Geographies";
 import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
-import { useTopo } from "@/lib/useTopology";
 import { fmt1, marginColor } from "./format";
 
 // The hub's choropleth: states or 2026 House districts, filled by any R-positive value (the
@@ -100,11 +100,8 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   const touchStartRef  = useRef<{ x: number; y: number } | null>(null);
   const ignoreClickRef = useRef(0);
 
-  // Both topologies start loading on mount, so the first switch to Districts doesn't wait on
-  // the network. The layers are memoized: hovering (tooltip state) doesn't re-render 435 paths.
-  const statesTopo = useTopo(STATES_GEO_URL);
-  const districtsTopo = useTopo(DISTRICTS_GEO_URL);
-  const stateLinesTopo = useTopo(STATE_LINES_GEO_URL);
+  // The layers are memoized: hovering (tooltip state) doesn't re-render 435 paths. The map files
+  // are pre-projected and cached for the session (components/maps/Geographies).
   const layers = useMemo(() => {
     const byKey = new Map(rows.map((r) => [r.key, r]));
     const rowOf = (geo: GeoFeature): MapRow | undefined =>
@@ -148,16 +145,16 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
 
     const content = (
       <g transform={wide ? `translate(${WIDE_SHIFT} 0)` : undefined}>
-        {!statesTopo ? null : mode === "states" ? (
-          <Geographies geography={statesTopo}>
+        {mode === "states" ? (
+          <Geographies geography={STATES_GEO_URL}>
             {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
           </Geographies>
         ) : (
-          districtsTopo && <>
-            <Geographies geography={districtsTopo}>
+          <>
+            <Geographies geography={DISTRICTS_GEO_URL}>
               {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
             </Geographies>
-            {stateLinesTopo && <Geographies geography={stateLinesTopo}>
+            <Geographies geography={STATE_LINES_GEO_URL}>
               {({ geographies }: { geographies: GeoFeature[] }) => geographies.map((geo) => (
                 <Geography key={geo.rsmKey} geography={geo} style={{
                   default: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
@@ -165,7 +162,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
                   pressed: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
                 }} />
               ))}
-            </Geographies>}
+            </Geographies>
           </>
         )}
       </g>
@@ -174,7 +171,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
       ? <ZoomableGroup key={`${mode}-${mapKey}`} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>{content}</ZoomableGroup>
       : <g key={mode}>{content}</g>;
   // eslint-disable-next-line react-hooks/exhaustive-deps -- setSelected is a stable wrapper over state + onSelect
-  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, stateLinesTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled, colorOf, onSelect, navigateOnClick, zoomable, wide]);
+  }, [mode, mapKey, rows, selected, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled, colorOf, onSelect, navigateOnClick, zoomable, wide]);
 
   const closeButton = (
     <button type="button" onClick={() => setSelected(null)} className="flex h-4 w-4 shrink-0 items-center justify-center rounded" style={{ color: "var(--app-text-very-muted)" }} aria-label="Close">

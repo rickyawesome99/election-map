@@ -3,7 +3,8 @@
 import { memo, useState, useEffect, useRef, useMemo, useCallback, type CSSProperties } from "react";
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
-import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
+import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
+import Geographies from "@/components/maps/Geographies";
 import { getRaceColor, marginToRating } from "@/lib/colorScale";
 import type { RaceType, NoElectionEntry } from "@/data/forecastData";
 import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, isProjectedFlip, type ForecastSummary } from "@/lib/forecastTypes";
@@ -22,7 +23,6 @@ import StatesSelectedCard from "./StatesSelectedCard";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
-import { useTopo } from "@/lib/useTopology";
 import { startPendingNav } from "@/lib/navPending";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_HERO_BG } from "@/lib/pageLayout";
@@ -220,9 +220,9 @@ const ForecastGeoLayer = memo(function ForecastGeoLayer({
 });
 
 // State borders drawn over the House districts — static, so memoized on the theme alone.
-const HouseStateOutlines = memo(function HouseStateOutlines({ t, topo }: { t: Theme; topo: object }) {
+const HouseStateOutlines = memo(function HouseStateOutlines({ t }: { t: Theme }) {
   return (
-    <Geographies geography={topo}>
+    <Geographies geography={HOUSE_STATE_LINES_URL}>
       {({ geographies }: { geographies: GeoFeature[] }) =>
         geographies.map((geo) => (
           <Geography
@@ -287,11 +287,6 @@ export default function ForecastMap({
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
   const isHouse = activeTab === "forecast" && raceType === "house";
   const geoUrl = isHouse ? HOUSE_DISTRICTS_2026_URL : STATES_URL;
-  // Both start loading on mount and stay cached across Senate/House/Governor navigation.
-  const statesTopo = useTopo(STATES_URL);
-  const districtsTopo = useTopo(HOUSE_DISTRICTS_2026_URL);
-  const stateLinesTopo = useTopo(HOUSE_STATE_LINES_URL);
-  const geoTopo = isHouse ? districtsTopo : statesTopo;
   const data = races;
   const forecastMapKey = `${geoUrl}:${raceType}:${mapKey}`;
   const demSeats = SEAT_HOLDOVERS[raceType].dem + data.filter((race) => race.margin <= 0).length;
@@ -445,8 +440,7 @@ export default function ForecastMap({
             >
             {/* The AK/HI insets pull the drawing left of the frame's center; shift it back. */}
             <g transform="translate(18 0)">
-            {geoTopo && (
-            <Geographies geography={geoTopo}>
+            <Geographies geography={geoUrl}>
               {({ geographies }: { geographies: GeoFeature[] }) => (
                 <ForecastGeoLayer
                   geographies={geographies}
@@ -461,8 +455,7 @@ export default function ForecastMap({
                 />
               )}
             </Geographies>
-            )}
-            {isHouse && stateLinesTopo && <HouseStateOutlines t={t} topo={stateLinesTopo} />}
+            {isHouse && <HouseStateOutlines t={t} />}
             </g>
             </ZoomableGroup>
           </ComposableMap>

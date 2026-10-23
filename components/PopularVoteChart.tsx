@@ -1,16 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  Tooltip,
-  ReferenceLine,
-  ResponsiveContainer,
-  Legend,
-} from "recharts";
+import { NO_RECHARTS, useRecharts } from "@/lib/useRecharts";
 import { popVoteData, type PopVoteRow } from "@/data/popVoteData";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
@@ -268,6 +259,8 @@ function HistoryRow({ row, seatWord }: { row: PopVoteRow; seatWord: string }) {
 }
 
 export default function PopularVoteChart() {
+  const recharts = useRecharts(); // loads after hydration (lib/useRecharts)
+  const { LineChart, Line, XAxis, YAxis, Tooltip, ReferenceLine, ResponsiveContainer, Legend } = recharts ?? NO_RECHARTS;
   const [selected, setSelected] = useState<RaceType>("President");
   const [viewMode, setViewMode] = useState<ViewMode>("pct");
   const [showSeats, setShowSeats] = useState(false);
@@ -299,58 +292,90 @@ export default function PopularVoteChart() {
               ))}
             </div>
             <div style={{ height: 230 }}>
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={chartPoints} margin={{ top: 8, right: 8, bottom: 0, left: 0 }}>
-                  <XAxis dataKey="year" tick={{ fontSize: 11, fill: "var(--app-text-muted)" }} axisLine={false} tickLine={false} />
-                  <YAxis
-                    domain={axisConfig.domain}
-                    ticks={axisConfig.ticks}
-                    tickFormatter={(v) => {
-                      if (showSeats) return viewMode === "margin" ? seatsMarginLabel(v) : String(v);
-                      return viewMode === "pct" ? `${v}%` : fmtMargin(v);
-                    }}
-                    tick={{ fontSize: 10, fill: "var(--app-text-muted)" }}
-                    axisLine={false}
-                    tickLine={false}
-                    width={44}
-                  />
-                  {(!showSeats || viewMode === "margin") && (
-                    <ReferenceLine
-                      y={showSeats ? 0 : viewMode === "pct" ? 50 : 0}
-                      stroke="var(--app-border)"
-                      strokeDasharray="4 3"
-                      strokeWidth={1}
+              {recharts && (
+                <ResponsiveContainer width="100%" height="100%">
+                  <LineChart data={chartPoints} margin={{ top: 8, right: 8, bottom: 0, left: 0 }}>
+                    <XAxis dataKey="year" tick={{ fontSize: 11, fill: "var(--app-text-muted)" }} axisLine={false} tickLine={false} />
+                    <YAxis
+                      domain={axisConfig.domain}
+                      ticks={axisConfig.ticks}
+                      tickFormatter={(v) => {
+                        if (showSeats) return viewMode === "margin" ? seatsMarginLabel(v) : String(v);
+                        return viewMode === "pct" ? `${v}%` : fmtMargin(v);
+                      }}
+                      tick={{ fontSize: 10, fill: "var(--app-text-muted)" }}
+                      axisLine={false}
+                      tickLine={false}
+                      width={44}
                     />
-                  )}
-                  <Tooltip content={tooltipContent} cursor={{ stroke: "var(--app-border)", strokeWidth: 1 }} />
-
-                  {showSeats ? (
-                    viewMode === "margin" ? (
-                      <Line
-                        type="monotone"
-                        dataKey="seatsMargin"
-                        stroke="var(--app-text-muted)"
-                        strokeWidth={2.5}
-                        dot={({ cx, cy, payload }: { cx?: number; cy?: number; payload: ChartPoint }) => (
-                          <circle key={`seatmargin-${payload.year}`} cx={cx ?? 0} cy={cy ?? 0} r={7} fill={payload.seatsMargin <= 0 ? "#1b408c" : "#be1c29"} />
-                        )}
-                        activeDot={{ r: 5 }}
-                        isAnimationActive={false}
+                    {(!showSeats || viewMode === "margin") && (
+                      <ReferenceLine
+                        y={showSeats ? 0 : viewMode === "pct" ? 50 : 0}
+                        stroke="var(--app-border)"
+                        strokeDasharray="4 3"
+                        strokeWidth={1}
                       />
-                    ) : (
+                    )}
+                    <Tooltip content={tooltipContent} cursor={{ stroke: "var(--app-border)", strokeWidth: 1 }} />
+
+                    {showSeats ? (
+                      viewMode === "margin" ? (
+                        <Line
+                          type="monotone"
+                          dataKey="seatsMargin"
+                          stroke="var(--app-text-muted)"
+                          strokeWidth={2.5}
+                          dot={({ cx, cy, payload }: { cx?: number; cy?: number; payload: ChartPoint }) => (
+                            <circle key={`seatmargin-${payload.year}`} cx={cx ?? 0} cy={cy ?? 0} r={7} fill={payload.seatsMargin <= 0 ? "#1b408c" : "#be1c29"} />
+                          )}
+                          activeDot={{ r: 5 }}
+                          isAnimationActive={false}
+                        />
+                      ) : (
+                        <>
+                          <Legend
+                            iconType="circle"
+                            iconSize={8}
+                            formatter={(value) => (
+                              <span style={{ fontSize: 11, color: "var(--app-text-muted)" }}>
+                                {value === "seatsD" ? "Democrat" : "Republican"}
+                              </span>
+                            )}
+                          />
+                          <Line
+                            type="monotone"
+                            dataKey="seatsD"
+                            stroke="#1b408c"
+                            strokeWidth={2.5}
+                            dot={{ r: 4, fill: "#1b408c", strokeWidth: 0 }}
+                            activeDot={{ r: 5 }}
+                            isAnimationActive={false}
+                          />
+                          <Line
+                            type="monotone"
+                            dataKey="seatsR"
+                            stroke="#be1c29"
+                            strokeWidth={2.5}
+                            dot={{ r: 4, fill: "#be1c29", strokeWidth: 0 }}
+                            activeDot={{ r: 5 }}
+                            isAnimationActive={false}
+                          />
+                        </>
+                      )
+                    ) : viewMode === "pct" ? (
                       <>
                         <Legend
                           iconType="circle"
                           iconSize={8}
                           formatter={(value) => (
                             <span style={{ fontSize: 11, color: "var(--app-text-muted)" }}>
-                              {value === "seatsD" ? "Democrat" : "Republican"}
+                              {value === "demPct" ? "Democratic share" : "Republican share"}
                             </span>
                           )}
                         />
                         <Line
                           type="monotone"
-                          dataKey="seatsD"
+                          dataKey="demPct"
                           stroke="#1b408c"
                           strokeWidth={2.5}
                           dot={{ r: 4, fill: "#1b408c", strokeWidth: 0 }}
@@ -359,7 +384,7 @@ export default function PopularVoteChart() {
                         />
                         <Line
                           type="monotone"
-                          dataKey="seatsR"
+                          dataKey="repPct"
                           stroke="#be1c29"
                           strokeWidth={2.5}
                           dot={{ r: 4, fill: "#be1c29", strokeWidth: 0 }}
@@ -367,52 +392,22 @@ export default function PopularVoteChart() {
                           isAnimationActive={false}
                         />
                       </>
-                    )
-                  ) : viewMode === "pct" ? (
-                    <>
-                      <Legend
-                        iconType="circle"
-                        iconSize={8}
-                        formatter={(value) => (
-                          <span style={{ fontSize: 11, color: "var(--app-text-muted)" }}>
-                            {value === "demPct" ? "Democratic share" : "Republican share"}
-                          </span>
+                    ) : (
+                      <Line
+                        type="monotone"
+                        dataKey="margin"
+                        stroke="var(--app-text-muted)"
+                        strokeWidth={2.5}
+                        dot={({ cx, cy, payload }: { cx?: number; cy?: number; payload: ChartPoint }) => (
+                          <circle key={`margin-${payload.year}`} cx={cx ?? 0} cy={cy ?? 0} r={7} fill={payload.margin >= 0 ? "#be1c29" : "#1b408c"} />
                         )}
-                      />
-                      <Line
-                        type="monotone"
-                        dataKey="demPct"
-                        stroke="#1b408c"
-                        strokeWidth={2.5}
-                        dot={{ r: 4, fill: "#1b408c", strokeWidth: 0 }}
                         activeDot={{ r: 5 }}
                         isAnimationActive={false}
                       />
-                      <Line
-                        type="monotone"
-                        dataKey="repPct"
-                        stroke="#be1c29"
-                        strokeWidth={2.5}
-                        dot={{ r: 4, fill: "#be1c29", strokeWidth: 0 }}
-                        activeDot={{ r: 5 }}
-                        isAnimationActive={false}
-                      />
-                    </>
-                  ) : (
-                    <Line
-                      type="monotone"
-                      dataKey="margin"
-                      stroke="var(--app-text-muted)"
-                      strokeWidth={2.5}
-                      dot={({ cx, cy, payload }: { cx?: number; cy?: number; payload: ChartPoint }) => (
-                        <circle key={`margin-${payload.year}`} cx={cx ?? 0} cy={cy ?? 0} r={7} fill={payload.margin >= 0 ? "#be1c29" : "#1b408c"} />
-                      )}
-                      activeDot={{ r: 5 }}
-                      isAnimationActive={false}
-                    />
-                  )}
-                </LineChart>
-              </ResponsiveContainer>
+                    )}
+                  </LineChart>
+                </ResponsiveContainer>
+              )}
             </div>
 
             <div className="mt-3 flex justify-start gap-2 pt-2" style={{ borderTop: "1px solid var(--app-border)" }}>

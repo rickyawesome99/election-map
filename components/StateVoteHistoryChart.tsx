@@ -1,16 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {
-  CartesianGrid,
-  Line,
-  LineChart,
-  ReferenceLine,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
+import { NO_RECHARTS, useRecharts } from "@/lib/useRecharts";
 
 type TabKey = "house" | "senate" | "governor" | "president" | "state_house" | "state_senate";
 
@@ -142,6 +133,8 @@ function buildSegmentLines(points: ChartPoint[]): {
 }
 
 export default function StateVoteHistoryChart({ results, bare = false }: { results: VoteResultInput[]; bare?: boolean }) {
+  const recharts = useRecharts(); // loads after hydration (lib/useRecharts)
+  const { CartesianGrid, Line, LineChart, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } = recharts ?? NO_RECHARTS;
   const availableTabs = TAB_ORDER.filter(
     tab => getChartPoints(tab, results).length >= 1
   );
@@ -175,79 +168,81 @@ export default function StateVoteHistoryChart({ results, bare = false }: { resul
 
   const chart = (
       <div className={bare ? "min-h-0 flex-1 px-1 pb-1 pt-1" : "px-4 pb-3 pt-1"} style={bare ? undefined : { height: 360 }}>
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={chartData} margin={{ top: 10, right: 12, bottom: 2, left: 0 }}>
-            <XAxis
-              dataKey="year"
-              tick={{ fontSize: 11, fill: "var(--app-text-muted)" }}
-              axisLine={false}
-              tickLine={false}
-            />
-            <YAxis
-              domain={axisConfig.domain}
-              allowDataOverflow
-              ticks={axisConfig.ticks}
-              tickFormatter={(v) => marginLabel(v)}
-              tick={{ fontSize: 10, fill: "var(--app-text-muted)" }}
-              axisLine={false}
-              tickLine={false}
-              width={52}
-            />
-            <CartesianGrid
-              vertical={false}
-              stroke="var(--app-border)"
-              strokeOpacity={0.42}
-              strokeDasharray="2 5"
-            />
-            <ReferenceLine y={0} stroke="var(--app-text-muted)" strokeOpacity={0.55} strokeDasharray="4 3" strokeWidth={1.25} />
-            <Tooltip
-              content={<MarginTooltip activeTab={activeTab} />}
-              cursor={{ stroke: "var(--app-border)", strokeWidth: 1 }}
-            />
-            {segments.map(({ key, stroke }) => (
+        {recharts && (
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={chartData} margin={{ top: 10, right: 12, bottom: 2, left: 0 }}>
+              <XAxis
+                dataKey="year"
+                tick={{ fontSize: 11, fill: "var(--app-text-muted)" }}
+                axisLine={false}
+                tickLine={false}
+              />
+              <YAxis
+                domain={axisConfig.domain}
+                allowDataOverflow
+                ticks={axisConfig.ticks}
+                tickFormatter={(v) => marginLabel(v)}
+                tick={{ fontSize: 10, fill: "var(--app-text-muted)" }}
+                axisLine={false}
+                tickLine={false}
+                width={52}
+              />
+              <CartesianGrid
+                vertical={false}
+                stroke="var(--app-border)"
+                strokeOpacity={0.42}
+                strokeDasharray="2 5"
+              />
+              <ReferenceLine y={0} stroke="var(--app-text-muted)" strokeOpacity={0.55} strokeDasharray="4 3" strokeWidth={1.25} />
+              <Tooltip
+                content={<MarginTooltip activeTab={activeTab} />}
+                cursor={{ stroke: "var(--app-border)", strokeWidth: 1 }}
+              />
+              {segments.map(({ key, stroke }) => (
+                <Line
+                  key={key}
+                  type="monotone"
+                  dataKey={key}
+                  stroke={stroke}
+                  strokeWidth={3}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  connectNulls={false}
+                  dot={false}
+                  activeDot={false}
+                  isAnimationActive={false}
+                />
+              ))}
               <Line
-                key={key}
                 type="monotone"
-                dataKey={key}
-                stroke={stroke}
-                strokeWidth={3}
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                dataKey="repMargin"
+                stroke="transparent"
+                strokeWidth={8}
                 connectNulls={false}
-                dot={false}
-                activeDot={false}
+                dot={({ cx, cy, payload }: { cx?: number; cy?: number; payload: ChartPoint }) => (
+                  <g key={`dot-${payload.year}`}>
+                    <circle
+                      cx={cx ?? 0}
+                      cy={cy ?? 0}
+                      r={7}
+                      fill={payload.repMargin >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)"}
+                    />
+                    <circle
+                      cx={cx ?? 0}
+                      cy={cy ?? 0}
+                      r={4.75}
+                      fill={payload.repMargin >= 0 ? "var(--party-rep)" : "var(--party-dem)"}
+                      stroke="var(--app-panel)"
+                      strokeWidth={1.5}
+                    />
+                  </g>
+                )}
+                activeDot={{ r: 6, stroke: "var(--app-panel)", strokeWidth: 2 }}
                 isAnimationActive={false}
               />
-            ))}
-            <Line
-              type="monotone"
-              dataKey="repMargin"
-              stroke="transparent"
-              strokeWidth={8}
-              connectNulls={false}
-              dot={({ cx, cy, payload }: { cx?: number; cy?: number; payload: ChartPoint }) => (
-                <g key={`dot-${payload.year}`}>
-                  <circle
-                    cx={cx ?? 0}
-                    cy={cy ?? 0}
-                    r={7}
-                    fill={payload.repMargin >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)"}
-                  />
-                  <circle
-                    cx={cx ?? 0}
-                    cy={cy ?? 0}
-                    r={4.75}
-                    fill={payload.repMargin >= 0 ? "var(--party-rep)" : "var(--party-dem)"}
-                    stroke="var(--app-panel)"
-                    strokeWidth={1.5}
-                  />
-                </g>
-              )}
-              activeDot={{ r: 6, stroke: "var(--app-panel)", strokeWidth: 2 }}
-              isAnimationActive={false}
-            />
-          </LineChart>
-        </ResponsiveContainer>
+            </LineChart>
+          </ResponsiveContainer>
+        )}
       </div>
   );
 

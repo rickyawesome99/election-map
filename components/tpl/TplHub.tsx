@@ -140,7 +140,7 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
                   <tr key={r.key} style={{ borderBottom: "1px solid var(--app-border)" }}>
                     <td className={TD} style={VERY_MUTED}>{i + 1}</td>
                     <td className={TD}>
-                      <Link href={r.href} className="font-medium underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }}>{r.name}</Link>
+                      <Link href={r.href} prefetch={false} className="font-medium underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }}>{r.name}</Link>
                       <span className="ml-1.5 rounded px-1 py-px font-mono text-[9px] font-semibold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>{r.sub}</span>
                     </td>
                     <td className={TD_R}><M v={r.value} digits={1} bold /></td>
@@ -176,7 +176,7 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
           </div>
         </div>
         <div className="min-w-0">
-          <LedgerSectionHead label="Candidates" meta={`largest ${summary.topWar.year} WAR`} right={<Link href="/model/candidates" className="text-xs hover:underline" style={{ color: "var(--app-text-muted)" }}>All candidates ›</Link>} />
+          <LedgerSectionHead label="Candidates" meta={`largest ${summary.topWar.year} WAR`} right={<Link href="/model/candidates" prefetch={false} className="text-xs hover:underline" style={{ color: "var(--app-text-muted)" }}>All candidates ›</Link>} />
           <div className="overflow-x-auto"><table className="w-full border-collapse text-xs">
             <tbody>
               {summary.topWar.rows.map((r, i) => (
@@ -201,7 +201,7 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
                 ["/analysis/internal-methodology/state-tpl", "Methodology", "State · District · County · WAR"],
               ].map(([href, label, desc]) => (
                 <tr key={href} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  <td className={`${TD} font-semibold`}><Link href={href} className="hover:underline" onClick={href.startsWith("/model#") ? (e) => { e.preventDefault(); setGeo(href === "/model#districts" ? "districts" : "states"); setShowAll(false); window.scrollTo({ top: 0, behavior: "smooth" }); } : undefined}>{label}</Link></td>
+                  <td className={`${TD} font-semibold`}><Link href={href} prefetch={false} className="hover:underline" onClick={href.startsWith("/model#") ? (e) => { e.preventDefault(); setGeo(href === "/model#districts" ? "districts" : "states"); setShowAll(false); window.scrollTo({ top: 0, behavior: "smooth" }); } : undefined}>{label}</Link></td>
                   <td className="px-2 py-1.5" style={{ color: "var(--app-text-muted)" }}>{desc}</td>
                 </tr>
               ))}

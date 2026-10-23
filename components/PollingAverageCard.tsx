@@ -1,69 +1,27 @@
 "use client";
 
 import { memo, useMemo, useRef, useState } from "react";
-import {
-  ComposedChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,
-  ResponsiveContainer,
-} from "recharts";
-import { genericBallotPolls, GenericBallotPoll } from "@/data/genericBallotPolls";
-import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
-import { trumpApprovalPolls, TrumpApprovalPoll } from "@/data/trumpApprovalPolls";
-import { computeTrumpApprovalAverage, APPROVE_COLOR, DISAPPROVE_COLOR } from "@/lib/trumpApprovalAverage";
-import type { DARK_THEME } from "./ForecastMap";
+import dynamic from "next/dynamic";
+import type { NormalizedPoll, PollingCardData, PollSeries, TrendPoint } from "@/lib/pollingCardData";
+import { CHART_MARGIN, X_AXIS_HEIGHT, Y_AXIS_WIDTH, fmtDate, marginColor, type Theme } from "./pollCardShared";
 
-type Theme = typeof DARK_THEME;
+// Recharts is a large bundle and draws nothing on the server (it measures its box first), so the
+// trend chart loads on its own after the page is interactive; the dots, headline and table don't wait.
+const PollTrendChart = dynamic(() => import("./PollTrendChart"), { ssr: false });
 type ModeKey = "generic-ballot" | "trump-approval";
 
 const MS_PER_DAY = 86400000;
-const TREND_STEP_DAYS = 1;
 const CHANGE_WINDOW_DAYS = 30;
 const LATEST_ROWS = 10;
+// Fixed green/red regardless of theme (lib/trumpApprovalAverage's APPROVE_COLOR / DISAPPROVE_COLOR,
+// copied so this client file does not pull in that module's poll data).
+const APPROVE_COLOR = "#22c55e";
+const DISAPPROVE_COLOR = "#ef4444";
 
-// ── Common shape every mode's poll data gets normalized into ──────────────────
-// a/b mirror each mode's underlying diff convention (diff = b - a in both
-// genericBallotPolls and trumpApprovalPolls), so no sign-flipping is needed.
-type NormalizedPoll = {
-  pollster: string;
-  startDate: string;
-  endDate: string;
-  sample: number | null;
-  population: string | null;
-  a: number;
-  b: number;
-  diff: number;
-};
 type ScatterPoint = NormalizedPoll & { x: number };
-type TrendPoint = { x: number; a: number; b: number; diff: number };
-type PopupPoint = ScatterPoint | TrendPoint;
+const pollKey = (p: NormalizedPoll) => `${p.pollster}::${p.endDate}`;
 
-function isPoll(p: PopupPoint): p is ScatterPoint {
-  return "pollster" in p;
-}
-
-function pollKey(p: NormalizedPoll): string {
-  return `${p.pollster}::${p.endDate}`;
-}
-
-function fmtDate(iso: string): string {
-  const [, m, d] = iso.split("-");
-  return `${parseInt(m, 10)}/${parseInt(d, 10)}`;
-}
-
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
-// First-of-month ticks across the trend's range — weekly date labels crowd a half-width chart.
-function monthTicks(trend: TrendPoint[]): number[] {
-  if (trend.length === 0) return [];
-  const first = new Date(trend[0].x);
-  const lastMs = trend[trend.length - 1].x;
-  const ticks: number[] = [];
-  for (let d = new Date(Date.UTC(first.getUTCFullYear(), first.getUTCMonth() + 1, 1)); d.getTime() <= lastMs; d = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 1, 1))) {
-    ticks.push(d.getTime());
-  }
-  return ticks;
-}
-
-type ModeConfig = {
+export type ModeConfig = {
   key: ModeKey;
   title: string;
   seriesALabel: string;
@@ -91,102 +49,27 @@ function fmtApprovalDiff(diff: number): string {
   return diff < 0 ? `Approve +${Math.abs(diff).toFixed(1)}` : `Disapprove +${diff.toFixed(1)}`;
 }
 
-// Trend line: at each daily checkpoint, the weighted average computed from only the
-// polls available as of that date — i.e. "what the average would have shown that day,"
-// using the same dedupe/recency/sample-weight methodology throughout (§lib/genericBallotAverage,
-// §lib/trumpApprovalAverage).
-function buildTrend<P extends { endDate: string }>(
-  polls: P[],
-  computeAverage: (asOf: Date, polls: P[]) => { a: number; b: number; diff: number },
-  nowMs: number,
-): TrendPoint[] {
-  if (polls.length === 0) return [];
-  const sorted = [...polls].sort((x, y) => x.endDate.localeCompare(y.endDate));
-  const firstMs = new Date(sorted[0].endDate).getTime();
-  const lastMs = Math.max(new Date(sorted[sorted.length - 1].endDate).getTime(), nowMs);
-  const points: TrendPoint[] = [];
-  for (let t = firstMs; t <= lastMs; t += TREND_STEP_DAYS * MS_PER_DAY) {
-    const available = sorted.filter((p) => new Date(p.endDate).getTime() <= t);
-    if (available.length === 0) continue;
-    const { a, b, diff } = computeAverage(new Date(t), available);
-    points.push({ x: t, a, b, diff });
+// The series (polls, today's average, the daily trend) come from the server (lib/pollingCardData);
+// this adds each mode's labels and formatting.
+function modeConfig(key: ModeKey, series: PollSeries): ModeConfig {
+  const average = { ...series.average, includedKeys: new Set(series.average.includedKeys) };
+  if (key === "generic-ballot") {
+    return {
+      key, title: "Generic Ballot", seriesALabel: "Democrat", seriesBLabel: "Republican",
+      colorA: "", colorB: "", // filled in per-theme at render time
+      fmtDiff: fmtGbDiff, fmtHeadline: fmtGbDiff, headlineLabel: "Margin",
+      captionPrefixA: "D", captionPrefixB: "R",
+      polls: series.polls, average, trend: series.trend,
+    };
   }
-  const last = computeAverage(new Date(lastMs), sorted);
-  const lastPoint = { x: lastMs, a: last.a, b: last.b, diff: last.diff };
-  if (points.length === 0 || points[points.length - 1].x !== lastMs) points.push(lastPoint);
-  return points;
-}
-
-function buildGenericBallotConfig(nowMs: number): ModeConfig {
-  const polls: NormalizedPoll[] = genericBallotPolls.map((p) => ({
-    pollster: p.pollster, startDate: p.startDate, endDate: p.endDate,
-    sample: p.sample, population: p.population, a: p.dem, b: p.rep, diff: p.diff,
-  }));
-  const avg = computeGenericBallotAverage(new Date(nowMs));
-  const trend = buildTrend<GenericBallotPoll>(genericBallotPolls, (asOf, ps) => {
-    const r = computeGenericBallotAverage(asOf, ps);
-    return { a: r.dem, b: r.rep, diff: r.diff };
-  }, nowMs);
   return {
-    key: "generic-ballot",
-    title: "Generic Ballot",
-    seriesALabel: "Democrat",
-    seriesBLabel: "Republican",
-    colorA: "", colorB: "", // filled in per-theme at render time
-    fmtDiff: fmtGbDiff,
-    fmtHeadline: fmtGbDiff,
-    headlineLabel: "Margin",
-    captionPrefixA: "D",
-    captionPrefixB: "R",
-    polls,
-    average: { diff: avg.diff, a: avg.dem, b: avg.rep, includedKeys: new Set(avg.polls.map((p) => pollKey({ ...p, a: p.dem, b: p.rep }))) },
-    trend,
-  };
-}
-
-function buildTrumpApprovalConfig(nowMs: number): ModeConfig {
-  const polls: NormalizedPoll[] = trumpApprovalPolls.map((p) => ({
-    pollster: p.pollster, startDate: p.startDate, endDate: p.endDate,
-    sample: p.sample, population: p.population, a: p.approve, b: p.disapprove, diff: p.diff,
-  }));
-  const avg = computeTrumpApprovalAverage(new Date(nowMs));
-  const trend = buildTrend<TrumpApprovalPoll>(trumpApprovalPolls, (asOf, ps) => {
-    const r = computeTrumpApprovalAverage(asOf, ps);
-    return { a: r.approve, b: r.disapprove, diff: r.diff };
-  }, nowMs);
-  return {
-    key: "trump-approval",
-    title: "Trump Approval",
-    seriesALabel: "Approve",
-    seriesBLabel: "Disapprove",
+    key, title: "Trump Approval", seriesALabel: "Approve", seriesBLabel: "Disapprove",
     colorA: APPROVE_COLOR, colorB: DISAPPROVE_COLOR,
-    fmtDiff: fmtApprovalDiff,
-    fmtHeadline: (diff: number) => fmtNet(diff, 1),
-    headlineLabel: "Net approval",
-    captionPrefixA: "App",
-    captionPrefixB: "Dis",
-    polls,
-    average: { diff: avg.diff, a: avg.approve, b: avg.disapprove, includedKeys: new Set(avg.polls.map((p) => pollKey({ ...p, a: p.approve, b: p.disapprove }))) },
-    trend,
+    fmtDiff: fmtApprovalDiff, fmtHeadline: (diff: number) => fmtNet(diff, 1), headlineLabel: "Net approval",
+    captionPrefixA: "App", captionPrefixB: "Dis",
+    polls: series.polls, average, trend: series.trend,
   };
 }
-
-// Trend generation is the expensive part of this component; build each mode once per as-of time.
-const configCache = new Map<string, ModeConfig>();
-
-function getModeConfig(mode: ModeKey, nowMs: number): ModeConfig {
-  const key = `${mode}:${nowMs}`;
-  const cached = configCache.get(key);
-  if (cached) return cached;
-  const config = mode === "generic-ballot" ? buildGenericBallotConfig(nowMs) : buildTrumpApprovalConfig(nowMs);
-  configCache.set(key, config);
-  return config;
-}
-
-// Plot-area geometry shared by the Recharts chart and the dot layer behind it.
-const CHART_MARGIN = { top: 4, right: 8, left: 0, bottom: 0 };
-const Y_AXIS_WIDTH = 36;
-const X_AXIS_HEIGHT = 24;
 
 // The poll dots are drawn outside Recharts. Recharts re-renders every series on each hover move, and
 // with 400–650 scatter symbols per chart that was most of the hover lag. This layer sits behind the
@@ -209,47 +92,12 @@ const PollDots = memo(function PollDots({ polls, xMin, xMax, yMin, yMax, colorA,
   );
 });
 
-function marginColor(diff: number, colorA: string, colorB: string, theme: Theme): string {
-  if (diff < 0) return colorA;
-  if (diff > 0) return colorB;
-  return theme.textMuted;
-}
-
-function PopupContent({ point, theme, config }: { point: TrendPoint; theme: Theme; config: ModeConfig }) {
-  const color = marginColor(point.diff, config.colorA, config.colorB, theme);
-  return (
-    <>
-      <div className="font-semibold mb-1" style={{ color: theme.textPrimary }}>Weighted trend · {fmtDate(new Date(point.x).toISOString().slice(0, 10))}</div>
-      <div className="mt-1">
-        <span style={{ color: config.colorA }}>{config.seriesALabel} {point.a.toFixed(1)}%</span>
-        <span style={{ color: theme.textVeryMuted }}> · </span>
-        <span style={{ color: config.colorB }}>{config.seriesBLabel} {point.b.toFixed(1)}%</span>
-        <span style={{ color: theme.textVeryMuted }}> · </span>
-        <span style={{ color }}>{config.fmtDiff(point.diff)}</span>
-      </div>
-    </>
-  );
-}
-
-function ChartTooltip({ active, payload, theme, config }: { active?: boolean; payload?: Array<{ payload: PopupPoint }>; theme: Theme; config: ModeConfig }) {
-  if (!active || !payload || payload.length === 0) return null;
-  // Hover follows the weighted trend only; the poll dots are display-only.
-  const point = payload.find((entry) => !isPoll(entry.payload))?.payload as TrendPoint | undefined;
-  if (!point) return null;
-  return (
-    <div className="rounded-md px-2.5 py-2 text-[11px]" style={{ background: theme.panel, border: `1px solid ${theme.border}` }}>
-      <PopupContent point={point} theme={theme} config={config} />
-    </div>
-  );
-}
-
 // One national series: headline average, its move over the last 30 days, and the trend chart.
 function PollChart({ config, theme: t }: { config: ModeConfig; theme: Theme }) {
   const scatterData: ScatterPoint[] = useMemo(
     () => config.polls.map((p) => ({ ...p, x: new Date(p.endDate).getTime() })),
     [config.polls]
   );
-  const ticks = useMemo(() => monthTicks(config.trend), [config.trend]);
 
   const shareVals = config.polls.flatMap((p) => [p.a, p.b]);
   const yMin = Math.floor(Math.min(...shareVals) - 2);
@@ -290,55 +138,7 @@ function PollChart({ config, theme: t }: { config: ModeConfig; theme: Theme }) {
 
       <div style={{ height: 210 }} className="relative [&_*:focus]:outline-none">
         {config.trend.length > 1 && <PollDots polls={scatterData} xMin={config.trend[0].x} xMax={config.trend[config.trend.length - 1].x} yMin={yMin} yMax={yMax} colorA={config.colorA} colorB={config.colorB} />}
-        <ResponsiveContainer width="100%" height="100%">
-          <ComposedChart data={config.trend} margin={CHART_MARGIN}>
-            <CartesianGrid stroke={t.border} strokeDasharray="3 3" vertical={false} />
-            <XAxis
-              dataKey="x"
-              type="number"
-              domain={["dataMin", "dataMax"]}
-              ticks={ticks}
-              tickFormatter={(v: number) => MONTHS[new Date(v).getUTCMonth()]}
-              tick={{ fontSize: 10, fill: t.textMuted }}
-              stroke={t.border}
-              scale="time"
-              height={X_AXIS_HEIGHT}
-            />
-            <YAxis
-              domain={[yMin, yMax]}
-              tick={{ fontSize: 10, fill: t.textMuted }}
-              stroke={t.border}
-              tickFormatter={(v: number) => `${v}%`}
-              width={Y_AXIS_WIDTH}
-              allowDataOverflow
-            />
-            <Tooltip
-              content={<ChartTooltip theme={t} config={config} />}
-              cursor={{ stroke: t.textMuted, strokeWidth: 1, strokeOpacity: 0.7 }}
-              isAnimationActive={false}
-              animationDuration={0}
-              wrapperStyle={{ transition: "none" }}
-            />
-            <Line
-              dataKey="a"
-              stroke={config.colorA}
-              strokeWidth={2.5}
-              dot={false}
-              activeDot={{ r: 4, fill: config.colorA, stroke: t.panel, strokeWidth: 2 }}
-              type="monotone"
-              isAnimationActive={false}
-            />
-            <Line
-              dataKey="b"
-              stroke={config.colorB}
-              strokeWidth={2.5}
-              dot={false}
-              activeDot={{ r: 4, fill: config.colorB, stroke: t.panel, strokeWidth: 2 }}
-              type="monotone"
-              isAnimationActive={false}
-            />
-          </ComposedChart>
-        </ResponsiveContainer>
+        <PollTrendChart config={config} theme={t} yMin={yMin} yMax={yMax} />
       </div>
 
     </div>
@@ -455,17 +255,13 @@ function LatestPollsTable({ gb, ap, theme: t }: { gb: ModeConfig; ap: ModeConfig
   );
 }
 
-/**
- * `asOf` (epoch ms) is the moment the averages are computed for, chosen once by the server page and
- * passed down: reading the clock here would give the server render and the browser different
- * numbers, which React reports as a hydration mismatch.
- */
-export default function PollingAverageCard({ theme: t, asOf }: { theme: Theme; asOf: number }) {
-  const gbBase = getModeConfig("generic-ballot", asOf);
+/** `data` is computed by the server page as of one moment (lib/pollingCardData). */
+export default function PollingAverageCard({ theme: t, data }: { theme: Theme; data: PollingCardData }) {
+  const gbBase = useMemo(() => modeConfig("generic-ballot", data.genericBallot), [data.genericBallot]);
   // Generic ballot's colors follow the theme (dem/rep blue-red shift between light/dark);
   // Trump approval's colors are fixed green/red regardless of theme.
   const gb = useMemo(() => ({ ...gbBase, colorA: t.demText, colorB: t.repText }), [gbBase, t.demText, t.repText]);
-  const ap = getModeConfig("trump-approval", asOf);
+  const ap = useMemo(() => modeConfig("trump-approval", data.approval), [data.approval]);
 
   return (
     <div className="w-full">

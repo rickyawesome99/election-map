@@ -1,15 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  Tooltip,
-  CartesianGrid,
-  ReferenceLine,
-} from "recharts";
+import { NO_RECHARTS, useRecharts } from "@/lib/useRecharts";
 import type { DetailPastResult } from "@/components/RaceDetailSections";
 
 type ChartPoint = {
@@ -126,6 +118,8 @@ export default function SeatVoteHistoryChart({
 }) {
   const [showNational, setShowNational] = useState(false);
   const [chartReady, setChartReady] = useState(false);
+  const recharts = useRecharts(); // loads after hydration (lib/useRecharts)
+  const { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ReferenceLine } = recharts ?? NO_RECHARTS;
   const chartHostRef = useRef<HTMLDivElement | null>(null);
   const [chartSize, setChartSize] = useState({ width: 0, height: 0 });
 
@@ -206,7 +200,7 @@ export default function SeatVoteHistoryChart({
         className={`${bare ? "flex-1 px-1" : "px-4"} min-w-0 pt-1 pb-2`}
         style={bare ? { minHeight: 0 } : { height: 320 }}
       >
-        {chartReady && chartSize.width > 0 && chartSize.height > 0 && (
+        {chartReady && recharts && chartSize.width > 0 && chartSize.height > 0 && (
             <LineChart width={chartSize.width} height={chartSize.height} data={chartData} margin={{ top: 10, right: 12, bottom: 2, left: 0 }}>
             <XAxis
               dataKey="year"

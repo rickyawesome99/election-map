@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useMemo, useRef, useState } from "react";
-import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { NO_RECHARTS, useRecharts } from "@/lib/useRecharts";
 import { DARK_THEME, LIGHT_THEME } from "@/components/ForecastMap";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import Segmented from "@/components/MarketSegmented";
@@ -221,6 +221,8 @@ function PresVsMidterm({ states }: { states: StateSeries[] }) {
 
 type TrendOffice = TurnoutOffice | "top";
 function Trends({ states, national, dark }: { states: StateSeries[]; national: NationalYearRow[]; dark: boolean }) {
+  const recharts = useRecharts(); // loads after hydration (lib/useRecharts)
+  const { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } = recharts ?? NO_RECHARTS;
   const [office, setOffice] = useState<TrendOffice>("top");
   const [cycle, setCycle] = useState<"all" | "presidential" | "midterm">("all");
   const [picked, setPicked] = useState<string[]>(["GA", "OH", "TX", "WI"]);
@@ -265,26 +267,28 @@ function Trends({ states, national, dark }: { states: StateSeries[]; national: N
         )}
       </div>
       <div style={{ height: 320 }}>
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ top: 8, right: 16, bottom: 4, left: -8 }}>
-            <CartesianGrid vertical={false} stroke="var(--app-border)" strokeDasharray="2 4" />
-            <XAxis dataKey="year" tick={axis} axisLine={{ stroke: "var(--app-border)" }} tickLine={false} />
-            <YAxis tick={axis} axisLine={false} tickLine={false} domain={[(min: number) => Math.max(0, Math.floor(min / 5) * 5 - 5), (max: number) => Math.min(100, Math.ceil(max / 5) * 5 + 5)]} tickFormatter={(v: number) => `${v}%`} />
-            <Tooltip content={({ active, payload, label }) => {
-              if (!active || !payload?.length) return null;
-              return (
-                <div className="rounded-lg px-3 py-2 text-xs shadow-lg" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
-                  <div className="mb-1 font-bold" style={MUTED}>{label} · {cycleTypeOf(Number(label))}</div>
-                  {payload.filter((p) => p.value != null).map((p) => (
-                    <div key={String(p.dataKey)} className="flex justify-between gap-4 tabular-nums"><span className="flex items-center gap-1.5"><span className="inline-block h-2 w-2 rounded-full" style={{ background: p.color }} />{p.dataKey === "US" ? "United States" : states.find((s) => s.abbr === p.dataKey)?.name}</span><span className="font-semibold">{Number(p.value).toFixed(1)}%</span></div>
-                  ))}
-                </div>
-              );
-            }} />
-            <Line type="linear" dataKey="US" stroke="var(--app-text-muted)" strokeDasharray="4 4" strokeWidth={2} dot={{ r: 3 }} connectNulls isAnimationActive={false} />
-            {picked.map((a, i) => <Line key={a} type="linear" dataKey={a} stroke={colors[i]} strokeWidth={2} dot={{ r: 3.5 }} connectNulls isAnimationActive={false} />)}
-          </LineChart>
-        </ResponsiveContainer>
+        {recharts && (
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={data} margin={{ top: 8, right: 16, bottom: 4, left: -8 }}>
+              <CartesianGrid vertical={false} stroke="var(--app-border)" strokeDasharray="2 4" />
+              <XAxis dataKey="year" tick={axis} axisLine={{ stroke: "var(--app-border)" }} tickLine={false} />
+              <YAxis tick={axis} axisLine={false} tickLine={false} domain={[(min: number) => Math.max(0, Math.floor(min / 5) * 5 - 5), (max: number) => Math.min(100, Math.ceil(max / 5) * 5 + 5)]} tickFormatter={(v: number) => `${v}%`} />
+              <Tooltip content={({ active, payload, label }) => {
+                if (!active || !payload?.length) return null;
+                return (
+                  <div className="rounded-lg px-3 py-2 text-xs shadow-lg" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
+                    <div className="mb-1 font-bold" style={MUTED}>{label} · {cycleTypeOf(Number(label))}</div>
+                    {payload.filter((p) => p.value != null).map((p) => (
+                      <div key={String(p.dataKey)} className="flex justify-between gap-4 tabular-nums"><span className="flex items-center gap-1.5"><span className="inline-block h-2 w-2 rounded-full" style={{ background: p.color }} />{p.dataKey === "US" ? "United States" : states.find((s) => s.abbr === p.dataKey)?.name}</span><span className="font-semibold">{Number(p.value).toFixed(1)}%</span></div>
+                    ))}
+                  </div>
+                );
+              }} />
+              <Line type="linear" dataKey="US" stroke="var(--app-text-muted)" strokeDasharray="4 4" strokeWidth={2} dot={{ r: 3 }} connectNulls isAnimationActive={false} />
+              {picked.map((a, i) => <Line key={a} type="linear" dataKey={a} stroke={colors[i]} strokeWidth={2} dot={{ r: 3.5 }} connectNulls isAnimationActive={false} />)}
+            </LineChart>
+          </ResponsiveContainer>
+        )}
       </div>
       <div className="mt-2 flex flex-wrap items-center gap-3 text-[11px]" style={MUTED}>
         <span className="flex items-center gap-1.5"><span className="inline-block h-0.5 w-4" style={{ borderTop: "2px dashed var(--app-text-muted)" }} />United States (where the race was held)</span>
@@ -447,7 +451,7 @@ function Projection({ states, projection, projectionNational, office }: Pick<Tur
         How many votes each {PROJECTION_YEAR} race should draw, and from which counties. Nationally that is about <B>{fmtM(projectionNational.houseVotes)}</B> House votes
         ({fmtM(projectionNational.low)}–{fmtM(projectionNational.high)}), or <B>{projectionNational.rate}%</B> of eligible citizens, against {projectionNational.basis.map((b) => `${fmtM(b.houseVotes)} in ${b.year}`).join(" and ")}.
         {" "}Each race&rsquo;s electorate is its state&rsquo;s eligible citizens times a blend of its recent midterm turnout rates, adjusted for what tops the ballot and how close the race is; counties split it by their 2024 presidential vote and midterm propensity
-        (<Link href="/analysis/internal-methodology/turnout" className="underline underline-offset-2">method and backtest</Link>).
+        (<Link href="/analysis/internal-methodology/turnout" className="underline underline-offset-2" prefetch={false}>method and backtest</Link>).
       </p>
 
       <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
@@ -586,7 +590,7 @@ function Notes({ firstRound, model }: Pick<TurnoutPageProps, "firstRound" | "mod
         <li><strong style={{ color: "var(--app-text-primary)" }}>Runoffs and ranked choice (*).</strong> Races decided in a later round are counted at their first round — the November general in Georgia, Louisiana and Mississippi, the first-choice count in Alaska and Maine — since that is the electorate that turned out; the race pages keep the decisive round. By-district figures for those races are the runoff round scaled to the first-round total. In use: {firstRound.map((f) => `${f.office === "house" ? f.seat : `${f.state} ${OFFICE_LABEL[f.office]}${f.office === "senate" && f.state === "GA" && f.year === 2020 && f.seat === "2" ? " special" : ""}`} ${f.year} (${f.votes.toLocaleString()})`).join("; ")}.</li>
         <li><strong style={{ color: "var(--app-text-primary)" }}>Unopposed seats</strong> are shown as recorded — zero where the state tallies no votes for an unopposed candidate (Florida, Oklahoma, Louisiana), the actual count elsewhere — and flagged. The {PROJECTION_YEAR} estimate imputes them as contested, using the district&apos;s own drop-off where it had a contest on the same lines and the state&apos;s contested-seat drop-off otherwise.</li>
         <li><strong style={{ color: "var(--app-text-primary)" }}>Districts and lines.</strong> Every year&apos;s districts sit on the map used that year, with CVAP from the matching Congress. A district code&apos;s change over four years is shown only when its state did not redraw in between, and the {PROJECTION_YEAR} estimate builds districts from counties on the {PROJECTION_YEAR} lines (2024 county pieces where the lines are unchanged, census tracts where a state redrew).</li>
-        <li><strong style={{ color: "var(--app-text-primary)" }}>The estimate&apos;s constants</strong> — the {Object.entries(model.midtermWeights).map(([y, w]) => `${Math.round(w * 100)}% ${y}`).join(" / ")} blend, the {model.ticketFactor} House-only ticket factor, {(model.slope * 100).toFixed(2)}% turnout per point of the top race&apos;s margin, {model.shrinkVotes.toLocaleString()}-vote shrinkage and the {Math.round(model.dropoffWeight * 100)}% weight on a district&apos;s own drop-off — and its 2022 backtest are on the <Link href="/analysis/internal-methodology/turnout" className="underline underline-offset-2">Methodology › Turnout</Link> tab.</li>
+        <li><strong style={{ color: "var(--app-text-primary)" }}>The estimate&apos;s constants</strong> — the {Object.entries(model.midtermWeights).map(([y, w]) => `${Math.round(w * 100)}% ${y}`).join(" / ")} blend, the {model.ticketFactor} House-only ticket factor, {(model.slope * 100).toFixed(2)}% turnout per point of the top race&apos;s margin, {model.shrinkVotes.toLocaleString()}-vote shrinkage and the {Math.round(model.dropoffWeight * 100)}% weight on a district&apos;s own drop-off — and its 2022 backtest are on the <Link href="/analysis/internal-methodology/turnout" className="underline underline-offset-2" prefetch={false}>Methodology › Turnout</Link> tab.</li>
       </ul>
     </section>
   );

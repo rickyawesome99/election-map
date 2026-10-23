@@ -27,7 +27,7 @@ export default function AppShell() {
       const url = new URL(a.href, window.location.href);
       if (url.origin !== window.location.origin || url.pathname === window.location.pathname) return;
       const kind = pendingKindFor(url.pathname);
-      if (kind) setPendingNav({ kind, path: url.pathname });
+      if (kind) setPendingNav({ kind, path: url.pathname, href: url.href });
     };
     document.addEventListener("click", onClick, true);
     return () => document.removeEventListener("click", onClick, true);
@@ -51,7 +51,10 @@ export default function AppShell() {
   }, [darkMode]);
 
   useEffect(() => {
-    const refresh = () => {
+    const refresh = (e: Event) => {
+      // Back to a page restored from the back-forward cache, which kept the placeholder its
+      // full-load fallback (navPending) left up when it unloaded.
+      if ((e as PageTransitionEvent).persisted) setPendingNav(null);
       syncThemeColor(document.documentElement.classList.contains("dark"));
       refreshSafariChrome();
     };

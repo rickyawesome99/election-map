@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { ComposableMap, Geography } from "react-simple-maps";
+import Geographies from "@/components/maps/Geographies";
 import { fmtMargin, formatProjectedMargin, getRaceColor, marginToRating } from "@/lib/colorScale";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { statesData } from "@/data/statesData";
@@ -9,6 +10,7 @@ import type { RaceType } from "@/data/forecastData";
 import type { ChamberSimulation } from "@/lib/forecast";
 import { DARK_THEME, LIGHT_THEME, type Theme } from "./ForecastMap";
 import PollingAverageCard from "./PollingAverageCard";
+import type { PollingCardData } from "@/lib/pollingCardData";
 import SeatHistogram from "./SeatHistogram";
 import ForecastTrend, { type ForecastTrendDay } from "./ForecastTrend";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
@@ -37,6 +39,8 @@ export type OverviewData = {
   updated: string;
   /** When the page was computed (epoch ms) — the national polling averages are drawn as of it. */
   asOf: number;
+  /** The national polling card's series as of `asOf` (lib/pollingCardData). */
+  pollingCard: PollingCardData;
   /** The forecast rerun once per day (lib/forecastHistory.ts); null if the series was not generated. */
   trend: ForecastTrendDay[] | null;
 };
@@ -127,7 +131,7 @@ function SectionHead({ children, theme }: { children: React.ReactNode; theme: Th
 export default function OverviewEditorial({ data }: { data: OverviewData }) {
   const darkMode = useDarkMode();
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
-  const { electionYear, genericBallot: gb, approval, otherForecasts, seats, totalSeats, sims, stateMargins, keyRaces, updated, trend, asOf } = data;
+  const { electionYear, genericBallot: gb, approval, otherForecasts, seats, totalSeats, sims, stateMargins, keyRaces, updated, trend, pollingCard } = data;
   const house = seats.house;
   const senate = seats.senate;
   const governor = seats.governor;
@@ -211,7 +215,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
           <section className="mt-10">
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b-2 pb-2" style={{ borderColor: t.textPrimary }}>
               <div className="whitespace-nowrap text-[11px] font-bold uppercase tracking-[0.12em]">Forecast Over Time</div>
-              <div className="text-[11px]" style={{ color: t.textMuted }}>Today&rsquo;s model rerun on the polls available each day · <Link href="/analysis/internal-methodology#over-time" className="underline decoration-dotted underline-offset-2">how</Link></div>
+              <div className="text-[11px]" style={{ color: t.textMuted }}>Today&rsquo;s model rerun on the polls available each day · <Link href="/analysis/internal-methodology#over-time" className="underline decoration-dotted underline-offset-2" prefetch={false}>how</Link></div>
             </div>
             <ForecastTrend days={trend} />
           </section>
@@ -219,7 +223,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
 
         <section id="national-polling" className="mt-10 scroll-mt-20">
           <SectionHead theme={t}>National Polling</SectionHead>
-          <div className="pt-3"><PollingAverageCard theme={t} asOf={asOf} /></div>
+          <div className="pt-3"><PollingAverageCard theme={t} data={pollingCard} /></div>
         </section>
       </main>
     </div>
