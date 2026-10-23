@@ -300,6 +300,12 @@ export default function ForecastMethodology() {
         <P>A shock, not a trend: carrying 2022&rsquo;s nonwhite slope into 2024 would have helped, but the slope has flipped sign across cycles and the 2025 Governor results reversed 2024&rsquo;s. No demographic term enters the mean projection.</P>
       </Section>
 
+      <Section id="over-time" kicker="Series" title="Forecast over time"
+        lede={<>The Overview&rsquo;s chamber charts and the Forecast Over Time chart on every race page come from the same series: the whole forecast rerun once per day from the first day the generic-ballot average rested on five pollsters to today, at every build.</>}>
+        <P>Each day is today&rsquo;s model on the data that existed then. The forecast clock is set to that day, so a poll counts only once its field period had ended, poll aging and pollster house effects are measured from that day, and the national environment&rsquo;s horizon is that day&rsquo;s distance to the election. Everything else is as it stands now: a later model change, map correction or candidate fix applies to every day, nominees are the eventual ones even before their primaries, and fundraising is the latest filing. It shows how the forecast moves with the polls, not what the site published on a given day. Today&rsquo;s point equals the live forecast.</P>
+        <P>A race page plots the projected margin, signed toward the candidate favored by today&rsquo;s margin so the line never flips mid-series, on a scale symmetric about even, and reads that day&rsquo;s win probability into the caption. A race with no polls moves only with the national environment and the horizon. The series is written by <Code>scripts/buildForecastHistory.ts</Code> (npm&rsquo;s prebuild and predev hooks) to <Code>data/generated/forecast-history.json</Code>.</P>
+      </Section>
+
       <Section id="calibration" kicker={`Backtest · generated ${CAL.generatedAt}`} title="Calibration"
         lede={<>The forward backtest predicts every eligible Senate and Governor race, and every House race on lines that have not since been redrawn, in {CAL.years.join(", ")} the way the site would have in mid-September of that year: lean, β*, E and incumbency are all re-fitted on years before the one being scored, candidate effects are rebuilt from earlier races only, and no national shift is removed before scoring. Model alone unless stated.</>}>
         <Block label="Pooled accuracy" meta="bias = actual − predicted, R-positive">

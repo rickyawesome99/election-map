@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, presPastResults, senateData, senateNoElection, senateHoldovers, electionYear } from "@/data/forecastData";
 import { candidatePageHref, partyTextColor } from "@/lib/candidatePages";
 import { getStatewideMargin, getNationalMargin } from "@/lib/statewideMargins";
@@ -15,6 +16,8 @@ import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace, forecastsFor } from "@/lib/forecast";
+import { getRaceForecastHistory } from "@/lib/forecastHistory";
+import { RaceForecastTrend } from "@/components/ForecastTrend";
 import { alignedParty } from "@/data/raceEligibility";
 import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
@@ -133,6 +136,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const projectedMargin = computeProjectedMargin(race);
   const forecast = forecastRace(race);
   const countyProjection = projectRaceResults("house", race.id);
+  const raceHistory = getRaceForecastHistory("house", race);
   const quality = candidateQuality(race);
   const demPct = Math.round(forecast.probability * 100);
   const repPct = 100 - demPct;
@@ -412,6 +416,16 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               interval80={forecast.interval80}
             />
           </section>
+
+          {raceHistory && (
+            <section>
+              <LedgerSectionHead label="Forecast Over Time" meta={`${raceHistory.dates.length} days · today's model on each day's polls`} />
+              <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
+                dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
+                rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />
+              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Today&rsquo;s model rerun on the polls available each day, not what the site said then: a later model change, nominee or filing applies to every day. With no polls the line moves only with the national environment. <Link href="/methodology#over-time" className="underline underline-offset-2">How this is built</Link>.</div>
+            </section>
+          )}
 
           <section>
             <LedgerSectionHead label="District Map" meta={countyProjection ? "2026 projection by county · district lines" : undefined} />

@@ -15,6 +15,7 @@ import { STATE_LEG_INDEPENDENT_VALIDATION as IV } from "@/data/stateLegIndepende
 import { STATE_LEG_TYPE_WEIGHT_SWEEP as SW } from "@/data/stateLegTypeWeightSweep";
 import { STATE_LEG_MONEY_SWEEP as MS } from "@/data/stateLegMoneySweep";
 import { STATE_LEG_ENV_SCALE_SWEEP as ES } from "@/data/stateLegEnvScaleSweep";
+import { STATE_LEG_PRES_GAP_SWEEP as GS } from "@/data/stateLegPresGapSweep";
 import { structuralMoneyModel } from "@/lib/stateLegMoneyModel";
 import { getNationalEnvironment } from "@/lib/tplCompute";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, N, P, Section, type ConstantRow } from "./kit";
@@ -25,6 +26,7 @@ const DOCUMENTED_IN = {
   MIN_COVERAGE: "state-leg#projection", SIMS: "state-leg#projection",
   IND_RECORD_SHARE: "state-leg#projection", IND_PRIOR_PTS: "state-leg#projection", IND_SHRINK_K: "state-leg#projection", IND_SIGMA: "state-leg#projection",
   MONEY_K: "state-leg#projection", MONEY_CAP: "state-leg#projection", PARTIAL_CYCLE_GAP_SCALE: "state-leg#projection",
+  PRES_GAP_K: "state-leg#projection", PRES_GAP_MIN_SEATS: "state-leg#projection",
 } satisfies Record<keyof typeof SC, string>;
 void DOCUMENTED_IN;
 const DOCUMENTED_IN_PV = {
@@ -180,11 +182,14 @@ export default function StateLegMethodology() {
         <Block label="Lean">
           <Formula lines={[
             "row NM   = margin − INCUMBENCY_PTS × incumbent sign − β*(state) × E(year) − money(race)       seat rows: the district's general in each year it was contested",
-            "           margin − β*(state) × E(year)                                           presidential rows on today's lines (2016, 2020, 2024)",
+            "           margin − β*(state) × E(year) + PRES_GAP_K × gap(chamber)                     presidential rows on today's lines (2016, 2020, 2024)",
+            "gap      = Σ_years 2^i × mean_seats [seat-row NM − the seat's mean presidential NM] / Σ 2^i      years with PRES_GAP_MIN_SEATS seat rows on today's lines, i rising toward the latest",
+            "           capped at the latest year's own gap (no larger, same sign, else 0): a habit is carried only as strong as it last was",
+            "seat margin (multi-member, unequal slates) = (R̄ − D̄) / (R̄ + D̄) × (R + D) / total      R̄, D̄ the average nominee's votes; equal slates: (R − D) / total",
             "relocate = Σ share_i × margin_i / coverage  +  [pres(today) − Σ share_i × pres_i / coverage]   a race on a superseded map, through the crosswalk",
             "lean     = Σ_years YEAR_WEIGHT × coverage × [ Σ_types TYPE_WEIGHT × mean NM ] / Σ YEAR_WEIGHT × coverage     two-pass Huber on seat rows",
             "           in the latest year with a seat row, that row's TYPE_WEIGHT × RECENT_SEAT_BOOST (L 0.2 → 0.6: half of that year's lean)",
-          ]} note="share_i is the population share of today's district that was in old district i (dataset C); coverage is the share covered by contested old districts, and a row below MIN_COVERAGE is dropped. The presidential delta is taken in the presidential year nearest the race. money(race) is the race's money term at its full-cycle receipts (below), averaged over a relocated row's old districts like its margin; taking it out keeps one cycle's lopsided fundraising from passing into the district's lean." />
+          ]} note="share_i is the population share of today's district that was in old district i (dataset C); coverage is the share covered by contested old districts, and a row below MIN_COVERAGE is dropped. The presidential delta is taken in the presidential year nearest the race. money(race) is the race's money term at its full-cycle receipts (below), averaged over a relocated row's old districts like its margin; taking it out keeps one cycle's lopsided fundraising from passing into the district's lean. The gap is the chamber's down-ballot habit: where voters split their tickets the same way year after year (Vermont's Republicans run about 16 points ahead of their presidential nominee, West Virginia's Democrats about 10, down from 34 in 2016, which is why the gap is capped at its latest value), presidential rows alone would misplace every seat, and most of all the ones with no contested race of their own to correct them. In a multi-member district where one party ran fewer nominees than the other, summed votes hand the fuller slate a margin no seat is decided on (two Democrats and one Republican for two seats is about double the Democratic votes); the average nominee against the average nominee is the measure the seat is decided on, and the backtest scores against it." />
         </Block>
         <Block label="Forward">
           <Formula lines={[
@@ -197,9 +202,11 @@ export default function StateLegMethodology() {
           <Constants rows={[
             { name: "TYPE_WEIGHTS", value: `P ${SC.TYPE_WEIGHTS.P} / L ${SC.TYPE_WEIGHTS.L}`, meaning: "Presidential rows against the seat's own races, renormalised over the types present in a year — the District TPL's President/House ratio. The sweep below finds the holdout flat between a 0.25 and a 0.40 seat share once the latest race is boosted, so the designed ratio is kept.", basis: "designed" },
             { name: "RECENT_SEAT_BOOST", value: `×${SC.RECENT_SEAT_BOOST}`, meaning: "The seat row's type weight in the latest year that has one, so the seat's most recent race carries half of that year's lean. State Navigate's emphasis on the last legislative result, tested here: MAE after incumbency 5.85 → 5.74 (2022) and 5.39 → 5.18 (2024), better than any uniform reweighting, flat from ×2 to ×3, worse by ×5.", basis: "calibrated", source: "scripts/stateLegBacktest.ts --sweep" },
-            { name: "INCUMBENCY_PTS", value: SC.INCUMBENCY_PTS, meaning: "Points a sitting state legislator is worth beyond the money they raise. The holdout fits 3.6 (2022) and 1.8 (2024) with the money term in; set at their rounded mean.", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
-            { name: "SIGMA", value: SC.SIGMA, meaning: "Seat-level noise beyond the national and chamber shocks: the holdout residual spread after the chamber shock is taken out (7.2 in 2022, 6.8 in 2024 with the money term; the total spread is 8.0 and 7.6, robust 6.2 and 5.2, so the tails are heavy and the full spread is kept).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
-            { name: "STATE_SHOCK", value: SC.STATE_SHOCK, meaning: "Chamber-level shock shared by every seat of a chamber in a year: the spread of chamber-mean residuals less what independent seat noise alone would put there (method of moments over chambers with 10+ contested seats; 3.44 in 2022 and 3.37 in 2024 with the money term).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "INCUMBENCY_PTS", value: SC.INCUMBENCY_PTS, meaning: "Points a sitting state legislator is worth beyond the money they raise. The holdout fits 3.3 (2022) and 1.3 (2024) with the money term, the slate margin and the down-ballot gap in; set at their rounded mean.", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "SIGMA", value: SC.SIGMA, meaning: "Seat-level noise beyond the national and chamber shocks: the holdout residual spread after the chamber shock is taken out (6.3 in 2022, 5.8 in 2024; the total spread is 7.1 and 6.8, robust 5.9 and 5.0, so the tails are heavy and the full spread is kept).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "STATE_SHOCK", value: SC.STATE_SHOCK, meaning: "Chamber-level shock shared by every seat of a chamber in a year: the spread of chamber-mean residuals less what independent seat noise alone would put there (method of moments over chambers with 10+ contested seats; 3.23 in 2022 and 3.53 in 2024).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "PRES_GAP_K", value: SC.PRES_GAP_K, meaning: "The share of the chamber's seat-minus-presidential gap added to every presidential row. Best in both holdout years (sweep below); a full shift over-reaches, since part of a year's gap is that year's candidates and does not come back.", basis: "calibrated", source: "scripts/stateLegBacktest.ts --pres-gap" },
+            { name: "PRES_GAP_MIN_SEATS", value: SC.PRES_GAP_MIN_SEATS, meaning: "A year enters the gap with at least this many seat rows on (nearly, 90% coverage) today's lines.", basis: "designed" },
             { name: "MIN_COVERAGE", value: SC.MIN_COVERAGE, meaning: "A relocated row needs contested old districts covering this share of today's population.", basis: "designed" },
             { name: "SIMS", value: SC.SIMS, meaning: "Draws per chamber.", basis: "fixed" },
           ] satisfies ConstantRow[]} />
@@ -217,7 +224,7 @@ export default function StateLegMethodology() {
             "either side's money missing → 0: the typical gap for the race's situation (the lean and incumbency already carry it), not \"no money\"",
           ]} note="A year's own intercept absorbs a cycle's party-wide money tilt (and 2026's partial level). Multi-member districts sum each party's nominees. The strip on past seat rows uses the same term at full-cycle receipts. Districts the money data does not reach yet carry no money term, so as coverage fills, more seats get one." />
           <Constants rows={[
-            { name: "MONEY_K", value: SC.MONEY_K, meaning: "Points of margin per point of money gap beyond the expected one: the sweep's best cell in both holdout years.", basis: "calibrated", source: "scripts/stateLegBacktest.ts --money" },
+            { name: "MONEY_K", value: SC.MONEY_K, meaning: "Points of margin per point of money gap beyond the expected one: the sweep's best cell in both holdout years when set (2026-10-18); since the slate margin and down-ballot gap, 0.04 edges it by 0.002, within noise, so it is kept.", basis: "calibrated", source: "scripts/stateLegBacktest.ts --money" },
             { name: "MONEY_CAP", value: SC.MONEY_CAP, meaning: "The term's cap. The holdout gains shrink as the cap grows — a large residual gap over-predicts — so the money term is a nudge of up to 1.5 points.", basis: "calibrated", source: "scripts/stateLegBacktest.ts --money" },
             { name: "PARTIAL_CYCLE_GAP_SCALE", value: SC.PARTIAL_CYCLE_GAP_SCALE, meaning: "2026 receipts are to-date (each state's data-through date). Borrowed from the federal forecast, where the final gap is 0.90–0.91 × the September gap; there are no mid-cycle snapshots of state filings to measure the legislative ratio.", basis: "decision" },
           ] satisfies ConstantRow[]} />
@@ -245,12 +252,19 @@ export default function StateLegMethodology() {
             { name: "IND_RECORD_SHARE", value: `${SC.IND_RECORD_SHARE}%`, meaning: "A non-incumbent independent is modeled when they took this share of their last head-to-head in the seat; below it, a perennial candidate.", basis: "designed" },
             { name: "IND_PRIOR_PTS", value: SC.IND_PRIOR_PTS, meaning: `How far a sitting or proven independent runs ahead of a generic nominee of the party they stand in for, before their own record. The holdout's median gap is ${IV.medianGap}; the mean is pulled higher by Alyse Galvin and John Mark Windle.`, basis: "calibrated", source: "scripts/stateLegIndependentBacktest.ts" },
             { name: "IND_SHRINK_K", value: SC.IND_SHRINK_K, meaning: "Pseudo-races of the prior in the personal effect: one head-to-head on record counts half.", basis: "calibrated", source: "scripts/stateLegIndependentBacktest.ts" },
-            { name: "IND_SIGMA", value: SC.IND_SIGMA, meaning: `Extra seat noise in an independent's race: the holdout's robust residual spread (${IV.live.robustSd}) net of SIGMA and STATE_SHOCK — within them, so none.`, basis: "calibrated", source: "scripts/stateLegIndependentBacktest.ts" },
+            { name: "IND_SIGMA", value: SC.IND_SIGMA, meaning: `Extra seat noise in an independent's race: the holdout's robust residual spread (${IV.live.robustSd}) net of SIGMA and STATE_SHOCK, rounded: √(${IV.live.robustSd}² − ${SC.SIGMA}² − ${SC.STATE_SHOCK}²). It was 0 while SIGMA was 7.0; the independents' own spread barely moved (7.6 → 7.9) when the slate margin and down-ballot gap tightened SIGMA.`, basis: "calibrated", source: "scripts/stateLegIndependentBacktest.ts" },
           ] satisfies ConstantRow[]} />
         </Block>
         <Block label="Independents holdout" meta={`generated ${IV.generatedAt} · scripts/stateLegIndependentBacktest.ts --emit`}>
           <P>Every past general on today&apos;s lines where an independent the rule would model faced exactly one major party (<N>{IV.cases}</N> races, 2018–2024), predicted from the lean before that year, the year&apos;s fitted environment, incumbency and the independent&apos;s earlier record. Small sample: the prior is set at the median gap rather than the grid&apos;s best fit, which leans on two outliers.</P>
           <DataTable align="rrrrrr" head={["Prior", "K", "RMSE", "Bias", "σ (robust)", "Winners"]} rows={IV.grid.map((g) => [g.prior, g.k, g.rmse.toFixed(1), (g.bias >= 0 ? "+" : "") + g.bias.toFixed(1), g.robustSd.toFixed(1), `${g.winners}/${g.n}`])} maxWidth="max-w-xl" />
+        </Block>
+        <Block label="Down-ballot gap" meta={`generated ${GS.generatedAt} · scripts/stateLegBacktest.ts --pres-gap --emit`}>
+          <P>Added after Vermont was the holdout&apos;s worst state in both years. Across chambers, a chamber&apos;s past seat-minus-presidential gap predicts its next miss (correlation about 0.45), and the presidential rows are moved toward it by k. Vermont itself gains little in the holdout: its 2024 Republican surge (some 15 points beyond the projection in every seat) was not in its earlier gap. It is in the gap now, and the 2026 projection carries half of it. Left: MAE after fitted incumbency by k, with Vermont&apos;s seats alone. Right: the largest live gaps (R-positive).</P>
+          <div className="grid gap-6 lg:grid-cols-2">
+            <DataTable align="lrrrr" head={["Year", "k", "MAE (inc.)", "Inc. pts", "Vermont MAE"]} rows={GS.rows.map((r) => [r.year, r.k, r.maeAfterIncumbency.toFixed(3), r.incumbencyPts.toFixed(2), r.vtMae.toFixed(1)])} />
+            <DataTable align="llr" head={["State", "Chamber", "Gap"]} rows={GS.gaps.slice(0, 12).map((g) => [g.abbr, g.chamber === "house" ? "House" : "Senate", (g.gap >= 0 ? "R+" : "D+") + Math.abs(g.gap).toFixed(1)])} />
+          </div>
         </Block>
         <Block label="Weight sweep" meta={`generated ${SW.generatedAt} · scripts/stateLegBacktest.ts --sweep --emit`}>
           <P>Two questions put to the holdout after the State Navigate comparison (their lean leans on the last legislative result): how much of the lean the seat&apos;s own races should carry, and whether the most recent of them deserves extra weight. Left: the seat share with no boost, where 0.25 is the live ratio. Right: the latest seat row&apos;s weight × k at the live ratio and at a 0.40 share. The boost beats every uniform reweighting; ×{SC.RECENT_SEAT_BOOST} is adopted.</P>
@@ -268,7 +282,7 @@ export default function StateLegMethodology() {
             }))} maxWidth="max-w-4xl" />
         </Block>
         <Block label="Holdout" meta={`generated ${STATE_LEG_VALIDATION.generatedAt} · scripts/stateLegBacktest.ts --emit`}>
-          <P>Each district&apos;s lean is built from the years before Y and projected into Y with the fitted environment and the race&apos;s actual incumbent, then scored against the contested districts on today&apos;s lines. Incumbency is fitted from the residuals and σ is their spread after it. The worst states are the multi-member and ranked-choice ones (Vermont, Washington, Arizona, Alaska) and Nebraska, where a seat&apos;s own margin is a poor measure of the district.</P>
+          <P>Each district&apos;s lean is built from the years before Y and projected into Y with the fitted environment and the race&apos;s actual incumbent, then scored against the contested districts on today&apos;s lines. Incumbency is fitted from the residuals and σ is their spread after it. The worst states are Vermont (a state-wide Republican surge in 2024 that no earlier year foretold), ranked-choice Alaska and nonpartisan Nebraska, where a seat&apos;s own margin is a poor measure of the district. A multi-member race is scored on the slate-adjusted seat margin above.</P>
           <DataTable align="lrrrrrrrrr" head={["Year", "Districts", "Bias", "MAE", "MAE after inc.", "Incumbency (pts)", "Incumbent races", "σ (robust)", "Chamber shock τ", "Seat σ after τ"]} rows={STATE_LEG_VALIDATION.rows.map((r) => [r.year, r.n, (r.bias >= 0 ? "+" : "") + r.bias.toFixed(2), r.mae.toFixed(2), r.maeAfterIncumbency.toFixed(2), r.incumbencyPts.toFixed(2), r.incumbentRaces, `${r.sigma.toFixed(2)} (${r.sigmaRobust.toFixed(2)})`, `${r.stateShock.toFixed(2)} (${r.chambers} chambers)`, r.sigmaWithin.toFixed(2)])} maxWidth="max-w-4xl" />
         </Block>
         <Block label="Not in the model">

@@ -2,7 +2,7 @@
 // Holdout of the state legislative chamber popular vote: 2022 district votes from 2018 (and 2024 from the live basis
 // weights), the raw chamber margin against the certified aggregate, and the unopposed-race turnout measurement.
 export const STATE_LEG_POPVOTE_VALIDATION = {
-  "generatedAt": "2026-10-19",
+  "generatedAt": "2026-10-23",
   "unopposed": {
     "chamberYears": 267,
     "races": 7527,
@@ -24,8 +24,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 8.5,
       "chamberBias": 6.52,
       "marginN": 71,
-      "marginMae": 3.4,
-      "marginBias": -2.3,
+      "marginMae": 3.12,
+      "marginBias": -1.9,
       "totalMape": 8.74,
       "totalBias": 5.66
     },
@@ -43,8 +43,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 8.51,
       "chamberBias": 6.5,
       "marginN": 71,
-      "marginMae": 3.39,
-      "marginBias": -2.28,
+      "marginMae": 3.12,
+      "marginBias": -1.88,
       "totalMape": 8.75,
       "totalBias": 5.66
     },
@@ -62,8 +62,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 8.5,
       "chamberBias": 6.48,
       "marginN": 71,
-      "marginMae": 3.38,
-      "marginBias": -2.26,
+      "marginMae": 3.11,
+      "marginBias": -1.86,
       "totalMape": 8.76,
       "totalBias": 5.66
     },
@@ -81,8 +81,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 8.48,
       "chamberBias": 6.45,
       "marginN": 71,
-      "marginMae": 3.38,
-      "marginBias": -2.23,
+      "marginMae": 3.11,
+      "marginBias": -1.84,
       "totalMape": 8.78,
       "totalBias": 5.66
     },
@@ -100,8 +100,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 8.45,
       "chamberBias": 6.41,
       "marginN": 71,
-      "marginMae": 3.38,
-      "marginBias": -2.2,
+      "marginMae": 3.11,
+      "marginBias": -1.8,
       "totalMape": 8.79,
       "totalBias": 5.66
     },
@@ -119,8 +119,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 8.4,
       "chamberBias": 6.34,
       "marginN": 71,
-      "marginMae": 3.38,
-      "marginBias": -2.16,
+      "marginMae": 3.12,
+      "marginBias": -1.76,
       "totalMape": 8.8,
       "totalBias": 5.65
     },
@@ -138,8 +138,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 8.25,
       "chamberBias": 6.12,
       "marginN": 71,
-      "marginMae": 3.42,
-      "marginBias": -2.12,
+      "marginMae": 3.17,
+      "marginBias": -1.72,
       "totalMape": 8.78,
       "totalBias": 5.57
     },
@@ -157,8 +157,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 2.68,
       "chamberBias": 0.73,
       "marginN": 71,
-      "marginMae": 3.4,
-      "marginBias": -2.3,
+      "marginMae": 3.12,
+      "marginBias": -1.9,
       "totalMape": 3.48,
       "totalBias": -0.11
     },
@@ -176,8 +176,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 2.7,
       "chamberBias": 0.71,
       "marginN": 71,
-      "marginMae": 3.39,
-      "marginBias": -2.28,
+      "marginMae": 3.12,
+      "marginBias": -1.88,
       "totalMape": 3.5,
       "totalBias": -0.11
     },
@@ -195,8 +195,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 2.72,
       "chamberBias": 0.7,
       "marginN": 71,
-      "marginMae": 3.38,
-      "marginBias": -2.26,
+      "marginMae": 3.11,
+      "marginBias": -1.86,
       "totalMape": 3.52,
       "totalBias": -0.1
     },
@@ -214,8 +214,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 2.74,
       "chamberBias": 0.67,
       "marginN": 71,
-      "marginMae": 3.38,
-      "marginBias": -2.23,
+      "marginMae": 3.11,
+      "marginBias": -1.84,
       "totalMape": 3.54,
       "totalBias": -0.1
     },
@@ -233,8 +233,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 2.77,
       "chamberBias": 0.64,
       "marginN": 71,
-      "marginMae": 3.38,
-      "marginBias": -2.2,
+      "marginMae": 3.11,
+      "marginBias": -1.8,
       "totalMape": 3.56,
       "totalBias": -0.1
     },
@@ -252,8 +252,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 2.8,
       "chamberBias": 0.58,
       "marginN": 71,
-      "marginMae": 3.38,
-      "marginBias": -2.16,
+      "marginMae": 3.12,
+      "marginBias": -1.76,
       "totalMape": 3.59,
       "totalBias": -0.1
     },
@@ -271,8 +271,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 2.86,
       "chamberBias": 0.39,
       "marginN": 71,
-      "marginMae": 3.42,
-      "marginBias": -2.12,
+      "marginMae": 3.17,
+      "marginBias": -1.72,
       "totalMape": 3.61,
       "totalBias": -0.17
     },
@@ -290,8 +290,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 2.7,
       "chamberBias": 0.71,
       "marginN": 71,
-      "marginMae": 3.39,
-      "marginBias": -2.28,
+      "marginMae": 3.12,
+      "marginBias": -1.88,
       "totalMape": 3.5,
       "totalBias": -0.11
     },
@@ -309,8 +309,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 2.64,
       "chamberBias": -0.53,
       "marginN": 72,
-      "marginMae": 3.33,
-      "marginBias": -2.18,
+      "marginMae": 3.06,
+      "marginBias": -1.78,
       "totalMape": 3.3,
       "totalBias": -1.28
     },
@@ -328,8 +328,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
       "chamberMape": 3.15,
       "chamberBias": -2.49,
       "marginN": 68,
-      "marginMae": 3.33,
-      "marginBias": -1.96,
+      "marginMae": 3.02,
+      "marginBias": -1.61,
       "totalMape": 3.73,
       "totalBias": -3.13
     }
@@ -341,17 +341,17 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
     "level": "actual",
     "shrink": 2000,
     "chambers": 80,
-    "districts": 3267,
-    "voteMape": 6.21,
-    "voteBias": 2.35,
-    "shareMape": 5.46,
-    "chamberMape": 3.3,
-    "chamberBias": 2.84,
+    "districts": 3268,
+    "voteMape": 6.08,
+    "voteBias": 2.39,
+    "shareMape": 5.27,
+    "chamberMape": 3.24,
+    "chamberBias": 3.02,
     "marginN": 80,
-    "marginMae": 2.09,
-    "marginBias": -0.17,
-    "totalMape": 3.37,
-    "totalBias": 2.37
+    "marginMae": 2.15,
+    "marginBias": -0.19,
+    "totalMape": 3.35,
+    "totalBias": 2.46
   },
   "live": {
     "label": "2022 ← 2018, model level (live K)",
@@ -367,8 +367,8 @@ export const STATE_LEG_POPVOTE_VALIDATION = {
     "chamberMape": 8.51,
     "chamberBias": 6.5,
     "marginN": 71,
-    "marginMae": 3.39,
-    "marginBias": -2.28,
+    "marginMae": 3.12,
+    "marginBias": -1.88,
     "totalMape": 8.75,
     "totalBias": 5.66
   }

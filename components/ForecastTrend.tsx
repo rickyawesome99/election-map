@@ -15,12 +15,15 @@ export type ForecastTrendDay = {
   seats: Record<"house" | "senate" | "governor", { mean: number; lo80: number; hi80: number }>;
 };
 
-const H = 90; // plot height in viewBox units (the svg stretches to the column width)
+const PANEL_HEIGHT = 90; // plot height in viewBox units (the svg stretches to the column width)
 
 const longDate = (iso: string) => new Date(`${iso}T12:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric" });
 const pct = (p: number) => (p < 0.01 ? "<1%" : p > 0.99 ? ">99%" : `${Math.round(p * 100)}%`);
 
-function TrendPanel({ label, dates, values, domain, line, headline, caption, axis }: {
+const PARTY_FILL = { D: "var(--party-dem-fill)", R: "var(--party-rep-fill)", I: "var(--party-ind-fill)" } as const;
+type Party = keyof typeof PARTY_FILL;
+
+function TrendPanel({ label, dates, values, domain, line, headline, caption, axis, fills = ["D", "R"], height: H = PANEL_HEIGHT }: {
   label: string;
   dates: string[];
   values: number[];
@@ -32,6 +35,10 @@ function TrendPanel({ label, dates, values, domain, line, headline, caption, axi
   caption: (i: number) => string;
   /** Gutter labels at the top, the control line and the bottom of the scale. */
   axis: [string, string, string];
+  /** Which party tints the plot above and below the control line. */
+  fills?: [Party, Party];
+  /** Plot height in px; the Overview's third-width panels use the default, a full-width race chart more. */
+  height?: number;
 }) {
   const [hover, setHover] = useState<number | null>(null);
   const n = values.length;
@@ -75,8 +82,8 @@ function TrendPanel({ label, dates, values, domain, line, headline, caption, axi
             onPointerDown={(e) => pick(e.clientX, e.currentTarget)}
             onPointerLeave={() => setHover(null)}
           >
-            <rect x={0} y={0} width={100} height={Math.max(0, lineY)} fill="var(--party-dem-fill)" opacity={0.09} />
-            <rect x={0} y={lineY} width={100} height={Math.max(0, H - lineY)} fill="var(--party-rep-fill)" opacity={0.09} />
+            <rect x={0} y={0} width={100} height={Math.max(0, lineY)} fill={PARTY_FILL[fills[0]]} opacity={0.09} />
+            <rect x={0} y={lineY} width={100} height={Math.max(0, H - lineY)} fill={PARTY_FILL[fills[1]]} opacity={0.09} />
             <line x1={0} x2={100} y1={lineY} y2={lineY} stroke="var(--app-text-muted)" strokeWidth={1} strokeDasharray="3 3" vectorEffect="non-scaling-stroke" />
             {months.map((m) => <line key={m.i} x1={x(m.i)} x2={x(m.i)} y1={0} y2={H} stroke="var(--app-border)" strokeWidth={1} vectorEffect="non-scaling-stroke" />)}
             <path d={path} fill="none" stroke="var(--app-text-primary)" strokeWidth={2} strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
@@ -120,5 +127,37 @@ export default function ForecastTrend({ days }: { days: ForecastTrendDay[] }) {
       <TrendPanel label="Governors" dates={dates} values={gov} domain={govDomain} line={25} axis={[String(govDomain[1]), "25", String(govDomain[0])]}
         headline={(v) => `${v.toFixed(1)} D expected`} caption={(i) => seats(i, "governor", 50, "governors")} />
     </div>
+  );
+}
+
+/** One race's forecast over time: the projected margin, signed toward the candidate favored by
+ *  today's margin (so the line never flips mid-series) on a scale symmetric about the zero line,
+ *  tinted their party above it and the opponent's below. The caption carries that day's win odds. */
+export function RaceForecastTrend({ dates, probD, margins, dem, rep }: {
+  dates: string[];
+  probD: number[];
+  /** R-positive. */
+  margins: number[];
+  dem: { name: string; party: Party };
+  rep: { name: string; party: Party };
+}) {
+  const n = margins.length;
+  const demFavored = margins[n - 1] < 0 || (margins[n - 1] === 0 && probD[n - 1] >= 0.5);
+  const favored = demFavored ? dem : rep;
+  const other = demFavored ? rep : dem;
+  // Positive = the favorite ahead.
+  const values = demFavored ? margins.map((m) => -m) : margins;
+  const wins = demFavored ? probD : probD.map((p) => 1 - p);
+  // The scale: the series' largest lead rounded up to a multiple of 5, never under 5 either way.
+  const lim = Math.max(5, Math.ceil(Math.max(...values.map(Math.abs)) / 5) * 5);
+  const margin = (m: number) => (m === 0 ? "Even" : `${m < 0 ? "D" : "R"}+${Math.abs(m).toFixed(1)}`);
+  // The caption names whoever led on that day, which early in the series may be today's underdog.
+  const leader = (i: number) => (wins[i] >= 0.5 ? `${favored.name} wins ${pct(wins[i])} of sims` : `${other.name} wins ${pct(1 - wins[i])} of sims`);
+  return (
+    <TrendPanel label="Projected margin" dates={dates} values={values} domain={[-lim, lim]} line={0}
+      axis={[`${favored.party}+${lim}`, "Even", `${other.party}+${lim}`]}
+      fills={[favored.party, other.party]} height={130}
+      headline={(v) => `${favored.name} ${margin(demFavored ? -v : v)}`}
+      caption={(i) => `${margin(margins[i])} · ${leader(i)}`} />
   );
 }

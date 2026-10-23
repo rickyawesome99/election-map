@@ -136,7 +136,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
           <section className="mt-10">
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b-2 pb-2" style={{ borderColor: t.textPrimary }}>
               <div className="whitespace-nowrap text-[11px] font-bold uppercase tracking-[0.12em]">Forecast Over Time</div>
-              <div className="text-[11px]" style={{ color: t.textMuted }}>Today&rsquo;s model rerun on the polls available each day · <Link href="/methodology" className="underline decoration-dotted underline-offset-2">how</Link></div>
+              <div className="text-[11px]" style={{ color: t.textMuted }}>Today&rsquo;s model rerun on the polls available each day · <Link href="/methodology#over-time" className="underline decoration-dotted underline-offset-2">how</Link></div>
             </div>
             <ForecastTrend days={trend} />
           </section>

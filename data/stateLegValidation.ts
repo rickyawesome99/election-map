@@ -2,34 +2,34 @@
 // Holdout of the state legislative district projection: each district's lean from years before Y, projected into Y
 // with the fitted environment and the race's actual incumbent; scored on contested districts on today's lines.
 export const STATE_LEG_VALIDATION = {
-  "generatedAt": "2026-10-22",
+  "generatedAt": "2026-10-23",
   "rows": [
     {
       "year": 2022,
       "n": 2651,
-      "bias": 0.56,
-      "mae": 6.08,
-      "maeAfterIncumbency": 5.7,
-      "incumbencyPts": 3.59,
+      "bias": -0.21,
+      "mae": 5.63,
+      "maeAfterIncumbency": 5.19,
+      "incumbencyPts": 3.31,
       "incumbentRaces": 1647,
-      "sigma": 7.97,
-      "sigmaRobust": 6.17,
-      "stateShock": 3.43,
-      "sigmaWithin": 7.19,
+      "sigma": 7.09,
+      "sigmaRobust": 5.92,
+      "stateShock": 3.23,
+      "sigmaWithin": 6.31,
       "chambers": 65
     },
     {
       "year": 2024,
-      "n": 3350,
-      "bias": 0.65,
-      "mae": 5.19,
-      "maeAfterIncumbency": 5.1,
-      "incumbencyPts": 1.81,
+      "n": 3347,
+      "bias": 0.41,
+      "mae": 4.76,
+      "maeAfterIncumbency": 4.67,
+      "incumbencyPts": 1.34,
       "incumbentRaces": 2276,
-      "sigma": 7.6,
-      "sigmaRobust": 5.14,
-      "stateShock": 3.42,
-      "sigmaWithin": 6.79,
+      "sigma": 6.76,
+      "sigmaRobust": 4.98,
+      "stateShock": 3.53,
+      "sigmaWithin": 5.76,
       "chambers": 75
     }
   ]

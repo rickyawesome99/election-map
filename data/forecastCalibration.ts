@@ -3,7 +3,7 @@
 // (and House races on stable lines) predicted as of mid-September from a fit on years ≤ Y−1, under the live
 // constants. Re-run after any change to the model or its data so the page keeps describing the model as it is.
 export const FORECAST_CALIBRATION = {
-  "generatedAt": "2026-10-10",
+  "generatedAt": "2026-10-23",
   "years": [
     2018,
     2020,
@@ -12,119 +12,119 @@ export const FORECAST_CALIBRATION = {
   ],
   "environment": {
     "c": 0.52,
-    "s": 0.72,
+    "s": 0.57,
     "meanMiss": 1.34,
     "sdMiss": 1.96,
     "sdDrift": 1.7,
-    "sigmaEMidSept": 1.87
+    "sigmaEMidSept": 1.47
   },
   "byYear": [
     {
       "year": 2018,
       "office": "S",
       "n": 34,
-      "E": -4.4,
-      "mae": 6.1,
-      "bias": -2.9,
+      "E": -3.03,
+      "mae": 6.61,
+      "bias": -4.37,
       "r": 0.94
     },
     {
       "year": 2018,
       "office": "G",
       "n": 36,
-      "E": -4.4,
-      "mae": 9.8,
-      "bias": 2.27,
+      "E": -3.03,
+      "mae": 9.91,
+      "bias": 0.66,
       "r": 0.66
     },
     {
       "year": 2018,
       "office": "H",
       "n": 6,
-      "E": -4.4,
-      "mae": 6.51,
-      "bias": -6.36,
+      "E": -3.03,
+      "mae": 7.69,
+      "bias": -7.69,
       "r": 1
     },
     {
       "year": 2020,
       "office": "S",
       "n": 33,
-      "E": -3.9,
-      "mae": 5.39,
-      "bias": 4.02,
+      "E": -2.94,
+      "mae": 4.73,
+      "bias": 2.83,
       "r": 0.96
     },
     {
       "year": 2020,
       "office": "G",
       "n": 11,
-      "E": -3.9,
-      "mae": 12.37,
-      "bias": 11.96,
+      "E": -2.94,
+      "mae": 11.53,
+      "bias": 10.92,
       "r": 0.82
     },
     {
       "year": 2020,
       "office": "H",
       "n": 5,
-      "E": -3.9,
-      "mae": 5.87,
-      "bias": 5.64,
+      "E": -2.94,
+      "mae": 5.39,
+      "bias": 4.82,
       "r": 1
     },
     {
       "year": 2022,
       "office": "S",
       "n": 33,
-      "E": 0.63,
-      "mae": 4.81,
-      "bias": 1.1,
+      "E": 1.12,
+      "mae": 4.86,
+      "bias": 0.89,
       "r": 0.96
     },
     {
       "year": 2022,
       "office": "G",
       "n": 36,
-      "E": 0.63,
+      "E": 1.12,
       "mae": 7.28,
-      "bias": 2.38,
+      "bias": 2.31,
       "r": 0.92
     },
     {
       "year": 2022,
       "office": "H",
       "n": 209,
-      "E": 0.63,
-      "mae": 4.58,
-      "bias": 0.85,
+      "E": 1.12,
+      "mae": 4.59,
+      "bias": 0.45,
       "r": 0.98
     },
     {
       "year": 2024,
       "office": "S",
       "n": 33,
-      "E": 0.18,
-      "mae": 3.7,
-      "bias": 2.23,
+      "E": -0.01,
+      "mae": 3.93,
+      "bias": 2.93,
       "r": 0.98
     },
     {
       "year": 2024,
       "office": "G",
       "n": 11,
-      "E": 0.18,
-      "mae": 7.63,
-      "bias": 3.05,
+      "E": -0.01,
+      "mae": 7.91,
+      "bias": 3.82,
       "r": 0.91
     },
     {
       "year": 2024,
       "office": "H",
       "n": 245,
-      "E": 0.18,
-      "mae": 4.38,
-      "bias": 2.49,
+      "E": -0.01,
+      "mae": 4.41,
+      "bias": 2.67,
       "r": 0.99
     }
   ],
@@ -132,41 +132,41 @@ export const FORECAST_CALIBRATION = {
     {
       "office": "S",
       "n": 133,
-      "mae": 5.01,
-      "bias": 1.08,
-      "meanAbsYearBias": 2.56,
-      "withinRsd": 4.75,
-      "nationalSd": 2.54,
+      "mae": 5.04,
+      "bias": 0.54,
+      "meanAbsYearBias": 2.76,
+      "withinRsd": 4.92,
+      "nationalSd": 2.97,
       "liveRaceSigma": 6,
-      "cover80": 0.797,
-      "brier": 0.059,
+      "cover80": 0.805,
+      "brier": 0.06,
       "brierCoinFlip": 0.25,
-      "calledRight": 0.925
+      "calledRight": 0.932
     },
     {
       "office": "G",
       "n": 94,
-      "mae": 8.88,
-      "bias": 3.53,
-      "meanAbsYearBias": 4.91,
-      "withinRsd": 8.24,
-      "nationalSd": 4.08,
+      "mae": 8.86,
+      "bias": 2.86,
+      "meanAbsYearBias": 4.43,
+      "withinRsd": 8.06,
+      "nationalSd": 3.91,
       "liveRaceSigma": 9.4,
-      "cover80": 0.83,
+      "cover80": 0.819,
       "brier": 0.093,
       "brierCoinFlip": 0.25,
-      "calledRight": 0.894
+      "calledRight": 0.883
     },
     {
       "office": "H",
       "n": 465,
-      "mae": 4.51,
-      "bias": 1.67,
-      "meanAbsYearBias": 3.83,
-      "withinRsd": 4.86,
-      "nationalSd": 4.4,
+      "mae": 4.55,
+      "bias": 1.56,
+      "meanAbsYearBias": 3.91,
+      "withinRsd": 4.9,
+      "nationalSd": 4.74,
       "liveRaceSigma": 5.3,
-      "cover80": 0.791,
+      "cover80": 0.776,
       "brier": 0.024,
       "brierCoinFlip": 0.25,
       "calledRight": 0.97
@@ -176,43 +176,43 @@ export const FORECAST_CALIBRATION = {
     {
       "lo": 0,
       "hi": 0.05,
-      "n": 251,
+      "n": 254,
       "meanP": 0.007,
       "demWon": 0.008
     },
     {
       "lo": 0.05,
       "hi": 0.25,
-      "n": 48,
-      "meanP": 0.125,
-      "demWon": 0.083
+      "n": 51,
+      "meanP": 0.135,
+      "demWon": 0.078
     },
     {
       "lo": 0.25,
       "hi": 0.5,
-      "n": 31,
-      "meanP": 0.368,
-      "demWon": 0.29
+      "n": 29,
+      "meanP": 0.377,
+      "demWon": 0.379
     },
     {
       "lo": 0.5,
       "hi": 0.75,
-      "n": 42,
-      "meanP": 0.631,
-      "demWon": 0.738
+      "n": 40,
+      "meanP": 0.63,
+      "demWon": 0.8
     },
     {
       "lo": 0.75,
       "hi": 0.95,
-      "n": 52,
-      "meanP": 0.863,
-      "demWon": 0.885
+      "n": 48,
+      "meanP": 0.862,
+      "demWon": 0.854
     },
     {
       "lo": 0.95,
       "hi": 1,
-      "n": 268,
-      "meanP": 0.993,
+      "n": 270,
+      "meanP": 0.992,
       "demWon": 0.993
     }
   ],
@@ -220,49 +220,49 @@ export const FORECAST_CALIBRATION = {
     {
       "variant": "Full model",
       "mae": {
-        "S": 5.01,
-        "G": 8.88,
-        "H": 4.51
+        "S": 5.04,
+        "G": 8.86,
+        "H": 4.55
       }
     },
     {
       "variant": "No candidates",
       "mae": {
         "S": 5.11,
-        "G": 10.49,
-        "H": 4.72
+        "G": 10.3,
+        "H": 4.79
       }
     },
     {
       "variant": "No fundraising",
       "mae": {
-        "S": 5.64,
-        "G": 9.33,
-        "H": 4.71
+        "S": 5.71,
+        "G": 9.23,
+        "H": 4.73
       }
     },
     {
       "variant": "No incumbency",
       "mae": {
-        "S": 5.87,
-        "G": 9.65,
-        "H": 4.95
+        "S": 6.14,
+        "G": 9.75,
+        "H": 4.98
       }
     },
     {
       "variant": "No environment",
       "mae": {
-        "S": 5.26,
-        "G": 9.12,
-        "H": 4.58
+        "S": 5.38,
+        "G": 9.01,
+        "H": 4.56
       }
     },
     {
       "variant": "Lean only",
       "mae": {
-        "S": 6.92,
-        "G": 11.61,
-        "H": 5.47
+        "S": 7.05,
+        "G": 11.52,
+        "H": 5.53
       }
     }
   ],
@@ -270,21 +270,21 @@ export const FORECAST_CALIBRATION = {
     {
       "horizon": "Mid-September",
       "office": "S",
-      "polled": 105,
+      "polled": 106,
       "all": 133,
-      "maeModel": 4.85,
-      "maePoll": 6.64,
-      "maeBlend": 4.67,
-      "meanW": 0.4
+      "maeModel": 4.89,
+      "maePoll": 6.13,
+      "maeBlend": 4.47,
+      "meanW": 0.39
     },
     {
       "horizon": "Mid-September",
       "office": "G",
       "polled": 80,
       "all": 94,
-      "maeModel": 9.36,
+      "maeModel": 9.28,
       "maePoll": 5.76,
-      "maeBlend": 7.27,
+      "maeBlend": 7.25,
       "meanW": 0.44
     },
     {
@@ -292,29 +292,29 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "polled": 104,
       "all": 465,
-      "maeModel": 4.16,
+      "maeModel": 4.28,
       "maePoll": 5.11,
-      "maeBlend": 3.61,
+      "maeBlend": 3.68,
       "meanW": 0.19
     },
     {
       "horizon": "Mid-October",
       "office": "S",
-      "polled": 115,
+      "polled": 117,
       "all": 133,
-      "maeModel": 4.83,
-      "maePoll": 6.51,
-      "maeBlend": 4.52,
-      "meanW": 0.47
+      "maeModel": 4.82,
+      "maePoll": 5.94,
+      "maeBlend": 4.27,
+      "meanW": 0.46
     },
     {
       "horizon": "Mid-October",
       "office": "G",
       "polled": 87,
       "all": 94,
-      "maeModel": 9.1,
+      "maeModel": 9.04,
       "maePoll": 6.05,
-      "maeBlend": 5.89,
+      "maeBlend": 5.97,
       "meanW": 0.54
     },
     {
@@ -322,29 +322,29 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "polled": 121,
       "all": 465,
-      "maeModel": 4.13,
+      "maeModel": 4.25,
       "maePoll": 5.14,
-      "maeBlend": 3.51,
+      "maeBlend": 3.57,
       "meanW": 0.24
     },
     {
       "horizon": "November 1",
       "office": "S",
-      "polled": 122,
+      "polled": 124,
       "all": 133,
-      "maeModel": 4.98,
-      "maePoll": 6.02,
-      "maeBlend": 4.59,
-      "meanW": 0.51
+      "maeModel": 4.96,
+      "maePoll": 5.44,
+      "maeBlend": 4.26,
+      "meanW": 0.5
     },
     {
       "horizon": "November 1",
       "office": "G",
       "polled": 89,
       "all": 94,
-      "maeModel": 9,
+      "maeModel": 8.95,
       "maePoll": 5.37,
-      "maeBlend": 5.44,
+      "maeBlend": 5.48,
       "meanW": 0.56
     },
     {
@@ -352,9 +352,9 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "polled": 132,
       "all": 465,
-      "maeModel": 4.21,
+      "maeModel": 4.3,
       "maePoll": 5.13,
-      "maeBlend": 3.48,
+      "maeBlend": 3.54,
       "meanW": 0.26
     }
   ]

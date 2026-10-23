@@ -69,17 +69,19 @@ import { raceMoneyTerm, type RaceMoneyTerm } from "@/lib/stateLegMoneyModel";
 export const STATE_LEG_FORECAST_CONSTANTS = {
   TYPE_WEIGHTS: { P: 0.6, L: 0.2 } as Record<"P" | "L", number>, // the District TPL's P/H ratio: a seat's own race is to its district what a House race is to a congressional district
   RECENT_SEAT_BOOST: 3,  // the seat row's type weight × this in the latest year that has one (L 0.2 → 0.6, half that year's lean): the backtest's sweep (2026-10-14), MAE 5.85 → 5.74 (2022) and 5.39 → 5.18 (2024)
-  INCUMBENCY_PTS: 2.7,   // fitted by scripts/stateLegBacktest.ts: 3.6 (2022) / 1.8 (2024) with the money term (2026-10-18 re-run; 3.7 / 1.8 without it), set at their rounded mean
-  SIGMA: 7.0,            // seat-level noise beyond the national and chamber shocks, fitted by the backtest (holdout residual spread after τ: 7.2 / 6.8 with the money term, 2026-10-18)
-  STATE_SHOCK: 3.4,      // chamber-level shock τ shared by every seat of a chamber in a year, fitted by the backtest (chamber-mean residual spread: 3.44 / 3.37 with the money term, 2026-10-18 re-run)
+  INCUMBENCY_PTS: 2.3,   // fitted by scripts/stateLegBacktest.ts: 3.3 (2022) / 1.3 (2024) with the money term, the per-candidate slate margin and the capped PRES_GAP_K (2026-10-22 re-run; 3.6 / 1.8 before them), set at their rounded mean
+  SIGMA: 6.0,            // seat-level noise beyond the national and chamber shocks, fitted by the backtest (holdout residual spread after τ: 6.31 / 5.76 with the slate margin and the capped PRES_GAP_K, 2026-10-22; 7.2 / 6.8 before)
+  STATE_SHOCK: 3.4,      // chamber-level shock τ shared by every seat of a chamber in a year, fitted by the backtest (chamber-mean residual spread: 3.23 / 3.53, 2026-10-22 re-run with the slate margin and the capped PRES_GAP_K)
   MIN_COVERAGE: 0.5,     // a relocated row needs contested old districts covering this share of today's population
   IND_RECORD_SHARE: 40,  // a non-incumbent independent is modeled when they took this share of their last head-to-head in the seat
   IND_PRIOR_PTS: 14,     // a modeled independent runs this far ahead of a generic nominee of the absent party before their own record: the median of the 16 head-to-heads 2022-24 (scripts/stateLegIndependentBacktest.ts)
   IND_SHRINK_K: 1,       // their record (mean residual of the last two head-to-heads) is shrunk toward IND_PRIOR_PTS: (n·mean + K·prior) / (n + K)
-  IND_SIGMA: 0,          // extra seat noise in an independent's race: the backtest's robust residual spread (7.1 with RECENT_SEAT_BOOST) is within SIGMA and STATE_SHOCK, so none
+  IND_SIGMA: 4,          // extra seat noise in an independent's race: the backtest's robust residual spread (7.9, 2026-10-22) net of SIGMA and STATE_SHOCK (√(7.9² − 6.0² − 3.4²) = 3.9); 0 while SIGMA was 7.0
   MONEY_K: 0.03,         // points per point of residual money gap: the --money sweep's best cell in both holdout years (2026-10-18)
   MONEY_CAP: 1.5,        // the money term's cap in points: the gain shrinks as the cap grows (a large residual gap over-predicts), best at 1.5 in both years
   PARTIAL_CYCLE_GAP_SCALE: 0.9, // 2026 receipts are to-date: the federal forecast's measured final/September gap ratio (no state-filing snapshots to measure our own)
+  PRES_GAP_K: 0.5,       // presidential rows move this share of the chamber's seat-minus-presidential gap toward its seats: the backtest's --pres-gap sweep (2026-10-22)
+  PRES_GAP_MIN_SEATS: 5, // a year enters the chamber's gap with at least this many seat rows on (nearly) today's lines
   SIMS: 5000,
 };
 
@@ -101,6 +103,8 @@ export interface ProjectionRow {
   envPts: number;
   /** The race's money term stripped from the row (R-positive points; 0 where the money is not on file). */
   moneyPts: number;
+  /** A presidential row's down-ballot offset, PRES_GAP_K × the chamber's seat-minus-presidential gap (0 on seat rows). */
+  gapPts: number;
   NM: number;
   huber: number;
   weight: number;       // final share of the lean
@@ -228,13 +232,26 @@ export function compositeShares(abbr: string, chamber: Chamber, key: string, tar
   return shares;
 }
 
-function contestedMargin(r: { demVotes: number | null; repVotes: number | null; totalVotes: number | null; noCount?: boolean; candidates?: { name: string; party: string }[] }): number | null {
+/**
+ * A contested seat's R-positive margin, or null (one major party only, no count, a fusion nominee).
+ * Party vote sums over the total, except in a multi-member race (more than one winner) where the
+ * parties ran unequal slates: there the average R nominee against the average D nominee, scaled to
+ * the major parties' share of the vote, since summing would hand the fuller slate a margin no seat
+ * is decided on (two Democrats and one Republican for two seats: about double the D votes). Equal
+ * slates give the summed margin exactly.
+ */
+export function contestedMargin(r: { demVotes: number | null; repVotes: number | null; totalVotes: number | null; noCount?: boolean; candidates?: { name: string; party: string; winner?: boolean }[] }): number | null {
   if (r.noCount || !r.totalVotes || !r.demVotes || !r.repVotes) return null;
   if (r.demVotes <= 0 || r.repVotes <= 0) return null;
   // A fusion nominee on both major lines (New York, Oregon, Vermont) is no D-vs-R contest.
   if (r.candidates?.length) {
     const dem = new Set(r.candidates.filter((c) => c.party === "D").map((c) => personKey(c.name)));
     if (r.candidates.some((c) => c.party === "R" && dem.has(personKey(c.name)))) return null;
+    const nD = r.candidates.filter((c) => c.party === "D").length, nR = r.candidates.filter((c) => c.party === "R").length;
+    if (nD > 0 && nR > 0 && nD !== nR && r.candidates.filter((c) => c.winner).length > 1) {
+      const dBar = r.demVotes / nD, rBar = r.repVotes / nR;
+      return ((rBar - dBar) / (rBar + dBar)) * ((r.repVotes + r.demVotes) / r.totalVotes) * 100;
+    }
   }
   return ((r.repVotes - r.demVotes) / r.totalVotes) * 100;
 }
@@ -365,15 +382,17 @@ export interface ProjectOptions {
   /** The backtest's environment sweep: β*·E × this in the forward term, and on past rows per envScaleRows (default 1). */
   envScale?: number;
   envScaleRows?: "none" | "L" | "all";
+  /** The backtest's sweep: PRES_GAP_K in place of the constant (0 = no down-ballot offset). */
+  presGapK?: number;
 }
 
-export function projectDistrict(abbr: string, chamber: Chamber, district: StateLegDistrict, opts: ProjectOptions = {}): DistrictProjection {
+/** A district's rows before the down-ballot offset and the lean: presidential on today's lines, then its seat races. */
+function seatRows(abbr: string, chamber: Chamber, district: StateLegDistrict, opts: ProjectOptions): ProjectionRow[] {
   const fit = getTplFit();
   const beta = fit.beta[abbr]?.shrunk ?? 1;
   const key = district.number;
   const maxYear = opts.maxYear ?? Number.POSITIVE_INFINITY;
   const incPts = opts.incumbencyPts ?? C.INCUMBENCY_PTS;
-  const TW = opts.typeWeights ?? C.TYPE_WEIGHTS;
   const moneyK = opts.moneyK ?? C.MONEY_K, moneyCap = opts.moneyCap ?? C.MONEY_CAP;
   const moneyOf = (k: string, year: number, sign: number, scale = 1) => raceMoneyTerm(abbr, chamber, k, year, sign, moneyK, moneyCap, scale);
   const stripOf = (k: string, year: number, sign: number) => (opts.moneyStrip === false ? null : moneyOf(k, year, sign));
@@ -389,7 +408,7 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
     const v = presNow?.[p];
     if (!v || Number(p) > maxYear) continue;
     const envPts = -(betaP * (fit.E[Number(p)] ?? 0));
-    rows.push({ year: Number(p), kind: "P", label: `${p} President`, era: "current", raw: v.margin, relocated: false, coverage: 1, presDelta: 0, incSign: 0, incPts: 0, envPts, moneyPts: 0, NM: v.margin + envPts, huber: 1, weight: 0 });
+    rows.push({ year: Number(p), kind: "P", label: `${p} President`, era: "current", raw: v.margin, relocated: false, coverage: 1, presDelta: 0, incSign: 0, incPts: 0, envPts, moneyPts: 0, gapPts: 0, NM: v.margin + envPts, huber: 1, weight: 0 });
   }
 
   const years = (stateLegCalendar[abbr]?.[chamber]?.electionYears ?? []).filter((y) => y <= maxYear);
@@ -435,7 +454,60 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
     }
     const envPts = -(betaL * (fit.E[year] ?? 0));
     const incStrip = -incPts * incSign;
-    rows.push({ year, kind: "L", label: `${year} ${chamber === "house" ? "House" : "Senate"}`, era, raw, relocated, coverage, presDelta, incSign, incPts: incStrip, envPts, moneyPts, NM: raw + incStrip + envPts - moneyPts, huber: 1, weight: 0 });
+    rows.push({ year, kind: "L", label: `${year} ${chamber === "house" ? "House" : "Senate"}`, era, raw, relocated, coverage, presDelta, incSign, incPts: incStrip, envPts, moneyPts, gapPts: 0, NM: raw + incStrip + envPts - moneyPts, huber: 1, weight: 0 });
+  }
+  return rows;
+}
+
+/**
+ * How far the chamber's seat races run from the presidential vote on the same lines, R-positive:
+ * per election year, the mean over seats with a seat row on (nearly) today's lines of that row's NM
+ * less the seat's mean presidential NM; years with at least PRES_GAP_MIN_SEATS such seats, combined
+ * with weights doubling toward the latest, capped at the latest year's own gap so a fading habit
+ * is not carried at its old strength (Vermont's Republicans run ~16 points ahead of their presidential
+ * nominee; West Virginia's Democrats ~10, down from 34 in 2016). Memoized per chamber and option set.
+ */
+const presGapCache = new Map<string, number>();
+export function chamberPresGap(abbr: string, chamber: Chamber, opts: ProjectOptions = {}): number {
+  const ck = [abbr, chamber, opts.maxYear, opts.incumbencyPts, opts.moneyK, opts.moneyCap, opts.moneyStrip, opts.envScale, opts.envScaleRows].join("|");
+  const hit = presGapCache.get(ck);
+  if (hit != null) return hit;
+  const byYear = new Map<number, number[]>();
+  for (const d of stateLegDistricts[abbr]?.[chamber] ?? []) {
+    const rows = seatRows(abbr, chamber, d, opts);
+    const P = rows.filter((r) => r.kind === "P");
+    if (P.length === 0) continue;
+    const pNM = P.reduce((a, r) => a + r.NM, 0) / P.length;
+    for (const r of rows) if (r.kind === "L" && r.coverage >= 0.9) byYear.set(r.year, [...(byYear.get(r.year) ?? []), r.NM - pNM]);
+  }
+  const years = [...byYear.keys()].filter((y) => byYear.get(y)!.length >= C.PRES_GAP_MIN_SEATS).sort((a, b) => a - b);
+  const means = years.map((y) => { const xs = byYear.get(y)!; return xs.reduce((a, b) => a + b, 0) / xs.length; });
+  let num = 0, den = 0;
+  means.forEach((m, i) => { num += 2 ** i * m; den += 2 ** i; });
+  let gap = den > 0 ? num / den : 0;
+  // A habit can only fade: never larger than the latest year's own gap, nor of the other sign
+  // (West Virginia's Democratic edge −34, −23, −19, −14, −10 from 2016 averages to −13.9; its latest is −10.2).
+  const latest = means.at(-1);
+  if (latest != null) gap = Math.sign(latest) !== Math.sign(gap) ? 0 : Math.abs(latest) < Math.abs(gap) ? latest : gap;
+  presGapCache.set(ck, gap);
+  return gap;
+}
+
+export function projectDistrict(abbr: string, chamber: Chamber, district: StateLegDistrict, opts: ProjectOptions = {}): DistrictProjection {
+  const fit = getTplFit();
+  const beta = fit.beta[abbr]?.shrunk ?? 1;
+  const key = district.number;
+  const maxYear = opts.maxYear ?? Number.POSITIVE_INFINITY;
+  const incPts = opts.incumbencyPts ?? C.INCUMBENCY_PTS;
+  const TW = opts.typeWeights ?? C.TYPE_WEIGHTS;
+  const moneyK = opts.moneyK ?? C.MONEY_K, moneyCap = opts.moneyCap ?? C.MONEY_CAP;
+  const moneyOf = (k: string, year: number, sign: number, scale = 1) => raceMoneyTerm(abbr, chamber, k, year, sign, moneyK, moneyCap, scale);
+  const rows = seatRows(abbr, chamber, district, opts);
+  // The chamber's down-ballot offset moves the presidential rows toward how its seats actually vote.
+  const gapK = opts.presGapK ?? C.PRES_GAP_K;
+  if (gapK !== 0) {
+    const gapPts = gapK * chamberPresGap(abbr, chamber, opts);
+    for (const r of rows) if (r.kind === "P") { r.gapPts = gapPts; r.NM += gapPts; }
   }
 
   // Lean: two passes, the second with Huber factors on the seat rows.
@@ -500,7 +572,7 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
     const parties = new Set(inc.map((x) => x.party));
     incSign = parties.size === 1 ? ([...parties][0] === "R" ? 1 : [...parties][0] === "D" ? -1 : 0) : 0;
   }
-  const envPts = beta * lambda * E;
+  const envPts = beta * (opts.envScale ?? 1) * E;
   const sigma = Math.sqrt((opts.sigma ?? C.SIGMA) ** 2 + C.STATE_SHOCK ** 2 + (beta * sigmaE) ** 2);
   let contest: DistrictProjection["contest"] = !up ? "not-up" : c26 ? c26.status : "contested";
   // Seats on the ballot in this district: the roster's per-seat cycle (West Virginia's Senate

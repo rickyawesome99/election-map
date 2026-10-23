@@ -127,7 +127,7 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
             <table className="w-full text-xs" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
               <thead>
                 <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  {["Race", "Lines", "Raw", "Relocation", "Incumbency", "Environment", "Money", "Neutral", "Weight"].map((h, i) => (
+                  {["Race", "Lines", "Raw", "Relocation", "Down-ballot", "Incumbency", "Environment", "Money", "Neutral", "Weight"].map((h, i) => (
                     <th key={h} className={`py-1.5 pr-3 text-[10px] uppercase tracking-wider font-semibold ${i >= 2 ? "text-right" : "text-left"}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
                   ))}
                 </tr>
@@ -141,6 +141,7 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
                     </td>
                     <td className="py-1.5 pr-3 text-right" style={{ color: marginText(r.raw - r.presDelta) }}>{fmtM(r.raw - r.presDelta)}</td>
                     <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{r.relocated ? signed(r.presDelta) : "—"}</td>
+                    <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }} title={r.kind === "P" ? "the chamber's down-ballot gap: its seats run this far from the presidential vote (PRES_GAP_K share)" : undefined}>{r.kind === "P" && r.gapPts ? signed(r.gapPts) : "—"}</td>
                     <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{r.kind === "L" && r.incSign !== 0 ? signed(r.incPts) : "—"}</td>
                     <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{signed(r.envPts)}</td>
                     <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }} title={r.kind === "L" ? "the race's money term, taken out of its margin (0 where either side's money is not on file)" : undefined}>{r.kind === "L" && r.moneyPts ? signed(-r.moneyPts) : "—"}</td>

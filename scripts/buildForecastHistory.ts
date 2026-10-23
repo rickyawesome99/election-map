@@ -19,7 +19,7 @@ import path from "node:path";
 import { spawn } from "node:child_process";
 import { forecastAsOf } from "@/lib/forecast";
 import { genericBallotPolls } from "@/data/genericBallotPolls";
-import type { ForecastHistory } from "@/lib/forecastHistory";
+import { raceHistoryKey, type ForecastHistory } from "@/lib/forecastHistory";
 
 const OUT = path.join(process.cwd(), "data", "generated", "forecast-history.json");
 // The series opens once the generic-ballot average rests on this many pollsters (the same rule as
@@ -47,7 +47,6 @@ const WORKERS = Math.max(1, Math.min(4, os.cpus().length));
 
 const r1 = (x: number) => Math.round(x * 10) / 10;
 const r3 = (x: number) => Math.round(x * 1000) / 1000;
-const slug = { house: (r: { name: string }) => `house/${r.name.toLowerCase()}`, senate: (r: { id: string }) => `senate/${r.id.toLowerCase().replace(/-2$/, "2")}`, governor: (r: { id: string }) => `governor/${r.id.toLowerCase()}` };
 
 type Part = { days: ForecastHistory["days"]; races: ForecastHistory["races"] };
 
@@ -66,7 +65,7 @@ function computeDays(mine: string[]): Part {
   });
   for (const type of ["house", "senate", "governor"] as const) {
     for (const r of f.races[type]) {
-      const series = (out.races[slug[type](r)] ??= { m: [], p: [] });
+      const series = (out.races[raceHistoryKey[type](r)] ??= { m: [], p: [] });
       series.m.push(r1(r.margin));
       series.p.push(r3(r.probability));
     }
