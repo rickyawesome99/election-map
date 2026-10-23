@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import type { Chamber } from "@/data/stateLegDistricts";
 import { shortDistrictName } from "@/lib/stateLegAtlas";
@@ -32,7 +32,8 @@ export type BoxTip = {
  * One box per district, the atlas's primary selector. Boxes are laid out by district key order so
  * neighbours by number sit together; the color mode is the caller's (seat party, presidential
  * margin, last result, projection). A filtered-out district stays in place but recedes, so the
- * grid never reflows under the reader's eye.
+ * grid never reflows under the reader's eye. Big chambers (NH's 203 districts, MA, VT) scroll
+ * inside a box about the map's height, with a fade at the bottom while there is more below.
  */
 export default function DistrictBoxGrid({
   chamber,
@@ -53,8 +54,21 @@ export default function DistrictBoxGrid({
   const [hovered, setHovered] = useState<string | null>(null);
   const { onMouseMove, tooltipRef } = useMapTooltip(14, 8);
   const hoveredTip = hovered ? items.find((i) => i.key === hovered)?.tip : undefined;
+  const scroller = useRef<HTMLDivElement | null>(null);
+  const [moreBelow, setMoreBelow] = useState(false);
+  const checkMore = useCallback(() => {
+    const el = scroller.current;
+    if (el) setMoreBelow(el.scrollHeight - el.scrollTop - el.clientHeight > 4);
+  }, []);
+  useEffect(() => {
+    checkMore();
+    window.addEventListener("resize", checkMore);
+    return () => window.removeEventListener("resize", checkMore);
+  }, [checkMore, items.length]);
   return (
     <div className="relative" onMouseMove={onMouseMove} onMouseLeave={() => setHovered(null)}>
+    <div className="relative">
+    <div ref={scroller} onScroll={checkMore} className="max-h-[20rem] overflow-y-auto overscroll-contain p-[3px] lg:max-h-[34rem]" style={{ scrollbarWidth: "thin" }}>
     <div
       role="listbox"
       aria-label={`${chamber === "house" ? "House" : "Senate"} districts`}
@@ -89,6 +103,9 @@ export default function DistrictBoxGrid({
           </button>
         );
       })}
+    </div>
+    </div>
+    {moreBelow && <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-10" style={{ background: "linear-gradient(to bottom, transparent, var(--app-bg))" }} />}
     </div>
     {hoveredTip && (
       <div

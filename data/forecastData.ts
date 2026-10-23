@@ -2861,7 +2861,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Nicholas Begich III",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 48.78, "repPct": 51.22, "demCandidate": "Mary Peltola", "repCandidate": "Nick Begich", "demVotes": 156985, "repVotes": 164861, "totalVotes": 321846, "margin": 2.44, "demIncumbent": true },
+      { "year": 2024, "demPct": 48.78, "repPct": 51.22, "demCandidate": "Mary Peltola", "repCandidate": "Nicholas Begich III", "demVotes": 156985, "repVotes": 164861, "totalVotes": 321846, "margin": 2.44, "demIncumbent": true },
       { "year": 2022, "demPct": 54.96, "repPct": 45.04, "demCandidate": "Mary Peltola", "repCandidate": "Sarah Palin", "demVotes": 137263, "repVotes": 112471, "totalVotes": 249734, "margin": -9.92, "demIncumbent": true },
       { "year": 2020, "demPct": 45.26, "repPct": 54.4, "demCandidate": "Alyse Galvin", "repCandidate": "Don Young", "demVotes": 159856, "repVotes": 192126, "totalVotes": 353165, "margin": 9.14, "repIncumbent": true },
       { "year": 2018, "demPct": 46.5, "repPct": 53.08, "demCandidate": "Alyse Galvin", "repCandidate": "Don Young", "demVotes": 131199, "repVotes": 149779, "totalVotes": 282166, "margin": 6.58, "repIncumbent": true },

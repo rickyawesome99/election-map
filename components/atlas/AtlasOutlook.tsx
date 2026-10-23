@@ -127,8 +127,8 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
             <table className="w-full text-xs" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
               <thead>
                 <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  {["Race", "Lines", "Raw", "Relocation", "Down-ballot", "Incumbency", "Environment", "Money", "Neutral", "Weight"].map((h, i) => (
-                    <th key={h} className={`py-1.5 pr-3 text-[10px] uppercase tracking-wider font-semibold ${i >= 2 ? "text-right" : "text-left"}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
+                  {[["Race"], ["Lines"], ["Raw"], ["Relocation"], ["Down-ballot"], ["Inc", "Incumbency"], ["Env", "Environment"], ["Money"], ["Neutral"], ["Weight"]].map(([h, full], i) => (
+                    <th key={h} title={full} className={`py-1.5 pr-3 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${i >= 2 ? "text-right" : "text-left"}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
                   ))}
                 </tr>
               </thead>

@@ -23,11 +23,11 @@ const hsg = (o: Record<"H" | "S" | "G", number>, fmt: (v: number) => string = St
 // Every FORECAST_CONSTANTS key and the section of this tab that documents it. `satisfies` makes the
 // type-check fail when a constant is added without being documented here.
 const DOCUMENTED_IN = {
-  ENV_MISS_SHRINK: "environment", ENV_DAYS_MID_SEPT_TO_ELECTION: "environment",
+  ENV_MISS_SHRINK: "environment", ENV_DAYS_MID_SEPT_TO_ELECTION: "environment", NATIONAL_SIGMA_STRUCTURAL: "environment",
   APPOINTED_INCUMBENCY_SHARE: "incumbency",
   MONEY_BASIS: "fundraising", MONEY_K: "fundraising", MONEY_CAP: "fundraising", PARTIAL_CYCLE_GAP_SCALE: "fundraising",
   QUALITY_WEIGHT: "candidates", OBSERVABLE_PRIOR_FEATURES: "candidates",
-  POLL_K: "polling", POLL_W_MAX: "polling", POLL_SIGMA: "polling", POLL_AGING_SHARE: "polling", HOUSE_EFFECTS: "polling", HOUSE_EFFECT_K: "polling",
+  POLL_K: "polling", POLL_HALF_LIFE_DAYS: "polling", POLL_UNDECIDED_ALLOCATION: "polling", POLL_UNDECIDED_CAP: "polling", POLL_W_MAX: "polling", POLL_SIGMA: "polling", POLL_AGING_SHARE: "polling", HOUSE_EFFECTS: "polling", HOUSE_EFFECT_K: "polling",
   HOUSE_EFFECT_WINDOW_DAYS: "polling", HOUSE_EFFECT_PARTISAN_PRIOR: "polling", HOUSE_EFFECT_CAP: "polling",
   RACE_SIGMA: "uncertainty", DEMOGRAPHIC_SHOCK: "chambers",
 } satisfies Record<keyof typeof F, string>;
@@ -119,13 +119,13 @@ export default function ForecastMethodology() {
           { name: "GB", formula: "generic-ballot average", now: <M v={env.gb} /> },
           { name: "PV_hat", formula: `GB + ${F.ENV_MISS_SHRINK} × mean(House vote − final GB)`, now: <><M v={env.gb} /> + {F.ENV_MISS_SHRINK} × <M v={envModel.meanMiss} /> = <M v={env.pvHat} /></> },
           { name: "E_hat", formula: "c + s × PV_hat", now: <>{signed(envModel.c, 2)} + {envModel.s.toFixed(2)} × PV_hat = <M v={env.eHat} /></> },
-          { name: "σ_E", formula: "|s| × √( sd(miss)² + (horizon × rms(drift))² )", now: <>{envModel.s.toFixed(2)} × √({envModel.sdMiss.toFixed(1)}² + ({env.horizon.toFixed(2)} × {envModel.sdDrift.toFixed(1)})²) = <N>{env.sigmaE.toFixed(2)}</N></> },
+          { name: "σ_E", formula: "√( NATIONAL_SIGMA_STRUCTURAL² + (|s| × √( sd(miss)² + (horizon × rms(drift))² ))² )", now: <>√({F.NATIONAL_SIGMA_STRUCTURAL}² + ({envModel.s.toFixed(2)} × √({envModel.sdMiss.toFixed(1)}² + ({env.horizon.toFixed(2)} × {envModel.sdDrift.toFixed(1)})²))²) = <N>{env.sigmaE.toFixed(2)}</N></> },
           { name: "Environment pts", formula: "β*(state) × E_hat", now: <>e.g. β* 1.00 → <M v={env.eHat} /></> },
-        ]} note={<>horizon = days to the election ÷ {F.ENV_DAYS_MID_SEPT_TO_ELECTION}, capped at 1.5 ({Math.round(env.daysToElection)} days → {env.horizon.toFixed(2)}), so σ_E narrows as election day approaches.</>} />
+        ]} note={<>horizon = days to the election ÷ {F.ENV_DAYS_MID_SEPT_TO_ELECTION}, capped at 1.5 ({Math.round(env.daysToElection)} days → {env.horizon.toFixed(2)}), so the generic-ballot part of σ_E narrows as election day approaches; the structural part does not.</>} />
         <Block label="Generic-ballot average" meta={`${genericBallotPolls.length} polls on file`}>
           <Defs items={[
             { term: "One poll per pollster", def: "Only each pollster's most recent survey counts, so weekly trackers cannot dominate by volume." },
-            { term: "Recency", def: "Full weight for 14 days after the field period ends, then halving every further 14 days." },
+            { term: "Recency", def: "Full weight for 14 days after the field period ends, then halving every further 14 days (race polls use the office's own half-life, see Polling)." },
             { term: "Sample size", def: "Weight ∝ √sample, capped at 3,000; an unpublished sample takes the median of the others." },
             { term: "Average", def: <>Σ weight × (R% − D%) ÷ Σ weight. Currently <M v={env.gb} />.</> },
           ]} />
@@ -136,7 +136,7 @@ export default function ForecastMethodology() {
             rows={nationalEnvironmentHistory.filter((r) => fit.E[r.year] != null && r.housePv != null).map((r) => [
               r.year, <M key="e" v={fit.E[r.year]} />, <M key="s" v={r.gbMidSept} />, <M key="f" v={r.gbFinal} />, <M key="p" v={r.housePv} />, <M key="m" v={r.housePv != null && r.gbFinal != null ? r.housePv - r.gbFinal : null} />,
             ])}
-            caption={<>Mean miss <M v={envModel.meanMiss} />, sd {envModel.sdMiss.toFixed(1)}; September→November drift rms {envModel.sdDrift.toFixed(1)}. Mid-September generic-ballot values are approximate and flagged in <Code>data-entry/national_environment_history.csv</Code>.</>} />
+            caption={<>Mean miss <M v={envModel.meanMiss} />, sd {envModel.sdMiss.toFixed(1)}; September→November drift rms {envModel.sdDrift.toFixed(1)}. Since 2026-10-23 the 2018–2024 generic-ballot columns are the live averaging recipe itself run over the 538 poll archive as of September 15 and election eve, so the miss is measured on the quantity the model shades; 2016 predates the archive and stays on RealClearPolitics&rsquo; basis (<Code>data-entry/national_environment_history.csv</Code>).</>} />
         </Block>
         <Block label="State elasticity β*" meta={`range ${betas[0]?.[1].shrunk.toFixed(2)} (${betas[0]?.[0]}) to ${betas.at(-1)?.[1].shrunk.toFixed(2)} (${betas.at(-1)?.[0]})`}>
           <P>β* is how strongly a state moves with the national environment, fitted alongside TPL and shrunk halfway to 1: β* = clamp(1 + {G.BETA_SHRINK} × (β̂ − 1), {G.BETA_MIN}, {G.BETA_MAX}). A House race uses its state&rsquo;s β*. See <Link href="/methodology/state-tpl#fit" className="underline underline-offset-2">State TPL → the fit</Link>.</P>
@@ -145,7 +145,8 @@ export default function ForecastMethodology() {
           { name: "ENV_MISS_SHRINK", value: F.ENV_MISS_SHRINK, basis: "decision", meaning: "Share of the historical mean generic-ballot miss applied to the point estimate. The remainder, and all of the miss's variance, live in σ_E.", source: "Polling gaps are not predictable; half is a hedge between trusting and ignoring the average miss." },
           { name: "ENV_DAYS_MID_SEPT_TO_ELECTION", value: F.ENV_DAYS_MID_SEPT_TO_ELECTION, basis: "data", meaning: "The horizon the drift variance in the history table was measured over; drift scales linearly with days remaining." },
           { name: "c, s", value: `${signed(envModel.c, 2)}, ${envModel.s.toFixed(2)}`, basis: "fitted", meaning: "E = c + s × House popular vote, OLS over the even years on file.", source: <Code>getEnvironmentModel()</Code> },
-          { name: "σ_E", value: env.sigmaE.toFixed(2), basis: "fitted", meaning: "Shared national error on the E scale. Every race carries β* × σ_E, and the chamber simulation draws it once per run.", source: <Code>getNationalEnvironment()</Code> },
+          { name: "NATIONAL_SIGMA_STRUCTURAL", value: F.NATIONAL_SIGMA_STRUCTURAL, basis: "measured", meaning: "Shared national error (E scale) the forecast carries even with the House vote known: the lean window, the E↔vote conversion, and whatever moves a whole office in one year. Added in quadrature to the generic ballot's own error.", source: <>Set so the mid-September σ_E reproduces the forward backtest&rsquo;s realized spread of yearly Senate biases ({CAL.pooled.find((p) => p.office === "S")?.nationalSd}; Governor {CAL.pooled.find((p) => p.office === "G")?.nationalSd}, House {CAL.pooled.find((p) => p.office === "H")?.nationalSd} on far fewer early-year races): √(2.6² + {CAL.environment.sigmaEMidSept}²). Before 2026-10-23 this term was 0 and the national part of every race&rsquo;s error was being absorbed as independent race noise, which averages out across a chamber; the seat ranges were the narrowest of any published model.</> },
+          { name: "σ_E", value: env.sigmaE.toFixed(2), basis: "fitted", meaning: "Shared national error on the E scale today. Every race carries β* × σ_E, and the chamber simulation draws it once per run.", source: <Code>getNationalEnvironment()</Code> },
         ]} />
       </Section>
 
@@ -214,7 +215,7 @@ export default function ForecastMethodology() {
         lede={<>Where a race has general-election polls, their average is a second estimate of the same margin. It earns its share of the projection by evidence: no polls, the Model stands alone; many fresh polls, they dominate. {pollCount.toLocaleString()} polls across {Object.keys(racePolls).length} races are on file, and {polled(all)} races currently carry a polling average.</>}>
         <Formula lines={[
           "poll margin_i = (R% − D%) + aging shift_i − house effect_i",
-          "weight_i      = recency_i × √min(sample_i, 3000)         recency: 1 for 14 days, then halving every 14",
+          "weight_i      = recency_i × √min(sample_i, 3000)         recency: 1 for 14 days, then halving every POLL_HALF_LIFE_DAYS[office]",
           "Polling Avg   = Σ weight_i × poll margin_i / Σ weight_i   one poll per pollster (its latest)",
           "nEff          = Σ recency_i                                effective number of fresh polls",
           "w             = min(POLL_W_MAX, nEff / (nEff + POLL_K[office]))",
@@ -242,7 +243,10 @@ export default function ForecastMethodology() {
           { name: "HOUSE_EFFECT_WINDOW_DAYS", value: F.HOUSE_EFFECT_WINDOW_DAYS, basis: "calibrated", meaning: "Only polls this recent inform the leans. 120–300 days are within 0.03." },
           { name: "HOUSE_EFFECT_CAP", value: `±${F.HOUSE_EFFECT_CAP}`, basis: "designed", meaning: "Bound on any one lean: two pollsters 30 pts apart on different question wordings is not a house effect. Neutral in the backtest (±0.02)." },
           { name: "HOUSE_EFFECT_PARTISAN_PRIOR", value: F.HOUSE_EFFECT_PARTISAN_PRIOR, basis: "off", meaning: "Prior lean assumed for a party or campaign poll before any evidence. A fixed prior helped the House poll average but hurt its blend." },
-          { name: "Recency / sample", value: "14 d · 14 d · 3,000", basis: "designed", meaning: "Full-weight days, half-life days and sample cap of the averaging recipe, shared with the generic ballot.", source: <Code>lib/racePollAverage.ts</Code> },
+          { name: "POLL_HALF_LIFE_DAYS", value: hsg(F.POLL_HALF_LIFE_DAYS), basis: "calibrated", meaning: "Days over which a poll's weight halves, after 14 days at full weight. nEff is the sum of these weights, so a longer half-life also raises w in races whose polls are old.", source: "The generic ballot's 14 was inherited unfitted. forwardBacktest --polls --half-life (2026-10-23, 2018–24 archive, blend at the live k): House 14 → 45 cuts the mid-October blend error 3.56 → 3.43 and November 1 3.54 → 3.43, Governor 5.96 → 5.71 and 5.48 → 5.27; Senate 4.27 → 4.30, so it keeps 14. An August poll is still the best evidence in a sparsely polled House race in October, and the aging shift already moves it with the national ballot." },
+          { name: "POLL_UNDECIDED_ALLOCATION", value: F.POLL_UNDECIDED_ALLOCATION, basis: "calibrated", meaning: "Share of a poll's undecided respondents split between the two candidates in proportion to their shares: margin × (1 + share × min(100 − D% − R%, cap) / (D% + R%)). The leader's lead grows and the order never changes; no direction (incumbent, challenger, party) is assumed for the undecided.", source: "forwardBacktest --horizon-undecided (2026-10-23), blend MAE Senate / Governor / House at 11 days out: raw 4.35 / 5.50 / 4.26, full allocation capped at 10 pts 4.26 / 5.25 / 4.24; at 28 days raw 4.44 / 5.89 / 4.33, capped 4.40 / 5.66 / 4.33." },
+          { name: "POLL_UNDECIDED_CAP", value: F.POLL_UNDECIDED_CAP, basis: "calibrated", meaning: "Most points of the share outside the two candidates treated as undecided. Beyond it the remainder is a third candidate's vote or non-voters and is left out, because results are margins of the total vote (Montana Senate's independent polls near 30%).", source: "Uncapped full allocation scores slightly better overall (Senate 4.15 at 11 days) but hands a three-way race's independent vote to the two party nominees (Montana Senate R+25 → R+31); caps of 7–15 are within 0.05 of each other." },
+          { name: "Full weight / sample", value: "14 d · 3,000", basis: "designed", meaning: "Full-weight days and sample cap of the averaging recipe, shared with the generic ballot.", source: <Code>lib/racePollAverage.ts</Code> },
         ]} />
         <Defs items={[
           { term: "What is ingested", def: "General-election polls naming both nominees, from the polling tables of each race's Wikipedia page. Partisan polls are kept and flagged (D)/(R): dropping or shifting them costs House coverage and accuracy." },
@@ -254,14 +258,14 @@ export default function ForecastMethodology() {
       </Section>
 
       <Section id="uncertainty" kicker="Output" title="Win probability, range and rating"
-        lede={<>A race&rsquo;s error has two parts: a national miss shared by every race through β*, and noise of its own. The Model and the polling average err independently, so blending them narrows the race&rsquo;s own noise; the national part is kept in full because polls miss nationally too.</>}>
+        lede={<>A race&rsquo;s error has two parts: a national miss shared by every race through β*, and noise of its own. The Model and the polling average err independently, so blending them narrows the race&rsquo;s own noise; the national part is kept in full because polls miss nationally too. The split matters more than the total: a race&rsquo;s own probability depends only on σ, but the seat ranges and the control odds depend on how much of σ is shared.</>}>
         <Formula lines={[
           "σ²            = (β* × σ_E)²  +  ((1 − w) × RACE_SIGMA)²  +  (w × POLL_SIGMA)²",
           "P(D wins)     = Φ(−margin / σ)          clamped to 0.5% – 99.5%",
           "80% range     = margin ± 1.2816 × σ",
         ]} />
         <Constants rows={[
-          { name: "RACE_SIGMA", value: hsg(F.RACE_SIGMA), basis: "calibrated", meaning: "Race-level error of the Model alone, beyond the national shock.", source: <>forwardBacktest robust within-year spread now reads {CAL.pooled.map((p) => `${p.office} ${p.withinRsd}`).join(" · ")}, but those values under-cover; the live values cover {CAL.pooled.map((p) => `${p.office} ${pct(p.cover80)}`).join(" · ")} of results inside the 80% range.</> },
+          { name: "RACE_SIGMA", value: hsg(F.RACE_SIGMA), basis: "calibrated", meaning: "Race-level error of the Model alone, beyond the national shock.", source: <>Set from the forward backtest&rsquo;s 80%-coverage table under the live σ_E (the robust within-year spread reads {CAL.pooled.map((p) => `${p.office} ${p.withinRsd}`).join(" · ")}); the live values cover {CAL.pooled.map((p) => `${p.office} ${pct(p.cover80)}`).join(" · ")} of results inside the 80% range. Lowered on 2026-10-23 when NATIONAL_SIGMA_STRUCTURAL took over the national part of the error (they were H 5.3 · S 6.0 · G 9.4).</> },
         ]} />
         <Block label="Rating bands" meta="a band of the projected MARGIN — never of the probability">
           <DataTable align="ll" maxWidth="max-w-md" head={["Rating", "Projected margin"]} rows={[["Tilt", "under 1 pt"], ["Lean", "1 to 5"], ["Likely", "5 to 15"], ["Safe", "15 or more"]]} caption="A projection always names a leader: a race inside ±0.05 reads D+0.0 or R+0.0, never EVEN." />
@@ -324,6 +328,21 @@ export default function ForecastMethodology() {
         <Block label="What polls add" meta="polled races only, blend at the live POLL_K, no aging or house effects">
           <DataTable align="llrrrrr" maxWidth="max-w-4xl" head={["As of", "Office", "Polled / all", "MAE model", "MAE polls", "MAE blend", "Mean w"]} rows={CAL.polls.map((p) => [p.horizon, officeName(p.office), `${p.polled} / ${p.all}`, p.maeModel.toFixed(2), p.maePoll.toFixed(2), <N key="b">{p.maeBlend.toFixed(2)}</N>, p.meanW.toFixed(2)])} />
         </Block>
+        <Block label="By days to the election" meta="each past year replayed the same number of days before its own election · model + polls, as the site runs">
+          {(() => {
+            const days = [...new Set(CAL.horizons.map((h) => h.days))].sort((x, y) => y - x);
+            const today = days.reduce((best, d) => (Math.abs(d - env.daysToElection) < Math.abs(best - env.daysToElection) ? d : best), days[0]);
+            const cell = (d: number, o: "S" | "G" | "H") => {
+              const h = CAL.horizons.find((x) => x.days === d && x.office === o);
+              return h ? <span key={o}>{h.mae.toFixed(2)} · <M v={h.bias} /> · {pct(h.cover80)}</span> : "—";
+            };
+            return (
+              <DataTable align="lrrr" maxWidth="max-w-3xl" head={["Days out", "Senate", "Governor", "House"]}
+                rows={days.map((d) => [d === today ? <strong key="d">{d} · today</strong> : d, cell(d, "S"), cell(d, "G"), cell(d, "H")])}
+                caption={<>Each cell: forecast MAE · mean bias (actual − forecast, R-positive) · share of results inside the 80% range. Every input that changes over a campaign is rebuilt as of that day from the 538 archive: the generic-ballot average (live recipe), E and σ_E (σ_E&rsquo;s drift term scaled by the days left), and the race-poll averages (per-office half-life, aging, house effects as of that day); lean, β*, incumbency and candidate effects come from years before the one scored. Money uses full-cycle receipts at every horizon. The bias of the model alone, before polls, at the row marked today: {(["S", "G", "H"] as const).map((o) => { const h = CAL.horizons.find((x) => x.days === today && x.office === o); return h ? `${officeName(o)} ${signed(h.biasModel, 1)}` : null; }).filter(Boolean).join(" · ")}. Four elections at every horizon, so a bias of ±1.5 is within noise.</>} />
+            );
+          })()}
+        </Block>
         <Block label="By year">
           <DataTable align="rlrrrrr" head={["Year", "Office", "Races", "E used", "MAE", "Bias", "r"]} rows={CAL.byYear.map((y) => [y.year, officeName(y.office), y.n, <M key="e" v={y.E} />, y.mae.toFixed(2), <M key="b" v={y.bias} digits={2} />, y.r.toFixed(2)])}
             caption="House rows exist only where no redraw is on file after that year — a handful of districts in 2018 and 2020. The backtest scores money with full-cycle receipts, a mild optimism against a September snapshot." />
@@ -350,7 +369,7 @@ export default function ForecastMethodology() {
           { term: "House bias", def: `The backtest shows House results running more Republican than predicted in 2022 and 2024 (pooled ${signed(CAL.pooled.find((p) => p.office === "H")?.bias ?? 0, 2)}).` },
           { term: "Governor", def: "The structural model is weakest here (personal brands, cross-party governors), which is why polls carry Governor races fastest. Governor money k and the partial-cycle scale are borrowed from House/Senate, and 15 of the 2026 races have no state filings on file." },
           { term: "House backtest coverage", def: "District presidential data is on 2026 lines only, so 2018 and 2020 contribute a handful of House rows; a wave-year district elasticity cannot be tested." },
-          { term: "Environment history", def: "Five even years identify c, s and σ_E, and the mid-September generic-ballot values are approximate." },
+          { term: "Environment history", def: "Five even years identify c, s and the generic-ballot part of σ_E. The 2018–2024 generic-ballot values are the live recipe over the 538 archive; 2016 is RealClearPolitics' final (the archive starts in 2018), and RCP ran 1–2 pts more Republican than the recipe in 2022 and 2024, so that one row is on a slightly different basis." },
           { term: "Pre-2016 records", def: "Candidate effects start in 2016, so long-tenured incumbents' earlier over-performance is invisible." },
           { term: "Poll freshness", def: "2026 polls are scraped from Wikipedia and need periodic re-scraping; expert ratings and state-legislature track records are not inputs." },
         ]} />

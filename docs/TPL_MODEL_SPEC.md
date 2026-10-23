@@ -424,14 +424,20 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
   against the House popular vote (2016–2024: c ≈ +0.6, s ≈ 0.73 — E is centered
   on the period mean and damped across offices). Polling error is uncertainty,
   not a prediction: `PV_hat = GB + ENV_MISS_SHRINK (0.5) × mean(PV − GB_final)`
-  (mean miss ≈ R+1.3), and `σ_E = |s| × sqrt(sd(miss)² + (horizon × rms(drift))²)`
-  with horizon = days to election / 49. Race term = β* × E_hat. Inputs:
+  (mean miss ≈ R+1.3), and `σ_E = sqrt(NATIONAL_SIGMA_STRUCTURAL² + (|s| × sqrt(sd(miss)² + (horizon × rms(drift))²))²)`
+  with horizon = days to election / 49 and NATIONAL_SIGMA_STRUCTURAL = 2.6 (2026-10-23:
+  the shared error that remains with the House vote known, set so the mid-September
+  σ_E reproduces the backtest's realized spread of yearly Senate biases, 2.97; before
+  that the generic-ballot part alone was σ_E, 1.47 mid-September). Race term = β* × E_hat. Inputs:
   `data-entry/national_environment_history.csv` → `data/nationalEnvironmentHistory.ts`
-  (`node data-entry/build-national-environment.js`); mid-September values are
-  approximate and flagged.
+  (`node data-entry/build-national-environment.js`); since 2026-10-23 the 2018–2024
+  generic-ballot columns are the live recipe over the 538 archive (Sept 15 and election
+  eve), so the miss is measured on the quantity the model shades; 2016 stays on RCP's basis.
 - **Uncertainty** (`raceSigma`, `winProbabilityD`; constants in
-  `FORECAST_CONSTANTS`). `σ_race² = (β* × σ_E)² + RACE_SIGMA[office]²`, RACE_SIGMA =
-  robust within-year spread from the forward backtest (H 5.7 / S 6.6 / G 9.2).
+  `FORECAST_CONSTANTS`). `σ_race² = (β* × σ_E)² + ((1 − w) × RACE_SIGMA[office])² + (w × POLL_SIGMA)²`,
+  RACE_SIGMA from the forward backtest's 80%-coverage table under the live σ_E
+  (H 5.0 / S 5.5 / G 8.5 since 2026-10-23; H 5.3 / S 6.0 / G 9.4 before, when the
+  national part of the error was being absorbed here).
   P(D) = Φ(−margin / σ_race), clamped 0.5–99.5 %; 80 % interval = margin ± 1.28 σ.
   The old logistic (`marginToProbability`) survives only as the harness baseline.
 - **Chambers** (`simulateChamber` / `getChamberSimulations` in `lib/forecast.ts`):

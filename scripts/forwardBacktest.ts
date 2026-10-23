@@ -6,6 +6,13 @@
 //       npx tsx scripts/forwardBacktest.ts --money         (Phase 6: structural imputation of missing receipts vs the old zero)
 //       npx tsx scripts/forwardBacktest.ts --sept-money    (Phase 6: mid-September receipts vs full-cycle receipts; fits PARTIAL_CYCLE_GAP_SCALE)
 //       npx tsx scripts/forwardBacktest.ts --seat-status   (Phase 7: open-seat carryover, freshman effect, House incumbency sweep)
+//       npx tsx scripts/forwardBacktest.ts --env struct --polls --half-life 14   (race-poll recency half-life override for every office)
+//       npx tsx scripts/forwardBacktest.ts --env struct --horizons   (horizon-matched: every past year replayed N days before ITS election)
+//       npx tsx scripts/forwardBacktest.ts --env struct --horizon-ablate     (every factor dropped / varied, horizon-matched, with LOYO)
+//       npx tsx scripts/forwardBacktest.ts --env struct --horizon-pollshift  (uniform vs lean-scaled race-poll shifts, all and competitive races)
+//       npx tsx scripts/forwardBacktest.ts --env struct --horizon-polldump   (per polled race: model, poll avg, nEff, pollsters, sponsors → CSV)
+//       npx tsx scripts/forwardBacktest.ts --env struct --horizon-undecided  (allocate undecided voters in race polls: 0 / half / full)
+//       npx tsx scripts/forwardBacktest.ts --env struct --horizon-pollrules  (max poll age, trust in high-undecided polls)
 //       npx tsx scripts/forwardBacktest.ts --lambda        (forward environment term × λ per office, fitted / pv / struct environments)
 //       npx tsx scripts/forwardBacktest.ts --dump         (per-race predictions CSV in the OS temp dir)
 //       npx tsx scripts/forwardBacktest.ts --env struct --emit   (write data/forecastCalibration.ts — the Calibration tables on /methodology)
@@ -52,7 +59,7 @@ import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { fundraisingData } from "@/data/fundraisingData";
 import { classifyEligibility } from "@/data/raceEligibility";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
-import { computeRacePollAverage, pollAgingShift, pollWeight } from "@/lib/racePollAverage";
+import { computeRacePollAverage, pollAgingShift, pollWeight, allocateUndecided, type RaceAverageRules } from "@/lib/racePollAverage";
 import { genericBallotSeries } from "@/lib/genericBallotAverage";
 import { computeHouseEffects } from "@/lib/pollsterHouseEffects";
 import type { GenericBallotPoll } from "@/data/genericBallotPolls";
@@ -80,6 +87,15 @@ const POLLSTERS = argv.includes("--pollsters");
 const MONEY = argv.includes("--money");
 const SEPT_MONEY = argv.includes("--sept-money");
 const SEAT_STATUS = argv.includes("--seat-status");
+// --half-life N: score every office's race polls with half-life N instead of the live per-office values.
+let halfLifeOverride: number | null = argOf("--half-life") != null ? Number(argOf("--half-life")) : null;
+const HORIZONS = argv.includes("--horizons");
+const HORIZON_ABLATE = argv.includes("--horizon-ablate");
+const HORIZON_POLLSHIFT = argv.includes("--horizon-pollshift");
+const HORIZON_POLLDUMP = argv.includes("--horizon-polldump");
+const HORIZON_UNDECIDED = argv.includes("--horizon-undecided");
+const HORIZON_POLLRULES = argv.includes("--horizon-pollrules");
+const halfLifeOf = (office: "H" | "S" | "G") => halfLifeOverride ?? F.POLL_HALF_LIFE_DAYS[office];
 const NO_PARTISAN = argv.includes("--no-partisan");
 // Shift applied to party/campaign-sponsored polls toward the sponsor's opponent (pts of margin).
 const PARTISAN_SHIFT = Number(argOf("--partisan-shift") ?? 0);
@@ -415,10 +431,11 @@ function structModel(exclude: number): StructModel {
   const sdMiss = Math.sqrt(miss.reduce((t, x) => t + (x - meanMiss) ** 2, 0) / Math.max(1, miss.length - 1));
   return { c, s, meanMiss, sdMiss, sdDrift: Math.sqrt(mean(drift.map((d) => d * d))) };
 }
-// National error on the E scale at the mid-September horizon, without year `exclude`.
+// National error on the E scale at the mid-September horizon, without year `exclude`:
+// the structural shared error (NATIONAL_SIGMA_STRUCTURAL) ⊕ the generic ballot's own error.
 function sigmaE(exclude: number): number {
   const m = structModel(exclude);
-  return Math.abs(m.s) * Math.sqrt(m.sdMiss ** 2 + m.sdDrift ** 2);
+  return Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, Math.abs(m.s) * Math.sqrt(m.sdMiss ** 2 + m.sdDrift ** 2));
 }
 function envEstimate(mode: EnvMode, Y: number): number | null {
   const h = envHistory[Y];
@@ -917,7 +934,7 @@ if (POLLS) {
         const asOf = new Date(`${Y}-${mmdd}T12:00:00Z`);
         for (const x of predsByYear.get(Y)!) {
           if (x.office !== office) continue; all++;
-          const avg = computeRacePollAverage(pollsByRace.get(pollKeyOf(x)) ?? [], asOf);
+          const avg = computeRacePollAverage(pollsByRace.get(pollKeyOf(x)) ?? [], asOf, undefined, undefined, halfLifeOf(office));
           if (!avg) continue;
           rows.push({ office, year: Y, model: predOf(x, E), poll: avg.diff, nEff: avg.nEff, actual: x.actual });
         }
@@ -973,7 +990,7 @@ if (POLLS) {
             const asOf = new Date(`${Y}-${mmdd}T12:00:00Z`);
             for (const x of predsByYear.get(Y)!) {
               if (x.office !== office) continue;
-              const avg = computeRacePollAverage(pollsByRace.get(pollKeyOf(x)) ?? [], asOf, pollAgingShift(series, x.beta, asOf, share));
+              const avg = computeRacePollAverage(pollsByRace.get(pollKeyOf(x)) ?? [], asOf, pollAgingShift(series, x.beta, asOf, share), undefined, halfLifeOf(office));
               if (!avg) continue;
               const w = pollWeight(avg.nEff, office);
               errBlend.push(Math.abs(x.actual - ((1 - w) * predOf(x, E) + w * avg.diff)));
@@ -990,6 +1007,279 @@ if (POLLS) {
   } else console.log("\n(poll aging sweep skipped: run python3 scripts/build-generic-ballot-history.py)");
 
   console.log(`Recommended FORECAST_CONSTANTS.POLL_K by horizon: ${horizons.map(([h]) => `${h}: ${OFFICES.map((o) => `${o} ${chosen[h][o] ?? "—"}`).join(" · ")}`).join("   |   ")}`);
+}
+
+
+// ── Horizon-matched backtest (2026-10-23) ────────────────────────────────────
+// The rest of this harness scores the environment from the mid-September generic ballot. That
+// is the right test for a forecast run in mid-September, but the live forecast moves toward
+// election day, and by then most of the September→November drift is already inside the
+// average. Here every past year is replayed at the SAME number of days before its own election
+// as each horizon in the list (election dates differ: Nov 6 2018, Nov 3 2020, Nov 8 2022, Nov 5
+// 2024), with every time-varying input rebuilt as of that day from the 538 archive:
+//   generic ballot  the live recipe over that year's polls completed by then
+//   E, σ_E          the live rule (struct, leave-one-year-out c / s / miss / drift) at that GB,
+//                   σ_E's drift term scaled by days remaining exactly as getNationalEnvironment
+//   race polls      live recipe: per-office half-life, aging by the GB's movement × β*, the
+//                   current-cycle house effects as of that day, w = min(W_MAX, nEff/(nEff+k))
+//   σ, P(D)         raceSigma's formula with the live RACE_SIGMA / POLL_SIGMA
+// Lean, β*, incumbency and candidate effects are fitted on years ≤ Y−1 and do not depend on the
+// horizon. Money uses full-cycle receipts at every horizon (only a September snapshot exists).
+const ELECTION_DAY: Record<number, string> = { 2018: "2018-11-06", 2020: "2020-11-03", 2022: "2022-11-08", 2024: "2024-11-05" };
+export interface HorizonRow { days: number; office: "S" | "G" | "H"; n: number; polled: number; maeModel: number; mae: number; biasModel: number; bias: number; nationalSd: number; cover80: number; brier: number; calledRight: number; meanW: number; gb: Record<number, number | null>; byYear: Record<number, { n: number; mae: number; bias: number; abs: number[]; res: number[] }>; }
+interface HorizonOpts { drop?: { inc?: boolean; ff?: boolean; env?: boolean; quality?: boolean }; pollShift?: number; pollShiftPerLean?: number; noPolls?: boolean; competitiveOnly?: number; collect?: Record<string, unknown>[]; normalize?: number; undecidedCap?: number; rules?: Partial<Record<"S" | "G" | "H", RaceAverageRules>> }
+const horizonCache: { polls?: Map<string, RacePoll[]>; gb?: Map<number, GenericBallotPoll[]>; he: Map<string, ReturnType<typeof computeHouseEffects>> } = { he: new Map() };
+function horizonBacktest(days: number[], opt: HorizonOpts = {}): HorizonRow[] {
+  const split = (line: string) => { const out: string[] = []; let cur = "", q = false; for (let i = 0; i < line.length; i++) { const ch = line[i]; if (ch === '"') { if (q && line[i + 1] === '"') { cur += '"'; i++; } else q = !q; } else if (ch === "," && !q) { out.push(cur); cur = ""; } else cur += ch; } out.push(cur); return out; };
+  const readCsv = (name: string) => { const ls = fs.readFileSync(path.join(process.cwd(), "data-entry", name), "utf8").split(/\r?\n/).filter((l) => l.trim()); const h = split(ls[0]); return ls.slice(1).map((l) => { const r = split(l); return (k: string) => r[h.indexOf(k)] ?? ""; }); };
+  const pollsByRace = horizonCache.polls ?? new Map<string, RacePoll[]>();
+  if (!horizonCache.polls) for (const c of readCsv("race_polls_history.csv")) {
+    const key = `${c("year")}|${c("office")}|${c("state")}|${c("race")}`;
+    const dem = Number(c("dem")), rep = Number(c("rep"));
+    (pollsByRace.get(key) ?? pollsByRace.set(key, []).get(key)!).push({ pollster: c("pollster"), partisan: (c("partisan") || null) as "D" | "R" | null, startDate: c("start"), endDate: c("end"), sample: c("sample") ? Number(c("sample")) : null, population: c("population") || null, dem, rep, diff: rep - dem });
+  }
+  horizonCache.polls = pollsByRace;
+  const gbByYear = horizonCache.gb ?? new Map<number, GenericBallotPoll[]>();
+  if (!horizonCache.gb) for (const c of readCsv("generic_ballot_polls_history.csv")) {
+    const y = Number(c("year")), dem = Number(c("dem")), rep = Number(c("rep"));
+    (gbByYear.get(y) ?? gbByYear.set(y, []).get(y)!).push({ pollster: c("pollster"), startDate: c("start"), endDate: c("end"), sample: c("sample") ? Number(c("sample")) : null, population: c("population") || null, dem, rep, diff: rep - dem });
+  }
+  horizonCache.gb = gbByYear;
+  const pollKeyOf = (x: Pred) => x.office === "H" ? `${x.year}|H|${x.key.slice(0, 2)}|House ${x.key}` : `${x.year}|${x.office}|${x.key.slice(0, 2)}|${x.key.slice(3)}`;
+  const out: HorizonRow[] = [];
+  type Cell = { res: number; resModel: number; z: number; p: number; won: number; w: number; polled: boolean; year: number; called: boolean };
+  for (const d of days) {
+    const cells: Record<string, Cell[]> = { S: [], G: [], H: [] };
+    const gbAtHorizon: Record<number, number | null> = {};
+    for (const Y of YEARS) {
+      const eday = ELECTION_DAY[Y]; const ps = gbByYear.get(Y); if (!eday || !ps) continue;
+      const asOf = new Date(new Date(`${eday}T12:00:00Z`).getTime() - d * 86400000);
+      const iso = asOf.toISOString().slice(0, 10);
+      const series = genericBallotSeries(ps);
+      const gb = series(iso); gbAtHorizon[Y] = gb;
+      if (gb == null) continue;
+      const m = structModel(Y);
+      const E = m.c + m.s * (gb + F.ENV_MISS_SHRINK * m.meanMiss);
+      const hf = Math.min(1.5, d / F.ENV_DAYS_MID_SEPT_TO_ELECTION);
+      const sigE = Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, Math.abs(m.s) * Math.sqrt(m.sdMiss ** 2 + (hf * m.sdDrift) ** 2));
+      const betaOf = new Map<string, number>(); for (const x of predsByYear.get(Y)!) betaOf.set(pollKeyOf(x), x.beta);
+      // normalize: share of the undecided allocated in proportion to the decided shares (1 = full two-party).
+      const nz = opt.normalize ?? F.POLL_UNDECIDED_ALLOCATION;
+      const ucap = opt.undecidedCap ?? F.POLL_UNDECIDED_CAP;
+      const normed = (ps: RacePoll[]) => ps.map((q) => allocateUndecided(q, nz, ucap)); // house effects are estimated on allocated margins
+      const yearRaces = [...pollsByRace].filter(([k]) => k.startsWith(`${Y}|`)).map(([k, polls]) => ({ polls: normed(polls), shiftFor: pollAgingShift(series, betaOf.get(k) ?? 1, asOf) }));
+      const heKey = `${Y}|${d}|${F.POLL_AGING_SHARE}|${F.HOUSE_EFFECT_K}|${nz}|${ucap}`;
+      const he = F.HOUSE_EFFECTS ? (horizonCache.he.get(heKey) ?? horizonCache.he.set(heKey, computeHouseEffects(yearRaces, asOf)).get(heKey)!) : null;
+      for (const x of predsByYear.get(Y)!) {
+        const model = predOf(x, E, opt.drop ?? {});
+        const avg = opt.noPolls ? null : computeRacePollAverage(pollsByRace.get(pollKeyOf(x)) ?? [], asOf, pollAgingShift(series, x.beta, asOf), he ? he.of : undefined, halfLifeOf(x.office), nz, ucap, opt.rules?.[x.office] ?? {});
+        const w = avg ? pollWeight(avg.nEff, x.office) : 0;
+        // pollShiftPerLean: pts toward R per 10 pts of the seat's R lean (negative in blue seats), lean capped at ±30
+        const leanShift = (opt.pollShiftPerLean ?? 0) * Math.max(-3, Math.min(3, x.lean / 10));
+        const margin = avg ? (1 - w) * model + w * (avg.diff + (opt.pollShift ?? 0) + leanShift) : model;
+        if (opt.competitiveOnly != null && Math.abs(model) > opt.competitiveOnly) continue;
+        if (opt.collect && avg) {
+          const ps = avg.polls;
+          opt.collect.push({ days: d, year: Y, office: x.office, race: x.key, actual: +x.actual.toFixed(2), model: +model.toFixed(2), poll: +avg.diff.toFixed(2), nEff: +avg.nEff.toFixed(3), n: avg.n,
+            nD: ps.filter((q) => q.partisan === "D").length, nR: ps.filter((q) => q.partisan === "R").length, ageMin: Math.round(Math.min(...ps.map((q) => q.ageDays))), ageMean: Math.round(mean(ps.map((q) => q.ageDays))),
+            inc: x.incSign, beta: +x.beta.toFixed(3), sigE: +sigE.toFixed(3) });
+        }
+        const sigma = Math.sqrt((x.beta * sigE) ** 2 + ((1 - w) * F.RACE_SIGMA[x.office]) ** 2 + (w * F.POLL_SIGMA[x.office]) ** 2);
+        const p = Math.max(0.005, Math.min(0.995, Phi(-margin / sigma)));
+        cells[x.office].push({ res: x.actual - margin, resModel: x.actual - model, z: Math.abs(x.actual - margin) / sigma, p, won: x.actual <= 0 ? 1 : 0, w, polled: !!avg, year: Y, called: (margin <= 0) === (x.actual <= 0) });
+      }
+    }
+    for (const office of OFFICES) {
+      const cs = cells[office]; if (cs.length < 3) continue;
+      const years = YEARS.filter((y) => cs.filter((c) => c.year === y).length >= 3);
+      const yearBias = years.map((y) => mean(cs.filter((c) => c.year === y).map((c) => c.res)));
+      out.push({
+        days: d, office, n: cs.length, polled: cs.filter((c) => c.polled).length,
+        maeModel: mean(cs.map((c) => Math.abs(c.resModel))), mae: mean(cs.map((c) => Math.abs(c.res))), biasModel: mean(cs.map((c) => c.resModel)), bias: mean(cs.map((c) => c.res)),
+        nationalSd: years.length > 1 ? sd(yearBias) : 0, cover80: mean(cs.map((c) => (c.z <= 1.2816 ? 1 : 0))),
+        brier: mean(cs.map((c) => (c.p - c.won) ** 2)), calledRight: mean(cs.map((c) => (c.called ? 1 : 0))), meanW: mean(cs.map((c) => c.w)), gb: gbAtHorizon,
+        byYear: Object.fromEntries(years.map((y) => { const yc = cs.filter((c) => c.year === y); return [y, { n: yc.length, mae: mean(yc.map((c) => Math.abs(c.res))), bias: mean(yc.map((c) => c.res)), abs: yc.map((c) => Math.abs(c.res)), res: yc.map((c) => c.res) }]; })),
+      });
+    }
+  }
+  return out;
+}
+// Days before each election the horizon table reports; the live forecast's own distance is added.
+const HORIZON_DAYS = (() => {
+  const base = [98, 84, 70, 56, 49, 42, 35, 28, 21, 14, 7, 1];
+  const live = Math.round((new Date(Date.UTC(2026, 10, 3)).getTime() - Date.now()) / 86400000);
+  return [...new Set([...base, ...(live >= 1 && live <= 120 ? [live] : [])])].sort((a, b) => b - a);
+})();
+if (HORIZONS) {
+  const rows = horizonBacktest(HORIZON_DAYS);
+  console.log("\nHorizon-matched backtest: each year replayed N days before its own election (blend of model and race polls, live constants; bias = actual − forecast, R-positive)");
+  console.log("  days   office    n  polled   MAE model   MAE blend  bias model   bias   yr-bias sd   80% cover   Brier   called   mean w   GB by year");
+  for (const r of rows) console.log(`  ${String(r.days).padStart(4)}   ${LABEL[r.office].padEnd(8)} ${String(r.n).padStart(4)}  ${String(r.polled).padStart(5)}   ${r.maeModel.toFixed(2).padStart(9)}   ${r.mae.toFixed(2).padStart(9)}   ${fmt(r.biasModel, 2).padStart(9)}   ${fmt(r.bias, 2).padStart(6)}   ${r.nationalSd.toFixed(2).padStart(10)}   ${(r.cover80 * 100).toFixed(0).padStart(8)}%   ${r.brier.toFixed(3)}   ${(r.calledRight * 100).toFixed(1).padStart(5)}%   ${r.meanW.toFixed(2).padStart(6)}   ${Object.entries(r.gb).map(([y, v]) => `${y} ${v == null ? "—" : fmt(v, 1)}`).join(" · ")}`);
+}
+
+
+if (HORIZON_ABLATE) {
+  // Every factor dropped or varied, scored horizon-matched (model + polls blended as the site
+  // runs). Constants are mutated in place and restored; per-year cells are kept for LOYO checks.
+  const AB_DAYS = [49, 28, 11];
+  type V = { name: string; opt?: HorizonOpts; set?: () => () => void };
+  const setF = (patch: Record<string, unknown>) => () => { const prev: Record<string, unknown> = {}; for (const [k, v] of Object.entries(patch)) { prev[k] = (F as Record<string, unknown>)[k]; (F as Record<string, unknown>)[k] = v; } return () => { for (const [k, v] of Object.entries(prev)) (F as Record<string, unknown>)[k] = v; }; };
+  const scaled = (o: Record<string, number>, m: number) => Object.fromEntries(Object.entries(o).map(([k, v]) => [k, v * m]));
+  const variants: V[] = [
+    { name: "LIVE" },
+    { name: "no polls (model only)", opt: { noPolls: true } },
+    { name: "drop environment", opt: { drop: { env: true } } },
+    { name: "drop incumbency", opt: { drop: { inc: true } } },
+    { name: "drop fundraising", opt: { drop: { ff: true } } },
+    { name: "drop candidates", opt: { drop: { quality: true } } },
+    { name: "candidates x 0.5", set: () => setF({ QUALITY_WEIGHT: scaled(F.QUALITY_WEIGHT, 0.5) })() },
+    { name: "candidates x 1.5", set: () => setF({ QUALITY_WEIGHT: scaled(F.QUALITY_WEIGHT, 1.5) })() },
+    { name: "GB shading 0", set: setF({ ENV_MISS_SHRINK: 0 }) },
+    { name: "GB shading 1", set: setF({ ENV_MISS_SHRINK: 1 }) },
+    { name: "GB shading 1.5", set: setF({ ENV_MISS_SHRINK: 1.5 }) },
+    { name: "race polls +1 R", opt: { pollShift: 1 } },
+    { name: "race polls +2 R", opt: { pollShift: 2 } },
+    { name: "race polls +3 R", opt: { pollShift: 3 } },
+    { name: "POLL_K x 0.5", set: () => setF({ POLL_K: scaled(F.POLL_K, 0.5) })() },
+    { name: "POLL_K x 2", set: () => setF({ POLL_K: scaled(F.POLL_K, 2) })() },
+    { name: "POLL_K fitted H1 S3 G0.1", set: setF({ POLL_K: { H: 1, S: 3, G: 0.1 } }) },
+    { name: "POLL_W_MAX 0.6", set: setF({ POLL_W_MAX: 0.6 }) },
+    { name: "POLL_W_MAX 0.9", set: setF({ POLL_W_MAX: 0.9 }) },
+    { name: "POLL_W_MAX 1.0", set: setF({ POLL_W_MAX: 1.0 }) },
+    { name: "half-life 14 all", set: () => { halfLifeOverride = 14; return () => { halfLifeOverride = null; }; } },
+    { name: "half-life 45 all", set: () => { halfLifeOverride = 45; return () => { halfLifeOverride = null; }; } },
+    { name: "Senate half-life 30", set: () => setF({ POLL_HALF_LIFE_DAYS: { ...F.POLL_HALF_LIFE_DAYS, S: 30 } })() },
+    { name: "no house effects", set: setF({ HOUSE_EFFECTS: false }) },
+    { name: "no poll aging", set: setF({ POLL_AGING_SHARE: 0 }) },
+    { name: "national sigma struct 0 (old)", set: setF({ NATIONAL_SIGMA_STRUCTURAL: 0 }) },
+    { name: "national sigma struct 3.5", set: setF({ NATIONAL_SIGMA_STRUCTURAL: 3.5 }) },
+  ];
+  const results: { name: string; rows: HorizonRow[] }[] = [];
+  for (const v of variants) {
+    const restore = v.set ? v.set() : null;
+    effectsCache.clear();
+    results.push({ name: v.name, rows: horizonBacktest(AB_DAYS, v.opt) });
+    restore?.();
+    process.stderr.write(`  done ${v.name}\n`);
+  }
+  effectsCache.clear();
+  const live = results[0].rows;
+  const cellOf = (rows: HorizonRow[], d: number, o: string) => rows.find((q) => q.days === d && q.office === o);
+  console.log("\nHorizon-matched ablation: MAE (diff vs live) / bias / 80% cover / Brier, model + polls blended");
+  for (const d of AB_DAYS) {
+    console.log(`\n  ${d} days out`);
+    console.log("  " + "variant".padEnd(32) + OFFICES.map((o) => LABEL[o].padEnd(38)).join(""));
+    for (const r of results) {
+      let line = "  " + r.name.padEnd(32);
+      for (const o of OFFICES) {
+        const x = cellOf(r.rows, d, o), b = cellOf(live, d, o);
+        line += x && b ? `${x.mae.toFixed(2)} (${fmt(x.mae - b.mae, 2)}) ${fmt(x.bias, 1).padStart(5)} ${(x.cover80 * 100).toFixed(0)}% ${x.brier.toFixed(3)}`.padEnd(38) : "-".padEnd(38);
+      }
+      console.log(line);
+    }
+  }
+  console.log("\n  11 days out, MAE by year (Senate / Governor / House)");
+  for (const r of results) {
+    const parts = YEARS.map((y) => `${y} ` + OFFICES.map((o) => { const c = cellOf(r.rows, 11, o)?.byYear[y]; return c ? c.mae.toFixed(2) : " - "; }).join("/"));
+    console.log("  " + r.name.padEnd(32) + parts.join("   "));
+  }
+  const loyo = (names: string[], label: string) => {
+    for (const d of AB_DAYS) {
+      let line = `  ${label.padEnd(10)} @${String(d).padStart(2)}d: `;
+      for (const o of OFFICES) {
+        const cand = results.filter((r) => names.includes(r.name));
+        const errs: number[] = []; const picks: string[] = [];
+        for (const Y of YEARS) {
+          const score = (r: (typeof cand)[number]) => { const x = cellOf(r.rows, d, o); if (!x) return Infinity; const all = YEARS.filter((y) => y !== Y && x.byYear[y]).flatMap((y) => x.byYear[y].abs); return all.length ? mean(all) : Infinity; };
+          const best = cand.reduce((b, r) => (score(r) < score(b) ? r : b), cand[0]);
+          const held = cellOf(best.rows, d, o)?.byYear[Y]; if (!held) continue;
+          errs.push(...held.abs); picks.push(`${Y}:${best.name}`);
+        }
+        line += `${LABEL[o]} ${mean(errs).toFixed(3)} vs live ${cellOf(live, d, o)!.mae.toFixed(3)} [${picks.join(", ")}]   `;
+      }
+      console.log(line);
+    }
+  };
+  console.log("\n  Leave-one-year-out choice among variants (chosen on 3 years, scored on the 4th):");
+  loyo(["LIVE", "race polls +1 R", "race polls +2 R", "race polls +3 R"], "poll shift");
+  loyo(["GB shading 0", "LIVE", "GB shading 1", "GB shading 1.5"], "GB shade");
+  loyo(["LIVE", "POLL_K x 0.5", "POLL_K x 2", "POLL_K fitted H1 S3 G0.1"], "POLL_K");
+  loyo(["LIVE", "half-life 14 all", "half-life 45 all", "Senate half-life 30"], "half-life");
+  loyo(["LIVE", "candidates x 0.5", "candidates x 1.5", "drop candidates"], "candidates");
+}
+
+
+if (HORIZON_POLLSHIFT) {
+  // Is the race-poll miss uniform, or does it grow with the seat's Republican lean (polls too
+  // Democratic in red seats, too Republican in blue ones)? All races, and competitive races only
+  // (|model| ≤ 10), MAE / bias / Brier at three horizons, with per-year MAE at 11 days.
+  const D = [49, 28, 11];
+  const vs: { name: string; opt: HorizonOpts }[] = [];
+  for (const comp of [undefined, 10] as (number | undefined)[]) {
+    const tag = comp == null ? "" : " [|model|≤10]";
+    vs.push({ name: "LIVE" + tag, opt: { competitiveOnly: comp } });
+    for (const u of [1, 2]) vs.push({ name: `uniform +${u}` + tag, opt: { pollShift: u, competitiveOnly: comp } });
+    for (const b of [0.5, 1, 1.5, 2]) vs.push({ name: `per-lean ${b}/10pt` + tag, opt: { pollShiftPerLean: b, competitiveOnly: comp } });
+    vs.push({ name: "uniform +1 & per-lean 1" + tag, opt: { pollShift: 1, pollShiftPerLean: 1, competitiveOnly: comp } });
+  }
+  const res = vs.map((v) => ({ name: v.name, rows: horizonBacktest(D, v.opt) }));
+  for (const d of D) {
+    console.log(`\n  ${d} days out — MAE / bias / Brier / called`);
+    for (const r of res) console.log("  " + r.name.padEnd(36) + OFFICES.map((o) => { const x = r.rows.find((q) => q.days === d && q.office === o); return x ? `${LABEL[o]} n${x.n} ${x.mae.toFixed(2)} ${fmt(x.bias, 1)} ${x.brier.toFixed(3)} ${(x.calledRight * 100).toFixed(1)}%`.padEnd(42) : ""; }).join(""));
+  }
+  console.log("\n  11 days, MAE by year S/G/H");
+  for (const r of res) console.log("  " + r.name.padEnd(36) + YEARS.map((y) => `${y} ` + OFFICES.map((o) => r.rows.find((q) => q.days === 11 && q.office === o)?.byYear[y]?.mae.toFixed(2) ?? " - ").join("/")).join("   "));
+}
+
+
+if (HORIZON_POLLDUMP) {
+  // Per polled race: model, poll average and the evidence behind it, at several horizons — for
+  // studying how much weight a race's polls deserve given how many there are (OS temp dir CSV).
+  const rows: Record<string, unknown>[] = [];
+  horizonBacktest([49, 28, 21, 11, 1], { collect: rows });
+  const file = path.join(os.tmpdir(), "horizon_polls.csv");
+  const cols = Object.keys(rows[0]);
+  fs.writeFileSync(file, [cols.join(","), ...rows.map((r) => cols.map((c) => JSON.stringify(r[c] ?? "")).join(","))].join("\n"));
+  console.log(`\nwrote ${rows.length} polled race-horizon rows to ${file}`);
+}
+
+
+if (HORIZON_UNDECIDED) {
+  // Race polls with many undecided voters compress the leader's margin. Allocate a share of the
+  // undecided in proportion to the decided shares (0 = raw margin; live = POLL_UNDECIDED_ALLOCATION; 1 = two-party).
+  const D = [28, 11];
+  const grid: [number, number][] = [[0, 100], [0.5, 100], [1, 100], [0.5, 15], [0.5, 10], [1, 15], [1, 10], [1, 7]];
+  const res = grid.map(([nz, cap]) => ({ nz: `${nz} cap ${cap}`, rows: horizonBacktest(D, { normalize: nz, undecidedCap: cap }), comp: horizonBacktest(D, { normalize: nz, undecidedCap: cap, competitiveOnly: 10 }) }));
+  for (const d of D) {
+    console.log(`\n  ${d} days out — undecided allocation: MAE / bias / Brier, all races | competitive (|model| ≤ 10)`);
+    for (const r of res) console.log(`  allocate ${String(r.nz).padEnd(12)}` + OFFICES.map((o) => { const x = r.rows.find((q) => q.days === d && q.office === o)!, c = r.comp.find((q) => q.days === d && q.office === o)!; return `${LABEL[o]} ${x.mae.toFixed(3)} ${fmt(x.bias, 2)} ${x.brier.toFixed(3)} | ${c.mae.toFixed(3)} ${fmt(c.bias, 2)} ${c.brier.toFixed(3)}`.padEnd(54); }).join(""));
+    for (const r of res) console.log(`    by year, allocate ${r.nz}: ` + OFFICES.map((o) => `${LABEL[o]} ` + YEARS.map((y) => r.rows.find((q) => q.days === d && q.office === o)?.byYear[y]?.mae.toFixed(2) ?? "-").join("/")).join("   "));
+  }
+}
+
+
+if (HORIZON_POLLRULES) {
+  // Poll-age cutoff and trust in high-undecided polls, on top of the live recipe. Rules apply to
+  // the offices named; the others run live. MAE / bias / Brier, all races and competitive.
+  const D = [28, 11];
+  const all3 = (r: RaceAverageRules) => ({ H: r, S: r, G: r });
+  const vs: { name: string; rules: HorizonOpts["rules"] }[] = [
+    { name: "LIVE", rules: {} },
+    ...[60, 75, 90, 120].map((a) => ({ name: `House max age ${a} d`, rules: { H: { maxAgeDays: a } } })),
+    { name: "all offices max age 90 d", rules: all3({ maxAgeDays: 90 }) },
+    { name: "no allocation above 20% (all)", rules: all3({ noAllocationAbove: 20 }) },
+    { name: "no allocation above 15% (all)", rules: all3({ noAllocationAbove: 15 }) },
+    ...[1, 2, 4].map((p) => ({ name: `decided^${p} weight (all)`, rules: all3({ decidedPower: p }) })),
+    ...[2, 4].map((p) => ({ name: `decided^${p} weight + evidence (all)`, rules: all3({ decidedPower: p, decidedInEvidence: true }) })),
+    { name: "House: decided^2 + evid + no alloc >20", rules: { H: { decidedPower: 2, decidedInEvidence: true, noAllocationAbove: 20 } } },
+    { name: "combo: H age 90 + no alloc >20 (all)", rules: { H: { maxAgeDays: 90, noAllocationAbove: 20 }, S: { noAllocationAbove: 20 }, G: { noAllocationAbove: 20 } } },
+  ];
+  const res = vs.map((v) => ({ name: v.name, rows: horizonBacktest(D, { rules: v.rules }), comp: horizonBacktest(D, { rules: v.rules, competitiveOnly: 10 }) }));
+  for (const d of D) {
+    console.log(`\n  ${d} days out — MAE / bias / Brier, all races | competitive (|model| ≤ 10)`);
+    for (const r of res) console.log("  " + r.name.padEnd(40) + OFFICES.map((o) => { const x = r.rows.find((q) => q.days === d && q.office === o)!, c = r.comp.find((q) => q.days === d && q.office === o)!; return `${LABEL[o][0]} ${x.mae.toFixed(3)} ${fmt(x.bias, 2)} ${x.brier.toFixed(3)} | ${c.mae.toFixed(3)}`.padEnd(36); }).join(""));
+    for (const r of res) console.log("    by year " + r.name.padEnd(40) + OFFICES.map((o) => `${LABEL[o][0]} ` + YEARS.map((y) => r.rows.find((q) => q.days === d && q.office === o)?.byYear[y]?.mae.toFixed(2) ?? "-").join("/")).join("  "));
+  }
 }
 
 if (EMIT) {
@@ -1061,7 +1351,7 @@ if (EMIT) {
           const asOf = new Date(`${Y}-${mmdd}T12:00:00Z`);
           for (const x of predsByYear.get(Y)!) {
             if (x.office !== office) continue; all++;
-            const avg = computeRacePollAverage(pollsByRace.get(pollKeyOf(x)) ?? [], asOf); if (!avg) continue;
+            const avg = computeRacePollAverage(pollsByRace.get(pollKeyOf(x)) ?? [], asOf, undefined, undefined, halfLifeOf(office)); if (!avg) continue;
             const w = pollWeight(avg.nEff, office), model = predOf(x, E);
             eM.push(Math.abs(x.actual - model)); eP.push(Math.abs(x.actual - avg.diff)); eB.push(Math.abs(x.actual - ((1 - w) * model + w * avg.diff))); ws.push(w);
           }
@@ -1075,6 +1365,7 @@ if (EMIT) {
     generatedAt: new Date().toISOString().slice(0, 10), years: YEARS,
     environment: { c: r2(st.c), s: r2(st.s), meanMiss: r2(st.meanMiss), sdMiss: r2(st.sdMiss), sdDrift: r2(st.sdDrift), sigmaEMidSept: r2(sigmaE(0)) },
     byYear, pooled, calibration, ablation, polls,
+    horizons: horizonBacktest(HORIZON_DAYS).map((r) => ({ days: r.days, office: r.office, n: r.n, polled: r.polled, maeModel: r2(r.maeModel), mae: r2(r.mae), biasModel: r2(r.biasModel), bias: r2(r.bias), nationalSd: r2(r.nationalSd), cover80: r3(r.cover80), brier: r3(r.brier), calledRight: r3(r.calledRight), meanW: r2(r.meanW) })),
   };
   const file = path.join(process.cwd(), "data", "forecastCalibration.ts");
   fs.writeFileSync(file, `// GENERATED by \`npx tsx scripts/forwardBacktest.ts --env struct --emit\` — do not edit by hand.\n// The forward backtest behind the Calibration section of /methodology: every eligible Senate / Governor race\n// (and House races on stable lines) predicted as of mid-September from a fit on years ≤ Y−1, under the live\n// constants. Re-run after any change to the model or its data so the page keeps describing the model as it is.\nexport const FORECAST_CALIBRATION = ${JSON.stringify(out, null, 2)} as const;\n`);
@@ -1152,7 +1443,7 @@ if (POLLSTERS) {
             let polls = pollsByRace.get(pollKeyOf(x)) ?? [];
             // a rating weight rides on the sample term (weight ∝ √sample), normalised so no multiplier exceeds 1
             if (v.lambda) { const lam = v.lambda; polls = polls.map((p) => { const q = { ...p, sample: Math.min(p.sample ?? 800, 3000) * Math.exp(-lam * ((rating(p)?.score ?? 0) + 1.5)) ** 2 }; ratingIdOf.set(q, ratingIdOf.get(p)!); return q; }); }
-            const avg = computeRacePollAverage(polls, asOf, undefined, (p) => (v.histHouse ? v.histHouse * (rating(p)?.house ?? 0) : 0) + (he ? he.of(p) : 0));
+            const avg = computeRacePollAverage(polls, asOf, undefined, (p) => (v.histHouse ? v.histHouse * (rating(p)?.house ?? 0) : 0) + (he ? he.of(p) : 0), halfLifeOf(office));
             if (!avg) continue;
             const w = pollWeight(avg.nEff, office);
             errPoll.push(Math.abs(x.actual - avg.diff)); errBlend.push(Math.abs(x.actual - ((1 - w) * predOf(x, E) + w * avg.diff)));

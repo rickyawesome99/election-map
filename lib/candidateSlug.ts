@@ -6,9 +6,22 @@ const SHARED_NAMES: Record<string, { abbr: string; state: string }[]> = {
   "Mike Rogers": [{ abbr: "MI", state: "Michigan" }],
 };
 
+/** One person on file under more than one spelling (a nickname in an old result, the full ballot
+ *  name in the current race). Every spelling maps to the name the page uses, so the records share
+ *  one page and every link lands there, even if a re-scraped source brings the old spelling back. */
+export const SAME_PERSON: Record<string, string> = {
+  "Nick Begich": "Nicholas Begich III", // AK-01: 2024 results file him as Nick Begich
+};
+
+/** The name a candidate's page goes by: the SAME_PERSON spelling, or the name itself. */
+export function canonicalCandidateName(name: string): string {
+  return SAME_PERSON[name] ?? name;
+}
+
 /** The candidate page slug for a name. With the race's state, a person who shares their name with
  *  another candidate (SHARED_NAMES) gets their own slug: "mike-rogers-mi". */
 export function candidateSlug(name: string, state?: string | null): string {
+  name = canonicalCandidateName(name);
   const base = name
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")

@@ -25,46 +25,46 @@ export const nationalEnvironmentHistory: NationalEnvironmentYear[] = [
     "approvalFinal": 7.8,
     "presidentParty": "D",
     "housePv": 1.1,
-    "notes": "gb_final and approval_net_final from data/popVoteData.ts; mid-September values are APPROXIMATE from memory of the RCP averages around Sept 15 — verify against the RCP/538 archives before trusting the mapped-environment numbers"
+    "notes": "gb_final (RCP final) and approval_net_final from data/popVoteData.ts; the 538 archive has no 2016 generic-ballot polls, so this row stays on RCP's basis (RCP ran 1-2 pts more Republican than the live recipe in 2022/2024, 0.2-0.6 in 2018/2020); mid-September value approximate from memory of the RCP average"
   },
   {
     "year": 2018,
-    "gbMidSept": -7.5,
-    "gbFinal": -7.3,
+    "gbMidSept": -7.85,
+    "gbFinal": -6.7,
     "approvalMidSept": -10.5,
     "approvalFinal": -9.7,
     "presidentParty": "R",
     "housePv": -8.6,
-    "notes": "approximate mid-Sept values; see 2016 note"
+    "notes": "gb_mid_sept and gb_final = the live generic-ballot recipe (lib/genericBallotAverage.ts: one poll per pollster, 14-day half-life, sqrt-sample) over the 538 archive (data-entry/generic_ballot_polls_history.csv) as of Sept 15 (39 pollsters) and election eve 2018-11-05 (44 pollsters), replacing RCP's finals and the from-memory mid-September values on 2026-10-23 so the miss is measured on the quantity the model shades; approval values unchanged (approximate mid-Sept, final from popVoteData)"
   },
   {
     "year": 2020,
-    "gbMidSept": -6.5,
-    "gbFinal": -6.8,
+    "gbMidSept": -6.38,
+    "gbFinal": -6.88,
     "approvalMidSept": -8,
     "approvalFinal": -6.6,
     "presidentParty": "R",
     "housePv": -3,
-    "notes": "approximate mid-Sept values; see 2016 note"
+    "notes": "gb_mid_sept and gb_final = the live generic-ballot recipe (lib/genericBallotAverage.ts: one poll per pollster, 14-day half-life, sqrt-sample) over the 538 archive (data-entry/generic_ballot_polls_history.csv) as of Sept 15 (37 pollsters) and election eve 2020-11-02 (42 pollsters), replacing RCP's finals and the from-memory mid-September values on 2026-10-23 so the miss is measured on the quantity the model shades; approval values unchanged (approximate mid-Sept, final from popVoteData)"
   },
   {
     "year": 2022,
-    "gbMidSept": -0.5,
-    "gbFinal": 2.5,
+    "gbMidSept": -1.84,
+    "gbFinal": 0.3,
     "approvalMidSept": -11,
     "approvalFinal": -12.5,
     "presidentParty": "D",
     "housePv": 2.7,
-    "notes": "approximate mid-Sept values (RCP flipped to a small D lead in mid-September 2022); see 2016 note"
+    "notes": "gb_mid_sept and gb_final = the live generic-ballot recipe (lib/genericBallotAverage.ts: one poll per pollster, 14-day half-life, sqrt-sample) over the 538 archive (data-entry/generic_ballot_polls_history.csv) as of Sept 15 (65 pollsters) and election eve 2022-11-07 (75 pollsters), replacing RCP's finals and the from-memory mid-September values on 2026-10-23 so the miss is measured on the quantity the model shades; approval values unchanged (approximate mid-Sept, final from popVoteData)"
   },
   {
     "year": 2024,
-    "gbMidSept": -1,
-    "gbFinal": 0.3,
+    "gbMidSept": -1.76,
+    "gbFinal": -0.39,
     "approvalMidSept": -15,
     "approvalFinal": -15.2,
     "presidentParty": "D",
     "housePv": 2.6,
-    "notes": "approximate mid-Sept values; see 2016 note"
+    "notes": "gb_mid_sept and gb_final = the live generic-ballot recipe (lib/genericBallotAverage.ts: one poll per pollster, 14-day half-life, sqrt-sample) over the 538 archive (data-entry/generic_ballot_polls_history.csv) as of Sept 15 (53 pollsters) and election eve 2024-11-04 (58 pollsters), replacing RCP's finals and the from-memory mid-September values on 2026-10-23 so the miss is measured on the quantity the model shades; approval values unchanged (approximate mid-Sept, final from popVoteData)"
   }
 ];

@@ -1,19 +1,34 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type { ChamberSummaryData } from "@/lib/stateLegChamberSummary";
-import { CHAMBER_OUTCOMES, chamberOutcome, OUTCOME_LABEL, outcomeColor, type ChamberOutcome } from "@/lib/chamberOutcome";
+import { chamberOutcome, OUTCOME_LABEL, outcomeColor, type ChamberOutcome } from "@/lib/chamberOutcome";
 
 export const fmtChamberMargin = (m: number) => (Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
 const marginColor = (m: number) => (Math.abs(m) < 0.05 ? "var(--app-text-primary)" : m > 0 ? "var(--party-rep)" : "var(--party-dem)");
 export const fmtProb = (p: number | null) => (p == null ? "—" : p < 0.005 ? "<1%" : p > 0.995 ? ">99%" : `${Math.round(p * 100)}%`);
 const fmtVotes = (v: number) => (v >= 1e6 ? `${(v / 1e6).toFixed(2)}M` : v >= 1e4 ? `${Math.round(v / 1e3)}k` : Math.round(v).toLocaleString("en-US"));
 
-/** Horizontal seat bar: D from the left, R from the right, other/vacant between; notch at the majority line. */
-export function SeatBar({ dem, rep, total }: { dem: number; rep: number; total: number }) {
+const DEM = "var(--party-dem)";
+const REP = "var(--party-rep)";
+const IND = "var(--party-ind)";
+const INK = "var(--app-text-primary)";
+const MUTED = "var(--app-text-muted)";
+const FAINT = "var(--app-text-very-muted)";
+const BORDER = "var(--app-border)";
+
+const SEATS_SIZE = "clamp(1.9rem, 5.2vw, 2.75rem)";
+const ADJ_SIZE = "clamp(1.3rem, 3.4vw, 1.7rem)";
+const RAW_SIZE = "clamp(1.05rem, 2.6vw, 1.3rem)";
+const ARROW_SIZE = "clamp(1.4rem, 3.8vw, 2rem)";
+
+/** Horizontal seat bar: D from the left, R from the right, other/vacant between; notch at the halfway line. */
+export function SeatBar({ dem, rep, oth = 0, total, h }: { dem: number; rep: number; oth?: number; total: number; h?: number }) {
   const pct = (n: number) => `${Math.max(0, Math.min(100, (n / total) * 100))}%`;
   return (
-    <div className="relative mt-1.5 h-[7px] sm:mt-2 sm:h-2 overflow-hidden rounded-[2px]" style={{ background: "var(--party-ind-subtle)" }}>
-      <div className="absolute inset-y-0 left-0" style={{ width: pct(dem), background: "var(--party-dem)" }} />
-      <div className="absolute inset-y-0 right-0" style={{ width: pct(rep), background: "var(--party-rep)" }} />
+    <div className={`relative overflow-hidden rounded-[2px] ${h ? "" : "mt-1.5 h-[7px] sm:mt-2 sm:h-2"}`} style={{ height: h, background: "var(--party-ind-subtle)" }}>
+      <div className="absolute inset-y-0 left-0" style={{ width: pct(dem), background: DEM }} />
+      {oth > 0 && <div className="absolute inset-y-0" style={{ left: pct(dem), width: pct(oth), background: IND }} />}
+      <div className="absolute inset-y-0 right-0" style={{ width: pct(rep), background: REP }} />
       <div className="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2" style={{ background: "var(--app-bg)" }} />
     </div>
   );
@@ -28,136 +43,155 @@ export function netSeats(now: { dem: number; rep: number }, base: { dem: number;
   return null;
 }
 
-export function SeatLine({ dem, rep, oth, net, size = "text-[1.35rem] sm:text-[1.65rem]" }: { dem: React.ReactNode; rep: React.ReactNode; oth?: number; net?: { party: "D" | "R"; seats: number } | null; size?: string }) {
+function Mini({ children, color = FAINT }: { children: ReactNode; color?: string }) {
+  return <div className="text-[10px] font-bold uppercase tracking-wider sm:text-[11px]" style={{ color }}>{children}</div>;
+}
+
+function Head({ children }: { children: ReactNode }) {
+  return <div className="mb-2.5 text-sm font-bold uppercase tracking-wider">{children}</div>;
+}
+
+function Split({ dem, rep, oth = 0, muted = false }: { dem: number; rep: number; oth?: number; muted?: boolean }) {
   return (
-    <div className={`${size} font-extrabold tabular-nums leading-none`}>
-      <span style={{ color: "var(--party-dem)" }}>D {dem}</span>
-      <span style={{ color: "var(--app-text-very-muted)" }}> · </span>
-      <span style={{ color: "var(--party-rep)" }}>R {rep}</span>
-      {oth ? <><span style={{ color: "var(--app-text-very-muted)" }}> · </span><span style={{ color: "var(--party-ind)" }}>I {oth}</span></> : null}
-      {net ? <><span style={{ color: "var(--app-text-very-muted)" }}> · </span><span style={{ color: net.party === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>Net +{net.seats} {net.party}</span></> : null}
-    </div>
+    <span className="whitespace-nowrap font-extrabold leading-none tabular-nums" style={{ fontSize: SEATS_SIZE, letterSpacing: "-0.02em", opacity: muted ? 0.75 : 1 }}>
+      <span style={{ color: DEM }}>{dem}</span><span style={{ color: FAINT }}>–</span><span style={{ color: REP }}>{rep}</span>
+      {oth > 0 && <><span style={{ color: FAINT }}>–</span><span style={{ color: IND }}>{oth}</span></>}
+    </span>
   );
 }
 
-function StatusTag({ o }: { o: ChamberOutcome }) {
-  return <span className="normal-case tracking-normal font-semibold" style={{ color: outcomeColor(o) ?? "var(--app-text-muted)" }}>{OUTCOME_LABEL[o]}</span>;
+const Arrow = ({ size }: { size: string }) => <span className="px-1.5 font-normal sm:px-2.5" style={{ color: FAINT, fontSize: size }}>→</span>;
+
+/** The majority status at the end of a bar row: what the chamber is now, what the projection makes it. */
+function Status({ o, faded = false }: { o: ChamberOutcome | null; faded?: boolean }) {
+  if (!o) return <span />;
+  return <span className="whitespace-nowrap text-xs font-bold sm:text-sm" style={{ color: outcomeColor(o) ?? INK, opacity: faded ? 0.75 : 1 }}>{OUTCOME_LABEL[o]}</span>;
 }
 
-/** The chance of each majority status after the election, D side to R side; "No majority" only where it can happen. */
-function OutcomeOdds({ outcomes, supermajority }: { outcomes: Record<ChamberOutcome, number>; supermajority: number | null }) {
-  const shown = CHAMBER_OUTCOMES.filter((x) => (x !== "none" || outcomes.none > 0) && (supermajority != null || (x !== "dSuper" && x !== "rSuper")));
+/** One margin line, old → new: adjusted in party colour, raw in grey. */
+function MarginLine({ label, from, to, size, colored }: { label: string; from: number | null | undefined; to: number | null | undefined; size: string; colored: boolean }) {
   return (
-    <div className="mt-2.5 grid gap-x-3 gap-y-1 text-xs tabular-nums" style={{ gridTemplateColumns: `repeat(${shown.length}, minmax(0, 1fr))` }}>
-      {shown.map((x) => (
-        <div key={x} className="min-w-0">
-          <div className="truncate text-[10px] uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{OUTCOME_LABEL[x].replace("Supermajority", "Super.")}</div>
-          <div className="font-bold" style={{ color: outcomes[x] >= 0.005 ? outcomeColor(x) ?? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{fmtProb(outcomes[x])}</div>
-        </div>
-      ))}
-    </div>
+    <>
+      <Mini>{label}</Mini>
+      <div className="flex items-baseline whitespace-nowrap leading-none tabular-nums" style={{ fontSize: size, fontWeight: colored ? 800 : 700, color: colored ? undefined : MUTED }}>
+        {from != null && <span style={colored ? { color: marginColor(from), opacity: to != null ? 0.75 : 1 } : undefined}>{fmtChamberMargin(from)}</span>}
+        {from != null && to != null && <Arrow size={size} />}
+        {to != null && <span style={colored ? { color: marginColor(to) } : undefined}>{fmtChamberMargin(to)}</span>}
+      </div>
+    </>
   );
 }
 
-/** The chamber's headline numbers: seats now, the 2026 projection, the corrected chamber margin, the projected popular vote, then the facts row. */
+/** The chamber's headline: seats now → the 2026 projection with a bar and majority status for each,
+ *  the vote margin (last election → 2026 projected, adjusted and raw), then the facts row. */
 export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryData; electionYear: number }) {
   const { seats, totalSeats, projection, margin, popularVote, upcoming, fieldStats, mapInfo, calendar, currentEra } = s;
-  const heading = (label: React.ReactNode) => (
-    <div className="text-[10px] sm:text-[11px] uppercase tracking-wider font-bold pb-1.5 mb-2.5" style={{ color: "var(--app-text-very-muted)", borderBottom: "1px solid var(--app-border)" }}>{label}</div>
-  );
-  const barTotal = totalSeats ?? seats?.total ?? null;
-  const projTotal = projection?.totalSeats ?? barTotal;
-  const majority = projection?.majority ?? (barTotal ? Math.floor(barTotal / 2) + 1 : null);
+  const total = totalSeats ?? seats?.total ?? null;
+  const projTotal = projection?.totalSeats ?? total ?? 1;
+  const majority = projection?.majority ?? (total ? Math.floor(total / 2) + 1 : null);
   const supermajority = projection?.supermajority ?? mapInfo?.supermajoritySeats ?? null;
+  const vacant = seats && total && total > seats.total ? total - seats.total : 0;
   const nowStatus = seats && majority != null ? chamberOutcome(seats.dem, seats.rep, majority, supermajority) : null;
-  const stat = (label: string, value: React.ReactNode, sub?: React.ReactNode) => (
+  // Each seat's projected winner, summed: the count the chamber map shows. The range and the
+  // control odds come from the simulation.
+  const fav = projection?.favored;
+  const projStatus = fav && majority != null ? chamberOutcome(fav.dem, fav.rep, majority, supermajority) : null;
+  const net = seats && fav ? netSeats(fav, seats) : null;
+  const projLead: "D" | "R" | null = fav ? (fav.dem > fav.rep ? "D" : fav.rep > fav.dem ? "R" : null) : null;
+  const pLead = projection && projLead ? (projLead === "D" ? projection.pDemControl : projection.pRepControl) : null;
+  const pSuperLead = projection && projLead ? (projLead === "D" ? projection.pDemSuper : projection.pRepSuper) : null;
+  const leadColor = projLead === "D" ? DEM : REP;
+  const frequency = mapInfo?.electionFrequency ?? calendar?.frequency ?? null;
+  const asOf = seats ? ("asOf" in seats ? `as of ${new Date(`${seats.asOf}-15`).toLocaleDateString("en-US", { month: "short", year: "numeric" })}` : `after the ${seats.year} election`) : null;
+
+  const stat = (label: string, value: ReactNode, sub: ReactNode) => (
     <div className="min-w-0">
-      <div className="text-[10px] sm:text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-very-muted)" }}>{label}</div>
-      <div className="mt-0.5 text-base font-bold tabular-nums leading-tight" style={{ color: "var(--app-text-primary)" }}>{value}</div>
-      {sub && <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{sub}</div>}
+      <Mini>{label}</Mini>
+      <div className="mt-1 font-bold leading-tight tabular-nums" style={{ fontSize: "clamp(1.1rem, 2.6vw, 1.35rem)" }}>{value}</div>
+      {sub && <div className="mt-0.5 text-xs" style={{ color: FAINT }}>{sub}</div>}
     </div>
   );
 
-  return (
-    <div>
-      <div className="grid gap-x-10 gap-y-6 md:grid-cols-2">
-        {seats && (
-          <section>
-            {heading(<span className="flex items-baseline justify-between gap-2">Current{nowStatus && <StatusTag o={nowStatus} />}</span>)}
-            <SeatLine dem={seats.dem} rep={seats.rep} oth={seats.oth} />
-            {barTotal && <SeatBar dem={seats.dem} rep={seats.rep} total={Math.max(barTotal, seats.total)} />}
-            <div className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-              {"asOf" in seats ? `as of ${new Date(`${seats.asOf}-15`).toLocaleDateString("en-US", { month: "long", year: "numeric" })}` : `after the ${seats.year} election`}{barTotal && barTotal > seats.total ? ` · ${barTotal - seats.total} vacant` : ""}{projection?.majority ? ` · ${projection.majority} for a majority` : ""}
-            </div>
-          </section>
-        )}
-        {projection && projTotal && (
-          <section>
-            {heading(<span className="flex items-baseline justify-between gap-2">{`${electionYear} projection`}{majority != null && <StatusTag o={chamberOutcome(projection.favored.dem, projection.favored.rep, majority, supermajority)} />}</span>)}
-            {/* Each seat's projected winner, summed: the count the chamber map shows. The range and the
-                control odds below come from the simulation. */}
-            <SeatLine dem={projection.favored.dem} rep={projection.favored.rep} oth={projection.favored.oth} net={seats ? netSeats(projection.favored, seats) : null} />
-            <SeatBar dem={projection.favored.dem} rep={projection.favored.rep} total={projTotal} />
-            <div className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-              {projection.pDemControl == null ? `${projection.unprojected} seats unprojected` : (
-                <>80% range D {projection.lo80}–{projection.hi80} · <span style={{ color: "var(--app-text-muted)" }}>P(D control) {fmtProb(projection.pDemControl)}</span></>
-              )}
-            </div>
-            {projection.outcomes && <OutcomeOdds outcomes={projection.outcomes} supermajority={supermajority} />}
-          </section>
-        )}
-        {margin && (
-          <section>
-            {heading(`Chamber margin · ${margin.year}`)}
-            <div className="text-[1.35rem] sm:text-[1.65rem] font-extrabold tabular-nums leading-none">
-              <span className="text-sm font-semibold" style={{ color: "var(--app-text-very-muted)" }}>raw </span>
-              <span style={{ color: "var(--app-text-muted)" }}>{fmtChamberMargin(margin.raw)}</span>
-              {margin.corrected != null && <>
-                <span style={{ color: "var(--app-text-very-muted)" }}> → </span>
-                <span style={{ color: marginColor(margin.corrected) }}>{fmtChamberMargin(margin.corrected)}</span>
-              </>}
-            </div>
-            <div className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-              Corrected fills {margin.imputed} uncontested seat{margin.imputed === 1 ? "" : "s"} with the presidential vote ·{" "}
-              <Link href="/methodology/state-tpl" className="underline underline-offset-2 hover:opacity-80">Methodology</Link>
-            </div>
-          </section>
-        )}
-        {popularVote && (
-          <section>
-            {heading(`${electionYear} projected vote`)}
-            <div className="text-[1.35rem] sm:text-[1.65rem] font-extrabold tabular-nums leading-none">
-              <span className="text-sm font-semibold" style={{ color: "var(--app-text-very-muted)" }}>raw </span>
-              <span style={{ color: "var(--app-text-muted)" }}>{fmtChamberMargin(popularVote.raw)}</span>
-              {popularVote.adjusted != null && <>
-                <span style={{ color: "var(--app-text-very-muted)" }}> → </span>
-                <span style={{ color: marginColor(popularVote.adjusted) }}>{fmtChamberMargin(popularVote.adjusted)}</span>
-              </>}
-            </div>
-            <div className="mt-2 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
-              <span style={{ color: "var(--party-dem)" }}>D {fmtVotes(popularVote.dem)}</span> · <span style={{ color: "var(--party-rep)" }}>R {fmtVotes(popularVote.rep)}</span> · {fmtVotes(popularVote.votes)} votes
-            </div>
-            <div className="mt-1 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-              {popularVote.imputed > 0
-                ? <>Adjusted imputes {popularVote.imputed} seat{popularVote.imputed === 1 ? "" : "s"} without both parties as contested</>
-                : <>Every seat has both parties on the ballot</>}
-              {popularVote.uncounted > 0 && <> · {popularVote.uncounted} unopposed seat{popularVote.uncounted === 1 ? "" : "s"} with no count in the raw</>}
-              {popularVote.multiVote && <> · multi-member districts: voters cast more than one vote</>}
-              {" · "}<Link href="/methodology/state-leg#popular-vote" className="underline underline-offset-2 hover:opacity-80">Methodology</Link>
-            </div>
-          </section>
-        )}
-      </div>
+  // Each imputed count said once, with the one methodology link.
+  const notes: string[] = [];
+  if (margin?.imputed) notes.push(`${margin.year}: ${margin.imputed} uncontested seat${margin.imputed === 1 ? "" : "s"} filled with the presidential vote`);
+  if (popularVote?.imputed) notes.push(`${electionYear}: ${popularVote.imputed} one-party seat${popularVote.imputed === 1 ? "" : "s"} imputed as contested`);
+  if (popularVote?.uncounted) notes.push(`${popularVote.uncounted} unopposed seat${popularVote.uncounted === 1 ? "" : "s"} with no count in the raw`);
+  if (popularVote?.multiVote) notes.push("multi-member districts: voters cast more than one vote");
 
-      <div className="mt-6 pt-3 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-3" style={{ borderTop: "1px solid var(--app-border)" }}>
-        {stat("Seats", totalSeats ?? "—", mapInfo?.electionFrequency ?? (calendar?.frequency ?? undefined))}
-        {stat(
-          `Up in ${electionYear}`,
-          upcoming ? `${upcoming.seatsUp}${upcoming.totalSeats ? ` of ${upcoming.totalSeats}` : ""}` : "none",
-          upcoming ? (upcoming.wholeChamber ? "whole chamber" : upcoming.parity ? `${upcoming.parity}-numbered districts` : `${upcoming.districtsUp} of ${upcoming.totalDistricts} districts`) : "sitting this cycle out",
+  return (
+    <div className="flex flex-col gap-7">
+      <section className="grid gap-x-10 gap-y-6 pt-3 md:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]" style={{ borderTop: `2px solid ${INK}` }}>
+        <div className="min-w-0">
+          <Head>{fav ? <>Now <span style={{ color: FAINT }}>→</span> {electionYear} projection</> : "Current"}</Head>
+          {/* Arrow, projected count and net gain wrap as one unit: on a big chamber (NH's 400) the
+              whole projection drops below the current count instead of stranding the net gain. */}
+          <div className="flex flex-wrap items-baseline gap-y-1">
+            {seats && <Split dem={seats.dem} rep={seats.rep} oth={seats.oth} muted={!!fav} />}
+            {fav && (
+              <span className="flex items-baseline whitespace-nowrap">
+                {seats && <Arrow size={ARROW_SIZE} />}
+                <Split dem={fav.dem} rep={fav.rep} oth={fav.oth} />
+                {net && <span className="ml-3 font-bold tabular-nums" style={{ fontSize: "clamp(0.95rem, 2.4vw, 1.2rem)", color: net.party === "D" ? DEM : REP }}>+{net.seats} {net.party}</span>}
+              </span>
+            )}
+          </div>
+          <div className="mt-3 grid items-center gap-x-3 gap-y-1.5" style={{ gridTemplateColumns: "2.5rem minmax(0,1fr) auto" }}>
+            {seats && total && <>
+              <Mini>Now</Mini>
+              <div style={{ opacity: fav ? 0.55 : 1 }}><SeatBar dem={seats.dem} rep={seats.rep} oth={seats.oth} total={Math.max(total, seats.total)} h={fav ? 8 : 14} /></div>
+              <Status o={nowStatus} faded={!!fav} />
+            </>}
+            {fav && <>
+              <Mini color={INK}>{electionYear}</Mini>
+              <SeatBar dem={fav.dem} rep={fav.rep} oth={fav.oth} total={projTotal} h={14} />
+              <Status o={projStatus} />
+            </>}
+          </div>
+          <div className="mt-2.5 flex flex-col gap-0.5">
+            <div className="text-xs tabular-nums" style={{ color: FAINT }}>{[asOf, vacant ? `${vacant} vacant` : null, majority != null ? `${majority} for a majority` : null].filter(Boolean).join(" · ")}</div>
+            {projection && (projection.pDemControl == null
+              ? <div className="text-xs" style={{ color: FAINT }}>{projection.unprojected} seats unprojected, so no control odds</div>
+              : (
+                <div className="text-sm tabular-nums" style={{ color: MUTED }}>
+                  {projLead && pLead != null && <>P({projLead} control) <b style={{ color: leadColor }}>{fmtProb(pLead)}</b></>}
+                  {projLead && pSuperLead != null && pSuperLead >= 0.01 && supermajority && <> · supermajority <b style={{ color: leadColor }}>{fmtProb(pSuperLead)}</b></>}
+                  {projection.hi80 > projection.lo80 && <span style={{ color: FAINT }}> · 80% range D {projection.lo80}–{projection.hi80}</span>}
+                </div>
+              ))}
+          </div>
+        </div>
+        {(margin || popularVote) && (
+          <div className="min-w-0">
+            <Head>Vote margin <span className="font-semibold normal-case tracking-normal" style={{ color: FAINT }}>{[margin?.year, popularVote ? `${electionYear} proj.` : null].filter(Boolean).join(" → ")}</span></Head>
+            <div className="grid items-baseline gap-x-3 gap-y-2.5" style={{ gridTemplateColumns: "4.25rem auto" }}>
+              <MarginLine label="Adjusted" from={margin?.corrected} to={popularVote?.adjusted} size={ADJ_SIZE} colored />
+              <MarginLine label="Raw" from={margin?.raw} to={popularVote?.raw} size={RAW_SIZE} colored={false} />
+            </div>
+            {popularVote && (
+              <div className="mt-2.5 text-xs tabular-nums" style={{ color: FAINT }}>
+                {electionYear}: <span style={{ color: DEM }}>D {fmtVotes(popularVote.dem)}</span> · <span style={{ color: REP }}>R {fmtVotes(popularVote.rep)}</span> · {fmtVotes(popularVote.votes)} votes
+              </div>
+            )}
+          </div>
         )}
-        {fieldStats && stat(`${electionYear} field`, `${fieldStats.contested} of ${fieldStats.districts} contested`, `${fieldStats.districts - fieldStats.contested} without both parties · ${fieldStats.open} open seats`)}
-        {stat("Current map", currentEra?.enactedDate ? `enacted ${currentEra.enactedDate}` : mapInfo?.firstCycle ? `first used ${mapInfo.firstCycle}` : "—", mapInfo?.source ?? currentEra?.source)}
+      </section>
+
+      <div>
+        <div className="grid grid-cols-2 gap-x-8 gap-y-4 pt-4 sm:grid-cols-3" style={{ borderTop: `1px solid ${BORDER}` }}>
+          {stat(
+            `Up in ${electionYear}`,
+            upcoming ? (upcoming.wholeChamber ? `All ${upcoming.seatsUp}` : `${upcoming.seatsUp} of ${upcoming.totalSeats ?? total}`) : "None",
+            upcoming ? (upcoming.wholeChamber ? "whole chamber" : upcoming.parity ? `${upcoming.parity}-numbered districts` : frequency) : frequency,
+          )}
+          {stat("Contested", fieldStats ? `${fieldStats.contested} of ${fieldStats.districts}` : "—", fieldStats ? `${fieldStats.districts - fieldStats.contested} one-party · ${fieldStats.open} open` : null)}
+          {stat("Map first used", mapInfo?.firstCycle ?? "—", mapInfo?.source ?? currentEra?.source ?? null)}
+        </div>
+        {notes.length > 0 && (
+          <div className="mt-2 text-xs leading-relaxed" style={{ color: FAINT }}>
+            {notes.join(" · ")} · <Link prefetch={false} href="/methodology/state-leg#popular-vote" className="underline decoration-dotted underline-offset-2 hover:decoration-solid">How the adjustment works</Link>
+          </div>
+        )}
       </div>
     </div>
   );

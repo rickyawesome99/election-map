@@ -203,11 +203,27 @@ export const STATE_RACE_INPUTS: Record<string, RaceModelInputs[]> = {
 export const FORECAST_CONSTANTS = {
   ENV_MISS_SHRINK: 0.5,
   ENV_DAYS_MID_SEPT_TO_ELECTION: 49,
-  RACE_SIGMA: { H: 5.3, S: 6.0, G: 9.4 } as Record<"H" | "S" | "G", number>, // forwardBacktest 2026-09-16 (env=struct + quality, robust within-year)
-  // 2026-09-20, after the residual money basis: the robust within-year spread fell to
-  // H 5.0 / S 4.9 / G 9.0, but those values under-cover (80% interval: S 74% · H 77%) and the
-  // harness scores with full-cycle receipts, a mild optimism. The values above cover
-  // S 83% · G 81% · H 79%, so they stay.
+  // ── Shared national error (2026-10-23 review) ───────────────────────────────────────
+  // σ_E² = NATIONAL_SIGMA_STRUCTURAL² + (|s| × √(sd(miss)² + (horizon × rms(drift))²))²
+  // The second term is the generic ballot's own error (poll miss + September→November drift)
+  // carried onto the E scale; before 2026-10-23 it was the whole of σ_E (1.47 mid-September,
+  // 1.13 twelve days out). The first term is the shared error that remains with the House
+  // vote known exactly: the lean window, the E↔vote conversion and whatever moves a whole
+  // office in one year. scripts/forwardBacktest.ts measures the realized spread of the yearly
+  // biases of the mid-September forecast (its "national-sd"): Senate 2.97 (four years of 33
+  // races each), Governor 3.91, House 4.74 (the House value rests on 6 and 5 races in 2018
+  // and 2020). 2.6 makes the mid-September σ_E reproduce the Senate figure, √(2.6² + 1.47²) =
+  // 2.99; the other two offices would ask for more, not less. Independent race noise averages
+  // out over a chamber and shared noise does not, so this is the constant that sets the width
+  // of the seat ranges and the control odds; RACE_SIGMA below was lowered in the same change so
+  // that race-level 80% coverage stays at 80%.
+  NATIONAL_SIGMA_STRUCTURAL: 2.6,
+  // Race-level error of the Model alone (pts), beyond the national shock. Set from the
+  // forward backtest's 80%-coverage table under the live σ_E (2026-10-23: House 5.0 → 80%,
+  // Senate 5.5 → 80%, Governor 8.1 → 78% / 9.0 → 82%; the robust within-year spread reads
+  // H 4.9 / S 4.9 / G 8.1). Before the shared error was widened the values were H 5.3 / S 6.0 /
+  // G 9.4, which had been absorbing the national part.
+  RACE_SIGMA: { H: 5.0, S: 5.5, G: 8.5 } as Record<"H" | "S" | "G", number>,
   // Multiplier on the nominees' ridge track-record effects (effect_R − effect_D) in the
   // forward model, per office. forwardBacktest --quality (2026-09-16, leakage-free
   // sweep): House error bottoms near 0.75, Senate at 1.0, Governor keeps improving past
@@ -269,6 +285,34 @@ export const FORECAST_CONSTANTS = {
   // 3.57 → 3.65; Senate keeps its fitted 3 (one poll 25%). Partisan polls kept: dropping
   // or shifting them costs House coverage and error.
   POLL_K: { H: 2, S: 3, G: 2 } as Record<"H" | "S" | "G", number>,
+  // Recency half-life of a race poll's weight (days, after 14 days at full weight). The
+  // generic-ballot recipe's 14 was inherited unfitted; the 2026-10-23 review swept it on the
+  // 2018–24 archive (blend MAE at the live k and cap, mid-October / November 1): House 14 →
+  // 3.56 / 3.54, 45 → 3.43 / 3.43, 60 → 3.41 / 3.43; Governor 5.96 / 5.48 → 5.71 / 5.27 at 45;
+  // Senate flat-to-worse (4.27 → 4.30). In sparsely polled House and Governor races an August
+  // poll is still the best evidence in October, and the aging shift already moves it with the
+  // national trend; in the densely polled Senate the fresh polls carry the signal. nEff (the
+  // sum of recency weights, hence w) rises with the half-life, so this also raises the poll
+  // share of old-poll races.
+  POLL_HALF_LIFE_DAYS: { H: 45, S: 14, G: 45 } as Record<"H" | "S" | "G", number>,
+  // Undecided voters in race polls (2026-10-23). A raw margin understates the leader when many
+  // respondents choose neither candidate (Utah Debate Commission House polls: 25–30% not choosing).
+  // Up to POLL_UNDECIDED_CAP points of the share outside the two candidates count as undecided,
+  // and POLL_UNDECIDED_ALLOCATION of those are split between the two in proportion to their
+  // shares:  margin × (1 + ALLOCATION × min(100 − D − R, CAP) / (D + R)).  Beyond the cap the
+  // remainder is a third candidate's vote or non-voters (Montana Senate's independent polls ~30%)
+  // and is left out, since results are margins of the total vote. Proportional: no direction
+  // (incumbent, challenger, party) is assumed for the undecided.
+  // scripts/forwardBacktest.ts --horizon-undecided, blend MAE Senate / Governor / House:
+  //   11 days out: raw 4.352 / 5.504 / 4.264 · half uncapped 4.240 / 5.331 / 4.244 · full uncapped
+  //   4.151 / 5.220 / 4.244 · full cap 15 4.225 / 5.196 / 4.245 · full cap 10 4.264 / 5.246 / 4.244
+  //   28 days out: raw 4.442 / 5.889 / 4.331 · half uncapped 4.368 / 5.743 / 4.338 · full uncapped
+  //   4.398 / 5.681 / 4.362 · full cap 15 4.387 / 5.611 / 4.343 · full cap 10 4.397 / 5.659 / 4.332
+  // Full allocation capped at 10 beats raw for Senate and Governor at both horizons, is neutral
+  // for the House, and limits the damage in three-way races (Montana Senate R+25 → R+29 instead of
+  // R+31 uncapped at full allocation); cap 15 scores marginally better and hands out more.
+  POLL_UNDECIDED_ALLOCATION: 1,
+  POLL_UNDECIDED_CAP: 10,
   // Ceiling on w: however many polls a race has, the structural model keeps at least
   // 1 − POLL_W_MAX of the projection. User decision 2026-10-09: the polls of 2016/18/20/24
   // missed in the same direction across the whole field, which house effects (relative to

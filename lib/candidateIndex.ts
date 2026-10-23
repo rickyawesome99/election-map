@@ -1,7 +1,7 @@
 import { senateNoElection, senateHoldovers, governorNoElection, electionYear, presPastResults, type NoElectionEntry } from "@/data/forecastData";
 import { forecastsFor, type ForecastedRace } from "@/lib/forecast";
 import { popVoteData } from "@/data/popVoteData";
-import { candidateSlug } from "./candidateSlug";
+import { candidateSlug, canonicalCandidateName } from "./candidateSlug";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -395,6 +395,7 @@ function buildIndex(): Map<string, CandidatePage> {
 
   // Group by name (exact match — intentional; slightly different names get separate pages), or by
   // name and state for the few people who share a name with another candidate (lib/candidateSlug.ts).
+  // People on file under two spellings (SAME_PERSON) share a page under the canonical one.
   const byName = new Map<string, { name: string; entries: RawEntry[] }>(); // keyed by page slug
   for (const entry of allRaw) {
     const key = candidateSlug(entry.name, entry.state);
@@ -402,7 +403,7 @@ function buildIndex(): Map<string, CandidatePage> {
     if (existing) {
       existing.entries.push(entry);
     } else {
-      byName.set(key, { name: entry.name, entries: [entry] });
+      byName.set(key, { name: canonicalCandidateName(entry.name), entries: [entry] });
     }
   }
 

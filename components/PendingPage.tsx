@@ -131,16 +131,16 @@ function OverviewSkeleton() {
   return (
     <>
       <Hero>
-        <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
-          <div className="min-w-0 space-y-3"><Title>2026 Outlook</Title><Sk className="h-4 w-72 max-w-full" /><LoadingText /></div>
-          <div className="flex flex-col space-y-2 sm:items-end sm:pt-3"><Sk className="h-3 w-24" /><Sk className="h-12 w-40" /><Sk className="h-3 w-32" /></div>
-        </div>
-        <div className="mt-6 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}><StatStrip cols={4} mobileCols={2} /></div>
+        <div className="min-w-0 space-y-3"><Title>2026 Outlook</Title><Sk className="h-4 w-72 max-w-full" /><LoadingText /></div>
+
+        <div className="mt-7 grid grid-cols-6 gap-2 sm:gap-3 lg:grid-cols-5">{Array.from({ length: 5 }, (_, i) => <Sk key={i} className={`h-[92px] w-full rounded-md sm:h-[108px] ${i < 2 ? "col-span-3" : "col-span-2"} lg:col-span-1`} />)}</div>
       </Hero>
       <Body>
         <SectionHead className="mt-8" right={<Sk className="h-2.5 w-24" />} />
         <UsMap className="mt-8" />
         <div className="mt-6 pt-3" style={{ borderTop: "1px solid var(--app-border)" }}><Legend /></div>
+        <SectionHead className="mt-8" right={<Sk className="h-2.5 w-24" />} />
+        <Sk className="mt-4 h-[230px] w-full rounded-[3px] sm:h-[245px]" />
         <SectionHead className="mt-10" />
         <div className="grid gap-x-8 sm:grid-cols-2">{Array.from({ length: 6 }, (_, i) => <RaceCard key={i} names={false} />)}</div>
       </Body>
@@ -358,17 +358,17 @@ function ChamberSkeleton() {
     <>
       <Hero className="pb-0">
         <LoadingText>Loading chamber…</LoadingText>
-        <Pills className="mt-3" widths={["w-24", "w-32"]} />
+        <Pills className="mt-3" widths={["w-24"]} />
         <div className="mt-4 space-y-3"><Sk className="h-14 w-4/5 max-w-md sm:h-16" /><Sk className="h-14 w-1/2 max-w-xs sm:h-16" /></div>
         <div className="mt-6 flex gap-6 pb-3" style={RULE}><Sk className="h-4 w-20" /><Sk className="h-4 w-20" /></div>
       </Hero>
       <Body>
-        <div className="mt-6 grid gap-8 sm:grid-cols-2">
-          {[0, 1].map((i) => (
-            <div key={i} className="space-y-3"><Sk className="h-2.5 w-24" /><Sk className="h-8 w-48" /><Sk className="h-2.5 w-full rounded-full" /><Sk className="h-3 w-2/3" /></div>
-          ))}
+        {/* ChamberSummary: seats now → 2026 with two stacked bars | vote margin, then the 3-stat facts row. */}
+        <div className="mt-6 grid gap-x-10 gap-y-6 pt-3 md:grid-cols-[1.45fr_1fr]" style={{ borderTop: "2px solid var(--app-text-primary)" }}>
+          <div className="space-y-3"><Sk className="h-3.5 w-44" /><Sk className="h-10 w-64 max-w-full" /><Sk className="h-2 w-full rounded-full" /><Sk className="h-3.5 w-full rounded-full" /><Sk className="h-3 w-2/3" /></div>
+          <div className="space-y-3"><Sk className="h-3.5 w-36" /><Sk className="h-7 w-52 max-w-full" /><Sk className="h-5 w-44 max-w-full" /><Sk className="h-3 w-40" /></div>
         </div>
-        <div className="mt-8 py-5" style={{ borderTop: "1px solid var(--app-border)" }}><StatStrip cols={4} mobileCols={2} big="h-5" /></div>
+        <div className="mt-7 py-5" style={{ borderTop: "1px solid var(--app-border)" }}><StatStrip cols={3} mobileCols={2} big="h-5" /></div>
         <Pills widths={["w-28", "w-20", "w-24", "w-24"]} />
         <div className="mt-6 grid gap-6 md:grid-cols-[3fr_2fr]">
           <Sk className="h-64 sm:h-80" />

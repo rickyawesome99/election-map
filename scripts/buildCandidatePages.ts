@@ -13,6 +13,7 @@ import { gzipSync } from "node:zlib";
 import { allCandidateSlugs, buildCandidatePayload } from "@/lib/candidatePageBuild";
 import type { CandidatePageShard } from "@/lib/candidatePagePayload";
 import { getStateLegCandidateSlugAliases } from "@/lib/stateLegCandidateIndex";
+import { SAME_PERSON } from "@/lib/candidateSlug";
 
 const DIR = path.join(process.cwd(), "data", "generated", "candidate-pages");
 const t0 = performance.now();
@@ -41,6 +42,10 @@ for (const [name, s] of shards) {
 // Alternate spellings merged into one person (lib/stateLegCandidateIndex.ts): the route redirects
 // these to the page's own slug, so a link built from any spelling on file still lands on the page.
 const aliases = Object.fromEntries(Object.entries(getStateLegCandidateSlugAliases()).filter(([alias, slug]) => alias !== slug && shards.get(slug.slice(-2).toUpperCase())?.[slug] && !shards.get(alias.slice(-2).toUpperCase())?.[alias]));
+// Federal people on file under two spellings (lib/candidateSlug.ts SAME_PERSON): the old
+// spelling's slug redirects to the page too.
+const slugOf = (n: string) => n.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+for (const [alias, name] of Object.entries(SAME_PERSON)) if (shards.get("federal")?.[slugOf(name)]) aliases[slugOf(alias)] = slugOf(name);
 fs.writeFileSync(path.join(DIR, "aliases.json.gz"), gzipSync(JSON.stringify(aliases), { level: 9 }));
 console.log(`Candidate slug aliases: ${Object.keys(aliases).length}`);
 const biggest = [...shards].map(([n, s]) => [n, JSON.stringify(s).length] as const).sort((a, b) => b[1] - a[1])[0];

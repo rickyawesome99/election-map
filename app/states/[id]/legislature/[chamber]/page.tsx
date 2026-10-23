@@ -9,7 +9,7 @@ import { chamberName, chamberShortLabel, chamberSummary } from "@/lib/stateLegCh
 import LegislativeAtlas from "@/components/atlas/LegislativeAtlas";
 import ChamberSummary from "@/components/atlas/ChamberSummary";
 import StateSwitcher from "@/components/StateSwitcher";
-import { PILL, StatePill } from "@/components/RaceHeroPills";
+import { StatePill } from "@/components/RaceHeroPills";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 
 const CHAMBERS: Chamber[] = ["house", "senate"];
@@ -46,10 +46,9 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
   if (s.roster.length === 0) notFound();
   const entries = stateLegData[state.name] ?? [];
 
-  // Control pill, as the race pages' held pill: the party holding the most seats now (Nebraska's
-  // nonpartisan members counted by caucus). An even split shows as tied.
+  // The party holding the most seats now (Nebraska's nonpartisan members counted by caucus) tints
+  // the header. No held pill: the seat line right below says it.
   const holder = s.seats ? (s.seats.dem > s.seats.rep ? "D" : s.seats.rep > s.seats.dem ? "R" : null) : null;
-  const controlLabel = holder === "D" ? "Democratic-held" : holder === "R" ? "Republican-held" : s.seats ? "Tied" : null;
 
   const tab = (c: Chamber, active: boolean) => (
     <Link
@@ -68,9 +67,6 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
         <div className={`${PAGE_CONTAINER} pt-6`}>
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <StatePill name={state.name} abbr={state.abbr} />
-            {controlLabel && (
-              <span className={PILL} style={holder ? { background: holder === "D" ? "var(--party-dem)" : "var(--party-rep)", color: "#fff" } : { background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>{controlLabel}</span>
-            )}
             <div className="ml-auto">
               <StateSwitcher id={state.id} chamber={chamber} />
             </div>

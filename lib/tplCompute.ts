@@ -24,7 +24,7 @@ import { countySenateData } from "@/data/countySenateData";
 import { countyGovernorData } from "@/data/countyGovernorData";
 import { countyHouseData, type CountyYearResult } from "@/data/countyHouseData";
 import { computeGenericBallotAverage, genericBallotSeries } from "@/lib/genericBallotAverage";
-import { getRacePollAverage, pollAgingShift, pollWeight, racePollKey, type RacePollAverage } from "@/lib/racePollAverage";
+import { getRacePollAverage, pollAgingShift, pollWeight, racePollKey, type RacePollAverage, allocateUndecided } from "@/lib/racePollAverage";
 import { computeHouseEffects, type HouseEffects } from "@/lib/pollsterHouseEffects";
 import { racePolls } from "@/data/racePolls";
 import { FIPS_TO_STATE } from "@/lib/fips";
@@ -1154,7 +1154,7 @@ export function racePollingFor(race: { id: string; state: string; raceType: stri
   const aging = pollAgingShift(liveGenericBallotSeries(), getTplFit().beta[stateAbbr]?.shrunk ?? 1, asOf);
   // …and read net of their pollster's lean relative to the field this cycle.
   const house = F.HOUSE_EFFECTS ? liveHouseEffects(asOf).of : undefined;
-  const avg = getRacePollAverage(office, stateAbbr, racePollLabel(race), asOf, aging, house);
+  const avg = getRacePollAverage(office, stateAbbr, racePollLabel(race), asOf, aging, house, F.POLL_HALF_LIFE_DAYS[office]);
   return { avg, weight: avg ? pollWeight(avg.nEff, office) : 0, key };
 }
 
@@ -1165,7 +1165,7 @@ export function liveHouseEffects(asOf: Date = forecastNow()): HouseEffects {
   let effects = houseEffectsCache.get(day);
   if (!effects) {
     const series = liveGenericBallotSeries(), beta = getTplFit().beta;
-    const races = Object.entries(racePolls).map(([key, polls]) => ({ polls, shiftFor: pollAgingShift(series, beta[key.split(":")[1]]?.shrunk ?? 1, asOf) }));
+    const races = Object.entries(racePolls).map(([key, polls]) => ({ polls: polls.map((p) => allocateUndecided(p)), shiftFor: pollAgingShift(series, beta[key.split(":")[1]]?.shrunk ?? 1, asOf) }));
     effects = computeHouseEffects(races, asOf);
     houseEffectsCache.set(day, effects);
   }
@@ -1296,8 +1296,10 @@ export function raceMoneyTerm(race: ProjectedMarginInput): RaceMoneyTerm {
 //
 //   PV_hat  = GB_now + ENV_MISS_SHRINK × mean(miss)
 //   E_hat   = c + s × PV_hat
-//   σ_E     = |s| × sqrt(sd(miss)² + (horizon × sd(drift))²)
+//   σ_E     = sqrt( NATIONAL_SIGMA_STRUCTURAL² + (|s| × sqrt(sd(miss)² + (horizon × sd(drift))²))² )
 //   race environment term = β*(state) × E_hat
+// The structural part of σ_E (2026-10-23) is the shared error the forecast carries even with
+// the House vote known — see the constant's comment in data/tplModelData.ts.
 
 export const ELECTION_DATE = new Date(Date.UTC(2026, 10, 3));
 
@@ -1351,7 +1353,7 @@ export function getNationalEnvironment(asOf: Date = forecastNow()): NationalEnvi
   const daysToElection = Math.max(0, (ELECTION_DATE.getTime() - asOf.getTime()) / 86400000);
   const horizon = Math.min(1.5, daysToElection / F.ENV_DAYS_MID_SEPT_TO_ELECTION);
   const sigmaPv = Math.sqrt(m.sdMiss ** 2 + (horizon * m.sdDrift) ** 2);
-  const env = { gb, pvHat, eHat: m.c + m.s * pvHat, sigmaE: Math.abs(m.s) * sigmaPv, daysToElection, horizon };
+  const env = { gb, pvHat, eHat: m.c + m.s * pvHat, sigmaE: Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, Math.abs(m.s) * sigmaPv), daysToElection, horizon };
   nationalEnvironmentCache.set(day, env);
   return env;
 }
