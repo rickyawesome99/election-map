@@ -9,10 +9,10 @@ import { usePendingNav } from "@/lib/navPending";
 // view does not download them for links the reader may never click; they prefetch on hover instead.
 const TABS: { key: string; label: string; href?: string; prefetch?: false }[] = [
   { key: "overview",         label: "Overview" },
+  { key: "model",            label: "TPL", prefetch: false },
   { key: "forecast",         label: "Forecast" },
   { key: "legislatures",     label: "Legislatures", prefetch: false },
   { key: "historical",       label: "Historical" },
-  { key: "model",            label: "TPL", prefetch: false },
   { key: "analysis",         label: "Analysis",        href: "/analysis" },
   { key: "district-finder",  label: "District Finder" },
 ];

@@ -13,6 +13,7 @@
 //       npx tsx scripts/forwardBacktest.ts --env struct --horizon-polldump   (per polled race: model, poll avg, nEff, pollsters, sponsors → CSV)
 //       npx tsx scripts/forwardBacktest.ts --env struct --horizon-undecided  (allocate undecided voters in race polls: 0 / half / full)
 //       npx tsx scripts/forwardBacktest.ts --env struct --horizon-pollrules  (max poll age, trust in high-undecided polls)
+//       npx tsx scripts/forwardBacktest.ts --env struct --horizon-compinc    (extra House incumbency in competitive seats)
 //       npx tsx scripts/forwardBacktest.ts --lambda        (forward environment term × λ per office, fitted / pv / struct environments)
 //       npx tsx scripts/forwardBacktest.ts --dump         (per-race predictions CSV in the OS temp dir)
 //       npx tsx scripts/forwardBacktest.ts --env struct --emit   (write data/forecastCalibration.ts — the Calibration tables on /methodology)
@@ -95,6 +96,7 @@ const HORIZON_POLLSHIFT = argv.includes("--horizon-pollshift");
 const HORIZON_POLLDUMP = argv.includes("--horizon-polldump");
 const HORIZON_UNDECIDED = argv.includes("--horizon-undecided");
 const HORIZON_POLLRULES = argv.includes("--horizon-pollrules");
+const HORIZON_COMPINC = argv.includes("--horizon-compinc");
 const halfLifeOf = (office: "H" | "S" | "G") => halfLifeOverride ?? F.POLL_HALF_LIFE_DAYS[office];
 const NO_PARTISAN = argv.includes("--no-partisan");
 // Shift applied to party/campaign-sponsored polls toward the sponsor's opponent (pts of margin).
@@ -465,8 +467,12 @@ const sgOf = (x: Pred, E: number) => structuralGap(moneyModelAsOf(x.year)[x.offi
 const ffOf = (x: Pred, E: number) =>
   moneyVariant === "zero" ? 0 : moneyVariant === "slope-only" ? structuralFf(x, E, true) : moneyVariant === "structural" ? structuralFf(x, E)
   : moneyPts(x.office, x.gap, sgOf(x, E));
+// Competitive-seat incumbency (FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY, House): extra pts toward a
+// House incumbent, full at an even pre-incumbency margin and fading to 0 at ±compIncWidth.
+let compIncK = F.COMPETITIVE_INCUMBENCY.H, compIncWidth = F.COMPETITIVE_INCUMBENCY_WIDTH; // live values; --horizon-compinc sweeps them
+const compInc = (x: Pred, E: number) => (x.office !== "H" || compIncK === 0 || x.incSign === 0 ? 0 : x.incSign * compIncK * Math.max(0, 1 - Math.abs(x.lean + x.beta * E) / compIncWidth));
 const predOf = (x: Pred, E: number, drop: { inc?: boolean; ff?: boolean; env?: boolean; quality?: boolean } = {}, qw: number | null = null) =>
-  x.lean + (drop.env ? 0 : x.beta * E) + (drop.inc ? 0 : x.inc) + (drop.ff ? 0 : ffOf(x, E)) + (drop.quality ? 0 : (qw ?? qwOf(x.office)) * x.quality);
+  x.lean + (drop.env ? 0 : x.beta * E) + (drop.inc ? 0 : x.inc + compInc(x, E)) + (drop.ff ? 0 : ffOf(x, E)) + (drop.quality ? 0 : (qw ?? qwOf(x.office)) * x.quality);
 function score(preds: Pred[], E: number, drop: { inc?: boolean; ff?: boolean; env?: boolean; quality?: boolean } = {}): Score | null {
   if (preds.length < 3) return null;
   const p = preds.map((x) => predOf(x, E, drop));
@@ -1077,7 +1083,7 @@ function horizonBacktest(days: number[], opt: HorizonOpts = {}): HorizonRow[] {
         // pollShiftPerLean: pts toward R per 10 pts of the seat's R lean (negative in blue seats), lean capped at ±30
         const leanShift = (opt.pollShiftPerLean ?? 0) * Math.max(-3, Math.min(3, x.lean / 10));
         const margin = avg ? (1 - w) * model + w * (avg.diff + (opt.pollShift ?? 0) + leanShift) : model;
-        if (opt.competitiveOnly != null && Math.abs(model) > opt.competitiveOnly) continue;
+        if (opt.competitiveOnly != null && Math.abs(model - compInc(x, E)) > opt.competitiveOnly) continue; // same race set whatever the experiment
         if (opt.collect && avg) {
           const ps = avg.polls;
           opt.collect.push({ days: d, year: Y, office: x.office, race: x.key, actual: +x.actual.toFixed(2), model: +model.toFixed(2), poll: +avg.diff.toFixed(2), nEff: +avg.nEff.toFixed(3), n: avg.n,
@@ -1279,6 +1285,28 @@ if (HORIZON_POLLRULES) {
     console.log(`\n  ${d} days out — MAE / bias / Brier, all races | competitive (|model| ≤ 10)`);
     for (const r of res) console.log("  " + r.name.padEnd(40) + OFFICES.map((o) => { const x = r.rows.find((q) => q.days === d && q.office === o)!, c = r.comp.find((q) => q.days === d && q.office === o)!; return `${LABEL[o][0]} ${x.mae.toFixed(3)} ${fmt(x.bias, 2)} ${x.brier.toFixed(3)} | ${c.mae.toFixed(3)}`.padEnd(36); }).join(""));
     for (const r of res) console.log("    by year " + r.name.padEnd(40) + OFFICES.map((o) => `${LABEL[o][0]} ` + YEARS.map((y) => r.rows.find((q) => q.days === d && q.office === o)?.byYear[y]?.mae.toFixed(2) ?? "-").join("/")).join("  "));
+  }
+}
+
+
+if (HORIZON_COMPINC) {
+  // House incumbents in competitive seats beat the model on both sides in 2022 and 2024. Extra
+  // incumbency K, full at an even seat and fading to 0 at ±width, scored horizon-matched (model +
+  // polls) and model-only; leave-one-year-out choice of K over the House years with enough races.
+  const D = [49, 28, 11];
+  const grid: [number, number][] = [[0, 10], [1, 10], [2, 10], [3, 10], [4, 10], [2, 15], [3, 15], [2, 6], [3, 6]];
+  const res = grid.map(([k, wd]) => { compIncK = k; compIncWidth = wd; const r = { k, wd, blend: horizonBacktest(D, {}), comp: horizonBacktest(D, { competitiveOnly: 6 }), model: horizonBacktest(D, { noPolls: true, competitiveOnly: 6 }) }; return r; });
+  compIncK = F.COMPETITIVE_INCUMBENCY.H; compIncWidth = F.COMPETITIVE_INCUMBENCY_WIDTH;
+  for (const d of D) {
+    console.log(`\n  ${d} days out — House: all races MAE / bias | close (|model| ≤ 6) MAE / called right / Brier | close, model only MAE / called`);
+    for (const r of res) {
+      const a = r.blend.find((q) => q.days === d && q.office === "H")!, c = r.comp.find((q) => q.days === d && q.office === "H")!, m = r.model.find((q) => q.days === d && q.office === "H")!;
+      console.log(`  K ${String(r.k).padEnd(2)} width ${String(r.wd).padEnd(3)}  ${a.mae.toFixed(3)} ${fmt(a.bias, 2)} | n${c.n} ${c.mae.toFixed(3)} ${(c.calledRight * 100).toFixed(1)}% ${c.brier.toFixed(3)} | ${m.mae.toFixed(3)} ${(m.calledRight * 100).toFixed(1)}%   by year close ${[2022, 2024].map((y) => `${y} ${c.byYear[y]?.mae.toFixed(2) ?? "-"}`).join(" ")}`);
+    }
+    // LOYO over 2022/2024 (the only House years with many races): pick (K, width) on one, score the other
+    const pick = (y: number) => res.reduce((b, r) => { const s = r.comp.find((q) => q.days === d && q.office === "H")!.byYear[y]?.mae ?? Infinity; const sb = b.comp.find((q) => q.days === d && q.office === "H")!.byYear[y]?.mae ?? Infinity; return s < sb ? r : b; });
+    const loyo = [2022, 2024].map((Y) => { const other = Y === 2022 ? 2024 : 2022; const b = pick(other); const held = b.comp.find((q) => q.days === d && q.office === "H")!.byYear[Y]; const live = res[0].comp.find((q) => q.days === d && q.office === "H")!.byYear[Y]; return `${Y}: chose K ${b.k} w ${b.wd} on ${other} → close MAE ${held?.mae.toFixed(2)} vs live ${live?.mae.toFixed(2)}`; });
+    console.log("    LOYO " + loyo.join("   "));
   }
 }
 

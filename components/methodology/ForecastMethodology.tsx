@@ -9,7 +9,7 @@ import { ALIGNED_INDEPENDENTS } from "@/data/raceEligibility";
 import { forecastsFor, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
 import {
   getTplFit, getEnvironmentModel, getNationalEnvironment, getWarMoneyModel, incumbentAdvantage, liveHouseEffects,
-  calculateStateTpl, calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, raceMoneyTerm, candidateQuality,
+  calculateStateTpl, calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, raceIncumbencyPts, raceMoneyTerm, candidateQuality,
   computeCandidateEffects, FF_K, FF_MAX, WAR_LAMBDA, WAR_RECENCY_DECAY, WAR_RECENCY_DECAY_STATEWIDE,
 } from "@/lib/tplCompute";
 import { alignedParty } from "@/data/raceEligibility";
@@ -24,7 +24,7 @@ const hsg = (o: Record<"H" | "S" | "G", number>, fmt: (v: number) => string = St
 // type-check fail when a constant is added without being documented here.
 const DOCUMENTED_IN = {
   ENV_MISS_SHRINK: "environment", ENV_DAYS_MID_SEPT_TO_ELECTION: "environment", NATIONAL_SIGMA_STRUCTURAL: "environment",
-  APPOINTED_INCUMBENCY_SHARE: "incumbency",
+  APPOINTED_INCUMBENCY_SHARE: "incumbency", COMPETITIVE_INCUMBENCY: "incumbency", COMPETITIVE_INCUMBENCY_WIDTH: "incumbency",
   MONEY_BASIS: "fundraising", MONEY_K: "fundraising", MONEY_CAP: "fundraising", PARTIAL_CYCLE_GAP_SCALE: "fundraising",
   QUALITY_WEIGHT: "candidates", OBSERVABLE_PRIOR_FEATURES: "candidates",
   POLL_K: "polling", POLL_HALF_LIFE_DAYS: "polling", POLL_UNDECIDED_ALLOCATION: "polling", POLL_UNDECIDED_CAP: "polling", POLL_W_MAX: "polling", POLL_SIGMA: "polling", POLL_AGING_SHARE: "polling", HOUSE_EFFECTS: "polling", HOUSE_EFFECT_K: "polling",
@@ -36,7 +36,7 @@ const DOCUMENTED_IN = {
 function ledgerOf(race: ForecastedRace) {
   const tpl = race.raceType === "house" ? calculateDistrictTpl(race.id) : calculateStateTpl(race.stateAbbr, race.state);
   const inc = [race.candidates?.dem, race.candidates?.rep].find((c) => c?.incumbent) ?? null;
-  const incPts = computeIncumbentPts(race.office, inc ? alignedParty(inc) : null, inc?.appointed ?? false);
+  const incPts = raceIncumbencyPts(race);
   return { tpl, env: effectiveEnvironment(race.stateAbbr), incPts, money: raceMoneyTerm(race), quality: candidateQuality(race) };
 }
 
@@ -93,7 +93,7 @@ export default function ForecastMethodology() {
         <Block label="By office" meta="every constant that differs between the three forecasts">
           <DataTable align="lrrr" head={["", "House", "Senate", "Governor"]} rows={[
             ["Races forecast", ...OFFICES.map((o) => byOffice[o].length)],
-            ["Lean the Model starts from", <Link key="d" href="/methodology/district-tpl" className="underline underline-offset-2">District TPL</Link>, <Link key="s" href="/methodology/state-tpl" className="underline underline-offset-2">State TPL</Link>, <Link key="g" href="/methodology/state-tpl" className="underline underline-offset-2">State TPL</Link>],
+            ["Lean the Model starts from", <Link key="d" href="/analysis/internal-methodology/district-tpl" className="underline underline-offset-2">District TPL</Link>, <Link key="s" href="/analysis/internal-methodology/state-tpl" className="underline underline-offset-2">State TPL</Link>, <Link key="g" href="/analysis/internal-methodology/state-tpl" className="underline underline-offset-2">State TPL</Link>],
             ["Incumbency (pts)", ...OFFICES.map((o) => `${inc[o].toFixed(1)}${o === "H" ? " fixed" : " fitted"}`)],
             ["Money: k / cap", ...OFFICES.map((o) => `${F.MONEY_K[o]} / ±${F.MONEY_CAP[o]}`)],
             ["Candidate weight", ...OFFICES.map((o) => F.QUALITY_WEIGHT[o])],
@@ -109,7 +109,7 @@ export default function ForecastMethodology() {
       </Section>
 
       <Section id="lean" kicker="Term 1" title="Partisan lean (TPL)"
-        lede={<>The starting point is the seat&rsquo;s True Partisan Lean: the margin a generic Republican against a generic Democrat would produce in a neutral national year. It is an absolute margin, not a lean relative to the nation. Senate and Governor races read the <Link href="/methodology/state-tpl" className="underline underline-offset-2">State TPL</Link>; House races read the <Link href="/methodology/district-tpl" className="underline underline-offset-2">District TPL</Link>, which is built on the 2026 lines.</>}>
+        lede={<>The starting point is the seat&rsquo;s True Partisan Lean: the margin a generic Republican against a generic Democrat would produce in a neutral national year. It is an absolute margin, not a lean relative to the nation. Senate and Governor races read the <Link href="/analysis/internal-methodology/state-tpl" className="underline underline-offset-2">State TPL</Link>; House races read the <Link href="/analysis/internal-methodology/district-tpl" className="underline underline-offset-2">District TPL</Link>, which is built on the 2026 lines.</>}>
         <P>Because TPL is built by stripping incumbency, fundraising and the national environment out of past results, the forecast adds the same three things back for 2026 with the same tables. A change to a strip therefore moves the forecast twice, in opposite directions, and mostly cancels; a change to the lean itself moves it one for one.</P>
       </Section>
 
@@ -139,7 +139,7 @@ export default function ForecastMethodology() {
             caption={<>Mean miss <M v={envModel.meanMiss} />, sd {envModel.sdMiss.toFixed(1)}; September→November drift rms {envModel.sdDrift.toFixed(1)}. Since 2026-10-23 the 2018–2024 generic-ballot columns are the live averaging recipe itself run over the 538 poll archive as of September 15 and election eve, so the miss is measured on the quantity the model shades; 2016 predates the archive and stays on RealClearPolitics&rsquo; basis (<Code>data-entry/national_environment_history.csv</Code>).</>} />
         </Block>
         <Block label="State elasticity β*" meta={`range ${betas[0]?.[1].shrunk.toFixed(2)} (${betas[0]?.[0]}) to ${betas.at(-1)?.[1].shrunk.toFixed(2)} (${betas.at(-1)?.[0]})`}>
-          <P>β* is how strongly a state moves with the national environment, fitted alongside TPL and shrunk halfway to 1: β* = clamp(1 + {G.BETA_SHRINK} × (β̂ − 1), {G.BETA_MIN}, {G.BETA_MAX}). A House race uses its state&rsquo;s β*. See <Link href="/methodology/state-tpl#fit" className="underline underline-offset-2">State TPL → the fit</Link>.</P>
+          <P>β* is how strongly a state moves with the national environment, fitted alongside TPL and shrunk halfway to 1: β* = clamp(1 + {G.BETA_SHRINK} × (β̂ − 1), {G.BETA_MIN}, {G.BETA_MAX}). A House race uses its state&rsquo;s β*. See <Link href="/analysis/internal-methodology/state-tpl#fit" className="underline underline-offset-2">State TPL → the fit</Link>.</P>
         </Block>
         <Constants rows={[
           { name: "ENV_MISS_SHRINK", value: F.ENV_MISS_SHRINK, basis: "decision", meaning: "Share of the historical mean generic-ballot miss applied to the point estimate. The remainder, and all of the miss's variance, live in σ_E.", source: "Polling gaps are not predictable; half is a hedge between trusting and ignoring the average miss." },
@@ -197,7 +197,7 @@ export default function ForecastMethodology() {
           `                 minimise Σ w·(r − a_R + a_D)² + λ·Σ a²        λ = ${WAR_LAMBDA}`,
           `                 w = decay^(2026 − year)   decay ${WAR_RECENCY_DECAY_STATEWIDE} statewide · ${WAR_RECENCY_DECAY} House`,
           "r              = actual − (lean-in-that-year + β*·E + incumbency + FULL-money points)",
-        ]} note={<>The effects are the same machinery as <Link href="/methodology/war" className="underline underline-offset-2">WAR</Link>, with one difference: here the expected margin includes the full residual-basis money term, so that money stays a separate forward term and the effect does not contain it.</>} />
+        ]} note={<>The effects are the same machinery as <Link href="/analysis/internal-methodology/war" className="underline underline-offset-2">WAR</Link>, with one difference: here the expected margin includes the full residual-basis money term, so that money stays a separate forward term and the effect does not contain it.</>} />
         <Constants rows={[
           { name: "QUALITY_WEIGHT", value: hsg(F.QUALITY_WEIGHT), basis: "calibrated", meaning: "Multiplier on the effect difference, per office.", source: "forwardBacktest --quality, leakage-free (effects rebuilt as of each test year): House error bottoms near 0.75, Senate at 1.0, Governor keeps improving past 1.5 (persistent personal brands) and is held off the sweep edge." },
           { name: "WAR_LAMBDA", value: WAR_LAMBDA, basis: "measured", meaning: "Ridge penalty: an unseen candidate is replacement level. A one-race candidate keeps 1/(1+λ) of what is left after a known opponent's effect.", source: "Matches the leave-one-out persistence slope (≈ 0.68) of repeat candidates' residuals." },

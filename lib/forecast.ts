@@ -17,7 +17,7 @@
 // race noise, so the seat intervals and control probabilities carry the correlation
 // a sum of independent probabilities would miss.
 //
-// Specification: /methodology (components/methodology/ForecastMethodology.tsx). A change to how
+// Specification: /analysis/internal-methodology (components/methodology/ForecastMethodology.tsx). A change to how
 // anything here is calculated updates that tab and adds an entry to data/methodologyChangelog.ts.
 
 import "server-only";

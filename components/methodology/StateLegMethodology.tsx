@@ -78,7 +78,7 @@ export default function StateLegMethodology() {
         <Defs items={[
           { term: "Scope", def: "General elections only. Special elections are not collected, and a seat whose only race in a year was a special concurrent with the general shows its votes without names." },
           { term: "District keys", def: <>The boundary data&apos;s own codes: numbers almost everywhere, letters for the Alaska Senate, county code plus number in New Hampshire (<Code>BE1</Code>), names in Vermont and Massachusetts. A past year&apos;s row is the race held under that key on that year&apos;s map, which can be a different place: Ohio renumbered its whole House in 2022, so HD-31&apos;s 2020 row is a Cincinnati seat and its 2022 row a Summit County one. The lines column and the redistricting section say so.</> },
-          { term: "Downstream", def: <>The corrected chamber margin is live in the <Link href="/methodology/state-tpl" className="underline underline-offset-2">State TPL</Link>; the district projection and the <Link href="/legislatures" className="underline underline-offset-2">State Legislatures</Link> board are documented below.</> },
+          { term: "Downstream", def: <>The corrected chamber margin is live in the <Link href="/analysis/internal-methodology/state-tpl" className="underline underline-offset-2">State TPL</Link>; the district projection and the <Link href="/legislatures" className="underline underline-offset-2">State Legislatures</Link> board are documented below.</> },
         ]} />
       </Section>
 
@@ -303,7 +303,7 @@ export default function StateLegMethodology() {
         })()}>
         <Block label="Votes">
           <Formula lines={[
-            "level     = the state's 2026 top-of-the-ticket votes from the turnout estimate (/methodology/turnout: CVAP × blended midterm rates, ticket and competitiveness terms)",
+            "level     = the state's 2026 top-of-the-ticket votes from the turnout estimate (/analysis/internal-methodology/turnout: CVAP × blended midterm rates, ticket and competitiveness terms)",
             "share_d   = the district's share of the chamber's 2024 presidential vote on today's lines (dataset A)",
             "factor_d  = votes cast in the seat's race per seat per expected top-race vote: leg votes ÷ [seats × top votes(year) × share_d(that cycle's presidential election)]",
             "            measured in each basis midterm from the seat's own contested race; on a superseded map, the population-weighted mean of the old districts (dataset C, coverage ≥ MIN_COVERAGE)",

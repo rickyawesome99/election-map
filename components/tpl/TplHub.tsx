@@ -197,8 +197,8 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
                 ["/model#states", "States", "50 pages, each with the full pipeline and its districts"],
                 ["/model#districts", "Districts", "435 on 2026 lines, inside their state pages"],
                 ["/model/candidates", "Candidates", `${summary.racesScored.toLocaleString()} races · ${summary.performances.toLocaleString()} candidate-performances`],
-                ["/methodology/county-tpl", "County TPL", "on every county page"],
-                ["/methodology/state-tpl", "Methodology", "State · District · County · WAR"],
+                ["/analysis/internal-methodology/county-tpl", "County TPL", "on every county page"],
+                ["/analysis/internal-methodology/state-tpl", "Methodology", "State · District · County · WAR"],
               ].map(([href, label, desc]) => (
                 <tr key={href} style={{ borderBottom: "1px solid var(--app-border)" }}>
                   <td className={`${TD} font-semibold`}><Link href={href} className="hover:underline" onClick={href.startsWith("/model#") ? (e) => { e.preventDefault(); setGeo(href === "/model#districts" ? "districts" : "states"); setShowAll(false); window.scrollTo({ top: 0, behavior: "smooth" }); } : undefined}>{label}</Link></td>

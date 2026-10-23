@@ -24,7 +24,7 @@ import { raceMoneyTerm, type RaceMoneyTerm } from "@/lib/stateLegMoneyModel";
  * The 2026 projection for every state legislative district on the ballot: a district TPL built
  * from the seat's own races relocated onto today's lines plus the presidential vote on those
  * lines, projected forward with the fitted national environment and incumbency, then simulated
- * chamber by chamber. Specification: /methodology/state-leg. A change here gets an entry in
+ * chamber by chamber. Specification: /analysis/internal-methodology/state-leg. A change here gets an entry in
  * data/methodologyChangelog.ts and a re-run of scripts/stateLegBacktest.ts.
  *
  *   1. Rows      presidential rows on today's lines (2016, 2020, 2024); the seat's general-election

@@ -59,8 +59,8 @@ export default function WarMethodology() {
           "Expected = base + clamp(FF_K × structural gap%, ±FF_MAX)",
         ]} />
         <Defs items={[
-          { term: "State anchor", def: <>The Huber-fitted state lean from the {link("/methodology/state-tpl#fit", "TPL fit")} — outlier-resistant, so Manchin&rsquo;s own wins do not inflate his baseline. It has no recency decay, so its presidential average is an equal-year one.</> },
-          { term: "District anchor", def: <>{link("/methodology/district-tpl", "District TPL")}, whose presidential average is recency-weighted to match. <em>shift</em> is the boundary shift: the actual margin was recorded on the map the race was run on, so the expectation must sit on that turf too. The member&rsquo;s own House margins feed District TPL, which slightly shrinks House WAR.</> },
+          { term: "State anchor", def: <>The Huber-fitted state lean from the {link("/analysis/internal-methodology/state-tpl#fit", "TPL fit")} — outlier-resistant, so Manchin&rsquo;s own wins do not inflate his baseline. It has no recency decay, so its presidential average is an equal-year one.</> },
+          { term: "District anchor", def: <>{link("/analysis/internal-methodology/district-tpl", "District TPL")}, whose presidential average is recency-weighted to match. <em>shift</em> is the boundary shift: the actual margin was recorded on the map the race was run on, so the expectation must sit on that turf too. The member&rsquo;s own House margins feed District TPL, which slightly shrinks House WAR.</> },
           { term: "Trend interpolation", def: "Presidential margins exist every four years; other years interpolate linearly between the bracketing ones (2018 = ½·2016 + ½·2020; 2025 clamps to 2024)." },
           { term: "Excluded", def: "Same-party generals and Louisiana's fragmented jungle generals (no R-vs-D margin to sign), and State Legislature rows (no candidate)." },
           { term: "Relocated House races", def: "Carry their boundary weight into the candidate-effect fit, discounted exactly as they are in District TPL." },
@@ -121,7 +121,7 @@ export default function WarMethodology() {
           ["Reads as", "Value over a replacement-level (non-incumbent) nominee, money beyond the situation included", "Quality net of money and incumbency"],
           ["Penalty on effects", `Heavy-tailed: squared up to τ (${WAR_TAIL} · ${WAR_TAIL_INCUMBENT} for incumbents), linear beyond`, "Plain ridge (squared throughout) — the heavy tail has not been through the forward backtest"],
           ["Solved as of", "Each race's own year", "2026, from races through 2025"],
-          ["Used for", "The WAR column", <>QUALITY_WEIGHT × (effect_R − effect_D) — see {link("/methodology/forecast#candidates", "Forecast")}</>],
+          ["Used for", "The WAR column", <>QUALITY_WEIGHT × (effect_R − effect_D) — see {link("/analysis/internal-methodology/forecast#candidates", "Forecast")}</>],
         ]} />
       </Section>
 

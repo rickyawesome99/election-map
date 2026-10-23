@@ -16,7 +16,7 @@ import { statewideRaces } from "@/lib/turnout";
 /**
  * The 2026 popular vote of every state legislative chamber on the ballot: each seat's projected
  * votes cast, split between the parties by the district projection, summed two ways.
- * Specification: /methodology/state-leg#popular-vote. A change here gets an entry in
+ * Specification: /analysis/internal-methodology/state-leg#popular-vote. A change here gets an entry in
  * data/methodologyChangelog.ts and a re-run of scripts/stateLegPopularVoteBacktest.ts.
  *
  *   LEVEL     the state's 2026 top-of-the-ticket votes from the turnout estimate

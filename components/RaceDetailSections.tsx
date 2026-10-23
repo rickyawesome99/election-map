@@ -1233,6 +1233,7 @@ export function ForecastCalculationCard({
       <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>House ±{(incumbentAdvantage().H ?? 0).toFixed(1)} · Senate ±{(incumbentAdvantage().S ?? 0).toFixed(1)} · Governor ±{(incumbentAdvantage().G ?? 0).toFixed(1)}</span>
       <br /><br />
       A Republican incumbent moves the margin toward R, a Democratic incumbent toward D, and an open seat scores 0. An independent who caucuses with a party counts as that party&apos;s incumbent.
+      {FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY.H > 0 && <><br /><br />House incumbents in close seats get up to {FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY.H} more points: the full amount when the seat is even before incumbency, fading to 0 at ±{FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY_WIDTH}. Incumbents in competitive House seats have beaten the model on both sides in 2022 and 2024. The value shown includes it.</>}
       <br /><br />
       {appointedShare === 0
         ? "An incumbent who was appointed or succeeded to the seat and has never won it is scored as an open seat: past appointees have run no better than a generic nominee."

@@ -1,4 +1,6 @@
-// Every external source behind the data on this site — the content of /sources.
+// Every external source behind the data on this site — the Sources tab of Internal Methodology
+// (/analysis/internal-methodology/sources) and, in plain language, the public /sources page. A new
+// group also wants a one-line description in components/methodology-public/SourcesPublic.tsx (PLAIN).
 //
 // RULE: when a dataset is added, re-sourced or patched from somewhere new, add or amend the entry
 // here in the same change. `where` names the file or script the source lands in, so a number on

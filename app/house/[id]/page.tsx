@@ -14,7 +14,7 @@ import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE, TRACT_ESTIMATED_DISTRI
 import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
+import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace, forecastsFor } from "@/lib/forecast";
 import { getRaceForecastHistory } from "@/lib/forecastHistory";
 import { RaceForecastTrend } from "@/components/ForecastTrend";
@@ -124,7 +124,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const districtTpl = calculateDistrictTpl(race.id);
   const districtTplId = parseInt(race.id, 10).toString();
   const incumbentParty = incumbentCandidate ? alignedParty(incumbentCandidate) : null;
-  const incumbentPts = computeIncumbentPts("H", incumbentParty, incumbentCandidate?.appointed ?? false);
+  const incumbentPts = raceIncumbencyPts(race); // office advantage + competitive-seat extra
   const fundraising = raceFundraising2026("house", race.id);
   const fundraisingSource = raceFundraisingSource2026("house", race.id);
   const financeDetail = raceFinanceDetail2026("house", race.id);
@@ -423,7 +423,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
                 dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
                 rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />
-              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Today&rsquo;s model rerun on the polls available each day, not what the site said then: a later model change, nominee or filing applies to every day. With no polls the line moves only with the national environment. <Link href="/methodology#over-time" className="underline underline-offset-2">How this is built</Link>.</div>
+              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Today&rsquo;s model rerun on the polls available each day, not what the site said then: a later model change, nominee or filing applies to every day. With no polls the line moves only with the national environment. <Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2">How this is built</Link>.</div>
             </section>
           )}
 

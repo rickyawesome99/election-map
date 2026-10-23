@@ -21,7 +21,11 @@ export function isCongressionalDistrictGeoid(
  *   2016.json     115th  cb_2016_us_cd115_500k   (was the 114th — FL/NC/VA all redrew
  *                                                 for 2016 and were showing 2014 lines)
  *   2018.json     116th  cb_2018_us_cd116_500k
- *   pre2022.json  117th  cb_2020_us_cd116_500k   (116th as of 2020, i.e. NC's 2019 redraw)
+ *   pre2022.json  117th  cb_2020_us_cd116_500k + NC from the 2019 remedial plan (HB 1029
+ *                        3rd ed., ncleg.gov Congress_2019 shapefile) — the cd116 release
+ *                        still has NC's 2016 lines; NC was spliced in 2026-10-23, clipped to
+ *                        the old NC outline, and matches countyHouseData's districts_2020
+ *                        for all 100 counties
  *   2022.json     118th  cb_2022_us_cd118_500k   (was the 119th — GA/LA/NC/NY were
  *                                                 showing 2024 lines; AL was already right)
  *   2024.json     119th

@@ -2,7 +2,7 @@
 //
 // Run:  npx tsx --conditions=react-server scripts/turnoutBacktest.ts
 //       npx tsx --conditions=react-server scripts/turnoutBacktest.ts --shrink       (grid over SHRINK_VOTES)
-//       npx tsx --conditions=react-server scripts/turnoutBacktest.ts --emit         (write data/turnoutCalibration.ts for /methodology/turnout)
+//       npx tsx --conditions=react-server scripts/turnoutBacktest.ts --emit         (write data/turnoutCalibration.ts for /analysis/internal-methodology/turnout)
 //
 // Predicts 2022 — the top statewide race per state, its county split and every contested House
 // district on the 2022 lines — from 2018 alone and the 2020 presidential vote, with the live code.

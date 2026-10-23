@@ -11,7 +11,7 @@ import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProje
 import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
+import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace } from "@/lib/forecast";
 import { getRaceForecastHistory } from "@/lib/forecastHistory";
 import { RaceForecastTrend } from "@/components/ForecastTrend";
@@ -300,7 +300,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
     ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
     : null;
   const incumbentParty = incumbent ? alignedParty(incumbent) : null;
-  const incumbentPts = computeIncumbentPts("S", incumbentParty, incumbent?.appointed ?? false);
+  const incumbentPts = raceIncumbencyPts(race); // office advantage + competitive-seat extra
   const fundraising = raceFundraising2026("senate", race.id);
   const fundraisingSource = raceFundraisingSource2026("senate", race.id);
   const financeDetail = raceFinanceDetail2026("senate", race.id);
@@ -505,7 +505,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
                 dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
                 rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />
-              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Today&rsquo;s model rerun on the polls available each day, not what the site said then: a later model change, nominee or filing applies to every day. With no polls the line moves only with the national environment. <Link href="/methodology#over-time" className="underline underline-offset-2">How this is built</Link>.</div>
+              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Today&rsquo;s model rerun on the polls available each day, not what the site said then: a later model change, nominee or filing applies to every day. With no polls the line moves only with the national environment. <Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2">How this is built</Link>.</div>
             </section>
           )}
 
@@ -522,7 +522,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
                 demParty={countyProjection.demParty}
                 repParty={countyProjection.repParty}
                 height={280}
-                caption={<div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>The forecast margin ({countyProjection.margin > 0 ? countyProjection.repParty : countyProjection.demParty}+{Math.abs(countyProjection.margin).toFixed(1)}) spread over the state&apos;s counties by their lean, on the 2026 turnout estimate. <Link href="/methodology/turnout#county-results" className="underline underline-offset-2">How this is built</Link>.</div>}
+                caption={<div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>The forecast margin ({countyProjection.margin > 0 ? countyProjection.repParty : countyProjection.demParty}+{Math.abs(countyProjection.margin).toFixed(1)}) spread over the state&apos;s counties by their lean, on the 2026 turnout estimate. <Link href="/analysis/internal-methodology/turnout#county-results" className="underline underline-offset-2">How this is built</Link>.</div>}
               />
             ) : (
               <div className="flex h-[280px] items-center justify-center rounded text-center text-xs" style={{ border: "1px dashed var(--app-border)", color: "var(--app-text-very-muted)" }}>No county projection for this race.</div>

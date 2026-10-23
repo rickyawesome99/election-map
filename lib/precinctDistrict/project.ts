@@ -3,7 +3,7 @@
 // the precincts. Server-only (it reads the TPL fit, which pulls in the full forecast dataset);
 // the page passes the JSON-serializable result to the client explorer.
 //
-// Specification: /methodology/precinct-district (components/methodology/PrecinctMethodology.tsx).
+// Specification: /analysis/internal-methodology/precinct-district (components/methodology/PrecinctMethodology.tsx).
 // A change here gets an entry in data/methodologyChangelog.ts.
 //
 //   1. Neutral margin per race-year   NM = raw + incumbency strip − β*(state) × E(year) − money

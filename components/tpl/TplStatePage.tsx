@@ -100,7 +100,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
               <select aria-label="State" value={data.id} onChange={(e) => router.push(stateHref(e.target.value))} className="cursor-pointer rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}>
                 {[...statesData].sort((a, b) => a.name.localeCompare(b.name)).map((s) => <option key={s.abbr} value={s.id}>{s.abbr} — {s.name}</option>)}
               </select>
-              <Link href="/methodology/state-tpl" className="hidden whitespace-nowrap hover:underline sm:inline">How State TPL works <ArrowOut /></Link>
+              <Link href="/analysis/internal-methodology/state-tpl" className="hidden whitespace-nowrap hover:underline sm:inline">How State TPL works <ArrowOut /></Link>
             </div>
           </div>
           <div className="pb-6 pt-5">
@@ -195,7 +195,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
             </table></div>
             <p className="min-w-0 text-xs leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
               Year weights: recency decay {data.yearDecay.toFixed(2)} per year anchored to 2026, scaled by each year&apos;s type-weight coverage, then normalized. A year with no {data.name} race gets weight 0. Centering subtracts the median of all 50 state TPLs so states compare on one scale.{" "}
-              <Link href="/methodology/state-tpl" className="underline">Full method <ArrowOut /></Link>
+              <Link href="/analysis/internal-methodology/state-tpl" className="underline">Full method <ArrowOut /></Link>
             </p>
           </div>
         </section>

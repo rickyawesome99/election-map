@@ -14,7 +14,7 @@ const ITEMS = [
   { key: "candidates", label: "Candidates", href: "/model/candidates", active: (p: string) => p.startsWith("/model/candidates") },
 ];
 
-export function TplSubNav({ right, methodologyHref = "/methodology/state-tpl", methodologyLabel = "How TPL works" }: { right?: ReactNode; methodologyHref?: string; methodologyLabel?: string }) {
+export function TplSubNav({ right, methodologyHref = "/analysis/internal-methodology/state-tpl", methodologyLabel = "How TPL works" }: { right?: ReactNode; methodologyHref?: string; methodologyLabel?: string }) {
   const pathname = usePathname();
   return (
     <div className="flex items-center gap-1 overflow-x-auto" style={{ borderBottom: "1px solid var(--app-border)" }}>
@@ -50,7 +50,7 @@ export function TplViewSwitch({ to, layout = "row" }: { to: "map" | "candidates"
         style={{ border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
         {toMap ? "← Map view" : "Candidates view →"}
       </Link>
-      <Link href={toMap ? "/methodology/war" : "/methodology/state-tpl"} className="whitespace-nowrap text-xs hover:underline" style={{ color: "var(--app-text-muted)" }}>
+      <Link href={toMap ? "/analysis/internal-methodology/war" : "/analysis/internal-methodology/state-tpl"} className="whitespace-nowrap text-xs hover:underline" style={{ color: "var(--app-text-muted)" }}>
         {toMap ? "How WAR works" : "How TPL works"} <ArrowOut />
       </Link>
     </div>

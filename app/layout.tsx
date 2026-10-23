@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "2026 Election Forecast",
   description: "Interactive U.S. election forecast map for House, Senate, and Governor races",
-  // Share previews: app/opengraph-image.png site-wide (scripts/buildSiteShareCard.tsx) and a per-race card from each race segment's opengraph-image.tsx.
+  // Share preview: app/opengraph-image.png on every page (scripts/buildSiteShareCard.tsx).
   openGraph: { siteName: "CT Strategies", type: "website" },
   twitter: { card: "summary_large_image" },
 };

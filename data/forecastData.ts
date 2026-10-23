@@ -12979,91 +12979,91 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
   "3701": [
     { "year": 2026, "description": "NC-1 swapped four inland counties — Greene, Lenoir, Wilson and Wayne — to NC-3 and took in six coastal ones: Beaufort, Carteret, Craven, Dare, Hyde and Pamlico. The exchange grew its area by about half, remade it as a coastal district and moved it from the state's one competitive seat to a Republican-leaning one.", "pviNew": 5, "pviOld": 1 },
     { "year": 2024, "description": "NC-1 traded Franklin and Pitt counties for Currituck, Camden, Lenoir and Wayne, keeping its northeastern footprint but taking in more Republican territory. It moved from a narrowly Democratic seat to a narrowly Republican one.", "pviNew": 1, "pviOld": -2 },
-    { "year": 2022, "description": "NC-1 was redrawn, adding Perquimans, Tyrrell, Franklin, Nash, Greene and Chowan counties and one more, taking in the rest of Wilson County and raising its share of Pitt County from 38% to 77%. It was a Democratic-leaning toss-up.", "pviNew": -2, "pviOld": -3 },
+    { "year": 2022, "description": "NC-1 was redrawn, adding Franklin County and the Albemarle counties of Chowan, Pasquotank, Perquimans and Tyrrell, taking in the rest of Vance County and giving up Wayne County. It was a Democratic-leaning toss-up.", "pviNew": -2, "pviOld": -3 },
     { "year": 2020, "description": "NC-1 traded its Durham and Granville county territory for Greene, Nash and Wayne counties, keeping a dozen northeastern counties in place. The swap left the district markedly less Democratic than before.", "pviNew": -3, "pviOld": -17 },
     { "year": 2016, "description": "NC-1 was made far more compact after being struck down as a racial gerrymander, taking in whole counties — Gates, Washington, Granville, Martin, Vance and Edgecombe — and most of Durham, while giving up its reaches into Greene, Pasquotank, Nash, Franklin, Perquimans, Lenoir and Craven. It remained safely Democratic.", "pviNew": -17 }
   ],
   "3702": [
     { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-02's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": -17, "pviOld": -15 },
     { "year": 2024, "description": "NC-2's share of Wake County fell from 58% to 48% as Raleigh was divided differently. It remained safely Democratic.", "pviNew": -15, "pviOld": -12 },
-    { "year": 2022, "description": "NC-2 was redrawn, giving up Franklin, Harnett and Nash counties, dropping out of Wilson County and dropping out of Johnston County. It was solidly Democratic.", "pviNew": -12, "pviOld": -12 },
+    { "year": 2022, "description": "NC-2 stayed inside Wake County but shrank from 67% of it to 58%, with the new NC-13 taking the county's southern end. It was solidly Democratic.", "pviNew": -12, "pviOld": -12 },
     { "year": 2020, "description": "NC-2 was reduced to Wake County alone, shedding Franklin, Harnett and Nash counties and its shares of Johnston and Wilson. Concentrating the seat on Raleigh flipped it from Republican-leaning to solidly Democratic.", "pviNew": -12, "pviOld": 7 },
     { "year": 2016, "description": "NC-2 was rebuilt around Raleigh's outskirts, taking Franklin and Nash counties, two-thirds of Wake and shares of Wilson and Johnston, while giving up Moore, Lee, Randolph, Hoke, Chatham and Cumberland. It became a Republican-leaning seat.", "pviNew": 7 }
   ],
   "3703": [
     { "year": 2026, "description": "NC-3 was the other side of that swap, giving up the coastal counties of Beaufort, Carteret, Craven, Dare, Hyde and Pamlico and absorbing Greene, Lenoir, Wilson and Wayne. It lost about half its area and took on the more Democratic territory in the trade, though it stays Republican-leaning.", "pviNew": 6, "pviOld": 11 },
     { "year": 2024, "description": "NC-3 took nearly all of Pitt County, up from 23%, and gave up Currituck, Camden, Lenoir and Wayne counties to NC-1. It stayed solidly Republican.", "pviNew": 11, "pviOld": 15 },
-    { "year": 2022, "description": "NC-3 was redrawn, adding Sampson and Duplin counties, taking 47% of Wayne County and giving up Perquimans, Tyrrell, Chowan, Pasquotank and Greene counties. It was safely Republican.", "pviNew": 15, "pviOld": 14 },
+    { "year": 2022, "description": "NC-3 was redrawn, adding Sampson County and 47% of Wayne County, giving up the Albemarle counties of Chowan, Pasquotank, Perquimans and Tyrrell, and trimming its shares of Carteret and Dare. It was safely Republican.", "pviNew": 15, "pviOld": 14 },
     { "year": 2020, "description": "NC-3 swapped Greene County for Duplin, otherwise keeping its 16-county coastal footprint intact. It remained safely Republican.", "pviNew": 14, "pviOld": 12 },
     { "year": 2016, "description": "NC-3 consolidated on the coast and inner coastal plain, taking in all of Lenoir, Greene, Pasquotank, Perquimans and Craven counties and nearly all of Chowan, while giving up Pender, Gates, Washington, Martin and New Hanover. It stayed solidly Republican.", "pviNew": 12 }
   ],
   "3704": [
     { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-04's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": -23, "pviOld": -21 },
     { "year": 2024, "description": "NC-4 gave up Person, Alamance and Granville counties and picked up 30% of Chatham and 20% of Wake instead. It remained safely Democratic.", "pviNew": -21, "pviOld": -16 },
-    { "year": 2022, "description": "NC-4 was redrawn, adding Person, Alamance and Granville counties, taking in the rest of Durham County and dropping out of Wake County. It was safely Democratic.", "pviNew": -16, "pviOld": -16 },
+    { "year": 2022, "description": "NC-4 was redrawn, adding Alamance and Person counties and giving up Franklin County, its 63% of Chatham and its third of Wake, while keeping Durham, Orange and Granville. It was safely Democratic.", "pviNew": -16, "pviOld": -16 },
     { "year": 2020, "description": "NC-4 expanded north and west out of Durham and Orange counties, adding Franklin and Granville counties and shares of Chatham and Vance. It stayed safely Democratic.", "pviNew": -16, "pviOld": -17 },
     { "year": 2016, "description": "NC-4 took in all of Orange County and a third of Wake, giving up Chatham, Harnett, Cumberland and Alamance and most of its Durham County share. It remained safely Democratic.", "pviNew": -17 }
   ],
   "3705": [
     { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-05's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 9, "pviOld": 10 },
     { "year": 2024, "description": "NC-5 moved east, adding Rockingham and Alexander counties and 30% of Guilford while giving up Yadkin, Avery, Davie and Mitchell counties and its share of Forsyth. It stayed solidly Republican.", "pviNew": 10, "pviOld": 13 },
-    { "year": 2022, "description": "NC-5 was redrawn, adding Mitchell and Davie counties, taking 93% of Caldwell County and giving up Alexander County. It was solidly Republican.", "pviNew": 13, "pviOld": 20 },
+    { "year": 2022, "description": "NC-5 moved back to the northwest, adding Surry, Stokes, Yadkin, Davie, Avery and Mitchell counties and 76% of Forsyth County while giving up Burke, Cleveland, Gaston and Alexander counties and its half of Rutherford. It was solidly Republican.", "pviNew": 13, "pviOld": 20 },
     { "year": 2020, "description": "NC-5 shifted southwest, taking Burke, Caldwell, Cleveland and Gaston counties and part of Rutherford while giving up Forsyth, Surry, Stokes, Yadkin and Avery. It became substantially more Republican.", "pviNew": 20, "pviOld": 10 },
     { "year": 2016, "description": "NC-5 moved north and west, adding Stokes, Surry and Avery counties and the rest of Forsyth while giving up Davie, Iredell, Rowan and Davidson. It stayed solidly Republican.", "pviNew": 10 }
   ],
   "3706": [
     { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-06's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 9, "pviOld": 11 },
     { "year": 2024, "description": "NC-6 was rebuilt around Davidson, Rowan and Davie counties and part of Cabarrus, giving up Rockingham and Caswell counties and all but 14% of Guilford. The redraw turned a Democratic-leaning Greensboro seat into a solidly Republican one.", "pviNew": 11, "pviOld": -4 },
-    { "year": 2022, "description": "NC-6 was redrawn, taking in the rest of Guilford County, taking 24% of Forsyth County and giving up Randolph, Person, Chatham, Alamance and Lee counties. It leaned Democratic.", "pviNew": -4, "pviOld": -10 },
+    { "year": 2022, "description": "NC-6 was redrawn, adding Rockingham and Caswell counties and cutting its share of Forsyth County from 44% to 24% while keeping all of Guilford. It leaned Democratic.", "pviNew": -4, "pviOld": -10 },
     { "year": 2020, "description": "NC-6 was reduced to the Piedmont Triad, pairing Guilford County with part of Forsyth after shedding Alamance, Caswell, Chatham, Lee, Person, Randolph and Rockingham. The change flipped it from a Republican seat to a solidly Democratic one.", "pviNew": -10, "pviOld": 9 },
     { "year": 2016, "description": "NC-6 shifted south, taking in all of Randolph and Chatham counties, nearly all of Lee and the rest of Alamance, while giving up Stokes, Surry, Orange, Durham and Granville and part of Guilford. It remained solidly Republican.", "pviNew": 9 }
   ],
   "3707": [
     { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-07's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 7, "pviOld": 8 },
     { "year": 2024, "description": "NC-7 took 19% of Sampson County and more of Cumberland, giving up more than half of Robeson County. It remained solidly Republican.", "pviNew": 8, "pviOld": 8 },
-    { "year": 2022, "description": "NC-7 was redrawn, adding Robeson County, taking 71% of Cumberland County and taking in the rest of Bladen County. It was solidly Republican.", "pviNew": 8, "pviOld": 11 },
+    { "year": 2022, "description": "NC-7 was redrawn, adding Robeson County and 71% of Cumberland County while giving up Johnston and Sampson counties and its share of Harnett. It was solidly Republican.", "pviNew": 8, "pviOld": 11 },
     { "year": 2020, "description": "NC-7 gave up Duplin and Wayne counties and took in part of Harnett, keeping its southeastern coastal base. It remained solidly Republican.", "pviNew": 11, "pviOld": 9 },
     { "year": 2016, "description": "NC-7 took in all of Wayne, Pender and New Hanover counties while giving up Lenoir, Hoke and Cumberland and much of Bladen and Johnston. It stayed solidly Republican.", "pviNew": 9 }
   ],
   "3708": [
     { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-08's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 10, "pviOld": 11 },
     { "year": 2024, "description": "NC-8 moved west and south, adding Scotland County, 57% of Robeson, nearly all of Richmond, more of Cabarrus and 14% of Mecklenburg, while giving up Rowan and Davidson counties. It stayed solidly Republican.", "pviNew": 11, "pviOld": 20 },
-    { "year": 2022, "description": "NC-8 was redrawn, adding Union, Davidson and Anson counties, taking 73% of Richmond County and taking in the rest of Rowan County. It was safely Republican.", "pviNew": 20, "pviOld": 6 },
+    { "year": 2022, "description": "NC-8 was redrawn, adding Rowan, Union, Davidson and Anson counties and 73% of Richmond County while giving up Cumberland County, its shares of Harnett, Lee and Moore, and part of Cabarrus. It was safely Republican.", "pviNew": 20, "pviOld": 6 },
     { "year": 2020, "description": "NC-8 traded Hoke County and its share of Rowan for shares of Harnett and Lee. It stayed Republican-leaning.", "pviNew": 6, "pviOld": 8 },
     { "year": 2016, "description": "NC-8 moved east, adding Hoke and Moore counties and 47% of Cumberland while giving up Scotland, Richmond, Anson, Robeson, Union and Davidson. It remained solidly Republican.", "pviNew": 8 }
   ],
   "3709": [
     { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-09's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 8, "pviOld": 9 },
     { "year": 2024, "description": "NC-9 shifted north to take all of Alamance and 55% of Guilford County, giving up Scotland and Lee counties and parts of Chatham and Cumberland. The redraw made it solidly Republican.", "pviNew": 9, "pviOld": 6 },
-    { "year": 2022, "description": "NC-9 was redrawn, adding Randolph, Chatham, Moore, Lee and Hoke counties, taking 33% of Harnett County and giving up Robeson, Union and Anson counties. It leaned Republican.", "pviNew": 6, "pviOld": 6 },
+    { "year": 2022, "description": "NC-9 was redrawn, adding Chatham, Randolph and Lee counties, taking in the rest of Moore County and shares of Harnett and Cumberland, while giving up Union, Robeson and Anson counties and most of Richmond. It leaned Republican.", "pviNew": 6, "pviOld": 6 },
     { "year": 2020, "description": "NC-9 took in Hoke County and part of Moore while giving up its shares of Bladen and Cumberland. It remained Republican-leaning.", "pviNew": 6, "pviOld": 8 },
     { "year": 2016, "description": "NC-9 was rebuilt along the southern border, taking Scotland, Robeson, Richmond and Anson counties, all of Union and shares of Bladen and Cumberland, while giving up Iredell and most of Mecklenburg. It stayed solidly Republican.", "pviNew": 8 }
   ],
   "3710": [
     { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-10's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 9, "pviOld": 10 },
     { "year": 2024, "description": "NC-10 moved east into the Piedmont Triad, taking Yadkin County and 66% of Forsyth while giving up Burke, Cleveland, Alexander and Rutherford counties. It remained solidly Republican.", "pviNew": 10, "pviOld": 22 },
-    { "year": 2022, "description": "NC-10 was redrawn, adding Burke, Alexander and Iredell counties, giving up Polk County and cutting its share of Gaston County from 99% to 29%. It was safely Republican.", "pviNew": 22, "pviOld": 21 },
+    { "year": 2022, "description": "NC-10 moved back west, adding Burke, Cleveland and Alexander counties and shares of Rutherford and Gaston while giving up Surry, Stokes, Yadkin and Rockingham counties and its share of Forsyth. It was safely Republican.", "pviNew": 22, "pviOld": 21 },
     { "year": 2020, "description": "NC-10 moved east across the Piedmont, adding Rockingham, Surry, Stokes and Yadkin counties and part of Forsyth while giving up Gaston, Cleveland, Polk, Rutherford and its share of Buncombe. It became safely Republican.", "pviNew": 21, "pviOld": 12 },
     { "year": 2016, "description": "NC-10's western Piedmont lines were left unchanged by the 2016 map. It remained solidly Republican.", "pviNew": 12 }
   ],
   "3711": [
     { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-11's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 5, "pviOld": 8 },
     { "year": 2024, "description": "NC-11 added Avery and Mitchell counties in the mountains and gave up half of Polk County and its share of Rutherford. It stayed solidly Republican.", "pviNew": 8, "pviOld": 8 },
-    { "year": 2022, "description": "NC-11 was redrawn, adding Polk County, taking 47% of Rutherford County and taking in the rest of Buncombe County. It was solidly Republican.", "pviNew": 8, "pviOld": 9 },
+    { "year": 2022, "description": "NC-11 changed only at its northeastern edge, giving up Avery County and nearly all of Mitchell. It was solidly Republican.", "pviNew": 8, "pviOld": 9 },
     { "year": 2020, "description": "NC-11 added Avery and Polk counties and part of Rutherford while giving up Burke and Caldwell, keeping its 14-county mountain core. It remained solidly Republican.", "pviNew": 9, "pviOld": 14 },
     { "year": 2016, "description": "NC-11 gave up Avery County, otherwise keeping its far-western mountain footprint. It stayed solidly Republican.", "pviNew": 14 }
   ],
   "3712": [
     { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-12's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": -24, "pviOld": -23 },
     { "year": 2024, "description": "NC-12 gave up its share of Cabarrus County and saw its share of Mecklenburg fall from 58% to 48%, tightening around Charlotte. It remained safely Democratic.", "pviNew": -23, "pviOld": -13 },
-    { "year": 2022, "description": "NC-12 was redrawn, taking 39% of Cabarrus County and cutting its share of Mecklenburg County from 82% to 58%. It was solidly Democratic.", "pviNew": -13, "pviOld": -19 },
+    { "year": 2022, "description": "NC-12 was redrawn, taking 39% of Cabarrus County and cutting its share of Mecklenburg County from 84% to 58%. It was solidly Democratic.", "pviNew": -13, "pviOld": -19 },
     { "year": 2020, "description": "NC-12 stayed wholly inside Mecklenburg County, covering the same county as before, though its lines within Charlotte were adjusted. It remained safely Democratic.", "pviNew": -19, "pviOld": -18 },
     { "year": 2016, "description": "NC-12 was the other district struck down as a racial gerrymander: the narrow band that had run up Interstate 85 from Charlotte through Davidson, Rowan, Guilford, Cabarrus and Forsyth was replaced by a compact seat with 81% of Mecklenburg County. It remained safely Democratic.", "pviNew": -18 }
   ],
   "3713": [
     { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-13's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 8, "pviOld": 11 },
     { "year": 2024, "description": "NC-13 was rebuilt north and east of the Triangle, taking Person, Caswell, Franklin, Lee and Granville counties and the rest of Harnett while giving up Wayne County and part of Wake. The change turned a competitive seat into a solidly Republican one.", "pviNew": 11, "pviOld": 2 },
-    { "year": 2022, "description": "NC-13 was redrawn, adding Johnston County, taking 67% of Harnett County and taking 53% of Wayne County. It was a Republican-leaning toss-up.", "pviNew": 2, "pviOld": 20 },
+    { "year": 2022, "description": "NC-13 was moved wholesale from the central Piedmont, where it held Alamance, Caswell, Davidson, Davie, Person, Randolph and Rowan counties, to the southern Triangle, taking all of Johnston County, 67% of Harnett, 53% of Wayne and 41% of Wake. It was a Republican-leaning toss-up.", "pviNew": 2, "pviOld": 20 },
     { "year": 2020, "description": "NC-13 was rebuilt across the central Piedmont, taking Alamance, Caswell, Person and Randolph counties plus shares of Chatham and Lee while giving up its share of Guilford. It went from a competitive seat to a safely Republican one.", "pviNew": 20, "pviOld": 6 },
     { "year": 2016, "description": "NC-13 was relocated from the northeast of the state to the central Piedmont, built on Davidson, Davie and Iredell counties with shares of Guilford and Rowan, after giving up Wayne, Wilson, Wake, Franklin, Nash, Vance, Edgecombe and Granville. It became a Republican-leaning seat.", "pviNew": 6 }
   ],

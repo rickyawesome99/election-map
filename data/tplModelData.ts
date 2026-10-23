@@ -35,7 +35,7 @@ export interface RaceModelInputs {
 }
 
 // ── Global TPL model constants (shared across all states) ───────────────────
-// Documented on /methodology/state-tpl (and district-tpl for BS_WEIGHT_K), which reads these values
+// Documented on /analysis/internal-methodology/state-tpl (and district-tpl for BS_WEIGHT_K), which reads these values
 // live. A NEW key must be added to DOCUMENTED_IN in components/methodology/TplMethodology.tsx (the
 // type-check fails otherwise), and any change gets an entry in data/methodologyChangelog.ts.
 
@@ -196,7 +196,7 @@ export const STATE_RACE_INPUTS: Record<string, RaceModelInputs[]> = {
 // RACE_SIGMA: per-office race-level error (pts) beyond the shared national shock —
 //   robust within-year spread from scripts/forwardBacktest.ts (see its "recommended
 //   constants" block; re-run after any model change).
-// Documented on /methodology, which reads these values live. A NEW key must be added to
+// Documented on /analysis/internal-methodology, which reads these values live. A NEW key must be added to
 // DOCUMENTED_IN in components/methodology/ForecastMethodology.tsx (the type-check fails otherwise);
 // any change gets an entry in data/methodologyChangelog.ts, and `npx tsx scripts/forwardBacktest.ts
 // --env struct --emit` regenerates the page's Calibration tables.
@@ -237,6 +237,17 @@ export const FORECAST_CONSTANTS = {
   // nominee even at share 0 (mean −5.6, −4.0 without Hochul), so no advantage is
   // credited; a negative value would be an extrapolation from n=9.
   APPOINTED_INCUMBENCY_SHARE: 0,
+  // Competitive-seat incumbency (2026-10-23). House incumbents in close seats have beaten the
+  // model on both sides (forward backtest, model only: competitive Republican incumbents +1.7,
+  // Democratic −1.1, both years), while safe-seat misses do not move seats. Extra points toward
+  // the incumbent, full at an even pre-incumbency margin (TPL + environment) and fading linearly
+  // to 0 at ±COMPETITIVE_INCUMBENCY_WIDTH:  pts = sign × K × max(0, 1 − |TPL + env| / width).
+  // scripts/forwardBacktest.ts --horizon-compinc, fixed set of close House races (|model| ≤ 6),
+  // K 2 width 10: MAE 2.74 → 2.65 (49 days out), 2.77 → 2.70 (28), 2.68 → 2.67 (11); Brier
+  // 0.141 → 0.140 / 0.138 → 0.136 / 0.146 → 0.144; leave-one-year-out beats live in both years at
+  // 28 and 49 days, one of two at 11. K 3+ and fades of 15 are worse. Senate / Governor untested: 0.
+  COMPETITIVE_INCUMBENCY: { H: 2, S: 0, G: 0 } as Record<"H" | "S" | "G", number>,
+  COMPETITIVE_INCUMBENCY_WIDTH: 10,
   // Layer B observable prior on candidate effects: the ridge shrinkage target (and the
   // forward term for a nominee with no track record) is an OLS of race residuals on
   // these features — see buildObservablePrior in lib/tplCompute.ts. Empty = off.

@@ -1,4 +1,4 @@
-// Revision history of every model documented on /methodology.
+// Revision history of every model documented on /analysis/internal-methodology (Internal Methodology).
 //
 // RULE: any change to how a number is calculated — a constant, a formula, a data rule, a term
 // switched on or off — gets an entry here in the same change, newest first. The Methodology
@@ -9,6 +9,9 @@
 //   kind     change = the model's output moved · tested = evaluated and NOT adopted (kept so
 //            the same idea is not re-tested blind) · data = an input fix that moved results
 //   effect   measured consequence (backtest error, live seat counts…), when there is one
+//
+// This log is shown on Internal Methodology only. Public page: when a change alters what a reader is told on /methodology (a new ingredient, a
+// removed one, a new rule), also edit the matching tab in components/methodology-public/.
 
 export type MethodologyModel = "forecast" | "state-tpl" | "district-tpl" | "county-tpl" | "war" | "precinct-district" | "turnout" | "state-leg";
 
@@ -22,6 +25,24 @@ export interface MethodologyChange {
 }
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
+  {
+    date: "2026-10-23", models: ["forecast"], kind: "data",
+    title: "Governor money filled for the 15 races that had none, and Alabama's Democratic total corrected",
+    detail: "Fifteen 2026 governor races (AK AR CT HI ID KS MD ME NE OK OR RI SD TN VT) had no receipts, because TransparencyUSA does not cover them and now blocks scripted access. They were filled from each state's own campaign-finance portal: total contributions to the nominee's committee from January 1, 2025 (or the committee's start), cash plus in-kind, loans excluded. Connecticut counts Lamont's personal funds ($15.4M) and Fazio's Citizens' Election Program grants ($18.8M), as the FollowTheMoney totals in the 2018 and 2022 rows did. Idaho's Sunshine portal was down, so its two figures are rounded news estimates (Pickens about $0.30M, Little about $3.6M), to be re-pulled. Alabama's Doug Jones had $0 from a TransparencyUSA coverage gap and now has $6.48M from the Alabama FCPA download; Tuberville moves $16.27M → $16.63M. Coverage ends between July 23 (Kansas) and October 21 (Oregon), because several states' pre-general reports are not due until October 26–29. data/fundraisingData.ts was regenerated with scripts/generate-fundraising-data.py, which now labels these rows \"State campaign-finance filings\".",
+    effect: "No governor race moved by more than 0.9 points. Rhode Island D+28.2 → D+29.1; Alaska D+2.1 → D+2.9 (P(Democratic win) 64% → 69%); Tennessee R+15.4 → R+16.2; Alabama R+18.1 → R+17.3; Oklahoma R+15.6 → R+14.8; Oregon D+7.5 → D+6.8 (91% → 88%); Kansas R+5.9 → R+6.1. Expected Democratic wins among the 36 races 20.00 → 20.02. One rating change: Oklahoma Safe R → Likely R (Munson $1.71M vs Mazzei $1.47M, his $11.9M in loans excluded).",
+  },
+  {
+    date: "2026-10-23", models: ["forecast"], kind: "change",
+    title: "House incumbents in competitive seats get up to 2 extra points",
+    detail: "New FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY {H 2, S 0, G 0} and COMPETITIVE_INCUMBENCY_WIDTH 10: a House incumbent gets sign × 2 × max(0, 1 − |TPL + environment| / 10) on top of the fixed 3 — the full 2 when the seat is even before incumbency, 1 at a 5-point lean, nothing beyond 10. competitiveIncumbencyPts / raceIncumbencyPts in lib/tplCompute.ts; projectRace adds it to the Model; the money term's structural gap keeps the plain incumbency, as in the backtest. The race pages' Incumbent row and the methodology worked example now show the total, and the Incumbent tooltip explains the extra. The forward harness applies the same term (compInc, defaulting to the live constants), and the Calibration tables were re-emitted. Evidence in the next entry: incumbents in close House seats beat the model on both sides in 2022 and 2024; on a fixed set of close races the term cuts error at every horizon and passes leave-one-year-out at 28 and 49 days.",
+    effect: "House map (every race given to its favorite) 234 → 233 Democratic; expected Democratic seats 229.8 → 228.8; 80% range 214–247 → 213–246; P(Democratic control) 82% → 81%. Senate and Governors unchanged. 56 House races move. WI-03 (Van Orden) flips to the Republican side, D+0.9 → R+0.7. Closer for Democrats: PA-07 D+1.2 → D+0.1, PA-10 D+1.3 → D+0.4, CO-08 D+1.8 → D+0.9, OH-07 D+1.1 → D+0.6, IA-03 D+2.3 → D+1.1, AZ-06 D+2.7 → D+1.6, IA-01 Likely D → Lean D. Safer for Democratic incumbents: FL-25 D+0.3 → D+1.6, OH-09 D+1.1 → D+2.2, WA-03 and TX-34 Lean D → Likely D. PA-08 R+0.3 → R+1.4; OH-10 and OH-15 Lean R → Likely R.",
+  },
+  {
+    date: "2026-10-23", models: ["forecast"], kind: "tested",
+    title: "Where the House model misses, and extra incumbency in competitive seats (the test behind the change above)",
+    detail: "The House model's Republican-side miss (forward backtest, mid-September, model only) sits mostly in safe seats: safe Democratic-held +3.5 (2022 +2.1, 2024 +5.0), safe Republican-held +1.3, but competitive Republican incumbents +1.7 (2022 +2.2, 2024 +1.6) and competitive Democratic incumbents −1.1 (−1.4, −0.7): incumbents in close seats beat the model on both sides, and forecasts within 3 pts missed −0.8. A uniform House correction learned leave-one-year-out (+2.7 / +1.0) cut House MAE in 2024 but lowered close-race calls (2022 75% → 70%, 2024 78% → 74%), so it is not a fix. scripts/forwardBacktest.ts --horizon-compinc adds K pts toward a House incumbent, full at an even pre-incumbency margin and fading to 0 at ±width, scored on a fixed set of close races (|model| ≤ 6). K 2 width 10: close-race MAE 2.74 → 2.65 (49 days), 2.77 → 2.70 (28), 2.68 → 2.67 (11); Brier 0.141 → 0.140, 0.138 → 0.136, 0.146 → 0.144; all-race MAE 4.244 → 4.237 at 11 days; the leave-one-year-out choice beats live in both years at 28 and 49 days and in one of two at 11. K 3+ and wider fades are worse. Consistent with Split Ticket's finding that battleground House incumbents over-perform.",
+    effect: "Adopted the same day as COMPETITIVE_INCUMBENCY (entry above).",
+  },
   {
     date: "2026-10-23", models: ["forecast"], kind: "tested",
     title: "Poll-age cutoff and less trust in high-undecided polls: neither adopted",

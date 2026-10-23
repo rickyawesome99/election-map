@@ -129,7 +129,7 @@ export function DistrictDetail({ d, stateId, medianDistrictTpl, onRace, onFormul
             BS is the boundary-shift strip: how far the district a House race was actually run in leans from today&apos;s lines, added as points so the row reads as if it were run on the {d.eraStart} map. The same shift sets the row&apos;s weight, so a race on very different lines counts for little.
             {oldest && newest && oldest.year !== newest.year && <> Here the {oldest.year} race carries BS {signed(oldest.BS_pts, 1)} at weight {oldest.aggWeight.toFixed(2)}, against BS {signed(newest.BS_pts, 1)} at weight {newest.aggWeight.toFixed(2)} for {newest.year}.</>}
             {" "}Presidential rows are re-aggregated from precincts onto the {d.eraStart} lines, so they carry no BS.{" "}
-            <Link href="/methodology/district-tpl" className="underline">How District TPL works <ArrowOut /></Link>
+            <Link href="/analysis/internal-methodology/district-tpl" className="underline">How District TPL works <ArrowOut /></Link>
           </p>
           <p className="mt-2 text-[11px]" style={VERY_MUTED}>State page: <Link href={stateHref(stateId)} className="underline">{d.stateName}</Link></p>
         </div>

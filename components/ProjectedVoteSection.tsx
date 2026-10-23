@@ -130,7 +130,7 @@ export default function ProjectedVoteSection({ p, candidates, state }: { p: Proj
           : decided
           ? "Only one candidate is on the ballot, so every projected vote goes to them. The total is the 2026 turnout estimate, figured as if the seat were contested."
           : <>The forecast margin applied to the 2026 turnout estimate, county by county, with each county&apos;s 2024 third-party share set aside for other candidates.</>}{" "}
-        <Link href="/methodology/turnout#county-results" className="underline underline-offset-2">How this is built</Link>.
+        <Link href="/analysis/internal-methodology/turnout#county-results" className="underline underline-offset-2">How this is built</Link>.
       </p>
     </div>
   );

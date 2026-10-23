@@ -34,6 +34,8 @@ SOURCE_LABELS = [
     ("FollowTheMoney", "FollowTheMoney (state filings)"),
     ("TransparencyUSA", "TransparencyUSA (state filings)"),
     ("MA OCPF", "MA OCPF (state filings)"),
+    ("State portal", "State campaign-finance filings"),
+    ("News estimate", "News reports of state filings (approximate)"),
 ]
 
 def source_label(raw):

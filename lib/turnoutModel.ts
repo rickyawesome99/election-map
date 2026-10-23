@@ -12,7 +12,7 @@ import { countyRunoffScale, cvapOf, parseCsv, presYears, redrawnBetween, statewi
 import type { ProjectedRace, ProjectedRaceDetail, ProjectedCountyRow, ProjectionStateSlice, ProjectionCountySlice, TurnoutOffice } from "@/lib/turnoutTypes";
 
 // ── The 2026 turnout estimate ─────────────────────────────────────────────────
-// A level × distribution model. Every constant below is documented on /methodology/turnout
+// A level × distribution model. Every constant below is documented on /analysis/internal-methodology/turnout
 // (DOCUMENTED_IN in components/methodology/TurnoutMethodology.tsx) and every change to one goes in
 // data/methodologyChangelog.ts.
 //

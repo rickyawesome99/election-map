@@ -40,7 +40,7 @@ test("turnout page loads the district slice and the 2026 estimate", async ({ pag
 });
 
 test("turnout methodology tab renders its backtest", async ({ page }) => {
-  await page.goto("/methodology/turnout");
+  await page.goto("/analysis/internal-methodology/turnout");
   await expect(page.getByRole("heading", { name: "2022 predicted from 2018" })).toBeVisible({ timeout: 20_000 });
   await expect(page.getByText("SHRINK_VOTES grid")).toBeVisible();
 });

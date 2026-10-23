@@ -1,0 +1,101 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { electionYear } from "@/data/forecastData";
+import { METHODOLOGY_CHANGELOG } from "@/data/methodologyChangelog";
+import ForecastMethodology from "@/components/methodology/ForecastMethodology";
+import { StateTplMethodology, DistrictTplMethodology, CountyTplMethodology } from "@/components/methodology/TplMethodology";
+import WarMethodology from "@/components/methodology/WarMethodology";
+import PrecinctMethodology from "@/components/methodology/PrecinctMethodology";
+import TurnoutMethodology from "@/components/methodology/TurnoutMethodology";
+import StateLegMethodology from "@/components/methodology/StateLegMethodology";
+import SourcesMethodology from "@/components/methodology/SourcesMethodology";
+import ChangeLog, { RevisionHistory } from "@/components/methodology/ChangeLog";
+import MethodologyToc from "@/components/methodology/MethodologyToc";
+import { StandfirstHeader } from "@/components/StandfirstHeader";
+
+// Internal Methodology: the working specification, one tab per model. Each tab reads its constants
+// and fitted values from the code that runs the model, so the numbers cannot drift; when the
+// STRUCTURE of a calculation changes, edit the tab's component and add an entry to
+// data/methodologyChangelog.ts. The public /methodology page is a plain-language version derived from
+// this one (components/methodology-public/); when a change alters what a reader is told there, edit
+// the matching public tab too.
+const TABS = [
+  { key: "forecast", label: "Forecast", blurb: "House, Senate and Governor projections" },
+  { key: "state-tpl", label: "State TPL", blurb: "A state's structural lean" },
+  { key: "district-tpl", label: "District TPL", blurb: "A district's lean on the 2026 lines" },
+  { key: "county-tpl", label: "County TPL", blurb: "The state pipeline in one county" },
+  { key: "war", label: "WAR", blurb: "Candidate WAR, Expected Result, Vs. Opponent" },
+  { key: "precinct-district", label: "Precinct districts", blurb: "Precinct pages: eras, crosswalk, 2026 outlook, targets, the legislature-model comparison" },
+  { key: "turnout", label: "Turnout", blurb: "Turnout measures and the 2026 turnout estimate" },
+  { key: "state-leg", label: "Legislative atlas", blurb: "State legislative district pages: presidential results by map era, candidates, redistricting" },
+  { key: "changelog", label: "Change Log", blurb: "What changed, and when" },
+  { key: "sources", label: "Sources", blurb: "Every external source, what it feeds and the file it lands in" },
+] as const;
+type TabKey = (typeof TABS)[number]["key"];
+
+// Every tab is prerendered; without this an optional catch-all renders on demand.
+export function generateStaticParams() {
+  return [{ model: [] }, ...TABS.map((t) => ({ model: [t.key] }))];
+}
+
+function parseTab(segments: string[] | undefined): TabKey {
+  if (!segments || segments.length === 0) return "forecast";
+  if (segments.length > 1) notFound();
+  const tab = TABS.find((t) => t.key === segments[0]);
+  if (!tab) notFound();
+  return tab.key;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ model?: string[] }> }) {
+  const active = parseTab((await params).model);
+  const tab = TABS.find((t) => t.key === active)!;
+  return { title: `${tab.label} · Internal Methodology — ${electionYear} Forecast`, description: `${tab.label} — ${tab.blurb.toLowerCase()}.`, robots: { index: false } };
+}
+
+export default async function MethodologyPage({ params }: { params: Promise<{ model?: string[] }> }) {
+  const active = parseTab((await params).model);
+  const lastChange = METHODOLOGY_CHANGELOG[0]?.date;
+  return (
+    <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
+      <div>
+        <div className="mx-auto max-w-6xl px-4 pt-6 sm:px-6 sm:pt-8">
+          <StandfirstHeader title="Internal Methodology" size="large" bare>
+            The working specification: every constant, formula and fitted value, read live from the code that produces it, with
+            the backtests behind each choice and a log of every change. Readers get the plain-language version
+            on <Link href="/methodology" className="underline underline-offset-2">Methodology</Link>.{lastChange && <> The models last changed on {new Date(`${lastChange}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", timeZone: "UTC" })}.</>}
+          </StandfirstHeader>
+          <nav aria-label="Models" className="scrollbar-none -mx-4 mt-6 flex gap-1 overflow-x-auto overflow-y-hidden px-4 sm:mx-0 sm:px-0" style={{ boxShadow: "inset 0 -1px 0 var(--app-border)" }}>
+            {TABS.map((t) => {
+              const on = t.key === active;
+              return (
+                <Link key={t.key} href={t.key === "forecast" ? "/analysis/internal-methodology" : `/analysis/internal-methodology/${t.key}`} aria-current={on ? "page" : undefined} title={t.blurb}
+                  className="shrink-0 px-3 py-2.5 text-sm font-semibold transition-colors"
+                  style={{ color: on ? "var(--app-text-primary)" : "var(--app-text-muted)", borderBottom: `2px solid ${on ? "var(--app-text-primary)" : "transparent"}` }}>
+                  {t.label}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
+      </div>
+
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-x-10 px-4 pb-16 sm:px-6 lg:grid-cols-[minmax(0,1fr)_13rem]">
+        <main id="methodology-content" className="min-w-0">
+          {active === "forecast" && <><ForecastMethodology /><RevisionHistory model="forecast" /></>}
+          {active === "state-tpl" && <><StateTplMethodology /><RevisionHistory model="state-tpl" /></>}
+          {active === "district-tpl" && <><DistrictTplMethodology /><RevisionHistory model="district-tpl" /></>}
+          {active === "county-tpl" && <><CountyTplMethodology /><RevisionHistory model="county-tpl" /></>}
+          {active === "war" && <><WarMethodology /><RevisionHistory model="war" /></>}
+          {active === "precinct-district" && <><PrecinctMethodology /><RevisionHistory model="precinct-district" /></>}
+          {active === "turnout" && <><TurnoutMethodology /><RevisionHistory model="turnout" /></>}
+          {active === "state-leg" && <><StateLegMethodology /><RevisionHistory model="state-leg" /></>}
+          {active === "changelog" && <ChangeLog />}
+          {active === "sources" && <SourcesMethodology />}
+        </main>
+        <aside className="hidden lg:block">
+          <div className="sticky top-4 max-h-[calc(100vh-2rem)] overflow-y-auto pt-8"><MethodologyToc key={active} contentId="methodology-content" /></div>
+        </aside>
+      </div>
+    </div>
+  );
+}

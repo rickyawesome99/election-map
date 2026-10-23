@@ -50,7 +50,7 @@ function YearTable({ aggs }: { aggs: YearAggregation[] }) {
 const stripConstants = (): ConstantRow[] => {
   const inc = incumbentAdvantage();
   return [
-    { name: "incumbency", value: `H ${inc.H.toFixed(1)} · S ${inc.S.toFixed(1)} · G ${inc.G.toFixed(1)}`, basis: "fitted", meaning: "Points the incumbent's party is worth, stripped toward the other party. Senate and Governor are fitted inside the fit; House is a fixed 3. President and State Legislature carry none.", source: <>See {link("/methodology/forecast#incumbency", "Forecast → Incumbency")}.</> },
+    { name: "incumbency", value: `H ${inc.H.toFixed(1)} · S ${inc.S.toFixed(1)} · G ${inc.G.toFixed(1)}`, basis: "fitted", meaning: "Points the incumbent's party is worth, stripped toward the other party. Senate and Governor are fitted inside the fit; House is a fixed 3. President and State Legislature carry none.", source: <>See {link("/analysis/internal-methodology/forecast#incumbency", "Forecast → Incumbency")}.</> },
     { name: "APPOINTED_INCUMBENCY_SHARE", value: F.APPOINTED_INCUMBENCY_SHARE, basis: "decision", meaning: "Share of the advantage stripped for an incumbent who had never won the seat. 0 = treated as an open seat." },
     { name: "FF_K · FF_MAX", value: `${FF_K} · ±${FF_MAX}`, basis: "calibrated", meaning: "Fundraising strip = −clamp(FF_K × gap%, ±FF_MAX), gap% = (R$ − D$)/(R$ + D$) × 100. Applied only where both receipts are known; never to President or imputed rows.", source: "tplCalibrate FF sweep on the clean presidential target. Larger k overcorrects: the receipts gap partly double-counts incumbency. (The forecast uses a different, residual-basis money rule.)" },
   ];
@@ -93,13 +93,13 @@ export function StateTplMethodology() {
   return (
     <>
       <Section id="overview" kicker="State TPL · True Partisan Lean" title="A state's lean in a neutral year"
-        lede={<>State TPL is the margin a generic Republican against a generic Democrat would produce in a neutral national year. It is built from every eligible race from 2016 to 2025 — President, Senate, Governor, House and State Legislature, odd years included — by stripping three additive distortions from each and averaging across offices and years. It is the lean the {link("/methodology/forecast", "Senate and Governor forecasts")} start from. Live ledgers: {link("/model", "TPL tab")}.</>}>
+        lede={<>State TPL is the margin a generic Republican against a generic Democrat would produce in a neutral national year. It is built from every eligible race from 2016 to 2025 — President, Senate, Governor, House and State Legislature, odd years included — by stripping three additive distortions from each and averaging across offices and years. It is the lean the {link("/analysis/internal-methodology/forecast", "Senate and Governor forecasts")} start from. Live ledgers: {link("/model", "TPL tab")}.</>}>
         <Formula lines={[
           "margin(state, race, year) = lean + β*·E(year) + incumbency + fundraising + residual",
           "NM   = Adjusted margin + incumbency strip + fundraising strip − β*·E(year)      each strip additive, applied once",
           "TPL  = Σ year weight × WRS(year)        WRS = type-weighted mean of that year's NMs",
           "Centered TPL = TPL − median of the 50 state TPLs",
-        ]} note={<>R-positive throughout. Candidate quality is deliberately not a term: outlier candidates are downweighted instead, and their residuals become {link("/methodology/war", "WAR")}.</>} />
+        ]} note={<>R-positive throughout. Candidate quality is deliberately not a term: outlier candidates are downweighted instead, and their residuals become {link("/analysis/internal-methodology/war", "WAR")}.</>} />
         <DataTable align="lr" maxWidth="max-w-md" head={["Now", ""]} rows={[
           ["Races in the fit", fit.rowsUsed.toLocaleString()],
           ["Races aggregated / imputed / statewide rows Huber-downweighted / House years Huber-downweighted", `${allRaces.length.toLocaleString()} / ${imputedN} / ${downweighted} / ${houseYearsDown}`],
@@ -114,7 +114,7 @@ export function StateTplMethodology() {
         <Defs items={[
           { term: "Eligible race", def: "Adjusted = Raw, untouched." },
           { term: "Ineligible race (⊘)", def: <>Adjusted is imputed from the seat&rsquo;s nearest presidential result: district-level for a House seat (restricted to the boundary vintage the race was run on), statewide otherwise. Imputed rows skip the incumbency and fundraising strips, strip the environment of the SOURCE presidential year, and enter aggregation at weight <N>{IMPUTED_RACE_WEIGHT}</N>. An imputed House row instead keeps weight <N>{IMPUTED_HOUSE_ROW_WEIGHT}</N> × the source presidential year&rsquo;s turnout share: it is that district&rsquo;s share of the state&rsquo;s House vote, and halving it would drop half the district out of the state&rsquo;s sum.</> },
-          { term: "State Legislature", def: <>Two rows per year over every chamber on the ballot that year, built district by district (<Link href="/methodology/state-leg" className="underline underline-offset-2">Legislative atlas</Link>). The <em>contested pool</em> is the margin of the districts where both major parties drew votes, as a share of their full total, weighted by those votes. The <em>unopposed pool</em> (⊘) is imputed: each uncontested, one-party or uncounted district contributes its presidential margin on the map it was run on, weighted by that presidential vote scaled to the chamber&apos;s legislative-to-presidential turnout ratio; the row strips the environment of that presidential year. A district on the year&apos;s map with no results row at all (MEDSL&apos;s 2024 files and Louisiana&apos;s omit unprinted unopposed races) joins the unopposed pool when its seat was up — every seat, in a chamber that elects them all at once. A staggered chamber&apos;s seats <em>not up</em> join the contested row as estimates, so the row measures the whole chamber rather than whichever seat class was on the ballot (the classes can differ by several points in lean): each is its presidential margin plus the gap the contested seats ran from theirs that year (<a href="#not-up" className="underline underline-offset-2">below</a>). Before 2026-10-10 the entry was the raw chamber aggregate, which counted a printed unopposed race as a 100–0 result and so overstated the dominant party in every state that prints them. A year counts once every chamber that WAS on the ballot is sourced (staggered senates sit out some years; Nebraska is unicameral).</> },
+          { term: "State Legislature", def: <>Two rows per year over every chamber on the ballot that year, built district by district (<Link href="/analysis/internal-methodology/state-leg" className="underline underline-offset-2">Legislative atlas</Link>). The <em>contested pool</em> is the margin of the districts where both major parties drew votes, as a share of their full total, weighted by those votes. The <em>unopposed pool</em> (⊘) is imputed: each uncontested, one-party or uncounted district contributes its presidential margin on the map it was run on, weighted by that presidential vote scaled to the chamber&apos;s legislative-to-presidential turnout ratio; the row strips the environment of that presidential year. A district on the year&apos;s map with no results row at all (MEDSL&apos;s 2024 files and Louisiana&apos;s omit unprinted unopposed races) joins the unopposed pool when its seat was up — every seat, in a chamber that elects them all at once. A staggered chamber&apos;s seats <em>not up</em> join the contested row as estimates, so the row measures the whole chamber rather than whichever seat class was on the ballot (the classes can differ by several points in lean): each is its presidential margin plus the gap the contested seats ran from theirs that year (<a href="#not-up" className="underline underline-offset-2">below</a>). Before 2026-10-10 the entry was the raw chamber aggregate, which counted a printed unopposed race as a 100–0 result and so overstated the dominant party in every state that prints them. A year counts once every chamber that WAS on the ballot is sourced (staggered senates sit out some years; Nebraska is unicameral).</> },
           { term: "Senate specials", def: "A state with a regular and a special Senate race in one year carries both rows; both feed that year's Senate mean." },
         ]} />
       </Section>
@@ -225,7 +225,7 @@ export function StateTplMethodology() {
       <Section id="files" kicker="Reference" title="Code and commands">
         <Block label="Constant index" meta="every key of TPL_GLOBAL_CONSTANTS, and where it is documented">
           <div className="flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
-            {Object.entries(DOCUMENTED_IN).map(([name, where]) => <Link key={name} href={`/methodology/${where}`} className="hover:underline"><Code>{name}</Code></Link>)}
+            {Object.entries(DOCUMENTED_IN).map(([name, where]) => <Link key={name} href={`/analysis/internal-methodology/${where}`} className="hover:underline"><Code>{name}</Code></Link>)}
           </div>
         </Block>
         <FilesAndCommands files={[
@@ -264,7 +264,7 @@ export function DistrictTplMethodology() {
   return (
     <>
       <Section id="overview" kicker="District TPL" title="A district's lean, on the 2026 lines"
-        lede={<>District TPL runs the {link("/methodology/state-tpl", "State TPL")} pipeline at district level: the same additive strips, the parent state&rsquo;s β*, the same decay, coverage and Huber weighting — so district and state leans sit on one scale. Its inputs are the district&rsquo;s presidential results re-aggregated onto the 2026 map, plus every House race from 2016 to 2024, each relocated onto today&rsquo;s lines. It is the lean every {link("/methodology/forecast", "House forecast")} starts from.</>}>
+        lede={<>District TPL runs the {link("/analysis/internal-methodology/state-tpl", "State TPL")} pipeline at district level: the same additive strips, the parent state&rsquo;s β*, the same decay, coverage and Huber weighting — so district and state leans sit on one scale. Its inputs are the district&rsquo;s presidential results re-aggregated onto the 2026 map, plus every House race from 2016 to 2024, each relocated onto today&rsquo;s lines. It is the lean every {link("/analysis/internal-methodology/forecast", "House forecast")} starts from.</>}>
         <Formula lines={[
           "President rows (2016 · 2020 · 2024, on 2026 lines):   NM = Raw − β*·E(year)",
           "House rows (2016–2024):                               NM = Raw + incumbency strip + fundraising strip + BS − β*·E(year)",
@@ -307,7 +307,7 @@ export function DistrictTplMethodology() {
 
       <Section id="strips" kicker="Shared with State TPL" title="Strips and constants">
         <Constants rows={stripConstants().filter((c) => c.name !== "APPOINTED_INCUMBENCY_SHARE")} />
-        <P>Environment E(year), β*, year decay, type weights and HUBER_C are exactly those documented under {link("/methodology/state-tpl#fit", "State TPL")}. With only President and House present, the base weights P {G.RACE_TYPE_WEIGHTS.P} / H {G.RACE_TYPE_WEIGHTS.H} redistribute to {pct(G.RACE_TYPE_WEIGHTS.P / (G.RACE_TYPE_WEIGHTS.P + G.RACE_TYPE_WEIGHTS.H))} / {pct(G.RACE_TYPE_WEIGHTS.H / (G.RACE_TYPE_WEIGHTS.P + G.RACE_TYPE_WEIGHTS.H))} in a presidential year, and a midterm year is House alone at coverage {G.RACE_TYPE_WEIGHTS.H}.</P>
+        <P>Environment E(year), β*, year decay, type weights and HUBER_C are exactly those documented under {link("/analysis/internal-methodology/state-tpl#fit", "State TPL")}. With only President and House present, the base weights P {G.RACE_TYPE_WEIGHTS.P} / H {G.RACE_TYPE_WEIGHTS.H} redistribute to {pct(G.RACE_TYPE_WEIGHTS.P / (G.RACE_TYPE_WEIGHTS.P + G.RACE_TYPE_WEIGHTS.H))} / {pct(G.RACE_TYPE_WEIGHTS.H / (G.RACE_TYPE_WEIGHTS.P + G.RACE_TYPE_WEIGHTS.H))} in a presidential year, and a midterm year is House alone at coverage {G.RACE_TYPE_WEIGHTS.H}.</P>
       </Section>
 
       {exRace && (
@@ -322,7 +322,7 @@ export function DistrictTplMethodology() {
       <Section id="limits" kicker="Open items" title="Known limitations">
         <Defs items={[
           { term: "No district holdout", def: "Neither BS_WEIGHT_K nor the district weighting has its own validation target; the forward backtest's House error is the only indirect check." },
-          { term: "Self-influence", def: <>A member&rsquo;s own House margins feed their district&rsquo;s TPL, which slightly shrinks House {link("/methodology/war", "WAR")}.</> },
+          { term: "Self-influence", def: <>A member&rsquo;s own House margins feed their district&rsquo;s TPL, which slightly shrinks House {link("/analysis/internal-methodology/war", "WAR")}.</> },
           { term: "Uniform-shift assumption", def: "Home-county overperformance does not transfer to voters a member never represented." },
         ]} />
       </Section>
@@ -353,7 +353,7 @@ export function CountyTplMethodology() {
   return (
     <>
       <Section id="overview" kicker="County TPL" title="The state pipeline, measured in one county"
-        lede={<>County TPL takes the same statewide races the {link("/methodology/state-tpl", "State TPL")} uses and reads them at county granularity. Every formula, strip and weight is the shared code path, so a change to the state model changes every county with it. It appears on each county page (Historical → a county) and feeds no forecast.</>}>
+        lede={<>County TPL takes the same statewide races the {link("/analysis/internal-methodology/state-tpl", "State TPL")} uses and reads them at county granularity. Every formula, strip and weight is the shared code path, so a change to the state model changes every county with it. It appears on each county page (Historical → a county) and feeds no forecast.</>}>
         <Formula lines={[
           "NM         = county Adjusted margin + incumbency strip + fundraising strip − β*(parent state) × E(year)",
           "anchor     = the State TPL aggregation over the county's President, Senate and Governor rows",
@@ -386,7 +386,7 @@ export function CountyTplMethodology() {
 
       <Section id="shared" kicker="Shared with State TPL" title="Strips and constants">
         <Constants rows={stripConstants()} />
-        <P>Eligibility, E(year), β*, race-type weights, year decay and coverage are exactly those documented under {link("/methodology/state-tpl", "State TPL")}.</P>
+        <P>Eligibility, E(year), β*, race-type weights, year decay and coverage are exactly those documented under {link("/analysis/internal-methodology/state-tpl", "State TPL")}.</P>
       </Section>
 
       <Section id="files" kicker="Reference" title="Code and commands">

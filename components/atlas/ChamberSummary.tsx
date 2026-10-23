@@ -189,7 +189,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
         </div>
         {notes.length > 0 && (
           <div className="mt-2 text-xs leading-relaxed" style={{ color: FAINT }}>
-            {notes.join(" · ")} · <Link prefetch={false} href="/methodology/state-leg#popular-vote" className="underline decoration-dotted underline-offset-2 hover:decoration-solid">How the adjustment works</Link>
+            {notes.join(" · ")} · <Link prefetch={false} href="/analysis/internal-methodology/state-leg#popular-vote" className="underline decoration-dotted underline-offset-2 hover:decoration-solid">How the adjustment works</Link>
           </div>
         )}
       </div>

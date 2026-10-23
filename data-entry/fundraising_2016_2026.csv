@@ -1,13 +1,13 @@
 office,state,race,year,election_type,eligible,dem_candidate,dem_receipts,dem_fec_id,rep_candidate,rep_receipts,rep_fec_id,source,notes
 G,AK,AK,2018,Regular,,Mark Begich,816689.69,,Mike Dunleavy,896604.56,,"FollowTheMoney (state filings, total contributions)",
 G,AK,AK,2022,Regular,,Les Gara,2257671.78,,Mike Dunleavy,2757882.04,,"FollowTheMoney (state filings, total contributions)",
-G,AK,AK,2026,Upcoming,,Jonathan Kreiss-Tomkins,,,Bernadette Wilson,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual; rep nominee changed Dave Bronson->Bernadette Wilson (audit 2026-09-16); state filings needed
+G,AK,AK,2026,Upcoming,,Jonathan Kreiss-Tomkins,4285070.5,,Bernadette Wilson,1193715.03,,"State portal: Alaska APOC income export (total contributions, cash + in-kind, loans excluded)",thru 2026-10-02 (30-day general); 24-hr reports not counted; filled 2026-10-23
 G,AL,AL,2018,Regular,,Walt Maddox,2710079,,Kay Ivey,6479977,,"TransparencyUSA (state filings, total contributions)",
 G,AL,AL,2022,Regular,,Yolanda Flowers,47794,,Kay Ivey,10742614,,"TransparencyUSA (state filings, total contributions)",
-G,AL,AL,2026,Upcoming,,Doug Jones,0,,Tommy Tuberville,16266278.65,,"TransparencyUSA (state filings, total contributions)",refreshed 2026-10-10
+G,AL,AL,2026,Upcoming,,Doug Jones,6477044.75,,Tommy Tuberville,16633212.85,,"State portal: Alabama FCPA data download (total contributions, cash + in-kind, loans excluded)","Jones thru 2026-10-20, Tuberville thru 2026-10-18; TU had Jones at $0 (coverage hole); filled 2026-10-23"
 G,AR,AR,2018,Regular,,Jared Henderson,669231.17,,Asa Hutchinson,7200079.84,,"FollowTheMoney (state filings, total contributions)",
 G,AR,AR,2022,Regular,,Chris Jones,4070118.95,,Sarah Huckabee Sanders,22984656.22,,"FollowTheMoney (state filings, total contributions)",
-G,AR,AR,2026,Upcoming,,Fredrick Love,,,Sarah Huckabee Sanders,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,AR,AR,2026,Upcoming,,Fredrick Love,245703.44,,Sarah Huckabee Sanders,7096814.82,,"State portal: Arkansas SOS disclosure bulk (TCON) (total contributions, cash + in-kind, loans excluded)","contributions dated 2025-01-01+, thru 2026-09-30; filled 2026-10-23"
 G,AZ,AZ,2018,Regular,,David Garcia,2428289,,Doug Ducey,16576773,,"TransparencyUSA (state filings, total contributions)",
 G,AZ,AZ,2022,Regular,,Katie Hobbs,15598312,,Kari Lake,15910951,,"TransparencyUSA (state filings, total contributions)",
 G,AZ,AZ,2026,Upcoming,,Katie Hobbs,9827820,,Andy Biggs,2787170,,"TransparencyUSA (state filings, total contributions)",
@@ -19,7 +19,7 @@ G,CO,CO,2022,Regular,,Jared Polis,12527619,,Heidi Ganahl,3725407,,"TransparencyU
 G,CO,CO,2026,Upcoming,,Phil Weiser,6951031.64,,Victor Marx,2935521.15,,"TransparencyUSA (state filings, total contributions)",
 G,CT,CT,2018,Regular,,Ned Lamont,16355489.36,,Bob Stefanowski,6872012.28,,"FollowTheMoney (state filings, total contributions)",
 G,CT,CT,2022,Regular,,Ned Lamont,31157222.60,,Bob Stefanowski,15225508.90,,"FollowTheMoney (state filings, total contributions)",
-G,CT,CT,2026,Upcoming,,Ned Lamont,,,Ryan Fazio,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,CT,CT,2026,Upcoming,,Ned Lamont,15848269.74,,Ryan Fazio,19092457.5,,"State portal: CT SEEC eCRIS Receipts2026 (total contributions, cash + in-kind, loans excluded)","thru 2026-09-30; Lamont = $423,269.74 private + $15,425,000 personal funds; Fazio = $283,333.10 private + $18,809,124.40 CEP public grants (FTM-style totals count both); filled 2026-10-23"
 G,DE,DE,2016,Regular,,John Carney,1594266.85,,Colin Bonini,234146.00,,"FollowTheMoney (state filings, total contributions)",
 G,DE,DE,2020,Regular,,John Carney,830076.05,,Julianne Murray,282516.34,,"FollowTheMoney (state filings, total contributions)",
 G,DE,DE,2024,Regular,,Matt Meyer,3816050.07,,Mike Ramone,546788.82,,"FollowTheMoney (state filings, total contributions)",
@@ -31,13 +31,13 @@ G,GA,GA,2022,Regular,,Stacey Abrams,53109125.25,,Brian Kemp,86033722.59,,"Follow
 G,GA,GA,2026,Upcoming,,Keisha Lance Bottoms,5774631,,Rick Jackson,118984243,,"TransparencyUSA (state filings, total contributions)",
 G,HI,HI,2018,Regular,,David Ige,2829872.81,,Andria Tupola,521905.94,,"FollowTheMoney (state filings, total contributions)",
 G,HI,HI,2022,Regular,,Josh Green,4116868.08,,Duke Aiona,285405.50,,"FollowTheMoney (state filings, total contributions)",
-G,HI,HI,2026,Upcoming,,Josh Green,,,Gary Cordery,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,HI,HI,2026,Upcoming,,Josh Green,1898048.45,,Gary Cordery,321917.42,,"State portal: Hawaii CSC disclosure reports (line 12) (total contributions, cash + in-kind, loans excluded)",Jan 2025 - 2026-09-26; filled 2026-10-23
 G,IA,IA,2018,Regular,,Fred Hubbell,22575532,,Kim Reynolds,14993149,,"TransparencyUSA (state filings, total contributions)",
 G,IA,IA,2022,Regular,,Deidre DeJear,2460314,,Kim Reynolds,8865353,,"TransparencyUSA (state filings, total contributions)",
 G,IA,IA,2026,Upcoming,,Rob Sand,19860206,,Zach Lahn,1218702,,"TransparencyUSA (state filings, total contributions)",
 G,ID,ID,2018,Regular,,Paulette Jordan,1252283.40,,Brad Little,3370322.89,,"FollowTheMoney (state filings, total contributions)",
 G,ID,ID,2022,Regular,,Stephen Heidt,28353.20,,Brad Little,2381242.80,,"FollowTheMoney (state filings, total contributions)",
-G,ID,ID,2026,Upcoming,,Terri Pickens,,,Brad Little,,,,"pending: TU cycle-scoping broken for Idaho (Little identical $2,057,743.31 in 2018/2022/2026 vs FTM 3.37M/2.38M); needs manual fill"
+G,ID,ID,2026,Upcoming,,Terri Pickens,301600,,Brad Little,3600000,,"News estimate: Idaho Capital Sun / EdNews / Daily News, Sunshine portal down (approximate)","APPROXIMATE, rounded: 2025 annual + 2026 thru ~Sep 30; re-pull from Idaho Sunshine when it is back; filled 2026-10-23"
 G,IL,IL,2018,Regular,,JB Pritzker,176346769.22,,Bruce Rauner,86494273.50,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
 G,IL,IL,2022,Regular,,JB Pritzker,152678879,,Darren Bailey,17962590,,"TransparencyUSA (state filings, total contributions)",
 G,IL,IL,2026,Upcoming,,JB Pritzker,25619035,,Darren Bailey,2166962,,"TransparencyUSA (state filings, total contributions)",
@@ -46,7 +46,7 @@ G,IN,IN,2020,Regular,,Woody Myers,1247519,,Eric Holcomb,11240351,,"TransparencyU
 G,IN,IN,2024,Regular,,Jennifer McCormick,5892427,,Mike Braun,17735776,,"TransparencyUSA (state filings, total contributions)",
 G,KS,KS,2018,Regular,,Laura Kelly,3475427.97,,Kris Kobach,3715117.44,,"FollowTheMoney (state filings, total contributions)",
 G,KS,KS,2022,Regular,,Laura Kelly,7966527.60,,Derek Schmidt,4634549.07,,"FollowTheMoney (state filings, total contributions)",
-G,KS,KS,2026,Upcoming,,Cindy Holscher,,,Ty Masterson,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,KS,KS,2026,Upcoming,,Cindy Holscher,815732.59,,Ty Masterson,1517700.97,,"State portal: KS SOS Campaign Finance Viewer (total contributions, cash + in-kind, loans excluded)",thru 2026-07-23 (pre-general due Oct 26); filled 2026-10-23
 G,KY,KY,2019,Regular,,Andy Beshear,9552283.96,,Matt Bevin,10763042.86,,"FollowTheMoney (state filings, total contributions)",
 G,KY,KY,2023,Regular,,Andy Beshear,25609504.27,,Daniel Cameron,7285735.44,,"FollowTheMoney (state filings, total contributions)",
 G,LA,LA,2019,Regular,,John Bel Edwards,23332374.42,,Eddie Rispone,21011911.63,,"FollowTheMoney (state filings, total contributions)",
@@ -56,10 +56,10 @@ G,MA,MA,2022,Regular,,Maura Healey,15999298.13,,Geoff Diehl,2724024.57,,"FollowT
 G,MA,MA,2026,Upcoming,,Maura Healey,7140187.21,,Michael Minogue,19544734.20,,"MA OCPF (api.ocpf.us statewide YTD, 2-year campaign window)","sum of OCPF calendar-year receipts 2025+2026, cycle to date; refreshed 2026-10-10"
 G,MD,MD,2018,Regular,,Ben Jealous,4423808.92,,Larry Hogan,17773094.16,,"FollowTheMoney (state filings, total contributions)",
 G,MD,MD,2022,Regular,,Wes Moore,14373011.85,,Dan Cox,1555706.46,,"FollowTheMoney (state filings, total contributions)",
-G,MD,MD,2026,Upcoming,,Wes Moore,,,Dan Cox,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,MD,MD,2026,Upcoming,,Wes Moore,10133795.57,,Dan Cox,246303.56,,"State portal: MD SBE contributions export (total contributions, cash + in-kind, loans excluded)","gross, 2025-01-01 thru 2026-08-18; no public matching funds; filled 2026-10-23"
 G,ME,ME,2018,Regular,,Janet Mills,3048406.55,,Shawn Moody,1874553.98,,"FollowTheMoney (state filings, total contributions)",
 G,ME,ME,2022,Regular,,Janet Mills,5843923.63,,Paul LePage,2646099.62,,"FollowTheMoney (state filings, total contributions)",
-G,ME,ME,2026,Upcoming,,Hannah Pingree,,,Robert Charles,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,ME,ME,2026,Upcoming,,Hannah Pingree,4208453.42,,Robert Charles,1585118.36,,"State portal: Maine Ethics Commission (total contributions, cash + in-kind, loans excluded)",thru 2026-09-15 (+Charles 10/21 48-hr); both traditionally financed; filled 2026-10-23
 G,MI,MI,2018,Regular,,Gretchen Whitmer,13326968.52,,Bill Schuette,12354808.99,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
 G,MI,MI,2022,Regular,,Gretchen Whitmer,32474199,,Tudor Dixon,8857962,,"TransparencyUSA (state filings, total contributions)",
 G,MI,MI,2026,Upcoming,,Jocelyn Benson,5958887,,John James,4492470,,"TransparencyUSA (state filings, total contributions)",
@@ -82,7 +82,7 @@ G,ND,ND,2020,Regular,,Shelley Lenz,341656.12,,Doug Burgum,2258541.56,,"FollowThe
 G,ND,ND,2024,Regular,,Merrill Piepkorn,186140.53,,Kelly Armstrong,3818871.12,,"FollowTheMoney (state filings, total contributions)",
 G,NE,NE,2018,Regular,,Bob Krist,774010.27,,Pete Ricketts,4884909.84,,"FollowTheMoney (state filings, total contributions)",
 G,NE,NE,2022,Regular,,Carol Blood,635814.11,,Jim Pillen,11518611.94,,"FollowTheMoney (state filings, total contributions)",
-G,NE,NE,2026,Upcoming,,Lynne Walz,,,Jim Pillen,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,NE,NE,2026,Upcoming,,Lynne Walz,3627866.43,,Jim Pillen,10700682.2,,"State portal: Nebraska NADC (total contributions, cash + in-kind, loans excluded)",2025-01-01 thru 2026-09-29; filled 2026-10-23
 G,NH,NH,2016,Regular,,Colin Van Ostern,1609364.96,,Chris Sununu,1131401.18,,"FollowTheMoney (state filings, total contributions)",
 G,NH,NH,2018,Regular,,Molly Kelly,1289857.80,,Chris Sununu,1585457.01,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
 G,NH,NH,2020,Regular,,Dan Feltes,1485312.55,,Chris Sununu,1693626.46,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
@@ -106,26 +106,26 @@ G,OH,OH,2022,Regular,,Nan Whaley,8841328,,Mike DeWine,20425999,,"TransparencyUSA
 G,OH,OH,2026,Upcoming,,Amy Acton,15928993,,Vivek Ramaswamy,30306297,,"TransparencyUSA (state filings, total contributions)",
 G,OK,OK,2018,Regular,,Drew Edmondson,4139279.91,,Kevin Stitt,10691903.23,,"FollowTheMoney (state filings, total contributions)",
 G,OK,OK,2022,Regular,,Joy Hofmeister,3481610.07,,Kevin Stitt,11989881.57,,"FollowTheMoney (state filings, total contributions)",
-G,OK,OK,2026,Upcoming,,Cyndi Munson,,,Mike Mazzei,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,OK,OK,2026,Upcoming,,Cyndi Munson,1714037.74,,Mike Mazzei,1467326.42,,"State portal: Oklahoma Ethics Commission Guardian (total contributions, cash + in-kind, loans excluded)",thru 2026-08-10; Mazzei also borrowed $11.9M (loans excluded); filled 2026-10-23
 G,OR,OR,2016,Special,,Kate Brown,5411935.90,,Bud Pierce,3469117.36,,"FollowTheMoney (state filings, total contributions)",
 G,OR,OR,2018,Regular,,Kate Brown,20297458.95,,Knute Buehler,19262697.66,,"FollowTheMoney (state filings, total contributions)",
 G,OR,OR,2022,Regular,,Tina Kotek,30342251.91,,Christine Drazan,22600858.99,,"FollowTheMoney (state filings, total contributions)",
-G,OR,OR,2026,Upcoming,,Tina Kotek,,,Christine Drazan,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,OR,OR,2026,Upcoming,,Tina Kotek,20501489.37,,Christine Drazan,16514269.87,,"State portal: ORESTAR via orestar-dashboard mirror (total contributions, cash + in-kind, loans excluded)",2025-01-01 thru 2026-10-21; filled 2026-10-23
 G,PA,PA,2018,Regular,,Tom Wolf,30459181,,Scott Wagner,19019692,,"TransparencyUSA (state filings, total contributions)",
 G,PA,PA,2022,Regular,,Josh Shapiro,72513114,,Doug Mastriano,8175543,,"TransparencyUSA (state filings, total contributions)",
 G,PA,PA,2026,Upcoming,,Josh Shapiro,34960533,,Stacy Garrity,2545436,,"TransparencyUSA (state filings, total contributions)",
 G,RI,RI,2018,Regular,,Gina Raimondo,8287905.66,,Allan Fung,2653416.93,,"FollowTheMoney (state filings, total contributions)",
 G,RI,RI,2022,Regular,,Dan McKee,3857748.03,,Ashley Kalus,5009115.32,,"FollowTheMoney (state filings, total contributions)",
-G,RI,RI,2026,Upcoming,,Helena Foulkes,,,Aaron Guckian,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,RI,RI,2026,Upcoming,,Helena Foulkes,5510869.92,,Aaron Guckian,111353.66,,"State portal: RI Board of Elections ERTS (total contributions, cash + in-kind, loans excluded)",2025-01-01 thru 2026-10-05; Foulkes incl. $126.6K party in-kind; filled 2026-10-23
 G,SC,SC,2018,Regular,,James Smith,3217280,,Henry McMaster,7884372,,"TransparencyUSA (state filings, total contributions)",
 G,SC,SC,2022,Regular,,Joe Cunningham,3668714,,Henry McMaster,6530197,,"TransparencyUSA (state filings, total contributions)",
 G,SC,SC,2026,Upcoming,,Jermaine Johnson,753609,,Alan Wilson,62585,,"TransparencyUSA (state filings, total contributions)",
 G,SD,SD,2018,Regular,,Billie Sutton,3880460.86,,Kristi Noem,7171481.51,,"FollowTheMoney (state filings, total contributions)",
 G,SD,SD,2022,Regular,,Jamie Smith,1311681.39,,Kristi Noem,17527113.75,,"FollowTheMoney (state filings, total contributions)",
-G,SD,SD,2026,Upcoming,,Dan Ahlers,,,Larry Rhoden,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,SD,SD,2026,Upcoming,,Dan Ahlers,249767.53,,Larry Rhoden,3774751.98,,"State portal: SD SOS campaign finance (total contributions, cash + in-kind, loans excluded)",thru pre-general (~mid-Oct 2026); Rhoden $100K loan excluded; filled 2026-10-23
 G,TN,TN,2018,Regular,,Karl Dean,11186772.44,,Bill Lee,15966555.29,,"FollowTheMoney (state filings, total contributions)",
 G,TN,TN,2022,Regular,,Jason Martin,1262621.86,,Bill Lee,6114276.53,,"FollowTheMoney (state filings, total contributions)",
-G,TN,TN,2026,Upcoming,,Jerri Green,,,Marsha Blackburn,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,TN,TN,2026,Upcoming,,Jerri Green,1693789.34,,Marsha Blackburn,12884485.39,,"State portal: TN Registry of Election Finance (total contributions, cash + in-kind, loans excluded)","thru 2026-09-30 (Q3); Blackburn state committee, no federal transfer; filled 2026-10-23"
 G,TX,TX,2018,Regular,,Lupe Valdez,1848696,,Greg Abbott,44875409,,"TransparencyUSA (state filings, total contributions)",
 G,TX,TX,2022,Regular,,Beto O'Rourke,81098843,,Greg Abbott,111730938,,"TransparencyUSA (state filings, total contributions)",
 G,TX,TX,2026,Upcoming,,Gina Hinojosa,21687161.16,,Greg Abbott,96231113.50,,"TransparencyUSA (state filings, total contributions)",refreshed 2026-10-10
@@ -140,7 +140,7 @@ G,VT,VT,2018,Regular,,Christine Hallquist,559474.45,,Phil Scott,703301.18,,"Foll
 G,VT,VT,2020,Regular,,David Zuckerman,860307.11,,Phil Scott,510544.60,,"FollowTheMoney (state filings, total contributions)",
 G,VT,VT,2022,Regular,,Brenda Siegel,187256.13,,Phil Scott,264136.23,,"FollowTheMoney (state filings, total contributions)",
 G,VT,VT,2024,Regular,,Esther Charlestin,56227.55,,Phil Scott,356154.00,,"FollowTheMoney (state filings, total contributions)",
-G,VT,VT,2026,Upcoming,,Amanda Janoo,,,Phil Scott,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,VT,VT,2026,Upcoming,,Amanda Janoo,897798.8,,Phil Scott,589881.57,,"State portal: VT SOS campaign finance API (total contributions, cash + in-kind, loans excluded)",thru 2026-10-12; filled 2026-10-23
 G,WA,WA,2016,Regular,,Jay Inslee,9736277.53,,Bill Bryant,3905582.18,,"FollowTheMoney (state filings, total contributions)",
 G,WA,WA,2020,Regular,,Jay Inslee,7978230.10,,Loren Culp,3312181.92,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
 G,WA,WA,2024,Regular,,Bob Ferguson,14663732,,Dave Reichert,6782177,,"TransparencyUSA (state filings, total contributions)",

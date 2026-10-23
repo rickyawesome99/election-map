@@ -953,7 +953,7 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
 // Reuses the exact same per-race pipeline as the state model (eligibility + imputation,
 // incumbency / fundraising / environment strips, year aggregation — via the shared helpers
 // above), so a change to the State TPL formula automatically applies here too. Only the
-// inputs differ (specification: /methodology/county-tpl):
+// inputs differ (specification: /analysis/internal-methodology/county-tpl):
 // - President/Senate/Governor are genuinely the same statewide race, just measured at
 //   county granularity, so the incumbent, appointed flag and receipts are inherited from the
 //   parent state's race list — but raw margins and the presidential result used for
@@ -1210,7 +1210,10 @@ export function projectRace(race: ProjectedMarginInput): { model: number; pollin
   // backward model strips with); see raceMoneyTerm for the missing-receipts rule.
   const preMoney = preMoneyMargin(race, incumbentPts);
   const ffPts = raceMoneyTerm(race).pts;
-  const structuralMargin = preMoney + ffPts + qualityPts;
+  // Competitive-seat incumbency rides on top; the money term's structural gap keeps the plain
+  // incumbency, as in the backtest that fitted both.
+  const compIncPts = shortType ? competitiveIncumbencyPts(shortType, incumbentParty, preMoney - incumbentPts, incumbentCandidate?.appointed ?? false) : 0;
+  const structuralMargin = preMoney + compIncPts + ffPts + qualityPts;
 
   const polling = racePollingFor(race);
   const blended = polling.avg ? (1 - polling.weight) * structuralMargin + polling.weight * polling.avg.diff : structuralMargin;
@@ -1531,6 +1534,27 @@ export const INCUMBENT_ADVANTAGE_FIXED: Record<string, number> = { H: 3 };
 
 export function incumbentAdvantage(): Record<string, number> {
   return getTplFit().incumbency;
+}
+
+/** Extra incumbency in a competitive seat (FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY): R-positive
+ *  sign × K × max(0, 1 − |pre-incumbency margin| / width), the pre-incumbency margin being the
+ *  seat's TPL + environment. 0 for an open seat, an appointed incumbent, or an office with K 0. */
+export function competitiveIncumbencyPts(raceType: "H" | "S" | "G", incumbentParty: "D" | "R" | null, preIncumbencyMargin: number, appointed = false): number {
+  const k = F.COMPETITIVE_INCUMBENCY[raceType] ?? 0;
+  if (!incumbentParty || appointed || k === 0) return 0;
+  const pts = k * Math.max(0, 1 - Math.abs(preIncumbencyMargin) / F.COMPETITIVE_INCUMBENCY_WIDTH);
+  return incumbentParty === "R" ? pts : -pts;
+}
+
+/** All incumbency points of a 2026 race as the forecast adds them: the office's advantage plus the
+ *  competitive-seat extra. What race pages show on the Incumbent row. */
+export function raceIncumbencyPts(race: ProjectedMarginInput): number {
+  const shortType = ({ house: "H", senate: "S", governor: "G" } as Record<string, "H" | "S" | "G">)[race.raceType];
+  if (!shortType) return 0;
+  const inc = race.candidates ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null : null;
+  const party = inc ? alignedParty(inc) : null;
+  const appointed = inc?.appointed ?? false;
+  return computeIncumbentPts(shortType, party, appointed) + competitiveIncumbencyPts(shortType, party, preMoneyMargin(race, 0), appointed);
 }
 
 export function computeIncumbentPts(raceType: "H" | "S" | "G", incumbentParty: "D" | "R" | null, appointed = false): number {

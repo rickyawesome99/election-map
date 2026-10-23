@@ -60,7 +60,7 @@ export default function HouseDistrictMapTabs({ raceId, stateAbbr, margin, bounda
           height={280}
           caption={
             <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-              Projected 2026 result by county: the forecast margin ({projection.margin > 0 ? projection.repParty : projection.demParty}+{Math.abs(projection.margin).toFixed(1)}) spread over the district&apos;s counties by their lean, on {projection.votes.toLocaleString()} estimated votes. Split counties show the district&apos;s share, with the piece&apos;s own 2024 lean where the lines are unchanged. <Link href="/methodology/turnout#county-results" className="underline underline-offset-2">How this is built</Link>.
+              Projected 2026 result by county: the forecast margin ({projection.margin > 0 ? projection.repParty : projection.demParty}+{Math.abs(projection.margin).toFixed(1)}) spread over the district&apos;s counties by their lean, on {projection.votes.toLocaleString()} estimated votes. Split counties show the district&apos;s share, with the piece&apos;s own 2024 lean where the lines are unchanged. <Link href="/analysis/internal-methodology/turnout#county-results" className="underline underline-offset-2">How this is built</Link>.
             </div>
           }
         />
