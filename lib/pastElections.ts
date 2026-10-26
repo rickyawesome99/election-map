@@ -14,6 +14,7 @@ import { computeWarTable } from "@/lib/tplCompute";
 import { historicalRacePolls, historicalPresidentPolls, type HistoricalRacePoll } from "@/lib/racePollsHistory";
 import { candidatePhoto } from "@/lib/candidatePhotos";
 import { stateRings } from "@/lib/stateNeighbors";
+import type { PastRaceRow } from "@/lib/pastRaceTableTypes";
 
 // One page per past election, nested under its seat: /senate/pa2/2022, /governor/pa/2022,
 // /president/pa/2020 (a state's presidential result; its "seat page" is the state page).
@@ -286,6 +287,56 @@ export function pastElectionHref(office: PastElectionOffice, seatId: string, yea
   const r = seat.results.find((x) => x.year === year);
   if (!r || !hasPage(r)) return undefined;
   return `/${office}/${seat.seatId}/${year}`;
+}
+
+/** A state's past-election pages for one office and year, split by election type, for the
+ * /historical map's state view: `regular` is the ordinary election (falling back to the special
+ * when that was the only race, matching lib/mapSlices.ts computeStatewideResult), `special` the
+ * same-year special where a state held one. House has no state-level race page. */
+export function statePastElectionHrefs(office: PastElectionOffice, stateAbbr: string, year: number): { regular: string | null; special: string | null } {
+  if (office === "house") return { regular: null, special: null };
+  let regular: string | null = null;
+  let special: string | null = null;
+  for (const seat of seatsFor(office).values()) {
+    if (seat.stateAbbr !== stateAbbr) continue;
+    const r = seat.results.find((x) => x.year === year);
+    if (!r || !hasPage(r)) continue;
+    const href = `/${office}/${seat.seatId}/${year}`;
+    if (isSpecialType(r.electionType)) special = href;
+    else regular = href;
+  }
+  return { regular: regular ?? special, special };
+}
+
+/** One row per past-election page for an office and year — the /historical races table. The
+ * result picked per seat is the one its page shows (getPastElection's first match for the year). */
+export function pastRaceTableRows(office: PastElectionOffice, year: number): PastRaceRow[] {
+  const out: PastRaceRow[] = [];
+  for (const seat of seatsFor(office).values()) {
+    const r = seat.results.find((x) => x.year === year);
+    if (!r || !hasPage(r)) continue;
+    const margin = r.margin ?? parseFloat((r.repPct - r.demPct).toFixed(2));
+    const prev = [...seat.results].filter((x) => x.year < year).sort((a, b) => b.year - a.year)[0] ?? null;
+    const prevMargin = prev ? (prev.margin ?? parseFloat((prev.repPct - prev.demPct).toFixed(2))) : null;
+    out.push({
+      href: `/${office}/${seat.seatId}/${year}`,
+      label: office === "house" ? seat.seatId.toUpperCase() : seat.stateName,
+      stateAbbr: seat.stateAbbr,
+      stateName: seat.stateName,
+      district: seat.district ?? null,
+      special: isSpecialType(r.electionType),
+      redrawn: (seat.geoid ? houseDistrictInfo[seat.geoid] ?? [] : []).some((b) => b.year === year),
+      dem: { name: r.demCandidate ?? null, party: r.demParty ?? "D", pct: r.demPct, incumbent: !!r.demIncumbent },
+      rep: { name: r.repCandidate ?? null, party: r.repParty ?? "R", pct: r.repPct, incumbent: !!r.repIncumbent },
+      margin,
+      prevMargin,
+      prevYear: prev?.year ?? null,
+      prevWinnerParty: prev && prevMargin != null ? (prevMargin < 0 ? prev.demParty ?? "D" : prev.repParty ?? "R") : null,
+      totalVotes: r.totalVotes ?? null,
+      uncontested: (!r.demCandidate && r.demPct === 0) || (!r.repCandidate && r.repPct === 0),
+    });
+  }
+  return out;
 }
 
 /** Every House past-election page in one state, keyed `${geoid}:${year}` for client maps that can't call pastElectionHref. */

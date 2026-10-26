@@ -41,6 +41,8 @@ export type ProjectedCounty = {
   votes: number;
   lean: number;
   leanBasis: "county-tpl" | "pres-2024" | "piece-2024";
+  /** The whole county's TPL, R-positive; null where the county model has nothing to rest on. */
+  tpl: number | null;
   /** House, split county on unchanged lines: the piece's 2024 deviation from the whole county, in points. */
   pieceDeviation?: number;
   demVotes: number;
@@ -167,14 +169,15 @@ export function projectRaceResults(office: ProjectedRaceResult["office"], raceId
       const dev = pieceDeviations().get(`${c.fips}|${raceId}`);
       if (dev != null) { lean += dev; leanBasis = "piece-2024"; pieceDeviation = dev; }
     }
-    return { fips: c.fips, name: c.name, share: c.share, votes: c.votes, lean, leanBasis, pieceDeviation, other: decided ? 0 : otherShare(c.fips) };
+    const tpl = base.basis === "county-tpl" ? base.lean : null;
+    return { fips: c.fips, name: c.name, share: c.share, votes: c.votes, lean, leanBasis, tpl, pieceDeviation, other: decided ? 0 : otherShare(c.fips) };
   });
   const shift = decided ? 0 : solveShift(rows, f.margin);
   const counties: ProjectedCounty[] = rows.map((r) => {
     const margin = decided ? (decided === "R" ? 100 : -100) : clampMargin(r.lean + shift, r.other);
     const repPct = (100 - r.other + margin) / 2, demPct = (100 - r.other - margin) / 2;
     const demVotes = Math.round((r.votes * demPct) / 100), repVotes = Math.round((r.votes * repPct) / 100);
-    return { fips: r.fips, name: r.name, share: r.share, votes: r.votes, lean: Math.round(r.lean * 100) / 100, leanBasis: r.leanBasis, ...(r.pieceDeviation != null ? { pieceDeviation: Math.round(r.pieceDeviation * 100) / 100 } : {}), demVotes, repVotes, othVotes: Math.max(0, r.votes - demVotes - repVotes), demPct: Math.round(demPct * 100) / 100, repPct: Math.round(repPct * 100) / 100, margin: Math.round(margin * 100) / 100 };
+    return { fips: r.fips, name: r.name, share: r.share, votes: r.votes, lean: Math.round(r.lean * 100) / 100, leanBasis: r.leanBasis, tpl: r.tpl == null ? null : Math.round(r.tpl * 100) / 100, ...(r.pieceDeviation != null ? { pieceDeviation: Math.round(r.pieceDeviation * 100) / 100 } : {}), demVotes, repVotes, othVotes: Math.max(0, r.votes - demVotes - repVotes), demPct: Math.round(demPct * 100) / 100, repPct: Math.round(repPct * 100) / 100, margin: Math.round(margin * 100) / 100 };
   });
   const sum = (k: "votes" | "demVotes" | "repVotes" | "othVotes") => counties.reduce((a, c) => a + c[k], 0);
   const r1 = (v: number) => Math.round(v * 10) / 10;

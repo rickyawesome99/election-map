@@ -20,13 +20,26 @@ export type SliceEntry = {
   stateAbbr?: string;
   stateName?: string;
   moreInfoHref?: string | null;
+  /** State view, Senate only: the same-year special election's page, shown under "Special elections only". */
+  specialMoreInfoHref?: string | null;
+  /** Key into MapSlice.names for this area's race: a state abbreviation for statewide offices, a
+   * district GEOID for the House. Absent where the area has no single race (House state view, a
+   * county split between districts), which the hover card reads as "Democrats" / "Republicans". */
+  nameKey?: string;
 };
+
+/** Candidate surnames for the hover card, [dem slot, rep slot]; null where a slot is empty. */
+export type SliceNames = [string | null, string | null];
 
 export type MapSlice = {
   level: MapLevel;
   office: MapOffice;
   year: number;
   entries: Record<string, SliceEntry>;
+  /** Candidate surnames by race: state abbreviation (and "XX:S" for a same-year Senate special)
+   * for statewide offices, district GEOID for the House. County entries of a statewide office
+   * carry no nameKey; the map derives their state from the FIPS code. */
+  names: Record<string, SliceNames>;
   aggregate: { demVotes: number; repVotes: number; totalVotes: number; demUnits: number; repUnits: number };
 };
 

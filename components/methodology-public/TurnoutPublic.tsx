@@ -49,6 +49,11 @@ export default function TurnoutPublic() {
         ]} />
       </Chapter>
 
+      <Chapter id="results-needle" kicker="Election night" title="The results needle"
+        intro={<>On election night the <A href="/results">Results</A> page shows the count for every race next to the forecast, and a projected final margin. Each county starts at its projected result above. As it reports, the votes already counted stand as they are, and the rest of the county is moved by however much the counties that have reported are running ahead of or behind their projections. Early in the night that shared shift is held close to zero, because a few counties can mislead; it loosens as more comes in. The projection never calls a race: calls come from the results provider, civicAPI, and the needle only stops moving once one is made.</>}>
+        <SeeIt>Live on the <A href="/results">Results</A> page from November 3.</SeeIt>
+      </Chapter>
+
       <Chapter id="backtest" kicker="Track record" title={`How it did in ${B.target}`}
         intro={`We ran the same estimate for ${B.target} using only ${B.basis} as its guide and compared it with the actual count. Most of the state-level miss is the national change in turnout between the two years. How the vote is shared out among counties and districts is the part the method is responsible for.`}>
         <KeyFigures items={[

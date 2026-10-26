@@ -35,7 +35,7 @@ type Base = {
   variant?: "tooltip" | "card" | "panel"; size?: "compact" | "wide" | "small"; aside?: ReactNode; footer?: ReactNode;
 };
 export type CountyTooltipProps = Base & (
-  | { kind: "result"; dem: CountyTooltipSide; rep: CountyTooltipSide; /** R-positive. */ margin: number; totalVotes: number | null }
+  | { kind: "result"; dem: CountyTooltipSide; rep: CountyTooltipSide; /** R-positive. */ margin: number; totalVotes: number | null; /** How much of the county is counted, e.g. "50% in" (the Results page); upper right. */ reporting?: string }
   | { kind: "tpl"; /** R-positive; null when the county has none. */ tpl: number | null; votes: number | null }
   | { kind: "message"; headline?: { text: string; party: Party }; message?: string }
   /** One figure with its label (the turnout map): the value as the serif headline, the metric name under it, and an optional note with the numbers behind it. */
@@ -133,7 +133,7 @@ export default function CountyTooltip(props: CountyTooltipProps) {
     );
     body = (
       <>
-        {name}
+        {props.reporting ? <div className="flex items-start justify-between gap-2">{nameText}<div className={`shrink-0 ${label}`} style={{ color: "var(--app-text-primary)" }}>{props.reporting}</div></div> : name}
         {sub}
         <div className="flex items-end justify-between gap-3">
           <div className="mt-1 tabular-nums" style={{ ...headline, color: fig.color }}>{fig.text}</div>
@@ -227,7 +227,7 @@ function CountyPanel(props: CountyTooltipProps) {
         {(footer || totalVotes != null) && (
           <div className={`flex items-baseline justify-between gap-3 ${small ? "mt-0.5" : "mt-1"}`} style={{ gridColumn: "1 / -1" }}>
             <span>{footer}</span>
-            {totalVotes != null && <span className="text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>{fmtInt(totalVotes)} votes</span>}
+            {totalVotes != null && <span className="text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>{fmtInt(totalVotes)} votes{props.reporting && <> · <span style={{ color: "var(--app-text-primary)" }}>{props.reporting}</span></>}</span>}
           </div>
         )}
       </div>

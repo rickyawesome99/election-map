@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { lastName } from "@/lib/personName";
 import type { FormulaKey } from "./TplModals";
 import { fmt2, marginBg, marginColor, signed } from "./format";
 import type { TplRace } from "./types";
@@ -11,7 +12,8 @@ import { ArrowOut, CandidateLink, TD, TD_R, TH, TH_R, VERY_MUTED } from "./ui";
 // the strips, the neutralized margin and the aggregation weight. Clicking a row opens its step-by-step calculation; the
 // links inside a row go where they say. Phones keep only Race, Raw, NM and Wt.
 
-// Race and nominee cells wrap; the numbers stay on one line.
+// Nominees show by surname (full name on hover). Race and nominee cells wrap; the numbers stay on one line. From sm up the table is
+// fixed-layout with set column widths, so columns don't shift with name lengths.
 const TD_WRAP = TD.replace("whitespace-nowrap", "whitespace-normal");
 
 export function RaceTable({ races, state, variant, showYear, onRow, onFormula, emptyText = "No races match." }: {
@@ -25,7 +27,7 @@ export function RaceTable({ races, state, variant, showYear, onRow, onFormula, e
   emptyText?: string;
 }) {
   const strip = (label: string, k: FormulaKey, title: string) => (
-    <th className={`${TH_R} hidden sm:table-cell`} style={{ color: "var(--app-text-muted)" }}>
+    <th className={`${TH_R} hidden sm:table-cell sm:w-[3.75rem]`} style={{ color: "var(--app-text-muted)" }}>
       <button type="button" onClick={() => onFormula(k)} className="hover:underline" title={title}>{label} <ArrowOut /></button>
     </th>
   );
@@ -35,19 +37,19 @@ export function RaceTable({ races, state, variant, showYear, onRow, onFormula, e
   const anyImputed = races.some((r) => r.imputed);
   return (
     <div className="-mx-1 overflow-x-auto px-1">
-      <table className="w-full border-collapse sm:min-w-[560px] text-xs">
+      <table className="w-full border-collapse sm:min-w-[640px] sm:table-fixed text-xs">
         <thead>
           <tr style={{ borderBottom: "2px solid var(--app-text-primary)", color: "var(--app-text-muted)" }}>
-            <th className={TH}>Race</th>
+            <th className={`${TH} sm:w-[22%]`}>Race</th>
             <th className={`${TH} hidden sm:table-cell`}>Winner</th>
             <th className={`${TH} hidden sm:table-cell`}>Runner-up</th>
-            <th className={TH_R}>Raw</th>
+            <th className={`${TH_R} sm:w-[4.5rem]`}>Raw</th>
             {strip("IF", "IF", "Incumbency points")}
             {strip("FF", "FF", "Fundraising points")}
             {variant === "district" && strip("BS", "BS", "Boundary shift")}
             {strip("ENV", "ENV", "Environment adjustment")}
-            <th className={TH_R}><button type="button" onClick={() => onFormula("NM")} className="hover:underline" title="Neutralized margin">NM<span className="hidden sm:inline"> <ArrowOut /></span></button></th>
-            <th className={`${TH_R}`} title="Weight in aggregation">Wt</th>
+            <th className={`${TH_R} sm:w-20`}><button type="button" onClick={() => onFormula("NM")} className="hover:underline" title="Neutralized margin">NM<span className="hidden sm:inline"> <ArrowOut /></span></button></th>
+            <th className={`${TH_R} sm:w-12`} title="Weight in aggregation">Wt</th>
           </tr>
         </thead>
         <tbody>
@@ -72,8 +74,8 @@ export function RaceTable({ races, state, variant, showYear, onRow, onFormula, e
                   {href ? <Link href={href} onClick={stop} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }} title={r.pastHref ? "Full results for this election" : "Seat page"}>{label}</Link> : label}
                   {r.imputed && <span className="ml-1" style={VERY_MUTED} title="Imputed from the presidential baseline">⊘</span>}
                 </td>
-                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={winner.name} state={state} party={winner.party} /></td>
-                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={loser.name} state={state} party={loser.party} /></td>
+                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={winner.name} label={winner.name && lastName(winner.name)} state={state} party={winner.party} /></td>
+                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={loser.name} label={loser.name && lastName(loser.name)} state={state} party={loser.party} /></td>
                 <td className={TD_R} style={{ color: marginColor(r.rawMargin) }}>
                   {r.imputed ? <>{fmt2(r.rawMargin)}<span className="block text-[10px]" style={VERY_MUTED} title="Adjusted (imputed)">⊘ {fmt2(r.adjustedMargin)}</span></>
                     : anyImputed ? <span className="flex min-h-8 items-center justify-end">{fmt2(r.rawMargin)}</span>

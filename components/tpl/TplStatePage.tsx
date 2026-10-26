@@ -90,7 +90,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${tint} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)` }}>
+      <div style={{ background: `linear-gradient(to bottom, transparent 35%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${tint} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)` }}>
         <div className={PAGE_CONTAINER}>
           {/* Seat-style context bar, as on the past election pages: crumbs left, the state
               picker and methodology link right, closed by a heavy rule. */}

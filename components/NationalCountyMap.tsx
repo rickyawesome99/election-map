@@ -20,6 +20,7 @@ import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@
 import { normalizeGeographyWinding, type WindableGeography } from "@/lib/geoWinding";
 import { popVoteData } from "@/data/popVoteData";
 import Segmented from "@/components/MarketSegmented";
+import PastRaceTable from "@/components/PastRaceTable";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
 
 type RaceType = MapOffice;
@@ -46,6 +47,8 @@ type Selection = {
   hasElection: boolean;
   result: NormalizedResult | null;
   moreInfoHref: string | null;
+  /** This area's race in MapSlice.names; null where it has no single race. */
+  nameKey: string | null;
 };
 
 function hasElectionInState(raceType: RaceType, year: number, stateAbbr: string, specialOnly = false): boolean {
@@ -80,6 +83,9 @@ const STAT_LABEL = "mb-1 text-[10px] font-bold uppercase tracking-wide";
 // Drawn by hand (no native chrome) so the dropdowns match the 28px geography toggle in every
 // browser: Chrome's native select ran 31px tall, Safari's 20px.
 const SELECT_CLASS = "h-7 appearance-none rounded-md pl-2.5 pr-7 text-xs font-semibold leading-none";
+// Phones: tighter padding (the chevron sits 6px from the edge) so the whole control row fits one line.
+const SELECT_CLASS_TIGHT = "h-7 appearance-none rounded-md pl-2 pr-6 text-xs font-semibold leading-none sm:pl-2.5 sm:pr-7";
+const SELECT_STYLE_TIGHT = { backgroundPosition: "right 6px center" };
 const SELECT_STYLE = {
   backgroundColor: "var(--app-tab-bg)",
   backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3 4.5l3 3 3-3' fill='none' stroke='%238a8f98' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E\")",
@@ -212,6 +218,8 @@ const GeoLayer = memo(function GeoLayer({
             hasElection,
             result,
             moreInfoHref: `/historical/${key}`,
+            // Statewide offices: the county's state race. House: its one district, if it has one.
+            nameKey: raceType === "house" ? (entries[key]?.nameKey ?? null) : (stateInfo?.abbr ?? null),
           };
         } else if (level === "district") {
           const geoId = (geo as DistrictGeoFeature).properties?.GEOID;
@@ -220,13 +228,14 @@ const GeoLayer = memo(function GeoLayer({
           const gr = entries[key];
           result = gr ? resultOf(key) : null;
           hasElection = gr ? hasElectionInState(raceType, year, gr.stateAbbr ?? "", specialOnly) : false;
-          sel = gr ? { key, title: gr.label ?? key, subtitle: gr.stateName ?? "", hasElection, result, moreInfoHref: gr.moreInfoHref ?? null } : null;
+          sel = gr ? { key, title: gr.label ?? key, subtitle: gr.stateName ?? "", hasElection, result, moreInfoHref: gr.moreInfoHref ?? null, nameKey: gr.nameKey ?? null } : null;
         } else {
           key = String((geo as GeoFeature).id ?? "").padStart(2, "0");
           const gr = entries[key];
           result = gr ? resultOf(key) : null;
           hasElection = gr ? hasElectionInState(raceType, year, gr.stateAbbr ?? "", specialOnly) : false;
-          sel = gr ? { key, title: gr.stateName ?? key, subtitle: "", hasElection, result, moreInfoHref: gr.moreInfoHref ?? null } : null;
+          const href = specialOnly ? (gr?.specialMoreInfoHref ?? gr?.moreInfoHref) : gr?.moreInfoHref;
+          sel = gr ? { key, title: gr.stateName ?? key, subtitle: "", hasElection, result, moreInfoHref: href ?? null, nameKey: gr.nameKey ?? null } : null;
         }
         const isSelected = selectedKey === key;
         const clickable = result !== null;
@@ -257,7 +266,9 @@ const GeoLayer = memo(function GeoLayer({
 });
 
 export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
-  const [geoLevel, setGeoLevel] = useState<GeoLevel>("county");
+  // State view by default: it is the lightest layer (no county TopoJSON until asked for), so
+  // switching to and from the tab stays quick.
+  const [geoLevel, setGeoLevel] = useState<GeoLevel>("state");
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
   const tip = useMapTooltip(14, 8);
@@ -304,6 +315,12 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
     setMapView(reset);
     setViewChanged(false);
   }
+
+  // Years run newest first; the stepper's ‹ goes to the previous (older) election, › to the next.
+  const yearOptions = getYearsForLevel(raceType, geoLevel);
+  const yearIndex = yearOptions.indexOf(year);
+  const olderYear = yearIndex >= 0 ? yearOptions[yearIndex + 1] ?? null : null;
+  const newerYear = yearIndex > 0 ? yearOptions[yearIndex - 1] : null;
 
   const isPresident = raceType === "president";
   const raceLabel = RACE_TYPES.find((r) => r.key === raceType)!.label;
@@ -366,14 +383,22 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
     const demParty = r.demIsRep ? "R" : "D";
     const repParty = r.repIsDem ? "D" : "R";
     const partyWord = (p: "D" | "R") => (p === "D" ? "Democrat" : "Republican");
+    // Candidate surnames where the area has one race; the House's state view and counties split
+    // between districts sum several races, so they read "Democrats" / "Republicans".
+    const nameKey = sel.nameKey && specialOnly && raceType === "senate" ? `${sel.nameKey}:S` : sel.nameKey;
+    const names = nameKey ? slice?.names?.[nameKey] : undefined;
+    const fallback = (p: "D" | "R") => (raceType === "house" && !sel.nameKey ? `${partyWord(p)}s` : partyWord(p));
+    const demName = names?.[0] ?? fallback(demParty);
+    const repName = names?.[1] ?? fallback(repParty);
     if (r.votesKnown === false || r.totalVotes === 0) {
       const winner = r.margin > 0 ? repParty : demParty;
-      return { ...base, kind: "message", headline: { text: "Uncontested", party: winner }, message: `The ${partyWord(winner)} ran unopposed in ${year}, so no vote count was reported.` };
+      const winnerName = (r.margin > 0 ? names?.[1] : names?.[0]) ?? `The ${partyWord(winner)}`;
+      return { ...base, kind: "message", headline: { text: "Uncontested", party: winner }, message: `${winnerName} ran unopposed in ${year}, so no vote count was reported.` };
     }
     return {
       ...base, kind: "result",
-      dem: { name: partyWord(demParty), party: demParty, pct: r.demPct, votes: r.demVotes },
-      rep: { name: partyWord(repParty), party: repParty, pct: r.repPct, votes: r.repVotes },
+      dem: { name: demName, party: demParty, pct: r.demPct, votes: r.demVotes },
+      rep: { name: repName, party: repParty, pct: r.repPct, votes: r.repVotes },
       margin: r.margin, totalVotes: r.totalVotes,
     };
   };
@@ -389,42 +414,81 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         {/* Title on its own line, controls in one row beneath it: beside a 48px title the row ran out of room and wrapped "Specials only" (and the title) onto a second line. */}
         <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} flex flex-col gap-4 pb-3`}>
           <h1 style={{ ...PAGE_TITLE_STYLE, color: "var(--app-text-primary)" }}>Historical Results</h1>
-          <div className="flex flex-wrap items-center gap-2">
-            <Segmented label="Geography" value={geoLevel} onChange={selectGeoLevel} options={GEO_LEVELS.map((gl) => [gl.key, gl.label])} />
+          {/* What to show (office, year, specials) on the left; how to draw it (geography) on the right.
+              Below sm the geography toggle wraps onto its own line. */}
+          <div className="flex flex-wrap items-center gap-x-1.5 gap-y-2.5 sm:gap-x-2">
             <select
               value={raceType}
               onChange={(e) => selectRaceType(e.target.value as RaceType)}
               aria-label="Office"
-              className={SELECT_CLASS}
-              style={SELECT_STYLE}
+              className={SELECT_CLASS_TIGHT}
+              style={{ ...SELECT_STYLE, ...SELECT_STYLE_TIGHT }}
             >
               {RACE_TYPES.map((rt) => <option key={rt.key} value={rt.key}>{rt.label}</option>)}
             </select>
-            <select
-              value={year}
-              onChange={(e) => selectYear(Number(e.target.value))}
-              aria-label="Year"
-              className={SELECT_CLASS}
-              style={SELECT_STYLE}
-            >
-              {getYearsForLevel(raceType, geoLevel).map((y) => <option key={y} value={y}>{y}</option>)}
-            </select>
+            {/* Year stepper: older ‹ year › newer, the dropdown still jumps anywhere. */}
+            <div className="flex h-7 items-stretch overflow-hidden rounded-md" style={{ background: "var(--app-tab-bg)", border: "1px solid var(--app-border)" }} role="group" aria-label="Election year">
+              <button
+                type="button"
+                onClick={() => olderYear != null && selectYear(olderYear)}
+                disabled={olderYear == null}
+                aria-label={olderYear != null ? `Previous election, ${olderYear}` : "No earlier election"}
+                title={olderYear != null ? `${olderYear}` : undefined}
+                className="flex w-6 items-center justify-center transition-colors sm:w-7 enabled:hover:bg-[color-mix(in_srgb,var(--app-text-primary)_7%,transparent)] disabled:opacity-30"
+                style={{ color: "var(--app-text-primary)" }}
+              >
+                <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden><path d="M7.5 2.5 4 6l3.5 3.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </button>
+              <select
+                value={year}
+                onChange={(e) => selectYear(Number(e.target.value))}
+                aria-label="Year"
+                className="appearance-none bg-transparent px-1.5 text-center text-xs font-semibold tabular-nums leading-none outline-none sm:px-2"
+                style={{ color: "var(--app-text-primary)", borderLeft: "1px solid var(--app-border)", borderRight: "1px solid var(--app-border)", textAlignLast: "center" }}
+              >
+                {yearOptions.map((y) => <option key={y} value={y}>{y}</option>)}
+              </select>
+              <button
+                type="button"
+                onClick={() => newerYear != null && selectYear(newerYear)}
+                disabled={newerYear == null}
+                aria-label={newerYear != null ? `Next election, ${newerYear}` : "No later election"}
+                title={newerYear != null ? `${newerYear}` : undefined}
+                className="flex w-6 items-center justify-center transition-colors sm:w-7 enabled:hover:bg-[color-mix(in_srgb,var(--app-text-primary)_7%,transparent)] disabled:opacity-30"
+                style={{ color: "var(--app-text-primary)" }}
+              >
+                <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden><path d="M4.5 2.5 8 6 4.5 9.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </button>
+            </div>
             {hasSpecialThisYear && (
               <button
                 type="button"
                 onClick={() => setSpecialOnly((v) => !v)}
                 aria-pressed={specialOnly}
                 title={specialOnly ? "Showing special elections only — click to show all" : "Show special elections only"}
-                className="rounded-md px-2.5 py-1.5 text-xs font-semibold"
+                className="h-7 rounded-md px-2 text-xs font-semibold sm:px-2.5"
                 style={
                   specialOnly
                     ? { background: t.textPrimary, color: t.bg, border: `1px solid ${t.textPrimary}` }
                     : { background: "transparent", color: t.textMuted, border: `1px solid ${t.border}` }
                 }
               >
-                Specials only
+                Specials<span className="hidden sm:inline"> only</span>
               </button>
             )}
+            {/* Phones: a dropdown, so office, year, specials and geography share one line. */}
+            <select
+              value={geoLevel}
+              onChange={(e) => selectGeoLevel(e.target.value as GeoLevel)}
+              aria-label="Geography"
+              className={`${SELECT_CLASS_TIGHT} sm:hidden`}
+              style={{ ...SELECT_STYLE, ...SELECT_STYLE_TIGHT }}
+            >
+              {GEO_LEVELS.map((gl) => <option key={gl.key} value={gl.key}>{gl.label}</option>)}
+            </select>
+            <div className="hidden sm:ml-auto sm:flex">
+              <Segmented label="Geography" value={geoLevel} onChange={selectGeoLevel} options={GEO_LEVELS.map((gl) => [gl.key, gl.label])} />
+            </div>
           </div>
         </div>
       </div>
@@ -433,7 +497,9 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
 
         {/* ── National results dashboard ── */}
         <div
-          className="grid grid-cols-2 gap-x-6 gap-y-3 py-2.5 md:grid-cols-[auto_minmax(0,1fr)_auto_auto] md:items-center md:gap-x-0"
+          // Fixed side columns from md up, so the strip's sections sit in the same place whichever
+          // geography is shown ("Counties won 2,474 – 614" is wider than "States won 3 – 8").
+          className="grid grid-cols-2 gap-x-6 gap-y-3 py-2.5 md:grid-cols-[15rem_minmax(0,1fr)_8.5rem_9rem] md:items-center md:gap-x-0"
           style={{ borderTop: `2px solid ${t.textPrimary}`, borderBottom: `1px solid ${t.border}`, opacity: sliceLoading ? 0.55 : 1 }}
         >
           {/* Margin */}
@@ -633,6 +699,9 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
             />
           </div>
         )}
+
+        {/* ── Every race page for this office + year (reads the selection only, not the geography view) ── */}
+        <PastRaceTable office={raceType} year={year} />
 
       </div>
     </>

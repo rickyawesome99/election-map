@@ -170,6 +170,14 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
       <main className={`${PAGE_CONTAINER} py-6 sm:py-8`}>
         {/* Map, Other Forecasts, then Key Races in two columns: the content column is too narrow to share. */}
         <div className="grid gap-8">
+          {/* Election night: the live results page, boxed at the top (user, 2026-10-25). */}
+          <Link prefetch={false} href="/results" className="group flex flex-wrap items-center justify-between gap-3 rounded-md px-4 py-3 transition-colors hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)]" style={{ border: `2px solid ${t.textPrimary}` }}>
+            <div>
+              <div className="text-[11px] font-bold uppercase tracking-[0.12em]">Election Night Results</div>
+              <div className="mt-1 text-sm" style={{ color: t.textMuted }}>Live counts for every Senate, governor and House race against the forecast, with a projected final margin as counties report.</div>
+            </div>
+            <span className="text-sm font-semibold underline decoration-dotted underline-offset-4 group-hover:decoration-solid">Open the results page →</span>
+          </Link>
           <section>
             <div className="flex items-baseline justify-between gap-4 border-b-2 pb-2" style={{ borderColor: t.textPrimary }}>
               <div className="text-[11px] font-bold uppercase tracking-[0.12em]">State TPL</div>

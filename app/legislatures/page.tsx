@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { electionYear, stateLegData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { stateLegDistricts, UNICAMERAL_STATES } from "@/data/stateLegDistricts";
@@ -6,7 +5,6 @@ import { chamberOutcome } from "@/lib/chamberOutcome";
 import { stateLegCompositionAsOf } from "@/data/stateLegComposition";
 import { projectAllChambers } from "@/lib/stateLegForecast";
 import { currentChamberSeats, latestChamberSeats } from "@/lib/stateLegSeats";
-import { getNationalEnvironment } from "@/lib/tplCompute";
 import { stateLegMapInfo } from "@/data/stateLegMapInfo";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
 import LegislatureChambersTable, { SplitBar, type ChamberRow } from "@/components/LegislatureChambersTable";
@@ -33,7 +31,6 @@ function BigNum({ value, label, color, align = "left" }: { value: string; label:
 
 export default function LegislaturesPage() {
   const chambers = projectAllChambers();
-  const env = getNationalEnvironment();
   const byAbbr = new Map(statesData.map((s) => [s.abbr, s]));
   const rows = chambers.map((c) => {
     const state = byAbbr.get(c.abbr)!;
@@ -136,9 +133,6 @@ export default function LegislaturesPage() {
       <div style={{ background: PAGE_HERO_BG }}>
         <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} pb-6`}>
           <h1 style={PAGE_TITLE_STYLE}>State Legislatures</h1>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-            {chambers.length} chambers are on the ballot. Each is simulated seat by seat from the district atlas: a district&apos;s lean on today&apos;s lines, the national environment (E {env.eHat >= 0 ? "R" : "D"}+{Math.abs(env.eHat).toFixed(1)}, σ {env.sigmaE.toFixed(1)}), incumbency, and the {electionYear} field. Seats not on the ballot hold their sitting member. Method: <Link href="/analysis/internal-methodology/state-leg" className="underline underline-offset-2" prefetch={false}>Legislative atlas</Link>.
-          </p>
           <div className="mt-6 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
             {/* Seats on the ballot: one bar, D | independent | R, with the halfway tick. */}
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">

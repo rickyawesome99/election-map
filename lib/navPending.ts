@@ -11,7 +11,7 @@ import { useSyncExternalStore } from "react";
 /** Which placeholder layout (components/PendingPage) stands in for the page while it loads. */
 export type PendingKind =
   | "overview" | "forecast" | "legislatures" | "historical" | "model" | "analysis" | "finder"
-  | "race" | "past" | "chamber" | "state" | "candidate" | "county";
+  | "race" | "past" | "chamber" | "state" | "candidate" | "county" | "results";
 /** `href` is the full destination (query and hash included) for the full-load fallback. */
 export type PendingNav = { kind: PendingKind; path: string; href?: string };
 
@@ -47,6 +47,7 @@ export function usePendingNav(): PendingNav | null {
 
 const TAB_KINDS: Record<string, PendingKind> = {
   "/overview": "overview",
+  "/results": "results",
   "/house": "forecast",
   "/senate": "forecast",
   "/governor": "forecast",

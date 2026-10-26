@@ -25,9 +25,11 @@ import {
 } from "@/data/forecastData";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { withAtLargeAlias } from "@/lib/congressionalDistricts";
+import { statePastElectionHrefs } from "@/lib/pastElections";
+import { lastName } from "@/lib/personName";
 import {
   MAP_LEVELS, MAP_OFFICES, yearsForLevel,
-  type MapLevel, type MapOffice, type MapSlice, type NormalizedResult, type SliceEntry,
+  type MapLevel, type MapOffice, type MapSlice, type NormalizedResult, type SliceEntry, type SliceNames,
 } from "@/lib/mapSliceTypes";
 export { MAP_LEVELS, MAP_OFFICES, yearsForLevel };
 export type { MapLevel, MapOffice, MapSlice, NormalizedResult, SliceEntry };
@@ -243,7 +245,7 @@ const OFFICE_RACE_NAME: Record<Exclude<MapOffice, "house">, string> = { presiden
 
 // ── District level ───────────────────────────────────────────────────────────
 
-type GeoResult = { label: string; stateAbbr: string; stateName: string; result: NormalizedResult | null };
+type GeoResult = { label: string; stateAbbr: string; stateName: string; result: NormalizedResult | null; nameKey?: string };
 
 function buildDistrictResults(office: MapOffice, year: number, specialOnly = false): Map<string, GeoResult> {
   const map = new Map<string, GeoResult>();
@@ -254,7 +256,7 @@ function buildDistrictResults(office: MapOffice, year: number, specialOnly = fal
       const r = results.find((pr) => pr.year === year);
       let result = r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes) : null;
       if (result && r) result = applyHouseSamePartyResult(result, r);
-      map.set(id, { label: `${stateInfo.abbr}-${id.slice(-2)}`, stateAbbr: stateInfo.abbr, stateName: stateInfo.name, result });
+      map.set(id, { label: `${stateInfo.abbr}-${id.slice(-2)}`, stateAbbr: stateInfo.abbr, stateName: stateInfo.name, result, nameKey: r ? id : undefined });
     }
   } else {
     const raceName = OFFICE_RACE_NAME[office];
@@ -264,7 +266,7 @@ function buildDistrictResults(office: MapOffice, year: number, specialOnly = fal
       const r = findRaceResult(results, raceName, year, specialOnly);
       let result = r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes) : null;
       if (result) result = applySamePartyResult(result, raceName, year, stateInfo.abbr);
-      map.set(geoid, { label: `${stateInfo.abbr}-${geoid.slice(-2)}`, stateAbbr: stateInfo.abbr, stateName: stateInfo.name, result });
+      map.set(geoid, { label: `${stateInfo.abbr}-${geoid.slice(-2)}`, stateAbbr: stateInfo.abbr, stateName: stateInfo.name, result, nameKey: stateInfo.abbr });
     }
   }
   return map;
@@ -345,6 +347,56 @@ function collectStateAggregateResults(office: MapOffice, year: number): Normaliz
   return out;
 }
 
+
+// ── Candidate names for the hover card ───────────────────────────────────────
+
+const surname = (n?: string) => (n ? lastName(n) : null);
+
+/** Surnames per race for one office and year (see MapSlice.names). Statewide: the race the map
+ * colours a state by (regular, else the special when that was the only race), plus "XX:S" for a
+ * same-year Senate special. A slot holding several races' votes gets no names. House: by GEOID. */
+function buildSliceNames(office: MapOffice, year: number): Record<string, SliceNames> {
+  const out: Record<string, SliceNames> = {};
+  if (office === "house") {
+    for (const [id, results] of mergedHouseResultsById()) {
+      const r = results.find((pr) => pr.year === year);
+      if (r) out[id] = [surname(r.demCandidate), surname(r.repCandidate)];
+    }
+    return out;
+  }
+  for (const { abbr } of Object.values(FIPS_TO_STATE)) {
+    let matches: PastResult[] = [];
+    if (office === "president") {
+      const r = presPastResults[abbr]?.find((pr) => pr.year === year);
+      if (r) matches = [{ year, demPct: r.demPct, repPct: r.repPct, demCandidate: r.demCandidate, repCandidate: r.repCandidate }];
+    } else if (office === "governor") {
+      const race = governorData.find((r) => r.id === abbr);
+      const past = race?.pastResults ?? governorNoElection.find((e) => e.abbr === abbr)?.pastResults ?? [];
+      matches = past.filter((pr) => pr.year === year);
+    } else {
+      const seat1 = senateData.find((r) => r.id === abbr)?.pastResults ?? senateNoElection.find((e) => e.abbr === abbr)?.pastResults ?? [];
+      const seat2 = senateData.find((r) => r.id === `${abbr}-2`)?.pastResults ?? senateHoldovers.find((e) => e.abbr === abbr)?.pastResults ?? [];
+      matches = [...seat1, ...seat2].filter((pr) => pr.year === year);
+    }
+    const regular = matches.filter((pr) => pr.electionType !== "Special");
+    const special = matches.filter((pr) => pr.electionType === "Special");
+    const main = regular.length > 0 ? regular : special;
+    if (main.length === 1) out[abbr] = [surname(main[0].demCandidate), surname(main[0].repCandidate)];
+    if (special.length === 1) out[`${abbr}:S`] = [surname(special[0].demCandidate), surname(special[0].repCandidate)];
+  }
+  return out;
+}
+
+/** A county's House race: its one district's GEOID that year, none when the county is split. */
+function countyHouseNameKey(fips: string, year: number, names: Record<string, SliceNames>): string | undefined {
+  const districts = countyHouseData[fips]?.years[year]?.districts ?? [];
+  if (districts.length !== 1) return undefined;
+  const base = fips.slice(0, 2) + String(districts[0]).padStart(2, "0");
+  // At-large seats are stored as XX00 or XX01 depending on the source.
+  for (const id of [base, base.slice(0, 2) + "00", base.slice(0, 2) + "01"]) if (names[id]) return id;
+  return undefined;
+}
+
 // ── Slice assembly ───────────────────────────────────────────────────────────
 
 /** National aggregate with same-party rows folded into their true party — the ONE place
@@ -367,14 +419,17 @@ export function buildMapSlice(level: MapLevel, office: MapOffice, year: number):
   const entries: Record<string, SliceEntry> = {};
   const withSpecial = office === "senate";
 
+  const names = buildSliceNames(office, year);
+
   if (level === "county") {
     for (const fips of countyFipsFor(office)) {
       const result = getCountyResult(office, year, fips, false);
       const special = withSpecial ? getCountyResult(office, year, fips, true) : null;
       if (!result && !special) continue;
-      entries[fips] = withSpecial ? { result, special } : { result };
+      const nameKey = office === "house" ? countyHouseNameKey(fips, year, names) : undefined;
+      entries[fips] = { result, ...(withSpecial ? { special } : {}), ...(nameKey ? { nameKey } : {}) };
     }
-    return { level, office, year, entries, aggregate: aggregate(getAllCountyResults(office, year)) };
+    return { level, office, year, entries, names, aggregate: aggregate(getAllCountyResults(office, year)) };
   }
 
   if (level === "district") {
@@ -395,24 +450,31 @@ export function buildMapSlice(level: MapLevel, office: MapOffice, year: number):
         // A district's "More Info" points at /house/[id] whenever that district has current
         // House race data, regardless of the office being viewed; else the state page.
         moreInfoHref: houseDistrictNames.has(gr.label.toLowerCase()) ? `/house/${gr.label.toLowerCase()}` : `/states/${gr.stateAbbr.toLowerCase()}`,
+        ...(gr.nameKey ? { nameKey: gr.nameKey } : {}),
       };
     }
-    return { level, office, year, entries, aggregate: aggregate(collectDistrictAggregateResults(office, year)) };
+    return { level, office, year, entries, names, aggregate: aggregate(collectDistrictAggregateResults(office, year)) };
   }
 
   const regular = buildStateResults(office, year, false);
   const special = withSpecial ? buildStateResults(office, year, true) : null;
   for (const [fips, gr] of regular) {
+    // A state's "More info" opens that state's past-election page for this office and year
+    // (the Senate special's page under the special-only toggle); the House view sums every
+    // district, so it keeps the state page. District and county views link to their own pages.
+    const hrefs = statePastElectionHrefs(office, gr.stateAbbr, year);
     entries[fips] = {
       result: gr.result,
-      ...(withSpecial ? { special: special?.get(fips)?.result ?? null } : {}),
+      ...(withSpecial ? { special: special?.get(fips)?.result ?? null, specialMoreInfoHref: hrefs.special } : {}),
       label: gr.label,
       stateAbbr: gr.stateAbbr,
       stateName: gr.stateName,
-      moreInfoHref: `/states/${gr.stateAbbr.toLowerCase()}`,
+      moreInfoHref: hrefs.regular ?? `/states/${gr.stateAbbr.toLowerCase()}`,
+      // The House state view sums every district, so it reads "Democrats" / "Republicans".
+      ...(office !== "house" ? { nameKey: gr.stateAbbr } : {}),
     };
   }
-  return { level, office, year, entries, aggregate: aggregate(collectStateAggregateResults(office, year)) };
+  return { level, office, year, entries, names, aggregate: aggregate(collectStateAggregateResults(office, year)) };
 }
 
 /** Every (level, office, year) combination the map can show — the static params for the

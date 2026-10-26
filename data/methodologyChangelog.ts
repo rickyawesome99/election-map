@@ -26,6 +26,17 @@ export interface MethodologyChange {
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
   {
+    date: "2026-10-25", models: ["turnout"], kind: "change",
+    title: "Results needle calibrated on the 2025 Virginia and New Jersey governor snapshot histories",
+    detail: "scripts/resultsNeedleBacktest.ts replays civicAPI's election-night snapshots (142 VA, 19 NJ) through the needle with priors built as the 2026 ones would have been a year out. The shared and county sigma terms alone covered the final margin 8% of the time at the 80% band: the votes counted last are unlike the rest (Virginia's final 2% ran about D+80). A late-vote sigma proportional to the uncounted share (SIGMA_LATE 7) was added; K_SWING_SHARE 0.08 → 0.1 and SIGMA_FLOOR 0.15 → 0.3 from the same grid. Trusting a county's own deviation sooner than its completeness (OWN_WEIGHT_EXP below 1) was tested and did not lower the error.",
+    effect: "80% band coverage 8% → ~95% over the night, RMS z 2.6 → 0.9; the needle's mean absolute error (2.2 points over the night, 1.2 in the last tenth) is unchanged.",
+  },
+  {
+    date: "2026-10-25", models: ["turnout"], kind: "change",
+    title: "Election-night results page and needle",
+    detail: "New /results page: live counts from civicAPI for every Senate, governor and House race against the forecast, with a projected final margin per race. The needle takes the county projection as its prior, measures each county's completeness against the turnout estimate (the feed's precinct-based percent reporting runs far ahead of the vote), estimates one shared swing from reporting counties with shrinkage, and gives the uncounted remainder the prior plus swing, trusting a county's own deviation in proportion to its completeness. Constants are first settings, to be calibrated on the 2025 Virginia and New Jersey governor snapshot histories.",
+  },
+  {
     date: "2026-10-23", models: ["forecast"], kind: "data",
     title: "Governor money filled for the 15 races that had none, and Alabama's Democratic total corrected",
     detail: "Fifteen 2026 governor races (AK AR CT HI ID KS MD ME NE OK OR RI SD TN VT) had no receipts, because TransparencyUSA does not cover them and now blocks scripted access. They were filled from each state's own campaign-finance portal: total contributions to the nominee's committee from January 1, 2025 (or the committee's start), cash plus in-kind, loans excluded. Connecticut counts Lamont's personal funds ($15.4M) and Fazio's Citizens' Election Program grants ($18.8M), as the FollowTheMoney totals in the 2018 and 2022 rows did. Idaho's Sunshine portal was down, so its two figures are rounded news estimates (Pickens about $0.30M, Little about $3.6M), to be re-pulled. Alabama's Doug Jones had $0 from a TransparencyUSA coverage gap and now has $6.48M from the Alabama FCPA download; Tuberville moves $16.27M → $16.63M. Coverage ends between July 23 (Kansas) and October 21 (Oregon), because several states' pre-general reports are not due until October 26–29. data/fundraisingData.ts was regenerated with scripts/generate-fundraising-data.py, which now labels these rows \"State campaign-finance filings\".",

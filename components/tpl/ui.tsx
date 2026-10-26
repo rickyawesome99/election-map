@@ -90,12 +90,12 @@ export function WarChip({ war, size = "xs" }: { war: number | null | undefined; 
 }
 
 /** A candidate name that opens their record in the candidates view. */
-export function CandidateLink({ name, state, party, war, className = "" }: { name: string | undefined; /** The race's state (two candidates can share a name). */ state?: string; party?: string; war?: number | null; className?: string }) {
+export function CandidateLink({ name, label, state, party, war, className = "" }: { name: string | undefined; /** Shown in place of the name (e.g. the surname); the full name goes in the tooltip. */ label?: string; /** The race's state (two candidates can share a name). */ state?: string; party?: string; war?: number | null; className?: string }) {
   if (!name) return <span style={VERY_MUTED}>—</span>;
   const p = party === "D" || party === "R" ? party : party ? "I" : undefined;
   return (
     <span className={`inline-flex flex-wrap items-center gap-1.5 ${className}`}>
-      <Link href={`/model/candidates?c=${encodeURIComponent(candidateSlug(name, state))}`} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }}>{name}</Link>
+      <Link href={`/model/candidates?c=${encodeURIComponent(candidateSlug(name, state))}`} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }} title={label ? name : undefined}>{label ?? name}</Link>
       {p && <span className="text-[11px] font-bold" style={{ color: p === "R" ? "var(--party-rep)" : p === "D" ? "var(--party-dem)" : "var(--party-ind)" }}>{p}</span>}
       <WarChip war={war} />
     </span>

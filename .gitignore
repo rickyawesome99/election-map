@@ -79,3 +79,6 @@ data-entry/precinct-districts/.cache/
 
 # Forecast over time, regenerated before every build/dev start (scripts/buildForecastHistory.ts)
 data/generated/
+
+# Election-night civicAPI snapshots (scripts/archive-results.mjs; hundreds of MB over a night)
+data-entry/results-archive/

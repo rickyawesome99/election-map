@@ -208,7 +208,7 @@ function HistoricalSkeleton() {
     <>
       <Hero className="pb-0">
         <Title>Historical Results</Title>
-        <div className="mt-4 flex flex-wrap gap-2"><Sk className="h-8 w-44 rounded-lg" /><Sk className="h-8 w-24 rounded-lg" /><Sk className="h-8 w-16 rounded-lg" /></div>
+        <div className="mt-4 flex flex-wrap gap-2"><Sk className="h-7 w-24 rounded-md" /><Sk className="h-7 w-28 rounded-md" /><Sk className="h-7 w-44 rounded-md sm:ml-auto" /></div>
       </Hero>
       <Body>
         <div className="mt-4 py-4" style={{ borderTop: "2px solid var(--app-text-primary)", borderBottom: "1px solid var(--app-border)" }}>
@@ -217,6 +217,8 @@ function HistoricalSkeleton() {
         <div className="mt-3"><LoadingText /></div>
         <UsMap className="mt-6" />
         <div className="mt-6 flex justify-center"><Legend /></div>
+        <div className="mt-10 flex items-end justify-between pb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}><Sk className="h-3 w-40" /><Sk className="hidden h-7 w-64 rounded-md sm:block" /></div>
+        <TableRows rows={8} cols={3} />
       </Body>
     </>
   );
@@ -493,7 +495,23 @@ function CountySkeleton() {
   );
 }
 
+function ResultsSkeleton() {
+  return (
+    <Body>
+      <Sk className="mt-3 h-4 w-24 rounded-full" />
+      <Sk className="mt-3 h-10 w-72" />
+      <Lines widths={["w-3/4", "w-1/2"]} />
+      <div className="mt-8 grid gap-4 sm:grid-cols-3">{Array.from({ length: 3 }, (_, i) => <Sk key={i} className="h-44 w-full" />)}</div>
+      <SectionHead className="mt-10" />
+      <Sk className="mx-auto mt-4 aspect-[1.6] w-full max-w-3xl" />
+      <SectionHead className="mt-10" />
+      <div className="mt-4 space-y-3">{Array.from({ length: 8 }, (_, i) => <Sk key={i} className="h-8 w-full" />)}</div>
+    </Body>
+  );
+}
+
 const SKELETONS: Record<PendingKind, (p: { path: string }) => ReactNode> = {
+  results: ResultsSkeleton,
   overview: OverviewSkeleton,
   forecast: ForecastSkeleton,
   legislatures: LegislaturesSkeleton,
