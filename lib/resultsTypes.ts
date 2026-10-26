@@ -153,3 +153,8 @@ export type RaceProjection = {
 /** One moment of the needle's chamber projection: expected Democratic seats with the 80% band. */
 export type SeatPoint = { t: number; mean: number; lo: number; hi: number };
 export type SeatSeries = Record<ResultsOffice, SeatPoint[]>;
+/** Each race's projection at every point of a replayed archive's timeline (the SeatSeries'
+ *  times), by raceHash: [margin R-positive, sigma], to one decimal. */
+export type RaceMarginSeries = Record<string, [number, number][]>;
+/** A replayed archive's series: the chambers' seats and, where the source has them, every race's margin. */
+export type ArchiveSeries = SeatSeries & { races?: RaceMarginSeries };

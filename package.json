@@ -21,7 +21,8 @@
     "predev": "npm run chamber-margins && npm run candidate-pages && npm run history",
     "state-leg-money": "node scripts/build-state-leg-finance.mjs && tsx --conditions=react-server scripts/stateLegBacktest.ts --emit && tsx --conditions=react-server scripts/stateLegBacktest.ts --money --emit && tsx --conditions=react-server scripts/buildStateLegAtlasSlices.ts",
     "civic-ids": "python3 scripts/fetch-civicapi-race-ids.py",
-    "archive-results": "node scripts/archive-results.mjs"
+    "archive-results": "node scripts/archive-results.mjs",
+    "publish-sim-night": "tsx --conditions=react-server scripts/publish-sim-night.ts"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

@@ -35,7 +35,7 @@ type Base = {
   variant?: "tooltip" | "card" | "panel"; size?: "compact" | "wide" | "small"; aside?: ReactNode; footer?: ReactNode;
 };
 export type CountyTooltipProps = Base & (
-  | { kind: "result"; dem: CountyTooltipSide; rep: CountyTooltipSide; /** R-positive. */ margin: number; totalVotes: number | null; /** How much of the county is counted, e.g. "50% in" (the Results page); upper right. */ reporting?: string }
+  | { kind: "result"; dem: CountyTooltipSide; rep: CountyTooltipSide; /** R-positive. */ margin: number; totalVotes: number | null; /** How much of the county is counted, e.g. "50% in" (the Results page); upper right. */ reporting?: string; /** The Results page's projected final margin, R-positive: shown beside a smaller counted margin. */ projectedMargin?: number }
   | { kind: "tpl"; /** R-positive; null when the county has none. */ tpl: number | null; votes: number | null }
   | { kind: "message"; headline?: { text: string; party: Party }; message?: string }
   /** One figure with its label (the turnout map): the value as the serif headline, the metric name under it, and an optional note with the numbers behind it. */
@@ -136,7 +136,15 @@ export default function CountyTooltip(props: CountyTooltipProps) {
         {props.reporting ? <div className="flex items-start justify-between gap-2">{nameText}<div className={`shrink-0 ${label}`} style={{ color: "var(--app-text-primary)" }}>{props.reporting}</div></div> : name}
         {sub}
         <div className="flex items-end justify-between gap-3">
-          <div className="mt-1 tabular-nums" style={{ ...headline, color: fig.color }}>{fig.text}</div>
+          {props.projectedMargin != null ? (() => {
+            const p = signed(props.projectedMargin, dem.party, rep.party);
+            return (
+              <div className="mt-1 flex items-end gap-3 tabular-nums">
+                <div><div className={label} style={{ color: "var(--app-text-muted)" }}>Counted</div><div style={{ ...headline, fontSize: 22, color: fig.color }}>{fig.text}</div></div>
+                <div><div className={label} style={{ color: "var(--app-text-muted)" }}>Projected</div><div style={{ ...headline, fontSize: 22, color: p.color }}>{p.text}</div></div>
+              </div>
+            );
+          })() : <div className="mt-1 tabular-nums" style={{ ...headline, color: fig.color }}>{fig.text}</div>}
           {totalVotes != null && <div className="pb-[3px] text-right">{votesLabel}{votesFigure(totalVotes)}</div>}
         </div>
         <div className={`${isCard ? "mt-1.5 h-1" : "mt-2 h-1.5"} flex overflow-hidden rounded-full`} style={{ background: "var(--app-tab-bg)" }}>
@@ -232,7 +240,13 @@ function CountyPanel(props: CountyTooltipProps) {
         )}
       </div>
     );
-    right = <div className="font-extrabold tabular-nums" style={{ fontSize: figSize, lineHeight: 1, color: fig.color }}>{fig.text}</div>;
+    const projFig = props.projectedMargin != null ? signed(props.projectedMargin, dem.party, rep.party) : null;
+    right = (
+      <div className="text-right">
+        <div className="font-extrabold tabular-nums" style={{ fontSize: figSize, lineHeight: 1, color: fig.color }}>{fig.text}</div>
+        {projFig && <div className="mt-1 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>proj. <b style={{ color: projFig.color }}>{projFig.text}</b></div>}
+      </div>
+    );
   } else if (props.kind === "tpl") {
     const fig = props.tpl == null ? null : signed(props.tpl, "D", "R");
     right = (

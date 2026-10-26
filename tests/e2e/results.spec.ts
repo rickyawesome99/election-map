@@ -68,7 +68,7 @@ test("the dashboard, map and tables fill from the feed and a race opens with its
   expect(page.url()).not.toMatch(/#/);
 });
 
-test("a test-data payload is hidden until ?test=1", async ({ page }) => {
+test("a test-data payload is hidden", async ({ page }) => {
   await page.route("https://civicapi.org/api/v2/**", (route) => route.fulfill({ json: { percent_reporting: 90, test_data: true, candidates: [{ name: "A", party: "Democratic", votes: 100, percent: 60 }, { name: "B", party: "Republican", votes: 50, percent: 40 }] } }));
   await page.clock.setFixedTime(ELECTION_NIGHT);
   await page.goto("/results");
@@ -95,7 +95,7 @@ test("the replay control steps through archived snapshots", async ({ page }) => 
   } } });
   await page.route("**/api/results/archive**", (route) => {
     const file = new URL(route.request().url()).searchParams.get("file");
-    if (!file) return route.fulfill({ json: { snapshots: [{ file: "2026-11-04/2026-11-04T01-00-00-000Z.json.gz", fetchedAt: "2026-11-04T01:00:00.000Z" }, { file: "2026-11-04/2026-11-04T02-00-00-000Z.json.gz", fetchedAt: "2026-11-04T02:00:00.000Z" }] } });
+    if (!file) return route.fulfill({ json: { snapshots: [{ file: "sim-test/2026-11-04T01-00-00-000Z.json.gz", fetchedAt: "2026-11-04T01:00:00.000Z", set: "sim-test" }, { file: "sim-test/2026-11-04T02-00-00-000Z.json.gz", fetchedAt: "2026-11-04T02:00:00.000Z", set: "sim-test" }] } });
     return route.fulfill({ json: snap(file.includes("T02") ? 2 : 1) });
   });
   await page.clock.setFixedTime(ELECTION_NIGHT);
@@ -124,4 +124,52 @@ test("before election night the page reads nothing from civicAPI", async ({ page
   await expect(page.getByText("Balance of power")).toBeVisible();
   await page.waitForTimeout(1500);
   expect(calls).toBe(0);
+});
+
+test("?test=1 previews the stored simulated night without reading civicAPI", async ({ page }) => {
+  await page.clock.setFixedTime(new Date("2026-10-26T16:00:00Z"));
+  let calls = 0;
+  await page.route("https://civicapi.org/**", (route) => { calls++; return route.abort(); });
+  await page.route("**/api/results/archive**", (route) => {
+    if (new URL(route.request().url()).pathname.endsWith("/series")) return route.fulfill({ json: { senate: [], governor: [], house: [] } });
+    const file = new URL(route.request().url()).searchParams.get("file");
+    if (!file) return route.fulfill({ json: { snapshots: [{ file: "sim-test/2026-11-04T01-00-00-000Z.json.gz", fetchedAt: "2026-11-04T01:00:00.000Z", set: "sim-test" }] } });
+    return route.fulfill({ json: { fetchedAt: "2026-11-04T01:00:00.000Z", races: {} } });
+  });
+  await page.goto("/results?test=1");
+  await expect(page.getByText("SIMULATED NIGHT")).toBeVisible({ timeout: 60_000 });
+  await expect(page.getByText(/1 \/ 1/)).toBeVisible();
+  expect(calls).toBe(0);
+});
+
+test("without the dev archive the preview replays the published simulated night", async ({ page }) => {
+  await page.clock.setFixedTime(new Date("2026-10-26T16:00:00Z"));
+  let calls = 0;
+  await page.route("https://civicapi.org/**", (route) => { calls++; return route.abort(); });
+  // As on the deployed site: the archive routes list nothing.
+  await page.route("**/api/results/archive**", (route) => route.fulfill({ json: { snapshots: [] } }));
+  await page.goto("/results");
+  await page.getByRole("button", { name: "Preview a simulated night" }).click({ timeout: 60_000 });
+  await expect(page.getByText("SIMULATED NIGHT")).toBeVisible();
+  await page.getByRole("slider", { name: "Snapshot" }).fill("48");
+  await expect(page.getByText(/49 \/ 49/)).toBeVisible();
+  const senate = page.locator("section", { hasText: "Balance of power" }).locator("h3", { hasText: "Senate" }).locator("..").locator("..");
+  await expect(senate).toContainText(/[1-9]\d*\/35 reporting/, { timeout: 30_000 });
+  expect(calls).toBe(0);
+});
+
+test("on a 320px phone the page, race table and county table fit without sideways scrolling", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 700 });
+  await stubFeed(page);
+  await page.clock.setFixedTime(ELECTION_NIGHT);
+  // Anything wider than its box, page-level or inside a scroller (the nav's own tab strip aside).
+  const overflow = () => page.evaluate(() => [document.documentElement, ...document.querySelectorAll("main *")]
+    .filter((e) => e.scrollWidth > e.clientWidth + 1 && (e === document.documentElement || /(auto|scroll)/.test(getComputedStyle(e).overflowX)))
+    .map((e) => `${e.tagName}.${e.className} ${e.clientWidth}/${e.scrollWidth}`));
+  await page.goto("/results");
+  await expect(page.getByText(/fetched \d/)).toBeVisible({ timeout: 60_000 });
+  expect(await overflow()).toEqual([]);
+  await page.goto("/results#senate-GA");
+  await expect(page.locator("#race-detail table tbody tr").first()).toContainText("50%", { timeout: 60_000 });
+  expect(await overflow()).toEqual([]);
 });

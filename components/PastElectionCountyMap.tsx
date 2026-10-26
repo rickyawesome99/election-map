@@ -26,6 +26,8 @@ export type CountyMapResult = {
   margin: number;
   /** Shown in the county card's upper right, e.g. "50% in" (the Results page's live counts). */
   reporting?: string;
+  /** The Results page's projected final margin, R-positive, shown beside the counted one. */
+  projectedMargin?: number;
 };
 
 export type CountyMapEntry = { fips: string; name: string; result: CountyMapResult };
@@ -143,7 +145,7 @@ export default function PastElectionCountyMap({
       kind: "result", title,
       dem: { name: demName, link: isRealName(demName), state: stateAbbr, party: demParty, pct: c.result.demPct, votes: c.result.demVotes },
       rep: { name: repName, link: isRealName(repName), state: stateAbbr, party: repParty, pct: c.result.repPct, votes: c.result.repVotes },
-      margin: c.result.margin, totalVotes: c.result.totalVotes, reporting: c.result.reporting,
+      margin: c.result.margin, totalVotes: c.result.totalVotes, reporting: c.result.reporting, projectedMargin: c.result.projectedMargin,
     };
   };
 

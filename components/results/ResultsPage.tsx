@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
-import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
+import { StandfirstHeader } from "@/components/StandfirstHeader";
 import { ELECTION_YEAR } from "@/lib/electionYear";
 import ResultsMap, { type MapMode } from "@/components/results/ResultsMap";
 import RaceDetail from "@/components/results/RaceDetail";
@@ -14,7 +14,7 @@ import { fetchRaces, normalizeRace, CIVIC_ATTRIBUTION } from "@/lib/resultsFeed"
 import { projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
 import { closeMinutes, fmtClose, fmtMargin, fmtTime, marginSideColor, partyColor, raceHash } from "@/lib/resultsFormat";
 import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
-import { ELECTION_DATE, FEED_OPENS_AT, OFFICE_LABEL, RESULTS_OFFICES, type LiveRace, type PriorsSlice, type RacePrior, type RaceProjection, type ResultsOffice, type SeatSeries } from "@/lib/resultsTypes";
+import { ELECTION_DATE, FEED_OPENS_AT, OFFICE_LABEL, RESULTS_OFFICES, type LiveRace, type PriorsSlice, type RacePrior, type RaceProjection, type ResultsOffice, type SeatSeries, type ArchiveSeries, type SeatPoint } from "@/lib/resultsTypes";
 
 // The election-night Results page. Priors (forecast, nominees, county projection, closing times,
 // civicAPI ids) come from the static slice /api/results/priors/{office}; live counts come
@@ -28,10 +28,22 @@ const AUTO_EVERY_MS = 120_000;
 /** County detail is refetched for competitive races at most this often; the selected race every refresh. */
 const DETAIL_EVERY_MS = 5 * 60_000;
 const COMPETITIVE = 15;
+/** Points kept per race in the live margin record before the older half is thinned. */
+const RACE_HISTORY_CAP = 160;
+/** z for the 80% band. */
+const Z80 = 1.2816;
 const muted = { color: "var(--app-text-muted)" };
 const veryMuted = { color: "var(--app-text-very-muted)" };
 
 type SortKey = "close" | "margin" | "projected" | "forecast" | "in";
+
+// A published snapshot is the archive's .json.gz as is. Hosts serve it as application/gzip, but
+// one that adds Content-Encoding hands over plain JSON already: only gunzip what starts gzipped.
+async function readGzipJson(res: Response): Promise<unknown> {
+  const bytes = new Uint8Array(await res.arrayBuffer());
+  if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return JSON.parse(new TextDecoder().decode(bytes));
+  return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"))).json();
+}
 
 const isCompetitive = (p: RacePrior) => p.forecast.contest === "contested" && Math.abs(p.forecast.margin) < COMPETITIVE;
 
@@ -57,11 +69,14 @@ export default function ResultsPage() {
   const [selected, setSelected] = useState<string | null>(null);
   const selectedRef = useRef<string | null>(null);
   selectedRef.current = selected;
-  // Replay: the archive script's snapshots (dev only; the directory is never deployed). While a
-  // snapshot is shown the live feed is not read.
+  // Replay: the archive script's snapshots, read from the dev-only archive routes, or on the
+  // deployed site (where those are empty) from the simulated nights scripts/publish-sim-night.ts
+  // copied to public/results-sim/. While a snapshot is shown the live feed is not read.
   const [archiveAll, setArchiveAll] = useState<ArchiveSnapshot[]>([]);
-  // Sets: one per archived date, one per simulated night (sim-*); the latest set is the default.
-  const archiveSets = useMemo(() => Array.from(new Set(archiveAll.map((a) => a.set ?? "archive"))), [archiveAll]);
+  const [archiveStatic, setArchiveStatic] = useState(false);
+  // Sets: only the simulated nights (sim-*) for now, the pre-election preview; the latest set is
+  // the default. The archiver's dated sets are civicAPI test data and are left out.
+  const archiveSets = useMemo(() => Array.from(new Set(archiveAll.map((a) => a.set ?? "archive"))).filter((set) => set.startsWith("sim-")), [archiveAll]);
   const [archiveSet, setArchiveSet] = useState<string | null>(null);
   const activeSet = archiveSet && archiveSets.includes(archiveSet) ? archiveSet : archiveSets[archiveSets.length - 1] ?? null;
   const archive = useMemo(() => archiveAll.filter((a) => (a.set ?? "archive") === activeSet), [archiveAll, activeSet]);
@@ -77,7 +92,8 @@ export default function ResultsPage() {
       .catch((e: Error) => setLoadError(e.message));
   }, []);
 
-  // ?test=1 shows civicAPI's pre-election test data; otherwise a test payload reads as "nothing in".
+  // ?test=1 previews the page on the stored simulated night (a replay; civicAPI is not read). A
+  // live test payload still reads as "nothing in".
   useEffect(() => {
     setAllowTest(new URLSearchParams(window.location.search).get("test") === "1");
     const readHash = () => setSelected(window.location.hash ? decodeURIComponent(window.location.hash.slice(1)) : null);
@@ -90,18 +106,24 @@ export default function ResultsPage() {
   const allPriors = useMemo(() => (priors ? [...priors.senate.races, ...priors.governor.races, ...priors.house.races] : []), [priors]);
 
   useEffect(() => {
-    fetch("/api/results/archive", { cache: "no-store" }).then((r) => (r.ok ? r.json() : { snapshots: [] })).then((d: { snapshots: ArchiveSnapshot[] }) => setArchiveAll(d.snapshots ?? [])).catch(() => {});
+    const list = (url: string) => fetch(url, { cache: "no-store" }).then((r) => (r.ok ? r.json() : { snapshots: [] })).then((d: { snapshots?: ArchiveSnapshot[] }) => d.snapshots ?? []).catch(() => [] as ArchiveSnapshot[]);
+    list("/api/results/archive").then(async (snaps) => {
+      if (snaps.some((a) => a.set?.startsWith("sim-"))) return setArchiveAll(snaps);
+      const published = await list("/results-sim/manifest.json");
+      setArchiveStatic(published.length > 0);
+      setArchiveAll(published);
+    });
   }, []);
 
-  // Before election night the feed is closed: no civicAPI requests at all (?test=1 opens it). A
-  // page left open flips itself on at FEED_OPENS_AT.
+  // Before election night the feed is closed: no civicAPI requests at all. A page left open flips
+  // itself on at FEED_OPENS_AT.
   const [now, setNow] = useState(() => Date.now());
   useEffect(() => {
     if (now >= FEED_OPENS_AT) return;
     const id = setTimeout(() => setNow(Date.now()), Math.min(FEED_OPENS_AT - now + 500, 60 * 60_000));
     return () => clearTimeout(id);
   }, [now]);
-  const feedOpen = allowTest || now >= FEED_OPENS_AT;
+  const feedOpen = now >= FEED_OPENS_AT;
   const feedOpenRef = useRef(feedOpen);
   feedOpenRef.current = feedOpen;
 
@@ -146,9 +168,9 @@ export default function ResultsPage() {
     if (!snap || !allPriors.length) return;
     setReplayLoading(true);
     try {
-      const res = await fetch(`/api/results/archive?file=${encodeURIComponent(snap.file)}`, { cache: "no-store" });
+      const res = await fetch(archiveStatic ? `/results-sim/${snap.file}` : `/api/results/archive?file=${encodeURIComponent(snap.file)}`, { cache: archiveStatic ? "force-cache" : "no-store" });
       if (!res.ok) throw new Error(`archive ${res.status}`);
-      const data = (await res.json()) as { fetchedAt: string; races: Record<string, unknown> };
+      const data = (archiveStatic ? await readGzipJson(res) : await res.json()) as { fetchedAt: string; races: Record<string, unknown> };
       const at = Date.parse(data.fetchedAt) || Date.parse(snap.fetchedAt);
       const next = new Map<number, LiveRace>();
       for (const p of allPriors) {
@@ -165,7 +187,7 @@ export default function ResultsPage() {
     } finally {
       setReplayLoading(false);
     }
-  }, [archive, allPriors]);
+  }, [archive, allPriors, archiveStatic]);
 
   const startReplay = useCallback((index: number) => {
     const i = Math.max(0, Math.min(archive.length - 1, index));
@@ -184,6 +206,14 @@ export default function ResultsPage() {
     refresh();
   }, [refresh]);
 
+  // ?test=1: start the replay at the first snapshot once the archive and the priors are in.
+  const previewStarted = useRef(false);
+  useEffect(() => {
+    if (!allowTest || previewStarted.current || !archive.length || !allPriors.length) return;
+    previewStarted.current = true;
+    startReplay(0);
+  }, [allowTest, archive.length, allPriors.length, startReplay]);
+
   // The selected race's county detail, as soon as it is selected.
   useEffect(() => {
     if (!selected || !allPriors.length || replay != null || !feedOpen) return;
@@ -193,7 +223,7 @@ export default function ResultsPage() {
   }, [selected, allPriors, replay, feedOpen]);
 
   // Replaying an archive shows whatever it holds, test data included.
-  const showTest = allowTest || replay != null;
+  const showTest = replay != null;
   const rowsByOffice = useMemo(() => {
     void liveVersion;
     const out = {} as Record<ResultsOffice, ResultsRow[]>;
@@ -231,12 +261,39 @@ export default function ResultsPage() {
       return next;
     });
   }, [lastRefresh, refreshing, replay, tallies, liveKey]);
-  const [archiveSeries, setArchiveSeries] = useState<{ set: string; series: SeatSeries } | null>(null);
+  // Each counting race's projected margin, the same way: one [t, margin, sigma] per refresh while
+  // it changes, kept compact and capped (older points thinned) so the night fits in storage.
+  const raceKey = `results-race-history-${ELECTION_DATE}${showTest ? "-test" : ""}`;
+  const [liveRaces, setLiveRaces] = useState<Record<string, [number, number, number][]>>({});
+  useEffect(() => {
+    try { const raw = localStorage.getItem(raceKey); setLiveRaces(raw ? JSON.parse(raw) : {}); } catch { setLiveRaces({}); }
+  }, [raceKey]);
+  useEffect(() => {
+    if (replay != null || !lastRefresh || refreshing) return;
+    setLiveRaces((prev) => {
+      const next = { ...prev };
+      let changed = false;
+      for (const o of RESULTS_OFFICES) for (const { prior, live, proj } of rowsByOffice[o]) {
+        if (!live || live.total <= 0) continue;
+        const k = raceHash(prior), pts = next[k] ?? [], last = pts[pts.length - 1];
+        const pt: [number, number, number] = [lastRefresh, Math.round(proj.margin * 10) / 10, Math.round(proj.sigma * 10) / 10];
+        if (last && last[0] >= lastRefresh) continue;
+        // An unchanged projection only moves the last point's time forward.
+        const out = last && last[1] === pt[1] && last[2] === pt[2] && pts.length > 1 && pts[pts.length - 2][1] === pt[1] && pts[pts.length - 2][2] === pt[2] ? [...pts.slice(0, -1), pt] : [...pts, pt];
+        next[k] = out.length > RACE_HISTORY_CAP ? [...out.slice(0, RACE_HISTORY_CAP / 2).filter((_, i) => i % 2 === 0), ...out.slice(RACE_HISTORY_CAP / 2)] : out;
+        changed = true;
+      }
+      if (!changed) return prev;
+      try { localStorage.setItem(raceKey, JSON.stringify(next)); } catch { /* storage unavailable: keep it in memory */ }
+      return next;
+    });
+  }, [lastRefresh, refreshing, replay, rowsByOffice, raceKey]);
+  const [archiveSeries, setArchiveSeries] = useState<{ set: string; series: ArchiveSeries } | null>(null);
   useEffect(() => {
     if (replay == null || !activeSet || archiveSeries?.set === activeSet) return;
-    fetch(`/api/results/archive/series?set=${encodeURIComponent(activeSet)}`, { cache: "no-store" })
-      .then((r) => (r.ok ? r.json() : null)).then((series: SeatSeries | null) => { if (series && RESULTS_OFFICES.every((o) => Array.isArray(series[o]))) setArchiveSeries({ set: activeSet, series }); }).catch(() => {});
-  }, [replay, activeSet, archiveSeries?.set]);
+    fetch(archiveStatic ? `/results-sim/${activeSet}/series.json` : `/api/results/archive/series?set=${encodeURIComponent(activeSet)}`, { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null)).then((series: ArchiveSeries | null) => { if (series && RESULTS_OFFICES.every((o) => Array.isArray(series[o]))) setArchiveSeries({ set: activeSet, series }); }).catch(() => {});
+  }, [replay, activeSet, archiveSeries?.set, archiveStatic]);
   const seatHistory: SeatSeries = useMemo(() => {
     if (replay == null) return liveSeries;
     const series = archiveSeries?.set === activeSet ? archiveSeries.series : null;
@@ -279,6 +336,18 @@ export default function ResultsPage() {
     return null;
   }, [selected, rowsByOffice]);
 
+  // The open race's projected margin over the night, from the live record or the replayed archive.
+  const raceHistory: SeatPoint[] = useMemo(() => {
+    if (!selected) return [];
+    const toPoint = (t: number, m: number, sg: number): SeatPoint => ({ t, mean: m, lo: m - Z80 * sg, hi: m + Z80 * sg });
+    if (replay == null) return (liveRaces[selected] ?? []).map(([t, m, sg]) => toPoint(t, m, sg));
+    const series = archiveSeries?.set === activeSet ? archiveSeries.series : null;
+    const pts = series?.races?.[selected];
+    if (!series || !pts) return [];
+    const now = archive[replay] ? Date.parse(archive[replay].fetchedAt) : Infinity;
+    return pts.map(([m, sg], i) => toPoint(series.senate[i]?.t ?? 0, m, sg)).filter((p) => p.t && p.t <= now + 1);
+  }, [selected, replay, liveRaces, archiveSeries, activeSet, archive]);
+
   const sortedRows = useMemo(() => {
     const rows = rowsByOffice[office].filter((r) => (!uncalledOnly || !(r.proj.locked && r.proj.winner)) && (!keyOnly || isCompetitive(r.prior)));
     const abs = (v: number | null) => (v == null ? 999 : Math.abs(v));
@@ -295,9 +364,7 @@ export default function ResultsPage() {
   }, [rowsByOffice, office, sort, uncalledOnly, keyOnly]);
 
   const header = (
-    <StandfirstHeader kicker="Election night" title={`${ELECTION_YEAR} Results`} href="/overview" hubLabel="Overview">
-      Live counts for every <Fig>Senate</Fig>, <Fig>governor</Fig> and <Fig>House</Fig> race on November 3, against the forecast, with a projected final margin that moves as counties report.
-    </StandfirstHeader>
+    <StandfirstHeader kicker="Election night" title={`${ELECTION_YEAR} Results`} href="/overview" hubLabel="Overview" />
   );
   const main = "mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8";
   if (loadError) return <>{header}<main className={main}><p className="text-sm" style={muted}>The priors failed to load ({loadError}). Reload the page.</p></main></>;
@@ -312,7 +379,7 @@ export default function ResultsPage() {
         <span>Results from <a href={CIVIC_ATTRIBUTION.href} className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">{CIVIC_ATTRIBUTION.label}</a>{lastRefresh ? ` · ${replay != null ? "snapshot from" : "fetched"} ${fmtTime(lastRefresh)}` : ""}{failed ? ` · ${failed} races failed to load` : ""}</span>
         {replay == null && !feedOpen ? (
           <span className="rounded px-2 py-0.5 font-semibold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
-            Live results begin on election night, after the first polls close at 6 PM ET on November 3. <Link href="?test=1" prefetch={false} className="font-normal underline" style={muted}>Preview with test data</Link>
+            Live results begin on election night, after the first polls close at 6 PM ET on November 3.{archive.length > 0 && <> <button onClick={() => startReplay(0)} className="font-normal underline" style={muted}>Preview a simulated night</button></>}
           </span>
         ) : replay == null ? (
           <>
@@ -322,13 +389,19 @@ export default function ResultsPage() {
         ) : (
           <button onClick={exitReplay} className="rounded px-2 py-1 font-semibold" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>Back to live</button>
         )}
-        {testSeen && !showTest && <span className="rounded px-2 py-0.5 font-semibold" style={{ background: "var(--app-tab-bg)" }}>civicAPI is serving pre-election test data; counts are hidden until real results begin. <Link href="?test=1" prefetch={false} className="underline">Show the test data</Link></span>}
-        {testSeen && showTest && <span className="rounded px-2 py-0.5 font-semibold" style={{ background: "var(--party-rep)", color: "#ffffff" }}>TEST DATA — randomized by civicAPI, not results</span>}
+        {testSeen && !showTest && <span className="rounded px-2 py-0.5 font-semibold" style={{ background: "var(--app-tab-bg)" }}>civicAPI is serving pre-election test data; counts are hidden until real results begin.</span>}
+        {replay != null && activeSet?.startsWith("sim-") && <span className="rounded px-2 py-0.5 font-semibold" style={{ background: "var(--party-rep)", color: "#ffffff" }}>SIMULATED NIGHT — not results</span>}
+        {testSeen && showTest && !activeSet?.startsWith("sim-") && <span className="rounded px-2 py-0.5 font-semibold" style={{ background: "var(--party-rep)", color: "#ffffff" }}>TEST DATA — randomized by civicAPI, not results</span>}
+        {/* On a race's page: back to the dashboard, at the line's right end */}
+        {selectedRow && (
+          <button onClick={() => select(null)} className="ml-auto inline-flex shrink-0 items-center whitespace-nowrap rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wider transition-colors hover:text-[var(--app-text-primary)]"
+            style={{ border: "1px solid var(--app-border)", background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>← All results</button>
+        )}
       </div>
 
-      {/* Replay (dev only: the archive directory is never deployed) */}
+      {/* Replay: the dev archive, or the published simulated nights */}
       {archive.length > 0 && (
-        <div className="-mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 rounded-md px-3 py-2 text-xs" style={{ border: "1px dashed var(--app-border)", color: "var(--app-text-muted)" }}>
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-2 rounded-md px-3 py-2 text-xs" style={{ border: "1px dashed var(--app-border)", color: "var(--app-text-muted)" }}>
           <span className="font-bold uppercase tracking-wider text-[10px]">Replay archive</span>
           {archiveSets.length > 1 && (
             <select value={activeSet ?? ""} onChange={(e) => { setArchiveSet(e.target.value); if (replay != null) { setReplay(null); replayRef.current = null; } }} className="rounded px-1 py-0.5 text-xs" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }} aria-label="Archive set">
@@ -351,8 +424,8 @@ export default function ResultsPage() {
     return (
       <main className={main}>
         <div id="race-detail" className="space-y-6">
-          <div className="space-y-10">{status}</div>
-          <RaceDetail row={selectedRow} onBack={() => select(null)} />
+          <div className="space-y-3">{status}</div>
+          <RaceDetail row={selectedRow} history={raceHistory} />
         </div>
       </main>
     );
@@ -361,29 +434,31 @@ export default function ResultsPage() {
   return (
     <>
     {header}
-    <main className={main}>
-    <div className="space-y-10">
-      {status}
+    <main className="mx-auto max-w-7xl px-4 pb-6 pt-2 sm:px-6 sm:pb-8 sm:pt-3">
+    <div className="space-y-3">{status}</div>
+    <div className="mt-6 space-y-10">
 
-      {/* Dashboard */}
-      <section>
-        <LedgerSectionHead label="Balance of power" meta={anyIn ? <BarLegend /> : "nothing counted yet"} />
-        <div className="grid gap-8 sm:grid-cols-3 sm:gap-10">
-          {RESULTS_OFFICES.map((o) => <ChamberCard key={o} office={o} tally={tallies[o]} rows={rowsByOffice[o]} history={seatHistory[o]} onSelect={select} />)}
-        </div>
-      </section>
-
-      {/* Map */}
+      {/* Map, with the balance of power beside it at xl (stacked below xl) */}
+      <div className="grid gap-10 xl:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] xl:gap-8">
       <section>
         <LedgerSectionHead label="Map" right={
           <div className="flex flex-wrap items-center gap-1">
             <OfficeTabs office={office} setOffice={setOffice} />
-            <span className="mx-1" style={veryMuted}>|</span>
+            <Sep />
             {(["status", "current", "projected"] as MapMode[]).map((m) => <Tab key={m} active={mapMode === m} onClick={() => setMapMode(m)}>{m === "status" ? "Status" : m === "current" ? "Margin" : "Projected margin"}</Tab>)}
           </div>
         } />
         <ResultsMap office={office} rows={rowsByOffice[office]} mode={mapMode} selected={selected} onSelect={select} />
       </section>
+
+      {/* Dashboard */}
+      <section>
+        <LedgerSectionHead label="Balance of power" meta={anyIn ? <BarLegend /> : "nothing counted yet"} />
+        <div className="grid gap-8 sm:grid-cols-3 sm:gap-10 xl:grid-cols-1 xl:gap-6">
+          {RESULTS_OFFICES.map((o) => <ChamberCard key={o} office={o} tally={tallies[o]} rows={rowsByOffice[o]} history={seatHistory[o]} />)}
+        </div>
+      </section>
+      </div>
 
       {/* Races: the sortable table, or the same races by poll-closing time */}
       <section>
@@ -397,13 +472,13 @@ export default function ResultsPage() {
             <Tab active={raceView === "closing"} onClick={() => setRaceView("closing")}>By poll close</Tab>
             {raceView === "table" && (
               <>
-                <span className="mx-1" style={veryMuted}>|</span>
+                <Sep />
                 <OfficeTabs office={office} setOffice={setOffice} />
-                <span className="mx-1" style={veryMuted}>|</span>
+                <Sep />
                 <Tab active={keyOnly} onClick={() => setKeyOnly((v) => !v)}>Key races</Tab>
                 <Tab active={uncalledOnly} onClick={() => setUncalledOnly((v) => !v)}>Uncalled only</Tab>
-                <span className="mx-1" style={veryMuted}>|</span>
-                <label className="text-xs" style={muted}>Sort <select value={sort} onChange={(e) => setSort(e.target.value as SortKey)} className="rounded px-1 py-0.5 text-xs" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
+                <span className="mx-1 hidden sm:inline" style={veryMuted}>|</span>
+                <label className="ml-auto text-xs sm:ml-0" style={muted}>Sort <select value={sort} onChange={(e) => setSort(e.target.value as SortKey)} className="rounded px-1 py-0.5 text-xs" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
                   <option value="close">Poll close</option><option value="margin">Closest count</option><option value="projected">Closest projection</option><option value="forecast">Closest forecast</option><option value="in">Most counted</option>
                 </select></label>
               </>
@@ -430,6 +505,11 @@ export default function ResultsPage() {
 }
 
 // ── Pieces ───────────────────────────────────────────────────────────────────
+
+/** A "|" between tab groups; on phones a line break instead, so each group keeps to one row. */
+function Sep() {
+  return <><span className="mx-1 hidden sm:inline" style={veryMuted}>|</span><span className="basis-full sm:hidden" /></>;
+}
 
 function Tab({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   return <button onClick={onClick} className="rounded-md px-2 py-1 text-xs font-semibold" style={active ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" } : muted}>{children}</button>;
