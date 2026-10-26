@@ -63,7 +63,7 @@ function priorFor(r: (typeof RACES)[number]): RacePrior {
     forecast: { margin: r.forecast, sigma: r.sigma, probability: normalCdf(-r.forecast / r.sigma), rating: "", contest: "contested", interval80: [r.forecast - 1.28 * r.sigma, r.forecast + 1.28 * r.sigma] },
     pollsClose: { first: "19:00", last: "19:00", note: null },
     votes: total,
-    counties: cells.map((c) => ({ fips: c.fips, name: c.name, share: 1, votes: c.votes, margin: Math.max(-98, Math.min(98, c.lean + shift)), other: c.other, tpl: null })),
+    counties: cells.map((c) => ({ fips: c.fips, name: c.name, share: 1, votes: c.votes, margin: Math.max(-98, Math.min(98, c.lean + shift)), other: c.other, tpl: null, benchmark: null })),
   };
 }
 

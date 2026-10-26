@@ -26,6 +26,10 @@ import type { CountyMapEntry } from "@/components/PastElectionCountyMap";
 //   margin_c   = clamp(lean_c + s), with the one shift s solved so that the vote-weighted mean
 //              of margin_c over the race's counties equals the forecast margin
 //   other_c    the county's 2024 presidential third-party share, capped, so D + R + other = 100
+//   bench_c    = clamp(lean_c + s0), s0 solved the same way for a tied race (target 0): the
+//              margin the county shows if the race finishes even, so a county running to the D
+//              side of it is doing better for the Democrat than a tie needs (the Results page's
+//              Edge column); null unless the race is a contested two-party race
 //
 // A decided race (one major party absent, or two nominees of the same party) is painted for the
 // party that has it, at the forecast's floor, rather than solved.
@@ -52,6 +56,8 @@ export type ProjectedCounty = {
   repPct: number;
   /** R-positive. */
   margin: number;
+  /** The county's margin in a tied race (R-positive); null unless the race is contested D vs R. */
+  benchmark: number | null;
 };
 
 export type ProjectedRaceResult = {
@@ -173,11 +179,12 @@ export function projectRaceResults(office: ProjectedRaceResult["office"], raceId
     return { fips: c.fips, name: c.name, share: c.share, votes: c.votes, lean, leanBasis, tpl, pieceDeviation, other: decided ? 0 : otherShare(c.fips) };
   });
   const shift = decided ? 0 : solveShift(rows, f.margin);
+  const tieShift = contest === "contested" ? solveShift(rows, 0) : null;
   const counties: ProjectedCounty[] = rows.map((r) => {
     const margin = decided ? (decided === "R" ? 100 : -100) : clampMargin(r.lean + shift, r.other);
     const repPct = (100 - r.other + margin) / 2, demPct = (100 - r.other - margin) / 2;
     const demVotes = Math.round((r.votes * demPct) / 100), repVotes = Math.round((r.votes * repPct) / 100);
-    return { fips: r.fips, name: r.name, share: r.share, votes: r.votes, lean: Math.round(r.lean * 100) / 100, leanBasis: r.leanBasis, tpl: r.tpl == null ? null : Math.round(r.tpl * 100) / 100, ...(r.pieceDeviation != null ? { pieceDeviation: Math.round(r.pieceDeviation * 100) / 100 } : {}), demVotes, repVotes, othVotes: Math.max(0, r.votes - demVotes - repVotes), demPct: Math.round(demPct * 100) / 100, repPct: Math.round(repPct * 100) / 100, margin: Math.round(margin * 100) / 100 };
+    return { fips: r.fips, name: r.name, share: r.share, votes: r.votes, lean: Math.round(r.lean * 100) / 100, leanBasis: r.leanBasis, tpl: r.tpl == null ? null : Math.round(r.tpl * 100) / 100, ...(r.pieceDeviation != null ? { pieceDeviation: Math.round(r.pieceDeviation * 100) / 100 } : {}), demVotes, repVotes, othVotes: Math.max(0, r.votes - demVotes - repVotes), demPct: Math.round(demPct * 100) / 100, repPct: Math.round(repPct * 100) / 100, margin: Math.round(margin * 100) / 100, benchmark: tieShift == null ? null : Math.round(clampMargin(r.lean + tieShift, r.other) * 100) / 100 };
   });
   const sum = (k: "votes" | "demVotes" | "repVotes" | "othVotes") => counties.reduce((a, c) => a + c[k], 0);
   const r1 = (v: number) => Math.round(v * 10) / 10;

@@ -27,6 +27,8 @@ export type CountyPrior = {
   other: number;
   /** The county's TPL (the whole county's, for a House piece), R-positive; null without one. */
   tpl: number | null;
+  /** The county's margin if the race finishes tied (lib/countyProjection.ts), R-positive; null unless contested D vs R. */
+  benchmark: number | null;
 };
 
 /** `photo`: a /candidates/ path, looked up at build so the client never loads the photo table. */

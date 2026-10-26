@@ -67,6 +67,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
   }), [proj, liveByFips, view, prior.counties]);
 
   const tplByFips = useMemo(() => new Map(prior.counties.map((c) => [c.fips, c.tpl])), [prior.counties]);
+  const benchByFips = useMemo(() => new Map(prior.counties.map((c) => [c.fips, c.benchmark])), [prior.counties]);
   const sorted = useMemo(() => {
     const rows = proj.counties.map((c) => ({ c, l: liveByFips.get(c.fips) ?? null }));
     rows.sort((a, b) => {
@@ -194,8 +195,8 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
                 <tr className="text-left align-bottom text-[10.5px] uppercase tracking-wider" style={muted}>
                   {([
                     ["County", "name", "all"], ["Vote margin", null, "all"],
-                    ["Margin", "margin", "all", undefined, "proj."],
-                    ["Proj.", null, "wide"], ["Model", null, "all", undefined, "TPL"], ["TPL", null, "wide"],
+                    ["Margin", "margin", "all", undefined, "proj."], ["Proj.", null, "wide"],
+                    ["Edge", null, "all", undefined, "TPL"], ["TPL", null, "wide"],
                     ["Counted", "votes", "all", undefined, "of proj."], ["Proj. total", null, "wide"], ["In", "in", "wide"],
                   ] as [string, typeof sortKey | null, "all" | "wide" | "narrow", string?, string?][]).map(([h, k, vis, color, sub], i) => (
                     <th key={`${h}-${vis}`} className={`${i === 0 ? "py-1.5 font-bold" : thCls} ${h === "Vote margin" ? "!text-left" : ""} ${vis === "wide" ? "hidden sm:table-cell" : vis === "narrow" ? "sm:hidden" : ""}`} style={{ borderBottom: "1px solid var(--app-border)", cursor: k ? "pointer" : undefined, color: k === sortKey ? "var(--app-text-primary)" : color }} onClick={() => k && setSortKey(k)}>
@@ -209,6 +210,10 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
                 {sorted.map(({ c, l }) => {
                   const counted = !!l && l.total > 0;
                   const tpl = tplByFips.get(c.fips) ?? null;
+                  // Edge: how far the counted margin runs from the county's tied-race margin (its
+                  // benchmark); before any votes nobody has one, so EVEN (greyed).
+                  const bench = benchByFips.get(c.fips) ?? null;
+                  const vsBench = bench != null && c.observedMargin != null ? c.observedMargin - bench : null;
                   const tplColor = tpl != null ? marginSideColor(tpl) : "var(--app-text-very-muted)";
                   const inPct = <>{c.done ? "100%" : counted ? `${Math.round(c.f * 100)}%` : "0%"}{l?.pct != null && !c.done ? <span className="text-[10px]" style={veryMuted}> ({Math.round(l.pct)})</span> : null}</>;
                   const sub = "text-[10.5px] font-normal sm:hidden";
@@ -224,8 +229,9 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
                         <div className={sub} style={{ color: marginSideColor(c.projectedMargin, prior) }}>{fmtMargin(c.projectedMargin, prior)}</div>
                       </td>
                       <td className={`${tdCls} hidden sm:table-cell`} style={{ color: marginSideColor(c.projectedMargin, prior) }}>{fmtMargin(c.projectedMargin, prior)}</td>
-                      <td className={tdCls} style={{ color: marginSideColor(c.priorMargin, prior) }}>
-                        {fmtMargin(c.priorMargin, prior)}
+                      <td className={tdCls} title={bench != null ? `A tied race has this county at ${fmtMargin(bench, prior)}` : undefined}
+                        style={{ color: vsBench != null ? marginSideColor(vsBench, prior) : "var(--app-text-very-muted)" }}>
+                        {vsBench != null ? fmtMargin(vsBench, prior) : bench != null ? "EVEN" : "—"}
                         <div className={sub} style={{ color: tplColor }}>{fmtMargin(tpl)}</div>
                       </td>
                       <td className={`${tdCls} hidden sm:table-cell`} style={{ color: tplColor }}>{fmtMargin(tpl)}</td>
@@ -241,6 +247,9 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
               </tbody>
             </table>
           </div>
+          <p className="mt-3 text-[11px] leading-relaxed" style={veryMuted}>
+            <b style={muted}>Edge:</b> how far each county&apos;s counted margin runs from the margin it would show if the race finished tied (the model&apos;s county pattern, shifted to even). {fmtMargin(-3.2, prior)} means the county is running 3.2 points better for {isRealName(prior.dem.name) ? lastName(prior.dem.name) : "the Democrat"} than a tie needs; a county with no votes yet is EVEN.
+          </p>
         </div>
       )}
     </section>
