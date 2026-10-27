@@ -30,6 +30,39 @@ export const partyOf = (p: string | undefined): Party | null => (p ? PARTY_OF[p]
 const COUNTY_TYPES = new Set(["County", "Parish", "City", "Planning Region", "Borough", "Census Area", "Municipality", "City and Borough"]);
 // "City" is kept: Virginia has a Fairfax County and a Fairfax City, a Richmond County and a Richmond City.
 const countyKey = (n: string) => n.toLowerCase().replace(/\b(county|parish|borough|census area|municipality|planning region)\b/g, "").replace(/\bst\.?\s/g, "saint ").replace(/[^a-z]/g, "");
+/** Independent cities (Virginia's 5xx–8xx, Baltimore, St. Louis, Carson City): the priors name them
+ *  bare ("Richmond", "Franklin"), the same as the county they share a name with. */
+const isCityFips = (f: string) => /^(51[5-8]\d\d|24510|29510|32510)$/.test(f);
+
+/** Feed regions that are part of a prior county, by state FIPS and region name: their votes add
+ *  into that county. Chicago reports apart from suburban Cook (the feed's "Cook" row is the rest
+ *  of the county, so the two always add); Rhode Island reports by town, rolled up to its five
+ *  counties unless the feed sends the county itself. */
+const RI_TOWNS: Record<string, string[]> = {
+  "44001": ["Barrington", "Bristol", "Warren"],
+  "44003": ["Coventry", "East Greenwich", "Warwick", "West Greenwich", "West Warwick"],
+  "44005": ["Jamestown", "Little Compton", "Middletown", "Newport", "Portsmouth", "Tiverton"],
+  "44007": ["Burrillville", "Central Falls", "Cranston", "Cumberland", "East Providence", "Foster", "Glocester", "Johnston", "Lincoln", "North Providence", "North Smithfield", "Pawtucket", "Providence", "Scituate", "Smithfield", "Woonsocket"],
+  "44009": ["Charlestown", "Exeter", "Hopkinton", "Narragansett", "New Shoreham", "North Kingstown", "Richmond", "South Kingstown", "Westerly"],
+};
+const PARTS = new Map<string, { fips: string; always: boolean }>([
+  ["17:chicago", { fips: "17031", always: true }],
+  ...Object.entries(RI_TOWNS).flatMap(([fips, towns]) => towns.map((t) => [`44:${countyKey(t)}`, { fips, always: false }] as const)),
+]);
+/** Feed FIPS that the priors carry under another: Shannon renamed Oglala Lakota (2015); Kalawao
+ *  is counted with Maui. Their votes add into the prior county. */
+const FIPS_PARTS: Record<string, string> = { "46113": "46102", "15005": "15009" };
+
+/** A region's prior FIPS by name, city- or county-side by the row's type. The feed sends
+ *  Virginia's cities with no FIPS as "Chesapeake City" (type City); "James City County" is a county. */
+function nameMatcher(prior: RacePrior): (name: string, type: string) => string | null {
+  const byKey = new Map<string, string>();
+  for (const c of prior.counties) byKey.set(`${isCityFips(c.fips) ? "c" : "k"}:${countyKey(c.name)}`, c.fips);
+  return (name, type) => {
+    const cls = type === "City" ? "c" : "k", key = countyKey(name), bare = countyKey(name.replace(/\s+city$/i, ""));
+    return byKey.get(`${cls}:${key}`) ?? (bare !== key ? byKey.get(`c:${bare}`) : undefined) ?? byKey.get(`${cls === "c" ? "k" : "c"}:${key}`) ?? null;
+  };
+}
 
 const lastName = (n: string) => n.trim().toLowerCase().replace(/[.,'"]/g, "").replace(/\s+(jr|sr|ii|iii|iv)$/i, "").split(/\s+/).pop() ?? "";
 
@@ -73,15 +106,42 @@ export function normalizeRace(prior: RacePrior, raw: RawRace, fetchedAt = Date.n
     .sort((a, b) => b.votes - a.votes);
   let counties: LiveCounty[] | null = null;
   if (raw.region_results && typeof raw.region_results === "object") {
-    counties = [];
-    const byName = new Map(prior.counties.map((c) => [countyKey(c.name), c.fips]));
-    for (const r of Object.values(raw.region_results)) {
-      if (!r || !COUNTY_TYPES.has(r.type ?? "County")) continue;
-      const c = tallyRegion(prior, r.candidates, dem?.name ?? null, rep?.name ?? null);
-      // Some regions come without a FIPS (all of Rhode Island's, a few elsewhere): match the name.
-      const fips = r.fips && byName.size ? r.fips : byName.get(countyKey(r.name ?? "")) ?? r.fips ?? null;
-      counties.push({ fips, name: r.name ?? "", pct: r.percent_reporting == null ? null : num(r.percent_reporting), ...c });
+    const priorFips = new Set(prior.counties.map((c) => c.fips));
+    const byName = nameMatcher(prior);
+    const state = prior.counties[0]?.fips.slice(0, 2) ?? "";
+    // One row per prior county. A row carrying a prior FIPS goes first, and a second row for the
+    // same county (another level of the same votes) is dropped, never added. Parts of a county
+    // (PARTS, FIPS_PARTS) add up into it; a row that matches nothing is kept with its own FIPS or
+    // none, so its votes still count (the needle carries them as they are).
+    const direct = new Map<string, LiveCounty>(), parts = new Map<string, { rows: LiveCounty[]; always: boolean }>(), other: LiveCounty[] = [];
+    const regions = Object.values(raw.region_results).filter((r): r is RawRegion => !!r);
+    regions.sort((a, b) => Number(!!b.fips && priorFips.has(b.fips)) - Number(!!a.fips && priorFips.has(a.fips)));
+    for (const r of regions) {
+      const name = r.name ?? "", type = r.type ?? "County";
+      const row: LiveCounty = { fips: null, name, pct: r.percent_reporting == null ? null : num(r.percent_reporting), ...tallyRegion(prior, r.candidates, dem?.name ?? null, rep?.name ?? null) };
+      const part = r.fips && FIPS_PARTS[r.fips] ? { fips: FIPS_PARTS[r.fips], always: true } : !/\bcounty\b/i.test(name) && !(r.fips && priorFips.has(r.fips)) ? PARTS.get(`${state}:${countyKey(name)}`) : undefined;
+      if (part && priorFips.has(part.fips)) {
+        const g = parts.get(part.fips) ?? { rows: [], always: part.always };
+        g.rows.push(row); parts.set(part.fips, g);
+        continue;
+      }
+      if (!COUNTY_TYPES.has(type)) continue;
+      // Some regions come without a FIPS (Virginia's cities, a few elsewhere): match the name.
+      const fips = r.fips && priorFips.has(r.fips) ? r.fips : byName(name, type);
+      if (fips) { if (!direct.has(fips)) direct.set(fips, { ...row, fips, type }); }
+      else other.push({ ...row, fips: r.fips ?? null, type });
     }
+    for (const [fips, g] of parts) {
+      const base = direct.get(fips);
+      if (base && !g.always) continue;
+      const all = base ? [base, ...g.rows] : g.rows;
+      direct.set(fips, {
+        fips, name: base?.name ?? prior.counties.find((c) => c.fips === fips)?.name ?? g.rows[0].name,
+        pct: all.every((x) => x.pct != null) ? Math.min(...all.map((x) => x.pct!)) : null,
+        dem: all.reduce((a, x) => a + x.dem, 0), rep: all.reduce((a, x) => a + x.rep, 0), oth: all.reduce((a, x) => a + x.oth, 0), total: all.reduce((a, x) => a + x.total, 0),
+      });
+    }
+    counties = [...direct.values(), ...other];
   }
   return {
     civicId: prior.civicId ?? 0, fetchedAt, lastUpdated: raw.last_updated ?? null, percentReporting: num(raw.percent_reporting),

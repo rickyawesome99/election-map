@@ -149,7 +149,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
             </>}
           </div>
           <div className="mt-2.5 flex flex-col gap-0.5">
-            <div className="text-xs tabular-nums" style={{ color: FAINT }}>{[asOf, vacant ? `${vacant} vacant` : null, majority != null ? `${majority} for a majority` : null].filter(Boolean).join(" · ")}</div>
+            <div className="text-xs tabular-nums" style={{ color: FAINT }}>{[asOf, vacant ? `${vacant} vacant` : null, majority != null ? `${majority} for a majority` : null, supermajority != null ? `${supermajority} for a supermajority` : null].filter(Boolean).join(" · ")}</div>
             {projection && (projection.pDemControl == null
               ? <div className="text-xs" style={{ color: FAINT }}>{projection.unprojected} seats unprojected, so no control odds</div>
               : (

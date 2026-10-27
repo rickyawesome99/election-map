@@ -55,6 +55,8 @@ export type RacePrior = {
   rcv: boolean;
   /** Louisiana House: Nov 3 is the jungle round. */
   jungle: boolean;
+  /** House: the district's TPL (lib/tplCompute.ts), R-positive; null elsewhere. */
+  tpl: number | null;
   forecast: {
     /** R-positive. */
     margin: number;
@@ -83,6 +85,8 @@ export type LiveCounty = {
   name: string;
   /** The feed's own reporting figure for the county, when it sends one. */
   pct: number | null;
+  /** The feed's region type ("County", "City", "Planning Region"…), when it says. */
+  type?: string;
   dem: number;
   rep: number;
   oth: number;

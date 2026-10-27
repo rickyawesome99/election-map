@@ -5,6 +5,7 @@ import { governorData, houseData, senateData, type RaceForecast } from "@/data/f
 import { statesData } from "@/data/statesData";
 import { forecastRace } from "@/lib/forecast";
 import { projectRaceResults } from "@/lib/countyProjection";
+import { calculateDistrictTpl } from "@/lib/tplCompute";
 import { parseCsv } from "@/lib/turnout";
 import { raceHref } from "@/lib/raceLinks";
 import { candidatePhoto } from "@/lib/candidatePhotos";
@@ -50,6 +51,11 @@ function civicIdFor(office: ResultsOffice, state: string, race: RaceForecast): n
   return row ? Number(row.civic_id) : null;
 }
 
+function districtTpl(id: string): number | null {
+  const v = calculateDistrictTpl(id);
+  return Number.isFinite(v) ? Math.round(v * 10) / 10 : null;
+}
+
 function priorFor(office: ResultsOffice, race: RaceForecast): RacePrior | null {
   const state = office === "house" ? race.name.slice(0, 2) : STATE_ABBR.get(race.state) ?? race.id.slice(0, 2);
   const f = forecastRace(race);
@@ -71,6 +77,7 @@ function priorFor(office: ResultsOffice, race: RaceForecast): RacePrior | null {
     special,
     rcv: RCV_STATES.has(state),
     jungle: office === "house" && state === "LA",
+    tpl: office === "house" ? districtTpl(race.id) : null,
     forecast: { margin: f.margin, sigma: f.sigma, probability: f.probability, rating: f.rating, contest: f.contest, interval80: f.interval80 },
     pollsClose: { first: close?.first_close_et ?? "20:00", last: close?.last_close_et ?? close?.first_close_et ?? "20:00", note: close?.note || null },
     votes: cp?.votes ?? 0,

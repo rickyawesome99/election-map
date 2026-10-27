@@ -6,7 +6,10 @@ import CandidateLink from "@/components/CandidateLink";
 // The one county card for county maps: race-page and past-election county maps, House district
 // county maps, the state page's County TPL layer and the national Counties map. Variants:
 //   tooltip — the hover popup, a floating 228px box: the margin as a serif headline with the
-//             vote total beside it, a share bar, then candidate rows by last name
+//             vote total beside it, a share bar, then candidate rows by last name (the
+//             Results page puts its counted margin, with the projection under it, top right
+//             beside the name and % in bar; no share bar, larger candidate rows, and the net
+//             vote lead under them)
 //   card    — the tooltip's layout with no box of its own, for a container the map supplies
 //             (the national map's floating selected box)
 //   panel   — the click/tap panel in the page under a map, built like the state page's selected
@@ -124,38 +127,72 @@ export default function CountyTooltip(props: CountyTooltipProps) {
     const other = otherShare(dem, rep, totalVotes);
     // Projections (the forecast map) carry no vote counts, so the votes column drops out.
     const showVotes = dem.votes != null || rep.votes != null || totalVotes != null;
+    const projected = props.projectedMargin != null ? signed(props.projectedMargin, dem.party, rep.party) : null;
+    // "24% in" (the Results page) gets its own row under the name: the figure with a counted bar.
+    const inMatch = props.reporting?.match(/^(\d+(?:\.\d+)?)% in$/i);
+    const inPct = inMatch ? Math.min(100, Number(inMatch[1])) : null;
+    const reportingStrip = inPct != null && (
+      <div className="mt-1.5 flex items-center gap-2 tabular-nums">
+        <span className="shrink-0 text-[14px] font-bold leading-none" style={{ color: "var(--app-text-primary)" }}>{props.reporting!.replace(/ in$/i, "")}<span className={`ml-1 ${label}`} style={{ color: "var(--app-text-muted)" }}>in</span></span>
+        <div className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: "var(--app-tab-bg)" }}>
+          <div className="h-full rounded-full" style={{ width: `${inPct}%`, background: "var(--app-text-primary)", opacity: 0.7 }} />
+        </div>
+      </div>
+    );
     const row = (who: string, pct: number, votes: number | null, color: string, muted = false, note?: string) => (
       <div className={`grid items-baseline ${isCard ? "gap-x-2" : "gap-x-2.5"}`} style={{ gridTemplateColumns: showVotes ? "minmax(0,1fr) auto auto" : "minmax(0,1fr) auto" }}>
         <span className="truncate" style={{ color, fontWeight: muted ? 500 : 600 }}>{who}{note && <span className="ml-1 text-[10px] font-medium" style={{ color: "var(--app-text-very-muted)" }}>{note}</span>}</span>
         <span className="text-right" style={{ color, fontWeight: muted ? 500 : 700 }}>{pct.toFixed(1)}%</span>
-        {showVotes && <span className={`min-w-[4.6em] text-right ${isCard ? "text-[10px]" : "text-[11px]"}`} style={{ color: "var(--app-text-very-muted)" }}>{votes != null ? fmtInt(votes) : "—"}</span>}
+        {showVotes && <span className={`min-w-[4.6em] text-right ${projected ? "text-[12.5px]" : isCard ? "text-[10px]" : "text-[11px]"}`} style={{ color: projected && !muted ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{votes != null ? fmtInt(votes) : "—"}</span>}
       </div>
     );
     body = (
       <>
-        {props.reporting ? <div className="flex items-start justify-between gap-2">{nameText}<div className={`shrink-0 ${label}`} style={{ color: "var(--app-text-primary)" }}>{props.reporting}</div></div> : name}
-        {sub}
-        <div className="flex items-end justify-between gap-3">
-          {props.projectedMargin != null ? (() => {
-            const p = signed(props.projectedMargin, dem.party, rep.party);
-            return (
-              <div className="mt-1 flex items-end gap-3 tabular-nums">
-                <div><div className={label} style={{ color: "var(--app-text-muted)" }}>Counted</div><div style={{ ...headline, fontSize: 22, color: fig.color }}>{fig.text}</div></div>
-                <div><div className={label} style={{ color: "var(--app-text-muted)" }}>Projected</div><div style={{ ...headline, fontSize: 22, color: p.color }}>{p.text}</div></div>
-              </div>
-            );
-          })() : <div className="mt-1 tabular-nums" style={{ ...headline, color: fig.color }}>{fig.text}</div>}
-          {totalVotes != null && <div className="pb-[3px] text-right">{votesLabel}{votesFigure(totalVotes)}</div>}
-        </div>
-        <div className={`${isCard ? "mt-1.5 h-1" : "mt-2 h-1.5"} flex overflow-hidden rounded-full`} style={{ background: "var(--app-tab-bg)" }}>
-          <i style={{ width: `${dem.pct}%`, background: partyFill(dem.party) }} />
-          <i style={{ width: `${other.pct}%`, background: "var(--app-text-very-muted)", opacity: 0.45 }} />
-          <i style={{ width: `${rep.pct}%`, background: partyFill(rep.party) }} />
-        </div>
-        <div className={`grid tabular-nums ${isCard ? "mt-1.5 gap-px text-[11px]" : "mt-2 gap-[3px] text-[12px]"}`}>
+        {projected ? (
+          // The Results page: the margin sits in the top right beside the name and the % in bar
+          // (counted large, projected under it), so the candidate rows below can run larger.
+          <div className="flex items-start justify-between gap-3">
+            <div className="min-w-0 flex-1">
+              {nameText}
+              {sub}
+              {inPct != null ? reportingStrip : props.reporting && <div className={`mt-1 ${label}`} style={{ color: "var(--app-text-primary)" }}>{props.reporting}</div>}
+            </div>
+            <div className="shrink-0 text-right tabular-nums">
+              <div style={{ ...headline, fontSize: 26, lineHeight: 1, color: fig.color }}>{fig.text}</div>
+              <div className={`mt-1 ${label}`} style={{ color: "var(--app-text-muted)" }}>Proj. <b style={{ color: projected.color }}>{projected.text}</b></div>
+            </div>
+          </div>
+        ) : (
+          <>
+            {props.reporting && inPct == null ? <div className="flex items-start justify-between gap-2">{nameText}<div className={`shrink-0 ${label}`} style={{ color: "var(--app-text-primary)" }}>{props.reporting}</div></div> : name}
+            {sub}
+            {inPct != null && reportingStrip}
+            <div className="flex items-end justify-between gap-3">
+              <div className="mt-1 tabular-nums" style={{ ...headline, color: fig.color }}>{fig.text}</div>
+              {totalVotes != null && <div className="pb-[3px] text-right">{votesLabel}{votesFigure(totalVotes)}</div>}
+            </div>
+            <div className={`${isCard ? "mt-1.5 h-1" : "mt-2 h-1.5"} flex overflow-hidden rounded-full`} style={{ background: "var(--app-tab-bg)" }}>
+              <i style={{ width: `${dem.pct}%`, background: partyFill(dem.party) }} />
+              <i style={{ width: `${other.pct}%`, background: "var(--app-text-very-muted)", opacity: 0.45 }} />
+              <i style={{ width: `${rep.pct}%`, background: partyFill(rep.party) }} />
+            </div>
+          </>
+        )}
+        <div className={`grid tabular-nums ${projected ? "mt-2.5 gap-1 text-[15px]" : isCard ? "mt-1.5 gap-px text-[11px]" : "mt-2 gap-[3px] text-[12px]"}`}>
           {row(lastName(dem.name), dem.pct, dem.votes, partyText(dem.party), false, dem.note)}
           {row(lastName(rep.name), rep.pct, rep.votes, partyText(rep.party), false, rep.note)}
           {other.show && row("Other", other.pct, other.votes, "var(--app-text-very-muted)", true)}
+          {projected && dem.votes != null && rep.votes != null && (() => {
+            // The lead in raw votes, party-signed like the margin.
+            const lead = rep.votes - dem.votes;
+            const party = lead > 0 ? rep.party : dem.party;
+            return (
+              <div className="mt-0.5 grid items-baseline gap-x-2.5 border-t pt-1" style={{ gridTemplateColumns: "minmax(0,1fr) auto", borderColor: "var(--app-border)" }}>
+                <span className={label} style={{ color: "var(--app-text-muted)" }}>Net votes</span>
+                <span className="text-right text-[13px] font-bold" style={{ color: lead === 0 ? "var(--app-text-muted)" : partyText(party) }}>{lead === 0 ? "Tied" : `${party}+${fmtInt(Math.abs(lead))}`}</span>
+              </div>
+            );
+          })()}
         </div>
       </>
     );

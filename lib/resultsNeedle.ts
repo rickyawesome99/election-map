@@ -25,9 +25,12 @@
 // Calibrated 2026-10-25 on civicAPI's snapshot histories of the 2025 Virginia and New Jersey
 // governor races (scripts/resultsNeedleBacktest.ts): the shared and county terms alone covered
 // the final margin 8% of the time at the 80% band, because the votes counted last are unlike the
-// rest (VA's last 2% ran ~D+80); a late-vote sigma proportional to the uncounted share fixes it
-// (coverage ~95%, RMS z 0.9). The point estimate's error (MAE 2.2 points over the night, 1.2 in
-// the last tenth) barely moves with any constant.
+// rest (VA's last 2% ran ~D+80); a late-vote sigma proportional to the uncounted share fixes it.
+// Recalibrated 2026-10-26 once Virginia's 34 independent cities (sent as "Alexandria City" with
+// no FIPS) matched their priors: unmatched, they had looked like a fifth of the state still out,
+// and that phantom remainder was what kept the late band wide. Matched, the late votes land after
+// every county looks done, so a floor of SIGMA_FLOOR holds until the race is complete (coverage
+// 92%, 97% in the last tenth; RMS z 0.83; MAE 2.1).
 
 import type { CountyPrior, CountyProjection, LiveCounty, LiveRace, Party, RacePrior, RaceProjection } from "@/lib/resultsTypes";
 
@@ -41,18 +44,24 @@ export const SIGMA_COUNTY = 6;
 export const NEAR_DONE = 0.97;
 /** Below this counted share the race-level projection is just the prior. */
 export const MIN_SHARE = 0.002;
-/** Floor on a projected race's sigma, in points, however complete the count. */
-export const SIGMA_FLOOR = 0.3;
+/** Floor on a projected race's sigma, in points, until the race is complete: the late mail and
+ *  provisionals land after the counties look done. */
+export const SIGMA_FLOOR = 1.5;
+/** Floor once the feed has the race complete (100% reporting, or called at 99%+). */
+export const SIGMA_FLOOR_DONE = 0.3;
 /** How fast a county's uncounted remainder trusts the county's own deviation from prior + swing:
  *  the weight is completeness ^ OWN_WEIGHT_EXP (1 = in proportion to completeness; smaller = sooner). */
 export const OWN_WEIGHT_EXP = 1;
 /** The late-vote term: sigma added per unit of uncounted share, in points, for the votes counted
  *  last being unlike the rest (mail, provisionals, the big counties' final batches). */
-export const SIGMA_LATE = 7;
+export const SIGMA_LATE = 10;
+/** Above this share of the county rows' votes in rows that match no prior county, the race is
+ *  projected from its topline (the feed's geography doesn't line up with the priors'). */
+export const MAX_EXTRA_SHARE = 0.25;
 
 /** The tunable constants, overridable for the backtest (scripts/resultsNeedleBacktest.ts). */
-export type NeedleParams = { kSwing: number; kTurnout: number; sigmaCounty: number; nearDone: number; sigmaFloor: number; ownExp: number; sigmaLate: number };
-export const DEFAULT_PARAMS: NeedleParams = { kSwing: K_SWING_SHARE, kTurnout: K_TURNOUT_SHARE, sigmaCounty: SIGMA_COUNTY, nearDone: NEAR_DONE, sigmaFloor: SIGMA_FLOOR, ownExp: OWN_WEIGHT_EXP, sigmaLate: SIGMA_LATE };
+export type NeedleParams = { kSwing: number; kTurnout: number; sigmaCounty: number; nearDone: number; sigmaFloor: number; ownExp: number; sigmaLate: number; maxExtraShare: number };
+export const DEFAULT_PARAMS: NeedleParams = { kSwing: K_SWING_SHARE, kTurnout: K_TURNOUT_SHARE, sigmaCounty: SIGMA_COUNTY, nearDone: NEAR_DONE, sigmaFloor: SIGMA_FLOOR, ownExp: OWN_WEIGHT_EXP, sigmaLate: SIGMA_LATE, maxExtraShare: MAX_EXTRA_SHARE };
 
 const clamp = (x: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, x));
 
@@ -98,6 +107,24 @@ export function projectRace(prior: RacePrior, live: LiveRace | null, P: NeedlePa
   // is circular in τ, so two passes).
   const rows = prior.counties.map((c) => ({ prior: c, live: byFips.get(c.fips) ?? null }));
   const countedOf = (l: LiveCounty | null, c: CountyPrior) => (l ? l.total * (c.share < 0.999 && WHOLE_COUNTY_FEED ? c.share : 1) : 0);
+  // Feed rows that match no prior county (a county the district's pieces leave out, a region the
+  // parser doesn't know) still hold counted votes: carried as they are, at their own margin, so the
+  // count adds up to the race's. If they are a large share of the county rows the feed's
+  // geography isn't ours, and county rows adding to clearly more than the race's own count are the
+  // same votes listed twice (New England sends counties and towns side by side): either way the
+  // topline is the safer basis.
+  const priorFips = new Set(prior.counties.map((c) => c.fips));
+  // Only rows of a type that also matched count: a level the priors don't use at all (Connecticut's
+  // planning regions beside its counties) is the same votes again.
+  const matchedTypes = new Set(liveCounties!.filter((c) => c.fips && priorFips.has(c.fips)).map((c) => c.type));
+  const extras = liveCounties!.filter((c) => !(c.fips && priorFips.has(c.fips)) && c.total > 0 && matchedTypes.has(c.type));
+  const extraV = extras.reduce((a, c) => a + c.total, 0), extraNetR = extras.reduce((a, c) => a + (c.rep - c.dem) * 100, 0);
+  const matchedV = rows.reduce((a, { prior: c, live: l }) => a + countedOf(l, c), 0);
+  // The double-listing test is on the two-party vote: the race-level and county lists can differ
+  // on minor candidates and write-ins, never on these two.
+  const twoParty = (l: { dem: number; rep: number } | null) => (l ? l.dem + l.rep : 0);
+  const listedDR = rows.reduce((a, { live: l }) => a + twoParty(l), 0) + extras.reduce((a, c) => a + twoParty(c), 0);
+  if (extraV > P.maxExtraShare * (matchedV + extraV) || listedDR > twoParty(live) * 1.02 + 100) return lock(projectTopline(prior, live, raceDone, kS, sigmaF, decided, P), live);
   let tau = 1;
   for (let pass = 0; pass < 2; pass++) {
     let v = 0, e = 0;
@@ -134,13 +161,16 @@ export function projectRace(prior: RacePrior, live: LiveRace | null, P: NeedlePa
     countyVar += Math.pow((T - v) * P.sigmaCounty, 2);
     return { fips: c.fips, name: c.name, counted: Math.round(v), expected: Math.round(expected), done, f, observedMargin: o, priorMargin: c.margin, projectedTotal: Math.round(T), projectedMargin: M };
   });
-  if (raceDone) total = Math.max(total, live.total);
+  counted += extraV; total += extraV; netR += extraNetR;
+  // A finished race is its feed total, whatever the county rows add to (a lagging or partial
+  // county breakdown must not leave it "48% of ~N projected" at 100% reporting).
+  if (raceDone) total = counted = live.total;
   const margin = total > 0 ? netR / total : prior.forecast.margin;
   const uncounted = total > 0 ? clamp((total - counted) / total, 0, 1) : 1;
   const sharedSigma = sigmaF * shrink * uncounted;
   const countySigma = total > 0 ? Math.sqrt(countyVar) / total : 0;
   const lateSigma = P.sigmaLate * uncounted;
-  const sigma = Math.max(P.sigmaFloor, Math.sqrt(sharedSigma * sharedSigma + countySigma * countySigma + lateSigma * lateSigma));
+  const sigma = Math.max(raceDone ? SIGMA_FLOOR_DONE : P.sigmaFloor, Math.sqrt(sharedSigma * sharedSigma + countySigma * countySigma + lateSigma * lateSigma));
   const probD = decided ? prior.forecast.probability : normalCdf(-margin / sigma);
   return lock({
     tier: "county", counted: Math.round(counted), projectedTotal: Math.round(total), countedShare: total > 0 ? counted / total : 0,
@@ -166,7 +196,7 @@ function projectTopline(prior: RacePrior, live: LiveRace, raceDone: boolean, kS:
   const remainder = m + swing + Math.pow(f, P.ownExp) * (o - m - swing);
   const margin = f < MIN_SHARE ? m : (v * o + (T - v) * clamp(remainder, -100, 100)) / T;
   const uncounted = clamp((T - v) / T, 0, 1);
-  const sigma = Math.max(P.sigmaFloor, Math.sqrt(Math.pow(sigmaF * shrink * uncounted, 2) + Math.pow(P.sigmaCounty * uncounted * 0.5, 2) + Math.pow(P.sigmaLate * uncounted, 2)));
+  const sigma = Math.max(raceDone ? SIGMA_FLOOR_DONE : P.sigmaFloor, Math.sqrt(Math.pow(sigmaF * shrink * uncounted, 2) + Math.pow(P.sigmaCounty * uncounted * 0.5, 2) + Math.pow(P.sigmaLate * uncounted, 2)));
   const probD = decided ? prior.forecast.probability : normalCdf(-margin / sigma);
   return {
     tier: "topline", counted: v, projectedTotal: Math.round(T), countedShare: T > 0 ? v / T : 0, currentMargin: marginOf(live.dem, live.rep, live.total),

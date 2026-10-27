@@ -59,7 +59,7 @@ function priorFor(r: (typeof RACES)[number]): RacePrior {
   return {
     office: "governor", id: r.state, civicId: r.id, label: r.stateName, state: r.state, stateName: r.stateName, href: "",
     dem: { name: r.dem, party: "D", incumbent: false, photo: null }, rep: { name: r.rep, party: "R", incumbent: false, photo: null },
-    seatParty: null, seatHolder: null, special: false, rcv: false, jungle: false,
+    seatParty: null, seatHolder: null, special: false, rcv: false, jungle: false, tpl: null,
     forecast: { margin: r.forecast, sigma: r.sigma, probability: normalCdf(-r.forecast / r.sigma), rating: "", contest: "contested", interval80: [r.forecast - 1.28 * r.sigma, r.forecast + 1.28 * r.sigma] },
     pollsClose: { first: "19:00", last: "19:00", note: null },
     votes: total,

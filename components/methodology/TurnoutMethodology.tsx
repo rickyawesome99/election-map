@@ -6,7 +6,7 @@ import {
 } from "@/lib/turnoutModel";
 import { firstRoundNotes } from "@/lib/turnout";
 import { COUNTY_MARGIN_CLAMP, OTHER_SHARE_CAP, impliedGenericBallot, projectRaceResults } from "@/lib/countyProjection";
-import { K_SWING_SHARE, K_TURNOUT_SHARE, MIN_SHARE, NEAR_DONE, OWN_WEIGHT_EXP, SIGMA_COUNTY, SIGMA_FLOOR, SIGMA_LATE } from "@/lib/resultsNeedle";
+import { K_SWING_SHARE, K_TURNOUT_SHARE, MAX_EXTRA_SHARE, MIN_SHARE, NEAR_DONE, OWN_WEIGHT_EXP, SIGMA_COUNTY, SIGMA_FLOOR, SIGMA_FLOOR_DONE, SIGMA_LATE } from "@/lib/resultsNeedle";
 import { NEEDLE_BACKTEST as NB } from "@/data/resultsNeedleCalibration";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, N, P, Section, StatRow, type ConstantRow, type LedgerLine } from "./kit";
 
@@ -19,7 +19,7 @@ const DOCUMENTED_IN = {
   // lib/resultsNeedle.ts (the election-night needle on /results)
   K_SWING_SHARE: "turnout#results-needle", K_TURNOUT_SHARE: "turnout#results-needle", SIGMA_COUNTY: "turnout#results-needle",
   NEAR_DONE: "turnout#results-needle", MIN_SHARE: "turnout#results-needle", SIGMA_FLOOR: "turnout#results-needle",
-  OWN_WEIGHT_EXP: "turnout#results-needle", SIGMA_LATE: "turnout#results-needle",
+  OWN_WEIGHT_EXP: "turnout#results-needle", SIGMA_LATE: "turnout#results-needle", SIGMA_FLOOR_DONE: "turnout#results-needle", MAX_EXTRA_SHARE: "turnout#results-needle",
 } as const;
 void DOCUMENTED_IN;
 
@@ -137,16 +137,18 @@ export default function TurnoutMethodology() {
           <>s = Σ w<sub>c</sub>(o<sub>c</sub> − m<sub>c</sub>) / (Σ w<sub>c</sub> + k<sub>S</sub>) &nbsp;·&nbsp; w<sub>c</sub> = v<sub>c</sub> f<sub>c</sub>, k<sub>S</sub> = {K_SWING_SHARE} × E</>,
           <>r<sub>c</sub> = m<sub>c</sub> + s + f<sub>c</sub><sup>{OWN_WEIGHT_EXP}</sup>(o<sub>c</sub> − m<sub>c</sub> − s) &nbsp;·&nbsp; M<sub>c</sub> = (v<sub>c</sub> o<sub>c</sub> + (T<sub>c</sub> − v<sub>c</sub>) r<sub>c</sub>) / T<sub>c</sub></>,
           <>σ² = (σ<sub>forecast</sub> · √(k<sub>S</sub> / (k<sub>S</sub> + Σw)) · u)² + Σ<sub>c</sub> ((T<sub>c</sub> − v<sub>c</sub>) σ<sub>county</sub> / T)² + (σ<sub>late</sub> · u)² &nbsp;·&nbsp; u = uncounted share &nbsp;·&nbsp; P(D) = Φ(−M / σ)</>,
-        ]} note={<>E<sub>c</sub> and m<sub>c</sub> are the county&apos;s expected votes and margin from the projection above; v<sub>c</sub> and o<sub>c</sub> its counted votes and margin. A county is done when the feed marks it fully reported or its count reaches {Math.round(NEAR_DONE * 100)}% of its corrected expectation. House races use the district&apos;s county pieces, which the feed reports directly. Where county detail covers under 60% of a race&apos;s expected vote (a township-reporting state, a feed gap) the same arithmetic runs on the race total alone. Ranked-choice races carry first choices; the needle projects the final round. Decided races keep the forecast.</>} />
+        ]} note={<>E<sub>c</sub> and m<sub>c</sub> are the county&apos;s expected votes and margin from the projection above; v<sub>c</sub> and o<sub>c</sub> its counted votes and margin. A county is done when the feed marks it fully reported or its count reaches {Math.round(NEAR_DONE * 100)}% of its corrected expectation. House races use the district&apos;s county pieces, which the feed reports directly. Feed regions are matched to the priors by FIPS, else by name (Virginia&apos;s cities city-side, so Richmond City is not Richmond County); Rhode Island&apos;s towns, Chicago (reported apart from suburban Cook), Shannon SD and Kalawao HI add into their prior county, and a county listed at two levels (New England&apos;s counties beside their towns) counts once. Rows that match no prior county count as they stand, at their own margin. Where county detail covers under 60% of a race&apos;s expected vote, where unmatched rows hold over a quarter of the county rows&apos; votes, or where the county rows&apos; two-party vote runs more than 2% past the race&apos;s (the same votes listed twice), the same arithmetic runs on the race total alone. Ranked-choice races carry first choices; the needle projects the final round. Decided races keep the forecast.</>} />
         <Constants rows={[
           { name: "K_SWING_SHARE", value: K_SWING_SHARE, meaning: "Prior-equivalent votes on the shared swing, as a share of the race's expected vote", basis: "calibrated", source: "Best log score on the 2025 VA/NJ replay among 0.02–0.4; the score is flat from 0.05 to 0.15" },
           { name: "K_TURNOUT_SHARE", value: K_TURNOUT_SHARE, meaning: "Prior-equivalent votes on the turnout factor", basis: "calibrated", source: "0.05 and 0.1 score alike; 0.1 kept" },
           { name: "SIGMA_COUNTY", value: `${SIGMA_COUNTY} pts`, meaning: "Residual dispersion of one county's swing around the shared swing", basis: "calibrated", source: "3, 6 and 12 score alike once the late-vote term is in; 6 kept" },
-          { name: "SIGMA_LATE", value: `${SIGMA_LATE} pts`, meaning: "Late-vote sigma per unit of uncounted share: the votes counted last are unlike the rest", basis: "calibrated", source: "Without it the 80% band covered the final margin 8% of the time; 6 maximizes the log score, 7 kept as the wider choice on two races" },
+          { name: "SIGMA_LATE", value: `${SIGMA_LATE} pts`, meaning: "Late-vote sigma per unit of uncounted share: the votes counted last are unlike the rest", basis: "calibrated", source: "Without it the 80% band covered the final margin 8% of the time; 10 with the 1.5 floor, from the 2026-10-26 grid on the corrected replay (7 left the 60–90% bucket at 56% coverage)" },
           { name: "OWN_WEIGHT_EXP", value: OWN_WEIGHT_EXP, meaning: "Exponent on completeness in the weight a county's remainder gives its own deviation", basis: "calibrated", source: "Trusting a county's own deviation sooner (0.5, 0.25) did not lower the error" },
           { name: "NEAR_DONE", value: NEAR_DONE, meaning: "Share of the corrected expectation at which a county counts as finished", basis: "designed" },
           { name: "MIN_SHARE", value: MIN_SHARE, meaning: "Counted share below which a topline projection is the prior", basis: "designed" },
-          { name: "SIGMA_FLOOR", value: `${SIGMA_FLOOR} pts`, meaning: "Floor on a race's projected sigma", basis: "calibrated", source: "0.3 and 0.5 score alike" },
+          { name: "SIGMA_FLOOR", value: `${SIGMA_FLOOR} pts`, meaning: "Floor on a race's projected sigma until the race is complete (late mail and provisionals land after the counties look done)", basis: "calibrated", source: "Below 1.25 the last tenth of the count covered the final margin about half the time; 1.5 covers 97%" },
+          { name: "SIGMA_FLOOR_DONE", value: `${SIGMA_FLOOR_DONE} pts`, meaning: "Floor once the feed has the race complete", basis: "designed" },
+          { name: "MAX_EXTRA_SHARE", value: MAX_EXTRA_SHARE, meaning: "Share of the county rows' votes in rows matching no prior county above which the race runs on its topline", basis: "designed" },
         ]} />
         <Block label={`Replay · ${NB.races.map((r) => r.state).join(" and ")} 2025 governor`} meta={`${NB.races.reduce((a, r) => a + r.snapshots, 0)} civicAPI snapshots · scripts/resultsNeedleBacktest.ts --emit, ${NB.generated}`}>
           <DataTable head={["Counted", "Snapshots", "Needle MAE", "80% band covered", "RMS z", "Total-vote error"]} rows={NB.buckets.map((b) => [b.bucket === "all" ? "All" : b.bucket, b.n, `${b.mae.toFixed(1)} pts`, `${Math.round(b.cover * 100)}%`, b.rmsz.toFixed(2), `${Math.round(b.totalErr * 100)}%`])}

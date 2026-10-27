@@ -49,6 +49,10 @@ export type TrendChartProps = {
   colorOf: (v: number) => string;
   fmtValue: (v: number) => string;
   fmtRange: (lo: number, hi: number) => string;
+  /** A labelled y axis on the left, with faint gridlines at each tick (the margin chart). */
+  ticks?: number[];
+  fmtTick?: (v: number) => string;
+  axisWidth?: number;
 };
 
 function ChartTooltip({ active, payload, colorOf, fmtValue, fmtRange }: { active?: boolean; payload?: Array<{ payload: Row }> } & Pick<TrendChartProps, "colorOf" | "fmtValue" | "fmtRange">) {
@@ -66,7 +70,7 @@ function ChartTooltip({ active, payload, colorOf, fmtValue, fmtRange }: { active
   );
 }
 
-export default function TrendChart({ points, reference, lo, hi, topColor, bottomColor, colorOf, fmtValue, fmtRange }: TrendChartProps) {
+export default function TrendChart({ points, reference, lo, hi, topColor, bottomColor, colorOf, fmtValue, fmtRange, ticks, fmtTick, axisWidth = 34 }: TrendChartProps) {
   const id = useId().replace(/:/g, "");
   const rows = useMemo(() => densify(points), [points]);
   const color = colorOf(points[points.length - 1].mean);
@@ -80,7 +84,10 @@ export default function TrendChart({ points, reference, lo, hi, topColor, bottom
           </linearGradient>
         </defs>
         <XAxis dataKey="t" type="number" domain={["dataMin", "dataMax"]} scale="time" hide />
-        <YAxis domain={[lo, hi]} hide allowDataOverflow />
+        {ticks
+          ? <YAxis domain={[lo, hi]} ticks={ticks} tickFormatter={fmtTick} width={axisWidth} axisLine={false} tickLine={false} interval={0} allowDataOverflow tick={{ fontSize: 10, fill: "var(--app-text-very-muted)" }} />
+          : <YAxis domain={[lo, hi]} hide allowDataOverflow />}
+        {ticks?.filter((v) => v !== reference).map((v) => <ReferenceLine key={v} y={v} stroke="var(--app-border)" />)}
         <Tooltip
           content={<ChartTooltip colorOf={colorOf} fmtValue={fmtValue} fmtRange={fmtRange} />}
           cursor={{ stroke: "var(--app-text-muted)", strokeWidth: 1, strokeOpacity: 0.7 }}

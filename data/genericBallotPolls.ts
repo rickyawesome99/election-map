@@ -258,7 +258,16 @@ export const genericBallotPolls: GenericBallotPoll[] = [
   { pollster: "RMG Research**", startDate: "2026-10-12", endDate: "2026-10-13", sample: null, population: "LV", dem: 54, rep: 43, diff: -11 },
   { pollster: "ABC/Wash Post/Ipsos", startDate: "2026-10-09", endDate: "2026-10-13", sample: 2032, population: "LV", dem: 52, rep: 44, diff: -8 },
   { pollster: "Rasmussen Reports", startDate: "2026-10-08", endDate: "2026-10-14", sample: 1789, population: "LV", dem: 48, rep: 44, diff: -4 },
+  { pollster: "CNN", startDate: "2026-10-15", endDate: "2026-10-18", sample: 1206, population: "RV", dem: 49, rep: 39, diff: -10 },
   { pollster: "Morning Consult", startDate: "2026-10-12", endDate: "2026-10-18", sample: 17706, population: "LV", dem: 50, rep: 43, diff: -7 },
+  { pollster: "CNBC", startDate: "2026-10-15", endDate: "2026-10-19", sample: 1000, population: "RV", dem: 52, rep: 45, diff: -7 },
+  { pollster: "NY Times/Siena", startDate: "2026-10-12", endDate: "2026-10-19", sample: 3494, population: "LV", dem: 52, rep: 41, diff: -11 },
   { pollster: "Reuters/Ipsos", startDate: "2026-10-16", endDate: "2026-10-19", sample: 1269, population: "RV", dem: 47, rep: 35, diff: -12 },
-  { pollster: "Echelon Insights**", startDate: "2026-10-15", endDate: "2026-10-19", sample: 1010, population: "LV", dem: 50, rep: 45, diff: -5 }
+  { pollster: "Echelon Insights**", startDate: "2026-10-15", endDate: "2026-10-19", sample: 1010, population: "LV", dem: 50, rep: 45, diff: -5 },
+  { pollster: "Economist/YouGov", startDate: "2026-10-19", endDate: "2026-10-20", sample: 1312, population: "LV", dem: 50, rep: 43, diff: -7 },
+  { pollster: "Financial Times", startDate: "2026-10-16", endDate: "2026-10-20", sample: 1594, population: "LV", dem: 53, rep: 44, diff: -9 },
+  { pollster: "Rasmussen Reports", startDate: "2026-10-15", endDate: "2026-10-21", sample: 1755, population: "LV", dem: 48, rep: 43, diff: -5 },
+  { pollster: "CBS News", startDate: "2026-10-21", endDate: "2026-10-23", sample: 1749, population: "LV", dem: 53, rep: 45, diff: -8 },
+  { pollster: "Morning Consult", startDate: "2026-10-19", endDate: "2026-10-25", sample: 17491, population: "LV", dem: 50, rep: 43, diff: -7 },
+  { pollster: "Reuters/Ipsos", startDate: "2026-10-22", endDate: "2026-10-26", sample: 1164, population: "LV", dem: 53, rep: 44, diff: -9 }
 ];

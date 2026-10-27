@@ -57,15 +57,30 @@ for (const row of ids) {
   const first = close ? closeMin(close.first_close_et) : 60, last = close ? closeMin(close.last_close_et) : first;
   const regions = Object.entries(race.region_results ?? {});
   const finalTotal = (race.candidates ?? []).reduce((a, c) => a + (Number(c.votes) || 0), 0);
+  const votesOf = (r) => (r.candidates ?? []).reduce((a, c) => a + (Number(c.votes) || 0), 0);
+  // New England races list the same votes at two or three levels (County + Town/Township, and in
+  // Connecticut Planning Region too; Rhode Island's towns come typed County, without a FIPS);
+  // Virginia's County + City are disjoint. When one level alone carries the race's total, only
+  // that level adds into the race's count (County first).
+  const byType = new Map();
+  for (const [, r] of regions) byType.set(r.type ?? "County", (byType.get(r.type ?? "County") ?? 0) + votesOf(r));
+  const near = (v) => finalTotal > 0 && Math.abs(v - finalTotal) <= 0.01 * finalTotal;
+  const sumType = byType.size > 1 ? (near(byType.get("County") ?? 0) ? "County" : [...byType].find(([, v]) => near(v))?.[0] ?? null) : null;
+  // Within one type, when the rows with a FIPS already carry the whole total and the rows without
+  // one hold a large share again, those are a second level (Rhode Island's towns), not a county or
+  // two the feed sent without a FIPS (South Carolina's McCormick).
+  const ofType = regions.filter(([, r]) => (r.type ?? "County") === (sumType ?? r.type ?? "County"));
+  const sumOf = (rs) => rs.reduce((a, [, r]) => a + votesOf(r), 0);
+  const fipsOnly = near(sumOf(ofType.filter(([, r]) => r.fips))) && sumOf(ofType.filter(([, r]) => !r.fips)) > 0.25 * finalTotal;
   const counties = regions.map(([key, r]) => {
-    const total = (r.candidates ?? []).reduce((a, c) => a + (Number(c.votes) || 0), 0);
+    const total = votesOf(r);
     const size = finalTotal ? total / finalTotal : 0;
     // Start 5–60 minutes after the (latest) close; bigger counties ramp longer; a few drag on.
     const start = last + 5 + rand() * 55;
     const length = 40 + rand() * 120 + Math.sqrt(size) * 400 + (rand() < 0.08 ? 180 : 0);
     const batches = 3 + Math.floor(rand() * 8);
     const earlySkew = (rand() - 0.2) * 12; // points of margin by which the first votes lean more D
-    return { key, start, length, batches, earlySkew, total };
+    return { key, start, length, batches, earlySkew, total, sums: (!sumType || (r.type ?? "County") === sumType) && (!fipsOnly || !!r.fips) };
   });
   const noRegions = !regions.length;
   plans.set(row.civic_id, { race, row, first, last, counties, finalTotal, noRegions, raceStart: last + 5 + rand() * 40, raceLength: 120 + rand() * 180 });
@@ -113,6 +128,7 @@ for (let t = 0; t <= END_MIN; t += stepMin) {
         const reg = r.region_results[c.key];
         const cands = candidatesAt(reg.candidates ?? [], frac, c.earlySkew);
         regionOut[c.key] = { ...reg, candidates: cands, percent_reporting: Math.round(Math.min(100, frac * 100 + (frac > 0 && frac < 1 ? 15 : 0)) * 10) / 10 };
+        if (!c.sums) continue;
         sumFrac += frac * c.total;
         for (const cd of cands) partCands.set(cd.name, (partCands.get(cd.name) ?? 0) + cd.votes);
       }

@@ -149,7 +149,10 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
                   80% range <b style={{ color: marginSideColor(lo80, prior) }}>{fmtMargin(lo80, prior)}</b> to <b style={{ color: marginSideColor(hi80, prior) }}>{fmtMargin(hi80, prior)}</b>
                 </div>
               </div>
-              <span className="ml-auto text-[13px] tabular-nums" style={muted}>forecast {fmtMargin(prior.forecast.margin, prior)} ({prior.forecast.rating})</span>
+              <span className="ml-auto text-right text-[13px] tabular-nums" style={muted}>
+                {prior.tpl != null && <><span title="The district's TPL: its partisan lean from past results, before the environment, incumbency, money and candidates">TPL <b style={{ color: marginSideColor(prior.tpl, prior) }}>{fmtMargin(prior.tpl, prior)}</b></span> · </>}
+                forecast {fmtMargin(prior.forecast.margin, prior)} ({prior.forecast.rating})
+              </span>
             </div>
             <Needle margin={proj.margin} sigma={proj.sigma} forecast={prior.forecast.margin} current={proj.currentMargin} prior={prior} />
             <div className="mt-4">

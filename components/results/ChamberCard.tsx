@@ -9,8 +9,8 @@ import SeatTrend from "@/components/results/SeatTrend";
 
 // One chamber on the Results page, flat on the page background like the forecast hero: the called
 // seats in the serif, one balance-of-power bar (called solid, leading light, not yet counted grey,
-// majority tick), the needle's projection in a line, and the popular vote; the net seat change (projected
-// flips, called or not) sits in the header.
+// majority tick), the needle's projection in a line, and the popular vote; the net seat change (called
+// flips only, absent until one is called) sits in the header.
 // At xl the three cards stack in a column beside the map, so each one tightens: the called seats
 // flank the bar, and popular vote / projection / seat trend sit side by side in one row. Phones
 // (max-sm) borrow the same moves: seats flanking the bar, the projection beside its trend chart.
@@ -39,17 +39,19 @@ export default function ChamberCard({ office, tally, rows, history }: { office: 
   ];
   const pvMargin = pv.total > 0 ? ((pv.rep - pv.dem) / pv.total) * 100 : null;
   const holdover = SEAT_HOLDOVERS[office];
-  // Net seat change from the needle's flips (called and projected): seats gained by Democrats less
-  // seats they lose. The flipped races are listed in the hover title.
-  const net = tally.flips.filter((f) => f.to === "D").length - tally.flips.filter((f) => f.from === "D").length;
-  const flipList = tally.flips.map((f) => { const r = rows.find((x) => x.prior.id === f.id); return `${r ? (office === "house" ? r.prior.label : r.prior.state) : f.id} ${f.from}→${f.to}${f.status === "called" ? " (called)" : ""}`; }).join(", ");
+  // Net seat change from called flips only (a projected or leading flip is not a change yet):
+  // seats gained by Democrats less seats they lose; nothing shown until a flip is called. The
+  // called flips are listed in the hover title.
+  const calledFlips = tally.flips.filter((f) => f.status === "called");
+  const net = calledFlips.filter((f) => f.to === "D").length - calledFlips.filter((f) => f.from === "D").length;
+  const flipList = calledFlips.map((f) => { const r = rows.find((x) => x.prior.id === f.id); return `${r ? (office === "house" ? r.prior.label : r.prior.state) : f.id} ${f.from}→${f.to}`; }).join(", ");
   const pvCounted = pv.projectedTotal ? `${Math.round((pv.total / pv.projectedTotal) * 100)}% of ~${pv.projectedTotal >= 1e6 ? `${(pv.projectedTotal / 1e6).toFixed(1)}M` : fmtInt(pv.projectedTotal)}` : "";
 
   return (
     <div>
       <div className="flex items-baseline justify-between gap-3">
         <h3 className="text-[15px] font-bold">{OFFICE_LABEL[office]}</h3>
-        <span className="text-[11px] tabular-nums" style={muted}>{tally.racesIn}/{rows.length} reporting · {tally.racesCalled} called · <b className="whitespace-nowrap" title={tally.flips.length ? `Flips: ${flipList}` : "No seats changing hands"} style={{ color: net === 0 ? "var(--app-text-primary)" : partyColor(net > 0 ? "D" : "R") }}>{net === 0 ? "no net change" : `net ${net > 0 ? "D" : "R"}+${Math.abs(net)}`}</b>{called.ind > 0 && <span className="hidden max-sm:inline xl:inline"> · <b style={{ color: "var(--party-ind)" }}>{called.ind} I</b></span>}</span>
+        <span className="text-[11px] tabular-nums" style={muted}>{tally.racesIn}/{rows.length} reporting · {tally.racesCalled} called{calledFlips.length > 0 && <> · <b className="whitespace-nowrap" title={`Called flips: ${flipList}`} style={{ color: net === 0 ? "var(--app-text-primary)" : partyColor(net > 0 ? "D" : "R") }}>{net === 0 ? "no net change" : `net ${net > 0 ? "D" : "R"}+${Math.abs(net)}`}</b></>}{called.ind > 0 && <span className="hidden max-sm:inline xl:inline"> · <b style={{ color: "var(--party-ind)" }}>{called.ind} I</b></span>}</span>
       </div>
 
       {/* Called seats over the bar; on phones and at xl, either side of it */}
