@@ -10,7 +10,7 @@ import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { countyDisplayName } from "@/lib/countyName";
 import { lastName, isRealName } from "@/lib/personName";
 import { fmtInt, fmtMargin, marginSideColor, partyColor } from "@/lib/resultsFormat";
-import type { Party, SeatPoint } from "@/lib/resultsTypes";
+import type { Party, RaceHistory } from "@/lib/resultsTypes";
 import { MarginTrend } from "@/components/results/SeatTrend";
 import type { ResultsRow } from "@/components/results/ResultsPage";
 
@@ -47,9 +47,10 @@ function headline(prior: Prior, cands: Cand[], hasVotes: boolean, current: numbe
   return isRealName(d.name) && isRealName(r.name) ? `${lastName(d.name)} vs. ${lastName(r.name)}` : `${d.name} vs. ${r.name}`;
 }
 
-export default function RaceDetail({ row, history }: { row: ResultsRow; history: SeatPoint[] }) {
+export default function RaceDetail({ row, history }: { row: ResultsRow; history: RaceHistory }) {
   const { prior, live, proj } = row;
   const [view, setView] = useState<CountyView>("counted");
+  const [trendView, setTrendView] = useState<CountyView>("projected");
   const [sortKey, setSortKey] = useState<"votes" | "name" | "margin" | "in">("votes");
   const hasVotes = !!live && live.total > 0;
   const liveByFips = useMemo(() => new Map((live?.counties ?? []).filter((c) => c.fips).map((c) => [c.fips!, c])), [live]);
@@ -156,8 +157,17 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
             </div>
             <Needle margin={proj.margin} sigma={proj.sigma} forecast={prior.forecast.margin} current={proj.currentMargin} prior={prior} />
             <div className="mt-4">
-              <div className="mb-1 text-[10px] font-bold uppercase tracking-wider" style={muted}>Projected margin over the night</div>
-              <MarginTrend points={history} prior={prior} />
+              {/* Projected or counted margin over the night, one chart with a toggle in its heading. */}
+              <div className="mb-1 flex items-center gap-3 text-[10px] font-bold uppercase tracking-wider">
+                {(["projected", "counted"] as CountyView[]).map((v) => (
+                  <button key={v} onClick={() => setTrendView(v)} className="whitespace-nowrap pb-0.5 uppercase tracking-wider transition-colors hover:text-[var(--app-text-primary)]"
+                    style={trendView === v ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)" } : { ...muted, borderBottom: "2px solid transparent" }}>
+                    {v === "counted" ? "Counted" : "Projected"}
+                  </button>
+                ))}
+                <span style={muted}>margin over the night</span>
+              </div>
+              <MarginTrend points={history[trendView]} prior={prior} kind={trendView} />
             </div>
             {/* The needle's two internal inputs, as a footnote. */}
             {hasVotes && (

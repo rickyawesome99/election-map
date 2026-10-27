@@ -2,7 +2,7 @@
 // scripts/simulate-results-night.mjs) to public/results-sim/ so the Results page's pre-election
 // preview works on the deployed site, where the archive directory and its API routes are empty.
 // Writes, per set, the gzipped snapshots as they are (the page gunzips them in the browser) and
-// series.json (the needle's expected seats and every race's projected margin at every snapshot, as /api/results/archive/series
+// series.json (the needle's expected seats and every race's projected and counted margin at every snapshot, as /api/results/archive/series
 // computes it), plus manifest.json listing every snapshot in the archive route's shape.
 //
 //   npm run publish-sim-night
@@ -41,7 +41,7 @@ for (const set of sets) {
         const live: LiveRace | null = raw ? normalizeRace(prior, raw as never, t) : null;
         return { prior, live, proj: projectRace(prior, live) };
       });
-      for (const r of rows) (series.races[raceHash(r.prior)] ??= []).push([r1(r.proj.margin), r1(r.proj.sigma)]);
+      for (const r of rows) (series.races[raceHash(r.prior)] ??= []).push([r1(r.proj.margin), r1(r.proj.sigma), r.proj.currentMargin == null ? null : r1(r.proj.currentMargin)]);
       const e = tallyChamber(rows, SEAT_HOLDOVERS[office]).expectedDem;
       series[office].push({ t, mean: e.mean, lo: e.lo80, hi: e.hi80 });
     });

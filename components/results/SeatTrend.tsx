@@ -9,7 +9,7 @@ import type { RacePrior, SeatPoint } from "@/lib/resultsTypes";
 //   SeatTrend    a chamber's expected Democratic seats, the 80% band shaded, the majority dashed;
 //                the y range always includes the majority, so which side the night is on reads
 //                at a glance
-//   MarginTrend  one race's projected margin (R-positive, Republican up), the 80% band shaded,
+//   MarginTrend  one race's projected margin (or its counted margin, with no band) (R-positive, Republican up), the 80% band shaded,
 //                an even race dashed; the y range zooms to the line and snaps to round ticks,
 //                labelled on a y axis
 
@@ -54,7 +54,9 @@ function niceTicks(lo: number, hi: number): { lo: number; hi: number; ticks: num
   return { lo: a, hi: b, ticks };
 }
 
-export function MarginTrend({ points, prior }: { points: SeatPoint[]; prior: Pick<RacePrior, "dem" | "rep"> }) {
+/** `kind` "counted": the counted margin, drawn without a band, the line coloured by who leads
+ *  (purple within 5 points of even). */
+export function MarginTrend({ points, prior, kind = "projected" }: { points: SeatPoint[]; prior: Pick<RacePrior, "dem" | "rep">; kind?: "projected" | "counted" }) {
   // The y range zooms to the projected line itself (padded, at least a point tall) so small moves
   // show; the band and the even line run off the chart when they fall outside it.
   const means = points.map((p) => p.mean), mid = (Math.min(...means) + Math.max(...means)) / 2;
@@ -62,9 +64,9 @@ export function MarginTrend({ points, prior }: { points: SeatPoint[]; prior: Pic
   const { lo, hi, ticks } = niceTicks(mid - half, mid + half);
   const fmtTick = (v: number) => (v === 0 ? "Even" : `${v > 0 ? prior.rep.party : prior.dem.party}+${Math.abs(v)}`);
   return (
-    <Frame axis points={points} label={`Projected margin over time, now ${fmtMargin(points[points.length - 1]?.mean ?? null, prior)}`} note="dashed: even">
+    <Frame axis points={points} label={`${kind === "counted" ? "Counted" : "Projected"} margin over time, now ${fmtMargin(points[points.length - 1]?.mean ?? null, prior)}`} note="dashed: even">
       <TrendChart points={points} reference={0} lo={lo} hi={hi} topColor="var(--party-rep)" bottomColor="var(--party-dem)" colorOf={(v) => marginSideColor(v, prior)}
-        fmtValue={(v) => fmtMargin(v, prior)} fmtRange={(a, b) => `${fmtMargin(a, prior)} to ${fmtMargin(b, prior)}`} ticks={ticks} fmtTick={fmtTick} axisWidth={AXIS_WIDTH} />
+        fmtValue={(v) => fmtMargin(v, prior)} fmtRange={(a, b) => `${fmtMargin(a, prior)} to ${fmtMargin(b, prior)}`} ticks={ticks} fmtTick={fmtTick} axisWidth={AXIS_WIDTH} title={kind === "counted" ? "Counted" : "Projected"} band={kind !== "counted"} leadBlend={kind === "counted" ? 5 : undefined} />
     </Frame>
   );
 }

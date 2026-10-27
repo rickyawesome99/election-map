@@ -14,7 +14,7 @@ import { fetchRaces, normalizeRace, CIVIC_ATTRIBUTION } from "@/lib/resultsFeed"
 import { projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
 import { closeMinutes, fmtClose, fmtMargin, fmtTime, marginSideColor, partyColor, raceHash } from "@/lib/resultsFormat";
 import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
-import { ELECTION_DATE, FEED_OPENS_AT, OFFICE_LABEL, RESULTS_OFFICES, type LiveRace, type PriorsSlice, type RacePrior, type RaceProjection, type ResultsOffice, type SeatSeries, type ArchiveSeries, type SeatPoint } from "@/lib/resultsTypes";
+import { ELECTION_DATE, FEED_OPENS_AT, OFFICE_LABEL, RESULTS_OFFICES, type LiveRace, type PriorsSlice, type RacePrior, type RaceProjection, type ResultsOffice, type SeatSeries, type ArchiveSeries, type RaceHistory } from "@/lib/resultsTypes";
 
 // The election-night Results page. Priors (forecast, nominees, county projection, closing times,
 // civicAPI ids) come from the static slice /api/results/priors/{office}; live counts come
@@ -261,10 +261,10 @@ export default function ResultsPage() {
       return next;
     });
   }, [lastRefresh, refreshing, replay, tallies, liveKey]);
-  // Each counting race's projected margin, the same way: one [t, margin, sigma] per refresh while
+  // Each counting race's projected margin, the same way: one [t, margin, sigma, counted] per refresh while
   // it changes, kept compact and capped (older points thinned) so the night fits in storage.
   const raceKey = `results-race-history-${ELECTION_DATE}${showTest ? "-test" : ""}`;
-  const [liveRaces, setLiveRaces] = useState<Record<string, [number, number, number][]>>({});
+  const [liveRaces, setLiveRaces] = useState<Record<string, [number, number, number, (number | null)?][]>>({});
   useEffect(() => {
     try { const raw = localStorage.getItem(raceKey); setLiveRaces(raw ? JSON.parse(raw) : {}); } catch { setLiveRaces({}); }
   }, [raceKey]);
@@ -276,10 +276,12 @@ export default function ResultsPage() {
       for (const o of RESULTS_OFFICES) for (const { prior, live, proj } of rowsByOffice[o]) {
         if (!live || live.total <= 0) continue;
         const k = raceHash(prior), pts = next[k] ?? [], last = pts[pts.length - 1];
-        const pt: [number, number, number] = [lastRefresh, Math.round(proj.margin * 10) / 10, Math.round(proj.sigma * 10) / 10];
+        const r1 = (v: number) => Math.round(v * 10) / 10;
+        const pt: [number, number, number, number | null] = [lastRefresh, r1(proj.margin), r1(proj.sigma), proj.currentMargin == null ? null : r1(proj.currentMargin)];
         if (last && last[0] >= lastRefresh) continue;
         // An unchanged projection only moves the last point's time forward.
-        const out = last && last[1] === pt[1] && last[2] === pt[2] && pts.length > 1 && pts[pts.length - 2][1] === pt[1] && pts[pts.length - 2][2] === pt[2] ? [...pts.slice(0, -1), pt] : [...pts, pt];
+        const same = (q: (typeof pts)[number]) => q[1] === pt[1] && q[2] === pt[2] && (q[3] ?? null) === pt[3];
+        const out = last && same(last) && pts.length > 1 && same(pts[pts.length - 2]) ? [...pts.slice(0, -1), pt] : [...pts, pt];
         next[k] = out.length > RACE_HISTORY_CAP ? [...out.slice(0, RACE_HISTORY_CAP / 2).filter((_, i) => i % 2 === 0), ...out.slice(RACE_HISTORY_CAP / 2)] : out;
         changed = true;
       }
@@ -336,16 +338,24 @@ export default function ResultsPage() {
     return null;
   }, [selected, rowsByOffice]);
 
-  // The open race's projected margin over the night, from the live record or the replayed archive.
-  const raceHistory: SeatPoint[] = useMemo(() => {
-    if (!selected) return [];
-    const toPoint = (t: number, m: number, sg: number): SeatPoint => ({ t, mean: m, lo: m - Z80 * sg, hi: m + Z80 * sg });
-    if (replay == null) return (liveRaces[selected] ?? []).map(([t, m, sg]) => toPoint(t, m, sg));
-    const series = archiveSeries?.set === activeSet ? archiveSeries.series : null;
-    const pts = series?.races?.[selected];
-    if (!series || !pts) return [];
-    const now = archive[replay] ? Date.parse(archive[replay].fetchedAt) : Infinity;
-    return pts.map(([m, sg], i) => toPoint(series.senate[i]?.t ?? 0, m, sg)).filter((p) => p.t && p.t <= now + 1);
+  // The open race's projected and counted margins over the night, from the live record or the
+  // replayed archive. The counted series has no band and starts at the first counted vote.
+  const raceHistory: RaceHistory = useMemo(() => {
+    const empty: RaceHistory = { projected: [], counted: [] };
+    if (!selected) return empty;
+    let rows: [number, number, number, number | null][];
+    if (replay == null) rows = (liveRaces[selected] ?? []).map(([t, m, sg, c]) => [t, m, sg, c ?? null]);
+    else {
+      const series = archiveSeries?.set === activeSet ? archiveSeries.series : null;
+      const pts = series?.races?.[selected];
+      if (!series || !pts) return empty;
+      const now = archive[replay] ? Date.parse(archive[replay].fetchedAt) : Infinity;
+      rows = pts.map(([m, sg, c], i): [number, number, number, number | null] => [series.senate[i]?.t ?? 0, m, sg, c ?? null]).filter(([t]) => t && t <= now + 1);
+    }
+    return {
+      projected: rows.map(([t, m, sg]) => ({ t, mean: m, lo: m - Z80 * sg, hi: m + Z80 * sg })),
+      counted: rows.flatMap(([t, , , c]) => (c == null ? [] : [{ t, mean: c, lo: c, hi: c }])),
+    };
   }, [selected, replay, liveRaces, archiveSeries, activeSet, archive]);
 
   const sortedRows = useMemo(() => {

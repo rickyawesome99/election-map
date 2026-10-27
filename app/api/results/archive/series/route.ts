@@ -9,7 +9,7 @@ import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
 import { RESULTS_OFFICES, type ArchiveSeries, type LiveRace } from "@/lib/resultsTypes";
 import { raceHash } from "@/lib/resultsFormat";
 
-// The needle's expected seats (and every race's projected margin) at every snapshot of one archive set, for the Results page's seat
+// The needle's expected seats (and every race's projected and counted margin) at every snapshot of one archive set, for the Results page's seat
 // charts while replaying (dev only, like ../route.ts: the archive is never deployed). Each
 // snapshot is projected once per server process and cached.
 
@@ -17,7 +17,7 @@ export const dynamic = "force-dynamic";
 
 const DIR = join(process.cwd(), "data-entry", "results-archive");
 const SET_RE = /^(\d{4}-\d{2}-\d{2}|sim-[a-z0-9-]+)$/;
-const cache = new Map<string, { t: number; tallies: Record<string, { mean: number; lo: number; hi: number }>; races: Record<string, [number, number]> }>();
+const cache = new Map<string, { t: number; tallies: Record<string, { mean: number; lo: number; hi: number }>; races: Record<string, [number, number, number | null]> }>();
 
 export async function GET(req: Request) {
   const set = new URL(req.url).searchParams.get("set") ?? "";
@@ -33,14 +33,14 @@ export async function GET(req: Request) {
       const data = JSON.parse(gunzipSync(readFileSync(join(DIR, set, f))).toString()) as { fetchedAt: string; races: Record<string, unknown> };
       const t = Date.parse(data.fetchedAt);
       const tallies: Record<string, { mean: number; lo: number; hi: number }> = {};
-      const races: Record<string, [number, number]> = {};
+      const races: Record<string, [number, number, number | null]> = {};
       RESULTS_OFFICES.forEach((office, i) => {
         const rows = priors[i].races.map((prior) => {
           const raw = prior.civicId ? data.races[String(prior.civicId)] : null;
           const live: LiveRace | null = raw ? normalizeRace(prior, raw as never, t) : null;
           return { prior, live, proj: projectRace(prior, live) };
         });
-        for (const r of rows) races[raceHash(r.prior)] = [r1(r.proj.margin), r1(r.proj.sigma)];
+        for (const r of rows) races[raceHash(r.prior)] = [r1(r.proj.margin), r1(r.proj.sigma), r.proj.currentMargin == null ? null : r1(r.proj.currentMargin)];
         const e = tallyChamber(rows, SEAT_HOLDOVERS[office]).expectedDem;
         tallies[office] = { mean: e.mean, lo: e.lo80, hi: e.hi80 };
       });
