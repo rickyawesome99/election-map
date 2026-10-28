@@ -26,6 +26,18 @@ export interface MethodologyChange {
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
   {
+    date: "2026-10-28", models: ["forecast"], kind: "data",
+    title: "Generic ballot and Trump approval polls updated through October 26",
+    detail: "Polls RealClearPolitics has added since the October 26 export, taken from the user's screenshots of RCP's tables, were appended to data-entry/generic_ballot_polls.csv (3: Harvard-Harris October 24–26, NPR/PBS/Marist October 22–25, Economist/YouGov October 23–26) and data-entry/trump_approval_polls.csv (4: the same three and Rasmussen Reports October 20–26), and both were rebuilt with their data-entry scripts. Nothing in the method changed.",
+    effect: "Generic ballot D+8.3 unchanged (Harvard-Harris D+4 offset by Marist D+8 and YouGov D+9; R 42.7 → 42.8; RCP's own average D+8.0). Approval net −21.6 unchanged (38.3 approve, 60.0 disapprove; RCP −21.7). No forecast total moved at one decimal.",
+  },
+  {
+    date: "2026-10-28", models: ["forecast"], kind: "data",
+    title: "Race polls refreshed through October 27",
+    detail: "Daily `npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. Echelon Insights' (R) October 16–23 multi-state wave added 13 rows across Florida, Georgia, Iowa, Maine, Nebraska and Ohio. Alaska Survey Research's October 23–25 governor poll was read from its ranked-choice final round (53/47). An Impact Research (D) NJ-02 poll from October 7–10 was back-filled. Wikipedia now prints ActiVote's October 1–21 Pennsylvania Governor poll with decimals (61.5/38.5 vs 62/39 on file); left as is, like the earlier MassINC, Nebraska Senate and Ohio Governor differences. No method change.",
+    effect: "36 new polls (19 Governor, 4 House, 13 Senate); 1,237 polls in 172 races, newest ending 2026-10-27. House: expected Democratic seats 229.2 → 229.4, P(Democratic control) 81% unchanged. Senate 51.2 → 51.3, 60% → 62%. Governors 26.1 → 26.0. Two rating changes: Georgia Governor Tilt R → Tilt D (R+0.1 → D+0.1) and Nevada Governor Lean R → Tilt R (R+1.5 → R+1.0). Largest same-rating moves: IN-05 R+9.5 → R+7.5, AZ-01 D+3.4 → D+4.6, NJ-02 R+9.0 → R+10.1, AZ-06 D+1.6 → D+2.6, Alaska Governor D+2.8 → D+1.8.",
+  },
+  {
     date: "2026-10-26", models: ["forecast"], kind: "data",
     title: "Generic ballot and Trump approval polls updated through October 26",
     detail: "Polls RealClearPolitics has added since the October 21 export were appended to data-entry/generic_ballot_polls.csv (9, newest Reuters/Ipsos October 22–26, including back-filled CNN October 15–18, CNBC October 15–19 and NY Times/Siena October 12–19) and data-entry/trump_approval_polls.csv (10, newest Reuters/Ipsos October 22–26, with the same back-filled CNN, CNBC and Times/Siena polls and RMG Research October 12–20), and both were rebuilt with their data-entry scripts. RCP's table was taken from the user's screenshots, because RCP now serves a bot check to scripted requests. Rasmussen's October 13–19 approval wave is still on file although RCP's table now shows only its October 19–25 wave. Nothing in the method changed.",

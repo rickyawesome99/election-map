@@ -364,7 +364,11 @@ export const trumpApprovalPolls: TrumpApprovalPoll[] = [
   { pollster: "Financial Times", startDate: "2026-10-16", endDate: "2026-10-20", sample: 1594, population: "LV", approve: 37, disapprove: 58, diff: 21 },
   { pollster: "RMG Research*", startDate: "2026-10-12", endDate: "2026-10-20", sample: 2000, population: "RV", approve: 42, disapprove: 57, diff: 15 },
   { pollster: "CBS News", startDate: "2026-10-21", endDate: "2026-10-23", sample: 2355, population: "A", approve: 39, disapprove: 61, diff: 22 },
+  { pollster: "NPR/PBS/Marist", startDate: "2026-10-22", endDate: "2026-10-25", sample: 1289, population: "LV", approve: 40, disapprove: 59, diff: 19 },
   { pollster: "Morning Consult", startDate: "2026-10-23", endDate: "2026-10-25", sample: 2204, population: "RV", approve: 40, disapprove: 57, diff: 17 },
   { pollster: "Rasmussen Reports", startDate: "2026-10-19", endDate: "2026-10-25", sample: 1500, population: "LV", approve: 41, disapprove: 57, diff: 16 },
+  { pollster: "Harvard-Harris", startDate: "2026-10-24", endDate: "2026-10-26", sample: 2700, population: "RV", approve: 39, disapprove: 59, diff: 20 },
+  { pollster: "Economist/YouGov", startDate: "2026-10-23", endDate: "2026-10-26", sample: 1272, population: "LV", approve: 40, disapprove: 58, diff: 18 },
+  { pollster: "Rasmussen Reports", startDate: "2026-10-20", endDate: "2026-10-26", sample: 1500, population: "LV", approve: 41, disapprove: 58, diff: 17 },
   { pollster: "Reuters/Ipsos", startDate: "2026-10-22", endDate: "2026-10-26", sample: 1280, population: "RV", approve: 35, disapprove: 64, diff: 29 }
 ];
