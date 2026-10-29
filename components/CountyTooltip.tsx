@@ -282,7 +282,38 @@ function CountyPanel(props: CountyTooltipProps) {
 
   let left: ReactNode = null;
   let right: ReactNode = null;
-  if (props.kind === "result") {
+  if (props.kind === "result" && props.remaining) {
+    // The Remaining map: the hover box's figures. The projected net votes still to come (the
+    // circle) as the headline, then the net votes counted so far and the votes left to count.
+    const { dem, rep } = props, { votes, net, current } = props.remaining;
+    const v = Math.round(Math.abs(net)), s = net > 0 ? rep : dem;
+    const leftFig = votes <= 0 ? { text: "None", color: "var(--app-text-muted)" } : { text: v === 0 ? "Even" : `${lastName(s.name)} +${fmtInt(v)}`, color: v === 0 ? "var(--app-text-muted)" : partyText(s.party) };
+    const nowVotes = Math.round(Math.abs(current)), nowParty = current > 0 ? rep.party : dem.party;
+    const line = (k: string, val: ReactNode, color: string) => (
+      <div className="flex items-baseline justify-between gap-3">
+        <span className="text-sm" style={{ color: "var(--app-text-muted)" }}>{k}</span>
+        <span className="text-sm font-bold tabular-nums" style={{ color }}>{val}</span>
+      </div>
+    );
+    right = (
+      <div className="text-right">
+        <div className="font-extrabold tabular-nums" style={{ fontSize: figSize, lineHeight: 1, color: leftFig.color }}>{leftFig.text}</div>
+        <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>projected remaining net votes</div>
+      </div>
+    );
+    left = (
+      <div className={`grid w-full ${small ? "gap-y-0" : "mt-1 gap-y-0.5"}`}>
+        {line("Current net votes", nowVotes === 0 ? "Even" : `${nowParty}+${fmtInt(nowVotes)}`, nowVotes === 0 ? "var(--app-text-muted)" : partyText(nowParty))}
+        {line("Votes left to count", votes > 0 ? `~${fmtInt(Math.round(votes))}` : "0", "var(--app-text-primary)")}
+        {(footer || props.reporting) && (
+          <div className={`flex items-baseline justify-between gap-3 ${small ? "mt-0.5" : "mt-1"}`}>
+            <span>{footer}</span>
+            {props.reporting && <span className="text-xs tabular-nums"><ReportingText reporting={props.reporting} /></span>}
+          </div>
+        )}
+      </div>
+    );
+  } else if (props.kind === "result") {
     const { dem, rep, margin, totalVotes } = props;
     const fig = signed(margin, dem.party, rep.party, props.projected);
     const other = otherShare(dem, rep, totalVotes);
@@ -334,10 +365,6 @@ function CountyPanel(props: CountyTooltipProps) {
       <div className="text-right">
         <div className="font-extrabold tabular-nums" style={{ fontSize: figSize, lineHeight: 1, color: fig.color }}>{fig.text}</div>
         {projFig && <div className="mt-1 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>proj. <b style={{ color: projFig.color }}>{projFig.text}</b></div>}
-        {props.remaining && props.remaining.votes > 0 && (() => {
-          const net = Math.round(Math.abs(props.remaining.net)), side = props.remaining.net > 0 ? rep : dem;
-          return <div className="mt-0.5 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>left <b style={{ color: net === 0 ? undefined : partyText(side.party) }}>{net === 0 ? "Even" : `${lastName(side.name)} +${fmtInt(net)}`}</b></div>;
-        })()}
       </div>
     );
   } else if (props.kind === "tpl") {

@@ -56,8 +56,13 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
   const [sortKey, setSortKey] = useState<"votes" | "name" | "margin" | "in">("votes");
   const hasVotes = !!live && live.total > 0;
   const liveByFips = useMemo(() => new Map((live?.counties ?? []).filter((c) => c.fips).map((c) => [c.fips!, c])), [live]);
-  // A jungle or ranked-choice race's D and R sides are party blocs (lib/resultsFeed.ts tallyRegion): named as such on the map.
-  const blocSides = useMemo(() => (prior.jungle || prior.rcv ? { sides: { dem: { name: "Democrats", party: prior.dem.party }, rep: { name: "Republicans", party: prior.rep.party } } } : {}), [prior]);
+  // A jungle or ranked-choice race's D and R sides are party blocs (lib/resultsFeed.ts tallyRegion),
+  // named on the map for each bloc's leading candidate in the feed (the forecast's nominee before any votes).
+  const blocSides = useMemo(() => {
+    if (!prior.jungle && !prior.rcv) return {};
+    const lead = (slot: "dem" | "rep", party: Party) => (!live?.total ? null : live.candidates.find((c) => c.name === prior[slot].name || partyOf(c.party) === party)?.name) ?? prior[slot].name;
+    return { sides: { dem: { name: lead("dem", "D"), party: prior.dem.party }, rep: { name: lead("rep", "R"), party: prior.rep.party } } };
+  }, [prior, live]);
 
   const entries: CountyMapEntry[] = useMemo(() => proj.counties.flatMap((c) => {
     const l = liveByFips.get(c.fips);
