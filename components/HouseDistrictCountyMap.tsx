@@ -10,7 +10,7 @@ import { getRaceColor } from "@/lib/colorScale";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { usePanZoom } from "@/lib/usePanZoom";
-import type { CountyMapEntry, CountyMapResult } from "@/components/PastElectionCountyMap";
+import { BUBBLE_LAND, BUBBLE_LINE, bubbleColor, bubbleMaxNet, bubbleMaxR, bubbleRadius, type CountyMapEntry, type CountyMapResult } from "@/components/PastElectionCountyMap";
 import { isRealName } from "@/lib/personName";
 import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
 import { countyDisplayName } from "@/lib/countyName";
@@ -44,6 +44,7 @@ export default function HouseDistrictCountyMap({
   caption,
   panelSize = "compact",
   fill = false,
+  bubbles = false,
 }: {
   piecesUrl: string;
   district: number;
@@ -63,11 +64,15 @@ export default function HouseDistrictCountyMap({
    *  takes `height` when there's room and gives up space down to 180px when the selected
    *  county's panel needs it, so opening a panel never makes the column taller. */
   fill?: boolean;
+  /** Draw each county's remaining net votes as a circle over plain land (the Results page). */
+  bubbles?: boolean;
 }) {
   const { data: topo, failed } = useStaticJson<PiecesTopology>(piecesUrl);
   const byFips = useMemo(() => new Map(counties.map((c) => [c.fips, c.result])), [counties]);
+  const maxNet = useMemo(() => (bubbles ? bubbleMaxNet(counties) : 0), [bubbles, counties]);
   const sameParty = demParty === repParty;
   const fillFor = (r: CountyMapResult | null): string => {
+    if (bubbles) return BUBBLE_LAND;
     if (!r) return "var(--map-unfilled)";
     if (!sameParty) return getRaceColor(r.margin);
     const size = Math.abs(r.margin);
@@ -137,7 +142,7 @@ export default function HouseDistrictCountyMap({
       kind: "result", title,
       dem: { name: demName, link: isRealName(demName), state: stateAbbr, party: demParty, pct: r.demPct, votes: r.demVotes },
       rep: { name: repName, link: isRealName(repName), state: stateAbbr, party: repParty, pct: r.repPct, votes: r.repVotes },
-      margin: r.margin, totalVotes: r.totalVotes, reporting: r.reporting, projectedMargin: r.projectedMargin,
+      margin: r.margin, totalVotes: r.totalVotes, reporting: r.reporting, projectedMargin: r.projectedMargin, remaining: r.remaining,
     };
   };
 
@@ -172,8 +177,18 @@ export default function HouseDistrictCountyMap({
                   onClick={() => setSelected(isSel ? null : h)} />
               );
             })}
-            <path d={scene.path(scene.countyBorders) ?? undefined} fill="none" stroke="var(--app-bg)" strokeWidth={0.8} pointerEvents="none" vectorEffect="non-scaling-stroke" />
+            <path d={scene.path(scene.countyBorders) ?? undefined} fill="none" stroke={bubbles ? BUBBLE_LINE : "var(--app-bg)"} strokeWidth={0.8} pointerEvents="none" vectorEffect="non-scaling-stroke" />
             <path d={scene.path(scene.districtOutline) ?? undefined} fill="none" stroke="var(--app-text-primary)" strokeWidth={1.4} strokeLinejoin="round" pointerEvents="none" vectorEffect="non-scaling-stroke" />
+            {/* Remaining view: a circle on the district's share of each county, largest first. */}
+            {bubbles && scene.mine
+              .map((p) => ({ p, net: byFips.get(p.properties.c)?.remaining?.net ?? 0 }))
+              .filter((b) => b.net !== 0)
+              .sort((a, b) => Math.abs(b.net) - Math.abs(a.net))
+              .map(({ p, net }) => {
+                const [cx, cy] = scene.path.centroid(p);
+                if (!Number.isFinite(cx) || !Number.isFinite(cy)) return null;
+                return <circle key={`b-${p.properties.c}`} cx={cx} cy={cy} r={bubbleRadius(net, maxNet, bubbleMaxR(size.width, size.height))} fill={bubbleColor(net, demParty, repParty)} fillOpacity={0.72} stroke="var(--app-bg)" strokeWidth={0.75} pointerEvents="none" />;
+              })}
             </g>
           </svg>
         )}

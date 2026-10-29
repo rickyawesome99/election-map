@@ -222,6 +222,10 @@ def parse_cell(raw):
         if re.search(r"\b(style|rowspan|colspan|class|align|bgcolor|valign|scope|data-sort-value|width)\s*=", head, re.I) \
                 or re.fullmatch(r"\s*\{\{\s*party shading[^}]*\}\}\s*", head, re.I):
             return head, "|".join(parts[1:])
+    # attrs typed without their closing pipe: 'style="…" {{TBA}} (R)<ref>…'
+    m = re.match(r'\s*((?:(?:style|rowspan|colspan|class|align|bgcolor|valign|scope|data-sort-value|width)\s*=\s*"[^"]*"\s*)+)', raw, re.I)
+    if m:
+        return m.group(1), raw[m.end():]
     return "", raw
 
 

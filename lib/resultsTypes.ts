@@ -156,7 +156,7 @@ export type RaceProjection = {
   counties: CountyProjection[];
 };
 
-/** One moment of the needle's chamber projection: expected Democratic seats with the 80% band. */
+/** One moment of the needle's chamber projection: projected Democratic seats (sum of projected winners) with the 80% band. */
 export type SeatPoint = { t: number; mean: number; lo: number; hi: number };
 export type SeatSeries = Record<ResultsOffice, SeatPoint[]>;
 /** One race's margins over the night (R-positive): the projection with its 80% band, and the

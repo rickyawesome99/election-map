@@ -26,6 +26,17 @@ export interface MethodologyChange {
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
   {
+    date: "2026-10-29", models: ["turnout"], kind: "change",
+    title: "Results page: projected seats are the sum of projected winners",
+    detail: "Each chamber card's projected Democratic seats (and its trend line over the night) was the sum of every race's win probability plus seats not up. It is now the count of called seats plus each uncalled race's projected winner (the needle's projected margin decides). The 80% range still comes from the races' win probabilities (normal approximation) and is widened when needed so it contains the count. public/results-sim was re-published.",
+  },
+  {
+    date: "2026-10-28", models: ["forecast"], kind: "data",
+    title: "Race polls refreshed again (through October 27), plus one generic-ballot and one approval poll",
+    detail: "Second `npm run refresh` of the day, append-only as before. RedBox Research (D) polls sponsored by A Fight Worth Having arrived in 18 more House districts; Wikipedia's editor Jjose172 removed the AZ-01 and AZ-06 rows from that series today citing WP:RS, while the same series stays listed in every other race, so the two Arizona rows on file were kept. An Ohio Governor poll (October 23–26, 800 LV, 50/42) reported by Axios as an unnamed GOP poll is listed on Wikipedia with a {{TBA}} pollster and a style attribute missing its closing pipe, which the scraper had read as the pollster name; the row is now \"Undisclosed GOP pollster\" (R), and scripts/fetch-race-polls.py strips attributes typed without their pipe. A GOTV Polling Tennessee Governor poll (October 25–26) was picked up on a re-run. From RealClearPolitics (the user's screenshots): Cygnal's October 23–24 generic ballot (D+9) and Rasmussen's October 21–27 approval wave (41/57) were appended. No method change.",
+    effect: "47 new race polls (16 Governor, 20 House, 11 Senate); 1,284 polls in 173 races, newest ending 2026-10-27. Generic ballot D+8.3 and approval −21.6 unchanged (RCP D+8.2 and −21.6). House: expected Democratic seats 229.3 → 229.9, P(Democratic control) 81% → 83%. Senate 51.3, 61% → 62%. Governors 26.0 → 26.1. Seven rating changes: PA-10 Tilt R → Tilt D (EVEN → D+0.9), PA-08 Tilt R → Tilt D (R+0.2 → D+0.6), OH-07 Tilt D → Lean D, MT-01 Lean D → Tilt D, FL-27 and WI-01 Likely R → Lean R, Georgia Governor Tilt D → Tilt R (D+0.1 → EVEN). Largest same-rating moves: Alabama Senate R+24.3 → R+22.2, Alabama Governor R+17.3 → R+15.2, OH-09 D+2.4 → D+4.1, FL-25 D+2.5 → D+3.9.",
+  },
+  {
     date: "2026-10-28", models: ["forecast"], kind: "data",
     title: "Generic ballot and Trump approval polls updated through October 26",
     detail: "Polls RealClearPolitics has added since the October 26 export, taken from the user's screenshots of RCP's tables, were appended to data-entry/generic_ballot_polls.csv (3: Harvard-Harris October 24–26, NPR/PBS/Marist October 22–25, Economist/YouGov October 23–26) and data-entry/trump_approval_polls.csv (4: the same three and Rasmussen Reports October 20–26), and both were rebuilt with their data-entry scripts. Nothing in the method changed.",

@@ -1,7 +1,7 @@
 "use client";
 
 import { lastName } from "@/lib/personName";
-import { fmtClose, fmtInt, fmtMargin, marginSideColor, raceHash } from "@/lib/resultsFormat";
+import { fmtClose, fmtInt, fmtMargin, marginSideColor, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import type { Party } from "@/lib/resultsTypes";
 import type { ResultsRow } from "@/components/results/ResultsPage";
 
@@ -128,7 +128,7 @@ export default function ResultsRaceTable({ rows, selected, onSelect }: { rows: R
           const pWin = proj.probD >= 0.5 ? proj.probD : 1 - proj.probD;
           const pSide = proj.probD >= 0.5 ? prior.dem.party : prior.rep.party;
           const note = raceNote(row);
-          const margin = <span className="font-bold tabular-nums" style={{ ...serif, fontSize: 18, color: marginSideColor(proj.currentMargin, prior) }}>{hasVotes ? fmtMargin(proj.currentMargin, prior) : "—"}</span>;
+          const margin = <span className="font-bold tabular-nums" style={{ ...serif, fontSize: 18, color: callSideColor(proj.currentMargin, prior) }}>{hasVotes ? fmtCall(proj.currentMargin, prior) : "—"}</span>;
           // "7 PM"; a state split across time zones "7/8 PM" (the first close, then the last).
           const close = prior.pollsClose.last !== prior.pollsClose.first
             ? `${fmtClose(prior.pollsClose.first).replace(/ [AP]M$/, "")}/${fmtClose(prior.pollsClose.last)}`
@@ -162,25 +162,25 @@ export default function ResultsRaceTable({ rows, selected, onSelect }: { rows: R
               </div>
               <div className="hidden text-right lg:block">
                 {hasVotes ? <>
-                  <div className="text-sm font-bold tabular-nums" style={{ color: marginSideColor(proj.margin, prior) }}>{fmtMargin(proj.margin, prior)} <span className="text-[11px] font-normal" style={VERY_MUTED}>±{proj.sigma.toFixed(1)}</span></div>
+                  <div className="text-sm font-bold tabular-nums" style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)} <span className="text-[11px] font-normal" style={VERY_MUTED}>±{proj.sigma.toFixed(1)}</span></div>
                   <div className="text-[11px] tabular-nums" style={MUTED}>{proj.locked ? "Called" : `${Math.round(pWin * 100)}% ${pSide}`}</div>
                 </> : <span style={VERY_MUTED}>—</span>}
               </div>
               <div className="hidden text-right lg:block">
-                <div className="text-sm font-semibold tabular-nums" style={{ color: marginSideColor(prior.forecast.margin, prior) }}>{fmtMargin(prior.forecast.margin, prior)}</div>
+                <div className="text-sm font-semibold tabular-nums" style={{ color: callSideColor(prior.forecast.margin, prior) }}>{fmtCall(prior.forecast.margin, prior)}</div>
                 <div className="text-[11px]" style={MUTED}>{prior.forecast.rating}</div>
               </div>
               <div className="hidden text-right lg:block">
                 {hasVotes ? <>
-                  <div className="text-sm font-semibold tabular-nums">{Math.round(proj.countedShare * 100)}%</div>
+                  <div className="text-sm font-semibold tabular-nums" style={{ color: inColor(inState(proj.countedShare * 100)) }}>{inState(proj.countedShare * 100) === "done" && "✓ "}{fmtIn(proj.countedShare * 100)}</div>
                   <div className="text-[11px] tabular-nums" style={MUTED}>feed {Math.round(live!.percentReporting)}%</div>
                 </> : <span className="text-sm" style={VERY_MUTED}>0%</span>}
               </div>
 
               {/* Phones: the lg+ columns in one line (projection + odds, % in; forecast, poll close) */}
               <div className="flex flex-wrap justify-between gap-x-3 text-[11px] tabular-nums lg:hidden" style={VERY_MUTED}>
-                <span>{hasVotes ? <>Proj. <b style={{ color: marginSideColor(proj.margin, prior) }}>{fmtMargin(proj.margin, prior)}</b> ({proj.locked ? "called" : `${Math.round(pWin * 100)}% ${pSide}`}) · {Math.round(proj.countedShare * 100)}% in</> : <>Forecast <b style={{ color: marginSideColor(prior.forecast.margin, prior) }}>{prior.forecast.rating}</b></>}</span>
-                <span>{hasVotes && <>Fcst <span style={{ color: marginSideColor(prior.forecast.margin, prior) }}>{fmtMargin(prior.forecast.margin, prior)}</span> · </>}Closes {close}</span>
+                <span>{hasVotes ? <>Proj. <b style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)}</b> ({proj.locked ? "called" : `${Math.round(pWin * 100)}% ${pSide}`}) · <span style={{ color: inColor(inState(proj.countedShare * 100)) }}>{fmtIn(proj.countedShare * 100)} in</span></> : <>Forecast <b style={{ color: callSideColor(prior.forecast.margin, prior) }}>{prior.forecast.rating}</b></>}</span>
+                <span>{hasVotes && <>Fcst <span style={{ color: callSideColor(prior.forecast.margin, prior) }}>{fmtCall(prior.forecast.margin, prior)}</span> · </>}Closes {close}</span>
               </div>
             </div>
           );

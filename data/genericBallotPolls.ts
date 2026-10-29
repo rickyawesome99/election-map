@@ -268,6 +268,7 @@ export const genericBallotPolls: GenericBallotPoll[] = [
   { pollster: "Financial Times", startDate: "2026-10-16", endDate: "2026-10-20", sample: 1594, population: "LV", dem: 53, rep: 44, diff: -9 },
   { pollster: "Rasmussen Reports", startDate: "2026-10-15", endDate: "2026-10-21", sample: 1755, population: "LV", dem: 48, rep: 43, diff: -5 },
   { pollster: "CBS News", startDate: "2026-10-21", endDate: "2026-10-23", sample: 1749, population: "LV", dem: 53, rep: 45, diff: -8 },
+  { pollster: "Cygnal", startDate: "2026-10-23", endDate: "2026-10-24", sample: 1500, population: "LV", dem: 52, rep: 43, diff: -9 },
   { pollster: "NPR/PBS/Marist", startDate: "2026-10-22", endDate: "2026-10-25", sample: 1289, population: "LV", dem: 52, rep: 44, diff: -8 },
   { pollster: "Morning Consult", startDate: "2026-10-19", endDate: "2026-10-25", sample: 17491, population: "LV", dem: 50, rep: 43, diff: -7 },
   { pollster: "Harvard-Harris", startDate: "2026-10-24", endDate: "2026-10-26", sample: null, population: "LV", dem: 52, rep: 48, diff: -4 },

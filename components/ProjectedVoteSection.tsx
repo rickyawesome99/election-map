@@ -36,9 +36,10 @@ export default function ProjectedVoteSection({ p, candidates, state }: { p: Proj
   // wins, so the section shows the electorate but no split between them.
   const sameParty = p.contest === "same-party-D" || p.contest === "same-party-R";
   // R-positive margin → the label of the side it favours: its party, or, in a same-party contest, its candidate.
-  const sideLabel = (m: number) => (m > 0 ? p.repParty : p.demParty);
-  const sideColor = (m: number) => (Math.abs(m) < 0.05 ? "var(--app-text-primary)" : partyColor(m > 0 ? p.repParty : p.demParty));
-  const fmtM = (m: number) => (Math.abs(m) < 0.05 ? "EVEN" : `${sideLabel(m)}+${Math.abs(m).toFixed(1)}`);
+  // A projection always names its leader (the exact sign decides): "R+0.0", "EVEN" only at a true tie.
+  const sideLabel = (m: number) => (m < 0 ? p.demParty : p.repParty);
+  const sideColor = (m: number) => (m === 0 ? "var(--app-text-primary)" : partyColor(m < 0 ? p.demParty : p.repParty));
+  const fmtM = (m: number) => (m === 0 ? "EVEN" : `${sideLabel(m)}+${Math.abs(m).toFixed(1)}`);
 
   const cands = [
     { name: p.demName, party: p.demParty, votes: p.demVotes, share: p.shares.dem },

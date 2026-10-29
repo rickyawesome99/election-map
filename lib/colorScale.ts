@@ -46,9 +46,11 @@ export function getStateColor(margin: number): string {
 // (lib/tplCompute.ts projectRace guarantees the margin itself is never exactly 0.) Leans,
 // poll averages and model terms are quantities, not calls, and keep "EVEN" via fmtMargin.
 export function formatProjectedMargin(margin: number): string {
+  if (margin === 0) return "EVEN";
   return `${margin < 0 ? "D" : "R"}+${Math.abs(margin).toFixed(1)}`;
 }
 export function projectedMarginColor(margin: number): string {
+  if (margin === 0) return "var(--app-text-primary)";
   return margin < 0 ? "var(--party-dem)" : "var(--party-rep)";
 }
 

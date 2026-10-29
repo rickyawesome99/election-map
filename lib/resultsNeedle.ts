@@ -214,8 +214,9 @@ export type ChamberTally = {
   leading: { dem: number; rep: number; ind: number };
   /** Called plus the needle's projected winner of every other race (the prior where nothing is in). */
   projected: { dem: number; rep: number; ind: number };
-  /** Expected Democratic seats by the needle's probabilities, with an 80% band from a normal approximation. */
-  expectedDem: { mean: number; lo80: number; hi80: number };
+  /** Projected Democratic seats: called plus every race's projected winner (projected.dem), with an
+   *  80% band from the races' win probabilities (normal approximation), widened to contain the count. */
+  projectedDem: { seats: number; lo80: number; hi80: number };
   flips: { id: string; from: Party; to: Party; status: "called" | "projected" | "leading" }[];
   racesIn: number;
   racesCalled: number;
@@ -246,7 +247,7 @@ export function tallyChamber(rows: { prior: RacePrior; live: LiveRace | null; pr
   const sd = Math.sqrt(variance);
   return {
     called, leading, projected,
-    expectedDem: { mean: holdover.dem + mean, lo80: holdover.dem + mean - 1.2816 * sd, hi80: holdover.dem + mean + 1.2816 * sd },
+    projectedDem: { seats: projected.dem, lo80: Math.min(projected.dem, holdover.dem + mean - 1.2816 * sd), hi80: Math.max(projected.dem, holdover.dem + mean + 1.2816 * sd) },
     flips, racesIn, racesCalled, popular,
   };
 }

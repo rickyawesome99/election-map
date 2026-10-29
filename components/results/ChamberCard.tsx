@@ -3,7 +3,7 @@
 import type { ChamberTally } from "@/lib/resultsNeedle";
 import { OFFICE_LABEL, type Party, type ResultsOffice, type SeatPoint } from "@/lib/resultsTypes";
 import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecastTypes";
-import { fmtInt, fmtMargin, marginSideColor, partyColor } from "@/lib/resultsFormat";
+import { callSideColor, fmtCall, fmtInt, partyColor } from "@/lib/resultsFormat";
 import type { ResultsRow } from "@/components/results/ResultsPage";
 import SeatTrend from "@/components/results/SeatTrend";
 
@@ -24,7 +24,7 @@ const LIGHT: Record<Party, string> = { D: "color-mix(in srgb, var(--party-dem) 3
 export default function ChamberCard({ office, tally, rows, history }: { office: ResultsOffice; tally: ChamberTally; rows: ResultsRow[]; history: SeatPoint[] }) {
   const total = TOTAL_SEATS_BY_TYPE[office];
   const majority = MAJORITY[office];
-  const { called, leading, expectedDem, popular: pv } = tally;
+  const { called, leading, projectedDem, popular: pv } = tally;
   const lead = { dem: leading.dem - called.dem, rep: leading.rep - called.rep, ind: leading.ind - called.ind };
   const open = Math.max(0, total - leading.dem - leading.rep - leading.ind);
   const w = (n: number) => `${(n / total) * 100}%`;
@@ -43,6 +43,7 @@ export default function ChamberCard({ office, tally, rows, history }: { office: 
   // seats gained by Democrats less seats they lose; nothing shown until a flip is called. The
   // called flips are listed in the hover title.
   const calledFlips = tally.flips.filter((f) => f.status === "called");
+  const notUp = office !== "house" ? <span title="Seats not on the ballot this year, counted in the called totals">Not up: {holdover.dem} D, {holdover.rep} R</span> : null;
   const net = calledFlips.filter((f) => f.to === "D").length - calledFlips.filter((f) => f.from === "D").length;
   const flipList = calledFlips.map((f) => { const r = rows.find((x) => x.prior.id === f.id); return `${r ? (office === "house" ? r.prior.label : r.prior.state) : f.id} ${f.from}→${f.to}`; }).join(", ");
   const pvCounted = pv.projectedTotal ? `${Math.round((pv.total / pv.projectedTotal) * 100)}% of ~${pv.projectedTotal >= 1e6 ? `${(pv.projectedTotal / 1e6).toFixed(1)}M` : fmtInt(pv.projectedTotal)}` : "";
@@ -76,12 +77,12 @@ export default function ChamberCard({ office, tally, rows, history }: { office: 
         </div>
       </div>
 
-      <div className="max-sm:grid max-sm:grid-cols-[auto_minmax(0,1fr)] xl:mt-3 xl:grid xl:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)_minmax(0,1.1fr)] xl:gap-x-4 xl:border-t xl:pt-2" style={{ borderColor: "var(--app-border)" }}>
+      <div className="max-sm:grid max-sm:grid-cols-[auto_minmax(0,1fr)] xl:relative xl:mt-3 xl:grid xl:grid-cols-[minmax(0,1fr)_6rem_minmax(0,1.25fr)] xl:gap-x-4 xl:border-t xl:pt-2" style={{ borderColor: "var(--app-border)" }}>
         {/* Popular vote: two lines (at xl, without the raw counts, and the share counted under them) */}
         <div className="mt-3 border-t pt-2 max-sm:col-span-2 xl:mt-0 xl:border-t-0 xl:pt-0" style={{ borderColor: "var(--app-border)" }}>
           <div className="flex items-baseline justify-between gap-2">
             <span className={label} style={muted}>Popular vote{pv.projectedTotal ? <span className="ml-2 font-sans text-[11px] font-normal normal-case tracking-normal xl:hidden">{pvCounted} counted</span> : null}</span>
-            <b className="text-sm tabular-nums" style={{ color: marginSideColor(pvMargin) }}>{pv.total > 0 ? fmtMargin(pvMargin) : "—"}</b>
+            <b className="text-sm tabular-nums" style={{ color: callSideColor(pvMargin) }}>{pv.total > 0 ? fmtCall(pvMargin) : "—"}</b>
           </div>
           <div className="mt-0.5 flex items-baseline justify-between gap-2 text-sm tabular-nums">
             <span><b style={{ color: "var(--party-dem)" }}>D {pv.total > 0 ? `${((pv.dem / pv.total) * 100).toFixed(1)}%` : "—"}</b> <span className="xl:hidden" style={muted}>{pv.total > 0 ? fmtInt(pv.dem) : ""}</span></span>
@@ -95,16 +96,19 @@ export default function ChamberCard({ office, tally, rows, history }: { office: 
           <div className="flex items-baseline justify-between gap-2 max-sm:block xl:block">
             <div className={label} style={muted}>Projected</div>
             <div className="text-sm tabular-nums max-sm:mt-0.5 xl:mt-0.5">
-              <b style={{ color: "var(--party-dem)" }}>{Math.round(expectedDem.mean)}</b>
+              <b style={{ color: "var(--party-dem)" }}>{projectedDem.seats}</b>
               <span style={muted}> D seats<span className="max-sm:hidden xl:hidden"> · </span></span>
-              <span className="max-sm:block max-sm:text-[10.5px] xl:block xl:text-[10.5px]" style={muted}><span className="hidden max-sm:inline xl:inline">80%: </span>{Math.round(expectedDem.lo80)}–{Math.round(expectedDem.hi80)}</span>
+              <span className="max-sm:block max-sm:text-[10.5px] xl:block xl:text-[10.5px]" style={muted}><span className="hidden max-sm:inline xl:inline">80%: </span>{Math.round(projectedDem.lo80)}–{Math.round(projectedDem.hi80)}</span>
             </div>
           </div>
         </div>
         <div className="mt-1.5 max-sm:mt-3 max-sm:border-t max-sm:pt-2 max-sm:pl-4 xl:mt-0" style={{ borderColor: "var(--app-border)" }}><SeatTrend points={history} majority={majority} total={total} /></div>
+        {/* At xl the chart has its own column, so the seats-not-up note sits under the other two,
+            on the chart's time-label row, instead of adding a line to the card. */}
+        {notUp && <div className="absolute bottom-0 left-0 hidden text-[10px] tabular-nums xl:block" style={{ color: "var(--app-text-very-muted)" }}>{notUp}</div>}
       </div>
 
-      {office !== "house" && <div className="mt-2 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>Called includes {holdover.dem} D and {holdover.rep} R seats not up</div>}
+      {notUp && <div className="mt-2 text-[10px] xl:hidden" style={{ color: "var(--app-text-very-muted)" }}>{notUp}</div>}
     </div>
   );
 }

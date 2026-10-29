@@ -17,6 +17,9 @@
   --party-dem: #1b408c;
   --party-rep: #be1c29;
   --party-ind: #5a6472;
+  /* Results page: how much of a county/race is counted (none / partial / done) */
+  --count-partial: #a86400;
+  --count-done: #22c55e; /* the Won pill's green (WAR_GOOD) */
   --party-dem-muted: #1b408c99;
   --party-rep-muted: #be1c2999;
   --party-ind-muted: #5a647299;
@@ -67,6 +70,8 @@ html.dark {
   --party-dem: #8bafff;
   --party-rep: #ff8b98;
   --party-ind: #a8b3bf;
+  --count-partial: #d29922;
+  --count-done: #22c55e;
   --party-dem-muted: #8bafff99;
   --party-rep-muted: #ff8b9899;
   --party-ind-muted: #a8b3bf99;

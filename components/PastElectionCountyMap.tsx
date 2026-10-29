@@ -28,9 +28,27 @@ export type CountyMapResult = {
   reporting?: string;
   /** The Results page's projected final margin, R-positive, shown beside the counted one. */
   projectedMargin?: number;
+  /** The Results page's vote still to count: projected votes left and the net votes they carry (R-positive). */
+  remaining?: { votes: number; net: number; current: number };
 };
 
 export type CountyMapEntry = { fips: string; name: string; result: CountyMapResult };
+
+// The Results page's Remaining view: a circle per county, its area the net votes left to count,
+// red or blue for the party projected to gain them, over plain land (as DDHQ / NYT draw it).
+export const BUBBLE_LAND = "var(--app-tab-bg)";
+export const BUBBLE_LINE = "var(--app-border)";
+export const bubbleMaxNet = (counties: CountyMapEntry[]) => Math.max(0, ...counties.map((c) => Math.abs(c.result.remaining?.net ?? 0)));
+/** Largest circle's radius for a map of this size. */
+export const bubbleMaxR = (width: number, height: number) => Math.max(12, Math.min(30, Math.min(width, height) * 0.085));
+export function bubbleRadius(net: number, maxNet: number, maxR: number): number {
+  if (maxNet <= 0 || net === 0) return 0;
+  return Math.max(1.5, maxR * Math.sqrt(Math.abs(net) / maxNet));
+}
+export const bubbleColor = (net: number, demParty: "D" | "R" | "I", repParty: "D" | "R" | "I") => {
+  const p = net > 0 ? repParty : demParty;
+  return p === "R" ? "var(--party-rep-fill)" : p === "I" ? "var(--party-ind-fill)" : "var(--party-dem-fill)";
+};
 
 const countiesUrl = (stateAbbr: string) => `/state-counties/${stateAbbr}.json`;
 
@@ -70,6 +88,7 @@ export default function PastElectionCountyMap({
   reservePanel = false,
   panelSize = "compact",
   fill = false,
+  bubbles = false,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -89,17 +108,21 @@ export default function PastElectionCountyMap({
    *  takes `height` when there's room and gives up space down to 180px when the selected
    *  county's panel needs it, so opening a panel never makes the column taller. */
   fill?: boolean;
+  /** Draw each county's remaining net votes as a circle over plain land (the Results page). */
+  bubbles?: boolean;
 }) {
   const byFips = useMemo(() => new Map(counties.map((c) => [c.fips, c.result])), [counties]);
+  const maxNet = useMemo(() => (bubbles ? bubbleMaxNet(counties) : 0), [bubbles, counties]);
   // A same-party contest (CA 2016/2018 Senate: two Democrats) is shaded in that party's colour
   // by margin size, so the map never shows a Republican win that did not happen.
   const sameParty = demParty === repParty;
   const fillFor = useCallback((r: CountyMapResult | null): string => {
+    if (bubbles) return BUBBLE_LAND;
     if (!r) return "var(--map-unfilled)";
     if (!sameParty) return getRaceColor(r.margin);
     const size = Math.abs(r.margin);
     return getRaceColor(demParty === "R" ? size : -size);
-  }, [sameParty, demParty]);
+  }, [sameParty, demParty, bubbles]);
 
   const [hovered, setHovered] = useState<Hovered | null>(null);
   const [selected, setSelected] = useState<Hovered | null>(null);
@@ -134,7 +157,7 @@ export default function PastElectionCountyMap({
   }, [measure]);
 
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
-  const mapStroke = "var(--app-bg)";
+  const mapStroke = bubbles ? BUBBLE_LINE : "var(--app-bg)";
   const hoverStroke = "var(--app-text-primary)";
 
   // One description of a county, drawn as the hover popup and as the click panel.
@@ -145,7 +168,7 @@ export default function PastElectionCountyMap({
       kind: "result", title,
       dem: { name: demName, link: isRealName(demName), state: stateAbbr, party: demParty, pct: c.result.demPct, votes: c.result.demVotes },
       rep: { name: repName, link: isRealName(repName), state: stateAbbr, party: repParty, pct: c.result.repPct, votes: c.result.repVotes },
-      margin: c.result.margin, totalVotes: c.result.totalVotes, reporting: c.result.reporting, projectedMargin: c.result.projectedMargin,
+      margin: c.result.margin, totalVotes: c.result.totalVotes, reporting: c.result.reporting, projectedMargin: c.result.projectedMargin, remaining: c.result.remaining,
     };
   };
 
@@ -171,8 +194,8 @@ export default function PastElectionCountyMap({
             onMoveEnd={(_: unknown, e?: { sourceEvent?: unknown }) => { if (e?.sourceEvent) setViewChanged(true); }}
           >
             <Geographies geography={countiesUrl(stateAbbr)}>
-              {({ geographies }: { geographies: CountyGeometry[] }) =>
-                geographies.map((geo) => {
+              {({ geographies, path }: { geographies: CountyGeometry[]; path: { centroid: (g: CountyGeometry) => [number, number] } }) => <>
+                {geographies.map((geo) => {
                   const fips = String(geo.id);
                   const result = byFips.get(fips) ?? null;
                   const county: Hovered = { fips, name: geo.properties?.name ?? "", result };
@@ -192,8 +215,19 @@ export default function PastElectionCountyMap({
                       }}
                     />
                   );
-                })
-              }
+                })}
+                {/* Circles over the land, largest first so small ones stay on top; they let the
+                    pointer through to the county under them. */}
+                {bubbles && geographies
+                  .map((geo) => ({ geo, net: byFips.get(String(geo.id))?.remaining?.net ?? 0 }))
+                  .filter((b) => b.net !== 0)
+                  .sort((a, b) => Math.abs(b.net) - Math.abs(a.net))
+                  .map(({ geo, net }) => {
+                    const [cx, cy] = path.centroid(geo);
+                    if (!Number.isFinite(cx) || !Number.isFinite(cy)) return null;
+                    return <circle key={`b-${geo.rsmKey}`} cx={cx} cy={cy} r={bubbleRadius(net, maxNet, bubbleMaxR(mapViewport.width, mapViewport.height))} fill={bubbleColor(net, demParty, repParty)} fillOpacity={0.72} stroke="var(--app-bg)" strokeWidth={0.75} pointerEvents="none" />;
+                  })}
+              </>}
             </Geographies>
           </ZoomableGroup>
         </ComposableMap>

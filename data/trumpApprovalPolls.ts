@@ -370,5 +370,6 @@ export const trumpApprovalPolls: TrumpApprovalPoll[] = [
   { pollster: "Harvard-Harris", startDate: "2026-10-24", endDate: "2026-10-26", sample: 2700, population: "RV", approve: 39, disapprove: 59, diff: 20 },
   { pollster: "Economist/YouGov", startDate: "2026-10-23", endDate: "2026-10-26", sample: 1272, population: "LV", approve: 40, disapprove: 58, diff: 18 },
   { pollster: "Rasmussen Reports", startDate: "2026-10-20", endDate: "2026-10-26", sample: 1500, population: "LV", approve: 41, disapprove: 58, diff: 17 },
-  { pollster: "Reuters/Ipsos", startDate: "2026-10-22", endDate: "2026-10-26", sample: 1280, population: "RV", approve: 35, disapprove: 64, diff: 29 }
+  { pollster: "Reuters/Ipsos", startDate: "2026-10-22", endDate: "2026-10-26", sample: 1280, population: "RV", approve: 35, disapprove: 64, diff: 29 },
+  { pollster: "Rasmussen Reports", startDate: "2026-10-21", endDate: "2026-10-27", sample: 1500, population: "LV", approve: 41, disapprove: 57, diff: 16 }
 ];

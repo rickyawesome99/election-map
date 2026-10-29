@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 import type { RaceType } from "@/data/forecastData";
 import type { ComparisonRow, AgreementSummary } from "@/lib/forecastComparison";
 import { CHAMBER_LABEL } from "@/lib/forecastTypes";
-import { getRatingColors } from "@/lib/colorScale";
+import { formatProjectedMargin, getRatingColors } from "@/lib/colorScale";
 
 // One grid per chamber: a row per race, a column per forecaster (ours first), every cell the
 // call on the shared nine-step scale. Rows can be narrowed to the competitive seats or to the
@@ -23,7 +23,6 @@ const TOSSUP = { bg: "var(--app-tab-bg)", text: "var(--app-text-primary)" };
 const pct = (p: number) => `${Math.round(p * 100)}%`;
 // The favorite's win chance, from a Democratic probability: "74% R" rather than "26% D".
 const favPct = (pDem: number) => (pDem >= 0.5 ? `${pct(pDem)} D` : `${pct(1 - pDem)} R`);
-const fmtMargin = (m: number) => (Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
 
 // Every cell is the same box whatever it holds: the rating on one line and a fixed second line
 // for the probability, kept in place with a non-breaking space where a rater publishes none, so
@@ -88,7 +87,7 @@ function MobileRaceList({ rows, forecasters }: { rows: ComparisonRow[]; forecast
               <div className="flex items-baseline justify-between gap-2">
                 <span className="truncate text-sm font-semibold">{r.name}{r.contest !== "contested" && <span className="ml-1 text-[9px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>uncontested</span>}</span>
                 <span className="shrink-0 text-xs tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
-                  <span className="font-semibold" style={{ color: r.ours.margin > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>{fmtMargin(r.ours.margin)}</span>
+                  <span className="font-semibold" style={{ color: r.ours.margin > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>{formatProjectedMargin(r.ours.margin)}</span>
                   {" · spread "}{r.spread} <span aria-hidden="true">{isOpen ? "▴" : "▾"}</span>
                 </span>
               </div>
@@ -220,9 +219,9 @@ export default function ForecastComparisonGrid({ data, initial = "senate" }: { d
                     <Link prefetch={false} href={r.href} className="hover:underline">{r.name}</Link>
                     {r.contest !== "contested" && <span className="ml-1 text-[9px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>unc.</span>}
                   </th>
-                  <td className="whitespace-nowrap px-1.5 py-0.5 text-right text-xs font-semibold tabular-nums" style={{ color: r.ours.margin > 0 ? "var(--party-rep)" : "var(--party-dem)" }} title="CT Strategies' projected margin">{fmtMargin(r.ours.margin)}</td>
+                  <td className="whitespace-nowrap px-1.5 py-0.5 text-right text-xs font-semibold tabular-nums" style={{ color: r.ours.margin > 0 ? "var(--party-rep)" : "var(--party-dem)" }} title="CT Strategies' projected margin">{formatProjectedMargin(r.ours.margin)}</td>
                   <td className="px-1 py-0.5">
-                    <HeatCell rating={r.ours.rating} pDem={r.ours.pDem} strong title={`CT Strategies: ${r.ours.rating}, ${fmtMargin(r.ours.margin)}, favorite wins ${favPct(r.ours.pDem)}`} />
+                    <HeatCell rating={r.ours.rating} pDem={r.ours.pDem} strong title={`CT Strategies: ${r.ours.rating}, ${formatProjectedMargin(r.ours.margin)}, favorite wins ${favPct(r.ours.pDem)}`} />
                   </td>
                   {forecasters.map((f, i) => {
                     const c = r.calls[f.id];

@@ -9,7 +9,7 @@ import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
 import { RESULTS_OFFICES, type ArchiveSeries, type LiveRace } from "@/lib/resultsTypes";
 import { raceHash } from "@/lib/resultsFormat";
 
-// The needle's expected seats (and every race's projected and counted margin) at every snapshot of one archive set, for the Results page's seat
+// The needle's projected seats (and every race's projected and counted margin) at every snapshot of one archive set, for the Results page's seat
 // charts while replaying (dev only, like ../route.ts: the archive is never deployed). Each
 // snapshot is projected once per server process and cached.
 
@@ -41,8 +41,8 @@ export async function GET(req: Request) {
           return { prior, live, proj: projectRace(prior, live) };
         });
         for (const r of rows) races[raceHash(r.prior)] = [r1(r.proj.margin), r1(r.proj.sigma), r.proj.currentMargin == null ? null : r1(r.proj.currentMargin)];
-        const e = tallyChamber(rows, SEAT_HOLDOVERS[office]).expectedDem;
-        tallies[office] = { mean: e.mean, lo: e.lo80, hi: e.hi80 };
+        const e = tallyChamber(rows, SEAT_HOLDOVERS[office]).projectedDem;
+        tallies[office] = { mean: e.seats, lo: e.lo80, hi: e.hi80 };
       });
       entry = { t, tallies, races };
       cache.set(key, entry);

@@ -12,7 +12,7 @@ import ResultsRaceTable from "@/components/results/ResultsRaceTable";
 import { loadStaticJson } from "@/lib/useStaticJson";
 import { fetchRaces, normalizeRace, CIVIC_ATTRIBUTION } from "@/lib/resultsFeed";
 import { projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
-import { closeMinutes, fmtClose, fmtMargin, fmtTime, marginSideColor, partyColor, raceHash } from "@/lib/resultsFormat";
+import { closeMinutes, fmtClose, fmtMargin, fmtTime, marginSideColor, partyColor, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
 import { ELECTION_DATE, FEED_OPENS_AT, OFFICE_LABEL, RESULTS_OFFICES, type LiveRace, type PriorsSlice, type RacePrior, type RaceProjection, type ResultsOffice, type SeatSeries, type ArchiveSeries, type RaceHistory } from "@/lib/resultsTypes";
 
@@ -254,8 +254,8 @@ export default function ResultsPage() {
     setLiveSeries((prev) => {
       if (prev.senate.length && prev.senate[prev.senate.length - 1].t >= lastRefresh) return prev;
       const next = Object.fromEntries(RESULTS_OFFICES.map((o) => {
-        const e = tallies[o].expectedDem;
-        return [o, [...prev[o], { t: lastRefresh, mean: e.mean, lo: e.lo80, hi: e.hi80 }].slice(-500)];
+        const e = tallies[o].projectedDem;
+        return [o, [...prev[o], { t: lastRefresh, mean: e.seats, lo: e.lo80, hi: e.hi80 }].slice(-500)];
       })) as SeatSeries;
       try { localStorage.setItem(liveKey, JSON.stringify(next)); } catch { /* storage unavailable: keep it in memory */ }
       return next;
@@ -561,9 +561,9 @@ function RaceCard({ row, selected, onSelect }: { row: ResultsRow; selected: stri
       </div>
       {hasVotes ? (
         <>
-          <div className="mt-1 text-lg font-extrabold leading-none tabular-nums" style={{ color: marginSideColor(proj.currentMargin, prior) }}>{fmtMargin(proj.currentMargin, prior)}</div>
-          <div className="mt-1 text-[10px] tabular-nums" style={veryMuted}>{Math.round(proj.countedShare * 100)}% counted</div>
-          <div className="text-[11px] tabular-nums" style={muted}>Proj. Margin <b style={{ color: marginSideColor(proj.margin, prior) }}>{fmtMargin(proj.margin, prior)}</b></div>
+          <div className="mt-1 text-lg font-extrabold leading-none tabular-nums" style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</div>
+          <div className="mt-1 text-[10px] tabular-nums" style={veryMuted}><span style={{ color: inColor(inState(proj.countedShare * 100)), fontWeight: 600 }}>{fmtIn(proj.countedShare * 100)}</span> counted</div>
+          <div className="text-[11px] tabular-nums" style={muted}>Proj. Margin <b style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)}</b></div>
         </>
       ) : (
         <>

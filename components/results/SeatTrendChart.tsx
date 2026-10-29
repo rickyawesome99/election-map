@@ -7,7 +7,7 @@ import type { SeatPoint } from "@/lib/resultsTypes";
 // The Recharts half of the Results page's trend charts (loaded on its own, like the Overview's
 // PollTrendChart): an 80% band, the projection as a line, a dashed reference line, and a hover
 // popup that behaves like the Overview's polling charts: it follows the pointer, and a finger
-// dragged across the chart scrubs it. Used for a chamber's expected seats (SeatTrend) and a
+// dragged across the chart scrubs it. Used for a chamber's projected seats (SeatTrend) and a
 // race's projected margin (MarginTrend); the caller says how to colour and word a value.
 
 const fmtTime = (t: number) => new Date(t).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
@@ -79,12 +79,15 @@ function ChartTooltip({ active, payload, colorOf, fmtValue, fmtRange, title = "P
   const p = active ? payload?.[0]?.payload : undefined;
   if (!p) return null;
   return (
-    <div className="whitespace-nowrap rounded-md px-2.5 py-2 text-[11px]" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
-      <div className="mb-1 font-semibold" style={{ color: "var(--app-text-primary)" }}>{title} · {fmtTime(p.t)}</div>
-      <div className="tabular-nums">
-        <span className="font-semibold" style={{ color: colorOf(p.mean) }}>{fmtValue(p.mean)}</span>
-        {band && <><span style={{ color: "var(--app-text-very-muted)" }}> · </span>
-        <span style={{ color: "var(--app-text-muted)" }}>80% {fmtRange(p.lo, p.hi)}</span></>}
+    // The map hover boxes' chrome and type: an uppercase tracked label, the figure bold in its color.
+    <div className="whitespace-nowrap rounded-lg px-2.5 py-2 text-[11px]" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.18)" }}>
+      <div className="mb-1 text-[10px] font-semibold uppercase tracking-[0.06em]">
+        <span style={{ color: "var(--app-text-primary)" }}>{title}</span>
+        <span style={{ color: "var(--app-text-muted)" }}> · {fmtTime(p.t)}</span>
+      </div>
+      <div className="flex items-baseline gap-2 tabular-nums">
+        <span className="text-[13px] font-extrabold leading-none" style={{ color: colorOf(p.mean) }}>{fmtValue(p.mean)}</span>
+        {band && <span className="leading-none" style={{ color: "var(--app-text-muted)" }}><span className="text-[10px] font-semibold uppercase tracking-[0.06em]">80%</span> {fmtRange(p.lo, p.hi)}</span>}
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ import PastElectionCountyMap, { type CountyMapEntry } from "@/components/PastEle
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { countyDisplayName } from "@/lib/countyName";
 import { lastName, isRealName } from "@/lib/personName";
-import { fmtInt, fmtMargin, marginSideColor, partyColor } from "@/lib/resultsFormat";
+import { fmtInt, fmtMargin, marginSideColor, partyColor, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import type { Party, RaceHistory } from "@/lib/resultsTypes";
 import { MarginTrend } from "@/components/results/SeatTrend";
 import type { ResultsRow } from "@/components/results/ResultsPage";
@@ -19,6 +19,7 @@ import type { ResultsRow } from "@/components/results/ResultsPage";
 // the county map (counted or projected margins); then the county table across the full width.
 
 type CountyView = "counted" | "projected";
+type MapView = CountyView | "remaining";
 type Prior = ResultsRow["prior"];
 type Cand = { name: string; party: string; slot: Party; votes: number; percent: number; winner: boolean; incumbent: boolean; photo: string | null; linked: boolean };
 
@@ -49,7 +50,7 @@ function headline(prior: Prior, cands: Cand[], hasVotes: boolean, current: numbe
 
 export default function RaceDetail({ row, history }: { row: ResultsRow; history: RaceHistory }) {
   const { prior, live, proj } = row;
-  const [view, setView] = useState<CountyView>("counted");
+  const [view, setView] = useState<MapView>("counted");
   const [trendView, setTrendView] = useState<CountyView>("projected");
   const [sortKey, setSortKey] = useState<"votes" | "name" | "margin" | "in">("votes");
   const hasVotes = !!live && live.total > 0;
@@ -57,15 +58,22 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
 
   const entries: CountyMapEntry[] = useMemo(() => proj.counties.flatMap((c) => {
     const l = liveByFips.get(c.fips);
-    const reporting = `${c.done ? 100 : Math.round(c.f * 100)}% in`;
-    if (view === "counted") {
-      if (!l || l.total <= 0) return [];
-      return [{ fips: c.fips, name: c.name, result: { demVotes: l.dem, repVotes: l.rep, totalVotes: l.total, demPct: (l.dem / l.total) * 100, repPct: (l.rep / l.total) * 100, margin: ((l.rep - l.dem) / l.total) * 100, reporting, projectedMargin: c.projectedMargin } }];
+    const reporting = `${fmtIn(c.f * 100, c.done)} in`;
+    const counted = !!l && l.total > 0;
+    // Remaining: the projected final, less what is counted. The net is the projected final lead
+    // minus the counted one, so counted + remaining always adds up to the projection.
+    const leftVotes = c.done ? 0 : Math.max(0, c.projectedTotal - (counted ? l!.total : 0));
+    const current = counted ? l!.rep - l!.dem : 0;
+    const remaining = { votes: leftVotes, net: leftVotes > 0 ? (c.projectedMargin / 100) * c.projectedTotal - current : 0, current };
+    if (view === "counted" || (view === "remaining" && counted)) {
+      if (!counted) return [];
+      return [{ fips: c.fips, name: c.name, result: { demVotes: l!.dem, repVotes: l!.rep, totalVotes: l!.total, demPct: (l!.dem / l!.total) * 100, repPct: (l!.rep / l!.total) * 100, margin: ((l!.rep - l!.dem) / l!.total) * 100, reporting, projectedMargin: c.projectedMargin, ...(view === "remaining" ? { remaining } : {}) } }];
     }
     const m = c.projectedMargin, other = prior.counties.find((p) => p.fips === c.fips)?.other ?? 0;
     const repPct = (100 - other + m) / 2, demPct = (100 - other - m) / 2;
-    return [{ fips: c.fips, name: c.name, result: { demVotes: Math.round((c.projectedTotal * demPct) / 100), repVotes: Math.round((c.projectedTotal * repPct) / 100), totalVotes: c.projectedTotal, demPct, repPct, margin: m, reporting: "Projected" } }];
+    return [{ fips: c.fips, name: c.name, result: { demVotes: Math.round((c.projectedTotal * demPct) / 100), repVotes: Math.round((c.projectedTotal * repPct) / 100), totalVotes: c.projectedTotal, demPct, repPct, margin: m, ...(view === "remaining" ? { reporting: "0% in", projectedMargin: m, remaining } : { reporting: "Projected" }) } }];
   }), [proj, liveByFips, view, prior.counties]);
+  const maxLeftNet = useMemo(() => Math.max(0, ...entries.map((e) => Math.abs(e.result.remaining?.net ?? 0))), [entries]);
 
   const tplByFips = useMemo(() => new Map(prior.counties.map((c) => [c.fips, c.tpl])), [prior.counties]);
   const benchByFips = useMemo(() => new Map(prior.counties.map((c) => [c.fips, c.benchmark])), [prior.counties]);
@@ -120,7 +128,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
           <p className="mt-1 text-[13px]" style={muted}>
             {prior.seatHolder && <>Seat held by {prior.seatHolder} ({prior.seatParty})</>}
             {prior.seatHolder && live && " · "}
-            {live && <span className="tabular-nums" title="Precincts reporting, as the feed counts them; it runs ahead of the vote">{Math.round(live.percentReporting)}% of precincts reporting</span>}
+            {live && <span className="tabular-nums" title="Precincts reporting, as the feed counts them; it runs ahead of the vote"><b style={{ color: inColor(inState(live.percentReporting)) }}>{inState(live.percentReporting) === "done" && "✓ "}{fmtIn(live.percentReporting)}</b> of precincts reporting</span>}
           </p>
 
           <div className="mt-3">
@@ -128,7 +136,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
           </div>
           <p className="mt-3 text-[12px] tabular-nums" style={muted}>
             {hasVotes
-              ? <><b style={{ color: "var(--app-text-primary)" }}>{fmtInt(proj.counted)}</b> votes counted · <b style={{ color: marginSideColor(proj.currentMargin, prior) }}>{fmtMargin(proj.currentMargin, prior)}</b>{voteLead != null ? ` (${fmtInt(voteLead)}-vote lead)` : ""} · {Math.round(proj.countedShare * 100)}% of ~{fmtInt(proj.projectedTotal)} projected</>
+              ? <><b style={{ color: "var(--app-text-primary)" }}>{fmtInt(proj.counted)}</b> votes counted · <b style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</b>{voteLead != null ? ` (${fmtInt(voteLead)}-vote lead)` : ""} · <b style={{ color: inColor(inState(proj.countedShare * 100)) }}>{fmtIn(proj.countedShare * 100)}</b> of ~{fmtInt(proj.projectedTotal)} projected</>
               : <>No votes counted · ~{fmtInt(proj.projectedTotal)} expected</>}
           </p>
 
@@ -143,16 +151,16 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
             <div className="mt-1 flex flex-wrap items-end gap-x-3 gap-y-1">
               <div>
                 <div className="flex items-baseline gap-2">
-                  <span className="tabular-nums" style={serif("2.25rem", marginSideColor(proj.margin, prior))}>{fmtMargin(proj.margin, prior)}</span>
+                  <span className="tabular-nums" style={serif("2.25rem", callSideColor(proj.margin, prior))}>{fmtCall(proj.margin, prior)}</span>
                   <span className="text-sm tabular-nums" style={muted}>± {proj.sigma.toFixed(1)}</span>
                 </div>
                 <div className="mt-1 text-[12.5px] tabular-nums" style={muted}>
-                  80% range <b style={{ color: marginSideColor(lo80, prior) }}>{fmtMargin(lo80, prior)}</b> to <b style={{ color: marginSideColor(hi80, prior) }}>{fmtMargin(hi80, prior)}</b>
+                  80% range <b style={{ color: callSideColor(lo80, prior) }}>{fmtCall(lo80, prior)}</b> to <b style={{ color: callSideColor(hi80, prior) }}>{fmtCall(hi80, prior)}</b>
                 </div>
               </div>
               <span className="ml-auto text-right text-[13px] tabular-nums" style={muted}>
                 {prior.tpl != null && <><span title="The district's TPL: its partisan lean from past results, before the environment, incumbency, money and candidates">TPL <b style={{ color: marginSideColor(prior.tpl, prior) }}>{fmtMargin(prior.tpl, prior)}</b></span> · </>}
-                forecast {fmtMargin(prior.forecast.margin, prior)} ({prior.forecast.rating})
+                forecast {fmtCall(prior.forecast.margin, prior)} ({prior.forecast.rating})
               </span>
             </div>
             <Needle margin={proj.margin} sigma={proj.sigma} forecast={prior.forecast.margin} current={proj.currentMargin} prior={prior} />
@@ -180,18 +188,18 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
 
         <div className="min-w-0">
           <div className="mb-2 flex items-center gap-3 text-[11px] font-bold uppercase tracking-wider sm:gap-4">
-            {(["counted", "projected"] as CountyView[]).map((v) => (
+            {(["counted", "projected", "remaining"] as MapView[]).map((v) => (
               <button key={v} onClick={() => setView(v)} className="whitespace-nowrap pb-0.5 uppercase transition-colors hover:text-[var(--app-text-primary)]"
                 style={view === v ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)" } : { ...muted, borderBottom: "2px solid transparent" }}>
-                {v === "counted" ? "Counted" : "Projected"}<span className="hidden sm:inline"> by county</span>
+                {v === "counted" ? "Counted" : v === "projected" ? "Projected" : "Remaining"}
               </button>
             ))}
             {noDetail && <span className="font-normal normal-case tracking-normal" style={veryMuted}>loading counties…</span>}
           </div>
           {prior.office === "house" ? (
-            <HouseDistrictCountyMap piecesUrl={`/house-county-pieces/2026/${prior.state}.json`} district={district} districtLabel={prior.label} stateAbbr={prior.state} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={mapCaption(note)} panelSize="compact" />
+            <HouseDistrictCountyMap piecesUrl={`/house-county-pieces/2026/${prior.state}.json`} district={district} districtLabel={prior.label} stateAbbr={prior.state} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={view === "remaining" ? remainingCaption(note, maxLeftNet, prior) : mapCaption(note)} panelSize="compact" bubbles={view === "remaining"} />
           ) : (
-            <PastElectionCountyMap stateAbbr={prior.state} stateName={prior.stateName} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={mapCaption(note)} panelSize="compact" />
+            <PastElectionCountyMap stateAbbr={prior.state} stateName={prior.stateName} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={view === "remaining" ? remainingCaption(note, maxLeftNet, prior) : mapCaption(note)} panelSize="compact" bubbles={view === "remaining"} />
           )}
 
         </div>
@@ -228,7 +236,8 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
                   const bench = benchByFips.get(c.fips) ?? null;
                   const vsBench = bench != null && c.observedMargin != null ? c.observedMargin - bench : null;
                   const tplColor = tpl != null ? marginSideColor(tpl) : "var(--app-text-very-muted)";
-                  const inPct = <>{c.done ? "100%" : counted ? `${Math.round(c.f * 100)}%` : "0%"}{l?.pct != null && !c.done ? <span className="text-[10px]" style={veryMuted}> ({Math.round(l.pct)})</span> : null}</>;
+                  const inSt = inState(counted ? Math.max(c.f * 100, 0.01) : 0, c.done);
+                  const inPct = <><span style={{ color: inColor(inSt), fontWeight: inSt === "none" ? undefined : 600 }}>{inSt === "done" && "✓ "}{fmtIn(counted ? Math.max(c.f * 100, 0.01) : 0, c.done)}</span>{l?.pct != null && !c.done ? <span className="text-[10px]" style={veryMuted}> ({Math.round(l.pct)})</span> : null}</>;
                   const sub = "text-[10.5px] font-normal sm:hidden";
                   return (
                     <tr key={c.fips} style={{ borderBottom: "1px solid var(--app-border)", opacity: counted ? 1 : 0.6 }}>
@@ -237,11 +246,11 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
                         <div className={sub} style={muted}>{inPct} in</div>
                       </td>
                       <td className={`${tdCls} !text-left font-bold sm:text-[14px] sm:[font-family:var(--font-serif)]`} style={{ color: counted ? marginSideColor(l!.rep - l!.dem, prior) : undefined }}>{counted ? fmtVoteMargin(l!.rep - l!.dem, prior) : "—"}</td>
-                      <td className={`${tdCls} font-semibold`} style={{ color: marginSideColor(c.observedMargin, prior) }}>
-                        {fmtMargin(c.observedMargin, prior)}
-                        <div className={sub} style={{ color: marginSideColor(c.projectedMargin, prior) }}>{fmtMargin(c.projectedMargin, prior)}</div>
+                      <td className={`${tdCls} font-semibold`} style={{ color: callSideColor(c.observedMargin, prior) }}>
+                        {fmtCall(c.observedMargin, prior)}
+                        <div className={sub} style={{ color: callSideColor(c.projectedMargin, prior) }}>{fmtCall(c.projectedMargin, prior)}</div>
                       </td>
-                      <td className={`${tdCls} hidden sm:table-cell`} style={{ color: marginSideColor(c.projectedMargin, prior) }}>{fmtMargin(c.projectedMargin, prior)}</td>
+                      <td className={`${tdCls} hidden sm:table-cell`} style={{ color: callSideColor(c.projectedMargin, prior) }}>{fmtCall(c.projectedMargin, prior)}</td>
                       <td className={tdCls} title={bench != null ? `A tied race has this county at ${fmtMargin(bench, prior)}` : undefined}
                         style={{ color: vsBench != null ? marginSideColor(vsBench, prior) : "var(--app-text-very-muted)" }}>
                         {vsBench != null ? fmtMargin(vsBench, prior) : bench != null ? "EVEN" : "—"}
@@ -307,6 +316,20 @@ const mapCaption = (note: string) => (
   </div>
 );
 
+// The Remaining view's key: circle area is the net votes left; the largest circle's figure.
+const remainingCaption = (note: string, maxNet: number, prior: Prior) => (
+  <div className="mt-1 flex items-start justify-between gap-3">
+    <p className="text-[11px]" style={veryMuted}>{note}</p>
+    <span className="mt-0.5 flex shrink-0 items-center gap-2 text-[10.5px] tabular-nums" style={muted}>
+      <span className="flex items-center gap-1" aria-hidden="true">
+        <i className="block h-2 w-2 rounded-full" style={{ background: partyColor(prior.dem.party), opacity: 0.72 }} />
+        <i className="block h-3 w-3 rounded-full" style={{ background: partyColor(prior.rep.party), opacity: 0.72 }} />
+      </span>
+      {maxNet >= 1 ? <>Net votes left · largest {fmtInt(maxNet)}</> : "Nothing left to count"}
+    </span>
+  </div>
+);
+
 /** A horizontal needle: the projected margin with its 80% band over a D–R axis, the forecast and the counted margin as ticks. */
 function Needle({ margin, sigma, forecast, current, prior }: { margin: number; sigma: number; forecast: number; current: number | null; prior: Prior }) {
   const span = Math.max(20, Math.ceil((Math.max(Math.abs(margin) + 1.3 * sigma, Math.abs(forecast), Math.abs(current ?? 0)) + 2) / 5) * 5);
@@ -316,11 +339,11 @@ function Needle({ margin, sigma, forecast, current, prior }: { margin: number; s
     <div className="mt-4">
       <div className="relative h-8">
         <div className="absolute inset-x-0 top-3.5 h-1 rounded-sm" style={{ background: `linear-gradient(90deg, var(--party-dem-fill), var(--app-border) 50%, var(--party-rep-fill))` }} />
-        <div className="absolute top-2.5 h-3 rounded-sm" style={{ left: `${x(lo)}%`, width: `${Math.max(0.5, x(hi) - x(lo))}%`, background: marginSideColor(margin, prior), opacity: 0.3 }} />
+        <div className="absolute top-2.5 h-3 rounded-sm" style={{ left: `${x(lo)}%`, width: `${Math.max(0.5, x(hi) - x(lo))}%`, background: callSideColor(margin, prior), opacity: 0.3 }} />
         <div className="absolute top-0.5 h-7 w-px" style={{ left: `${x(0)}%`, background: "var(--app-text-very-muted)" }} />
-        <div className="absolute top-1 h-6 w-1 rounded-sm" style={{ left: `calc(${x(margin)}% - 2px)`, background: marginSideColor(margin, prior) }} title={`Projected ${fmtMargin(margin, prior)}`} />
-        <div className="absolute top-3 h-2 w-2 rotate-45" style={{ left: `calc(${x(forecast)}% - 4px)`, border: "1.5px solid var(--app-text-muted)", background: "var(--app-bg)" }} title={`Forecast ${fmtMargin(forecast, prior)}`} />
-        {current != null && <div className="absolute top-4 h-0 w-0" style={{ left: `calc(${x(current)}% - 4px)`, borderLeft: "4px solid transparent", borderRight: "4px solid transparent", borderBottom: "6px solid var(--app-text-primary)" }} title={`Counted ${fmtMargin(current, prior)}`} />}
+        <div className="absolute top-1 h-6 w-1 rounded-sm" style={{ left: `calc(${x(margin)}% - 2px)`, background: callSideColor(margin, prior) }} title={`Projected ${fmtCall(margin, prior)}`} />
+        <div className="absolute top-3 h-2 w-2 rotate-45" style={{ left: `calc(${x(forecast)}% - 4px)`, border: "1.5px solid var(--app-text-muted)", background: "var(--app-bg)" }} title={`Forecast ${fmtCall(forecast, prior)}`} />
+        {current != null && <div className="absolute top-4 h-0 w-0" style={{ left: `calc(${x(current)}% - 4px)`, borderLeft: "4px solid transparent", borderRight: "4px solid transparent", borderBottom: "6px solid var(--app-text-primary)" }} title={`Counted ${fmtCall(current, prior)}`} />}
       </div>
       <div className="flex justify-between text-[10.5px] tabular-nums" style={veryMuted}>
         <span>{prior.dem.party}+{span}</span><span>needle ▮ · 80% band · forecast ◇ · counted ▲</span><span>{prior.rep.party}+{span}</span>

@@ -8,7 +8,7 @@ import { DARK_THEME, LIGHT_THEME, type Theme } from "@/components/ForecastMap";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { getRaceColor } from "@/lib/colorScale";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
-import { fmtInt, fmtMargin, marginSideColor, partyColor } from "@/lib/resultsFormat";
+import { fmtInt, fmtMargin, marginSideColor, partyColor, fmtCall, callSideColor } from "@/lib/resultsFormat";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { lastName } from "@/lib/personName";
 import type { ResultsRow } from "@/components/results/ResultsPage";
@@ -137,7 +137,7 @@ function ResultTooltip({ row, boxRef }: { row: ResultsRow; boxRef: (node: HTMLDi
         <div className="mt-px text-[10px]" style={veryMuted}>No votes in</div>
         <div className="mt-2 flex items-baseline justify-between border-t pt-2 text-[12px] tabular-nums" style={{ borderColor: "var(--app-border)" }}>
           <span className={tipLabel} style={muted}>Forecast</span>
-          <span style={{ color: marginSideColor(prior.forecast.margin, prior) }}>{fmtMargin(prior.forecast.margin, prior)} <span style={veryMuted}>· {prior.forecast.rating}</span></span>
+          <span style={{ color: callSideColor(prior.forecast.margin, prior) }}>{fmtCall(prior.forecast.margin, prior)} <span style={veryMuted}>· {prior.forecast.rating}</span></span>
         </div>
       </div>
     );
@@ -180,9 +180,9 @@ function ResultTooltip({ row, boxRef }: { row: ResultsRow; boxRef: (node: HTMLDi
         );
       })}
       <div className="mt-2 flex justify-between gap-2 border-t pt-2" style={{ borderColor: "var(--app-border)" }}>
-        {fig("Margin", <span style={{ color: marginSideColor(proj.currentMargin, prior) }}>{fmtMargin(proj.currentMargin, prior)}</span>)}
-        {fig("Projected", <><span style={{ color: marginSideColor(proj.margin, prior) }}>{fmtMargin(proj.margin, prior)}</span><span className="text-[10px] font-normal" style={veryMuted}> ±{proj.sigma.toFixed(1)}</span></>)}
-        {fig("Forecast", <span style={{ color: marginSideColor(prior.forecast.margin, prior) }}>{fmtMargin(prior.forecast.margin, prior)}</span>)}
+        {fig("Margin", <span style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</span>)}
+        {fig("Projected", <><span style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)}</span><span className="text-[10px] font-normal" style={veryMuted}> ±{proj.sigma.toFixed(1)}</span></>)}
+        {fig("Forecast", <span style={{ color: callSideColor(prior.forecast.margin, prior) }}>{fmtCall(prior.forecast.margin, prior)}</span>)}
       </div>
       <div className="mt-1.5 flex justify-between gap-2 text-[10px] tabular-nums" style={veryMuted}>
         <span>{Math.round(proj.countedShare * 100)}% of expected vote in · feed {Math.round(live.percentReporting)}%</span>
