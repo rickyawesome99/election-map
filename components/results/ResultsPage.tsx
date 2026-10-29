@@ -8,6 +8,7 @@ import { ELECTION_YEAR } from "@/lib/electionYear";
 import ResultsMap, { type MapMode } from "@/components/results/ResultsMap";
 import RaceDetail from "@/components/results/RaceDetail";
 import ChamberCard from "@/components/results/ChamberCard";
+import { flipBackground } from "@/components/FlipStripes";
 import ResultsRaceTable from "@/components/results/ResultsRaceTable";
 import { loadStaticJson } from "@/lib/useStaticJson";
 import { fetchRaces, normalizeRace, CIVIC_ATTRIBUTION } from "@/lib/resultsFeed";
@@ -415,7 +416,7 @@ export default function ResultsPage() {
           <span className="font-bold uppercase tracking-wider text-[10px]">Replay archive</span>
           {archiveSets.length > 1 && (
             <select value={activeSet ?? ""} onChange={(e) => { setArchiveSet(e.target.value); if (replay != null) { setReplay(null); replayRef.current = null; } }} className="rounded px-1 py-0.5 text-xs" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }} aria-label="Archive set">
-              {archiveSets.map((set) => <option key={set} value={set}>{set.startsWith("sim-") ? `simulated · ${set.slice(4)}` : set}</option>)}
+              {archiveSets.map((set) => <option key={set} value={set}>{SET_LABEL[set] ?? (set.startsWith("sim-") ? `simulated · ${set.slice(4)}` : set)}</option>)}
             </select>
           )}
           <span>{archive.length} snapshots · {fmtTime(Date.parse(archive[0].fetchedAt))}–{fmtTime(Date.parse(archive[archive.length - 1].fetchedAt))}{activeSet?.startsWith("sim-") ? " (virtual clock, ET)" : ""}</span>
@@ -540,6 +541,10 @@ function BarLegend() {
   );
 }
 
+/** The replay's simulated nights by name: the civicAPI test results (random against our forecast,
+ *  so a stress test of the needle) and the realistic one (scripts/build-realistic-results-base.ts). */
+const SET_LABEL: Record<string, string> = { "sim-night": "simulated · stress test", "sim-realistic": "simulated · realistic" };
+
 /** How many races a state shows in the poll-closing view: governor and Senate, then the House
  *  races the forecast has closest, up to this many in all. */
 const CARDS_PER_STATE = 6;
@@ -551,24 +556,33 @@ function RaceCard({ row, selected, onSelect }: { row: ResultsRow; selected: stri
   const office = prior.office === "house" ? "House" : prior.office === "senate" ? `Senate${prior.special ? " special" : ""}` : "Governor";
   const name = prior.office === "house" ? prior.label : office;
   const ratingColor = prior.forecast.rating.startsWith("Toss") ? "var(--app-text-primary)" : prior.forecast.rating.endsWith("D") ? "var(--party-dem)" : "var(--party-rep)";
+  // A called race fills its box with the winner's colour (as the race table's winner bar), every
+  // figure in white over it.
+  const won = proj.locked && proj.winner ? proj.winner : null;
+  // A called race the other party held is a flip: "Flip" in place of "Called" and the maps' flip
+  // stripes over the fill, at 3× and fainter so the figures stay readable (as the chamber tally's called flips).
+  const flipped = !!won && !!prior.seatParty && won !== prior.seatParty;
+  const fill = won === "R" ? "var(--party-rep-fill)" : won === "I" ? "var(--party-ind-fill)" : won === "D" ? "var(--party-dem-fill)" : null;
+  const on = (c: string) => (fill ? "#ffffff" : c);
+  const soft = fill ? { color: "rgba(255,255,255,0.82)" } : null;
   return (
-    <button onClick={() => onSelect(row)} className="group block h-full w-full self-start py-1 pl-3 text-left align-top transition-opacity hover:opacity-70"
-      style={{ borderLeft: `${selected === key ? 2 : 1}px solid ${selected === key ? "var(--app-text-primary)" : "var(--app-border)"}` }}>
+    <button onClick={() => onSelect(row)} className={`group block h-full w-full self-start py-1 pl-3 text-left align-top transition-opacity hover:opacity-70${fill ? " rounded-r-md pr-2" : ""}`}
+      style={{ borderLeft: `${selected === key ? 2 : 1}px solid ${selected === key ? "var(--app-text-primary)" : fill ?? "var(--app-border)"}`, background: fill ? (flipped ? flipBackground(fill, 3, "rgba(255,255,255,0.18)") : fill) : undefined, color: fill ? "#ffffff" : undefined }}>
       <div className="flex min-h-full flex-col justify-start">
       <div className="flex items-baseline justify-between gap-2">
         <span className="truncate text-sm font-semibold">{name}</span>
-        {proj.locked && proj.winner && <span className="font-mono text-[9px] font-bold uppercase tracking-wider" style={{ color: partyColor(proj.winner) }}>Called</span>}
+        {won && <span className="font-mono text-[9px] font-bold uppercase tracking-wider" style={{ color: on(partyColor(won)) }} title={flipped ? `Called; flips a seat ${prior.seatParty} held` : undefined}>{flipped ? "Flip" : "Called"}</span>}
       </div>
       {hasVotes ? (
         <>
-          <div className="mt-1 text-lg font-extrabold leading-none tabular-nums" style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</div>
-          <div className="mt-1 text-[10px] tabular-nums" style={veryMuted}><span style={{ color: inColor(inState(proj.countedShare * 100)), fontWeight: 600 }}>{fmtIn(proj.countedShare * 100)}</span> counted</div>
-          <div className="text-[11px] tabular-nums" style={muted}>Proj. Margin <b style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)}</b></div>
+          <div className="mt-1 text-lg font-extrabold leading-none tabular-nums" style={{ color: on(callSideColor(proj.currentMargin, prior)) }}>{fmtCall(proj.currentMargin, prior)}</div>
+          <div className="mt-1 text-[10px] tabular-nums" style={soft ?? veryMuted}><span style={{ color: on(inColor(inState(proj.countedShare * 100))), fontWeight: 600 }}>{fmtIn(proj.countedShare * 100)}</span> counted</div>
+          <div className="text-[11px] tabular-nums" style={soft ?? muted}>Proj. Margin <b style={{ color: on(callSideColor(proj.margin, prior)) }}>{fmtCall(proj.margin, prior)}</b></div>
         </>
       ) : (
         <>
-          <div className="mt-1 text-lg font-extrabold leading-none" style={{ color: ratingColor }}>{prior.forecast.rating}</div>
-          <div className="mt-1 text-[10px]" style={veryMuted}>No votes counted yet</div>
+          <div className="mt-1 text-lg font-extrabold leading-none" style={{ color: on(ratingColor) }}>{prior.forecast.rating}</div>
+          <div className="mt-1 text-[10px]" style={soft ?? veryMuted}>No votes counted yet</div>
         </>
       )}
       </div>

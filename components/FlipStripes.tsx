@@ -21,8 +21,9 @@ export function FlipPatternDefs({ colors }: { colors: string[] }) {
   );
 }
 
-/** The same stripes as a CSS background, for HTML swatches and boxes (no pattern needed). */
-export const flipBackground = (color: string) => `repeating-linear-gradient(45deg, ${STRIPE} 0 1.5px, transparent 1.5px 4px), ${color}`;
+/** The same stripes as a CSS background, for HTML swatches and boxes (no pattern needed). `scale`
+ *  widens stripe and gap together and `stripe` sets their colour, for a box with text over it. */
+export const flipBackground = (color: string, scale = 1, stripe = STRIPE) => `repeating-linear-gradient(45deg, ${stripe} 0 ${1.5 * scale}px, transparent ${1.5 * scale}px ${4 * scale}px), ${color}`;
 
 /** Legend swatch (plain CSS, so it needs no pattern in the document). */
 export function FlipSwatch({ size = 12, color = "#6e7781" }: { size?: number; color?: string }) {

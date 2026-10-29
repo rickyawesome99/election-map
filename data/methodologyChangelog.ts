@@ -27,6 +27,11 @@ export interface MethodologyChange {
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
   {
     date: "2026-10-29", models: ["turnout"], kind: "change",
+    title: "Results needle: party blocs in jungle and ranked-choice races",
+    detail: "The feed parser tracked one candidate per side, matched by surname, then party. Where a ballot carries several candidates of a party, that picked the wrong one and sent the rest to \"other\": in the replay, Louisiana's LA-03 compared two minor candidates (D+0.6 with the Republican over 56%), Alaska's Senate followed a 3,564-vote Sullivan instead of the 117k-vote Republican, the governor race followed Wilson instead of Bronson, and AK-01's D side was the independent Hill without the Democrat. In Louisiana's jungle round and Alaska's and Maine's ranked-choice races (first choices) each side is now a party bloc: the forecast's named candidate plus every Democrat, against every Republican, which is what the forecast and the county priors measure (for ranked-choice, a stand-in for the final round). The race detail names each county's own top two on the counted map, gives the counted lead between the top two candidates beside the bloc margin, and labels Louisiana's needle \"Projected party margin\". Other races are unchanged.",
+  },
+  {
+    date: "2026-10-29", models: ["turnout"], kind: "change",
     title: "Results page: projected seats are the sum of projected winners",
     detail: "Each chamber card's projected Democratic seats (and its trend line over the night) was the sum of every race's win probability plus seats not up. It is now the count of called seats plus each uncalled race's projected winner (the needle's projected margin decides). The 80% range still comes from the races' win probabilities (normal approximation) and is widened when needed so it contains the count. public/results-sim was re-published.",
   },

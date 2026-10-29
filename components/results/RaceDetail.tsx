@@ -5,7 +5,8 @@ import Image from "next/image";
 import { useMemo, useState } from "react";
 import CandidateLink from "@/components/CandidateLink";
 import HouseDistrictCountyMap from "@/components/HouseDistrictCountyMap";
-import PastElectionCountyMap, { type CountyMapEntry } from "@/components/PastElectionCountyMap";
+import PastElectionCountyMap, { type CountyMapEntry, type CountySide } from "@/components/PastElectionCountyMap";
+import { partyOf } from "@/lib/resultsFeed";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { countyDisplayName } from "@/lib/countyName";
 import { lastName, isRealName } from "@/lib/personName";
@@ -55,6 +56,8 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
   const [sortKey, setSortKey] = useState<"votes" | "name" | "margin" | "in">("votes");
   const hasVotes = !!live && live.total > 0;
   const liveByFips = useMemo(() => new Map((live?.counties ?? []).filter((c) => c.fips).map((c) => [c.fips!, c])), [live]);
+  // A jungle or ranked-choice race's D and R sides are party blocs (lib/resultsFeed.ts tallyRegion): named as such on the map.
+  const blocSides = useMemo(() => (prior.jungle || prior.rcv ? { sides: { dem: { name: "Democrats", party: prior.dem.party }, rep: { name: "Republicans", party: prior.rep.party } } } : {}), [prior]);
 
   const entries: CountyMapEntry[] = useMemo(() => proj.counties.flatMap((c) => {
     const l = liveByFips.get(c.fips);
@@ -67,12 +70,19 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
     const remaining = { votes: leftVotes, net: leftVotes > 0 ? (c.projectedMargin / 100) * c.projectedTotal - current : 0, current };
     if (view === "counted" || (view === "remaining" && counted)) {
       if (!counted) return [];
-      return [{ fips: c.fips, name: c.name, result: { demVotes: l!.dem, repVotes: l!.rep, totalVotes: l!.total, demPct: (l!.dem / l!.total) * 100, repPct: (l!.rep / l!.total) * 100, margin: ((l!.rep - l!.dem) / l!.total) * 100, reporting, projectedMargin: c.projectedMargin, ...(view === "remaining" ? { remaining } : {}) } }];
+      // A jungle or ranked-choice race's counted map is each county's own top two (first choices);
+      // its projected and remaining views are the party blocs the needle projects.
+      const pair = view === "counted" && l!.top?.length === 2 ? junglePair(l!.top) : null;
+      if (pair) {
+        const { dem: d, rep: r } = pair;
+        return [{ fips: c.fips, name: c.name, result: { demVotes: d.votes, repVotes: r.votes, totalVotes: l!.total, demPct: (d.votes / l!.total) * 100, repPct: (r.votes / l!.total) * 100, margin: ((r.votes - d.votes) / l!.total) * 100, reporting, projectedMargin: c.projectedMargin, sides: { dem: d, rep: r } } }];
+      }
+      return [{ fips: c.fips, name: c.name, result: { demVotes: l!.dem, repVotes: l!.rep, totalVotes: l!.total, demPct: (l!.dem / l!.total) * 100, repPct: (l!.rep / l!.total) * 100, margin: ((l!.rep - l!.dem) / l!.total) * 100, reporting, projectedMargin: c.projectedMargin, ...(view === "remaining" ? { remaining } : {}), ...blocSides } }];
     }
     const m = c.projectedMargin, other = prior.counties.find((p) => p.fips === c.fips)?.other ?? 0;
     const repPct = (100 - other + m) / 2, demPct = (100 - other - m) / 2;
-    return [{ fips: c.fips, name: c.name, result: { demVotes: Math.round((c.projectedTotal * demPct) / 100), repVotes: Math.round((c.projectedTotal * repPct) / 100), totalVotes: c.projectedTotal, demPct, repPct, margin: m, ...(view === "remaining" ? { reporting: "0% in", projectedMargin: m, remaining } : { reporting: "Projected" }) } }];
-  }), [proj, liveByFips, view, prior.counties]);
+    return [{ fips: c.fips, name: c.name, result: { demVotes: Math.round((c.projectedTotal * demPct) / 100), repVotes: Math.round((c.projectedTotal * repPct) / 100), totalVotes: c.projectedTotal, demPct, repPct, margin: m, ...(view === "remaining" ? { reporting: "0% in", projectedMargin: m, remaining } : { reporting: "Projected" }), ...blocSides } }];
+  }), [proj, liveByFips, view, prior.counties, blocSides]);
   const maxLeftNet = useMemo(() => Math.max(0, ...entries.map((e) => Math.abs(e.result.remaining?.net ?? 0))), [entries]);
 
   const tplByFips = useMemo(() => new Map(prior.counties.map((c) => [c.fips, c.tpl])), [prior.counties]);
@@ -106,12 +116,17 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
   const reporting = proj.counties.filter((c) => c.counted > 0).length, done = proj.counties.filter((c) => c.done).length;
   const lo80 = proj.margin - 1.2816 * proj.sigma, hi80 = proj.margin + 1.2816 * proj.sigma;
   const voteLead = hasVotes ? Math.abs(live!.rep - live!.dem) : null;
+  // A jungle or ranked-choice race's counted lead is between its top two candidates (first
+  // choices), whatever their parties.
+  const topLead = (prior.jungle || prior.rcv) && hasVotes && live!.candidates.length >= 2
+    ? { leader: live!.candidates[0].name, second: live!.candidates[1].name, party: partyOf(live!.candidates[0].party) ?? "I", votes: live!.candidates[0].votes - live!.candidates[1].votes }
+    : null;
 
   const eyebrow = [prior.label.replace(/ \(special\)$/, ""), OFFICE[prior.office], prior.special ? "Special election" : null, prior.jungle ? "Jungle round" : null, "November 3, 2026"].filter(Boolean).join(" · ");
   const note = [
     prior.forecast.contest !== "contested" ? "Not a contested two-party race: the projection is the forecast's." : proj.tier === "topline" ? "County detail not loaded for this race yet; projected from the race total." : proj.tier === "none" ? "No votes in." : `${reporting} of ${proj.counties.length} counties reporting, ${done} done.`,
-    prior.rcv ? "Ranked-choice: first choices shown; the needle projects the final round." : null,
-    prior.jungle ? "Louisiana jungle round: a runoff follows if nobody clears 50%." : null,
+    prior.rcv ? "Ranked-choice: first choices shown; the needle projects the final round as every Democrat (with the forecast's named opponent) against every Republican." : null,
+    prior.jungle ? "Louisiana jungle round: a runoff follows if nobody clears 50%. Counted map: each parish's top two; the projection is every Democrat (with the forecast's named opponent) against every Republican." : null,
   ].filter(Boolean).join(" ");
 
   return (
@@ -136,14 +151,16 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
           </div>
           <p className="mt-3 text-[12px] tabular-nums" style={muted}>
             {hasVotes
-              ? <><b style={{ color: "var(--app-text-primary)" }}>{fmtInt(proj.counted)}</b> votes counted · <b style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</b>{voteLead != null ? ` (${fmtInt(voteLead)}-vote lead)` : ""} · <b style={{ color: inColor(inState(proj.countedShare * 100)) }}>{fmtIn(proj.countedShare * 100)}</b> of ~{fmtInt(proj.projectedTotal)} projected</>
+              ? <><b style={{ color: "var(--app-text-primary)" }}>{fmtInt(proj.counted)}</b> votes counted · {topLead
+                ? <><b style={{ color: partyColor(topLead.party) }}>{lastName(topLead.leader)}</b> leads {lastName(topLead.second)} by {fmtInt(topLead.votes)} · parties <b style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</b></>
+                : <><b style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</b>{voteLead != null ? ` (${fmtInt(voteLead)}-vote lead)` : ""}</>} · <b style={{ color: inColor(inState(proj.countedShare * 100)) }}>{fmtIn(proj.countedShare * 100)}</b> of ~{fmtInt(proj.projectedTotal)} projected</>
               : <>No votes counted · ~{fmtInt(proj.projectedTotal)} expected</>}
           </p>
 
           {/* The needle */}
           <div className="mt-2" style={{ borderTop: "2px solid var(--app-text-primary)", paddingTop: "0.75rem" }}>
             <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <div className="text-[10.5px] font-bold uppercase tracking-wider" style={muted}>Projected final margin</div>
+              <div className="text-[10.5px] font-bold uppercase tracking-wider" style={muted}>{prior.jungle ? "Projected party margin" : "Projected final margin"}</div>
               <div className="text-[11.5px] font-semibold tabular-nums" style={{ color: proj.locked || hasVotes ? partyColor(pSide.party) : "var(--app-text-muted)" }}>
                 {proj.locked ? `Called for ${proj.winner} by the feed` : hasVotes ? `${Math.round(pWin * 100)}% ${pSide.party} ${lastName(pSide.name)}` : "nothing counted: the forecast"}
               </div>
@@ -276,6 +293,15 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
       )}
     </section>
   );
+}
+
+/** A county's top two in the map's D and R slots: a lone Republican on the R side, else the
+ *  leader there; a party the feed doesn't name is an independent. */
+function junglePair(top: { name: string; party: Party | null; votes: number }[]): { dem: CountySide & { votes: number }; rep: CountySide & { votes: number } } {
+  const [a, b] = top.map((c) => ({ name: c.name, party: c.party ?? "I", votes: c.votes }));
+  const rOnly = (a.party === "R") !== (b.party === "R");
+  const rep = rOnly ? (a.party === "R" ? a : b) : a;
+  return { rep, dem: rep === a ? b : a };
 }
 
 /** A raw vote lead, R-positive, as "D+20,000" / "R+1,569" with the race's party letters. */

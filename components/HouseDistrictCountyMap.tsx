@@ -6,11 +6,10 @@ import { geoMercator, geoPath } from "d3-geo";
 import { feature, mesh } from "topojson-client";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import type { Feature, Geometry, MultiLineString } from "geojson";
-import { getRaceColor } from "@/lib/colorScale";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { usePanZoom } from "@/lib/usePanZoom";
-import { BUBBLE_LAND, BUBBLE_LINE, bubbleColor, bubbleMaxNet, bubbleMaxR, bubbleRadius, type CountyMapEntry, type CountyMapResult } from "@/components/PastElectionCountyMap";
+import { BUBBLE_LAND, BUBBLE_LINE, bubbleColor, bubbleMaxNet, bubbleMaxR, bubbleRadius, countyResultFill, countySides, type CountyMapEntry, type CountyMapResult } from "@/components/PastElectionCountyMap";
 import { isRealName } from "@/lib/personName";
 import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
 import { countyDisplayName } from "@/lib/countyName";
@@ -70,13 +69,10 @@ export default function HouseDistrictCountyMap({
   const { data: topo, failed } = useStaticJson<PiecesTopology>(piecesUrl);
   const byFips = useMemo(() => new Map(counties.map((c) => [c.fips, c.result])), [counties]);
   const maxNet = useMemo(() => (bubbles ? bubbleMaxNet(counties) : 0), [bubbles, counties]);
-  const sameParty = demParty === repParty;
   const fillFor = (r: CountyMapResult | null): string => {
     if (bubbles) return BUBBLE_LAND;
     if (!r) return "var(--map-unfilled)";
-    if (!sameParty) return getRaceColor(r.margin);
-    const size = Math.abs(r.margin);
-    return getRaceColor(demParty === "R" ? size : -size);
+    return countyResultFill(r, demParty, repParty);
   };
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -138,10 +134,11 @@ export default function HouseDistrictCountyMap({
     if (!h.inDistrict) return { kind: "message", title, message: `Part of this county is in ${stateAbbr}-${String(h.otherDistrict).padStart(2, "0")}, not ${districtLabel}.` };
     if (!h.result) return { kind: "message", title, message: "No result on file for this county's share of the district." };
     const r = h.result;
+    const sd = countySides(r, { name: demName, party: demParty }, { name: repName, party: repParty });
     return {
       kind: "result", title,
-      dem: { name: demName, link: isRealName(demName), state: stateAbbr, party: demParty, pct: r.demPct, votes: r.demVotes },
-      rep: { name: repName, link: isRealName(repName), state: stateAbbr, party: repParty, pct: r.repPct, votes: r.repVotes },
+      dem: { name: sd.dem.name, link: isRealName(sd.dem.name), state: stateAbbr, party: sd.dem.party, pct: r.demPct, votes: r.demVotes },
+      rep: { name: sd.rep.name, link: isRealName(sd.rep.name), state: stateAbbr, party: sd.rep.party, pct: r.repPct, votes: r.repVotes },
       margin: r.margin, totalVotes: r.totalVotes, reporting: r.reporting, projectedMargin: r.projectedMargin, remaining: r.remaining,
     };
   };

@@ -12,7 +12,7 @@ export const CIVIC_ATTRIBUTION = { label: "civicAPI", href: "https://civicapi.or
 /** Parallel requests in flight; the feed is cached at the edge, so this is politeness, not need. */
 const CONCURRENCY = 6;
 
-type RawCandidate = { name?: string; party?: string; votes?: number | string; percent?: number | string; winner?: boolean; incumbent?: boolean; major_candidate?: boolean };
+export type RawCandidate = { name?: string; party?: string; votes?: number | string; percent?: number | string; winner?: boolean; incumbent?: boolean; major_candidate?: boolean };
 type RawRegion = { name?: string; type?: string; fips?: string; percent_reporting?: number | null; candidates?: RawCandidate[] };
 type RawRace = {
   percent_reporting?: number | null; test_data?: boolean; last_updated?: string | null; called_at?: string | null;
@@ -80,17 +80,31 @@ export function matchSlots(prior: RacePrior, cands: RawCandidate[]): { dem: RawC
   return { dem, rep };
 }
 
+/** Several candidates per party on one ballot: a Louisiana jungle round, or Alaska's and Maine's
+ *  ranked-choice first choices (whose same-party votes mostly transfer by the final round). */
+const isMultiField = (prior: RacePrior) => prior.jungle || prior.rcv;
+
+/** A multi-field race's region also carries its two leading candidates (LiveCounty.top). */
+function topTwo(cands: RawCandidate[] | undefined) {
+  return (cands ?? []).map((c) => ({ name: c.name ?? "", party: partyOf(c.party), votes: num(c.votes) })).sort((a, b) => b.votes - a.votes).slice(0, 2);
+}
+
+/** The D and R sides of a region. In a multi-field race each side is a party bloc: the named slot
+ *  candidate (the forecast's opponent can be an independent, AK-01's Hill) plus every Democrat or
+ *  every Republican, as the forecast and the county priors measure it. Elsewhere a side is the one
+ *  matched candidate. */
 function tallyRegion(prior: RacePrior, cands: RawCandidate[] | undefined, demName: string | null, repName: string | null) {
+  const multi = isMultiField(prior);
   let dem = 0, rep = 0, total = 0;
   for (const c of cands ?? []) {
-    const v = num(c.votes);
+    const v = num(c.votes), p = partyOf(c.party);
     total += v;
     if (demName && c.name === demName) dem += v;
     else if (repName && c.name === repName) rep += v;
-    else if (!demName && partyOf(c.party) === prior.dem.party) dem += v;
-    else if (!repName && partyOf(c.party) === prior.rep.party) rep += v;
+    else if (multi ? p === "D" : !demName && p === prior.dem.party) dem += v;
+    else if (multi ? p === "R" : !repName && p === prior.rep.party) rep += v;
   }
-  return { dem, rep, oth: Math.max(0, total - dem - rep), total };
+  return { dem, rep, oth: Math.max(0, total - dem - rep), total, ...(multi ? { top: topTwo(cands) } : {}) };
 }
 
 /** The feed's payload → LiveRace. `counties` stays null for a topline (light) payload. */

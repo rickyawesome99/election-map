@@ -30,7 +30,26 @@ export type CountyMapResult = {
   projectedMargin?: number;
   /** The Results page's vote still to count: projected votes left and the net votes they carry (R-positive). */
   remaining?: { votes: number; net: number; current: number };
+  /** This county's own pair in place of the map's demName/repName (a jungle round's top two):
+   *  `margin` is rep less dem, and the county takes its leader's colour. */
+  sides?: { dem: CountySide; rep: CountySide };
 };
+export type CountySide = { name: string; party: "D" | "R" | "I" };
+
+/** A county's fill: by margin on the D–R scale, or for a same-party contest (CA 2016/2018 Senate:
+ *  two Democrats) or a county with its own pair, in the leader's colour by margin size, so the
+ *  map never shows a win for a party that did not have it. */
+export function countyResultFill(r: CountyMapResult, demParty: "D" | "R" | "I", repParty: "D" | "R" | "I"): string {
+  const d = r.sides?.dem.party ?? demParty, p = r.sides?.rep.party ?? repParty;
+  if (!r.sides && d !== p) return getRaceColor(r.margin);
+  const size = Math.abs(r.margin);
+  return getRaceColor((r.margin > 0 ? p : d) === "R" ? size : -size);
+}
+
+/** The county card's two sides: the county's own pair where it has one, else the map's. */
+export function countySides(r: CountyMapResult, dem: CountySide, rep: CountySide): { dem: CountySide; rep: CountySide } {
+  return r.sides ?? { dem, rep };
+}
 
 export type CountyMapEntry = { fips: string; name: string; result: CountyMapResult };
 
@@ -113,16 +132,11 @@ export default function PastElectionCountyMap({
 }) {
   const byFips = useMemo(() => new Map(counties.map((c) => [c.fips, c.result])), [counties]);
   const maxNet = useMemo(() => (bubbles ? bubbleMaxNet(counties) : 0), [bubbles, counties]);
-  // A same-party contest (CA 2016/2018 Senate: two Democrats) is shaded in that party's colour
-  // by margin size, so the map never shows a Republican win that did not happen.
-  const sameParty = demParty === repParty;
   const fillFor = useCallback((r: CountyMapResult | null): string => {
     if (bubbles) return BUBBLE_LAND;
     if (!r) return "var(--map-unfilled)";
-    if (!sameParty) return getRaceColor(r.margin);
-    const size = Math.abs(r.margin);
-    return getRaceColor(demParty === "R" ? size : -size);
-  }, [sameParty, demParty, bubbles]);
+    return countyResultFill(r, demParty, repParty);
+  }, [demParty, repParty, bubbles]);
 
   const [hovered, setHovered] = useState<Hovered | null>(null);
   const [selected, setSelected] = useState<Hovered | null>(null);
@@ -164,10 +178,11 @@ export default function PastElectionCountyMap({
   const card = (c: Hovered): CountyTooltipProps => {
     const title = countyDisplayName(c.fips, c.name);
     if (!c.result) return { kind: "message", title, message: "No county result on file." };
+    const sd = countySides(c.result, { name: demName, party: demParty }, { name: repName, party: repParty });
     return {
       kind: "result", title,
-      dem: { name: demName, link: isRealName(demName), state: stateAbbr, party: demParty, pct: c.result.demPct, votes: c.result.demVotes },
-      rep: { name: repName, link: isRealName(repName), state: stateAbbr, party: repParty, pct: c.result.repPct, votes: c.result.repVotes },
+      dem: { name: sd.dem.name, link: isRealName(sd.dem.name), state: stateAbbr, party: sd.dem.party, pct: c.result.demPct, votes: c.result.demVotes },
+      rep: { name: sd.rep.name, link: isRealName(sd.rep.name), state: stateAbbr, party: sd.rep.party, pct: c.result.repPct, votes: c.result.repVotes },
       margin: c.result.margin, totalVotes: c.result.totalVotes, reporting: c.result.reporting, projectedMargin: c.result.projectedMargin, remaining: c.result.remaining,
     };
   };

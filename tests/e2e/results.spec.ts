@@ -151,8 +151,8 @@ test("without the dev archive the preview replays the published simulated night"
   await page.goto("/results");
   await page.getByRole("button", { name: "Preview a simulated night" }).click({ timeout: 60_000 });
   await expect(page.getByText("SIMULATED NIGHT")).toBeVisible();
-  await page.getByRole("slider", { name: "Snapshot" }).fill("48");
-  await expect(page.getByText(/49 \/ 49/)).toBeVisible();
+  await page.getByRole("slider", { name: "Snapshot" }).fill("64");
+  await expect(page.getByText(/65 \/ 65/)).toBeVisible();
   const senate = page.locator("section", { hasText: "Balance of power" }).locator("h3", { hasText: "Senate" }).locator("..").locator("..");
   await expect(senate).toContainText(/[1-9]\d*\/35 reporting/, { timeout: 30_000 });
   expect(calls).toBe(0);

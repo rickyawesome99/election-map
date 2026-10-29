@@ -91,6 +91,10 @@ export type LiveCounty = {
   rep: number;
   oth: number;
   total: number;
+  /** Jungle rounds only: the county's two leading candidates, most votes first. dem/rep are then
+   *  party blocs (lib/resultsFeed.ts tallyRegion), which the needle reads; these are what the
+   *  county map shows. */
+  top?: { name: string; party: Party | null; votes: number }[];
 };
 
 export type LiveRace = {

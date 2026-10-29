@@ -8,9 +8,16 @@
 // does; a race is called once it is nearly done with a clear margin. Output goes to
 // data-entry/results-archive/sim-<name>/ as snapshots the archive route lists under that set.
 //
-//   node scripts/simulate-results-night.mjs                 # sim-night, every 10 virtual minutes 7 PM–3 AM ET
-//   node scripts/simulate-results-night.mjs slow 5          # sim-slow, every 5 minutes
+// The night runs 7 PM to 11 AM ET: every `step` minutes to 3 AM, then every 15 (the slow
+// late count, where the needle has to hold while the last big counties and mail come in). Every
+// county finishes by 10:30 AM, so the final snapshots show the whole count at the real totals.
+//
+//   node scripts/simulate-results-night.mjs                 # sim-night, every 10 virtual minutes to 3 AM, 15 after, to 11 AM ET
+//   node scripts/simulate-results-night.mjs slow 5          # sim-slow, every 5 minutes to 3 AM
 //   node scripts/simulate-results-night.mjs night 10 --seed 7
+//   node scripts/simulate-results-night.mjs realistic 15 --base data-entry/results-archive/realistic-base.json.gz
+//                                                           # sim-realistic: our forecast plus a believable miss
+//                                                           # (scripts/build-realistic-results-base.ts), every 15 minutes
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync, rmSync } from "node:fs";
 import { join } from "node:path";
 import { gunzipSync, gzipSync } from "node:zlib";
@@ -41,12 +48,18 @@ function latestSnapshot() {
 
 const ids = parseCsv(readFileSync(join(root, "data-entry", "civicapi_race_ids.csv"), "utf8"));
 const closeByState = new Map(parseCsv(readFileSync(join(root, "data-entry", "poll_closing_2026.csv"), "utf8")).map((r) => [r.state, r]));
-const base = latestSnapshot();
+// --base: replay a finished snapshot other than the archiver's latest (the realistic finals).
+const baseArg = process.argv.indexOf("--base");
+const base = baseArg > 0 ? JSON.parse(gunzipSync(readFileSync(join(root, process.argv[baseArg + 1]))).toString()) : latestSnapshot();
 
 // Virtual clock: minutes after 7 PM ET on Nov 3, 2026 (00:00 UTC Nov 4).
 const T0 = Date.parse("2026-11-04T00:00:00.000Z");
 const closeMin = (hhmm) => { const [h, m] = hhmm.split(":").map(Number); return ((h < 12 ? h + 24 : h) - 19) * 60 + m; };
-const END_MIN = 8 * 60;
+const LATE_MIN = 8 * 60; // 3 AM: snapshots thin out after this
+const END_MIN = 16 * 60; // 11 AM
+const LATE_STEP = Math.max(15, stepMin);
+const DONE_BY = END_MIN - 30; // every county is fully counted by 10:30 AM
+let clamped = 0;
 
 // Per-race, per-county reporting plan.
 const plans = new Map();
@@ -77,7 +90,10 @@ for (const row of ids) {
     const size = finalTotal ? total / finalTotal : 0;
     // Start 5–60 minutes after the (latest) close; bigger counties ramp longer; a few drag on.
     const start = last + 5 + rand() * 55;
-    const length = 40 + rand() * 120 + Math.sqrt(size) * 400 + (rand() < 0.08 ? 180 : 0);
+    const drawn = 40 + rand() * 120 + Math.sqrt(size) * 400 + (rand() < 0.08 ? 180 : 0);
+    // The slowest tails (a whole-district county in a late-closing state) are squeezed to finish by DONE_BY.
+    const length = Math.min(drawn, DONE_BY - start);
+    if (length < drawn) clamped++;
     const batches = 3 + Math.floor(rand() * 8);
     const earlySkew = (rand() - 0.2) * 12; // points of margin by which the first votes lean more D
     return { key, start, length, batches, earlySkew, total, sums: (!sumType || (r.type ?? "County") === sumType) && (!fipsOnly || !!r.fips) };
@@ -114,17 +130,21 @@ const outDir = join(ARCHIVE, `sim-${name}`);
 if (existsSync(outDir)) rmSync(outDir, { recursive: true });
 mkdirSync(outDir, { recursive: true });
 let n = 0;
-for (let t = 0; t <= END_MIN; t += stepMin) {
+const times = [];
+for (let t = 0; t <= LATE_MIN; t += stepMin) times.push(t);
+for (let t = LATE_MIN + LATE_STEP; t <= END_MIN; t += LATE_STEP) times.push(t);
+for (const t of times) {
   const at = new Date(T0 + t * 60_000);
   const races = {};
   for (const [cid, p] of plans) {
     const r = p.race;
     const regionOut = {};
-    let sumFrac = 0;
+    let sumFrac = 0, allDone = !p.noRegions;
     const partCands = new Map();
     if (!p.noRegions) {
       for (const c of p.counties) {
         const frac = stepped(t, c.start, c.length, c.batches);
+        if (frac < 1) allDone = false;
         const reg = r.region_results[c.key];
         const cands = candidatesAt(reg.candidates ?? [], frac, c.earlySkew);
         regionOut[c.key] = { ...reg, candidates: cands, percent_reporting: Math.round(Math.min(100, frac * 100 + (frac > 0 && frac < 1 ? 15 : 0)) * 10) / 10 };
@@ -133,9 +153,12 @@ for (let t = 0; t <= END_MIN; t += stepMin) {
         for (const cd of cands) partCands.set(cd.name, (partCands.get(cd.name) ?? 0) + cd.votes);
       }
     }
-    const raceFrac = p.noRegions ? stepped(t, p.raceStart, p.raceLength, 6) : p.finalTotal ? sumFrac / p.finalTotal : 0;
+    // Once every county is in, the race shows the feed's own final totals: where a state lists two
+    // levels (New England counties and towns) the summed level can fall a little short of them.
+    const raceFrac = allDone ? 1 : p.noRegions ? stepped(t, p.raceStart, p.raceLength, 6) : p.finalTotal ? sumFrac / p.finalTotal : 0;
     const candidates = p.noRegions
       ? candidatesAt(r.candidates ?? [], raceFrac, 4)
+      : allDone ? (r.candidates ?? []).map((c) => ({ ...c, votes: Number(c.votes) || 0, winner: false }))
       : (r.candidates ?? []).map((c) => ({ ...c, votes: partCands.get(c.name) ?? 0, winner: false }));
     const total = candidates.reduce((a, c) => a + c.votes, 0);
     for (const c of candidates) c.percent = total ? Math.round((c.votes / total) * 10000) / 100 : 0;
@@ -150,4 +173,4 @@ for (let t = 0; t <= END_MIN; t += stepMin) {
   writeFileSync(join(outDir, `${stamp}.json.gz`), gzipSync(JSON.stringify({ fetchedAt: at.toISOString(), simulated: true, races })));
   n++;
 }
-console.log(`wrote ${n} snapshots → ${outDir} (${plans.size} races; open /results and use Replay archive)`);
+console.log(`wrote ${n} snapshots → ${outDir} (${plans.size} races, ${clamped} county ramps squeezed to finish by 10:30 AM; open /results and use Replay archive)`);
