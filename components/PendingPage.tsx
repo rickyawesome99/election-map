@@ -141,8 +141,6 @@ function OverviewSkeleton() {
         <div className="mt-6 pt-3" style={{ borderTop: "1px solid var(--app-border)" }}><Legend /></div>
         <SectionHead className="mt-8" right={<Sk className="h-2.5 w-24" />} />
         <Sk className="mt-4 h-[230px] w-full rounded-[3px] sm:h-[245px]" />
-        <SectionHead className="mt-10" />
-        <div className="grid gap-x-8 sm:grid-cols-2">{Array.from({ length: 6 }, (_, i) => <RaceCard key={i} names={false} />)}</div>
       </Body>
     </>
   );

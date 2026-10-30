@@ -198,17 +198,22 @@ function LatestPollsTable({ gb, ap, theme: t }: { gb: ModeConfig; ap: ModeConfig
   const rows = showAll ? allRows : allRows.slice(0, LATEST_ROWS);
   // Rows left out of both averages (a pollster's older surveys) take the tab gray. The header matches
   // the unshaded rows, which show the page background — set solid so scrolled rows don't show through it.
-  const excludedRowBg = t.tabBg;
+  const excludedRowBg = `color-mix(in srgb, ${t.tabBg} 50%, ${t.bg})`; // half-strength tab gray: present but quiet
   const headerBg = t.bg;
-  const th = "px-2.5 py-1.5 font-semibold uppercase tracking-wider";
+  // Flat, like the site's other tables: a headed rule, hairline rows, no box.
+  const cell = "px-2.5 py-2";
+  const th = "px-2.5 pb-1.5 pt-2.5 font-bold uppercase tracking-wider";
   return (
-    <div className="mt-8">
-      <div className="mb-2 text-[11px] font-bold uppercase tracking-wider" style={{ color: t.textPrimary }}>Latest Polls</div>
+    <div className="mt-10">
+      <div className="flex items-baseline justify-between gap-4 border-b-2 pb-2" style={{ borderColor: t.textPrimary }}>
+        <div className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: t.textPrimary }}>Latest Polls</div>
+        <div className="text-[11px]" style={{ color: t.textMuted }}>{allRows.length.toLocaleString()} surveys</div>
+      </div>
       {/* Fixed column widths + a reserved scrollbar gutter: expanding to every poll must not move the columns. */}
-      <div ref={boxRef} className="overflow-x-auto rounded-lg" style={{ border: `1px solid ${t.border}`, scrollbarGutter: "stable", ...(showAll && collapsedHeight ? { height: collapsedHeight, overflowY: "auto" } : {}) }}>
-        <table className="w-full table-fixed border-collapse text-[11px]">
+      <div ref={boxRef} className="overflow-x-auto" style={{ scrollbarGutter: "stable", ...(showAll && collapsedHeight ? { height: collapsedHeight, overflowY: "auto" } : {}) }}>
+        <table className="w-full table-fixed border-collapse text-xs">
           <thead className="sticky top-0 z-10" style={{ background: headerBg }}>
-            <tr style={{ color: t.textMuted, fontSize: 9 }}>
+            <tr style={{ color: t.textMuted, fontSize: 10, boxShadow: `inset 0 -1px 0 ${t.border}` }}>
               <th className={`${th} w-[22%] text-left sm:w-[12%]`}>Dates</th>
               <th className={`${th} text-left`}>Pollster</th>
               <th className={`${th} hidden w-[13%] text-right sm:table-cell`}>Sample</th>
@@ -218,18 +223,18 @@ function LatestPollsTable({ gb, ap, theme: t }: { gb: ModeConfig; ap: ModeConfig
           </thead>
           <tbody>
             {rows.map((r) => (
-              <tr key={`${r.pollster}-${r.startDate}-${r.endDate}`} style={{ borderTop: `1px solid ${t.border}`, background: r.included ? "transparent" : excludedRowBg }}>
-                <td className="whitespace-nowrap px-2.5 py-1.5" style={{ color: t.textMuted }}>{fmtDate(r.startDate)}–{fmtDate(r.endDate)}</td>
-                <td className="px-2.5 py-1.5" style={{ color: t.textPrimary }}>{r.pollster}</td>
-                <td className="hidden whitespace-nowrap px-2.5 py-1.5 text-right sm:table-cell" style={{ color: t.textMuted }}>
+              <tr key={`${r.pollster}-${r.startDate}-${r.endDate}`} style={{ borderBottom: `1px solid ${t.border}`, background: r.included ? "transparent" : excludedRowBg }}>
+                <td className={`${cell} whitespace-nowrap tabular-nums`} style={{ color: t.textMuted }}>{fmtDate(r.startDate)}–{fmtDate(r.endDate)}</td>
+                <td className={`${cell} font-semibold`} style={{ color: t.textPrimary }}>{r.pollster}</td>
+                <td className={`${cell} hidden whitespace-nowrap text-right tabular-nums sm:table-cell`} style={{ color: t.textMuted }}>
                   {r.sample ? `${r.sample.toLocaleString()}${r.population ? ` ${r.population}` : ""}` : r.population ?? "—"}
                 </td>
-                <td className="whitespace-nowrap px-2.5 py-1.5 text-right font-semibold tabular-nums">
+                <td className={`${cell} whitespace-nowrap text-right font-semibold tabular-nums`}>
                   {r.ballot
                     ? <><span className="mr-2 hidden font-normal md:inline" style={{ color: t.textMuted }}>{r.ballot.a}–{r.ballot.b}</span><span style={{ color: marginColor(r.ballot.diff, gb.colorA, gb.colorB, t) }}>{gb.fmtDiff(r.ballot.diff)}</span></>
                     : <span style={{ color: t.textVeryMuted }}>—</span>}
                 </td>
-                <td className="whitespace-nowrap px-2.5 py-1.5 text-right font-semibold tabular-nums">
+                <td className={`${cell} whitespace-nowrap text-right font-semibold tabular-nums`}>
                   {r.approval
                     ? <><span className="mr-2 hidden font-normal md:inline" style={{ color: t.textMuted }}>{r.approval.a}–{r.approval.b}</span><span style={{ color: marginColor(r.approval.diff, ap.colorA, ap.colorB, t) }}>{fmtNet(r.approval.diff)}</span></>
                     : <span style={{ color: t.textVeryMuted }}>—</span>}
@@ -242,12 +247,12 @@ function LatestPollsTable({ gb, ap, theme: t }: { gb: ModeConfig; ap: ModeConfig
       {allRows.length > LATEST_ROWS && <button
         type="button"
         onClick={toggleShowAll}
-        className="mt-2 w-full py-2 text-[11px] font-semibold transition-opacity hover:opacity-65"
-        style={{ color: t.textMuted, borderBottom: `1px solid ${t.border}` }}
+        className="mt-3 rounded-md px-3 py-1.5 text-xs font-semibold transition-opacity hover:opacity-75"
+        style={{ background: t.tabBg, color: t.textPrimary }}
       >
         {showAll ? `Show ${LATEST_ROWS} most recent polls` : `Show all ${allRows.length} polls`}
       </button>}
-      <div className="mt-1.5 flex items-center gap-1.5 px-0.5">
+      <div className="mt-3 flex items-center gap-1.5">
         <span className="inline-block h-2.5 w-2.5 rounded-sm" style={{ background: excludedRowBg, border: `1px solid ${t.border}` }} />
         <span className="text-[10px]" style={{ color: t.textVeryMuted }}>Shaded rows are older surveys left out of the averages above, which use each pollster&apos;s most recent survey. A dash means that survey didn&apos;t ask the question.</span>
       </div>

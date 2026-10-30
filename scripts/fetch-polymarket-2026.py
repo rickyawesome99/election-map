@@ -3,7 +3,9 @@
 
 Reads the open events under Polymarket's `midterms` tag (gamma API, no key) and rewrites the
 poly_dem / poly_rep columns of data-entry/{senate,governor,house}_seats.csv. Every other column is
-left untouched. Then run `node data-entry/build.js` and bump POLYMARKET_2026_READ in lib/marketBoard.ts.
+left untouched. Also writes the House and Senate control markets ("Which party will win the House in
+2026?") to data/polymarketControl.json, read by the Overview's Other Forecasts panel; governors have
+no control market (only a seat-count bucket market whose 24-25 bucket straddles the majority). Then run `node data-entry/build.js` and bump POLYMARKET_2026_READ in lib/marketBoard.ts.
 
 Conventions (same as the historical scrape, scripts/fetch-prediction-markets.py):
   - price = the market's displayed Yes price (gamma `outcomePrices[0]`, Polymarket's midpoint);
@@ -19,11 +21,14 @@ Usage: python3 scripts/fetch-polymarket-2026.py [--dry-run]
 """
 
 import csv, json, re, sys, unicodedata, urllib.request
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data-entry"
 API = "https://gamma-api.polymarket.com/events?tag_slug=midterms&closed=false&limit=100&offset={}"
+CONTROL_API = "https://gamma-api.polymarket.com/events?slug={}"
+CONTROL_EVENTS = {"house": "which-party-will-win-the-house-in-2026", "senate": "which-party-will-win-the-senate-in-2026"}
 
 STATES = {
     "alabama": "AL", "alaska": "AK", "arizona": "AZ", "arkansas": "AR", "california": "CA", "colorado": "CO",
@@ -164,8 +169,23 @@ def update(path, key_of, events, margins, label, dry):
             w.writerows(rows)
 
 
+def control(dry):
+    # P(Democrats win the chamber) = D price / (D + R), the same two-way normalisation as the races.
+    out = {"read": date.today().isoformat()}
+    for chamber, slug in CONTROL_EVENTS.items():
+        req = urllib.request.Request(CONTROL_API.format(slug), headers={"User-Agent": "election-map/1.0"})
+        markets = json.load(urllib.request.urlopen(req, timeout=60))[0]["markets"]
+        price = {m.get("groupItemTitle"): float(json.loads(m["outcomePrices"])[0]) for m in markets if m.get("outcomePrices")}
+        dem, rep = price["Democratic Party"], price["Republican Party"]
+        out[chamber] = round(dem / (dem + rep), 3)
+        print(f"{chamber.title()} control: D {out[chamber]:.3f}")
+    if not dry:
+        (ROOT / "data" / "polymarketControl.json").write_text(json.dumps(out, indent=2) + "\n")
+
+
 def main():
     dry = "--dry-run" in sys.argv
+    control(dry)
     senate, governor, house, margins = index_events(fetch_events())
     # Two Senate rows share a state only for specials (FL, OH), and Polymarket lists one event per state.
     update(DATA / "senate_seats.csv", lambda r: r["state_abbr"], senate, margins, "Senate", dry)

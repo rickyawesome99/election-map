@@ -236,7 +236,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
               the vote margin, model over TPL, counted over projected total, % in under the name);
               sm+ spreads them across nine. */}
           <div className="overflow-x-auto">
-            <table className="w-full text-[11.5px] tabular-nums min-[360px]:text-[12px] sm:text-[13px]" style={{ borderCollapse: "collapse" }}>
+            <table className="w-full text-[11px] tabular-nums min-[360px]:text-[12px] sm:text-[13px]" style={{ borderCollapse: "collapse" }}>
               <thead>
                 <tr className="text-left align-bottom text-[10.5px] uppercase tracking-wider" style={muted}>
                   {([

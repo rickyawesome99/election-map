@@ -7,7 +7,7 @@ import { forecastRace } from "@/lib/forecast";
 import type { MarketBoardOffice, MarketBoardRace } from "@/lib/marketBoardDisplay";
 
 /** When the polyDem column was last re-read from Polymarket (scripts/fetch-polymarket-2026.py). Bump with the data. */
-export const POLYMARKET_2026_READ = "2026-10-19";
+export const POLYMARKET_2026_READ = "2026-10-30";
 
 function hrefOf(race: RaceForecast): string {
   switch (race.raceType) {

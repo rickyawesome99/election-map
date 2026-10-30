@@ -28,7 +28,6 @@ export type OverviewData = {
   sims: Record<RaceType, ChamberSimulation>;
   /** State name → state TPL (R-positive). */
   stateMargins: Record<string, number>;
-  keyRaces: { type: RaceType; id: string; name: string; state: string; margin: number }[];
   /** Five well-known outside forecasts + Polymarket's summed favourites (app/overview/page.tsx). */
   otherForecasts: {
     rows: { id: string; name: string; short: string; kind: "model" | "ratings" | "market"; href: string; cells: Record<RaceType, ForecastCell | null> }[];
@@ -52,22 +51,34 @@ export const MAJORITY: Record<RaceType, { dem: number; rep: number }> = { house:
 const CHAMBER_COLUMNS: [RaceType, string][] = [["house", "House"], ["senate", "Senate"], ["governor", "Governors"]];
 const KIND_LABEL = { model: "Model", ratings: "Ratings", market: "Market" } as const;
 
-// One quiet cell: the D–R seats with the control odds (or toss-ups) under them.
-function ForecastCellView({ cell, theme: t }: { cell: ForecastCell | null; theme: Theme }) {
-  if (!cell) return <div className="py-2 text-center text-sm" style={{ color: t.textVeryMuted }}>—</div>;
-  const note = cell.pDem != null
-    ? `${Math.round(Math.max(cell.pDem, 1 - cell.pDem) * 100)}% ${cell.pDem >= 0.5 ? "D" : "R"} control`
-    : cell.tossups ? `${cell.tossups} toss-up${cell.tossups === 1 ? "" : "s"}` : "\u00a0";
+// One cell: the D–R seats as a stacked bar (the comparison page's SeatBar look) with a tick at the
+// majority line, and the control odds (or toss-ups) under it in the favourite's colour.
+function ForecastCellView({ cell, type, theme: t }: { cell: ForecastCell | null; type: RaceType; theme: Theme }) {
+  if (!cell) return <div className="text-center text-sm" style={{ color: t.textVeryMuted }}>—</div>;
+  const total = cell.dem + cell.rep + (cell.tossups ?? 0);
+  const w = (n: number) => `${(n / total) * 100}%`;
+  const dem = cell.pDem != null && cell.pDem >= 0.5;
   return (
-    <div className="py-1.5 text-center">
-      <div className="whitespace-nowrap text-base font-extrabold leading-tight tabular-nums sm:text-lg"><span style={{ color: t.demText }}>{cell.dem}</span><span style={{ color: t.textMuted }}>–</span><span style={{ color: t.repText }}>{cell.rep}</span></div>
-      <div className="whitespace-nowrap text-[10px] leading-tight tabular-nums sm:text-[11px]" style={{ color: t.textMuted }}>{note}</div>
+    <div>
+      <div className="relative h-6 w-full overflow-hidden rounded-sm" aria-label={`${cell.dem} D – ${cell.rep} R${cell.tossups ? `, ${cell.tossups} toss-up` : ""}`}>
+        <div className="absolute inset-y-0 left-0" style={{ width: w(cell.dem), background: "var(--party-dem)" }} />
+        {!!cell.tossups && <div className="absolute inset-y-0" style={{ left: w(cell.dem), width: w(cell.tossups), background: "var(--rating-tossup)" }} />}
+        <div className="absolute inset-y-0 right-0" style={{ width: w(cell.rep), background: "var(--party-rep)" }} />
+        <div className="absolute -inset-y-px w-0.5" style={{ left: w(MAJORITY[type].dem - 0.5), background: t.bg }} />
+        <span className="absolute inset-y-0 left-1.5 flex items-center text-[11px] font-bold tabular-nums text-white sm:text-xs">{cell.dem}</span>
+        <span className="absolute inset-y-0 right-1.5 flex items-center text-[11px] font-bold tabular-nums text-white sm:text-xs">{cell.rep}</span>
+      </div>
+      <div className="mt-1.5 whitespace-nowrap text-[10px] leading-tight tabular-nums sm:text-[11px]" style={{ color: t.textMuted }}>
+        {cell.pDem != null
+          ? <><span className="font-bold" style={{ color: dem ? t.demText : t.repText }}>{Math.round((dem ? cell.pDem : 1 - cell.pDem) * 100)}% {dem ? "D" : "R"}</span> control</>
+          : cell.tossups ? `${cell.tossups} toss-up${cell.tossups === 1 ? "" : "s"}` : "\u00a0"}
+      </div>
     </div>
   );
 }
 
 function OtherForecasts({ data, theme: t }: { data: OverviewData["otherForecasts"]; theme: Theme }) {
-  const grid = "grid grid-cols-[5.25rem_repeat(3,minmax(0,1fr))] items-center gap-x-3 sm:grid-cols-[7rem_repeat(3,minmax(0,1fr))] sm:gap-x-6";
+  const grid = "grid grid-cols-[5rem_repeat(3,minmax(0,1fr))] items-center gap-x-3 sm:grid-cols-[8rem_repeat(3,minmax(0,1fr))] sm:gap-x-8";
   const link = "text-xs font-semibold underline decoration-dotted decoration-1 underline-offset-[3px] hover:decoration-solid sm:text-sm";
   return (
     <section>
@@ -76,28 +87,28 @@ function OtherForecasts({ data, theme: t }: { data: OverviewData["otherForecasts
         <div className="text-[11px]" style={{ color: t.textMuted }}>Projected seats, D–R · <Link prefetch={false} href="/analysis/forecasts" className="underline decoration-dotted underline-offset-2 hover:decoration-solid">compare all 16</Link></div>
       </div>
       {/* One column per chamber, one row per source. */}
-      <div className={`${grid} pb-1.5 pt-3`}>
+      <div className={`${grid} pb-2 pt-4`}>
         <span />
         {CHAMBER_COLUMNS.map(([type, label]) => (
-          <div key={type} className="text-center leading-tight">
-            <div className="text-[11px] font-bold uppercase tracking-wider">{label}</div>
-            <div className="mt-0.5 text-[10px] tabular-nums" style={{ color: t.textVeryMuted }}>{MAJORITY[type].dem} to win</div>
+          <div key={type} className="flex flex-wrap items-baseline justify-between gap-x-2 leading-tight">
+            <span className="text-[11px] font-bold uppercase tracking-wider">{label}</span>
+            <span className="hidden text-[10px] tabular-nums sm:inline" style={{ color: t.textVeryMuted }}>{MAJORITY[type].dem} to win</span>
           </div>
         ))}
       </div>
       {data.rows.map((row) => (
-        <div key={row.id} className={`${grid} border-t py-1.5`} style={{ borderColor: t.border }}>
+        <div key={row.id} className={`${grid} border-t py-3.5`} style={{ borderColor: t.border }}>
           <div className="leading-tight">
             {row.kind === "market"
               ? <Link prefetch={false} href={row.href} className={link} style={{ textDecorationColor: t.textVeryMuted }}>{row.short}</Link>
               : <a href={row.href} target="_blank" rel="noopener noreferrer" className={link} style={{ textDecorationColor: t.textVeryMuted }}>{row.short}</a>}
-            <div className="mt-0.5 text-[9px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>{KIND_LABEL[row.kind]}</div>
+            <div className="mt-1 text-[9px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>{KIND_LABEL[row.kind]}</div>
           </div>
-          {CHAMBER_COLUMNS.map(([type]) => <ForecastCellView key={type} cell={row.cells[type]} theme={t} />)}
+          {CHAMBER_COLUMNS.map(([type]) => <ForecastCellView key={type} cell={row.cells[type]} type={type} theme={t} />)}
         </div>
       ))}
-      <p className="border-t pt-2 text-[10px] leading-relaxed" style={{ borderColor: t.border, color: t.textVeryMuted }}>
-        Polymarket = the betting favourite in every race, summed. DDHQ and VoteHub = each model&rsquo;s own published totals. Models read {shortDate(data.forecastsRead)}, markets {shortDate(data.marketRead)}.
+      <p className="border-t pt-2.5 text-[10px] leading-relaxed" style={{ borderColor: t.border, color: t.textVeryMuted }}>
+        Seats: Polymarket = the betting favourite in every race, summed; DDHQ and VoteHub = each model&rsquo;s own published totals. Polymarket&rsquo;s control odds are its House and Senate control markets; it has none for governors. The tick marks the majority line. Models read {shortDate(data.forecastsRead)}, markets {shortDate(data.marketRead)}.
       </p>
     </section>
   );
@@ -131,7 +142,7 @@ function SectionHead({ children, theme }: { children: React.ReactNode; theme: Th
 export default function OverviewEditorial({ data }: { data: OverviewData }) {
   const darkMode = useDarkMode();
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
-  const { electionYear, genericBallot: gb, approval, otherForecasts, seats, totalSeats, sims, stateMargins, keyRaces, updated, trend, pollingCard } = data;
+  const { electionYear, genericBallot: gb, approval, otherForecasts, seats, totalSeats, sims, stateMargins, updated, trend, pollingCard } = data;
   const house = seats.house;
   const senate = seats.senate;
   const governor = seats.governor;
@@ -168,7 +179,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
       </section>
 
       <main className={`${PAGE_CONTAINER} pb-6 pt-2 sm:pb-8 sm:pt-0`}>
-        {/* Map, Other Forecasts, then Key Races in two columns: the content column is too narrow to share. */}
+        {/* Results link, map, then Other Forecasts. */}
         <div className="grid gap-8">
           {/* Election night: the live results page, boxed at the top (user, 2026-10-25). */}
           <Link prefetch={false} href="/results" className="group flex flex-wrap items-center justify-between gap-3 rounded-md px-4 py-3 transition-colors hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)]" style={{ border: `2px solid ${t.textPrimary}` }}>
@@ -197,14 +208,6 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
           </section>
 
           <OtherForecasts data={otherForecasts} theme={t} />
-          <section>
-            <SectionHead theme={t}>Key Races</SectionHead>
-            <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8">{keyRaces.map((race) => {
-              const type = race.type;
-              const href = `/${type}/${(type === "house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`;
-              return <Link prefetch={false} key={`${type}-${race.id}`} href={href} className="grid grid-cols-[1fr_auto] gap-3 py-4 transition-opacity hover:opacity-70" style={{ borderBottom: `1px solid ${t.border}` }}><div><div className="font-semibold">{type === "house" ? race.name : race.state}</div><div className="mt-1 text-[10px] uppercase tracking-wider" style={{ color: t.textMuted }}>{type === "house" ? "U.S. House" : type === "senate" ? "U.S. Senate" : "Governor"}</div></div><div className="text-right"><div className="text-lg font-extrabold tabular-nums" style={{ color: race.margin <= 0 ? t.demText : t.repText }}>{formatProjectedMargin(race.margin)}</div><div className="text-[10px]" style={{ color: t.textMuted }}>{marginToRating(race.margin)}</div></div></Link>;
-            })}</div>
-          </section>
         </div>
 
         <section className="mt-10">

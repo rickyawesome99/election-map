@@ -27,9 +27,6 @@ function lastCommitDate(): string {
   }
 }
 
-// The Overview's Key Races, hand-picked (user, 2026-10-18); shown closest projected margin first.
-const KEY_SENATE_IDS = ["TX-2", "OH-2", "ME-2", "IA", "AK", "MI-2"];
-
 const seatRange = (c: { meanDem: number; lo80: number; hi80: number }) => ({ mean: c.meanDem, lo80: c.lo80, hi80: c.hi80 });
 
 // Everything the editorial needs is computed here, on the server, and handed over as a few KB
@@ -39,16 +36,6 @@ export default function OverviewPage() {
   const now = new Date();
   const gb = computeGenericBallotAverage(now);
   const approval = computeTrumpApprovalAverage(now);
-  const withType = [
-    ...forecastsFor("senate").map((race) => ({ race, type: "senate" as const })),
-    ...forecastsFor("governor").map((race) => ({ race, type: "governor" as const })),
-    ...forecastsFor("house").map((race) => ({ race, type: "house" as const })),
-  ];
-  const keyRaces = withType
-    .filter(({ race, type }) => type === "senate" && KEY_SENATE_IDS.includes(race.id))
-    .sort((a, b) => Math.abs(a.race.margin) - Math.abs(b.race.margin))
-    .map(({ race, type }) => ({ type, id: race.id, name: race.name, state: race.state, margin: race.margin }));
-
   const data: OverviewData = {
     electionYear,
     genericBallot: { diff: gb.diff, dem: gb.dem, rep: gb.rep },
@@ -61,7 +48,6 @@ export default function OverviewPage() {
     totalSeats: TOTAL_SEATS_BY_TYPE,
     sims: getChamberSimulations(),
     stateMargins: Object.fromEntries(statesData.map((state) => [state.name, calculateStateTpl(state.abbr, state.name)])),
-    keyRaces,
     otherForecasts: otherForecasts(),
     updated: lastCommitDate(),
     asOf: now.getTime(),

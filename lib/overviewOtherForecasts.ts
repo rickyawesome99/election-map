@@ -7,6 +7,7 @@ import { externalForecasts, EXTERNAL_FORECASTS_READ } from "@/data/externalForec
 import { comparisonFor } from "@/lib/forecastComparison";
 import { POLYMARKET_2026_READ } from "@/lib/marketBoard";
 import { SEAT_HOLDOVERS } from "@/lib/forecast";
+import polymarketControl from "@/data/polymarketControl.json";
 
 // The Other Forecasts panel: Polymarket, DDHQ and VoteHub (user, 2026-10-22), the two models read through the
 // /analysis/forecasts comparison so a refresh of that page's snapshot updates these rows too.
@@ -26,14 +27,15 @@ export function otherForecasts(): OverviewData["otherForecasts"] {
     };
   });
   // Polymarket: every race's favourite (the polyDem price the race pages show), summed with the
-  // seats not up this year; a race priced dead even counts as neither.
-  const market = (data: { polyDem?: number | null }[], type: RaceType) => {
+  // seats not up this year; a race priced dead even counts as neither. The control odds are its own
+  // House and Senate control markets (scripts/fetch-polymarket-2026.py); none exists for governors.
+  const market = (data: { polyDem?: number | null }[], type: RaceType, pDem: number | null = null) => {
     const priced = data.filter((r) => r.polyDem != null) as { polyDem: number }[];
     const even = priced.filter((r) => r.polyDem === 0.5).length;
-    return { dem: SEAT_HOLDOVERS[type].dem + priced.filter((r) => r.polyDem > 0.5).length, rep: SEAT_HOLDOVERS[type].rep + priced.filter((r) => r.polyDem < 0.5).length, tossups: even || null, pDem: null };
+    return { dem: SEAT_HOLDOVERS[type].dem + priced.filter((r) => r.polyDem > 0.5).length, rep: SEAT_HOLDOVERS[type].rep + priced.filter((r) => r.polyDem < 0.5).length, tossups: even || null, pDem };
   };
   rows.unshift({ id: "polymarket", name: "Polymarket", short: "Polymarket", kind: "market", href: "/analysis/markets",
-    cells: { house: market(houseData, "house"), senate: market(senateData, "senate"), governor: market(governorData, "governor") } });
+    cells: { house: market(houseData, "house", polymarketControl.house), senate: market(senateData, "senate", polymarketControl.senate), governor: market(governorData, "governor") } });
   return { rows, forecastsRead: EXTERNAL_FORECASTS_READ, marketRead: POLYMARKET_2026_READ };
 }
 
