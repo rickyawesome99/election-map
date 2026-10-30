@@ -1,5 +1,10 @@
 import { expect, test, type Page } from "@playwright/test";
 
+// These tests reach the real Census geocoder through /api/districts (a server-side fetch the
+// browser can't stub). It throttles and times out requests from GitHub's runners, so CI skips
+// them (playwright.config.ts grepInvert) and they run locally, where they check the live service.
+const LIVE = { tag: "@live-census" };
+
 // /district-finder: the address search must survive either geocoder failing. A street address is
 // answered by the Census (through /api/districts) with Nominatim as its fallback, a place name the
 // other way round; the suggestion list is fed by a stubbed Photon response.
@@ -18,7 +23,7 @@ async function search(page: Page, address: string) {
   await page.getByPlaceholder("Enter any US address").press("Enter");
 }
 
-test("a street address is answered by the Census geocoder with Nominatim down", async ({ page }) => {
+test("a street address is answered by the Census geocoder with Nominatim down", LIVE, async ({ page }) => {
   await page.route("https://nominatim.openstreetmap.org/**", (route) => route.abort());
   await page.route("https://photon.komoot.io/**", (route) => route.fulfill({ json: { features: [] } }));
   await search(page, ADDRESS);
@@ -26,7 +31,7 @@ test("a street address is answered by the Census geocoder with Nominatim down", 
   await expect(page.getByText("US House · NY-12")).toBeVisible();
 });
 
-test("a street address falls back to Nominatim when the Census lookup fails", async ({ page }) => {
+test("a street address falls back to Nominatim when the Census lookup fails", LIVE, async ({ page }) => {
   let nominatimCalls = 0;
   await page.route("**/api/districts?address=*", (route) => route.fulfill({ status: 502, json: { error: "Census geocoder error" } }));
   await page.route("https://nominatim.openstreetmap.org/search**", (route) => {
@@ -39,7 +44,7 @@ test("a street address falls back to Nominatim when the Census lookup fails", as
   expect(nominatimCalls).toBe(1);
 });
 
-test("a place name falls back to the Census geocoder when Nominatim finds nothing", async ({ page }) => {
+test("a place name falls back to the Census geocoder when Nominatim finds nothing", LIVE, async ({ page }) => {
   await page.route("https://nominatim.openstreetmap.org/**", (route) => route.fulfill({ json: [] }));
   await page.route("https://photon.komoot.io/**", (route) => route.fulfill({ json: { features: [] } }));
   await search(page, "Empire State Building, 350 Fifth Ave, New York, NY");
@@ -69,7 +74,7 @@ test("suggestions come from Photon, US results only, and never from Nominatim", 
 
 // Linn, Osage County: MO-03 on the 2022 lines Missouri votes on, but MO-05 in the Census's current
 // layer, which drew the 2025 redraw the courts threw out.
-test("Missouri is looked up on the 2022 lines, not the blocked 2025 redraw", async ({ request }) => {
+test("Missouri is looked up on the 2022 lines, not the blocked 2025 redraw", LIVE, async ({ request }) => {
   const res = await request.get("/api/districts?lat=38.46&lng=-91.86");
   expect(res.ok()).toBe(true);
   expect((await res.json()).lookup.usHouse.label).toBe("US House · MO-03");
@@ -82,7 +87,7 @@ for (const [address, was, label, href] of [
   ["425 N El Dorado St, Stockton, CA", "CA-09", "US House · CA-13", "/house/ca-13"],
   ["100 N Andrews Ave, Fort Lauderdale, FL", "FL-23", "US House · FL-20", "/house/fl-20"],
 ]) {
-  test(`${address} (${was} until 2026) resolves to its 2026 district`, async ({ request }) => {
+  test(`${address} (${was} until 2026) resolves to its 2026 district`, LIVE, async ({ request }) => {
     const res = await request.get(`/api/districts?${new URLSearchParams({ address })}`);
     expect(res.ok()).toBe(true);
     const { usHouse } = (await res.json()).lookup;
@@ -91,7 +96,7 @@ for (const [address, was, label, href] of [
   });
 }
 
-test("a redrawn-state search links to the race page for the 2026 district", async ({ page }) => {
+test("a redrawn-state search links to the race page for the 2026 district", LIVE, async ({ page }) => {
   await page.route("https://photon.komoot.io/**", (route) => route.fulfill({ json: { features: [] } }));
   await search(page, "301 W 2nd St, Austin, TX");
   const row = page.getByRole("link", { name: /US House · TX-10/ });

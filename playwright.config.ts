@@ -8,6 +8,8 @@ export default defineConfig({
   },
   fullyParallel: true,
   retries: process.env.CI ? 2 : 0,
+  // Tests that depend on the live Census geocoder run locally only (see district-finder.spec.ts).
+  grepInvert: process.env.CI ? /@live-census/ : undefined,
   reporter: process.env.CI ? [["github"], ["html", { open: "never" }]] : "list",
   use: {
     baseURL: "http://127.0.0.1:3000",
