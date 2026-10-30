@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { fmtMargin } from "@/lib/colorScale";
+import { fmtMargin, fmtLean } from "@/lib/colorScale";
 
 // Pieces for the public /methodology page: the plain-language version of Internal Methodology
 // (/analysis/internal-methodology). Same flat house style as the rest of the site — headings over
@@ -19,7 +19,7 @@ const partyMuted = (v: number) => (v > 0 ? "var(--party-rep-muted)" : "var(--par
 /** A margin in words-friendly form, colored by the party it favors: D+5.3 / R+2.0 / EVEN. */
 export function Margin({ v }: { v: number | null | undefined }) {
   if (v == null || !Number.isFinite(v)) return <span style={VERY_MUTED}>—</span>;
-  return <span className="font-bold tabular-nums whitespace-nowrap" style={{ color: Math.abs(v) < 0.05 ? "var(--app-text-primary)" : partyColor(v) }}>{fmtMargin(v)}</span>;
+  return <span className="font-bold tabular-nums whitespace-nowrap" style={{ color: Math.abs(v) < 0.05 ? "var(--app-text-primary)" : partyColor(v) }}>{fmtLean(v)}</span>;
 }
 
 /** An emphasized live number inside running text. */
@@ -153,7 +153,7 @@ export function BuildUp({ steps }: { steps: BuildStep[] }) {
               <div className={`text-[13px] leading-tight ${r.total ? "font-extrabold" : "font-semibold"}`}>{r.label}</div>
               {r.note && <div className="mt-0.5 text-[11px] leading-snug" style={VERY_MUTED}>{r.note}</div>}
             </div>
-            <div className="relative h-5" title={`${r.label}: ${r.total ? fmtMargin(r.to) : `${delta >= 0 ? "+" : "−"}${Math.abs(delta).toFixed(1)} toward ${delta >= 0 ? "Republicans" : "Democrats"}`}`}>
+            <div className="relative h-5" title={`${r.label}: ${r.total ? fmtLean(r.to) : `${delta >= 0 ? "+" : "−"}${Math.abs(delta).toFixed(1)} toward ${delta >= 0 ? "Republicans" : "Democrats"}`}`}>
               <div className="absolute inset-y-[-6px] w-px" style={{ left: "50%", background: "var(--app-text-very-muted)" }} aria-hidden />
               {Math.abs(delta) > 0.04 || r.total
                 ? <div className="absolute inset-y-0 rounded-[3px]" style={{ left: `${x(lo)}%`, width: `max(2px, ${x(hi) - x(lo)}%)`, background: color }} />

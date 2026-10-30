@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ComposableMap, Geography } from "react-simple-maps";
 import Geographies from "@/components/maps/Geographies";
-import { fmtMargin, formatProjectedMargin, getRaceColor, marginToRating } from "@/lib/colorScale";
+import { fmtMargin, formatProjectedMargin, getRaceColor, marginToRating, fmtLean } from "@/lib/colorScale";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { statesData } from "@/data/statesData";
 import type { RaceType } from "@/data/forecastData";
@@ -148,7 +148,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
               three on phones. Every tile is a link. */}
           <div className="mt-7 grid grid-cols-6 gap-2 sm:gap-3 lg:grid-cols-5">
             {[
-              { key: "gb", label: "Generic Ballot", href: "#national-polling", value: fmtMargin(gb.diff), sub: `D ${gb.dem.toFixed(1)} · R ${gb.rep.toFixed(1)}`, bg: tileColor(gb.diff <= 0 ? "D" : "R", marginToRating(gb.diff)) },
+              { key: "gb", label: "Generic Ballot", href: "#national-polling", value: fmtLean(gb.diff), sub: `D ${gb.dem.toFixed(1)} · R ${gb.rep.toFixed(1)}`, bg: tileColor(gb.diff <= 0 ? "D" : "R", marginToRating(gb.diff)) },
               { key: "approval", label: "Pres. Approval", href: "#national-polling", value: `${approval.diff > 0 ? "−" : "+"}${Math.abs(approval.diff).toFixed(1)}`, sub: `${approval.approve.toFixed(1)} approve · ${approval.disapprove.toFixed(1)} disapprove`, bg: tileColor(approval.diff > 0 ? "disapprove" : "approve") },
               ...([["house", "House", "/house", house], ["senate", "Senate", "/senate", senate], ["governor", "Governors", "/governor", governor]] as const).map(([type, label, href, s]) => {
                 const call = chamberCall(sims[type], TOTAL_SEATS_BY_TYPE[type]);

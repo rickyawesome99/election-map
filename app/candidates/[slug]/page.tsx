@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { CandidateHistoryEntry } from "@/lib/candidateIndex";
 import { candidatePhoto } from "@/lib/candidatePhotos";
-import { getRatingColors, fmtMargin, marginColor } from "@/lib/colorScale";
+import { getRatingColors, fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import { notFound, permanentRedirect } from "next/navigation";
 import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -397,8 +397,8 @@ export default async function CandidatePage({
           const w = entryWar[0];
           return (
             <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
-              <span title="Generic vs generic: the seat's lean plus the year's environment, incumbency and structural money">Expected <b style={{ color: marginColor(w.expected) }}>{fmtMargin(w.expected)}</b></span>
-              <span title="Expected, adjusted for this specific opponent's own effect">vs opponent <b style={{ color: marginColor(w.vsOpp) }}>{fmtMargin(w.vsOpp)}</b></span>
+              <span title="Generic vs generic: the seat's lean plus the year's environment, incumbency and structural money">Expected <b style={{ color: leanColor(w.expected) }}>{fmtLean(w.expected)}</b></span>
+              <span title="Expected, adjusted for this specific opponent's own effect">vs opponent <b style={{ color: leanColor(w.vsOpp) }}>{fmtLean(w.vsOpp)}</b></span>
               <span title="Wins Above Replacement: actual margin minus vs-opponent, signed toward this candidate">WAR <b className="rounded px-1.5 py-0.5" style={{ color: warColor(w.war), background: warBg(w.war) }}>{fmtWar(w.war)}</b></span>
             </div>
           );

@@ -213,7 +213,7 @@ function isSpecialElection(electionType?: string) {
 }
 
 function fmtM(m: number) {
-  return Math.abs(m) < 0.05 ? "Even" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`;
+  return m === 0 ? "Even" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`;
 }
 
 const PARTY_FILL: Record<string, string> = { D: "var(--party-dem)", R: "var(--party-rep)", I: "var(--party-ind)" };
@@ -227,7 +227,7 @@ function chamberShading(summary: ReturnType<typeof chamberSummary>, chamberLabel
     if (pr.contest === "contested" && pr.margin != null && pr.pD != null) {
       fill[pr.key] = getRaceColor(pr.margin);
       tip[pr.key] = [
-        { label: "Projected margin", value: fmtM(pr.margin), color: pr.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" },
+        { label: "Projected margin", value: fmtM(pr.margin), color: pr.margin === 0 ? "var(--app-text-primary)" : pr.margin < 0 ? "var(--party-dem)" : "var(--party-rep)" },
         { label: "Rating", value: pr.rating ?? "" },
         { label: "P(Democratic)", value: `${Math.round(pr.pD * 100)}%` },
       ];

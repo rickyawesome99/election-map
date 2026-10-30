@@ -44,7 +44,7 @@ export function getStateColor(margin: number): string {
 // A PROJECTED race margin always names a leader: the exact margin decides the side and the
 // label keeps one decimal, so a race inside ±0.05 reads "D+0.0" / "R+0.0", never "EVEN".
 // (lib/tplCompute.ts projectRace guarantees the margin itself is never exactly 0.) Leans,
-// poll averages and model terms are quantities, not calls, and keep "EVEN" via fmtMargin.
+// poll averages and model terms are quantities, not calls, and keep "EVEN" via fmtLean.
 export function formatProjectedMargin(margin: number): string {
   if (margin === 0) return "EVEN";
   return `${margin < 0 ? "D" : "R"}+${Math.abs(margin).toFixed(1)}`;
@@ -54,15 +54,31 @@ export function projectedMarginColor(margin: number): string {
   return margin < 0 ? "var(--party-dem)" : "var(--party-rep)";
 }
 
-// Formats a signed R-D margin as "R+n.n" / "D+n.n" / "EVEN" (used by TPL-style figures,
-// distinct from marginToRating's Safe/Likely/Lean/Tilt bucketing above).
+// Formats a signed R-D vote or forecast margin (a result, a projection, a past race) as
+// "R+n.n" / "D+n.n": the exact sign names the leader, so a 78-vote lead reads "R+0.0";
+// "EVEN" only at exactly 0 (a genuine tie). Distinct from marginToRating's bucketing above.
 export function fmtMargin(v: number | null): string {
+  if (v == null) return "—";
+  if (v === 0) return "EVEN";
+  return `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(1)}`;
+}
+
+export function marginColor(v: number | null): string {
+  if (v == null) return "var(--app-text-very-muted)";
+  if (v === 0) return "var(--app-text-primary)";
+  return v > 0 ? "var(--party-rep)" : "var(--party-dem)";
+}
+
+// The same for a quantity that is not a vote or a call: a TPL lean, the environment / generic
+// ballot, a poll average, an incumbency / fundraising / candidate term, a swing. These read
+// "EVEN" inside ±0.05.
+export function fmtLean(v: number | null): string {
   if (v == null) return "—";
   if (Math.abs(v) < 0.05) return "EVEN";
   return `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(1)}`;
 }
 
-export function marginColor(v: number | null): string {
+export function leanColor(v: number | null): string {
   if (v == null) return "var(--app-text-very-muted)";
   if (Math.abs(v) < 0.05) return "var(--app-text-primary)";
   return v > 0 ? "var(--party-rep)" : "var(--party-dem)";

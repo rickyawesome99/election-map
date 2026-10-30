@@ -5,6 +5,7 @@
 // Targeting (campaign metrics). Universe: today's precinct lines (older years crosswalked, marked
 // ≈) or each year's original lines. Level: precincts or subdivisions (townships / cities).
 
+import { fmtLean } from "@/lib/colorScale";
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import { useDarkMode } from "@/lib/useDarkMode";
@@ -238,7 +239,8 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
   const formatValue = useCallback((v: number | null): string => {
     if (v == null) return "—";
     if (mode === "projection" && projMetric === "net") return fmtNetVotes(v);
-    if (mode === "results" || mode === "swing" || mode === "projection") return fmtMargin(v);
+    if (mode === "swing") return fmtLean(v);
+    if (mode === "results" || mode === "projection") return fmtMargin(v);
     if (mode === "demographics") return demoMetricDef.format(v);
     return targetDef.format(v);
   }, [mode, demoMetricDef, targetDef, projMetric]);
@@ -381,7 +383,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
           </div>
           <div className="mt-1.5 flex items-baseline justify-between pt-1.5" style={{ borderTop: "1px solid var(--app-border)" }}>
             <span className="text-[10.5px]" style={{ color: t.textMuted }}>Shift</span>
-            <b className="text-[15px]" style={{ color: s?.swing == null ? t.textMuted : s.swing > 0 ? t.repText : t.demText }}>{s?.swing == null ? "—" : `${fmtMargin(s.swing)}`}</b>
+            <b className="text-[15px]" style={{ color: s?.swing == null ? t.textMuted : s.swing > 0 ? t.repText : t.demText }}>{s?.swing == null ? "—" : `${fmtLean(s.swing)}`}</b>
           </div>
         </>
       );

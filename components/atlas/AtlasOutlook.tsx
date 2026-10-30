@@ -2,7 +2,7 @@
 
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import type { AtlasDistrict, AtlasEra, AtlasIndependent } from "@/lib/stateLegAtlas";
-import { projectedMarginColor } from "@/lib/colorScale";
+import { projectedMarginColor, fmtMargin } from "@/lib/colorScale";
 
 /** Margin text in the site's standard party colors (not the Safe/Likely/Lean shade scale). */
 const marginText = (m: number) => (Math.abs(m) < 0.05 ? "var(--app-text-primary)" : projectedMarginColor(m));
@@ -18,7 +18,7 @@ function signed(v: number, digits = 1): string {
 
 /** "I+4.2" or "R+4.2": an independent's margin over the major-party nominee. */
 function fmtI(advantage: number, opp: "D" | "R"): string {
-  return Math.abs(advantage) < 0.05 ? "Even" : `${advantage > 0 ? "I" : opp}+${Math.abs(advantage).toFixed(1)}`;
+  return advantage === 0 ? "Even" : `${advantage > 0 ? "I" : opp}+${Math.abs(advantage).toFixed(1)}`;
 }
 
 const BASIS: Record<AtlasIndependent["basis"], string> = {
@@ -101,12 +101,12 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
     ? `Not on the ${electionYear} ballot`
     : pr.contest === "uncontested-D" ? "Democratic seat: no Republican on the ballot"
     : pr.contest === "uncontested-R" ? "Republican seat: no Democrat on the ballot"
-    : pr.contest === "contested" && pr.margin != null ? fmtM(pr.margin)
+    : pr.contest === "contested" && pr.margin != null ? fmtMargin(pr.margin)
     : pr.contest === "independent" && pr.indep ? `${pr.indep.name} vs ${pr.indep.slot === "D" ? "R" : "D"}: ${fmtI(pr.indep.advantage, pr.indep.slot === "D" ? "R" : "D")}`
     : pr.contest === "other" && pr.pI === 1 ? "Independent seat: no major party on the ballot"
     : pr.contest === "split" ? `Every seat decided by the field: ${g.dem} D, ${g.rep} R`
     : "No projection";
-  const headColor = pr.contest === "uncontested-D" ? "var(--party-dem)" : pr.contest === "uncontested-R" ? "var(--party-rep)" : pr.margin != null && pr.contest === "contested" ? marginText(pr.margin)
+  const headColor = pr.contest === "uncontested-D" ? "var(--party-dem)" : pr.contest === "uncontested-R" ? "var(--party-rep)" : pr.margin != null && pr.contest === "contested" ? projectedMarginColor(pr.margin)
     : pr.contest === "independent" && pr.indep ? (pr.indep.advantage > 0 ? "var(--party-ind)" : pr.indep.slot === "D" ? "var(--party-rep)" : "var(--party-dem)")
     : pr.contest === "other" && pr.pI === 1 ? "var(--party-ind)" : "var(--app-text-muted)";
 
@@ -173,7 +173,7 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
             <div className="flex items-baseline gap-3 py-1.5" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
               <span className="font-bold">= Projected margin</span>
               <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{decided ? "the seat is decided by the field; the margin is the model's view of the district" : `σ ${pr.sigma.toFixed(1)}`}</span>
-              <span className="ml-auto font-bold" style={{ color: pr.margin != null ? marginText(pr.margin) : undefined }}>{fmtM(pr.margin)}</span>
+              <span className="ml-auto font-bold" style={{ color: pr.margin != null ? projectedMarginColor(pr.margin) : undefined }}>{fmtMargin(pr.margin)}</span>
             </div>
           </div>
           )}

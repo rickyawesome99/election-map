@@ -10,7 +10,7 @@ import { houseData, senateData, senateNoElection, senateHoldovers } from "@/data
 import { countyDemographics } from "@/data/countyDemographics";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { calculateCountyModel } from "@/lib/tplCompute";
-import { fmtMargin, marginColor, marginToRating, getRatingColors } from "@/lib/colorScale";
+import { fmtMargin, marginColor, marginToRating, getRatingColors, fmtLean, leanColor } from "@/lib/colorScale";
 import BackButton from "@/components/BackButton";
 import { pastElectionHref } from "@/lib/pastElections";
 import StateCountyMap from "@/components/StateCountyMap";
@@ -324,9 +324,9 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
                 </div>
                 <div
                   className="tabular-nums"
-                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 5.5vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: marginColor(tpl) }}
+                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 5.5vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: leanColor(tpl) }}
                 >
-                  {fmtMargin(tpl)}
+                  {fmtLean(tpl)}
                 </div>
               </div>
             )}
@@ -449,8 +449,8 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
             label="TPL Model Calculation"
             right={
               tpl != null ? (
-                <span className="text-sm font-bold tabular-nums" style={{ color: marginColor(tpl) }}>
-                  {fmtMargin(tpl)}
+                <span className="text-sm font-bold tabular-nums" style={{ color: leanColor(tpl) }}>
+                  {fmtLean(tpl)}
                 </span>
               ) : undefined
             }

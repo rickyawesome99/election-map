@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { startPendingNav } from "@/lib/navPending";
-import { fmtMargin } from "@/lib/colorScale";
+import { fmtMargin, fmtLean, leanColor } from "@/lib/colorScale";
 import { marginColor } from "@/components/tpl/format";
 import { lastName } from "@/lib/personName";
 import { VERY_MUTED } from "@/components/tpl/ui";
@@ -292,8 +292,8 @@ export default function PastRaceTable({ office, year }: { office: MapOffice; yea
                     <span className="font-bold tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: 18, color: margin.color }}>{margin.label}</span>
                     <FlipTag row={row} />
                   </div>
-                  <span className="hidden text-right text-xs font-semibold tabular-nums md:block" style={{ color: marginColor(swing) }} title={row.redrawn ? "Redrawn for this election" : row.prevYear != null ? `vs. ${row.prevYear}` : undefined}>
-                    {swing == null ? "—" : fmtMargin(swing)}
+                  <span className="hidden text-right text-xs font-semibold tabular-nums md:block" style={{ color: leanColor(swing) }} title={row.redrawn ? "Redrawn for this election" : row.prevYear != null ? `vs. ${row.prevYear}` : undefined}>
+                    {swing == null ? "—" : fmtLean(swing)}
                   </span>
                   <span className="hidden text-right text-xs tabular-nums md:block" style={{ color: "var(--app-text-muted)" }}>{row.totalVotes == null ? "—" : row.totalVotes.toLocaleString()}</span>
 
@@ -302,7 +302,7 @@ export default function PastRaceTable({ office, year }: { office: MapOffice; yea
                     <span>
                       {swing == null
                         ? (row.redrawn ? "Redrawn district" : "No prior race")
-                        : <>Swing <span className="font-semibold tabular-nums" style={{ color: marginColor(swing) }}>{fmtMargin(swing)}</span> vs {row.prevYear}</>}
+                        : <>Swing <span className="font-semibold tabular-nums" style={{ color: leanColor(swing) }}>{fmtLean(swing)}</span> vs {row.prevYear}</>}
                     </span>
                     <span className="tabular-nums">{row.totalVotes == null ? "—" : `${row.totalVotes.toLocaleString()} votes`}</span>
                   </div>

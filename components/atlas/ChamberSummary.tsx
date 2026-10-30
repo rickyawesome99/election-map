@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 import type { ChamberSummaryData } from "@/lib/stateLegChamberSummary";
 import { chamberOutcome, OUTCOME_LABEL, outcomeColor, type ChamberOutcome } from "@/lib/chamberOutcome";
 
-export const fmtChamberMargin = (m: number) => (Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
-const marginColor = (m: number) => (Math.abs(m) < 0.05 ? "var(--app-text-primary)" : m > 0 ? "var(--party-rep)" : "var(--party-dem)");
+export const fmtChamberMargin = (m: number) => (m === 0 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
+const marginColor = (m: number) => (m === 0 ? "var(--app-text-primary)" : m > 0 ? "var(--party-rep)" : "var(--party-dem)");
 export const fmtProb = (p: number | null) => (p == null ? "—" : p < 0.005 ? "<1%" : p > 0.995 ? ">99%" : `${Math.round(p * 100)}%`);
 const fmtVotes = (v: number) => (v >= 1e6 ? `${(v / 1e6).toFixed(2)}M` : v >= 1e4 ? `${Math.round(v / 1e3)}k` : Math.round(v).toLocaleString("en-US"));
 

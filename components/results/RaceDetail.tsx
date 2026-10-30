@@ -43,7 +43,10 @@ function headline(prior: Prior, cands: Cand[], hasVotes: boolean, current: numbe
     return l ? `${lastName(w.name)} defeats ${lastName(l.name)}` : `${lastName(w.name)} wins`;
   }
   if (hasVotes && current != null && cands.length >= 2) {
-    if (Math.abs(current) < 0.05) return `${lastName(cands[0].name)} and ${lastName(cands[1].name)} are tied`;
+    // Tied only on identical vote counts; a lead too small to show in points is given in votes.
+    const lead = cands[0].votes - cands[1].votes;
+    if (lead === 0) return `${lastName(cands[0].name)} and ${lastName(cands[1].name)} are tied`;
+    if (Math.abs(current) < 0.05) return `${lastName(cands[0].name)} leads ${lastName(cands[1].name)} by ${fmtInt(lead)} vote${lead === 1 ? "" : "s"}`;
     return `${lastName(cands[0].name)} leads ${lastName(cands[1].name)} by ${Math.abs(current).toFixed(1)} points`;
   }
   return isRealName(d.name) && isRealName(r.name) ? `${lastName(d.name)} vs. ${lastName(r.name)}` : `${d.name} vs. ${r.name}`;

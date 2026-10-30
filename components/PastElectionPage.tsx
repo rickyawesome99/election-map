@@ -7,7 +7,7 @@ import { lastName } from "@/lib/personName";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import HouseDistrictCountyMap from "@/components/HouseDistrictCountyMap";
 import ExpandableTbody from "@/components/ExpandableTbody";
-import { fmtMargin, marginColor } from "@/lib/colorScale";
+import { fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import type { PastElection, PastElectionCandidate } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import { SeatCrumbs } from "@/components/SeatBreadcrumb";
@@ -209,7 +209,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
   ].filter(Boolean).join(" · ");
   const seatEls = e.seatElections;
 
-  const residualLabel = e.model ? fmtMargin(e.model.residual) : null;
+  const residualLabel = e.model ? fmtLean(e.model.residual) : null;
   const overLabel = e.model
     ? `${lastName(winner.name)} ${winner.war != null ? `WAR ${winner.war > 0 ? "+" : ""}${winner.war.toFixed(1)}` : ""}${loser.war != null ? ` · ${lastName(loser.name)} ${loser.war > 0 ? "+" : ""}${loser.war.toFixed(1)}` : ""}`
     : "";
@@ -298,7 +298,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                 </div>
                 <div style={{ borderTop: "1px solid var(--app-border)", paddingTop: 6 }}>
                   <div className="text-[10.5px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Swing</div>
-                  <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: e.swing != null ? marginColor(e.swing) : "var(--app-text-very-muted)" }}>{e.swing != null ? fmtMargin(e.swing) : "—"}</div>
+                  <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: e.swing != null ? leanColor(e.swing) : "var(--app-text-very-muted)" }}>{e.swing != null ? fmtLean(e.swing) : "—"}</div>
                   <div className="text-[11px] tabular-nums" style={{ color: "var(--app-text-muted)" }}>{e.previous ? `from ${fmtMargin(e.previous.margin)} in ${e.previous.year}${e.house?.linesChanged ? ", old lines" : ""}` : "no prior result on file"}</div>
                 </div>
                 <div style={{ borderTop: "1px solid var(--app-border)", paddingTop: 6 }}>
@@ -359,20 +359,20 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
 
           {/* Post-analysis tiles */}
           <div className="mt-6 grid gap-5 sm:grid-cols-3" style={{ borderTop: "2px solid var(--app-text-primary)", paddingTop: "0.85rem" }}>
-            <Tile label="TPL expected margin" value={e.model ? fmtMargin(e.model.expected) : "—"} valueColor={e.model ? marginColor(e.model.expected) : undefined}>
+            <Tile label="TPL expected margin" value={e.model ? fmtLean(e.model.expected) : "—"} valueColor={e.model ? leanColor(e.model.expected) : undefined}>
               {e.model
                 ? e.office === "president"
                   ? `Retrospective fit: the state's fitted lean and the ${e.year} national environment, before any candidate effect.`
                   : `Retrospective fit: state lean, the ${e.year} national environment and incumbency, before any candidate effect.`
                 : "No model row for this race."}
             </Tile>
-            <Tile label="Result vs expected" value={residualLabel ?? "—"} valueColor={e.model ? marginColor(e.model.residual) : undefined}>
+            <Tile label="Result vs expected" value={residualLabel ?? "—"} valueColor={e.model ? leanColor(e.model.residual) : undefined}>
               {e.model ? overLabel : "—"}
             </Tile>
             <Tile
               label={e.polling ? (e.runoff ? "Late polls, first round" : "Polls missed by") : "Polls"}
               value={e.polling ? (e.polling.errorTowardDem != null ? `${Math.abs(e.polling.errorTowardDem).toFixed(1)} toward ${e.polling.errorTowardDem >= 0 ? "D" : "R"}` : fmtDemPositive(e.polling.avgDemMargin)) : "—"}
-              valueColor={e.polling ? (e.polling.errorTowardDem != null ? (e.polling.errorTowardDem >= 0 ? "var(--party-dem)" : "var(--party-rep)") : marginColor(-e.polling.avgDemMargin)) : undefined}
+              valueColor={e.polling ? (e.polling.errorTowardDem != null ? (e.polling.errorTowardDem >= 0 ? "var(--party-dem)" : "var(--party-rep)") : leanColor(-e.polling.avgDemMargin)) : undefined}
             >
               {e.polling ? (
                 <>
@@ -412,7 +412,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                         <td className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3">{fmtInt(c.result.demVotes)} <span className="text-[10px] sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{c.result.demPct.toFixed(1)}%</span></td>
                         <td className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3">{fmtInt(c.result.repVotes)} <span className="text-[10px] sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{c.result.repPct.toFixed(1)}%</span></td>
                         <td className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3 font-semibold" style={{ color: marginColor(c.result.margin) }}>{fmtMargin(c.result.margin)}</td>
-                        <td className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3" style={{ color: shift != null ? marginColor(shift) : "var(--app-text-very-muted)" }}>{shift != null ? fmtMargin(shift) : "—"}</td>
+                        <td className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3" style={{ color: shift != null ? leanColor(shift) : "var(--app-text-very-muted)" }}>{shift != null ? fmtLean(shift) : "—"}</td>
                       </tr>
                     );
                   })} />

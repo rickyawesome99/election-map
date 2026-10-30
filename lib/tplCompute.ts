@@ -2061,11 +2061,6 @@ export function computeWarTable(): WarRow[] {
 
 // ── Display helpers ───────────────────────────────────────────────────────────
 
-export function formatForecastMargin(v: number, decimals = 1): string {
-  if (Math.abs(v) < 0.05) return "EVEN";
-  return `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(decimals)}`;
-}
-
 // Legacy logistic curve, P(D wins) = 1 / (1 + e^(0.13 × margin)), kept only as the
 // comparison baseline in scripts/forwardBacktest.ts. The site uses winProbabilityD.
 export function marginToProbability(margin: number): number {

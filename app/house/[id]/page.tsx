@@ -3,7 +3,7 @@ import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, 
 import { candidatePageHref, partyTextColor } from "@/lib/candidatePages";
 import { getStatewideMargin, getNationalMargin } from "@/lib/statewideMargins";
 import { pviHistory } from "@/lib/pviHistory";
-import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
+import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
 import HouseDistrictMapTabs from "@/components/HouseDistrictMapTabs";
@@ -295,8 +295,8 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             </div>
 
             <div className="min-w-0 px-2 sm:px-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: pollMargin == null ? "var(--app-text-very-muted)" : marginColor(pollMargin) }}>
-                {pollMargin == null ? "—" : fmtMargin(pollMargin)}
+              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: pollMargin == null ? "var(--app-text-very-muted)" : leanColor(pollMargin) }}>
+                {pollMargin == null ? "—" : fmtLean(pollMargin)}
               </div>
               <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
                 Polling Avg.

@@ -9,15 +9,16 @@ import { AtlasOverlayMap, AtlasTransitionMaps } from "./AtlasEraMaps";
 import type { Chamber } from "@/data/stateLegDistricts";
 import type { AtlasDistrict, AtlasEra, AtlasMoney, AtlasResult } from "@/lib/stateLegAtlas";
 import { fmtMoney, resultMargin } from "@/lib/stateLegAtlas";
-import { getRatingColors, projectedMarginColor } from "@/lib/colorScale";
+import { getRatingColors, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import { PILL } from "@/components/RaceHeroPills";
 
 /** Margin text in the site's standard party colors (not the Safe/Likely/Lean shade scale). */
-const marginText = (m: number) => (Math.abs(m) < 0.05 ? "var(--app-text-primary)" : projectedMarginColor(m));
+const marginText = (m: number) => projectedMarginColor(m);
 
+/** A vote or projected margin: names the leader ("R+0.0"), "Even" only at an exact tie. */
 function fmtMargin(v: number | null | undefined): string {
   if (v == null) return "—";
-  if (Math.abs(v) < 0.05) return "Even";
+  if (v === 0) return "Even";
   return `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(1)}`;
 }
 
@@ -139,7 +140,7 @@ export default function AtlasDistrictDetail({
     : pr.contest === "contested" && pr.margin != null ? { label: "Projected Margin", value: fmtMargin(pr.margin), color: marginText(pr.margin) }
     : pr.contest === "independent" && pr.indep ? (() => {
       const opp = pr.indep.slot === "D" ? "R" : "D", a = pr.indep.advantage;
-      return { label: `Projected · ${pr.indep.name} vs ${opp}`, value: Math.abs(a) < 0.05 ? "Even" : `${a > 0 ? "I" : opp}+${Math.abs(a).toFixed(1)}`, color: a > 0 ? "var(--party-ind)" : opp === "D" ? "var(--party-dem)" : "var(--party-rep)" };
+      return { label: `Projected · ${pr.indep.name} vs ${opp}`, value: a === 0 ? "Even" : `${a > 0 ? "I" : opp}+${Math.abs(a).toFixed(1)}`, color: a > 0 ? "var(--party-ind)" : opp === "D" ? "var(--party-dem)" : "var(--party-rep)" };
     })()
     : pr.contest === "other" && pr.pI === 1 ? { label: "Projected", value: "Independent", color: "var(--party-ind)" }
     : pr.contest === "split" && pr.guaranteed ? { label: "Projected · decided by the field", value: `${pr.guaranteed.dem} D · ${pr.guaranteed.rep} R`, color: "var(--app-text-primary)" }
@@ -186,7 +187,7 @@ export default function AtlasDistrictDetail({
       : pr?.contest === "split"
         ? { label: "Win Prob.", value: "Decided", color: muted }
       : pr?.contest === "not-up" && pr.lean != null
-        ? { label: "TPL Lean", value: fmtMargin(pr.lean), color: marginText(pr.lean) }
+        ? { label: "TPL Lean", value: fmtLean(pr.lean), color: leanColor(pr.lean) }
         : { label: "Win Prob.", value: pr?.contest === "uncontested-D" ? "100% D" : pr?.contest === "uncontested-R" ? "100% R" : "—", color: pr?.contest === "uncontested-D" ? "var(--party-dem)" : pr?.contest === "uncontested-R" ? "var(--party-rep)" : muted },
     { label: "2024 President", value: fmtMargin(pres24), color: pres24 == null ? muted : marginText(pres24) },
     (() => {

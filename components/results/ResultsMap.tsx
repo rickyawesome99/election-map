@@ -63,7 +63,7 @@ const Layer = memo(function Layer({ geographies, office, rows, mode, selected, t
       {geographies.map((geo) => {
         if (isHouse && !isCongressionalDistrictGeoid(geo.properties?.GEOID as string | undefined)) return null;
         const row = find(geo);
-        const base = (row && fillFor(row, mode)) ?? t.mapUnfilled;
+        const base = row ? fillFor(row, mode) ?? t.mapUnfilled : t.noElection;
         const flipped = !!row && isCalledFlip(row);
         const fill = flipped ? flipFill(base) : base;
         const isSel = !!row && selected === `${row.prior.office}-${row.prior.id}`;
@@ -74,7 +74,7 @@ const Layer = memo(function Layer({ geographies, office, rows, mode, selected, t
             onClick={() => row && onSelect(row)}
             style={{
               default: { fill, stroke: isSel ? t.hoverStroke : t.mapStroke, strokeWidth: isSel ? (isHouse ? 2 : 3.5) : isHouse ? 0.4 : 1.0, outline: "none" },
-              hover: { fill: row ? fill : t.hoverUnfilled, stroke: t.hoverStroke, strokeWidth: isHouse ? 0.7 : 1.5, outline: "none", cursor: row ? "pointer" : "default" },
+              hover: { fill, stroke: t.hoverStroke, strokeWidth: isHouse ? 0.7 : 1.5, outline: "none", cursor: row ? "pointer" : "default" },
               pressed: { fill, stroke: t.hoverStroke, strokeWidth: isHouse ? 2 : 3.5, outline: "none" },
             }} />
         );
@@ -106,7 +106,7 @@ export default function ResultsMap({ office, rows, mode, selected, onSelect }: {
           )}
         </ComposableMap>
       </div>
-      <MapLegend mode={mode} t={t} />
+      <MapLegend mode={mode} office={office} t={t} />
       {hover && <ResultTooltip row={hover} boxRef={tip.tooltipRef} />}
     </div>
   );
@@ -192,13 +192,14 @@ function ResultTooltip({ row, boxRef }: { row: ResultsRow; boxRef: (node: HTMLDi
   );
 }
 
-function MapLegend({ mode, t }: { mode: MapMode; t: Theme }) {
+function MapLegend({ mode, office, t }: { mode: MapMode; office: ResultsOffice; t: Theme }) {
   const sw = (bg: string) => <i className="inline-block h-2.5 w-4" style={{ background: bg }} />;
   const item = (key: string, swatches: React.ReactNode, text: string) => <span key={key} className="flex items-center gap-1.5 text-[10px]" style={{ color: "var(--app-text-muted)" }}>{swatches}{text}</span>;
   const flip = item("flip", <i className="inline-block h-2.5 w-4" style={{ background: `repeating-linear-gradient(45deg, rgba(255,255,255,0.75) 0 1.5px, transparent 1.5px 4px), ${getRaceColor(-20)}` }} />, "Called flip");
   const none = item("none", sw(t.mapUnfilled), "No votes yet");
+  const noRace = item("noRace", sw(t.noElection), "No election");
   const items = mode === "status"
-    ? [item("lead", <>{sw(getRaceColor(-10))}{sw(getRaceColor(10))}</>, "Leading"), item("called", <>{sw(getRaceColor(-20))}{sw(getRaceColor(20))}</>, "Called"), flip, none]
-    : [...["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map((label, i) => item(label, sw(getRaceColor([-20, -10, -3, -0.5, 0.5, 3, 10, 20][i])), label.replace("Safe", "15+").replace("Likely", "5–15").replace("Lean", "1–5").replace("Tilt", "<1"))), flip, none];
+    ? [item("lead", <>{sw(getRaceColor(-10))}{sw(getRaceColor(10))}</>, "Leading"), item("called", <>{sw(getRaceColor(-20))}{sw(getRaceColor(20))}</>, "Called"), flip, none, ...(office === "house" ? [] : [noRace])]
+    : [...["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map((label, i) => item(label, sw(getRaceColor([-20, -10, -3, -0.5, 0.5, 3, 10, 20][i])), label.replace("Safe", "15+").replace("Likely", "5–15").replace("Lean", "1–5").replace("Tilt", "<1"))), flip, none, ...(office === "house" ? [] : [noRace])];
   return <div className="flex flex-wrap gap-x-4 gap-y-2 border-t pt-3" style={{ borderColor: "var(--app-border)" }}>{items}</div>;
 }

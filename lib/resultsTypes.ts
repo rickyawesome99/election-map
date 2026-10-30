@@ -5,7 +5,7 @@
 export type ResultsOffice = "senate" | "governor" | "house";
 export type Party = "D" | "R" | "I";
 
-export const RESULTS_OFFICES: ResultsOffice[] = ["senate", "governor", "house"];
+export const RESULTS_OFFICES: ResultsOffice[] = ["house", "senate", "governor"];
 export const OFFICE_LABEL: Record<ResultsOffice, string> = { senate: "Senate", governor: "Governor", house: "House" };
 export const ELECTION_DATE = "2026-11-03";
 /** The Results page reads nothing from civicAPI before this (5 PM ET on election day, an hour

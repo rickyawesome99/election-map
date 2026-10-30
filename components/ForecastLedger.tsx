@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 import type { RaceType } from "@/data/forecastData";
 import { ELECTION_YEAR as electionYear } from "@/lib/electionYear";
 import type { ForecastSummary } from "@/lib/forecastTypes";
-import { getRatingColors, marginToRating, fmtMargin } from "@/lib/colorScale";
+import { getRatingColors, marginToRating, fmtMargin, fmtLean } from "@/lib/colorScale";
 import RaceTable, { CandidateName } from "./RaceTable";
 import { PAGE_TITLE_STYLE } from "@/lib/pageLayout";
 
@@ -102,7 +102,7 @@ export function ForecastHero({
         </div>
         <div className="mt-3 flex border-t" style={{ borderColor: "var(--app-border)" }}>
           <div className="flex-1 border-r py-2 pr-3" style={{ borderColor: "var(--app-border)" }}>
-            <div className="text-base font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{fmtMargin(genericBallotDiff)}</div>
+            <div className="text-base font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{fmtLean(genericBallotDiff)}</div>
             <div className="mt-0.5 font-mono text-[9px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Generic Ballot</div>
           </div>
           <div className="flex-1 border-r px-3 py-2" style={{ borderColor: "var(--app-border)" }}>
@@ -206,15 +206,17 @@ function LedgerRow({ race, basePath, showSpecialBadge }: { race: ForecastSummary
   return (
     // content-visibility: the browser skips layout and paint for rows off screen until they near
     // the viewport (the House ledger is ~435 rows); 95 px is a row's height on a phone.
-    <div className="flex items-center justify-between gap-3 py-2.5" style={{ borderBottom: "1px solid var(--app-border)", contentVisibility: "auto", containIntrinsicSize: "auto 95px" }}>
+    // The seat link's ::after stretches over the whole row, so a click anywhere opens the race page;
+    // the candidate links sit above it (relative z-10) and still go to the candidate pages.
+    <div className="relative flex items-center justify-between gap-3 py-2.5 transition-colors hover:bg-[var(--app-panel)] md:px-2" style={{ borderBottom: "1px solid var(--app-border)", contentVisibility: "auto", containIntrinsicSize: "auto 95px" }}>
       <div className="min-w-0">
         <div className="mb-1 flex items-center gap-1.5">
-          <Link prefetch={false} href={raceHref(basePath, race)} className="truncate text-sm font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>
+          <Link prefetch={false} href={raceHref(basePath, race)} className="truncate text-sm font-bold after:absolute after:inset-0 after:content-['']" style={{ color: "var(--app-text-primary)" }}>
             {race.name}
           </Link>
           {showSpecialBadge && isSpecialRace(race) && <SpecialBadge />}
         </div>
-        <div className="flex flex-col gap-0.5" style={{ fontFamily: "var(--font-serif)" }}>
+        <div className="flex flex-col items-start gap-0.5 [&_a]:relative [&_a]:z-10" style={{ fontFamily: "var(--font-serif)" }}>
           <CandidateName candidate={race.candidates?.dem} state={race.state} slot="dem" />
           <CandidateName candidate={race.candidates?.rep} state={race.state} slot="rep" />
         </div>
@@ -281,41 +283,6 @@ function DesktopTierBlock({
             </button>
           </div>
         )}
-      </div>
-    </div>
-  );
-}
-
-// ─────────────────────────────────────────────────────────────────────────
-// Key Races — the closest margins, full detail, for the column beside the map.
-// ─────────────────────────────────────────────────────────────────────────
-export function KeyRaces({
-  races,
-  basePath,
-  showSpecialBadge = false,
-  count = 8,
-  twoColumn = false,
-}: {
-  races: ForecastSummary[];
-  basePath: string;
-  showSpecialBadge?: boolean;
-  count?: number;
-  /** Rows in two columns (the forecast page, where Key Races sits under the map). */
-  twoColumn?: boolean;
-}) {
-  const key = useMemo(
-    () => [...races].sort((a, b) => Math.abs(a.margin ?? 0) - Math.abs(b.margin ?? 0)).slice(0, count),
-    [races, count]
-  );
-  if (!key.length) return null;
-  return (
-    <div>
-      <div className="mb-1 flex items-baseline justify-between border-b-2 pb-1.5" style={{ borderColor: "var(--app-text-primary)" }}>
-        <h3 className="font-mono text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-primary)" }}>Key Races</h3>
-        <span className="text-[10px]" style={{ color: "var(--app-text-muted)" }}>{key.length}</span>
-      </div>
-      <div className={twoColumn ? "grid grid-cols-2 gap-x-8" : undefined}>
-        {key.map((r) => <LedgerRow key={r.id} race={r} basePath={basePath} showSpecialBadge={showSpecialBadge} />)}
       </div>
     </div>
   );

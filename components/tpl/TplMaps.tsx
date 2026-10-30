@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMemo, useRef, useState } from "react";
 import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
+import CountyTooltip from "@/components/CountyTooltip";
 import Geographies from "@/components/maps/Geographies";
 import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
@@ -190,10 +191,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
     <>
       <div className={fill ? "relative mx-4 aspect-[5/3] max-h-[620px] overflow-hidden rounded-xl sm:mx-12 lg:mx-32" : "relative h-[300px] w-full overflow-hidden rounded-xl sm:h-[400px] md:h-[480px]"} style={framed ? { border: "1px solid var(--app-border)" } : undefined} onMouseMove={onTipMove}>
         {hovered && (!selected || !panel) && (
-          <div ref={tooltipRef} className="pointer-events-none absolute z-20 hidden rounded-lg md:block" style={{ width: 160, padding: "7px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}>
-            <div className="mb-0.5 text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>{hovered.name}</div>
-            <div className="text-[10px] font-semibold" style={{ color: valueColor(hovered.value) }}>{valueLabel}: {formatValue(hovered.value)}</div>
-          </div>
+          <CountyTooltip kind="figure" title={hovered.name} label={valueLabel} value={formatValue(hovered.value)} valueColor={valueColor(hovered.value)} boxRef={tooltipRef} className="absolute z-20 hidden md:block" />
         )}
 
         <ComposableMap projection="geoAlbersUsa" {...(wide || fill ? WIDE_FRAME : DEFAULT_FRAME)} style={fill ? { position: "absolute", inset: 0, width: "100%", height: "100%" } : { width: "100%", height: "100%" }}>

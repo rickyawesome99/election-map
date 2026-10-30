@@ -40,7 +40,7 @@ const DEM_STROKE = "var(--party-dem-muted)";
 const EVEN_STROKE = "var(--party-ind-muted)";
 
 function strokeForMargin(v: number): string {
-  if (Math.abs(v) < 0.05) return EVEN_STROKE;
+  if (v === 0) return EVEN_STROKE;
   return v >= 0 ? REP_STROKE : DEM_STROKE;
 }
 

@@ -8,7 +8,7 @@ import { FORECAST_CONSTANTS } from "@/data/tplModelData";
 import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
 import type { RaceFinanceDetail } from "@/data/fundraisingData";
-import { formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
+import { formatProjectedMargin, projectedMarginColor, leanColor } from "@/lib/colorScale";
 import { getNationalEnvironment, incumbentAdvantage, type RacePolling, type RaceMoneyTerm } from "@/lib/tplCompute";
 
 type PollRow = {
@@ -1346,7 +1346,7 @@ export function ForecastCalculationCard({
         label: tplHref
           ? <Link prefetch={false} href={tplHref} className="text-[11px] font-semibold uppercase tracking-wider hover:underline underline-offset-2" style={{ color: "var(--app-text-muted)" }} title={`View ${tplLabel}`}>{tplLabel}</Link>
           : <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{tplLabel}</span>,
-        value: fmtTerm(tpl), color: marginColor(tpl),
+        value: fmtTerm(tpl), color: leanColor(tpl),
       },
       { key: "env", label: <InfoTooltip label="+ Environment">{gbTooltip}</InfoTooltip>, value: gbDisplay, color: gbIsD ? "var(--party-dem)" : "var(--party-rep)" },
       ...(showIncumbentRow ? [{ key: "inc", label: <InfoTooltip label="+ Incumbent">{incTooltip}</InfoTooltip>, value: incDisplay, color: incColor }] : []),
@@ -1364,9 +1364,9 @@ export function ForecastCalculationCard({
             </div>
             <p className="mt-3" style={{ maxWidth: "40ch", fontFamily: "var(--font-serif)", fontSize: "1.02rem", lineHeight: 1.45, textWrap: "pretty" }}>
               {pollingAvg == null ? (
-                <>No polls on file, so this is the Model alone at <LedgerFig color={marginColor(modelMargin)}>{fmtMargin(modelMargin)}</LedgerFig>.</>
+                <>No polls on file, so this is the Model alone at <LedgerFig color={projectedMarginColor(modelMargin)}>{formatProjectedMargin(modelMargin)}</LedgerFig>.</>
               ) : (
-                <>Blends the Model at <LedgerFig color={marginColor(modelMargin)}>{fmtMargin(modelMargin)}</LedgerFig> with a polling average of <LedgerFig color={pollColor}>{fmtMargin(pollingAvg)}</LedgerFig> ({pollMeta}).</>
+                <>Blends the Model at <LedgerFig color={projectedMarginColor(modelMargin)}>{formatProjectedMargin(modelMargin)}</LedgerFig> with a polling average of <LedgerFig color={pollColor}>{fmtMargin(pollingAvg)}</LedgerFig> ({pollMeta}).</>
               )}
             </p>
           </div>
@@ -1384,7 +1384,7 @@ export function ForecastCalculationCard({
 
         {/* Blend lever: Model and Polling Avg on one axis, the projection at their weighted balance point */}
         <div className="relative mt-6" style={{ height: xPoll != null ? 100 : 70 }} role="img"
-          aria-label={pollingAvg == null ? `Model ${fmtMargin(modelMargin)}, no polls` : `Model ${fmtMargin(modelMargin)} at ${wModel}% and polling ${fmtMargin(pollingAvg)} at ${wPoll}% blend to ${formatProjectedMargin(projectedMargin)}`}>
+          aria-label={pollingAvg == null ? `Model ${formatProjectedMargin(modelMargin)}, no polls` : `Model ${formatProjectedMargin(modelMargin)} at ${wModel}% and polling ${fmtMargin(pollingAvg)} at ${wPoll}% blend to ${formatProjectedMargin(projectedMargin)}`}>
           {interval80 && (
             <div className="absolute rounded-full" style={{ top: AXIS_Y - 9, height: 18, left: `${pos(interval80[0])}%`, width: `${pos(interval80[1]) - pos(interval80[0])}%`, background: "color-mix(in srgb, var(--app-text-primary) 7%, transparent)" }} />
           )}
@@ -1395,7 +1395,7 @@ export function ForecastCalculationCard({
           )}
           <div className="absolute flex flex-col gap-0.5 whitespace-nowrap" style={tagStyle(xModel, 0)}>
             <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Model · {wModel}%</span>
-            <span className="text-lg font-bold leading-none tabular-nums" style={{ color: marginColor(modelMargin) }}>{fmtMargin(modelMargin)}</span>
+            <span className="text-lg font-bold leading-none tabular-nums" style={{ color: projectedMarginColor(modelMargin) }}>{formatProjectedMargin(modelMargin)}</span>
           </div>
           {xPoll != null && pollingAvg != null && (
             <div className="absolute flex flex-col gap-0.5 whitespace-nowrap" style={tagStyle(xPoll, AXIS_Y + 18)}>
@@ -1404,7 +1404,7 @@ export function ForecastCalculationCard({
             </div>
           )}
           {/* The heavier source gets the bigger weight */}
-          <div className="absolute rounded-full" style={{ top: AXIS_Y - (wModel >= wPoll ? 12 : 9), left: `${xModel}%`, width: wModel >= wPoll ? 24 : 18, height: wModel >= wPoll ? 24 : 18, transform: "translateX(-50%)", background: marginColor(modelMargin), border: "3px solid var(--app-bg)" }} />
+          <div className="absolute rounded-full" style={{ top: AXIS_Y - (wModel >= wPoll ? 12 : 9), left: `${xModel}%`, width: wModel >= wPoll ? 24 : 18, height: wModel >= wPoll ? 24 : 18, transform: "translateX(-50%)", background: projectedMarginColor(modelMargin), border: "3px solid var(--app-bg)" }} />
           {xPoll != null && (
             <div className="absolute rounded-full" style={{ top: AXIS_Y - (wPoll > wModel ? 12 : 9), left: `${xPoll}%`, width: wPoll > wModel ? 24 : 18, height: wPoll > wModel ? 24 : 18, transform: "translateX(-50%)", background: pollColor, border: "3px solid var(--app-bg)" }} />
           )}
@@ -1416,7 +1416,7 @@ export function ForecastCalculationCard({
           {interval80 && interval80[1] - interval80[0] > 0.05 && (
             <span className="flex items-center gap-1.5">
               <InfoTooltip label="80% range" labelStyle={{ color: "var(--app-text-very-muted)" }}>Margin ± 1.28 × total spread. Eight times in ten the result should land inside this range (the grey band).</InfoTooltip>
-              <span style={{ color: "var(--app-text-muted)" }}>{fmtMargin(interval80[0])} to {fmtMargin(interval80[1])}</span>
+              <span style={{ color: "var(--app-text-muted)" }}>{formatProjectedMargin(interval80[0])} to {formatProjectedMargin(interval80[1])}</span>
             </span>
           )}
           <span>R+{extent}</span>
@@ -1432,7 +1432,7 @@ export function ForecastCalculationCard({
           ))}
           <div className="flex flex-col gap-1 py-2.5 pr-3" style={{ borderBottom: "1px solid var(--app-border)" }}>
             <InfoTooltip label="= Model" labelStyle={{ color: "var(--app-text-primary)" }}>{modelTooltip}</InfoTooltip>
-            <span className="text-lg font-extrabold leading-tight tabular-nums" style={{ color: marginColor(modelMargin) }}>{fmtMargin(modelMargin)}</span>
+            <span className="text-lg font-extrabold leading-tight tabular-nums" style={{ color: projectedMarginColor(modelMargin) }}>{formatProjectedMargin(modelMargin)}</span>
           </div>
         </div>
       </div>
@@ -1507,7 +1507,7 @@ export function ForecastCalculationCard({
                 {Math.round(effectiveModelWeight * 100)}%
               </span>
             </div>
-            <div className="text-right text-2xl font-bold leading-none" style={{ color: marginColor(modelMargin) }}>{fmtMargin(modelMargin)}</div>
+            <div className="text-right text-2xl font-bold leading-none" style={{ color: projectedMarginColor(modelMargin) }}>{formatProjectedMargin(modelMargin)}</div>
           </div>
 
           <div className="rounded-lg px-3 py-2.5" style={weightedRowStyle}>

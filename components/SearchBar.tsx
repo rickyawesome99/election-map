@@ -11,6 +11,25 @@ const SEARCH_INDEX_URL = "/api/search-index";
 // The state legislative candidates are ~38,000 more names; they load once a query is 3+ characters.
 const LEGISLATORS_URL = "/api/search-index-legislators";
 
+const PARTY_COLOR: Record<string, string> = { D: "var(--party-dem)", R: "var(--party-rep)", I: "var(--party-ind)", O: "var(--party-ind)" };
+
+// The tag is a one-word kind; the rest of the sublabel already says which office.
+const SHORT_TAG: Record<string, string> = {
+  "House seat": "Seat", "Senate seat": "Seat", "Governor seat": "Seat",
+  "State legislative district": "District", "State legislator": "Legislator", "State legislative candidate": "Candidate",
+  "2026 election": "2026", "Special election": "Special",
+};
+
+// A result row reads like the rest of the site: candidates as serif names in their party color
+// with a muted "(D)", everything else as a bold sans title; the sublabel's first segment
+// ("House seat", "State legislator", "2026 election") becomes a small mono tag on the right and
+// the rest sits under the title.
+function rowParts(entry: SearchEntry): { tag: string; party: string | null; detail: string } {
+  const [tag, ...rest] = entry.sublabel.split(" · ");
+  const party = entry.kind === "candidate" && rest[0] && PARTY_COLOR[rest[0]] ? rest.shift()! : null;
+  return { tag: SHORT_TAG[tag] ?? tag, party, detail: rest.join(" · ") };
+}
+
 export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProperties }) {
   const listId = useId();
   const [loadError, setLoadError] = useState(false);
@@ -198,7 +217,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
           id={listId}
           role="listbox"
           aria-label="Search results"
-          className="fixed rounded-xl overflow-hidden shadow-2xl"
+          className="fixed overflow-hidden rounded-lg"
           style={{
             left: dropdownRect.left,
             top: dropdownRect.top,
@@ -206,6 +225,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
             zIndex: 1000,
             maxHeight: "min(70vh, 520px)",
             overflowY: "auto",
+            boxShadow: "0 4px 16px rgba(0,0,0,0.18)",
             background: "var(--app-panel)",
             border: "1px solid var(--app-border)",
           }}
@@ -219,34 +239,43 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
           {results.length === 0 && <div role="status" className="px-3 py-4 text-sm" style={{ color: "var(--app-text-muted)" }}>
             {loadError ? "Search could not load. Type again to retry." : !entries ? "Loading search…" : "No matches. Try a state, district, candidate, or election year."}
           </div>}
-          {results.map((entry, i) => (
-            <a
-              key={entry.href}
-              href={entry.href}
-              role="option"
-              aria-selected={i === activeIndex}
-              id={`${listId}-${i}`}
-              onMouseEnter={() => setActiveIndex(i)}
-              onClick={(e) => {
-                if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-                e.preventDefault();
-                e.stopPropagation();
-                navigate(entry);
-              }}
-              className="w-full text-left px-3 py-1.5 flex flex-col transition-colors"
-              style={{
-                background: i === activeIndex ? "var(--app-tab-bg)" : "transparent",
-                borderBottom: i < results.length - 1 ? "1px solid var(--app-border)" : "none",
-              }}
-            >
-              <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
-                {entry.label}
-              </span>
-              <span className="text-[11px]" style={{ color: "var(--app-text-muted)" }}>
-                {entry.sublabel}
-              </span>
-            </a>
-          ))}
+          {results.map((entry, i) => {
+            const { tag, party, detail } = rowParts(entry);
+            return (
+              <a
+                key={entry.href}
+                href={entry.href}
+                role="option"
+                aria-selected={i === activeIndex}
+                id={`${listId}-${i}`}
+                onMouseEnter={() => setActiveIndex(i)}
+                onClick={(e) => {
+                  if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+                  e.preventDefault();
+                  e.stopPropagation();
+                  navigate(entry);
+                }}
+                className="flex w-full items-center justify-between gap-3 px-3 py-2 text-left transition-colors"
+                style={{
+                  background: i === activeIndex ? "var(--app-tab-bg)" : "transparent",
+                  borderBottom: i < results.length - 1 ? "1px solid var(--app-border)" : "none",
+                }}
+              >
+                <span className="flex min-w-0 flex-col">
+                  <span className="flex min-w-0 items-baseline gap-1.5">
+                    {party ? (
+                      <span className="truncate text-[15px] font-bold" style={{ fontFamily: "var(--font-serif)", color: PARTY_COLOR[party] }}>{entry.label}</span>
+                    ) : (
+                      <span className="truncate text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{entry.label}</span>
+                    )}
+                    {party && <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({party})</span>}
+                  </span>
+                  {detail && <span className="truncate text-[11px]" style={{ color: "var(--app-text-muted)" }}>{detail}</span>}
+                </span>
+                <span className="shrink-0 font-mono text-[9.5px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{tag}</span>
+              </a>
+            );
+          })}
         </div>,
         document.body
       )}

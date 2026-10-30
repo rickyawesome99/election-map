@@ -8,7 +8,7 @@ import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 const PARTY_COLOR: Record<string, string> = { D: "var(--party-dem)", R: "var(--party-rep)", O: "var(--party-ind)", I: "var(--party-ind)" };
 const PARTY_SUBTLE: Record<string, string> = { D: "var(--party-dem-subtle)", R: "var(--party-rep-subtle)", O: "var(--party-ind-subtle)", I: "var(--party-ind-subtle)" };
 
-export const fmtLegMargin = (v: number | null | undefined) => (v == null ? "—" : Math.abs(v) < 0.05 ? "Even" : `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(1)}`);
+export const fmtLegMargin = (v: number | null | undefined) => (v == null ? "—" : v === 0 ? "Even" : `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(1)}`);
 
 export function partyWord(party: string, label?: string): string {
   if (label) return label.replace(/ Party$/, "");
@@ -112,7 +112,7 @@ export function StateLegCurrentRow({ race, projection, money = null, last }: { r
         {ind && indSide && (
           <div className="text-right shrink-0">
             <div className="tabular-nums font-extrabold" style={{ fontSize: "1.4rem", lineHeight: 1, color: indSide.adv > 0 ? accent : "var(--app-text-muted)" }}>
-              {Math.abs(indSide.adv) < 0.05 ? "Even" : `${indSide.adv > 0 ? "+" : "−"}${Math.abs(indSide.adv).toFixed(1)}`}
+              {indSide.adv === 0 ? "Even" : `${indSide.adv > 0 ? "+" : "−"}${Math.abs(indSide.adv).toFixed(1)}`}
             </div>
             <div className="mt-1 text-[11px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>P(win) {Math.round(indSide.mine * 100)}% · vs {ind.isMe ? ind.opp : ind.name}</div>
           </div>

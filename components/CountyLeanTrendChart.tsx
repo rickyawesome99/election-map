@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { NO_RECHARTS, useRecharts } from "@/lib/useRecharts";
 import type { YearAggregation } from "@/lib/tplCompute";
-import { fmtMargin, marginColor } from "@/lib/colorScale";
+import { fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import { niceAxisConfig } from "@/lib/chartAxis";
 
 type ChartPoint = { year: string; wrs: number | null };
@@ -47,7 +47,7 @@ function WrsTooltip({ active, payload }: { active?: boolean; payload?: { payload
       style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", minWidth: 110 }}
     >
       <div className="font-bold mb-1" style={{ color: "var(--app-text-muted)" }}>{d.year}</div>
-      <div className="font-bold font-mono text-sm" style={{ color: marginColor(d.wrs) }}>{fmtMargin(d.wrs)}</div>
+      <div className="font-bold font-mono text-sm" style={{ color: leanColor(d.wrs) }}>{fmtLean(d.wrs)}</div>
     </div>
   );
 }
@@ -120,7 +120,7 @@ export default function CountyLeanTrendChart({ yearAggregations, reference, heig
             domain={axisConfig.domain}
             allowDataOverflow
             ticks={axisConfig.ticks}
-            tickFormatter={(v) => fmtMargin(v)}
+            tickFormatter={(v) => fmtLean(v)}
             tick={{ fontSize: 9, fill: "var(--app-text-muted)" }}
             axisLine={false}
             tickLine={false}
@@ -131,11 +131,11 @@ export default function CountyLeanTrendChart({ yearAggregations, reference, heig
           {reference && (
             <ReferenceLine
               y={reference.value}
-              stroke={marginColor(reference.value)}
+              stroke={leanColor(reference.value)}
               strokeOpacity={0.8}
               strokeDasharray="6 4"
               strokeWidth={1.5}
-              label={{ value: reference.label, position: "insideTopRight", fontSize: 10, fill: marginColor(reference.value) }}
+              label={{ value: reference.label, position: "insideTopRight", fontSize: 10, fill: leanColor(reference.value) }}
             />
           )}
           <Tooltip content={<WrsTooltip />} cursor={{ stroke: "var(--app-border)", strokeWidth: 1 }} />

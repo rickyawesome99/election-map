@@ -34,7 +34,7 @@ const DOCUMENTED_IN_PV = {
 } satisfies Record<keyof typeof PC, string>;
 void DOCUMENTED_IN_PV;
 
-const fmtM = (m: number | null) => (m == null ? "—" : Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
+const fmtM = (m: number | null) => (m == null ? "—" : m === 0 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
 const signedPct = (v: number) => `${v >= 0 ? "+" : ""}${v.toFixed(1)}%`;
 
 function coverage() {

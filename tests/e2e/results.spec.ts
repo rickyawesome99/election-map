@@ -61,7 +61,7 @@ test("the dashboard, map and tables fill from the feed and a race opens with its
   await expect(detail).toContainText("Projected final margin");
   await expect(detail).toContainText("counties reporting");
   await expect(detail.locator("table tbody tr").first()).toContainText("50%");
-  expect(page.url()).toMatch(/#senate-/);
+  expect(page.url()).toMatch(/#house-/);
   // The race opens as its own page; its back button returns to the results.
   await page.getByRole("button", { name: "← All results" }).click();
   await expect(page.getByRole("heading", { name: "2026 Results" })).toBeVisible();

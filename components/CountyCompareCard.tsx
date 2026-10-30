@@ -1,5 +1,5 @@
 import { calculateCountyModel, calculateStateTpl, getMedianStateTpl } from "@/lib/tplCompute";
-import { fmtMargin } from "@/lib/colorScale";
+import { fmtMargin, fmtLean } from "@/lib/colorScale";
 
 function directionWord(diff: number): string {
   return diff >= 0 ? "more Republican" : "more Democratic";
@@ -39,9 +39,9 @@ export default function CountyCompareCard({
       <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 mb-2">
         <span className="text-[13px] font-semibold" style={{ color: "var(--app-text-primary)" }}>County TPL</span>
         <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>
-          {countyLabel} <b style={{ color: markerColor(countyTpl) }}>{fmtMargin(countyTpl)}</b>
-          &nbsp;·&nbsp; {stateName} <b style={{ color: markerColor(stateTpl) }}>{fmtMargin(stateTpl)}</b>
-          &nbsp;·&nbsp; National (median state) <b style={{ color: markerColor(nationalTpl) }}>{fmtMargin(nationalTpl)}</b>
+          {countyLabel} <b style={{ color: markerColor(countyTpl) }}>{fmtLean(countyTpl)}</b>
+          &nbsp;·&nbsp; {stateName} <b style={{ color: markerColor(stateTpl) }}>{fmtLean(stateTpl)}</b>
+          &nbsp;·&nbsp; National (median state) <b style={{ color: markerColor(nationalTpl) }}>{fmtLean(nationalTpl)}</b>
         </span>
       </div>
       <div className="relative h-2.5 rounded-full" style={{ background: "var(--app-tab-bg)" }}>

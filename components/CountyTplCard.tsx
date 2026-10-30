@@ -3,7 +3,7 @@ import { calculateCountyModel, type ComputedRace } from "@/lib/tplCompute";
 import { countyHouseData } from "@/data/countyHouseData";
 import { pastHrefOf } from "@/lib/modelSlices";
 import { pastElectionHref } from "@/lib/pastElections";
-import { fmtMargin, marginColor } from "@/lib/colorScale";
+import { fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
 
 const RACE_TYPE_LABELS: Record<string, string> = { P: "President", S: "Senate", G: "Governor", H: "House" };
 
@@ -98,18 +98,18 @@ export default function CountyTplCard({
                 <td className="px-2 py-1.5 tabular-nums font-semibold" style={{ color: marginColor(r.rawMargin) }}>
                   {fmtMargin(r.rawMargin)}
                 </td>
-                <td className="px-2 py-1.5 tabular-nums font-semibold" style={{ color: marginColor(r.adjustedMargin) }}>
-                  {fmtMargin(r.adjustedMargin)}
+                <td className="px-2 py-1.5 tabular-nums font-semibold" style={{ color: leanColor(r.adjustedMargin) }}>
+                  {fmtLean(r.adjustedMargin)}
                   {r.imputed && <span className="ml-0.5" style={{ color: "var(--app-text-very-muted)" }}>⊘</span>}
                 </td>
-                <td className="px-2 py-1.5 tabular-nums font-semibold" style={{ color: r.incumbencyPts != null && r.incumbencyPts !== 0 ? marginColor(r.incumbencyPts) : "var(--app-text-very-muted)" }}>
+                <td className="px-2 py-1.5 tabular-nums font-semibold" style={{ color: r.incumbencyPts != null && r.incumbencyPts !== 0 ? leanColor(r.incumbencyPts) : "var(--app-text-very-muted)" }}>
                   {r.incumbencyPts != null && r.incumbencyPts !== 0 ? `${r.incumbencyPts > 0 ? "+" : ""}${r.incumbencyPts.toFixed(0)}` : "—"}
                 </td>
                 <td className="px-2 py-1.5 tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
                   {r.envPts != null && r.envPts !== 0 ? `${r.envPts > 0 ? "+" : ""}${r.envPts.toFixed(2)}` : "—"}
                 </td>
-                <td className="px-2 py-1.5 tabular-nums font-bold" style={{ color: marginColor(r.NM) }}>
-                  {fmtMargin(r.NM)}
+                <td className="px-2 py-1.5 tabular-nums font-bold" style={{ color: leanColor(r.NM) }}>
+                  {fmtLean(r.NM)}
                 </td>
               </tr>
               );
@@ -161,7 +161,7 @@ export default function CountyTplCard({
                   const wt = agg.redistributedWeights[type];
                   return (
                     <td key={type} className="px-2 py-1.5 text-right tabular-nums">
-                      <div className="font-semibold" style={{ color: marginColor(val) }}>{fmtMargin(val)}</div>
+                      <div className="font-semibold" style={{ color: leanColor(val) }}>{fmtLean(val)}</div>
                       {wt != null && (
                         <div className="text-[9px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>
                           {(wt * 100).toFixed(0)}%
@@ -172,9 +172,9 @@ export default function CountyTplCard({
                 })}
                 <td
                   className="px-2 py-1.5 text-right tabular-nums font-bold"
-                  style={{ color: agg.racesPresent.length > 0 ? marginColor(agg.WRS) : "var(--app-text-very-muted)" }}
+                  style={{ color: agg.racesPresent.length > 0 ? leanColor(agg.WRS) : "var(--app-text-very-muted)" }}
                 >
-                  {agg.racesPresent.length > 0 ? fmtMargin(agg.WRS) : "—"}
+                  {agg.racesPresent.length > 0 ? fmtLean(agg.WRS) : "—"}
                 </td>
               </tr>
             ))}

@@ -60,7 +60,7 @@ export default function ResultsPage() {
   const [failed, setFailed] = useState(0);
   const [auto, setAuto] = useState(true);
   const [allowTest, setAllowTest] = useState(false);
-  const [office, setOffice] = useState<ResultsOffice>("senate");
+  const [office, setOffice] = useState<ResultsOffice>("house");
   const [mapMode, setMapMode] = useState<MapMode>("status");
   const [sort, setSort] = useState<SortKey>("close");
   const [uncalledOnly, setUncalledOnly] = useState(false);
@@ -89,7 +89,7 @@ export default function ResultsPage() {
   // Priors, once.
   useEffect(() => {
     Promise.all(RESULTS_OFFICES.map((o) => loadStaticJson<PriorsSlice>(`/api/results/priors/${o}`)))
-      .then(([senate, governor, house]) => setPriors({ senate, governor, house }))
+      .then(([house, senate, governor]) => setPriors({ senate, governor, house }))
       .catch((e: Error) => setLoadError(e.message));
   }, []);
 

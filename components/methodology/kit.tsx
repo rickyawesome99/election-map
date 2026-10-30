@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { fmtMargin, marginColor } from "@/lib/colorScale";
+import { fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
 
 // Presentational pieces shared by every /analysis/internal-methodology tab. Flat by design: a section is a
 // large serif heading over a 2px rule, sub-blocks are small-caps labels over a 1px rule, and
@@ -39,8 +39,8 @@ export function BasisTag({ basis }: { basis: Basis }) {
 /** An R-positive margin, colored by party: D+5.3 / R+2.0 / EVEN. */
 export function M({ v, digits = 1 }: { v: number | null | undefined; digits?: number }) {
   if (v == null || !Number.isFinite(v)) return <span style={VERY_MUTED}>—</span>;
-  const text = digits === 1 ? fmtMargin(v) : Math.abs(v) < 0.5 * 10 ** -digits ? "EVEN" : `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(digits)}`;
-  return <span className="font-bold tabular-nums" style={{ color: marginColor(v) }}>{text}</span>;
+  const text = digits === 1 ? fmtLean(v) : Math.abs(v) < 0.5 * 10 ** -digits ? "EVEN" : `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(digits)}`;
+  return <span className="font-bold tabular-nums" style={{ color: leanColor(v) }}>{text}</span>;
 }
 export const D = ({ children }: { children: ReactNode }) => <span className="font-semibold" style={{ color: "var(--party-dem)" }}>{children}</span>;
 export const R = ({ children }: { children: ReactNode }) => <span className="font-semibold" style={{ color: "var(--party-rep)" }}>{children}</span>;

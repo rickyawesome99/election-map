@@ -9,7 +9,7 @@ import { getRaceColor, marginToRating } from "@/lib/colorScale";
 import type { RaceType, NoElectionEntry } from "@/data/forecastData";
 import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, isProjectedFlip, type ForecastSummary } from "@/lib/forecastTypes";
 import { FlipPatternDefs, FlipSwatch, flipFill } from "./FlipStripes";
-import { RaceTypeHeader, ForecastHero, ForecastRaceCards, KeyRaces } from "./ForecastLedger";
+import { RaceTypeHeader, ForecastHero, ForecastRaceCards } from "./ForecastLedger";
 
 // Non-2026 seats already held by each party (Senate classes not up this cycle, Governor terms not up) —
 // added to projected win counts to get full chamber totals.
@@ -134,7 +134,7 @@ const NO_ROWS: StateRow[] = [];
 // theme change — not on every hover, and not on every pan/zoom frame. Lookups are indexed once
 // instead of scanning the race list per feature (435 × 435 comparisons per render before).
 const ForecastGeoLayer = memo(function ForecastGeoLayer({
-  geographies, isHouse, races, noElection, selectedId, selectedNoElAbbr, t, onHover, onSelect,
+  geographies, isHouse, races, noElection, selectedId, selectedNoElAbbr, t, onHover, onSelect, onOpen,
 }: {
   geographies: GeoFeature[];
   isHouse: boolean;
@@ -145,8 +145,9 @@ const ForecastGeoLayer = memo(function ForecastGeoLayer({
   t: Theme;
   onHover: (race: ForecastSummary | null, noEl: NoElectionEntry | null) => void;
   onSelect: (race: ForecastSummary | null, noEl: NoElectionEntry | null) => void;
+  onOpen: (race: ForecastSummary | null, noEl: NoElectionEntry | null, newTab: boolean) => void;
 }) {
-  const touchStartRef = useRef<{ x: number; y: number } | null>(null);
+  const pointerStartRef = useRef<{ x: number; y: number } | null>(null);
   const byId = useMemo(() => new Map(races.map((r) => [r.id, r])), [races]);
   const byState = useMemo(() => new Map(races.map((r) => [r.state, r])), [races]);
   const noElByState = useMemo(() => new Map(noElection.map((e) => [e.state, e])), [noElection]);
@@ -171,9 +172,14 @@ const ForecastGeoLayer = memo(function ForecastGeoLayer({
         const isSelected = !!(match && selectedId === match.id);
         const isSelectedNoEl = !!(noElMatch && selectedNoElAbbr === noElMatch.abbr);
         const isInteractive = !!(match || noElMatch);
+        // A tap opens the preview card (phones/tablets); a mouse click goes straight to the page.
         const selectGeography = () => {
           if (match) onSelect(match, null);
           else if (noElMatch) onSelect(null, noElMatch);
+        };
+        const openGeography = (newTab: boolean) => {
+          if (match) onOpen(match, null, newTab);
+          else if (noElMatch) onOpen(null, noElMatch, newTab);
         };
         return (
           <Geography
@@ -184,17 +190,16 @@ const ForecastGeoLayer = memo(function ForecastGeoLayer({
               else if (noElMatch) onHover(null, noElMatch);
             }}
             onMouseLeave={() => onHover(null, null)}
-            onClick={selectGeography}
             onPointerDown={(e: React.PointerEvent) => {
-              if (e.pointerType !== "touch") { touchStartRef.current = null; return; }
-              touchStartRef.current = { x: e.clientX, y: e.clientY };
+              pointerStartRef.current = e.button === 0 ? { x: e.clientX, y: e.clientY } : null;
             }}
             onPointerUp={(e: React.PointerEvent) => {
-              if (e.pointerType !== "touch") return;
-              const start = touchStartRef.current;
-              touchStartRef.current = null;
-              if (!start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
-              selectGeography();
+              const start = pointerStartRef.current;
+              pointerStartRef.current = null;
+              // A pan of the map ends on a district too — only a press that stayed put counts.
+              if (!start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > (e.pointerType === "touch" ? 10 : 5)) return;
+              if (e.pointerType === "touch") selectGeography();
+              else openGeography(e.metaKey || e.ctrlKey);
             }}
             style={{
               default: {
@@ -307,6 +312,13 @@ export default function ForecastMap({
     setSelected(race);
     setSelectedNoElection(noEl);
   }, []);
+  const onOpen = useCallback((race: ForecastSummary | null, noEl: NoElectionEntry | null, newTab: boolean) => {
+    const href = race ? raceHref(raceType, race) : noEl ? `/${raceType}/${noEl.abbr.toLowerCase()}` : null;
+    if (!href) return;
+    if (newTab) { window.open(href, "_blank", "noopener"); return; }
+    startPendingNav(href);
+    router.push(href);
+  }, [raceType, router]);
 
   return (
     <div className="min-h-screen overflow-x-clip" style={{ background: t.bg }}>
@@ -452,6 +464,7 @@ export default function ForecastMap({
                   t={t}
                   onHover={onHover}
                   onSelect={onSelect}
+                  onOpen={onOpen}
                 />
               )}
             </Geographies>
@@ -505,11 +518,6 @@ export default function ForecastMap({
         )}
 
         </div>
-        {activeTab === "forecast" && (
-          <div className="mt-8 hidden md:block">
-            <KeyRaces races={data} basePath={`/${raceType}`} showSpecialBadge={raceType === "senate"} twoColumn />
-          </div>
-        )}
         {activeTab === "states" && (
           <div
             className="mt-5 md:mt-0 md:pr-1"

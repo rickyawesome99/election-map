@@ -2,7 +2,7 @@ import { electionYear, presPastResults } from "@/data/forecastData";
 import { TplHub } from "@/components/tpl/TplHub";
 import { TplGeoProvider } from "@/components/tpl/TplGeo";
 import { TplViewSwitch } from "@/components/tpl/TplSubNav";
-import { fmtMargin, marginColor } from "@/lib/colorScale";
+import { fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import { buildModelSummary } from "@/lib/modelSlices";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
 
@@ -39,8 +39,8 @@ export default function ModelHubPage() {
               <div className="flex shrink-0 items-end justify-between gap-6 sm:justify-end sm:gap-8">
               <div className="sm:text-right">
                 <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>50-state median</div>
-                <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 1, color: marginColor(summary.medianStateTpl) }}>{fmtMargin(summary.medianStateTpl)}</div>
-                <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>435-district median <span style={{ color: marginColor(summary.medianDistrictTpl) }}>{fmtMargin(summary.medianDistrictTpl)}</span></div>
+                <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 1, color: leanColor(summary.medianStateTpl) }}>{fmtLean(summary.medianStateTpl)}</div>
+                <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>435-district median <span style={{ color: leanColor(summary.medianDistrictTpl) }}>{fmtLean(summary.medianDistrictTpl)}</span></div>
               </div>
               <TplViewSwitch to="candidates" layout="inline" />
               </div>

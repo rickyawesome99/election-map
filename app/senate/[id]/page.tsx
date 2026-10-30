@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { candidatePageHref, partyTextColor } from "@/lib/candidatePages";
 import { senateData, senateNoElection, senateHoldovers, electionYear, type PastResult } from "@/data/forecastData";
-import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
+import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
@@ -397,8 +397,8 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
             </div>
 
             <div className="min-w-0 px-2 sm:px-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: pollMargin == null ? "var(--app-text-very-muted)" : marginColor(pollMargin) }}>
-                {pollMargin == null ? "—" : fmtMargin(pollMargin)}
+              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: pollMargin == null ? "var(--app-text-very-muted)" : leanColor(pollMargin) }}>
+                {pollMargin == null ? "—" : fmtLean(pollMargin)}
               </div>
               <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
                 Polling Avg.

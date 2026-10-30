@@ -50,7 +50,8 @@ Merge rules:
   - on-file 2026 rows of a scraped race that the scrape no longer finds are listed as "−"
     (Wikipedia removed the poll — e.g. 2026-10-20, every Wedgewood Polls row, a hoax pollster);
     they are KEPT, so review them and delete by hand if the removal is right
-  - BLOCKED_POLLSTERS are never ingested, so a deleted hoax pollster cannot come back
+  - BLOCKED_POLLSTERS are never ingested, so a deleted hoax pollster cannot come back;
+    BLOCKED_SOURCES does the same for a sponsor's poll series, matched on the citation URL
 """
 
 import csv
@@ -74,6 +75,9 @@ YEAR = 2026
 AT_LARGE = {"AK", "DE", "ND", "SD", "VT", "WY"}
 RCV_RACES = {("S", "AK", "Senate"), ("G", "AK", "Governor"), ("H", "AK", "House AK-01")}  # ranked-choice table, final round only
 BLOCKED_POLLSTERS = {"wedgewood"}  # normalised-name prefixes never ingested: Wedgewood Polls = hoax (Wikipedia purge 2026-10-20, user 2026-10-21)
+# citation-URL substrings never ingested: RedBox Research's Oct 2026 series for A Fight Worth Having
+# (Wikipedia removing it race by race as WP:RS from 2026-10-28; user dropped all 30 rows 2026-10-29)
+BLOCKED_SOURCES = {"afightworthhaving.com"}
 MONTHS = {m: i for i, m in enumerate(
     ["january", "february", "march", "april", "may", "june", "july", "august",
      "september", "october", "november", "december"], 1)}
@@ -643,7 +647,8 @@ def main():
         found += len(polls)
         have = by_race.get(key, [])
         for p in polls:
-            if any(norm_pollster(p["pollster"]).startswith(b) for b in BLOCKED_POLLSTERS):
+            if any(norm_pollster(p["pollster"]).startswith(b) for b in BLOCKED_POLLSTERS) \
+                    or any(b in (p["url"] or "") for b in BLOCKED_SOURCES):
                 continue
             k1 = (p["start"], p["end"], norm_pollster(p["pollster"]))
             k2 = (p["start"], p["end"], float(p["dem"]), float(p["rep"]))

@@ -107,7 +107,7 @@ export function CandidateName({
           {label}
         </span>
       )}
-      <span className="min-w-0 truncate">
+      <span className="min-w-0 truncate font-bold">
         {candidate?.name ? (
           <CandidateLink
             name={candidate.name}
@@ -222,7 +222,7 @@ export default function RaceTable({
                 <td className="px-4 py-3 text-left">
                   <Link prefetch={false}
                     href={`${basePath}/${(basePath === "/house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`}
-                    className="font-semibold hover:underline"
+                    className="font-bold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
                     {race.name}
@@ -322,7 +322,7 @@ export default function RaceTable({
               <div className="flex min-w-0 items-center gap-1.5">
                 <Link prefetch={false}
                   href={`${basePath}/${(basePath === "/house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`}
-                  className="min-w-0 truncate text-sm font-semibold hover:underline"
+                  className="min-w-0 truncate text-sm font-bold hover:underline"
                   style={{ color: "var(--app-text-primary)" }}
                 >
                   {race.name}
@@ -392,7 +392,7 @@ export default function RaceTable({
                 <div className="mb-2 flex items-center gap-2">
                   <Link prefetch={false}
                     href={`${basePath}/${(basePath === "/house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`}
-                    className="truncate text-base font-semibold hover:underline"
+                    className="truncate text-base font-bold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
                     {race.name}
@@ -406,7 +406,7 @@ export default function RaceTable({
                     </span>
                   )}
                 </div>
-                <div className="flex flex-col gap-1 text-xl leading-tight" style={{ fontFamily: "var(--font-serif)" }}>
+                <div className="flex flex-col gap-1 text-[1.1rem] leading-tight" style={{ fontFamily: "var(--font-serif)" }}>
                   <CandidateName candidate={race.candidates?.dem} state={race.state} slot="dem" />
                   <CandidateName candidate={race.candidates?.rep} state={race.state} slot="rep" />
                 </div>

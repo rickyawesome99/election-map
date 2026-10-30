@@ -48,8 +48,9 @@ export default function ChamberCard({ office, tally, rows, history }: { office: 
   const flipList = calledFlips.map((f) => { const r = rows.find((x) => x.prior.id === f.id); return `${r ? (office === "house" ? r.prior.label : r.prior.state) : f.id} ${f.from}→${f.to}`; }).join(", ");
   const pvCounted = pv.projectedTotal ? `${Math.round((pv.total / pv.projectedTotal) * 100)}% of ~${pv.projectedTotal >= 1e6 ? `${(pv.projectedTotal / 1e6).toFixed(1)}M` : fmtInt(pv.projectedTotal)}` : "";
 
+  // The House has no seats-not-up line, so at xl its card ends in white space; it sits closer to the next.
   return (
-    <div>
+    <div className={office === "house" ? "xl:-mb-3" : undefined}>
       <div className="flex items-baseline justify-between gap-3">
         <h3 className="text-[15px] font-bold">{OFFICE_LABEL[office]}</h3>
         <span className="text-[11px] tabular-nums" style={muted}>{tally.racesIn}/{rows.length} reporting · {tally.racesCalled} called{calledFlips.length > 0 && <> · <b className="whitespace-nowrap" title={`Called flips: ${flipList}`} style={{ color: net === 0 ? "var(--app-text-primary)" : partyColor(net > 0 ? "D" : "R") }}>{net === 0 ? "no net change" : `net ${net > 0 ? "D" : "R"}+${Math.abs(net)}`}</b></>}{called.ind > 0 && <span className="hidden max-sm:inline xl:inline"> · <b style={{ color: "var(--party-ind)" }}>{called.ind} I</b></span>}</span>

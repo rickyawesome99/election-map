@@ -13,7 +13,7 @@ import { getRaceColor } from "@/lib/colorScale";
 type Against = "sn" | "ei" | "either";
 type Filter = "disagree" | "favored" | "competitive" | "all";
 
-const fmtM = (m: number | null | undefined) => (m == null ? "—" : Math.abs(m) < 0.05 ? "Even" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
+const fmtM = (m: number | null | undefined) => (m == null ? "—" : m === 0 ? "Even" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
 const pct = (p: number | null | undefined) => (p == null ? "—" : `${Math.round(p * 100)}%`);
 const colorOf = (m: number | null | undefined) => (m == null ? "var(--app-text-very-muted)" : getRaceColor(m));
 

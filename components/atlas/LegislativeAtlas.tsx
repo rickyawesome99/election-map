@@ -57,13 +57,13 @@ const pill = (on: boolean) => ({ background: on ? "var(--app-text-primary)" : "v
 
 const PARTY_TEXT: Record<string, string> = { D: "var(--party-dem)", R: "var(--party-rep)", I: "var(--party-ind)", O: "var(--app-text-secondary)" };
 const PARTY_NAME: Record<string, string> = { D: "Democrat", R: "Republican", I: "Independent", O: "Other" };
-const fmtMargin = (m: number) => (Math.abs(m) < 0.05 ? "Even" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
+const fmtMargin = (m: number) => (m === 0 ? "Even" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
 const marginColor = (m: number) => (m > 0 ? "var(--party-rep)" : "var(--party-dem)");
 const NOT_A_CANDIDATE = /write.?in|scatter|blank|void|under.?vote|over.?vote|none of/i;
 
 /** An independent's margin over the major-party nominee: "I+4.2" or "R+4.2". */
 function fmtIndep(advantage: number, opp: "D" | "R"): string {
-  return Math.abs(advantage) < 0.05 ? "Even" : `${advantage > 0 ? "I" : opp}+${Math.abs(advantage).toFixed(1)}`;
+  return advantage === 0 ? "Even" : `${advantage > 0 ? "I" : opp}+${Math.abs(advantage).toFixed(1)}`;
 }
 
 /** A seat projected to change hands in the projection view: every sitting member is of one party
@@ -407,7 +407,7 @@ export default function LegislativeAtlas({
   // map's colour), an uncontested seat to the only major party on the ballot, and seats not up
   // to their sitting member. Whole chamber, like the other counters.
   const projectedSeats = useMemo((): ProjectedSeats | null => (mode === "projection" ? projectedSeatWinners(districts) : null), [mode, districts]);
-  const fmtM = (m: number) => (Math.abs(m) < 0.05 ? "Even" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
+  const fmtM = (m: number) => (m === 0 ? "Even" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
   const customShading = useMemo(() => {
     if (mode !== "projection") return null;
     const fill: Record<string, string> = {};
