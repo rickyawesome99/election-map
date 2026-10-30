@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 import type { RaceType } from "@/data/forecastData";
 import { ELECTION_YEAR as electionYear } from "@/lib/electionYear";
 import type { ForecastSummary } from "@/lib/forecastTypes";
-import { getRatingColors, marginToRating, fmtMargin, fmtLean } from "@/lib/colorScale";
+import { getRatingColors, marginToRating, fmtLean } from "@/lib/colorScale";
 import RaceTable, { CandidateName } from "./RaceTable";
 import { PAGE_TITLE_STYLE } from "@/lib/pageLayout";
 

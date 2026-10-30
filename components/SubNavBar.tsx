@@ -165,21 +165,21 @@ export default function SubNavBar() {
   // coming back at the top. The chevron tab reopens it mid-page; a pinned bar stays open until
   // the reader scrolls on down another PIN_RELEASE_PX.
   const [atTop, setAtTop] = useState(true);
-  const [pinned, setPinned] = useState(false);
+  // Pinned on a path: a navigation to another path unpins without an effect.
+  const [pinnedOn, setPinnedOn] = useState<string | null>(null);
+  const pinned = pinnedOn === pathname;
   const pinnedAt = useRef(0);
 
   useEffect(() => {
     const onScroll = () => {
       const y = window.scrollY;
       setAtTop(y < NAV_HEIGHT);
-      if (y > pinnedAt.current + PIN_RELEASE_PX) setPinned(false);
+      if (y > pinnedAt.current + PIN_RELEASE_PX) setPinnedOn(null);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  useEffect(() => { setPinned(false); }, [pathname]);
 
   // While a page loads under its placeholder the bar comes down, as the new page lands at the
   // top with it open, so the placeholder never shows a bare strip where the bar sits.
@@ -187,7 +187,7 @@ export default function SubNavBar() {
   const open = atTop || pinned || loading;
   const toggle = () => {
     pinnedAt.current = window.scrollY;
-    setPinned(!open);
+    setPinnedOn(open ? null : pathname);
   };
 
   return (

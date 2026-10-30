@@ -50,7 +50,7 @@ function eraIndexFor(eras: StateLegMapEra[], year: number): number {
 }
 
 export default function StateLegCalendarAuditTable() {
-  const entries = useMemo(buildEntries, []);
+  const entries = useMemo(() => buildEntries(), []);
   const [view, setView] = useState<"grid" | "eras">("grid");
 
   const allEras = entries.flatMap((e) => e.eras);

@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import AtlasTrendChart from "./AtlasTrendChart";
@@ -161,17 +162,17 @@ export default function AtlasDistrictDetail({
   const nextElections = uniq(incs.length ? incs.map((i) => i.nextElection ?? district.nextElection) : [district.nextElection]);
   const partyWord = (p: string) => (p === "D" ? "Democrat" : p === "R" ? "Republican" : "Independent");
   const aboutItems: { label: string; value: React.ReactNode }[] = [
-    { label: incs.length > 1 ? "Incumbents" : "Incumbent", value: incs.length === 0 ? "Vacant" : joinNodes(incs.map((inc) => <CandidateLink name={inc.name} abbr={abbr} color="var(--app-text-primary)" weight={700} />)) },
+    { label: incs.length > 1 ? "Incumbents" : "Incumbent", value: incs.length === 0 ? "Vacant" : joinNodes(incs.map((inc) => <CandidateLink key={inc.name} name={inc.name} abbr={abbr} color="var(--app-text-primary)" weight={700} />)) },
     ...(incs.length ? [{ label: "Party", value: parties.size === 1
       ? <span style={{ color: PARTY_COLOR[incs[0].party] }}>{partyWord(incs[0].party)}</span>
-      : joinNodes(incs.map((inc) => <span style={{ color: PARTY_COLOR[inc.party] }}>{partyWord(inc.party)}</span>)) }] : []),
+      : joinNodes(incs.map((inc) => <span key={inc.name} style={{ color: PARTY_COLOR[inc.party] }}>{partyWord(inc.party)}</span>)) }] : []),
     ...(elected.length ? [{ label: "Elected", value: elected.join(", ") }] : []),
     ...(nextElections.length ? [{ label: "Next Election", value: nextElections.join(", ") }] : []),
     ...(district.outgoing2026?.length ? [{ label: "Incumbent not running", value: joinNodes(district.outgoing2026.map((o) => (
-      <>
+      <Fragment key={o.name}>
         {(incs.length !== 1 || incs[0].name !== o.name) && <><CandidateLink name={o.name} abbr={abbr} color={PARTY_COLOR[o.party] ?? "var(--app-text-primary)"} weight={700} />{o.post ? ` (seat ${o.post})` : ""}{o.reason ? " · " : ""}</>}
         {o.reason && o.reason[0].toUpperCase() + o.reason.slice(1)}
-      </>
+      </Fragment>
     ))) }] : []),
     ...(counties.length ? [{ label: counties.length === 1 ? "County" : "Counties", value: counties.map((c) => `${c.county}${counties.length > 1 && c.popPct < 99 ? ` (${c.popPct.toFixed(0)}%)` : ""}`).join(", ") }] : []),
     ...(currentEra ? [{ label: "Map", value: <>{currentEra.source ?? "current map"}{currentEra.enactedDate && <>, enacted {currentEra.enactedDate}</>}{currentEra.years.length > 0 && <>, first used {currentEra.years[0]}</>}</> }] : []),

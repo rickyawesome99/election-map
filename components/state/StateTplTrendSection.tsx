@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { YearAggregation } from "@/lib/tplCompute";
 import CountyLeanTrendChart from "@/components/CountyLeanTrendChart";
-import { fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
+import { fmtLean, leanColor } from "@/lib/colorScale";
 
 /**
  * The state's lean by cycle since 2016: each point is the year's weighted lean (WRS), the input the

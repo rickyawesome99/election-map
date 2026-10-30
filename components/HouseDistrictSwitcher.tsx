@@ -86,12 +86,16 @@ export default function HouseDistrictSwitcher({ stateAbbr, districts, current, m
 }
 
 function LocatorMap({ stateAbbr, districts, current, onSelect }: { stateAbbr: string; districts: SwitcherDistrict[]; current: string; onSelect: (name: string) => void }) {
-  const [features, setFeatures] = useState<DistrictFeature[] | null | undefined>(() => resolvedFeatures.get(stateAbbr));
+  // Features come straight from the module cache when it has the state; the state only holds
+  // a load that finished for the state on screen (tagged, so a stale load for the previous
+  // state never paints after a switch).
+  const [loaded, setLoaded] = useState<{ abbr: string; features: DistrictFeature[] | null } | null>(null);
+  const features = resolvedFeatures.has(stateAbbr) ? resolvedFeatures.get(stateAbbr) : loaded?.abbr === stateAbbr ? loaded.features : undefined;
   const [hover, setHover] = useState<string | null>(null);
   useEffect(() => {
-    if (resolvedFeatures.has(stateAbbr)) { setFeatures(resolvedFeatures.get(stateAbbr)); return; }
+    if (resolvedFeatures.has(stateAbbr)) return;
     let live = true;
-    loadDistricts(stateAbbr).then((f) => { if (live) setFeatures(f); });
+    loadDistricts(stateAbbr).then((f) => { if (live) setLoaded({ abbr: stateAbbr, features: f }); });
     return () => { live = false; };
   }, [stateAbbr]);
   const byGeoid = useMemo(() => new Map(districts.map((d) => [d.geoid, d])), [districts]);

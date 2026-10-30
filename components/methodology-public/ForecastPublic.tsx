@@ -8,7 +8,7 @@ import {
   raceMoneyTerm, candidateQuality,
 } from "@/lib/tplCompute";
 import { alignedParty } from "@/data/raceEligibility";
-import { A, BuildUp, Chapter, KeyFigures, Label, Margin, Num, Para, QA, RatingScale, SeeIt, ShareBars, SimpleTable, Steps } from "./kit";
+import { A, BuildUp, Chapter, KeyFigures, Label, Margin, Num, QA, RatingScale, SeeIt, ShareBars, SimpleTable, Steps } from "./kit";
 
 // Public Forecast tab: the plain-language version of components/methodology/ForecastMethodology.tsx.
 // Every number is read live from the same code. When the forecast's STRUCTURE changes (a new term,

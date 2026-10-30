@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 
-import { Fragment, useState, useCallback, useMemo, useEffect, useSyncExternalStore } from "react";
+import { Fragment, useState, useCallback, useMemo, useSyncExternalStore } from "react";
 import StateLegDistrictMap from "./StateLegDistrictMap";
 import StateLegDistrictTable, { districtRowCount } from "./StateLegDistrictTable";
 import { candidateSlug } from "@/lib/candidateSlug";
@@ -372,7 +372,7 @@ export default function StateLegSection({
   // A tab the reader clicks wins over the hash from then on.
   const [chamberChoice, setChamberChoice] = useState<Chamber | null>(null);
   const chamber = chamberChoice ?? hashChamber ?? "house";
-  const [selectedKey, setSelectedKey] = useState<string | null>(null);
+  const [selection, setSelection] = useState<{ key: string; viewMode: MapViewMode; year: number | null } | null>(null);
   const [viewMode, setViewMode] = useState<MapViewMode>("seats");
   const [resultsYear, setResultsYear] = useState<number | null>(null);
   // Where unselecting a year card returns to — the last shading the map was on before a year.
@@ -436,6 +436,12 @@ export default function StateLegSection({
     [calendar]
   );
   const activeYear = resultsYear != null && electionYears.includes(resultsYear) ? resultsYear : electionYears[0] ?? null;
+  // A selected district belongs to the view and year it was picked in; switching either drops it.
+  const selectedKey = selection && selection.viewMode === viewMode && selection.year === activeYear ? selection.key : null;
+  const setSelectedKey = useCallback(
+    (key: string | null) => setSelection(key == null ? null : { key, viewMode, year: activeYear }),
+    [viewMode, activeYear],
+  );
 
   // The whole-state results file is only fetched once a past year is actually opened.
   // Fetched as soon as the chamber has any past election, not only once a year is opened: the
@@ -469,7 +475,7 @@ export default function StateLegSection({
   // invalidates it, since the same code can be a different place or no place at all.
   const handleChamberSwitch = useCallback((c: Chamber) => {
     setChamberChoice(c);
-    setSelectedKey(null);
+    setSelection(null);
   }, []);
 
   // Asking for a past year with none chosen takes the most recent, so the history cards always
@@ -520,10 +526,6 @@ export default function StateLegSection({
   const boundaryBadge = viewMode === "results" && activeYear != null
     ? (historicalVintage ? `${activeYear} boundaries` : "Current boundaries")
     : null;
-  useEffect(() => {
-    setSelectedKey(null);
-  }, [viewMode, activeYear]);
-
   const rowsListed = districtRowCount(districts, results, viewMode);
 
   const selectedDistrict = selectedKey ? districts.find((d) => d.number === selectedKey) : undefined;

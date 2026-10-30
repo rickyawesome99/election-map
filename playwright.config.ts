@@ -8,14 +8,19 @@ export default defineConfig({
   },
   fullyParallel: true,
   retries: process.env.CI ? 2 : 0,
-  reporter: process.env.CI ? "github" : "list",
+  reporter: process.env.CI ? [["github"], ["html", { open: "never" }]] : "list",
   use: {
     baseURL: "http://127.0.0.1:3000",
     trace: "on-first-retry",
     screenshot: "only-on-failure",
   },
   webServer: {
-    command: "npm run dev -- --hostname 127.0.0.1 --port 3000",
+    // CI tests the production build (`npm run build` runs first in the workflow); locally the
+    // suite reuses the always-on dev server. `npx next dev` (not `npm run dev`) so a fallback
+    // start never runs the predev generators over a server that is already up.
+    command: process.env.CI
+      ? "npx next start --hostname 127.0.0.1 --port 3000"
+      : "npx next dev --hostname 127.0.0.1 --port 3000",
     url: "http://127.0.0.1:3000",
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

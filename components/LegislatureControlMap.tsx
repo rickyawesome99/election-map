@@ -101,7 +101,7 @@ export default function LegislatureControlMap({ states, year }: { states: Legisl
   const [view, setView] = useState<View>("projected");
   const [side, setSide] = useState<Side>("house");
   const [hovered, setHovered] = useState<LegislatureMapState | null>(null);
-  const tip = useMapTooltip(14, 8);
+  const { onMouseMove: onTooltipMove, tooltipRef } = useMapTooltip(14, 8);
   const byName = new Map(states.map((s) => [s.name, s]));
 
   const counts: Record<ControlClass, number> = { superD: 0, majD: 0, split: 0, majR: 0, superR: 0 };
@@ -133,9 +133,9 @@ export default function LegislatureControlMap({ states, year }: { states: Legisl
         </div>
       </div>
 
-      <div className="relative w-full max-w-4xl mx-auto" style={{ aspectRatio: "975 / 610" }} onMouseMove={tip.onMouseMove}>
+      <div className="relative w-full max-w-4xl mx-auto" style={{ aspectRatio: "975 / 610" }} onMouseMove={onTooltipMove}>
         {hovered && hov && (
-          <div ref={tip.tooltipRef} className="hidden md:block absolute z-20 pointer-events-none rounded-lg text-xs"
+          <div ref={tooltipRef} className="hidden md:block absolute z-20 pointer-events-none rounded-lg text-xs"
             style={{ width: 210, padding: "8px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}>
             <div className="font-bold">{hovered.name} {hov.label}</div>
             {view === "projected" && !hov.projected ? <div className="mt-1" style={{ color: "var(--app-text-muted)" }}>No {year} election</div> : hovSeats ? (

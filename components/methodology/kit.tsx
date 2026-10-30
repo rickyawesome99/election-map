@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
+import { fmtLean, leanColor } from "@/lib/colorScale";
 
 // Presentational pieces shared by every /analysis/internal-methodology tab. Flat by design: a section is a
 // large serif heading over a 2px rule, sub-blocks are small-caps labels over a 1px rule, and

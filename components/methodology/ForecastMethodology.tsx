@@ -9,10 +9,9 @@ import { ALIGNED_INDEPENDENTS } from "@/data/raceEligibility";
 import { forecastsFor, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
 import {
   getTplFit, getEnvironmentModel, getNationalEnvironment, getWarMoneyModel, incumbentAdvantage, liveHouseEffects,
-  calculateStateTpl, calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, raceIncumbencyPts, raceMoneyTerm, candidateQuality,
+  calculateStateTpl, calculateDistrictTpl, effectiveEnvironment, raceIncumbencyPts, raceMoneyTerm, candidateQuality,
   computeCandidateEffects, FF_K, FF_MAX, WAR_LAMBDA, WAR_RECENCY_DECAY, WAR_RECENCY_DECAY_STATEWIDE,
 } from "@/lib/tplCompute";
-import { alignedParty } from "@/data/raceEligibility";
 import { formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { Block, Code, Constants, D, DataTable, Defs, Derivation, FilesAndCommands, Formula, Ledger, M, N, P, R, Section, pct, signed } from "./kit";
 
@@ -35,7 +34,6 @@ const DOCUMENTED_IN = {
 /** The live ledger of one race, term by term — the same numbers its race page shows. */
 function ledgerOf(race: ForecastedRace) {
   const tpl = race.raceType === "house" ? calculateDistrictTpl(race.id) : calculateStateTpl(race.stateAbbr, race.state);
-  const inc = [race.candidates?.dem, race.candidates?.rep].find((c) => c?.incumbent) ?? null;
   const incPts = raceIncumbencyPts(race);
   return { tpl, env: effectiveEnvironment(race.stateAbbr), incPts, money: raceMoneyTerm(race), quality: candidateQuality(race) };
 }

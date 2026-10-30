@@ -3,7 +3,7 @@
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { countyDisplayName } from "@/lib/countyName";
 import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
-import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { memo, useCallback, useMemo, useRef, useState } from "react";
 import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
 import Geographies from "@/components/maps/Geographies";
 import type { Theme } from "./ForecastMap";
@@ -82,7 +82,6 @@ const MAP_LEGEND = [
 const STAT_LABEL = "mb-1 text-[10px] font-bold uppercase tracking-wide";
 // Drawn by hand (no native chrome) so the dropdowns match the 28px geography toggle in every
 // browser: Chrome's native select ran 31px tall, Safari's 20px.
-const SELECT_CLASS = "h-7 appearance-none rounded-md pl-2.5 pr-7 text-xs font-semibold leading-none";
 // Phones: tighter padding (the chevron sits 6px from the edge) so the whole control row fits one line.
 const SELECT_CLASS_TIGHT = "h-7 appearance-none rounded-md pl-2 pr-6 text-xs font-semibold leading-none sm:pl-2.5 sm:pr-7";
 const SELECT_STYLE_TIGHT = { backgroundPosition: "right 6px center" };
@@ -278,7 +277,10 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   const [year, setYear] = useState<number>(2024);
   // "Special elections only" toggle — only meaningful for senate on a year where at
   // least one state held both a regular and a special race (SENATE_DOUBLE_YEARS).
-  const [specialOnly, setSpecialOnly] = useState(false);
+  // The special-only toggle is tagged with the office and year it was set for, so it reads as
+  // off whenever it wouldn't apply (wrong office, or a senate year with no double election) and
+  // doesn't come back silently pre-toggled if the user navigates back to a double year later.
+  const [specialOnlyFor, setSpecialOnlyFor] = useState<string | null>(null);
   // Last intentionally-settled pan/zoom (as opposed to whatever react-simple-maps'
   // internal d3-zoom transform currently is, which can drift by a pixel or two from a
   // plain click — see gestureRef below).
@@ -326,17 +328,12 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   const raceLabel = RACE_TYPES.find((r) => r.key === raceType)!.label;
   const unitLabel = UNIT_LABEL[geoLevel];
   const hasSpecialThisYear = raceType === "senate" && SENATE_DOUBLE_YEARS.has(year);
+  const specialOnly = hasSpecialThisYear && specialOnlyFor === `${raceType}:${year}`;
+  const setSpecialOnly = (on: boolean) => setSpecialOnlyFor(on ? `${raceType}:${year}` : null);
   const seatCount = popVoteData.find(
     (row) => row.year === year && row.type.toLowerCase() === raceType,
   );
   const seatLabel = raceType === "president" ? "Electoral votes" : `${raceLabel} seats`;
-
-  // The toggle button disappears whenever it wouldn't apply (wrong office, or a senate
-  // year with no double election) — reset its state too so it doesn't come back silently
-  // pre-toggled if the user navigates back to a double year later.
-  useEffect(() => {
-    if (!hasSpecialThisYear) setSpecialOnly(false);
-  }, [hasSpecialThisYear]);
 
   // One static slice per (level, office, year); the browser caches each once fetched, so
   // flipping back to a previous selection is instant. Until it arrives every unit paints as
@@ -463,7 +460,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
             {hasSpecialThisYear && (
               <button
                 type="button"
-                onClick={() => setSpecialOnly((v) => !v)}
+                onClick={() => setSpecialOnly(!specialOnly)}
                 aria-pressed={specialOnly}
                 title={specialOnly ? "Showing special elections only — click to show all" : "Show special elections only"}
                 className="h-7 rounded-md px-2 text-xs font-semibold sm:px-2.5"

@@ -10,7 +10,7 @@ import { houseData, senateData, senateNoElection, senateHoldovers } from "@/data
 import { countyDemographics } from "@/data/countyDemographics";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { calculateCountyModel } from "@/lib/tplCompute";
-import { fmtMargin, marginColor, marginToRating, getRatingColors, fmtLean, leanColor } from "@/lib/colorScale";
+import { marginToRating, getRatingColors, fmtLean, leanColor } from "@/lib/colorScale";
 import BackButton from "@/components/BackButton";
 import { pastElectionHref } from "@/lib/pastElections";
 import StateCountyMap from "@/components/StateCountyMap";

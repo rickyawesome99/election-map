@@ -8,7 +8,7 @@ import { DARK_THEME, LIGHT_THEME, type Theme } from "@/components/ForecastMap";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { getRaceColor } from "@/lib/colorScale";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
-import { fmtInt, fmtMargin, marginSideColor, partyColor, fmtCall, callSideColor } from "@/lib/resultsFormat";
+import { fmtInt, marginSideColor, partyColor, fmtCall, callSideColor } from "@/lib/resultsFormat";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { lastName } from "@/lib/personName";
 import type { ResultsRow } from "@/components/results/ResultsPage";

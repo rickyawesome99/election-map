@@ -9,7 +9,6 @@ import { CALIBRATION_BANDS, KIND_LABEL, SOURCE_LABEL, calibration, fmtPct, party
 type Tip = { left: number; top: number; body: ReactNode } | null;
 
 const subhead = "pb-2 text-[10px] font-bold uppercase tracking-wider";
-const th = "whitespace-nowrap px-2 py-2 text-[10px] font-bold uppercase tracking-wider";
 const thStyle = { color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" };
 
 // Calibration plot geometry (SVG user units; the SVG scales to its container).

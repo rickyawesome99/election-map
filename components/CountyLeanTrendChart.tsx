@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { NO_RECHARTS, useRecharts } from "@/lib/useRecharts";
 import type { YearAggregation } from "@/lib/tplCompute";
-import { fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
+import { fmtLean, leanColor } from "@/lib/colorScale";
 import { niceAxisConfig } from "@/lib/chartAxis";
 
 type ChartPoint = { year: string; wrs: number | null };

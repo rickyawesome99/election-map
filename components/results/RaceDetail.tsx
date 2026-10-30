@@ -63,7 +63,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
   // named on the map for each bloc's leading candidate in the feed (the forecast's nominee before any votes).
   const blocSides = useMemo(() => {
     if (!prior.jungle && !prior.rcv) return {};
-    const lead = (slot: "dem" | "rep", party: Party) => (!live?.total ? null : live.candidates.find((c) => c.name === prior[slot].name || partyOf(c.party) === party)?.name) ?? prior[slot].name;
+    const lead = (slot: "dem" | "rep", party: Party) => (!live?.total ? null : live.candidates.find((c) => c.nominee === slot || partyOf(c.party) === party)?.name) ?? prior[slot].name;
     return { sides: { dem: { name: lead("dem", "D"), party: prior.dem.party }, rep: { name: lead("rep", "R"), party: prior.rep.party } } };
   }, [prior, live]);
 
@@ -112,8 +112,8 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
     const fromPrior = (s: "dem" | "rep") => ({ name: prior[s].name, party: s === "dem" ? "Democratic" : "Republican", slot: prior[s].party, votes: 0, percent: 0, winner: false, incumbent: prior[s].incumbent, photo: prior[s].photo, linked: isRealName(prior[s].name) });
     if (!live?.candidates.length) return [fromPrior("dem"), fromPrior("rep")];
     return live.candidates.map((c): Cand => {
-      const s = c.name === prior.dem.name || /^Democrat/.test(c.party) ? "dem" : c.name === prior.rep.name || /^Republican/.test(c.party) ? "rep" : null;
-      const own = !!s && prior[s].name === c.name;
+      const s = c.nominee ?? (/^Democrat/.test(c.party) ? "dem" : /^Republican/.test(c.party) ? "rep" : null);
+      const own = !!c.nominee;
       return { ...c, slot: s ? prior[s].party : "I", incumbent: c.incumbent || (!!s && own && prior[s].incumbent), photo: s && own ? prior[s].photo : null, linked: own };
     }).sort((a, b) => b.votes - a.votes).slice(0, 5);
   }, [live, prior]);

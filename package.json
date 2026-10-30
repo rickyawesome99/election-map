@@ -2,6 +2,9 @@
   "name": "election-map",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -22,9 +25,11 @@
     "state-leg-money": "node scripts/build-state-leg-finance.mjs && tsx --conditions=react-server scripts/stateLegBacktest.ts --emit && tsx --conditions=react-server scripts/stateLegBacktest.ts --money --emit && tsx --conditions=react-server scripts/buildStateLegAtlasSlices.ts",
     "civic-ids": "python3 scripts/fetch-civicapi-race-ids.py",
     "archive-results": "node scripts/archive-results.mjs",
-    "publish-sim-night": "tsx --conditions=react-server scripts/publish-sim-night.ts"
+    "publish-sim-night": "tsx --conditions=react-server scripts/publish-sim-night.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "d3-geo": "^3.1.1",
     "maplibre-gl": "^5.16.0",
     "next": "16.1.6",

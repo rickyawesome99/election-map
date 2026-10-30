@@ -51,7 +51,8 @@ test("presidential state pages render with electoral votes, and Maine lists its 
 test("House election pages draw the district's counties with shared counties hatched", async ({ page }) => {
   await page.goto("/house/pa-07/2022");
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Wild");
-  await expect(page.getByText(/on the 2022 map/)).toBeVisible();
+  // The swing line says the prior result ran on the old lines (PA redrew for 2022).
+  await expect(page.getByText(/in 2020, old lines/)).toBeVisible();
   // The map is plain SVG: the district's pieces are painted, other districts' shares hatched.
   await expect(page.locator("svg pattern")).toHaveCount(1, { timeout: 20_000 });
   await expect(page.locator("svg path[fill^='url(#hatch']").first()).toBeVisible();

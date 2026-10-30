@@ -3,7 +3,7 @@ import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, 
 import { candidatePageHref, partyTextColor } from "@/lib/candidatePages";
 import { getStatewideMargin, getNationalMargin } from "@/lib/statewideMargins";
 import { pviHistory } from "@/lib/pviHistory";
-import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
+import { getRatingColors, formatProjectedMargin, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
 import HouseDistrictMapTabs from "@/components/HouseDistrictMapTabs";
@@ -14,11 +14,10 @@ import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE, TRACT_ESTIMATED_DISTRI
 import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
+import { calculateDistrictTpl, effectiveEnvironment, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace, forecastsFor } from "@/lib/forecast";
 import { getRaceForecastHistory } from "@/lib/forecastHistory";
 import { RaceForecastTrend } from "@/components/ForecastTrend";
-import { alignedParty } from "@/data/raceEligibility";
 import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { pastElectionHref } from "@/lib/pastElections";
@@ -122,8 +121,6 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
     ? pvi2026 === 0 ? "EVEN" : pvi2026 > 0 ? `R+${pvi2026}` : `D+${Math.abs(pvi2026)}`
     : "TBD";
   const districtTpl = calculateDistrictTpl(race.id);
-  const districtTplId = parseInt(race.id, 10).toString();
-  const incumbentParty = incumbentCandidate ? alignedParty(incumbentCandidate) : null;
   const incumbentPts = raceIncumbencyPts(race); // office advantage + competitive-seat extra
   const fundraising = raceFundraising2026("house", race.id);
   const fundraisingSource = raceFundraisingSource2026("house", race.id);

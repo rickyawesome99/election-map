@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { fmtMargin, fmtLean } from "@/lib/colorScale";
+import { fmtLean } from "@/lib/colorScale";
 
 // Pieces for the public /methodology page: the plain-language version of Internal Methodology
 // (/analysis/internal-methodology). Same flat house style as the rest of the site — headings over
@@ -126,13 +126,14 @@ export function SimpleTable({ head, rows, align, caption }: { head: ReactNode[];
  *  even. R-positive values; bars toward the Republican side are red, toward the Democratic side blue. */
 export interface BuildStep { label: string; note?: ReactNode; value: number; total?: boolean }
 export function BuildUp({ steps }: { steps: BuildStep[] }) {
+  const rows: Array<BuildStep & { from: number; to: number }> = [];
   let run = 0;
-  const rows = steps.map((s) => {
+  for (const s of steps) {
     const from = s.total ? 0 : run;
     const to = s.total ? s.value : run + s.value;
-    if (s.total) run = s.value; else run = to;
-    return { ...s, from, to };
-  });
+    run = to;
+    rows.push({ ...s, from, to });
+  }
   const extent = Math.max(10, ...rows.flatMap((r) => [Math.abs(r.from), Math.abs(r.to)]));
   const D = Math.ceil(extent / 5) * 5;
   const x = (v: number) => ((v + D) / (2 * D)) * 100;

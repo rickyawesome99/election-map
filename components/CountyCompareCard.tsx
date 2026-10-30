@@ -1,5 +1,5 @@
 import { calculateCountyModel, calculateStateTpl, getMedianStateTpl } from "@/lib/tplCompute";
-import { fmtMargin, fmtLean } from "@/lib/colorScale";
+import { fmtLean } from "@/lib/colorScale";
 
 function directionWord(diff: number): string {
   return diff >= 0 ? "more Republican" : "more Democratic";

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { CandidateHistoryEntry } from "@/lib/candidateIndex";
 import { candidatePhoto } from "@/lib/candidatePhotos";
-import { getRatingColors, fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
+import { getRatingColors, fmtLean, leanColor } from "@/lib/colorScale";
 import { notFound, permanentRedirect } from "next/navigation";
 import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";

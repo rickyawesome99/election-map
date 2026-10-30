@@ -17,26 +17,44 @@ test("turnout page shows the national figures, the map and the state table", asy
   expect(await rows.count()).toBeGreaterThan(50); // 50 states + DC + the national row
   // default: 2024 President sorted by rate, highest first
   await expect(rows.nth(1).locator("td").nth(3)).toHaveText(/^\d\d\.\d%$/);
-  // switch to House 2022: the unopposed flag appears somewhere
-  await byState.getByRole("button", { name: "House", exact: true }).click();
-  await byState.getByRole("button", { name: "2022", exact: true }).click();
+  // switch to House 2022 (the office and year pickers sit on the map and drive the table):
+  // the unopposed flag appears somewhere. Retried because a change sent before hydration is lost.
+  const yearPicker = page.getByLabel("Year", { exact: true });
+  await expect(async () => {
+    await page.getByLabel("Race", { exact: true }).selectOption("house");
+    await expect(yearPicker.locator("option", { hasText: "2022" })).toHaveCount(1, { timeout: 1_000 });
+  }).toPass({ timeout: 20_000 });
+  await yearPicker.selectOption("2022");
   await expect(byState.getByText(/unopposed/).first()).toBeVisible();
 });
 
 test("turnout page loads the district slice and the 2026 estimate", async ({ page }) => {
   await page.goto("/analysis/turnout");
+  // The district table is the Districts level of the map section. Retried because a click sent
+  // before hydration is lost.
   const districts = page.locator("section#by-district");
+  await expect(async () => {
+    await page.getByRole("button", { name: "Districts", exact: true }).click();
+    await expect(districts).toBeVisible({ timeout: 1_000 });
+  }).toPass({ timeout: 20_000 });
   await expect(districts.getByRole("heading", { name: "Turnout by House district" })).toBeVisible({ timeout: 20_000 });
   const rows = districts.locator("tbody tr");
   await expect.poll(async () => rows.count(), { timeout: 20_000 }).toBeGreaterThan(30);
   await expect(rows.first().locator("td").first()).toHaveText(/^[A-Z]{2}-\d\d/);
 
+  // The 2026 estimate is the "2026 estimate" metric, scoped to the map's office picker.
+  await page.getByLabel("Metric", { exact: true }).selectOption({ label: "2026 estimate" });
+  await page.getByLabel("Race", { exact: true }).selectOption("senate");
   const estimate = page.locator("section#estimate");
   await expect(estimate.getByRole("heading", { name: "2026 turnout estimate" })).toBeVisible();
-  await expect(estimate.getByText(/Georgia · Senate/)).toBeVisible();
+  // The county split is the "By county" view: Georgia's Senate race.
+  await estimate.getByRole("button", { name: "By county", exact: true }).click();
+  await estimate.getByLabel("State", { exact: true }).selectOption("GA");
   const counties = estimate.locator("table").first().locator("tbody tr");
+  await expect(counties.first()).toContainText("Fulton", { timeout: 20_000 });
+  // The table opens on the top 25 counties; "Show all" unfolds the rest.
+  await estimate.getByRole("button", { name: /Show all \d+ counties/ }).click();
   await expect.poll(async () => counties.count(), { timeout: 20_000 }).toBeGreaterThan(100); // Georgia's 159 counties
-  await expect(counties.first()).toContainText("Fulton");
 });
 
 test("turnout methodology tab renders its backtest", async ({ page }) => {

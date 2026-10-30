@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ComposableMap, Geography } from "react-simple-maps";
 import Geographies from "@/components/maps/Geographies";
-import { fmtMargin, formatProjectedMargin, getRaceColor, marginToRating, fmtLean } from "@/lib/colorScale";
+import { formatProjectedMargin, getRaceColor, marginToRating, fmtLean } from "@/lib/colorScale";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { statesData } from "@/data/statesData";
 import type { RaceType } from "@/data/forecastData";
@@ -167,7 +167,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
         </div>
       </section>
 
-      <main className={`${PAGE_CONTAINER} py-6 sm:py-8`}>
+      <main className={`${PAGE_CONTAINER} pb-6 pt-2 sm:pb-8 sm:pt-0`}>
         {/* Map, Other Forecasts, then Key Races in two columns: the content column is too narrow to share. */}
         <div className="grid gap-8">
           {/* Election night: the live results page, boxed at the top (user, 2026-10-25). */}

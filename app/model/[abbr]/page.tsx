@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { TplStatePage } from "@/components/tpl/TplStatePage";
-import { fmtMargin, fmtLean } from "@/lib/colorScale";
+import { fmtLean } from "@/lib/colorScale";
 import { districtModelSlice, modelStateParams, stateModelSlice } from "@/lib/modelSlices";
 
 // One prerendered page per state (/model/oh). The state's full pipeline and its first

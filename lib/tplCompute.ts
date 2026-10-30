@@ -334,8 +334,7 @@ export function getRawMargin(
   race: string,
   district: string | undefined,
   year: number,
-  stateAbbr: string,
-  stateName: string
+  stateAbbr: string
 ): number | null {
   if (race === "President") {
     const e = (presPastResults[stateAbbr] ?? []).find((r) => r.year === year);
@@ -621,7 +620,7 @@ export function getTplFit(): TplFit {
   for (const { abbr, name } of statesData) {
     for (const stub of generateRaceList(abbr, name)) {
       if (stub.eligibility !== "eligible") continue;
-      const margin = getRawMargin(stub.race, stub.district, stub.year, abbr, name);
+      const margin = getRawMargin(stub.race, stub.district, stub.year, abbr);
       if (margin == null) continue;
       const ff = ffStripPts(raceFundraisingFor(stub.raceType, abbr, stub.district, stub.race, stub.year));
       const key = `${abbr}:${stub.year}:${stub.raceType}`;
@@ -725,7 +724,7 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
   const beta = fit.beta[stateAbbr]?.shrunk ?? 1;
   const stubs = generateRaceList(stateAbbr, stateName);
   const races: ComputedRace[] = stubs.map((stub) => {
-    const rawMargin = getRawMargin(stub.race, stub.district, stub.year, stateAbbr, stateName);
+    const rawMargin = getRawMargin(stub.race, stub.district, stub.year, stateAbbr);
     const inAggregation = stub.year in G.YEAR_WEIGHTS;
     let minValidYear = 0;
     let maxValidYear = Number.POSITIVE_INFINITY;

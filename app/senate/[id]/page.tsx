@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { candidatePageHref, partyTextColor } from "@/lib/candidatePages";
 import { senateData, senateNoElection, senateHoldovers, electionYear, type PastResult } from "@/data/forecastData";
-import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
+import { getRatingColors, formatProjectedMargin, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
@@ -11,7 +11,7 @@ import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProje
 import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
+import { calculateStateTpl, effectiveEnvironment, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace } from "@/lib/forecast";
 import { getRaceForecastHistory } from "@/lib/forecastHistory";
 import { RaceForecastTrend } from "@/components/ForecastTrend";

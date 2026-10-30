@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import AppShell from "@/components/AppShell";
 import SiteFooter from "@/components/SiteFooter";
@@ -55,6 +56,7 @@ export default async function RootLayout({
         <AppShell />
         {children}
         <SiteFooter />
+        <Analytics />
       </body>
     </html>
   );

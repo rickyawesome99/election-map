@@ -27,6 +27,8 @@ const CAVEAT: Record<string, string> = {
   partyId: "The strongest of the three. Party ID with leaners tracks the presidential vote almost one for one and the House vote with a slope near one; 2018, when the House vote ran six points ahead of a Democratic ID lead of under three, is the outlier. Gallup's third quarter of 2026 is the widest Democratic lead since 2008.",
 };
 
+const Colored = ({ v, text }: { v: number | null; text: string }) => <Fig><span style={{ color: marginColor(v) }}>{text}</span></Fig>;
+
 const signed = (v: number | null, digits = 1) => (v == null ? "—" : Math.abs(v) < 0.05 ? "0.0" : `${v > 0 ? "+" : "−"}${Math.abs(v).toFixed(digits)}`);
 const Margin = ({ v }: { v: number | null }) => <span className="font-semibold" style={{ color: marginColor(v) }}>{fmtMargin(v)}</span>;
 const fmtDate = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
@@ -124,7 +126,6 @@ export default function PopularVotePage() {
   const net = -approval.diff;
   const direction = target.direction ? target.direction.right - target.direction.wrong : null;
   const partyId = predictorValue(target, "partyId");
-  const Colored = ({ v, text }: { v: number | null; text: string }) => <Fig><span style={{ color: marginColor(v) }}>{text}</span></Fig>;
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>

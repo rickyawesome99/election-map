@@ -126,7 +126,7 @@ function diffColor(v: number | null, warnAt: number, badAt: number): string {
 }
 
 export default function StateLegPres2024AuditTable() {
-  const allRows = useMemo(buildRows, []);
+  const allRows = useMemo(() => buildRows(), []);
   const [sortKey, setSortKey] = useState<SortKey>("marginDiff");
   const [sortDir, setSortDir] = useState<1 | -1>(-1);
   const [onlyGaps, setOnlyGaps] = useState(false);

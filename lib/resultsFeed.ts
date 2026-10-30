@@ -64,7 +64,9 @@ function nameMatcher(prior: RacePrior): (name: string, type: string) => string |
   };
 }
 
-const lastName = (n: string) => n.trim().toLowerCase().replace(/[.,'"]/g, "").replace(/\s+(jr|sr|ii|iii|iv)$/i, "").split(/\s+/).pop() ?? "";
+// Accents dropped (Barragán is Barragan in our data) and a ticket's running mate cut ("Phil Weiser
+// and Lesley Dahlkemper" in Colorado's feed).
+const lastName = (n: string) => n.normalize("NFD").replace(/[̀-ͯ]/g, "").split(/\s+and\s+/i)[0].trim().toLowerCase().replace(/[.,'"]/g, "").replace(/\s+(jr|sr|ii|iii|iv)$/i, "").split(/\s+/).pop() ?? "";
 
 /** Which feed candidate is our Democratic slot and which our Republican slot: by party, then by
  *  surname for an independent slot (Osborn in NE), then the largest candidate of that party. */
@@ -115,8 +117,11 @@ export function normalizeRace(prior: RacePrior, raw: RawRace, fetchedAt = Date.n
   const winner = cands.find((c) => c.winner);
   const called = !!raw.called_at || !!winner;
   const winnerParty: Party | null = winner ? (winner === dem ? prior.dem.party : winner === rep ? prior.rep.party : partyOf(winner.party)) : null;
+  // A slot filled by party alone (the surname differs) is not our nominee, so it gets no tag.
+  const nominee = (c: RawCandidate): "dem" | "rep" | undefined =>
+    c === dem && lastName(c.name ?? "") === lastName(prior.dem.name) ? "dem" : c === rep && lastName(c.name ?? "") === lastName(prior.rep.name) ? "rep" : undefined;
   const candidates: LiveCandidate[] = cands
-    .map((c) => ({ name: c.name ?? "", party: c.party ?? "", votes: num(c.votes), percent: num(c.percent), winner: !!c.winner, incumbent: !!c.incumbent }))
+    .map((c) => ({ name: c.name ?? "", party: c.party ?? "", votes: num(c.votes), percent: num(c.percent), winner: !!c.winner, incumbent: !!c.incumbent, nominee: nominee(c) }))
     .sort((a, b) => b.votes - a.votes);
   let counties: LiveCounty[] | null = null;
   if (raw.region_results && typeof raw.region_results === "object") {

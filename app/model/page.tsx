@@ -2,7 +2,7 @@ import { electionYear, presPastResults } from "@/data/forecastData";
 import { TplHub } from "@/components/tpl/TplHub";
 import { TplGeoProvider } from "@/components/tpl/TplGeo";
 import { TplViewSwitch } from "@/components/tpl/TplSubNav";
-import { fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
+import { fmtLean, leanColor } from "@/lib/colorScale";
 import { buildModelSummary } from "@/lib/modelSlices";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
 

@@ -31,8 +31,10 @@ test("robots.txt points at the sitemap and keeps crawlers out of the audit pages
   expect(txt).toMatch(/Sitemap: .*\/sitemap\/1\.xml/);
 });
 
-test("pages carry share cards: the site card by default, a race card on race pages", async ({ page, request }) => {
-  for (const [path, card] of [["/overview", "/opengraph-image.png"], ["/senate/ga", "/senate/ga/opengraph-image"], ["/house/az-06", "/house/az-06/opengraph-image"]]) {
+test("pages carry the static site share card, race pages included", async ({ page, request }) => {
+  // Per-race cards were dropped in v3.05 (2026-10-23) for the prebuilt site card on every page.
+  const card = "/opengraph-image.png";
+  for (const path of ["/overview", "/senate/ga", "/house/az-06"]) {
     await page.goto(path);
     const image = await page.locator('meta[property="og:image"]').getAttribute("content");
     expect(new URL(image!).pathname).toBe(card);

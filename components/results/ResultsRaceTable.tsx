@@ -1,7 +1,7 @@
 "use client";
 
 import { lastName } from "@/lib/personName";
-import { fmtClose, fmtInt, fmtMargin, marginSideColor, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
+import { fmtClose, fmtInt, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import type { Party } from "@/lib/resultsTypes";
 import type { ResultsRow } from "@/components/results/ResultsPage";
 

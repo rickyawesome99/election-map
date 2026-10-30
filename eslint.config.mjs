@@ -16,6 +16,14 @@ const eslintConfig = defineConfig([
     "data-entry/**",
     // Claude Code worktrees
     ".claude/worktrees/**",
+    // Generated data (millions of lines; ESLint runs out of memory on it)
+    "data/**",
+    // Static assets and prebuilt JSON
+    "public/**",
+    // Hand-run pipeline scripts and e2e output — tooling, not shipped code
+    "scripts/**",
+    "test-results/**",
+    "playwright-report/**",
   ]),
 ]);
 

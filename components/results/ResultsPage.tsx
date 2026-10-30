@@ -13,7 +13,7 @@ import ResultsRaceTable from "@/components/results/ResultsRaceTable";
 import { loadStaticJson } from "@/lib/useStaticJson";
 import { fetchRaces, normalizeRace, CIVIC_ATTRIBUTION } from "@/lib/resultsFeed";
 import { projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
-import { closeMinutes, fmtClose, fmtMargin, fmtTime, marginSideColor, partyColor, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
+import { closeMinutes, fmtClose, fmtTime, partyColor, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
 import { ELECTION_DATE, FEED_OPENS_AT, OFFICE_LABEL, RESULTS_OFFICES, type LiveRace, type PriorsSlice, type RacePrior, type RaceProjection, type ResultsOffice, type SeatSeries, type ArchiveSeries, type RaceHistory } from "@/lib/resultsTypes";
 

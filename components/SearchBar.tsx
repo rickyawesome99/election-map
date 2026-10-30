@@ -226,7 +226,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
             maxHeight: "min(70vh, 520px)",
             overflowY: "auto",
             boxShadow: "0 4px 16px rgba(0,0,0,0.18)",
-            background: "var(--app-panel)",
+            background: "var(--app-bg)",
             border: "1px solid var(--app-border)",
           }}
           onPointerDown={(e) => {

@@ -78,7 +78,9 @@ export type PriorsSlice = { office: ResultsOffice; builtAt: string; races: RaceP
 
 // ── Live feed, normalized ─────────────────────────────────────────────────────
 
-export type LiveCandidate = { name: string; party: string; votes: number; percent: number; winner: boolean; incumbent: boolean };
+/** `nominee`: this is the forecast's D or R nominee under the feed's spelling ("Michael "Dr. Mike"
+ *  Katz" for Michael Katz), matched by surname, so the page can show our photo and link. */
+export type LiveCandidate = { name: string; party: string; votes: number; percent: number; winner: boolean; incumbent: boolean; nominee?: "dem" | "rep" };
 
 export type LiveCounty = {
   fips: string | null;

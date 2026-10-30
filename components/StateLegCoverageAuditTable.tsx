@@ -169,7 +169,7 @@ function fmtNum(v: number | null | undefined): string {
 }
 
 export default function StateLegCoverageAuditTable() {
-  const allRows = useMemo(buildCoverageRows, []);
+  const allRows = useMemo(() => buildCoverageRows(), []);
   const [view, setView] = useState<"grid" | "table">("grid");
   const [sortKey, setSortKey] = useState<SortKey>("status");
   const [sortDir, setSortDir] = useState<1 | -1>(-1);
