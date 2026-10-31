@@ -33,7 +33,7 @@ import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { projectRace, raceSigma, winProbabilityD, getTplFit, getNationalEnvironment, type NationalEnvironment } from "@/lib/tplCompute";
 import { atForecastDate } from "@/lib/forecastClock";
 import { marginToRating } from "@/lib/colorScale";
-import { alignedParty } from "@/data/raceEligibility";
+import { alignedParty, THREE_WAY_RACES } from "@/data/raceEligibility";
 import { districtDemographics, stateDemographics, type Demographics } from "@/data/demographics";
 import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastSummary } from "@/lib/forecastTypes";
 import { ELECTION_YEAR } from "@/lib/electionYear";
@@ -67,6 +67,8 @@ export interface ForecastFields {
   // uncontested-X: the other major party fielded no nominee (build.js placeholder name),
   // so the race is decided — probability pinned, rating Safe, no simulation noise.
   contest: Contest;
+  // A third candidate in double digits beside the two slots (THREE_WAY_RACES): sigma is widened.
+  threeWay: boolean;
 }
 
 const PLACEHOLDER_NOMINEE = /^(Democratic|Republican) Candidate$/;
@@ -99,7 +101,8 @@ export function forecastRace<T extends RaceForecast>(race: T): T & ForecastField
   const stateAbbr = stateAbbrOf(race);
   const contest = contestOf(race);
   const { model, polling, margin: structural } = projectRace(race);
-  const sigma = raceSigma(office, stateAbbr, polling.weight);
+  const threeWay = THREE_WAY_RACES[`${office}:${race.id}`] != null;
+  const sigma = raceSigma(office, stateAbbr, polling.weight, threeWay ? F.THREE_WAY_SIGMA_MULT : 1);
   const pollFields = { model, pollMargin: polling.avg?.diff ?? null, pollWeight: polling.weight, pollCount: polling.avg?.n ?? 0 };
   const beta = getTplFit().beta[stateAbbr]?.shrunk ?? 1;
   if (contest !== "contested") {
@@ -117,6 +120,7 @@ export function forecastRace<T extends RaceForecast>(race: T): T & ForecastField
       beta,
       ...pollFields,
       contest,
+      threeWay,
     };
   }
   return {
@@ -131,6 +135,7 @@ export function forecastRace<T extends RaceForecast>(race: T): T & ForecastField
     beta,
     ...pollFields,
     contest,
+    threeWay,
   };
 }
 

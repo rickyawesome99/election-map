@@ -22,7 +22,10 @@ Table rules (the Phase 5 rules, see docs/TPL_MODEL_SPEC.md):
     rowspan continuation rows (second population, leaners, alternate fields) are skipped
   - two-candidate tables keep the raw shares; a table with more than one candidate of a
     party (top-four/top-two fields) is party-summed and two-party normalised
-  - an independent sitting in an empty major-party slot (Osborn) fills that slot
+  - an independent sitting in an empty major-party slot (Osborn) fills that slot; an independent
+    filed "(I)" in the dem slot while the party's own nominee is also on the ballot (MT-Sen 2026:
+    Bodnar, with Democrat Bankhead third) reads the independent's column and is NOT party-summed
+    with the Democrat's — that candidate is a rival, not part of the slot
   - pollster = the cell text with refs/links/markup stripped; the LAST "(D)"/"(R)" marker
     becomes the partisan column (build-race-polls.js un-flags the bipartisan pairs)
   - url = the poll's citation: the first <ref> in the pollster cell ({{cite …|url=}} or a bare
@@ -407,8 +410,9 @@ def poll_url(cell):
     return m.group(1).replace("|", "%7C") if m else ""
 
 
-def extract(text, dem_name, rep_name):
-    """→ list of poll dicts from every qualifying table in this text."""
+def extract(text, dem_name, rep_name, independent_dem=False):
+    """→ list of poll dicts from every qualifying table in this text. independent_dem: the dem slot
+    is an independent, so a Democrat's column is a rival candidate, never summed into the slot."""
     ds, rs = surname(dem_name), surname(rep_name)
     polls = []
     for body in iter_tables(text):
@@ -437,7 +441,7 @@ def extract(text, dem_name, rep_name):
             continue
         cand_cols = {i: party_of(cols[i]) for i in range(len(cols))
                      if i > max(ci_date, ci_samp or 0) and party_of(cols[i]) in ("D", "R")}
-        extra_d = [i for i, p in cand_cols.items() if p == "D" and i not in d_cols + r_cols]
+        extra_d = [] if independent_dem else [i for i, p in cand_cols.items() if p == "D" and i not in d_cols + r_cols]
         extra_r = [i for i, p in cand_cols.items() if p == "R" and i not in d_cols + r_cols]
         summed = bool(extra_d or extra_r)
         ncand = sum(1 for i in range(max(ci_date, ci_samp or 0) + 1, len(cols))
@@ -577,6 +581,7 @@ def read_csv(name):
 
 
 same_party = {}  # (office, state, label) → True for a D-v-D / R-v-R general (decided; polls unused)
+independent_dem = {}  # (office, state, label) → True when the dem slot is filed "Name (I)" (Osborn, Bodnar)
 
 
 def nominee(name):
@@ -588,6 +593,7 @@ def races():
     out = []  # (office, state, race label, title, district or None, dem, rep)
     def mark(key, r):  # the CSV writes a same-party general as "Name (D)" in the R slot or vice versa
         same_party[key] = bool(re.search(r"\(D\)\s*$", r["rep_name"]) or re.search(r"\(R\)\s*$", r["dem_name"]))
+        independent_dem[key] = bool(re.search(r"\(I\)\s*$", r["dem_name"]))
     for r in read_csv("senate_seats.csv"):
         if r["next_election"] != str(YEAR):
             continue
@@ -643,7 +649,7 @@ def main():
         if not rcv:
             scanned_keys.append(key)
         cleaned = preclean(text, ref_defs((fetch_raw(title) or "") + "\n" + text))
-        polls = extract_rcv(cleaned, dem, rep) if rcv else extract(cleaned, dem, rep)
+        polls = extract_rcv(cleaned, dem, rep) if rcv else extract(cleaned, dem, rep, independent_dem.get(key, False))
         found += len(polls)
         have = by_race.get(key, [])
         for p in polls:

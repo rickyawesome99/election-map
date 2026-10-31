@@ -311,7 +311,7 @@ export const FORECAST_CONSTANTS = {
   // Up to POLL_UNDECIDED_CAP points of the share outside the two candidates count as undecided,
   // and POLL_UNDECIDED_ALLOCATION of those are split between the two in proportion to their
   // shares:  margin × (1 + ALLOCATION × min(100 − D − R, CAP) / (D + R)).  Beyond the cap the
-  // remainder is a third candidate's vote or non-voters (Montana Senate's independent polls ~30%)
+  // remainder is a third candidate's vote or non-voters (Montana Senate's Democrat polls ~17%)
   // and is left out, since results are margins of the total vote. Proportional: no direction
   // (incumbent, challenger, party) is assumed for the undecided.
   // scripts/forwardBacktest.ts --horizon-undecided, blend MAE Senate / Governor / House:
@@ -334,6 +334,16 @@ export const FORECAST_CONSTANTS = {
   // spread is (1 − w)² × RACE_SIGMA² + w² × POLL_SIGMA² on top of the national shock, which
   // reproduces the measured blend rsd (S 4.3 · G 5.8 · H 4.0) to within 0.2.
   POLL_SIGMA: { H: 6.4, S: 5.5, G: 6.8 } as Record<"H" | "S" | "G", number>,
+  // Three-way races (data/raceEligibility.ts THREE_WAY_RACES: a third candidate in double digits
+  // beside the two slots) multiply the race's own error, RACE_SIGMA and POLL_SIGMA, by this; the
+  // national shock is unchanged. scripts/threeWayBacktest.py (2026-10-30), final-21-day poll
+  // averages of 2008–2024 Senate/Governor/House races graded against the result, each race's miss
+  // scaled by the RMSE of ordinary races with as many pollsters: ordinary races 1.00 (933, the
+  // check), third candidate ≥ 15% of the vote 1.34 (15 races, 90% bootstrap 0.91–1.76; log score
+  // best between 1.25 and 1.5). An independent in a two-way race (KS-Sen 2014, UT-Sen 2022, NE-Sen
+  // 2024) missed no more than an ordinary race once one-poll races are set aside, so Osborn-type
+  // races are not widened — the split is the hard part, not the label.
+  THREE_WAY_SIGMA_MULT: 1.35,
   // Poll aging: each race poll is moved by POLL_AGING_SHARE × β*(state) × (generic ballot
   // now − generic ballot on the poll's end date) before it is averaged. 1 = a race moves
   // point-for-point (through β*) with the national ballot; 0 = polls are never aged.

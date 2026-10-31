@@ -5,7 +5,7 @@ import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
 import { racePolls } from "@/data/racePolls";
 import { pollWeight } from "@/lib/racePollAverage";
 import { genericBallotPolls } from "@/data/genericBallotPolls";
-import { ALIGNED_INDEPENDENTS } from "@/data/raceEligibility";
+import { ALIGNED_INDEPENDENTS, THREE_WAY_RACES } from "@/data/raceEligibility";
 import { forecastsFor, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
 import {
   getTplFit, getEnvironmentModel, getNationalEnvironment, getWarMoneyModel, incumbentAdvantage, liveHouseEffects,
@@ -26,7 +26,7 @@ const DOCUMENTED_IN = {
   APPOINTED_INCUMBENCY_SHARE: "incumbency", COMPETITIVE_INCUMBENCY: "incumbency", COMPETITIVE_INCUMBENCY_WIDTH: "incumbency",
   MONEY_BASIS: "fundraising", MONEY_K: "fundraising", MONEY_CAP: "fundraising", PARTIAL_CYCLE_GAP_SCALE: "fundraising",
   QUALITY_WEIGHT: "candidates", OBSERVABLE_PRIOR_FEATURES: "candidates",
-  POLL_K: "polling", POLL_HALF_LIFE_DAYS: "polling", POLL_UNDECIDED_ALLOCATION: "polling", POLL_UNDECIDED_CAP: "polling", POLL_W_MAX: "polling", POLL_SIGMA: "polling", POLL_AGING_SHARE: "polling", HOUSE_EFFECTS: "polling", HOUSE_EFFECT_K: "polling",
+  POLL_K: "polling", POLL_HALF_LIFE_DAYS: "polling", POLL_UNDECIDED_ALLOCATION: "polling", POLL_UNDECIDED_CAP: "polling", POLL_W_MAX: "polling", POLL_SIGMA: "polling", THREE_WAY_SIGMA_MULT: "uncertainty", POLL_AGING_SHARE: "polling", HOUSE_EFFECTS: "polling", HOUSE_EFFECT_K: "polling",
   HOUSE_EFFECT_WINDOW_DAYS: "polling", HOUSE_EFFECT_PARTISAN_PRIOR: "polling", HOUSE_EFFECT_CAP: "polling",
   RACE_SIGMA: "uncertainty", DEMOGRAPHIC_SHOCK: "chambers",
 } satisfies Record<keyof typeof F, string>;
@@ -72,7 +72,7 @@ export default function ForecastMethodology() {
           { name: "Model", formula: "TPL + Environment + Incumbent + Fundraising + Candidates" },
           { name: "Projected Margin", formula: "(1 − w) × Model + w × Polling Avg" },
           { name: "w", formula: "min(POLL_W_MAX, nEff / (nEff + POLL_K))", now: "0 with no polls" },
-          { name: "σ²", formula: "(β*·σ_E)² + ((1 − w)·RACE_SIGMA)² + (w·POLL_SIGMA)²" },
+          { name: "σ²", formula: "(β*·σ_E)² + k²·[((1 − w)·RACE_SIGMA)² + (w·POLL_SIGMA)²]" },
           { name: "Win Probability", formula: "Φ(−Projected Margin / σ)" },
           { name: "Rating", formula: "band of the Projected Margin", now: "Tilt < 1 · Lean < 5 · Likely < 15 · Safe" },
         ]} />
@@ -243,7 +243,7 @@ export default function ForecastMethodology() {
           { name: "HOUSE_EFFECT_PARTISAN_PRIOR", value: F.HOUSE_EFFECT_PARTISAN_PRIOR, basis: "off", meaning: "Prior lean assumed for a party or campaign poll before any evidence. A fixed prior helped the House poll average but hurt its blend." },
           { name: "POLL_HALF_LIFE_DAYS", value: hsg(F.POLL_HALF_LIFE_DAYS), basis: "calibrated", meaning: "Days over which a poll's weight halves, after 14 days at full weight. nEff is the sum of these weights, so a longer half-life also raises w in races whose polls are old.", source: "The generic ballot's 14 was inherited unfitted. forwardBacktest --polls --half-life (2026-10-23, 2018–24 archive, blend at the live k): House 14 → 45 cuts the mid-October blend error 3.56 → 3.43 and November 1 3.54 → 3.43, Governor 5.96 → 5.71 and 5.48 → 5.27; Senate 4.27 → 4.30, so it keeps 14. An August poll is still the best evidence in a sparsely polled House race in October, and the aging shift already moves it with the national ballot." },
           { name: "POLL_UNDECIDED_ALLOCATION", value: F.POLL_UNDECIDED_ALLOCATION, basis: "calibrated", meaning: "Share of a poll's undecided respondents split between the two candidates in proportion to their shares: margin × (1 + share × min(100 − D% − R%, cap) / (D% + R%)). The leader's lead grows and the order never changes; no direction (incumbent, challenger, party) is assumed for the undecided.", source: "forwardBacktest --horizon-undecided (2026-10-23), blend MAE Senate / Governor / House at 11 days out: raw 4.35 / 5.50 / 4.26, full allocation capped at 10 pts 4.26 / 5.25 / 4.24; at 28 days raw 4.44 / 5.89 / 4.33, capped 4.40 / 5.66 / 4.33." },
-          { name: "POLL_UNDECIDED_CAP", value: F.POLL_UNDECIDED_CAP, basis: "calibrated", meaning: "Most points of the share outside the two candidates treated as undecided. Beyond it the remainder is a third candidate's vote or non-voters and is left out, because results are margins of the total vote (Montana Senate's independent polls near 30%).", source: "Uncapped full allocation scores slightly better overall (Senate 4.15 at 11 days) but hands a three-way race's independent vote to the two party nominees (Montana Senate R+25 → R+31); caps of 7–15 are within 0.05 of each other." },
+          { name: "POLL_UNDECIDED_CAP", value: F.POLL_UNDECIDED_CAP, basis: "calibrated", meaning: "Most points of the share outside the two candidates treated as undecided. Beyond it the remainder is a third candidate's vote or non-voters and is left out, because results are margins of the total vote (Montana Senate's Democrat polls near 17%).", source: "Uncapped full allocation scores slightly better overall (Senate 4.15 at 11 days) but hands a three-way race's independent vote to the two party nominees (Montana Senate R+25 → R+31); caps of 7–15 are within 0.05 of each other." },
           { name: "Full weight / sample", value: "14 d · 3,000", basis: "designed", meaning: "Full-weight days and sample cap of the averaging recipe, shared with the generic ballot.", source: <Code>lib/racePollAverage.ts</Code> },
         ]} />
         <Defs items={[
@@ -258,12 +258,14 @@ export default function ForecastMethodology() {
       <Section id="uncertainty" kicker="Output" title="Win probability, range and rating"
         lede={<>A race&rsquo;s error has two parts: a national miss shared by every race through β*, and noise of its own. The Model and the polling average err independently, so blending them narrows the race&rsquo;s own noise; the national part is kept in full because polls miss nationally too. The split matters more than the total: a race&rsquo;s own probability depends only on σ, but the seat ranges and the control odds depend on how much of σ is shared.</>}>
         <Formula lines={[
-          "σ²            = (β* × σ_E)²  +  ((1 − w) × RACE_SIGMA)²  +  (w × POLL_SIGMA)²",
+          "σ²            = (β* × σ_E)²  +  k² × [ ((1 − w) × RACE_SIGMA)²  +  (w × POLL_SIGMA)² ]",
+          "k             = THREE_WAY_SIGMA_MULT in a three-way race, else 1",
           "P(D wins)     = Φ(−margin / σ)          clamped to 0.5% – 99.5%",
           "80% range     = margin ± 1.2816 × σ",
         ]} />
         <Constants rows={[
           { name: "RACE_SIGMA", value: hsg(F.RACE_SIGMA), basis: "calibrated", meaning: "Race-level error of the Model alone, beyond the national shock.", source: <>Set from the forward backtest&rsquo;s 80%-coverage table under the live σ_E (the robust within-year spread reads {CAL.pooled.map((p) => `${p.office} ${p.withinRsd}`).join(" · ")}); the live values cover {CAL.pooled.map((p) => `${p.office} ${pct(p.cover80)}`).join(" · ")} of results inside the 80% range. Lowered on 2026-10-23 when NATIONAL_SIGMA_STRUCTURAL took over the national part of the error (they were H 5.3 · S 6.0 · G 9.4).</> },
+          { name: "THREE_WAY_SIGMA_MULT", value: F.THREE_WAY_SIGMA_MULT, basis: "measured", meaning: <>Multiplier on a three-way race&rsquo;s own error (RACE_SIGMA and POLL_SIGMA; the national shock is unchanged). A three-way race has a third candidate in double digits beside the two slots: {Object.entries(THREE_WAY_RACES).map(([k, c]) => `${k.split(":")[1]} (${c.name}, ${c.party})`).join(", ")}.</>, source: "scripts/threeWayBacktest.py: final-21-day poll averages of 2008–2024 Senate, Governor and House races against the result, each miss scaled by the RMSE of ordinary races with as many pollsters. Ordinary races 1.00 (933); a third candidate with 15%+ of the vote 1.34 (15 races, 90% bootstrap 0.91–1.76, log score best between 1.25 and 1.5). An independent in a two-way race (KS-Sen 2014, UT-Sen 2022, NE-Sen 2024) missed no more than an ordinary race once one-poll races are set aside, so those races are not widened." },
         ]} />
         <Block label="Rating bands" meta="a band of the projected MARGIN — never of the probability">
           <DataTable align="ll" maxWidth="max-w-md" head={["Rating", "Projected margin"]} rows={[["Tilt", "under 1 pt"], ["Lean", "1 to 5"], ["Likely", "5 to 15"], ["Safe", "15 or more"]]} caption="A projection always names a leader: a race inside ±0.05 reads D+0.0 or R+0.0, never EVEN." />
@@ -277,6 +279,7 @@ export default function ForecastMethodology() {
           { term: "Same-party general", def: <>Both general-election slots belong to one party after alignment (California top-two, an incumbent-vs-incumbent pairing). Decided the same way. Currently {decided.filter((r) => r.contest.startsWith("same-party")).length}.</> },
           { term: "Both nominees unknown", def: "Stays contested and is scored structurally with no incumbency or candidate term (Louisiana's open all-party primaries)." },
           { term: "Unaligned independents", def: "An independent standing in for a missing party (Osborn in Nebraska and six others) stays contested: structural margin, their own track record, and polls. A win counts toward the slot's party in the seat totals." },
+          { term: "Three-way races", def: <>When an independent holds a slot and that party&rsquo;s own nominee is also on the ballot in double digits, the independent fills the slot and the nominee is a third candidate: Montana Senate is Kurt Alme (R) against Seth Bodnar (I), with Democrat Alani Bankhead third. Polls read the independent&rsquo;s column and are never party-summed with the nominee&rsquo;s; the race&rsquo;s own error is widened by THREE_WAY_SIGMA_MULT. As with any unaligned independent, a win counts toward the slot&rsquo;s party in the seat totals.</> },
           { term: "Louisiana House", def: "All six seats are a Nov 3 all-party primary with a Dec 12 runoff. The modeled margin is the party-summed R-vs-D quantity, so an R-vs-R runoff is still the modeled Republican win." },
           { term: "Exact tie", def: "If the blend lands on exactly 0 the side is taken from the Model, then the polls, then the pre-money lean." },
         ]} />

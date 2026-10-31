@@ -1372,10 +1372,11 @@ export function effectiveEnvironment(stateAbbr: string): number {
 // pollWeight = the poll average's share of the margin (0 without polls): the race-level
 // noise is the blend of the model's and the poll average's independent errors, while
 // the national shock applies to both (polls miss nationally too).
-export function raceSigma(raceType: "H" | "S" | "G", stateAbbr: string, pollWeight = 0): number {
+// raceMult widens the race's own error (not the national shock): THREE_WAY_SIGMA_MULT in a three-way race.
+export function raceSigma(raceType: "H" | "S" | "G", stateAbbr: string, pollWeight = 0, raceMult = 1): number {
   const beta = getTplFit().beta[stateAbbr]?.shrunk ?? 1;
   const w = pollWeight;
-  return Math.sqrt((beta * getNationalEnvironment().sigmaE) ** 2 + ((1 - w) * F.RACE_SIGMA[raceType]) ** 2 + (w * F.POLL_SIGMA[raceType]) ** 2);
+  return Math.sqrt((beta * getNationalEnvironment().sigmaE) ** 2 + (raceMult * (1 - w) * F.RACE_SIGMA[raceType]) ** 2 + (raceMult * w * F.POLL_SIGMA[raceType]) ** 2);
 }
 
 export function normalCdf(z: number): number {

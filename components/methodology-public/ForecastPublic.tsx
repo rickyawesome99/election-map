@@ -129,6 +129,7 @@ export default function ForecastPublic() {
         <QA items={[
           { q: "Only one party on the ballot", a: "If a major party has no nominee, or both general-election candidates are from the same party (as in some California races), the seat is counted as decided." },
           { q: "Independents", a: "An independent who stands in for a party, such as one who caucuses with Democrats, is treated as that party's candidate. An independent running where one party has stepped aside, as in Nebraska's Senate race, is forecast on the seat's lean, their own record and their polls." },
+          { q: "Three-way races", a: "In Montana's Senate race the independent Seth Bodnar, not the Democratic nominee, is Kurt Alme's main opponent, so the forecast is Alme against Bodnar, and Democrat Alani Bankhead is a third candidate. Polls of three-way races have missed by about a third more than usual, so the forecast's uncertainty is wider here. Like Nebraska's Dan Osborn, a Bodnar win is counted on the Democratic side of the seat totals." },
           { q: "Louisiana's House races", a: "All six seats are decided in an all-party primary on November 3, with a December runoff if needed. The forecast is for the combined Republican vote against the combined Democratic vote." },
           { q: "Alaska", a: "Alaska ranks its votes, so only the final head-to-head round of a ranked-choice poll is used." },
         ]} />

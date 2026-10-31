@@ -29,6 +29,14 @@ export const ALIGNED_INDEPENDENTS: Record<string, "D" | "R"> = {
   "Kevin Kiley": "R",
 };
 
+// 2026 races where the party whose slot an independent holds ALSO has its own nominee on the
+// ballot, polling in double digits — a genuine three-way contest. Keyed "{S|G|H}:{race id}".
+// The race's own error is widened by FORECAST_CONSTANTS.THREE_WAY_SIGMA_MULT (the vote split
+// is what the polls miss; scripts/threeWayBacktest.py).
+export const THREE_WAY_RACES: Record<string, { name: string; party: "D" | "R" }> = {
+  "S:MT-2": { name: "Alani Bankhead", party: "D" }, // Democratic nominee, third behind Alme and Bodnar
+};
+
 /** A candidate's party for modeling: D/R as filed, or the party an aligned independent stands in for; null for other independents. */
 export function alignedParty(c: { name: string; party: string }): "D" | "R" | null {
   if (c.party === "D" || c.party === "R") return c.party;

@@ -458,7 +458,7 @@ export const senateData: RaceForecast[] = [
     "polyDem": 0.13,
     "polyRep": 0.87,
     "candidates": {
-      "dem": { "name": "Alani Bankhead", "party": "D", "incumbent": false },
+      "dem": { "name": "Seth Bodnar", "party": "I", "incumbent": false },
       "rep": { "name": "Kurt Alme", "party": "R", "incumbent": false }
     },
     "seatHolder": "Steve Daines",
